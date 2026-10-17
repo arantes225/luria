@@ -1,0 +1,1087 @@
+{
+  "description": "Backup dos campos estruturais de 37 protocolos (91–127), antes da normalização de red_flags e notificação. Conteúdo didático, sem dados de usuários.",
+  "created_date": "2026-10-16",
+  "source": "public.clinical_protocols, projeto Studyos",
+  "records": [
+    {
+      "id": 91,
+      "slug": "cirurgia-geral-avaliacao-inicial-do-abdome-agudo",
+      "title": "Avaliação inicial do abdome agudo",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão ou choque.",
+            "Rigidez abdominal, defesa involuntária ou descompressão dolorosa generalizada.",
+            "Dor desproporcional ao exame.",
+            "Lactato elevado/piora metabólica.",
+            "Sangramento importante ou alteração do estado mental."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Rigidez, choque, síncope, sangramento digestivo ou dor desproporcional."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar horário de início, exame seriado e sinais de peritonite.",
+          "Documentar decisão de imagem e contato cirúrgico."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 92,
+      "slug": "cirurgia-geral-apendicite-aguda",
+      "title": "Apendicite aguda",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Peritonite, choque ou sepse.",
+            "Dor difusa progressiva, rigidez ou massa dolorosa com febre.",
+            "Imagem com perfuração, abscesso volumoso ou gás extraluminal."
+          ],
+          "title": "Alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar escore clínico quando utilizado, achados de imagem e tempo até avaliação cirúrgica.",
+          "Documentar se o caso foi classificado como complicado ou não complicado."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 93,
+      "slug": "cirurgia-geral-colecistite-aguda",
+      "title": "Colecistite aguda",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, sepse ou disfunção orgânica.",
+            "Icterícia com febre/hipotensão sugerindo colangite.",
+            "Perfuração, gangrena, empiema ou abscesso perivesicular."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Disfunção orgânica, febre persistente, peritonite ou obstrução biliar associada."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios clínicos e ultrassonográficos utilizados.",
+          "Documentar gravidade, antibiótico e decisão de cirurgia versus drenagem."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 94,
+      "slug": "cirurgia-geral-coledocolitiase",
+      "title": "Coledocolitíase",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão, confusão, sepse ou disfunção orgânica associada a obstrução biliar.",
+            "Febre persistente, icterícia progressiva e dor com colangite.",
+            "Pancreatite grave ou obstrução persistente com piora clínica."
+          ],
+          "title": "Alto risco"
+        },
+        {
+          "items": [
+            "Febre com icterícia, hipotensão, confusão ou pancreatite com obstrução persistente."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios de risco utilizados para indicar CPRE versus EUS/colangio-RM.",
+          "Documentar achados, sucesso da extração e necessidade de procedimento adicional."
+        ]
+      },
+      "updated_at": "2026-10-15 02:51:29.207218+00"
+    },
+    {
+      "id": 95,
+      "slug": "cirurgia-geral-colangite-aguda",
+      "title": "Colangite aguda",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, alteração do nível de consciência ou lactato elevado.",
+            "Disfunção renal, respiratória, hepática, hematológica ou cardiovascular.",
+            "Ausência de resposta a antibiótico sem drenagem de via obstruída."
+          ],
+          "title": "Emergência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar grau de gravidade segundo Tokyo Guidelines.",
+          "Documentar horário do antibiótico e da drenagem biliar."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 96,
+      "slug": "cirurgia-geral-pancreatite-aguda",
+      "title": "Pancreatite aguda",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Falência orgânica persistente >48 h.",
+            "Hipotensão, hipoxemia ou insuficiência renal.",
+            "Necrose infectada, síndrome compartimental abdominal ou sangramento.",
+            "Piora clínica após melhora inicial."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, hipoxemia, falência renal, colangite ou necrose infectada."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar etiologia provável e presença de falência orgânica.",
+          "Documentar indicação e momento de TC, CPRE e colecistectomia."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 97,
+      "slug": "cirurgia-geral-obstrucao-intestinal",
+      "title": "Obstrução intestinal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, peritonite ou sepse.",
+            "Dor contínua/desproporcional, defesa involuntária ou piora rápida.",
+            "TC com alça fechada, redução do realce, pneumatoses, gás portal, perfuração ou grande quantidade de líquido livre."
+          ],
+          "title": "Alto risco"
+        },
+        {
+          "items": [
+            "Dor contínua intensa, febre, sinais peritoneais, choque e acidose."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar reavaliações seriadas e momento de acionamento da cirurgia.",
+          "Documentar sinais de falha do tratamento conservador e decisões de transferência/intervenção."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 98,
+      "slug": "cirurgia-geral-perfuracao-de-viscera-oca",
+      "title": "Perfuração de víscera oca",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, lactato ascendente ou necessidade crescente de vasopressor.",
+            "Rigidez/peritonite difusa, dor progressiva ou sinais de sepse.",
+            "TC com grande pneumoperitônio, extravasamento de contraste, líquido difuso ou sinais de isquemia intestinal."
+          ],
+          "title": "Escalonamento imediato"
+        },
+        {
+          "items": [
+            "Choque, rigidez abdominal, sepse refratária ou ar livre com deterioração."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Documentar horário de suspeita, antibiótico, imagem e acionamento da cirurgia.",
+          "Registrar controle de foco e evolução de sinais de sepse."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 99,
+      "slug": "cirurgia-geral-diverticulite-aguda",
+      "title": "Diverticulite aguda",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão, sepse, peritonite ou dor progressiva.",
+            "TC com pneumoperitônio difuso, abscesso volumoso, obstrução ou fístula.",
+            "Imunossupressão com piora clínica mesmo com achados iniciais discretos."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Peritonite, choque, abscesso/obstrução, sepse ou falha clínica."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Documentar classificação como complicada ou não complicada e achados tomográficos que sustentam a decisão.",
+          "Registrar plano de reavaliação e critérios de retorno."
+        ]
+      },
+      "updated_at": "2026-10-15 02:52:16.140963+00"
+    },
+    {
+      "id": 100,
+      "slug": "cirurgia-geral-isquemia-mesenterica",
+      "title": "Isquemia mesentérica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Peritonite, choque ou deterioração rápida.",
+            "Pneumatose intestinal, gás portal, ausência de realce ou perfuração na TC.",
+            "Acidose/lactato progressivos apesar de ressuscitação."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Peritonite, instabilidade, lactato crescente ou pneumatoses/porto-mesenteric gas associados a piora."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar horário de início dos sintomas, solicitação da angio-TC e decisão de reperfusão/cirurgia.",
+          "Documentar achados de viabilidade intestinal e extensão de ressecção."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 101,
+      "slug": "cirurgia-geral-hernia-encarcerada-estrangulada",
+      "title": "Hérnia encarcerada/estrangulada",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Peritonite.",
+            "Sepse ou choque.",
+            "Pele sobre a hérnia com eritema intenso/necrose.",
+            "Lactato elevado ou sinais radiológicos de isquemia intestinal."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Dor progressiva, peritonismo, alterações cutâneas graves ou sinais de choque."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar tempo de encarceramento, tentativa de redução e resposta.",
+          "Documentar sinais de estrangulamento e achados operatórios quando houver."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 102,
+      "slug": "cirurgia-geral-hemorragia-digestiva",
+      "title": "Hemorragia digestiva",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, sangramento persistente, queda rápida de hemoglobina ou necessidade transfusional crescente.",
+            "Alteração do sensório, dor torácica/isquemia, dispneia ou oligúria.",
+            "Ressangramento após terapia endoscópica."
+          ],
+          "title": "Alto risco"
+        },
+        {
+          "items": [
+            "Choque, hematêmese ativa, queda rápida de hemoglobina, encefalopatia/cirrose descompensada ou sangramento recorrente."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar estimativa de perda, transfusões, reversão de antitrombóticos e horário da endoscopia.",
+          "Documentar achado endoscópico e método de hemostasia."
+        ]
+      },
+      "updated_at": "2026-10-15 02:52:16.140963+00"
+    },
+    {
+      "id": 103,
+      "slug": "cirurgia-geral-abscesso-perianal",
+      "title": "Abscesso perianal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sepse ou instabilidade.",
+            "Imunossupressão significativa.",
+            "Extensão rápida para períneo.",
+            "Suspeita de gangrena de Fournier."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sepse, necrose, dor desproporcional, imunossupressão ou abscesso profundo."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar localização, extensão, procedimento e presença de fístula suspeita.",
+          "Documentar uso de antibiótico quando indicado."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 104,
+      "slug": "cirurgia-geral-fissura-anal",
+      "title": "Fissura anal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Fissura lateral/múltipla.",
+            "Perda ponderal, massa ou ulceração irregular.",
+            "Imunossupressão ou suspeita de Crohn."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento persistente, lesões atípicas, febre ou abscesso associado."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar localização, cronicidade e fatores de risco para incontinência.",
+          "Documentar tratamento tópico utilizado e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 105,
+      "slug": "cirurgia-geral-hemorroidas",
+      "title": "Hemorroidas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Anemia ou sangramento volumoso.",
+            "Perda ponderal ou mudança recente do hábito intestinal.",
+            "Massa retal ou dor atípica persistente."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Anemia sintomática, perda ponderal, melena ou sangramento volumoso."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar padrão do sangramento, grau de prolapso e tratamento realizado.",
+          "Documentar indicação de colonoscopia quando aplicável."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 106,
+      "slug": "cirurgia-geral-pe-diabetico",
+      "title": "Pé diabético",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sepse ou infecção IWGDF/IDSA grave.",
+            "Gangrena ou necrose progressiva.",
+            "Isquemia crítica.",
+            "Abscesso profundo ou suspeita de osteomielite extensa."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Isquemia com gangrena, fasceíte, sepse, abscesso profundo ou perda rápida de tecido."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar classificação IWGDF/IDSA, profundidade, perfusão e suspeita de osteomielite.",
+          "Documentar método de coleta da cultura e necessidade de avaliação vascular/cirúrgica."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 107,
+      "slug": "cirurgia-geral-infeccao-de-pele-e-partes-moles",
+      "title": "Infecção de pele e partes moles",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque ou sepse.",
+            "Dor desproporcional.",
+            "Necrose, bolhas hemorrágicas ou crepitação.",
+            "Progressão muito rápida ou falha terapêutica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor desproporcional, choque, bolhas, crepitação ou extensão rápida."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar se quadro é purulento/não purulento, gravidade e necessidade de drenagem.",
+          "Documentar risco de MRSA e sinais de infecção necrosante."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 108,
+      "slug": "cirurgia-geral-celulite-e-erisipela",
+      "title": "Celulite e erisipela",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor desproporcional.",
+            "Necrose, bolhas hemorrágicas ou crepitação.",
+            "Hipotensão, confusão ou rápida progressão.",
+            "Falha clínica apesar de antibiótico adequado."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Bolhas hemorrágicas, dor desproporcional, sepse, necrose."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar extensão, sinais sistêmicos e fatores predisponentes.",
+          "Documentar fatores de risco para MRSA e resposta terapêutica."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 109,
+      "slug": "cirurgia-geral-abscesso-cutaneo",
+      "title": "Abscesso cutâneo",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sepse ou choque.",
+            "Dor desproporcional ou necrose.",
+            "Abscesso perineal com progressão rápida.",
+            "Imunossupressão importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sepse, perineal com extensão rápida, necrose ou imunossupressão."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar tamanho, localização, drenagem e material coletado.",
+          "Documentar indicação de antibiótico."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 110,
+      "slug": "cirurgia-geral-fasceite-necrosante",
+      "title": "Fasceíte necrosante",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor desproporcional.",
+            "Choque ou alteração mental.",
+            "Bolhas hemorrágicas, necrose ou gás em tecidos.",
+            "Progressão durante antibioticoterapia."
+          ],
+          "title": "Emergência absoluta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar horário da suspeita, antibiótico e chamada cirúrgica.",
+          "Documentar número de desbridamentos e microbiologia."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 111,
+      "slug": "cirurgia-geral-profilaxia-antibiotica-cirurgica",
+      "title": "Profilaxia antibiótica cirúrgica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Antibiótico administrado após a incisão sem justificativa.",
+            "Ausência de redose em cirurgia longa.",
+            "Manutenção por vários dias sem infecção estabelecida.",
+            "Uso excessivo de vancomicina."
+          ],
+          "title": "Erros frequentes"
+        },
+        {
+          "items": [
+            "Erro de antibiótico/alergia, administração tardia e manutenção sem indicação."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar agente, dose e horário em relação à incisão.",
+          "Documentar redoses e motivo para qualquer prolongamento pós-operatório."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 112,
+      "slug": "cirurgia-geral-profilaxia-de-tromboembolismo-venoso",
+      "title": "Profilaxia de tromboembolismo venoso",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sangramento ativo importante.",
+            "Suspeita de HIT.",
+            "Sinais de TVP/TEP apesar da profilaxia.",
+            "Déficit neurológico após procedimento neuraxial em paciente anticoagulado."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento ativo, HIT prévia, plaquetopenia grave ou anestesia neuraxial em janela insegura."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação de risco de TEV e sangramento.",
+          "Documentar método de profilaxia, início e duração planejada."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 113,
+      "slug": "cirurgia-geral-manejo-perioperatorio-de-anticoagulantes",
+      "title": "Manejo perioperatório de anticoagulantes",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sangramento ativo importante.",
+            "Déficit neurológico após neuraxial.",
+            "TEV recorrente ou suspeita de trombose enquanto anticoagulação está suspensa.",
+            "INR muito elevado antes de cirurgia urgente."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento ativo, hematoma neuraxial, TEV recente ou interrupção indevida."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar última dose, risco hemorrágico/trombótico e plano de suspensão/reinício.",
+          "Documentar reversão e ponte quando utilizadas."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 114,
+      "slug": "cirurgia-geral-avaliacao-pre-operatoria",
+      "title": "Avaliação pré-operatória",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Síndrome coronariana aguda.",
+            "Insuficiência cardíaca descompensada.",
+            "Arritmia instável.",
+            "Valvopatia grave sintomática não avaliada."
+          ],
+          "title": "Adiar cirurgia eletiva"
+        },
+        {
+          "items": [
+            "Doença cardíaca ativa, via aérea difícil não planejada ou anemia grave sem estratégia."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar capacidade funcional, comorbidades e estratificação de risco.",
+          "Documentar exames solicitados com indicação clínica."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 115,
+      "slug": "cirurgia-geral-cuidados-pos-operatorios",
+      "title": "Cuidados pós-operatórios",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão persistente.",
+            "Hipoxemia ou dispneia nova.",
+            "Dor desproporcional ou deterioração abdominal.",
+            "Sangramento ativo.",
+            "Oligúria persistente ou alteração importante de consciência."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipotensão persistente, dispneia, dor intensa, anúria ou peritonite."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar evolução, dispositivos, analgesia, mobilidade e tolerância dietética.",
+          "Documentar critérios de alta e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 116,
+      "slug": "cirurgia-geral-infeccao-de-sitio-cirurgico",
+      "title": "Infecção de sítio cirúrgico",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sepse ou choque.",
+            "Necrose, crepitação ou dor desproporcional.",
+            "Deiscência fascial.",
+            "Coleção profunda ou órgão/espaço sem controle de foco."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sepse, evisceração, dor desproporcional, necrose ou coleção profunda."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar profundidade provável da ISC, presença de pus/coleção e procedimento de controle de foco.",
+          "Documentar microbiologia e antibióticos."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 117,
+      "slug": "cirurgia-geral-deiscencia-de-ferida-operatoria",
+      "title": "Deiscência de ferida operatória",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Evisceração.",
+            "Deiscência fascial.",
+            "Sepse ou infecção necrosante.",
+            "Sangramento ativo significativo."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Evisceração, peritonite, fascite, sepse ou necrose progressiva."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar profundidade, integridade fascial e presença de infecção/evisceração.",
+          "Documentar método de fechamento ou manejo aberto."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 118,
+      "slug": "cirurgia-geral-nutricao-perioperatoria",
+      "title": "Nutrição perioperatória",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Perda ponderal rápida ou ingestão mínima prolongada.",
+            "Distúrbios eletrolíticos importantes na realimentação.",
+            "Íleo prolongado ou intolerância enteral persistente."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Incapacidade alimentar prolongada, desnutrição grave, síndrome de realimentação ou fístula de alto débito."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar triagem nutricional, estratégia escolhida e metas de ingestão.",
+          "Documentar risco de síndrome de realimentação quando presente."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 119,
+      "slug": "cirurgia-geral-queimaduras",
+      "title": "Queimaduras",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Comprometimento de via aérea.",
+            "Choque ou queimadura extensa.",
+            "Queimadura elétrica de alta voltagem.",
+            "Queimadura circunferencial com isquemia.",
+            "Suspeita de lesão inalatória significativa."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Estridor, carboxiemoglobina elevada, isquemia distal, choque ou queimadura extensa."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar mecanismo, profundidade, %SCQ e presença de lesão inalatória.",
+          "Documentar volume de reposição e resposta por diurese/perfusão."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 120,
+      "slug": "cirurgia-geral-trauma-abdominal",
+      "title": "Trauma abdominal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade persistente, necessidade transfusional crescente ou choque.",
+            "Peritonite, evisceração, conteúdo entérico na ferida ou sangramento gastrointestinal franco no contexto de trauma penetrante.",
+            "TC com extravasamento, lesão intestinal evidente, grande hemoperitônio ou achados de isquemia/perfuração."
+          ],
+          "title": "Intervenção imediata"
+        },
+        {
+          "items": [
+            "Instabilidade com eFAST+, peritonite, queda rápida de Hb ou extravasamento ativo."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar mecanismo, resposta à ressuscitação, E-FAST, achados de TC e decisão de manejo.",
+          "Documentar horários de deterioração e de acionamento do centro cirúrgico/hemodinâmica."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 121,
+      "slug": "cirurgia-geral-trauma-toracico",
+      "title": "Trauma torácico",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, hipoxemia grave ou deterioração ventilatória.",
+            "Débito elevado/persistente em dreno torácico ou suspeita de sangramento ativo.",
+            "Suspeita de lesão aórtica, cardíaca, traqueobrônquica ou esofágica."
+          ],
+          "title": "Escalonamento imediato"
+        },
+        {
+          "items": [
+            "Desvio hemodinâmico, hipóxia progressiva, tamponamento ou hemorragia intratorácica."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Documentar mecanismo, intervenções pré-hospitalares, horário de drenagem e débito inicial.",
+          "Registrar achados de imagem e critérios para cirurgia/transferência."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 122,
+      "slug": "cirurgia-geral-trauma-vascular",
+      "title": "Trauma vascular",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Isquemia aguda de membro.",
+            "Hemorragia não controlada.",
+            "Hematoma expansivo.",
+            "Síndrome compartimental pós-reperfusão."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Sinais duros vasculares, ausência súbita de pulsos, sangramento incontrolável ou neuropatia isquêmica."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar sinais duros/brandos, ITB e tempo estimado de isquemia.",
+          "Documentar técnica de controle de hemorragia e reparo vascular."
+        ]
+      },
+      "updated_at": "2026-10-15 03:10:18.56305+00"
+    },
+    {
+      "id": 123,
+      "slug": "cirurgia-geral-trauma-cranioencefalico",
+      "title": "Trauma cranioencefálico",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Queda progressiva da Glasgow.",
+            "Anisocoria ou sinais de herniação.",
+            "Hipotensão, hipoxemia ou convulsão persistente.",
+            "TC com efeito de massa, desvio de linha média ou hematoma expansivo."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Anisocoria, GCS em queda, pupilas fixas, bradicardia com hipertensão ou crise prolongada."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar Glasgow inicial e seriada, pupilas, anticoagulantes e achados da TC.",
+          "Documentar horário de deterioração e contato neurocirúrgico."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 124,
+      "slug": "cirurgia-geral-trauma-raquimedular",
+      "title": "Trauma raquimedular",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Déficit neurológico progressivo.",
+            "Comprometimento respiratório em lesão cervical.",
+            "Hipotensão persistente após exclusão de sangramento.",
+            "RM com compressão medular/hematoma epidural."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Déficit neurológico progressivo, retenção urinária, choque ou insuficiência ventilatória."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar mecanismo, nível neurológico e classificação ASIA quando aplicável.",
+          "Documentar achados de TC/RM e decisão da equipe de coluna."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 125,
+      "slug": "cirurgia-geral-politrauma",
+      "title": "Politrauma",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Deterioração do nível de consciência, hipoxemia ou incapacidade de proteger via aérea.",
+            "Choque persistente, sangramento não controlado ou necessidade transfusional crescente.",
+            "Hipotermia, acidose e coagulopatia progressivas."
+          ],
+          "title": "Ameaças imediatas"
+        },
+        {
+          "items": [
+            "Via aérea ameaçada, hemorragia não controlada, GCS em queda ou hipotermia grave."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar mecanismo, horários, C-ABCDE, resposta a cada intervenção e evolução dos sinais vitais.",
+          "Documentar comunicação e transferência entre equipes."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 126,
+      "slug": "cirurgia-geral-hemorragia-macica-e-protocolo-de-transfusao-macica",
+      "title": "Hemorragia maciça e protocolo de transfusão maciça",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque refratário apesar de transfusão.",
+            "Hipocalcemia sintomática.",
+            "Hipotermia importante.",
+            "Coagulopatia persistente com sangramento difuso."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque refratário, coagulopatia, hipocalcemia grave, hipotermia e sangramento persistente."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar horário de ativação/desativação do protocolo e número de unidades transfundidas.",
+          "Documentar fibrinogênio, cálcio, temperatura e necessidade de TXA."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 127,
+      "slug": "cirurgia-geral-sindrome-compartimental",
+      "title": "Síndrome compartimental",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor desproporcional progressiva.",
+            "Dor à extensão passiva.",
+            "Déficit motor/sensitivo novo.",
+            "Compartimento muito tenso após trauma/reperfusão."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Dor desproporcional, dor à extensão passiva, déficit motor e tensão intensa."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame neurovascular seriado e, se medidas, pressões compartimentais.",
+          "Documentar horário da suspeita e da fasciotomia."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    }
+  ]
+}
