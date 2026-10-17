@@ -1,0 +1,1531 @@
+{
+  "version": "2026-10-15",
+  "source": "docs/apostilas/medcof-401-correspondencia.json",
+  "alerta": "Vínculo editorial não comprova conteúdo concluído",
+  "total": 55,
+  "lotes": {
+    "11": 18,
+    "12": 18,
+    "13": 19
+  },
+  "entries": [
+    {
+      "id": 226,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Demências e comprometimento cognitivo",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-08",
+      "instrucao": "Demências (Diamante), delirium no idoso (Alta) e avaliação cognitiva estruturada.",
+      "aulas_medcof": [
+        {
+          "id": 330,
+          "titulo": "Insuficiência Cognitiva: Delirium no Idoso",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 25
+        },
+        {
+          "id": 336,
+          "titulo": "Insuficiência Cognitiva: Demências",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 26
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 227,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Doença de Parkinson e distúrbios do movimento",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-09",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [
+        {
+          "id": 208,
+          "titulo": "Doenças Neuromusculares e Parkinson",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 17
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 228,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Neuropatias periféricas e doenças neuromusculares",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-11",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [
+        {
+          "id": 208,
+          "titulo": "Doenças Neuromusculares e Parkinson",
+          "incidencia": "Alta",
+          "relacao": "referencia_cruzada",
+          "pagina_pdf": 17
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 229,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Obesidade e síndrome metabólica no adulto",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-12",
+      "instrucao": "Obesidade no adulto (Alta), síndrome metabólica e cirurgia bariátrica (Alta): critérios e acompanhamento.",
+      "aulas_medcof": [
+        {
+          "id": 171,
+          "titulo": "Síndrome Metabólica e Obesidade",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 14
+        },
+        {
+          "id": 182,
+          "titulo": "Cirurgia Bariátrica",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 15
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 230,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Osteoporose, sarcopenia e fragilidade",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-13",
+      "instrucao": "Osteoporose (Alta), sarcopenia e fragilidade, prevenção de fraturas.",
+      "aulas_medcof": [
+        {
+          "id": 256,
+          "titulo": "Osteoporose",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 20
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 231,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Hemoglobinopatias e anemias hereditárias",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-16",
+      "instrucao": "Anemia falciforme (Alta em pediatria) e talassemias (Diamante), hemólise e complicações.",
+      "aulas_medcof": [
+        {
+          "id": 124,
+          "titulo": "Anemia Falciforme",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 11
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 232,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Coagulopatias, trombofilias e hemoterapia",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-17",
+      "instrucao": "Coagulação e hemostasia (Alta), hemoterapia (Baixa), distúrbios hemorrágicos pediátricos (Média).",
+      "aulas_medcof": [
+        {
+          "id": 122,
+          "titulo": "Coagulação e Hemostasia",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 10
+        },
+        {
+          "id": 126,
+          "titulo": "Hemoterapia",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 11
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 233,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Oncologia clínica e emergências oncológicas",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-18",
+      "instrucao": "Emergências oncológicas e cuidados paliativos (Alta); não substituir os temas próprios de neoplasias cirúrgicas.",
+      "aulas_medcof": [
+        {
+          "id": 97,
+          "titulo": "Oncologia: emergências e cuidados paliativos",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 9
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 234,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Doença de Chagas",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-20",
+      "instrucao": "Doenças negligenciadas (Alta), icterícias febris/febre maculosa (Alta) e Doença de Chagas; articular com hanseníase #235 e arboviroses #186.",
+      "aulas_medcof": [
+        {
+          "id": 197,
+          "titulo": "Doenças Negligenciadas",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 16
+        },
+        {
+          "id": 347,
+          "titulo": "Icterícias febris e Febre Maculosa",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 27
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 235,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Hanseníase: diagnóstico, tratamento e prevenção de incapacidades",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CM-23",
+      "instrucao": "Hanseníase e tuberculose na APS (Diamante): prevenção, diagnóstico, tratamento, vigilância.",
+      "aulas_medcof": [
+        {
+          "id": 197,
+          "titulo": "Doenças Negligenciadas",
+          "incidencia": "Alta",
+          "relacao": "referencia_cruzada",
+          "pagina_pdf": 16
+        },
+        {
+          "id": 329,
+          "titulo": "Tuberculose e Hanseníase na APS",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 25
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 236,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Tumores renais e vesicais",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CIR-05",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [
+        {
+          "id": 183,
+          "titulo": "Uro-Oncologia",
+          "incidencia": "Média",
+          "relacao": "referencia_cruzada",
+          "pagina_pdf": 15
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 237,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Síndrome compartimental e lesões musculotendíneas",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CIR-07",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 261,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Doenças pulmonares intersticiais: diagnóstico e manejo",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta",
+      "instrucao": "Padrões clínico-radiológicos, investigação funcional, causas, fibrose e encaminhamento",
+      "aulas_medcof": [
+        {
+          "id": 292,
+          "titulo": "Doença Pulmonar Intersticial (DPI)",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 23
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 262,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Esclerose múltipla e doenças desmielinizantes",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta",
+      "instrucao": "EM, neuromielite óptica, surtos, diagnósticos diferenciais, RNM e tratamento",
+      "aulas_medcof": [
+        {
+          "id": 283,
+          "titulo": "Esclerose Múltipla (EM) e Neuromielite óptica",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 22
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 263,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Intoxicações exógenas no adulto e toxicologia de emergência",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Diamante",
+      "instrucao": "Abordagem inicial, toxíndromes, antídotos, descontaminação e casos de urgência",
+      "aulas_medcof": [
+        {
+          "id": 270,
+          "titulo": "Intoxicações Exógenas",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 21
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 264,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Tumores hepatobiliares e pancreáticos",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Média",
+      "instrucao": "Além das neoplasias hepatobiliares, incluir NÓDULOS HEPÁTICOS BENIGNOS (Alta), 'fígado para perdidos' (Diamante) e abscesso hepático (Baixa). Não restringir todo conteúdo à oncologia.",
+      "aulas_medcof": [
+        {
+          "id": 110,
+          "titulo": "Abscesso Hepático",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 10
+        },
+        {
+          "id": 227,
+          "titulo": "Nódulos hepáticos benignos",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 18
+        },
+        {
+          "id": 233,
+          "titulo": "Fígado para perdidos",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 19
+        },
+        {
+          "id": 260,
+          "titulo": "Carcinoma hepatocelular",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 20
+        },
+        {
+          "id": 262,
+          "titulo": "Metástases hepáticas de câncer colorretal",
+          "incidencia": "Média",
+          "relacao": "referencia_cruzada",
+          "pagina_pdf": 21
+        },
+        {
+          "id": 269,
+          "titulo": "Adenocarcinoma de pâncreas e tumores periampulares",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 21
+        },
+        {
+          "id": 315,
+          "titulo": "Neoplasias Císticas Pancreáticas",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 24
+        },
+        {
+          "id": 348,
+          "titulo": "Pâncreas e vias biliares: Tumores Neuroendócrinos",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 27
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 265,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Câncer de pulmão e tumores mediastinais",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Média",
+      "instrucao": "Oncologia torácica: câncer de pulmão (Alta), nódulo pulmonar (Média), mediastino (Média); hemoptise/brônquios quando pertinente, com capítulo clínico #71.",
+      "aulas_medcof": [
+        {
+          "id": 295,
+          "titulo": "Nódulo Pulmonar",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 23
+        },
+        {
+          "id": 324,
+          "titulo": "Cancer de Pulmão",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 25
+        },
+        {
+          "id": 376,
+          "titulo": "Mediastino",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 277,
+      "lote": 11,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Infertilidade conjugal e reprodução assistida",
+      "natureza": "apostila_ja_publicada_indexada",
+      "status_producao": "já publicada; revisão não validada",
+      "url_existente": "/apostilas/infertilidade-conjugal/",
+      "instrucao": "Apostila JÁ PUBLICADA. Conferir aulas Infertilidade (Alta) e Técnicas de Reprodução Assistida (Alta), com investigação do casal, FIV, ICSI e complicações. Não criar outra página.",
+      "aulas_medcof": [
+        {
+          "id": 165,
+          "titulo": "Infertilidade",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 14
+        },
+        {
+          "id": 360,
+          "titulo": "Técnicas de Reprodução Assistida",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 27
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 238,
+      "lote": 12,
+      "area": "Cirurgia Geral",
+      "titulo": "Trauma raquimedular e avaliação neurológica inicial",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CIR-08",
+      "instrucao": "Trauma raquimedular (Alta), sinais de gravidade e imobilização.",
+      "aulas_medcof": [
+        {
+          "id": 43,
+          "titulo": "Trauma Raquimedular",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 5
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 239,
+      "lote": 12,
+      "area": "Cirurgia Geral",
+      "titulo": "Catarata, glaucoma crônico e retinopatias",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CIR-11",
+      "instrucao": "Oftalmopediatria (Alta), catarata, glaucoma e retinopatias; integrar com #195.",
+      "aulas_medcof": [
+        {
+          "id": 372,
+          "titulo": "Oftalmologia para o Generalista - parte II",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        },
+        {
+          "id": 390,
+          "titulo": "Oftalmopediatria",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 29
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 240,
+      "lote": 12,
+      "area": "Cirurgia Geral",
+      "titulo": "Aneurisma da aorta e emergências vasculares",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "CIR-15",
+      "instrucao": "Aneurisma de aorta (Alta), indicação de emergência e cirurgia cardiovascular; articulação com tema novo.",
+      "aulas_medcof": [
+        {
+          "id": 287,
+          "titulo": "Aneurisma de Aorta",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 22
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 241,
+      "lote": 12,
+      "area": "Pediatria",
+      "titulo": "Malformações congênitas e síndromes genéticas",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-04",
+      "instrucao": "Malformações do SNC (Alta), outras malformações e genética (Alta), sinais de alarme.\nMalformações do SNC, genética pediátrica e diferenças do desenvolvimento sexual (Baixa): garantir classificação, avaliação e encaminhamento responsável.",
+      "aulas_medcof": [
+        {
+          "id": 133,
+          "titulo": "Genética",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 11
+        },
+        {
+          "id": 211,
+          "titulo": "Malformações do Sistema Nervoso",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 17
+        },
+        {
+          "id": 251,
+          "titulo": "Diferenças no Desenvolvimento Sexual",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 20
+        },
+        {
+          "id": 342,
+          "titulo": "Malformações Congênitas",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 26
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 242,
+      "lote": 12,
+      "area": "Pediatria",
+      "titulo": "Doença celíaca e síndromes de má absorção",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-09",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [
+        {
+          "id": 28,
+          "titulo": "Diarreia Crônica e Doenças Funcionais",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 4
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 243,
+      "lote": 12,
+      "area": "Pediatria",
+      "titulo": "Oncologia pediátrica: leucemias, linfomas e tumores sólidos",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-10",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [
+        {
+          "id": 309,
+          "titulo": "Neoplasias Pediátricas",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 24
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 244,
+      "lote": 12,
+      "area": "Pediatria",
+      "titulo": "Púrpuras, coagulopatias e hemoglobinopatias pediátricas",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-11",
+      "instrucao": "Hematologia pediátrica (Média/Diamante), hemostasia e anemia falciforme.",
+      "aulas_medcof": [
+        {
+          "id": 136,
+          "titulo": "Hemostasia e Distúrbios Hemorrágicos",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 11
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 245,
+      "lote": 12,
+      "area": "Pediatria",
+      "titulo": "Puberdade precoce e atrasada",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-14",
+      "instrucao": "Puberdade normal e patológica (Alta), hiperplasia adrenal congênita (Alta) e hipotireoidismo pediátrico (Média); vincular apostila nova de endocrinologia.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 246,
+      "lote": 12,
+      "area": "Pediatria",
+      "titulo": "Afogamento e emergências ambientais na infância",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-17",
+      "instrucao": "Afogamento (Baixa) e emergências ambientais: manter resgate, suporte inicial e prevenção.",
+      "aulas_medcof": [
+        {
+          "id": 64,
+          "titulo": "Politrauma, Afogamento",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 6
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 247,
+      "lote": 12,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Hiperêmese gravídica",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "GO-04",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 248,
+      "lote": 12,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Colestase intra-hepática da gestação",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "GO-08",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 249,
+      "lote": 12,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Violência sexual e direitos reprodutivos na assistência",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "GO-10",
+      "instrucao": "Violência sexual (Alta), interrupção legal da gestação (Média), acolhimento e direitos reprodutivos.",
+      "aulas_medcof": [
+        {
+          "id": 98,
+          "titulo": "Violência Sexual",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 9
+        },
+        {
+          "id": 103,
+          "titulo": "Interrupção Legal da Gestação",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 9
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 266,
+      "lote": 12,
+      "area": "Cirurgia Geral",
+      "titulo": "Oncologia de cabeça e pescoço",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Média",
+      "instrucao": "CEC cabeça/pescoço, massas cervicais, diagnóstico, estadiamento e tratamento",
+      "aulas_medcof": [
+        {
+          "id": 363,
+          "titulo": "CEC de Cabeça e Pescoço",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        },
+        {
+          "id": 368,
+          "titulo": "Diagnósticos diferenciais das massas cervicais",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        },
+        {
+          "id": 370,
+          "titulo": "Anomalias Congênitas em cabeça e pescoço",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 267,
+      "lote": 12,
+      "area": "Cirurgia Geral",
+      "titulo": "Endoscopia digestiva e urgências endoscópicas",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Diamante",
+      "instrucao": "Indicações, hemorragia digestiva, corpo estranho, complicações e intervenções",
+      "aulas_medcof": [
+        {
+          "id": 170,
+          "titulo": "Urgências endoscópicas",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 14
+        },
+        {
+          "id": 383,
+          "titulo": "Endoscopia",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 29
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 268,
+      "lote": 12,
+      "area": "Cirurgia Geral",
+      "titulo": "Cirurgia cardiovascular para o generalista",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta",
+      "instrucao": "Cirurgia coronariana, valvar e aórtica; indicações, complicações, encaminhamento",
+      "aulas_medcof": [
+        {
+          "id": 399,
+          "titulo": "Cirurgia Cardíaca: Doença da Aorta",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 31
+        },
+        {
+          "id": 400,
+          "titulo": "Cirurgia Cardíaca: Doença Coronariana",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 31
+        },
+        {
+          "id": 401,
+          "titulo": "Cirurgia Cardíaca: Doenças Valvares",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 31
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 269,
+      "lote": 12,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Ultrassonografia obstétrica e medicina fetal",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta",
+      "instrucao": "US gestacional, rastreio malformativo, avaliação fetal, Doppler e medicina fetal; sem repetir #89",
+      "aulas_medcof": [
+        {
+          "id": 10,
+          "titulo": "Ultrassonografia em Obstetrícia",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 2
+        },
+        {
+          "id": 381,
+          "titulo": "Medicina Fetal",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 29
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 270,
+      "lote": 12,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Intercorrências clínicas na gestação",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Média",
+      "instrucao": "Cardiopatias na gravidez (Alta), outras intercorrências (Média), trombofilias na gestação e puerpério (Baixa): organizar por agravo; preservar manejo materno-fetal.",
+      "aulas_medcof": [
+        {
+          "id": 209,
+          "titulo": "Cardiopatias na Gravidez",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 17
+        },
+        {
+          "id": 334,
+          "titulo": "Outras Intercorrências Clínicas na Gestação",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 26
+        },
+        {
+          "id": 393,
+          "titulo": "Trombofilias na Gestação e Puerpério",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 30
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 278,
+      "lote": 12,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Ciclo menstrual e eixo hipotálamo–hipófise–ovário",
+      "natureza": "apostila_ja_publicada_indexada",
+      "status_producao": "já publicada; revisão não validada",
+      "url_existente": "/apostilas/ciclo-menstrual-eixo-hho/",
+      "instrucao": "Apostila JÁ PUBLICADA. Conferir Fisiologia Menstrual (Alta) e Esteroidogênese (Alta), capítulos hormonal/foliculogênese; não duplicar em amenorreia.",
+      "aulas_medcof": [
+        {
+          "id": 62,
+          "titulo": "Fisiologia Menstrual",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 6
+        },
+        {
+          "id": 71,
+          "titulo": "Esteroidogênese",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 7
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 250,
+      "lote": 13,
+      "area": "Saúde Mental",
+      "titulo": "Transtornos alimentares",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SM-11",
+      "instrucao": "Transtornos alimentares e diferenciais psiquiátricos em adultos e adolescentes.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 251,
+      "lote": 13,
+      "area": "Saúde Mental",
+      "titulo": "Transtornos de personalidade e autolesão",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SM-12",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 252,
+      "lote": 13,
+      "area": "Saúde Mental",
+      "titulo": "Saúde mental no ciclo gravídico-puerperal",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SM-13",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [
+        {
+          "id": 373,
+          "titulo": "Transtornos Psiquiátricos na Gestação e Pós parto",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 253,
+      "lote": 13,
+      "area": "Saúde Mental",
+      "titulo": "Luto, crises e transtornos de adaptação",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SM-15",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 254,
+      "lote": 13,
+      "area": "Saúde Mental",
+      "titulo": "Saúde mental do adolescente: avaliação e manejo inicial",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "PED-15",
+      "instrucao": "Psiquiatria da infância e adolescência (Média): avaliação, risco e manejo.",
+      "aulas_medcof": [
+        {
+          "id": 367,
+          "titulo": "Psiquiatria da Infância e Adolescência",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 28
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 255,
+      "lote": 13,
+      "area": "Medicina de Família e Comunidade",
+      "titulo": "Longitudinalidade, coordenação do cuidado e matriciamento",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "MFC-04",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 256,
+      "lote": 13,
+      "area": "Medicina de Família e Comunidade",
+      "titulo": "Reabilitação comunitária e cuidado de pessoas com deficiência",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "MFC-07",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 257,
+      "lote": 13,
+      "area": "Saúde Coletiva",
+      "titulo": "Planejamento, avaliação e gestão de serviços de saúde",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SC-01",
+      "instrucao": "Planejamento, avaliação e gestão; saúde suplementar e judicialização (Diamante); adicionar competências do SUS.",
+      "aulas_medcof": [
+        {
+          "id": 379,
+          "titulo": "Saúde Privada, Suplementar e Judicialização em Saúde",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 29
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 258,
+      "lote": 13,
+      "area": "Saúde Coletiva",
+      "titulo": "Avaliação de tecnologias em saúde e custo-efetividade",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SC-10",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 259,
+      "lote": 13,
+      "area": "Saúde Coletiva",
+      "titulo": "Sistemas de Informação em Saúde e qualidade dos dados",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SC-11",
+      "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
+      "aulas_medcof": [],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 260,
+      "lote": 13,
+      "area": "Saúde Coletiva",
+      "titulo": "Biossegurança e prevenção de infecções relacionadas à assistência",
+      "natureza": "tema_original_preservado",
+      "status_producao": "não verificado",
+      "fonte": "SC-12",
+      "instrucao": "Biossegurança, infecções nosocomiais (Média) e medidas de prevenção no cuidado.",
+      "aulas_medcof": [
+        {
+          "id": 228,
+          "titulo": "Infecções Nosocomiais",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 18
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 271,
+      "lote": 13,
+      "area": "Pediatria",
+      "titulo": "Endocrinologia pediátrica",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Média",
+      "instrucao": "Hiperplasia adrenal congênita, tireoide, crescimento, puberdade e urgências endócrinas",
+      "aulas_medcof": [
+        {
+          "id": 246,
+          "titulo": "Hiperplasia Adrenal Congênita (HAC)",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 19
+        },
+        {
+          "id": 249,
+          "titulo": "Hipotireoidismo",
+          "incidencia": "Média",
+          "relacao": "principal",
+          "pagina_pdf": 20
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 272,
+      "lote": 13,
+      "area": "Pediatria",
+      "titulo": "Fibrose cística",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta",
+      "instrucao": "Triagem, diagnóstico, manifestações respiratórias/digestivas e seguimento",
+      "aulas_medcof": [
+        {
+          "id": 258,
+          "titulo": "Fibrose Cística e Diferenciais",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 20
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 273,
+      "lote": 13,
+      "area": "Pediatria",
+      "titulo": "Imunodeficiências na infância",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta",
+      "instrucao": "Sinais de suspeita, avaliação inicial, classificação e encaminhamento",
+      "aulas_medcof": [
+        {
+          "id": 268,
+          "titulo": "Imunodeficiências para o Pediatra",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 21
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 274,
+      "lote": 13,
+      "area": "Pediatria",
+      "titulo": "Ortopedia pediátrica",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Diamante",
+      "instrucao": "Ortopedia (Alta), ortopedia pediátrica (Diamante), osteomielite e artrite séptica (Alta), trauma ortopédico; manter avaliação neurovascular.",
+      "aulas_medcof": [
+        {
+          "id": 236,
+          "titulo": "Osteomielite e Artrite Séptica",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 19
+        },
+        {
+          "id": 243,
+          "titulo": "Ortopedia Pediátrica",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 19
+        },
+        {
+          "id": 277,
+          "titulo": "Ortopedia",
+          "incidencia": "Alta",
+          "relacao": "referencia_cruzada",
+          "pagina_pdf": 22
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 275,
+      "lote": 13,
+      "area": "Pediatria",
+      "titulo": "Emergências de cirurgia pediátrica",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Alta/Diamante",
+      "instrucao": "Uropediatria, hérnias, escroto agudo, urgências abdominais e cirurgia pediátrica no PS",
+      "aulas_medcof": [
+        {
+          "id": 332,
+          "titulo": "Uropediatria e Hérnias",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 25
+        },
+        {
+          "id": 338,
+          "titulo": "Cirurgia Pediátrica no PS",
+          "incidencia": "Diamante",
+          "relacao": "principal",
+          "pagina_pdf": 26
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 276,
+      "lote": 13,
+      "area": "Clínica Médica",
+      "titulo": "Diarreia aguda no adulto e colite por Clostridioides difficile",
+      "natureza": "nova_apostila_proposta",
+      "status_producao": "não iniciada (proposta)",
+      "prioridade": "Baixa/essencial",
+      "instrucao": "Diarreias agudas e colite pseudomembranosa (Baixa no MedCof): manter como tema essencial com C. difficile, exames, gravidade, tratamento, recorrência e diferencial com diarreia crônica #146.",
+      "aulas_medcof": [
+        {
+          "id": 250,
+          "titulo": "Diarreia Agudas e Colite Pseudomembranosa",
+          "incidencia": "Baixa",
+          "relacao": "principal",
+          "pagina_pdf": 20
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 279,
+      "lote": 13,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Crescimento fetal reduzido e aumentado",
+      "natureza": "apostila_ja_publicada_indexada",
+      "status_producao": "já publicada; revisão não validada",
+      "url_existente": "/apostilas/crescimento-intrauterino-reduzido-aumentado/",
+      "instrucao": "Apostila JÁ PUBLICADA. Conferir Restrição do Crescimento Intrauterino (Alta), critérios Doppler e manejo. Articular avaliação de vitalidade fetal, sem duplicação.",
+      "aulas_medcof": [
+        {
+          "id": 189,
+          "titulo": "Restrição de Crescimento Intrauterino",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 15
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    },
+    {
+      "id": 280,
+      "lote": 13,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Alterações fisiológicas da gestação",
+      "natureza": "apostila_ja_publicada_indexada",
+      "status_producao": "já publicada; revisão não validada",
+      "url_existente": "/apostilas/alteracoes-fisiologicas-da-gestacao/",
+      "instrucao": "Apostila JÁ PUBLICADA. Conferir Modificações do Organismo Materno (Alta), por sistema e trimestre, e correlação com sinais de risco. Não criar conteúdo repetido.",
+      "aulas_medcof": [
+        {
+          "id": 2,
+          "titulo": "Modificações do Organismo Materno",
+          "incidencia": "Alta",
+          "relacao": "principal",
+          "pagina_pdf": 1
+        }
+      ],
+      "auditoria_capitulos": {
+        "status": "PENDENTE",
+        "data": null,
+        "referencias_verificadas": false,
+        "observacao": "Vínculo editorial não significa capítulo concluído"
+      }
+    }
+  ]
+}

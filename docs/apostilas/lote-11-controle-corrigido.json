@@ -1,0 +1,506 @@
+{
+  "version": "2026-10-15-lote11-corrigido",
+  "authoritative_for": "lot 11; supercedes lotes-11-13-controle-revisao.json specifically for lot 11",
+  "warning": "Registro editorial: vínculo MedCof não certifica nenhum texto; comparar com Google Drive antes de editar.",
+  "count": 18,
+  "items": [
+    {
+      "id": 226,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Demências e comprometimento cognitivo",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Demências (Diamante) e delirium (Alta): diferenciar transtorno neurocognitivo maior, comprometimento cognitivo leve e estado confusional agudo. Avaliação cognitiva, exames dirigidos, causas reversíveis, decisão clínica, cuidado com família e prevenção de delirium.",
+      "aulas_medcof": [
+        {
+          "id": 330,
+          "titulo": "Insuficiência Cognitiva: Delirium no Idoso",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 336,
+          "titulo": "Insuficiência Cognitiva: Demências",
+          "incidencia": "Diamante",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 227,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Doença de Parkinson e distúrbios do movimento",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Doença de Parkinson: diagnóstico clínico, sinais motores e não motores, diferenciais de parkinsonismo, terapêutica, complicações motoras, quedas e encaminhamento. Aula MedCof 'Doenças Neuromusculares e Parkinson' É COMPLEMENTAR à #228; NÃO duplicar neuropatias.",
+      "aulas_medcof": [
+        {
+          "id": 208,
+          "titulo": "Doenças Neuromusculares e Parkinson",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 228,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Neuropatias periféricas e doenças neuromusculares",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Neuropatias periféricas e doenças neuromusculares: localizar topograficamente a lesão (neurônio motor, nervo periférico, junção neuromuscular, músculo), fraqueza aguda e progressiva, síndromes radiculares, neuropatias frequentes, miastenia e Guillain-Barré; comparar com o mesmo módulo MedCof compartilhado com #227 sem duplicação.",
+      "aulas_medcof": [
+        {
+          "id": 208,
+          "titulo": "Doenças Neuromusculares e Parkinson",
+          "incidencia": "Alta",
+          "vinculo": "referencia_cruzada"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 229,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Obesidade e síndrome metabólica no adulto",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Síndrome metabólica e obesidade do adulto (Alta); diagnóstico, risco cardiovascular, manejo longitudinal e farmacoterapia. Cirurgia bariátrica (Alta): indicações, contraindicações, riscos, acompanhamento e deficiências nutricionais. Procedimentos técnicos e complicações operatórias remetem à Cirurgia; não repetir em dois livros.",
+      "aulas_medcof": [
+        {
+          "id": 171,
+          "titulo": "Síndrome Metabólica e Obesidade",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 182,
+          "titulo": "Cirurgia Bariátrica",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 230,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Osteoporose, sarcopenia e fragilidade",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Osteoporose (Alta): rastreamento indicado, FRAX, DXA, fraturas por fragilidade, prevenção e tratamento, reavaliação. Sarcopenia e fragilidade geriátrica devem ter avaliação funcional e plano de cuidados próprios, articulando com a #185.",
+      "aulas_medcof": [
+        {
+          "id": 256,
+          "titulo": "Osteoporose",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 231,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Hemoglobinopatias e anemias hereditárias",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Hematologia hereditária: doença falciforme, hemólise, crises vaso-oclusivas, síndrome torácica aguda, prevenção de infecções, sobrecarga de ferro e talassemias; diferenças entre investigação do adulto e pediátrica #244; não limitar ao nome 'anemias hereditárias'.",
+      "aulas_medcof": [
+        {
+          "id": 124,
+          "titulo": "Anemia Falciforme",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 232,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Coagulopatias, trombofilias e hemoterapia",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Hemostasia/coagulação (Alta), investigação de sangramentos e trombofilias, indicações e complicações de hemoterapia (Baixa): preservar transfusão, reações transfusionais e compatibilidade. Articular com #151 e #244 sem tornar conteúdo repetido.",
+      "aulas_medcof": [
+        {
+          "id": 122,
+          "titulo": "Coagulação e Hemostasia",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 126,
+          "titulo": "Hemoterapia",
+          "incidencia": "Baixa",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 233,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Oncologia clínica e emergências oncológicas",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Oncologia clínica (Alta): avaliação do paciente, emergências oncológicas (neutropenia febril, lise tumoral, compressão medular, hipercalcemia, obstrução de VCS), comunicação, prognóstico e paliativos. Não substituir neoplasias específicas da Cirurgia.",
+      "aulas_medcof": [
+        {
+          "id": 97,
+          "titulo": "Oncologia: emergências e cuidados paliativos",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 234,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Doença de Chagas",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Doença de Chagas (dentro de doenças negligenciadas): transmissão, fase aguda e crônica, cardiomiopatia e arritmias, manifestações digestivas, diagnóstico, tratamento etiológico e seguimento. Articular com APS e #235. IMPORTANTE: febre maculosa e icterícias febris não devem ser ensinadas como parte de Chagas; seu destino principal foi corrigido para #186.",
+      "aulas_medcof": [
+        {
+          "id": 197,
+          "titulo": "Doenças Negligenciadas",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 347,
+          "titulo": "Icterícias febris e Febre Maculosa",
+          "incidencia": "Alta",
+          "vinculo": "referencia_cruzada"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 235,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Hanseníase: diagnóstico, tratamento e prevenção de incapacidades",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Hanseníase: formas clínicas e espectro imunológico, exame dermatoneurológico, diagnóstico, tratamento, reações hansênicas, incapacidades, contatos e vigilância. A aula Diamante de TB/Hanseníase na APS é compartilhada; a tuberculose clínica e terapêutica tem núcleo próprio #61.",
+      "aulas_medcof": [
+        {
+          "id": 197,
+          "titulo": "Doenças Negligenciadas",
+          "incidencia": "Alta",
+          "vinculo": "referencia_cruzada"
+        },
+        {
+          "id": 329,
+          "titulo": "Tuberculose e Hanseníase na APS",
+          "incidencia": "Diamante",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 236,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Tumores renais e vesicais",
+      "tipo": "tema_original_preservado",
+      "instrucao": "Tumores renais e vesicais: hematúria, massas, investigação por imagem, classificação/estadiamento básico, encaminhamento e princípios terapêuticos. Aula MedCof de uro-oncologia tem referência cruzada com #191; conferir cobertura sem repetir HPB.",
+      "aulas_medcof": [
+        {
+          "id": 183,
+          "titulo": "Uro-Oncologia",
+          "incidencia": "Média",
+          "vinculo": "referencia_cruzada"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 237,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Síndrome compartimental e lesões musculotendíneas",
+      "tipo": "tema_original_preservado",
+      "instrucao": "SÍNDROME COMPARTIMENTAL DE MEMBROS (não confundir com compartimental INTRA-ABDOMINAL da #177): sinais de suspeita, diagnóstico clínico, consequências de isquemia, avaliação seriada, urgência cirúrgica/fasciotomia; lesões tendíneas, musculares e rabdomiólise. Integrar ortopedia/trauma vascular por referências cruzadas, sem deslocar a síndrome abdominal para este card.",
+      "aulas_medcof": [
+        {
+          "id": 277,
+          "titulo": "Ortopedia",
+          "incidencia": "Alta",
+          "vinculo": "referencia_cruzada"
+        },
+        {
+          "id": 304,
+          "titulo": "Isquemia de membros inferiores",
+          "incidencia": "Alta",
+          "vinculo": "referencia_cruzada"
+        },
+        {
+          "id": 327,
+          "titulo": "Trauma Vascular",
+          "incidencia": "Média",
+          "vinculo": "referencia_cruzada"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 261,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Doenças pulmonares intersticiais: diagnóstico e manejo",
+      "tipo": "nova_apostila_proposta",
+      "instrucao": "DOENÇA PULMONAR INTERSTICIAL (Alta): diagnóstico sindrômico, padrões clínicos e de TCAR, prova funcional, causas autoimunes/ocupacionais/fármacos, fibrose pulmonar idiopática e outras DPI, investigação, manejo e critérios de encaminhamento. Produzir de forma autossuficiente, conforme padrão livro-texto LURIA.",
+      "aulas_medcof": [
+        {
+          "id": 292,
+          "titulo": "Doença Pulmonar Intersticial (DPI)",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 262,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Esclerose múltipla e doenças desmielinizantes",
+      "tipo": "nova_apostila_proposta",
+      "instrucao": "ESCLEROSE MÚLTIPLA + NEUROMIELITE ÓPTICA (Alta): neuroanatomia e desmielinização, surto vs pseudossurto, exames de RNM e líquor, critérios diagnósticos contemporâneos, diferenciais (NMOSD/MOGAD), tratamento agudo e modificador de doença, gravidez e prognóstico; capítulo completo, não encaixar em AVC.",
+      "aulas_medcof": [
+        {
+          "id": 283,
+          "titulo": "Esclerose Múltipla (EM) e Neuromielite óptica",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 263,
+      "lote": 11,
+      "area": "Clínica Médica",
+      "titulo": "Intoxicações exógenas no adulto e toxicologia de emergência",
+      "tipo": "nova_apostila_proposta",
+      "instrucao": "INTOXICAÇÕES EXÓGENAS NO ADULTO (Diamante): suporte ABCDE, toxíndromes, ECG/alterações ácido-base, carvão ativado e indicações/contraindicações, antídotos frequentes, síndromes por analgésicos, antidepressivos, álcool, organofosforados, cáusticos, sedativos e drogas estimulantes, observação e critérios de alta; validar fármacos/doses nas fontes atuais.",
+      "aulas_medcof": [
+        {
+          "id": 270,
+          "titulo": "Intoxicações Exógenas",
+          "incidencia": "Diamante",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 264,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Doenças hepatobiliares e pancreáticas: lesões, infecções e tumores",
+      "tipo": "nova_apostila_proposta",
+      "instrucao": "DOENÇAS HEPATOBILIARES E PANCREÁTICAS (Alta/Média/Diamante/Baixa): organizar em módulos *separados*: (1) anatomia, raciocínio e lesões hepáticas benignas; (2) abscesso hepático e infecções; (3) carcinoma hepatocelular e metástases; (4) adenocarcinoma pancreático, tumores periampulares, lesões císticas e tumores neuroendócrinos; (5) estadiamento/conduta. Não reduzir as aulas não oncológicas a citações dentro da oncologia. Pancreatite aguda/crônica continua no #97.",
+      "aulas_medcof": [
+        {
+          "id": 110,
+          "titulo": "Abscesso Hepático",
+          "incidencia": "Baixa",
+          "vinculo": "principal"
+        },
+        {
+          "id": 227,
+          "titulo": "Nódulos hepáticos benignos",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 233,
+          "titulo": "Fígado para perdidos",
+          "incidencia": "Diamante",
+          "vinculo": "principal"
+        },
+        {
+          "id": 260,
+          "titulo": "Carcinoma hepatocelular",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 262,
+          "titulo": "Metástases hepáticas de câncer colorretal",
+          "incidencia": "Média",
+          "vinculo": "referencia_cruzada"
+        },
+        {
+          "id": 269,
+          "titulo": "Adenocarcinoma de pâncreas e tumores periampulares",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 315,
+          "titulo": "Neoplasias Císticas Pancreáticas",
+          "incidencia": "Média",
+          "vinculo": "principal"
+        },
+        {
+          "id": 348,
+          "titulo": "Pâncreas e vias biliares: Tumores Neuroendócrinos",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 265,
+      "lote": 11,
+      "area": "Cirurgia Geral",
+      "titulo": "Câncer de pulmão e tumores mediastinais",
+      "tipo": "nova_apostila_proposta",
+      "instrucao": "ONCOLOGIA TORÁCICA (Alta/Média): nódulo pulmonar e algoritmo de risco; câncer pulmonar, investigação, estadiamento e linhas terapêuticas por histologia/biomarcadores em nível de generalista; mediastino, massas, complicações e indicação cirúrgica. Hemoptise e bronquiectasias pertencem à Pneumologia #71 e entram aqui só como interface diagnóstica.",
+      "aulas_medcof": [
+        {
+          "id": 295,
+          "titulo": "Nódulo Pulmonar",
+          "incidencia": "Média",
+          "vinculo": "principal"
+        },
+        {
+          "id": 324,
+          "titulo": "Cancer de Pulmão",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 376,
+          "titulo": "Mediastino",
+          "incidencia": "Média",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    },
+    {
+      "id": 277,
+      "lote": 11,
+      "area": "Ginecologia e Obstetrícia",
+      "titulo": "Infertilidade conjugal e reprodução assistida",
+      "tipo": "apostila_ja_publicada_indexada",
+      "instrucao": "APOSTILA JÁ EXISTENTE — Infertilidade Conjugal: verificar texto efetivo e referências; integrar investigação do casal, endocrinologia reprodutiva, técnicas de reprodução assistida, aconselhamento e complicações. NÃO criar nova apostila ou copiar capítulos existentes.",
+      "aulas_medcof": [
+        {
+          "id": 165,
+          "titulo": "Infertilidade",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        },
+        {
+          "id": 360,
+          "titulo": "Técnicas de Reprodução Assistida",
+          "incidencia": "Alta",
+          "vinculo": "principal"
+        }
+      ],
+      "benchmark_drive": "PENDENTE",
+      "conteudo_inspecionado": false,
+      "matriz_cobertura_conferida": false,
+      "revision": "PENDENTE",
+      "aprovado": false,
+      "observacao": "Apostila não produzida nem revisada nesta auditoria; seguir o roteiro corrigido."
+    }
+  ]
+}
