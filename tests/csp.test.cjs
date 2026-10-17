@@ -135,18 +135,18 @@ test('Apostila pages register image capture before static images and template lo
   }
 });
 
-test('CSP inventory covers all 96 application HTML pages exactly once', () => {
+test('CSP inventory covers all 98 application HTML pages exactly once', () => {
   const files=[];
   function scan(directory) {
     for (const entry of fs.readdirSync(directory,{withFileTypes:true})) {
-      if (entry.name.startsWith('.') || ['node_modules','assets','tests','docs','scripts'].includes(entry.name)) continue;
+      if (entry.name.startsWith('.') || ['node_modules','assets','tests','docs','scripts','build','browser-results','tmp'].includes(entry.name)) continue;
       const full=path.join(directory,entry.name);
       if(entry.isDirectory())scan(full);
       else if(entry.name.endsWith('.html'))files.push(path.relative(root,full).replaceAll(path.sep,'/'));
     }
   }
   scan(root);
-  assert.equal(files.length,96);
+  assert.equal(files.length,98);
   assert.equal(new Set(pages).size,pages.length);
   assert.deepEqual([...pages].sort(),files.sort());
 });

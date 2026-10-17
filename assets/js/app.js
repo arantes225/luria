@@ -1150,8 +1150,12 @@ const sb = window.supabaseClient;
 
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
+  vocacao: { title: "Mapa de interesses", eyebrow: "Orientação de carreira", helper: "Explore interesses profissionais e áreas de acesso direto." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
+  aplicar: { title: "Aplicar", eyebrow: "Processos seletivos", helper: "Prepare sua candidatura." },
+  radar: { title: "Radar de provas", eyebrow: "Aplicar", helper: "Temas relevantes por prova e área." },
+  curriculo: { title: "Currículo", eyebrow: "Aplicar", helper: "Organize sua trajetória acadêmica." },
   aprender: { title: "Aprender", eyebrow: "Central de aprendizagem", helper: "Escolha como você quer aprender agora." },
   consolidar: { title: "Consolidar", eyebrow: "Fixação e prática", helper: "Revise, pratique e transforme conteúdo em conhecimento utilizável." },
   jogos: { title: "Jogos", eyebrow: "Aprender jogando", helper: "Explore desafios e treine medicina de um jeito diferente." },
@@ -1496,10 +1500,17 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
-        <a class="nav-link ${["aplicar", "editais"].includes(page) ? "active" : ""}" href="/aplicar/">
+        <a class="nav-link ${["aplicar", "curriculo", "radar"].includes(page) ? "active" : ""}" href="/aplicar/">
           <span class="nav-icon">${luriaIcon("compass")}</span><span>Aplicar</span>
         </a>
 
+        <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
+          <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
+        </a>
+
+        <a class="nav-link ${page === "vocacao" ? "active" : ""}" href="/vocacao/">
+          <span class="nav-icon">${luriaIcon("target")}</span><span>Mapa de interesses</span>
+        </a>
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
           <span class="nav-icon">${luriaIcon("users")}</span><span>Amigos</span>
         </a>
@@ -6187,7 +6198,7 @@ function carregarOnboardingGlobal() {
       "luria-onboarding-script";
 
     script.src =
-      "/assets/js/onboarding.js?v=20261013-frame1";
+      "/assets/js/onboarding.js?v=20261017-neutral1";
 
     script.onload =
       () => resolve();

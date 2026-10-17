@@ -147,9 +147,9 @@
 
 ## Atualização do método — referência do Drive e piloto visual
 
-Em 12/10/2026, após orientação de evitar “textões”, foram inspecionados visualmente dois PDFs do Drive para identificar padrões editoriais genéricos de cursinhos: \`02 - CORRIMENTOS VAGINAIS .pdf\` (**10 páginas**) e \`02 - ASSISTENCIA AO PRE-NATAL.pdf\` (**8 páginas**). Ambos combinam duas colunas por página, grande densidade didática, figuras de exame/ilustrações, diagramas, tabelas e blocos pequenos com títulos fortes. Outros exemplos inspecionados tinham 4–10 páginas; não se deve atribuir 40 páginas a esses arquivos, embora **40–60 páginas A4 relevantes** seja um objetivo desejado para cadernos completos da LURIA, conforme complexidade.
+Em 12/10/2026, após orientação de evitar “textões”, foram inspecionados visualmente dois PDFs do Drive para identificar padrões editoriais genéricos de material de estudo: \`02 - CORRIMENTOS VAGINAIS .pdf\` (**10 páginas**) e \`02 - ASSISTENCIA AO PRE-NATAL.pdf\` (**8 páginas**). Ambos combinam duas colunas por página, grande densidade didática, figuras de exame/ilustrações, diagramas, tabelas e blocos pequenos com títulos fortes. Outros exemplos inspecionados tinham 4–10 páginas; não se deve atribuir 40 páginas a esses arquivos, embora **40–60 páginas A4 relevantes** seja um objetivo desejado para cadernos completos da LURIA, conforme complexidade.
 
-**Correção da abordagem:** não aumentar o tamanho por meio de muitos parágrafos consecutivos ou apêndices massivos. Preservar e aprofundar visualmente todo mapa mental, fluxo, callout, gráfico e tabela existente; acrescentar, onde houver benefício, cartões comparativos, quadros de tomada de decisão, pequenos textos de interpretação e diagramas originais. Alvo de 40.000 caracteres didáticos **distribuídos ao longo dos capítulos**, sem conversão a longos blocos de prosa. O modelo do cursinho serve de inspiração estrutural, sem reprodução literal de textos/arte/propriedade intelectual de terceiros.
+**Correção da abordagem:** não aumentar o tamanho por meio de muitos parágrafos consecutivos ou apêndices massivos. Preservar e aprofundar visualmente todo mapa mental, fluxo, callout, gráfico e tabela existente; acrescentar, onde houver benefício, cartões comparativos, quadros de tomada de decisão, pequenos textos de interpretação e diagramas originais. Alvo de 40.000 caracteres didáticos **distribuídos ao longo dos capítulos**, sem conversão a longos blocos de prosa. O modelo do material de estudo serve de inspiração estrutural, sem reprodução literal de textos/arte/propriedade intelectual de terceiros.
 
 ### Piloto implementado em Vulvovaginites
 - Arquivo \`apostilas/vulvovaginites/index.html\` atualizado no GitHub em \`main\`, commit \`928dd59d0ebde1ff8f72530cea596cc7e592892b\`.
@@ -202,7 +202,7 @@ Após rejeição da repetição de figuras, mosaicos de quatro imagens e blocos 
 
 ### Revisão do conteúdo para prova — 13/10/2026
 
-Solicitação: tornar o caderno **Vulvovaginites** autossuficiente para estudar e fazer questões, no padrão de aprofundamento dos cursinhos do Drive, mantendo leitura digital organizada. O total extraído do artigo está em torno de 67 mil caracteres, incluindo revisão e referências; não usar esse número como validação isolada de qualidade.
+Solicitação: tornar o caderno **Vulvovaginites** autossuficiente para estudar e fazer questões, no padrão de aprofundamento dos material de estudo do Drive, mantendo leitura digital organizada. O total extraído do artigo está em torno de 67 mil caracteres, incluindo revisão e referências; não usar esse número como validação isolada de qualidade.
 
 - Candidíase: recorrência e classificação complicada (CDC x referências brasileiras), identificação de espécie, <em>C. glabrata</em>, indução/manutenção, manejo de falha e orientações na gestação, complicações locais e caso clínico.
 - Vaginose: interpretação de Amsel e Nugent, recorrência, supressão, gravidez e prematuridade, complicações, distinção PCDT/ACOG 2025, evidência do StepUp e caso de gestante.

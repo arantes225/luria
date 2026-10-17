@@ -17,7 +17,7 @@ Cobertura detectada: fisiologia do eixo hipotálamo-hipófise-ovários; amenorre
 - “02 - HIPERPROLACTINEMIA.pdf” (~9,2 mil caracteres) lido no Drive: secreção e controle dopaminérgico, causas fisiológicas/medicamentosas/neoplásicas e exames.
 - “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf” (~10,5 mil caracteres) lido no Drive: anovulação, hiperandrogenismo, exclusões etiológicas, proteção endometrial e tratamento de infertilidade.
 
-Ambos são documentos **de subtema**, não equivalentes à amenorreia integral. Nenhum teve autoria da Estratégia MED comprovada. **Não copiar figuras, frases ou tabelas do Drive.** A comparação específica permanece parcial. O conteúdo LURIA já excede em escopo ambos os resumos em grande parte dos temas, mas não se certifica qualidade só pelo volume.
+Ambos são documentos **de subtema**, não equivalentes à amenorreia integral. Nenhum teve autoria da material de referência comprovada. **Não copiar figuras, frases ou tabelas do Drive.** A comparação específica permanece parcial. O conteúdo LURIA já excede em escopo ambos os resumos em grande parte dos temas, mas não se certifica qualidade só pelo volume.
 
 ## 3. Ajustes clínicos prioritários à luz da ASRM 2024
 
@@ -118,6 +118,6 @@ D. Hirsutismo exclui hiperprolactinemia e tireoidopatia.
 - ASRM/ESHRE/IMS. *Evidence-based guideline: Premature Ovarian Insufficiency*. 2024/2025. Verificar edição específica antes de inserir ponto de corte.
 - Endocrine Society. *Functional Hypothalamic Amenorrhea: An Endocrine Society Clinical Practice Guideline*. 2017, referência fisiopatológica; verificar atualizações.
 - Apostila LURIA \`apostilas/amenorreia/index.html\` (fonte interna auditada).
-- Comparativos Drive: “02 - HIPERPROLACTINEMIA.pdf” e “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”; **somente benchmark, sem autoria Estrategia MED verificada**.
+- Comparativos Drive: “02 - HIPERPROLACTINEMIA.pdf” e “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”; **somente benchmark, sem autoria material de referência verificada**.
 
 **Status final:** complemento com 8 questões para revisão editorial, sem modificação da apostila publicada e sem certificação final.

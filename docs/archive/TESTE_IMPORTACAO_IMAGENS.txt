@@ -16,5 +16,5 @@ Q17 -> ECG
 
 Total esperado: 8 questões com figura.
 
-O rodapé/logo MedCof deve ser ignorado.
+O rodapé/logo formato-estruturado deve ser ignorado.
 A página do gabarito não deve gerar recortes.

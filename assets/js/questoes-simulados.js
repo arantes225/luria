@@ -468,48 +468,13 @@ function correctOptionHtml(selected = "") {
 }
 
 const QS_SOURCE_PROFILES = {
-  general: {
-    label: "Geral",
-    headers: []
-  },
-  medcof: {
-    label: "MEDCOF",
-    headers: [
-      /medcof\s*qbank/i,
-      /prova gerada pelo medcof/i
-    ]
-  },
-  aristo: {
-    label: "Aristo",
-    headers: [
-      /^aristo$/i,
-      /atividade:/i,
-      /impresso em:/i
-    ]
-  },
-  medway: {
-    label: "Medway",
-    headers: [
-      /medway/i
-    ]
-  },
-  "estrategia-med": {
-    label: "Estratégia MED",
-    headers: [
-      /estrat[eé]gia\s*med/i
-    ]
-  },
-  medcurso: {
-    label: "Medcurso",
-    headers: [
-      /medcurso/i,
-      /medgrupo/i
-    ]
-  },
-  other: {
-    label: "Outro",
-    headers: []
-  }
+  general: { label: "Geral", headers: [] },
+  structured: { label: "Formato estruturado", headers: [/prova gerada/i, /gabarito comentado/i] },
+  numbered: { label: "Questões numeradas", headers: [/^caderno de questões$/i, /atividade:/i, /impresso em:/i] },
+  blocks: { label: "Texto em blocos", headers: [/^caderno de exercícios$/i] },
+  commented: { label: "Caderno comentado", headers: [/^material de estudo$/i] },
+  compact: { label: "Formato compacto", headers: [/^simulado$/i, /^respostas comentadas$/i] },
+  other: { label: "Outro", headers: [] }
 };
 
 function currentExtractionSettings() {
@@ -536,7 +501,7 @@ function normalizeSourceSpecificLine(line, source) {
   }
 
   if (
-    ["aristo", "medway", "estrategia-med", "medcurso"]
+    ["numbered", "blocks", "commented", "compact"]
       .includes(source)
   ) {
     const match =
@@ -886,13 +851,13 @@ function isPdfHeaderLine(line) {
   }
 
   return (
-    normalized === "aristo"
+    normalized === "caderno de questões"
     || (
       normalized.includes("atividade:")
       && normalized.includes("impresso em:")
     )
     || normalized.includes(
-      "prova gerada pelo medcof qbank"
+      "prova gerada"
     )
     || (
       normalized.includes("| página ")
@@ -949,7 +914,7 @@ function alternativeStartMatch(
 
 
   /*
-    Alguns PDFs (como o MedCof enviado para teste) retornam
+    Alguns PDFs (com estrutura complexa enviados para teste) retornam
     visualmente "A) texto", mas a ordem interna do texto vem
     como "texto A)". Tratamos os dois formatos.
   */
@@ -1162,7 +1127,7 @@ function extractQuestionBlocks(
 }
 
 
-function extractMedCofAnswerKey(
+function extractStructuredAnswerKey(
   allLines
 ) {
   const answerKey = {};
@@ -4465,8 +4430,8 @@ async function extractQuestionsFromPdf(
   const pagesText = [];
   const extractedImageEntries = [];
 
-  let medCofDetected =
-    sourceProfile === "medcof";
+  let structuredDetected =
+    sourceProfile === "structured";
 
   for (
     let pageNumber = 1;
@@ -4501,12 +4466,12 @@ async function extractQuestionsFromPdf(
     );
 
     if (
-      /medcof\s*qbank/i
+      /prova\s*gerada|gabarito\s*comentado/i
         .test(
           rawPageText
         )
     ) {
-      medCofDetected =
+      structuredDetected =
         true;
     }
 
@@ -4567,8 +4532,8 @@ async function extractQuestionsFromPdf(
         ? sourceProfileLabel(
             sourceProfile
           )
-        : medCofDetected
-          ? "MEDCOF"
+        : structuredDetected
+          ? "Formato estruturado"
           : null;
 
   const strategies =
@@ -4676,12 +4641,12 @@ async function extractQuestionsFromPdf(
     questions.length < 2
   ) {
     throw new Error(
-      "Não consegui identificar as questões deste PDF. Tente a Extração detalhada ou selecione o cursinho correto."
+      "Não consegui identificar as questões deste PDF. Tente a Extração detalhada ou selecione o formato de PDF correspondente."
     );
   }
 
   const answerKey =
-    extractMedCofAnswerKey(
+    extractStructuredAnswerKey(
       allLines
     );
 
@@ -9562,7 +9527,7 @@ async function extractOfficialAnswerKeyFromPdfBlob(
   }
 
   const direct =
-    extractMedCofAnswerKey(
+    extractStructuredAnswerKey(
       lines
     );
 
@@ -9574,7 +9539,7 @@ async function extractOfficialAnswerKeyFromPdfBlob(
     return direct;
   }
 
-  return extractMedCofAnswerKey(
+  return extractStructuredAnswerKey(
     buildLooseTextLines(
       pageTexts
     )

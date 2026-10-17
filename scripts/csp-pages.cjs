@@ -1,9 +1,14 @@
 // Reviewed batches only: check each page's loaders before extending this list.
 module.exports = [
+  // New game pages: same-origin external scripts only.
+  'jogos/plantao-relampago/index.html',
+  'jogos/sequencia-salvadora/index.html',
+  'jogos/escapando-do-plantao/index.html',
   // Batch A
   'index.html',
   'login.html', 'login/index.html',
   'dashboard.html', 'dashboard/index.html',
+  'vocacao/index.html',
   'amigos.html', 'amigos/index.html',
   'admin.html', 'admin/index.html',
   'trabalho/index.html',
@@ -12,6 +17,7 @@ module.exports = [
   'trabalho/scores/index.html',
   // Batch B: local scripts, no inline event attributes or special loaders.
   'aprender/index.html',
+  'aplicar/index.html', 'aplicar/curriculo/index.html', 'aplicar/radar/index.html',
   'consolidar/index.html',
   'editais.html', 'editais/index.html',
   'beta-testers/index.html',

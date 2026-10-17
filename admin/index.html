@@ -152,6 +152,12 @@
             <button id="admin-images-refresh" class="button secondary" type="button">Atualizar</button>
           </div>
           <div class="admin-image-review-rule">
+            <strong>Imagens existentes</strong>
+            <span>Compacta imagens de conteúdo acima de 80 KiB e mantém o caminho usado pelo site. Imagens funcionais e de documentação ficam preservadas.</span>
+            <button id="admin-image-cap-backfill" class="button secondary" type="button">Aplicar limite às imagens existentes</button>
+            <div id="admin-image-cap-backfill-status" class="admin-status" aria-live="polite"></div>
+          </div>
+          <div class="admin-image-review-rule">
             <strong>Regra editorial</strong>
             <span>Imagem decorativa pode entrar sem revisão. ECG, RX, TC, RM, USG, endoscopia, lâmina e lesão clínica sem fonte confiável exigem aprovação humana.</span>
           </div>
@@ -170,6 +176,14 @@
           <div id="admin-images-status" class="admin-status" aria-live="polite">Carregando fila de imagens...</div>
           <div id="admin-images-list" class="admin-image-review-list">
             <div class="admin-table-empty">Nenhuma imagem pendente.</div>
+          </div>
+          <div class="admin-image-review-rule">
+            <strong>Baixa resolução</strong>
+            <span>Imagens com menos de 600 px no lado menor ficam sinalizadas e disponíveis apenas para revisão administrativa.</span>
+          </div>
+          <div id="admin-low-resolution-status" class="admin-status" aria-live="polite">Carregando imagens sinalizadas...</div>
+          <div id="admin-low-resolution-list" class="admin-image-review-list">
+            <div class="admin-table-empty">Nenhuma imagem sinalizada.</div>
           </div>
           <div class="admin-image-review-rule">
             <strong>Apostilas</strong>
@@ -1841,7 +1855,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="/assets/js/app.js?v=20261013-frame1"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
-  <script src="assets/js/admin.js?v=20261013-apostila-batch-admin-v1"></script>
+  <script src="assets/js/admin.js?v=20261017-imagecap-backfill-v2"></script>
   <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>

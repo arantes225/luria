@@ -372,7 +372,7 @@
 }
 
 /* =========================================================
-   FASE 8.1 — CENTRAL DE EDITAIS ARISTO
+   FASE 8.1 — CENTRAL DE EDITAIS formato-numerado
    ========================================================= */
 
 .editais-source-tabs {
@@ -404,16 +404,16 @@
 }
 
 .editais-own-content[hidden],
-.editais-aristo-content[hidden] {
+.editais-formato-numerado-content[hidden] {
   display: none !important;
 }
 
-.editais-aristo-content {
+.editais-formato-numerado-content {
   display: grid;
   gap: 14px;
 }
 
-.aristo-embed-head {
+.formato-numerado-embed-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -424,24 +424,24 @@
   background: var(--surface);
 }
 
-.aristo-embed-head h2 {
+.formato-numerado-embed-head h2 {
   margin: 10px 0 0;
 }
 
-.aristo-embed-head p {
+.formato-numerado-embed-head p {
   margin: 6px 0 0;
   color: var(--muted);
   font-size: 11px;
 }
 
-.aristo-embed-head .button {
+.formato-numerado-embed-head .button {
   flex: 0 0 auto;
   min-height: 39px;
   padding: 0 13px;
   text-decoration: none;
 }
 
-.aristo-frame-shell {
+.formato-numerado-frame-shell {
   position: relative;
   min-height: 780px;
   overflow: hidden;
@@ -450,7 +450,7 @@
   background: var(--surface);
 }
 
-.aristo-frame-loading {
+.formato-numerado-frame-loading {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -463,11 +463,11 @@
   background: var(--surface);
 }
 
-.aristo-frame-loading.hidden {
+.formato-numerado-frame-loading.hidden {
   display: none;
 }
 
-.aristo-editais-frame {
+.formato-numerado-editais-frame {
   position: relative;
   z-index: 2;
   display: block;
@@ -477,7 +477,7 @@
   background: #fff;
 }
 
-.aristo-frame-note {
+.formato-numerado-frame-note {
   color: var(--muted);
   font-size: 10px;
   line-height: 1.5;
@@ -490,15 +490,15 @@
     width: 100%;
   }
 
-  .aristo-embed-head {
+  .formato-numerado-embed-head {
     flex-direction: column;
   }
 
-  .aristo-frame-shell {
+  .formato-numerado-frame-shell {
     min-height: 650px;
   }
 
-  .aristo-editais-frame {
+  .formato-numerado-editais-frame {
     min-height: 900px;
   }
 }

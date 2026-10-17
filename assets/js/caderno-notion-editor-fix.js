@@ -194,7 +194,8 @@
 
     if (tag === "li") {
       return {
-        type: el.parentElement?.tagName?.toLowerCase() === "ol"
+        checked: el.querySelector(":scope > .notebook-check")?.getAttribute("aria-checked") === "true",
+        type: el.parentElement?.classList.contains("notebook-checklist") ? "to_do" : el.parentElement?.tagName?.toLowerCase() === "ol"
           ? "numbered_list_item"
           : "bulleted_list_item",
         text: String(el.innerText||"").trim()
@@ -301,7 +302,8 @@
           parent_block_id: parentBlockId,
           type: block.type,
           text: block.text,
-          variant: block.variant || null
+          variant: block.variant || null,
+          checked: block.checked
         });
 
         if (result?.block?.id) {
@@ -331,15 +333,16 @@
     const summary = document.createElement('summary');
     summary.textContent = 'Estrutura e ações da anotação'; panel.append(summary);
     panel.className = 'note-editing-panel'; panel.setAttribute('aria-label', 'Ferramentas de edição');
-    studio.append(panel); panel.append(toolbar);
+    studio.append(panel);
+    studio.querySelector(".note-canvas").prepend(toolbar);
     for (const selector of ['.note-tree', '.note-info']) {
       const node = studio.querySelector(selector); if (node) panel.append(node);
     }
     const mobile = matchMedia('(max-width:900px)');
     function arrangeTools() {
       panel.open = !mobile.matches;
-      if (mobile.matches) studio.querySelector('.note-editor-identity').after(toolbar);
-      else panel.insertBefore(toolbar, summary.nextSibling);
+      const info = panel.querySelector('.note-info');
+      if (info) panel.insertBefore(info, summary.nextSibling);
     }
     mobile.addEventListener('change', arrangeTools); arrangeTools();
     // One return control remains above the document; the outline no longer repeats it.
@@ -350,7 +353,7 @@
         menu.style.removeProperty('--study-menu-left'); menu.style.removeProperty('--study-menu-top');
         const anchor = menu.parentElement.getBoundingClientRect();
         const rect = menu.getBoundingClientRect();
-        const boundary = mobile.matches ? {left:12,right:innerWidth-12,top:12,bottom:innerHeight-12} : panel.getBoundingClientRect();
+        const boundary = {left:12,right:innerWidth-12,top:12,bottom:innerHeight-12};
         const left = Math.max(12, boundary.left + 4), right = Math.min(innerWidth - 12, boundary.right - 4);
         menu.style.setProperty('--study-menu-left', Math.max(left - anchor.left, Math.min(0, right - anchor.left - rect.width)) + 'px');
         const below = Math.min(innerHeight - 12, boundary.bottom) - anchor.bottom;

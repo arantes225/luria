@@ -37,6 +37,8 @@ jobs:
         run: node scripts/check-css.cjs
       - name: Test CSS ownership and legacy route aliases
         run: node --test tests/css-system.test.cjs tests/ui-routes.test.cjs tests/ui-startup.test.cjs tests/ui-final-refinement.test.cjs
+      - name: Validate Aplicar curriculum and exam radar
+        run: node --test tests/curriculo.test.cjs tests/radar.test.cjs tests/pdf-layout-profiles.test.cjs
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
       - name: Validate social room permissions, client behavior and voice authorization

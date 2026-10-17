@@ -98,7 +98,7 @@
     .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
     .fixation-answer[hidden]{display:none}
   
-/* Cursinho LURIA: quadro visual complementar, responsivo e imprimível */
+/* material de estudo LURIA: quadro visual complementar, responsivo e imprimível */
 .luria-visual-module{border-top:4px solid var(--accent)}
 .luria-visual-intro{font-size:12.6px!important;color:var(--muted)}
 .luria-study-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}

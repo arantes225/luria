@@ -1,0 +1,335 @@
+/* Official sources checked 2026-10-16. Each edition has independent criteria. */
+(() => {
+  const part = (id, label, points, limit = 1) => ({ id, label, points, limit });
+  const criterion = (id, title, max, page, note, parts) => ({ id, title, max, page, note, parts });
+  window.LuriaCurriculoRubricas = [{
+    id: 'fmusp-2027-direto-v20261007', title: 'FMUSP / FUVEST · 2027 · Acesso direto',
+    status: 'reviewed', max: 100, checkedAt: '2026-10-16',
+    source: 'https://www.fuvest.br/wp-content/uploads/rm2027-edital-02-2026.pdf',
+    updates: 'https://www.fuvest.br/wp-content/uploads/rm2027-retificacao-2026-10-07.pdf',
+    listing: 'https://www.fuvest.br/residencia-medica/2/',
+    scope: 'Áreas básicas e acesso direto, item 2.4, programas do item 1.1.2. Não se aplica às especialidades com pré-requisito ou a treineiros.',
+    multipliers: [{id:'1', label:'ENAMED 2025: conceito 1, 2 ou 3 / sem fator informado', value:1}, {id:'4', label:'ENAMED 2025: conceito 4', value:1.1}, {id:'5', label:'ENAMED 2025: conceito 5', value:1.2}],
+    criteria: [
+      criterion('instituicao','Pós-graduação da instituição formadora',15,31,'Apenas programas elegíveis em Medicina I, II, III ou Saúde Coletiva. Anexar documentos institucionais e da graduação.',[
+        part('i1','Instituição com pelo menos 2 programas de excelência (conceitos 6 ou 7)',15),part('i2','Programas de doutorado acadêmico com conceitos 4 ou 5',3,3),part('i3','Programas apenas de mestrado acadêmico',1.5,2),part('i4','Programas de mestrado ou doutorado profissional',1,2)]),
+      criterion('hospital','Hospital de ensino',12,31,'Comprovação emitida pela direção da instituição.',[part('h1','Hospital próprio',12),part('h2','Hospital formalmente conveniado',3)]),
+      criterion('docentes','Titulação do corpo docente',8,31,'Documento da instituição para as áreas elegíveis. Selecione somente a faixa aplicável.',[part('d1','Mais de 80% de doutores',8),part('d2','Mais de 60% até 80% de doutores',4),part('d3','Mais de 50% até 60% de doutores ou mestres',2)]),
+      criterion('monitoria','Monitoria na graduação em Medicina',4,32,'Mesmo programa de monitoria; certificado institucional com período e horas. Não repetir o mesmo período em mais de uma faixa.',[part('m1','Mais de 2 semestres e pelo menos 192 horas',4),part('m2','2 semestres e pelo menos 128 horas',3),part('m3','1 semestre e pelo menos 64 horas',1)]),
+      criterion('pesquisa','Iniciação científica',14,32,'Exige certificação ou relatório elegível e publicação/aceite identificando o candidato, quando aplicável. Não contar o mesmo projeto duas vezes.',[part('p1','Com bolsa, ≥2 semestres e artigo relacionado',14),part('p2','Com bolsa, 2 semestres sem publicação',2,2),part('p3','Sem bolsa, ≥2 semestres e artigo relacionado',8)]),
+      criterion('artigos','Publicações adicionais',10,33,'Não reutilizar artigo contabilizado na iniciação científica. Comprovar autoria e indexação/aceite.',[part('a1','Artigo no PubMed',10),part('a2','Artigo diferente no SciELO',8)]),
+      criterion('eventos','Organização e participação em eventos',5,33,'Conferir reconhecimento da entidade e certificado de organização ou participação. Não repetir atividade.',[part('e1','Organização: entidade AMB ou internacional elegível',4),part('e2','Organização: liga, estudantes ou diretório',1,2),part('e3','Participação: entidade AMB ou internacional elegível',1,2),part('e4','Participação: liga, estudantes ou diretório',1)]),
+      criterion('oral','Apresentação oral de trabalhos',8,33,'Certificado deve identificar o candidato como apresentador. Conferir organizador e premiação nos termos do edital.',[part('o1','Evento internacional elegível, com prêmio',8),part('o2','Evento internacional elegível, sem prêmio',7),part('o3','Congresso nacional de entidade AMB, com prêmio',6),part('o4','Congresso nacional de entidade AMB, sem prêmio',5),part('o5','Jornada de sociedade AMB, com prêmio',4),part('o6','Jornada de sociedade AMB, sem prêmio',3),part('o7','Jornada de liga, estudantes ou diretório',1,2)]),
+      criterion('poster','Apresentação de pôster',4,34,'Exige autoria e responsabilidade pela apresentação comprovadas.',[part('t1','Evento internacional elegível',4),part('t2','Evento nacional de entidade AMB',3),part('t3','Evento de liga, estudantes ou diretório',1)]),
+      criterion('extensao','Extensão universitária',5,34,'Exclui ligas e extensão curricular. Exige registro na instituição formadora, período e certificado ou relatório assinado pela comissão de extensão ou direção (retificação de 07/10/2026).',[part('x1','Diretoria do grupo por 1 ano',5),part('x2','Membro do grupo por pelo menos 2 anos',3),part('x3','Membro do grupo por pelo menos 1 ano',1)]),
+      criterion('pos','Aprimoramento profissional',8,35,'Título concluído. Conferir áreas elegíveis, reconhecimento CNRM e equivalência internacional conforme edital.',[part('f1','Doutorado acadêmico elegível',8),part('f2','Mestrado acadêmico elegível',4),part('f3','Residência médica em outra área',2)]),
+      criterion('suporte','Cursos de suporte à vida',4,35,'ACLS, ATLS, PALS ou BLS: presenciais, válidos no ano da inscrição, com certificação AHA ou ACS e certificado de conclusão.',[part('s1','Cursos elegíveis',2,2)]),
+      criterion('representacao','Representação estudantil',3,35,'Exclui ligas. Conferir entidade, instituição, período, função e carga horária no certificado.',[part('r1','Pelo menos 2 anos / 4 semestres',3),part('r2','Pelo menos 1 ano / 2 semestres',1)])
+    ]
+  }];
+  window.LuriaCurriculoRubricas[0].criteria.find(row => row.id === 'docentes').exclusive = true;
+  window.LuriaCurriculoRubricas[0].institution = 'USP-SP';
+  window.LuriaCurriculoRubricas[0].region = 'SP';
+  window.LuriaCurriculoRubricas[0].edition = '2027';
+  window.LuriaCurriculoRubricas[0].groups = [
+    {id:'formacao',title:'Instituição de formação',tone:'violet',criteria:['instituicao','hospital','docentes']},
+    {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['pesquisa','artigos']},
+    {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['monitoria']},
+    {id:'eventos',title:'Congressos e apresentações',tone:'teal',criteria:['eventos','oral','poster']},
+    {id:'extensao',title:'Extensão e representação',tone:'rose',criteria:['extensao','representacao']},
+    {id:'qualificacoes',title:'Qualificações e suporte à vida',tone:'indigo',criteria:['pos','suporte']}
+  ];
+  for (const [institution,region] of [['UNIFESP','SP'],['FMABC','SP'],['Santa Casa SP','SP'],['SES-DF','DF'],['SES-PE','PE'],['USP-RP','SP'],['PSU-MG','MG'],['Santa Casa BH','MG'],['PUC-Campinas','SP'],['UNICAMP','SP'],['Einstein','SP'],['UFPA','PA'],['PSU-GO','GO'],['PUC-SP','SP']]) {
+    window.LuriaCurriculoRubricas.push({ id:institution.toLowerCase().replace(/[^a-z0-9]/g,'-')+'-pending', title:institution+' · Edital a conferir', institution, region, status:'pending', scope:'A avaliação curricular e a edição vigente deste processo ainda precisam ser confirmadas em edital oficial.' });
+  }
+  const psu=window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-MG');
+  Object.assign(psu,{
+    id:'psu-mg-2027-direto-v20260924', title:'PSU-MG / AREMG · 2027 · Entrada direta',edition:'2027',
+    status:'reviewed',max:13,checkedAt:'2026-10-17',
+    source:'https://www.galaxcms.com.br/up_crud_comum/601/Anexo1-AvaliacaoCurricularPadronizadaEntradaDiretaPSUMG2027-20260924112431.pdf',
+    updates:'https://www.galaxcms.com.br/up_crud_comum/601/Retificacao2aosEditaisdoPSUMG2027-20261006110849.pdf',
+    listing:'https://www.aremg.org.br/detalhes-do-processo/anexos-aos-editais-psu-mg-2027/2348',
+    scope:'Entrada direta. Anexo 1 de 2027. Confira períodos, documentação, autoria e impedimentos no anexo; atividades concomitantes podem ser recusadas.',
+    criteria:[
+      {...criterion('mg-notas1','Histórico: primeiros 4 anos',1.5,5,'Faixa alcançada em 50% das disciplinas.',[part('mg-n1a','≥85',1.5),part('mg-n1b','≥80',1),part('mg-n1c','≥75',.5),part('mg-n1d','Demais faixas elegíveis',.25)]),exclusive:true},
+      {...criterion('mg-notas2','Histórico: últimos 2 anos',1.5,5,'70% das disciplinas; conferir internatos mínimos.',[part('mg-n2a','≥85 / A',1.5),part('mg-n2b','≥80 / B',1),part('mg-n2c','Faixa inferior',.5),part('mg-n2d','Conceitual elegível',.25),part('mg-n2e','Apenas diploma / CRM',.1)]),exclusive:true},
+      {...criterion('mg-lingua','Idioma estrangeiro',1,6,'Certificação e equivalência: páginas 6–8.',[part('mg-l1','Inglês avançado',1),part('mg-l2','Intermediário inglês / avançado outro idioma / formação elegível',.5),part('mg-l3','Intermediário outro idioma',.25)]),exclusive:true},
+      criterion('mg-pratica','Estágio, PET e monitoria',2,9,'Confira duração, horas, instituição e concomitância.',[part('mg-estagio','Estágio / PET elegível',1),part('mg-monitoria','Monitoria: ≥16 semanas, ≥80h',1)]),
+      criterion('mg-ic','Pesquisa',1.3,12,'Atividades distintas; conferir períodos e comprovação.',[part('mg-ic1','Bolsa: ≥6 meses, ≥80h',.5),part('mg-ic2','Participação adicional: ≥6 meses, ≥80h',.3),part('mg-ic3','Projeto CNPq distinto: ≥12 meses, ≥80h, resultado científico',.5)]),
+      criterion('mg-eventos','Organização e palestra',.5,13,'Eventos elegíveis distintos, fora de ligas.',[part('mg-organiza','Organizador',.25),part('mg-palestra','Palestrante',.25)]),
+      criterion('mg-liga','Liga e representação',1.1,14,'Confira cargos, carga horária e períodos.',[part('mg-liga1','Liga: 2 semestres, ≥50h',.8),part('mg-repr','Representação elegível: ≥1 ano',.3)]),
+      criterion('mg-suporte','Suporte avançado à vida',.7,16,'Carteira válida de entidade reconhecida.',[part('mg-s1','Curso elegível: ≥16h',.7)]),
+      {...criterion('mg-cursos','Cursos de temas médicos',.6,17,'Retificação nº 2 (05/10/2026): 0,6 ponto para dois cursos ou 0,3 para um, realizados nos últimos 5 anos, com pelo menos 8 horas cada. Devem ser emitidos formalmente pela AMB, associações médicas estaduais filiadas, sociedades reconhecidas pela AMB, CFM, CRM ou sindicato médico; não valem documentos de instituições de ensino, empresas, hospitais, clínicas ou cooperativas. Os dois cursos devem ser diferentes, de entidades diferentes e ter intervalo mínimo de 30 dias.',[part('mg-c1','Dois cursos elegíveis',.6),part('mg-c2','Um curso elegível',.3)]),exclusive:true},
+      criterion('mg-ext','Extensão e comunidade',1,19,'Confira registro, horas e períodos.',[part('mg-x1','Extensão institucional elegível',.7),part('mg-x2','Conjunto de ações comunitárias elegível',.3)]),
+      {...criterion('mg-trabalhos','Apresentação científica',.8,22,'Confira autoria, orientador com RQE e publicação.',[part('mg-t1','Apresentação elegível',.5),part('mg-t2','Apresentação com publicação elegível',.8)]),exclusive:true},
+      {...criterion('mg-artigos','Artigo publicado',1,24,'Não basta aceite. Conferir autoria, RQE e indexação.',[part('mg-a1','MEDLINE/PubMed, Embase, Scopus ou Web of Science',1),part('mg-a2','SciELO/LILACS, Qualis ≥B2',.5)]),exclusive:true}
+    ],
+    groups:[
+      {id:'formacao',title:'Formação',tone:'violet',criteria:['mg-notas1','mg-notas2']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['mg-ic','mg-artigos','mg-trabalhos']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['mg-pratica','mg-liga']},
+      {id:'eventos',title:'Congressos e cursos',tone:'teal',criteria:['mg-eventos','mg-cursos','mg-suporte']},
+      {id:'extensao',title:'Extensão e comunidade',tone:'rose',criteria:['mg-ext']},
+      {id:'qualificacoes',title:'Qualificações',tone:'indigo',criteria:['mg-lingua']}
+    ]
+  });
+  psu.criteria.forEach((row,index)=>{row.number=['1.1','1.2','2','3','4','5','6','7','8','9','10','11'][index];});
+  const usprp=window.LuriaCurriculoRubricas.find(row=>row.institution==='USP-RP');
+  Object.assign(usprp,{
+    id:'usp-rp-2027-direto-v20260922', title:'USP-RP / HCFMRP · 2027 · Acesso direto', edition:'2027',
+    status:'reviewed',max:10,checkedAt:'2026-10-17',
+    source:'https://extranet.hcrp.usp.br/novorh/arquivos/3650/E3650239202610417.pdf',
+    listing:'https://extranet.hcrp.usp.br/novorh/ListaArquivos.aspx?area=0&edital=3650&s=3',
+    scope:'Acesso direto do HCFMRP-USP. Item 5 do edital 2027; a banca pode avaliar pertinência e qualidade das atividades, respeitando os tetos de cada bloco.',
+    criteria:[
+      criterion('rp-hospital','Hospital universitário da instituição de origem',.5,14,'Instituição de origem com hospital universitário próprio. Exige comprovação emitida pela instituição.',[part('rp-hospital','Hospital universitário próprio',.5)]),
+      {...criterion('rp-pos','Pós-graduação da instituição de origem',.5,14,'Programas de pós-graduação na área da saúde credenciados pela CAPES. Selecione apenas uma faixa.',[part('rp-pos5','Cinco ou mais programas',.5),part('rp-pos24','Dois a quatro programas',.3),part('rp-pos1','Um programa',.2)]),exclusive:true},
+      {...criterion('rp-enamed','Desempenho institucional no ENAMED',.5,14,'Conceito da instituição no último ENAMED. Selecione somente um conceito.',[part('rp-e1','Conceito 1',.1),part('rp-e2','Conceito 2',.2),part('rp-e3','Conceito 3',.3),part('rp-e4','Conceito 4',.4),part('rp-e5','Conceito 5',.5)]),exclusive:true},
+      criterion('rp-assistencia','Atividades assistenciais extracurriculares',2,14,'Liga: pelo menos 1 ano letivo consecutivo e 80 horas. Voluntariado social: últimos 7 anos e 120 horas por atividade.',[part('rp-liga','Ano letivo de liga estudantil elegível',.5,2),part('rp-voluntario','Bloco de 120 horas de trabalho voluntário social elegível',.5,2)]),
+      criterion('rp-ciencia','Atividades científicas',3,15,'Artigo completo, iniciação científica e apresentações. O teto do bloco é 3 pontos; não contar o mesmo período ou trabalho duas vezes.',[part('rp-artigo','Artigo completo elegível',1,3),part('rp-ic-sem','Ano de iniciação científica sem bolsa',.5,2),part('rp-ic-com','Ano de iniciação científica com bolsa',.7,2),part('rp-oral','Apresentação oral como primeiro autor',.5,2),part('rp-poster-reg','Pôster regional',.1,6),part('rp-poster-est','Pôster estadual',.15,4),part('rp-poster-nac','Pôster nacional',.2,3),part('rp-poster-int','Pôster internacional',.3,2)]),
+      criterion('rp-ensino','Ensino extracurricular',1.5,15,'Monitoria com bolsa, docência em preparação para vestibular, organização de eventos científicos, provas avaliativas não obrigatórias e prêmios acadêmicos. O teto do bloco é 1,5 ponto.',[part('rp-monitoria','Semestre de monitoria com bolsa',.25,4),part('rp-docencia','Ano letivo de docência elegível',.5,2),part('rp-organiza','Evento científico organizado',.3,2),part('rp-prova','Prova avaliativa elegível',.5,2),part('rp-premio','Prêmio acadêmico institucional',.2,2)]),
+      criterion('rp-estudantes','Atividades estudantis',2,16,'Cargos em entidades estudantis e representação discente, com pelo menos 1 ano letivo consecutivo e comprovação institucional. O teto do bloco é 2 pontos.',[part('rp-entidade','Ano letivo em cargo estudantil elegível',.5,2),part('rp-colegiado','Ano em colegiado oficial',.5,2),part('rp-comissao','Ano em comissão oficial de avaliação ou reforma curricular',.5,2)])
+    ],
+    groups:[
+      {id:'formacao',title:'Histórico acadêmico',tone:'violet',criteria:['rp-hospital','rp-pos','rp-enamed']},
+      {id:'academicas',title:'Assistência extracurricular',tone:'blue',criteria:['rp-assistencia']},
+      {id:'pesquisa',title:'Atividades científicas',tone:'amber',criteria:['rp-ciencia']},
+      {id:'ensino',title:'Ensino extracurricular',tone:'teal',criteria:['rp-ensino']},
+      {id:'estudantis',title:'Atividades estudantis',tone:'rose',criteria:['rp-estudantes']}
+    ]
+  });
+  usprp.criteria.find(row=>row.id==='rp-enamed').exclusive=true;
+  const pucsp=window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-SP');
+  Object.assign(pucsp,{
+    id:'puc-sp-2027-direto-v20260904',title:'PUC-SP · 2027 · Área básica e acesso direto',edition:'2027',
+    status:'reviewed',max:100,checkedAt:'2026-10-17',
+    source:'https://www.nucvest.com.br/downloads/pucsp/residencia-medica/2027/abad/Edital-RM-2027-ABAD.pdf',
+    listing:'https://www.nucvest.com.br/pucsp/residencia-medica/2027/abad/index.html',
+    scope:'Área básica e acesso direto, item 4.4.4 do edital 2027. A avaliação curricular vale até 100 pontos, convertidos pela seleção em nota de 0 a 10.',
+    criteria:[
+      criterion('pucsp-monitoria','Monitoria',9,10,'Durante a graduação e certificada pela instituição de ensino. Menos de 6 meses não pontua.',[part('pucsp-mon6','Monitoria com 6 meses',3,3),part('pucsp-mon12','Monitoria com 12 meses',6,1)]),
+      criterion('pucsp-ic','Iniciação científica ou projeto de extensão',20,10,'Durante a graduação, certificado pela instituição, órgão de fomento ou entidade indicada no edital. Exige 12 meses.',[part('pucsp-ic12','Atividade elegível de 12 meses',10,2)]),
+      criterion('pucsp-pub','Publicações científicas em saúde',30,10,'Artigos avaliados pela CAPES, capítulos de livro e autoria ou coautoria de livros. O teto do bloco é 30 pontos.',[part('pucsp-pub5','Publicação de 5 pontos ou capítulo de livro',5,6),part('pucsp-pub10','Publicação de 10 pontos ou autoria/coautoria de livro',10,3)]),
+      criterion('pucsp-trabalhos','Trabalhos apresentados em congressos',12,10,'Pôster ou apresentação oral. A pontuação varia conforme o alcance do congresso.',[part('pucsp-post-lr','Pôster locorregional',1,12),part('pucsp-oral-lr','Apresentação oral locorregional',2,6),part('pucsp-post-n','Pôster nacional',2,6),part('pucsp-oral-n','Apresentação oral nacional',3,4),part('pucsp-post-i','Pôster internacional',3,4),part('pucsp-oral-i','Apresentação oral internacional',4,3)]),
+      criterion('pucsp-eventos','Participação em eventos',6,10,'Participação como ouvinte em congressos, cursos, jornadas, simpósios e eventos equivalentes.',[part('pucsp-cong-lr','Congresso locorregional',1,6),part('pucsp-cong-n','Congresso nacional',2,3),part('pucsp-cong-i','Congresso internacional',3,2),part('pucsp-outro-lr','Outro evento locorregional',.25,24),part('pucsp-outro-n','Outro evento nacional',.5,12),part('pucsp-outro-i','Outro evento internacional',1,6)]),
+      criterion('pucsp-suporte','Cursos de suporte à vida',3,10,'ACLS, ATLS ou PALS, com certificado válido na data de envio da documentação.',[part('pucsp-suporte','Curso elegível e válido',1,3)]),
+      criterion('pucsp-internato','Duração do internato',10,10,'O edital atribui 10 pontos ao internato com duração de 3 anos.',[part('pucsp-internato3','Internato de 3 anos',10)]),
+      criterion('pucsp-representacao','Representação e gestão acadêmica',4,10,'Cargo em órgão colegiado, liga, atlética, centro acadêmico ou estrutura equivalente, com pelo menos 12 meses.',[part('pucsp-representa','Cargo elegível de pelo menos 12 meses',2,2)]),
+      criterion('pucsp-premios','Prêmios em congressos',4,10,'Prêmio recebido pelo candidato em congresso locorregional, nacional ou internacional.',[part('pucsp-premio-lr','Prêmio locorregional',1,4),part('pucsp-premio-n','Prêmio nacional',2,2),part('pucsp-premio-i','Prêmio internacional',4)]),
+      criterion('pucsp-idioma','Língua estrangeira',2,10,'Certificado de proficiência ou suficiência no respectivo idioma.',[part('pucsp-idioma','Idioma com certificado elegível',1,2)])
+    ],
+    groups:[
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['pucsp-monitoria','pucsp-ic','pucsp-representacao']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['pucsp-pub','pucsp-trabalhos','pucsp-premios']},
+      {id:'eventos',title:'Congressos e formação complementar',tone:'teal',criteria:['pucsp-eventos','pucsp-suporte']},
+      {id:'formacao',title:'Formação',tone:'violet',criteria:['pucsp-internato']},
+      {id:'qualificacoes',title:'Qualificações',tone:'indigo',criteria:['pucsp-idioma']}
+    ]
+  });
+  const unicamp=window.LuriaCurriculoRubricas.find(row=>row.institution==='UNICAMP');
+  Object.assign(unicamp,{
+    id:'unicamp-2027-direto-v20260916',title:'UNICAMP · 2027 · Acesso direto',edition:'2027',
+    status:'reviewed',max:100,checkedAt:'2026-10-17',
+    source:'https://portal.fcm.unicamp.br/wp-content/uploads/sites/58/2026/09/001-Edital-Acesso-Direto-2027.pdf',
+    listing:'https://intranet.fcm.unicamp.br/editais/residencia-medica',
+    scope:'Programas de acesso direto do item 1.1. A avaliação curricular vale até 100 pontos e compõe 10% da nota final; os documentos devem seguir a ordem do item 5.2.',
+    criteria:[
+      {...criterion('unicamp-pos','Pós-graduação da instituição formadora',15,6,'A instituição deve possuir programa em Medicina aceito pela CAPES. Selecione apenas a maior titulação aplicável.',[part('unicamp-doutorado','Doutorado stricto sensu',15),part('unicamp-mestrado','Mestrado stricto sensu',10)]),exclusive:true},
+      {...criterion('unicamp-hospital','Hospital de ensino da instituição formadora',10,7,'Exige comprovante assinado pela comissão de ensino de graduação. Selecione apenas a situação aplicável.',[part('unicamp-hospital-proprio','Hospital de ensino próprio',10),part('unicamp-hospital-conveniado','Hospital de ensino formalmente conveniado',5)]),exclusive:true},
+      {...criterion('unicamp-ic','Iniciação científica',20,7,'Comprovar duração, projeto, orientador e, quando houver, a agência ou instituição da bolsa. Não conte o mesmo projeto em mais de uma faixa.',[part('unicamp-ic-bolsa-mais','Com bolsa por mais de 2 semestres',20),part('unicamp-ic-bolsa-ate','Com bolsa por até 2 semestres',15),part('unicamp-ic-sem-mais','Sem bolsa por mais de 2 semestres',10),part('unicamp-ic-sem-ate','Sem bolsa por até 2 semestres',5)]),exclusive:true},
+      criterion('unicamp-artigos','Artigos científicos completos',15,7,'Artigo publicado ou aceito, com identificação do candidato entre os autores e DOI. O teto do bloco é 15 pontos.',[part('unicamp-pubmed','Artigo indexado no PubMed',10,2),part('unicamp-scielo','Artigo indexado no SciELO',5,3)]),
+      criterion('unicamp-congressos','Trabalhos apresentados em congresso',10,7,'Certificado deve identificar autoria ou coautoria, forma de apresentação e evento. O teto do bloco é 10 pontos.',[part('unicamp-oral-sociedade','Apresentação oral em congresso de sociedade médica nacional ou internacional',10),part('unicamp-poster-sociedade','Pôster em congresso de sociedade médica nacional ou internacional',6),part('unicamp-oral-local','Apresentação oral em congresso médico acadêmico local ou regional',2,5),part('unicamp-poster-local','Pôster em congresso médico acadêmico local ou regional',2,5)]),
+      criterion('unicamp-liga','Liga acadêmica',5,8,'Participação mínima de 2 semestres na mesma liga, com certificado e relatório do coordenador médico.',[part('unicamp-liga','Participação elegível em liga acadêmica',5)]),
+      {...criterion('unicamp-monitoria','Monitoria ou aperfeiçoamento didático',5,8,'Certificado ou declaração deve informar duração, carga horária e atividade. Selecione apenas uma faixa.',[part('unicamp-monitoria-mais','Mais de 2 semestres letivos',5),part('unicamp-monitoria-ate','Até 2 semestres letivos',2)]),exclusive:true},
+      {...criterion('unicamp-extensao','Programa ou projeto de extensão',10,8,'Exclui atividades regulares da graduação. O certificado deve informar duração e atividade. Selecione apenas uma faixa.',[part('unicamp-extensao-96','Mais de 96 horas',10),part('unicamp-extensao-48','Mais de 48 e menos de 96 horas',5)]),exclusive:true},
+      criterion('unicamp-representacao','Representação estudantil em colegiados',5,8,'Representação discente institucional por pelo menos 2 semestres; exclui ligas, centro acadêmico, atlética e equipe esportiva.',[part('unicamp-representacao','Representação elegível em colegiado',5)]),
+      criterion('unicamp-entidades','Centro acadêmico, atlética e equipe universitária',5,9,'Atividade por pelo menos 2 semestres, comprovada pela instituição. O teto conjunto é 5 pontos.',[part('unicamp-ca','Diretoria de centro ou diretório acadêmico',2,2),part('unicamp-atletica','Diretoria de atlética',2,2),part('unicamp-equipe','Equipe esportiva universitária ou bateria',1,5)])
+    ],
+    groups:[
+      {id:'formacao',title:'Instituição de formação',tone:'violet',criteria:['unicamp-pos','unicamp-hospital']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['unicamp-ic','unicamp-artigos']},
+      {id:'eventos',title:'Congressos',tone:'teal',criteria:['unicamp-congressos']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['unicamp-liga','unicamp-monitoria']},
+      {id:'extensao',title:'Extensão e representação',tone:'rose',criteria:['unicamp-extensao','unicamp-representacao','unicamp-entidades']}
+    ]
+  });
+  const ufpa=window.LuriaCurriculoRubricas.find(row=>row.institution==='UFPA');
+  Object.assign(ufpa,{
+    id:'ufpa-2026-v20250918',title:'UFPA · 2026 · Residência médica',edition:'2026',
+    status:'reviewed',max:100,checkedAt:'2026-10-17',
+    source:'https://www.ceps.ufpa.br/images/conteudo/residencia/medica%202026/editais%20avisos/ANEXO-II-FICHA-AVALIACAO-CURRICULO.pdf',
+    listing:'https://www.ceps.ufpa.br/index.php/medica2026/998-editais/2245-anexos',
+    scope:'Matriz oficial mais recente disponível no portal da UFPA em 17/10/2026. O processo 2027 ainda não estava publicado; esta edição 2026 deve ser revisada quando a nova ficha sair.',
+    criteria:[
+      criterion('ufpa-projetos','Pesquisa, extensão, iniciação científica ou PET',24,1,'Cada certificado deve ter pelo menos 180 horas e atender à assinatura institucional exigida na ficha. O teto é de três documentos.',[part('ufpa-projeto-bolsa','Projeto elegível com bolsa',8,3),part('ufpa-projeto-voluntario','Projeto elegível como voluntário',7,3)]),
+      {...criterion('ufpa-monitoria','Monitoria ou estágio não obrigatório',6,1,'Atividade em disciplina da área médica, com pelo menos 180 horas e comprovação institucional. Apenas um documento é avaliado.',[part('ufpa-monitoria-bolsa','Monitoria ou estágio elegível com bolsa',6),part('ufpa-monitoria-voluntario','Monitoria ou estágio elegível como voluntário',5)]),exclusive:true},
+      criterion('ufpa-artigos','Artigos científicos completos',30,1,'Artigo completo publicado em revista da área da saúde ou afins, de qualquer Qualis. Resumos e anais não pontuam.',[part('ufpa-artigo','Artigo científico elegível',10,3)]),
+      criterion('ufpa-apresentacoes','Trabalhos em eventos científicos',20,1,'Apresentação oral ou pôster em evento científico. No máximo dois documentos.',[part('ufpa-apresentacao','Trabalho apresentado em evento científico',10,2)]),
+      criterion('ufpa-eventos','Eventos científicos e cursos',10,1,'Ouvinte, organizador ou curso oficial com pelo menos 30 horas; cada documento vale 1 ponto.',[part('ufpa-evento','Documento elegível',1,10)]),
+      criterion('ufpa-idiomas','Línguas estrangeiras',10,1,'Curso oficial com mais de 150 horas ou teste formal e reconhecido. A mesma língua pontua apenas uma vez.',[part('ufpa-idioma','Idioma elegível',5,2)])
+    ],
+    groups:[
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['ufpa-projetos','ufpa-artigos','ufpa-apresentacoes']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['ufpa-monitoria']},
+      {id:'eventos',title:'Eventos e cursos',tone:'teal',criteria:['ufpa-eventos']},
+      {id:'qualificacoes',title:'Qualificações',tone:'indigo',criteria:['ufpa-idiomas']}
+    ]
+  });
+  const sesdf=window.LuriaCurriculoRubricas.find(row=>row.institution==='SES-DF');
+  Object.assign(sesdf,{
+    id:'ses-df-2026-v20260125',title:'SES-DF · 2026 · Residência médica',edition:'2026',
+    status:'reviewed',max:10,checkedAt:'2026-10-17',
+    source:'https://www.iades.com.br/inscricao/upload/1363/2025102112433125.pdf',
+    updates:'https://www.iades.com.br/inscricao/upload/1363/202601250836896.pdf',
+    listing:'https://www.iades.com.br/inscricao/ProcessoSeletivo.aspx?id=50c5b1b7af',
+    scope:'Matriz oficial mais recente disponível em 17/10/2026, com formulário retificado. A edição 2027 ainda não estava publicada; a avaliação curricular desta edição vale até 10 pontos.',
+    criteria:[
+      criterion('df-monitoria','Monitoria na graduação em Medicina',1,11,'Cada semestre acadêmico completo, com pelo menos 90 dias letivos, vale 0,5 ponto.',[part('df-monitoria','Semestre elegível de monitoria',.5,2)]),
+      criterion('df-extensao','Extensão extracurricular e estágios',1,11,'Teto conjunto das alíneas B, C e D. Cursos exigem pelo menos 20 horas; projetos, um semestre; estágios, blocos de 40 horas nas instituições previstas.',[part('df-curso','Curso de extensão de pelo menos 20 horas',.1,10),part('df-projeto','Semestre acadêmico de projeto de extensão',.5,2),part('df-estagio','Bloco de 40 horas de estágio elegível',.1,10)]),
+      criterion('df-eventos','Participação em eventos científicos',1,11,'Congresso, seminário, simpósio, fórum ou jornada científica na área médica.',[part('df-evento','Participação elegível',.1,10)]),
+      criterion('df-comunicacoes','Comunicações em eventos científicos',1,11,'Apresentação oral, painel, pôster, banner ou forma equivalente de comunicação na área médica.',[part('df-comunicacao','Comunicação elegível',.2,5)]),
+      criterion('df-artigos','Artigos científicos',1,11,'Teto conjunto das alíneas G e H. Artigos indexados exigem DOI, ISSN e uma das bases admitidas; resumos em anais não pontuam.',[part('df-artigo-indexado','Artigo indexado elegível',.5,2),part('df-artigo-nao-indexado','Artigo não indexado elegível',.2,5)]),
+      criterion('df-ic','Iniciação científica e programas equivalentes',1,12,'Cada semestre acadêmico completo, com pelo menos 90 dias letivos, vale 0,5 ponto.',[part('df-ic','Semestre elegível',.5,2)]),
+      criterion('df-premios','Premiação na área médica',.5,12,'Premiação comprovada na área médica, observadas as exclusões do edital.',[part('df-premio','Premiação elegível',.25,2)]),
+      criterion('df-rondon','Projeto Rondon',1,12,'Participação comprovada no projeto.',[part('df-rondon','Participação elegível',1)]),
+      criterion('df-sus','Experiência profissional no SUS',2,12,'Blocos completos de 5 meses, com pelo menos 20 horas semanais, em serviço vinculado ao SUS.',[part('df-sus','Bloco elegível de 5 meses',.5,4)]),
+      criterion('df-historico','Desempenho no internato',.5,12,'Histórico com conceito A ou superior, nota pelo menos 8 ou aproveitamento de pelo menos 80%.',[part('df-historico','Histórico acadêmico elegível',.5)])
+    ],
+    groups:[
+      {id:'formacao',title:'Formação',tone:'violet',criteria:['df-historico']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['df-ic','df-artigos','df-comunicacoes','df-premios']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['df-monitoria']},
+      {id:'eventos',title:'Eventos científicos',tone:'teal',criteria:['df-eventos']},
+      {id:'extensao',title:'Extensão e experiência',tone:'rose',criteria:['df-extensao','df-rondon','df-sus']}
+    ]
+  });
+  const santacasasp=window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
+  Object.assign(santacasasp,{
+    id:'santa-casa-sp-2027-direto-v20260921',title:'Santa Casa SP · 2027 · Acesso direto',edition:'2027',
+    status:'reviewed',max:10,checkedAt:'2026-10-17',
+    source:'https://www.concursosfcc.com.br/concursos/scmsp126/edital_de_abertura_21_09_26_publicar_2.pdf',
+    updates:'https://www.concursosfcc.com.br/concursos/scmsp126/retificacao_01.pdf',
+    listing:'https://www.concursosfcc.com.br/concursos/scmsp126/index.html',
+    scope:'Matriz de 2027 para os programas de acesso direto listados no primeiro grupo do Anexo II. Programas com pré-requisito usam outras matrizes e não devem ser calculados neste cartão.',
+    criteria:[
+      {...criterion('scsp-enamed','Conceito da instituição no ENAMED 2025',2.5,26,'Conceito da faculdade onde cursou a graduação. Exige documento assinado pela Diretoria da Faculdade de Medicina.',[part('scsp-enamed5','Conceito 5',2.5),part('scsp-enamed4','Conceito 4',1.5),part('scsp-enamed3','Conceito 3',1),part('scsp-enamed2','Conceito 2',.5)]),exclusive:true},
+      {...criterion('scsp-hospital','Internato em hospital de ensino',2,26,'Exige documento assinado pela Diretoria da Faculdade de Medicina. Selecione somente a situação aplicável.',[part('scsp-hospital-proprio','Hospital de ensino próprio',2),part('scsp-hospital-conveniado','Hospital de ensino formalmente conveniado',.5)]),exclusive:true},
+      criterion('scsp-artigos','Artigos em revista indexada',1,26,'Artigo em periódico indexado no PubMed ou SciELO. O teto é de dois artigos.',[part('scsp-artigo','Artigo indexado elegível',.5,2)]),
+      {...criterion('scsp-anais','Artigos em anais de congresso',.5,26,'Publicações diferentes das usadas em revista indexada. Selecione apenas uma faixa.',[part('scsp-anais1','Um artigo',.25),part('scsp-anais2','Dois ou mais artigos',.5)]),exclusive:true},
+      {...criterion('scsp-ic','Atividade científica',1,26,'Atividade científica com ou sem bolsa. Selecione somente a situação aplicável.',[part('scsp-ic-fomento','Com bolsa federal ou estadual de fomento prevista no edital',1),part('scsp-ic-outra','Com outra bolsa ou sem bolsa',.5)]),exclusive:true},
+      {...criterion('scsp-monitoria','Monitoria',1,26,'A mesma monitoria deve ter a duração e a carga horária mínima indicadas no edital. Selecione apenas uma faixa.',[part('scsp-monitoria2','Dois ou mais semestres e pelo menos 128 horas',1),part('scsp-monitoria1','Um semestre e pelo menos 64 horas',.5)]),exclusive:true},
+      criterion('scsp-eventos','Congressos, simpósios e jornadas',1,27,'O certificado deve indicar a função. O teto conjunto é 1 ponto.',[part('scsp-evento-ativo','Organizador, palestrante ou apresentador oral',.5,2),part('scsp-evento-ouvinte','Ouvinte',.25,4)]),
+      {...criterion('scsp-ligas','Ligas acadêmicas',1,27,'Certificado institucional com o período da atividade. Selecione apenas uma faixa.',[part('scsp-liga2','Dois ou mais semestres na mesma liga',1),part('scsp-liga1','Um semestre na mesma liga',.5)]),exclusive:true}
+    ],
+    groups:[
+      {id:'formacao',title:'Instituição de formação',tone:'violet',criteria:['scsp-enamed','scsp-hospital']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['scsp-artigos','scsp-anais','scsp-ic']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['scsp-monitoria','scsp-ligas']},
+      {id:'eventos',title:'Congressos e jornadas',tone:'teal',criteria:['scsp-eventos']}
+    ]
+  });
+  const psugo=window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-GO');
+  Object.assign(psugo,{
+    id:'psu-go-2027-direto-v20260924',title:'PSU-GO · 2027 · Entrada direta',edition:'2027',
+    status:'reviewed',max:10,checkedAt:'2026-10-17',
+    source:'https://www.galaxcms.com.br/up_crud_comum/601/Anexo2AvaliacaoCurricularPadronizadaEntradaDiretaPSUGO2027-20260924103521.pdf',
+    listing:'https://mail.aremg.org.br/detalhes-do-processo/anexos-aos-editais-psu-go-2027/2382',
+    scope:'Entrada direta do PSU-GO 2027. O anexo oficial fixa 10 pontos para a segunda etapa; confira as exigências documentais e os períodos válidos antes do envio.',
+    criteria:[
+      criterion('go-formacao','Comprovação da formação',.1,2,'Diploma, CRM ou declaração elegível de conclusão, conforme o item 1.',[part('go-formacao','Documento de formação elegível',.1)]),
+      criterion('go-monitoria','Monitoria',.5,2,'Cada semestre letivo vale 0,25 ponto. Duração mínima de 4 meses e declaração oficial com o período.',[part('go-monitoria','Semestre letivo de monitoria elegível',.25,2)]),
+      criterion('go-pesquisa','Pesquisa com bolsa',.9,2,'Programa oficial ou agência de fomento; certificado ou declaração do responsável ou órgão financiador.',[part('go-pesquisa','Pesquisa de iniciação científica com bolsa',.45,2)]),
+      criterion('go-trabalhos','Trabalhos científicos apresentados',1,2,'Apresentação em congresso médico como autor ou coautor, realizada entre 2020 e 2026.',[part('go-trabalho','Trabalho científico elegível',.25,4)]),
+      criterion('go-publicacoes','Artigos completos e capítulos de livro',1.5,2,'Publicação com corpo editorial, realizada entre 2020 e 2026. Exige documentação do periódico.',[part('go-publicacao','Artigo completo ou capítulo elegível',.5,3)]),
+      criterion('go-eventos','Congressos, jornadas e extensão',1,2,'Evento entre 2020 e 2026, com pelo menos 8 horas ou 2 dias consecutivos, nos termos do item 6.',[part('go-evento','Evento elegível',.1,10)]),
+      criterion('go-ligas','Ligas acadêmicas',.5,2,'0,25 por ano, observados o limite e os períodos não coincidentes do item 7.',[part('go-liga','Ano elegível de liga',.25,2)]),
+      criterion('go-representacao','Representação estudantil',.5,2,'Representação titular nos cargos e órgãos previstos no item 8.',[part('go-representacao','Representação elegível',.25,2)]),
+      criterion('go-progresso','Teste de progresso e desempenho institucional',1.5,2,'Teste de progresso vale 0,5 por participação, até três. O conceito institucional acrescenta 0,2, 0,3 ou 0,4; informe apenas o conceito aplicável. O teto conjunto é 1,5 ponto.',[part('go-teste','Participação em teste de progresso',.5,3),part('go-enamed3','Conceito institucional 3',.2),part('go-enamed4','Conceito institucional 4',.3),part('go-enamed5','Conceito institucional 5',.4)]),
+      criterion('go-suporte','Suporte avançado à vida',1,2,'ATLS, ACLS, BLS, PALS ou PHTLS válido, realizado nos últimos 2 anos, com menção expressa de aprovação.',[part('go-suporte','Curso elegível com aprovação',.5,2)]),
+      criterion('go-proficiencia','Prova de proficiência em Medicina',1,2,'Uma prova realizada por associação ou conselho médico regional, com declaração de participação e aprovação.',[part('go-proficiencia','Prova elegível com aprovação',1)]),
+      criterion('go-estagio','Estágio supervisionado',.5,2,'Estágio no Brasil ou exterior, com pelo menos 1 mês e certificado assinado pela instituição e orientador. Inclui eletivo.',[part('go-estagio','Estágio elegível',.5)])
+    ],
+    groups:[
+      {id:'formacao',title:'Formação e desempenho',tone:'violet',criteria:['go-formacao','go-progresso','go-proficiencia']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['go-pesquisa','go-trabalhos','go-publicacoes']},
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['go-monitoria','go-ligas','go-representacao','go-estagio']},
+      {id:'eventos',title:'Eventos e suporte à vida',tone:'teal',criteria:['go-eventos','go-suporte']}
+    ]
+  });
+  const puccampinas=window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-Campinas');
+  Object.assign(puccampinas,{
+    id:'puc-campinas-2027-direto-v20260915',title:'PUC-Campinas · 2027 · Acesso direto',edition:'2027',
+    status:'reviewed',max:100,checkedAt:'2026-10-17',
+    source:'https://www.tekyou.com.br/puccampinas/selecao2027/edital/PUCCampinas27_ResidenciaMedica.pdf',
+    updates:'https://www.tekyou.com.br/puccampinas/selecao2027/edital/PUCCampinas27_Errata1.pdf',
+    listing:'https://www.tekyou.com.br/puccampinas/selecao2027/',
+    scope:'Programas de acesso direto, Anexo I do edital 2027. A avaliação curricular vale 100 pontos e compõe 10% da nota final. Sanções disciplinares na graduação deduzem 5 pontos cada.',
+    criteria:[
+      {...criterion('puccamp-hospital','Hospital de ensino da instituição formadora',10,21,'Selecione somente a condição aplicável.',[part('puccamp-hospital-proprio','Hospital de ensino próprio',10),part('puccamp-hospital-conveniado','Hospital de ensino formalmente conveniado',3)]),exclusive:true},
+      criterion('puccamp-pos','Pós-graduação da instituição formadora',4,21,'A instituição formadora possui programa de mestrado ou doutorado em Medicina.',[part('puccamp-pos','Mestrado ou doutorado em Medicina na instituição',4)]),
+      {...criterion('puccamp-enamed-instituicao','Conceito institucional no ENAMED',4,21,'Selecione somente o conceito da instituição formadora.',[part('puccamp-enamed3','Conceito institucional 3',1),part('puccamp-enamed4','Conceito institucional 4 ou 5',4)]),exclusive:true},
+      {...criterion('puccamp-monitoria','Monitoria',10,21,'Certificado institucional com a carga horária total. Selecione a maior faixa cumprida pela atividade.',[part('puccamp-mon192','Pelo menos 192 horas',10),part('puccamp-mon128','Pelo menos 128 horas',4),part('puccamp-mon64','Pelo menos 64 horas',2)]),exclusive:true},
+      {...criterion('puccamp-enamed-aluno','Nota individual no ENAMED',4,21,'Selecione somente a faixa correspondente à nota do candidato.',[part('puccamp-aluno8','Nota igual ou superior a 8',4),part('puccamp-aluno6','Nota igual ou superior a 6 e inferior a 8',2)]),exclusive:true},
+      criterion('puccamp-suporte','Cursos de suporte e emergência',4,21,'Curso de curta duração com mais de 12 horas entre os previstos no edital, com data, duração e entidade organizadora no certificado.',[part('puccamp-curso','Curso elegível',1,4)]),
+      {...criterion('puccamp-sancoes','Sanções disciplinares',0,21,'Cada sanção disciplinar durante a graduação deduz 5 pontos da avaliação curricular.',[part('puccamp-sancao','Sanção disciplinar comprovada',-5,20)]),deduction:true,min:-100},
+      criterion('puccamp-artigos','Artigos científicos',10,21,'Artigos completos em periódicos indexados. Não repita a mesma publicação em faixas diferentes; anexe autoria, referência e DOI.',[part('puccamp-artigo1','Artigo em periódico indexado',1,10),part('puccamp-artigo2','Artigo com fator de impacto até 0,5',2,5),part('puccamp-artigo10','Artigo com fator de impacto maior que 1,0',10)]),
+      criterion('puccamp-congressos','Comunicações em congressos',10,21,'Tema livre ou pôster, conforme o alcance do congresso. O teto do bloco é 10 pontos.',[part('puccamp-oral-int','Tema livre em congresso internacional',4,3),part('puccamp-poster-int','Pôster em congresso internacional',2,5),part('puccamp-oral-nac','Tema livre em congresso nacional',2,5),part('puccamp-poster-nac','Pôster em congresso nacional',1,10),part('puccamp-oral-reg','Tema livre em congresso regional',1,10),part('puccamp-poster-reg','Pôster em congresso regional',.5,20),part('puccamp-academico','Comunicação em congresso acadêmico oficial',.5,20)]),
+      criterion('puccamp-ic','Iniciação científica',14,21,'Participação efetiva em pesquisa, comprovada pela instituição.',[part('puccamp-ic-bolsa','Pesquisa com bolsa de iniciação científica',10),part('puccamp-ic-sem','Pesquisa sem bolsa de iniciação científica',4)]),
+      criterion('puccamp-ligas','Ligas e representação estudantil',5,21,'O teto conjunto é 5 pontos. Não repita o mesmo período ou vínculo em mais de uma faixa.',[part('puccamp-liga-diretoria','Diretoria de liga por um ano',4),part('puccamp-liga2','Ligante por pelo menos 2 anos',2),part('puccamp-liga1','Ligante por pelo menos 1 ano',1),part('puccamp-representacao','Representação estudantil, departamento científico ou atlética',2,3)]),
+      criterion('puccamp-organizacao','Organização de eventos',10,21,'Congressos organizados por entidade profissional de classe valem 2 pontos; jornadas e eventos de ligas valem 1 ponto.',[part('puccamp-org-congresso','Congresso estadual, nacional ou internacional elegível',2,5),part('puccamp-org-liga','Jornada ou evento organizado por liga acadêmica',1,10)]),
+      {...criterion('puccamp-voluntariado','Voluntariado',5,21,'Atividade comprovada. Selecione somente a faixa correspondente ao total de horas.',[part('puccamp-vol100','Mais de 100 horas',5),part('puccamp-vol50','Entre 50 e 100 horas',2)]),exclusive:true},
+      criterion('puccamp-ingles','Proficiência em inglês',10,21,'Certificação prevista no edital com nível igual ou superior a B2, ou TOEFL igual ou superior a 460.',[part('puccamp-ingles','Proficiência elegível',10)])
+    ],
+    groups:[
+      {id:'formacao',title:'Curso de graduação',tone:'violet',criteria:['puccamp-hospital','puccamp-pos','puccamp-enamed-instituicao','puccamp-monitoria','puccamp-enamed-aluno','puccamp-suporte','puccamp-sancoes']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['puccamp-artigos','puccamp-ic']},
+      {id:'eventos',title:'Congressos e apresentações',tone:'teal',criteria:['puccamp-congressos','puccamp-organizacao']},
+      {id:'extensao',title:'Voluntariado e órgãos colegiados',tone:'rose',criteria:['puccamp-ligas','puccamp-voluntariado']},
+      {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['puccamp-ingles']}
+    ]
+  });
+  const fmabc=window.LuriaCurriculoRubricas.find(row=>row.institution==='FMABC');
+  Object.assign(fmabc,{
+    id:'fmabc-2027-direto-v20260923',title:'FMABC · 2027 · Acesso direto',edition:'2027',
+    status:'reviewed',max:10,checkedAt:'2026-10-17',
+    source:'https://arquivos-site.avalia.org.br/publicacoes/d16d85c3-794c-489e-b76d-72695ca65753.pdf',
+    listing:'https://www.avalia.org.br/concursos/640',
+    scope:'Especialidades de acesso direto, Anexo I do edital 001/2027. A análise curricular vale até 10 pontos e considera somente atividades realizadas durante o curso de Medicina.',
+    criteria:[
+      criterion('fmabc-extras','Estágios e atividades extracurriculares',4,37,'Atividades realizadas durante a graduação. Cada item tem teto próprio e o bloco soma até 4 pontos.',[part('fmabc-progresso','Quatro ou mais testes de progresso interinstitucionais elegíveis',1),part('fmabc-estagio','Estágio ou eletivo com mais de 120 horas e pelo menos 20 dias',1),part('fmabc-associacao','Associação acadêmica por pelo menos 6 meses',.5),part('fmabc-social','Projeto social ou extensão junto à comunidade',.5),part('fmabc-acls','ACLS comprovado',.5),part('fmabc-colegiado','Representação em órgão colegiado institucional',.5)]),
+      criterion('fmabc-monitoria','Monitorias',1.5,37,'Monitorias comprovadas pela instituição; não repita a mesma atividade em duas faixas.',[part('fmabc-mon-ano','Monitoria de pelo menos 40 horas e 1 ano',1),part('fmabc-mon-sem','Monitoria de 20 a 40 horas e 1 semestre',.5)]),
+      criterion('fmabc-ic','Iniciação científica',1,37,'Participação em grupo regular de pesquisa, com ou sem bolsa, por pelo menos 1 ano.',[part('fmabc-ic','Iniciação científica elegível',1)]),
+      {...criterion('fmabc-artigos','Artigos completos indexados',1,37,'Publicação completa em revista indexada no PubMed ou LILACS. Resumo em anais não pontua.',[part('fmabc-artigo2','Dois ou mais artigos elegíveis',1),part('fmabc-artigo1','Um artigo elegível',.5)]),exclusive:true},
+      {...criterion('fmabc-trabalhos','Trabalhos em eventos científicos',1,37,'Tema livre, pôster ou apresentação oral, com a categoria descrita no certificado.',[part('fmabc-trabalho2','Dois ou mais trabalhos elegíveis',1),part('fmabc-trabalho1','Um trabalho elegível',.5)]),exclusive:true},
+      criterion('fmabc-organizacao','Organização de eventos acadêmicos',.5,37,'Organização de liga, jornada acadêmica, curso, simpósio, congresso ou evento equivalente.',[part('fmabc-organizacao','Organização elegível',.5)]),
+      {...criterion('fmabc-eventos','Participação em eventos',.5,37,'Jornadas, cursos, simpósios, congressos e eventos equivalentes, com a categoria descrita no certificado.',[part('fmabc-eventos4','Quatro ou mais eventos',.5),part('fmabc-eventos3','Até três eventos',.25)]),exclusive:true},
+      criterion('fmabc-ingles','Proficiência em inglês',.5,37,'Teste reconhecido previsto no edital. Certificados de cursos de inglês não são aceitos.',[part('fmabc-ingles','Proficiência elegível',.5)])
+    ],
+    groups:[
+      {id:'academicas',title:'Atividades acadêmicas',tone:'blue',criteria:['fmabc-extras','fmabc-monitoria']},
+      {id:'pesquisa',title:'Pesquisa e publicações',tone:'amber',criteria:['fmabc-ic','fmabc-artigos','fmabc-trabalhos']},
+      {id:'eventos',title:'Eventos científicos',tone:'teal',criteria:['fmabc-organizacao','fmabc-eventos']},
+      {id:'qualificacoes',title:'Proficiência',tone:'indigo',criteria:['fmabc-ingles']}
+    ]
+  });
+  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='UNIFESP'),{
+    id:'unifesp-2027-por-programa-v20260923',title:'UNIFESP · 2027 · Matrizes por programa',edition:'2027',status:'program-specific',checkedAt:'2026-10-17',
+    source:'https://documento.vunesp.com.br/documento/stream/Nzg4NzcyOA%3d%3d',listing:'https://www.vunesp.com.br/UFSP2602',
+    scope:'O edital oficial de 2027 traz matrizes diferentes para cada programa e especialidade. Uma nota única para UNIFESP seria incorreta; o simulador por especialidade será liberado quando essa seleção for adicionada.'
+  });
+  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='Einstein'),{
+    id:'einstein-2027-pesos-pendentes-v20260803',title:'Einstein · 2027 · Pesos ainda não publicados',edition:'2027',status:'weights-pending',checkedAt:'2026-10-17',
+    source:'https://documento.vunesp.com.br/documento/stream/Nzc3MTg1NA%3d%3d',listing:'https://www.vunesp.com.br/FEAE2603',
+    scope:'O edital oficial de 2027 prevê análise curricular, mas determina que as atividades e os respectivos pesos sejam publicados em aditivo específico. Esse aditivo ainda não constava nas publicações oficiais em 17/10/2026.'
+  });
+  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa BH'),{
+    id:'santa-casa-bh-2027-sem-curriculo-v20260909',title:'Santa Casa BH · 2027 · Sem análise curricular',edition:'2027',status:'not-required',checkedAt:'2026-10-17',
+    source:'https://arquivos1.ibgpconcursos.com.br/site/anexos/777/Edital%2005-2026%20Resid%C3%AAncia%20M%C3%A9dica_Retific%201.pdf',listing:'https://novo.ibgpconcursos.com.br/concurso.jsp?cod=777',
+    scope:'O edital consolidado de 2027 estabelece etapa única de prova objetiva. Não há análise curricular neste processo seletivo.'
+  });
+  Object.assign(window.LuriaCurriculoRubricas.find(row=>row.institution==='SES-PE'),{
+    id:'ses-pe-2027-edital-aguardado-v20261017',title:'SES-PE · 2027 · Edital aguardado',edition:'2027',status:'pending',checkedAt:'2026-10-17',
+    listing:'https://portal.saude.pe.gov.br/saude-oferta-1-598-vagas-para-programas-de-residencias-em-saude-em-pernambuco/',
+    scope:'A SES-PE anunciou análise curricular para 2027 e informou que os editais seriam publicados até 20/10/2026. Em 17/10/2026, a matriz oficial ainda não estava disponível.'
+  });
+})();

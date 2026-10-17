@@ -9,7 +9,7 @@
 
 ### Fontes do Drive efetivamente abertas e inspecionadas
 
-1. **“04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf”**: aborda alterações eletrocardiográficas de hipo/hiperpotassemia e cálcio, mas mistura esses assuntos com pericardite e derrame pericárdico. Contém mapas de alterações do ECG e exemplos, sem desenvolver integralmente investigação de volume, osmolalidade, tratamentos ou seguimento. **Autoria institucional não verificada**; contém marca “Medicina livre”. Não atribuir ao Estratégia MED.
+1. **“04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf”**: aborda alterações eletrocardiográficas de hipo/hiperpotassemia e cálcio, mas mistura esses assuntos com pericardite e derrame pericárdico. Contém mapas de alterações do ECG e exemplos, sem desenvolver integralmente investigação de volume, osmolalidade, tratamentos ou seguimento. **Autoria institucional não verificada**; contém marca “Medicina livre”. Não atribuir ao material de referência.
 2. **“08 - GASOMETRIA ARTERIAL - PARTE 2.pdf”**: concentra-se em acidose/alcalose, anion gap e cloro urinário. Possui referências cruzadas a Na, K e cloro; é útil apenas como comparação de interfaces entre distúrbios hidroeletrolíticos e acidobásicos. O conteúdo acidobásico completo ficará reservado ao tema 101. **Autoria institucional não verificada.**
 3. **“02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”**: descreve doença renal aguda e crônica, consequências metabólicas e indicações gerais de diálise, mas não constitui apostila integral dos distúrbios de eletrólitos. Parte do texto está direcionada à pediatria; a aplicação em adultos exige confirmação independente. **Autoria institucional não verificada.**
 

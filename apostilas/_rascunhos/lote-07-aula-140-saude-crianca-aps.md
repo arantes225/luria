@@ -13,7 +13,7 @@
 2. “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (~7.919 caracteres). Discute IMC por idade, variantes de Z-escore conforme faixa, fatores de risco e comorbidades, mas rotinas de rastreio e indicações medicamentosas precisam ser reavaliadas à luz das recomendações atuais.
 3. “Imunizações .pdf” (calendário 2020) foi aberto em sublote anterior; é fonte de comparação histórica, **não norma 2026**.
 
-Os documentos do Drive são **benchmarks pedagógicos parciais**, não protocolo atualizado do SUS nem prova de autoria Estratégia MED. O formato do HTML já padronizado de \`apostilas/infertilidade-conjugal/index.html\` foi inspecionado para organização editorial; não copiar identidade de terceiros nem sobrescrever conteúdos publicados.
+Os documentos do Drive são **benchmarks pedagógicos parciais**, não protocolo atualizado do SUS nem prova de autoria material de referência. O formato do HTML já padronizado de \`apostilas/infertilidade-conjugal/index.html\` foi inspecionado para organização editorial; não copiar identidade de terceiros nem sobrescrever conteúdos publicados.
 
 ## 1. Por que a saúde da criança não é só “consultar bebê saudável”?
 
@@ -239,7 +239,7 @@ A. Considerar somente peso. B. Acusar família de negligência sem avaliação. 
 
 ## 17. Sugestões de imagens didáticas — NENHUMA obtida/licenciada
 1. Caderneta e gráficos OMS reproduzidos apenas se licença e atribuição institucional adequadas. 2. Infográfico autoral de consultas por idade. 3. Fotografia clínica de avaliação de comprimento com consentimento/uso autorizado. 4. Curvas de Z-escore com dados simulados originais. 5. Esquema de perda ponderal e recuperação do RN. 6. Ilustração original da pega correta e posição de amamentação. 7. Quadro fotográfico real de sinais de desidratação neonatal, fonte licenciada. 8. Gráfico de idade cronológica/corrigida. 9. Quadro original de desenvolvimento por domínios. 10. Foto educativa de ambiente de sono seguro, de origem autorizada. 11. Fluxograma de alerta de regressão. 12. Mapa visual dos sete eixos PNAISC.
-Proibida reprodução de figuras de cursinhos; imagens comerciais precisam de autoria, licença verificável, consentimento, créditos, função clínica e aprovação no Admin, com WebP quando pertinente.
+Proibida reprodução de figuras de material de estudo; imagens comerciais precisam de autoria, licença verificável, consentimento, créditos, função clínica e aprovação no Admin, com WebP quando pertinente.
 
 ## 18. Referências brasileiras verificáveis
 1. Ministério da Saúde. **Política Nacional de Atenção Integral à Saúde da Criança — PNAISC.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/pnaisc
@@ -264,7 +264,7 @@ Proibida reprodução de figuras de cursinhos; imagens comerciais precisam de au
 ---
 
 # CAMADA DE APROFUNDAMENTO — SAÚDE DA CRIANÇA NA APS
-**Registro de ampliação: 15/10/2026.** Esta camada é complementar às seções 1–19 e não sobrescreve o material anterior. A matriz de cobertura agora deve ser lida com as duas partes. Foram relidos antes da edição os documentos do Drive “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (8.323 caracteres extraídos) e “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (7.919 caracteres extraídos). Ambos são resumos úteis como inventário, mas não comprovadamente produzidos pelo Estratégia MED, não contêm todas as decisões assistenciais e apresentam simplificações que precisam de cuidado. Verificaram-se como **fontes oficiais independentes** o calendário de consultas da primeira infância do MS, as curvas OMS para 0–5 e 5–19 anos, o Guia Alimentar MS 2019, a Estratégia Amamenta e Alimenta Brasil e a Caderneta Digital atualizada em outubro/2026. Sem cópia de texto, gráficos ou imagem de terceiros.
+**Registro de ampliação: 15/10/2026.** Esta camada é complementar às seções 1–19 e não sobrescreve o material anterior. A matriz de cobertura agora deve ser lida com as duas partes. Foram relidos antes da edição os documentos do Drive “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (8.323 caracteres extraídos) e “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (7.919 caracteres extraídos). Ambos são resumos úteis como inventário, mas não comprovadamente produzidos pelo material de referência, não contêm todas as decisões assistenciais e apresentam simplificações que precisam de cuidado. Verificaram-se como **fontes oficiais independentes** o calendário de consultas da primeira infância do MS, as curvas OMS para 0–5 e 5–19 anos, o Guia Alimentar MS 2019, a Estratégia Amamenta e Alimenta Brasil e a Caderneta Digital atualizada em outubro/2026. Sem cópia de texto, gráficos ou imagem de terceiros.
 
 ## 20. Primeira semana de vida — consulta estruturada em problemas
 

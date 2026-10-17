@@ -4,7 +4,7 @@ Atualizado em 13/10/2026.
 
 ## Decisão editorial
 
-As apostilas passam a ser criadas e revisadas **em lotes**, com padrão de livro-texto e visual semelhante ao material de cursinhos. Exigir no mínimo **60.000 caracteres didáticos úteis por apostila**, sem tratar a metragem como prova de qualidade. Não duplicar explicações nem trocar recursos visuais por texto corrido para atingir esse piso. O conteúdo precisa permitir resolver questões de residência sem recorrer obrigatoriamente a outra apostila.
+As apostilas passam a ser criadas e revisadas **em lotes**, com padrão de livro-texto e visual semelhante ao material de material de estudo. Exigir no mínimo **60.000 caracteres didáticos úteis por apostila**, sem tratar a metragem como prova de qualidade. Não duplicar explicações nem trocar recursos visuais por texto corrido para atingir esse piso. O conteúdo precisa permitir resolver questões de residência sem recorrer obrigatoriamente a outra apostila.
 
 O fluxo de imagens é **centralizado no Admin**. Não incluir novas imagens clínicas diretamente no HTML, não inserir links de imagens ainda não aprovadas dentro dos capítulos, nem exigir que o administrador visite cada apostila separadamente.
 
@@ -18,7 +18,7 @@ A avaliação de autossuficiência requer julgamento clínico/editorial e não p
 
 ## Etapa zero — leitura comparativa no Google Drive (obrigatória)
 
-**Antes de qualquer produção ou edição de apostila, pesquisar e abrir ao menos uma apostila correlata no Google Drive, priorizando materiais do Estratégia MED com autoria realmente identificada.** Conferir sumário, abrangência, profundidade, fluxogramas, quadros, imagens, casos e técnica de exposição. Abrir também uma apostila LURIA já padronizada, para não quebrar a identidade visual da plataforma. Se nenhum material semelhante estiver acessível, interromper e solicitar acesso; não assumir que a busca por nome equivale a ter lido a fonte.
+**Antes de qualquer produção ou edição de apostila, pesquisar e abrir ao menos uma apostila correlata no Google Drive, priorizando materiais do material de referência com autoria realmente identificada.** Conferir sumário, abrangência, profundidade, fluxogramas, quadros, imagens, casos e técnica de exposição. Abrir também uma apostila LURIA já padronizada, para não quebrar a identidade visual da plataforma. Se nenhum material semelhante estiver acessível, interromper e solicitar acesso; não assumir que a busca por nome equivale a ter lido a fonte.
 
 Preencher o registro comparativo antes de alterar o HTML:
 
@@ -36,7 +36,7 @@ O comparativo serve para **não esquecer matérias e entregar qualidade superior
 
 ## Etapa 0 — consulta obrigatória ao Google Drive
 
-**Toda criação ou edição médica começa pela leitura de uma apostila comparável no Drive, preferencialmente do Estratégia MED.** Antes de redigir, buscar o tema e sinônimos; confirmar a procedência; abrir e estudar índice, capítulos, quadros, fluxogramas e casos. Só achar o título não conta. Montar matriz de comparação (Drive × LURIA × diretrizes atuais) e plano de lacunas por capítulo. O material de cursinho orienta abrangência e estilo didático, mas deve resultar em texto, imagens e esquemas originais, sem cópia ou paráfrase próxima.
+**Toda criação ou edição médica começa pela leitura de uma apostila comparável no Drive, preferencialmente do material de referência.** Antes de redigir, buscar o tema e sinônimos; confirmar a procedência; abrir e estudar índice, capítulos, quadros, fluxogramas e casos. Só achar o título não conta. Montar matriz de comparação (Drive × LURIA × diretrizes atuais) e plano de lacunas por capítulo. O material de material de estudo orienta abrangência e estilo didático, mas deve resultar em texto, imagens e esquemas originais, sem cópia ou paráfrase próxima.
 
 Se a referência do tema não existir, ler a mais próxima, indicar a limitação e não declarar a etapa cumprida integralmente sem fonte adequada. Se não houver acesso a qualquer referência útil, manter status de revisão parcial em vez de concluída. Registrar título, origem verificada, data, conteúdo realmente inspecionado, lacunas e ajustes, sem publicar URLs/IDs privados do Drive em arquivos públicos.
 

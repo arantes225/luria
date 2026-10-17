@@ -1,0 +1,182 @@
+(() => {
+  "use strict";
+  const G = window.LuriaGames,
+    C = window.LuriaGameContent,
+    root = G.root;
+  if (root?.dataset.game !== "sequencia") return;
+  let selection = { specialty: "Misto", level: "1" },
+    run = null;
+  const top = () =>
+    '<div class="g-top"><a class="g-back" href="/jogos/">← Central de jogos</a><span class="g-edition">02 / Raciocínio em ordem</span></div>';
+  const art =
+    '<div class="g-hero-art s-art" aria-hidden="true"><div class="s-connection"></div><div class="s-art-card"><b>01</b><span>Reconhecer o contexto</span><i>✓</i></div><div class="s-art-card"><b>02</b><span>Conectar as decisões</span><i>✓</i></div><div class="s-art-card"><b>03</b><span>Reavaliar a resposta</span><i>↗</i></div><span class="s-art-note">CADA ETAPA TEM UM PORQUÊ</span></div>';
+  function setup() {
+    run = null;
+    root.innerHTML =
+      top() +
+      `<section class="g-hero"><div><span class="g-kicker">Sequência Salvadora</span><h2>A ordem muda<br>o desfecho.</h2><p class="g-lead">Conecte etapas de cuidado. Entenda o que precisa acontecer antes de dar o próximo passo.</p><div class="g-tags"><span>4 a 7 etapas</span><span>Arraste ou use as setas</span><span>Ordens equivalentes aceitas</span></div></div>${art}</section><form class="g-panel g-setup s-setup">${G.filters()}<div id="s-count" class="g-subtle"></div><button class="g-button" type="submit">Iniciar desafio →</button></form>${G.note}<p class="g-note">Básico: 4 etapas · Intermediário: 5–6 · Avançado: 6–7. Nem todas as áreas possuem sequência segura no acervo inicial; recortes vazios são informados.</p>`;
+    const form = root.querySelector("form");
+    Object.entries(selection).forEach(([k, v]) => (form.elements[k].value = v));
+    const update = () => {
+      selection = Object.fromEntries(new FormData(form));
+      root.querySelector("#s-count").textContent =
+        pool().length + " situações neste recorte";
+    };
+    form.onchange = update;
+    update();
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      update();
+      const cases = G.shuffle(pool());
+      if (!cases.length) {
+        G.empty("setup");
+        root.querySelector("button").onclick = setup;
+        return;
+      }
+      run = { cases, index: 0, results: [] };
+      newCase();
+    };
+  }
+  function pool() {
+    return C.sequences.filter(
+      (x) =>
+        x.level === +selection.level &&
+        (selection.specialty === "Misto" ||
+          x.specialty === selection.specialty),
+    );
+  }
+  function scrambled(length) {
+    const natural = Array.from({ length }, (_, i) => i);
+    let order = G.shuffle(natural);
+    if (order.every((v, i) => v === i)) order.push(order.shift());
+    return order;
+  }
+  function newCase() {
+    const c = run.cases[run.index];
+    run.current = {
+      c,
+      order: scrambled(c.steps.length),
+      attempts: 0,
+      started: Date.now(),
+      done: false,
+      feedback: null,
+    };
+    render();
+    G.focusTitle();
+  }
+  function nearest(c, order) {
+    return c.variants
+      .map((v) => ({ v, marks: order.map((id, i) => id === v[i]) }))
+      .sort(
+        (a, b) =>
+          b.marks.filter(Boolean).length - a.marks.filter(Boolean).length,
+      )[0];
+  }
+  function render(focus = -1) {
+    if (!run) return;
+    const x = run.current,
+      c = x.c;
+    root.innerHTML =
+      top() +
+      `<section class="s-layout"><aside class="g-panel s-brief"><span class="g-kicker">Desafio ${run.index + 1}/${run.cases.length} · ${G.levels[c.level - 1]}</span><h2>${G.esc(c.title)}</h2><p class="g-case">${G.esc(c.context)}</p><div class="s-brief-footer"><span class="s-node">${c.steps.length}</span><p class="g-subtle">etapas para conectar<br>${G.esc(c.specialty)}</p></div><div class="g-progress"><span style="width:${(run.index / run.cases.length) * 100}%"></span></div><p class="g-note">Estrelas: 3 na primeira tentativa em até ${c.steps.length * 30}s; 2 até a segunda tentativa; 1 nas demais. A revisão guiada não recebe estrelas.</p></aside><section class="g-panel"><div class="g-hud"><h3>Sua linha de cuidado</h3><span class="g-subtle">${x.attempts} tentativa${x.attempts !== 1 ? "s" : ""}</span></div><p class="g-subtle">Arraste pela alça ⠿ ou use ↑ ↓. Com a alça em foco, as teclas de seta também movem.</p><div id="s-order">${G.orderedList(c.steps, x.order, x.done, x.feedback?.marks || [])}</div><p class="g-subtle" role="status" id="s-move-status">${focus >= 0 ? "Etapa movida para a posição " + (focus + 1) : ""}</p>${feedback(x)}<div class="g-actions">${x.done ? G.button("next", run.index + 1 === run.cases.length ? "Ver resultado" : "Próxima situação →") : G.button("confirm", "Confirmar sequência")}${!x.done && x.attempts >= 3 ? G.button("reveal", "Concluir com revisão guiada", true) : ""}${G.button("restart", "Reiniciar", true)}</div></section></section>${G.note}`;
+    if (!x.done)
+      G.bindSort(root.querySelector("#s-order"), x.order, (to) => {
+        x.feedback = null;
+        render(to);
+        root.querySelector(`[data-drag="${to}"]`)?.focus();
+      });
+    root.querySelector('[data-action="restart"]').onclick = setup;
+    root
+      .querySelector('[data-action="confirm"]')
+      ?.addEventListener("click", confirm);
+    root
+      .querySelector('[data-action="reveal"]')
+      ?.addEventListener("click", () => complete(false));
+    root
+      .querySelector('[data-action="next"]')
+      ?.addEventListener("click", () => {
+        if (!run || run.current !== x || !x.done) return;
+        run.index++;
+        if (run.index >= run.cases.length) finish();
+        else newCase();
+      });
+  }
+  function feedback(x) {
+    if (!x.feedback) return "";
+    const c = x.c;
+    if (!x.done) {
+      const divergence = x.feedback.marks.findIndex((v) => !v);
+      return `<div class="g-feedback g-wrong g-anim-wrong" role="status"><strong>${x.feedback.marks.filter(Boolean).length}/${c.steps.length} posições corretas</strong>Primeira divergência na posição ${divergence + 1}. Reavalie as dependências antes de confirmar novamente. As marcações comparam a ordem válida mais próxima da sua.</div>`;
+    }
+    return `<div class="g-feedback g-correct g-anim-correct" role="status"><strong>${x.guided ? "Revisão guiada concluída" : "Sequência resolvida · " + x.score + " pontos"}</strong><div class="g-stars" aria-label="${x.stars} de 3 estrelas">${"★".repeat(x.stars)}${"☆".repeat(3 - x.stars)}</div><p>${G.esc(c.explanation)}</p><p>${x.attempts} tentativas · ${x.seconds}s · ${x.partial}/${c.steps.length} posições na primeira tentativa.</p><details><summary>Organização recomendada e justificativa</summary><ol>${c.variants[0].map((id) => `<li>${G.esc(c.steps[id])}</li>`).join("")}</ol>${c.variants.length > 1 ? "<p>A troca das duas conferências iniciais também é válida.</p>" : ""}</details>${G.refs(c.refs)}</div>`;
+  }
+  function confirm() {
+    if (!run || run.current.done) return;
+    const x = run.current;
+    x.attempts++;
+    x.feedback = nearest(x.c, x.order);
+    if (x.attempts === 1) x.partial = x.feedback.marks.filter(Boolean).length;
+    if (x.feedback.marks.every(Boolean)) complete(true);
+    else render();
+  }
+  function complete(success) {
+    const x = run.current;
+    if (x.done) return;
+    x.done = true;
+    x.guided = !success;
+    x.seconds = Math.round((Date.now() - x.started) / 1000);
+    x.partial = x.partial || 0;
+    x.stars = success
+      ? x.attempts === 1 && x.seconds <= x.c.steps.length * 30
+        ? 3
+        : x.attempts <= 2
+          ? 2
+          : 1
+      : 0;
+    x.score = success
+      ? Math.max(
+          0,
+          Math.round(
+            500 +
+              (x.partial / x.c.steps.length) * 200 +
+              Math.max(0, 150 - x.seconds) -
+              Math.max(0, x.attempts - 1) * 100,
+          ),
+        )
+      : 0;
+    x.feedback = nearest(x.c, x.order);
+    run.results.push({
+      id: x.c.id,
+      title: x.c.title,
+      score: x.score,
+      stars: x.stars,
+      attempts: x.attempts,
+      seconds: x.seconds,
+      guided: x.guided,
+      partial: x.partial,
+    });
+    render();
+  }
+  function finish() {
+    const done = run;
+    run = null;
+    const score = done.results.reduce((n, x) => n + x.score, 0);
+    const record = G.record(
+      "sequencia",
+      selection.specialty + "|" + selection.level,
+      { score },
+    );
+    root.innerHTML =
+      top() +
+      `<section class="g-panel"><div class="g-result-head"><span class="g-medal" aria-hidden="true">↗</span><div><span class="g-kicker">Linha de cuidado concluída</span><h2>Conexões que fazem sentido.</h2></div></div><div class="g-metrics">${G.metric(score, "Pontos")}${G.metric(done.results.length, "Desafios concluídos")}${G.metric(done.results.reduce((n, x) => n + x.stars, 0) + "/" + done.results.length * 3, "Estrelas")}${G.metric(done.results.filter((x) => x.guided).length, "Revisões guiadas")}</div><div class="g-review">${done.results.map((x) => `<details><summary>${G.esc(x.title)} · ${x.stars} estrelas</summary><p>${x.attempts} tentativas · ${x.seconds}s · ${x.score} pontos. ${x.guided ? "Reveja as dependências desta situação." : "Observe o que tornou esta ordem clinicamente adequada."}</p>${G.esc(C.sequences.find((c) => c.id === x.id).explanation)}${G.refs(C.sequences.find((c) => c.id === x.id).refs)}</details>`).join("")}</div><p class="g-note">${record.saved ? "Resultado salvo nesta conta e dispositivo." : "Não foi possível salvar o resultado neste dispositivo."}</p><div class="g-actions">${G.button("again", "Jogar novamente")}<a class="g-button g-secondary" href="/jogos/">Voltar aos jogos</a></div></section>${G.note}`;
+    root.querySelector("button").onclick = setup;
+    G.focusTitle();
+    window.dispatchEvent(
+      new CustomEvent("luria:game-completed", {
+        detail: { game: "sequencia", contentVersion: C.version, score },
+      }),
+    );
+  }
+  window.addEventListener("luria:owner-changed", setup);
+  G.boot(setup);
+})();

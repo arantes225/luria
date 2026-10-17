@@ -3,7 +3,7 @@
 
 **Status:** COMPLEMENTO EDITORIAL EM RASCUNHO, NÃO INTEGRADO/NÃO PUBLICADO.  
 **Apostila existente preservada:** \`apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html\`. **Data da revisão:** 14/10/2026.  
-**Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS* (2023), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria Estratégia MED e não será copiado.
+**Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS* (2023), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria material de referência e não será copiado.
 
 ## 0. Por que não criar novo livro?
 O HTML da LURIA já continha aproximadamente **57,6 mil caracteres de marcação e 31 mil caracteres de texto bruto extraído**, títulos sobre fisiopatologia, clínica, critérios diagnósticos adultos e adolescentes, hiperandrogenismo, AMH/ultrassom, saúde metabólica, anticoncepção, metformina, GLP-1, proteção endometrial e indução ovulatória com letrozol. **Cinco casos clínicos** foram identificados pelo índice. A seção de fixação não mostrou títulos padronizados de questões com alternativas e justificativas; a lacuna é a consolidação por questões de decisão clínica. As contagens de caracteres não equivalem a conteúdo útil validado.

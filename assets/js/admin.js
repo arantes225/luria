@@ -5812,15 +5812,15 @@
     const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(id));
     if (action === "approve") {
       const size = Number(row?.proposed_asset?.size_bytes || 0);
-      if (!size || size > 112640) {
+      if (!size || size > 81920) {
         const status = $("admin-apostila-images-status");
-        if (status) status.textContent = "Otimizando imagem para o padrão máximo de 110 KB...";
+        if (status) status.textContent = "Otimizando imagem para o padrão máximo de 80 KB...";
         const { data: optimized, error: optimizeError } = await sb.functions.invoke("optimize-apostila-image", {
           body: { id: Number(id) }
         });
         if (optimizeError) throw optimizeError;
-        if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 112640) {
-          throw new Error("Não foi possível otimizar a imagem para até 110 KB.");
+        if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 81920) {
+          throw new Error("Não foi possível otimizar a imagem para até 80 KB.");
         }
       }
     }
@@ -5905,7 +5905,7 @@
         title: String(asset.title || asset.alt).trim().slice(0,180),
         caption: String(asset.caption || "").trim().slice(0,700),
         didactic_note: String(asset.didactic_note || "").trim().slice(0,700),
-        ...(Number.isInteger(size) && size > 0 && size <= 112640 ? {size_bytes:size} : {})
+        ...(Number.isInteger(size) && size > 0 && size <= 81920 ? {size_bytes:size} : {})
       },
       source_url: original,
       source_name: String(raw.source_name).trim().slice(0,180),
@@ -6023,6 +6023,105 @@
     });
   }
 
+
+  let lowResolutionImageRows = [];
+  async function loadLowResolutionImageQueue() {
+    const status = $("admin-low-resolution-status");
+    const host = $("admin-low-resolution-list");
+    if (!host) return;
+    if (status) status.textContent = "Carregando imagens sinalizadas...";
+    const { data, error } = await sb.from("low_resolution_image_review_queue")
+      .select("id,bucket_id,object_name,owner_id,source_page,width,height,size_bytes,review_status,created_at,reviewed_at")
+      .order("created_at", { ascending: false }).limit(200);
+    if (error) {
+      if (status) status.textContent = "Não foi possível carregar a fila de imagens.";
+      console.error("Fila de baixa resolução:", error);
+      return;
+    }
+    lowResolutionImageRows = Array.isArray(data) ? data : [];
+    const pending = lowResolutionImageRows.filter(row => row.review_status === "pending");
+    if (status) status.textContent = pending.length + " imagem(ns) aguardando revisão · " + lowResolutionImageRows.length + " registradas";
+    if (!lowResolutionImageRows.length) {
+      host.innerHTML = '<div class="admin-table-empty">Nenhuma imagem sinalizada.</div>';
+      return;
+    }
+    const cards = [];
+    for (const row of lowResolutionImageRows) {
+      const { data: signed, error: signedError } = await sb.storage.from(row.bucket_id).createSignedUrl(row.object_name, 900);
+      const src = signedError ? "" : signed?.signedUrl || "";
+      cards.push(`
+        <article class="admin-image-review-card">
+          <div class="admin-image-review-preview">${src ? '<img src="' + esc(src) + '" alt="Imagem enviada, ' + Number(row.width) + ' por ' + Number(row.height) + ' pixels">' : '<span>Prévia indisponível</span>'}</div>
+          <div class="admin-image-review-body">
+            <div class="admin-image-review-head">
+              <div><strong>${row.review_status === "pending" ? "Baixa resolução · pendente" : "Baixa resolução · revisada"}</strong>
+              <small>${Number(row.width)} × ${Number(row.height)} px · ${Math.round(Number(row.size_bytes) / 1024)} KB</small></div>
+              <span class="admin-image-review-tag">${row.review_status === "pending" ? "Pendente" : "Revisada"}</span>
+            </div>
+            <div class="admin-image-review-source"><small>Área: ${esc(row.source_page || "/")} · arquivo: ${esc(row.object_name)}</small></div>
+            <div class="admin-image-review-actions">${src ? '<button class="button secondary" type="button" data-lowres-expand="' + Number(row.id) + '">Expandir</button>' : ""}
+              ${row.review_status === "pending" ? '<button class="button primary" type="button" data-lowres-reviewed="' + Number(row.id) + '">Marcar como revisada</button>' : ""}</div>
+          </div>
+        </article>`);
+    }
+    host.innerHTML = cards.join("");
+  }
+
+
+  function wireImageCapBackfill() {
+    const button = $("admin-image-cap-backfill");
+    if (!button || button.dataset.wired === "1") return;
+    button.dataset.wired = "1";
+    button.addEventListener("click", async () => {
+      const status = $("admin-image-cap-backfill-status");
+      button.disabled = true;
+      if (status) status.textContent = "Compactando imagens de conteúdo acima de 80 KiB...";
+      try {
+        const { data, error } = await sb.functions.invoke("admin-enforce-image-cap", { body: {} });
+        if (error) throw error;
+        const processed = Number(data?.processed || 0);
+        const skipped = Number(data?.skipped || 0);
+        const failures = Array.isArray(data?.failures) ? data.failures : [];
+        if (status) status.textContent = processed + " imagem(ns) atualizadas · " + skipped + " já dentro do limite" + (failures.length ? " · " + failures.length + " falha(s): " + failures.slice(0,3).map(item => item.path).join(", ") : "");
+        await loadLowResolutionImageQueue();
+      } catch (error) {
+        console.error("Falha ao aplicar limite às imagens existentes:", error);
+        if (status) status.textContent = "Não foi possível concluir a compactação: " + (error?.message || "erro");
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+
+  function wireLowResolutionImageQueue() {
+    const host = $("admin-low-resolution-list");
+    if (!host || host.dataset.wired === "1") return;
+    host.dataset.wired = "1";
+    host.addEventListener("click", async event => {
+      const expand = event.target.closest("[data-lowres-expand]");
+      if (expand) {
+        const row = lowResolutionImageRows.find(item => Number(item.id) === Number(expand.dataset.lowresExpand));
+        if (!row) return;
+        const { data, error } = await sb.storage.from(row.bucket_id).createSignedUrl(row.object_name, 900);
+        if (error || !data?.signedUrl) return;
+        const modal = ensureAdminImageLightbox();
+        const img = modal.querySelector("img");
+        img.src = data.signedUrl; img.alt = "Imagem enviada para revisão";
+        modal.style.display = "grid";
+        return;
+      }
+      const button = event.target.closest("[data-lowres-reviewed]");
+      if (!button) return;
+      button.disabled = true;
+      const { error } = await sb.from("low_resolution_image_review_queue")
+        .update({ review_status: "reviewed", reviewed_at: new Date().toISOString(), reviewed_by: window.docmapUser?.id || null })
+        .eq("id", Number(button.dataset.lowresReviewed));
+      if (error) { button.disabled = false; console.error(error); return; }
+      await loadLowResolutionImageQueue();
+    });
+    $("admin-images-refresh")?.addEventListener("click", () => loadLowResolutionImageQueue());
+  }
+
   async function startAdminDashboard() {
     const allowed =
       await ensureAdminAccess();
@@ -6030,6 +6129,10 @@
     if (!allowed) {
       return;
     }
+
+    wireLowResolutionImageQueue();
+    wireImageCapBackfill();
+    loadLowResolutionImageQueue().catch(console.error);
 
     wirePinGate();
 

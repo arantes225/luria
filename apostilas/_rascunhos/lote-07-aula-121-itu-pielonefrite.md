@@ -2,7 +2,7 @@
 ## Infecção do trato urinário e pielonefrite
 **Estado editorial:** RASCUNHO PARCIAL — não publicado, não validado para apostila premium.  
 **Base curricular:** `assets/js/cronograma-base-data.js`, aula 121.  
-**Início:** 14/10/2026. **Comparativo Drive:** em 14/10/2026 foram abertos e lidos dois materiais relacionados do Drive (litíase no PS e assistência pré-natal); correspondência apenas parcial, sem confirmação de autoria Estratégia MED.  
+**Início:** 14/10/2026. **Comparativo Drive:** em 14/10/2026 foram abertos e lidos dois materiais relacionados do Drive (litíase no PS e assistência pré-natal); correspondência apenas parcial, sem confirmação de autoria do material de referência.
 **Diretrizes consultadas:** IDSA 2025 (ITU complicada); EAU Urological Infections 2026. Adaptar a protocolos locais de resistência e à realidade brasileira após conferência de fontes nacionais.
 
 ## 1. Bases anatômicas e fisiológicas
@@ -58,7 +58,7 @@ A diretriz IDSA 2025 apoia, em pacientes selecionados com ITU complicada/pielone
 
 A pesquisa no Google Drive por “pielonefrite”, “infecção urinária”, “bacteriúria” e “nefrologia” não revelou um único tratado sobre cistite, pielonefrite e populações especiais. Os seguintes arquivos foram **abertos e examinados**:
 
-**a) “10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf”** — aproximadamente 6,5 mil caracteres extraídos. É um resumo de cólica renal, hidronefrose, exames de imagem e urgências relacionadas a cálculos. Seu principal ponto aproveitável como **escopo** é separar cólica renal sem infecção de obstrução com infecção; nesta última, o texto destaca antibiótico e descompressão por cateter ureteral (duplo J) ou nefrostomia, seguido de tratamento definitivo do cálculo. Também aborda a possibilidade de cultura inicial falsamente tranquilizadora. Sua linguagem é predominantemente esquemática, sem explicar em detalhe o mecanismo da sepse obstrutiva, a escolha de antibióticos, contraindicações e resposta à falha. O arquivo contém aviso de circulação por “Medicina livre”, **sem comprovação de autoria da Estratégia MED**.
+**a) “10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf”** — aproximadamente 6,5 mil caracteres extraídos. É um resumo de cólica renal, hidronefrose, exames de imagem e urgências relacionadas a cálculos. Seu principal ponto aproveitável como **escopo** é separar cólica renal sem infecção de obstrução com infecção; nesta última, o texto destaca antibiótico e descompressão por cateter ureteral (duplo J) ou nefrostomia, seguido de tratamento definitivo do cálculo. Também aborda a possibilidade de cultura inicial falsamente tranquilizadora. Sua linguagem é predominantemente esquemática, sem explicar em detalhe o mecanismo da sepse obstrutiva, a escolha de antibióticos, contraindicações e resposta à falha. O arquivo contém aviso de circulação por “Medicina livre”, **sem comprovação de autoria da material de referência**.
 
 **b) “02 - ASSISTENCIA AO PRE-NATAL.pdf”** — texto extenso de pré-natal, com indicação de exames iniciais e referência a urina tipo 1 e urocultura. O foco é obstétrico amplo, não a infectologia urinária. Há detalhes perinatais e calendários que podem estar desatualizados em relação a publicações do Ministério da Saúde posteriores à sua elaboração. Foi utilizado para mapear a presença de bacteriúria assintomática no seguimento da gestação, não para definir isoladamente a conduta clínica contemporânea. **Autoria institucional não verificada.**
 
@@ -645,7 +645,7 @@ Estas candidatas são especificações de busca e aprovação, não imagens enco
 | 9 | Algoritmo autoral de cistite versus pielonefrite | 22 | Ligar síndrome ao espectro do antibiótico |
 | 10 | Quadro de gestação e idades pediátricas | 18 | Impedir extrapolação de protocolos do adulto |
 
-**Metadados exigidos quando houver candidata real:** título, origem institucional, autor, licença, URL de origem, seção de destino, legenda médica original, motivo pedagógico, estado da revisão jurídica e verificação de que o arquivo admite o uso no site comercial. Imagens não precisam ser inventadas nem copiadas de cursinhos para preencher número.
+**Metadados exigidos quando houver candidata real:** título, origem institucional, autor, licença, URL de origem, seção de destino, legenda médica original, motivo pedagógico, estado da revisão jurídica e verificação de que o arquivo admite o uso no site comercial. Imagens não precisam ser inventadas nem copiadas de material de estudo para preencher número.
 
 ## 27. Referências rastreáveis, precedência e limites
 

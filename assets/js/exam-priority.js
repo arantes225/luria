@@ -77,7 +77,7 @@
     return result.tier==="high"?"Prioridade alta":result.tier==="medium"?"Prioridade média":"Prioridade baixa";
   }
 
-  // Gancho futuro: a IA poderá registrar equivalências entre títulos de cursinhos e o tema canônico.
+  // Gancho futuro: a IA poderá registrar equivalências entre títulos de material de estudo e o tema canônico.
   // Ex.: LuriaExamPriority.registerAlias("SCA: diagnóstico e manejo","Síndromes coronarianas agudas")
   window.LuriaExamPriority={
     exams:[...exams],

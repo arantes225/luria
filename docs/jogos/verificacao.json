@@ -1,0 +1,98 @@
+{
+  "base": "d7dc563786147a089a71d264247ad899d6e57576",
+  "branch": "feat/central-jogos-completa",
+  "unit": {
+    "tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "failures": []
+  },
+  "baseline": {
+    "tests": 611,
+    "passed": 600,
+    "failed": 11,
+    "failures": [
+      "CSP: trabalho/fluidos-eletrólitos/index.html",
+      "Apostila fallback capture preserves all static and dynamic image behaviors",
+      "CSP inventory covers all 96 application HTML pages exactly once",
+      "migrated modules load foundations once and keep PCR priority ahead of the work bridge",
+      "Admin queue renderers reject dangerous URLs and escape persisted titles and attributes",
+      "Apostila approved figures, review cards and lightbox share the URL protection",
+      "dashboard layout choice is not replaced by layout 1 in installed mode",
+      "cópias estáticas das duas rotas coincidem com módulo",
+      "install/activate purge owned legacy caches without touching unrelated caches",
+      "optional shell resource failure cannot prevent activation or other public precache entries",
+      "Work Dashboard groups ten real routes, provides PCR, and ignores retired presentation preferences"
+    ]
+  },
+  "final": {
+    "tests": 627,
+    "passed": 619,
+    "failed": 8,
+    "failures": [
+      "Apostila fallback capture preserves all static and dynamic image behaviors",
+      "CSP inventory covers all 96 application HTML pages exactly once",
+      "Admin queue renderers reject dangerous URLs and escape persisted titles and attributes",
+      "Apostila approved figures, review cards and lightbox share the URL protection",
+      "dashboard layout choice is not replaced by layout 1 in installed mode",
+      "cópias estáticas das duas rotas coincidem com módulo",
+      "install/activate purge owned legacy caches without touching unrelated caches",
+      "optional shell resource failure cannot prevent activation or other public precache entries"
+    ]
+  },
+  "newFailureNames": [],
+  "browser": {
+    "desktopChecks": 65,
+    "mobileChecks": 8,
+    "errors": [],
+    "missingNewGameRequests": [],
+    "knownExistingStudyRatsRequests": [
+      "http://127.0.0.1:50559/jogos/study-rats/assets/img/logos/logo-icone-original.png?v=luria9",
+      "http://127.0.0.1:50559/jogos/study-rats/assets/img/logos/logo-icone-original.png?v=luria9"
+    ]
+  },
+  "protectedFilesChanged": [],
+  "screenshots": [
+    "plantao-relampago-390.png",
+    "plantao-relampago-768.png",
+    "plantao-relampago-1366.png",
+    "plantao-relampago-1920.png",
+    "plantao-relampago-light-blue.png",
+    "plantao-relampago-light-pink.png",
+    "plantao-relampago-dark-blue.png",
+    "plantao-relampago-dark-pink.png",
+    "sequencia-salvadora-390.png",
+    "sequencia-salvadora-768.png",
+    "sequencia-salvadora-1366.png",
+    "sequencia-salvadora-1920.png",
+    "sequencia-salvadora-light-blue.png",
+    "sequencia-salvadora-light-pink.png",
+    "sequencia-salvadora-dark-blue.png",
+    "sequencia-salvadora-dark-pink.png",
+    "escapando-do-plantao-390.png",
+    "escapando-do-plantao-768.png",
+    "escapando-do-plantao-1366.png",
+    "escapando-do-plantao-1920.png",
+    "escapando-do-plantao-light-blue.png",
+    "escapando-do-plantao-light-pink.png",
+    "escapando-do-plantao-dark-blue.png",
+    "escapando-do-plantao-dark-pink.png",
+    "relampago-feedback.png",
+    "relampago-result.png",
+    "sequencia-in-play.png",
+    "sequencia-feedback.png",
+    "sequencia-result.png",
+    "escape-first-room.png",
+    "escape-chapter-two.png",
+    "escape-result.png",
+    "plantao-relampago-mobile-in-play.png",
+    "sequencia-salvadora-mobile-in-play.png",
+    "escapando-do-plantao-mobile-in-play.png"
+  ],
+  "limitations": [
+    "Initial local educational corpus; no private content/database integration.",
+    "Independent clinical review and physical iOS/Android checks pending.",
+    "Existing-module browser checks use authentication fixtures and are smoke tests.",
+    "Global check stops on pre-existing administrative prompt drift."
+  ]
+}
