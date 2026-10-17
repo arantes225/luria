@@ -1,0 +1,3138 @@
+{
+  "created_at": "2026-10-17",
+  "reason": "Backup integral antes da auditoria científica incisiva dos protocolos de eletrólitos e pediatria.",
+  "source": "Supabase Studyos public.clinical_protocols",
+  "records": [
+    {
+      "id": 58,
+      "slug": "clinica-medica-hiponatremia",
+      "title": "Hiponatremia",
+      "category": "Clínica Médica",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Hiponatremia: classificar por sintomas, tonicidade e volemia. Sintomas neurológicos graves exigem NaCl 3% imediato, com correção inicial pequena e limites rígidos para evitar desmielinização osmótica.",
+      "tags": [
+        "hiponatremia",
+        "NaCl 3%",
+        "SIADH",
+        "desmielinização osmótica"
+      ],
+      "suspicion": [
+        {
+          "items": [
+            "Confirmar hiponatremia verdadeira e avaliar osmolaridade sérica, gravidade dos sintomas, duração provável e estado volêmico.",
+            "Sintomas graves incluem convulsão, coma, vômitos persistentes e sinais de hipertensão intracraniana.",
+            "Distinguir hipovolemia, euvolemia e hipervolemia após excluir pseudohiponatremia e hiperglicemia."
+          ],
+          "title": "Classificação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Dosar osmolaridade sérica, glicemia, sódio urinário e osmolaridade urinária quando apropriado.",
+            "Revisar diuréticos, antidepressivos, antiepilépticos, polidipsia, dor/náusea, insuficiência adrenal, hipotireoidismo e SIADH.",
+            "Em sintomas neurológicos graves, tratar imediatamente com salina hipertônica sem aguardar toda investigação etiológica."
+          ],
+          "title": "Avaliação inicial"
+        },
+        {
+          "items": [
+            "Tratar como hiponatremia sintomática grave: solução salina hipertônica 3% em bolus segundo protocolo, monitorando sódio e resposta clínica."
+          ],
+          "title": "Avaliação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Osmolaridade sérica define se é hipotônica verdadeira.",
+            "Osmolaridade urinária baixa sugere supressão adequada de ADH; elevada sugere retenção de água mediada por ADH.",
+            "Sódio urinário ajuda a diferenciar hipovolemia extrarrenal de causas renais/SIADH, com limitações em uso de diuréticos."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "Na sérico seriado, osmolaridade sérica, glicose, K, função renal, osmolaridade e sódio urinários, TSH/cortisol conforme quadro."
+          ],
+          "title": "Investigação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sintomas graves",
+          "then": "Salina hipertônica 3% em bolus, buscando aumento inicial de cerca de 4–6 mmol/L e melhora clínica."
+        },
+        {
+          "if": "Hiponatremia hipovolêmica",
+          "then": "Repor volume com solução salina isotônica e tratar a causa; vigiar diurese aquosa e elevação rápida do sódio após recuperação da volemia, com dosagens seriadas."
+        },
+        {
+          "if": "SIADH/euvolemia sem sintomas graves",
+          "then": "Restrição hídrica e tratamento da causa; estratégias adicionais conforme refratariedade."
+        },
+        {
+          "if": "Hipervolemia por IC/cirrose",
+          "then": "Restrição hídrica/sódio e tratamento da doença de base."
+        },
+        {
+          "if": "Convulsão, coma, rebaixamento grave ou sintomas neurológicos intensos com sódio baixo",
+          "then": "Tratar como hiponatremia sintomática grave: solução salina hipertônica 3% em bolus segundo protocolo, monitorando sódio e resposta clínica."
+        },
+        {
+          "if": "Hiponatremia sem emergência neurológica",
+          "then": "Confirmar osmolaridade sérica e excluir pseudohiponatremia/hiperglicemia; avaliar volemia e osmolaridade/Na urinários."
+        },
+        {
+          "if": "Hiponatremia euvolêmica compatível com SIADH",
+          "then": "Tratar causa e considerar restrição hídrica em casos apropriados, com acompanhamento de sódio e contraindicações."
+        },
+        {
+          "if": "Sódio sobe mais rápido que limite de segurança ou há diurese aquosa intensa",
+          "then": "Suspender correção, monitorar frequentemente e consultar especialista quanto a desmopressina/relowering com glicose 5%, conforme protocolo."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Na diretriz europeia, usar 150 mL de NaCl 3% IV em 20 minutos, podendo repetir até atingir melhora ou aumento inicial de cerca de 5 mmol/L.",
+            "Após melhora, interromper salina hipertônica e passar ao tratamento etiológico."
+          ],
+          "title": "Sintomas graves"
+        },
+        {
+          "items": [
+            "Limitar aumento total a no máximo 10 mmol/L nas primeiras 24 horas e 8 mmol/L em cada período de 24 horas subsequente.",
+            "Em pacientes com alto risco de desmielinização osmótica, usar limites ainda mais conservadores.",
+            "Se houver sobrecorreção, considerar desmopressina e água livre sob supervisão especializada."
+          ],
+          "title": "Limites de correção"
+        },
+        {
+          "items": [
+            "Evitar correção excessivamente rápida sobretudo em hiponatremia crônica, alcoolismo, desnutrição, hepatopatia ou hipocalemia, devido à desmielinização osmótica.",
+            "A melhora neurológica inicial é o objetivo da terapia hipertônica; não tentar normalizar sódio rapidamente."
+          ],
+          "title": "Tratamento e precauções"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Alcoolismo, desnutrição, doença hepática avançada, hipocalemia e sódio muito baixo aumentam o risco de desmielinização osmótica.",
+            "A correção de hipocalemia também pode elevar o sódio sérico e deve ser contabilizada no plano.",
+            "A diretriz europeia formal vigente permanece a de 2014; uma revisão ESE/ERA foi discutida em 2026, mas a versão final completa não estava disponível no índice oficial consultado nesta revisão. Por isso, manter limites conservadores e monitorização estreita."
+          ],
+          "title": "Risco de desmielinização osmótica"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Dosar sódio em intervalos curtos durante terapia ativa, especialmente com salina hipertônica.",
+            "Acompanhar diurese, estado neurológico e resposta ao tratamento etiológico."
+          ],
+          "title": "Monitorização"
+        },
+        {
+          "items": [
+            "Reavaliar Na com frequência proporcional à gravidade e velocidade de correção; documentar causa e risco de recidiva."
+          ],
+          "title": "Seguimento e segurança"
+        }
+      ],
+      "red_flags": [
+        "Convulsão.",
+        "Coma.",
+        "Sódio muito baixo com sintomas neurológicos.",
+        "Correção excessivamente rápida.",
+        "Hiponatremia aguda em pós-operatório ou exercício intenso.",
+        "Convulsão, coma, deterioração neurológica e correção excessiva do Na."
+      ],
+      "notification": {
+        "text": "Hiponatremia não é agravo de notificação compulsória nacional.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://academic.oup.com/ejendo/article/170/3/G1/6668028",
+          "label": "European Society of Endocrinology/ERA — Clinical Practice Guideline on Hyponatraemia, diretriz formal vigente"
+        },
+        {
+          "url": "https://www.endocrinology.org/clinical-practice/clinical-guidance/society-for-endocrinology-guidance/",
+          "label": "Society for Endocrinology — Emergency guidance for severe symptomatic hyponatraemia"
+        },
+        {
+          "url": "https://academic.oup.com/ejendo/article/195/Supplement_1/lvag096.043/8754538",
+          "label": "European Journal of Endocrinology — apresentação de atualização ESE/ERA para hiponatremia, 2026"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "acetato de desmopressina",
+        "cloreto de sódio"
+      ],
+      "reviewed_at": "2026-10-01 04:23:23.659303+00",
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 59,
+      "slug": "clinica-medica-hipernatremia",
+      "title": "Hipernatremia",
+      "category": "Clínica Médica",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Hipernatremia: geralmente representa déficit de água livre; corrigir primeiro o choque/hipovolemia e depois reduzir o sódio gradualmente quando a duração for crônica ou desconhecida.",
+      "tags": [
+        "hipernatremia",
+        "déficit de água",
+        "D5W",
+        "diabetes insipidus"
+      ],
+      "suspicion": [
+        {
+          "items": [
+            "Hipernatremia geralmente reflete déficit de água livre; avaliar sede, acesso à água, perdas gastrointestinais, febre, diabetes insipidus e diurese osmótica.",
+            "Sintomas neurológicos são mais comuns quando elevação é rápida ou intensa."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar estado volêmico e estabilidade hemodinâmica.",
+            "Dosar osmolaridade sérica/urinária, glicemia, creatinina e eletrólitos conforme contexto.",
+            "Se houver choque/hipovolemia importante, restaurar circulação primeiro com cristaloide isotônico antes de corrigir água livre."
+          ],
+          "title": "Avaliação inicial"
+        },
+        {
+          "items": [
+            "Restabelecer perfusão com cristalóide isotônico primeiro; corrigir déficit de água livre após estabilização."
+          ],
+          "title": "Avaliação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Urina muito diluída em hipernatremia sugere diabetes insipidus.",
+            "Urina concentrada sugere perdas extrarrenais ou baixa ingestão de água.",
+            "Diurese elevada pode indicar diurese osmótica."
+          ],
+          "title": "Etiologia"
+        },
+        {
+          "items": [
+            "Na/K, glicose, osmolaridade sérica e urinária, ureia/creatinina, débito urinário e balanço hídrico."
+          ],
+          "title": "Investigação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Choque/hipovolemia",
+          "then": "Cristaloide isotônico primeiro até restaurar perfusão."
+        },
+        {
+          "if": "Hipernatremia crônica ou duração desconhecida",
+          "then": "Corrigir gradualmente o déficit hídrico com água livre enteral ou soluções hipotônicas, individualizando a velocidade e monitorando sódio e estado clínico de forma seriada."
+        },
+        {
+          "if": "Diabetes insipidus central",
+          "then": "Considerar desmopressina após confirmação/forte suspeita clínica."
+        },
+        {
+          "if": "Hipernatremia com choque/hipotensão",
+          "then": "Restabelecer perfusão com cristalóide isotônico primeiro; corrigir déficit de água livre após estabilização."
+        },
+        {
+          "if": "Hipernatremia por perda de água e paciente estável",
+          "then": "Calcular déficit estimado, repor água oral/enteral quando possível ou fluido hipotônico IV, contabilizando perdas contínuas."
+        },
+        {
+          "if": "Poliúria com urina inadequadamente diluída",
+          "then": "Investigar diabetes insipidus central/nefrogênico e causas renais, avaliar necessidade de desmopressina se central."
+        },
+        {
+          "if": "Hipernatremia com hiperglicemia ou excesso de sódio",
+          "then": "Tratar distúrbio primário com vigilância de osmolaridade e balanço."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Preferir água por via enteral quando possível; D5W IV é opção para reposição de água livre quando não houver via enteral adequada.",
+            "Em hipernatremia crônica ou de duração desconhecida, metas conservadoras em torno de 10–12 mmol/L por 24 horas continuam amplamente utilizadas, mas não devem ser tratadas como limite absoluto em todos os adultos.",
+            "Recalcular frequentemente o plano porque perdas contínuas, diurese e resposta ao tratamento podem alterar a velocidade real de correção.",
+            "Corrigir choque ou hipovolemia com cristaloide isotônico antes de priorizar a redução do sódio."
+          ],
+          "title": "Correção de água livre"
+        },
+        {
+          "items": [
+            "A reposição depende de sódio, duração, volemia, função renal e perdas ativas; reavaliar plano conforme sódio medido, não apenas fórmula inicial.",
+            "Corrigir hipocalemia/hipercalcemia se presentes e suspender fatores iatrogênicos de sobrecarga de sódio."
+          ],
+          "title": "Tratamento e precauções"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Distinguir diabetes insipidus central de nefrogênico; desmopressina é útil na forma central, mas não corrige a resistência renal da forma nefrogênica.",
+            "Corrigir causas reversíveis como lítio, hipercalcemia e hipocalemia quando presentes."
+          ],
+          "title": "Diabetes insipidus"
+        },
+        {
+          "items": [
+            "Revisões sistemáticas de 2025 em adultos hospitalizados questionam se correções superiores a 0,5 mmol/L/h são necessariamente prejudiciais e não demonstraram sinal consistente de complicação neurológica quando a velocidade permaneceu abaixo de aproximadamente 1 mmol/L/h.",
+            "Esses dados são predominantemente observacionais e heterogêneos; portanto, não justificam acelerar rotineiramente a correção. Individualizar e monitorar sódio e estado neurológico em intervalos frequentes."
+          ],
+          "title": "Velocidade de correção — evidência atual"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Repetir sódio em intervalos frequentes durante correção ativa.",
+            "Monitorar diurese e balanço hídrico."
+          ],
+          "title": "Monitorização"
+        },
+        {
+          "items": [
+            "Acompanhar evolução neurológica, diurese e Na seriado durante reposição, com plano de prevenção de recorrência."
+          ],
+          "title": "Seguimento e segurança"
+        }
+      ],
+      "red_flags": [
+        "Sódio muito elevado com alteração de consciência.",
+        "Convulsão.",
+        "Choque hipovolêmico.",
+        "Correção excessivamente rápida.",
+        "Diabetes insipidus com perdas urinárias intensas.",
+        "Convulsão, rebaixamento, choque, edema cerebral suspeito e alterações rápidas do sódio."
+      ],
+      "notification": {
+        "text": "Hipernatremia não é agravo de notificação compulsória nacional.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.aafp.org/pubs/afp/issues/2023/1100/sodium-disorders-hyponatremia-hypernatremia.html",
+          "label": "American Family Physician — Diagnosis and Management of Sodium Disorders, 2023"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39765195/",
+          "label": "Journal of Critical Care — Hypernatremia correction rate and outcomes in hospitalized adults: systematic review/meta-analysis, 2025"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41084129/",
+          "label": "Acta Anaesthesiologica Scandinavica — Hypernatremia treatment in adults: scoping review, 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "acetato de desmopressina",
+        "cloreto de sódio"
+      ],
+      "reviewed_at": "2026-10-01 04:23:23.659303+00",
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 60,
+      "slug": "clinica-medica-disturbios-acido-base",
+      "title": "Distúrbios ácido-base",
+      "category": "Clínica Médica",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Distúrbios ácido-base: interpretar sistematicamente pH, PaCO2, HCO3-, compensação e ânion gap para identificar o distúrbio primário e possíveis distúrbios mistos; o tratamento é etiológico.",
+      "tags": [
+        "gasometria",
+        "acidose",
+        "alcalose",
+        "ânion gap",
+        "Winter"
+      ],
+      "suspicion": [
+        {
+          "items": [
+            "Interpretar pH, PaCO2 e HCO3- em conjunto; depois avaliar compensação esperada e possibilidade de distúrbio misto.",
+            "Em acidose metabólica, calcular ânion gap corrigido pela albumina quando possível.",
+            "Correlacionar sempre com história, eletrólitos, lactato, função renal e cetonas."
+          ],
+          "title": "Abordagem sistemática"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Confirmar gasometria e eletrólitos.",
+            "Definir distúrbio primário e verificar se a compensação é apropriada.",
+            "Em acidose metabólica com ânion gap elevado, pesquisar lactato, cetonas, insuficiência renal e intoxicações.",
+            "Em alcalose metabólica, avaliar cloro urinário, volemia, vômitos e diuréticos."
+          ],
+          "title": "Primeiros passos"
+        },
+        {
+          "items": [
+            "Classificar acidemia/alcalemia e identificar alteração primária de PaCO2 e HCO3, calculando compensação esperada."
+          ],
+          "title": "Avaliação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Acidose metabólica: compensação respiratória esperada pela fórmula de Winter: PaCO2 ≈ 1,5 x HCO3 + 8 ±2.",
+            "Alcalose metabólica: PaCO2 aumenta aproximadamente 0,5–0,7 mmHg para cada aumento de 1 mEq/L de HCO3.",
+            "Acidose respiratória: distinguir aguda de crônica pelo grau de aumento do HCO3.",
+            "Alcalose respiratória: distinguir aguda de crônica pelo grau de queda do HCO3."
+          ],
+          "title": "Fórmulas úteis"
+        },
+        {
+          "items": [
+            "Gasometria com eletrólitos, ânion gap corrigido pela albumina, lactato, cetonas, função renal e cloreto urinário se alcalose."
+          ],
+          "title": "Investigação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Acidose metabólica com AG elevado",
+          "then": "Tratar causa — lactato/choque, cetoacidose, insuficiência renal ou tóxicos."
+        },
+        {
+          "if": "Acidose metabólica hiperclorêmica",
+          "then": "Investigar perdas GI de bicarbonato, acidose tubular renal e excesso de cloreto."
+        },
+        {
+          "if": "Alcalose metabólica cloro-responsiva",
+          "then": "Reposição de volume e cloreto/potássio quando indicado."
+        },
+        {
+          "if": "Distúrbio respiratório",
+          "then": "Tratar causa ventilatória primária, evitando correções bruscas da PaCO2 em retenção crônica."
+        },
+        {
+          "if": "Gasometria com pH alterado",
+          "then": "Classificar acidemia/alcalemia e identificar alteração primária de PaCO2 e HCO3, calculando compensação esperada."
+        },
+        {
+          "if": "Acidose metabólica com ânion gap elevado",
+          "then": "Investigar lactato, cetonas, uremia, tóxicos e albumina; tratar causa sem depender só de bicarbonato."
+        },
+        {
+          "if": "Acidose metabólica com ânion gap normal",
+          "then": "Pesquisar perdas digestivas de bicarbonato, acidose tubular renal e carga de cloreto."
+        },
+        {
+          "if": "Alcalose metabólica com hipocloremia e vômitos/diuréticos",
+          "then": "Avaliar cloreto urinário, reposição volêmica e de K/Cl conforme etiologia."
+        },
+        {
+          "if": "Alteração respiratória grave com falência ventilatória",
+          "then": "Avaliar suporte ventilatório urgente, obstrução, sedativos, doença neuromuscular e causas pulmonares."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Tratar a causa é a medida principal.",
+            "Bicarbonato IV não é rotina em toda acidose; considerar em acidemia muito grave ou cenários específicos, com monitorização de sódio, volume e ventilação.",
+            "Na cetoacidose diabética, bicarbonato fica reservado para acidemia extrema segundo protocolo específico."
+          ],
+          "title": "Acidose metabólica"
+        },
+        {
+          "items": [
+            "Corrigir hipovolemia, cloro e potássio quando o distúrbio for cloro-responsivo.",
+            "Suspender/reduzir diurético quando possível.",
+            "Acetazolamida pode ser útil em situações selecionadas, como alcalose com sobrecarga volêmica."
+          ],
+          "title": "Alcalose metabólica"
+        },
+        {
+          "items": [
+            "Na acidose respiratória, melhorar ventilação e tratar DPOC, depressão do SNC, doença neuromuscular ou obstrução.",
+            "Na alcalose respiratória, tratar dor, ansiedade, sepse, hipoxemia, TEP ou outra causa."
+          ],
+          "title": "Distúrbios respiratórios"
+        },
+        {
+          "items": [
+            "Não corrigir gasometria isoladamente: tratar causa e monitorar perfusão, ventilação e eletrólitos.",
+            "Bicarbonato IV não é terapia padrão para toda acidose metabólica; uso deve considerar indicação clínica específica e riscos."
+          ],
+          "title": "Tratamento e precauções"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Compensação maior ou menor que a esperada sugere distúrbio misto.",
+            "Delta gap pode ajudar quando há acidose metabólica com ânion gap elevado."
+          ],
+          "title": "Distúrbios mistos"
+        },
+        {
+          "items": [
+            "O Guia de Assistência Nefrológica Hospitalar da SBN 2025 orienta considerar bicarbonato em acidemia associada à disfunção renal quando pH <7,2, especialmente com HCO3- <15 mmol/L e ausência de hipervolemia, sempre após avaliação de outras causas.",
+            "Monitorar sódio, estado volêmico e cálcio ionizado durante bicarbonato IV; a correção laboratorial isolada não substitui o tratamento da causa."
+          ],
+          "title": "Acidemia na disfunção renal"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Repetir gasometria e eletrólitos após intervenções importantes.",
+            "Monitorar potássio, cálcio ionizado e ventilação em correções rápidas."
+          ],
+          "title": "Reavaliação"
+        },
+        {
+          "items": [
+            "Repetir gasometria/eletrólitos segundo gravidade, confirmar compensação e resposta da causa primária."
+          ],
+          "title": "Seguimento e segurança"
+        }
+      ],
+      "red_flags": [
+        "pH <7,1.",
+        "Hipercalemia associada.",
+        "Lactato elevado persistente.",
+        "Alteração de consciência.",
+        "Falência ventilatória.",
+        "pH extremo, hipercalemia ameaçadora, choque, alteração de consciência ou falência ventilatória."
+      ],
+      "notification": {
+        "text": "Distúrbios ácido-base não são agravos de notificação compulsória nacional.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.bjnephrology.org/article/guia-de-assistencia-nefrologica-hospitalar-da-sociedade-brasileira-denefrologia-sbn/",
+          "label": "Sociedade Brasileira de Nefrologia — Guia de Assistência Nefrológica Hospitalar, 2025"
+        },
+        {
+          "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+          "label": "KDIGO — CKD Evaluation and Management: acidose metabólica em doença renal"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "bicarbonato de sódio",
+        "acetazolamida"
+      ],
+      "reviewed_at": "2026-10-01 04:23:23.659303+00",
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 03:22:59.371188+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 129,
+      "slug": "pediatria-avaliacao-inicial-da-crianca-grave",
+      "title": "Avaliação inicial da criança grave",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "A avaliação inicial da criança grave deve reconhecer rapidamente insuficiência respiratória, choque e alteração neurológica, usando o Triângulo de Avaliação Pediátrica e ABCDE, com tratamento imediato das ameaças à vida.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Alteração de aparência, esforço respiratório ou perfusão cutânea.",
+            "Taquicardia, enchimento capilar prolongado e alteração mental podem preceder hipotensão."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABCDE com oxigenação/ventilação conforme necessidade.",
+            "Acesso IV/IO e glicemia precoce.",
+            "Reavaliar após cada intervenção."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Monitorização contínua, pressão arterial e oximetria.",
+            "Gasometria/lactato e exames dirigidos conforme hipótese."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Criança não responsiva, apneica ou sem respiração normal",
+          "then": "Acionar equipe, verificar pulso por até 10 segundos; iniciar RCP e desfibrilação conforme algoritmo pediátrico se PCR provável."
+        },
+        {
+          "if": "Via aérea ameaçada, estridor grave ou hipoxemia",
+          "then": "Posicionar, aspirar quando indicado, oxigênio e ventilação com bolsa-máscara; preparar via aérea avançada por equipe treinada."
+        },
+        {
+          "if": "Perfusão deficiente, extremidades frias, alteração mental ou oligúria",
+          "then": "Investigar choque hipovolêmico, séptico, cardiogênico, obstrutivo e anafilático; acesso IV/IO e intervenção etiológica."
+        },
+        {
+          "if": "Convulsão, hipoglicemia ou alteração neurológica",
+          "then": "Checar glicemia prontamente, corrigir se baixa e controlar crise ≥5 minutos pelo protocolo."
+        },
+        {
+          "if": "Estável após ABCDE",
+          "then": "Reavaliar sinais vitais por idade, obter história SAMPLE e examinar sistematicamente; manter vigilância e transferir conforme risco."
+        },
+        {
+          "if": "Alteração imediata de aparência, respiração ou circulação no Triângulo de Avaliação Pediátrica",
+          "then": "Acionar equipe, iniciar ABCDE, monitorizar e tratar ameaça à vida antes de investigação extensa."
+        },
+        {
+          "if": "Apneia, obstrução de via aérea ou hipoxemia",
+          "then": "Manobras de via aérea, ventilação com bolsa-máscara e oxigenação, preparando suporte avançado conforme resposta."
+        },
+        {
+          "if": "Perfusão ruim ou consciência alterada",
+          "then": "Checar glicemia, pulso, PA, acesso IV/IO e avaliar choque/convulsão/intoxicação; intervenção direcionada."
+        },
+        {
+          "if": "Instabilidade apesar das ações iniciais",
+          "then": "Reavaliar ABCDE, identificar causas reversíveis e transferir a ambiente de ressuscitação/UTI."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Usar triângulo de avaliação pediátrica (aparência, trabalho respiratório, circulação cutânea), seguido de ABCDE e intervenções simultâneas.",
+            "Oxigenar/ventilar se necessário, obter IV/IO em choque, avaliar glicemia, temperatura, perfusão, déficit neurológico e exposição completa.",
+            "Intervenções dependem da causa e devem ser reavaliadas continuamente; evitar fluidos empíricos volumosos na suspeita de choque cardiogênico."
+          ],
+          "title": "Atendimento estruturado"
+        },
+        {
+          "items": [
+            "Usar peso medido ou estimado para doses e equipamentos; confirmar concentração, via e diluições antes de fármacos de emergência.",
+            "Reavaliação contínua após qualquer intervenção e comunicação estruturada à equipe de destino."
+          ],
+          "title": "Aprimoramento de condutas — revisão editorial"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso, comorbidades e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta clínica e orientar sinais de alarme antes da alta."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Documentar resposta em respiração, consciência, pulsos, perfusão, diurese, saturação e glicemia; manter comunicação com familiares e equipe de transferência."
+          ],
+          "title": "Reavaliação"
+        },
+        {
+          "items": [
+            "Documentar sinais vitais e achados do ABCDE seriados, intervenções e resposta para passagem de plantão."
+          ],
+          "title": "Reavaliação e segurança de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Apneia, cianose e exaustão respiratória.",
+        "Bradicardia com hipoperfusão ou ausência de pulso.",
+        "Rebaixamento, convulsão prolongada ou choque.",
+        "Piora apesar de suporte inicial.",
+        "Rebaixamento, apneia, cianose ou bradicardia com hipoperfusão.",
+        "Choque, convulsão persistente ou fadiga respiratória."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar sinais vitais, intervenções e resposta clínica.",
+        "items": [
+          "Registrar sinais vitais, intervenções e resposta clínica."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms/",
+          "label": "AHA — 2025 Algorithms"
+        },
+        {
+          "url": "https://professional.heart.org/en/guidelines-statements/part-8-pediatric-advanced-life-support-2025-american-heart-association-andcir0000000000001368",
+          "label": "AHA/AAP — Pediatric Advanced Life Support 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "Glicose 10%",
+        "adrenalina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 130,
+      "slug": "pediatria-parada-cardiorrespiratoria-pediatrica",
+      "title": "Parada cardiorrespiratória pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Na parada cardiorrespiratória pediátrica, RCP de alta qualidade, ventilação eficaz, epinefrina precoce nos ritmos não chocáveis e desfibrilação rápida em FV/TV sem pulso são centrais.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Ausência de resposta, respiração normal e pulso definido em até 10 s.",
+            "Bradicardia <60/min com má perfusão apesar de ventilação adequada requer compressões."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Compressões 100–120/min e profundidade de 1/3 do diâmetro AP.",
+            "30:2 com 1 socorrista e 15:2 com 2 socorristas antes da puberdade."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Monitor/desfibrilador assim que disponível.",
+            "Capnografia quando houver via aérea avançada."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Inconsciente, não respira normalmente, sem pulso definitivamente identificado em ≤10 segundos",
+          "then": "Iniciar RCP de qualidade, chamar código e conectar monitor/desfibrilador."
+        },
+        {
+          "if": "FV/TV sem pulso",
+          "then": "Desfibrilar com 2 J/kg no primeiro choque e 4 J/kg no segundo; nos choques seguintes, seguir algoritmo pediátrico e limite de energia recomendado. Retomar RCP imediatamente após cada choque."
+        },
+        {
+          "if": "Assistolia/AESP",
+          "then": "RCP e adrenalina IV/IO 0,01 mg/kg (solução 0,1 mg/mL), máximo 1 mg, tão logo possível, repetindo a cada 3–5 min; procurar causas reversíveis."
+        },
+        {
+          "if": "Bradicardia com pulso <60/min e sinais de má perfusão apesar de oxigenação/ventilação",
+          "then": "Iniciar compressões torácicas e seguir algoritmo PALS, tratando hipóxia e causa."
+        },
+        {
+          "if": "Retorno da circulação espontânea",
+          "then": "Cuidados pós-PCR: oxigenação e ventilação adequadas, evitar hipotensão e febre, avaliar EEG quando necessário e identificar causa."
+        },
+        {
+          "if": "Inconsciente, respiração anormal e ausência de pulso detectável rapidamente",
+          "then": "Iniciar RCP de alta qualidade com bolsa-máscara/oxigenação e monitor/desfibrilador."
+        },
+        {
+          "if": "Assistolia ou atividade elétrica sem pulso",
+          "then": "RCP, adrenalina IV/IO a cada 3–5 minutos e busca sistemática de causas reversíveis; não chocar."
+        },
+        {
+          "if": "Bradicardia com FC <60/min e má perfusão apesar de ventilação",
+          "then": "Iniciar compressões conforme algoritmo pediátrico."
+        },
+        {
+          "if": "Retorno de circulação espontânea",
+          "then": "Suporte pós-parada com metas de oxigenação, ventilação, perfusão e temperatura."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Compressões 100–120/min, profundidade ≥1/3 do tórax, retorno completo e interrupções mínimas; ventilação é essencial na PCR pediátrica.",
+            "Em RCP sem via aérea avançada: 30:2 com 1 socorrista e 15:2 com 2 socorristas pré-puberdade; via avançada, compressões contínuas e ventilações conforme algoritmo.",
+            "FV/TV: desfibrilação e antiarrítmico quando indicado; assistolia/AESP: adrenalina precoce. Corrigir 4H/4T e condições específicas."
+          ],
+          "title": "RCP de qualidade e ritmos"
+        },
+        {
+          "items": [
+            "Compressões 100–120/min com profundidade ≈1/3 do tórax; adrenalina IV/IO 0,01 mg/kg da concentração 0,1 mg/mL quando indicada. Conferir concentração/dose."
+          ],
+          "title": "Aprimoramento de condutas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso, comorbidades e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta clínica e orientar sinais de alarme antes da alta."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Registrar tempos, ritmos, choques, doses, causa reversível e status neurológico; transferir para UTI, prevenir hiperóxia/hipocapnia e hipotensão."
+          ],
+          "title": "Pós-PCR"
+        },
+        {
+          "items": [
+            "Registrar ritmo, tempo de RCP, choques, fármacos, RCE e acompanhamento em UTI."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Compressões atrasadas por pulso duvidoso.",
+        "Ventilação ineficaz, pausas longas e hiperinsuflação.",
+        "Choques/doses sem ajuste de peso.",
+        "Não reconhecer deterioração pós-ROSC.",
+        "Interrupções frequentes de compressões, ventilação inadequada e erro de dose/concentração de adrenalina."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar sinais vitais, intervenções e resposta clínica.",
+        "items": [
+          "Registrar sinais vitais, intervenções e resposta clínica."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms/",
+          "label": "AHA — 2025 Algorithms"
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2025-074351/205236",
+          "label": "AHA/AAP — Pediatric Advanced Life Support 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "adrenalina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 131,
+      "slug": "pediatria-febre-sem-sinais-localizatorios",
+      "title": "Febre sem sinais localizatórios",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Febre sem foco aparente exige decisão baseada em idade, estado geral, sinais vitais, imunizações e risco de infecção bacteriana grave. Febre é um sinal; a prioridade é identificar criança toxemiada, meningococcemia, meningite, pneumonia ou infecção urinária. Antitérmicos visam conforto e não substituem investigação.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Documentar temperatura e duração, sinais respiratórios/urinários/gastrointestinais, contatos, vacinação, antibióticos prévios e imunossupressão.",
+            "Examinar aparência, interatividade, consciência, esforço respiratório, perfusão, hidratação, pele e fontanelas.",
+            "Febre ≥38°C em menores de 3 meses requer fluxo etário específico; 3–6 meses com temperatura ≥39°C é maior risco."
+          ],
+          "title": "Avaliação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Identificar imediatamente sinais de alto risco (alteração de consciência, púrpura não descorável, fontanela abaulada, dificuldade respiratória, perfusão ruim).",
+            "Se instável: ABCDE, culturas quando possível sem atrasar antibiótico e suporte intensivo.",
+            "Se bem aparente e sem sinais de alerta, examinar urina conforme idade/risco; orientar responsáveis e reavaliação programada."
+          ],
+          "title": "Estratificar"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Urina tipo 1 e urocultura devem ser consideradas quando ITU é possível, sobretudo lactentes sem foco.",
+            "Hemograma/marcadores/culturas ou raio-X conforme gravidade, idade, exame e epidemiologia; não utilizar bateria universal indiscriminada.",
+            "Investigar meningite e sepse conforme sinais de alerta, sem atrasar tratamento por resultados."
+          ],
+          "title": "Exames dirigidos"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Menor de 3 meses com febre ≥38°C",
+          "then": "Aplicar protocolo de febre no lactente pequeno por faixa etária; reavaliar risco de infecção bacteriana invasiva."
+        },
+        {
+          "if": "Criança de qualquer idade com sinais de alto risco/toxemia",
+          "then": "Avaliação pediátrica de emergência, estabilização, investigação dirigida e internação/tratamento conforme síndrome."
+        },
+        {
+          "if": "3–6 meses com febre ≥39°C ou sinais intermediários de risco",
+          "then": "Investigar conforme exame, sinais vitais e risco bacteriano; observação e seguimento confiável."
+        },
+        {
+          "if": "Bem aparente, vacinação adequada, sem sinais de alarme",
+          "then": "Buscar ITU conforme idade/risco, orientar hidratação, conforto, vigiar evolução e plano de retorno em caso de piora."
+        },
+        {
+          "if": "Febre ≥5 dias ou aparecimento de novos sinais",
+          "then": "Reexaminar para Kawasaki, síndrome inflamatória, infecção localizada/oculta e outras etiologias."
+        },
+        {
+          "if": "Febre em menor de 3 meses",
+          "then": "Aplicar protocolo específico de lactente febril por idade em dias, nunca algoritmo da criança maior."
+        },
+        {
+          "if": "Criança maior bem aparentada, imunizada e sem sinais de alarme",
+          "then": "Investigar focos com anamnese/exame; considerar urina conforme risco e observar com retorno definido."
+        },
+        {
+          "if": "Criança mal aparentada, púrpura, hipoperfusão ou alteração de consciência",
+          "then": "Ressuscitar e investigar sepse/doença meningocócica; antibiótico precoce quando indicado."
+        },
+        {
+          "if": "Febre prolongada ≥5 dias com sinais inflamatórios",
+          "then": "Pesquisar doença de Kawasaki e outras etiologias de febre prolongada."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Oferecer líquidos e manter alimentação conforme aceitação; antitérmicos quando desconforto, com dose etária correta e contraindicações revisadas.",
+            "Antitérmicos não são usados com objetivo de prevenir convulsões febris; não alternar automaticamente paracetamol e ibuprofeno.",
+            "Antibiótico apenas quando houver suspeita razoável/diagnóstico de infecção bacteriana, escolhendo esquema conforme síndrome e idade, não por febre isolada."
+          ],
+          "title": "Condutas práticas"
+        },
+        {
+          "items": [
+            "Antitérmicos são para conforto; melhora com antitérmico não exclui doença invasiva.",
+            "Evitar antibióticos empíricos de rotina sem evidência de infecção bacteriana em criança bem aparentada."
+          ],
+          "title": "Condutas e critérios aprimorados"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Imunossupressão, doença crônica grave, vacinação incompleta e recém-nascidos exigem abordagem particular.",
+            "Púrpura não descorável, rigidez nucal e fontanela abaulada indicam investigação emergencial.",
+            "Crianças com febre e dificuldade de andar ou edema articular requerem investigação de osteoarticular."
+          ],
+          "title": "Cenários que elevam risco"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Fornecer orientações escritas sobre respiração, consciência, hidratação, diurese, rash, novas queixas e acesso ao serviço de emergência.",
+            "Marcar reavaliação quando evolução incerta, sinais intermediários ou ausência de diagnóstico; retorno se não melhorar ou piorar.",
+            "Acompanhamento específico para resultados de cultura pendentes."
+          ],
+          "title": "Rede de segurança"
+        },
+        {
+          "items": [
+            "Orientar reavaliação por febre persistente, desidratação ou novo sinal de localização."
+          ],
+          "title": "Seguimento recomendado"
+        }
+      ],
+      "red_flags": [
+        "Púrpura não descorável, rigidez nucal, choque ou rebaixamento.",
+        "Febre ≥38°C em menor de 3 meses.",
+        "Dispneia, gemência, desidratação importante ou convulsão prolongada.",
+        "Febre ≥5 dias com sinais inflamatórios sistêmicos.",
+        "Púrpura, rigidez de nuca, hipoperfusão, letargia, dispneia."
+      ],
+      "notification": {
+        "text": "Registrar temperatura, risco, exames, condutas e plano de retorno; notificar doenças específicas se suspeitas.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.nice.org.uk/guidance/NG143/chapter/recommendations",
+          "label": "NICE NG143 — Fever in under 5s: assessment and initial management"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/aidpi",
+          "label": "Ministério da Saúde — Estratégia AIDPI"
+        },
+        {
+          "url": "https://www.aap.org/en/patient-care/infant-fever/",
+          "label": "AAP — Infant Fever guidance 8–60 days"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 02:23:17.393194+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 132,
+      "slug": "pediatria-febre-em-menores-de-3-meses",
+      "title": "Febre em menores de 3 meses",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Febre ≥38,0°C documentada em criança menor de 90 dias requer avaliação conforme idade cronológica, aparência clínica, prematuridade e risco de infecção bacteriana invasiva. A diretriz AAP para lactentes previamente saudáveis, nascidos a termo e bem aparentes é especificamente aplicável a 8–60 dias: fluxos 8–21, 22–28 e 29–60 dias.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Confirmar relato de febre ≥38,0°C medida (preferencialmente retal quando disponível/adequado), mesmo que o lactente esteja afebril no atendimento.",
+            "Verificar faixa de idade exata em dias, aspecto geral, irritabilidade, letargia, dificuldade respiratória, perfusão, hidratação e condições perinatais.",
+            "Prematuros, comorbidades, aparência tóxica, hipotermia, focos graves ou procedimentos recentes podem exigir protocolo diferente do algoritmo AAP de criança bem aparentada."
+          ],
+          "title": "Reconhecer febre e grupo de risco"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar ABC, sinais vitais, SpO₂ e glicemia se prostração; em criança mal aparentada ou instável, iniciar pacote de sepse, culturas sem atraso significativo, antibiótico parenteral e internação.",
+            "Em neonatos ≤21 dias (inclusive 0–7 dias, fora da diretriz AAP formal), usar abordagem de alto risco: investigação de infecção bacteriana invasiva, avaliação do líquor quando segura, terapia empírica parenteral e internação.",
+            "Entre 22–28 dias: urina, hemocultura, marcadores inflamatórios e avaliação de líquor conforme resultados; manter baixa tolerância ao risco.",
+            "Entre 29–60 dias: estratificação pela urina, culturas e marcadores; somente casos bem aparentes e com critérios estritos de baixo risco podem ser candidatos a seguimento ambulatorial."
+          ],
+          "title": "Avaliação inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Urina por cateterismo ou punção suprapúbica quando urocultura for necessária; hemocultura e marcadores como PCR/procalcitonina e neutrófilos conforme idade e disponibilidade.",
+            "Líquor (citometria, glicose, proteína, Gram e cultura) obrigatório na avaliação AAP 8–21 dias se clinicamente seguro, e indicado seletivamente nas demais faixas de acordo com risco e achados.",
+            "Considerar PCR para herpes simples em recém-nascido com vesículas, convulsões, pleocitose, trombocitopenia, hepatite, doença materna ou apresentação sugestiva.",
+            "Para 61–90 dias, aplicar protocolo local/específico e avaliação clínica individual; a diretriz AAP 8–60 dias não deve ser automaticamente estendida."
+          ],
+          "title": "Estratificação diagnóstica"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Lactente <90 dias mal aparentado, instável, com hipotermia importante ou sinais de sepse/meningite",
+          "then": "Ressuscitação e antibioticoterapia IV imediata após culturas se sem atrasar; punção lombar apenas quando segura; internação e avaliação de UTI."
+        },
+        {
+          "if": "0–7 dias com temperatura ≥38°C ou infecção invasiva suspeita",
+          "then": "Abordagem neonatal de alto risco com culturas, avaliação de líquor quando segura, antimicrobiano parenteral e internação (a AAP não contempla essa faixa)."
+        },
+        {
+          "if": "8–21 dias, a termo e bem aparentado",
+          "then": "Avaliação completa incluindo urina, hemocultura e líquor, antibiótico empírico parenteral e monitorização hospitalar até culturas/avaliação."
+        },
+        {
+          "if": "22–28 dias, a termo e bem aparentado",
+          "then": "Hemocultura, urina e marcadores inflamatórios; punção lombar diante de marcadores anormais e em outras situações de risco; considerar internação e terapia conforme resultados e confiabilidade do seguimento."
+        },
+        {
+          "if": "29–60 dias, a termo e bem aparentado, urina e marcadores de baixo risco",
+          "then": "Considerar evitar punção lombar/antibiótico e avaliar observação ambulatorial apenas com família confiável, reavaliação em 24h e retorno imediato; conforme algoritmo e achados."
+        },
+        {
+          "if": "61–90 dias, bem aparentado",
+          "then": "Avaliar urina e risco bacteriano individualmente conforme diretriz local, sem extrapolar automaticamente o algoritmo AAP 8–60 dias."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Nos lactentes de alto risco, iniciar antibiótico IV guiado por idade pós-natal, antecedentes, foco, epidemiologia e suspeita de meningite. Regimes neonatais frequentemente incluem ampicilina associada a gentamicina ou cefotaxima conforme foco/protocolo.",
+            "Se houver suspeita de infecção do SNC, usar esquema com penetração adequada no líquor e avaliação de infectologia/neonatologia; ceftriaxona pode ser contraindicada em recém-nascidos com hiperbilirrubinemia ou uso concomitante de soluções IV contendo cálcio.",
+            "Considerar aciclovir IV se encefalite/herpes neonatal suspeita; não iniciar rotineiramente em todos sem critério."
+          ],
+          "title": "Antimicrobiano empírico por idade/risco"
+        },
+        {
+          "items": [
+            "Alta somente em grupo comprovadamente de baixo risco, clinicamente estável, sem indicação de antibiótico parenteral e com acesso garantido a retorno rápido e contato para culturas.",
+            "Não prescrever antibiótico oral de modo empírico indiscriminado quando a avaliação de alto risco exige tratamento parenteral."
+          ],
+          "title": "Observação e decisão de alta"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "O algoritmo AAP 2021 é para lactentes a termo, bem aparentados e com 8–60 dias. Não se aplica automaticamente a prematuros, complexos ou mal aparentados.",
+            "História de imunização recente ou infecção viral comprovada pode modificar risco, mas não exclui automaticamente infecção bacteriana, especialmente urinária.",
+            "Lactentes com bronquiolite típica seguem avaliação específica, e a exclusão do algoritmo AAP exige julgamento conforme sinais clínicos."
+          ],
+          "title": "Limites de aplicabilidade"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Durante observação/internação, revisar hemocultura, urocultura e culturas do líquor, condição clínica e resposta a tratamento.",
+            "Se alta em baixo risco, garantir reavaliação em até 24 horas, telefone de contato funcional para culturas positivas e orientação escrita de retorno imediato por febre persistente, dificuldade para alimentar, prostração, irritabilidade ou respiração alterada."
+          ],
+          "title": "Monitoramento de resultados"
+        }
+      ],
+      "red_flags": [
+        "Menor de 22 dias com febre ou hipotermia, mesmo bem aparentado.",
+        "Má perfusão, apneia, cianose, irritabilidade inconsolável, prostração, convulsão.",
+        "Fontanela abaulada, petéquias/púrpura ou sinais meníngeos.",
+        "Prematuridade/comorbidade sem algoritmo validado para alta segura."
+      ],
+      "notification": {
+        "text": "Registrar temperatura máxima e método de medida, idade exata em dias, critérios de inclusão/exclusão do algoritmo, culturas, horário de antimicrobiano e contato para resultados; notificar agravo específico caso identificado.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://doi.org/10.1542/peds.2021-052228",
+          "label": "AAP — Diretriz de lactente febril de 8 a 60 dias (2021, com correções)"
+        },
+        {
+          "url": "https://www.aap.org/en/patient-care/infant-fever/",
+          "label": "AAP — Infant Fever: algoritmos por idade"
+        },
+        {
+          "url": "https://www.who.int/publications/b/66598",
+          "label": "OMS — Infecções bacterianas graves em lactentes 0–59 dias (2025)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ampicilina",
+        "sulfato de gentamicina",
+        "cefotaxima",
+        "ceftriaxona",
+        "aciclovir"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 133,
+      "slug": "pediatria-sepse-pediatrica",
+      "title": "Sepse pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Sepse pediátrica é infecção associada à disfunção orgânica ameaçadora à vida; choque séptico é sepse com disfunção cardiovascular. Reconhecimento clínico rápido, antimicrobianos precoces, reanimação hemodinâmica individualizada e controle de foco. Incorporar recomendações Surviving Sepsis Campaign 2026.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Suspeitar diante de infecção possível e sinais novos de disfunção cardiovascular, respiratória, neurológica ou da coagulação; perfusão alterada pode anteceder hipotensão.",
+            "Pesquisar tempo de enchimento capilar, temperatura de extremidades, pulsos, pressão arterial por idade, consciência, frequência respiratória, diurese e oxigenação.",
+            "Não aguardar lactato elevado, hipotensão ou escore formal para iniciar medidas se choque é provável; avaliar diagnósticos alternativos."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar equipe pediátrica de emergência e eventual UTI; abordar ABCDE, monitorizar PA/ECG/SpO₂, garantir acesso venoso ou intraósseo, medir glicemia e perfusão.",
+            "Colher hemoculturas antes do antimicrobiano apenas quando não houver atraso significativo; antimicrobiano IV em choque séptico idealmente até 1 hora, e em sepse provável sem choque idealmente até 3 horas após investigação rápida.",
+            "Em choque com suporte intensivo acessível, oferecer cristaloide em bolus de 10–20 mL/kg com reavaliação após cada bolus, podendo totalizar até 40–60 mL/kg na primeira hora conforme resposta e tolerância; parar se sobrecarga.",
+            "Em serviços sem UTI/ventilação mecânica acessível, NÃO administrar bolus na sepse sem hipotensão; se choque com hipotensão, bolus criteriosos segundo diretriz e capacidade de resgate."
+          ],
+          "title": "Primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemoculturas, hemograma, gasometria/lactato quando disponível, glicemia, eletrólitos, ureia/creatinina, função hepática/coagulação e exames direcionados ao foco.",
+            "Reavaliar lactato seriado se elevado; não utilizar lactato isoladamente para decidir resposta à ressuscitação.",
+            "POCUS cardíaco/pulmonar por equipe treinada pode auxiliar na identificação de disfunção miocárdica e sobrecarga."
+          ],
+          "title": "Investigação sem atrasos"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Suspeita de choque séptico com hipoperfusão ou hipotensão",
+          "then": "Iniciar imediatamente suporte ABC, antimicrobiano de amplo espectro idealmente ≤1 hora, fluidos titulados conforme recursos e vasoativo precoce quando indicado; acionar UTI."
+        },
+        {
+          "if": "Sepse provável sem choque",
+          "then": "Investigar prontamente, colher culturas, iniciar antimicrobiano idealmente ≤3 horas se hipótese confirmada, tratar foco e monitorar progressão."
+        },
+        {
+          "if": "Choque com UTI disponível e sem sinais de sobrecarga",
+          "then": "Cristaloide 10–20 mL/kg por bolus, reavaliando FC, perfusão, pulmões, hepatomegalia, PA, consciência e diurese; não exceder volume apenas por meta fixa."
+        },
+        {
+          "if": "Choque refratário a volume apropriado OU volume contraindicado/sobrecarga",
+          "then": "Iniciar infusão de adrenalina ou noradrenalina conforme fisiologia e protocolo; acesso periférico vigiado pode ser usado para não atrasar até acesso central."
+        },
+        {
+          "if": "Infecção com foco drenável, necrose ou cateter infectado confirmado",
+          "then": "Controle de foco urgente, coordenado com cirurgia/radiologia/infectologia."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Escolher esquema empírico IV de amplo espectro orientado por idade, foco, comorbidades, infecção comunitária versus hospitalar e resistência local; colher culturas sem atrasar.",
+            "Revisar antibioticoterapia diariamente, ajustar a culturas e resposta; fazer descalonamento, controle de foco e definir duração conforme etiologia."
+          ],
+          "title": "Antimicrobianos"
+        },
+        {
+          "items": [
+            "Usar cristaloide isotônico, preferindo balanceado se adequado ao quadro; cada bolus exige reavaliação. Investigar congestão/edema pulmonar, hepatomegalia e disfunção miocárdica.",
+            "Adrenalina ou noradrenalina em infusão titulada podem ser escolhidas conforme fenótipo hemodinâmico e disponibilidade; diretriz 2026 não estabelece superioridade universal entre ambas.",
+            "Evitar atrasar início de vasoativo por ausência de acesso central. Monitorar extravasamento e transferir precocemente se precisa de suporte avançado."
+          ],
+          "title": "Ressuscitação e vasoativos"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Em cenário sem suporte intensivo, fluidos agressivos podem aumentar risco; conduta de bolus difere da de hospital com UTI.",
+            "Em cardiopatia ou disfunção miocárdica, antecipar vasoativos e usar pequenos volumes com reavaliação e ecografia se disponível.",
+            "Púrpura fulminante/meningococcemia exige precauções, antibiótico emergencial e vigilância/notificação segundo doença de base."
+          ],
+          "title": "Restrições de recursos"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Na fase aguda, reavaliar perfusão, tempo de enchimento capilar, consciência, sinais vitais, diurese, necessidade de O₂ e lactato conforme contexto.",
+            "Após estabilidade, monitorar disfunção orgânica, complicações associadas a UTI e garantir reabilitação/seguimento de sequelas quando pertinente."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Hipoperfusão persistente, pulsos fracos, extremidades frias ou hipotensão.",
+        "Alteração de consciência, convulsões, insuficiência respiratória ou hipoxemia.",
+        "Oligúria, acidose em piora, púrpura progressiva ou sangramento.",
+        "Sinais de sobrecarga após fluidos e necessidade de vasoativo crescente."
+      ],
+      "notification": {
+        "text": "Registrar horários do reconhecimento, antimicrobiano, bolus e vasoativos, sinais perfusionais e controle de foco. Cumprir notificação específica quando o foco/agente for agravo de notificação (ex.: meningococcemia).",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in",
+          "label": "Surviving Sepsis Campaign — Pediatric Guidelines 2026, SCCM"
+        },
+        {
+          "url": "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+          "label": "Surviving Sepsis Campaign — recomendações pediátricas 2026"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "adrenalina",
+        "noradrenalina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 134,
+      "slug": "pediatria-choque-na-crianca",
+      "title": "Choque na criança",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Choque pediátrico é hipoperfusão tecidual por falha na entrega de oxigênio, mesmo antes da hipotensão. Identificar rapidamente mecanismo hipovolêmico/hemorrágico, distributivo, cardiogênico ou obstrutivo; ressuscitação guiada por resposta e pela disponibilidade de terapia intensiva.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Procurar taquicardia, alteração de consciência, perfusão periférica, temperatura das extremidades, enchimento capilar, pulsos, oligúria e sinais respiratórios; hipotensão é manifestação tardia.",
+            "História de perdas gastrointestinais, hemorragia/trauma, infecção, cardiopatia, arritmia, anafilaxia, tamponamento cardíaco ou pneumotórax hipertensivo direciona a causa.",
+            "Choque frio ou quente não substitui avaliação seriada da pressão arterial, oxigenação e perfusão."
+          ],
+          "title": "Reconhecimento e classificação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar equipe de emergência, fornecer oxigênio/ventilação conforme necessidade, instalar monitor multiparamétrico e obter acesso IV/IO sem atraso.",
+            "Medir glicemia, estimar peso, observar perfusão e pesquisar rapidamente sangramento, sepse, sinais cardíacos ou causas obstrutivas.",
+            "Iniciar intervenção direcionada à causa. Fluidos não devem ser administrados em volume padronizado sem reavaliação, especialmente em choque cardiogênico ou obstrutivo.",
+            "Preparar vasoativos e transferência/UTI precocemente se hipoperfusão persistir."
+          ],
+          "title": "ABCDE e primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Glicose, gasometria/lactato, eletrólitos, função renal, hemograma/coagulograma, culturas quando infecção provável; tipagem e prova cruzada quando hemorragia.",
+            "ECG e ecocardiografia/POCUS à beira leito por equipe treinada quando suspeita de arritmia, tamponamento, disfunção miocárdica ou causa obstrutiva.",
+            "Avaliação seriada da perfusão e da resposta clínica é mais importante que um valor isolado de lactato."
+          ],
+          "title": "Laboratório e avaliação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Perda de líquidos/desidratação e sem sinais de disfunção cardíaca",
+          "then": "Cristaloide isotônico em bolus de 10–20 mL/kg conforme intensidade da hipoperfusão, reavaliando após cada expansão; tratar causa e perdas continuadas."
+        },
+        {
+          "if": "Hemorragia importante ou choque hemorrágico",
+          "then": "Controle imediato do sangramento, hemocomponentes precocemente conforme protocolo de hemorragia; evitar substituir ressuscitação com sangue por grandes volumes repetidos de cristaloide."
+        },
+        {
+          "if": "Choque séptico com terapia intensiva disponível",
+          "then": "Antimicrobiano precoce e cristaloide 10–20 mL/kg por bolus, reavaliando; até 40–60 mL/kg na primeira hora APENAS se houver indicação e tolerância, com vasoativo precoce quando necessário."
+        },
+        {
+          "if": "Suspeita de sepse sem hipotensão em serviço sem terapia intensiva",
+          "then": "Não realizar bolus rotineiro de fluidos; manutenção e transferência enquanto trata infecção e monitora deterioração."
+        },
+        {
+          "if": "Sinais de choque cardiogênico (hepatomegalia, crepitações, galope, cardiomegalia ou disfunção no POCUS)",
+          "then": "Evitar ressuscitação volêmica agressiva; suporte cardiológico/intensivo, pequenos testes de volume somente se indicação, considerar inotrópico/vasoativo conforme fisiologia."
+        },
+        {
+          "if": "Choque obstrutivo ou anafilático",
+          "then": "Corrigir mecanismo imediatamente: descompressão de pneumotórax hipertensivo, manejo urgente de tamponamento, ou adrenalina IM na anafilaxia, respectivamente."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Preferir cristaloides isotônicos para choque hipovolêmico não hemorrágico, em alíquotas com exame clínico antes e depois de cada bolus.",
+            "Na hemorragia, hemostasia e sangue/hemocomponentes em vez de múltiplos bolus de cristaloide; seguir protocolo transfusional pediátrico.",
+            "No choque cardiogênico, volume pode agravar congestão; individualizar com ecocardiografia e equipe especializada."
+          ],
+          "title": "Fluidos e hemoderivados"
+        },
+        {
+          "items": [
+            "Se choque séptico refratário a volume apropriado, iniciar adrenalina ou noradrenalina sob monitorização; não atrasar por falta de acesso central.",
+            "Em anafilaxia, adrenalina intramuscular na coxa é primeira linha; fármacos vasoativos IV não substituem tratamento inicial.",
+            "Em choque obstrutivo, tratamento definitivo da causa mecânica deve ocorrer em paralelo ao suporte."
+          ],
+          "title": "Vasoativos e medidas específicas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Diretriz de fluidos na sepse pediátrica diferencia serviços com e sem suporte intensivo; documentar cenário de atendimento.",
+            "Em desnutrição grave, cardiopatia ou insuficiência renal, adequar expansão e suporte à condição e protocolos específicos.",
+            "Se hipotensão e bradicardia em criança deteriorando, avaliar falência circulatória iminente e abordagem PALS."
+          ],
+          "title": "Contexto assistencial e etiologia"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Acompanhar consciência, pulsos, perfusão, extremidades, frequência cardíaca, pressão por idade, diurese, demanda de oxigênio e lactato quando aplicável.",
+            "Registrar balanço hídrico e resposta a cada bolus, monitorar sobrecarga e função renal; após estabilização investigar doença desencadeante e sequelas."
+          ],
+          "title": "Metas e reavaliações"
+        }
+      ],
+      "red_flags": [
+        "Hipotensão, pulso central fraco, alteração de consciência e oligúria.",
+        "Hipoxemia, crepitações/hepatomegalia após fluidos ou aumento do esforço respiratório.",
+        "Arritmias, suspeita de tamponamento ou pneumotórax hipertensivo.",
+        "Hemorragia não controlada ou perfusão persistentemente ruim apesar da ressuscitação."
+      ],
+      "notification": {
+        "text": "Registrar mecanismo presumido, sinais de perfusão pré e pós-intervenção, quantidade de fluidos/hemoderivados, tempo de início de vasoativos e controle do foco; notificar causas específicas quando exigidas.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2025-074351/205236",
+          "label": "AHA/AAP — Suporte avançado de vida pediátrico, choque (2025)"
+        },
+        {
+          "url": "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in",
+          "label": "Surviving Sepsis Campaign — Diretrizes pediátricas (2026)"
+        },
+        {
+          "url": "https://professional.heart.org/en/science-news/surviving-pediatric-cardiogenic-shock-clinical-approach-improving-outcomes-and-future-directions",
+          "label": "AHA — Choque cardiogênico pediátrico, comunicado científico (2026)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "adrenalina",
+        "noradrenalina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 135,
+      "slug": "pediatria-desidratacao",
+      "title": "Desidratação",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Desidratação pediátrica é perda de água e eletrólitos, com gravidade determinada por estado mental, sede, olhos, mucosas, turgor, perfusão e diurese. Quando associada a diarreia, aplicar Planos A, B e C do Ministério da Saúde, privilegiando SRO e reservando hidratação intravenosa emergencial para desidratação grave/choque.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Investigar duração de vômitos/diarreia/febre, volume ingerido, número de fraldas/diurese, perda ponderal e comorbidades.",
+            "Avaliar consciência, sede/capacidade de beber, lágrimas, olhos fundos, mucosas, turgor, pulsos, enchimento capilar e sinais vitais ajustados à idade.",
+            "Choque descompensado inclui hipotensão tardia, perfusão crítica, prostração e extremidades frias."
+          ],
+          "title": "Avaliação de hidratação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Pesar quando possível, avaliar gravidade e glicemia se prostração; manter aleitamento materno.",
+            "Sem desidratação: Plano A, líquidos/SRO após perdas, alimentação usual e sinais de retorno.",
+            "Desidratação sem choque: Plano B com SRO supervisionado, 50–100 mL/kg em 4–6 horas como orientação inicial, de acordo com sede/tolerância, e reavaliações frequentes.",
+            "Desidratação grave/choque: Plano C com acesso IV/IO, solução isotônica conforme algoritmo etário/choque, monitorização e transferência hospitalar; iniciar SRO assim que seguro."
+          ],
+          "title": "Classificação e plano"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Casos leves típicos: diagnóstico clínico, sem necessidade rotineira de eletrólitos.",
+            "Em desidratação grave, choque, alterações neurológicas, falha de SRO ou comorbidade: glicemia, sódio, potássio, bicarbonato/gasometria, função renal conforme caso.",
+            "Reavaliar peso/diurese, perfusão e tolerância para decidir transição para via oral."
+          ],
+          "title": "Exames quando necessários"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sem sinais de desidratação (Plano A)",
+          "then": "Manter hidratação oral/SRO, dieta e aleitamento; orientar quantidades após perdas, higiene e sinais de alarme."
+        },
+        {
+          "if": "Desidratação sem sinais de gravidade e consegue beber (Plano B)",
+          "then": "SRO em unidade de saúde, aproximadamente 50–100 mL/kg em 4–6 horas com oferta fracionada, reavaliações e transição ao Plano A quando reidratado."
+        },
+        {
+          "if": "Vômitos persistentes durante Plano B",
+          "then": "Manter oferta em pequenos volumes, considerar sonda nasogástrica ou ondansetrona conforme idade/contraindicações e protocolo; reavaliar antes de mudar para IV."
+        },
+        {
+          "if": "Desidratação grave, choque, rebaixamento ou incapacidade de ingerir (Plano C)",
+          "then": "Reanimação isotônica IV/IO, monitorização e transferência imediata; seguir doses/velocidades do algoritmo etário institucional; reiniciar SRO assim que seguro."
+        },
+        {
+          "if": "Hipernatremia/hiponatremia relevantes",
+          "then": "Correção eletrolítica individualizada e monitorizada para evitar mudanças rápidas do sódio."
+        },
+        {
+          "if": "Sem desidratação clínica",
+          "then": "Plano A: SRO e líquidos adequados após perdas, alimentação e aleitamento mantidos."
+        },
+        {
+          "if": "Desidratação sem choque com aceitação oral",
+          "then": "Plano B: SRO supervisionada e reavaliação até normalizar sinais clínicos."
+        },
+        {
+          "if": "Desidratação grave ou hipoperfusão",
+          "then": "Plano C: reidratação IV isotônica e avaliação seriada, com transferência se necessário."
+        },
+        {
+          "if": "Choque com doença renal/cardíaca ou distúrbio importante de sódio",
+          "then": "Individualizar composição e velocidade e monitorar eletrólitos para evitar correção rápida."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Solução de reidratação oral de baixa osmolaridade é preferida nos quadros sem choque; oferecer frequentemente em pequenos volumes.",
+            "Plano B: dose inicial orientativa 50–100 mL/kg em 4–6 horas, ajustada à sede e sinais clínicos; migrar ao Plano A após reidratação.",
+            "Plano C: solução IV isotônica conforme protocolo por idade, com reavaliação perfusional e reposição subsequente do déficit/perdas; em choque, não atrasar suporte."
+          ],
+          "title": "Reidratação"
+        },
+        {
+          "items": [
+            "SRO oral ou por sonda quando clinicamente seguro é preferível à via intravenosa na desidratação leve/moderada.",
+            "Não usar refrigerantes ou sucos como substitutos de SRO."
+          ],
+          "title": "Condutas e critérios aprimorados"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Desnutrição grave, cardiopatia, nefropatia e transtornos de sódio requerem esquemas próprios; não aplicar volumes padrão sem avaliação.",
+            "Em lactentes e crianças pequenas, deterioração pode ser rápida; considerar internação se incapacidade familiar de ofertar SRO ou retornar.",
+            "Se suspeita de abdome cirúrgico, sepse ou cetoacidose, tratar doença de base com fluxos específicos."
+          ],
+          "title": "Situações que modificam o manejo"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Alta após melhora dos sinais clínicos, aceitação oral e diurese adequadas, com cuidadores orientados sobre SRO.",
+            "Orientar retorno por prostração, vômitos contínuos, redução importante da urina, sangue nas fezes ou dificuldade de beber.",
+            "Manter alimentação habitual e aleitamento; reforçar manejo domiciliar e controle de perdas."
+          ],
+          "title": "Segurança"
+        },
+        {
+          "items": [
+            "Reavaliar estado mental, sede, perfusão, peso e diurese; migrar ao Plano A quando hidratado."
+          ],
+          "title": "Seguimento recomendado"
+        }
+      ],
+      "red_flags": [
+        "Choque, confusão, letargia ou prostração importante.",
+        "Extremidades frias, enchimento capilar prolongado, anúria/oligúria.",
+        "Vômitos incoercíveis e incapacidade de beber.",
+        "Alterações graves de sódio, convulsão ou suspeita de sepse.",
+        "Letargia, ausência de diurese, choque, convulsão ou vômitos biliosos."
+      ],
+      "notification": {
+        "text": "Documentar classificação de desidratação, plano A/B/C, volumes e tolerância, peso, perfusão, diurese e orientações de retorno.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente",
+          "label": "Ministério da Saúde — Manejo do paciente com diarreia, avaliação do estado de hidratação"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/",
+          "label": "Ministério da Saúde — Doenças diarreicas agudas: Planos A/B/C"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 02:25:25.011181+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 136,
+      "slug": "pediatria-diarreia-aguda",
+      "title": "Diarreia aguda",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Diarreia aguda é aumento do número de evacuações e/ou perda de consistência, habitualmente com três ou mais episódios em 24 horas. Principal risco é desidratação. Conduta se baseia em sinais clínicos e Planos A/B/C do Ministério da Saúde, alimentação continuada e zinco nos menores de cinco anos; antibiótico é excepcional e dirigido.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Investigar número de evacuações, aspecto, muco/sangue, duração, febre, vômitos, contato com doentes, viagens e consumo de água/alimentos.",
+            "Verificar peso, sede, diurese, olhos, mucosas, perfusão, turgor, letargia e incapacidade de ingerir líquidos.",
+            "Considerar diagnósticos alternativos em dor focal intensa, distensão, sinais peritoneais ou sangue com toxicidade."
+          ],
+          "title": "Avaliação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar desidratação e classificar Plano A/B/C antes de escolher medicação; manter aleitamento e dieta habitual.",
+            "Ofertar SRO em pequenas quantidades frequentes; crianças sem desidratação seguem Plano A; desidratadas e estáveis recebem Plano B supervisionado.",
+            "Desidratação grave ou choque exige Plano C, expansão isotônica conforme algoritmo etário e encaminhamento hospitalar."
+          ],
+          "title": "Primeiras medidas"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Não pedir coprocultura/parasitológico rotineiramente em diarreia aquosa aguda autolimitada.",
+            "Investigar fezes/cultura em disenteria, suspeita de cólera/surto, diarreia persistente, imunossupressão ou doença grave segundo epidemiologia.",
+            "Eletrólitos, função renal e glicemia em desidratação grave, comorbidades ou distúrbios neurológicos."
+          ],
+          "title": "Quando solicitar exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Diarreia aguda sem desidratação",
+          "then": "Plano A: SRO/líquidos após cada evacuação, alimentação usual, zinco quando indicado e orientação de sinais de alerta."
+        },
+        {
+          "if": "Diarreia com desidratação, sem choque",
+          "then": "Plano B: SRO no serviço de saúde, oferta orientativa inicial de 50–100 mL/kg em 4–6 horas, reavaliando até remissão dos sinais."
+        },
+        {
+          "if": "Desidratação grave, choque ou incapacidade de beber",
+          "then": "Plano C: hidratação IV isotônica e vigilância/transferência urgente; reintroduzir SRO quando tolerado."
+        },
+        {
+          "if": "Diarreia sanguinolenta com comprometimento sistêmico, suspeita de cólera grave ou infecção invasiva",
+          "then": "Coletar exames apropriados e considerar antibiótico dirigido conforme idade, provável agente e resistência; evitar uso empírico indiscriminado."
+        },
+        {
+          "if": "Diarreia persistente ≥14 dias ou falha de recuperação",
+          "then": "Avaliar desnutrição, parasitoses, causas não infecciosas e necessidade de investigação adicional."
+        },
+        {
+          "if": "Diarreia aquosa com criança hidratada",
+          "then": "Plano A, alimentação habitual, aleitamento e SRO após perdas; orientar sinais de retorno."
+        },
+        {
+          "if": "Sinais de desidratação moderada sem choque",
+          "then": "Plano B na unidade, SRO supervisionada e reavaliação frequente."
+        },
+        {
+          "if": "Desidratação grave, incapacidade de beber ou choque",
+          "then": "Plano C com estabilização venosa e avaliação de eletrólitos conforme gravidade."
+        },
+        {
+          "if": "Sangue nas fezes ou febre alta persistente",
+          "then": "Investigar disenteria e complicações; antibiótico somente com indicação definida."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "SRO é tratamento essencial; não substituir por refrigerante/sucos concentrados ou soluções com excesso de açúcar/sódio.",
+            "Manter leite materno e alimentação apropriada; não impor jejum desnecessário.",
+            "Ministério da Saúde: zinco 10 mg/dia até 6 meses de idade; 20 mg/dia acima de 6 meses e abaixo de 5 anos, por 10–14 dias."
+          ],
+          "title": "Reidratação e nutrição"
+        },
+        {
+          "items": [
+            "Antibiótico apenas quando critério clínico/etiológico indica (por exemplo disenteria com comprometimento geral ou cólera grave), não para toda diarreia viral.",
+            "Não usar antidiarreicos que reduzam motilidade em crianças. Antiemético não é rotina; ondansetrona pode ser considerada em persistência de vômitos dificultando o Plano B, conforme idade e protocolo."
+          ],
+          "title": "Medicamentos: uso seletivo"
+        },
+        {
+          "items": [
+            "Zinco durante 10–14 dias conforme idade e recomendações do Ministério da Saúde.",
+            "Evitar antidiarreicos antimotilidade em crianças e antibiótico de rotina na diarreia viral."
+          ],
+          "title": "Condutas e critérios aprimorados"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Surto com vários casos, água suspeita ou cólera exige vigilância epidemiológica e eventual investigação de fezes.",
+            "Sangue nas fezes com dor intensa e palidez pode exigir investigação de STEC/SHU; avaliar hemograma, função renal e evitar antibiótico inadvertido quando suspeita de STEC.",
+            "Lactentes pequenos e desnutridos têm risco maior de agravamento e necessitam seguimento mais próximo."
+          ],
+          "title": "Vigilância e diferenciais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Retorno imediato se pouca urina, não aceita líquidos, sangue nas fezes, sonolência, piora da diarreia ou vômitos repetidos.",
+            "Reavaliar se não melhorar em dois dias ou evolução para quadro persistente.",
+            "Orientar lavagem das mãos, água tratada, preparo seguro de alimentos e vacinação contra rotavírus conforme calendário."
+          ],
+          "title": "Retorno"
+        },
+        {
+          "items": [
+            "Reavaliar hidratação e orientar retorno por sangue, vômitos repetidos, oligúria ou piora."
+          ],
+          "title": "Seguimento recomendado"
+        }
+      ],
+      "red_flags": [
+        "Sinais de choque ou desidratação grave.",
+        "Sangue nas fezes, febre alta/toxemia e dor abdominal intensa.",
+        "Oligúria e palidez após diarreia sanguinolenta, suspeita de SHU.",
+        "Vômitos persistentes que impedem reidratação.",
+        "Choque, sangue nas fezes com dor intensa, prostração ou suspeita de síndrome hemolítico-urêmica."
+      ],
+      "notification": {
+        "text": "Investigar e notificar surtos de diarreia e doenças específicas de notificação (por exemplo cólera) conforme fluxos de vigilância; registrar Plano A/B/C e resposta.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/",
+          "label": "Ministério da Saúde — Doenças diarreicas agudas: tratamento e Planos A/B/C"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-de-hidratacao-do-paciente-arquivo-com-marcas-de-corte",
+          "label": "Ministério da Saúde — Cartaz Manejo do Paciente com Diarreia"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 02:25:25.011181+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 137,
+      "slug": "pediatria-gastroenterite",
+      "title": "Gastroenterite",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Gastroenterite aguda pediátrica é geralmente viral e autolimitada; o principal risco é desidratação. O manejo prioriza reidratação oral, alimentação precoce e redução de intervenções desnecessárias.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Vômitos e diarreia de início agudo.",
+            "Avaliar sangue nas fezes, febre alta, dor focal e sinais de desidratação."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Classificar hidratação.",
+            "Oferecer solução de reidratação oral em pequenos volumes frequentes.",
+            "Manter aleitamento e dieta habitual conforme tolerância."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Sem exames em quadro leve típico.",
+            "Eletrólitos/glicemia se desidratação grave ou alteração neurológica."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Diarreia e vômitos sem sinais de desidratação",
+          "then": "Plano A do Ministério da Saúde: SRO/líquidos após perdas, alimentação habitual e aleitamento."
+        },
+        {
+          "if": "Desidratação leve/moderada, consciente e capaz de beber",
+          "then": "Plano B: solução de reidratação oral supervisionada, oferta fracionada e reavaliações frequentes."
+        },
+        {
+          "if": "Choque, desidratação grave ou impossibilidade persistente de ingerir",
+          "then": "Plano C: acesso IV/IO, cristaloide isotônico e monitorização; avaliar internação."
+        },
+        {
+          "if": "Vômitos persistentes que impedem SRO mas sem choque",
+          "then": "Considerar via nasogástrica para SRO ou antiemético em cenários selecionados e conforme idade/protocolo."
+        },
+        {
+          "if": "Sangue nas fezes, toxemia, suspeita de surto ou diarreia prolongada",
+          "then": "Exames/culturas dirigidos e tratamento etiológico; antibióticos não são rotina na gastroenterite viral."
+        },
+        {
+          "if": "Vômitos/diarreia com hidratação preservada",
+          "then": "Ofertar SRO fracionada, manter aleitamento e alimentação conforme aceitação."
+        },
+        {
+          "if": "Vômitos dificultam reidratação oral sem sinal cirúrgico",
+          "then": "Considerar antiemético apropriado à idade em ambiente de saúde e nova tentativa de SRO."
+        },
+        {
+          "if": "Desidratação moderada",
+          "then": "SRO na unidade ou por sonda quando indicada, com observação."
+        },
+        {
+          "if": "Choque, desidratação grave ou intolerância persistente",
+          "then": "Reposição IV e avaliação de eletrólitos, observando sinais de outro diagnóstico."
+        },
+        {
+          "if": "Hematochezia com cólicas intensas ou vômitos biliosos",
+          "then": "Investigar invaginação, obstrução ou disenteria; não assumir etiologia viral."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "SRO de baixa osmolaridade é base do tratamento; continuar alimentação, evitando bebidas muito açucaradas.",
+            "Zinco em menores de 5 anos conforme orientação do MS, por 10–14 dias nas faixas indicadas.",
+            "Antibióticos somente quando há suspeita/diagnóstico de infecção bacteriana com indicação; evitar antidiarreicos que reduzam motilidade."
+          ],
+          "title": "Terapia de suporte"
+        },
+        {
+          "items": [
+            "Antibiótico apenas para etiologias com indicação; reidratação é tratamento central.",
+            "Zinco conforme recomendações brasileiras para doença diarreica."
+          ],
+          "title": "Condutas e critérios aprimorados"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e orientar retorno por sinais de alarme."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Revisar estado de hidratação e orientar sinais: oligúria, sonolência, sangue nas fezes, recusa alimentar e piora de vômitos."
+          ],
+          "title": "Retorno"
+        },
+        {
+          "items": [
+            "Orientar preparo da SRO e sinais para retorno em 24–48 horas ou antes se piora."
+          ],
+          "title": "Seguimento recomendado"
+        }
+      ],
+      "red_flags": [
+        "Choque e hipoperfusão.",
+        "Vômitos biliosos ou dor localizada intensa.",
+        "Sangramento e sinais de síndrome hemolítico-urêmica.",
+        "Desidratação grave.",
+        "Oligúria, letargia, vômitos biliosos ou sangue nas fezes."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar critérios diagnósticos, tratamento e resposta.",
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/educacao-e-mobilizacao-em-saude/manejo-clinico-das-doencas-diarreicas-agudas.pdf/view",
+          "label": "Ministério da Saúde — Manejo clínico de DDA, atualizado 2026"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 138,
+      "slug": "pediatria-bronquiolite",
+      "title": "Bronquiolite",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Bronquiolite viral aguda é síndrome clínica, geralmente em menores de dois anos, com pródromo de vias aéreas superiores seguido de tosse, taquipneia, sibilos/estertores e aumento do trabalho respiratório. Manejo de suporte; reconhecer apneia, hipoxemia, desidratação e fadiga. Atualizar prevenção ao VSR segundo Ministério da Saúde 2026.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Lactente com coriza e tosse progredindo para taquipneia, retrações, dificuldade alimentar e sibilância/crepitações.",
+            "Avaliar idade, prematuridade, cardiopatia/pneumopatia, doença neuromuscular ou imunossupressão como fatores para evolução grave.",
+            "Diagnóstico diferencial: pneumonia bacteriana, corpo estranho, insuficiência cardíaca e asma/episódio recorrente de sibilância."
+          ],
+          "title": "Quadro típico"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar esforço respiratório, SpO2, pausas respiratórias, estado mental, hidratação e capacidade de mamar; aspirar secreções nasais suavemente quando obstrução comprometer alimentação/respiração.",
+            "Oferecer hidratação por via oral/fracionada ou sonda/IV conforme segurança; manter alimentação compatível com condição clínica.",
+            "Administrar oxigênio se hipoxemia persistente de acordo com limite e protocolo local; encaminhar para internação se dessaturação, apneia, esforço importante ou ingesta insuficiente."
+          ],
+          "title": "Avaliação e suporte"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Bronquiolite típica é diagnóstico clínico: não pedir rotineiramente RX de tórax, hemograma, PCR ou painel viral apenas para orientar tratamento.",
+            "RX e avaliação adicional quando apresentação atípica, suspeita de complicação ou diagnóstico alternativo; testes de vírus podem ser úteis no hospital para coorte/vigilância.",
+            "Monitorar oximetria com interpretação clínica; saturação isolada sem contexto não determina gravidade."
+          ],
+          "title": "Quando investigar"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Desconforto leve, alimentação preservada, sem apneia/hipoxemia e família apta ao cuidado",
+          "then": "Higiene nasal, hidratação, orientação de sinais de alerta e reavaliação conforme evolução."
+        },
+        {
+          "if": "Dessaturação persistente, retrações moderadas/importantes, má aceitação alimentar ou alto risco",
+          "then": "Observação/internação, suporte respiratório e nutricional, monitorização e reavaliações."
+        },
+        {
+          "if": "Apneia, fadiga, cianose, alteração de consciência ou insuficiência respiratória",
+          "then": "Equipe de emergência e suporte de via aérea/oxigenação, considerar alto fluxo/VNI ou ventilação invasiva conforme necessidade e recursos."
+        },
+        {
+          "if": "Suspeita documentada de coinfecção bacteriana",
+          "then": "Investigar o foco e usar antibiótico apenas se indicado; não tratar bronquiolite viral isolada com antibiótico."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Suporte respiratório conforme saturação e trabalho respiratório; higiene/desobstrução nasal suave; hidratação e nutrição adequadas.",
+            "Não prescrever rotineiramente broncodilatadores, corticosteroides sistêmicos/inalatórios ou antibióticos para bronquiolite típica; considerar diagnóstico alternativo quando fenótipo for recorrente ou atípico."
+          ],
+          "title": "Medidas efetivas"
+        },
+        {
+          "items": [
+            "Em piora respiratória, escalonar de oxigênio convencional para suporte avançado conforme resposta e equipe; evitar fadiga e atrasos de transferência."
+          ],
+          "title": "Gravidade"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Atualizar imunização da gestante e elegibilidade de anticorpos monoclonais do lactente conforme calendário e política de 2026 do Ministério da Saúde.",
+            "Prematuros e lactentes com comorbidades podem exigir limiar mais baixo de internação e maior vigilância.",
+            "Aplicar precauções de contato/gotículas conforme rotina local e orientar medidas de higiene domiciliar."
+          ],
+          "title": "Prevenção do VSR"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Alta quando estabilidade respiratória sustentada, alimentação e hidratação adequadas e cuidadores conseguem reconhecer piora.",
+            "Orientar retorno por apneia, cianose, retrações intensas, prostração, recusa alimentar/oligúria ou piora clínica.",
+            "Explicar que tosse pode persistir; evitar tabagismo passivo e reforçar calendário vacinal/proteção contra VSR."
+          ],
+          "title": "Alta segura"
+        }
+      ],
+      "red_flags": [
+        "Apneia, cianose, respiração irregular ou exaustão.",
+        "Hipoxemia persistente e esforço respiratório importante.",
+        "Recusa alimentar, desidratação ou oligúria.",
+        "Letargia, deterioração rápida, prematuridade/comorbidade com piora."
+      ],
+      "notification": {
+        "text": "Seguir vigilância e notificação de SRAG quando critérios forem preenchidos, inclusive hospitalização por síndrome respiratória aguda grave; registrar precauções e identificação viral conforme fluxos locais.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-de-manejo-clinico-bronquiolite-viral-aguda.pdf/view",
+          "label": "Ministério da Saúde — Guia de manejo clínico da bronquiolite viral aguda (2026)"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/b/bronquiolite",
+          "label": "Ministério da Saúde — Bronquiolite: diagnóstico, suporte e imunização"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 01:22:45.122888+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 139,
+      "slug": "pediatria-pneumonia-pediatrica",
+      "title": "Pneumonia pediátrica",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Pneumonia adquirida na comunidade em crianças é infecção aguda do parênquima pulmonar, geralmente diagnosticada clinicamente em casos não complicados. Taquipneia, esforço respiratório, hipoxemia e ausculta focal aumentam a probabilidade. Radiografia não é necessária rotineiramente em crianças ambulatoriais sem sinais de gravidade.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Febre, tosse, taquipneia, tiragens, gemência, dor torácica ou dificuldade para alimentar-se, conforme idade.",
+            "Hipoxemia, redução do murmúrio vesicular e estertores focais aumentam a probabilidade de pneumonia.",
+            "Lactentes pequenos podem apresentar apneia, recusa alimentar ou irritabilidade sem tosse exuberante."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar frequência respiratória por faixa etária, saturação, esforço respiratório, hidratação e perfusão.",
+            "Oferecer oxigênio se hipoxemia e suporte hídrico/nutricional conforme necessidade.",
+            "Antibiótico deve ser iniciado quando pneumonia bacteriana for provável, sem aguardar radiografia em quadro típico."
+          ],
+          "title": "Primeiros passos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Radiografia de tórax é indicada em hipoxemia, esforço respiratório importante, falha terapêutica, suspeita de complicação ou internação.",
+            "Hemograma, PCR/procalcitonina e hemocultura não são necessários rotineiramente em casos leves; considerar em doença grave ou complicada.",
+            "US pulmonar pode auxiliar em consolidação e derrame pleural quando disponível e com operador experiente."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Tosse, taquipneia por idade, crepitações e febre sem sinais de alarme",
+          "then": "Avaliar gravidade e oxigenação, diferenciar pneumonia viral de bacteriana; considerar tratamento ambulatorial com seguimento."
+        },
+        {
+          "if": "Sinais de pneumonia bacteriana comunitária e estabilidade",
+          "then": "Amoxicilina oral conforme peso/protocolo e contexto epidemiológico, reavaliando em 48–72 horas."
+        },
+        {
+          "if": "Hipoxemia, esforço respiratório importante, incapacidade de ingerir ou risco social",
+          "then": "Internar, ofertar oxigênio, hidratação e antimicrobiano se indicado pela etiologia."
+        },
+        {
+          "if": "Sepse, derrame pleural importante, pneumatoceles ou falha ao tratamento",
+          "then": "Investigar complicações, ultrassom torácico quando indicado, tratamento IV e avaliação pediátrica especializada."
+        },
+        {
+          "if": "Sibilância predominante e contexto viral",
+          "then": "Considerar bronquiolite/asma, evitando antibióticos para doença puramente viral."
+        },
+        {
+          "if": "Tosse, febre e taquipneia sem sinais de gravidade",
+          "then": "Avaliar saturação, esforço respiratório e sinais de pneumonia; manejo ambulatorial se hidratação/seguimento viáveis."
+        },
+        {
+          "if": "Pneumonia bacteriana comunitária provável sem gravidade",
+          "then": "Amoxicilina oral de primeira linha em criança elegível, dose/duração segundo idade e diretriz local; evitar antibiótico se quadro claramente viral."
+        },
+        {
+          "if": "Hipoxemia, tiragens importantes, incapacidade de beber ou toxemia",
+          "then": "Internação, oxigênio, hidratação cautelosa e antimicrobiano parenteral conforme idade/gravidade."
+        },
+        {
+          "if": "Febre prolongada, derrame, resposta insuficiente em 48–72h",
+          "then": "Investigar derrame pleural/empiema, resistência, pneumonia complicada e outras causas."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Pneumonia bacteriana não complicada em criança previamente saudável: amoxicilina é frequentemente primeira linha oral, ajustada a idade e resistência local.",
+            "Pneumonia grave: antibiótico IV selecionado por idade, vacinação e etiologia; suporte de oxigênio, hidratação e monitorização.",
+            "RX não é rotineiro em quadro ambulatorial leve; indicar em hipoxemia, internação, dúvida diagnóstica e complicação."
+          ],
+          "title": "Terapia baseada na gravidade"
+        },
+        {
+          "items": [
+            "A radiografia de tórax não é rotineira em criança estável com pneumonia não complicada; indicada quando hospitalização, hipoxemia, falha ou suspeita de complicação."
+          ],
+          "title": "Tratamento — revisão individual"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Menores de 3 meses, imunossuprimidos e crianças com cardiopatia/doença pulmonar crônica têm menor limiar para internação.",
+            "Derrame parapneumônico/empiema exige ultrassom e avaliação de drenagem conforme volume e repercussão.",
+            "Sibilância difusa em pré-escolar com quadro viral favorece diagnóstico alternativo."
+          ],
+          "title": "Situações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Esperar melhora clínica em 48–72 h; ausência de resposta exige reavaliação diagnóstica, adesão e complicações.",
+            "Radiografia de controle não é necessária rotineiramente após resolução clínica de pneumonia não complicada."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Retorno em 48–72 horas se tratado ambulatorialmente, antes se piora; revisar tosse persistente, febre, dispneia e estado nutricional."
+          ],
+          "title": "Acompanhamento"
+        },
+        {
+          "items": [
+            "Reavaliar clinicamente em 48–72 horas se não houver melhora, verificar respiração, alimentação e febre."
+          ],
+          "title": "Acompanhamento orientado"
+        }
+      ],
+      "red_flags": [
+        "SpO₂ persistentemente baixa, cianose e gemência.",
+        "Retrações intensas, apneia ou exaustão.",
+        "Suspeita de derrame/empiema ou sepse.",
+        "Ausência de melhora com tratamento apropriado.",
+        "Hipoxemia, apneia, choque, incapacidade de ingerir e derrame complicado."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar peso, frequência respiratória, saturação e critérios de internação.; Documentar reavaliação em 48–72 h e sinais de retorno.",
+        "items": [
+          "Registrar peso, frequência respiratória, saturação e critérios de internação.",
+          "Documentar reavaliação em 48–72 h e sinais de retorno."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.sbp.com.br/especiais/pediatria-para-familias/doencas/pneumonia/",
+          "label": "Sociedade Brasileira de Pediatria — Pneumonia"
+        },
+        {
+          "url": "https://www.who.int/publications/i/item/978-92-4-154837-3",
+          "label": "WHO — Pocket book of hospital care for children"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "amoxicilina",
+        "ceftriaxona"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:23:41.160392+00",
+      "image_assets": [
+        {
+          "alt": "Radiografia de tórax com consolidação em lobo inferior esquerdo por Mycoplasma pneumoniae",
+          "src": "https://wwwn.cdc.gov/phil///PHIL_Images/21492/21492_lores.jpg",
+          "kind": "xray",
+          "caption": "Pneumonia atípica por Mycoplasma — consolidação irregular em lobo inferior esquerdo",
+          "license": "Public domain / CDC PHIL",
+          "source_url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=21492",
+          "source_name": "CDC Public Health Image Library (PHIL) / Margaret Renz",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        },
+        {
+          "alt": "Radiografia AP de tórax com pneumonia em lobo superior direito",
+          "src": "https://wwwn.cdc.gov/phil///PHIL_Images/5802/5802_lores.jpg",
+          "kind": "xray",
+          "caption": "Pneumonia — acometimento do lobo superior direito",
+          "license": "Public domain / CDC PHIL",
+          "source_url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=5802",
+          "source_name": "CDC Public Health Image Library (PHIL) / Dr. Thomas Hooten",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        },
+        {
+          "alt": "Radiografia AP de tórax com pneumonia em lobo inferior esquerdo e consolidação inicial",
+          "src": "https://wwwn.cdc.gov/phil///PHIL_Images/19088/19088_lores.jpg",
+          "kind": "xray",
+          "caption": "Pneumonia — consolidação em lobo inferior esquerdo",
+          "license": "Public domain / CDC PHIL",
+          "source_url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=19088",
+          "source_name": "CDC Public Health Image Library (PHIL)",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "xray"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "RX de tórax em pneumonia pediátrica"
+    },
+    {
+      "id": 140,
+      "slug": "pediatria-crise-de-asma-pediatrica",
+      "title": "Crise de asma pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Exacerbação de asma: piora aguda/subaguda da dispneia, sibilância, tosse e limitação do fluxo aéreo. Priorizar gravidade clínica e oximetria; broncodilatador de ação rápida, corticoide sistêmico nas crises moderadas/graves e acompanhamento anti-inflamatório após alta. Condutas atualizadas pela GINA 2026, com distinção por idade.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Avaliar frequência respiratória, uso de músculos acessórios, capacidade de falar/mamar, agitação/sonolência, pulso, sibilos ou silêncio auscultatório, SpO₂ e resposta prévia.",
+            "Pesquisar fatores de risco: intubação prévia, internação em UTI, exacerbação recente, uso excessivo de SABA e ausência de terapia controladora.",
+            "Pensar em anafilaxia se sibilância súbita associada a exposição e urticária/hipotensão: nesse caso, adrenalina IM é prioritária."
+          ],
+          "title": "Gravidade clínica"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Monitorar trabalho respiratório e SpO₂; oxigênio se hipoxemia conforme idade e gravidade, evitando hiperóxia. Reavaliar após cada ciclo de broncodilatador.",
+            "Salbutamol com aerossol dosimetrado e espaçador, tipicamente 4–6 jatos em crise leve/moderada, ajustando idade e gravidade, podendo repetir a cada 20 minutos no início; nebulização se técnica inalatória inviável.",
+            "Adicionar brometo de ipratrópio nas crises moderadas/graves, especialmente resposta insuficiente ao salbutamol; iniciar corticoide sistêmico precocemente.",
+            "Sinais de insuficiência respiratória iminente: acionar equipe avançada/UTI e preparar suporte ventilatório."
+          ],
+          "title": "Primeira hora"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Em criança capaz, PFE ou espirometria antes/depois do tratamento se não atrasar cuidado; saturação contínua em crise grave.",
+            "Não solicitar radiografia, hemograma ou gasometria de rotina; gasometria se falência ventilatória ou deterioração, RX somente se suspeita de pneumonia, pneumotórax ou corpo estranho.",
+            "Reavaliar sinais clínicos em até 1 hora ou antes se piora; documentar frequência de necessidade de SABA."
+          ],
+          "title": "Avaliação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Exacerbação leve a moderada sem sinais de falência",
+          "then": "Salbutamol via espaçador, reavaliar resposta, considerar corticoide oral conforme gravidade; orientar controle da inflamação após melhora."
+        },
+        {
+          "if": "Crise moderada/grave, hipoxemia ou resposta inadequada",
+          "then": "Oxigênio conforme saturação, SABA repetido + ipratrópio na primeira hora + corticosteroide sistêmico e observação monitorizada."
+        },
+        {
+          "if": "Crise grave refratária após tratamento inicial",
+          "then": "Considerar sulfato de magnésio IV 40–50 mg/kg (máx. 2 g) em infusão lenta, especialmente ≥2 anos, com monitorização especializada e indicação de internação/UTI."
+        },
+        {
+          "if": "Sonolência, exaustão, tórax silencioso, cianose ou piora apesar da terapia",
+          "then": "Emergência respiratória: equipe de suporte avançado/UTI, preparo para ventilação assistida e evitar sedação desnecessária."
+        },
+        {
+          "if": "Melhora sustentada, sem hipoxemia e com espaçamento seguro de broncodilatador",
+          "then": "Alta com técnica de inalador verificada, medicação controladora contendo corticoide inalatório conforme faixa etária, plano escrito e retorno precoce."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Salbutamol 100 mcg/jato por aerossol + espaçador, em doses repetidas segundo gravidade e idade; administrar cada jato separadamente. Alternativa: nebulização com dose conforme peso/idade.",
+            "Ipratrópio inalatório adjuvante na primeira hora em crise moderada/grave; não substitui beta-2 agonista.",
+            "Prednisolona VO 1–2 mg/kg/dia por 3–5 dias para moderada/grave; limite 20 mg/dia se <2 anos, 30 mg/dia entre 2–5 anos e 40 mg/dia entre 6–11 anos, conforme GINA 2026. Alternativa é dexametasona de curta duração conforme idade/protocolo."
+          ],
+          "title": "Medicação inicial"
+        },
+        {
+          "items": [
+            "Em crise grave com resposta insuficiente após terapia inicial, sulfato de magnésio IV 40–50 mg/kg (máx. 2 g) em 20–60 minutos, com vigilância cardiovascular.",
+            "Evitar antibiótico sem infecção bacteriana comprovada ou suspeita; não usar sedativos de rotina.",
+            "Após melhora, revisar corticoterapia inalatória de manutenção, adesão, gatilhos e plano de ação personalizado."
+          ],
+          "title": "Refratariedade e prevenção"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Em menores de 5 anos, distinguir sibilância viral recorrente de bronquiolite em lactente, corpo estranho e anafilaxia.",
+            "As doses por idade e os critérios de alta são diferentes; não copiar automaticamente regimes de adultos ou de crianças maiores para lactentes.",
+            "Se anafilaxia, administrar adrenalina IM imediata conforme protocolo, independentemente de salbutamol."
+          ],
+          "title": "Diagnósticos relacionados"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Alta apenas com dispneia substancialmente melhor, saturação estável sem O₂ e acesso confiável ao tratamento/retorno.",
+            "Ensinar técnica com espaçador, revisar tratamento controlador contendo ICS, entregar plano escrito para piora e orientar retorno imediato se SABA necessário novamente em menos de 4 horas.",
+            "Revisão médica precoce, preferencialmente em 2–7 dias segundo gravidade e risco."
+          ],
+          "title": "Plano de alta"
+        }
+      ],
+      "red_flags": [
+        "Tórax silencioso, exaustão, alteração de consciência ou cianose.",
+        "SpO₂ persistentemente baixa, hipercapnia ou respiração ineficaz.",
+        "SABA necessário repetidamente em intervalos curtos e sem resposta.",
+        "História de intubação/UTI por asma e piora atual."
+      ],
+      "notification": {
+        "text": "Registrar classificação de gravidade, SpO₂, doses e resposta na primeira hora, indicação de internação e prescrição de terapia controladora para evitar recaída.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://ginasthma.org/2026-gina-summary-guide/",
+          "label": "GINA 2026 — Summary Guide for Asthma Management and Prevention"
+        },
+        {
+          "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+          "label": "GINA 2026 — Strategy Report, manejo das exacerbações pediátricas"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "sulfato de salbutamol",
+        "brometo de ipratrópio",
+        "prednisolona",
+        "dexametasona",
+        "sulfato de magnésio"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 141,
+      "slug": "pediatria-crupe",
+      "title": "Crupe",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Crupe (laringotraqueobronquite) é doença viral da via aérea superior, mais comum entre 6 meses e 3 anos, caracterizada por tosse metálica/“de cachorro”, disfonia e estridor inspiratório. O diagnóstico é clínico e a manipulação deve ser minimizada para evitar piora da obstrução.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Tosse ladrante, rouquidão e estridor inspiratório após sintomas virais.",
+            "Estridor apenas ao choro sugere quadro leve/moderado; estridor em repouso indica maior gravidade.",
+            "Sialorreia, posição em tripé, voz abafada, toxicidade ou ausência de tosse típica sugerem diagnóstico alternativo."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Manter a criança calma, preferencialmente no colo do cuidador.",
+            "Avaliar estridor em repouso, retrações, entrada de ar, cianose e nível de consciência.",
+            "Evitar exame de orofaringe invasivo se houver suspeita de epiglotite ou obstrução grave."
+          ],
+          "title": "Abordagem"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Crupe típico não necessita de exames laboratoriais nem radiografia.",
+            "Radiografia cervical pode mostrar estreitamento subglótico (sinal da torre), mas não deve atrasar tratamento e não é necessária de rotina.",
+            "Considerar investigação alternativa se apresentação for atípica ou não responder ao tratamento."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Tosse ladrante, disfonia e estridor apenas ao chorar, sem dificuldade importante",
+          "then": "Administrar dexametasona conforme protocolo, confortar criança e observar; evitar exame irritativo de orofaringe."
+        },
+        {
+          "if": "Estridor em repouso ou retrações moderadas/importantes",
+          "then": "Dexametasona e adrenalina nebulizada, oxigênio se necessário, monitorização e observação após efeito adrenérgico."
+        },
+        {
+          "if": "Cianose, exaustão, consciência alterada ou hipoxemia persistente",
+          "then": "Emergência de via aérea: equipe experiente, nebulização adrenérgica e preparo de ventilação/intubação se falha."
+        },
+        {
+          "if": "Sialorreia, disfagia intensa, febre alta e toxemia ou evolução atípica",
+          "then": "Investigar epiglotite, traqueíte bacteriana ou corpo estranho em ambiente com suporte de via aérea."
+        },
+        {
+          "if": "Resposta sustentada após observação e sem estridor em repouso",
+          "then": "Alta com orientações claras e retorno imediato se estridor, esforço ou dificuldade de beber."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Dexametasona VO/IM/IV em dose única (0,15–0,6 mg/kg segundo gravidade/protocolo) reduz reconsultas e hospitalização.",
+            "Adrenalina nebulizada (racêmica ou solução L) é indicada na crupe moderada/grave com estridor em repouso; observar após término de efeito.",
+            "Evitar antibióticos, umidificação por vapor quente e sedativos na crupe viral típica."
+          ],
+          "title": "Medidas eficazes"
+        },
+        {
+          "items": [
+            "Dexametasona em dose única para crupe conforme gravidade e protocolo (0,15–0,6 mg/kg); adicionar adrenalina nebulizada para estridor de repouso ou desconforto moderado/grave, com observação adequada após efeito. Evitar manobras que agitem criança com obstrução importante."
+          ],
+          "title": "Conduta terapêutica individualizada — complemento do lote de 40"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Epiglotite, traqueíte bacteriana, corpo estranho, anafilaxia e abscesso retrofaríngeo devem ser considerados em apresentações atípicas.",
+            "Menores de 6 meses ou crianças com episódios recorrentes podem necessitar investigação de anomalia de via aérea."
+          ],
+          "title": "Diagnósticos diferenciais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Pode ter alta quando estiver sem estridor em repouso, respirando confortavelmente e mantendo hidratação.",
+            "Orientar retorno imediato se reaparecer estridor em repouso, cianose, letargia ou dificuldade respiratória."
+          ],
+          "title": "Alta"
+        },
+        {
+          "items": [
+            "Alta após melhora sustentada e observação adequada quando recebeu adrenalina."
+          ],
+          "title": "Seguimento recomendado"
+        },
+        {
+          "items": [
+            "Observar após adrenalina nebulizada conforme protocolo e ausência de recorrência; orientar estridor em repouso, cianose, exaustão e dificuldade para beber."
+          ],
+          "title": "Orientações de alta"
+        }
+      ],
+      "red_flags": [
+        "Estridor em repouso persistente, hipoxemia.",
+        "Sialorreia importante e sinais de epiglotite.",
+        "Exaustão, alteração mental ou falência ventilatória."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar gravidade clínica antes e após tratamento.; Documentar horário das doses de adrenalina e período de observação.",
+        "items": [
+          "Registrar gravidade clínica antes e após tratamento.",
+          "Documentar horário das doses de adrenalina e período de observação."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.rch.org.au/clinicalguide/guideline_index/Croup_Laryngotracheobronchitis/",
+          "label": "Royal Children's Hospital Melbourne — Croup Clinical Practice Guideline, updated 2024"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "dexametasona",
+        "Adrenalina racêmica"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:23:41.160392+00",
+      "image_assets": [],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "xray"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "RX cervical com sinal da torre em crupe"
+    },
+    {
+      "id": 142,
+      "slug": "pediatria-coqueluche",
+      "title": "Coqueluche",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Coqueluche é infecção por Bordetella pertussis caracterizada por tosse prolongada e paroxística; lactentes podem apresentar apneia sem guincho clássico. Tratamento precoce reduz transmissão e pode reduzir gravidade.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Tosse paroxística, guincho inspiratório ou vômito pós-tosse.",
+            "Apneia/cianose em lactentes.",
+            "Contato com caso confirmado."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Isolamento respiratório por gotículas.",
+            "Coletar PCR/cultura conforme fase e disponibilidade.",
+            "Tratar precocemente grupos de alto risco mesmo antes do resultado quando suspeita forte."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "PCR de nasofaringe é útil nas primeiras semanas.",
+            "Hemograma pode mostrar linfocitose, especialmente em lactentes."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Tosse paroxística com guincho, vômito pós-tosse ou apneia no lactente",
+          "then": "Suspeitar coqueluche independentemente de febre e iniciar precauções por gotículas e avaliação de gravidade."
+        },
+        {
+          "if": "Lactente pequeno, apneias, cianose, dificuldade alimentar ou desconforto respiratório",
+          "then": "Internar/monitorizar, considerando risco elevado de descompensação e necessidade de suporte respiratório."
+        },
+        {
+          "if": "Caso suspeito com janela de benefício ou risco alto de transmissão",
+          "then": "Iniciar macrolídeo prontamente sem aguardar confirmação; azitromicina costuma ser opção inclusive nos lactentes jovens."
+        },
+        {
+          "if": "Contato domiciliar/alto risco de caso provável/confirmado",
+          "then": "Acionar vigilância para investigação e profilaxia de contatos elegíveis, independentemente de vacinação prévia."
+        },
+        {
+          "if": "Evolução apesar do antibiótico",
+          "then": "Explicar que tosse pode persistir várias semanas; reavaliar complicações como pneumonia e hipóxia."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Azitromicina é opção preferencial em várias faixas etárias, inclusive <1 mês quando indicada; dose/duração conforme peso/idade e protocolo; observar eventual estenose hipertrófica de piloro em RN.",
+            "Precauções por gotículas até cinco dias após início do antibiótico eficaz, ou conforme vigilância; notificar suspeitas.",
+            "Manter vacinação de gestante e crianças conforme PNI; profilaxia de contatos segundo risco."
+          ],
+          "title": "Antimicrobiano e isolamento"
+        },
+        {
+          "items": [
+            "Segundo Nota Técnica MS 165/2025, azitromicina é primeira escolha: menores de 6 meses recebem 10 mg/kg uma vez ao dia por 5 dias; 6 meses a <12 anos recebem 10 mg/kg no dia 1 e 5 mg/kg nos dias 2–5. Conferir peso, QT/interações e elegibilidade de quimioprofilaxia de contatos."
+          ],
+          "title": "Conduta terapêutica individualizada — complemento do lote de 40"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e orientar retorno por sinais de alarme."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Isolamento respiratório conforme recomendações e avaliação da vigilância; acompanhar apneia, alimentação e vacinação dos contatos."
+          ],
+          "title": "Reavaliação e segurança de seguimento"
+        },
+        {
+          "items": [
+            "Avaliar episódios de apneia, saturação, alimentação e risco de contatos vulneráveis; orientar retorno por cianose, pausa respiratória e recusa alimentar."
+          ],
+          "title": "Vigilância"
+        }
+      ],
+      "red_flags": [
+        "Apneia/cianose em lactente jovem.",
+        "Pneumonia, hipóxia ou perda de peso.",
+        "Tosse paroxística com exaustão ou síncope."
+      ],
+      "notification": {
+        "text": "Coqueluche é agravo de notificação compulsória imediata às secretarias estadual e municipal de saúde (até 24 horas), desde a suspeita, conforme lista nacional de 2026. Registrar no sistema de vigilância e avaliar contatos e profilaxia conforme orientações do Ministério da Saúde.",
+        "items": [
+          "Notificar caso suspeito de coqueluche imediatamente à vigilância estadual e municipal, em até 24 horas.",
+          "Registrar investigação e manejo de contatos no fluxo local."
+        ],
+        "required": true
+      },
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/pertussis/hcp/clinical-care/index.html",
+          "label": "CDC — Clinical Guidance for Pertussis (Coqueluche)"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/coqueluche/nota-tecnica-e-informativa/nota-tecnica-conjunta-no-165-2025-dpni-svsa-ms",
+          "label": "Fonte brasileira atual — revisão do protocolo"
+        },
+        {
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10175_26_01_2026.html",
+          "label": "Ministério da Saúde — Portaria GM/MS nº 10.175/2026, lista nacional de notificação compulsória"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "azitromicina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 143,
+      "slug": "pediatria-otite-media-aguda",
+      "title": "Otite média aguda",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Otite média aguda é infecção/inflamação aguda da orelha média. O diagnóstico é clínico e depende principalmente da otoscopia: abaulamento da membrana timpânica ou otorreia não explicada por otite externa são achados-chave. Eritema isolado não é suficiente.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Otalgia, irritabilidade, febre e sintomas de IVAS podem acompanhar o quadro, mas não estabelecem o diagnóstico sem achados otoscópicos.",
+            "Abaulamento moderado/importante da membrana timpânica ou nova otorreia não atribuída a otite externa confirma forte suspeita de OMA.",
+            "Abaulamento leve associado a otalgia recente (<48 h) ou eritema intenso também pode sustentar diagnóstico.",
+            "Ausência de efusão de orelha média torna OMA improvável."
+          ],
+          "title": "Diagnóstico"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar dor e tratar analgesia adequadamente.",
+            "Realizar otoscopia com boa visualização da membrana; remover cerume obstrutivo quando seguro.",
+            "Procurar sinais de mastoidite, complicações intracranianas, toxicidade sistêmica ou imunossupressão."
+          ],
+          "title": "Primeiros passos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Otoscopia pneumática e/ou timpanometria podem confirmar efusão quando a avaliação visual é duvidosa.",
+            "Exames laboratoriais e imagem não são de rotina em OMA não complicada.",
+            "TC/RM são reservadas para suspeita de mastoidite, complicações intracranianas ou diagnóstico alternativo grave."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Otalgia aguda com abaulamento de membrana timpânica ou otorreia não explicada por otite externa",
+          "then": "Diagnosticar OMA clínica/otoscópica, avaliando bilateralidade, intensidade e idade."
+        },
+        {
+          "if": "Menor de 6 meses, gravidade elevada, otorreia ou OMA bilateral em 6–23 meses",
+          "then": "Tratar com antibiótico e analgesia, segundo protocolo e fatores individuais."
+        },
+        {
+          "if": "Criança ≥2 anos, quadro leve, sem otorreia e retorno confiável",
+          "then": "Considerar observação por 48–72 horas com analgesia e prescrição de resgate conforme diretriz."
+        },
+        {
+          "if": "Falha clínica após 48–72 horas",
+          "then": "Reavaliar diagnóstico, adesão e complicações; trocar esquema conforme uso recente de amoxicilina e epidemiologia."
+        },
+        {
+          "if": "Proptose auricular, mastoide dolorosa ou sinais neurológicos",
+          "then": "Suspeitar mastoidite/complicação intracraniana e encaminhar urgência."
+        },
+        {
+          "if": "Otalgia e otoscopia com abaulamento da membrana e efusão",
+          "then": "Confirmar otite média aguda, diferenciar de otite externa/efusão sem infecção."
+        },
+        {
+          "if": "Sintomas leves e criança elegível para observação com retorno seguro",
+          "then": "Analgesia e reavaliação em 48–72 h; decidir antibiótico conforme idade, lateralidade e gravidade."
+        },
+        {
+          "if": "Dor intensa, febre alta, otorreia ou faixa etária com indicação",
+          "then": "Antibioticoterapia (frequentemente amoxicilina) adequada ao peso e epidemiologia."
+        },
+        {
+          "if": "Edema retroauricular, protrusão de pavilhão, paralisia facial ou sinais meníngeos",
+          "then": "Suspeitar mastoidite/complicação e encaminhar urgência."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Analgesia adequada é essencial, mesmo quando há antibiótico.",
+            "Amoxicilina costuma ser primeira linha; amoxicilina/clavulanato em situações selecionadas (conjuntivite purulenta associada, amoxicilina recente ou falha). Doses/duração dependem de idade e gravidade.",
+            "Não usar descongestionantes/anti-histamínicos rotineiramente como tratamento da OMA."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Analgesia para todos; antibiótico não é automático em otite leve elegível para observação."
+          ],
+          "title": "Aprimoramento de condutas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Alergia a penicilina exige diferenciação entre reação imediata grave e não grave para escolha de alternativa.",
+            "OMA recorrente ou efusão persistente pode requerer avaliação otorrinolaringológica e auditiva.",
+            "Perfuração espontânea costuma aliviar dor, mas otorreia persistente exige reavaliação."
+          ],
+          "title": "Situações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar em 48–72 h se não houver melhora clínica.",
+            "Considerar avaliação auditiva em efusão persistente, atraso de fala/linguagem ou fatores de risco para perda auditiva."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Orientar retorno se febre/otalgia intensas persistirem, otorreia, piora da audição ou sinais mastoideos; considerar seguimento de efusão persistente."
+          ],
+          "title": "Revisão"
+        },
+        {
+          "items": [
+            "Reavaliar se falha de melhora em 48–72 h e monitorar efusão persistente/audição."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Dor mastoidea, edema retroauricular ou proptose da orelha.",
+        "Paralisia facial, vertigem, sinais neurológicos.",
+        "RN/lactente muito jovem com quadro sistêmico.",
+        "Mastoidite, sinais neurológicos, edema retroauricular ou toxicidade."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar lateralidade, grau de abaulamento, presença de efusão/otorréia e estratégia de observação versus antibiótico.; Documentar orientação de retorno em 48–72 h se não houver melhora.",
+        "items": [
+          "Registrar lateralidade, grau de abaulamento, presença de efusão/otorréia e estratégia de observação versus antibiótico.",
+          "Documentar orientação de retorno em 48–72 h se não houver melhora."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/131/3/e964/30912/",
+          "label": "American Academy of Pediatrics — The Diagnosis and Management of Acute Otitis Media"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470332/",
+          "label": "NCBI/StatPearls — Acute Otitis Media, updated 2026"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "amoxicilina",
+        "amoxicilina + clavulanato de potássio"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:23:41.160392+00",
+      "image_assets": [
+        {
+          "alt": "Otoscopia de otite média aguda com membrana timpânica hiperemiada e abaulada",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Otitis%20media%20grippe.jpg",
+          "kind": "otoscopy",
+          "max_kb": 100,
+          "caption": "Otite média aguda — membrana timpânica inflamada e abaulada",
+          "license": "CC BY-SA 3.0 / GFDL",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Otitis_media_grippe.jpg",
+          "source_name": "B. Welleschik / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "otoscopy"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "Otoscopia de otite média aguda"
+    },
+    {
+      "id": 144,
+      "slug": "pediatria-sinusite-bacteriana",
+      "title": "Sinusite bacteriana",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Sinusite bacteriana aguda em crianças é sugerida por sintomas persistentes sem melhora por mais de 10 dias, piora após melhora inicial ou início grave com febre alta e secreção purulenta por pelo menos 3 dias.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Secreção nasal/tosse >10 dias sem melhora.",
+            "Piora bifásica.",
+            "Febre ≥39°C com secreção purulenta por ≥3 dias."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Diferenciar de resfriado viral.",
+            "Pesquisar edema orbitário, dor ocular e sinais neurológicos."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Diagnóstico é clínico.",
+            "Imagem não é indicada em sinusite não complicada.",
+            "TC/RM se suspeita de complicação orbitária/intracraniana."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sintomas nasais/tosse diurna >10 dias sem melhora",
+          "then": "Sinusite bacteriana persistente possível; considerar antibiótico ou observação breve com seguimento confiável."
+        },
+        {
+          "if": "Início grave com febre ≥39°C e secreção purulenta ≥3 dias",
+          "then": "Tratar como sinusite bacteriana grave e avaliar complicações."
+        },
+        {
+          "if": "Piora bifásica após melhora inicial de IVAS viral",
+          "then": "Sinusite bacteriana provável; iniciar antibiótico conforme protocolo."
+        },
+        {
+          "if": "Edema periorbitário, proptose, diplopia, dor ocular ou déficit neurológico",
+          "then": "Urgência para avaliar celulite orbitária/complicação intracraniana com imagem e equipe especializada."
+        },
+        {
+          "if": "Falha após 48–72 horas de tratamento",
+          "then": "Reavaliar diagnóstico, adesão e resistência bacteriana; ajustar terapêutica e investigar complicações."
+        },
+        {
+          "if": "Sintomas nasais/tosse persistem >10 dias sem melhora",
+          "then": "Considerar rinossinusite bacteriana, diferenciar de rinite e virose; observação curta pode ser apropriada em quadros não graves."
+        },
+        {
+          "if": "Piora após melhora inicial (dupla piora)",
+          "then": "Diagnóstico bacteriano mais provável; avaliar antibioticoterapia e complicações."
+        },
+        {
+          "if": "Febre ≥39°C e secreção purulenta por pelo menos 3 dias consecutivos",
+          "then": "Tratar como apresentação grave, considerar amoxicilina-clavulanato segundo idade/risco e reavaliar."
+        },
+        {
+          "if": "Edema periorbitário, proptose, alteração visual, cefaleia intensa ou sinais neurológicos",
+          "then": "Emergência para imagem e avaliação oftalmo/otorrino; suspeita de complicação orbital/intracraniana."
+        },
+        {
+          "if": "Ausência de melhora após 72 horas de tratamento adequado",
+          "then": "Reavaliar diagnóstico, adesão, resistência e complicações."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Amoxicilina ou amoxicilina/clavulanato costuma ser primeira linha, ajustada por risco de resistência, idade e gravidade; evitar macrolídeo empírico onde resistência é elevada.",
+            "Lavagem nasal salina e analgesia conforme desconforto; imagem não recomendada na sinusite simples.",
+            "Observação breve pode ser opção em quadros persistentes não graves, com retorno garantido."
+          ],
+          "title": "Antibiótico e suporte"
+        },
+        {
+          "items": [
+            "Não prescrever antibiótico para coriza purulenta isolada em resfriado com menos de 10 dias; evitar imagem rotineira na forma não complicada."
+          ],
+          "title": "Conduta operacional aprimorada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e orientar retorno por sinais de alarme."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Orientar retorno por piora após melhora, edema ocular, febre persistente ou dor facial intensa; avaliar alergia/rinite coexistente."
+          ],
+          "title": "Critérios de retorno"
+        },
+        {
+          "items": [
+            "Reavaliar em 48–72 horas se não houver melhora e instruir retorno por sinais orbitais/neurológicos."
+          ],
+          "title": "Reavaliação dirigida"
+        }
+      ],
+      "red_flags": [
+        "Proptose, alteração visual ou dor com movimento ocular.",
+        "Alteração mental, rigidez de nuca, déficit focal.",
+        "Edema periorbitário importante ou sinais de abscesso.",
+        "Proptose, diplopia, alteração visual, edema palpebral importante ou meningismo."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar critérios diagnósticos, tratamento e resposta.",
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/132/1/e262/31288/Clinical-Practice-Guideline-for-the-Diagnosis",
+          "label": "AAP — Diretriz para diagnóstico e tratamento da sinusite bacteriana aguda pediátrica"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "amoxicilina",
+        "amoxicilina + clavulanato de potássio"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 145,
+      "slug": "pediatria-faringoamigdalite",
+      "title": "Faringoamigdalite",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Faringoamigdalite pediátrica é majoritariamente viral; Streptococcus do grupo A deve ser confirmado por teste quando não há sinais virais claros, especialmente em crianças ≥3 anos.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Início súbito, febre, odinofagia, exsudato, petéquias palatais e adenopatia cervical anterior.",
+            "Tosse, coriza, rouquidão e úlceras orais favorecem etiologia viral."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Não testar quando quadro é claramente viral.",
+            "Realizar teste rápido ou cultura quando GAS é possível."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Teste rápido positivo confirma GAS.",
+            "Em crianças ≥3 anos, teste rápido negativo deve ser confirmado por cultura."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Tosse, coriza, conjuntivite, rouquidão ou estomatite com odinofagia",
+          "then": "Provável etiologia viral: cuidado de suporte, sem antibiótico ou teste para estreptococo de rotina."
+        },
+        {
+          "if": "Escolar/adolescente com febre, exsudato, linfonodos cervicais anteriores dolorosos e sem sinais virais",
+          "then": "Investigar estreptococo A com teste rápido/cultura de orofaringe conforme disponibilidade e epidemiologia."
+        },
+        {
+          "if": "Teste rápido para estreptococo A positivo",
+          "then": "Iniciar penicilina ou amoxicilina conforme peso/alergia e protocolo; tratamento visa prevenir complicações."
+        },
+        {
+          "if": "Teste rápido negativo em criança ≥3 anos com suspeita clínica significativa",
+          "then": "Considerar cultura confirmatória antes de excluir estreptococo, conforme diretriz."
+        },
+        {
+          "if": "Estridor, trismo, voz abafada, sialorreia ou desvio de úvula",
+          "then": "Suspeitar abscesso peritonsilar/retrofaríngeo ou obstrução: avaliação hospitalar urgente."
+        },
+        {
+          "if": "Tosse, coriza, conjuntivite ou rouquidão",
+          "then": "Quadro provavelmente viral: analgesia e hidratação, sem antibiótico desnecessário."
+        },
+        {
+          "if": "Febre, exsudato e adenopatia cervical anterior dolorosa sem sintomas virais em criança escolar",
+          "then": "Realizar teste rápido para estreptococo grupo A e cultura quando indicada pelo resultado/contexto."
+        },
+        {
+          "if": "Infecção estreptocócica confirmada",
+          "then": "Amoxicilina ou penicilina conforme peso, alergia e protocolo local."
+        },
+        {
+          "if": "Trismo, voz abafada, desvio da úvula ou sialorreia",
+          "then": "Suspeita de abscesso ou ameaça à via aérea: emergência otorrinolaringológica."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Faringite viral: analgesia, hidratação e medidas de conforto; não prescrever antibiótico por exsudato isolado.",
+            "Estreptococo A confirmado: penicilina V/benzatina ou amoxicilina por esquema completo (usualmente 10 dias para agentes orais), verificando alergia.",
+            "Não utilizar corticoide sistematicamente em faringite não complicada; complicações supurativas requerem drenagem/ATB específico."
+          ],
+          "title": "Tratamento dirigido"
+        },
+        {
+          "items": [
+            "Não prescrever antibiótico por exsudato isolado; vírus e mononucleose podem produzir mesmo achado.",
+            "Revisar sinais de gravidade e capacidade de hidratar."
+          ],
+          "title": "Condutas e critérios aprimorados"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e orientar retorno por sinais de alarme."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Retorno se incapacidade de ingerir, dispneia, piora unilateral ou febre persistente; após antibiótico eficaz, afastamento de escola conforme normas locais e ausência de febre."
+          ],
+          "title": "Orientações"
+        },
+        {
+          "items": [
+            "Reavaliar febre/dor persistentes após 48–72 horas ou piora deglutitória."
+          ],
+          "title": "Seguimento recomendado"
+        }
+      ],
+      "red_flags": [
+        "Sialorreia, trismo, voz abafada e estridor.",
+        "Asimetria amigdaliana importante ou edema cervical.",
+        "Desidratação significativa, toxicidade ou imunossupressão.",
+        "Estridor, desidratação, trismo ou tumefação cervical progressiva."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar critérios diagnósticos, tratamento e resposta.",
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html",
+          "label": "CDC — Clinical Guidance for Group A Streptococcal Pharyngitis"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "amoxicilina",
+        "benzilpenicilina benzatina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    }
+  ]
+}
