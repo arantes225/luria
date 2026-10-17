@@ -1,0 +1,1076 @@
+import { saveBook } from './bloco-02-utils.mjs';
+
+const book = {
+  slug: 'alimentacao-complementar',
+  title: 'Alimentação Complementar',
+  area: 'Pediatria',
+  materia: 'Nutrologia Pediátrica e Puericultura',
+  description:
+    'Livro-texto avançado de Nutrologia Pediátrica e Puericultura sobre Alimentação Complementar: fisiologia digestiva, renal e neuromotora aos 6 meses, programação metabólica nos primeiros 1.000 dias (DOHaD), os 12 Passos do Guia Alimentar do Ministério da Saúde, Classificação NOVA, esquema de introdução alimentar, biodisponibilidade do ferro, evolução de consistências, métodos responsivo/BLW/BLISS, janela imunológica de alérgenos (estudos LEAP e EAT), alimentos proibidos, conduta na criança não amamentada e suplementação profilática de micronutrientes (SBP e PNSF/MS).',
+  sections: [
+    {
+      id: 'bases-fisiologicas-prontidao-dohad',
+      title: '1. Bases Fisiológicas, Maturacionais e Programação Metabólica (Primeiros 1.000 Dias)',
+      body_html: `
+<h3>Conceito de Alimentação Complementar Oportuna e Programação Metabólica (DOHaD)</h3>
+<p>Define-se <strong>alimentação complementar (AC)</strong> como o conjunto de todos os alimentos sólidos, semissólidos ou líquidos (exceto medicamentos e suplementos vitamínicos/minerais) oferecidos ao lactente a partir do sexto mês de vida completo (180 dias), em adição ao leite materno — e não em substituição a ele. O termo "desmame", historicamente utilizado na literatura pediátrica do século XX para designar o início das papas, foi proscrito pela Organização Mundial da Saúde (OMS), pelo Ministério da Saúde (MS) e pela Sociedade Brasileira de Pediatria (SBP), pois induzia mães e profissionais de saúde à falsa percepção de que a entrada dos alimentos sólidos tinha por objetivo interromper a lactação. Ao contrário, o leite materno permanece como importante fonte calórica, proteica, imunológica e afetiva até os 2 anos de idade ou mais.</p>
+<p>O início da alimentação complementar insere-se no centro da janela crítica dos <strong>Primeiros 1.000 Dias de Vida</strong> — período que compreende os 270 dias da gestação somados aos 365 dias do primeiro ano e aos 365 dias do segundo ano pós-natal. Sob o prisma da teoria <em>Developmental Origins of Health and Disease</em> (DOHaD, ou Origens Desenvolvimentistas da Saúde e da Doença, formulada a partir dos estudos epidemiológicos de David Barker), estímulos nutricionais, hormonais e microbiológicos recebidos nessa janela exercem <strong>modulações epigenéticas duradouras</strong> (metilação de ilhas CpG do DNA, acetilação/desacetilação de histonas e expressão de microRNAs não codificantes) que programam o número de néfrons, a massa de células beta pancreáticas, a hiperplasia adipocitária, a sensibilidade hipotalâmica à leptina/insulina e a arquitetura da microbiota intestinal para toda a vida adulta.</p>
+<p>A partir do sexto mês de vida, o leite materno exclusivo — embora impecável para sustentar a velocidade de crescimento dos primeiros 180 dias — passa a apresentar uma <strong>lacuna energética e de micronutrientes</strong> (especialmente ferro, zinco, vitamina A e determinadas vitaminas do complexo B) frente à demanda metabólica crescente do lactente. Estima-se que as reservas hepáticas de ferro acumuladas no terceiro trimestre gestacional se esgotem entre o 4º e o 6º mês no recém-nascido a termo de peso adequado. Entretanto, antecipar a introdução de sólidos para antes dos 6 meses completos não traz vantagens ao crescimento pondero-estatural e acarreta riscos documentados: substituição de calorias de alta biodisponibilidade do leite humano por papas de baixa densidade energética ou caldos ralos, maior incidência de diarreia infecciosa por contaminação de utensílios, sobrecarga renal de solutos, maior risco de sensibilização alérgica ou obesidade futura, e encurtamento precoce da duração total do aleitamento materno (pela redução da sucção mamária e consequente queda do estímulo neuroendócrino de prolactina e ocitocina).</p>
+
+<h3>Maturação da Função Renal e Carga Renal Potencial de Solutos (CRPS)</h3>
+<p>A transição do aleitamento exclusivo para a alimentação complementar exige que os rins do lactente sejam capazes de excretar os produtos nitrogenados do catabolismo proteico (ureia) e os eletrólitos excedentes (sódio, potássio, cloro e fósforo) sem esgotar a água corporal total. A <strong>Carga Renal Potencial de Solutos (CRPS)</strong>, expressa em miliosmóis por litro (mOsm/L) ou por dia, pode ser estimada na prática nutrológica pela fórmula clássica de Ziegler e Fomon: <code>CRPS (mOsm/L) = [Proteína (g/L) × 4] + Na (mEq/L) + K (mEq/L) + Cl (mEq/L) + P (mg/L ÷ 31)</code>, em que cada grama de proteína dietética gera aproximadamente 4 a 5,7 mOsm de ureia para excreção urinária.</p>
+<p>Ao nascimento, a taxa de filtração glomerular (TFG) do neonato a termo situa-se em torno de 20 a 30 mL/min/1,73 m² (apenas 20% a 25% da taxa do adulto corrigida pela superfície corporal), devido à elevada resistência vascular renal e à menor superfície capilar glomerular. Além disso, as alças de Henle justamedulares ainda são curtas, o gradiente osmótico corticomedular de ureia e cloreto de sódio é reduzido e os túbulos coletores exibem menor sensibilidade dos receptores V2 à vasopressina (ADH), limitando a expressão luminal de aquaporina-2. Por conseguinte, a capacidade máxima de concentração urinária de um recém-nascido é de apenas <strong>600 a 700 mOsm/L</strong>, enquanto o adulto saudável concentra a urina até 1.200–1.400 mOsm/L.</p>
+<p>O leite humano maduro é perfeitamente adaptado a essa imaturidade nefrítica, possuindo apenas 0,9 a 1,1 g/100 mL de proteínas e baixos teores de sódio (7 mEq/L), cloro (11 mEq/L) e fósforo, resultando em uma CRPS extremamente baixa, de cerca de <strong>75 a 93 mOsm/L</strong>. Em contrapartida, o leite de vaca integral in natura contém 3,2 a 3,5 g/100 mL de proteínas e elevados níveis de sódio (22 mEq/L), potássio (35 mEq/L), cloro (29 mEq/L) e fósforo, gerando uma CRPS de <strong>220 a 308 mOsm/L</strong> — mais que o triplo do leite materno. Apenas em torno do <strong>5º ao 6º mês de vida</strong> a TFG alcança 60% a 80% dos valores adultos, a alça de Henle se aprofunda na medula interna e a capacidade de concentração urinária atinge cerca de 1.000 mOsm/L, conferindo margem de segurança hídrica para processar a maior carga de solutos das refeições complementares e tolerar variações na oferta de água livre, especialmente diante de perdas insensíveis aumentadas (febre, taquipneia ou diarreia aguda).</p>
+
+<h3>Maturação Digestiva, Enzimática e de Barreira Mucosa Intestinal</h3>
+<p>O trato gastrointestinal humano atravessa profundas transformações ontogenéticas durante o primeiro semestre pós-natal para tornar-se apto à digestão de macromoléculas complexas (amido vegetal, proteínas miofibrilares e triglicerídeos de cadeia longa não emulsificados pelos glóbulos lipídicos do leite materno):</p>
+<ul>
+  <li><strong>Digestão de carboidratos complexos (amido):</strong> A lactase da borda em escova dos enterócitos jejunais encontra-se plenamente ativa no neonato a termo (tendo atingido seu pico no final do terceiro trimestre gestacional), assim como as dissacaridases sacarase-isomaltase e glicoamilase mucosa. Todavia, a <strong>alfa-amilase pancreática</strong> é praticamente indetectável ao nascimento e permanece em concentrações muito baixas durante os primeiros 3 a 4 meses de vida (quando a digestão de oligossacarídeos e pequenos polímeros de glicose depende da amilase salivar, da amilase presente no próprio leite materno e da glicoamilase da borda em escova). Apenas por volta do <strong>6º mês de vida</strong> a secreção exócrina acinar de amilase pancreática atinge níveis funcionais suficientes para hidrolisar com eficiência grandes quantidades de amilose e amilopectina provenientes de cereais, raízes e tubérculos sem causar fermentação colônica excessiva, distensão abdominal e diarreia osmótica.</li>
+  <li><strong>Digestão proteica:</strong> A secreção gástrica de ácido clorídrico pelas células parietais e de pepsinogênio pelas células principais aumenta progressivamente nos primeiros meses. No lactente jovem em aleitamento exclusivo, o pH gástrico pós-prandial é relativamente elevado (pH 3,5 a 5,0), o que preserva a integridade funcional das imunoglobulinas (IgA secretora), da lactoferrina e da lisozima do leite materno. Aos 6 meses, a acidez gástrica basal e estimulada e a atividade das endopeptidases pancreáticas (tripsina, quimotripsina, elastase) e exopeptidases (carboxipeptidases A e B), ativadas pela enteroquinase duodenal, já permitem a clivagem completa de proteínas fibrilares densas (actina, miosina e colágeno das carnes) em dipeptídeos, tripeptídeos e aminoácidos livres absorvíveis pelo cotransportador PEPT1.</li>
+  <li><strong>Digestão e absorção lipídica:</strong> Nos primeiros meses, a lipase pancreática dependente de colipase e o pool intraluminal de sais biliares conjugados (ácidos cólico e quenodesoxicólico conjugados com glicina e taurina) são reduzidos, situando-se frequentemente próximos da concentração micelar crítica. A digestão das gorduras no primeiro semestre só é altamente eficiente (absorção &gt;90%) graças à <strong>lipase lingual/gástrica</strong> (que hidrolisa ácidos graxos na posição <em>sn-3</em> sem exigir sais biliares) e, sobretudo, à <strong>lipase dependente de sais biliares (BSSL)</strong> presente no próprio leite humano, somada à estrutura nativa do glóbulo de gordura do leite materno (com ácido palmítico esterificado preferencialmente na posição central <em>sn-2</em>, evitando a formação de sabões insolúveis de palmitato de cálcio no lúmen intestinal). Aos 6 meses, a síntese hepática de ácidos biliares, a circulação entero-hepática ileal e a secreção de lipase pancreática amadurecem, permitindo emulsificar e digerir lipídeos de fontes vegetais e animais não lácteas.</li>
+  <li><strong>Fechamento da barreira mucosa intestinal (<em>gut closure</em>):</strong> Nos primeiros meses de vida, o epitélio intestinal exibe maior permeabilidade paracelular devido à imaturidade relativa das proteínas de junção firme (<em>tight junctions</em>, como claudinas, ocludinas e zônula de oclusão ZO-1), menor espessura da camada de muco secretada pelas células caliciformes (mucina MUC2) e endocitose transcelular facilitada de macromoléculas intactas. O leite materno promove a maturação trófica dessa barreira por meio do fator de crescimento epidérmico (EGF), TGF-beta, glutamina, lactoferrina e oligossacarídeos do leite humano (HMOs), que estimulam a proliferação de <em>Bifidobacterium infantis</em> produtoras de ácidos graxos de cadeia curta (acetato e butirato). Aos 6 meses, a barreira mucosa encontra-se estruturalmente consolidada e revestida por IgA secretora dimérica (sIgA), impedindo a translocação maciça de macromoléculas antigênicas intactas e de patógenos enteroinvasivos.</li>
+</ul>
+
+<h3>Maturação Imunológica e Indução de Tolerância Oral pelo GALT</h3>
+<p>Do ponto de vista imunológico, a introdução alimentar representa o maior desafio antigênico exógeno da vida pós-natal. O tecido linfoide associado ao intestino (<strong>GALT</strong> — <em>Gut-Associated Lymphoid Tissue</em>, composto pelas placas de Peyer, folículos linfoides isolados, linfonodos mesentéricos e linfócitos intraepiteliais e da lâmina própria) precisa distinguir proteínas alimentares inócuas e comensais simbióticos de enteropatógenos invasores. O estado fisiológico padrão de resposta do GALT maduro a antígenos proteicos ingeridos por via enteral denomina-se <strong>tolerância oral</strong>.</p>
+<p>Quando antígenos alimentares atravessam o epitélio intestinal aos 6 meses (via células M das placas de Peyer, projeções transepiteliais de células dendríticas ou transporte pelas células caliciformes), eles são capturados por uma subpopulação especializada de <strong>células dendríticas CD103+</strong> residentes na lâmina própria. Na presença de ácido retinoico (derivado da vitamina A) e da citocina imunorreguladora <strong>TGF-beta</strong> (abundante no leite materno e produzida pelo epitélio intestinal saudável), essas células dendríticas CD103+ migram para os linfonodos mesentéricos e apresentam o peptídeo alimentar aos linfócitos T CD4+ virgens (<em>naïve</em>), induzindo sua diferenciação em <strong>células T reguladoras induzidas (iTreg) CD4+ CD25+ FoxP3+</strong> e células Th3 produtoras de <strong>IL-10 e TGF-beta</strong>. Esse microambiente regulatório suprime ativamente o desvio para o perfil Th2 (produtor de IL-4, IL-5 e IL-13) e inibe a troca de classe (<em>class switching</em>) dos linfócitos B para imunoglobulina E (IgE), promovendo, em vez disso, a síntese de IgA secretora e IgG4 bloqueadora. A maturação desse eixo imunológico entre o 4º e o 6º mês fundamenta o conceito moderno de janela imunológica para introdução de alimentos potencialmente alergênicos.</p>
+
+<h3>Maturação Neuromotora e Sinais de Prontidão para Alimentação Complementar</h3>
+<p>A deglutição segura de alimentos pastosos e sólidos depende da transição de um padrão motor reflexo e subcortical (sucção-deglutição coordenada com a respiração, mediada por geradores centrais de padrão no tronco encefálico e pelos nervos cranianos V, VII, IX, X e XII) para um padrão motor <strong>voluntário, corticalizado e orofaríngeo coordenado</strong>. A mielinização craniocaudal e próximo-distal do sistema nervoso central atinge, por volta do 6º mês de vida, marcos neurodesenvolvimentais indispensáveis conhecidos como <strong>sinais de prontidão neuromotora</strong>:</p>
+<ol>
+  <li><strong>Sustentação cefálica plena e estabilidade axial do tronco (sentar com mínimo ou nenhum apoio):</strong> Aos 6 meses, o lactente mantém a cabeça firme e alinhada à linha média em qualquer posição e consegue permanecer sentado no cadeirão com apoio lombar/pélvico mínimo, mantendo a caixa torácica expandida e a via aérea superior retificada. Tentar alimentar com colher ou pedaços uma criança hipotônica ou que ainda tomba o tronco lateralmente ou flete o pescoço sobre o tórax desalinha o eixo faringolaríngeo e multiplica o risco de penetração laríngea e broncoaspiração.</li>
+  <li><strong>Atenuação ou desaparecimento do reflexo de protrusão (extrusão) da língua:</strong> Presente fisiologicamente desde o nascimento até cerca do 4º ao 5º mês de vida, o reflexo de extrusão consiste na projeção anterior automática da língua sempre que um objeto sólido ou colher toca o lábio inferior ou o terço anterior da língua — um mecanismo evolutivo de proteção contra o engasgo enquanto o lactente só sabe sugar líquidos. Caso uma família tente introduzir papas aos 3 ou 4 meses, o bebê empurrará a comida para fora da boca com a língua; os cuidadores frequentemente interpretam esse reflexo motor fisiológico de forma equivocada como "rejeição ao sabor da comida". Aos 6 meses, o reflexo de extrusão desaparece e a língua adquire movimentação anteroposterior e início de lateralização para conduzir o bolo alimentar ao palato posterior e à faringe.</li>
+  <li><strong>Coordenação mão-olho-boca e preensão palmar voluntária:</strong> O desaparecimento do reflexo de preensão palmar tônica (que ocorre em torno do 3º–4º mês) dá lugar à preensão voluntária cubitopalmar e palmar global aos 5–6 meses. O lactente enxerga o alimento, estende o membro superior intencionalmente, segura-o com a palma da mão e o conduz com precisão até a cavidade oral.</li>
+  <li><strong>Interesse ativo pelo alimento e pelo ato de comer da família:</strong> O lactente acompanha visualmente o trajeto do garfo dos cuidadores, abre a boca ao ver a colher se aproximar, inclina o tronco para a frente em direção ao prato e tenta alcançar os alimentos na mesa.</li>
+</ol>
+
+<blockquote>
+<strong>Regra de Ouro para o Prematuro (Idade Gestacional &lt; 37 semanas):</strong> Na avaliação da prontidão neuromotora para o início da alimentação complementar em recém-nascidos pré-termo (RNPT), deve-se obrigatoriamente utilizar a <strong>Idade Corrigida (IC)</strong> — calculada subtraindo-se da idade cronológica o número de semanas que faltaram para atingir 40 semanas de idade gestacional (<code>IC = Idade Cronológica − [40 − IG ao nascer]</code>). Um lactente nascido com 28 semanas de IG que possui 6 meses de idade cronológica tem, na verdade, apenas 3 meses de idade corrigida: ele não sustenta o tronco, mantém o reflexo de protrusão lingual ativo e apresenta altíssimo risco de broncoaspiração se receber sólidos. A introdução alimentar no prematuro deve aguardar os <strong>6 meses de idade corrigida</strong>, associada à presença clínica inequívoca dos sinais neuromotores de prontidão (notadamente o controle cervical e de tronco e a extinção do reflexo de extrusão).
+</blockquote>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Sistema Fisiológico</th>
+      <th>Estado no 1º Trimestre (0–3 meses)</th>
+      <th>Estado aos 6 Meses Completos (180 dias)</th>
+      <th>Implicação Clínica na Puericultura</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Renal e Equilíbrio Hídrico</strong></td>
+      <td>TFG de 20–30 mL/min/1,73 m²; alças de Henle curtas; concentração urinária máxima de 600–700 mOsm/L.</td>
+      <td>TFG atinge 60–80% do adulto; concentração urinária chega a ~1.000 mOsm/L; maior tolerância a solutos.</td>
+      <td>Permite excretar a maior CRPS das carnes e leguminosas e iniciar oferta de água pura nos intervalos.</td>
+    </tr>
+    <tr>
+      <td><strong>Digestivo Exócrino</strong></td>
+      <td>Amilase pancreática quase ausente; pool reduzido de sais biliares; dependência de lactase e BSSL do leite materno.</td>
+      <td>Ascensão plena da amilase pancreática, proteases (tripsina/quimotripsina), ácido clorídrico e sais biliares.</td>
+      <td>Digestão eficiente de amido complexo (cereais/tubérculos), fibras proteicas de carnes e lipídeos variados.</td>
+    </tr>
+    <tr>
+      <td><strong>Barreira Mucosa e GALT</strong></td>
+      <td>Maior permeabilidade paracelular (<em>tight junctions</em> imaturas); sistema imunológico mucosal em estruturação.</td>
+      <td><em>Gut closure</em> completo; células dendríticas CD103+ e linfócitos Treg FoxP3+ operantes para tolerância oral.</td>
+      <td>Redução da translocação de patógenos e janela ideal para introdução de alimentos alergênicos (ovo, peixe, glúten).</td>
+    </tr>
+    <tr>
+      <td><strong>Neuromotor e Orofaríngeo</strong></td>
+      <td>Padrão reflexo de sucção-deglutição; reflexo de protrusão lingual presente; ausência de controle de tronco.</td>
+      <td>Extinção do reflexo de protrusão; senta com mínimo apoio; preensão palmar voluntária; lateralização lingual inicial.</td>
+      <td>Deglutição segura de papas amassadas no garfo e tiras macias, com proteção da via aérea contra aspiração.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'doze-passos-guia-alimentar-ms-sbp',
+      title: '2. Os 12 Passos para uma Alimentação Saudável (Guia Alimentar do Ministério da Saúde e SBP)',
+      body_html: `
+<h3>A Transição Histórica: Dos 10 Passos para os 12 Passos (MS, 2019/2021)</h3>
+<p>Durante quase duas décadas, as diretrizes brasileiras para crianças menores de 2 anos basearam-se nos clássicos "10 Passos para uma Alimentação Saudável" (2002/2013). Entretanto, a rápida transição nutricional brasileira — marcada pela coexistência da deficiência oculta de micronutrientes (anemia ferropriva e hipovitaminose A) com o crescimento explosivo do sobrepeso e da obesidade infantil (a chamada <strong>dupla carga de má nutrição</strong>) —, somada à invasão precoce dos alimentos ultraprocessados na dieta dos lactentes e ao impacto da publicidade infantil, levou o Ministério da Saúde, em parceria com a OPAS/OMS, a publicar o novo <strong>Guia Alimentar para Crianças Brasileiras Menores de 2 Anos</strong> (edição de 2019, revisada em 2021). Essa diretriz adotou a <strong>Classificação NOVA</strong> (grau de processamento industrial dos alimentos) como eixo estruturante e expandiu as recomendações para <strong>12 Passos para uma Alimentação Saudável</strong>, integralmente alinhados às recomendações do Departamento Científico de Nutrologia da Sociedade Brasileira de Pediatria (SBP).</p>
+<p>Em provas de residência médica, ENARE, USP, UNICAMP e Revalida, o conhecimento literal e aplicado dos 12 Passos é exigido tanto na identificação de condutas corretas na Atenção Primária à Saúde (APS) quanto na crítica a prescrições dietéticas obsoletas (como a recomendação de sucos naturais no primeiro ano ou o uso de peneira e liquidificador).</p>
+
+<h3>Detalhamento Clínico e Epidemiológico de Cada um dos 12 Passos</h3>
+
+<h4>Passo 1: Amamentar até 2 anos ou mais, oferecendo somente o leite materno até 6 meses</h4>
+<p>Consagra o <strong>Aleitamento Materno Exclusivo (AME)</strong> durante os primeiros 180 dias de vida, em livre demanda, sem horários rígidos e sem a oferta de água, chás, sucos ou qualquer outro leite ou alimento. Mesmo em regiões de clima tropical muito quente e seco, o leite materno (composto por 88% de água, com baixa osmolaridade no leite anterior) supre 100% da necessidade hídrica do lactente no primeiro semestre. A partir dos 6 meses, o aleitamento materno passa à modalidade <strong>complementada</strong> e deve ser mantido até os 2 anos de idade ou mais. No segundo ano de vida, 500 mL de leite materno ainda fornecem aproximadamente 31% das necessidades diárias de energia, 38% das proteínas, 45% da vitamina A e 95% da vitamina C da criança, além de manter proteção imunológica ativa contra diarreias e otites quando a criança ingressa em creches.</p>
+
+<h4>Passo 2: Oferecer alimentos in natura ou minimamente processados, além do leite materno, a partir dos 6 meses</h4>
+<p>Estabelece o marco temporal exato (180 dias completos) e define a base qualitativa da alimentação complementar: alimentos <em>in natura</em> (obtidos diretamente de plantas ou animais, como frutas, legumes, verduras, raízes, tubérculos, ovos e carnes frescas) e <em>minimamente processados</em> (submetidos apenas a limpeza, remoção de partes não comestíveis, secagem, moagem ou pasteurização sem adição de sal, açúcar ou gorduras, como arroz, feijão, lentilha, grão-de-bico, farinha de mandioca, fubá de milho e aveia em flocos). Desde os 6 meses, a criança deve receber a chamada "comida de panela" feita com alimentos verdadeiros, e não papas industrializadas ou farinhas lácteas.</p>
+
+<h4>Passo 3: Oferecer água própria para o consumo à criança em vez de sucos, refrigerantes e outras bebidas açucaradas</h4>
+<p>Representa uma das mudanças mais cobradas em provas em relação às edições antigas: a partir do 6º mês de vida, com a entrada das refeições complementares e o consequente aumento da carga renal potencial de solutos, <strong>deve-se oferecer ativamente água potável (filtrada ou fervida e resfriada)</strong> nos intervalos entre as refeições. Em contrapartida, <strong>sucos de qualquer natureza — inclusive os sucos 100% naturais da fruta espremidos na hora e sem adição de açúcar — são contraindicados antes de 1 ano de idade</strong>. Quando a fruta é espremida ou batida para virar suco, as fibras insolúveis e a matriz celular são destruídas, liberando frutose livre de rápida absorção intestinal (pico glicêmico e lipogênese hepática), reduzindo a saciedade, acostumando a criança a saciar a sede apenas com líquidos doces, favorecendo a cárie precoce da infância e ocupando o volume gástrico que deveria ser preenchido pelo leite materno ou pela refeição salgada.</p>
+
+<h4>Passo 4: Oferecer a comida amassada quando a criança começar a comer outros alimentos além do leite materno</h4>
+<p>Determina a consistência inicial obrigatória aos 6 meses: os alimentos da refeição principal e as frutas devem ser oferecidos na forma de <strong>papa espessa, amassados exclusivamente com o garfo</strong> (ou em tiras/pedaços macios quando se utiliza abordagem participativa/BLW), e as carnes devem ser bem cozidas e <strong>desfiadas, moídas ou picadas em pedaços minúsculos</strong>. É terminantemente proibido usar liquidificador, <em>mixer</em> ou peneira. Alimentos liquefeitos perdem fibras, exigem a adição de água para bater (diluindo a densidade energética para menos da metade) e não estimulam a musculatura mastigatória (masseter, temporal, pterigoideos), o crescimento transversal dos arcos dentários nem a transição do padrão de deglutição infantil para o padrão maduro.</p>
+
+<h4>Passo 5: Não oferecer açúcar nem preparações ou produtos que contenham açúcar à criança até 2 anos de idade</h4>
+<p>Estabelece a <strong>proibição absoluta de açúcar nos primeiros 24 meses de vida (primeiros 1.000 dias)</strong>. A restrição abrange todos os tipos de açúcares livres e adicionados: açúcar branco refinado, açúcar cristal, açúcar mascavo, açúcar demerara, açúcar de coco, rapadura, melado, caldo de cana, xaropes (glicose/frutose de milho) e mel (este último duplamente proibido no primeiro ano pelo risco de botulismo intestinal). O recém-nascido já possui preferência inata pelo sabor doce nos botões gustativos das papilas linguais; a exposição precoce à sacarose hiperestimula as vias mesolímbicas dopaminérgicas de recompensa, eleva o limiar de percepção do doce e faz com que a criança passe a rejeitar os sabores naturais levemente adocicados, ácidos ou amargos das frutas <em>in natura</em> e das hortaliças, além de programar obesidade, resistência insulínica, dislipidemia e cárie dentária. Adoçantes artificiais ou naturais (sacarina, ciclamato, aspartame, sucralose, acessulfame-K, xilitol, stevia) também são estritamente contraindicados na faixa pediátrica saudável.</p>
+
+<h4>Passo 6: Não oferecer alimentos ultraprocessados para a criança</h4>
+<p>Alimentos ultraprocessados são formulações industriais feitas majoritariamente de substâncias extraídas de alimentos (óleos hidrogenados, amidos modificados, isolados proteicos), derivados de constituintes (xarope de frutose, maltodextrina) ou sintetizados em laboratório (corantes, aromatizantes, realçadores de sabor como glutamato monossódico, emulsificantes e edulcorantes). São hiperpalatáveis, hipercalóricos, pobres em fibras e micronutrientes e ricos em sódio, gorduras saturadas/trans e açúcares livres. Exemplos clássicos que <strong>não devem ser oferecidos sob nenhuma hipótese</strong> nos primeiros 2 anos (e devem ser evitados ao longo de toda a infância): biscoitos de polvilho industrializados, bolachas tipo Maria ou maisena, biscoitos recheados, salgadinhos de pacote, macarrão instantâneo (lámen), cereais matinais açucarados, farinhas lácteas e engrossantes açucarados, achocolatados, iogurtes adoçados com polpa e corantes, <em>petit suisse</em> ("danoninho"), gelatinas, bebidas lácteas, refrigerantes, sucos de caixinha (néctares/refrescos), pós para refresco, balas, pirulitos, chocolates, salsicha, linguiça, presunto, peito de peru, <em>nuggets</em> e hambúrgueres congelados industrializados.</p>
+
+<h4>Passo 7: Cozinhar a mesma comida para a criança e para a família</h4>
+<p>Desmistifica a ideia de que a família precisa cozinhar duas refeições completamente separadas e exaustivas. Desde o início da alimentação complementar aos 6 meses, a criança pode e deve compartilhar os alimentos básicos preparados para a família (arroz, feijão, carnes, legumes, tubérculos e verduras), desde que a comida familiar seja feita com <strong>alimentos <em>in natura</em> ou minimamente processados, temperos naturais</strong> (alho, cebola, cheiro-verde, cebolinha, salsinha, coentro, manjericão, orégano, açafrão/cúrcuma, louro, cominho suave), <strong>quantidade mínima de óleo vegetal e pouquíssimo sal iodado</strong>, sem temperos prontos industrializados (caldos em cubo, temperos em pó com glutamato) e sem pimenta. Basta separar a porção do bebê antes de adicionar mais sal para os adultos, amassar com o garfo (aos 6–8 meses) ou picar (aos 9–11 meses) e servir.</p>
+
+<h4>Passo 8: Zelar para que a hora da refeição da criança seja um momento de experiências positivas, aprendizado e afeto junto da família</h4>
+<p>Incorpora os princípios da <strong>Alimentação Responsiva (OMS/UNICEF)</strong> e da comensalidade familiar. O ato de comer envolve todos os sentidos (visão das cores separadas no prato, olfato dos temperos naturais, tato ao tocar os alimentos com as mãos e paladar). A criança aprende por imitação (neurônios-espelho) ao sentar-se à mesa junto com os pais e irmãos. O cuidador deve conversar com a criança, manter contato visual, nomear os alimentos, respeitar seu ritmo de mastigação e reconhecer seus sinais de fome (abrir a boca, apontar, inclinar-se para o prato) e de saciedade (virar o rosto, fechar a boca, empurrar a colher, perder o interesse), <strong>jamais forçando, chantageando, ameaçando ou usando distrações eletrônicas</strong> para fazer a criança "raspar o prato".</p>
+
+<h4>Passo 9: Prestar atenção aos sinais de fome e saciedade da criança e conversar com ela durante a refeição</h4>
+<p>Aprofunda a autorregulação hipotalâmica do apetite. Lactentes possuem um mecanismo fisiológico refinado de controle da ingestão energética mediado por peptídeos orexígenos (grelina gástrica) e anorexígenos (GLP-1, PYY, colecistoquinina e leptina), além dos receptores mecanorreceptores de distensão gástrica vagal. Na chamada <strong>divisão de responsabilidades de Ellyn Satter</strong>, cabe aos pais decidir <em>o quê</em>, <em>quando</em> e <em>onde</em> o alimento saudável será oferecido, mas cabe exclusivamente à criança decidir <em>se vai comer</em> e <em>quanto vai comer</em> daquela porção. Forçar a criança a comer além da saciedade ("só mais uma colherada pela mamãe") embota a percepção interoceptiva de plenitude gástrica e programa o comer hedônico e a obesidade.</p>
+
+<h4>Passo 10: Cuidar da higiene em todas as etapas da alimentação da criança e da família</h4>
+<p>A transição alimentar coincide exatamente com a fase em que o lactente leva mãos, brinquedos e objetos do chão à boca e em que os níveis de anticorpos transplacentários maternos (IgG transferida no terceiro trimestre) atingem seu nadir fisiológico (hipogamaglobulinemia fisiológica do lactente, entre 3 e 6 meses). Por isso, o pico de incidência da doença diarreica aguda na infância ocorre entre 6 e 11 meses (historicamente conhecida como "diarreia do desmame"). As medidas sanitárias obrigatórias incluem: lavagem rigorosa das mãos do cuidador e da criança com água e sabão antes do preparo e das refeições; higienização mecânica de frutas, verduras e legumes em água corrente folha por folha, seguida de imersão por <strong>15 minutos em solução clorada</strong> (1 colher de sopa de hipoclorito de sódio a 2,0–2,5% — água sanitária sem alvejante/perfume e com registro para alimentos — para cada 1 litro de água potável) e enxágue final em água potável filtrada ou fervida; cozimento completo de carnes, peixes e ovos (gema e clara firmes para eliminar <em>Salmonella enterica</em>); não conservar sobras do prato do bebê (que tiveram contato com a colher e a saliva da criança) para a refeição seguinte; e abolição das mamadeiras e chuquinhas, que possuem frestas de difícil higienização e alto risco de contaminação por coliformes fecais, priorizando o copo aberto ou copinho de transição sem válvula.</p>
+
+<h4>Passo 11: Oferecer à criança alimentação adequada e saudável também fora de casa</h4>
+<p>Em passeios, consultas médicas, viagens e sobretudo na <strong>creche / escola de educação infantil</strong>, os princípios dos primeiros 1.000 dias não devem ser suspensos por conveniência. Ao sair de casa, a família deve planejar o transporte de frutas <em>in natura</em> fáceis de descascar ou amassar na hora (banana, tangerina, maçã ou pera raspadas com colher, mamão em pote térmico) e água potável, evitando recorrer a biscoitos, sucos de caixinha ou papinhas industrializadas. Nas creches públicas e privadas, o cardápio (no setor público regido pelo Programa Nacional de Alimentação Escolar — PNAE, que proíbe a compra de alimentos ultraprocessados e adição de açúcar para menores de 3 anos com recursos federais) deve apoiar a manutenção do aleitamento materno (recebendo a mãe para amamentar ou ofertando o leite materno ordenhado e armazenado adequadamente em copinho) e fornecer refeições preparadas na hora com alimentos <em>in natura</em> e minimamente processados.</p>
+
+<h4>Passo 12: Proteger a criança da publicidade de alimentos</h4>
+<p>Reconhece a publicidade de alimentos ultraprocessados e o uso de telas durante as refeições como determinantes comerciais e comportamentais diretos da má nutrição infantil. No Brasil, a Resolução CONANDA nº 163/2014 e o Código de Defesa do Consumidor classificam como <strong>abusiva e ilegal</strong> toda publicidade e comunicação mercadológica dirigida diretamente à criança (uso de personagens infantis, desenhos animados, brindes colecionáveis, músicas infantis). Adicionalmente, a <strong>NBCAL (Norma Brasileira de Comercialização de Alimentos para Lactentes e Crianças de Primeira Infância, Bicos, Chupetas e Mamadeiras — Lei Federal nº 11.265/2006 e Decreto nº 9.579/2018)</strong> proíbe qualquer promoção comercial (descontos, amostras grátis, exposições especiais, doações) de fórmulas infantis para lactentes, fórmulas de seguimento, bicos, chupetas e mamadeiras, e exige alertas obrigatórios nos rótulos de leites e alimentos de transição para evitar que substituam o leite materno. Durante as refeições, o uso de smartphones, tablets e televisão é estritamente contraindicado (alinhado também à recomendação da SBP de <strong>zero tempo de tela antes dos 2 anos de idade</strong>), pois sequestra a atenção cortical da criança, levando a uma mastigação mecânica e inconsciente, perda da percepção de saciedade e associação condicionada entre alimentação e estímulo audiovisual.</p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Passo do Guia (MS, 2019/2021)</th>
+      <th>Núcleo Normativo para Provas</th>
+      <th>Erro Comum (Pegadinha de Banca)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Passos 1 e 2</strong></td>
+      <td>AME até 6 meses (180 dias); AC aos 6 meses com alimentos <em>in natura</em> e minimamente processados; LM mantido até &ge;2 anos.</td>
+      <td>Iniciar frutas aos 4 meses porque "a mãe voltará da licença-maternidade" (conduta errada: deve-se orientar ordenha e conservação do LM, não antecipar sólidos).</td>
+    </tr>
+    <tr>
+      <td><strong>Passo 3</strong></td>
+      <td>Água potável a partir dos 6 meses nos intervalos; zero sucos antes de 1 ano.</td>
+      <td>Prescrever 50–100 mL de suco de laranja lima aos 4 ou 6 meses (recomendação obsoleta, hoje proscrita).</td>
+    </tr>
+    <tr>
+      <td><strong>Passo 4</strong></td>
+      <td>Consistência pastosa amassada com o garfo desde o 1º dia de introdução alimentar; carnes desfiadas/moídas.</td>
+      <td>Indicar "passar na peneira fina na primeira semana para o bebê acostumar" ou liquidificar a sopa.</td>
+    </tr>
+    <tr>
+      <td><strong>Passos 5 e 6</strong></td>
+      <td>Zero açúcar (qualquer tipo) até 2 anos; zero ultraprocessados (biscoito Maria, maisena, gelatina, <em>petit suisse</em>).</td>
+      <td>Permitir açúcar mascavo/demerara ou biscoito de maisena/polvilho industrializado por serem considerados "leves".</td>
+    </tr>
+    <tr>
+      <td><strong>Passos 7, 8 e 9</strong></td>
+      <td>Mesma comida da família (pouco sal, temperos naturais); alimentação responsiva; respeito à fome e saciedade.</td>
+      <td>Forçar a criança a terminar toda a tigela ou usar vídeos no celular para distrair enquanto o cuidador coloca a colher na boca.</td>
+    </tr>
+    <tr>
+      <td><strong>Passos 10, 11 e 12</strong></td>
+      <td>Higiene com hipoclorito (1 colher de sopa/L por 15 min); alimentação saudável na creche (PNAE); proteção contra telas e publicidade (NBCAL).</td>
+      <td>Deixar sobras da papa que tocou a colher do bebê para o jantar ou usar vinagre doméstico achando que substitui o hipoclorito na eliminação de cistos e bactérias.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'classificacao-nova-alimentos-pediatria',
+      title: '3. Classificação NOVA dos Alimentos Aplicada à Pediatria',
+      body_html: `
+<h3>Fundamentos da Classificação NOVA (Monteiro et al.) na Puericultura</h3>
+<p>Desenvolvida pelo Núcleo de Pesquisas Epidemiológicas em Nutrição e Saúde da Universidade de São Paulo (NUPENS/USP), sob liderança do epidemiologista Carlos Augusto Monteiro, a <strong>Classificação NOVA</strong> revolucionou a ciência da nutrição ao categorizar os alimentos não apenas por seus nutrientes isolados, mas pela <strong>extensão e pelo propósito do processamento industrial</strong> a que são submetidos antes de sua aquisição e consumo. Adotada oficialmente pelo Guia Alimentar para a População Brasileira (2014) e pelo Guia Alimentar para Crianças Brasileiras Menores de 2 Anos (2019/2021), a classificação NOVA divide todos os itens alimentares em <strong>quatro grupos distintos</strong>, cuja distinção precisa é tema recorrente nas provas de Medicina Preventiva e Pediatria.</p>
+
+<h3>Grupo 1: Alimentos <em>In Natura</em> ou Minimamente Processados (A Base Absoluta do Cardápio Infantil)</h3>
+<p>Os <strong>alimentos <em>in natura</em></strong> são aqueles obtidos diretamente de plantas ou de animais e adquiridos para o consumo sem que tenham sofrido qualquer alteração após deixarem a natureza. Já os <strong>alimentos minimamente processados</strong> são alimentos <em>in natura</em> que, antes de sua aquisição, foram submetidos a processos físicos ou biológicos de conservação e preparo que <strong>não adicionam sal, açúcar, óleos, gorduras nem outras substâncias</strong> ao alimento original — tais como limpeza, remoção de partes não comestíveis ou indesejáveis, fracionamento, moagem, secagem, fermentação não alcoólica, pasteurização, refrigeração, congelamento e embalagem a vácuo.</p>
+<ul>
+  <li><strong>Exemplos pediátricos do Grupo 1:</strong> Leite materno (o alimento <em>in natura</em> primordial do lactente); frutas frescas inteiras; verduras e legumes frescos ou congelados sem molho; raízes e tubérculos (mandioca/aipim/macaxeira, batata-doce, batata-inglesa, inhame, cará, mandioquinha/batata-baroa); grãos de cereais (arroz branco, integral ou parboilizado, milho em espiga ou em grão seco, aveia em flocos puros, trigo em grão/triguilho); farinhas puras sem açúcar (fubá de milho, farinha de mandioca, polvilho doce/azedo puro, farinha de aveia, farinha de trigo); macarrão ou massas alimentícias feitas apenas com farinha de trigo e água (ou ovos); leguminosas secas (feijões preto, carioca, fradinho, branco, vermelho, lentilha, grão-de-bico, ervilha seca, soja em grão); carnes bovina, suína, de aves e pescados frescos, resfriados ou congelados sem tempero; vísceras (fígado, moela, coração); ovos de galinha ou codorna; leite fluido pasteurizado ou ultrapasteurizado (UHT) e leite em pó integral puro (ressaltando-se que o leite de vaca, embora pertença ao Grupo 1 da NOVA, não deve ser oferecido na forma líquida integral antes de 12 meses de vida por razões fisiológicas específicas do lactente, exceto em preparações culinárias pequenas ou impossibilidade absoluta de fórmula); iogurte natural integral (cujos únicos ingredientes no rótulo sejam leite e fermento lácteo); castanhas, nozes e amendoim sem sal ou açúcar (ofertados apenas triturados/em pasta diluída para menores de 4–5 anos pelo risco de broncoaspiração).</li>
+</ul>
+
+<h3>Grupo 2: Ingredientes Culinários Processados (Uso Mínimo em Preparações Caseiras)</h3>
+<p>São substâncias extraídas diretamente de alimentos do Grupo 1 (por prensagem, refino, centrifugação ou moagem) ou da natureza (por mineração ou evaporação), utilizadas na cozinha doméstica para temperar, cozinhar e criar preparações culinárias saborosas a partir de alimentos <em>in natura</em> ou minimamente processados. Isoladamente, não são alimentos para consumo direto.</p>
+<ul>
+  <li><strong>Óleos vegetais (soja, milho, girassol, canola e azeite de oliva) e manteiga sem sal:</strong> Permitidos em pequena quantidade no preparo das refeições salgadas da criança a partir dos 6 meses (preconiza-se refogar os temperos naturais com o mínimo de óleo ou adicionar 1 colher de chá rasa de óleo vegetal cru ou azeite ao prato pronto para elevar a densidade energética e fornecer ácidos graxos essenciais linoleico [ômega-6] e alfa-linolênico [ômega-3], além de facilitar a absorção das vitaminas lipossolúveis A, D, E e K). A banha suína e a manteiga pertencem ao Grupo 2, mas os óleos vegetais são preferidos pelo perfil de ácidos graxos poli e monoinsaturados.</li>
+  <li><strong>Sal de cozinha iodado:</strong> Deve ser utilizado em <strong>quantidade mínima</strong> a partir dos 6 meses (apenas uma pitada leve no preparo da panela familiar, evitando deixar a comida salgada ao paladar do adulto), tanto para proteger os rins imaturos quanto para não condicionar os receptores gustativos ao excesso de cloreto de sódio, prevenindo a hipertensão arterial essencial futura.</li>
+  <li><strong>Açúcares (branco, cristal, demerara, mascavo), melado e rapadura:</strong> Embora pertençam tecnicamente ao Grupo 2 da Classificação NOVA (por serem ingredientes culinários extraídos da cana-de-açúcar), têm <strong>uso estritamente proibido em crianças menores de 2 anos de idade</strong> (Passo 5 do Guia Alimentar).</li>
+</ul>
+
+<h3>Grupo 3: Alimentos Processados (Evitar no 1º Ano; Uso Restrito e Ocasional Após 1–2 Anos)</h3>
+<p>Os <strong>alimentos processados</strong> são fabricados pela indústria com a adição de sal, açúcar ou outra substância de uso culinário (Grupo 2) a um alimento <em>in natura</em> ou minimamente processado (Grupo 1), com o objetivo de aumentar sua durabilidade e torná-lo mais agradável ao paladar. Utilizam técnicas como cozimento, secagem, fermentação não alcoólica, salga, salmoura, cura ou defumação, preservando a identidade básica do alimento original, mas alterando de modo desfavorável sua composição nutricional pelo excesso de sódio, óleo ou açúcar.</p>
+<ul>
+  <li><strong>Exemplos do Grupo 3:</strong> Legumes em conserva na salmoura (ervilha, milho, palmito, pepino, azeitona enlatados com água e sal); extrato ou concentrado de tomate (quando contém apenas tomate, sal e/ou pouco açúcar, sem espessantes ou realçadores); frutas em calda açucarada e frutas cristalizadas; carne-seca, charque e toucinho; peixes enlatados em óleo ou água e sal (sardinha e atum em lata); queijos feitos exclusivamente de leite, sal e coalho/fermentos bacterianos (queijo minas frescal, prato, muçarela, ricota, parmesão); e <strong>pães artesanais ou de padaria</strong> feitos exclusivamente com farinha de trigo, água, sal e levedura biológica (pão francês, pão caseiro).</li>
+  <li><strong>Conduta pediátrica para o Grupo 3:</strong> Conservas salgadas, enlatados com alto teor de sódio, carnes salgadas e frutas em calda <strong>não devem ser oferecidos a menores de 2 anos</strong>. Exceções pontuais dentro do Grupo 3 que podem aparecer em pequenas quantidades após os 9–12 meses em lanches ou preparações da família são o pão caseiro/francês com pouco sal e queijos pasteurizados com baixo teor de sódio (como ricota sem sal ou queijo minas frescal pasteurizado), sempre sem substituir as refeições principais ou as frutas <em>in natura</em>.</li>
+</ul>
+
+<h3>Grupo 4: Alimentos Ultraprocessados (Proibição Absoluta nos Primeiros 2 Anos e Restrição Máxima na Infância)</h3>
+<p>Os <strong>alimentos ultraprocessados</strong> não são alimentos modificados, mas sim <strong>formulações industriais</strong> elaboradas em múltiplas etapas e técnicas industriais (extrusão, moldagem, pré-fritura, hidrogenação, interesterificação) a partir de substâncias extraídas de alimentos (caseína, soro de leite, glúten, lactose, óleos refinados, gorduras hidrogenadas), derivadas de constituintes de alimentos (maltodextrina, dextrose, xarope de milho rico em frutose, amido modificado, proteína isolada de soja, carne mecanicamente separada) ou sintetizadas em laboratório a partir de matérias orgânicas como petróleo e carvão (corantes artificiais como tartrazina, aromatizantes sintéticos, realçadores de sabor como glutamato monossódico e inosinato dissódico, emulsificantes como polisorbato-80 e carboximetilcelulose, edulcorantes, umectantes e sequestrantes). Alimentos do Grupo 1 representam proporção ínfima ou nula na lista de ingredientes.</p>
+<p><strong>Regra Prática de Leitura de Rótulo para Provas:</strong> Um número elevado de ingredientes (frequentemente 5, 10 ou mais) e, sobretudo, a presença de substâncias que não existem em uma cozinha doméstica (xarope de glicose, gordura vegetal hidrogenada, lecitina de soja, aromatizante idêntico ao natural, corante caramelo IV, glutamato monossódico, espessante goma xantana) identificam inequivocamente um produto como <strong>ultraprocessado (Grupo 4)</strong>.</p>
+<p><strong>Impacto fisiopatológico nos primeiros 1.000 dias:</strong> Além de promoverem balanço energético positivo (obesidade precoce), cárie dentária e hipertensão arterial pelo excesso de sódio, os ultraprocessados induzem <strong>disbiose intestinal grave</strong> (emulsificantes sintéticos degradam a camada de mucina epitelial e favorecem proteobactérias pró-inflamatórias em detrimento de <em>Bifidobacterium</em> e <em>Lactobacillus</em>), aumentam a permeabilidade intestinal, geram inflamação sistêmica subclínica e causam a chamada <strong>fome oculta</strong> (crianças obesas ou eutróficas com severa deficiência de ferro, zinco e vitaminas por consumirem calorias vazias que deslocam o consumo de carnes, feijões e hortaliças).</p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Grupo da Classificação NOVA</th>
+      <th>Definição Técnica</th>
+      <th>Exemplos Clássicos em Provas</th>
+      <th>Conduta em Menores de 2 Anos (MS/SBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Grupo 1: <em>In natura</em> ou Minimamente Processados</strong></td>
+      <td>Obtidos da natureza ou submetidos a limpeza, moagem, secagem, congelamento ou pasteurização sem adição de substâncias.</td>
+      <td>Leite materno, frutas frescas, arroz, feijão, lentilha, mandioca, inhame, carnes frescas/congeladas, ovo, aveia pura, fubá, iogurte natural (leite + fermento).</td>
+      <td><strong>Base exclusiva do cardápio</strong> (junto com temperos naturais como alho, cebola e ervas frescas).</td>
+    </tr>
+    <tr>
+      <td><strong>Grupo 2: Ingredientes Culinários Processados</strong></td>
+      <td>Substâncias extraídas de alimentos do Grupo 1 ou da natureza usadas para cozinhar e temperar alimentos do Grupo 1.</td>
+      <td>Óleos vegetais (soja, canola, girassol), azeite de oliva, manteiga, sal iodado, açúcar (branco, mascavo, demerara), melado.</td>
+      <td><strong>Óleo vegetal e sal iodado em quantidade mínima</strong> no preparo caseiro. <strong>Açúcar, melado e rapadura: PROIBIDOS até 2 anos.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Grupo 3: Alimentos Processados</strong></td>
+      <td>Alimentos do Grupo 1 adicionados de sal, açúcar ou óleo (Grupo 2) pela indústria para conservação e palatabilidade.</td>
+      <td>Legumes em salmoura (ervilha/milho em lata), sardinha/atum em lata, frutas em calda, carne-seca, queijos (leite + sal + coalho), pão francês (farinha + água + sal + fermento).</td>
+      <td><strong>Evitar no 1º ano; restringir ao máximo até 2 anos</strong> (proibir conservas salgadas e frutas em calda; pão caseiro/francês sem açúcar pode entrar eventualmente após 9–12m).</td>
+    </tr>
+    <tr>
+      <td><strong>Grupo 4: Alimentos Ultraprocessados</strong></td>
+      <td>Formulações industriais com múltiplos ingredientes, derivados industriais (maltodextrina, xaropes, gordura hidrogenada) e aditivos cosméticos (corantes, aromatizantes, emulsificantes, realçadores).</td>
+      <td>Biscoito Maria/maisena/polvilho industrializado, bolacha recheada, <em>petit suisse</em>, iogurte com sabor/corante, gelatina, achocolatado, farinha láctea/mucilon açucarado, suco de caixinha, macarrão instantâneo, salsicha, presunto, <em>nuggets</em>, pão de forma industrializado, fórmulas infantis*.</td>
+      <td><strong>PROIBIÇÃO ABSOLUTA</strong> de todos os ultraprocessados comuns nos primeiros 2 anos (*exceção médica exclusiva: fórmulas infantis regulamentadas pela ANVISA quando o aleitamento materno for impossível).</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+<strong>Atenção à Pegadinha de Prova sobre "Alimentos Infantis" Ultraprocessados:</strong> Bancas de residência adoram apresentar no enunciado um lactente de 7 ou 10 meses cuja família oferece no lanche da tarde "biscoito maisena ou Maria molhado no leite", "gelatina", "queijinho <em>petit suisse</em>", "pão de forma macio" ou "mingau de cereal infantil industrializado" acreditando serem alimentos saudáveis e próprios para bebês. Todos esses itens pertencem ao <strong>Grupo 4 (Ultraprocessados)</strong>, contêm açúcar adicionado, amidos refinados e aditivos químicos, e sua oferta configura erro dietético grave que deve ser prontamente substituído por frutas <em>in natura</em>, raízes cozidas (aipim, batata-doce, inhame), cuscuz de milho, aveia cozida ou pão caseiro sem açúcar. Nota técnica do Guia do MS: as <strong>fórmulas infantis</strong>, pelo processamento industrial de isolamento de frações do soro do leite, adição de óleos vegetais e micronutrientes, classificam-se tecnicamente no Grupo 4 da NOVA, mas constituem a única exceção com indicação clínica formal em substituição ao leite materno no primeiro ano quando este é inviável.
+</blockquote>
+`
+    },
+    {
+      id: 'esquema-pratico-introducao-alimentar-idades',
+      title: '4. Esquema Prático de Introdução Alimentar por Faixa Etária em Crianças Amamentadas',
+      body_html: `
+<h3>Progressão Cronológica do Número de Refeições, Consistência e Volume</h3>
+<p>Na criança em aleitamento materno, a introdução dos alimentos complementares aos 6 meses completos (180 dias) segue um cronograma estruturado pelo Ministério da Saúde e pela Sociedade Brasileira de Pediatria que respeita a evolução da <strong>capacidade gástrica funcional do lactente</strong> (estimada em aproximadamente <strong>20 a 30 mL/kg de peso corporal</strong>, o que equivale a cerca de 150 a 240 mL aos 6 meses) e o amadurecimento progressivo das habilidades mastigatórias e fonoarticulatórias.</p>
+
+<h3>Aos 6 Meses Completos (Início da Alimentação Complementar)</h3>
+<p>Ao completar 180 dias de vida, a criança amamentada deve continuar recebendo <strong>leite materno em livre demanda</strong> e iniciar <strong>3 refeições complementares ao dia</strong>:</p>
+<ul>
+  <li><strong>2 Lanches de Frutas <em>in natura</em> (meio da manhã e meio da tarde):</strong> A fruta deve ser oferecida amassada com o garfo, raspada com a colher ou em tiras macias seguras para preensão palmar (ex.: banana amassada ou em formato de bastão natural dividida longitudinalmente; mamão amassado ou em tiras; abacate amassado; maçã ou pera raspadas ou levemente cozidas no vapor em fatias macias; manga, melancia, melão, laranja ou mexerica sem sementes e sem a película rígida dos gomos). Não se deve adicionar açúcar, mel, leite condensado nem farinhas lácteas às frutas. Todas as frutas regionais brasileiras são permitidas desde os 6 meses — não existe fundamento científico na crença popular de que frutas ácidas (laranja, acerola, morango, abacaxi) ou gordurosas (abacate, açaí puro pasteurizado sem xarope de guaraná/açúcar) sejam "pesadas" para o lactente.</li>
+  <li><strong>1 Refeição Principal ("Papa Salgada" — Almoço OU Jantar):</strong> O Guia Alimentar do Ministério da Saúde (2019/2021) recomenda iniciar aos 6 meses com 1 refeição principal ao dia (geralmente o almoço) e duas frutas nos lanches, introduzindo a segunda refeição principal (jantar) a partir do 7º mês (ou assim que a criança demonstrar boa aceitação da primeira refeição principal). <em>Observação importante para provas:</em> Alguns manuais clássicos da SBP admitem oferecer a segunda refeição principal já no decorrer do 6º mês caso a criança apresente excelente aceitação no almoço ou permaneça em período integral na creche sem acesso ao peito, mas a regra padrão cobrada do Guia do MS é: <strong>6 meses = LM + 2 frutas + 1 refeição principal; 7 a 8 meses = LM + 2 frutas + 2 refeições principais (almoço e jantar)</strong>.</li>
+  <li><strong>Volume esperado aos 6 meses:</strong> Nas primeiras semanas, o objetivo é a apresentação sensorial e o aprendizado da deglutição com colher/mãos; a criança pode aceitar apenas <strong>1 a 3 colheres de sopa no total</strong>, aumentando gradualmente até cerca de <strong>2 a 3 colheres de sopa cheias</strong> (aproximadamente 50 a 100 g ou meia tigela pequena). O leite materno pode ser oferecido logo após a refeição complementar se a criança desejar, sem que isso prejudique clinicamente seu estado nutricional (o ferro do leite humano é ligado à lactoferrina e absorvido por receptores específicos no duodeno, tendo mínima interferência competitiva com a refeição).</li>
+</ul>
+
+<h3>Dos 7 aos 8 Meses Completos</h3>
+<p>Nessa faixa etária, consolida-se a rotina de <strong>4 refeições complementares diárias</strong> associadas ao leite materno em livre demanda:</p>
+<ul>
+  <li><strong>Manhã, intervalos e noite:</strong> Leite materno em livre demanda.</li>
+  <li><strong>Lanche da manhã:</strong> Fruta <em>in natura</em> amassada ou picada em pedaços muito macios.</li>
+  <li><strong>Almoço (1ª Refeição Principal):</strong> Prato contendo representantes dos 4 grupos alimentares (cereal/tubérculo + leguminosa + carne/ovo + hortaliças), seguido de um pedaço pequeno de fruta rica em vitamina C (ex.: laranja, mexerica, mamão, manga, acerola, goiaba) para otimizar a absorção intestinal do ferro não heme.</li>
+  <li><strong>Lanche da tarde:</strong> Fruta <em>in natura</em> (ou ocasionalmente raiz/tubérculo cozido, como inhame ou batata-doce amassados).</li>
+  <li><strong>Jantar (2ª Refeição Principal):</strong> Deve ter a <strong>mesma composição qualitativa do almoço</strong> (comida de panela completa com os 4 grupos alimentares). <em>Pegadinha clássica:</em> É um erro nutricional substituir o jantar da criança de 7 a 11 meses por mamadeira de leite, mingau de maisena ou sopa rala batida, pois o lactente perde metade do aporte diário planejado de ferro heme, zinco e proteínas de alto valor biológico.</li>
+  <li><strong>Consistência e volume aos 7–8 meses:</strong> Os alimentos não precisam mais ser amassados até virar purê homogêneo; devem ser amassados de forma mais rústica/grosseira com o garfo ou deixados em pedaços bem macios que se desmancham entre a língua e o rebordo gengival superior (já que os incisivos centrais inferiores e superiores costumam irromper nessa fase, entre 6 e 10 meses, servindo para corte inicial, enquanto o amassamento ocorre na gengiva posterior). O volume médio aceito por refeição principal situa-se entre <strong>3 e 4 colheres de sopa cheias</strong> (~100 a 150 g ou 1/2 a 2/3 de uma tigela de 250 mL).</li>
+</ul>
+
+<h3>Dos 9 aos 11 Meses Completos</h3>
+<p>Entre 9 e 11 meses, a criança desenvolve duas habilidades neuromotoras cruciais: a <strong>preensão em pinça (inicialmente pinça inferior/radial aos 9 meses e pinça fina polpa-a-polpa entre polegar e indicador aos 10–11 meses)</strong> e os <strong>movimentos rotatórios mandibulares com lateralização plena da língua</strong>, levando o alimento para a região dos futuros molares na gengiva lateral.</p>
+<ul>
+  <li><strong>Consistência aos 9–11 meses:</strong> Transição gradual da comida amassada para <strong>alimentos picados em pequenos pedaços, desfiados ou na mesma consistência da comida da família</strong> (desde que macios e bem cozidos, como grãos de arroz e feijão inteiros macios, cubinhos de legumes cozidos e carne moída ou desfiada curta). Estimula-se intensamente que a criança pegue pequenos cubos com o movimento de pinça ou segure uma colher pequena enquanto o cuidador auxilia com outra colher.</li>
+  <li><strong>Volume esperado aos 9–11 meses:</strong> Aproximadamente <strong>4 a 5 colheres de sopa cheias</strong> por refeição principal (~150 a 200 g, equivalente a 3/4 de uma tigela de 250 mL), mantendo leite materno + 2 lanches de frutas + almoço + jantar.</li>
+</ul>
+
+<h3>Dos 12 aos 24 Meses (1 a 2 Anos de Idade)</h3>
+<p>A partir de 1 ano completo, a criança passa a integrar plenamente o <strong>cardápio da família</strong>, com consistência normal (observando-se ainda os cuidados de corte contra engasgo para alimentos esféricos/duros e mantendo a proibição de açúcar e ultraprocessados até os 24 meses). O esquema diário passa a conter <strong>5 a 6 momentos alimentares</strong>:</p>
+<ul>
+  <li><strong>Café da manhã:</strong> Leite materno + fruta ou alimento do grupo dos cereais/raízes (ex.: cuscuz de milho, tapioca, aipim/inhame cozido, aveia, pão caseiro/francês, ovo mexido).</li>
+  <li><strong>Lanche da manhã:</strong> Fruta <em>in natura</em>.</li>
+  <li><strong>Almoço:</strong> Refeição principal da família com os 4 grupos alimentares (cerca de <strong>5 a 6 colheres de sopa no total</strong>, ou 1 tigela/prato pequeno de 200 a 250 g) + fruta cítrica de sobremesa.</li>
+  <li><strong>Lanche da tarde:</strong> Leite materno + fruta <em>in natura</em> + cereal ou tubérculo.</li>
+  <li><strong>Jantar:</strong> Refeição principal da família com os 4 grupos alimentares.</li>
+  <li><strong>Ceia / antes de dormir (se a criança solicitar):</strong> Leite materno (lembrando da escovação dentária obrigatória com creme dental fluoretado &ge;1.000 ppm em quantidade de "meio grão de arroz cru" desde a erupção do primeiro dente decíduo, especialmente após a última mamada ou refeição noturna).</li>
+</ul>
+
+<p><strong>Redução Fisiológica da Velocidade de Crescimento no 2º Ano ("Inapetência Fisiológica"):</strong> No primeiro ano de vida, o lactente triplica seu peso de nascimento (ganhando ~700 g/mês no 1º trimestre, ~600 g/mês no 2º, ~500 g/mês no 3º e ~300–400 g/mês no 4º trimestre) e cresce cerca de 25 cm em estatura (15 cm no 1º semestre e 10 cm no 2º semestre). Já no segundo ano de vida (12 a 24 meses), a velocidade de crescimento desacelera fisiologicamente para cerca de <strong>2 a 3 kg no ano inteiro (~180 a 200 g/mês) e 10 a 12 cm/ano</strong>. Consequentemente, a necessidade calórica por quilograma de peso diminui e a criança, agora deambulante e ávida por explorar o ambiente, demonstra menor interesse voraz pela comida e oscila a aceitação de um dia para o outro. O pediatra deve tranquilizar a família, mostrar na curva da OMS que o canal de crescimento (escore-Z de peso/idade, estatura/idade e IMC/idade) está preservado e <strong>jamais prescrever estimulantes de apetite (ciproeptadina, buclizina), polivitamínicos desnecessários ou suplementos hipercalóricos ultraprocessados ("fortificantes")</strong>, que arruínam o paladar infantil e substituem a comida de verdade.</p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Faixa Etária</th>
+      <th>Esquema Alimentar Diário (Criança Amamentada)</th>
+      <th>Consistência Preconizada</th>
+      <th>Quantidade Média por Refeição Principal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Até 6 meses (0–179 dias)</strong></td>
+      <td>Leite Materno Exclusivo (AME) em livre demanda, dia e noite.</td>
+      <td>Líquida (exclusivamente leite humano; sem água, chás ou sucos).</td>
+      <td>Livre demanda (esvaziamento mamário espontâneo).</td>
+    </tr>
+    <tr>
+      <td><strong>Aos 6 meses completos</strong></td>
+      <td>Leite materno em livre demanda + <strong>2 lanches de frutas</strong> (manhã e tarde) + <strong>1 refeição principal</strong> (almoço ou jantar).</td>
+      <td>Alimentos bem cozidos e <strong>amassados com o garfo</strong> (papa espessa) ou em tiras macias (BLW/participativa); carnes desfiadas, moídas ou raspadas.</td>
+      <td>Inicia com 1 a 2 colheres de sopa, progredindo até <strong>2 a 3 colheres de sopa</strong> no total (~50–100 g).</td>
+    </tr>
+    <tr>
+      <td><strong>7 a 8 meses completos</strong></td>
+      <td>Leite materno em livre demanda + <strong>2 lanches de frutas</strong> + <strong>2 refeições principais</strong> (almoço e jantar).</td>
+      <td>Amassada mais grosseiramente com o garfo e pedaços bem macios que se desmancham na gengiva; carnes moídas ou desfiadas.</td>
+      <td><strong>3 a 4 colheres de sopa</strong> no total (~100–150 g ou 1/2 a 2/3 de tigela).</td>
+    </tr>
+    <tr>
+      <td><strong>9 a 11 meses completos</strong></td>
+      <td>Leite materno em livre demanda + <strong>2 lanches de frutas</strong> + <strong>2 refeições principais</strong> (almoço e jantar).</td>
+      <td>Alimentos <strong>picados em pequenos pedaços</strong>, desfiados ou levemente amassados, transicionando para a consistência macia da família (estímulo à pinça).</td>
+      <td><strong>4 a 5 colheres de sopa</strong> no total (~150–200 g ou 3/4 de tigela).</td>
+    </tr>
+    <tr>
+      <td><strong>12 a 24 meses (1 a 2 anos)</strong></td>
+      <td>Leite materno + <strong>3 refeições principais da família</strong> (café da manhã, almoço e jantar) + <strong>2 lanches saudáveis</strong> (manhã e tarde).</td>
+      <td><strong>Consistência normal da família</strong> (mantendo cortes longitudinais de segurança para uvas/tomates-cereja e exclusão de grãos duros inteiros).</td>
+      <td><strong>5 a 6 colheres de sopa</strong> no total (~200–250 g ou 1 prato/tigela infantil rasa).</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'composicao-refeicao-principal-biodisponibilidade-ferro',
+      title: '5. Composição da Refeição Principal (O Prato da Criança) e Biodisponibilidade de Nutrientes',
+      body_html: `
+<h3>A Regra dos 4 Grupos Alimentares na Refeição Principal (Almoço e Jantar)</h3>
+<p>De acordo com o Guia Alimentar do Ministério da Saúde e o Departamento de Nutrologia da SBP, toda refeição principal (almoço aos 6 meses; almoço e jantar a partir dos 7 meses) deve ser planejada como uma refeição completa, equilibrada em macronutrientes (carboidratos complexos, proteínas de alto valor biológico e lipídeos essenciais) e densa em micronutrientes biodisponíveis (especialmente ferro, zinco, cálcio, vitamina A e complexo B). Para garantir esse equilíbrio sem necessidade de cálculos complexos pela família, o prato da criança deve conter obrigatoriamente <strong>pelo menos 1 alimento de cada um dos 4 grupos funcionais abaixo</strong>:</p>
+<ol>
+  <li><strong>Grupo dos Cereais ou Raízes e Tubérculos (Fonte energética principal de carboidratos complexos):</strong> Inclui arroz (branco, parboilizado ou integral bem cozido), milho (polenta/angu de fubá, milho verde amassado, cuscuz), aveia, quinua, macarrão, batata-inglesa, batata-doce, mandioca (aipim/macaxeira), inhame, cará e mandioquinha (batata-baroa). Deve-se escolher 1 (ou no máximo 2) representantes por refeição, variando ao longo da semana para explorar a diversidade regional brasileira.</li>
+  <li><strong>Grupo das Leguminosas (Fonte de proteína vegetal rica em lisina, ferro não heme, zinco, folato e fibras solúveis):</strong> Inclui todos os tipos de feijão (carioca, preto, fradinho/de-corda, branco, vermelho, mulatinho, azuki), lentilha, grão-de-bico, ervilha seca cozida, fava e soja. <strong>Complementação proteica cereal + leguminosa:</strong> Os cereais (como o arroz) são pobres no aminoácido essencial <em>lisina</em>, mas ricos nos aminoácidos sulfurados <em>metionina e cisteína</em>; inversamente, as leguminosas (como o feijão) são ricas em <em>lisina</em> e limitantes em <em>metionina</em>. A combinação tradicional brasileira de arroz com feijão (na proporção aproximada de 2 a 3 partes de arroz para 1 parte de feijão) promove complementação perfeita do perfil de aminoácidos essenciais, gerando uma mistura proteica de alto valor biológico. Além disso, o remolho prévio dos grãos de feijão em água por 8 a 12 horas (descartando a água do remolho antes do cozimento) ativa fitases endógenas e reduz drasticamente o teor de <strong>ácido fítico (fitatos)</strong> e oligossacarídeos fermentáveis (rafinose e estaquiose), aumentando a biodisponibilidade do ferro e do zinco e diminuindo a flatulência no lactente. No início (6 meses), oferece-se o grão de feijão bem cozido amassado com o garfo junto com um pouco do caldo grosso.</li>
+  <li><strong>Grupo das Carnes, Vísceras ou Ovos (Fonte primordial de proteína de alto valor biológico, ferro heme, zinco e vitamina B12):</strong> Inclui carne bovina magra (músculo, acém, patinho, coxão mole), frango, porco (lombo magro), peixes sem espinhas (pescada, tilápia, sardinha fresca, salmão, merluza), vísceras (especialmente <strong>fígado bovino ou de frango, recomendado 1 vez por semana</strong> por sua extraordinária concentração de ferro heme, zinco, vitamina A pré-formada [retinol] e vitamina B12) e ovo inteiro bem cozido (clara + gema). A quantidade diária recomendada de proteína animal nas duas refeições principais somadas é de <strong>25 a 50 g/dia entre 6 e 11 meses</strong> (cerca de 1 a 2 colheres de sopa de carne moída/desfiada por dia) e de <strong>50 a 75 g/dia entre 12 e 24 meses</strong>. <em>Alerta fundamental de prova:</em> A carne <strong>não pode</strong> ser apenas cozida na panela para "dar gosto ao caldo" e depois retirada do prato da criança! Os minerais estruturais (ferro mioglobínico e zinco) e as proteínas permanecem retidos na fibra muscular; o caldo ralo praticamente não contém ferro nem proteína. A carne deve ser efetivamente ingerida pela criança (bem cozida, picada bem miudinho, moída, desfiada ou raspada).</li>
+  <li><strong>Grupo das Hortaliças — Verduras (folhas) e Legumes (frutos, flores e caules):</strong> Fornece vitaminas (pró-vitamina A/betacaroteno nos vegetais alaranjados e verde-escuros, ácido fólico, vitamina C, vitamina K), minerais, fitoquímicos antioxidantes e fibras alimentares que regulam o trânsito intestinal. Recomenda-se incluir na refeição pelo menos <strong>1 verdura folhosa</strong> (couve, espinafre, brócolis, taioba, bertalha, agrião, almeirão, mostarda, repolho, acelga) e <strong>1 legume colorido</strong> (abóbora/jerimum, cenoura, beterraba, chuchu, abobrinha, vagem, quiabo, jiló, berinjela, tomate).</li>
+</ol>
+
+<h3>Apresentação Visual no Prato e Adição de Lipídeos de Qualidade</h3>
+<p>Diferentemente da antiga prática de misturar todos os ingredientes em uma única "gororoba" pastosa de cor parda e sabor uniforme, o Guia Alimentar do Ministério da Saúde e a SBP determinam que <strong>os alimentos devem ser dispostos separadamente no prato da criança</strong> (cada qual amassado com o garfo em seu respectivo espaço). Essa separação visual e gustativa é essencial para que o lactente reconheça as diferentes cores, texturas, aromas e sabores individuais da abóbora, do feijão, do arroz, da carne e da couve, construindo seu repertório alimentar e prevenindo a seletividade alimentar futura.</p>
+<p>Quanto ao aporte lipídico, as gorduras devem fornecer entre <strong>30% e 40% do valor energético total (VET)</strong> no primeiro e segundo anos de vida, pois a mielinização acelerada do sistema nervoso central e o desenvolvimento dos fotorreceptores da retina exigem alto aporte de colesterol e ácidos graxos poli-insaturados de cadeia longa — ácido araquidônico (ARA, 20:4 n-6) e <strong>ácido docosa-hexaenoico (DHA, 22:6 n-3)</strong>, sintetizados a partir dos precursores essenciais ácido linoleico (ômega-6) e ácido alfa-linolênico (ômega-3). Recomenda-se utilizar pequena quantidade de <strong>óleo vegetal (soja, canola, girassol ou milho) ou azeite de oliva</strong> no preparo ou adicionar <strong>1 colher de chá rasa (cerca de 2,5 a 5 mL) de óleo vegetal cru ou azeite</strong> ao prato pronto da refeição principal. O óleo de soja e o óleo de canola destacam-se positivamente na prática pediátrica brasileira por apresentarem excelente relação entre ômega-6 e ômega-3 (ácido alfa-linolênico), enquanto frituras por imersão são proibidas.</p>
+
+<h3>Fisiologia da Absorção Intestinal do Ferro e Estratégias de Biodisponibilidade</h3>
+<p>O lactente entre 6 e 24 meses possui a maior necessidade de ferro por quilograma de peso corporal de todo o ciclo vital humano (cerca de <strong>0,9 a 1,1 mg/kg/dia</strong> de requerimento dietético, ou RDA de <strong>11 mg/dia dos 7 aos 12 meses</strong>), em virtude da rápida expansão da volemia, da síntese de hemoglobina e mioglobina e da participação do ferro como cofator de enzimas da mielinização e da síntese de neurotransmissores (dopamina, serotonina e noradrenalina) no estriado e no hipocampo. A deficiência de ferro nos primeiros 2 anos causa prejuízos neurocognitivos, motores e comportamentais que podem persistir mesmo após a correção hematológica da anemia.</p>
+<p>Na dieta humana, o ferro apresenta-se sob duas formas químicas com vias de absorção enterocitária radicalmente distintas no duodeno e jejuno proximal:</p>
+<ul>
+  <li><strong>Ferro Heme (Fe²⁺ protoporfirínico):</strong> Encontrado exclusivamente em alimentos de origem animal que contêm hemoglobina e mioglobina (carnes vermelhas, aves, peixes e vísceras como o fígado; <em>nota importante: o ovo e o leite não contêm ferro heme, apenas ferro não heme</em>). O anel porfirínico protege o átomo de ferro contra quelantes luminais (fitatos, taninos, cálcio) e permite sua internalização intacta na borda em escova do enterócito duodenal, sendo posteriormente clivado pela enzima <strong>heme oxigenase-1 (HO-1)</strong> intracelular para liberar o ferro ferroso (Fe²⁺) no pool lábil citoplasmático. Sua biodisponibilidade é altíssima, variando de <strong>15% a 35%</strong>, e independe do pH gástrico ou de fatores inibidores da refeição. Além disso, os peptídeos ricos em cisteína liberados durante a digestão da actina e da miosina das carnes (conhecidos classicamente como <strong>"Fator Carne" ou <em>MPF factor</em></strong>) quelam o ferro não heme presente nos vegetais da mesma refeição, mantendo-o solúvel e multiplicando em 2 a 3 vezes a absorção do ferro do feijão e das folhas verde-escuras!</li>
+  <li><strong>Ferro Não Heme (predominantemente férrico, Fe³⁺):</strong> Presente nos alimentos de origem vegetal (leguminosas como feijão e lentilha, verduras folhosas escuras como couve e espinafre, beterraba, cereais fortificados) e também na gema do ovo. Possui baixa biodisponibilidade basal (apenas <strong>2% a 10%</strong>), pois na forma trivalente (Fe³⁺) precipita facilmente em pH alcalino duodenal e sofre forte quelação por <strong>inibidores luminais</strong>. Para atravessar a membrana apical do enterócito através do transportador de metais divalentes 1 (<strong>DMT1</strong> — <em>Divalent Metal Transporter 1</em>), o ferro férrico (Fe³⁺) precisa obrigatoriamente ser reduzido à forma divalente ferrosa (<strong>Fe²⁺</strong>) pela enzima ferri-redutase da borda em escova chamada <strong>citocromo b duodenal (Dcytb)</strong>, processo este intensamente potencializado pelo meio ácido e por agentes redutores. Uma vez dentro do enterócito, o Fe²⁺ pode ser armazenado na <strong>ferritina</strong> (e perdido na descamação epitelial caso não haja necessidade sistêmica) ou exportado pela membrana basolateral para a corrente sanguínea através da <strong>ferroportina-1</strong> (cuja expressão é regulada negativamente pelo hormônio hepático <strong>hepcidina</strong>), sendo então oxidado pela <strong>hefaestina</strong> e acoplado à <strong>transferrina plasmática</strong>.</li>
+</ul>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Fatores Facilitadores da Absorção do Ferro Não Heme</th>
+      <th>Mecanismo Bioquímico no Duodeno</th>
+      <th>Fatores Inibidores (Quelantes Luminais)</th>
+      <th>Orientação Prática na Consulta de Puericultura</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ácido Ascórbico (Vitamina C)</strong> e ácidos orgânicos (cítrico, málico)</td>
+      <td>Reduz diretamente o Fe³⁺ insolúvel em Fe²⁺ solúvel no lúmen ácido e forma um quelato solúvel (ascorbato de ferro) que permanece absorvível pelo DMT1 mesmo no pH alcalino duodenal.</td>
+      <td><strong>Fitatos (ácido fítico):</strong> cereais integrais crus, farelos e feijões sem remolho.<br><strong>Oxalatos:</strong> espinafre, beterraba, cacau.<br><strong>Polifenóis/Taninos:</strong> chá-preto, chá-mate, chá-verde, camomila, erva-doce, café, refrigerantes.<br><strong>Cálcio e Fosfoproteínas:</strong> leite de vaca, queijos, iogurtes e fosvitina do ovo.</td>
+      <td>Oferecer <strong>fruta cítrica <em>in natura</em> rica em vitamina C</strong> (laranja, mexerica, acerola, caju, goiaba, mamão, manga, morango, kiwi) imediatamente após o almoço e o jantar.<br><strong>Evitar leite de vaca/derivados, chás e café</strong> junto ou logo após as refeições salgadas (competição do cálcio com o DMT1/ferroportina e quelação por taninos).</td>
+    </tr>
+    <tr>
+      <td><strong>Tecido Animal ("Fator Carne" — peptídeos de cisteína)</strong></td>
+      <td>Peptídeos sulfidrílicos liberados pela digestão de carne bovina, aves, peixe ou fígado ligam-se ao ferro não heme, impedindo sua polimerização e precipitação por fitatos.</td>
+      <td><strong>Antiácidos e Inibidores de Bomba de Prótons (IBP):</strong> elevam o pH gástrico, prejudicando a solubilização inicial do Fe³⁺ dos sais férricos e alimentos vegetais.</td>
+      <td>Garantir presença diária de <strong>carne, ave ou peixe (25–75 g/dia)</strong> e <strong>fígado 1x/semana</strong> no prato junto com o feijão e as verduras verde-escuras; deixar o feijão de molho por 8–12h antes de cozinhar.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'consistencia-desenvolvimento-oromotor-asfixia',
+      title: '6. Evolução da Consistência, Desenvolvimento Oromotor e Prevenção da Asfixia',
+      body_html: `
+<h3>Por Que Liquidificar ou Peneirar a Comida é um Erro Grave na Pediatria?</h3>
+<p>Uma das intervenções mais importantes do pediatra na consulta de 6 meses é desconstruir o hábito cultural de bater a sopa da criança no liquidificador ou <em>mixer</em> ou de passá-la na peneira. Existem dois fundamentos fisiopatológicos inquestionáveis que tornam essa prática proscrita:</p>
+<ol>
+  <li><strong>Colapso da Densidade Energética e Risco de Desnutrição (Fisiologia da Capacidade Gástrica):</strong> Como a capacidade gástrica do lactente de 6 a 8 meses é pequena (~20 a 30 mL/kg, comportando cerca de 150 a 200 mL por refeição), cada colherada precisa concentrar alta quantidade de calorias e micronutrientes. A Organização Mundial da Saúde estabelece que a <strong>densidade energética mínima de uma refeição complementar deve ser de 0,8 a 1,0 kcal/grama</strong> (sendo que o próprio leite materno possui densidade de ~0,67 a 0,70 kcal/mL). Quando uma refeição é preparada como papa espessa amassada no garfo (com pouca água de cozimento e 1 colher de chá de óleo vegetal), sua densidade energética atinge facilmente 0,8 a 1,1 kcal/g — uma colher de sopa não escorre e permanece firme. Quando a família bate a comida no liquidificador ou faz uma "sopinha rala" para passar na peneira, é obrigada a adicionar grande volume de água ou caldo, derrubando a densidade energética para <strong>0,25 a 0,35 kcal/mL (menos da metade da densidade calórica do próprio leite materno!)</strong>. O lactente enche rapidamente o estômago de água morna, aciona os mecanorreceptores vagais de distensão gástrica, sente-se saciado no momento, mas entra em déficit calórico-proteico e ferropênico, voltando a chorar de fome 40 minutos depois.</li>
+  <li><strong>Prejuízo ao Desenvolvimento Oromotor, Craniomandibular e Fonoarticulatório:</strong> No recém-nascido, a mandíbula é fisiologicamente retrognata e o espaço intraoral é quase totalmente preenchido pela língua e pelos coxins adiposos de Bichat nas bochechas, adaptados para a pressão negativa da sucção mamária. A partir dos 6 meses, o contato com alimentos de textura pastosa heterogênea e grumosa (amassados no garfo) exige que a criança realize <strong>movimentos de amassamento vertical (língua contra o palato duro e rebordos gengivais)</strong> e, progressivamente, <strong>movimentos diagonais e rotatórios da mandíbula</strong> mediados pelos músculos masseter, temporal, pterigoideo medial e lateral e bucinador. Esse trabalho mecânico exerce tração periosteal sobre a maxila e a mandíbula, estimulando o crescimento ósseo transversal da face, o correto posicionamento da futura dentição decídua, a respiração nasal fisiológica (pelo selamento labial tônico) e o refinamento motor fino da ponta da língua, essencial para a futura articulação de fonemas linguodentais e alveolares. Crianças alimentadas com papas liquidificadas ou peneiradas até os 9–12 meses mantêm o padrão imaturo de deglutição com interposição lingual, desenvolvem <strong>hipersensibilidade tátil intraoral</strong> e passam a apresentar náuseas, vômitos e recusa alimentar severa toda vez que sentem qualquer pequeno pedaço sólido na boca após 1 ano de idade.</li>
+</ol>
+
+<h3>A Janela Crítica das Texturas (8 a 10 Meses)</h3>
+<p>Estudos longitudinais de coorte (como o estudo britânico ALSPAC — <em>Avon Longitudinal Study of Parents and Children</em>) demonstraram a existência de uma <strong>janela crítica sensorial e motora para a aceitação de texturas granuladas e pedaços entre o 8º e o 9º mês de vida</strong>. Lactentes que só foram expostos a alimentos com pedaços (consistência mais grosseira/picada) após os 10 meses de idade apresentaram taxas significativamente maiores de dificuldades alimentares, seletividade extrema, recusa de frutas e vegetais e aversão a texturas sólidas aos 15 meses e aos 7 anos de idade, mesmo quando comparados a crianças que iniciaram pedaços entre 6 e 9 meses. Portanto, a progressão de consistência não é meramente opcional: <strong>6 meses = amassado no garfo; 7–8 meses = amassado grosseiro com pedacinhos macios; 9–11 meses = picado em pequenos pedaços; 12 meses = consistência da família</strong>.</p>
+
+<h3>Fisiologia Protetora vs. Emergência: Reflexo de Gag (Náusea) vs. Engasgo Verdadeiro (Asfixia)</h3>
+<p>O maior receio dos pais durante a evolução das consistências — seja no método tradicional com colher ou no método BLW/participativo — é o engasgo. É dever do pediatra ensinar a família a diferenciar com precisão cirúrgica o <strong>reflexo de <em>gag</em> (reflexo nauseoso ou de vômito, que é um mecanismo fisiológico de proteção)</strong> do <strong>engasgo verdadeiro (obstrução mecânica da via aérea superior com risco de asfixia)</strong>:</p>
+<ul>
+  <li><strong>Reflexo de <em>Gag</em> (Reflexo Nauseoso Protetor):</strong> No adulto, as zonas de disparo do reflexo nauseoso (aferência pelo nervo glossofaríngeo — IX par craniano; eferência pelo nervo vago — X par craniano) localizam-se profundamente na base posterior da língua, pilares amigdalianos e parede posterior da faringe. No lactente de 6 a 8 meses, entretanto, esses receptores mecanossensoriais localizam-se muito mais anteriormente, no <strong>terço médio da língua</strong>! Isso é uma brilhante adaptação evolutiva: sempre que um pedaço de alimento grande demais ou mal amassado avança pelo meio da língua antes de estar pronto para ser deglutido, o reflexo de <em>gag</em> é disparado <em>muito antes</em> de o alimento chegar perto da laringe/glote. A faringe se contrai, a glote se fecha reflexamente para proteger a traqueia, a língua faz um movimento peristáltico reverso e empurra o pedaço de volta para a parte anterior da boca para ser novamente mastigado ou cuspido. <strong>Quadro clínico do <em>gag</em>:</strong> A criança abre a boca, projeta a língua para a frente, faz careta/mímica de ânsia ou retching, os olhos podem lacrimejar, a face fica levemente avermelhada (ruborizada), pode haver tosse audível, mas <strong>não há dispneia silenciosa nem cianose</strong>; em poucos segundos a criança expele ou remastiga o alimento e continua comendo tranquilamente. <strong>Conduta no <em>gag</em>:</strong> Manter a calma absoluta, não gritar para não assustar o bebê (se a criança se assustar e inspirar profundamente chorando, pode aspirar o alimento!), e <strong>jamais introduzir o dedo na boca da criança</strong> (a varredura digital às cegas empurra o alimento do dorso da língua diretamente para a hipofaringe e laringe, transformando um <em>gag</em> benigno em um engasgo verdadeiro!).</li>
+  <li><strong>Engasgo Verdadeiro / Obstrução de Via Aérea por Corpo Estranho (OVACE):</strong> Ocorre quando o alimento ultrapassa a faringe e obstrui parcial ou totalmente o ádito laríngeo, a glote ou a traqueia. Na <strong>obstrução parcial (leve)</strong>, a criança ainda consegue tossir vigorosamente com som audível e chorar; a conduta é não interferir fisicamente enquanto a tosse for eficaz, mantendo vigilância contínua. Já na <strong>obstrução total ou grave</strong>, instala-se uma emergência médica imediata: o fluxo aéreo cessa, a criança apresenta <strong>tosse silenciosa (ineficaz), incapacidade de emitir sons ou chorar, tiragem intercostal/supraclavicular aguda, angústia facial extrema e rápida evolução para palidez/cianose labial e perda de consciência</strong>.</li>
+  <li><strong>Conduta Imediata na OVACE Grave em Lactentes (&lt; 1 ano) Conscientes (Diretrizes AHA/SBP):</strong> Acionar ajuda (SAMU 192) e iniciar imediatamente a <strong>Manobra de Desengasgo para Lactentes: 5 golpes dorsais (tapotagem interescapular) seguidos de 5 compressões torácicas</strong>. Posiciona-se o lactente em decúbito ventral (bruços) sobre o antebraço do socorrista, com a cabeça em nível <em>mais baixo</em> que o tronco (usando a coxa do socorrista como apoio), sustentando firmemente a mandíbula do bebê com os dedos (sem comprimir as partes moles submandibulares); aplicam-se <strong>5 golpes vigorosos com a região hipotenar da outra mão entre as escápulas</strong>. Em seguida, gira-se o lactente em bloco para decúbito dorsal sobre o outro antebraço (mantendo a cabeça mais baixa que o tórax) e aplicam-se <strong>5 compressões torácicas rápidas no terço inferior do esterno</strong> (1 dedo abaixo da linha intermamilar, com 2 dedos, na mesma posição da RCP, mas em ritmo de ~1 por segundo para gerar tosse artificial). Repete-se o ciclo 5 golpes dorsais / 5 compressões torácicas até a expulsão do alimento ou até o lactente tornar-se inconsciente (caso em que se inicia RCP começando pelas compressões torácicas e inspecionando a cavidade oral antes das ventilações para retirar o corpo estranho <em>apenas se for claramente visível</em>). <em>Nota para maiores de 1 ano:</em> A partir de 1 ano de idade completo, a manobra para OVACE grave consciente passa a ser a <strong>Manobra de Heimlich</strong> (compressões abdominais subdiafragmáticas em J, acima da cicatriz umbilical e abaixo do apêndice xifoide).</li>
+</ul>
+
+<h3>Preparo Seguro e Alimentos com Alto Risco de Broncoaspiração</h3>
+<p>Alimentos pequenos, esféricos, cilíndricos, duros, escorregadios ou excessivamente fibrosos possuem o diâmetro exato da glote infantil e atuam como verdadeiras "rolhas" na via aérea de crianças menores de 4 anos (que ainda não possuem todos os molares decíduos nem força mastigatória plena):</p>
+<ul>
+  <li><strong>Alimentos redondos e escorregadios (uvas, tomates-cereja, ovos de codorna, mirtilos grandes, azeitonas sem caroço, cerejas):</strong> Nunca devem ser oferecidos inteiros nem cortados ao meio no sentido transversal (pois continuam redondos). Devem ser obrigatoriamente <strong>cortados no sentido longitudinal (de comprido) em 4 partes (quartos)</strong> e ter eventuais sementes retiradas.</li>
+  <li><strong>Cenoura crua, maçã crua dura e aipo em pedaços/blocos:</strong> Têm alta dureza e podem quebrar em fragmentos angulados que são aspirados. Nos primeiros meses da alimentação complementar (6 a 11 meses), a cenoura e os legumes firmes devem ser oferecidos <strong>cozidos no vapor até ficarem macios</strong> (o teste prático é conseguir esmagar o pedaço facilmente entre o polegar e o indicador do adulto), e a maçã/pera cruas devem ser oferecidas <strong>raspadas com colher ou raladas</strong> (ou cozidas em fatias macias).</li>
+  <li><strong>Oleaginosas inteiras (amendoim, castanha-de-caju, castanha-do-pará, nozes, amêndoas), milho de pipoca (pipoca pronta), sementes de girassol/abóbora inteiras e balas duras/pirulitos:</strong> São as principais causas de broncoaspiração de corpo estranho atendidas em broncoscopia rígida pediátrica. Pipoca e oleaginosas inteiras devem ser <strong>evitadas em menores de 4 anos de idade</strong>. Quando se deseja introduzir amendoim ou castanhas aos 6 meses (para indução de tolerância imunológica ou aporte nutricional), devem ser oferecidos exclusivamente na forma de <strong>farinha finamente triturada ou pasta 100% pura diluída em água morna, leite materno ou misturada à fruta amassada</strong> (nunca pasta pura espessa na colher, que também pode aderir ao palato e causar engasgo).</li>
+  <li><strong>Peixes e carnes com ossos:</strong> Inspecionar rigorosamente com os dedos cada porção de filé de peixe ou frango desfiado para garantir ausência total de espinhas ou fragmentos cartilaginosos/ósseos.</li>
+</ul>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Parâmetro Clínico</th>
+      <th>Reflexo de <em>Gag</em> (Náusea Fisiológica)</th>
+      <th>Engasgo Verdadeiro (OVACE Grave / Asfixia)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Localização Anatômica</strong></td>
+      <td>Cavidade oral (terço médio/posterior da língua e orofaringe), <em>antes</em> da via aérea.</td>
+      <td>Laringe, glote ou traqueia (obstrução mecânica da via aérea respiratória).</td>
+    </tr>
+    <tr>
+      <td><strong>Sinais e Sintomas</strong></td>
+      <td>Ânsia, careta, língua projetada para fora, olhos lacrimejantes, face avermelhada (rubor), tosse ou som audível, resolução espontânea em segundos.</td>
+      <td>Silêncio súbito ou tosse silenciosa/ineficaz, incapacidade de chorar, olhar de pânico, tiragem intercostal, evolução para palidez ou <strong>cianose</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Significado Fisiológico</strong></td>
+      <td>Mecanismo protetor normal do aprendizado oromotor aos 6–9 meses; ensina o bebê a dimensionar o bolo alimentar.</td>
+      <td>Emergência médica ameaçadora à vida por hipóxia aguda.</td>
+    </tr>
+    <tr>
+      <td><strong>Conduta Correta</strong></td>
+      <td>Observar com tranquilidade, não assustar o bebê, <strong>não colocar o dedo na boca</strong>, deixar a criança expelir ou remastigar o alimento.</td>
+      <td>Em <strong>&lt; 1 ano</strong> consciente: <strong>5 golpes dorsais interescapulares + 5 compressões torácicas</strong> (cabeça mais baixa que o tronco). Em <strong>&ge; 1 ano</strong>: Manobra de Heimlich.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'abordagens-oferta-responsiva-blw-bliss',
+      title: '7. Abordagens de Oferta Alimentar: Método Tradicional Responsivo, BLW e BLISS',
+      body_html: `
+<h3>Alimentação Responsiva: O Padrão-Ouro Comportamental (OMS, OPAS e SBP)</h3>
+<p>Independentemente da ferramenta utilizada para levar o alimento à boca (colher conduzida pelo cuidador, mãos da própria criança ou abordagem mista), a diretriz comportamental soberana preconizada pela Organização Mundial da Saúde, pelo Ministério da Saúde e pela Sociedade Brasileira de Pediatria é a <strong>Alimentação Responsiva</strong>, derivada da estrutura teórica dos <em>Cuidados Nutritivos (Nurturing Care)</em>. Na alimentação responsiva, a refeição é compreendida como uma interação bidirecional recíproca baseada em quatro etapas comportamentais:</p>
+<ol>
+  <li>A criança emite sinais motores, vocais ou faciais de <strong>fome</strong> (agitação motora ao ver o prato, abertura voluntária da boca, inclinação anterior do tronco, apontar para os alimentos) ou de <strong>saciedade</strong> (desaceleração da mastigação, fechamento firme dos lábios, rotação lateral da cabeça, empurrar a colher ou o prato, interesse em brincar ou arremessar o alimento no chão).</li>
+  <li>O cuidador reconhece prontamente esses sinais e os distingue de outras demandas (sono, desconforto, fralda suja ou dor).</li>
+  <li>O cuidador responde de maneira <strong>pronta, emocionalmente acolhedora e contingente</strong> ao estágio de desenvolvimento da criança (oferecendo o alimento com calma quando há fome; encerrando a oferta sem punição, chantagem ou insistência quando há saciedade).</li>
+  <li>A criança experimenta uma resposta previsível do ambiente, consolidando sua segurança emocional e preservando a calibração fisiológica dos centros hipotalâmicos da fome (núcleo arqueado — neurônios NPY/AgRP) e da saciedade (neurônios POMC/CART).</li>
+</ol>
+
+<h4>Neofobia Alimentar Fisiológica e a Regra das 8 a 15 Exposições</h4>
+<p>Do ponto de vista evolutivo, os seres humanos são onívoros cautelosos: enquanto o sabor doce sinaliza na natureza fontes seguras de energia (leite materno, frutas maduras), os sabores amargo e azedo (típicos de alcaloides vegetais e toxinas naturais) despertam desconfiança inata em lactentes e pré-escolares. Ao ser apresentado pela primeira vez a um legume verde ou amargo (como brócolis, escarola, jiló ou couve), é perfeitamente normal que o lactente faça uma careta reflexa de estranhamento facial. Estudos clássicos sobre desenvolvimento do paladar infantil (Birch, Mennella e Sullivan) demonstram que são necessárias, em média, <strong>8 a 15 exposições repetidas (em dias diferentes e sob diferentes formas de preparo/apresentação)</strong> a um mesmo alimento novo para que a criança supere a desconfiança inicial e passe a aceitá-lo com prazer. Muitas famílias desistem na 2ª ou 3ª tentativa, rotulando precocemente a criança ("meu filho odeia legumes!"). O pediatra deve orientar que careta não significa aversão definitiva: deve-se continuar oferecendo o alimento no prato nos dias subsequentes, sem forçar, permitindo que a criança o veja, toque, cheire e veja os pais comendo o mesmo item.</p>
+
+<h3>O Método BLW (<em>Baby-Led Weaning</em> — Desmame Guiado pelo Bebê)</h3>
+<p>Idealizado no Reino Unido pela enfermeira obstétrica e pesquisadora Gill Rapley na década de 2000, o método <strong>BLW (<em>Baby-Led Weaning</em>)</strong> propõe que, a partir dos 6 meses de idade completos (e mediante presença rigorosa de todos os sinais de prontidão neuromotora), a alimentação complementar seja feita <strong>exclusivamente por autoalimentação</strong>: não se utilizam papas amassadas nem colheres guiadas pelo adulto; os alimentos são colocados diante do bebê em pedaços grandes e macios (cortes anatômicos em formato de tiras ou bastões para preensão palmar aos 6–8 meses, e cubos pequenos para pinça a partir dos 9 meses), e o próprio lactente escolhe o que pegar, leva à boca no seu ritmo e decide quanto ingerir.</p>
+<p><strong>Benefícios potenciais descritos para o BLW:</strong> Estímulo precoce da coordenação motora fina (olho-mão-boca) e da exploração somatossensorial das texturas reais dos alimentos; participação imediata da criança nas refeições em família; menor ansiedade materna pelo controle de gramas ingeridos; e maior respeito aos sinais internos de saciedade.</p>
+<p><strong>As 3 Preocupações Clínicas Clássicas da Literatura Médica sobre o BLW Estrito/Radical:</strong> Quando aplicado de forma rígida e sem orientação nutrológica individualizada, o BLW puro despertou três críticas fundamentais nas sociedades de pediatria (SBP, ESPGHAN e AAP):</p>
+<ol>
+  <li><strong>Risco de Baixo Aporte Energético (Falha de Crescimento em Lactentes Vulneráveis):</strong> Nos primeiros meses (6 a 8 meses), a habilidade motora manual do lactente ainda é imatura; grande parte do alimento segurado na mão cai no babador ou no chão, ou é apenas sugada/explorada sem ser efetivamente deglutida. Se a família oferece apenas bastões de legumes cozidos no vapor (ex.: chuchu, brócolis e cenoura, que possuem baixíssima densidade calórica, &lt;0,3 kcal/g), o lactente pode não atingir a meta energética diária, especialmente se for prematuro, pequeno para a idade gestacional (PIG) ou tiver desaceleração ponderal prévia.</li>
+  <li><strong>Risco de Deficiência de Ferro e Anemia Ferropriva:</strong> Os alimentos mais fáceis de um bebê de 6 meses segurar com a mão são frutas e legumes cozidos em tiras — ambos pobres em ferro biodisponível. Já os alimentos ricos em ferro (carnes bovinas fibrosas, fígado e caldos/grãos de feijão) são mais difíceis de serem mastigados em pedaços grandes por um lactente edêntulo de 6 meses ou de serem pegos sem colher, levando muitas famílias praticantes de BLW não orientado a omitirem carnes e leguminosas nas primeiras semanas.</li>
+  <li><strong>Risco de Engasgo (Asfixia):</strong> Se os pais não forem rigorosamente treinados sobre cortes seguros e consistência macia (oferecendo, por exemplo, bastões de maçã crua, cenoura crua ou uvas inteiras), o risco de obstrução de via aérea aumenta.</li>
+</ol>
+
+<h3>O Método BLISS (<em>Baby-Led Introduction to Solids</em>) e as Evidências de Ensaios Clínicos</h3>
+<p>Para responder cientificamente às três preocupações do BLW clássico, pesquisadores da Universidade de Otago (Nova Zelândia, liderados por Cameron, Heath e Taylor) desenvolveram e testaram em ensaio clínico randomizado controlado uma versão modificada e nutricionalmente segura chamada <strong>BLISS (<em>Baby-Led Introduction to Solids</em>)</strong>. O protocolo BLISS mantém a filosofia de autoalimentação pelo bebê aos 6 meses, mas impõe <strong>três regras obrigatórias em absolutamente todas as refeições</strong>:</p>
+<ol>
+  <li><strong>Oferecer obrigatoriamente 1 alimento rico em ferro em cada refeição:</strong> Carnes preparadas em formatos seguros que o bebê consiga segurar e que se desmanchem facilmente na boca (ex.: hambúrguer caseiro macio de carne moída bovina ou fígado misturado com aveia/legumes e assado/grelhado em formato de tiras; carne muito bem cozida na pressão desfiada em bolinhos macios; patê de fígado ou pasta de feijão/lentilha espalhados sobre tiras de tubérculos ou pão macio).</li>
+  <li><strong>Oferecer obrigatoriamente 1 alimento de alta densidade energética em cada refeição:</strong> Tubérculos (batata-doce, mandioca, inhame), abacate, banana, ovo cozido/omelete em tiras, preparações enriquecidas com azeite/óleo vegetal, evitando refeições compostas apenas por hortaliças hipocalóricas.</li>
+  <li><strong>Preparo rigoroso para prevenção de engasgo:</strong> Testar sempre a maciez do alimento entre o polegar e o indicador antes de entregar ao bebê; proibir alimentos duros, redondos ou crocantes; garantir que a criança esteja sentada ereta a 90° no cadeirão sob supervisão visual ininterrupta de um adulto treinado para diferenciar <em>gag</em> de asfixia.</li>
+</ol>
+<p>Os resultados do ensaio clínico randomizado BLISS mostraram que, quando os pais recebem esse treinamento estruturado, <strong>não houve diferença estatisticamente significativa na ingestão de ferro, nos níveis de ferritina/hemoglobina aos 12 meses, no escore-Z de IMC nem na incidência de engasgos graves</strong> em comparação ao método tradicional de alimentação com colher.</p>
+
+<h3>Posicionamento Oficial da Sociedade Brasileira de Pediatria (SBP): A Abordagem Mista / Participativa</h3>
+<p>O Departamento Científico de Nutrologia da SBP, em seus documentos científicos de atualização sobre Alimentação Complementar e BLW, posiciona-se de forma equilibrada e pragmática: <strong>não recomenda o BLW de forma exclusiva e radical como regra única para todas as crianças</strong>, mas valoriza seus princípios de autonomia e recomenda a <strong>Abordagem Mista, Integrada ou Participativa (Alimentação Responsiva com Estímulo à Autonomia)</strong>.</p>
+<p>Como funciona a abordagem recomendada pela SBP na prática? Na mesma refeição, o cuidador oferece ativamente os alimentos dos 4 grupos amassados no garfo utilizando a <strong>colher</strong> (garantindo que o lactente ingira a cota necessária de carne desfiada/moída, feijão, arroz e óleo vegetal para suprir ferro, zinco e calorias, com plena observância dos sinais de fome e saciedade), <strong>e simultaneamente</strong> coloca no prato ou na bandeja do cadeirão alguns pedaços/tiras de alimentos bem cozidos e macios (ex.: um bastão de batata-doce ou cenoura cozida no vapor, um florete de brócolis bem macio, uma tira de banana ou manga) para que o próprio lactente os pegue com as mãos, explore a textura, treine a coordenação olho-mão-boca e participe ativamente do ato de se alimentar. À medida que a destreza manual da criança avança entre 9 e 12 meses, a participação autônoma cresce naturalmente até o domínio dos talheres.</p>
+
+<h4>Geometria dos Cortes Seguros para Autoalimentação (6–8 Meses vs. 9–12 Meses)</h4>
+<ul>
+  <li><strong>Dos 6 aos 8 meses (Fase da Preensão Palmar Global):</strong> A criança ainda não possui movimento de pinça com os dedos; ela fecha a mão inteira sobre o alimento como um punho cerrado e não sabe abrir os dedos voluntariamente dentro da boca para soltar o que está escondido na palma. Se você der um cubo pequeno para um bebê de 6 meses, ele não conseguirá comê-lo (pois o cubo ficará escondido dentro da mão fechada!). Por isso, aos 6–8 meses, os alimentos para autoalimentação devem ser cortados em <strong>tiras ou bastões (formato de "dedo de adulto" ou batata frita grossa), com cerca de 5 a 7 cm de comprimento por 1,5 a 2 cm de largura</strong>. Assim, quando o bebê fecha o punho sobre a tira, sobra uma ponta de 2 a 3 cm para fora da mãozinha, que ele consegue levar à boca e morder com a gengiva!</li>
+  <li><strong>Dos 9 aos 12 meses (Fase da Preensão em Pinça):</strong> Quando o bebê adquire a pinça digital entre o polegar e o indicador, ele tende a enfiar uma tira grande inteira de uma vez na boca. Nessa fase (9 meses em diante), transiciona-se o corte das tiras grandes para <strong>pequenos cubos macios ou grãos inteiros bem cozidos</strong>, estimulando a pinça fina e a mastigação lateralizada.</li>
+</ul>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Abordagem de Introdução Alimentar</th>
+      <th>Forma de Oferta e Consistência Inicial (6m)</th>
+      <th>Vantagens Principais</th>
+      <th>Riscos Potenciais / Pontos de Atenção</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Tradicional Não Responsiva (Conduta Inadequada)</strong></td>
+      <td>Papas passadas na peneira ou liquidificadas; cuidador controla rigidamente o volume e insiste/distrai com telas.</td>
+      <td>Falsa sensação de controle parental do volume ingerido.</td>
+      <td>Baixa densidade calórica (se sopa rala), atraso oromotor, perda da autorregulação da saciedade, risco de obesidade ou aversão alimentar.</td>
+    </tr>
+    <tr>
+      <td><strong>BLW Estrito (Gill Rapley)</strong></td>
+      <td>100% autoalimentação pelo bebê com alimentos em tiras macias desde os 6 meses; sem uso de colher ou papas pelo adulto.</td>
+      <td>Excelente estímulo sensório-motor (olho-mão-boca), autonomia precoce e respeito à saciedade.</td>
+      <td>Tríade de preocupação se não orientado: <strong>baixo aporte calórico, deficiência de ferro e risco de engasgo</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>BLISS (<em>Baby-Led Introduction to Solids</em>)</strong></td>
+      <td>Autoalimentação guiada pelo bebê, mas com protocolo nutricional estrito em todas as refeições.</td>
+      <td>Preserva a autonomia do BLW eliminando o déficit de ferro e de calorias em ensaios clínicos.</td>
+      <td>Exige treinamento intensivo dos pais (1 alimento rico em ferro + 1 hipercalórico + preparo seguro antiengasgo em cada refeição).</td>
+    </tr>
+    <tr>
+      <td><strong>Abordagem Mista / Participativa e Responsiva (Padrão SBP/MS)</strong></td>
+      <td>Combina oferta responsiva na colher (4 grupos amassados no garfo) + pedaços/tiras macias para o bebê pegar com as mãos.</td>
+      <td>Une a <strong>segurança nutricional</strong> (aporte garantido de carne, feijão e calorias) ao <strong>estímulo psicomotor e autonomia</strong> do bebê.</td>
+      <td>Exige paciência com a bagunça fisiológica da exploração manual e respeito absoluto aos sinais de saciedade.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'janela-imunologica-alergenos-gluten-leap',
+      title: '8. Janela Imunológica, Introdução de Alérgenos Alimentares e Glúten',
+      body_html: `
+<h3>A Mudança de Paradigma na Alergologia e Nutrologia Pediátrica</h3>
+<p>Até o início dos anos 2000, diretrizes internacionais recomendavam postergar a introdução dos principais alimentos potencialmente alergênicos — como clara de ovo, peixe, frutos do mar, amendoim, castanhas e trigo — para após 12, 24 ou até 36 meses de vida, sob a hipótese intuitiva de que evitar o contato do sistema imune imaturo com proteínas alergênicas preveniria o desenvolvimento de alergias alimentares IgE-mediadas. Contudo, na década seguinte a essa recomendação restritiva, a prevalência de alergia ao ovo e ao amendoim em países ocidentais <strong>dobrou ou triplicou</strong>.</p>
+<p>A explicação mecanística para esse fracasso histórico foi fornecida pela <strong>Hipótese da Dupla Exposição ao Alérgeno (<em>Dual-Allergen Exposure Hypothesis</em>)</strong>, formulada por Gideon Lack e colaboradores, e confirmada por grandes ensaios clínicos randomizados que mudaram definitivamente as diretrizes da SBP, da Academia Americana de Pediatria (AAP), da <em>European Academy of Allergy and Clinical Immunology</em> (EAACI) e da ESPGHAN.</p>
+
+<h3>Fisiopatologia da Dupla Exposição ao Alérgeno: Pele Inflamada vs. Intestino Tolerogênico</h3>
+<p>De acordo com a hipótese da dupla exposição, o destino imunológico da resposta a uma proteína alimentar (alergia IgE-mediada versus tolerância imunológica) depende criticamente da <strong>via anatômica e do momento do primeiro contato</strong>:</p>
+<ul>
+  <li><strong>Via Epicutânea (Sensibilização Alérgica — Perfil Th2/IgE):</strong> Quando uma família consome ovo, amendoim, trigo ou peixe em casa, mas <em>proíbe</em> o lactente de ingerir esses alimentos por via oral no primeiro ano de vida, o bebê continua exposto a microquantidades dessas proteínas presentes na poeira doméstica, nas mãos dos pais e nos lençóis. Se o lactente possui uma barreira cutânea íntegra, nada ocorre; porém, se ele apresenta <strong>dermatite atópica (eczema infantil)</strong> ou defeitos na proteína <em>filagrina</em> do estrato córneo, esses alérgenos ambientais penetram pela epiderme inflamada. Os queratinócitos lesados secretam alarminas epiteliais potentes — <strong>TSLP (linfopoietina estromal tímica), IL-25 e IL-33</strong> — que ativam células linfoides inatas do tipo 2 (ILC2) e células dendríticas cutâneas (células de Langerhans), polarizando os linfócitos T CD4+ para o <strong>perfil Th2</strong> (secreção de IL-4, IL-5 e IL-13) e induzindo os linfócitos B a produzirem <strong>anticorpos IgE específicos</strong> que se ligam aos receptores Fc&epsilon;RI de mastócitos e basófilos. Assim, quando a criança finalmente come ovo ou amendoim pela primeira vez aos 12 ou 24 meses, ela já está sensibilizada pela pele e desenvolve anafilaxia ou urticária aguda!</li>
+  <li><strong>Via Enteral Precoce aos 6 Meses (Indução de Tolerância Oral — Perfil Treg/IgG4/sIgA):</strong> Quando a proteína alimentar (ovo bem cozido, peixe, glúten, amendoim em pasta diluída) é introduzida <strong>por via oral a partir do 6º mês de vida</strong> (na janela imunológica de 4 a 6/11 meses, idealmente sob a proteção imunomoduladora do aleitamento materno), o primeiro contato ocorre no <strong>GALT intestinal</strong>. Como vimos na Seção 1, as células dendríticas CD103+ da lâmina própria, na presença de TGF-beta e ácido retinoico, induzem a expansão clonal de <strong>linfócitos T reguladores (Treg CD4+ CD25+ FoxP3+)</strong> produtores de IL-10 e TGF-beta, além de estimular a síntese de anticorpos bloqueadores da subclasse <strong>IgG4</strong> e de <strong>IgA secretora</strong>, que neutralizam o antígeno e impedem a degranulação mastocitária mesmo que haja exposição cutânea concomitante.</li>
+</ul>
+
+<h3>Os Grandes Estudos Clínicos: LEAP, EAT e PETIT</h3>
+<ul>
+  <li><strong>Estudo LEAP (<em>Learning Early About Peanut Allergy</em> — Du Toit et al., <em>NEJM</em>, 2015):</strong> Ensaio clínico randomizado landmark que acompanhou 640 lactentes entre 4 e 11 meses de idade considerados de <strong>alto risco para alergia ao amendoim</strong> (definidos pela presença de dermatite atópica grave e/ou alergia comprovada ao ovo). As crianças foram randomizadas para consumo regular de proteína de amendoim (pelo menos 6 g/semana distribuídos em 3 ou mais refeições na forma de pasta/snack diluído) versus exclusão absoluta de amendoim até os 60 meses (5 anos) de idade. O resultado foi histórico: a introdução precoce reduziu a prevalência de alergia ao amendoim aos 5 anos em <strong>81% na análise por intenção de tratar (de 17,2% no grupo de exclusão para apenas 3,2% no grupo de consumo precoce!)</strong>. O estudo subsequente <strong>LEAP-On (2016)</strong> demonstrou que essa tolerância induzida era duradoura mesmo após 12 meses de suspensão do consumo.</li>
+  <li><strong>Estudo EAT (<em>Enquiring About Tolerance</em> — Perkin et al., <em>NEJM</em>, 2016):</strong> Avaliou a introdução de seis alimentos alergênicos (leite, ovo cozido, amendoim, gergelim, peixe branco e trigo) em lactentes da população geral em aleitamento materno. Na análise por protocolo, houve redução significativa da alergia ao amendoim e ao ovo no grupo de introdução oportuna, evidenciando também que o cozimento completo do ovo é determinante para a segurança e eficácia.</li>
+  <li><strong>Estudo PETIT (Natsume et al., <em>The Lancet</em>, 2017):</strong> Confirmou em lactentes com eczema que a introdução gradual de ovo muito bem cozido (aquecido, em que a ovalbumina e principalmente o ovomucoide perdem parte da conformação alergênica linear/conformacional) associada ao controle tópico rigoroso da dermatite atópica reduziu drasticamente a incidência de alergia ao ovo aos 12 meses (8% vs. 38% no grupo placebo).</li>
+</ul>
+
+<h3>Diretrizes Práticas da SBP e do Ministério da Saúde sobre Ovo, Peixe, Amendoim e Glúten</h3>
+<p>Com base nesse robusto corpo de evidências, a conduta exigida em todas as provas brasileiras de residência médica é categórica:</p>
+<ol>
+  <li><strong>Não há indicação de postergar a introdução de alimentos potencialmente alergênicos (ovo inteiro, peixe, trigo/glúten, soja, amendoim e castanhas em pasta diluída) para além dos 6 meses de idade</strong> — nem em lactentes saudáveis da população geral, nem em lactentes com história familiar de atopia (pais ou irmãos com rinite, asma, dermatite atópica ou alergia alimentar).</li>
+  <li><strong>Introdução do Ovo Inteiro aos 6 Meses:</strong> Diferentemente da antiga orientação que mandava oferecer aos 6 meses apenas "1/4 da gema cozida, depois metade, depois a gema inteira e só aos 9 ou 12 meses a clara", a recomendação atual do Guia do MS e da SBP é oferecer o <strong>ovo inteiro (clara + gema) desde os 6 meses de idade</strong>, como excelente substituto ou complemento às carnes na refeição principal. A única exigência técnica inegociável é o <strong>cozimento completo (gema e clara totalmente duras/firmes, fervendo por pelo menos 10 a 12 minutos)</strong>, tanto para desnaturar proteínas termolábeis alergênicas (como a ovalbumina da clara) quanto para eliminar qualquer risco de infecção invasiva por <em>Salmonella enteritidis / typhimurium</em>. Ovos com gema mole, ovos pochê mal cozidos ou maionese caseira com ovo cru são estritamente proibidos.</li>
+  <li><strong>Introdução de Peixe aos 6 Meses:</strong> Deve ser oferecido desde o 6º mês na refeição principal (1 a 2 vezes por semana), bem cozido e minuciosamente revisado para retirada de espinhas. Além de induzir tolerância oral, os peixes (especialmente sardinha fresca, salmão, cavalinha, atum fresco, pescada e tilápia) são fontes ricas em ácido docosa-hexaenoico (DHA, ômega-3), iodo, selênio e proteína de fácil digestibilidade.</li>
+  <li><strong>Introdução do Glúten (Trigo, Aveia, Cevada e Centeio) e Doença Celíaca:</strong> Estudos prospectivos multicêntricos em crianças com risco genético para doença celíaca (portadoras dos haplótipos HLA-DQ2 e/ou HLA-DQ8, como os estudos CELIPREV e PreventCD) demonstraram que nem a introdução muito precoce (&lt;4 meses) nem a introdução tardia (&gt;12 meses) previnem o surgimento definitivo de autoanticorpos antitransglutaminase tecidual (anti-tTG IgA) em indivíduos geneticamente suscetíveis, mas a introdução antes dos 4 meses ou a introdução abrupta de grandes quantidades de glúten aumenta o risco precoce. Portanto, a ESPGHAN e a SBP recomendam introduzir o glúten <strong>a partir do 6º mês de vida (junto com os demais alimentos complementares, nunca antes dos 4 meses), inicialmente em quantidades moderadas e progressivas</strong> (ex.: aveia em flocos, macarrão bem cozido na sopa/prato, semolina), preferencialmente enquanto a criança ainda está em aleitamento materno.</li>
+  <li><strong>Quando Solicitar Avaliação Alergológica Prévia (Exceção de Alto Risco):</strong> Em lactentes saudáveis ou mesmo com dermatite atópica leve a moderada, os alérgenos alimentares são introduzidos normalmente em domicílio aos 6 meses. Apenas nos casos de <strong>dermatite atópica grave de difícil controle e/ou alergia alimentar IgE-mediada já diagnosticada a outro alimento</strong> (critérios do estudo LEAP), recomenda-se avaliação com alergista/pediatra (podendo envolver dosagem de IgE específica ou <em>prick test</em> e, se necessário, introdução supervisionada em ambiente médico), mas <strong>sem atrasar desnecessariamente a janela do segundo semestre de vida</strong>!</li>
+  <li><strong>Conduta na Alergia à Proteína do Leite de Vaca (APLV):</strong> O leite de vaca integral fluido continua proibido antes de 12 meses para <em>todas</em> as crianças (não por medo de alergia, mas por causar micro-hemorragia intestinal, anemia ferropriva e sobrecarga renal). Na criança em aleitamento materno exclusivo que apresenta manifestações comprovadas de APLV não-IgE mediada (como a <strong>proctocolite alérgica induzida por proteína alimentar — FPIAP</strong>, caracterizada por laivos de sangue vivo e muco nas fezes de um lactente em ótimo estado geral e com ganho ponderal normal), a conduta é <strong>manter o aleitamento materno e instituir dieta de exclusão de leite de vaca e derivados para a mãe nutriz</strong> (suplementando a mãe com 1.000 mg/dia de cálcio e vitamina D), realizando teste de provocação oral após 2 a 4 semanas de remissão para confirmar o diagnóstico, e iniciando a alimentação complementar aos 6 meses normalmente com os demais grupos alimentares isentos de proteínas lácteas bovinas.</li>
+</ol>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Alimento / Antígeno</th>
+      <th>Conduta Histórica Obsoleta (Pré-2015)</th>
+      <th>Diretriz Atual (SBP / MS / EAACI / AAP)</th>
+      <th>Cuidados Técnicos na Oferta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ovo (Clara e Gema)</strong></td>
+      <td>Iniciar só gema aos 6–9m e adiar a clara para após 12 meses.</td>
+      <td>Introduzir o <strong>ovo inteiro (clara + gema) a partir dos 6 meses completos</strong>.</td>
+      <td>Cozimento completo obrigatório (10–12 min de fervura; clara e gema totalmente firmes) para inativar ovomucoide/ovalbumina termolábeis e prevenir salmonelose.</td>
+    </tr>
+    <tr>
+      <td><strong>Peixes</strong></td>
+      <td>Adiar para após 9 ou 12 meses pelo receio de anafilaxia.</td>
+      <td>Introduzir <strong>a partir dos 6 meses completos</strong> na refeição principal.</td>
+      <td>Escolher filés frescos/congelados sem tempero, cozinhar bem e desfiar entre os dedos para garantir ausência absoluta de espinhas.</td>
+    </tr>
+    <tr>
+      <td><strong>Glúten (Trigo, Aveia, Cevada, Centeio)</strong></td>
+      <td>Adiar para após 9–12 meses.</td>
+      <td>Introduzir <strong>aos 6 meses completos</strong>, em quantidades graduais, mantendo o aleitamento materno.</td>
+      <td>Nunca introduzir antes dos 4 meses nem ofertar grandes cargas abruptas de farinha de trigo logo na primeira semana.</td>
+    </tr>
+    <tr>
+      <td><strong>Amendoim e Castanhas</strong></td>
+      <td>Exclusão total até 2 ou 3 anos de idade em crianças atópicas.</td>
+      <td>Introduzir <strong>a partir dos 6 meses</strong> (especialmente importante em lactentes com dermatite atópica — estudo LEAP).</td>
+      <td><strong>Proibido o grão inteiro até 4–5 anos</strong> (risco de broncoaspiração). Ofertar apenas como <strong>farinha fina ou pasta 100% pura diluída</strong> em água morna, LM ou fruta amassada.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'alimentos-proibidos-ingestao-hidrica',
+      title: '9. Alimentos Estritamente Proibidos nos Primeiros Anos de Vida e Ingestão Hídrica',
+      body_html: `
+<h3>Os 5 Grandes Grupos de Alimentos Proibidos na Primeira Infância e Sua Fisiopatologia</h3>
+<p>As bancas de residência médica cobram sistematicamente não apenas a lista dos alimentos contraindicados no primeiro e segundo anos de vida, mas a <strong>justificativa fisiopatológica, microbiológica e bioquímica</strong> de cada proibição. Abaixo estão detalhados os cinco pilares restritivos da puericultura:</p>
+
+<h4>1. Mel (de abelhas, de engenho/melado ou em xaropes caseiros): Proibido Antes de 12 Meses (e até 24 Meses pelo Açúcar)</h4>
+<p>O mel de abelhas (<em>Apis mellifera</em> ou abelhas nativas sem ferrão) é estritamente contraindicado durante todo o <strong>primeiro ano de vida (&lt; 12 meses)</strong> devido ao risco grave e potencialmente letal de <strong>Botulismo Intestinal do Lactente</strong>, causado pela ingestão de esporos do bacilo anaeróbio Gram-positivo formador de esporos <strong><em>Clostridium botulinum</em></strong> (presentes no pólen, na poeira e nas colmeias, e que resistem à pasteurização comercial e ao aquecimento doméstico, pois os esporos toleram temperaturas de 100 °C por várias horas).</p>
+<p><strong>Fisiopatologia comparada (por que o adulto não adoece ao comer o mesmo mel que paralisa o bebê?):</strong> Em crianças maiores de 1 ano e adultos, a microbiota colônica madura, densa e diversificada (rica em anaeróbios produtores de bacteriocinas e ácidos graxos voláteis) e o trânsito intestinal regular exercem <strong>resistência à colonização (inibição competitiva)</strong>, impedindo que os esporos ingeridos de <em>C. botulinum</em> germinem; os esporos são eliminados intactos e inofensivos nas fezes. No lactente menor de 12 meses (com pico de incidência entre 2 semanas e 6 meses de vida), a microbiota intestinal ainda é imatura e em transição, o pH gástrico é menos ácido e a motilidade pode ser mais lenta: os esporos ingeridos no mel (mesmo uma única gota passada na chupeta!) alcançam o cólon, <strong>germinam em formas vegetativas, colonizam o lúmen intestinal e produzem <em>in vivo</em> a neurotoxina botulínica</strong> (sorotipos A ou B).</p>
+<p>A neurotoxina botulínica é absorvida pela mucosa colônica, cai na circulação sistêmica e liga-se de forma irreversível aos terminais nervosos colinérgicos pré-sinápticos da junção neuromuscular e das sinapses autonômicas parassimpáticas, onde atua como uma metaloprotease dependente de zinco que <strong>cliva as proteínas do complexo SNARE (SNAP-25, sinaptobrevina/VAMP ou sintaxina)</strong>, impedindo a exocitose das vesículas de <strong>acetilcolina (ACh)</strong> na fenda sináptica. <strong>Quadro clínico clássico em prova:</strong> O sinal inaugural em 90% dos casos é a <strong>constipação intestinal aguda</strong> (paralisia do plexo mioentérico por &ge;3 dias), seguida de <strong>paralisia bulbar e flácida simétrica descendente ("síndrome do bebê hipotônico / <em>floppy baby</em>")</strong>: sucção débil (o bebê cansa ao mamar), choro fraco/apagado, ptose palpebral bilateral, midríase com reflexo fotomotor lento (oftalmoplegia interna), hipomimia facial, sialorreia (incapacidade de deglutir a saliva), perda completa do sustento cefálico, hipotonia generalizada com hiporreflexia ou arreflexia profunda e evolução para insuficiência respiratória diafragmática com necessidade de ventilação mecânica. Após os 12 meses, o risco microbiológico de botulismo intestinal desaparece pela maturação da microbiota, mas o mel permanece <strong>contraindicado até os 24 meses completos</strong> por ser composto por cerca de 80% de açúcares livres (frutose e glicose), recaindo na regra do Passo 5 do Guia Alimentar.</p>
+
+<h4>2. Leite de Vaca Integral <em>In Natura</em> (Fluido ou em Pó): Proibido Antes de 12 Meses</h4>
+<p>A oferta de leite de vaca integral (pasteurizado de saquinho, UHT de caixinha, leite em pó integral tipo Ninho ou leite cru da fazenda) como substituto do leite materno antes de 1 ano completo é uma das principais causas de <strong>anemia ferropriva grave</strong> e morbidade nutricional no Brasil. Os cinco mecanismos fisiopatológicos que contraindicam o leite de vaca antes de 12 meses são:</p>
+<ol>
+  <li><strong>Baixo teor e baixíssima biodisponibilidade de ferro:</strong> Tanto o leite materno quanto o leite de vaca possuem pouca quantidade absoluta de ferro (~0,3 a 0,5 mg/L). Contudo, no leite materno, cerca de <strong>50% do ferro é absorvido</strong> graças à ligação específica à lactoferrina humana, ao alto teor de lactose e vitamina C e aos baixos teores de cálcio e fósforo. No leite de vaca, a absorção intestinal do ferro é inferior a <strong>5% a 10%</strong>, pois o excesso brutal de cálcio (1.200 mg/L vs. 250–300 mg/L no leite humano), fósforo e <strong>caseína (que representa 80% das proteínas do leite de vaca, formando fosfopeptídeos de caseína)</strong> quela o ferro no lúmen duodenal e inibe competitivamente o transportador DMT1 e a ferroportina.</li>
+  <li><strong>Micro-hemorragias intestinais ocultas:</strong> Em lactentes menores de 12 meses, a exposição da mucosa intestinal imatura às proteínas heterólogas bovinas (especialmente a <strong>beta-lactoglobulina</strong>, principal alérgeno do soro do leite de vaca, que é totalmente inexistente no leite humano, além da caseína e da alfa-lactoalbumina bovina) desencadeia uma enteropatia inflamatória subclínica que provoca <strong>perda sanguínea oculta contínua nas fezes</strong>, espoliando diariamente os estoques corporais de ferro e albumina.</li>
+  <li><strong>Elevada Carga Renal Potencial de Solutos (CRPS):</strong> Como detalhado na Seção 1, o leite de vaca possui 3,5 vezes mais proteína (3,5 g/100 mL vs. 0,9–1,1 g/100 mL) e mais que o triplo de sódio, potássio e cloro, gerando CRPS de ~220–308 mOsm/L (contra ~75–93 mOsm/L do leite humano), sobrecarregando a filtração glomerular e predispondo à desidratação hipernatrêmica em episódios febris ou diarreicos.</li>
+  <li><strong>Programação Metabólica da Obesidade (Hipótese do Excesso Proteico Precoce — <em>Early Protein Hypothesis</em> de Berthold Koletzko):</strong> O elevado aporte de aminoácidos de cadeia ramificada (BCAAs: leucina, isoleucina e valina) do leite de vaca estimula a secreção excessiva de insulina pancreática e de <strong>IGF-1 (fator de crescimento semelhante à insulina tipo 1)</strong>, ativando a via intracelular <strong>mTORC1</strong>, acelerando o ganho ponderal no primeiro ano e promovendo hiperplasia precoce de pré-adipócitos (adipogênese), o que aumenta significativamente o risco de obesidade na idade escolar e vida adulta.</li>
+  <li><strong>Deficiência de ácidos graxos essenciais e vitaminas:</strong> O leite de vaca é rico em ácidos graxos saturados de cadeia curta e média voláteis (irritantes à mucosa) e deficiente em ácido linoleico (ômega-6), ácido alfa-linolênico (ômega-3), DHA, vitamina C, vitamina E, cobre e zinco biodisponível.</li>
+</ol>
+<p><em>Nota sobre leites vegetais ("bebidas vegetais" de soja, amêndoas, arroz, aveia ou coco) e leite de cabra:</em> Bebidas vegetais comerciais e leite de cabra in natura <strong>não são fórmulas infantis</strong> e são estritamente contraindicados como substitutos lácteos no primeiro ano de vida (o leite de cabra tem alta carga renal de solutos, reação cruzada de &gt;90% com proteínas do leite de vaca e é severamente deficiente em <strong>ácido fólico [vitamina B9]</strong>, causando clássica <strong>anemia megaloblástica</strong> no lactente!). Após os 12 meses completos, na criança não amamentada ou em desmame gradual, o leite de vaca integral pasteurizado/UHT passa a ser permitido (com volume máximo recomendado de <strong>500 a 600 mL/dia</strong> no 2º ano para não deslocar as refeições salgadas nem causar ferropenia, e sempre na versão <strong>integral</strong> até os 2 anos, pois a restrição de gorduras/leite desnatado antes dos 24 meses prejudica a mielinização cerebral).</p>
+
+<h4>3. Sucos de Frutas (Mesmo 100% Naturais e Sem Açúcar): Proibidos Antes de 1 Ano</h4>
+<p>Tanto o Guia Alimentar do Ministério da Saúde quanto a Sociedade Brasileira de Pediatria e a Academia Americana de Pediatria (AAP) proíbem formalmente a oferta de qualquer suco de fruta para crianças <strong>menores de 12 meses</strong>. Os motivos fisiológicos são múltiplos: a trituração/espremedura rompe a parede celular vegetal e remove as fibras insolúveis, transformando a frutose intrínseca da fruta em <strong>açúcar livre</strong> de rápida absorção; para fazer um único copo de 150 mL de suco de laranja são necessárias 3 a 4 laranjas (quantidade calórica e de frutose que um bebê jamais conseguiria mastigar de uma vez na fruta inteira); a frutose livre em excesso que escapa à absorção pelo transportador GLUT5 no intestino delgado sofre fermentação bacteriana no cólon, gerando gases, distensão abdominal e <strong>diarreia osmótica inespecífica da infância</strong>; a exposição ácida e açucarada frequente desmineraliza o esmalte dos dentes decíduos; e o hábito de beber líquidos doces substitui a ingestão de água pura e leite materno.</p>
+<p><strong>Limites estritos de suco após 1 ano de idade (SBP / AAP):</strong> O ideal é manter sempre a preferência pela fruta inteira em pedaços e água pura. Caso a família opte por oferecer suco 100% natural da fruta (sem adição de açúcar ou adoçantes) após o primeiro aniversário, os tetos máximos diários são:</p>
+<ul>
+  <li><strong>Menores de 1 ano (&lt; 12 meses):</strong> <strong>PROIBIDO (0 mL/dia)</strong>.</li>
+  <li><strong>De 1 a 3 anos:</strong> Máximo de <strong>100 a 120 mL/dia</strong> (cerca de meio copo pequeno), oferecido preferencialmente junto a uma refeição (nunca em mamadeira ou copo com bico ao longo do dia ou antes de dormir).</li>
+  <li><strong>De 4 a 6 anos:</strong> Máximo de <strong>120 a 175 mL/dia</strong>.</li>
+  <li><strong>De 7 a 18 anos:</strong> Máximo de <strong>240 mL/dia</strong> (1 copo americano).</li>
+</ul>
+
+<h4>4. Açúcar, Doces, Adoçantes e Ultraprocessados: Proibidos Antes de 24 Meses</h4>
+<p>Conforme já fundamentado nos Passos 5 e 6 do Guia Alimentar, nenhum tipo de açúcar (refinado, cristal, mascavo, demerara, de coco, rapadura, melado, caldo de cana, xarope de milho), adoçante (natural ou artificial) ou produto ultraprocessado deve ser introduzido nos primeiros 2 anos de vida.</p>
+
+<h4>5. Café, Chás (Preto, Mate, Verde, Camomila, Erva-Doce, Hortelã) e Refrigerantes: Proibidos nos Primeiros 2 Anos</h4>
+<p>Chás de qualquer espécie (mesmo chás claros de ervas como camomila, cidreira, erva-doce ou funcho, culturalmente oferecidos para "cólica do lactente" ou "acalmar o sono") e café são contraindicados em menores de 2 anos: são ricos em <strong>polifenóis e taninos (ácido tânico)</strong>, que formam complexos insolúveis irreversíveis com o ferro não heme e com o cálcio no lúmen intestinal; o café, o chá-preto, o chá-mate e os refrigerantes de cola contêm ainda <strong>xantinas (cafeína e teofilina)</strong>, que atuam como antagonistas dos receptores de adenosina no sistema nervoso central infantil, causando irritabilidade, taquicardia, fragmentação da arquitetura do sono REM/NREM e relaxamento do esfíncter esofágico inferior (agravando o refluxo gastroesofágico). Além disso, chás caseiros de estrela-de-anis ou funcho em lactentes já foram associados a quadros graves de neurotoxicidade (convulsões por anetol/anisatina) e hepatotoxicidade.</p>
+
+<h3>Ingestão Hídrica a Partir do 6º Mês e Cálculo de Holliday-Segar</h3>
+<p>A partir do sexto mês completo, exatamente no dia em que se inicia a primeira fruta ou refeição salgada, deve-se iniciar a oferta regular de <strong>água potável (filtrada, fervida e resfriada ou mineral de baixo teor de sódio)</strong> nos intervalos das refeições, utilizando copinho aberto ou copo de transição sem válvula (evitando bicos e mamadeiras). Não se deve oferecer grandes volumes de água imediatamente antes ou durante o almoço/jantar para não distender o estômago e reduzir a aceitação dos alimentos sólidos.</p>
+<p>Para estimar a <strong>necessidade hídrica diária total</strong> da criança (somando a água contida no leite materno/fórmula, a água intrínseca dos alimentos cozidos/frutas e a água pura bebida no copo), a referência fisiológica clássica em Pediatria é a <strong>Regra de Holliday-Segar</strong> (baseada no gasto calórico basal de 100 mL de água para cada 100 kcal metabolizadas):</p>
+<ul>
+  <li><strong>Peso até 10 kg:</strong> <code>100 mL/kg/dia</code> (ex.: um lactente de 8 kg aos 7 meses necessita de aproximadamente <strong>800 mL/dia de líquidos totais</strong>, dos quais cerca de 500–600 mL vêm do leite materno e da água dos alimentos, restando cerca de <strong>150 a 250 mL/dia de água pura</strong> a ser ofertada ao longo do dia em pequenas porções nos intervalos).</li>
+  <li><strong>Peso de 10 a 20 kg:</strong> <code>1.000 mL + 50 mL para cada kg acima de 10 kg</code> (ex.: uma criança de 12 kg aos 18 meses necessita de <code>1.000 + (2 × 50) = 1.100 mL/dia</code> de líquidos totais, o que corresponde à ingestão de cerca de 400 a 600 mL/dia de água pura além do leite e das refeições).</li>
+  <li><strong>Peso acima de 20 kg:</strong> <code>1.500 mL + 20 mL para cada kg acima de 20 kg</code>.</li>
+</ul>
+<p>Mais importante do que forçar um volume fixo de água é observar o marcador clínico direto da hidratação e da diluição da carga renal de solutos: a <strong>diurese da criança deve ser frequente, com urina clara (amarelo-citrino pálido) e sem odor forte de amônia</strong>.</p>
+`
+    },
+    {
+      id: 'alimentacao-crianca-nao-amamentada',
+      title: '10. Alimentação da Criança Não Amamentada no Primeiro Ano de Vida',
+      body_html: `
+<h3>Hierarquia de Substitutos do Leite Materno no Primeiro Ano</h3>
+<p>Existem situações clínicas específicas em que o aleitamento materno é absolutamente contraindicado (ex.: mãe vivendo com <strong>HIV</strong> no Brasil, mãe infectada por <strong>HTLV-1 ou HTLV-2</strong>, uso materno de medicamentos incompatíveis como antineoplásicos citotóxicos, amiodarona ou radiofármacos, ou lactente portador de <strong>galactosemia clássica</strong> — deficiência de galactose-1-fosfato uridiltransferase [GALT], que exige fórmula isenta de lactose/galactose à base de proteína isolada de soja ou aminoácidos) ou situações em que o desmame total já ocorreu e a relactação não foi possível.</p>
+<p>Nesses cenários, na ausência de leite humano pasteurizado de Banco de Leite Humano (priorizado para recém-nascidos prematuros e de muito baixo peso internados em UTIN), a escolha padrão-ouro preconizada pela Sociedade Brasileira de Pediatria, pela OMS e pela ANVISA durante todo o primeiro ano de vida (0 a 12 meses) é a <strong>Fórmula Infantil modificada tecnologicamente a partir do leite de vaca</strong> (regulamentada pelas Resoluções RDC nº 43/2011 e RDC nº 44/2011 da ANVISA, atualizadas pelo novo marco regulatório de fórmulas infantis):</p>
+<ul>
+  <li><strong>1º Semestre (0 a 5 meses e 29 dias) — Fórmula Infantil de Partida (Estágio 1):</strong> Na fabricação da fórmula infantil de partida, a indústria realiza modificações bioquímicas profundas no leite de vaca para aproximá-lo da fisiologia do lactente: reduz o teor proteico total (de 3,5 g/100 mL do leite de vaca para <strong>1,2 a 1,4 g/100 mL</strong>) e inverte a relação <strong>proteínas do soro : caseína</strong> (que no leite de vaca é de 20:80, passando na fórmula de partida para <strong>60:40 ou 70:30</strong>, semelhante ao leite humano maduro), facilitando o esvaziamento gástrico e reduzindo o coágulo de caseína e a carga renal de solutos (CRPS reduzida para ~90–120 mOsm/L); reduz os níveis de sódio, potássio, cloro e cálcio/fósforo (ajustando a relação Ca:P para ~1,5 a 2:1, o que evita hiperfosfatemia e hipocalcemia neonatal e melhora a absorção de gorduras e ferro); substitui a gordura láctea saturada bovina por uma mistura de óleos vegetais que fornece ácidos graxos essenciais (ácido linoleico e alfa-linolênico) e adiciona <strong>DHA (ácido docosa-hexaenoico) e ARA (ácido araquidônico)</strong>; e fortifica com <strong>ferro (geralmente 0,6 a 1,2 mg/100 mL), vitamina C, vitamina D, vitamina A, zinco, cobre e iodo</strong>, mantendo a lactose como carboidrato principal (ou 70% lactose + 30% maltodextrina).</li>
+  <li><strong>2º Semestre (6 a 11 meses e 29 dias) — Fórmula Infantil de Seguimento para Lactentes (Estágio 2):</strong> Possui teor proteico ligeiramente maior (1,5 a 2,0 g/100 mL, com relação soro:caseína de 50:50 ou 40:60) e maior concentração de ferro (1,0 a 1,3 mg/100 mL) e cálcio, adaptada ao lactente maior que já iniciou a alimentação complementar.</li>
+</ul>
+
+<h4>Técnica Correta de Diluição, Volumes e Higienização da Fórmula Infantil</h4>
+<p>A diluição padrão da imensa maioria das fórmulas infantis de partida e de seguimento disponíveis no Brasil é de <strong>1 colher-medida rasa (aproximadamente 4,3 a 4,6 g de pó) para cada 30 mL de água potável previamente fervida e resfriada a 70 °C</strong> (a recomendação da OMS/MS de reconstituir o pó em água a ~70 °C visa inativar eventual contaminação intrínseca da lata por <strong><em>Cronobacter sakazakii</em> [antigo <em>Enterobacter sakazakii</em>]</strong> ou <em>Salmonella</em>, resfriando rapidamente o recipiente sob água corrente até ~37 °C antes de oferecer ao bebê). O pediatra deve vigiar atentamente os dois erros clássicos de diluição na prática clínica:</p>
+<ul>
+  <li><strong>Superdiluição da fórmula (colocar menos pó para a lata render mais, em famílias de baixa renda):</strong> Derruba a densidade calórica e proteica, levando rapidamente ao <strong>déficit pondero-estatural (desnutrição energético-proteica / marasmo)</strong> e à intoxicação hídrica com hiponatremia dilucional em lactentes jovens.</li>
+  <li><strong>Hiperconcentração da fórmula (colocar colheres-medida transbordando ou adicionar mais pó por 30 mL "para engordar o bebê"):</strong> Eleva perigosamente a osmolaridade luminal e a Carga Renal Potencial de Solutos (CRPS), desencadeando <strong>diarreia osmótica, desidratação hipernatrêmica grave</strong> (com risco de trombose de seio venoso e hemorragia intracraniana) e obesidade.</li>
+</ul>
+
+<h3>Esquema Alimentar da Criança em Uso de Fórmula Infantil</h3>
+<p>A criança alimentada com fórmula infantil regulamentada tem seu crescimento e maturação digestiva equiparados aos da criança amamentada no que tange ao momento da introdução dos sólidos: <strong>a alimentação complementar na criança em uso de fórmula infantil também se inicia aos 6 meses completos (180 dias)</strong>, nunca aos 4 meses! A evolução das refeições segue a mesma lógica:</p>
+<ul>
+  <li><strong>De 0 a 5 meses e 29 dias:</strong> Fórmula infantil de partida exclusiva (6 a 8 vezes ao dia nos primeiros meses, com volume de ~150 mL/kg/dia ou conforme sinais de fome e saciedade; cerca de 60–90 mL por vez no 1º mês, 120–150 mL aos 2–3 meses e 150–180 mL aos 4–5 meses, 5 a 6 vezes ao dia). Sem necessidade de chás ou sucos.</li>
+  <li><strong>Aos 6 meses completos:</strong> Fórmula infantil de seguimento (Estágio 2, cerca de 3 a 4 ofertas de 180–210 mL nas 24 horas) + <strong>2 lanches de frutas</strong> + <strong>1 refeição principal (almoço)</strong> + água potável nos intervalos.</li>
+  <li><strong>Dos 7 aos 11 meses:</strong> Fórmula infantil de seguimento (2 a 3 ofertas de 200 mL/dia, no café da manhã, fim da tarde e/ou noite, totalizando cerca de 500–600 mL/dia) + <strong>2 lanches de frutas</strong> + <strong>2 refeições principais (almoço e jantar)</strong>.</li>
+</ul>
+
+<h3>Conduta de Redução de Danos no Uso Inevitável de Leite de Vaca Antes de 1 Ano (Contexto de Extrema Vulnerabilidade Socioeconômica)</h3>
+<p>Embora a SBP e o Ministério da Saúde determinem que o leite de vaca integral <strong>não deve ser oferecido antes dos 12 meses de vida</strong> (devendo o profissional de saúde esgotar todas as possibilidades de relactação ou de acesso à fórmula infantil pela rede pública/assistência social), o Guia Alimentar do Ministério da Saúde (2019/2021) contempla a conduta de <strong>redução de danos</strong> para famílias em situação de vulnerabilidade socioeconômica extrema que não amamentam e não têm condições financeiras de adquirir fórmula infantil:</p>
+<ol>
+  <li><strong>Nos primeiros 4 meses de vida (&lt; 4 meses), se em uso inevitável de leite de vaca integral fluido ou em pó:</strong> Como o rim de um lactente de 0 a 3 meses não suporta a Carga Renal Potencial de Solutos do leite de vaca integral puro (300 mOsm/L), o Ministério da Saúde orienta realizar a <strong>diluição do leite de vaca a 2/3 (dois terços de leite de vaca para um terço de água fervida)</strong> para reduzir a concentração de proteínas e eletrólitos. Na edição atual do Guia do MS (2019/2021), para preparar um volume de 150 mL, mistura-se <strong>100 mL de leite de vaca integral + 50 mL de água fervida</strong> (ou, se for leite em pó integral, 1 colher de sopa rasa para 100 mL de água fervida, ou 1,5 colher de sopa rasa para 150 mL de água fervida, e para 200 mL usam-se 130 mL de leite fluido + 70 mL de água ou 2 colheres de sopa rasas de leite em pó). <em>Detalhe crucial da atualização de 2019 do MS:</em> Diferentemente dos manuais antigos de 2002/2013 (que mandavam acrescentar 3% de farinha/amido e 5% de açúcar ou 3% de óleo vegetal ao leite de vaca diluído para recompor as calorias perdidas na diluição), o <strong>novo Guia Alimentar do MS (2019/2021) retirou a recomendação de adicionar óleo, açúcar ou farinha à mamadeira/copo de leite de vaca diluído</strong>, mantendo apenas a diluição em água fervida nos primeiros 4 meses e oferta obrigatória de água pura nos intervalos das mamadas desde o 1º mês (pois mesmo diluído, o leite de vaca tem CRPS maior que o leite humano)!</li>
+  <li><strong>A partir dos 4 meses completos, exclusivamente para a criança que já estava em uso inevitável de leite de vaca diluído (sem acesso a leite materno nem a fórmula infantil):</strong> Em vez de manter a criança tomando leite de vaca diluído e nutricionalmente carente dos 4 aos 6 meses, o Guia do MS e os manuais históricos de Atenção Básica orientam, <strong>como exceção exclusiva para esse grupo vulnerável em uso de leite de vaca</strong>, parar de diluir o leite de vaca aos 4 meses (passando a oferecê-lo integral sem adição de açúcar ou farinhas) e <strong>antecipar o início da alimentação complementar aos 4 meses completos</strong> (com frutas e refeições principais amassadas no garfo ricas em ferro, carnes, feijão e vitamina C, além da suplementação profilática precoce de ferro elementar a partir dos 3 meses de vida).</li>
+</ol>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Perfil Alimentar do Lactente no 1º Ano</th>
+      <th>Idade de Início da Alimentação Complementar</th>
+      <th>Oferta de Água Pura no 1º Semestre</th>
+      <th>Justificativa Fisiológica e Normativa (MS / SBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Aleitamento Materno Exclusivo (AME)</strong></td>
+      <td><strong>6 meses completos (180 dias)</strong></td>
+      <td>Não (0–5m: apenas LM; água inicia aos 6m).</td>
+      <td>LM supre 100% de água, calorias e nutrientes com baixa CRPS (~75–93 mOsm/L) até o 6º mês.</td>
+    </tr>
+    <tr>
+      <td><strong>Uso de Fórmula Infantil Regulamentada (Partida Tipo 1)</strong></td>
+      <td><strong>6 meses completos (180 dias)</strong></td>
+      <td>Geralmente não necessária em clima ameno se diluída corretamente (1 medida/30 mL), ou pequenos goles em calor extremo; água regular inicia aos 6m.</td>
+      <td>Fórmula infantil é modificada (proteína 1,2–1,4 g/dL, soro:caseína 60:40) e fortificada com ferro, DHA e vitaminas, sustentando o 1º semestre até os 6 meses.</td>
+    </tr>
+    <tr>
+      <td><strong>Uso Inevitável de Leite de Vaca (Vulnerabilidade Extrema sem acesso a LM ou Fórmula — Guia MS)</strong></td>
+      <td><strong>4 meses completos</strong> (exceção de redução de danos do MS)</td>
+      <td><strong>Sim, desde o início do uso do LV</strong> nos intervalos (devido à alta CRPS).</td>
+      <td>De 0 a 4m: diluir o LV a 2/3 (100 mL LV + 50 mL água fervida, sem açúcar/farinha). Aos 4m: suspender diluição e iniciar papas/frutas para corrigir o grave déficit de ferro, vitamina C, ácidos graxos essenciais e calorias do LV.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'suplementacao-profilatica-ferro-vitamina-d-vitamina-a',
+      title: '11. Suplementação Profilática de Micronutrientes: Ferro, Vitamina D e Vitamina A (SBP e MS)',
+      body_html: `
+<h3>Por Que Suplementar Ferro Mesmo com Alimentação Complementar Adequada?</h3>
+<p>A anemia ferropriva permanece como a carência nutricional mais prevalente do planeta e do Brasil, acometendo entre <strong>20% e 40% das crianças brasileiras menores de 2 anos</strong> (Estudo Nacional de Alimentação e Nutrição Infantil — ENANI-2019). Mesmo que a família siga perfeitamente os 12 Passos do Guia Alimentar aos 6 meses, a densidade média de ferro nas papas complementares e o pequeno volume gástrico do lactente muitas vezes não são suficientes para repor a velocidade acelerada de utilização de ferro pela eritropoiese e pelo crescimento cerebral entre 6 e 24 meses, especialmente quando houve redução das reservas fetais no terceiro trimestre. Por essa razão, a <strong>suplementação medicamentosa profilática de ferro e vitamina D</strong> é mandatória na puericultura, e o candidato deve dominar com exatidão cirúrgica as duas diretrizes cobradas em provas: o <strong>Consenso da Sociedade Brasileira de Pediatria (SBP, atualizado em 2021 e reafirmado em 2024–2026)</strong> e o <strong>Programa Nacional de Suplementação de Ferro (PNSF) do Ministério da Saúde (atualizado em 2022)</strong>.</p>
+
+<h3>Diretriz da Sociedade Brasileira de Pediatria (SBP 2021–2026): Prevenção da Deficiência de Ferro</h3>
+<p>Na atualização de agosto de 2021 dos Departamentos Científicos de Nutrologia e de Hematologia da SBP, introduziu-se uma divisão fundamental para os recém-nascidos a termo de peso adequado (&ge;2.500 g): a <strong>estratificação conforme a presença ou ausência de Fatores de Risco para ferropenia precoce</strong>. Quando há fatores de risco, os estoques hepáticos de ferritina ao nascimento já são reduzidos e esgotam-se antes do 4º mês, exigindo que a suplementação profilática comece aos <strong>90 dias (3 meses de vida)</strong>, independentemente de a criança estar em aleitamento materno exclusivo! Quando não há fatores de risco, a suplementação inicia-se aos <strong>180 dias (6 meses de vida)</strong>.</p>
+
+<h4>Quais são os Fatores de Risco para Deficiência de Ferro segundo a SBP (2021–2026)?</h4>
+<ul>
+  <li><strong>Fatores Maternos e Gestacionais:</strong> Mãe com anemia ou ferropenia durante a gestação ou sem suplementação regular de ferro no pré-natal; gestações múltiplas (gemelaridade) ou pequeno intervalo interpartal; diabetes gestacional descontrolado (a hiperglicemia e hiperinsulinemia fetais estimulam a síntese de eritropoietina e a policitemia fetal, desviando o ferro hepático e cerebral para a massa eritrocitária); hipertensão arterial materna / pré-eclâmpsia com insuficiência placentária e restrição de crescimento intrauterino (RCIU); hemorragias maternas no terceiro trimestre (placenta prévia, DPP); mãe vegetariana/vegana estrita sem controle laboratorial ou submetida a cirurgia bariátrica disabsortiva.</li>
+  <li><strong>Fatores Perinatais (Sala de Parto):</strong> <strong>Clampeamento precoce do cordão umbilical (realizado em menos de 1 minuto após o nascimento)</strong> — <em>lembrando que o clampeamento oportuno/tardio do cordão, entre 1 e 3 minutos após o nascimento em RN com boa vitalidade, promove transfusão placentária fisiológica de ~80 a 100 mL de sangue, acrescentando 40 a 50 mg/kg de ferro corporal e protegendo contra ferropenia nos primeiros 6 meses!</em>; peso de nascimento entre 2.500 g e 3.000 g (peso insuficiente) ou recém-nascido Pequeno para a Idade Gestacional (PIG).</li>
+  <li><strong>Fatores Pós-Natais e Lactacionais:</strong> Baixo nível socioeconômico / insegurança alimentar familiar; <strong>ausência de aleitamento materno exclusivo</strong>; introdução precoce de leite de vaca integral antes de 1 ano; ou consumo de <strong>menos de 500 mL/dia de fórmula infantil fortificada com ferro</strong> (ou uso de fórmula com baixo teor de ferro).</li>
+</ul>
+
+<h4>Esquema Posológico Completo de Ferro Profilático da SBP (em mg de Ferro Elementar/kg/dia)</h4>
+<ol>
+  <li><strong>Recém-Nascido a Termo (IG &ge; 37 semanas), Peso Adequado para a Idade Gestacional (AIG, Peso &ge; 2.500 g) e SEM Fatores de Risco:</strong> Dose de <strong>1 mg de ferro elementar/kg/dia</strong>, iniciando aos <strong>180 dias de vida (6 meses completos)</strong> e mantendo continuamente até os <strong>24 meses de vida (2 anos)</strong>.</li>
+  <li><strong>Recém-Nascido a Termo (IG &ge; 37 semanas), Peso &ge; 2.500 g e COM Fatores de Risco para Deficiência de Ferro (independentemente do tipo de aleitamento, inclusive em AME!):</strong> Dose de <strong>1 mg de ferro elementar/kg/dia</strong>, iniciando precocemente aos <strong>90 dias de vida (3 meses completos)</strong> e mantendo continuamente até os <strong>24 meses de vida (2 anos)</strong>.</li>
+  <li><strong>Recém-Nascido Pré-Termo (IG &lt; 37 semanas) OU Recém-Nascido a Termo de Baixo Peso (Peso de nascimento entre 1.500 g e 2.500 g):</strong> Dose no 1º ano de <strong>2 mg de ferro elementar/kg/dia</strong>, iniciando aos <strong>30 dias de vida</strong> e mantendo durante <strong>1 ano (12 meses de duração)</strong>; após completar 1 ano de suplementação com 2 mg/kg/dia, reduzir a dose no 2º ano para <strong>1 mg de ferro elementar/kg/dia por mais 1 ano</strong> (até completar 24 meses).</li>
+  <li><strong>Recém-Nascido Pré-Termo de Muito Baixo Peso (Peso de nascimento entre 1.000 g e 1.500 g):</strong> Dose no 1º ano de <strong>3 mg de ferro elementar/kg/dia</strong>, iniciando aos <strong>30 dias de vida</strong> e mantendo durante <strong>1 ano</strong>; após esse período, manter no 2º ano <strong>1 mg de ferro elementar/kg/dia por mais 1 ano</strong>.</li>
+  <li><strong>Recém-Nascido Pré-Termo de Extremo Baixo Peso (Peso de nascimento &lt; 1.000 g):</strong> Dose no 1º ano de <strong>4 mg de ferro elementar/kg/dia</strong>, iniciando aos <strong>30 dias de vida</strong> e mantendo durante <strong>1 ano</strong>; após esse período, manter no 2º ano <strong>1 mg de ferro elementar/kg/dia por mais 1 ano</strong> (<em>nota: se o RNPT extremo recebeu múltiplas transfusões de concentrado de hemácias na UTIN e apresenta ferritina sérica muito elevada &gt;300 ng/mL, o início aos 30 dias pode ser individualizado pelo neonatologista conforme a cinética de ferro</em>).</li>
+</ol>
+
+<blockquote>
+<strong>Triagem Laboratorial Universal da Deficiência de Ferro (SBP 2021–2026):</strong> Como a ferropenia passa por três estágios progressivos — (1) <em>Depleção dos estoques</em> (queda isolada da ferritina sérica), (2) <em>Deficiência de ferro sem anemia / eritropoiese ferropênica</em> (queda do ferro sérico e da saturação de transferrina, aumento do RDW e da capacidade total de ligação do ferro [TIBC], redução da concentração de hemoglobina dos reticulócitos [Ret-He], mas com hemoglobina ainda &ge;11,0 g/dL) e (3) <em>Anemia ferropriva</em> propriamente dita (<strong>Hb &lt; 11,0 g/dL</strong> em crianças de 6 a 59 meses segundo a OMS, microcítica [VCM &lt; 70–74 fL] e hipocrômica [HCM &lt; 25 pg], com RDW elevado &gt;14–15% e reticulócitos normais ou baixos) — e como o dano neurocognitivo já ocorre no estágio 2 (antes da queda da hemoglobina!), a SBP recomenda solicitar <strong>Hemograma completo + Ferritina sérica + Proteína C Reativa (PCR)</strong> para <strong>todas as crianças aos 12 meses de vida</strong> (e mais precocemente, entre 6 e 9 meses, em prematuros, baixo peso ou lactentes com fatores de risco). Solicita-se a PCR junto com a ferritina porque a ferritina é uma proteína de fase aguda positiva: na vigência de qualquer infecção viral banal (resfriado, gastroenterite), a ferritina sobe falsamente, mascarando a ferropenia (ponto de corte de ferritina para deficiência de ferro em &lt;5 anos: <strong>&lt; 12 ng/mL</strong> na ausência de inflamação, ou <strong>&lt; 30 ng/mL</strong> na vigência de processo inflamatório/PCR elevada). Se diagnosticada anemia ferropriva instalada, suspende-se a dose profilática e institui-se a <strong>dose terapêutica de 3 a 6 mg de ferro elementar/kg/dia por 3 a 6 meses</strong> (até normalizar a Hb e repor os estoques de ferritina &gt;30 ng/mL).
+</blockquote>
+
+<h3>Diretriz do Ministério da Saúde: Programa Nacional de Suplementação de Ferro (PNSF — Atualização 2022) e NutriSUS</h3>
+<p>Atenção redobrada em questões de Saúde Coletiva / APS / Medicina de Família! Em 2022, o Ministério da Saúde atualizou o <strong>Caderno dos Programas Nacionais de Suplementação de Micronutrientes (PNSF)</strong> para a Atenção Primária do SUS, substituindo a suplementação diária contínua dos 6 aos 24 meses (para os nascidos a termo de peso adequado) por um esquema de <strong>ciclos intermitentes de 3 meses</strong>:</p>
+<ul>
+  <li><strong>Crianças nascidas a termo (&ge;37 semanas) e com peso &ge; 2.500 g atendidas na APS pelo PNSF/MS (2022) — 1º Ciclo (6 a 8 meses) e 2º Ciclo (12 a 14 meses):</strong> No <strong>1º Ciclo (entre 6 e 8 meses de idade)</strong>, administra-se <strong>10 a 12,5 mg de ferro elementar/dia</strong> (cerca de 1 mg/kg/dia de sulfato ferroso em gotas fornecido pela Farmácia Básica do SUS, onde 1 mL = 25 mg de ferro elementar = 20 gotas, logo 1 gota = 1,25 mg de Fe elementar -> 8 a 10 gotas/dia) <strong>diariamente durante 3 meses consecutivos</strong>, seguido de uma <strong>pausa de 3 meses</strong> (dos 9 aos 11 meses). No <strong>2º Ciclo (entre 12 e 14 meses de idade)</strong>, realiza-se novo ciclo diário de <strong>10 a 12,5 mg de ferro elementar/dia durante 3 meses consecutivos</strong>, encerrando o esquema profilático padrão aos 15–24 meses (se a criança não iniciou aos 6 meses, deve cumprir os dois ciclos de 3 meses com intervalo de 3 meses entre eles antes de completar 24 meses).</li>
+  <li><strong>Prematuros (&lt;37 semanas) e/ou Baixo Peso (&lt;2.500 g) no PNSF/MS:</strong> No protocolo do Ministério da Saúde, os prematuros e baixo peso <strong>não fazem ciclos intermitentes</strong>; eles seguem exatamente a mesma conduta contínua da SBP (início aos 30 dias de vida com 2, 3 ou 4 mg/kg/dia conforme o peso de nascimento durante 1 ano, seguido de 1 mg/kg/dia por mais 1 ano).</li>
+  <li><strong>Estratégia NutriSUS (Fortificação da Alimentação Infantil com Micronutrientes em Pó — MNP):</strong> Nas creches pactuadas com o Programa Saúde na Escola (PSE) e em populações prioritárias da APS (como crianças indígenas e beneficiárias do Bolsa Família entre 6 e 24 meses), o MS disponibiliza sachês de 1 g contendo <strong>15 micronutrientes em pó encapsulados</strong> (incluindo 10 mg de ferro microencapsulado em fumarato ferroso que não altera a cor nem o sabor da comida, zinco, vitaminas A, C, D, E e complexo B) para serem misturados diretamente na porção individual da comida morna da criança (arroz/feijão) no momento de servir (1 sachê ao dia por 60 dias em cada ciclo semestral). Crianças em uso do ciclo ativo do NutriSUS não precisam receber sulfato ferroso em gotas concomitantemente para evitar sobredose.</li>
+</ul>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Grupo de Crianças</th>
+      <th>Diretriz SBP (2021–2026)</th>
+      <th>Diretriz Ministério da Saúde (PNSF 2022)</th>
+      <th>Observações de Prova</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Termo (&ge;37 sem), Peso &ge;2.500 g, SEM Fatores de Risco</strong></td>
+      <td><strong>1 mg/kg/dia</strong> de ferro elementar, uso diário contínuo dos <strong>6 meses (180 dias) aos 24 meses</strong>.</td>
+      <td><strong>10 a 12,5 mg/dia</strong> de ferro elementar em <strong>2 ciclos de 3 meses</strong>: 1º ciclo dos 6 aos 8 meses -> pausa de 3 meses -> 2º ciclo dos 12 aos 14 meses.</td>
+      <td>Verificar na questão se a banca cobra "segundo a SBP" (contínuo 6–24m) ou "segundo o PNSF/Ministério da Saúde" (ciclos intermitentes de 3 meses).</td>
+    </tr>
+    <tr>
+      <td><strong>Termo (&ge;37 sem), Peso &ge;2.500 g, COM Fatores de Risco</strong></td>
+      <td><strong>1 mg/kg/dia</strong> de ferro elementar, uso diário contínuo iniciando precocemente aos <strong>3 meses (90 dias) até os 24 meses</strong>.</td>
+      <td>Segue o fluxo de estratificação da puericultura (ou ciclos a partir dos 6 meses no PNSF geral).</td>
+      <td>Mesmo em <strong>Aleitamento Materno Exclusivo</strong>, se houve clampeamento precoce (&lt;1 min), anemia materna, DMG ou PIG, a SBP manda iniciar ferro aos <strong>3 meses</strong>!</td>
+    </tr>
+    <tr>
+      <td><strong>Pré-termo (&lt;37 sem) ou Baixo Peso (1.500 a 2.500 g)</strong></td>
+      <td><strong>2 mg/kg/dia</strong> a partir de <strong>30 dias de vida</strong> por 1 ano; depois <strong>1 mg/kg/dia</strong> por mais 1 ano.</td>
+      <td>Idêntico à SBP (<strong>2 mg/kg/dia</strong> a partir de 30 dias por 12 meses, seguido de 1 mg/kg/dia por mais 12 meses).</td>
+      <td>Convergência total entre SBP e MS para todos os prematuros e baixo peso.</td>
+    </tr>
+    <tr>
+      <td><strong>Pré-termo Muito Baixo Peso (1.000 a 1.500 g)</strong></td>
+      <td><strong>3 mg/kg/dia</strong> a partir de <strong>30 dias de vida</strong> por 1 ano; depois <strong>1 mg/kg/dia</strong> por mais 1 ano.</td>
+      <td>Idêntico à SBP (<strong>3 mg/kg/dia</strong> no 1º ano a partir de 30 dias, depois 1 mg/kg/dia por mais 1 ano).</td>
+      <td>Dose do 1º ano sobe de 2 para 3 mg/kg/dia.</td>
+    </tr>
+    <tr>
+      <td><strong>Pré-termo Extremo Baixo Peso (&lt;1.000 g)</strong></td>
+      <td><strong>4 mg/kg/dia</strong> a partir de <strong>30 dias de vida</strong> por 1 ano; depois <strong>1 mg/kg/dia</strong> por mais 1 ano.</td>
+      <td>Idêntico à SBP (<strong>4 mg/kg/dia</strong> no 1º ano a partir de 30 dias, depois 1 mg/kg/dia por mais 1 ano).</td>
+      <td>Dose máxima profilática (4 mg/kg/dia). Mnemônico fácil: <strong>2,5–1,5 kg = 2 mg; 1,5–1,0 kg = 3 mg; &lt;1,0 kg = 4 mg</strong>!</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Escolha do Sal de Ferro Medicamentoso para Profilaxia e Tratamento</h4>
+<p>Existem no mercado diferentes sais de ferro para uso oral: sais ferrosos divalentes (<strong>sulfato ferroso</strong>, fumarato ferroso, gluconato ferroso), <strong>ferro bisglicinato quelato</strong> e complexos férricos trivalentes (<strong>ferripolimaltose / hidróxido de ferro III polimaltosado</strong>). O <strong>sulfato ferroso</strong> (fornecido gratuitamente pelo SUS) possui excelente absorção pelo DMT1 quando administrado em jejum ou 30–60 minutos antes das refeições com suco cítrico/água, mas apresenta sabor metálico acentuado, pode manchar temporariamente o esmalte dentário (prevenido diluindo em um pouco de água e limpando a gengiva/dentes após a administração) e causa maior incidência de efeitos adversos gastrointestinais (náuseas, epigastralgia, diarreia ou constipação, fezes escurecidas) de forma dose-dependente. Já a <strong>ferripolimaltose</strong> e o <strong>ferro bisglicinato quelato</strong> sofrem menor interação com alimentos/leite (podendo ser administrados durante ou logo após as refeições), têm excelente palatabilidade e menor taxa de efeitos colaterais gastrointestinais, favorecendo a adesão familiar ao longo dos 18 a 21 meses de profilaxia.</p>
+
+<h3>Suplementação Profilática Universal de Vitamina D (Colecalciferol)</h3>
+<p>O leite materno, embora perfeito sob os demais aspectos, possui baixa concentração de vitamina D (cerca de 20 a 60 UI/L), e a síntese cutânea de colecalciferol (vitamina D3) a partir do 7-deidrocolesterol sob radiação ultravioleta B (UVB, 290–315 nm) é limitada nos primeiros meses pela recomendação dermatológica e pediátrica de evitar a exposição solar direta desprotegida em lactentes menores de 6 meses. A deficiência de vitamina D reduz a absorção intestinal de cálcio e fósforo, induz hiperparatireoidismo secundário e leva ao <strong>raquitismo carencial</strong> (craniotabes, alargamento epifisário em punhos e tornozelos, rosário raquítico costocondral, sulco de Harrison, atraso no fechamento da fontanela anterior e arqueamento de membros inferiores — geno varo/valgo — quando a criança começa a andar), além de prejudicar a imunidade inata (síntese de catelicidinas antimicrobianas pelos macrófagos).</p>
+<p><strong>Esquema Posológico Universal de Vitamina D (SBP / Sociedade Brasileira de Endocrinologia e Metabologia):</strong></p>
+<ul>
+  <li><strong>Recém-Nascidos a Termo (inclusive em Aleitamento Materno Exclusivo e inclusive em uso de Fórmula Infantil!):</strong> Administrar <strong>400 UI/dia</strong> de colecalciferol (vitamina D3) por via oral dos <strong>7 dias de vida (1ª semana) até os 12 meses completos</strong>, e <strong>600 UI/dia</strong> de colecalciferol por via oral dos <strong>12 aos 24 meses completos (1 a 2 anos de idade)</strong>. <em>Atenção para provas:</em> Mesmo lactentes que tomam fórmula infantil fortificada (que contém ~400 UI de vitamina D por litro) devem receber a suplementação medicamentosa de 400 UI/dia no 1º ano (e 600 UI/dia no 2º ano), pois no primeiro semestre e após o início da alimentação complementar raramente ingerem 1 litro inteiro de fórmula todos os dias, e a dose adicional de 400 UI/dia é perfeitamente segura (muito abaixo do limite superior tolerável de 1.000–1.500 UI/dia para lactentes).</li>
+  <li><strong>Recém-Nascidos Pré-Termo (IG &lt; 37 semanas):</strong> Iniciar <strong>400 UI/dia</strong> de vitamina D oral assim que o prematuro atingir <strong>peso superior a 1.500 g e plena tolerância à nutrição enteral</strong>, mantendo 400 UI/dia até 12 meses e 600 UI/dia dos 12 aos 24 meses.</li>
+</ul>
+
+<h3>Programa Nacional de Suplementação de Vitamina A (PNSVA — Megadose no SUS)</h3>
+<p>A hipovitaminose A é uma importante causa de cegueira evitável na infância (<strong>xeroftalmia</strong>: cegueira noturna -> xerose conjuntival -> <strong>manchas de Bitot</strong> -> xerose corneana -> ceratomalácia/ulceração de córnea) e aumenta em 23% a 30% a mortalidade infantil por diarreia aguda e sarampo (já que o ácido retinoico é essencial para a regeneração do epitélio respiratório e intestinal e para a diferenciação linfocitária no GALT). No âmbito do SUS (Região Norte, Nordeste e municípios prioritários do Centro-Oeste, Minas Gerais e distritos sanitários indígenas), o Ministério da Saúde mantém a suplementação com <strong>megadoses semestrais de Retinol (Vitamina A em cápsulas gelatinosas orais)</strong> registradas na Caderneta da Criança para crianças de <strong>6 a 59 meses de idade (6 meses a 4 anos e 11 meses)</strong>:</p>
+<ul>
+  <li><strong>Crianças de 6 a 11 meses de idade:</strong> <strong>1 cápsula de 100.000 UI</strong> (dose única nesse semestre).</li>
+  <li><strong>Crianças de 12 a 59 meses de idade (1 a 4 anos e 11 meses):</strong> <strong>1 cápsula de 200.000 UI a cada 6 meses</strong> (intervalo mínimo seguro de 4 a 6 meses entre as megadoses para evitar hipervitaminose A aguda — abaulamento de fontanela / pseudotumor cerebral benigno transitório).</li>
+</ul>
+`
+    },
+    {
+      id: 'casos-clinicos-integrados-questoes-residencia',
+      title: '12. Casos Clínicos Integrados e Questões Comentadas de Residência Médica',
+      body_html: `
+<h3>Estudos de Casos Clínicos Integrados da Prática Ambulatorial</h3>
+
+<h4>Caso Clínico 1: Lactente de 4 Meses com Mãe Retornando ao Trabalho (Pressão para Desmame Precoce)</h4>
+<p><strong>Cenário Clínico:</strong> Lactente de 4 meses e 10 dias, nascido a termo (39 semanas, peso de nascimento 3.350 g, clampeamento do cordão aos 2 minutos, mãe hígida), comparece à consulta de puericultura na UBS em Aleitamento Materno Exclusivo (AME), com excelente ganho ponderal (peso atual 6.900 g, escore-Z entre 0 e +1). A mãe relata que sua licença-maternidade de 120 dias terminará em 15 dias e solicita ao médico uma prescrição para "já ir começando suco de laranja lima, papinha de banana com aveia e uma mamadeira de fórmula infantil à tarde para acostumar o bebê antes de ir para a creche".</p>
+<p><strong>Análise Fisiopatológica e Conduta Padrão-Ouro:</strong> Este é um dos cenários mais cobrados em provas práticas (OSCE) e teóricas de Pediatria e Medicina de Família. Aos 4 meses e 10 dias, o lactente ainda não completou 180 dias nem possui maturidade neuromotora plena para sólidos, e está em AME com ótimo crescimento. <strong>Não se deve antecipar a introdução de frutas, sucos ou papas aos 4 meses sob a justificativa do retorno materno ao trabalho!</strong> A conduta correta baseia-se em quatro pilares: (1) Parabenizar a mãe pelo sucesso do AME e tranquilizá-la de que é possível manter o leite materno exclusivo até os 6 meses; (2) Ensinar na consulta a técnica de <strong>ordenha manual das mamas</strong> (espremer a região areolar com polegar e indicador após massagem circular) e as regras oficiais de <strong>armazenamento do leite humano ordenhado cru (LHOC)</strong> da ANVISA/SBP/MS: em frasco de vidro incolor esterilizado com tampa plástica rosqueável, válido por até <strong>12 horas na geladeira</strong> (prateleira superior, até 5 °C, nunca na porta) e por até <strong>15 dias no freezer ou congelador</strong> (a -3 °C ou menos); (3) Orientar que o cuidador ou a creche descongele o leite em banho-maria com o fogo desligado (sem ferver e sem usar micro-ondas, que destrói IgA secretora e lisozima e cria pontos de queimadura) e o ofereça exclusivamente em <strong>copinho aberto ou colher dosadora</strong> (proibindo mamadeiras e chupetas para evitar a <strong>confusão de bicos</strong>, em que o bebê acostuma com o fluxo passivo do bico de borracha e passa a rejeitar a pega areolar ativa no peito quando a mãe chega em casa); e (4) Informar a mãe sobre seus direitos trabalhistas garantidos pela CLT (dois descansos especiais de 30 minutos cada durante a jornada de trabalho para amamentar ou ordenhar até os 6 meses de vida do filho, podendo ser unidos em 1 hora para entrar mais tarde ou sair mais cedo).</p>
+
+<h4>Caso Clínico 2: Prematuro de 6 Meses de Idade Cronológica (Avaliação pela Idade Corrigida)</h4>
+<p><strong>Cenário Clínico:</strong> Lactente nascido prematuro com 29 semanas de idade gestacional e peso de nascimento de 1.250 g (Muito Baixo Peso) vem à consulta de rotina completando exatamente 6 meses de idade cronológica. Recebe aleitamento materno misto (peito + fórmula infantil) e está em uso de sulfato ferroso 3 mg/kg/dia e vitamina D 400 UI/dia desde os 30 dias de vida. Ao exame físico, apresenta bom ganho ponderal nas curvas de Intergrowth-21st/OMS corrigidas, sustenta a cabeça quando colocado em prono, mas quando colocado sentado ainda apresenta queda anterior acentuada do tronco, não alcança objetos voluntariamente na linha média e exibe reflexo de protrusão lingual ativo ao toque labial. A avó pergunta se já pode começar a papa de legumes e carne hoje porque o bebê "fez 6 meses no calendário".</p>
+<p><strong>Análise Fisiopatológica e Conduta Padrão-Ouro:</strong> Cálculo da Idade Corrigida (IC): <code>Prematuridade = 40 − 29 = 11 semanas (~2 meses e 3 semanas)</code>. Subtraindo 2 meses e 3 semanas dos 6 meses de idade cronológica, o lactente possui apenas <strong>3 meses e 1 semana de Idade Corrigida</strong>! Como esperado para um bebê de ~3 meses corrigidos, ele ainda não senta com mínimo apoio, não tem coordenação mão-boca e mantém o reflexo de extrusão da língua. Iniciar alimentos sólidos ou pastosos nesse momento acarretaria grave risco de <strong>broncoaspiração e asfixia</strong>. A conduta correta é explicar à família o conceito de idade corrigida, manter exclusivamente a alimentação láctea atual (leite materno + fórmula) e as suplementações (ferro 3 mg/kg/dia por ter nascido entre 1.000 e 1.500 g, e vitamina D 400 UI/dia), estimular o desenvolvimento neuropsicomotor (<em>tummy time</em> supervisionado) e agendar a introdução da alimentação complementar para quando o lactente atingir cerca de <strong>6 meses de idade corrigida</strong> (aproximadamente aos 8,5–9 meses de idade cronológica) e demonstrar clinicamente os sinais neuromotores de prontidão.</p>
+
+<h4>Caso Clínico 3: Lactente de 9 Meses com Desaceleração Ponderal e Sopa Liquidificada</h4>
+<p><strong>Cenário Clínico:</strong> Lactente de 9 meses, sexo masculino, comparece à consulta com queda do escore-Z de peso/idade de +0,5 (aos 6 meses) para -1,2 (aos 9 meses), caracterizando desaceleração ponderal (<em>faltering growth</em>). No recordatório alimentar de 24 horas, a mãe relata que o bebê mama no peito, mas que, por medo de ele engasgar, prepara no almoço e no jantar uma sopa com batata, cenoura, chuchu e um pedaço de músculo bovino; após o cozimento, ela <strong>retira o pedaço de carne</strong>, bate os legumes com bastante caldo no liquidificador e passa na peneira fina, servindo no prato fundo. No lanche da manhã oferece 150 mL de suco de laranja natural na chuquinha e à tarde dá 1 potinho de <em>petit suisse</em> com 2 biscoitos maisena.</p>
+<p><strong>Análise Fisiopatológica e Conduta Padrão-Ouro:</strong> O recordatório revela cinco erros nutrológicos clássicos que explicam perfeitamente a falha de crescimento e colocam o lactente em altíssimo risco de anemia ferropriva grave: (1) <strong>Uso de liquidificador e peneira:</strong> a sopa líquida tem densidade energética &lt;0,3 kcal/mL (menor que a do leite materno) e não estimula a mastigação aos 9 meses; (2) <strong>Retirada da carne após o cozimento:</strong> o ferro heme, o zinco, a vitamina B12 e as proteínas miofibrilares ficam retidos na fibra da carne e não passam para o caldo; (3) <strong>Ausência do grupo das leguminosas (feijão/lentilha) e de verduras folhosas</strong> na refeição principal; (4) <strong>Oferta de suco de fruta em chuquinha aos 9 meses:</strong> proibido antes de 1 ano (Passo 3), preenchendo o estômago com água e frutose livre sem fibras; e (5) <strong>Oferta de ultraprocessados (<em>petit suisse</em> e biscoito maisena — Grupo 4 da NOVA)</strong> com açúcar antes de 2 anos (Passos 5 e 6). A intervenção consiste em suspender imediatamente o liquidificador, a peneira, a chuquinha, o suco e os ultraprocessados; estruturar o almoço e o jantar com os <strong>4 grupos separados no prato</strong> (arroz/tubérculo + feijão amassado/grãos macios + carne moída/desfiada efetivamente ingerida + verdura e legume), inicialmente amassados grosseiramente no garfo e evoluindo em poucas semanas para <strong>pequenos pedaços picados</strong> (adequados para 9 meses), adicionando 1 colher de chá de óleo vegetal/azeite ao prato e oferecendo fruta <em>in natura</em> nos lanches e após a refeição principal; além de checar a adesão ao ferro profilático e solicitar hemograma, ferritina e PCR.</p>
+
+<h4>Caso Clínico 4: Episódio Agudo Durante a Refeição aos 6 Meses (Diferenciação entre Gag e Engasgo)</h4>
+<p><strong>Cenário Clínico:</strong> Pais de primeira viagem trazem lactente de 6 meses e 2 semanas ao pronto-socorro muito assustados. Relatam que hoje no almoço, ao oferecerem batata-doce amassada no garfo e uma tira macia de banana, o bebê colocou um pedaço maior na boca, fez uma careta intensa de ânsia, ficou com o rosto vermelho, abriu a boca projetando a língua para a frente, tossiu duas vezes de forma audível e cuspiu o pedaço de banana na bandeja, voltando a sorrir e querer pegar a banana logo em seguida. O pai conta que, no momento da ânsia, tentou colocar o dedo indicador dentro da boca do filho para puxar a banana e pergunta se deve suspender os alimentos amassados/em tiras e voltar apenas para líquidos.</p>
+<p><strong>Análise Fisiopatológica e Conduta Padrão-Ouro:</strong> O exame físico da criança é inteiramente normal (ausculta pulmonar limpa e simétrica, eupneica, SpO₂ 99%). O episódio descrito é um clássico <strong>reflexo de <em>gag</em> (reflexo nauseoso protetor)</strong>, e não um engasgo verdadeiro (OVACE). Deve-se tranquilizar os pais explicando que, aos 6 meses, o gatilho do reflexo de <em>gag</em> situa-se no terço médio da língua justamente para expulsar pedaços mal processados <em>antes</em> que se aproximem da via aérea. O erro crítico cometido pelo pai foi tentar introduzir o dedo na boca da criança (varredura digital às cegas), manobra estritamente contraindicada porque pode impactar o alimento na laringe e transformar um reflexo protetor em obstrução real. Orienta-se manter a alimentação complementar amassada no garfo e em tiras macias, jamais voltar para líquidos/peneira, e aproveita-se a oportunidade para demonstrar no consultório os sinais de alarme do engasgo verdadeiro (tosse silenciosa, ausência de som/choro, cianose) e treinar a manobra de 5 golpes dorsais + 5 compressões torácicas.</p>
+
+<h4>Caso Clínico 5: Lactente de 7 Meses com Dermatite Atópica e Dúvida sobre Introdução de Ovo, Peixe e Trigo</h4>
+<p><strong>Cenário Clínico:</strong> Lactente de 7 meses com dermatite atópica leve em dobras cubitais e poplíteas (controlada com hidratação cutânea diária) comparece à consulta de puericultura. A mãe está oferecendo apenas arroz, batata, chuchu, cenoura e caldo de frango desde os 6 meses, pois leu na internet que crianças com pele atópica só podem comer ovo (especialmente a clara), peixe, trigo/aveia, feijão e pasta de amendoim após completarem 1 ou 2 anos de idade para "evitar alergia grave".</p>
+<p><strong>Análise Fisiopatológica e Conduta Padrão-Ouro:</strong> A conduta materna é baseada em um mito obsoleto que, paradoxalmente, <strong>aumenta o risco de alergia alimentar IgE-mediada</strong>! Pela Hipótese da Dupla Exposição ao Alérgeno e pelos ensaios clínicos <strong>LEAP, EAT e PETIT</strong>, manter a criança em restrição oral de ovo, amendoim, peixe e trigo enquanto sua pele com dermatite atópica tem contato ambiental com traços dessas proteínas na poeira domiciliar promove sensibilização epicutânea via alarminas (TSLP, IL-33) e desvio Th2/IgE. A conduta correta é orientar o cuidado intensivo da barreira cutânea com emolientes e <strong>introduzir imediatamente (aos 7 meses) todos os grupos alimentares faltantes por via oral para induzir tolerância imunológica mediada por células Treg CD4+FoxP3+ no GALT</strong>: feijão e demais leguminosas, carnes efetivamente desfiadas/moídas (não apenas o caldo!), <strong>ovo inteiro (clara + gema muito bem cozidos por 10–12 minutos)</strong>, peixe sem espinhas, cereais com glúten (aveia, macarrão) e, se desejado pela família, pasta de amendoim 100% pura diluída em fruta amassada ou água morna.</p>
+
+<h4>Caso Clínico 6: Lactente de 4 Meses com Constipação, Choro Fraco e Hipotonia Descendente ("Floppy Baby") após Uso de Mel</h4>
+<p><strong>Cenário Clínico:</strong> Lactente de 4 meses é trazido à emergência pediátrica com história de 5 dias de constipação intestinal (não evacuava desde segunda-feira, quando antes evacuava 2 vezes ao dia), seguida há 24 horas de dificuldade para sugar o seio materno, engasgos com a própria saliva, choro muito baixo e fraqueza muscular progressiva. Ao exame físico: afebril, consciente quando estimulado, mas com ptose palpebral bilateral, pupilas midriáticas pouco reagentes à luz, sucção e reflexo de gag abolidos, perda completa do sustento cefálico e hipotonia global simétrica ("bebê em postura de rã"). Na anamnese dirigida, a avó revela que há 10 dias vem passando <strong>mel de abelha</strong> na chupeta para acalmar o bebê e deu chá de funcho adoçado com mel para cólicas.</p>
+<p><strong>Análise Fisiopatológica e Conduta Padrão-Ouro:</strong> Trata-se da apresentação clássica do <strong>Botulismo Intestinal do Lactente</strong>, desencadeado pela ingestão de esporos de <em>Clostridium botulinum</em> presentes no mel oferecido antes de 1 ano de idade. Os esporos germinaram no cólon imaturo e produziram neurotoxina botulínica, que clivou as proteínas SNARE pré-sinápticas e bloqueou a liberação de acetilcolina no plexo mioentérico (causando a constipação inaugural), nos nervos cranianos bulbares (ptose, midríase, disfagia, choro fraco) e nas placas motoras somáticas (paralisia flácida descendente). A conduta hospitalar exige internação imediata em UTI Pediátrica com monitorização ventilatória rigorosa (pelo risco iminente de paralisia diafragmática), suporte nutricional por sonda nasoentérica, coleta de fezes (ou lavado colônico com soro fisiológico, já que o paciente está constipado) para pesquisa de toxina botulínica e cultura de <em>C. botulinum</em>, administração precoce de <strong>imunoglobulina botulínica humana específica (BIG-IV / BabyBIG) ou antitoxina botulínica</strong> (sem aguardar o resultado laboratorial quando a clínica é típica) e <strong>evitar antibióticos aminoglicosídeos (gentamicina, amicacina)</strong>, pois os aminoglicosídeos inibem a entrada pré-sináptica de cálcio na junção neuromuscular e potencializam de forma catastrófica o bloqueio neuromuscular botulínico!</p>
+
+<hr>
+
+<h3>Questões Comentadas de Residência Médica e Revalida</h3>
+
+<h4>Questão 1 (Padrão USP / ENARE — Fisiologia da Prontidão e Maturação Renal/Digestiva)</h4>
+<p><strong>Enunciado:</strong> Um lactente nascido a termo, com peso adequado para a idade gestacional, encontra-se em consulta de puericultura aos 6 meses completos de vida, até então em aleitamento materno exclusivo. O médico avalia as bases fisiológicas e neuromotoras para o início da alimentação complementar. Assinale a alternativa CORRETA sobre a maturação fisiológica nessa faixa etária:</p>
+<ol type="A">
+  <li>Ao nascimento, a amilase pancreática já apresenta 80% da atividade do adulto, razão pela qual o amido de milho pode ser digerido sem efeitos adversos desde o primeiro mês de vida, sendo a restrição antes dos 6 meses motivada apenas pela imaturidade da lactase.</li>
+  <li>Aos 6 meses, a taxa de filtração glomerular e o comprimento das alças de Henle atingem maturação suficiente para concentrar a urina até cerca de 1.000 mOsm/L, permitindo tolerar a maior Carga Renal Potencial de Solutos (CRPS) dos alimentos sólidos associada à oferta de água potável nos intervalos.</li>
+  <li>A persistência vigorosa do reflexo de protrusão (extrusão) da língua aos 6 meses é o principal sinal neuromotor de que o lactente está pronto para receber alimentos na colher.</li>
+  <li>Em recém-nascidos pré-termo nascidos com 30 semanas de idade gestacional, os sinais de prontidão neuromotora devem ser exigidos rigorosamente aos 6 meses de idade cronológica para evitar atraso no crescimento.</li>
+  <li>O leite de vaca integral apresenta Carga Renal Potencial de Solutos (CRPS) inferior à do leite materno devido ao seu menor teor de sódio e fósforo, mas é contraindicado antes de 1 ano apenas pelo risco de alergia IgE-mediada.</li>
+</ol>
+<p><strong>Gabarito: Alternativa B.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Incorreta):</strong> Ocorre exatamente o oposto: a <strong>lactase</strong> da borda em escova já é plenamente funcional ao nascimento no RN a termo, enquanto a <strong>alfa-amilase pancreática</strong> é praticamente ausente nos primeiros 3 a 4 meses de vida, só atingindo níveis fisiológicos robustos para digerir grandes quantidades de amido complexo por volta do 6º mês.</li>
+  <li><strong>Comentário da B (Correta):</strong> Aos 6 meses, a maturação da taxa de filtração glomerular (60–80% do adulto) e da resposta tubular coletora ao ADH permite concentrar a urina a ~1.000 mOsm/L (contra apenas 600–700 mOsm/L no neonato), tornando seguro o aumento da CRPS trazido pelas proteínas e eletrólitos das carnes e leguminosas, desde que acompanhado da oferta de água potável nos intervalos (Passo 3 do Guia do MS).</li>
+  <li><strong>Comentário da C (Incorreta):</strong> É a <strong>atenuação/desaparecimento</strong> (e não a persistência) do reflexo de protrusão lingual por volta do 4º–5º mês que indica prontidão neuromotora para a colher.</li>
+  <li><strong>Comentário da D (Incorreta):</strong> No prematuro (&lt;37 semanas), a prontidão neuromotora para alimentação complementar deve ser avaliada pela <strong>Idade Corrigida</strong> (6 meses de idade corrigida), e nunca pela idade cronológica isolada.</li>
+  <li><strong>Comentário da E (Incorreta):</strong> O leite de vaca integral possui CRPS mais que o triplo da do leite materno (~220–308 mOsm/L vs. ~75–93 mOsm/L) devido ao excesso de proteínas (3,5 g/dL), sódio, potássio, cloro e fósforo, além de causar micro-hemorragias intestinais ocultas e baixa biodisponibilidade de ferro.</li>
+</ul>
+
+<h4>Questão 2 (Padrão UNICAMP / SUS-SP — Os 12 Passos do Guia Alimentar do MS e Classificação NOVA)</h4>
+<p><strong>Enunciado:</strong> Durante consulta de puericultura de um lactente de 8 meses na Unidade Básica de Saúde, a mãe relata o seguinte cardápio diário: leite materno em livre demanda; às 9h, 100 mL de suco de laranja lima espremido na hora e coado, sem açúcar; às 12h, papa de arroz, feijão, carne moída, abóbora e couve passados na peneira para retirar grumos; às 15h, banana amassada com 2 biscoitos tipo Maria triturados; às 19h, mamadeira de leite de vaca integral adoçada com 1 colher de chá de açúcar mascavo, pois considera o açúcar mascavo natural e rico em ferro. À luz do Guia Alimentar para Crianças Brasileiras Menores de 2 Anos do Ministério da Saúde, assinale a análise CORRETA sobre esse cardápio:</p>
+<ol type="A">
+  <li>O lanche das 9h está adequado, pois o suco é 100% natural da fruta e sem adição de açúcar, fornecendo vitamina C essencial aos 8 meses.</li>
+  <li>O uso do açúcar mascavo às 19h é permitido no primeiro ano de vida por pertencer ao Grupo 1 (alimentos minimamente processados) da Classificação NOVA, sendo proibido apenas o açúcar branco refinado.</li>
+  <li>O almoço às 12h contempla corretamente os 4 grupos alimentares na composição, mas apresenta erro grave de preparo ao ser passado na peneira, devendo os alimentos ser amassados com o garfo e dispostos separadamente no prato, além de ser necessário introduzir a segunda refeição principal (jantar) no lugar da mamadeira de leite de vaca das 19h.</li>
+  <li>O biscoito tipo Maria pertence ao Grupo 3 (alimentos processados) da Classificação NOVA e pode ser mantido no lanche da tarde desde que limitado a 2 unidades ao dia.</li>
+  <li>Aos 8 meses, o lactente amamentado deve receber apenas uma refeição principal (almoço), devendo o jantar ser introduzido somente ao completar 12 meses de idade.</li>
+</ol>
+<p><strong>Gabarito: Alternativa C.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Incorreta):</strong> Pelo Passo 3 do Guia do MS e diretrizes da SBP/AAP, <strong>qualquer suco de fruta (mesmo 100% natural e sem açúcar) é proibido antes de 1 ano de idade</strong>. Deve-se oferecer a fruta <em>in natura</em> amassada/em pedaços e água pura nos intervalos.</li>
+  <li><strong>Comentário da B (Incorreta):</strong> O açúcar mascavo pertence ao Grupo 2 (ingredientes culinários processados) e, pelo Passo 5 do Guia Alimentar, <strong>todos os tipos de açúcar (branco, mascavo, demerara, cristal, rapadura, melado) são estritamente proibidos até os 2 anos de idade</strong>. Além disso, o leite de vaca integral é proibido antes de 12 meses.</li>
+  <li><strong>Comentário da C (Correta):</strong> O almoço contém os 4 grupos (cereal: arroz; leguminosa: feijão; carne: carne moída; hortaliças: abóbora e couve), porém passar na peneira (Passo 4) retira fibras, reduz a densidade energética e prejudica a mastigação. Aos 8 meses (faixa de 7 a 8 meses), o lactente já deve receber <strong>duas refeições principais (almoço e jantar)</strong> com comida de panela amassada de forma mais grosseira no garfo.</li>
+  <li><strong>Comentário da D (Incorreta):</strong> Biscoitos tipo Maria, maisena e polvilho industrializados pertencem ao <strong>Grupo 4 (Alimentos Ultraprocessados)</strong> da Classificação NOVA e são proibidos para menores de 2 anos (Passo 6).</li>
+  <li><strong>Comentário da E (Incorreta):</strong> A segunda refeição principal (jantar) é introduzida aos <strong>7 a 8 meses de idade</strong> (e não aos 12 meses).</li>
+</ul>
+
+<h4>Questão 3 (Padrão Revalida INEP / UNIFESP — Biodisponibilidade do Ferro e Fisiologia Duodenal)</h4>
+<p><strong>Enunciado:</strong> A prevenção da anemia ferropriva durante a alimentação complementar exige o conhecimento preciso dos mecanismos moleculares de absorção do ferro no enterócito duodenal e das interações dietéticas no prato da criança. Sobre esse tema, assinale a alternativa CORRETA:</p>
+<ol type="A">
+  <li>O ferro presente na gema do ovo e no feijão é majoritariamente do tipo ferro heme (Fe²⁺ ligado ao anel protoporfirínico), apresentando biodisponibilidade superior a 25% independentemente da presença de fitatos ou cálcio na refeição.</li>
+  <li>O ferro não heme encontra-se predominantemente na forma férrica trivalente (Fe³⁺) e precisa ser reduzido à forma ferrosa divalente (Fe²⁺) pela enzima citocromo b duodenal (Dcytb) e pelo ácido ascórbico (vitamina C) para ser transportado através da membrana apical pelo DMT1.</li>
+  <li>A oferta de uma sobremesa láctea (como iogurte natural ou queijo) ou de chá de camomila imediatamente após o almoço potencializa a absorção do ferro não heme vegetal por alcalinizar o lúmen duodenal.</li>
+  <li>Quando a carne bovina é cozida junto com os legumes e o feijão, mais de 80% do seu ferro heme se dissolve no caldo da panela, de modo que oferecer apenas o caldo coado supre a necessidade diária de ferro do lactente de 6 meses.</li>
+  <li>O hormônio hepático hepcidina estimula a expressão da ferroportina na membrana basolateral do enterócito, aumentando a passagem do ferro para a corrente sanguínea durante processos inflamatórios agudos.</li>
+</ol>
+<p><strong>Gabarito: Alternativa B.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Incorreta):</strong> O feijão, as verduras folhosas e inclusive a <strong>gema do ovo</strong> contêm <strong>ferro não heme</strong> (baixa biodisponibilidade, 2% a 10%). O ferro heme só existe em tecidos animais que contêm hemoglobina e mioglobina (carnes bovina, suína, aves, peixes e vísceras).</li>
+  <li><strong>Comentário da B (Correta):</strong> O transportador apical DMT1 (<em>Divalent Metal Transporter 1</em>) do enterócito duodenal só transporta metais divalentes (Fe²⁺). Como o ferro não heme vegetal está na forma férrica (Fe³⁺), a presença de ácido ascórbico (vitamina C de frutas cítricas oferecidas logo após a refeição) e a ação da redutase Dcytb convertem Fe³⁺ em Fe²⁺ e mantêm o ferro solúvel, triplicando sua absorção.</li>
+  <li><strong>Comentário da C (Incorreta):</strong> O cálcio e a caseína dos laticínios competem diretamente com a absorção do ferro no enterócito, e os polifenóis/taninos dos chás (mesmo camomila ou erva-doce) quelam o ferro no lúmen intestinal, inibindo drasticamente sua absorção.</li>
+  <li><strong>Comentário da D (Incorreta):</strong> O ferro heme permanece retido nas fibras musculares da carne; o caldo ralo praticamente não contém ferro. A carne deve ser desfiada, moída ou picada e efetivamente ingerida pela criança (25–75 g/dia).</li>
+  <li><strong>Comentário da E (Incorreta):</strong> A <strong>hepcidina</strong> (que sobe na sobrecarga de ferro e na inflamação via IL-6) liga-se à <strong>ferroportina-1</strong> e promove sua internalização e degradação lisossomal, <em>bloqueando</em> a saída de ferro do enterócito e dos macrófagos para o plasma.</li>
+</ul>
+
+<h4>Questão 4 (Padrão SBP / Santa Casa de SP — Suplementação Profilática de Ferro segundo a SBP 2021–2026)</h4>
+<p><strong>Enunciado:</strong> Um lactente de 3 meses de idade comparece à consulta de puericultura. Está em Aleitamento Materno Exclusivo (AME) com excelente ganho de peso. Nasceu a termo (38 semanas e 2 dias), com peso de nascimento de 3.100 g, porém o parto foi cesáreo com clampeamento imediato do cordão umbilical (em 15 segundos) e a mãe apresentou diabetes gestacional e anemia ferropriva no terceiro trimestre não tratada adequadamente. Segundo as diretrizes vigentes da Sociedade Brasileira de Pediatria (SBP) para prevenção da deficiência de ferro, qual é a conduta CORRETA quanto à suplementação medicamentosa de ferro para este lactente?</p>
+<ol type="A">
+  <li>Não iniciar ferro agora, pois o lactente nasceu a termo, com peso &ge; 2.500 g e está em Aleitamento Materno Exclusivo; iniciar 1 mg/kg/dia de ferro elementar apenas aos 6 meses (180 dias).</li>
+  <li>Iniciar imediatamente, aos 3 meses (90 dias de vida), suplementação profilática de ferro elementar na dose de 1 mg/kg/dia, mantendo até os 24 meses de idade, devido à presença de fatores de risco perinatais e maternos para ferropenia.</li>
+  <li>Iniciar imediatamente, aos 3 meses, suplementação de ferro elementar na dose de 2 mg/kg/dia por 1 ano, pois fatores de risco maternos equivalem ao protocolo de prematuridade.</li>
+  <li>Solicitar ferritina sérica aos 3 meses e só iniciar suplementação se a ferritina for inferior a 5 ng/mL.</li>
+  <li>Iniciar 10 mg/dia de ferro elementar por apenas 30 dias e suspender até que a criança complete 1 ano.</li>
+</ol>
+<p><strong>Gabarito: Alternativa B.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Incorreta):</strong> Essa seria a conduta apenas para o RN a termo de peso adequado <strong>SEM fatores de risco</strong>. Pelo consenso da SBP (2021–2026), a presença de qualquer fator de risco (neste caso, três fatores clássicos: clampeamento do cordão &lt;1 minuto, anemia materna na gestação e diabetes gestacional) antecipa o início da profilaxia para os <strong>90 dias (3 meses de vida)</strong>, mesmo na vigência de AME!</li>
+  <li><strong>Comentário da B (Correta):</strong> RN a termo (&ge;37 semanas) com peso &ge;2.500 g <strong>COM fatores de risco</strong> deve receber <strong>1 mg/kg/dia de ferro elementar a partir dos 90 dias (3 meses) até os 24 meses de vida</strong>, independentemente do tipo de aleitamento.</li>
+  <li><strong>Comentário da C (Incorreta):</strong> A dose de 2 mg/kg/dia iniciada aos 30 dias de vida é destinada aos recém-nascidos pré-termo ou de baixo peso (1.500 a 2.500 g). No RN a termo com peso &ge;2.500 g e fatores de risco, a dose é de <strong>1 mg/kg/dia</strong> iniciada aos 90 dias.</li>
+  <li><strong>Comentário da D e E (Incorretas):</strong> A suplementação aos 90 dias nos lactentes com fatores de risco é profilática e universal para esse grupo, mantendo-se até os 24 meses; a triagem laboratorial com hemograma, ferritina e PCR é recomendada aos 12 meses (ou entre 6 e 9 meses nos grupos de risco).</li>
+</ul>
+
+<h4>Questão 5 (Padrão ENARE / UFRJ — Suplementação de Ferro em Prematuros de Extremo e Muito Baixo Peso e Vitamina D)</h4>
+<p><strong>Enunciado:</strong> Dois irmãos gêmeos prematuros, nascidos com 28 semanas de idade gestacional, comparecem ao ambulatório de seguimento de alto risco (<em>follow-up</em>) completando 30 dias de vida cronológica, já em dieta enteral plena (leite materno + fórmula para prematuros) e clinicamente estáveis. O Gêmeo 1 nasceu com 1.350 g e o Gêmeo 2 nasceu com 920 g. De acordo com a Sociedade Brasileira de Pediatria e o Ministério da Saúde, quais são as doses profiláticas diárias de ferro elementar que devem ser prescritas aos 30 dias de vida para o Gêmeo 1 e para o Gêmeo 2, respectivamente, durante o primeiro ano?</p>
+<ol type="A">
+  <li>Gêmeo 1: 1 mg/kg/dia; Gêmeo 2: 2 mg/kg/dia.</li>
+  <li>Gêmeo 1: 2 mg/kg/dia; Gêmeo 2: 3 mg/kg/dia.</li>
+  <li>Gêmeo 1: 3 mg/kg/dia; Gêmeo 2: 4 mg/kg/dia.</li>
+  <li>Gêmeo 1: 4 mg/kg/dia; Gêmeo 2: 4 mg/kg/dia.</li>
+  <li>Ambos devem aguardar completar 6 meses de idade corrigida para iniciar 1 mg/kg/dia.</li>
+</ol>
+<p><strong>Gabarito: Alternativa C.</strong></p>
+<ul>
+  <li><strong>Comentário Geral (Correta: C):</strong> Tanto a SBP quanto o PNSF/MS estratificam a dose profilática de ferro no prematuro/baixo peso aos <strong>30 dias de vida</strong> conforme a faixa de peso de nascimento durante os primeiros 12 meses de tratamento: peso entre 1.500 g e 2.500 g (Baixo Peso) = <strong>2 mg/kg/dia</strong>; peso entre 1.000 g e 1.500 g (Muito Baixo Peso — caso do <strong>Gêmeo 1, com 1.350 g</strong>) = <strong>3 mg/kg/dia</strong>; e peso &lt; 1.000 g (Extremo Baixo Peso — caso do <strong>Gêmeo 2, com 920 g</strong>) = <strong>4 mg/kg/dia</strong>. Após 1 ano com essas doses, ambos passam a receber <strong>1 mg/kg/dia por mais 1 ano</strong> (até os 24 meses). Ambos também devem receber <strong>400 UI/dia de vitamina D</strong> assim que atingirem peso &gt;1.500 g e dieta enteral plena.</li>
+</ul>
+
+<h4>Questão 6 (Padrão Medicina de Família / SUS-BA — Programa Nacional de Suplementação de Ferro PNSF 2022 e Vitamina A)</h4>
+<p><strong>Enunciado:</strong> Um médico de família atua em uma Unidade de Saúde da Família no interior do Nordeste brasileiro e acompanha uma criança de 6 meses de idade, nascida a termo (39 semanas) e com peso de nascimento de 3.400 g. Seguindo estritamente as diretrizes vigentes do <strong>Ministério da Saúde</strong> para o Programa Nacional de Suplementação de Ferro (PNSF, atualização de 2022) e para o Programa Nacional de Suplementação de Vitamina A (PNSVA), qual é a prescrição CORRETA para esta criança aos 6 meses?</p>
+<ol type="A">
+  <li>Sulfato ferroso na dose de 10 a 12,5 mg de ferro elementar/dia, diariamente por 3 meses consecutivos (dos 6 aos 8 meses), seguido de 3 meses de pausa e um segundo ciclo de 3 meses (dos 12 aos 14 meses); além de megadose única de Vitamina A de 100.000 UI aos 6 meses.</li>
+  <li>Sulfato ferroso na dose de 25 mg de ferro elementar apenas 1 vez por semana dos 6 aos 18 meses; além de megadose de Vitamina A de 200.000 UI aos 6 meses.</li>
+  <li>Sulfato ferroso somente se a criança não estiver mamando no peito; e megadose de Vitamina A de 50.000 UI a cada 2 meses.</li>
+  <li>Não prescrever sulfato ferroso nem vitamina A no SUS antes de 1 ano de idade.</li>
+  <li>Sulfato ferroso 4 mg/kg/dia continuamente dos 6 aos 36 meses; e megadose de Vitamina A de 200.000 UI aos 6 meses.</li>
+</ol>
+<p><strong>Gabarito: Alternativa A.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Correta):</strong> Na atualização de 2022 do PNSF do Ministério da Saúde, para crianças a termo com peso &ge;2.500 g, o esquema profilático de ferro no SUS passou a ser administrado em <strong>dois ciclos intermitentes de 3 meses de suplementação diária (10 a 12,5 mg de ferro elementar/dia)</strong>: o 1º ciclo entre 6 e 8 meses e, após 3 meses de intervalo, o 2º ciclo entre 12 e 14 meses. Já no PNSVA (Vitamina A), a megadose na faixa de <strong>6 a 11 meses é de 100.000 UI</strong> (1 cápsula única nessa faixa), passando para <strong>200.000 UI a cada 6 meses dos 12 aos 59 meses</strong>.</li>
+  <li><strong>Comentário da B (Incorreta):</strong> O esquema semanal de 25 mg/semana era a diretriz antiga do PNSF de 2005 (revogada em 2013), e a dose de 200.000 UI de vitamina A só é usada a partir de 12 meses.</li>
+</ul>
+
+<h4>Questão 7 (Padrão HCPA / UERJ — Métodos BLW, BLISS e Engasgo vs. Gag)</h4>
+<p><strong>Enunciado:</strong> Sobre as abordagens de introdução alimentar aos 6 meses — Método Tradicional Responsivo, <em>Baby-Led Weaning</em> (BLW) e <em>Baby-Led Introduction to Solids</em> (BLISS) — e a prevenção de acidentes por broncoaspiração, assinale a alternativa CORRETA:</p>
+<ol type="A">
+  <li>O método BLISS diferencia-se do BLW clássico por exigir que, em todas as refeições, sejam ofertados pelo menos um alimento rico em ferro, um alimento de alta densidade energética e alimentos preparados com textura e corte seguros contra o engasgo.</li>
+  <li>Aos 6 meses de idade, como o lactente ainda não possui dentes molares, os alimentos para autoalimentação no método BLW devem ser cortados em pequenos cubos de 0,5 cm para facilitar a preensão em pinça fina.</li>
+  <li>Diante de um lactente de 7 meses que apresenta reflexo de <em>gag</em> (ânsia com projeção da língua e rubor facial, sem cianose) durante a refeição, o cuidador deve introduzir imediatamente o dedo indicador em gancho na boca do bebê para retirar o alimento.</li>
+  <li>Uvas e tomates-cereja podem ser oferecidos aos 8 meses desde que cortados transversalmente ao meio (em duas rodelas).</li>
+  <li>A Sociedade Brasileira de Pediatria proíbe que o lactente toque nos alimentos com as mãos antes dos 12 meses, recomendando exclusivamente o uso da colher pelo adulto.</li>
+</ol>
+<p><strong>Gabarito: Alternativa A.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Correta):</strong> O protocolo BLISS (Cameron et al.) foi desenhado especificamente para corrigir as três vulnerabilidades potenciais do BLW não supervisionado (ferropenia, déficit calórico e engasgo), determinando a inclusão obrigatória de 1 alimento rico em ferro + 1 alimento de alta densidade energética + preparo seguro antiengasgo em cada refeição.</li>
+  <li><strong>Comentário da B (Incorreta):</strong> Aos 6 meses, o bebê possui apenas <strong>preensão palmar global</strong> (não faz pinça fina, que só surge aos 9–10 meses). Por isso, aos 6–8 meses os alimentos devem ser cortados em <strong>tiras ou bastões grandes (5–7 cm de comprimento)</strong> para que sobre uma ponta para fora do punho fechado do bebê.</li>
+  <li><strong>Comentário da C (Incorreta):</strong> Jamais se deve fazer varredura digital às cegas na boca da criança durante um reflexo de <em>gag</em>, pois o dedo empurra o alimento para a laringe e causa obstrução real da via aérea.</li>
+  <li><strong>Comentário da D (Incorreta):</strong> Uvas, tomates-cereja e ovos de codorna devem ser cortados no sentido <strong>longitudinal (de comprido) em 4 partes (quartos)</strong>; o corte transversal mantém o formato circular que pode ocluir a glote.</li>
+  <li><strong>Comentário da E (Incorreta):</strong> A SBP recomenda a <strong>abordagem mista/participativa e responsiva</strong>, combinando a oferta ativa com a colher pelo cuidador e o estímulo para que a criança pegue alimentos macios em cortes seguros com as próprias mãos desde os 6 meses.</li>
+</ul>
+
+<h4>Questão 8 (Padrão IAMSPE / SCMBH — Janela Imunológica, Estudo LEAP e Introdução de Alérgenos)</h4>
+<p><strong>Enunciado:</strong> Uma criança de 6 meses tem pai com rinite alérgica e irmã de 4 anos com alergia ao ovo e asma. O lactente apresenta crescimento normal e pele íntegra. Durante a orientação da alimentação complementar, a mãe pergunta quando deve introduzir clara de ovo, peixe, glúten (trigo/aveia) e amendoim. Com base nas evidências científicas atuais (como os estudos LEAP e EAT) e nas diretrizes da SBP, a orientação CORRETA é:</p>
+<ol type="A">
+  <li>Postergar a clara de ovo e o peixe para após 12 meses e o amendoim para após 36 meses, devido ao histórico familiar positivo de primeiro grau para atopia.</li>
+  <li>Introduzir apenas a gema de ovo cozida aos 6 meses e realizar teste cutâneo de leitura imediata (<em>prick test</em>) para todos os alimentos antes de liberar a clara de ovo e o trigo aos 9 meses.</li>
+  <li>Introduzir todos esses alimentos (ovo inteiro com clara e gema bem cozidas, peixe sem espinhas, glúten em quantidades graduais e amendoim na forma de pasta diluída/farinha) a partir dos 6 meses de idade, pois a exposição enteral oportuna promove tolerância imunológica oral mediada por linfócitos T reguladores no GALT.</li>
+  <li>Oferecer amendoim inteiro torrado aos 6 meses para estimular simultaneamente a mastigação e a tolerância imunológica.</li>
+  <li>Suspender o aleitamento materno antes de introduzir o glúten aos 6 meses para evitar reação cruzada com a lactoferrina.</li>
+</ol>
+<p><strong>Gabarito: Alternativa C.</strong></p>
+<ul>
+  <li><strong>Comentário da C (Correta):</strong> A história familiar de atopia não é indicação para atrasar a introdução de alimentos potencialmente alergênicos nem para realizar exames de triagem alergológica prévia em lactentes assintomáticos. A introdução por via oral a partir do 6º mês (dentro da janela imunológica) ativa células dendríticas CD103+ e linfócitos Treg FoxP3+ no GALT, induzindo tolerância oral e reduzindo drasticamente o risco de alergia alimentar futura (como demonstrado pelo estudo LEAP, que reduziu em 81% a alergia ao amendoim). O ovo deve ser oferecido inteiro (clara + gema) e bem cozido, e o amendoim jamais pode ser oferecido em grão inteiro (risco de broncoaspiração), mas sim em pasta 100% pura diluída ou farinha triturada.</li>
+</ul>
+
+<h4>Questão 9 (Padrão PSU-MG / UFPR — Alimentos Proibidos: Mel, Botulismo e Leite de Cabra)</h4>
+<p><strong>Enunciado:</strong> A respeito dos alimentos estritamente contraindicados no primeiro ano de vida e das complicações clínicas decorrentes de sua oferta inadvertida, assinale a alternativa CORRETA:</p>
+<ol type="A">
+  <li>O mel de abelhas é proibido antes de 12 meses porque já contém a toxina botulínica pré-formada em altas concentrações, a qual pode ser totalmente inativada se a família ferver o mel por 2 minutos antes de adoçar o chá do bebê.</li>
+  <li>O mel é contraindicado antes de 12 meses pela presença de esporos termorresistentes de <em>Clostridium botulinum</em>, que germinam no lúmen colônico do lactente (devido à imaturidade da microbiota intestinal) e produzem neurotoxina <em>in vivo</em>, causando constipação seguida de paralisia flácida descendente.</li>
+  <li>Na impossibilidade do aleitamento materno aos 5 meses, o leite de cabra <em>in natura</em> é o substituto ideal por ser hipoalergênico em pacientes com APLV e possuir alto teor de ácido fólico e ferro biodisponível.</li>
+  <li>Os chás de camomila e erva-doce são recomendados pelo Ministério da Saúde nos intervalos das mamadas a partir do 3º mês para aliviar cólicas e hidratar o lactente sem interferir na absorção de minerais.</li>
+  <li>O leite de vaca desnatado deve substituir o leite materno a partir dos 9 meses de idade para prevenir a obesidade infantil e a dislipidemia na adolescência.</li>
+</ol>
+<p><strong>Gabarito: Alternativa B.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Incorreta):</strong> No botulismo clássico do adulto por conservas caseiras, ingere-se a toxina pré-formada (termolábil). Já no <strong>botulismo intestinal do lactente</strong> (associado ao mel), o bebê ingere os <strong>esporos de <em>C. botulinum</em></strong> (que são altamente termorresistentes e não morrem na fervura doméstica nem na pasteurização comum!), os quais germinam e produzem a toxina <em>dentro</em> do intestino grosso do bebê.</li>
+  <li><strong>Comentário da B (Correta):</strong> Descreve com exatidão a patogênese e a evolução clínica (constipação inaugural -> paralisia bulbar com ptose, midríase, sucção fraca -> hipotonia e paralisia flácida simétrica descendente).</li>
+  <li><strong>Comentário da C (Incorreta):</strong> O leite de cabra tem mais de 90% de homologia antigênica (reação cruzada) com as proteínas do leite de vaca (sendo proibido na APLV), possui alta carga renal de solutos e é classicamente deficiente em <strong>ácido fólico (vitamina B9)</strong>, causando <strong>anemia megaloblástica</strong> grave no lactente.</li>
+  <li><strong>Comentário da D (Incorreta):</strong> Chás são proibidos nos primeiros 2 anos (contêm taninos/polifenóis quelantes de ferro e cálcio, além de prejudicarem o AME antes dos 6 meses).</li>
+  <li><strong>Comentário da E (Incorreta):</strong> O leite de vaca é proibido antes de 12 meses; e mesmo entre 12 e 24 meses (quando o leite de vaca é liberado para não amamentados), deve ser sempre na versão <strong>integral</strong>, pois o leite desnatado ou semidesnatado é contraindicado antes dos 2 anos devido à alta necessidade de lipídeos e colesterol para a mielinização do sistema nervoso central.</li>
+</ul>
+
+<h4>Questão 10 (Padrão SURCE / AMRIGS — Conduta na Criança Não Amamentada e Diluição Correta)</h4>
+<p><strong>Enunciado:</strong> Uma lactente de 2 meses de vida, filha de mãe vivendo com HIV (que recebeu cabergolina na maternidade para inibição da lactação conforme protocolo do Ministério da Saúde), está em uso exclusivo de fórmula infantil de partida (Estágio 1). Na consulta de puericultura, o pediatra revisa o preparo da fórmula e o planejamento alimentar do primeiro ano. Assinale a orientação CORRETA:</p>
+<ol type="A">
+  <li>A fórmula infantil de partida deve ser reconstituída na proporção padrão de 1 colher-medida rasa para cada 30 mL de água potável (previamente fervida e resfriada a ~70 °C para inativar <em>Cronobacter sakazakii</em>, e depois resfriada até ~37 °C), e a introdução da alimentação complementar deverá ocorrer aos 6 meses completos de idade.</li>
+  <li>Por não receber leite materno, esta lactente deve iniciar obrigatoriamente papa de frutas aos 3 meses e papa salgada aos 4 meses de vida.</li>
+  <li>Para aumentar o ganho ponderal, deve-se orientar a mãe a diluir 2 colheres-medida de fórmula para cada 30 mL de água e acrescentar 1 colher de chá de amido de milho.</li>
+  <li>Aos 6 meses completos, a fórmula infantil deve ser suspensa e substituída imediatamente por leite de vaca integral UHT para reduzir custos.</li>
+  <li>Como a fórmula infantil de partida já contém vitamina D na sua composição, está contraindicada a suplementação profilática medicamentosa de 400 UI/dia de colecalciferol.</li>
+</ol>
+<p><strong>Gabarito: Alternativa A.</strong></p>
+<ul>
+  <li><strong>Comentário da A (Correta):</strong> A diluição padrão das fórmulas infantis é de 1 medida rasa (~4,4 g) para cada 30 mL de água fervida (reconstituída a 70 °C segundo a OMS/MS para eliminar risco de <em>Cronobacter sakazakii</em> e resfriada antes da oferta). Na criança em uso de fórmula infantil, a alimentação complementar inicia-se exatamente na mesma idade da criança amamentada: aos <strong>6 meses completos (180 dias)</strong>.</li>
+  <li><strong>Comentário da B (Incorreta):</strong> A antecipação da alimentação complementar aos 4 meses no manual do MS aplica-se exclusivamente à exceção de extrema vulnerabilidade em que a criança está recebendo leite de vaca integral (diluído a 2/3 nos primeiros 4 meses) por impossibilidade absoluta de acesso à fórmula infantil. Em uso de fórmula infantil, o início é aos 6 meses.</li>
+  <li><strong>Comentário da C (Incorreta):</strong> Hiperconcentrar a fórmula (2 medidas para 30 mL) eleva drasticamente a osmolaridade e a carga renal de solutos, causando diarreia osmótica e desidratação hipernatrêmica grave.</li>
+  <li><strong>Comentário da D (Incorreta):</strong> Aos 6 meses, transiciona-se da fórmula de partida (Estágio 1) para a <strong>fórmula infantil de seguimento (Estágio 2)</strong> até completar 12 meses; o leite de vaca integral permanece contraindicado até 1 ano.</li>
+  <li><strong>Comentário da E (Incorreta):</strong> A suplementação profilática de <strong>400 UI/dia de vitamina D no 1º ano (e 600 UI/dia dos 12 aos 24 meses)</strong> é universal para todas as crianças, inclusive aquelas em uso de fórmula infantil.</li>
+</ul>
+
+<h3>Síntese de Alta Performance para Revisão de Véspera de Prova</h3>
+<ul>
+  <li><strong>Início da Alimentação Complementar (AC):</strong> Aos <strong>6 meses completos (180 dias)</strong> + presença de sinais neuromotores de prontidão (sustentação de cabeça e tronco/sentar com mínimo apoio, desaparecimento do reflexo de protrusão da língua, preensão palmar voluntária e interesse pelo alimento). Em <strong>prematuros (&lt;37 sem)</strong>, usar sempre a <strong>Idade Corrigida</strong>!</li>
+  <li><strong>Esquema por idade (MS):</strong> <strong>6 meses</strong> = LM + 2 frutas + 1 refeição principal (2–3 colheres de sopa, amassada no garfo); <strong>7–8 meses</strong> = LM + 2 frutas + 2 refeições principais (almoço e jantar, 3–4 colheres de sopa); <strong>9–11 meses</strong> = transição para alimentos picados em pequenos pedaços (4–5 colheres de sopa, estímulo à pinça); <strong>12–24 meses</strong> = cardápio da família (3 refeições + 2 lanches + LM).</li>
+  <li><strong>O Prato da Refeição Principal (4 Grupos Obrigatórios Separados no Prato):</strong> (1) Cereal ou raiz/tubérculo + (2) Leguminosa (feijão/lentilha/grão-de-bico) + (3) Carne, víscera ou ovo inteiro bem cozido (25–75 g/dia; fígado 1x/semana; nunca dar só o caldo!) + (4) Hortaliças (verduras e legumes) + 1 colher de chá de óleo vegetal cru/azeite + fruta cítrica rica em vitamina C de sobremesa (reduz Fe³⁺ não heme em Fe²⁺ via Dcytb para absorção pelo DMT1).</li>
+  <li><strong>Proibições Absolutas:</strong> Liquidificador, mixer e peneira (derrubam a densidade energética de ~0,8–1,0 kcal/g para &lt;0,3 kcal/g e atrasam a mastigação); <strong>Mel antes de 12 meses</strong> (esporos de <em>Clostridium botulinum</em> -> botulismo intestinal do lactente); <strong>Leite de vaca integral antes de 12 meses</strong> (alta CRPS, micro-hemorragias intestinais ocultas, &lt;10% de biodisponibilidade de ferro -> anemia ferropriva); <strong>Sucos de frutas (mesmo 100% naturais) antes de 12 meses</strong> (entre 1 e 3 anos: máx. 100–120 mL/dia); <strong>Açúcar (qualquer tipo) e Ultraprocessados (Grupo 4 da NOVA) antes de 24 meses</strong>; chás e café antes de 24 meses (taninos quelam ferro).</li>
+  <li><strong>Janela Imunológica (6 meses):</strong> Introduzir ovo inteiro (clara + gema bem cozidas), peixe, glúten e pasta diluída de amendoim/castanhas a partir dos 6 meses (estudos LEAP e EAT — tolerância oral por células Treg CD4+FoxP3+ no GALT vs. sensibilização epicutânea na pele com dermatite atópica).</li>
+  <li><strong>Ferro Profilático SBP (2021–2026):</strong> Termo &ge;2.500 g <strong>SEM</strong> fator de risco = <strong>1 mg/kg/dia dos 6 aos 24m</strong>; Termo &ge;2.500 g <strong>COM</strong> fator de risco = <strong>1 mg/kg/dia dos 3 meses (90 dias) aos 24m</strong> (mesmo em AME!); Prematuro ou Baixo Peso 1.500–2.500 g = <strong>2 mg/kg/dia</strong> a partir de 30 dias por 1 ano; Muito Baixo Peso 1.000–1.500 g = <strong>3 mg/kg/dia</strong> a partir de 30 dias por 1 ano; Extremo Baixo Peso &lt;1.000 g = <strong>4 mg/kg/dia</strong> a partir de 30 dias por 1 ano (todos os prematuros/BP recebem depois 1 mg/kg/dia no 2º ano). Triagem universal aos 12 meses com <strong>Hemograma + Ferritina + PCR</strong>.</li>
+  <li><strong>Ferro Profilático PNSF/MS (2022) para Termo &ge;2.500 g:</strong> <strong>10 a 12,5 mg/dia em dois ciclos intermitentes de 3 meses</strong> (1º ciclo: 6–8 meses; pausa de 3 meses; 2º ciclo: 12–14 meses).</li>
+  <li><strong>Vitamina D Universal (SBP):</strong> <strong>400 UI/dia</strong> da 1ª semana aos 12 meses e <strong>600 UI/dia</strong> dos 12 aos 24 meses. <strong>Vitamina A (Megadose SUS):</strong> <strong>100.000 UI</strong> (dose única dos 6–11 meses) e <strong>200.000 UI a cada 6 meses</strong> (dos 12–59 meses).</li>
+</ul>
+`
+    }
+  ],
+  references: [
+    {
+      label: 'BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Promoção da Saúde. Guia Alimentar para Crianças Brasileiras Menores de 2 Anos. Brasília: Ministério da Saúde, 2019 (revisão 2021).',
+      url: 'https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-alimentar-melhor/Documentos/pdf/guia-alimentar-para-criancas-brasileiras-menores-de-2-anos.pdf'
+    },
+    {
+      label: 'SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamento Científico de Nutrologia. Guia Prático de Alimentação da Criança de 0 a 5 anos — Atualização. Rio de Janeiro: SBP, 2021–2024.',
+      url: 'https://www.sbp.com.br/'
+    },
+    {
+      label: 'SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamentos Científicos de Nutrologia e Hematologia. Consenso sobre Anemia Ferropriva: Diretrizes para Avaliação, Prevenção e Tratamento da Deficiência de Ferro na Infância. Rio de Janeiro: SBP, 2021.',
+      url: 'https://www.sbp.com.br/'
+    },
+    {
+      label: 'BRASIL. Ministério da Saúde. Caderno dos Programas Nacionais de Suplementação de Micronutrientes (PNSF, PNSVA e NutriSUS). Brasília: Ministério da Saúde, 2022.',
+      url: 'https://bvsms.saude.gov.br/bvs/publicacoes/caderno_programas_nacionais_suplementacao_micronutrientes.pdf'
+    },
+    {
+      label: 'DU TOIT, G. et al. Randomized Trial of Peanut Consumption in Infants at Risk for Peanut Allergy (LEAP Study). New England Journal of Medicine, v. 372, n. 9, p. 803–813, 2015.',
+      url: 'https://www.nejm.org/doi/full/10.1056/NEJMoa1414850'
+    },
+    {
+      label: 'FEWTRELL, M. et al. Complementary Feeding: A Position Paper by the European Society for Paediatric Gastroenterology, Hepatology, and Nutrition (ESPGHAN) Committee on Nutrition. Journal of Pediatric Gastroenterology and Nutrition, v. 64, n. 1, p. 119–132, 2017.',
+      url: 'https://espghan.info/'
+    },
+    {
+      label: 'WORLD HEALTH ORGANIZATION (WHO). WHO Guideline for Complementary Feeding of Infants and Young Children 6–23 Months of Age. Geneva: World Health Organization, 2023.',
+      url: 'https://www.who.int/publications/i/item/9789240081864'
+    }
+  ]
+};
+
+saveBook(book);

@@ -1,0 +1,1096 @@
+import { saveBook } from './bloco-02-utils.mjs';
+
+const book = {
+  slug: 'crescimento-e-desenvolvimento',
+  title: 'Crescimento e Desenvolvimento',
+  area: 'Pediatria',
+  materia: 'Puericultura, Endocrinologia e Neurodesenvolvimento',
+  description: 'Tratado clínico, antropométrico, endocrinológico e neurobiológico sobre Crescimento Físico, Avaliação Nutricional OMS, Baixa Estatura, Estadiamento Puberal de Tanner e Desenvolvimento Neuropsicomotor (DNPM) para Residência Médica e Prática Pediátrica.',
+  sections: [
+    {
+      id: 'conceitos-fisiologia-crescimento-neurodesenvolvimento',
+      title: '1. Biologia do Crescimento Físico, Modelo ICP de Karlberg e Bases do Neurodesenvolvimento',
+      body_html: `
+        <p>O acompanhamento longitudinal do crescimento somático e do desenvolvimento neuropsicomotor (DNPM) constitui o eixo estruturante da Puericultura moderna e o termômetro mais sensível da saúde biopsicossocial na infância. Embora frequentemente enunciados como um binômio indissociável na rotina ambulatorial, <strong>crescimento</strong> e <strong>desenvolvimento</strong> traduzem fenômenos biológicos distintos, porém interdependentes e sinérgicos. O <strong>crescimento</strong> é um processo eminentemente quantitativo, resultante da somatória de fenômenos celulares de <strong>hiperplasia</strong> (multiplicação celular por mitose, com aumento do número total de células e do conteúdo de DNA tecidual), <strong>hipertrofia</strong> (aumento do volume citoplasmático e síntese proteica intracelular, elevando a razão proteína/DNA) e <strong>acreção</strong> (deposição de substância intercelular e matriz extracelular, como hidroxiapatita e colágeno tipo I na matriz óssea). Sua expressão clínica é aferida diretamente por variáveis antropométricas objetivas: peso (em gramas ou quilogramas), comprimento ou estatura (em centímetros), perímetro cefálico, perímetro torácico, perímetro braquial, dobras cutâneas e relação entre segmentos corporais.</p>
+
+        <p>Em contrapartida, o <strong>desenvolvimento</strong> é um fenômeno essencialmente qualitativo e funcional, correspondente à aquisição progressiva da capacidade de realizar funções cada vez mais complexas, adaptativas e autônomas. Na esfera neuromotora e comportamental, o DNPM reflete a maturação citoarquitetônica do sistema nervoso central (SNC), a mielinização progressiva dos tratos corticoespinhais e associativos, a arborização dendrítica, a sinaptogênese exuberante e o refinamento seletivo por poda sináptica dependente de estímulos ambientais. Crescer significa aumentar em dimensão física; desenvolver-se significa diferenciar-se funcionalmente e adquirir competências motoras, cognitivas, comunicativas e socioemocionais.</p>
+
+        <h3>Cinética Celular do Crescimento Tecidual: Fases de Winick</h3>
+        <p>A dinâmica celular do crescimento somático atravessa três estágios sequenciais clássicos descritos por Myron Winick, cuja compreensão explica por que agravos nutricionais ou hipóxico-isquêmicos incidindo em diferentes janelas ontogenéticas produzem sequelas antropométricas radicalmente distintas:</p>
+        <ul>
+          <li><strong>Fase I — Hiperplasia Pura (Vida Intrauterina Precoce até ~16ª–20ª semana gestacional):</strong> Ocorre intensa proliferação mitótica com aumento exponencial do número de células e da quantidade total de DNA nos tecidos embrionários e fetais, enquanto o tamanho individual de cada célula permanece constante. Insultos graves nessa janela (infecções congênitas do grupo TORCH, cromossomopatias, teratógenos, insuficiência placentária precoce) reduzem permanentemente o contingente celular total dos órgãos, gerando a <strong>Restrição de Crescimento Intrauterino (RCIU) simétrica ou proporcionada</strong>, na qual peso, comprimento e perímetro cefálico estão globalmente comprometidos e o potencial de recuperação pós-natal (<em>catch-up growth</em>) é limitado.</li>
+          <li><strong>Fase II — Hiperplasia e Hipertrofia Concomitantes (Da metade da gestação até os primeiros meses pós-natais):</strong> A taxa de divisão mitótica desacelera gradualmente enquanto se inicia a expansão volumétrica celular por síntese proteica. No tecido nervoso humano, o pico de hiperplasia neuronal ocorre precocemente, mas a hiperplasia glial e a mielinização estendem-se intensamente até o final do segundo ano de vida.</li>
+          <li><strong>Fase III — Hipertrofia Predominante e Acreção (A partir do final do 1º ano de vida):</strong> A multiplicação celular cessa na maioria dos tecidos diferenciados (ou restringe-se às zonas germinativas, como a placa epifisária de crescimento e criptas intestinais), e o ganho dimensional decorre da hipertrofia das fibras musculares, do acúmulo lipídico em adipócitos e da mineralização da matriz óssea. Insultos no terceiro trimestre gestacional (pré-eclâmpsia, insuficiência placentária tardia) afetam predominantemente a hipertrofia e as reservas de glicogênio hepático e tecido adiposo subcutâneo, poupando o número de células e o encéfalo (fenômeno de centralização hemodinâmica fetal ou <em>brain-sparing</em>), resultando em <strong>RCIU assimétrica ou desproporcionada</strong>, com excelente potencial de <em>catch-up</em> pós-natal quando ofertado suporte nutricional adequado.</li>
+        </ul>
+
+        <h3>Fatores Determinantes do Crescimento: Intrínsecos versus Extrínsecos</h3>
+        <p>O crescimento linear resulta da interação contínua entre o patrimônio genético herdado e as condições ambientais em que a criança está inserida. Didaticamente, dividem-se os determinantes em dois grandes blocos:</p>
+        <ul>
+          <li><strong>Fatores Intrínsecos (Genéticos, Epigenéticos e Neuroendócrinos):</strong> Determinam a potencialidade máxima de crescimento do indivíduo (a estatura-alvo genética) e o ritmo maturacional biológico (velocidade de maturação esquelética e idade de início puberal). A herança da estatura é poligênica (envolvendo centenas de <em>loci</em>, com destaque para o gene <em>SHOX</em> localizado na região pseudoautossômica dos cromossomos sexuais Xp22/Yp11, o receptor <em>FGFR3</em>, o peptídeo natriurético tipo C [<em>CNP/NPR2</em>], proteínas da matriz cartilaginosa como <em>ACAN</em> e componentes do eixo GH/IGF-1). O sistema neuroendócrino atua como o mediador permissivo e regulador que traduz o comando genético na placa de crescimento epifisária (fise).</li>
+          <li><strong>Fatores Extrínsecos (Nutricionais, Socioeconômicos, Infecciosos e Psicoafetivos):</strong> Determinam o grau em que o potencial genético será efetivamente alcançado. Nos primeiros dois anos de vida, os fatores extrínsecos — especialmente o aleitamento materno, a introdução alimentar complementar oportuna, o saneamento básico e a prevenção do ciclo vicioso infecção-desnutrição (diarreias de repetição, enteropatia ambiental, parasitoses e pneumonias) — exercem soberania absoluta sobre a trajetória ponderoestatural. O estudo multicêntrico da OMS (<em>Multicentre Growth Reference Study — MGRS</em>) demonstrou de forma cabal que lactentes e pré-escolares (0 a 5 anos) de diferentes etnias e continentes apresentam exatamente o mesmo padrão de crescimento linear quando criados sob condições ótimas de saúde, nutrição, ambiente livre de tabagismo e cuidados materno-infantis. Além disso, o vínculo afetivo é vital: a privação psicossocial severa e os maus-tratos infantis podem inibir funcionalmente a secreção hipotalâmica de GHRH, originando o <strong>nanismo psicossocial</strong> (baixa estatura por privação afetiva), reversível com a retirada da criança do ambiente hostil.</li>
+        </ul>
+
+        <h3>O Modelo Aditivo ICP de Karlberg (Infancy-Childhood-Puberty)</h3>
+        <p>Proposto por Johan Karlberg no final da década de 1980, o <strong>Modelo ICP</strong> decompõe matematicamente e fisiologicamente a curva de crescimento estatural pós-natal humana em três fases aditivas e parcialmente sobrepostas, cada qual governada por um eixo regulador neuroendócrino específico:</p>
+
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Fase do Modelo ICP</th>
+              <th>Janela Cronológica</th>
+              <th>Eixo Regulador Principal</th>
+              <th>Cinética de Velocidade Estatural</th>
+              <th>Impacto Clínico em Caso de Falha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>I — Infancy (Lactente)</strong></td>
+              <td>Vida intrauterina tardia até 2 a 3 anos de vida (predomínio absoluto no 1º ano)</td>
+              <td>Nutrição, Insulina, Lactogênio Placentário (no feto) e IGF-1 tecidual local (parácrino/autócrino) e hormônios tireoidianos</td>
+              <td>Altíssima velocidade inicial (~25 cm no 1º ano e 10–12 cm no 2º ano), porém com rápida desaceleração exponencial</td>
+              <td>Desnutrição energético-proteica, alergia alimentar grave ou doenças disabsortivas causam desaceleração dramática precoce; deficiência isolada de GH pode cursar com comprimento ao nascer normal</td>
+            </tr>
+            <tr>
+              <td><strong>C — Childhood (Infância)</strong></td>
+              <td>Inicia-se entre 6 e 12 meses de vida e estende-se até o início da puberdade</td>
+              <td>Eixo Hipotálamo-Hipófise-Somatotrófico (GH → IGF-1/IGFBP-3 hepático) em sinergia obrigatória com Hormônios Tireoidianos (T4/T3)</td>
+              <td>Velocidade constante e estável em platô (~5 a 7 cm/ano dos 3 anos até a puberdade), com leve desaceleração pré-puberal (<em>dip</em> pré-puberal)</td>
+              <td>Deficiência de GH ou hipotireoidismo adquirido causam queda progressiva do percentil estatural e velocidade de crescimento &lt; 4–5 cm/ano a partir do 2º ano de vida</td>
+            </tr>
+            <tr>
+              <td><strong>P — Puberty (Puberdade)</strong></td>
+              <td>Do início da gonadarca (Tanner M2/G2) até a fusão epifisária completa</td>
+              <td>Sinergia entre Esteroides Sexuais (Estradiol e Testosterona) + pulsos amplificados de GH/IGF-1</td>
+              <td>Aceleração abrupta (estirão puberal: pico de 8–9 cm/ano em meninas e 9–10 cm/ano em meninos) seguida de desaceleração até zero</td>
+              <td>Hipogonadismo impede o estirão puberal; puberdade precoce acelera transitoriamente a estatura, mas funde precocemente a cartilagem epifisária (via estradiol), reduzindo a estatura final adulta</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <blockquote>
+          <strong>Pérola Endocrinológica para Provas:</strong> Na placa de crescimento epifisária, o <strong>estradiol (E2)</strong> é o hormônio diretamente responsável pela senescência condrocitária e pela fusão definitiva das epífises tanto no sexo feminino quanto no sexo masculino (nos meninos, a testosterona sofre aromatização periférica em estradiol pela enzima aromatase expressa nos condrócitos e osteoblastos). Pacientes do sexo masculino com mutação inativadora do receptor de estrogênio (ER-alfa) ou deficiência de aromatase não fecham suas epífises na época habitual e continuam crescendo linearmente na vida adulta, desenvolvendo alta estatura eunucoide e osteopenia grave.
+        </blockquote>
+
+        <h3>Curvas Clássicas de Crescimento dos Diferentes Tecidos Corporais (Curvas de Scammon)</h3>
+        <p>Nem todos os órgãos e sistemas acompanham o ritmo linear do esqueleto. Richard Scammon classificou o crescimento pós-natal dos tecidos humanos em quatro padrões distintos, cobrados recorrentemente em provas de residência:</p>
+        <ol>
+          <li><strong>Padrão Geral (Somático ou Esquelético-Visceral):</strong> Descreve uma curva em "S" (sigmoide), com crescimento acelerado no lactente (0–2 anos), ritmo constante na infância escolar e segundo pico de aceleração no estirão puberal. É o padrão seguido pelos ossos longos, musculatura esquelética, volume sanguíneo, fígado, rins, baço e órgãos cardiorrespiratórios.</li>
+          <li><strong>Padrão Neural (Encefálico e Craniano):</strong> Apresenta crescimento explosivo nos primeiros 2 anos de vida. O cérebro humano atinge cerca de 25% do peso adulto ao nascimento, 50% aos 6 meses, 75% aos 12 meses, 80% aos 2 anos e mais de 90% aos 5–6 anos de idade, praticamente não sofrendo estirão na adolescência. Isso explica por que o perímetro cefálico cresce ~12 cm apenas no primeiro ano de vida.</li>
+          <li><strong>Padrão Linfoide (Timo, Tonsilas Palatinas, Adenoides, Linfonodos e Placas de Peyer):</strong> Cresce de forma acelerada e contínua durante toda a primeira e segunda infâncias, atingindo cerca de 180% a 200% da massa linfoide de um adulto entre os 10 e 12 anos de idade, sofrendo posteriormente involução fisiológica sob ação dos esteroides sexuais na puberdade. Do ponto de vista clínico, essa hiperplasia linfoide fisiológica justifica o achado de amígdalas e adenoides volumosas em pré-escolares e escolares eutróficos sem que isso signifique necessariamente patologia neoplásica ou infecciosa crônica.</li>
+          <li><strong>Padrão Genital (Reprodutivo):</strong> Permanece em estado de latência e quiescência quase absoluta desde o final da minipuberdade neonatal até os 8–10 anos de idade, quando sofre ascensão vertical abrupta desencadeada pela reativação do gerador hipotalâmico de pulsos de GnRH.</li>
+        </ol>
+
+        <h3>Neurobiologia do Desenvolvimento, Leis de Maturação e os Primeiros 1.000 Dias</h3>
+        <p>O desenvolvimento neuropsicomotor obedece a uma sequência biológica previsível, ordenada e universal, determinada pela maturação anatômica e funcional do sistema nervoso central. O processo de <strong>mielinização</strong> — deposição de bainha lipoproteica de mielina pelos oligodendrócitos no SNC e pelas células de Schwann no sistema nervoso periférico — aumenta exponencialmente a velocidade de condução saltatória do potencial de ação axonal, transformando movimentos reflexos, holocinéticos e descoordenados do recém-nascido em atos motores voluntários, seletivos e precisos. A sequência de aquisição motora nos dois primeiros anos de vida respeita rigorosamente duas leis embriológicas e neurofisiológicas clássicas:</p>
+        <ul>
+          <li><strong>Lei Cefalocaudal:</strong> O controle postural e motor voluntário progride no sentido craniocaudal (da cabeça em direção aos pés). Por essa razão, o lactente primeiro adquire o controle ocular e o sustento cefálico cervical (2–4 meses), depois o controle axial toracolombar permitindo sentar-se (6–9 meses), seguido pelo ortostatismo e finalmente pela marcha bípede independente (12–15 meses).</li>
+          <li><strong>Lei Próximo-Distal:</strong> A coordenação motora dos membros evolui do eixo axial/proximal (cintura escapular e braço) para as extremidades distais (punho e dedos). Assim, o lactente inicialmente realiza movimentos amplos de varredura com o ombro para alcançar um objeto (3–4 meses), evolui para a preensão palmar global cúbito-palmar (4–5 meses), passa pela preensão radial-palmar e pinça inferior (8–9 meses) até atingir a pinça fina superior opondo a polpa do polegar à polpa do indicador (10–12 meses).</li>
+        </ul>
+
+        <p>Paralelamente à mielinização, o córtex cerebral vivencia nos <strong>Primeiros 1.000 Dias de Vida</strong> (período crítico que compreende os 270 dias da gestação somados aos 730 dias dos dois primeiros anos pós-natais) a janela de maior <strong>neuroplasticidade</strong> de toda a existência humana. Nos primeiros meses pós-natais, ocorre uma <strong>sinaptogênese exuberante</strong>, na qual a densidade sináptica no córtex visual, auditivo e pré-frontal ultrapassa em até 50% a 100% a densidade encontrada no cérebro adulto. Subsequentemente, entra em ação a <strong>poda sináptica (<em>synaptic pruning</em>)</strong> mediada pela micróglia e regulada pela regra hebbiana (<em>"neurons that fire together, wire together"</em>): circuitos neurais frequentemente estimulados pela interação recíproca com os cuidadores (sistema de "servir e retornar" ou <em>serve and return</em>), pela linguagem falada, pelo afeto e pela exploração sensoriomotora são estabilizados e mielinizados, ao passo que sinapses redundantes ou subutilizadas são eliminadas. Deficiências nutricionais específicas nessa janela — notadamente a <strong>ferropenia</strong> (mesmo antes de instalar anemia franca, pois o ferro é cofator essencial dos oligodendrócitos para a síntese de mielina e para o metabolismo dopaminérgico estriatal), a deficiência de iodo, zinco, colina e ácidos graxos poli-insaturados de cadeia longa (DHA/ARA) — provocam déficits cognitivos e executivos que podem persistir de modo irreversível na vida adulta.</p>
+      `
+    },
+    {
+      id: 'regras-antropometricas-ganho-ponderoestatural',
+      title: '2. Regras Práticas de Evolução Antropométrica no 1º e 2º Anos de Vida',
+      body_html: `
+        <p>Em provas de Residência Médica, ENARE, USP, UNIFESP e Revalida, bem como no atendimento ambulatorial rápido de Puericultura, o pediatra precisa dominar as regras numéricas de estimativa de ganho ponderal, estatural, expansão do perímetro cefálico e fechamento das fontanelas cranianas. Embora as curvas da Organização Mundial da Saúde (OMS) sejam a ferramenta definitiva de diagnóstico, as regras de bolso permitem identificar instantaneamente se a velocidade de ganho de um lactente entre duas consultas está adequada ou se há desaceleração patológica (<em>falha de crescimento</em> ou <em>faltering growth</em>).</p>
+
+        <h3>Dinâmica Ponderal: Da Perda Fisiológica Neonatal ao Segundo Ano</h3>
+        <p>Um recém-nascido (RN) a termo (37 a 41 semanas e 6 dias), adequado para a idade gestacional (AIG), nasce em média com peso entre <strong>3.000 g e 3.500 g</strong> (considerando-se peso normal ao nascer a faixa de 2.500 g a 3.999 g; baixo peso &lt; 2.500 g; muito baixo peso &lt; 1.500 g; e extremo baixo peso &lt; 1.000 g).</p>
+        <ul>
+          <li><strong>Perda Ponderal Fisiológica Neonatal:</strong> Nos primeiros dias de vida pós-natal, todo recém-nascido a termo sofre uma perda ponderal fisiológica de até <strong>10% do peso de nascimento</strong> (em prematuros, tolera-se até 12%–15%), decorrente da contração do compartimento de líquido extracelular (diurese pós-natal desencadeada pela queda da resistência vascular pulmonar e liberação de peptídeo natriurético atrial), perdas insensíveis transepidérmicas, eliminação de mecônio e ingestão láctea inicialmente reduzida na fase de colostro (antes da apojadura, que ocorre entre o 3º e o 5º dia pós-parto). O nadir (ponto mais baixo) do peso ocorre habitualmente entre o 3º e o 5º dia de vida.</li>
+          <li><strong>Recuperação do Peso de Nascimento:</strong> O peso de nascimento <strong>deve ser integralmente recuperado entre o 10º e o 14º dia de vida</strong>. Uma perda ponderal superior a 7%–8% já nas primeiras 48–72 horas de vida ou a não recuperação do peso de nascimento aos 14 dias exige avaliação imediata da técnica de amamentação (pega, posicionamento, sucção efetiva), exclusão de desidratação hipernatrêmica e investigação de infecções neonatais ou cardiopatias/erros inatos do metabolismo.</li>
+        </ul>
+
+        <p>Após a recuperação do peso de nascimento, o ganho ponderal no primeiro ano de vida segue uma progressão decrescente por trimestres altamente previsível:</p>
+
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Período Etário</th>
+              <th>Ganho Ponderal Diário Médio</th>
+              <th>Ganho Ponderal Mensal Médio</th>
+              <th>Ganho Acumulado no Trimestre</th>
+              <th>Marcos Práticos de Multiplicação do Peso de Nascimento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1º Trimestre (0 a 3 meses)</strong></td>
+              <td><strong>25 a 30 g/dia</strong></td>
+              <td><strong>700 a 900 g/mês</strong></td>
+              <td>~2.100 a 2.400 g</td>
+              <td>Fase de máxima velocidade ponderal pós-natal</td>
+            </tr>
+            <tr>
+              <td><strong>2º Trimestre (3 a 6 meses)</strong></td>
+              <td><strong>20 g/dia</strong></td>
+              <td><strong>600 g/mês</strong></td>
+              <td>~1.800 g</td>
+              <td><strong>Duplica o peso de nascimento aos 4 a 5 meses</strong> de idade</td>
+            </tr>
+            <tr>
+              <td><strong>3º Trimestre (6 a 9 meses)</strong></td>
+              <td><strong>15 g/dia</strong></td>
+              <td><strong>450 a 500 g/mês</strong></td>
+              <td>~1.400 a 1.500 g</td>
+              <td>Transição alimentar (início da alimentação complementar aos 6 meses)</td>
+            </tr>
+            <tr>
+              <td><strong>4º Trimestre (9 a 12 meses)</strong></td>
+              <td><strong>10 a 12 g/dia</strong></td>
+              <td><strong>300 a 400 g/mês</strong></td>
+              <td>~1.000 a 1.200 g</td>
+              <td><strong>Triplica o peso de nascimento aos 12 meses</strong> (~9,5 a 10 kg)</td>
+            </tr>
+            <tr>
+              <td><strong>2º Ano de Vida (12 a 24 meses)</strong></td>
+              <td><strong>6 a 8 g/dia</strong></td>
+              <td><strong>200 a 250 g/mês</strong> (~2,5 a 3 kg/ano)</td>
+              <td>~600 a 750 g por trimestre</td>
+              <td><strong>Quadruplica o peso de nascimento aos 2 a 2,5 anos</strong> (~12 a 13 kg)</td>
+            </tr>
+            <tr>
+              <td><strong>Fase Pré-Escolar e Escolar (2 anos até puberdade)</strong></td>
+              <td>~5 a 6 g/dia</td>
+              <td>~150 a 200 g/mês</td>
+              <td><strong>~2,0 a 2,5 kg/ano</strong></td>
+              <td>Fórmula prática (3 a 10 anos): <strong>Peso (kg) = (Idade em anos × 2) + 8</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Evolução do Comprimento e da Estatura</h3>
+        <p>Na semiologia antropométrica padronizada pela OMS e pelo Ministério da Saúde, a aferição longitudinal do corpo recebe nomes e técnicas distintas conforme a faixa etária:</p>
+        <ul>
+          <li><strong>Menores de 2 anos (0 a 23 meses e 29 dias):</strong> Mede-se o <strong>comprimento</strong> com a criança em <strong>decúbito dorsal (deitada)</strong> sobre antropômetro horizontal (infantômetro), com o auxílio de duas pessoas: a mãe ou auxiliar mantém a cabeça posicionada no plano de Frankfurt (linha imaginária da margem orbital inferior ao meato acústico externo perpendicular à prancha fixa), enquanto o examinador estende completamente os dois joelhos da criança e encosta a prancha móvel firmemente na planta dos pés em ângulo reto.</li>
+          <li><strong>A partir de 2 anos (≥ 24 meses):</strong> Mede-se a <strong>estatura (altura)</strong> em <strong>posição ortostática (em pé)</strong> no estadiômetro vertical, descalça, com calcanhares, panturrilhas, glúteos, escápulas e região occipital encostados na parede/haste vertical e cabeça no plano horizontal de Frankfurt.</li>
+        </ul>
+        <blockquote>
+          <strong>Atenção Antropométrica Crítica:</strong> O comprimento medido deitado é sistematicamente <strong>0,7 cm maior</strong> do que a estatura medida em pé na mesma criança (devido à compressão gravitacional dos discos intervertebrais e à lordose fisiológica na postura ereta). Se uma criança de 24 meses ou mais for medida deitada, deve-se subtrair 0,7 cm antes de plotar na curva de estatura; inversamente, se uma criança menor de 2 anos for medida em pé, deve-se somar 0,7 cm para equivaler ao comprimento.
+        </blockquote>
+
+        <p>O recém-nascido a termo nasce com comprimento médio de <strong>49 a 50 cm</strong> (faixa normal: 46 a 53 cm). A velocidade de crescimento linear segue marcos exatos:</p>
+        <ul>
+          <li><strong>1º Semestre de Vida (0 a 6 meses):</strong> Ganha <strong>15 cm</strong> (cerca de 3,5 cm/mês no 1º trimestre e 2,0 cm/mês no 2º trimestre), atingindo ~65 cm aos 6 meses.</li>
+          <li><strong>2º Semestre de Vida (6 a 12 meses):</strong> Ganha <strong>10 cm</strong> (cerca de 1,5 cm/mês no 3º trimestre e 1,2 cm/mês no 4º trimestre).</li>
+          <li><strong>Total no 1º Ano de Vida:</strong> Ganha <strong>25 cm no primeiro ano</strong>, aumentando seu comprimento de nascimento em 50% (de 50 cm vai para <strong>~75 cm aos 12 meses</strong>).</li>
+          <li><strong>2º Ano de Vida (12 a 24 meses):</strong> Ganha <strong>10 a 12 cm/ano</strong> (média de ~1 cm/mês), atingindo cerca de <strong>86 a 87 cm aos 2 anos</strong> de idade (aproximadamente metade da estatura final adulta!).</li>
+          <li><strong>3º e 4º Anos de Vida (2 a 4 anos):</strong> Ganha cerca de <strong>7 a 8 cm/ano</strong>. Aos <strong>4 anos de idade, a criança duplica o comprimento de nascimento</strong>, atingindo aproximadamente <strong>100 cm (1 metro)</strong>.</li>
+          <li><strong>Dos 4 Anos até o Início da Puberdade:</strong> Velocidade de crescimento basal estável de <strong>5 a 7 cm/ano</strong>. Qualquer velocidade de crescimento <strong>&lt; 4,5 a 5 cm/ano</strong> nessa faixa etária é patológica até que se prove o contrário. Fórmula prática de estimativa para 4 a 12 anos: <strong>Estatura (cm) = [(Idade em anos - 4) × 6] + 100</strong> (ou <em>Idade × 6 + 77</em>).</li>
+        </ul>
+
+        <h3>Perímetro Cefálico (PC) e Dinâmica das Fontanelas Cranianas</h3>
+        <p>O <strong>Perímetro Cefálico (PC)</strong> — perímetro occipitofrontal máximo — deve ser aferido obrigatoriamente em todas as consultas pediátricas nos primeiros 24 a 36 meses de vida, utilizando fita métrica inextensível posicionada anteriormente logo acima das arcadas supraorbitárias (glabela) e posteriormente sobre a proeminência occipital externa máxima, evitando incluir o pavilhão auricular ou adereços capilares. O PC reflete diretamente o crescimento volumétrico do parênquima encefálico, dos ventrículos liquóricos e da caixa craniana.</p>
+        <ul>
+          <li><strong>PC ao Nascimento (RN a termo):</strong> Média de <strong>34 a 35 cm</strong> (considerando-se normal pelos critérios de triagem neonatal do Ministério da Saúde ≥ 31,5 cm para meninas e ≥ 31,9 cm para meninos a termo; microcefalia se &lt; -2 escores-z e microcefalia grave se &lt; -3 escores-z nas curvas Intergrowth-21st ou OMS para idade gestacional e sexo).</li>
+          <li><strong>1º Trimestre (0 a 3 meses):</strong> Cresce <strong>2,0 cm/mês</strong> (total de +6 cm no trimestre → atinge ~40–41 cm aos 3 meses).</li>
+          <li><strong>2º Trimestre (3 a 6 meses):</strong> Cresce <strong>1,0 cm/mês</strong> (total de +3 cm no trimestre → atinge ~43–44 cm aos 6 meses). Portanto, no <strong>1º semestre o PC aumenta 9 cm</strong>.</li>
+          <li><strong>2º Semestre (6 a 12 meses):</strong> Cresce <strong>0,5 cm/mês</strong> (total de +3 cm no semestre → atinge <strong>~46 a 47 cm aos 12 meses</strong>).</li>
+          <li><strong>Total no 1º Ano de Vida:</strong> O perímetro cefálico cresce <strong>12 cm no primeiro ano de vida</strong>! No segundo ano de vida (12 a 24 meses), cresce apenas cerca de <strong>2 a 2,5 cm no ano inteiro</strong>, atingindo ~48–49 cm aos 2 anos.</li>
+        </ul>
+
+        <h4>Semiologia das Suturas e Fontanelas Cranianas</h4>
+        <p>O crânio do recém-nascido possui placas ósseas membranosas separadas por suturas fibrosas (sagital, coronária, lambdoide e metópica) e intersecções membranosas chamadas fontanelas, que permitem o cavalgamento ósseo (moldagem) durante a passagem pelo canal de parto e acomodam a rápida expansão cerebral pós-natal. Deve-se palpar as fontanelas com o lactente calmo, sem chorar, preferencialmente em posição semi-sentada:</p>
+        <ul>
+          <li><strong>Fontanela Anterior (Bregmática):</strong> Possui formato losangular (romboide), localizada na junção das suturas coronária, sagital e metópica. Ao nascimento, mede cerca de 2 × 2 cm (variando de 1 a 4 cm). Deve ser normotensa e plana (levemente pulsátil). Seu fechamento fisiológico ocorre entre <strong>9 e 18 meses de idade</strong> (podendo iniciar aos 6 meses em uma minoria de lactentes normais, desde que o PC continue crescendo no seu canal de percentil).</li>
+          <li><strong>Fontanela Posterior (Lambdoide):</strong> Possui formato triangular, situada na junção das suturas sagital e lambdoide. Ao nascer, mede cerca de 0,5 a 1 cm (ou já é apenas uma fenda palpável). Seu fechamento ocorre precocemente, até os <strong>2 meses de vida</strong> (frequentemente já fechada no 1º mês).</li>
+        </ul>
+        <p><strong>Significado Clínico das Anormalidades Fontanelares:</strong> Uma fontanela anterior <strong>abaulada, tensa e não pulsátil</strong> (com a criança sentada e quieta) indica <strong>hipertensão intracraniana</strong> (meningite bacteriana, hidrocefalia, hemorragia intraventricular, hematoma subdural por trauma/síndrome do bebê sacudido, ou pseudotumor cerebral por intoxicação por vitamina A, tetraciclinas ou ácido nalidíxico). Uma fontanela <strong>deprimida (encovada)</strong> é sinal clássico de <strong>desidratação moderada a grave</strong>. Já uma fontanela <strong>ampla com atraso de fechamento (&gt; 18 meses)</strong> exige investigação imediata para <strong>hipotireoidismo congênito</strong>, <strong>raquitismo carencial (deficiência de vitamina D)</strong>, <strong>acondroplasia</strong>, <strong>osteogênese imperfeita</strong>, <strong>hidrocefalia</strong>, <strong>síndrome de Down (trissomia do 21)</strong> e <strong>disostose cleidocraniana</strong>. Por outro lado, o fechamento precoce das suturas (<strong>craniossinostose</strong>) produz deformidades cranianas específicas (escafocefalia ou dolicocefalia na fusão precoce da sutura sagital — a mais comum; plagiocefalia anterior na coronal unilateral; braquicefalia na coronal bilateral; trigonocefalia na sutura metópica) com crista óssea palpável ao longo da sutura fundida, diferenciando-se da plagiocefalia posicional (na qual a orelha homolateral é deslocada anteriormente formando um paralelogramo visto de cima e as suturas estão pérvias).</p>
+      `
+    },
+    {
+      id: 'curvas-crescimento-oms-avaliacao-nutricional',
+      title: '3. Curvas de Crescimento da OMS 2006/2007, Pontos de Corte em Escore-Z e Prematuridade',
+      body_html: `
+        <p>A avaliação antropométrica sistematizada pelo Ministério da Saúde na Caderneta da Criança baseia-se nas curvas de referência da Organização Mundial da Saúde (OMS). Existem dois conjuntos metodológicos distintos que compõem o padrão OMS:</p>
+        <ol>
+          <li><strong>Padrão OMS 2006 (0 a 5 anos incompletos / 0 a 60 meses):</strong> Elaborado a partir do <em>Multicentre Growth Reference Study (MGRS)</em> conduzido em seis países (Brasil — cidade de Pelotas/RS, Gana, Índia, Noruega, Omã e Estados Unidos). Trata-se de uma curva <strong>prescritiva</strong> (mostra como as crianças <em>devem</em> crescer), construída com componente longitudinal (0 a 24 meses) e transversal (18 a 71 meses), incluindo exclusivamente crianças nascidas a termo, de gestações únicas, amamentadas exclusivamente ao seio até pelo menos 4–6 meses, com introdução alimentar adequada, mães não tabagistas e condições socioeconômicas favoráveis.</li>
+          <li><strong>Referência OMS 2007 (5 a 19 anos completos):</strong> Construída a partir da reconstrução estatística dos dados históricos do NCHS/1977 (<em>National Center for Health Statistics</em>) suavizados pelo método LMS para se acoplarem perfeitamente aos pontos finais da curva de 2006 aos 60 meses e aos pontos de corte de sobrepeso (IMC 25 kg/m²) e obesidade (IMC 30 kg/m²) do adulto aos 19 anos de idade.</li>
+        </ol>
+
+        <h3>Os Quatro Índices Antropométricos Fundamentais</h3>
+        <ul>
+          <li><strong>Peso para a Idade (P/I):</strong> Expressa a relação entre a massa corporal e a idade cronológica. É o índice mais sensível para detectar precocemente agravos agudos na rotina da puericultura do lactente e é utilizado de0 a 10 anos de idade. Contudo, <strong>não diferencia o comprometimento nutricional agudo (emagrecimento) do crônico (baixa estatura)</strong> e não é utilizado acima de 10 anos devido à grande variabilidade da idade do estirão puberal.</li>
+          <li><strong>Comprimento ou Estatura para a Idade (E/I):</strong> Avalia o crescimento linear de 0 a 19 anos. É o indicador por excelência do estado nutricional de <strong>longo prazo (passado nutricional)</strong>. Seu déficit (&lt; -2 escores-z) define a <strong>baixa estatura (<em>stunting</em>)</strong>, refletindo insultos nutricionais, inflamatórios, infecciosos ou endócrinos crônicos e cumulativos.</li>
+          <li><strong>Peso para o Comprimento ou Estatura (P/E):</strong> Dispensa o conhecimento da idade cronológica e avalia a harmonia entre massa corporal e estatura em crianças de 0 a 5 anos. Seu déficit (&lt; -2 escores-z) define a <strong>magreza ou emagrecimento (<em>wasting</em>)</strong>, que traduz déficit nutricional <strong>agudo</strong> ou recente.</li>
+          <li><strong>Índice de Massa Corporal para a Idade (IMC/I):</strong> Calculado pela razão $\\text{IMC} = \\frac{\\text{Peso (kg)}}{\\text{Estatura (m)}^2}$ e avaliado de 0 a 19 anos. Possui altíssima correlação com a adiposidade corporal total e substitui o P/E a partir dos 5 anos de idade, sendo o índice padrão-ouro para triagem de <strong>sobrepeso e obesidade</strong> em toda a faixa pediátrica.</li>
+        </ul>
+
+        <h3>Correspondência Matemática entre Escore-Z (Desvio-Padrão) e Percentis</h3>
+        <p>O <strong>Escore-Z</strong> quantifica quantos desvios-padrão (DP) o valor antropométrico da criança se afasta da mediana (escore-z 0 = percentil 50) da população de referência para a mesma idade e sexo. A equivalência exata que deve ser memorizada para as provas é:</p>
+        <ul>
+          <li><strong>Escore-Z -3 (ou &lt; -3):</strong> Equivale ao <strong>Percentil 0,1</strong></li>
+          <li><strong>Escore-Z -2:</strong> Equivale ao <strong>Percentil 3</strong> (exato: 2,3)</li>
+          <li><strong>Escore-Z -1:</strong> Equivale ao <strong>Percentil 15</strong> (exato: 15,9)</li>
+          <li><strong>Escore-Z 0 (Mediana):</strong> Equivale ao <strong>Percentil 50</strong></li>
+          <li><strong>Escore-Z +1:</strong> Equivale ao <strong>Percentil 85</strong> (exato: 84,1)</li>
+          <li><strong>Escore-Z +2:</strong> Equivale ao <strong>Percentil 97</strong> (exato: 97,7)</li>
+          <li><strong>Escore-Z +3:</strong> Equivale ao <strong>Percentil 99,9</strong></li>
+        </ul>
+
+        <h3>Tabela Oficial de Pontos de Corte do SISVAN / Ministério da Saúde / OMS</h3>
+        <p>Esta é uma das tabelas mais cobradas em todas as provas de Residência Médica do país. Observe com atenção redobrada a <strong>diferença crítica na classificação do excesso de peso entre menores de 5 anos (0 a 5 anos incompletos) e crianças/adolescentes de 5 a 19 anos</strong>: como lactentes e pré-escolares estão em fase de rápido crescimento linear e remodelação corporal (antes do rebote fisiológico da adiposidade que ocorre por volta dos 5–6 anos), a OMS adota critérios mais conservadores abaixo dos 5 anos, chamando a faixa entre +1 e +2 de <strong>"Risco de Sobrepeso"</strong>, enquanto a partir dos 5 anos a faixa entre +1 e +2 já recebe o diagnóstico de <strong>"Sobrepeso"</strong>!</p>
+
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Faixa de Escore-Z e Percentil</th>
+              <th>Peso / Idade (0 a 10 anos)</th>
+              <th>Estatura / Idade (0 a 19 anos)</th>
+              <th>Peso / Estatura (0 a 5 anos) e IMC / Idade (0 a 5 anos incompletos)</th>
+              <th>IMC / Idade (5 a 19 anos completos)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>&lt; Escore-Z -3</strong> (&lt; P0,1)</td>
+              <td><strong>Muito baixo peso para a idade</strong></td>
+              <td><strong>Muito baixa estatura para a idade</strong></td>
+              <td><strong>Magreza acentuada</strong></td>
+              <td><strong>Magreza acentuada</strong></td>
+            </tr>
+            <tr>
+              <td><strong>≥ Escore-Z -3 e &lt; Escore-Z -2</strong> (≥ P0,1 e &lt; P3)</td>
+              <td><strong>Baixo peso para a idade</strong></td>
+              <td><strong>Baixa estatura para a idade</strong></td>
+              <td><strong>Magreza</strong></td>
+              <td><strong>Magreza</strong></td>
+            </tr>
+            <tr>
+              <td><strong>≥ Escore-Z -2 e &lt; Escore-Z -1</strong> (≥ P3 e &lt; P15)</td>
+              <td>Peso adequado para a idade (Atenção: vigilância se descendente)</td>
+              <td>Estatura adequada para a idade</td>
+              <td>Eutrofia</td>
+              <td>Eutrofia</td>
+            </tr>
+            <tr>
+              <td><strong>≥ Escore-Z -1 e ≤ Escore-Z +1</strong> (≥ P15 e ≤ P85)</td>
+              <td><strong>Peso adequado para a idade</strong></td>
+              <td><strong>Estatura adequada para a idade</strong></td>
+              <td><strong>Eutrofia</strong></td>
+              <td><strong>Eutrofia</strong></td>
+            </tr>
+            <tr>
+              <td><strong>&gt; Escore-Z +1 e ≤ Escore-Z +2</strong> (&gt; P85 e ≤ P97)</td>
+              <td>Peso adequado para a idade</td>
+              <td>Estatura adequada para a idade</td>
+              <td><strong>Risco de sobrepeso</strong></td>
+              <td><strong>Sobrepeso</strong></td>
+            </tr>
+            <tr>
+              <td><strong>&gt; Escore-Z +2 e ≤ Escore-Z +3</strong> (&gt; P97 e ≤ P99,9)</td>
+              <td><strong>Peso elevado para a idade</strong> (acima de +2)</td>
+              <td>Estatura adequada para a idade (acima de +2: alta estatura)</td>
+              <td><strong>Sobrepeso</strong></td>
+              <td><strong>Obesidade</strong></td>
+            </tr>
+            <tr>
+              <td><strong>&gt; Escore-Z +3</strong> (&gt; P99,9)</td>
+              <td><strong>Peso elevado para a idade</strong></td>
+              <td>Alta estatura / gigantismo a investigar</td>
+              <td><strong>Obesidade</strong></td>
+              <td><strong>Obesidade grave</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <blockquote>
+          <strong>Armadilha Clássica de Prova:</strong> Se a banca apresentar uma criança de <strong>3 anos de idade</strong> com IMC para a Idade no <strong>escore-z +1,8 (entre +1 e +2)</strong>, o diagnóstico nutricional correto pelo Ministério da Saúde/OMS é <strong>Risco de Sobrepeso</strong>. Se outra criança tiver <strong>6 anos de idade</strong> com o mesmo IMC para a Idade no <strong>escore-z +1,8 (entre +1 e +2)</strong>, o diagnóstico já é <strong>Sobrepeso</strong>! Analogamente, um escore-z de IMC/Idade em <strong>+2,5 (entre +2 e +3)</strong> significa <strong>Sobrepeso</strong> em uma criança de 2 anos, mas significa <strong>Obesidade</strong> em uma criança de 8 anos! Além disso, lembre-se de que o índice Peso/Idade isoladamente nunca dá diagnóstico de obesidade: valores acima de +2 em Peso/Idade são laudados apenas como "Peso elevado para a idade", devendo-se sempre cruzar com o IMC/Idade.
+        </blockquote>
+
+        <h3>Avaliação do Crescimento do Recém-Nascido Pré-Termo (Prematuro)</h3>
+        <p>Recém-nascidos pré-termo (idade gestacional &lt; 37 semanas ao nascer) não podem ser plotados diretamente nas curvas da OMS usando sua idade cronológica (pós-natal) bruta, sob pena de falso diagnóstico de desnutrição, baixa estatura, microcefalia e atraso do DNPM. A condução correta exige duas etapas:</p>
+        <ol>
+          <li><strong>Fase Neonatal e Pós-Natal Imediata (até 40 a 50/64 semanas de Idade Pós-Menstrual):</strong> Utiliza-se preferencialmente a curva do consórcio internacional <strong>Intergrowth-21st</strong> (que é prescritiva e possui curvas específicas para o crescimento pós-natal de prematuros até 64 semanas de idade pós-menstrual, equivalentes a 6 meses de idade corrigida) ou as curvas de <strong>Fenton (2013)</strong> (baseadas em dados transversais de peso, comprimento e PC ao nascer de 22 a 50 semanas de idade pós-menstrual).</li>
+          <li><strong>Transição para as Curvas da OMS com Idade Corrigida (IC):</strong> Após atingir 40 semanas de idade pós-menstrual (termo equivalente), utiliza-se a curva da OMS aplicando-se obrigatoriamente a <strong>Idade Corrigida (Idade Pós-Concepção Ajustada)</strong>, calculada subtraindo-se da idade cronológica o número de semanas que faltaram para completar 40 semanas de gestação: $\\text{Idade Corrigida (semanas)} = \\text{Idade Cronológica (semanas)} - (40 - \\text{Idade Gestacional ao Nascer em semanas})$. Por exemplo: um lactente com 6 meses (24 semanas) de idade cronológica que nasceu prematuro com 32 semanas de idade gestacional possui um grau de prematuridade de $40 - 32 = 8\\text{ semanas}$ (2 meses). Portanto, sua <strong>Idade Corrigida é de 4 meses (16 semanas)</strong>, e todos os seus parâmetros de peso, comprimento, perímetro cefálico e marcos do desenvolvimento neuropsicomotor devem ser cobrados na linha dos <strong>4 meses</strong>!</li>
+        </ol>
+        <p><strong>Até quando corrigir a idade do prematuro?</strong> De acordo com a Sociedade Brasileira de Pediatria (SBP) e o Ministério da Saúde, corrige-se a idade cronológica para todos os parâmetros (peso, estatura, perímetro cefálico e DNPM) até os <strong>24 meses (2 anos) de idade cronológica</strong>. Em <strong>prematuros extremos (idade gestacional &lt; 28 semanas)</strong> ou de extremo baixo peso (&lt; 1.000 g), recomenda-se estender a correção da idade até os <strong>36 meses (3 anos) de idade</strong>, especialmente para a estatura e o perímetro cefálico.</p>
+      `
+    },
+    {
+      id: 'avaliacao-clinica-propedeutica-baixa-estatura',
+      title: '4. Avaliação Clínica e Propedêutica da Baixa Estatura: Definições, Alvo Genético, Proporções e Idade Óssea',
+      body_html: `
+        <p>A queixa de "criança que não cresce" ou "menor da turma da escola" é um dos motivos mais frequentes de encaminhamento ao ambulatório de Pediatria Geral e Endocrinologia Pediátrica. Para conduzir o raciocínio clínico com precisão cirúrgica, é fundamental distinguir o critério estático (ponto único na curva) do critério dinâmico (velocidade longitudinal de crescimento).</p>
+
+        <h3>Critérios Diagnósticos de Baixa Estatura e Falha de Crescimento</h3>
+        <p>Define-se formalmente <strong>Baixa Estatura (BE)</strong> ou indicação de investigação propedêutica quando a criança preenche qualquer um dos seguintes critérios antropométricos:</p>
+        <ul>
+          <li><strong>Critério Estatístico Clássico:</strong> Comprimento ou estatura para a idade e sexo situado <strong>abaixo de -2 desvios-padrão (Escore-Z &lt; -2)</strong>, o que corresponde aproximadamente ao <strong>Percentil &lt; 3 (exato: P2,3)</strong> da curva de referência da OMS.</li>
+          <li><strong>Baixa Estatura Grave (Extrema):</strong> Estatura <strong>abaixo de -3 desvios-padrão (Escore-Z &lt; -3 ou Percentil &lt; 0,1)</strong>, condição que raramente decorre de variantes normais isoladas e impõe investigação imediata de causas orgânicas/genéticas.</li>
+          <li><strong>Discrepância em Relação ao Canal Familiar (Alvo Genético):</strong> Criança cuja estatura, mesmo que ainda situada entre o escore-z -1 e -2 (portanto tecnicamente "dentro da faixa normal populacional"), encontra-se <strong>mais de 1,5 a 2 desvios-padrão (ou &gt; 8,5 a 10 cm na projeção estatural) abaixo da sua estatura-alvo genética familiar</strong> (exemplo: filho de pais muito altos que está crescendo no percentil 5).</li>
+          <li><strong>Desaceleração da Velocidade de Crescimento (Critério Dinâmico — O Mais Sensível!):</strong> Velocidade de crescimento (VC, aferida em cm/ano num intervalo mínimo de 6 meses para evitar erros de medição) persistentemente <strong>abaixo do percentil 25 (ou &lt; P10)</strong> para a idade e sexo, ou <strong>queda sustentada cruzando para baixo dois canais principais de percentis</strong> (ou perda &gt; 0,5 a 1,0 escore-z de estatura) após os 2 a 3 anos de vida. Nota: nos primeiros 18 a 24 meses de vida, o cruzamento de canais de percentil pode ser fisiológico (fenômeno de canalização genética ou <em>catch-up / catch-down</em>, no qual o lactente migra do canal determinado pelo ambiente intrauterino materno para o seu canal genético parental). Após os 2–3 anos de idade, mudar de canal estatural para baixo é sempre um sinal de alerta!</li>
+        </ul>
+
+        <h3>Cálculo da Estatura-Alvo Genética (Canal Familiar de Tanner)</h3>
+        <p>Proposta por James Tanner, a fórmula da estatura-alvo (<em>Target Height</em>) baseia-se na diferença média de 13 cm entre a estatura final masculina e feminina na população adulta, com um intervalo de confiança de 95% equivalente a ±2 desvios-padrão (aproximadamente <strong>±8,5 cm</strong> para ambos os sexos, embora algumas referências clássicas citem ±9 cm ou ±10 cm para meninos e ±8,5 cm para meninas):</p>
+        <ul>
+          <li><strong>Sexo Masculino (Meninos):</strong> $\\text{Estatura-Alvo (cm)} = \\frac{\\text{Estatura do Pai (cm)} + \\text{Estatura da Mãe (cm)} + 13}{2} \\pm 8,5\\text{ cm}$.</li>
+          <li><strong>Sexo Feminino (Meninas):</strong> $\\text{Estatura-Alvo (cm)} = \\frac{\\text{Estatura do Pai (cm)} + \\text{Estatura da Mãe (cm)} - 13}{2} \\pm 8,5\\text{ cm}$.</li>
+        </ul>
+        <p><strong>Exemplo Prático de Prova:</strong> Um menino cujo pai mede 175 cm e cuja mãe mede 160 cm possui estatura-alvo de $\\frac{175 + 160 + 13}{2} = \\frac{348}{2} = 174\\text{ cm}$, com canal familiar estendendo-se de <strong>165,5 cm a 182,5 cm</strong>. Para uma irmã desse menino (mesmos pais), a estatura-alvo será $\\frac{175 + 160 - 13}{2} = \\frac{322}{2} = 161\\text{ cm}$, com canal familiar de <strong>152,5 cm a 169,5 cm</strong>. Ao plotar a projeção estatural da criança (baseada na idade óssea) aos 19 anos na curva da OMS, verifica-se se ela cairá dentro ou fora desse envelope familiar.</p>
+
+        <h3>Avaliação da Proporcionalidade Corporal: Baixa Estatura Proporcionada vs Desproporcionada</h3>
+        <p>Diante de toda criança com baixa estatura confirmada, o passo semiológico imediato ao exame físico é definir se o déficit estatural é <strong>proporcionado</strong> (tronco e membros reduzidos de forma harmônica — típico das variantes normais, desnutrição, doenças sistêmicas e endocrinopatias, exceto hipotireoidismo congênito grave não tratado) ou <strong>desproporcionado</strong> (acometimento assimétrico entre esqueleto axial e apendicular — típico das displasias esqueléticas como acondroplasia, hipocondroplasia, discondrosteose de Léri-Weill, raquitismos e mucopolissacaridoses). Quatro medidas e relações definem a proporcionalidade:</p>
+        <ol>
+          <li><strong>Segmento Inferior (SI):</strong> Medido em pé, da borda superior da sínfise púbica até o chão (no lado interno do pé). Representa o crescimento dos ossos longos dos membros inferiores.</li>
+          <li><strong>Segmento Superior (SS):</strong> Obtido pela subtração $\\text{SS} = \\text{Estatura Total} - \\text{Segmento Inferior}$ (ou medido diretamente pela estatura sentada da superfície do banco ao vértex craniano). Representa o crescimento craniofacial e da coluna vertebral.</li>
+          <li><strong>Razão Segmento Superior / Segmento Inferior (Relação SS/SI):</strong> Como o recém-nascido possui cabeça proporcionalmente grande e membros curtos, a relação SS/SI diminui progressivamente com a idade à medida que os membros inferiores crescem mais rápido que o tronco: ao nascimento (RN a termo), a relação SS/SI é de $\\approx \\mathbf{1,7}$; aos 3 anos de idade, cai para $\\approx \\mathbf{1,3}$; e entre 7 e 10 anos de idade (e na vida adulta), atinge $\\approx \\mathbf{1,0}$ (e $\\approx 0,95$ no adolescente/adulto). Uma <strong>relação SS/SI aumentada para a idade</strong> indica encurtamento dos membros inferiores (ex.: acondroplasia, hipocondroplasia, raquitismo hipofosfatêmico ou hipotireoidismo congênito grave não tratado precocemente). Uma <strong>relação SS/SI diminuída para a idade</strong> indica encurtamento do tronco/coluna vertebral (ex.: displasias espondiloepifisárias, mucopolissacaridoses como síndrome de Morquio, escoliose grave ou pós-radioterapia espinhal).</li>
+          <li><strong>Envergadura (Distância entre as pontas dos dedos médios com os braços abduzidos a 90° no plano horizontal):</strong> No recém-nascido e lactente, a envergadura é menor que o comprimento (cerca de 2 a 3 cm menor); por volta dos 8 a 10 anos se iguala à estatura; e na adolescência/vida adulta é igual ou até 2 a 4 cm maior que a estatura. Envergadura significativamente menor que a estatura aponta para encurtamento dos membros superiores (rizomelia na acondroplasia; mesomelia com deformidade de Madelung na haploinsuficiência do gene <em>SHOX</em> / Síndrome de Turner).</li>
+        </ol>
+
+        <h3>Avaliação da Maturação Esquelética: Radiografia de Idade Óssea (IO)</h3>
+        <p>A <strong>Idade Óssea (IO)</strong> é o marcador biológico mais fiel da maturação fisiológica e do potencial residual de crescimento linear de uma criança. É obtida por meio da <strong>radiografia simples de mão e punho esquerdos</strong> em incidência posteroanterior, comparando-se o número, o tamanho, a morfologia dos núcleos de ossificação secundários dos ossos do carpo, metacarpos e falanges e o grau de fusão epifisária com os padrões do <strong>Atlas de Greulich &amp; Pyle</strong> (ou pelo método de pontuação osso a osso de <strong>Tanner-Whitehouse — TW2/TW3</strong>). Em lactentes menores de 1 a 2 anos (nos quais os núcleos carpais ainda são escassos), a radiografia de joelho e pé/tornozelo esquerdos (método de Pyle/Hoerr ou hemiesqueleto) pode complementar a avaliação.</p>
+        <ul>
+          <li><strong>IO compatível com a Idade Cronológica (IO $\\approx$ IC, dentro de $\\pm 1$ DP ou $\\pm 1$ ano):</strong> Indica que o relógio biológico maturacional está alinhado à idade cronológica. Se a criança tem baixa estatura com IO = IC, sua previsão de estatura final já está comprometida na mesma proporção do seu déficit atual (ocorre na <strong>Baixa Estatura Familiar</strong>, em displasias ósseas, síndromes genéticas e na <strong>Síndrome de Turner</strong> nos primeiros anos antes da falência gonadal atrasar a fusão).</li>
+          <li><strong>IO atrasada em relação à Idade Cronológica (IO &lt; IC em mais de 1,5 a 2 DP / &gt; 1–2 anos):</strong> Indica que a criança ainda possui "tempo extra" de cartilagem epifisária aberta para crescer. É o achado clássico do <strong>Atraso Constitucional do Crescimento e da Puberdade (ACCP)</strong> (onde IO $\\approx$ Idade Estatural), mas também ocorre de forma acentuada nas <strong>endocrinopatias (hipotireoidismo — que causa o atraso mais severo de IO, além de disgenesia epifisária —, deficiência de GH e hipercortisolismo)</strong> e na <strong>desnutrição crônica / doenças sistêmicas inflamatórias ou disabsortivas</strong>.</li>
+          <li><strong>IO avançada em relação à Idade Cronológica (IO &gt; IC):</strong> Ocorre na <strong>puberdade precoce</strong> (central ou periférica), na <strong>hiperplasia adrenal congênita</strong> não controlada, no <strong>hipertireoidismo</strong>, na <strong>obesidade exógena</strong> (que acelera moderadamente a IO e o crescimento linear na infância, embora sem aumentar a estatura final) e em síndromes de hipercrescimento (Sotos, Weaver, Beckwith-Wiedemann).</li>
+        </ul>
+      `
+    },
+    {
+      id: 'diagnostico-diferencial-baixa-estatura-variantes-patologicas',
+      title: '5. Diagnóstico Diferencial da Baixa Estatura: Variantes Normais versus Causas Patológicas',
+      body_html: `
+        <p>Cerca de <strong>80% das crianças</strong> atendidas com queixa de baixa estatura não possuem nenhuma doença orgânica, endócrina ou genética subjacente: elas apresentam <strong>Variantes Normais do Crescimento</strong>, representadas pela <strong>Baixa Estatura Familiar (Genética)</strong>, pelo <strong>Atraso Constitucional do Crescimento e da Puberdade (ACCP)</strong> ou pela associação de ambos. O grande divisor de águas para separar as variantes normais das causas patológicas é a <strong>Velocidade de Crescimento (VC)</strong>: nas variantes normais, após os 2–3 anos de idade, a velocidade de crescimento é <strong>rigorosamente normal (≥ 5 cm/ano)</strong>, mantendo a criança paralela à curva de referência!</p>
+
+        <h3>Comparação Direta: Baixa Estatura Familiar (BEF) vs Atraso Constitucional (ACCP)</h3>
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Parâmetro Clínico e Propedêutico</th>
+              <th>Baixa Estatura Familiar (Genética)</th>
+              <th>Atraso Constitucional do Crescimento e da Puberdade (ACCP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Peso e Comprimento ao Nascer</strong></td>
+              <td>Normais (ou discretamente menores, porém adequados à idade gestacional)</td>
+              <td>Normais ao nascimento</td>
+            </tr>
+            <tr>
+              <td><strong>Comportamento da Curva nos Primeiros 2–3 Anos</strong></td>
+              <td>Desaceleração fisiológica (<em>catch-down</em>) nos primeiros 18–24 meses até atingir o canal genético familiar baixo, onde se estabiliza</td>
+              <td>Desaceleração da velocidade de crescimento entre os 6 e 24–36 meses de vida, caindo para próximo ou logo abaixo do percentil 3 (Escore-Z -2)</td>
+            </tr>
+            <tr>
+              <td><strong>Velocidade de Crescimento Escolar (após 3 anos)</strong></td>
+              <td><strong>Normal (5 a 7 cm/ano)</strong>, crescendo paralelamente ao percentil 3 (dentro do seu canal familiar)</td>
+              <td><strong>Normal (5 a 6 cm/ano)</strong> na infância, porém com acentuação do vale pré-puberal porque os pares já iniciaram o estirão e o paciente ainda não</td>
+            </tr>
+            <tr>
+              <td><strong>História Familiar</strong></td>
+              <td>Um ou ambos os pais apresentam <strong>baixa estatura</strong> (alvo genético baixo); puberdade dos pais ocorreu em idade habitual</td>
+              <td>Pais com <strong>estatura final normal</strong>, porém história clássica de que o pai ou a mãe era "o menor da sala" e teve <strong>puberdade/menarca ou estirão tardio</strong> ("cresceu até os 18–19 anos")</td>
+            </tr>
+            <tr>
+              <td><strong>Proporções Corporais e Exame Físico</strong></td>
+              <td>Proporcionada (SS/SI normal), sem dismorfismos, eutrófica (Peso/Estatura normal)</td>
+              <td>Proporcionada, exame físico normal, aparência mais jovem que a idade cronológica</td>
+            </tr>
+            <tr>
+              <td><strong>Idade Óssea (Radiografia de Mão e Punho)</strong></td>
+              <td><strong>Normal / Compatível com a Idade Cronológica (IO = IC &gt; IE)</strong></td>
+              <td><strong>Atrasada em relação à Idade Cronológica (IO &lt; IC)</strong>, porém <strong>compatível com a Idade Estatural (IO = IE)</strong> e com o estágio puberal</td>
+            </tr>
+            <tr>
+              <td><strong>Início da Puberdade e Estirão</strong></td>
+              <td>Ocorre em <strong>idade cronológica habitual</strong></td>
+              <td><strong>Atrasados</strong> (acompanham a idade óssea: puberdade inicia quando a IO atinge ~10,5–11 anos na menina e ~11,5–12 anos no menino)</td>
+            </tr>
+            <tr>
+              <td><strong>Prognóstico de Estatura Final Adulta</strong></td>
+              <td><strong>Baixa para a população geral</strong>, porém <strong>adequada e dentro do canal da estatura-alvo familiar</strong></td>
+              <td><strong>Normal</strong> e compatível com a estatura-alvo familiar (cresce por mais tempo que os colegas)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <blockquote>
+          <strong>Conceito de Idade Estatural (IE):</strong> A Idade Estatural corresponde à idade na qual a estatura atual da criança estaria situada exatamente na mediana (Percentil 50 / Escore-Z 0). Por exemplo, se um menino de 12 anos de Idade Cronológica (IC) mede 138 cm (que é o Percentil 50 de um menino de 10 anos), sua Idade Estatural (IE) é de 10 anos. No <strong>ACCP</strong>, a regra de ouro é: <strong>IO = IE &lt; IC</strong> (a idade óssea também é de ~10 anos, garantindo que ele ainda tem todo o crescimento de um menino de 10 anos pela frente). Já na <strong>Baixa Estatura Familiar</strong>, temos <strong>IE &lt; IO = IC</strong> (a idade óssea é de 12 anos, igual à cronológica). Nas <strong>endocrinopatias (hipotireoidismo ou deficiência de GH)</strong>, o atraso ósseo costuma ser extremo: <strong>IO ≤ IE &lt;&lt; IC</strong> com velocidade de crescimento patológica (&lt; 4–5 cm/ano).
+        </blockquote>
+
+        <h3>Causas Patológicas de Baixa Estatura Proporcionada</h3>
+        <p>Quando a velocidade de crescimento é subnormal (&lt; 4,5–5 cm/ano na idade escolar ou queda de percentis), a baixa estatura é patológica. Se a relação SS/SI for normal (proporcionada), a relação entre o Peso e a Estatura (ou IMC) fornece uma pista clínica valiosa para dividir o raciocínio em dois subgrupos:</p>
+
+        <h4>1. Relação Peso/Estatura Diminuída (Déficit Ponderal Maior que o Déficit Estatural — "Emagrecido e Baixo")</h4>
+        <p>Aponta fortemente para <strong>desnutrição energético-proteica primária</strong> (carência alimentar) ou <strong>doenças sistêmicas crônicas, inflamatórias ou disabsortivas</strong>, nas quais o consumo energético aumentado, a anorexia induzida por citocinas pró-inflamatórias (IL-6, TNF-alfa e IL-1beta, que bloqueiam a sinalização intracelular do receptor de GH via proteínas SOCS e inibem diretamente a condrogênese na fise) e a má absorção prejudicam primeiro o peso e depois a estatura:</p>
+        <ul>
+          <li><strong>Doença Celíaca:</strong> Enteropatia imunomediada pelo glúten em indivíduos HLA-DQ2/DQ8 positivos. <strong>Atenção máxima em provas:</strong> Na faixa escolar e adolescência, a doença celíaca pode se manifestar com <strong>baixa estatura isolada e anemia ferropriva refratária à reposição oral de ferro</strong>, mesmo na ausência total de diarreia crônica ou distensão abdominal! Por isso, a dosagem de <strong>IgA total sérica e anticorpo antitransglutaminase tecidual IgA (anti-tTG IgA)</strong> faz parte da triagem laboratorial obrigatória de toda baixa estatura inexplicada.</li>
+          <li><strong>Doença Inflamatória Intestinal (especialmente Doença de Crohn):</strong> O atraso do crescimento linear e da puberdade pode preceder em meses ou anos os sintomas gastrointestinais clássicos (dor abdominal, diarreia sanguinolenta, perda ponderal), acompanhando-se de elevação de VHS, PCR, calprotectina fecal, trombocitose e hipoalbuminemia.</li>
+          <li><strong>Doença Renal Crônica e Acidose Tubular Renal (ATR):</strong> Crianças com ATR distal (tipo 1) ou proximal (tipo 2 / Síndrome de Fanconi) ou uremia crônica apresentam falha grave de crescimento (mesmo sem queixas urinárias evidentes) devido à acidose metabólica hiperclorêmica (que consome tampão ósseo, inibe a secreção de GH e causa resistência periférica ao IGF-1), distúrbios hidroeletrolíticos e osteodistrofia renal. Sempre solicitar <strong>gasometria venosa, eletrólitos (sódio, potássio, cloro), ureia, creatinina e EAS</strong> na triagem da baixa estatura.</li>
+          <li><strong>Outras doenças crônicas:</strong> Cardiopatias congênitas cianóticas ou com hiperfluxo pulmonar (ICC), fibrose cística, hepatopatias crônicas, anemias hemolíticas crônicas (doença falciforme, talassemia major) e infecções crônicas (HIV, tuberculose).</li>
+        </ul>
+
+        <h4>2. Relação Peso/Estatura Normal ou Aumentada ("Gordinho e Baixo" — Déficit Estatural Maior que o Ponderal)</h4>
+        <p>É a assinatura clínica clássica das <strong>Endocrinopatias</strong> e das <strong>Síndromes Genéticas</strong>! Quando uma criança está ganhando peso normalmente (ou ficando sobrepeso/obesa) enquanto sua velocidade de crescimento estatural despenca, jamais culpe apenas "excesso de comida": na obesidade exógena simples, a criança é <em>alta</em> ou tem estatura normal-alta para a idade! Obesidade associada a desaceleração estatural grita endocrinopatia:</p>
+        <ul>
+          <li><strong>Hipotireoidismo (Congênito ou Adquirido — Tireoidite de Hashimoto):</strong> Os hormônios tireoidianos são indispensáveis para a síntese de GH, expressão de IGF-1 e maturação condrocitária. O hipotireoidismo adquirido (cuja principal causa em escolares/adolescentes é a tireoidite linfocítica crônica de Hashimoto) cursa com desaceleração dramática da velocidade de crescimento, ganho ponderal modesto (por mixedema e redução da taxa metabólica basal), constipação, intolerância ao frio, queda do rendimento escolar, pele seca, bradicardia e <strong>atraso acentuado da idade óssea</strong>. Exame de triagem obrigatório: <strong>TSH e T4 livre</strong>.</li>
+          <li><strong>Deficiência de Hormônio do Crescimento (DGH — Nanismo Hipofisário):</strong> Pode ser congênita (defeitos genéticos, displasia septo-óptica, síndrome de interrupção da haste hipofisária com neuro-hipófise ectópica à ressonância magnética) ou adquirida (<strong>craniofaringioma</strong> — tumor suprasselar calcificado que cursa com desaceleração estatural, cefaleia, vômitos e hemianopsia bitemporal —, germinomas, histiocitose de células de Langerhans, trauma craniano ou radioterapia craniana). No período neonatal, o RN com DGH congênita tem peso e comprimento ao nascer normais ou quase normais, mas pode apresentar <strong>hipoglicemia neonatal grave, icterícia prolongada (colestase neonatal) e micropênis com criptorquidia</strong>. Na infância, exibe baixa estatura grave (&lt; -3 DP), velocidade de crescimento &lt; 4 cm/ano, <strong>fácies de querubim ("boneca")</strong> com fronte olímpica e hipoplasia médio-facial, <strong>voz aguda</strong>, <strong>adiposidade troncular ("aspecto rechonchudo")</strong> e atraso importante da idade óssea. A triagem é feita pela dosagem de <strong>IGF-1 e IGFBP-3</strong> (que são estáveis no sangue, ao contrário do GH basal que é pulsátil e não serve isoladamente para diagnóstico!). A confirmação exige <strong>testes farmacológicos de estímulo de GH</strong> (clonidina, insulina/hipoglicemia, glucagon) demonstrando pico de GH &lt; 5 a 7 ng/mL em dois testes distintos, seguidos de RM de sela túrcica.</li>
+          <li><strong>Hipercortisolismo (Síndrome de Cushing Endógena ou Iatrogênica por Corticoterapia Crônica):</strong> Os glicocorticoides em excesso exercem efeito catabólico devastador sobre a placa de crescimento (inibem a proliferação de condrócitos, induzem apoptose, suprimem a síntese de colágeno, reduzem a secreção de GH e antagonizam o IGF-1). Clinicamente, é o protótipo da criança que <strong>para de crescer enquanto ganha peso rapidamente</strong>, associando obesidade centrípeta, fácies em lua cheia, pletora facial, giba dorsal, estrias violáceas largas e hipertensão arterial.</li>
+          <li><strong>Criança Nascida Pequena para a Idade Gestacional (PIG) sem Recuperação (<em>Catch-up</em>):</strong> Cerca de 85% a 90% dos recém-nascidos PIG (peso e/ou comprimento ao nascer &lt; -2 DP ou &lt; Percentil 10 para a idade gestacional) realizam o <em>catch-up growth</em> espontâneo até os <strong>2 anos de idade</strong> (em prematuros PIG, pode ocorrer até os 4 anos). Os <strong>10% a 15% que não recuperam a estatura até os 2 a 4 anos</strong> permanecem com baixa estatura na vida adulta e têm indicação formal aprovada de tratamento com somatropina (GH recombinante humano), mesmo sem deficiência clássica de GH!</li>
+        </ul>
+
+        <h3>Síndrome de Turner (45,X e Mosaicismos): Regra Áurea da Pediatria</h3>
+        <p>A <strong>Síndrome de Turner</strong> (monossomia completa ou parcial do cromossomo X, afetando cerca de 1 em cada 2.000 a 2.500 meninas nascidas vivas) tem na <strong>baixa estatura</strong> o seu achado clínico mais constante e universal (presente em 95% a 100% das pacientes devido à haploinsuficiência do gene <em>SHOX</em> na região pseudoautossômica Xp22.3), acompanhada de disgenesia gonadal hipergonadotrófica (amenorreia primária e ausência de telarca espontânea na maioria dos casos, embora 15%–20% das meninas — especialmente mosaicos 45,X/46,XX — possam apresentar telarca espontânea).</p>
+        <ul>
+          <li><strong>Estigmas Clássicos ao Exame Físico:</strong> No período neonatal, <strong>linfedema congênito de dorso das mãos e dos pés</strong> e redundância de pele nucal (higroma cístico fetal); na infância, <strong>pescoço alado (<em>pterygium colli</em>)</strong>, implantação baixa de cabelos na nuca e orelhas, <strong>tórax largo em escudo com hipertelorismo mamário</strong>, <strong>cúbito valgo</strong>, encurtamento do 4º metacarpo, deformidade de Madelung no punho, múltiplos nevos melanocíticos, palato ogival, estrabismo, otites médias de repetição (com risco de perda auditiva) e malformações cardiovasculares esquerdas (<strong>válvula aórtica bicúspide</strong> [a mais frequente, ~30%] e <strong>coartação da aorta</strong> [~10%–15%], além de risco de dissecção aórtica) e renais (<strong>rim em ferradura</strong> e duplicação pielocalicial).</li>
+          <li><strong>A Regra Inegociável para Provas de Residência:</strong> Em cerca de 50% dos casos (especialmente nos mosaicismos como 45,X/46,XX ou anormalidades estruturais como isocromossomo Xq), os estigmas fenotípicos clássicos são discretos ou ausentes, sendo a desaceleração estatural a única manifestação clínica na infância! Por essa razão, <strong>toda menina com baixa estatura inexplicada (ou velocidade de crescimento reduzida, ou estatura significativamente abaixo do canal familiar) DEVE obrigatoriamente realizar Cariótipo de sangue periférico com bandamento G (contagem mínima de 30 a 50 metáfases)</strong>, independentemente de ter ou não estigmas sindrômicos ao exame físico!</li>
+        </ul>
+        <p>Já a <strong>Síndrome de Noonan</strong> (frequentemente chamada de "pseudo-Turner", porém de herança autossômica dominante ligada à via RAS/MAPK — mutações no gene <em>PTPN11</em> em ~50% dos casos) acomete <strong>ambos os sexos (meninos e meninas) com cariótipo normal (46,XY ou 46,XX)</strong>, cursando com baixa estatura, pescoço alado, <em>pectus carinatum</em> superior e <em>excavatum</em> inferior, fácies característica (hipertelorismo ocular, fendas palpebrais antimongoloides e ptose), criptorquidia nos meninos, distúrbios de coagulação e cardiopatia congênita predominantemente do <strong>lado direito (estenose pulmonar valvar com válvula displásica</strong> e cardiomiopatia hipertrófica).</p>
+
+        <h3>Causas Patológicas de Baixa Estatura Desproporcionada (Displasias Esqueléticas)</h3>
+        <ul>
+          <li><strong>Acondroplasia:</strong> É a displasia esquelética (osteocondrodisplasia) mais comum em seres humanos (1:15.000 a 1:25.000 nascidos vivos), causada por mutação ativadora (ganho de função) no gene <strong><em>FGFR3</em></strong> (receptor 3 do fator de crescimento de fibroblastos, no cromossomo 4p16.3), que inibe constitutivamente a proliferação e diferenciação dos condrócitos na placa de crescimento endocondral. Tem herança autossômica dominante com penetrância de 100%, porém <strong>80% dos casos decorrem de mutações novas (<em>de novo</em>) associadas à idade paterna avançada</strong>. Clinicamente, caracteriza-se por <strong>baixa estatura gravemente desproporcionada (relação SS/SI muito aumentada)</strong> por encurtamento <strong>rizomélico</strong> dos membros (segmentos proximais — úmero e fêmur — mais curtos que os médios e distais), <strong>macrocefalia com fronte olímpica</strong>, hipoplasia da face média com ponte nasal deprimida, <strong>mão em tridente</strong> (afastamento entre o 3º e o 4º dedos), hiperlordose lombar, genu varo e inteligência normal. Complicações graves no lactente incluem <strong>estenose do forame magno</strong> com compressão bulbar/cervical (risco de apneia central do sono e morte súbita — exige neuroimagem e polissonografia no 1º ano) e hidrocefalia comunicante.</li>
+          <li><strong>Hipocondroplasia:</strong> Forma alélica mais leve de mutação no <em>FGFR3</em>, muitas vezes não percebida ao nascimento e diagnosticada aos 2–4 anos como baixa estatura com desproporção corporal discreta (membros curtos e atarracados), sem as alterações craniofaciais exuberantes da acondroplasia.</li>
+          <li><strong>Discondrosteose de Léri-Weill (Deficiência de <em>SHOX</em>):</strong> Encurtamento mesomélico (antebraço e perna) associado à deformidade de Madelung do punho (subluxação dorsal da extremidade distal da ulna e arqueamento do rádio).</li>
+          <li><strong>Raquitismos (Carencial por deficiência de vitamina D ou Hipofosfatêmico ligado ao X por mutação no gene <em>PHEX</em>):</strong> Defeito na mineralização da matriz osteoide e da placa epifisária em crescimento, gerando baixa estatura desproporcionada com alargamento de punhos e tornozelos, rosário raquítico costocondral, sulco de Harrison, craniotabes, atraso no fechamento da fontanela anterior e arqueamento dos membros inferiores (genu varo ou valgo) ao iniciar a marcha, com elevação acentuada da fosfatase alcalina sérica.</li>
+        </ul>
+
+        <h3>Fluxograma de Exames Complementares de 1ª Linha na Baixa Estatura</h3>
+        <p>Diante de uma criança com baixa estatura patológica ou velocidade de crescimento reduzida sem diagnóstico evidente na anamnese, o painel laboratorial e radiológico inicial obrigatório compreende:</p>
+        <ol>
+          <li><strong>Radiografia de mãos e punhos esquerdos</strong> para determinação da Idade Óssea (Greulich-Pyle).</li>
+          <li><strong>Hemograma completo, ferritina sérica, VHS e Proteína C Reativa (PCR)</strong> (rastreio de anemia carencial/inflamatória e doença inflamatória intestinal).</li>
+          <li><strong>Ureia, creatinina, sódio, potássio, cloro, cálcio, fósforo, fosfatase alcalina, gasometria venosa e EAS (urina tipo 1)</strong> (rastreio de doença renal crônica, acidose tubular renal e distúrbios osteometabólicos/raquitismo).</li>
+          <li><strong>Albumina sérica, transaminases (TGO/TGP) e sorologia para Doença Celíaca (IgA total + anticorpo antitransglutaminase tecidual IgA — anti-tTG IgA)</strong>.</li>
+          <li><strong>TSH e T4 livre</strong> (exclusão obrigatória de hipotireoidismo antes mesmo de avaliar o eixo somatotrófico, pois o hipotireoidismo reduz falsamente o IGF-1 e a resposta do GH aos testes!).</li>
+          <li><strong>IGF-1 e IGFBP-3</strong> (triagem do eixo somatotrófico; o IGFBP-3 é especialmente útil em crianças menores de 3 anos e sofre menor influência nutricional que o IGF-1).</li>
+          <li><strong>Cariótipo com banda G em sangue periférico</strong> (obrigatório em <strong>todas as meninas</strong> com baixa estatura inexplicada para descartar Síndrome de Turner).</li>
+        </ol>
+      `
+    },
+    {
+      id: 'crescimento-puberal-estadiamento-tanner',
+      title: '6. Crescimento Puberal, Fisiologia do Eixo HHG, Estadiamento de Tanner e Estirão da Adolescência',
+      body_html: `
+        <p>A <strong>puberdade</strong> é o processo biológico de transição entre a infância e a maturidade reprodutiva adulta, caracterizado pelo desenvolvimento dos caracteres sexuais secundários, pela aceleração da velocidade de crescimento linear (<strong>estirão puberal</strong>), pela remodelação da composição corporal (aumento da massa magra muscular nos meninos e distribuição ginóide de tecido adiposo nas meninas) e pela aquisição da fertilidade. Durante a infância (desde o fim da minipuberdade neonatal aos 6–24 meses até os 8–9 anos), o gerador hipotalâmico de pulsos de <strong>GnRH (hormônio liberador de gonadotrofinas)</strong> no núcleo arqueado permanece sob intenso freio inibitório central (mediado por vias GABAérgicas, opioides e makorina-3 [<em>MKRN3</em>]). O início da puberdade verdadeira (<strong>gonadarca</strong>) decorre da perda desse freio inibitório e da ativação de estímulos excitatórios (glutamato, neurocinina B e, principalmente, o sistema <strong>Kisspeptina / receptor KISS1R [GPR54]</strong>), que restauram a secreção pulsátil de GnRH (inicialmente com pulsos exclusivamente noturnos de LH), estimulando a adeno-hipófise a secretar <strong>LH e FSH</strong> e promovendo a esteroidogênese gonadal (estradiol ovariano e testosterona testicular).</p>
+
+        <p>É fundamental não confundir <strong>gonadarca</strong> (ativação do eixo Hipotálamo-Hipófise-Gônadas — HHG, que marca o verdadeiro início da puberdade: telarca na menina e aumento testicular no menino) com <strong>adrenarca</strong> (maturação funcional da zona reticular do córtex da glândula suprarrenal, que passa a secretar androgênios adrenais fracos como DHEA, DHEA-S e androstenediona a partir dos 6 a 8 anos de idade, sendo responsável pelo aparecimento de odor axilar apócrino, oleosidade cutânea/acne e pelos pubianos e axilares — <strong>pubarca</strong>). Adrenarca e gonadarca são eventos fisiologicamente independentes: uma criança pode ter pubarca precoce isolada por adrenarca precoce sem estar em puberdade central verdadeira!</p>
+
+        <h3>Janelas Cronológicas Normais e Sequência de Eventos Puberais</h3>
+        <h4>1. No Sexo Feminino (Meninas — Início Normal entre 8 e 13 Anos)</h4>
+        <ul>
+          <li><strong>1º Sinal Clínico da Puberdade Feminina:</strong> É a <strong>Telarca</strong> (surgimento do broto mamário — estágio <strong>M2 de Tanner</strong>, em média aos 9,5–10,5 anos), que pode ser inicialmente unilateral ou assimétrica e levemente dolorosa à palpação, seguida poucos meses depois pela <strong>pubarca</strong> (pelos pubianos P2) e axilarca.</li>
+          <li><strong>Estirão Puberal Feminino:</strong> É um evento <strong>precoce</strong> na puberdade feminina! A aceleração do crescimento começa logo no início da puberdade (<strong>M2</strong>) e atinge sua <strong>velocidade máxima (pico do estirão) no estágio M3 de Tanner</strong>, com ganho de <strong>8 a 9 cm/ano</strong>.</li>
+          <li><strong>Menarca (Primeira Menstruação):</strong> Ocorre habitualmente no estágio <strong>M4 de Tanner</strong> (raramente no final de M3), cerca de <strong>2 a 2,5 anos após a telarca (M2)</strong>, em média aos 12 a 12,5 anos de idade. <strong>Conceito de ouro para provas:</strong> Quando ocorre a menarca, o pico do estirão puberal <strong>já passou</strong>! Após a menarca, a adolescente encontra-se na fase de desaceleração do crescimento e ganhará em média apenas mais <strong>4 a 7 cm</strong> (podendo variar de 3 a 8 cm) até o fechamento epifisário total.</li>
+        </ul>
+
+        <h4>2. No Sexo Masculino (Meninos — Início Normal entre 9 e 14 Anos)</h4>
+        <ul>
+          <li><strong>1º Sinal Clínico da Puberdade Masculina:</strong> É o <strong>aumento do volume testicular para ≥ 4 mL</strong> aferido pelo <strong>Orquidômetro de Prader</strong> (ou comprimento longitudinal do testículo ≥ 2,5 cm), correspondendo ao estágio <strong>G2 de Tanner</strong> (em média aos 11–11,5 anos, decorrente da proliferação dos túbulos seminíferos sob ação do FSH e células de Leydig pelo LH). <em>Atenção:</em> O aparecimento isolado de pelos pubianos (pubarca P2) com testículos infantis (&lt; 4 mL / 1 a 3 mL) <strong>não</strong> marca o início da puberdade central no menino!</li>
+          <li><strong>Estirão Puberal Masculino:</strong> É um evento <strong>tardio</strong> na puberdade masculina! Enquanto a menina faz o pico do estirão em M3, o menino atinge a <strong>velocidade máxima (pico do estirão) no estágio G4 de Tanner</strong> (quando o volume testicular já está em torno de 10 a 12 mL), com ganho de <strong>9 a 10 cm/ano</strong> (acompanhado de mudança do timbre da voz e pelos faciais).</li>
+          <li><strong>Por que o homem adulto é em média 13 cm mais alto que a mulher adulta?</strong> Pela soma de dois fatores: (1) o menino inicia a puberdade cerca de 2 anos mais tarde que a menina, crescendo por mais 2 anos em velocidade pré-puberal (~5–6 cm/ano = +10 a 11 cm antes do estirão); e (2) a amplitude do pico do estirão masculino em G4 é maior que o feminino em M3 (+2 a 3 cm adicionais no total do estirão: ~28–30 cm no menino vs ~20–25 cm na menina).</li>
+        </ul>
+
+        <h3>Critérios Semiológicos Exatos do Estadiamento de Marshall e Tanner (1969/1970)</h3>
+        <p>As bancas de residência cobram literalmente a descrição anatômica de cada estágio de Tanner. Memorize a tabela completa abaixo:</p>
+
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Estágio</th>
+              <th>Mamas — Sexo Feminino (M1 a M5)</th>
+              <th>Genitália Externa — Sexo Masculino (G1 a G5)</th>
+              <th>Pelos Pubianos — Ambos os Sexos (P1 a P5)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Estágio 1 (Pré-Puberal)</strong></td>
+              <td><strong>M1:</strong> Mama infantil, com elevação exclusiva da papila (mamilo), sem tecido glandular palpável subareolar.</td>
+              <td><strong>G1:</strong> Testículos (volume &lt; 4 mL; 1 a 3 mL no Prader), escroto e pênis de tamanho e proporções infantis.</td>
+              <td><strong>P1:</strong> Ausência de pelos pubianos pigmentados (pode haver apenas penugem ou <em>vellus</em> semelhante à parede abdominal).</td>
+            </tr>
+            <tr>
+              <td><strong>Estágio 2 (Início Puberal)</strong></td>
+              <td><strong>M2 (Broto Mamário / Telarca):</strong> Elevação da mama e da papila como um pequeno montículo, com tecido glandular subareolar palpável e aumento discreto do diâmetro da aréola. Início do estirão feminino.</td>
+              <td><strong>G2 (Gonadarca Masculina):</strong> <strong>Aumento do volume testicular (≥ 4 mL até ~6 mL no Prader)</strong> e do escroto, cuja pele se torna mais avermelhada, fina e enrugada. Pênis sem aumento ou com aumento mínimo.</td>
+              <td><strong>P2 (Pubarca):</strong> Pelos longos, finos, lisos ou levemente encaracolados, pouco pigmentados, esparsos, localizados na <strong>base do pênis/escroto</strong> (meninos) ou ao longo dos <strong>grandes lábios</strong> (meninas).</td>
+            </tr>
+            <tr>
+              <td><strong>Estágio 3</strong></td>
+              <td><strong>M3:</strong> Maior aumento da mama e da aréola, que ultrapassa os limites da aréola, porém <strong>sem separação dos contornos</strong> entre mama e aréola (perfil único em cone). <strong>Pico do estirão feminino (8–9 cm/ano)!</strong></td>
+              <td><strong>G3:</strong> Crescimento do <strong>pênis principalmente em comprimento</strong> (extensão), acompanhado de maior crescimento dos testículos (8 a 10 mL) e do escroto. Início da aceleração do estirão masculino.</td>
+              <td><strong>P3:</strong> Pelos mais escuros, grossos, ásperos e nitidamente encaracolados, espalhando-se de forma moderada sobre a <strong>sínfise púbica</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>Estágio 4</strong></td>
+              <td><strong>M4:</strong> Projeção da aréola e da papila formando um <strong>segundo montículo (duplo contorno)</strong> acima do nível do corpo da mama. <strong>Fase em que ocorre a Menarca</strong> e desaceleração do crescimento.</td>
+              <td><strong>G4:</strong> Crescimento do <strong>pênis em diâmetro (largura) e comprimento</strong>, com desenvolvimento evidente da <strong>glande</strong>; maior aumento dos testículos (10 a 15 mL) e escurecimento acentuado da pele escrotal. <strong>Pico do estirão masculino (9–10 cm/ano)!</strong> (Frequente ginecomastia puberal fisiológica transitória em G3/G4).</td>
+              <td><strong>P4:</strong> Pelos do tipo adulto em espessura e pigmentação, cobrindo densamente a região pubiana, mas ainda restritos ao triângulo púbico, <strong>sem atingir a face interna (medial) das coxas</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>Estágio 5 (Adulto)</strong></td>
+              <td><strong>M5:</strong> Mama em fase adulta madura, com regressão da projeção da aréola para o contorno geral da mama (<strong>contorno único adulto</strong>), projetando-se apenas a papila.</td>
+              <td><strong>G5:</strong> Genitália externa com tamanho e forma adultos (volume testicular ≥ 15 a 25 mL no Prader). Fim do crescimento linear.</td>
+              <td><strong>P5:</strong> Pelos adultos em quantidade e distribuição clássica em triângulo invertido, <strong>estendendo-se para a face interna (medial) das coxas</strong> (P6: extensão pela linha alba até a cicatriz umbilical).</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Conceitos Essenciais de Distúrbios Puberais: Puberdade Precoce e Atrasada</h3>
+        <p>Define-se <strong>Puberdade Precoce (PP)</strong> pelo surgimento de caracteres sexuais secundários <strong>antes dos 8 anos em meninas</strong> ou <strong>antes dos 9 anos em meninos</strong>. A PP acelera transitoriamente a velocidade de crescimento e avança a idade óssea (a criança fica inicialmente mais alta que os colegas), mas promove fusão epifisária prematura mediada pelo estrogênio, resultando em <strong>baixa estatura na vida adulta</strong>! Divide-se em dois grandes grupos fisiopatológicos:</p>
+        <ul>
+          <li><strong>Puberdade Precoce Central (PPC — Verdadeira ou GnRH-dependente):</strong> Decorre da reativação prematura do eixo HHG (LH basal ou pós-estímulo com GnRH em níveis puberais). É <strong>sempre isossexual</strong> (caracteres compatíveis com o sexo genético) e segue a sequência fisiológica de Tanner (telarca na menina; aumento testicular bilateral ≥ 4 mL no menino). Nas <strong>meninas, 80% a 90% dos casos de PPC são idiopáticos</strong>; já nos <strong>meninos, 50% a 70% dos casos de PPC possuem causa orgânica no SNC</strong> (hamartoma hipotalâmico do túber cinéreo — que pode cursar com crises epilépticas gelásticas/riso imotivado —, gliomas ópticos na neurofibromatose tipo 1, astrocitomas, hidrocefalia ou sequelas infecciosas), tornando a <strong>Ressonância Magnética de crânio/sela túrcica obrigatória em todos os meninos com PPC</strong> e nas meninas menores de 6 anos ou com sinais neurológicos! O tratamento da PPC é feito com <strong>análogos de GnRH de depósito (leuprorrelina ou triptorrelina)</strong>, que dessensibilizam e fazem <em>down-regulation</em> dos receptores hipofisários de GnRH, bloqueando a puberdade e preservando a estatura final.</li>
+          <li><strong>Puberdade Precoce Periférica (PPP — Pseudopuberdade Precoce ou GnRH-independente):</strong> Produção autônoma de esteroides sexuais pelas gônadas ou suprarrenais (ou fonte exógena), com <strong>LH e FSH suprimidos/pré-puberais</strong>. Pode ser isossexual ou <strong>contrassexual</strong> (virilização em meninas ou feminização em meninos). No menino com PPP virilizante (ex.: <strong>Hiperplasia Adrenal Congênita por deficiência da 21-hidroxilase</strong> na forma não perdedora de sal, tumor de córtex adrenal ou testotoxicose), observa-se a dissociação clássica: <strong>aumento do pênis e pubarca precoce (P2/P3) com testículos de volume pré-puberal (&lt; 4 mL)</strong> (exceto no tumor de células de Leydig, onde há aumento testicular unilateral assimétrico, ou em tumores produtores de hCG como hepatoblastoma/germinoma, que aumentam moderadamente os testículos). Na menina, causas clássicas de PPP incluem cistos foliculares ovarianos autônomos, tumores da granulosa e a <strong>Síndrome de McCune-Albright</strong> (mutação somática ativadora do gene <em>GNAS1</em>, caracterizada pela tríade clássica: <strong>puberdade precoce periférica + manchas café-com-leite de bordas irregulares "costa do Maine" + displasia fibrosa poliostótica</strong>).</li>
+          <li><strong>Atraso Puberal:</strong> Definido pela ausência de telarca (M2) aos <strong>13 anos em meninas</strong> (ou ausência de menarca aos 15–16 anos ou após 3–5 anos do início da telarca) e pela ausência de aumento testicular (&lt; 4 mL / G2) aos <strong>14 anos em meninos</strong>. A causa mais comum em ambos os sexos (especialmente meninos) é o <strong>ACCP</strong> (variante normal transitória), devendo ser diferenciado do <strong>hipogonadismo hipogonadotrófico</strong> permanente (ex.: Síndrome de Kallmann — hipogonadismo + anosmia/hiposmia por defeito de migração dos neurônios de GnRH e bulbos olfatórios) e do <strong>hipogonadismo hipergonadotrófico</strong> (Síndrome de Turner 45,X nas meninas e Síndrome de Klinefelter 47,XXY nos meninos).</li>
+        </ul>
+      `
+    },
+    {
+      id: 'reflexos-primitivos-neonatais-reacoes-posturais',
+      title: '7. Reflexos Primitivos Neonatais, Reações Posturais e Significado Semiológico',
+      body_html: `
+        <p>O exame neurológico do recém-nascido e do lactente jovem baseia-se na avaliação do tônus muscular (passivo e ativo) e na pesquisa dos <strong>reflexos primitivos (arcaicos)</strong>. No recém-nascido a termo, o tônus predominante fisiológico é a <strong>hipertonia flexora dos quatro membros</strong> associada a uma <strong>hipotonia axial (cervical e de tronco)</strong>. Os reflexos primitivos são respostas motoras estereotipadas, automáticas e mediadas por centros subcorticais (tronco encefálico e medula espinhal), que estão plenamente ativos ao nascimento porque o córtex cerebral motor primário e os tratos piramidais corticoespinhais ainda não completaram sua mielinização.</p>
+
+        <p>À medida que a mielinização cortical avança no sentido cefalocaudal durante o primeiro semestre de vida, o córtex cerebral passa a exercer inibição suprassegmentar sobre os núcleos do tronco encefálico, fazendo com que os reflexos primitivos <strong>desapareçam em idades cronológicas previsíveis</strong> para dar lugar à motricidade voluntária e às reações posturais antigravitacionais. Dessa forma, os reflexos primitivos possuem duplo valor diagnóstico na pediatria:</p>
+        <ol>
+          <li><strong>No Período Neonatal:</strong> A <strong>ausência ou diminuição global</strong> dos reflexos primitivos indica depressão grave do SNC (encefalopatia hipóxico-isquêmica neonatal, sepse/meningite neonatal, hemorragia intracraniana, uso materno de sedativos/anestésicos, hipotireoidismo grave ou síndromes hipotônicas como trissomia do 21, Prader-Willi e amiotrofia espinhal). Já a <strong>assimetria de um reflexo</strong> (especialmente do reflexo de Moro ou da preensão palmar) aponta para lesão periférica ou osteoarticular focal: <strong>fratura de clavícula ou de úmero</strong> no tocotraumatismo, <strong>paralisia braquial obstétrica de Erb-Duchenne (raízes C5–C6</strong>, na qual o membro superior fica em adução, rotação interna e pronação — postura de "gorjeta de garçom" — com Moro assimétrico, porém <em>preensão palmar preservada</em>) ou <strong>paralisia de Klumpke (raízes C8–T1</strong>, na qual a preensão palmar está abolida e pode haver síndrome de Claude Bernard-Horner homolateral), ou ainda hemiparesia congênita.</li>
+          <li><strong>No Lactente (Após o 1º Trimestre):</strong> A <strong>persistência anormal dos reflexos primitivos além da idade limite de desaparecimento</strong> (ou sua resposta exagerada e estereotipada) impede a aquisição dos marcos motores voluntários e constitui um dos sinais mais precoces de lesão do neurônio motor superior / trato piramidal, sendo um forte preditor de <strong>Paralisia Cerebral (Encefalopatia Crônica Não Progressiva da Infância)</strong>!</li>
+        </ol>
+
+        <h3>Tabela Completa dos Reflexos Primitivos e Reações Posturais</h3>
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Reflexo Primitivo / Reação Postural</th>
+              <th>Manobra Semiológica de Pesquisa e Resposta Normal</th>
+              <th>Idade de Desaparecimento Fisiológico</th>
+              <th>Significado Clínico e Pérolas de Prova</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Reflexo de Moro (Reflexo do Abraço)</strong></td>
+              <td>Em decúbito dorsal, provoca-se queda súbita da cabeça em ~20–30° (ou traciona-se levemente pelas mãos soltando-as, ou estímulo sonoro brusco). Resposta em 2 fases: <strong>1ª fase (Abdução):</strong> extensão e abdução simétrica dos membros superiores com abertura das mãos em leque e extensão dos dedos (exceto polegar e indicador em "C"); <strong>2ª fase (Adução):</strong> flexão e adução dos braços sobre o tórax ("abraço"), frequentemente seguida de choro.</td>
+              <td>Completo até os 3 meses; <strong>desaparece totalmente entre 4 e 6 meses de idade</strong> (nunca normal após os 6 meses!).</td>
+              <td><strong>Moro assimétrico</strong> no RN = investigar <strong>fratura de clavícula</strong> (mais comum!) ou <strong>paralisia braquial de Erb-Duchenne (C5–C6)</strong>. Moro ausente bilateralmente = lesão grave do SNC. Persistência &gt; 6 meses = alerta de Paralisia Cerebral.</td>
+            </tr>
+            <tr>
+              <td><strong>Reflexo Tônico-Cervical Assimétrico (RTCA / Magnus-De Kleijn / Reflexo do Esgrimista)</strong></td>
+              <td>Com o lactente em decúbito dorsal e alerta, realiza-se rotação lateral passiva da cabeça para um dos lados por 15 segundos. Resposta: <strong>extensão do membro superior e inferior do lado facial</strong> (para onde o rosto olha) e <strong>flexão do membro superior e inferior do lado occipital</strong> (postura de esgrima).</td>
+              <td>Presente desde o nascimento (mais nítido com 1–2 meses) e <strong>desaparece entre 3 e 4 meses de idade</strong>.</td>
+              <td>Enquanto presente de forma obrigatória, impede que o lactente leve as duas mãos à linha média! <strong>Se o RTCA for obrigatório (o bebê não consegue vencer a postura) ou persistir após 4–6 meses, é sinal clássico de Paralisia Cerebral (especialmente tetraparesia espástica ou discinética).</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Preensão Palmar (<em>Palmar Grasp</em>)</strong></td>
+              <td>Pressiona-se a face palmar da mão do bebê (na altura das cabeças dos metacarpos, borda ulnar) com o dedo indicador do examinador. Resposta: flexão imediata e vigorosa de todos os dedos fechando a mão.</td>
+              <td>Enfraquece aos 2 meses (quando o bebê começa a abrir as mãos) e <strong>desaparece entre 3 e 4 meses de idade</strong>.</td>
+              <td>Seu desaparecimento aos 3–4 meses é indispensável para que surja a <strong>preensão voluntária</strong> aos 4 meses! Persistência &gt; 4 meses com mãos fechadas e <strong>polegar incluso (aduzido na palma)</strong> sugere hipertonia piramidal / Paralisia Cerebral.</td>
+            </tr>
+            <tr>
+              <td><strong>Busca ou Voracidade (Pontos Cardeais)</strong></td>
+              <td>Estimula-se com o dedo os quatro cantos periorais (comissuras labiais e lábios superior/inferior). Resposta: rotação da cabeça em direção ao estímulo, abertura da boca e protrusão lingual buscando o mamilo.</td>
+              <td><strong>Desaparece entre 3 e 4 meses de idade</strong> (no estado de vigília; pode persistir mais tempo durante o sono).</td>
+              <td>Fundamental para a pega na amamentação. Aos 3–4 meses é substituído pelo direcionamento visual voluntário ao seio ou mamadeira.</td>
+            </tr>
+            <tr>
+              <td><strong>Sucção Reflexa</strong></td>
+              <td>Toque no terço anterior da língua e palato duro desencadeia movimentos rítmicos vigorosos de sucção coordenados com a deglutição e respiração (presente na vida fetal a partir de 32–34 semanas de IG).</td>
+              <td>Deixa de ser puramente reflexa e torna-se voluntária entre <strong>3 e 4 meses de idade</strong> (sucção reflexa desaparece até ~6 meses).</td>
+              <td>Prematuros &lt; 34 semanas frequentemente não têm coordenação sucção-deglutição-respiração madura, necessitando de sonda orogástrica inicialmente.</td>
+            </tr>
+            <tr>
+              <td><strong>Apoio Plantar e Marcha Reflexa (Automática)</strong></td>
+              <td>Segurando o RN pelas axilas em posição vertical, toca-se a planta dos pés na superfície: ocorre extensão dos membros inferiores (apoio plantar). Inclinando-se discretamente o tronco para a frente, o RN executa passos alternados (marcha reflexa).</td>
+              <td><strong>Desaparece precocemente entre 1 e 2 meses de idade</strong> (fase de astasia-abasia fisiológica antes do apoio voluntário).</td>
+              <td>É um dos primeiros reflexos primitivos a desaparecer! Sua ausência no RN a termo alerta para hipotonia grave ou lesão medular.</td>
+            </tr>
+            <tr>
+              <td><strong>Encurvamento do Tronco (Reflexo de Galant)</strong></td>
+              <td>Com o RN suspenso em pronação (decúbito ventral), estimula-se a pele da região paravertebral de T1 a L5 a 1 cm da linha média. Resposta: incurvação lateral do tronco com concavidade voltada para o lado estimulado.</td>
+              <td><strong>Desaparece entre 2 e 4 meses de idade</strong>.</td>
+              <td>Testa a integridade medular toracolombar (T1–L1); muito útil para determinar o nível de lesão em mielomeningocele/traumatismo raquimedular.</td>
+            </tr>
+            <tr>
+              <td><strong>Preensão Plantar (<em>Plantar Grasp</em>)</strong></td>
+              <td>Pressão com o polegar na planta do pé logo abaixo dos artelhos (cabeças dos metatarsos). Resposta: flexão plantar de todos os artelhos abraçando o dedo do examinador.</td>
+              <td><strong>Desaparece tardiamente entre 9 e 15 meses de idade</strong> (coincidindo com a aquisição do ortostatismo e da marcha independente!).</td>
+              <td>É o reflexo primitivo que dura mais tempo no 1º ano! Precisa desaparecer para que a criança apoie o pé plano e caminhe com equilíbrio.</td>
+            </tr>
+            <tr>
+              <td><strong>Reflexo Cutâneo-Plantar em Extensão (Sinal de Babinski Fisiológico)</strong></td>
+              <td>Estímulo tátil firme na borda lateral da planta do pé, do calcanhar em direção à base do hálux. Resposta no lactente: extensão (dorsiflexão) do hálux e abertura em leque dos demais artelhos.</td>
+              <td>Fisiológico no 1º ano; converte-se em flexão plantar entre <strong>12 e 18 meses de idade</strong> (máximo até 24 meses) com a mielinização do trato piramidal.</td>
+              <td>No adulto e na criança maior de 2 anos, o Babinski é sempre patológico (lesão piramidal). No lactente até 12–18 meses, a resposta em extensão é <strong>fisiológica</strong> (desde que simétrica!).</td>
+            </tr>
+            <tr>
+              <td><strong>Reflexo de Landau (Reação Postural Secundária)</strong></td>
+              <td>Suspende-se o lactente horizontalmente no ar pelo abdome (em pronação): o bebê eleva ativamente a cabeça acima do plano horizontal e estende o tronco e os membros inferiores formando um arco convexo inferiormente. Se o examinador fletir passivamente a cabeça do bebê para baixo, o tronco e as pernas se fletem imediatamente.</td>
+              <td><strong>Surge aos 3 a 4 meses</strong>, é máximo aos 6–10 meses e desaparece/integra-se entre <strong>12 e 24 meses de idade</strong>.</td>
+              <td>Não está presente ao nascer! Depende da integração vestibular, visual e do tônus extensor axial. Sua ausência após os 4–5 meses sugere hipotonia ou paralisia cerebral.</td>
+            </tr>
+            <tr>
+              <td><strong>Reação de Paraquedas (Projeção Lateral e Anterior)</strong></td>
+              <td>Segurando o lactente pelo tronco em suspensão ventral, projeta-se subitamente sua cabeça em direção à maca. Resposta: extensão imediata dos braços, punhos e abertura das mãos para proteger o rosto da queda.</td>
+              <td><strong>Surge entre 6 e 9 meses de idade</strong> (paraquedas anterior aos 7–9m) e <strong>persiste por toda a vida adulta</strong>!</td>
+              <td>É uma reação de proteção postural cortical definitiva. Sua ausência ou assimetria após os 9–10 meses é fortemente patológica (ex.: hemiparesia espástica).</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    },
+    {
+      id: 'dnpm-primeiro-ano-vida-marcos-0-12-meses',
+      title: '8. Desenvolvimento Neuropsicomotor (DNPM) no Primeiro Ano de Vida: Marcos de 0 a 12 Meses',
+      body_html: `
+        <p>A avaliação sistematizada do Desenvolvimento Neuropsicomotor (DNPM) divide as aquisições infantis nos quatro grandes domínios clássicos consagrados por Arnold Gesell, pelo teste de triagem de <strong>Denver II</strong> e pela <strong>Caderneta da Criança do Ministério da Saúde</strong>:</p>
+        <ol>
+          <li><strong>Motor Grosso (Postural / Amplo):</strong> Equilíbrio da cabeça, controle de tronco, rolar, sentar, engatinhar, ficar de pé e caminhar. Segue de forma cristalina a lei cefalocaudal.</li>
+          <li><strong>Motor Fino-Adaptativo (Delicado):</strong> Coordenação visuomotora, abertura das mãos, alcance de objetos na linha média, transferência entre as mãos e evolução da preensão (cúbito-palmar → radial-palmar → pinça inferior → pinça superior fina polegar-indicador). Segue a lei próximo-distal.</li>
+          <li><strong>Linguagem (Receptiva e Expressiva):</strong> Reação aos sons, vocalizações guturais e vogais, risadas, lalação/balbucio canônico, duplicação de sílabas, compreensão de ordens simples e emissão das primeiras palavras com significado.</li>
+          <li><strong>Pessoal-Social (Socioemocional e Cognitivo-Interativo):</strong> Fixação do olhar na face materna, sorriso social, reconhecimento de familiares, ansiedade de separação/estranhamento de desconhecidos, atenção compartilhada, imitação de gestos sociais (bater palmas, dar tchau) e interação lúdica.</li>
+        </ol>
+
+        <h3>Detalhamento Cronológico Mês a Mês no Primeiro Ano (0 a 12 Meses)</h3>
+
+        <h4>Recém-Nascido (0 a 28 dias) e 1 Mês de Vida</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> Postura em <strong>flexão generalizada dos quatro membros</strong> (hipertonia flexora fisiológica). Em decúbito ventral (prona), mantém a pelve elevada com joelhos fletidos sob o abdome e vira a cabeça lateralmente para liberar as vias aéreas. Quando tracionado pelos braços para sentar (manobra de tração), apresenta <strong>atraso completo da cabeça (<em>head lag</em>)</strong> por hipotonia cervical fisiológica.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Mãos predominantemente fechadas (com preensão palmar reflexa vigorosa). Fixa o olhar transitoriamente em rostos ou objetos de alto contraste posicionados a <strong>20 a 30 cm da face</strong> (distância exata entre o rosto do bebê no colo e o rosto da mãe durante a amamentação!) e acompanha objetos até a linha média (~1 mês).</li>
+          <li><strong>Linguagem:</strong> Assusta-se, pisca ou cessa a atividade diante de ruídos súbitos (reflexo cócleo-palpebral); acalma-se ao ouvir a voz materna; choro como principal forma de expressão; emite pequenos sons guturais ao final do 1º mês.</li>
+          <li><strong>Pessoal-Social:</strong> Observa atentamente o rosto da mãe ou cuidador quando alimentado ou conversado.</li>
+        </ul>
+
+        <h4>2 Meses de Idade</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> Em decúbito ventral (prona), <strong>eleva a cabeça e o queixo a 45° da superfície</strong> por alguns segundos; menor atraso da cabeça à tração; marcha reflexa desaparece.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> As mãos começam a ficar <strong>abertas na maior parte do tempo</strong>; acompanha visualmente objetos móveis ultrapassando a linha média (até 180°).</li>
+          <li><strong>Linguagem:</strong> <strong>Vocaliza sons de vogais</strong> (<em>"aaa", "eee", "uuu"</em> — fase de arrulhar ou <em>cooing</em>), respondendo vocalmente quando o adulto conversa com ele.</li>
+          <li><strong>Pessoal-Social:</strong> Marco divisor de águas dos 2 meses: <strong>Sorriso Social responsivo</strong> (sorri intencionalmente em resposta ao rosto e à voz do examinador ou da mãe, deixando de ser o sorriso reflexo neonatal durante o sono REM).</li>
+        </ul>
+
+        <h4>3 a 4 Meses de Idade (Consolidação da Linha Média e Sustento Cefálico)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> Marco fundamental dos 3–4 meses: <strong>Sustento cefálico firme e completo</strong> (cabeça estável na linha média quando colocado sentado com apoio, sem <em>head lag</em> quando tracionado pelos braços). Em decúbito ventral (prona), <strong>apoia-se sobre os antebraços e eleva a cabeça e o tórax superior a 90°</strong>. Aos 4 meses, inicia o movimento de <strong>rolar</strong> (inicialmente de prona para supina, e aos 4–5 meses de supina para prona). Os reflexos de Moro, RTCA (esgrimista) e preensão palmar reflexa desaparecem!</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Graças ao desaparecimento do RTCA e da preensão palmar reflexa, o lactente de 4 meses <strong>junta as duas mãos na linha média</strong> (brinca com as próprias mãos, olha para elas), <strong>alcança e segura objetos voluntariamente</strong> colocados à sua frente (preensão palmar global/cúbito-palmar) e leva tudo sistematicamente à boca (exploração oral).</li>
+          <li><strong>Linguagem:</strong> <strong>Gargalha (ri alto)</strong>, dá gritinhos de alegria (<em>squeals</em>), faz sons guturais e labiais (<em>"agu", "brrr"</em>) e vira a cabeça procurando a fonte sonora.</li>
+          <li><strong>Pessoal-Social:</strong> Sorri espontaneamente ao ver pessoas ou brinquedos familiares; demonstra excitação ao ver o preparo da mamada.</li>
+        </ul>
+
+        <h4>6 Meses de Idade (Senta em Tripé e Transfere Objetos)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> Rola completamente nos dois sentidos (supina ↔ prona). Em prona, apoia-se com os braços totalmente estendidos sobre as palmas das mãos abertas. Quando colocado sentado, <strong>senta-se com apoio (ou senta-se brevemente sem apoio inclinado para a frente apoiando as mãos entre as pernas — postura em "tripé")</strong>, mantendo o tronco superior ereto. Sustenta parte do peso nas pernas quando mantido de pé pelas axilas.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Marco clássico dos 6 meses em provas: <strong>Transfere objetos de uma mão para a outra!</strong> Realiza preensão palmar radial (toda a palma com participação radial) e tenta pegar objetos que caem ao seu alcance.</li>
+          <li><strong>Linguagem:</strong> Inicia a <strong>lalação ou balbucio polissilábico</strong> combinando consoantes e vogais (<em>"ba-ba-ba", "da-da-da", "ma-ma"</em> ainda sem significado específico); localiza prontamente sons laterais virando a cabeça.</li>
+          <li><strong>Pessoal-Social:</strong> Reconhece claramente os pais e diferencia familiares de estranhos; estende os braços para pedir colo; interage com sua imagem no espelho (sorri e bate no espelho); leva os pés à boca em decúbito dorsal (percepção do esquema corporal). Do ponto de vista neuromotor da alimentação, a capacidade de sentar com controle cervical/troncular e a diminuição do reflexo de protrusão lingual aos 6 meses permitem o <strong>início seguro da alimentação complementar</strong>!</li>
+        </ul>
+
+        <h4>9 Meses de Idade (Senta sem Apoio, Engatinha, Pinça Inferior e Estranha Desconhecidos)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> <strong>Senta-se sozinho sem qualquer apoio com tronco firme e ereto</strong> por tempo prolongado, podendo girar o tronco e inclinar-se para pegar brinquedos sem perder o equilíbrio (reação de paraquedas presente!). <strong>Arrasta-se ou engatinha</strong> (embora ~10%–15% das crianças normais possam pular a fase de engatinhar e passar direto para a marcha) e puxa-se pelos móveis para <strong>ficar em pé com apoio</strong>.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Evolui para a <strong>pinça inferior (pinça radial-digital ou em tesoura)</strong>, apreendendo objetos pequenos como uma passa ou bolinha de papel entre a face lateral do indicador e o polegar; bate dois cubos um contra o outro na linha média; solta objetos voluntariamente; <strong>procura ativamente objetos que foram escondidos diante de seus olhos</strong> (marco cognitivo piagetiano fundamental: aquisição da <strong>Permanência do Objeto</strong>!).</li>
+          <li><strong>Linguagem:</strong> Duplica sílabas de forma clara (<em>"mama", "papa", "dada"</em> — inicialmente inespecífico, começando a direcionar aos 9–10 meses); compreende o significado do <strong>"não"</strong> e <strong>atende quando chamado pelo próprio nome</strong> (marco crítico: não olhar quando chamado pelo nome aos 9–12 meses exige avaliação auditiva e alerta para TEA!).</li>
+          <li><strong>Pessoal-Social:</strong> Apresenta a <strong>ansiedade de separação e o estranhamento de desconhecidos</strong> (chora ou retrai-se diante do pediatra ou pessoas estranhas — o que é um sinal saudável de discriminação cognitiva e apego seguro!); brinca de <strong>"esconde-achou" (<em>peek-a-boo</em> / "cadê-achou")</strong> e imita gestos sociais simples como <strong>bater palmas ("parabéns") e acenar ("dar tchau")</strong>.</li>
+        </ul>
+
+        <h4>12 Meses de Idade — 1 Ano (Primeiros Passos, Pinça Superior Fina e Primeiras Palavras)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> Fica em pé momentaneamente sem apoio, <strong>caminha segurando nos móveis (marcha lateral ou <em>cruising</em>) ou segurado por apenas uma mão, ou já dá os primeiros passos independentes</strong> com base alargada e braços abduzidos para equilíbrio (a marcha independente sem apoio pode ser adquirida fisiologicamente entre 10 e 15 meses, com limite máximo tolerável aos <strong>18 meses</strong>).</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Marco clássico de 1 ano: <strong>Pinça superior fina (pinça polegar-indicador perfeita)</strong>, opondo a extremidade distal da polpa do polegar à polpa do indicador para pegar objetos minúsculos (como um grão de feijão ou linha); coloca objetos dentro de uma caneca/recipiente e os retira; <strong>entrega um objeto na mão do examinador quando solicitado</strong> por gesto e voz.</li>
+          <li><strong>Linguagem:</strong> Emite <strong>1 a 3 palavras com significado real</strong> além de "mamã" e "papá" (ex.: <em>"água", "dá", "au-au", "bola"</em>); utiliza <strong>jargão</strong> (sequência de sons com entonação de frase real); compreende e executa ordens simples de um comando acompanhadas de gesto (<em>"dá a bola para a mamãe"</em>).</li>
+          <li><strong>Pessoal-Social:</strong> Aponta com o dedo indicador para pedir algo que deseja (apontar protoimperativo) e começa a apontar para mostrar algo interessante (apontar protodeclarativo / atenção compartilhada); bebe em copo segurado pelo adulto; colabora ao ser vestido (estica o braço para a manga ou o pé para o sapato).</li>
+        </ul>
+
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Idade</th>
+              <th>Motor Grosso</th>
+              <th>Motor Fino-Adaptativo</th>
+              <th>Linguagem</th>
+              <th>Pessoal-Social</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2 Meses</strong></td>
+              <td>Levanta cabeça 45° em prona</td>
+              <td>Abre as mãos; segue objeto além da linha média</td>
+              <td>Vocaliza vogais (<em>"aaa", "uuu"</em>)</td>
+              <td><strong>Sorriso social responsivo</strong></td>
+            </tr>
+            <tr>
+              <td><strong>4 Meses</strong></td>
+              <td><strong>Sustento cefálico completo</strong>; apoia antebraços em prona (90°); rola</td>
+              <td><strong>Junta mãos na linha média</strong>; pega objetos voluntariamente</td>
+              <td><strong>Gargalha (ri alto)</strong>; grita de alegria</td>
+              <td>Sorri espontaneamente; explora objetos com a boca</td>
+            </tr>
+            <tr>
+              <td><strong>6 Meses</strong></td>
+              <td><strong>Senta com apoio (em tripé)</strong>; rola completo</td>
+              <td><strong>Transfere objetos de uma mão para outra</strong></td>
+              <td><strong>Lalação / balbucio polissilábico</strong>; localiza sons</td>
+              <td>Reconhece familiares; pega os próprios pés; interage no espelho</td>
+            </tr>
+            <tr>
+              <td><strong>9 Meses</strong></td>
+              <td><strong>Senta sem apoio firme</strong>; engatinha; fica de pé com apoio</td>
+              <td><strong>Pinça inferior (radial)</strong>; permanência do objeto (procura escondido)</td>
+              <td>Duplica sílabas (<em>"mama/papa"</em>); entende o "não" e <strong>atende pelo nome</strong></td>
+              <td><strong>Estranha desconhecidos</strong>; bate palmas, dá tchau, brinca de "cadê-achou"</td>
+            </tr>
+            <tr>
+              <td><strong>12 Meses</strong></td>
+              <td><strong>Anda com apoio ou dá os primeiros passos</strong></td>
+              <td><strong>Pinça superior fina (polegar-indicador)</strong>; entrega objeto solicitado</td>
+              <td><strong>Fala 1 a 3 palavras com significado</strong>; entende ordens simples</td>
+              <td>Aponta com o indicador; bebe no copo com ajuda; colabora ao vestir</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    },
+    {
+      id: 'dnpm-12-a-60-meses-escala-denver',
+      title: '9. Desenvolvimento Neuropsicomotor de 12 a 60 Meses e Interpretação da Escala de Denver II',
+      body_html: `
+        <p>Do segundo ao quinto ano de vida (período <em>toddler</em> de 1 a 3 anos e pré-escolar de 3 a 5 anos), o desenvolvimento neuropsicomotor caracteriza-se pelo refinamento da locomoção bípede, pela explosão do vocabulário e da estruturação gramatical, pela aquisição da grafomotricidade (desenho de formas geométricas e figura humana), pela brincadeira simbólica ("faz de conta") e pela conquista da autonomia pessoal (alimentação independente e controle esfincteriano vesical e anal).</p>
+
+        <h3>Marcos Essenciais do DNPM dos 15 aos 60 Meses (1 a 5 Anos)</h3>
+
+        <h4>15 Meses de Idade</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> <strong>Anda sozinho sem apoio</strong> (marcha independente bem estabelecida); abaixa-se (agacha) para pegar um brinquedo no chão e volta a ficar de pé sem cair; sobe escadas engatinhando.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Empilha <strong>torre de 2 cubos</strong>; faz rabiscos no papel por imitação; coloca bolinhas pequenas dentro de uma garrafa.</li>
+          <li><strong>Linguagem:</strong> Fala <strong>3 a 6 palavras</strong> inteligíveis; compreende ordens simples sem necessidade de gestos.</li>
+          <li><strong>Pessoal-Social:</strong> Consolida o <strong>apontar protodeclarativo</strong> (aponta com o indicador para um avião ou cachorro e olha para o rosto da mãe para compartilhar o interesse — <strong>atenção compartilhada</strong>); tenta usar a colher (ainda derramando bastante); abraça os pais e imita tarefas domésticas simples (como passar um pano ou falar ao telefone de brinquedo).</li>
+        </ul>
+
+        <h4>18 Meses de Idade (1 Ano e Meio)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> Anda com total segurança e <strong>começa a correr (corrida ainda rígida/desajeitada)</strong>; sobe escadas segurado por uma das mãos; senta-se sozinho em uma cadeirinha baixa; chuta ou arremessa bola com o corpo todo. (<strong>Atenção:</strong> Aos 18 meses, a ausência de marcha independente é considerada um atraso motor franco que exige investigação neurológica imediata!).</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Constrói <strong>torre de 3 a 4 cubos</strong>; <strong>rabisca espontaneamente</strong> no papel com giz de cera; vira 2 a 3 páginas de um livro de papelão por vez.</li>
+          <li><strong>Linguagem:</strong> Vocabulário expressivo de <strong>10 a 20 palavras</strong>; aponta para pelo menos <strong>1 a 3 partes do próprio corpo</strong> quando perguntado (<em>"cadê o nariz? cadê a barriga?"</em>).</li>
+          <li><strong>Pessoal-Social:</strong> Inicia a <strong>brincadeira simbólica / faz de conta</strong> (dá comida para a boneca, faz um bloco de madeira fingir que é um carrinho); usa a colher com maior eficiência; tira peças simples de roupa (como meias ou sapatos desamarrados).</li>
+        </ul>
+
+        <h4>24 Meses de Idade (2 Anos)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> <strong>Corre bem</strong> sem cair; <strong>sobe e desce escadas segurando no corrimão colocando os dois pés em cada degrau</strong> (sem alternar os pés); <strong>chuta uma bola para a frente</strong> sem perder o equilíbrio; começa a pular no lugar com os dois pés.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Constrói <strong>torre de 6 a 7 cubos</strong> (ou alinha cubos horizontalmente imitando um "trem"); <strong>imita traço vertical e rabisco circular</strong>; vira páginas de um livro uma a uma; desenrosca tampas de potes.</li>
+          <li><strong>Linguagem:</strong> Vocabulário de <strong>50 ou mais palavras</strong> (explosão do vocabulário); <strong>forma frases simples de 2 palavras com verbo ou ação</strong> (fala telegráfica: <em>"qué água", "mamãe foi", "dá bola"</em>); cerca de <strong>50% da fala é inteligível</strong> para estranhos; usa pronomes (<em>"eu", "meu"</em>); aponta figuras em um livro quando nomeadas.</li>
+          <li><strong>Pessoal-Social:</strong> <strong>Brinca em paralelo</strong> (gosta de estar perto de outras crianças fazendo a mesma atividade lado a lado, mas ainda não compartilha brinquedos de forma cooperativa — fase do <em>"é meu!"</em>); <strong>tira roupas simples sozinho</strong>; avisa quando a fralda está suja ou demonstra maturidade neuromotora para iniciar o <strong>desfralde diurno</strong> (o treinamento esfincteriano deve ser iniciado idealmente entre 18 e 24–30 meses, nunca de forma punitiva).</li>
+        </ul>
+
+        <h4>36 Meses de Idade (3 Anos)</h4>
+        <ul>
+          <li><strong>Motor Grosso:</strong> <strong>Sobe escadas alternando os pés</strong> sem precisar de apoio (desce ainda colocando dois pés por degrau); <strong>pula com os dois pés juntos</strong> tirando-os do chão; <strong>pedala triciclo</strong>; equilibra-se em um pé só por 1 a 2 segundos.</li>
+          <li><strong>Motor Fino-Adaptativo:</strong> Constrói <strong>torre de 9 a 10 cubos</strong> (ou ponte com 3 cubos); <strong>copia um círculo (O)</strong> (marco gráfico clássico de 3 anos!); segura o lápis entre os dedos (preensão trípode) e não mais com o punho fechado; usa tesoura sem ponta com supervisão.</li>
+          <li><strong>Linguagem:</strong> Vocabulário de mais de 250–500 palavras; forma <strong>frases completas de 3 a 4 palavras</strong>; sabe dizer seu <strong>próprio nome completo, idade e sexo</strong>; <strong>75% a 80% da sua fala é compreensível por estranhos</strong>; pergunta constantemente <em>"o quê?"</em> e <em>"por quê?"</em>; compreende preposições (em cima, debaixo, dentro).</li>
+          <li><strong>Pessoal-Social:</strong> Passa da brincadeira paralela para a <strong>brincadeira associativa/cooperativa</strong> (compartilha brinquedos e cria jogos imaginativos com outras crianças); veste-se sozinho com pouca ajuda (exceto botões difíceis e laços); <strong>controle esfincteriano diurno vesical e anal estabelecido</strong> na grande maioria das crianças (a enurese noturna isolada ainda é fisiológica até os 5 anos de idade!).</li>
+        </ul>
+
+        <h4>48 Meses (4 Anos) e 60 Meses (5 Anos)</h4>
+        <ul>
+          <li><strong>Aos 4 Anos (48 Meses):</strong> No domínio <em>Motor Grosso</em>, <strong>pula em um pé só (saci)</strong>, sobe e desce escadas alternando os pés e agarra bola arremessada com as mãos. No <em>Motor Fino-Adaptativo</em>, <strong>copia uma cruz (+)</strong> e, entre 4 e 4,5 anos, <strong>copia um quadrado (□)</strong>, além de desenhar a figura humana com 3 a 4 partes (cabeça, pernas, braços/tronco — passa do "girino" para o boneco com corpo). Na <em>Linguagem</em>, <strong>100% da fala é inteligível para estranhos</strong>, conta histórias fantasiosas ou relata acontecimentos do dia, conhece cores primárias e conta até 4–10. No <em>Pessoal-Social</em>, vai ao banheiro sozinho, abotoa roupas e brinca de jogos com regras simples e representação de papéis complexos.</li>
+          <li><strong>Aos 5 Anos (60 Meses):</strong> No domínio <em>Motor Grosso</em>, salta alternando os pés (<em>skipping</em>), caminha calcanhar-ponta em linha reta e mantém equilíbrio perfeito em um pé só por &gt; 10 segundos. No <em>Motor Fino-Adaptativo</em>, <strong>copia um triângulo (△)</strong> (marco gráfico clássico dos 5 anos; o losango/diamante é copiado aos 6–7 anos), desenha a figura humana completa com 6 ou mais partes (cabeça, olhos, nariz, boca, tronco, braços, pernas e dedos) e escreve algumas letras ou o próprio primeiro nome. No <em>Pessoal-Social</em>, veste-se completamente sozinho, escova os dentes, diferencia fantasia de realidade e possui controle esfincteriano diurno e noturno (após os 5 anos, perdas urinárias durante o sono ≥ 2 vezes/mês por ≥ 3 meses definem formalmente a <strong>enurese noturna</strong>).</li>
+        </ul>
+
+        <blockquote>
+          <strong>Mnemônico Gráfico Infalível para Provas de Residência (Evolução do Desenho):</strong> Aos <strong>18 meses</strong> a criança rabisca espontaneamente; aos <strong>2 anos (24m)</strong> imita o traço <strong>Vertical ( | )</strong>; aos <strong>3 anos (36m)</strong> copia o <strong>Círculo ( ○ )</strong>; aos <strong>4 anos (48m)</strong> copia a <strong>Cruz ( + )</strong> e o <strong>Quadrado ( □ )</strong> (lembre-se: 4 anos = 4 pontas da cruz e 4 lados do quadrado!); aos <strong>5 anos (60m)</strong> copia o <strong>Triângulo ( △ )</strong>; e aos <strong>6 a 7 anos</strong> copia o <strong>Losango ( ◇ )</strong>.
+        </blockquote>
+
+        <h3>Teste de Triagem do Desenvolvimento de Denver II: Como Ler o Gráfico e Interpretar</h3>
+        <p>O <strong>Teste de Denver II</strong> (aplicável de 0 a 6 anos de idade, composto por 125 itens distribuídos nos 4 domínios) <strong>NÃO é um teste diagnóstico nem um teste de quociente de inteligência (QI)</strong>: trata-se de um <strong>instrumento padronizado de triagem (rastreamento)</strong> para identificar crianças em risco de atraso que necessitam de avaliação diagnóstica especializada.</p>
+        <p>No gráfico do Denver II, cada marco é representado por uma barra horizontal cuja extremidade esquerda marca a idade em que <strong>25%</strong> das crianças da população padrão realizam a tarefa, o traço vertical superior indica <strong>50%</strong>, a mudança da área branca para a área hachurada (sombreada) marca <strong>75%</strong> e a extremidade direita da barra marca a idade em que <strong>90%</strong> das crianças já executam o marco. Ao traçar a <strong>linha vertical da idade da criança</strong> (usando idade corrigida para prematuros até 2 anos), cada item testado é classificado em:</p>
+        <ul>
+          <li><strong>Normal:</strong> A criança passa no item, ou falha/recusa um item no qual a linha de idade está situada entre os percentis 25% e 75% (parte branca da barra, onde até 75% das crianças fazem, mas mais de 25% ainda não fazem).</li>
+          <li><strong>Cautela / Atenção (<em>Caution</em> — "C"):</strong> A criança falha ou recusa um item no qual a linha da sua idade corta a <strong>área hachurada/sombreada da barra (entre os percentis 75% e 90%)</strong>. Significa que entre 75% e 90% das crianças da mesma idade já realizam aquela habilidade, mas a criança avaliada ainda não realiza.</li>
+          <li><strong>Atraso (<em>Delay</em> — "A"):</strong> A criança falha em um item cuja barra inteira está situada totalmente à <strong>esquerda da linha de idade (além do percentil 90%)</strong>! Significa que mais de 90% das crianças daquela idade já dominam a tarefa e ela ainda não conseguiu realizar.</li>
+        </ul>
+        <p><strong>Classificação Global do Teste de Denver II e Conduta:</strong></p>
+        <ol>
+          <li><strong>Teste Normal:</strong> Nenhum Atraso (zero atrasos) e no máximo 1 Cautela/Atenção. <em>Conduta:</em> Orientar estimulação ambiental de rotina e reavaliar nas consultas habituais de puericultura.</li>
+          <li><strong>Teste Suspeito (Alterado):</strong> Presença de <strong>1 ou mais Atrasos</strong> e/ou <strong>2 ou mais Cautelas/Atenções</strong>. <em>Conduta:</em> Orientar estímulos dirigidos, <strong>repetir o teste em 1 a 2 semanas</strong> para excluir fatores transitórios (sono, fome, medo, febre) e, se persistir suspeito na retestagem, encaminhar para investigação diagnóstica especializada e estimulação precoce multiprofissional.</li>
+          <li><strong>Teste Não Testável:</strong> Quando a criança recusa-se a realizar 1 ou mais itens situados completamente à esquerda da linha de idade (&gt; P90) ou mais de 1 item na área entre P75 e P90. Deve ser reaplicado em 1 a 2 semanas.</li>
+        </ol>
+      `
+    },
+    {
+      id: 'sinais-alerta-dnpm-paralisia-cerebral-autismo',
+      title: '10. Sinais de Alerta do DNPM (Red Flags), Paralisia Cerebral e Transtorno do Espectro Autista (TEA)',
+      body_html: `
+        <p>A identificação precoce dos desvios do desenvolvimento neuropsicomotor permite intervir durante a janela crítica de máxima neuroplasticidade sináptica dos primeiros 1.000 dias de vida. Existem marcos cuja ausência em determinadas idades-limite constitui um <strong>Sinal de Alerta Vermelho (<em>Red Flag</em>)</strong> absoluto, vedando a conduta expectante passiva ("vamos esperar mais seis meses porque cada criança tem seu tempo").</p>
+
+        <h3>Sinais de Alerta Motores e Cognitivos por Idade e Regressão Neurológica</h3>
+        <ul>
+          <li><strong>Regra Absoluta de Qualquer Idade — Perda ou Regressão de Marcos Adquiridos:</strong> Qualquer criança que <strong>perde habilidades motoras, cognitivas ou de linguagem que já havia adquirido previamente</strong> (ex.: criança que já sentava e para de sentar, ou que falava palavras e emudece) exige investigação neurológica, metabólica e genética de urgência! Na perda motora progressiva, deve-se suspeitar de doenças neurodegenerativas, leucodistrofias, erros inatos do metabolismo ou tumores do SNC; na regressão de linguagem e interação social entre 15 e 24 meses, deve-se investigar o <strong>Transtorno do Espectro Autista (TEA — regressão autística ocorre em ~25% dos casos)</strong>, a <strong>Síndrome de Rett</strong> (em meninas, por mutação no gene <em>MECP2</em> ligado ao X: desenvolvimento normal até 6–18 meses seguido de desaceleração do perímetro cefálico — microcefalia adquirida —, perda do uso intencional das mãos substituído por <strong>estereotipias manuais na linha média do tipo "lavar ou torcer as mãos"</strong>, perda da fala e marcha atáxica/apráxica) e a <strong>Síndrome de Landau-Kleffner</strong> (afasia epiléptica adquirida).</li>
+          <li><strong>Ausência de sorriso social ou de fixação visual aos 2–3 meses:</strong> Investigar deficiência visual (catarata congênita, retinoblastoma, retinopatia da prematuridade, infecções TORCH — realizar sempre o Teste do Reflexo Vermelho / Teste do Olhinho!), surdez ou encefalopatia grave.</li>
+          <li><strong>Ausência de sustento cefálico completo aos 4 meses:</strong> Forte indicador de hipotonia central ou neuromuscular ou lesão encefálica.</li>
+          <li><strong>Assimetria motora ou "dominância manual" (destro ou canhoto) antes dos 18 a 24 meses de idade:</strong> <strong>Pérola de ouro para provas!</strong> A lateralidade manual definitiva só se estabelece entre 2 e 4 anos de idade. Se um lactente de 6 ou 9 meses usa exclusivamente a mão direita para alcançar tudo e mantém a mão esquerda fechada ou negligenciada, isso <strong>não é precocidade motora</strong>: é <strong>hemiparesia espástica</strong> contralateral até que se prove o contrário!</li>
+          <li><strong>Ausência de sentar sem apoio aos 9–10 meses.</strong></li>
+          <li><strong>Ausência de marcha independente aos 18 meses:</strong> Impõe investigação de paralisia cerebral, luxação congênita do quadril ou doenças neuromusculares (ex.: Distrofia Muscular de Duchenne — solicitar <strong>CPK sérica</strong> em todo menino com atraso motor grosso ou levantar miopático de Gowers, e Amiotrofia Espinhal — AME 5q nos quadros hipotônicos arreflexos com fasciculação de língua).</li>
+          <li><strong>Ausência de palavras isoladas com significado aos 16–18 meses ou ausência de frases de 2 palavras aos 24 meses:</strong> Solicitar obrigatoriamente avaliação audiológica formal (BERA / PEATE e emissões otoacústicas — pois a perda auditiva neurossensorial ou condutiva é causa tratável essencial de atraso de fala!) e triar para TEA.</li>
+        </ul>
+
+        <h3>Suspeita Precoce de Paralisia Cerebral (Encefalopatia Crônica Não Progressiva)</h3>
+        <p>A <strong>Paralisia Cerebral (PC)</strong> compreende um grupo de distúrbios permanentes do desenvolvimento do movimento e da postura, causando limitação funcional, atribuídos a uma lesão <strong>não progressiva</strong> ocorrida no cérebro fetal ou infantil em desenvolvimento (sendo as causas principais a prematuridade com leucomalácia periventricular, a asfixia perinatal / encefalopatia hipóxico-isquêmica, as infecções congênitas ou meningites neonatais, o kernicterus/encefalopatia bilirrubínica e o AVC perinatal). Embora a lesão anatômica seja estática (não progressiva), as manifestações clínicas mudam conforme o cérebro tenta amadurecer:</p>
+        <ul>
+          <li><strong>Tríade de Suspeição no Lactente (3 a 9 meses):</strong> (1) <strong>Persistência patológica dos reflexos primitivos</strong> além da idade de desaparecimento (Moro &gt; 6 meses, RTCA/esgrimista obrigatório &gt; 4 meses, preensão palmar &gt; 4 meses); (2) <strong>Alteração do tônus muscular</strong> (frequentemente uma fase inicial de hipotonia axial acentuada que evolui para <strong>espasticidade/hipertonia piramidal</strong> com <strong>mãos persistentemente fechadas com polegar incluso na palma</strong>, hiperreflexia profunda, clônus aquileu e adução excessiva das coxas causando <strong>cruzamento dos membros inferiores em "tesoura"</strong> quando suspenso pelas axilas — sinal de Little); e (3) <strong>Atraso nos marcos motores grossos</strong> (não sustenta a cabeça aos 4m, não senta aos 9m) e ausência das reações posturais de Landau e paraquedas.</li>
+          <li><strong>Subtipos Topográficos e Clínicos Clássicos:</strong> A forma <strong>Diplegia Espástica</strong> (acometimento motor predominante nos membros inferiores em tesoura, com membros superiores e inteligência relativamente preservados) é classicamente associada à <strong>prematuridade e à Leucomalácia Periventricular</strong> (necrose da substância branca periventricular por onde passam as fibras corticoespinhais descendentes que inervam as pernas). A <strong>Tetraparesia Espástica</strong> associa-se à asfixia perinatal grave difusa em RN a termo ou infecções congênitas graves, cursando com microcefalia, disfagia orofaríngea, epilepsia e deficiência intelectual. A forma <strong>Discinética (Coreoatetósica / Distônica)</strong> decorre de lesão seletiva dos núcleos da base (gânglios da base e tálamo), classicamente causada pela <strong>encefalopatia bilirrubínica aguda/crônica (Kernicterus)</strong> ou hipóxia aguda profunda no RN a termo.</li>
+        </ul>
+
+        <h3>Transtorno do Espectro Autista (TEA): Sinais Precoces e Rastreamento pelo M-CHAT-R/F</h3>
+        <p>De acordo com o DSM-5-TR, o <strong>Transtorno do Espectro Autista (TEA)</strong> é um transtorno do neurodesenvolvimento de início precoce caracterizado por déficits persistentes em uma <strong>díade nuclear de domínios</strong>:</p>
+        <ol>
+          <li><strong>Déficits persistentes na comunicação social e na interação social</strong> em múltiplos contextos (reciprocidade socioemocional, comportamentos comunicativos não verbais e desenvolvimento/manutenção de relacionamentos).</li>
+          <li><strong>Padrões restritos e repetitivos de comportamento, interesses ou atividades</strong> (estereotipias motoras ou vocais/ecolalia, insistência na mesmice/adesão inflexível a rotinas, interesses fixos e altamente circunscritos, e <strong>hiper ou hiporreatividade a estímulos sensoriais</strong> — ex.: aversão extrema a barulhos como liquidificador, seletividade alimentar severa por texturas, andar na ponta dos pés, fascínio visual por luzes ou objetos que giram como rodas de carrinhos e ventiladores).</li>
+        </ol>
+
+        <h4>Sinais Precoces de TEA no 1º e 2º Anos de Vida (Muito Antes do Atraso de Fala!)</h4>
+        <p>Embora muitos pais procurem o pediatra apenas aos 2 ou 3 anos com a queixa de que "a criança ainda não fala", os sinais neurocomportamentais do TEA já estão presentes e podem ser detectados no primeiro e segundo anos de vida:</p>
+        <ul>
+          <li><strong>Aos 6 a 9 meses:</strong> Pouco ou nenhum contato visual sustentado (olhar fugidio); raramente sorri em reciprocidade social; baixa expressividade facial afetiva; não estende os braços para ser pego no colo.</li>
+          <li><strong>Aos 9 a 12 meses (Marco Crítico!):</strong> <strong>Não olha nem atende quando é chamado pelo próprio nome</strong> (os pais frequentemente suspeitam que a criança seja surda, embora ela escute perfeitamente o barulho de um pacote de biscoito abrindo ou a vinheta de um desenho na TV!); ausência de gestos comunicativos convencionais (não bate palmas, não dá tchau); redução do balbucio comunicativo recíproco.</li>
+          <li><strong>Aos 12 a 18 meses (O Sinal Mais Específico em Provas!):</strong> <strong>Ausência de Atenção Compartilhada (<em>Joint Attention</em>) e ausência do Apontar Protodeclarativo!</strong> Uma criança típica de 14–18 meses olha para um objeto interessante, aponta com o dedo indicador para mostrá-lo ao adulto e alterna o olhar entre o objeto e o rosto do adulto buscando compartilhar a experiência emocional. A criança com TEA não aponta para mostrar/compartilhar interesse e não acompanha quando o adulto aponta para algo distante (em vez de apontar, ela frequentemente pega a mão do adulto como se fosse uma ferramenta mecânica e a leva até o objeto que deseja abrir ou alcançar — <strong>uso instrumental do corpo do outro</strong>).</li>
+          <li><strong>Aos 18 a 24 meses:</strong> <strong>Ausência de brincadeira simbólica ("faz de conta")</strong>; brinca de forma repetitiva e não funcional (enfileira objetos rigidamente por cor ou tamanho, gira as rodinhas do carrinho perto dos olhos em vez de simular que o carro está andando); presença de <strong>estereotipias motoras</strong> (<em>flapping</em> de mãos — agitar as mãos quando excitado —, balançar o tronco ou girar em torno do próprio eixo); <strong>ecolalia imediata ou tardia</strong> (repetição mecânica de frases ou comerciais de TV fora de contexto comunicativo) ou regressão de palavras que já falava.</li>
+        </ul>
+
+        <h4>Triagem Obrigatória pelo M-CHAT-R/F (16 a 30 Meses) e Conduta</h4>
+        <p>No Brasil, a <strong>Lei Federal nº 13.438/2017</strong> e as diretrizes da <strong>Sociedade Brasileira de Pediatria (SBP)</strong> determinam a vigilância formal do desenvolvimento e recomendam a aplicação universal da escala <strong>M-CHAT-R/F (<em>Modified Checklist for Autism in Toddlers, Revised with Follow-Up</em>)</strong> em todas as crianças entre <strong>16 e 30 meses de idade</strong> (especialmente nas consultas de 18 e 24 meses), independentemente da presença de queixas prévias. O questionário contém 20 perguntas do tipo "Sim/Não" respondidas pelos pais, avaliando atenção compartilhada, apontar, faz-de-conta, contato visual e resposta ao nome. A pontuação interpreta-se em três faixas de risco:</p>
+        <ul>
+          <li><strong>Pontuação de 0 a 2 pontos (Baixo Risco):</strong> Se a criança tiver menos de 24 meses, repetir o M-CHAT-R aos 24 meses. Se ≥ 24 meses, nenhuma ação adicional é necessária a menos que a vigilância clínica indique sinais de alerta.</li>
+          <li><strong>Pontuação de 3 a 7 pontos (Risco Moderado):</strong> Deve-se aplicar imediatamente a <strong>segunda etapa do instrumento — a Entrevista de Seguimento (<em>Follow-Up</em> do M-CHAT-R/F)</strong> apenas para os itens em que a criança falhou, a fim de reduzir falsos-positivos. Se na entrevista de seguimento a pontuação permanecer <strong>≥ 2 pontos</strong>, a triagem é considerada <strong>positiva</strong> e a criança deve ser encaminhada imediatamente para avaliação diagnóstica e intervenção precoce!</li>
+          <li><strong>Pontuação de 8 a 20 pontos (Alto Risco):</strong> <strong>Não é necessário aplicar a entrevista de seguimento!</strong> Encaminha-se diretamente e sem demora para avaliação diagnóstica especializada (neuropediatria/psiquiatria infantil), avaliação audiológica e início imediato de <strong>intervenção precoce multiprofissional</strong>.</li>
+        </ul>
+        <blockquote>
+          <strong>Regra de Ouro da Conduta no TEA:</strong> O diagnóstico de TEA é <strong>eminentemente clínico</strong> (não existe marcador laboratorial ou exame de neuroimagem que confirme ou exclua o autismo; exames como cariótipo/CGH-array, pesquisa de X-frágil, EEG ou RM são solicitados apenas conforme indicação clínica individualizada, como dismorfismos, macrocefalia acentuada ou epilepsia). Mais importante: <strong>NUNCA se deve aguardar o fechamento definitivo do laudo médico para iniciar a intervenção precoce!</strong> Diante de suspeita clínica ou M-CHAT-R/F positivo, a criança deve ser encaminhada imediatamente para fonoterapia (estimulação de linguagem e comunicação pragmática), terapia ocupacional (integração sensorial) e intervenção comportamental naturalística estruturada (como o Modelo Denver de Intervenção Precoce — ESDM ou análise do comportamento aplicada — ABA), aproveitando a janela de neuroplasticidade dos primeiros anos.
+        </blockquote>
+      `
+    },
+    {
+      id: 'casos-clinicos-aplicados-condutas-praticas',
+      title: '11. Casos Clínicos Aplicados e Condutas Práticas de Puericultura e Endocrinologia',
+      body_html: `
+        <p>Para consolidar a integração entre teoria antropométrica, propedêutica da baixa estatura, estadiamento de Tanner e vigilância do neurodesenvolvimento, analisaremos seis cenários clínicos reais estruturados exatamente no modelo das provas práticas e discursivas de Residência Médica (USP, UNIFESP, UNICAMP, ENARE e SUS-SP).</p>
+
+        <h3>Caso Clínico 1: Avaliação Antropométrica no Primeiro Semestre e Perda Ponderal Neonatal</h3>
+        <p><strong>Cenário Clínico:</strong> Recém-nascido a termo (IG = 39 semanas), parto vaginal sem intercorrências, nascido com Peso = 3.200 g, Comprimento = 49 cm e Perímetro Cefálico = 34 cm, em aleitamento materno exclusivo (AME). Comparece à primeira consulta de puericultura no 5º dia de vida pesando 2.950 g, ativo, corado, hidratado, com diurese clara (6 fraldas/dia) e evacuações amarelo-esverdeadas. A mãe está ansiosa achando que "seu leite é fraco" e quer introduzir fórmula infantil. Posteriormente, a criança retorna aos 4 meses e meio de vida em AME, pesando 6.450 g, com comprimento de 63 cm e PC de 42 cm.</p>
+        <p><strong>Análise Clínica e Conduta:</strong></p>
+        <ul>
+          <li><strong>No 5º dia de vida:</strong> O peso caiu de 3.200 g para 2.950 g, o que representa uma perda de $250\\text{ g} / 3.200\\text{ g} = \\mathbf{7,8\\%}$. Como a perda ponderal fisiológica neonatal no RN a termo pode chegar a <strong>até 10% do peso de nascimento</strong> (com nadir no 3º–5º dia e recuperação completa até o 10º–14º dia de vida) e o neonato apresenta sinais clínicos de ingestão adequada (hidratado, diurese abundante), a perda é <strong>totalmente fisiológica</strong>! A conduta correta é tranquilizar a mãe, explicar que não existe "leite materno fraco", avaliar a técnica da mamada (pega e posicionamento), manter o <strong>aleitamento materno exclusivo sob livre demanda</strong> (contraindicando a introdução desnecessária de fórmula) e agendar retorno breve em 5 a 7 dias (por volta do 10º–12º dia de vida) para documentar a recuperação do peso de nascimento.</li>
+          <li><strong>Aos 4 meses e meio de vida:</strong> O lactente duplicou o peso de nascimento ($3.200 \\times 2 = 6.400\\text{ g}$; está com 6.450 g), ganhou 14 cm de comprimento (esperado 15 cm no 1º semestre) e ganhou 8 cm de perímetro cefálico (esperado 6 cm no 1º trimestre + 1,5 cm em 1,5 mês do 2º trimestre = 7,5 a 8 cm). Todos os parâmetros antropométricos seguem com perfeição as regras fisiológicas do 1º semestre!</li>
+        </ul>
+
+        <h3>Caso Clínico 2: Menina Escolar com Desaceleração Estatural Isolada — A Regra de Ouro do Cariótipo</h3>
+        <p><strong>Cenário Clínico:</strong> Menina de 8 anos e 6 meses é trazida à consulta porque a mãe notou que, nos últimos dois anos, ela passou a ser a mais baixa da turma e não precisou trocar a numeração das calças. Nasceu a termo com 2.850 g e 47 cm, teve dois episódios de otite média aguda na infância, mas nega diarreia, constipação ou dores abdominais. Pai mede 176 cm e mãe mede 165 cm. Ao exame físico: Estatura = 115 cm (Escore-Z Estatura/Idade = -2,4 / Percentil &lt; 1); Peso = 23 kg (IMC/Idade no Percentil 50); Velocidade de crescimento nos últimos 12 meses = 3,6 cm/ano. Relação SS/SI = 1,02 (proporcionada). Exame físico geral mostra apenas palato alto e múltiplos pequenos nevos pigmentados no tronco, sem pescoço alado evidente. Estágio puberal M1P1. Hemograma, função renal, gasometria, anti-tTG IgA, TSH e T4 livre resultaram normais.</p>
+        <p><strong>Análise Clínica e Conduta:</strong></p>
+        <ul>
+          <li><strong>Cálculo da Estatura-Alvo Familiar:</strong> $\\frac{176 + 165 - 13}{2} = \\frac{328}{2} = \\mathbf{164\\text{ cm}}$ (canal familiar de 155,5 cm a 172,5 cm — próxima ao Percentil 50–75). Portanto, a menina está drasticamente fora do seu canal genético familiar (&lt; -2,4 DP) e apresenta <strong>velocidade de crescimento francamente patológica (3,6 cm/ano, sendo o normal ≥ 5 cm/ano)</strong>.</li>
+          <li><strong>Diagnóstico Provável e Exame Obrigatório:</strong> Mesmo sem apresentar o pescoço alado clássico, trata-se de uma menina com baixa estatura proporcionada patológica, histórico de comprimento limítrofe ao nascer, otites de repetição, palato ogival e nevos melanocíticos. O exame complementar indispensável é o <strong>Cariótipo de sangue periférico com bandamento G</strong> para confirmar a <strong>Síndrome de Turner</strong> (45,X ou mosaicismo)! Confirmado o diagnóstico, a conduta inclui: (1) <strong>Ecocardiograma transtorácico e RM cardiovascular</strong> (para rastrear válvula aórtica bicúspide e coartação da aorta); (2) <strong>Ultrassonografia de rins e vias urinárias</strong> (para rastrear rim em ferradura); (3) Avaliação audiológica e oftalmológica; (4) Início precoce de <strong>hormônio do crescimento recombinante humano (somatropina)</strong> em dose farmacológica para otimizar a estatura final; e (5) Indução puberal com estrogênio em baixa dose em idade oportuna (~11–12 anos) caso haja falência gonadal.</li>
+        </ul>
+
+        <h3>Caso Clínico 3: Adolescente do Sexo Masculino com Baixa Estatura e Puberdade Atrasada (ACCP)</h3>
+        <p><strong>Cenário Clínico:</strong> Menino de 13 anos e 4 meses comparece angustiado ao consultório porque todos os amigos do time de futebol já espicharam e têm pelos faciais, enquanto ele continua com aparência infantil. Nasceu a termo com 3.400 g e 50 cm. Cresceu ao redor do percentil 5 desde os 2 anos de idade, mantendo velocidade de crescimento de 5,0 cm/ano nos últimos dois anos. Pai mede 178 cm (relata que só começou a fazer a barba aos 17 anos e cresceu no final do ensino médio) e mãe mede 163 cm (menarca aos 14,5 anos). Exame físico: Estatura = 143 cm (Escore-Z -2,1; equivalente à mediana de um menino de 11 anos — Idade Estatural = 11 anos); Peso = 35 kg; proporcionado; estadiamento puberal de Tanner <strong>G2 (volume testicular de 4 mL bilateralmente no orquidômetro de Prader) e P1</strong>. Exames laboratoriais gerais, tireoidianos e triagem celíaca normais. Radiografia de mão e punho esquerdos revela <strong>Idade Óssea de 11 anos</strong>.</p>
+        <p><strong>Análise Clínica e Conduta:</strong></p>
+        <ul>
+          <li><strong>Síntese Diagnóstica:</strong> O paciente preenche todos os critérios clássicos do <strong>Atraso Constitucional do Crescimento e da Puberdade (ACCP)</strong>: (1) velocidade de crescimento pré-puberal preservada (5,0 cm/ano); (2) história familiar positiva de puberdade tardia paterna e materna com estatura final normal (alvo genético = $\\frac{178 + 163 + 13}{2} = 177\\text{ cm}$); (3) <strong>Idade Óssea atrasada em mais de 2 anos em relação à Idade Cronológica (IO = 11 anos vs IC = 13,3 anos), porém exatamente igual à Idade Estatural (IO = IE = 11 anos)</strong>; e (4) ao exame físico, o volume testicular de <strong>4 mL (G2 de Tanner)</strong> comprova que o eixo HHG <strong>já despertou espontaneamente</strong>!</li>
+          <li><strong>Conduta:</strong> Como ele já atingiu G2 espontaneamente e tem IO de 11 anos, seu prognóstico de estatura final adulta é excelente e compatível com o canal familiar (~177 cm). A conduta de escolha é <strong>tranquilização, suporte psicológico e acompanhamento clínico semestral</strong> (em casos selecionados de meninos ≥ 14 anos ainda em G1 com intenso sofrimento psicossocial, pode-se utilizar um ciclo curto de 3 a 6 meses de ésteres de testosterona em baixa dose para destravar a maturação hipotalâmica sem avançar indevidamente a idade óssea).</li>
+        </ul>
+
+        <h3>Caso Clínico 4: Lactente de 5 Meses com Sinais Precoces de Paralisia Cerebral</h3>
+        <p><strong>Cenário Clínico:</strong> Lactente de 5 meses de idade cronológica, nascido a termo de parto laborioso com necessidade de reanimação neonatal em sala de parto (Apgar 2/4/6), é trazido à consulta de puericultura. A mãe refere que o bebê é "muito durinho para trocar a fralda", engasga com frequência e ainda não segura o chocalho. Ao exame físico: Perímetro cefálico = 38,5 cm (Escore-Z &lt; -2,5, cruzando percentis para baixo). Quando colocado em decúbito dorsal, assume invariavelmente postura com extensão do braço direito e flexão do braço esquerdo ao virar o rosto para a direita; não junta as mãos na linha média; mantém ambas as <strong>mãos persistentemente fechadas com o polegar aduzido (incluso) na palma</strong>; apresenta atraso importante da cabeça à tração cervical (não sustenta a cabeça); reflexo de Moro exacerbado; reflexos patelares vivos com clônus aquileu bilateral e cruzamento das pernas em tesoura quando suspenso pelas axilas.</p>
+        <p><strong>Análise Clínica e Conduta:</strong></p>
+        <ul>
+          <li><strong>Análise Neurológica:</strong> Um lactente de 5 meses já deveria ter adquirido sustento cefálico firme (aos 3–4m), juntar as mãos na linha média e pegar objetos voluntariamente (aos 4m), além de já ter abolido o reflexo tônico-cervical assimétrico (RTCA/esgrimista) e a preensão palmar reflexa (aos 3–4m). A combinação de <strong>história de asfixia perinatal + desaceleração do perímetro cefálico (microcefalia secundária) + atraso motor grosso + persistência obrigatória do RTCA e Moro + mãos fechadas com polegar incluso + hipertonia espástica em tesoura (sinal de Little) e clônus</strong> fecha o quadro sindrômico de lesão piramidal precoce compatível com <strong>Paralisia Cerebral (Encefalopatia Crônica Não Progressiva — forma Tetraparesia Espástica)</strong>.</li>
+          <li><strong>Conduta:</strong> Encaminhamento imediato para Neuropediatria, solicitação de neuroimagem (Ressonância Magnética de encéfalo), avaliação fonoaudiológica da deglutição (pelo risco de broncoaspiração devido à disfagia orofaríngea) e início imediato de reabilitação motora intensiva (fisioterapia neurofuncional e terapia ocupacional).</li>
+        </ul>
+
+        <h3>Caso Clínico 5: Contraste dos Pontos de Corte de Excesso de Peso na OMS (2 Anos vs 7 Anos)</h3>
+        <p><strong>Cenário Clínico:</strong> Dois irmãos são avaliados na mesma consulta na Unidade Básica de Saúde: (A) Lucas, de <strong>2 anos e 4 meses (28 meses)</strong>, apresenta Estatura/Idade no Escore-Z +0,5 e IMC/Idade situado no <strong>Escore-Z +2,3</strong>; (B) Pedro, de <strong>7 anos e 2 meses</strong>, apresenta Estatura/Idade no Escore-Z +0,4 e IMC/Idade situado exatamente no mesmo <strong>Escore-Z +2,3</strong>. Qual é o diagnóstico nutricional oficial pelo Ministério da Saúde/OMS para cada irmão?</p>
+        <p><strong>Análise Clínica e Conduta:</strong></p>
+        <ul>
+          <li>Ambos possuem o mesmo valor matemático de escore-z de IMC/Idade (<strong>+2,3</strong>, portanto situado na faixa <strong>&gt; +2 e ≤ +3</strong>).</li>
+          <li>Entretanto, <strong>Lucas tem menos de 5 anos (2 anos e 4 meses)</strong>: na faixa de 0 a 5 anos incompletos, o intervalo entre +1 e +2 é <em>Risco de Sobrepeso</em>, o intervalo <strong>entre +2 e +3 é SOBREPESO</strong>, e somente acima de +3 é Obesidade. Logo, o diagnóstico de Lucas é <strong>Estatura adequada para a idade e Sobrepeso</strong>!</li>
+          <li>Já <strong>Pedro tem 7 anos e 2 meses (faixa de 5 a 19 anos)</strong>: nessa faixa etária, o intervalo entre +1 e +2 já é <em>Sobrepeso</em>, o intervalo <strong>entre +2 e +3 é OBESIDADE</strong>, e acima de +3 é <em>Obesidade Grave</em>. Logo, o diagnóstico de Pedro é <strong>Estatura adequada para a idade e Obesidade</strong>!</li>
+        </ul>
+
+        <h3>Caso Clínico 6: Rastreamento Positivo no M-CHAT-R/F aos 20 Meses e Conduta no TEA</h3>
+        <p><strong>Cenário Clínico:</strong> Menino de 20 meses de idade comparece à consulta de rotina. Nasceu a termo, anda bem desde os 13 meses e empilha 4 blocos, mas ainda não fala nenhuma palavra com significado (apenas emite sons agudos repetitivos). Durante a consulta, a médica observa que a criança não mantém contato visual, não olha quando é chamada pelo nome três vezes, não aponta com o dedo indicador para mostrar o brinquedo na mesa (apenas puxa a mão da mãe em direção à porta para sair da sala) e passa 10 minutos girando repetidamente a roda de um caminhãozinho de plástico próximo ao rosto. Ao aplicar o questionário <strong>M-CHAT-R</strong>, a pontuação inicial resulta em <strong>6 pontos</strong>; após aplicar a entrevista de seguimento (<em>Follow-Up</em>), a pontuação permanece em <strong>4 pontos</strong>.</p>
+        <p><strong>Análise Clínica e Conduta:</strong></p>
+        <ul>
+          <li><strong>Interpretação do M-CHAT-R/F:</strong> A pontuação inicial de 6 pontos situa-se na faixa de <strong>Risco Moderado (3 a 7 pontos)</strong>, o que exigiu corretamente a aplicação imediata da Entrevista de Seguimento (<em>Follow-Up</em>). Como na entrevista de seguimento a pontuação permaneceu <strong>≥ 2 pontos (4 pontos)</strong>, o rastreamento para <strong>Transtorno do Espectro Autista (TEA) é POSITIVO</strong>, corroborado pelos sinais clínicos clássicos (ausência de resposta ao nome, ausência de contato visual, ausência de atenção compartilhada e de apontar protodeclarativo, uso instrumental da mão da mãe, ausência de fala aos 20 meses e interesse sensorial restrito/repetitivo em objetos que giram).</li>
+          <li><strong>Conduta Imediata:</strong> (1) Solicitar avaliação audiológica formal (BERA/PEATE e emissões otoacústicas) para descartar deficiência auditiva coexistente; (2) Encaminhar para avaliação diagnóstica especializada (Neuropediatria ou Psiquiatria da Infância); e (3) <strong>Iniciar imediatamente a intervenção precoce multiprofissional (fonoaudiologia, terapia ocupacional e terapia comportamental naturalística/ABA) ANTES mesmo da conclusão formal do diagnóstico médico</strong>, orientando a família a reduzir a exposição a telas (recomendação da SBP: zero telas antes dos 2 anos de idade!) e estimular a interação face a face.</li>
+        </ul>
+      `
+    },
+    {
+      id: 'sintese-alta-performance-questoes-comentadas-residencia',
+      title: '12. Síntese de Alta Performance e Questões Comentadas de Residência Médica',
+      body_html: `
+        <p>Antes de resolvermos as 10 questões comentadas de nível avançado, revise este quadro sinóptico com os pontos de maior incidência estatística nas bancas brasileiras:</p>
+
+        <ul>
+          <li><strong>Modelo ICP de Karlberg:</strong> Lactente (Nutrição + Insulina/IGF-1 local) → Infância (GH/IGF-1 + Hormônios Tireoidianos) → Puberdade (GH/IGF-1 + Esteroides Sexuais; fechamento epifisário mediado pelo <strong>estradiol</strong> em ambos os sexos).</li>
+          <li><strong>Ganho Ponderal no 1º Ano:</strong> Perda fisiológica até 10% (recupera em 10–14 dias). Ganho diário por trimestre: <strong>1º Tri = 25–30 g/dia (700 g/mês)</strong>; <strong>2º Tri = 20 g/dia (600 g/mês)</strong>; <strong>3º Tri = 15 g/dia (500 g/mês)</strong>; <strong>4º Tri = 10–12 g/dia (300–400 g/mês)</strong>. Duplica peso aos 4–5m, triplica em 1 ano, quadruplica aos 2 anos.</li>
+          <li><strong>Ganho Estatural:</strong> <strong>1º Semestre = +15 cm</strong>; <strong>2º Semestre = +10 cm</strong> (Total no 1º ano = <strong>+25 cm</strong>); 2º Ano = +10 a 12 cm; Pré-escolar/Escolar = 5 a 7 cm/ano (duplica o comprimento de nascimento aos 4 anos = 100 cm).</li>
+          <li><strong>Perímetro Cefálico e Fontanelas:</strong> Cresce <strong>2 cm/mês no 1º Tri</strong> (+6 cm), <strong>1 cm/mês no 2º Tri</strong> (+3 cm) e <strong>0,5 cm/mês no 2º Semestre</strong> (+3 cm), somando <strong>+12 cm no 1º ano</strong>. Fontanela posterior (lambdoide) fecha até <strong>2 meses</strong>; fontanela anterior (bregmática) fecha entre <strong>9 e 18 meses</strong>.</li>
+          <li><strong>Pontos de Corte OMS (IMC/Idade e P/E):</strong> Abaixo de 5 anos: +1 a +2 = <strong>Risco de Sobrepeso</strong>; +2 a +3 = <strong>Sobrepeso</strong>; &gt; +3 = <strong>Obesidade</strong>. De 5 a 19 anos: +1 a +2 = <strong>Sobrepeso</strong>; +2 a +3 = <strong>Obesidade</strong>; &gt; +3 = <strong>Obesidade Grave</strong>.</li>
+          <li><strong>Baixa Estatura Familiar vs ACCP:</strong> Ambas têm <strong>velocidade de crescimento normal (≥ 5 cm/ano)</strong> após os 2–3 anos. Na BE Familiar: pais baixos, <strong>IO = IC</strong>, puberdade normal, estatura final baixa (porém dentro do alvo genético). No ACCP: história familiar de puberdade tardia, <strong>IO atrasada (IO = IE &lt; IC)</strong>, puberdade atrasada e <strong>estatura final adulta normal</strong>.</li>
+          <li><strong>Tanner e Estirão Puberal:</strong> Menina (8–13 anos): 1º sinal = <strong>Telarca (M2)</strong> → Pico do estirão em <strong>M3 (8–9 cm/ano)</strong> → Menarca em <strong>M4</strong> (2–2,5 anos após M2, crescendo apenas mais 4–7 cm após a menarca). Menino (9–14 anos): 1º sinal = <strong>Volume testicular ≥ 4 mL (G2)</strong> → Pico do estirão em <strong>G4 (9–10 cm/ano)</strong>.</li>
+          <li><strong>Desaparecimento dos Reflexos Primitivos:</strong> Marcha reflexa (1–2m); Busca, Sucção reflexa, Preensão palmar e RTCA/Esgrimista (<strong>3–4m</strong>); Moro (<strong>4–6m</strong>); Preensão plantar (<strong>9–15m</strong>); Cutâneo-plantar extensor/Babinski (fisiológico até <strong>12–18m</strong>).</li>
+        </ul>
+
+        <h3>Questões Autoras Comentadas no Padrão de Residência Médica</h3>
+
+        <h4>Questão 1 — Antropometria no Primeiro Ano de Vida (Padrão USP / ENARE)</h4>
+        <p>Um recém-nascido a termo, adequado para a idade gestacional, nasceu de parto normal pesando 3.100 g, medindo 49 cm de comprimento e 34 cm de perímetro cefálico, permanecendo em aleitamento materno exclusivo. Caso sua evolução antropométrica ocorra rigorosamente dentro dos parâmetros fisiológicos médios esperados, quais deverão ser, respectivamente, os valores aproximados de seu peso, comprimento e perímetro cefálico na consulta de puericultura de <strong>6 meses de idade</strong>?</p>
+        <ol>
+          <li>Peso ~5.200 g; Comprimento ~59 cm; Perímetro Cefálico ~40 cm.</li>
+          <li>Peso ~6.900 g; Comprimento ~64 cm; Perímetro Cefálico ~43 cm.</li>
+          <li>Peso ~8.500 g; Comprimento ~69 cm; Perímetro Cefálico ~46 cm.</li>
+          <li>Peso ~6.900 g; Comprimento ~61 cm; Perímetro Cefálico ~46 cm.</li>
+          <li>Peso ~9.300 g; Comprimento ~74 cm; Perímetro Cefálico ~43 cm.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 2 (B).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> Vamos aplicar as regras clássicas do 1º semestre: (1) <em>Peso:</em> No 1º trimestre a criança ganha ~700 g/mês (+2.100 g) e no 2º trimestre ganha ~600 g/mês (+1.800 g), somando ~3.900 g no 1º semestre (descontando os primeiros 10 dias de recuperação da perda fisiológica, o ganho líquido é de ~3.700 a 3.900 g). Somando ao peso de nascimento de 3.100 g: $3.100 + 3.800 = \\mathbf{6.900\\text{ g}}$ (lembrando que ela duplicou o peso aos 4–5 meses, quando atingiu 6.200 g). (2) <em>Comprimento:</em> No 1º semestre o lactente cresce <strong>15 cm</strong>; logo, $49\\text{ cm} + 15\\text{ cm} = \\mathbf{64\\text{ cm}}$. (3) <em>Perímetro Cefálico:</em> Cresce 2 cm/mês no 1º trimestre (+6 cm) e 1 cm/mês no 2º trimestre (+3 cm), totalizando <strong>+9 cm no 1º semestre</strong>; logo, $34\\text{ cm} + 9\\text{ cm} = \\mathbf{43\\text{ cm}}$. A alternativa A traz valores de ~3 meses; a alternativa C traz PC de 12 meses (46 cm); a alternativa E traz peso e comprimento de 12 meses (triplicação do peso = 9.300 g e ganho de 25 cm = 74 cm).</p>
+
+        <h4>Questão 2 — Curvas da OMS e Diagnóstico Nutricional (Padrão UNIFESP / Revalida)</h4>
+        <p>Durante atendimento na Atenção Primária, você avalia duas crianças e plota seus dados nas curvas da OMS da Caderneta da Criança:
+        <br>• <strong>Criança 1:</strong> Menina de 3 anos e 2 meses, com Estatura/Idade em escore-z -0,5, Peso/Idade em escore-z +1,5 e IMC/Idade em <strong>escore-z +1,7</strong>.
+        <br>• <strong>Criança 2:</strong> Menino de 8 anos e 6 meses, com Estatura/Idade em escore-z -2,3, Peso/Idade em escore-z -0,8 e IMC/Idade em <strong>escore-z +1,7</strong>.
+        <br>De acordo com os critérios oficiais do Ministério da Saúde (SISVAN) e da OMS, as classificações nutricionais corretas para a Criança 1 e para a Criança 2 são, respectivamente:</p>
+        <ol>
+          <li>Criança 1: Sobrepeso e estatura adequada; Criança 2: Sobrepeso e baixa estatura.</li>
+          <li>Criança 1: Risco de sobrepeso e estatura adequada; Criança 2: Sobrepeso e baixa estatura.</li>
+          <li>Criança 1: Eutrofia e estatura adequada; Criança 2: Risco de sobrepeso e muito baixa estatura.</li>
+          <li>Criança 1: Risco de sobrepeso e estatura adequada; Criança 2: Obesidade e baixa estatura.</li>
+          <li>Criança 1: Sobrepeso e peso elevado para a idade; Criança 2: Risco de sobrepeso e baixa estatura.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 2 (B).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> Questão clássica sobre a transição dos pontos de corte aos 5 anos de idade! Na <strong>Criança 1 (3 anos e 2 meses — menor de 5 anos)</strong>, o escore-z de IMC/Idade de +1,7 encontra-se entre <strong>+1 e +2</strong>, faixa que em menores de 5 anos define <strong>Risco de Sobrepeso</strong> (com estatura adequada, pois -0,5 está entre -2 e +2). Já na <strong>Criança 2 (8 anos e 6 meses — faixa de 5 a 19 anos)</strong>, o mesmo escore-z de IMC/Idade de +1,7 (entre +1 e +2) já define <strong>Sobrepeso</strong>! Além disso, a Criança 2 possui Estatura/Idade em escore-z -2,3 (entre -2 e -3), o que classifica formalmente <strong>Baixa Estatura para a idade</strong> (muito baixa estatura seria &lt; -3).</p>
+
+        <h4>Questão 3 — Diagnóstico Diferencial de Baixa Estatura (Padrão SUS-SP / UNICAMP)</h4>
+        <p>Menino de 11 anos e 6 meses é levado ao ambulatório por ser o mais baixo da sala de aula. Nasceu a termo com peso de 3.300 g e comprimento de 50 cm. Nos últimos 2 anos, cresceu 11 cm no total (velocidade de crescimento de 5,5 cm/ano), mantendo-se paralelo logo abaixo do percentil 3 (escore-z -2,1). Não apresenta queixas gastrointestinais ou respiratórias. O pai mede 161 cm e teve puberdade aos 12 anos; a mãe mede 150 cm e teve menarca aos 11,5 anos. Ao exame físico: Estatura = 132 cm (equivalente ao percentil 50 de um menino de 9 anos — Idade Estatural = 9 anos), Peso = 29 kg, relação SS/SI = 1,0, estágio puberal G1P1. A radiografia de mão e punho esquerdos mostra <strong>Idade Óssea de 11 anos e 4 meses</strong>. Qual é o diagnóstico mais provável e o prognóstico estatural?</p>
+        <ol>
+          <li>Atraso Constitucional do Crescimento e da Puberdade (ACCP); atingirá estatura final adulta normal em torno de 175 cm.</li>
+          <li>Deficiência isolada de hormônio do crescimento (DGH); necessita de teste de estímulo com clonidina imediato.</li>
+          <li>Baixa Estatura Familiar (Genética); entrará em puberdade na época habitual e atingirá estatura final baixa para a população, porém compatível com seu alvo genético (~162 cm).</li>
+          <li>Hipotireoidismo adquirido subclínico; a idade óssea compatível com a cronológica confirma falência tireoidiana.</li>
+          <li>Discondrosteose de Léri-Weill por deficiência do gene SHOX; a relação SS/SI de 1,0 confirma displasia mesomélica.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 3 (C).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> Observe os dados-chave: (1) Velocidade de crescimento <strong>normal</strong> (5,5 cm/ano), o que afasta de imediato causas patológicas/endocrinopatias como DGH ou hipotireoidismo (além disso, DGH e hipotireoidismo cursam com idade óssea acentuadamente atrasada!). (2) Estatura-alvo familiar calculada: $\\frac{161 + 150 + 13}{2} = \\frac{324}{2} = \\mathbf{162\\text{ cm}}$ (canal familiar de 153,5 cm a 170,5 cm), demonstrando pais baixos que tiveram puberdade em idade habitual. (3) <strong>Idade Óssea = Idade Cronológica (~11,5 anos) &gt; Idade Estatural (9 anos)</strong>! Isso diferencia com 100% de certeza a <strong>Baixa Estatura Familiar</strong> do ACCP (no ACCP, a idade óssea seria atrasada e igual à idade estatural de 9 anos). Portanto, trata-se de Baixa Estatura Familiar: ele iniciará a puberdade na época normal e terminará com estatura baixa para a população geral, mas perfeitamente dentro do seu alvo genético (~162 cm).</p>
+
+        <h4>Questão 4 — Causas Patológicas de Baixa Estatura e Síndrome de Turner (Padrão IAMSPE / Santa Casa-SP)</h4>
+        <p>Menina de 10 anos é encaminhada por desaceleração do crescimento nos últimos 3 anos (cruzou do percentil 25 para abaixo do percentil 3, com velocidade de crescimento atual de 3,2 cm/ano). Pai mede 174 cm e mãe mede 162 cm. Ao exame físico, é eutrófica, não apresenta pescoço alado nem linfedema residual, tem ausculta cardíaca normal e encontra-se em estágio puberal M1P1. Os exames iniciais mostram: hemograma normal, ferritina 38 ng/mL, creatinina 0,5 mg/dL, gasometria venosa normal, anti-transglutaminase tecidual IgA negativo (com IgA sérica total normal), TSH 2,1 mUI/L e T4 livre 1,2 ng/dL. Qual deve ser a conduta propedêutica obrigatória neste momento?</p>
+        <ol>
+          <li>Diagnosticar Atraso Constitucional do Crescimento e tranquilizar a família, pois o exame físico não tem estigmas sindrômicos.</li>
+          <li>Solicitar cariótipo de sangue periférico com banda G, dosagem de IGF-1/IGFBP-3 e radiografia de mãos e punhos para idade óssea, pois a Síndrome de Turner deve ser descartada em toda menina com baixa estatura inexplicada mesmo sem estigmas clássicos.</li>
+          <li>Iniciar reposição empírica de levotiroxina e carbonato de cálcio.</li>
+          <li>Solicitar colonoscopia com biópsia ileal como primeiro exame antes de qualquer avaliação genética ou hormonal.</li>
+          <li>Aguardar a menarca espontânea aos 13 anos para só então investigar o eixo somatotrófico.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 2 (B).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> A velocidade de crescimento de 3,2 cm/ano (normal ≥ 5 cm/ano) com queda de canais de percentil exclui variantes normais do crescimento (como ACCP ou baixa estatura familiar). Como as causas sistêmicas/celíaca/renais e o hipotireoidismo já foram afastados nos exames iniciais, é <strong>obrigatório solicitar o Cariótipo com banda G</strong> para descartar <strong>Síndrome de Turner</strong> (que se manifesta sem os estigmas clássicos de pescoço alado em até metade das pacientes, especialmente nos mosaicismos!), além de avaliar a idade óssea e o eixo GH/IGF-1 (IGF-1 e IGFBP-3).</p>
+
+        <h4>Questão 5 — Fisiologia da Puberdade e Estadiamento de Tanner (Padrão ENARE / UERJ)</h4>
+        <p>A respeito da fisiologia do desenvolvimento puberal humano e dos critérios de estadiamento de Marshall e Tanner, assinale a afirmativa <strong>CORRETA</strong>:</p>
+        <ol>
+          <li>No sexo masculino, o primeiro sinal clínico de ativação do eixo hipotálamo-hipófise-gônadas (gonadarca) é o surgimento de pelos pubianos na base do pênis (P2), seguido pelo pico do estirão puberal no estágio G2.</li>
+          <li>No sexo feminino, a menarca ocorre habitualmente entre os estágios M1 e M2 de Tanner e marca o início da aceleração máxima da velocidade de crescimento estatural.</li>
+          <li>O pico da velocidade de crescimento no estirão puberal ocorre no estágio M3 nas meninas (8 a 9 cm/ano) e no estágio G4 nos meninos (9 a 10 cm/ano), sendo o estradiol o principal hormônio responsável pelo fechamento definitivo da cartilagem epifisária em ambos os sexos.</li>
+          <li>O estágio M4 de Tanner caracteriza-se pela mama de contorno adulto único, com regressão da projeção da aréola, enquanto o estágio M3 caracteriza-se pelo duplo contorno (segundo montículo areolar).</li>
+          <li>O aparecimento de telarca aos 9 anos em uma menina configura puberdade precoce central e exige bloqueio imediato com análogo de GnRH.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 3 (C).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> Vamos analisar cada alternativa: (A) Incorreta: o 1º sinal da puberdade masculina é o <strong>aumento do volume testicular ≥ 4 mL (G2)</strong>, e o pico do estirão masculino ocorre tardiamente em <strong>G4</strong>. (B) Incorreta: a menarca ocorre habitualmente em <strong>M4</strong> (2 a 2,5 anos após M2), quando o pico do estirão (que ocorreu em M3) <strong>já passou</strong>! (C) <strong>Correta:</strong> Síntese perfeita da fisiologia puberal: pico em M3 nas meninas e G4 nos meninos, e fusão epifisária mediada pelo estradiol em ambos os sexos. (D) Incorreta: inverteu os conceitos — o duplo contorno (segundo montículo da aréola e papila) é a definição clássica de <strong>M4</strong>, enquanto M5 tem contorno adulto único e M3 tem aumento sem separação de contornos. (E) Incorreta: na menina, a janela normal de início puberal é de <strong>8 a 13 anos</strong>; logo, telarca aos 9 anos é perfeitamente fisiológica!</p>
+
+        <h4>Questão 6 — Puberdade Precoce Central vs Periférica (Padrão USP-RP / UNICAMP)</h4>
+        <p>Menino de 5 anos e 8 meses é trazido à consulta pelo aparecimento de pelos pubianos grossos, acne facial, odor axilar adulto e crescimento acelerado do pênis há 6 meses. Na curva da OMS, sua estatura saltou do percentil 25 para acima do percentil 97 no último ano, e sua idade óssea é de 10 anos. Ao exame físico, apresenta pênis alongado e espessado (G3/G4), pelos pubianos encaracolados sobre a sínfise púbica (P3), porém a palpação escrotal revela <strong>ambos os testículos tópicos com volume de 2 mL no orquidômetro de Prader</strong>. O LH basal e após estímulo com GnRH encontram-se suprimidos (pré-puberais), com 17-hidroxiprogesterona (17-OHP) e androstenediona acentuadamente elevadas. Qual é o diagnóstico correto?</p>
+        <ol>
+          <li>Puberdade Precoce Central idiopática dependente de GnRH.</li>
+          <li>Puberdade Precoce Central secundária a hamartoma hipotalâmico do túber cinéreo.</li>
+          <li>Puberdade Precoce Periférica (GnRH-independente) de origem adrenal — Hiperplasia Adrenal Congênita (forma clássica não perdedora de sal / virilizante simples por deficiência da 21-hidroxilase).</li>
+          <li>Síndrome de Klinefelter (47,XXY) com adrenarca fisiológica.</li>
+          <li>Atraso Constitucional com ginecomastia puberal.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 3 (C).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> A dissociação semiológica entre <strong>virilização peniana/pubarca exuberante (P3, aumento do pênis, avanço de IO) e testículos de volume infantil/pré-puberal (2 mL, ou seja, &lt; 4 mL)</strong> comprova que a fonte de androgênios <strong>NÃO vem da ativação hipofisária de FSH/LH sobre os testículos</strong> (caso fosse Puberdade Precoce Central por hamartoma hipotalâmico, ambos os testículos estariam aumentados ≥ 4 mL!). Trata-se, portanto, de <strong>Puberdade Precoce Periférica (GnRH-independente)</strong>, e a elevação acentuada da <strong>17-hidroxiprogesterona (17-OHP)</strong> sela o diagnóstico de <strong>Hiperplasia Adrenal Congênita por deficiência da 21-hidroxilase</strong> (forma virilizante simples). O tratamento baseia-se na reposição de glicocorticoide (hidrocortisona) para suprimir o ACTH e frear a produção adrenal excessiva de androgênios.</p>
+
+        <h4>Questão 7 — Reflexos Primitivos Neonatais e Tocotraumatismo (Padrão UNIFESP / PSU-MG)</h4>
+        <p>Durante o exame físico de alojamento conjunto de um recém-nascido a termo de 4.150 g, nascido de parto vaginal com distocia de ombros, o pediatra realiza a manobra do Reflexo de Moro e observa que o membro superior esquerdo realiza normalmente a abdução e extensão seguidas de adução, enquanto o <strong>membro superior direito permanece imóvel ao longo do tronco, em adução do ombro, extensão do cotovelo e pronação do antebraço ("postura em gorjeta de garçom")</strong>. Ao testar a preensão palmar na mão direita, o reflexo está <strong>normalmente presente e vigoroso</strong>. Qual é a principal hipótese diagnóstica e quais raízes nervosas estão acometidas?</p>
+        <ol>
+          <li>Paralisia braquial obstétrica inferior de Klumpke (raízes C8 e T1).</li>
+          <li>Paralisia braquial obstétrica superior de Erb-Duchenne (raízes C5 e C6, eventualmente C7), devendo-se também radiografar para excluir fratura de clavícula ou úmero associada.</li>
+          <li>Encefalopatia hipóxico-isquêmica grave com tetraparesia espástica neonatal.</li>
+          <li>Persistência patológica do reflexo tônico-cervical assimétrico de Magnus-De Kleijn.</li>
+          <li>Lesão medular torácica baixa com abolição do reflexo de Galant.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 2 (B).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> A macrossomia fetal com distocia de ombros é o fator de risco clássico para tocotraumatismo do plexo braquial e fratura de clavícula. Na <strong>Paralisia de Erb-Duchenne (lesão do tronco superior do plexo braquial — raízes C5 e C6)</strong>, há paralisia dos músculos abdutores e rotadores externos do ombro (deltoide, supra e infraespinhal), flexores do cotovelo (bíceps braquial) e supinadores, fazendo o braço cair em adução, rotação interna, extensão do cotovelo e pronação ("gorjeta de garçom"). Como as raízes inferiores (C8–T1, que inervam a musculatura intrínseca da mão e flexores dos dedos) estão íntegras, o <strong>reflexo de Moro é assimétrico (abolido à direita), mas o reflexo de preensão palmar está PRESERVADO</strong>! Já na paralisia de Klumpke (C8–T1), a preensão palmar está abolida (mão em garra) e o Moro proximal está preservado.</p>
+
+        <h4>Questão 8 — Marcos do DNPM no Primeiro Ano de Vida (Padrão USP / ENARE)</h4>
+        <p>Um lactente saudável, nascido a termo, é levado à consulta de rotina de puericultura. Ao exame do desenvolvimento neuropsicomotor, o pediatra observa que a criança: <strong>senta-se sozinha sem qualquer apoio com o tronco firme</strong>, engatinha pelo consultório, pega uma bolinha de papel utilizando a <strong>pinça inferior (entre a face lateral do indicador e o polegar)</strong>, procura ativamente um brinquedo que o médico cobriu com um pano, <strong>chora ao ver o rosto de um estudante desconhecido (estranhamento)</strong>, bate palmas, acena "tchau" e duplica sílabas ("mama", "papa") de modo inespecífico, além de olhar prontamente quando chamado pelo nome. Esses marcos correspondem classicamente a qual idade cronológica?</p>
+        <ol>
+          <li>4 meses de idade.</li>
+          <li>6 meses de idade.</li>
+          <li>9 meses de idade.</li>
+          <li>12 meses de idade.</li>
+          <li>18 meses de idade.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 3 (C).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> Todos os marcos descritos formam a fotografia exata dos <strong>9 meses de idade</strong>! Vamos revisar a progressão para nunca confundir: Aos <strong>4 meses</strong>: sustento cefálico completo, rola, junta mãos na linha média e ri alto. Aos <strong>6 meses</strong>: senta com apoio (em tripé), transfere objetos de uma mão para outra e faz lalação polissilábica. Aos <strong>9 meses</strong>: senta sem apoio firme, engatinha, faz pinça inferior (radial), adquire a permanência do objeto (procura objeto escondido), estranha desconhecidos, bate palmas/dá tchau, duplica sílabas e atende pelo próprio nome. Aos <strong>12 meses</strong>: dá os primeiros passos/anda com apoio, faz pinça superior fina (polpa do polegar com polpa do indicador), entrega objeto solicitado e fala 1–3 palavras com significado.</p>
+
+        <h4>Questão 9 — Evolução Gráfica e Marcos Pré-Escolares de 1 a 5 Anos (Padrão UNICAMP / AMRIGS)</h4>
+        <p>Na avaliação do desenvolvimento motor fino-adaptativo, motor grosso e de linguagem entre 1 e 5 anos de idade, correlacione os marcos abaixo e assinale a alternativa <strong>CORRETA</strong>:</p>
+        <ol>
+          <li>Uma criança de 24 meses (2 anos) já deve ser capaz de copiar um quadrado, pular em um pé só e falar com 100% de inteligibilidade para estranhos.</li>
+          <li>Aos 36 meses (3 anos), a criança é capaz de subir escadas alternando os pés, pedalar triciclo, construir torre de 9 a 10 cubos, copiar um círculo (○) e dizer seu nome, idade e sexo.</li>
+          <li>A cópia do triângulo (△) é um marco adquirido habitualmente aos 18 meses de idade, juntamente com a pinça inferior.</li>
+          <li>O controle esfincteriano noturno completo é exigido aos 15 meses de idade, configurando enurese patológica qualquer perda urinária noturna aos 2 anos.</li>
+          <li>A dominância manual (ser destro ou canhoto) bem definida aos 6 meses de idade é um sinal de superdotação motora fina.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 2 (B).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> A alternativa B descreve com exatidão cirúrgica os marcos dos <strong>3 anos (36 meses)</strong>: sobe escadas alternando os pés, pedala triciclo, copia o <strong>círculo</strong>, faz torre de 9–10 cubos, fala frases completas (~75% inteligível para estranhos) e sabe seu nome, idade e sexo. Corrigindo as demais: (A) Copiar quadrado, pular em um pé só e ter 100% da fala inteligível são marcos de <strong>4 anos (48 meses)</strong> (aos 2 anos ela corre, sobe escadas sem alternar os pés, faz torre de 6–7 cubos, imita traço vertical, junta 2 palavras e tem 50% de inteligibilidade). (C) Copiar o triângulo é marco de <strong>5 anos (60 meses)</strong>. (D) A enurese noturna só é considerada patológica a partir dos <strong>5 anos de idade</strong>. (E) Dominância manual antes dos 18–24 meses (e ainda mais aos 6 meses!) é um <strong>sinal de alerta vermelho para hemiparesia espástica (Paralisia Cerebral)</strong> contralateral!</p>
+
+        <h4>Questão 10 — Prematuridade, Sinais Precoces de TEA e M-CHAT-R/F (Padrão USP / ENARE)</h4>
+        <p>Menino de 22 meses de idade comparece à consulta de puericultura. A mãe refere que ele é "muito independente": quando quer pegar um biscoito no armário, puxa a mão da mãe e a coloca sobre a maçaneta sem olhar nos olhos dela; não olha quando chamado pelo nome; nunca apontou com o dedo indicador para mostrar um avião ou cachorro na rua; não brinca de faz-de-conta e fica irritado quando mudam o caminho de casa, acalmando-se apenas ao enfileirar tampinhas de garrafa. O pediatra aplica a escala M-CHAT-R e obtém pontuação igual a <strong>11 pontos</strong>. Qual é a conduta correta diante desse quadro?</p>
+        <ol>
+          <li>Tranquilizar a família informando que meninos falam mais tarde que meninas e reagendar reavaliação aos 36 meses.</li>
+          <li>Como a pontuação foi de 11 pontos (Alto Risco, entre 8 e 20 pontos), prescindir da entrevista de seguimento, solicitar avaliação audiológica e encaminhar imediatamente para avaliação diagnóstica especializada e início de intervenção precoce multiprofissional (fonoaudiologia, terapia ocupacional e terapia comportamental), sem aguardar o fechamento definitivo do laudo.</li>
+          <li>Solicitar Ressonância Magnética de crânio sob sedação e dosagem de serotonina sérica para confirmar laboratorialmente o diagnóstico de Transtorno do Espectro Autista antes de iniciar qualquer fonoterapia.</li>
+          <li>Iniciar imediatamente risperidona em dose plena como tratamento curativo dos déficits de atenção compartilhada em menores de 2 anos.</li>
+          <li>Aplicar obrigatoriamente a entrevista de seguimento (<em>Follow-Up</em>), pois apenas pontuações acima de 18 pontos configuram alto risco no M-CHAT-R/F.</li>
+        </ol>
+        <p><strong>Gabarito: Alternativa 2 (B).</strong></p>
+        <p><strong>Comentário Detalhado:</strong> A criança apresenta os sinais clínicos clássicos do <strong>Transtorno do Espectro Autista (TEA)</strong> no segundo ano de vida: déficit de contato visual, não atender pelo nome, ausência de atenção compartilhada e do <strong>apontar protodeclarativo</strong>, uso instrumental do corpo do adulto (pegar a mão da mãe como ferramenta), ausência de jogo simbólico (faz-de-conta), rigidez comportamental e enfileiramento repetitivo de objetos. No <strong>M-CHAT-R/F (aplicado entre 16 e 30 meses)</strong>: 0 a 2 pontos = baixo risco; 3 a 7 pontos = risco moderado (exige entrevista de seguimento <em>Follow-Up</em>, sendo positiva se ≥ 2); e <strong>8 a 20 pontos = ALTO RISCO</strong>! Na faixa de alto risco (como os 11 pontos do caso), <strong>dispensa-se a entrevista de seguimento</strong> e encaminha-se imediatamente para avaliação diagnóstica, audiometria/BERA e, acima de tudo, <strong>intervenção precoce multiprofissional imediata</strong> (não se espera fechar laudo nem exame de imagem para iniciar a estimulação na janela de neuroplasticidade!). Lembre-se ainda de que o diagnóstico de TEA é clínico e não existem exames laboratoriais ou de imagem confirmatórios para o autismo idiopático.</p>
+      `
+    }
+  ],
+  references: [
+    {
+      label: 'Brasil. Ministério da Saúde. Caderneta da Criança: Passaporte da Cidadania (Menino e Menina). 7ª ed. Brasília: Ministério da Saúde, 2024.',
+      url: 'https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-da-crianca'
+    },
+    {
+      label: 'Brasil. Ministério da Saúde. Orientações para a coleta e análise de dados antropométricos em serviços de saúde: Norma Técnica do Sistema de Vigilância Alimentar e Nutricional — SISVAN. Brasília: Ministério da Saúde, 2011.',
+      url: 'https://bvsms.saude.gov.br/bvs/publicacoes/orientacoes_coleta_analise_dados_antropometricos.pdf'
+    },
+    {
+      label: 'World Health Organization (WHO). WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length, weight-for-height and body mass index-for-age: Methods and development. Geneva: WHO, 2006.',
+      url: 'https://www.who.int/tools/child-growth-standards'
+    },
+    {
+      label: 'Sociedade Brasileira de Pediatria (SBP). Tratado de Pediatria. 5ª ed. Barueri: Manole, 2022.',
+      url: 'https://www.sbp.com.br/'
+    },
+    {
+      label: 'Sociedade Brasileira de Pediatria (SBP). Departamento Científico de Pediatria do Desenvolvimento e Comportamento. Manual de Orientação: Transtorno do Espectro do Autismo. Rio de Janeiro: SBP, 2019.',
+      url: 'https://www.sbp.com.br/fileadmin/user_upload/21775c-MO_-_Transtorno_do_Espectro_do_Autismo.pdf'
+    },
+    {
+      label: 'Kliegman RM, St. Geme JW, Blum NJ, et al. Nelson Textbook of Pediatrics. 22nd ed. Philadelphia: Elsevier, 2024.',
+      url: 'https://www.elsevier.com/'
+    }
+  ]
+};
+
+saveBook(book);
