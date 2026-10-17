@@ -1,0 +1,106 @@
+{
+  "created_date": "2026-10-16",
+  "description": "Backup de referências previamente repetidas",
+  "records": [
+    {
+      "id": 164,
+      "title": "Calendário vacinal",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+          "label": "Referência principal"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+          "label": "Fonte brasileira atual — revisão do protocolo"
+        }
+      ],
+      "updated_at": "2026-10-17 02:23:41.160392+00"
+    },
+    {
+      "id": 246,
+      "title": "Dermatite atópica",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.aad.org/member/clinical-quality/guidelines/atopic-dermatitis",
+          "label": "American Academy of Dermatology — Atopic dermatitis clinical guidelines"
+        },
+        {
+          "url": "https://www.aad.org/member/clinical-quality/guidelines/atopic-dermatitis",
+          "label": "AAD — Atopic dermatitis update 2025"
+        }
+      ],
+      "updated_at": "2026-10-17 02:23:41.160392+00"
+    },
+    {
+      "id": 250,
+      "title": "Acne",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.aad.org/member/clinical-quality/guidelines/acne",
+          "label": "American Academy of Dermatology — Acne Clinical Guideline 2024"
+        },
+        {
+          "url": "https://www.aad.org/member/clinical-quality/guidelines/acne",
+          "label": "AAD — Acne 2024"
+        }
+      ],
+      "updated_at": "2026-10-17 02:23:41.160392+00"
+    },
+    {
+      "id": 255,
+      "title": "Herpes-zóster",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+          "label": "CDC — Clinical Overview of Shingles"
+        },
+        {
+          "url": "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+          "label": "CDC — Clinical Overview of Shingles"
+        }
+      ],
+      "updated_at": "2026-10-17 02:23:41.160392+00"
+    },
+    {
+      "id": 257,
+      "title": "Escabiose",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/scabies/hcp/clinical-care/index.html",
+          "label": "CDC — Clinical Care of Scabies"
+        },
+        {
+          "url": "https://www.cdc.gov/scabies/hcp/clinical-care/index.html",
+          "label": "CDC — Scabies clinical care"
+        }
+      ],
+      "updated_at": "2026-10-17 02:23:41.160392+00"
+    },
+    {
+      "id": 294,
+      "title": "Endocardite infecciosa",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/endocarditis/",
+          "label": "ESC — 2023 Guidelines for the management of endocarditis"
+        },
+        {
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/pocket-guidelines/infective-endocarditis/",
+          "label": "ESC — Pocket Guidelines on Infective Endocarditis 2023"
+        },
+        {
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/endocarditis/",
+          "label": "ESC — Diretrizes de endocardite infecciosa (2023, errata 2025)"
+        }
+      ],
+      "updated_at": "2026-10-15 03:30:27.338195+00"
+    }
+  ]
+}
