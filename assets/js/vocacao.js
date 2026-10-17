@@ -86,7 +86,6 @@
 
   const questionDimensionOrder = new Map(["R", "I", "S", "C", "A", "E"].map((key, index) => [key, index]));
   items.sort((a, b) => (a.id % 6) - (b.id % 6) || questionDimensionOrder.get(a.dimension) - questionDimensionOrder.get(b.dimension));
-  const labels = ["Não me interessa", "Pouco interesse", "Ainda não sei", "Tenho interesse", "Muito interesse"];
   const answers = Array(items.length).fill(null);
   let current = 0;
 
@@ -106,23 +105,20 @@
     $("voc-back").disabled = current === 0;
     $("voc-next").textContent = current === items.length - 1 ? "Ver meu mapa →" : "Próxima →";
     $("voc-error").textContent = "";
-    optionBox.innerHTML = "";
-    labels.forEach((label, index) => {
-      const value = index + 1;
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "voc-option";
-      button.setAttribute("aria-pressed", String(answers[current] === value));
-      button.setAttribute("aria-label", `${value}: ${label}`);
-      button.innerHTML = `<strong>${value}</strong><span>${label}</span>`;
-      button.addEventListener("click", () => {
-        answers[current] = value;
-        [...optionBox.children].forEach((node, i) => node.setAttribute("aria-pressed", String(i + 1 === value)));
-        $("voc-error").textContent = "";
-      });
-      optionBox.append(button);
+    optionBox.querySelectorAll(".voc-option").forEach((button) => {
+      button.setAttribute("aria-pressed", String(Number(button.dataset.value) === answers[current]));
     });
   }
+
+  optionBox.querySelectorAll(".voc-option").forEach((button) => {
+    button.addEventListener("click", () => {
+      answers[current] = Number(button.dataset.value);
+      optionBox.querySelectorAll(".voc-option").forEach((node) => {
+        node.setAttribute("aria-pressed", String(node === button));
+      });
+      $("voc-error").textContent = "";
+    });
+  });
 
   function calculate() {
     const sums = Object.fromEntries(Object.keys(dimensions).map((key) => [key, { sum: 0, count: 0 }]));
@@ -193,7 +189,9 @@
     if (quiz.hidden || !/^[1-5]$/.test(event.key)) return;
     const value = Number(event.key);
     answers[current] = value;
-    [...optionBox.children].forEach((node, i) => node.setAttribute("aria-pressed", String(i + 1 === value)));
+    optionBox.querySelectorAll(".voc-option").forEach((node) => {
+      node.setAttribute("aria-pressed", String(Number(node.dataset.value) === value));
+    });
     $("voc-error").textContent = "";
   });
 })();

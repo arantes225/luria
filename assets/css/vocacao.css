@@ -31,3 +31,11 @@ body[data-page="vocacao"] [hidden]{display:none!important}
 :root[data-theme="pink"] .voc-eyebrow,:root[data-theme="pink"] .voc-kicker{color:#95476e}
 :root[data-theme="pink"] .voc-progress span{background:linear-gradient(90deg,#c6528b,#9975c5)}
 .voc-all-areas li span{color:var(--text-secondary,#64758a);font-size:.84rem}
+/* Keep the answer scale visible even when the global button reset is active. */
+body[data-page="vocacao"] #voc-quiz #voc-options{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important;min-height:74px;margin:8px 0 16px;visibility:visible!important;opacity:1!important}
+body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option{display:flex!important;flex-direction:column;align-items:center;justify-content:center;width:100%;min-width:0;min-height:72px!important;padding:10px 6px!important;border:1px solid #d4deeb!important;border-radius:13px!important;background:#fff!important;color:#233d5b!important;visibility:visible!important;opacity:1!important;box-shadow:0 2px 7px rgba(22,47,79,.07)}
+body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option strong{display:block!important;color:#173d70!important;font-size:1.2rem!important;line-height:1.2}
+body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option span{display:block!important;color:#53677f!important;font-size:.78rem!important;line-height:1.25}
+body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option[aria-pressed="true"]{border-color:#5278bc!important;background:#edf4ff!important;box-shadow:inset 0 0 0 1px #5278bc,0 3px 10px rgba(40,78,132,.12)}
+@media(max-width:760px){body[data-page="vocacao"] #voc-quiz #voc-options{gap:6px!important}body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option{min-height:67px!important;padding:8px 3px!important}body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option span{font-size:.68rem!important}}
+@media(max-width:420px){body[data-page="vocacao"] #voc-quiz #voc-options{gap:4px!important}body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option{min-height:65px!important;padding:7px 2px!important}body[data-page="vocacao"] #voc-quiz #voc-options>button.voc-option span{font-size:.61rem!important}}
