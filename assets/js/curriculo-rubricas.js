@@ -45,8 +45,9 @@
   const psu=window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-MG');
   Object.assign(psu,{
     id:'psu-mg-2027-direto-v20260924', title:'PSU-MG / AREMG · 2027 · Entrada direta',edition:'2027',
-    status:'reviewed',max:13,checkedAt:'2026-10-16',
+    status:'reviewed',max:13,checkedAt:'2026-10-17',
     source:'https://www.galaxcms.com.br/up_crud_comum/601/Anexo1-AvaliacaoCurricularPadronizadaEntradaDiretaPSUMG2027-20260924112431.pdf',
+    updates:'https://www.galaxcms.com.br/up_crud_comum/601/Retificacao2aosEditaisdoPSUMG2027-20261006110849.pdf',
     listing:'https://www.aremg.org.br/detalhes-do-processo/anexos-aos-editais-psu-mg-2027/2348',
     scope:'Entrada direta. Anexo 1 de 2027. Confira períodos, documentação, autoria e impedimentos no anexo; atividades concomitantes podem ser recusadas.',
     criteria:[
@@ -58,7 +59,7 @@
       criterion('mg-eventos','Organização e palestra',.5,13,'Eventos elegíveis distintos, fora de ligas.',[part('mg-organiza','Organizador',.25),part('mg-palestra','Palestrante',.25)]),
       criterion('mg-liga','Liga e representação',1.1,14,'Confira cargos, carga horária e períodos.',[part('mg-liga1','Liga: 2 semestres, ≥50h',.8),part('mg-repr','Representação elegível: ≥1 ano',.3)]),
       criterion('mg-suporte','Suporte avançado à vida',.7,16,'Carteira válida de entidade reconhecida.',[part('mg-s1','Curso elegível: ≥16h',.7)]),
-      {...criterion('mg-cursos','Cursos médicos',.6,17,'Requisitos específicos e entidades emissoras: páginas 16–18.',[part('mg-c1','Dois cursos elegíveis',.6),part('mg-c2','Um curso elegível',.3)]),exclusive:true},
+      {...criterion('mg-cursos','Cursos de temas médicos',.6,17,'Retificação nº 2 (05/10/2026): 0,6 ponto para dois cursos ou 0,3 para um, realizados nos últimos 5 anos, com pelo menos 8 horas cada. Devem ser emitidos formalmente pela AMB, associações médicas estaduais filiadas, sociedades reconhecidas pela AMB, CFM, CRM ou sindicato médico; não valem documentos de instituições de ensino, empresas, hospitais, clínicas ou cooperativas. Os dois cursos devem ser diferentes, de entidades diferentes e ter intervalo mínimo de 30 dias.',[part('mg-c1','Dois cursos elegíveis',.6),part('mg-c2','Um curso elegível',.3)]),exclusive:true},
       criterion('mg-ext','Extensão e comunidade',1,19,'Confira registro, horas e períodos.',[part('mg-x1','Extensão institucional elegível',.7),part('mg-x2','Conjunto de ações comunitárias elegível',.3)]),
       {...criterion('mg-trabalhos','Apresentação científica',.8,22,'Confira autoria, orientador com RQE e publicação.',[part('mg-t1','Apresentação elegível',.5),part('mg-t2','Apresentação com publicação elegível',.8)]),exclusive:true},
       {...criterion('mg-artigos','Artigo publicado',1,24,'Não basta aceite. Conferir autoria, RQE e indexação.',[part('mg-a1','MEDLINE/PubMed, Embase, Scopus ou Web of Science',1),part('mg-a2','SciELO/LILACS, Qualis ≥B2',.5)]),exclusive:true}

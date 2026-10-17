@@ -39,6 +39,9 @@ test('suggestions require reviewed eligibility data and never infer it from a La
 });
 test('PSU-MG preserves the official 13-point scale and exclusive academic bands',()=>{
   const psu=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-MG');
+  assert.match(psu.updates,/Retificacao2aosEditaisdoPSUMG2027-20261006110849\.pdf/);
+  assert.match(psu.criteria.find(row=>row.id==='mg-cursos').note,/últimos 5 anos/);
+  assert.match(psu.criteria.find(row=>row.id==='mg-cursos').note,/não valem documentos de instituições de ensino/);
   const answers={};psu.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=1;}));
   assert.equal(core.score(psu,answers).total,13);
   assert.equal(core.score(psu,{'mg-n1a':1,'mg-n1b':1,'mg-n2a':1}).total,3);
