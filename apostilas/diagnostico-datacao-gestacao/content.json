@@ -1,1 +1,1351 @@
-{"v":2,"s":"diagnostico-datacao-gestacao","t":"Diagnóstico e Datação da Gestação","p":"Diagnóstico e Datação da Gestação","o":[["visao","Diagnóstico e datação da gestação: três perguntas que não se confundem"],["biologia","1. Implantação, hCG e cronologia biológica do diagnóstico"],["testes","2. Confirmação bioquímica: teste urinário, hCG sérico e armadilhas"],["semio","3. Avaliação clínica: quando a confirmação pode esperar e quando é urgência"],["ultrassom","4. Ultrassonografia precoce: localização, estruturas e limites de imagem"],["viabilidade","5. Viabilidade gestacional: o perigo de chamar exame precoce de abortamento"],["pul","6. Gravidez de localização desconhecida (PUL/GUL): raciocínio sequencial"],["data","7. Fundamentos da idade gestacional: DUM, idade pós-concepcional e DPP"],["crl","8. Datação por ultrassonografia: CRL e queda da precisão ao longo da gravidez"],["fiv","9. Reprodução assistida, gemelaridade e situações especiais"],["casos","10. Casos clínicos comentados: da suspeita à datação segura"],["questoes","11. Questões autorais com comentários por alternativa"],["referencias","12. Bibliografia, fronteira curricular e pendências"]],"h":["Apostila LURIA","Diagnóstico e Datação da Gestação","Confirmação · localização · viabilidade · DUM · CRL · DPP",["Área: Ginecologia e Obstetrícia","Matéria: Obstetrícia","Tema: Diagnóstico e datação da gestação"],"apostila-identity"],"q":[["visao",0,[["2","Diagnóstico e datação da gestação: três perguntas que não se confundem"],["p","Para interpretar a gestação inicial com segurança, separar três perguntas: <strong>existe produção de hCG compatível com gravidez?</strong>, <strong>onde se encontra a gestação?</strong> e <strong>ela apresenta critérios de viabilidade?</strong>. Um teste de urina positivo responde à primeira pergunta, mas não prova implantação intrauterina nem viabilidade embrionária. A localização depende de achados ultrassonográficos interpretados no contexto clínico; a viabilidade depende de estruturas e marcos do desenvolvimento adequados à idade, com prudência diante de exames inconclusivos."],["p","A datação obstétrica estima quantas semanas e dias transcorreram desde a data convencional de início da gravidez. A idade gestacional é expressa a partir do primeiro dia da última menstruação e não a partir da fecundação; em ciclos de 28 dias com ovulação aproximada no dia 14, a idade pós-concepcional é cerca de duas semanas menor. A melhor estimativa usa DUM confiável, exame ultrassonográfico precoce de qualidade e histórico de reprodução assistida, quando pertinente. Uma vez definida com segurança, a DPP deve permanecer consistente, para evitar diagnósticos errôneos de restrição de crescimento, pós-termo e prematuridade."],["p","Este capítulo complementa, sem reproduzir, o tema 004 — Pré-natal de Baixo Risco: a apostila 004 organiza o seguimento da gestação por trimestre; aqui o centro são a <strong>incerteza diagnóstica, a interpretação de exames, a idade gestacional e as situações perigosas de localização/viabilidade não resolvidas</strong>. Tratamento detalhado de abortamento, gravidez ectópica ou mola pertence aos materiais específicos de urgências obstétricas."],["t",["Eixo de decisão","O que demonstra","O que NÃO demonstra"],[["hCG urinário/sérico","Presença de hCG detectável, frequentemente associado à gestação","Localização, batimentos embrionários, evolução normal"],["USG com estruturas intrauterinas verdadeiras","Localização intrauterina da gestação identificada com segurança","Que a gestação necessariamente irá evoluir"],["USG com embrião e atividade cardíaca","Viabilidade naquele momento","Ausência de risco futuro ou diagnóstico de todos os agravos"],["DUM confiável","Referência cronológica convencional","Data exata da ovulação em ciclos variáveis"],["CRL medido corretamente no primeiro trimestre","Estimativa de idade gestacional geralmente mais precisa","Idade genética ou certeza absoluta de concepção"]],"book-table"]]],["biologia",0,[["2","1. Implantação, hCG e cronologia biológica do diagnóstico"],["3","A sequência temporal explica os resultados discordantes"],["p","Após a fecundação, o embrião percorre a tuba uterina, alcança a cavidade endometrial e inicia implantação dias depois; o trofoblasto secreta hCG progressivamente. O hormônio sustenta o corpo lúteo e a produção de progesterona nas primeiras semanas, preservando o endométrio gestacional. O momento de implantação varia, assim como a ovulação. Em pessoa que ovulou tardiamente, a data do último sangramento pode superestimar a idade real do embrião e o teste urinário pode ser negativo apesar de concepção muito recente."],["p","hCG é uma glicoproteína heterodimérica com subunidades alfa e beta. A subunidade beta ajuda especificidade de ensaios diagnósticos, mas os testes têm sensibilidades distintas e podem detectar isoformas/hormônios relacionados dependendo do método. O valor isolado não data com precisão e não indica o número de fetos. Gestação múltipla, doença trofoblástica e outras circunstâncias podem alterar concentrações, com grande sobreposição entre gestações normais. Interpretar tendências depende do intervalo entre coletas, técnica laboratorial e quadro clínico."],["3","Sintomas clássicos são indícios, não confirmação"],["p","Atraso menstrual, náuseas, sensibilidade mamária, sonolência, polaciúria e alterações cutâneas podem ocorrer na gestação, mas não são específicos. Amenorreia pode resultar de síndrome dos ovários policísticos, hiperprolactinemia, disfunção tireoidiana, estresse, mudanças ponderais e período puerperal. Sinais ginecológicos históricos, como coloração violácea vaginal ou amolecimento de colo, são observações semiológicas de valor menor que os métodos bioquímicos e ultrassonográficos atuais. Não basear decisão de gravidez ectópica, viabilidade ou interrupção de gestação em sinais clássicos isolados."],["t",["Tempo/evento","Mudança fisiológica","Consequência diagnóstica"],[["Ovulação variável","Ocorre antes da próxima menstruação esperada, não necessariamente no dia 14","DUM pode não corresponder à idade embrionária em ciclos irregulares"],["Implantação","Inicia produção detectável de hCG pelo tecido trofoblástico","Teste realizado muito cedo pode ser negativo"],["Aumento de hCG","Marcador de atividade trofoblástica nas semanas iniciais","Positividade não prova localização uterina"],["Visualização ultrassonográfica","Estruturas tornam-se identificáveis conforme tamanho e técnica","USG precoce inconclusiva precisa de seguimento apropriado"],["Embrião com atividade cardíaca","Marco de viabilidade observável","Não elimina risco de complicações futuras"]],"book-table"]]],["testes",0,[["2","2. Confirmação bioquímica: teste urinário, hCG sérico e armadilhas"],["3","Teste urinário: acessível, rápido e dependente do contexto"],["p","Testes urinários qualitativos são úteis em atraso menstrual e avaliação inicial na APS, farmácia ou pronto atendimento. A sensibilidade varia entre fabricantes; muitos dispositivos detectam hCG a partir de dezenas de mUI/mL, mas o valor exato depende do kit. Urina muito diluída, teste feito precocemente e erros de armazenamento/leitura podem produzir falso-negativos. Havendo suspeita relevante, repetir após intervalo apropriado ou solicitar hCG sérico quantitativo conforme cenário. Teste feito com atraso menstrual desconhecido não pode ser interpretado como prova de ausência de gestação em todas as circunstâncias."],["3","hCG sérico: quantitativo não é exame de localidade"],["p","Dosagem sérica quantitativa oferece maior sensibilidade e permite acompanhar evolução em gestações de localização não definida. O laboratório estabelece zonas para negativo, indeterminado e positivo conforme ensaio; intervalos próximos ao limite exigem nova medida e correlação. Um número isolado alto não é sinônimo de gravidez intrauterina normal, e um número baixo não exclui ectópica com risco de ruptura. O valor assume significado quando combinado a estabilidade clínica, ultrassonografia transvaginal e trajetória seriada."],["3","Falso positivo, interferências e hCG persistente"],["p","Resultados raramente positivos sem gestação em evolução podem decorrer de gravidez bioquímica recente, hCG residual após perda gestacional ou parto, uso exógeno de hCG em tratamento de fertilidade, interferência analítica de anticorpos e produção fisiológica de baixa intensidade em certos contextos. Discrepância entre hCG sérico discretamente positivo e teste urinário negativo, sobretudo se persistente sem alterações clínicas/ultrassonográficas, pode suscitar investigação laboratorial de interferência. A primeira abordagem deve ser confirmar amostra, método e história clínica; não concluir doença trofoblástica automaticamente."],["3","O que a variação de 48 horas pode e não pode mostrar"],["p","Em gravidez inicial que evolui, hCG sérico tende a subir; porém a velocidade de elevação varia com concentração inicial, viabilidade, idade e método laboratorial. O antigo ensino de que sempre 'deve dobrar em 48 horas' é excessivamente rígido e pode levar ao diagnóstico errôneo de inviabilidade. Uma queda sugere evolução desfavorável ou resolução de tecido gestacional, mas não exclui ectópica até que localização/resolução tenham sido asseguradas. Gestação ectópica pode apresentar elevação, platô ou queda, e alguns padrões se sobrepõem a gravidez intrauterina. O algoritmo de gestação de localização desconhecida deve usar tendência junto com reavaliação e sinais clínicos."],["t",["Situação","Hipótese","Próximo passo seguro"],[["Urina negativa antes do atraso menstrual","Teste precoce em gestação recente ou ausência de gravidez","Repetir no intervalo adequado/considerar sangue conforme sintomas"],["hCG sérico positivo e USG sem localização definida","Gravidez muito precoce, ectópica ou gestação em resolução","Avaliar estabilidade e plano de hCG seriado/USG, com orientações de alarme"],["hCG em queda e dor pélvica","Pode haver perda gestacional ou ectópica","Não atribuir segurança apenas à queda; reavaliar urgência"],["hCG sérico baixo persistente sem achado clínico","Possível interferência ou situação fisiológica específica","Conferir ensaio e avaliação dirigida"],["Teste positivo com síncope, dor intensa e hipotensão","Suspeita de hemorragia intra-abdominal/ectópica complicada","Emergência, estabilização e avaliação obstétrica imediata"]],"book-table"],["3","ACOG 2026: hCG detectável em quem não está grávida"],["p","O consenso clínico ACOG nº 11, publicado em fevereiro de 2026, reforça que elevação persistente de hCG não deve conduzir automaticamente a procedimentos invasivos ou terapias oncológicas sem conferir gestação e causas alternativas. Em adultos fora de gestação e sem neoplasia ginecológica demonstrada, podem ocorrer hCG hipofisário no climatério, interferência de imunoensaios, uso exógeno de hCG, doença renal e outras condições raras. Antes de atribuir valor anormal a gravidez, investigar contexto, exame físico, resultados prévios e método laboratorial. Essa questão é diferente da triagem inicial de pessoa com atraso menstrual, mas essencial quando resultado não corresponde à história e ao ultrassom."],["t",["Causa de hCG detectável sem gravidez intrauterina em evolução","Mecanismo ou pista","Como iniciar avaliação"],[["Gravidez muito precoce ou de localização desconhecida","hCG surge antes de visualização ultrassonográfica adequada","Investigar gestação uterina e ectópica primeiro, com seguimento"],["hCG residual após perda/parto","Eliminação de hormônio circulante pode demandar tempo","Relacionar com evento recente e série laboratorial"],["Administração exógena em fertilidade","Medicamento contém ou estimula hCG detectável","Confirmar cronograma de medicação e coleta"],["Interferência por anticorpos heterófilos","Resultado sérico pode não representar hCG circulante verdadeiro","Discutir ensaio alternativo, diluições e concordância sérico/urinária com laboratório"],["Produção hipofisária em idade peri/pós-menopausal","Alteração da retroalimentação gonadal","Contextualizar FSH, faixa etária e estabilidade de baixa concentração"],["Insuficiência renal","Depuração alterada em alguns casos","Considerar função renal e outras causas, não atribuir resultado somente a ela"],["Doença trofoblástica ou neoplasia","Produção anômala de hCG","Encaminhar avaliação especializada após investigação adequada"]],"book-table"],["3","Heterófilos e 'hCG fantasma': por que comparar matrizes pode ajudar"],["p","Imunoensaios utilizam anticorpos para capturar o analito. Em um pequeno grupo de pessoas, anticorpos heterófilos interferem na reação e produzem resultado sérico positivo sem presença do hormônio esperado. Como anticorpos interferentes geralmente não passam à urina da mesma forma, uma discrepância persistente entre soro positivo e urina negativa pode orientar investigação. Entretanto, teste urinário tem limite de detecção e sua negatividade em hCG sérico muito baixo não prova interferência. A conduta segura é envolver medicina laboratorial, conferir amostra, concentração e ensaios alternativos, em vez de concluir 'falso positivo' pela discordância simples."],["p","Os níveis de hCG hipofisário geralmente são baixos, particularmente em fase menopausal. O consenso ACOG 2026 considera FSH e faixa etária na avaliação; os cortes do documento não devem ser aplicados automaticamente a adolescente ou pessoa de idade reprodutiva com possibilidade de gestação. Em quadro de atraso menstrual e sintomatologia pélvica, a prioridade continua excluir gestação intrauterina ou ectópica antes de invocar hipótese laboratorial rara. Em nenhuma situação é adequado administrar tratamento de neoplasia apenas com hCG discretamente elevado sem diagnóstico sustentado."],["3","Teste quantitativo seriado: variabilidade analítica e tempo entre coletas"],["p","Valores séricos colhidos em laboratórios diferentes podem refletir calibração e método diversos. Quando possível, a evolução de um caso incerto é interpretada utilizando técnica comparável, hora/documentação da coleta e intervalo correto, pois uma variação de 24 horas não deve ser comparada ingenuamente ao comportamento esperado em 48 horas. Trajetórias não confirmam a localização e podem ser influenciadas por gravidez múltipla, perda gestacional em curso e variação individual. Informação seriada é útil apenas quando ligada à pergunta clínica: localizar, avaliar resolução ou identificar deterioração que exija ação urgente."]]],["semio",0,[["2","3. Avaliação clínica: quando a confirmação pode esperar e quando é urgência"],["3","Anamnese orientada por risco e por confiabilidade da DUM"],["p","Registrar primeiro dia da última menstruação, regularidade e duração dos ciclos, uso recente de contraceptivos, contracepção de emergência, amamentação, interrupção gestacional recente e tratamentos de fertilidade. Investigar gravidez anterior, cirurgia tubária, doença inflamatória pélvica, história de ectópica e uso de dispositivo intrauterino no momento da concepção, sem considerar tais fatores isolados determinantes do diagnóstico. Perguntar por dor, sangramento, tontura, síncope e febre, além de percepção sobre desejo reprodutivo e rede de apoio."],["p","Exame físico deve priorizar estabilidade: pressão, pulso, consciência, perfusão, sinais de choque e abdome agudo. Dor unilateral, defesa, irritação peritoneal, sangramento importante ou sinais hemodinâmicos alterados indicam abordagem imediata; hCG baixo não autoriza minimizar risco. Em pessoa clinicamente estável com atraso menstrual e teste positivo, a avaliação segue com confirmação, estratificação de risco e programação de pré-natal, mas nunca dispensando orientação sobre sinais que exigem retorno urgente."],["3","Fatores que aumentam probabilidade de ectópica não são requisitos para ela ocorrer"],["t",["Fator associado","Razão clínica","Cautela"],[["Ectópica anterior","Risco de recorrência","Necessita localizar precocemente nova gestação"],["Cirurgia tubária/doença inflamatória pélvica","Possível alteração de transporte embrionário","Ausência de antecedente não exclui ectópica"],["Concepção com DIU em uso","Entre gestações ocorridas apesar do método, atenção à localização","Não afirmar que DIU sempre causa ectópica"],["Reprodução assistida","Risco de condições como heterotópica em certos contextos","Achado intrauterino não exclui heterotópica em todos os casos"],["Sangramento e dor no início","Sinais inespecíficos mas potencialmente graves","Avaliar viabilidade, localização e estabilidade"]],"book-table"],["p","Em toda suspeita de gestação com sangramento, convém conhecer grupo sanguíneo e Rh quando indicado pela conduta obstétrica local e avaliar necessidade de cuidados adicionais. A prioridade, contudo, é não perder gravidez ectópica rota, hemorragia significativa ou infecção. Diagnóstico diferencial da dor inclui apendicite, cálculo ureteral, cisto ovariano complicado e outras urgências. A gravidade clínica determina prioridade, não a confirmação bioquímica repetida do mesmo teste."],["3","A queixa muda a urgência, mesmo que a ultrassonografia ainda não defina localização"],["t",["Apresentação","Risco imediato","Raciocínio da primeira decisão"],[["Atraso menstrual, teste positivo e sem dor/sangramento","Baixa urgência imediata se clinicamente estável","Confirmar, aconselhar e planejar datação/pré-natal"],["Sangramento leve, dor discreta e estabilidade","Pode ser perda inicial, ectópica ou gestação viável","Avaliar localização/viabilidade e definir seguimento"],["Dor unilateral crescente, irritação peritoneal ou dor em ombro","Suspeita de hemoperitônio entre causas","Avaliação emergencial sem depender de hCG alto"],["Síncope, hipotensão, palidez e taquicardia","Choque hemorrágico possível","Reanimação hemodinâmica e equipe cirúrgica/obstétrica"],["Febre, secreção fétida e dor intensa após perda gestacional","Possível infecção uterina grave","Avaliar sepse, estabilização e intervenção conforme necessidade"],["Náuseas intensas e desidratação","Hipovolemia e distúrbios eletrolíticos","Avaliar gravidade, tratar e investigar causas associadas"]],"book-table"],["3","Conceitos de probabilidade pré-teste: um único achado não fecha a hipótese"],["p","A investigação clínica organiza probabilidades. História de ectópica prévia aumenta a suspeita de recorrência, mas grande parte das ectópicas pode ocorrer sem antecedente reconhecido. Dor unilateral aumenta preocupação, mas também aparece em cisto hemorrágico, infecção e outras doenças. Imagem anexial aumenta a força da hipótese se é compatível e há hCG positivo, mas massas ovarianas fisiológicas, como corpo lúteo, podem simular lesão. A equipe evita tanto ancoragem — decidir diagnóstico cedo e ignorar dados incompatíveis — quanto atraso excessivo buscando certeza inalcançável em paciente instável."],["3","Conversar sobre gravidez não desejada ou incerta sem reduzir avaliação de risco"],["p","Desejo reprodutivo e contexto social modulam decisões informadas, medo e necessidades de apoio, mas não mudam fisiologia de risco de ectópica rota ou hemorragia. Explicar o que o exame demonstrou, o que não demonstrou e por que o retorno é necessário diminui interpretações equivocadas. Situações de violência, vulnerabilidade e risco psíquico demandam acolhimento e rede de apoio. Informação deve ser respeitosa, em linguagem compreensível, e o cuidado urgente não deve ser condicionado à narrativa pessoal ou a juízo moral."]]],["ultrassom",0,[["2","4. Ultrassonografia precoce: localização, estruturas e limites de imagem"],["3","Transvaginal e transabdominal não são métodos de sensibilidade igual no início"],["p","A ultrassonografia transvaginal costuma identificar estruturas gestacionais em idade mais precoce e com maior resolução pélvica. A via abdominal tem papel complementar e ganha utilidade com avanço gestacional, biotipo e contexto. Qualidade do equipamento, operador e condições anatômicas influenciam imagens. Quando teste de gravidez está positivo e útero parece vazio em gestação presumidamente precoce, não se deve concluir ectópica apenas por esse achado: datação incerta e limitações de visualização podem explicar o exame."],["3","Saco gestacional não é sinônimo de gestação definitivamente confirmada no útero"],["p","Uma imagem anecoica intrauterina isolada pode representar uma gestação inicial, mas também coleção de líquido endometrial em outras condições. Vesícula vitelínica ou embrião verdadeiramente visualizado em saco intrauterino fortalece identificação de gestação intrauterina. Em reprodução assistida, especialmente, é relevante lembrar a possibilidade de gestação heterotópica: detectar saco uterino não elimina completamente investigação de massa anexial ou sangramento quando sinais clínicos indicam."],["t",["Estrutura","Valor interpretativo","Erro típico"],[["Endométrio espessado","Pode acompanhar início de gestação ou outras condições","Declarar gravidez intrauterina apenas pela espessura"],["Imagem sugestiva de saco","Sugere localização uterina conforme critérios e idade","Ignorar possibilidade de coleção intrauterina sem estruturas específicas"],["Vesícula vitelínica intrauterina","Confirma com muito mais segurança saco gestacional verdadeiro","Usar como único marcador para avaliar evolução futura"],["Embrião/CRL","Permite datação e avaliação de atividade cardíaca","Aplicar limites de viabilidade sem considerar qualidade de medida"],["Massa anexial e líquido livre","Aumentam preocupação com ectópica em contexto compatível","Aguardar elevação de hCG em paciente instável"]],"book-table"],["3","Marcos de aparecimento variam e não podem virar sentenças irreversíveis"],["p","Em condições típicas, um saco intrauterino pode tornar-se visível no início do primeiro trimestre, seguido por vesícula vitelínica e embrião; atividade cardíaca pode ser identificada quando o embrião tem dimensão apropriada. Essas expectativas são intervalos, não datas obrigatórias idênticas para todas as pessoas. Ovulação tardia, exame demasiado precoce e qualidade subótima explicam discordâncias. Ausência de embrião visível com idade calculada apenas por DUM incerta não prova gestação anembrionada: documentar achado e repetir avaliação dentro de prazo clinicamente seguro."],["3","A zona discriminatória de hCG não é uma barreira absoluta"],["p","A chamada zona discriminatória representa concentração de hCG acima da qual se espera visualizar uma gestação intrauterina pela técnica e equipamento usados. Não é constante universal e depende de múltiplos fatores, inclusive possibilidade de gestação múltipla e erro de datação. Usar um valor antigo rígido de 1.500 ou 2.000 mUI/mL para iniciar tratamento irreversível em paciente estável e com desejo gestacional pode interromper uma gravidez potencialmente viável. Se imagem não mostra localização e hCG é positivo, a classificação sindrômica permanece gravidez de localização desconhecida até conclusão apropriada."],["3","Por que corpo lúteo e imagem tubária podem ser confundidos"],["p","O corpo lúteo é estrutura ovariana fisiológica após ovulação, essencial à produção de progesterona no início da gestação. Pode apresentar contorno vascularizado e aspecto cístico, imitando uma massa anexial em avaliação rápida. Gestação tubária também pode produzir estrutura anexial e líquido livre; distinguir exige localização precisa em relação ao ovário, características internas, Doppler quando apropriado, exame seriado e interpretação por profissional experiente. Um 'anel vascular' isolado não confirma ectópica, porque padrão de vascularização pode sobrepor-se ao corpo lúteo."],["3","Localização de saco gestacional: cavidade uterina, colo, cicatriz e anexo"],["p","Nem toda implantação vista nas proximidades do útero é gestação intrauterina habitual. Existem apresentações ectópicas tubárias, cervicais, intersticiais e em cicatriz de cesariana, com riscos e estratégias distintas; as anomalias exigem avaliação ultrassonográfica especializada. Uma imagem endocavitária também pode estar baixa porque há perda gestacional em curso. Localização segura demanda avaliação de relação com endométrio, miométrio e estruturas adjacentes. Não usar o rótulo 'dentro do útero' para minimizar uma implantação anômala."],["3","Coexistência intrauterina e ectópica: heterotópica rara, mas relevante"],["p","A presença inequívoca de gravidez intrauterina reduz muito a probabilidade de ectópica isolada, mas não exclui totalmente gestação heterotópica, particularmente em contextos de reprodução assistida. Dor persistente, sinal de irritação peritoneal, massa anexial ou líquido livre devem ser investigados conforme quadro, mesmo se há gestação intrauterina visível. A lição não é submeter todas as pessoas a exames ilimitados, e sim evitar falso raciocínio de impossibilidade absoluta quando há indícios discordantes."],["3","Documentar qual estrutura foi vista, não apenas escrever 'USG positivo'"],["o",["Via do exame, data, idade gestacional estimada e qualidade técnica/limitações relevantes.","Localização e descrição do saco, presença de vesícula vitelínica, embrião e respectivas medidas quando identificados.","Comprimento cabeça-nádegas medido adequadamente quando indicado para datação.","Atividade cardíaca embrionária observada ou não, com dimensão e contexto suficientes para interpretar o achado.","Exame de anexos e líquido livre quando há suspeita de gravidez ectópica ou dor.","Conclusão proporcional à evidência: gestação intrauterina identificada, ectópica provável/confirmada, ou localização desconhecida.","Recomendação de repetição, intervalo, sinais de alerta e profissional responsável pelo resultado."]]]],["viabilidade",0,[["2","5. Viabilidade gestacional: o perigo de chamar exame precoce de abortamento"],["3","Atividade cardíaca é um achado a favor de viabilidade atual"],["p","Visualizar atividade cardíaca embrionária em gestação intrauterina confirma viabilidade naquele momento. Isso não equivale a garantir desfecho obstétrico normal. Em exame muito precoce sem embrião ou sem atividade cardíaca, identificar se há critério ultrassonográfico de inviabilidade suficientemente específico, se a idade está corretamente estimada e se a técnica foi adequada. A decisão não deve depender de uma frase como 'não vi coração' sem medidas, imagens, idade e comparação com exame anterior."],["3","Medidas e intervalo de reavaliação protegem gestação potencialmente viável"],["p","Recomendações conservadoras de radiologia e obstetrícia utilizam critérios rigorosos para diagnosticar perda gestacional por ultrassom, evitando falsos diagnósticos. Em imagem transvaginal de boa qualidade, achados como embrião com CRL suficientemente grande sem atividade cardíaca ou saco com diâmetro médio suficientemente grande sem embrião são tratados de forma distinta de achados abaixo dos limiares. Quando não há critério inequívoco, a estratégia é realizar nova ultrassonografia após intervalo apropriado e correlacionar dados clínicos, em vez de indicar intervenção irreversível imediatamente."],["t",["Achado","Leitura cautelosa","Ação de princípio"],[["Pequeno saco gestacional sem vesícula","Pode ser gestação muito inicial","Programar reavaliação, documentar achados e sintomas"],["Vesícula vitelínica sem embrião ainda visível","Pode anteceder visualização embrionária","Acompanhar intervalo evolutivo, não sentenciar perda na primeira imagem"],["Embrião diminuto sem batimentos identificados","Achado duvidoso depende de CRL e técnica","Repetir avaliação de viabilidade conforme recomendação"],["Critério ultrassonográfico de inviabilidade inequívoco","Alta especificidade se medida correta e condições atendidas","Confirmar laudo, contexto e aconselhar opções de cuidado"],["Instabilidade hemodinâmica e suspeita de ectópica","Urgência independe de evolução habitual","Estabilizar e avaliar intervenção emergencial"]],"book-table"],["3","Gestação bioquímica, aborto precoce e local desconhecido"],["p","Gravidez bioquímica é reconhecida por hCG transitório sem visualização ultrassonográfica da gestação; contudo, até confirmar resolução apropriada, uma gravidez ectópica pode entrar no diferencial. Abortamento precoce é processo distinto: algumas gestações foram previamente demonstradas intrauterinas, outras permanecem sem localização. A classificação correta importa porque expectativas de seguimento, riscos e comunicação diferem. Uma trajetória de queda do hCG não autoriza alta sem plano de segurança em todas as circunstâncias."],["p","Em gestações cuja localização não foi documentada, analgesia, aconselhamento e seguimento dependem de sintomas e avaliação obstétrica. Evitar linguagem definitiva antes de evidência suficiente: comunicar 'o exame ainda não esclarece a localização ou a viabilidade' é mais honesto e clinicamente mais seguro que apresentar uma perda gestacional como fato com base em achado limítrofe."],["3","Critérios ultrassonográficos e o cuidado com medidas limítrofes"],["p","O NICE NG126 recomenda prudência particular na avaliação da viabilidade precoce. Em ultrassonografia transvaginal, embrião com CRL abaixo de 7 mm sem batimento visualizado requer nova avaliação antes de concluir aborto; se CRL é de 7 mm ou mais e não há batimentos, o documento aconselha segunda opinião e/ou repetição do exame antes de diagnóstico definitivo. Para saco sem embrião, o diâmetro médio de 25 mm marca outro ponto de atenção para confirmação, sempre com cautela técnica, segunda avaliação e contexto clínico. Os números não autorizam procedimento irreversível quando imagem é de qualidade duvidosa."],["t",["Situação em USG transvaginal","Conduta prudente segundo abordagem NICE","Por que é importante"],[["CRL <7 mm sem atividade cardíaca","Segundo exame, tipicamente com pelo menos 7 dias, antes de decidir inviabilidade","Limite pequeno tem risco de erro de medida e desenvolvimento ainda inicial"],["CRL ≥7 mm sem atividade cardíaca","Buscar segunda opinião e/ou repetir exame em intervalo adequado antes de decisão","Reduz falso diagnóstico por técnica/medição"],["Saco sem embrião com diâmetro médio <25 mm","Reavaliar em intervalo adequado antes de concluir perda","Visualização pode ser precoce"],["Saco sem embrião com diâmetro médio ≥25 mm","Conferir medida, buscar segunda opinião e/ou novo exame","Grande especificidade desejada antes de tratamento irreversível"],["USG apenas transabdominal sem batimentos","Intervalos e limitações próprios da via abdominal","Não aplicar cegamente o corte da técnica transvaginal"]],"book-table"],["p","Os critérios ultrassonográficos dependem de técnica e contexto. O NICE descreve intervalo de pelo menos sete dias para certas reavaliações transvaginais e pelo menos quatorze dias em determinadas situações avaliadas apenas por via abdominal. Protocolos podem diferir quanto à combinação de medidas/intervalos. Nunca usar a regra 'não ouvi batimentos = aborto', pois disponibilidade de Doppler, estágio gestacional e medidas do embrião condicionam a interpretação. A assistência deve equilibrar necessidade de evitar espera desnecessária com a proteção de gestação potencialmente viável."],["3","Linguagem recomendada em exame e aconselhamento"],["p","Termos como 'gestação de viabilidade indeterminada' ou 'achado ultrassonográfico ainda inconclusivo' comunicam a incerteza sem afirmar algo que não foi demonstrado. Registrar CRL, diâmetro do saco, estruturas observadas e data exata do exame permite comparação objetiva. Explicar que repetir ultrassom não significa negligência, e sim parte da segurança diagnóstica, ajuda a reduzir ansiedade. Se a pessoa piora clinicamente, o plano de esperar por novo exame precisa ser revisto imediatamente: estabilidade é premissa do seguimento ambulatorial."],["3","A perda confirmada não transforma a consulta em decisão técnica única"],["p","Após confirmação confiável de uma perda gestacional, o cuidado deve incluir suporte emocional, orientação sobre sinais de infecção/hemorragia, discussão de opções clínicas permitidas, individualização conforme condição e preferência, e acompanhamento até resolução. A escolha entre condutas expectante, medicamentosa ou cirúrgica depende do tipo de perda, gravidade e protocolos, sendo tema próprio de urgências obstétricas. Nesta apostila, a competência central é chegar ao diagnóstico com certeza suficiente e organizar encaminhamento/seguimento, sem antecipar um procedimento com base em dado incompleto."]]],["pul",0,[["2","6. Gravidez de localização desconhecida (PUL/GUL): raciocínio sequencial"],["3","Definição operacional"],["p","Gestação de localização desconhecida é situação transitória em que teste de gravidez é positivo, mas o ultrassom não identifica com segurança implantação intrauterina nem extrauterina. Não é diagnóstico etiológico final nem sinônimo de ectópica. As possibilidades incluem gravidez intrauterina demasiadamente precoce para visualização, ectópica e gestação que está regredindo. A primeira decisão é classificar estabilidade clínica; depois, em pessoa estável, programar reavaliações para atingir conclusão ou resolução documentada."],["3","O algoritmo que evita perder a ectópica"],["o",["Confirmar positividade de gravidez e estimar idade por história, sem atribuir certeza à DUM imprecisa.","Verificar estabilidade hemodinâmica, intensidade/localização da dor, sangramento e sinais peritoneais; instabilidade exige urgência.","Interpretar ultrassonografia transvaginal por profissional treinado, distinguindo gestação identificada de saco sugestivo e achados anexiais.","Se a localização segue indefinida, estabelecer plano de hCG quantitativo seriado e ultrassonografia repetida conforme quadro clínico e protocolo.","Não interpretar comportamento do hCG como localização comprovada; persistir vigilância até gestação localizada ou evolução resolvida.","Orientar claramente retorno imediato por piora de dor, síncope, sangramento importante, fraqueza intensa, dor no ombro ou outros sinais preocupantes.","Registrar quem receberá resultados, local e hora da nova avaliação; resultado pendente sem responsável é falha de segurança."]],["3","A interpretação de tendência só é válida acompanhada de sintomas e acesso ao retorno"],["p","Uma pessoa pode apresentar queda do hCG e ainda ter sangramento significativo de ectópica. Outra pode ter aumento menos intenso e gestação intrauterina viável, especialmente quando o valor inicial e idade são incertos. Portanto, não converter modelos estatísticos de cinética em intervenção sem considerar desejo gestacional, estabilidade, evolução clínica, imagens e discussão especializada. A sensibilidade do acompanhamento depende de acesso real: quem mora longe, não tem telefone ou tem dificuldade de retorno exige organização adicional pela rede para diminuir perda de seguimento."],["p","A orientação de segurança precisa ser escrita e compreensível. Uma emergência pode surgir antes da data programada de nova coleta. A equipe não deve dar alta apenas com a frase 'repita hCG em dois dias': deve explicar sinais de urgência, disponibilidade de serviço e a diferença entre hipótese de gravidez precoce e diagnóstico confirmado de localização. Não afirmar que todo hCG baixo representa situação de baixo risco."],["3","Estratificação de risco da GUL para seguimento seguro"],["t",["Eixo","Baixa complexidade imediata relativa","Exige reavaliação urgente"],[["Hemodinâmica","PA e perfusão estáveis, sem sinais de choque","Hipotensão, síncope, perfusão alterada"],["Dor","Ausente ou leve sem progressão","Dor intensa/crescente, ombro ou irritação peritoneal"],["Sangramento","Leve e autolimitado em quadro estável","Hemorragia importante e sinais sistêmicos"],["Imagem","Nenhuma massa de risco identificada e contexto favorável","Massa anexial suspeita, líquido livre importante"],["Acesso a retorno","Pessoa compreende plano e consegue voltar","Barreiras de transporte/comunicação ou ausência de responsável"],["Evolução clínica","Sintomas estáveis e acompanhamento organizado","Nova dor, tontura, agravamento ou sinais vitais alterados"]],"book-table"],["p","A classificação relativa acima não substitui protocolo nem fornece garantia de que uma pessoa assintomática esteja livre de ectópica. Ela organiza segurança do seguimento e identifica quem precisa avaliação imediata. O plano depende de clínica, dados laboratoriais, ultrassom, capacidade de reavaliação e preferências da pessoa. Em caso de dúvida ou impossibilidade de garantir retorno seguro, a decisão de observação/encaminhamento deve considerar risco de deterioração não reconhecida."],["3","Ultrassom normal fora do útero não exclui ectópica muito pequena"],["p","A gestação ectópica pode ser difícil de visualizar nas primeiras semanas. Uma avaliação anexial não diagnóstica não exclui a hipótese se hCG é positivo e a cavidade uterina também não tem estruturas confirmatórias. Por isso a GUL permanece categoria provisória até se demonstrar gravidez localizada ou desaparecimento seguro do quadro conforme protocolo. Uma redução de hCG não elimina inteiramente risco de ruptura; o paciente deve conhecer instruções concretas para emergência e dispor de meio de retorno."],["3","O que fazer quando a pessoa não comparece à coleta de retorno"],["p","Uma série de hCG que nunca é completada perde valor clínico. Serviços devem estabelecer quem verifica resultados, quem entra em contato diante de faltas e como encaminhar para avaliação presencial. Isso é particularmente importante quando houve dor ou sangramento e há possibilidade de ectópica. O agendamento deve conter prazo, lugar, meio de contato e critérios de emergência, e não apenas a expressão vaga 'se necessário'. A comunicação documentada protege tanto o paciente quanto a continuidade do cuidado na rede."]]],["data",0,[["2","7. Fundamentos da idade gestacional: DUM, idade pós-concepcional e DPP"],["3","Datação obstétrica não mede o instante da fecundação"],["p","Por convenção clínica, a gestação começa a ser contada no primeiro dia da última menstruação. Uma gestação a termo de quarenta semanas corresponde aproximadamente a 280 dias após essa data; a fecundação em ciclo clássico costuma ocorrer cerca de duas semanas depois, mas a variação individual é relevante. Idade gestacional é estimativa clínica útil, não cronômetro exato do desenvolvimento de cada embrião. Para comunicar, expressar semanas completas e dias adicionais, por exemplo 10 semanas e 4 dias (10s4d)."],["3","Regra de Näegele e a importância do calendário real"],["p","A DPP clássica é calculada pela DUM mais 280 dias, equivalente a somar sete dias e nove meses em ciclos de 28 dias, lembrando ano bissexto e diferenças entre duração dos meses. A regra de Näegele oferece atalho, mas um software que realiza soma em dias reais evita confusões nas transições de mês/ano. Em ciclos muito longos ou irregulares, ajustar automaticamente só pelo número de dias pode falhar porque a ovulação não é previsível; priorizar ultrassonografia precoce se disponível."],["t",["História menstrual","Risco de erro","Escolha de datação"],[["DUM conhecida, ciclos regulares e sem sangramento atípico","Menor, porém não nulo","Usar DUM e conferir com ultrassom precoce"],["DUM esquecida, ciclos irregulares","Atraso pode ser por ovulação tardia","Preferir CRL precoce se tecnicamente adequado"],["Uso hormonal recente ou amenorreia por lactação","Primeira ovulação pode preceder primeira menstruação","DUM pouco confiável, usar ultrassom"],["Sangramento na gravidez confundido com menstruação","Idade gestacional subestimada","Rever história e ultrassom precoce"],["Transferência embrionária em FIV","Dia de embrião e transferência são conhecidos","Usar idade derivada da reprodução assistida"]],"book-table"],["3","O que a DPP significa para a família"],["p","A DPP é ponto de referência para planejamento, não promessa de nascimento naquela data. Uma diferença de poucos dias pode ser clinicamente irrelevante no início, mas impactar classificação de prematuridade e decisões de vigilância quando se aproxima do termo. Registrar no prontuário a fonte da datação, o exame usado e o motivo de eventual revisão reduz contradições futuras. Comunicar com clareza evita que a pessoa receba três DPP diferentes de profissionais distintos sem explicação."],["3","Exercício orientado de idade gestacional sem falsificar a DUM"],["p","Considere uma paciente com DUM confirmada em 1º de maio e consulta em 22 de maio do mesmo ano. O intervalo entre as duas datas é de 21 dias, correspondendo a três semanas completas, de modo que a IG pela DUM é 3s0d. Esse número é convenção obstétrica, e não idade embrionária. Se a paciente tem ciclos muito irregulares ou sangramento que pode não ter sido menstrual, o resultado aritmético é correto para a data informada, mas a premissa é frágil: a idade clínica deve ser cotejada com ultrassom oportuno e contexto. O erro frequente é apresentar uma conta formalmente impecável como prova de data biológica exata."],["p","Uma segunda situação ilustra a unidade de medida: DUM há 73 dias equivale a dez semanas completas e três dias, pois 73 = 10 × 7 + 3. O prontuário deve registrar 10s3d, não '10,4 semanas' sem explicação, porque a parte decimal pode ser confundida com quatro dias quando na verdade representa fração de semana. O cálculo da DPP usa a idade de referência de 280 dias após a DUM; se a paciente chega à consulta em 10s3d, restariam aproximadamente 29s4d até 40s0d, sujeito à qualidade da datação. Uma decisão clínica que exige semana precisa deve usar o valor em dias."],["3","Métodos de datação têm diferentes fontes de incerteza"],["t",["Método","Onde reside a incerteza","Como melhorá-la"],[["DUM","Memória, ciclos irregulares, sangramento que não foi menstruação","Registrar confiabilidade e confirmar precocemente"],["Ultrassom por CRL","Plano de medida, posição fetal, operador, aparelho","Rever imagem/medidas e usar laudo de qualidade"],["Biometria do segundo trimestre","Variação normal de crescimento e composição de parâmetros","Usar medida composta e dados anteriores disponíveis"],["Biometria tardia","Crescimento patológico pode parecer idade menor","Evitar redatar feto pequeno sem avaliar restrição"],["Reprodução assistida","Registro da transferência e idade embrionária","Conferir documentação do laboratório/centro"],["História de relação sexual","Coito não equivale necessariamente a ovulação/fecundação","Não atribuir DPP à data de relação como regra"]],"book-table"],["3","Idade cronológica, idade corrigida e tempo de concepção: nomenclaturas distintas"],["p","Na obstetrícia, idade gestacional estima tempo desde a última menstruação convencional. Em neonatologia, idade pós-natal é o tempo desde o nascimento; idade corrigida do prematuro representa outra operação usada para acompanhar desenvolvimento. Idade pós-concepcional pode ser usada com significados diferentes em literatura e deve ser contextualizada, porque confundir tempo desde fecundação com idade gestacional produz erro de cerca de duas semanas no ciclo clássico. Em provas, ler se o problema pede idade gestacional no dia da consulta, DPP, ou idade de embrião em reprodução assistida antes de iniciar cálculo."],["3","Por que documentar o motivo de uma mudança de DPP"],["p","A mudança de datação pode alterar decisões relativas a corticoide antenatal, rastreio laboratorial, crescimento fetal, prematuridade e indução. Sempre que houver razão válida para rever a DPP — por exemplo, DUM pouco confiável e ultrassom precoce que estabelece idade de forma mais robusta — registrar a data anterior, a nova, o exame usado e a justificativa. Evitar substituições silenciosas, que fazem diferentes profissionais usar calendários conflitantes. Depois de estabelecida a melhor DPP, novas medidas devem ser interpretadas como dados de crescimento e anatomia, não como novos relógios."]]],["crl",0,[["2","8. Datação por ultrassonografia: CRL e queda da precisão ao longo da gravidez"],["3","Primeiro trimestre: o melhor momento para estimar idade"],["p","O comprimento cabeça-nádegas (CRL ou CCN) medido adequadamente no primeiro trimestre é o parâmetro mais preciso para estimar idade gestacional. ACOG/AIUM/SMFM descrevem precisão aproximada de ±5–7 dias nessa fase. A medição exige plano apropriado e posição fetal adequada; valores discrepantes requerem revisar qualidade técnica antes de alterar data do parto. O diâmetro médio do saco gestacional não deve ser usado como substituto do CRL para definir DPP quando embrião já é identificável."],["3","Diferença entre DUM e ultrassom: não aplicar o mesmo limiar em todas as semanas"],["p","A decisão de redatar depende da idade gestacional do primeiro ultrassom e da confiabilidade menstrual. Em recomendações ACOG, discrepância superior a cinco dias antes de nove semanas pode justificar revisão; entre nove semanas e treze semanas e seis dias, discrepância superior a sete dias pode justificar mudança. Em semanas posteriores, a tolerância aumenta porque a variabilidade do crescimento fetal é maior. Essas faixas pertencem ao documento referido e precisam ser usadas com julgamento clínico, não como fronteira absoluta que elimina análise de exame mal executado."],["3","Segundo e terceiro trimestres: crescimento deixa de ser sinônimo de idade"],["p","Quando não há datação precoce, biometria fetal do segundo trimestre utiliza medidas combinadas de cabeça, abdome e fêmur. A precisão diminui progressivamente com a idade gestacional. Na fase tardia, o risco de alterar DPP apenas porque o feto está pequeno é confundir restrição de crescimento com 'gestação mais nova'. ACOG descreve erro aproximado muito maior para o terceiro trimestre, o que obriga a interpretar biometria junto com todas as informações anteriores e acompanhar crescimento serialmente quando indicado."],["t",["Fonte","Papel correto","Erro que pode alterar conduta"],[["CRL 1º trimestre","Base de alta precisão para IG e DPP","Redatar depois por variação de tamanho tardio"],["Biometria 2º trimestre sem exame prévio","Melhor estimativa disponível com menor precisão","Tratar como tão precisa quanto CRL precoce"],["Biometria 3º trimestre isolada","Estimativa de grande incerteza","Classificar feto pequeno como 'mais jovem' sem investigar restrição"],["DUM duvidosa","Dado histórico de baixo peso","Manter por insistência mesmo com ultrassom precoce consistente"],["DPP documentada e confiável","Referência clínica ao longo do pré-natal","Trocar em toda ultrassonografia"]],"book-table"],["p","Uma gestação sem ultrassonografia que confirme ou ajuste DPP antes de 22 semanas é classificada como subotimamente datada por critérios ACOG. Isso não significa que a gravidez não possa ser acompanhada, mas que decisões sobre crescimento, indução e pós-termo devem levar em conta incerteza adicional. Não extrapolar essa classificação para afastar critérios brasileiros de acesso e cuidado de pré-natal."],["3","Guia de decisão segundo momento da primeira ultrassonografia"],["t",["Quando há o primeiro exame utilizável","Papel na melhor DPP","Ponto de atenção"],[["Antes de 9 semanas","CRL precoce pode justificar revisão da DPP se discrepância com DUM confiável exceder cerca de 5 dias, conforme ACOG","Medidas muito pequenas requerem técnica cuidadosa"],["9 semanas a 13 semanas e 6 dias","CRL continua método mais preciso; divergência acima de cerca de 7 dias pode justificar mudança","Revisar a confiabilidade menstrual e laudo"],["14 a 21 semanas e 6 dias","Biometria permite datação com incerteza maior, se não houver CRL confiável","Não descartar ultrassom do primeiro trimestre"],["22 a 27 semanas e 6 dias","Aumenta margem de erro e necessidade de cautela","Com ausência de exame antes de 22 semanas, ACOG considera datação subótima"],["28 semanas ou mais","Baixa precisão para determinar idade a partir do crescimento","Evitar recuar DPP de feto pequeno para não ocultar doença placentária"]],"book-table"],["p","O quadro resume o raciocínio da fonte ACOG/AIUM/SMFM de 2017, sem reproduzir sua tabela oficial de limiares. Para aplicação clínica, conferir a íntegra da fonte e protocolo obstétrico local, inclusive intervalos específicos da segunda metade da gestação. O efeito mais importante é não atribuir a ultrassonografia de terceiro trimestre a mesma precisão do CRL precoce. Em gestação de datação subótima, decisões sobre antecipar o parto por conveniência não devem ser tratadas como equivalentes a decisões sustentadas por idade gestacional bem estabelecida."],["3","Biometria não é só crescimento: saber de onde vem o número"],["p","No segundo trimestre, medidas como diâmetro biparietal, circunferência cefálica, circunferência abdominal e comprimento do fêmur alimentam equações de datação e de peso estimado, mas respondem a perguntas diferentes. A medida abdominal se altera mais em distúrbios nutricionais do feto; a medida cefálica pode ser afetada por formas cranianas e anomalias; o fêmur pode ser influenciado por variação constitucional ou condições específicas. A datação composta é uma estimativa em população, não garantia de que cada feto tenha dimensões exatas da média. Quando há discrepância relevante, o laudo deve diferenciar problema de crescimento e problema de medida."],["3","Concordância aparente não dispensa revisar a fonte"],["p","Um laudo pode imprimir idade gestacional e DPP automaticamente com base em DUM previamente cadastrada, em vez de cálculo independente pelo CRL; outro pode incorporar as duas estimativas. É essencial perguntar se a idade mostrada foi obtida pela medida fetal ou inserida como dado de entrada. Se o médico apenas compara duas colunas que derivam da mesma DUM, não realizou confirmação independente. O documento de melhor DPP deve apontar fonte original da estimativa, data do exame, parâmetros e discrepância encontrada."]]],["fiv",0,[["2","9. Reprodução assistida, gemelaridade e situações especiais"],["3","Reprodução assistida: a origem da idade gestacional é conhecida"],["p","Em transferência de embrião por fertilização in vitro, a idade embrionária no dia da transferência é conhecida e deve orientar a idade gestacional e DPP. Para embrião de dia cinco, ACOG exemplifica data provável do parto equivalente a 261 dias após transferência; para embrião de dia três, 263 dias. A conta considera período de desenvolvimento embrionário antes de transferência. Não redatar uma gestação corretamente datada por FIV apenas porque um ultrassom posterior mediu pequeno desvio."],["3","Gemelaridade exige distinguir datação de corionicidade"],["p","A datação da gestação múltipla deve ser estabelecida de forma consistente por ultrassonografia precoce; quando há discordância de tamanho dos embriões, a escolha do parâmetro de referência depende de orientações especializadas. A identificação de corionicidade e amnionicidade é decisão adicional, que altera vigilância obstétrica por risco de complicações específicas. Não presumir que detectar dois sacos seja suficiente para classificar todas as relações placentárias. A apostila de pré-natal e os capítulos de gestação múltipla aprofundam organização da vigilância."],["3","Pós-contraceptivo, amenorreia e sangramento atípico"],["p","Uso recente de contraceptivos hormonais, períodos de amamentação, perdas gestacionais recentes, irregularidade ovulatória e sangramento de implantação podem tornar a data menstrual incerta. A história deve reconhecer esses contextos sem culpa ou pressupor falha de método. Quando DUM não é confiável, ultrassom precoce tecnicamente correto costuma melhorar a precisão. Mesmo assim, pequenas diferenças entre idade ultrassonográfica e percepção da pessoa devem ser comunicadas como variação de estimativa, não erro pessoal."],["3","Transferência embrionária: o erro de somar 280 dias à data da transferência"],["p","A transferência não corresponde ao primeiro dia de uma última menstruação. Na FIV, sabe-se que o embrião passou determinado número de dias de desenvolvimento antes da transferência; por isso se subtrai essa idade biológica da referência conceitual de datação. ACOG fornece exemplos de DPP a 261 dias após transferência de embrião do quinto dia e a 263 dias após transferência do terceiro dia. O aluno não precisa decorar procedimentos laboratoriais não envolvidos na idade, mas deve reconhecer que a regra menstrual de 280 dias não é aplicada diretamente à data da transferência."],["3","Quando o ultrassom e a FIV parecem discordantes"],["p","Pequenas diferenças de medida ultrassonográfica em embrião de reprodução assistida não devem automaticamente alterar datação originalmente ancorada em informações embriológicas seguras. Revisar documento do centro, dia do embrião e qualidade do ultrassom. Uma discrepância maior pode indicar diferença de metodologia, erro de registro ou questão de evolução e merece avaliação especializada. Redatar repetidamente enfraquece interpretação de exames sequenciais; manter uma DPP coerente permite reconhecer crescimento inadequado ou divergência de desenvolvimento quando surgem."]]],["casos",0,[["2","10. Casos clínicos comentados: da suspeita à datação segura"],["3","Caso 1 — Urina negativa antes do atraso menstrual esperado"],["p","<strong>História:</strong> pessoa de 27 anos com ciclos irregulares, relação sexual sem contracepção há dez dias e teste urinário negativo. <strong>Questão:</strong> gestação está excluída? <strong>Raciocínio:</strong> pode não ter ocorrido implantação suficiente para hCG urinário detectável; irregularidade menstrual dificulta localizar ovulação. <strong>Conduta:</strong> avaliar sintomas e risco, orientar repetição em momento apropriado ou hCG sérico conforme circunstâncias e contracepção/planejamento. <strong>Erro evitado:</strong> usar teste muito precoce como garantia definitiva de ausência de gravidez."],["3","Caso 2 — hCG positivo e ultrassonografia sem saco intrauterino"],["p","<strong>História:</strong> paciente estável, 5 semanas e 2 dias por DUM incerta, dor pélvica discreta, hCG sérico positivo e transvaginal que não demonstra localização. <strong>Hipóteses:</strong> gravidez intrauterina muito precoce, ectópica ou gestação em resolução. <strong>Interpretação:</strong> diagnóstico sindrômico é gestação de localização desconhecida. <strong>Conduta:</strong> organizar reavaliação de hCG/ultrassom e orientar sinais de alarme por escrito. <strong>Erro evitado:</strong> indicar tratamento de ectópica ou declarar aborto com exame único não conclusivo."],["3","Caso 3 — Dor intensa e síncope não esperam curva de hCG"],["p","<strong>História:</strong> pessoa com atraso menstrual, teste positivo, dor abdominal súbita, síncope e hipotensão. <strong>Hipótese preocupante:</strong> gravidez ectópica complicada com hemoperitônio entre outras urgências. <strong>Raciocínio:</strong> prioridade é estabilização, avaliação hemodinâmica e acesso imediato à equipe cirúrgica/obstétrica, não confirmação de uma progressão ideal do hCG. <strong>Conduta:</strong> emergência, suporte e diagnóstico/intervenção conforme avaliação especializada. <strong>Erro evitado:</strong> aguardar hCG em 48 horas em paciente instável."],["3","Caso 4 — DUM incerta e ultrassonografia precoce"],["p","<strong>História:</strong> gestante não recorda DUM, tem ciclos entre 30 e 48 dias e ultrassom transvaginal com CRL compatível com 9 semanas e 4 dias. <strong>Raciocínio:</strong> DUM não é confiável; CRL precoce fornece melhor estimativa disponível. <strong>Conduta:</strong> registrar idade por ultrassom, DPP decorrente e origem da medida, comunicar e manter datação ao longo das consultas. <strong>Erro evitado:</strong> fabricar uma DUM com base em memória imprecisa."],["3","Caso 5 — Feto pequeno no terceiro trimestre"],["p","<strong>História:</strong> gestante com ultrassom de 9 semanas bem documentado e biometria com peso estimado abaixo do esperado em 32 semanas. Outro profissional sugere 'adiar a DPP em três semanas'. <strong>Raciocínio:</strong> CRL precoce é mais preciso e pequena biometria tardia pode refletir restrição de crescimento, erro técnico ou variação constitucional. <strong>Conduta:</strong> não redatar automaticamente; investigar crescimento e bem-estar fetal conforme protocolo. <strong>Erro evitado:</strong> esconder crescimento inadequado por alteração da idade obstétrica."],["3","Caso 6 — Gestação após FIV e transferência de blastocisto"],["p","<strong>História:</strong> gestação por FIV com embrião de dia cinco, transferência documentada, ultrassom inicial com pequena discrepância em relação à idade calculada pela transferência. <strong>Raciocínio:</strong> a data de transferência e idade embrionária são dados objetivos. <strong>Conduta:</strong> usar datação derivada de FIV conforme ACOG, revisar laudo e documentar. <strong>Erro evitado:</strong> substituir data conhecida por variação de medida ultrassonográfica."],["3","Caso 7 — Pequeno embrião sem batimentos no primeiro exame"],["p","<strong>História:</strong> gestante assintomática, DUM pouco confiável, USG detecta saco e embrião diminuto sem atividade cardíaca visualizada; o laudo não documenta medida compatível com critério inequívoco de perda. <strong>Raciocínio:</strong> imagem muito precoce pode ser inconclusiva. <strong>Conduta:</strong> avaliação especializada e ultrassom de seguimento no intervalo adequado, com comunicação e orientação de sinais de alarme. <strong>Erro evitado:</strong> rotular abortamento retido e oferecer intervenção irreversível sem confirmação."],["3","Caso 8 — hCG em queda não encerra acompanhamento automaticamente"],["p","<strong>História:</strong> paciente com GUL e hCG em queda, mas persiste com dor pélvica. <strong>Hipóteses:</strong> gestação em resolução, ectópica ainda presente ou outra causa de dor. <strong>Conduta:</strong> reavaliar sinais vitais, exame e imagem conforme gravidade, acompanhar até resolução/localização segura e reforçar acesso à urgência. <strong>Erro evitado:</strong> presumir risco zero porque a curva está descendente."],["3","Caso 9 — hCG sérico persistentemente baixo e urina negativa sem sintomas"],["p","<strong>História:</strong> pessoa de 51 anos, sem atraso menstrual típico e sem sintomas de gestação, tem hCG sérico discretamente elevado em duas coletas e teste urinário negativo. <strong>Raciocínio:</strong> antes de supor gestação, avaliar a possibilidade de interferência analítica, hCG hipofisário de perimenopausa ou outras causas, mantendo investigação de gravidez quando ainda plausível. <strong>Conduta:</strong> conferir ensaio, resultados de laboratório, função renal, contexto endócrino e considerar método alternativo sob orientação de medicina laboratorial/ACOG 2026. <strong>Erro evitado:</strong> terapia invasiva para resultado isolado sem confirmação."],["3","Caso 10 — CRL muito pequeno sem batimentos não prova perda"],["p","<strong>História:</strong> paciente estável, DUM incerta, ultrassom transvaginal encontra embrião de CRL 4 mm sem atividade cardíaca visualizada. <strong>Raciocínio:</strong> o tamanho está abaixo do limiar de maior especificidade usado nas diretrizes para inviabilidade, e o exame pode ser precoce. <strong>Conduta:</strong> registrar tamanho e estruturas, programar novo exame após intervalo compatível — NICE utiliza pelo menos sete dias em situações transvaginais — e fornecer orientação de sinais de alarme. <strong>Erro evitado:</strong> realizar intervenção irreversível por diagnóstico não confirmado."],["3","Caso 11 — Saco de 26 mm sem embrião exige checagem especializada"],["p","<strong>História:</strong> pessoa com desejo gestacional, assintomática, transvaginal informa saco com diâmetro médio de 26 mm sem embrião. <strong>Raciocínio:</strong> valor ultrapassa limiar utilizado em critérios conservadores, mas mensuração, via, imagens e conclusão precisam ser verificadas; NICE orienta segunda opinião e/ou nova avaliação antes de diagnóstico definitivo. <strong>Conduta:</strong> revisão técnica e diálogo sobre incerteza residual e opções após confirmação. <strong>Erro evitado:</strong> tratar uma imagem única de qualidade desconhecida como certeza absoluta sem auditoria."],["3","Caso 12 — Gravidez intrauterina identificada após FIV, mas dor e líquido livre"],["p","<strong>História:</strong> após reprodução assistida, ultrassom confirma saco intrauterino com vesícula vitelínica, mas paciente apresenta dor unilateral intensa e líquido livre. <strong>Hipótese a excluir:</strong> gestação heterotópica ou outra causa de abdome agudo. <strong>Raciocínio:</strong> presença de gravidez intrauterina reduz probabilidade de ectópica isolada, mas não elimina heterotópica em todos os cenários. <strong>Conduta:</strong> avaliação imediata por equipe obstétrica, incluindo anexos e estabilidade clínica. <strong>Erro evitado:</strong> usar gravidez intrauterina como justificativa para ignorar abdome agudo."]]],["questoes",0,[["2","11. Questões autorais com comentários por alternativa"],["o",["<strong>Q1.</strong> Um teste urinário positivo confirma: A) que a gestação está no útero; B) que o embrião tem batimentos; C) presença de hCG detectável, sem determinar localização e viabilidade; D) idade exata de seis semanas. <strong>Gabarito C.</strong> A exige evidência de localização; B depende de avaliação ultrassonográfica adequada; D confunde positividade com datação. Revisão: separar confirmação hormonal, localização e viabilidade.","<strong>Q2.</strong> Pessoa com teste positivo, síncope, dor pélvica intensa e hipotensão. Conduta? A) aguardar curva de hCG em 48 horas; B) iniciar captação de pré-natal sem urgência; C) estabilizar e avaliar imediatamente emergência obstétrica/ectópica complicada; D) repetir teste urinário para confirmar. <strong>Gabarito C.</strong> A/B/D atrasam atendimento em instabilidade. Revisão: gravidade clínica precede exames seriados.","<strong>Q3.</strong> O principal parâmetro de datação no primeiro trimestre após visualizar embrião é: A) diâmetro médio do saco; B) comprimento cabeça-nádegas; C) circunferência abdominal no terceiro trimestre; D) valor de hCG sérico. <strong>Gabarito B.</strong> A tem menor precisão para DPP; C varia com crescimento; D não estima idade de forma suficientemente específica. Revisão: CRL/CCN precoce.","<strong>Q4.</strong> Gestante com CRL de primeiro trimestre corretamente documentado tem biometria pequena em 32 semanas. O melhor é: A) mudar a DPP automaticamente para três semanas depois; B) ignorar crescimento; C) manter datação inicial e avaliar possível alteração do crescimento; D) usar apenas altura uterina para redefinir DPP. <strong>Gabarito C.</strong> A pode ocultar restrição; B ignora risco; D não supera datação precoce. Revisão: tamanho tardio não é relógio gestacional confiável.","<strong>Q5.</strong> hCG sérico positivo, USG transvaginal sem identificação de gestação uterina ou ectópica em pessoa estável corresponde a: A) gravidez de localização desconhecida; B) abortamento obrigatório; C) ectópica confirmada; D) gestação intrauterina viável confirmada. <strong>Gabarito A.</strong> B, C e D atribuem certeza que o exame não oferece. Revisão: classificação temporária requer seguimento.","<strong>Q6.</strong> Sobre hCG quantitativo em 48 horas: A) toda gestação viável dobra exatamente; B) queda elimina qualquer risco de ectópica; C) tendência é informação adicional, sem definir localização isoladamente; D) hCG alto garante gestação uterina. <strong>Gabarito C.</strong> A usa regra rígida; B e D geram falsa segurança. Revisão: combinar clínica, USG e seguimento.","<strong>Q7.</strong> DUM duvidosa, ciclos irregulares e CRL de 9s4d em USG de boa qualidade: A) dar preferência à estimativa ultrassonográfica; B) insistir em DUM inventada; C) usar altura uterina para redatar em 32 semanas; D) aguardar hCG triplicar para definir DPP. <strong>Gabarito A.</strong> B elimina confiabilidade; C é inferior ao CRL precoce; D não é método de datação. Revisão: registrar fonte da melhor DPP.","<strong>Q8.</strong> Um embrião pequeno sem batimentos num exame muito precoce e com DUM incerta permite: A) diagnóstico invariável de aborto; B) intervenção irreversível imediata sem medidas; C) reconhecer possível exame inconclusivo e programar reavaliação em intervalo adequado; D) dispensar orientação de retorno se assintomática. <strong>Gabarito C.</strong> A/B excedem evidência; D ignora risco de evolução ou ectópica não completamente excluída. Revisão: critérios de inviabilidade precisam ser rigorosos.","<strong>Q9.</strong> Gestação por transferência de embrião de cinco dias: A) ignorar data da transferência; B) usar idade derivada da reprodução assistida para estimar DPP; C) calcular só pelo primeiro teste urinário; D) redatar a cada USG. <strong>Gabarito B.</strong> A/C/D perdem dado objetivo. Revisão: data do embrião e da transferência.","<strong>Q10.</strong> Uma zona discriminatória de hCG significa: A) limiar absoluto abaixo do qual ectópica nunca rompe; B) valor que confirma aborto; C) referência técnica para expectativa de visualização ultrassonográfica, dependente de condições e sem substituir clínica; D) indicação automática de metotrexato. <strong>Gabarito C.</strong> A é perigosa; B e D confundem expectativa de imagem com decisão definitiva. Revisão: não usar corte fixo como diagnóstico isolado.","<strong>Q11.</strong> Por que redatar no terceiro trimestre pode ser prejudicial? A) biometrias tardias sempre têm erro zero; B) pode disfarçar restrição de crescimento ao classificar feto pequeno como mais jovem; C) CRL é menos preciso que crescimento tardio; D) DPP não influencia decisões. <strong>Gabarito B.</strong> A/C contrariam precisão por trimestre; D ignora interpretação de idade e planejamento. Revisão: manter melhor estimativa.","<strong>Q12.</strong> Em paciente com GUL estável, plano adequado inclui: A) curva/USG seriados conforme protocolo e sinais de alarme; B) alta sem retorno; C) concluir que qualquer sangramento é implantação; D) tratar ectópica sem avaliação. <strong>Gabarito A.</strong> B perde seguimento; C atribui etiologia sem prova; D pode expor gestação intrauterina viável. Revisão: segurança depende de reavaliação organizada."]],["3","Questões adicionais — cálculos, critérios ultrassonográficos e situações especiais"],["o",["<strong>Q13.</strong> DUM há 73 dias corresponde a: A) 10 semanas e 3 dias; B) 10 semanas e 7 dias; C) 7 semanas e 3 dias; D) 12 semanas. <strong>Gabarito A.</strong> B mantém sete dias sem completar a semana; C subestima divisão por sete; D não corresponde ao intervalo. Revisão: 73 = 70 + 3.","<strong>Q14.</strong> CRL de 4 mm em transvaginal sem batimentos. A) confirma morte embrionária; B) não pode haver gravidez; C) requer avaliação evolutiva antes de diagnóstico de perda, conforme contexto e diretriz; D) indica hCG obrigatório de 100.000. <strong>Gabarito C.</strong> A/B excedem o que imagem pequena permite; D usa valor hormonal imaginário. Revisão: rigor dos critérios conservadores evita intervenção desnecessária.","<strong>Q15.</strong> Uma paciente com CRL precoce de 9 semanas e DPP confiável passa a ter biometria pequena no terceiro trimestre. A) redatar pelo peso automaticamente; B) avaliar crescimento e manter melhor datação; C) não existe doença placentária se CRL inicial normal; D) usar concentração de hCG para estimar DPP. <strong>Gabarito B.</strong> A encobre restrição; C descarta riscos posteriores; D não é método adequado. Revisão: separar idade e crescimento.","<strong>Q16.</strong> HCG sérico discretamente elevado e persistente em pessoa não grávida após investigação adequada pode ser causado por: A) apenas gravidez intrauterina; B) unicamente câncer; C) interferência de ensaio ou produção hipofisária em contexto apropriado; D) nunca existe falso positivo laboratorial. <strong>Gabarito C.</strong> A/B excluem alternativas; D contraria ACOG 2026. Revisão: investigar sistematicamente antes de procedimento invasivo.","<strong>Q17.</strong> Sobre transferência de blastocisto de cinco dias: A) DPP se conta 280 dias após transferência; B) usar idade embrionária e data documentada da transferência, segundo referência de reprodução assistida; C) redatar em cada ultrassom; D) usar data de teste urinário. <strong>Gabarito B.</strong> A ignora desenvolvimento antes da transferência; C/D perdem precisão. Revisão: ACOG exemplifica 261 dias após transferência de embrião de dia cinco.","<strong>Q18.</strong> Pessoa com saco intrauterino viável após FIV apresenta dor abdominal intensa e líquido livre. A) heterotópica é absolutamente impossível; B) descartar toda urgência porque gestação intrauterina está confirmada; C) avaliar imediatamente, lembrando heterotópica e outras causas graves; D) esperar três semanas. <strong>Gabarito C.</strong> A/B usam impossibilidade falsa; D atrasa avaliação de abdome agudo. Revisão: localização de uma gestação não exclui outro processo simultâneo."]]]],["referencias",0,[["2","12. Bibliografia, fronteira curricular e pendências"],["o",["<a href=\"https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG/AIUM/SMFM. Committee Opinion nº 700. Methods for Estimating the Due Date. 2017.</a>","<a href=\"https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Early Pregnancy Loss. Practice Bulletin. 2018.</a>","<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Pré-natal: início precoce, captação e continuidade na APS.</a>","<a href=\"https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/pregnancy-unknown-location-pul\" target=\"_blank\" rel=\"noopener noreferrer\">UCLH/NHS. Pregnancy of Unknown Location: seguimento e sinais de alerta.</a>","<a href=\"https://www.nice.org.uk/guidance/NG126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy\" target=\"_blank\" rel=\"noopener noreferrer\">NICE. NG126. Diagnóstico de gravidez intrauterina viável e ectópica tubária; segunda opinião e reavaliação.</a>","<a href=\"https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2026/02/management-of-positive-human-chorionic-gonadotropin-test-results-in-nonpregnant-patients-without-gynecologic-malignancy\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Clinical Consensus nº 11, fevereiro de 2026: elevação de hCG fora de gestação confirmada.</a>"]],["p","<strong>Comparação LURIA com materiais existentes:</strong> antes de redigir, foram abertos os PDFs privados '02 - ASSISTENCIA AO PRE-NATAL.pdf' e '02 - SANGRAMENTO DA PRIMEIRA METADE.pdf'; a autoria institucional do cursinho não pôde ser confirmada. Seus textos e imagens não foram reproduzidos. O material público preexistente da LURIA 'Pré-natal de Baixo Risco' também foi lido, especialmente os capítulos de diagnóstico de gestação, cálculo de DUM/IG/DPP e ultrassonografia; seu papel de seguimento longitudinal não foi transferido nem apagado."],["p","<strong>Matriz de cobertura interna:</strong> confirmação hormonal em testes; cronologia em biologia; diferenciais de amenorreia em biologia e semio; localização intrauterina versus ectópica em ultrassom/pul; viabilidade em viabilidade; datação por DUM/CRL/ART em data, crl e fiv; decisões de risco em semio, pul e casos; interpretação de questões em questoes. Referências são recursos para conferir, e não pré-requisito para os casos introdutórios."],["p","<strong>Estado editorial:</strong> primeiro rascunho original do tema 009, não publicado, sem `index.html`, sem alteração de catálogo. Não recebeu revisão de obstetra, validação de critérios ultrassonográficos atualizados em diretrizes brasileiras, teste de autossuficiência por banca representativa, auditoria de semântica e acessibilidade ou curadoria de imagens na fila de aprovação Admin. A meta de 60.000 caracteres didáticos úteis e a revisão humana continuam exigidas; não declarar certificação."]]]]}
+{
+  "v": 2,
+  "s": "diagnostico-datacao-gestacao",
+  "t": "Diagnóstico e Datação da Gestação",
+  "p": "Diagnóstico e Datação da Gestação",
+  "o": [
+    [
+      "visao",
+      "Diagnóstico e datação da gestação: três perguntas que não se confundem"
+    ],
+    [
+      "biologia",
+      "1. Implantação, hCG e cronologia biológica do diagnóstico"
+    ],
+    [
+      "testes",
+      "2. Confirmação bioquímica: teste urinário, hCG sérico e armadilhas"
+    ],
+    [
+      "semio",
+      "3. Avaliação clínica: quando a confirmação pode esperar e quando é urgência"
+    ],
+    [
+      "ultrassom",
+      "4. Ultrassonografia precoce: localização, estruturas e limites de imagem"
+    ],
+    [
+      "viabilidade",
+      "5. Viabilidade gestacional: o perigo de chamar exame precoce de abortamento"
+    ],
+    [
+      "pul",
+      "6. Gravidez de localização desconhecida (PUL/GUL): raciocínio sequencial"
+    ],
+    [
+      "data",
+      "7. Fundamentos da idade gestacional: DUM, idade pós-concepcional e DPP"
+    ],
+    [
+      "crl",
+      "8. Datação por ultrassonografia: CRL e queda da precisão ao longo da gravidez"
+    ],
+    [
+      "fiv",
+      "9. Reprodução assistida, gemelaridade e situações especiais"
+    ],
+    [
+      "casos",
+      "10. Casos clínicos comentados: da suspeita à datação segura"
+    ],
+    [
+      "questoes",
+      "11. Questões autorais com comentários por alternativa"
+    ],
+    [
+      "referencias",
+      "12. Bibliografia, fronteira curricular e pendências"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Diagnóstico e Datação da Gestação",
+    "Confirmação · localização · viabilidade · DUM · CRL · DPP",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Obstetrícia",
+      "Tema: Diagnóstico e datação da gestação"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Diagnóstico e datação da gestação: três perguntas que não se confundem"
+        ],
+        [
+          "p",
+          "Para interpretar a gestação inicial com segurança, separar três perguntas: <strong>existe produção de hCG compatível com gravidez?</strong>, <strong>onde se encontra a gestação?</strong> e <strong>ela apresenta critérios de viabilidade?</strong>. Um teste de urina positivo responde à primeira pergunta, mas não prova implantação intrauterina nem viabilidade embrionária. A localização depende de achados ultrassonográficos interpretados no contexto clínico; a viabilidade depende de estruturas e marcos do desenvolvimento adequados à idade, com prudência diante de exames inconclusivos."
+        ],
+        [
+          "p",
+          "A datação obstétrica estima quantas semanas e dias transcorreram desde a data convencional de início da gravidez. A idade gestacional é expressa a partir do primeiro dia da última menstruação e não a partir da fecundação; em ciclos de 28 dias com ovulação aproximada no dia 14, a idade pós-concepcional é cerca de duas semanas menor. A melhor estimativa usa DUM confiável, exame ultrassonográfico precoce de qualidade e histórico de reprodução assistida, quando pertinente. Uma vez definida com segurança, a DPP deve permanecer consistente, para evitar diagnósticos errôneos de restrição de crescimento, pós-termo e prematuridade."
+        ],
+        [
+          "p",
+          "Este capítulo complementa, sem reproduzir, o tema 004 — Pré-natal de Baixo Risco: a apostila 004 organiza o seguimento da gestação por trimestre; aqui o centro são a <strong>incerteza diagnóstica, a interpretação de exames, a idade gestacional e as situações perigosas de localização/viabilidade não resolvidas</strong>. Tratamento detalhado de abortamento, gravidez ectópica ou mola pertence aos materiais específicos de urgências obstétricas."
+        ],
+        [
+          "t",
+          [
+            "Eixo de decisão",
+            "O que demonstra",
+            "O que NÃO demonstra"
+          ],
+          [
+            [
+              "hCG urinário/sérico",
+              "Presença de hCG detectável, frequentemente associado à gestação",
+              "Localização, batimentos embrionários, evolução normal"
+            ],
+            [
+              "USG com estruturas intrauterinas verdadeiras",
+              "Localização intrauterina da gestação identificada com segurança",
+              "Que a gestação necessariamente irá evoluir"
+            ],
+            [
+              "USG com embrião e atividade cardíaca",
+              "Viabilidade naquele momento",
+              "Ausência de risco futuro ou diagnóstico de todos os agravos"
+            ],
+            [
+              "DUM confiável",
+              "Referência cronológica convencional",
+              "Data exata da ovulação em ciclos variáveis"
+            ],
+            [
+              "CRL medido corretamente no primeiro trimestre",
+              "Estimativa de idade gestacional geralmente mais precisa",
+              "Idade genética ou certeza absoluta de concepção"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "biologia",
+      0,
+      [
+        [
+          "2",
+          "1. Implantação, hCG e cronologia biológica do diagnóstico"
+        ],
+        [
+          "3",
+          "A sequência temporal explica os resultados discordantes"
+        ],
+        [
+          "p",
+          "Após a fecundação, o embrião percorre a tuba uterina, alcança a cavidade endometrial e inicia implantação dias depois; o trofoblasto secreta hCG progressivamente. O hormônio sustenta o corpo lúteo e a produção de progesterona nas primeiras semanas, preservando o endométrio gestacional. O momento de implantação varia, assim como a ovulação. Em pessoa que ovulou tardiamente, a data do último sangramento pode superestimar a idade real do embrião e o teste urinário pode ser negativo apesar de concepção muito recente."
+        ],
+        [
+          "p",
+          "hCG é uma glicoproteína heterodimérica com subunidades alfa e beta. A subunidade beta ajuda especificidade de ensaios diagnósticos, mas os testes têm sensibilidades distintas e podem detectar isoformas/hormônios relacionados dependendo do método. O valor isolado não data com precisão e não indica o número de fetos. Gestação múltipla, doença trofoblástica e outras circunstâncias podem alterar concentrações, com grande sobreposição entre gestações normais. Interpretar tendências depende do intervalo entre coletas, técnica laboratorial e quadro clínico."
+        ],
+        [
+          "3",
+          "Sintomas clássicos são indícios, não confirmação"
+        ],
+        [
+          "p",
+          "Atraso menstrual, náuseas, sensibilidade mamária, sonolência, polaciúria e alterações cutâneas podem ocorrer na gestação, mas não são específicos. Amenorreia pode resultar de síndrome dos ovários policísticos, hiperprolactinemia, disfunção tireoidiana, estresse, mudanças ponderais e período puerperal. Sinais ginecológicos históricos, como coloração violácea vaginal ou amolecimento de colo, são observações semiológicas de valor menor que os métodos bioquímicos e ultrassonográficos atuais. Não basear decisão de gravidez ectópica, viabilidade ou interrupção de gestação em sinais clássicos isolados."
+        ],
+        [
+          "t",
+          [
+            "Tempo/evento",
+            "Mudança fisiológica",
+            "Consequência diagnóstica"
+          ],
+          [
+            [
+              "Ovulação variável",
+              "Ocorre antes da próxima menstruação esperada, não necessariamente no dia 14",
+              "DUM pode não corresponder à idade embrionária em ciclos irregulares"
+            ],
+            [
+              "Implantação",
+              "Inicia produção detectável de hCG pelo tecido trofoblástico",
+              "Teste realizado muito cedo pode ser negativo"
+            ],
+            [
+              "Aumento de hCG",
+              "Marcador de atividade trofoblástica nas semanas iniciais",
+              "Positividade não prova localização uterina"
+            ],
+            [
+              "Visualização ultrassonográfica",
+              "Estruturas tornam-se identificáveis conforme tamanho e técnica",
+              "USG precoce inconclusiva precisa de seguimento apropriado"
+            ],
+            [
+              "Embrião com atividade cardíaca",
+              "Marco de viabilidade observável",
+              "Não elimina risco de complicações futuras"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "testes",
+      0,
+      [
+        [
+          "2",
+          "2. Confirmação bioquímica: teste urinário, hCG sérico e armadilhas"
+        ],
+        [
+          "3",
+          "Teste urinário: acessível, rápido e dependente do contexto"
+        ],
+        [
+          "p",
+          "Testes urinários qualitativos são úteis em atraso menstrual e avaliação inicial na APS, farmácia ou pronto atendimento. A sensibilidade varia entre fabricantes; muitos dispositivos detectam hCG a partir de dezenas de mUI/mL, mas o valor exato depende do kit. Urina muito diluída, teste feito precocemente e erros de armazenamento/leitura podem produzir falso-negativos. Havendo suspeita relevante, repetir após intervalo apropriado ou solicitar hCG sérico quantitativo conforme cenário. Teste feito com atraso menstrual desconhecido não pode ser interpretado como prova de ausência de gestação em todas as circunstâncias."
+        ],
+        [
+          "3",
+          "hCG sérico: quantitativo não é exame de localidade"
+        ],
+        [
+          "p",
+          "Dosagem sérica quantitativa oferece maior sensibilidade e permite acompanhar evolução em gestações de localização não definida. O laboratório estabelece zonas para negativo, indeterminado e positivo conforme ensaio; intervalos próximos ao limite exigem nova medida e correlação. Um número isolado alto não é sinônimo de gravidez intrauterina normal, e um número baixo não exclui ectópica com risco de ruptura. O valor assume significado quando combinado a estabilidade clínica, ultrassonografia transvaginal e trajetória seriada."
+        ],
+        [
+          "3",
+          "Falso positivo, interferências e hCG persistente"
+        ],
+        [
+          "p",
+          "Resultados raramente positivos sem gestação em evolução podem decorrer de gravidez bioquímica recente, hCG residual após perda gestacional ou parto, uso exógeno de hCG em tratamento de fertilidade, interferência analítica de anticorpos e produção fisiológica de baixa intensidade em certos contextos. Discrepância entre hCG sérico discretamente positivo e teste urinário negativo, sobretudo se persistente sem alterações clínicas/ultrassonográficas, pode suscitar investigação laboratorial de interferência. A primeira abordagem deve ser confirmar amostra, método e história clínica; não concluir doença trofoblástica automaticamente."
+        ],
+        [
+          "3",
+          "O que a variação de 48 horas pode e não pode mostrar"
+        ],
+        [
+          "p",
+          "Em gravidez inicial que evolui, hCG sérico tende a subir; porém a velocidade de elevação varia com concentração inicial, viabilidade, idade e método laboratorial. O antigo ensino de que sempre 'deve dobrar em 48 horas' é excessivamente rígido e pode levar ao diagnóstico errôneo de inviabilidade. Uma queda sugere evolução desfavorável ou resolução de tecido gestacional, mas não exclui ectópica até que localização/resolução tenham sido asseguradas. Gestação ectópica pode apresentar elevação, platô ou queda, e alguns padrões se sobrepõem a gravidez intrauterina. O algoritmo de gestação de localização desconhecida deve usar tendência junto com reavaliação e sinais clínicos."
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Hipótese",
+            "Próximo passo seguro"
+          ],
+          [
+            [
+              "Urina negativa antes do atraso menstrual",
+              "Teste precoce em gestação recente ou ausência de gravidez",
+              "Repetir no intervalo adequado/considerar sangue conforme sintomas"
+            ],
+            [
+              "hCG sérico positivo e USG sem localização definida",
+              "Gravidez muito precoce, ectópica ou gestação em resolução",
+              "Avaliar estabilidade e plano de hCG seriado/USG, com orientações de alarme"
+            ],
+            [
+              "hCG em queda e dor pélvica",
+              "Pode haver perda gestacional ou ectópica",
+              "Não atribuir segurança apenas à queda; reavaliar urgência"
+            ],
+            [
+              "hCG sérico baixo persistente sem achado clínico",
+              "Possível interferência ou situação fisiológica específica",
+              "Conferir ensaio e avaliação dirigida"
+            ],
+            [
+              "Teste positivo com síncope, dor intensa e hipotensão",
+              "Suspeita de hemorragia intra-abdominal/ectópica complicada",
+              "Emergência, estabilização e avaliação obstétrica imediata"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "ACOG 2026: hCG detectável em quem não está grávida"
+        ],
+        [
+          "p",
+          "O consenso clínico ACOG nº 11, publicado em fevereiro de 2026, reforça que elevação persistente de hCG não deve conduzir automaticamente a procedimentos invasivos ou terapias oncológicas sem conferir gestação e causas alternativas. Em adultos fora de gestação e sem neoplasia ginecológica demonstrada, podem ocorrer hCG hipofisário no climatério, interferência de imunoensaios, uso exógeno de hCG, doença renal e outras condições raras. Antes de atribuir valor anormal a gravidez, investigar contexto, exame físico, resultados prévios e método laboratorial. Essa questão é diferente da triagem inicial de pessoa com atraso menstrual, mas essencial quando resultado não corresponde à história e ao ultrassom."
+        ],
+        [
+          "t",
+          [
+            "Causa de hCG detectável sem gravidez intrauterina em evolução",
+            "Mecanismo ou pista",
+            "Como iniciar avaliação"
+          ],
+          [
+            [
+              "Gravidez muito precoce ou de localização desconhecida",
+              "hCG surge antes de visualização ultrassonográfica adequada",
+              "Investigar gestação uterina e ectópica primeiro, com seguimento"
+            ],
+            [
+              "hCG residual após perda/parto",
+              "Eliminação de hormônio circulante pode demandar tempo",
+              "Relacionar com evento recente e série laboratorial"
+            ],
+            [
+              "Administração exógena em fertilidade",
+              "Medicamento contém ou estimula hCG detectável",
+              "Confirmar cronograma de medicação e coleta"
+            ],
+            [
+              "Interferência por anticorpos heterófilos",
+              "Resultado sérico pode não representar hCG circulante verdadeiro",
+              "Discutir ensaio alternativo, diluições e concordância sérico/urinária com laboratório"
+            ],
+            [
+              "Produção hipofisária em idade peri/pós-menopausal",
+              "Alteração da retroalimentação gonadal",
+              "Contextualizar FSH, faixa etária e estabilidade de baixa concentração"
+            ],
+            [
+              "Insuficiência renal",
+              "Depuração alterada em alguns casos",
+              "Considerar função renal e outras causas, não atribuir resultado somente a ela"
+            ],
+            [
+              "Doença trofoblástica ou neoplasia",
+              "Produção anômala de hCG",
+              "Encaminhar avaliação especializada após investigação adequada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Heterófilos e 'hCG fantasma': por que comparar matrizes pode ajudar"
+        ],
+        [
+          "p",
+          "Imunoensaios utilizam anticorpos para capturar o analito. Em um pequeno grupo de pessoas, anticorpos heterófilos interferem na reação e produzem resultado sérico positivo sem presença do hormônio esperado. Como anticorpos interferentes geralmente não passam à urina da mesma forma, uma discrepância persistente entre soro positivo e urina negativa pode orientar investigação. Entretanto, teste urinário tem limite de detecção e sua negatividade em hCG sérico muito baixo não prova interferência. A conduta segura é envolver medicina laboratorial, conferir amostra, concentração e ensaios alternativos, em vez de concluir 'falso positivo' pela discordância simples."
+        ],
+        [
+          "p",
+          "Os níveis de hCG hipofisário geralmente são baixos, particularmente em fase menopausal. O consenso ACOG 2026 considera FSH e faixa etária na avaliação; os cortes do documento não devem ser aplicados automaticamente a adolescente ou pessoa de idade reprodutiva com possibilidade de gestação. Em quadro de atraso menstrual e sintomatologia pélvica, a prioridade continua excluir gestação intrauterina ou ectópica antes de invocar hipótese laboratorial rara. Em nenhuma situação é adequado administrar tratamento de neoplasia apenas com hCG discretamente elevado sem diagnóstico sustentado."
+        ],
+        [
+          "3",
+          "Teste quantitativo seriado: variabilidade analítica e tempo entre coletas"
+        ],
+        [
+          "p",
+          "Valores séricos colhidos em laboratórios diferentes podem refletir calibração e método diversos. Quando possível, a evolução de um caso incerto é interpretada utilizando técnica comparável, hora/documentação da coleta e intervalo correto, pois uma variação de 24 horas não deve ser comparada ingenuamente ao comportamento esperado em 48 horas. Trajetórias não confirmam a localização e podem ser influenciadas por gravidez múltipla, perda gestacional em curso e variação individual. Informação seriada é útil apenas quando ligada à pergunta clínica: localizar, avaliar resolução ou identificar deterioração que exija ação urgente."
+        ]
+      ]
+    ],
+    [
+      "semio",
+      0,
+      [
+        [
+          "2",
+          "3. Avaliação clínica: quando a confirmação pode esperar e quando é urgência"
+        ],
+        [
+          "3",
+          "Anamnese orientada por risco e por confiabilidade da DUM"
+        ],
+        [
+          "p",
+          "Registrar primeiro dia da última menstruação, regularidade e duração dos ciclos, uso recente de contraceptivos, contracepção de emergência, amamentação, interrupção gestacional recente e tratamentos de fertilidade. Investigar gravidez anterior, cirurgia tubária, doença inflamatória pélvica, história de ectópica e uso de dispositivo intrauterino no momento da concepção, sem considerar tais fatores isolados determinantes do diagnóstico. Perguntar por dor, sangramento, tontura, síncope e febre, além de percepção sobre desejo reprodutivo e rede de apoio."
+        ],
+        [
+          "p",
+          "Exame físico deve priorizar estabilidade: pressão, pulso, consciência, perfusão, sinais de choque e abdome agudo. Dor unilateral, defesa, irritação peritoneal, sangramento importante ou sinais hemodinâmicos alterados indicam abordagem imediata; hCG baixo não autoriza minimizar risco. Em pessoa clinicamente estável com atraso menstrual e teste positivo, a avaliação segue com confirmação, estratificação de risco e programação de pré-natal, mas nunca dispensando orientação sobre sinais que exigem retorno urgente."
+        ],
+        [
+          "3",
+          "Fatores que aumentam probabilidade de ectópica não são requisitos para ela ocorrer"
+        ],
+        [
+          "t",
+          [
+            "Fator associado",
+            "Razão clínica",
+            "Cautela"
+          ],
+          [
+            [
+              "Ectópica anterior",
+              "Risco de recorrência",
+              "Necessita localizar precocemente nova gestação"
+            ],
+            [
+              "Cirurgia tubária/doença inflamatória pélvica",
+              "Possível alteração de transporte embrionário",
+              "Ausência de antecedente não exclui ectópica"
+            ],
+            [
+              "Concepção com DIU em uso",
+              "Entre gestações ocorridas apesar do método, atenção à localização",
+              "Não afirmar que DIU sempre causa ectópica"
+            ],
+            [
+              "Reprodução assistida",
+              "Risco de condições como heterotópica em certos contextos",
+              "Achado intrauterino não exclui heterotópica em todos os casos"
+            ],
+            [
+              "Sangramento e dor no início",
+              "Sinais inespecíficos mas potencialmente graves",
+              "Avaliar viabilidade, localização e estabilidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Em toda suspeita de gestação com sangramento, convém conhecer grupo sanguíneo e Rh quando indicado pela conduta obstétrica local e avaliar necessidade de cuidados adicionais. A prioridade, contudo, é não perder gravidez ectópica rota, hemorragia significativa ou infecção. Diagnóstico diferencial da dor inclui apendicite, cálculo ureteral, cisto ovariano complicado e outras urgências. A gravidade clínica determina prioridade, não a confirmação bioquímica repetida do mesmo teste."
+        ],
+        [
+          "3",
+          "A queixa muda a urgência, mesmo que a ultrassonografia ainda não defina localização"
+        ],
+        [
+          "t",
+          [
+            "Apresentação",
+            "Risco imediato",
+            "Raciocínio da primeira decisão"
+          ],
+          [
+            [
+              "Atraso menstrual, teste positivo e sem dor/sangramento",
+              "Baixa urgência imediata se clinicamente estável",
+              "Confirmar, aconselhar e planejar datação/pré-natal"
+            ],
+            [
+              "Sangramento leve, dor discreta e estabilidade",
+              "Pode ser perda inicial, ectópica ou gestação viável",
+              "Avaliar localização/viabilidade e definir seguimento"
+            ],
+            [
+              "Dor unilateral crescente, irritação peritoneal ou dor em ombro",
+              "Suspeita de hemoperitônio entre causas",
+              "Avaliação emergencial sem depender de hCG alto"
+            ],
+            [
+              "Síncope, hipotensão, palidez e taquicardia",
+              "Choque hemorrágico possível",
+              "Reanimação hemodinâmica e equipe cirúrgica/obstétrica"
+            ],
+            [
+              "Febre, secreção fétida e dor intensa após perda gestacional",
+              "Possível infecção uterina grave",
+              "Avaliar sepse, estabilização e intervenção conforme necessidade"
+            ],
+            [
+              "Náuseas intensas e desidratação",
+              "Hipovolemia e distúrbios eletrolíticos",
+              "Avaliar gravidade, tratar e investigar causas associadas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Conceitos de probabilidade pré-teste: um único achado não fecha a hipótese"
+        ],
+        [
+          "p",
+          "A investigação clínica organiza probabilidades. História de ectópica prévia aumenta a suspeita de recorrência, mas grande parte das ectópicas pode ocorrer sem antecedente reconhecido. Dor unilateral aumenta preocupação, mas também aparece em cisto hemorrágico, infecção e outras doenças. Imagem anexial aumenta a força da hipótese se é compatível e há hCG positivo, mas massas ovarianas fisiológicas, como corpo lúteo, podem simular lesão. A equipe evita tanto ancoragem — decidir diagnóstico cedo e ignorar dados incompatíveis — quanto atraso excessivo buscando certeza inalcançável em paciente instável."
+        ],
+        [
+          "3",
+          "Conversar sobre gravidez não desejada ou incerta sem reduzir avaliação de risco"
+        ],
+        [
+          "p",
+          "Desejo reprodutivo e contexto social modulam decisões informadas, medo e necessidades de apoio, mas não mudam fisiologia de risco de ectópica rota ou hemorragia. Explicar o que o exame demonstrou, o que não demonstrou e por que o retorno é necessário diminui interpretações equivocadas. Situações de violência, vulnerabilidade e risco psíquico demandam acolhimento e rede de apoio. Informação deve ser respeitosa, em linguagem compreensível, e o cuidado urgente não deve ser condicionado à narrativa pessoal ou a juízo moral."
+        ]
+      ]
+    ],
+    [
+      "ultrassom",
+      0,
+      [
+        [
+          "2",
+          "4. Ultrassonografia precoce: localização, estruturas e limites de imagem"
+        ],
+        [
+          "3",
+          "Transvaginal e transabdominal não são métodos de sensibilidade igual no início"
+        ],
+        [
+          "p",
+          "A ultrassonografia transvaginal costuma identificar estruturas gestacionais em idade mais precoce e com maior resolução pélvica. A via abdominal tem papel complementar e ganha utilidade com avanço gestacional, biotipo e contexto. Qualidade do equipamento, operador e condições anatômicas influenciam imagens. Quando teste de gravidez está positivo e útero parece vazio em gestação presumidamente precoce, não se deve concluir ectópica apenas por esse achado: datação incerta e limitações de visualização podem explicar o exame."
+        ],
+        [
+          "3",
+          "Saco gestacional não é sinônimo de gestação definitivamente confirmada no útero"
+        ],
+        [
+          "p",
+          "Uma imagem anecoica intrauterina isolada pode representar uma gestação inicial, mas também coleção de líquido endometrial em outras condições. Vesícula vitelínica ou embrião verdadeiramente visualizado em saco intrauterino fortalece identificação de gestação intrauterina. Em reprodução assistida, especialmente, é relevante lembrar a possibilidade de gestação heterotópica: detectar saco uterino não elimina completamente investigação de massa anexial ou sangramento quando sinais clínicos indicam."
+        ],
+        [
+          "t",
+          [
+            "Estrutura",
+            "Valor interpretativo",
+            "Erro típico"
+          ],
+          [
+            [
+              "Endométrio espessado",
+              "Pode acompanhar início de gestação ou outras condições",
+              "Declarar gravidez intrauterina apenas pela espessura"
+            ],
+            [
+              "Imagem sugestiva de saco",
+              "Sugere localização uterina conforme critérios e idade",
+              "Ignorar possibilidade de coleção intrauterina sem estruturas específicas"
+            ],
+            [
+              "Vesícula vitelínica intrauterina",
+              "Confirma com muito mais segurança saco gestacional verdadeiro",
+              "Usar como único marcador para avaliar evolução futura"
+            ],
+            [
+              "Embrião/CRL",
+              "Permite datação e avaliação de atividade cardíaca",
+              "Aplicar limites de viabilidade sem considerar qualidade de medida"
+            ],
+            [
+              "Massa anexial e líquido livre",
+              "Aumentam preocupação com ectópica em contexto compatível",
+              "Aguardar elevação de hCG em paciente instável"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Marcos de aparecimento variam e não podem virar sentenças irreversíveis"
+        ],
+        [
+          "p",
+          "Em condições típicas, um saco intrauterino pode tornar-se visível no início do primeiro trimestre, seguido por vesícula vitelínica e embrião; atividade cardíaca pode ser identificada quando o embrião tem dimensão apropriada. Essas expectativas são intervalos, não datas obrigatórias idênticas para todas as pessoas. Ovulação tardia, exame demasiado precoce e qualidade subótima explicam discordâncias. Ausência de embrião visível com idade calculada apenas por DUM incerta não prova gestação anembrionada: documentar achado e repetir avaliação dentro de prazo clinicamente seguro."
+        ],
+        [
+          "3",
+          "A zona discriminatória de hCG não é uma barreira absoluta"
+        ],
+        [
+          "p",
+          "A chamada zona discriminatória representa concentração de hCG acima da qual se espera visualizar uma gestação intrauterina pela técnica e equipamento usados. Não é constante universal e depende de múltiplos fatores, inclusive possibilidade de gestação múltipla e erro de datação. Usar um valor antigo rígido de 1.500 ou 2.000 mUI/mL para iniciar tratamento irreversível em paciente estável e com desejo gestacional pode interromper uma gravidez potencialmente viável. Se imagem não mostra localização e hCG é positivo, a classificação sindrômica permanece gravidez de localização desconhecida até conclusão apropriada."
+        ],
+        [
+          "3",
+          "Por que corpo lúteo e imagem tubária podem ser confundidos"
+        ],
+        [
+          "p",
+          "O corpo lúteo é estrutura ovariana fisiológica após ovulação, essencial à produção de progesterona no início da gestação. Pode apresentar contorno vascularizado e aspecto cístico, imitando uma massa anexial em avaliação rápida. Gestação tubária também pode produzir estrutura anexial e líquido livre; distinguir exige localização precisa em relação ao ovário, características internas, Doppler quando apropriado, exame seriado e interpretação por profissional experiente. Um 'anel vascular' isolado não confirma ectópica, porque padrão de vascularização pode sobrepor-se ao corpo lúteo."
+        ],
+        [
+          "3",
+          "Localização de saco gestacional: cavidade uterina, colo, cicatriz e anexo"
+        ],
+        [
+          "p",
+          "Nem toda implantação vista nas proximidades do útero é gestação intrauterina habitual. Existem apresentações ectópicas tubárias, cervicais, intersticiais e em cicatriz de cesariana, com riscos e estratégias distintas; as anomalias exigem avaliação ultrassonográfica especializada. Uma imagem endocavitária também pode estar baixa porque há perda gestacional em curso. Localização segura demanda avaliação de relação com endométrio, miométrio e estruturas adjacentes. Não usar o rótulo 'dentro do útero' para minimizar uma implantação anômala."
+        ],
+        [
+          "3",
+          "Coexistência intrauterina e ectópica: heterotópica rara, mas relevante"
+        ],
+        [
+          "p",
+          "A presença inequívoca de gravidez intrauterina reduz muito a probabilidade de ectópica isolada, mas não exclui totalmente gestação heterotópica, particularmente em contextos de reprodução assistida. Dor persistente, sinal de irritação peritoneal, massa anexial ou líquido livre devem ser investigados conforme quadro, mesmo se há gestação intrauterina visível. A lição não é submeter todas as pessoas a exames ilimitados, e sim evitar falso raciocínio de impossibilidade absoluta quando há indícios discordantes."
+        ],
+        [
+          "3",
+          "Documentar qual estrutura foi vista, não apenas escrever 'USG positivo'"
+        ],
+        [
+          "o",
+          [
+            "Via do exame, data, idade gestacional estimada e qualidade técnica/limitações relevantes.",
+            "Localização e descrição do saco, presença de vesícula vitelínica, embrião e respectivas medidas quando identificados.",
+            "Comprimento cabeça-nádegas medido adequadamente quando indicado para datação.",
+            "Atividade cardíaca embrionária observada ou não, com dimensão e contexto suficientes para interpretar o achado.",
+            "Exame de anexos e líquido livre quando há suspeita de gravidez ectópica ou dor.",
+            "Conclusão proporcional à evidência: gestação intrauterina identificada, ectópica provável/confirmada, ou localização desconhecida.",
+            "Recomendação de repetição, intervalo, sinais de alerta e profissional responsável pelo resultado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "viabilidade",
+      0,
+      [
+        [
+          "2",
+          "5. Viabilidade gestacional: o perigo de chamar exame precoce de abortamento"
+        ],
+        [
+          "3",
+          "Atividade cardíaca é um achado a favor de viabilidade atual"
+        ],
+        [
+          "p",
+          "Visualizar atividade cardíaca embrionária em gestação intrauterina confirma viabilidade naquele momento. Isso não equivale a garantir desfecho obstétrico normal. Em exame muito precoce sem embrião ou sem atividade cardíaca, identificar se há critério ultrassonográfico de inviabilidade suficientemente específico, se a idade está corretamente estimada e se a técnica foi adequada. A decisão não deve depender de uma frase como 'não vi coração' sem medidas, imagens, idade e comparação com exame anterior."
+        ],
+        [
+          "3",
+          "Medidas e intervalo de reavaliação protegem gestação potencialmente viável"
+        ],
+        [
+          "p",
+          "Recomendações conservadoras de radiologia e obstetrícia utilizam critérios rigorosos para diagnosticar perda gestacional por ultrassom, evitando falsos diagnósticos. Em imagem transvaginal de boa qualidade, achados como embrião com CRL suficientemente grande sem atividade cardíaca ou saco com diâmetro médio suficientemente grande sem embrião são tratados de forma distinta de achados abaixo dos limiares. Quando não há critério inequívoco, a estratégia é realizar nova ultrassonografia após intervalo apropriado e correlacionar dados clínicos, em vez de indicar intervenção irreversível imediatamente."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Leitura cautelosa",
+            "Ação de princípio"
+          ],
+          [
+            [
+              "Pequeno saco gestacional sem vesícula",
+              "Pode ser gestação muito inicial",
+              "Programar reavaliação, documentar achados e sintomas"
+            ],
+            [
+              "Vesícula vitelínica sem embrião ainda visível",
+              "Pode anteceder visualização embrionária",
+              "Acompanhar intervalo evolutivo, não sentenciar perda na primeira imagem"
+            ],
+            [
+              "Embrião diminuto sem batimentos identificados",
+              "Achado duvidoso depende de CRL e técnica",
+              "Repetir avaliação de viabilidade conforme recomendação"
+            ],
+            [
+              "Critério ultrassonográfico de inviabilidade inequívoco",
+              "Alta especificidade se medida correta e condições atendidas",
+              "Confirmar laudo, contexto e aconselhar opções de cuidado"
+            ],
+            [
+              "Instabilidade hemodinâmica e suspeita de ectópica",
+              "Urgência independe de evolução habitual",
+              "Estabilizar e avaliar intervenção emergencial"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Gestação bioquímica, aborto precoce e local desconhecido"
+        ],
+        [
+          "p",
+          "Gravidez bioquímica é reconhecida por hCG transitório sem visualização ultrassonográfica da gestação; contudo, até confirmar resolução apropriada, uma gravidez ectópica pode entrar no diferencial. Abortamento precoce é processo distinto: algumas gestações foram previamente demonstradas intrauterinas, outras permanecem sem localização. A classificação correta importa porque expectativas de seguimento, riscos e comunicação diferem. Uma trajetória de queda do hCG não autoriza alta sem plano de segurança em todas as circunstâncias."
+        ],
+        [
+          "p",
+          "Em gestações cuja localização não foi documentada, analgesia, aconselhamento e seguimento dependem de sintomas e avaliação obstétrica. Evitar linguagem definitiva antes de evidência suficiente: comunicar 'o exame ainda não esclarece a localização ou a viabilidade' é mais honesto e clinicamente mais seguro que apresentar uma perda gestacional como fato com base em achado limítrofe."
+        ],
+        [
+          "3",
+          "Critérios ultrassonográficos e o cuidado com medidas limítrofes"
+        ],
+        [
+          "p",
+          "O NICE NG126 recomenda prudência particular na avaliação da viabilidade precoce. Em ultrassonografia transvaginal, embrião com CRL abaixo de 7 mm sem batimento visualizado requer nova avaliação antes de concluir aborto; se CRL é de 7 mm ou mais e não há batimentos, o documento aconselha segunda opinião e/ou repetição do exame antes de diagnóstico definitivo. Para saco sem embrião, o diâmetro médio de 25 mm marca outro ponto de atenção para confirmação, sempre com cautela técnica, segunda avaliação e contexto clínico. Os números não autorizam procedimento irreversível quando imagem é de qualidade duvidosa."
+        ],
+        [
+          "t",
+          [
+            "Situação em USG transvaginal",
+            "Conduta prudente segundo abordagem NICE",
+            "Por que é importante"
+          ],
+          [
+            [
+              "CRL &lt;7 mm sem atividade cardíaca",
+              "Segundo exame, tipicamente com pelo menos 7 dias, antes de decidir inviabilidade",
+              "Limite pequeno tem risco de erro de medida e desenvolvimento ainda inicial"
+            ],
+            [
+              "CRL ≥7 mm sem atividade cardíaca",
+              "Buscar segunda opinião e/ou repetir exame em intervalo adequado antes de decisão",
+              "Reduz falso diagnóstico por técnica/medição"
+            ],
+            [
+              "Saco sem embrião com diâmetro médio &lt;25 mm",
+              "Reavaliar em intervalo adequado antes de concluir perda",
+              "Visualização pode ser precoce"
+            ],
+            [
+              "Saco sem embrião com diâmetro médio ≥25 mm",
+              "Conferir medida, buscar segunda opinião e/ou novo exame",
+              "Grande especificidade desejada antes de tratamento irreversível"
+            ],
+            [
+              "USG apenas transabdominal sem batimentos",
+              "Intervalos e limitações próprios da via abdominal",
+              "Não aplicar cegamente o corte da técnica transvaginal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Os critérios ultrassonográficos dependem de técnica e contexto. O NICE descreve intervalo de pelo menos sete dias para certas reavaliações transvaginais e pelo menos quatorze dias em determinadas situações avaliadas apenas por via abdominal. Protocolos podem diferir quanto à combinação de medidas/intervalos. Nunca usar a regra 'não ouvi batimentos = aborto', pois disponibilidade de Doppler, estágio gestacional e medidas do embrião condicionam a interpretação. A assistência deve equilibrar necessidade de evitar espera desnecessária com a proteção de gestação potencialmente viável."
+        ],
+        [
+          "3",
+          "Linguagem recomendada em exame e aconselhamento"
+        ],
+        [
+          "p",
+          "Termos como 'gestação de viabilidade indeterminada' ou 'achado ultrassonográfico ainda inconclusivo' comunicam a incerteza sem afirmar algo que não foi demonstrado. Registrar CRL, diâmetro do saco, estruturas observadas e data exata do exame permite comparação objetiva. Explicar que repetir ultrassom não significa negligência, e sim parte da segurança diagnóstica, ajuda a reduzir ansiedade. Se a pessoa piora clinicamente, o plano de esperar por novo exame precisa ser revisto imediatamente: estabilidade é premissa do seguimento ambulatorial."
+        ],
+        [
+          "3",
+          "A perda confirmada não transforma a consulta em decisão técnica única"
+        ],
+        [
+          "p",
+          "Após confirmação confiável de uma perda gestacional, o cuidado deve incluir suporte emocional, orientação sobre sinais de infecção/hemorragia, discussão de opções clínicas permitidas, individualização conforme condição e preferência, e acompanhamento até resolução. A escolha entre condutas expectante, medicamentosa ou cirúrgica depende do tipo de perda, gravidade e protocolos, sendo tema próprio de urgências obstétricas. Nesta apostila, a competência central é chegar ao diagnóstico com certeza suficiente e organizar encaminhamento/seguimento, sem antecipar um procedimento com base em dado incompleto."
+        ]
+      ]
+    ],
+    [
+      "pul",
+      0,
+      [
+        [
+          "2",
+          "6. Gravidez de localização desconhecida (PUL/GUL): raciocínio sequencial"
+        ],
+        [
+          "3",
+          "Definição operacional"
+        ],
+        [
+          "p",
+          "Gestação de localização desconhecida é situação transitória em que teste de gravidez é positivo, mas o ultrassom não identifica com segurança implantação intrauterina nem extrauterina. Não é diagnóstico etiológico final nem sinônimo de ectópica. As possibilidades incluem gravidez intrauterina demasiadamente precoce para visualização, ectópica e gestação que está regredindo. A primeira decisão é classificar estabilidade clínica; depois, em pessoa estável, programar reavaliações para atingir conclusão ou resolução documentada."
+        ],
+        [
+          "3",
+          "O algoritmo que evita perder a ectópica"
+        ],
+        [
+          "o",
+          [
+            "Confirmar positividade de gravidez e estimar idade por história, sem atribuir certeza à DUM imprecisa.",
+            "Verificar estabilidade hemodinâmica, intensidade/localização da dor, sangramento e sinais peritoneais; instabilidade exige urgência.",
+            "Interpretar ultrassonografia transvaginal por profissional treinado, distinguindo gestação identificada de saco sugestivo e achados anexiais.",
+            "Se a localização segue indefinida, estabelecer plano de hCG quantitativo seriado e ultrassonografia repetida conforme quadro clínico e protocolo.",
+            "Não interpretar comportamento do hCG como localização comprovada; persistir vigilância até gestação localizada ou evolução resolvida.",
+            "Orientar claramente retorno imediato por piora de dor, síncope, sangramento importante, fraqueza intensa, dor no ombro ou outros sinais preocupantes.",
+            "Registrar quem receberá resultados, local e hora da nova avaliação; resultado pendente sem responsável é falha de segurança."
+          ]
+        ],
+        [
+          "3",
+          "A interpretação de tendência só é válida acompanhada de sintomas e acesso ao retorno"
+        ],
+        [
+          "p",
+          "Uma pessoa pode apresentar queda do hCG e ainda ter sangramento significativo de ectópica. Outra pode ter aumento menos intenso e gestação intrauterina viável, especialmente quando o valor inicial e idade são incertos. Portanto, não converter modelos estatísticos de cinética em intervenção sem considerar desejo gestacional, estabilidade, evolução clínica, imagens e discussão especializada. A sensibilidade do acompanhamento depende de acesso real: quem mora longe, não tem telefone ou tem dificuldade de retorno exige organização adicional pela rede para diminuir perda de seguimento."
+        ],
+        [
+          "p",
+          "A orientação de segurança precisa ser escrita e compreensível. Uma emergência pode surgir antes da data programada de nova coleta. A equipe não deve dar alta apenas com a frase 'repita hCG em dois dias': deve explicar sinais de urgência, disponibilidade de serviço e a diferença entre hipótese de gravidez precoce e diagnóstico confirmado de localização. Não afirmar que todo hCG baixo representa situação de baixo risco."
+        ],
+        [
+          "3",
+          "Estratificação de risco da GUL para seguimento seguro"
+        ],
+        [
+          "t",
+          [
+            "Eixo",
+            "Baixa complexidade imediata relativa",
+            "Exige reavaliação urgente"
+          ],
+          [
+            [
+              "Hemodinâmica",
+              "PA e perfusão estáveis, sem sinais de choque",
+              "Hipotensão, síncope, perfusão alterada"
+            ],
+            [
+              "Dor",
+              "Ausente ou leve sem progressão",
+              "Dor intensa/crescente, ombro ou irritação peritoneal"
+            ],
+            [
+              "Sangramento",
+              "Leve e autolimitado em quadro estável",
+              "Hemorragia importante e sinais sistêmicos"
+            ],
+            [
+              "Imagem",
+              "Nenhuma massa de risco identificada e contexto favorável",
+              "Massa anexial suspeita, líquido livre importante"
+            ],
+            [
+              "Acesso a retorno",
+              "Pessoa compreende plano e consegue voltar",
+              "Barreiras de transporte/comunicação ou ausência de responsável"
+            ],
+            [
+              "Evolução clínica",
+              "Sintomas estáveis e acompanhamento organizado",
+              "Nova dor, tontura, agravamento ou sinais vitais alterados"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A classificação relativa acima não substitui protocolo nem fornece garantia de que uma pessoa assintomática esteja livre de ectópica. Ela organiza segurança do seguimento e identifica quem precisa avaliação imediata. O plano depende de clínica, dados laboratoriais, ultrassom, capacidade de reavaliação e preferências da pessoa. Em caso de dúvida ou impossibilidade de garantir retorno seguro, a decisão de observação/encaminhamento deve considerar risco de deterioração não reconhecida."
+        ],
+        [
+          "3",
+          "Ultrassom normal fora do útero não exclui ectópica muito pequena"
+        ],
+        [
+          "p",
+          "A gestação ectópica pode ser difícil de visualizar nas primeiras semanas. Uma avaliação anexial não diagnóstica não exclui a hipótese se hCG é positivo e a cavidade uterina também não tem estruturas confirmatórias. Por isso a GUL permanece categoria provisória até se demonstrar gravidez localizada ou desaparecimento seguro do quadro conforme protocolo. Uma redução de hCG não elimina inteiramente risco de ruptura; o paciente deve conhecer instruções concretas para emergência e dispor de meio de retorno."
+        ],
+        [
+          "3",
+          "O que fazer quando a pessoa não comparece à coleta de retorno"
+        ],
+        [
+          "p",
+          "Uma série de hCG que nunca é completada perde valor clínico. Serviços devem estabelecer quem verifica resultados, quem entra em contato diante de faltas e como encaminhar para avaliação presencial. Isso é particularmente importante quando houve dor ou sangramento e há possibilidade de ectópica. O agendamento deve conter prazo, lugar, meio de contato e critérios de emergência, e não apenas a expressão vaga 'se necessário'. A comunicação documentada protege tanto o paciente quanto a continuidade do cuidado na rede."
+        ]
+      ]
+    ],
+    [
+      "data",
+      0,
+      [
+        [
+          "2",
+          "7. Fundamentos da idade gestacional: DUM, idade pós-concepcional e DPP"
+        ],
+        [
+          "3",
+          "Datação obstétrica não mede o instante da fecundação"
+        ],
+        [
+          "p",
+          "Por convenção clínica, a gestação começa a ser contada no primeiro dia da última menstruação. Uma gestação a termo de quarenta semanas corresponde aproximadamente a 280 dias após essa data; a fecundação em ciclo clássico costuma ocorrer cerca de duas semanas depois, mas a variação individual é relevante. Idade gestacional é estimativa clínica útil, não cronômetro exato do desenvolvimento de cada embrião. Para comunicar, expressar semanas completas e dias adicionais, por exemplo 10 semanas e 4 dias (10s4d)."
+        ],
+        [
+          "3",
+          "Regra de Näegele e a importância do calendário real"
+        ],
+        [
+          "p",
+          "A DPP clássica é calculada pela DUM mais 280 dias, equivalente a somar sete dias e nove meses em ciclos de 28 dias, lembrando ano bissexto e diferenças entre duração dos meses. A regra de Näegele oferece atalho, mas um software que realiza soma em dias reais evita confusões nas transições de mês/ano. Em ciclos muito longos ou irregulares, ajustar automaticamente só pelo número de dias pode falhar porque a ovulação não é previsível; priorizar ultrassonografia precoce se disponível."
+        ],
+        [
+          "t",
+          [
+            "História menstrual",
+            "Risco de erro",
+            "Escolha de datação"
+          ],
+          [
+            [
+              "DUM conhecida, ciclos regulares e sem sangramento atípico",
+              "Menor, porém não nulo",
+              "Usar DUM e conferir com ultrassom precoce"
+            ],
+            [
+              "DUM esquecida, ciclos irregulares",
+              "Atraso pode ser por ovulação tardia",
+              "Preferir CRL precoce se tecnicamente adequado"
+            ],
+            [
+              "Uso hormonal recente ou amenorreia por lactação",
+              "Primeira ovulação pode preceder primeira menstruação",
+              "DUM pouco confiável, usar ultrassom"
+            ],
+            [
+              "Sangramento na gravidez confundido com menstruação",
+              "Idade gestacional subestimada",
+              "Rever história e ultrassom precoce"
+            ],
+            [
+              "Transferência embrionária em FIV",
+              "Dia de embrião e transferência são conhecidos",
+              "Usar idade derivada da reprodução assistida"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O que a DPP significa para a família"
+        ],
+        [
+          "p",
+          "A DPP é ponto de referência para planejamento, não promessa de nascimento naquela data. Uma diferença de poucos dias pode ser clinicamente irrelevante no início, mas impactar classificação de prematuridade e decisões de vigilância quando se aproxima do termo. Registrar no prontuário a fonte da datação, o exame usado e o motivo de eventual revisão reduz contradições futuras. Comunicar com clareza evita que a pessoa receba três DPP diferentes de profissionais distintos sem explicação."
+        ],
+        [
+          "3",
+          "Exercício orientado de idade gestacional sem falsificar a DUM"
+        ],
+        [
+          "p",
+          "Considere uma paciente com DUM confirmada em 1º de maio e consulta em 22 de maio do mesmo ano. O intervalo entre as duas datas é de 21 dias, correspondendo a três semanas completas, de modo que a IG pela DUM é 3s0d. Esse número é convenção obstétrica, e não idade embrionária. Se a paciente tem ciclos muito irregulares ou sangramento que pode não ter sido menstrual, o resultado aritmético é correto para a data informada, mas a premissa é frágil: a idade clínica deve ser cotejada com ultrassom oportuno e contexto. O erro frequente é apresentar uma conta formalmente impecável como prova de data biológica exata."
+        ],
+        [
+          "p",
+          "Uma segunda situação ilustra a unidade de medida: DUM há 73 dias equivale a dez semanas completas e três dias, pois 73 = 10 × 7 + 3. O prontuário deve registrar 10s3d, não '10,4 semanas' sem explicação, porque a parte decimal pode ser confundida com quatro dias quando na verdade representa fração de semana. O cálculo da DPP usa a idade de referência de 280 dias após a DUM; se a paciente chega à consulta em 10s3d, restariam aproximadamente 29s4d até 40s0d, sujeito à qualidade da datação. Uma decisão clínica que exige semana precisa deve usar o valor em dias."
+        ],
+        [
+          "3",
+          "Métodos de datação têm diferentes fontes de incerteza"
+        ],
+        [
+          "t",
+          [
+            "Método",
+            "Onde reside a incerteza",
+            "Como melhorá-la"
+          ],
+          [
+            [
+              "DUM",
+              "Memória, ciclos irregulares, sangramento que não foi menstruação",
+              "Registrar confiabilidade e confirmar precocemente"
+            ],
+            [
+              "Ultrassom por CRL",
+              "Plano de medida, posição fetal, operador, aparelho",
+              "Rever imagem/medidas e usar laudo de qualidade"
+            ],
+            [
+              "Biometria do segundo trimestre",
+              "Variação normal de crescimento e composição de parâmetros",
+              "Usar medida composta e dados anteriores disponíveis"
+            ],
+            [
+              "Biometria tardia",
+              "Crescimento patológico pode parecer idade menor",
+              "Evitar redatar feto pequeno sem avaliar restrição"
+            ],
+            [
+              "Reprodução assistida",
+              "Registro da transferência e idade embrionária",
+              "Conferir documentação do laboratório/centro"
+            ],
+            [
+              "História de relação sexual",
+              "Coito não equivale necessariamente a ovulação/fecundação",
+              "Não atribuir DPP à data de relação como regra"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Idade cronológica, idade corrigida e tempo de concepção: nomenclaturas distintas"
+        ],
+        [
+          "p",
+          "Na obstetrícia, idade gestacional estima tempo desde a última menstruação convencional. Em neonatologia, idade pós-natal é o tempo desde o nascimento; idade corrigida do prematuro representa outra operação usada para acompanhar desenvolvimento. Idade pós-concepcional pode ser usada com significados diferentes em literatura e deve ser contextualizada, porque confundir tempo desde fecundação com idade gestacional produz erro de cerca de duas semanas no ciclo clássico. Em provas, ler se o problema pede idade gestacional no dia da consulta, DPP, ou idade de embrião em reprodução assistida antes de iniciar cálculo."
+        ],
+        [
+          "3",
+          "Por que documentar o motivo de uma mudança de DPP"
+        ],
+        [
+          "p",
+          "A mudança de datação pode alterar decisões relativas a corticoide antenatal, rastreio laboratorial, crescimento fetal, prematuridade e indução. Sempre que houver razão válida para rever a DPP — por exemplo, DUM pouco confiável e ultrassom precoce que estabelece idade de forma mais robusta — registrar a data anterior, a nova, o exame usado e a justificativa. Evitar substituições silenciosas, que fazem diferentes profissionais usar calendários conflitantes. Depois de estabelecida a melhor DPP, novas medidas devem ser interpretadas como dados de crescimento e anatomia, não como novos relógios."
+        ]
+      ]
+    ],
+    [
+      "crl",
+      0,
+      [
+        [
+          "2",
+          "8. Datação por ultrassonografia: CRL e queda da precisão ao longo da gravidez"
+        ],
+        [
+          "3",
+          "Primeiro trimestre: o melhor momento para estimar idade"
+        ],
+        [
+          "p",
+          "O comprimento cabeça-nádegas (CRL ou CCN) medido adequadamente no primeiro trimestre é o parâmetro mais preciso para estimar idade gestacional. ACOG/AIUM/SMFM descrevem precisão aproximada de ±5–7 dias nessa fase. A medição exige plano apropriado e posição fetal adequada; valores discrepantes requerem revisar qualidade técnica antes de alterar data do parto. O diâmetro médio do saco gestacional não deve ser usado como substituto do CRL para definir DPP quando embrião já é identificável."
+        ],
+        [
+          "3",
+          "Diferença entre DUM e ultrassom: não aplicar o mesmo limiar em todas as semanas"
+        ],
+        [
+          "p",
+          "A decisão de redatar depende da idade gestacional do primeiro ultrassom e da confiabilidade menstrual. Em recomendações ACOG, discrepância superior a cinco dias antes de nove semanas pode justificar revisão; entre nove semanas e treze semanas e seis dias, discrepância superior a sete dias pode justificar mudança. Em semanas posteriores, a tolerância aumenta porque a variabilidade do crescimento fetal é maior. Essas faixas pertencem ao documento referido e precisam ser usadas com julgamento clínico, não como fronteira absoluta que elimina análise de exame mal executado."
+        ],
+        [
+          "3",
+          "Segundo e terceiro trimestres: crescimento deixa de ser sinônimo de idade"
+        ],
+        [
+          "p",
+          "Quando não há datação precoce, biometria fetal do segundo trimestre utiliza medidas combinadas de cabeça, abdome e fêmur. A precisão diminui progressivamente com a idade gestacional. Na fase tardia, o risco de alterar DPP apenas porque o feto está pequeno é confundir restrição de crescimento com 'gestação mais nova'. ACOG descreve erro aproximado muito maior para o terceiro trimestre, o que obriga a interpretar biometria junto com todas as informações anteriores e acompanhar crescimento serialmente quando indicado."
+        ],
+        [
+          "t",
+          [
+            "Fonte",
+            "Papel correto",
+            "Erro que pode alterar conduta"
+          ],
+          [
+            [
+              "CRL 1º trimestre",
+              "Base de alta precisão para IG e DPP",
+              "Redatar depois por variação de tamanho tardio"
+            ],
+            [
+              "Biometria 2º trimestre sem exame prévio",
+              "Melhor estimativa disponível com menor precisão",
+              "Tratar como tão precisa quanto CRL precoce"
+            ],
+            [
+              "Biometria 3º trimestre isolada",
+              "Estimativa de grande incerteza",
+              "Classificar feto pequeno como 'mais jovem' sem investigar restrição"
+            ],
+            [
+              "DUM duvidosa",
+              "Dado histórico de baixo peso",
+              "Manter por insistência mesmo com ultrassom precoce consistente"
+            ],
+            [
+              "DPP documentada e confiável",
+              "Referência clínica ao longo do pré-natal",
+              "Trocar em toda ultrassonografia"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Uma gestação sem ultrassonografia que confirme ou ajuste DPP antes de 22 semanas é classificada como subotimamente datada por critérios ACOG. Isso não significa que a gravidez não possa ser acompanhada, mas que decisões sobre crescimento, indução e pós-termo devem levar em conta incerteza adicional. Não extrapolar essa classificação para afastar critérios brasileiros de acesso e cuidado de pré-natal."
+        ],
+        [
+          "3",
+          "Guia de decisão segundo momento da primeira ultrassonografia"
+        ],
+        [
+          "t",
+          [
+            "Quando há o primeiro exame utilizável",
+            "Papel na melhor DPP",
+            "Ponto de atenção"
+          ],
+          [
+            [
+              "Antes de 9 semanas",
+              "CRL precoce pode justificar revisão da DPP se discrepância com DUM confiável exceder cerca de 5 dias, conforme ACOG",
+              "Medidas muito pequenas requerem técnica cuidadosa"
+            ],
+            [
+              "9 semanas a 13 semanas e 6 dias",
+              "CRL continua método mais preciso; divergência acima de cerca de 7 dias pode justificar mudança",
+              "Revisar a confiabilidade menstrual e laudo"
+            ],
+            [
+              "14 a 21 semanas e 6 dias",
+              "Biometria permite datação com incerteza maior, se não houver CRL confiável",
+              "Não descartar ultrassom do primeiro trimestre"
+            ],
+            [
+              "22 a 27 semanas e 6 dias",
+              "Aumenta margem de erro e necessidade de cautela",
+              "Com ausência de exame antes de 22 semanas, ACOG considera datação subótima"
+            ],
+            [
+              "28 semanas ou mais",
+              "Baixa precisão para determinar idade a partir do crescimento",
+              "Evitar recuar DPP de feto pequeno para não ocultar doença placentária"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O quadro resume o raciocínio da fonte ACOG/AIUM/SMFM de 2017, sem reproduzir sua tabela oficial de limiares. Para aplicação clínica, conferir a íntegra da fonte e protocolo obstétrico local, inclusive intervalos específicos da segunda metade da gestação. O efeito mais importante é não atribuir a ultrassonografia de terceiro trimestre a mesma precisão do CRL precoce. Em gestação de datação subótima, decisões sobre antecipar o parto por conveniência não devem ser tratadas como equivalentes a decisões sustentadas por idade gestacional bem estabelecida."
+        ],
+        [
+          "3",
+          "Biometria não é só crescimento: saber de onde vem o número"
+        ],
+        [
+          "p",
+          "No segundo trimestre, medidas como diâmetro biparietal, circunferência cefálica, circunferência abdominal e comprimento do fêmur alimentam equações de datação e de peso estimado, mas respondem a perguntas diferentes. A medida abdominal se altera mais em distúrbios nutricionais do feto; a medida cefálica pode ser afetada por formas cranianas e anomalias; o fêmur pode ser influenciado por variação constitucional ou condições específicas. A datação composta é uma estimativa em população, não garantia de que cada feto tenha dimensões exatas da média. Quando há discrepância relevante, o laudo deve diferenciar problema de crescimento e problema de medida."
+        ],
+        [
+          "3",
+          "Concordância aparente não dispensa revisar a fonte"
+        ],
+        [
+          "p",
+          "Um laudo pode imprimir idade gestacional e DPP automaticamente com base em DUM previamente cadastrada, em vez de cálculo independente pelo CRL; outro pode incorporar as duas estimativas. É essencial perguntar se a idade mostrada foi obtida pela medida fetal ou inserida como dado de entrada. Se o médico apenas compara duas colunas que derivam da mesma DUM, não realizou confirmação independente. O documento de melhor DPP deve apontar fonte original da estimativa, data do exame, parâmetros e discrepância encontrada."
+        ]
+      ]
+    ],
+    [
+      "fiv",
+      0,
+      [
+        [
+          "2",
+          "9. Reprodução assistida, gemelaridade e situações especiais"
+        ],
+        [
+          "3",
+          "Reprodução assistida: a origem da idade gestacional é conhecida"
+        ],
+        [
+          "p",
+          "Em transferência de embrião por fertilização in vitro, a idade embrionária no dia da transferência é conhecida e deve orientar a idade gestacional e DPP. Para embrião de dia cinco, ACOG exemplifica data provável do parto equivalente a 261 dias após transferência; para embrião de dia três, 263 dias. A conta considera período de desenvolvimento embrionário antes de transferência. Não redatar uma gestação corretamente datada por FIV apenas porque um ultrassom posterior mediu pequeno desvio."
+        ],
+        [
+          "3",
+          "Gemelaridade exige distinguir datação de corionicidade"
+        ],
+        [
+          "p",
+          "A datação da gestação múltipla deve ser estabelecida de forma consistente por ultrassonografia precoce; quando há discordância de tamanho dos embriões, a escolha do parâmetro de referência depende de orientações especializadas. A identificação de corionicidade e amnionicidade é decisão adicional, que altera vigilância obstétrica por risco de complicações específicas. Não presumir que detectar dois sacos seja suficiente para classificar todas as relações placentárias. A apostila de pré-natal e os capítulos de gestação múltipla aprofundam organização da vigilância."
+        ],
+        [
+          "3",
+          "Pós-contraceptivo, amenorreia e sangramento atípico"
+        ],
+        [
+          "p",
+          "Uso recente de contraceptivos hormonais, períodos de amamentação, perdas gestacionais recentes, irregularidade ovulatória e sangramento de implantação podem tornar a data menstrual incerta. A história deve reconhecer esses contextos sem culpa ou pressupor falha de método. Quando DUM não é confiável, ultrassom precoce tecnicamente correto costuma melhorar a precisão. Mesmo assim, pequenas diferenças entre idade ultrassonográfica e percepção da pessoa devem ser comunicadas como variação de estimativa, não erro pessoal."
+        ],
+        [
+          "3",
+          "Transferência embrionária: o erro de somar 280 dias à data da transferência"
+        ],
+        [
+          "p",
+          "A transferência não corresponde ao primeiro dia de uma última menstruação. Na FIV, sabe-se que o embrião passou determinado número de dias de desenvolvimento antes da transferência; por isso se subtrai essa idade biológica da referência conceitual de datação. ACOG fornece exemplos de DPP a 261 dias após transferência de embrião do quinto dia e a 263 dias após transferência do terceiro dia. O aluno não precisa decorar procedimentos laboratoriais não envolvidos na idade, mas deve reconhecer que a regra menstrual de 280 dias não é aplicada diretamente à data da transferência."
+        ],
+        [
+          "3",
+          "Quando o ultrassom e a FIV parecem discordantes"
+        ],
+        [
+          "p",
+          "Pequenas diferenças de medida ultrassonográfica em embrião de reprodução assistida não devem automaticamente alterar datação originalmente ancorada em informações embriológicas seguras. Revisar documento do centro, dia do embrião e qualidade do ultrassom. Uma discrepância maior pode indicar diferença de metodologia, erro de registro ou questão de evolução e merece avaliação especializada. Redatar repetidamente enfraquece interpretação de exames sequenciais; manter uma DPP coerente permite reconhecer crescimento inadequado ou divergência de desenvolvimento quando surgem."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos clínicos comentados: da suspeita à datação segura"
+        ],
+        [
+          "3",
+          "Caso 1 — Urina negativa antes do atraso menstrual esperado"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> pessoa de 27 anos com ciclos irregulares, relação sexual sem contracepção há dez dias e teste urinário negativo. <strong>Questão:</strong> gestação está excluída? <strong>Raciocínio:</strong> pode não ter ocorrido implantação suficiente para hCG urinário detectável; irregularidade menstrual dificulta localizar ovulação. <strong>Conduta:</strong> avaliar sintomas e risco, orientar repetição em momento apropriado ou hCG sérico conforme circunstâncias e contracepção/planejamento. <strong>Erro evitado:</strong> usar teste muito precoce como garantia definitiva de ausência de gravidez."
+        ],
+        [
+          "3",
+          "Caso 2 — hCG positivo e ultrassonografia sem saco intrauterino"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> paciente estável, 5 semanas e 2 dias por DUM incerta, dor pélvica discreta, hCG sérico positivo e transvaginal que não demonstra localização. <strong>Hipóteses:</strong> gravidez intrauterina muito precoce, ectópica ou gestação em resolução. <strong>Interpretação:</strong> diagnóstico sindrômico é gestação de localização desconhecida. <strong>Conduta:</strong> organizar reavaliação de hCG/ultrassom e orientar sinais de alarme por escrito. <strong>Erro evitado:</strong> indicar tratamento de ectópica ou declarar aborto com exame único não conclusivo."
+        ],
+        [
+          "3",
+          "Caso 3 — Dor intensa e síncope não esperam curva de hCG"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> pessoa com atraso menstrual, teste positivo, dor abdominal súbita, síncope e hipotensão. <strong>Hipótese preocupante:</strong> gravidez ectópica complicada com hemoperitônio entre outras urgências. <strong>Raciocínio:</strong> prioridade é estabilização, avaliação hemodinâmica e acesso imediato à equipe cirúrgica/obstétrica, não confirmação de uma progressão ideal do hCG. <strong>Conduta:</strong> emergência, suporte e diagnóstico/intervenção conforme avaliação especializada. <strong>Erro evitado:</strong> aguardar hCG em 48 horas em paciente instável."
+        ],
+        [
+          "3",
+          "Caso 4 — DUM incerta e ultrassonografia precoce"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> gestante não recorda DUM, tem ciclos entre 30 e 48 dias e ultrassom transvaginal com CRL compatível com 9 semanas e 4 dias. <strong>Raciocínio:</strong> DUM não é confiável; CRL precoce fornece melhor estimativa disponível. <strong>Conduta:</strong> registrar idade por ultrassom, DPP decorrente e origem da medida, comunicar e manter datação ao longo das consultas. <strong>Erro evitado:</strong> fabricar uma DUM com base em memória imprecisa."
+        ],
+        [
+          "3",
+          "Caso 5 — Feto pequeno no terceiro trimestre"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> gestante com ultrassom de 9 semanas bem documentado e biometria com peso estimado abaixo do esperado em 32 semanas. Outro profissional sugere 'adiar a DPP em três semanas'. <strong>Raciocínio:</strong> CRL precoce é mais preciso e pequena biometria tardia pode refletir restrição de crescimento, erro técnico ou variação constitucional. <strong>Conduta:</strong> não redatar automaticamente; investigar crescimento e bem-estar fetal conforme protocolo. <strong>Erro evitado:</strong> esconder crescimento inadequado por alteração da idade obstétrica."
+        ],
+        [
+          "3",
+          "Caso 6 — Gestação após FIV e transferência de blastocisto"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> gestação por FIV com embrião de dia cinco, transferência documentada, ultrassom inicial com pequena discrepância em relação à idade calculada pela transferência. <strong>Raciocínio:</strong> a data de transferência e idade embrionária são dados objetivos. <strong>Conduta:</strong> usar datação derivada de FIV conforme ACOG, revisar laudo e documentar. <strong>Erro evitado:</strong> substituir data conhecida por variação de medida ultrassonográfica."
+        ],
+        [
+          "3",
+          "Caso 7 — Pequeno embrião sem batimentos no primeiro exame"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> gestante assintomática, DUM pouco confiável, USG detecta saco e embrião diminuto sem atividade cardíaca visualizada; o laudo não documenta medida compatível com critério inequívoco de perda. <strong>Raciocínio:</strong> imagem muito precoce pode ser inconclusiva. <strong>Conduta:</strong> avaliação especializada e ultrassom de seguimento no intervalo adequado, com comunicação e orientação de sinais de alarme. <strong>Erro evitado:</strong> rotular abortamento retido e oferecer intervenção irreversível sem confirmação."
+        ],
+        [
+          "3",
+          "Caso 8 — hCG em queda não encerra acompanhamento automaticamente"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> paciente com GUL e hCG em queda, mas persiste com dor pélvica. <strong>Hipóteses:</strong> gestação em resolução, ectópica ainda presente ou outra causa de dor. <strong>Conduta:</strong> reavaliar sinais vitais, exame e imagem conforme gravidade, acompanhar até resolução/localização segura e reforçar acesso à urgência. <strong>Erro evitado:</strong> presumir risco zero porque a curva está descendente."
+        ],
+        [
+          "3",
+          "Caso 9 — hCG sérico persistentemente baixo e urina negativa sem sintomas"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> pessoa de 51 anos, sem atraso menstrual típico e sem sintomas de gestação, tem hCG sérico discretamente elevado em duas coletas e teste urinário negativo. <strong>Raciocínio:</strong> antes de supor gestação, avaliar a possibilidade de interferência analítica, hCG hipofisário de perimenopausa ou outras causas, mantendo investigação de gravidez quando ainda plausível. <strong>Conduta:</strong> conferir ensaio, resultados de laboratório, função renal, contexto endócrino e considerar método alternativo sob orientação de medicina laboratorial/ACOG 2026. <strong>Erro evitado:</strong> terapia invasiva para resultado isolado sem confirmação."
+        ],
+        [
+          "3",
+          "Caso 10 — CRL muito pequeno sem batimentos não prova perda"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> paciente estável, DUM incerta, ultrassom transvaginal encontra embrião de CRL 4 mm sem atividade cardíaca visualizada. <strong>Raciocínio:</strong> o tamanho está abaixo do limiar de maior especificidade usado nas diretrizes para inviabilidade, e o exame pode ser precoce. <strong>Conduta:</strong> registrar tamanho e estruturas, programar novo exame após intervalo compatível — NICE utiliza pelo menos sete dias em situações transvaginais — e fornecer orientação de sinais de alarme. <strong>Erro evitado:</strong> realizar intervenção irreversível por diagnóstico não confirmado."
+        ],
+        [
+          "3",
+          "Caso 11 — Saco de 26 mm sem embrião exige checagem especializada"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> pessoa com desejo gestacional, assintomática, transvaginal informa saco com diâmetro médio de 26 mm sem embrião. <strong>Raciocínio:</strong> valor ultrapassa limiar utilizado em critérios conservadores, mas mensuração, via, imagens e conclusão precisam ser verificadas; NICE orienta segunda opinião e/ou nova avaliação antes de diagnóstico definitivo. <strong>Conduta:</strong> revisão técnica e diálogo sobre incerteza residual e opções após confirmação. <strong>Erro evitado:</strong> tratar uma imagem única de qualidade desconhecida como certeza absoluta sem auditoria."
+        ],
+        [
+          "3",
+          "Caso 12 — Gravidez intrauterina identificada após FIV, mas dor e líquido livre"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> após reprodução assistida, ultrassom confirma saco intrauterino com vesícula vitelínica, mas paciente apresenta dor unilateral intensa e líquido livre. <strong>Hipótese a excluir:</strong> gestação heterotópica ou outra causa de abdome agudo. <strong>Raciocínio:</strong> presença de gravidez intrauterina reduz probabilidade de ectópica isolada, mas não elimina heterotópica em todos os cenários. <strong>Conduta:</strong> avaliação imediata por equipe obstétrica, incluindo anexos e estabilidade clínica. <strong>Erro evitado:</strong> usar gravidez intrauterina como justificativa para ignorar abdome agudo."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "11. Questões autorais com comentários por alternativa"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q1.</strong> Um teste urinário positivo confirma: A) que a gestação está no útero; B) que o embrião tem batimentos; C) presença de hCG detectável, sem determinar localização e viabilidade; D) idade exata de seis semanas. <strong>Gabarito C.</strong> A exige evidência de localização; B depende de avaliação ultrassonográfica adequada; D confunde positividade com datação. Revisão: separar confirmação hormonal, localização e viabilidade.",
+            "<strong>Q2.</strong> Pessoa com teste positivo, síncope, dor pélvica intensa e hipotensão. Conduta? A) aguardar curva de hCG em 48 horas; B) iniciar captação de pré-natal sem urgência; C) estabilizar e avaliar imediatamente emergência obstétrica/ectópica complicada; D) repetir teste urinário para confirmar. <strong>Gabarito C.</strong> A/B/D atrasam atendimento em instabilidade. Revisão: gravidade clínica precede exames seriados.",
+            "<strong>Q3.</strong> O principal parâmetro de datação no primeiro trimestre após visualizar embrião é: A) diâmetro médio do saco; B) comprimento cabeça-nádegas; C) circunferência abdominal no terceiro trimestre; D) valor de hCG sérico. <strong>Gabarito B.</strong> A tem menor precisão para DPP; C varia com crescimento; D não estima idade de forma suficientemente específica. Revisão: CRL/CCN precoce.",
+            "<strong>Q4.</strong> Gestante com CRL de primeiro trimestre corretamente documentado tem biometria pequena em 32 semanas. O melhor é: A) mudar a DPP automaticamente para três semanas depois; B) ignorar crescimento; C) manter datação inicial e avaliar possível alteração do crescimento; D) usar apenas altura uterina para redefinir DPP. <strong>Gabarito C.</strong> A pode ocultar restrição; B ignora risco; D não supera datação precoce. Revisão: tamanho tardio não é relógio gestacional confiável.",
+            "<strong>Q5.</strong> hCG sérico positivo, USG transvaginal sem identificação de gestação uterina ou ectópica em pessoa estável corresponde a: A) gravidez de localização desconhecida; B) abortamento obrigatório; C) ectópica confirmada; D) gestação intrauterina viável confirmada. <strong>Gabarito A.</strong> B, C e D atribuem certeza que o exame não oferece. Revisão: classificação temporária requer seguimento.",
+            "<strong>Q6.</strong> Sobre hCG quantitativo em 48 horas: A) toda gestação viável dobra exatamente; B) queda elimina qualquer risco de ectópica; C) tendência é informação adicional, sem definir localização isoladamente; D) hCG alto garante gestação uterina. <strong>Gabarito C.</strong> A usa regra rígida; B e D geram falsa segurança. Revisão: combinar clínica, USG e seguimento.",
+            "<strong>Q7.</strong> DUM duvidosa, ciclos irregulares e CRL de 9s4d em USG de boa qualidade: A) dar preferência à estimativa ultrassonográfica; B) insistir em DUM inventada; C) usar altura uterina para redatar em 32 semanas; D) aguardar hCG triplicar para definir DPP. <strong>Gabarito A.</strong> B elimina confiabilidade; C é inferior ao CRL precoce; D não é método de datação. Revisão: registrar fonte da melhor DPP.",
+            "<strong>Q8.</strong> Um embrião pequeno sem batimentos num exame muito precoce e com DUM incerta permite: A) diagnóstico invariável de aborto; B) intervenção irreversível imediata sem medidas; C) reconhecer possível exame inconclusivo e programar reavaliação em intervalo adequado; D) dispensar orientação de retorno se assintomática. <strong>Gabarito C.</strong> A/B excedem evidência; D ignora risco de evolução ou ectópica não completamente excluída. Revisão: critérios de inviabilidade precisam ser rigorosos.",
+            "<strong>Q9.</strong> Gestação por transferência de embrião de cinco dias: A) ignorar data da transferência; B) usar idade derivada da reprodução assistida para estimar DPP; C) calcular só pelo primeiro teste urinário; D) redatar a cada USG. <strong>Gabarito B.</strong> A/C/D perdem dado objetivo. Revisão: data do embrião e da transferência.",
+            "<strong>Q10.</strong> Uma zona discriminatória de hCG significa: A) limiar absoluto abaixo do qual ectópica nunca rompe; B) valor que confirma aborto; C) referência técnica para expectativa de visualização ultrassonográfica, dependente de condições e sem substituir clínica; D) indicação automática de metotrexato. <strong>Gabarito C.</strong> A é perigosa; B e D confundem expectativa de imagem com decisão definitiva. Revisão: não usar corte fixo como diagnóstico isolado.",
+            "<strong>Q11.</strong> Por que redatar no terceiro trimestre pode ser prejudicial? A) biometrias tardias sempre têm erro zero; B) pode disfarçar restrição de crescimento ao classificar feto pequeno como mais jovem; C) CRL é menos preciso que crescimento tardio; D) DPP não influencia decisões. <strong>Gabarito B.</strong> A/C contrariam precisão por trimestre; D ignora interpretação de idade e planejamento. Revisão: manter melhor estimativa.",
+            "<strong>Q12.</strong> Em paciente com GUL estável, plano adequado inclui: A) curva/USG seriados conforme protocolo e sinais de alarme; B) alta sem retorno; C) concluir que qualquer sangramento é implantação; D) tratar ectópica sem avaliação. <strong>Gabarito A.</strong> B perde seguimento; C atribui etiologia sem prova; D pode expor gestação intrauterina viável. Revisão: segurança depende de reavaliação organizada."
+          ]
+        ],
+        [
+          "3",
+          "Questões adicionais — cálculos, critérios ultrassonográficos e situações especiais"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q13.</strong> DUM há 73 dias corresponde a: A) 10 semanas e 3 dias; B) 10 semanas e 7 dias; C) 7 semanas e 3 dias; D) 12 semanas. <strong>Gabarito A.</strong> B mantém sete dias sem completar a semana; C subestima divisão por sete; D não corresponde ao intervalo. Revisão: 73 = 70 + 3.",
+            "<strong>Q14.</strong> CRL de 4 mm em transvaginal sem batimentos. A) confirma morte embrionária; B) não pode haver gravidez; C) requer avaliação evolutiva antes de diagnóstico de perda, conforme contexto e diretriz; D) indica hCG obrigatório de 100.000. <strong>Gabarito C.</strong> A/B excedem o que imagem pequena permite; D usa valor hormonal imaginário. Revisão: rigor dos critérios conservadores evita intervenção desnecessária.",
+            "<strong>Q15.</strong> Uma paciente com CRL precoce de 9 semanas e DPP confiável passa a ter biometria pequena no terceiro trimestre. A) redatar pelo peso automaticamente; B) avaliar crescimento e manter melhor datação; C) não existe doença placentária se CRL inicial normal; D) usar concentração de hCG para estimar DPP. <strong>Gabarito B.</strong> A encobre restrição; C descarta riscos posteriores; D não é método adequado. Revisão: separar idade e crescimento.",
+            "<strong>Q16.</strong> HCG sérico discretamente elevado e persistente em pessoa não grávida após investigação adequada pode ser causado por: A) apenas gravidez intrauterina; B) unicamente câncer; C) interferência de ensaio ou produção hipofisária em contexto apropriado; D) nunca existe falso positivo laboratorial. <strong>Gabarito C.</strong> A/B excluem alternativas; D contraria ACOG 2026. Revisão: investigar sistematicamente antes de procedimento invasivo.",
+            "<strong>Q17.</strong> Sobre transferência de blastocisto de cinco dias: A) DPP se conta 280 dias após transferência; B) usar idade embrionária e data documentada da transferência, segundo referência de reprodução assistida; C) redatar em cada ultrassom; D) usar data de teste urinário. <strong>Gabarito B.</strong> A ignora desenvolvimento antes da transferência; C/D perdem precisão. Revisão: ACOG exemplifica 261 dias após transferência de embrião de dia cinco.",
+            "<strong>Q18.</strong> Pessoa com saco intrauterino viável após FIV apresenta dor abdominal intensa e líquido livre. A) heterotópica é absolutamente impossível; B) descartar toda urgência porque gestação intrauterina está confirmada; C) avaliar imediatamente, lembrando heterotópica e outras causas graves; D) esperar três semanas. <strong>Gabarito C.</strong> A/B usam impossibilidade falsa; D atrasa avaliação de abdome agudo. Revisão: localização de uma gestação não exclui outro processo simultâneo."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "12. Bibliografia, fronteira curricular e pendências"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG/AIUM/SMFM. Committee Opinion nº 700. Methods for Estimating the Due Date. 2017.</a>",
+            "<a href=\"https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Early Pregnancy Loss. Practice Bulletin. 2018.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Pré-natal: início precoce, captação e continuidade na APS.</a>",
+            "<a href=\"https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/pregnancy-unknown-location-pul\" target=\"_blank\" rel=\"noopener noreferrer\">UCLH/NHS. Pregnancy of Unknown Location: seguimento e sinais de alerta.</a>",
+            "<a href=\"https://www.nice.org.uk/guidance/NG126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy\" target=\"_blank\" rel=\"noopener noreferrer\">NICE. NG126. Diagnóstico de gravidez intrauterina viável e ectópica tubária; segunda opinião e reavaliação.</a>",
+            "<a href=\"https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2026/02/management-of-positive-human-chorionic-gonadotropin-test-results-in-nonpregnant-patients-without-gynecologic-malignancy\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG. Clinical Consensus nº 11, fevereiro de 2026: elevação de hCG fora de gestação confirmada.</a>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Comparação LURIA com materiais existentes:</strong> antes de redigir, foram abertos os PDFs privados '02 - ASSISTENCIA AO PRE-NATAL.pdf' e '02 - SANGRAMENTO DA PRIMEIRA METADE.pdf'; a autoria institucional do cursinho não pôde ser confirmada. Seus textos e imagens não foram reproduzidos. O material público preexistente da LURIA 'Pré-natal de Baixo Risco' também foi lido, especialmente os capítulos de diagnóstico de gestação, cálculo de DUM/IG/DPP e ultrassonografia; seu papel de seguimento longitudinal não foi transferido nem apagado."
+        ],
+        [
+          "p",
+          "<strong>Matriz de cobertura interna:</strong> confirmação hormonal em testes; cronologia em biologia; diferenciais de amenorreia em biologia e semio; localização intrauterina versus ectópica em ultrassom/pul; viabilidade em viabilidade; datação por DUM/CRL/ART em data, crl e fiv; decisões de risco em semio, pul e casos; interpretação de questões em questoes. Referências são recursos para conferir, e não pré-requisito para os casos introdutórios."
+        ],
+        [
+          "p",
+          "<strong>Estado editorial:</strong> primeiro rascunho original do tema 009, não publicado, sem `index.html`, sem alteração de catálogo. Não recebeu revisão de obstetra, validação de critérios ultrassonográficos atualizados em diretrizes brasileiras, teste de autossuficiência por banca representativa, auditoria de semântica e acessibilidade ou curadoria de imagens na fila de aprovação Admin. A meta de 60.000 caracteres didáticos úteis e a revisão humana continuam exigidas; não declarar certificação."
+        ]
+      ]
+    ]
+  ]
+}
