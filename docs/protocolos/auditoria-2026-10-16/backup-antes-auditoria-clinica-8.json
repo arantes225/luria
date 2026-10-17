@@ -1,0 +1,727 @@
+{
+  "description": "Backup antes de ajustes clínicos baseados em diretrizes e limpeza de fontes repetidas.",
+  "created_date": "2026-10-16",
+  "records": [
+    {
+      "id": 92,
+      "slug": "cirurgia-geral-apendicite-aguda",
+      "title": "Apendicite aguda",
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar estabilidade, hidratação, sepse e sinais de peritonite.",
+            "Jejum, analgesia, antiemético e hidratação conforme necessidade.",
+            "Acionar cirurgia precocemente se houver peritonite, instabilidade, massa inflamatória complicada ou forte suspeita clínica."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma e PCR auxiliam na estratificação, mas nenhum marcador isolado confirma ou exclui o diagnóstico.",
+            "Escores como AIR/Alvarado podem auxiliar risco, sobretudo para reduzir exames desnecessários em baixa probabilidade.",
+            "Ultrassonografia é útil, especialmente em jovens, gestantes e pacientes magros; TC é mais acurada em adultos quando há dúvida diagnóstica ou suspeita de complicação.",
+            "Achados de imagem incluem apêndice não compressível e aumentado, inflamação da gordura periappendicular, apendicolito, coleção ou gás extraluminal."
+          ],
+          "title": "Investigação"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Peritonite difusa, perfuração ou instabilidade.",
+          "then": "Antibiótico e tratamento cirúrgico urgente."
+        },
+        {
+          "if": "Apendicite não complicada confirmada em paciente operável.",
+          "then": "Apendicectomia laparoscópica é tratamento padrão; manejo antibiótico exclusivo pode ser considerado em casos selecionados, após decisão compartilhada."
+        },
+        {
+          "if": "Abscesso/plastrão em paciente estável.",
+          "then": "Individualizar antibiótico, drenagem percutânea e cirurgia conforme tamanho, evolução e recursos."
+        },
+        {
+          "if": "Paciente com peritonite difusa, sepse ou instabilidade",
+          "then": "Acionar cirurgia e ressuscitação imediatamente; iniciar antimicrobianos conforme protocolo e não atrasar controle do foco por exames desnecessários."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Apendicectomia laparoscópica é preferida na maioria dos casos quando disponível.",
+            "Administrar antibiótico pré-operatório; em apendicite não complicada, curso pós-operatório prolongado geralmente não é necessário.",
+            "Em apendicite complicada, duração antibiótica depende de controle de foco e evolução clínica."
+          ],
+          "title": "Tratamento"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00306-3",
+          "label": "WSES Jerusalem guidelines — Diagnosis and treatment of acute appendicitis, 2020 update"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41604201/",
+          "label": "WSES Jerusalem 2025 — Diretrizes de apendicite (publicação 2026)"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 94,
+      "slug": "cirurgia-geral-coledocolitiase",
+      "title": "Coledocolitíase",
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar sinais vitais, dor, sepse e pancreatite associada.",
+            "Jejum conforme gravidade/procedimentos, analgesia, hidratação e antiemético quando necessário.",
+            "Se houver colangite, iniciar antibiótico e providenciar drenagem biliar urgente conforme gravidade e disponibilidade."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "US e exames hepáticos para estratificação de probabilidade, sinais de colangite/pancreatite."
+          ],
+          "title": "Primeiros passos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ultrassonografia abdominal é exame inicial para colelitíase, dilatação biliar e eventualmente cálculo no colédoco.",
+            "Alto risco: cálculo em imagem, colangite clínica ou bilirrubina total >4 mg/dL associada a colédoco dilatado favorecem CPRE terapêutica direta segundo critérios ASGE.",
+            "Risco intermediário: EUS ou colangio-RM têm alta acurácia e reduzem CPRE desnecessária; colangiografia intraoperatória/US intraoperatório são alternativas conforme contexto."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "Bilirrubinas, FA/GGT, AST/ALT, hemograma, US de vias biliares e MRCP/EUS conforme risco."
+          ],
+          "title": "Exames direcionados"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Colangite ou cálculo claramente demonstrado no colédoco / alto risco.",
+          "then": "CPRE terapêutica, salvo contraindicação ou necessidade de estratégia cirúrgica alternativa."
+        },
+        {
+          "if": "Risco intermediário sem colangite.",
+          "then": "Confirmar com EUS, colangio-RM ou método intraoperatório antes de CPRE."
+        },
+        {
+          "if": "Baixo risco de coledocolitíase com colelitíase sintomática.",
+          "then": "Prosseguir manejo da vesícula, com avaliação intraoperatória conforme indicação local."
+        },
+        {
+          "if": "Icterícia/colestase e suspeita de cálculo na via biliar",
+          "then": "US e exames hepáticos para estratificação de probabilidade, sinais de colangite/pancreatite."
+        },
+        {
+          "if": "Cálculo em colédoco na imagem, colangite ou critério de risco muito alto",
+          "then": "CPRE terapêutica quando apropriada, com antibiótico e drenagem urgente se colangite."
+        },
+        {
+          "if": "Risco intermediário sem cálculo confirmado",
+          "then": "Colangiorressonância ou ecoendoscopia para confirmação antes de CPRE, evitando exame invasivo desnecessário."
+        },
+        {
+          "if": "Coledocolitíase tratada, vesícula ainda presente",
+          "then": "Planejar colecistectomia para prevenir recorrências quando indicado e possível."
+        },
+        {
+          "if": "Pancreatite biliar sem colangite ou obstrução persistente",
+          "then": "Não realizar CPRE de urgência de rotina; manejar pancreatite e reavaliar necessidade terapêutica."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "CPRE com esfinterotomia e extração é tratamento padrão na maioria dos cálculos do colédoco.",
+            "Cálculos grandes/difíceis podem exigir dilatação papilar com balão, litotripsia ou terapia intraductal em centros experientes.",
+            "Após clareamento do colédoco, indicar colecistectomia no mesmo episódio quando clinicamente apropriado para reduzir recorrência de eventos biliares."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "CPRE pode causar pancreatite/sangramento; reservar a risco elevado ou comprovação terapêutica, usando MRCP/EUS quando intermediário.",
+            "Em colangite grave, controle de sepse e descompressão biliar precoce são prioritários."
+          ],
+          "title": "Tratamento — revisão detalhada"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-role-of-endoscopy-in-the-evaluation-and-management-of-choledocholithiasis",
+          "label": "ASGE guideline on evaluation and management of choledocholithiasis"
+        },
+        {
+          "url": "https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-role-of-endoscopy-in-the-evaluation-and-management-of-choledocholithiasis",
+          "label": "ASGE — Choledocholithiasis guideline"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 95,
+      "slug": "cirurgia-geral-colangite-aguda",
+      "title": "Colangite aguda",
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar sepse e iniciar suporte respiratório/circulatório imediatamente se necessário.",
+            "Coletar hemoculturas antes do antibiótico quando isso não atrasar tratamento.",
+            "Iniciar antibiótico empírico cobrindo enterobactérias e anaeróbios conforme gravidade e perfil local.",
+            "Classificar gravidade segundo Tokyo Guidelines."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Coletar hemoculturas na sepse sem atrasar antimicrobiano, avaliar disfunção orgânica e iniciar antibiótico com cobertura de enterobactérias conforme flora local.",
+            "Contatar endoscopia terapêutica para CPRE/descompressão precoce nos casos moderados e graves. Em choque ou disfunção orgânica, drenagem tão logo após estabilização inicial."
+          ],
+          "title": "Conduta operacional: controle de foco"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma, bilirrubinas, fosfatase alcalina, GGT, transaminases, função renal, lactato e coagulação conforme gravidade.",
+            "Ultrassonografia é exame inicial para dilatação biliar e cálculos.",
+            "TC, colangio-RM ou ecoendoscopia podem ser usados quando US é inconclusiva ou para definir etiologia.",
+            "CPRE é terapêutica e não deve ser usada apenas como exame diagnóstico quando métodos menos invasivos resolvem a dúvida."
+          ],
+          "title": "Investigação"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Colangite leve e boa resposta inicial.",
+          "then": "Antibiótico e tratamento etiológico; drenagem se não houver resposta."
+        },
+        {
+          "if": "Colangite moderada.",
+          "then": "Drenagem biliar precoce, preferencialmente endoscópica."
+        },
+        {
+          "if": "Colangite grave com disfunção orgânica.",
+          "then": "Suporte intensivo e drenagem biliar o mais rápido possível após estabilização inicial."
+        },
+        {
+          "if": "Colangite com disfunção orgânica ou choque",
+          "then": "Iniciar ressuscitação, antibióticos e organizar drenagem biliar urgente, geralmente endoscópica, conforme gravidade e disponibilidade."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "CPRE com drenagem transpapilar é abordagem de primeira linha quando disponível e factível.",
+            "Esfincterotomia não é obrigatória apenas para drenagem; remoção de cálculo pode ser realizada na mesma sessão em casos selecionados.",
+            "Drenagem percutânea é alternativa quando abordagem endoscópica falha ou não está disponível.",
+            "Após controle da infecção, tratar definitivamente a causa da obstrução."
+          ],
+          "title": "Tratamento"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28941329/",
+          "label": "Tokyo Guidelines 2018 — initial management of acute cholangitis"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28834389/",
+          "label": "Tokyo Guidelines 2018 — biliary drainage"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 96,
+      "slug": "cirurgia-geral-pancreatite-aguda",
+      "title": "Pancreatite aguda",
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar gravidade, perfusão, hipoxemia e disfunção orgânica.",
+            "Reposição volêmica com cristalóide, preferindo abordagem moderada e reavaliação frequente para evitar sobrecarga.",
+            "Analgesia adequada e antiemético.",
+            "Iniciar alimentação oral precoce conforme tolerância em casos leves."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Confirmar 2 dos 3 critérios, investigar causa biliar/álcool/hipertrigliceridemia."
+          ],
+          "title": "Ação clínica prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Lipase é preferida à amilase para diagnóstico.",
+            "Ultrassonografia deve ser realizada para investigar causa biliar.",
+            "TC contrastada não é necessária rotineiramente no início quando diagnóstico é claro; considerar após 48–72 h se não houver melhora ou houver suspeita de complicação.",
+            "Triglicerídeos devem ser dosados quando não houver causa óbvia, especialmente se >1000 mg/dL for possível."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Lipase, hemograma, ureia/creatinina, eletrólitos, cálcio, triglicerídeos e US de vias biliares; TC seletiva quando diagnóstico incerto ou falha de melhora."
+          ],
+          "title": "Investigação orientada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Pancreatite leve, sem falência orgânica.",
+          "then": "Suporte clínico, alimentação oral precoce e tratamento etiológico."
+        },
+        {
+          "if": "Falência orgânica persistente ou necrose/complicação local.",
+          "then": "Manejo em unidade de maior complexidade e abordagem multidisciplinar."
+        },
+        {
+          "if": "Pancreatite biliar com colangite concomitante.",
+          "then": "CPRE precoce/urgente para descompressão biliar."
+        },
+        {
+          "if": "Dor epigástrica típica com lipase >3 vezes o limite ou imagem característica",
+          "then": "Confirmar 2 dos 3 critérios, investigar causa biliar/álcool/hipertrigliceridemia."
+        },
+        {
+          "if": "Pancreatite leve, sem falência orgânica",
+          "then": "Hidratação IV moderada e guiada por volemia, analgesia e alimentação oral precoce quando tolerada."
+        },
+        {
+          "if": "Insuficiência orgânica ou necrose, SIRS persistente",
+          "then": "Internação monitorizada/UTI conforme gravidade, reanimação individualizada e avaliação de complicações."
+        },
+        {
+          "if": "Pancreatite biliar com colangite associada",
+          "then": "CPRE urgente para desobstrução e antibiótico para colangite; não realizar CPRE de rotina sem colangite/obstrução persistente."
+        },
+        {
+          "if": "Necrose sem sinais de infecção",
+          "then": "Não prescrever antibiótico profilático; drenagem/intervenção seletiva, muitas vezes adiada se estável."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Nutrição enteral é preferível à parenteral quando alimentação oral não é possível.",
+            "Antibiótico profilático não é indicado em necrose estéril.",
+            "Necrose infectada deve ser manejada com antibiótico e estratégia step-up, preferindo drenagem minimamente invasiva antes de necrosectomia aberta quando possível.",
+            "Colecistectomia na mesma internação é recomendada em pancreatite biliar leve."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Preferir fluidos balanceados quando apropriado e reavaliar PA, diurese, BUN/hematócrito e congestão; evitar hidratação agressiva indiscriminada.",
+            "Em pancreatite biliar leve, colecistectomia antes da alta quando apropriado para prevenir recorrências."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://gi.org/guideline/acute-pancreatitis/",
+          "label": "American College of Gastroenterology — Acute Pancreatitis Guideline"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 102,
+      "slug": "cirurgia-geral-hemorragia-digestiva",
+      "title": "Hemorragia digestiva",
+      "initial_actions": [
+        {
+          "items": [
+            "ABC, monitorização, acesso venoso calibroso e ressuscitação conforme perfusão e perda estimada.",
+            "Coletar hemograma, ureia/creatinina, eletrólitos, função hepática, coagulação e tipagem/prova cruzada conforme gravidade.",
+            "Suspender/reverter anticoagulação quando benefício superar risco trombótico, seguindo protocolo específico e gravidade do sangramento.",
+            "Acionar endoscopia e equipe de referência precocemente em sangramento ativo ou alto risco."
+          ],
+          "title": "Primeiros passos"
+        },
+        {
+          "items": [
+            "ABC, dois acessos venosos, hemograma/tipagem, reposição e hemoterapia conforme perfusão; estabilizar antes de endoscopia."
+          ],
+          "title": "Primeiros passos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Glasgow-Blatchford auxilia a identificar pacientes de muito baixo risco; escore 0–1 pode permitir manejo ambulatorial em contexto adequado.",
+            "Na hemorragia alta hospitalizada, endoscopia é recomendada em até 24 h após apresentação e estabilização, mais cedo quando clinicamente necessário.",
+            "Colonoscopia/angio-TC e outras estratégias dependem de suspeita de fonte baixa, estabilidade e persistência do sangramento."
+          ],
+          "title": "Estratificação"
+        },
+        {
+          "items": [
+            "Hemograma seriado, ureia/creatinina, coagulação se pertinente, tipagem/prova cruzada e endoscopia/angioTC segundo síndrome."
+          ],
+          "title": "Exames direcionados"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade ou sangramento ativo importante.",
+          "then": "Ressuscitação, hemocomponentes conforme necessidade, correção de coagulopatia e endoscopia/intervenção urgente conforme fonte provável."
+        },
+        {
+          "if": "Hemorragia alta com úlcera apresentando sangramento ativo ou vaso visível.",
+          "then": "Hemostasia endoscópica seguida de supressão ácida em alta dose conforme protocolo."
+        },
+        {
+          "if": "Ressangramento após hemostasia inicial.",
+          "then": "Repetir endoscopia quando apropriado; falha endoscópica pode exigir embolização transcateter ou cirurgia."
+        },
+        {
+          "if": "Muito baixo risco, sem comorbidade descompensada e com seguimento garantido.",
+          "then": "Considerar alta com investigação/seguimento ambulatorial conforme escore e contexto clínico."
+        },
+        {
+          "if": "Hematêmese, melena ou hematoquezia com instabilidade",
+          "then": "ABC, dois acessos venosos, hemograma/tipagem, reposição e hemoterapia conforme perfusão; estabilizar antes de endoscopia."
+        },
+        {
+          "if": "Suspeita de sangramento digestivo alto não varicoso",
+          "then": "Considerar IBP IV e endoscopia após ressuscitação, frequentemente dentro de 24h em internados."
+        },
+        {
+          "if": "Cirrose/hipertensão portal e suspeita de sangramento varicoso",
+          "then": "Iniciar vasoativo esplâncnico e antibiótico profilático conforme protocolo, acionar endoscopia terapêutica urgente."
+        },
+        {
+          "if": "Hematoquezia intensa com instabilidade ou sangramento ativo persistente",
+          "then": "Investigar fonte alta possível e avaliar angioTC/intervenção radiológica conforme recursos e estabilidade."
+        },
+        {
+          "if": "Sangramento cessou, sem instabilidade",
+          "then": "Estratificar risco, causa, anemia e prevenção de recorrência antes da alta."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Transfusão de concentrado de hemácias de forma restritiva é recomendada na maioria dos pacientes, com limiar usual em torno de Hb 7 g/dL, individualizando cardiopatia, isquemia e choque.",
+            "Na suspeita de sangramento ulceroso alto, PPI é usado conforme estratégia institucional; após hemostasia endoscópica de lesão de alto risco, recomenda-se PPI em alta dose por 72 h, seguido de esquema oral.",
+            "Em suspeita de sangramento varicoso, seguir protocolo específico com droga vasoativa, antibiótico e endoscopia urgente."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Transfusão é baseada em condição clínica, hemoglobina, choque/comorbidades; estratégia restritiva é frequente em pacientes estáveis, não substitui ressuscitação.",
+            "Após hemostasia, revisar antiagregantes/anticoagulantes e H. pylori quando úlcera péptica, individualizando risco trombótico."
+          ],
+          "title": "Tratamento — revisão detalhada"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+          "label": "ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding, 2021"
+        },
+        {
+          "url": "https://wjes.biomedcentral.com/counter/pdf/10.1186/s13017-019-0283-9.pdf",
+          "label": "WSES — Perforated and bleeding peptic ulcer guidelines"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+          "label": "ACG — Upper GI and ulcer bleeding guideline"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 106,
+      "slug": "cirurgia-geral-pe-diabetico",
+      "title": "Pé diabético",
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar extensão, profundidade, tecido necrótico, exsudato, odor e celulite ao redor.",
+            "Examinar perfusão e neuropatia, incluindo pulsos e sensibilidade protetora.",
+            "Realizar offloading adequado e cuidado local da ferida.",
+            "Internar infecção grave e considerar internação em infecção moderada associada a comorbidades relevantes."
+          ],
+          "title": "Abordagem inicial"
+        },
+        {
+          "items": [
+            "Não prescrever antibiótico para ferida clinicamente não infectada; avaliar neuropatia, perfusão, descarga de pressão."
+          ],
+          "title": "Triagem/primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Se exame clínico for duvidoso, considerar PCR, VHS ou procalcitonina.",
+            "Para cultura de partes moles, preferir amostra de tecido obtida assepticamente por curetagem/biópsia após limpeza/desbridamento.",
+            "Para suspeita de osteomielite, combinar probe-to-bone, radiografia simples e marcadores inflamatórios como avaliação inicial.",
+            "RM é indicada quando dúvida diagnóstica de osteomielite persiste após avaliação inicial."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Exame com pulsos, ITB/índice hálux quando indicado, teste de sensibilidade, radiografia, prova osso-sonda e RM na dúvida de osteomielite."
+          ],
+          "title": "Exames direcionados"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Úlcera sem infecção clínica.",
+          "then": "Não usar antibiótico; focar em offloading, perfusão e cuidado local."
+        },
+        {
+          "if": "Infecção leve.",
+          "then": "Antibiótico direcionado principalmente a cocos gram-positivos, conforme epidemiologia local."
+        },
+        {
+          "if": "Infecção moderada/grave, necrose, isquemia ou abscesso profundo.",
+          "then": "Avaliação cirúrgica urgente e antibiótico sistêmico mais amplo conforme contexto."
+        },
+        {
+          "if": "Osteomielite provável/confirmada.",
+          "then": "Planejar estratégia médica e/ou cirúrgica individualizada, preferindo cultura óssea quando possível."
+        },
+        {
+          "if": "Úlcera de pé sem calor, rubor, edema, pus ou sinais sistêmicos",
+          "then": "Não prescrever antibiótico para ferida clinicamente não infectada; avaliar neuropatia, perfusão, descarga de pressão."
+        },
+        {
+          "if": "Infecção leve de partes moles",
+          "then": "Classificar IWGDF/IDSA e oferecer antibiótico contra Gram-positivos quando indicado, além de curativo/desbridamento."
+        },
+        {
+          "if": "Infecção moderada/grave, necrose, gás, abscesso profundo ou isquemia crítica",
+          "then": "Internar, cirurgião/vascular urgentes, desbridamento/drenagem e antibiótico sistêmico."
+        },
+        {
+          "if": "Prova osso-sonda positiva, exposição óssea ou ferida crônica profunda",
+          "then": "Pesquisar osteomielite com radiografia, VSH/PCR e RM quando necessário; coletar amostra óssea quando possível."
+        },
+        {
+          "if": "Úlcera com doença arterial periférica",
+          "then": "Avaliação vascular precoce e revascularização quando necessária, não confiar apenas em antibióticos."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Infecção de partes moles geralmente requer 1–2 semanas de antibiótico.",
+            "Considerar 3–4 semanas se infecção extensa estiver melhorando lentamente ou houver doença arterial periférica grave.",
+            "Desbridamento e drenagem são fundamentais quando há tecido necrótico/coleção.",
+            "Revascularização deve ser considerada quando isquemia compromete cicatrização.",
+            "Offloading e controle glicêmico são essenciais para sucesso terapêutico."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Cultura preferencial de tecido profundo após limpeza/desbridamento em vez de swab superficial; antibiótico guiado por gravidade e microbiologia.",
+            "Controle glicêmico, off-loading, revisão da perfusão e curativos são partes essenciais do tratamento."
+          ],
+          "title": "Condutas terapêuticas específicas"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "label": "IWGDF/IDSA — Diabetes-related Foot Infections Guideline 2023"
+        },
+        {
+          "url": "https://iwgdfguidelines.org/guidelines-2023/",
+          "label": "IWGDF — Guidelines 2023"
+        },
+        {
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "label": "IDSA/IWGDF — Infeção de pé diabético 2023"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 110,
+      "slug": "cirurgia-geral-fasceite-necrosante",
+      "title": "Fasceíte necrosante",
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar cirurgia imediatamente.",
+            "Iniciar ressuscitação para sepse/choque.",
+            "Coletar culturas sem atrasar antibiótico.",
+            "Iniciar antibiótico empírico de amplo espectro cobrindo gram-positivos, gram-negativos e anaeróbios."
+          ],
+          "title": "Conduta imediata"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Exames laboratoriais podem apoiar avaliação de gravidade, mas não excluem doença.",
+            "TC/RM podem mostrar gás ou edema fascial, mas não devem atrasar cirurgia quando suspeita é alta.",
+            "O achado diagnóstico definitivo é a exploração com necrose fascial e fácil dissecção ao longo dos planos."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Alta suspeita clínica.",
+          "then": "Exploração e desbridamento cirúrgico urgente + antibiótico amplo."
+        },
+        {
+          "if": "Paciente instável.",
+          "then": "Ressuscitação e cirurgia em paralelo; não esperar imagem."
+        },
+        {
+          "if": "Streptococcus pyogenes confirmado.",
+          "then": "Penicilina + clindamicina."
+        },
+        {
+          "if": "Dor desproporcional, progressão rápida, bolhas ou toxicidade sistêmica",
+          "then": "Acionar cirurgia para exploração/desbridamento imediato e antibióticos de amplo espectro; imagem não deve atrasar intervenção."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Desbridamento cirúrgico agressivo é o tratamento principal.",
+            "Reexplorações seriadas são frequentemente necessárias.",
+            "Antibiótico empírico pode incluir vancomicina ou linezolida + piperacilina-tazobactam/carbapenêmico, ou ceftriaxona + metronidazol, ajustando depois às culturas.",
+            "Suporte intensivo é frequentemente necessário."
+          ],
+          "title": "Tratamento"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+          "label": "IDSA — Necrotizing Fasciitis recommendations"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 112,
+      "slug": "cirurgia-geral-profilaxia-de-tromboembolismo-venoso",
+      "title": "Profilaxia de tromboembolismo venoso",
+      "initial_actions": [
+        {
+          "items": [
+            "Estimular mobilização precoce sempre que possível.",
+            "Usar compressão pneumática intermitente quando profilaxia farmacológica for contraindicada ou como adjuvante em risco elevado.",
+            "Iniciar profilaxia farmacológica quando benefício superar risco de sangramento, respeitando tipo de cirurgia e anestesia neuraxial."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Mobilização e medidas mecânicas ou nenhuma profilaxia farmacológica conforme escore de risco."
+          ],
+          "title": "Primeira intervenção"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "HBPM é frequentemente preferida em muitas cirurgias de grande porte.",
+            "Heparina não fracionada é alternativa em cenários selecionados, incluindo insuficiência renal importante.",
+            "Dispositivos mecânicos devem ser aplicados corretamente e permanecer ativos enquanto indicados."
+          ],
+          "title": "Opções"
+        },
+        {
+          "items": [
+            "História prévia de TEV, câncer, obesidade, imobilidade, sangramento, plaquetas e função renal."
+          ],
+          "title": "Investigação guiada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Risco trombótico baixo.",
+          "then": "Mobilização precoce pode ser suficiente em alguns procedimentos menores."
+        },
+        {
+          "if": "Risco trombótico moderado/alto e risco hemorrágico aceitável.",
+          "then": "Profilaxia farmacológica, com ou sem método mecânico conforme procedimento."
+        },
+        {
+          "if": "Alto risco de sangramento.",
+          "then": "Preferir profilaxia mecânica até que o risco diminua."
+        },
+        {
+          "if": "Cirurgia oncológica abdominal/pélvica de alto risco.",
+          "then": "Considerar profilaxia estendida no pós-operatório conforme protocolo e risco individual."
+        },
+        {
+          "if": "Cirurgia de baixo risco e deambulação precoce",
+          "then": "Mobilização e medidas mecânicas ou nenhuma profilaxia farmacológica conforme escore de risco."
+        },
+        {
+          "if": "Risco moderado/alto de TEV e sangramento aceitável",
+          "then": "Profilaxia farmacológica com heparina conforme função renal/tipo de cirurgia e possível método mecânico."
+        },
+        {
+          "if": "Alto risco hemorrágico ou contraindicação farmacológica",
+          "then": "Compressão pneumática intermitente até risco de sangramento diminuir; reavaliar diariamente."
+        },
+        {
+          "if": "Cirurgia oncológica abdominal/pélvica maior de alto risco",
+          "then": "Considerar profilaxia estendida pós-alta segundo risco, mobilidade, agente e protocolo."
+        },
+        {
+          "if": "Paciente em uso de anticoagulante crônico ou com anestesia neuraxial",
+          "then": "Conferir intervalos de suspensão/reinício e riscos de hematoma epidural."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Escolher agente, dose e momento conforme cirurgia, função renal e risco hemorrágico.",
+            "Evitar iniciar ou reiniciar anticoagulante em janela insegura após neuraxial.",
+            "Reavaliar diariamente necessidade, risco de sangramento e mobilidade.",
+            "Não usar apenas meias elásticas como substituto universal de estratégias mais eficazes quando risco é alto."
+          ],
+          "title": "Princípios"
+        },
+        {
+          "items": [
+            "Estratificar risco com Caprini ou ferramenta institucional; duração, via e dose dependem de procedimento, função renal e sangramento.",
+            "Não confundir dose profilática com dose terapêutica; não aplicar regra única a cirurgia intracraniana ou trauma com sangramento ativo."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "source_refs": [
+        {
+          "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/prevention-in-hospitalized-surgical-patients",
+          "label": "ASH — Prevention of VTE in Surgical Hospitalized Patients"
+        },
+        {
+          "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/prevention-in-hospitalized-surgical-patients",
+          "label": "ASH — Profilaxia de TEV em cirurgia"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    }
+  ]
+}
