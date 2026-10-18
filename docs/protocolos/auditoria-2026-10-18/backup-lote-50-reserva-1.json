@@ -1,0 +1,831 @@
+{
+  "date": "2026-10-18",
+  "records": [
+    {
+      "id": 294,
+      "slug": "infectologia-endocardite-infecciosa",
+      "title": "Endocardite infecciosa",
+      "category": "Infectologia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Endocardite infecciosa: colher hemoculturas antes do antibiótico quando possível, realizar ecocardiografia precoce, tratar de forma bactericida prolongada e avaliar cirurgia por insuficiência cardíaca, infecção não controlada ou prevenção de embolia.",
+      "tags": [
+        "endocardite",
+        "hemocultura",
+        "ecocardiograma",
+        "válvula"
+      ],
+      "suspicion": [
+        {
+          "items": [
+            "Febre sem foco em pessoa com prótese valvar, valvopatia, dispositivo intracardíaco, bacteremia por microrganismo típico ou uso de drogas injetáveis.",
+            "Novo sopro/regurgitação, fenômenos embólicos, AVC com febre, abscesso periférico ou sinais imunológicos elevam a suspeita.",
+            "Endocardite pode ocorrer sem febre, sobretudo em idosos, imunossuprimidos ou após antibiótico."
+          ],
+          "title": "Suspeita clínica"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Obter múltiplos pares de hemoculturas periféricas antes do antibiótico se o paciente estiver estável; não atrasar terapia em sepse/choque.",
+            "Solicitar ecocardiograma transtorácico rapidamente; usar transesofágico se alta suspeita, prótese/dispositivo ou TTE inconclusivo.",
+            "Avaliar insuficiência cardíaca, sinais neurológicos, embolia, abscesso e distúrbios de condução.",
+            "Acionar infectologia/cardiologia/cirurgia cardíaca precocemente em casos complicados."
+          ],
+          "title": "Primeiras medidas"
+        },
+        {
+          "items": [
+            "Coletar três conjuntos de hemoculturas antes de antibiótico se condição permitir e realizar ecocardiograma."
+          ],
+          "title": "Avaliação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemoculturas seriadas até esterilização após início do tratamento.",
+            "Ecocardiografia TTE/TEE; considerar TC cardíaca, PET/CT ou outras imagens em prótese/dispositivo ou complicações.",
+            "Hemograma, creatinina, função hepática, PCR/VHS, urina e ECG como baseline; imagem dirigida para focos embólicos."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "Hemoculturas em séries, ecocardiogramas, ECG para distúrbios de condução, função renal e imagem de complicações conforme sinais."
+          ],
+          "title": "Investigação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Choque, edema pulmonar ou insuficiência valvar grave",
+          "then": "Estabilizar e discutir cirurgia de emergência/urgência."
+        },
+        {
+          "if": "Abscesso, bacteremia persistente, fungo ou microrganismo difícil",
+          "then": "Considerar cirurgia precoce e controle de foco."
+        },
+        {
+          "if": "Vegetação grande com embolia ou alto risco embólico",
+          "then": "Avaliar cirurgia conforme equipe de endocardite."
+        },
+        {
+          "if": "Febre persistente com novo sopro, prótese valvar, dispositivo cardíaco ou bacteremia por S. aureus",
+          "then": "Coletar três conjuntos de hemoculturas antes de antibiótico se condição permitir e realizar ecocardiograma."
+        },
+        {
+          "if": "Instabilidade/sepse com suspeita forte",
+          "then": "Coletar culturas sem atrasar antibioticoterapia IV e envolver infectologia/cardiologia."
+        },
+        {
+          "if": "Ecocardiograma transtorácico negativo mas alta suspeita, prótese ou dispositivo",
+          "then": "Ecocardiograma transesofágico e considerar TC cardíaca/PET em cenário adequado."
+        },
+        {
+          "if": "Insuficiência cardíaca, abscesso valvar, bloqueio AV novo ou infecção persistente",
+          "then": "Avaliação urgente por equipe de endocardite para cirurgia/extração de dispositivo."
+        },
+        {
+          "if": "Embolia, evento neurológico ou bacteremia persistente",
+          "then": "Pesquisar complicações e revisar elegibilidade a cirurgia e antibióticos conforme agente."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Escolher esquema empírico conforme válvula nativa/protética, aquisição comunitária/assistencial, epidemiologia e função renal; ajustar ao agente e sensibilidade.",
+            "A duração costuma ser 2–6 semanas na válvula nativa e pelo menos 6 semanas em prótese, individualizada por agente e complicações.",
+            "Não usar aminoglicosídeo rotineiramente em endocardite estafilocócica de válvula nativa. Rifampicina é reservada a infecção envolvendo material protético em cenários específicos."
+          ],
+          "title": "Antimicrobianos"
+        },
+        {
+          "items": [
+            "Tratamento antimicrobiano por agente, suscetibilidade, válvula nativa/prótese e função renal, frequentemente por via IV prolongada.",
+            "Não usar profilaxia antibiótica universal em procedimentos dentários: reservar às indicações de alto risco conforme diretrizes."
+          ],
+          "title": "Tratamento e precauções"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Endocardite de prótese e de dispositivo intracardíaco exige investigação por imagem avançada e baixo limiar para remoção de material infectado.",
+            "Bacteremia por Staphylococcus aureus, Enterococcus faecalis ou fungos merece busca ativa de endocardite conforme contexto."
+          ],
+          "title": "Prótese e dispositivo"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Repetir hemoculturas até negativação e monitorar função renal/hepática durante antibiótico.",
+            "Ecocardiograma ao fim do tratamento e reavaliação clínica de valvopatia/insuficiência cardíaca.",
+            "Educar sobre higiene oral e profilaxia antibiótica apenas nos grupos/procedimentos de alto risco previstos em diretriz."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Documentar negativação de hemoculturas, função valvar, toxicidade do antibiótico e seguimento especializado pós-tratamento."
+          ],
+          "title": "Seguimento e segurança"
+        }
+      ],
+      "red_flags": [
+        "Choque cardiogênico, edema pulmonar ou insuficiência valvar aguda.",
+        "Bloqueio AV novo ou suspeita de abscesso perivalvar.",
+        "AVC, embolia sistêmica ou hemorragia intracraniana.",
+        "Hemoculturas persistentemente positivas apesar de terapia adequada.",
+        "Edema agudo de pulmão, choque séptico, bloqueio AV novo, AVC ou êmbolos recorrentes."
+      ],
+      "notification": {
+        "text": "Endocardite infecciosa não é, em regra, agravo individual de notificação compulsória nacional; seguir vigilância local e notificar agentes/condições específicas quando aplicável.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/endocarditis/",
+          "label": "ESC — 2023 Guidelines for the management of endocarditis"
+        },
+        {
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/pocket-guidelines/infective-endocarditis/",
+          "label": "ESC — Pocket Guidelines on Infective Endocarditis 2023"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ampicilina",
+        "ceftriaxona",
+        "daptomicina",
+        "penicilina G cristalina",
+        "rifampicina",
+        "sulfato de gentamicina",
+        "vancomicina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ecocardiograma com vegetação em valva tricúspide",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Endocarditis%20ultrasound.gif",
+          "kind": "echocardiography",
+          "max_kb": 120,
+          "caption": "Endocardite infecciosa — vegetação valvar ao ecocardiograma",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Endocarditis_ultrasound.gif",
+          "source_name": "Koya et al. / BMC Nephrology / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "echocardiography"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "Ecocardiograma com vegetação em endocardite"
+    },
+    {
+      "id": 295,
+      "slug": "infectologia-osteomielite",
+      "title": "Osteomielite",
+      "category": "Infectologia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Osteomielite: obter culturas e imagem antes do antibiótico quando o paciente estiver estável, usar RM como exame de escolha na forma vertebral e tratar de modo dirigido, com avaliação cirúrgica quando houver instabilidade, abscesso ou déficit neurológico.",
+      "tags": [
+        "osteomielite",
+        "espondilodiscite",
+        "ressonância magnética",
+        "cultura óssea"
+      ],
+      "suspicion": [
+        {
+          "items": [
+            "Dor óssea focal persistente com febre ou marcadores inflamatórios elevados, especialmente após bacteremia, cirurgia, trauma, úlcera crônica ou presença de material ortopédico.",
+            "Na osteomielite vertebral, dor axial nova ou progressiva associada a bacteremia, febre, PCR/VHS elevados ou fatores de risco deve elevar a suspeita.",
+            "Úlcera profunda com osso exposto ou teste sonda-osso positivo em pé diabético aumenta a probabilidade de osteomielite."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar sepse, déficit neurológico, perfusão do membro, presença de abscesso e instabilidade estrutural.",
+            "Colher pelo menos dois pares de hemoculturas antes do antibiótico quando o paciente estiver estável.",
+            "Em suspeita vertebral, solicitar RM do segmento acometido; em impossibilidade, utilizar método alternativo conforme disponibilidade.",
+            "Se houver choque, déficit neurológico progressivo ou compressão medular, iniciar antimicrobiano após culturas e acionar cirurgia/ortopedia imediatamente."
+          ],
+          "title": "Primeiras medidas"
+        },
+        {
+          "items": [
+            "Avaliar fatores de risco, sinais sistêmicos, hemograma/PCR e radiografia inicial."
+          ],
+          "title": "Avaliação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma, PCR/VHS, função renal e hepática; hemoculturas antes do antibiótico sempre que possível.",
+            "RM é o exame de maior utilidade para osteomielite vertebral e extensão a partes moles/epidural.",
+            "Biópsia óssea ou aspirado para cultura e histologia quando hemoculturas não identificam o agente e o diagnóstico permanece provável.",
+            "Radiografia simples pode ser normal no início; não deve excluir o diagnóstico."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "PCR/VHS, hemoculturas quando febre, radiografia, RM, cultura de tecido/biopsia óssea quando indicada."
+          ],
+          "title": "Investigação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade hemodinâmica, sepse ou déficit neurológico",
+          "then": "Culturas rápidas, antimicrobiano empírico e avaliação cirúrgica urgente."
+        },
+        {
+          "if": "Paciente estável, sem déficit neurológico",
+          "then": "Priorizar confirmação microbiológica antes de terapia empírica prolongada."
+        },
+        {
+          "if": "Abscesso, compressão neural, instabilidade estrutural, material infectado ou falha clínica",
+          "then": "Avaliar drenagem/desbridamento e manejo do implante."
+        },
+        {
+          "if": "Dor óssea focal persistente, febre ou ferida profunda",
+          "then": "Avaliar fatores de risco, sinais sistêmicos, hemograma/PCR e radiografia inicial."
+        },
+        {
+          "if": "Suspeita persistente com radiografia normal ou inconclusiva",
+          "then": "Ressonância magnética para detectar infecção medular/abscesso, se possível."
+        },
+        {
+          "if": "Instabilidade, sepse, abscesso ou compressão neurológica",
+          "then": "Antibioticoterapia IV urgente e consulta cirúrgica para drenagem/descompressão quando necessário."
+        },
+        {
+          "if": "Estável, sem urgência e sem microbiologia",
+          "then": "Considerar biópsia óssea para cultura antes de antimicrobiano, conforme risco e possibilidade de coleta."
+        },
+        {
+          "if": "Prótese, biofilme, osso necrótico ou ferida de pé diabético",
+          "then": "Planejar tratamento conjunto com cirurgia/ortopedia, infectologia e vascular quando indicado."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Quando terapia empírica for necessária, cobrir Staphylococcus aureus e ampliar para MRSA e bacilos gram-negativos conforme epidemiologia, foco e fatores de risco.",
+            "Após identificação do agente, descalonar para o esquema mais estreito eficaz e ajustar à função renal e penetração óssea.",
+            "Na osteomielite vertebral bacteriana, referência internacional recomenda em geral 6 semanas de terapia parenteral ou oral de alta biodisponibilidade, individualizando em complicações, implantes e resposta clínica."
+          ],
+          "title": "Tratamento antimicrobiano"
+        },
+        {
+          "items": [
+            "Drenar abscessos e realizar desbridamento quando indicado.",
+            "Material ortopédico infectado exige decisão conjunta sobre retenção, troca ou remoção."
+          ],
+          "title": "Controle de foco"
+        },
+        {
+          "items": [
+            "Antibiótico é guiado pelo patógeno e extensão; não confiar em swab superficial para refletir microbiologia óssea.",
+            "Desbridamento/remoção de tecido necrótico é fundamental em casos selecionados; duração da terapia é individualizada por sítio, cirurgia e resposta."
+          ],
+          "title": "Tratamento e precauções"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Suspeitar tuberculose, brucelose ou fungos conforme epidemiologia e imunossupressão.",
+            "Pé diabético exige protocolo próprio com avaliação vascular, desbridamento e controle metabólico.",
+            "Osteomielite hematogênica pediátrica requer protocolo específico de doses e duração."
+          ],
+          "title": "Situações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Acompanhar dor, função e tendência de PCR/VHS.",
+            "Não repetir RM de rotina se houver melhora clínica e laboratorial; imagem pode permanecer alterada após controle da infecção.",
+            "Bacteremia persistente, dor progressiva ou novo déficit neurológico exigem reavaliação imediata."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Monitorar função, inflamação, toxicidade medicamentosa, sinais de recidiva e condições vasculares."
+          ],
+          "title": "Seguimento e segurança"
+        }
+      ],
+      "red_flags": [
+        "Déficit neurológico ou síndrome de cauda equina.",
+        "Sepse ou choque.",
+        "Abscesso epidural ou compressão medular.",
+        "Instabilidade vertebral, bacteremia persistente ou dor progressiva.",
+        "Sepse, abscesso epidural, déficit neurológico, necrose extensa ou progressão apesar de terapia."
+      ],
+      "notification": {
+        "text": "Osteomielite não é, em regra, agravo de notificação compulsória nacional; etiologias específicas, como tuberculose, seguem vigilância própria.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.idsociety.org/practice-guideline/vertebral-osteomyelitis/",
+          "label": "IDSA — Clinical Practice Guidelines for Native Vertebral Osteomyelitis in Adults"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "cefazolina",
+        "ceftriaxona",
+        "oxacilina sódica",
+        "vancomicina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 03:30:27.338195+00",
+      "image_assets": [],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "xray",
+        "mri"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "RX/RM de osteomielite"
+    },
+    {
+      "id": 296,
+      "slug": "infectologia-artrite-septica",
+      "title": "Artrite séptica",
+      "category": "Infectologia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Artrite séptica é uma emergência articular: aspirar o líquido sinovial antes do antibiótico quando possível, colher culturas, iniciar tratamento logo após a coleta e garantir drenagem adequada.",
+      "tags": [
+        "artrite séptica",
+        "artrocentese",
+        "líquido sinovial",
+        "drenagem"
+      ],
+      "suspicion": [
+        {
+          "items": [
+            "Monoartrite aguda dolorosa, quente e com grande limitação do movimento, com ou sem febre.",
+            "Risco maior em bacteremia, prótese articular, imunossupressão, idade avançada, uso de drogas injetáveis ou procedimento articular recente.",
+            "Cristais no líquido sinovial não excluem infecção concomitante."
+          ],
+          "title": "Suspeita clínica"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Realizar artrocentese urgente com técnica asséptica para contagem celular, Gram, cultura e pesquisa de cristais.",
+            "Colher hemoculturas antes do antibiótico se houver febre, bacteremia ou sepse.",
+            "No paciente estável, iniciar antibiótico após coleta articular; em sepse/choque, não atrasar terapia.",
+            "Acionar ortopedia para articulações grandes, necessidade de lavagem ou suspeita de prótese infectada."
+          ],
+          "title": "Conduta imediata"
+        },
+        {
+          "items": [
+            "Tratar como possível artrite séptica; artrocentese imediata para celularidade, Gram, cultura e pesquisa de cristais."
+          ],
+          "title": "Avaliação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Líquido sinovial para cultura é central; Gram tem sensibilidade limitada, mas pode orientar o esquema inicial.",
+            "Leucócitos sinoviais elevados aumentam a probabilidade, porém nenhum ponto de corte isolado confirma ou exclui infecção.",
+            "PCR/VHS e hemograma ajudam no acompanhamento. Ultrassom auxilia em derrame/artrocentese; RM pode ser útil se houver suspeita de extensão óssea ou partes moles."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Artrocentese para Gram, cultura, leucócitos/cristais; hemoculturas, hemograma e PCR; US/RM conforme articulação e suspeita de osteomielite."
+          ],
+          "title": "Investigação dirigida"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sepse ou choque",
+          "then": "Culturas rápidas + antibiótico imediato + drenagem/controle de foco."
+        },
+        {
+          "if": "Articulação nativa com pus ou cultura positiva",
+          "then": "Lavagem/drenagem adequada e antibiótico dirigido."
+        },
+        {
+          "if": "Prótese articular",
+          "then": "Aplicar protocolo específico de infecção de prótese com ortopedia e infectologia."
+        },
+        {
+          "if": "Monoartrite aguda quente, com limitação dolorosa e febre ou fatores de risco",
+          "then": "Tratar como possível artrite séptica; artrocentese imediata para celularidade, Gram, cultura e pesquisa de cristais."
+        },
+        {
+          "if": "Instável, sepse ou choque séptico",
+          "then": "Hemoculturas se não atrasarem e iniciar antibiótico IV imediatamente, além de drenagem/ortopedia urgente."
+        },
+        {
+          "if": "Estável e sem sepse antes de antibiótico",
+          "then": "Priorizar aspiração sinovial e hemoculturas antes da primeira dose, sem atraso clínico injustificado."
+        },
+        {
+          "if": "Líquido com cristais identificados mas infecção ainda plausível",
+          "then": "Não excluir infecção concomitante; aguardar microbiologia e decidir tratamento segundo probabilidade."
+        },
+        {
+          "if": "Artrite séptica provável/confirmada",
+          "then": "Antibiótico empírico dirigido por Gram/risco local e drenagem articular por equipe adequada, seguida de cultura guiada."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Escolher conforme Gram, epidemiologia local e risco para MRSA e gram-negativos; ampliar cobertura em sepse, imunossupressão e exposição nosocomial.",
+            "Descalonar imediatamente após cultura e antibiograma.",
+            "Duração e transição IV-VO dependem de agente, articulação, drenagem e resposta; individualizar com infectologia/ortopedia."
+          ],
+          "title": "Antimicrobiano empírico"
+        },
+        {
+          "items": [
+            "Articulações grandes frequentemente necessitam lavagem artroscópica ou drenagem repetida.",
+            "Falha de melhora clínica deve levantar drenagem insuficiente, foco adjacente ou agente não coberto."
+          ],
+          "title": "Controle de foco"
+        },
+        {
+          "items": [
+            "Antimicrobiano empírico depende de Gram, risco MRSA, gonococo e microbiologia; ajustar com culturas e função renal.",
+            "Drenagem precoce (artroscopia/aspiração seriada) reduz dano articular; não utilizar infiltração de corticoide antes de excluir infecção."
+          ],
+          "title": "Tratamento e precauções"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Considerar gonococo em pessoa sexualmente ativa com quadro compatível.",
+            "Tuberculose e fungos entram no diferencial em curso subagudo ou crônico.",
+            "Crianças exigem protocolo pediátrico específico."
+          ],
+          "title": "Situações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar febre, dor, amplitude de movimento e PCR.",
+            "Iniciar mobilização quando a infecção estiver controlada e a drenagem permitir, reduzindo rigidez articular."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Monitorar dor, amplitude, inflamação e culturas, com fisioterapia e avaliação de controle de foco."
+          ],
+          "title": "Seguimento e segurança"
+        }
+      ],
+      "red_flags": [
+        "Sepse ou choque.",
+        "Quadril ou ombro com grande derrame e dor intensa.",
+        "Piora apesar de antibiótico e drenagem.",
+        "Prótese articular ou imunossupressão importante.",
+        "Choque, artrite de quadril, prótese, bacteremia persistente ou deterioração articular."
+      ],
+      "notification": {
+        "text": "Artrite séptica não é, em regra, agravo de notificação compulsória nacional; etiologias específicas podem ter fluxo próprio.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://jbji.copernicus.org/articles/8/29/2023/",
+          "label": "SANJO — Guideline for management of septic arthritis in native joints, 2023"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9901514/",
+          "label": "SANJO — Diretriz de artrite séptica em articulação nativa (2023)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "cefazolina",
+        "ceftriaxona",
+        "oxacilina sódica",
+        "vancomicina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 299,
+      "slug": "procedimentos-protocolos-transversais-prescricao-de-fluidoterapia",
+      "title": "Prescrição de fluidoterapia",
+      "category": "Procedimentos / Protocolos Transversais",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Prescrição de fluidoterapia deve começar pela indicação: ressuscitação, manutenção, reposição de perdas, redistribuição e reavaliação. Fluidos IV só devem ser usados quando necessidades não puderem ser atendidas por via oral/enteral.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Hipovolemia, perdas contínuas, jejum prolongado ou incapacidade de ingerir líquidos.",
+            "Distinguir necessidade de ressuscitação de manutenção rotineira."
+          ],
+          "title": "Indicação e reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar pressão, perfusão, balanço, peso, diurese e comorbidades.",
+            "Preferir cristaloide isotônico para ressuscitação.",
+            "Reavaliar após cada bolus."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Distinguir necessidade de ressuscitação de manutenção, utilizar bolus apropriado com reavaliação clínica frequente."
+          ],
+          "title": "Ação clínica prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ureia, creatinina e eletrólitos antes e durante terapia.",
+            "Monitorar balanço, peso e sinais de sobrecarga."
+          ],
+          "title": "Monitorização e exames"
+        },
+        {
+          "items": [
+            "Balanço, diurese, peso, PA/FC, perfusão, Na/K/Cl, função renal e gasometria quando grave."
+          ],
+          "title": "Investigação e checagem"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Hipotensão, má perfusão ou choque",
+          "then": "Distinguir necessidade de ressuscitação de manutenção, utilizar bolus apropriado com reavaliação clínica frequente."
+        },
+        {
+          "if": "Paciente estável sem possibilidade de ingesta enteral adequada",
+          "then": "Calcular manutenção por peso, idade, comorbidades e eletrólitos, evitando volumes padronizados inadequados."
+        },
+        {
+          "if": "Vômitos, diarreia, dreno ou fístula de alto débito",
+          "then": "Repor perdas medidas separadamente da manutenção e reavaliar eletrólitos."
+        },
+        {
+          "if": "Insuficiência cardíaca, cirrose, DRC ou congestão",
+          "then": "Individualizar bolus/ritmo, evitar balanço positivo excessivo e avaliar resposta dinâmica quando possível."
+        },
+        {
+          "if": "Hiponatremia, hipernatremia ou hipocalemia",
+          "then": "Prescrever solução conforme fisiopatologia específica, nunca apenas trocar volume sem monitorar íons."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Manutenção inicial costuma exigir cerca de 25–30 mL/kg/dia de água, ajustando por idade, coração e rim.",
+            "Somar perdas anormais separadamente.",
+            "Interromper IV assim que via oral/enteral for suficiente."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Usar princípio 5 Rs — ressuscitação, manutenção, reposição, redistribuição e reavaliação; privilegiar via oral/enteral quando possível.",
+            "Cristaloides balanceados podem ser preferíveis em alguns cenários, mas tipo de fluido deve considerar eletrólitos, neurocríticos e indicações específicas."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar por função renal, cardíaca, sangramento, peso e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clínica e laboratorialmente após a intervenção."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Rever indicação e volume diariamente e reduzir fluidos IV ao recuperar via oral."
+          ],
+          "title": "Monitorização e encerramento"
+        }
+      ],
+      "red_flags": [
+        "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional.",
+        "Edema pulmonar, oligúria, choque persistente, rápida variação de sódio."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar indicação, dose/volume, monitorização e resposta.",
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations",
+          "label": "NICE CG174 — Intravenous Fluid Therapy in Adults in Hospital"
+        },
+        {
+          "url": "https://www.nice.org.uk/guidance/cg174/chapter/Recommendations",
+          "label": "NICE — IV fluid therapy in adults in hospital"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 300,
+      "slug": "procedimentos-protocolos-transversais-reposicao-de-potassio",
+      "title": "Reposição de potássio",
+      "category": "Procedimentos / Protocolos Transversais",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Reposição de potássio exige confirmar hipocalemia, função renal, magnésio e gravidade clínica. Via oral é preferida quando possível; reposição IV requer monitorização e limites institucionais de concentração/velocidade.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Fraqueza, câimbras, íleo, arritmia ou K baixo em exame.",
+            "Risco maior com diuréticos, perdas GI, insulina e alcalose."
+          ],
+          "title": "Indicação e reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Repetir potássio se resultado inesperado e avaliar ECG em hipocalemia importante.",
+            "Corrigir magnésio concomitante se baixo.",
+            "Verificar função renal e diurese antes de reposição agressiva."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Confirmar valor, ECG, função renal, magnésio e causa; urgência se arritmia, paralisia ou hipocalemia grave."
+          ],
+          "title": "Avaliação e segurança"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Potássio, magnésio, creatinina e ECG conforme gravidade.",
+            "Repetir níveis após reposição conforme dose e via."
+          ],
+          "title": "Monitorização e exames"
+        },
+        {
+          "items": [
+            "Hipocalemia e/ou sintomas de fraqueza, arritmia",
+            "Preferir reposição oral quando estável; IV com concentração e velocidade institucionais, bomba e monitorização apropriada; nunca IV em bolus."
+          ],
+          "title": "Investigação e checagens"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade, sintomas graves ou risco de complicação",
+          "then": "Tratar imediatamente e monitorar em ambiente apropriado."
+        },
+        {
+          "if": "Hipocalemia e/ou sintomas de fraqueza, arritmia",
+          "then": "Confirmar valor, ECG, função renal, magnésio e causa; urgência se arritmia, paralisia ou hipocalemia grave."
+        },
+        {
+          "if": "Arritmia, alterações importantes do ECG, fraqueza/paralisia ou disfunção renal durante reposição de potássio",
+          "then": "Interromper ou reavaliar a infusão conforme o distúrbio, monitorar ECG e potássio seriado, estabilizar o paciente e corrigir a causa em ambiente com suporte de emergência."
+        },
+        {
+          "if": "Paciente estável e indicação confirmada",
+          "then": "Preferir reposição oral quando estável; IV com concentração e velocidade institucionais, bomba e monitorização apropriada; nunca IV em bolus."
+        },
+        {
+          "if": "Após intervenção",
+          "then": "Repetir potássio após reposição conforme gravidade e corrigir hipomagnesemia concomitante."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Preferir KCl oral em hipocalemia leve/moderada com trato GI funcionante.",
+            "IV para hipocalemia grave, sintomas, ECG alterado ou impossibilidade oral.",
+            "Nunca administrar potássio IV em bolus direto."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Preferir reposição oral quando estável; IV com concentração e velocidade institucionais, bomba e monitorização apropriada; nunca IV em bolus.",
+            "Confirmar valor, ECG, função renal, magnésio e causa; urgência se arritmia, paralisia ou hipocalemia grave."
+          ],
+          "title": "Conduta específica"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar por função renal, cardíaca, sangramento, peso e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clínica e laboratorialmente após a intervenção."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Repetir potássio após reposição conforme gravidade e corrigir hipomagnesemia concomitante."
+          ],
+          "title": "Monitorização"
+        }
+      ],
+      "red_flags": [
+        "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional.",
+        "Arritmia, alterações importantes de ECG, paralisia ou insuficiência renal com risco de hipercalemia."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar indicação, dose/volume, monitorização e resposta.",
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.nice.org.uk/guidance/cg174/chapter/recommendations",
+          "label": "NICE CG174 — Intravenous Fluid Therapy in Adults in Hospital (fonte geral)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    }
+  ]
+}
