@@ -22,29 +22,16 @@ body:not(.schedule-settings-embed) .luria-page-spotlight{
   margin:0 0 14px 0!important;
   padding:24px 28px!important;
   overflow:hidden!important;
-  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border))!important;
+  border:1px solid rgba(255,255,255,0.14)!important;
   border-radius:15px!important;
-  background:linear-gradient(
-    110deg,
-    color-mix(in srgb,var(--accent) 88%,#071c3c),
-    var(--accent) 58%,
-    color-mix(in srgb,var(--accent) 75%,#091f49)
-  )!important;
+  background:var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%))!important;
   color:#fff!important;
   box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight::after{
-  content:""!important;
-  position:absolute!important;
-  width:310px!important;
-  height:310px!important;
-  right:-90px!important;
-  bottom:-220px!important;
-  border-radius:50%!important;
-  background:rgba(255,255,255,.07)!important;
-  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
-  pointer-events:none!important;
-  display:block!important;
+body:not(.schedule-settings-embed) .luria-page-spotlight::after,
+body:not(.schedule-settings-embed) .luria-page-spotlight::before{
+  display:none!important;
+  content:none!important;
 }
 body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
   position:relative!important;
@@ -75,19 +62,24 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy :is(small,.luria-p
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
 body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight,
 body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight{
-  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
+  background:var(--ui-frame-bg, linear-gradient(135deg, #091A33 0%, #102C57 50%, #184888 100%))!important;
   color:#fff!important;
-  border-color:#20344F!important;
+  border-color:rgba(255,255,255,0.14)!important;
   box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::after,
 body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::after,
-body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::after{
-  background:rgba(255,255,255,.07)!important;
-  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::after,
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::before,
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::before,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::before{
+  display:none!important;
+  content:none!important;
 }
-:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight{
-  background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#321328),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#35152d))!important;
+:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight,
+body[data-ui-identity="pink"]:not(.schedule-settings-embed) .luria-page-spotlight{
+  background:var(--ui-frame-bg, linear-gradient(135deg, #4A153B 0%, #882E56 50%, #B2577D 100%))!important;
+  border-color:rgba(255,255,255,0.18)!important;
 }
 body[data-page="desafio"] .daily-topbar .page-heading,
 body[data-page="questoes"] .topbar .page-heading,
@@ -161,8 +153,12 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
 .luria-back-button {
   display: inline-flex !important;
   align-items: center !important;
+  justify-content: flex-start !important;
   gap: 8px !important;
-  padding: 8px 14px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  padding: 0 16px !important;
   margin: 0 0 14px 0 !important;
   border-radius: 12px !important;
   border: 1px solid var(--color-border-interactive, var(--border, #cbd5e1)) !important;
@@ -175,6 +171,8 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
   transition: all 0.15s ease !important;
   cursor: pointer !important;
   width: fit-content !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 .luria-back-button:hover {
   background: var(--color-surface-elevated, var(--surface-2, #f8fafc)) !important;
@@ -184,6 +182,8 @@ body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none
 }
 .luria-back-button svg {
   flex-shrink: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
   transition: transform 0.15s ease !important;
 }
 .luria-back-button:hover svg {

@@ -78,13 +78,8 @@ body[data-page="erros"] .luria-page-spotlight {
   margin: 0 0 14px 0 !important;
   padding: 24px 28px !important;
   border-radius: 15px !important;
-  border: 1px solid color-mix(in srgb,var(--accent) 35%,var(--border)) !important;
-  background: linear-gradient(
-    110deg,
-    color-mix(in srgb,var(--accent) 88%,#071c3c),
-    var(--accent) 58%,
-    color-mix(in srgb,var(--accent) 75%,#091f49)
-  ) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  background: var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%)) !important;
   color: #fff !important;
   box-shadow: 0 10px 30px rgba(17,65,130,.12) !important;
   position: relative !important;
@@ -95,19 +90,13 @@ body[data-page="erros"] .luria-page-spotlight {
 }
 
 body[data-page="questoes"] .qs-page-spotlight::after,
+body[data-page="questoes"] .qs-page-spotlight::before,
 body[data-page="flashcards"] .luria-page-spotlight::after,
-body[data-page="erros"] .luria-page-spotlight::after {
-  content: "" !important;
-  position: absolute !important;
-  width: 310px !important;
-  height: 310px !important;
-  right: -90px !important;
-  bottom: -220px !important;
-  border-radius: 50% !important;
-  background: rgba(255,255,255,.07) !important;
-  box-shadow: -80px -18px 0 rgba(255,255,255,.035) !important;
-  pointer-events: none !important;
-  display: block !important;
+body[data-page="flashcards"] .luria-page-spotlight::before,
+body[data-page="erros"] .luria-page-spotlight::after,
+body[data-page="erros"] .luria-page-spotlight::before {
+  display: none !important;
+  content: none !important;
 }
 
 body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy,

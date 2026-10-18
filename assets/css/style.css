@@ -3386,9 +3386,8 @@ body.auth-page>.auth-card{
 :root[data-theme="light"] .flash-top-spotlight,
 :root[data-theme="light"] .qs-v17-top,
 :root[data-theme="light"] .error-cat-spotlight{
-  background:#184888!important;
-  background-color:#184888!important;
-  border-color:#184888!important;
+  background:var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%))!important;
+  border-color:rgba(255,255,255,.14)!important;
   color:#fff!important;
 }
 :root[data-theme="light"] .luria-page-spotlight::before,
@@ -3403,7 +3402,8 @@ body.auth-page>.auth-card{
 :root[data-theme="light"] .qs-v17-top::after,
 :root[data-theme="light"] .error-cat-spotlight::before,
 :root[data-theme="light"] .error-cat-spotlight::after{
-  border-color:rgba(255,255,255,.14)!important;
+  display:none!important;
+  content:none!important;
 }
 :root[data-theme="light"] .luria-page-spotlight h1,
 :root[data-theme="light"] .luria-page-spotlight h2,
@@ -3446,9 +3446,8 @@ body.auth-page>.auth-card{
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .flash-top-spotlight,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .qs-v17-top,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .error-cat-spotlight{
-  background:#184888!important;
-  background-color:#184888!important;
-  border-color:#184888!important;
+  background:var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%))!important;
+  border-color:rgba(255,255,255,.14)!important;
   color:#fff!important;
 }
 
@@ -3466,8 +3465,8 @@ body.theme-dark .stats-hero,
 body.theme-dark .flash-top-spotlight,
 body.theme-dark .qs-v17-top,
 body.theme-dark .error-cat-spotlight{
-  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
-  border-color:#20344F!important;
+  background:var(--ui-frame-bg, linear-gradient(135deg, #091A33 0%, #102C57 50%, #184888 100%))!important;
+  border-color:rgba(255,255,255,0.14)!important;
   color:#fff!important;
   box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
@@ -3877,28 +3876,16 @@ body[data-page^="trabalho_"] .luria-work-page-spotlight{
   margin:0 0 14px;
   padding:24px 28px!important;
   overflow:hidden;
-  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+  border:1px solid rgba(255,255,255,0.14);
   border-radius:15px!important;
-  background:linear-gradient(
-    110deg,
-    color-mix(in srgb,var(--accent) 88%,#071c3c),
-    var(--accent) 58%,
-    color-mix(in srgb,var(--accent) 75%,#091f49)
-  );
+  background:var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%))!important;
   color:#fff;
   box-shadow:0 10px 30px rgba(17,65,130,.12);
 }
-body[data-page^="trabalho_"] .luria-work-page-spotlight::after{
-  content:"";
-  position:absolute;
-  width:310px;
-  height:310px;
-  right:-90px;
-  bottom:-220px;
-  border-radius:50%;
-  background:rgba(255,255,255,.07);
-  box-shadow:-80px -18px 0 rgba(255,255,255,.035);
-  pointer-events:none;
+body[data-page^="trabalho_"] .luria-work-page-spotlight::after,
+body[data-page^="trabalho_"] .luria-work-page-spotlight::before{
+  display:none!important;
+  content:none!important;
 }
 body[data-page^="trabalho_"] .luria-work-page-spotlight .luria-page-spotlight-copy{
   position:relative;
@@ -3939,28 +3926,16 @@ body[data-page="dashboard"] .luria-dashboard-spotlight{
   margin:0 0 14px;
   padding:24px 28px!important;
   overflow:hidden;
-  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+  border:1px solid rgba(255,255,255,0.14);
   border-radius:15px!important;
-  background:linear-gradient(
-    110deg,
-    color-mix(in srgb,var(--accent) 88%,#071c3c),
-    var(--accent) 58%,
-    color-mix(in srgb,var(--accent) 75%,#091f49)
-  );
+  background:var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%))!important;
   color:#fff;
   box-shadow:0 10px 30px rgba(17,65,130,.12);
 }
-body[data-page="dashboard"] .luria-dashboard-spotlight::after{
-  content:"";
-  position:absolute;
-  width:310px;
-  height:310px;
-  right:-90px;
-  bottom:-220px;
-  border-radius:50%;
-  background:rgba(255,255,255,.07);
-  box-shadow:-80px -18px 0 rgba(255,255,255,.035);
-  pointer-events:none;
+body[data-page="dashboard"] .luria-dashboard-spotlight::after,
+body[data-page="dashboard"] .luria-dashboard-spotlight::before{
+  display:none!important;
+  content:none!important;
 }
 body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy{
   position:relative;
