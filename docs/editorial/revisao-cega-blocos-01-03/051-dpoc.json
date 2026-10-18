@@ -6,11 +6,11 @@
   "findings": [],
   "checks": {
     "json": true,
-    "sections": 24,
+    "sections": 23,
     "uniqueIds": true,
     "toc": true,
     "references": true,
-    "characters": 66828,
+    "characters": 65569,
     "controls": true,
     "rawMath": true,
     "questions": true,
