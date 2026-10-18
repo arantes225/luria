@@ -22,6 +22,12 @@ test("Gemini secret stays in backend and requests require authentication", () =>
   assert.match(edge, /auth\.getUser\(token\)/);
   assert.match(edge, /origin_not_allowed/);
   assert.match(edge, /MAX_PDF_BASE64/);
+  assert.match(edge, /provider_status: response\.status/);
+  assert.match(edge, /gemini_key_invalid/);
+  assert.match(edge, /gemini_model_unavailable/);
+  assert.doesNotMatch(edge, /console\.log\(.*apiKey/);
+  assert.match(client, /gemini_key_invalid/);
+  assert.match(client, /gemini_billing_required/);
 });
 
 test("Daily request quota uses atomic update, RLS and is not exposed to clients", () => {

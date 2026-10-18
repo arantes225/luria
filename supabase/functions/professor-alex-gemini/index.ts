@@ -142,15 +142,38 @@ Deno.serve(async (req: Request) => {
       }),
       signal: AbortSignal.timeout(50_000),
     });
-  } catch {
-    return json({ error: "gemini_unavailable" }, 502, headers);
+  } catch (cause) {
+    // Only record the error category; never log prompts, API keys, attachments or
+    // raw provider error messages.
+    console.warn("[alex-gemini] provider_connection_failure", cause instanceof DOMException ? cause.name : "network_failure");
+    return json({ error: "gemini_connection_failed" }, 502, headers);
   }
   if (!response.ok) {
-    // Never echo Google error payloads; they may contain sensitive details.
-    return json({
-      error: response.status === 429 ? "gemini_rate_limited" :
-        response.status === 401 || response.status === 403 ? "gemini_key_rejected" : "gemini_unavailable",
-    }, response.status === 429 ? 429 : 502, headers);
+    const provider = await response.json().catch(() => ({}));
+    // Upstream messages may contain key fragments or user input, so only inspect
+    // them locally and expose a finite set of nonsensitive error categories.
+    const message = String(provider?.error?.message || "").toLowerCase();
+    const apiStatus = String(provider?.error?.status || "").slice(0, 60);
+    let reason: string;
+    if (/api.key.*(invalid|expired|leaked|blocked)|api_key_invalid|invalid api key|api key not valid|api key was reported/.test(message)) {
+      reason = "gemini_key_invalid";
+    } else if (/billing|payment method|payment profile|quota project/.test(message)) {
+      reason = "gemini_billing_required";
+    } else if (/not found|not supported for generatecontent|does not exist|not available to your project/.test(message) || response.status === 404) {
+      reason = "gemini_model_unavailable";
+    } else if (/disabled|not enabled|service usage/.test(message)) {
+      reason = "gemini_api_disabled";
+    } else if (response.status === 429) {
+      reason = "gemini_rate_limited";
+    } else if (response.status === 401 || response.status === 403) {
+      reason = "gemini_key_rejected";
+    } else if (response.status === 400) {
+      reason = "gemini_invalid_request";
+    } else {
+      reason = "gemini_unavailable";
+    }
+    console.warn("[alex-gemini] provider_error", { http_status: response.status, api_status: /^[A-Z_]+$/.test(apiStatus) ? apiStatus : "UNKNOWN", category: reason, model: MODEL });
+    return json({ error: reason, provider_status: response.status }, response.status === 429 ? 429 : 502, headers);
   }
 
   const result = await response.json().catch(() => null);
