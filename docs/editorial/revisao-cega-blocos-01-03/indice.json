@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-18T02:57:25.746Z",
+  "generatedAt": "2026-10-18T02:59:44.492Z",
   "blind": true,
   "criteria": "revisão por conteúdo individual; sem reutilizar status anterior",
   "total": 69,
   "byStatus": {
-    "aprovado-na-triagem": 61,
-    "revisar": 8
+    "aprovado-na-triagem": 65,
+    "revisar": 4
   },
   "results": [
     {
@@ -160,21 +160,18 @@
       "id": 8,
       "slug": "reanimacao-neonatal",
       "block": 1,
-      "status": "revisar",
-      "findings": [
-        "não foi localizado caso ou questão explícita",
-        "nota de produção misturada ao texto do aluno"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
         "references": true,
-        "characters": 95829,
+        "characters": 95661,
         "controls": true,
         "rawMath": true,
-        "questions": false,
+        "questions": true,
         "html": true,
         "format": "content-json",
         "htmlCharacters": 0,
@@ -405,20 +402,18 @@
       "id": 19,
       "slug": "vacinacao-suplementacao-gestacao",
       "block": 1,
-      "status": "revisar",
-      "findings": [
-        "não foi localizado caso ou questão explícita"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
         "references": true,
-        "characters": 89172,
+        "characters": 90006,
         "controls": true,
         "rawMath": true,
-        "questions": false,
+        "questions": true,
         "html": true,
         "format": "content-json",
         "htmlCharacters": 0,
@@ -451,20 +446,18 @@
       "id": 21,
       "slug": "valvopatias",
       "block": 1,
-      "status": "revisar",
-      "findings": [
-        "não foi localizado caso ou questão explícita"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
         "references": true,
-        "characters": 71272,
+        "characters": 71994,
         "controls": true,
         "rawMath": true,
-        "questions": false,
+        "questions": true,
         "html": true,
         "format": "content-json",
         "htmlCharacters": 0,
@@ -475,17 +468,15 @@
       "id": 22,
       "slug": "choque-hemorragico",
       "block": 1,
-      "status": "revisar",
-      "findings": [
-        "nota de produção misturada ao texto do aluno"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
         "references": true,
-        "characters": 68004,
+        "characters": 67546,
         "controls": true,
         "rawMath": true,
         "questions": true,
@@ -1489,7 +1480,7 @@
         "json": false,
         "html": true,
         "format": "html",
-        "htmlCharacters": 63604,
+        "htmlCharacters": 63987,
         "references": true,
         "questions": false,
         "brokenAnchors": 0

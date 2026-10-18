@@ -13,7 +13,7 @@ Total: 69.
 | 005 | principios-diretrizes-sus | aprovado-na-triagem | nenhum na triagem |
 | 006 | insuficiencia-cardiaca | aprovado-na-triagem | nenhum na triagem |
 | 007 | cuidados-perioperatorios-prevencao-complicacoes | aprovado-na-triagem | nenhum na triagem |
-| 008 | reanimacao-neonatal | revisar | não foi localizado caso ou questão explícita; nota de produção misturada ao texto do aluno |
+| 008 | reanimacao-neonatal | aprovado-na-triagem | nenhum na triagem |
 | 009 | diagnostico-datacao-gestacao | aprovado-na-triagem | nenhum na triagem |
 | 010 | lei-8080-1990 | aprovado-na-triagem | nenhum na triagem |
 | 011 | hipertensao-arterial-sistemica | aprovado-na-triagem | nenhum na triagem |
@@ -24,10 +24,10 @@ Total: 69.
 | 016 | arritmias-fibrilacao-atrial | aprovado-na-triagem | nenhum na triagem |
 | 017 | reposicao-volemica-disturbios-hidroeletroliticos | aprovado-na-triagem | nenhum na triagem |
 | 018 | ictericia-neonatal | aprovado-na-triagem | nenhum na triagem |
-| 019 | vacinacao-suplementacao-gestacao | revisar | não foi localizado caso ou questão explícita |
+| 019 | vacinacao-suplementacao-gestacao | aprovado-na-triagem | nenhum na triagem |
 | 020 | atencao-primaria-saude-atributos | aprovado-na-triagem | nenhum na triagem |
-| 021 | valvopatias | revisar | não foi localizado caso ou questão explícita |
-| 022 | choque-hemorragico | revisar | nota de produção misturada ao texto do aluno |
+| 021 | valvopatias | aprovado-na-triagem | nenhum na triagem |
+| 022 | choque-hemorragico | aprovado-na-triagem | nenhum na triagem |
 | 023 | sepse-neonatal | aprovado-na-triagem | nenhum na triagem |
 | 024 | sindromes-hipertensivas-da-gestacao | revisar | HTML abaixo de 60 mil caracteres (16975) |
 | 025 | estrategia-saude-da-familia | aprovado-na-triagem | nenhum na triagem |

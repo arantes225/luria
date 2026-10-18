@@ -2,17 +2,15 @@
   "id": 22,
   "slug": "choque-hemorragico",
   "block": 1,
-  "status": "revisar",
-  "findings": [
-    "nota de produção misturada ao texto do aluno"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 15,
     "uniqueIds": true,
     "toc": true,
     "references": true,
-    "characters": 68004,
+    "characters": 67546,
     "controls": true,
     "rawMath": true,
     "questions": true,
