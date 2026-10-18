@@ -423,6 +423,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .btn-primary,
   [data-action="primary"],
   .primary-action,
+  .primary-nav,
   .qr-btn.primary,
   #qr-confirm.primary,
   .alex-action.primary,
@@ -434,6 +435,11 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .ed-new-exam,
   .dl-primary,
   .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
   #start-review-session,
   .qs-library-btn-solve,
   .external-enter,
@@ -457,7 +463,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   #social-suggestions .button,
   .community-shortcut-card .button
 ) {
-  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #184888, #2563EB)) !important;
   color: #ffffff !important;
   border: none !important;
   border-color: transparent !important;
@@ -475,6 +481,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .btn-primary,
   [data-action="primary"],
   .primary-action,
+  .primary-nav,
   .qr-btn.primary,
   #qr-confirm.primary,
   .alex-action.primary,
@@ -486,6 +493,11 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .ed-new-exam,
   .dl-primary,
   .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
   #start-review-session,
   .qs-library-btn-solve,
   .external-enter,
@@ -509,9 +521,9 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   #social-suggestions .button,
   .community-shortcut-card .button
 ):hover {
-  background: linear-gradient(135deg, #1e58a6, #3b82f6) !important;
+  background: var(--ui-hero-gradient, linear-gradient(135deg, #1e58a6, #3b82f6)) !important;
   color: #ffffff !important;
-  filter: brightness(1.06) !important;
+  filter: brightness(1.08) !important;
   transform: translateY(-1px) !important;
   box-shadow: 0 6px 18px rgba(24, 72, 136, 0.28) !important;
 }
@@ -524,6 +536,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .btn-primary,
   [data-action="primary"],
   .primary-action,
+  .primary-nav,
   .qr-btn.primary,
   #qr-confirm.primary,
   .alex-action.primary,
@@ -535,6 +548,11 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .ed-new-exam,
   .dl-primary,
   .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
   #start-review-session,
   .qs-library-btn-solve,
   .external-enter,
@@ -558,7 +576,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   #social-suggestions .button,
   .community-shortcut-card .button
 ) {
-  background: linear-gradient(135deg, #1d4ed8, #3b82f6) !important;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d4ed8, #3b82f6)) !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 12px !important;
@@ -572,6 +590,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .btn-primary,
   [data-action="primary"],
   .primary-action,
+  .primary-nav,
   .qr-btn.primary,
   #qr-confirm.primary,
   .alex-action.primary,
@@ -583,6 +602,11 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   .ed-new-exam,
   .dl-primary,
   .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
   #start-review-session,
   .qs-library-btn-solve,
   .external-enter,
@@ -606,7 +630,7 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
   #social-suggestions .button,
   .community-shortcut-card .button
 ):hover {
-  background: linear-gradient(135deg, #2563eb, #60a5fa) !important;
+  background: var(--ui-hero-gradient, linear-gradient(135deg, #2563eb, #60a5fa)) !important;
   filter: brightness(1.08) !important;
   transform: translateY(-1px) !important;
   box-shadow: 0 6px 18px rgba(29, 78, 216, 0.4) !important;
