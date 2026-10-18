@@ -2,17 +2,14 @@
   "id": 5,
   "slug": "principios-diretrizes-sus",
   "block": 1,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 16,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 70581,
     "controls": true,
     "rawMath": true,

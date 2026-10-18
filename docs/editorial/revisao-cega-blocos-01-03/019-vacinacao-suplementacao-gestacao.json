@@ -4,7 +4,6 @@
   "block": 1,
   "status": "revisar",
   "findings": [
-    "não foi localizado caso ou questão explícita",
     "não foi localizado caso ou questão explícita"
   ],
   "checks": {

@@ -2,17 +2,14 @@
   "id": 38,
   "slug": "crescimento-e-desenvolvimento",
   "block": 2,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 13,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 143555,
     "controls": true,
     "rawMath": true,

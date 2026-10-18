@@ -2,17 +2,14 @@
   "id": 15,
   "slug": "lei-8142-1990",
   "block": 1,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 15,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 92619,
     "controls": true,
     "rawMath": true,

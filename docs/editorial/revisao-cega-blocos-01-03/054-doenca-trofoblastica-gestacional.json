@@ -2,17 +2,14 @@
   "id": 54,
   "slug": "doenca-trofoblastica-gestacional",
   "block": 3,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 15,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 68227,
     "controls": true,
     "rawMath": true,

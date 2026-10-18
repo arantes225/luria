@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-10-18T02:56:06.783Z",
+  "generatedAt": "2026-10-18T02:57:25.746Z",
   "blind": true,
   "criteria": "revisão por conteúdo individual; sem reutilizar status anterior",
   "total": 69,
   "byStatus": {
-    "aprovado-na-triagem": 21,
-    "bloqueado": 41,
-    "revisar": 7
+    "aprovado-na-triagem": 61,
+    "revisar": 8
   },
   "results": [
     {
@@ -57,17 +56,14 @@
       "id": 3,
       "slug": "assistencia-recem-nascido-sala-parto",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 78929,
         "controls": true,
         "rawMath": true,
@@ -82,16 +78,14 @@
       "id": 4,
       "slug": "pre-natal-baixo-risco",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": false,
         "html": true,
         "format": "html",
         "htmlCharacters": 76783,
-        "references": false,
+        "references": true,
         "questions": true,
         "brokenAnchors": 0
       }
@@ -100,17 +94,14 @@
       "id": 5,
       "slug": "principios-diretrizes-sus",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 16,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 70581,
         "controls": true,
         "rawMath": true,
@@ -169,20 +160,17 @@
       "id": 8,
       "slug": "reanimacao-neonatal",
       "block": 1,
-      "status": "bloqueado",
+      "status": "revisar",
       "findings": [
-        "referências ausentes ou sem URL verificável",
         "não foi localizado caso ou questão explícita",
-        "nota de produção misturada ao texto do aluno",
-        "referências ausentes ou sem URL verificável",
-        "não foi localizado caso ou questão explícita"
+        "nota de produção misturada ao texto do aluno"
       ],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 95829,
         "controls": true,
         "rawMath": true,
@@ -197,17 +185,14 @@
       "id": 9,
       "slug": "diagnostico-datacao-gestacao",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 65396,
         "controls": true,
         "rawMath": true,
@@ -222,17 +207,14 @@
       "id": 10,
       "slug": "lei-8080-1990",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 16,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 63886,
         "controls": true,
         "rawMath": true,
@@ -269,17 +251,14 @@
       "id": 12,
       "slug": "resposta-metabolica-ao-trauma",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 68548,
         "controls": true,
         "rawMath": true,
@@ -294,17 +273,14 @@
       "id": 13,
       "slug": "prematuridade-baixo-peso-nascer",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 17,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 94926,
         "controls": true,
         "rawMath": true,
@@ -319,17 +295,14 @@
       "id": 14,
       "slug": "exames-rastreamentos-pre-natal",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 17,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 88330,
         "controls": true,
         "rawMath": true,
@@ -344,17 +317,14 @@
       "id": 15,
       "slug": "lei-8142-1990",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 92619,
         "controls": true,
         "rawMath": true,
@@ -391,17 +361,14 @@
       "id": 17,
       "slug": "reposicao-volemica-disturbios-hidroeletroliticos",
       "block": 1,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 90780,
         "controls": true,
         "rawMath": true,
@@ -440,7 +407,6 @@
       "block": 1,
       "status": "revisar",
       "findings": [
-        "não foi localizado caso ou questão explícita",
         "não foi localizado caso ou questão explícita"
       ],
       "checks": {
@@ -487,7 +453,6 @@
       "block": 1,
       "status": "revisar",
       "findings": [
-        "não foi localizado caso ou questão explícita",
         "não foi localizado caso ou questão explícita"
       ],
       "checks": {
@@ -574,17 +539,14 @@
       "id": 25,
       "slug": "estrategia-saude-da-familia",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 116841,
         "controls": true,
         "rawMath": true,
@@ -599,17 +561,14 @@
       "id": 26,
       "slug": "endocardite-infecciosa",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 14,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 131527,
         "controls": true,
         "rawMath": true,
@@ -624,17 +583,14 @@
       "id": 27,
       "slug": "nutricao-no-paciente-cirurgico",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 128173,
         "controls": true,
         "rawMath": true,
@@ -649,17 +605,14 @@
       "id": 28,
       "slug": "aleitamento-materno",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 14,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 109319,
         "controls": true,
         "rawMath": true,
@@ -692,17 +645,14 @@
       "id": 30,
       "slug": "politica-nacional-de-atencao-basica",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 97810,
         "controls": true,
         "rawMath": true,
@@ -717,17 +667,14 @@
       "id": 31,
       "slug": "pericardite-e-tamponamento-cardiaco",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 14,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 108100,
         "controls": true,
         "rawMath": true,
@@ -742,17 +689,14 @@
       "id": 32,
       "slug": "cicatrizacao-de-feridas",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 131578,
         "controls": true,
         "rawMath": true,
@@ -767,17 +711,14 @@
       "id": 33,
       "slug": "alimentacao-complementar",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 181900,
         "controls": true,
         "rawMath": true,
@@ -792,16 +733,14 @@
       "id": 34,
       "slug": "infeccoes-gestacao-transmissao-vertical",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": false,
         "html": true,
         "format": "html",
         "htmlCharacters": 62093,
-        "references": false,
+        "references": true,
         "questions": true,
         "brokenAnchors": 0
       }
@@ -810,17 +749,14 @@
       "id": 35,
       "slug": "redes-de-atencao-a-saude",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 100328,
         "controls": true,
         "rawMath": true,
@@ -835,17 +771,14 @@
       "id": 36,
       "slug": "tromboembolismo-venoso-e-embolia-pulmonar",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 14,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 114841,
         "controls": true,
         "rawMath": true,
@@ -860,17 +793,14 @@
       "id": 37,
       "slug": "infeccao-do-sitio-cirurgico-e-antibioticoprofilaxia",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 14,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 71510,
         "controls": true,
         "rawMath": true,
@@ -885,17 +815,14 @@
       "id": 38,
       "slug": "crescimento-e-desenvolvimento",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 143555,
         "controls": true,
         "rawMath": true,
@@ -928,17 +855,14 @@
       "id": 40,
       "slug": "regionalizacao-hierarquizacao-e-referencia-contrarreferencia",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 77571,
         "controls": true,
         "rawMath": true,
@@ -1007,17 +931,14 @@
       "id": 44,
       "slug": "abortamento",
       "block": 2,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 141361,
         "controls": true,
         "rawMath": true,
@@ -1098,17 +1019,14 @@
       "id": 48,
       "slug": "imunizacoes-na-infancia",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 74767,
         "controls": true,
         "rawMath": true,
@@ -1123,17 +1041,14 @@
       "id": 49,
       "slug": "gestacao-ectopica",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 71239,
         "controls": true,
         "rawMath": true,
@@ -1148,17 +1063,14 @@
       "id": 50,
       "slug": "financiamento-e-gestao-do-sus",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 21,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 63726,
         "controls": true,
         "rawMath": true,
@@ -1173,17 +1085,14 @@
       "id": 51,
       "slug": "dpoc",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 24,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 66828,
         "controls": true,
         "rawMath": true,
@@ -1242,17 +1151,14 @@
       "id": 54,
       "slug": "doenca-trofoblastica-gestacional",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 68227,
         "controls": true,
         "rawMath": true,
@@ -1267,17 +1173,14 @@
       "id": 55,
       "slug": "vigilancia-em-saude",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 25,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 63085,
         "controls": true,
         "rawMath": true,
@@ -1292,17 +1195,14 @@
       "id": 56,
       "slug": "pneumonias-adquiridas-na-comunidade",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 92231,
         "controls": true,
         "rawMath": true,
@@ -1317,17 +1217,14 @@
       "id": 57,
       "slug": "trauma-toracico",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 27,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 63701,
         "controls": true,
         "rawMath": true,
@@ -1364,17 +1261,14 @@
       "id": 59,
       "slug": "sangramento-na-segunda-metade-da-gestacao",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 71569,
         "controls": true,
         "rawMath": true,
@@ -1389,17 +1283,14 @@
       "id": 60,
       "slug": "vigilancia-epidemiologica",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 14,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 69578,
         "controls": true,
         "rawMath": true,
@@ -1414,17 +1305,14 @@
       "id": 61,
       "slug": "tuberculose-pulmonar",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 101327,
         "controls": true,
         "rawMath": true,
@@ -1439,17 +1327,14 @@
       "id": 62,
       "slug": "trauma-abdominal",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 15,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 63234,
         "controls": true,
         "rawMath": true,
@@ -1464,17 +1349,14 @@
       "id": 63,
       "slug": "doenca-do-refluxo-gastroesofagico-na-infancia",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 13,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 75282,
         "controls": true,
         "rawMath": true,
@@ -1489,17 +1371,14 @@
       "id": 64,
       "slug": "placenta-previa-e-descolamento-prematuro-de-placenta",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 16,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 66937,
         "controls": true,
         "rawMath": true,
@@ -1580,17 +1459,14 @@
       "id": 68,
       "slug": "desnutricao-e-deficiencias-nutricionais",
       "block": 3,
-      "status": "bloqueado",
-      "findings": [
-        "referências ausentes ou sem URL verificável",
-        "referências ausentes ou sem URL verificável"
-      ],
+      "status": "aprovado-na-triagem",
+      "findings": [],
       "checks": {
         "json": true,
         "sections": 11,
         "uniqueIds": true,
         "toc": true,
-        "references": false,
+        "references": true,
         "characters": 70138,
         "controls": true,
         "rawMath": true,

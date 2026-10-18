@@ -2,17 +2,14 @@
   "id": 55,
   "slug": "vigilancia-em-saude",
   "block": 3,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 25,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 63085,
     "controls": true,
     "rawMath": true,

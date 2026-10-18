@@ -2,17 +2,14 @@
   "id": 51,
   "slug": "dpoc",
   "block": 3,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 24,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 66828,
     "controls": true,
     "rawMath": true,

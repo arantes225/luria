@@ -2,17 +2,14 @@
   "id": 64,
   "slug": "placenta-previa-e-descolamento-prematuro-de-placenta",
   "block": 3,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 16,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 66937,
     "controls": true,
     "rawMath": true,

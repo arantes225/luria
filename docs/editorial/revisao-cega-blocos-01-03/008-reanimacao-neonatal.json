@@ -2,20 +2,17 @@
   "id": 8,
   "slug": "reanimacao-neonatal",
   "block": 1,
-  "status": "bloqueado",
+  "status": "revisar",
   "findings": [
-    "referências ausentes ou sem URL verificável",
     "não foi localizado caso ou questão explícita",
-    "nota de produção misturada ao texto do aluno",
-    "referências ausentes ou sem URL verificável",
-    "não foi localizado caso ou questão explícita"
+    "nota de produção misturada ao texto do aluno"
   ],
   "checks": {
     "json": true,
     "sections": 15,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 95829,
     "controls": true,
     "rawMath": true,

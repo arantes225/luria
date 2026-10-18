@@ -2,17 +2,14 @@
   "id": 28,
   "slug": "aleitamento-materno",
   "block": 2,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável",
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": true,
     "sections": 14,
     "uniqueIds": true,
     "toc": true,
-    "references": false,
+    "references": true,
     "characters": 109319,
     "controls": true,
     "rawMath": true,

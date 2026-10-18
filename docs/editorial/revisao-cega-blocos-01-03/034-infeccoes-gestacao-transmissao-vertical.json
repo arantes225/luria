@@ -2,16 +2,14 @@
   "id": 34,
   "slug": "infeccoes-gestacao-transmissao-vertical",
   "block": 2,
-  "status": "bloqueado",
-  "findings": [
-    "referências ausentes ou sem URL verificável"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": false,
     "html": true,
     "format": "html",
     "htmlCharacters": 62093,
-    "references": false,
+    "references": true,
     "questions": true,
     "brokenAnchors": 0
   }
