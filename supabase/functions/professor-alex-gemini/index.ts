@@ -155,6 +155,7 @@ Deno.serve(async (req: Request) => {
 
   const result = await response.json().catch(() => null);
   const answer = result?.candidates?.[0]?.content?.parts
+    ?.filter((part: { thought?: boolean }) => !part.thought)
     ?.map((part: { text?: string }) => part.text || "")
     .filter(Boolean).join("\n").trim();
   if (!answer) return json({ error: "empty_response" }, 502, headers);
