@@ -1,0 +1,25 @@
+{
+  "id": 60,
+  "slug": "vigilancia-epidemiologica",
+  "block": 3,
+  "status": "bloqueado",
+  "findings": [
+    "referências ausentes ou sem URL verificável",
+    "referências ausentes ou sem URL verificável"
+  ],
+  "checks": {
+    "json": true,
+    "sections": 14,
+    "uniqueIds": true,
+    "toc": true,
+    "references": false,
+    "characters": 69578,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

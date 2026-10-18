@@ -1,0 +1,25 @@
+{
+  "id": 56,
+  "slug": "pneumonias-adquiridas-na-comunidade",
+  "block": 3,
+  "status": "bloqueado",
+  "findings": [
+    "referências ausentes ou sem URL verificável",
+    "referências ausentes ou sem URL verificável"
+  ],
+  "checks": {
+    "json": true,
+    "sections": 13,
+    "uniqueIds": true,
+    "toc": true,
+    "references": false,
+    "characters": 92231,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

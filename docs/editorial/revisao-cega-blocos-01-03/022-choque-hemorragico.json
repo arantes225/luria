@@ -1,0 +1,24 @@
+{
+  "id": 22,
+  "slug": "choque-hemorragico",
+  "block": 1,
+  "status": "revisar",
+  "findings": [
+    "nota de produção misturada ao texto do aluno"
+  ],
+  "checks": {
+    "json": true,
+    "sections": 15,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 68004,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

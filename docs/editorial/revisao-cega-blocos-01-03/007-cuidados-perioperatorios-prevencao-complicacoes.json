@@ -1,0 +1,22 @@
+{
+  "id": 7,
+  "slug": "cuidados-perioperatorios-prevencao-complicacoes",
+  "block": 1,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 14,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 120755,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 69,
+  "slug": "assistencia-ao-parto",
+  "block": 3,
+  "status": "revisar",
+  "findings": [
+    "não foi localizado caso ou questão explícita"
+  ],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 63604,
+    "references": true,
+    "questions": false,
+    "brokenAnchors": 0
+  }
+}

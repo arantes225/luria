@@ -1,0 +1,16 @@
+{
+  "id": 41,
+  "slug": "choque-circulatorio",
+  "block": 2,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 94748,
+    "references": true,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}

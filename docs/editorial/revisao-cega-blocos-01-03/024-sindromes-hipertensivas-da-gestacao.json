@@ -1,0 +1,18 @@
+{
+  "id": 24,
+  "slug": "sindromes-hipertensivas-da-gestacao",
+  "block": 2,
+  "status": "revisar",
+  "findings": [
+    "HTML abaixo de 60 mil caracteres (16975)"
+  ],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 16975,
+    "references": true,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}

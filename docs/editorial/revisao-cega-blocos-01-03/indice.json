@@ -1,0 +1,1623 @@
+{
+  "generatedAt": "2026-10-18T02:56:06.783Z",
+  "blind": true,
+  "criteria": "revisão por conteúdo individual; sem reutilizar status anterior",
+  "total": 69,
+  "byStatus": {
+    "aprovado-na-triagem": 21,
+    "bloqueado": 41,
+    "revisar": 7
+  },
+  "results": [
+    {
+      "id": 1,
+      "slug": "sindromes-coronarianas-agudas",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 94545,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 2,
+      "slug": "avaliacao-pre-operatoria-risco-cirurgico",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 113971,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 3,
+      "slug": "assistencia-recem-nascido-sala-parto",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 78929,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 4,
+      "slug": "pre-natal-baixo-risco",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 76783,
+        "references": false,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 5,
+      "slug": "principios-diretrizes-sus",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 16,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 70581,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 6,
+      "slug": "insuficiencia-cardiaca",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 12,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 90896,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 7,
+      "slug": "cuidados-perioperatorios-prevencao-complicacoes",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 120755,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 8,
+      "slug": "reanimacao-neonatal",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "não foi localizado caso ou questão explícita",
+        "nota de produção misturada ao texto do aluno",
+        "referências ausentes ou sem URL verificável",
+        "não foi localizado caso ou questão explícita"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 95829,
+        "controls": true,
+        "rawMath": true,
+        "questions": false,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 9,
+      "slug": "diagnostico-datacao-gestacao",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 65396,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 10,
+      "slug": "lei-8080-1990",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 16,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 63886,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 11,
+      "slug": "hipertensao-arterial-sistemica",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 84635,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 12,
+      "slug": "resposta-metabolica-ao-trauma",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 68548,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 13,
+      "slug": "prematuridade-baixo-peso-nascer",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 17,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 94926,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 14,
+      "slug": "exames-rastreamentos-pre-natal",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 17,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 88330,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 15,
+      "slug": "lei-8142-1990",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 92619,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 16,
+      "slug": "arritmias-fibrilacao-atrial",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 114532,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 17,
+      "slug": "reposicao-volemica-disturbios-hidroeletroliticos",
+      "block": 1,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 90780,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 18,
+      "slug": "ictericia-neonatal",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 17,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 85410,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 19,
+      "slug": "vacinacao-suplementacao-gestacao",
+      "block": 1,
+      "status": "revisar",
+      "findings": [
+        "não foi localizado caso ou questão explícita",
+        "não foi localizado caso ou questão explícita"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 89172,
+        "controls": true,
+        "rawMath": true,
+        "questions": false,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 20,
+      "slug": "atencao-primaria-saude-atributos",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 19,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 87190,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 21,
+      "slug": "valvopatias",
+      "block": 1,
+      "status": "revisar",
+      "findings": [
+        "não foi localizado caso ou questão explícita",
+        "não foi localizado caso ou questão explícita"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 71272,
+        "controls": true,
+        "rawMath": true,
+        "questions": false,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 22,
+      "slug": "choque-hemorragico",
+      "block": 1,
+      "status": "revisar",
+      "findings": [
+        "nota de produção misturada ao texto do aluno"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 68004,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 23,
+      "slug": "sepse-neonatal",
+      "block": 1,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 64779,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 24,
+      "slug": "sindromes-hipertensivas-da-gestacao",
+      "block": 2,
+      "status": "revisar",
+      "findings": [
+        "HTML abaixo de 60 mil caracteres (16975)"
+      ],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 16975,
+        "references": true,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 25,
+      "slug": "estrategia-saude-da-familia",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 116841,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 26,
+      "slug": "endocardite-infecciosa",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 131527,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 27,
+      "slug": "nutricao-no-paciente-cirurgico",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 128173,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 28,
+      "slug": "aleitamento-materno",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 109319,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 29,
+      "slug": "diabetes-mellitus-gestacional",
+      "block": 2,
+      "status": "revisar",
+      "findings": [
+        "HTML abaixo de 60 mil caracteres (10717)"
+      ],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 10717,
+        "references": true,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 30,
+      "slug": "politica-nacional-de-atencao-basica",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 97810,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 31,
+      "slug": "pericardite-e-tamponamento-cardiaco",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 108100,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 32,
+      "slug": "cicatrizacao-de-feridas",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 131578,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 33,
+      "slug": "alimentacao-complementar",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 181900,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 34,
+      "slug": "infeccoes-gestacao-transmissao-vertical",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 62093,
+        "references": false,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 35,
+      "slug": "redes-de-atencao-a-saude",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 100328,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 36,
+      "slug": "tromboembolismo-venoso-e-embolia-pulmonar",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 114841,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 37,
+      "slug": "infeccao-do-sitio-cirurgico-e-antibioticoprofilaxia",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 71510,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 38,
+      "slug": "crescimento-e-desenvolvimento",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 143555,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 39,
+      "slug": "sangramento-na-primeira-metade-da-gestacao",
+      "block": 2,
+      "status": "revisar",
+      "findings": [
+        "HTML abaixo de 60 mil caracteres (38654)"
+      ],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 38654,
+        "references": true,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 40,
+      "slug": "regionalizacao-hierarquizacao-e-referencia-contrarreferencia",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 77571,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 41,
+      "slug": "choque-circulatorio",
+      "block": 2,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 94748,
+        "references": true,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 42,
+      "slug": "principios-de-tecnica-cirurgica",
+      "block": 2,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 93239,
+        "references": true,
+        "questions": true,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 43,
+      "slug": "puericultura-e-prevencao-de-acidentes",
+      "block": 2,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 24,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 89778,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 44,
+      "slug": "abortamento",
+      "block": 2,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 141361,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 45,
+      "slug": "participacao-e-controle-social-no-sus",
+      "block": 2,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 25,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 63395,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 46,
+      "slug": "asma",
+      "block": 2,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 11,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 153250,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 47,
+      "slug": "trauma-atendimento-inicial-abcde",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 28,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 99341,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 48,
+      "slug": "imunizacoes-na-infancia",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 74767,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 49,
+      "slug": "gestacao-ectopica",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 71239,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 50,
+      "slug": "financiamento-e-gestao-do-sus",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 21,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 63726,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 51,
+      "slug": "dpoc",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 24,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 66828,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 52,
+      "slug": "traumatismo-cranioencefalico",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 23,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 84354,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 53,
+      "slug": "desidratacao-e-terapia-de-reidratacao",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 19,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 64053,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 54,
+      "slug": "doenca-trofoblastica-gestacional",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 68227,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 55,
+      "slug": "vigilancia-em-saude",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 25,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 63085,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 56,
+      "slug": "pneumonias-adquiridas-na-comunidade",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 92231,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 57,
+      "slug": "trauma-toracico",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 27,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 63701,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 58,
+      "slug": "diarreia-aguda",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 23,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 62162,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 59,
+      "slug": "sangramento-na-segunda-metade-da-gestacao",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 71569,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 60,
+      "slug": "vigilancia-epidemiologica",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 14,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 69578,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 61,
+      "slug": "tuberculose-pulmonar",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 101327,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 62,
+      "slug": "trauma-abdominal",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 15,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 63234,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 63,
+      "slug": "doenca-do-refluxo-gastroesofagico-na-infancia",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 13,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 75282,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 64,
+      "slug": "placenta-previa-e-descolamento-prematuro-de-placenta",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 16,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 66937,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 65,
+      "slug": "vigilancia-sanitaria",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 75,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 73186,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 66,
+      "slug": "derrame-pleural",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 82,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 95018,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 67,
+      "slug": "trauma-pelvico-e-geniturinario",
+      "block": 3,
+      "status": "aprovado-na-triagem",
+      "findings": [],
+      "checks": {
+        "json": true,
+        "sections": 25,
+        "uniqueIds": true,
+        "toc": true,
+        "references": true,
+        "characters": 62942,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 68,
+      "slug": "desnutricao-e-deficiencias-nutricionais",
+      "block": 3,
+      "status": "bloqueado",
+      "findings": [
+        "referências ausentes ou sem URL verificável",
+        "referências ausentes ou sem URL verificável"
+      ],
+      "checks": {
+        "json": true,
+        "sections": 11,
+        "uniqueIds": true,
+        "toc": true,
+        "references": false,
+        "characters": 70138,
+        "controls": true,
+        "rawMath": true,
+        "questions": true,
+        "html": true,
+        "format": "content-json",
+        "htmlCharacters": 0,
+        "brokenAnchors": 0
+      }
+    },
+    {
+      "id": 69,
+      "slug": "assistencia-ao-parto",
+      "block": 3,
+      "status": "revisar",
+      "findings": [
+        "não foi localizado caso ou questão explícita"
+      ],
+      "checks": {
+        "json": false,
+        "html": true,
+        "format": "html",
+        "htmlCharacters": 63604,
+        "references": true,
+        "questions": false,
+        "brokenAnchors": 0
+      }
+    }
+  ]
+}

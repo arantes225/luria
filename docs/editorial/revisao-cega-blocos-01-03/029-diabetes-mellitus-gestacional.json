@@ -1,0 +1,18 @@
+{
+  "id": 29,
+  "slug": "diabetes-mellitus-gestacional",
+  "block": 2,
+  "status": "revisar",
+  "findings": [
+    "HTML abaixo de 60 mil caracteres (10717)"
+  ],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 10717,
+    "references": true,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}

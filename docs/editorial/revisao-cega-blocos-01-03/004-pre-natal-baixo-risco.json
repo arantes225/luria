@@ -1,0 +1,18 @@
+{
+  "id": 4,
+  "slug": "pre-natal-baixo-risco",
+  "block": 1,
+  "status": "bloqueado",
+  "findings": [
+    "referências ausentes ou sem URL verificável"
+  ],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 76783,
+    "references": false,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}

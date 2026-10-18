@@ -1,0 +1,25 @@
+{
+  "id": 49,
+  "slug": "gestacao-ectopica",
+  "block": 3,
+  "status": "bloqueado",
+  "findings": [
+    "referências ausentes ou sem URL verificável",
+    "referências ausentes ou sem URL verificável"
+  ],
+  "checks": {
+    "json": true,
+    "sections": 15,
+    "uniqueIds": true,
+    "toc": true,
+    "references": false,
+    "characters": 71239,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

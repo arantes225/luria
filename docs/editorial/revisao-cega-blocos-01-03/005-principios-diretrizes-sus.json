@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "slug": "principios-diretrizes-sus",
+  "block": 1,
+  "status": "bloqueado",
+  "findings": [
+    "referências ausentes ou sem URL verificável",
+    "referências ausentes ou sem URL verificável"
+  ],
+  "checks": {
+    "json": true,
+    "sections": 16,
+    "uniqueIds": true,
+    "toc": true,
+    "references": false,
+    "characters": 70581,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

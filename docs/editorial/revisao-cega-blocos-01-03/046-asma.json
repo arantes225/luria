@@ -1,0 +1,22 @@
+{
+  "id": 46,
+  "slug": "asma",
+  "block": 2,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 11,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 153250,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}
