@@ -1,0 +1,900 @@
+{
+  "date": "2026-10-18",
+  "backup": true,
+  "records": [
+    {
+      "id": 121,
+      "slug": "cirurgia-geral-trauma-toracico",
+      "title": "Trauma torácico",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Trauma torácico pode comprometer rapidamente ventilação e circulação. Lesões imediatamente fatais devem ser reconhecidas na avaliação primária, especialmente pneumotórax hipertensivo, hemotórax maciço, pneumotórax aberto, tamponamento e lesões de via aérea ou grandes vasos.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Pesquisar dispneia, dor torácica, assimetria ventilatória, enfisema subcutâneo, feridas penetrantes, instabilidade da parede e sinais de choque.",
+            "Pneumotórax hipertensivo é diagnóstico clínico no instável e não deve aguardar radiografia.",
+            "Trauma de alta energia, desaceleração, fraturas múltiplas ou alteração de pulsos aumentam suspeita de lesões intratorácicas graves."
+          ],
+          "title": "Avaliação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABCDE do trauma com oxigenação/ventilação e controle de hemorragia.",
+            "Descomprimir imediatamente pneumotórax hipertensivo com instabilidade ou comprometimento respiratório grave, seguido de drenagem torácica.",
+            "Tratar pneumotórax aberto com curativo apropriado e drenagem; hemotórax volumoso requer drenagem e avaliação de necessidade cirúrgica.",
+            "Analgesia adequada e higiene pulmonar reduzem complicações em fraturas costais."
+          ],
+          "title": "Abordagem imediata"
+        },
+        {
+          "items": [
+            "Descompressão imediata sem aguardar imagem, seguida de drenagem conforme indicação."
+          ],
+          "title": "Ação clínica prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "RX de tórax e/ou eFAST podem ser usados na avaliação inicial, especialmente em comprometimento respiratório.",
+            "TC de tórax é indicada em adultos estáveis ou respondedores quando há suspeita de lesão intratorácica não esclarecida.",
+            "eFAST negativo não exclui pneumotórax nem outras lesões torácicas."
+          ],
+          "title": "Imagem"
+        },
+        {
+          "items": [
+            "eFAST, radiografia portátil quando útil, TC contrastada em paciente estável com mecanismo de alto risco."
+          ],
+          "title": "Investigação orientada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade + suspeita clínica de pneumotórax hipertensivo.",
+          "then": "Descompressão imediata antes de imagem."
+        },
+        {
+          "if": "Hemotórax significativo ou pneumotórax traumático com indicação de intervenção.",
+          "then": "Drenagem torácica e reavaliação clínica/radiológica."
+        },
+        {
+          "if": "Paciente estável com mecanismo relevante e suspeita de lesão intratorácica.",
+          "then": "TC contrastada conforme protocolo de trauma."
+        },
+        {
+          "if": "Instabilidade e ausência unilateral de murmúrio com suspeita de pneumotórax hipertensivo",
+          "then": "Descompressão imediata sem aguardar imagem, seguida de drenagem conforme indicação."
+        },
+        {
+          "if": "Hemotórax maciço ou sangramento pleural persistente",
+          "then": "Dreno torácico, ressuscitação e avaliação de cirurgia torácica/controle hemorrágico."
+        },
+        {
+          "if": "Paciente estável com fraturas costais e dor importante",
+          "then": "Analgesia multimodal, fisioterapia pulmonar, espirometria de incentivo e avaliação de suporte ventilatório."
+        },
+        {
+          "if": "Lesão penetrante ou suspeita de coração/grandes vasos",
+          "then": "Equipe de trauma e imagem/intervenção conforme estabilidade, com limiar para abordagem urgente."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Controle de via aérea/ventilação, drenagem pleural, hemostasia e cirurgia/endovascular conforme lesão.",
+            "Fraturas costais exigem analgesia multimodal, fisioterapia respiratória e vigilância de insuficiência respiratória.",
+            "Considerar estabilização cirúrgica de costelas em casos selecionados de tórax instável ou fraturas deslocadas com comprometimento relevante."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Evitar atrasar descompressão do pneumotórax hipertensivo por TC; feridas torácicas abertas requerem curativo apropriado e drenagem quando indicado.",
+            "Considerar fixação de costelas em flail chest ou fraturas deslocadas selecionadas com insuficiência respiratória/dor relevante."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ventilação com pressão positiva pode agravar pneumotórax não drenado.",
+            "Idosos têm maior risco de complicações respiratórias mesmo com menor carga de trauma.",
+            "Trauma penetrante tem maior probabilidade de lesão cardíaca/vascular e necessidade operatória."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reexaminar ventilação, débito do dreno, necessidade de oxigênio e controle da dor.",
+            "Repetir imagem conforme evolução e após procedimentos pleurais quando indicado."
+          ],
+          "title": "Reavaliação"
+        },
+        {
+          "items": [
+            "Acompanhar débito de dreno, saturação, dor e atelectasia, com plano de reabilitação respiratória."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Choque, hipoxemia grave ou deterioração ventilatória.",
+        "Débito elevado/persistente em dreno torácico ou suspeita de sangramento ativo.",
+        "Suspeita de lesão aórtica, cardíaca, traqueobrônquica ou esofágica.",
+        "Desvio hemodinâmico, hipóxia progressiva, tamponamento ou hemorragia intratorácica."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Documentar mecanismo, intervenções pré-hospitalares, horário de drenagem e débito inicial.; Registrar achados de imagem e critérios para cirurgia/transferência.",
+        "items": [
+          "Documentar mecanismo, intervenções pré-hospitalares, horário de drenagem e débito inicial.",
+          "Registrar achados de imagem e critérios para cirurgia/transferência."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://wjes.biomedcentral.com/counter/pdf/10.1186/s13017-025-00651-1.pdf",
+          "label": "WSES-AAST Thoracic trauma guidelines, 2025"
+        },
+        {
+          "url": "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+          "label": "NICE NG39 — Major trauma: assessment and initial management"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Radiografia de tórax com pneumotórax hipertensivo à esquerda e desvio mediastinal",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pneumothorax%20CXR.jpg",
+          "caption": "Pneumotórax hipertensivo — hipertransparência, ausência de trama vascular e desvio mediastinal",
+          "license": "Licença aberta na página-fonte; procedência clínica não institucional",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pneumothorax_CXR.jpg",
+          "source_name": "ClinicalCases / Wikimedia Commons",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        },
+        {
+          "alt": "Radiografia de tórax com hemotórax maciço à esquerda",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Massive%20left%20hemothorax.jpg",
+          "kind": "xray",
+          "caption": "Hemotórax maciço — opacificação extensa do hemitórax esquerdo",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Massive_left_hemothorax.jpg",
+          "source_name": "Ogura et al. / artigo open access",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        },
+        {
+          "alt": "Radiografia de tórax com hemotórax maciço à direita",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Massive%20right%20hemothorax.jpg",
+          "kind": "xray",
+          "caption": "Hemotórax maciço — opacificação extensa do hemitórax direito",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Massive_right_hemothorax.jpg",
+          "source_name": "Kaul e Paniagua / artigo open access",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "xray",
+        "ct"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "Imagem de trauma torácico"
+    },
+    {
+      "id": 122,
+      "slug": "cirurgia-geral-trauma-vascular",
+      "title": "Trauma vascular",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Trauma vascular envolve lesão arterial ou venosa após mecanismo penetrante ou contuso. Sinais duros de lesão vascular exigem exploração/intervenção imediata; sinais brandos e índice tornozelo-braquial anormal orientam investigação com angiotomografia quando o paciente está estável.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Sangramento pulsátil/ativo importante.",
+            "Hematoma expansivo.",
+            "Ausência de pulso distal com isquemia.",
+            "Frêmito/sopro sobre o trajeto vascular.",
+            "Isquemia de membro: dor, palidez, parestesia, paralisia e poiquilotermia."
+          ],
+          "title": "Sinais duros"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Controlar hemorragia com compressão direta; torniquete quando indicado em extremidade.",
+            "ABCDE e ressuscitação hemostática se choque.",
+            "Não clampear estruturas vasculares às cegas.",
+            "Acionar cirurgia vascular/trauma precocemente."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Controle de hemorragia/compressão ou torniquete adequado e exploração/revascularização emergencial."
+          ],
+          "title": "Primeira intervenção"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Com sinais duros, não atrasar intervenção por imagem na maioria dos casos.",
+            "Sem sinais duros, avaliar pulsos e índice tornozelo-braquial/índice arterial.",
+            "Índice <0,9 ou exame duvidoso geralmente indica angio-TC em paciente estável.",
+            "Ultrassom Doppler pode ser alternativa em cenários selecionados."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "Exame neurovascular com Doppler, ITB/pressões quando aplicável, angio-TC em estáveis e avaliação de lesões ósseas/nervosas."
+          ],
+          "title": "Investigação guiada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sinais duros de lesão vascular.",
+          "then": "Exploração/intervenção urgente."
+        },
+        {
+          "if": "Sinais brandos ou ITB <0,9.",
+          "then": "Angio-TC para definir lesão se paciente estável."
+        },
+        {
+          "if": "Isquemia de membro ameaçado.",
+          "then": "Revascularização emergente; tempo de isquemia é crítico."
+        },
+        {
+          "if": "Sangramento pulsátil, hematoma expansivo, sopro/frêmito ou isquemia distal franca",
+          "then": "Controle de hemorragia/compressão ou torniquete adequado e exploração/revascularização emergencial."
+        },
+        {
+          "if": "Paciente estável com sinais brandos e suspeita arterial",
+          "then": "Avaliar ITB/índice de pressão arterial lesado e angio-TC quando indicado."
+        },
+        {
+          "if": "Lesão arterial com membro ameaçado",
+          "then": "Chamar vascular, restaurar perfusão precocemente; considerar shunt temporário em estratégia de damage control."
+        },
+        {
+          "if": "Lesão venosa maior e sangramento maciço",
+          "then": "Controle hemostático, reparo/ligadura conforme anatomia e fisiologia, avaliando risco de congestão."
+        },
+        {
+          "if": "Após reparo, dor/tensão compartimental progressiva",
+          "then": "Suspeitar síndrome compartimental e realizar fasciotomia se indicação."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Opções incluem reparo aberto, shunt temporário, enxerto ou abordagem endovascular conforme anatomia e contexto.",
+            "Fasciotomia deve ser considerada quando há isquemia prolongada/reperfusão com alto risco de síndrome compartimental.",
+            "Lesões venosas importantes podem exigir reparo ou ligadura conforme local e estabilidade."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Nunca atrasar hemostasia em choque por exame de imagem; preservar perfusão, documentar pulsos/Doppler antes e depois.",
+            "Anticoagulação ou antiagregação pós-reparo depende do vaso, lesões associadas e risco hemorrágico."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Lesão intimal pode evoluir com trombose tardia.",
+            "Fraturas/luxações próximas a vasos aumentam risco mesmo com pulsos presentes.",
+            "Shunt temporário pode salvar membro em damage control."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar pulsos, perfusão, dor e compartimentos após reparo.",
+            "Avaliar patência com Doppler/imagem conforme procedimento.",
+            "Vigiar síndrome compartimental e rabdomiólise após reperfusão."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Vigiar patência, sinais de reoclusão e síndrome compartimental, além de reabilitação."
+          ],
+          "title": "Plano de acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Isquemia aguda de membro.",
+        "Hemorragia não controlada.",
+        "Hematoma expansivo.",
+        "Síndrome compartimental pós-reperfusão.",
+        "Sinais duros vasculares, ausência súbita de pulsos, sangramento incontrolável ou neuropatia isquêmica."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar sinais duros/brandos, ITB e tempo estimado de isquemia.; Documentar técnica de controle de hemorragia e reparo vascular.",
+        "items": [
+          "Registrar sinais duros/brandos, ITB e tempo estimado de isquemia.",
+          "Documentar técnica de controle de hemorragia e reparo vascular."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.east.org/education-resources/practice-management-guidelines/details/penetrating-lower-extremity-arterial-trauma-evaluation-and-management-of",
+          "label": "EAST — Penetrating Lower Extremity Arterial Trauma"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 123,
+      "slug": "cirurgia-geral-trauma-cranioencefalico",
+      "title": "Trauma cranioencefálico",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Trauma cranioencefálico (TCE) compreende lesões traumáticas do encéfalo, meninges, vasos e crânio. A prioridade inicial é prevenir lesão cerebral secundária por hipóxia, hipotensão, hipercapnia/hipocapnia inadequada e hipertensão intracraniana. A TC de crânio sem contraste é o exame de escolha na avaliação aguda quando indicada.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Aplicar abordagem ABCDE com proteção cervical.",
+            "Registrar Escala de Coma de Glasgow, pupilas, déficit focal e evolução neurológica seriada.",
+            "Pesquisar mecanismo de alta energia, anticoagulação, intoxicação, convulsão, vômitos repetidos e perda de consciência."
+          ],
+          "title": "Avaliação inicial"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Evitar hipóxia e hipotensão; garantir oxigenação e perfusão adequadas.",
+            "Intubar se incapacidade de proteger via aérea ou rebaixamento importante, usando sequência rápida quando necessário.",
+            "Elevar cabeceira e manter cabeça em posição neutra se não houver contraindicação.",
+            "Corrigir hipoglicemia, hipertermia e distúrbios metabólicos relevantes."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Assegurar oxigenação/ventilação por equipe treinada e prevenir hipotensão secundária."
+          ],
+          "title": "Ação clínica prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "TC de crânio sem contraste é o exame inicial para identificar hematomas, contusões, edema, fraturas e efeito de massa.",
+            "Repetir imagem quando houver deterioração neurológica ou conforme lesão/conduta neurocirúrgica.",
+            "Monitorização de pressão intracraniana é indicada em TCE grave selecionado conforme achados clínicos e de imagem."
+          ],
+          "title": "Imagem e monitorização"
+        },
+        {
+          "items": [
+            "GCS seriado com pupilas, TC crânio conforme indicação, glicemia e coagulação se anticoagulado."
+          ],
+          "title": "Investigação orientada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Deterioração neurológica, anisocoria, efeito de massa ou hematoma significativo.",
+          "then": "Avaliação neurocirúrgica imediata e medidas para hipertensão intracraniana."
+        },
+        {
+          "if": "TCE grave com hipertensão intracraniana refratária.",
+          "then": "Escalonar tratamento conforme protocolo de neurotrauma; craniectomia descompressiva pode ser considerada em cenários selecionados."
+        },
+        {
+          "if": "TCE leve sem critérios de imagem/observação prolongada.",
+          "then": "Alta com orientação de sinais de alarme e supervisão confiável."
+        },
+        {
+          "if": "GCS ≤8, perda de proteção de via aérea ou hipoxemia",
+          "then": "Assegurar oxigenação/ventilação por equipe treinada e prevenir hipotensão secundária."
+        },
+        {
+          "if": "Déficit focal, crise, rebaixamento ou mecanismo de alto risco",
+          "then": "TC de crânio sem contraste urgente e neurocirurgia conforme achados; controlar coluna cervical quando indicado."
+        },
+        {
+          "if": "Lesão intracraniana expansiva ou sinais de herniação",
+          "then": "Neurocirurgia e medidas temporárias para hipertensão intracraniana, evitando atrasos na descompressão."
+        },
+        {
+          "if": "TCE leve com critérios de baixo risco e TC não indicada",
+          "then": "Observação e orientação escrita de retorno, conforme algoritmo validado e fatores de risco."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Analgesia e sedação adequadas quando necessárias.",
+            "Solução hipertônica ou manitol podem ser usados em hipertensão intracraniana aguda com sinais de herniação, conforme contexto hemodinâmico.",
+            "Hiperventilação profilática prolongada deve ser evitada; uso transitório pode ser considerado em herniação iminente enquanto medidas definitivas são organizadas.",
+            "Profilaxia anticonvulsivante pode reduzir crises precoces em TCE grave selecionado, sem benefício comprovado para prevenir epilepsia tardia."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Evitar hipóxia, hipotensão e hipercapnia extrema; hiperventilação não é tratamento profilático rotineiro da hipertensão intracraniana.",
+            "Reversão dirigida de anticoagulantes quando hemorragia intracraniana, conforme fármaco e protocolo; profilaxia convulsiva apenas em grupos indicados."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Hematoma epidural: coleção biconvexa, frequentemente associada a fratura temporal.",
+            "Hematoma subdural: coleção em crescente, frequentemente associada a lesão de veias ponte.",
+            "Contusões podem evoluir radiologicamente nas primeiras horas.",
+            "Lesão axonal difusa pode ter TC inicial pouco expressiva."
+          ],
+          "title": "Lesões típicas"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Realizar avaliações neurológicas seriadas.",
+            "Após alta, orientar retorno em piora de cefaleia, vômitos repetidos, sonolência progressiva, convulsão, confusão ou déficit focal.",
+            "Reabilitação cognitiva, motora e psicossocial pode ser necessária após TCE moderado/grave."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Vigilância neurológica seriada e reavaliação funcional/cognitiva após alta."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Queda progressiva da Glasgow.",
+        "Anisocoria ou sinais de herniação.",
+        "Hipotensão, hipoxemia ou convulsão persistente.",
+        "TC com efeito de massa, desvio de linha média ou hematoma expansivo.",
+        "Anisocoria, GCS em queda, pupilas fixas, bradicardia com hipertensão ou crise prolongada."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar Glasgow inicial e seriada, pupilas, anticoagulantes e achados da TC.; Documentar horário de deterioração e contato neurocirúrgico.",
+        "items": [
+          "Registrar Glasgow inicial e seriada, pupilas, anticoagulantes e achados da TC.",
+          "Documentar horário de deterioração e contato neurocirúrgico."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://braintrauma.org/coma/guidelines/severe-tbi",
+          "label": "Brain Trauma Foundation — Guidelines for the Management of Severe TBI, 4th Edition"
+        },
+        {
+          "url": "https://braintrauma.org/coma/guidelines",
+          "label": "Brain Trauma Foundation — 2020 update of decompressive craniectomy recommendations"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "TC de crânio com hematoma epidural",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Epidurale%20Blutung%20-%20CT%20-%20WT-KF.jpg",
+          "caption": "TCE — hematoma epidural biconvexo",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Epidurale_Blutung_-_CT_-_WT-KF.jpg",
+          "source_name": "Hellerhoff / Wikimedia Commons",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        },
+        {
+          "alt": "TC de crânio com hematoma subdural agudo em crescente",
+          "src": "https://www.frontiersin.org/files/Articles/1244006/fneur-14-1244006-HTML/image_m/fneur-14-1244006-g002.jpg",
+          "kind": "ct",
+          "caption": "TCE — hematoma subdural agudo com coleção extra-axial em crescente",
+          "license": "CC BY",
+          "source_url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1244006/full",
+          "source_name": "Frontiers in Neurology — Langlois et al., 2023",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ct"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "TC de crânio com hematomas epidural/subdural e contusões"
+    },
+    {
+      "id": 124,
+      "slug": "cirurgia-geral-trauma-raquimedular",
+      "title": "Trauma raquimedular",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Trauma raquimedular é lesão traumática da coluna com ou sem comprometimento da medula, raízes ou cauda equina. A prioridade é estabilização inicial, proteção da coluna, exame neurológico seriado e identificação rápida de lesões instáveis ou compressivas. Em adultos com trauma contuso e indicação de imagem, a TC sem contraste é o exame inicial preferido; a RM é fundamental quando há déficit neurológico ou suspeita de lesão medular/ligamentar não explicada pela TC.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor cervical/dorsal/lombar após trauma, deformidade, déficit motor/sensitivo, parestesias ou retenção urinária.",
+            "Mecanismo de alta energia, queda importante, acidente automobilístico ou trauma axial aumentam risco.",
+            "Hipotensão com bradicardia após lesão cervical/torácica alta pode sugerir choque neurogênico, após excluir hemorragia."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABCDE com restrição de movimento da coluna quando indicada.",
+            "Evitar hipóxia e hipotensão; manter perfusão adequada.",
+            "Realizar exame neurológico documentado, preferencialmente padrão ISNCSCI/ASIA.",
+            "Acionar equipe de coluna/neurocirurgia precocemente se houver déficit, lesão instável ou compressão."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Imobilização seletiva da coluna, avaliação ABC e exame neurológico seriado sem atrasar ressuscitação."
+          ],
+          "title": "Triagem/primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "TC sem contraste é primeira linha para avaliação óssea em adultos com indicação de imagem após trauma contuso.",
+            "RM sem contraste é indicada quando há déficit neurológico, suspeita de lesão medular, disco traumático, hematoma epidural ou lesão ligamentar relevante.",
+            "Radiografia simples tem papel limitado quando TC está disponível e indicada."
+          ],
+          "title": "Imagem"
+        },
+        {
+          "items": [
+            "Exame ASIA documentado, sensibilidade, força, tônus, controle esfincteriano; TC/MR conforme padrão de lesão."
+          ],
+          "title": "Exames direcionados"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Déficit neurológico progressivo ou compressão medular identificada.",
+          "then": "Avaliação cirúrgica urgente para descompressão/estabilização conforme lesão."
+        },
+        {
+          "if": "Instabilidade vertebral sem déficit progressivo.",
+          "then": "Imobilização e definição de manejo cirúrgico versus conservador por especialista."
+        },
+        {
+          "if": "Choque neurogênico após excluir hemorragia.",
+          "then": "Reposição volêmica criteriosa e vasopressor conforme necessidade, com monitorização intensiva."
+        },
+        {
+          "if": "Trauma com déficit motor/sensitivo ou dor cervical e mecanismo relevante",
+          "then": "Imobilização seletiva da coluna, avaliação ABC e exame neurológico seriado sem atrasar ressuscitação."
+        },
+        {
+          "if": "Déficit neurológico, dor mediana ou incapacidade de exclusão clínica da lesão",
+          "then": "TC de coluna conforme segmento; RM quando déficit inexplicado, lesão ligamentar ou compressão medular suspeita."
+        },
+        {
+          "if": "Compressão medular, instabilidade vertebral ou déficit progressivo",
+          "then": "Neurocirurgia/coluna urgente para descompressão/estabilização conforme achados e segurança clínica."
+        },
+        {
+          "if": "Choque com hipotensão e bradicardia após trauma vertebral",
+          "then": "Excluir hemorragia primeiro; considerar choque neurogênico e vasoativos após avaliação de volemia."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Evitar lesão secundária mantendo oxigenação e pressão arterial adequadas.",
+            "Corticosteroide em altas doses não é recomendado rotineiramente como padrão de cuidado em trauma medular agudo.",
+            "Descompressão e estabilização precoces são consideradas quando há compressão, instabilidade ou deterioração neurológica.",
+            "Iniciar prevenção de tromboembolismo, lesão por pressão, retenção urinária e complicações respiratórias conforme estabilidade."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Evitar hipotensão e hipóxia secundárias; analgesia e movimentação em bloco conforme estabilidade.",
+            "Corticosteroide em alta dose não é recomendado rotineiramente para trauma medular agudo."
+          ],
+          "title": "Condutas terapêuticas específicas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Lesão medular sem anormalidade óssea evidente na TC pode ocorrer e exige RM se houver déficit.",
+            "Síndrome medular central é comum em idosos com espondilose após hiperextensão.",
+            "Trauma cervical alto pode comprometer ventilação e exigir suporte de via aérea precoce."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Documentar exame neurológico seriado.",
+            "Planejar reabilitação precoce e prevenção de complicações.",
+            "Acompanhar disfunção autonômica, espasticidade, bexiga/intestino neurogênicos e dor neuropática."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Vigiar bexiga, pele, TEV, instabilidade autonômica e reabilitação precoce multidisciplinar."
+          ],
+          "title": "Seguimento clínico"
+        }
+      ],
+      "red_flags": [
+        "Déficit neurológico progressivo.",
+        "Comprometimento respiratório em lesão cervical.",
+        "Hipotensão persistente após exclusão de sangramento.",
+        "RM com compressão medular/hematoma epidural.",
+        "Déficit neurológico progressivo, retenção urinária, choque ou insuficiência ventilatória."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar mecanismo, nível neurológico e classificação ASIA quando aplicável.; Documentar achados de TC/RM e decisão da equipe de coluna.",
+        "items": [
+          "Registrar mecanismo, nível neurológico e classificação ASIA quando aplicável.",
+          "Documentar achados de TC/RM e decisão da equipe de coluna."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://acsearch.acr.org/docs/69359/Narrative/",
+          "label": "ACR Appropriateness Criteria — Acute Spinal Trauma: 2024 Update"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ressonância magnética cervical T2 mostrando fratura e luxação de C4 com compressão medular",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cervical%20Spine%20MRI%20%28T2W%29.jpg",
+          "kind": "mri",
+          "max_kb": 120,
+          "caption": "Trauma raquimedular — fratura/luxação de C4 com compressão medular na RM",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cervical_Spine_MRI_(T2W).jpg",
+          "source_name": "Андрей Королев 86 / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": false,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ct",
+        "mri"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "TC/RM em trauma raquimedular"
+    },
+    {
+      "id": 125,
+      "slug": "cirurgia-geral-politrauma",
+      "title": "Politrauma",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Politrauma exige abordagem simultânea e sistematizada das ameaças imediatas à vida, com controle precoce de hemorragia, proteção de via aérea e transferência rápida para ambiente capaz de tratamento definitivo.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Trauma de alta energia, múltiplas regiões acometidas ou fisiologia alterada exigem ativação de equipe de trauma.",
+            "Catástrofe hemorrágica, obstrução de via aérea, insuficiência ventilatória, choque e lesão neurológica são priorizados antes do diagnóstico anatômico completo.",
+            "Reavaliar continuamente, pois lesões ocultas podem se manifestar após ressuscitação inicial."
+          ],
+          "title": "Prioridades"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Controlar hemorragia externa maciça imediatamente com pressão, torniquete quando necessário e estabilização pélvica quando indicada.",
+            "Garantir via aérea com proteção cervical conforme contexto e ventilação adequada.",
+            "Tratar causas imediatamente reversíveis de choque/hipoxemia antes de exames demorados.",
+            "Prevenir hipotermia desde a chegada, aquecendo paciente, ambiente e fluidos/hemocomponentes."
+          ],
+          "title": "C-ABCDE"
+        },
+        {
+          "items": [
+            "ABCDE com proteção cervical e controle imediato de hemorragia externa; reavaliar continuamente."
+          ],
+          "title": "Ação clínica prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "eFAST pode identificar rapidamente líquido livre, tamponamento e pneumotórax, mas exame negativo não exclui sangramento ou lesões importantes.",
+            "Paciente instável não respondedor deve ter imagem limitada ao necessário para direcionar intervenção.",
+            "Paciente estável ou respondedor pode seguir para TC de corpo inteiro conforme mecanismo, achados e protocolo local."
+          ],
+          "title": "Imagem e monitorização"
+        },
+        {
+          "items": [
+            "Glicemia, hemoglobina, gasometria/lactato, coagulação, cálcio ionizado, eFAST e imagem guiada pela estabilidade."
+          ],
+          "title": "Investigação orientada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Hemorragia ativa com instabilidade persistente.",
+          "then": "Priorizar controle definitivo da hemorragia e protocolo de transfusão maciça quando indicado, evitando atraso por investigação extensa."
+        },
+        {
+          "if": "Paciente responde à ressuscitação e mantém estabilidade.",
+          "then": "Prosseguir avaliação secundária e imagem definitiva guiada por mecanismo/achados."
+        },
+        {
+          "if": "Via aérea ou ventilação não podem ser mantidas.",
+          "then": "Estabelecer via aérea definitiva e tratar causas torácicas reversíveis imediatamente."
+        },
+        {
+          "if": "Chegada de trauma multissistêmico com ameaça à vida",
+          "then": "ABCDE com proteção cervical e controle imediato de hemorragia externa; reavaliar continuamente."
+        },
+        {
+          "if": "Hemorragia grave ou instabilidade persistente",
+          "then": "Ativar protocolo de hemorragia maciça, hemostasia compressiva/cirúrgica/endovascular e evitar atraso por TC."
+        },
+        {
+          "if": "Instabilidade ventilatória, suspeita de pneumotórax hipertensivo",
+          "then": "Descompressão antes de imagem e suporte da via aérea por equipe habilitada."
+        },
+        {
+          "if": "Paciente estável após avaliação primária",
+          "then": "Exame secundário completo e TC direcionada/pan-scan quando critérios e estrutura permitirem."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Usar estratégia hemostática com hemocomponentes em hemorragia importante e corrigir coagulopatia, cálcio e hipotermia conforme protocolo.",
+            "Ácido tranexâmico deve ser administrado precocemente em trauma com sangramento ativo/suspeito, quando dentro da janela recomendada pelo protocolo institucional.",
+            "Pressão permissiva pode ser considerada em hemorragia sem TCE dominante; no TCE grave, evitar hipotensão e manter perfusão cerebral."
+          ],
+          "title": "Ressuscitação"
+        },
+        {
+          "items": [
+            "Aquecê-lo, reduzir acidose/hipocalcemia/coagulopatia, aplicar TXA apenas se critérios de hemorragia e janela temporal apropriados.",
+            "Tratar lesões tempo-dependentes antes de exames não essenciais; documentar intervenções e passagem de plantão."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Crianças, idosos, gestantes e anticoagulados podem apresentar fisiologia e limiares de intervenção diferentes.",
+            "No TCE associado a choque hemorrágico, equilibrar ressuscitação hemostática com necessidade de preservar perfusão cerebral."
+          ],
+          "title": "Populações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Executar avaliação secundária completa e reavaliar após cada intervenção.",
+            "Realizar inventário de lesões, conciliação de achados de imagem e plano multiprofissional de destino/UTI/centro cirúrgico."
+          ],
+          "title": "Após estabilização"
+        },
+        {
+          "items": [
+            "Monitorização seriada, prevenção de complicações e reavaliação terciária para lesões inicialmente ocultas."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Deterioração do nível de consciência, hipoxemia ou incapacidade de proteger via aérea.",
+        "Choque persistente, sangramento não controlado ou necessidade transfusional crescente.",
+        "Hipotermia, acidose e coagulopatia progressivas.",
+        "Via aérea ameaçada, hemorragia não controlada, GCS em queda ou hipotermia grave."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar mecanismo, horários, C-ABCDE, resposta a cada intervenção e evolução dos sinais vitais.; Documentar comunicação e transferência entre equipes.",
+        "items": [
+          "Registrar mecanismo, horários, C-ABCDE, resposta a cada intervenção e evolução dos sinais vitais.",
+          "Documentar comunicação e transferência entre equipes."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+          "label": "NICE NG39 — Major trauma: assessment and initial management"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ácido tranexâmico"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ultrassom FAST positivo com líquido livre no espaço hepatorrenal de Morrison",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ultrasound%20Scan%20ND%200110145312%201505060.png",
+          "kind": "ultrasound",
+          "max_kb": 120,
+          "caption": "FAST positivo — líquido livre no espaço de Morrison",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_0110145312_1505060.png",
+          "source_name": "Nevit Dilmen / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "Imagens reais de eFAST em politrauma"
+    }
+  ]
+}
