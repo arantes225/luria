@@ -1,0 +1,852 @@
+{
+  "date": "2026-10-18",
+  "backup": true,
+  "records": [
+    {
+      "id": 126,
+      "slug": "cirurgia-geral-hemorragia-macica-e-protocolo-de-transfusao-macica",
+      "title": "Hemorragia maciça e protocolo de transfusão maciça",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Hemorragia maciça é sangramento com risco de vida que exige controle rápido de foco, ressuscitação hemostática e correção de coagulopatia. Protocolos de transfusão maciça devem ser ativados precocemente quando há choque hemorrágico, necessidade prevista de grande volume de hemocomponentes ou sangramento não controlado.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Choque com sangramento ativo ou provável.",
+            "Necessidade rápida e repetida de concentrado de hemácias.",
+            "Trauma com hipotensão, taquicardia, sangramento não compressível ou resposta transitória a fluidos.",
+            "Sangramento obstétrico, gastrointestinal ou cirúrgico com deterioração hemodinâmica."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Ativar protocolo de transfusão maciça conforme critérios institucionais.",
+            "Controlar fonte do sangramento em paralelo à ressuscitação.",
+            "Evitar cristaloide excessivo; priorizar hemocomponentes em hemorragia grave.",
+            "Aquecer paciente e fluidos para prevenir hipotermia."
+          ],
+          "title": "Conduta imediata"
+        },
+        {
+          "items": [
+            "Acionar imediatamente protocolo de transfusão maciça e hemostasia definitiva, sem esperar hemoglobina inicial."
+          ],
+          "title": "Ação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma, fibrinogênio, TP/INR, TTPa, cálcio ionizado e gasometria/lactato.",
+            "Tromboelastografia/ROTEM, quando disponíveis, podem orientar reposição dirigida.",
+            "Repetir exames conforme evolução e após ciclos de transfusão."
+          ],
+          "title": "Monitorização"
+        },
+        {
+          "items": [
+            "Hemograma, INR/TTPa, fibrinogênio, cálcio ionizado, gasometria/lactato, tipagem/prova cruzada e TEG/ROTEM quando disponível."
+          ],
+          "title": "Exames dirigidos"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Choque hemorrágico com necessidade de reposição rápida.",
+          "then": "Ativar MTP e iniciar estratégia balanceada de hemocomponentes conforme protocolo."
+        },
+        {
+          "if": "Fibrinogênio baixo ou sangramento obstétrico/trauma com hipofibrinogenemia.",
+          "then": "Repor fibrinogênio com crioprecipitado ou concentrado conforme disponibilidade."
+        },
+        {
+          "if": "Hipocalcemia durante transfusão maciça.",
+          "then": "Administrar cálcio e reavaliar cálcio ionizado."
+        },
+        {
+          "if": "Sangramento persiste.",
+          "then": "Reavaliar controle de foco, coagulopatia, hipotermia e acidose."
+        },
+        {
+          "if": "Choque hemorrágico com sangramento ativo que exige reposição rápida",
+          "then": "Acionar imediatamente protocolo de transfusão maciça e hemostasia definitiva, sem esperar hemoglobina inicial."
+        },
+        {
+          "if": "Hemorragia traumática com suspeita de coagulopatia",
+          "then": "Reposição equilibrada de hemocomponentes segundo protocolo, guiada depois por exames de coagulação/viscoelásticos."
+        },
+        {
+          "if": "Hipocalcemia, hipotermia, acidose ou fibrinogênio baixo",
+          "then": "Corrigir fatores fisiológicos e hemostáticos em paralelo ao controle de fonte."
+        },
+        {
+          "if": "Trauma hemorrágico na janela de até 3h desde a lesão",
+          "then": "Considerar ácido tranexâmico precoce conforme protocolo e contraindicações; não iniciar tardiamente em trauma sem indicação."
+        },
+        {
+          "if": "Sangramento controlado e estabilidade hemodinâmica recuperada",
+          "then": "Desativar protocolo de forma coordenada e transitar para reposição dirigida a exames e vigilância."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Estratégia inicial balanceada frequentemente usa proporções próximas entre hemácias, plasma e plaquetas quando testes viscoelásticos não guiam reposição.",
+            "Reposição deve ser titulada por resposta clínica e laboratorial.",
+            "Prevenir a tríade letal: hipotermia, acidose e coagulopatia.",
+            "Ácido tranexâmico é indicado precocemente em trauma com sangramento significativo, idealmente até 3 h do evento, conforme protocolo."
+          ],
+          "title": "Princípios da transfusão"
+        },
+        {
+          "items": [
+            "Proporção inicial aproximada de hemocomponentes pode ser usada conforme protocolo institucional, mas não substitui hemostasia ou tratamento viscoelástico guiado.",
+            "Monitorar cálcio ionizado, temperatura, pH, plaquetas e fibrinogênio; evitar excesso transfusional após cessar perda."
+          ],
+          "title": "Condutas clínicas específicas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Transfusão maciça pode causar hipocalcemia, hipercalemia, hipotermia e coagulopatia dilucional.",
+            "Sangramento obstétrico pode exigir reposição precoce de fibrinogênio.",
+            "Pacientes anticoagulados podem necessitar reversão específica em paralelo."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Desativar MTP quando controle hemostático for obtido e necessidade transfusional reduzir.",
+            "Reavaliar Hb, plaquetas, fibrinogênio, cálcio, temperatura e perfusão.",
+            "Documentar total de hemocomponentes e complicações transfusionais."
+          ],
+          "title": "Após controle"
+        },
+        {
+          "items": [
+            "Registro de unidades/doses, eventos transfusionais, hemostasia e monitorização de complicações."
+          ],
+          "title": "Reavaliação e prevenção"
+        }
+      ],
+      "red_flags": [
+        "Choque refratário apesar de transfusão.",
+        "Hipocalcemia sintomática.",
+        "Hipotermia importante.",
+        "Coagulopatia persistente com sangramento difuso.",
+        "Choque refratário, coagulopatia, hipocalcemia grave, hipotermia e sangramento persistente."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar horário de ativação/desativação do protocolo e número de unidades transfundidas.; Documentar fibrinogênio, cálcio, temperatura e necessidade de TXA.",
+        "items": [
+          "Registrar horário de ativação/desativação do protocolo e número de unidades transfundidas.",
+          "Documentar fibrinogênio, cálcio, temperatura e necessidade de TXA."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.facs.org/quality-programs/trauma/tqp/center-programs/tqip/best-practice/",
+          "label": "ACS TQIP — Massive Transfusion in Trauma"
+        },
+        {
+          "url": "https://www.facs.org/quality-programs/trauma/quality/best-practices-guidelines/",
+          "label": "ACS — Massive Transfusion in Trauma"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ácido tranexâmico"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 127,
+      "slug": "cirurgia-geral-sindrome-compartimental",
+      "title": "Síndrome compartimental",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Síndrome compartimental aguda ocorre quando a pressão dentro de um compartimento osteofascial reduz a perfusão tecidual, podendo causar necrose muscular e lesão nervosa irreversível. O diagnóstico é principalmente clínico e a fasciotomia não deve ser atrasada quando a suspeita é alta.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor intensa desproporcional à lesão e progressiva.",
+            "Dor à extensão passiva dos músculos do compartimento.",
+            "Compartimento tenso/lenhoso.",
+            "Parestesia e déficit motor são sinais mais tardios.",
+            "Pulso presente não exclui síndrome compartimental."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Remover curativos, talas ou gessos constritivos.",
+            "Manter membro ao nível do coração, evitando elevação excessiva que reduza perfusão.",
+            "Analgesia e avaliação cirúrgica urgente.",
+            "Não atrasar fasciotomia por exames se o quadro clínico for típico."
+          ],
+          "title": "Conduta imediata"
+        },
+        {
+          "items": [
+            "Remover compressões externas, manter membro na altura do coração, avaliação cirúrgica imediata."
+          ],
+          "title": "Ação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Medição é útil quando exame clínico é pouco confiável ou paciente não pode colaborar.",
+            "Pressão absoluta elevada ou delta pressão diastólica–compartimental ≤30 mmHg aumenta preocupação.",
+            "Uma única medida normal não exclui evolução; monitorização seriada pode ser necessária."
+          ],
+          "title": "Pressão compartimental"
+        },
+        {
+          "items": [
+            "Exame neurológico/vascular seriado, pressão compartimental quando indicado, CK/creatinina/potássio como avaliação de repercussão."
+          ],
+          "title": "Exames dirigidos"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Quadro clínico típico ou pressão crítica.",
+          "then": "Fasciotomia emergencial."
+        },
+        {
+          "if": "Diagnóstico incerto em paciente de alto risco.",
+          "then": "Monitorar clinicamente e/ou medir pressão seriada."
+        },
+        {
+          "if": "Síndrome compartimental após reperfusão vascular.",
+          "then": "Baixo limiar para fasciotomia."
+        },
+        {
+          "if": "Dor intensa desproporcional e dor à mobilização passiva após trauma/curativo apertado",
+          "then": "Remover compressões externas, manter membro na altura do coração, avaliação cirúrgica imediata."
+        },
+        {
+          "if": "Parestesia, tensão do compartimento ou déficit motor progressivo",
+          "then": "Não aguardar desaparecimento de pulsos; suspeita é emergencial e requer decisão rápida sobre fasciotomia."
+        },
+        {
+          "if": "Exame inconclusivo, paciente sedado ou não cooperativo",
+          "then": "Mensurar pressão compartimental quando apropriado sem atrasar cirurgia em quadro clássico."
+        },
+        {
+          "if": "Alta suspeita/pressão de perfusão reduzida (delta P baixa)",
+          "then": "Fasciotomia emergencial e avaliação de viabilidade muscular, prevenção de rabdomiólise/insuficiência renal."
+        },
+        {
+          "if": "Após revascularização ou fratura de alto risco",
+          "then": "Vigilância seriada mesmo se pulsos presentes; considerar fasciotomia profilática apenas em situações selecionadas."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Fasciotomia completa de todos os compartimentos envolvidos é o tratamento definitivo.",
+            "Feridas costumam permanecer abertas inicialmente e ser reavaliadas para fechamento tardio/enxertia.",
+            "Tratar rabdomiólise, hipercalemia e lesão renal associadas quando presentes."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "O pulso distal pode permanecer palpável até fases tardias; não exclui síndrome compartimental.",
+            "Evitar posicionar membro excessivamente elevado, que reduz pressão de perfusão; monitorar CK/rim, mas não atrasar fasciotomia."
+          ],
+          "title": "Condutas clínicas específicas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Fratura de tíbia é causa clássica, mas síndrome compartimental pode ocorrer sem fratura.",
+            "Anticoagulação, queimaduras circunferenciais e reperfusão aumentam risco.",
+            "Analgesia regional pode dificultar reconhecimento em alguns cenários; monitorização deve ser rigorosa.",
+            "A diretriz AAOS de 2025 trata especificamente da síndrome compartimental aguda traumática das extremidades em adultos; não deve ser extrapolada sem ressalvas a crianças, adolescentes ou síndrome compartimental crônica por esforço."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar função neuromuscular, perfusão e complicações da ferida.",
+            "Avaliar necessidade de novo desbridamento.",
+            "Reabilitação pode ser prolongada em lesões graves."
+          ],
+          "title": "Após fasciotomia"
+        },
+        {
+          "items": [
+            "Após fasciotomia, revisar curativos, necrose, fechamento tardio e reabilitação funcional."
+          ],
+          "title": "Reavaliação e prevenção"
+        }
+      ],
+      "red_flags": [
+        "Dor desproporcional progressiva.",
+        "Dor à extensão passiva.",
+        "Déficit motor/sensitivo novo.",
+        "Compartimento muito tenso após trauma/reperfusão.",
+        "Dor desproporcional, dor à extensão passiva, déficit motor e tensão intensa."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar exame neurovascular seriado e, se medidas, pressões compartimentais.; Documentar horário da suspeita e da fasciotomia.",
+        "items": [
+          "Registrar exame neurovascular seriado e, se medidas, pressões compartimentais.",
+          "Documentar horário da suspeita e da fasciotomia."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.aaos.org/quality/quality-programs/acute-compartment-syndrome/",
+          "label": "AAOS — Clinical Practice Guideline: Management of Acute Compartment Syndrome, 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 128,
+      "slug": "cirurgia-geral-mordeduras-humanas-e-animais",
+      "title": "Mordeduras humanas e animais",
+      "category": "Cirurgia Geral",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Mordeduras humanas e animais podem causar infecção polimicrobiana, lesões tendíneas/articulares e exposição a raiva ou tétano. O manejo exige irrigação vigorosa, avaliação de profundidade, indicação seletiva de antibiótico profilático e análise do risco de raiva conforme animal, circunstância e epidemiologia local.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Identificar espécie, local, profundidade, tempo desde o trauma e status vacinal.",
+            "Examinar função tendínea, nervosa e vascular.",
+            "Mordidas em mão, face, genitais e sobre articulações têm maior risco de complicação.",
+            "Mordida humana fechada sobre articulação metacarpofalângica deve levantar suspeita de fight bite."
+          ],
+          "title": "Avaliação inicial"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Irrigar abundantemente com água/soro e limpar tecido desvitalizado.",
+            "Evitar fechamento primário rotineiro de feridas de alto risco/infectadas; face pode ser exceção após limpeza adequada.",
+            "Atualizar profilaxia antitetânica conforme esquema vacinal e tipo de ferida.",
+            "Avaliar indicação de profilaxia pós-exposição para raiva segundo protocolo local."
+          ],
+          "title": "Conduta imediata"
+        },
+        {
+          "items": [
+            "Irrigação copiosa com água/soro, avaliação de tendões/nervos, desbridamento seletivo e risco de infecção."
+          ],
+          "title": "Ação prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Radiografia se suspeita de corpo estranho, fratura ou envolvimento ósseo/articular.",
+            "Cultura apenas se houver infecção estabelecida, não de rotina em ferida recente não infectada.",
+            "Avaliar HIV/HBV/HCV em mordidas humanas com exposição relevante a sangue conforme contexto."
+          ],
+          "title": "Quando investigar"
+        },
+        {
+          "items": [
+            "Verificar lesão tendínea/articular, nervos e vascularização; radiografia em suspeita de dente/corpo estranho/fratura."
+          ],
+          "title": "Exames dirigidos"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Mordida de alto risco — mão, profunda, perto de articulação, imunossuprimido ou atraso na apresentação.",
+          "then": "Considerar antibiótico profilático."
+        },
+        {
+          "if": "Infecção clínica estabelecida.",
+          "then": "Antibiótico terapêutico cobrindo flora oral e anaeróbios."
+        },
+        {
+          "if": "Risco de raiva significativo.",
+          "then": "Iniciar profilaxia pós-exposição sem atraso desnecessário."
+        },
+        {
+          "if": "Lesão tendínea, articular ou neurovascular.",
+          "then": "Avaliação cirúrgica especializada."
+        },
+        {
+          "if": "Mordedura humana/animal com ferida aberta",
+          "then": "Irrigação copiosa com água/soro, avaliação de tendões/nervos, desbridamento seletivo e risco de infecção."
+        },
+        {
+          "if": "Mordedura em mão, profunda, por gato ou humana com perfuração",
+          "then": "Considerar profilaxia antibiótica apropriada à flora oral, frequentemente amoxicilina/clavulanato; avaliar lesão articular."
+        },
+        {
+          "if": "Mordedura com animal suspeito para raiva ou impossibilidade de observação segura",
+          "then": "Classificar exposição e iniciar esquema de profilaxia antirrábica conforme Ministério da Saúde vigente, sem atrasar quando indicado."
+        },
+        {
+          "if": "Mordedura de cão/gato observável e saudável",
+          "then": "Avaliar observação por 10 dias conforme diretriz brasileira e reavaliar se animal adoece/desaparece."
+        },
+        {
+          "if": "Sinais de infecção profunda, febre, dor desproporcional ou perda de função",
+          "then": "Cirurgia/ortopedia, imagem quando indicada, antibiótico terapêutico e avaliação de drenagem."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Amoxicilina-clavulanato é opção de primeira linha frequente para mordidas humanas e de cães/gatos.",
+            "Em alergia, escolher esquema alternativo que cubra Pasteurella, estreptococos, estafilococos e anaeróbios.",
+            "Mordidas de gato têm alto risco de infecção por inoculação profunda."
+          ],
+          "title": "Antibiótico"
+        },
+        {
+          "items": [
+            "Atualizar profilaxia antitetânica conforme história vacinal e tipo de ferimento, além de raiva segundo espécie, local e possibilidade de observação.",
+            "Fechamento primário depende de localização, tempo e contaminação; feridas de mão/punctórias requerem cautela."
+          ],
+          "title": "Condutas clínicas específicas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Lavar imediatamente a ferida reduz risco.",
+            "Profilaxia depende do animal, possibilidade de observação/testagem e epidemiologia.",
+            "Quando indicada em não previamente vacinado, combina vacina e imunoglobulina infiltrada ao redor da ferida conforme protocolo."
+          ],
+          "title": "Raiva"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar em 24–48 h feridas de alto risco.",
+            "Orientar retorno imediato por piora da dor, edema, febre, secreção ou déficit funcional.",
+            "Mão e articulações exigem baixo limiar para revisão especializada."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Marcar retorno em 24–48h para lesões de alto risco e completar vacinação/soro quando indicado."
+          ],
+          "title": "Reavaliação e prevenção"
+        }
+      ],
+      "red_flags": [
+        "Infecção rapidamente progressiva.",
+        "Comprometimento neurovascular.",
+        "Tenossinovite ou artrite séptica suspeita.",
+        "Sinais sistêmicos de infecção.",
+        "Déficit funcional, celulite ascendente, artrite séptica, sinais de raiva ou sepse."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar espécie, circunstância, local da mordida e status vacinal.; Documentar decisão sobre raiva e tétano.",
+        "items": [
+          "Registrar espécie, circunstância, local da mordida e status vacinal.",
+          "Documentar decisão sobre raiva e tétano."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/rabies/hcp/prevention-recommendations/post-exposure-prophylaxis.html",
+          "label": "CDC — Rabies Post-exposure Prophylaxis"
+        },
+        {
+          "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+          "label": "IDSA — Skin and Soft Tissue Infections Guideline"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/raiva/notas-tecnicas-e-informativas",
+          "label": "Ministério da Saúde — Raiva: notas vigentes até 2026"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "amoxicilina + clavulanato de potássio"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:23:41.160392+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 169,
+      "slug": "ginecologia-e-obstetricia-hipertensao-gestacional",
+      "title": "Hipertensão gestacional",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Hipertensão gestacional é PA ≥140/90 mmHg iniciada após 20 semanas em gestante previamente normotensa, sem proteinúria ou critérios de gravidade de pré-eclâmpsia.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "PA elevada após 20 semanas em medidas confirmadas.",
+            "PA ≥160/110 mmHg configura hipertensão grave e exige tratamento urgente."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Confirmar PA corretamente e pesquisar sintomas de pré-eclâmpsia.",
+            "Avaliar proteinúria e função renal, hepática e plaquetas.",
+            "Iniciar vigilância fetal conforme idade gestacional e gravidade."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Confirmar medida com técnica adequada, revisar história e investigar pré-eclâmpsia."
+          ],
+          "title": "Prioridade de conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma/plaquetas, creatinina, AST/ALT e proteinúria.",
+            "Avaliação de crescimento e bem-estar fetal."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Hemograma/plaquetas, creatinina, AST/ALT, avaliação de proteinúria, US de crescimento e vitalidade fetal conforme caso."
+          ],
+          "title": "Investigação direcionada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios maternos ou fetais de gravidade",
+          "then": "Estabilizar e escalonar manejo obstétrico, incluindo parto quando indicado."
+        },
+        {
+          "if": "PA ≥140/90 a partir de 20 semanas, sem proteinúria/disfunção orgânica",
+          "then": "Confirmar medida com técnica adequada, revisar história e investigar pré-eclâmpsia."
+        },
+        {
+          "if": "PA grave ≥160 sistólica ou ≥110 diastólica persistente",
+          "then": "Atendimento urgente, anti-hipertensivo de ação rápida e avaliação obstétrica/materna fetal."
+        },
+        {
+          "if": "Nova proteinúria, plaquetas baixas, creatinina/enzimas alteradas ou sintomas neurológicos",
+          "then": "Reclassificar como pré-eclâmpsia ou outra condição hipertensiva grave e seguir protocolo correspondente."
+        },
+        {
+          "if": "Hipertensão gestacional não grave e <37 semanas",
+          "then": "Vigilância materno-fetal estruturada, PA frequente e exames conforme risco; planejar resolução em idade apropriada."
+        },
+        {
+          "if": "Hipertensão gestacional ≥37 semanas",
+          "then": "Planejar resolução da gestação após avaliação obstétrica, evitando prolongamento sem indicação."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Hipertensão grave persistente requer anti-hipertensivo urgente.",
+            "Sem critérios graves, acompanhamento próximo até momento apropriado do parto.",
+            "Reclassificar como pré-eclâmpsia se surgirem critérios diagnósticos."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Opções de controle pressórico compatíveis com gestação conforme gravidade; não prescrever IECA/BRA na gestação.",
+            "Sulfato de magnésio é para risco de eclâmpsia, não tratamento de toda hipertensão leve isolada."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade gestacional, condição materna e bem-estar fetal."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Manter vigilância materno-fetal e revisar plano de parto/seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Monitorar PA e sintomas também no puerpério e reavaliar persistência de hipertensão."
+          ],
+          "title": "Seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade materna, hipertensão grave, sangramento importante ou comprometimento fetal.",
+        "Cefaleia intensa, escotomas, epigastralgia, dispneia, PA grave, oligúria."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar critérios diagnósticos, idade gestacional, conduta e resposta.",
+        "items": [
+          "Registrar critérios diagnósticos, idade gestacional, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/06/gestational-hypertension-and-preeclampsia",
+          "label": "ACOG — Practice Bulletin: Gestational Hypertension and Preeclampsia"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/diretrizes/",
+          "label": "FEBRASGO — Diretrizes nacionais"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "hidralazina",
+        "nifedipino"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 174,
+      "slug": "ginecologia-e-obstetricia-sangramento-no-primeiro-trimestre",
+      "title": "Sangramento no primeiro trimestre",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Sangramento vaginal no primeiro trimestre é comum, mas exige exclusão de gravidez ectópica, abortamento e doença trofoblástica, além de causas cervicais/vaginais. A prioridade é avaliar estabilidade hemodinâmica, localização da gestação e viabilidade quando possível.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Quantificar sangramento, presença de coágulos/tecidos, dor pélvica, síncope e fatores de risco para gravidez ectópica.",
+            "Confirmar idade gestacional estimada e gestação previamente documentada.",
+            "Dor intensa unilateral, instabilidade ou irritação peritoneal elevam a suspeita de ectópica rota."
+          ],
+          "title": "Avaliação inicial"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar sinais vitais e perfusão; obter acesso venoso e hemograma/tipagem em sangramento relevante.",
+            "Solicitar beta-hCG quantitativo e ultrassonografia transvaginal conforme disponibilidade e idade gestacional.",
+            "Determinar grupo/Rh e seguir protocolo local de imunoprofilaxia anti-D quando indicada."
+          ],
+          "title": "Primeiros passos"
+        },
+        {
+          "items": [
+            "Ressuscitação e exclusão imediata de gravidez ectópica rota."
+          ],
+          "title": "Conduta inicial direcionada"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ultrassonografia transvaginal é central para localização da gestação, viabilidade e identificação de hematomas/retidos.",
+            "Beta-hCG seriado deve ser interpretado em conjunto com ultrassom; um único valor isolado raramente define diagnóstico.",
+            "Hemograma e avaliação de anemia são indicados conforme volume do sangramento."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "Teste gestacional/β-hCG, US transvaginal, hemograma conforme perda e tipo/Rh."
+          ],
+          "title": "Avaliação complementar"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade, peritonite ou suspeita de ectópica rota.",
+          "then": "Abordagem emergencial e avaliação cirúrgica imediata."
+        },
+        {
+          "if": "Gestação intrauterina viável com colo fechado.",
+          "then": "Manejo expectante da ameaça de abortamento, orientação de sinais de alarme e seguimento."
+        },
+        {
+          "if": "Gestação de localização indeterminada.",
+          "then": "Seguimento com beta-hCG seriado e ultrassonografia até definir localização/viabilidade, desde que paciente estável."
+        },
+        {
+          "if": "Sangramento associado a choque ou dor unilateral intensa",
+          "then": "Ressuscitação e exclusão imediata de gravidez ectópica rota."
+        },
+        {
+          "if": "Gestação intrauterina viável documentada",
+          "then": "Investigar colo e causas ginecológicas, orientar sinais de alerta e acompanhamento."
+        },
+        {
+          "if": "Ultrassom inconclusivo ou gestação de localização desconhecida",
+          "then": "β-hCG e ultrassom em série até definir localização e evolução."
+        },
+        {
+          "if": "Perda gestacional comprovada",
+          "then": "Escolha compartilhada entre opções expectante, medicamentosa e procedimento conforme estabilidade."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Tratar a causa específica: ameaça de abortamento, abortamento em curso/completo/incompleto, gravidez ectópica ou doença trofoblástica.",
+            "Analgesia e suporte hemodinâmico conforme necessidade.",
+            "Evitar intervenções irreversíveis antes de confirmar inviabilidade quando o diagnóstico ainda é incerto e a paciente está estável."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Não usar ponto de corte isolado de β-hCG como prova definitiva de inviabilidade.",
+            "Avaliar status Rh e eventual anti-D segundo idade gestacional, procedimento e recomendação atual do serviço."
+          ],
+          "title": "Aprimoramento do tratamento"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Gestação heterotópica é rara, mas deve ser lembrada especialmente após reprodução assistida.",
+            "Causas cervicais e vaginais também podem sangrar na gestação.",
+            "Ausência de saco intrauterino em gestação muito inicial pode representar apenas gestação precoce."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Repetir ultrassonografia/beta-hCG conforme hipótese e evolução.",
+            "Orientar retorno imediato por sangramento intenso, síncope, dor progressiva ou febre."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Definir data da reavaliação quando gestação ainda não localizada."
+          ],
+          "title": "Seguimento orientado"
+        }
+      ],
+      "red_flags": [
+        "Hipotensão, taquicardia, síncope ou sinais de choque.",
+        "Dor unilateral intensa, peritonismo ou dor no ombro.",
+        "Sangramento volumoso ou queda importante de hemoglobina.",
+        "Síncope, sinais de choque, dor pélvica súbita, febre ou sangramento volumoso."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar quantidade estimada de sangramento, Rh, beta-hCG e achados ultrassonográficos.; Documentar plano de seguimento quando localização/viabilidade ainda não estiver definida.",
+        "items": [
+          "Registrar quantidade estimada de sangramento, Rh, beta-hCG e achados ultrassonográficos.",
+          "Documentar plano de seguimento quando localização/viabilidade ainda não estiver definida."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+          "label": "Ministério da Saúde — Manual de Gestação de Alto Risco"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ultrassonografia de gravidez ectópica",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ectopic%20pregnancy.JPG",
+          "kind": "ultrasound",
+          "max_kb": 120,
+          "caption": "Sangramento no primeiro trimestre — exemplo de gravidez ectópica",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ectopic_pregnancy.JPG",
+          "source_name": "X. Compagnion / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": false,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        },
+        {
+          "alt": "Ultrassonografia transvaginal de abortamento incompleto",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Incomplete%20miscarriage.jpg",
+          "kind": "ultrasound",
+          "max_kb": 120,
+          "caption": "Sangramento no primeiro trimestre — exemplo de abortamento incompleto ao ultrassom",
+          "license": "Licença aberta na página-fonte",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Incomplete_miscarriage.jpg",
+          "source_name": "Mikael Häggström / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": false,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "US no sangramento de primeiro trimestre"
+    }
+  ]
+}
