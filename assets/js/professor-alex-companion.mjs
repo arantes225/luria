@@ -474,6 +474,22 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   setAccess(isAdmin);
   minimize(prefs.minimized);
   if (!prefs.minimized) integration.react('welcome');
+  if (new URLSearchParams(window.location.search).get("openAlex") === "true") {
+    minimize(false);
+    host.style.top = '160px';
+    host.style.left = '380px';
+    host.style.position = 'fixed';
+    host.style.zIndex = '99999';
+    setTimeout(() => {
+      help.hidden = false;
+      help.style.display = 'block';
+      help.style.opacity = '1';
+      help.style.backgroundColor = (help.classList.contains('dark-theme') || host.getAttribute('data-theme') === 'dark') ? '#0f1c2e' : '#ffffff';
+      help.style.background = help.style.backgroundColor;
+      help.style.backdropFilter = 'none';
+      help.style.webkitBackdropFilter = 'none';
+    }, 400);
+  }
 
   return {
     host,

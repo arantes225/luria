@@ -37,6 +37,12 @@
     main?.setAttribute("aria-busy", "false");
   }
   function restore() {
+    const queryView = new URLSearchParams(window.location.search).get("view");
+    if (valid(queryView)) {
+      show(queryView);
+      if (status) status.textContent = "";
+      return;
+    }
     // A missing owner during Auth initialization is not a Classic preference.
     if (!ownerReady && !ownerStore?.ownerId) { pending(); return; }
     show(window.LuriaDashboardPreference?.read());

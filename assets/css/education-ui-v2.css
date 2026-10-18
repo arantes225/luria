@@ -12,9 +12,7 @@
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main h3 {font-size:var(--ui-card-title)!important;line-height:1.4!important;font-weight:600!important;color:var(--color-text-primary)!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .ui-page-heading {display:block!important;margin:0 0 1.5rem!important;padding:0!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .ui-page-heading h1 {margin:.375rem 0 0!important;}
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight {height:auto!important;min-height:0!important;max-width:none!important;display:block!important;margin:0 0 1.5rem!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:var(--color-text-primary)!important;}
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight::before, body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight::after {display:none!important;}
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight :is(p,small) {color:var(--color-text-secondary)!important;}
+  /* Spotlight unificado soberano em page-spotlight.css */
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .schedule-top-spotlight {height:auto!important;min-height:0!important;display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:space-between!important;gap:1rem!important;margin:0 0 1.5rem!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important;color:var(--color-text-primary)!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .schedule-top-spotlight::before, body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .schedule-top-spotlight::after {display:none!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .schedule-top-spotlight-copy > strong {font-size:var(--ui-h1)!important;line-height:1.2!important;color:var(--color-text-primary)!important;}
@@ -52,9 +50,7 @@
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .book-outline-link {font-size:.875rem!important;line-height:1.4!important;min-height:36px!important;padding:.5rem!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .book-outline-link.is-active {background:var(--color-surface-elevated)!important;color:var(--color-primary-text)!important;}
 
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight-copy > strong {font-size:var(--ui-h1)!important;line-height:1.2!important;font-weight:700!important;color:var(--color-text-primary)!important;}
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight-copy > small {font-size:.875rem!important;color:var(--color-text-secondary)!important;}
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .luria-page-spotlight-label {color:var(--color-text-secondary)!important;font-size:.8125rem!important;line-height:1.5!important;}
+  /* Tipografia do spotlight soberana em page-spotlight.css */
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main :is(.tool-card,.learn-card,.learn-panel,.book-card) {height:auto!important;min-height:0!important;padding:1.5rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;background:var(--color-surface)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;color:var(--color-text-primary)!important;box-shadow:var(--ui-shadow)!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main :is(.tool-card,.learn-card) :is(h2,h3) {font-size:var(--ui-card-title)!important;line-height:1.4!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main :is(.tool-cta,.learn-cta) {font-size:.875rem!important;line-height:1.5!important;color:var(--color-primary-text)!important;}
