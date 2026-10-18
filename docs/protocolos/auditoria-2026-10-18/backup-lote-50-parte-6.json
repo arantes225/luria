@@ -1,0 +1,727 @@
+{
+  "date": "2026-10-18",
+  "backup": true,
+  "records": [
+    {
+      "id": 182,
+      "slug": "ginecologia-e-obstetricia-rotura-prematura-de-membranas",
+      "title": "Rotura prematura de membranas",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Rotura prematura de membranas é a ruptura das membranas antes do início do trabalho de parto; quando ocorre antes de 37 semanas é PPROM. O manejo depende da idade gestacional, sinais de infecção, trabalho de parto e bem-estar fetal.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Perda súbita ou contínua de líquido vaginal.",
+            "Evitar toque vaginal digital de rotina sem indicação obstétrica imediata."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Confirmar diagnóstico com exame especular e testes apropriados.",
+            "Avaliar corioamnionite, trabalho de parto e sofrimento fetal."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Confirmar por anamnese e exame especular estéril; evitar toque vaginal digital repetido."
+          ],
+          "title": "Prioridade de conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Exame especular com visualização de líquido e testes de apoio.",
+            "Ultrassom pode apoiar avaliação do líquido, mas não confirma isoladamente."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Exame especular, vitalidade fetal, temperatura e sinais maternos; testes de líquido se dúvida diagnóstica e culturas conforme contexto."
+          ],
+          "title": "Investigação direcionada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo obstétrico imediatamente."
+        },
+        {
+          "if": "Perda de líquido antes do início do parto",
+          "then": "Confirmar por anamnese e exame especular estéril; evitar toque vaginal digital repetido."
+        },
+        {
+          "if": "Rotura a termo ≥37 semanas",
+          "then": "Discutir indução/resolução conforme indicação e status de GBS, avaliando sinais infecciosos."
+        },
+        {
+          "if": "PPROM <34 semanas estável, sem infecção ou comprometimento fetal",
+          "then": "Manejo expectante hospitalar selecionado, corticoide antenatal, antibiótico de latência e vigilância."
+        },
+        {
+          "if": "34–36+6 semanas",
+          "then": "Individualizar conduta expectante versus parto segundo fatores maternos/fetais e diretrizes específicas, incluindo revisão de recomendações de 2025."
+        },
+        {
+          "if": "Corioamnionite, DPP, prolapso de cordão ou sofrimento fetal",
+          "then": "Antibióticos/tratamento da intercorrência e resolução obstétrica urgente; não prolongar latência."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "A termo, indução geralmente é recomendada se não houver contraindicação.",
+            "PPROM pré-termo: manejo expectante em casos selecionados, corticoide antenatal, antibiótico de latência e magnésio conforme idade gestacional.",
+            "Infecção, DPP ou sofrimento fetal indicam parto."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Não usar tocólise para prolongar gestação com infecção ou sofrimento; escolher antibióticos de latência apropriados quando indicados.",
+            "Corticoterapia antenatal e magnésio neuroprotetor dependem da idade gestacional, risco de parto e critérios do serviço."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade gestacional e condição materno-fetal."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e organizar seguimento apropriado."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Orientar odor fétido, febre, dor uterina, contrações ou redução dos movimentos fetais como retorno imediato."
+          ],
+          "title": "Seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal.",
+        "Febre, taquicardia fetal, dor uterina, prolapso de cordão ou descolamento."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/news/news-releases/2025/06/acog-releases-practice-advisory-preterm-prelabor-rupture-of-membranes",
+          "label": "ACOG — Practice Advisory sobre rotura prematura pré-termo de membranas (2025)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ampicilina",
+        "sulfato de magnésio",
+        "betametasona"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 188,
+      "slug": "ginecologia-e-obstetricia-sepse-puerperal",
+      "title": "Sepse puerperal",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Sepse puerperal é disfunção orgânica potencialmente fatal por infecção no pós-parto. Focos: endometrite, ferida operatória, trato urinário, mastite complicada, pneumonia e coleções. A identificação e o tratamento devem ser imediatos; febre isolada não define sepse, nem sua ausência a exclui.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Puerpério com infecção possível e taquicardia persistente, hipotensão, taquipneia, oligúria, alteração mental, hipóxia ou piora rápida.",
+            "Endometrite: febre, dor uterina, sensibilidade abdominal, lóquios anormais/fétidos; investigar ferida cirúrgica, mama, pulmão, urina e foco abdominal.",
+            "Não depender exclusivamente do qSOFA: avaliação obstétrica e clínica da disfunção orgânica é essencial."
+          ],
+          "title": "Suspeita e avaliação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar equipe e protocolo de sepse materna, monitorizar PA/FC/FR/SpO2, estado mental, diurese e perfusão; providenciar acessos venosos e avaliar necessidade de UTI.",
+            "Coletar hemoculturas e culturas do foco antes do antibiótico se isso não atrasar sua administração.",
+            "Antimicrobiano IV de amplo espectro rapidamente, idealmente na primeira hora diante de choque ou alta probabilidade de sepse; escolher segundo foco, flora hospitalar e resistência local.",
+            "Administrar cristaloide isotônico se hipoperfusão, com reavaliações frequentes para evitar sobrecarga; indicar vasopressor se choque persistir; programar controle do foco."
+          ],
+          "title": "Primeira hora na sepse provável ou choque"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma, plaquetas, função renal/hepática, eletrólitos, bilirrubinas, coagulograma, lactato e gasometria quando necessário.",
+            "Hemoculturas, urina e cultura de secreções conforme foco; ultrassom pélvico ou TC quando suspeita de restos/coleção, sem atrasar intervenção.",
+            "Repetir lactato quando elevado e acompanhar resposta clínica e diurese; exames normais não excluem deterioração precoce."
+          ],
+          "title": "Diagnóstico e monitoramento"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Infecção provável sem disfunção orgânica e com estabilidade",
+          "then": "Tratar foco específico, avaliar necessidade de internação e reavaliar precocemente; não rotular automaticamente como sepse."
+        },
+        {
+          "if": "Infecção suspeita + disfunção orgânica",
+          "then": "Iniciar pacote de sepse materna: culturas se viáveis sem atraso, antibiótico IV, suporte hemodinâmico e controle do foco."
+        },
+        {
+          "if": "Hipotensão ou hipoperfusão persistente após reposição avaliada",
+          "then": "Noradrenalina titulada em ambiente monitorizado/UTI para manter perfusão; reavaliar volemia, lactato e função de órgãos."
+        },
+        {
+          "if": "Retenção de produtos, abscesso, ferida infectada profunda ou foco cirúrgico",
+          "then": "Acionar obstetrícia/cirurgia para evacuação ou drenagem e controle de foco com urgência."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Antibioticoterapia empírica IV de amplo espectro orientada por foco, gravidade, alergias, culturas e epidemiologia local; em foco uterino, garantir cobertura de Gram-negativos e anaeróbios.",
+            "Em endometrite sem choque, clindamicina + gentamicina é um esquema tradicional, sujeito ao protocolo local e à função renal; em sepse grave ou risco de resistentes, considerar esquema de amplo espectro como piperacilina/tazobactam conforme avaliação especializada.",
+            "Rever em 24–48 horas as culturas e a resposta para ajustar, descalonar e determinar duração; antibiótico não substitui drenagem/remoção de foco."
+          ],
+          "title": "Antimicrobianos"
+        },
+        {
+          "items": [
+            "Oxigênio se hipoxemia, cristaloide com reavaliação repetida e controle de diurese. Choque refratário requer noradrenalina e UTI.",
+            "Investigar e drenar abscessos, tratar ferida, remover material retido quando indicado e documentar resolução do foco."
+          ],
+          "title": "Suporte e controle de foco"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Puerpério pós-cesariana aumenta preocupação com infecção de ferida, endometrite e coleção.",
+            "Adaptação dos antimicrobianos à função renal, amamentação e alergias; não suspender aleitamento automaticamente sem avaliação.",
+            "Considerar tromboflebite pélvica séptica diante de febre persistente sem foco após investigação e terapia adequada."
+          ],
+          "title": "Situações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Na fase aguda reavaliar repetidamente perfusão, sinais vitais, consciência, diurese, lactato e necessidade de suporte orgânico.",
+            "Documentar culturas, foco, controle realizado, resposta e plano de transição de via IV para oral quando clinicamente indicada.",
+            "Na alta orientar febre recorrente, dor abdominal intensa, secreção fétida, piora da ferida, dispneia e prostração; agendar revisão do puerpério."
+          ],
+          "title": "Reavaliação e alta"
+        }
+      ],
+      "red_flags": [
+        "Hipotensão/choque, extremidades frias ou lactato elevado.",
+        "Alteração de consciência, oligúria, hipoxemia ou falência orgânica.",
+        "Dor abdominal desproporcional, sinais de peritonite ou infecção necrosante.",
+        "Piora apesar de antibióticos ou foco não controlado."
+      ],
+      "notification": {
+        "text": "Registrar suspeita e diagnóstico de sepse, critérios de disfunção orgânica, horários de antimicrobianos, culturas e controle de foco. Cumprir fluxos locais de vigilância hospitalar e morbidade materna grave.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/clinical-management-of-sepsis",
+          "label": "Ministério da Saúde/OMS — Sepse: reconhecimento e cuidado integrado"
+        },
+        {
+          "url": "https://www.who.int/vanuatu/news/detail-global/20-11-2025-stronger-infection-prevention-and-management--better-maternal-outcomes",
+          "label": "OMS — FAST-M e prevenção/tratamento de infecção materna (2025)"
+        },
+        {
+          "url": "https://www.saude.ma.gov.br/wp-content/uploads/2026/05/PROTOCOLO_DE_SEPSE_MATERNA__MACMA_assinado.pdf",
+          "label": "Secretaria de Saúde do Maranhão — Protocolo de Sepse Materna (2026)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "clindamicina",
+        "sulfato de gentamicina",
+        "piperacilina + tazobactam",
+        "noradrenalina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 189,
+      "slug": "ginecologia-e-obstetricia-endometrite-puerperal",
+      "title": "Endometrite puerperal",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Endometrite puerperal é infecção polimicrobiana do endométrio, mais comum após cesárea, caracterizada por febre, dor uterina e loquiação alterada.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Febre puerperal com dor uterina/hipogástrica.",
+            "Loquiação fétida pode ocorrer."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar gravidade e sinais de sepse.",
+            "Considerar complicações se febre persistente."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Avaliar endometrite, excluir ITU, mastite, ferida cirúrgica, trombose e outras causas."
+          ],
+          "title": "Primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Diagnóstico geralmente clínico.",
+            "US ou TC se suspeita de restos, abscesso ou tromboflebite pélvica."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Hemograma, culturas em sepse, US pélvica quando suspeita de restos/abscesso, avaliação de ferida e urina conforme foco."
+          ],
+          "title": "Investigação adicional"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo imediatamente."
+        },
+        {
+          "if": "Febre pós-parto com dor uterina, sensibilidade, lóquios alterados",
+          "then": "Avaliar endometrite, excluir ITU, mastite, ferida cirúrgica, trombose e outras causas."
+        },
+        {
+          "if": "Endometrite clínica, estável",
+          "then": "Antibiótico IV com cobertura para anaeróbios/Gram-negativos conforme protocolo; monitorar resposta clínica."
+        },
+        {
+          "if": "Sepse, hipotensão, disfunção orgânica ou peritonite",
+          "then": "Pacote de sepse materna e investigação de foco/abscesso com avaliação cirúrgica precoce."
+        },
+        {
+          "if": "Febre persistente 48–72h apesar de terapia adequada",
+          "then": "Rever resistência, restos ovulares, coleção, ferida, tromboflebite pélvica séptica e necessidade de imagem/controle de foco."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Clindamicina + gentamicina é esquema IV clássico; adicionar ampicilina em situações selecionadas.",
+            "Reavaliar se não houver melhora em 48–72 h."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Esquema clássico hospitalar inclui clindamicina + gentamicina para endometrite puerperal, com ajuste renal e conforme microbiologia local.",
+            "Não realizar curetagem de rotina sem evidência de restos/indicação; antibiótico não substitui drenagem quando coleção."
+          ],
+          "title": "Conduta e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar conforme puerpério, amamentação, comorbidades e preferência da paciente."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e garantir seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar temperatura e dor em 24–48h e ajustar antibiótico conforme melhora e cultura."
+          ],
+          "title": "Plano de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade, sepse, abscesso ou sangramento importante.",
+        "Hipotensão, confusão, oligúria, peritonismo, choque ou infecção necrosante."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK615643/",
+          "label": "Organização Mundial da Saúde — Recomendações para infecções periparto, 2ª edição, 2025: tratamento da endometrite puerperal"
+        },
+        {
+          "url": "https://www.acog.org/womens-health/experts-and-stories/the-latest/3-conditions-to-watch-for-after-childbirth",
+          "label": "ACOG — Sinais, reconhecimento e tratamento da endometrite pós-parto"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "sulfato de gentamicina",
+        "clindamicina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 376,
+      "slug": "ginecologia-e-obstetricia-violencia-sexual-e-profilaxias",
+      "title": "Violência sexual e profilaxias",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Violência sexual exige cuidado imediato centrado na pessoa, preservando segurança, consentimento, confidencialidade e autonomia. O atendimento inclui profilaxias, contracepção de emergência, coleta forense quando desejada e suporte psicológico.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Relato de violência sexual ou suspeita clínica.",
+            "Priorizar segurança e necessidades urgentes, sem exigir boletim de ocorrência para atendimento médico."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Obter consentimento para cada etapa do exame e coleta.",
+            "Oferecer contracepção de emergência quando indicada.",
+            "Avaliar PEP para HIV e profilaxias/vacinas para outras ISTs."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Acolher sem julgamento, garantir privacidade, consentimento, história clínica sem revitimização e exame apenas quando consentido/necessário."
+          ],
+          "title": "Primeiros passos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Testes de gravidez e ISTs conforme tempo da exposição e protocolo.",
+            "Coleta forense apenas com consentimento e cadeia de custódia adequada."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Testes de HIV, sífilis, hepatites B/C, gravidez conforme tempo e avaliação; exames adicionais guiados por lesões/riscos."
+          ],
+          "title": "Exames direcionados"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sinais de gravidade, instabilidade ou complicação",
+          "then": "Escalonar cuidado e intervenção especializada imediatamente."
+        },
+        {
+          "if": "Relato ou suspeita de violência sexual",
+          "then": "Acolher sem julgamento, garantir privacidade, consentimento, história clínica sem revitimização e exame apenas quando consentido/necessário."
+        },
+        {
+          "if": "Exposição sexual com risco de HIV há até 72 horas",
+          "then": "Avaliar e iniciar PEP ao HIV rapidamente, idealmente nas primeiras horas, por 28 dias segundo protocolo brasileiro."
+        },
+        {
+          "if": "Possibilidade de gestação após exposição",
+          "then": "Oferecer contracepção de emergência conforme janela, preferências e contraindicações; avaliar seguimento."
+        },
+        {
+          "if": "Risco de hepatite B/IST e ferimentos",
+          "then": "Testagem, vacinação/imunoglobulina conforme status e profilaxias apropriadas, além de cuidados com trauma."
+        },
+        {
+          "if": "Risco imediato de violência recorrente, menor de idade ou vulnerabilidade",
+          "then": "Acionar proteção e equipe psicossocial segundo legislação e construir plano de segurança sem exigir boletim de ocorrência para atendimento."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "PEP para HIV deve ser iniciada o mais cedo possível, idealmente até 72 h.",
+            "Profilaxia empírica de ISTs pode ser oferecida conforme protocolo.",
+            "Oferecer suporte de saúde mental e seguimento."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "O atendimento e profilaxias não dependem de registro policial; preservar vestígios quando possível com consentimento sem adiar assistência.",
+            "Notificação compulsória à vigilância em até 24 horas e seguimento clínico/psicológico; confidencialidade com limites legais de proteção."
+          ],
+          "title": "Tratamento — revisão detalhada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar pelo contexto clínico e gravidade."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e organizar seguimento especializado quando necessário."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Agendar avaliações sorológicas segundo PCDT PEP e acompanhamento para saúde mental, adesão, contracepção e segurança."
+          ],
+          "title": "Acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal.",
+        "Suicidalidade, ferimentos graves, exposição a agressor com ameaça, gestação ou PEP prestes a ultrapassar 72h."
+      ],
+      "notification": {
+        "text": "Notificação compulsória de violência sexual à autoridade de saúde em 24 horas e comunicação protetiva conforme legislação, com preservação de confidencialidade.",
+        "required": true
+      },
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/std/treatment-guidelines/sexual-assault-adults.htm",
+          "label": "CDC — STI Treatment Guidelines: Sexual Assault and Abuse, Adults"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual/violencia-sexual",
+          "label": "Ministério da Saúde — Atendimento à violência sexual"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "levonorgestrel"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 11:34:15.207728+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 378,
+      "slug": "ginecologia-e-obstetricia-torcao-anexial",
+      "title": "Torção anexial",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Torção anexial é rotação do ovário, tuba ou ambos sobre o pedículo vascular, podendo causar isquemia e perda gonadal. O diagnóstico é clínico apoiado por ultrassonografia, mas nenhum achado isolado exclui a doença. Fluxo arterial preservado ao Doppler não descarta torção.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor pélvica súbita, geralmente unilateral, frequentemente com náuseas e vômitos.",
+            "Pode haver episódios intermitentes de dor por torção/destorção.",
+            "Massa ovariana ou ovário aumentado aumenta risco, mas torção pode ocorrer sem massa."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar estabilidade, gravidez e diagnósticos diferenciais.",
+            "Analgesia e antiemético sem atrasar avaliação cirúrgica.",
+            "Solicitar ultrassonografia transvaginal/transabdominal com Doppler quando disponível."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Jejum, analgesia, teste gestacional e avaliação cirúrgica sem demora."
+          ],
+          "title": "Conduta inicial direcionada"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ovário unilateralmente aumentado, edema estromal, folículos periféricos e líquido livre apoiam o diagnóstico.",
+            "Sinal do redemoinho do pedículo vascular é específico quando visualizado.",
+            "Doppler tem sensibilidade limitada; fluxo arterial normal pode ocorrer em torção confirmada cirurgicamente."
+          ],
+          "title": "Achados de imagem"
+        },
+        {
+          "items": [
+            "β-hCG e ultrassom pélvico com Doppler, sem atrasar cirurgia se probabilidade alta."
+          ],
+          "title": "Avaliação complementar"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Alta suspeita clínica de torção.",
+          "then": "Laparoscopia urgente para diagnóstico e tratamento; não aguardar desaparecimento do fluxo Doppler."
+        },
+        {
+          "if": "Ovário viável na cirurgia.",
+          "then": "Destorção com preservação ovariana sempre que possível."
+        },
+        {
+          "if": "Massa associada.",
+          "then": "Tratar conforme aspecto e contexto, priorizando preservação de tecido ovariano em pacientes jovens."
+        },
+        {
+          "if": "Dor pélvica aguda unilateral, náuseas/vômitos e massa anexial",
+          "then": "Jejum, analgesia, teste gestacional e avaliação cirúrgica sem demora."
+        },
+        {
+          "if": "Doppler normal com forte suspeita clínica",
+          "then": "Não descartar torção apenas pelo fluxo presente; considerar laparoscopia urgente."
+        },
+        {
+          "if": "Torção confirmada com ovário potencialmente recuperável",
+          "then": "Destorção e preservação anexial sempre que tecnicamente viável."
+        },
+        {
+          "if": "Necrose irreversível ou neoplasia suspeita",
+          "then": "Individualizar abordagem cirúrgica com equipe experiente."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Destorção laparoscópica é o tratamento de escolha.",
+            "A aparência escura/cianótica do ovário não significa necessariamente inviabilidade irreversível.",
+            "Ooforectomia deve ser reservada a situações em que preservação não seja possível ou haja forte suspeita oncológica."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "US e Doppler apoiam, mas não excluem torção; não postergar destorção para exames seriados.",
+            "Anexo escurecido não obriga ooforectomia: avaliar possibilidade de preservação."
+          ],
+          "title": "Aprimoramento do tratamento"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Adolescentes podem apresentar torção sem massa anexial.",
+            "Gestação aumenta risco, especialmente com cistos de corpo lúteo ou indução de ovulação.",
+            "Torção tubária isolada é rara e pode ter apresentação semelhante."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Acompanhar função ovariana e massa residual quando presente.",
+            "Orientar retorno se dor recorrente."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Seguimento de massa predisponente, dor e recidiva após procedimento."
+          ],
+          "title": "Seguimento orientado"
+        }
+      ],
+      "red_flags": [
+        "Dor súbita intensa com vômitos.",
+        "Massa anexial + dor aguda.",
+        "Sinais de irritação peritoneal ou instabilidade.",
+        "Dor/vômitos persistentes, peritonismo ou deterioração clínica."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar tempo de início da dor, achados ultrassonográficos e tempo até avaliação cirúrgica.; Documentar preservação ovariana quando realizada.",
+        "items": [
+          "Registrar tempo de início da dor, achados ultrassonográficos e tempo até avaliação cirúrgica.",
+          "Documentar preservação ovariana quando realizada."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents",
+          "label": "ACOG — Adnexal Torsion in Adolescents"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 11:34:15.207728+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "US Doppler em torção anexial"
+    }
+  ]
+}
