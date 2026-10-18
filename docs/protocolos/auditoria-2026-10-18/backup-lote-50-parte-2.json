@@ -1,0 +1,887 @@
+{
+  "date": "2026-10-18",
+  "backup": true,
+  "records": [
+    {
+      "id": 116,
+      "slug": "cirurgia-geral-infeccao-de-sitio-cirurgico",
+      "title": "Infecção de sítio cirúrgico",
+      "category": "Cirurgia Geral",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Infecção de sítio cirúrgico (ISC) é infecção relacionada ao procedimento que pode envolver apenas pele/subcutâneo, tecidos profundos ou órgão/espaço operado. O reconhecimento precoce depende de dor, eritema, drenagem purulenta, febre e sinais de coleção ou deiscência, e o tratamento combina controle de foco, abertura/drenagem quando indicada e antibiótico conforme gravidade e profundidade.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Eritema, calor, dor crescente, edema ou drenagem purulenta em ferida operatória.",
+            "Febre ou mal-estar sem outra causa evidente no pós-operatório.",
+            "Coleção, flutuação, deiscência ou secreção por dreno sugerem infecção mais profunda.",
+            "Taquicardia, hipotensão ou dor desproporcional levantam suspeita de complicação grave."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar estabilidade hemodinâmica e sinais de sepse.",
+            "Inspecionar toda a ferida, drenos e planos adjacentes.",
+            "Abrir parcialmente a ferida e drenar quando houver coleção superficial acessível.",
+            "Acionar cirurgia precocemente em suspeita de ISC profunda, órgão/espaço ou infecção necrosante."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Classificar ISC superficial, profunda ou órgão/espaço, avaliar extensão e necessidade de drenagem."
+          ],
+          "title": "Primeira intervenção"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Cultura de secreção/tecido profundo é útil quando há pus, infecção moderada/grave ou falha terapêutica.",
+            "Hemograma e marcadores inflamatórios podem ajudar em casos sistêmicos, mas não substituem avaliação clínica.",
+            "Ultrassom ou TC são úteis quando há suspeita de coleção profunda ou órgão/espaço.",
+            "Hemoculturas são indicadas em sepse ou bacteremia suspeita."
+          ],
+          "title": "Investigação"
+        },
+        {
+          "items": [
+            "Exame por planos, culturas de pus/tecido, imagem quando órgão-espaço e marcadores conforme sepse."
+          ],
+          "title": "Investigação guiada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "ISC superficial com coleção drenável e sem sinais sistêmicos.",
+          "then": "Abrir/drenar, cuidar da ferida e considerar antibiótico conforme extensão e comorbidades."
+        },
+        {
+          "if": "Celulite extensa, sinais sistêmicos ou imunossupressão.",
+          "then": "Drenagem quando necessária + antibiótico sistêmico."
+        },
+        {
+          "if": "ISC profunda ou órgão/espaço.",
+          "then": "Controle de foco cirúrgico/radiológico + antibiótico dirigido."
+        },
+        {
+          "if": "Dor desproporcional, necrose ou progressão rápida.",
+          "then": "Tratar como possível infecção necrosante e explorar urgentemente."
+        },
+        {
+          "if": "Eritema/dor com secreção em incisão",
+          "then": "Classificar ISC superficial, profunda ou órgão/espaço, avaliar extensão e necessidade de drenagem."
+        },
+        {
+          "if": "Coleção ou abscesso em ferida operatória",
+          "then": "Abrir/drenar conforme plano acometido, debridar tecido desvitalizado e colher cultura profunda quando indicado."
+        },
+        {
+          "if": "Febre, sepse, sinais de deiscência profunda ou foco intracavitário",
+          "then": "TC/US quando estável, cirurgia/intervenção para controle de foco urgente."
+        },
+        {
+          "if": "ISC superficial localizada após drenagem sem sinais sistêmicos",
+          "then": "Antibioticoterapia não é obrigatória para todos; decisão por celulite extensa, imunossupressão e gravidade."
+        },
+        {
+          "if": "Necrose, crepitação ou dor desproporcional",
+          "then": "Exploração imediata por suspeita de infecção necrosante."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Controle de foco é fundamental: drenagem, abertura da ferida e desbridamento quando indicados.",
+            "Antibiótico deve refletir local operado, flora esperada, gravidade e culturas.",
+            "Feridas infectadas podem precisar cicatrizar por segunda intenção ou fechamento tardio após controle da infecção.",
+            "Não prolongar antibiótico sem indicação clínica apenas por presença de dreno."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Antibióticos dirigidos por órgão/procedimento e resistência local, com descalonamento após culturas.",
+            "Revisar material protético/corpo estranho e controlar glicemia/nutrição; prolongar profilaxia antibiótica não trata ISC."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Materiais protéticos/implantes podem complicar erradicação da infecção.",
+            "Diabetes, obesidade, tabagismo, hiperglicemia e cirurgia de maior duração aumentam risco.",
+            "Infecção profunda pode se manifestar com poucos sinais cutâneos iniciais."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar ferida, drenagem, febre e dor.",
+            "Ajustar antibiótico pelas culturas e evolução.",
+            "Planejar curativos, fechamento tardio ou terapia por pressão negativa conforme ferida."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Revisão de ferida, adequação de curativos e avaliação de necessidade de reintervenção."
+          ],
+          "title": "Plano de acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Sepse ou choque.",
+        "Necrose, crepitação ou dor desproporcional.",
+        "Deiscência fascial.",
+        "Coleção profunda ou órgão/espaço sem controle de foco.",
+        "Sepse, evisceração, dor desproporcional, necrose ou coleção profunda."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar profundidade provável da ISC, presença de pus/coleção e procedimento de controle de foco.; Documentar microbiologia e antibióticos.",
+        "items": [
+          "Registrar profundidade provável da ISC, presença de pus/coleção e procedimento de controle de foco.",
+          "Documentar microbiologia e antibióticos."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/",
+          "label": "CDC — Surgical Site Infection Prevention Guideline"
+        },
+        {
+          "url": "https://www.who.int/publications/i/item/9789241550475",
+          "label": "OMS — Prevenção de infecção de sítio cirúrgico"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "cefazolina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:20:53.049776+00",
+      "image_assets": [],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "clinical_photo"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "Foto clínica de infecção de sítio cirúrgico com eritema, drenagem ou deiscência"
+    },
+    {
+      "id": 117,
+      "slug": "cirurgia-geral-deiscencia-de-ferida-operatoria",
+      "title": "Deiscência de ferida operatória",
+      "category": "Cirurgia Geral",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Deiscência de ferida operatória é separação parcial ou total das bordas de uma incisão cirúrgica. Pode envolver apenas pele/subcutâneo ou planos profundos, incluindo fáscia. Deiscência fascial com evisceração é emergência cirúrgica; deiscências superficiais estáveis podem ser manejadas com cuidado local e cicatrização por segunda intenção ou fechamento tardio.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Abertura progressiva das bordas, drenagem serossanguinolenta súbita ou visualização de planos profundos.",
+            "Sensação de 'estalo' ou abertura da ferida após tosse/esforço.",
+            "Infecção local, obesidade, diabetes, desnutrição, tabagismo e aumento da pressão intra-abdominal aumentam risco."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Definir se a deiscência é superficial ou fascial.",
+            "Se houver evisceração, cobrir vísceras com compressas estéreis umedecidas com solução salina e manter jejum.",
+            "Não tentar reintroduzir vísceras à beira-leito.",
+            "Acionar cirurgia imediatamente em deiscência fascial/evisceração."
+          ],
+          "title": "Conduta imediata"
+        },
+        {
+          "items": [
+            "Avaliar infecção, hematoma, necrose e cuidados locais, com eventual fechamento tardio ou cicatrização secundária."
+          ],
+          "title": "Primeira intervenção"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Inspeção cuidadosa da extensão e profundidade da abertura.",
+            "Avaliar sinais de infecção e perfusão da ferida.",
+            "TC pode ser útil quando há dúvida sobre integridade fascial, coleção profunda ou complicação intra-abdominal, desde que não atrase cirurgia em emergência.",
+            "Exames laboratoriais são guiados por suspeita de infecção, sangramento ou disfunção orgânica."
+          ],
+          "title": "Avaliação"
+        },
+        {
+          "items": [
+            "Inspeção por planos, hemograma/glicemia se infecção e imagem se coleção profunda, sem atrasar cirurgia em evisceração."
+          ],
+          "title": "Investigação guiada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Deiscência superficial, fáscia íntegra e paciente estável.",
+          "then": "Cuidado local, curativos e decisão entre segunda intenção, pressão negativa ou fechamento tardio."
+        },
+        {
+          "if": "Deiscência fascial sem evisceração.",
+          "then": "Avaliação cirúrgica urgente e reparo conforme contexto."
+        },
+        {
+          "if": "Evisceração.",
+          "then": "Cobertura estéril úmida + ressuscitação + sala operatória de emergência."
+        },
+        {
+          "if": "Infecção associada.",
+          "then": "Controle de foco, desbridamento quando indicado e antibiótico conforme gravidade."
+        },
+        {
+          "if": "Separação superficial de pele/subcutâneo, sem exposição fascial",
+          "then": "Avaliar infecção, hematoma, necrose e cuidados locais, com eventual fechamento tardio ou cicatrização secundária."
+        },
+        {
+          "if": "Suspeita de deiscência aponeurótica ou evisceração",
+          "then": "Cobrir alças expostas com compressa estéril úmida, jejum e cirurgia urgente; não tentar reintrodução manual de alças no leito."
+        },
+        {
+          "if": "Deiscência com pus, febre ou coleção",
+          "then": "Drenagem/desbridamento conforme profundidade, culturas se indicadas e antibiótico quando infecção sistêmica."
+        },
+        {
+          "if": "Ferida crônica sem cicatrização",
+          "then": "Avaliar nutrição, diabetes, corticosteroides, isquemia e necessidade de abordagem reconstrutiva."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Corrigir fatores precipitantes: infecção, tosse intensa, distensão, hiperglicemia e desnutrição.",
+            "Feridas superficiais podem cicatrizar por segunda intenção.",
+            "Terapia por pressão negativa pode ser útil em feridas selecionadas.",
+            "Deiscência fascial geralmente requer reexploração e fechamento cirúrgico."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Deiscência profunda é emergência cirúrgica; exame estéril e suporte hemodinâmico precedem investigação secundária.",
+            "Terapia por pressão negativa pode beneficiar ferida selecionada após desbridamento, não substitui controle de infecção."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Drenagem serossanguinolenta em grande volume pode preceder abertura fascial.",
+            "Evisceração pode ocorrer de forma súbita e exige resposta imediata.",
+            "Fechamento primário não deve ser feito sobre infecção não controlada."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar granulação, profundidade e sinais de infecção.",
+            "Otimizar nutrição, glicemia e fatores que aumentam tensão da ferida.",
+            "Planejar reconstrução/fechamento tardio quando indicado."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Avaliar integridade fascial, curativos, cicatrização e fatores de risco corrigíveis."
+          ],
+          "title": "Plano de acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Evisceração.",
+        "Deiscência fascial.",
+        "Sepse ou infecção necrosante.",
+        "Sangramento ativo significativo.",
+        "Evisceração, peritonite, fascite, sepse ou necrose progressiva."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar profundidade, integridade fascial e presença de infecção/evisceração.; Documentar método de fechamento ou manejo aberto.",
+        "items": [
+          "Registrar profundidade, integridade fascial e presença de infecção/evisceração.",
+          "Documentar método de fechamento ou manejo aberto."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://woundsinternational.com/consensus-documents/surgical-wound-dehiscence-swd-international-consensus-statement-on-assessment-diagnosis-and-management/",
+          "label": "Wounds International — Surgical Wound Dehiscence Consensus 2024"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:20:53.049776+00",
+      "image_assets": [
+        {
+          "alt": "Ferida cirúrgica com separação das bordas compatível com deiscência",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wound%20Dehiscence%20post%20inguinal%20hernia%20repair%202014-05-27%2000-46.jpg",
+          "kind": "clinical_photo",
+          "max_kb": 100,
+          "caption": "Deiscência de ferida operatória após correção de hérnia inguinal",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Wound_Dehiscence_post_inguinal_hernia_repair_2014-05-27_00-46.jpg",
+          "source_name": "Phoenix119 / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "clinical_photo"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "Foto clínica de deiscência superficial ou profunda de ferida operatória"
+    },
+    {
+      "id": 118,
+      "slug": "cirurgia-geral-nutricao-perioperatoria",
+      "title": "Nutrição perioperatória",
+      "category": "Cirurgia Geral",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Nutrição perioperatória adequada reduz complicações, perda muscular e tempo de internação. A estratégia deve identificar risco nutricional precocemente, evitar jejum prolongado, priorizar via oral/enteral e oferecer suporte nutricional pré-operatório em pacientes desnutridos quando a cirurgia puder ser adiada com segurança.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Perda ponderal involuntária, IMC baixo, baixa ingestão recente ou doença inflamatória/catabólica.",
+            "Câncer gastrointestinal, idosos frágeis e cirurgias de grande porte apresentam risco maior.",
+            "Avaliar risco nutricional com ferramenta validada quando disponível."
+          ],
+          "title": "Quem está em risco"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Evitar jejum prolongado desnecessário.",
+            "Permitir líquidos claros até poucas horas antes da anestesia conforme protocolo institucional.",
+            "Retomar alimentação oral precocemente após cirurgia quando segura.",
+            "Usar suplementos orais ou enterais se ingestão habitual for insuficiente."
+          ],
+          "title": "Princípios"
+        },
+        {
+          "items": [
+            "Aplicar triagem nutricional e avaliar sarcopenia/fraqueza; otimização nutricional pré-operatória quando viável."
+          ],
+          "title": "Primeira intervenção"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Albumina isolada não deve ser usada como marcador único de desnutrição, pois sofre influência inflamatória.",
+            "Avaliar peso, ingestão, perda ponderal, força/funcionalidade e contexto clínico.",
+            "Eletrólitos devem ser monitorados em pacientes de alto risco para síndrome de realimentação."
+          ],
+          "title": "Avaliação"
+        },
+        {
+          "items": [
+            "Triagem nutricional, perda de peso, massa muscular, ingestão, função GI, eletrólitos incluindo fósforo/magnésio e glicose."
+          ],
+          "title": "Investigação guiada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Baixo risco nutricional e trato gastrointestinal funcionante.",
+          "then": "Alimentação oral precoce e progressão conforme tolerância."
+        },
+        {
+          "if": "Desnutrição grave e cirurgia eletiva pode ser adiada com segurança.",
+          "then": "Considerar 7–14 dias de suporte nutricional antes do procedimento."
+        },
+        {
+          "if": "Via oral insuficiente, mas trato gastrointestinal funcionante.",
+          "then": "Preferir nutrição enteral."
+        },
+        {
+          "if": "Via enteral é impossível ou insuficiente por período relevante.",
+          "then": "Considerar nutrição parenteral conforme indicação individual."
+        },
+        {
+          "if": "Cirurgia eletiva de grande porte e risco de desnutrição",
+          "then": "Aplicar triagem nutricional e avaliar sarcopenia/fraqueza; otimização nutricional pré-operatória quando viável."
+        },
+        {
+          "if": "Paciente consegue comer por via oral/enteral",
+          "then": "Preferir via oral e nutrição enteral; evitar jejum excessivo e reiniciar ingestão precoce após cirurgia conforme segurança."
+        },
+        {
+          "if": "Risco nutricional ou ingesta insuficiente no pós-operatório",
+          "then": "Suplementação oral/enteral com meta individual de energia e proteína; considerar nutrição parenteral se via enteral inviável/insuficiente."
+        },
+        {
+          "if": "Obstrução intestinal ou fístula de alto débito sem acesso intestinal viável",
+          "then": "Equipe de terapia nutricional para nutrição parenteral e prevenção de complicações cateter/metabólicas."
+        },
+        {
+          "if": "Cirurgia de alto risco com fragilidade/sarcopenia",
+          "then": "Considerar preabilitação e seguimento funcional além de suporte calórico."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Via oral é preferida sempre que possível.",
+            "Nutrição enteral é preferível à parenteral quando o intestino funciona.",
+            "Imunonutrição pode ser considerada em algumas cirurgias oncológicas gastrointestinais conforme protocolo local.",
+            "Proteína adequada é essencial para preservar massa magra e cicatrização."
+          ],
+          "title": "Suporte nutricional"
+        },
+        {
+          "items": [
+            "ESPEN 2025 favorece ingestão oral precoce e prevenção de subnutrição, com metas individualizadas.",
+            "Evitar jejum prolongado e monitorar síndrome de realimentação em pacientes gravemente desnutridos."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Risco de síndrome de realimentação exige introdução cautelosa e correção de fósforo, potássio e magnésio.",
+            "Obesidade não exclui sarcopenia ou desnutrição.",
+            "Jejum prolongado e excesso de fluidos podem piorar recuperação."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar ingestão e tolerância gastrointestinal.",
+            "Escalonar suporte se consumo oral permanecer inadequado.",
+            "Acompanhar peso, força, cicatrização e complicações."
+          ],
+          "title": "Pós-operatório"
+        },
+        {
+          "items": [
+            "Monitorar tolerância, aporte, complicações infecciosas e evolução funcional/nutricional."
+          ],
+          "title": "Plano de acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Perda ponderal rápida ou ingestão mínima prolongada.",
+        "Distúrbios eletrolíticos importantes na realimentação.",
+        "Íleo prolongado ou intolerância enteral persistente.",
+        "Incapacidade alimentar prolongada, desnutrição grave, síndrome de realimentação ou fístula de alto débito."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar triagem nutricional, estratégia escolhida e metas de ingestão.; Documentar risco de síndrome de realimentação quando presente.",
+        "items": [
+          "Registrar triagem nutricional, estratégia escolhida e metas de ingestão.",
+          "Documentar risco de síndrome de realimentação quando presente."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_in_surgery.pdf",
+          "label": "ESPEN Practical Guideline — Clinical Nutrition in Surgery"
+        },
+        {
+          "url": "https://doi.org/10.1016/j.clnu.2025.08.029",
+          "label": "ESPEN — Nutrição em cirurgia: atualização 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:20:53.049776+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 119,
+      "slug": "cirurgia-geral-queimaduras",
+      "title": "Queimaduras",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Queimaduras exigem avaliação sistemática da via aérea, extensão, profundidade e mecanismo. A prioridade é interromper a agressão, estabilizar ABC, estimar superfície corporal queimada, iniciar reposição volêmica quando indicada e identificar necessidade de transferência para centro de queimados.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Determinar agente, tempo de exposição, ambiente fechado e presença de trauma associado.",
+            "Estimar profundidade: superficial, espessura parcial ou total.",
+            "Calcular superfície corporal queimada, usando regra dos 9 ou Lund-Browder em crianças.",
+            "Suspeitar de lesão inalatória em incêndio em ambiente fechado, fuligem, rouquidão ou queimadura facial."
+          ],
+          "title": "Avaliação inicial"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Remover roupas/adornos e interromper processo de queimadura.",
+            "Resfriar com água corrente fresca, evitando gelo direto e hipotermia.",
+            "ABC com intubação precoce se houver edema progressivo de via aérea.",
+            "Analgesia adequada e cobertura limpa da área queimada."
+          ],
+          "title": "Conduta imediata"
+        },
+        {
+          "items": [
+            "Interromper exposição, resfriar área com água corrente fresca por ~20 min quando apropriado, remover adornos e prevenir hipotermia."
+          ],
+          "title": "Primeira intervenção"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Gasometria e carboxihemoglobina se houver suspeita de inalação de fumaça.",
+            "Eletrólitos, função renal e hemograma em queimaduras moderadas/graves.",
+            "ECG e monitorização em queimaduras elétricas.",
+            "Broncoscopia pode ser usada em suspeita de lesão inalatória significativa."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Estimar extensão por Lund-Browder/regra dos nove, profundidade, perfusão distal; carboxiemoglobina/lactato quando inalação."
+          ],
+          "title": "Investigação guiada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Queimadura extensa com necessidade de reposição.",
+          "then": "Iniciar cristalóide guiado por peso e %SCQ, ajustando por diurese e resposta clínica."
+        },
+        {
+          "if": "Suspeita de lesão de via aérea.",
+          "then": "Considerar intubação precoce antes de edema progressivo."
+        },
+        {
+          "if": "Queimadura circunferencial com comprometimento vascular/ventilatório.",
+          "then": "Avaliar escarotomia urgente."
+        },
+        {
+          "if": "Critérios para centro de queimados.",
+          "then": "Transferir após estabilização inicial."
+        },
+        {
+          "if": "Queimadura térmica ou química aguda",
+          "then": "Interromper exposição, resfriar área com água corrente fresca por ~20 min quando apropriado, remover adornos e prevenir hipotermia."
+        },
+        {
+          "if": "Suspeita de lesão inalatória, fuligem/estridor ou queimadura em espaço fechado",
+          "then": "ABCDE, O₂ se indicado e avaliação de via aérea precoce por equipe experiente."
+        },
+        {
+          "if": "Adulto com ≥20% da superfície corporal queimada (SCQ) de 2º/3º graus",
+          "then": "Ressuscitação IV baseada na extensão/peso, iniciando referência ABA 2 mL/kg/%SCQ nas primeiras 24h, titulando diurese/perfusão."
+        },
+        {
+          "if": "Queimadura profunda/circunferencial, elétrica, química ou em mãos/face/genitais/articulações",
+          "then": "Encaminhar centro de queimados e avaliar escarotomia em comprometimento circulatório/ventilatório."
+        },
+        {
+          "if": "Queimadura pequena sem critério de gravidade",
+          "then": "Limpeza, analgesia, cobertura não aderente e avaliação de tétano, acompanhamento da cicatrização."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Fórmulas de reposição são ponto de partida, não meta fixa; titular pela resposta.",
+            "Manter normotermia.",
+            "Atualizar profilaxia antitetânica conforme necessidade.",
+            "Antibiótico sistêmico profilático não é indicado rotineiramente em queimaduras não infectadas.",
+            "Curativos e agentes tópicos dependem de profundidade/localização."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Não usar antibiótico sistêmico profilático para toda queimadura; tratar infecção documentada/suspeita específica.",
+            "Área de eritema isolado de primeiro grau não entra no cálculo de SCQ; ajustar fluidos pela resposta, evitando fluid creep."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Queimaduras elétricas podem causar rabdomiólise e arritmia com pouca lesão cutânea.",
+            "Queimaduras químicas exigem descontaminação prolongada e remoção de material seco antes da irrigação quando apropriado.",
+            "Crianças têm maior risco de hipotermia e erros na estimativa de área."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar profundidade e perfusão nas primeiras 24–48 h.",
+            "Monitorar diurese, eletrólitos e sinais de síndrome compartimental.",
+            "Planejar enxertia/reconstrução em queimaduras profundas."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar dor, hidratação, sinais de infecção, cicatrização e necessidade de reabilitação/reconstrução."
+          ],
+          "title": "Plano de acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Comprometimento de via aérea.",
+        "Choque ou queimadura extensa.",
+        "Queimadura elétrica de alta voltagem.",
+        "Queimadura circunferencial com isquemia.",
+        "Suspeita de lesão inalatória significativa.",
+        "Estridor, carboxiemoglobina elevada, isquemia distal, choque ou queimadura extensa."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar mecanismo, profundidade, %SCQ e presença de lesão inalatória.; Documentar volume de reposição e resposta por diurese/perfusão.",
+        "items": [
+          "Registrar mecanismo, profundidade, %SCQ e presença de lesão inalatória.",
+          "Documentar volume de reposição e resposta por diurese/perfusão."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://ameriburn.org/resources/burnreferral/",
+          "label": "American Burn Association — Burn Patient Referral Guidelines"
+        },
+        {
+          "url": "https://academic.oup.com/jbcr/article/45/3/565/7458089",
+          "label": "ABA — Ressuscitação hídrica em queimados, 2023/2024"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "clinical_photo"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "Fotos de profundidade de queimaduras quando didáticas"
+    },
+    {
+      "id": 120,
+      "slug": "cirurgia-geral-trauma-abdominal",
+      "title": "Trauma abdominal",
+      "category": "Cirurgia Geral",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Trauma abdominal exige priorização pelo estado fisiológico. E-FAST é ferramenta rápida à beira-leito; em pacientes hemodinamicamente compensados, TC com contraste é central para definir lesões. Instabilidade com FAST positivo ou peritonite pode indicar laparotomia imediata.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Identificar mecanismo, energia, trauma contuso versus penetrante, uso de cinto, evisceração ou ferida com possível violação peritoneal.",
+            "Inspecionar distensão, equimoses, abrasões, feridas, sinal do cinto e dor localizada/difusa; exame inicial pode ser pouco sensível.",
+            "Lesão de víscera oca/mesentério deve ser lembrada mesmo com FAST negativo."
+          ],
+          "title": "Avaliação inicial"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Seguir avaliação primária do trauma com controle imediato de hemorragia e ressuscitação hemostática conforme necessidade.",
+            "Realizar E-FAST precocemente sem atrasar intervenção que já esteja indicada clinicamente.",
+            "Manter reavaliação seriada; deterioração clínica durante investigação exige mudança imediata de estratégia."
+          ],
+          "title": "Abordagem"
+        },
+        {
+          "items": [
+            "Controle hemorrágico por laparotomia/estratégia de trauma, sem atrasar por TC."
+          ],
+          "title": "Ação clínica prioritária"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "E-FAST detecta líquido livre, hemotórax/pneumotórax e tamponamento, mas não exclui lesão abdominal quando negativo.",
+            "Paciente estável/compensado: TC contrastada de abdome/pelve para avaliação de órgãos sólidos, mesentério, intestino, retroperitônio e sangramento ativo.",
+            "Hemograma, gasometria/lactato, eletrólitos, função renal, coagulação e tipagem conforme gravidade; tendências são mais úteis que valores isolados.",
+            "Achados equívocos de lesão intestinal podem exigir observação, exame físico seriado e, em casos selecionados, repetição de TC."
+          ],
+          "title": "Imagem e laboratório"
+        },
+        {
+          "items": [
+            "eFAST, hemograma seriado, lactato, tipagem e TC IV em estáveis; não retardar centro cirúrgico por exames em choque."
+          ],
+          "title": "Investigação orientada"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade hemodinâmica com FAST positivo ou peritonite franca.",
+          "then": "Controle de hemorragia/contaminação com laparotomia urgente conforme protocolo de trauma."
+        },
+        {
+          "if": "Paciente compensado sem indicação imediata de cirurgia.",
+          "then": "TC contrastada e manejo dirigido à lesão; considerar tratamento não operatório de órgãos sólidos em centro com monitorização e capacidade de intervenção."
+        },
+        {
+          "if": "Mecanismo de alto risco ou sinal do cinto com achados inespecíficos na TC.",
+          "then": "Admitir para observação e exames seriados; repetir TC se sinais clínicos evoluírem ou persistir dúvida relevante."
+        },
+        {
+          "if": "Trauma abdominal com choque e eFAST positivo",
+          "then": "Controle hemorrágico por laparotomia/estratégia de trauma, sem atrasar por TC."
+        },
+        {
+          "if": "Estável com suspeita de lesão visceral",
+          "then": "TC abdominopélvica com contraste IV para classificar e escolher tratamento."
+        },
+        {
+          "if": "Lesão sólida sem sangramento ativo e com estabilidade",
+          "then": "Manejo não operatório sob monitorização e acesso imediato a cirurgia/intervenção."
+        },
+        {
+          "if": "Sinais peritoneais, pneumoperitônio ou lesão de víscera oca",
+          "then": "Exploração cirúrgica e antibiótico conforme contaminação."
+        },
+        {
+          "if": "Extravasamento arterial em lesão de órgão sólido e paciente apto",
+          "then": "Consultar radiologia intervencionista para embolização, conforme anatomia e recursos."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Manejo depende da fisiologia e do órgão lesionado: ressuscitação, cirurgia, angioembolização ou tratamento não operatório.",
+            "Evitar atrasos em paciente que está deteriorando; exame de imagem não deve postergar controle de hemorragia em instável.",
+            "Antibiótico está indicado em lesão de víscera oca/perfuração e conforme protocolo em trauma penetrante ou cirurgia."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Exame abdominal inicial pode ser pouco sensível; repetir avaliação e hemoglobina sem substituir decisão por estabilidade clínica.",
+            "No trauma penetrante, avaliar trajeto e peritonite; conduta não operatória exige seleção estrita e vigilância."
+          ],
+          "title": "Tratamento e limites de segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "FAST negativo não exclui lesão de víscera oca, mesentério ou retroperitônio.",
+            "Paciente intoxicado, sedado, com TCE ou lesão medular pode ter exame abdominal não confiável.",
+            "Trauma penetrante em paciente estável pode permitir abordagem seletiva em centros experientes, mas sinais duros exigem exploração."
+          ],
+          "title": "Armadilhas"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Documentar exame abdominal seriado, sinais vitais, hemoglobina/lactato e tolerância clínica.",
+            "Em tratamento não operatório, manter capacidade de cirurgia/intervenção de resgate 24 h."
+          ],
+          "title": "Observação"
+        },
+        {
+          "items": [
+            "Reavaliar dor, FC, PA, hemoglobina e sinais de sangramento tardio; orientar retorno por piora."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade persistente, necessidade transfusional crescente ou choque.",
+        "Peritonite, evisceração, conteúdo entérico na ferida ou sangramento gastrointestinal franco no contexto de trauma penetrante.",
+        "TC com extravasamento, lesão intestinal evidente, grande hemoperitônio ou achados de isquemia/perfuração.",
+        "Instabilidade com eFAST+, peritonite, queda rápida de Hb ou extravasamento ativo."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar mecanismo, resposta à ressuscitação, E-FAST, achados de TC e decisão de manejo.; Documentar horários de deterioração e de acionamento do centro cirúrgico/hemodinâmica.",
+        "items": [
+          "Registrar mecanismo, resposta à ressuscitação, E-FAST, achados de TC e decisão de manejo.",
+          "Documentar horários de deterioração e de acionamento do centro cirúrgico/hemodinâmica."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://link.springer.com/article/10.1186/S13017-022-00418-Y",
+          "label": "WSES guidelines on blunt and penetrating bowel injury, 2022"
+        },
+        {
+          "url": "https://www.wses.org.uk/scientific-resources/guidelines",
+          "label": "WSES guidelines portal"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ultrassom FAST positivo com líquido livre no espaço hepatorrenal de Morrison",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ultrasound%20Scan%20ND%200110145312%201505060.png",
+          "kind": "ultrasound",
+          "max_kb": 120,
+          "caption": "FAST positivo — líquido livre no espaço de Morrison",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_0110145312_1505060.png",
+          "source_name": "Nevit Dilmen / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound",
+        "ct"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "eFAST/TC em trauma abdominal"
+    }
+  ]
+}
