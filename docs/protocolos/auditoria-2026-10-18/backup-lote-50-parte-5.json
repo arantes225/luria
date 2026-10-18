@@ -1,0 +1,765 @@
+{
+  "date": "2026-10-18",
+  "reason": "backup of additional five protocols in batch 50",
+  "records": [
+    {
+      "id": 183,
+      "slug": "ginecologia-e-obstetricia-inducao-do-parto",
+      "title": "Indução do parto",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Indução do parto é início artificial do trabalho de parto antes do início espontâneo, quando os benefícios de terminar a gestação superam os riscos de continuar. A escolha do método depende da indicação, idade gestacional, condição fetal e favorabilidade cervical avaliada pelo escore de Bishop.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Gestação prolongada, ruptura de membranas, hipertensão/pré-eclâmpsia, diabetes ou outras condições maternas/fetais selecionadas.",
+            "Indução eletiva em 39 semanas pode ser considerada em gestantes de baixo risco selecionadas.",
+            "Confirmar ausência de contraindicação ao parto vaginal antes de iniciar."
+          ],
+          "title": "Indicações frequentes"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Confirmar indicação, apresentação fetal, idade gestacional e bem-estar fetal.",
+            "Avaliar colo pelo escore de Bishop.",
+            "Revisar cesariana/cirurgia uterina prévia e contraindicações a prostaglandinas.",
+            "Garantir capacidade de monitorização fetal e resposta a taquissistolia."
+          ],
+          "title": "Antes da indução"
+        },
+        {
+          "items": [
+            "Confirmar idade gestacional, apresentação, placenta, FCF, Bishop e contraindicações ao parto vaginal."
+          ],
+          "title": "Conduta inicial direcionada"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Cardiotocografia basal antes de métodos farmacológicos e conforme risco durante o processo.",
+            "Avaliar contrações e frequência cardíaca fetal durante ocitocina e prostaglandinas.",
+            "Ultrassom é usado quando houver dúvida de apresentação ou condição obstétrica específica."
+          ],
+          "title": "Monitorização"
+        },
+        {
+          "items": [
+            "Bishop, estado de membranas, vitalidade e apresentação fetal, riscos da via vaginal."
+          ],
+          "title": "Avaliação complementar"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Colo desfavorável, Bishop baixo.",
+          "then": "Realizar amadurecimento cervical com método farmacológico ou mecânico conforme perfil."
+        },
+        {
+          "if": "Colo favorável.",
+          "then": "Amniotomia e/ou ocitocina podem ser utilizadas."
+        },
+        {
+          "if": "Taquissistolia com alteração fetal.",
+          "then": "Suspender ocitocina/prostaglandina removível e instituir medidas de ressuscitação intrauterina."
+        },
+        {
+          "if": "Falha de indução, mãe e feto estáveis.",
+          "then": "Evitar diagnóstico precoce; permitir tempo adequado de fase latente e exposição à ocitocina após ruptura de membranas."
+        },
+        {
+          "if": "Indicação formal para indução com mãe/feto estáveis",
+          "then": "Confirmar idade gestacional, apresentação, placenta, FCF, Bishop e contraindicações ao parto vaginal."
+        },
+        {
+          "if": "Colo desfavorável, sem cicatriz uterina importante",
+          "then": "Amadurecimento com método mecânico ou farmacológico conforme perfil e monitorização."
+        },
+        {
+          "if": "Cesárea prévia com cicatriz uterina",
+          "then": "Evitar misoprostol na indução a termo; avaliar opções e risco de ruptura com equipe."
+        },
+        {
+          "if": "Taquissistolia/FCF não tranquilizadora",
+          "then": "Suspender uterotônico, medidas de ressuscitação intrauterina e reavaliar resolução se persistência."
+        },
+        {
+          "if": "Indução prolongada sem progressão",
+          "then": "Verificar tempo de fase latente e critérios de falha antes de cesariana, se não houver urgência."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Prostaglandinas ou balão cervical são opções para amadurecimento cervical.",
+            "Ocitocina pode ser usada em esquemas de baixa ou alta dose conforme protocolo institucional.",
+            "Amniotomia pode reduzir duração do trabalho de parto quando apropriada.",
+            "Misoprostol deve ser evitado em gestantes com cicatriz uterina de cesariana quando usado para indução a termo, pelo risco de ruptura."
+          ],
+          "title": "Métodos"
+        },
+        {
+          "items": [
+            "Ocitocina requer titulação com bomba, monitorização fetal e registro de dose/concentração.",
+            "Placenta prévia, posição transversa persistente e cicatriz uterina de alto risco contraindicam tentativa vaginal conforme contexto."
+          ],
+          "title": "Aprimoramento do tratamento"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Bishop <6 geralmente indica colo desfavorável.",
+            "Taquissistolia uterina pode causar alterações na frequência cardíaca fetal.",
+            "Indução não significa cesárea automática; tempo adequado deve ser permitido antes de declarar falha, se condições forem tranquilizadoras."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar progressão cervical, padrão de contrações e traçado fetal.",
+            "Documentar doses cumulativas de ocitocina/prostaglandina e eventos adversos.",
+            "Reavaliar indicação de cesariana se houver falha verdadeira ou comprometimento materno-fetal."
+          ],
+          "title": "Acompanhamento"
+        },
+        {
+          "items": [
+            "Registrar consentimento, justificativa, intervenções e eventos de taquissistolia."
+          ],
+          "title": "Seguimento orientado"
+        }
+      ],
+      "red_flags": [
+        "Taquissistolia com desacelerações persistentes.",
+        "Suspeita de ruptura uterina.",
+        "Sangramento importante ou prolapso de cordão após amniotomia.",
+        "Traçado fetal persistentemente patológico.",
+        "Sangramento, sofrimento fetal, taquissistolia ou suspeita de ruptura uterina."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar Bishop inicial, método escolhido, doses e resposta.; Documentar motivo de interrupção ou mudança de estratégia.",
+        "items": [
+          "Registrar Bishop inicial, método escolhido, doses e resposta.",
+          "Documentar motivo de interrupção ou mudança de estratégia."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/womens-health/faqs/labor-induction",
+          "label": "ACOG — Labor Induction"
+        },
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+          "label": "ACOG — First and Second Stage Labor Management"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "misoprostol",
+        "ocitocina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:23:41.160392+00",
+      "image_assets": [
+        {
+          "alt": "Monitorização cardiotocográfica fetal durante trabalho de parto",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fetal%20heart%20rate%20monitoring.jpg",
+          "kind": "ctg",
+          "max_kb": 120,
+          "caption": "Cardiotocografia — monitorização fetal durante indução do parto",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Fetal_heart_rate_monitoring.jpg",
+          "source_name": "Jmarchn / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": false,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ctg"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "Traçados de cardiotocografia durante indução"
+    },
+    {
+      "id": 184,
+      "slug": "ginecologia-e-obstetricia-assistencia-ao-parto-normal",
+      "title": "Assistência ao parto normal",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Assistência ao parto normal deve favorecer evolução fisiológica, suporte contínuo, monitorização materno-fetal adequada e intervenções apenas quando indicadas.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Contrações regulares associadas a mudança cervical.",
+            "Avaliar apresentação fetal, dilatação, bolsa, sinais vitais e bem-estar fetal."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Oferecer acompanhante e medidas de conforto.",
+            "Permitir mobilidade e posições livres quando seguras.",
+            "Evitar diagnóstico precoce indevido de falha de progressão."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Acolhimento, consentimento, avaliação materno-fetal, monitorização apropriada e suporte contínuo com acompanhante."
+          ],
+          "title": "Primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ausculta fetal intermitente ou monitorização contínua conforme risco.",
+            "Exames vaginais com intervalo suficiente e técnica asséptica."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Confirmar idade gestacional, apresentação, FCF, sinais vitais, condições de membranas e risco intraparto."
+          ],
+          "title": "Investigação adicional"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo obstétrico imediatamente."
+        },
+        {
+          "if": "Gestante em trabalho de parto espontâneo de baixo risco",
+          "then": "Acolhimento, consentimento, avaliação materno-fetal, monitorização apropriada e suporte contínuo com acompanhante."
+        },
+        {
+          "if": "Progressão do trabalho de parto sem comprometimento",
+          "then": "Favorecer mobilidade, posições confortáveis e analgesia conforme escolha; não diagnosticar distocia apenas por ritmo rígido de dilatação."
+        },
+        {
+          "if": "FCF alterada, sangramento, febre, taquissistolia ou parada de progresso com critérios",
+          "then": "Reavaliar dinâmica, condições fetais e necessidade de intervenção/encaminhamento."
+        },
+        {
+          "if": "Nascimento sem complicações",
+          "then": "Contato pele a pele, clampeamento oportuno do cordão quando possível, estímulo à amamentação e uterotônico para prevenção de hemorragia pós-parto."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Analgesia conforme desejo e disponibilidade.",
+            "Amniotomia/ocitocina apenas quando indicação clara.",
+            "Evitar episiotomia rotineira e realizar manejo ativo do terceiro período."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Evitar episiotomia de rotina, manobras de pressão fúndica, amniotomia e ocitocina sem indicação.",
+            "Documentar partograma/registros de progressão e obter consentimento para intervenções obstétricas."
+          ],
+          "title": "Conduta e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade gestacional e condição materno-fetal."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e organizar seguimento apropriado."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Monitorar sangramento, tônus uterino, PA e bem-estar materno/neonatal após parto e orientar sinais do puerpério."
+          ],
+          "title": "Plano de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal.",
+        "FCF persistentemente anormal, sangramento grave, prolapso de cordão ou sinais de sepse."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+          "label": "ACOG — First and Second Stage Labor Management"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/diretrizes/",
+          "label": "FEBRASGO — Diretriz Nacional de Assistência ao Parto Normal"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ocitocina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 185,
+      "slug": "ginecologia-e-obstetricia-operacao-cesariana",
+      "title": "Operação cesariana",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Cesariana é procedimento cirúrgico para parto quando os riscos do parto vaginal superam os da cirurgia ou quando há indicação materna/fetal específica.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Indicações incluem sofrimento fetal persistente, placenta prévia, apresentação transversa e falha de progressão verdadeira.",
+            "Revisar urgência e condições materno-fetais."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Consentimento, antibiótico profilático e preparação anestésica.",
+            "Avaliar hemorragia e risco tromboembólico.",
+            "Confirmar indicação e segurança cirúrgica."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Revisar indicação documentada, riscos/benefícios, consentimento, anestesia e preparação hemoterápica quando pertinente."
+          ],
+          "title": "Primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma e tipagem conforme risco.",
+            "Monitorização fetal até o procedimento em urgências obstétricas."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Hemograma e tipagem/reserva conforme risco, avaliação anestésica, apresentação/placenta, status infeccioso e indicação documentada."
+          ],
+          "title": "Investigação adicional"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo obstétrico imediatamente."
+        },
+        {
+          "if": "Indicação materna ou fetal para cesárea não emergencial",
+          "then": "Revisar indicação documentada, riscos/benefícios, consentimento, anestesia e preparação hemoterápica quando pertinente."
+        },
+        {
+          "if": "Emergência obstétrica com comprometimento materno-fetal",
+          "then": "Acionar equipe cirúrgica/anestésica/neonatal e estabilizar simultaneamente ao preparo operatório."
+        },
+        {
+          "if": "Procedimento programado sem intercorrências",
+          "then": "Aplicar profilaxia antibiótica pré-incisão conforme protocolo, técnica segura e prevenção de tromboembolismo baseada em risco."
+        },
+        {
+          "if": "Hemorragia ou suspeita de acretismo no intraoperatório",
+          "then": "Ativar protocolo de hemorragia, hemoterapia e controle cirúrgico por equipe experiente."
+        },
+        {
+          "if": "Pós-operatório estável",
+          "then": "Mobilização precoce, analgesia multimodal compatível com lactação, prevenção de infecção e apoio à amamentação."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Antibiótico pré-incisão.",
+            "Uterotônico profilático após nascimento.",
+            "Profilaxia de TEV conforme risco e mobilização precoce."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Cefazolina ou alternativa conforme alergia/resistência para profilaxia, idealmente antes da incisão, ajustada ao protocolo do serviço.",
+            "Evitar antibioticoterapia prolongada sem infecção estabelecida; seguir checklist cirúrgico, prevenção de tromboembolismo e cuidados com ferida."
+          ],
+          "title": "Conduta e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade gestacional e condição materno-fetal."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e organizar seguimento apropriado."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Orientar sinais de infecção da ferida, hemorragia, tromboembolismo, dor e retorno puerperal."
+          ],
+          "title": "Plano de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal.",
+        "Hemorragia/choque, falta de oxigenação, tromboembolismo, febre e sinais de deiscência."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/obstetric-care-consensus/articles/2014/03/safe-prevention-of-the-primary-cesarean-delivery",
+          "label": "ACOG — Safe Prevention of the Primary Cesarean Delivery"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "cefazolina",
+        "ocitocina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 190,
+      "slug": "ginecologia-e-obstetricia-mastite-puerperal",
+      "title": "Mastite puerperal",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Mastite puerperal é inflamação mamária associada à lactação, podendo evoluir para infecção bacteriana ou abscesso. Manter drenagem fisiológica da mama é parte do tratamento.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor focal, eritema, edema e sintomas sistêmicos.",
+            "Massa persistente ou flutuação sugere abscesso."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Manter amamentação conforme tolerância e corrigir pega.",
+            "Analgesia, gelo e suporte."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Diferenciar ingurgitamento/inflamação de mastite bacteriana; manter amamentação fisiológica sem esvaziamento agressivo."
+          ],
+          "title": "Primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ultrassom se suspeita de abscesso.",
+            "Cultura em recorrência, doença grave ou falha terapêutica."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Diagnóstico clínico; ultrassonografia se abscesso, massa persistente ou falha. Cultura de leite em casos selecionados/recorrentes."
+          ],
+          "title": "Investigação adicional"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo imediatamente."
+        },
+        {
+          "if": "Dor mamária, edema e hiperemia com sinais locais leves",
+          "then": "Diferenciar ingurgitamento/inflamação de mastite bacteriana; manter amamentação fisiológica sem esvaziamento agressivo."
+        },
+        {
+          "if": "Febre e sintomas sistêmicos ou piora persistente sugerindo mastite bacteriana",
+          "then": "Avaliar antibiótico adequado a estafilococos conforme quadro/alergias e epidemiologia local."
+        },
+        {
+          "if": "Massa flutuante ou persistente e dor focal importante",
+          "then": "Ultrassom mamário para abscesso; drenagem guiada ou cirúrgica conforme avaliação, mais tratamento de infecção."
+        },
+        {
+          "if": "Piora sistêmica, imunossupressão ou falha após 24–48h de tratamento",
+          "then": "Reavaliar abscesso, resistência e diagnósticos diferenciais com urgência."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Antibiótico antiestafilocócico quando mastite bacteriana é provável.",
+            "Drenar abscesso quando presente.",
+            "Evitar massagem profunda agressiva."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Usar medidas anti-inflamatórias, compressas frias e analgesia compatível com amamentação; evitar massagens profundas e ordenha excessiva.",
+            "A continuidade da amamentação geralmente é segura e desejável, individualizando em situações específicas."
+          ],
+          "title": "Conduta e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar conforme puerpério, amamentação, comorbidades e preferência da paciente."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e garantir seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar dor, temperatura e transferência de leite, oferecendo apoio à pega/lactação."
+          ],
+          "title": "Plano de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade, sepse, abscesso ou sangramento importante.",
+        "Abscesso, necrose cutânea, sepse ou febre persistente apesar de manejo."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.bfmed.org/assets/ABM%20Protocol%20%2336.pdf",
+          "label": "Academy of Breastfeeding Medicine — Clinical Protocol nº 36: The Mastitis Spectrum"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 191,
+      "slug": "ginecologia-e-obstetricia-contracepcao-no-puerperio",
+      "title": "Contracepção no puerpério",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Contracepção no puerpério deve considerar desejo reprodutivo, amamentação, risco trombótico e acesso. Métodos de longa duração podem ser iniciados imediatamente após o parto em muitos cenários.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Avaliar intenção contraceptiva ainda no pré-natal e antes da alta.",
+            "Revisar risco de TEV e amamentação."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Oferecer LARC, progestagênicos e métodos de barreira conforme preferência.",
+            "DIU pós-placentário e implante imediato são opções eficazes."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Avaliar aleitamento, dias/semanas pós-parto, fatores de trombose, condições uterinas, preferências e elegibilidade médica."
+          ],
+          "title": "Primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Excluir contraindicações específicas do método; exames extensos não são necessários de rotina."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Anamnese de risco trombótico, pressão, status de amamentação, exame ginecológico apenas se indicado ao método."
+          ],
+          "title": "Investigação adicional"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo imediatamente."
+        },
+        {
+          "if": "Puérpera deseja contracepção antes da alta",
+          "then": "Avaliar aleitamento, dias/semanas pós-parto, fatores de trombose, condições uterinas, preferências e elegibilidade médica."
+        },
+        {
+          "if": "Deseja dispositivo intrauterino logo após parto",
+          "then": "Considerar inserção imediata pós-placentária por equipe treinada quando elegível; explicar maior risco de expulsão e seguimento."
+        },
+        {
+          "if": "Amamenta e está nas primeiras 6 semanas",
+          "then": "Preferir métodos sem estrogênio adequados; evitar anticoncepcionais combinados com estrogênio nesse período."
+        },
+        {
+          "if": "Não amamenta, pós-parto recente com risco de tromboembolismo",
+          "then": "Respeitar restrições temporais para contraceptivos combinados e discutir opções progestagênicas/LARC."
+        },
+        {
+          "if": "Sepse puerperal ou infecção uterina ativa",
+          "then": "Não inserir DIU até controle da infecção e avaliação de elegibilidade."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Evitar estrogênio combinado nas primeiras semanas pós-parto pelo risco trombótico.",
+            "Progestagênicos e LARC são geralmente compatíveis com lactação."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Contraceptivos só de progestagênio e implantes possuem critérios por idade pós-parto; aplicar MEC/SPR OMS 2025 e protocolo local.",
+            "A amenorreia lactacional só protege quando há amamentação exclusiva/quase exclusiva, amenorreia e bebê <6 meses; ofertar método adicional."
+          ],
+          "title": "Conduta e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar conforme puerpério, amamentação, comorbidades e preferência da paciente."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e garantir seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Confirmar escolha antes da alta e programar seguimento por efeitos adversos/expulsão do DIU."
+          ],
+          "title": "Plano de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade, sepse, abscesso ou sangramento importante.",
+        "Suspeita de trombose, febre/septicemia ou sangramento inexplicado antes da colocação de DIU."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.cdc.gov/contraception/hcp/usmec/",
+          "label": "CDC — U.S. Medical Eligibility Criteria for Contraceptive Use"
+        },
+        {
+          "url": "https://www.who.int/publications/b/81080",
+          "label": "OMS — Selected practice recommendations, 4ª edição (2025)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "acetato de medroxiprogesterona",
+        "levonorgestrel"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    }
+  ]
+}
