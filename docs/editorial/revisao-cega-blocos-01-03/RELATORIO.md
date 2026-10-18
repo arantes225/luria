@@ -29,12 +29,12 @@ Total: 69.
 | 021 | valvopatias | aprovado-na-triagem | nenhum na triagem |
 | 022 | choque-hemorragico | aprovado-na-triagem | nenhum na triagem |
 | 023 | sepse-neonatal | aprovado-na-triagem | nenhum na triagem |
-| 024 | sindromes-hipertensivas-da-gestacao | revisar | HTML abaixo de 60 mil caracteres (16975) |
+| 024 | sindromes-hipertensivas-da-gestacao | aprovado-na-triagem | nenhum na triagem |
 | 025 | estrategia-saude-da-familia | aprovado-na-triagem | nenhum na triagem |
 | 026 | endocardite-infecciosa | aprovado-na-triagem | nenhum na triagem |
 | 027 | nutricao-no-paciente-cirurgico | aprovado-na-triagem | nenhum na triagem |
 | 028 | aleitamento-materno | aprovado-na-triagem | nenhum na triagem |
-| 029 | diabetes-mellitus-gestacional | revisar | HTML abaixo de 60 mil caracteres (10717) |
+| 029 | diabetes-mellitus-gestacional | aprovado-na-triagem | nenhum na triagem |
 | 030 | politica-nacional-de-atencao-basica | aprovado-na-triagem | nenhum na triagem |
 | 031 | pericardite-e-tamponamento-cardiaco | aprovado-na-triagem | nenhum na triagem |
 | 032 | cicatrizacao-de-feridas | aprovado-na-triagem | nenhum na triagem |
@@ -44,7 +44,7 @@ Total: 69.
 | 036 | tromboembolismo-venoso-e-embolia-pulmonar | aprovado-na-triagem | nenhum na triagem |
 | 037 | infeccao-do-sitio-cirurgico-e-antibioticoprofilaxia | aprovado-na-triagem | nenhum na triagem |
 | 038 | crescimento-e-desenvolvimento | aprovado-na-triagem | nenhum na triagem |
-| 039 | sangramento-na-primeira-metade-da-gestacao | revisar | HTML abaixo de 60 mil caracteres (38654) |
+| 039 | sangramento-na-primeira-metade-da-gestacao | aprovado-na-triagem | nenhum na triagem |
 | 040 | regionalizacao-hierarquizacao-e-referencia-contrarreferencia | aprovado-na-triagem | nenhum na triagem |
 | 041 | choque-circulatorio | aprovado-na-triagem | nenhum na triagem |
 | 042 | principios-de-tecnica-cirurgica | aprovado-na-triagem | nenhum na triagem |
@@ -74,4 +74,4 @@ Total: 69.
 | 066 | derrame-pleural | aprovado-na-triagem | nenhum na triagem |
 | 067 | trauma-pelvico-e-geniturinario | aprovado-na-triagem | nenhum na triagem |
 | 068 | desnutricao-e-deficiencias-nutricionais | aprovado-na-triagem | nenhum na triagem |
-| 069 | assistencia-ao-parto | revisar | não foi localizado caso ou questão explícita |
+| 069 | assistencia-ao-parto | aprovado-na-triagem | nenhum na triagem |

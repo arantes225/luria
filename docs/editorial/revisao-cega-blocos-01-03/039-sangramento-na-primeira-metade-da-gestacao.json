@@ -2,10 +2,8 @@
   "id": 39,
   "slug": "sangramento-na-primeira-metade-da-gestacao",
   "block": 2,
-  "status": "revisar",
-  "findings": [
-    "HTML abaixo de 60 mil caracteres (38654)"
-  ],
+  "status": "aprovado-na-triagem",
+  "findings": [],
   "checks": {
     "json": false,
     "html": true,
