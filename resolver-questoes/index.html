@@ -404,18 +404,7 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
        completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
      }
      status("Resposta salva.","success");
-   }catch(error){
-     state.attempts.set(item.id, row);
-     try {
-       const localAttempts = JSON.parse(localStorage.getItem(`luria:attempts:${state.set?.id}`) || "{}");
-       localAttempts[item.id] = row;
-       localStorage.setItem(`luria:attempts:${state.set?.id}`, JSON.stringify(localAttempts));
-     } catch (_) {}
-     if(!completed&&state.items.length>0&&state.items.every(q=>state.attempts.has(q.id))){
-       completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
-     }
-     status("Resposta registrada.","success");
-   }
+   }catch(error){if(readerIsCurrent()&&ownerEpoch===epoch)status("Não foi possível salvar: "+error.message,"error")}
    finally{pendingAnswer=null;if(readerIsCurrent())render()}
  }
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}

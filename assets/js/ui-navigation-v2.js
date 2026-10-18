@@ -4,19 +4,15 @@
   if(document.body?.dataset.uiNav!=="v2")return;
   let companion=null,currentUser=null,revision=0;
   const start=async event=>{
-    const userId=event.detail?.user?.id || window.docmapUser?.id || window.LuriaLocalOwnerStore?.ownerId || "luria_student";
-    if(currentUser===userId&&companion){companion.setAccess(event.detail?.isAdmin || window.docmapIsAdmin);return;}
+    const userId=event.detail?.user?.id;if(!userId)return;
+    if(currentUser===userId&&companion){companion.setAccess(event.detail.isAdmin);return;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
-    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261016-v5');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
+    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261014-ready2');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
   };
   window.addEventListener('docmap:ready',start);
   window.addEventListener('docmap:access-updated',start);
   // Deferred navigation can execute after a fast cached login already emitted ready.
-  const resume=()=>{
-    const user = window.docmapUser || { id: window.LuriaLocalOwnerStore?.ownerId || "luria_student" };
-    start({detail:{user, isAdmin: window.docmapIsAdmin}});
-  };
-  setTimeout(resume, 100);
+  const resume=()=>{if(document.body.classList.contains('app-ready')&&window.docmapUser?.id&&window.docmapSession?.user?.id===window.docmapUser.id)start({detail:{user:window.docmapUser,isAdmin:window.docmapIsAdmin}});};
   window.addEventListener('pageshow',resume);
   resume();
   document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#luria-profile-logout')){revision++;currentUser=null;companion?.destroy();companion=null;}});
@@ -325,7 +321,10 @@
       if (link.classList.contains("active")) set(link, "aria-current", "page");
     });
     const alex = document.getElementById("luria-alex-topbar");
-    if (alex) alex.remove();
+    if (alex && !alex.dataset.uiIcon) {
+      const visual = document.createElement("span"); visual.className = "ui-alex-icon"; visual.innerHTML = sparkles;
+      alex.prepend(visual); alex.dataset.uiIcon = "true";
+    }
     if (body.dataset.uiWork === "v2") {
       const title = document.querySelector("main .luria-page-spotlight-copy strong[data-page-title]");
       set(title, "role", "heading"); set(title, "aria-level", "1");
