@@ -1,0 +1,898 @@
+{
+  "date": "2026-10-17",
+  "purpose": "Notas internas retiradas da leitura do aluno; não certificam revisão clínica.",
+  "entries": [
+    {
+      "slug": "valvopatias",
+      "content": [
+        {
+          "section": "referencias",
+          "block": [
+            "p",
+            "STATUS: RASCUNHO INICIAL. Faltam aprofundamento até ≥60.000 caracteres didáticos úteis, validação científica atualizada, mais casos/questões, 10 visuais licenciados/autorais e teste de renderização. Não publicar."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "choque-hemorragico",
+      "content": [
+        {
+          "section": "referencias",
+          "block": [
+            "p",
+            "STATUS EDITORIAL: RASCUNHO AUTORAL EM REVISÃO. Não certificado para publicação; requer completar ≥60.000 caracteres didáticos úteis, revisão médica independente, comparação com questões representativas, curadoria de imagens via Admin e inspeção no renderer desktop/PWA. Não é um protocolo assistencial nem substitui protocolos locais."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sepse-neonatal",
+      "content": [
+        {
+          "section": "referencias",
+          "block": [
+            "p",
+            "STATUS: RASCUNHO AUTORAL NÃO CERTIFICADO. Falta completar ≥60 mil caracteres didáticos úteis sem repetição, revisão científica e editorial de protocolos/doses, checagem de autossuficiência por questões e imagens com licença aprovadas pelo Admin. Não publicar ou usar como prescrição automática."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "puericultura-e-prevencao-de-acidentes",
+      "content": [
+        [
+          "sec-22-matriz-de-cobertura-e-antirrepeticao-com-a-aula-48",
+          0,
+          [
+            [
+              "2",
+              "22. Matriz de cobertura e antirrepetição com a aula 48"
+            ],
+            [
+              "t",
+              [
+                "Pergunta formativa",
+                "Seções que respondem",
+                "Teste por casos/questões",
+                "Limitações ainda abertas"
+              ],
+              [
+                [
+                  "Como organizar retorno por idade e risco?",
+                  "1, 5–6, 17",
+                  "Q1, casos 1/3",
+                  "checar datas e agenda locais"
+                ],
+                [
+                  "Como medir e interpretar crescimento?",
+                  "2, 7, 15",
+                  "casos 1/6, Q2/Q3",
+                  "inspeção de curvas OMS em imagem"
+                ],
+                [
+                  "Como distinguir atraso de desenvolvimento?",
+                  "3, 8, 15",
+                  "caso 2, Q5/Q6",
+                  "revisar estratégia de encaminhamento local"
+                ],
+                [
+                  "Como corrigir idade da prematuridade?",
+                  "2, 8, 20",
+                  "caso 3, Q4",
+                  "seguimento individual de prematuros extremos"
+                ],
+                [
+                  "Como orientar aleitamento e alimentação?",
+                  "5, 9, 17",
+                  "caso 1, Q7",
+                  "suplementação regional e faixa etária"
+                ],
+                [
+                  "Como recomendar sono seguro?",
+                  "4, 10, 14, 17",
+                  "caso 4, Q8",
+                  "verificar atualização brasileira específica"
+                ],
+                [
+                  "Quais exames e triagens valem a pena?",
+                  "6, 11, 15",
+                  "casos 2/6",
+                  "confirmação de programas locais"
+                ],
+                [
+                  "Quando orientar vacina atrasada?",
+                  "5, 12, 17",
+                  "tópico de triagem longitudinal",
+                  "<strong>remissão à aula 48</strong>, sem duplicar calendário"
+                ],
+                [
+                  "Como reconhecer e tratar risco social/violência?",
+                  "13, 16, 18",
+                  "caso 7, Q12",
+                  "revisão legal e rede territorial"
+                ],
+                [
+                  "Como prevenir quedas, queimaduras e afogamentos?",
+                  "4, 14, 17–18",
+                  "casos 4/5, Q8/Q9",
+                  "curadoria de imagens e legislação"
+                ],
+                [
+                  "Como orientar prevenção no trânsito?",
+                  "14, 17",
+                  "Q10",
+                  "rever texto CONTRAN consolidado"
+                ],
+                [
+                  "Como reagir à intoxicação/engasgo?",
+                  "14, 18",
+                  "caso 8, Q11",
+                  "revisão do protocolo de primeiros socorros por idade"
+                ],
+                [
+                  "Como usar Caderneta impressa/digital?",
+                  "1, 6, 12",
+                  "Q1 e roteiro longitudinal",
+                  "testar interface/vínculo no SUS, sem dados pessoais"
+                ]
+              ],
+              "book-table"
+            ],
+            [
+              "p",
+              "<strong>Deduplicação deliberada:</strong> a aula 43 aborda <strong>verificação da situação vacinal e oportunidade de cuidado</strong>. Não substituir nem duplicar toda a aula 48 (Imunizações na infância), cuja função é detalhar produtos, esquemas, contraindicações, situações especiais e calendários atuais. A aula 53 (Desidratação Pediátrica) trata de manejo técnico A/B/C; aqui, a orientação é reconhecer perda ponderal e desidratação como risco, não reproduzir volumes. A aula 58 (Diarreia Aguda) aborda etiologias e terapia; aqui, a ênfase é alimentação e prevenção longitudinal."
+            ]
+          ]
+        ],
+        [
+          "sec-23-curadoria-de-recursos-visuais-pre-manifesto-sem-aprovacao",
+          0,
+          [
+            [
+              "2",
+              "23. Curadoria de recursos visuais — pré-manifesto SEM aprovação"
+            ],
+            [
+              "p",
+              "A lista a seguir representa <strong>necessidades didáticas e alvos de produção/busca</strong>, e não imagens reais selecionadas ou já liberadas para reutilização comercial. A fila do Admin não foi modificada."
+            ],
+            [
+              "t",
+              [
+                "Prioridade",
+                "Visual necessário",
+                "Local",
+                "Mensagem didática",
+                "Status"
+              ],
+              [
+                [
+                  "1",
+                  "Curva OMS por sexo/idade para peso e estatura, em material licenciado ou diagrama original",
+                  "7",
+                  "queda de trajetória importa mais que ponto isolado",
+                  "licencia pendente"
+                ],
+                [
+                  "2",
+                  "Comparação original de técnica de medida de comprimento supino vs estatura em pé",
+                  "7",
+                  "método da medida muda leitura",
+                  "criar"
+                ],
+                [
+                  "3",
+                  "Infográfico autoral de consultas puericultura SUS",
+                  "6",
+                  "1ª semana até consultas anuais",
+                  "criar"
+                ],
+                [
+                  "4",
+                  "Mapa autoral de domínios de desenvolvimento",
+                  "8",
+                  "linguagem, motor, social, cognição e autonomia",
+                  "criar"
+                ],
+                [
+                  "5",
+                  "Infográfico autoral da idade corrigida na prematuridade",
+                  "8",
+                  "32 semanas + 4 meses cronológicos ≈ 2 meses corrigidos",
+                  "criar"
+                ],
+                [
+                  "6",
+                  "Fotografia didática licenciada de espaço de sono seguro, sem paciente identificável",
+                  "10/14",
+                  "supino, superfície firme, sem objetos soltos",
+                  "buscar licença"
+                ],
+                [
+                  "7",
+                  "Diagrama original de alimentação complementar de seis meses",
+                  "9",
+                  "alimentos reais e textura segura",
+                  "criar"
+                ],
+                [
+                  "8",
+                  "Esquema original de barreiras na piscina",
+                  "14",
+                  "cerca/portão + supervisão adulta",
+                  "criar"
+                ],
+                [
+                  "9",
+                  "Fotografia licenciada de cadeirinha instalada corretamente",
+                  "14",
+                  "ajuste ao tamanho da criança, norma e fabricante",
+                  "buscar licença"
+                ],
+                [
+                  "10",
+                  "Diagrama original de cozinha segura e prevenção de escaldaduras",
+                  "14",
+                  "afastar líquidos quentes e cabos",
+                  "criar"
+                ],
+                [
+                  "11",
+                  "Infográfico original de risco de objetos pequenos, pilhas botão e ímãs",
+                  "14",
+                  "prevenir ingestões perigosas",
+                  "criar"
+                ],
+                [
+                  "12",
+                  "Checklist original de proteção familiar e rede social",
+                  "13",
+                  "investigação sem estigmatização e cuidado integral",
+                  "criar"
+                ]
+              ],
+              "book-table"
+            ],
+            [
+              "p",
+              "<strong>Regras:</strong> imagens clínicas/externas só podem ser incorporadas após licença compatível com produto comercial, proveniência confiável, pertinência anatômica, avaliação ética e aprovação no Admin. Converter e otimizar para WebP pelo pipeline. Curvas oficiais OMS não devem ser copiadas como arte do PDF de material de estudo; se houver licença aplicável, citar a fonte e trabalhar com dados/diretrizes verificáveis. Diagramas e ilustrações originais devem passar pela revisão médica e visual."
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "participacao-e-controle-social-no-sus",
+      "content": [
+        [
+          "sec-23-auditoria-preliminar-nao-homologado",
+          0,
+          [
+            [
+              "2",
+              "23. Auditoria preliminar — não homologado"
+            ],
+            [
+              "p",
+              "<strong>Aprimorado nesta rodada:</strong> o conteúdo deixou de ser memorizações 50/25/25 e trouxe fundamentos constitucionais, leitura operacional da Lei 8.142, distinção entre normas, funcionamento participativo, conferências, conselhos, comissões de pactuação, ouvidorias, LC141, prestação quadrimestral, Plano/PAS/RAG, métodos de priorização, integridade e desigualdade territorial. Seis casos institucionais e dez questões comentadas avaliam os principais conceitos."
+            ],
+            [
+              "p",
+              "<strong>Pendências:</strong> a leitura direta completa da Resolução CNS 453 e eventuais alterações/regimentos locais; revisão jurídica especializada; caso-simulador de deliberação com dados reais anonimizados; auditoria humana de autossuficiência e questões; atingir profundidade premium quando necessário sem repetição; converter a HTML padronizado; testar índice, acessibilidade, mobile/PWA e gerar recursos visuais originais. <strong>Nenhum material publicado foi substituído e nenhuma imagem foi enviada ao Admin.</strong>"
+            ],
+            [
+              "p",
+              "<strong>Status:</strong> RASCUNHO_APROFUNDADO_REVISAO_PENDENTE. Mesmo que o manuscrito alcance uma metragem próxima do mínimo, isso não prova cobertura jurídica integral nem homologação."
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "trauma-atendimento-inicial-abcde",
+      "content": [
+        [
+          "sec-29-matriz-de-cobertura-e-teste-de-autossufi",
+          0,
+          [
+            [
+              "2",
+              "Matriz de cobertura e teste de autossuficiência — revisão editorial ainda aberta"
+            ],
+            [
+              "p",
+              "Esta matriz não é prova automática de qualidade. Ela permite localizar o que está realmente explicado, em vez de apenas enumerado."
+            ],
+            [
+              "t",
+              [
+                "Competência avaliada",
+                "Fundamentação interna",
+                "Exercício de verificação",
+                "Estado"
+              ],
+              [
+                [
+                  "Fisiologia de choque, DO2, Hb e perfusão",
+                  "§§1, 7, 13",
+                  "Questões 2 e 10",
+                  "Texto desenvolvido; revisão clínica pendente"
+                ],
+                [
+                  "Reconhecimento e controle de sangramento catastrófico",
+                  "§§3–4 e 17.1",
+                  "Caso 1 e questão 1",
+                  "Texto desenvolvido; técnica prática depende de treinamento"
+                ],
+                [
+                  "Indicação e confirmação de via aérea",
+                  "§§5 e 17.2",
+                  "Caso 2 e questão 11",
+                  "Texto desenvolvido; algoritmos de falha/doses a ampliar"
+                ],
+                [
+                  "Diferencial de insuficiência respiratória",
+                  "§§6 e 17.2",
+                  "Caso 2 e questão 3",
+                  "Texto desenvolvido; sinais específicos a ampliar"
+                ],
+                [
+                  "Ressuscitação hemostática, TXA, fonte",
+                  "§§7 e 15",
+                  "Casos 1/3 e questões 4/5/10",
+                  "Diretrizes ancoradas; checar contexto nacional"
+                ],
+                [
+                  "Glasgow e deterioração neurológica",
+                  "§§8 e 17.3",
+                  "Caso 4 e questão 6",
+                  "Necessita tabela completa de componentes"
+                ],
+                [
+                  "E, exame sistemático, prevenção de hipotermia",
+                  "§§9 e 11",
+                  "Questão 12",
+                  "Texto desenvolvido; visual futuro"
+                ],
+                [
+                  "Ultrassom, radiografia, TC e limites",
+                  "§10 e 17.4",
+                  "Caso 3 e questão 4",
+                  "Texto desenvolvido; revisar algoritmos por recurso"
+                ],
+                [
+                  "Escolha de destino e transferência",
+                  "§§12 e 19",
+                  "Caso 3",
+                  "Texto desenvolvido; simular transferência regional"
+                ],
+                [
+                  "Crianças, gestantes, idosos, medicação",
+                  "§16",
+                  "Casos 4/5/6 e questões 6/8/9",
+                  "Texto desenvolvido; detalhar variação por faixa etária"
+                ],
+                [
+                  "Segurança e comunicação",
+                  "§§2 e 19",
+                  "Questão 12",
+                  "Texto desenvolvido; revisão de usabilidade pendente"
+                ]
+              ],
+              "book-table"
+            ],
+            [
+              "p",
+              "<strong>Teste editorial provisório:</strong> As 12 questões acima podem ser respondidas pelos capítulos indicados. Isso <strong>não certifica</strong> a apostila: ainda faltam leitura independente integral, auditoria de repetição, confronto de contraindicações e recomendações com fontes brasileiras atualizadas, verificação visual desktop/PWA e aprovação de candidatos de imagem."
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "traumatismo-cranioencefalico",
+      "content": [
+        [
+          "sec-25-auditoria-cientifica-editorial-checkpoin",
+          0,
+          [
+            [
+              "2",
+              "Auditoria científica-editorial — checkpoint de 15/10/2026"
+            ],
+            [
+              "u",
+              [
+                "[x] Tema curricular e relação com nº 047 identificados; sem duplicação integral de xABCDE.",
+                "[x] Benchmark privado de TCE aberto e lido; autoria institucional não presumida.",
+                "[x] Correções de conceitos antigos sobre imagem, PPC/PIC, corticosteroides, nimodipino e hipotermia.",
+                "[x] Diferenciais de hematomas com leitura tomográfica e critérios específicos de cirurgia.",
+                "[x] Quadro de TCE leve/concussão, risco pediátrico e idoso anticoagulado.",
+                "[x] Seis casos clínicos autorais completos, incluindo TCE grave, epidural, subdural, pediatria e concussão.",
+                "[x] Doze questões com quatro alternativas, gabarito, explicações e minirrevisão.",
+                "[x] Planejamento de 10 imagens; 1 fonte/licença candidata explicitamente identificada, as demais pendentes.",
+                "[ ] Leitura integral da diretriz ACS 2024 e revisão da aplicabilidade a serviços brasileiros, inclusive neurocirurgia e transportes.",
+                "[ ] Revisão farmacológica por especialista dos critérios de osmoterapia, anticonvulsivantes, reversão de anticoagulantes e TXA.",
+                "[ ] Checagem de conteúdo <strong>didático útil e original</strong> versus métrica de 60.000 caracteres após retirar títulos, tabelas, casos, questões, referências e repetições.",
+                "[ ] Conferência do algoritmo completo PECARN, em especial critérios por idade e exclusões, antes de criar calculadora.",
+                "[ ] Auditoria de fontes brasileiras do SUS/CFM e atualização legal específica de morte encefálica antes de qualquer uso operacional.",
+                "[ ] Aprovação Admin das imagens clínicas reais, com fonte, licença, WebP e peso.",
+                "[ ] Conversão para renderer/apostila HTML somente após aprovação; validação desktop/PWA, links, acessibilidade, navegação e aplicação das questões."
+              ]
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "desidratacao-e-terapia-de-reidratacao",
+      "content": [
+        [
+          "sec-19-referencias-e-auditoria-preliminar",
+          0,
+          [
+            [
+              "2",
+              "Referências e auditoria preliminar"
+            ],
+            [
+              "u",
+              [
+                "Ministério da Saúde. Doenças diarreicas agudas (DDA): tratamento e Planos A/B/C. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda .",
+                "Ministério da Saúde. Manejo do paciente com diarreia: avaliação do estado do paciente (atualizado em 10/07/2026). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente .",
+                "Ministério da Saúde. AIDPI Criança, manual de quadros de procedimentos para 2 meses a 5 anos. https://bvsms.saude.gov.br/bvs/publicacoes/manual_quadros_procedimentos_aidpi_crianca_2meses_5anos.pdf .",
+                "WHO/UNICEF. The treatment of diarrhoea (2005). https://pmnch.who.int/resources/publications/i/item/the-treatment-of-diarrhoea .",
+                "WHO. Severe acute malnutrition: dehydration without shock. https://www.who.int/tools/elena/interventions/dehydration-sam .",
+                "WHO. Diarrhoea: health topic, prevenção e terapêutica. https://www.who.int/health-topics/diarrhoea ."
+              ]
+            ],
+            [
+              "u",
+              [
+                "[x] Tema 053 distinguido da aula 058 sem copiar conteúdo etiológico completo.",
+                "[x] Buscas reais no Drive documentadas e PDF correlato lido; <strong>benchmark específico ainda não localizado</strong>.",
+                "[x] Base fisiológica, diagnóstico, estratégias A/B/C, manutenção e exceções de segurança.",
+                "[x] Seis casos clínicos comentados e dez questões autorais com justificativa.",
+                "[x] Planejamento de dez imagens, sem presumir licença nem publicar.",
+                "[ ] Leitura completa do cartaz técnico MS atualizado em julho de 2026 e reconciliação pontual com tabelas AIDPI; não parametrizar calculadora antes.",
+                "[ ] Revisão das doses atuais de zinco, antieméticos, dispositivos e manuais de reidratação para neonatos, hipernatremia e desnutrição grave.",
+                "[ ] Benchmark comparável específico de desidratação infantil, se disponível no acervo privado.",
+                "[ ] Auditoria de 60 mil caracteres <strong>didáticos úteis</strong>, eliminando tabelas, casos, questões, bibliografia e repetições; sem considerar texto bruto suficiente.",
+                "[ ] Revisão científica independente, imagens aprovadas, HTML/renderer e testes desktop/PWA."
+              ]
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "vigilancia-em-saude",
+      "content": [
+        [
+          "sec-24-matriz-de-cobertura-e-pendencias-impedit",
+          0,
+          [
+            [
+              "2",
+              "Matriz de cobertura e pendências impeditivas de publicação"
+            ],
+            [
+              "t",
+              [
+                "Competência",
+                "Núcleo ensinado",
+                "Aplicação interna"
+              ],
+              [
+                [
+                  "PNVS e princípios",
+                  "§§2–3",
+                  "Questões 1–3"
+                ],
+                [
+                  "Quatro eixos e integração",
+                  "§§4–5",
+                  "Casos 1/3, Q1"
+                ],
+                [
+                  "Análise territorial e vulnerabilidade",
+                  "§§2.3,9,15",
+                  "Casos 3/6, Q3"
+                ],
+                [
+                  "Sistemas de informação",
+                  "§6",
+                  "Caso 4, Q6"
+                ],
+                [
+                  "Notificação e norma 2026",
+                  "§7",
+                  "Casos 2/4, Q5"
+                ],
+                [
+                  "Redes laboratoriais e emergências",
+                  "§§8,10,14",
+                  "Caso 5, Q8"
+                ],
+                [
+                  "Vigilância APS e hospital",
+                  "§§9,13",
+                  "Casos 2/5"
+                ],
+                [
+                  "Vigilância não transmissíveis e violência",
+                  "§11",
+                  "Q3/10"
+                ],
+                [
+                  "Indicadores, análise e vieses",
+                  "§§12,15",
+                  "Caso 6, Q4/9/10"
+                ],
+                [
+                  "Desastres, fármaco e eventos",
+                  "§§16–17",
+                  "Casos 3/5"
+                ],
+                [
+                  "Testes de aprendizagem",
+                  "§§18–19",
+                  "6 casos e 10 questões"
+                ]
+              ],
+              "book-table"
+            ],
+            [
+              "p",
+              "<strong>Pendências:</strong> verificar o texto <strong>consolidado</strong> da Portaria de Consolidação 4 após 10.175/2026 e possíveis modificações até outubro de 2026; validar periodicidade exata por evento em tabela dedicada à aula 060. Completar benchmark comparável de curso de vigilância geral no Drive (o material efetivamente encontrado foi ficha curta). Auditar mínimo 60.000 <strong>caracteres úteis e originais</strong> de corpo instrutivo, sem contar tabelas, casos, questões, referências e metadados; não inflar por redundância. Validar 10+ imagens candidatas reais ou diagramas próprios via Admin, revisão científica, prova de autossuficiência, conversão ao renderer da LURIA e testes desktop/PWA. Comparar com edição de 2026 de rede de vigilância ambiental/trabalhador antes de certificar."
+            ],
+            [
+              "p",
+              "<strong>Parecer editorial:</strong> manuscrito original com cobertura dos eixos da PNVS, separação de escopo das futuras aulas 060/065 e aplicações de prova; <strong>não certificado/não publicado</strong> até cumprir requisitos do padrão LURIA."
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "trauma-toracico",
+      "content": [
+        [
+          "sec-25-referencias-de-fechamento-e-auditoria",
+          0,
+          [
+            [
+              "2",
+              "Referências de fechamento e auditoria"
+            ],
+            [
+              "p",
+              "1. Coccolini F et al. Thoracic trauma WSES–AAST guidelines. World J Emerg Surg. 2025;20:78. DOI 10.1186/s13017-025-00651-1. https://link.springer.com/article/10.1186/s13017-025-00651-1\r<br>2. NICE. Major trauma: assessment and initial management. NG39. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations\r<br>3. Patel NJ et al. Management of simple and retained hemothorax: EAST guideline. Am J Surg. 2021;221:873–884. DOI 10.1016/j.amjsurg.2020.11.032. https://pubmed.ncbi.nlm.nih.gov/33487403/\r<br>4. EAST. Hemothorax and occult pneumothorax management. 2011; historical comparison, inferior priority to 2025 WSES in small collection selection. https://www.east.org/mobile/practice-management-guideline/trauma/77\r<br>5. ACS. ATLS 11. 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+            ],
+            [
+              "4",
+              "Auditoria editorial — NÃO certificação"
+            ],
+            [
+              "u",
+              [
+                "[x] Benchmark de três documentos do Drive realmente aberto e examinado; origens registradas, sem pressupor material de referência.",
+                "[x] Matriz de correção de regras absolutas antigas confrontada com diretriz 2025.",
+                "[x] Mecanismos, ameaças imediatas, lesões pleurais, grandes vasos, diafragma, costelas, bronquios e coração.",
+                "[x] Seis casos clínicos completos com hipótese, decisão e conduta.",
+                "[x] Dez questões originais de quatro alternativas, com justificativa.",
+                "[x] Planejamento de doze recursos de imagem.",
+                "[ ] Auditoria de profundidade didática <strong>≥60K caracteres instrutivos efetivamente úteis</strong>, retirando marcadores, repetição, questões, casos e referências.",
+                "[ ] Checagem de doses, procedimentos invasivos e diretrizes brasileiras de trauma por especialista; confirmar acesso a equipes e protocolos brasileiros.",
+                "[ ] Gerar algoritmo clínico e esquemas vetoriais com fidelidade clínica, aprovar imagens no Admin.",
+                "[ ] Testar autossuficiência por questões, corrigir lacunas internas e validar desktop/PWA no renderer.",
+                "[ ] Nunca publicar/mesclar sem revisão científica e autorização editorial."
+              ]
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "vigilancia-sanitaria",
+      "content": [
+        {
+          "section": "sec-75-questao-12-risco-e-processo",
+          "block": [
+            "p",
+            "Para transformar este manuscrito em apostila premium, exigir revisão segmentada, com responsabilidade editorial, sem declarar pronto apenas pelo volume:\r<br>1. <strong>Marcos legais:</strong> reconferir a vigência e o escopo de leis, RDCs, instruções e atualizações pós-15/10/2026 quando ocorrerem.\r<br>2. <strong>Fronteiras curriculares:</strong> comparar capítulos deste manuscrito com conteúdos reais das aulas 055, 060, 070 e 075; manter nesta aula a interpretação jurídica e operacional de riscos, produtos e serviços.\r<br>3. <strong>Casos:</strong> cada caso precisa ser respondível sem consulta externa; verificar que premissas do enunciado constam dos capítulos.\r<br>4. <strong>Questões:</strong> gabaritos, alternativas e comentários devem ser validados tecnicamente, sobretudo escopo legal dos exemplos.\r<br>5. <strong>Imagens:</strong> organizar fila de candidatas com fonte e licença de uso comercial, nunca inserir mídia clínica não aprovada no HTML.\r<br>6. <strong>Leitor:</strong> gerar conteúdo com navegação semântica, sumário, tabelas responsivas e boa legibilidade no PWA, respeitando o CSS aprovado.\r<br>7. <strong>Revisão independente:</strong> colher conferência científica e jurídica por profissional habilitado antes da publicação acadêmica.\r<br>8. <strong>Etapa zero:</strong> ainda falta fonte comparativa do Drive com cobertura realmente equivalente; documento aberto era resumo correlato.\r<br>9. <strong>Contagem:</strong> auditar 60 mil caracteres úteis do corpo didático, excluindo sumário, cabeçalhos, links e redundâncias; a quantidade bruta do arquivo não é certificado.\r<br>10. <strong>Estado final desta produção:</strong> RASCUNHO NÃO PUBLICADO, sem merge, sem deploy e sem aprovação científica integral."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "derrame-pleural",
+      "content": [
+        [
+          "sec-2-auditoria-inicial-benchmark-comparativo-",
+          0,
+          [
+            [
+              "2",
+              "Auditoria inicial, benchmark comparativo e decisão curricular"
+            ],
+            [
+              "4",
+              "0.1 O que foi efetivamente inspecionado na LURIA"
+            ],
+            [
+              "p",
+              "Como referência do padrão visual LURIA, foi aberta uma apostila já padronizada, `apostilas/assistencia-ao-parto/index.html`: leitura em livro com sumário, capítulos estruturados, quadros de comparação e conteúdo original. A estrutura é a referência de interface, não de texto médico."
+            ],
+            [
+              "4",
+              "0.2 Comparação obrigatória de materiais disponíveis no Drive (15/10/2026)"
+            ],
+            [
+              "u",
+              [
+                "<strong>02 - TUBERCULOSE EXTRA PULMONAR.pdf</strong> — apresenta o derrame tuberculoso como apresentação unilateral, linfocitária e subaguda; usa ADA e aponta necessidade de diagnóstico microbiológico/histológico. O PDF é um resumo de subtema, não uma apostila integral de derrame pleural. Contém a expressão «Medicina livre, venda proibida»; procedência editorial como material de referência <strong>não confirmada</strong>. Algumas frases sobre ADA e prevalência são simplificações que NÃO serão repetidas como verdades absolutas.",
+                "<strong>05 - TRAUMA - TRAUMA DE TORAX II.pdf</strong> — descreve hemotórax, lesões traumáticas, quilotórax, drenagem e suas complicações. É benchmark parcial de urgência cirúrgica, não protocolo universal de toracocentese ou derrame clínico. Trechos sobre drenagem indiscriminada e material/tamanho de dreno em TODOS os casos não serão adotados sem análise de cenário.",
+                "<strong>INSUFICIÊNCIA CARDÍACA.pdf</strong> — resumo sindrômico de congestão, sinais de IC e menção ao derrame pleural; útil para cruzar a causa transudativa, mas não fornece algoritmo de toracocentese e análise do líquido."
+              ]
+            ],
+            [
+              "t",
+              [
+                "Eixo clínico",
+                "Material do Drive efetivamente lido",
+                "Plano original para esta apostila"
+              ],
+              [
+                [
+                  "História e exame",
+                  "Casos específicos de TB, trauma e IC",
+                  "Abordagem sindrômica integrada, gravidade, lateralidade e hipóteses"
+                ],
+                [
+                  "Imagem",
+                  "Menções pontuais a RX/TC",
+                  "RX, ultrassom, TC, armadilhas, seleção de punção"
+                ],
+                [
+                  "Classificação",
+                  "Não há algoritmo completo",
+                  "Critérios de Light, falsos exsudatos, albumina, NT-proBNP"
+                ],
+                [
+                  "Bioquímica",
+                  "ADA na TB",
+                  "pH, glicose, LDH, proteínas, ADA, triglicerídeos, hematócrito e amilase"
+                ],
+                [
+                  "Infecção",
+                  "TB resumida",
+                  "Derrame parapneumônico, empiema, antimicrobianos e drenagem"
+                ],
+                [
+                  "Neoplasia",
+                  "Não abordada como síndrome pleural",
+                  "Citologia, biópsia, cateter pleural e pleurodese"
+                ],
+                [
+                  "Procedimentos",
+                  "Trauma: tubo e selo d’água",
+                  "Toracocentese guiada por ultrassom; indicações, segurança e seguimento"
+                ],
+                [
+                  "Ensino",
+                  "Pouca resolução integrada",
+                  "Casos de prova e prática, cálculos, alternativas comentadas, fluxos"
+                ]
+              ],
+              "book-table"
+            ],
+            [
+              "4",
+              "0.3 Matriz curricular de conteúdo obrigatório"
+            ],
+            [
+              "p",
+              "# 1. Introdução: derrame pleural é um achado, não um diagnóstico etiológico {#conceitos}"
+            ],
+            [
+              "p",
+              "O derrame pleural consiste no <strong>acúmulo anormal de líquido no espaço potencial entre as pleuras visceral e parietal</strong>. Um relatório de radiografia informando «derrame pleural» responde, sobretudo, <strong>o que existe no tórax</strong>, e não <strong>por que se formou</strong>. A mesma imagem pode acompanhar congestão cardíaca, infecção bacteriana, tuberculose, neoplasia, embolia pulmonar, cirrose e outras doenças. Por isso, duas perguntas governam a conduta: <strong>há repercussão/risco que exige intervenção imediata?</strong> e <strong>qual mecanismo e doença causal são mais prováveis?</strong>"
+            ],
+            [
+              "p",
+              "A dimensão do líquido não define, isoladamente, sua gravidade. Um pequeno derrame associado a pneumonia febril pode exigir punção e análise urgente se há suspeita de infecção pleural. Um derrame volumoso crônico em paciente com câncer pode gerar intensa dispneia e demandar alívio, mas as opções definitivas dependem de expansão pulmonar, expectativa de vida e preferências. Dois derrames bilaterais pequenos, em paciente com insuficiência cardíaca típica e boa resposta a diurético, podem não precisar de toracocentese inicial."
+            ],
+            [
+              "p",
+              "<strong>Caso-condutor:</strong> pessoa de 66 anos tem falta de ar crescente, macicez na base do hemitórax direito e redução do murmúrio vesicular. Antes de pedir «um dreno», é preciso checar saturação, esforço respiratório, febre, dor pleurítica, choque, cardiopatia, neoplasia, exposição a TB, doença hepática, medicações e tempo de início. Ultrassom pode confirmar líquido, estimar segurança da punção e sugerir septações. A história e o líquido, quando indicado, orientam o restante."
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "trauma-pelvico-e-geniturinario",
+      "content": [
+        [
+          "sec-2-auditoria-editorial-e-etapa-zero-compara",
+          0,
+          [
+            [
+              "2",
+              "Auditoria editorial e etapa zero comparativa"
+            ],
+            [
+              "4",
+              "0.1 Resultado da conferência do acervo LURIA"
+            ],
+            [
+              "p",
+              "A estrutura editorial de referência é o padrão LURIA de capítulos clínicos, tabelas resolutivas, fluxos, casos comentados e questões com explicação alternativa a alternativa. Não haverá alteração global em CSS, PWA, páginas já aprovadas, imagens ou banco do Supabase."
+            ],
+            [
+              "4",
+              "0.2 Materiais do Google Drive encontrados, abertos e lidos em 15/10/2026"
+            ],
+            [
+              "p",
+              "1. <strong>08 - TRAUMA - TRAUMA ABDOMINAL ESPECÍFICO .pdf</strong> — cerca de 14 mil caracteres extraídos; explora trauma de órgãos sólidos e retroperitônio, e traz um resumo curto de lesão renal, ureteral e vesical. Pontos de atenção: tratamento não operatório condicionado a recursos, estabilidade e vigilância, e diferenciação entre lesão vesical intra/extraperitoneal. Lacunas para esta aula: classificação do anel pélvico, estabilização, hemorragia pélvica, diagnóstico da uretra, cistografia técnica, via excretora renal e seguimento.\r<br>2. <strong>13 - UROLOGIA - PS - TRAUMA DE URETRA E ESTENOSE DE URETRA .pdf</strong> — cerca de 4,4 mil caracteres, cobre anatomia uretral, diferença anterior/posterior, uretrorragia, uretrografia e possibilidades de derivação/reconstrução. Lacunas: integração à prioridade do politraumatizado, lesão de bexiga, anatomia feminina, riscos de instrumentação, estratégia após ruptura por fratura pélvica e acompanhamento funcional. <strong>O achado de próstata “alta” não deve ser ensinado como teste sensível ou confiável.</strong>\r<br>3. <strong>07 - TRAUMA ABDOMINAL CONTUSO.pdf</strong> — resumo curto sobre FAST, TC no estável, reavaliação e decisão cirúrgica. É material correlato, sem desenvolvimento suficiente do sangramento retroperitoneal.\r<br>4. <strong>01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf</strong> — cobre abordagem inicial e choque, mas também contém simplificações que não devem ser importadas: a palpação repetida do anel não é exame recomendado para “testar instabilidade”; fórmulas volumétricas fixas não substituem avaliação da hemorragia e ressuscitação hemostática.\r<br>5. <strong>ATLS_Atendimento_inicial_ao_poli.pdf</strong> — ficha-síntese de prioridades e fontes de sangramento. Não reproduzir mnemônicos, imagens nem recomendações antigas sem validação."
+            ],
+            [
+              "p",
+              "<strong>Procedência institucional:</strong> textos recuperados apresentam menções como “Medicina livre, venda proibida” e nome de uma autora, mas não foi confirmada autoria institucional material de referência. Não presumir que são desse material de estudo. Essas fontes são benchmark de escopo e de pontos que devem ser corrigidos, não fontes primárias para conduta e NÃO AUTORIZAM copiar redação, caso, imagem, tabela, sumário ou identidade visual."
+            ],
+            [
+              "p",
+              "<strong>Limite assumido:</strong> a comparação foi feita com um conjunto de materiais próximos e parciais, <strong>não</strong> com uma apostila única e completa que cubra a fratura pélvica e todo o trato urinário. Portanto o requisito de benchmark integral continua pendente."
+            ],
+            [
+              "4",
+              "0.3 Bases científicas atuais para a produção"
+            ],
+            [
+              "u",
+              [
+                "European Association of Urology (EAU), <strong>Urological Trauma Guidelines 2026</strong>, com conteúdo integral reorganizado em 2026. Importa registrar que houve reestruturação, não assumir automaticamente que cada recomendação é nova. Diretriz por órgãos e questões de imagem/conduta: https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines",
+                "Coccolini F et al. <strong>Pelvic trauma: WSES classification and guidelines</strong>, <em>World J Emerg Surg</em>. 2017;12:5, doi:10.1186/s13017-017-0117-6. Apoio para o eixo hemodinâmica–mecânica, contenção, packing, embolização e estabilização: https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/",
+                "Spahn DR et al. <strong>The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition</strong>. <em>Critical Care</em>. 2023. Apoio para ressuscitação hemostática, controle precoce de hemorragia e estabilização pélvica: https://link.springer.com/article/10.1186/s13054-023-04327-7",
+                "Morey AF et al. <strong>Urotrauma Guideline 2020: AUA Guideline</strong>, <em>J Urol</em>. 2021, doi:10.1097/JU.0000000000001408: https://www.auajournals.org/doi/10.1097/JU.0000000000001408"
+              ]
+            ],
+            [
+              "4",
+              "0.4 Índice de ensino planejado e fronteira curricular"
+            ],
+            [
+              "p",
+              "<strong>Fronteira com outras aulas:</strong> o ABCDE genérico pertence à aula de trauma inicial; choque hemorrágico sistêmico é eixo próprio; aqui esses princípios serão revisitados APENAS no contexto que muda as decisões sobre pelve, retroperitônio e aparelho geniturinário. Não duplicar capítulo completo de TCE, trauma torácico ou trauma abdominal geral."
+            ],
+            [
+              "p",
+              "---"
+            ]
+          ]
+        ],
+        [
+          "sec-21-recursos-visuais-inventario-editorial-e-",
+          0,
+          [
+            [
+              "2",
+              "Recursos visuais: inventário editorial e aprovação centralizada"
+            ],
+            [
+              "p",
+              "A importância das imagens neste tema é alta: radiografia de pelve, TC contrastada, reconstrução óssea, imagens de extravasamento renal, cistografia e uretrografia permitem ensinar o que apenas texto não consegue. <strong>Nenhuma imagem clínica de terceiros foi importada, incorporada ao HTML ou autorizada automaticamente.</strong> A fila do Admin deve conter URL da fonte, nome do autor, licença explícita compatível com uso comercial, miniatura, aprovação clínica e legenda técnica. Até essa verificação, os itens permanecem <strong>candidatos não aprovados</strong>."
+            ],
+            [
+              "t",
+              [
+                "Chave",
+                "Seção",
+                "O que a imagem deve ensinar",
+                "Tipo e controle"
+              ],
+              [
+                [
+                  "TP-01",
+                  "2/3",
+                  "Anatomia do anel, sínfise, sacro e sacroilíacas",
+                  "Diagrama anatômico autoral a produzir"
+                ],
+                [
+                  "TP-02",
+                  "3/4",
+                  "APC/open book e diástase em RX AP",
+                  "Radiografia clínica real a selecionar; verificar licença e fidelidade"
+                ],
+                [
+                  "TP-03",
+                  "3/4",
+                  "LC com compressão sacral/ramos",
+                  "Radiografia/TC clínica real a selecionar"
+                ],
+                [
+                  "TP-04",
+                  "3/4",
+                  "Vertical shear com deslocamento cefálico",
+                  "RX/TC real a selecionar"
+                ],
+                [
+                  "TP-05",
+                  "5",
+                  "Posicionamento de binder nos trocânteres, comparado a posição alta incorreta",
+                  "Ilustração didática autoral"
+                ],
+                [
+                  "TP-06",
+                  "5/6",
+                  "Hematoma retroperitoneal com FAST sem líquido intraperitoneal",
+                  "TC real e diagrama autoral, fontes e licenças pendentes"
+                ],
+                [
+                  "TP-07",
+                  "6",
+                  "Fluxograma de choque: binder, packing, embolização e fontes concorrentes",
+                  "SVG autoral sem reproduzir gráfico de WSES"
+                ],
+                [
+                  "TP-08",
+                  "9",
+                  "AAST renal 2018, laceração/sistema coletor",
+                  "Diagrama autoral; tabela oficial deve ser conferida antes de finalizar"
+                ],
+                [
+                  "TP-09",
+                  "9",
+                  "TC com extravasamento vascular versus urinário excretor",
+                  "Imagens reais pareadas a buscar de repositório educacional autorizado"
+                ],
+                [
+                  "TP-10",
+                  "10",
+                  "Trajeto ureteral e contraste tardio extravasado",
+                  "Diagrama autoral + TC real licenciada"
+                ],
+                [
+                  "TP-11",
+                  "11",
+                  "Cistografia intra x extraperitoneal",
+                  "Imagens reais; destacar posição do contraste e necessidade de enchimento"
+                ],
+                [
+                  "TP-12",
+                  "12",
+                  "Uretrografia parcial x completa e anatomia anterior/posterior",
+                  "Imagens clínicas licenciadas + esquema original"
+                ],
+                [
+                  "TP-13",
+                  "13",
+                  "US testicular: túnica íntegra versus ruptura",
+                  "US real a selecionar com contexto clínico e licença"
+                ],
+                [
+                  "TP-14",
+                  "17",
+                  "Mapa de decisões para quatro casos de maior impacto",
+                  "Quadro/algoritmo vetorial autoral"
+                ]
+              ],
+              "book-table"
+            ],
+            [
+              "p",
+              "<strong>Fontes a priorizar na seleção, sem presumir licença:</strong> documentos governamentais e universitários que concedam reprodução; artigos científicos open access com imagens sob CC BY verificável (licença do artigo não autoriza automaticamente figuras creditadas a terceiros); coleções radiológicas institucionais com autorização; páginas abertas da WSES e material da EAU apenas para verificação médica (gráficos autorais, sem copiar diagrama de editoras)."
+            ],
+            [
+              "p",
+              "Há pelo menos uma candidata de imagem radiológica publicada em periódico open access <em>Journal of Clinical Medicine</em> 2026 sobre lesões pélvicas APC2; conferir legenda, contexto, atribuição e termos da figura antes de usar. A existência de imagem online <strong>não</strong> é autorização de uso. Priorizar 8 a 12 imagens de utilidade didática real, sem preenchimento decorativo. O pipeline exige conversão WebP, peso otimizado e aprovação no painel administrativo antes da publicação."
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}
