@@ -72,11 +72,11 @@ body[data-page="erros"] .qs-page-spotlight,
 body[data-page="erros"] .luria-page-spotlight {
   box-sizing: border-box !important;
   width: 100% !important;
-  height: 138px !important;
-  min-height: 138px !important;
-  max-height: 138px !important;
+  height: auto !important;
+  min-height: 110px !important;
+  max-height: none !important;
   margin: 0 0 14px 0 !important;
-  padding: 24px 28px !important;
+  padding: 20px 24px !important;
   border-radius: 15px !important;
   border: 1px solid rgba(255,255,255,0.14) !important;
   background: var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%)) !important;
@@ -150,6 +150,8 @@ body[data-page="erros"] .luria-page-spotlight-helper {
   color: rgba(255,255,255,0.9) !important;
   max-width: 720px !important;
   line-height: 1.4 !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
 }
 
 @media (max-width: 700px) {
@@ -159,10 +161,10 @@ body[data-page="erros"] .luria-page-spotlight-helper {
   body[data-page="flashcards"] .luria-page-spotlight,
   body[data-page="erros"] .qs-page-spotlight,
   body[data-page="erros"] .luria-page-spotlight {
-    height: 118px !important;
-    min-height: 118px !important;
-    max-height: 118px !important;
-    padding: 20px !important;
+    height: auto !important;
+    min-height: 100px !important;
+    max-height: none !important;
+    padding: 16px 18px !important;
   }
   body[data-page="questoes"] .qs-page-spotlight strong,
   body[data-page="questoes"] .qs-page-spotlight h1,
