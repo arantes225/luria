@@ -1,0 +1,1290 @@
+{
+  "v": 2,
+  "s": "valvopatias",
+  "t": "Valvopatias",
+  "p": "Fisiopatologia, semiologia, ecocardiografia e decisões clínicas nas doenças valvares",
+  "o": [
+    [
+      "visao",
+      "Visão geral"
+    ],
+    [
+      "fisiologia",
+      "Fisiologia das quatro válvulas"
+    ],
+    [
+      "exame",
+      "História e exame físico"
+    ],
+    [
+      "eco",
+      "Ecocardiografia e integração diagnóstica"
+    ],
+    [
+      "ea",
+      "Estenose aórtica"
+    ],
+    [
+      "ia",
+      "Insuficiência aórtica"
+    ],
+    [
+      "em",
+      "Estenose mitral"
+    ],
+    [
+      "im",
+      "Insuficiência mitral"
+    ],
+    [
+      "direitas",
+      "Tricúspide e pulmonar"
+    ],
+    [
+      "urgencias",
+      "Descompensações e urgências"
+    ],
+    [
+      "proteses",
+      "Próteses, anticoagulação e endocardite"
+    ],
+    [
+      "algoritmo",
+      "Algoritmo prático de avaliação"
+    ],
+    [
+      "casos",
+      "Casos integradores"
+    ],
+    [
+      "questoes",
+      "Questões autorais comentadas"
+    ],
+    [
+      "referencias",
+      "Referências e pendências"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Valvopatias",
+    "Semiologia e manejo de doenças valvares"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Visão geral"
+        ],
+        [
+          "p",
+          "Valvopatias são doenças das válvulas cardíacas que alteram o fluxo unidirecional de sangue. Estenose significa dificuldade de abertura e obstrução ao fluxo; insuficiência ou regurgitação significa fechamento inadequado e refluxo. O impacto hemodinâmico depende da válvula, gravidade, velocidade de instalação, função ventricular, circulação pulmonar e presença de outras lesões."
+        ],
+        [
+          "p",
+          "A abordagem clínica começa por reconhecer sintomas de alarme — síncope, angina, dispneia, edema pulmonar e hipotensão —, correlacionar achados auscultatórios e confirmar anatomia e gravidade por ecocardiografia. O tratamento definitivo de lesões importantes pode exigir reparo ou substituição valvar, com escolha individualizada por equipe especializada."
+        ],
+        [
+          "3",
+          "Em 30 segundos"
+        ],
+        [
+          "p",
+          "Valvopatia não é sinônimo de sopro: sopro pode ser inocente e uma valvopatia grave pode ter sopro discreto, sobretudo se o débito for reduzido. O eixo de raciocínio é identificar a lesão, quantificar sua repercussão, verificar sintomas e função ventricular e decidir se é necessário seguimento ou intervenção."
+        ],
+        [
+          "3",
+          "Objetivos de aprendizagem"
+        ],
+        [
+          "o",
+          [
+            "Diferenciar estenose de insuficiência e sobrecarga de pressão de sobrecarga de volume.",
+            "Relacionar sopros, pulsos e sinais de congestão à lesão mais provável.",
+            "Interpretar ecocardiograma sem reduzir gravidade a um número isolado.",
+            "Reconhecer situações em que esperar pode causar dano irreversível.",
+            "Compreender princípios de próteses, anticoagulação e abordagem de urgências."
+          ]
+        ],
+        [
+          "3",
+          "Epidemiologia, história natural e avaliação do risco"
+        ],
+        [
+          "p",
+          "Doença valvar pode surgir de processos degenerativos, inflamatórios, infecciosos, congênitos ou funcionais. A prevalência de estenose aórtica calcífica aumenta com a idade; estenose mitral reumática conserva importância em regiões com maior carga de febre reumática. As consequências clínicas dependem não apenas de quantificar estreitamento ou refluxo, mas da velocidade de progressão e da capacidade das câmaras se adaptarem."
+        ],
+        [
+          "p",
+          "Um sopro é fenômeno acústico de turbulência e pode ocorrer em fluxos elevados sem lesão estrutural relevante. Do mesmo modo, uma lesão grave com débito baixo pode produzir sopro pouco intenso. A ausculta serve como porta de entrada para hipótese; não determina gravidade definitiva nem explica todos os sintomas. O raciocínio precisa correlacionar história, exame, eco, pressão arterial e comorbidades."
+        ],
+        [
+          "p",
+          "A indicação de intervenção não deve ser resumida à gravidade numérica. Importam sintomas atribuíveis à valvopatia, dano progressivo do ventrículo, hipertensão pulmonar, fibrilação atrial, risco de morte súbita em situações específicas, expectativa de vida e possibilidade de reparo durável. O mesmo resultado ecocardiográfico pode conduzir a vigilância em um paciente e intervenção em outro porque o contexto difere."
+        ],
+        [
+          "p",
+          "Pacientes com doença valvar múltipla apresentam interações entre lesões. Uma estenose aórtica pode reduzir fluxo pela mitral, e regurgitação mitral importante pode diminuir fluxo anterógrado pela valva aórtica. Isso torna gradientes e áreas aparentes difíceis de interpretar isoladamente. Um plano guiado por uma única valva corre risco de falhar na fisiologia global."
+        ],
+        [
+          "p",
+          "Na assistência longitudinal, educação sobre sintomas de alerta e adesão à avaliação é parte essencial. A aparente estabilidade pode decorrer de o paciente evitar esforços ou restringir atividades sem relatar limitação. Perguntar especificamente sobre escadas, distâncias, tarefas e comparação com meses anteriores ajuda a revelar sintomas encobertos. Um diário clínico pode complementar intervalos entre ecocardiogramas."
+        ],
+        "<p><strong>Caso de fixação:</strong> paciente com dispneia progressiva, sopro novo e fibrilação atrial precisa de avaliação antes de uma decisão terapêutica. O raciocínio deve integrar sintomas, ritmo, ecocardiograma, gravidade da lesão, função ventricular, repercussão pulmonar e risco tromboembólico. Não se deve escolher intervenção apenas pelo sopro ou por uma medida isolada.</p>",
+        "<p><strong>Caso de fixação:</strong> paciente com dispneia progressiva, sopro novo e fibrilação atrial precisa de avaliação antes de uma decisão terapêutica. O raciocínio deve integrar sintomas, ritmo, ecocardiograma, gravidade da lesão, função ventricular, repercussão pulmonar e risco tromboembólico. Não se deve escolher intervenção apenas pelo sopro ou por uma medida isolada.</p>"
+      ]
+    ],
+    [
+      "fisiologia",
+      0,
+      [
+        [
+          "2",
+          "Fisiologia das quatro válvulas"
+        ],
+        [
+          "p",
+          "A válvula aórtica separa o ventrículo esquerdo da aorta; a mitral separa átrio esquerdo e ventrículo esquerdo; a pulmonar fica na saída do ventrículo direito; e a tricúspide entre átrio e ventrículo direitos. Durante a sístole ventricular, válvulas semilunares abrem e atrioventriculares fecham. Durante a diástole, ocorre o inverso."
+        ],
+        [
+          "p",
+          "Estenoses criam sobrecarga de pressão a montante. Regurgitações criam sobrecarga de volume, com adaptação de câmaras e possível descompensação. Lesões agudas podem produzir edema pulmonar ou choque sem tempo para dilatação compensatória; lesões crônicas podem permanecer assintomáticas apesar de remodelamento progressivo."
+        ],
+        [
+          "3",
+          "Pré-carga, pós-carga e remodelamento"
+        ],
+        [
+          "p",
+          "Na estenose aórtica, a obstrução eleva a pressão sistólica intraventricular e favorece hipertrofia concêntrica; a parede espessada pode reduzir complacência e aumentar pressão diastólica mesmo quando a fração de ejeção ainda é normal. Na insuficiência aórtica crônica, o retorno diastólico acrescenta volume ao enchimento e favorece dilatação e hipertrofia excêntrica. Na estenose mitral, o principal obstáculo é diastólico, antes do ventrículo esquerdo, elevando pressão atrial e venosa pulmonar. Na insuficiência mitral, parte do volume sistólico retorna ao átrio e a fração de ejeção pode aparentar preservação apesar de deterioração contrátil inicial."
+        ],
+        [
+          "p",
+          "A frequência cardíaca modifica hemodinâmica: taquicardia encurta diástole e pode agravar estenose mitral; bradicardia prolonga tempo disponível para refluxo na insuficiência aórtica. Essas relações ajudam a compreender sintomas, mas não autorizam intervenção farmacológica automática sem avaliação do contexto."
+        ],
+        [
+          "3",
+          "Lesão aguda versus crônica"
+        ],
+        [
+          "p",
+          "Câmaras cardíacas têm tempo de adaptação nas lesões crônicas. Uma regurgitação mitral crônica pode gerar átrio esquerdo complacente, ao passo que ruptura súbita de cordoalha produz grande elevação de pressão atrial, congestão pulmonar e instabilidade com átrio de tamanho ainda normal. Na insuficiência aórtica aguda, o ventrículo não dilatado recebe volume adicional e pode desenvolver elevação acentuada da pressão diastólica e queda do débito. Portanto, ausência de dilatação não exclui regurgitação aguda grave."
+        ],
+        [
+          "3",
+          "Lei de Laplace, pressão e volume"
+        ],
+        [
+          "p",
+          "O estresse parietal ventricular cresce com pressão intracavitária e raio da cavidade, e diminui com espessura da parede. Esse raciocínio ajuda a prever a adaptação: na estenose aórtica, a sobrecarga pressórica favorece hipertrofia concêntrica; na regurgitação aórtica ou mitral crônica, a sobrecarga volumétrica favorece dilatação e hipertrofia excêntrica. Nenhum padrão morfológico é absoluto: hipertensão, doença coronariana e cardiomiopatia coexistentes modificam a resposta."
+        ],
+        [
+          "p",
+          "A pressão de enchimento do ventrículo esquerdo depende de relaxamento, complacência, frequência e volume. Estenose mitral dificulta a passagem de sangue do átrio ao ventrículo durante a diástole, aumentando pressão atrial e venosa pulmonar; já a regurgitação mitral cria fluxo retrógrado sistólico e onda v proeminente em certos contextos. Reconhecer em qual fase ocorre a anormalidade ajuda a relacionar sopros, sintomas e Doppler."
+        ],
+        [
+          "p",
+          "Compensação não é cura. Mesmo sem sintomas, a exposição prolongada à sobrecarga hemodinâmica produz fibrose miocárdica, dilatação, fibrilação atrial e elevação de pressões pulmonares. A decisão de intervir antes de insuficiência cardíaca irreversível depende de tipo de lesão, gravidade demonstrada e marcadores de dano. Por isso, acompanhar apenas aparecimento de dispneia grave perde oportunidade terapêutica."
+        ],
+        [
+          "3",
+          "Ciclo cardíaco e alterações de pressão no átrio e ventrículo"
+        ],
+        [
+          "p",
+          "As valvas atrioventriculares abrem durante a diástole ventricular para permitir enchimento e fecham quando a pressão ventricular sobe na sístole. As valvas semilunares abrem quando pressão ventricular excede pressão arterial adiante e fecham na queda pressórica. Dessa sequência decorre a regra semiológica: estenose aórtica gera sopro sistólico ejetivo e insuficiência aórtica gera sopro diastólico, enquanto estenose mitral se manifesta na diástole e insuficiência mitral na sístole."
+        ],
+        [
+          "p",
+          "Na estenose aórtica, a área reduzida aumenta velocidade de fluxo através do orifício. O gradiente transvalvar está relacionado à velocidade pelo princípio de Bernoulli simplificado, mas a interpretação requer direção Doppler e condições de fluxo. Em baixo débito, um gradiente aparentemente modesto pode acompanhar obstrução grave. Hipertensão não controlada no momento do exame também altera dinâmica de ejeção e precisa ser reconhecida."
+        ],
+        [
+          "p",
+          "Na insuficiência aórtica, parte do volume ejetado retorna ao ventrículo durante a diástole. O ventrículo aumenta volume diastólico e tenta preservar fluxo sistêmico; a forma crônica pode gerar pulsos amplos e hipertrofia excêntrica, enquanto forma aguda eleva rapidamente pressão diastólica sem tempo de adaptação. Daí decorre diferença marcante de apresentação e urgência."
+        ],
+        [
+          "p",
+          "Na estenose mitral, o gradiente entre átrio e ventrículo aumenta durante enchimento, elevando pressão venosa pulmonar. Taquicardia reduz tempo disponível para diástole, ampliando congestão. Dilatação do átrio favorece fibrilação atrial e tromboembolismo, que por sua vez agravam enchimento e sintomas. É por isso que controle de frequência pode ser útil mesmo sem modificar área da valva."
+        ],
+        [
+          "p",
+          "Na regurgitação mitral crônica, parte do sangue é ejetada para átrio esquerdo, circuito de menor impedância, e a fração de ejeção total pode parecer preservada apesar de débito anterógrado reduzido. A dilatação do ventrículo e mudança de sua geometria são sinais de esgotamento adaptativo. Fração de ejeção normal pela referência de um coração sem valvopatia pode não representar função ventricular realmente preservada nesse cenário."
+        ],
+        [
+          "p",
+          "Na regurgitação tricúspide, refluxo para o sistema venoso sistêmico pode causar pulsação jugular sistólica, congestão hepática, ascite e edema. O ventrículo direito é sensível a mudanças de pós-carga, de modo que hipertensão pulmonar pode transformar lesão funcional em condição hemodinamicamente importante. Intervenção na válvula esquerda pode melhorar ou não o quadro tricúspide dependendo do estágio."
+        ]
+      ]
+    ],
+    [
+      "exame",
+      0,
+      [
+        [
+          "2",
+          "História e exame físico"
+        ],
+        [
+          "p",
+          "Investigar dispneia progressiva, limitação de esforço, ortopneia, dispneia paroxística noturna, angina, síncope, palpitações, febre, eventos embólicos, história de febre reumática, prótese valvar e tratamentos prévios. Exame inclui pressão arterial, pulso, turgência jugular, ictus, ausculta em diferentes focos, irradiação, sinais de congestão e perfusão."
+        ],
+        [
+          "p",
+          "Sopros sistólicos podem corresponder a estenose aórtica, insuficiência mitral ou tricúspide; diastólicos incluem insuficiência aórtica e estenose mitral. Intensidade do sopro não quantifica isoladamente gravidade, sobretudo em baixo débito. Uma lesão grave pode apresentar sopro pouco audível; não excluir doença pela ausculta."
+        ],
+        [
+          "3",
+          "Ausculta por momento do ciclo"
+        ],
+        [
+          "t",
+          [
+            "Lesão",
+            "Sopro habitual",
+            "Pistas"
+          ],
+          [
+            [
+              "Estenose aórtica",
+              "Sistólico ejetivo, crescendo-decrescendo",
+              "Irradiação cervical; pulso tardio em doença avançada"
+            ],
+            [
+              "Insuficiência aórtica",
+              "Diastólico aspirativo, decrescente",
+              "Borda esternal esquerda; pulso amplo na forma crônica"
+            ],
+            [
+              "Estenose mitral",
+              "Ruflar diastólico apical",
+              "Estalido de abertura em anatomia compatível"
+            ],
+            [
+              "Insuficiência mitral",
+              "Holossistólico apical",
+              "Irradiação axilar, variável conforme jato"
+            ],
+            [
+              "Insuficiência tricúspide",
+              "Holossistólico paraesternal inferior",
+              "Pode aumentar à inspiração"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Manobras auscultatórias podem modificar intensidade, mas são auxiliares e não substituem ecocardiografia. O aumento inspiratório de sopros direitos decorre do maior retorno venoso sistêmico; sopros de lesões esquerdas tendem a ter outras respostas. A posição em decúbito lateral esquerdo facilita ruflar mitral e a inclinação anterior com expiração pode facilitar sopro de insuficiência aórtica."
+        ],
+        [
+          "3",
+          "Sinais de alerta"
+        ],
+        [
+          "p",
+          "Síncope durante esforço, dor torácica típica, edema pulmonar, hipotensão, confusão, extremidades frias e queda de saturação são achados que exigem avaliação imediata, sobretudo diante de lesão conhecida. Febre persistente associada a novo sopro ou prótese valvar aumenta suspeita de endocardite, embora diagnóstico dependa de conjunto clínico, microbiologia e imagem."
+        ],
+        [
+          "3",
+          "Manobras, diagnóstico diferencial e limites da semiologia"
+        ],
+        [
+          "p",
+          "Sopro sistólico ejetivo em foco aórtico com irradiação cervical sugere estenose aórtica, mas esclerose valvar sem obstrução importante também produz sopro. Sopro holossistólico apical favorece insuficiência mitral, mas defeito septal ventricular ou insuficiência tricúspide podem soar semelhantes. Não confundir localização acústica com confirmação anatômica: o ecocardiograma resolve dúvidas sobre mecanismos e gravidade."
+        ],
+        [
+          "p",
+          "Pulso carotídeo lento e de pequena amplitude pode ocorrer em estenose aórtica importante, mas perde sensibilidade em idosos com arteriosclerose. Pressão de pulso ampla pode surgir na insuficiência aórtica crônica, anemia ou estados hiperdinâmicos; sua ausência não descarta regurgitação aguda grave. Estalido de abertura na estenose mitral reumática diminui quando a válvula torna-se muito calcificada e imóvel."
+        ],
+        [
+          "p",
+          "Dispneia por valvopatia compete com DPOC, anemia, obesidade, miocardiopatia e descondicionamento. Avaliar progressão temporal, ortopneia, edema, síncope de esforço e capacidade funcional habitual. Em doença rotulada como assintomática, familiares podem perceber redução de esforço antes do paciente; a anamnese deve explorar atividades anteriormente toleradas e eventos evitados."
+        ],
+        [
+          "3",
+          "Semiologia aprofundada e armadilhas"
+        ],
+        [
+          "p",
+          "Avaliar a localização, o tempo, a duração e a qualidade de um sopro, sua irradiação e relação com respiração. Estenose aórtica costuma irradiar a vasos do pescoço e atingir pico mesosistólico; insuficiência mitral geralmente se estende pela sístole e pode irradiar à axila. Porém, jatos excêntricos e anatomias complexas deslocam pontos de maior audibilidade. A intensidade não deve ser equiparada automaticamente à gravidade."
+        ],
+        [
+          "p",
+          "O desdobramento e intensidade da segunda bulha são pistas adicionais. Em estenose aórtica calcífica avançada, componente aórtico pode diminuir; em hipertensão pulmonar, componente pulmonar pode acentuar-se. O estalido de abertura sugere mobilidade residual de válvula mitral estenótica de origem reumática. Em doença grave altamente calcificada, pode desaparecer, portanto sua ausência não exclui estenose."
+        ],
+        [
+          "p",
+          "Manobras que alteram retorno venoso e resistência periférica modificam sopros, mas não substituem exames. Inspirar aumenta retorno venoso direito e frequentemente intensifica sopros tricúspides, fenômeno conhecido como sinal de Carvallo; handgrip eleva pós-carga e pode modificar regurgitações esquerdas. Esses efeitos são pistas fisiológicas, não testes definitivos, porque frequência, volume e cooperação do paciente interferem."
+        ],
+        [
+          "p",
+          "Pulso amplo e rápido pode acompanhar insuficiência aórtica crônica importante, mas também anemia, tireotoxicose e outras condições hiperdinâmicas. Pulso tardio e de baixa amplitude favorece estenose aórtica relevante, embora arteriosclerose possa mascarar padrão. Na forma aguda de insuficiência aórtica, pulso amplo pode não aparecer, porque ventrículo não conseguiu remodelar."
+        ],
+        [
+          "p",
+          "Insuficiência cardíaca decorrente de valvopatia causa ortopneia, crepitações, intolerância ao exercício e congestão. Entretanto, achados de doença pulmonar, anemia e obesidade podem coexistir, e dispneia não deve ser atribuída à valva automaticamente. Avaliar cronologia, exames e repercussão ecocardiográfica protege contra intervenções desnecessárias."
+        ],
+        [
+          "p",
+          "Em pacientes com prótese mecânica, mudanças do som de fechamento, surgimento de sopro novo e sinais embólicos podem sugerir disfunção. A ausência de som típico não permite diagnosticar trombose, pois ruído ambiente, tipo de prótese e anatomia interferem. Eco comparativo e imagem dirigida são essenciais. Febre persistente adiciona hipótese de endocardite protética."
+        ]
+      ]
+    ],
+    [
+      "eco",
+      0,
+      [
+        [
+          "2",
+          "Ecocardiografia e integração diagnóstica"
+        ],
+        [
+          "p",
+          "O ecocardiograma transtorácico com Doppler é exame inicial central para avaliar morfologia, velocidades, gradientes, áreas valvares, refluxos, dimensões e função das câmaras e pressão pulmonar estimada. A gravidade não deve ser atribuída a um único número quando há discordância entre fluxo, gradiente e área."
+        ],
+        [
+          "p",
+          "Ecocardiografia transesofágica pode detalhar anatomia, trombos, próteses ou planejamento de intervenção. Testes de esforço, tomografia e ressonância têm indicações específicas. Em estenose aórtica de baixo fluxo/baixo gradiente, distinguir estenose verdadeiramente grave de pseudoestenose exige abordagem especializada."
+        ],
+        [
+          "3",
+          "Parâmetros e armadilhas"
+        ],
+        [
+          "p",
+          "Gradiente transvalvar aumenta com velocidade do jato e depende do fluxo. Assim, gradiente baixo não garante lesão leve quando volume sistólico está reduzido. A área valvar calculada pode ser afetada por medidas imprecisas, especialmente diâmetro da via de saída ventricular esquerda. Antes de concluir que parâmetros são contraditórios, revisar qualidade técnica, pressão arterial, ritmo, débito, fração de ejeção e condições de aquisição."
+        ],
+        [
+          "p",
+          "Em regurgitações, a avaliação integra vena contracta, extensão e direção do jato, parâmetros quantitativos quando disponíveis, fluxo reverso em vasos apropriados, repercussão em câmaras e pressão pulmonar. Um jato excêntrico aderido à parede pode parecer pequeno ao Doppler colorido; a área visual do jato isolada não determina gravidade."
+        ],
+        [
+          "3",
+          "Exames complementares com indicação"
+        ],
+        [
+          "p",
+          "Eletrocardiograma auxilia na identificação de fibrilação atrial, hipertrofia e distúrbios de condução; radiografia pode mostrar congestão e cardiomegalia, mas nenhum substitui ecocardiograma. Tomografia ajuda a avaliar calcificação e anatomia para planejamento de implante transcateter e pode esclarecer discordância na estenose aórtica. Ressonância pode quantificar volumes e regurgitação quando o eco é inconclusivo. Testes funcionais exigem seleção cuidadosa: exercício em estenose aórtica grave sintomática não deve ser realizado como rotina."
+        ],
+        [
+          "3",
+          "Discordância entre gradiente, área e fluxo"
+        ],
+        [
+          "p",
+          "O gradiente ecocardiográfico é fluxo-dependente: um gradiente baixo pode ocorrer em estenose aórtica realmente grave quando o volume sistólico está reduzido. O diagnóstico de estenose aórtica de baixo fluxo exige revisar velocidade, área, índice de volume sistólico, pressão arterial, formato da curva Doppler e outras causas de queda do débito. A classificação clássica distingue fenótipos com fração de ejeção reduzida e com fração preservada, mas o mecanismo precisa ser demonstrado em cada paciente."
+        ],
+        [
+          "p",
+          "Em estenose aórtica de baixo fluxo e baixa fração de ejeção, ecocardiografia com baixa dose de dobutamina pode esclarecer reserva de fluxo e gravidade verdadeira em casos selecionados, com monitorização e contraindicações respeitadas. Quando a prova é inconclusiva ou inadequada, tomografia com quantificação de cálcio valvar pode apoiar classificação, interpretando limiares conforme sexo e diretriz. Não fazer exercício em paciente com estenose aórtica grave sintomática para 'provar' sintomas."
+        ],
+        [
+          "p",
+          "Na insuficiência mitral, jatos excêntricos podem produzir efeito Coanda e subestimar visualmente regurgitação no Doppler colorido. Quantificação integrada pode incluir vena contracta, volume regurgitante, orifício regurgitante efetivo e repercussão atrial/ventricular. Na regurgitação secundária, geometria do ventrículo e condição de carga mudam durante a doença e com tratamento; um único exame fora de condições clínicas estáveis pode enganar."
+        ],
+        [
+          "p",
+          "Próteses exigem valores de referência próprios: gradiente transprotético elevado pode refletir prótese de pequeno tamanho, alto fluxo, trombose, pannus ou degeneração. Comparar com eco basal após implantação e procurar elevação progressiva. Insuficiência paravalvar tem mecanismo e manejo diferentes de degeneração dos folhetos, e o exame transesofágico ou tomografia podem ser necessários."
+        ],
+        [
+          "3",
+          "Como ler relatório ecocardiográfico em etapas"
+        ],
+        [
+          "p",
+          "Primeiro confirmar tipo e morfologia valvar: folhetos espessados, calcificação, fusão comissural, prolapso, flail, dilatação de anel ou defeito protético. Depois avaliar função sistólica e diastólica de ventrículos, dimensões atriais, pressão pulmonar estimada e doença concomitante. Só então integrar medidas de fluxo, gradientes e regurgitação. Essa ordem reduz o risco de transformar um número tecnicamente mal obtido em diagnóstico definitivo."
+        ],
+        [
+          "p",
+          "Na estenose aórtica, medida do diâmetro da via de saída do ventrículo esquerdo afeta área calculada pela equação de continuidade de modo amplificado, pois área da via de saída depende do quadrado do raio. Pequeno erro na medida pode alterar significativamente área valvar estimada. Além disso, jato excêntrico pode escapar ao alinhamento do Doppler e subestimar velocidade máxima. Revisar técnica é obrigatório diante de discordância."
+        ],
+        [
+          "p",
+          "A quantificação da regurgitação depende de vários parâmetros. Na insuficiência aórtica, fluxo reverso holodiastólico na aorta descendente, dilatação do ventrículo e parâmetros de jato aumentam confiança quando concordantes. Na insuficiência mitral, Doppler colorido sozinho é insuficiente, sobretudo em jatos excêntricos. Integrar achados evita classificar grave uma pequena regurgitação ou minimizar refluxo importante por geometria do jato."
+        ],
+        [
+          "p",
+          "Algumas medidas variam muito com pressão arterial e frequência cardíaca. Exame realizado em taquiarritmia, sepse ou crise hipertensiva pode diferir daquele em ritmo controlado e estado euvolêmico. Registrar condições hemodinâmicas e considerar repetição quando apropriado melhora comparação longitudinal. Esse raciocínio é especialmente importante na insuficiência mitral secundária e na estenose mitral."
+        ],
+        [
+          "p",
+          "Ecocardiografia transesofágica permite avaliar com maior resolução anatomia mitral, próteses, trombos atriais e suspeita de endocardite em situações selecionadas. É exame semi-invasivo com requisitos de segurança e não substitui automaticamente transtorácico em todas as doenças. Tomografia agrega quantificação de cálcio e planejamento anatômico, enquanto ressonância pode quantificar volumes e regurgitação quando eco é inconclusivo."
+        ],
+        [
+          "p",
+          "O exame de esforço em doença valvar tem objetivos específicos: revelar sintomas não reconhecidos, avaliar capacidade funcional e resposta hemodinâmica em pacientes adequadamente selecionados. Paciente com estenose aórtica grave sintomática não deve ser enviado rotineiramente a esteira para provar gravidade. Contraindicações, supervisão e possibilidade de resposta urgente são pré-requisitos."
+        ]
+      ]
+    ],
+    [
+      "ea",
+      0,
+      [
+        [
+          "2",
+          "Estenose aórtica"
+        ],
+        [
+          "p",
+          "A estenose aórtica geralmente resulta de calcificação degenerativa, válvula bicúspide ou sequela reumática. O ventrículo esquerdo desenvolve hipertrofia concêntrica diante da obstrução; com progressão surgem disfunção diastólica, isquemia relativa e insuficiência cardíaca. Tríade clássica de doença sintomática avançada: angina, síncope aos esforços e dispneia."
+        ],
+        [
+          "p",
+          "Ausculta costuma revelar sopro sistólico ejetivo crescendo-decrescendo no foco aórtico, irradiando para carótidas, por vezes com pulso carotídeo de ascensão lenta. A gravidade ecocardiográfica clássica pode envolver Vmáx ≥4,0 m/s, gradiente médio ≥40 mmHg e área ≤1,0 cm², mas discordâncias por fluxo e tamanho corporal exigem avaliação integrada. Paciente com estenose aórtica grave sintomática necessita avaliação prioritária para intervenção valvar."
+        ],
+        [
+          "3",
+          "Por que o paciente descompensa"
+        ],
+        [
+          "p",
+          "A hipertrofia e a pressão intraventricular elevada aumentam demanda de oxigênio do miocárdio, enquanto a pressão de perfusão coronariana pode ser desfavorável. Isso ajuda a explicar angina mesmo sem obstrução coronariana epicárdica. Durante esforço, a incapacidade de aumentar adequadamente débito e alterações de resistência vascular contribuem para pré-síncope ou síncope. A dispneia resulta de elevação de pressões de enchimento e congestão."
+        ],
+        [
+          "3",
+          "Classificação ecocardiográfica"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro",
+            "Sugere estenose aórtica grave",
+            "Ressalva"
+          ],
+          [
+            [
+              "Velocidade máxima",
+              "≥ 4,0 m/s",
+              "Depende do fluxo e do alinhamento Doppler"
+            ],
+            [
+              "Gradiente médio",
+              "≥ 40 mmHg",
+              "Pode ser menor no baixo fluxo"
+            ],
+            [
+              "Área valvar",
+              "≤ 1,0 cm²",
+              "Requer checar método e indexação quando apropriado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Critérios são pistas de gravidade, não uma receita para operar qualquer paciente que atinja um limiar. Há apresentações de baixo fluxo/baixo gradiente com fração de ejeção reduzida ou preservada. O contexto inclui volume sistólico indexado, qualidade das medidas, pressão arterial, anatomia e, em casos selecionados, eco com dobutamina ou escore de cálcio tomográfico."
+        ],
+        [
+          "3",
+          "Intervenção e escolha de via"
+        ],
+        [
+          "p",
+          "A decisão entre substituição cirúrgica e implante transcateter depende de idade, expectativa de vida, anatomia, acesso vascular, durabilidade esperada, comorbidades, fragilidade, doença coronária, necessidade de outros procedimentos e preferência do paciente. Não é correto dizer que implante transcateter é sempre melhor em idosos ou que cirurgia é sempre melhor em jovens: avaliação por equipe de valvopatias é indispensável."
+        ],
+        [
+          "3",
+          "Estenose aórtica: indicação e escolha de prótese"
+        ],
+        [
+          "p",
+          "A estenose aórtica grave com sintomas atribuíveis à lesão é, em geral, indicação de avaliação para intervenção. Em pacientes aparentemente assintomáticos, a decisão considera função ventricular, velocidade/gradiente e progressão, testes de exercício supervisionados quando apropriados e marcadores de risco. O objetivo é evitar intervenção precoce desnecessária sem permitir dano irreversível ao ventrículo."
+        ],
+        [
+          "p",
+          "A escolha entre troca valvar cirúrgica e transcateter não é uma competição com vencedor universal. Anatomia da valva bicúspide, tamanho do anel, calcificação, altura de coronárias, doença aórtica associada, acesso arterial, expectativa de vida e possibilidade de reintervenção modificam balanço. Paciente mais jovem enfrenta durabilidade e acesso coronário futuro; paciente com fragilidade importante pode apresentar risco operatório elevado. Heart Team individualiza o plano."
+        ],
+        [
+          "p",
+          "Procedimentos transcateter podem exigir vigilância de distúrbios de condução e necessidade de marca-passo, insuficiência paravalvar, complicações vasculares e AVC. Procedimentos cirúrgicos exigem ponderar recuperação, cirurgia combinada e escolha de prótese. A indicação de tratar coronárias concomitantemente depende de anatomia, sintomas e modalidade valvar; não presumir revascularização em toda lesão moderada."
+        ],
+        [
+          "3",
+          "Estenose aórtica: fenótipos e fatores prognósticos"
+        ],
+        [
+          "p",
+          "Uma velocidade máxima igual ou superior a aproximadamente 4 m/s, gradiente médio a partir de 40 mmHg e área valvar em torno ou abaixo de 1 cm² são critérios clássicos de gravidade, mas podem não coincidir. Quando velocidade e gradiente são baixos e área pequena, investigar volume sistólico, fração de ejeção e medidas antes de declarar pseudoestenose. A condição pode ser particularmente complexa em hipertensos e pessoas com ventrículo pequeno."
+        ],
+        [
+          "p",
+          "Na estenose aórtica de alto gradiente, a pressão necessária para ejetar aumenta e gera hipertrofia concêntrica. Se surgem dor torácica, síncope de esforço ou dispneia, a possibilidade de relação causal precisa ser examinada. Sintomas típicos em doença grave geralmente aceleram avaliação para substituição valvar, salvo fatores clínicos que modifiquem a expectativa de benefício."
+        ],
+        [
+          "p",
+          "Em baixo fluxo e baixa fração de ejeção, uma estratégia especializada pode usar ecocardiografia sob dobutamina para avaliar aumento de fluxo e comportamento da área/gradiente. Ausência de reserva de fluxo não é autorização para descartar toda intervenção; avaliação pode incluir calcificação valvar por tomografia e discussão por Heart Team. Interpretação depende do protocolo e dos riscos do exame."
+        ],
+        [
+          "p",
+          "Existe também apresentação com área pequena e gradiente baixo apesar de fração de ejeção preservada, sobretudo em ventrículos pequenos e hipertrofiados com baixo volume sistólico. O fato de FE estar normal não prova volume sistólico normal. Conferir fluxo indexado e valores de pressão permite reconhecer esse fenótipo. Caso discordante exige avaliação multiparamétrica, e não classificar por uma única coluna do laudo."
+        ],
+        [
+          "p",
+          "Antes da substituição, investigar anatomia coronariana e aórtica conforme risco e diretrizes. Valva bicúspide se associa a alteração de aorta ascendente em parte dos pacientes e exige avaliar aortopatia. O implante transcateter requer considerar anatomia, potencial de vazamento paravalvar e acesso coronário futuro; cirurgia oferece tratamento combinado em condições apropriadas."
+        ]
+      ]
+    ],
+    [
+      "ia",
+      0,
+      [
+        [
+          "2",
+          "Insuficiência aórtica"
+        ],
+        [
+          "p",
+          "Na insuficiência aórtica, o sangue retorna da aorta ao ventrículo esquerdo durante a diástole. Causas incluem doença da cúspide, endocardite, valva bicúspide e dilatação ou dissecção da raiz aórtica. A forma crônica produz sobrecarga de volume e dilatação do ventrículo esquerdo; a aguda grave pode causar edema pulmonar e choque."
+        ],
+        [
+          "p",
+          "Ausculta típica é sopro diastólico aspirativo decrescente na borda esternal esquerda; pressão de pulso ampla e sinais periféricos hiperdinâmicos podem surgir na forma crônica importante. Na regurgitação aguda, esses sinais podem faltar. A decisão de cirurgia integra sintomas, gravidade, função e dimensões ventriculares, anatomia aórtica e risco; não usar apenas presença de sopro como indicação."
+        ],
+        [
+          "3",
+          "Causas que mudam urgência"
+        ],
+        [
+          "p",
+          "Distinguir regurgitação por folhetos de regurgitação por raiz aórtica dilatada. Endocardite pode perfurar cúspide; dissecção ascendente pode comprometer coaptação valvar e é emergência cirúrgica. A combinação de dor torácica súbita, sinais de má perfusão e novo sopro diastólico exige investigar síndrome aórtica aguda, sem esperar sinais periféricos clássicos."
+        ],
+        [
+          "3",
+          "Seguimento do ventrículo esquerdo"
+        ],
+        [
+          "p",
+          "Em insuficiência aórtica crônica grave, sintomas, fração de ejeção e dimensões do ventrículo esquerdo orientam momento da intervenção. A fração de ejeção pode permanecer aparentemente satisfatória por longo período devido à carga de volume; por isso, tendência das dimensões e evolução clínica importam. Valores de corte exatos dependem da diretriz e da indexação corporal e devem ser confirmados antes da certificação editorial."
+        ],
+        [
+          "3",
+          "Insuficiência aórtica aguda versus crônica"
+        ],
+        [
+          "p",
+          "Na regurgitação aórtica crônica, o ventrículo tolera por algum tempo volume adicional por dilatação e aumento de complacência, mantendo débito adiante. Na forma aguda, não há tempo de remodelamento: a pressão diastólica ventricular sobe rapidamente, elevando pressão pulmonar e reduzindo fluxo efetivo. Pode haver edema agudo e hipotensão com sopro pouco audível; exame físico clássico de pressão de pulso ampla é pouco sensível nesse cenário."
+        ],
+        [
+          "p",
+          "Dissecção aguda da aorta ascendente com insuficiência aórtica e choque é emergência cirúrgica, não problema para controle ambulatorial de pressão isolado. Endocardite com perfuração valvar também produz regurgitação aguda grave. Em suspeita clínica forte, ecocardiografia urgente e equipe cirúrgica são prioritários; exames adicionais dependem de estabilidade e de hipóteses diagnósticas."
+        ],
+        [
+          "p",
+          "Na doença crônica grave, avaliar tendência de diâmetros e volumes do ventrículo, fração de ejeção, sintomas, exercício tolerado e aorta ascendente. Terapia da hipertensão e de outras comorbidades melhora cuidados clínicos, mas nenhum medicamento reverte mecanicamente cúspide destruída. Disfunção ventricular progressiva é sinal para reavaliar tempo de intervenção mesmo antes da incapacidade avançada."
+        ],
+        [
+          "3",
+          "Insuficiência aórtica: avaliação de causa e tempo de intervenção"
+        ],
+        [
+          "p",
+          "A regurgitação aórtica pode resultar de anormalidade da cúspide, da raiz ou de ambas. A valva bicúspide, endocardite e doença reumática alteram folhetos; dilatação da raiz por hipertensão, doença hereditária ou dissecção afeta coaptação. Identificar o mecanismo é relevante porque correção da aorta pode ser tão importante quanto a intervenção valvar. Eco e avaliação de aorta por métodos apropriados precisam ser integrados."
+        ],
+        [
+          "p",
+          "Na apresentação crônica, sobrecarga de volume aumenta diâmetro e massa do ventrículo esquerdo, preservando inicialmente o fluxo anterógrado. À medida que função contrátil piora, dispneia e redução de tolerância surgem, mas o ventrículo pode dilatar antes de sintomas. Acompanhamento seriado de dimensões, fração de ejeção, função e aorta é necessário para não perder o momento ideal de intervenção."
+        ],
+        [
+          "p",
+          "Na insuficiência aórtica aguda grave, pressão diastólica ventricular eleva-se em uma câmara ainda pouco complacente. Isso causa edema pulmonar e baixo débito; o sopro pode ser curto ou pouco intenso devido à rápida equalização de pressões. Pressão de pulso ampla, que costuma ser ensinada como sinal de insuficiência aórtica, pode não aparecer. A hipótese deve surgir diante de dissecção, endocardite e descompensação abrupta."
+        ],
+        [
+          "p",
+          "Vasodilatadores podem ajudar na hipertensão ou estabilização selecionada, porém não reconstroem uma valva incompetente. Em lesão aguda cirúrgica, estabilização serve como ponte para intervenção, e demora é perigosa. A decisão entre reparo e substituição depende de anatomia valvar/aórtica, experiência local, urgência e durabilidade prevista."
+        ],
+        [
+          "p",
+          "Na doença moderada, seguimento e controle de comorbidades predominam; em lesão grave sintomática ou com sinais de comprometimento ventricular, avaliação para intervenção se torna prioritária. Limiar exato de fração de ejeção e dimensão varia entre diretrizes e deve ser consultado na versão corrigida de 2025 antes de transformar em regra de prova."
+        ]
+      ]
+    ],
+    [
+      "em",
+      0,
+      [
+        [
+          "2",
+          "Estenose mitral"
+        ],
+        [
+          "p",
+          "A estenose mitral é frequentemente sequela reumática, com fusão comissural e limitação do enchimento ventricular esquerdo. A pressão atrial esquerda aumenta, favorecendo congestão pulmonar, hipertensão pulmonar e fibrilação atrial. Gravidez, taquicardia e aumento de fluxo podem descompensar estenose previamente tolerada."
+        ],
+        [
+          "p",
+          "O achado clássico é ruflar diastólico apical, frequentemente com estalido de abertura, melhor ouvido em decúbito lateral esquerdo. O ecocardiograma define área valvar, gradientes dependentes da frequência/fluxo, anatomia e trombos quando indicado. Em anatomia favorável e ausência de contraindicações, comissurotomia mitral percutânea pode ser opção; outros casos requerem cirurgia."
+        ],
+        [
+          "3",
+          "Fibrilação atrial e tromboembolismo"
+        ],
+        [
+          "p",
+          "A dilatação atrial esquerda favorece fibrilação atrial e tromboembolismo. Em estenose mitral reumática moderada ou grave associada a fibrilação atrial, anticoagulação com antagonista da vitamina K permanece referência; não extrapolar preferência por anticoagulantes diretos observada na fibrilação atrial sem estenose mitral reumática significativa. O risco de trombo atrial influencia planejamento de cardioversão e intervenção percutânea."
+        ],
+        [
+          "3",
+          "Escolha da comissurotomia"
+        ],
+        [
+          "p",
+          "A valvotomia mitral percutânea por balão depende de anatomia favorável e ausência de trombo atrial esquerdo e de regurgitação mitral mais que leve, entre outros critérios. Calcificação importante, deformidade subvalvar extensa e lesões associadas podem reduzir sucesso e favorecer abordagem cirúrgica. O gradiente mitral deve ser interpretado com frequência cardíaca e débito, especialmente em gestantes."
+        ],
+        [
+          "3",
+          "Estenose mitral reumática, gestação e arritmias"
+        ],
+        [
+          "p",
+          "A estenose mitral reumática pode ser agravada por taquicardia: a diástole encurta, eleva gradiente transmitral e aumenta pressão atrial esquerda. Controle apropriado de frequência e manejo de congestão podem aliviar sintomas enquanto se avalia intervenção; os fármacos variam conforme ritmo, pressão arterial, gestação e função ventricular."
+        ],
+        [
+          "p",
+          "Na gestação, expansão volêmica e aumento da frequência cardíaca podem precipitar edema pulmonar em lesões mitrais antes compensadas. Risco materno-fetal requer cardiologia e obstetrícia de alto risco, ecocardiografia seriada e avaliação de momento ideal de intervenção. Não extrapolar estratégias de anticoagulação de uma gestante a pacientes fora desse contexto."
+        ],
+        [
+          "p",
+          "Comissurotomia mitral por balão é especialmente útil quando estenose significativa tem anatomia reumática adequada, sem trombo atrial esquerdo e sem regurgitação mitral além do permitido. A decisão inclui calcificação, fusão comissural, mobilidade dos folhetos e aparato subvalvar. Cirurgia é preferida em anatomia desfavorável, lesões associadas que exijam correção ou contraindicações à intervenção percutânea."
+        ],
+        [
+          "3",
+          "Estenose mitral: história natural e seleção para intervenção"
+        ],
+        [
+          "p",
+          "Na febre reumática, a agressão inflamatória valvar pode produzir fusão comissural, espessamento de folhetos e alteração das cordas tendíneas. Diferentemente da calcificação degenerativa do anel mitral em idosos, a anatomia reumática pode ser favorável a comissurotomia com balão quando a obstrução resulta principalmente da fusão. Assim, compreender etiologia determina possibilidade de tratamento percutâneo."
+        ],
+        [
+          "p",
+          "A área mitral e o gradiente médio são complementares, mas o gradiente aumenta com frequência e débito. Paciente em fibrilação atrial rápida pode apresentar gradiente elevado sem alteração súbita da anatomia, e gestação modifica fluxo. A interpretação ideal registra ritmo, frequência e condição hemodinâmica. Medidas discordantes precisam de eco cuidadoso e eventualmente imagem complementar."
+        ],
+        [
+          "p",
+          "A pressão atrial esquerda aumentada pode produzir dispneia e hemoptise, além de hipertensão pulmonar progressiva. A fibrilação atrial piora desempenho por perda da contração atrial e redução do enchimento diastólico, sobretudo durante taquicardia. O manejo de sintomas inclui controlar ritmo ou frequência quando apropriado e tratar congestão, sem perder perspectiva da obstrução mecânica."
+        ],
+        [
+          "p",
+          "Comissurotomia mitral por balão requer ausência de trombo atrial esquerdo e de regurgitação mitral mais que leve, além de morfologia apropriada. Avaliação transesofágica pode detectar trombos antes do procedimento. Se doença subvalvar intensa ou calcificação tornam sucesso improvável, cirurgia pode oferecer melhor resultado; a equipe avalia riscos e lesões concomitantes."
+        ],
+        [
+          "p",
+          "Gestação com estenose mitral importante demanda acompanhamento conjunto, pois expansão do volume plasmático e taquicardia podem causar edema pulmonar. A estratégia depende de gravidade, sintomas, resposta a controle clínico e idade gestacional. O tratamento não pode ser simplesmente extrapolado de paciente não gestante, especialmente para anticoagulação e intervenção."
+        ]
+      ]
+    ],
+    [
+      "im",
+      0,
+      [
+        [
+          "2",
+          "Insuficiência mitral"
+        ],
+        [
+          "p",
+          "A insuficiência mitral pode ser primária, por doença de folhetos ou aparato subvalvar, ou secundária, decorrente de remodelamento ventricular/atrial. Prolapso, degeneração, endocardite e ruptura de cordoalha são exemplos de causas primárias. A forma crônica causa sobrecarga de volume de átrio e ventrículo esquerdos; a aguda grave pode causar edema pulmonar súbito."
+        ],
+        [
+          "p",
+          "Sopro holossistólico apical irradiado à axila é típico, mas intensidade depende de dinâmica e pressão. Ecocardiograma define mecanismo e gravidade, dimensões ventriculares e possibilidade de reparo. Na insuficiência mitral primária grave, reparo durável é frequentemente preferível quando viável em centro experiente; decisões dependem de sintomas, função ventricular, anatomia e risco."
+        ],
+        [
+          "3",
+          "Primária versus secundária"
+        ],
+        [
+          "p",
+          "Na insuficiência mitral primária, o problema principal está no aparelho valvar; o objetivo da intervenção é corrigir o mecanismo quando gravidade e repercussão justificam. Na secundária, o ventrículo ou átrio alterado distorce geometria e coaptação, de modo que tratamento da insuficiência cardíaca e de causas subjacentes é parte central da abordagem. Reparos transcateter podem ser considerados em perfis selecionados, após otimização e discussão por equipe especializada."
+        ],
+        [
+          "3",
+          "Por que a fração de ejeção engana"
+        ],
+        [
+          "p",
+          "Parte do volume ejetado vai para o átrio esquerdo, um compartimento de menor impedância que a aorta. Assim, uma fração de ejeção aparentemente normal não significa contratilidade preservada em insuficiência mitral grave. A evolução do diâmetro sistólico e da fração de ejeção deve ser interpretada com limiares específicos da doença, e não pelos mesmos valores usados em pessoas sem regurgitação."
+        ],
+        [
+          "3",
+          "Insuficiência mitral primária e secundária: estratégias diferentes"
+        ],
+        [
+          "p",
+          "Na insuficiência mitral primária, degeneração, prolapso ou ruptura de cordoalha produzem falha estrutural do aparato valvar. Quando doença grave necessita intervenção, reparo durável em centro experiente pode ser preferível à troca por preservar geometria ventricular e evitar determinadas complicações protéticas. A chance real de reparo exige avaliação anatômica especializada; não é garantia para todas as valvas."
+        ],
+        [
+          "p",
+          "Na insuficiência mitral secundária, o mecanismo é predominantemente remodelamento de ventrículo/átrio e desequilíbrio de forças de coaptação, não necessariamente lesão primária do folheto. Antes de procedimento, otimizar tratamento da insuficiência cardíaca, ressincronização quando indicada e manejo de fibrilação atrial. A intervenção percutânea borda a borda pode beneficiar grupos cuidadosamente selecionados ainda sintomáticos, com parâmetros anatômicos e funcionais adequados."
+        ],
+        [
+          "p",
+          "As diretrizes ESC/EACTS 2025 reforçam abordagem fenotípica da regurgitação secundária, distinguindo mecanismos ventriculares e atriais, e priorizam discussão multidisciplinar. Benefício de reparo transcateter em um fenótipo não deve ser generalizado para todos os pacientes com insuficiência mitral importante. O candidato deve ter avaliação de comorbidades, esperança de vida, sintomas e anatomia."
+        ],
+        [
+          "p",
+          "Na insuficiência mitral aguda por ruptura de músculo papilar pós-infarto, edema pulmonar e choque podem surgir com ventrículo não dilatado e sopro discreto. A estabilização hemodinâmica não corrige ruptura e deve ocorrer enquanto se organiza tratamento mecânico urgente. Esse padrão distingue-se radicalmente do acompanhamento de prolapso mitral crônico assintomático."
+        ],
+        [
+          "3",
+          "Manejo por etiologia, disfunção ventricular e geometria"
+        ],
+        [
+          "p",
+          "Na insuficiência mitral primária degenerativa, ruptura ou alongamento de cordas, prolapso e alterações de folhetos causam refluxo. Se uma intervenção for indicada, reparo durável executado em centro experiente pode preservar função e evitar dependência de prótese em muitos casos. A possibilidade de reparo depende da localização da lesão, extensão de calcificação, tecido disponível e experiência da equipe."
+        ],
+        [
+          "p",
+          "A fração de ejeção na regurgitação mitral pode parecer maior porque parte do volume é ejetada para átrio de baixa impedância. Portanto, valores que seriam satisfatórios em outras doenças podem já indicar início de disfunção na regurgitação grave crônica. Dimensão sistólica final, volumes ventriculares e sinais de hipertensão pulmonar ajudam a decidir tempo da intervenção."
+        ],
+        [
+          "p",
+          "Em regurgitação secundária, a valva pode ser estruturalmente normal, mas o ventrículo dilatado desloca músculos papilares e limita coaptação, ou há dilatação atrial/anular. A prioridade é tratar cardiomiopatia ou disfunção atrial e avaliar resposta. Intervenção transcateter borda a borda requer anatomia e perfil clínico específicos; a diretriz de 2025 reconhece benefício em grupos cuidadosamente selecionados."
+        ],
+        [
+          "p",
+          "Quando regurgitação secundária ocorre com fibrilação atrial de longa data e átrio muito dilatado, o fenótipo atrial pode predominar. Diferenciar de mecanismo ventricular altera expectativa de resposta a reparo e opções concomitantes de tratamento. A decisão do Heart Team considera função de ventrículos, pressões pulmonares, sintomas e persistência após terapia clínica otimizada."
+        ],
+        [
+          "p",
+          "A insuficiência mitral aguda por ruptura de músculo papilar, perfuração por endocardite ou ruptura de cordoalha provoca refluxo súbito em átrio não adaptado. Pressões pulmonares se elevam e podem causar edema agudo severo. Mesmo sem dilatação ventricular, o caso pode ser emergência; imagem rápida e equipe intervencionista/cirúrgica são essenciais."
+        ],
+        [
+          "p",
+          "Na reavaliação pós-reparo, verificar regurgitação residual, gradiente de enchimento, função ventricular e evolução de sintomas. Reparo tecnicamente bem-sucedido não garante reversão completa de doença miocárdica avançada. Por isso, o momento da intervenção antes de dano irreversível é dimensão importante do tratamento."
+        ]
+      ]
+    ],
+    [
+      "direitas",
+      0,
+      [
+        [
+          "2",
+          "Tricúspide e pulmonar"
+        ],
+        [
+          "p",
+          "A insuficiência tricúspide funcional é frequente com dilatação do anel e remodelamento de câmaras direitas, hipertensão pulmonar ou fibrilação atrial. Pode produzir turgência jugular, hepatomegalia, ascite e edema. O sopro holossistólico em borda esternal inferior pode aumentar na inspiração. Avaliar causa e gravidade por ecocardiografia e repercussões sistêmicas."
+        ],
+        [
+          "p",
+          "A estenose pulmonar é frequentemente congênita e pode gerar sobrecarga de pressão ventricular direita. A insuficiência pulmonar pode ocorrer após intervenções em cardiopatias congênitas ou em hipertensão pulmonar. Condutas dependem da anatomia e da função ventricular direita; não extrapolar critérios da válvula aórtica para válvulas direitas."
+        ],
+        [
+          "3",
+          "Congestão sistêmica e interdependência ventricular"
+        ],
+        [
+          "p",
+          "Na insuficiência tricúspide importante, o refluxo sistólico para o átrio direito pode causar onda venosa proeminente, congestão hepática, ascite, edema e piora da função renal. A ecocardiografia deve avaliar anel, folhetos, eletrodos de dispositivos, tamanho e função do ventrículo direito e pressão pulmonar. Pressão pulmonar estimada pode ser pouco confiável em regurgitação tricúspide muito intensa."
+        ],
+        [
+          "p",
+          "Doença pulmonar, hipertensão pulmonar e cardiopatias esquerdas podem desencadear ou agravar lesões direitas. Tratar causa subjacente é fundamental, mas a intervenção valvar pode ser necessária em situações selecionadas; aguardar até disfunção ventricular direita avançada pode comprometer benefício."
+        ],
+        [
+          "3",
+          "Doença tricúspide e avaliação do ventrículo direito"
+        ],
+        [
+          "p",
+          "A insuficiência tricúspide pode ser primária (endocardite, trauma de folheto, doença congênita, lesão por eletrodo de marca-passo) ou funcional, por dilatação do anel e remodelamento direito diante de hipertensão pulmonar ou fibrilação atrial. Congestão hepática, ascite, edema, pulsatilidade jugular e redução de tolerância ao esforço devem ser correlacionados com eco e função direita."
+        ],
+        [
+          "p",
+          "Intervir tardiamente em tricúspide muito grave pode não recuperar ventrículo direito já comprometido. O momento de corrigir lesão concomitante em cirurgia de válvula esquerda exige planejamento antecipado. Terapias transcateter avançaram em pacientes selecionados de alto risco, mas a evidência e a disponibilidade dependem de anatomia e de centro experiente."
+        ],
+        [
+          "p",
+          "Em estenose pulmonar, sobretudo congênita, a obstrução sobrecarrega o ventrículo direito; a avaliação do gradiente depende de anatomia e fluxo, podendo haver indicação de valvoplastia por balão em lesões adequadas. Não assumir que todos os sopros da borda esternal esquerda representam doença tricúspide ou aórtica."
+        ],
+        [
+          "3",
+          "Tricúspide, pulmonar e lesões combinadas"
+        ],
+        [
+          "p",
+          "Insuficiência tricúspide pode ser provocada por aumento de pressões e volumes à direita, com dilatação anular e perda de coaptação. Outra causa é lesão do folheto por infecção, dispositivos intracardíacos ou malformações. O eco precisa descrever mecanismo, função do ventrículo direito e pressão pulmonar, porque intervir na valva sem avaliar doença pulmonar ou ventricular pode produzir resultado insatisfatório."
+        ],
+        [
+          "p",
+          "Congestão sistêmica crônica manifesta-se como edema, ascite, hepatomegalia dolorosa e alterações da função hepática. O sistema venoso pode ficar congestionado mesmo com pressão arterial preservada. Diuréticos aliviam sintomas em casos selecionados, mas não corrigem lesão estrutural valvar. A decisão intervencionista envolve gravidade, risco, anatomia e estágio de disfunção direita."
+        ],
+        [
+          "p",
+          "Durante cirurgia de valva esquerda, lesão tricúspide relevante pode justificar abordagem concomitante dependendo de gravidade e tamanho de anel, para evitar reoperação tardia de maior risco. Nos casos de alto risco cirúrgico, procedimentos transcateter emergentes ampliam opções, mas disponibilidade e evidência variam. Não se pode prometer benefício uniforme."
+        ],
+        [
+          "p",
+          "A estenose pulmonar tem causas frequentemente congênitas e produz sobrecarga pressórica do ventrículo direito. Sopros sistólicos no foco pulmonar e sinais de hipertrofia direita podem direcionar hipótese; ecocardiografia define localização subvalvar, valvar ou supravalvar. Valvoplastia por balão é opção em anatomias elegíveis, mas requer avaliação de gravidade e risco."
+        ],
+        [
+          "p",
+          "Na doença multivalvar, o tratamento de uma lesão modifica fluxos e gradientes nas demais. Um exemplo é a redução da regurgitação mitral após correção de estenose aórtica em casos funcionais, embora não deva ser presumida em toda lesão primária. O planejamento contempla interação, sintomas e probabilidade de melhora conjunta."
+        ]
+      ]
+    ],
+    [
+      "urgencias",
+      0,
+      [
+        [
+          "2",
+          "Descompensações e urgências"
+        ],
+        [
+          "p",
+          "Edema agudo de pulmão, hipotensão, choque, síncope de alto risco e suspeita de endocardite com instabilidade requerem avaliação urgente. Insuficiência mitral aguda por ruptura de músculo papilar após infarto ou insuficiência aórtica aguda por dissecção são emergências potencialmente fatais. O exame físico pode ser pouco típico."
+        ],
+        [
+          "p",
+          "Tratamento hemodinâmico depende da lesão: vasodilatação ou diurese podem ser úteis em determinados cenários, mas causar deterioração em outros. Evitar regras únicas para todas as valvopatias; estabilizar, solicitar ecocardiografia urgente e envolver cardiologia/cirurgia cardíaca conforme necessidade."
+        ],
+        [
+          "3",
+          "Três cenários que não podem ser confundidos"
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Mecanismo provável",
+            "Prioridade"
+          ],
+          [
+            [
+              "Edema pulmonar súbito e sopro mitral novo após IAM",
+              "Ruptura de músculo papilar; insuficiência mitral aguda",
+              "Ecocardiografia urgente, suporte e avaliação cirúrgica"
+            ],
+            [
+              "Dor torácica abrupta e insuficiência aórtica aguda",
+              "Dissecção de aorta ascendente",
+              "Avaliação emergencial de síndrome aórtica"
+            ],
+            [
+              "Síncope e dispneia em estenose aórtica grave",
+              "Obstrução fixa ao fluxo com descompensação",
+              "Monitorização e avaliação especializada prioritária"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Não administrar indiscriminadamente vasodilatadores, grandes volumes ou diuréticos com base apenas no diagnóstico genérico 'valvopatia'. O efeito depende de pressão arterial, congestão, função ventricular, lesão específica e estado de perfusão. A estabilização deve ser conduzida por equipe habilitada em ambiente apropriado."
+        ],
+        [
+          "3",
+          "Quando não esperar o ambulatório"
+        ],
+        [
+          "p",
+          "Estenose aórtica grave com síncope de esforço, angina ou edema pulmonar pede avaliação especializada tempestiva. Insuficiência aórtica aguda por dissecção ou endocardite, insuficiência mitral aguda após IAM, trombose obstrutiva de prótese com choque e endocardite com insuficiência cardíaca representam emergências potencialmente cirúrgicas ou percutâneas. O tratamento definitivo depende do mecanismo e não do volume do sopro."
+        ],
+        [
+          "p",
+          "Em paciente valvopata com sepse, fibrilação atrial rápida ou anemia intensa, uma lesão previamente estável pode descompensar por aumento de demanda e redução da reserva cardíaca. Corrigir o gatilho é necessário, mas não autoriza negligenciar lesão valvar grave. Integrar eco ao exame clínico ajuda a distinguir causa principal de agravante."
+        ],
+        [
+          "p",
+          "A presença de gestação, anticoagulação ou prótese mecânica modifica escolhas terapêuticas urgentes. Suspender anticoagulante em prótese mecânica sem avaliação do risco trombótico é potencialmente perigoso; por outro lado, hemorragia ameaçadora e cirurgia de emergência podem exigir estratégias de reversão e transição especializadas."
+        ],
+        [
+          "3",
+          "Matriz diferencial de descompensação"
+        ],
+        [
+          "p",
+          "Dispneia abrupta após infarto pode significar edema pulmonar por disfunção ventricular, mas também ruptura de músculo papilar e insuficiência mitral aguda. A presença de sopro novo e hipotensão aumenta suspeita de complicação mecânica, embora o sopro possa ser discreto. Ecocardiografia à beira-leito acelera reconhecimento e planejamento de intervenção."
+        ],
+        [
+          "p",
+          "Dor torácica lancinante com sinais de má perfusão e novo sopro diastólico sugere dissecção ascendente com insuficiência aórtica. Administrar diurético isolado sem considerar emergência aórtica é perigoso. A estabilização precisa ocorrer paralelamente à avaliação por equipe especializada e exame de imagem adequado à condição hemodinâmica."
+        ],
+        [
+          "p",
+          "Prótese valvar mecânica com dispneia aguda e gradiente elevado pode ter trombose obstrutiva. Febre ou hemoculturas positivas introduzem hipótese de endocardite, enquanto degeneração biológica costuma seguir curso diferente. Distinguir mecanismos com imagem orienta intervenção; trombólise, cirurgia ou outros métodos apresentam riscos específicos e não são intercambiáveis."
+        ],
+        [
+          "p",
+          "Estenose mitral pode descompensar com fibrilação atrial rápida, febre, anemia ou gestação mesmo sem mudança abrupta na área valvar. A taquicardia agrava gradiente diastólico e congestão pulmonar. Controlar o fator precipitante e a frequência pode estabilizar, mas não elimina necessidade de avaliar intervenção valvar quando lesão é importante."
+        ]
+      ]
+    ],
+    [
+      "proteses",
+      0,
+      [
+        [
+          "2",
+          "Próteses, anticoagulação e endocardite"
+        ],
+        [
+          "p",
+          "Próteses mecânicas exigem anticoagulação com antagonista da vitamina K e monitorização de INR, com alvo dependente do tipo/posição da prótese e fatores de risco. Anticoagulantes orais diretos não substituem varfarina em válvulas mecânicas. Biopróteses têm outras estratégias antitrombóticas conforme período, posição e comorbidades."
+        ],
+        [
+          "p",
+          "Profilaxia antibiótica para endocardite não é recomendada indiscriminadamente a todos os portadores de sopro. É reservada a situações de alto risco e procedimentos específicos segundo diretriz aplicável. Febre persistente em paciente com prótese ou sinais de embolia demanda investigação clínica e hemoculturas antes de antibiótico quando possível e seguro."
+        ],
+        [
+          "3",
+          "Prótese mecânica versus biológica"
+        ],
+        [
+          "t",
+          [
+            "Aspecto",
+            "Mecânica",
+            "Biológica"
+          ],
+          [
+            [
+              "Durabilidade",
+              "Geralmente maior",
+              "Degeneração estrutural ao longo do tempo"
+            ],
+            [
+              "Anticoagulação",
+              "Antagonista da vitamina K prolongado",
+              "Estratégia variável por período e comorbidades"
+            ],
+            [
+              "Escolha",
+              "Considerar idade, gestação, adesão e preferências",
+              "Considerar reintervenção, risco hemorrágico e preferências"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Gestação com prótese mecânica exige planejamento pré-concepcional especializado, pois anticoagulação envolve risco materno de trombose e risco fetal conforme esquema e fase gestacional. A decisão não se resume a suspender varfarina. A escolha de prótese deve discutir consequências para toda a vida, incluindo necessidade de futuras intervenções e acesso ao monitoramento."
+        ],
+        [
+          "3",
+          "Disfunção protética"
+        ],
+        [
+          "p",
+          "Dispneia nova, gradientes aumentados ou mudança de ruído protético podem indicar trombose, pannus, degeneração ou endocardite. A investigação integra eco transtorácico, transesofágico e outros métodos conforme prótese e suspeita. Trombose de prótese mecânica pode causar obstrução grave e requer atendimento emergencial."
+        ],
+        [
+          "3",
+          "Anticoagulação, prevenção e complicações"
+        ],
+        [
+          "p",
+          "Próteses mecânicas são trombogênicas e habitualmente exigem anticoagulação com antagonista da vitamina K, com INR-alvo conforme tipo, posição, fatores de risco e protocolo. Anticoagulantes diretos não devem ser presumidos substitutos seguros em prótese mecânica. Próteses biológicas frequentemente têm manejo antitrombótico diferente, variando com tempo desde implante, ritmo e indicação concomitante."
+        ],
+        [
+          "p",
+          "Antes de procedimento odontológico invasivo, a profilaxia de endocardite é reservada a populações cardíacas de alto risco definidas em diretrizes, e não a toda pessoa com sopro. Higiene bucal e tratamento regular de focos infecciosos são importantes para prevenção. Uso indiscriminado de antibiótico gera efeitos adversos e resistência."
+        ],
+        [
+          "p",
+          "Febre persistente com prótese valvar, nova insuficiência cardíaca, hemoculturas positivas ou fenômenos embólicos exige avaliar endocardite infecciosa. Coletar hemoculturas adequadas antes de antibioticoterapia quando possível e recorrer a ecocardiografia e imagem complementar conforme probabilidade e apresentação. Hemocultura negativa após antibióticos prévios pode dificultar confirmação; a equipe deve considerar isso ao organizar testes."
+        ],
+        [
+          "p",
+          "Prótese com novo gradiente elevado e instabilidade pode representar trombose, degeneração ou pannus. Discriminar mecanismos requer integração entre história, ecocardiografia transesofágica, tomografia e fluoroscopia em certos tipos. Tratamento varia desde anticoagulação dirigida até intervenção urgente; não há terapêutica única para todo aumento de gradiente."
+        ],
+        [
+          "3",
+          "Próteses e intercorrências clínicas no seguimento"
+        ],
+        [
+          "p",
+          "Prótese biológica e mecânica têm perfis distintos de durabilidade, trombogenicidade e necessidade de anticoagulação. A escolha inicial precisa levar em conta idade, gestação planejada, adesão e acesso à monitorização de INR, comorbidades e risco de nova operação. O consentimento informado inclui consequências futuras e não se limita ao risco da cirurgia imediata."
+        ],
+        [
+          "p",
+          "Próteses mecânicas em geral requerem antagonista da vitamina K por longo prazo, com alvo de INR individual conforme modelo, posição e fatores de risco. Anticoagulantes orais diretos não são equivalentes para próteses mecânicas. Suspensão temporária antes de procedimento invasivo exige avaliar risco trombótico, tipo de operação, necessidade de ponte e sangramento potencial."
+        ],
+        [
+          "p",
+          "Avaliação ecocardiográfica basal após implante fornece referência para gradientes e regurgitação. Um gradiente elevado isolado pode refletir maior fluxo ou desproporção prótese-paciente, enquanto elevação progressiva sugere degeneração ou trombose. Fluoroscopia pode ajudar a avaliar mobilidade de componentes mecânicos; tomografia e eco transesofágico esclarecem mecanismos selecionados."
+        ],
+        [
+          "p",
+          "Endocardite protética pode apresentar febre, bacteremia, insuficiência cardíaca, embolizações e abscessos perivalvares, às vezes com imagem inicial difícil. Requer hemoculturas adequadas e abordagem especializada; antibiótico sem avaliação de complicação estrutural pode ser insuficiente. Novos distúrbios de condução em endocardite aórtica aumentam preocupação com extensão perianular."
+        ],
+        [
+          "p",
+          "Profilaxia de endocardite odontológica está limitada a grupos cardíacos de risco muito elevado e procedimentos específicos. Não se aplica indiscriminadamente a todos os portadores de sopro nem substitui higiene oral e atendimento odontológico regular. A indicação e escolha de medicamento devem seguir diretrizes vigentes e histórico de alergias."
+        ],
+        [
+          "p",
+          "Em gravidez de pessoa com prótese mecânica, manutenção de anticoagulação envolve risco materno de trombose e risco fetal de exposição medicamentosa. O plano deve ser organizado antes da gestação quando possível e acompanhado por equipe multidisciplinar de alto risco. Não aplicar automaticamente esquema habitual de paciente não gestante a essa situação."
+        ]
+      ]
+    ],
+    [
+      "algoritmo",
+      0,
+      [
+        [
+          "2",
+          "Algoritmo prático de avaliação"
+        ],
+        [
+          "p",
+          "Primeiro, identificar instabilidade ou sinais de emergência e acionar suporte. Segundo, caracterizar sintomas e provável lesão pela história e ausculta. Terceiro, realizar ecocardiografia Doppler para mecanismo e gravidade. Quarto, integrar sintomas, função ventricular, fluxo e comorbidades. Quinto, decidir seguimento versus avaliação para intervenção em equipe especializada."
+        ],
+        [
+          "p",
+          "O retorno deve registrar sintomas, tolerância ao esforço, função ventricular e periodicidade de ecocardiografia conforme gravidade e diretriz vigente. Não transformar parâmetros isolados em decisão automática sem avaliação de discordâncias e preferência informada."
+        ],
+        [
+          "3",
+          "Matriz de decisão clínica"
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Próximo passo",
+            "Evitar"
+          ],
+          [
+            [
+              "Sopro incidental sem sintomas",
+              "Exame e eco conforme suspeita estrutural",
+              "Rotular gravidade só pela intensidade"
+            ],
+            [
+              "Sintomas e eco grave",
+              "Discussão de intervenção em equipe especializada",
+              "Aguardar descompensação irreversível"
+            ],
+            [
+              "Eco discordante",
+              "Revisar técnica, fluxo e métodos adicionais",
+              "Usar um único número"
+            ],
+            [
+              "Instabilidade e suspeita valvar aguda",
+              "Suporte, eco urgente e referência",
+              "Encaminhamento ambulatorial simples"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O acompanhamento longitudinal deve registrar sintomas, classe funcional, sinais de congestão, eventos arrítmicos, exames prévios e decisões compartilhadas. Sintomas podem ser subestimados por pacientes que reduziram atividades gradualmente. Perguntas sobre distância percorrida, escadas e tarefas cotidianas ajudam a revelar limitação funcional."
+        ],
+        [
+          "3",
+          "Seguimento longitudinal e discussão com Heart Team"
+        ],
+        [
+          "p",
+          "Em cada consulta, registrar sintomas, capacidade funcional, ausculta, ritmo, PA, sinais de congestão, resultados do ecocardiograma e comparação com o estudo anterior. O intervalo de imagem depende da gravidade, da lesão específica e da velocidade de progressão, não de um calendário único para todas as valvopatias. Surgimento de sintoma novo ou mudança de exame físico pode antecipar reavaliação."
+        ],
+        [
+          "p",
+          "Quando gravidade anatômica e sintomas não combinam, rever possibilidade de doença pulmonar, isquemia, arritmia, anemia, subestimação de regurgitação ou doença valvar múltipla. Testes funcionais supervisionados e imagem multimodal são úteis em pessoas selecionadas. O objetivo é responder de forma explícita: a lesão é grave? explica a síndrome? há benefício e momento certo de intervir?"
+        ],
+        [
+          "p",
+          "Decisões em valvopatia importante idealmente envolvem cardiologia clínica, especialista em imagem, cirurgia cardíaca, hemodinâmica e equipe de anestesia quando indicado. Preferência do paciente, recuperação esperada, durabilidade protética, anticoagulação ao longo da vida e acesso à rede de saúde devem ser discutidos antes da intervenção."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "Casos integradores"
+        ],
+        [
+          "p",
+          "Caso 1: idoso com síncope de esforço, sopro sistólico irradiado para carótidas e ecocardiograma com Vmáx 4,5 m/s. Hipótese: estenose aórtica grave sintomática. Conduta: avaliação especializada prioritária para intervenção, investigando risco e anatomia."
+        ],
+        [
+          "p",
+          "Caso 2: jovem com febre e insuficiência mitral aguda, dispneia intensa e edema pulmonar. Considerar endocardite com destruição valvar, colher hemoculturas quando possível sem retardar cuidado e solicitar ecocardiografia urgente."
+        ],
+        [
+          "p",
+          "Caso 3: mulher com estenose mitral reumática e fibrilação atrial que piora dispneia na gestação. Taquicardia reduz enchimento diastólico e aumenta pressão atrial; necessita avaliação cardiológica/obstétrica especializada."
+        ],
+        [
+          "p",
+          "Caso 4: paciente com regurgitação aórtica crônica, pulso amplo e dilatação progressiva de ventrículo esquerdo. Avaliar sintomas, função e dimensões para definir momento de intervenção."
+        ],
+        [
+          "p",
+          "Caso 5: pessoa com prótese mecânica que deseja trocar varfarina por anticoagulante oral direto. Não fazer troca: DOACs são contraindicados para anticoagulação de válvula mecânica; revisar INR e acompanhamento."
+        ],
+        [
+          "p",
+          "Caso 6 — Mulher de 77 anos com dispneia progressiva e estenose aórtica: Vmáx 3,6 m/s, gradiente médio 31 mmHg, área 0,8 cm², FE 32% e baixo volume sistólico. Não classificar automaticamente como leve porque gradiente está abaixo de 40. Revisar medidas e carga, considerar fenótipo de baixo fluxo e exames complementares indicados por equipe de valvopatias para decidir intervenção."
+        ],
+        [
+          "p",
+          "Caso 7 — Homem após infarto agudo com edema pulmonar súbito e novo sopro mitral discreto. Regurgitação mitral aguda grave por ruptura de músculo papilar é possível apesar de ventrículo não dilatado. Solicitar ecocardiografia urgente, estabilizar e mobilizar equipe cirúrgica/intervencionista; sem atribuir descompensação somente à necrose miocárdica."
+        ],
+        [
+          "p",
+          "Caso 8 — Gestante com estenose mitral reumática previamente moderada evolui com taquicardia e congestão pulmonar. O aumento do volume circulante e o encurtamento da diástole ampliam gradiente e pressão atrial. Controlar fatores precipitantes, avaliar frequência, congestão, gravidade valvar e necessidade de tratamento com cardiologia e obstetrícia de alto risco."
+        ],
+        [
+          "p",
+          "Caso 9 — Portador de prótese mecânica mitral com INR subterapêutico, dispneia aguda e novo gradiente transprotético elevado. Suspeitar de trombose obstrutiva, realizar avaliação ecocardiográfica e multimodal conforme estabilidade e discutir tratamento urgente com Heart Team. Não concluir degeneração sem esclarecer mecanismo."
+        ],
+        [
+          "3",
+          "Casos clínicos adicionais e comentários"
+        ],
+        [
+          "p",
+          "Caso 10 — Mulher de 64 anos com doença reumática, fibrilação atrial, dispneia e área mitral reduzida. Análise: revisar grau anatômico, gradientes no ritmo/frequência atuais, trombo atrial, anticoagulação com AVK conforme contexto e elegibilidade para valvotomia. Não escolher anticoagulante direto como reflexo de algoritmo de FA não valvar."
+        ],
+        [
+          "p",
+          "Caso 11 — Homem de 73 anos com insuficiência tricúspide grave, edema e ascite, valva mitral previamente operada. Análise: investigar ventrículo direito, pressões pulmonares, mecanismo (incluindo eletrodo ou anel), congestão hepática e risco operatório. Diurético pode aliviar sintomas, mas avaliação precoce em centro especializado é relevante."
+        ],
+        [
+          "p",
+          "Caso 12 — Jovem com valva aórtica bicúspide, sopro sistólico e aorta ascendente dilatada. Análise: quantificar gravidade da estenose/regurgitação, dimensionar aorta e considerar história familiar. Escolha de intervenção depende da combinação valva e aorta; não decidir prótese apenas pela idade."
+        ],
+        [
+          "p",
+          "Caso 13 — Paciente com prótese biológica aórtica implantada há anos desenvolve fadiga e gradiente progressivamente elevado. Análise: comparar ecocardiograma basal, excluir alto fluxo, desproporção prótese-paciente, trombose e degeneração. Planejar imagem multimodal e discutir reintervenção, sem atribuir automaticamente o achado à 'idade da prótese'."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "Questões autorais comentadas"
+        ],
+        [
+          "p",
+          "Q1. Sopro sistólico ejetivo com irradiação carotídea sugere: A) estenose aórtica B) estenose mitral C) insuficiência aórtica D) pericardite. Gabarito A. A corresponde ao padrão; B tem ruflar diastólico; C sopro diastólico; D pode gerar atrito, não sopro ejetivo."
+        ],
+        [
+          "p",
+          "Q2. Ruflar diastólico apical com estalido de abertura sugere: A) insuficiência mitral B) estenose mitral C) estenose pulmonar D) insuficiência tricúspide. Gabarito B. A/D tipicamente sistólicas; C ejetiva sistólica; B clássica."
+        ],
+        [
+          "p",
+          "Q3. Em prótese valvar mecânica, anticoagulação habitual utiliza: A) apixabana B) rivaroxabana C) varfarina D) apenas AAS. Gabarito C. DOACs não são indicados para válvulas mecânicas; antiagregante isolado não substitui anticoagulação."
+        ],
+        [
+          "p",
+          "Q4. Exame inicial principal para quantificar valvopatia é: A) radiografia B) eco Doppler C) troponina isolada D) hemograma. Gabarito B. Demais exames são complementares conforme suspeita e não quantificam lesão."
+        ],
+        [
+          "p",
+          "Q5. Regurgitação mitral aguda grave após IAM pode decorrer de: A) ruptura de músculo papilar B) fusão comissural reumática C) calcificação isolada da valva pulmonar D) comunicação interatrial. Gabarito A. A provoca falha súbita do aparelho subvalvar; demais não explicam esse quadro típico."
+        ],
+        [
+          "p",
+          "Q6. Na estenose aórtica, discordância entre área, fluxo e gradiente exige: A) ignorar área B) integrar parâmetros e investigar baixo fluxo C) operar qualquer sopro D) excluir doença. Gabarito B. A/C/D são reducionistas e inseguras."
+        ],
+        [
+          "p",
+          "Q7. Insuficiência tricúspide importante pode produzir: A) edema e congestão hepática B) somente hemoptise C) ausência de alterações sistêmicas D) pulso carotídeo parvus et tardus obrigatório. Gabarito A. Refluxo direito favorece congestão venosa; D é associado à estenose aórtica."
+        ],
+        [
+          "p",
+          "Q8. Profilaxia antibiótica de endocardite é: A) indicada para todo sopro B) universal em consulta C) restrita a grupos e procedimentos de alto risco D) substituto do tratamento odontológico. Gabarito C. A/B são excessos e D é falso."
+        ],
+        [
+          "p",
+          "Q9. Paciente com estenose aórtica com área 0,8 cm² e gradiente médio de 25 mmHg deve: A) ser rotulado como leve B) ter fluxo, medições e FE reavaliados C) receber alta definitiva D) fazer teste de esforço sempre. Gabarito B. Baixo fluxo e erros de medida podem explicar discordância; o gradiente isolado não encerra avaliação."
+        ],
+        [
+          "p",
+          "Q10. Regurgitação mitral secundária a remodelamento ventricular: A) indicar operação antes de tratamento para IC B) otimizar IC e selecionar intervenção segundo fenótipo e anatomia C) tratar apenas com antibiótico D) ignorar fração de ejeção. Gabarito B. A fisiopatologia do remodelamento precisa ser tratada antes de escolher reparo."
+        ],
+        [
+          "p",
+          "Q11. Estenose mitral reumática importante com fibrilação atrial pede em geral: A) anticoagulante direto obrigatório B) antagonista de vitamina K conforme indicação e gravidade C) nunca anticoagular D) só AAS. Gabarito B. Evidências de anticoagulante direto para FA não valvar não devem ser extrapoladas."
+        ],
+        [
+          "p",
+          "Q12. A anticoagulação habitual de prótese valvar mecânica utiliza: A) apixabana B) antagonista de vitamina K ajustado a risco/posição C) heparina subcutânea exclusiva para a vida toda D) apenas AAS. Gabarito B. Próteses mecânicas exigem estratégia de anticoagulação específica."
+        ],
+        [
+          "p",
+          "Q13. Insuficiência aórtica aguda por dissecção tipo A sugere: A) observação anual B) avaliação cirúrgica emergencial C) apenas diurético oral D) pressão de pulso larga obrigatória. Gabarito B. Regurgitação aguda pode causar choque sem sinais periféricos clássicos."
+        ],
+        [
+          "p",
+          "Q14. Insuficiência mitral com jato excêntrico pequeno no colorido deve: A) ser considerada leve automaticamente B) passar por avaliação multiparamétrica C) ser descartada D) indicar antibiótico. Gabarito B. Efeito Coanda pode subestimar área visual do jato."
+        ],
+        [
+          "p",
+          "Q15. Escolha entre TAVI e cirurgia depende de: A) preferência exclusiva do médico B) idade, anatomia, risco, expectativa e durabilidade C) tamanho do sopro apenas D) nunca considera aorta. Gabarito B. Planejamento deve ser individualizado por equipe especializada."
+        ],
+        [
+          "p",
+          "Q16. Congestão hepática e edema periférico em valvopata sugerem pesquisar: A) insuficiência tricúspide importante B) estenose mitral isolada obrigatória C) apenas anemia D) ausência de doença cardíaca. Gabarito A. Regurgitação direita pode elevar pressão venosa sistêmica."
+        ],
+        [
+          "3",
+          "Questões adicionais de raciocínio"
+        ],
+        [
+          "p",
+          "Q17. Sopro novo após IAM com edema pulmonar e FE preservada pode indicar: A) ruptura papilar com IM aguda B) estenose mitral congênita obrigatória C) pulmão normal D) ausência de emergência. Gabarito A. Regurgitação aguda eleva pressão atrial antes de dilatação ventricular."
+        ],
+        [
+          "p",
+          "Q18. Na estenose mitral, taquicardia aumenta gradiente principalmente porque: A) encurta diástole B) amplia área C) reduz pressão atrial D) elimina refluxo. Gabarito A. Há menos tempo para enchimento através de orifício restrito."
+        ],
+        [
+          "p",
+          "Q19. Insuficiência tricúspide importante pode cursar com: A) ascite e hepatomegalia B) somente hemoptise C) congestão pulmonar isolada universal D) ausência de edema. Gabarito A. O refluxo sistólico prejudica drenagem venosa sistêmica."
+        ],
+        [
+          "p",
+          "Q20. Após implantação valvar, novo gradiente elevado deve ser interpretado com: A) comparação ao eco basal e mecanismo B) ausculta isolada C) decisão imediata sem imagem D) transfusão obrigatória. Gabarito A. Trombose, degeneração, fluxo e desproporção são diferenciais."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências e limites de aplicação"
+        ],
+        [
+          "p",
+          "Diretriz ESC/EACTS 2025 para manejo de valvopatias: https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/valvular-heart-disease . Conferir versão integral e atualizações antes de transformar limiares em indicação automática."
+        ],
+        [
+          "p",
+          "Diretriz ACC/AHA 2020 para doença valvar: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923 . Usar como referência comparativa, respeitando atualizações."
+        ],
+        [
+          "p",
+          "Sociedade Brasileira de Cardiologia: pesquisar e confrontar diretrizes nacionais de valvopatias e profilaxia de endocardite, incluindo data e validade da versão antes da certificação."
+        ],
+        [
+          "p",
+          "Material de benchmark disponível no Drive: '03 - CARDIO - MIOCARDITE, SINCOPE, IC.pdf', lido apenas para identificar fronteira com insuficiência cardíaca; não é apostila específica de valvopatias e não foi reproduzido."
+        ],
+        [
+          "p",
+          "Atualização prioritária: ESC/EACTS Guidelines for the management of valvular heart disease, publicada em 29/08/2025, com errata publicada em agosto de 2026. https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/All-ESC-Practice-Guidelines/Valvular-Heart-Disease . Conferir tabelas da versão corrigida ao validar limiares e classes de recomendação."
+        ]
+      ]
+    ]
+  ]
+}

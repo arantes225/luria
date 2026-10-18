@@ -1,0 +1,16 @@
+{
+  "id": 4,
+  "slug": "pre-natal-baixo-risco",
+  "block": 1,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 76549,
+    "references": true,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}

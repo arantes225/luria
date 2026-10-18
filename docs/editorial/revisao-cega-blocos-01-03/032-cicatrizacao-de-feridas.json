@@ -1,0 +1,22 @@
+{
+  "id": 32,
+  "slug": "cicatrizacao-de-feridas",
+  "block": 2,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 15,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 131578,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

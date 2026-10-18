@@ -1,0 +1,698 @@
+{
+  "base": "e9d9524f4f438e3d9a8c36f513696354ded31aa2",
+  "date": "2026-10-17",
+  "clinicalCertification": false,
+  "imagesApproved": 0,
+  "books": [
+    {
+      "id": 1,
+      "block": 1,
+      "slug": "sindromes-coronarianas-agudas",
+      "source": "content.json",
+      "chars": 93200,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 2,
+      "block": 1,
+      "slug": "avaliacao-pre-operatoria-risco-cirurgico",
+      "source": "content.json",
+      "chars": 111267,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 3,
+      "block": 1,
+      "slug": "assistencia-recem-nascido-sala-parto",
+      "source": "content.json",
+      "chars": 75687,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 4,
+      "block": 1,
+      "slug": "pre-natal-baixo-risco",
+      "source": "index.html",
+      "chars": 76919,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 5,
+      "block": 1,
+      "slug": "principios-diretrizes-sus",
+      "source": "content.json",
+      "chars": 67701,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 6,
+      "block": 1,
+      "slug": "insuficiencia-cardiaca",
+      "source": "content.json",
+      "chars": 89874,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 7,
+      "block": 1,
+      "slug": "cuidados-perioperatorios-prevencao-complicacoes",
+      "source": "content.json",
+      "chars": 117157,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 8,
+      "block": 1,
+      "slug": "reanimacao-neonatal",
+      "source": "content.json",
+      "chars": 92831,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 9,
+      "block": 1,
+      "slug": "diagnostico-datacao-gestacao",
+      "source": "content.json",
+      "chars": 63430,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 10,
+      "block": 1,
+      "slug": "lei-8080-1990",
+      "source": "content.json",
+      "chars": 61045,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 11,
+      "block": 1,
+      "slug": "hipertensao-arterial-sistemica",
+      "source": "content.json",
+      "chars": 83710,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 12,
+      "block": 1,
+      "slug": "resposta-metabolica-ao-trauma",
+      "source": "content.json",
+      "chars": 65446,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 13,
+      "block": 1,
+      "slug": "prematuridade-baixo-peso-nascer",
+      "source": "content.json",
+      "chars": 90643,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 14,
+      "block": 1,
+      "slug": "exames-rastreamentos-pre-natal",
+      "source": "content.json",
+      "chars": 84247,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 15,
+      "block": 1,
+      "slug": "lei-8142-1990",
+      "source": "content.json",
+      "chars": 88631,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 16,
+      "block": 1,
+      "slug": "arritmias-fibrilacao-atrial",
+      "source": "content.json",
+      "chars": 111958,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 17,
+      "block": 1,
+      "slug": "reposicao-volemica-disturbios-hidroeletroliticos",
+      "source": "content.json",
+      "chars": 85314,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 18,
+      "block": 1,
+      "slug": "ictericia-neonatal",
+      "source": "content.json",
+      "chars": 83278,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 19,
+      "block": 1,
+      "slug": "vacinacao-suplementacao-gestacao",
+      "source": "content.json",
+      "chars": 86486,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 20,
+      "block": 1,
+      "slug": "atencao-primaria-saude-atributos",
+      "source": "content.json",
+      "chars": 84459,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 21,
+      "block": 1,
+      "slug": "valvopatias",
+      "source": "content.json",
+      "chars": 69483,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 22,
+      "block": 1,
+      "slug": "choque-hemorragico",
+      "source": "content.json",
+      "chars": 66029,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 23,
+      "block": 1,
+      "slug": "sepse-neonatal",
+      "source": "content.json",
+      "chars": 62711,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 24,
+      "block": 2,
+      "slug": "sindromes-hipertensivas-da-gestacao",
+      "source": "index.html",
+      "chars": 70286,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 25,
+      "block": 2,
+      "slug": "estrategia-saude-da-familia",
+      "source": "content.json",
+      "chars": 114726,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 26,
+      "block": 2,
+      "slug": "endocardite-infecciosa",
+      "source": "content.json",
+      "chars": 129213,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 27,
+      "block": 2,
+      "slug": "nutricao-no-paciente-cirurgico",
+      "source": "content.json",
+      "chars": 126208,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 28,
+      "block": 2,
+      "slug": "aleitamento-materno",
+      "source": "content.json",
+      "chars": 107035,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 29,
+      "block": 2,
+      "slug": "diabetes-mellitus-gestacional",
+      "source": "index.html",
+      "chars": 65994,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 30,
+      "block": 2,
+      "slug": "politica-nacional-de-atencao-basica",
+      "source": "content.json",
+      "chars": 95606,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 31,
+      "block": 2,
+      "slug": "pericardite-e-tamponamento-cardiaco",
+      "source": "content.json",
+      "chars": 106265,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 32,
+      "block": 2,
+      "slug": "cicatrizacao-de-feridas",
+      "source": "content.json",
+      "chars": 129166,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 33,
+      "block": 2,
+      "slug": "alimentacao-complementar",
+      "source": "content.json",
+      "chars": 179330,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 34,
+      "block": 2,
+      "slug": "infeccoes-gestacao-transmissao-vertical",
+      "source": "index.html",
+      "chars": 62229,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 35,
+      "block": 2,
+      "slug": "redes-de-atencao-a-saude",
+      "source": "content.json",
+      "chars": 98262,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 36,
+      "block": 2,
+      "slug": "tromboembolismo-venoso-e-embolia-pulmonar",
+      "source": "content.json",
+      "chars": 112684,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 37,
+      "block": 2,
+      "slug": "infeccao-do-sitio-cirurgico-e-antibioticoprofilaxia",
+      "source": "content.json",
+      "chars": 69609,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 38,
+      "block": 2,
+      "slug": "crescimento-e-desenvolvimento",
+      "source": "content.json",
+      "chars": 141591,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 39,
+      "block": 2,
+      "slug": "sangramento-na-primeira-metade-da-gestacao",
+      "source": "index.html",
+      "chars": 66799,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 40,
+      "block": 2,
+      "slug": "regionalizacao-hierarquizacao-e-referencia-contrarreferencia",
+      "source": "content.json",
+      "chars": 75220,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 41,
+      "block": 2,
+      "slug": "choque-circulatorio",
+      "source": "index.html",
+      "chars": 64624,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 42,
+      "block": 2,
+      "slug": "principios-de-tecnica-cirurgica",
+      "source": "index.html",
+      "chars": 66621,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 43,
+      "block": 2,
+      "slug": "puericultura-e-prevencao-de-acidentes",
+      "source": "content.json",
+      "chars": 86995,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 44,
+      "block": 2,
+      "slug": "abortamento",
+      "source": "content.json",
+      "chars": 138882,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 45,
+      "block": 2,
+      "slug": "participacao-e-controle-social-no-sus",
+      "source": "content.json",
+      "chars": 60836,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 46,
+      "block": 2,
+      "slug": "asma",
+      "source": "content.json",
+      "chars": 152019,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 47,
+      "block": 3,
+      "slug": "trauma-atendimento-inicial-abcde",
+      "source": "content.json",
+      "chars": 97146,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 48,
+      "block": 3,
+      "slug": "imunizacoes-na-infancia",
+      "source": "content.json",
+      "chars": 73217,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 49,
+      "block": 3,
+      "slug": "gestacao-ectopica",
+      "source": "content.json",
+      "chars": 69631,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 50,
+      "block": 3,
+      "slug": "financiamento-e-gestao-do-sus",
+      "source": "content.json",
+      "chars": 62056,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 51,
+      "block": 3,
+      "slug": "dpoc",
+      "source": "content.json",
+      "chars": 65037,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 52,
+      "block": 3,
+      "slug": "traumatismo-cranioencefalico",
+      "source": "content.json",
+      "chars": 82486,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 53,
+      "block": 3,
+      "slug": "desidratacao-e-terapia-de-reidratacao",
+      "source": "content.json",
+      "chars": 59199,
+      "deficit": 801,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "id": 54,
+      "block": 3,
+      "slug": "doenca-trofoblastica-gestacional",
+      "source": "content.json",
+      "chars": 66354,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 55,
+      "block": 3,
+      "slug": "vigilancia-em-saude",
+      "source": "content.json",
+      "chars": 61237,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 56,
+      "block": 3,
+      "slug": "pneumonias-adquiridas-na-comunidade",
+      "source": "content.json",
+      "chars": 91187,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 57,
+      "block": 3,
+      "slug": "trauma-toracico",
+      "source": "content.json",
+      "chars": 59115,
+      "deficit": 885,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "id": 58,
+      "block": 3,
+      "slug": "diarreia-aguda",
+      "source": "content.json",
+      "chars": 60559,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 59,
+      "block": 3,
+      "slug": "sangramento-na-segunda-metade-da-gestacao",
+      "source": "content.json",
+      "chars": 70177,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 60,
+      "block": 3,
+      "slug": "vigilancia-epidemiologica",
+      "source": "content.json",
+      "chars": 68008,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 61,
+      "block": 3,
+      "slug": "tuberculose-pulmonar",
+      "source": "content.json",
+      "chars": 100224,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 62,
+      "block": 3,
+      "slug": "trauma-abdominal",
+      "source": "content.json",
+      "chars": 59339,
+      "deficit": 661,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "id": 63,
+      "block": 3,
+      "slug": "doenca-do-refluxo-gastroesofagico-na-infancia",
+      "source": "content.json",
+      "chars": 73775,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 64,
+      "block": 3,
+      "slug": "placenta-previa-e-descolamento-prematuro-de-placenta",
+      "source": "content.json",
+      "chars": 65495,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 65,
+      "block": 3,
+      "slug": "vigilancia-sanitaria",
+      "source": "content.json",
+      "chars": 69449,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 66,
+      "block": 3,
+      "slug": "derrame-pleural",
+      "source": "content.json",
+      "chars": 90998,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 67,
+      "block": 3,
+      "slug": "trauma-pelvico-e-geniturinario",
+      "source": "content.json",
+      "chars": 54195,
+      "deficit": 5805,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "id": 68,
+      "block": 3,
+      "slug": "desnutricao-e-deficiencias-nutricionais",
+      "source": "content.json",
+      "chars": 68509,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "id": 69,
+      "block": 3,
+      "slug": "assistencia-ao-parto",
+      "source": "index.html",
+      "chars": 61673,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    }
+  ]
+}

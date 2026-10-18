@@ -1,0 +1,22 @@
+{
+  "id": 43,
+  "slug": "puericultura-e-prevencao-de-acidentes",
+  "block": 2,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 23,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 89074,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

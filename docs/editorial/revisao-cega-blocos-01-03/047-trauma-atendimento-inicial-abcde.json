@@ -1,0 +1,22 @@
+{
+  "id": 47,
+  "slug": "trauma-atendimento-inicial-abcde",
+  "block": 3,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 28,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 99341,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

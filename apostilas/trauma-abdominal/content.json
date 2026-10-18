@@ -1,0 +1,1041 @@
+{
+  "v": 2,
+  "s": "trauma-abdominal",
+  "t": "Trauma Abdominal",
+  "p": "Tratado completo sobre Trauma Abdominal Contuso e Penetrante: indicações imediatas de laparotomia, protocolo eFAST em 4 janelas, critérios e falha do Tratamento Não Operatório (TNO) em lesões de baço e fígado (escalas AAST), hematomas retroperitoneais (Zonas 1, 2 e 3), cirurgia de controle de danos (damage control surgery), síndrome compartimental abdominal e casos clínicos comentados.",
+  "o": [
+    [
+      "fisiopatologia-mecanismos-trauma-abdominal",
+      "1. Fisiopatologia, Mecanismos de Lesão e Anatomia Cirúrgica Aplicada"
+    ],
+    [
+      "indicacoes-laparotomia-imediata-vs-efast",
+      "2. Avaliação Inicial, Indicações Absolutas de Laparotomia e Papel do eFAST"
+    ],
+    [
+      "abordagem-ferimentos-arma-branca-algoritmo",
+      "3. Algoritmo de Abordagem do Ferimento por Arma Branca no Abdome Anterior"
+    ],
+    [
+      "tratamento-nao-operatorio-baco-figado",
+      "4. Tratamento Não Operatório (TNO) de Baço e Fígado: Escalas AAST e Critérios de Falha"
+    ],
+    [
+      "tecnicas-cirurgicas-hemostasia-figado-esplenectomia",
+      "5. Técnicas Cirúrgicas de Urgência: Manobra de Pringle, Packing Hepático e Esplenectomia"
+    ],
+    [
+      "trauma-visceras-ocas-duodeno-pancreas-colon",
+      "6. Trauma de Vísceras Ocas: Intestino Delgado, Cólon, Duodeno e Pâncreas"
+    ],
+    [
+      "hematomas-retroperitoneais-zonas",
+      "7. Hematomas Retroperitoneais: Classificação por Zonas e Conduta Cirúrgica"
+    ],
+    [
+      "cirurgia-controle-danos-sindrome-compartimental",
+      "8. Cirurgia de Controle de Danos e Síndrome Compartimental Abdominal"
+    ],
+    [
+      "casos-clinicos-comentados-complexos-trauma",
+      "9. Casos Clínicos Comentados de Alta Complexidade Cirúrgica"
+    ],
+    [
+      "questoes-comentadas-residencia-trauma-abdominal",
+      "10. Bateria Completa de Questões Comentadas com Análise de Distratores"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ],
+    [
+      "sec-aprofundamento-vascular-opsi-questoes",
+      "Aprofundamento Avançado: Trauma Vascular Maior, Síndrome OPSI e Bateria de Questões Comentadas"
+    ],
+    [
+      "sec-estomago-balistica-bateria-questoes",
+      "Aprofundamento Avançado: Trauma Gástrico, Balística Forense e Bateria Completa de Questões"
+    ],
+    [
+      "sec-lpd-cinto-seguranca-questoes-finais",
+      "Aprofundamento Avançado: Lavado Peritoneal Diagnóstico, Sinal do Cinto e Questões de Concurso"
+    ],
+    [
+      "sec-peritoniostomia-fechamento-parede",
+      "Aprofundamento Avançado: Manejo da Peritoniostomia e Fechamento da Parede"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Trauma Abdominal",
+    "Tratado completo sobre Trauma Abdominal Contuso e Penetrante: indicações imediatas de laparotomia, protocolo eFAST em 4 janelas, critérios e falha do Tratamento Não Operatório (TNO) em lesões de baço e fígado (escalas AAST), hematomas retroperitoneais (Zonas 1, 2 e 3), cirurgia de controle de danos (damage control surgery), síndrome compartimental abdominal e casos clínicos comentados.",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia do Trauma e Emergências Cirúrgicas",
+      "Tema: Trauma Abdominal"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "fisiopatologia-mecanismos-trauma-abdominal",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiopatologia, Mecanismos de Lesão e Anatomia Cirúrgica Aplicada"
+        ],
+        [
+          "3",
+          "Mecanismos de Energia Cinética no Trauma Abdominal"
+        ],
+        [
+          "p",
+          "O abdome é uma região anatômica ampla e desprovida de arcabouço ósseo protetor anterior completo, abrigando órgãos parenquimatosos ricamente vascularizados (fígado, baço, rins, pâncreas), vísceras ocas com conteúdo enzimático e séptico (estômago, duodeno, intestino delgado, cólon), além dos maiores eixos vasculares do organismo (aorta abdominal, veia cava inferior, vasos ilíacos e mesentéricos). As lesões abdominais representam a principal causa de morte evitável ou tardia no politraumatizado decorrente de hemorragia exsanguinante não contida ou sepse secundária à peritonite fecal."
+        ],
+        [
+          "p",
+          "A abordagem diagnóstica e terapêutica depende primordialmente do mecanismo do trauma:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Trauma Abdominal Fechado (Contuso):</strong> Decorrente de desaceleração horizontal/vertical brusca (acidentes com veículos automotores) ou impacto direto de alta energia (atropelamentos, agressões, quedas). As forças de compressão transmitem ondas de pressão que esmagam vísceras sólidas contra a coluna vertebral e arcos costais posteriores. Forças de cisalhamento laceram pedículos vasculares e pontos de fixação mesentérica (ligamento de Treitz, ângulo ileocecal). <strong>O baço (40% a 55%) é o órgão mais comumente lesado no trauma contuso</strong>, seguido de perto pelo fígado (35% a 45%) e intestino delgado (5% a 10%).",
+            "<strong>Trauma Abdominal Penetrante por Arma Branca (FAB):</strong> Lesão de baixa velocidade com trajeto linear previsível dependente do comprimento da lâmina e da espessura da parede do paciente. <strong>O fígado (40%) é o órgão mais acometido nas FABs</strong>, seguido pelo intestino delgado (30%), diafragma (20%) e cólon (15%). Cerca de 25% a 30% das FABs abdominais anteriores não penetram a aponeurose e não causam lesão visceral.",
+            "<strong>Trauma Abdominal Penetrante por Arma de Fogo (FAF):</strong> Lesão de alta ou média energia cinética (<span class=\"book-math\">E = (1) / (2) m v<sup>2</sup></span>), provocando lesão direta por perfuração, fragmentação óssea secundária e cavitação temporária violenta ao redor do trajeto. Mais de 90% a 95% das FAFs que penetram a cavidade peritoneal produzem lesão visceral significativa, sendo <strong>o intestino delgado (50%) o órgão mais acometido</strong>, seguido por cólon (40%), fígado (30%) e vasos retroperitoneais (25%)."
+          ]
+        ],
+        [
+          "3",
+          "Regiões Anatômicas e Espaços Peritoneais"
+        ],
+        [
+          "p",
+          "O cirurgião divide a cavidade abdominal em quatro compartimentos para guiar o raciocínio clínico: 1. Abdome anterior (entre os rebordos costais, ligamentos inguinais e linhas axilares anteriores); 2. Dorso e flancos (entre as linhas axilares anteriores e a coluna vertebral); 3. Pelve verdadeira; 4. Região toracoabdominal (delimitada superiormente pelo 4º espaço intercostal anterior / 6º lateral / 8º posterior e inferiormente pelo rebordo costal). Qualquer trauma penetrante na região toracoabdominal tem risco iminente de lesão diafragmática oculta, exigindo laparoscopia ou toracoscopia diagnóstica."
+        ],
+        [
+          "p",
+          "<p><strong>Atualização de segurança na avaliação abdominal:</strong> a decisão depende da combinação entre mecanismo, estabilidade hemodinâmica, exame seriado, FAST/eFAST, laboratório e tomografia quando o paciente pode tolerá-la. FAST negativo não exclui lesão; em paciente de alto risco, a persistência de dor, queda de hemoglobina, taquicardia, alteração do sensório ou mecanismo relevante exige observação, repetição do exame ou imagem complementar.</p><p>Em instabilidade com suspeita de sangramento intra-abdominal, a prioridade é controle da hemorragia e reanimação guiada por resposta, sem transformar a tomografia em pré-requisito. Em paciente estável, lesões de órgãos sólidos podem ser manejadas de forma não operatória somente com monitorização, equipe capaz de intervir, exames seriados e acesso rápido à angiografia ou cirurgia. A decisão não é baseada apenas no grau radiológico.</p><p>O plano de alta deve registrar sinais de alarme, restrições, retorno, necessidade de imagem e acompanhamento. Dor progressiva, síncope, febre, vômitos persistentes, distensão, melena/hematêmese, icterícia ou redução da diurese exigem reavaliação. Em ferimentos penetrantes, exame abdominal confiável e seriado é parte essencial da seleção; peritonite, instabilidade ou exame não confiável mudam a conduta.</p>"
+        ],
+        [
+          "p",
+          "<p><strong>Atualização de segurança na avaliação abdominal:</strong> a decisão depende da combinação entre mecanismo, estabilidade hemodinâmica, exame seriado, FAST/eFAST, laboratório e tomografia quando o paciente pode tolerá-la. FAST negativo não exclui lesão; em paciente de alto risco, a persistência de dor, queda de hemoglobina, taquicardia, alteração do sensório ou mecanismo relevante exige observação, repetição do exame ou imagem complementar.</p><p>Em instabilidade com suspeita de sangramento intra-abdominal, a prioridade é controle da hemorragia e reanimação guiada por resposta, sem transformar a tomografia em pré-requisito. Em paciente estável, lesões de órgãos sólidos podem ser manejadas de forma não operatória somente com monitorização, equipe capaz de intervir, exames seriados e acesso rápido à angiografia ou cirurgia. A decisão não é baseada apenas no grau radiológico.</p><p>O plano de alta deve registrar sinais de alarme, restrições, retorno, necessidade de imagem e acompanhamento. Dor progressiva, síncope, febre, vômitos persistentes, distensão, melena/hematêmese, icterícia ou redução da diurese exigem reavaliação. Em ferimentos penetrantes, exame abdominal confiável e seriado é parte essencial da seleção; peritonite, instabilidade ou exame não confiável mudam a conduta.</p>"
+        ]
+      ]
+    ],
+    [
+      "indicacoes-laparotomia-imediata-vs-efast",
+      0,
+      [
+        [
+          "2",
+          "2. Avaliação Inicial, Indicações Absolutas de Laparotomia e Papel do eFAST"
+        ],
+        [
+          "3",
+          "Indicações Formais de Laparotomia Exploradora Imediata"
+        ],
+        [
+          "p",
+          "Na sala de trauma, o cirurgião não deve hesitar nem submeter o paciente instável a exames demorados quando há indicação cirúrgica imediata definida pelo ATLS:"
+        ],
+        [
+          "t",
+          [
+            "Cenário Clínico do Paciente",
+            "Indicações Absolutas de Laparotomia Imediata",
+            "Conduta Proscrita (O que NUNCA fazer)"
+          ],
+          [
+            [
+              "<strong>Trauma Contuso</strong>",
+              "• Instabilidade hemodinâmica (choque) com eFAST positivo para líquido livre abdominal;<br>• Peritonite franca (dor à descompressão brusca difusa, abdome em tábua);<br>• Pneumoperitônio radiológico ou tomográfico;<br>• Evisceração de órgãos abdominais;<br>• Lavado Peritoneal Diagnóstico (LPD) francamente positivo (&ge; 10 mL de sangue vivo aspirado).",
+              "NUNCA transportar paciente instável para a Tomografia Computadorizada (a TC é exclusiva do paciente estabilizado)."
+            ],
+            [
+              "<strong>Ferimento por Arma de Fogo (FAF)</strong>",
+              "• Qualquer FAF penetrante com orifício de entrada anterior entre o 4º espaço intercostal e a sínfise púbica;<br>• FAF tangencial com choque, peritonite ou evisceração;<br>• FAF no dorso ou flanco com instabilidade ou peritonite.",
+              "NUNCA tentar tratamento conservador de FAF em abdome anterior sem laparotomia mandatória."
+            ],
+            [
+              "<strong>Ferimento por Arma Branca (FAB)</strong>",
+              "• Instabilidade hemodinâmica;<br>• Sinais evidentes de peritonite;<br>• Evisceração (omento, alça intestinal);<br>• Sangramento gastrointestinal ativo (hematêmese, enterorragia);<br>• Exploração local da ferida evidenciando violação da aponeurose posterior em paciente sintomático.",
+              "NUNCA reintroduzir víscera eviscerada na sala de emergência (deve-se cobrir com compressas estéreis úmidas com soro fisiológico morno)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Protocolo FAST (Focused Assessment with Sonography for Trauma) em 4 Janelas"
+        ],
+        [
+          "p",
+          "O ultrassom na sala de emergência tem acurácia diagnóstica superior a 95% para detecção de hemoperitônio (&ge; 100 a 200 mL de sangue livre):"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Espaço Hepatorrenal (Recesso de Morison):</strong> Local mais dependente da cavidade peritoneal supramesocólica em decúbito dorsal. A presença de lâmina anecoica (preta) entre o fígado e o rim direito é o sinal mais sensível e precoce de hemoperitônio.",
+            "<strong>2. Espaço Esplenorrenal:</strong> Avalia líquido livre entre o baço e o rim esquerdo e no espaço subfrênico esquerdo.",
+            "<strong>3. Janela Pélvica (Fundo de Saco de Douglas / Espaço Retovesical):</strong> Avalia líquido livre atrás da bexiga urinária (que deve estar preferencialmente preenchida para janela acústica).",
+            "<strong>4. Janela Subxifóidea / Pericárdica:</strong> Avalia a integridade do saco pericárdico para excluir tamponamento cardíaco concomitante."
+          ]
+        ],
+        [
+          "p",
+          "O <strong>eFAST estendido</strong> inclui a avaliação dos ápices e bases pulmonares anteriores bilateralmente, pesquisando a ausência do sinal do deslizamento pleural (descartando pneumotórax) e a presença do sinal da praia ao modo M."
+        ]
+      ]
+    ],
+    [
+      "abordagem-ferimentos-arma-branca-algoritmo",
+      0,
+      [
+        [
+          "2",
+          "3. Algoritmo de Abordagem do Ferimento por Arma Branca no Abdome Anterior"
+        ],
+        [
+          "3",
+          "Conduta Racional Diante do Ferimento por Arma Branca (FAB)"
+        ],
+        [
+          "p",
+          "Diferentemente da FAF, a maioria dos ferimentos por faca no abdome anterior não requer laparotomia imediata se o paciente estiver estável e assintomático. O fluxograma oficial do ATLS e CBC estabelece três etapas ordenadas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação de Critérios Cirúrgicos Imediatos:</strong> Choque hemorrágico, peritonite franca ou evisceração determinam laparotomia sem necessidade de qualquer outro exame.",
+            "<strong>Exploração Local da Ferida sob Anestesia Local:</strong> Se o paciente estiver estável e assintomático, o cirurgião realiza antissepsia, anestesia local e explora a ferida com pinças e afastadores sob visualização direta para avaliar a aponeurose anterior do músculo reto abdominal. Se a aponeurose estiver comprovadamente ÍNTEGRA, o ferimento é classificado como não penetrante; realiza-se sutura da pele e alta hospitalar com orientações.",
+            "<strong>Conduta se a Aponeurose estiver VIOLADA (ou exploração inconclusiva):</strong> O paciente penetrou a cavidade peritoneal. Existem duas estratégias validadas internacionalmente:\n    <ul>\n      <li><strong>Exame Físico Seriado em Ambiente Hospitalar:</strong> Monitorização clínica e exame abdominal repetido a cada 2 a 4 horas pela mesma equipe cirúrgica por 24 a 48 horas, associada a hemograma seriado. Se desenvolver dor progressiva, febre, taquicardia ou leucocitose, indica-se laparotomia. Possui sensibilidade e segurança superiores a 95%.",
+            "<strong>Tomografia Computadorizada Contrastada / Videolaparoscopia:</strong> A videolaparoscopia é o exame padrão-ouro para ferimentos na transição toracoabdominal para avaliar laceração do diafragma."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-nao-operatorio-baco-figado",
+      0,
+      [
+        [
+          "2",
+          "4. Tratamento Não Operatório (TNO) de Baço e Fígado: Escalas AAST e Critérios de Falha"
+        ],
+        [
+          "3",
+          "Pilares do Tratamento Não Operatório (TNO) no Trauma Contuso"
+        ],
+        [
+          "p",
+          "A conservação do baço e do fígado transformou-se no padrão-ouro assistencial para mais de 80% dos traumas contusos viscerais no paciente <strong>hemodinamicamente estável</strong>. A conduta não operatória evita laparotomias não terapêuticas, previne infecções fulminantes pós-esplenectomia (OPSI por germes encapsulados: <em>S. pneumoniae</em>, <em>N. meningitidis</em>, <em>H. influenzae</em>) e reduz o tempo de hospitalização."
+        ],
+        [
+          "t",
+          [
+            "Escala AAST",
+            "Lesão Esplênica (Baço)",
+            "Lesão Hepática (Fígado)",
+            "Estratégia Terapêutica Habitual"
+          ],
+          [
+            [
+              "<strong>Grau I</strong>",
+              "Hematoma subcapsular &lt; 10% da superfície; laceração capsular &lt; 1 cm de profundidade parenquimatosa.",
+              "Hematoma subcapsular &lt; 10% da superfície; laceração capsular &lt; 1 cm de profundidade.",
+              "TNO: internação em enfermaria/UTI, repouso absoluto no leito por 24 a 48h, monitorização seriada de sinais vitais e hematócrito a cada 6 horas."
+            ],
+            [
+              "<strong>Grau II</strong>",
+              "Hematoma subcapsular 10% a 50%; hematoma intraparenquimatoso &lt; 5 cm; laceração de 1 a 3 cm de profundidade.",
+              "Hematoma subcapsular 10% a 50%; hematoma intraparenquimatoso &lt; 10 cm; laceração de 1 a 3 cm de profundidade.",
+              "TNO hospitalar monitorizado; retorno gradual da deambulação após estabilidade clínica laboratorial."
+            ],
+            [
+              "<strong>Grau III</strong>",
+              "Hematoma subcapsular &gt; 50% ou roto com sangramento ativo contido; hematoma intraparenquimatoso &ge; 5 cm; laceração &gt; 3 cm de profundidade.",
+              "Hematoma subcapsular &gt; 50% ou roto; hematoma intraparenquimatoso &gt; 10 cm; laceração &gt; 3 cm de profundidade.",
+              "TNO em leito de Terapia Intensiva. Na presença de <em>blush</em> arterial de contraste à angiotomografia, indicar <strong>Arteriografia com Angioembolização Seletiva</strong> de imediato."
+            ],
+            [
+              "<strong>Grau IV</strong>",
+              "Laceração envolvendo vasos segmentares ou hilares com desvascularização de mais de 25% do baço.",
+              "Laceração parenquimatosa envolvendo 25% a 75% de um lobo hepático ou de 1 a 3 segmentos de Couinaud no mesmo lobo.",
+              "TNO viável se paciente perfeitamente estável e em centro com UTI, cirurgião 24h e hemodinâmica. Angioembolização profilática/terapêutica frequente. Se instabilidade: cirurgia imediata."
+            ],
+            [
+              "<strong>Grau V</strong>",
+              "Baço completamente fragmentado / estilhaçado ('shattered spleen') ou avulsão do pedículo vascular hilar esplênico.",
+              "Laceração parenquimatosa de mais de 75% do lobo hepático ou avulsão vascular retro-hepática (veia cava inferior retro-hepática / veias supra-hepáticas principais).",
+              "Cirurgia de urgência na maioria esmagadora dos casos (Esplenectomia Total no baço; manobra de Pringle, empacotamento hepático [packing] e controle de danos no fígado)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Critérios Rígidos de Falha do TNO (Indicação de Laparotomia)"
+        ],
+        [
+          "u",
+          [
+            "Queda sustentada do hematócrito necessitando de mais de 2 a 4 concentrados de hemácias nas primeiras 24 horas para manter estabilidade;",
+            "Deterioração hemodinâmica (taquicardia progressiva &gt; 120 bpm, hipotensão com PAS &lt; 90 mmHg persistente);",
+            "Surgimento de dor abdominal progressiva em descompressão brusca (peritonite bacteriana por perfuração despercebida de víscera oca ou peritonite biliar por fístula hepática);",
+            "Falha da angioembolização ou extravasamento ativo volumoso de contraste não contido."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tecnicas-cirurgicas-hemostasia-figado-esplenectomia",
+      0,
+      [
+        [
+          "2",
+          "5. Técnicas Cirúrgicas de Urgência: Manobra de Pringle, Packing Hepático e Esplenectomia"
+        ],
+        [
+          "3",
+          "Manobra de Pringle: Princípios Anatômicos e Limites Temporais"
+        ],
+        [
+          "p",
+          "A Manobra de Pringle consiste no clampeamento digital ou com pinça vascular atraumática (pinça de Satinsky ou bulldog) do <strong>ligamento hepatoduodenal</strong>, que contém os elementos da tríade portal: a veia porta posteriormente, a artéria hepática própria anteromedialmente e o ducto colédoco anterolateralmente. Ao clampear o forame omental de Winslow, interrompe-se 100% do influxo vascular arterial e venoso aferente ao parênquima hepático."
+        ],
+        [
+          "p",
+          "Interpretação do teste cirúrgico:"
+        ],
+        [
+          "u",
+          [
+            "Se o sangramento hepático <strong>cessar ou diminuir drasticamente</strong> após o clampeamento, a lesão localiza-se nos ramos intraparenquimatosos da artéria hepática ou da veia porta. Procede-se à hemostasia cirúrgica direta com sutura hepática (hepatorrafia com pontos em 'U' profundos de fio absorvível rombo) ou aplicação de agentes tópicos hemostáticos.",
+            "Se o sangramento <strong>persistir maciço e inalterado</strong> apesar da Manobra de Pringle eficaz, o sangramento é de origem retro-hepática: lesão da <strong>veia cava inferior retro-hepática ou das veias supra-hepáticas principais</strong> (veias hepáticas direita, média e esquerda). Essa lesão vascular tem mortalidade cirúrgica superior a 70% a 90%; o cirurgião não deve tentar dissecção cega no hematoma, devendo realizar o <strong>empacotamento peri-hepático compressivo (packing)</strong> com compressas estéreis e transferir o paciente para suporte intensivo ou centro terciário.",
+            "<strong>Limite Temporal de Segurança:</strong> O tempo máximo de isquemia hepática contínua normotérmica segura é de <strong>30 a 60 minutos</strong> (ou períodos intermitentes de 15 minutos com 5 minutos de desclampeamento para reperfusão)."
+          ]
+        ],
+        [
+          "3",
+          "Esplenectomia Total vs Preservação Esplênica"
+        ],
+        [
+          "p",
+          "Na vigência de instabilidade hemodinâmica, choque hemorrágico grave ou lesões esplênicas graus IV/V estilhaçadas, a <strong>Esplenectomia Total</strong> é mandatória. Os passos cirúrgicos fundamentais envolvem: 1. Mobilização medial do baço através da secção do ligamento esplenorrenal avascular; 2. Rotação medial do baço e cauda do pâncreas para o campo cirúrgico; 3. Ligadura individualizada dos vasos do hilo esplênico (artéria e veia esplênicas) junto à borda do órgão, com extremo cuidado para não pinçar ou lacerar a cauda do pâncreas (prevenindo fístula pancreática pós-operatória); 4. Ligadura cuidadosa dos vasos gástricos curtos no ligamento gastroesplênico."
+        ],
+        [
+          "p",
+          "<strong>Profilaxia Pós-Esplenectomia:</strong> Todo paciente esplenectomizado deve receber vacinação obrigatória contra germes encapsulados (Pneumococo 13-valente e 23-valente, Meningocócica ACWY e B, e <em>Haemophilus influenzae</em> tipo b) administrada preferencialmente cerca de <strong>14 dias após o procedimento cirúrgico</strong> (quando o sistema imunológico recupera a capacidade de resposta vacinal pós-trauma) e orientações rigorosas sobre profilaxia antibiótica precoce diante de qualquer febre aguda (risco de Sepse Fulminante Pós-Esplenectomia - OPSI)."
+        ]
+      ]
+    ],
+    [
+      "trauma-visceras-ocas-duodeno-pancreas-colon",
+      0,
+      [
+        [
+          "2",
+          "6. Trauma de Vísceras Ocas: Intestino Delgado, Cólon, Duodeno e Pâncreas"
+        ],
+        [
+          "3",
+          "Lesões de Delgado e Mesentério"
+        ],
+        [
+          "p",
+          "O intestino delgado é a víscera oca mais comumente perfurada no trauma abdominal contuso (frequentemente por compressão do cinto de segurança de dois pontos - <em>sinal do cinto de segurança</em> com equimose transversa na parede abdominal). As lesões variam de desvascularização isquêmica mesentérica a transecção total da alça:"
+        ],
+        [
+          "u",
+          [
+            "Perfurações pequenas e isoladas (&lt; 50% da circunferência) sem comprometimento da vascularização mesentérica são tratadas com <strong>desbridamento mínimo e rafia primária transversa em plano único ou duplo</strong> com fio absorvível (Vicryl 3-0), preservando a luz intestinal para não causar estenose.",
+            "Lesões múltiplas contíguas, lacerações extensas (&gt; 50% do diâmetro) ou desvascularização mesentérica requerem <strong>ressecção segmentar de delgado com anastomose término-terminal ou látero-lateral</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Trauma de Cólon: Reparo Primário vs Colostomia"
+        ],
+        [
+          "p",
+          "Historicamente, todas as lesões de cólon eram exteriorizadas em colostomia pelo medo de deiscência anastomótica fecal. Atualmente, múltiplos ensaios clínicos demonstraram que o <strong>Reparo Primário (rafia simples ou ressecção com anastomose primária) é seguro e preferível na maioria dos pacientes</strong>, mesmo em ferimentos penetrantes por arma de fogo no cólon esquerdo, independentemente do tempo de evolução ou contaminação peritoneal moderada, desde que o paciente não esteja em choque refratário ou coagulopatia. A colostomia derivativa (ou procedimento de Hartmann) reserva-se estritamente aos pacientes em choque profundo classe IV com acidose e hipotermia grave submetidos a cirurgia de controle de danos."
+        ],
+        [
+          "3",
+          "O Desafio Cirúrgico do Complexo Duodeno-Pancreático"
+        ],
+        [
+          "p",
+          "O duodeno e o pâncreas situam-se profundamente no retroperitônio anterior (Zona 1), e suas lesões são frequentemente silenciosas nas primeiras horas de trauma contuso (impacto do guidão de bicicleta ou volante no epigástrio):"
+        ],
+        [
+          "t",
+          [
+            "Órgão e Lesão",
+            "Apresentação Diagnóstica Típica",
+            "Conduta Cirúrgica Baseada no Ducto de Wirsung"
+          ],
+          [
+            [
+              "<strong>Hematoma Intramural Duodenal</strong>",
+              "Comum em crianças após trauma epigástrico contuso. O hematoma na submucosa oclui progressivamente o lúmen da 2ª/3ª porção duodenal, manifestando-se por vômitos biliosos incoercíveis 24 a 48h após o trauma. EED ou TC revela sinal da 'mola em espiral' ou 'bico de pássaro'.",
+              "<strong>Tratamento Conservador por 2 a 3 semanas:</strong> descompressão gástrica com sonda nasogástrica e nutrição parenteral total (NPT). Mais de 90% dos hematomas reabsorvem espontaneamente sem cirurgia."
+            ],
+            [
+              "<strong>Perfuração Duodenal Retroperitoneal</strong>",
+              "Dor lombar/epigástrica insidiosa. A radiografia de abdome ou TC evidencia presença de ar retroperitoneal delineando a silhueta do rim direito (enfisema retroperitoneal) ou extravasamento de contraste oral na fase tardia.",
+              "Desbridamento e sutura primária transversa protegida com dreno abdominal. Se lesão complexa: exclusão pilórica com gastrostomia e gastrojejunostomia."
+            ],
+            [
+              "<strong>Trauma Pancreático com Ducto Íntegro (Graus I e II)</strong>",
+              "Contusão ou laceração superficial do parênquima pancreático sem rotura do ducto pancreático principal (Ducto de Wirsung).",
+              "Tratamento conservador ou hemostasia hemostática simples com drenagem ampla fechada de sucção por contra-abertura."
+            ],
+            [
+              "<strong>Trauma Pancreático com Lesão do Ducto Principal (Graus III, IV e V)</strong>",
+              "Transecção do parênquima com rotura do ducto de Wirsung comprovada por colangiorressonância, CPRE ou exploração cirúrgica direta.",
+              "• Lesão distal (à esquerda dos vasos mesentéricos / cauda e corpo): <strong>Pancreatectomia Distal com preservação ou não do baço</strong>;<br>• Lesão proximal (cabeça do pâncreas com envolvimento duodenal grave - Grau V): <strong>Duodenopancreatectomia (Cirurgia de Whipple)</strong>, habitualmente realizada em dois tempos no controle de danos."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "hematomas-retroperitoneais-zonas",
+      0,
+      [
+        [
+          "2",
+          "7. Hematomas Retroperitoneais: Classificação por Zonas e Conduta Cirúrgica"
+        ],
+        [
+          "3",
+          "Zonas Anatômicas do Retroperitônio e Regras de Exploração Cirúrgica"
+        ],
+        [
+          "p",
+          "O retroperitônio abdominal é dividido cirurgicamente em três zonas distintas que orientam a decisão do cirurgião durante uma laparotomia exploradora:"
+        ],
+        [
+          "t",
+          [
+            "Zona Retroperitoneal",
+            "Limites Anatômicos e Estruturas Contidas",
+            "Conduta no Trauma Penetrante (FAB/FAF)",
+            "Conduta no Trauma Contuso (Fechado)"
+          ],
+          [
+            [
+              "<strong>Zona 1 (Central / Medial)</strong>",
+              "Estende-se do hiato aórtico diafragmático até a bifurcação dos vasos ilíacos (promontório sacral). Contém: aorta abdominal, veia cava inferior, tronco celíaco, artérias e veias mesentéricas superiores e duodeno-pâncreas.",
+              "<strong>Exploração Cirúrgica Obrigatória</strong> imediata para hemostasia direta e rafia vascular.",
+              "<strong>Exploração Cirúrgica Obrigatória</strong> imediata após controle vascular proximal e distal, devido ao altíssimo risco de exsanguinação por lesão de grandes vasos."
+            ],
+            [
+              "<strong>Zona 2 (Lateral / Flancos)</strong>",
+              "Fossas lombares direita e esquerda. Contém: rins, glândulas suprarrenais, ureteres e cólon ascendente/descendente retroperitoneal.",
+              "<strong>Exploração Cirúrgica Obrigatória</strong> para afastar perfuração colônica oculta e lesão do pedículo renal ou ureteral.",
+              "<strong>Tratamento Conservador (NÃO explorar)</strong> se o hematoma for estável e não expansivo, com fáscia de Gerota íntegra e sem pulsos anormais. Abrir o hematoma na contusão frequentemente despressuriza o leito e culmina em nefrectomia desnecessária. Explorar apenas se expansivo, pulsátil ou roto livremente na cavidade."
+            ],
+            [
+              "<strong>Zona 3 (Pélvica)</strong>",
+              "Pelve verdadeira abaixo da bifurcação dos vasos ilíacos. Contém: vasos ilíacos internos e externos, plexo venoso pré-sacral e reto.",
+              "<strong>Exploração Cirúrgica Obrigatória</strong> com controle hemostático direto de vasos ilíacos lacerados.",
+              "<strong>Tratamento Conservador (NÃO abrir)</strong> se o hematoma for estável. A abertura cirúrgica rompe o tamponamento pélvico natural e causa sangramento venoso incontrolável. A conduta é o empacotamento pré-peritoneal (packing) e fixação pélvica, seguida de angioembolização."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "cirurgia-controle-danos-sindrome-compartimental",
+      0,
+      [
+        [
+          "2",
+          "8. Cirurgia de Controle de Danos e Síndrome Compartimental Abdominal"
+        ],
+        [
+          "3",
+          "A Tríade Letal e as Três Fases do Controle de Danos (Damage Control)"
+        ],
+        [
+          "p",
+          "No paciente politraumatizado grave em choque descompensado, a morte precoce não decorre da incapacidade de suturar lesões, mas do colapso metabólico da <strong>Tríade Letal: Hipotermia (&lt; 35 °C), Acidose Metabólica (pH &lt; 7,20) e Coagulopatia</strong>. Procedimentos cirúrgicos longos e complexos (ressecções com anastomoses, reconstruções definitivas) nessa fase selam a falência orgânica irreversível."
+        ],
+        [
+          "p",
+          "O conceito de <strong>Cirurgia de Controle de Danos</strong> é executado em três etapas sequenciais estritas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fase I (Cirurgia Abreviada - Máximo 60 a 90 minutos):</strong> Laparotomia rápida com incisão mediana xifopúbica ampla. Objetivos exclusivos: <strong>1. Controle rápido da hemorragia</strong> (ligaduras vasculares, shunts vasculares temporários, empacotamento com compressas / packing de fígado e pelve); <strong>2. Controle rápido da contaminação entérica</strong> (clampeamento, sutura simples ou ligadura de alças pérvias com fios grossos ou grampeadores sem reconstrução de trânsito); <strong>3. Fechamento temporário sem tensão</strong> com bolsa de Bogotá ou curativo a vácuo (peritoniostomia / laparostomia), prevenindo hipertensão intra-abdominal.",
+            "<strong>Fase II (Ressuscitação em UTI - 24 a 48 horas):</strong> Reaquecimento ativo gradual, correção da coagulopatia com protocolo transfusional balanceado (concentrado de hemácias, plasma fresco e plaquetas 1:1:1), infusão de fibrinogênio / crioprecipitado se fibrinogênio &lt; 150-200 mg/dL, correção de cálcio ionizável e acidose, e estabilização ventilatória e hemodinâmica.",
+            "<strong>Fase III (Reoperação Programada - 'Second Look'):</strong> Retorno ao centro cirúrgico após restauração da homeostase fisiológica (habitualmente 48 a 72 horas). Remoção meticulosa das compressas empacotadas, revisão de hemostasia, ressecções definitivas com anastomoses intestinais ou confecção de estomias e fechamento da parede aponeurótica."
+          ]
+        ],
+        [
+          "3",
+          "Hipertensão Intra-Abdominal (HIA) e Síndrome Compartimental Abdominal (SCA)"
+        ],
+        [
+          "p",
+          "A Pressão Intra-Abdominal (PIA) normal varia de 5 a 7 mmHg em pacientes adultos em repouso. A mensuração padrão-ouro é realizada por via <strong>intravesical</strong> (medindo-se a coluna de pressão através de sonda de Foley acoplada a manômetro e infundindo-se 25 mL de SF 0,9% estéril na bexiga):"
+        ],
+        [
+          "t",
+          [
+            "Classificação Oficial WSACS",
+            "Nível da Pressão Intra-Abdominal (PIA)",
+            "Fisiopatologia e Repercussões Clínicas",
+            "Conduta Terapêutica"
+          ],
+          [
+            [
+              "<strong>Hipertensão Intra-Abdominal (Graus I a IV)</strong>",
+              "• Grau I: 12 a 15 mmHg<br>• Grau II: 16 a 20 mmHg<br>• Grau III: 21 a 25 mmHg<br>• Grau IV: &gt; 25 mmHg",
+              "Elevação sustentada da PIA sem disfunção orgânica instalada. Compressão da veia cava inferior e diafragma.",
+              "Medidas clínicas: sonda nasogástrica descompressiva, enema retal, restrição de fluidos, sedação, paralisia neuromuscular e drenagem percutânea de coleções."
+            ],
+            [
+              "<strong>Síndrome Compartimental Abdominal (SCA)</strong>",
+              "<strong>PIA sustentada &gt; 20 mmHg associada obrigatoriamente a uma NOVA disfunção orgânica</strong>",
+              "• Renal: oligúria &lt; 0,5 mL/kg/h e elevação de escórias por compressão da veia renal e arteríolas;<br>• Respiratória: pico pressórico inspiratório elevado, hipercapnia e hipoxemia por elevação diafragmática;<br>• Cardiovascular: queda do débito cardíaco por colapso do retorno venoso.",
+              "<strong>Descompressão Cirúrgica de Emergência (Laparostomia Descompressiva):</strong> Abertura imediata da aponeurose e instalação de curativo de pressão negativa (VAC abdominal) ou bolsa de Bogotá. Salva a função renal e a vida do paciente."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-comentados-complexos-trauma",
+      0,
+      [
+        [
+          "2",
+          "9. Casos Clínicos Comentados de Alta Complexidade Cirúrgica"
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Trauma Contuso em Paciente Instável e eFAST Positivo"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Homem de 26 anos é trazido pelo SAMU após colisão moto contra anteparo em alta velocidade. Na admissão: via aérea pérvia com colar cervical, murmúrio vesicular presente bilateralmente, frequência respiratória 28 irpm, oximetria 95%. Na etapa C: pele fria, pulsos periféricos finos, FC 136 bpm, PA 75/40 mmHg. Abdome tenso e distendido. O emergencista realiza eFAST na sala vermelha, demonstrando lâmina anecoica volumosa no recesso hepatorrenal e no fundo de saco de Douglas. Não há derrame pericárdico ou pleural."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> Paciente com <strong>Trauma Abdominal Contuso com Choque Hemorrágico Descompensado e eFAST Positivo para Hemoperitônio</strong>. Não há indicação de tomografia computadorizada (o transporte para a TC levaria à PCR por choque). A conduta mandatória é a <strong>Laparotomia Exploradora Imediata no Centro Cirúrgico</strong>, associada à ativação imediata do protocolo de transfusão maciça 1:1:1 e administração de ácido tranexâmico (1 g IV nas primeiras 3 horas). Na laparotomia, constatada lesão esplênica grau V com avulsão hilar; procede-se à esplenectomia de urgência."
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Lesão Hepática Grau IV e Falha de TNO por Hemorragia Tardia"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Mulher de 38 anos, vítima de colisão automobilística com cinto de segurança de 3 pontos. Deu entrada estável com PA 120/75 mmHg e FC 82 bpm. A tomografia de abdome revelou laceração hepática profunda no lobo direito estendendo-se por 4 cm sem extravasamento ativo de contraste (Trauma Hepático Grau IV). Optou-se por TNO na UTI. No 3º dia de internação, a paciente evolui subitamente com taquicardia (FC 128 bpm), hipotensão (PA 85/50 mmHg), dor abdominal intensa e queda de 4 pontos no hematócrito (de 33% para 22%)."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> Trata-se de <strong>Falha Tardia do Tratamento Não Operatório por Rotura de Hematoma Subcapsular Hepático</strong>. A deterioração hemodinâmica com queda abrupta da hemoglobina e choque hemorrágico impõe a conversão imediata para <strong>Laparotomia Cirúrgica</strong>. Intraoperatoriamente, o cirurgião realiza a <strong>Manobra de Pringle</strong> (clampeamento temporário do ligamento hepatoduodenal com pinça atraumática para ocluir o fluxo da artéria hepática própria e veia porta). O sangramento arterial diminui sensivelmente, confirmando origem no pedículo hepático; realiza-se hemostasia direta com pontos em 'U' de categute cromado, aplicação de agentes hemostáticos tópicos e empacotamento com compressas (packing peri-hepático) para controle de danos."
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Perfuração Duodenal Oculta Diagnosticada Tardiamente por Retroperitonite"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Jovem de 19 anos sofre impacto direto do guidão de bicicleta no epigástrio em alta velocidade. No atendimento inicial na UPA, queixava-se de leve desconforto epigástrico, estando afebril e normotenso. O raio-X de abdome inicial foi laudado como normal, e o paciente recebeu alta com analgésicos. Retorna 36 horas após com dor lombar direita intensa, febre de 39 °C, vômitos biliosos incoercíveis e taquicardia (FC 120 bpm). Ao exame: dor à palpação profunda do flanco direito e hipogástrio com crepitação retroperitoneal discreta. A tomografia de abdome revela ar e líquido circundando o rim direito e a segunda porção duodenal."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> Trata-se de <strong>Perfuração Duodenal Retroperitoneal Oculta em 2ª Porção Duodenal</strong>. O trauma contuso contra a coluna vertebral comprimiu a alça duodenal fixa, provocando rotura em alça fechada com extravasamento de bile e suco pancreático para o espaço retroperitoneal. A TC com contraste oral e venoso é mandatória. O paciente é submetido à laparotomia de emergência através de ampla <strong>Manobra de Kocher</strong> (incisão do peritônio parietal lateral ao duodeno e rotação medial do complexo duodeno-pancreático). Identificada laceração de 2 cm com necrose de bordas; realiza-se desbridamento, rafia primária transversa em dois planos, exclusão pilórica com gastrostomia descompressiva e gastrojejunostomia em Y de Roux para proteção da sutura, associada a drenagem tubular retroperitoneal ampla."
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Síndrome Compartimental Abdominal Pós-Ressuscitação Maciça"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Homem de 45 anos é submetido à cirurgia de controle de danos por múltiplos ferimentos por arma de fogo em abdome com laceração de cólon e veia ilíaca. Durante o procedimento, recebeu 12 concentrados de hemácias, 10 plasmas frescos e 6 litros de cristaloides. No pós-operatório imediato na UTI, sob ventilação mecânica, o médico intensivista observa elevação súbita do pico pressórico inspiratório de 22 para 45 cmH2O, dessaturação (SpO2 88%), oligúria progressiva (débito de 10 mL/h nas últimas 3 horas) e abdome extremamente tenso e globoso. A mensuração da Pressão Intra-Abdominal (PIA) por cateter vesical revela 28 mmHg."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta:</strong> O paciente preenche critérios formais de <strong>Síndrome Compartimental Abdominal (PIA &gt; 20 mmHg com disfunção orgânica respiratória e renal aguda)</strong> provocada pelo edema maciço visceral e retroperitoneal decorrente da ressuscitação volêmica agressiva e choque. A conduta salvadora de vidas é a <strong>Laparostomia Descompressiva de Emergência no próprio leito da UTI ou no Centro Cirúrgico</strong>. A abertura dos pontos da aponeurose e instalação de curativo de peritoniostomia à vácuo (VAC abdominal) reduz imediatamente a PIA para 10 mmHg, normaliza o pico pressórico pulmonar para 24 cmH2O e restabelece a diurese para 65 mL/h na primeira hora pós-descompressão."
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-trauma-abdominal",
+      0,
+      [
+        [
+          "2",
+          "10. Bateria Completa de Questões Comentadas com Análise de Distratores"
+        ],
+        [
+          "4",
+          "Questão Comentada 1: ENARE 2024 — Ferimento por Arma Branca e Conduta Inicial"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 30 anos chega ao pronto-socorro após sofrer ferimento por faca no flanco esquerdo há 1 hora. Ao exame físico: lúcido e orientado, corado, hidratado, PA: 125/80 mmHg, FC: 78 bpm, abdome flácido, indolor, sem sinais de peritonite. A ferida mede 3 cm de extensão. Qual a conduta indicada para o manejo desse paciente?"
+        ],
+        [
+          "p",
+          "A) Laparotomia exploradora imediata para todos os ferimentos penetrantes em flanco.<br>\n  B) Tomografia computadorizada de abdome e pelve com triplo contraste (oral, venoso e retal) ou exame físico seriado por equipe cirúrgica.<br>\n  C) Alta hospitalar imediata após sutura simples da pele e antibioticoterapia oral.<br>\n  D) Laparoscopia diagnóstica de urgência para avaliação da cavidade peritoneal."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> Em ferimentos por arma branca em flanco ou dorso em paciente hemodinamicamente estável e assintomático, o exame de escolha preconizado pelo Colégio Americano de Cirurgiões e CBC é a <strong>Tomografia Computadorizada com Triplo Contraste</strong> (venoso, oral e retal), que avalia com excelência o retroperitônio e o cólon retroperitoneal, ou a observação clínica seriada com exame físico repetido a cada 2 a 4 horas por 24 a 48 horas pela mesma equipe cirúrgica. A laparotomia imediata (A) é reservada aos casos de choque ou peritonite. Suturar e dar alta (C) é imperícia médica pelo risco de lesão retroperitoneal despercebida."
+        ],
+        [
+          "4",
+          "Questão Comentada 2: USP / CBC — Hematoma Retroperitoneal e Regras de Exploração"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante laparotomia exploradora em vítima de trauma abdominal fechado por colisão com volante, o cirurgião identifica hematoma retroperitoneal volumoso não expansivo restrito à fossa lombar direita (Zona 2 lateral), com fáscia de Gerota íntegra e sem pulsações anormais. O paciente encontra-se estável após rafia de pequena lesão de jejuno. Qual a conduta correta em relação ao hematoma da Zona 2?"
+        ],
+        [
+          "p",
+          "A) Abrir imediatamente a fáscia de Gerota e dissecar o pedículo renal para rafia da artéria renal.<br>\n  B) Realizar nefrectomia direita de urgência profilática para prevenir abscesso perinefrético.<br>\n  C) Manter conduta conservadora, NÃO abrindo a fáscia de Gerota nem explorando o hematoma.<br>\n  D) Puncionar o hematoma com agulha grossa para aspirar o sangue acumulado."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> No <strong>trauma contuso</strong>, os hematomas retroperitoneais de <strong>Zona 2 (lateral/renal) estáveis e não expansivos NÃO devem ser explorados cirurgicamente</strong>. A integridade da fáscia de Gerota garante o tamponamento pressórico natural do parênquima renal; violar essa fáscia na cirurgia de emergência habitualmente despressuriza o leito, reativa sangramentos venosos profundos e frequentemente culmina em nefrectomia desnecessária em um rim viável. Apenas hematomas expansivos, pulsáteis ou rotos para a cavidade livre devem ser abertos."
+        ],
+        [
+          "4",
+          "Questão Comentada 3: UNIFESP — eFAST e Trauma Contuso Instável"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Motociclista de 22 anos dá entrada na sala vermelha após derrapagem em pista molhada. Apresenta-se hipotenso (PA 70/40 mmHg), taquicárdico (FC 140 bpm), com palidez intensa e rebaixamento do sensório (Glasgow 12). Tórax estável com murmúrio simétrico. Abdome discretamente distendido. O emergencista realiza o ultrassom eFAST na sala de trauma e identifica lâmina líquida no espaço de Morison. Qual a conduta mandatória imediata?"
+        ],
+        [
+          "p",
+          "A) Encaminhar imediatamente para angiotomografia computadorizada de abdome e pelve.<br>\n  B) Indicar Laparotomia Exploradora de emergência no Centro Cirúrgico associada a transfusão de hemoderivados 1:1:1.<br>\n  C) Realizar paracentese diagnóstica no leito da emergência para avaliar o hematócrito do líquido.<br>\n  D) Infundir 3 litros de Soro Fisiológico a 0,9% aquecido em 15 minutos e reavaliar o eFAST."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A presença de <strong>instabilidade hemodinâmica associada a eFAST positivo para líquido livre abdominal no trauma contuso é indicação absoluta de Laparotomia Exploradora Imediata</strong>. O paciente está sangrando ativamente dentro da cavidade peritoneal. O transporte para tomografia (A) é contraindicado em paciente chocado. Infundir 3 litros de cristaloide (D) é erro crasso que induz coagulopatia dilucional e acidose hiperclorêmica, devendo-se utilizar reposição volêmica balanceada com sangue total ou hemoderivados 1:1:1 associados ao controle hemostático cirúrgico imediato."
+        ],
+        [
+          "4",
+          "Questão Comentada 4: SURCE / Residência Médica — Cirurgia de Controle de Danos"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante laparotomia em paciente politraumatizado grave com múltiplas lesões por FAF, após 50 minutos de cirurgia, o anestesiologista informa que o paciente atingiu temperatura central de 34,2 °C, pH de 7,15, déficit de base de -12 mEq/L e sangramento difuso em 'napa' nas superfícies cruentas (coagulopatia clínica). O cirurgião já realizou ligadura da veia mesentérica superior e ressecção em bloco de alças ileais desvitalizadas. Qual a decisão cirúrgica mandatória segundo o conceito de controle de danos?"
+        ],
+        [
+          "p",
+          "A) Realizar imediatamente anastomose manual em dois planos das alças intestinais e fechar a parede com pontos capitonados reforçados.<br>\n  B) Interromper a cirurgia definitiva, ocluir os cotos intestinais sem reconstrução, realizar empacotamento com compressas (packing) e instalar peritoniostomia com bolsa de Bogotá ou vácuo.<br>\n  C) Manter o paciente no centro cirúrgico por mais 3 horas até que todos os órgãos estejam completamente reparados.<br>\n  D) Fechar a cavidade abdominal sob forte tensão com fio inabsorvível para conter o sangramento por pressão física."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> O paciente instalou a clássica <strong>Tríade Letal (Hipotermia &lt; 35 °C, Acidose com pH &lt; 7,20 e Coagulopatia)</strong>. Insistir na cirurgia definitiva ou confeccionar anastomoses intestinais nessa fase culminará em deiscência anastomótica por hipoperfusão e parada cardiorrespiratória irreversível intraoperatória. O cirurgião deve abortar a cirurgia formal (Fase I do Controle de Danos), ocluir cotos com grampeador ou fio grosso, empacotar focos hemorrágicos com compressas e fechar a parede sem tensão (bolsa de Bogotá ou VAC), encaminhando o paciente imediatamente à UTI para ressuscitação (Fase II)."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Surgeons - ATLS 10th and 11th Edition</a>",
+            "<a href=\"https://cbc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) - Diretrizes de Trauma Abdominal</a>",
+            "<a href=\"https://www.wsacs.org\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Abdominal Compartment Syndrome (WSACS) Guidelines</a>",
+            "<a href=\"https://wses.biomedcentral.com\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) Guidelines on Splenic and Liver Trauma</a>",
+            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/archived/blunt-abdominal-trauma-evaluation-of\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Evaluation of blunt abdominal trauma</a>",
+            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/details/penetrating-abdominal-trauma%2C-selective-non-operative-management-of\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Selective non-operative management of penetrating abdominal trauma</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ],
+    [
+      "sec-aprofundamento-vascular-opsi-questoes",
+      0,
+      [
+        [
+          "2",
+          "Aprofundamento Avançado: Trauma Vascular Maior, Síndrome OPSI e Bateria de Questões Comentadas"
+        ],
+        [
+          "3",
+          "Trauma Vascular Abdominal Maior: Lesões de Veia Cava, Aorta e Vasos Mesentéricos"
+        ],
+        [
+          "p",
+          "As lesões vasculares abdominais maiores constituem o ápice da gravidade no trauma abdominal, associando-se a taxas de mortalidade imediata superiores a 50% a 80%. A abordagem cirúrgica exige conhecimento refinado das manobras de exposição anatômica retroperitoneal profunda:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manobra de Mattox (Rotação Medial das Vísceras Esquerdas):</strong> Realizada através da incisão da goteira parietocólica esquerda ao longo da linha de Toldt, desde a flexura esplênica até a fossa ilíaca esquerda, mobilizando medialmente em bloco o cólon descendente, o baço, a cauda do pâncreas e o rim esquerdo. Essa manobra expõe com ampla clareza toda a extensão da <strong>aorta abdominal infradiafragmática</strong>, a emergência do tronco celíaco, artéria mesentérica superior, artéria renal esquerda e vasos ilíacos esquerdos. É a manobra mandatória no choque exsanguinante por hematoma central de Zona 1 supramesocólico.",
+            "<strong>Manobra de Cattell-Braasch (Rotação Medial das Vísceras Direitas):</strong> Realizada pela mobilização medial ampla do ceco, cólon ascendente e flexura hepática, associada à manobra de Kocher estendida no duodeno-pâncreas e incisão do ligamento peritoneal ao longo da raiz do mesentério até o ângulo de Treitz. Expõe completamente a <strong>veia cava inferior infrarrenal e suprarrenal</strong>, a bifurcação aórtica, os vasos ilíacos direitos e a terceira e quarta porções duodenais.",
+            "<strong>Controle de Danos Vasculares:</strong> No paciente com acidose, hipotermia e coagulopatia, o cirurgião não deve tentar pontes vasculares ou enxertos protéticos complexos. As lesões venosas menores são tratadas com ligadura simples (incluindo a veia ilíaca interna, ramos mesentéricos ou mesmo a veia renal esquerda, cuja drenagem colateral é garantida pelas veias gonadal e adrenal esquerdas). Lesões arteriais maiores em pacientes chocados são tratadas com <strong>Shunts Vasculares Provisórios Intraluminais</strong> (tubos de tórax finos ou cateteres de polietileno fixados com torniquetes de Rumel), mantendo o fluxo distal durante a ressuscitação na UTI antes do reparo definitivo."
+          ]
+        ],
+        [
+          "3",
+          "Sepse Fulminante Pós-Esplenectomia (OPSI): Mecanismo, Vacinação e Profilaxia"
+        ],
+        [
+          "p",
+          "O baço é o maior órgão linfoide secundário do corpo humano, exercendo funções imunológicas insubstituíveis: fagocitose de bactérias opsonizadas na polpa vermelha através de macrófagos especializados, produção de anticorpos da classe IgM na zona marginal, síntese de opsoninas específicas (tuftsina e properdina) que ativam a via alternativa do complemento e função de 'pitting' (remoção de corpúsculos intraeritrocitários como os corpúsculos de Howell-Jolly e corpos de Heinz sem destruir a hemácia)."
+        ],
+        [
+          "p",
+          "A perda anatômica do baço por esplenectomia pós-trauma expõe o indivíduo a um risco vitalício permanente de <strong>Sepse Fulminante Pós-Esplenectomia (Overwhelming Post-Splenectomy Infection - OPSI)</strong>, caracterizada por início súbito com sintomas gripais inespecíficos que evoluem em menos de 12 a 24 horas para choque séptico refratário, púrpura fulminante, coagulação intravascular disseminada (CIVD) e óbito em mais de 50% dos casos. O principal patógeno responsável é o <strong><em>Streptococcus pneumoniae</em> (Pneumococo - responsável por mais de 60% a 70% dos episódios)</strong>, seguido por <em>Neisseria meningitidis</em> (Meningococo) e <em>Haemophilus influenzae</em> tipo b (Hib)."
+        ],
+        [
+          "p",
+          "O protocolo de imunização obrigatório pós-esplenectomia no Brasil inclui:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Vacina Pneumocócica Conjugada (VPC13 ou VPC15)</strong> seguida pela <strong>Vacina Pneumocócica Polissacarídica 23-valente (VPP23)</strong> após 8 semanas, com reforço da VPP23 após 5 anos;",
+            "<strong>Vacina Meningocócica Conjugada ACWY</strong> em duas doses com intervalo de 8 semanas, com reforço a cada 5 anos, associada à <strong>Vacina Meningocócica B recombinante</strong> (duas doses com intervalo de 1 a 2 meses);",
+            "<strong>Vacina contra Haemophilus influenzae tipo b (Hib)</strong> em dose única;",
+            "<strong>Vacinação anual contra Influenza</strong> (pois infecções respiratórias virais predispõem à invasão bacteriana secundária pneumocócica grave)."
+          ]
+        ],
+        [
+          "p",
+          "<em>Momento Ideal da Vacinação:</em> No trauma agudo, a resposta humoral imediata pós-cirúrgica é intensamente suprimida pelo estresse metabólico. As vacinas devem ser aplicadas preferencialmente no <strong>14º dia pós-operatório</strong> (ou antes da alta hospitalar se houver risco de perda de seguimento ambulatorial)."
+        ],
+        [
+          "3",
+          "Bateria Expandida de Questões Comentadas com Análise de Todas as Alternativas"
+        ],
+        [
+          "4",
+          "Questão Comentada 5: USP / FMUSP — Trauma Toracoabdominal e Hérnia Diafragmática"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 34 anos foi vítima de agressão por arma branca há 4 horas, sofrendo ferimento penetrante de 2 cm no 6º espaço intercostal esquerdo na linha axilar anterior. Ao exame na sala de emergência: estável, corado, PA: 120/80 mmHg, FC: 76 bpm, FR: 16 irpm, abdome indolor e sem sinais de peritonite. A radiografia de tórax e abdome inicial é laudada como rigorosamente normal. Qual a conduta mandatória preconizada para esse paciente?"
+        ],
+        [
+          "p",
+          "A) Suturar a ferida da pele e conceder alta hospitalar com orientação de retorno se houver febre ou dor.<br>\n  B) Indicar Videolaparoscopia (ou Videotoracoscopia) diagnóstica para avaliação direta da integridade da cúpula diafragmática esquerda.<br>\n  C) Realizar lavado peritoneal diagnóstico (LPD); se hematimetria &lt; 100.000/mm³, afasta-se qualquer lesão.<br>\n  D) Solicitar trânsito esofagogastroduodenal contrastado imediato com bário para pesquisar extravasamento."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> Todo ferimento penetrante na <strong>região toracoabdominal</strong> (especialmente à esquerda, entre o 4º EIC anterior e o rebordo costal) tem risco de 15% a 30% de <strong>lesão diafragmática oculta</strong>. Devido ao gradiente pressórico fisiológico pleuroperitoneal (pressão pleural negativa versus pressão peritoneal positiva), pequenas lacerações no diafragma não cicatrizam espontaneamente e evoluem silenciosamente ao longo de meses ou anos para <strong>hérnia diafragmática tardia com estrangulamento de vísceras ocas</strong>. A radiografia de tórax e o lavado peritoneal têm baixa sensibilidade (&lt; 50%) para lesões diafragmáticas pequenas sem herniação aguda. O padrão-ouro obrigatório é a <strong>Videolaparoscopia (VATS ou VLC)</strong> para visualização direta do hemidiafragma esquerdo e sutura primária da lesão se diagnosticada."
+        ],
+        [
+          "4",
+          "Questão Comentada 6: UNICAMP — Síndrome Compartimental Abdominal e Técnica de Mensuração"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente vítima de trauma abdominal contuso grave com hematoma retroperitoneal em expansão e lesão hepática grau IV encontra-se internado no CTI sob ventilação mecânica após cirurgia de controle de danos. O residente suspeita de Hipertensão Intra-Abdominal (HIA). Qual a técnica padronizada pela WSACS para aferição fidedigna da pressão intra-abdominal e qual o valor que define Síndrome Compartimental Abdominal?"
+        ],
+        [
+          "p",
+          "A) Mensuração da pressão venosa central (PVC); definida quando PVC &gt; 18 cmH2O.<br>\n  B) Mensuração intravesical através de sonda de Foley acoplada a transdutor de pressão com infusão de 25 mL de soro estéril na bexiga; definida quando PIA sustentada &gt; 20 mmHg associada a nova disfunção orgânica.<br>\n  C) Mensuração da pressão intragástrica através de sonda de Salem com infusão de 200 mL de água; definida quando PIA &gt; 12 mmHg.<br>\n  D) Palpação clínica bimanual do tônus da parede abdominal; definida quando houver abdome em tábua generalizado."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> Segundo o consenso internacional da World Society of the Abdominal Compartment Syndrome (WSACS), o padrão-ouro clínico e reprodutível para aferição da PIA é a <strong>mensuração da pressão intravesical com transdutor em linha zerado na linha axilar média na altura da sínfise púbica, infundindo-se volume máximo de 25 mL de soro fisiológico</strong> estéril na bexiga com o paciente em decúbito dorsal horizontal estrito. A Hipertensão Intra-Abdominal (HIA) define-se por PIA &ge; 12 mmHg sustentada. A <strong>Síndrome Compartimental Abdominal (SCA)</strong> exige obrigatoriamente <strong>PIA &gt; 20 mmHg sustentada associada a uma nova disfunção orgânica</strong> (queda de débito urinário, hipercapnia/hipoxemia com aumento das pressões de via aérea ou instabilidade hemodinâmica)."
+        ],
+        [
+          "4",
+          "Questão Comentada 7: ENARE — Manobra de Mattox e Acesso à Aorta Supramesocólica"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Vítima de ferimento por arma de fogo no epigástrio chega à sala de trauma em choque descompensado com distensão abdominal maciça. Na laparotomia mediana imediata, o cirurgião observa grande hematoma expansivo na Zona 1 retroperitoneal supramesocólica com sangramento arterial ativo incontrolável atrás do pâncreas. Qual manobra cirúrgica de rotação visceral deve ser prontamente executada para expor a aorta abdominal infradiafragmática e a artéria mesentérica superior?"
+        ],
+        [
+          "p",
+          "A) Manobra de Kocher estendida.<br>\n  B) Manobra de Pringle com clampeamento hepatoduodenal.<br>\n  C) Manobra de Mattox (rotação medial das vísceras esquerdas).<br>\n  D) Manobra de Cattell-Braasch (rotação medial das vísceras direitas)."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A <strong>Manobra de Mattox (mobilização medial visceral esquerda em bloco)</strong> consiste na incisão do peritônio parietal lateral ao cólon descendente estendendo-se cranialmente em torno do baço, permitindo rebater o cólon esquerdo, baço, cauda e corpo do pâncreas e rim esquerdo medialmente em direção à linha média. Essa rotação expõe amplamente toda a aorta abdominal suprarrenal e infrarrenal, tronco celíaco e raiz da artéria mesentérica superior. A manobra de Kocher (A) expõe apenas a face posterior do duodeno e cabeça pancreática. A manobra de Cattell-Braasch (D) roda as vísceras direitas e expõe a veia cava inferior e vasos mesentéricos inferiores."
+        ]
+      ]
+    ],
+    [
+      "sec-estomago-balistica-bateria-questoes",
+      0,
+      [
+        [
+          "2",
+          "Aprofundamento Avançado: Trauma Gástrico, Balística Forense e Bateria Completa de Questões"
+        ],
+        [
+          "3",
+          "Trauma de Estômago, Mesentério e Lesões por Desaceleração Rápida"
+        ],
+        [
+          "p",
+          "O estômago é um órgão altamente complacente, protegido pelo gradil costal inferior esquerdo e lobo esquerdo do fígado. Suas lesões ocorrem habitualmente em traumas penetrantes (ferimentos por arma branca e projéteis de arma de fogo) ou em traumas contusos de alta energia quando o estômago encontra-se repleto após refeição copiosa (rotura gástrica por aumento abrupto da pressão hidrostática intragástrica):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Rotura Gástrica Contusa:</strong> Ocorre mais frequentemente na parede anterior ou na curvatura maior. Provoca peritonite química precoce violenta devido à acidez do suco gástrico, evoluindo rapidamente com peritonite bacteriana maciça. A radiografia de tórax e abdome em ortostase evidencia pneumoperitônio volumoso sob as cúpulas diafragmáticas.",
+            "<strong>Técnica de Reparo Gástrico:</strong> A exploração cirúrgica do estômago exige a abertura ampla do ligamento gastrocolórico para penetrar na retrocavidade dos epíploons (pequeno saco peritoneal) e inspecionar meticulosamente 100% da <strong>parede posterior gástrica</strong>, local frequente de lesões penetrantes despercebidas. O desbridamento das bordas desvitalizadas deve ser generoso (a rica vascularização gástrica sangra profusamente se as bordas não forem hemostasiadas) e o fechamento é realizado com sutura primária em dois planos (plano mucoso hemostático com fio absorvível e plano seromuscular invaginante tipo Lembert com fio inabsorvível ou absorvível sintético).",
+            "<strong>Lesões de Mesentério e Hematomas Mesentéricos:</strong> Lacerações lineares da borda mesentérica podem comprometer os arcos anastomóticos marginais de Riolan e Drummond. Hematomas mesentéricos em expansão devem ser cuidadosamente abertos e explorados para ligadura seletiva de vasos sangrantes, avaliando-se a viabilidade da alça intestinal correspondente (coloração rósea, pulsação arterial palpável na borda mesentérica e peristaltismo ativo). Na dúvida quanto à viabilidade após aquecimento com compressas mornas por 15 minutos, indica-se a ressecção segmentar da alça isquêmica."
+          ]
+        ],
+        [
+          "3",
+          "Balística das Feridas Abdominais por Projétil de Arma de Fogo: Cavitação e Zona de Injúria"
+        ],
+        [
+          "p",
+          "O dano tecidual ocasionado por projéteis de arma de fogo (PAF) obedece aos princípios da física balística terminal. A energia cinética total transferida ao organismo é regida pela fórmula:"
+        ],
+        [
+          "p",
+          "<span class=\"book-math\">EC = (1) / (2) m v<sup>2</sup></span>"
+        ],
+        [
+          "p",
+          "em que a velocidade (<span class=\"book-math\">v</span>) é o fator de maior impacto geométrico. Projéteis de alta velocidade (fuzis militares com velocidade &gt; 600 a 1.000 m/s) geram dois fenômenos lesivos distintos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Cavidade Permanente:</strong> É o trajeto anatômico físico percorrido pelo projétil, resultante da laceração e esmagamento mecânico direto dos tecidos e órgãos transpassados.",
+            "<strong>Cavidade Temporária:</strong> É o estiramento radial violento e explosivo das estruturas adjacentes decorrente da transmissão lateral de ondas de choque de alta pressão. Essa cavitação temporária atinge diâmetros de até 15 a 30 vezes o calibre do projétil, provocando necrose celular isquêmica e rotura de órgãos sólidos (fígado e baço) situados a vários centímetros de distância do trajeto real da bala. Por essa razão, ferimentos por fuzil no abdome exigem desbridamento tecidual ampliado, pois as bordas das alças intestinais aparentemente íntegras encontram-se frequentemente desvitalizadas por trombose microvascular secundária à onda de choque."
+          ]
+        ],
+        [
+          "3",
+          "Bateria de Questões Comentadas: Raciocínio Clínico e Distratores"
+        ],
+        [
+          "4",
+          "Questão Comentada 8: ENARE 2025 / Cirurgia do Trauma — Conduta em Evisceração Abdominal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 25 anos é admitido no setor de emergência após ser golpeado com faca no mesogástrio durante tentativa de assalto há 30 minutos. Ao exame físico inicial: consciente, orientado, PA 115/75 mmHg, FC 88 bpm, FR 18 irpm. À inspeção do abdome, observa-se protrusão de cerca de 30 cm de alça de intestino delgado e grande porção de omento maior através da ferida da parede abdominal anterior (evisceração franca). Não há sangramento ativo vultoso exteriorizando-se. Qual a conduta imediata na sala de emergência e a conduta cirúrgica definitiva?"
+        ],
+        [
+          "p",
+          "A) Tentar reintroduzir imediatamente a alça eviscerada na cavidade peritoneal na sala de emergência e suturar a pele sob anestesia local.<br>\n  B) Cobrir as vísceras evisceradas com compressas estéreis embebidas em soro fisiológico morno e encaminhar o paciente imediatamente para laparotomia exploradora no centro cirúrgico.<br>\n  C) Realizar tomografia computadorizada de abdome com contraste venoso antes de qualquer procedimento operatório.<br>\n  D) Puncionar a alça com agulha fina para reduzir a distensão gasosa e aplicar curativo compressivo seco."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A <strong>evisceração no trauma abdominal penetrante é indicação absoluta de Laparotomia Exploradora Imediata</strong> no centro cirúrgico, independentemente dos sinais vitais do paciente. Na sala de emergência, é <strong>estritamente proibido tentar reintroduzir as alças intestinais</strong> para dentro da cavidade peritoneal (Alternativa A incorreta), pois as vísceras expostas estão contaminadas pelo meio externo e sua recolocação cega introduz infecção maciça e pode agravar lesões de mesentério ou causar estrangulamento da alça no defeito da parede. A conduta correta consiste em proteger e cobrir os órgãos exteriorizados com <strong>compressas estéreis umedecidas em solução salina isotônica morna</strong> (prevenindo dessecação, necrose isquêmica das alças e hipotermia) e transportar o paciente diretamente ao centro cirúrgico para incisão mediana padrão (a incisão não deve ser feita ampliando a ferida original contaminada)."
+        ],
+        [
+          "4",
+          "Questão Comentada 9: UNICAMP — Manejo das Lesões Pancreáticas no Trauma"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente de 27 anos sofre colisão automobilística frontal com impacto contra o volante. Após 24 horas de observação, apresenta elevação de amilase sérica para 850 U/L e dor epigástrica contínua. A colangiopancreatografia por ressonância magnética (CPRM) revela transecção completa do corpo do pâncreas à esquerda dos vasos mesentéricos com rotura do ducto de Wirsung (Trauma Pancreático Grau III da AAST). O paciente encontra-se hemodinamicamente estável. Qual a conduta cirúrgica indicada?"
+        ],
+        [
+          "p",
+          "A) Tratamento exclusivamente conservador com octreotida subcutânea e jejum oral prolongado.<br>\n  B) Pancreatectomia distal com esplenectomia (ou preservação esplênica) e drenagem tubular fechada.<br>\n  C) Duodenopancreatectomia cefálica de urgência (Cirurgia de Whipple).<br>\n  D) Papilotomia endoscópica com colocação de prótese biliar no ducto colédoco."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A chave para a decisão terapêutica no trauma pancreático é a <strong>integridade do Ducto Pancreático Principal (Ducto de Wirsung)</strong>. Lesões que transpassam o ducto principal distalmente aos vasos mesentéricos (corpo ou cauda do pâncreas - Grau III) não cicatrizam adequadamente com tratamento conservador, evoluindo com fístula pancreática de alto débito, abscesso retroperitoneal e sepse grave. A conduta padrão é a <strong>Pancreatectomia Distal</strong> (ressecção do parênquima pancreático à esquerda da lesão com rafia/ligadura do coto proximal do Wirsung com pontos inabsorvíveis ou sutura mecânica), associada a ampla drenagem tubular fechada de sucção por contra-abertura. A preservação do baço é tentada em pacientes estáveis, mas a esplenectomia concomitante é frequentemente necessária se houver envolvimento dos vasos esplênicos."
+        ],
+        [
+          "4",
+          "Questão Comentada 10: ENARE — Manobra de Kocher e Exposição Duodenal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Cirurgião opera vítima de ferimento por arma branca no hipocôndrio direito. Durante a laparotomia, observa hematoma na face posterior do duodeno e cabeça pancreática. Qual a manobra cirúrgica que consiste na incisão do peritônio parietal lateral à borda direita do duodeno, permitindo sua ampla rotação medial para expor a face posterior da segunda e terceira porções duodenais e a veia cava inferior retroperitoneal?"
+        ],
+        [
+          "p",
+          "A) Manobra de Pringle.<br>\n  B) Manobra de Kocher.<br>\n  C) Manobra de Mattox.<br>\n  D) Manobra de Cattell-Braasch."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A <strong>Manobra de Kocher</strong> é o procedimento cirúrgico clássico de derrotação e mobilização da alça duodenal em C. Ao incidir a reflexão peritoneal na borda convexa lateral da segunda porção duodenal (fáscia de Treitz retro-duodeno-pancreática), o cirurgião consegue rebater o duodeno e a cabeça do pâncreas medialmente para a esquerda, inspecionando diretamente toda a parede posterior da 1ª, 2ª e início da 3ª porções duodenais, a face posterior da cabeça pancreática e o segmento infrarrenal da veia cava inferior."
+        ]
+      ]
+    ],
+    [
+      "sec-lpd-cinto-seguranca-questoes-finais",
+      0,
+      [
+        [
+          "2",
+          "Aprofundamento Avançado: Lavado Peritoneal Diagnóstico, Sinal do Cinto e Questões de Concurso"
+        ],
+        [
+          "3",
+          "Lavado Peritoneal Diagnóstico (LPD): Técnica, Indicações e Critérios Quantitativos"
+        ],
+        [
+          "p",
+          "Embora o ultrassom eFAST e a tomografia computadorizada multislice tenham substituído o Lavado Peritoneal Diagnóstico (LPD) na rotina dos grandes centros de trauma, o LPD permanece como método de triagem emergencial com sensibilidade superior a 98% para detecção de hemoperitônio e lesão de víscera oca, sendo ferramenta indispensável em serviços sem ultrassonografia portátil ou em pacientes hemodinamicamente instáveis com eFAST inconclusivo."
+        ],
+        [
+          "t",
+          [
+            "Técnica do Lavado Peritoneal",
+            "Descrição Operatória dos Passos",
+            "Vantagens e Cuidados de Segurança"
+          ],
+          [
+            [
+              "<strong>Técnica Semiaberta / Aberta (Padrão)</strong>",
+              "Incisão cutânea longitudinal infraumbilical de 2 a 3 cm na linha média. Dissecção da aponeurose e abertura do peritônio parietal sob visualização direta. Introdução de cateter de diálise peritoneal sob visão direta.",
+              "Segurança máxima contra perfuração inadvertida de alças intestinais distendidas ou lesão de grandes vasos retroperitoneais (aorta e veia cava inferior)."
+            ],
+            [
+              "<strong>Modificação na Fratura Pélvica</strong>",
+              "A incisão deve ser realizada <strong>supraumbilical</strong> (acima da cicatriz umbilical) para não penetrar nem despressurizar o hematoma retroperitoneal pré-peritoneal pélvico de Retzius, o que geraria falso-positivo maciço de sangue.",
+              "Obrigatório esvaziar a bexiga com sonda de Foley e o estômago com sonda nasogástrica antes de iniciar o procedimento."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Critérios Laboratoriais Oficiais de Positividade do LPD"
+        ],
+        [
+          "u",
+          [
+            "<strong>Critério Imediato Macroscópico:</strong> Aspiração inicial direta de <strong>&ge; 10 mL de sangue vivo não coagulável</strong> ou conteúdo entérico franco através do cateter (interrompe-se o procedimento e indica-se laparotomia imediata).",
+            "<strong>Critérios Quantitativos após Infusão de 1.000 mL de SF 0,9% aquecido (ou 10 mL/kg na criança) e drenagem por sifonagem:</strong>\n    <ul>\n      <li>Contagem de <strong>Hemácias &ge; 100.000/mm³</strong> no trauma contuso (ou &ge; 10.000 a 50.000/mm³ no trauma penetrante);",
+            "Contagem de <strong>Leucócitos &ge; 500/mm³</strong>;",
+            "Presença de fibras alimentares ou bactérias na coloração pelo Gram;",
+            "Dosagem de <strong>Amilase &gt; 175 UI/L</strong> ou dosagem de fosfatase alcalina elevada;",
+            "Presença de bile no líquido drenado."
+          ]
+        ],
+        [
+          "3",
+          "Questões Comentadas Adicionais de Residência Médica"
+        ],
+        [
+          "4",
+          "Questão Comentada 11: ENARE — Critérios de Positividade do LPD no Trauma Contuso"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Paciente vítima de colisão por capotamento dá entrada na emergência de hospital de pequeno porte sem tomografia ou ultrassom disponível. Encontra-se obnubilado com PA 85/50 mmHg e taquicardia. A equipe realiza Lavado Peritoneal Diagnóstico aberto infraumbilical com infusão de 1.000 mL de soro fisiológico. Qual dos seguintes resultados laboratoriais do líquido drenado confirma a positividade do teste e indica formalmente laparotomia exploradora?"
+        ],
+        [
+          "p",
+          "A) Contagem de hemácias de 45.000/mm³.<br>\n  B) Contagem de leucócitos de 650/mm³.<br>\n  C) Glicose no líquido de 80 mg/dL.<br>\n  D) Amilase no líquido de 40 UI/L."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> No trauma abdominal fechado, a presença de <strong>leucócitos &ge; 500/mm³</strong> no efluente do lavado peritoneal diagnóstico é critério clássico de positividade, refletindo resposta inflamatória peritoneal por peritonite bacteriana ou química (perfuração de víscera oca). A contagem de hemácias no trauma contuso só é considerada positiva quando atinge o limiar de <strong>100.000 hemácias/mm³</strong> (45.000/mm³ é considerado inconclusivo/negativo no trauma contuso isolado, embora positivo em ferimento penetrante toracoabdominal). A dosagem de amilase só é positiva se superior a 175 UI/L."
+        ],
+        [
+          "4",
+          "Questão Comentada 12: USP — Sinal do Cinto de Segurança e Lesão Entérica Oculta"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 29 anos, passageira de banco traseiro de automóvel em colisão frontal, usava apenas cinto de segurança subabdominal de dois pontos. Dá entrada no pronto-socorro estável, queixando-se de dor em hipogástrio. Ao exame físico, nota-se equimose transversa exuberante na parede abdominal inferior ('sinal do cinto de segurança'). A tomografia computadorizada inicial não demonstra líquido livre nem lesão de órgãos sólidos. Considerando o mecanismo de trauma e o sinal do cinto de segurança, qual conduta é mandatória?"
+        ],
+        [
+          "p",
+          "A) Alta hospitalar imediata com anti-inflamatórios, visto que a TC foi normal.<br>\n  B) Internação hospitalar para observação clínica rigorosa com exame físico abdominal seriado e hemograma por 24 a 48 horas, pelo risco elevado de perfuração de intestino delgado ou mesentério.<br>\n  C) Laparotomia exploradora imediata mesmo sem qualquer achado clínico ou tomográfico.<br>\n  D) Prescrição de antibióticos profiláticos por via oral em domicílio por 7 dias."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> O <strong>sinal do cinto de segurança</strong> (equimose transversa na parede abdominal) é um marcador clínico de altíssima energia cinética transferida e compressão direta das vísceras contra a coluna lombar (frequentemente associando-se a <strong>fratura de Chance da coluna lombar L1-L3</strong> por flexão-distração). Essa desaceleração comprime alças intestinais em bolsa cega, provocando laceração mesentérica ou microperfurações de intestino delgado que podem ser completamente <strong>invisíveis na tomografia computadorizada realizada nas primeiras 2 a 4 horas</strong> pós-trauma. A conduta indispensável é a <strong>internação para vigilância clínica e exame físico seriado</strong>. Se o paciente desenvolver dor à descompressão, febre, taquicardia ou leucocitose com desvio, procede-se à laparotomia."
+        ]
+      ]
+    ],
+    [
+      "sec-peritoniostomia-fechamento-parede",
+      0,
+      [
+        [
+          "2",
+          "Aprofundamento Avançado: Manejo da Peritoniostomia e Fechamento da Parede"
+        ],
+        [
+          "3",
+          "Manejo Avançado da Peritoniostomia e Cuidados no Fechamento da Parede Abdominal"
+        ],
+        [
+          "p",
+          "O abdome aberto (peritoniostomia ou laparostomia) é uma intervenção cirúrgica salvadora temporária que previne a síndrome compartimental e permite reoperações planejadas. Entretanto, sua manutenção prolongada associa-se a complicações graves, como fístulas enteroatmosféricas, perda maciça de fluidos e proteínas peritoneais, infecção fúngica e retração lateral das bordas da aponeurose (perda de domicílio da parede):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Técnicas de Fechamento Temporário:</strong>\n    <ul>\n      <li><strong>Curativo de Pressão Negativa Abdominal (VAC Abdominal / Barker Vacuum Pack):</strong> Considerado padrão-ouro moderno. Uma película fenestrada de polietileno é posicionada sobre as vísceras sob o peritônio parietal até as goteiras parietocólicas, protegendo as alças contra aderências à parede. Esponjas de poliuretano são aplicadas sobre a película e seladas com filme adesivo sob sucção contínua de -75 a -125 mmHg. A pressão negativa remove continuamente o efluente inflamatório peritoneal rico em citocinas, quantifica perdas e traciona medialmente as bordas aponeuróticas, prevenindo a retração do músculo reto abdominal.",
+            "<strong>Bolsa de Bogotá:</strong> Bolsa plástica estéril (frasco de soro de polivinil ou bolsa coletora) suturada diretamente na pele ou aponeurose com fio monofilamentar contínuo. É um método de baixo custo e alta eficácia para descompressão mecânica em hospitais sem disponibilidade de terapia por pressão negativa."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 69,
+  "slug": "assistencia-ao-parto",
+  "block": 3,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 63987,
+    "references": true,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": 6,
+  "slug": "insuficiencia-cardiaca",
+  "block": 1,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 12,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 90881,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

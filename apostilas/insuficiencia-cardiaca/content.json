@@ -1,0 +1,1505 @@
+{
+  "v": 2,
+  "s": "insuficiencia-cardiaca",
+  "t": "Insuficiência Cardíaca",
+  "p": "Insuficiência Cardíaca",
+  "o": [
+    [
+      "visao",
+      "Insuficiência cardíaca: pensar em síndrome, mecanismo e causa"
+    ],
+    [
+      "fundamentos",
+      "1. Fisiologia cardiovascular antes da fisiopatologia"
+    ],
+    [
+      "classificacao",
+      "2. Classificação: o que mudou nas diretrizes de 2026?"
+    ],
+    [
+      "etiologia",
+      "3. Etiologias: perseguir a causa, não apenas tratar edema"
+    ],
+    [
+      "diagnostico",
+      "4. Diagnóstico estruturado — sintomas, ECG, BNP e ecocardiografia"
+    ],
+    [
+      "aguda",
+      "5. IC descompensada: congestão e perfusão definem a prioridade"
+    ],
+    [
+      "terapia",
+      "6. Tratamento crônico: de controle de sintomas à modificação da hi"
+    ],
+    [
+      "seguimento",
+      "7. Monitorização, dispositivos e cuidados longitudinais"
+    ],
+    [
+      "especiais",
+      "8. Situações especiais e armadilhas"
+    ],
+    [
+      "casos",
+      "9. Casos clínicos integradores"
+    ],
+    [
+      "questoes",
+      "10. Questões autorais comentadas"
+    ],
+    [
+      "referencias",
+      "Referências principais, divergências e pendências"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Insuficiência Cardíaca",
+    "Fisiopatologia · diagnóstico · classificação 2026 · terapia · descompensação",
+    [
+      "Área: Clínica Médica",
+      "Matéria: Cardiologia",
+      "Tema: Insuficiência Cardíaca"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Insuficiência cardíaca: pensar em síndrome, mecanismo e causa"
+        ],
+        [
+          "p",
+          "Insuficiência cardíaca (IC) é uma síndrome clínica decorrente de alteração estrutural e/ou funcional cardíaca que se manifesta por sintomas e sinais associados a pressões intracardíacas elevadas, débito inadequado ou ambos. Não se resume a 'coração fraco': pacientes com fração de ejeção preservada podem apresentar congestão, intolerância ao exercício e internações. O estudo precisa responder quatro perguntas: há IC de fato? Qual é a causa? Há congestão e/ou hipoperfusão? Que tratamento modifica sintomas e prognóstico para esse fenótipo específico?"
+        ],
+        [
+          "p",
+          "Os sinais clássicos incluem dispneia aos esforços, ortopneia, dispneia paroxística noturna, edema, ganho de peso por retenção de líquido, turgência jugular, crepitações, terceira bulha e hepatomegalia congestiva. Nenhum sinal isolado é universal; obesidade, idade, doença pulmonar e insuficiência renal podem confundir a avaliação. O diagnóstico combina probabilidade clínica, exames complementares, biomarcadores e demonstração objetiva da disfunção cardíaca ou de pressões de enchimento elevadas."
+        ],
+        [
+          "t",
+          [
+            "Pergunta",
+            "Por que importa",
+            "Ferramenta útil"
+          ],
+          [
+            [
+              "Há sintomas/sinais?",
+              "Estabelece suspeita clínica",
+              "Anamnese e exame físico orientados"
+            ],
+            [
+              "Há alteração cardíaca objetiva?",
+              "Diferencia IC de dispneia exclusivamente pulmonar ou outra origem",
+              "Ecocardiograma, peptídeos natriuréticos, ECG"
+            ],
+            [
+              "Qual é o fenótipo?",
+              "Muda evidência e escolhas terapêuticas",
+              "FEVE, diástole, cavidades, válvulas e etiologia"
+            ],
+            [
+              "Está congesto ou hipoperfundido?",
+              "Define urgência, metas e intervenção imediata",
+              "Perfil clínico-hemodinâmico e sinais vitais"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "fundamentos",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia cardiovascular antes da fisiopatologia"
+        ],
+        [
+          "3",
+          "Débito cardíaco, pressão de enchimento e curva de Frank-Starling"
+        ],
+        [
+          "p",
+          "O débito cardíaco resulta da frequência cardíaca multiplicada pelo volume sistólico. A quantidade ejetada depende de pré-carga, contratilidade, pós-carga e frequência, com interação complexa entre ventriculos e circulação. Na curva de Frank-Starling, aumento moderado do enchimento amplia força de contração até determinado limite; em ventrículo insuficiente, aumentar ainda mais volume pode elevar pressão pulmonar sem produzir aumento proporcional de débito. Assim, congestão não representa necessariamente 'falta de bomba' e diurético não conserta diretamente a alteração que levou ao remodelamento."
+        ],
+        [
+          "p",
+          "A pré-carga relaciona-se ao estiramento de fibras miocárdicas no final da diástole e não pode ser inferida apenas pelo volume infundido. A pós-carga é a carga contra a qual o ventrículo ejeta, influenciada por resistência e propriedades arteriais. A contratilidade depende de processos celulares e sinalização de cálcio; taquicardia intensa pode reduzir enchimento e agravar isquemia. O ventrículo direito, sensível a aumentos de resistência pulmonar, pode falhar por hipertensão pulmonar, embolia ou disfunção secundária à doença esquerda."
+        ],
+        [
+          "3",
+          "Do mecanismo compensatório à progressão da doença"
+        ],
+        [
+          "p",
+          "Quando o organismo percebe redução efetiva de perfusão arterial, ativa o sistema nervoso simpático, o sistema renina-angiotensina-aldosterona (SRAA) e retenção de água/sódio. Em fase aguda isso ajuda a manter pressão e perfusão; a ativação crônica aumenta pós-carga, consumo de oxigênio, fibrose, arritmias e remodelamento. Em paralelo, peptídeos natriuréticos liberados em resposta ao estiramento promovem natriurese e vasodilatação, mas sua ação pode ser insuficiente. A terapêutica modificadora de prognóstico busca interromper vias de progressão, ao passo que diuréticos descongestionam."
+        ],
+        [
+          "3",
+          "FEVE e as armadilhas do número"
+        ],
+        [
+          "p",
+          "A fração de ejeção do ventrículo esquerdo (FEVE) é uma medida da proporção do volume diastólico final ejetada por batimento. Uma FEVE normal não garante enchimento adequado nem exclui comprometimento longitudinal do ventrículo. Ela também pode ser enganosa em regurgitação mitral importante, em que parte do volume ejetado volta ao átrio. A avaliação deve considerar dimensões, função do VD, pressões, valvopatias, arritmias e sintomas, além da tendência de FEVE ao longo do tempo."
+        ],
+        [
+          "3",
+          "Aprofundamento — relação pressão-volume e a diferença entre função sistólica e pressão de enchimento"
+        ],
+        [
+          "p",
+          "A insuficiência cardíaca (IC) é síndrome de sintomas e sinais decorrentes de alterações estruturais ou funcionais que elevam pressões intracardíacas, reduzem débito efetivo, ou ambos. O ventrículo não é uma bomba que simplesmente 'contrai forte ou fraco'; ele recebe sangue em pressão e volume específicos, ejeta contra impedância arterial, interage com valvas e com o ventrículo contralateral, e precisa manter perfusão renal, cerebral e muscular. Pressão arterial preservada não exclui baixo débito, assim como fração de ejeção normal não garante pressão diastólica normal. Uma pessoa pode apresentar congestão pulmonar intensa com FEVE de 65% por grande rigidez ventricular e elevação de pressão atrial esquerda."
+        ],
+        [
+          "p",
+          "Pela relação de Frank-Starling, maior enchimento pode elevar volume ejetado até certo limite, mas em ventrículo doente a curva se achata: mais volume produz aumento pronunciado de pressão e pouca melhora de débito. O edema pulmonar acontece quando a pressão venosa/capilar hidrostática ultrapassa a capacidade de drenagem linfática, não porque o radiologista identificou apenas um coração aumentado. A pressão venosa sistêmica elevada transmite-se a fígado, rins e intestino e pode reduzir filtração renal por congestão, mesmo com pressão arterial aparentemente adequada. É por isso que não se indica soro de forma automática para toda oligúria de pessoa com IC."
+        ],
+        [
+          "3",
+          "Pré-carga, pós-carga, contratilidade e frequência: quatro intervenções diferentes"
+        ],
+        [
+          "p",
+          "Pré-carga se relaciona a volume e pressão telediástólicos e às condições de enchimento; não deve ser confundida com volume absoluto, porque a mesma quantidade de sangue pode gerar pressões muito diferentes em ventrículo rígido. Pós-carga compreende a carga contra a qual o coração ejeta, incluindo pressão arterial, impedância e tensão parietal. Contratilidade representa desempenho intrínseco do músculo, não se resume à FEVE que varia com pré e pós-carga. A frequência altera débito minuto, mas FC excessiva encurta diástole, piora enchimento e isquemia. A decisão terapêutica atua sobre um ou mais desses componentes: diurético sobre congestão/volume, vasodilatador sobre carga pressórica, fármacos neuro-hormonais sobre remodelamento e, quando indicado em choque, suporte da contratilidade."
+        ],
+        [
+          "p",
+          "Na IC com FEVE reduzida, a ativação de simpático, SRAA e vasopressina sustenta perfusão nos minutos iniciais, mas cronicamente intensifica retenção de sódio, vasoconstrição, fibrose, remodelamento e arritmia. A terapia modificadora de prognóstico não é simples 'anti-hipertensivo': bloqueia mecanismos que amplificam disfunção e mortalidade. Essa fisiologia explica por que betabloqueadores podem reduzir mortalidade a longo prazo apesar de diminuírem frequência e inotropismo, desde que introduzidos em paciente estável e titulados progressivamente. Também explica por que a furosemida melhora rapidamente sintomas de congestão, porém não substitui os quatro eixos da terapia de base."
+        ],
+        [
+          "3",
+          "Fração de ejeção não é fração de sangue que saiu do corpo"
+        ],
+        [
+          "p",
+          "A FEVE é volume sistólico dividido pelo volume diastólico final do VE. Exemplo: volume diastólico final de 150 mL e sistólico final de 90 mL geram volume sistólico de 60 mL e FEVE de 40%. Essa FEVE não informa isoladamente a pressão de enchimento, presença de insuficiência mitral, débito cardíaco indexado, tamanho corporal ou tolerância ao exercício. Em insuficiência mitral importante, parte do volume ejetado retorna ao átrio, de modo que a FEVE pode parecer razoável apesar de débito anterógrado baixo. Em hipertensão concêntrica com cavidade pequena, FEVE preservada pode coexistir com volume sistólico reduzido."
+        ],
+        [
+          "p",
+          "O ventrículo direito e o esquerdo compartilham septo e pericárdio: dilatação ou hipertensão importante no VD desloca o septo e pode reduzir enchimento do VE. Na falência direita há congestão venosa sistêmica e redução de fluxo pulmonar, mas estertores podem estar ausentes; um paciente com edema, ascite, hepatomegalia e pulmões pouco congestos pode ter componente direito predominante. No outro extremo, edema alveolar pode surgir por aumento abrupto de pós-carga esquerda sem grande expansão volêmica global, como na IC hipertensiva aguda."
+        ],
+        [
+          "t",
+          [
+            "Mecanismo",
+            "Achado que pode aparecer",
+            "Raciocínio terapêutico"
+          ],
+          [
+            [
+              "Pressões esquerdas elevadas",
+              "Ortopneia, estertores, linhas B e congestão intersticial",
+              "Descongestionar e tratar pressão/causa"
+            ],
+            [
+              "Pressões direitas elevadas",
+              "Turgência jugular, hepatomegalia, edema/ascite",
+              "Aferir congestão venosa, VD e função renal"
+            ],
+            [
+              "Baixo débito sistêmico",
+              "Extremidades frias, confusão, oligúria, lactato elevado",
+              "Avaliar choque, perfusão e mecanismo"
+            ],
+            [
+              "Pós-carga abruptamente alta",
+              "Edema pulmonar hipertensivo",
+              "Suporte respiratório, vasodilatação se elegível"
+            ],
+            [
+              "Taquicardia persistente",
+              "Pouco tempo diastólico, cardiomiopatia por taquicardia",
+              "Reconhecer arritmia e tratar com segurança"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Referência de fisiopatologia aplicada: Diretriz Brasileira de Insuficiência Cardíaca – 2026, capítulos de avaliação e congestão; ESC HF 2026, conceitos de fenótipo, reserva e prognóstico. Este aprofundamento é texto autoral de ensino e não reprodução das figuras das diretrizes."
+        ]
+      ]
+    ],
+    [
+      "classificacao",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação: o que mudou nas diretrizes de 2026?"
+        ],
+        [
+          "p",
+          "<strong>Contexto brasileiro e internacional não deve ser fundido sem explicação.</strong> A diretriz brasileira de insuficiência cardíaca da Sociedade Brasileira de Cardiologia foi publicada em 8 de outubro de 2026 e mantém linguagem clínica de ICFEr, ICFElr e ICFEp em seus algoritmos. A ESC 2026 propôs uma nova nomenclatura com dois grandes fenótipos: <strong>HFrEF para FEVE &lt;50%</strong> e <strong>HFpEF para FEVE ≥50%</strong> acompanhada de sinais/sintomas e evidência objetiva de alterações estruturais/funcionais consistentes com disfunção diastólica ou aumento de pressões de enchimento. A categoria intermediária HFmrEF, antes usada para 41–49%, foi retirada na classificação ESC 2026. Uma pessoa com FEVE de 45% pode aparecer classificada como 'levemente reduzida' em material anterior e como HFrEF na ESC 2026; isso é mudança de referencial, não mudança espontânea da fisiologia do paciente."
+        ],
+        [
+          "t",
+          [
+            "Classificação anterior/tradicional",
+            "Classificação ESC 2026",
+            "Como interpretar"
+          ],
+          [
+            [
+              "ICFEr / HFrEF ≤40%",
+              "HFrEF (&lt;50%)",
+              "Segue fenótipo de redução de função sistólica com alto benefício de terapias estruturadas"
+            ],
+            [
+              "ICFElr / HFmrEF 41–49%",
+              "Incluída em HFrEF (&lt;50%)",
+              "Nunca presumir benefício idêntico para todas as drogas e todas as faixas; verificar evidências por FEVE"
+            ],
+            [
+              "ICFEp / HFpEF ≥50%",
+              "HFpEF (≥50% + evidência objetiva de elevação de pressões/disfunção)",
+              "FEVE por si só não confirma IC; pesquisar etiologias e achados diastólicos"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Estágios A a D e classes funcionais NYHA não respondem à mesma pergunta"
+        ],
+        [
+          "p",
+          "Na estrutura AHA/ACC, incorporada pela ESC 2026, estágio A identifica risco sem cardiopatia estabelecida; B ou pré-IC indica alteração estrutural/funcional ou biomarcadores pertinentes sem sintomas; C indica IC sintomática atual ou prévia; D reúne doença avançada e refratária com necessidade de abordagens especializadas. A classe NYHA mede limitação funcional atual: I sem limitação relevante, II sintomas aos esforços habituais, III esforços menores que habituais e IV sintomas ao repouso. Uma pessoa pode estar em estágio C e passar de NYHA III para II após tratamento, sem retornar ao estágio A."
+        ],
+        [
+          "3",
+          "FEVE recuperada não significa cura"
+        ],
+        [
+          "p",
+          "Se a FEVE melhora substancialmente com tratamento, isso sinaliza resposta e remodelamento reverso, mas o risco de recaída persiste. Não suspender automaticamente terapias modificadoras de prognóstico após normalização da fração de ejeção, especialmente quando havia ICFEr. Considerar a etiologia, sinais, biomarcadores, imagem, tolerabilidade e seguimento. A distinção entre 'remissão' e 'cura' é crucial para a adesão."
+        ],
+        [
+          "3",
+          "Como ler os dois sistemas em 2026 sem misturá-los em uma questão"
+        ],
+        [
+          "p",
+          "A nomenclatura de três fenótipos por FEVE — reduzida ≤40%, levemente reduzida 41–49% e preservada ≥50% — permanece familiar em literatura brasileira, ensaios clínicos e grande parte de questões anteriores. A ESC 2026 reorganizou o fenótipo em duas classes: HFrEF quando FEVE é inferior a 50%; HFpEF a partir de 50% com sinais/sintomas e prova objetiva de disfunção/pressões elevadas. A mudança foi motivada pela semelhança clínica e na resposta a tratamentos entre muitos pacientes da zona de 41 a 49% e aqueles com FEVE ≤40%. Isso não altera retrospectivamente os critérios de inclusão de todos os ensaios nem significa que toda dose e toda intervenção dos antigos estudos de FEVE ≤35% se aplica automaticamente a FEVE de 48%."
+        ],
+        [
+          "p",
+          "O marco mais importante para o leitor brasileiro é citar a sociedade e o ano ao apresentar uma faixa. Em uma prova que adota a SBC ou tabelas históricas, pode ser correto usar IC com FE levemente reduzida; em uma questão explicitamente baseada na ESC 2026, o mesmo paciente é incluído no grupo reduzido abaixo de 50%. Também se deve diferenciar IC com FE melhorada de um paciente com FE sempre preservada: recuperar FEVE após bloqueio neuro-hormonal não demonstra cura nem autoriza suspender terapias fundamentais por conta própria."
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Nomenclatura tradicional / muitos estudos",
+            "ESC 2026"
+          ],
+          [
+            [
+              "FEVE de 32%, dispneia e alterações cardíacas",
+              "ICFEr",
+              "HFrEF"
+            ],
+            [
+              "FEVE de 46%, dispneia e cardiopatia demonstrada",
+              "ICFE levemente reduzida (ICFElr)",
+              "HFrEF (&lt;50%)"
+            ],
+            [
+              "FEVE de 61%, dispneia + evidência objetiva de pressão de enchimento elevada",
+              "ICFEp",
+              "HFpEF"
+            ],
+            [
+              "FEVE de 61% e dispneia sem prova objetiva de doença cardíaca",
+              "IC não confirmada apenas pela FE",
+              "Não classificar como HFpEF automaticamente"
+            ],
+            [
+              "FEVE de 30% no passado e 53% agora após GDMT",
+              "FE melhorada/recuperada com tratamento",
+              "Registrar trajetória e manter terapia adequada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Estágios A–D e classes NYHA são dimensões distintas"
+        ],
+        [
+          "p",
+          "Estágio A descreve quem tem fatores de risco mas não possui doença estrutural nem sintomas; B caracteriza lesão estrutural ou biomarcadores em contexto apropriado sem sintomas; C inclui sintomas prévios ou atuais; D é IC avançada com comprometimento importante apesar de tratamento. A NYHA mede limitação funcional atual: I sem limitação relevante, II sintomas aos esforços habituais, III sintomas a esforços menores e IV sintomas em repouso. Um paciente pode continuar em estágio C após melhora para NYHA I, pois já teve IC sintomática. O estágio não retrocede simplesmente porque um diurético retirou edema."
+        ],
+        [
+          "p",
+          "INTERMACS estratifica doentes com IC avançada e necessidade potencial de suporte circulatório, enquanto NYHA não descreve adequadamente a urgência de dispositivos: um paciente em choque com suporte inotrópico contínuo precisa de avaliação bem diferente do estável que tolera apenas pequena caminhada. Aprender esses três eixos evita erro clássico de indicar transplante apenas por FEVE baixa ou classificar como doença terminal toda pessoa NYHA III que nunca recebeu tratamento otimizado."
+        ]
+      ]
+    ],
+    [
+      "etiologia",
+      0,
+      [
+        [
+          "2",
+          "3. Etiologias: perseguir a causa, não apenas tratar edema"
+        ],
+        [
+          "p",
+          "A cardiopatia isquêmica é causa frequente de disfunção ventricular, particularmente em pessoas com fatores de risco ateroscleróticos ou história de infarto; alteração segmentar ao ecocardiograma aumenta a suspeita, mas não confirma isoladamente etiologia coronariana. Hipertensão crônica pode provocar hipertrofia e rigidez diastólica; doença valvar cria sobrecarga de pressão ou volume; miocardiopatia dilatada pode ser genética, inflamatória, tóxica ou idiopática. Em áreas endêmicas e diante de história epidemiológica adequada, doença de Chagas deve ser investigada, especialmente com alterações de condução e aneurisma apical."
+        ],
+        [
+          "p",
+          "Doença renal, diabetes, obesidade, apneia do sono, amiloidose cardíaca, fibrilação atrial sustentada, uso de álcool ou drogas cardiotóxicas e quimioterápicos modificam a probabilidade etiológica. Sarcoidose, hemocromatose e outras doenças infiltrativas precisam ser pensadas quando há sinais característicos. A identificação da etiologia muda prognóstico e pode abrir tratamento causal: intervenção em válvula, revascularização selecionada, controle de taquicardiomiopatia, tratamento de tireotoxicose, suspensão de cardiotóxico ou avaliação de cardiomiopatia genética."
+        ],
+        [
+          "t",
+          [
+            "Pista clínica",
+            "Etiologias prioritárias",
+            "Exame direcionado"
+          ],
+          [
+            [
+              "ECG com BRD + hemibloqueio anterior, arritmia ventricular, área endêmica",
+              "Chagas",
+              "Sorologia em duas técnicas e avaliação cardíaca"
+            ],
+            [
+              "Dor anginosa, IAM prévio, alteração segmentar",
+              "Isquêmica",
+              "Investigação coronariana conforme risco e estabilidade"
+            ],
+            [
+              "Hipertrofia concêntrica + hipertensão antiga",
+              "Hipertensiva",
+              "Ecocardiograma, controle pressórico, outras causas de hipertrofia"
+            ],
+            [
+              "Parede ventricular espessa desproporcional, baixo QRS ou neuropatia",
+              "Amiloidose/infiltrativa",
+              "Ressonância e investigação específica para cadeia leve/ATTR"
+            ],
+            [
+              "Taquicardia sustentada, remodelamento global",
+              "Taquicardiomiopatia",
+              "ECG, monitorização e controle de arritmia"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Aprofundamento etiológico — quatro perguntas antes de chamar 'cardiomiopatia dilatada idiopática'"
+        ],
+        [
+          "p",
+          "A investigação etiológica responde a perguntas com consequências de tratamento. Primeira: existe isquemia coronariana ou infarto antigo que explique alteração regional e justifique revascularização ou prevenção vascular intensiva? Segunda: há doença valvar, arritmia ou hipertensão suficientemente importante para justificar remodelamento e reversibilidade parcial? Terceira: há doença infiltrativa, inflamatória, infecciosa ou genética que demanda terapia específica, rastreio familiar ou restrição de certas drogas? Quarta: há exposição tóxica, hormonal, nutricional ou medicamentosa passível de remoção? A resposta usa clínica, ECG, ecocardiograma, exames selecionados e, quando apropriado, ressonância/coronariografia."
+        ],
+        [
+          "3",
+          "Padrão anatômico orienta a causa, mas não fecha sozinho o diagnóstico"
+        ],
+        [
+          "p",
+          "Alteração segmentar com onda Q, angina ou história de IAM sugere cardiopatia isquêmica, ainda que miocardite e doença de Chagas também possam causar alterações regionais. Hipertrofia concêntrica com HAS prolongada levanta cardiopatia hipertensiva; estenose aórtica é outro mecanismo de sobrecarga de pressão. Dilatação biventricular com hipocinesia global pode representar cardiomiopatia dilatada genética, miocardite, doença tóxica, taquicardiomiopatia ou isquemia difusa. Espessamento aparente da parede com aumento atrial, baixa voltagem relativa no ECG e neuropatia/carpalgia pode motivar investigação de amiloidose. Não etiquetar toda parede espessa como 'hipertrofia de hipertenso'."
+        ],
+        [
+          "3",
+          "Doença de Chagas — um diferencial brasileiro que não cabe apenas no rodapé"
+        ],
+        [
+          "p",
+          "A infecção crônica por Trypanosoma cruzi pode provocar fibrose, alterações de condução e arritmias ventriculares, aneurisma apical, trombo e disfunção ventricular. A hipótese aumenta com origem ou exposição epidemiológica pertinente, história familiar e bloqueio de ramo direito associado a hemibloqueio anterior esquerdo no ECG, embora esses achados não sejam exclusivos. Em suspeita de forma crônica, a confirmação laboratorial utiliza testes sorológicos apropriados por estratégias recomendadas no Brasil; solicitar apenas PCR isolada não é abordagem habitual de triagem crônica. A investigação deve avaliar arritmias, história de síncope, necessidade de anticoagulação em situações apropriadas e disfunção progressiva, além de cuidado cardiológico de referência."
+        ],
+        [
+          "p",
+          "Uma pessoa com sorologia positiva e FEVE ainda preservada pode estar em estágio diferente daquela com cardiomiopatia chagásica dilatada e taquicardia ventricular sustentada. A avaliação de risco de morte súbita na doença de Chagas possui particularidades que não se resumem aos critérios convencionais de CDI da IC isquêmica. Indicação de antiparasitário na fase crônica depende de faixa etária, forma clínica e recomendações de infectologia/Ministério da Saúde; não confundir diagnóstico etiológico com promessa de reversão completa da fibrose."
+        ],
+        [
+          "3",
+          "Taquicardiomiopatia e toxicidade: lembrar causas potencialmente reversíveis"
+        ],
+        [
+          "p",
+          "Fibrilação atrial com resposta ventricular muito rápida, taquicardia atrial persistente e extrassístoles ventriculares de alta carga podem reduzir FEVE por dissincronia e remodelamento. A suspeita aumenta quando a disfunção ventricular parece desproporcional ao tempo de cardiopatia conhecido. Controle da arritmia, às vezes com abordagem de ritmo e ablação em pacientes selecionados, pode melhorar função nas semanas e meses subsequentes. Porém não concluir retrospectivamente que FA foi a causa única só porque estava presente; IC também favorece FA."
+        ],
+        [
+          "p",
+          "Álcool em excesso, cocaína, anabolizantes, quimioterápicos potencialmente cardiotóxicos e determinadas drogas oncológicas devem ser investigados sem julgamento. O risco depende de agente, dose cumulativa, comorbidades e predisposição. Em pessoas com câncer, o diagnóstico de cardiotoxicidade exige comparar FEVE e strain longitudinal quando disponíveis, sintomas e biomarcadores em relação ao basal e ao protocolo cardio-oncológico. Tratar IC e discutir interrupção/substituição do agente com oncologia pode preservar simultaneamente prognóstico cardíaco e controle da neoplasia."
+        ],
+        [
+          "3",
+          "Quando a ressonância ou biópsia faz diferença"
+        ],
+        [
+          "p",
+          "A ressonância cardíaca fornece informação sobre volumes, função e padrão de realce tardio, edema e infiltrado. Realce subendocárdico/transmural tende a sugerir lesão isquêmica; realce mesocárdico ou subepicárdico pode apoiar etiologias não isquêmicas, embora exista sobreposição. Em suspeita de amiloidose, testes monoclonais séricos/urinários e cintilografia óssea com traçador apropriado podem fazer parte da avaliação, em sequência correta para não confundir ATTR com amiloidose AL. A biópsia endomiocárdica é reservada para cenários nos quais histologia tem chance de alterar tratamento, como algumas miocardites rapidamente progressivas e infiltrativas, não rotina de toda cardiomiopatia dilatada."
+        ],
+        [
+          "t",
+          [
+            "Achado-chave",
+            "Etiologias possíveis",
+            "Próximo exame orientador"
+          ],
+          [
+            [
+              "FEVE baixa + onda Q/alteração segmentar",
+              "DAC, IAM antigo, Chagas/miocardite em diferenciais",
+              "Investigação coronária conforme risco e indicação"
+            ],
+            [
+              "BRD + bloqueio divisional + origem epidemiológica",
+              "Chagas",
+              "Sorologias crônicas e avaliação de arritmia"
+            ],
+            [
+              "Espessura de VE elevada com baixa voltagem relativa",
+              "Amiloidose, outras infiltrativas",
+              "Algoritmo específico de amiloidose"
+            ],
+            [
+              "Deterioração após quimioterapia",
+              "Cardiotoxicidade",
+              "Eco comparativo, strain, avaliação cardio-oncológica"
+            ],
+            [
+              "Taquicardia persistente + disfunção global",
+              "Taquicardiomiopatia",
+              "ECG/Holter, tratamento do ritmo e eco seriado"
+            ],
+            [
+              "Realce mesocárdico na ressonância",
+              "Miocardiopatia não isquêmica",
+              "Investigar doença genética/inflamatória conforme quadro"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "diagnostico",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico estruturado — sintomas, ECG, BNP e ecocardiografia"
+        ],
+        [
+          "p",
+          "Na suspeita de IC, anamnese deve caracterizar padrão temporal da dispneia, limitação funcional, ortopneia, dispneia noturna, tosse, edema, ganho de peso e episódios prévios. Perguntar consumo de álcool, medicações, adesão, desencadeantes infecciosos, arritmias e sinais de isquemia. Exame investiga jugular, refluxo abdominojugular, crepitações, terceira bulha, perfusão periférica, ascite, hepatomegalia e edema. Em obesidade e na IC com FEVE preservada, alguns sinais podem ser pouco evidentes."
+        ],
+        [
+          "3",
+          "Biomarcadores: quando o 'BNP normal' engana"
+        ],
+        [
+          "p",
+          "BNP e NT-proBNP refletem estresse e estiramento das câmaras. Valores baixos reduzem probabilidade de IC em muitos cenários, mas exigem atenção a obesidade, momento da coleta e fenótipo; valores altos não são específicos de IC e podem ocorrer por doença renal, fibrilação atrial ou embolia pulmonar. Em contexto agudo, valores de referência e pontos de corte diferem do ambulatório. Não interpretar BNP de modo independente do exame clínico e da ecocardiografia."
+        ],
+        [
+          "3",
+          "O ecocardiograma precisa responder mais que 'FE 35%'"
+        ],
+        [
+          "p",
+          "Descrever dimensões das câmaras, FEVE, função do VD, espessura ventricular, alterações regionais de movimento, valvopatias, tamanho de átrio esquerdo e parâmetros diastólicos. A estimativa de pressões de enchimento é multimodal: velocidades do anel mitral (e’), E/e’, volume atrial esquerdo, velocidade de regurgitação tricúspide e demais achados. A ESC 2026 exige evidência objetiva de alterações compatíveis com elevação de pressões/disfunção para chamar de HFpEF em pessoa com FEVE ≥50%. Um laudo 'função sistólica preservada' não exclui IC, mas tampouco confirma HFpEF."
+        ],
+        [
+          "p",
+          "ECG ajuda a detectar arritmias, isquemia, sobrecargas ou distúrbios de condução. Radiografia mostra cardiomegalia, congestão, derrame ou diagnósticos alternativos, mas tem sensibilidade limitada. Avaliar hemograma, creatinina, eletrólitos, glicemia, perfil tireoidiano e outros exames direcionados à etiologia e à segurança farmacológica. Ressonância cardíaca pode auxiliar a reconhecer fibrose, miocardite, doenças infiltrativas ou cardiomiopatias específicas; cateterismo e outros testes são selecionados conforme hipótese."
+        ],
+        [
+          "3",
+          "O que fazer quando exame e clínica discordam?"
+        ],
+        [
+          "p",
+          "Dispneia com BNP discreto e FEVE de 60% em pessoa obesa pode ser HFpEF, mas doença pulmonar, anemia e descondicionamento podem produzir quadro semelhante; estimar probabilidade e procurar alterações estruturais/funcionais. Edema intenso com ecocardiograma normal pode ter origem venosa, renal, hepática ou medicamentosa. IC não pode ser 'descartada' ou 'confirmada' por um marcador isolado."
+        ],
+        [
+          "3",
+          "Aprofundamento diagnóstico — transformar dispneia em hipótese testável"
+        ],
+        [
+          "p",
+          "O diagnóstico começa por probabilidade pré-teste: dispneia progressiva, intolerância ao esforço, ortopneia, dispneia paroxística noturna, edema, turgência jugular e antecedentes cardiovasculares elevam suspeita. Em idoso com DPOC, anemia, obesidade e DRC, a síndrome pode ser difícil de reconhecer porque comorbidades também provocam dispneia. Por isso, nenhum sinal isolado confirma ou exclui IC. A entrevista deve registrar tempo de evolução, gatilhos, edema, ganho de peso, tolerância a decúbito, episódios prévios e adesão a diuréticos, além de procurar SCA, arritmia, hipertensão descontrolada, infecção, embolia pulmonar e nova lesão valvar."
+        ],
+        [
+          "3",
+          "O exame físico é uma hipótese fisiológica em tempo real"
+        ],
+        [
+          "p",
+          "Pressão venosa jugular elevada e refluxo abdominojugular sugerem aumento de pressão atrial direita; estertores e ortopneia sugerem pressão pulmonar de enchimento elevada, mas podem estar ausentes em congestão crônica. O terceiro ruído cardíaco (B3) apoia sobrecarga de volume e disfunção, mas sua ausência não exclui IC; sopro novo pode apontar valvopatia. Extremidades frias, enchimento capilar lento, confusão, oligúria e pressão de pulso estreita alertam para baixo débito. Palpar fígado e avaliar ascite ajudam a reconhecer IC direita. O peso corporal deve ser comparado ao basal, não apenas interpretado como 'obesidade'."
+        ],
+        [
+          "p",
+          "A ausculta pulmonar pode enganar: sibilância associada à congestão pode representar asma cardíaca, enquanto crepitações da pneumonia são frequentemente assimétricas e acompanhadas de febre e imagem focal. Edema maleolar em quem usa amlodipino pode decorrer de vasodilatação periférica, sem congestão sistêmica verdadeira. Em cirrose há ascite e edema por mecanismos distintos, e em síndrome nefrótica a proteinúria/hípoalbuminemia podem dominar. O raciocínio deve integrar sinais de pressão venosa sistêmica e esquerda, perfusão e história."
+        ],
+        [
+          "3",
+          "Peptídeos natriuréticos: por que um biomarcador não substitui ecocardiograma"
+        ],
+        [
+          "p",
+          "BNP e NT-proBNP aumentam em resposta a tensão de parede e são úteis para afastar IC quando valores baixos aparecem em contexto de probabilidade compatível, mas o limite de exclusão varia entre cenário ambulatorial e descompensação aguda. Os valores devem ser interpretados com o ensaio e a faixa de idade. Idade avançada, disfunção renal, FA, hipertensão pulmonar e embolia pulmonar podem elevar valores sem IC esquerda clássica. Obesidade pode reduzir peptídeos mesmo com pressões de enchimento aumentadas; assim, um BNP 'não muito alto' em pessoa obesa não é garantia de ausência de HFpEF."
+        ],
+        [
+          "p",
+          "Sob tratamento com sacubitril/valsartana, BNP e NT-proBNP não são afetados de maneira idêntica, porque a inibição da neprilisina modifica o metabolismo de alguns peptídeos. A tendência de NT-proBNP costuma ser mais simples de interpretar para acompanhar resposta em quem usa ARNI, embora nenhum marcador substitua avaliação clínica. Usar um limiar único em todos os indivíduos com FA ou DRC pode produzir muitos falsos positivos. Da mesma forma, não iniciar diurético em pessoa sem congestão apenas porque um exame isolado passou do limite."
+        ],
+        [
+          "3",
+          "Ecocardiograma: além de calcular FEVE"
+        ],
+        [
+          "p",
+          "Um eco útil para IC descreve volume e dimensões de câmaras, FEVE, alteração segmentar, função e dimensão do VD, hipertrofia, pressão sistólica pulmonar estimada, função valvar e sinais diastólicos. A análise da diástole integra relação E/A, velocidades teciduais e', razão E/e', volume do átrio esquerdo e fluxo de regurgitação tricúspide conforme contexto. A interpretação não pode ser feita por um único E/e', pois idade, ritmo de FA, valvopatias e qualidade de janela alteram desempenho. O eco transesofágico ou ressonância entram quando a pergunta anatômica não é resolvida pelo transtorácico, e não como primeira etapa obrigatória."
+        ],
+        [
+          "p",
+          "Nos casos de FEVE preservada, a SBC 2026 descreve algoritmos que podem recorrer a escores como H₂FPEF e HFA-PEFF e teste de esforço diastólico quando o ecocardiograma em repouso é indeterminado. O H₂FPEF combina, entre outros, obesidade, hipertensão tratada, FA, pressão pulmonar estimada, idade e parâmetros de enchimento; os pesos não devem ser inventados de memória. Em paciente com baixa probabilidade pelo escore, reexaminar causas alternativas de dispneia; em probabilidade intermediária com grande limitação, eco de estresse diastólico ou hemodinâmica de esforço em centro experiente pode demonstrar pressões elevadas que não apareciam em repouso."
+        ],
+        [
+          "3",
+          "RX, ultrassom pulmonar e ECG: métodos complementares, não competidores"
+        ],
+        [
+          "p",
+          "Radiografia pode demonstrar cardiomegalia, redistribuição vascular, linhas septais, opacidades alveolares e derrame pleural. Sua sensibilidade diminui nas fases iniciais ou em paciente com IC crônica e alterações discretas. Ultrassom pulmonar identifica linhas B e derrames, porém linhas B ocorrem também em doença intersticial, pneumonia e outras situações; correlacionar distribuição e sinais cardíacos. A avaliação de veia cava inferior e Doppler venoso sistêmico pode ajudar em congestão direita, mas requer experiência e não representa valor de pressão de enchimento exato em toda ventilação."
+        ],
+        [
+          "p",
+          "ECG raramente é completamente normal em IC sistólica estrutural avançada e pode mostrar FA, taquicardia, QRS largo, BRE, ondas Q antigas, bloqueios e sinais de hipertrofia. Entretanto, nenhum achado eletrocardiográfico isolado é diagnóstico de IC. O ECG também ajuda a identificar candidatos à terapia de ressincronização, orientar avaliação de isquemia ou sugerir doença de Chagas. Troponina deve ser solicitada conforme apresentação e suspeita de lesão miocárdica, não como marcador específico de congestão; em descompensação pode elevar por isquemia de demanda ou lesão não aterotrombótica."
+        ],
+        [
+          "t",
+          [
+            "Exame",
+            "Pergunta que responde melhor",
+            "Principal armadilha"
+          ],
+          [
+            [
+              "BNP/NT-proBNP",
+              "Existe estresse cardíaco que apoia hipótese de IC?",
+              "Elevado em FA/DRC; reduzido pela obesidade"
+            ],
+            [
+              "Eco transtorácico",
+              "Qual função, estrutura, valva e pressão sugerida?",
+              "FEVE normal não exclui HFpEF"
+            ],
+            [
+              "RX de tórax",
+              "Congestão radiológica e diagnósticos pulmonares alternativos?",
+              "RX normal não exclui IC"
+            ],
+            [
+              "US pulmonar",
+              "Há linhas B/derrame e evolução da congestão?",
+              "Linhas B não são específicas"
+            ],
+            [
+              "ECG",
+              "Qual ritmo, condução, isquemia e substrato?",
+              "Bloqueio e hipertrofia não provam IC"
+            ],
+            [
+              "Creatinina, K+, Na+",
+              "Reserva renal e segurança terapêutica?",
+              "Alteração pode refletir congestão, não apenas desidratação"
+            ],
+            [
+              "Hemograma, TSH, ferritina/TSAT quando indicado",
+              "Causa/agravante potencialmente tratável?",
+              "Pedir exames sem hipótese ou interpretação"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Deficiência de ferro em IC não exige anemia explícita"
+        ],
+        [
+          "p",
+          "A deficiência de ferro pode agravar fadiga, intolerância ao esforço e hospitalização em IC independentemente de anemia franca. Diretrizes utilizam ferritina e saturação de transferrina (TSAT) para triagem em populações específicas, considerando que ferritina aumenta em inflamação. O tratamento com ferro intravenoso em pacientes elegíveis, sobretudo sintomáticos com IC sistólica ou após hospitalização conforme ensaios e guideline, pode melhorar sintomas e reduzir alguns eventos; o benefício depende de fenótipo e critério do estudo. Não administrar ferro empírico por qualquer cansaço ou chamar ferritina isolada de diagnóstico completo."
+        ],
+        [
+          "p",
+          "O uso de índices laboratoriais permite reavaliar sintomas apesar de FEVE estável. Também investigar distúrbios tireoidianos, apneia, anemia, doença renal e doença pulmonar. Uma pessoa com IC controlada e dispneia crescente pode ter embolia pulmonar ou pneumonia nova; a explicação deve ser verificada clinicamente, não atribuída a 'mais insuficiência cardíaca' sem exame."
+        ],
+        [
+          "3",
+          "Dois exemplos de diagnóstico com armadilhas"
+        ],
+        [
+          "p",
+          "<strong>Vinheta diagnóstica A:</strong> mulher de 74 anos, hipertensa, obesa, FEVE 63%, cansaço importante, aumento atrial esquerdo e parâmetros diastólicos compatíveis com pressão elevada. BNP discretamente elevado, abaixo do esperado para gravidade dos sintomas. A obesidade pode atenuar biomarcador, e FEVE preservada não exclui IC; integrar eco, prova objetiva de disfunção e diferenciais como anemia e doença pulmonar. Conduta é confirmar fenótipo, tratar congestão se presente e orientar comorbidades, não prescrever terapia sistólica indiscriminadamente."
+        ],
+        [
+          "p",
+          "<strong>Vinheta diagnóstica B:</strong> homem de 55 anos com DRC, FA e NT-proBNP elevado, sem ortopneia, jugulares normais, pulmões limpos e eco sem pressões elevadas. O biomarcador pode ser elevado por DRC/FA. Reavaliar capacidade funcional e etiologias alternativas, sem fechar IC apenas pela análise laboratorial. Por que importa: marcador elevado é pista probabilística, não diagnóstico isolado."
+        ],
+        [
+          "p",
+          "Fonte principal: Simões et al., SBC 2026, algoritmos de diagnóstico crônico, descompensação e HFpEF; ESC 2026, critérios de fenótipo e fatores que interferem em peptídeos natriuréticos, https://academic.oup.com/eurheartj/article/47/38/5346/8766302."
+        ]
+      ]
+    ],
+    [
+      "aguda",
+      0,
+      [
+        [
+          "2",
+          "5. IC descompensada: congestão e perfusão definem a prioridade"
+        ],
+        [
+          "p",
+          "A IC descompensada consiste em deterioração dos sinais/sintomas de IC e frequentemente exige atendimento urgente ou hospitalização. A paciente pode chegar com edema pulmonar hipertensivo, retenção sistêmica progressiva ou hipoperfusão franca. A etapa inicial é estabilizar vias aéreas/ventilação/hemodinâmica quando necessário e procurar precipitações: infecção, isquemia aguda, hipertensão descontrolada, arritmias, uso de anti-inflamatórios, interrupção do tratamento, alterações dietéticas, tromboembolismo e disfunção renal."
+        ],
+        [
+          "t",
+          [
+            "Perfil",
+            "Congestão",
+            "Perfusão",
+            "Consequência prática"
+          ],
+          [
+            [
+              "Quente e seco",
+              "Ausente",
+              "Preservada",
+              "Compensação; avaliar gatilho, manter terapia e seguimento"
+            ],
+            [
+              "Quente e úmido",
+              "Presente",
+              "Preservada",
+              "Descongestão; diurético de alça e monitorização, considerar vasodilatador se indicação e PA adequada"
+            ],
+            [
+              "Frio e úmido",
+              "Presente",
+              "Comprometida",
+              "Risco elevado; avaliar choque e necessidade de suporte intensivo e hemodinâmico"
+            ],
+            [
+              "Frio e seco",
+              "Ausente",
+              "Comprometida",
+              "Investigar baixa pré-carga versus falência de bomba; volume empírico pode ser perigoso"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Perfil quente e úmido:</strong> diurético de alça intravenoso é estratégia habitual para aliviar congestão, com ajuste por diurese, sódio, função renal e resposta. Vasodilatadores podem ser usados em pacientes adequados, sobretudo hipertensos, mas não devem precipitar hipotensão. <strong>Perfil frio e úmido:</strong> exige determinar causa de baixo débito, lactato/perfusão, urgência de revascularização se isquemia e necessidade de unidade intensiva; inotrópicos e vasopressores são medidas para situações selecionadas, não rotina de toda IC."
+        ],
+        [
+          "p",
+          "<strong>Perfil frio e seco</strong> não significa automaticamente 'dar 250 mL de soro'. A hipoperfusão pode decorrer de hipovolemia verdadeira ou de grave falência de bomba sem congestão clínica evidente. Ecocardiografia e avaliação hemodinâmica ajudam a evitar infusão de volume iatrogênica, especialmente se houver pressão de enchimento elevada. O objetivo é restabelecer perfusão e identificar a causa com o menor dano possível."
+        ],
+        [
+          "3",
+          "Edema agudo de pulmão: separar hipoxemia e choque"
+        ],
+        [
+          "p",
+          "No edema pulmonar, tratar hipoxemia, ventilação e causa precipitante. Ventilação não invasiva pode reduzir trabalho respiratório em paciente consciente e cooperativo com insuficiência respiratória, desde que não haja contraindicação ou necessidade imediata de intubação. Diurese e vasodilatação são escolhidas conforme pressão e congestão; uma crise hipertensiva pode exigir abordagem diferente de um edema pulmonar com PA baixa. Reavaliação de oxigenação, perfusão, diurese e eletrólitos é contínua."
+        ],
+        [
+          "3",
+          "Aprofundamento de emergência — congestão, hipoperfusão e o gatilho da descompensação"
+        ],
+        [
+          "p",
+          "No atendimento de urgência, IC descompensada não é diagnóstico completo: é síndrome a ser qualificada pelo grau de congestão, perfusão e causa precipitante. O paciente com PA 190/110 e edema alveolar fulminante não recebe necessariamente o mesmo tratamento do paciente PA 80/50 com extremidades frias, lactato alto e perfusão renal ruim. A distinção fisiológica define se há benefício em vasodilatação, diurético, suporte ventilatório ou inotrópicos e vasopressores. Reavaliar perfusão e oxigenação em minutos, e não esperar o eco para oferecer medidas iniciais quando há falência respiratória."
+        ],
+        [
+          "3",
+          "Perfis de Stevenson são úteis porque o volume não é a única variável"
+        ],
+        [
+          "p",
+          "Perfil A — quente e seco — descreve ausência de congestão importante e perfusão mantida; B — quente e úmido — representa congestão sem hipoperfusão; C — frio e úmido — combina congestão e baixo débito; L — frio e seco — sugere baixa perfusão sem sinais evidentes de congestão. O paciente pode mudar de perfil com progressão do choque ou efeito terapêutico. A palavra 'seco' significa ausência de congestão clinicamente relevante, não prova de hipovolemia. Em IC direita, os sinais de congestão podem estar em veias sistêmicas e não nos pulmões."
+        ],
+        [
+          "t",
+          [
+            "Perfil",
+            "Achados dominantes",
+            "Estratégia orientadora"
+          ],
+          [
+            [
+              "A: quente/seco",
+              "Estável, sem congestão",
+              "Manter otimização crônica, investigar gatilho"
+            ],
+            [
+              "B: quente/úmido",
+              "Dispneia/edema/jugulares, perfusão adequada",
+              "Descongestão e controle de causas"
+            ],
+            [
+              "C: frio/úmido",
+              "Hipoperfusão + congestão",
+              "Cuidados intensivos, suporte conforme choque e descongestão orientada"
+            ],
+            [
+              "L: frio/seco",
+              "Baixo débito com pouca congestão",
+              "Definir pré-carga, causa e responsividade antes de fluidos"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O fenótipo vascular da descompensação não é o mesmo que ganhar cinco quilos de edema"
+        ],
+        [
+          "p",
+          "Na IC descompensada predominantemente vascular, hipertensão e venoconstrição redistribuem sangue para o leito pulmonar rapidamente, provocando aumento de pressão capilar mesmo sem grande ganho de volume corporal. O paciente chega subitamente com agitação, sudorese, ortopneia e edema pulmonar. Se está hipertenso e com ventilação comprometida, oxigenoterapia quando hipóxico, ventilação não invasiva quando apropriada e nitratos em cenário selecionado podem reduzir carga e melhorar sintomas, associados a avaliação de isquemia e outras causas. Dar apenas furosemida e aguardar pode ser insuficiente nessa apresentação."
+        ],
+        [
+          "p",
+          "Na descompensação predominantemente congestiva, dias de retenção progressiva de sal/água produzem edema, ganho de peso, ascite, jugulares elevadas e ortopneia gradual. O diurético de alça endovenoso costuma ser primeira ferramenta sintomática no hospital. A dose inicial precisa considerar exposição prévia e função renal; pessoa que já usa doses elevadas por via oral pode exigir dose IV pelo menos equivalente ou maior sob monitorização, em vez de dose fixa ínfima. O objetivo é alcançar diurese/natriurese eficaz com menor agressão hemodinâmica e eletrolítica."
+        ],
+        [
+          "3",
+          "Sinais de choque cardiogênico: não esperar pressão cair para reconhecer"
+        ],
+        [
+          "p",
+          "Choque cardiogênico se reconhece por perfusão insuficiente devido a falência cardíaca, com sinais como pele fria, oligúria, alteração de consciência, lactato aumentado e pressão arterial baixa ou sustentada artificialmente por vasopressores. Não é definido somente por FEVE: grave insuficiência mitral, infarto de VD, arritmia rápida e tamponamento são mecanismos que podem exigir condutas diferentes. A avaliação inicial reúne ECG, oxigenação, gasometria/lactato quando indicado, creatinina/eletrólitos, eco à beira-leito e investigação de coronariopatia/isquemia. SCA associada a choque pode exigir revascularização urgente."
+        ],
+        [
+          "p",
+          "Em choque cardiogênico, vasopressores e inotrópicos são instrumentos de suporte temporário, não medicamentos de rotina para congestão simples. Noradrenalina é frequentemente o vasopressor preferido em hipotensão profunda com necessidade de manter pressão de perfusão; dobutamina pode apoiar débito quando há falência contrátil, mas pode causar taquicardia, arritmia e hipotensão. Milrinona pode ser considerada em cenários selecionados, incluindo pacientes sob betabloqueio ou com disfunção de VD, com cautela por vasodilatação e eliminação renal. A escolha depende de hemodinâmica e equipe de terapia intensiva, não de um algoritmo simplificado para prescrição por estudantes."
+        ],
+        [
+          "3",
+          "Diurético IV: primeiro medir resposta, depois decidir dose"
+        ],
+        [
+          "p",
+          "O diurético de alça tem efeito limiar: abaixo de determinada concentração no túbulo renal, não há natriurese satisfatória; acima do limiar, aumentar dose aumenta efeito até limite farmacodinâmico. A SBC 2026 enfatiza que repetir incessantemente a mesma dose ineficaz em intervalos curtos costuma ser menos útil do que ajustar apropriadamente a dose à resposta. Monitorar peso, entrada e saída, urina produzida, exame de congestão, creatinina, sódio, potássio e magnésio. A presença de oligúria após primeira dose não autoriza automaticamente somar vários diuréticos sem avaliar perfusão e obstrução."
+        ],
+        [
+          "p",
+          "A monitorização de sódio urinário após diurético e diurese nas horas iniciais pode auxiliar decisão em centros com protocolo estruturado. Resposta inadequada exige revisar ingestão de sódio, absorção/entrega renal do medicamento, DRC, interação com AINEs, congestão venosa e estado hemodinâmico. Associação sequencial de diurético distal com alça pode aumentar natriurese em pacientes selecionados, mas eleva risco de hiponatremia, hipocalemia, acidose/alcalose e LRA. Em congestão refratária, ultrafiltração não deve ser considerada automaticamente superior a ajuste médico bem supervisionado; sua indicação depende de volume, rim e equipe especializada."
+        ],
+        [
+          "3",
+          "Creatinina subiu: distinguir descongestão eficaz de injúria renal progressiva"
+        ],
+        [
+          "p",
+          "Durante descongestão, elevação modesta de creatinina pode ocorrer com redução de pressões venosas e hemoconcentração, sem significar necessariamente perda estrutural renal. Quando congestão persiste, suspender diurético por cada aumento pequeno pode deixar pressão renal venosa elevada e piorar evolução. Por outro lado, hipotensão, hipoperfusão, hipercalemia, oligúria progressiva e grande elevação de creatinina indicam potencial lesão relevante e obrigam reavaliação. É importante discutir a trajetória: melhora de peso, jugulares, sintomas, edema, perfusão e laboratório, não um ponto isolado."
+        ],
+        [
+          "p",
+          "A doença cardiorrenal pode ter mecanismos simultâneos: débito baixo reduz fluxo renal, mas congestão venosa também diminui gradiente de filtração. Em IC direita severa, veias renais congestionadas podem gerar oligúria mesmo com PA relativamente conservada. A avaliação ultrassonográfica venosa por equipes treinadas pode ajudar, porém não substitui exame clínico e deve ser interpretada conforme ventilação e ritmo. Dar soro em resposta a creatinina sem avaliar jugulares/pulmões é erro recorrente."
+        ],
+        [
+          "3",
+          "VNI, ventilação invasiva e oxigênio: indicação pela fisiologia respiratória"
+        ],
+        [
+          "p",
+          "Oxigênio deve tratar hipoxemia, não ser prescrito automaticamente em toda pessoa com IC e saturação normal. Na congestão alveolar grave com esforço ventilatório, ventilação não invasiva pode reduzir trabalho respiratório e melhorar oxigenação rapidamente se o paciente está consciente, protege via aérea e não possui contraindicações como vômitos persistentes ou instabilidade muito severa. Quando há exaustão, rebaixamento de consciência, incapacidade de proteger via aérea ou falha de VNI, avaliar intubação em equipe experiente. A indução e pressão positiva podem precipitar colapso circulatório em paciente hipovolêmico ou com VD vulnerável; preparar suporte hemodinâmico."
+        ],
+        [
+          "3",
+          "Buscar precipitantes altera o prognóstico da internação"
+        ],
+        [
+          "p",
+          "Os precipitantes comuns incluem SCA, arritmias (especialmente FA rápida), aumento súbito de pressão, excesso de sal/água, suspensão de medicação por inacessibilidade, infecção, TEP, anemia, lesões valvares e piora renal. Não atribuir todo episódio à 'não adesão' sem perguntar por preço do medicamento, diurese inconveniente no trabalho, dificuldade de transporte ou orientação contraditória. A evolução só será duradoura se a causa for tratada. Um paciente que usa corretamente todas as drogas e ainda piora precisa investigação de isquemia, valva, arritmia, doença pulmonar e progressão estrutural."
+        ],
+        [
+          "t",
+          [
+            "Achado urgente",
+            "Hipótese a descartar",
+            "Próxima prioridade"
+          ],
+          [
+            [
+              "Dor torácica/ECG dinâmico",
+              "SCA com IC",
+              "Protocolo coronariano e suporte"
+            ],
+            [
+              "FA rápida + hipotensão",
+              "Arritmia como causa ou consequência",
+              "Distinguir instabilidade atribuível e corrigir gatilho"
+            ],
+            [
+              "Febre e novo infiltrado",
+              "Infecção/pneumonia com IC",
+              "Antibioticoterapia quando indicada e descongestão se presente"
+            ],
+            [
+              "Dispneia súbita com dor pleurítica/síncope",
+              "TEP",
+              "Estratificação hemodinâmica e investigação"
+            ],
+            [
+              "Novo sopro e edema pulmonar abrupto",
+              "Lesão valvar aguda",
+              "Eco urgente/equipe estrutural"
+            ],
+            [
+              "Edema e ganho de peso após suspensão de diurético",
+              "Retenção de sódio/água",
+              "Descongestão e corrigir acesso à medicação"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Dois cenários de urgência com decisões distintas"
+        ],
+        [
+          "p",
+          "<strong>Caso agudo A — edema pulmonar hipertensivo.</strong> Homem de 62 anos, PA 205/120 mmHg, dispneia em minutos, estertores difusos, SpO₂ 83% e grande esforço respiratório, extremidades quentes. Hipótese principal: congestão pulmonar vascular hipertensiva, com necessidade imediata de suporte respiratório, VNI quando elegível e vasodilatação titulada se não há contraindicação; associar diurético conforme avaliação de volume, pesquisar isquemia e valvopatia. Diferencial com pneumonia/TEP não pode atrasar oxigenação. Por que importa: redistribuição de volume e pós-carga têm importância maior que o peso corporal."
+        ],
+        [
+          "p",
+          "<strong>Caso agudo B — baixo débito e congestão.</strong> Mulher de 69 anos, IC sistólica conhecida, PA 82/52, extremidades frias, jugulares elevadas, creatinina em ascensão, oligúria, ortopneia e lactato elevado. Perfil C (frio e úmido), suspeita de choque cardiogênico. Conduta: avaliação intensiva/eco dirigido, ECG, investigar IAM/FA, suporte de perfusão e vasoativo/inotrópico conforme hemodinâmica por equipe especializada, sem dar bolus grandes de cristaloide por rotina. A descongestão será articulada ao suporte de débito. Por que importa: furosemida isolada não corrige todo choque e soro pode agravar a congestão."
+        ],
+        [
+          "p",
+          "Fontes clínicas: SBC 2026, figuras 7.1–7.9 (algoritmo de descompensação, perfis, resposta à furosemida, congestionamento refratário e piora renal) e ESC 2026. As figuras são citadas conceitualmente e não copiadas; doses IV e suporte mecânico precisam do protocolo hospitalar/UTI."
+        ]
+      ]
+    ],
+    [
+      "terapia",
+      0,
+      [
+        [
+          "2",
+          "6. Tratamento crônico: de controle de sintomas à modificação da história natural"
+        ],
+        [
+          "3",
+          "Por que os pilares terapêuticos não podem virar uma lista sem contexto?"
+        ],
+        [
+          "p",
+          "Na IC com FEVE reduzida, evidências sustentam terapias que bloqueiam a sinalização neuro-hormonal e reduzem hospitalização e mortalidade. São frequentemente organizadas em quatro classes fundamentais: inibidor do sistema renina-angiotensina/neprilisina (por exemplo ARNI, ou IECA/BRA em cenários apropriados), betabloqueador com evidência, antagonista do receptor mineralocorticoide (ARM) e inibidor de SGLT2. A avaliação de pressão arterial, frequência, ritmo, função renal, potássio e capacidade de adesão determina introdução, combinação e titulação. Diuréticos de alça aliviam congestão, mas não substituem terapias que modificam prognóstico."
+        ],
+        [
+          "p",
+          "Betabloqueadores com evidência para disfunção sistólica incluem carvedilol, bisoprolol e succinato de metoprolol; iniciar ou elevar dose em choque, bradicardia sintomática ou congestão não estabilizada exige prudência. ARNI não deve ser associado simultaneamente a IECA e requer intervalo apropriado após suspensão de IECA por risco de angioedema. ARM demanda controle de potássio e função renal. iSGLT2 apresentam efeitos sobre insuficiência cardíaca além da redução de glicemia, mas requerem orientação sobre volume, condições de suspensão temporária e risco de cetoacidose euglicêmica em situações predisponentes."
+        ],
+        [
+          "3",
+          "O que especificamente mudou na ESC 2026?"
+        ],
+        [
+          "p",
+          "A ESC 2026 introduziu terminologia <strong>terapia médica fundamental (FMT)</strong> e <strong>terapia adicional (AMT)</strong>. Recomenda <strong>dapagliflozina ou empagliflozina</strong> para pacientes com IC sintomática independentemente da FEVE para reduzir hospitalização por IC ou morte cardiovascular; também ampliou recomendação de ARM para IC sintomática ao longo do espectro de FEVE, distinguindo classes e fármacos conforme fenótipo. Isso não autoriza intercambiar qualquer espironolactona, eplerenona ou ARM não esteroidal em todas as situações: elegibilidade, potássio, função renal, diabetes, disponibilidade e base de evidências variam. A diretriz brasileira de outubro de 2026 deve ser consultada prioritariamente para aplicabilidade nacional, sem apagar a diferença de terminologia."
+        ],
+        [
+          "p",
+          "Na IC com FEVE preservada, procurar e tratar hipertensão, fibrilação atrial, obesidade, diabetes, doença renal, coronariopatia e apneia do sono. Descongestão alivia sintomas quando há hipervolemia. O diagnóstico de HFpEF precisa ser criterioso, porque a prescrição sem definir a etiologia pode esconder doença valvar ou infiltrativa. Terapias com benefício em eventos devem ser escolhidas conforme FEVE, comorbidades e diretrizes atuais."
+        ],
+        [
+          "t",
+          [
+            "Classe terapêutica",
+            "Mecanismo resumido",
+            "Antes de iniciar/titular"
+          ],
+          [
+            [
+              "ARNI / IECA / BRA",
+              "Modula SRAA e, com ARNI, estimula peptídeos natriuréticos",
+              "PA, creatinina/eTFG, potássio, história de angioedema e transição de IECA"
+            ],
+            [
+              "Betabloqueador baseado em evidência",
+              "Reduz ativação simpática nociva e arritmias",
+              "FC, PA, bloqueios, perfusão e estabilidade clínica"
+            ],
+            [
+              "ARM",
+              "Reduz ação de mineralocorticoide, fibrose e retenção",
+              "Potássio, função renal, tipo de ARM e fenótipo"
+            ],
+            [
+              "iSGLT2",
+              "Mecanismos renais/hemodinâmicos e cardiorrenais",
+              "Função renal, volume, diabetes e risco de cetoacidose em doença aguda"
+            ],
+            [
+              "Diurético de alça",
+              "Promove natriurese para descongestão",
+              "Pressão, peso, diurese, eletrólitos e função renal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Aprofundamento farmacológico — quatro mecanismos fundamentais, doses e segurança"
+        ],
+        [
+          "p",
+          "A prescrição da IC com FEVE reduzida é uma estratégia em paralelo, não uma escada em que o aluno precisa levar primeiro o IECA ao máximo para somente então pensar no betabloqueador e, meses depois, no iSGLT2. Em pacientes elegíveis e estáveis, iniciar doses baixas de classes com mecanismos diferentes e titular em consultas sucessivas pode oferecer benefício prognóstico mais cedo. A sequência exata considera pressão, frequência, ritmo, potássio, eTFG, volemia, acesso ao medicamento e desejo de gestação. A SBC 2026 descreve terapia orientada por diretrizes, enquanto a ESC 2026 denomina therapy 'foundational' e reclassifica a área de FEVE 41–49%; quando uma recomendação deriva de ensaios restritos a FEVE ≤40% é necessário observar a evidência, mesmo que a classificação nova una os fenótipos."
+        ],
+        [
+          "3",
+          "1. Bloqueio SRAA / inibição da neprilisina: reduzir remodelamento sem induzir hipotensão evitável"
+        ],
+        [
+          "p",
+          "IECA diminuem angiotensina II e degradação de bradicinina; BRA antagonizam receptor AT1; sacubitril/valsartana soma o antagonismo de angiotensina à inibição da degradação de peptídeos natriuréticos. Em IC sistólica sintomática elegível, ARNI pode oferecer benefício superior ao IECA no desfecho combinado de morte cardiovascular e hospitalização, com indicação e critérios dependentes de diretriz e acesso. Não associar ARNI simultaneamente a IECA, nem a outro BRA, e respeitar intervalo de <strong>pelo menos 36 horas entre interrupção do IECA e primeira dose de sacubitril/valsartana</strong>, por risco de angioedema. A troca de BRA por ARNI não demanda o mesmo intervalo farmacológico de 36 h, mas requer avaliação de pressão e função renal."
+        ],
+        [
+          "p",
+          "Antes de prescrever, verificar gestação/possibilidade de gestação, história de angioedema, pressão sistólica e sintomas posturais, creatinina/eTFG e potássio. Depois de iniciar ou aumentar dose, reavaliar clinicamente e monitorar laboratório no período apropriado. Uma elevação pequena de creatinina após bloqueio SRAA pode refletir mudança hemodinâmica glomerular e não dano estrutural, mas piora importante, oligúria, hipercalemia ou hipotensão sintomática exigem investigação. Associação de IECA e BRA para bloquear o mesmo eixo não traz segurança adicional e eleva risco de dano renal e hipercalemia."
+        ],
+        [
+          "3",
+          "2. Betabloqueadores: por que a titulação exige estabilidade"
+        ],
+        [
+          "p",
+          "Carvedilol, bisoprolol e succinato de metoprolol de liberação prolongada possuem evidência de redução de eventos na IC sistólica nas populações estudadas. Isso não significa usar qualquer betabloqueador no lugar de outro sem equivalência: tartrato de metoprolol de liberação imediata não é intercambiável com os estudos de succinato de liberação prolongada. A inibição simpática reduz remodelamento, frequência e mortalidade ao longo do tempo. No entanto, em edema pulmonar grave com hipoperfusão, início ou escalada imediata pode agravar circulação; a implantação deve ocorrer quando paciente está estabilizado."
+        ],
+        [
+          "p",
+          "No usuário crônico internado por congestão, a suspensão automática de betabloqueador não é indicada se não há choque, bradicardia perigosa, bloqueio significativo ou intolerância grave. A necessidade de reduzir temporariamente em hipoperfusão pode surgir, com retomada antes da alta quando seguro. Durante titulação, perguntar tontura, fadiga progressiva, bradicardia, broncoespasmo e ganho de peso por congestão; medir pulso e pressão e revisar ECG quando há suspeita de bloqueio. A meta é dose recomendada ou maior dose tolerada, não chegar à dose-alvo à custa de síncope."
+        ],
+        [
+          "3",
+          "3. Antagonistas de mineralocorticoide: remodelamento e potássio caminham juntos"
+        ],
+        [
+          "p",
+          "A aldosterona favorece retenção de sódio, ativação de fibroblastos e remodelamento. Espironolactona e eplerenona bloqueiam seu receptor, reduzindo eventos em IC sistólica em pacientes elegíveis, mas elevam risco de hipercalemia, especialmente com DRC e IECA/BRA/ARNI. Antes de iniciar, conhecer potássio e eTFG, e repetir exames após início e titulação. O uso rotineiro costuma exigir eTFG acima de cerca de 30 mL/min/1,73m² e potássio abaixo de 5,0 mEq/L em protocolos convencionais de IC sistólica, ressalvadas situações e limites das fichas técnicas. Ginecomastia e mastalgia podem ocorrer com espironolactona, permitindo considerar eplerenona quando apropriada."
+        ],
+        [
+          "p",
+          "A ESC 2026 ampliou a recomendação de ARM para pacientes sintomáticos independentemente de FEVE, distinguindo o uso de antagonistas esteroidais na HFrEF e a possibilidade de ARM esteroidal ou não esteroidal na HFpEF. Isso não significa acrescentar espironolactona e finerenona juntas: combinar dois antagonistas da mesma via amplia risco de hipercalemia sem justificar benefício. No Brasil, a decisão de finerenona depende de indicação aprovada, acesso e monitorização, e deve ser descrita por fonte/ano. Em paciente que já usa ARM, verificar o fármaco e a dose antes de duplicar."
+        ],
+        [
+          "3",
+          "4. iSGLT2: benefício cardíaco mesmo sem diabetes"
+        ],
+        [
+          "p",
+          "Dapagliflozina e empagliflozina têm ensaios que mostram menor risco de hospitalização por IC e outros desfechos em populações definidas, inclusive sem DM2. A dose habitual nas indicações de IC é de 10 mg uma vez ao dia para cada um desses agentes, sem titulação gradual até 20 mg. Elas modificam hemodinâmica renal, natriurese proximal e mecanismos metabólicos, mas não substituem o diurético de alça para congestão intensa. Verificar eTFG e limites de bula, volume, risco de hipotensão, infecções genitais e história de cetoacidose. Diabetes tipo 1 não é indicação habitual de iSGLT2 por risco de cetoacidose."
+        ],
+        [
+          "p",
+          "Em jejum prolongado, cirurgia, sepse grave ou doença aguda com baixa ingesta, a equipe precisa avaliar suspensão temporária de iSGLT2 e risco de cetoacidose euglicêmica, que pode ocorrer com glicemias relativamente baixas. Em eletivas, diretrizes perioperatórias frequentemente orientam suspender cerca de três a quatro dias antes conforme molécula. Reintroduzir requer estabilidade, alimentação e avaliação clínica. Na IC crônica ambulatorial estável, educação sobre sinais de desidratação e infecção genital contribui para adesão. Não confundir o efeito renal inicial de pequena queda de eTFG com progressão inevitável da DRC."
+        ],
+        [
+          "t",
+          [
+            "Classe/fármaco de referência",
+            "Dose inicial usual adulto",
+            "Alvo/uso de manutenção de referência",
+            "Vigilância principal"
+          ],
+          [
+            [
+              "Enalapril",
+              "2,5 mg 2x/dia",
+              "10–20 mg 2x/dia",
+              "K+, função renal, tosse, angioedema"
+            ],
+            [
+              "Sacubitril/valsartana",
+              "24/26 ou 49/51 mg 2x/dia conforme tolerância",
+              "97/103 mg 2x/dia",
+              "PA, K+, função renal; intervalo 36h após IECA"
+            ],
+            [
+              "Carvedilol",
+              "3,125 mg 2x/dia",
+              "25 mg 2x/dia (maior em situações específicas)",
+              "FC, hipotensão, congestão, bloqueio AV"
+            ],
+            [
+              "Bisoprolol",
+              "1,25 mg 1x/dia",
+              "10 mg 1x/dia",
+              "FC, bloqueio e tolerância"
+            ],
+            [
+              "Succinato de metoprolol LP",
+              "12,5–25 mg 1x/dia",
+              "200 mg 1x/dia",
+              "FC, formulação LP"
+            ],
+            [
+              "Espironolactona",
+              "12,5–25 mg 1x/dia",
+              "25–50 mg 1x/dia",
+              "K+, eTFG, ginecomastia"
+            ],
+            [
+              "Dapagliflozina",
+              "10 mg 1x/dia",
+              "10 mg 1x/dia",
+              "eTFG, volume, cetoacidose em doença aguda"
+            ],
+            [
+              "Empagliflozina",
+              "10 mg 1x/dia",
+              "10 mg 1x/dia",
+              "eTFG, volume, infecções genitais"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "As doses acima são <strong>intervalos para ensino</strong> fundamentados nas tabelas ESC 2026 e nas faixas de fármacos do PCDT do SUS; não correspondem à dose apropriada para todos os pacientes, nem dispensam critérios de elegibilidade, função renal ou verificação da apresentação brasileira. Sacubitril/valsartana pode ser rotulado em apresentações de 50, 100 e 200 mg somados dos dois componentes em alguns protocolos brasileiros, equivalendo a 24/26, 49/51 e 97/103 mg. A dose '200 mg' em material SUS não significa 200 mg de sacubitril. Carvedilol pode ter alvo maior para alguns pacientes de peso elevado, mas não é compromisso obrigatório em idoso hipotenso."
+        ],
+        [
+          "3",
+          "5. Diuréticos aliviam congestão; a ausência deles não prova falha dos demais pilares"
+        ],
+        [
+          "p",
+          "Furosemida é frequentemente usada para reduzir congestão, peso, edema, ortopneia e pressões de enchimento. A dose varia amplamente entre pacientes e depende de capacidade de absorção oral, função renal, exposição prévia e quantidade de sódio retida. Em ambulatório, a menor dose que mantém euvolemia tende a facilitar tolerância às terapias que modificam prognóstico. Excesso de diurético pode levar a tontura, hipocalemia, alcalose metabólica e azotemia pré-renal; dose insuficiente favorece reinternação. Não escalar furosemida somente porque o paciente ainda tem dispneia se exame aponta euvolemia e causa pulmonar ou anemia."
+        ],
+        [
+          "p",
+          "A furosemida não atua na mesma finalidade da espironolactona de baixa dose em IC sistólica: uma é frequentemente usada para retirar volume, enquanto o ARM tem efeito neuro-hormonal e prognóstico. No paciente ainda congestionado após furosemida, o esquema precisa ser reavaliado e, quando indicado, ajustado, inclusive em dose/intervalo ou associação temporária com diurético distal sob vigilância. Na pessoa sem edema e com hipotensão ortostática, pode ser necessário reduzir dose de alça enquanto se preservam pilares, evitando o falso dilema de 'tirar tudo por pressão baixa'."
+        ],
+        [
+          "3",
+          "6. Terapias adicionais: fármaco certo para fenótipo certo"
+        ],
+        [
+          "p",
+          "Ivabradina reduz frequência do nó sinusal em pacientes selecionados com IC sistólica e ritmo sinusal, geralmente com FC elevada apesar de betabloqueador otimizado ou máxima dose tolerada. Não é fármaco de controle de frequência na FA, porque depende do nó sinusal. Seu uso exige checar FEVE, classe funcional, FC, ritmo e critérios específicos por diretriz e bula. Digoxina pode reduzir hospitalização ou ajudar controle de frequência em determinados casos, mas tem janela terapêutica estreita e toxicidade favorecida por DRC e hipocalemia; não é agente de uso universal em toda IC."
+        ],
+        [
+          "p",
+          "Hidralazina associada a nitrato pode ter papel quando há intolerância/contraindicação ao bloqueio SRAA ou em grupos selecionados sob recomendações específicas. Pode provocar cefaleia, hipotensão e taquicardia. Vericiguat pode ser considerado em pacientes com IC sistólica selecionada e piora recente apesar de tratamento adequado, conforme disponibilidade/indicação; não é um 'quinto pilar' a prescrever para qualquer FEVE baixa. Na doença valvar importante, revascularização coronariana ou correção valvar pode representar intervenção etiológica que nenhum ajuste farmacológico isolado substitui."
+        ],
+        [
+          "3",
+          "7. ICFEp: diagnóstico positivo e tratamento orientado por fenótipo"
+        ],
+        [
+          "p",
+          "IC com FEVE preservada exige evidência clínica e objetiva de pressões de enchimento elevadas ou alterações estruturais/funcionais cardíacas, não apenas obesidade e falta de ar. A ESC 2026 recomenda iSGLT2 na IC sintomática independentemente da FEVE, e também ARM para pacientes sintomáticos, ponderando agentes/estudos e segurança renal. Quando existe congestão, diurético é usado para sintomas. HAS, FA, DRC, obesidade e apneia do sono merecem tratamento específico, sem afirmar que a normalização da FEVE seja objetivo terapêutico — ela já era preservada."
+        ],
+        [
+          "p",
+          "Em HFpEF e obesidade, a ESC 2026 incluiu consideração de semaglutida ou tirzepatida em pacientes sintomáticos com FEVE ≥45% e IMC ≥30 kg/m², independentemente de DM2, para melhorar peso, capacidade funcional e qualidade de vida, com classe IIa e nível B1. Essa recomendação não deve ser transformada em prescrição irrestrita: é necessário verificar disponibilidade no Brasil, bula, contraindicações gastrointestinais, efeitos adversos e acesso, além de distinguir desfechos de sintoma/peso de redução comprovada de mortalidade por IC. O limiar FEVE ≥45% desse ensaio/recomendação não é a mesma coisa que a nova definição classificatória HFpEF ≥50%; é um critério de população terapêutica."
+        ],
+        [
+          "3",
+          "8. Como titular em pessoa real e evitar inércia terapêutica"
+        ],
+        [
+          "p",
+          "Uma estratégia possível em indivíduo estável é iniciar cedo agentes com diferentes mecanismos em doses baixas, priorizando aqueles que não agravam pressão ou potássio do mesmo modo, e reavaliar em uma a duas semanas conforme tolerância. Antes da mudança, registrar peso, PA sentado/em pé se sintomático, FC/ritmo, diurese, sinais de congestão, creatinina/eTFG e potássio. Depois, verificar sintomas posturais, função renal e adesão. O objetivo não é 'dobrar todas as doses a cada consulta', mas construir trajetória segura até doses comprovadas ou maior tolerada, identificando qual componente causa sintoma."
+        ],
+        [
+          "p",
+          "Se PA sistólica é 96 mmHg sem tontura e sem hipoperfusão, isso não implica interromper indiscriminadamente quatro classes: confirmar aferição, avaliar desidratação/diurético de alça, interações vasodilatadoras sem benefício prognóstico e estado clínico. Se K+ está elevado, examinar suplemento de potássio, dieta, função renal e ARM/SRAA antes de simplesmente suspender tudo, com atenção à gravidade. Se FC está 45 bpm e há tontura, investigar ritmo, doses de betabloqueador/digoxina/ivabradina e bloqueio AV. Titulação boa depende de reconhecer qual parâmetro limita qual droga."
+        ],
+        [
+          "p",
+          "Referências farmacológicas: Simões et al., Diretriz Brasileira de IC 2026, DOI 10.36660/abc.20260830; ESC HF 2026, tabela de doses iniciais/usuais e novas recomendações independentes de FEVE, https://academic.oup.com/eurheartj/article/47/38/5346/8766302 ; Ministério da Saúde/Conitec, PCDT Resumido de IC, quadro de esquemas, https://www.gov.br/conitec/pt-br/midias/protocolos/resumidos/PCDTResumidoInsuficinciaCardacafinal.pdf . Algumas estratégias internacionais de 2026 excedem indicações/acesso de protocolos do SUS, divergência que deve constar do estudo."
+        ]
+      ]
+    ],
+    [
+      "seguimento",
+      0,
+      [
+        [
+          "2",
+          "7. Monitorização, dispositivos e cuidados longitudinais"
+        ],
+        [
+          "p",
+          "O acompanhamento da IC precisa registrar peso, sintomas, capacidade funcional, pressão, frequência cardíaca, adesão, uso de diuréticos e resultados laboratoriais. Titular terapia após estabilização, conforme tolerância e protocolo, evita tanto a inércia terapêutica quanto efeitos adversos. A ESC 2026 recomenda que a titulação de terapias fundamentais seja acompanhada de reavaliação frequente, usualmente em intervalos de 1–2 semanas em pessoas elegíveis, com monitorização apropriada. Em casos de hipercalemia ou piora renal, avaliar causa e alternativas antes de suspender indiscriminadamente tratamento benéfico."
+        ],
+        [
+          "p",
+          "Dispositivos como cardiodesfibrilador implantável e ressincronizador são considerados em cenários selecionados após terapia otimizada, dependendo da FEVE, expectativa de vida, classe funcional, largura/morfologia de QRS e outras condições. Não se indica TRC apenas por 'coração dilatado'. Reabilitação, vacinas, controle da etiologia, orientação sobre sinais de alarme, estratégias para redução de readmissões e cuidado multiprofissional complementam a farmacoterapia."
+        ],
+        [
+          "3",
+          "Quando encaminhar a centro de IC avançada"
+        ],
+        [
+          "p",
+          "Persistência de sintomas intensos, internações repetidas, necessidade de inotrópicos, hipotensão que impede tratamento, disfunção de múltiplos órgãos, arritmias graves, intolerância a terapias ou suspeita de doença etiológica rara justificam avaliação especializada. O encaminhamento precoce pode permitir ajuste de dispositivos, assistência circulatória mecânica, transplante em pacientes selecionados e cuidados paliativos integrados. Cuidados paliativos não representam abandono: podem ocorrer em paralelo com terapias avançadas."
+        ],
+        [
+          "3",
+          "Seguimento depois da alta por descompensação"
+        ],
+        [
+          "p",
+          "Confirmar redução da congestão, estabilidade hemodinâmica, plano de diuréticos, eletrólitos e função renal, instruções para reconhecer piora e retorno precoce. A reconciliação de medicações é essencial: medicamentos suspensos temporariamente por choque ou hipotensão não devem ficar esquecidos indefinidamente. Combinar seguimento ambulatorial e comunicação com a equipe de Atenção Primária ajuda a reduzir a fragmentação do cuidado."
+        ],
+        [
+          "3",
+          "Aprofundamento — linha de cuidado após a alta, dispositivos e identificação da IC avançada"
+        ],
+        [
+          "p",
+          "O período após internação por IC é de risco elevado de recorrência. Uma boa alta não consiste em uma lista de oito medicamentos sem orientação: documenta euvolemia ou congestão residual, dose de alça para casa, fármacos modificadores com indicação de titulação, exames renais e eletrólitos programados, peso de referência, capacidade funcional, motivo da descompensação e quem acompanhará o paciente. Orientações precisam ser executáveis diante da realidade de cada pessoa. Falta de acesso a receita ou medicamento pode anular uma prescrição clinicamente excelente."
+        ],
+        [
+          "3",
+          "Antes da alta: confirmar que o tratamento hospitalar realmente mudou a fisiologia"
+        ],
+        [
+          "p",
+          "Ausência de estertores não significa descongestão completa; pode persistir pressão venosa elevada, edema sacral, ascite ou congestão renal. Reavaliar jugular, edema, peso, tolerância a deitar, dispneia ao caminhar, pressão, frequência e necessidade de oxigênio. A mudança de furosemida IV para oral requer observar resposta e condições de alimentação/absorção. Acompanhamento precoce é necessário especialmente em quem teve LRA, hiponatremia, hipercalemia ou hipotensão. Evitar deixar terapia fundamental suspensa indefinidamente só porque houve um episódio transitório de instabilidade na internação."
+        ],
+        [
+          "p",
+          "Um resumo de alta útil inclui diagnóstico etiológico/FEVE com data, NYHA aproximada, ECG e arritmias, peso de referência, creatinina/potássio e alterações recentes, medicamentos com horários, motivo de suspensão de cada classe e critérios de retorno. Quando não foi possível iniciar uma terapia fundamental, registrar a contraindicação ou plano explícito de reavaliação. Escrever apenas 'sem condições de iniciar' é pouco informativo; diferenciar PA baixa sintomática, choque em recuperação, K elevado, eTFG baixa, gestação e falta de disponibilidade."
+        ],
+        [
+          "3",
+          "Monitorização domiciliar com pesos e sinais clínicos"
+        ],
+        [
+          "p",
+          "Pesar-se em condições semelhantes pode ajudar a detectar retenção de líquido, mas uma variação de peso precisa ser interpretada junto a edema, ortopneia, dispneia, PA e diurese. Em programa supervisionado, ganho rápido em poucos dias pode motivar contato e ajuste de diurético; o limiar exato deve ser definido pela equipe, não por uma prescrição universal de duplicação automática. Alertas relevantes incluem falta de ar em repouso, síncope, dor torácica, confusão, piora marcada de edema e oligúria. A família deve saber se procurar UPA, SAMU ou clínica de IC conforme intensidade."
+        ],
+        [
+          "p",
+          "Orientar consumo de sódio moderado com métodos práticos: evitar produtos ultraprocessados de alto teor de sódio, verificar rótulos, adaptar temperos e refeições de acordo com renda e cultura. Restrições hídricas muito rígidas não são universais, porque ensaios recentes avaliaram limites diferentes sem benefício sintomático consistente em todos. Em hiponatremia dilucional e congestão importante, uma restrição temporária pode ser considerada por equipe, mas não se deve causar desidratação ou sofrimento desnecessário em estável que não precisa dela."
+        ],
+        [
+          "3",
+          "CDI: reduzir risco de morte súbita depende de elegibilidade e tempo"
+        ],
+        [
+          "p",
+          "Cardiodesfibrilador implantável (CDI) pode prevenir morte por arritmias ventriculares malignas em certos pacientes após tratamento otimizado. Indicações de prevenção primária variam por etiologia, FEVE, classe funcional, prognóstico, tempo desde IAM e resposta à terapia farmacológica. Em cardiopatia isquêmica com FEVE ainda baixa pouco após infarto, não se implanta automaticamente CDI de prevenção primária no primeiro dia: é necessário permitir recuperação e respeitar janelas após evento/revascularização, salvo indicação de prevenção secundária ou outra circunstância específica. FEVE de 30% sem terapia fundamental não define necessidade permanente de dispositivo."
+        ],
+        [
+          "p",
+          "Na prevenção secundária, pessoa que sobreviveu a TV/FV sustentada não atribuída exclusivamente a causa reversível merece investigação e avaliação para CDI. Na doença de Chagas, sarcoidose, cardiomiopatias genéticas e miocardite, arriscados podem ter indicação por critérios específicos que ultrapassam o limiar de FEVE. Um aparelho não substitui tratamento da IC nem impede que a pessoa sofra choque por outras causas; também pode produzir choques inapropriados e consequências psicológicas, exigindo seguimento de dispositivo."
+        ],
+        [
+          "3",
+          "TRC: a largura e morfologia do QRS modificam a mecânica"
+        ],
+        [
+          "p",
+          "Terapia de ressincronização cardíaca (TRC) ajuda grupos selecionados com dissincronia elétrica, particularmente FEVE reduzida, bloqueio de ramo esquerdo e QRS amplo sob sintomas apesar de terapia adequada. A indicação é mais forte quando QRS ≥150 ms com morfologia de BRE, em pacientes elegíveis, e menos clara com QRS menor ou outras morfologias. Não usar ecocardiograma com 'dissincronia' como único critério universal de implante. A decisão também depende de ritmo, necessidade de estimulação ventricular, sobrevida prevista, anatomia venosa e preferências."
+        ],
+        [
+          "p",
+          "Um paciente com IC sintomática, FEVE 28%, QRS 170 ms com BRE e otimização de medicações pode ter benefício de TRC maior que alguém com FEVE 28% e QRS estreito de 92 ms. FEVE idêntica não torna as indicações de dispositivo idênticas. Na FA, a captura biventricular efetiva pode exigir estratégia específica de controle de frequência ou ablação nodal em casos selecionados. Não recomendar CDI/TRC automaticamente sem consultar eletrofisiologia e critérios atualizados."
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Pergunta antes de encaminhar",
+            "Armadilha"
+          ],
+          [
+            [
+              "FEVE ≤35% após tratamento otimizado",
+              "Etiologia, NYHA, tempo pós-IAM e prognóstico?",
+              "Implantar CDI imediatamente após qualquer IAM"
+            ],
+            [
+              "BRE com QRS ≥150 ms e IC sintomática",
+              "Há critérios de TRC e chance de benefício?",
+              "Indicar TRC só por FEVE baixa"
+            ],
+            [
+              "TV/FV sustentada não reversível",
+              "Prevenção secundária de morte súbita?",
+              "Confundir com extrassístoles isoladas"
+            ],
+            [
+              "FA e TRC",
+              "Há captura biventricular efetiva?",
+              "Ignorar perda de sincronismo por FC alta"
+            ],
+            [
+              "IC avançada refratária",
+              "Encaminhamento para centro especializado e suporte?",
+              "Esperar choque terminal para avaliar"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Quando pensar em transplante, assistência ventricular ou cuidados paliativos"
+        ],
+        [
+          "p",
+          "Sinais de IC avançada incluem múltiplas internações, necessidade recorrente de inotrópicos, intolerância progressiva a terapias por hipotensão ou disfunção renal, baixa capacidade funcional, hiponatremia persistente, caquexia, disfunção de órgão e piora apesar de tratamento adequado. O mnemônico I NEED HELP pode ajudar na identificação de necessidade de referência a centro de IC avançada; sua função é abrir avaliação e não indicar automaticamente transplante. A elegibilidade para transplante depende de gravidade, comorbidades, hipertensão pulmonar, adesão, suporte psicossocial e contraindicações."
+        ],
+        [
+          "p",
+          "INTERMACS descreve estados de gravidade na IC avançada, desde choque crítico até sintomas importantes em repouso/esforço, e auxilia avaliação para suporte circulatório durável e urgência. Dispositivos de assistência ventricular podem oferecer ponte para transplante ou terapia de destino em populações selecionadas, mas implicam anticoagulação, risco de infecção, eventos neurológicos e complexidade de seguimento. ECMO venoarterial e outros suportes temporários são instrumentos de choque em centros especializados, não solução universal. Encaminhar cedo permite discutir opções quando ainda existe janela de decisão."
+        ],
+        [
+          "p",
+          "Cuidados paliativos não equivalem a 'parar de tratar' e não devem ser reservados ao último dia de vida. Controle de dispneia, dor, ansiedade, planejamento antecipado de cuidados, suporte familiar e discussão de objetivos podem coexistir com terapia fundamental, dispositivos e avaliação de transplante. Em paciente com sofrimento grave sem possibilidade razoável de terapia avançada, definir preferências para internações, UTI, reanimação e cuidados domiciliares reduz intervenções desalinhadas. A participação do paciente é essencial quando ele pode decidir."
+        ],
+        [
+          "3",
+          "IC e gravidez: fármacos com benefício na população geral podem ser fetotóxicos"
+        ],
+        [
+          "p",
+          "Em gestante ou pessoa com possibilidade de gestação, IECA, BRA, ARNI e antagonistas de mineralocorticoide não devem ser mantidos sem avaliação rigorosa de contraindicações e alternativas, pois alguns têm toxicidade fetal relevante. Cardiomiopatia periparto demanda investigação de outras causas, diferenciais como pré-eclâmpsia e embolia pulmonar e abordagem especializada materno-fetal/cardiológica. Amamentação, planejamento reprodutivo e segurança da medicação devem ser discutidos na alta. Não adaptar receitas de HFrEF por simples remoção do nome da droga sem considerar todo o plano."
+        ],
+        [
+          "3",
+          "Idosos, fragilidade e polifarmácia"
+        ],
+        [
+          "p",
+          "Em pessoa idosa, sintomas como fadiga, redução de atividade, perda de apetite e confusão podem ser mais proeminentes que edema clássico. Medicações múltiplas aumentam hipotensão ortostática, alterações renais e dificuldade de adesão. Avaliar fragilidade e cognição, disponibilidade de cuidador, capacidade de organizar horários e risco de quedas. Um paciente ativo de 83 anos pode tolerar titulação adequada; outro com declínio e hipotensão sintomática precisa de decisões ponderadas e metas voltadas a função e qualidade de vida."
+        ],
+        [
+          "p",
+          "Anemia, DRC, FA e doença pulmonar coexistem frequentemente e exigem que a equipe evite cascata de prescrição. Em HFpEF, por exemplo, um betabloqueador pode ter indicação por FA ou coronariopatia, mas não deve ser adicionado sem razão específica quando não há benefício claro da classe para aquele fenótipo. Revisar a indicação de cada medicamento é mais útil do que repetir quatro classes indiscriminadamente."
+        ],
+        [
+          "3",
+          "Casos de acompanhamento e referência"
+        ],
+        [
+          "p",
+          "<strong>Caso longitudinal A.</strong> Homem de 58 anos, FEVE 29%, NYHA II, recebeu esquema inicial mas faltou a duas consultas porque trabalha em turno noturno. Sem congestão, PA adequada, K e função renal estáveis, ainda usa doses muito baixas. A próxima intervenção inclui programar seguimento compatível com sua rotina, conferir acesso e titular terapia fundamental com laboratório, antes de considerar 'refratário' ou indicar dispositivo. Por que importa: subtratamento e IC avançada não são equivalentes."
+        ],
+        [
+          "p",
+          "<strong>Caso longitudinal B.</strong> Mulher de 70 anos com IC isquêmica, FEVE 25% após tratamento otimizado, QRS 166 ms com BRE, NYHA III, sem isquemia ativa. Avaliar indicação de TRC e necessidade de CDI com eletrofisiologia e reavaliar prognóstico/comorbidades. A morfologia BRE e QRS amplo mudam benefício potencial. Por que importa: dois pacientes com FEVE igual podem necessitar estratégias de dispositivo diferentes."
+        ],
+        [
+          "p",
+          "<strong>Caso longitudinal C.</strong> Homem de 49 anos, cardiomiopatia de Chagas, múltiplas internações e necessidade de inotrópico recorrente, perda de peso e baixa tolerância a drogas. Suspeita de IC avançada, merecendo encaminhamento a centro especializado para investigação de transplante/suporte e cuidado paliativo simultâneo. Um CDI isolado não resolverá queda progressiva do débito. Por que importa: reconhecer a janela para terapias avançadas evita encaminhamento tardio."
+        ],
+        [
+          "p",
+          "Fonte: SBC 2026, capítulos 8 e 14, algoritmos de IC avançada e dispositivos, https://journals.cardiol.br/article/diretriz-brasileira-de-insuficiencia-cardiaca-2026/ ; ESC 2026, terapia crônica e prevenção de morte súbita. Critérios de elegibilidade precisam ser conferidos no momento da indicação junto à cardiologia."
+        ]
+      ]
+    ],
+    [
+      "especiais",
+      0,
+      [
+        [
+          "2",
+          "8. Situações especiais e armadilhas"
+        ],
+        [
+          "p",
+          "<strong>Insuficiência renal:</strong> é comum a interação cardiorrenal com congestão venosa, hipoperfusão e alterações de creatinina durante tratamento. Uma pequena variação laboratorial deve ser interpretada com volume e perfusão em vez de suspender todas as classes automaticamente. <strong>Gestação:</strong> IECA, BRA e ARNI são contraindicados por toxicidade fetal; drogas e dispositivos exigem acompanhamento cardiológico e obstétrico de alto risco. <strong>Fibrilação atrial:</strong> controlar frequência ou ritmo conforme situação, anticoagulação baseada em risco tromboembólico e tratar fatores precipitantes. <strong>Doença valvar:</strong> terapias sintomáticas não substituem intervenção valvar quando há indicação."
+        ],
+        [
+          "p",
+          "Em idosos frágeis, individualizar metas, doses e frequência de revisão, observando hipotensão ortostática, risco de quedas, múltiplos medicamentos e função renal. Em pacientes com amiloidose, hipertrofia aparente e ICFEp podem não representar cardiopatia hipertensiva; o tratamento etiológico muda conduta. Em miocardite, IC pode ocorrer em pessoa jovem e exigir investigação específica com ressonância ou exames adicionais. IC de alto débito decorrente de anemia grave, fístulas ou tireotoxicose é uma categoria distinta da falência sistólica clássica e requer abordar o gatilho."
+        ],
+        [
+          "t",
+          [
+            "Erro de raciocínio",
+            "Por que é inadequado",
+            "Correção"
+          ],
+          [
+            [
+              "FE 60% exclui IC",
+              "Não avalia pressões de enchimento/diástole",
+              "Buscar evidência objetiva e diagnóstico diferencial"
+            ],
+            [
+              "BNP alto prova etiologia isquêmica",
+              "BNP indica estresse, não causa",
+              "Investigar etiologia de forma dirigida"
+            ],
+            [
+              "Creatinina elevou: suspender tudo",
+              "Pode haver congestão cardiorrenal e benefícios de tratamento",
+              "Reavaliar volume, K+, tendência e classes individualmente"
+            ],
+            [
+              "FE melhorou: curou",
+              "Remodelamento pode regredir após suspensão terapêutica",
+              "Manter esquema guiado por diretriz salvo motivo específico"
+            ],
+            [
+              "Todo edema pulmonar recebe vasodilatador",
+              "Pode haver hipotensão/choque",
+              "Separar perfil hipertensivo de baixo débito"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "9. Casos clínicos integradores"
+        ],
+        [
+          "3",
+          "Caso 1 — Edema com BNP normal-limítrofe e FEVE preservada"
+        ],
+        [
+          "p",
+          "Mulher de 71 anos, obesidade, HAS e FA, piora de dispneia aos esforços e edema. FEVE 58%, volume atrial aumentado, sinais ecocardiográficos de elevação de pressões e BNP não muito alto. <strong>Interpretação:</strong> ICFEp possível; a obesidade pode reduzir BNP e a FA pode elevá-lo. É necessário integrar clínica, imagens e diferenciais. <strong>Conduta:</strong> confirmar congestão, investigar doença valvar e pulmonar, tratar comorbidades e terapêutica segundo elegibilidade. <strong>Pulo:</strong> nem FE preservada nem BNP isolado resolvem diagnóstico."
+        ],
+        [
+          "3",
+          "Caso 2 — Choque frio e úmido"
+        ],
+        [
+          "p",
+          "Homem de 64 anos com IAM prévio e FEVE 25% chega com confusão, PA 78/50 mmHg, extremidades frias, jugular ingurgitada, crepitações e oligúria. <strong>Interpretação:</strong> IC descompensada com hipoperfusão e congestão, suspeita de choque cardiogênico. <strong>Conduta:</strong> avaliação intensiva, suporte hemodinâmico/respiratório e investigação de isquemia ou complicação mecânica, sem uso indiscriminado de betabloqueador ou vasodilatador na fase de choque. <strong>Pulo:</strong> 'tem edema' não significa simplesmente aumentar dose ambulatorial."
+        ],
+        [
+          "3",
+          "Caso 3 — FEVE melhorou com tratamento"
+        ],
+        [
+          "p",
+          "Paciente de 52 anos com cardiomiopatia dilatada, inicialmente FEVE 29%, após 18 meses de tratamento está NYHA I e FEVE 54%. Pergunta se pode parar todos os remédios. <strong>Interpretação:</strong> IC com FEVE melhorada e remodelamento reverso; não se considera cura automática. <strong>Conduta:</strong> manter terapias com evidência e discutir tolerabilidade, riscos e plano de seguimento. <strong>Pulo:</strong> valor normal de FEVE isolado não autoriza retirada abrupta."
+        ],
+        [
+          "3",
+          "Caso 4 — Paciente de região endêmica e arritmia"
+        ],
+        [
+          "p",
+          "Homem de 60 anos, nascido em região rural endêmica, episódios de palpitação, BRD associado a bloqueio fascicular anterior e FEVE 38% com aneurisma apical. <strong>Interpretação:</strong> suspeita forte de cardiopatia chagásica. <strong>Conduta:</strong> confirmar infecção com testes sorológicos apropriados, avaliar arritmias e risco de tromboembolia, tratar IC conforme evidência e investigar demais causas. <strong>Pulo:</strong> não rotular como idiopática sem história epidemiológica."
+        ],
+        [
+          "3",
+          "Caso 5 — FEVE de 45% em dois documentos de diretriz"
+        ],
+        [
+          "p",
+          "Paciente sintomático com FEVE 45%, hipertensão e congestão leve. Um resumo de 2024 chama de ICFElr; um quadro ESC 2026 chama de HFrEF. <strong>Interpretação:</strong> são categorias diferentes no tempo, não uma divergência sobre a medida. <strong>Conduta:</strong> tratar a pessoa e suas manifestações segundo diretrizes aplicáveis, registrando o referencial de classificação utilizado. <strong>Pulo:</strong> cuidado com questões de residência que cobram nomenclatura de ano específico."
+        ],
+        [
+          "3",
+          "Caso 6 — IC congesta com perfusão preservada"
+        ],
+        [
+          "p",
+          "Homem de 66 anos com FEVE 28%, dispneia progressiva, ortopneia, ganho de 5 kg em dez dias, edema bilateral, jugular ingurgitada e estertores bibasais; PA 128/78 mmHg, extremidades quentes, sem confusão. <strong>Hipótese:</strong> IC descompensada perfil B, com congestão e perfusão preservada. <strong>Exames:</strong> ECG para arritmia/isquemia, eletrólitos, creatinina, hemograma, peptídeo natriurético conforme necessidade, radiografia ou US pulmonar e eco comparativo se mudança clínica. <strong>Interpretação:</strong> a PA normal não afasta pressões de enchimento elevadas; perfil quente não é 'saudável'. <strong>Conduta:</strong> descongestão com alça IV guiada por resposta, investigar falta de acesso a fármacos, arritmia e outros gatilhos, acompanhar urina, PA, rim e K+, planejar retomada/titulação dos pilares. <strong>Por que importa:</strong> o maior problema inicial é excesso de pressão/volume, sem choque que justifique inotrópico rotineiro."
+        ],
+        [
+          "3",
+          "Caso 7 — FE preservada, FA e obesidade"
+        ],
+        [
+          "p",
+          "Mulher de 73 anos, IMC 34 kg/m², FA, HAS e dispneia a esforços leves, FEVE 61%, aumento atrial esquerdo e sinais de pressão de enchimento elevada, NT-proBNP apenas moderadamente elevado. <strong>Hipótese:</strong> HFpEF possível. <strong>Exames:</strong> eco completo, peptídeos interpretados segundo FA/obesidade/idade e diferencial com DPOC, anemia, DRC e descondicionamento; avaliação de diástole em esforço se incerteza persistir. <strong>Interpretação:</strong> a FE preservada não exclui IC, e biomarcador de valor pouco expressivo pode ser atenuado pela obesidade. <strong>Conduta:</strong> tratar congestão se presente, HAS e FA, considerar iSGLT2 conforme elegibilidade e outras opções baseadas em guideline 2026, abordar obesidade e reabilitação. <strong>Por que importa:</strong> diagnóstico depende de prova objetiva, não de achar 'FE boa'."
+        ],
+        [
+          "3",
+          "Caso 8 — choque cardiogênico sem hipotensão extrema"
+        ],
+        [
+          "p",
+          "Homem de 59 anos, IC isquêmica com FEVE 20%, em noradrenalina no transporte, chega com PA 108/67 mmHg, extremidades frias, confusão, lactato elevado, oligúria e edema pulmonar. <strong>Hipótese:</strong> choque cardiogênico já sob suporte vasoativo. <strong>Exames:</strong> ECG, eco de função biventricular e valvas, gasometria/lactato, eletrólitos, função renal, investigação imediata de isquemia/coronária quando indicada. <strong>Interpretação:</strong> pressão sob vasopressor não prova perfusão satisfatória. <strong>Conduta:</strong> terapia intensiva, identificar e tratar causa potencialmente reversível, considerar revascularização se SCA, ajustar vasopressor e inotrópico sob monitorização, descongestão cuidadosa e avaliação precoce para suporte circulatório em centro especializado. <strong>Por que importa:</strong> choque exige sinais de hipoperfusão e contexto, não somente PAS inferior a 90."
+        ],
+        [
+          "3",
+          "Caso 9 — terapia otimizada e indicação de ressincronização"
+        ],
+        [
+          "p",
+          "Mulher de 67 anos com FEVE 27%, NYHA III, BRE completo com QRS de 168 ms, boa adesão e meses de terapia fundamental tolerada, sem isquemia ativa ou causa reversível evidente. <strong>Hipótese:</strong> IC sistólica persistente com dissincronia elétrica e possível indicação de TRC. <strong>Exames:</strong> ECG confirmado e comparação, eco atualizado, revisão de etiologia e terapias, avaliação de comorbidades e expectativa funcional, consulta eletrofisiológica. <strong>Interpretação:</strong> BRE e QRS amplo tornam o benefício potencial diferente do de pessoa com QRS estreito. <strong>Conduta:</strong> discutir TRC e necessidade de CDI conforme elegibilidade, sem interromper medicação de prognóstico. <strong>Por que importa:</strong> dispositivos se indicam por conjunto de critérios e timing, não exclusivamente por FEVE."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "10. Questões autorais comentadas"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q1. Paciente com dispneia, congestão, FEVE 62% e alteração diastólica objetiva pode ter IC?</strong> A) Nunca; B) Sim, considerar HFpEF; C) Apenas se troponina positiva; D) Apenas se RX mostrar cardiomegalia. <strong>Gabarito B.</strong> A confunde FEVE com função global; C e D usam exames que não são obrigatórios nem suficientes para HFpEF.",
+            "<strong>Q2. Qual o mecanismo central da ativação crônica do SRAA na IC?</strong> A) Aumenta somente natriurese protetora; B) Eleva pós-carga, fibrose e retenção de sódio, favorecendo remodelamento; C) Não altera função renal; D) Impede arritmias. <strong>Gabarito B.</strong> A, C e D ignoram efeitos neuro-hormonais adaptativos de curto prazo e deletérios sustentados.",
+            "<strong>Q3. Em paciente com edema pulmonar, extremidades frias e hipotensão, qual perfil?</strong> A) Quente-seco; B) Quente-úmido; C) Frio-úmido; D) Frio-seco. <strong>Gabarito C.</strong> A/B não possuem hipoperfusão; D não contempla congestão. É um paciente de alto risco.",
+            "<strong>Q4. A ESC 2026 classifica FEVE de 45% com sintomas de IC como:</strong> A) HFmrEF obrigatório; B) HFrEF no novo esquema; C) HFpEF; D) Sem IC pelo número. <strong>Gabarito B.</strong> A é terminologia anterior; C requer FEVE ≥50%; D ignora síndrome. Ao responder provas, identificar ano/diretriz.",
+            "<strong>Q5. Paciente com FEVE inicialmente 30% que subiu para 55% pode suspender todas as terapias automaticamente?</strong> A) Sim; B) Apenas porque NYHA I; C) Não, costuma-se manter terapia modificadora de prognóstico e reavaliar individualmente; D) Sim se BNP normal. <strong>Gabarito C.</strong> A/B/D não eliminam risco de recaída.",
+            "<strong>Q6. Qual exame é fundamental para avaliar etiologia, FEVE, válvulas e pressões de enchimento?</strong> A) ECG sozinho; B) Ecocardiografia; C) Troponina isolada; D) Rx torácico isolado. <strong>Gabarito B.</strong> ECG e Rx apoiam, mas não descrevem integralmente estrutura/função; troponina avalia lesão.",
+            "<strong>Q7. Paciente quente/úmido recebe furosemida IV, mas permanece oligúrico e congestionado. Qual alternativa é melhor?</strong> A) Repetir a mesma dose insuficiente indefinidamente; B) medir natriurese/diurese e reavaliar dose, perfusão e causas de resistência; C) infundir automaticamente 2 L de soro; D) suspender toda terapia e liberar. <strong>Gabarito B.</strong> B é correta porque a ação da alça tem limiar farmacodinâmico e depende de entrega renal. A falha por inércia; C pode agravar edema; D abandona um quadro potencialmente grave. <strong>Revisão:</strong> a SBC 2026 enfatiza ajuste por resposta e vigilância de rim/eletrólitos.",
+            "<strong>Q8. FEVE de 45% em paciente sintomático, segundo ESC 2026, corresponde a:</strong> A) HFpEF obrigatória; B) HFrEF, faixa abaixo de 50%, enquanto materiais antigos podem chamá-la levemente reduzida; C) ausência de IC; D) doença necessariamente terminal. <strong>Gabarito B.</strong> B reconhece a mudança de definição. A contraria o corte, C ignora sintomas e alterações, D confunde FEVE e prognóstico individual. <strong>Revisão:</strong> sempre atribuir a nomenclatura à instituição e ao ano.",
+            "<strong>Q9. Qual afirmação é correta sobre sacarubitril/valsartana após enalapril?</strong> A) Podem ser administrados juntos; B) deve haver intervalo mínimo de 36 h entre IECA e ARNI; C) só requer esperar se FEVE for preservada; D) basta dobrar o IECA. <strong>Gabarito B.</strong> B reduz risco de angioedema associado a bradicinina. A é uma combinação contraindiciada, C não muda a farmacologia e D aumenta risco sem implementar ARNI. <strong>Revisão:</strong> registrar última dose do IECA e monitorar PA, K+ e função renal.",
+            "<strong>Q10. Mulher com obesidade, dispneia, FEVE 62% e NT-proBNP não muito elevado: o que é correto?</strong> A) IC está excluída; B) a obesidade pode atenuar marcador e a HFpEF exige evidência objetiva adicional; C) todo caso requer cateterismo imediato; D) a única causa possível é DPOC. <strong>Gabarito B.</strong> B integra o viés do biomarcador e critérios de HFpEF. A/D são conclusões prematuras; C é exame invasivo sem indicação automática. <strong>Revisão:</strong> eco, probabilidade clínica e diferencial importam.",
+            "<strong>Q11. Quem tem FEVE 28%, NYHA III, BRE e QRS de 164 ms apesar de terapia otimizada deve:</strong> A) suspender todas as drogas ao cogitar aparelho; B) ser avaliado para TRC e eventualmente CDI conforme critérios; C) receber marcapasso convencional sem avaliação; D) ser considerado sem terapia útil. <strong>Gabarito B.</strong> B corresponde ao fenótipo que pode obter grande benefício de ressincronização. A perde proteção farmacológica; C ignora seleção; D é falso. <strong>Revisão:</strong> morfologia e duração do QRS, FEVE e sintomas influenciam indicação.",
+            "<strong>Q12. Em choque cardiogênico, PA 110/70 sob noradrenalina e lactato/oligúria elevados significam:</strong> A) choque excluído; B) choque pode persistir apesar de pressão sustentada e exige avaliação de perfusão; C) administrar sempre furosemida sem avaliar; D) alta após normalizar a PA. <strong>Gabarito B.</strong> B reconhece que vasopressor restaura pressão, mas não necessariamente fluxo e oxigenação tecidual. A e D confundem PA com perfusão; C omite mecanismo e contraindicações. <strong>Revisão:</strong> distinguir perfusão, congestão, débito e causa."
+          ],
+          0
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências e limites de aplicação"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://journals.cardiol.br/article/diretriz-brasileira-de-insuficiencia-cardiaca-2026/\" target=\"_blank\" rel=\"noopener noreferrer\">Simões MV et al. Diretriz Brasileira de Insuficiência Cardíaca – 2026. Arq Bras Cardiol. 2026;123(10):e20260830. Publicada em 08/10/2026.</a>",
+            "<a href=\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure\" target=\"_blank\" rel=\"noopener noreferrer\">European Society of Cardiology. ESC Guidelines for the management of heart failure, 2026.</a>",
+            "<a href=\"https://academic.oup.com/eurheartj/article/47/38/5346/8766302\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2026 – artigo integral no European Heart Journal, definição fenotípica e terapias fundamentais.</a>",
+            "<a href=\"https://www.portal.cardiol.br/diretrizes\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Cardiologia. Repositório oficial de diretrizes clínicas.</a>"
+          ],
+          0
+        ]
+      ]
+    ]
+  ]
+}

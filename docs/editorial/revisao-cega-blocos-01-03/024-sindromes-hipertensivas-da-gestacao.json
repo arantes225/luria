@@ -1,0 +1,16 @@
+{
+  "id": 24,
+  "slug": "sindromes-hipertensivas-da-gestacao",
+  "block": 2,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": false,
+    "html": true,
+    "format": "html",
+    "htmlCharacters": 16975,
+    "references": true,
+    "questions": true,
+    "brokenAnchors": 0
+  }
+}
