@@ -1,0 +1,1745 @@
+{
+  "v": 2,
+  "s": "reposicao-volemica-disturbios-hidroeletroliticos",
+  "t": "Reposição Volêmica e Distúrbios Hidroeletrolíticos no Paciente Cirúrgico",
+  "p": "Reposição volêmica, eletrólitos e equilíbrio ácido-base: raciocínio e conduta cirúrgica",
+  "o": [
+    [
+      "visao",
+      "Fluidos e eletrólitos no paciente cirúrgico: tratar a fisiologia, não o número"
+    ],
+    [
+      "fisiologia",
+      "1. Compartimentos, tonicidade, ADH e distribuição dos líquidos"
+    ],
+    [
+      "avaliacao",
+      "2. Diagnóstico da volemia e da perfusão: exame clínico, responsividade e limites"
+    ],
+    [
+      "solucoes",
+      "3. Escolha das soluções: cristaloides, água livre, salina hipertônica e coloides"
+    ],
+    [
+      "manutencao",
+      "4. Manutenção, jejum e perdas extraordinárias: prescrição de 24 horas"
+    ],
+    [
+      "disnatremias",
+      "5. Hiponatremia e hipernatremia: tonicidade, urgência e prevenção de sobrecorreção"
+    ],
+    [
+      "potassio",
+      "6. Potássio perioperatório: hipocalemia, hipercalemia e o ECG"
+    ],
+    [
+      "outros-eletr",
+      "7. Magnésio, cálcio e fósforo: os eletrólitos que mudam a resposta ao tratamento"
+    ],
+    [
+      "acidobase",
+      "8. Distúrbios ácido-base na cirurgia: gasometria, ânion gap e compensação"
+    ],
+    [
+      "lra",
+      "9. Lesão renal aguda e congestão pós-operatória"
+    ],
+    [
+      "situacoes",
+      "10. Cenários cirúrgicos particulares e erros de rotina"
+    ],
+    [
+      "algoritmo",
+      "11. Algoritmo decisório, revisão por turnos e pérolas de prova"
+    ],
+    [
+      "casos",
+      "12. Casos clínicos integradores — da alteração laboratorial à conduta"
+    ],
+    [
+      "questoes",
+      "13. Questões autorais comentadas — 24 problemas de prova"
+    ],
+    [
+      "referencias",
+      "14. Fontes, matriz de suficiência e estado editorial"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Reposição Volêmica e Distúrbios Hidroeletrolíticos",
+    "Fluidoterapia perioperatória · sódio · potássio · magnésio · cálcio · fósforo · ácido-base",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Fisiologia e Cuidados Perioperatórios",
+      "Tema: Reposição volêmica e distúrbios hidroeletrolíticos no paciente cirúrgico"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Fluidos e eletrólitos no paciente cirúrgico: tratar a fisiologia, não o número"
+        ],
+        [
+          "p",
+          "A prescrição de líquidos intravenosos é uma intervenção farmacológica: tem indicação, dose, composição, velocidade, monitorização, contraindicações e efeitos adversos. O mesmo litro de cristaloide pode melhorar perfusão em paciente hipovolêmico responsivo, precipitar edema pulmonar em insuficiência cardíaca ou aumentar distensão intestinal após cirurgia abdominal. O primeiro erro é perguntar 'qual soro usar?' antes de responder 'qual é a necessidade fisiológica e qual compartimento está alterado?'"
+        ],
+        [
+          "p",
+          "No perioperatório, quatro problemas podem coexistir: déficit de água e sódio por jejum/perdas prévias, hipoperfusão que exige ressuscitação, manutenção enquanto via oral está suspensa e perdas anormais de sonda/dreno/fístula. Além disso, anestesia, resposta inflamatória e ADH favorecem retenção de água e redistribuição para interstício; administrar volume não garante que o paciente permaneça com perfusão efetiva. A decisão deve ser reavaliada porque o estado muda entre sala operatória, recuperação e dias posteriores."
+        ],
+        [
+          "p",
+          "A diretriz NICE CG174 organiza cuidado em cinco Rs: resuscitation (ressuscitação), routine maintenance (manutenção), replacement (reposição), redistribution (redistribuição) e reassessment (reavaliação). Elas são perguntas diferentes, não cinco etapas rígidas a completar na mesma ordem. O erro comum é combinar manutenção com reposição de perdas e ressuscitação no mesmo gotejamento sem saber quanto de água, sódio, potássio e cloreto foi administrado."
+        ],
+        [
+          "t",
+          [
+            "Problema",
+            "Objetivo",
+            "Exemplo",
+            "Armadilha"
+          ],
+          [
+            [
+              "Ressuscitação",
+              "Corrigir hipoperfusão ameaçadora",
+              "Peritonite com choque e hipovolemia relativa",
+              "Dar soro sem avaliar controle de fonte e resposta"
+            ],
+            [
+              "Manutenção",
+              "Fornecer necessidades basais em jejum",
+              "Pós-operatório estável sem via oral",
+              "Confundir com bolus de 1 L repetidos"
+            ],
+            [
+              "Reposição",
+              "Substituir perda anormal mensurada/estimada",
+              "Ileostomia de alto débito",
+              "Manter só água livre e piorar depleção de sódio"
+            ],
+            [
+              "Redistribuição",
+              "Reavaliar água no interstício e perfusão intravascular",
+              "Edema/ascite e pressão baixa",
+              "Supor que edema significa boa perfusão"
+            ],
+            [
+              "Reavaliação",
+              "Mudar conduta conforme resposta",
+              "Diurese cai após melhora hemodinâmica",
+              "Infundir indefinidamente sem pesquisar LRA/obstrução"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O escopo é o paciente cirúrgico adulto, incluindo o pré-operatório, intraoperatório e pós-operatório, com atenção especial a complicações de enfermaria, pronto-socorro e UTI. O tema 007 ensina cuidado perioperatório global; o tema 012 explica resposta metabólica; e o futuro 022 detalha choque hemorrágico e controle hemostático. Esta aula é autossuficiente para raciocinar sobre fluidos, distúrbios eletrolíticos/ácido-base e segurança, sem substituir protocolos transfusionais ou de anestesia."
+        ],
+        [
+          "p",
+          "<strong>Segurança:</strong> volume, velocidade e reposição eletrolítica não devem ser aplicados como receita fixa; exigem diagnóstico, função renal, monitorização e protocolos da unidade. A hiponatremia grave sintomática e a hipercalemia com risco arrítmico são emergências. Quantidades mencionadas como exemplos de diretrizes não autorizam infusão sem avaliação e infraestrutura clínica adequadas."
+        ]
+      ]
+    ],
+    [
+      "fisiologia",
+      0,
+      [
+        [
+          "2",
+          "1. Compartimentos, tonicidade, ADH e distribuição dos líquidos"
+        ],
+        [
+          "3",
+          "Água total e compartimentos: conceitos aproximados que orientam"
+        ],
+        [
+          "p",
+          "A água corporal total é variável; em adultos de composição corporal média, é frequentemente aproximada por 60% do peso em homens e 50% em mulheres, com redução em idosos, obesidade e desnutrição muscular. Cerca de dois terços da água corporal estão no intracelular e um terço no extracelular; este se reparte em plasma, interstício e fluidos especializados. Os valores são ilustrações fisiológicas, não fórmula exata de prescrição em indivíduo edemaciado. O terceiro espaço, no vocabulário cirúrgico, não é 'reservatório fixo de litros' calculável automaticamente: edema/coleções e inflamação alteram permeabilidade e distribuição."
+        ],
+        [
+          "p",
+          "Cristaloides isotônicos distribuem-se primariamente no compartimento extracelular. Após equilíbrio, somente parte do volume infundido permanece intravascular e a fração varia com glicocálix, permeabilidade, perfusão e inflamação. Soluções hipotônicas fornecem proporção maior de água livre, redistribuída para interior de células, com risco de reduzir sódio em cenário de ADH elevado. Fluido com glicose 5%, após metabolização do carboidrato, funciona em grande parte como água livre e não é solução adequada para ressuscitação circulatória por si só."
+        ],
+        [
+          "3",
+          "Osmolalidade e tonicidade: duas ideias que não são idênticas"
+        ],
+        [
+          "p",
+          "Osmolalidade plasmática reflete o número de partículas por quilograma de água; na prática pode ser estimada por 2 × Na + glicose/18 + ureia/6, com Na em mmol/L e solutos em mg/dL. A ureia contribui para osmolalidade total, mas difunde-se através de membranas celulares e não mantém, nas condições habituais, tonicidade sustentada como o sódio e glicose em hiperglicemia importante. Tonicidade é a pressão osmótica efetiva que determina deslocamento de água entre células e extracelular. Por isso hiponatremia com osmolaridade alta por hiperglicemia é distinta de hiponatremia verdadeiramente hipotônica."
+        ],
+        [
+          "p",
+          "Quando glicose plasmática sobe muito, a água migra do intracelular ao extracelular e dilui sódio. Usam-se correções aproximadas de sódio de 1,6 a 2,4 mmol/L para cada aumento de glicose de 100 mg/dL acima de 100, dependentes da faixa de glicemia. A correção é estimativa, não substitui medir osmolaridade e avaliar necessidade de tratar distúrbio glicêmico. A aparente hiponatremia decorrente de hiperglicemia não deve receber automaticamente salina hipertônica como se fosse hipotonicidade grave."
+        ],
+        [
+          "t",
+          [
+            "Solução ou variável",
+            "Composição/efeito geral",
+            "Risco clínico"
+          ],
+          [
+            [
+              "NaCl 0,9%",
+              "~154 mmol/L de Na e Cl; isotônico, alto teor de cloreto",
+              "Hipercloremia e acidose metabólica, especialmente em grandes volumes"
+            ],
+            [
+              "Ringer lactato",
+              "Na ~130, Cl ~109 mmol/L; K ~4 mmol/L, tampão lactato",
+              "Composição varia por fabricante; prudência em contextos específicos"
+            ],
+            [
+              "Cristaloide balanceado tipo Plasma-Lyte",
+              "Na ~140, Cl ~98; tampões acetato/gluconato, K e Mg em pequenas concentrações",
+              "Indicações/contexto e disponibilidade local variam"
+            ],
+            [
+              "Glicose 5%",
+              "50 g/L; após metabolismo fornece água predominantemente livre",
+              "Hiponatremia/edema cerebral se usada inadequadamente"
+            ],
+            [
+              "Salina hipertônica 3%",
+              "Na ~513 mmol/L; eleva tonicidade",
+              "Correção excessiva do sódio e complicações se uso não monitorizado"
+            ],
+            [
+              "Albumina",
+              "Coloide com propriedades oncóticas e efeitos dependentes do contexto",
+              "Não substitui controle de hemorragia; indicação específica"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "ADH e retenção hídrica no pós-operatório"
+        ],
+        [
+          "p",
+          "Dor, náusea, opioides, estresse anestésico, hipotensão, hipovolemia e resposta inflamatória aumentam liberação não osmótica de vasopressina (ADH), reduzindo excreção renal de água livre. Isso cria terreno para hiponatremia hospitalar caso a equipe administre grande quantidade de água hipotônica ou glicose sem eletrólitos, mesmo com dieta suspensa. Não é correto presumir que todo pós-operatório precisa de soro glicosado hipotônico em volume generoso."
+        ],
+        [
+          "p",
+          "Ao mesmo tempo, ativação do sistema renina–angiotensina–aldosterona favorece retenção renal de sódio em resposta a menor volume arterial efetivo. A presença de edema não descarta redução de volume circulante efetivo, particularmente em sepse, cirrose e doença cardíaca; mais fluido pode agravar a congestão. O exame deve observar pele, capilares, pulsos, pressão, pulmão, alterações de peso, balanço, diurese e resposta à intervenção."
+        ],
+        [
+          "3",
+          "Fluxo de membrana e lesão endotelial"
+        ],
+        [
+          "p",
+          "Permeabilidade capilar aumenta em trauma, sepse, queimaduras e cirurgia de grande porte. Água e proteínas podem migrar para interstício, produzindo edema apesar de hipotensão relativa. A lesão do glicocálix pode ser agravada por inflamação e por intervenções desnecessárias. Isso explica por que insistir em bolus para corrigir hipotensão por vasoplegia pode produzir grande balanço positivo sem benefício hemodinâmico sustentado."
+        ],
+        [
+          "3",
+          "Principais consequências de água/sódio em excesso"
+        ],
+        [
+          "p",
+          "No pulmão, congestão e edema pioram troca gasosa; no intestino, edema da parede reduz absorção, aumenta íleo e tensão anastomótica; nos rins, congestão venosa pode agravar filtração; em tecidos, edema atrasa cicatrização; no cérebro, redução de tonicidade causa edema neuronal. Esses riscos têm mecanismos distintos e pedem decisões diferentes. A composição do fluido e o balanço cumulativo importam tanto quanto o volume de cada bolsa."
+        ],
+        [
+          "3",
+          "Sódio plasmático mede relação água/solutos, não só quantidade total de sódio"
+        ],
+        [
+          "p",
+          "Hiponatremia pode coexistir com edema generalizado e excesso de sódio corporal total, como em insuficiência cardíaca e cirrose; a concentração é baixa porque o excesso de água é proporcionalmente maior. Hipernatremia costuma representar déficit relativo de água, mas pode ocorrer por ganho de sódio hipertônico iatrogênico. A concentração de sódio é medida de relação entre solutos efetivos e água; não identifica por si o estado volêmico nem diz qual fluido usar."
+        ]
+      ]
+    ],
+    [
+      "avaliacao",
+      0,
+      [
+        [
+          "2",
+          "2. Diagnóstico da volemia e da perfusão: exame clínico, responsividade e limites"
+        ],
+        [
+          "3",
+          "Aferir sinais vitais não é medir todas as dimensões da circulação"
+        ],
+        [
+          "p",
+          "Pressão arterial, frequência cardíaca, enchimento capilar, temperatura da pele, nível de consciência, pressão de pulso, débito urinário, lactato e gasometria compõem avaliação, mas cada um tem limitações. Betabloqueadores podem reduzir taquicardia; anestésicos e vasodilatadores reduzem pressão sem reduzir necessariamente volume; congestão venosa pode cursar com edema e rim hipoperfundido; lactato aumenta também por estímulo adrenérgico ou depuração prejudicada. Combinar sinais e evolução antes e após tratamento é mais seguro que usar único limiar como resposta definitiva."
+        ],
+        [
+          "p",
+          "A NICE CG174 recomenda abordagem ABCDE na ressuscitação e reavaliação contínua de perfusão e sinais vitais; pacientes em fluidoterapia requerem plano escrito e monitorização de eletrólitos, ureia, creatinina, balanço e peso. Exame após transferência de setor pode encontrar sobrecarga ou novo sangramento não reconhecido pela equipe anterior. A monitorização deve corresponder ao risco: paciente estável em manutenção pode ser revisto diariamente; em choque, reavaliação é contínua."
+        ],
+        [
+          "3",
+          "Hipovolemia, choque e responsividade a fluidos não são sinônimos"
+        ],
+        [
+          "p",
+          "Hipovolemia é redução de volume circulante efetivo/intravascular; choque é falência circulatória com inadequação de perfusão que pode ter causas hipovolêmica, distributiva, cardiogênica ou obstrutiva. Responsividade a fluidos significa aumento do volume sistólico/débito após pequeno aumento transitório de pré-carga; não indica, isoladamente, que o paciente necessite ou tolere mais líquido. Um paciente pode ser responsivo mas já congesto, situação em que benefício líquido de infundir pode ser negativo."
+        ],
+        [
+          "p",
+          "A avaliação dinâmica pode incluir elevação passiva de pernas com medida direta de débito/volume sistólico, variação da pressão de pulso em condições ventilatórias estritas e ecocardiografia/POCUS por operador treinado. A manobra de elevação passiva das pernas não é teste de 'pressão subir um pouco': deve idealmente verificar alteração real de fluxo. Variação de pressão de pulso perde confiabilidade na respiração espontânea, arritmias, baixa complacência pulmonar e certas condições de ventilação. VCI colabável isolada é insuficiente para classificar volume em todos."
+        ],
+        [
+          "t",
+          [
+            "Sinal/teste",
+            "Ajuda a inferir",
+            "Limitação importante"
+          ],
+          [
+            [
+              "Pressão baixa",
+              "Hemodinâmica inadequada possível",
+              "Anestesia/vasoplegia/cardiogênico também causam"
+            ],
+            [
+              "Enchimento capilar",
+              "Perfusão periférica",
+              "Temperatura externa e vasopressor alteram"
+            ],
+            [
+              "Diurese",
+              "Perfusão/controle renal/obstrução",
+              "ADH, drogas, rim e retenção urinária confundem"
+            ],
+            [
+              "Lactato seriado",
+              "Risco e trajetória metabólica",
+              "Não prova hipoperfusão exclusivamente"
+            ],
+            [
+              "PLR com medida de débito",
+              "Resposta à pré-carga",
+              "Exige técnica e medida adequada"
+            ],
+            [
+              "Variação da pressão de pulso",
+              "Responsividade sob critérios rígidos",
+              "Inadequada em arritmia/respiração espontânea"
+            ],
+            [
+              "Ultrassom cardíaco/pulmonar",
+              "Função ventricular, congestão, derrames",
+              "Operador dependente; não é teste único"
+            ],
+            [
+              "Balanço cumulativo/variação ponderal",
+              "Tendência de água corporal",
+              "Registros incompletos e edema mascaram"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Bolus como teste terapêutico: indicação e parada"
+        ],
+        [
+          "p",
+          "A diretriz NICE de adultos hospitalizados apresenta bolus inicial de cristaloide isotônico de 500 mL em menos de 15 minutos quando a ressuscitação por fluido está indicada, seguido de reavaliação; isso não é ordem universal para todos os pacientes hipotensos. Em paciente idoso, com insuficiência cardíaca, congestão pulmonar, LRA ou sem evidência de responsividade, usar alíquotas menores e monitorização pode ser mais seguro, conforme protocolo e avaliação especializada. Não insistir na repetição de litros quando não há resposta hemodinâmica ou há sinais de sobrecarga."
+        ],
+        [
+          "p",
+          "Se o problema é perda sanguínea importante, bolus de cristaloide não substitui controle da hemorragia e transfusão hemostática quando indicada. Se a pressão cai por vasoplegia anestésica ou sepse mesmo após perfusão adequada, podem ser necessários vasopressores e controle da causa. Se há pneumotórax hipertensivo, tamponamento ou embolia pulmonar, a intervenção etiológica supera 'dar mais soro'. Antes do bolus, formular objetivo mensurável: perfusão, fluxo/pressão, tempo de enchimento, débito e risco de edema."
+        ],
+        [
+          "3",
+          "Responsividade e tolerância a fluido: duas condições simultâneas"
+        ],
+        [
+          "p",
+          "Um paciente responsivo mas com pulmão já congestionado pode piorar com infusão, enquanto paciente com sinais de hipoperfusão e ausência de responsividade tende a obter pouco benefício de fluidos adicionais. A decisão ideal avalia probabilidade de aumentar débito e probabilidade de causar edema pulmonar, congestão venosa, aumento de pressão intra-abdominal ou lesão renal. Em quadros refratários, acesso a monitorização avançada e equipe de terapia intensiva pode ser necessário."
+        ],
+        [
+          "3",
+          "Oligúria perioperatória: não indicar bolus apenas por débito baixo"
+        ],
+        [
+          "p",
+          "Oligúria após cirurgia pode refletir estímulo por ADH, hipoperfusão, nefrotoxicidade, obstrução de sonda vesical, retenção urinária, lesão renal aguda ou congestão. Avaliar tempo e intensidade da queda, sinais vitais, balanço, edema, sangramento, medicamentos, creatinina seriada e, quando pertinente, ultrassonografia. Uma taxa inferior a 0,5 mL/kg/h durante seis horas é critério KDIGO de LRA em contexto adequado, não ordem automática para infusão."
+        ],
+        [
+          "3",
+          "Quando revisar a prescrição: mudança de fase clínica"
+        ],
+        [
+          "p",
+          "Na ressuscitação inicial a pergunta é se há hipoperfusão ameaçadora. Após estabilizar e controlar a fonte, evitar manter taxa elevada sem nova indicação: somar manutenção, drogas carreadas, nutrição enteral/parenteral, hemoderivados e perdas pode revelar aporte desnecessário. Na desescalada, avaliar diurese, tendência de peso, função renal e congestão antes de restringir fluidos/usar diuréticos; a diretriz ESICM 2025 considera remoção de excesso de fluidos após estabilização, não durante choque não controlado."
+        ]
+      ]
+    ],
+    [
+      "solucoes",
+      0,
+      [
+        [
+          "2",
+          "3. Escolha das soluções: cristaloides, água livre, salina hipertônica e coloides"
+        ],
+        [
+          "3",
+          "NaCl 0,9%: útil, mas composição rica em cloreto"
+        ],
+        [
+          "p",
+          "Soro fisiológico 0,9% contém cerca de 154 mmol/L de Na e 154 mmol/L de Cl, concentração de cloreto maior que a plasmática. Grandes volumes podem aumentar cloro e reduzir bicarbonato, causando acidose metabólica hiperclorêmica (ânion gap normal). A concentração de sódio torna-o útil em determinados cenários de reposição extracelular e em hiponatremia hipovolêmica, mas 'fisiológico' não significa livre de efeito ácido-base. A NICE orienta monitorar cloro e reavaliar a prescrição quando solução com Cl >120 mmol/L é administrada e surge hipercloremia/acidose."
+        ],
+        [
+          "3",
+          "Cristaloides balanceados: formulação aproximada do plasma, não ausência de riscos"
+        ],
+        [
+          "p",
+          "Ringer lactato e soluções balanceadas com acetato/gluconato oferecem menor carga de cloreto e ânions tamponantes, reduzindo propensão à acidose hiperclorêmica. O lactato presente no Ringer atua como precursor metabolizável de bicarbonato em condições adequadas e não deve ser confundido com lactato sérico medido como marcador clínico. A ESICM 2024 sugere de modo condicional cristaloides balanceados em vez de salina isotônica para muitos pacientes críticos; a certeza da evidência depende do grupo, e não há superioridade absoluta para qualquer cenário."
+        ],
+        [
+          "p",
+          "Em traumatismo cranioencefálico, a ESICM 2024 faz recomendação condicional a favor de salina isotônica em relação a balanceados, devido a considerações de tonicidade e evidência disponível. Isso impede a afirmação didática 'Ringer lactato é sempre o melhor cristalóide para todos os pacientes'. A composição específica do produto deve ser conferida no rótulo, e sua osmolaridade/titulação precisa ser interpretada em contexto neurológico e renal."
+        ],
+        [
+          "3",
+          "Glicose 5%, soluções hipotônicas e risco pós-operatório"
+        ],
+        [
+          "p",
+          "Glicose 5% fornece aproximadamente 50 g de glicose por litro, mas após metabolização entrega água livre. Sua utilidade inclui situações de déficit de água em paciente selecionado e composição de manutenção supervisionada, jamais expansor volêmico principal em choque. No pós-operatório, ADH frequentemente permanece elevado, tornando soluções hipotônicas uma causa evitável de hiponatremia, especialmente com aporte excessivo. A seleção da solução de manutenção deve conter sódio e outros eletrólitos conforme balanço e exames."
+        ],
+        [
+          "3",
+          "NaCl 3%: solução para indicação definida e ambiente de monitorização"
+        ],
+        [
+          "p",
+          "Salina hipertônica a 3% possui Na em torno de 513 mmol/L e eleva tonicidade. Seu uso em hiponatremia com manifestações neurológicas graves objetiva aumento inicial pequeno, suficiente para reduzir edema cerebral, com monitorização frequente de sódio e proteção contra sobrecorreção. Também há indicações neurocríticas próprias, que não devem ser misturadas com tratamento de hiponatremia crônica. Usar fórmula de déficit de sódio isolada para programar vários litros de 3% sem checagens reais é perigoso."
+        ],
+        [
+          "3",
+          "Coloides, albumina e hidroxietilamido"
+        ],
+        [
+          "p",
+          "Albumina humana pode ter indicações específicas, como cenários selecionados de cirrose, mas não substitui controle de sangramento nem foi demonstrada superior a cristaloides para uso generalizado no perioperatório. ESICM 2024 recomenda condicionalmente cristaloides para ressuscitação em população crítica geral e em várias subpopulações; tetrastarch/hidroxietilamido não é recomendado pela NICE para ressuscitação e tem riscos relevantes. O custo e a disponibilidade também importam, mas não legitimam fluido sem indicação."
+        ],
+        [
+          "3",
+          "Potássio presente em cristaloide balanceado e o mito de hiperK automática"
+        ],
+        [
+          "p",
+          "Ringer lactato contém pequena quantidade de K, cerca de 4 mmol/L. Essa concentração é inferior ao potássio plasmático de muitos pacientes com hipercalemia e não implica, por si, que todo paciente renal/hipercalêmico desenvolverá piora. Acidose hiperclorêmica induzida por salina também pode influenciar distribuição de K. Contudo, em hiperK grave com alterações eletrocardiográficas, a escolha de fluido é secundária à emergência; considerar composição, função renal e plano de remoção de K."
+        ],
+        [
+          "t",
+          [
+            "Fluido",
+            "Uso possível",
+            "Não utilizar como"
+          ],
+          [
+            [
+              "NaCl 0,9%",
+              "Reposição extracelular e contextos específicos como TCE",
+              "Solução sem risco de acidose em volumes maciços"
+            ],
+            [
+              "Ringer lactato",
+              "Ressuscitação de vários cenários sem contraindicação",
+              "Tratamento de hiponatremia neurológica grave"
+            ],
+            [
+              "Plasma-Lyte e semelhantes",
+              "Alternativa balanceada conforme disponibilidade",
+              "Glicose ou nutrição por si só"
+            ],
+            [
+              "Glicose 5%",
+              "Água livre em situações selecionadas e parte de manutenção",
+              "Expansor circulatório em choque"
+            ],
+            [
+              "NaCl 3%",
+              "Hiponatremia neurológica grave com monitorização",
+              "Bolsa comum de manutenção"
+            ],
+            [
+              "Albumina",
+              "Indicações clínicas específicas",
+              "Reposição padrão de todas perdas cirúrgicas"
+            ],
+            [
+              "Hidroxietilamido",
+              "Não recomendado para ressuscitação geral",
+              "Substituto 'superior' dos cristaloides"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O fluido também tem dose acumulada: contabilizar todas as vias"
+        ],
+        [
+          "p",
+          "A prescrição deve somar dieta oral, água de sonda, nutrição enteral, soluções de manutenção, diluentes de antibióticos, vasopressores e analgesia, contrastes, transfusões e bolus. Um paciente pode receber 2 L/d de soro 'de manutenção' e mais 1,5 L/d de medicamentos; a soma não documentada causa balanço positivo e edema. O controle exige revisão por turnos e prescrição de 24h, com metas e frequência de reavaliação."
+        ]
+      ]
+    ],
+    [
+      "manutencao",
+      0,
+      [
+        [
+          "2",
+          "4. Manutenção, jejum e perdas extraordinárias: prescrição de 24 horas"
+        ],
+        [
+          "3",
+          "Os 5 Rs não são cinco soluções diferentes"
+        ],
+        [
+          "p",
+          "A NICE CG174 distingue ressuscitação, manutenção rotineira, reposição, redistribuição e reavaliação. Manutenção existe para paciente sem ingesta suficiente mas sem hipoperfusão que demande expansão; reposição responde a perdas anormais; ressuscitação tem objetivo de reverter inadequação circulatória. Uma bolsa rotulada 'soro de manutenção' não cobre automaticamente 1 litro extra de drenagem gástrica, e o gotejamento prescrito no centro cirúrgico não deve continuar inalterado depois que a pessoa voltar a beber água."
+        ],
+        [
+          "3",
+          "Estimativa inicial para adulto estável"
+        ],
+        [
+          "p",
+          "Como ponto de partida para manutenção isolada, a NICE propõe água de 25–30 mL/kg/dia; cerca de 1 mmol/kg/dia de Na, K e Cl; e 50–100 g/dia de glicose para reduzir cetose de jejum. Esses valores não equivalem a nutrição total e exigem ajuste a idade, função renal, coração, ingestão real, medicamentos e perdas. Um adulto de 70 kg teria referência hídrica aproximada de 1.750–2.100 mL por dia, antes de perdas adicionais, e não uma prescrição fixa para qualquer condição."
+        ],
+        [
+          "p",
+          "Em idosos frágeis, insuficiência cardíaca/renal ou risco de realimentação, a NICE considera faixa hídrica menor, de 20–25 mL/kg/dia. Em obesidade, o uso do peso ideal pode reduzir risco de sobreprescrição; em IMC >40 kg/m², recomenda-se auxílio especializado. O cálculo inicia a discussão, mas somente a evolução de peso, balanço, diurese, sódio, potássio, cloro e creatinina dirá se o plano corresponde às necessidades reais."
+        ],
+        [
+          "3",
+          "Perdas de diferentes órgãos têm composições distintas"
+        ],
+        [
+          "t",
+          [
+            "Perda",
+            "Alteração típica possível",
+            "Como reavaliar"
+          ],
+          [
+            [
+              "Aspiração gástrica/vômitos",
+              "Perda de HCl, alcalose hipoclorêmica, K baixo",
+              "Quantificar drenagem, Cl/K, diurese e causa"
+            ],
+            [
+              "Diarreia",
+              "Perda de água, K e bicarbonato; acidose hiperclorêmica",
+              "Substituir perdas com composição apropriada"
+            ],
+            [
+              "Ileostomia de alto débito",
+              "Perda de Na, água e Mg",
+              "Quantificar saída por turno, função renal e eletrólitos"
+            ],
+            [
+              "Fístula intestinal/pancreática",
+              "Perdas com Na, K, bicarbonato variáveis",
+              "Considerar localização e composição das perdas"
+            ],
+            [
+              "Febre/queimaduras",
+              "Aumento de perda insensível de água",
+              "Rever água total e perdas efetivas"
+            ],
+            [
+              "Hemorragia",
+              "Perda de sangue e volume efetivo",
+              "Controlar fonte e hemostasia, não apenas cristaloide"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O doente com ileostomia de alto débito não precisa só de água pura"
+        ],
+        [
+          "p",
+          "O conteúdo de ileostomia pode carregar volume significativo de sódio. A pessoa que bebe grande quantidade de água de baixo conteúdo eletrolítico pode persistir desidratada e até aumentar saída pelo estoma, sobretudo em intestino curto. Soluções de reidratação de composição adequada, revisão de dieta, medicamentos e avaliação de cirurgia/gastroenterologia podem ser necessários. A prescrição deve relacionar o débito com a função renal, o peso e o risco de hipomagnesemia."
+        ],
+        [
+          "3",
+          "Somar todas as entradas e interromper o desnecessário"
+        ],
+        [
+          "p",
+          "Contabilizar volumes de antibióticos diluídos, hemoderivados, nutrição, manutenção, bolus e ingestão oral/enteral. Um paciente que ingere 1,5 litro e recebe outros 2 litros de manutenção pode acumular balanço positivo sem objetivo clínico. Prescrever um plano de 24 horas com solução, volume, velocidade, perdas a compensar e horário de reavaliação. Com a recuperação da via oral/enteral, retirar fluidoterapia IV quando não houver outra indicação."
+        ],
+        [
+          "3",
+          "Potássio na manutenção requer segurança farmacêutica"
+        ],
+        [
+          "p",
+          "A referência de manutenção de 1 mmol/kg/dia de K não é indicada para anúria, hiperK ou disfunção renal sem reavaliação. A NICE alerta para o risco de adicionar manualmente potássio à bolsa IV: a instituição deve preferir preparações padronizadas e dupla conferência. Uma prescrição escrita precisa especificar unidades e limites de infusão conforme protocolo, sem tratar K como componente inerte de todo soro."
+        ]
+      ]
+    ],
+    [
+      "disnatremias",
+      0,
+      [
+        [
+          "2",
+          "5. Hiponatremia e hipernatremia: tonicidade, urgência e prevenção de sobrecorreção"
+        ],
+        [
+          "3",
+          "Hiponatremia é concentração, não medidor direto de volemia"
+        ],
+        [
+          "p",
+          "Sódio abaixo de 135 mmol/L é hiponatremia, mas a pergunta inicial é se a tonicidade plasmática efetiva está reduzida. Hiperglicemia intensa desloca água do intracelular e dilui a concentração de sódio, resultando em hiponatremia hipertônica; alterações extremas de lipídios/proteínas podem produzir pseudohiponatremia em certos métodos laboratoriais. Confirmar glicemia, osmolalidade, método e história antes de assumir que toda redução de Na requer salina hipertônica."
+        ],
+        [
+          "p",
+          "Hiponatremia verdadeiramente hipotônica produz risco de edema cerebral. Convulsões, coma, sonolência profunda, vômitos importantes e sofrimento neurológico são sinais potencialmente graves; o risco depende também da velocidade de desenvolvimento. Em quadros com mais de 48 horas ou duração desconhecida, o cérebro se adapta, e aumento abrupto de tonicidade durante tratamento pode provocar síndrome de desmielinização osmótica. Por isso o objetivo inicial em emergência é melhora sintomática com pequeno aumento de Na, e não normalização em um dia."
+        ],
+        [
+          "3",
+          "Hiponatremia grave com sintomas: o que é diferente da rotina"
+        ],
+        [
+          "p",
+          "A diretriz europeia conjunta para hiponatremia recomenda, em ambiente monitorizado, bolus de 150 mL de NaCl a 3% em 20 minutos com dosagem subsequente de Na e repetição controlada quando necessário, buscando elevação inicial aproximada de 5 mmol/L. Existem protocolos institucionais que utilizam 100 mL e tempos distintos. A escolha deve obedecer à diretriz efetivamente adotada no serviço, com equipe treinada e avaliação da causa dos sintomas. Evitar infusão prolongada às cegas ou correção até Na normal antes da reavaliação."
+        ],
+        [
+          "p",
+          "A mesma diretriz de 2014 recomenda não ultrapassar aumento total de 10 mmol/L nas primeiras 24 horas e de 8 mmol/L por cada 24 horas subsequente; em pessoas com maior risco de desmielinização, como alcoolismo, desnutrição, hipocalemia, hepatopatia e Na extremamente baixo, costuma-se escolher limite ainda mais conservador, frequentemente até 8 mmol/L em qualquer período de 24 horas. A prescrição deve somar efeito de reposição de potássio e a possível aquarese rápida após reversão de hipovolemia. É necessária dosagem frequente e ajuste durante a evolução."
+        ],
+        [
+          "3",
+          "Hiponatremia sem sintomas graves: investigar antes de expandir"
+        ],
+        [
+          "p",
+          "Para hiponatremia hipotônica sem ameaça neurológica imediata, classificar volume arterial efetivo, exame de edema, uso de diuréticos, dor, náusea, medicações, insuficiência adrenal/hipotireoidismo e função renal. Osmolalidade urinária e Na urinário podem esclarecer ação de ADH e perda renal versus extrarrenal, embora diuréticos e LRA limitem interpretação. Urina muito diluída indica supressão de ADH; urina concentrada demonstra ação antidiurética, cuja causa precisa ser identificada."
+        ],
+        [
+          "t",
+          [
+            "Fenótipo",
+            "Mecanismo e pistas",
+            "Erro que a conduta deve evitar"
+          ],
+          [
+            [
+              "Hipovolêmico",
+              "Perda de água e Na, com depleção de Na predominante; vômito, dreno, diurético",
+              "Restringir toda água sem repor volume efetivo"
+            ],
+            [
+              "Euvolêmico/SIADH provável",
+              "ADH inadequadamente elevado, urina não diluída; dor, náusea, drogas, doenças pulmonares",
+              "Diagnosticar SIADH sem excluir causa endócrina e renal"
+            ],
+            [
+              "Hipervolêmico",
+              "IC, cirrose, nefropatia, edema e retenção maior de água",
+              "Repetir grandes bolus salinos por Na baixo"
+            ],
+            [
+              "Translocacional",
+              "Glicose muito elevada",
+              "Aplicar 3% sem confirmar tonicidade"
+            ],
+            [
+              "Pseudohiponatremia",
+              "Artefato de método em lipemia/proteinemia importante",
+              "Corrigir número sem distúrbio real"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pós-operatório e SIADH: uma associação muito frequente"
+        ],
+        [
+          "p",
+          "Dor, náusea, opioides, anestesia e estresse elevam vasopressina e reduzem excreção de água livre. Se a equipe mantém água hipotônica em excesso, o Na pode cair sem perda importante de sódio corporal. Em cirurgia neurológica e hipofisária, a fisiologia pode ser ainda mais complexa, com diabetes insipidus e SIADH transitórios em momentos diferentes. Portanto, a cronologia, a diurese e a osmolaridade urinária são componentes do diagnóstico."
+        ],
+        [
+          "3",
+          "E se o Na corrigir mais rapidamente do que planejado?"
+        ],
+        [
+          "p",
+          "Quando a diurese aquosa aumenta de repente após corrigir hipovolemia ou suspender uma causa de ADH elevado, o sódio pode subir rapidamente mesmo que a solução hipertônica já tenha sido parada. Se a trajetória ultrapassa limite recomendado ou se há alto risco de desmielinização, acionar especialista e discutir contenção da aquarese com desmopressina e, em situações selecionadas, rebaixamento cuidadosamente monitorizado com água livre/glicose IV. Essa estratégia exige vigilância intensa e não deve ser improvisada com fórmula de déficit."
+        ],
+        [
+          "3",
+          "Hipernatremia: na maioria das vezes falta água em relação ao sódio"
+        ],
+        [
+          "p",
+          "Na acima de 145 mmol/L costuma refletir perda de água ou acesso insuficiente, especialmente em idosos, sedados, entubados, febris, com diurese osmótica ou após cirurgia hipofisária. Também pode decorrer de administração excessiva de sódio hipertônico. Diferenciar poliúria com urina muito diluída, sugerindo deficiência ou resistência à vasopressina, de poliúria osmótica com urina mais concentrada, por hiperglicemia, medicamentos ou outros solutos. Não inferir diabetes insipidus apenas da quantidade de urina."
+        ],
+        [
+          "p",
+          "Hipernatremia com choque exige restaurar perfusão primeiro com cristalóide isotônico adequado; solução glicosada de água livre não é expansor circulatório principal. Depois da estabilização, estimar déficit relativo de água e repor por via oral/enteral quando segura ou IV com solução apropriada, incorporando perdas em curso e monitorando sódio. Um cálculo ilustrativo é água corporal total × [(Na/140)−1], mas é aproximação, não prescrição automática de todo déficit em poucas horas."
+        ],
+        [
+          "p",
+          "Em hipernatremia crônica ou de duração indeterminada, costuma-se planejar redução gradual, monitorada e individualizada; limites clássicos usam aproximadamente até 10–12 mmol/L por dia, mas há heterogeneidade de evidência em adultos e circunstâncias de hipernatremia aguda com sobrecarga de sódio podem ter condutas diferentes. O diagnóstico temporal e a condição neurológica importam mais que aplicar limite único em todo paciente."
+        ],
+        [
+          "3",
+          "Quatro contas que não devem determinar a prescrição isoladamente"
+        ],
+        [
+          "t",
+          [
+            "Fórmula",
+            "Utilidade",
+            "Limitação"
+          ],
+          [
+            [
+              "Osmolalidade ≈ 2Na + glicose/18 + ureia/6",
+              "Distinguir distúrbios osmóticos e comparar com medida",
+              "Ureia aumenta osmolalidade, mas não tonicidade sustentada em condições comuns"
+            ],
+            [
+              "Na corrigido por glicemia",
+              "Reconhecer componente translocacional",
+              "Fator de correção varia com magnitude de glicemia"
+            ],
+            [
+              "Déficit de água = ACT × ((Na/140)−1)",
+              "Estimar déficit em hipernatremia",
+              "Não inclui perdas futuras nem estado volêmico real"
+            ],
+            [
+              "Adrogué–Madias",
+              "Estimar resposta esperada de Na a uma solução",
+              "Aquarése e variação de perdas podem tornar previsão incorreta"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Síntese de segurança para a prova"
+        ],
+        [
+          "p",
+          "Hiponatremia neurológica grave: tratamento de urgência com solução hipertônica monitorizada, alvo inicial pequeno e limite total de correção. Hiponatremia crônica sem gravidade: classificar tonicidade e causa antes de terapia. Hipernatremia com choque: perfusão primeiro, água livre depois. Em qualquer disnatremia importante, medir Na seriado e não perseguir cálculos enquanto a fisiologia muda."
+        ]
+      ]
+    ],
+    [
+      "potassio",
+      0,
+      [
+        [
+          "2",
+          "6. Potássio perioperatório: hipocalemia, hipercalemia e o ECG"
+        ],
+        [
+          "3",
+          "Concentração sérica não é estoque corporal total"
+        ],
+        [
+          "p",
+          "A maior parte do potássio está no intracelular, e pequenas mudanças no fluxo transcelular alteram concentração plasmática. Insulina e agonistas beta-adrenérgicos deslocam K para dentro das células; acidose de certos tipos, destruição muscular e deficiência de insulina podem elevá-lo. Perdas por diuréticos, vômitos, drenagem digestiva e diarreia reduzem estoques corporais; LRA, DRC, hipoaldosteronismo e fármacos reduzem excreção renal. Uma pessoa pode apresentar K normal apesar de deficiência corporal importante, e o resultado deve ser lido com gases/Na/Mg/rim."
+        ],
+        [
+          "3",
+          "Hipocalemia: pensar em arritmia, perdas e magnésio"
+        ],
+        [
+          "p",
+          "Hipocalemia é geralmente K &lt;3,5 mmol/L; é grave quando muito reduzido ou há sintomas, ECG alterado, cardiopatia ou uso de fármacos pró-arrítmicos. Fraqueza, íleo, rabdomiólise e arritmias podem ocorrer. ECG pode mostrar achatamento de onda T, infradesnivelamento de ST, onda U e aumento aparente do intervalo QU; ausência de achados não exclui risco. Em paciente que perde conteúdo gástrico, considerar hipocloremia/alcalose e ativação renal de aldosterona; em diarreia, perda direta de K e bicarbonato."
+        ],
+        [
+          "p",
+          "A avaliação inclui repetição da medida quando apropriado, Mg, função renal, gasometria, uso de diuréticos, insulina, agonistas β2 e perdas. Hipomagnesemia causa desperdício renal de K e torna reposição refratária: corrigir apenas K repetidamente sem abordar Mg pode falhar. Em hipocalemia leve sem risco e trato digestório funcional, reposição oral costuma ser preferível; quadros graves, arritmia ou incapacidade oral requerem reposição IV controlada e monitorizada, com concentração, via, bomba e velocidade definidas por protocolo do serviço."
+        ],
+        [
+          "p",
+          "Cloreto de potássio concentrado é medicação de alto risco: não administrar em bolus IV, não manipular sem diluição e preparo seguro, respeitar acesso periférico/central e monitorização cardíaca conforme necessidade. Uma ampola com concentração em mEq/mL diferente daquela presumida pode causar intoxicação fatal. A prescrição acadêmica deve sempre indicar unidade, dose, diluente, velocidade e frequência de checagem, mas a execução depende de padronização institucional e dupla checagem."
+        ],
+        [
+          "3",
+          "Hipercalemia: valor, sintomas e ECG exigem prioridades simultâneas"
+        ],
+        [
+          "p",
+          "Hipercalemia é frequentemente K >5,5 mmol/L, com gravidade definida por concentração e contexto; UK Kidney Association 2023 descreve 6,0–6,4 como moderada e ≥6,5 como grave. Entretanto, ECG com alterações ameaçadoras exige resposta urgente independentemente de limiar numérico fixo. A sequência didática compreende: reconhecer e confirmar se necessário sem atrasar emergências; monitorar coração; estabilizar membrana quando indicado; deslocar K para intracelular; remover K do organismo e evitar recorrência; buscar a causa."
+        ],
+        [
+          "p",
+          "ECG pode apresentar onda T apiculada, PR prolongado, P atenuada/desaparecida, QRS alargado, bradiarritmia ou padrão sinusoidal em evolução grave. A correlação entre valor sérico e ECG é variável: ECG aparentemente normal não exclui arritmia iminente em K muito alto. Hemólise da amostra pode produzir pseudohipercalemia, sobretudo se quadro e ECG não combinam; colher nova amostra rapidamente quando seguro, sem atrasar tratamento de risco vital."
+        ],
+        [
+          "t",
+          [
+            "Etapa",
+            "Efeito",
+            "O que não faz"
+          ],
+          [
+            [
+              "Cálcio IV se ECG ameaçador",
+              "Estabiliza membrana miocárdica de modo rápido",
+              "Não remove potássio nem reduz K plasmático"
+            ],
+            [
+              "Insulina + glicose conforme protocolo",
+              "Desloca K transitoriamente para células",
+              "Não elimina estoque corporal; pode causar hipoglicemia"
+            ],
+            [
+              "Salbutamol nebulizado em circunstâncias adequadas",
+              "Contribui para deslocamento intracelular",
+              "Não substitui cálcio/insulina em quadro grave"
+            ],
+            [
+              "Resina/quelante específico, diurese e outras vias",
+              "Favorece remoção de K, conforme escolha",
+              "Efeito e tempo dependem do agente e função renal"
+            ],
+            [
+              "Diálise",
+              "Remove K em LRA/DRC refratária grave",
+              "Não elimina necessidade de proteção cardíaca inicial"
+            ],
+            [
+              "Revisão de fármacos e causas",
+              "Previne recorrência",
+              "Não é tratamento único de emergência arrítmica"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A diferença entre estabilizar, redistribuir e retirar K"
+        ],
+        [
+          "p",
+          "Cálcio intravenoso restaura temporariamente margem elétrica da membrana cardíaca quando alterações de ECG exigem intervenção, mas não diminui K sérico. Insulina com glicose e agonistas β2 reduzem temporariamente K sérico deslocando-o para células; se não houver excreção/remoção, pode ocorrer rebote. Diuréticos podem ajudar se há produção urinária e volume adequado; terapias de ligação intestinal têm tempo e indicação próprios; diálise é alternativa definitiva em determinadas hipercalemias refratárias ou em LRA com incapacidade de excreção. Não confundir melhora do ECG após cálcio com correção da causa."
+        ],
+        [
+          "3",
+          "Insulina para hipercalemia: prevenir hipoglicemia tardia"
+        ],
+        [
+          "p",
+          "A diretriz UKKA 2023 ressalta o risco de hipoglicemia por horas após insulina-glicose, especialmente em pacientes com glicemia basal mais baixa ou doença renal. Exige checagem seriada de glicose e possibilidade de suplementação conforme esquema local; monitorar K para identificar resposta/rebote. O uso de insulina é intervenção emergencial com riscos próprios, não substituto de avaliação de gravidade."
+        ],
+        [
+          "3",
+          "Pós-operatório: causas de hiperK que passam despercebidas"
+        ],
+        [
+          "p",
+          "LRA por hipoperfusão ou sepse, lesão por esmagamento/rabdomiólise, hemólise, transfusão maciça, acidose grave, hipoaldosteronismo e medicamentos como espironolactona, IECA/BRA e trimetoprim podem aumentar K. Um paciente com redução de diurese e K crescente precisa de avaliação renal e ECG além de suspender suplemento de potássio de manutenção. Em situações refratárias, considerar diálise precoce conforme critérios clínicos, não aguardar parada cardíaca."
+        ],
+        [
+          "3",
+          "Correção da hipocalemia muda sódio e risco arrítmico"
+        ],
+        [
+          "p",
+          "Reposição de K contribui para solutos efetivos e pode influenciar aumento de Na durante correção de hiponatremia. Paciente com Na muito baixo e K baixo precisa ser monitorado para sobrecorreção mesmo que receba pouco salina hipertônica. A relação Mg–K também determina estabilidade elétrica; repleção de magnésio inadequada é causa comum de hipocalemia persistente."
+        ],
+        [
+          "3",
+          "Caso de ligação: ECG não é biomarcador infalível"
+        ],
+        [
+          "p",
+          "Um paciente com K 6,8 mmol/L e ECG sem mudança óbvia continua em risco e exige confirmação/abordagem urgente; outro com K 5,9 e alargamento do QRS tem indicação de tratar ameaça elétrica imediatamente. O objetivo é integrar concentração, tendência, função renal, velocidade de elevação e ECG, evitando o dogma 'sem T apiculada = sem perigo'."
+        ]
+      ]
+    ],
+    [
+      "outros-eletr",
+      0,
+      [
+        [
+          "2",
+          "7. Magnésio, cálcio e fósforo: os eletrólitos que mudam a resposta ao tratamento"
+        ],
+        [
+          "3",
+          "Magnésio: arritmias, hipocalemia refratária e risco nutricional"
+        ],
+        [
+          "p",
+          "A hipomagnesemia pode decorrer de diarreia, ostomia, má absorção, alcoolismo, diuréticos, antibióticos com toxicidade tubular, pancreatite, realimentação e perdas renais. Manifestações incluem fraqueza, tremores, hiperexcitabilidade neuromuscular, tetania, convulsões e arritmias; ECG pode apresentar prolongamento do QT e predisposição à torsades de pointes. Um valor sérico normal pode não refletir todo estoque corporal; monitorar junto a K, Ca, função renal e exposição medicamentosa."
+        ],
+        [
+          "p",
+          "A hipocalemia não responde adequadamente quando há deficiência concomitante de Mg, que favorece perda renal de potássio. Hipocalcemia também pode ser mantida por Mg muito baixo, interferindo na secreção/ação do paratormônio. O tratamento de deficiência grave sintomática requer reposição intravenosa controlada de sulfato de magnésio com vigilância de reflexos, pressão, respiração e função renal, conforme protocolo, porque excesso de Mg pode causar hipotensão e depressão neuromuscular."
+        ],
+        [
+          "3",
+          "Hipermagnesemia: pensar em insuficiência renal e exposição"
+        ],
+        [
+          "p",
+          "Hipermagnesemia é menos comum quando os rins funcionam normalmente. Pode surgir em LRA/DRC com uso de laxantes/antiácidos contendo Mg ou excesso de reposição. Os sinais graves incluem perda de reflexos osteotendíneos, bradicardia, hipotensão, sonolência e depressão respiratória. Interromper fontes de Mg, monitorar ECG e suporte vital e considerar antagonismo fisiológico com cálcio IV em casos graves e remoção por diálise quando indicado, respeitando avaliação especializada. Não confundir magnésio alto com mero achado nutricional."
+        ],
+        [
+          "3",
+          "Cálcio total versus cálcio ionizado"
+        ],
+        [
+          "p",
+          "A concentração total de cálcio inclui fração ligada a albumina, complexada e ionizada; a fração ionizada é biologicamente ativa na transmissão neuromuscular, coagulação e contração cardíaca. Hipoalbuminemia pós-operatória pode reduzir cálcio total sem reduzir cálcio ionizado; correções matemáticas por albumina têm limitações em doença crítica. Quando há sintomas, grandes transfusões, alteração ácido-base ou doença grave, medir cálcio ionizado é preferível a 'corrigir o número' com equação."
+        ],
+        [
+          "p",
+          "Na alcalose, mais cálcio liga-se à albumina, podendo reduzir Ca ionizado e causar parestesias, tetania ou espasmo carpopedal mesmo com Ca total aparentemente normal. Acidose altera ligação em direção oposta. Hipocalcemia real pode produzir prolongamento do QT, parestesias, espasmos, convulsões ou disfunção cardíaca. A investigação inclui Mg, fósforo, função renal, vitamina D e PTH quando indicados, além de exposição a transfusão e cirurgia cervical."
+        ],
+        [
+          "3",
+          "Hipocalcemia da transfusão maciça: citrato e choque"
+        ],
+        [
+          "p",
+          "Produtos sanguíneos contêm citrato anticoagulante que pode quelar cálcio; transfusão rápida/maciça, choque e depuração hepática prejudicada aumentam risco de hipocalcemia ionizada. Essa alteração dificulta coagulação e função miocárdica, integrando o conceito de 'diamante letal' do trauma. O tratamento de hemorragia com hemoderivados requer dosagens seriadas de Ca ionizado, pH, K e outros parâmetros conforme protocolo do tema 022; cálcio total isolado pode mascarar a gravidade."
+        ],
+        [
+          "3",
+          "Hipercalcemia pós-operatória: nem sempre é 'desidratação'"
+        ],
+        [
+          "p",
+          "Hipercalcemia verdadeira pode decorrer de hiperparatireoidismo, neoplasias, imobilização prolongada e outras condições. Paciente com poliúria, náuseas, constipação, confusão ou arritmias merece avaliação com cálcio ionizado ou total contextualizado, creatinina, medicamentos e ECG. Fluidoterapia isotônica pode ser útil em desidratação associada, mas infusão exagerada em insuficiência cardíaca/renal agrava congestão. Hipercalcemia grave pode requerer terapias específicas conforme causa, gravidade e especialistas."
+        ],
+        [
+          "3",
+          "Fósforo: ATP, diafragma e síndrome da realimentação"
+        ],
+        [
+          "p",
+          "O fósforo integra ATP, ácidos nucleicos, fosfolipídios e moléculas da hemoglobina como 2,3-DPG. Hipofosfatemia pode ocorrer em desnutrição, alcoolismo, perdas renais, alcalose respiratória e realimentação rápida; manifestações graves incluem fraqueza diafragmática, dificuldade de desmame ventilatório, rabdomiólise, hemólise, disfunção cardíaca e alterações neurológicas. Avaliar K, Mg, Ca, função renal, alimentação e grau de deficiência antes de repor."
+        ],
+        [
+          "p",
+          "Paciente que passa dias sem comer e recebe grande carga calórica pode desenvolver aumento de insulina com deslocamento de fosfato, potássio e magnésio para células e retenção hídrica. A síndrome de realimentação pode produzir edema, arritmias e falência respiratória. NICE CG32 recomenda identificar risco nutricional, ofertar tiamina, iniciar energia de forma progressiva e monitorar/repor eletrólitos de acordo com gravidade. Não simplesmente 'dar muita dieta para corrigir desnutrição' sem vigilância."
+        ],
+        [
+          "3",
+          "Hipofosfatemia, cálcio e precipitação: reposição deve ser controlada"
+        ],
+        [
+          "p",
+          "Reposição de fosfato pode reduzir cálcio e causar precipitação com soluções contendo cálcio quando preparo/compatibilidade são inadequados. Em LRA/DRC, a eliminação diminui, aumentando risco de hiperfosfatemia; o tratamento deve considerar produto disponível, via, concentração, ritmo e monitorização laboratorial. Nunca misturar eletrólitos concentrados sem validação de compatibilidade farmacêutica."
+        ],
+        [
+          "t",
+          [
+            "Eletrólito",
+            "Baixo: consequência relevante",
+            "Alto: consequência relevante",
+            "Exame/contexto que ajuda"
+          ],
+          [
+            [
+              "Mg",
+              "Torsades, hipoK refratária, tetania",
+              "Hiporreflexia, depressão respiratória",
+              "Rim, K, Ca, perdas GI/diuréticos"
+            ],
+            [
+              "Ca ionizado",
+              "QT longo, tetania, coagulação reduzida",
+              "QT curto, confusão, poliúria",
+              "pH, transfusão, albumina e rim"
+            ],
+            [
+              "Fósforo",
+              "Fraqueza muscular/diafragmática, realimentação",
+              "Precipitação Ca-fósforo, CKD",
+              "Nutrição, rim, Mg, Ca"
+            ],
+            [
+              "Potássio",
+              "Onda U, fraqueza, arritmias",
+              "T apiculada/QRS largo, parada",
+              "ECG, rim, fármacos e hemólise"
+            ],
+            [
+              "Sódio",
+              "Edema cerebral se hipotônico",
+              "Desidratação celular",
+              "Tonicidade, história e diurese"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Por que interpretar Mg, Ca e fósforo juntos"
+        ],
+        [
+          "p",
+          "Após tireoidectomia total, hipocalcemia pode decorrer de lesão/supressão paratireoidiana; após transfusão maciça, citrato pode diminuir ionizado; durante realimentação, Mg/K/fósforo podem cair em conjunto; em LRA, hiperfosfatemia pode contribuir para alteração de Ca. Em cada situação o tratamento é diferente. A leitura simultânea do contexto, ECG e eletrólitos impede correções isoladas que mascaram o mecanismo."
+        ]
+      ]
+    ],
+    [
+      "acidobase",
+      0,
+      [
+        [
+          "2",
+          "8. Distúrbios ácido-base na cirurgia: gasometria, ânion gap e compensação"
+        ],
+        [
+          "3",
+          "Interpretar gasometria em etapas"
+        ],
+        [
+          "p",
+          "Primeiro verifique pH: acidemia se abaixo de 7,35, alcalemia se acima de 7,45; depois identifique tendência predominante em PaCO₂ e bicarbonato, levando em conta compensação e doenças mistas. Não basta dizer 'acidose = pH baixo' porque um paciente pode ter dois distúrbios opostos com pH próximo ao normal. Em cirurgia, perdas gástricas, diarreia, choque, sepse, insuficiência renal, ventilação mecânica, hiperventilação por dor e grande aporte de cloreto frequentemente coexistem."
+        ],
+        [
+          "t",
+          [
+            "Distúrbio",
+            "Mecanismo comum no paciente cirúrgico",
+            "Pista"
+          ],
+          [
+            [
+              "Acidose metabólica AG alto",
+              "Lactato, cetoácidos, uremia e outras causas",
+              "HCO3 reduzido, AG corrigido alto"
+            ],
+            [
+              "Acidose metabólica AG normal",
+              "Diarreia ou carga elevada de cloreto",
+              "HCO3 baixo e Cl aumentado"
+            ],
+            [
+              "Alcalose metabólica",
+              "Vômitos/aspirado gástrico, diuréticos e volume efetivo baixo",
+              "HCO3 alto, Cl baixo, K baixo"
+            ],
+            [
+              "Acidose respiratória",
+              "Hipoventilação por sedação, obstrução, fadiga",
+              "PaCO2 alto e pH baixo se agudo"
+            ],
+            [
+              "Alcalose respiratória",
+              "Dor, hiperventilação, sepse precoce ou ventilação excessiva",
+              "PaCO2 baixo e pH elevado"
+            ],
+            [
+              "Distúrbio misto",
+              "Choque + vômitos; sepse + hiperventilação; DRC + diarreia",
+              "Compensação fora do esperado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Ânion gap: sempre lembrar da albumina"
+        ],
+        [
+          "p",
+          "Ânion gap clássico pode ser estimado por Na − (Cl + HCO₃), em mmol/L, sem incluir K na versão mais usada. Referência depende do método do laboratório; o valor '12' é aproximação histórica, não corte universal. A albumina é principal ânion não medido; em hipoalbuminemia, o AG calculado fica artificialmente baixo. Uma aproximação amplamente usada é AG corrigido = AG observado + 2,5 × (4 − albumina em g/dL), aplicável com suas limitações. Paciente com albumina 2 e AG 12 teria AG corrigido perto de 17, potencialmente revelando ácidos não medidos."
+        ],
+        [
+          "3",
+          "Cálculo e interpretação em cenário clínico"
+        ],
+        [
+          "p",
+          "Considere Na 140, Cl 109, HCO₃ 15 e albumina 2 g/dL: AG = 140 − (109 + 15) = 16. Corrigido por albumina, AG aproximado = 16 + 2,5 × (4−2) = 21. A acidose metabólica tem contribuição de ânions não medidos, mesmo que valor bruto pareça modestamente alto; pesquisar lactato, cetose, rim e outras causas. A correção da albumina não substitui exame clínico nem deve ser interpretada isoladamente."
+        ],
+        [
+          "3",
+          "Fórmula de Winter: distinguir compensação de segunda doença"
+        ],
+        [
+          "p",
+          "Na acidose metabólica, uma regra aproximada para PaCO₂ esperada é 1,5 × HCO₃ + 8, com margem de ±2 mmHg. Se PaCO₂ medida está muito acima, há acidose respiratória associada; se muito abaixo, há alcalose respiratória associada. Exemplo: HCO₃ 12 mEq/L gera PaCO₂ esperada por volta de 26 ±2 mmHg; PaCO₂ medida de 40 sugere hipoventilação adicional, possivelmente por opioides pós-operatórios. Essa relação ajuda perceber distúrbio misto mesmo quando uma das alterações parece dominante."
+        ],
+        [
+          "3",
+          "Delta gap: ferramenta para revelar alcalose coexistente"
+        ],
+        [
+          "p",
+          "Em acidose com AG elevado, comparar aumento do AG com queda do bicarbonato pode revelar outro distúrbio metabólico. O quociente ΔAG/ΔHCO₃ é apenas aproximação e depende da referência de AG, correção por albumina e estado basal. Um delta alto pode sugerir alcalose metabólica adicional por vômitos/diuréticos; delta baixo pode sugerir acidose hiperclorêmica concomitante. Não declarar diagnóstico fechado só pela razão, sobretudo em DRC e distúrbios complexos."
+        ],
+        [
+          "3",
+          "Vômitos e sonda gástrica: alcalose que costuma ser responsiva ao cloreto"
+        ],
+        [
+          "p",
+          "Perda de HCl pelo estômago favorece alcalose metabólica e depleção de cloreto, frequentemente acompanhada de hipocalemia. A redução de volume efetivo e a ativação de aldosterona podem perpetuar retenção de bicarbonato. Cloro urinário baixo pode sugerir alcalose sensível à reposição de cloreto, porém uso recente de diurético altera interpretação; avaliar história, perdas e rim. Em paciente cirúrgico, a intervenção inclui tratar obstrução/causa de vômitos e ajustar volume, Cl e K sob monitorização."
+        ],
+        [
+          "3",
+          "Diarreia e salina em excesso: duas causas de acidose AG normal"
+        ],
+        [
+          "p",
+          "Diarreia pode provocar perda fecal de bicarbonato e K; infusão grande de NaCl 0,9% pode aumentar cloro e gerar acidose metabólica hiperclorêmica. O tratamento é diferente: uma requer controlar diarreia e repor perdas; outra exige rever composição/volume de fluido, avaliar perfusão e usar cristalóide mais adequado quando indicado. O achado de bicarbonato baixo não prova choque nem exige bicarbonato IV automaticamente."
+        ],
+        [
+          "3",
+          "Lactato: sinal de risco, não sinônimo obrigatório de anaerobiose"
+        ],
+        [
+          "p",
+          "Lactato pode aumentar por hipoperfusão, estimulação β-adrenérgica, convulsões, exercício, menor depuração hepática e alguns fármacos. Em paciente com abdome agudo e choque, a elevação aumenta preocupação com perfusão, mas pode persistir após ressuscitação por causas adicionais. O valor e sua tendência precisam ser combinados com PA, perfusão periférica, débito urinário e controle da fonte. Não infundir bicarbonato para 'normalizar lactato' sem tratar mecanismo clínico."
+        ],
+        [
+          "3",
+          "Bicarbonato IV: por que não serve para qualquer acidemia"
+        ],
+        [
+          "p",
+          "A correção definitiva da acidose por hipoperfusão exige corrigir perfusão e causa, e não apenas administrar tampão. Bicarbonato pode elevar CO₂, modificar cálcio ionizado, acrescentar sódio e sobrecarregar volume; há indicações clínicas delimitadas em distúrbios específicos e em alguns pacientes com acidemia importante/LRA segundo protocolo. A decisão depende de pH, causa, ventilação, rim e hemodinâmica. Ausência de regra universal é especialmente relevante em acidose hiperclorêmica moderada e lactato elevado pós-trauma."
+        ],
+        [
+          "3",
+          "Acidose respiratória pós-anestesia pode coexistir com metabólica"
+        ],
+        [
+          "p",
+          "Opioides, bloqueio neuromuscular residual, doença pulmonar, obesidade/hipoventilação e obstrução de via aérea podem elevar PaCO₂. Se a pessoa também apresenta choque/acidose metabólica, a PaCO₂ esperada pode ser muito baixa, e um valor aparentemente normal de 40 mmHg é inadequadamente alto para compensação. Essa é armadilha de prova e segurança: a equipe deve avaliar via aérea, ventilação e sedação em vez de apenas prescrever bicarbonato."
+        ],
+        [
+          "p",
+          "Em qualquer gasometria, confirmar se a amostra é arterial/venosa, a unidade e o momento em relação a oxigênio, ventilação, bolus e drogas. A interpretação de PaO₂ requer o tipo de amostra e FiO₂; não usar gasometria venosa para calcular oxigenação arterial."
+        ]
+      ]
+    ],
+    [
+      "lra",
+      0,
+      [
+        [
+          "2",
+          "9. Lesão renal aguda e congestão pós-operatória"
+        ],
+        [
+          "3",
+          "Critérios de LRA não devem aguardar 'creatinina muito alta'"
+        ],
+        [
+          "p",
+          "A definição KDIGO de lesão renal aguda em adultos inclui aumento de creatinina sérica ≥0,3 mg/dL em 48 horas, ou ≥1,5 vezes valor basal em até sete dias, ou diurese &lt;0,5 mL/kg/h por pelo menos seis horas. São critérios de classificação e alerta, não diagnóstico etiológico automático. A creatinina sobe com atraso relativo à lesão e é influenciada por massa muscular, diluição e catabolismo; a diurese pode ser alterada por ADH pós-operatório, diuréticos, sonda obstruída e perfusão. Combinar critérios e investigar causa é mais seguro que esperar um valor absoluto alto."
+        ],
+        [
+          "p",
+          "O estágio de LRA depende da magnitude de aumento de creatinina, queda da diurese e necessidade de terapia renal substitutiva conforme KDIGO. A classificação ajuda estratificar risco e monitorização, mas não substitui exame do doente: creatinina de 0,6 para 1,0 mg/dL pode ser relevante em pessoa com pequena massa muscular, enquanto valor cronicamente alto na DRC não representa necessariamente nova lesão. Registrar basal pré-operatório, diurese por hora, exposição a contraste/fármacos e balanço."
+        ],
+        [
+          "t",
+          [
+            "Mecanismo de LRA",
+            "Pistas em cirurgia",
+            "Como investigar"
+          ],
+          [
+            [
+              "Pré-renal/hipoperfusão",
+              "Vômito, sepse, hemorragia, perfusão ruim",
+              "Exame hemodinâmico, perdas e resposta dirigida"
+            ],
+            [
+              "Lesão tubular/intrínseca",
+              "Choque prolongado, nefrotóxicos, sepse, rabdomiólise",
+              "Sedimento urinário, CK quando indicado, história"
+            ],
+            [
+              "Pós-renal",
+              "Retenção, sonda obstruída, cirurgia pélvica, compressão ureteral",
+              "Inspecionar sonda, bexiga, ultrassom"
+            ],
+            [
+              "Congestiva/cardiorrenal",
+              "Edema, dispneia, pressões venosas elevadas",
+              "Exame, POCUS quando adequado, balanço e função cardíaca"
+            ],
+            [
+              "Nefrite intersticial",
+              "Exposição a medicamentos, rash eventual",
+              "Linha temporal, urina e avaliação especializada"
+            ],
+            [
+              "Hipertensão abdominal",
+              "Abdome tenso/distendido, oligúria, ventilação difícil",
+              "Avaliar pressão intra-abdominal se suspeita"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pré-renal e tubular podem coexistir"
+        ],
+        [
+          "p",
+          "No choque hemorrágico, hipoperfusão renal inicialmente pode reduzir filtração sem lesão estrutural extensa; com duração prolongada, isquemia e inflamação produzem lesão tubular. Não existe corte temporal universal que determine conversão. A recuperação de pressão após controle de hemorragia não garante recuperação imediata de creatinina e diurese. A equipe deve evitar nefrotóxicos evitáveis, adaptar doses conforme função renal, corrigir perfusão sem sobrecarga e monitorar eletrólitos."
+        ],
+        [
+          "3",
+          "Congestão: água extra também piora rim"
+        ],
+        [
+          "p",
+          "Pressão venosa elevada aumenta pressão retrógrada nos rins e pode reduzir gradiente de filtração, sobretudo em disfunção cardíaca e grande balanço positivo. Portanto, edema pulmonar, edema periférico e oligúria não autorizam necessariamente bolus. Avaliação cuidadosa pode indicar restringir novas infusões e, após estabilização, remover líquido com diuréticos em pessoa responsiva ou terapia renal substitutiva em situações selecionadas. A ESICM 2025 aborda desescalada e retirada de fluidos após fase inicial de ressuscitação."
+        ],
+        [
+          "3",
+          "Diuréticos não 'curam a lesão tubular'"
+        ],
+        [
+          "p",
+          "Diurético de alça pode aumentar diurese se o néfron responde e ajudar tratar congestão, mas não equivale a recuperação da função de filtração nem previne LRA apenas porque produz urina. Uma oligúria causada por choque não controlado pede tratar hipoperfusão e fonte; administrar furosemida para obter urina pode atrasar correção da causa. O mesmo diurético pode ser útil diante de sobrecarga volêmica após estabilização, com monitorização de Na, K, Mg e função renal."
+        ],
+        [
+          "3",
+          "Quando cogitar terapia renal substitutiva"
+        ],
+        [
+          "p",
+          "Indicações clínicas de urgência incluem hipercalemia grave ou recorrente refratária, acidose importante refratária, edema pulmonar/sobrecarga com comprometimento respiratório não responsiva a medidas apropriadas, certas intoxicações e complicações urêmicas. Não se basear exclusivamente em número de creatinina ou ureia isolado; a decisão envolve quadro, tendência, eletrólitos, volemia, risco e equipe de nefrologia/UTI. Na hiperK com ECG ameaçador, estabilização elétrica e redistribuição não devem esperar preparo de diálise."
+        ],
+        [
+          "3",
+          "Síndrome compartimental abdominal"
+        ],
+        [
+          "p",
+          "Após trauma, grande ressuscitação ou cirurgia abdominal complexa, edema visceral e aumento de pressão intra-abdominal podem prejudicar retorno venoso, perfusão renal e ventilação, levando a oligúria e distensão. O problema não se resolve automaticamente dando mais fluido; quando suspeito, avaliação de pressão intra-abdominal com técnica padronizada e plano cirúrgico/intensivo são necessários. A fonte do risco é a combinação de edema, volume/pressão e disfunção de órgãos."
+        ],
+        [
+          "3",
+          "Prevenção de LRA no pós-operatório: olhar todo o plano"
+        ],
+        [
+          "p",
+          "Planejamento adequado inclui evitar desidratação e sobrecarga, reconhecer hipotensão sustentada e sangramento, corrigir sepse/obstrução, revisar anti-inflamatórios não esteroides e outras drogas potencialmente nefrotóxicas, ajustar antibióticos quando função renal cai e evitar hipercalemia iatrogênica. O objetivo de diurese não substitui bem-estar do órgão; pressão, perfusão e valor sérico evoluem com atrasos. A consulta ao especialista tem maior valor quando há oligúria persistente, hipercalemia, acidose refratária, LRA avançada ou dúvidas diagnósticas."
+        ]
+      ]
+    ],
+    [
+      "situacoes",
+      0,
+      [
+        [
+          "2",
+          "10. Cenários cirúrgicos particulares e erros de rotina"
+        ],
+        [
+          "3",
+          "Cirurgia abdominal com vômitos e sonda"
+        ],
+        [
+          "p",
+          "Obstrução intestinal e aspiração gástrica podem produzir hipovolemia, hipocloremia, hipocalemia e alcalose metabólica, mas também podem cursar com isquemia intestinal e acidose láctica se houver estrangulamento. A gasometria pode mostrar distúrbio misto, e a ausência de grande dor após opioides não exclui complicação. Repor perdas e Cl/K não substitui diagnóstico cirúrgico e controle da obstrução. Monitorar débito de sonda e possibilidade de reduzir drenagem quando seguro."
+        ],
+        [
+          "3",
+          "Cirurgia colorretal e estomia"
+        ],
+        [
+          "p",
+          "Uma ileostomia de alto débito no pós-operatório exige distinguir adaptação fisiológica, infecção, medicações, obstrução parcial e intestino curto. A perda de Na/água pode desencadear LRA e hipomagnesemia apesar de sede e ingestão de água. O plano de alta precisa incluir treinamento para medir débito, ingestão adequada de solução de reidratação, sinais de alarme, consulta precoce e exames de função renal, não apenas receita genérica de 'beber muitos litros'."
+        ],
+        [
+          "3",
+          "Pancreatite e grandes cirurgias inflamatórias"
+        ],
+        [
+          "p",
+          "A pancreatite pode produzir extravasamento capilar e hipovolemia inicial, mas infusão agressiva e prolongada pode piorar edema pulmonar, abdominal e falência orgânica. O ideal é ressuscitação orientada por avaliação hemodinâmica e risco de sobrecarga. Balanço cumulativo e hematócrito isolados não bastam para decidir. Em cirurgia de grande porte, resposta inflamatória pode causar edema e alterações de ADH e aldosterona sem correspondência simples com necessidade real de soro."
+        ],
+        [
+          "3",
+          "Grandes queimaduras e trauma hemorrágico"
+        ],
+        [
+          "p",
+          "Fórmulas de queimaduras podem estimar volume inicial baseado na extensão, mas resultados devem ser titulados conforme perfusão, diurese, comprometimento respiratório e dano térmico, evitando tanto hiporressuscitação quanto 'fluid creep'. Em choque hemorrágico, a prioridade é conter fonte e iniciar manejo hemostático adequado; repetição de cristalóide dilui hemostasia e agrava hipotermia/edema. Esses cenários são detalhados no tema 022, sem importar algoritmo rígido para todo pós-operatório."
+        ],
+        [
+          "3",
+          "Traumatismo cranioencefálico e neurocirurgia"
+        ],
+        [
+          "p",
+          "Tonicidade e equilíbrio entre perfusão e edema cerebral tornam escolha de fluido especialmente sensível. ESICM 2024 faz recomendação condicional a salina isotônica em vez de cristaloides balanceados em TCE, diferente da preferência condicional por balanceados para muitos críticos. Cirurgia hipofisária pode alterar vasopressina, causando poliúria com hipernatremia ou SIADH com hiponatremia em diferentes fases. A monitorização de Na, volume/tonicidade da urina e sinais neurológicos é imprescindível."
+        ],
+        [
+          "3",
+          "Idosos e fragilidade"
+        ],
+        [
+          "p",
+          "Idosos podem ter menor água corporal total, sede reduzida, menor reserva renal e cardiopatia que aumentam tanto risco de desidratação quanto de edema por fluidos. Também usam diuréticos, bloqueadores de SRAA e medicações que alteram potássio e sódio. Evitar prescrição padrão pelo peso real sem considerar composição corporal e sinais de congestão. Delirium pós-operatório pode ser manifestação de múltiplos problemas, entre eles hipoNa, hiperNa, hipoxia, dor, infecção e drogas."
+        ],
+        [
+          "3",
+          "Diabetes e hiperglicemia pós-operatória"
+        ],
+        [
+          "p",
+          "Hiperglicemia desloca água para extracelular, reduz concentração medida de Na e aumenta diurese osmótica, elevando perdas de água/potássio. Quando insulina é administrada, K desloca-se intracelularmente e Na medido pode mudar sem infusão de salina hipertônica. No paciente com cetoacidose ou estado hiperosmolar, usar protocolos específicos com reavaliação de K e tonicidade; um soro de manutenção padrão não substitui tratamento do distúrbio metabólico."
+        ],
+        [
+          "3",
+          "Gestantes e pediatria"
+        ],
+        [
+          "p",
+          "A faixa NICE CG174 e vários critérios deste livro são voltados a adultos hospitalizados e não podem ser transferidos diretamente a crianças, recém-nascidos ou gestantes com intercorrência obstétrica. Pediatria tem composição corporal, necessidades e risco de hiponatremia iatrogênica distintos; gravidez modifica volume plasmático, rim e perfusão uteroplacentária. A prescrição exige protocolos específicos e equipe apropriada."
+        ],
+        [
+          "3",
+          "Diálise crônica e doença renal prévia"
+        ],
+        [
+          "p",
+          "Uma pessoa em diálise pode não produzir urina, e manutenção de K calculada por kg é potencialmente perigosa. Agendamento de diálise em relação à cirurgia, acesso vascular, medicações, potássio pré-operatório e balanço cumulativo exigem plano com nefrologia e anestesia. A ausência de diurese não é, isoladamente, nova LRA em paciente anúrico habitual; é fundamental conhecer basal."
+        ],
+        [
+          "3",
+          "Alta e retorno à ingestão oral"
+        ],
+        [
+          "p",
+          "Em cirurgia não complicada, fluidos IV devem ser reduzidos/suspensos quando oral/enteral atende necessidades e não há perda extraordinária ou distúrbio a corrigir. Em ostomia, doença renal, alteração de sódio/potássio e idosos frágeis, o plano de alta precisa registrar ingestão, sinais de alarme, exames e retorno. Uma alta com Na em rápida mudança sem seguimento pode ser insegura mesmo com paciente conversando normalmente."
+        ]
+      ]
+    ],
+    [
+      "algoritmo",
+      0,
+      [
+        [
+          "2",
+          "11. Algoritmo decisório, revisão por turnos e pérolas de prova"
+        ],
+        [
+          "3",
+          "Uma ordem correta de perguntas para quase todo paciente cirúrgico"
+        ],
+        [
+          "t",
+          [
+            "Pergunta",
+            "Se sim",
+            "Se não"
+          ],
+          [
+            [
+              "Existe risco imediato de vida: choque, ECG ameaçador, convulsão?",
+              "ABCDE, intervenção específica e monitorização",
+              "Avançar na classificação clínica"
+            ],
+            [
+              "Há hipoperfusão e probabilidade de benefício por fluido?",
+              "Cristaloide/teste dirigido e reavaliar; controlar causa",
+              "Evitar bolus reflexo"
+            ],
+            [
+              "Há perda extracorpórea anormal?",
+              "Quantificar e repor com composição adequada",
+              "Calcular apenas manutenção se necessário"
+            ],
+            [
+              "O doente recebe água oral/enteral suficiente?",
+              "Reduzir/suspender manutenção IV",
+              "Planejar água/eletrólitos de manutenção"
+            ],
+            [
+              "Sódio está alterado?",
+              "Determinar tonicidade, sintomas e tempo de evolução",
+              "Monitorar outras alterações"
+            ],
+            [
+              "K, Mg, Ca ionizado ou fósforo alterados?",
+              "Avaliar ECG, rim, medicações e reposição específica",
+              "Não suplementar automaticamente"
+            ],
+            [
+              "Há acidose/alcalose?",
+              "Interpretar gasometria, AG e compensação",
+              "Não administrar tampão sem indicação"
+            ],
+            [
+              "Há LRA ou congestão?",
+              "Rever fluidos, perdas e acesso/medicações, discutir especialista",
+              "Seguir avaliação e desescalada conforme fase"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Como construir a prescrição de 24 horas sem perder informação"
+        ],
+        [
+          "p",
+          "Registrar indicação do fluido, tipo e composição, volume total, velocidade, medicamentos/diluentes que contam como entrada, perdas a repor, parâmetros de reavaliação e plano para transição oral. Anotar exames prioritários: Na/K/Cl/ureia/creatinina, glicose e, conforme quadro, Mg/fósforo/Ca ionizado e gasometria. A necessidade de coleta seriada é maior em instáveis e em correção ativa de distúrbios; exame diário pode ser insuficiente em hiperK grave ou hiponatremia recebendo 3%."
+        ],
+        [
+          "3",
+          "Quatro 'nãos' que previnem dano"
+        ],
+        [
+          "p",
+          "Não dar bolus porque só a diurese caiu; não confundir responsividade a fluido com benefício líquido da infusão; não normalizar sódio crônico rapidamente; não administrar potássio concentrado em bolus ou sem preparo seguro. Esses princípios são tão importantes quanto fórmulas de soro, pois reduzem iatrogenias previsíveis."
+        ],
+        [
+          "3",
+          "Pérolas do eletrólito"
+        ],
+        [
+          "p",
+          "HipoK refratária pede checar Mg; hiperK ameaça o coração e cálcio estabiliza sem remover potássio; transfusão maciça pede monitorar Ca ionizado; refeeding pede fósforo, Mg e K; hiponatremia sintomática exige estratégia de emergência com correção limitada; hipernatremia com choque exige restaurar circulação antes de água livre; acidose hiperclorêmica pode ser gerada por muito NaCl 0,9%."
+        ],
+        [
+          "3",
+          "Não esquecer os distúrbios mistos"
+        ],
+        [
+          "p",
+          "Vômitos com choque podem produzir alcalose por perda de HCl e acidose láctica ao mesmo tempo; pH relativamente normal não significa ausência de doença. Na séptico ventilado, hiperventilação e acidose metabólica podem coexistir. A fórmula de Winter ajuda a detectar quando PaCO₂ não representa compensação adequada, mas sua interpretação exige saber se o paciente ventila espontaneamente e quando a gasometria foi colhida."
+        ],
+        [
+          "3",
+          "Desescalada de fluidos na recuperação"
+        ],
+        [
+          "p",
+          "Após controle de hemorragia/infecção e restauração da perfusão, continuar aportes elevados pode manter edema e LRA congestiva. Suspender fluidos sem indicação e reintroduzir alimentação precoce quando segura; diante de sobrecarga e estabilidade hemodinâmica, avaliar diurese e remoção ativa conforme risco e monitorização. A diretriz ESICM 2025 da fase de desescalada enfatiza que retirada de fluido deve ser individualizada, e não iniciada durante choque não corrigido."
+        ],
+        [
+          "3",
+          "O papel da comunicação na passagem de plantão"
+        ],
+        [
+          "p",
+          "Uma passagem segura informa balanço das últimas 24h e cumulativo, saída de ostomia/drenos, medicações diluídas, última dose de diurético/insulina, velocidade e tipo de soro, horários de Na/K, tendência da diurese, função renal e critérios de reavaliação. Dizer apenas 'paciente hidratado, manter soro' esconde a maior parte das informações que determinam complicações. A qualidade da prescrição também é qualidade da comunicação."
+        ],
+        [
+          "p",
+          "Antes de qualquer intervenção com eletrólito concentrado ou hipertônico, verificar identificação, concentração e compatibilidade do produto, acesso, bomba e monitorização conforme protocolo institucional. Um erro de unidade (mEq, mmol, mg ou mL) pode converter tratamento em evento adverso grave."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "12. Casos clínicos integradores — da alteração laboratorial à conduta"
+        ],
+        [
+          "3",
+          "Caso 1 — Paciente pós-colectomia com oligúria, edema e soro contínuo"
+        ],
+        [
+          "p",
+          "Homem de 67 anos, DPO 2 de colectomia, recebe 3 L/dia de cristaloides e mais 1 L em diluentes, tem balanço acumulado +5 L, ganho ponderal de 4 kg, crepitações basais e diurese 0,35 mL/kg/h por oito horas. PA estável, extremidades aquecidas, lactato normal e creatinina de 0,9 para 1,3 mg/dL em 48 horas. <strong>Hipóteses:</strong> LRA segundo KDIGO, congestão venosa/iatrogenia hídrica, além de causas renais e pós-renais a excluir. <strong>Raciocínio:</strong> oligúria não prova necessidade de expansão; sinais de congestão tornam bolus indiscriminado arriscado. <strong>Exames:</strong> checar sonda urinária, balanço, ultrassom conforme necessidade, Na/K/Cl, gasometria e revisão de medicamentos. <strong>Conduta:</strong> suspender aporte desnecessário, reavaliar perfusão e função renal, discutir remoção controlada de excesso de fluido depois de estabilização e causas de LRA. <strong>Por que importa:</strong> o paciente pode estar oligúrico e excessivamente hidratado ao mesmo tempo."
+        ],
+        [
+          "3",
+          "Caso 2 — Obstrução intestinal, sonda nasogástrica e alcalose"
+        ],
+        [
+          "p",
+          "Mulher de 58 anos com vômitos e drenagem nasogástrica de 1,7 L em 24h apresenta fraqueza e tontura; Na 132 mmol/L, K 2,8 mmol/L, Cl 84 mmol/L, HCO₃ 37 mmol/L e pH 7,52. <strong>Hipóteses:</strong> alcalose metabólica hipoclorêmica por perda de HCl, depleção de volume e potássio; pode coexistir doença intestinal cirúrgica. <strong>Raciocínio:</strong> perda gástrica retira H e Cl, ativa SRAA e favorece perda renal de K; reposição de água isolada não corrige mecanismo. <strong>Exames:</strong> creatinina, Mg, ECG, diurese, cloreto urinário quando útil e avaliação da obstrução. <strong>Conduta:</strong> corrigir doença de base e perdas, selecionar reposição com Cl/K compatíveis com rim, acompanhar ECG/eletrólitos, planejar ajuste da sonda. <strong>Por que importa:</strong> a solução e a dose devem corresponder ao tipo de perda, não a um 'soro genérico'."
+        ],
+        [
+          "3",
+          "Caso 3 — Hiponatremia após cirurgia com convulsão"
+        ],
+        [
+          "p",
+          "Paciente de 44 anos, DPO 1 de cirurgia eletiva, recebeu fluidos hipotônicos em grande quantidade enquanto apresentava náuseas e dor. Desenvolve cefaleia intensa, convulsão e Na 116 mmol/L; osmolaridade plasmática baixa e glicemia normal. <strong>Hipótese:</strong> hiponatremia hipotônica aguda sintomática grave com edema cerebral, facilitada por liberação de ADH e aporte de água livre. <strong>Raciocínio:</strong> sintomas neurológicos graves têm prioridade; limitar velocidade total de correção para evitar lesão osmótica quando cronicidade é incerta. <strong>Exames:</strong> Na e osmolalidade seriados, K, função renal, osmolaridade urinária, avaliação clínica/neurológica contínua. <strong>Conduta:</strong> emergência em ambiente monitorizado, salina hipertônica em bolus conforme protocolo e resposta, suspensão de líquidos causais, investigação da causa e acompanhamento de sobrecorreção. <strong>Por que importa:</strong> normalizar Na rapidamente para 140 não é objetivo da fase inicial."
+        ],
+        [
+          "3",
+          "Caso 4 — Risco de desmielinização após correção de hiponatremia crônica"
+        ],
+        [
+          "p",
+          "Homem de 52 anos com alcoolismo, desnutrição e Na 108 mmol/L, sem convulsões, é tratado por hipovolemia e passa de Na 108 para 119 mmol/L em oito horas, com diurese aquosa intensa. <strong>Hipótese:</strong> sobrecorreção rápida de hiponatremia possivelmente crônica, alto risco de síndrome de desmielinização osmótica. <strong>Raciocínio:</strong> reverter hipovolemia pode suprimir ADH e causar aquarese abrupta, aumentando Na mesmo sem continuar salina. <strong>Exames:</strong> Na a intervalos curtos, volume/osmolalidade da urina, K/Mg e estado neurológico. <strong>Conduta:</strong> interromper correção descontrolada, acionar especialista e considerar desmopressina/água livre controladas para rebaixar Na segundo protocolo de alto risco. <strong>Por que importa:</strong> a maior ameaça pode aparecer depois que a primeira intervenção 'deu certo'."
+        ],
+        [
+          "3",
+          "Caso 5 — Hipercalemia no pós-operatório de grande cirurgia abdominal"
+        ],
+        [
+          "p",
+          "Homem de 71 anos com DRC e uso prévio de espironolactona, DPO 3, oligúria, K 6,8 mmol/L e creatinina em elevação. ECG demonstra QRS alargado e onda T proeminente; PA estável, sem sintomas subjetivos. <strong>Hipótese:</strong> hipercalemia grave com ameaça elétrica, associada à redução de excreção renal e medicamentos. <strong>Raciocínio:</strong> ausência de sintomas não exclui arritmia; cálcio é indicado para estabilização da membrana quando há ECG ameaçador, mas não remove K. <strong>Exames:</strong> confirmar amostra em paralelo se adequado, ECG contínuo, glicemia, K/acidose seriados, revisão de drogas/diurese. <strong>Conduta:</strong> protocolo de emergência com estabilização, deslocamento intracelular, plano de remoção de K e discussão nefrológica sobre diálise se refratário; vigiar hipoglicemia após insulina. <strong>Por que importa:</strong> corrigir ECG com cálcio é apenas uma etapa, não resolução definitiva."
+        ],
+        [
+          "3",
+          "Caso 6 — Hipocalemia refratária e magnésio"
+        ],
+        [
+          "p",
+          "Mulher de 60 anos com ileostomia de alto débito e diurético, relata fraqueza persistente. K 2,7 mmol/L, Mg 0,9 mg/dL, ECG com ondas U e QT/QU prolongado. Recebeu potássio em ciclos anteriores sem normalização sustentada. <strong>Hipóteses:</strong> depleção conjunta de Mg/K e perdas gastrointestinais, com risco arrítmico. <strong>Raciocínio:</strong> deficiência de Mg promove perda renal de K; repor só potássio pode ser ineficaz. <strong>Exames:</strong> função renal, K/Mg/Ca, ECG, perdas de estoma, medicamentos e estado volêmico. <strong>Conduta:</strong> reposição dirigida de K e Mg em condições seguras, monitorização cardíaca de acordo com gravidade, controle de débito e revisão de diurético. <strong>Por que importa:</strong> o eletrólito que impede resposta ao tratamento pode ser outro não medido inicialmente."
+        ],
+        [
+          "3",
+          "Caso 7 — Hipernatremia com choque por baixa ingestão e perdas"
+        ],
+        [
+          "p",
+          "Idoso de 79 anos após cirurgia ortopédica, com delirium, sede não expressa, febre, PA 85/55 mmHg e pele fria. Na 160 mmol/L, urina concentrada e creatinina aumentada; pouco registro de água oral por quatro dias. <strong>Hipóteses:</strong> déficit de água livre com hipernatremia e hipovolemia/choque, LRA pré-renal possível. <strong>Raciocínio:</strong> apesar da hiperNa, a prioridade imediata é circulação; glicose 5% isolada não reverte choque. <strong>Exames:</strong> osmolaridade, Na seriado, glicose, função renal, balanço, causas de febre, avaliação de perfusão. <strong>Conduta:</strong> ressuscitação inicial isotônica conforme resposta, seguida de correção monitorizada do déficit de água e das perdas, investigação de infecção e prevenção de recorrência. <strong>Por que importa:</strong> a ordem de tratamento depende de perfusão e não somente da concentração de Na."
+        ],
+        [
+          "3",
+          "Caso 8 — Glicose elevada e sódio aparentemente baixo"
+        ],
+        [
+          "p",
+          "Homem de 47 anos pós-pancreatectomia apresenta glicemia 620 mg/dL, Na medido 127 mmol/L, intensa poliúria e letargia. <strong>Hipóteses:</strong> hiperglicemia importante com hiponatremia translocacional e déficit de água por diurese osmótica, possível crise hiperglicêmica. <strong>Raciocínio:</strong> calcular Na corrigido mostra tonicidade real distinta da sugerida pelo Na medido; solução hipertônica 3% não é tratamento reflexo. <strong>Exames:</strong> osmolaridade, cetonas, gasometria, Na/K, função renal, estado mental e perfusão. <strong>Conduta:</strong> aplicar protocolo de emergência hiperglicêmica segundo avaliação e monitorar K, água e glicemia; não confundir translocação com SIADH. <strong>Por que importa:</strong> uma concentração isolada de sódio pode apontar na direção terapêutica errada."
+        ],
+        [
+          "3",
+          "Caso 9 — Acidose mista depois de bolus de NaCl 0,9%"
+        ],
+        [
+          "p",
+          "Mulher de 63 anos com perfuração abdominal e sepse recebeu vários litros de NaCl 0,9%. Após controle de fonte, Cl 116 mmol/L, HCO₃ 15 mmol/L, albumina 2 g/dL e lactato ainda 2,5 mmol/L. <strong>Hipóteses:</strong> acidose metabólica hiperclorêmica com possível componente de ânions não medidos, disfunção renal ou lactato residual. <strong>Raciocínio:</strong> calcular AG corrigido por albumina evita mascarar componente adicional; o aumento de Cl pode reduzir bicarbonato. <strong>Exames:</strong> gasometria, AG corrigido, lactato seriado, rim, eletrólitos e reavaliação perfusional. <strong>Conduta:</strong> rever volume e escolha do cristalóide, tratar sepse e monitorar, sem assumir que bicarbonato IV é a solução universal. <strong>Por que importa:</strong> a ressuscitação pode participar do distúrbio ácido-base observado."
+        ],
+        [
+          "3",
+          "Caso 10 — Síndrome da realimentação em paciente cirúrgico desnutrido"
+        ],
+        [
+          "p",
+          "Homem de 65 anos com neoplasia esofágica, perda de 18% do peso e ingestão mínima por duas semanas. Após iniciar suporte calórico pleno, desenvolve dispneia, fraqueza, edema, fósforo muito baixo, K e Mg reduzidos. <strong>Hipótese:</strong> síndrome da realimentação. <strong>Raciocínio:</strong> insulina induz entrada intracelular de eletrólitos e aumenta demanda metabólica/retém água em pessoa com reservas esgotadas. <strong>Exames:</strong> fósforo, magnésio, K, glicemia, rim, ECG e balanço. <strong>Conduta:</strong> revisão urgente de suporte nutricional, tiamina e reposição/monitorização de eletrólitos por equipe de nutrição e terapia intensiva conforme gravidade; avaliar necessidade de desacelerar aporte. <strong>Por que importa:</strong> ofertar calorias sem controlar eletrólitos pode precipitar falência respiratória/arrítmica."
+        ],
+        [
+          "3",
+          "Caso 11 — Distúrbio misto oculto em gasometria pós-operatória"
+        ],
+        [
+          "p",
+          "Paciente de 36 anos com peritonite e opioides apresenta pH 7,24, HCO₃ 12 mmol/L e PaCO₂ 40 mmHg. Um residente afirma que é apenas acidose metabólica com compensação normal. <strong>Hipóteses:</strong> acidose metabólica associada a acidose respiratória. <strong>Raciocínio:</strong> Winter para HCO₃ 12 estima PaCO₂ perto de 26 ±2 mmHg; PaCO₂ 40 indica ventilação insuficiente para a compensação. <strong>Exames:</strong> avaliação de via aérea/ventilação, saturação, lactato, AG, drogas e fonte abdominal. <strong>Conduta:</strong> corrigir hipoventilação e tratar causa metabólica, evitando administrar apenas bicarbonato. <strong>Por que importa:</strong> PaCO₂ 'normal' pode ser patológica em quem deveria hiperventilar."
+        ],
+        [
+          "3",
+          "Caso 12 — Ressecção intestinal, alto débito de estoma e LRA recorrente"
+        ],
+        [
+          "p",
+          "Mulher de 48 anos, com ileostomia após colectomia, recebe alta com orientação genérica de beber água à vontade. Retorna após cinco dias com 2,7 L/d de saída, perda de peso, sede, tontura, creatinina elevada, Na 130 e Mg baixo. <strong>Hipóteses:</strong> depleção hidrossalina e hipomagnesemia por estoma de alto débito com LRA. <strong>Raciocínio:</strong> perdas de sódio e água não são repostas adequadamente apenas com água pura; pode haver aumento do débito. <strong>Exames:</strong> avaliar estoma, Na/K/Mg, rim, balanço e causas tratáveis de aumento de débito. <strong>Conduta:</strong> reposição individualizada com sódio, controle de débito, orientação dietética e plano formal de alta/seguimento especializado. <strong>Por que importa:</strong> um plano hídrico inadequado pode causar reinternação mesmo após cirurgia tecnicamente bem-sucedida."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "13. Questões autorais comentadas — 24 problemas de prova"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q1.</strong> No paciente adulto estável em jejum e sem perdas anormais, a NICE CG174 sugere manutenção inicial aproximada de água de: A) 5–10 mL/kg/dia; B) 25–30 mL/kg/dia; C) 70–100 mL/kg/dia; D) exatamente 4 L para todos. <strong>Gabarito B.</strong> A: insuficiente como referência geral; B: faixa recomendada de manutenção isolada, sempre ajustável; C: habitualmente excessiva; D: ignora peso/condição. Revisão: manutenção não é ressuscitação.",
+            "<strong>Q2.</strong> Oligúria e edema pulmonar após +6 L de balanço cumulativo indicam: A) bolus de 2 L obrigatório; B) desconsiderar rim porque PA está normal; C) avaliar congestão, função renal e causa antes de novas infusões; D) furosemida previne toda LRA independentemente da causa. <strong>Gabarito C.</strong> A: pode piorar congestão; B: oligúria/LRA exigem investigação; C: integra risco e perfusão; D: diurético não cura injúria renal. Revisão: fluido só se houver benefício previsto.",
+            "<strong>Q3.</strong> Quanto à composição de NaCl 0,9%, a alternativa correta é: A) cerca de 154 mmol/L de Na e Cl, podendo causar acidose hiperclorêmica em grandes volumes; B) livre de cloreto; C) isotônico mas sem sódio; D) igual à glicose 5% depois de metabolizada. <strong>Gabarito A.</strong> A: identifica composição e risco; B/C: falsas; D: água livre não equivale a salina isotônica. Revisão: nome 'fisiológico' não significa composição plasmática exata.",
+            "<strong>Q4.</strong> A ESICM 2024 sugere condicionalmente, para muitos pacientes críticos: A) albumina para todos; B) hidroxietilamido como primeira escolha; C) cristalóide balanceado em vez de salina isotônica em contextos gerais, com exceções/nuances como TCE; D) água livre como bolus de choque. <strong>Gabarito C.</strong> A: não é estratégia universal; B: não recomendado em ressuscitação geral; C: corresponde à diretriz com certeza variável; D: não expande circulação de modo adequado. Revisão: contexto neurológico altera escolha.",
+            "<strong>Q5.</strong> Qual par representa corretamente os 5 Rs? A) ressuscitação, manutenção, reposição, redistribuição, reavaliação; B) rim, respiração, retalho, repouso, ressuscitação; C) sedação, alimentação, alta, analgesia, antibiótico; D) apenas quantidade de bolsas por dia. <strong>Gabarito A.</strong> A: resume necessidades distintas; B/C: listas inventadas; D: não é modelo de prescrição. Revisão: 5 Rs organizam indicação antes de selecionar solução.",
+            "<strong>Q6.</strong> Após vômitos e aspiração gástrica abundante, qual padrão é clássico? A) alcalose metabólica hipoclorêmica e hipocalemia; B) acidose respiratória isolada obrigatória; C) hiperK obrigatória e hiperCl; D) nenhum distúrbio de eletrólitos. <strong>Gabarito A.</strong> A: perda de HCl/volume e K; B/C: não seguem mecanismo; D: ignora perdas importantes. Revisão: perdas gástricas diferem de diarreia.",
+            "<strong>Q7.</strong> Uma pessoa com Na 117 mmol/L e convulsões deve receber: A) restrição hídrica isolada e reavaliação em sete dias; B) normalização para 140 em uma hora; C) abordagem de emergência monitorizada com salina hipertônica conforme protocolo, visando incremento inicial limitado; D) obrigatoriamente D5W como único fluido. <strong>Gabarito C.</strong> A: inadequada a emergência; B: alto risco de sobrecorreção; C: protege cérebro com vigilância; D: pode reduzir ainda mais tonicidade. Revisão: sintomas graves determinam prioridade.",
+            "<strong>Q8.</strong> Qual complicação está associada à correção excessivamente rápida de hiponatremia crônica? A) síndrome de desmielinização osmótica; B) osteomielite; C) trombose venosa superficial exclusiva; D) apendicite aguda. <strong>Gabarito A.</strong> A: risco neurológico grave; B/C/D: não são consequências específicas. Revisão: alto risco em desnutrição, alcoolismo, hepatopatia e hipoK.",
+            "<strong>Q9.</strong> Paciente com hiponatremia e glicemia 650 mg/dL exige primeiro: A) diagnóstico de SIADH sem outros exames; B) considerar Na corrigido e tonicidade antes de atribuir hiponatremia hipotônica; C) salina 3% universal; D) suspender avaliação de potássio. <strong>Gabarito B.</strong> A: ignora glicose; B: diferencia translocação de hipotonicidade; C: pode ser perigosa; D: K é crítico no tratamento metabólico. Revisão: Na baixo com glicose alta não equivale sempre a edema cerebral hipotônico.",
+            "<strong>Q10.</strong> Idoso hipernatrêmico com PA baixa e sinais de choque necessita: A) água livre isolada antes de avaliar perfusão; B) tratamento de perfusão com solução isotônica apropriada, depois correção controlada do déficit de água; C) nunca receber cristalóides; D) só diurético de alça. <strong>Gabarito B.</strong> A: não trata choque adequadamente; B: respeita prioridades; C/D: contrariam estado circulatório. Revisão: hipernatremia não elimina risco de hipovolemia.",
+            "<strong>Q11.</strong> Em K 6,9 mmol/L com QRS alargado, qual medida estabiliza coração sem remover K corporal? A) gluconato/cloreto de cálcio IV conforme protocolo; B) água livre oral; C) apenas dieta pobre em K; D) nenhum tratamento pois ECG pode melhorar espontaneamente. <strong>Gabarito A.</strong> A: estabiliza membrana; B/C: não agem em ameaça imediata; D: risco de arritmia fatal. Revisão: cálcio não reduz K plasmático, precisa associar outras etapas.",
+            "<strong>Q12.</strong> Após insulina com glicose para tratar hiperK, o risco a monitorar por horas é: A) hipoglicemia; B) anemia ferropriva aguda; C) hiperNa inevitável; D) derrame pleural infeccioso. <strong>Gabarito A.</strong> A: efeito conhecido sobretudo em disfunção renal; B/C/D: não são complicações típicas dessa intervenção. Revisão: controlar glicemia seriada após redistribuição de K.",
+            "<strong>Q13.</strong> Hipocalemia persiste após repetidas reposições; Mg está baixo. Qual a explicação mais provável? A) Mg baixo promove perda renal de K e dificulta correção; B) Mg baixo impede qualquer arritmia; C) não existe relação Mg-K; D) insulina eleva K sempre. <strong>Gabarito A.</strong> A: mecanismo importante; B/C: falsas; D: insulina desloca K para células. Revisão: corrigir distúrbio associado é essencial.",
+            "<strong>Q14.</strong> Depois de transfusão maciça, qual exame melhor avalia cálcio biologicamente ativo? A) cálcio ionizado; B) só cálcio total sem albumina; C) fosfatase alcalina como substituto direto; D) LDL-colesterol. <strong>Gabarito A.</strong> A: mede fração ativa; B: hipoalbuminemia confunde total; C/D: não avaliam cálcio ativo. Revisão: citrato da transfusão pode baixar ionizado.",
+            "<strong>Q15.</strong> Doente desnutrido recebe dieta plena rapidamente e desenvolve fosfato muito baixo, K/Mg baixos e edema. Diagnóstico provável: A) síndrome da realimentação; B) edema pulmonar cardiogênico confirmado sem outros dados; C) hipotireoidismo primário como única causa; D) hipercalcemia isolada. <strong>Gabarito A.</strong> A: padrão típico relacionado a insulina/metabolismo; B: não explica eletrólitos; C/D: insuficientes. Revisão: monitorar fósforo/Mg/K e tiamina ao realimentar.",
+            "<strong>Q16.</strong> Na 140, Cl 109, bicarbonato 15 e albumina 2 g/dL, qual interpretação do AG é mais apropriada? A) AG bruto 16 e corrigido próximo de 21, sugerindo componente de ânions não medidos; B) AG 140 e corrigido zero; C) AG não pode ser calculado; D) albumina baixa aumenta AG medido e dispensa correção. <strong>Gabarito A.</strong> A: AG=Na-(Cl+HCO3), correção aproximada por albumina; B/C: cálculo falso; D: albumina baixa reduz AG aparente. Revisão: interpretar gasometria com proteína sérica.",
+            "<strong>Q17.</strong> Na acidose metabólica com bicarbonato 12, PaCO₂ esperada pela fórmula de Winter é aproximadamente: A) 12 mmHg; B) 26 mmHg (±2); C) 50 mmHg; D) 80 mmHg. <strong>Gabarito B.</strong> A: subestima compensação; B: 1,5×12+8=26; C/D: sugerem hipoventilação adicional. Revisão: PaCO₂ 'normal' pode ser inadequada em acidose grave.",
+            "<strong>Q18.</strong> Critério KDIGO de LRA em adulto inclui: A) aumento de creatinina ≥0,3 mg/dL em 48 horas; B) somente diurese &lt;2 L/d por qualquer tempo; C) necessidade obrigatória de diálise para qualquer estágio; D) só creatinina >10 mg/dL. <strong>Gabarito A.</strong> A: critério aceito; B: ignora peso e tempo; C/D: não definem todos os casos. Revisão: também usar 1,5× basal em 7 dias ou diurese &lt;0,5mL/kg/h por ≥6h.",
+            "<strong>Q19.</strong> Qual quadro sugere LRA pós-renal em pós-operatório pélvico? A) sonda urinária obstruída ou retenção e oligúria; B) fósforo baixo isolado; C) hipercalcemia antiga sem sintomas; D) vitamina D elevada como dado isolado. <strong>Gabarito A.</strong> A: obstrução deve ser excluída rapidamente; B/C/D: não demonstram obstrução. Revisão: investigar mecanismo antes de atribuir oligúria a hipovolemia.",
+            "<strong>Q20.</strong> Qual indicação clássica pode levar a terapia renal substitutiva urgente na LRA? A) creatinina discretamente acima do basal sem sintomas; B) hipercalemia grave refratária ou edema pulmonar refratário com ameaça clínica; C) toda oligúria por ADH em pós-operatório; D) albumina sérica baixa isolada. <strong>Gabarito B.</strong> A: decisão não é apenas número; B: emergência renal reconhecida; C/D: não indicam diálise por si. Revisão: usar contexto e refratariedade.",
+            "<strong>Q21.</strong> Paciente com ileostomia de alto débito e LRA após alta recebe só orientação de água pura. Qual abordagem é melhor? A) medir débito, avaliar Na/Mg/rim e considerar solução de reidratação com Na conforme avaliação; B) restringir toda ingestão hídrica sem exame; C) manter apenas água pura em volume ilimitado; D) prescrever diurético como rotina. <strong>Gabarito A.</strong> A: repõe perdas específicas; B/C/D: podem agravar depleção. Revisão: Na de perdas do estoma importa.",
+            "<strong>Q22.</strong> Qual é a prática mais segura na prescrição de K IV? A) bolus de KCl concentrado pelo acesso periférico; B) diluir/manipular manualmente fora de protocolo; C) usar preparação padronizada, monitorar e evitar bolus IV de concentrado; D) prescrever K a todo anúrico sem dosagem. <strong>Gabarito C.</strong> A/B/D: potencialmente fatais; C: respeita segurança de medicamento de alto risco. Revisão: KCl concentrado exige sistema seguro de preparo/administração.",
+            "<strong>Q23.</strong> Após grande expansão com NaCl 0,9%, o paciente tem hipercloremia e bicarbonato baixo com AG normal. O diagnóstico provável é: A) acidose metabólica hiperclorêmica; B) alcalose metabólica hipoclorêmica; C) estado metabólico necessariamente normal; D) hipercalcemia grave. <strong>Gabarito A.</strong> A: consequência conhecida de excesso de cloreto; B é típico de perda gástrica; C/D não explicam dados. Revisão: o fluido faz parte da etiologia da gasometria.",
+            "<strong>Q24.</strong> Qual afirmação sobre fluidos em trauma hemorrágico é correta? A) cristaloide repetido substitui controle de fonte; B) grande volume de fluido sempre resolve coagulopatia; C) abordagem deve priorizar hemostasia e ressuscitação apropriada, sem cristalóide descontrolado; D) transfusão jamais é necessária. <strong>Gabarito C.</strong> A/B/D: ignoram hemorragia e coagulopatia; C: integra causa/ressuscitação. Revisão: tema 022 traz protocolo hemostático aprofundado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "14. Fontes, matriz de suficiência e estado editorial"
+        ],
+        [
+          "3",
+          "Fontes verificáveis de diretrizes e consensos"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.nice.org.uk/guidance/cg174/chapter/recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE. Intravenous fluid therapy in adults in hospital (CG174): 5 Rs, avaliação, ressuscitação e manutenção. Consultado em 15/10/2026.</a>",
+            "<a href=\"https://pubmed.ncbi.nlm.nih.gov/38771364/\" target=\"_blank\" rel=\"noopener noreferrer\">Arabi YM et al. ESICM Clinical Practice Guideline: Fluid therapy in adult critically ill patients, Part 1 — choice of resuscitation fluids. Intensive Care Med. 2024;50:813–831. DOI:10.1007/s00134-024-07369-9.</a>",
+            "<a href=\"https://pubmed.ncbi.nlm.nih.gov/40163133/\" target=\"_blank\" rel=\"noopener noreferrer\">Mekontso Dessap A et al. ESICM Clinical Practice Guideline: Fluid therapy in adult critically ill patients, Part 2 — volume of resuscitation fluids. Intensive Care Med. 2025. DOI:10.1007/s00134-025-07840-1.</a>",
+            "<a href=\"https://www.esicm.org/resources/guidelines-consensus-statements/\" target=\"_blank\" rel=\"noopener noreferrer\">ESICM. Fluid therapy in adult critically ill patients: Part 3 — fluid removal in de-escalation phase. 2025, DOI:10.1007/s00134-025-08058-x; repositório institucional das três partes.</a>",
+            "<a href=\"https://academic.oup.com/ejendo/article/170/3/G1/6668028\" target=\"_blank\" rel=\"noopener noreferrer\">Spasovski G et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. European Journal of Endocrinology. 2014;170:G1–G47. Diretriz europeia para salina hipertônica e prevenção de sobrecorreção.</a>",
+            "<a href=\"https://staging.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0\" target=\"_blank\" rel=\"noopener noreferrer\">UK Kidney Association. Clinical Practice Guideline: Management of Hyperkalaemia in Adults. Revisão publicada em dezembro de 2023, com orientação sobre cálcio, insulina-glicose e vigilância de hipoglicemia.</a>",
+            "<a href=\"https://www.nice.org.uk/guidance/cg32/chapter/Recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE. Nutrition support for adults (CG32): identificação de risco de realimentação, tiamina, fósforo, potássio e magnésio.</a>",
+            "<a href=\"https://kdigo.org/guidelines/acute-kidney-injury/\" target=\"_blank\" rel=\"noopener noreferrer\">KDIGO. Acute Kidney Injury: recomendações de definição, estadiamento, investigação e prevenção; verificar versão institucional vigente ao usar decisões.</a>"
+          ]
+        ],
+        [
+          "3",
+          "Matriz: conceito → decisão → onde o aluno pratica"
+        ],
+        [
+          "t",
+          [
+            "Competência",
+            "Capítulo",
+            "Caso / questão"
+          ],
+          [
+            [
+              "5 Rs e plano de 24h",
+              "Visão, 4 e 11",
+              "Q1, Q5 e caso 1"
+            ],
+            [
+              "Cristaloides/hipercloremia",
+              "3 e 8",
+              "Q3–Q4, Q23, caso 9"
+            ],
+            [
+              "Reavaliação e responsividade",
+              "2 e 11",
+              "Q2, caso 1"
+            ],
+            [
+              "Vômitos/sonda/ileostomia",
+              "4 e 10",
+              "Casos 2 e 12, Q6 e Q21"
+            ],
+            [
+              "Hiponatremia aguda e crônica",
+              "5",
+              "Casos 3 e 4, Q7–Q9"
+            ],
+            [
+              "Hipernatremia e hiperglicemia",
+              "5 e 10",
+              "Casos 7 e 8, Q10"
+            ],
+            [
+              "Hipercalemia e segurança do K",
+              "6",
+              "Caso 5, Q11–Q12 e Q22"
+            ],
+            [
+              "Hipocalemia e magnésio",
+              "6 e 7",
+              "Caso 6, Q13"
+            ],
+            [
+              "Cálcio ionizado/transfusão",
+              "7",
+              "Q14"
+            ],
+            [
+              "Fósforo e realimentação",
+              "7",
+              "Caso 10, Q15"
+            ],
+            [
+              "Ânion gap, Winter e distúrbios mistos",
+              "8",
+              "Casos 9 e 11, Q16–Q17"
+            ],
+            [
+              "Critérios KDIGO e causas de LRA",
+              "9",
+              "Caso 1, Q18–Q20"
+            ],
+            [
+              "Trauma, TCE e insuficiência renal",
+              "3, 9 e 10",
+              "Q4, Q24"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Fronteiras com o currículo LURIA"
+        ],
+        [
+          "p",
+          "A apostila 007 (Cuidados Perioperatórios) cobre o cuidado de segurança amplo, prevenção de infecção/TEV, ERAS e recuperação. A 012 (Resposta Metabólica ao Trauma) aprofunda os mecanismos inflamatórios, endocrinológicos e catabólicos. A 017 cobre indicação, prescrição, interpretação e correção de fluidos/eletrólitos no paciente cirúrgico. O tema 022 abordará hemostasia e transfusão no choque hemorrágico. A diferenciação evita repetir os capítulos já existentes enquanto mantém os mecanismos indispensáveis para entender cada emergência."
+        ],
+        [
+          "3",
+          "Comparação documental realizada na etapa zero"
+        ],
+        [
+          "p",
+          "Foram efetivamente lidos, no Google Drive do usuário, os PDFs '04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf' (4.793 caracteres extraídos), '08 - GASOMETRIA ARTERIAL - PARTE 2.pdf' (8.923), '02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf' (19.972) e '01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf' (26.658). Não foi encontrado documento único com cobertura equivalente à aula 017, e autoria institucional material de referência não foi confirmada. Os documentos serviram apenas para verificar lacunas, sem copiar texto, tabelas, imagens ou identidade gráfica. Registro detalhado: `apostilas/lotes/TEMA_017_REPOSICAO_VOLEMICA_DISTURBIOS_HIDROELETROLITICOS_AUDITORIA_2026-10-15.md`."
+        ],
+        [
+          "3",
+          "Cuidados com recomendações de outras regiões"
+        ],
+        [
+          "p",
+          "NICE CG174, ESICM 2024–2025, UKKA 2023 e diretriz europeia de hiponatremia 2014 são referências internacionais de contexto e não equivalem automaticamente a uma portaria brasileira ou ao protocolo específico de cada hospital. Doses e prioridades de emergência precisam ser adaptadas por anestesia, cirurgia, nefrologia/UTI e farmácia clínica, especialmente em KCl IV concentrado, salina 3%, cálcio IV e administração de insulina-glicose. A versão da diretriz, a qualidade da evidência e a população-alvo devem ser informadas antes de assumir universalidade."
+        ],
+        [
+          "3",
+          "Pendências que impedem certificação/publicação"
+        ],
+        [
+          "p",
+          "Este arquivo é <strong>rascunho editorial</strong>, não prescrição assistencial individual. Revisar por cirurgião/anestesiologista e nefrologista independentes, conferir doses e concentração das apresentações disponíveis no Brasil, verificar o nível de evidência para fluido balanceado versus salina conforme subgrupo, testar os casos e questões com alunos, medir redundância semântica, conciliar com temas 007/012/022, validar interface responsiva e acessibilidade PWA e direitos autorais. Não criar `index.html`, não incluir imagens externas sem aprovação central no Admin, não publicar catálogo, não fazer merge ou deploy."
+        ]
+      ]
+    ]
+  ]
+}

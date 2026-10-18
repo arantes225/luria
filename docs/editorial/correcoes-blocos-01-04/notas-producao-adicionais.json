@@ -1,0 +1,287 @@
+{
+  "purpose": "Registro de produção separado da aula, sem certificação clínica.",
+  "entries": [
+    {
+      "slug": "sindromes-coronarianas-agudas",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial (14/10/2026, ciclo de aprofundamento):</strong> o rascunho já desenvolve ECG e equivalentes de oclusão, troponina e definição de IAM, estratificação invasiva do NSTEMI, ICP e farmacoinvasiva, farmacologia de referência, complicações e seguimento, com casos e questões. A metragem de prosa aparente pode ultrapassar 60 mil caracteres, mas não substitui auditoria de utilidade ou autossuficiência. Continuam pendentes revisão independente de doses/contraindicações e diretrizes brasileiras por cardiologista, correções de redundância editorial, candidatos de imagens aprovados no Admin, desempenho de renderização desktop/PWA e correspondência final com questões e fontes. Este conteúdo não é protocolo clínico prescritivo pronto e não deve ser publicado antes de certificação."
+      ]
+    },
+    {
+      "slug": "avaliacao-pre-operatoria-risco-cirurgico",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial atualizado (14/10/2026):</strong> o livro de avaliação pré-operatória foi profundamente ampliado nos eixos de risco cardiovascular (SBC/AHA 2024), RCRI/AUB-HAS2/DASI, exames dirigidos, viabilidade e intervalos pós-angioplastia, anticoagulantes e anestesia neuraxial (CHEST/ASRA), diabetes/iSGLT2/GLP-1, vias aéreas difíceis e jejum (ASA), populações especiais, casos e questões. O antigo bloco de revisão redundante foi desmembrado, preservando casos/questões específicos e fontes, de forma a manter progressão por tema. A metragem textual deve ser auditada quanto à utilidade e coesão. Permanecem pendentes revisão independente médica/anestésica, aprovação de imagens e licenças, integração do renderer e testes desktop/PWA. Rascunho não publicado, não prescrever diretamente sem protocolos e avaliações individuais."
+      ]
+    },
+    {
+      "slug": "assistencia-recem-nascido-sala-parto",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial:</strong> rascunho original do tema curricular 003, primeira etapa de construção. Ainda não atende à meta de 60 mil caracteres didáticos úteis nem recebeu revisão independente, matriz de questões completa, curadoria de imagens ou validação de desktop/PWA. Não existe index.html nem vínculo novo ao catálogo; não publicado. Revisar em capítulo futuro os critérios de triagem neonatal por idade, detalhes dos exames e situações de prematuridade/infecção antes da certificação."
+      ]
+    },
+    {
+      "slug": "principios-diretrizes-sus",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial:</strong> conteúdo elaborado como rascunho original do tema 005 do planejamento de 260 apostilas. Não há index.html e a obra não está no catálogo. As informações normativas foram conferidas em fontes oficiais acessadas em 14/10/2026. Ainda são necessários leitura jurídica final de dispositivos consolidados, revisão didática independente, auditoria de texto útil sem duplicação, verificação das questões por especialistas, avaliação de acessibilidade/layout e eventual curadoria de diagramas com direitos de uso e aprovação centralizada no Admin. Não declarar apostila certificada."
+      ]
+    },
+    {
+      "slug": "insuficiencia-cardiaca",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial após aprofundamento de 14/10/2026:</strong> a apostila agora integra fisiopatologia e pressões de enchimento, etiologia brasileira (Chagas), confirmação de HFpEF e peptídeos natriuréticos, farmacologia com doses iniciais/alvo conferidas em fontes oficiais, classe funcional e divergência ESC/SBC 2026, descompensação, choque, resposta diurética, dispositivos, IC avançada e cuidados longitudinais. Ainda faltam revisão médica independente de TODAS as doses/indicações, inspeção de referências e links, auditoria de redundância semântica, curadoria e aprovação de imagens clínicas no Admin, e testes reais de renderização desktop/PWA. Material de estudo em rascunho sem publicação; não prescrever sem avaliação médica e protocolos locais. O bloco separado e repetitivo de aprofundamento SBC 2026 foi consolidado no diagnóstico, terapia, seguimento e abordagem aguda, com casos e questões reformulados preservados nas seções próprias."
+      ]
+    },
+    {
+      "slug": "cuidados-perioperatorios-prevencao-complicacoes",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial em 14/10/2026:</strong> os capítulos foram aprofundados com Anvisa/Ebserh (profilaxia), NICE/Caprini/ASRA (TEV), ERAS 2025 e consensos de NVPO (analgesia, recuperação intestinal), AABB 2023/KDIGO (hemorragia e LRA), IDSA 2024 (infecção abdominal). O módulo separado de ISC foi consolidado no capítulo original; foram mantidos seus casos, questões e sinais clínicos úteis. Ainda faltam auditoria de 60 mil caracteres <em>úteis</em> e de redundância semântica, verificação de doses por CCIH/bulário e anestesia, testes reais de layout/PWA, curadoria de imagens com licenças e aprovação no Admin, revisão científica independente e certificação editorial. Não publicar como protocolo de prescrição ou página do catálogo antes dessas etapas."
+      ]
+    },
+    {
+      "slug": "diagnostico-datacao-gestacao",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial:</strong> primeiro rascunho original do tema 009, não publicado, sem `index.html`, sem alteração de catálogo. Não recebeu revisão de obstetra, validação de critérios ultrassonográficos atualizados em diretrizes brasileiras, teste de autossuficiência por banca representativa, auditoria de semântica e acessibilidade ou curadoria de imagens na fila de aprovação Admin. A meta de 60.000 caracteres didáticos úteis e a revisão humana continuam exigidas; não declarar certificação."
+      ]
+    },
+    {
+      "slug": "lei-8080-1990",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial em 15/10/2026:</strong> primeiro rascunho autoral, ainda insuficiente para exigência de autossuficiência e extensão desejada de 60 mil caracteres úteis. Antes de certificar: leitura sistemática de artigos não desenvolvidos (financiamento, recursos humanos, planejamento e disposições finais), atualização das alterações com vigência futura, revisão jurídica especializada, conferência das respostas de residência, inspeção PWA e curadoria de imagens/diagramas se houver licença. Não foi criado index.html, nem houve atualização de catálogo, merge ou deploy."
+      ]
+    },
+    {
+      "slug": "hipertensao-arterial-sistemica",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial após aprofundamento:</strong> a apostila agora aborda classificação brasileira de 2025, técnica, MAPA/MRPA, risco, tratamentos com faixas de dose, emergência hipertensiva, hipertensão secundária e cenários especiais. Ainda exige revisão médica independente de toda farmacologia e dos algoritmos, conferência de bibliografia e requisitos regulatórios, seleção de imagens clínicas com licença e aprovação centralizada no Admin, checagem de coesão e redundâncias e validação visual desktop/PWA. A metragem de texto aparente não substitui o gate de autossuficiência; não publicar até aprovação de todas as etapas."
+      ]
+    },
+    {
+      "slug": "resposta-metabolica-ao-trauma",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial:</strong> rascunho autoral da aula 012; não revisado clinicamente por especialista independente, nem testado quanto à capacidade real de resolver conjunto representativo de questões de residência. Verificar particularidades brasileiras de suporte metabólico e nutrição; garantir ausência de redundância semântica com apostila 007 e temas 017/022, curadoria eventual de imagens pelo Admin e responsividade desktop/PWA. Sem HTML/index, nova publicação, merge ou deploy."
+      ]
+    },
+    {
+      "slug": "prematuridade-baixo-peso-nascer",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Status:</strong> apostila 013 criada em JSON como rascunho editorial. O formato e contagem de caracteres não comprovam suficiência clínica. Exigir revisão independente por neonatologista (incluindo critérios e data de rastreio de ROP, protocolo institucional de CPAP/surfactante, detalhes de vacinação, nutricional e limiares de alta); validação científica das questões; teste de autossuficiência; inspeção visual desktop/PWA; avaliação de quadros; imagens apenas com proveniência/licenças e aprovação no Admin. Não criar index.html, catálogo, merge ou deploy."
+      ]
+    },
+    {
+      "slug": "arritmias-fibrilacao-atrial",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Estado editorial em 14/10/2026:</strong> a apostila integra eletrofisiologia, ECG e diferenciais de taquiarritmia, ACLS AHA 2025, prevenção de AVC e doses de ACOD segundo SBC/SOBRAC 2025, controle de frequência/ritmo, cardioversão com comparação SBC/ESC/ACC, ablação, populações especiais e, nesta etapa, bradicardias, doença do nó sinusal, BAV, síncope e marca-passo com SBC 2023/ACLS 2025. O capítulo de bradicardia acrescenta quatro vinhetas clínicas ao longo do texto e a seção formal agora reúne 24 questões comentadas. Continuam obrigatórios revisão independente de doses/contraindicações e todas as afirmações médicas, checagem de imagens/licenças no Admin, auditoria de redundância e renderização real no desktop e PWA. Material não certificado nem liberado no catálogo."
+      ]
+    },
+    {
+      "slug": "ictericia-neonatal",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Status editorial:</strong> versão inicial autoral de ensino, em branch isolada, sem certificação médica integral. As curvas AAP não foram reproduzidas nem convertidas em números fixos; consultar diretamente algoritmos/figuras oficiais para decisões e adequar a protocolos locais. Não usar o texto como prescrição automática. Faltam auditoria aprofundada para densidade mínima de 60.000 caracteres úteis, seleção/validação de figuras licenciadas, revisão médica especializada, verificação de referências brasileiras complementares e testes no renderer desktop/PWA."
+      ]
+    },
+    {
+      "slug": "vacinacao-suplementacao-gestacao",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Status editorial:</strong> rascunho autoral do tema 019, separado dos detalhes gerais do pré-natal (tema 004) e de exames (tema 014). A priorização de particularidades do calendário 2026 impede cópia de esquemas antigos do material comparativo. Não considerar certificado antes de auditoria de conteúdo didático útil, validação de cada esquema/dose/questão, revisão médica e de política sanitária, imagens/diagramas aprovados e teste PWA/desktop. Sem criação de HTML, publicação ou merge."
+      ]
+    },
+    {
+      "slug": "atencao-primaria-saude-atributos",
+      "section": "referencias",
+      "block": [
+        "p",
+        "<strong>Status editorial:</strong> rascunho de ensino autoral e isolado, sujeito à revisão de legislação consolidada e especificidades municipais, validação de autossuficiência, QA de questões e referências, auditoria semântica, revisão de imagens/diagramas e teste de renderer desktop/PWA. Não criar index.html nem incluir catálogo até certificação, conforme normas da LURIA."
+      ]
+    },
+    {
+      "slug": "puericultura-e-prevencao-de-acidentes",
+      "section": "sec-24-controle-de-qualidade-e-pendencias-objetivas",
+      "block": [
+        "p",
+        "<strong>Não realizado / ainda necessário:</strong> revisão clínico-pediátrica especializada de pontos de rastreio e suplementação; validação jurídica da norma de transporte na data da publicação; leitura de apostila correlata <em>completa</em> de acidentes no Drive (não encontrada; material principal de crescimento/obesidade é <strong>parcial</strong> para o tema); seleção e aprovação de imagens reais; criação de diagramas; conversão para HTML seguindo padrão LURIA; inspeção desktop/PWA; teste humano de autossuficiência da apostila; revisão final de linguagem e possíveis redundâncias."
+      ]
+    },
+    {
+      "slug": "puericultura-e-prevencao-de-acidentes",
+      "section": "sec-24-controle-de-qualidade-e-pendencias-objetivas",
+      "block": [
+        "p",
+        "<strong>Status: TEXTO_APROFUNDADO_REVISAO_PENDENTE.</strong> Meta de extensão útil é uma estimativa de cobertura a ser checada, não homologação médica. Não publicar/mesclar/deployar até conclusão dos gates."
+      ]
+    },
+    {
+      "slug": "financiamento-e-gestao-do-sus",
+      "section": "sec-22-matriz-preliminar-de-autossuficiencia-e-",
+      "block": [
+        "p",
+        "<strong>Pendências impeditivas de publicação:</strong>\r<br><ul><li>Benchmark Drive específico de financiamento/gestão <strong>não encontrado</strong>; apenas fonte correlata de SUS aberta. Não declarar etapa zero específica plenamente cumprida.</li>\r<br><li>Auditoria de caracteres <strong>didáticos úteis</strong> (excluir índice, tabelas, referências, exercícios e redundâncias) ainda não realizada.</li>\r<br><li>Revisão jurídica minuciosa de LC 141, mudanças 2026 e eventuais normas posteriores à consulta; verificação completa de Nota Técnica 8/2026 antes de tabelas de indicadores numéricos.</li>\r<br><li>Casos numéricos e percentuais passam por validação aritmética e jurídica das bases de impostos.</li>\r<br><li>Imagens: apenas sugestões originais (fluxo orçamentário fundo a fundo, organograma CIT/CIB/CIR, ciclo Plano–PAS–RAG, decisão ASPS), sem utilizar imagens protegidas de terceiros; qualquer imagem externa deve entrar pela aprovação Admin.</li>\r<br><li>Revisão independente da didática, testes de compreensão, adequação ao template, PWA, desempenho e publicação.</li>"
+      ]
+    },
+    {
+      "slug": "dpoc",
+      "section": "sec-25-matriz-de-rastreabilidade-e-auditoria-ed",
+      "block": [
+        "p",
+        "<strong>Não certificar ainda:</strong> benchmark específico foi lido, mas são resumos antigos e curtos; diretrizes primárias internacionais e PCDT exigem consulta integral de doses, indicações e contraindic ações, inclusive medicamentos disponibilizados no SUS. Verificar ≥60 mil caracteres realmente instrutivos com validador, sem contar tabela, referências, exercícios ou blocos repetidos; teste de autossuficiência externo, imagens aprovadas e layout desktop/PWA ainda pendentes."
+      ]
+    },
+    {
+      "slug": "vigilancia-sanitaria",
+      "section": "sec-2-manuscrito-editorial-original-medicina-p",
+      "block": [
+        "p",
+        "<strong>Início da versão:</strong> 15/10/2026. <strong>Situação:</strong> EM PRODUÇÃO, NÃO PUBLICADO, NÃO CERTIFICADO.  \r<br><strong>Escopo:</strong> prevenção, regulação, gerenciamento de riscos, fiscalização, serviços e produtos sujeitos ao controle sanitário, Sistema Nacional de Vigilância Sanitária (SNVS), atuação territorial e integração com a assistência.  \r<br><strong>Aulas vizinhas:</strong> 055 (Vigilância em Saúde), 060 (Vigilância Epidemiológica), 070 (Vigilância Ambiental e Saúde do Trabalhador) e 075 (Notificação Compulsória). Preservar essas fronteiras; nesta aula aprofundar o componente SANITÁRIO, sem refazer os demais cadernos."
+      ]
+    },
+    {
+      "slug": "derrame-pleural",
+      "section": "sec-83-2-estado-de-publicacao",
+      "block": [
+        "p",
+        "<strong>Somente arquivo Markdown de rascunho em branch editorial isolada.</strong> Não há publicação em `apostilas/<tema>/index.html`, não há merge, deploy ou envio de imagens à fila administrativa. A etapa de edição clínica poderá ser concluída apenas com benchmark mais próximo, revisão independente, imagens autorizadas e teste de autossuficiência conforme `apostilas/EDITORIAL_STANDARD.md` e `apostilas/PRODUCAO_EM_LOTE.md`."
+      ]
+    },
+    {
+      "slug": "vigilancia-sanitaria",
+      "section": "sec-2-manuscrito-editorial-original-medicina-p",
+      "blocks": [
+        [
+          "2",
+          "Manuscrito editorial original | Medicina Preventiva e Saúde Coletiva"
+        ],
+        [
+          "p",
+          "# 0. Auditoria editorial, benchmark e plano de lacunas"
+        ],
+        [
+          "4",
+          "0.1 Conferência do acervo LURIA"
+        ],
+        [
+          "4",
+          "0.2 Etapa zero de benchmarking no Drive"
+        ],
+        [
+          "p",
+          "Também foi examinada a estrutura de uma apostila já presente na LURIA — <strong>Assistência ao Parto, Vigilância Intraparto e Partograma</strong> — para identificar a organização em sumário lateral, capítulos numerados, quadros, casos e estilo próprio; não reutilizar seu conteúdo médico."
+        ],
+        [
+          "t",
+          [
+            "Domínio",
+            "Material comparativo",
+            "Necessidade da LURIA neste tema"
+          ],
+          [
+            [
+              "Conceito",
+              "Definição sucinta de risco sanitário",
+              "Ensinar escopo jurídico, exemplos e consequências assistenciais"
+            ],
+            [
+              "Instituições",
+              "Anvisa citada",
+              "Distinguir Anvisa, vigilâncias estaduais/municipais, laboratórios e gestão do SUS"
+            ],
+            [
+              "Procedimentos",
+              "Não detalhados",
+              "Explicar inspeção, licenciamento, registros, fiscalização e medidas sanitárias"
+            ],
+            [
+              "Serviços",
+              "Menção genérica",
+              "Desenvolver segurança assistencial, infecção, esterilização e resíduos"
+            ],
+            [
+              "Produtos",
+              "Não aprofundados",
+              "Desenvolver medicamentos, alimentos, cosméticos, saneantes e dispositivos"
+            ],
+            [
+              "Processo legal",
+              "Não aprofundado",
+              "Explicar poder de polícia, processo administrativo e proporcionalidade"
+            ],
+            [
+              "Ensino e avaliação",
+              "Resumo mnemônico",
+              "Construir casos, questões, algoritmos, tabelas e trilha de justificativas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "0.3 Fronteira com outras apostilas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Vigilância em Saúde (055):</strong> conceitos integradores, planejamento, indicadores e atuação intersetorial.",
+            "<strong>Vigilância Epidemiológica (060):</strong> detecção, investigação e acompanhamento de doenças/agravos e séries de notificação.",
+            "<strong>Vigilância Sanitária (065):</strong> controle preventivo e corretivo dos riscos de <strong>bens, serviços, ambientes, processos e tecnologias</strong> sujeitos a regulação.",
+            "<strong>Vigilância Ambiental e Saúde do Trabalhador (070):</strong> exposição ambiental/ocupacional, determinantes, prevenção de acidentes e doenças relacionadas ao trabalho.",
+            "<strong>Notificação Compulsória (075):</strong> hipóteses, prazos, fluxo e responsabilidade de notificações epidemiológicas segundo a lista vigente."
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "principios-de-tecnica-cirurgica",
+      "html": "<p><strong>Lote 03 | 14/10/2026 | Conteúdo aprofundado em elaboração, não homologado</strong></p>"
+    },
+    {
+      "slug": "principios-de-tecnica-cirurgica",
+      "html": "<p>Foi lido no Drive o PDF <em>12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf</em>. É referência <strong>adjacente, não equivalente</strong>: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A LURIA foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.</p>"
+    },
+    {
+      "slug": "principios-de-tecnica-cirurgica",
+      "html": "<p><strong>Conclusão:</strong> texto substancialmente aprofundado e apto à fase <strong>REVISÃO MÉDICA + CURADORIA VISUAL</strong>, mas <strong>NÃO HOMOLOGADO</strong> e <strong>NÃO PUBLICADO</strong>. A contagem de caracteres brutos isoladamente não comprova qualidade ou texto didático útil. Não criar entrada em catálogo, não fazer merge e não realizar deploy.</p>"
+    },
+    {
+      "slug": "tecnica-cirurgica",
+      "html": "<p><strong>Lote 03 | 14/10/2026 | Conteúdo aprofundado em elaboração, não homologado</strong></p>"
+    },
+    {
+      "slug": "tecnica-cirurgica",
+      "html": "<p>Foi lido no Drive o PDF <em>12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf</em>. É referência <strong>adjacente, não equivalente</strong>: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A LURIA foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.</p>"
+    },
+    {
+      "slug": "tecnica-cirurgica",
+      "html": "<p><strong>Conclusão:</strong> texto substancialmente aprofundado e apto à fase <strong>REVISÃO MÉDICA + CURADORIA VISUAL</strong>, mas <strong>NÃO HOMOLOGADO</strong> e <strong>NÃO PUBLICADO</strong>. A contagem de caracteres brutos isoladamente não comprova qualidade ou texto didático útil. Não criar entrada em catálogo, não fazer merge e não realizar deploy.</p>"
+    },
+    {
+      "slug": "choque-circulatorio",
+      "html": "<p><strong>Pendências obrigatórias para homologar:</strong> revisão médico-científica especializada de condutas/doses e da consistência entre diretrizes; ajuste de farmacologia segundo protocolos hospitalares brasileiros; matriz com âncoras reais após integração HTML; confirmar ao menos dez candidatas reais de imagem com rastreabilidade, fazer curadoria licenciada e colocar na fila Admin; checar figuras já aprovadas no acervo; executar validações de sintaxe, referências, scripts de auditoria, interface desktop/PWA, acessibilidade e leitura crítica de cada questão. <strong>Não divulgar como livro pronto nem executar deploy.</strong></p>"
+    }
+  ]
+}

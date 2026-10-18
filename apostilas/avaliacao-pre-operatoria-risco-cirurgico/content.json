@@ -1,0 +1,1915 @@
+{
+  "v": 2,
+  "s": "avaliacao-pre-operatoria-risco-cirurgico",
+  "t": "Avaliação Pré-operatória e Risco Cirúrgico",
+  "p": "Avaliação Pré-operatória e Risco Cirúrgico",
+  "o": [
+    [
+      "visao",
+      "Avaliação pré-operatória: decisão compartilhada, não 'liberação cirúrgica'"
+    ],
+    [
+      "conceitos",
+      "1. Risco cirúrgico, risco anestésico, ASA e urgência"
+    ],
+    [
+      "historia",
+      "2. Anamnese e exame físico: o que realmente muda conduta"
+    ],
+    [
+      "cardio",
+      "3. Algoritmo de avaliação cardiovascular perioperatória em cinco decisões"
+    ],
+    [
+      "rcri",
+      "4. Escore RCRI (Lee): como calcular e não superinterpretar"
+    ],
+    [
+      "exames",
+      "5. Exames pré-operatórios: indicação proporcional e conduta diante de achados"
+    ],
+    [
+      "viaaerea",
+      "6. Via aérea e risco de broncoaspiração: duas avaliações distintas"
+    ],
+    [
+      "medicamentos",
+      "7. Medicações e antitrombóticos: evitar receitas genéricas"
+    ],
+    [
+      "especial",
+      "8. Populações especiais, fragilidade e ética"
+    ],
+    [
+      "fluxo",
+      "9. Fluxo operacional de decisão e documentação"
+    ],
+    [
+      "casos",
+      "10. Cinco casos clínicos comentados"
+    ],
+    [
+      "questoes",
+      "11. Questões autorais comentadas"
+    ],
+    [
+      "referencias",
+      "12. Referências científicas, comparação documental e estado editorial"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Avaliação Pré-operatória e Risco Cirúrgico",
+    "Risco individual · ASA · Lee · capacidade funcional · via aérea · medicações",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Perioperatório",
+      "Tema: Avaliação pré-operatória"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Avaliação pré-operatória: decisão compartilhada, não 'liberação cirúrgica'"
+        ],
+        [
+          "p",
+          "A avaliação pré-operatória organiza o cuidado antes de uma intervenção, identificando doenças relevantes, quantificando risco quando possível e buscando intervenções capazes de melhorar desfechos. A pergunta não é 'o paciente tem risco zero?', pois toda operação e anestesia têm riscos. A pergunta útil é: <strong>o benefício esperado da cirurgia justifica o risco atual e o que pode ser modificado antes, durante e depois do procedimento?</strong> O risco pertence à combinação de paciente, procedimento, urgência, anestesia e capacidade da instituição."
+        ],
+        [
+          "p",
+          "Esta apostila trata principalmente da avaliação clínica global e cardiovascular antes de cirurgias não cardíacas em adultos, integrando avaliação anestésica, via aérea, capacidade funcional e necessidades de exames. Não substitui protocolos obstétricos, pediátricos, transplantes ou de cirurgia cardíaca. A referência nacional é a <strong>Diretriz de Avaliação Cardiovascular Perioperatória da SBC – 2024</strong>; a AHA/ACC 2024 acrescenta algoritmo clínico e uso criterioso de testes. Para o paciente, a avaliação precisa resultar em plano compreensível: procedimento, benefícios, riscos, alternativas, consentimento, adaptações de medicamentos e sinais de alerta."
+        ],
+        [
+          "t",
+          [
+            "Momento",
+            "Pergunta decisiva",
+            "Produto da avaliação"
+          ],
+          [
+            [
+              "Antes de agendar",
+              "Qual objetivo clínico e qual urgência da operação?",
+              "Indicação, alternativas e possibilidade de adiamento"
+            ],
+            [
+              "Entrevista e exame",
+              "Há condição descompensada ou nova?",
+              "Plano para estabilização ou investigação direcionada"
+            ],
+            [
+              "Estratificação",
+              "Qual risco basal e capacidade funcional?",
+              "RCRI/NSQIP e medidas de segurança úteis"
+            ],
+            [
+              "Plano terapêutico",
+              "Quais fármacos e estratégias serão mantidos ou ajustados?",
+              "Lista reconciliada e responsáveis"
+            ],
+            [
+              "Dia da cirurgia",
+              "Os riscos identificados foram comunicados?",
+              "Checklist de identidade, via aérea, alergias, jejum e plano de contingência"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "conceitos",
+      0,
+      [
+        [
+          "2",
+          "1. Risco cirúrgico, risco anestésico, ASA e urgência"
+        ],
+        [
+          "3",
+          "Por que a classificação ASA não deve ser usada como probabilidade individual de óbito"
+        ],
+        [
+          "p",
+          "A classificação de estado físico da American Society of Anesthesiologists descreve gravidade sistêmica antes da anestesia, e não calcula sozinha mortalidade individual de uma operação. ASA I é pessoa saudável; II doença sistêmica leve; III doença sistêmica grave; IV doença grave com ameaça constante à vida; V paciente moribundo cuja sobrevivência é improvável sem operação; VI morte encefálica para doação. O sufixo <strong>E</strong> indica emergência. Um paciente ASA III para cirurgia de catarata não tem risco idêntico ao mesmo ASA III diante de laparotomia extensa."
+        ],
+        [
+          "p",
+          "Também diferenciar cirurgia <strong>eletiva</strong>, em que se pode programar investigação/otimização, de cirurgia de urgência ou emergência em que atrasar o procedimento pode agravar prognóstico. A estratégia proporcional na urgência é corrigir problemas reversíveis em paralelo à preparação e disponibilizar monitorização adicional quando indicada, não exigir uma bateria de exames que impede controle da causa cirúrgica."
+        ],
+        [
+          "3",
+          "Do risco clínico à decisão sobre a cirurgia"
+        ],
+        [
+          "p",
+          "Fatores que determinam resultados incluem idade biológica e fragilidade, estado nutricional, tipo e magnitude da operação, perda de sangue esperada, inflamação, necessidade de UTI, comorbidades e experiência do serviço. Diagnósticos estáveis e controlados podem não justificar adiar cirurgia de baixo risco. Já descompensação cardíaca ou doença valvar sintomática grave mudam completamente o plano. Estratificação precisa produzir uma ação: continuar, otimizar, investigar se realmente mudar conduta ou adiar em conjunto com a equipe."
+        ],
+        [
+          "t",
+          [
+            "Ferramenta",
+            "O que mede",
+            "O que NÃO mede"
+          ],
+          [
+            [
+              "ASA-PS",
+              "Carga global de doença sistêmica",
+              "Chance exata de IAM ou óbito"
+            ],
+            [
+              "RCRI (Lee)",
+              "Índice simples de risco de eventos cardíacos em cirurgia não cardíaca",
+              "Risco total de sangramento, TEP ou complicações pulmonares"
+            ],
+            [
+              "NSQIP",
+              "Estimativas multivariadas em procedimentos elegíveis",
+              "Resultado individual garantido"
+            ],
+            [
+              "DASI/capacidade funcional",
+              "Atividades realizadas e limitação funcional",
+              "Autorização automática para operar"
+            ],
+            [
+              "Escala de fragilidade",
+              "Vulnerabilidade global, reserva e dependência",
+              "Risco cardiovascular isolado"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "historia",
+      0,
+      [
+        [
+          "2",
+          "2. Anamnese e exame físico: o que realmente muda conduta"
+        ],
+        [
+          "p",
+          "A história deve registrar diagnóstico cirúrgico e alternativas, grau de urgência, operações/anestesias anteriores, complicações prévias (intubação difícil, broncoaspiração, reação alérgica, hipertermia maligna, náusea grave), eventos familiares anestésicos e uso de fármacos. Identificar capacidade para atividades cotidianas, dispneia, dor torácica, edema, síncope, palpitações, sangramentos, trombose prévia, ronco/apneia, tabagismo, álcool e substâncias psicoativas. Perguntar por gravidez possível quando pertinente, explicando finalidade e obtendo consentimento."
+        ],
+        [
+          "p",
+          "O exame físico inclui sinais vitais, PA e frequência, estado geral, perfusão, ausculta cardíaca/pulmonar, volemia, edema, avaliação de vias aéreas e sinais de doença relevante. Uma ausculta normal não descarta cardiopatia importante; um sopro novo com síncope/esforço limitado sugere investigar valvopatia. Em pessoa com doença pulmonar, anotar saturação de oxigênio e uso de suporte, sinais de infecção e capacidade respiratória. Obesidade exige planejar posicionamento, acesso venoso, ventilação e tromboprofilaxia."
+        ],
+        [
+          "3",
+          "Perguntas sobre fármacos que precisam de resposta concreta"
+        ],
+        [
+          "u",
+          [
+            "Anticoagulantes/antiagregantes: indicação, última dose, função renal, stent recente, prótese valvar, risco tromboembólico e risco de sangramento da operação.",
+            "Insulina, antidiabéticos, iSGLT2 e agonistas GLP-1: plano por fármaco e situação; risco de hipoglicemia, cetoacidose ou esvaziamento gástrico retardado.",
+            "Corticoides crônicos/imunossupressores: risco de insuficiência adrenal, infecção e deiscência; não suspender sem avaliar indicação e doença.",
+            "Betabloqueadores, estatinas, anti-hipertensivos e diuréticos: manter ou ajustar conforme pressão, função renal, volume e anestesia.",
+            "Fitoterápicos, álcool, opioides e benzodiazepínicos: interações, abstinência, sedação e tolerância."
+          ]
+        ],
+        [
+          "3",
+          "Doença hepática, renal e desnutrição"
+        ],
+        [
+          "p",
+          "Cirrose não pode ser resumida a 'Child A pode, Child C não': gravidade, hipertensão portal, ascite, encefalopatia, plaquetas, função renal e tipo de cirurgia definem risco. DRC modifica eliminação de anestésicos/analgésicos, coagulação e risco de LRA. Desnutrição, sarcopenia e perda de peso recente elevam risco infeccioso e pior cicatrização; testes isolados de albumina não substituem avaliação nutricional abrangente. O planejamento deve envolver especialidades quando isso permite otimização real sem atraso prejudicial."
+        ]
+      ]
+    ],
+    [
+      "cardio",
+      0,
+      [
+        [
+          "2",
+          "3. Algoritmo de avaliação cardiovascular perioperatória em cinco decisões"
+        ],
+        [
+          "3",
+          "Primeira decisão: trata-se de cirurgia imediata?"
+        ],
+        [
+          "p",
+          "Se existe risco de morte/agravamento grave por adiamento, a equipe realiza avaliação focada e estabiliza condições tratáveis em paralelo à operação. Em cirurgia eletiva, pode-se planejar análise completa. A SBC 2024 e a AHA/ACC 2024 enfatizam que o objetivo não é criar barreiras burocráticas, mas equilibrar tempo e risco. Emergência abdominal séptica não se torna mais segura porque o paciente aguardou dias por teste de esforço sem indicação."
+        ],
+        [
+          "3",
+          "Segunda: há condição cardiovascular ativa ou instável?"
+        ],
+        [
+          "p",
+          "Síndrome coronariana aguda, insuficiência cardíaca descompensada, arritmia hemodinamicamente instável, valvopatia grave sintomática ou outra doença CV aguda demandam avaliação e tratamento prioritários, quando o tempo cirúrgico permitir. Doença estável não deve ser manejada como instabilidade só por histórico. Em casos complexos, a decisão de adiar e a técnica anestésica precisam ser definidas em equipe."
+        ],
+        [
+          "3",
+          "Terceira: qual risco da combinação procedimento e paciente?"
+        ],
+        [
+          "p",
+          "Instrumentos como RCRI e NSQIP ajudam a estimar probabilidade de eventos e orientam necessidade de intervenções adicionais. Para cirurgias e pacientes de baixo risco, exames e testes de estresse costumam não mudar resultados. A diretriz AHA/ACC 2024 define risco baixo quando a previsão de evento cardiovascular adverso maior é menor que 1% e risco elevado quando é 1% ou mais, conforme instrumento escolhido; a precisão varia por população."
+        ],
+        [
+          "3",
+          "Quarta: o paciente tem capacidade funcional adequada?"
+        ],
+        [
+          "p",
+          "Capacidade funcional pode ser estimada por atividades cotidianas ou questionário DASI. Desempenho ruim, convencionalmente &lt;4 METs, ou DASI ≤34, aumenta preocupação prognóstica, mas <strong>não é proibição universal de cirurgia</strong>. Paciente com artrose incapacitante pode relatar poucos METs apesar de função cardíaca razoável. Interpretar causa da limitação e risco do procedimento antes de pedir exame. Se a pessoa consegue esforço usual sem sintomas e vai passar por cirurgia de baixo risco, testes provocativos de isquemia não são indicados apenas para 'completar pré-operatório'."
+        ],
+        [
+          "3",
+          "Quinta: o exame adicional mudará tratamento?"
+        ],
+        [
+          "p",
+          "A AHA/ACC 2024 recomenda teste de estresse apenas para casos selecionados com risco cirúrgico elevado, capacidade funcional ruim/desconhecida e probabilidade cardiovascular relevante, sobretudo quando a descoberta mudaria estratégia. ECG, BNP/NT-proBNP e troponina também são seletivos, não universais. Revascularização coronariana profilática antes de qualquer operação não reduz automaticamente eventos e só deve ocorrer por indicação clínica habitual, não porque o calendário cirúrgico se aproxima."
+        ],
+        [
+          "t",
+          [
+            "Paciente/procedimento",
+            "Conduta orientadora",
+            "O que evitar"
+          ],
+          [
+            [
+              "Assintomático, baixo risco e cirurgia superficial",
+              "Seguir avaliação clínica proporcional",
+              "Teste ergométrico ou ecocardiograma em todos"
+            ],
+            [
+              "Cardiopatia estável e boa capacidade funcional",
+              "Usar risco clínico para planejar, sem testes rotineiros",
+              "Angiografia preventiva sem indicação"
+            ],
+            [
+              "Risco elevado, incapacidade funcional e doença coronária suspeita",
+              "Considerar investigação se resultado muda manejo",
+              "Tratar exame anormal como indicação automática de stent"
+            ],
+            [
+              "Dor anginosa instável ou edema agudo",
+              "Investigar/tratar condição ativa e rever cronograma",
+              "Chamar de 'liberado' por RCRI baixo"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Aprofundamento — do risco basal à decisão clínica segundo SBC 2024 e AHA/ACC 2024"
+        ],
+        [
+          "p",
+          "O risco cardiovascular perioperatório não é uma propriedade fixa que pode ser medida em uma consulta e transportada para qualquer operação. A mesma pessoa com doença coronariana estável pode passar por um procedimento odontológico ou por uma reconstrução vascular extensa, com respostas inflamatórias, variações de pressão e perdas sanguíneas muito diferentes. A SBC 2024 orienta uma avaliação progressiva: condições graves ativas, magnitude e urgência da operação, reserva funcional, escore validado e necessidade real de exames adicionais. A AHA/ACC 2024 converge nessa lógica, mas as ferramentas e recomendações não devem ser fundidas como se fossem idênticas em todas as populações."
+        ],
+        [
+          "p",
+          "O primeiro filtro é temporal. Cirurgia de emergência exige trabalho simultâneo de estabilização e controle do processo cirúrgico, enquanto um procedimento eletivo permite corrigir problemas descompensados antes. Entretanto, a expressão 'eletivo' não significa 'pode esperar indefinidamente': neoplasia progressiva, isquemia de membro e obstrução com piora podem tornar o adiamento clinicamente oneroso. O plano deve registrar por que se aceitou algum risco residual ou por que se decidiu investigar. Comunicação entre cirurgia, anestesia e especialidades é uma intervenção de segurança, não um carimbo adicional."
+        ],
+        [
+          "3",
+          "Condições cardiovasculares que podem justificar pausar a eletiva"
+        ],
+        [
+          "p",
+          "Síndrome coronariana aguda, insuficiência cardíaca descompensada, arritmia com instabilidade hemodinâmica, valvopatia grave sintomática e doença aórtica aguda devem ser reconhecidas antes de solicitar a prova de esforço. A SBC 2024 exemplifica doença cardiovascular grave/instável com SCA, edema agudo de pulmão, choque cardiogênico, IC sintomática avançada, angina importante e aortopatias instáveis. 'Paciente tinha infarto há quinze anos' não equivale a SCA ativa, mas angina progressiva nesta semana é sinal que muda prioridade. Uma consulta de risco cirúrgico que não pergunta por dispneia nova, síncope e dor torácica deixou de responder à questão central."
+        ],
+        [
+          "p",
+          "Os achados precisam levar a plano: suspender temporariamente cirurgia eletiva e investigar/tratar o quadro ativo; discutir possibilidade de tratamento valvar/coronário quando houver indicação fora do contexto cirúrgico; otimizar congestão e perfusão; planejar técnica anestésica e unidade de recuperação. Se a cirurgia é urgentíssima, corrigir os componentes reversíveis durante preparo e comunicar riscos aumentados ao paciente/família quando possível. Uma avaliação especializada prolongada que não altera tratamento, em emergência cirúrgica verdadeira, pode causar dano pela demora."
+        ],
+        [
+          "3",
+          "Risco da operação: o tipo específico importa mais do que o adjetivo 'grande'"
+        ],
+        [
+          "p",
+          "A SBC 2024 classifica procedimentos pelo risco estimado de morte cardiovascular, infarto ou AVC em 30 dias: baixo, inferior a 1%; intermediário, entre 1 e 5%; alto, superior a 5%, reconhecendo que o risco depende do tipo e das características individuais. A AHA/ACC 2024 simplifica etapas em risco baixo versus elevado para eventos cardiovasculares adversos maiores conforme calculadora validada. Não comparar diretamente percentuais de desfechos diferentes. Em particular, RCRI de Lee usa 'cirurgia de alto risco' como variável própria para determinadas operações intraperitoneais, intratorácicas e vasculares suprainguinais; isso não implica que toda cirurgia intraperitoneal atual apresente risco superior a 5%."
+        ],
+        [
+          "t",
+          [
+            "Exemplo de operação",
+            "Perfil de risco cardiovascular intrínseco geral",
+            "O que pode modificar a categoria"
+          ],
+          [
+            [
+              "Excisão cutânea pequena / catarata",
+              "Tende a baixo",
+              "Anestesia/local, sintomas agudos e doença individual"
+            ],
+            [
+              "Hernioplastia não complicada",
+              "Frequentemente baixo a intermediário conforme técnica e paciente",
+              "Porte, tempo, urgência, sangramento"
+            ],
+            [
+              "Ressecção colorretal oncológica",
+              "Frequentemente intermediário/mais elevado conforme extensão",
+              "Sepse, anemia, desnutrição, abordagem, comorbidades"
+            ],
+            [
+              "Cirurgia vascular aórtica maior",
+              "Risco alto em muitos cenários",
+              "Urgência, anatomia, técnica aberta/endovascular, cardiopatia"
+            ],
+            [
+              "Laparotomia por peritonite séptica",
+              "Risco agregado alto pela emergência e fisiologia",
+              "Choque, necessidade de controle de foco e UTI"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Capacidade funcional: conceito, escore DASI e limites da entrevista"
+        ],
+        [
+          "p",
+          "Capacidade funcional é uma estimativa da reserva cardiovascular diante de atividade. Tradicionalmente descreve-se baixa capacidade como menos de 4 equivalentes metabólicos (METs), mas não se deve usar essa faixa como licença ou proibição de operar. A AHA/ACC 2024 reconhece que DASI (Duke Activity Status Index) fornece informação prognóstica mais sistemática que apenas perguntar 'sobe escadas?', enquanto SBC 2024 recomenda documentar na anamnese a capacidade de subir dois lances de escada em operações de risco intermediário/alto. Paciente com artrose grave pode ter baixa atividade devido à dor, não necessariamente a limitação cardíaca."
+        ],
+        [
+          "p",
+          "O DASI reúne doze atividades funcionais, com pesos específicos, e produz escore entre 0 e 58,2. Um valor ≤34 é frequentemente usado como sinal de capacidade funcional ruim na avaliação perioperatória; acima dele a probabilidade de eventos pode ser menor, embora nenhum ponto de corte resolva a decisão sozinho. Perguntar atividade realizada de verdade nas últimas semanas, e não capacidade hipotética. Dyspneia ao vestir-se sugere limitação maior do que parar antes de uma corrida; separar fadiga por anemia, dispneia pulmonar, claudicação e sintomas anginosos. Aplicar versão completa validada, não inventar somatório de pontos com perguntas escolhidas ao acaso."
+        ],
+        [
+          "3",
+          "RCRI, AUB-HAS2 e ferramentas que incluem a operação"
+        ],
+        [
+          "p",
+          "O RCRI utiliza seis componentes clínicos/cirúrgicos históricos, cada um valendo um ponto. Já o AUB-HAS2, destacado na SBC 2024, considera história de cardiopatia, sintomas cardíacos, idade ≥75 anos, hemoglobina &lt;12 g/dL, cirurgia vascular arterial e cirurgia de emergência. É ferramenta distinta, cujo resultado não deve ser somado ao RCRI nem lido com percentuais de outra coorte. Modelos NSQIP incluem informação procedimental e comorbidades, podendo estimar desfechos como IAM, parada cardíaca, complicações gerais e permanência conforme calculadora. Nenhum algoritmo contém todos os efeitos de fragilidade, desnutrição e qualidade do serviço."
+        ],
+        [
+          "t",
+          [
+            "Preditor de escore",
+            "RCRI de Lee",
+            "AUB-HAS2 segundo SBC 2024"
+          ],
+          [
+            [
+              "Doença cardíaca",
+              "História de doença coronária e/ou IC, cada critério conforme definição",
+              "História de doença cardíaca"
+            ],
+            [
+              "Sintomas atuais",
+              "Não há item específico independente",
+              "Angina ou dispneia em contexto cardíaco"
+            ],
+            [
+              "Idade ≥75 anos",
+              "Não pontua isoladamente",
+              "Sim"
+            ],
+            [
+              "Hb &lt;12 g/dL",
+              "Não pontua isoladamente",
+              "Sim"
+            ],
+            [
+              "Diabetes em insulina",
+              "Sim",
+              "Não"
+            ],
+            [
+              "Creatinina >2 mg/dL",
+              "Sim",
+              "Não"
+            ],
+            [
+              "Doença cerebrovascular",
+              "Sim",
+              "Não"
+            ],
+            [
+              "Porte/urgência",
+              "Cirurgia de alto risco segundo critérios de Lee",
+              "Cirurgia vascular arterial e cirurgia de emergência"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O risco individual gerado pela calculadora deve ser comunicado com nome do desfecho e período de observação; 'RCRI 2' não significa 2% de mortalidade. Se duas ferramentas discordam, investigar diferenças de variáveis e população, e usar aquela validada e apropriada para decisão que precisa ser tomada. Documentar o resultado, mas não deixar que um número esconda doença ativa ou necessidade imediata de operar. Um médico pode justificar prosseguir apesar de risco alto quando o benefício e a urgência superam risco de adiar; isso não significa declarar que risco desapareceu."
+        ],
+        [
+          "3",
+          "Teste de isquemia: só quando abre um caminho clínico"
+        ],
+        [
+          "p",
+          "Teste ergométrico, eco sob estresse ou cintilografia perfusional não devem ser solicitados indiscriminadamente. A AHA/ACC 2024 restringe o teste de estresse pré-operatório a casos selecionados de cirurgia de risco elevado e capacidade funcional ruim/desconhecida, quando há suspeita relevante de DAC que efetivamente mudaria decisão ou tratamento. Condições graves ativas, como SCA/IC descompensada, primeiro exigem manejo da própria doença. A angiografia coronária e a revascularização profilática não são indicadas apenas para obter um resultado 'normal' antes de cirurgia; aplicar as mesmas indicações cardiológicas que existiriam sem cirurgia."
+        ],
+        [
+          "p",
+          "Uma prova de esforço normal em paciente com dor torácica progressiva não representa 'liberação', pois o cenário clínico pode ter mudado desde o teste. Por outro lado, imagem de perfusão com alteração pequena em paciente sem sintomas pode não mudar estratégia, mesmo que cause ansiedade. A pergunta antes de solicitar é: 'Se houver isquemia importante, vamos tratar clinicamente, revascularizar por indicação própria, mudar a técnica, adiar ou abandonar o procedimento?'. Se não existe uma decisão plausível que dependa do resultado, o teste acrescenta risco de falso positivo, custo e demora."
+        ],
+        [
+          "3",
+          "Biomarcadores perioperatórios: BNP/NT-proBNP e troponina"
+        ],
+        [
+          "p",
+          "BNP e NT-proBNP refletem estresse de parede miocárdico e se correlacionam com eventos no perioperatório, mas sua interpretação depende de idade, obesidade, insuficiência renal, fibrilação atrial e valvopatias. A SBC 2024 incorporou uso direcionado por idade e perfil cardiovascular, destacando a avaliação em pessoas idosas ou com risco/doença cardiovascular submetidas a cirurgias pertinentes. A AHA/ACC 2024 usa biomarcadores seletivos em pacientes de risco elevado, inclusive para decidir se há benefício em testes adicionais e para monitorização. Não solicitar indiscriminadamente BNP antes de um procedimento dermatológico de baixo risco."
+        ],
+        [
+          "p",
+          "A troponina pós-operatória pode identificar <strong>lesão miocárdica após cirurgia não cardíaca (MINS)</strong>, frequentemente sem dor típica por analgesia, sedação e inflamação. Um aumento detectado após cirurgia precisa ser relacionado a valor basal, ECG e causas não isquêmicas, e interpretado segundo definição de lesão/infarto apropriada. Lesão por oferta-demanda devido a hipotensão, anemia e taquicardia é possível, sem necessariamente envolver rotura de placa. O risco prognóstico justifica investigação e seguimento, mas troponina alta não autoriza tratamento antitrombótico pleno automático diante de ferida cirúrgica recente."
+        ],
+        [
+          "p",
+          "Em cirurgia de risco mais elevado e pessoa com risco cardiovascular significativo, documentar plano de vigilância pós-operatória antes da entrada em sala: sinais vitais, sintomas, ECG e biomarcadores nos períodos indicados pela diretriz local. O objetivo não é detectar apenas eventos dramáticos; taquicardia persistente, hipotensão não explicada e nova congestão podem ser manifestação de injúria miocárdica. Se o paciente teve evento, decidir por tratamento conforme etiologia e risco hemorrágico, registrando quem acompanha após alta."
+        ],
+        [
+          "3",
+          "Paciente com stent coronário: o calendário da ICP é parte do risco"
+        ],
+        [
+          "p",
+          "No paciente submetido a ICP com stent farmacológico devido a SCA, a AHA/ACC 2024 recomenda idealmente adiar cirurgia não cardíaca eletiva que requeira interrupção da terapia antiagregante por <strong>pelo menos 12 meses</strong>; após ICP por doença coronariana crônica, recomenda-se geralmente <strong>pelo menos 6 meses</strong> quando tal interrupção seria necessária. Cirurgia tempo-sensível pode ser considerada em prazos menores (por exemplo, cerca de três meses após stent farmacológico) quando o benefício do procedimento superar risco de eventos, mas isso não equivale a regra de liberação. Se houve angioplastia apenas com balão, sem stent, o intervalo recomendado é diferente, com referência de pelo menos 14 dias. Revascularização complexa, história de trombose de stent e cirurgia com sangramento catastrófico exigem individualização adicional."
+        ],
+        [
+          "p",
+          "O maior risco de trombose do stent ocorre precocemente, sobretudo nas semanas iniciais; suspender toda a antiagregação para operar pode ser mais perigoso que aguardar. Quando cirurgia não pode ser adiada, cardiologia, anestesia e cirurgia precisam decidir juntos quais antitrombóticos manter, quando interromper o P2Y12 e como reiniciar após obter hemostasia. AAS é frequentemente mantido em pacientes com stent quando a segurança cirúrgica permite, mas certas cirurgias com hemorragia intracraniana crítica podem justificar exceções. Não aplicar o mesmo protocolo de suspensão de AAS na prevenção primária a alguém após PCI recente."
+        ],
+        [
+          "t",
+          [
+            "Contexto da angioplastia",
+            "Janela de referência para eletiva com interrupção de antiagregação",
+            "Leitura correta"
+          ],
+          [
+            [
+              "Balão sem stent",
+              "≥14 dias",
+              "Aguardar período mínimo e considerar indicação atual"
+            ],
+            [
+              "Stent farmacológico após SCA",
+              "Preferir ≥12 meses",
+              "Risco muito alto em cirurgia precoce"
+            ],
+            [
+              "Stent farmacológico por coronariopatia crônica",
+              "Preferir ≥6 meses",
+              "Avaliar complexidade e eventos recentes"
+            ],
+            [
+              "Cirurgia tempo-sensível depois de stent farmacológico",
+              "Alguns casos ≥3 meses",
+              "Decisão multidisciplinar, não prazo automático"
+            ],
+            [
+              "PCI muito recente e procedimento que exige suspender DAPT",
+              "Maior risco nas primeiras semanas",
+              "Evitar interrupção se possível; discutir alternativas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Valvopatias e dispositivos cardíacos"
+        ],
+        [
+          "p",
+          "Estenose aórtica grave sintomática associa-se a risco elevado de hipotensão e insuficiência cardíaca perioperatória; muitas vezes demanda discussão sobre abordagem da válvula antes de operação eletiva de maior risco. Ecocardiograma é indicado quando a história e o exame sugerem doença valvar clinicamente relevante ou mudança de sintomas, não para todo sopro inocente. Em insuficiência mitral grave, considerar volume e frequência, e em hipertensão pulmonar, avaliar VD. O risco depende não só da lesão valvar mas da reserva ventricular e de instabilidade."
+        ],
+        [
+          "p",
+          "Marcapassos e cardiodesfibriladores implantáveis exigem planejamento diante de eletrocautério, local operatório e dependência da estimulação. O relatório deve registrar modelo/dispositivo, última avaliação quando pertinente, dependência de marcapasso, estratégia de manejo de terapias antitaquicardia e necessidade de monitorização/reativação. A presença de CDI não elimina risco de arritmia durante indução. A equipe que realiza operação/anestesia deve confirmar programação e plano de contingência, sem presumir que basta desligar um dispositivo no pré-operatório."
+        ],
+        [
+          "3",
+          "Casos de prática — o risco muda a decisão, não somente o formulário"
+        ],
+        [
+          "p",
+          "<strong>Caso adicional cardiovascular A:</strong> mulher de 72 anos, cirurgia de câncer de cólon em duas semanas, capacidade funcional 2–3 METs por artrose incapacitante, sem angina ou dispneia, ECG antigo sem mudança, risco calculado intermediário. A incapacidade funcional não prova doença coronária nem impõe exame provocativo automaticamente. Estimar risco com ferramenta adequada, identificar anemia e fragilidade, discutir urgência oncológica e solicitar teste somente se um resultado plausível mudaria decisão. A perda do prazo do tratamento oncológico também tem risco. A lição é integrar variáveis sem transformar METs em carimbo."
+        ],
+        [
+          "p",
+          "<strong>Caso adicional cardiovascular B:</strong> homem de 63 anos, stent farmacológico por IAM há dois meses, usa dupla antiagregação e precisa de ressecção oncológica. Suspender dois antiagregantes 'na véspera' é inseguro. A equipe precisa revisar urgência da neoplasia, possibilidade de aguardar/alterar técnica, período desde PCI e risco de sangramento, preferindo preservar proteção do stent quando seguro. Registrar decisão multidisciplinar e plano de reinício. A lição é que o intervalo pós-stent pertence ao risco cirúrgico, não apenas ao cardiologista."
+        ],
+        [
+          "p",
+          "<strong>Questões adicionais:</strong> (1) Homem estável, risco baixo e catarata eletiva, capacidade boa: solicitar rotina de teste de esforço? <strong>Não.</strong> O resultado dificilmente muda conduta e pode atrasar; não esquecer sintomas novos. (2) RCRI e AUB-HAS2 são intercambiáveis? <strong>Não.</strong> Usam diferentes variáveis e foram calibrados para populações/desfechos próprios; não mesclar pontuação. (3) Paciente com stent farmacológico após SCA há oito semanas e cirurgia eletiva que exige suspender DAPT: decidir manter data por ter passado um mês? <strong>Não.</strong> Preferir adiar se possível e discutir individualmente se tempo-sensível, dada trombose de stent."
+        ],
+        [
+          "3",
+          "Lesão miocárdica perioperatória: distinguir MINS, infarto e causas não isquêmicas"
+        ],
+        [
+          "p",
+          "A lesão miocárdica após cirurgia não cardíaca (MINS) pode ocorrer sem dor torácica, porque o paciente está sob sedação, analgesia ou manifesta sintomas inespecíficos. O aumento de troponina é uma pista, mas <strong>troponina elevada não equivale automaticamente a infarto por trombose coronariana</strong>. MINS envolve lesão atribuível a mecanismo isquêmico; o infarto agudo do miocárdio exige critérios adicionais de isquemia, como sintomas, ECG, imagem ou demonstração de trombo conforme a Definição Universal. A comparação com troponina basal ajuda a diferenciar elevação crônica, frequente em DRC ou cardiopatia estrutural, de elevação aguda."
+        ],
+        [
+          "p",
+          "Os mecanismos isquêmicos incluem infarto por ruptura de placa (tipo 1) e desequilíbrio de oferta/consumo de oxigênio (tipo 2), precipitado por anemia aguda, hipotensão, hipoxemia, taquicardia sustentada e sangramento. Sepse, embolia pulmonar, miocardite e outras condições podem produzir elevação de troponina não atribuível à isquemia coronária. A interpretação exige evolução temporal, sinais vitais, exame físico, ECG, função renal e identificação de complicações. Iniciar anticoagulação plena ou indicar coronariografia a todos, unicamente pelo biomarcador, é inadequado especialmente após cirurgia recente com risco de sangramento."
+        ],
+        [
+          "3",
+          "ECG e troponina: quem monitorar no Brasil"
+        ],
+        [
+          "p",
+          "A <strong>diretriz SBC 2024</strong> recomenda avaliação com ECG e troponina no pré-operatório e nos primeiros dois dias pós-operatórios nos pacientes classificados de risco cardiovascular intermediário ou alto submetidos a cirurgias não cardíacas de risco intermediário ou alto, de acordo com seus algoritmos. Paciente saudável em procedimento superficial não é candidato a rastreio universal. A estratégia precisa definir quem receberá e interpretará os resultados, que conduta será tomada e como será organizado seguimento. A AHA/ACC 2024 também apoia vigilância seletiva em grupos de maior risco, não dosagem indiscriminada."
+        ],
+        [
+          "o",
+          [
+            "Antes da cirurgia: definir risco clínico e do procedimento; registrar valores basais de ECG e troponina quando indicados, hemoglobina, função renal e medicações.",
+            "Durante e após a cirurgia: evitar hipotensão persistente, hipoxemia, hemorragia e taquicardia importante; reconhecer que a ausência de dor não afasta isquemia.",
+            "Se a troponina subir: verificar se há elevação aguda real, repetir de forma indicada, obter ECG e reavaliar sintomas, pressão, oxigenação e perfusão.",
+            "Investigar precipitantes de demanda miocárdica, infarto por ruptura de placa e causas alternativas de elevação, como sepse e embolia pulmonar.",
+            "Se houver instabilidade, sintomas isquêmicos ou alterações dinâmicas de ECG: avaliação e tratamento urgentes por equipe experiente.",
+            "Registrar diagnóstico provável, incertezas, risco hemorrágico e plano de seguimento; não confundir biomarcador positivo com autorização automática de antitrombótico."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Achado de troponina",
+            "Como interpretar",
+            "O que muda"
+          ],
+          [
+            [
+              "Basal elevada e pós estável",
+              "Possível lesão crônica; considerar DRC e cardiopatia",
+              "Comparar valores e manter avaliação clínica"
+            ],
+            [
+              "Elevação nova com queda de Hb e hipotensão",
+              "Considerar mecanismo de desequilíbrio oferta/consumo",
+              "Investigar sangramento, corrigir precipitantes e avaliar coração"
+            ],
+            [
+              "Elevação com dor ou ECG isquêmico",
+              "Possível síndrome coronariana aguda",
+              "Avaliação urgente e terapia compatível com a hemostasia"
+            ],
+            [
+              "Elevação sem sintomas em pessoa de alto risco",
+              "Pode haver lesão miocárdica silenciosa",
+              "Não ignorar; pesquisar causas e definir seguimento"
+            ],
+            [
+              "Cirurgia de baixo risco sem indicação clínica",
+              "Baixo valor de rastreio indiscriminado",
+              "Evitar exame de rotina"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "<strong>Pérola de prova:</strong> MINS pode ser silenciosa, mas não é sinônimo de IAM tipo 1. A conduta depende da estabilidade, da possibilidade de sangramento ativo e da etiologia. Referências: SBC, Diretriz de Avaliação Cardiovascular Perioperatória 2024 (monitorização); AHA/ACC 2024 (vigilância de lesão miocárdica)."
+        ],
+        [
+          "3",
+          "Hipertensão grave persistente: quando considerar adiar a cirurgia eletiva"
+        ],
+        [
+          "p",
+          "Segundo AHA/ACC 2024, em cirurgia não cardíaca eletiva de risco elevado, na pessoa com fatores cardiovasculares e história recente de controle pressórico insuficiente, com PA sistólica ≥180 mmHg ou diastólica ≥110 mmHg antes do dia da operação, <strong>pode-se considerar adiamento</strong> para otimização. Não é um limiar que proíbe todas as intervenções nem autoriza cancelar por uma única medida ansiosa antes da anestesia. Confirmar medida correta, comparar registros, avaliar adesão, doses omitidas, urgência cirúrgica e sintomas de lesão aguda de órgãos. Emergência hipertensiva com lesão aguda é situação distinta."
+        ],
+        [
+          "p",
+          "O outro lado do problema é hipoperfusão durante a anestesia. A diretriz AHA/ACC 2024 recomenda, em geral, manter PAM intraoperatória ≥60–65 mmHg ou pressão sistólica ≥90 mmHg para reduzir lesão miocárdica, considerando metas individuais mais altas quando o contexto exige. Queda de pressão após a operação deve suscitar busca de perda sanguínea, vasoplegia, sépsis, disfunção miocárdica e efeitos de fármacos; não pressupor hipovolemia e repetir volumes sem avaliação. Em pacientes cronicamente hipertensos ou idosos frágeis, mudança brusca de pressão pode prejudicar perfusão mesmo quando o valor final parece 'normal'."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Interpretação",
+            "Plano"
+          ],
+          [
+            [
+              "PA isolada elevada no pré-anestésico",
+              "Pode refletir ansiedade, dor ou técnica inadequada",
+              "Repetir adequadamente, comparar histórico e pesquisar lesão de órgão-alvo"
+            ],
+            [
+              "PA persistente ≥180/110 com risco cardiovascular e cirurgia eletiva elevada",
+              "Condição em que adiamento pode ser considerado",
+              "Avaliação compartilhada da urgência e otimização sustentada"
+            ],
+            [
+              "Emergência hipertensiva com lesão aguda",
+              "Doença ativa independentemente de operar",
+              "Avaliação urgente e tratamento da condição"
+            ],
+            [
+              "Hipotensão intra/pós-operatória",
+              "Risco cardíaco, renal e cerebral",
+              "Identificar mecanismo, restaurar perfusão e adaptar metas"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Fontes específicas deste aprofundamento: Gualandro DM et al., Diretriz de Avaliação Cardiovascular Perioperatória da SBC 2024, Arq Bras Cardiol. 121(9):e20240590, https://pmc.ncbi.nlm.nih.gov/articles/PMC12094288/ ; Thompson A et al., AHA/ACC Multisociety 2024, https://www.jacc.org/doi/10.1016/j.jacc.2024.06.013 . A diretriz brasileira usa categorias de risco intrínseco com três faixas, enquanto a norte-americana adota outra simplificação; diferenças metodológicas foram mantidas e não tratadas como erro."
+        ]
+      ]
+    ],
+    [
+      "rcri",
+      0,
+      [
+        [
+          "2",
+          "4. Escore RCRI (Lee): como calcular e não superinterpretar"
+        ],
+        [
+          "p",
+          "O RCRI clássico considera seis preditores, cada um com um ponto: cirurgia de alto risco definida pelo modelo; história de doença isquêmica do coração; insuficiência cardíaca; doença cerebrovascular; diabetes em uso de insulina; creatinina pré-operatória maior que 2,0 mg/dL. A pontuação auxilia a identificação de pacientes mais propensos a complicações cardíacas, mas não descreve toda a variedade atual de cirurgias, técnicas minimamente invasivas ou risco hemorrágico individual."
+        ],
+        [
+          "p",
+          "O RCRI é aplicado a cirurgia <strong>não cardíaca</strong> e deve ser interpretado junto ao risco intrínseco do procedimento. Não usar porcentagens antigas extraídas de listas de material de estudo como risco individual exato: elas pertencem a coortes e desfechos específicos, variam por validação e não equivalem automaticamente a chance de morte ou IAM. Um paciente com RCRI 0 e sangramento esperado elevado ainda precisa de planejamento transfusional e tromboprofilaxia; um paciente com RCRI 2 não está automaticamente proibido de operar."
+        ],
+        [
+          "t",
+          [
+            "Fator RCRI",
+            "Como reconhecer",
+            "Por que pode afetar risco"
+          ],
+          [
+            [
+              "Cirurgia de alto risco no índice clássico",
+              "Ex.: categorias intraperitoneal, intratorácica e vascular suprainquinal",
+              "Maior estresse fisiológico, embora risco varie entre operações"
+            ],
+            [
+              "Doença isquêmica",
+              "IAM prévio ou angina/documentação equivalente",
+              "Reserva coronariana e risco de isquemia"
+            ],
+            [
+              "Insuficiência cardíaca",
+              "História clínica de IC",
+              "Reserva de bomba limitada"
+            ],
+            [
+              "Doença cerebrovascular",
+              "AVC/AIT prévio",
+              "Carga aterosclerótica e risco neurológico"
+            ],
+            [
+              "Diabetes tratado com insulina",
+              "Uso de insulina, conforme definição do escore",
+              "Marker histórico de doença sistêmica"
+            ],
+            [
+              "Creatinina >2 mg/dL",
+              "Resultado antes da operação",
+              "Risco renal e cardiovascular associado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A categoria 'cirurgia de alto risco' de Lee não é idêntica à classificação de todos os escores modernos de risco de procedimento. Não somar um 'ponto por cirurgia grande' de forma subjetiva. Calcular com critérios do modelo utilizado, documentar o resultado e explicar limitações."
+        ]
+      ]
+    ],
+    [
+      "exames",
+      0,
+      [
+        [
+          "2",
+          "5. Exames pré-operatórios: indicação proporcional e conduta diante de achados"
+        ],
+        [
+          "p",
+          "Solicitar exames laboratoriais e complementares quando a resposta vai alterar anestesia, tratamento ou segurança. Hemograma é útil quando há anemia suspeita, comorbidade, sangramento esperado ou cirurgia de maior porte. Creatinina/eletrólitos ajudam em DRC, diabetes, diuréticos, disfunção cardíaca e cirurgias com risco de alterações volêmicas. Coagulograma não é rastreio universal de sangramento em paciente com história negativa; indagar história hemorrágica, hepatopatia, anticoagulantes e procedimentos prévios."
+        ],
+        [
+          "p",
+          "A diretriz NICE NG45 apresenta recomendações por estado ASA, magnitude cirúrgica e condições associadas, rejeitando a lógica de pedir tudo para todos. A SBC 2024 inclui recomendações nacionais mais abrangentes para ECG em grupos selecionados. Diferenças entre protocolos não significam que o paciente saudável de 25 anos precisa obrigatoriamente de ECG, RX e coagulograma antes de retirar lesão cutânea com anestesia local."
+        ],
+        [
+          "t",
+          [
+            "Exame",
+            "Quando pode trazer valor",
+            "Exemplo de uso inadequado"
+          ],
+          [
+            [
+              "ECG",
+              "Sintomas/doença CV, diabetes, risco elevado ou indicação por protocolo nacional",
+              "Paciente jovem saudável para procedimento superficial"
+            ],
+            [
+              "Hemograma",
+              "Anemia provável, perda sanguínea prevista, cirurgia de grande porte",
+              "Solicitação automática antes de toda pequena cirurgia"
+            ],
+            [
+              "Creatinina, K, Na",
+              "DRC, diabetes, fármacos, risco renal ou fluidos",
+              "Sem interpretação ou plano para resultado alterado"
+            ],
+            [
+              "Coagulograma",
+              "Anticoagulação específica, hepatopatia, coagulopatia conhecida/suspeita",
+              "Teste para negar doença hemorrágica mesmo com histórico positivo"
+            ],
+            [
+              "RX de tórax",
+              "Sinais/sintomas cardiopulmonares ou indicação individual",
+              "Rotina para todo tabagista estável"
+            ],
+            [
+              "Ecocardiograma",
+              "Dispneia nova, IC não esclarecida, valvopatia suspeita/clinicamente modificada",
+              "Repetição sem alteração clínica em pessoa estável"
+            ],
+            [
+              "Teste de estresse",
+              "Casos selecionados de risco elevado se mudar gestão",
+              "'Liberação' administrativa de baixa complexidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Um exame alterado exige interpretação, não cancelamento automático"
+        ],
+        [
+          "p",
+          "Exemplo: anemia ferropriva antes de cirurgia eletiva com grande perda esperada pode justificar investigar e tratar deficiência de ferro, pois transfusão não substitui otimização; já uma urgência com sangramento ativo exige tratamento simultâneo à cirurgia. Creatinina pouco elevada pode sinalizar DRC crônica ou LRA recente e modifica drogas/volume. Um teste de coagulação discretamente alterado pode decorrer de anticoagulante, doença hepática ou artefato; buscar causa."
+        ],
+        [
+          "3",
+          "Exame pré-operatório sem excesso: lógica de indicação e interpretação"
+        ],
+        [
+          "p",
+          "A diretriz NICE NG45 especifica exames pré-operatórios de acordo com complexidade do procedimento, condição sistêmica e comorbidades para pessoas acima de 16 anos em cirurgia eletiva. Seu objetivo é reduzir intervenções desnecessárias. Hemograma é importante quando há perda sanguínea esperada ou suspeita de anemia, mas não universal para cirurgia menor em pessoa saudável. ECG é útil em doença CV e operações de risco apropriado, mas não deve ser pedido apenas por idade em todo ato. A SBC 2024 tem indicações brasileiras próprias de ECG por risco de paciente e operação, que devem prevalecer quando a questão se refere ao Brasil."
+        ],
+        [
+          "p",
+          "O exame de coagulação é particularmente mal utilizado: TP/TTPa normais não excluem doença de von Willebrand leve e não predizem todo sangramento cirúrgico; por outro lado, resultados alterados podem refletir anticoagulantes, hepatopatia, deficiência de fatores ou artefatos. A entrevista de sangramentos pessoais/familiares, extrações dentárias, partos e cirurgias anteriores ajuda a orientar investigação. Pessoas usando DOAC podem ter testes de coagulação de rotina pouco sensíveis para efeito anticoagulante, e a ausência de alteração não libera raquianestesia."
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Exames que podem ajudar",
+            "Exames geralmente desnecessários sem indicação"
+          ],
+          [
+            [
+              "Adulto saudável, excisão cutânea",
+              "História e exame; teste dirigido apenas por suspeita",
+              "ECG, RX, eco, coagulograma e teste de estresse em pacote"
+            ],
+            [
+              "Ressecção abdominal com risco de perda sanguínea",
+              "Hemograma, função renal, grupo/reserva conforme perda e contexto",
+              "Espirometria de toda pessoa"
+            ],
+            [
+              "IC ou dispneia nova",
+              "ECG, laboratório, eco se mudança/indicação, biomarcadores selecionados",
+              "Angiografia de rotina por IC estável"
+            ],
+            [
+              "DRC, DM, diuréticos",
+              "Creatinina/eTFG, potássio, sódio, glicemia conforme contexto",
+              "Coagulograma sem história hemorrágica"
+            ],
+            [
+              "Sangramento pessoal anormal/anticoagulante",
+              "História detalhada, teste específico conforme agente e suspeita",
+              "Confiar em TP/TTPa isolados"
+            ],
+            [
+              "Suspeita pulmonar ativa",
+              "Oximetria, imagem/funcional conforme hipótese",
+              "RX universal por tabagismo antigo"
+            ],
+            [
+              "Possibilidade de gestação",
+              "Discussão de possibilidade e teste com consentimento conforme protocolo",
+              "Teste imposto sem conversa"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Anemia pré-operatória: risco corrigível, não mero marcador de transfusão"
+        ],
+        [
+          "p",
+          "Anemia em cirurgia eletiva com perda esperada merece investigar mecanismo: deficiência de ferro, doença renal, inflamação, perdas crônicas, deficiência de vitaminas e doença hematológica. A condição aumenta risco de transfusão e complicações. Um paciente com Hb 9,0 g/dL e neoplasia de cólon precisa avaliação de ferro, sangramento e urgência oncológica, não simplesmente receber duas unidades de sangue antes de sair para cirurgia. Estratégias de otimização podem envolver ferro e tratamento da causa, considerando tempo disponível, gravidade e contraindicações. Não adiar uma operação salvadora apenas para atingir um número arbitrário de hemoglobina."
+        ],
+        [
+          "p",
+          "Na anemia microcítica com ferritina baixa, deficiência de ferro é provável; mas ferritina pode elevar-se por inflamação, de modo que saturação de transferrina e outros dados auxiliam. Em DRC, déficit de eritropoetina e inflamação contribuem. A escolha entre ferro oral e intravenoso, tratamentos específicos e transfusão deve considerar tempo até cirurgia, sintomas, sangramento e decisão especializada. A hemoglobina é uma peça do risco, e não indicador isolado de aptidão."
+        ],
+        [
+          "3",
+          "Caso integrado — via aérea difícil e risco de aspiração coexistem"
+        ],
+        [
+          "p",
+          "Mulher de 58 anos em uso recente de semaglutida com aumento de dose, vômitos frequentes e história de radioterapia cervical é indicada para procedimento eletivo. Exame mostra boca pequena, extensão cervical reduzida e possível via aérea difícil. A hipótese não é somente 'risco anestésico ASA III': há intubação possivelmente difícil, ventilação ou resgate comprometidos e risco de estômago residual. Conduta: discussão antecipada com anestesista para adequar tempo/procedimento, considerar estratégia de via aérea acordada e redução de risco gástrico conforme orientação multissocietária, sem regra universal de suspensão. A importância é que duas vulnerabilidades diferentes se multiplicam."
+        ],
+        [
+          "3",
+          "Caso integrado — exames de rotina geram atraso sem benefício"
+        ],
+        [
+          "p",
+          "Homem de 31 anos, sem doença conhecida ou sintomas, terá retirada de pequeno lipoma com anestesia local. Anamnese e exame não identificam história hemorrágica, uso de fármacos ou doença cardiopulmonar. Solicitar prova de esforço, RX, ecocardiograma, coagulograma e hemograma só para 'completar o protocolo' provavelmente gera custo e falsos positivos sem melhorar desfechos. Conduta: confirmar alergias e técnica, avaliar necessidade real de exames e proceder conforme segurança da equipe. A lição é que avaliação detalhada pode terminar sem exames, desde que as perguntas certas tenham sido feitas."
+        ],
+        [
+          "3",
+          "Patient Blood Management (PBM): tratar anemia antes da incisão"
+        ],
+        [
+          "p",
+          "O gerenciamento do sangue do paciente, ou PBM, combina otimização da massa eritrocitária, diminuição da perda de sangue e tratamento individualizado da anemia. A hemoglobina pré-operatória é uma reserva fisiológica: duas pessoas que perdem o mesmo volume de sangue podem evoluir de maneira distinta se uma começa com Hb 14 g/dL e outra com Hb 9 g/dL. Anemia se associa a complicações e maior necessidade transfusional; a transfusão, por sua vez, também traz riscos e não trata a causa de uma ferropriva estável."
+        ],
+        [
+          "p",
+          "O consenso ICCAMS propõe <strong>Hb &lt;13 g/dL em ambos os sexos como limiar para triagem e otimização pré-operatória</strong> em operações relevantes, distinto dos pontos de corte usuais da OMS para a definição de anemia em outros cenários. Procedimentos mínimos, como catarata sem perda sanguínea significativa, não exigem automaticamente hemograma. O ideal é iniciar a investigação pelo menos quatro semanas antes da cirurgia, sem desistir quando há menos tempo. O objetivo é identificar o mecanismo e corrigi-lo quando possível sem atrasar tratamento cirúrgico tempo-sensível."
+        ],
+        [
+          "3",
+          "Anemia não é diagnóstico final: roteiro de investigação"
+        ],
+        [
+          "o",
+          [
+            "Verificar gravidade clínica: hemorragia ativa, instabilidade, dispneia, síncope, dor torácica ou sinais de hipoperfusão mudam prioridades e podem exigir abordagem urgente.",
+            "Revisar hemograma e índices hematimétricos, comparando exames anteriores, reticulócitos quando úteis e sinais de outras citopenias.",
+            "Investigar possíveis perdas gastrointestinais, geniturinárias e menstruais, dieta, cirurgia bariátrica, DRC, inflamação, neoplasia e medicamentos.",
+            "Solicitar ferritina e saturação de transferrina na investigação de deficiência de ferro. Ferritina é reagente de fase aguda e pode estar artificialmente normal ou alta na inflamação.",
+            "ICCAMS considera ferritina &lt;30 ng/mL e/ou saturação de transferrina &lt;20% como critérios importantes de deficiência absoluta; em estados inflamatórios, ferritina &lt;100 ng/mL pode apontar deficiência.",
+            "Na ausência de deficiência de ferro, ampliar diferencial para insuficiência renal, B12/folato, hemólise, doença inflamatória ou hematológica, conforme pistas clínicas.",
+            "Discutir tratamento, reavaliação laboratorial, previsão de perda de sangue, técnica cirúrgica e momento apropriado da operação."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Padrão",
+            "Raciocínio diagnóstico",
+            "Próximo passo"
+          ],
+          [
+            [
+              "Hb baixa, ferritina &lt;30 ng/mL",
+              "Ferropenia absoluta provável",
+              "Investigar causa da perda e repor ferro conforme cenário"
+            ],
+            [
+              "Ferritina 30–100 com inflamação e saturação &lt;20%",
+              "Deficiência associada à inflamação possível",
+              "Integrar marcadores, função renal e resposta terapêutica"
+            ],
+            [
+              "Anemia com eTFG reduzida",
+              "Considerar componente de DRC e ferro insuficiente",
+              "Avaliar rim e necessidade de tratamento especializado"
+            ],
+            [
+              "VCM elevado ou citopenias combinadas",
+              "B12/folato, fármacos ou doença de medula entre diferenciais",
+              "Investigar causa específica, sem ferro empírico automático"
+            ],
+            [
+              "Queda rápida de Hb e instabilidade",
+              "Sangramento agudo até exclusão",
+              "Estabilização e controle da fonte; não seguir fluxo eletivo"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Ferro oral pode ser adequado se houver tempo suficiente e boa absorção, enquanto ferro intravenoso é frequentemente considerado na anemia ferropriva pré-operatória quando o prazo é curto, há má absorção ou intolerância. A preferência do consenso ICCAMS por ferro intravenoso em alguns cenários deve ser acompanhada de interpretação das limitações da evidência: os benefícios em transfusão e desfechos clínicos variam por população e estudo. Eritropoetina tem indicações restritas e deve ser ponderada quanto a riscos, inclusive tromboembólicos. Ácido tranexâmico é opção para reduzir perdas em intervenções selecionadas, conforme risco e contraindicações."
+        ],
+        [
+          "p",
+          "<strong>Não há um valor único de Hb que autorize ou proíba todas as operações.</strong> Artroplastia programada em seis semanas com Hb 10 g/dL e ferritina 9 ng/mL permite investigar e tratar com antecedência. Obstrução intestinal maligna com a mesma Hb pode exigir cirurgia antes de normalização completa. Cirurgia cutânea mínima pode prosseguir sem investigação laboratorial de rotina, mas uma anemia incidental identificada merece seguimento. Referências: ICCAMS, Recommendations From the International Consensus Conference on Anemia Management in Surgical Patients (2022/2023); AHA/ACC 2024, seção de anemia perioperatória."
+        ],
+        [
+          "p",
+          "Fontes deste aprofundamento: ASA Difficult Airway Guidelines 2022, DOI 10.1097/ALN.0000000000004002, https://doi.org/10.1097/ALN.0000000000004002 ; ASA Fasting 2023, DOI 10.1097/ALN.0000000000004381, https://pubmed.ncbi.nlm.nih.gov/36629465/ ; NICE NG45, https://www.nice.org.uk/guidance/ng45/chapter/recommendations ; ESAIC Pre-operative assessment 2024, https://esaic.org/guideline/pre-operative-evaluation-of-adults-undergoing-elective-noncardiac-surgery-1st-update/ ."
+        ]
+      ]
+    ],
+    [
+      "viaaerea",
+      0,
+      [
+        [
+          "2",
+          "6. Via aérea e risco de broncoaspiração: duas avaliações distintas"
+        ],
+        [
+          "p",
+          "A avaliação de via aérea procura antecipar dificuldade para ventilar com máscara, posicionar dispositivo supraglótico, visualizar glote, passar tubo e realizar acesso cervical de emergência. História de via aérea difícil prévia é sinal de grande importância. Avaliar abertura oral, protrusão mandibular, movimento cervical, distância tireomentoniana, alterações anatômicas, barba, edentulismo, obesidade, apneia do sono, massas e cirurgia/radioterapia cervical prévia. <strong>Mallampati isoladamente não prevê com confiabilidade todo manejo difícil.</strong> Cormack-Lehane descreve visão obtida durante laringoscopia, não é teste pré-anestésico realizado com o paciente acordado."
+        ],
+        [
+          "p",
+          "Via aérea fisiologicamente difícil ocorre em paciente com reserva de oxigênio muito baixa, choque, acidose, hipertensão pulmonar ou hipotensão, mesmo quando a anatomia é favorável. Induzir anestesia pode precipitar colapso cardiovascular ou dessaturação. O plano precisa considerar pré-oxigenação, equipe, alternativas de dispositivos, posicionamento e estratégia de resgate com base no protocolo local, e não apenas o grau de Mallampati."
+        ],
+        [
+          "3",
+          "Jejum: 2, 4, 6 e 8 horas têm população-alvo"
+        ],
+        [
+          "p",
+          "No paciente saudável de cirurgia eletiva, diretrizes ASA permitem líquidos claros até duas horas; leite materno até quatro; fórmula infantil ou refeição leve até seis; alimentos gordurosos/pesados frequentemente exigem oito horas ou mais. A atualização ASA 2023 incentiva líquidos claros com carboidrato em adultos saudáveis até duas horas em contextos apropriados. <strong>Esses intervalos não são promessa de estômago vazio em obstrução intestinal, gastroparesia ou cirurgia de urgência.</strong> Mais importante que decorar números é conhecer finalidade: reduzir volume/conteúdo gástrico e risco de aspiração sem jejum prolongado desnecessário."
+        ],
+        [
+          "3",
+          "Agonistas GLP-1, gastroparesia e situações especiais"
+        ],
+        [
+          "p",
+          "Pessoas com sintomas gastrointestinais importantes, escalonamento recente de dose de agente que retarda esvaziamento gástrico, gastroparesia ou obstrução precisam de avaliação individual com a anestesia. Protocolos para agonistas de GLP-1 evoluíram; não adotar regra universal 'suspender todos sempre por uma semana'. Documentar fármaco, indicação, dose e sintomas e seguir orientação institucional baseada em diretriz atual. Em gestantes, trauma, abdome agudo e obstrução, considerar risco de aspiração independentemente do tempo em jejum."
+        ],
+        [
+          "t",
+          [
+            "Avaliação",
+            "Pistas",
+            "Implicação"
+          ],
+          [
+            [
+              "Ventilação sob máscara",
+              "Barba, edentulismo, ronco, anatomia e reserva",
+              "Planejar vedação, dispositivos e equipe"
+            ],
+            [
+              "Laringoscopia/intubação",
+              "Histórico difícil, abertura oral, mandíbula, pescoço",
+              "Planejar videolaringoscopia, alternativas e resgate"
+            ],
+            [
+              "Broncoaspiração",
+              "Obstrução, refluxo/regurgitação, gastroparesia, urgência",
+              "Definir estratégia anestésica sem confiar só no relógio do jejum"
+            ],
+            [
+              "Reserva fisiológica",
+              "Hipoxemia, choque, hipertensão pulmonar",
+              "Otimizar antes da indução se possível"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Aprofundamento da avaliação da via aérea: risco anatômico e fisiológico são problemas diferentes"
+        ],
+        [
+          "p",
+          "Um paciente pode ter via aérea anatômica muito difícil e ainda tolerar alguns minutos de ventilação/oxigenação por máscara, ou ter anatomia aparentemente favorável mas dessaturar em segundos por pneumonite, obesidade grave, shunt pulmonar ou choque. A avaliação pré-anestésica distingue dificuldade de ventilação por máscara, dificuldade de dispositivo supraglótico, dificuldade de laringoscopia, dificuldade de intubação traqueal e dificuldade de acesso frontal ao pescoço. Nenhum escore isolado prediz todas. O trabalho preventivo é reconhecer o tipo de dificuldade, preparar a equipe e definir o que fazer se o primeiro plano falhar."
+        ],
+        [
+          "3",
+          "Anamnese de via aérea: o melhor achado pode ser um documento antigo"
+        ],
+        [
+          "p",
+          "Perguntar sobre intubação prévia difícil, necessidade de videolaringoscópio, múltiplas tentativas, equipamento especializado, anestesia cancelada, trauma dentário, aspiração, perda de via aérea após extubação, traqueostomia, edema angioneurótico e radioterapia/operações cervicais. A história relatada de 'foi difícil me entubar' deve motivar obtenção de registro quando disponível. Uma intubação sem dificuldade há dez anos não garante a mesma anatomia hoje após ganho ponderal, cirurgia facial, redução cervical ou radioterapia. Manter registro de via aérea difícil acessível é uma intervenção preventiva."
+        ],
+        [
+          "p",
+          "Em exame acordado, observar abertura interincisivos, capacidade de protrusão mandibular, comprimento e mobilidade cervical, retrognatia, macroglossia, massas, dentes proeminentes, cicatrizes, flexão/extensão e alterações pós-radioterapia. Mallampati estima visualização das estruturas orofaríngeas com boca aberta e língua protrusa; é útil em conjunto, mas tem variabilidade e baixo poder para predizer todos os cenários. Não confundir a escala obtida no paciente acordado com Cormack-Lehane, que descreve o que a laringoscopia mostrou durante o procedimento."
+        ],
+        [
+          "3",
+          "Quando considerar intubação acordada"
+        ],
+        [
+          "p",
+          "As diretrizes ASA 2022 recomendam que, diante de dificuldade prevista de intubação associada a ventilação por máscara/dispositivo supraglótico potencialmente difícil, risco elevado de aspiração, baixa tolerância a apneia ou dificuldade prevista de acesso invasivo de emergência, seja considerada intubação acordada quando apropriado. O raciocínio é preservar ventilação espontânea e margem de segurança antes de uma indução que poderia transformar risco previsível em cenário 'não intubo, não oxigeno'. A decisão depende de colaboração, urgência, habilidades, dispositivos e consentimento; não significa que todo Mallampati III deva ser intubado acordado."
+        ],
+        [
+          "p",
+          "Uma pessoa com cirurgia/radioterapia de pescoço, estridor e abertura bucal mínima merece plano muito diferente de um atleta com Mallampati III e anatomia restante favorável. Em via aérea com risco de obstrução dinâmica por massa ou queimadura, indução pode causar colapso. Avaliar se há tempo para fibroscopia acordada, videolaringoscopia acordada, manutenção de ventilação espontânea ou outra estratégia conforme equipe. Se impossibilidade de oxigenação ocorrer, abordagem de emergência do pescoço precisa estar disponível; a lista de materiais deve ser conferida antes, não procurada depois."
+        ],
+        [
+          "3",
+          "Fisiologia difícil: paciente hipoxêmico e hipotenso é frágil à indução"
+        ],
+        [
+          "p",
+          "O risco de dessaturação depende de capacidade residual funcional, shunt, necessidade de oxigênio, obesidade, gravidez e doença pulmonar; o risco de colapso circulatório depende de pré-carga, resistência vascular, função ventricular e fármacos de indução. Pré-oxigenação adequada pode aumentar tempo até dessaturação, mas não torna choque seguro. A escolha de sedação, ventilação positiva e agentes deve levar em conta hemodinâmica; indução pode reduzir retorno venoso e precipitar parada cardíaca em hipovolemia extrema ou hipertensão pulmonar com falência de VD. O plano anestésico exige ressuscitação proporcional e equipe pronta para resgate."
+        ],
+        [
+          "t",
+          [
+            "Domínio avaliado",
+            "Pistas de risco",
+            "Plano preventivo"
+          ],
+          [
+            [
+              "Máscara facial",
+              "Barba, edentulismo, obesidade, anatomia facial",
+              "Vedação, posicionamento, auxiliares e operador experiente"
+            ],
+            [
+              "Laringoscopia/intubação",
+              "Micrognatia, boca &lt;3 cm, limitação cervical, registro de dificuldade",
+              "Videolaringoscópio, técnica acordada quando indicada, plano alternativo"
+            ],
+            [
+              "Dispositivo supraglótico",
+              "Anatomia, obstrução, risco de aspiração",
+              "Selecionar dispositivo/alternativas; não tratar como garantia"
+            ],
+            [
+              "Acesso frontal de pescoço",
+              "Cicatriz, massa cervical, obesidade, anatomia distorcida",
+              "Planejar disponibilidade de equipamento e especialista"
+            ],
+            [
+              "Tolerância a apneia",
+              "Hipoxemia, obesidade, gestação, shunt",
+              "Pré-oxigenação e estratégia sem perda prolongada de ventilação"
+            ],
+            [
+              "Tolerância hemodinâmica",
+              "Choque, baixo débito, hipertensão pulmonar",
+              "Estabilização e indução personalizada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Jejum: o objetivo é reduzir o risco, não simplesmente cumprir horários"
+        ],
+        [
+          "p",
+          "As orientações ASA para pessoas saudáveis em procedimentos eletivos permitem líquidos claros até duas horas antes, leite materno até quatro horas, fórmula infantil ou refeição leve em seis e alimentação gordurosa ou pesada geralmente oito horas ou mais antes. Esses intervalos se referem a tipos de conteúdo e condições clínicas específicos; não é apropriado extrapolá-los a obstrução intestinal, abdome agudo, gastroparesia, gravidez, uso de opioides ou situações emergentes. O tempo transcorrido desde a refeição não garante estômago vazio e, portanto, não elimina broncoaspiração."
+        ],
+        [
+          "p",
+          "Líquidos claros com carboidrato podem reduzir desconforto, sede e jejum prolongado em pacientes saudáveis e elegíveis. A atualização ASA de 2023 recomenda permiti-los até duas horas em adultos saudáveis quando apropriado, dentro de volumes e formulações estudados. Essa recomendação não autoriza bebidas com leite, polpa ou álcool nessa janela. O protocolo hospitalar precisa definir precisamente o que conta como líquido claro e como lidar com gastroparesia, trauma, hiperglicemia e pacientes que omitiram informações. Prolongar jejum desnecessariamente também produz riscos de desidratação e desconforto."
+        ],
+        [
+          "3",
+          "Risco de aspiração: orientação atualizada com GLP-1"
+        ],
+        [
+          "p",
+          "Distúrbio do esvaziamento gástrico pode estar presente mesmo depois de jejum aparentemente correto. Entre pacientes em agonista GLP-1, a orientação multissocietária ASA 2024 recomenda continuidade para muitos de baixo risco, mas enfatiza fase de aumento de dose, sintomas digestivos e comorbidades de motilidade. Em perfis de alto risco, considerar dieta líquida por 24 horas, ultrassom gástrico à beira-leito ou ajuste do plano anestésico, conforme disponibilidade e avaliação. Ultrassom gástrico depende de operador treinado e pode apoiar decisão, sem substituir história nem prometer ausência total de risco."
+        ],
+        [
+          "p",
+          "Aspiração pulmonar pode gerar pneumonite química, hipoxemia e insuficiência respiratória. Refluxo comum bem controlado não equivale obrigatoriamente a estômago cheio; obstrução intestinal com vômitos persistentes aumenta risco de forma marcante. Se cirurgia urgente precisa ocorrer apesar de risco elevado, a equipe define técnica e estratégias que protejam melhor via aérea, com equipamento/monitorização e plano de resgate. Não instruir paciente por conta própria a fazer jejum de 24 horas 'para garantir' segurança; a orientação personalizada pertence ao serviço anestésico."
+        ]
+      ]
+    ],
+    [
+      "medicamentos",
+      0,
+      [
+        [
+          "2",
+          "7. Medicações e antitrombóticos: evitar receitas genéricas"
+        ],
+        [
+          "p",
+          "O plano de medicamentos começa por reconciliação com doses, horários e indicação. Um betabloqueador em uso crônico costuma ser mantido; iniciá-lo em dose alta na véspera exclusivamente para prevenir eventos pode causar hipotensão/bradicardia. A decisão de manter ou suspender IECA/BRA antes de cirurgia depende de pressão, insuficiência cardíaca e orientação anestésica; estratégias diferem entre pessoas com HAS estável e pessoas cuja medicação trata disfunção ventricular. Estatinas são geralmente mantidas em quem já as utiliza."
+        ],
+        [
+          "p",
+          "Os inibidores do cotransportador sódio-glicose 2 (iSGLT2) devem ser interrompidos <strong>3–4 dias antes da cirurgia planejada</strong> pela AHA/ACC 2024, para reduzir risco de cetoacidose perioperatória. Se cirurgia urgente ocorre sem suspensão adequada, monitorar sinais de acidose/cetonemia conforme protocolo. Insulina e demais antidiabéticos exigem esquema para jejum, vigilância glicêmica e prevenção de hipoglicemia; não simplesmente 'suspender todo tratamento'."
+        ],
+        [
+          "p",
+          "Anticoagulantes exigem ponderar <strong>risco tromboembólico do paciente</strong>, <strong>risco de sangramento do procedimento</strong>, função renal, molécula e técnica anestésica, especialmente bloqueios neuraxiais. Fármacos orais diretos são geralmente manejados com suspensão temporária e reinício programado sem ponte rotineira, mas horários dependem das características; varfarina e prótese mecânica exigem algoritmo próprio. Antiagregantes em pacientes com stent recente representam cenário particularmente delicado: suspender ambos sem conversar com cardiologia pode ocasionar trombose de stent."
+        ],
+        [
+          "3",
+          "Quem define o tempo de suspensão?"
+        ],
+        [
+          "p",
+          "A decisão deve ser compartilhada por cirurgia, anestesia e responsável pela anticoagulação. Registrar última dose, prazo de reinício condicionado à hemostasia, plano de profilaxia de trombose e quem aciona mudanças. O plano da anestesia regional pode exigir intervalos diferentes do plano de cirurgia de baixo risco de sangramento. Não inferir intervalos de apixabana, rivaroxabana ou dabigatrana a partir do nome genérico 'DOAC': função renal e dose importam."
+        ],
+        [
+          "t",
+          [
+            "Classe",
+            "Principal pergunta",
+            "Erro frequente"
+          ],
+          [
+            [
+              "iSGLT2",
+              "Foi suspenso 3–4 dias antes quando eletivo?",
+              "Ignorar risco de cetoacidose euglicêmica"
+            ],
+            [
+              "Betabloqueador crônico",
+              "Há indicação e estabilidade?",
+              "Suspender abruptamente ou iniciar dose alta na véspera"
+            ],
+            [
+              "Anticoagulante",
+              "Qual indicação, função renal e risco da operação?",
+              "Ponte universal ou suspensão sem plano de reinício"
+            ],
+            [
+              "Antiagregante pós-stent",
+              "Qual tipo/tempo desde intervenção e risco trombótico?",
+              "Suspender por conta própria"
+            ],
+            [
+              "GLP-1",
+              "Há sintomas ou esvaziamento gástrico retardado?",
+              "Regra uniforme para todos, sem anestesia"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Aprofundamento — reconciliação medicamentosa e o triângulo trombose, hemorragia e anestesia"
+        ],
+        [
+          "p",
+          "A lista de medicamentos de um paciente pode conter maior risco perioperatório que uma alteração modesta de exame laboratorial. Um anticoagulante interrompido sem plano expõe a embolia; se mantido diante de procedimento com grande sangramento ou punção neuraxial, pode produzir hematoma grave. Interromper iSGLT2 tardiamente favorece cetoacidose com glicemia não necessariamente alta, e iniciar betabloqueador na véspera pode causar hipotensão. A proposta é um método replicável: registrar princípio ativo, indicação, dose, via, horários, última tomada, função renal, risco do procedimento, estratégia anestésica e quando será reiniciado. O profissional que recebe o paciente deve conseguir explicar o motivo de cada exceção."
+        ],
+        [
+          "3",
+          "Quatro perguntas que vêm antes do calendário dos fármacos"
+        ],
+        [
+          "p",
+          "Primeira pergunta: por que a pessoa usa o agente? Apixabana por FA permanente e apixabana por trombose venosa na semana anterior representam riscos trombóticos diferentes. Segundo: que operação será feita e qual sangramento importa? Hemorragia pequena em cirurgia de catarata não tem consequência comparável à hemorragia em canal vertebral. Terceiro: qual é a farmacocinética efetiva? Clearance renal, interação com outros medicamentos, dose, peso e idade mudam intervalo de suspensão. Quarto: a anestesia planeja bloqueio neuraxial ou bloqueio profundo? Para essas técnicas, as recomendações ASRA são mais restritivas que o tempo de suspensão usado em muitas pequenas cirurgias."
+        ],
+        [
+          "p",
+          "O plano deve contemplar também quem prescreveu a terapia crônica. Cirurgião pode compreender melhor risco do campo operatório; cardiologista, neurologista ou hematologista domina parte do risco tromboembólico; anestesiologista define requisitos para punção e retirada de cateter; enfermagem e farmácia operacionalizam horário. Se houver divergência, a decisão deve ser documentada e comunicada a todos. Ordem vaga de 'suspender anticoagulante' sem data, horário e critério de reinício é incompleta."
+        ],
+        [
+          "3",
+          "Anticoagulantes orais diretos: a suspensão breve não costuma exigir ponte"
+        ],
+        [
+          "p",
+          "CHEST 2022 recomenda, para pacientes em DOAC com necessidade de interromper antes de cirurgia eletiva, suspensão geralmente entre 1 e 2 dias para apixabana, rivaroxabana e edoxabana; para dabigatrana, com eliminação renal importante, de 1 até 4 dias conforme função renal e risco hemorrágico. Essas são <strong>faixas de referência da diretriz</strong>, não prescrições para qualquer técnica. Cirurgias de sangramento alto, insuficiência renal, interações e anestesia neuraxial podem requerer janelas mais longas. Não utilizar TTPa/TP ou INR normais para garantir ausência de efeito de DOAC; testes quantitativos específicos têm papel em casos selecionados."
+        ],
+        [
+          "p",
+          "A recomendação CHEST 2022 é contra ponte perioperatória rotineira com heparina quando DOAC precisa ser suspenso. O motivo é a farmacocinética de início e término relativamente rápidos: inserir HBPM terapêutica em breve janela sem droga frequentemente só aumenta sangramento. Isso não elimina a necessidade de profilaxia de TEV após cirurgia de risco, que é uma indicação distinta com dose e janela próprios. Em quem teve tromboembolismo extremamente recente ou outra situação incomum de alto risco, individualizar com hematologia/cardiologia."
+        ],
+        [
+          "p",
+          "Após uma cirurgia com hemostasia adequada, CHEST sugere reinício em cerca de 24 horas após procedimentos de risco hemorrágico baixo/moderado e 48–72 horas após procedimentos de alto risco, conforme situação clínica. 'Contar horas' não permite ignorar sangramento ativo, drenos com sangue e reoperação iminente. A primeira dose pós-operatória depende de hemostasia, segurança neurológica e presença/retirada de cateter neuraxial. Documentar data e horário da última e da próxima dose, estado da ferida e equipe que autorizou reinício."
+        ],
+        [
+          "t",
+          [
+            "Agente / contexto",
+            "Intervalo ilustrativo da CHEST 2022 para suspensão eletiva",
+            "Decisão clínica adicional"
+          ],
+          [
+            [
+              "Apixabana",
+              "Em geral 1–2 dias antes, quando suspensão indicada",
+              "Sangramento do procedimento, dose e neuraxial podem prolongar"
+            ],
+            [
+              "Rivaroxabana",
+              "Em geral 1–2 dias",
+              "Função renal, dose e anestesia importam"
+            ],
+            [
+              "Edoxabana",
+              "Em geral 1–2 dias",
+              "Não usar mesma dose/intervalo de todos DOACs"
+            ],
+            [
+              "Dabigatrana",
+              "1–4 dias conforme função renal e procedimento",
+              "ClCr baixo prolonga efeito"
+            ],
+            [
+              "Ponte com heparina após interromper DOAC",
+              "Não recomendada de rotina",
+              "Profilaxia de TEV é outra decisão"
+            ],
+            [
+              "Reinício do DOAC",
+              "~24 h baixo/moderado ou 48–72 h alto sangramento",
+              "Somente se hemostasia, cateter e risco permitirem"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Bloqueio neuraxial: a anestesia tem seu próprio relógio"
+        ],
+        [
+          "p",
+          "O maior temor de anticoagulação e punção neuraxial é hematoma espinhal com lesão neurológica. As recomendações de anestesia regional da ASRA, quinta edição publicada em 2025, distinguem doses altas e baixas de DOAC, função renal, punção e retirada de cateter. Para apixabana em dose alta, a ASRA sugere interrupção de pelo menos 72 horas antes de bloqueio neuraxial/profundo; para dose baixa, pelo menos 36 horas em cenários pertinentes, com possibilidade de avaliação de nível residual quando intervalo menor. São orientações para <strong>procedimento neuraxial</strong>, não para todo ato cirúrgico sob anestesia geral. É perigoso copiar diretamente a tabela de suspensão de cirurgias superficiais da CHEST para raquianestesia."
+        ],
+        [
+          "p",
+          "Dabigatrana em dose alta pode exigir pelo menos 72 horas se ClCr ≥50 mL/min e 120 horas se ClCr 30–49 mL/min antes de técnicas neuraxiais; em ClCr muito reduzido, a técnica geralmente não deve ser feita sem avaliação especializada de nível residual. Outros anticoagulantes e heparinas possuem janelas próprias, inclusive para remoção do cateter e reinício. Confirmar o texto integral atual da ASRA, dose prescrita e intervalos adequados com anestesiologista. Um protocolo de cirurgia pouco hemorrágica não pode sobrepor a segurança da medula."
+        ],
+        [
+          "p",
+          "Antes da punção, a equipe deve confirmar última dose efetiva, função renal, uso concomitante de antiagregantes e a possibilidade de punção traumática. Depois, déficit motor novo, dor dorsal intensa, perda esfincteriana ou parestesias progressivas são emergência neurológica: hematoma espinhal precisa de avaliação e imagem imediatas. A prevenção requer planejamento de retirada de cateter antes do reinício do anticoagulante. Não retirar cateter ou reiniciar anticoagulação por rotina administrativa sem consultar a janela específica."
+        ],
+        [
+          "3",
+          "Varfarina e a ideia equivocada de 'ponte obrigatória'"
+        ],
+        [
+          "p",
+          "Varfarina age pela síntese de fatores dependentes de vitamina K e requer acompanhamento do INR; quando cirurgia exige interrupção, uma programação frequente prevê suspensão cerca de cinco dias antes e avaliação de INR próximo ao procedimento. O intervalo pode variar conforme INR de partida, idade, dieta, comorbidades e interações. Para alguns procedimentos de sangramento baixo, como pequena cirurgia dermatológica, a continuidade pode ser preferível. Sangramento ativo e procedimentos de emergência demandam abordagem de reversão e hemostasia não comparável à eletiva."
+        ],
+        [
+          "p",
+          "A CHEST 2022 recomenda contra ponte com heparina para pacientes com FA em uso de antagonista de vitamina K que precisam interrompê-lo; a recomendação é baseada no aumento do sangramento sem benefício correspondente de rotina. Para prótese valvar mecânica e TEV, a mesma diretriz faz recomendações condicionais contra a ponte em muitos contextos, mas doenças específicas de muito alto risco e protocolos brasileiros podem exigir avaliação diferenciada. Portanto, não ensinar 'prótese mecânica = heparina para todos' nem 'prótese mecânica = jamais fazer ponte'. É fundamental saber tipo e posição da prótese, tromboembolismo prévio e risco do procedimento."
+        ],
+        [
+          "p",
+          "Quando se decide pela retomada da varfarina, lembrar que efeito pleno leva dias. O paciente deve receber prescrição de INR e prazo de controle, além de revisar fármacos que interagem (antibióticos, antifúngicos, amiodarona). Uma eventual estratégia com heparina requer justificativa e definição de quando suspender/reiniciar conforme hemostasia. Documentar o raciocínio é particularmente útil no internato: não basta escrever 'liberar Clexane', porque profilaxia, anticoagulação terapêutica e ponte são conceitos com doses e indicações distintas."
+        ],
+        [
+          "3",
+          "Antiagregantes após stent: interrupção não é um detalhe da anestesia"
+        ],
+        [
+          "p",
+          "Aspirina e inibidores P2Y12 protegem contra trombose coronariana em contextos apropriados. A decisão perioperatória é dominada pela indicação: prevenção primária, prevenção secundária sem stent, stent antigo ou stent muito recente. AAS para prevenção primária frequentemente pode ser suspenso se cirurgia assim exigir e não houver outra indicação, enquanto suspensão em paciente com stent recente pode ser perigosa. A AHA/ACC 2024 favorece continuidade de aspirina quando possível em pacientes com stent, considerando risco de sangramento; a retirada de P2Y12 depende da janela pós-ICP, cardiologista e operação."
+        ],
+        [
+          "p",
+          "Quando a suspensão é realmente indicada, a AHA/ACC 2024 relaciona retorno da função plaquetária geralmente em cerca de 4 dias para AAS, 5–7 dias para clopidogrel, 7–10 dias para prasugrel e 3–5 dias para ticagrelor. Esses intervalos não autorizam suspender o fármaco em todo paciente; são informações farmacológicas utilizadas após a decisão clínica. Também podem mudar diante de cirurgia neuroaxial, risco de trombose muito alto, procedimento que permite manter antiagregação ou urgência. Não prometer que 'suspender 5 dias' por si só torna a operação segura."
+        ],
+        [
+          "t",
+          [
+            "Antiagregante",
+            "Intervalo de recuperação plaquetária aproximado (AHA/ACC 2024)",
+            "Cuidado"
+          ],
+          [
+            [
+              "Ácido acetilsalicílico",
+              "~4 dias",
+              "Não suspender automaticamente em stent"
+            ],
+            [
+              "Clopidogrel",
+              "5–7 dias",
+              "Stent recente e necessidade de CABG mudam risco"
+            ],
+            [
+              "Ticagrelor",
+              "3–5 dias",
+              "Interações e risco trombótico"
+            ],
+            [
+              "Prasugrel",
+              "7–10 dias",
+              "Maior duração; contraindicações próprias"
+            ],
+            [
+              "Nenhum fármaco",
+              "Não é sinônimo de baixo risco",
+              "A pessoa pode ter isquemia ativa e grande risco cirúrgico"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Diabetes: mudar um remédio sem desenhar vigilância glicêmica é insuficiente"
+        ],
+        [
+          "p",
+          "Diabetes associa-se a complicações de ferida, infecção, eventos cardiovasculares, hipoglicemia e cetoacidose. Hemoglobina glicada recente ajuda a estimar controle crônico, mas não identifica todos os riscos de jejum do dia cirúrgico. NICE NG45 recomenda considerar HbA1c de quem tem diabetes, particularmente se não foi medida nos três meses anteriores; a decisão de adiar por mau controle não pode ser reduzida a um número universal para urgência e câncer tempo-sensível. O plano precisa incluir glicemia capilar/venosa, ajuste de insulina basal e prandial, perfusão de glicose se necessário, reconhecimento de cetoacidose e forma de alimentar o paciente depois."
+        ],
+        [
+          "p",
+          "A AHA/ACC 2024 recomenda suspender iSGLT2 por 3–4 dias antes de cirurgia programada, justamente porque jejum, hormônios de estresse e menor disponibilidade de insulina favorecem cetogênese. Empagliflozina, dapagliflozina e canagliflozina são geralmente interrompidas pelo menos três dias antes; ertugliflozina, quatro. Uma glicemia de 150 mg/dL não exclui cetoacidose por iSGLT2. Se o procedimento é urgente, atenção a ânion-gap, bicarbonato, pH, beta-hidroxibutirato e sintomas, adotando protocolo hospitalar. Reiniciar quando houver estabilidade, ingestão e avaliação da equipe, não automaticamente na primeira noite."
+        ],
+        [
+          "p",
+          "Com insulina, proteger a necessidade basal em diabetes tipo 1 é essencial: suspensão total pode causar cetoacidose mesmo sem refeição. Protocolos ajustam insulina basal, suspendem prandial enquanto há jejum e oferecem correção/infusão quando necessário conforme internação, bomba de insulina e grau de cirurgia. Metformina pode ser mantida em alguns procedimentos e contextos conforme guideline, mas risco de LRA, hipóxia, jejum prolongado, contraste e política institucional podem justificar suspensão temporária. Exigir instrução escrita específica para paciente, não resumo 'tira remédio do diabetes'."
+        ],
+        [
+          "3",
+          "Agonistas GLP-1: o protocolo mais recente superou a suspensão universal"
+        ],
+        [
+          "p",
+          "Os agonistas GLP-1 e fármacos semelhantes podem reduzir esvaziamento gástrico e causar náusea e vômitos, especialmente no período de aumento de dose. Em orientação multissocietária da ASA e sociedades de 2024, a maioria dos pacientes eletivos com baixo risco de conteúdo gástrico residual <strong>pode continuar</strong> a medicação; pacientes com sintomas GI importantes, escalonamento recente ou condições de gastroparesia merecem avaliação adicional, como dieta líquida por 24 horas em perfis selecionados, ajuste da técnica anestésica, ultrassom gástrico quando indicado ou reprogramação em raros casos. Essa recomendação não significa que qualquer pessoa em semaglutida está sempre em jejum seguro."
+        ],
+        [
+          "p",
+          "Ao registrar uso de semaglutida, liraglutida, dulaglutida ou agentes relacionados, identificar via e periodicidade, última dose, fase de titulação, sintomas, antecedente de broncoaspiração e medicamentos que alteram motilidade. Uma regra antiga de 'suspender todas as injeções por sete dias' pode causar interrupção desnecessária do controle glicêmico, mas ignorar vômitos e saciedade intensa também é imprudente. A equipe de anestesia deve individualizar de acordo com a recomendação institucional vigente e condições da pessoa."
+        ],
+        [
+          "3",
+          "Hipertensão, bloqueio do SRAA e betabloqueadores"
+        ],
+        [
+          "p",
+          "Pessoas com hipertensão tratada em geral mantêm parte relevante da terapia crônica. A AHA/ACC 2024 admite omitir IECA/BRA cerca de 24 horas antes de determinadas cirurgias de risco elevado quando a indicação é apenas hipertensão bem controlada, visando reduzir hipotensão intraoperatória; em quem usa o agente para IC com fração de ejeção reduzida, continuidade pode ser razoável. Esse contraste demonstra por que 'parar losartana' não é protocolo universal. A decisão deve considerar PA habitual, estabilidade, rim, volume e anestesia, com reinício oportuno após operação quando seguro."
+        ],
+        [
+          "p",
+          "Betabloqueador em uso crônico geralmente deve ser mantido, se não houver contraindicação clínica naquele momento. Quando há indicação nova, iniciá-lo em tempo suficiente para avaliar resposta e tolerância, e não no dia da cirurgia em altas doses. Clonidina crônica interrompida abruptamente pode causar hipertensão rebote. Diuréticos devem ser avaliados conforme causa da prescrição — retenção de volume de IC não é o mesmo que HAS sem congestão — e risco de hipovolemia/alteração eletrolítica. Estatinas em uso por indicação cardiovascular são habitualmente mantidas."
+        ],
+        [
+          "t",
+          [
+            "Classe",
+            "Pergunta de segurança",
+            "Orientação geral — exigir plano individual"
+          ],
+          [
+            [
+              "Betabloqueador crônico",
+              "Há bradicardia, bloqueio ou choque?",
+              "Manter em geral; não iniciar dose alta no dia da cirurgia"
+            ],
+            [
+              "IECA/BRA para HAS",
+              "Risco de hipotensão sob anestesia elevado?",
+              "Considerar omitir ~24 h em selecionados; reiniciar quando seguro"
+            ],
+            [
+              "IECA/BRA para ICFEr",
+              "Qual benefício contínuo e estabilidade?",
+              "Continuidade pode ser razoável, discussão com anestesia"
+            ],
+            [
+              "Diurético de alça",
+              "Paciente está congesto ou depletado?",
+              "Ajuste guiado por volemia e eletrólitos"
+            ],
+            [
+              "iSGLT2",
+              "Última dose, jejum e cetogênese?",
+              "Suspender 3–4 dias antes da eletiva"
+            ],
+            [
+              "GLP-1",
+              "Sintomas GI, titulação e risco de aspiração?",
+              "Muitos podem continuar; alto risco requer mitigação individual"
+            ],
+            [
+              "Insulina",
+              "Há insulina basal necessária?",
+              "Plano para basal/prandial com checagem glicêmica"
+            ],
+            [
+              "Varfarina/DOAC",
+              "Tromboembolismo, sangramento e neuraxial?",
+              "Última dose e reinício documentados; sem ponte universal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Casos adicionais que obrigam a escolher entre riscos"
+        ],
+        [
+          "p",
+          "<strong>Caso medicamentoso 1:</strong> paciente de 69 anos com FA, apixabana em dose terapêutica e ClCr preservado fará herniorrafia, mas anestesista prevê raquianestesia. A família ouviu que bastava suspender 24 horas. A janela da CHEST para cirurgia de baixo sangramento não define segurança do bloqueio neuraxial; ASRA 2025 recomenda intervalos mais longos para apixabana de dose alta, frequentemente ≥72 horas. Conduta: documentar dose/última tomada, rever clearance, técnica e plano de reinício/cateter; não adotar ponte rotineira. Por que importa: anestesia acrescenta risco não refletido apenas pelo campo cirúrgico."
+        ],
+        [
+          "p",
+          "<strong>Caso medicamentoso 2:</strong> mulher de 57 anos em semaglutida há seis meses, dose estável e sem sintomas gástricos fará colecistectomia eletiva. A medicação não deve ser suspensa automaticamente só porque é semanal; a orientação multissocietária 2024 admite continuar em pacientes de baixo risco, após avaliação da anestesia. Se a mesma paciente estivesse escalando dose e vomitando, dieta líquida, ultrassom gástrico ou reprogramação poderiam ser considerados. Por que importa: recomendação varia com risco GI e não com nome comercial."
+        ],
+        [
+          "p",
+          "<strong>Caso medicamentoso 3:</strong> homem de 74 anos com FA em varfarina estável fará cirurgia cutânea pequena. A interrupção e ponte com enoxaparina foram sugeridas sem avaliação de sangramento. Pequenas intervenções dermatológicas podem ser realizadas com varfarina mantida em contextos adequados, e a CHEST 2022 recomenda contra ponte rotineira em FA. Revisar INR, técnica, capacidade de hemostasia e acordo com cirurgião; não presumir que uma injeção de heparina representa segurança adicional."
+        ],
+        [
+          "3",
+          "Questões integradoras de farmacologia"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q9.</strong> Apixabana terapêutica e raquianestesia planejada: é seguro adotar automaticamente a suspensão de 24 horas que poderia servir para algumas cirurgias superficiais? A) Sim; B) não, consultar intervalo próprio ASRA para dose e função renal; C) apenas trocar por AAS; D) administrar vitamina K. <strong>Gabarito B.</strong> A ignora hematoma espinhal, C não anticoagula adequadamente, D não reverte DOAC. Revisão: janela de punção é diferente de janela da cirurgia.",
+            "<strong>Q10.</strong> Para todos os pacientes usando semaglutida, a orientação ASA multissocietária 2024 exige parar sete dias? A) Sim; B) não, a maioria com baixo risco pode continuar, enquanto alto risco GI requer medidas específicas; C) somente pacientes com HAS devem parar; D) suspender insulina basal em conjunto. <strong>Gabarito B.</strong> A ignora atualização, C não é critério e D pode induzir cetoacidose. Revisão: sintomas e fase de escalonamento modificam conduta.",
+            "<strong>Q11.</strong> Paciente com FA em DOAC que precisa interromper para cirurgia eletiva deve receber ponte de rotina com heparina terapêutica? A) Sim; B) não, CHEST 2022 sugere contra ponte rotineira; C) apenas se o DOAC se chama apixabana; D) sempre usar doses de TEV profiláticas como ponte. <strong>Gabarito B.</strong> A/C generalizam incorretamente e D confunde profilaxia com ponte. Revisão: avaliar risco trombótico excepcional com equipe.",
+            "<strong>Q12.</strong> Empagliflozina foi tomada no dia anterior à cirurgia urgente e glicemia é 155 mg/dL. Pode-se excluir cetoacidose? A) Sim; B) não, é possível acidose euglicêmica, investigar cetonas/ânion-gap conforme contexto; C) sim se HbA1c normal; D) sim se não houver polidipsia. <strong>Gabarito B.</strong> A/C/D podem perder emergência metabólica. Revisão: iSGLT2 + jejum/estresse exige vigilância mesmo sem hiperglicemia marcada."
+          ],
+          0
+        ],
+        [
+          "p",
+          "Referências: Gualandro DM et al., SBC 2024, manejo da anticoagulação/antiplaquetários, https://pmc.ncbi.nlm.nih.gov/articles/PMC12094288/ ; CHEST 2022, Perioperative Management of Antithrombotic Therapy, https://journal.chestnet.org/article/S0012-3692(22)01359-9/fulltext ; ASRA 2025, Regional Anesthesia in the Patient Receiving Antithrombotic Therapy, 5ª ed., https://rapm.bmj.com/content/early/2025/09/16/rapm-2024-105766 ; AHA/ACC 2024, JACC DOI 10.1016/j.jacc.2024.06.013 ; ASA Multisociety GLP-1 2024, https://www.asahq.org/about-asa/newsroom/news-releases/2024/10/new-multi-society-glp-1-guidance ."
+        ]
+      ]
+    ],
+    [
+      "especial",
+      0,
+      [
+        [
+          "2",
+          "8. Populações especiais, fragilidade e ética"
+        ],
+        [
+          "p",
+          "<strong>Idoso frágil:</strong> fragilidade, cognição, independência, risco de delirium, polifarmácia e suporte domiciliar podem prever desfechos melhor que idade isolada. SBC 2024 recomenda avaliar fragilidade em idosos de cirurgia intermediária ou alta. Discutir funcionalidade desejada, reabilitação, objetivos de cuidado e possibilidade de perda temporária de autonomia. Avaliar anemia, nutrição e mobilidade."
+        ],
+        [
+          "p",
+          "<strong>Doença pulmonar:</strong> DPOC, asma, doença restritiva, apneia e infecção respiratória mudam risco de ventilação, hipoxemia e complicações pulmonares. Espirometria e RX devem ser direcionados à pergunta clínica ou ao tipo de cirurgia, não automáticos. Cessar tabagismo e otimizar broncodilatadores reduzem riscos. <strong>DRC:</strong> ajustar fármacos, fluidos e evitar nefrotóxicos quando possível; a eTFG importa mais que olhar creatinina isolada em pessoa sarcopênica."
+        ],
+        [
+          "p",
+          "<strong>Cirrose e doença hepática:</strong> avaliar ascite, varizes, encefalopatia, função renal e coagulação, com escores hepáticos contextualizados. INR em cirrose não é medida isolada de 'proteção' contra trombose nem razão suficiente para transfusão profilática. <strong>Diabetes/obesidade:</strong> integrar controle metabólico, via aérea e tromboprofilaxia. <strong>Gestação:</strong> indicar avaliação anestésica e obstétrica especializada, sem importar o jejum/anticoagulação de paciente não gestante."
+        ],
+        [
+          "p",
+          "<strong>Consentimento informado:</strong> explicar benefício, alternativas, riscos pertinentes e possibilidade de adiamento; reconhecer decisões do paciente com capacidade. Avaliação pré-anestésica deve ser conduzida segundo exigências éticas e normativas brasileiras vigentes, sem reproduzir referência legal imprecisa de resumo antigo. Documentar discussões e plano de comunicação na transição da sala cirúrgica para recuperação."
+        ],
+        [
+          "3",
+          "Aprofundamento — fragilidade, pulmão, rim, fígado, nutrição e objetivos de cuidado"
+        ],
+        [
+          "p",
+          "O risco cirúrgico não termina na coronária. Fragilidade, doença respiratória, função renal, hipertensão portal, obesidade, desnutrição, limitação cognitiva e falta de suporte para alta podem transformar uma operação tecnicamente simples em internação longa. Para uma apostila de Cirurgia Geral, esses domínios precisam ser ensinados como mecanismos que alteram cicatrização, ventilação, volume e capacidade de reabilitação. Nenhum escore cardiovascular substitui a avaliação global; e nenhum exame laboratorial isolado representa funcionalidade, reserva nutricional ou capacidade de aderir à recuperação."
+        ],
+        [
+          "3",
+          "1. Idoso frágil: operar é uma decisão sobre função e autonomia"
+        ],
+        [
+          "p",
+          "Idade cronológica não equivale a fragilidade. A pessoa de 84 anos que caminha, realiza atividades instrumentais e não tem declínio cognitivo pode suportar estresse de modo diferente da de 68 anos com quedas, sarcopenia, desnutrição e perda de autonomia. A SBC 2024 recomenda avaliação de fragilidade em idosos submetidos a operações de risco intermediário ou alto com instrumento específico. Escalas como Clinical Frailty Scale são úteis quando corretamente aplicadas a condição basal, e não ao paciente sedado ou acamado apenas pela internação. Documentar dependência para banho, roupa, compras, preparo de alimentos e mobilidade."
+        ],
+        [
+          "p",
+          "Fragilidade aumenta risco de delirium, institucionalização e incapacidade após cirurgia. Perguntar memória basal, diagnóstico de demência, episódio anterior de delirium, déficits visuais/auditivos, álcool e medicamentos com efeito anticolinérgico ou sedativo. Métodos de prevenção incluem assegurar óculos e aparelhos auditivos, sono, orientação, hidratação proporcional e mobilização precoce, além de abordar dor e constipação. A meta não deve ser apenas 'sobreviveu à cirurgia', mas 'conseguiu voltar à condição funcional desejada', que pode requerer reabilitação e cuidador por semanas."
+        ],
+        [
+          "p",
+          "Consentimento para pessoa com suspeita de déficit cognitivo exige avaliação da capacidade decisória para a decisão específica e do suporte legal quando necessário. Demência não significa ausência automática de capacidade. Explicar benefícios, alternativa não operatória, consequências do adiamento, risco de delirium e perda funcional. Cirurgia paliativa para aliviar obstrução pode ser apropriada mesmo quando cura não é possível, mas exige alinhamento de objetivos. Avaliação pré-operatória deve evitar impor condutas simplesmente porque o paciente é idoso."
+        ],
+        [
+          "3",
+          "2. Doença pulmonar: risco de complicações depende de função, procedimento e técnica"
+        ],
+        [
+          "p",
+          "DPOC e asma elevam risco quando descompensadas, especialmente se há secreção excessiva, broncoespasmo, infecção ou hipoxemia. O risco de complicação pulmonar cresce com cirurgia torácica/abdominal alta, anestesia geral, duração longa, imobilidade e dor que impede expansão do tórax. A pergunta é se há doença ativa que pode ser otimizada, qual reserva respiratória e que cuidados serão necessários na recuperação. RX de tórax e espirometria não são exames obrigatórios para todo fumante; indicá-los se resultado muda controle da doença ou planejamento de ressecção pulmonar, como orientam NICE/ESAIC."
+        ],
+        [
+          "p",
+          "Tabagismo afeta depuração mucociliar, inflamação brônquica, cicatrização e perfusão; cessar antes de cirurgia melhora riscos, e iniciar intervenção mesmo próxima do procedimento ainda pode oferecer benefício, sem inventar intervalo mínimo rígido abaixo do qual 'não vale parar'. Oferecer aconselhamento, terapia conforme indicação e continuidade pós-operatória. Quando há infecção respiratória aguda significativa ou asma exacerbada, discutir adiamento de eletiva e otimização. Em paciente com DPOC estável, garantir broncodilatadores e planejar analgesia, mobilização e suporte respiratório adequado."
+        ],
+        [
+          "p",
+          "A apneia obstrutiva do sono pode estar subdiagnosticada e aumenta risco de obstrução respiratória sob sedação, opioides e no pós-operatório. Questionários como STOP-Bang ajudam a rastrear risco, mas não são polissonografia nem autorizam diagnóstico definitivo. Perguntar ronco, pausas observadas, sonolência, pressão alta, IMC e circunferência cervical; revisar uso prévio de CPAP. Paciente de alto risco pode precisar de plano de monitorização mais intenso e analgesia poupadora de opioides; a presença de CPAP em casa não significa que ele será instalado sem orientação na recuperação."
+        ],
+        [
+          "t",
+          [
+            "Pista",
+            "Risco pulmonar",
+            "Conduta pré-operatória proporcional"
+          ],
+          [
+            [
+              "Broncoespasmo ativo",
+              "Hipoxemia, pressão ventilatória alta",
+              "Otimizar doença; reavaliar eletiva"
+            ],
+            [
+              "DPOC estável",
+              "Atelectasia, retenção de secreção",
+              "Manter tratamento, avaliar reserva conforme cirurgia"
+            ],
+            [
+              "Apneia/ronco com opioides",
+              "Hipoventilação e obstrução em recuperação",
+              "Planejar analgesia e monitorização"
+            ],
+            [
+              "Infecção respiratória febril",
+              "Pneumonia/hipoxemia",
+              "Tratar e reavaliar cronograma quando eletivo"
+            ],
+            [
+              "Cirurgia abdominal alta",
+              "Dor e redução de ventilação basal",
+              "Analgesia e mobilização/respiratório desde planejamento"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3. Doença renal: creatinina isolada não descreve reserva"
+        ],
+        [
+          "p",
+          "A creatinina sérica depende de massa muscular e produção além da filtração. Uma pessoa frágil e sarcopênica pode apresentar creatinina aparentemente discreta com eTFG muito reduzida. Avaliar tendência eTFG, potássio, sódio, volume, albuminúria quando pertinente, uso de nefrotóxicos e necessidade de contraste. Risco de LRA aumenta com sepse, hipotensão, sangramento, anemia, doença renal preexistente, congestão e fármacos que afetam perfusão. O plano deve comunicar necessidade de hemodinâmica estável, escolha de fluidos e ajuste de doses, sem prometer que a infusão profilática de grandes volumes previne toda injúria."
+        ],
+        [
+          "p",
+          "Em paciente dialítico, considerar horário de diálise recente, peso seco, acesso vascular, potássio e necessidade de diálise pós-operatória. Lesão de acesso por punção ou compressão desnecessária pode comprometer tratamento crônico. Distúrbios de cálcio/fósforo e anemia renal coexistem. Não generalizar suspensão de todos medicamentos nefroprotetores por ser 'renal'; selecionar por hemodinâmica, potássio, função renal e indicação. A equipe deve distinguir necessidade de pré-diálise otimizada de uma urgência cirúrgica que não pode esperar agenda ambulatorial."
+        ],
+        [
+          "3",
+          "4. Cirrose: portal, coagulação, rim e desnutrição formam um conjunto"
+        ],
+        [
+          "p",
+          "Cirrose aumenta risco por hipertensão portal, ascite, coagulopatia complexa, trombocitopenia, desnutrição, imunidade alterada e alterações de circulação sistêmica. Escores como Child-Pugh e MELD ajudam a quantificar disfunção hepática, mas não capturam por completo risco do procedimento nem presença de hipertensão portal. Avaliar ascite, história de sangramento por varizes, encefalopatia, infecções, função renal, bilirrubina, albumina e sódio. A mesma pessoa com MELD relativamente modesto pode ter complicação importante em cirurgia abdominal urgente com infecção; por isso a decisão envolve hepatologia e cirurgia quando possível."
+        ],
+        [
+          "p",
+          "O INR em cirrose não é medida isolada de risco hemorrágico porque vias pró-coagulantes e anticoagulantes podem estar alteradas. Corrigir INR pré-operatório com plasma em qualquer cirrótico, sem sangramento ou indicação contextual, pode aumentar volume e pressão portal sem resolver risco. A investigação deve considerar contagem de plaquetas, fibrinogênio, história de sangramento e, conforme serviço, testes viscoelásticos em cenários adequados, sem tratá-los como garantia de hemostasia. A necessidade de intervenção sobre ascite, nutrição ou profilaxia de infecção precisa ser individualizada."
+        ],
+        [
+          "p",
+          "O potencial de descompensação após cirurgia é alto em insuficiência hepática avançada. Uma avaliação clínica responsável pode recomendar adiar eletiva para otimização, escolher técnica menos invasiva, transferir para centro de maior complexidade ou não operar quando riscos excedem benefício. Informar que uma classificação Child A não autoriza todas as operações complexas e que Child C não constitui contraindicação absoluta independente da urgência. O cuidado é avaliar o que acontece se não operar, não apenas qual seria a mortalidade estatística da cirurgia."
+        ],
+        [
+          "3",
+          "5. Nutrição: albumina não é sinônimo de avaliação nutricional"
+        ],
+        [
+          "p",
+          "Desnutrição aumenta risco de infecção de sítio cirúrgico, deiscência, sarcopenia, delirium, fraqueza respiratória e recuperação prolongada. A história de perda involuntária de peso, redução da ingestão, dificuldade de mastigar/deglutir, sintomas intestinais e doença inflamatória é tão importante quanto IMC. Obesidade pode coexistir com baixa massa muscular e deficiência de proteínas e micronutrientes; portanto, peso alto não exclui desnutrição. Ferramentas clínicas de triagem nutricional como NRS-2002 podem sinalizar necessidade de equipe de nutrição."
+        ],
+        [
+          "p",
+          "Albumina sérica baixa prediz pior prognóstico em muitas coortes, mas também é reagente negativo de fase aguda e não mede isoladamente reserva nutricional. Um paciente séptico com albumina baixa pode necessitar controle do foco mais urgentemente que suplementação proteica isolada; já a pessoa com perda de 10% do peso em poucos meses antes de cirurgia oncológica merece investigação dietética detalhada e suporte quando o tempo permite. A decisão sobre aporte oral, enteral e intervenção nutricional deve seguir função gastrointestinal, risco de aspiração e procedimento."
+        ],
+        [
+          "3",
+          "6. Imunossupressão, corticoterapia e complicações prévias"
+        ],
+        [
+          "p",
+          "Pessoas com corticoterapia prolongada podem apresentar supressão do eixo hipotálamo-hipófise-adrenal, risco de infecção e alteração de cicatrização. Contudo, prescrever 'dose de estresse' máxima de hidrocortisona indiscriminadamente gera hiperglicemia e efeitos adversos. Perguntar dose, potência, via e duração, suspensão recente, sinais clínicos de insuficiência adrenal e magnitude do estresse cirúrgico; o plano de cobertura depende de endocrinologia/anestesia e orientação institucional. Crises adrenais com hipotensão refratária são emergência de diagnóstico/tratamento, não motivo para ignorar riscos metabólicos do excesso de esteroide."
+        ],
+        [
+          "p",
+          "Fármacos biológicos, metotrexato, antirreumáticos e imunomoduladores variam em indicação e risco; não é correto 'suspender todos porque haverá cirurgia'. Em operações ortopédicas com prótese, diretrizes de reumatologia muitas vezes distinguem manutenção de agentes convencionais de suspensão temporária de biológicos e JAK inibidores, ponderando controle da doença e infecção. Cirurgia urgente infectada exige outra decisão. A equipe deve consultar prescriber e protocolo específico do procedimento, especialmente quando a retirada acarreta exacerbação de doença sistêmica."
+        ],
+        [
+          "3",
+          "7. Delirium, analgesia crônica e uso de substâncias"
+        ],
+        [
+          "p",
+          "Uso crônico de opioides modifica sensibilidade à analgesia e aumenta risco de abstinência, hipoventilação e controle inadequado de dor. Benzodiazepínicos em uso frequente não podem ser simplesmente retirados sem avaliação de abstinência; por outro lado, aumentar sedativos em idoso frágil pode favorecer delirium. Perguntar álcool, tabaco, cannabis e outras substâncias com linguagem não julgadora, anotando quantidades e último uso, porque intoxicação aguda, sedação e abstinência são riscos perioperatórios reais. A equipe deve considerar plano de analgesia multimodal e estratégia de recuperação adaptada."
+        ],
+        [
+          "p",
+          "O plano de prevenção de delirium não começa quando o paciente agita no pós-operatório. Identificar fatores predisponentes e reduzir privação de sono, contenção desnecessária, desidratação, constipação e alterações de sensório desde o pré-operatório. O risco não decorre apenas do anestésico; inflamação, dor, medicamentos e ambiente contribuem. Documentar estado mental basal para distinguir demência de delirium agudo e facilitar avaliação de mudança pós-operatória."
+        ],
+        [
+          "3",
+          "8. Casos didáticos de populações especiais"
+        ],
+        [
+          "p",
+          "<strong>Caso especial A:</strong> homem de 76 anos com cirrose, ascite, DRC e anemia precisa de colectomia por neoplasia obstrutiva tempo-sensível. A pergunta não é simplesmente 'Child B permite operar?'. Estimar risco hepático e cirúrgico, investigar encefalopatia, ascite, infecção, desnutrição e hemostasia; discutir alternativas, centro de complexidade adequada e tempo para estabilização, preservando controle do problema obstrutivo. Por que importa: dois pacientes com o mesmo escore hepático podem ter prognósticos muito diferentes conforme operação/urgência."
+        ],
+        [
+          "p",
+          "<strong>Caso especial B:</strong> mulher de 81 anos independente até seis meses atrás, agora com três quedas, perda de peso, piora de memória e uso de múltiplos sedativos, fará artroplastia eletiva. Investigar fragilidade, estado mental basal, medicamentos, anemia/nutrição e capacidade de recuperação domiciliar. Planejar prevenção de delirium e apoio para mobilização, não declarar 'alto risco' só por idade. Por que importa: boa indicação técnica não garante desfecho funcional favorável."
+        ],
+        [
+          "p",
+          "<strong>Caso especial C:</strong> homem de 59 anos com apneia obstrutiva do sono não tratada e DPOC estável fará cirurgia abdominal alta. Perguntar necessidade e disponibilidade de CPAP, oximetria basal, exacerbação recente, limitação funcional e uso de opioides. Otimizar tratamento respiratório e definir recuperação com vigilância e analgesia poupadora de opioides. Não exigir espirometria apenas por diagnóstico de DPOC, mas considerar quando o resultado realmente mudaria plano. Por que importa: o risco respiratório começa antes da extubação."
+        ],
+        [
+          "3",
+          "Apneia obstrutiva do sono: o planejamento não termina na intubação"
+        ],
+        [
+          "p",
+          "A apneia obstrutiva do sono (AOS) está associada a colapso recorrente da via aérea superior durante o sono e pode aumentar vulnerabilidade a sedativos e opioides. Antes da operação, perguntar sobre ronco alto, pausas observadas, sonolência, hipertensão, obesidade, circunferência cervical, diagnóstico anterior e uso efetivo de CPAP. <strong>STOP-Bang é ferramenta de rastreio, não exame confirmatório.</strong> Um resultado alto merece comunicação à equipe e medidas proporcionais, não declaração automática de doença grave ou cancelamento universal de cirurgia."
+        ],
+        [
+          "p",
+          "Pessoa com AOS conhecida deve ter documentados o tratamento, adesão ao CPAP e, quando possível, configuração do dispositivo e necessidade usual de oxigênio. Distinguir AOS isolada de hipoventilação da obesidade, hipoxemia basal, hipertensão pulmonar e insuficiência cardíaca, que elevam a complexidade. Planejar técnicas anestésicas apropriadas, analgesia multimodal poupadora de opioides, posicionamento e vigilância respiratória na recuperação. Em circunstâncias indicadas, manter terapia positiva habitual no perioperatório com supervisão do serviço. Oxigênio suplementar não é sinônimo de ventilação adequada e pode mascarar episódios de hipoventilação."
+        ],
+        [
+          "t",
+          [
+            "Situação na avaliação",
+            "Pergunta útil",
+            "Implicação no plano"
+          ],
+          [
+            [
+              "Suspeita forte de AOS",
+              "Há ronco, pausas presenciadas e sonolência?",
+              "Estratificar e comunicar risco, sem exigir polissonografia universal antes da cirurgia"
+            ],
+            [
+              "AOS já diagnosticada",
+              "O CPAP é usado efetivamente? Há complicações associadas?",
+              "Organizar equipamento, vigilância e continuidade de tratamento quando aplicável"
+            ],
+            [
+              "Sedação profunda/opioides previstos",
+              "Qual a reserva respiratória e plano analgésico?",
+              "Planejar economia de opioides e monitorização adequada"
+            ],
+            [
+              "Hipoxemia de repouso ou hipoventilação",
+              "Há doença cardiopulmonar descompensada?",
+              "Investigar/otimizar e considerar ambiente de maior suporte"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "A polissonografia é útil quando existe indicação clínica, mas nem toda suspeita de AOS exige adiamento do tratamento cirúrgico, sobretudo quando há necessidade tempo-sensível e equipe preparada. O risco também depende de anestesia, procedimento e capacidade de monitorização pós-operatória. A ligação didática é importante: previsão de intubação difícil, risco de broncoaspiração, AOS e depressão respiratória pós-anestésica são problemas relacionados, <strong>mas não equivalentes</strong>."
+        ],
+        [
+          "p",
+          "Fontes: SBC, Diretriz de Avaliação Cardiovascular Perioperatória 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC12094288/ ; ESAIC Pre-operative Assessment 2024, https://esaic.org/guideline/pre-operative-evaluation-of-adults-undergoing-elective-noncardiac-surgery-1st-update/ ; ACS, Geriatric Surgery Resources/Optimal Preoperative Assessment, https://www.facs.org/quality-programs/accreditation-and-verification/geriatric-surgery-verification/resources/ ; NICE NG45, https://www.nice.org.uk/guidance/ng45/chapter/recommendations ."
+        ]
+      ]
+    ],
+    [
+      "fluxo",
+      0,
+      [
+        [
+          "2",
+          "9. Fluxo operacional de decisão e documentação"
+        ],
+        [
+          "o",
+          [
+            "Confirmar procedimento, indicação, urgência e alternativas; não iniciar pelo pedido de 'risco cirúrgico'.",
+            "Avaliar sintomas/condições ativas, comorbidades, ASA-PS, capacidade funcional, fragilidade e risco respiratório.",
+            "Estimar risco cirúrgico e cardiovascular por ferramenta apropriada quando relevante.",
+            "Perguntar se exames adicionais podem mudar decisão, tratamento, técnica anestésica ou planejamento de pós-operatório.",
+            "Definir otimização clínica possível e prazo compatível com doença cirúrgica.",
+            "Reconciliar medicações, alergias, antitrombóticos, dispositivos cardíacos e fármacos que influenciam jejum.",
+            "Avaliar via aérea e broncoaspiração; planejar alternativas e equipes de contingência.",
+            "Documentar decisão compartilhada: operar, adiar, tratar primeiro ou propor alternativa; comunicar riscos/responsabilidades à equipe."
+          ]
+        ],
+        [
+          "p",
+          "Uma avaliação de qualidade precisa dizer <strong>o que foi encontrado, por que é relevante e qual conduta será tomada</strong>. Escrever apenas 'ASA II, risco baixo, apto para cirurgia' pode ocultar o fato de que o paciente usa anticoagulante, tem apneia não diagnosticada ou porta dispositivo cardíaco. A documentação completa deve ser sucinta o suficiente para a equipe consultar e detalhada o suficiente para manter segurança durante transferências."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "10. Cinco casos clínicos comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Cirurgia de baixa complexidade e pedido de testes excessivos"
+        ],
+        [
+          "p",
+          "Mulher de 33 anos, sem comorbidades ou sintomas, indicada para excisão de pequena lesão de pele sob anestesia local, com exame normal. O solicitante pede ECG, ecocardiograma, RX, coagulograma e teste ergométrico. <strong>Hipótese:</strong> risco clínico e de procedimento baixos. <strong>Exames:</strong> em geral, sem indicação de bateria; investigar particularidades pertinentes. <strong>Raciocínio:</strong> exames de rotina não demonstram melhora quando o risco é baixo e podem gerar falsos positivos. <strong>Conduta:</strong> história/exame e esclarecimento do procedimento, sem atraso desnecessário. <strong>Por que importa:</strong> avaliar risco não significa solicitar o máximo de exames."
+        ],
+        [
+          "3",
+          "Caso 2 — Insuficiência cardíaca descompensada antes de cirurgia eletiva"
+        ],
+        [
+          "p",
+          "Homem de 68 anos, indicado para herniorrafia eletiva, com ortopneia recente, edema, estertores e ganho de peso. Tem antecedente de IC. <strong>Hipótese:</strong> IC descompensada, condição CV ativa. <strong>Exames:</strong> ECG, função renal/eletrólitos, biomarcadores e eco conforme avaliação. <strong>Raciocínio:</strong> a condição ativa importa mais que 'conseguir subir escadas no passado'. <strong>Conduta:</strong> avaliar/tratar IC e reprogramar eletiva após estabilização. <strong>Por que importa:</strong> escore não substitui identificação de instabilidade."
+        ],
+        [
+          "3",
+          "Caso 3 — Dor abdominal de emergência e baixa capacidade funcional"
+        ],
+        [
+          "p",
+          "Paciente de 76 anos com peritonite por perfuração intestinal e sepse; relata pouco exercício, DASI baixo e RCRI elevado. <strong>Hipótese:</strong> alto risco clínico em cirurgia de emergência. <strong>Exames:</strong> foco em estabilização, ECG e investigações indicadas, sem teste de estresse eletivo. <strong>Raciocínio:</strong> demora para 'liberação cardiológica' pode agravar sepse. <strong>Conduta:</strong> decisão cirúrgica imediata com anestesia e cuidados intensivos, otimizando riscos em paralelo. <strong>Por que importa:</strong> urgência muda a sequência, não elimina avaliação."
+        ],
+        [
+          "3",
+          "Caso 4 — Diabetes e empagliflozina"
+        ],
+        [
+          "p",
+          "Mulher de 59 anos com DM2 e IC, em empagliflozina, fará cirurgia eletiva de cólon. Não recebeu orientação sobre medicações; tomou dose na véspera. <strong>Hipótese:</strong> risco de cetoacidose perioperatória relacionada a iSGLT2, mesmo sem hiperglicemia intensa. <strong>Exames:</strong> revisar estado metabólico e investigação de cetonas/acidose quando apropriado. <strong>Conduta:</strong> comunicar à anestesia e cirurgia, reavaliar cronograma e aplicar protocolo; idealmente suspensão 3–4 dias em cirurgias planejadas. <strong>Por que importa:</strong> reconciliação de medicações evita complicação potencialmente grave."
+        ],
+        [
+          "3",
+          "Caso 5 — Anticoagulante, stent e cirurgia com risco de sangramento"
+        ],
+        [
+          "p",
+          "Homem de 71 anos em anticoagulação por FA, com stent coronário recente e indicação de cirurgia oncológica. <strong>Hipótese:</strong> risco trombótico e hemorrágico concorrentes. <strong>Exames:</strong> função renal, histórico de intervenção, medicações e avaliação cardíaca dirigida. <strong>Raciocínio:</strong> suspender toda terapia antitrombótica 'por segurança' pode ser perigoso; manter tudo sem plano também. <strong>Conduta:</strong> decisão conjunta cirurgia-anestesia-cardiologia sobre timing, antitrombóticos e reinício. <strong>Por que importa:</strong> não há resposta universal em uma única linha."
+        ],
+        [
+          "p",
+          "<strong>Caso adicional 6:</strong> homem de 64 anos, diabetes e IC compensada com empagliflozina, indicado para colectomia eletiva na próxima semana. Sua prescrição de preparo ainda não menciona o fármaco. O risco de cetoacidose perioperatória justifica suspensão ≥3 dias antes, monitoramento metabólico e plano de insulina/outros antidiabéticos durante o jejum. Se ele comparece após tomada de dose na véspera, discutir com anestesia e cirurgia necessidade de adiar ou monitorar segundo contexto. Por que importa: uma droga útil para coração e rim exige manejo específico em ambiente cirúrgico."
+        ],
+        [
+          "p",
+          "<strong>Caso adicional 7:</strong> mulher de 78 anos com estenose aórtica grave, síncope de esforço e insuficiência cardíaca, indicada para cirurgia ortopédica eletiva. Uma anotação anterior 'ASA III' não encerra a discussão. O conjunto de sintomas valvares demanda avaliação cardiovascular e decisão conjunta sobre otimização/abordagem valvar versus risco de adiamento, conforme urgência. Não solicitar apenas teste ergométrico como mecanismo automático de liberação. Por que importa: doença ativa pode impor risco muito maior que o escore resumido."
+        ],
+        [
+          "3",
+          "Caso aprofundado 6 — Ferropenia antes de artroplastia eletiva"
+        ],
+        [
+          "p",
+          "<strong>Paciente e problema:</strong> mulher de 59 anos, Hb 10,4 g/dL, VCM 75 fL, ferritina 11 ng/mL, sem instabilidade, com artroplastia em cinco semanas. Relata sangramento gastrointestinal intermitente. <strong>Hipótese:</strong> anemia ferropriva, com origem das perdas a esclarecer. <strong>Raciocínio:</strong> grande procedimento pode consumir reserva hematimétrica; ferritina baixa confirma forte suspeita de deficiência, mas não revela a fonte. <strong>Exames:</strong> revisão de hemograma, índices de ferro, avaliação dirigida de sangramento e testes conforme história. <strong>Conduta:</strong> discutir com cirurgia janela segura de otimização, tratar deficiência, investigar etiologia e planejar redução de perdas; transfusão não é tratamento etiológico de rotina em paciente estável. <strong>Por que importa:</strong> o PBM transforma a avaliação de risco em prevenção real."
+        ],
+        [
+          "3",
+          "Caso aprofundado 7 — Troponina elevada sem dor no pós-operatório"
+        ],
+        [
+          "p",
+          "<strong>Paciente e problema:</strong> homem de 73 anos com doença coronariana, DRC e colectomia de grande porte; troponina basal discretamente elevada, porém valor do primeiro dia pós-operatório é superior e há antecedente de queda pressórica e anemia aguda. Sem dor torácica. <strong>Hipóteses:</strong> MINS por desequilíbrio oferta/consumo, mas considerar causas não isquêmicas e critérios de infarto. <strong>Exames:</strong> troponina seriada, ECG, hemograma, função renal, saturação e exame dirigido. <strong>Interpretação:</strong> sintomas podem estar ausentes; comparação com basal impede confundir cronicidade com lesão aguda. <strong>Conduta:</strong> estabilizar perfusão, investigar possível sangramento e estratificar evento cardíaco com equipe, individualizando antitrombóticos devido à hemostasia recente. <strong>Por que importa:</strong> biomarcador positivo exige diagnóstico contextual, não reação automática."
+        ],
+        [
+          "3",
+          "Caso aprofundado 8 — Hipertensão grave e procedimento eletivo de risco elevado"
+        ],
+        [
+          "p",
+          "<strong>Paciente e problema:</strong> homem de 68 anos, diabetes e HAS, PA registrada nas três últimas consultas entre 182–190/108–114 mmHg apesar de tratamento irregular; fará colectomia eletiva. Sem sinais atuais de emergência hipertensiva. <strong>Hipótese:</strong> HAS persistentemente grave. <strong>Avaliação:</strong> confirmar medida, adesão, sintomas, órgão-alvo, capacidade funcional, risco cirúrgico e urgência oncológica. <strong>Interpretação:</strong> AHA/ACC 2024 prevê cenário em que se pode considerar reprogramação para melhor controle; não se trata de cancelamento automático. <strong>Conduta:</strong> decisão compartilhada com cirurgia e anestesia sobre curto período de otimização versus prejuízo da demora, evitando redução pressórica agressiva minutos antes da indução. <strong>Por que importa:</strong> risco exige equilíbrio temporal, não fórmula com número único."
+        ],
+        [
+          "3",
+          "Caso aprofundado 9 — Suspeita de apneia e analgesia pós-operatória"
+        ],
+        [
+          "p",
+          "<strong>Paciente e problema:</strong> mulher de 62 anos com obesidade, ronco alto, pausas respiratórias observadas e sonolência; fará cirurgia abdominal e tem previsão de analgesia opioide. Nega diagnóstico formal de AOS. <strong>Hipótese:</strong> AOS provável em rastreio; avaliar presença de hipoventilação ou doença cardiopulmonar. <strong>Exames:</strong> entrevista, avaliação de saturação e de doença associada; STOP-Bang pode estruturar rastreio, mas não confirma diagnóstico. <strong>Conduta:</strong> comunicar suspeita à anestesia, planejar analgesia multimodal, técnica de via aérea e recuperação com monitorização proporcional; polissonografia imediata não é regra absoluta. <strong>Por que importa:</strong> prevenir depressão respiratória no pós é parte da avaliação pré-operatória."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "11. Questões autorais comentadas"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q1.</strong> Paciente saudável fará pequeno procedimento com anestesia local. Qual melhor avaliação? A) Ecocardiograma e prova de esforço para todos; B) História e exame, testes adicionais apenas se indicados; C) RX e coagulograma obrigatórios; D) Angiografia coronária de rotina. <strong>Gabarito B.</strong> Justificativa: teste deve responder pergunta que muda manejo. A, C e D adicionam riscos/custos sem indicação. Revisão: cirurgia e paciente de baixo risco não exigem rastreio cardiovascular extensivo.",
+            "<strong>Q2.</strong> Qual afirmação correta sobre ASA-PS? A) Calcula mortalidade exata; B) Substitui RCRI; C) Descreve estado físico e gravidade sistêmica, acrescido de E se emergência; D) Prediz dificuldade de intubação sozinho. <strong>Gabarito C.</strong> A e B confundem natureza da classificação; D refere-se à via aérea. Revisão: ASA-PS é linguagem clínica, não calculadora de eventos individuais.",
+            "<strong>Q3.</strong> Sobre capacidade funcional &lt;4 METs antes de cirurgia: A) Proíbe toda operação; B) Exige teste de esforço de todos; C) Integra decisão considerando risco, sintomas, urgência e se o teste muda conduta; D) É irrelevante. <strong>Gabarito C.</strong> A/B aplicam limiares sem contexto; D despreza marcador prognóstico. Revisão: DASI e METs refinam estimativa, mas não substituem avaliação individual.",
+            "<strong>Q4.</strong> Segundo AHA/ACC 2024, iSGLT2 em cirurgia planejada devem ser interrompidos: A) Só no dia; B) 3–4 dias antes; C) 30 dias antes em todos; D) Nunca. <strong>Gabarito B.</strong> A pode ser insuficiente para reduzir cetoacidose; C não tem indicação geral; D desconsidera risco. Revisão: verificar quadro metabólico se cirurgia urgente impediu suspensão.",
+            "<strong>Q5.</strong> Qual afirmação sobre jejum em adulto saudável eletivo é correta? A) Todo líquido exige 8h; B) Líquidos claros podem ser permitidos até 2h; C) Jejum exclui broncoaspiração em obstrução intestinal; D) Jejum é idêntico em todas as situações. <strong>Gabarito B.</strong> A, C e D desprezam recomendações ASA e fisiopatologia do esvaziamento. Revisão: os intervalos dependem de conteúdo ingerido e risco de aspiração.",
+            "<strong>Q6.</strong> Paciente com ortopneia nova e edema pulmonar antes de procedimento eletivo. Melhor conduta: A) Prosseguir pois RCRI pode ser zero; B) Teste ergométrico imediato; C) Avaliar e tratar condição cardíaca ativa, discutindo adiamento; D) Liberar sem exames pelo ASA. <strong>Gabarito C.</strong> A/D confundem escores com estabilidade; B ignora descompensação. Revisão: tratar doença ativa vem antes de otimização eletiva."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 7:</strong> paciente com risco operatório baixo e boa capacidade funcional precisa de teste ergométrico obrigatório antes de cirurgia superficial? A) Sim; B) não, investigar somente se houver indicação clínica que mude manejo; C) sempre cateterismo; D) sempre BNP e troponina. <strong>Gabarito B.</strong> A/C/D promovem rastreio indiscriminado; a recomendação AHA/ACC 2024 privilegia testes seletivos. Revisão: o pré-operatório não deve inventar indicações que não existiriam fora da cirurgia."
+        ],
+        [
+          "p",
+          "<strong>Questão 8:</strong> uso de empagliflozina antes de cirurgia eletiva requer: A) manutenção até indução em todos; B) suspensão por pelo menos três dias quando possível; C) suspensão definitiva universal; D) apenas glicemia capilar no pós-operatório. <strong>Gabarito B.</strong> A ignora cetoacidose euglicêmica; C é excessivo e D pode não detectar acidose. Revisão: iSGLT2 requer prevenção metabólica e plano de reinício."
+        ],
+        [
+          "3",
+          "Questões complementares de residência — do exame à conduta"
+        ],
+        [
+          "o",
+          [
+            "<strong>Questão 9.</strong> Mulher com ferritina 8 ng/mL, Hb 10,2 g/dL e cirurgia eletiva de maior porte em cinco semanas. Melhor conduta? A) Transfundir sem investigação; B) não tratar porque Hb >10; C) investigar perdas, tratar ferropriva e planejar redução de sangramento; D) contraindicar toda cirurgia. <strong>Gabarito: C.</strong> A ignora causa e riscos; B despreza reserva; D superestima limiar isolado. Revisão: anemia é uma condição potencialmente modificável antes da incisão.",
+            "<strong>Questão 10.</strong> Após colectomia, há troponina elevada e nenhum sintoma. Melhor interpretação? A) Sem dor, não há lesão; B) IAM tipo 1 está confirmado; C) investigar dinâmica, ECG, estado hemodinâmico e diagnósticos alternativos; D) anticoagular todos em dose plena. <strong>Gabarito: C.</strong> A ignora apresentação silenciosa; B confunde lesão e infarto; D ignora risco hemorrágico. Revisão: MINS depende de atribuição a causa isquêmica.",
+            "<strong>Questão 11.</strong> A vigilância sistemática de troponina/ECG da SBC 2024 está especialmente direcionada a: A) todos os pacientes; B) pacientes de risco cardiovascular intermediário ou alto submetidos a cirurgia não cardíaca intermediária/alta conforme algoritmo; C) jovens sadios; D) apenas pacientes com dor torácica. <strong>Gabarito: B.</strong> A gera testes sem benefício claro; C e D restringem equivocadamente o risco. Revisão: examinar o paciente certo e agir sobre o resultado.",
+            "<strong>Questão 12.</strong> Pessoa com PA persistentemente ≥180/110, alto risco cardiovascular e cirurgia eletiva elevada: A) operar sem avaliação; B) pode ser razoável considerar adiamento para otimização; C) toda PA ≥140/90 obriga cancelamento; D) baixar abruptamente para 120/80 imediatamente elimina risco. <strong>Gabarito: B.</strong> A e D ignoram risco e perfusão; C generaliza limiares. Revisão: histórico, urgência e sintomas guiam decisão.",
+            "<strong>Questão 13.</strong> O limiar de Hb adotado pelo consenso ICCAMS para rastreio/otimização pré-operatória de ambos os sexos é: A) &lt;8; B) &lt;10; C) &lt;13; D) &lt;16 g/dL. <strong>Gabarito: C.</strong> A/B confundem rastreio de anemia com indicação de transfusão; D não é recomendação do consenso. Revisão: o objetivo é identificar reserva insuficiente para cirurgia relevante.",
+            "<strong>Questão 14.</strong> STOP-Bang alto em paciente com ronco, obesidade e pausas respiratórias significa: A) diagnóstico definitivo de AOS; B) proibição de qualquer cirurgia; C) suspeita aumentada e necessidade de estratégia respiratória e analgésica; D) baixo risco respiratório. <strong>Gabarito: C.</strong> A atribui certeza indevida a rastreio; B despreza risco-benefício; D ignora os sinais. Revisão: rastrear serve para prevenir eventos, não para produzir diagnóstico automático."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "12. Referências científicas, comparação documental e estado editorial"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/\" target=\"_blank\" rel=\"noopener noreferrer\">Gualandro et al. SBC — Diretriz de Avaliação Cardiovascular Perioperatória (2024), Arq Bras Cardiol 121(9):e20240590.</a>",
+            "<a href=\"https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery\" target=\"_blank\" rel=\"noopener noreferrer\">AHA/ACC e sociedades. Perioperative Cardiovascular Management for Noncardiac Surgery (2024; diretriz reafirmada em 2026).</a>",
+            "<a href=\"https://www.jacc.org/doi/10.1016/j.jacc.2024.06.013\" target=\"_blank\" rel=\"noopener noreferrer\">Thompson et al. JACC 2024; algoritmo perioperatório completo e testes seletivos.</a>",
+            "<a href=\"https://www.nice.org.uk/guidance/ng45/chapter/recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE NG45 — Routine preoperative tests for elective surgery.</a>",
+            "<a href=\"https://doi.org/10.1097/ALN.0000000000004381\" target=\"_blank\" rel=\"noopener noreferrer\">ASA 2023 — Atualização das recomendações de jejum e líquidos claros.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9994846/\" target=\"_blank\" rel=\"noopener noreferrer\">ICCAMS. Recommendations From the International Consensus Conference on Anemia Management in Surgical Patients. Ann Surg, 2023 (online 2022): diagnóstico e tratamento da anemia perioperatória.</a>",
+            "<a href=\"https://www.chestnet.org/guidelines-and-topic-collections/guidelines/pulmonary-vascular/perioperative-management-of-antithrombotic-therapy\" target=\"_blank\" rel=\"noopener noreferrer\">Douketis et al. CHEST 2022 — manejo perioperatório de antagonistas de vitamina K, DOAC e antiplaquetários, com recomendação contra ponte rotineira em muitos cenários.</a>",
+            "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11666732/\" target=\"_blank\" rel=\"noopener noreferrer\">Kindel et al. 2024 — orientação multissocietária sobre agonistas GLP-1 no perioperatório, individualização de risco de aspiração.</a>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Benchmark não incorporado:</strong> “01 - AVALIACAO PRE-ANESTESICA.pdf” foi aberto no Drive e mostra ASA, Lee, METs, exames, jejum e via aérea. Há nele afirmações demasiado absolutas (4 METs para autorizar cirurgia; porcentagens ASA como risco do indivíduo) e referências legais que exigem conferência; a redação LURIA usa diretrizes primárias e não reproduz imagens/tabelas/figuras da apostila comparativa."
+        ],
+        [
+          "p",
+          "Referências clínicas confirmadas: Gualandro DM et al. Diretriz de Avaliação Cardiovascular Perioperatória — SBC 2024, Arq Bras Cardiol 121(9):e20240590, https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/ ; AHA/ACC multisociety Guideline for Perioperative Cardiovascular Management 2024, vigente em 2026, https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery ; JACC 2024 DOI 10.1016/j.jacc.2024.06.013. Benchmark do Drive '01 - AVALIACAO PRE-ANESTESICA.pdf' reaberto; textos e imagens não reproduzidos."
+        ]
+      ]
+    ]
+  ]
+}

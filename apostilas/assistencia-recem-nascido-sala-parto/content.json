@@ -1,0 +1,1483 @@
+{
+  "v": 2,
+  "s": "assistencia-recem-nascido-sala-parto",
+  "t": "Assistência ao Recém-nascido em Sala de Parto",
+  "p": "Assistência ao Recém-nascido em Sala de Parto",
+  "o": [
+    [
+      "visao",
+      "Assistência ao RN: transição fisiológica e primeira hora de vida"
+    ],
+    [
+      "fisiologia",
+      "1. Fisiologia da adaptação cardiorrespiratória e térmica"
+    ],
+    [
+      "preparo",
+      "2. Preparação da sala, da equipe e avaliação de risco antenatal"
+    ],
+    [
+      "triagem",
+      "3. Avaliação imediata: respiração, tônus, frequência cardíaca e Apgar"
+    ],
+    [
+      "cordao",
+      "4. Clampeamento do cordão: benefício, elegibilidade e exceções"
+    ],
+    [
+      "rotina",
+      "5. Cuidados de rotina: calor, contato pele a pele e aleitamento"
+    ],
+    [
+      "exame",
+      "6. Exame físico inicial, medidas e sinais de alerta"
+    ],
+    [
+      "profilaxia",
+      "7. Vitamina K e prevenção da doença hemorrágica"
+    ],
+    [
+      "imunizacao",
+      "8. Imunização ao nascer e prevenção de transmissão vertical"
+    ],
+    [
+      "registro",
+      "9. Documentação, segurança, alojamento conjunto e transição de cuidados"
+    ],
+    [
+      "casos",
+      "10. Casos clínicos comentados: o que muda a conduta"
+    ],
+    [
+      "questoes",
+      "11. Questões autorais de residência com comentários"
+    ],
+    [
+      "referencias",
+      "12. Referências, escopo e pendências editoriais"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Assistência ao Recém-nascido em Sala de Parto",
+    "Transição fisiológica · pele a pele · cordão · cuidados de rotina",
+    [
+      "Área: Pediatria",
+      "Matéria: Neonatologia",
+      "Tema: Assistência inicial ao RN"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "visao",
+      0,
+      [
+        [
+          "2",
+          "Assistência ao recém-nascido em sala de parto: proteger a transição sem medicalizar o bebê saudável"
+        ],
+        [
+          "p",
+          "Receber um recém-nascido exige simultaneamente reconhecer rapidamente quem necessita de suporte e evitar procedimentos desnecessários em quem apresenta boa adaptação. O período imediatamente após o nascimento reúne mudanças circulatórias, respiratórias, térmicas e metabólicas de grande magnitude. A maior parte dos bebês estabelece respiração efetiva, mantém frequência cardíaca adequada e pode permanecer em contato pele a pele, com supervisão ativa. O objetivo não é executar uma sequência ritualística de intervenções, mas garantir segurança, vínculo, estabilidade e identificação precoce de sinais de alerta."
+        ],
+        [
+          "p",
+          "Esta apostila é dedicada à <strong>assistência do recém-nascido com boa adaptação na sala de parto, às medidas iniciais universais e ao reconhecimento da necessidade de escalonamento</strong>. A execução detalhada de ventilação com pressão positiva, compressões e medicamentos pertence à apostila independente de Reanimação Neonatal, tema 008 do Lote 1. Prematuridade, baixo peso, icterícia e sepse terão capítulos curriculares próprios. Quando tais condições modificam o cuidado imediato, as interações são apresentadas aqui de forma explícita, sem duplicar os outros livros."
+        ],
+        [
+          "t",
+          [
+            "Recém-nascido",
+            "Primeira pergunta",
+            "Destino imediato"
+          ],
+          [
+            [
+              "Respira ou chora, tônus adequado, adaptação satisfatória",
+              "O bebê está estável e pode permanecer com a pessoa que pariu?",
+              "Cuidados de rotina, calor, pele a pele, aleitamento e observação ativa"
+            ],
+            [
+              "Apneia, gasping ou frequência cardíaca abaixo de 100/min após passos iniciais",
+              "Ventilação precisa ser iniciada sem demora?",
+              "Acionar fluxo de reanimação e equipe habilitada"
+            ],
+            [
+              "Respira, mas apresenta desconforto, cianose central ou alterações persistentes",
+              "Há problema de transição ou doença?",
+              "Avaliação neonatal dirigida, monitorização e suporte conforme necessidade"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Diretrizes centrais: Ministério da Saúde, atenção humanizada ao recém-nascido e Nota Técnica 124/2026 sobre pele a pele; AHA/AAP 2025 para transição e suporte inicial. O roteiro deve ser adaptado ao risco e à estrutura da maternidade, sem postergar ventilação quando necessária."
+        ]
+      ]
+    ],
+    [
+      "fisiologia",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia da adaptação cardiorrespiratória e térmica"
+        ],
+        [
+          "3",
+          "Dos pulmões preenchidos por líquido à ventilação alveolar"
+        ],
+        [
+          "p",
+          "Durante a vida fetal, as trocas gasosas dependem da placenta, enquanto os pulmões recebem fração relativamente pequena do débito cardíaco. Os alvéolos e vias aéreas contêm líquido, e a resistência vascular pulmonar é elevada. No nascimento, movimentos respiratórios e absorção do líquido pulmonar criam volume residual funcional e facilitam troca de oxigênio e dióxido de carbono. Com a oxigenação dos pulmões e expansão alveolar, cai a resistência vascular pulmonar, cresce o fluxo pulmonar e muda a relação de pressões entre os átrios. Essa sequência explica por que avaliar a eficácia respiratória tem prioridade sobre rotinas acessórias."
+        ],
+        [
+          "p",
+          "Um bebê pode respirar de modo irregular por curto período durante a transição, mas apneia, gasping e esforço ineficaz exigem resposta. O choro vigoroso é uma pista de boa ventilação espontânea, mas a equipe deve observar expansão torácica, cor central, frequência cardíaca, tônus e evolução. Saturação periférica não sobe instantaneamente para os valores de uma criança maior; aplicar metas de adultos ao primeiro minuto de vida pode levar à hiperóxia iatrogênica. Quando há necessidade de oxigênio ou suporte, a oximetria pré-ductal e metas adequadas à idade em minutos são trabalhadas no tema 008."
+        ],
+        [
+          "3",
+          "Transição hemodinâmica e cordão umbilical"
+        ],
+        [
+          "p",
+          "A interrupção gradual da circulação placentária e o estabelecimento da respiração reorganizam pré-carga, débito e fluxos através das estruturas fetais. O fechamento funcional do forame oval e do canal arterial é processo progressivo, não evento instantâneo na hora do parto. O clampeamento oportuno do cordão em bebês que não necessitam de reanimação favorece transfusão placentária, índices hematológicos e reservas de ferro; sua realização não deve impor hipotermia ou dificultar reconhecimento de um bebê que precisa de ventilação."
+        ],
+        [
+          "3",
+          "A termorregulação é intervenção clínica, não conforto secundário"
+        ],
+        [
+          "p",
+          "O recém-nascido perde calor por evaporação da água na pele, condução para superfícies frias, convecção para ar ambiente e radiação para objetos próximos. A elevada relação superfície/volume, a imaturidade de alguns mecanismos e a pele úmida tornam o risco particularmente importante em prematuros. O tecido adiposo marrom participa da termogênese sem tremores; entretanto, produzir calor consome oxigênio e glicose, elevando demanda justamente durante a adaptação. Hipotermia pode favorecer hipoglicemia, dificuldade respiratória e descompensação clínica."
+        ],
+        [
+          "t",
+          [
+            "Mecanismo de perda",
+            "Exemplo na sala de parto",
+            "Prevenção"
+          ],
+          [
+            [
+              "Evaporação",
+              "Líquido sobre pele e cabelos",
+              "Secagem cuidadosa do RN elegível; cobertura aquecida"
+            ],
+            [
+              "Condução",
+              "Contato com mesa ou superfície fria",
+              "Superfícies e campos aquecidos"
+            ],
+            [
+              "Convecção",
+              "Correntes de ar e sala excessivamente fria",
+              "Ambiente térmico adequado, reduzir exposição"
+            ],
+            [
+              "Radiação",
+              "Superfícies frias próximas ao bebê",
+              "Posicionamento e aquecimento adequados"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "No bebê vigoroso a termo, a principal medida fisiológica reúne secagem, campos aquecidos e contato pele a pele com cabeça coberta e via aérea livre. Em prematuridade importante ou necessidade de reanimação, podem ser necessários aquecedor radiante, proteção plástica e medidas especializadas. Não aplicar secagem vigorosa padronizada à pele extremamente imatura de prematuros muito pequenos sem observar o protocolo adequado."
+        ],
+        [
+          "3",
+          "Da circulação fetal à neonatal: por que o pulmão e o cordão devem ser entendidos juntos"
+        ],
+        [
+          "p",
+          "Antes do nascimento, a placenta realiza as trocas gasosas. A circulação fetal desvia parte importante do fluxo do território pulmonar por estruturas como ducto arterioso e forame oval, pois a resistência vascular pulmonar é elevada em ambiente de alvéolos preenchidos por líquido. Os movimentos respiratórios fetais não significam ventilação alveolar com ar. No nascimento, quando o recém-nascido inicia respiração eficaz, forma-se capacidade residual funcional, a pressão alveolar de oxigênio aumenta e a resistência vascular pulmonar cai, permitindo expansão rápida do fluxo pulmonar. Ao mesmo tempo, o clampeamento do cordão interrompe a circulação placentária de baixa resistência, com alteração da pós-carga sistêmica. A sequência dos eventos importa: estabelecer ventilação antes de interromper a circulação placentária, quando viável e seguro, favorece transição mais estável."
+        ],
+        [
+          "p",
+          "A elevação do retorno venoso pulmonar ao átrio esquerdo e as mudanças de pressões atriais favorecem fechamento funcional do forame oval. O aumento de oxigenação e a queda de prostaglandinas contribuem para constrição funcional do ducto arterioso, processo que leva tempo e difere do fechamento anatômico. Nas primeiras horas pode haver fluxo transitório por comunicações fetais; persistência de hipoxemia, taquipneia importante e diferença entre saturações não pode ser atribuída sem avaliação à 'transição normal'. Hipertensão pulmonar persistente do recém-nascido ocorre quando a queda esperada da resistência pulmonar falha, mantendo shunt extrapulmonar e hipoxemia desproporcional. O diagnóstico depende de contexto, exame, oximetria e, frequentemente, ecocardiografia."
+        ],
+        [
+          "3",
+          "Por que cesariana sem trabalho de parto aumenta a vigilância respiratória"
+        ],
+        [
+          "p",
+          "Catecolaminas e alterações hormonais do fim da gestação estimulam absorção de líquido pulmonar fetal por canais epiteliais de sódio e transporte intersticial. Trabalho de parto e respiração inicial ajudam na transição, mas a ideia de que o tórax é simplesmente 'espremido' pelo canal de parto é explicação incompleta. Após cesariana eletiva antes do início do trabalho de parto, a depuração do líquido pode ocorrer mais lentamente, aumentando risco de taquipneia transitória do recém-nascido. Isso não implica que todo bebê de cesariana precise de oxigênio: avaliar gravidade, tendência, retrações, gemido, saturação e diagnósticos alternativos."
+        ],
+        [
+          "3",
+          "Perda térmica: quatro mecanismos à beira do leito"
+        ],
+        [
+          "t",
+          [
+            "Mecanismo",
+            "Situação de sala de parto",
+            "Prevenção racional"
+          ],
+          [
+            [
+              "Evaporação",
+              "Pele e cabelos úmidos após nascimento",
+              "Secar prontamente RN elegível e trocar campos molhados; em prematuros muito imaturos, seguir técnica específica com plástico"
+            ],
+            [
+              "Convecção",
+              "Ar frio e correntes próximas à mesa",
+              "Manter sala aquecida, portas fechadas e afastar correntes"
+            ],
+            [
+              "Condução",
+              "Contato com superfície fria",
+              "Aquecer campo e superfícies; favorecer contato pele a pele seguro"
+            ],
+            [
+              "Radiação",
+              "Parede, janela ou estrutura fria sem toque direto",
+              "Fonte de calor radiante quando indicada e barreiras térmicas apropriadas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Recém-nascidos têm grande relação superfície corporal/massa, pele relativamente fina e reserva energética limitada, especialmente quando prematuros. A produção de calor por tecido adiposo marrom usa glicose e oxigênio, podendo agravar hipoglicemia e aumentar demanda metabólica em contexto de frio. A hipotermia não é apenas um 'número baixo': pode desencadear acidose, desconforto respiratório e instabilidade. Medir e documentar temperatura; a meta das diretrizes atuais é de 36,5–37,5 °C, evitando tanto frio quanto hipertermia iatrogênica. Prematuro muito imaturo exige técnicas específicas de prevenção de perda de calor sem resfriamento durante a avaliação."
+        ]
+      ]
+    ],
+    [
+      "preparo",
+      0,
+      [
+        [
+          "2",
+          "2. Preparação da sala, da equipe e avaliação de risco antenatal"
+        ],
+        [
+          "p",
+          "Preparar a sala de parto começa antes do nascimento. O briefing deve informar idade gestacional estimada, número de fetos, restrição de crescimento, presença de malformações, apresentação, mecônio, infecção materna suspeita, febre, hemorragia, analgesia e intercorrências do parto. Identificar quem conduzirá avaliação inicial, quem pode realizar ventilação e quem irá solicitar ajuda, sem criar atrasos de comunicação diante de um bebê deprimido."
+        ],
+        [
+          "p",
+          "O profissional responsável precisa conferir a disponibilidade e funcionamento de fonte de calor, dispositivo de ventilação neonatal, máscaras adequadas, ar e oxigênio com misturador quando pertinente, aspiração para situações indicadas, monitorização e instrumentos para acesso vascular/emergência. A organização local deve ter fluxo para transferência quando um bebê precisa de unidade neonatal. A simples presença do equipamento não é suficiente: treinamento, divisão de papéis e familiaridade com sua utilização diminuem falhas."
+        ],
+        [
+          "u",
+          [
+            "Conferir história gestacional e testes maternos: sífilis, HIV, hepatite B, estreptococo do grupo B quando relevante, Rh/anticorpos, intercorrências infecciosas e medicações.",
+            "Registrar idade gestacional de melhor estimativa e crescimento esperado. Prematuridade altera risco térmico, respiratório, metabólico e infeccioso.",
+            "Conhecer o plano obstétrico de clampeamento, parto vaginal ou cesárea e situações em que manejo do cordão precisará ser adaptado.",
+            "Planejar reanimação antes do nascimento mesmo quando se prevê bebê saudável; a deterioração pode ser inesperada.",
+            "Preservar comunicação respeitosa com a pessoa que pariu e acompanhante, informando por que intervenções serão ou não realizadas."
+          ]
+        ],
+        [
+          "p",
+          "A equipe deve reconhecer vulnerabilidades adicionais em casos de diabetes materno, hipotermia do ambiente, uso materno de sedativos, líquido meconial e alterações de vitalidade fetal. Essas características aumentam vigilância e preparo, mas não equivalem automaticamente a necessidade de ventilação ou separação mãe-bebê após nascimento com boa adaptação."
+        ],
+        [
+          "3",
+          "Triagem materna e exposição neonatal: o resultado que muda as primeiras horas"
+        ],
+        [
+          "p",
+          "A avaliação obstétrica deve chegar ao profissional neonatal de forma verificável. O resultado HBsAg positivo altera imunoprofilaxia em janela curta; sífilis gestacional exige informação sobre tratamento adequado, sorologia e evolução dos títulos para definir avaliação neonatal; HIV modifica profilaxia e orientação alimentar segundo protocolo do Ministério da Saúde; suspeita de infecção intra-amniótica ou rotura prolongada de membranas pode exigir observação reforçada ou investigação de sepse precoce. Esses caminhos não podem ser substituídos por 'exame normal na sala de parto'."
+        ],
+        [
+          "p",
+          "Ao revisar um exame ausente, perguntar se ele foi colhido, se existe resultado na rede, se o método foi adequado ao contexto e se há necessidade de ação imediata enquanto a informação é confirmada. Documentar pendências e responsável por reavaliá-las. Recém-nascidos de mães com acompanhamento pré-natal incompleto devem receber avaliação dirigida sem estigma: a finalidade é oferecer prevenção e cuidado em tempo oportuno, não presumir doença ou atribuir culpa à família."
+        ],
+        [
+          "t",
+          [
+            "Dado pré-natal",
+            "Pergunta neonatal",
+            "Primeira providência"
+          ],
+          [
+            [
+              "HBsAg positivo",
+              "Vacina e imunoglobulina foram administradas na janela adequada?",
+              "Acionar fluxo PNI sem aguardar sintomas"
+            ],
+            [
+              "Sífilis na gestação",
+              "Tratamento e sorologias maternas foram adequados?",
+              "Aplicar algoritmo de avaliação de sífilis congênita"
+            ],
+            [
+              "HIV materno",
+              "Há plano de profilaxia neonatal e alimentação?",
+              "Consultar protocolo específico e infectologia/pediatria"
+            ],
+            [
+              "Febre materna/suspeita de infecção intra-amniótica",
+              "Há risco de infecção precoce?",
+              "Vigiar clínica e seguir protocolo específico de sepse"
+            ],
+            [
+              "Diabetes materno",
+              "Há risco metabólico e plano alimentar?",
+              "Vigilância glicêmica dirigida e apoio ao aleitamento"
+            ]
+          ]
+        ],
+        [
+          "3",
+          "Briefing com cinco decisões operacionais"
+        ],
+        [
+          "o",
+          [
+            "Identificar idade gestacional estimada, crescimento fetal, gestação múltipla, malformação ou síndrome suspeita e exposições fetais relevantes, sem confundir risco com certeza de doença.",
+            "Checar risco obstétrico imediato: descolamento de placenta, hemorragia, prolapso de cordão, mecônio, uso de sedativos/opioides, sinais de infecção e necessidade provável de parto instrumental.",
+            "Revisar exames maternos com janela terapêutica neonatal: HBsAg, sífilis, HIV e resultados pendentes; anotar fonte do resultado, data e necessidade de busca ativa.",
+            "Definir profissional que receberá o recém-nascido, quem controla tempo e avalia frequência cardíaca, quem oferece suporte ventilatório se necessário e quem comunica intercorrências à família.",
+            "Testar fonte de calor, equipamento de ventilação e oxigênio, monitorização e sistema de acionamento de ajuda; deixar explícito o destino de RN que necessitar unidade neonatal."
+          ]
+        ],
+        [
+          "p",
+          "Um briefing bem feito deve ocupar pouco tempo, mas prevenir ambiguidades. Dizer 'o pediatra vem se precisar' não responde quem está capacitado para os passos iniciais nem quanto demora o reforço. A equipe deve ter treinamento e recursos compatíveis com perfil da maternidade e fluxo de transferência de alto risco. Em nascimento gemelar, planejar profissionais e materiais para cada bebê, além de identificação separada e rastreável."
+        ],
+        [
+          "3",
+          "Planejamento por faixas de idade gestacional sem criar falsas fronteiras"
+        ],
+        [
+          "t",
+          [
+            "Categoria",
+            "Significado para assistência",
+            "Ponto de cautela"
+          ],
+          [
+            [
+              "≥37 semanas e &lt;42 semanas",
+              "Recém-nascido a termo; atenção à vitalidade, termorregulação e primeira hora",
+              "Termo não exclui infecção, malformação ou hipóxia"
+            ],
+            [
+              "34 semanas a 36 semanas e 6 dias",
+              "Pré-termo tardio, frequentemente com menor reserva térmica/metabólica",
+              "Risco de hipoglicemia, dificuldades de sucção e icterícia; cuidado exige seguimento adicional"
+            ],
+            [
+              "32 a 33 semanas e 6 dias",
+              "Prematuridade moderada com necessidade de equipe e vigilância especializadas",
+              "Não presumir elegibilidade para manejo idêntico ao bebê a termo"
+            ],
+            [
+              "&lt;32 semanas",
+              "Maior vulnerabilidade pulmonar, térmica e cerebral",
+              "Seguir protocolo especializado da SBP 2026 para &lt;34 semanas e equipe experiente"
+            ],
+            [
+              "≥42 semanas",
+              "Pós-termo",
+              "Buscar pistas de insuficiência placentária e complicações da gestação prolongada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "As diretrizes brasileiras de reanimação neonatal de 2026 são organizadas em dois documentos: <strong>RN ≥34 semanas</strong> e <strong>RN &lt;34 semanas</strong>. Essa divisão é operacional do programa de reanimação e não altera os conceitos epidemiológicos de prematuridade. A abordagem do RN de 33 semanas e a do RN de 35 semanas não são intercambiáveis, mesmo quando ambos choram ao nascer. O módulo de reanimação neonatal da LURIA (tema 008) detalha dispositivos e sequência completa de suporte; esta apostila usa a distinção para orientar preparação, aquecimento e decisão sobre permanência com a família ou transferência."
+        ]
+      ]
+    ],
+    [
+      "triagem",
+      0,
+      [
+        [
+          "2",
+          "3. Avaliação imediata: respiração, tônus, frequência cardíaca e Apgar"
+        ],
+        [
+          "3",
+          "O que perguntar nos primeiros segundos"
+        ],
+        [
+          "p",
+          "Após o nascimento, a equipe observa se o bebê respira ou chora, apresenta tônus adequado e evolui com frequência cardíaca satisfatória. A idade gestacional ajuda a definir cuidados especializados e aquecimento, mas não deve ser o único fator a decidir se há necessidade de suporte respiratório. A prioridade é perceber ventilação ineficaz, apneia, gasping e bradicardia. A avaliação repetida é parte do cuidado mesmo quando a primeira impressão é tranquilizadora."
+        ],
+        [
+          "p",
+          "A frequência cardíaca é um indicador essencial durante suporte neonatal. Na avaliação inicial pode ser auscultada; se a situação exige reanimação, a avaliação precisa ser ágil e tecnicamente confiável, usando dispositivos apropriados. Um RN com apneia, gasping ou FC persistentemente menor que 100 por minuto após passos iniciais deve seguir imediatamente protocolo de ventilação, sem esperar a pontuação de Apgar. Aumento da FC após assistência ventilatória é forte sinal de eficácia."
+        ],
+        [
+          "3",
+          "Apgar descreve uma condição observada, não determina se começa a reanimação"
+        ],
+        [
+          "p",
+          "O índice de Apgar avalia cinco elementos — frequência cardíaca, esforço respiratório, tônus, resposta a estímulos e coloração — somando de 0 a 10. É tradicionalmente registrado no primeiro e quinto minutos; a reavaliação em intervalos adicionais depende de persistência de pontuação baixa e protocolos. Foi concebido como descrição padronizada da adaptação e resposta ao atendimento. Não é exame etiológico de asfixia, não confirma encefalopatia hipóxico-isquêmica isoladamente e não serve como gatilho para postergar intervenção respiratória necessária."
+        ],
+        [
+          "t",
+          [
+            "Critério de Apgar",
+            "0 pontos",
+            "1 ponto",
+            "2 pontos"
+          ],
+          [
+            [
+              "Frequência cardíaca",
+              "Ausente",
+              "Abaixo de 100/min",
+              "100/min ou mais"
+            ],
+            [
+              "Respiração",
+              "Ausente",
+              "Lenta/irregular",
+              "Boa respiração ou choro"
+            ],
+            [
+              "Tônus",
+              "Flácido",
+              "Alguma flexão",
+              "Movimentos ativos"
+            ],
+            [
+              "Irritabilidade reflexa",
+              "Sem resposta",
+              "Expressão facial/resposta discreta",
+              "Tosse, espirro ou choro vigoroso"
+            ],
+            [
+              "Cor",
+              "Pálido ou cianose generalizada",
+              "Corpo rosado, extremidades cianóticas",
+              "Totalmente rosado"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "<strong>Pegadinha:</strong> iniciar ventilação após aguardar 'Apgar de 1 minuto' é erro potencialmente grave. O cuidado ocorre em tempo real e o escore é atribuído paralelamente ou posteriormente, sem atrasar intervenções. Extremidades azuladas nos primeiros minutos podem representar acrocianose fisiológica, diferente de cianose central persistente."
+        ],
+        [
+          "3",
+          "Avaliação simultânea à primeira assistência: sem esperar cor ou Apgar"
+        ],
+        [
+          "p",
+          "A equipe deve observar imediatamente ventilação ou choro, tônus e atividade, e identificar situações em que a idade gestacional modifica o ambiente de atendimento. O bebê que respira ou chora vigorosamente, tem tônus em flexão e boa adaptação não deve ser separado para intervenções desnecessárias. Por outro lado, apneia, gasping, hipotonia importante ou bradicardia exigem avaliação sob protocolo de estabilização. <strong>Cor isolada é parâmetro impreciso:</strong> a pele pode manter acrocianose enquanto a circulação sistêmica está adequada, e iluminação/tonalidade cutânea dificultam reconhecer cianose; observar padrão respiratório, frequência cardíaca e oximetria quando indicada."
+        ],
+        [
+          "3",
+          "Frequência cardíaca e esforço respiratório: valores têm significados distintos"
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Interpretação",
+            "Encaminhamento inicial"
+          ],
+          [
+            [
+              "Choro/respiração regular, bom tônus e FC adequada",
+              "Transição inicial favorável",
+              "Cuidados de rotina e observação contínua"
+            ],
+            [
+              "Apneia ou gasping",
+              "Ventilação espontânea ineficaz",
+              "Passos iniciais rápidos e ventilação conforme SBP 2026; não aguardar Apgar"
+            ],
+            [
+              "FC &lt;100/min persistente após passos iniciais",
+              "Bradicardia geralmente associada a ventilação inadequada",
+              "Assistência ventilatória imediata por equipe treinada"
+            ],
+            [
+              "FC baixa após assistência ventilatória",
+              "Checar eficácia da ventilação antes de avançar",
+              "Algoritmo de reanimação neonatal e monitorização contínua"
+            ],
+            [
+              "Respiração espontânea com esforço e desconforto",
+              "Pode haver doença pulmonar ou circulatória",
+              "Monitorar e discutir suporte adequado, como CPAP quando indicado"
+            ],
+            [
+              "Bebê melhora, mas teve reanimação importante",
+              "Risco de nova deterioração",
+              "Observação e avaliação especializada proporcionais à gravidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O minuto de ouro não é intervalo para 'ver se o bebê melhora sozinho': as intervenções iniciais e, quando indicada, a ventilação, devem ocorrer dentro dos primeiros 60 segundos. Ventilação adequada costuma elevar a frequência cardíaca rapidamente, sendo a resposta de FC indicador central de eficácia. Esta apostila deliberadamente não ensina dosagem de adrenalina, relação compressão/ventilação, seleção de cânulas ou interrupção de esforços, conteúdos práticos do tema 008 que requerem treinamento supervisionado e atualização SBP 2026."
+        ],
+        [
+          "3",
+          "Apgar por item: o que o estudante deve realmente reconhecer"
+        ],
+        [
+          "t",
+          [
+            "Item",
+            "0",
+            "1",
+            "2"
+          ],
+          [
+            [
+              "Frequência cardíaca",
+              "Ausente",
+              "&lt;100/min",
+              "≥100/min"
+            ],
+            [
+              "Respiração",
+              "Ausente",
+              "Irregular/fraca",
+              "Boa respiração ou choro"
+            ],
+            [
+              "Tônus",
+              "Flácido",
+              "Alguma flexão",
+              "Movimentação ativa"
+            ],
+            [
+              "Resposta à estimulação",
+              "Ausente",
+              "Careta/reatividade discreta",
+              "Reação vigorosa"
+            ],
+            [
+              "Cor",
+              "Pálido ou cianótico",
+              "Acrocianose",
+              "Corpo rosado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A pontuação do Apgar se registra em 1 e 5 minutos; se o valor no quinto minuto for &lt;7, a SBP 2026 orienta anotar a cada cinco minutos até vinte minutos de vida. Escore baixo isolado não determina etiologia de encefalopatia ou asfixia intraparto, assim como Apgar alto não assegura ausência de hipoglicemia, malformação cardíaca ou infecção perinatal. A documentação deve registrar também o que foi feito, em que tempo e como o bebê respondeu. A tabela tem finalidade educacional e não deve substituir a diretriz vigente durante reanimação real."
+        ]
+      ]
+    ],
+    [
+      "cordao",
+      0,
+      [
+        [
+          "2",
+          "4. Clampeamento do cordão: benefício, elegibilidade e exceções"
+        ],
+        [
+          "p",
+          "Em RN a termo sem necessidade de reanimação imediata, a recomendação AHA/AAP 2025 considera benéfico adiar o clampeamento por <strong>pelo menos 60 segundos</strong>. Para RN com menos de 37 semanas que não precisa de reanimação imediata, a recomendação também favorece pelo menos 60 segundos. O cuidado deve manter calor, observação respiratória e coordenação com a equipe obstétrica. Quando possível, parte dos passos iniciais pode ocorrer com cordão íntegro."
+        ],
+        [
+          "p",
+          "A transferência placentária melhora parâmetros hematológicos iniciais e reserva de ferro. O intervalo não é promessa de prevenção absoluta de anemia, nem justificativa para ignorar hemorragia obstétrica, alteração placentária grave ou necessidade de suporte urgente. Em bebês não vigorosos, a evidência sobre clampeamento e reanimação com cordão íntegro continua dependente do contexto e disponibilidade de equipe; nenhuma regra simplista substitui a avaliação fisiológica."
+        ],
+        [
+          "p",
+          "A ordenha do cordão não deve ser tratada como sinônimo de clampeamento tardio. AHA/AAP 2025 não recomenda ordenhar o cordão íntegro em RN com idade gestacional &lt;28 semanas devido ao risco de hemorragia intraventricular. Em intervalos gestacionais específicos e quando o clampeamento tardio não for viável, diretrizes podem discutir alternativas, mas sua adoção requer protocolo neonatal específico."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Orientação de princípio",
+            "Alerta"
+          ],
+          [
+            [
+              "RN a termo com boa adaptação",
+              "Clampeamento diferido ≥60 segundos",
+              "Manter aquecimento, observação e comunicação"
+            ],
+            [
+              "Prematuro &lt;37 semanas sem necessidade de reanimação imediata",
+              "Clampeamento diferido ≥60 segundos quando factível",
+              "Prevenção rigorosa de hipotermia"
+            ],
+            [
+              "Bebê com necessidade de ventilação urgente",
+              "Não atrasar assistência respiratória",
+              "Seguir fluxo neonatal local"
+            ],
+            [
+              "Prematuro extremo &lt;28 semanas",
+              "Não ordenhar cordão íntegro",
+              "Risco de hemorragia intraventricular"
+            ]
+          ]
+        ],
+        [
+          "3",
+          "Clampeamento: comunicar o plano antes de o bebê nascer"
+        ],
+        [
+          "p",
+          "O benefício do clampeamento tardio está associado à transfusão placentária e deve ser pensado em conjunto com ventilação, posição do recém-nascido, estabilidade materna e situação da placenta. Para recém-nascidos com boa vitalidade, a SBP 2026 recomenda pelo menos 60 segundos de cordão íntegro; a OMS frequentemente descreve janela de 1–3 minutos. O tempo cronológico deve ser combinado com avaliação contínua da criança, manutenção de temperatura e conforto da mãe. Não há vantagem em manter cordão íntegro durante hemorragia placentária não controlada ou às custas de atraso de ventilação necessária."
+        ],
+        [
+          "p",
+          "O manejo do bebê sem boa vitalidade é mais complexo. A SBP 2026 para ≥34 semanas prevê estímulo tátil breve e reavaliação, com fluxos que podem levar ao clampeamento antecipado e transferência para fonte de calor; orienta ainda discussão de ordenha de cordão intacto em contexto específico. Isso não equivale a autorizá-la de modo indiscriminado: idade gestacional, protocolo local, contraindicações e possibilidade de assistência efetiva influenciam a decisão. Para prematuridade extrema, não extrapolar ordenha de cordão de bebês maiores: estudos demonstraram risco de hemorragia intraventricular grave em faixas muito imaturas."
+        ],
+        [
+          "3",
+          "Manejo do cordão e a necessidade de observar placenta e sangramento"
+        ],
+        [
+          "p",
+          "A equipe deve confirmar se há circulação placentária funcional e estabilidade obstétrica. Descolamento de placenta, sangramento materno importante ou problemas no cordão exigem adaptação do plano e comunicação entre obstetrícia e neonatologia. Após o clampeamento, verificar integridade e sangramento do coto, posição da pinça e identificação da criança, sem acelerar procedimentos eletivos em prejuízo de contato pele a pele. Se o cordão apresenta sangramento persistente ou aspecto anormal, reavaliar antes da transferência."
+        ]
+      ]
+    ],
+    [
+      "rotina",
+      0,
+      [
+        [
+          "2",
+          "5. Cuidados de rotina: calor, contato pele a pele e aleitamento"
+        ],
+        [
+          "3",
+          "Primeira hora: preservar vínculo, observar ativamente"
+        ],
+        [
+          "p",
+          "No recém-nascido com boa adaptação, colocar a criança em contato pele a pele sobre tórax/abdome da pessoa que pariu facilita termorregulação e início da amamentação. A Nota Técnica MS 124/2026 reforça contato precoce e ininterrupto na primeira hora tanto após parto vaginal quanto após cesariana, respeitadas condições clínicas. O bebê deve permanecer posicionado de modo que nariz e boca estejam livres, cabeça visível e respiração acompanhada. <strong>Pele a pele não é deixar o bebê sem vigilância.</strong> Exaustão materna, sedação profunda ou incapacidade momentânea de sustentar o recém-nascido exigem acompanhante/profissional e adaptações seguras."
+        ],
+        [
+          "p",
+          "A primeira mamada idealmente ocorre na primeira hora quando mãe e bebê estão clinicamente aptos. Observar procura espontânea pela mama, posição, pega, deglutição e conforto, evitando separar o recém-nascido apenas para ações eletivas que podem ser feitas mais tarde. Não presumir que ausência de sucção imediata representa necessidade de fórmula: avaliar clínica, condições maternas, sinais de fome, tônus e habilidade de coordenação sucção-deglutição-respiração."
+        ],
+        [
+          "3",
+          "O que não é cuidado de rotina para todos"
+        ],
+        [
+          "p",
+          "Aspiração sistemática de nariz e boca não é recomendada quando o bebê respira bem, mesmo diante de líquido amniótico meconial sem obstrução. Introduzir sondas sem necessidade pode provocar bradicardia, trauma, desconforto e interrupção do vínculo. Oxigênio suplementar não está indicado ao bebê saudável apenas porque apresenta saturação em elevação fisiológica após o nascimento. O primeiro banho imediato não deve competir com estabilização térmica e contato pele a pele; seguir política institucional que privilegie sua postergação e evite hipotermia."
+        ],
+        [
+          "u",
+          [
+            "Manter seca e aquecida a criança saudável, com vias aéreas livres e observação de padrão respiratório.",
+            "Orientar a mãe e acompanhantes a reconhecer obstrução acidental do nariz/boca durante pele a pele e solicitar auxílio.",
+            "Evitar descontinuidade do contato pele a pele por procedimentos eletivos sem indicação.",
+            "Realizar identificação segura e registro da hora de nascimento, intercorrências e cuidados, compatibilizando fluxo com preservação do vínculo.",
+            "Promover amamentação precoce sem forçar sucção e sem oferecer suplementos desnecessários."
+          ]
+        ],
+        [
+          "3",
+          "Contato pele a pele também exige um protocolo de segurança"
+        ],
+        [
+          "p",
+          "O contato pele a pele durante a primeira hora ajuda termorregulação, vínculo e estabelecimento da amamentação, inclusive após cesariana quando a situação de mãe e bebê permite. Deve ocorrer com recém-nascido em posição estável, rosto visível, nariz e boca livres, cabeça não excessivamente flexionada e corpo coberto sem obstruir a face. Um adulto responsável ou profissional deve observar respiração, tônus e coloração; a mãe sedada, muito cansada ou com instabilidade clínica pode precisar que alguém ajude a sustentar e acompanhar o bebê. Não confundir assistência humanizada com abandono de vigilância clínica."
+        ],
+        [
+          "3",
+          "Amamentação na primeira hora: diferenciar tentativa, pega e transferência de leite"
+        ],
+        [
+          "p",
+          "Os reflexos de busca e sucção podem aparecer gradualmente. Oferecer a mama quando recém-nascido mostra prontidão, orientar aproximação e posicionamento, permitir tempo para procura espontânea e avaliar sinais de pega adequada. Boca bem aberta, lábios evertidos, queixo próximo à mama, sucções rítmicas e deglutição observável são pistas úteis, mas variam conforme fase da mamada. Dor materna intensa, bebê que não mantém pega, ausência de sucção efetiva ou sonolência excessiva merecem intervenção educativa e avaliação clínica; uma tentativa de poucos segundos não prova ingestão suficiente."
+        ],
+        [
+          "p",
+          "A equipe não deve forçar fórmula para todo bebê que demora a mamar nem ignorar recém-nascido sintomático em nome do aleitamento exclusivo. Filhos de mães diabéticas, prematuros tardios, recém-nascidos pequenos para a idade gestacional e bebês com sucção fraca podem precisar de plano de prevenção/monitorização de hipoglicemia e ajuda intensiva à alimentação. Quando houver contraindicação ao aleitamento materno segundo protocolo nacional, como infecção materna pelo HIV no contexto brasileiro, orientar via segura de alimentação e cuidado sem julgamento. A decisão sobre alimentação exige verificar condições clínicas e o protocolo de transmissão vertical vigente."
+        ],
+        [
+          "3",
+          "O que não fazer ao bebê saudável"
+        ],
+        [
+          "t",
+          [
+            "Intervenção de rotina pretendida",
+            "Por que reavaliar necessidade",
+            "Exceção real"
+          ],
+          [
+            [
+              "Aspiração oro/nasofaríngea sistemática",
+              "Pode traumatizar e provocar bradicardia, além de interferir no contato",
+              "Suspeita de obstrução por secreção"
+            ],
+            [
+              "Oxigênio por aparência inicial do bebê",
+              "Saturação sobe fisiologicamente na transição; excesso de O2 não é inocente",
+              "Hipoxemia/indicação clínica documentada"
+            ],
+            [
+              "Separação para pesar na primeira hora",
+              "Pode interromper aleitamento e vínculo sem urgência",
+              "Instabilidade ou necessidade de intervenção"
+            ],
+            [
+              "Banho logo após o nascimento",
+              "Favorece perda térmica e interrupção da primeira hora",
+              "Indicação especial e medidas de aquecimento"
+            ],
+            [
+              "Bebida açucarada/fórmula automática",
+              "Pode mascarar dificuldade de amamentação sem indicação",
+              "Condição clínica e plano específico de alimentação"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "exame",
+      0,
+      [
+        [
+          "2",
+          "6. Exame físico inicial, medidas e sinais de alerta"
+        ],
+        [
+          "p",
+          "A avaliação inicial identifica malformações e problemas que exigem intervenção imediata, sem submeter criança estável a exame completo prolongado antes de concluir contato pele a pele. Documentar aspecto geral, respiração, frequência cardíaca, tônus, perfusão, coloração, temperatura, malformações evidentes e eventual trauma de parto. A ausculta cardiopulmonar, verificação de pulsos femorais e palpação abdominal ajudam a selecionar suspeitas, mas exame normal nas primeiras horas não exclui cardiopatia congênita ou doença infecciosa em evolução."
+        ],
+        [
+          "p",
+          "Medidas antropométricas — peso, comprimento e perímetro cefálico — auxiliam identificação de bebês pequenos ou grandes para idade gestacional, prematuridade e risco metabólico. Não usar uma faixa rígida de 'peso normal' extraída de resumo para definir adequação de crescimento: percentis são interpretados segundo idade gestacional, sexo e curva apropriada. Medir de forma segura e em momento que não comprometa estabilidade ou pele a pele. O registro deve diferenciar idade gestacional obstétrica conhecida de estimativa clínica pós-natal quando necessário."
+        ],
+        [
+          "3",
+          "Quando o padrão deixa de ser tranquilizador"
+        ],
+        [
+          "p",
+          "Taquipneia persistente, gemido expiratório, retrações, batimento de asa nasal, cianose central, apneias, hipotonia acentuada, hipoatividade, hipoperfusão, hipotermia persistente e dificuldade de sucção acompanhada de doença sistêmica exigem avaliação dirigida. O mesmo vale para secreção excessiva com incapacidade de deglutição, vômito bilioso, distensão relevante ou malformação com repercussão funcional. Verificar glicemia em grupos e condições indicadas, em vez de 'furar todos' indiscriminadamente."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Hipótese relevante",
+            "Ação inicial"
+          ],
+          [
+            [
+              "Gemido, retrações e taquipneia persistentes",
+              "Desconforto respiratório, infecção, doença pulmonar ou cardiopatia",
+              "Avaliar frequência, esforço, perfusão, oxigenação e necessidade de suporte"
+            ],
+            [
+              "Cianose central persistente",
+              "Hipoxemia de causa respiratória ou cardiovascular",
+              "Avaliação urgente, oximetria e assistência"
+            ],
+            [
+              "Hipoatividade, sucção débil, instabilidade térmica",
+              "Hipoglicemia, sepse, depressão medicamentosa, encefalopatia",
+              "Investigar fatores de risco e exames dirigidos"
+            ],
+            [
+              "Pulsos femorais fracos, perfusão ruim",
+              "Cardiopatia ducto-dependente ou choque",
+              "Reavaliação imediata especializada"
+            ],
+            [
+              "Vômito verde/bilioso",
+              "Obstrução intestinal até exclusão",
+              "Não banalizar; avaliação urgente"
+            ]
+          ]
+        ],
+        [
+          "3",
+          "Glicemia: estratificação por risco em vez de exames indiscriminados"
+        ],
+        [
+          "p",
+          "Nas primeiras horas, o recém-nascido precisa fazer a transição do suprimento placentário contínuo de glicose para alimentação intermitente. Mobilização de glicogênio, gliconeogênese e oxidação de substratos dependem da maturidade metabólica e da oferta alimentar. Filhos de mães com diabetes podem manter hiperinsulinismo fetal transitório e apresentar queda glicêmica quando a fonte placentária cessa. Prematuros, pequenos para a idade gestacional e bebês doentes podem ter menor reserva de glicogênio, dificuldade de sucção e maior consumo energético."
+        ],
+        [
+          "p",
+          "A investigação glicêmica deve ser dirigida a sintomas e grupos de risco em protocolo neonatal válido. Tremores, hipoatividade, letargia, apneia, convulsões e hipotermia são manifestações possíveis, porém inespecíficas; sepse, hipóxia, alterações eletrolíticas e problemas neurológicos integram o diferencial. A avaliação não deve atrasar estabilização de criança sintomática e é importante reconhecer limites de precisão de glicosímetros na faixa baixa: valores alterados podem necessitar confirmação laboratorial, sem retardar tratamento indicado."
+        ],
+        [
+          "p",
+          "O tratamento considera sintomas, magnitude e persistência da hipoglicemia, idade pós-natal e capacidade de alimentação, com suporte à amamentação e medidas terapêuticas proporcionais. A escolha de glicose oral, gel de dextrose ou via intravenosa depende do protocolo institucional e da gravidade, não de uma única cifra aplicável a todos os serviços. Não confundir um valor fisiologicamente baixo durante adaptação com hipoglicemia sintomática persistente, e não desconsiderar sintomas por um teste capilar limítrofe."
+        ],
+        [
+          "3",
+          "Exame físico em etapas: primeiro o que ameaça a vida, depois o que orienta seguimento"
+        ],
+        [
+          "p",
+          "O primeiro olhar clínico não é igual ao exame completo de admissão. Ainda na sala de parto, priorizar esforço respiratório, perfusão, frequência cardíaca, nível de atividade e malformações que interfiram com respiração ou circulação. Após estabilização e sempre que possível depois da primeira hora protegida de contato, proceder a exame da cabeça aos pés com ambiente aquecido, identificação segura e presença da família. Essa organização protege a transição fisiológica sem renunciar à descoberta precoce de condições relevantes. Um exame normal é registro de um momento e nunca uma garantia de que nenhuma doença se manifestará nas próximas horas."
+        ],
+        [
+          "t",
+          [
+            "Região/sistema",
+            "O que procurar",
+            "Achado que exige abordagem dirigida"
+          ],
+          [
+            [
+              "Estado geral",
+              "Reatividade, tônus, respiração, perfusão e temperatura",
+              "Letargia persistente, hipotonia acentuada, cianose central ou instabilidade"
+            ],
+            [
+              "Cabeça",
+              "Moldagem craniana, fontanelas, suturas, edema e lesões",
+              "Cefalo-hematoma extenso, hemorragia subgaleal suspeita ou trauma com instabilidade"
+            ],
+            [
+              "Face/boca",
+              "Simetria, palato, língua, sucção e obstrução nasal",
+              "Fenda palatina, dificuldade de passagem de ar ou secreção excessiva com incapacidade de engolir"
+            ],
+            [
+              "Tórax",
+              "Simetria respiratória, sons pulmonares, esforço e frequência",
+              "Gemido, retrações importantes, assimetria ou taquipneia persistente"
+            ],
+            [
+              "Coração/perfusão",
+              "Bulhas, sopro, pulsos femorais, enchimento capilar",
+              "Pulsos femorais fracos, má perfusão, cianose ou choque"
+            ],
+            [
+              "Abdome",
+              "Distensão, massas, fígado, coto umbilical e integridade da parede",
+              "Distensão progressiva, defeito abdominal, vômito bilioso ou sangramento persistente"
+            ],
+            [
+              "Geniturinário",
+              "Genitália externa, orifícios, posição testicular quando pertinente",
+              "Ambiguidade genital com sinais sistêmicos, anomalia obstrutiva ou malformação"
+            ],
+            [
+              "Coluna e membros",
+              "Integridade da pele dorsal, alinhamento, movimentos e quadris",
+              "Déficit de mobilidade, deformidade importante, lesão aberta ou fratura suspeita"
+            ],
+            [
+              "Pele",
+              "Lesões, equimoses, palidez, icterícia e cianose",
+              "Palidez acentuada, petéquias difusas, equimoses importantes, icterícia muito precoce"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Taquipneia não é diagnóstico: comparar causas por fisiopatologia"
+        ],
+        [
+          "p",
+          "A frequência respiratória normal do recém-nascido em repouso costuma ficar aproximadamente entre 30 e 60 incursões por minuto; observar o padrão ao longo do tempo e em contexto de sono, choro e alimentação. Uma frequência persistentemente acima de 60/min, sobretudo acompanhada de retrações, gemido, cianose ou dificuldade alimentar, exige investigação de desconforto. Taquipneia transitória após cesariana associa-se a absorção retardada de fluido pulmonar e tende a melhorar, enquanto doença da membrana hialina, pneumonia, hipertensão pulmonar persistente e cardiopatia apresentam mecanismos e trajetórias distintas."
+        ],
+        [
+          "t",
+          [
+            "Hipótese",
+            "Pistas que aumentam suspeita",
+            "Por que não é diagnóstico apenas pela frequência"
+          ],
+          [
+            [
+              "Taquipneia transitória",
+              "Cesariana eletiva, início precoce, quadro leve/moderado e melhora progressiva",
+              "Precisa excluir hipóxia significativa e outras causas"
+            ],
+            [
+              "Doença da membrana hialina",
+              "Prematuridade e deficiência de surfactante, esforço progressivo",
+              "Pode requerer suporte especializado e investigação pulmonar"
+            ],
+            [
+              "Pneumonia/sepse precoce",
+              "Risco infeccioso perinatal, perfusão alterada, hipoatividade e deterioração",
+              "Temperatura pode ser normal ou baixa, não somente febre"
+            ],
+            [
+              "Hipertensão pulmonar persistente",
+              "Hipoxemia desproporcional, shunt e instabilidade da oxigenação",
+              "Exige avaliação circulatória e, frequentemente, ecocardiografia"
+            ],
+            [
+              "Cardiopatia crítica",
+              "Cianose central, pulsos alterados, perfusão ruim, alterações de saturação",
+              "Sopro pode estar ausente inicialmente"
+            ],
+            [
+              "Pneumotórax",
+              "Piora brusca, assimetria, deterioração respiratória/hemodinâmica",
+              "É emergência quando há instabilidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Cabeça e trauma de parto: reconhecer o sangramento que não se vê"
+        ],
+        [
+          "p",
+          "Caput succedaneum é edema do couro cabeludo, tipicamente mais superficial, que pode cruzar suturas e regride com o tempo. Cefalo-hematoma é coleção sanguínea subperiosteal que respeita os limites do osso, podendo aumentar risco de hiperbilirrubinemia. Hemorragia subgaleal pode ocupar espaço amplo entre gálea e periósteo, atravessar suturas e acumular volume expressivo de sangue; palidez, taquicardia, hipotensão, aumento progressivo do perímetro cefálico ou flutuação difusa exigem avaliação urgente. O estudante não deve classificar toda tumefação após ventosa como 'apenas caput'. A comparação por localização anatômica altera vigilância, indicação de exames e necessidade de suporte."
+        ],
+        [
+          "3",
+          "Icterícia nas primeiras 24 horas merece hipótese patológica"
+        ],
+        [
+          "p",
+          "A elevação de bilirrubina pode fazer parte da transição pós-natal, mas a icterícia visível nas primeiras 24 horas aumenta preocupação com hemólise, incompatibilidades, infecção ou outros processos e precisa de avaliação. Hematomas extensos, prematuridade, incompatibilidade sanguínea, deficiência de G6PD, baixa ingestão e perda ponderal excessiva podem aumentar risco de hiperbilirrubinemia. Inspeção visual isolada subestima gravidade em diferentes tonalidades de pele; protocolos atuais utilizam bilirrubina transcutânea ou sérica, idade em horas, idade gestacional e fatores de neurotoxicidade. Este tema identifica risco, enquanto curvas de fototerapia e seguimento detalhado pertencem ao tema 018 (Icterícia Neonatal)."
+        ],
+        [
+          "3",
+          "Hipoglicemia: rastrear risco sem aplicar limite único a toda idade pós-natal"
+        ],
+        [
+          "p",
+          "O sangue fetal recebe glicose continuamente da placenta e o nascimento interrompe essa oferta. A glicemia neonatal apresenta variação fisiológica nas primeiras horas, mas episódios importantes ou persistentes podem lesar o sistema nervoso. Filhos de mães diabéticas têm risco relacionado a hiperinsulinismo; prematuros e pequenos para idade gestacional possuem reserva limitada; grandes para idade gestacional e bebês doentes também podem exigir rastreio. O valor numérico de ação depende do protocolo, da idade pós-natal, dos sintomas e da confirmação laboratorial. Um bebê convulsionando ou apneico exige estabilização e manejo imediato; não aguardar um valor laboratorial perfeito antes de tratar hipoglicemia importante suspeita."
+        ],
+        [
+          "p",
+          "No bebê assintomático de risco, oferecer alimentação precoce compatível com a segurança clínica, medir glicemia nos momentos indicados pela rotina e confirmar valores anormais quando necessário. Diferenciar desconforto respiratório ou dificuldade de alimentação que impede via oral segura de bebê bem-disposto que apenas necessita apoio à pega. Gel oral de dextrose e glicose intravenosa possuem indicações diferentes, e o uso deve seguir protocolo neonatal validado, incluindo reavaliação para evitar recorrência. Um glicosímetro pode ser impreciso em valores baixos, especialmente com hematócrito neonatal elevado."
+        ]
+      ]
+    ],
+    [
+      "profilaxia",
+      0,
+      [
+        [
+          "2",
+          "7. Vitamina K e prevenção da doença hemorrágica do recém-nascido"
+        ],
+        [
+          "p",
+          "O recém-nascido possui reservas reduzidas de vitamina K, transferência placentária limitada e microbiota intestinal ainda em desenvolvimento. A vitamina K participa da ativação de fatores de coagulação dependentes dela, e sua deficiência pode resultar em hemorragias, inclusive intracranianas. A profilaxia é uma medida preventiva com benefício importante e não deve ser confundida com correção de coagulopatia estabelecida."
+        ],
+        [
+          "p",
+          "A Diretriz Nacional de Assistência ao Parto Normal do Ministério da Saúde recomenda <strong>vitamina K 1 mg por via intramuscular em dose única</strong> para o recém-nascido na rotina por melhor relação de custo-efetividade. O texto nacional também descreve alternativa oral com múltiplas doses se os pais recusarem a via IM, exigindo aconselhamento quanto à menor praticidade e seguimento rigoroso. Em prematuros de muito baixo peso, serviços especializados podem adotar protocolos de dose ajustada; <strong>não extrapolar a dose de RN a termo automaticamente sem verificar norma neonatal local</strong>."
+        ],
+        [
+          "p",
+          "Ao documentar recusa, investigar dúvidas de forma respeitosa, explicar a finalidade e o risco de doença hemorrágica tardia, oferecer orientação conforme recomendação institucional e registrar decisão e estratégia de seguimento. Um bebê que parece inteiramente saudável pode apresentar hemorragia por deficiência de vitamina K em momento posterior; exame físico inicial normal não substitui profilaxia."
+        ],
+        [
+          "3",
+          "Doença hemorrágica por deficiência de vitamina K: três janelas clínicas"
+        ],
+        [
+          "p",
+          "A vitamina K é necessária à carboxilação de fatores de coagulação II, VII, IX e X e de proteínas reguladoras da coagulação. Sua transferência placentária é limitada, o intestino neonatal tem microbiota ainda pouco produtora e o leite materno contém pequenas quantidades. Por isso um recém-nascido normal pode desenvolver sangramento mesmo sem doença hepática ou trauma. Clinicamente distinguem-se formas precoce, clássica e tardia, que têm fatores associados e apresentações diferentes; a forma tardia pode se manifestar com hemorragia intracraniana grave em lactente sem profilaxia adequada."
+        ],
+        [
+          "t",
+          [
+            "Apresentação",
+            "Período usual",
+            "Pistas clínicas e associação"
+          ],
+          [
+            [
+              "Precoce",
+              "Primeiras 24 horas",
+              "Exposição fetal a fármacos maternos que interferem na vitamina K/coagulação; sangramento importante possível"
+            ],
+            [
+              "Clássica",
+              "Entre 2 e 7 dias",
+              "Sangramento gastrointestinal, coto umbilical, pele ou locais de punção"
+            ],
+            [
+              "Tardia",
+              "Após a primeira semana, podendo ocorrer nos meses seguintes",
+              "Maior risco sem profilaxia; possibilidade de hemorragia intracraniana e colestase subjacente"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Profilaxia e recusa: comunicação como intervenção de segurança"
+        ],
+        [
+          "p",
+          "A via intramuscular possui evidência robusta e reduz o risco de doença hemorrágica tardia. O protocolo nacional de rotina do recém-nascido a termo orienta vitamina K intramuscular, usualmente 1 mg em dose única, após organização dos cuidados iniciais, sem comprometer a primeira hora protegida. Dose e apresentação para prematuros ou peso muito baixo exigem norma especializada e conferência antes da aplicação. Não aplicar pela via oral como se fosse equivalente em eficácia à via IM sem reconhecer necessidade de esquemas específicos e risco de falha por doses esquecidas, absorção inadequada ou colestase."
+        ],
+        [
+          "p",
+          "Se a família recusa a injeção, primeiro descobrir o motivo: medo da dor, dúvida sobre substância, preocupação com vínculo ou informação incorreta. Explicar que profilaxia não trata um bebê doente, mas evita sangramento em bebê aparentemente saudável; discutir riscos, alternativas aceitas pela instituição e eventual necessidade de doses orais repetidas e seguimento. Registrar orientação e decisão sem coagir, garantindo que o cuidado subsequente não seja abandonado. Sangramento ativo precisa de avaliação e tratamento de emergência, não apenas da dose profilática habitual."
+        ]
+      ]
+    ],
+    [
+      "imunizacao",
+      0,
+      [
+        [
+          "2",
+          "8. Imunização ao nascer e prevenção de transmissão vertical"
+        ],
+        [
+          "3",
+          "Hepatite B: a dose de nascimento tem janela de oportunidade"
+        ],
+        [
+          "p",
+          "O calendário nacional brasileiro orienta administrar vacina hepatite B o mais precocemente possível, preferencialmente nas primeiras <strong>12 horas de vida ainda na maternidade</strong>. A prioridade é relevante porque a infecção adquirida no período neonatal tem elevada chance de cronificação. O estado sorológico materno precisa ser conferido; se a gestante é HBsAg positiva, seguir protocolo de profilaxia combinada com imunoglobulina humana anti-hepatite B em sítio distinto, idealmente no período imediato recomendado. Não presumir que a vacinação materna substitui proteção neonatal."
+        ],
+        [
+          "3",
+          "BCG e situações de elegibilidade"
+        ],
+        [
+          "p",
+          "A vacina BCG deve ser oferecida ao nascer quando a criança está elegível conforme calendário e protocolo do PNI, protegendo principalmente contra formas graves de tuberculose. Prematuros com peso abaixo de 2 kg não recebem BCG na rotina até cumprirem critério de elegibilidade; outras contraindicações exigem avaliação conforme imunodeficiência e normas nacionais. A Nota Técnica Conjunta 20/2026 organiza fluxo de imunização nas maternidades e traz novidades como o anticorpo monoclonal nirsevimabe em grupos de risco elegíveis. O uso de nirsevimabe não substitui as vacinas de nascimento nem deve ser apresentado como vacinação universal a todos os RN."
+        ],
+        [
+          "t",
+          [
+            "Medida",
+            "População / janela",
+            "Ponto de segurança"
+          ],
+          [
+            [
+              "Vacina hepatite B",
+              "Todos os RN, preferencialmente ≤12h após nascimento",
+              "Checar registro e situação materna"
+            ],
+            [
+              "Imunoglobulina anti-hepatite B",
+              "Exposição por mãe HBsAg+ e situações definidas pelo PNI",
+              "Administrar com vacina conforme protocolo e registrar"
+            ],
+            [
+              "BCG",
+              "Ao nascer em RN elegível",
+              "Evitar em prematuro &lt;2 kg e outras contraindicações"
+            ],
+            [
+              "Nirsevimabe",
+              "Grupos específicos contemplados pelas normas do PNI 2026",
+              "Não confundir com indicação universal"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Resultados maternos pendentes ou discordantes precisam de fluxo rápido de esclarecimento. Investigar também sífilis, HIV e outras exposições relevantes na anamnese perinatal e seguir os protocolos específicos para prevenção da transmissão vertical. Evitar criar condutas detalhadas de tratamento de sífilis congênita ou HIV apenas a partir de um resultado isolado: essa decisão exige algoritmo próprio, anamnese materna e exame neonatal."
+        ],
+        [
+          "3",
+          "Filho de mãe HBsAg positiva: duas intervenções que não competem"
+        ],
+        [
+          "p",
+          "A vacinação contra hepatite B induz resposta ativa, mas a imunoglobulina específica fornece anticorpos de ação imediata. Em filhos de mulheres HBsAg positivas, o Ministério da Saúde orienta <strong>vacina monovalente contra hepatite B associada à imunoglobulina anti-hepatite B</strong>, administradas em locais musculares diferentes, idealmente nas primeiras 12 horas de vida. Se a maternidade não dispõe de ambos os produtos, a equipe precisa acionar a rede para evitar perder a janela de proteção; jamais suspender a vacina aguardando apenas a chegada da imunoglobulina. Documentar o que foi aplicado, hora, lote e seguimento. O bebê bem-aparentado pode estar exposto, pois o diagnóstico é materno e não depende de sintomas neonatais."
+        ],
+        [
+          "p",
+          "A dose de nascimento da hepatite B é indicada também quando HBsAg materno é negativo, conforme PNI. Quando a condição sorológica é desconhecida, deve-se buscar informação ou teste oportuno e conduzir a imunoprofilaxia conforme orientação nacional vigente, sem perder o tempo da vacinação universal. Uma nota técnica do MS publicada em 2025 e o calendário 2026 reforçam a importância das primeiras 12 horas; a imunoglobulina, quando indicada, tem janela máxima descrita em protocolo, mas atraso não transforma seu uso em rotina irrelevante. Exposição já reconhecida demanda rastreabilidade e acompanhamento sorológico posterior, conforme orientação de infectologia/PNI."
+        ],
+        [
+          "3",
+          "BCG: reconhecer por que baixo peso e imunodeficiência mudam a decisão"
+        ],
+        [
+          "p",
+          "A BCG contém microrganismo vivo atenuado e protege principalmente contra formas graves de tuberculose na infância. Está programada ao nascer para crianças elegíveis, mas recém-nascidos com menos de 2 kg usualmente aguardam atingir esse peso conforme norma do PNI. Imunodeficiência conhecida ou suspeita e certas exposições/condições clínicas podem contraindicar ou adiar o imunobiológico; a decisão requer investigação dirigida e consulta a CRIE ou equipe especializada. É erro interpretá-la como vacina a ser aplicada incondicionalmente a todo bebê na mesma hora do nascimento."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Conduta de princípio",
+            "Pendência que não pode desaparecer do prontuário"
+          ],
+          [
+            [
+              "RN a termo, mãe HBsAg negativa, bebê estável",
+              "Hepatite B e BCG conforme calendário e elegibilidade",
+              "Registro de data, lote e vacinas administradas"
+            ],
+            [
+              "RN de mãe HBsAg positiva",
+              "Vacina hepatite B e imunoglobulina específica em sítios diferentes, sem demora",
+              "Seguimento e checagem de esquema/sorologia"
+            ],
+            [
+              "RN &lt;2 kg",
+              "Hepatite B segundo protocolo; adiar BCG até cumprir critério de peso e elegibilidade",
+              "Agendar e identificar responsável por completar BCG"
+            ],
+            [
+              "Imunodeficiência suspeita",
+              "Avaliação especializada antes de vacina viva, segundo PNI/CRIE",
+              "Encaminhamento e justificativa do adiamento"
+            ],
+            [
+              "Sorologia HBsAg desconhecida",
+              "Não perder vacinação de nascimento; obter resultado e avaliar necessidade de imunoglobulina",
+              "Registrar resultado pendente e responsável pela ação"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "registro",
+      0,
+      [
+        [
+          "2",
+          "9. Documentação, segurança, alojamento conjunto e transição de cuidados"
+        ],
+        [
+          "p",
+          "A documentação clínica não deve se limitar a 'nasceu bem'. Registrar idade gestacional, via de parto, hora do nascimento, condições ao nascer, necessidade ou não de intervenções, Apgar, cronologia do cordão quando relevante, contato pele a pele, início do aleitamento, achados significativos, profilaxias e situação de imunização. Intercorrências, inclusive aspiração por obstrução ou necessidade de avaliação neonatal, precisam de descrição objetiva. Identificação segura deve vincular bebê e responsável sem depender apenas de localização física."
+        ],
+        [
+          "p",
+          "A transferência para alojamento conjunto depende de estabilidade respiratória, hemodinâmica, térmica e capacidade de monitoramento. Orientar quem ficará com o bebê sobre amamentação, postura de sono segura e sinais de alerta para acionar equipe. Antes da alta hospitalar, organizar rastreios neonatais conforme momento e protocolos (teste do pezinho, teste da orelhinha, triagem visual e oximetria para cardiopatia congênita crítica), verificar necessidade de seguimento precoce, perda ponderal, icterícia, alimentação e condições sociais. <strong>O teste do coraçãozinho não substitui exame físico, e um teste normal não exclui toda cardiopatia.</strong>"
+        ],
+        [
+          "p",
+          "O contato entre sala de parto, alojamento conjunto, neonatologia e APS precisa transmitir riscos perinatais e pendências diagnósticas. Uma criança de mãe HBsAg positiva pode parecer inteiramente bem e, ainda assim, ter indicação urgente de imunoprofilaxia. Uma criança com dificuldade persistente de alimentação, hipoglicemia ou instabilidade térmica não deve receber alta por ter Apgar inicial alto."
+        ],
+        [
+          "3",
+          "Checklist funcional do nascimento seguro"
+        ],
+        [
+          "o",
+          [
+            "Confirmar identificação e informações maternas capazes de alterar o cuidado neonatal.",
+            "Observar adaptação respiratória, FC, tônus e temperatura, mantendo capacidade de reavaliar.",
+            "Executar ou justificar alterações no manejo do cordão e no contato pele a pele.",
+            "Verificar profilaxia de vitamina K e imunização conforme elegibilidade e exposição materna.",
+            "Identificar malformações e sinais de alerta no exame dirigido, com indicação de suporte quando necessário.",
+            "Documentar quem reavaliará o bebê, quando e quais exames/triagens são pendentes."
+          ]
+        ],
+        [
+          "3",
+          "O calendário dos rastreios: não confundir coleta com linha de cuidado concluída"
+        ],
+        [
+          "p",
+          "O Programa Nacional de Triagem Neonatal do SUS começa com coleta em papel-filtro, mas só termina depois de resultado, convocação quando necessário, confirmação diagnóstica, encaminhamento e tratamento. O Ministério da Saúde recomenda que a primeira amostra do teste do pezinho seja coletada de <strong>48 horas após o parto até o quinto dia de vida</strong>. Realizar precocemente antes da exposição alimentar necessária pode produzir falso-negativos em determinadas doenças metabólicas, enquanto alterações fisiológicas iniciais podem comprometer especificidade de alguns marcadores. Se o RN recebeu alta antes de 48 horas, organizar agendamento em UBS ou maternidade habilitada e orientar a família a verificar o resultado."
+        ],
+        [
+          "p",
+          "Um resultado de triagem suspeito não representa diagnóstico definitivo. O Serviço de Referência em Triagem Neonatal deve coordenar confirmação e tratamento; a equipe e a família precisam garantir retorno. Também não se deve assumir que amostra coletada equivale à cobertura efetiva quando a identificação está errada, o cartão está inadequadamente preenchido, o material é insuficiente ou o resultado nunca é conferido. Em prematuros, informar idade gestacional, peso e condições de coleta ao laboratório porque interpretação e repetição podem depender desses fatores."
+        ],
+        [
+          "t",
+          [
+            "Rastreio",
+            "Momento / lógica",
+            "Armadilha clínica"
+          ],
+          [
+            [
+              "Teste do pezinho",
+              "Idealmente entre 48 horas e o 5º dia conforme MS",
+              "Alta precoce requer agendamento e busca de resultado"
+            ],
+            [
+              "Triagem auditiva",
+              "Na maternidade ou período indicado pela rede; repetir/encaminhar conforme achado",
+              "Resposta ao som em casa não exclui perda auditiva"
+            ],
+            [
+              "Triagem de cardiopatia crítica por oximetria",
+              "Após período de adaptação e no tempo protocolado da rede",
+              "Oximetria normal não descarta todas as cardiopatias"
+            ],
+            [
+              "Teste do reflexo vermelho",
+              "Exame ocular do RN conforme rotina e profissional habilitado",
+              "Ausência de opacidade aparente a olho nu não exclui doença"
+            ],
+            [
+              "Exame físico neonatal seriado",
+              "Primeira avaliação e reavaliações antes da alta",
+              "Sopro ausente ao nascer não exclui cardiopatia"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "O teste da orelhinha, o exame de reflexo vermelho e o teste de oximetria cardíaca são complementares, não concorrentes. Rastreios podem ter janelas e protocolos locais diferentes; esta apostila registra o princípio de programação e interpretação, enquanto o capítulo de triagem neonatal e seus fluxos técnicos necessitam atualização final pela rede onde o material será aplicado. Fonte: Ministério da Saúde, Programa Nacional de Triagem Neonatal, FAQ 2025."
+        ],
+        [
+          "3",
+          "Identificação segura: a prevenção de troca começa antes do primeiro deslocamento"
+        ],
+        [
+          "p",
+          "O bebê deve receber identificação inequívoca vinculada ao responsável conforme o protocolo institucional, incluindo situações de gemelaridade, nomes semelhantes, parto com intercorrência e transferência para unidade neonatal. Pulseiras, prontuário, etiquetas de amostra, procedimentos e medicações precisam conferir com o mesmo identificador em pontos críticos. A checagem deve ocorrer na coleta de exames, na administração de imunobiológicos e na entrega ao alojamento conjunto; número de leito ou aspecto físico não é identificação segura. Se houve troca de ambiente ou quebra da identificação, interromper ato não urgente até reconciliação documental."
+        ],
+        [
+          "3",
+          "Da sala de parto ao alojamento: informações que precisam seguir com a criança"
+        ],
+        [
+          "o",
+          [
+            "Registrar hora exata do nascimento, apresentação e via de parto, idade gestacional, peso quando mensurado, condições de vitalidade, Apgar e medidas de suporte com horários.",
+            "Documentar início do contato pele a pele, interrupções justificadas, início e resultado observado da tentativa de amamentação e barreiras percebidas.",
+            "Registrar sinais de alerta e resultados maternos que demandem conduta neonatal, incluindo sorologias positivas ou pendentes e se há tratamento/seguimento a conferir.",
+            "Anotar vitamina K, vacina hepatite B e BCG quando administradas, com hora e lote, ou motivo do adiamento e plano de resolução.",
+            "Antes de transferir, confirmar temperatura, padrão respiratório, perfusão e destino assistencial; definir profissional responsável pelo próximo exame e resultados pendentes.",
+            "Na alta, verificar rastreios, alimentação, icterícia, peso, retorno, acesso à rede e entendimento da família, com instruções para procurar ajuda."
+          ]
+        ],
+        [
+          "3",
+          "Triagem do coraçãozinho: o momento da medida importa"
+        ],
+        [
+          "p",
+          "A oximetria para detecção de cardiopatia congênita crítica complementa, mas não substitui, exame físico, pulsos femorais e avaliação clínica. O Ministério da Saúde orienta realizar o teste ainda na maternidade, usualmente entre 24 e 48 horas de vida, com aferições no membro superior direito e em um dos membros inferiores, por serem territórios pré e pós-ductais. O protocolo define limiares, repetição e necessidade de ecocardiografia/avaliação especializada. A saturação de um recém-nascido nos primeiros minutos de vida é fisiologicamente menor que em 24 horas; portanto, não usar alvos de triagem tardia para julgar transição imediata ou vice-versa."
+        ],
+        [
+          "3",
+          "Linha de cuidado de rastreios: coleta, interpretação, confirmação, tratamento"
+        ],
+        [
+          "t",
+          [
+            "Rastreio",
+            "Função",
+            "Ponto de segurança"
+          ],
+          [
+            [
+              "Teste do pezinho",
+              "Detectar precocemente doenças metabólicas, endócrinas, genéticas e hematológicas contempladas no PNTN",
+              "Colher preferencialmente entre 48h e o 5º dia e garantir acesso ao resultado"
+            ],
+            [
+              "Triagem auditiva",
+              "Identificar possível perda auditiva em fase precoce",
+              "Exame alterado exige reteste/confirmação e encaminhamento, não rótulo definitivo"
+            ],
+            [
+              "Reflexo vermelho",
+              "Identificar opacidades dos meios e outras condições oftalmológicas",
+              "Reflexo assimétrico/ausente exige avaliação oftalmológica; exame normal não exclui todas as doenças"
+            ],
+            [
+              "Oximetria cardíaca",
+              "Rastrear parte das cardiopatias congênitas críticas",
+              "Realizar no momento indicado, interpretar medidas pré e pós-ductais e documentar encaminhamento"
+            ],
+            [
+              "Avaliação alimentar e antropométrica",
+              "Reconhecer vulnerabilidade por prematuridade, perda ponderal ou dificuldade de sucção",
+              "Reavaliar tendência e garantir consulta precoce após alta"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Comunicação com a família: sinais de alerta específicos, sem alarmismo"
+        ],
+        [
+          "p",
+          "Na orientação de alta e nas transferências, explicar o que observar e a quem recorrer. Respiração difícil ou pausas respiratórias, coloração central azulada, prostração, febre ou hipotermia, sucção muito fraca, vômito verde, convulsões, sangramento persistente e piora súbita merecem atendimento imediato. Icterícia muito precoce ou progressiva e diminuição da ingestão/diurese requerem reavaliação conforme gravidade. O plano deve incluir local de atendimento disponível, forma de agendamento dos rastreios pendentes e possibilidade real de transporte. Pedir ao cuidador que explique o plano com suas palavras permite detectar instruções que não foram compreendidas."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos clínicos comentados: o que muda a conduta"
+        ],
+        [
+          "3",
+          "Caso 1 — RN a termo vigoroso e pedido de aspiração rotineira"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> bebê de 39 semanas, parto vaginal, chora imediatamente, tônus ativo, boa ventilação e sem sinais de obstrução. A equipe sugere aspiração de nariz e boca 'por protocolo'. <strong>Hipótese:</strong> adaptação neonatal normal. <strong>Raciocínio:</strong> o choro e o tônus, associados à observação contínua, favorecem cuidado de rotina; a aspiração não acrescenta benefício na ausência de obstrução e pode provocar efeitos indesejados. <strong>Exames:</strong> nenhum invasivo como rotina nos primeiros instantes; avaliação clínica e Apgar sem atrasar cuidados. <strong>Conduta:</strong> calor, pele a pele com vigilância, clampeamento oportuno e amamentação na primeira hora. <strong>Por que importa:</strong> evitar procedimentos desnecessários é parte da segurança, não omissão de assistência."
+        ],
+        [
+          "3",
+          "Caso 2 — Bebê com apneia não deve esperar o Apgar"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> RN de 38 semanas nasce hipotônico, não respira após os primeiros passos e tem FC de 80/min. O prontuário ainda não possui Apgar de 1 minuto. <strong>Hipótese:</strong> transição respiratória inadequada com necessidade de suporte imediato. <strong>Raciocínio:</strong> apneia e FC inferior a 100/min não são resultados que exigem esperar pontuação: indicam início rápido de ventilação eficaz conforme equipe habilitada. <strong>Exames:</strong> monitorização de FC e oxigenação conforme protocolo, não exames que atrasem ventilação. <strong>Conduta:</strong> chamar equipe, iniciar algoritmo de reanimação neonatal, documentar cronologia e resposta. <strong>Por que importa:</strong> Apgar descreve, não decide o momento de iniciar suporte ventilatório. A técnica detalhada consta no tema 008."
+        ],
+        [
+          "3",
+          "Caso 3 — Mãe HBsAg positiva e RN aparentemente saudável"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> bebê de 40 semanas com boa vitalidade; a revisão pré-natal identifica HBsAg materno reagente. <strong>Hipótese:</strong> exposição perinatal ao vírus da hepatite B, sem doença clínica necessária ao nascimento. <strong>Raciocínio:</strong> o exame físico normal não reduz a importância de profilaxia precoce; risco de cronificação após transmissão vertical é alto. <strong>Exames:</strong> conferir resultado materno, registro neonatal e testes/seguimento definidos pelo PNI. <strong>Conduta:</strong> organizar imediatamente vacina hepatite B e imunoglobulina específica conforme protocolo, em locais separados, e documentar plano de acompanhamento. <strong>Por que importa:</strong> prevenção da transmissão vertical é decisão baseada na exposição, e não na aparência do RN."
+        ],
+        [
+          "3",
+          "Caso 4 — Hipotermia após cesárea e contato pele a pele mal executado"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> RN de 38 semanas, vigoroso, inicialmente mantido sem cobertura adequada em ambiente frio após cesárea. A temperatura cai e há redução de atividade. <strong>Hipóteses:</strong> perda térmica por evaporação e ambiente, com necessidade de avaliar glicemia e doença associada se manifestações persistirem. <strong>Exames:</strong> temperatura e glicemia se clinicamente indicada; avaliação respiratória/hemodinâmica dirigida. <strong>Interpretação:</strong> o recém-nascido tem pouca reserva térmica e aumenta consumo energético ao produzir calor. <strong>Conduta:</strong> corrigir ambiente, oferecer aquecimento seguro/pele a pele supervisionado conforme estabilidade, reavaliar temperatura e sintomas. <strong>Por que importa:</strong> termorregulação inadequada pode produzir complicações evitáveis."
+        ],
+        [
+          "3",
+          "Caso 5 — Mecônio, mas boa adaptação respiratória"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> parto com líquido amniótico meconial, RN com choro forte, tônus adequado, respiração eficaz e sem sinais de obstrução. <strong>Hipótese:</strong> RN vigoroso exposto a mecônio, sob observação. <strong>Raciocínio:</strong> presença de mecônio isolada não determina aspiração de vias aéreas ou intubação. <strong>Exames:</strong> monitoramento de respiração, FC, cor e evolução clínica, ampliando conforme sintomas. <strong>Conduta:</strong> cuidados térmicos, pele a pele quando elegível, sem aspiração rotineira; manter vigilância por possível desconforto respiratório. <strong>Por que importa:</strong> distinguir fator de risco de indicação de procedimento evita iatrogenia."
+        ],
+        [
+          "3",
+          "Caso 6 — RN prematuro tardio aparentemente bem, mas com baixa reserva metabólica"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> recém-nascido de 35 semanas e 2 dias, parto vaginal, chora e apresenta bom tônus; mãe com diabetes gestacional, bem controlada. <strong>Hipóteses:</strong> adaptação inicial favorável, associada a riscos de hipoglicemia, instabilidade térmica, icterícia e sucção ineficaz. <strong>Raciocínio:</strong> boa vitalidade não elimina vulnerabilidade relacionada a prematuridade e hiperinsulinismo fetal. <strong>Avaliação:</strong> monitorar temperatura, alimentação e glicemia em protocolo de risco, com reavaliação de respiração e comportamento. <strong>Conduta:</strong> preservar contato pele a pele seguro, apoiar amamentação e assegurar rastreio/seguimento metabólico conforme protocolo. <strong>Por que importa:</strong> o escore de Apgar não substitui a avaliação de risco nas primeiras horas."
+        ],
+        [
+          "3",
+          "Caso 7 — RN com taquipneia após cesariana não deve receber diagnóstico automático"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> recém-nascido de 38 semanas, cesariana sem trabalho de parto, apresenta FR 76/min e leve tiragem após a primeira hora, com gemido discreto e saturação variável. <strong>Hipóteses:</strong> taquipneia transitória, mas também pneumonia, hipertensão pulmonar, cardiopatia e outras causas. <strong>Exames:</strong> avaliação seriada, oximetria e exames direcionados conforme evolução e gravidade. <strong>Interpretação:</strong> a via de parto favorece hipótese de líquido pulmonar residual, mas não confirma o diagnóstico. <strong>Conduta:</strong> garantir avaliação clínica e suporte respiratório segundo necessidade e protocolo, reavaliando a possibilidade de alimentação segura e unidade neonatal. <strong>Por que importa:</strong> não banalizar desconforto respiratório que persiste ou progride."
+        ],
+        [
+          "3",
+          "Caso 8 — Apgar satisfatório não evita hemorragia tardia por falta de profilaxia"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> família de recém-nascido a termo sem intercorrências hesita em aceitar vitamina K intramuscular porque o bebê 'nasceu forte'. <strong>Hipótese:</strong> criança saudável exposta ao risco prevenível de deficiência de vitamina K. <strong>Raciocínio:</strong> o risco decorre de reservas fisiológicas baixas e não é previsto pela vitalidade inicial. <strong>Conduta:</strong> esclarecer papel da profilaxia, risco de hemorragia intracraniana tardia e diferenças práticas de esquemas alternativos, registrar orientação e realizar a prevenção acordada conforme protocolo. <strong>Por que importa:</strong> consentimento informado bem conduzido é segurança neonatal e não mera formalidade."
+        ],
+        [
+          "3",
+          "Caso 9 — Filho de mãe HBsAg positiva: problema identificado antes do nascimento"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> recém-nascido de 39 semanas saudável, HBsAg materno positivo documentado, nasceu há duas horas. Vacina hepatite B está disponível; imunoglobulina está em outro setor. <strong>Hipótese:</strong> exposição perinatal ao HBV com imunoprofilaxia urgente. <strong>Exames:</strong> conferir registro sorológico e rastreabilidade, sem exigir manifestação clínica neonatal. <strong>Interpretação:</strong> vacina e imunoglobulina são complementares, não intercambiáveis. <strong>Conduta:</strong> administrar vacina imediatamente e acionar fluxo para imunoglobulina específica tão logo possível, preferencialmente dentro das primeiras 12 horas; documentar sítios distintos e seguimento. <strong>Por que importa:</strong> janela de imunoprofilaxia não deve ser consumida aguardando sintoma ou exame do RN."
+        ],
+        [
+          "3",
+          "Caso 10 — Icterícia às doze horas: não chamar de fisiológica sem investigar"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> recém-nascido de 37 semanas e 4 dias apresenta icterícia visível após 12 horas; há história de incompatibilidade sanguínea e cefalo-hematoma após parto instrumental. <strong>Hipóteses:</strong> hiperbilirrubinemia por hemólise e/ou carga aumentada de bilirrubina de hematoma, entre outras causas. <strong>Exames:</strong> bilirrubina sérica ou transcutânea conforme protocolo, e investigação hematológica dirigida. <strong>Interpretação:</strong> início antes de 24 horas exige avaliação, e o risco depende de idade em horas e outros fatores. <strong>Conduta:</strong> monitorar e discutir tratamento conforme nomogramas e diretrizes apropriados, sem estimar necessidade de fototerapia apenas pela cor da pele. <strong>Por que importa:</strong> a cronologia da icterícia altera a probabilidade de doença."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "11. Questões autorais de residência com comentários"
+        ],
+        [
+          "o",
+          [
+            "<strong>Questão 1.</strong> RN de 39 semanas, vigoroso e sem necessidade de reanimação. A conduta mais apropriada em relação ao cordão é: A) Clampear imediatamente em todos; B) preferir clampeamento diferido por pelo menos 60 segundos, mantendo avaliação e calor; C) realizar ordenha em todos; D) atrasar clampeamento mesmo se ventilação urgente for inviável. <strong>Gabarito B.</strong> A negligencia benefício da transfusão placentária; C confunde métodos e riscos gestacionais; D ignora necessidade de suporte. Revisão: clampeamento diferido em elegíveis, vigilância e contexto.",
+            "<strong>Questão 2.</strong> Bebê a termo nasce sem choro, apneico e com FC 85/min após passos iniciais. Qual a melhor abordagem? A) Aguardar Apgar de 5 minutos; B) oferecer primeira mamada; C) iniciar assistência ventilatória do algoritmo neonatal sem demora; D) aguardar saturação de 95% para decidir. <strong>Gabarito C.</strong> A e D atrasam ventilação essencial; B não atende à prioridade respiratória. Revisão: apneia/gasping e FC &lt;100/min após passos iniciais acionam suporte.",
+            "<strong>Questão 3.</strong> Qual afirmação sobre Apgar é correta? A) É diagnóstico específico de asfixia; B) determina se a equipe pode iniciar ventilação; C) descreve cinco parâmetros de adaptação em tempos padronizados; D) substitui avaliação clínica contínua. <strong>Gabarito C.</strong> A atribui especificidade indevida; B atrasa reanimação; D ignora a evolução do RN. Revisão: Apgar descreve condição, não substitui atendimento.",
+            "<strong>Questão 4.</strong> RN a termo, vigoroso, com líquido meconial, mas sem obstrução de vias aéreas. Qual conduta? A) Aspirar traqueia rotineiramente; B) intubar em todos; C) seguir cuidados de rotina com observação e sem aspiração rotineira; D) administrar oxigênio a 100%. <strong>Gabarito C.</strong> A e B não são rotina em bebê vigoroso; D favorece hiperóxia desnecessária. Revisão: mecônio é fator de risco, não indicação isolada para intubação.",
+            "<strong>Questão 5.</strong> Quanto à prevenção de doença hemorrágica do RN segundo diretriz nacional brasileira, a medida de rotina indicada é: A) Não oferecer vitamina K se saudável; B) vitamina K 1 mg IM em dose única em RN elegível a termo; C) oferecer anticoagulante; D) repor apenas após sangramento. <strong>Gabarito B.</strong> A e D confundem prevenção e tratamento; C não tem indicação. Revisão: vitamina K previne hemorragia por deficiência neonatal.",
+            "<strong>Questão 6.</strong> RN saudável cuja mãe tem HBsAg positivo deve: A) receber apenas BCG; B) aguardar icterícia; C) receber imunoprofilaxia contra hepatite B conforme PNI, incluindo vacina e imunoglobulina específica, sem atraso; D) dispensar vacina porque será amamentado. <strong>Gabarito C.</strong> A omite hepatite B; B confunde doença aparente com exposição; D desconsidera prevenção da transmissão vertical. Revisão: dose de nascimento idealmente nas primeiras 12 horas.",
+            "<strong>Questão 7.</strong> Em relação ao contato pele a pele após cesárea de RN vigoroso, a melhor resposta é: A) Proibido após cesárea; B) recomendado quando condições clínicas e vigilância permitem, priorizando primeira hora; C) somente após 24 horas; D) incompatível com termorregulação. <strong>Gabarito B.</strong> A/C criam restrição não sustentada; D ignora benefício térmico. Revisão: MS 124/2026 abrange parto vaginal e cesárea.",
+            "<strong>Questão 8.</strong> Sobre vacina BCG no RN de 1,7 kg prematuro, é correto: A) É obrigatória imediatamente, independentemente do peso; B) pode ser adiada até cumprir critérios de elegibilidade, pois a rotina do MS não indica BCG em prematuro &lt;2 kg; C) substitui vacina hepatite B; D) é terapêutica para tuberculose congênita. <strong>Gabarito B.</strong> A desconsidera critério do MS; C mistura indicações; D confunde prevenção com tratamento. Revisão: verificar peso, imunidade e elegibilidade."
+          ]
+        ],
+        [
+          "3",
+          "Questões complementares — decisões na primeira hora e nos primeiros dias"
+        ],
+        [
+          "o",
+          [
+            "<strong>Q7.</strong> RN de 39 semanas chora, tem tônus em flexão e respiração regular. Conduta inicial mais apropriada? A) Aspiração traqueal preventiva; B) contato pele a pele protegido, calor, monitorização e clampeamento oportuno; C) oxigênio a 100% em todos; D) aguardar Apgar antes de qualquer cuidado. <strong>Gabarito B.</strong> A introduz procedimento desnecessário; C ignora risco do hiperóxia; D confunde registro com cuidado clínico em tempo real. Revisão: preservar a adaptação fisiológica do RN com boa vitalidade.",
+            "<strong>Q8.</strong> RN com apneia após nascer e FC menor que 100/min após passos iniciais. O que não pode ser feito? A) Avaliar rapidamente e iniciar assistência ventilatória conforme protocolo; B) acionar equipe treinada; C) esperar a pontuação de Apgar para decidir iniciar ventilação; D) garantir normotermia enquanto estabiliza. <strong>Gabarito C.</strong> A, B e D fazem parte da assistência responsável; esperar um minuto por escore é atraso evitável. Revisão: Apgar descreve a evolução, não é gatilho de intervenção.",
+            "<strong>Q9.</strong> Bebê de 35 semanas e bom Apgar é filho de mãe com diabetes. Qual afirmação é correta? A) Apgar alto dispensa vigilância glicêmica; B) prematuridade tardia não afeta termorregulação; C) considerar risco de hipoglicemia, sucção ineficaz e hipotermia; D) fórmula universal sem avaliação. <strong>Gabarito C.</strong> A ignora hiperinsulinismo; B desconsidera maturidade; D impõe alimentação sem necessidade individual. Revisão: vitalidade e vulnerabilidade metabólica são dimensões distintas.",
+            "<strong>Q10.</strong> Qual afirmativa sobre clampeamento é mais consistente com SBP 2026 para RN ≥34 semanas vigoroso? A) Aguardar pelo menos 60 segundos com vigilância; B) sempre clampear imediatamente; C) fazer ordenha em todo prematuro extremo; D) ignorar hemorragia materna. <strong>Gabarito A.</strong> B perde benefício potencial, C ignora risco de hemorragia intraventricular em faixas muito imaturas, D desconsidera segurança obstétrica. Revisão: decisão incorpora vitalidade, idade gestacional e condições da placenta.",
+            "<strong>Q11.</strong> RN saudável de mãe HBsAg positiva recebe apenas vacina contra hepatite B, sem imunoglobulina, porque nasceu sem sintomas. A) Correto, a vacina substitui imunoglobulina; B) incorreto, ambas estão indicadas conforme PNI; C) esperar sorologia do RN aos seis meses; D) usar somente BCG. <strong>Gabarito B.</strong> A confunde imunidade ativa e passiva; C perde a janela de profilaxia; D não protege contra HBV. Revisão: prevenção da transmissão vertical é decisão orientada pela sorologia materna.",
+            "<strong>Q12.</strong> RN apresenta icterícia com 10 horas de vida. A) Sempre fisiológica; B) não pode ter hemólise se o Apgar foi 9; C) exige investigação e interpretação da bilirrubina por idade em horas e risco; D) fototerapia automática a todo bebê. <strong>Gabarito C.</strong> A e B são conclusões falsas; D ignora nomogramas e avaliação clínica. Revisão: icterícia no primeiro dia é sinal de atenção.",
+            "<strong>Q13.</strong> Criança de 34 semanas com boa vitalidade apresenta saturação inicialmente inferior ao valor esperado em 24 horas, sem desconforto. A) Todo recém-nascido nasce com SpO2 100%; B) a saturação aumenta gradativamente na transição e deve ser interpretada pelo minuto de vida e quadro clínico; C) usar o limiar do teste do coraçãozinho em toda a primeira respiração; D) ignorar qualquer sinal respiratório por 24 horas. <strong>Gabarito B.</strong> A/C confundem transição com rastreio; D ignora deterioração. Revisão: tempo de vida modifica interpretação da oximetria.",
+            "<strong>Q14.</strong> O que significa teste do pezinho coletado e resultado pendente? A) Triagem concluída; B) diagnóstico de doença metabólica; C) início de um processo que precisa de resultado, convocação, confirmação e tratamento se indicado; D) ausência de necessidade de rastreamento auditivo. <strong>Gabarito C.</strong> A ignora falhas de seguimento; B confunde triagem com diagnóstico; D associa exames não concorrentes. Revisão: qualidade depende da linha de cuidado completa.",
+            "<strong>Q15.</strong> Após extração a vácuo, RN desenvolve aumento difuso de volume do couro cabeludo, palidez e taquicardia. Melhor hipótese? A) Apenas caput sem necessidade de avaliação; B) hemorragia subgaleal potencialmente grave; C) dermatite seborreica; D) cefalo-hematoma sempre limitado a um osso e sem repercussão. <strong>Gabarito B.</strong> A atrasa reconhecimento de choque; C é incompatível com instalação aguda; D descreve outra entidade. Revisão: conhecer planos anatômicos pode salvar o bebê.",
+            "<strong>Q16.</strong> Bebê de 36 horas tem teste do coraçãozinho programado. Qual afirmação é correta? A) substitui ausculta e pulsos femorais; B) usa apenas o dedo do pé; C) é rastreio complementar, realizado no período recomendado e com comparação pré e pós-ductal; D) exame normal exclui todas as cardiopatias. <strong>Gabarito C.</strong> A/D superestimam rastreio; B perde comparação. Revisão: resultados de rastreio e sinais clínicos são complementares."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "12. Referências científicas e estado do rascunho"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-124-2026-dahud-saes-ms.pdf/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Nota Técnica 124/2026: contato pele a pele precoce e ininterrupto na primeira hora após parto vaginal ou cesárea.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-20-2026-dpni-dahu-svsa-saes-ms.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde, PNI. Nota Técnica Conjunta 20/2026: imunização de recém-nascidos nas maternidades.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/a/assistencia-ao-parto-normal-diretriz-nacional\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Diretrizes Nacionais de Assistência ao Parto Normal: cuidados iniciais do RN e profilaxia de vitamina K.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/vacinacao/calendario\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde, PNI. Calendário Nacional de Vacinação 2026: hepatite B e BCG ao nascer.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/b/bcg\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. BCG: dose ao nascer e restrição para prematuro com peso inferior a 2 kg.</a>",
+            "<a href=\"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/neonatal-resuscitation\" target=\"_blank\" rel=\"noopener noreferrer\">AHA/AAP. 2025 Guidelines, Part 5: Neonatal Resuscitation — transição inicial, clampeamento e suporte.</a>",
+            "<a href=\"https://publications.aap.org/pediatrics/article/157/1/e2025074352/205237/Part-5-Neonatal-Resuscitation-2025-American-Heart\" target=\"_blank\" rel=\"noopener noreferrer\">Szyld et al. Pediatrics 2026;157:e2025074352, diretriz AHA/AAP aprovada em 2025.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/legislacao/\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Portaria nº 371/2014: atenção integral e humanizada ao RN no SUS.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal/perguntas-frequentes-faq\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. PNTN, FAQ 2025: coleta do teste do pezinho de 48h ao 5º dia, busca ativa, confirmação e seguimento.</a>",
+            "<a href=\"https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-igual-maior-34-semanas-12junho2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Almeida MFB, Guinsburg R et al. SBP. Reanimação do recém-nascido ≥34 semanas em sala de parto: Diretrizes 2026. DOI:10.25060/PRN-SBP-2026-1.</a>",
+            "<a href=\"https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-menor-34-semanas-12junho2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">SBP. Reanimação do recém-nascido &lt;34 semanas em sala de parto: Diretrizes 2026, junho.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/cuidado-neonatal\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Cuidado Neonatal: teste do olhinho, teste da orelhinha e teste do coraçãozinho.</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/notas-tecnicas-e-informativas/nota-tecnica-no-108-2025-cgici-dpni-svsa-ms\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde. Nota Técnica 108/2025. Prevenção da hepatite B em recém-nascidos e profilaxia com imunoglobulina.</a>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Comparativos consultados no Google Drive:</strong> 'Reanimação Neonatal.pdf' (2.130 caracteres extraídos) e '01 - ICTERICIA E COLESTASE NEONATAL.pdf' (14.963 caracteres), com autoria institucional material de referência não confirmada. Foram usados apenas para definir fronteiras curriculares e armadilhas: resumo antigo sugere aspiração meconial e regras de suspensão de reanimação desatualizadas; não reproduzimos suas figuras ou textos, e decisões de reanimação pertencem ao tema 008."
+        ],
+        [
+          "p",
+          "<strong>Aprofundamento editorial LURIA 14/10/2026:</strong> atualizados fisiologia cardiopulmonar, prevenção de hipotermia, briefing, decisão na primeira hora, Apgar, clampeamento, exame por sistemas, sinais de risco, hemorragia por vitamina K, vacinação e linha de cuidado dos rastreios; casos e questões adicionais. Documento comparativo do Drive efetivamente aberto e lido: “Reanimação Neonatal.pdf”, autoria institucional não comprovada. As afirmações antigas de aspiração meconial rotineira ou interrupção obrigatória da reanimação aos 10 minutos não foram reproduzidas. A base normativa é a SBP 2026 para ≥34 e &lt;34 semanas, AHA/AAP 2025, MS 2026, PNI. Esta é versão <strong>em rascunho</strong>: material precisa de revisão médica independente, cotejo final com diretrizes brasileiras locais, curadoria de imagens no Admin, teste de autossuficiência e desktop/PWA. Não publicar."
+        ]
+      ]
+    ]
+  ]
+}
