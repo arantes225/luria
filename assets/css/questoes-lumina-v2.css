@@ -70,36 +70,44 @@ body[data-page="flashcards"] .qs-page-spotlight,
 body[data-page="flashcards"] .luria-page-spotlight,
 body[data-page="erros"] .qs-page-spotlight,
 body[data-page="erros"] .luria-page-spotlight {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 138px !important;
+  min-height: 138px !important;
+  max-height: 138px !important;
+  margin: 0 0 14px 0 !important;
+  padding: 24px 28px !important;
+  border-radius: 15px !important;
+  border: 1px solid color-mix(in srgb,var(--accent) 35%,var(--border)) !important;
+  background: linear-gradient(
+    110deg,
+    color-mix(in srgb,var(--accent) 88%,#071c3c),
+    var(--accent) 58%,
+    color-mix(in srgb,var(--accent) 75%,#091f49)
+  ) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 30px rgba(17,65,130,.12) !important;
+  position: relative !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-start !important;
-  gap: 1rem !important;
-  margin: 0 0 12px !important;
-  padding: 10px 18px !important;
-  min-height: 0 !important;
-  border: 1px solid var(--color-border, var(--border)) !important;
-  border-radius: 14px !important;
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--accent) 10%, var(--surface)) 0%,
-    var(--surface) 75%
-  ) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
-  color: var(--text) !important;
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 6%, transparent) !important;
-  position: relative !important;
-  overflow: visible !important;
+  justify-content: space-between !important;
+  overflow: hidden !important;
 }
 
-body[data-page="questoes"] .qs-page-spotlight::before,
 body[data-page="questoes"] .qs-page-spotlight::after,
-body[data-page="flashcards"] .luria-page-spotlight::before,
 body[data-page="flashcards"] .luria-page-spotlight::after,
-body[data-page="erros"] .luria-page-spotlight::before,
 body[data-page="erros"] .luria-page-spotlight::after {
-  display: none !important;
-  content: none !important;
+  content: "" !important;
+  position: absolute !important;
+  width: 310px !important;
+  height: 310px !important;
+  right: -90px !important;
+  bottom: -220px !important;
+  border-radius: 50% !important;
+  background: rgba(255,255,255,.07) !important;
+  box-shadow: -80px -18px 0 rgba(255,255,255,.035) !important;
+  pointer-events: none !important;
+  display: block !important;
 }
 
 body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy,
@@ -110,7 +118,7 @@ body[data-page="erros"] .luria-page-spotlight-copy {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-  gap: 0.25rem !important;
+  justify-content: center !important;
   width: 100% !important;
 }
 
@@ -135,22 +143,46 @@ body[data-page="erros"] .luria-page-spotlight strong,
 body[data-page="erros"] .luria-page-spotlight h1 {
   display: block !important;
   margin: 0 !important;
-  font-size: 19px !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.02em !important;
-  line-height: 1.2 !important;
-  color: var(--text) !important;
+  font-size: 32px !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.8px !important;
+  line-height: 1.08 !important;
+  color: #fff !important;
 }
 
 body[data-page="questoes"] .qs-spotlight-desc,
 body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-helper,
 body[data-page="flashcards"] .luria-page-spotlight-helper,
 body[data-page="erros"] .luria-page-spotlight-helper {
-  margin: 0 !important;
-  font-size: 12.5px !important;
-  color: var(--muted) !important;
+  display: block !important;
+  margin: 7px 0 0 0 !important;
+  font-size: 11px !important;
+  font-weight: 650 !important;
+  color: rgba(255,255,255,0.9) !important;
   max-width: 720px !important;
   line-height: 1.4 !important;
+}
+
+@media (max-width: 700px) {
+  body[data-page="questoes"] .qs-page-spotlight,
+  body[data-page="questoes"] .luria-page-spotlight.qs-page-spotlight,
+  body[data-page="flashcards"] .qs-page-spotlight,
+  body[data-page="flashcards"] .luria-page-spotlight,
+  body[data-page="erros"] .qs-page-spotlight,
+  body[data-page="erros"] .luria-page-spotlight {
+    height: 118px !important;
+    min-height: 118px !important;
+    max-height: 118px !important;
+    padding: 20px !important;
+  }
+  body[data-page="questoes"] .qs-page-spotlight strong,
+  body[data-page="questoes"] .qs-page-spotlight h1,
+  body[data-page="flashcards"] .luria-page-spotlight strong,
+  body[data-page="flashcards"] .luria-page-spotlight h1,
+  body[data-page="erros"] .luria-page-spotlight strong,
+  body[data-page="erros"] .luria-page-spotlight h1 {
+    font-size: 27px !important;
+  }
 }
 
 body[data-page="questoes"] .qs-spotlight-actions {

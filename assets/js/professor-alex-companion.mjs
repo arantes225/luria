@@ -40,32 +40,28 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     }
   } catch {}
 
-  const css = document.createElement('link');
-  css.rel = 'stylesheet';
-  css.href = new URL('../css/professor-alex-companion.css?v=20261017-solid1', import.meta.url).href;
-  shadow.append(css);
-
-  const solidStyle = document.createElement('style');
-  solidStyle.textContent = `
-    :host { opacity: 1 !important; }
-    .help {
-      background: #ffffff !important;
-      opacity: 1 !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-    }
-    :host([data-theme="dark"]) .help,
-    :host([data-ui-appearance="dark"]) .help,
-    .help.dark-theme {
-      background: #0f1c2e !important;
-      opacity: 1 !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-    }
-  `;
-  shadow.append(solidStyle);
-
-  shadow.innerHTML += `
+  const cssHref = new URL('../css/professor-alex-companion.css?v=20261018-solid2', import.meta.url).href;
+  shadow.innerHTML = `
+    <link rel="stylesheet" href="${cssHref}">
+    <style>
+      :host { opacity: 1 !important; }
+      .help {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        opacity: 1 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+      :host([data-theme="dark"]) .help,
+      :host([data-ui-appearance="dark"]) .help,
+      .help.dark-theme {
+        background: #0f1c2e !important;
+        background-color: #0f1c2e !important;
+        opacity: 1 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+    </style>
     <div class="alex-tickle-bubble" hidden></div>
     <div class="help" hidden role="region" aria-label="Ajuda do Alex">
       <button class="close" aria-label="Fechar ajuda">×</button>
@@ -104,11 +100,18 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       host.setAttribute('data-theme', 'dark');
       host.setAttribute('data-ui-appearance', 'dark');
       help.classList.add('dark-theme');
+      help.style.backgroundColor = '#0f1c2e';
+      help.style.background = '#0f1c2e';
     } else {
       host.removeAttribute('data-theme');
       host.removeAttribute('data-ui-appearance');
       help.classList.remove('dark-theme');
+      help.style.backgroundColor = '#ffffff';
+      help.style.background = '#ffffff';
     }
+    help.style.opacity = '1';
+    help.style.backdropFilter = 'none';
+    help.style.webkitBackdropFilter = 'none';
   };
   syncTheme();
   const themeObserver = new MutationObserver(syncTheme);
@@ -263,7 +266,14 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
         if (tapCount === 1) {
           help.hidden = !help.hidden;
           position();
-          if (!help.hidden) integration.react('hint');
+          if (!help.hidden) {
+            help.style.opacity = '1';
+            help.style.backgroundColor = (help.classList.contains('dark-theme') || host.getAttribute('data-theme') === 'dark') ? '#0f1c2e' : '#ffffff';
+            help.style.background = help.style.backgroundColor;
+            help.style.backdropFilter = 'none';
+            help.style.webkitBackdropFilter = 'none';
+            integration.react('hint');
+          }
         }
         tapCount = 0;
       }, 260);

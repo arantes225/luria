@@ -1,38 +1,76 @@
-/* LURIA page spotlight — régua global baseada em Anotações */
+/* LURIA page spotlight — padrão único oficial do Dashboard */
 :root{
-  --luria-page-card-height:74px;
-  --luria-page-card-pad-y:12px;
-  --luria-page-card-pad-x:22px;
-  --luria-page-card-radius:14px;
-  --luria-page-card-title:26px;
-  --luria-page-card-gap:12px;
+  --luria-page-card-height:138px;
+  --luria-page-card-pad-y:24px;
+  --luria-page-card-pad-x:28px;
+  --luria-page-card-radius:15px;
+  --luria-page-card-title:32px;
+  --luria-page-card-gap:14px;
 }
 
 body:not(.schedule-settings-embed) .luria-page-spotlight{
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  min-height:var(--luria-page-card-height);
-  height:auto;
-  box-sizing:border-box;
-  margin:0 0 var(--luria-page-card-gap);
-  padding:var(--luria-page-card-pad-y) var(--luria-page-card-pad-x);
-  overflow:hidden;
-  border:1px solid rgba(255,255,255,0.16);
-  border-radius:var(--luria-page-card-radius);
-  background:linear-gradient(135deg,#184888 0%,#2563EB 55%,#0284C7 100%);
-  color:#fff;
-  box-shadow:0 8px 24px rgba(24,72,136,.18);
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:20px!important;
+  width:100%!important;
+  height:138px!important;
+  min-height:138px!important;
+  max-height:138px!important;
+  box-sizing:border-box!important;
+  margin:0 0 14px 0!important;
+  padding:24px 28px!important;
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border))!important;
+  border-radius:15px!important;
+  background:linear-gradient(
+    110deg,
+    color-mix(in srgb,var(--accent) 88%,#071c3c),
+    var(--accent) 58%,
+    color-mix(in srgb,var(--accent) 75%,#091f49)
+  )!important;
+  color:#fff!important;
+  box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight:after{
-  content:"";position:absolute;width:240px;height:240px;right:-60px;bottom:-170px;border-radius:50%;
-  background:rgba(255,255,255,.08);box-shadow:-60px -14px 0 rgba(255,255,255,.04);pointer-events:none;
+body:not(.schedule-settings-embed) .luria-page-spotlight::after{
+  content:""!important;
+  position:absolute!important;
+  width:310px!important;
+  height:310px!important;
+  right:-90px!important;
+  bottom:-220px!important;
+  border-radius:50%!important;
+  background:rgba(255,255,255,.07)!important;
+  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
+  pointer-events:none!important;
+  display:block!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy{position:relative;z-index:2;min-width:0}
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-  display:block;margin:0;font-size:var(--luria-page-card-title);line-height:1.15;font-weight:850;letter-spacing:-.5px;color:inherit;
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
+  position:relative!important;
+  z-index:2!important;
+  min-width:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+  display:block!important;
+  margin:0!important;
+  color:#fff!important;
+  font-size:32px!important;
+  font-weight:900!important;
+  line-height:1.08!important;
+  letter-spacing:-.8px!important;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy :is(small,.luria-page-spotlight-helper,p){
+  display:block!important;
+  margin:7px 0 0 0!important;
+  font-size:11px!important;
+  font-weight:650!important;
+  line-height:1.4!important;
+  color:rgba(255,255,255,.9)!important;
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
 body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
@@ -41,8 +79,8 @@ body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
   border-color:#20344F!important;
   box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
-:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight:after,
-body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight:after{
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::after,
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::after{
   background:rgba(255,255,255,.07)!important;
   box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
 }
@@ -188,35 +226,35 @@ body:not(.schedule-settings-embed) .topbar{
 
 @media(max-width:700px){
   :root{
-    --luria-page-card-height:68px;
-    --luria-page-card-pad-y:10px;
-    --luria-page-card-pad-x:16px;
-    --luria-page-card-title:22px;
+    --luria-page-card-height:118px;
+    --luria-page-card-pad-y:20px;
+    --luria-page-card-pad-x:20px;
+    --luria-page-card-title:27px;
   }
   body:not(.schedule-settings-embed) .luria-page-spotlight{
-    min-height:var(--luria-page-card-height);
-    height:auto;
-    padding:var(--luria-page-card-pad-y) var(--luria-page-card-pad-x);
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-    font-size:var(--luria-page-card-title);
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+    font-size:27px!important;
   }
 }
 
-
-/* v3 — régua absoluta dos cards de título: compacto, sem espaços mortos, título grande de 1 linha */
+/* Padrão soberano do Dashboard em todas as páginas */
 body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
 body:not(.schedule-settings-embed) .page .luria-page-spotlight{
   width:100%!important;
   max-width:none!important;
   min-width:0!important;
-  height:auto!important;
-  min-height:70px!important;
-  max-height:80px!important;
-  margin:0 0 12px 0!important;
-  padding:12px 22px!important;
+  height:138px!important;
+  min-height:138px!important;
+  max-height:138px!important;
+  margin:0 0 14px 0!important;
+  padding:24px 28px!important;
   box-sizing:border-box!important;
-  border-radius:14px!important;
+  border-radius:15px!important;
   flex:0 0 auto!important;
   align-self:stretch!important;
 }
@@ -224,23 +262,24 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
   margin:0!important;
   padding:0!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
   margin:0!important;
-  font-size:26px!important;
-  line-height:1.15!important;
-  font-weight:850!important;
+  font-size:32px!important;
+  line-height:1.08!important;
+  font-weight:900!important;
+  letter-spacing:-.8px!important;
 }
 @media(max-width:700px){
   body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
   body:not(.schedule-settings-embed) .page .luria-page-spotlight{
-    height:auto!important;
-    min-height:66px!important;
-    max-height:none!important;
-    padding:10px 16px!important;
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
     flex-basis:auto!important;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-    font-size:22px!important;
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+    font-size:27px!important;
   }
 }
 

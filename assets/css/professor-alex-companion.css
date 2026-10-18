@@ -107,6 +107,7 @@ professor-alex-mascot {
   border: 1px solid var(--color-border, #b5c6dc);
   border-radius: 14px;
   background: #ffffff !important;
+  background-color: #ffffff !important;
   opacity: 1 !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
@@ -238,6 +239,7 @@ professor-alex-mascot {
 :host-context([data-theme="dark"]) .help,
 :host-context([data-ui-appearance="dark"]) .help {
   background: #0f1c2e !important;
+  background-color: #0f1c2e !important;
   opacity: 1 !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
