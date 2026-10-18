@@ -504,9 +504,9 @@ body[data-page="questoes"] .qs-home-my-lists {
 
 body[data-page="questoes"] .qs-home-my-lists-head {
   display: flex !important;
-  align-items: flex-start !important;
+  align-items: center !important;
   justify-content: space-between !important;
-  gap: 1rem !important;
+  gap: 8px !important;
   flex-wrap: wrap !important;
 }
 

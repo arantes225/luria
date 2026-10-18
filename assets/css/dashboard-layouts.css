@@ -171,7 +171,7 @@ body[data-dashboard-layout] .dl-greeting{
 .dl-eyebrow{display:none}
 .dl-greeting time{color:var(--muted);font-size:13px;text-align:right;text-transform:capitalize;padding-top:8px;white-space:nowrap}
 .dl-grid{display:grid;gap:16px}
-.dl-card{min-width:0;background:var(--surface);border:1px solid var(--dl-border);border-radius:16px;padding:18px 20px;box-shadow:0 5px 16px rgba(26,79,117,.035)}
+.dl-card{min-width:0;background:var(--surface);border:1px solid var(--dl-border);border-radius:16px;padding:14px 16px;box-shadow:0 5px 16px rgba(26,79,117,.035)}
 .dl-card-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
 .dl-card-heading h3{display:flex;align-items:center;gap:10px;color:var(--dl-deep);margin:0;font-size:18px;line-height:1.25;font-weight:800}
 .dl-card-heading h3 .dl-heading-icon{display:inline-grid;place-items:center;flex:0 0 29px;width:29px;height:29px;color:var(--accent)}
@@ -272,7 +272,7 @@ body[data-dashboard-layout] .dl-greeting{
 .dl-performance-grid small{font-size:10px}.dl-performance-grid strong{font-size:18px}
 .dl-shortcuts{min-height:170px}.dl-shortcuts>div:not(.dl-card-heading){display:grid;gap:8px}.dl-shortcuts>div>a{border:1px solid var(--border);padding:10px;border-radius:8px;font-size:13px}.dl-shortcuts p{margin:12px 0;color:var(--muted)}
 .dl-layout-4{grid-template-columns:1fr 1fr}
-.dl-metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dl-metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .dl-metric{display:flex;align-items:center;gap:12px;min-height:110px;padding:16px;position:relative;color:var(--dl-deep)}
 .dl-metric-icon{display:grid;place-items:center;width:47px;height:47px;border-radius:50%;background:var(--accent-soft);color:var(--accent)}
 .dl-metric:nth-child(2) .dl-metric-icon{background:var(--accent-soft);color:var(--accent)}
