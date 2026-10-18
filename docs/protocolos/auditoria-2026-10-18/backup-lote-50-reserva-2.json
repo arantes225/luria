@@ -1,0 +1,553 @@
+{
+  "date": "2026-10-18",
+  "records": [
+    {
+      "id": 301,
+      "slug": "procedimentos-protocolos-transversais-reposicao-de-sodio",
+      "title": "Reposição de sódio",
+      "category": "Procedimentos / Protocolos Transversais",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Reposição de sódio depende da causa e cronicidade da hiponatremia. Em sintomas neurológicos graves, solução salina hipertônica pode ser necessária; correção excessivamente rápida deve ser evitada para reduzir risco de desmielinização osmótica.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Confusão, convulsão, coma ou náusea intensa com hiponatremia importante.",
+            "Definir estado volêmico e provável duração."
+          ],
+          "title": "Indicação e reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Suspender causas reversíveis e avaliar osmolaridade/volume.",
+            "Em sintomas graves, iniciar estratégia com NaCl 3% conforme protocolo e monitorização estreita."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Distinguir tonicidade, duração, volemia e sintomas; convulsão por hiponatremia requer salina hipertônica por protocolo e monitorização intensiva."
+          ],
+          "title": "Avaliação e segurança"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Sódio sérico seriado, osmolaridade, glicemia, urina e função renal conforme etiologia.",
+            "Monitorar Na a cada poucas horas durante correção ativa."
+          ],
+          "title": "Monitorização e exames"
+        },
+        {
+          "items": [
+            "Hiponatremia ou hipernatremia com alteração neurológica",
+            "Calcular estratégia de correção individualizada, checar sódio seriado e diurese; evitar correção rápida de hiponatremia crônica e mudanças bruscas de hipernatremia crônica."
+          ],
+          "title": "Investigação e checagens"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade, sintomas graves ou risco de complicação",
+          "then": "Tratar imediatamente e monitorar em ambiente apropriado."
+        },
+        {
+          "if": "Hiponatremia ou hipernatremia com alteração neurológica",
+          "then": "Distinguir tonicidade, duração, volemia e sintomas; convulsão por hiponatremia requer salina hipertônica por protocolo e monitorização intensiva."
+        },
+        {
+          "if": "Convulsão, coma, edema cerebral ou correção excessivamente rápida do sódio",
+          "then": "Estabilizar ABC, tratar sintomas neurológicos imediatamente e reavaliar a taxa de correção, diurese e eletrólitos; se sobrecorreção, acionar especialista para medidas de reversão controlada."
+        },
+        {
+          "if": "Paciente estável e indicação confirmada",
+          "then": "Calcular estratégia de correção individualizada, checar sódio seriado e diurese; evitar correção rápida de hiponatremia crônica e mudanças bruscas de hipernatremia crônica."
+        },
+        {
+          "if": "Após intervenção",
+          "then": "Reavaliar neurologia, balanço hídrico, osmolaridade e causas como SIADH, diuréticos e perdas."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Limitar correção total geralmente a ≤10 mmol/L nas primeiras 24 h e ≤8 mmol/L a cada 24 h subsequente.",
+            "Em alto risco de desmielinização, usar alvo ainda mais conservador conforme especialista.",
+            "Tratar causa específica após estabilização."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Calcular estratégia de correção individualizada, checar sódio seriado e diurese; evitar correção rápida de hiponatremia crônica e mudanças bruscas de hipernatremia crônica.",
+            "Distinguir tonicidade, duração, volemia e sintomas; convulsão por hiponatremia requer salina hipertônica por protocolo e monitorização intensiva."
+          ],
+          "title": "Conduta específica"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar por função renal, cardíaca, sangramento, peso e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clínica e laboratorialmente após a intervenção."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar neurologia, balanço hídrico, osmolaridade e causas como SIADH, diuréticos e perdas."
+          ],
+          "title": "Monitorização"
+        }
+      ],
+      "red_flags": [
+        "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional.",
+        "Convulsão, coma, edema cerebral, sobrecorreção ou desmielinização osmótica."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar indicação, dose/volume, monitorização e resposta.",
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://academic.oup.com/ejendo/article/170/3/G1/6668028",
+          "label": "European Society of Endocrinology/ERA — Clinical Practice Guideline on Hyponatraemia, diretriz formal vigente"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 302,
+      "slug": "procedimentos-protocolos-transversais-reposicao-de-magnesio",
+      "title": "Reposição de magnésio",
+      "category": "Procedimentos / Protocolos Transversais",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Hipomagnesemia pode causar tremor, tetania, convulsão e arritmias e frequentemente acompanha hipocalemia. Reposição depende de sintomas, nível sérico e função renal.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Mg baixo, QT prolongado, torsades, hipocalemia refratária ou sintomas neuromusculares.",
+            "Risco com diuréticos, diarreia, alcoolismo e fármacos."
+          ],
+          "title": "Indicação e reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar ECG e eletrólitos associados.",
+            "Corrigir simultaneamente potássio/cálcio quando necessário."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Avaliar ECG, função renal, sintomas e causas de perda; casos graves/sintomáticos requerem reposição IV monitorizada."
+          ],
+          "title": "Avaliação e segurança"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Magnésio, potássio, cálcio, creatinina e ECG nos casos relevantes."
+          ],
+          "title": "Monitorização e exames"
+        },
+        {
+          "items": [
+            "Hipomagnesemia confirmada ou suspeita com arritmia/tetania",
+            "Escolher via oral para casos leves tolerantes, IV para graves; monitorar magnésio, potássio, cálcio, reflexos e respiração conforme dose."
+          ],
+          "title": "Investigação e checagens"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade, sintomas graves ou risco de complicação",
+          "then": "Tratar imediatamente e monitorar em ambiente apropriado."
+        },
+        {
+          "if": "Hipomagnesemia confirmada ou suspeita com arritmia/tetania",
+          "then": "Avaliar ECG, função renal, sintomas e causas de perda; casos graves/sintomáticos requerem reposição IV monitorizada."
+        },
+        {
+          "if": "Torsades de pointes, convulsão, hiporreflexia ou depressão respiratória durante reposição de magnésio",
+          "then": "Acionar suporte avançado, monitorar ECG e ventilação, suspender infusão se houver toxicidade e avaliar necessidade de gluconato de cálcio conforme protocolo."
+        },
+        {
+          "if": "Paciente estável e indicação confirmada",
+          "then": "Escolher via oral para casos leves tolerantes, IV para graves; monitorar magnésio, potássio, cálcio, reflexos e respiração conforme dose."
+        },
+        {
+          "if": "Após intervenção",
+          "then": "Reavaliar níveis e tratar diarreia, perdas renais, álcool ou fármacos precipitantes."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Via oral para casos leves e assintomáticos.",
+            "Sulfato de magnésio IV em hipomagnesemia sintomática, grave ou arritmia.",
+            "Reduzir dose/monitorar mais estreitamente em insuficiência renal."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Escolher via oral para casos leves tolerantes, IV para graves; monitorar magnésio, potássio, cálcio, reflexos e respiração conforme dose.",
+            "Avaliar ECG, função renal, sintomas e causas de perda; casos graves/sintomáticos requerem reposição IV monitorizada."
+          ],
+          "title": "Conduta específica"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar por função renal, cardíaca, sangramento, peso e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clínica e laboratorialmente após a intervenção."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar níveis e tratar diarreia, perdas renais, álcool ou fármacos precipitantes."
+          ],
+          "title": "Monitorização"
+        }
+      ],
+      "red_flags": [
+        "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional.",
+        "Torsades de pointes, convulsão, hiporreflexia, depressão respiratória ou insuficiência renal."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar indicação, dose/volume, monitorização e resposta.",
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.nice.org.uk/guidance/cg174",
+          "label": "NICE CG174 — Intravenous Fluid Therapy in Adults in Hospital (fonte geral)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 303,
+      "slug": "procedimentos-protocolos-transversais-insulinoterapia-hospitalar",
+      "title": "Insulinoterapia hospitalar",
+      "category": "Procedimentos / Protocolos Transversais",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Insulinoterapia hospitalar deve evitar tanto hiperglicemia persistente quanto hipoglicemia. Em pacientes não críticos, esquemas basal-prandial-correção ou basal + correção são preferíveis à escala móvel isolada.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Hiperglicemia persistente ≥180 mg/dL em pacientes hospitalizados geralmente exige iniciar ou intensificar tratamento.",
+            "Revisar ingestão, corticoides, nutrição enteral/parenteral e função renal."
+          ],
+          "title": "Indicação e reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Definir meta glicêmica e frequência de monitorização.",
+            "Reconciliar tratamento domiciliar e risco de hipoglicemia."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Confirmar padrão glicêmico, risco de hipoglicemia, ingestão e uso de corticoides; definir metas por contexto."
+          ],
+          "title": "Prioridade imediata"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Glicemia capilar/POC conforme alimentação e terapia.",
+            "HbA1c se não disponível nos últimos meses e útil para planejamento."
+          ],
+          "title": "Monitorização e exames"
+        },
+        {
+          "items": [
+            "Glicemias capilares seriadas, eletrólitos/creatinina, HbA1c se desconhecida e cetonas se suspeita de cetoacidose."
+          ],
+          "title": "Avaliação específica"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Hiperglicemia hospitalar persistente",
+          "then": "Confirmar padrão glicêmico, risco de hipoglicemia, ingestão e uso de corticoides; definir metas por contexto."
+        },
+        {
+          "if": "Paciente não crítico que se alimenta regularmente",
+          "then": "Preferir insulina basal + prandial + correção, evitando usar apenas escala móvel prolongadamente."
+        },
+        {
+          "if": "Paciente em jejum ou ingestão imprevisível",
+          "then": "Manter componente basal conforme tipo de diabetes e risco, ajustando prandial e correção; nunca suspender toda insulina basal no DM1."
+        },
+        {
+          "if": "Cetoacidose, estado hiperosmolar ou paciente crítico",
+          "then": "Seguir protocolo específico de insulina IV e eletrólitos, especialmente potássio."
+        },
+        {
+          "if": "Hipoglicemia ou queda abrupta de ingestão",
+          "then": "Tratar imediatamente e rever doses, função renal, intervalos e alimentação."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "UTI: infusão IV de insulina é preferida; alvo usual 140–180 mg/dL.",
+            "Não críticos: alvo usual 100–180 mg/dL se alcançável sem hipoglicemia.",
+            "Comendo: basal + prandial + correção; sem ingestão adequada: basal + correção."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Metas usuais hospitalares variam por criticidade; evitar controle excessivamente estrito que eleva hipoglicemia.",
+            "Prescrição deve relacionar glicemias, refeições, função renal e equipe de enfermagem, com dupla checagem de tipo/concentração."
+          ],
+          "title": "Tratamento e limitações"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar por função renal, cardíaca, sangramento, peso e contexto clínico."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clínica e laboratorialmente após a intervenção."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Ajustar esquema diariamente e planejar terapia de transição/educação antes da alta."
+          ],
+          "title": "Acompanhamento"
+        }
+      ],
+      "red_flags": [
+        "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional.",
+        "Hipoglicemia grave, cetose/acidemia, hipocalemia ou alteração de consciência."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar indicação, dose/volume, monitorização e resposta.",
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S339/163925/16-Diabetes-Care-in-the-Hospital-Standards-of-Care",
+          "label": "American Diabetes Association — Standards of Care 2026: Diabetes Care in the Hospital"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "insulina humana NPH",
+        "insulina humana regular"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 307,
+      "slug": "procedimentos-protocolos-transversais-reacoes-transfusionais",
+      "title": "Reações transfusionais",
+      "category": "Procedimentos / Protocolos Transversais",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Reações transfusionais podem ser febris, alérgicas, hemolíticas, TRALI, TACO, sépticas ou tardias. Qualquer sintoma novo durante ou após transfusão deve ser avaliado imediatamente.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Febre, calafrios, dispneia, dor lombar/torácica, hipotensão, urticária ou hemoglobinúria durante/apos transfusão.",
+            "TACO sugere sobrecarga; TRALI, hipoxemia não cardiogênica."
+          ],
+          "title": "Indicação e reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Interromper transfusão imediatamente.",
+            "Manter acesso com SF e conferir identificação bolsa-paciente.",
+            "Notificar banco de sangue e avaliar ABC."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Interromper imediatamente transfusão, manter acesso com solução compatível, checar identificação e acionar hemoterapia; suporte ABC."
+          ],
+          "title": "Avaliação e segurança"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemólise: DAT, hemoglobina plasmática, bilirrubina, LDH, haptoglobina, urina.",
+            "Culturas se suspeita séptica.",
+            "RX/BNP e avaliação volêmica em dispneia."
+          ],
+          "title": "Exames e monitorização"
+        },
+        {
+          "items": [
+            "Febre, dispneia, hipotensão, urticária ou dor durante transfusão",
+            "Diferenciar hemólise aguda, anafilaxia, TACO, TRALI, contaminação bacteriana e reação febril; coletar amostras e devolver bolsa/equipo conforme protocolo."
+          ],
+          "title": "Investigação e checagens"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade ou complicação grave",
+          "then": "Interromper imediatamente a transfusão e acionar equipe/hemoterapia; avaliar e tratar choque, hemoglobinúria, dispneia grave, edema pulmonar, broncoespasmo ou sangramento, com suporte ABC e investigação da reação."
+        },
+        {
+          "if": "Febre, dispneia, hipotensão, urticária ou dor durante transfusão",
+          "then": "Interromper imediatamente transfusão, manter acesso com solução compatível, checar identificação e acionar hemoterapia; suporte ABC."
+        },
+        {
+          "if": "Paciente estável e indicação confirmada",
+          "then": "Diferenciar hemólise aguda, anafilaxia, TACO, TRALI, contaminação bacteriana e reação febril; coletar amostras e devolver bolsa/equipo conforme protocolo."
+        },
+        {
+          "if": "Após intervenção",
+          "then": "Documentar reação, comunicar hemovigilância e revisar segurança antes de futuras transfusões."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Tratar conforme tipo de reação.",
+            "Anafilaxia: epinefrina IM.",
+            "TACO: diurético e suporte; TRALI: suporte respiratório.",
+            "Não reiniciar a mesma bolsa sem liberação formal."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Diferenciar hemólise aguda, anafilaxia, TACO, TRALI, contaminação bacteriana e reação febril; coletar amostras e devolver bolsa/equipo conforme protocolo.",
+            "Interromper imediatamente transfusão, manter acesso com solução compatível, checar identificação e acionar hemoterapia; suporte ABC."
+          ],
+          "title": "Conduta específica"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Revisar contraindicações, anticoagulação e necessidade de imagem guiando o procedimento."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar sinais vitais, sintomas e resultados após intervenção."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Documentar reação, comunicar hemovigilância e revisar segurança antes de futuras transfusões."
+          ],
+          "title": "Monitorização"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica.",
+        "Choque, hemoglobinúria, dispneia grave, edema pulmonar, broncoespasmo ou sangramento."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar indicação, técnica, complicações e resposta.",
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.aabb.org/aabb-store/product/transfusion-reactions-5th-edition---print",
+          "label": "AABB — Transfusion Reactions, 5ª edição (livro/manual)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    }
+  ]
+}
