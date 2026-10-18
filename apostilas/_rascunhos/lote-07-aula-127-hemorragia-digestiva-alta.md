@@ -159,52 +159,6 @@ O sinal clínico é nova hematêmese/melena com queda hemodinâmica ou de Hb ap�
 ### 7.7. Transição para alta com redução de recidiva
 Revisar medicamentos, tratar *H. pylori*, corrigir anemia/deficiência de ferro e avaliar necessidade futura de antiagregação/anticoagulação. A atualização ESGE 2026 sugere **iniciar ferro antes da alta** em pessoa com sangramento ulceroso e anemia/deficiência de ferro; e **nutrição oral precoce em até 24 h** após hemostasia endoscópica durável em paciente apropriado. Não manter jejum prolongado apenas por hábito quando não há justificativa clínica.
 
-
-### 7.8. A endoscopia precisa controlar o vaso, não somente interromper a imagem de sangramento
-
-No sangramento ulceroso, a **classificação Forrest** representa risco e necessidade de hemostasia, mas não substitui características do vaso e da úlcera. Úlcera duodenal posterior próxima à artéria gastroduodenal, lesão maior que 2 cm, tecido fibrosado, sangramento ativo abundante, instabilidade e comorbidades podem dificultar hemostasia durável. Um vaso calibroso profundamente localizado pode recidivar apesar de cessar a hemorragia logo após adrenalina.
-
-**Injeção de adrenalina** cria vasoconstrição e tamponamento transitório. Em úlcera com sangramento ativo de alto risco, usar adrenalina isolada sem hemostasia definitiva (mecânica/térmica ou técnica atual apropriada) aumenta preocupação com ressangramento. Já **OTS clips** capturam tecido mais espesso e podem ter maior eficácia em lesões selecionadas, mas precisam de expertise e acesso anatômico.
-
-A diretriz ESGE **2026** permite considerar OTS como **monoterapia alternativa inicial** para Forrest Ia/Ib e como opção importante na recidiva. Também atualizou a posição sobre coagulação suave por pinças, hemostáticos tópicos e manejo de coágulo IIb; a presença de técnica moderna **não elimina** avaliação da hemostasia final nem a necessidade de tratar *H. pylori* e suspender AINE.
-
-### 7.9. Forrest IIb: a mudança de 2026 explicada pelo risco do procedimento
-
-O coágulo aderido pode esconder vaso visível ou sangramento ativo. Retirar coágulo em ambiente sem capacidade de tratar o defeito revelado pode gerar hemorragia que não será controlada. Por outro lado, nunca tocar coágulo pode impedir hemostasia de lesão relevante. Por isso ESGE 2026 **sugere tratar endoscopicamente** Forrest IIb, com retirada controlada do coágulo e hemostasia se indicada, **condicionadas à competência e disponibilidade técnica para lidar com eventual sangramento de alto risco**.
-
-**Questão de prova:** o paciente com Forrest IIb não é automaticamente a mesma categoria de IIc (mancha plana) nem Forrest III (base limpa). O dado que decide a estratégia não é só o nome da classificação: centro, visualização, hemostasia acessível e risco clínico importam.
-
-### 7.10. Quando o sangramento volta: resgate estruturado
-
-**Ressangramento** pode ser evidenciado por nova hematêmese/melena associada à instabilidade, queda da hemoglobina além da variação esperada e necessidade transfusional, mas o julgamento clínico exige diferenciar fezes escurecidas por sangue residual de perda ativa. Em recidiva clínica após hemostasia inicial:
-1. Reavaliar via aérea, perfusão, acesso vascular, hemograma/tipagem e reanimação.
-2. Contactar endoscopia terapêutica e equipe de resgate em paralelo.
-3. Em condições apropriadas, **nova tentativa de hemostasia endoscópica**, com possibilidade de OTS clip.
-4. Se falha de métodos endoscópicos, **embolização angiográfica transcateter** (TAE) deve ser considerada quando disponível.
-5. Cirurgia entra se TAE não estiver disponível ou falhar, e conforme instabilidade/anatomia.
-
-A ESGE 2026 também **sugere considerar TAE profilática** em pacientes de alto risco selecionados, como úlcera duodenal posterior, lesão grande, instabilidade inicial e hemostasia considerada pouco durável. Isso **não** equivale a embolização para todos os casos Forrest IIa nem a substituir endoscopia por angiografia como primeira abordagem.
-
-### 7.11. O que acontece depois das primeiras 72 horas?
-
-Depois de hemostasia de lesão ulcerosa com estigmas de alto risco, **IBP em alta dose** por período inicial segundo protocolo reduz recidiva. Mas a alta ainda exige resolver causa e consequências:
-
-- **Testar e tratar *H. pylori*** quando aplicável, com esquema adequado a alergia, exposição prévia e resistência regional. Sangramento agudo/IBP/antibiótico podem reduzir sensibilidade de alguns testes; teste negativo inicial não encerra investigação quando suspeita persiste.
-- **Confirmar erradicação** em tempo e condições apropriados, usando teste validado; não usar sorologia isolada para afirmar cura.
-- **Revisar AINE e AAS** considerando prevenção primária versus secundária cardiovascular.
-- **Reavaliar úlcera gástrica** quando houver risco de malignidade e confirmação de cicatrização/histologia conforme indicação endoscópica.
-- **Investigar ferro/anemia** após a perda sanguínea e organizar reposição e revisão de hemograma.
-- **Permitir nutrição oral precoce em candidatos selecionados:** a ESGE 2026 sugere iniciar alimentação oral em até 24 horas após hemostasia endoscópica durável; não manter jejum por dias automaticamente.
-- **Planejar retorno:** sintomas de ressangramento, resultado de biópsia, plano de antitrombóticos, situação hematológica e exames de confirmação.
-
-A diretriz ESGE 2026 também não alcançou consenso para recomendar de rotina bloqueadores competitivos de potássio (PCAB) no lugar de IBP após hemostasia: não apresentar seu uso como novo padrão universal.
-
-### 7.12. Visualização endoscópica antes do procedimento: o que mudou em 2026?
-
-Em HDA aguda grave com estômago preenchido por sangue/coágulos, um pró-cinético pode melhorar o exame em situações específicas. A ESGE 2026 sugere considerar **metoclopramida intravenosa** em certos pacientes com hemorragia intensa/ativa **quando eritromicina intravenosa não estiver disponível**; dose, contraindicações (incluindo possíveis distúrbios de movimento, prolongamento QT/efeitos adversos) e indicação final dependem do serviço. Não administrar automaticamente a todo paciente com melena sem vômitos.
-
-A ESGE **não recomenda videocápsula ou cápsula telemétrica de sangue como teste rotineiro inicial na suspeita de HDA**, e **não recomenda EDA emergente ≤6 h ou urgente ≤12 h como rotina da úlcera péptica** salvo instabilidade persistente apesar de ressuscitação adequada. A prioridade é estabilizar e preparar endoscopia terapêutica com condições seguras, em vez de competir por minutos sem controle hemodinâmico.
-
 ## 8. HDA varicosa — um caminho farmacológico/endoscópico diferente
 
 ### 8.1. Suspeitar de hipertensão portal e iniciar terapia
@@ -249,38 +203,6 @@ A decisão de interromper, reverter e reiniciar anticoagulação depende de grav
 
 ESGE 2026 destaca reiniciar anticoagulação em hemorragia ulcerosa assim que clinicamente indicado após controle hemostático, conforme risco tromboembólico; não existe um número de dias que substitua decisão individual em todos os fármacos/pacientes.
 
-### 9.1. O antitrombótico não é uma condição binária: indicação, meia-vida e reversão
-
-Antes de suspender ou reverter terapia antitrombótica, responder: **qual agente? qual dose? quando foi a última dose? por que foi prescrito? qual função renal/hepática? quão grave é o sangramento? houve hemostasia?** Sem isso, "paciente usa anticoagulante" é um rótulo insuficiente.
-
-| Situação | Risco de suspender sem plano | Questão que muda conduta |
-|---|---|---|
-| AAS por prevenção primária, sem evento cardiovascular prévio | Em geral, menor risco trombótico que prevenção secundária | Ainda há benefício líquido ao reiniciar? |
-| AAS por infarto/AVC isquêmico prévio | Novo evento arterial ao suspender prolongadamente | Como manter/reiniciar rapidamente após controle? |
-| Dupla antiagregação após stent coronário recente | Trombose de stent, muitas vezes grave | Qual fármaco priorizar, intervalo de interrupção e avaliação cardiológica imediata? |
-| Anticoagulante por fibrilação atrial de alto risco | AVC/embolia sistêmica | Quando reiniciar após hemostasia durável? |
-| Anticoagulante por tromboembolismo recente/prótese valvar mecânica | Tromboembolismo e falha valvar conforme contexto | É necessário discutir reversão e reinício urgente com especialista? |
-| Fármaco antitrombótico sem indicação atual confirmada | Sangramento recorrente por terapia desnecessária | Desprescrever após revisão da indicação |
-
-**Reversão:** considerar em hemorragia ameaçadora à vida e cenários específicos, usando protocolo que diferencia antagonistas de vitamina K, inibidores do fator Xa, inibidor direto de trombina e heparinas. Agente de reversão pode aumentar risco trombótico e ter disponibilidade limitada; não utilizar automaticamente para todo episódio estável de melena.
-
-**Reinício:** a ESGE 2026 recomenda retomar anticoagulante assim que clinicamente indicado após sangramento ulceroso, conforme risco tromboembólico, não a mesma data universal para todos. O plano precisa ser documentado em alta com quem é responsável, critérios para reconsiderar e sinais de recorrência.
-
-### 9.2. Anemia e ressangramento: uma hemoglobina não descreve todo o processo
-
-Na hemorragia aguda, perda inicial é de plasma e eritrócitos, e Hb/Ht podem ainda não refletir a perda até redistribuição e infusão de fluidos. Uma Hb inicial de 11 g/dL não exclui hemorragia maciça em hipotenso. Na fase seguinte, a Hb pode cair após hidratação sem que isso prove sangramento persistente. Associar tendência laboratorial a **PA, FC, perfusão, diurese, melena recente, necessidade transfusional e endoscopia**.
-
-Em pessoas com doença cardiovascular isquêmica, limites de transfusão precisam ser individualizados; a estratégia restritiva geral não é ordem de aguardar Hb <7 em pessoa exsanguinante ou com isquemia ativa. Em cirrose com varizes, transfusão liberal pode aumentar pressão portal, mas a prioridade em choque hemorrágico permanece salvar perfusão e controlar origem.
-
-A ESGE 2026 sugere iniciar reposição de ferro **antes da alta** em pacientes com sangramento de úlcera péptica e deficiência de ferro e/ou anemia, após avaliar indicação e tolerância. Não confundir corrigir Hb momentaneamente com recuperar reserva de ferro; planejar hemograma/ferritina conforme evolução.
-
-### 9.3. Reintrodução de alimentação e medicações na alta
-
-Em pacientes com hemostasia endoscópica **durável** após sangramento por úlcera péptica, ESGE 2026 sugere considerar **nutrição oral precoce, em até 24 h**. Isso não significa oferecer dieta a paciente em choque, com aspiração, perfuração, suspeita de reintervenção iminente ou lesão cuja conduta exige jejum individualizado. O preparo para nova endoscopia e risco de anestesia também influenciam.
-
-A alta clínica não é o último ato da hemostasia: reconciliar IBP, anticoagulante, antiagregantes e AINE; confirmar se há necessidade de erradicar *H. pylori*, de repetir EDA ou acompanhar lesão gástrica; investigar anemia e consequências da perda; entregar instruções de retorno imediato por hematêmese, síncope, hipotensão, piora da fraqueza e melena abundante recente.
-
-
 ## 10. Diagnósticos diferenciais e mimetizadores
 
 - **Epistaxe importante ou hemoptise deglutida:** pode aparecer como sangue em vômito/fezes. História, exame de nasofaringe e sinais respiratórios ajudam.
@@ -289,37 +211,6 @@ A alta clínica não é o último ato da hemostasia: reconciliar IBP, anticoagul
 - **Úlcera perfurada:** pode provocar peritonite aguda e pneumoperitônio, que pertence a urgência cirúrgica (aula 122), distinta de HDA isolada.
 - **Fístula aortoentérica:** em pessoa com prótese vascular aórtica e sangramento sentinela, deve ser considerada prontamente e a equipe vascular acionada; EDA pode não identificá-la em todos os casos.
 - **Coagulopatia primária/uso de anticoagulante:** pode potencializar qualquer lesão sem indicar especificamente localização.
-
-
-### 10.1. Lesão de Dieulafoy e malformações vasculares
-
-**Dieulafoy:** vaso submucoso relativamente calibroso que fica exposto por defeito mucoso pequeno, frequentemente no estômago proximal, causando sangramento abrupto/recorrente às vezes volumoso sem úlcera extensa ao redor. A EDA pode não identificar lesão entre episódios, especialmente com grande coágulo. Tratamentos mecânicos ou térmicos endoscópicos frequentemente funcionam; injeção isolada pode não dar hemostasia durável. Não confundir com Forrest Ia de uma úlcera grande: o mecanismo e aspecto anatômico são diferentes.
-
-**Angioectasias:** lesões vasculares mucosas/submucosas, frequentemente relacionadas a idade e comorbidades como doença renal/aórtica em certos contextos; podem causar sangramento oculto recorrente, anemia ferropriva e, às vezes, HDA manifesta. Ablação endoscópica (por exemplo plasma de argônio em seleção) pode ser considerada, mas recorrência é possível e tratamento de anemia é parte do plano.
-
-**GAVE (ectasia vascular antral gástrica):** lesões vasculares no antro, com padrão típico em "melancia" ou forma difusa. Pode coexistir com cirrose, porém **não é simplesmente consequência direta da hipertensão portal** como gastropatia portal: beta-bloqueador ou TIPS não são terapias base de GAVE. Tratamento endoscópico local e suporte de anemia podem ser importantes.
-
-**Gastropatia hipertensiva portal:** padrão de mucosa em mosaico no corpo/fundo em contexto de hipertensão portal, podendo gerar anemia por perdas crônicas; terapêutica pode envolver controle da pressão portal e correção de ferro, conforme gravidade. Distinguir as duas entidades evita TIPS em pessoa cujo sangramento é predominantemente antral vascular.
-
-### 10.2. Laceração de Mallory–Weiss, esofagite e lesões raras
-
-**Mallory–Weiss** é laceração mucosa longitudinal próxima à junção gastroesofágica, tipicamente após vômitos/esforço, com hematêmese. Muitas cessam espontaneamente; sangramento ativo/estigmas de alto risco podem requerer hemostasia endoscópica. O diferencial importante é **Boerhaave**, ruptura transmural com risco de mediastinite, geralmente com dor torácica intensa/enfisema/derrame; não é apenas "uma Mallory–Weiss mais profunda", pois muda urgência e investigação.
-
-**Esofagite erosiva, lesões medicamentosas, tumores, infecções em imunossuprimidos, erosões por sonda** também podem sangrar. A ausência de úlcera duodenal não encerra a investigação se houver mucosa alterada e sangramento. Lesões na ampola/vias biliares (hemobilia) e ducto pancreático (hemosuccus pancreaticus) são raras, mas entram no diferencial em sangramento intermitente com contexto hepatobiliopancreático específico.
-
-### 10.3. HDA após cirurgia bariátrica: localização da anatomia é o primeiro exame conceitual
-
-No **bypass gástrico em Y de Roux**, a EDA usual avalia esôfago, pequena bolsa gástrica e gastrojejunoanastomose, mas **não alcança rotineiramente o estômago excluído e duodeno**. Sangramento de úlcera marginal na gastrojejunoanastomose pode ser visível no trajeto habitual; sangramento de estômago excluído pode necessitar endoscopia assistida por dispositivos, acesso transgástrico, imagem, radiologia intervencionista ou cirurgia conforme gravidade/localização.
-
-No **sleeve/gastrectomia vertical**, a anatomia do tubo gástrico e a linha de grampeamento modificam fontes de hemorragia precoce. **Sangramento intraluminal** pode produzir hematêmese/melena; **sangramento intra-abdominal pós-operatório** pode manifestar-se com taquicardia, hipotensão e queda de Hb, sem exteriorização digestiva. Classificar qual compartimento contém sangue muda caminho de imagem, endoscopia e cirurgia.
-
-**Ponto crucial:** EDA "normal" da bolsa gástrica após bypass não exclui sangramento no estômago excluído. A informação sobre operação, data, técnica, uso de AINE/tabaco e estabilidade tem valor diagnóstico tão grande quanto a primeira hipótese de "gastrite".
-
-### 10.4. Hematochezia com choque — lembrar HDA maciça sem inverter prioridade
-
-Hematoquezia volumosa é frequentemente sugestiva de trato baixo, mas HDA intensa com trânsito rápido pode produzir sangue vermelho via retal. Em choque, iniciar reanimação e avaliação conjunta da fonte superior/inferior considerando melena anterior, hematêmese, ureia elevada, uso de AINE e achados de sonda/EDA conforme plano, sem exigir vômitos de sangue. O inverso também ocorre: fezes muito escurecidas por ferro/bismuto podem simular melena sem sangramento.
-
-A aula 132 cobre especificamente hemorragia baixa, e a 136 integração geral; aqui o objetivo é evitar **perder HDA que exige hemostasia urgente** em pessoa cuja principal queixa é sangue vermelho nas fezes.
 
 ## 11. Exames complementares e interpretação prática
 
@@ -405,52 +296,6 @@ A EDA procura estigmas de sangramento e oferece terapia. Quando a visibilidade e
 **Conduta:** tratar choque, chamar endoscopia e equipe de emergência, investigar HDA/HDB pelo quadro e recursos, não concluir por cor das fezes.
 **Por que importa:** demonstra que a manifestação externa não define a topografia.
 
-
-### Caso 6 — úlcera posterior e ressangramento
-**Apresentação:** homem de 71 anos, usa AINE, apresenta hematêmese e síncope. Após ressuscitação e EDA precoce, identifica-se úlcera duodenal posterior de 2,6 cm com sangramento ativo Forrest Ia; realizada hemostasia endoscópica inicialmente eficaz. Duas horas depois há nova instabilidade e hematêmese.  
-**Hipóteses:** ressangramento ulceroso de alto risco, com provável vaso calibroso.  
-**Raciocínio:** tamanho >2 cm, localização posterior e instabilidade inicial elevam preocupação com durabilidade; não basta dobrar IBP ou repetir adrenalina isolada.  
-**Exames:** reavaliar Hb/plaquetas, perfusão, tipagem, resposta a ressuscitação; EDA terapêutica quando segura; radiologia intervencionista/cirurgia em paralelo.  
-**Interpretação:** falha após primeira hemostasia pode permitir nova terapia endoscópica especializada (inclusive OTS), seguida de TAE se não controlada, ou cirurgia conforme disponibilidade/falha.  
-**Conduta:** reanimar, acionar endoscopia avançada e equipe de resgate; não prolongar atraso se sangramento segue incontrolável.  
-**Por que importa:** liga a anatomia da úlcera à escolha de resgate segundo ESGE 2026.
-
-### Caso 7 — o paciente com stent recente e melena
-**Apresentação:** mulher de 63 anos após síndrome coronariana aguda e angioplastia há três semanas, em uso de AAS e inibidor P2Y12, com melena, lipotimia e úlcera gástrica sangrante tratada endoscopicamente.  
-**Hipóteses:** HDA ulcerosa com risco relevante de recorrência e alto risco de trombose de stent caso antiplaquetários sejam suspensos indevidamente.  
-**Raciocínio:** prevenir ressangramento e prevenir infarto são objetivos simultâneos; suspender os dois agentes sem diálogo cardiológico não é estratégia neutra.  
-**Exames:** Hb e hemodinâmica seriadas, informação do stent/procedimento, risco de novo sangramento e hemostasia endoscópica; investigar *H. pylori* e AINE.  
-**Interpretação:** o antitrombótico precisa ser avaliado pela indicação específica e temporalidade.  
-**Conduta:** tratamento ulceroso e acompanhamento, discussão com cardiologia sobre manutenção/reinício do esquema, plano documentado na alta e ferro quando indicado.  
-**Por que importa:** evita que a regra simplista "suspender tudo que afina sangue" cause evento cardiovascular.
-
-### Caso 8 — melena e anemia após bypass em Y de Roux
-**Apresentação:** homem de 49 anos, bypass gástrico há seis anos, vem com melena recorrente, Hb em queda e EDA convencional sem foco definido na bolsa gástrica/gastrojejunoanastomose.  
-**Hipóteses:** úlcera marginal não identificada, sangramento de estômago excluído/duodeno, lesão de delgado, outras causas.  
-**Raciocínio:** a anatomia do bypass limita o alcance da EDA habitual. Exame negativo em segmento acessível não prova ausência de fonte em segmento excluído.  
-**Exames:** revisar relatório cirúrgico e endoscopia; após estabilização, discutir angio-TC, endoscopia assistida por dispositivos, acesso transgástrico ou métodos especializados conforme sangramento e recursos.  
-**Interpretação:** localização anatômica é fundamental; fluxo endoscópico de estômago íntegro não cobre todos os segmentos.  
-**Conduta:** abordagem multidisciplinar endoscópica, radiológica e cirúrgica com tratamento do foco identificado; não repetir indefinidamente a mesma EDA convencional sem mudar pergunta.  
-**Por que importa:** adapta algoritmo à anatomia pós-operatória.
-
-### Caso 9 — coágulo Forrest IIb e equipe sem dispositivo hemostático
-**Apresentação:** mulher de 74 anos, sangramento por úlcera gástrica, estável após ressuscitação, EDA mostra coágulo aderido Forrest IIb. Endoscopista de plantão está em serviço sem clipagem avançada e sem suporte para tratar hemorragia volumosa se remoção do coágulo revelar vaso arterial.  
-**Hipóteses:** úlcera com estigma intermediário/alto risco, que pode ocultar lesão mais grave.  
-**Raciocínio:** ESGE 2026 sugere tratamento endoscópico do IIb com remoção segura do coágulo e controle subsequente, **condicionado à competência para lidar com sangramento de alto risco**.  
-**Exames:** avaliação de estabilidade, tipagem, análise da endoscopia e risco trombótico/hemorrágico.  
-**Interpretação:** a recomendação não autoriza intervenção insegura onde não há capacidade de resgate.  
-**Conduta:** estabilização, IBP de acordo com protocolo, contato com endoscopia terapêutica/referência e plano de tratamento seguro; monitorar ressangramento.  
-**Por que importa:** integra recomendação científica e realidade assistencial.
-
-### Caso 10 — sangramento por Dieulafoy e EDA inicial negativa
-**Apresentação:** mulher de 66 anos, episódios abruptos de hematêmese, grandes quedas de Hb, EDA inicial limitada por coágulos. Na repetição especializada é identificado ponto de sangramento arterial intenso em mucosa gástrica praticamente normal.  
-**Hipóteses:** lesão de Dieulafoy.  
-**Raciocínio:** vaso submucoso relativamente calibroso pode estar exposto por pequeno defeito, sem a cratera de uma úlcera clássica. Sangramento intermitente reduz sensibilidade de exame feito fora do episódio.  
-**Exames:** endoscopia com visualização adequada e hemostasia, avaliação hemodinâmica/laboratorial, imagem de resgate se falha.  
-**Interpretação:** diferença visual frente a úlcera de Forrest exige reconhecer padrão vascular.  
-**Conduta:** hemostasia endoscópica mecânica/térmica conforme expertise, monitorização e investigação alternativa se recorrência.  
-**Por que importa:** evita chamar todo sangramento arterial gástrico de úlcera comum.
-
 ## 14. Oito questões autorais — alternativas comentadas
 
 ### Questão 1 — timing endoscópico, atualização 2026
@@ -524,71 +369,6 @@ C. Apenas antibiótico indefinido, sem tratamento de hipertensão portal.
 D. Suspender toda medida preventiva após primeira endoscopia.
 
 **Gabarito B.** Combinação NSBB + ligadura é padrão de profilaxia secundária em varizes esofágicas quando tolerada. **A** trata ácido, não pressão portal. **C** não resolve mecanismo varicoso e seleciona resistência. **D** aumenta risco de ressangramento. **Minirrevisão:** não confundir tratamento do episódio com prevenção secundária.
-
-
-### Questão 9 — Forrest IIb e capacidade técnica
-Pessoa com HDA por úlcera tem coágulo aderido Forrest IIb. Qual princípio da ESGE 2026?
-A. Nunca remover coágulo em nenhum hospital.  
-B. Remover obrigatoriamente mesmo sem instrumentos de hemostasia.  
-C. Considerar terapia endoscópica com remoção controlada e hemostasia conforme lesão, desde que exista competência de tratar hemorragia de alto risco.  
-D. Forrest IIb corresponde a base limpa sem risco.
-**Gabarito C.** A recomendação condiciona intervenção à segurança técnica. **A:** ignora benefício potencial. **B:** expõe a hemorragia não controlável. **D:** Forrest III é base limpa. **Minirrevisão:** conhecer limites de equipamento é parte do raciocínio clínico.
-
-### Questão 10 — úlcera de alto risco e recidiva
-Paciente após hemostasia de úlcera duodenal posterior grande volta a sangrar. Qual sequência conceitual é recomendada em recursos adequados?
-A. Reavaliar e realizar hemostasia endoscópica de resgate, considerar OTS; se falha, angiografia/embolização; cirurgia se embolização indisponível/ineficaz.  
-B. Duplicar IBP por um mês sem reavaliar.  
-C. Dar alta se Hb permanece acima de 7 no momento.  
-D. Transfundir e nunca buscar foco.
-**Gabarito A.** ESGE 2026 estabelece resgate escalonado por hemostasia e disponibilidade. **B/C/D:** não controlam fonte. **Minirrevisão:** segunda hemostasia pode funcionar; não prolongar demora quando falha.
-
-### Questão 11 — metoclopramida antes de EDA
-Qual atualização ESGE 2026 é verdadeira?
-A. Metoclopramida IV é obrigatória para toda melena sem vômitos.  
-B. Se eritromicina IV não está disponível, pode ser considerada metoclopramida IV em paciente selecionado com HDA intensa/ativa para favorecer visualização.  
-C. Pró-cinético substitui EDA.  
-D. Doses são iguais em todo idoso independentemente de comorbidades.
-**Gabarito B.** Recomendação seletiva após avaliação de risco/contraindicações. **A:** exagera indicação. **C:** não é hemostático. **D:** medicação precisa de avaliação. **Minirrevisão:** método pré-endoscópico para visibilidade, não controle de fonte.
-
-### Questão 12 — terapia antiplaquetária após stent
-Paciente com stent coronário implantado recentemente apresenta HDA controlada após EDA e usa dupla antiagregação. Melhor postura:
-A. Suspender ambos para sempre.  
-B. Não tratar úlcera porque está em antiagregação.  
-C. Substituir ambos por ferro oral.  
-D. Discutir prontamente com cardiologia risco de trombose do stent e plano de continuidade/reinício sem suspensões arbitrárias.
-**Gabarito D.** Risco trombótico muito alto pode coexistir com risco hemorrágico. **A:** potencialmente perigoso. **B:** retarda hemostasia. **C:** ferro não substitui antitrombótico. **Minirrevisão:** indicação e temporalidade definem risco.
-
-### Questão 13 — anemia pós-hemostasia
-Após hemostasia ulcerosa durável, paciente estável apresenta anemia ferropriva. Segundo ESGE 2026:
-A. Considerar iniciar terapia de ferro antes da alta e permitir nutrição oral precoce em elegíveis, dentro de 24 horas da hemostasia durável.  
-B. Manter jejum absoluto por duas semanas em todos.  
-C. Ferro é contraindicado após sangramento digestivo.  
-D. Nutrição não deve ser planejada antes da alta.
-**Gabarito A.** O guideline inclui recuperação hematológica e alimentação. **B:** não é regra após hemostasia segura. **C:** reposição é frequentemente necessária. **D:** omite função essencial. **Minirrevisão:** desfecho é hemostasia + recuperação, não apenas procedimento.
-
-### Questão 14 — HDA depois de bypass
-Mulher após bypass em Y de Roux apresenta melena persistente; EDA padrão da bolsa e gastrojejunoanastomose não revela foco. Qual afirmação correta?
-A. EDA negativa exclui fonte em todo tubo digestivo.  
-B. Duodeno e estômago excluído sempre são visualizados normalmente pela EDA padrão.  
-C. O estômago excluído e duodeno geralmente não são alcançados pela EDA convencional, podendo demandar investigação especializada conforme gravidade.  
-D. Toda melena nesse cenário é simulada por ferro.
-**Gabarito C.** Anatomia pós-bypass cria segmento não alcançado por EDA habitual. **A/B:** desconhecem reconstrução cirúrgica. **D:** etiologia não pode ser presumida. **Minirrevisão:** fonte e método dependem da anatomia.
-
-### Questão 15 — Dieulafoy versus úlcera convencional
-Paciente com hematêmese volumosa apresenta pequeno defeito mucoso e vaso proeminente sangrando em mucosa gástrica quase normal. Principal hipótese?
-A. GAVE em forma de melancia, obrigatoriamente.  
-B. Lesão de Dieulafoy.  
-C. Variz esofágica.  
-D. Úlcera duodenal Forrest III de base limpa.
-**Gabarito B.** Vaso submucoso calibroso exposto por pequena erosão é típico. **A:** lesão vascular antral costuma padrão diferente. **C:** topografia e morfologia não correspondem. **D:** Forrest III não apresenta vaso sangrante. **Minirrevisão:** reconhecer lesão vascular focal evita erro de etiologia.
-
-### Questão 16 — GAVE e hipertensão portal
-Paciente com cirrose e anemia crônica tem endoscopia com estrias vasculares no antro em aspecto de melancia. Melhor interpretação:
-A. Toda GAVE é gastropatia hipertensiva portal, e TIPS é primeira linha.  
-B. Ectasias antrais não podem ocorrer em cirrose.  
-C. Tratar apenas com octreotida sistêmica por toda a vida.  
-D. Considerar GAVE, entidade distinta de gastropatia portal, com avaliação de hemostasia endoscópica local e manejo de anemia.
-**Gabarito D.** GAVE tem mecanismo e terapêutica distintos. **A:** confusão conceitual. **B:** coexistência possível. **C:** não é terapia universal. **Minirrevisão:** localização e padrão vascular dirigem tratamento.
 
 ## 15. Pontos de alto rendimento e armadilhas de residência
 
@@ -665,30 +445,3 @@ D. Considerar GAVE, entidade distinta de gastropatia portal, com avaliação de 
 - [ ] Integrar e validar HTML, sumário, acessibilidade, mobile/PWA; não lançar sem revisão editorial.
 
 **Parecer:** rascunho clinicamente amplo com atualizações recentes, **NÃO CERTIFICADO/NÃO PUBLICADO**.
-
-
-
-## 17A. Atualização temática e etapa zero repetida (15/10/2026)
-
-**Comparativos Drive efetivamente abertos:** "01 - ENDOSCOPIA - ULCERA PEPTICA.pdf" (9.035 caracteres extraídos), "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654), "02 - ESTOMAGO 2 ULCERA, H. PYLORI, GASTRITE ATROFICA E DISPEPSIA FUNCIONAL.pdf" (11.130) e "03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf" (6.806). São temas correlatos e **não** uma apostila profunda equivalente de HDA; autoria Estratégia MED não confirmada, e os materiais exibem marca "Medicina livre". Nenhuma figura/texto foi copiado. Algumas simplificações dos comparativos foram recusadas: úlcera duodenal sangrante não pode ser reduzida a "terapia dupla em toda Forrest"; terapia antitrombótica depende da indicação e do risco; endoscopia padrão **não alcança** todos segmentos após bypass; a diretriz ESGE 2026 altera Forrest IIb e resgate endoscópico.
-
-**Principal referência nova verificada:** Gralnek IM et al. *Endoscopic diagnosis and management of peptic ulcer bleeding: European Society of Gastrointestinal Endoscopy Guideline — Update 2026.* *Endoscopy*. 2026;58:899–924. Epub 13/05/2026, DOI 10.1055/a-2863-8314, PMID 42127996. **Há errata publicada em 22/05/2026**, que deve ser lida antes da certificação editorial de quaisquer números/texto corrigidos: https://pubmed.ncbi.nlm.nih.gov/42127996/
-
-**Novidades efetivamente incorporadas à aula:** ênfase em controle de vaso; OTS clip e terapia de resgate; coagulação suave e cuidados no IIb; TAE após falha e TAE profilática em casos selecionados; metoclopramida IV em alguns casos se eritromicina indisponível; não usar cápsulas como teste rotineiro; manejo de anticoagulação com retomada conforme indicação; início de ferro na alta e nutrição precoce em candidatos; antitrombóticos pós-stent; Dieulafoy, GAVE e anatomia pós-bypass. **Regimes completos de prescrição não foram validados com bula/protocolo brasileiro.**
-
-## 18A. Matriz de autossuficiência parcial
-
-| Competência | Texto didático | Caso | Questão |
-|---|---|---|---|
-| Reconhecer HDA com choque e Hb inicialmente preservada | §4 | 1, 5 | 1 |
-| Separar relógio varicoso e não varicoso | §6, §8 | 2 | 1–2 |
-| Aplicar Forrest, incluindo IIb 2026 | §7.2, 7.9 | 3, 9 | 3–4, 9 |
-| Usar clipe OTS/resgate por risco | §7.3, 7.8–7.10 | 4, 6 | 5–6, 10 |
-| Diferenciar agentes hemostáticos e procinético | §§4.4, 7.12 | 6 | 11 |
-| Reiniciar antitrombótico com risco trombótico | §9, 9.1 | 7 | 12 |
-| Planejar ferro/alimentação após hemostasia | §§7.11, 9.2–9.3 | 6, 7 | 13 |
-| Identificar anatomia pós-bypass | §10.3 | 8 | 14 |
-| Reconhecer Dieulafoy e ectasias | §§10.1–10.2 | 10 | 15–16 |
-| Diferenciar gastropatia portal e GAVE | §§8.4, 10.1 | revisão clínica | 16 |
-
-**Status de qualidade:** questão comentada no próprio texto e seis competências novas foram testadas **internamente**; não houve bateria externa de questões, segunda avaliação médica independente, comparação de desempenho em prova, seleção de imagens licenciadas ou renderização de HTML/PWA. Contagem bruta inclui tabelas, gabaritos e metadados; **não é certificação de 60 mil caracteres úteis**. Ainda é RASCUNHO NÃO PUBLICADO.

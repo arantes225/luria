@@ -2,6 +2,8 @@
 import { saveBook, countUsefulChars } from './bloco-06-utils.mjs';
 import * as p1 from './build-bloco-06-122-part1.mjs';
 import * as extra from './build-bloco-06-122-extra.mjs';
+import * as extra2 from './build-bloco-06-122-extra2.mjs';
+import * as extra3 from './build-bloco-06-122-extra3.mjs';
 import * as p2 from './build-bloco-06-122-part2.mjs';
 
 const book = {
@@ -18,7 +20,10 @@ const book = {
     extra.secIatrogeniasECPRE,
     p1.sec4,
     p2.sec5,
+    extra2.secTratamentoConservadorTaylor,
     extra.secTraumaEPeritoniteTerciaria,
+    extra3.secSCAeLaparostomia,
+    extra2.secNutricaoEComplicacoesPosOp,
     p2.sec6,
     p2.sec7,
     p2.sec8

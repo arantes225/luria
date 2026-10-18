@@ -1,0 +1,1822 @@
+[
+  {
+    "number": 1,
+    "title": "Síndromes coronarianas agudas",
+    "area": "Clínica Médica",
+    "slug": "sindromes-coronarianas-agudas",
+    "exists": true
+  },
+  {
+    "number": 2,
+    "title": "Avaliação pré-operatória e risco cirúrgico",
+    "area": "Cirurgia Geral",
+    "slug": "avaliacao-pre-operatoria-e-risco-cirurgico",
+    "exists": false
+  },
+  {
+    "number": 3,
+    "title": "Assistência ao recém-nascido em sala de parto",
+    "area": "Pediatria",
+    "slug": "assistencia-ao-recem-nascido-em-sala-de-parto",
+    "exists": false
+  },
+  {
+    "number": 4,
+    "title": "Pré-natal de baixo risco",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "pre-natal-de-baixo-risco",
+    "exists": false
+  },
+  {
+    "number": 5,
+    "title": "Princípios e diretrizes do SUS",
+    "area": "Medicina Preventiva",
+    "slug": "principios-e-diretrizes-do-sus",
+    "exists": false
+  },
+  {
+    "number": 6,
+    "title": "Insuficiência cardíaca",
+    "area": "Clínica Médica",
+    "slug": "insuficiencia-cardiaca",
+    "exists": true
+  },
+  {
+    "number": 7,
+    "title": "Cuidados perioperatórios",
+    "area": "Cirurgia Geral",
+    "slug": "cuidados-perioperatorios-prevencao-complicacoes",
+    "exists": true
+  },
+  {
+    "number": 8,
+    "title": "Reanimação neonatal",
+    "area": "Pediatria",
+    "slug": "reanimacao-neonatal",
+    "exists": true
+  },
+  {
+    "number": 9,
+    "title": "Diagnóstico e datação da gestação",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "diagnostico-e-datacao-da-gestacao",
+    "exists": false
+  },
+  {
+    "number": 10,
+    "title": "Lei nº 8.080/1990",
+    "area": "Medicina Preventiva",
+    "slug": "lei-n-8-080-1990",
+    "exists": false
+  },
+  {
+    "number": 11,
+    "title": "Hipertensão arterial sistêmica",
+    "area": "Clínica Médica",
+    "slug": "hipertensao-arterial-sistemica",
+    "exists": true
+  },
+  {
+    "number": 12,
+    "title": "Resposta metabólica ao trauma",
+    "area": "Cirurgia Geral",
+    "slug": "resposta-metabolica-ao-trauma",
+    "exists": true
+  },
+  {
+    "number": 13,
+    "title": "Prematuridade e baixo peso ao nascer",
+    "area": "Pediatria",
+    "slug": "prematuridade-e-baixo-peso-ao-nascer",
+    "exists": false
+  },
+  {
+    "number": 14,
+    "title": "Exames e rastreamentos no pré-natal",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "exames-e-rastreamentos-no-pre-natal",
+    "exists": false
+  },
+  {
+    "number": 15,
+    "title": "Lei nº 8.142/1990",
+    "area": "Medicina Preventiva",
+    "slug": "lei-n-8-142-1990",
+    "exists": false
+  },
+  {
+    "number": 16,
+    "title": "Arritmias e fibrilação atrial",
+    "area": "Clínica Médica",
+    "slug": "arritmias-e-fibrilacao-atrial",
+    "exists": false
+  },
+  {
+    "number": 17,
+    "title": "Reposição volêmica e distúrbios hidroeletrolíticos no paciente cirúrgico",
+    "area": "Cirurgia Geral",
+    "slug": "disturbios-hidroeletroliticos",
+    "exists": true
+  },
+  {
+    "number": 18,
+    "title": "Icterícia neonatal",
+    "area": "Pediatria",
+    "slug": "ictericia-neonatal",
+    "exists": true
+  },
+  {
+    "number": 19,
+    "title": "Vacinação e suplementação na gestação",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "vacinacao-e-suplementacao-na-gestacao",
+    "exists": false
+  },
+  {
+    "number": 20,
+    "title": "Atenção Primária à Saúde e seus atributos",
+    "area": "Medicina Preventiva",
+    "slug": "atencao-primaria-a-saude-e-seus-atributos",
+    "exists": false
+  },
+  {
+    "number": 21,
+    "title": "Valvopatias",
+    "area": "Clínica Médica",
+    "slug": "valvopatias",
+    "exists": true
+  },
+  {
+    "number": 22,
+    "title": "Choque hemorrágico",
+    "area": "Cirurgia Geral",
+    "slug": "choque-hemorragico",
+    "exists": true
+  },
+  {
+    "number": 23,
+    "title": "Sepse neonatal",
+    "area": "Pediatria",
+    "slug": "sepse-neonatal",
+    "exists": true
+  },
+  {
+    "number": 24,
+    "title": "Hipertensão gestacional e pré-eclâmpsia",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "hipertensao-gestacional-e-pre-eclampsia",
+    "exists": false
+  },
+  {
+    "number": 25,
+    "title": "Estratégia Saúde da Família",
+    "area": "Medicina Preventiva",
+    "slug": "estrategia-saude-da-familia",
+    "exists": true
+  },
+  {
+    "number": 26,
+    "title": "Endocardite infecciosa",
+    "area": "Clínica Médica",
+    "slug": "endocardite-infecciosa",
+    "exists": true
+  },
+  {
+    "number": 27,
+    "title": "Nutrição no paciente cirúrgico",
+    "area": "Cirurgia Geral",
+    "slug": "nutricao-no-paciente-cirurgico",
+    "exists": true
+  },
+  {
+    "number": 28,
+    "title": "Aleitamento materno",
+    "area": "Pediatria",
+    "slug": "aleitamento-materno",
+    "exists": true
+  },
+  {
+    "number": 29,
+    "title": "Diabetes mellitus gestacional",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "diabetes-mellitus-gestacional",
+    "exists": true
+  },
+  {
+    "number": 30,
+    "title": "Política Nacional de Atenção Básica",
+    "area": "Medicina Preventiva",
+    "slug": "politica-nacional-de-atencao-basica",
+    "exists": true
+  },
+  {
+    "number": 31,
+    "title": "Pericardite e tamponamento cardíaco",
+    "area": "Clínica Médica",
+    "slug": "pericardite-e-tamponamento-cardiaco",
+    "exists": true
+  },
+  {
+    "number": 32,
+    "title": "Cicatrização de feridas",
+    "area": "Cirurgia Geral",
+    "slug": "cicatrizacao-de-feridas",
+    "exists": true
+  },
+  {
+    "number": 33,
+    "title": "Alimentação complementar",
+    "area": "Pediatria",
+    "slug": "alimentacao-complementar",
+    "exists": true
+  },
+  {
+    "number": 34,
+    "title": "Infecções na gestação e transmissão vertical",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "infeccoes-na-gestacao-e-transmissao-vertical",
+    "exists": false
+  },
+  {
+    "number": 35,
+    "title": "Redes de Atenção à Saúde",
+    "area": "Medicina Preventiva",
+    "slug": "redes-de-atencao-a-saude",
+    "exists": true
+  },
+  {
+    "number": 36,
+    "title": "Tromboembolismo venoso e embolia pulmonar",
+    "area": "Clínica Médica",
+    "slug": "tromboembolismo-venoso-e-embolia-pulmonar",
+    "exists": true
+  },
+  {
+    "number": 37,
+    "title": "Infecção do sítio cirúrgico e antibioticoprofilaxia",
+    "area": "Cirurgia Geral",
+    "slug": "infeccao-do-sitio-cirurgico-e-antibioticoprofilaxia",
+    "exists": true
+  },
+  {
+    "number": 38,
+    "title": "Crescimento e desenvolvimento",
+    "area": "Pediatria",
+    "slug": "crescimento-e-desenvolvimento",
+    "exists": true
+  },
+  {
+    "number": 39,
+    "title": "Sangramento na primeira metade da gestação",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "sangramento-na-primeira-metade-da-gestacao",
+    "exists": true
+  },
+  {
+    "number": 40,
+    "title": "Regionalização, hierarquização e referência/contrarreferência",
+    "area": "Medicina Preventiva",
+    "slug": "regionalizacao-hierarquizacao-e-referencia-contrarreferencia",
+    "exists": true
+  },
+  {
+    "number": 41,
+    "title": "Choque circulatório",
+    "area": "Clínica Médica",
+    "slug": "choque-circulatorio",
+    "exists": true
+  },
+  {
+    "number": 42,
+    "title": "Princípios de técnica cirúrgica",
+    "area": "Cirurgia Geral",
+    "slug": "principios-de-tecnica-cirurgica",
+    "exists": true
+  },
+  {
+    "number": 43,
+    "title": "Puericultura e prevenção de acidentes",
+    "area": "Pediatria",
+    "slug": "puericultura-e-prevencao-de-acidentes",
+    "exists": true
+  },
+  {
+    "number": 44,
+    "title": "Abortamento",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "abortamento",
+    "exists": true
+  },
+  {
+    "number": 45,
+    "title": "Participação e controle social no SUS",
+    "area": "Medicina Preventiva",
+    "slug": "participacao-e-controle-social-no-sus",
+    "exists": true
+  },
+  {
+    "number": 46,
+    "title": "Asma",
+    "area": "Clínica Médica",
+    "slug": "asma",
+    "exists": true
+  },
+  {
+    "number": 47,
+    "title": "Trauma: atendimento inicial e ABCDE",
+    "area": "Cirurgia Geral",
+    "slug": "trauma-atendimento-inicial-e-abcde",
+    "exists": false
+  },
+  {
+    "number": 48,
+    "title": "Imunizações na infância",
+    "area": "Pediatria",
+    "slug": "imunizacoes-na-infancia",
+    "exists": true
+  },
+  {
+    "number": 49,
+    "title": "Gestação ectópica",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "gestacao-ectopica",
+    "exists": true
+  },
+  {
+    "number": 50,
+    "title": "Financiamento e gestão do SUS",
+    "area": "Medicina Preventiva",
+    "slug": "financiamento-e-gestao-do-sus",
+    "exists": true
+  },
+  {
+    "number": 51,
+    "title": "DPOC",
+    "area": "Clínica Médica",
+    "slug": "dpoc",
+    "exists": true
+  },
+  {
+    "number": 52,
+    "title": "Traumatismo cranioencefálico",
+    "area": "Cirurgia Geral",
+    "slug": "traumatismo-cranioencefalico",
+    "exists": true
+  },
+  {
+    "number": 53,
+    "title": "Desidratação e terapia de reidratação",
+    "area": "Pediatria",
+    "slug": "desidratacao-e-terapia-de-reidratacao",
+    "exists": true
+  },
+  {
+    "number": 54,
+    "title": "Doença trofoblástica gestacional",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "doenca-trofoblastica-gestacional",
+    "exists": true
+  },
+  {
+    "number": 55,
+    "title": "Vigilância em Saúde",
+    "area": "Medicina Preventiva",
+    "slug": "vigilancia-em-saude",
+    "exists": true
+  },
+  {
+    "number": 56,
+    "title": "Pneumonias adquiridas na comunidade",
+    "area": "Clínica Médica",
+    "slug": "pneumonias-adquiridas-na-comunidade",
+    "exists": true
+  },
+  {
+    "number": 57,
+    "title": "Trauma torácico",
+    "area": "Cirurgia Geral",
+    "slug": "trauma-toracico",
+    "exists": true
+  },
+  {
+    "number": 58,
+    "title": "Diarreia aguda",
+    "area": "Pediatria",
+    "slug": "diarreia-aguda",
+    "exists": true
+  },
+  {
+    "number": 59,
+    "title": "Sangramento na segunda metade da gestação",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "sangramento-na-segunda-metade-da-gestacao",
+    "exists": true
+  },
+  {
+    "number": 60,
+    "title": "Vigilância epidemiológica",
+    "area": "Medicina Preventiva",
+    "slug": "vigilancia-epidemiologica",
+    "exists": true
+  },
+  {
+    "number": 61,
+    "title": "Tuberculose pulmonar",
+    "area": "Clínica Médica",
+    "slug": "tuberculose-pulmonar",
+    "exists": true
+  },
+  {
+    "number": 62,
+    "title": "Trauma abdominal",
+    "area": "Cirurgia Geral",
+    "slug": "trauma-abdominal",
+    "exists": true
+  },
+  {
+    "number": 63,
+    "title": "Doença do refluxo gastroesofágico na infância",
+    "area": "Pediatria",
+    "slug": "doenca-do-refluxo-gastroesofagico-na-infancia",
+    "exists": true
+  },
+  {
+    "number": 64,
+    "title": "Placenta prévia e descolamento prematuro de placenta",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "placenta-previa-e-descolamento-prematuro-de-placenta",
+    "exists": true
+  },
+  {
+    "number": 65,
+    "title": "Vigilância sanitária",
+    "area": "Medicina Preventiva",
+    "slug": "vigilancia-sanitaria",
+    "exists": true
+  },
+  {
+    "number": 66,
+    "title": "Derrame pleural",
+    "area": "Clínica Médica",
+    "slug": "derrame-pleural",
+    "exists": true
+  },
+  {
+    "number": 67,
+    "title": "Trauma pélvico e geniturinário",
+    "area": "Cirurgia Geral",
+    "slug": "trauma-pelvico-e-geniturinario",
+    "exists": true
+  },
+  {
+    "number": 68,
+    "title": "Desnutrição e deficiências nutricionais",
+    "area": "Pediatria",
+    "slug": "desnutricao-e-deficiencias-nutricionais",
+    "exists": true
+  },
+  {
+    "number": 69,
+    "title": "Trabalho de parto e assistência ao parto",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "assistencia-ao-parto",
+    "exists": true
+  },
+  {
+    "number": 70,
+    "title": "Vigilância ambiental e saúde do trabalhador",
+    "area": "Medicina Preventiva",
+    "slug": "vigilancia-ambiental-e-saude-do-trabalhador",
+    "exists": true
+  },
+  {
+    "number": 71,
+    "title": "Insuficiência respiratória aguda",
+    "area": "Clínica Médica",
+    "slug": "insuficiencia-respiratoria-aguda",
+    "exists": true
+  },
+  {
+    "number": 72,
+    "title": "Queimaduras",
+    "area": "Cirurgia Geral",
+    "slug": "queimaduras",
+    "exists": true
+  },
+  {
+    "number": 73,
+    "title": "Obesidade infantil",
+    "area": "Pediatria",
+    "slug": "obesidade-infantil",
+    "exists": true
+  },
+  {
+    "number": 74,
+    "title": "Partograma",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "partograma",
+    "exists": true
+  },
+  {
+    "number": 75,
+    "title": "Notificação compulsória de doenças e agravos",
+    "area": "Medicina Preventiva",
+    "slug": "notificacao-compulsoria-de-doencas-e-agravos",
+    "exists": true
+  },
+  {
+    "number": 76,
+    "title": "Diabetes mellitus",
+    "area": "Clínica Médica",
+    "slug": "diabetes-mellitus",
+    "exists": true
+  },
+  {
+    "number": 77,
+    "title": "Abdome agudo: abordagem inicial",
+    "area": "Cirurgia Geral",
+    "slug": "abdome-agudo-abordagem-inicial",
+    "exists": true
+  },
+  {
+    "number": 78,
+    "title": "Infecções de vias aéreas superiores",
+    "area": "Pediatria",
+    "slug": "infeccoes-de-vias-aereas-superiores",
+    "exists": true
+  },
+  {
+    "number": 79,
+    "title": "Indução do trabalho de parto",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "inducao-do-trabalho-de-parto",
+    "exists": true
+  },
+  {
+    "number": 80,
+    "title": "Investigação de surtos e epidemias",
+    "area": "Medicina Preventiva",
+    "slug": "investigacao-de-surtos-e-epidemias",
+    "exists": true
+  },
+  {
+    "number": 81,
+    "title": "Cetoacidose diabética e estado hiperosmolar",
+    "area": "Clínica Médica",
+    "slug": "cetoacidose-diabetica-e-estado-hiperosmolar",
+    "exists": true
+  },
+  {
+    "number": 82,
+    "title": "Apendicite aguda",
+    "area": "Cirurgia Geral",
+    "slug": "apendicite-aguda",
+    "exists": true
+  },
+  {
+    "number": 83,
+    "title": "Bronquiolite viral aguda",
+    "area": "Pediatria",
+    "slug": "bronquiolite-viral-aguda",
+    "exists": true
+  },
+  {
+    "number": 84,
+    "title": "Distocias e parto operatório",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "distocias-e-parto-operatorio",
+    "exists": true
+  },
+  {
+    "number": 85,
+    "title": "Medidas de frequência: incidência e prevalência",
+    "area": "Medicina Preventiva",
+    "slug": "medidas-de-frequencia-incidencia-e-prevalencia",
+    "exists": true
+  },
+  {
+    "number": 86,
+    "title": "Distúrbios da tireoide",
+    "area": "Clínica Médica",
+    "slug": "disturbios-da-tireoide",
+    "exists": true
+  },
+  {
+    "number": 87,
+    "title": "Colecistite e colelitíase",
+    "area": "Cirurgia Geral",
+    "slug": "colecistite-e-colelitiase",
+    "exists": true
+  },
+  {
+    "number": 88,
+    "title": "Pneumonia na criança",
+    "area": "Pediatria",
+    "slug": "pneumonia-na-crianca",
+    "exists": true
+  },
+  {
+    "number": 89,
+    "title": "Sofrimento fetal e avaliação da vitalidade fetal",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "sofrimento-fetal-e-avaliacao-da-vitalidade-fetal",
+    "exists": true
+  },
+  {
+    "number": 90,
+    "title": "Medidas de associação e impacto",
+    "area": "Medicina Preventiva",
+    "slug": "medidas-de-associacao-e-impacto",
+    "exists": true
+  },
+  {
+    "number": 91,
+    "title": "Insuficiência adrenal e síndrome de Cushing",
+    "area": "Clínica Médica",
+    "slug": "insuficiencia-adrenal-e-sindrome-de-cushing",
+    "exists": true
+  },
+  {
+    "number": 92,
+    "title": "Coledocolitíase e colangite",
+    "area": "Cirurgia Geral",
+    "slug": "coledocolitiase-e-colangite",
+    "exists": true
+  },
+  {
+    "number": 93,
+    "title": "Asma na infância",
+    "area": "Pediatria",
+    "slug": "asma-na-infancia",
+    "exists": true
+  },
+  {
+    "number": 94,
+    "title": "Rotura prematura de membranas",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "rotura-prematura-de-membranas",
+    "exists": false
+  },
+  {
+    "number": 95,
+    "title": "Sensibilidade, especificidade e valores preditivos",
+    "area": "Medicina Preventiva",
+    "slug": "sensibilidade-especificidade-e-valores-preditivos",
+    "exists": true
+  },
+  {
+    "number": 96,
+    "title": "Distúrbios hidroeletrolíticos",
+    "area": "Clínica Médica",
+    "slug": "disturbios-hidroeletroliticos",
+    "exists": true
+  },
+  {
+    "number": 97,
+    "title": "Pancreatite aguda cirúrgica",
+    "area": "Cirurgia Geral",
+    "slug": "pancreatite-aguda-cirurgica",
+    "exists": true
+  },
+  {
+    "number": 98,
+    "title": "Crupe e epiglotite",
+    "area": "Pediatria",
+    "slug": "crupe-e-epiglotite",
+    "exists": true
+  },
+  {
+    "number": 99,
+    "title": "Trabalho de parto prematuro",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "trabalho-de-parto-prematuro",
+    "exists": false
+  },
+  {
+    "number": 100,
+    "title": "Testes diagnósticos e curvas ROC",
+    "area": "Medicina Preventiva",
+    "slug": "testes-diagnosticos-e-curvas-roc",
+    "exists": true
+  },
+  {
+    "number": 101,
+    "title": "Distúrbios ácido-base",
+    "area": "Clínica Médica",
+    "slug": "disturbios-acido-base",
+    "exists": true
+  },
+  {
+    "number": 102,
+    "title": "Obstrução intestinal",
+    "area": "Cirurgia Geral",
+    "slug": "obstrucao-intestinal",
+    "exists": true
+  },
+  {
+    "number": 103,
+    "title": "Tuberculose na infância",
+    "area": "Pediatria",
+    "slug": "tuberculose-na-infancia",
+    "exists": true
+  },
+  {
+    "number": 104,
+    "title": "Hemorragia pós-parto",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "hemorragia-pos-parto",
+    "exists": true
+  },
+  {
+    "number": 105,
+    "title": "Desenhos de estudos epidemiológicos",
+    "area": "Medicina Preventiva",
+    "slug": "desenhos-de-estudos-epidemiologicos",
+    "exists": true
+  },
+  {
+    "number": 106,
+    "title": "Lesão renal aguda",
+    "area": "Clínica Médica",
+    "slug": "lesao-renal-aguda",
+    "exists": true
+  },
+  {
+    "number": 107,
+    "title": "Hérnias da parede abdominal",
+    "area": "Cirurgia Geral",
+    "slug": "hernias-da-parede-abdominal",
+    "exists": true
+  },
+  {
+    "number": 108,
+    "title": "Infecção urinária na criança",
+    "area": "Pediatria",
+    "slug": "infeccao-urinaria-na-crianca",
+    "exists": true
+  },
+  {
+    "number": 109,
+    "title": "Puerpério normal e patológico",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "puerperio-normal-e-patologico",
+    "exists": true
+  },
+  {
+    "number": 110,
+    "title": "Ensaios clínicos e revisões sistemáticas",
+    "area": "Medicina Preventiva",
+    "slug": "ensaios-clinicos-e-revisoes-sistematicas",
+    "exists": true
+  },
+  {
+    "number": 111,
+    "title": "Doença renal crônica",
+    "area": "Clínica Médica",
+    "slug": "doenca-renal-cronica",
+    "exists": true
+  },
+  {
+    "number": 112,
+    "title": "Diverticulite aguda",
+    "area": "Cirurgia Geral",
+    "slug": "diverticulite-aguda",
+    "exists": true
+  },
+  {
+    "number": 113,
+    "title": "Síndrome nefrótica e síndrome nefrítica",
+    "area": "Pediatria",
+    "slug": "sindrome-nefrotica-e-sindrome-nefritica",
+    "exists": true
+  },
+  {
+    "number": 114,
+    "title": "Infecção puerperal",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "infeccao-puerperal",
+    "exists": true
+  },
+  {
+    "number": 115,
+    "title": "Vieses, confundimento e causalidade",
+    "area": "Medicina Preventiva",
+    "slug": "vieses-confundimento-e-causalidade",
+    "exists": true
+  },
+  {
+    "number": 116,
+    "title": "Síndromes glomerulares",
+    "area": "Clínica Médica",
+    "slug": "sindromes-glomerulares",
+    "exists": true
+  },
+  {
+    "number": 117,
+    "title": "Isquemia mesentérica",
+    "area": "Cirurgia Geral",
+    "slug": "isquemia-mesenterica",
+    "exists": true
+  },
+  {
+    "number": 118,
+    "title": "Anemias na infância",
+    "area": "Pediatria",
+    "slug": "anemias-na-infancia",
+    "exists": true
+  },
+  {
+    "number": 119,
+    "title": "Planejamento reprodutivo e contracepção",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "planejamento-reprodutivo-e-contracepcao",
+    "exists": false
+  },
+  {
+    "number": 120,
+    "title": "Medicina baseada em evidências",
+    "area": "Medicina Preventiva",
+    "slug": "medicina-baseada-em-evidencias",
+    "exists": true
+  },
+  {
+    "number": 121,
+    "title": "Infecção do trato urinário e pielonefrite",
+    "area": "Clínica Médica",
+    "slug": "infeccao-do-trato-urinario-e-pielonefrite",
+    "exists": true
+  },
+  {
+    "number": 122,
+    "title": "Perfuração de víscera oca",
+    "area": "Cirurgia Geral",
+    "slug": "perfuracao-de-viscera-oca",
+    "exists": true
+  },
+  {
+    "number": 123,
+    "title": "Febre sem sinais localizatórios",
+    "area": "Pediatria",
+    "slug": "febre-sem-sinais-localizatorios",
+    "exists": true
+  },
+  {
+    "number": 124,
+    "title": "Sangramento uterino anormal",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "sangramento-uterino-anormal",
+    "exists": true
+  },
+  {
+    "number": 125,
+    "title": "Rastreamento e prevenção quaternária",
+    "area": "Medicina Preventiva",
+    "slug": "rastreamento-e-prevencao-quaternaria",
+    "exists": true
+  },
+  {
+    "number": 126,
+    "title": "Cirrose e suas complicações",
+    "area": "Clínica Médica",
+    "slug": "cirrose-e-suas-complicacoes",
+    "exists": true
+  },
+  {
+    "number": 127,
+    "title": "Hemorragia digestiva alta",
+    "area": "Cirurgia Geral",
+    "slug": "hemorragia-digestiva-alta",
+    "exists": true
+  },
+  {
+    "number": 128,
+    "title": "Sepse e choque séptico pediátrico",
+    "area": "Pediatria",
+    "slug": "sepse-e-choque-septico-pediatrico",
+    "exists": true
+  },
+  {
+    "number": 129,
+    "title": "Amenorreia",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "amenorreia",
+    "exists": true
+  },
+  {
+    "number": 130,
+    "title": "Níveis de prevenção e história natural da doença",
+    "area": "Medicina Preventiva",
+    "slug": "niveis-de-prevencao-e-historia-natural-da-doenca",
+    "exists": true
+  },
+  {
+    "number": 131,
+    "title": "Hepatites virais",
+    "area": "Clínica Médica",
+    "slug": "hepatites-virais",
+    "exists": true
+  },
+  {
+    "number": 132,
+    "title": "Hemorragia digestiva baixa",
+    "area": "Cirurgia Geral",
+    "slug": "hemorragia-digestiva-baixa",
+    "exists": true
+  },
+  {
+    "number": 133,
+    "title": "Meningites e encefalites",
+    "area": "Pediatria",
+    "slug": "meningites-e-encefalites",
+    "exists": true
+  },
+  {
+    "number": 134,
+    "title": "Síndrome dos ovários policísticos",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "sindrome-dos-ovarios-policisticos",
+    "exists": true
+  },
+  {
+    "number": 135,
+    "title": "Imunização e Programa Nacional de Imunizações",
+    "area": "Medicina Preventiva",
+    "slug": "imunizacao-e-programa-nacional-de-imunizacoes",
+    "exists": true
+  },
+  {
+    "number": 136,
+    "title": "Hemorragia digestiva",
+    "area": "Clínica Médica",
+    "slug": "hemorragia-digestiva",
+    "exists": true
+  },
+  {
+    "number": 137,
+    "title": "Doença do refluxo e hérnia hiatal",
+    "area": "Cirurgia Geral",
+    "slug": "doenca-do-refluxo-e-hernia-hiatal",
+    "exists": true
+  },
+  {
+    "number": 138,
+    "title": "Crises convulsivas e estado de mal epiléptico",
+    "area": "Pediatria",
+    "slug": "crises-convulsivas-e-estado-de-mal-epileptico",
+    "exists": true
+  },
+  {
+    "number": 139,
+    "title": "Endometriose",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "endometriose",
+    "exists": false
+  },
+  {
+    "number": 140,
+    "title": "Saúde da criança na APS",
+    "area": "Medicina Preventiva",
+    "slug": "saude-da-crianca-na-aps",
+    "exists": false
+  },
+  {
+    "number": 141,
+    "title": "Pancreatite aguda",
+    "area": "Clínica Médica",
+    "slug": "pancreatite-aguda-cirurgica",
+    "exists": true
+  },
+  {
+    "number": 142,
+    "title": "Úlcera péptica e complicações",
+    "area": "Cirurgia Geral",
+    "slug": "ulcera-peptica-e-complicacoes",
+    "exists": false
+  },
+  {
+    "number": 143,
+    "title": "Cardiopatias congênitas",
+    "area": "Pediatria",
+    "slug": "cardiopatias-congenitas",
+    "exists": false
+  },
+  {
+    "number": 144,
+    "title": "Climatério e menopausa",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "climaterio-e-menopausa",
+    "exists": false
+  },
+  {
+    "number": 145,
+    "title": "Saúde da mulher na APS",
+    "area": "Medicina Preventiva",
+    "slug": "saude-da-mulher-na-aps",
+    "exists": false
+  },
+  {
+    "number": 146,
+    "title": "Doença inflamatória intestinal",
+    "area": "Clínica Médica",
+    "slug": "doenca-inflamatoria-intestinal",
+    "exists": false
+  },
+  {
+    "number": 147,
+    "title": "Câncer gástrico",
+    "area": "Cirurgia Geral",
+    "slug": "cancer-gastrico",
+    "exists": false
+  },
+  {
+    "number": 148,
+    "title": "Febre reumática",
+    "area": "Pediatria",
+    "slug": "febre-reumatica",
+    "exists": false
+  },
+  {
+    "number": 149,
+    "title": "Infecções sexualmente transmissíveis",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "infeccoes-sexualmente-transmissiveis",
+    "exists": true
+  },
+  {
+    "number": 150,
+    "title": "Saúde do adulto e do idoso na APS",
+    "area": "Medicina Preventiva",
+    "slug": "saude-do-adulto-e-do-idoso-na-aps",
+    "exists": false
+  },
+  {
+    "number": 151,
+    "title": "Anemias",
+    "area": "Clínica Médica",
+    "slug": "anemias-na-infancia",
+    "exists": true
+  },
+  {
+    "number": 152,
+    "title": "Câncer colorretal",
+    "area": "Cirurgia Geral",
+    "slug": "cancer-colorretal",
+    "exists": false
+  },
+  {
+    "number": 153,
+    "title": "Diabetes mellitus tipo 1 e cetoacidose",
+    "area": "Pediatria",
+    "slug": "diabetes-mellitus",
+    "exists": true
+  },
+  {
+    "number": 154,
+    "title": "Doença inflamatória pélvica",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "cervicites-doenca-inflamatoria-pelvica",
+    "exists": true
+  },
+  {
+    "number": 155,
+    "title": "Saúde mental na Atenção Primária",
+    "area": "Medicina Preventiva",
+    "slug": "saude-mental-na-atencao-primaria",
+    "exists": false
+  },
+  {
+    "number": 156,
+    "title": "Leucemias e linfomas",
+    "area": "Clínica Médica",
+    "slug": "leucemias-e-linfomas",
+    "exists": false
+  },
+  {
+    "number": 157,
+    "title": "Doenças anorretais",
+    "area": "Cirurgia Geral",
+    "slug": "doencas-anorretais",
+    "exists": false
+  },
+  {
+    "number": 158,
+    "title": "Doenças exantemáticas",
+    "area": "Pediatria",
+    "slug": "doencas-exantematicas",
+    "exists": false
+  },
+  {
+    "number": 159,
+    "title": "Rastreamento e lesões precursoras do câncer do colo uterino",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "rastreamento-e-lesoes-precursoras-do-cancer-do-colo-uterino",
+    "exists": false
+  },
+  {
+    "number": 160,
+    "title": "Abordagem do tabagismo, álcool e outras drogas",
+    "area": "Medicina Preventiva",
+    "slug": "abordagem-do-tabagismo-alcool-e-outras-drogas",
+    "exists": false
+  },
+  {
+    "number": 161,
+    "title": "Sepse e choque séptico",
+    "area": "Clínica Médica",
+    "slug": "sepse-e-choque-septico-pediatrico",
+    "exists": true
+  },
+  {
+    "number": 162,
+    "title": "Nódulos e câncer de tireoide",
+    "area": "Cirurgia Geral",
+    "slug": "nodulos-e-cancer-de-tireoide",
+    "exists": false
+  },
+  {
+    "number": 163,
+    "title": "Violência e maus-tratos contra crianças e adolescentes",
+    "area": "Pediatria",
+    "slug": "violencia-e-maus-tratos-contra-criancas-e-adolescentes",
+    "exists": false
+  },
+  {
+    "number": 164,
+    "title": "Câncer do colo do útero",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "cancer-do-colo-do-utero",
+    "exists": false
+  },
+  {
+    "number": 165,
+    "title": "Saúde do trabalhador",
+    "area": "Medicina Preventiva",
+    "slug": "vigilancia-ambiental-e-saude-do-trabalhador",
+    "exists": true
+  },
+  {
+    "number": 166,
+    "title": "HIV e infecções oportunistas",
+    "area": "Clínica Médica",
+    "slug": "hiv-e-infeccoes-oportunistas",
+    "exists": false
+  },
+  {
+    "number": 167,
+    "title": "Doenças benignas e câncer de mama",
+    "area": "Cirurgia Geral",
+    "slug": "cancer-de-mama",
+    "exists": true
+  },
+  {
+    "number": 168,
+    "title": "Puberdade e adolescência",
+    "area": "Pediatria",
+    "slug": "puberdade-e-adolescencia",
+    "exists": false
+  },
+  {
+    "number": 169,
+    "title": "Patologias benignas e câncer de mama",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "cancer-de-mama",
+    "exists": true
+  },
+  {
+    "number": 170,
+    "title": "Ética médica, sigilo e prontuário",
+    "area": "Medicina Preventiva",
+    "slug": "etica-medica-sigilo-e-prontuario",
+    "exists": false
+  },
+  {
+    "number": 171,
+    "title": "Artrites inflamatórias e doenças autoimunes",
+    "area": "Clínica Médica",
+    "slug": "artrites-inflamatorias-e-doencas-autoimunes",
+    "exists": false
+  },
+  {
+    "number": 172,
+    "title": "Princípios de oncologia cirúrgica",
+    "area": "Cirurgia Geral",
+    "slug": "principios-de-oncologia-cirurgica",
+    "exists": false
+  },
+  {
+    "number": 173,
+    "title": "Urgências pediátricas e suporte básico/avançado",
+    "area": "Pediatria",
+    "slug": "urgencias-pediatricas-e-suporte-basico-avancado",
+    "exists": false
+  },
+  {
+    "number": 174,
+    "title": "Massas anexiais e câncer de ovário",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "massas-anexiais-e-cancer-de-ovario",
+    "exists": false
+  },
+  {
+    "number": 175,
+    "title": "Declaração de óbito e indicadores de mortalidade",
+    "area": "Medicina Preventiva",
+    "slug": "declaracao-de-obito-e-indicadores-de-mortalidade",
+    "exists": false
+  },
+  {
+    "number": 176,
+    "title": "Acidente vascular cerebral e crises convulsivas",
+    "area": "Clínica Médica",
+    "slug": "acidente-vascular-cerebral-e-crises-convulsivas",
+    "exists": false
+  },
+  {
+    "number": 177,
+    "title": "Complicações pós-operatórias",
+    "area": "Cirurgia Geral",
+    "slug": "complicacoes-pos-operatorias",
+    "exists": false
+  },
+  {
+    "number": 178,
+    "title": "Intoxicações exógenas na infância",
+    "area": "Pediatria",
+    "slug": "intoxicacoes-exogenas-na-infancia",
+    "exists": false
+  },
+  {
+    "number": 179,
+    "title": "Câncer de endométrio",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "cancer-de-endometrio",
+    "exists": false
+  },
+  {
+    "number": 180,
+    "title": "Cuidados paliativos e comunicação de más notícias",
+    "area": "Medicina Preventiva",
+    "slug": "cuidados-paliativos-e-comunicacao-de-mas-noticias",
+    "exists": false
+  },
+  {
+    "number": 181,
+    "title": "Eletrocardiografia: fundamentos e interpretação sistemática",
+    "area": "Clínica Médica",
+    "slug": "eletrocardiografia-fundamentos-e-interpretacao-sistematica",
+    "exists": false
+  },
+  {
+    "number": 182,
+    "title": "Ressuscitação cardiopulmonar do adulto e cuidados pós-parada",
+    "area": "Clínica Médica",
+    "slug": "ressuscitacao-cardiopulmonar-do-adulto-e-cuidados-pos-parada",
+    "exists": false
+  },
+  {
+    "number": 183,
+    "title": "Dislipidemias e prevenção do risco cardiovascular",
+    "area": "Clínica Médica",
+    "slug": "dislipidemias-e-prevencao-do-risco-cardiovascular",
+    "exists": false
+  },
+  {
+    "number": 184,
+    "title": "Cefaleias e sinais de alarme neurológicos",
+    "area": "Clínica Médica",
+    "slug": "cefaleias-e-sinais-de-alarme-neurologicos",
+    "exists": false
+  },
+  {
+    "number": 185,
+    "title": "Síndromes geriátricas, quedas e polifarmácia",
+    "area": "Clínica Médica",
+    "slug": "sindromes-geriatricas-quedas-e-polifarmacia",
+    "exists": false
+  },
+  {
+    "number": 186,
+    "title": "Arboviroses: dengue, chikungunya e Zika",
+    "area": "Clínica Médica",
+    "slug": "arboviroses-dengue-chikungunya-e-zika",
+    "exists": false
+  },
+  {
+    "number": 187,
+    "title": "Antibioticoterapia e uso racional de antimicrobianos",
+    "area": "Clínica Médica",
+    "slug": "antibioticoterapia-e-uso-racional-de-antimicrobianos",
+    "exists": false
+  },
+  {
+    "number": 188,
+    "title": "Anafilaxia e reações alérgicas graves",
+    "area": "Clínica Médica",
+    "slug": "anafilaxia-e-reacoes-alergicas-graves",
+    "exists": false
+  },
+  {
+    "number": 189,
+    "title": "Dermatoses frequentes: eczema, urticária, acne e micoses",
+    "area": "Clínica Médica",
+    "slug": "dermatoses-frequentes-eczema-urticaria-acne-e-micoses",
+    "exists": false
+  },
+  {
+    "number": 190,
+    "title": "Doenças reumatológicas: gota, artrite séptica e diferenciais",
+    "area": "Clínica Médica",
+    "slug": "doencas-reumatologicas-gota-artrite-septica-e-diferenciais",
+    "exists": false
+  },
+  {
+    "number": 191,
+    "title": "Doenças prostáticas e avaliação inicial de neoplasias urológicas",
+    "area": "Cirurgia Geral",
+    "slug": "doencas-prostaticas-e-avaliacao-inicial-de-neoplasias-urologicas",
+    "exists": false
+  },
+  {
+    "number": 192,
+    "title": "Litíase urinária e urgências obstrutivas",
+    "area": "Cirurgia Geral",
+    "slug": "litiase-urinaria-e-urgencias-obstrutivas",
+    "exists": false
+  },
+  {
+    "number": 193,
+    "title": "Escroto agudo e emergências urológicas",
+    "area": "Cirurgia Geral",
+    "slug": "escroto-agudo-e-emergencias-urologicas",
+    "exists": false
+  },
+  {
+    "number": 194,
+    "title": "Trauma ortopédico: fraturas, luxações e avaliação inicial",
+    "area": "Cirurgia Geral",
+    "slug": "trauma-ortopedico-fraturas-luxacoes-e-avaliacao-inicial",
+    "exists": false
+  },
+  {
+    "number": 195,
+    "title": "Urgências oftalmológicas e avaliação da perda visual",
+    "area": "Cirurgia Geral",
+    "slug": "urgencias-oftalmologicas-e-avaliacao-da-perda-visual",
+    "exists": false
+  },
+  {
+    "number": 196,
+    "title": "Isquemia aguda de membros e doenças arteriais periféricas",
+    "area": "Cirurgia Geral",
+    "slug": "isquemia-aguda-de-membros-e-doencas-arteriais-perifericas",
+    "exists": false
+  },
+  {
+    "number": 197,
+    "title": "Via aérea difícil, sedação e anestesia para o generalista",
+    "area": "Cirurgia Geral",
+    "slug": "via-aerea-dificil-sedacao-e-anestesia-para-o-generalista",
+    "exists": false
+  },
+  {
+    "number": 198,
+    "title": "Urgências otorrinolaringológicas e infecções complicadas",
+    "area": "Cirurgia Geral",
+    "slug": "urgencias-otorrinolaringologicas-e-infeccoes-complicadas",
+    "exists": false
+  },
+  {
+    "number": 199,
+    "title": "Triagens neonatais e interpretação dos rastreamentos",
+    "area": "Pediatria",
+    "slug": "triagens-neonatais-e-interpretacao-dos-rastreamentos",
+    "exists": false
+  },
+  {
+    "number": 200,
+    "title": "Hipoglicemia e distúrbios metabólicos neonatais",
+    "area": "Pediatria",
+    "slug": "hipoglicemia-e-disturbios-metabolicos-neonatais",
+    "exists": false
+  },
+  {
+    "number": 201,
+    "title": "Desconforto respiratório neonatal e suporte inicial",
+    "area": "Pediatria",
+    "slug": "desconforto-respiratorio-neonatal-e-suporte-inicial",
+    "exists": false
+  },
+  {
+    "number": 202,
+    "title": "Neurodesenvolvimento: TEA, TDAH e dificuldades de aprendizagem",
+    "area": "Pediatria",
+    "slug": "neurodesenvolvimento-tea-tdah-e-dificuldades-de-aprendizagem",
+    "exists": false
+  },
+  {
+    "number": 203,
+    "title": "Alergias alimentares e anafilaxia pediátrica",
+    "area": "Pediatria",
+    "slug": "alergias-alimentares-e-anafilaxia-pediatrica",
+    "exists": false
+  },
+  {
+    "number": 204,
+    "title": "Vasculites pediátricas e doença de Kawasaki",
+    "area": "Pediatria",
+    "slug": "vasculites-pediatricas-e-doenca-de-kawasaki",
+    "exists": false
+  },
+  {
+    "number": 205,
+    "title": "Dor pélvica aguda e torção anexial",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "dor-pelvica-aguda-e-torcao-anexial",
+    "exists": false
+  },
+  {
+    "number": 206,
+    "title": "Miomas, pólipos e patologia uterina benigna",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "miomas-polipos-e-patologia-uterina-benigna",
+    "exists": false
+  },
+  {
+    "number": 207,
+    "title": "Prolapso genital e incontinência urinária feminina",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "prolapso-genital-e-incontinencia-urinaria-feminina",
+    "exists": false
+  },
+  {
+    "number": 208,
+    "title": "Gestação gemelar e acompanhamento de alto risco",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "gestacao-gemelar-e-acompanhamento-de-alto-risco",
+    "exists": false
+  },
+  {
+    "number": 209,
+    "title": "Aloimunização materno-fetal e doença hemolítica perinatal",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "aloimunizacao-materno-fetal-e-doenca-hemolitica-perinatal",
+    "exists": false
+  },
+  {
+    "number": 210,
+    "title": "Psicopatologia, entrevista e exame do estado mental",
+    "area": "Saúde Mental",
+    "slug": "psicopatologia-entrevista-e-exame-do-estado-mental",
+    "exists": false
+  },
+  {
+    "number": 211,
+    "title": "Transtornos depressivos e avaliação do risco de suicídio",
+    "area": "Saúde Mental",
+    "slug": "transtornos-depressivos-e-avaliacao-do-risco-de-suicidio",
+    "exists": false
+  },
+  {
+    "number": 212,
+    "title": "Transtorno bipolar e episódios do humor",
+    "area": "Saúde Mental",
+    "slug": "transtorno-bipolar-e-episodios-do-humor",
+    "exists": false
+  },
+  {
+    "number": 213,
+    "title": "Transtornos ansiosos, TOC e transtornos relacionados ao trauma",
+    "area": "Saúde Mental",
+    "slug": "transtornos-ansiosos-toc-e-transtornos-relacionados-ao-trauma",
+    "exists": false
+  },
+  {
+    "number": 214,
+    "title": "Esquizofrenia e outros transtornos psicóticos",
+    "area": "Saúde Mental",
+    "slug": "esquizofrenia-e-outros-transtornos-psicoticos",
+    "exists": false
+  },
+  {
+    "number": 215,
+    "title": "Emergências psiquiátricas e fundamentos de psicofarmacologia",
+    "area": "Saúde Mental",
+    "slug": "emergencias-psiquiatricas-e-fundamentos-de-psicofarmacologia",
+    "exists": false
+  },
+  {
+    "number": 216,
+    "title": "Transtornos relacionados ao álcool e outras substâncias",
+    "area": "Saúde Mental",
+    "slug": "transtornos-relacionados-ao-alcool-e-outras-substancias",
+    "exists": false
+  },
+  {
+    "number": 217,
+    "title": "Método clínico centrado na pessoa",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "metodo-clinico-centrado-na-pessoa",
+    "exists": false
+  },
+  {
+    "number": 218,
+    "title": "SOAP e registro clínico na Atenção Primária",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "soap-e-registro-clinico-na-atencao-primaria",
+    "exists": false
+  },
+  {
+    "number": 219,
+    "title": "Abordagem familiar, genograma e ecomapa",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "abordagem-familiar-genograma-e-ecomapa",
+    "exists": false
+  },
+  {
+    "number": 220,
+    "title": "Atenção domiciliar, multimorbidade e desprescrição",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "atencao-domiciliar-multimorbidade-e-desprescricao",
+    "exists": false
+  },
+  {
+    "number": 221,
+    "title": "Saúde de populações vulnerabilizadas e cuidado equitativo",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "saude-de-populacoes-vulnerabilizadas-e-cuidado-equitativo",
+    "exists": false
+  },
+  {
+    "number": 222,
+    "title": "Segurança do paciente e prevenção de eventos adversos",
+    "area": "Saúde Coletiva",
+    "slug": "seguranca-do-paciente-e-prevencao-de-eventos-adversos",
+    "exists": false
+  },
+  {
+    "number": 223,
+    "title": "Consentimento informado, autonomia e decisão compartilhada",
+    "area": "Saúde Coletiva",
+    "slug": "consentimento-informado-autonomia-e-decisao-compartilhada",
+    "exists": false
+  },
+  {
+    "number": 224,
+    "title": "LGPD, sigilo, telemedicina e saúde digital",
+    "area": "Saúde Coletiva",
+    "slug": "lgpd-sigilo-telemedicina-e-saude-digital",
+    "exists": false
+  },
+  {
+    "number": 225,
+    "title": "Determinantes sociais, equidade e direitos humanos",
+    "area": "Saúde Coletiva",
+    "slug": "determinantes-sociais-equidade-e-direitos-humanos",
+    "exists": false
+  },
+  {
+    "number": 226,
+    "title": "Demências e comprometimento cognitivo",
+    "area": "Clínica Médica",
+    "slug": "demencias-e-comprometimento-cognitivo",
+    "exists": false
+  },
+  {
+    "number": 227,
+    "title": "Doença de Parkinson e distúrbios do movimento",
+    "area": "Clínica Médica",
+    "slug": "doenca-de-parkinson-e-disturbios-do-movimento",
+    "exists": false
+  },
+  {
+    "number": 228,
+    "title": "Neuropatias periféricas e doenças neuromusculares",
+    "area": "Clínica Médica",
+    "slug": "neuropatias-perifericas-e-doencas-neuromusculares",
+    "exists": false
+  },
+  {
+    "number": 229,
+    "title": "Obesidade e síndrome metabólica no adulto",
+    "area": "Clínica Médica",
+    "slug": "obesidade-e-sindrome-metabolica-no-adulto",
+    "exists": false
+  },
+  {
+    "number": 230,
+    "title": "Osteoporose, sarcopenia e fragilidade",
+    "area": "Clínica Médica",
+    "slug": "osteoporose-sarcopenia-e-fragilidade",
+    "exists": false
+  },
+  {
+    "number": 231,
+    "title": "Hemoglobinopatias e anemias hereditárias",
+    "area": "Clínica Médica",
+    "slug": "hemoglobinopatias-e-anemias-hereditarias",
+    "exists": false
+  },
+  {
+    "number": 232,
+    "title": "Coagulopatias, trombofilias e hemoterapia",
+    "area": "Clínica Médica",
+    "slug": "coagulopatias-trombofilias-e-hemoterapia",
+    "exists": false
+  },
+  {
+    "number": 233,
+    "title": "Oncologia clínica e emergências oncológicas",
+    "area": "Clínica Médica",
+    "slug": "oncologia-clinica-e-emergencias-oncologicas",
+    "exists": false
+  },
+  {
+    "number": 234,
+    "title": "Doença de Chagas",
+    "area": "Clínica Médica",
+    "slug": "doenca-de-chagas",
+    "exists": false
+  },
+  {
+    "number": 235,
+    "title": "Hanseníase: diagnóstico, tratamento e prevenção de incapacidades",
+    "area": "Clínica Médica",
+    "slug": "hanseniase-diagnostico-tratamento-e-prevencao-de-incapacidades",
+    "exists": false
+  },
+  {
+    "number": 236,
+    "title": "Tumores renais e vesicais",
+    "area": "Cirurgia Geral",
+    "slug": "tumores-renais-e-vesicais",
+    "exists": false
+  },
+  {
+    "number": 237,
+    "title": "Síndrome compartimental e lesões musculotendíneas",
+    "area": "Cirurgia Geral",
+    "slug": "sindrome-compartimental-e-lesoes-musculotendineas",
+    "exists": false
+  },
+  {
+    "number": 238,
+    "title": "Trauma raquimedular e avaliação neurológica inicial",
+    "area": "Cirurgia Geral",
+    "slug": "trauma-raquimedular-e-avaliacao-neurologica-inicial",
+    "exists": false
+  },
+  {
+    "number": 239,
+    "title": "Catarata, glaucoma crônico e retinopatias",
+    "area": "Cirurgia Geral",
+    "slug": "catarata-glaucoma-cronico-e-retinopatias",
+    "exists": false
+  },
+  {
+    "number": 240,
+    "title": "Aneurisma da aorta e emergências vasculares",
+    "area": "Cirurgia Geral",
+    "slug": "aneurisma-da-aorta-e-emergencias-vasculares",
+    "exists": false
+  },
+  {
+    "number": 241,
+    "title": "Malformações congênitas e síndromes genéticas",
+    "area": "Pediatria",
+    "slug": "malformacoes-congenitas-e-sindromes-geneticas",
+    "exists": false
+  },
+  {
+    "number": 242,
+    "title": "Doença celíaca e síndromes de má absorção",
+    "area": "Pediatria",
+    "slug": "doenca-celiaca-e-sindromes-de-ma-absorcao",
+    "exists": false
+  },
+  {
+    "number": 243,
+    "title": "Oncologia pediátrica: leucemias, linfomas e tumores sólidos",
+    "area": "Pediatria",
+    "slug": "oncologia-pediatrica-leucemias-linfomas-e-tumores-solidos",
+    "exists": false
+  },
+  {
+    "number": 244,
+    "title": "Púrpuras, coagulopatias e hemoglobinopatias pediátricas",
+    "area": "Pediatria",
+    "slug": "purpuras-coagulopatias-e-hemoglobinopatias-pediatricas",
+    "exists": false
+  },
+  {
+    "number": 245,
+    "title": "Puberdade precoce e atrasada",
+    "area": "Pediatria",
+    "slug": "puberdade-precoce-e-atrasada",
+    "exists": false
+  },
+  {
+    "number": 246,
+    "title": "Afogamento e emergências ambientais na infância",
+    "area": "Pediatria",
+    "slug": "afogamento-e-emergencias-ambientais-na-infancia",
+    "exists": false
+  },
+  {
+    "number": 247,
+    "title": "Hiperêmese gravídica",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "hiperemese-gravidica",
+    "exists": false
+  },
+  {
+    "number": 248,
+    "title": "Colestase intra-hepática da gestação",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "colestase-intra-hepatica-da-gestacao",
+    "exists": false
+  },
+  {
+    "number": 249,
+    "title": "Violência sexual e direitos reprodutivos na assistência",
+    "area": "Ginecologia e Obstetrícia",
+    "slug": "violencia-sexual-e-direitos-reprodutivos-na-assistencia",
+    "exists": false
+  },
+  {
+    "number": 250,
+    "title": "Transtornos alimentares",
+    "area": "Saúde Mental",
+    "slug": "transtornos-alimentares",
+    "exists": false
+  },
+  {
+    "number": 251,
+    "title": "Transtornos de personalidade e autolesão",
+    "area": "Saúde Mental",
+    "slug": "transtornos-de-personalidade-e-autolesao",
+    "exists": false
+  },
+  {
+    "number": 252,
+    "title": "Saúde mental no ciclo gravídico-puerperal",
+    "area": "Saúde Mental",
+    "slug": "saude-mental-no-ciclo-gravidico-puerperal",
+    "exists": false
+  },
+  {
+    "number": 253,
+    "title": "Luto, crises e transtornos de adaptação",
+    "area": "Saúde Mental",
+    "slug": "luto-crises-e-transtornos-de-adaptacao",
+    "exists": false
+  },
+  {
+    "number": 254,
+    "title": "Saúde mental do adolescente: avaliação e manejo inicial",
+    "area": "Saúde Mental",
+    "slug": "saude-mental-do-adolescente-avaliacao-e-manejo-inicial",
+    "exists": false
+  },
+  {
+    "number": 255,
+    "title": "Longitudinalidade, coordenação do cuidado e matriciamento",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "longitudinalidade-coordenacao-do-cuidado-e-matriciamento",
+    "exists": false
+  },
+  {
+    "number": 256,
+    "title": "Reabilitação comunitária e cuidado de pessoas com deficiência",
+    "area": "Medicina de Família e Comunidade",
+    "slug": "reabilitacao-comunitaria-e-cuidado-de-pessoas-com-deficiencia",
+    "exists": false
+  },
+  {
+    "number": 257,
+    "title": "Planejamento, avaliação e gestão de serviços de saúde",
+    "area": "Saúde Coletiva",
+    "slug": "planejamento-avaliacao-e-gestao-de-servicos-de-saude",
+    "exists": false
+  },
+  {
+    "number": 258,
+    "title": "Avaliação de tecnologias em saúde e custo-efetividade",
+    "area": "Saúde Coletiva",
+    "slug": "avaliacao-de-tecnologias-em-saude-e-custo-efetividade",
+    "exists": false
+  },
+  {
+    "number": 259,
+    "title": "Sistemas de Informação em Saúde e qualidade dos dados",
+    "area": "Saúde Coletiva",
+    "slug": "sistemas-de-informacao-em-saude-e-qualidade-dos-dados",
+    "exists": false
+  },
+  {
+    "number": 260,
+    "title": "Biossegurança e prevenção de infecções relacionadas à assistência",
+    "area": "Saúde Coletiva",
+    "slug": "biosseguranca-e-prevencao-de-infeccoes-relacionadas-a-assistencia",
+    "exists": false
+  }
+]

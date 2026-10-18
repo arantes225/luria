@@ -1,0 +1,71 @@
+// scripts/bloco-07-builders/build-143-part4.mjs
+
+export const sec8 = {
+  id: "casos-clinicos-e-questoes-comentadas",
+  title: "8. Casos Clínicos Integradores e Banco de Questões Comentadas Padrão Residência Médica",
+  body_html: `
+<p>Nesta seção, consolidamos a tomada de decisão médica diante de cenários pediátricos de alta complexidade e questões autorais exaustivamente comentadas nos modelos de bancas de Residência Médica (Revalida INEP, USP, UNIFESP, ENARE, SURCE e PSU-MG).</p>
+
+<h3>Caso Clínico 1 — O Colapso Circulatório Pós-Alta na Maternidade</h3>
+<p><strong>Identificação:</strong> Recém-nascido a termo, masculino, peso de nascimento 3.250 g, parto vaginal sem intercorrências, Apgar 9/10, alta da maternidade com 40 horas de vida após teste do coraçãozinho registrado como "normal" pela equipe de enfermagem. Com 8 dias de vida, a mãe procura a emergência pediátrica referindo que o bebê "parou de mamar, ficou com as pernas arroxeadas, respiração muito acelerada e gemência contínua".</p>
+<p><strong>Exame Físico de Admissão:</strong> Neonato letárgico, pálido, com livedo reticular nos membros inferiores. Tempo de enchimento capilar de 5 segundos nas pernas e 2 segundos nas mãos. FR: 72 irpm, com tiragem subcostal importante. FC: 180 bpm. PA em membro superior direito: 92/58 mmHg; PA em membro inferior direito: inaudível / 42/26 mmHg por Doppler vascular. Pulsos radiais amplos e cheios; pulsos femorais, poplíteos e pediosos impalpáveis bilateralmente. Ausculta cardíaca: taquicardia em galope por B3, sopro sistólico ejetivo 2+/6+ audível na borda esternal esquerda e região interescapular dorsal. Fígado palpável a 4 cm do rebordo costal direito. Gasometria venosa: pH 7,12; pCO2 28 mmHg; HCO3 9 mEq/L; BE -18 mEq/L; Lactato arterial 8,4 mmol/L (acidose metabólica grave com hiperlactatemia).</p>
+
+<p><strong>Discussão Diagnóstica e Conduta Imediata:</strong></p>
+<p>O quadro clínico é o arquetípico colapso circulatório por <strong>Coarctação de Aorta Crítica Neonatal</strong>, que se manifestou clinicamente logo após o fechamento ductal anatômico por volta do 7º ao 8º dia de vida. Enquanto o canal arterial permaneceu aberto nos primeiros dias, o ventrículo direito mantinha a perfusão da metade inferior do corpo, permitindo que o bebê recebesse alta falsamente hígido. Com o fechamento do canal, instalou-se choque obstrutivo de pós-carga e hipoperfusão sistêmica grave.</p>
+<p><strong>Ação Salvadora Imediata:</strong></p>
+<ol>
+  <li><strong>Garantir Acesso Vascular e Iniciar Alprostadil (PGE1):</strong> Infusão imediata de Prostaglandina E1 na dose de 0,05 a 0,1 mcg/kg/min em bomba contínua. Não atrasar o início do Alprostadil para aguardar a chegada do ecocardiografista. O Alprostadil promoverá o relaxamento da musculatura ductal, reabrindo o canal arterial e restabelecendo o fluxo sanguíneo para a aorta descendente em 10 a 20 minutos, recuperando a perfusão renal e de membros inferiores.</li>
+  <li><strong>Vigilância Rigorosa das Vias Aéreas:</strong> Equipamento de intubação orotraqueal e ventilação mecânica pronto à beira do leito diante do risco elevado de apneia central induzida pela PGE1.</li>
+  <li><strong>Suporte Hemodinâmico e Metabólico:</strong> Correção cautelosa da volemia (alíquota de 10 mL/kg de SF 0,9%), inotrópico se persistir disfunção miocárdica (milrinona ou dobutamina) e agendamento da cirurgia de anastomose término-terminal estendida com cirurgia cardiovascular pediátrica.</li>
+</ol>
+
+<h3>Caso Clínico 2 — A Crise Hipóxica Durante a Consulta de Puericultura</h3>
+<p><strong>Identificação:</strong> Lactente de 4 meses de vida, com diagnóstico prévio de sopro cardíaco em investigação, é trazido ao ambulatório de pediatria. A mãe relata que a criança "fica roxinha quando chora muito forte". Ao ser despido na maca fria para pesagem, o lactente inicia choro vigoroso e inconsolável.</p>
+<p><strong>Evolução Aguda:</strong> Subitamente, os lábios, a língua e as pontas dos dedos tornam-se de coloração roxo-escura (cianose universal intensa). A criança desenvolve padrão respiratório taquipneico e hiperpneico profundo (FR &gt; 75 irpm), com olhos arregalados, hipotonia progressiva e letargia. O pediatra ausculta o precórdio: <em>o sopro sistólico rude que era audível minutos antes no foco pulmonar desapareceu completamente</em>.</p>
+
+<p><strong>Discussão e Conduta Sequencial na Emergência:</strong></p>
+<p>Trata-se de uma clássica <strong>Crise de Cianose / Crise Hipoxêmica da Tetralogia de Fallot</strong> deflagrada pelo estresse e choro do exame físico. O pico adrenérgico deflagrou espasmo agudo do infundíbulo muscular da via de saída do ventrículo direito associado a vasodilatação sistêmica, abolindo o fluxo pulmonar (o que causou o desaparecimento do sopro de estenose pulmonar) e desviando todo o débito venoso do VD para a aorta através da CIV.</p>
+<p><strong>Manejo Imediato em 5 Etapas:</strong></p>
+<ol>
+  <li><strong>Posição Genupeitoral:</strong> O pediatra deve fletir imediatamente as coxas da criança com firmeza contra o tórax (posição de cócoras passiva). Isso dobra a resistência vascular sistêmica, forçando o sangue a migrar para os pulmões.</li>
+  <li><strong>Acalmar a Criança e Administrar O2 a 100%:</strong> Colocar a criança no colo da mãe para reduzir a ansiedade e oferecer oxigênio úmido sob máscara facial de alto fluxo.</li>
+  <li><strong>Morfina:</strong> Administrar sulfato de morfina 0,1 a 0,2 mg/kg por via subcutânea ou intramuscular (ou EV se acesso venoso rápido disponível, sem perder tempo com punções traumáticas que ampliem o choro). A morfina deprime o centro respiratório, cessa a hiperpneia e corta o feedback simpático.</li>
+  <li><strong>Cristaloide EV:</strong> Expansão com SF 0,9% 10 a 20 mL/kg para aumentar o volume telediastólico de VD e distender o infundíbulo espasmado.</li>
+  <li><strong>Betabloqueador (Esmolol ou Propranolol):</strong> Se a crise persistir, administrar betabloqueador venoso para relaxar diretamente a musculatura infundibular hipertrófica. Encaminhar para programação cirúrgica corretiva definitiva da Tetralogia de Fallot com urgência.</li>
+</ol>
+
+<hr>
+
+<h3>Banco de Questões Comentadas Padrão Residência Médica</h3>
+
+<h4>Questão 1 (Revalida INEP / USP)</h4>
+<p>Recém-nascido a termo, sexo masculino, com 30 horas de vida, clinicamente assintomático, em aleitamento materno exclusivo no alojamento conjunto. A equipe de enfermagem realiza o teste de triagem neonatal por oximetria de pulso (Teste do Coraçãozinho), obtendo os seguintes valores: Saturação de O2 em membro superior direito = 96%; Saturação de O2 em membro inferior direito = 91%. Diante deste achado, assinale a conduta médica correta:</p>
+<p>A) Liberar o paciente para alta hospitalar com orientação de retorno em 7 dias, pois a saturação do membro superior encontra-se acima de 95%.<br>
+B) O teste é considerado duvidoso/alterado devido à diferença &gt;= 4% entre os membros; deve-se manter o recém-nascido em observação e repetir a oximetria em 1 hora.<br>
+C) O teste é imediatamente positivo; deve-se prescrever infusão de Prostaglandina E1 e encaminhar para a UTI neonatal.<br>
+D) O teste é falso-positivo decorrente de hipotermia periférica; deve-se apenas aquecer o neonato e liberar alta sem novo teste.<br>
+E) Solicitar radiografia de tórax e gasometria arterial e, se normais, descartar cardiopatia congênita.</p>
+<p><strong>Gabarito Oficial: Letra B.</strong><br>
+<strong>Comentário Detalhado:</strong> O protocolo oficial do Ministério da Saúde e da Sociedade Brasileira de Pediatria define que um Teste do Coraçãozinho é considerado DUVIDOSO / ALTERADO quando a saturação em qualquer membro estiver entre 90% e 94% OU quando houver uma diferença de saturação igual ou superior a 4% entre o membro superior direito e o membro inferior. No caso clínico, a saturação no MSD foi de 96%, porém no MID foi de 91% (diferença de 5 pontos percentuais, além do valor isolado de 91% no MI estar na faixa de 90-94%). A conduta mandatória é manter o neonato na maternidade, aguardar exatamente 1 hora e repetir o teste. Caso o reteste mantenha a alteração, o exame será consolidado como POSITIVO, exigindo a solicitação imediata de ecocardiograma transtorácico em até 24 horas antes de qualquer liberação de alta. A alternativa A é incorreta pois ignora a discrepância pré e pós-ductal. A alternativa C é incorreta porque a indicação direta de PGE1 e UTI sem reteste aplica-se apenas quando a saturação for inferior a 90% logo na primeira medição ou quando houver clínica manifesta. Alternativas D e E desrespeitam o protocolo oficial de segurança.</p>
+
+<h4>Questão 2 (ENARE / Residência Médica)</h4>
+<p>Lactente de 3 anos de idade é submetido à consulta pediátrica de rotina para ingresso em creche. A mãe não refere queixas, cansaço ou episódios de cianose. Ao exame físico: desenvolvimento pôndero-estatural no percentil 50. Ritmo cardíaco regular em dois tempos, com desdobramento amplo e fixo da segunda bulha cardíaca no foco pulmonar e sopro sistólico ejetivo 2+/6+ no segundo espaço intercostal esquerdo. O restante do exame físico é normal. O eletrocardiograma demonstra desvio do eixo elétrico para a direita e padrão rSR' nas derivações V1 e V2 (bloqueio incompleto de ramo direito). O diagnóstico provável e a causa do sopro sistólico são, respectivamente:</p>
+<p>A) Comunicação Interventricular perimembranosa; turbilhonamento através do septo interventricular.<br>
+B) Comunicação Interatrial tipo ostium secundum; estenose pulmonar relativa por hiperfluxo através da valva pulmonar anatomicamente normal.<br>
+C) Tetralogia de Fallot acianótica; turbilhonamento através da estenose infundibular subpulmonar.<br>
+D) Estenose Pulmonar Valvar congênita; fusão anatômica fibrótica das cúspides da valva pulmonar.<br>
+E) Persistência do Canal Arterial; fluxo contínuo sistodiastólico entre a aorta e o tronco pulmonar.</p>
+<p><strong>Gabarito Oficial: Letra B.</strong><br>
+<strong>Comentário Detalhado:</strong> O quadro semiológico descrito é o estigma clássico patognomônico da <strong>Comunicação Interatrial (CIA) tipo ostium secundum</strong>: criança assintomática, com desdobramento amplo e FIXO da segunda bulha (o intervalo entre A2 e P2 não varia com os ciclos de inspiração e expiração respiratórios) associado a padrão eletrocardiográfico de sobrecarga de ventrículo direito com BIRD (rSR' em V1-V2). Conceito de altíssima cobrança em provas: <em>o orifício da CIA não gera sopro audível</em>, pois o gradiente pressórico entre os átrios é virtualmente insignificante (2 a 4 mmHg). O sopro sistólico ejetivo suave no foco pulmonar decorre exclusivamente da <strong>estenose pulmonar relativa funcional</strong> provocada pelo esvaziamento de uma sobrecarga volumétrica maciça de ventrículo direito através de uma valva pulmonar de anel e cúspides normais. A alternativa A está errada porque a CIV cursa com sopro holossistólico rude em borda esternal esquerda média/baixa. A alternativa C está errada porque o Fallot cursa com cianose e P2 hipofonética/única. A alternativa D está errada pois a estenose valvar pulmonar pura gera desdobramento amplo porém variável com a respiração, clique ejetivo inspiratório e não costuma ser assintomática com B2 fixa. A alternativa E descreve sopro contínuo sistodiastólico em maquinaria, ausente no caso.</p>
+
+<h4>Questão 3 (SURCE / UNIFESP)</h4>
+<p>Recém-nascido com 12 horas de vida apresenta cianose central generalizada intensa ("azul arroxeado") que não sofreu qualquer incremento após a administração de oxigênio a 100% sob campânula durante 10 minutos (PaO2 pós-oxigênio = 38 mmHg). Ao exame físico, o bebê encontra-se taquipneico (FR 68 irpm), afebril, com boa perfusão periférica e pulsos periféricos amplos e simétricos em todas as extremidades. O precórdio é calmo, com ausência de sopros cardíacos audíveis e segunda bulha única e hiperfonética. A radiografia de tórax revela silhueta cardíaca com aspecto ovóide de "ovo deitado sobre uma corda" (mediastino superior estreito) e trama vascular pulmonar acentuada (hiperfluxo). Considerando a principal hipótese diagnóstica, assinale a conduta farmacológica prioritária e a cirurgia curativa de escolha:</p>
+<p>A) Indometacina intravenosa para fechamento de canal; Cirurgia de Blalock-Taussig modificado.<br>
+B) Furosemida e Captopril; Fechamento cirúrgico de CIV com retalho de pericárdio bovino.<br>
+C) Infusão contínua de Prostaglandina E1 (Alprostadil); Cirurgia de Troca Arterial de Jatene.<br>
+D) Óxido nítrico inalatório e surfactante exógeno; Correção univentricular pelo princípio de Fontan.<br>
+E) Propranolol intravenoso para alívio de espasmo infundibular; Operação de Rastelli.</p>
+<p><strong>Gabarito Oficial: Letra C.</strong><br>
+<strong>Comentário Detalhado:</strong> O paciente apresenta o protótipo da <strong>Transposição das Grandes Artérias (TGA) simples com septo íntegro</strong>: recém-nascido no primeiro dia de vida com cianose central gravíssima e refratária ao teste da hiperóxia (confirmando shunt intracardíaco anatômico obrigatório), precórdio sem sopros audíveis e radiografia de tórax clássica com formato de coração em ovo deitado e mediastino estreito com pletora pulmonar. Trata-se de uma cardiopatia com circulação em paralelo dependente de canal e de comunicações interatriais para a mistura gasosa. A conduta medicamentosa prioritária para salvar a vida do neonato é a infusão imediata de <strong>Prostaglandina E1 (Alprostadil)</strong>, mantendo o canal arterial pérvio até que o ecocardiograma confirme a anatomia e permita avaliar a necessidade de atriosseptostomia por balão de Rashkind. O tratamento cirúrgico definitivo padrão-ouro é a <strong>Operação de Troca Arterial Anatômica de Jatene</strong> (transecção e transposição dos grandes vasos com reimplante das artérias coronárias), que deve ser realizada idealmente nas primeiras 2 a 3 semanas de vida antes que o ventrículo esquerdo descondicione e atrofie. A alternativa A está errada porque fechar o canal com indometacina seria letal. A alternativa B é conduta de insuficiência cardíaca congestiva isolada. A alternativa D aborda hipertensão pulmonar persistente neonatal primária. A alternativa E refere-se ao manejo de crise de Fallot.</p>
+`
+};

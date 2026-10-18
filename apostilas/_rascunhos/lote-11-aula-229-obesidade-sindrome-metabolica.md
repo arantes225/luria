@@ -1,0 +1,561 @@
+# LURIA — Apostila 229: Obesidade e síndrome metabólica no adulto
+**Lote 11 · Clínica Médica · CM-12 · Manuscrito expandido v0.2, 15/10/2026 · NÃO PUBLICAR**
+
+> **EDITORIAL:** manuscrito expandido; mais de 80.000 caracteres brutos não equivalem automaticamente a 60.000 caracteres DIDÁTICOS ÚTEIS. Este material **não está certificado** como completo pelo Prompt Magno, não consta do catálogo e ainda necessita auditoria médica/editorial/visual. Não adicionar imagens inéditas sem licença confirmada e aprovação no Admin.
+
+## Etapa zero comparativa e escopo
+Foram **abertos e lidos** em 15/10/2026, no Google Drive conectado, os materiais `08 - OBESIDADE CONCEITOS GERAIS + TTO NAO FARMACOLOGICO.pdf` e `02 - OBESIDADE - PROCEDIMENTOS CIRURGICOS.pdf`. A procedência institucional Estrategia MED **não foi confirmada**. Ambos apresentam marcas explícitas de circulação e restrição de venda de terceiros. Seu uso é **benchmark de temas**, sem transferência de texto, tabelas, imagens ou identidade visual para a LURIA. Referências privadas e identificadores não são publicados no GitHub.
+
+O primeiro abrange fisiopatologia resumida, IMC, cintura, bioimpedância, dieta e atividade física, mas contém afirmações mecanísticas muito simplificadas — por exemplo, atribuição quase exclusiva da via orexígena à grelina — que **não serão adotadas**. O segundo descreve técnicas cirúrgicas e indicações antigas; necessita confronto com a **Resolução CFM nº 2.429/2025**, inclusive novos critérios brasileiros para IMC 30–34,9 com comorbidades específicas. Como referência visual da LURIA, foi inspecionada a página `apostilas/cancer-de-mama/index.html`, mantendo capítulos, tabelas e casos em estilo próprio.
+
+Fontes clínicas de atualização: ABESO, **Diretriz Brasileira de Tratamento Farmacológico da Obesidade 2026**; ABESO, Posicionamento sobre Tratamento Nutricional 2025; OMS, **guideline GLP-1 para obesidade em adultos, dezembro de 2025**; CFM **Resolução 2.429/2025**. Medicamentos, doses, contraindicações, limites de prescrição e acesso no Brasil devem ser conferidos individualmente antes de publicação.
+
+## Objetivos
+Ao final, o aluno deve relacionar obesidade a doença crônica multissistêmica e não a falha moral; diagnosticar e estratificar com IMC **e** adiposidade/complicações; reconhecer síndrome metabólica, doença aterosclerótica, MASLD, AOS e transtornos alimentares; construir plano nutricional e comportamental não estigmatizante; conhecer seleção de farmacoterapia e elegibilidade cirúrgica brasileira; prevenir perda muscular, deficiência nutricional e recidiva; orientar seguimento de longo prazo.
+
+## 1. Obesidade como doença crônica, heterogênea e recidivante
+A obesidade é acúmulo excessivo ou disfuncional de tecido adiposo que ameaça saúde e pode comprometer órgãos e funcionamento. Seu estabelecimento envolve ambiente alimentar, sono, genética, comportamento, medicamentos, condições clínicas e circuitos neuroendócrinos de fome/saciedade. Reduzir o problema a "ingerir mais do que gasta" é energeticamente correto como balanço, mas **insuficiente para entender por que o organismo tende a defender o peso** após perda ponderal. Modificações de gasto energético, fome e sinais periféricos podem favorecer recidiva, razão pela qual tratamento precisa de continuidade.
+
+A heterogeneidade importa: dois indivíduos com IMC igual podem diferir em massa muscular, gordura visceral, distribuição ectópica de gordura, risco vascular, apneia, disfunção hepática e limitação funcional. **IMC é útil para triagem populacional, não medida direta de gordura corporal**. A avaliação clínica deve acrescentar circunferência de cintura, composição corporal quando indicada e, sobretudo, complicações.
+
+### 1.1 Classificação por IMC em adultos
+| IMC (kg/m²) | Categoria tradicional |
+|---|---|
+| <18,5 | Baixo peso |
+| 18,5–24,9 | Faixa habitual de referência |
+| 25–29,9 | Sobrepeso |
+| 30–34,9 | Obesidade grau I |
+| 35–39,9 | Obesidade grau II |
+| ≥40 | Obesidade grau III |
+
+Os pontos de corte servem como orientação inicial e precisam ser contextualizados em idosos, atletas, populações de ancestralidades diversas e pacientes com grande alteração de composição corporal. Valores maiores de adiposidade central e presença de doença associada podem justificar investigação/abordagem mais intensa em IMC inferior a 30. A medição da cintura deve ser padronizada (local anatômico, fita, posição e expiração tranquila), pois números obtidos por técnicas diferentes não são comparáveis longitudinalmente.
+
+### 1.2 Adiposidade visceral, ectópica e risco
+Gordura visceral e depósitos ectópicos em fígado, músculo e tecidos cardíacos podem associar-se a resistência à insulina, inflamação de baixo grau, dislipidemia aterogênica e disfunção endotelial. Tecido adiposo é órgão endócrino e imunometabólico, não somente armazenamento energético. A avaliação de risco deve incluir tabagismo, história familiar, pressão arterial, lipídios, diabetes, função renal, dano hepático e condições musculoesqueléticas. Não assumir que IMC isolado traduz gravidade.
+
+## 2. Fisiologia da regulação do apetite e do peso
+
+### 2.1 Hipotálamo e vias orexígenas/anorexígenas
+O núcleo arqueado hipotalâmico integra neurônios **NPY/AgRP**, associados ao aumento de ingestão, e **POMC/CART**, que tendem a reduzir fome por vias melanocortínicas. Leptina, insulina, grelina, GLP-1, PYY e múltiplos sinais intestinais e centrais participam em graus e momentos diferentes. A frase "somente grelina estimula a fome" é falsa: há múltiplos mecanismos orexígenos, circuitos hedônicos e efeitos de sono, estresse e ambiente.
+
+**Grelina** aumenta tipicamente em contextos pré-prandiais e favorece fome; **leptina** reflete estoques energéticos e sinaliza saciedade a longo prazo, mas frequentemente há resistência funcional em obesidade; **GLP-1** modula saciedade, retardo de esvaziamento gástrico e secreção insulinotrópica glicose-dependente; **GIP** integra controle incretínico e metabolismo adiposo. As vias interagem e não são uma chave única que possa ser "desligada" de forma definitiva.
+
+### 2.2 Por que a perda ponderal tende a estabilizar?
+Após emagrecimento, mudanças hormonais, adaptação de consumo energético, redução de gasto em atividades e maior resposta a pistas alimentares podem dificultar continuidade. O platô não prova que o paciente esteja "mentindo". É ocasião para rever adesão real e obstáculos, sono, medicações que promovem ganho de peso, massa magra, intensidade de intervenção, efeitos adversos e objetivos. Tratar obesidade como doença recidivante justifica acompanhamento longitudinal, não ciclos de culpa e dietas extremas.
+
+### 2.3 Genética não é determinismo simples
+A maioria dos casos comuns resulta de suscetibilidade poligênica em interação com ambiente. Obesidade de início muito precoce, hiperfagia intensa e alterações do desenvolvimento podem indicar síndromes monogênicas raras e demandar avaliação especializada. Em adultos, investigação endócrina universal indiscriminada (cortisol, IGF-1, hormônios sexuais) não é apropriada sem sinais clínicos sugerindo etiologia secundária.
+
+## 3. História, diagnóstico e caracterização do risco
+
+Perguntar: início e trajetória do peso; episódios de ganho acelerado; tentativas prévias e resposta; tratamento de diabetes e transtornos de humor; turnos e sono; ambiente alimentar e insegurança alimentar; atividade habitual; capacidade física e dor; medicações como glicocorticoides, antipsicóticos e certos hipoglicemiantes; consumo de álcool; tabagismo; comportamento alimentar e episódios de perda de controle; expectativas e prioridades.
+
+Exame: peso, estatura, IMC, cintura, pressão arterial com manguito adequado, pulso, sinais de apneia, distribuição adiposa, acantose nigricans, edema, dor articular, força/funcionalidade quando pertinente. Não pressupor que peso elevado exclui desnutrição, fragilidade ou sarcopenia.
+
+Avaliações conforme perfil: glicemia/HbA1c, lipídios, função hepática, função renal, risco cardiovascular, história de AOS, sinais de MASLD/MASH, exames para causas secundárias selecionadas. TSH é razoável em cenários clínicos sugestivos, mas hipotireoidismo não explica automaticamente obesidade grave. Avaliar risco de lesão de órgão, não apenas somar laboratórios.
+
+
+### 3.1 A consulta centrada no risco: o que investigar antes de escolher tratamento
+A primeira entrevista deve separar **causa do ganho de peso**, **repercussão clínica da adiposidade**, **consequências psicossociais**, **experiências prévias de tratamento** e **objetivos do paciente**. Perguntas abertas ajudam a reconhecer insegurança alimentar, horários de trabalho, uso de corticoides e psicotrópicos, falta de sono, compulsão alimentar e limitações físicas. A participação do paciente na decisão é indispensável, inclusive quando prefere inicialmente trabalhar apenas sintomas e comorbidades, sem estabelecer um peso-alvo específico.
+
+Uma história cronológica é superior ao simples registro do peso atual: obesidade desde a infância pode apontar para predisposição genética e ambiente familiar, enquanto **ganho importante e rápido** em adulto obriga a examinar edema, uso de medicamentos, gestação quando pertinente, alteração de atividade, apneia e causas endócrinas selecionadas. Hipotireoidismo costuma associar-se a ganho ponderal modesto, não justifica presumir que todo excesso de adiposidade decorra dele. Síndrome de Cushing deve ser considerada quando houver sinais discriminativos, como fraqueza muscular proximal, estrias largas violáceas, equimoses fáceis e osteoporose desproporcional; o rastreamento indiscriminado em todo paciente com obesidade aumenta falsos positivos.
+
+História farmacológica inclui dose e duração de glicocorticoides, antipsicóticos, alguns estabilizadores do humor, antidepressivos, anticonvulsivantes e insulinoterapia. O objetivo não é suspender tratamento psiquiátrico ou metabólico essencial, mas **identificar alternativas com menor repercussão ponderal** e analisar efeitos relativos com os especialistas. Também é necessário perguntar sobre produtos sem prescrição, hormônios, suplementos, injetáveis de procedência duvidosa, medicamentos comprados pela internet e possíveis intervenções anteriores.
+
+Avaliar transtornos alimentares sem pressupor que sejam consequência inevitável da obesidade: episódios de ingestão com perda de controle, sofrimento subjetivo, compulsões, métodos purgativos e restrições muito intensas mudam a estratégia nutricional e a segurança de medicamentos. A condição merece tratamento específico. Medidas apenas coercitivas de pesagem ou metas rígidas podem agravar sofrimento. O peso deve ser aferido com consentimento, privacidade e equipamento adequado.
+
+### 3.2 Exame físico além do IMC
+Medir estatura com estadiômetro, peso em balança com capacidade compatível, circunferência de cintura por ponto anatômico padronizado, pressão arterial com manguito adequado e frequência cardíaca. A **relação cintura/altura** é um indicador adicional da adiposidade central; sua interpretação exige considerar idade e população. Na pessoa idosa, IMC e perda de peso podem esconder sarcopenia; avaliar força de preensão, velocidade de marcha, levantar da cadeira e ingestão proteica quando indicado.
+
+Examinar sinais de **resistência à insulina** (acantose nigricans), hipercortisolismo quando sugerido pela história, obesidade com hipoventilação, edema, alterações dermatológicas, insuficiência venosa, osteoartrose, hérnias e estigmas de cirrose. Circunferência cervical aumentada, ronco e sonolência diurna motivam avaliação de AOS, mas o diagnóstico exige método adequado quando indicado. Antes de programar atividade física, verificar doença cardiovascular descompensada, limitações ortopédicas e risco de quedas.
+
+### 3.3 Exames iniciais: seleção com propósito
+Em contexto ambulatorial, glicemia/HbA1c, perfil lipídico, função renal, avaliação hepática, pressão arterial e avaliação de fatores cardiovasculares costumam ser relevantes, modulados por idade, condições prévias, sintomas e acesso. Exames para TSH, investigação de hipercortisolismo, prolactina, andrógenos ou hipogonadismo devem responder a **hipóteses clínicas específicas**; não produzir painel hormonal universal para todos. Transaminases isoladas não afastam fibrose de doença hepática metabólica; avaliação de risco de fibrose pode requerer cálculo não invasivo e encaminhamento.
+
+**Alerta de prova:** pedir insulina basal para calcular resistência insulínica não é exigência para diagnosticar síndrome metabólica na prática. HOMA-IR tem uso epidemiológico e situações de pesquisa, mas não deve substituir glicemia, HbA1c e avaliação clínica. Da mesma forma, uma bioimpedância com boa aparência gráfica não substitui identificação de pré-diabetes, AOS e doença renal.
+
+### 3.4 Diagnóstico diferencial de aparente ganho de peso
+| Situação | Pista diferencial | Avaliação direcionada |
+|---|---|---|
+| Excesso de tecido adiposo persistente | Ganho gradual e cintura aumentada | História, antropometria seriada, comorbidades |
+| Retenção hidrossalina | Ganho rápido, edema, dispneia ou ascite | Exame cardiopulmonar, renal/hepático e investigação conforme gravidade |
+| Gestação | Amenorreia e contexto reprodutivo | História, teste apropriado se pertinente, cuidado pré-natal |
+| Hipotireoidismo | Bradicardia, intolerância ao frio, pele seca, constipação, cansaço | TSH e T4 livre conforme contexto |
+| Hipercortisolismo | Estrias largas violáceas, fraqueza proximal, equimoses, fraturas desproporcionais | Rastreamento endócrino apenas se suspeita apropriada |
+| Ganho associado a medicamentos | Relação temporal com introdução/aumento de dose | Reconciliação terapêutica e alternativas seguras |
+| Alteração de composição corporal | IMC elevado por maior massa magra, edema ou atipia | Exame funcional e composição corporal quando agrega |
+
+### 3.5 Meta terapêutica deve ser clínica, não exclusivamente estética
+Pacientes com o mesmo IMC podem ter prioridades diferentes. Em um indivíduo com DM2 descompensado, reduzir HbA1c e simplificar tratamento pode ser mais relevante que alcançar um número na balança. Em outro com artrose do joelho, a meta pode ser caminhar sem dor. Em outro com AOS grave, melhorar sintomas, pressão arterial e tratamento ventilatório tem prioridade. **A magnitude da perda de peso não é um desfecho substituto perfeito** de risco cardiovascular, qualidade de vida ou necessidade de tratamento de complicações.
+
+Documentar objetivos em dimensões separadas: peso/cintura, pressão arterial, glicemia, lipídios, qualidade de sono, atividades diárias, dor, força, episódios de compulsão, função hepática e bem-estar psicológico. É possível haver melhora cardiometabólica antes de grandes mudanças ponderais; também é possível haver perda de peso acompanhada de desnutrição proteica, o que não representa sucesso clínico.
+
+### 3.6 Critérios de investigação e encaminhamento
+Encaminhar ou discutir com endocrinologia/nutrologia quando: suspeita de obesidade monogênica ou sindrômica de início muito precoce; doença endócrina complexa; múltiplas comorbidades refratárias; hipoventilação; dificuldade terapêutica por interação medicamentosa; gestação planejada com necessidade de ajuste de farmacoterapia; risco nutricional importante. A equipe nutricional e psicológica é útil não como requisito punitivo, mas como suporte técnico e emocional.
+
+O acesso a farmacoterapia e cirurgia depende de avaliação individual, regulação, disponibilidade e capacidade de seguimento. Uma recomendação de diretriz **não cria automaticamente cobertura pelo SUS ou pelo plano**. O material deve manter essa distinção explícita ao descrever as opções.
+
+
+## 4. Síndrome metabólica e fisiopatologia integrada
+Síndrome metabólica reúne fatores inter-relacionados, incluindo adiposidade central, pressão arterial elevada, triglicerídeos elevados, HDL baixo e alterações glicêmicas; os limiares e requisitos específicos variam conforme critério adotado (NCEP ATP III, IDF, harmonização) e população. O diagnóstico não é condição indispensável para tratar cada fator isolado. Diferenciar **conceito de risco** de **diagnóstico de diabetes**: uma glicemia de jejum alterada dentro dos critérios da síndrome não basta, sozinha, para DM2.
+
+### 4.1 A via fisiopatológica
+Expansão/disfunção adipocitária, aumento de ácidos graxos circulantes, alterações de adipocinas e inflamação metabólica favorecem resistência à insulina em fígado/músculo. O pâncreas compensa inicialmente com hiperinsulinemia; com declínio relativo de capacidade secretória pode surgir hiperglicemia. No fígado, a produção de VLDL contribui para hipertrigliceridemia e padrão aterogênico. Pressão elevada envolve múltiplos caminhos, incluindo ativação simpática, retenção de sódio e alterações vasculares; não atribuir tudo a um único hormônio.
+
+### 4.2 Comorbidades prioritárias
+- **DM2 e pré-diabetes:** risco aumenta com adiposidade central; o tratamento do peso pode melhorar controle metabólico, sem dispensar avaliação de complicações e diretrizes próprias.
+- **Dislipidemia e doença cardiovascular aterosclerótica:** o tratamento do colesterol e da pressão depende do risco global, não da presença ou ausência de etiqueta "síndrome metabólica".
+- **MASLD/MASH:** excesso de gordura hepática relacionada à disfunção metabólica pode evoluir para inflamação, fibrose e cirrose; aminotransferases normais não excluem fibrose relevante.
+- **Apneia obstrutiva do sono (AOS):** ronco alto, pausas respiratórias, sonolência e hipertensão resistente merecem investigação conforme contexto.
+- **Osteoartrose, refluxo, doença venosa, limitação funcional:** justificam metas que valorizem redução de dor e melhora de mobilidade, não só balança.
+- **Aspectos reprodutivos e psicossociais:** distúrbios ovulatórios, infertilidade, depressão, ansiedade e estigma podem interagir de forma bidirecional; aconselhamento deve respeitar autonomia, escolhas contraceptivas e gravidez.
+
+
+### 4.3 Critérios harmonizados de síndrome metabólica: tabela integral e interpretação
+A definição harmonizada proposta por instituições internacionais considera a presença de **três ou mais entre cinco componentes**, sem obrigatoriedade de obesidade central. É uma **classificação de agregação de risco**, não doença única com etiologia exclusiva. Quando for cobrada uma definição histórica que exija cintura aumentada, a questão provavelmente utiliza o critério da **IDF**, e deve mencionar isso. O aluno precisa identificar **qual critério a banca está usando** antes de aplicar números.
+
+| Componente | Limite frequente na definição harmonizada | Observação prática |
+|---|---|---|
+| Triglicerídeos | **≥150 mg/dL**, ou tratamento farmacológico específico para alteração | Colher/interpretar conforme estado de jejum e cenário laboratorial; hipertrigliceridemia muito alta exige manejo próprio por risco pancreático |
+| HDL-colesterol | **<40 mg/dL para homens** ou **<50 mg/dL para mulheres**, ou tratamento farmacológico relacionado | Baixo HDL é marcador de risco; não prescrever fármaco apenas para “subir o HDL” sem indicação clínica baseada em desfechos |
+| Pressão arterial | **Sistólica ≥130 mmHg ou diastólica ≥85 mmHg**, ou tratamento anti-hipertensivo em pessoa com hipertensão | Limite do componente da síndrome não equivale automaticamente ao critério vigente de diagnóstico de hipertensão em cada diretriz |
+| Glicemia de jejum | **≥100 mg/dL**, ou tratamento de hiperglicemia | A presença desse componente não estabelece diagnóstico de DM2; confirmar diabetes com critérios próprios |
+| Cintura abdominal | **Ponto de corte adaptado à população/ancestralidade** | Não inventar um único limite brasileiro universal: diferentes consensos e populações usam números distintos |
+
+**Exemplo resolvido:** mulher com cintura elevada segundo critério adotado, TG 180 mg/dL, HDL 46 mg/dL, PA 124/80 mmHg e glicemia 94 mg/dL possui **três componentes** (cintura, TG e HDL) e atende à definição harmonizada. Se o enunciado não informa o critério/corte da cintura e o valor estiver em zona ambígua, explicitar a limitação em vez de afirmar diagnóstico sem contexto.
+
+**Outro exemplo:** homem com cintura dentro do corte de sua população, TG 180, HDL 36, PA 134/84 e glicemia 96 possui três componentes (TG, HDL e PA), logo pode preencher critério harmonizado **sem obesidade central**. Na definição clássica IDF, que exige cintura aumentada, não preencheria. O valor pedagógico está em saber *por que as respostas divergem* entre critérios.
+
+A síndrome metabólica **não substitui** cálculo de risco cardiovascular e nem elimina necessidade de tratar dislipidemia, hipertensão e DM pelos respectivos consensos. Em pacientes com doença aterosclerótica estabelecida, a prevenção secundária é prioritária independentemente de contagem de componentes.
+
+### 4.4 O elo entre adiposidade, resistência à insulina e doença vascular
+O tecido adiposo visceral hipertrofiado libera ácidos graxos, citocinas e adipocinas em padrões alterados. A **resistência à insulina hepática** favorece produção inadequadamente aumentada de glicose e de lipoproteínas ricas em triglicerídeos, enquanto em músculo há menor captação de glicose. Não é correto afirmar que uma molécula explica sozinha o processo; genética, tipo de tecido, inflamação e contexto alimentar modulam resposta.
+
+A hiperinsulinemia compensatória pode coexistir por anos com glicemia de jejum normal. Em algumas pessoas a capacidade de secreção pancreática torna-se insuficiente para compensar resistência periférica, surgindo pré-diabetes ou diabetes tipo 2. Paralelamente, padrões de lipoproteínas aterogênicas, hipertensão, disfunção endotelial e inflamação metabólica aumentam a probabilidade de eventos cardiovasculares. Daí o erro de tratar “a obesidade” sem examinar pressão arterial e lipídios.
+
+O acúmulo de triglicerídeos hepáticos pode ocorrer antes de elevação persistente de transaminases. A **MASLD** (doença hepática esteatótica associada à disfunção metabólica) requer critérios clínicos/etiológicos atuais: não chamar qualquer esteatose ao ultrassom de doença metabólica sem examinar consumo de álcool, causas virais e outros fatores relevantes. Quando houver suspeita de fibrose, avaliar escores não invasivos adequados ao contexto, incluindo FIB-4 em grupos apropriados, com interpretação por idade e encaminhamento conforme risco.
+
+### 4.5 Hipoventilação da obesidade e apneia obstrutiva do sono
+A **AOS** provoca episódios recorrentes de colapso de via aérea superior durante sono; ronco habitual, pausas observadas, sono fragmentado, fadiga e hipertensão resistente são pistas. Porém ronco não confirma AOS, assim como ausência de sonolência típica não a exclui. Questionários como STOP-Bang ajudam na triagem de risco, mas não substituem método diagnóstico apropriado.
+
+A **síndrome da hipoventilação da obesidade** combina obesidade com hipercapnia diurna (PaCO₂ ≥45 mmHg, à luz do contexto) na ausência de outra explicação principal para hipoventilação. É fundamental distingui-la da AOS isolada, pois hipoventilação pode exigir avaliação gasométrica, suporte ventilatório e cuidados específicos. Bicarbonato sérico elevado pode ser pista em contextos selecionados, não prova diagnóstico. Dispneia, edema, policitemia e sinais de hipertensão pulmonar precisam de avaliação cardiopulmonar.
+
+**Conduta prática:** suspeita de AOS grave ou hipoventilação modifica planejamento anestésico, farmacológico, cirurgia e risco de sedativos/opioides. A perda ponderal é tratamento relevante, mas **não substitui automaticamente CPAP, BiPAP ou outra terapia ventilatória** quando indicada. Acompanhamento do sono deve considerar sintomas e exames, não somente peso.
+
+### 4.6 Pré-diabetes, diabetes e remissão: três ideias diferentes
+**Pré-diabetes** representa alterações glicêmicas abaixo do limiar de diabetes, associadas a maior risco metabólico; intervenções são dirigidas a reduzir risco, não a garantir que a doença jamais ocorrerá. **Controle do diabetes** com HbA1c adequada pode decorrer de farmacoterapia eficaz e não significa remissão. **Remissão de DM2**, quando considerada, exige critérios padronizados de glicemia abaixo do limiar diagnóstico por período definido **sem medicação hipoglicemiante**; verificar o consenso aplicável e condições que prejudiquem interpretação da HbA1c.
+
+Após cirurgia metabólica, não suspender abruptamente todos os fármacos de DM; ajustar insulina, secretagogos e outras terapias de acordo com ingestão, glicemia, função renal e risco de hipoglicemia. Pessoas em tratamento incretínico ou após operação podem apresentar grande redução de necessidade farmacológica; o seguimento evita tanto hipoglicemia quanto recaída hiperglicêmica.
+
+### 4.7 Obesidade e saúde reprodutiva
+A adiposidade pode modificar ovulação, fertilidade, risco gestacional e perfil de fármacos, mas não elimina necessidade de investigação de infertilidade por casal. Antes de farmacoterapia, conversar sobre **intenção de gestação e contracepção**. A terapia antiobesidade não deve ser utilizada para emagrecimento durante gravidez, e determinados medicamentos exigem suspensão antecipada conforme bula. A perda de peso pode modificar fertilidade e planejamento reprodutivo; ao prescrever tirzepatida, avaliar possível impacto do atraso do esvaziamento gástrico na eficácia de contraceptivos orais e seguir orientação específica de produto.
+
+Na pós-menopausa, redistribuição central de gordura e perda muscular podem aumentar risco mesmo com peso relativamente estável. Em mulheres com SOP, tratar peso é uma das estratégias que podem melhorar parâmetros metabólicos/ovulatórios, mas não equivale a curar síndrome ou substituir planejamento reprodutivo.
+
+### 4.8 Quando a síndrome metabólica não deve monopolizar o diagnóstico
+Em paciente com febre, emagrecimento involuntário, dor progressiva, anemia, hepatomegalia focal, hipertensão de instalação abrupta ou insuficiência cardíaca nova, os sinais de alerta **não podem ser tratados apenas como “complicações da obesidade”**. Investigar condições independentes conforme sintomas. A síndrome metabólica é frequentemente presente na população; coexistência não estabelece causalidade de cada achado.
+
+### 4.9 Quadro de decisão por comorbidade
+| Comorbidade | O que documentar antes do tratamento | O que acompanhar |
+|---|---|---|
+| DM2 | HbA1c, medicamentos que causam hipoglicemia, função renal, complicações | Controle glicêmico, hipoglicemia, necessidade de reajuste terapêutico |
+| Doença cardiovascular | Eventos prévios, pressão, lipídios, função e capacidade física | Sintomas e eventos, adesão, metas cardiometabólicas |
+| AOS | Sintomas, teste diagnóstico quando indicado, CPAP e adesão | Sonolência, qualidade de sono, pressão, necessidade de reavaliação |
+| MASLD/MASH | Outras causas hepáticas, risco de fibrose, presença de cirrose | Enzimas, risco de fibrose/complicações e decisão de encaminhar |
+| DRC | TFG, albuminúria, desidratação, uso de diuréticos | Função renal e eletrólitos quando indicados, tolerabilidade |
+| Osteoartrose | Dor, mobilidade, uso de analgésicos e capacidade de exercício | Função e qualidade de vida, não somente peso |
+| Compulsão alimentar/depressão | Frequência de episódios, segurança psíquica, medicamentos e suporte | Sintomas, adesão, qualidade de vida e eventos adversos |
+
+
+## 5. Manejo clínico não farmacológico
+
+### 5.1 Abordagem nutricional praticável
+Não existe proporção universal de macronutrientes capaz de garantir sucesso em todas as pessoas. Construir padrão alimentar nutritivo, financeiramente possível, culturalmente adequado e com déficit energético sustentável quando desejado. Priorizar alimentos in natura/minimamente processados, legumes, hortaliças, frutas, proteínas suficientes, fibras, bebidas sem excesso de açúcares e redução de ultraprocessados quando possível. Estratégia deve considerar condições médicas (DRC, diabetes com medicações hipoglicemiantes, alergias, doenças gastrointestinais) e histórico de transtorno alimentar.
+
+**Não prescrever dieta rigidamente hipocalórica sem avaliar contexto.** Restrições severas podem aumentar fome, perda de massa magra e comportamentos compensatórios. Perdas de peso iniciais variam por composição hídrica e ingestão, tornando taxas fixas "0,5–1 kg por semana" uma referência e não um alvo de obrigação.
+
+### 5.2 Exercício, sedentarismo e preservação muscular
+Combinar exercício aeróbico progressivo e resistido adaptado à capacidade e contraindicações; reduzir períodos prolongados sentado; trabalhar sono e recuperação. O treino resistido ajuda preservar ou aumentar força e massa muscular durante redução de peso. Em idosos, o objetivo pode ser função, prevenção de quedas e capacidade de permanecer independente, com eventual perda de peso mais cautelosa. Ajustar se houver doença cardiovascular não estabilizada, limitações osteoarticulares ou outra contraindicação específica.
+
+### 5.3 Intervenção comportamental sem moralização
+Automonitoramento pode incluir peso em frequência negociada, registro alimentar sem compulsão, planejamento de refeições, identificação de gatilhos e manejo de recaídas. Não impor pesagens diárias a quem apresenta sofrimento significativo ou risco de transtorno alimentar. Objetivos SMART são úteis se incluem ações mensuráveis sob controle do paciente, como caminhar ou manter refeições planejadas, além de desfechos clínicos como circunferência, PA e sintomas.
+
+### 5.4 Sono, estresse e estigma
+Privação de sono favorece maior ingestão e alterações de autorregulação; tratar AOS melhora saúde além de peso. Perguntar sobre estigma em consultas prévias e adaptar equipamento, cadeiras e instrumentos. Linguagem não acusatória melhora vínculo e capacidade de relatar dificuldades. **Sinal de alerta:** vômitos autoinduzidos, purgação, períodos de compulsão associados a culpa intensa ou restrições extremas exigem avaliação de transtorno alimentar antes de intensificar intervenções voltadas apenas ao peso.
+
+
+### 5.5 Como desenhar um plano alimentar clinicamente seguro
+O plano alimentar começa por identificar **padrões reais de alimentação**, horários, acesso e preferências, sem transformar consulta em moralização da escolha alimentar. Investigam-se compras, refeições em trabalho, porções, bebidas açucaradas, episódios de alimentação por estresse, refeições omitidas e situações de insegurança alimentar. A estratégia deve preservar nutrientes e viabilidade econômica; prescrever cardápio que a pessoa não consegue comprar ou executar não gera adesão duradoura.
+
+A composição dietética deve ser individualizada, sobretudo quando coexistem **diabetes com risco de hipoglicemia**, doença renal, doença hepática avançada, transtornos alimentares, intolerâncias e pós-cirurgia. Proteína adequada e estímulo à musculatura ganham relevância em pessoas idosas ou com redução rápida de peso, especialmente quando utilizam medicamentos de alta potência. Necessidades específicas de ingestão proteica e calorias requerem cálculo clínico e nutricional; **não há proporção de carboidrato/proteína/gordura universal** para todos.
+
+O seguimento é parte do tratamento: avaliar fome, saciedade, disponibilidade de refeições, qualidade proteica, fibra, líquidos e alterações gastrointestinais. Se o medicamento reduz muito o apetite e o paciente passa a fazer apenas uma refeição pobre em proteína, a mudança de peso pode esconder piora nutricional. Quando há vômitos, diarreia e desidratação, priorizar segurança clínica, hidratação e revisão de dose, não elogiar “emagrecimento rápido”.
+
+### 5.6 Prescrição de atividade física adaptada
+A orientação precisa separar **redução do tempo sedentário**, **atividade aeróbica**, **fortalecimento muscular** e **treino de equilíbrio/mobilidade**. Objetivos podem ser construídos progressivamente de acordo com sintomas, capacidade e preferências. A atividade física melhora pressão arterial, sensibilidade insulínica, aptidão cardiorrespiratória, sono, saúde mental e funcionalidade, mesmo quando a balança pouco muda. Isso previne o erro de classificar exercício como “fracasso” caso não gere perda ponderal expressiva.
+
+Para pessoa com osteoartrose, podem ser melhores atividades de baixo impacto combinadas a fisioterapia. Em idoso frágil, força, marcha e prevenção de quedas têm prioridade. Em doença cardiovascular não estabilizada, dispneia em repouso, angina recente ou descompensação cardiopulmonar, é necessário avaliar segurança antes de intensificar treino. O exercício deve ser **prescrito como capacidade funcional e proteção metabólica**, não como punição por ingestão.
+
+### 5.7 Terapia comportamental: transformar intenção em plano verificável
+Concluir “reduza o consumo de ultraprocessados” sem avaliar rotina tem pouca aplicabilidade. O cuidado comportamental organiza metas específicas: por exemplo, preparar duas refeições semanais no domingo, substituir determinada bebida, combinar caminhada curta em dias definidos, providenciar um lanche com proteína para plantão. O progresso é revisto sem julgamento, verificando barreiras e ajustando o plano.
+
+**Entrevista motivacional** explora o que o paciente valoriza, sua prontidão e ambivalência. **Automonitoramento** pode registrar peso, cintura, refeições, fome ou atividade, mas deve ser discutido: pesagem frequente não é adequada para todas as pessoas, sobretudo na presença de transtorno alimentar ou grande ansiedade. Intervenções podem envolver terapeuta, nutricionista, grupo comunitário e família, se autorizados.
+
+A psicoterapia específica ganha importância quando há compulsão, ansiedade marcante, episódio depressivo, dificuldades de imagem corporal ou conflitos associados à alimentação. Nenhuma dessas condições justifica culpabilização ou exclusão automática de tratamento médico apropriado.
+
+### 5.8 Metas e reavaliação: o que medir após 4, 12 e 24 semanas
+Em consulta inicial, registrar dados basais de peso, cintura, PA, frequência cardíaca, glicemia/HbA1c e perfil de risco segundo contexto, além de funcionalidade e sintomas. Nos primeiros meses de mudança terapêutica, acompanhar **efeitos adversos, adesão, disponibilidade do medicamento, qualidade da dieta, hidratação e evolução clínica**, com intervalos individualizados, muitas vezes de poucas semanas na titulação.
+
+Após 12–16 semanas de dose terapêutica adequada, muitas diretrizes propõem reavaliar resposta e segurança. A **regra de suspensão pode variar por medicamento** — como a combinação naltrexona/bupropiona, que possui limiar específico após período em dose de manutenção — e não deve ser extrapolada para toda molécula sem conferir bula e diretriz. Em quem mantém perda de peso, discutir manutenção, riscos de interrupção, custos, metas clínicas e necessidades de apoio; em quem não responde, rever barreiras, causas associadas, dose tolerada e alternativas sem apontar “falta de esforço” como diagnóstico.
+
+### 5.9 Perguntas que detectam complicações durante o emagrecimento
+| Situação | Pergunta útil | Por que altera a conduta |
+|---|---|---|
+| Baixa ingestão | “Consegue comer proteína ao longo do dia?” | Orienta prevenção de desnutrição e perda muscular |
+| Náuseas/vômitos | “Consegue beber água? Há redução de urina?” | Pode indicar desidratação/risco renal |
+| Episódio de dor abdominal | “Dor forte e persistente? Irradia para as costas? Febre?” | Exige investigar complicação pancreatobiliar ou outra urgência |
+| Humor | “Houve piora marcante do humor ou ideação de autolesão?” | Necessita avaliação de segurança e cuidado mental |
+| Hipoglicemia | “Tremor, sudorese ou confusão? Usa insulina ou sulfonilureia?” | Pode exigir ajuste imediato da terapêutica de diabetes |
+| Fraqueza | “Consegue subir escadas e levantar-se como antes?” | Rastreia perda de função muscular |
+| Pós-operatório | “Vômitos, incapacidade de engolir, dor abdominal ou desmaio?” | Levanta suspeita de complicações cirúrgicas/nutricionais |
+
+
+
+## 6. Tratamento farmacológico: mecanismo, indicação e vigilância
+
+Medicamentos atuam junto ao cuidado nutricional, atividade física, suporte psicossocial e tratamento de comorbidades. Diretrizes e bulas podem usar limiares como IMC ≥30 ou IMC ≥27 com doença relacionada à adiposidade, mas a **decisão brasileira deve respeitar indicação regulatória, registro, contraindicações e avaliação individual**. Não confundir aprovação de molécula para diabetes com aprovação de formulação/dose para obesidade.
+
+| Classe/exemplo | Como auxilia | Efeitos e alertas | Situações de maior cautela |
+|---|---|---|---|
+| Agonistas do receptor GLP-1, como liraglutida e semaglutida em apresentações específicas | Maior saciedade e controle de ingestão; efeitos incretínicos | Náuseas, vômitos, constipação, possível desidratação; eventos pancreatobiliares devem ser avaliados se sintomas | Gravidez, distúrbios gastrointestinais graves, contraindicações de bula e interações |
+| Agonista duplo GIP/GLP-1, tirzepatida | Modulação incretínica e apetite | Efeitos gastrointestinais, desidratação; monitorar sintomas hepatobiliares e interações com terapias de DM | Gestação e condições previstas em bula; ajuste clínico em diabetes com insulina/secretagogos |
+| Orlistate | Reduz absorção intestinal de parte da gordura ingerida | Esteatorreia, flatulência, necessidade de avaliar vitaminas lipossolúveis e interações | Síndromes de má absorção, colestase e interações específicas |
+| Combinações centrais registradas, quando disponíveis | Alteram circuitos de fome/recompensa | Podem alterar pressão, frequência cardíaca, humor e gerar interações | Convulsões, opioides, hipertensão não controlada e contraindicações do produto |
+
+O formato, disponibilidade e regulação das drogas **mudam com o tempo**. Evitar manipulações não regulamentadas, canetas sem procedência e uso fora de prescrição. A OMS em 2025 recomendou **condicionalmente** a utilização de terapias GLP-1 de longo prazo em adultos com obesidade, excluindo gestantes, como parte de abordagem ampla; não significa acesso universal ou que todo paciente deva recebê-las.
+
+### 6.1 Titulação e acompanhamento
+As apresentações de liraglutida, semaglutida e tirzepatida possuem posologias diferentes. A dose de início costuma ser menor para adaptação gastrointestinal; escalonamento deve seguir **bula brasileira vigente do produto específico**, sem equivalências automáticas entre moléculas ou soluções manipuladas. No seguimento, monitorar peso e cintura, ingestão proteica, força, efeitos adversos, hidratação, função renal se houver vômitos/desidratação, glicemia nos diabéticos e necessidade de ajustar hipoglicemiantes de maior risco de hipoglicemia.
+
+### 6.2 Recuperação de peso após interrupção
+A perda de peso não "cura" de forma definitiva a tendência biológica de recuperação. Após suspensão, parte dos pacientes recupera peso; portanto discutir previamente duração, custo, adesão, continuidade, alternativas e estratégias de manutenção. A decisão é compartilhada, não punição moral por eventual reganho. Avaliar também resposta insuficiente, tolerabilidade e indicação de encaminhamento cirúrgico.
+
+
+### 6.3 Farmacoterapia no Brasil em 2026: molécula, apresentação e alvo de tratamento
+O médico deve distinguir **evidência de eficácia**, **registro sanitário**, **indicação de bula**, **disponibilidade comercial** e **incorporação em sistemas de saúde**. Uma molécula aprovada para diabetes não autoriza automaticamente usar qualquer marca/concentração sob a mesma indicação formal de obesidade. A Anvisa aprovou o uso de **tirzepatida (Mounjaro)** para controle crônico do peso em **09/06/2025**, em adultos com IMC ≥30 kg/m², ou ≥27 com comorbidade relacionada ao peso. A semaglutida para obesidade tem apresentações específicas (Wegovy e outras registradas). Em maio de 2026 foi divulgada a aprovação de apresentação de semaglutida **7,2 mg** de Wegovy no Brasil; **isso não torna 7,2 mg a dose de rotina nem permite extrapolar cronograma de titulação sem a bula atual daquela apresentação**.
+
+A diretriz **ABESO 2026** recomenda medicação associada às mudanças de estilo de vida em IMC ≥30 ou IMC ≥27 com complicações por adiposidade (R4, classe I/A), e admite consideração individual de tratamento em pessoas com cintura/relação cintura-altura elevadas e complicações apesar de IMC menor (R5, classe IIb/C). A segunda hipótese é recomendação clínica de menor força de evidência, **não afirmação de que qualquer medicamento está registrado para qualquer IMC**. Seleção deve ponderar doença cardiovascular, diabetes, AOS, doença renal, tolerabilidade, custo e acesso.
+
+**Exemplos didáticos de posologia adulta; conferir bula nacional atualizada, apresentação e elegibilidade antes de prescrever:**
+
+| Fármaco/apresentação para controle do peso | Início/titulação habitual de referência | Pontos de segurança e diferenciação |
+|---|---|---|
+| **Liraglutida** SC diária, na apresentação para obesidade | 0,6 mg/dia na semana inicial, com incrementos usuais de 0,6 mg a intervalos de pelo menos 1 semana até **3,0 mg/dia**, segundo produto e tolerabilidade | A administração é diária, não semanal. Confirmar efeitos gastrointestinais, alergias e risco de desidratação; seguir regra de resposta da bula |
+| **Semaglutida** SC semanal (Wegovy, posologia escalonada usual) | 0,25 mg/semana por 4 semanas → 0,5 mg → 1,0 mg → 1,7 mg → **2,4 mg/semana**, em etapas tipicamente de 4 semanas; retardar escalonamento se intolerância segundo bula | **2,4 mg/semana não é dose de início**. Apresentação 7,2 mg aprovada em 2026 exige instruções próprias e seleção individual; nunca transferir cliques/volumes entre canetas |
+| **Tirzepatida** SC semanal (Mounjaro) | 2,5 mg/semana por 4 semanas → 5 mg/semana; aumentos adicionais, quando indicados, de **2,5 mg** após no mínimo **4 semanas** na dose vigente; manutenção individual entre **5, 10 e 15 mg/semana** segundo bula; máximo 15 mg | 2,5 mg é dose de início, não alvo de manutenção habitual. Rever hipoglicemia se associada a insulina/sulfonilureia, vômitos, desidratação e contracepção oral |
+| **Orlistate** oral | **120 mg com cada refeição principal contendo gordura, até três vezes/dia**, conforme produto e indicação | Pode causar esteatorreia, urgência fecal e reduzir absorção de vitaminas lipossolúveis; revisar interações (p. ex., anticoagulantes e outras medicações) e contraindicações |
+| **Naltrexona + bupropiona** liberação prolongada, formulação aprovada | Escalonamento progressivo ao longo das semanas até dose de manutenção definida na bula da marca; **não intercambiar com comprimidos convencionais isolados** | Contraindicações/precauções ligadas a epilepsia, uso de opioides, pressão não controlada e transtornos alimentares específicos; observar humor e interações |
+| **Sibutramina**, quando aprovada e elegível no país | Dose individual conforme bula e regulação brasileira; não prescrever automaticamente pela facilidade de acesso | Avaliar PA/frequência, história cardiovascular/cerebrovascular, diabetes com fatores de risco e potenciais interações; não equipará-la a fármacos modernos com evidência CV específica |
+
+**Nota sobre doses:** a tabela ensina ordens de grandeza e cronogramas gerais **por molécula e formulação indicada**, não substitui verificação de bula e avaliação clínica individual. Eventos adversos e contraindicações podem variar com histórico familiar, risco tireoidiano, alterações gastrointestinais, interações e gestação. Não prescrever medicamentos manipulados ou produtos sem registro por analogia automática com terapias comprovadas.
+
+### 6.4 Como escolher considerando o perfil do paciente
+**Doença aterosclerótica estabelecida:** priorizar medicamentos com evidência específica de desfechos cardiovasculares para a população e apresentação em questão. No estudo SELECT, semaglutida 2,4 mg semanal reduziu eventos cardiovasculares maiores em pessoas com sobrepeso/obesidade e doença cardiovascular prévia **sem diabetes**; o estudo não prova resultado idêntico para qualquer molécula, dose, população ou indicação. A bula brasileira para Wegovy recebeu atualização de indicação cardiovascular em 2026. Continuar estatinas, anti-hipertensivos e terapêutica de prevenção secundária quando indicadas — **o efeito de antiobesidade não as substitui**.
+
+**Diabetes tipo 2 com obesidade:** valorar repercussão glicêmica e de peso, compatibilidade com outros antidiabéticos e hipoglicemia. Quando há insulina ou sulfonilureia, redução de ingestão e melhor resposta glicêmica podem exigir ajuste supervisionado para evitar hipoglicemia. Não interromper todos os fármacos de DM2 apenas porque o paciente relata rápida perda de peso.
+
+**AOS importante:** além de emagrecimento, manter avaliação e tratamento específico do sono; o resultado de estudos sobre redução de índice de apneia-hipopneia não significa que terapia ventilatória possa ser automaticamente suspensa. **Insuficiência cardíaca com fração de ejeção preservada e obesidade** é cenário de seleção mais específico, com evidências para certas terapias incretínicas em populações estudadas, não uma recomendação de classe para todas.
+
+**Doença hepática metabólica:** perda de peso e controle cardiometabólico podem melhorar esteatose/inflamação; decisões sobre MASH com fibrose devem usar diretrizes, exames e **eventual indicação hepática aprovada no país**, sem transpor resultados de histologia de um estudo diretamente para qualquer paciente com ultrassom mostrando gordura.
+
+**Transtornos alimentares, hipertensão não controlada, epilepsia, uso de opioides, gestação, idosos frágeis, doença renal e múltiplas medicações:** as contraindicações e limitações não são iguais entre moléculas. A escolha deve orientar-se pelo risco predominante, não por ranking simples de potência.
+
+### 6.5 Efeitos adversos gastrointestinal e conduta escalonada
+Náuseas, constipação, vômitos e diarreia são reações frequentes aos agentes incretínicos, geralmente relacionadas a dose e início/escalonamento. Quando leves, orientar refeições menores, comer devagar, hidratar-se, evitar refeições excessivamente gordurosas e discutir permanência por mais tempo na dose atual ou retardar incremento conforme bula. Não é obrigatório atingir a dose máxima se a pessoa tem resposta clínica relevante com dose tolerada e o produto/protocolo permitem.
+
+**Vômitos persistentes, incapacidade de hidratação, oligúria, síncope, dor abdominal importante ou hipotensão** exigem avaliação; pode haver lesão renal por desidratação ou doença aguda não relacionada. Dor epigástrica importante e persistente, sobretudo com irradiação dorsal, necessita considerar **pancreatite aguda**; dor em hipocôndrio direito com febre/icterícia sugere complicação biliar. Não rotular toda dor abdominal como “efeito normal da caneta” sem exame clínico.
+
+A avaliação de efeitos gastrointestinais prévios é particularmente relevante em pessoas com **gastroparesia grave conhecida ou sintomas de esvaziamento gástrico muito comprometido**. Analisar risco de retenção de conteúdo gástrico durante anestesia/sedação junto à equipe perioperatória e recomendações mais atuais; não prescrever interrupção uniforme e arbitrária em todos os procedimentos sem considerar risco, fase de titulação e protocolo anestésico.
+
+### 6.6 Segurança regulatória e cadeia de custódia
+Desde 2025, a Anvisa determinou **dispensação de medicamentos agonistas de GLP-1 com retenção de receita**, com regras de validade e escrituração conforme normativa vigente. A prescrição exige identificação do produto, concentração, posologia, técnica de administração e monitorização. Instruções para **caneta preenchida original** não devem ser convertidas em número de “cliques” ou unidades de seringa de formulações alheias.
+
+Falsificações e produtos irregulares de semaglutida/tirzepatida motivaram fiscalizações públicas em 2026. Isso torna importante **conferir procedência, integridade da embalagem, apresentação nacional registrada, condições de conservação e rastreabilidade**. Não ensinar técnicas para fracionar canetas ou administrar produtos de origem desconhecida.
+
+### 6.7 Gravidez, amamentação e planejamento familiar
+**Não usar farmacoterapia para emagrecimento na gravidez**. Planejamento reprodutivo exige revisão antecipada e suspensão conforme meia-vida/produto. A bula de semaglutida utilizada no Brasil orienta suspensão **pelo menos dois meses antes da gestação planejada**; esta regra **não deve ser extrapolada automaticamente** a tirzepatida ou outros fármacos. Com tirzepatida, informar que o atraso do esvaziamento gástrico pode interferir com contraceptivo oral em situações específicas, sobretudo após início/escalonamento; seguir orientação atual da bula e discutir método alternativo.
+
+A lactação também exige evitar fármacos antiobesidade não indicados e considerar segurança materno-infantil. Mulheres que engravidam durante tratamento precisam de avaliação clínica para suspensão/ajuste e seguimento obstétrico; não presumir toxicidade comprovada em indivíduo a partir de ausência de dados robustos.
+
+### 6.8 Evitar “potência” como único fator
+Perdas médias ponderais em estudos variam com duração, dose, população, manejo nutricional e medicações concomitantes. Não comparar diretamente porcentagens de estudos distintos como se fossem ensaio cabeça a cabeça. A ABESO 2026 considera hierarquia de potência para organizar opções, mas destaca **segurança, comorbidades e custo**. A escolha errada pode ocorrer quando se prefere o fármaco de maior efeito médio em indivíduo com alimentação insuficiente, fragilidade, alto risco de intolerância ou contraindicação.
+
+Em quem apresenta perda ponderal rápida, acompanhar **qualidade da dieta, força muscular, ingestão proteica e capacidade funcional**, pois a composição da perda importa. Eficácia real envolve melhora de indicadores cardiometabólicos e manutenção de saúde ao longo do tempo.
+
+
+## 7. Cirurgia metabólica/bariátrica — critérios brasileiros 2025
+
+A **Resolução CFM nº 2.429, de 25/04/2025**, publicada em maio de 2025, atualizou as regras para cirurgia bariátrica/metabólica no Brasil, substituindo normas anteriores. Para **adultos**, o texto prevê elegibilidade em situações como:
+- **IMC ≥40 kg/m²**, independentemente de comorbidade associada;
+- **IMC ≥35 e <40 kg/m²** com pelo menos uma doença agravada pela obesidade e que melhore com redução de peso;
+- **IMC ≥30 e <35 kg/m²** com condições específicas listadas na resolução, incluindo DM2, doença cardiovascular grave com lesão em órgão-alvo, doença renal crônica precoce em DM2, AOS grave, doença hepática gordurosa com fibrose, condições com indicação de transplante, refluxo gastroesofágico com indicação cirúrgica ou osteoartrose grave.
+
+Esses itens definem **elegibilidade para avaliação cirúrgica**, não que toda pessoa com tais características deva ser automaticamente operada. Deve-se avaliar critérios completos, capacidade de acompanhamento, risco anestésico, condições clínicas/psiquiátricas, estado nutricional, preferências e compromisso com seguimento prolongado.
+
+### 7.1 Principais procedimentos, decisão individual e efeitos metabólicos
+**Gastrectomia vertical (sleeve):** reduz volume gástrico e modifica sinais hormonais; exige atenção a refluxo gastroesofágico, que pode piorar, e deficiências nutricionais. Não é correta a ideia de que atua apenas por restrição mecânica.
+
+**Derivação gástrica em Y de Roux (bypass):** combina alterações anatômicas do trânsito e hormonais; pode beneficiar controle glicêmico e refluxo em contextos escolhidos, mas implica risco de hérnia interna, úlcera marginal, deficiências de micronutrientes, dumping, hipoglicemia pós-prandial e outras complicações.
+
+Procedimentos derivativos/biliopancreáticos mais complexos têm potencial de alterações metabólicas importantes, mas maior necessidade de vigilância nutricional e indicação altamente especializada. Bandas gástricas perderam espaço devido a resultados e complicações a longo prazo. A tabela simplista "bypass para diabético, sleeve para todo o resto" **não substitui decisão baseada em refluxo, DM2, hérnias, anatomia, risco nutricional e preferências**.
+
+### 7.2 Preparação pré-operatória e seguimento
+Triar deficiências de ferro, B12, folato, vitamina D, ingestão proteica, fatores psicossociais, transtornos alimentares e AOS, conforme protocolo do serviço. Pactuar acompanhamento multiprofissional longitudinal. Pós-operatório exige hidratação, progressão alimentar supervisionada, suplementação e exames periódicos. Vômitos persistentes e incapacidade de ingerir alimentos podem precipitar deficiência de tiamina; **suspeita de Wernicke demanda atenção urgente e reposição apropriada**, sem esperar tríade completa.
+
+### 7.3 Sinais cirúrgicos de urgência
+Dor abdominal intensa ou progressiva, taquicardia sustentada, febre, vômitos persistentes, incapacidade de ingerir líquidos, sangramento gastrointestinal, síncope e sinais de peritonite após cirurgia demandam **avaliação hospitalar imediata**. Hérnia interna após bypass pode ter sintomas intermitentes e risco de isquemia intestinal; não tranquilizar paciente apenas por exame inicial pouco alterado quando suspeita clínica é relevante.
+
+
+### 7.4 Revisão regulatória de 2026: indicação, equipe e técnicas
+A **Resolução CFM 2.429/2025** deve ser lida em sua **versão consolidada com a alteração feita pela Resolução CFM 2.470/2026**. A modificação atingiu, entre outros elementos, a **composição da equipe médica multiprofissional** que avalia e acompanha o paciente; o texto consolidado nomeia endocrinologista e metabologista, cardiologista, psiquiatra, nutrólogo, nutricionista e psicólogo, com exceção justificada para ausência de determinados especialistas médicos conforme os termos da atualização. Não reproduzir a versão antiga da equipe como se permanecesse integralmente inalterada em 2026.
+
+**Elegibilidade não é autorização automática de operar:** a norma prevê discussão multidisciplinar e avaliação de resposta ao tratamento clínico, contraindicações, capacidade de seguimento, consentimento e recursos hospitalares. Para pacientes com **IMC ≥60 kg/m²**, ressalta preparo estrutural do hospital e equipamentos adequados. O risco de anestesia, via aérea e mobilização deve ser avaliado, não presumido com base apenas no número.
+
+**Técnicas primárias altamente recomendadas pela resolução:** bypass gástrico em Y de Roux e gastrectomia vertical (sleeve). **Técnicas alternativas reconhecidas com indicação principalmente revisional:** duodenal switch com gastrectomia vertical, bypass de anastomose única, gastrectomia vertical com anastomose duodenoileal e gastrectomia vertical com bipartição do trânsito. **Não recomendadas no texto:** banda gástrica ajustável e cirurgia de Scopinaro. Essas categorias regulatórias são distintas das classificações anatômicas históricas apresentadas por resumos antigos.
+
+**Adolescentes:** a norma permite avaliação, a partir de **16 anos**, utilizando critérios aplicáveis a adultos, mas exige maturidade fisiológica/psicológica e decisão compartilhada com suporte familiar. Em circunstâncias excepcionais, admite consideração entre **mais de 14 e menos de 16 anos** com IMC >40 e complicações que representem risco de vida; isso **não equivale** a indicação de rotina. Na pessoa idosa, não estabelecer “idade máxima” universal sem avaliação de fragilidade, cognição, funcionalidade, expectativa de benefício e riscos.
+
+### 7.5 Anatomia da cirurgia e por que as complicações diferem
+No **sleeve**, a maior parte da grande curvatura gástrica é ressecada, formando tubo gástrico. Há alteração hormonal, motilidade e capacidade de ingestão. A anatomia intestinal em geral é preservada, mas ainda podem ocorrer deficiências nutricionais por menor ingestão, intolerância e alteração digestiva. Refluxo de novo ou agravado pode influenciar decisão de técnica e acompanhamento endoscópico conforme cenário.
+
+No **bypass em Y de Roux**, cria-se pequeno reservatório proximal unido ao jejuno, e o trânsito alimentar exclui parte do estômago e do duodeno. O desvio altera sinais enteroendócrinos e acesso aos sítios de absorção de nutrientes. Refluxo pode melhorar em muitos casos, mas há riscos particulares: úlcera marginal, deficiência de ferro/B12, hérnia interna, obstrução, dumping e hipoglicemia pós-prandial. Não dizer que é “somente disabsortivo” ou que o resultado metabólico é simplesmente consequência de redução mecânica do volume.
+
+**Dumping precoce** costuma estar associado à passagem rápida de nutrientes para alças intestinais, com manifestações vasomotoras e gastrointestinais após refeições. **Hipoglicemia pós-bariátrica** pode apresentar sintomas neuroglicopênicos em período pós-prandial mais tardio; investigar glicemia documentada no momento, uso de antidiabéticos e diferenciais. O tratamento inclui ajustes nutricionais específicos e avaliação especializada quando persistente, não apenas rotular todas as tonturas como hipoglicemia.
+
+**Hérnia interna após bypass:** dor abdominal intermitente, por vezes relacionada a refeições, pode preceder obstrução e isquemia. A tomografia deve ser interpretada junto à história; imagem inicial sem obstrução franca não exclui complicação relevante em pessoa com dor recorrente ou progressiva. Dor importante, taquicardia, vômitos persistentes e sinais peritoneais exigem cirurgia/urgência.
+
+### 7.6 Seguimento nutricional: reconhecer sinais e não depender de peso
+O cuidado nutricional depois de cirurgia bariátrica deve ser **longitudinal** e proporcional ao procedimento. Antes da operação, corrigir deficiências quando possível; depois, garantir ingestão proteica, hidratação, suplementação prescrita e monitorização clínica/laboratorial. Fontes como BOMSS 2020 e ASMBS descrevem acompanhamento **durante toda a vida**, com vigilância mais frequente no período inicial. O plano de exames e doses deve ser específico do tipo de cirurgia, riscos e protocolos da equipe.
+
+| Deficiência/complicação | Pistas clínicas e investigação | Consequência de perder o diagnóstico |
+|---|---|---|
+| Ferro | Anemia, fadiga, queda de desempenho; ferritina e parâmetros de ferro com interpretação inflamatória | Anemia persistente e prejuízo funcional |
+| Vitamina B12 | Anemia, parestesias, ataxia, alterações cognitivas; B12 e avaliação funcional se pertinente | Neuropatia ou mielopatia parcialmente irreversível |
+| Tiamina | Vômitos prolongados, baixa ingestão, confusão, ataxia ou sinais oculomotores | **Wernicke é emergência**; reposição parenteral não deve esperar resultados |
+| Folato | Anemia macrocítica e baixa ingestão | Risco hematológico, relevância reprodutiva |
+| Vitamina D/cálcio | Alterações ósseas, fraturas e hiperparatireoidismo secundário | Doença óssea metabólica e fragilidade |
+| Proteína/energia | Fraqueza, perda muscular desproporcional, edema, ingestão insuficiente | Sarcopenia, desnutrição e pior recuperação |
+| Cobre (casos selecionados) | Anemia e mieloneuropatia em pacientes de maior risco | Neuropatia/mielopatia que pode ser subdiagnosticada |
+
+**Sinais pós-operatórios de retorno imediato:** dor abdominal forte/progressiva, vômitos persistentes com incapacidade de manter líquidos, febre ou taquicardia sustentada, sangramento digestivo, falta de ar, alterações neurológicas subagudas ou sinais de desidratação. É erro aconselhar “aguardar adaptação à dieta” diante desses achados.
+
+### 7.7 Cirurgia e medicamentos não são caminhos rivais
+Tanto intervenção farmacológica quanto cirurgia fazem parte de um plano de cuidado da obesidade como condição crônica. O paciente pode necessitar tratamento medicamentoso antes, depois ou em vez da cirurgia. A existência de fármacos potentes **não revoga** critérios cirúrgicos, e cirurgia não elimina necessidade de cuidar de dieta, atividade física, risco cardiovascular, saúde mental e deficiências nutricionais. Em caso de recidiva ponderal pós-cirurgia, reavaliar anatomia, comportamento alimentar, comorbidades, medicamentos e possibilidade de novas estratégias, sem culpabilizar a pessoa.
+
+
+
+## 8. Algoritmo clínico de manejo
+**Pessoa com excesso de adiposidade ou doença associada →** caracterizar histórico, função e preferência de tratamento. Calcular IMC, medir cintura e pesquisar risco/complicações.
+
+**Instabilidade clínica ou comorbidade urgente?** Tratar imediatamente; obesidade é condição importante, mas não deve impedir abordagem de dor torácica, dispneia, descompensação glicêmica ou sofrimento psíquico grave.
+
+**Sem urgência →** instituir plano nutricional/comportamental individualizado, redução de sedentarismo, treino físico adaptado e tratamento de doenças associadas. Considerar indicação farmacológica conforme critérios, segurança, acesso e preferência. Em candidatos previstos na Resolução CFM 2.429/2025, discutir avaliação especializada para cirurgia; não condicionar toda indicação cirúrgica a uma sequência fixa, sem considerar quadro específico.
+
+**Seguimento →** medir peso/cintura e evolução de sintomas, PA, controle glicêmico, lipídios, apneia, função e qualidade de vida; avaliar aderência, custo, efeitos adversos e preservação de massa magra. Ajustar estratégia diante de platô, recaída, complicação ou necessidade de manutenção.
+
+## 9. Casos clínicos originais
+
+### Caso 1 — IMC não conta a história inteira
+Mulher de 47 anos, IMC 29,3 kg/m², circunferência de cintura elevada e história familiar de DM2, com triglicerídeos aumentados, HDL baixo, hipertensão e HbA1c na faixa de pré-diabetes. Não fuma e caminha apenas aos domingos.
+- **Hipótese:** adiposidade central de alto risco e agregação de fatores cardiometabólicos; possível síndrome metabólica conforme critério escolhido.
+- **Raciocínio:** ausência de IMC ≥30 não exclui adiposidade de risco nem diminui necessidade de tratar hipertensão, lipídios e pré-diabetes.
+- **Exames/avaliação:** confirmar medidas e perfil metabólico, risco cardiovascular global, história de sono, hábitos e causas medicamentosas.
+- **Conduta:** plano nutricional e atividade resistida/aeróbica individualizados, tratamento adequado de fatores de risco e discussão de farmacoterapia somente se houver indicação e elegibilidade regulatória.
+- **Por que importa:** o conceito moderno de obesidade não pode ser reduzido a uma coluna de IMC.
+
+### Caso 2 — Terapia incretínica e vômitos
+Homem de 54 anos, obesidade grau II, DM2 em uso de insulina, iniciou medicamento incretínico prescrito fora do seguimento de diabetes e apresenta vômitos frequentes, baixa ingesta e tontura ao levantar.
+- **Problema:** reação adversa gastrointestinal e risco de desidratação, disfunção renal e hipoglicemia se insulina mantida sem adequação alimentar.
+- **Avaliação:** sinais vitais, hidratação, glicemia, função renal e eletrólitos conforme gravidade; pesquisar dor abdominal intensa, sinais de pancreatite ou doença biliar quando presentes.
+- **Conduta:** atendimento clínico oportuno, reavaliar esquema com prescritor, orientar hidratação e segurança; ajuste de insulina depende de glicemias, ingestão e monitorização, não de conselho genérico.
+- **Por que importa:** eficácia de perda de peso não elimina obrigação de acompanhamento de riscos.
+
+### Caso 3 — Quem pode ser encaminhado para cirurgia?
+Paciente de 40 anos com IMC 32,4 kg/m² e apneia obstrutiva do sono **grave** comprovada; possui doença persistente apesar de estratégias estruturadas, sem doença psiquiátrica descompensada. Deseja saber se a cirurgia é "proibida" porque IMC não chegou a 35.
+- **Hipótese:** possível elegibilidade para avaliação cirúrgica segundo a **Resolução CFM 2.429/2025**.
+- **Raciocínio:** AOS grave está entre condições específicas previstas para IMC entre 30 e 35. Isso não torna cirurgia obrigatória nem dispensa avaliação integral.
+- **Conduta:** encaminhar para equipe bariátrica/metabólica experiente, tratar AOS e demais riscos, discutir técnicas, alternativas, riscos e seguimento nutricional.
+- **Por que importa:** decorar unicamente o antigo limiar de IMC 35 pode gerar erro de prova e encaminhamento.
+
+### Caso 4 — Dor abdominal após bypass
+Mulher de 38 anos, dois anos após bypass gástrico em Y de Roux, apresenta dor abdominal intermitente intensa, vômitos e taquicardia. O exame abdominal inicial é pouco exuberante.
+- **Hipóteses:** hérnia interna com risco de obstrução/estrangulamento, além de outras causas abdominais urgentes.
+- **Raciocínio:** a cirurgia altera anatomia e pode permitir hérnias internas; intensidade e padrão de dor merecem atenção apesar do exame inicial.
+- **Conduta:** avaliação hospitalar imediata, ressuscitação conforme necessidade e equipe cirúrgica com experiência bariátrica; imagem conforme estabilidade, sem atrasar avaliação cirúrgica quando suspeita de isquemia.
+- **Por que importa:** complicações tardias podem ser graves e exigem reconhecer a cirurgia prévia como dado diagnóstico central.
+
+
+### Caso 5 — Controle glicêmico e redução de hipoglicemia durante perda de peso
+Homem de 59 anos, IMC 36 kg/m², DM2 há 12 anos, utiliza metformina, insulina basal e sulfonilureia. Começou tratamento para obesidade com fármaco incretínico há oito semanas; relata menor ingestão, perda ponderal gradual e episódios de sudorese/tremor antes do almoço, com glicemia capilar de 58 mg/dL em uma ocasião.
+- **Hipótese:** hipoglicemia relacionada ao descompasso entre menor ingestão/melhora glicêmica e fármacos com potencial hipoglicemiante.
+- **Raciocínio:** o incretínico, isoladamente, tende a apresentar menor risco de hipoglicemia, mas a combinação com insulina ou secretagogos modifica essa segurança. Valor de glicemia baixa durante sintomas merece manejo imediato e revisão do esquema.
+- **Avaliação:** perguntar frequência e circunstâncias de hipoglicemia, glicemias seriadas, função renal, atividade física, horários de medicação e refeições; rever HbA1c e metas individualizadas.
+- **Conduta:** orientar tratamento de hipoglicemia conforme protocolo, ajustar cuidadosamente insulina e/ou sulfonilureia e acompanhar de perto. **Não suspender todos os antidiabéticos de uma só vez** sem plano e monitorização.
+- **Por que importa:** o êxito do tratamento de obesidade pode tornar perigoso um esquema antidiabético antes tolerado.
+
+### Caso 6 — Náuseas em caneta para obesidade: quando não é apenas adaptação
+Mulher de 46 anos, IMC 34 kg/m², iniciou titulação de semaglutida, com progressão de dose mais rápida do que havia sido orientado. Chega à unidade por vômitos persistentes, quase nenhuma ingesta hídrica, oligúria e tontura ortostática. Refere dor epigástrica contínua.
+- **Hipóteses:** intolerância gastrointestinal com desidratação/possível lesão renal, pancreatite, complicação biliar e outros diagnósticos abdominais.
+- **Raciocínio:** náusea transitória é frequente; **vômitos com oligúria e dor importante** não devem ser considerados normais. É necessário investigar complicações, não apenas reduzir dose por mensagem.
+- **Exames:** sinais vitais e perfusão, hidratação, creatinina/eletrólitos, avaliação abdominal; lipase e imagem conforme suspeita clínica.
+- **Conduta:** avaliação médica urgente, medidas de suporte, revisar cronograma de titulação e decisão de suspender temporariamente a medicação, conforme diagnóstico. Encaminhar a serviço de maior complexidade em caso de instabilidade ou suspeita de complicação grave.
+- **Por que importa:** desidratação, pancreatite e problemas biliares não podem ser ignorados pelo fato de o paciente estar emagrecendo.
+
+### Caso 7 — IMC 32 e diabetes: cirurgia já pode ser discutida?
+Mulher de 52 anos, IMC 32,4 kg/m², DM2 com controle persistentemente inadequado apesar de tratamento clínico apropriado e apoio multiprofissional. Pergunta se cirurgia só é permitida no Brasil acima de IMC 35. Tem AOS leve e dispõe de rede familiar de apoio.
+- **Hipótese:** paciente potencialmente elegível à **avaliação** cirúrgica segundo a Resolução CFM 2.429/2025, pois a faixa IMC 30–34,9 associada a DM2 integra critérios brasileiros.
+- **Raciocínio:** elegibilidade para discussão não equivale a prescrição cirúrgica. Devem ser considerados histórico de tratamento clínico, riscos, contraindicações, exames, preferência e capacidade de seguimento.
+- **Avaliação:** estado glicêmico e cardiovascular, função renal/hepática, nutrição, transtornos alimentares, saúde mental, anestesia e avaliação de equipe conforme texto consolidado atualizado em 2026.
+- **Conduta:** encaminhar para centro especializado e decisão compartilhada sobre tratamento farmacológico, cirúrgico e seguimento.
+- **Por que importa:** utilizar apenas limiares antigos de IMC exclui inadequadamente pacientes da avaliação, ao mesmo tempo que operar automaticamente também é inadequado.
+
+### Caso 8 — Dor intermitente depois de bypass
+Homem de 38 anos, submetido a bypass gástrico em Y de Roux há dois anos, apresenta dor abdominal em cólica episódica após refeições; hoje a dor tornou-se persistente, associada a vômitos e taquicardia. Não tem febre e o exame inicial demonstra abdome sem rigidez evidente.
+- **Hipóteses:** hérnia interna com risco de obstrução/isquemia, úlcera marginal, obstrução por bridas e outras causas abdominais.
+- **Raciocínio:** no paciente com bypass, anatomia modificada altera apresentação de emergências; um exame sem peritonite no início não afasta complicação grave.
+- **Exames:** avaliação cirúrgica urgente, sinais vitais seriados, laboratório conforme suspeita e tomografia quando indicada e sem atrasar tratamento necessário.
+- **Conduta:** atendimento hospitalar e avaliação por equipe com experiência em cirurgia bariátrica; não indicar alta apenas por melhora transitória da dor.
+- **Por que importa:** a hérnia interna pode comprometer vascularização intestinal, e demora no diagnóstico aumenta morbidade.
+
+### Caso 9 — Perda de peso com piora funcional em idoso
+Mulher de 78 anos, IMC inicial 35,4 kg/m², iniciou terapia antiobesidade com supervisão, mas após quatro meses perdeu bastante peso e passou a ter dificuldade para levantar de cadeira, tontura e baixa ingestão proteica. Não pratica fortalecimento. Familiares elogiam o resultado na balança.
+- **Hipóteses:** perda concomitante de massa/força muscular, baixa ingestão, desidratação ou hipotensão; avaliar outras causas clínicas de fraqueza.
+- **Raciocínio:** composição corporal e função são desfechos essenciais; fragilidade/sarcopenia podem progredir mesmo com melhora de peso.
+- **Avaliação:** força, velocidade de marcha, risco de quedas, ingestão proteica/hídrica, pressão ortostática, medicações e exames orientados pelo quadro.
+- **Conduta:** reavaliar dose/objetivos, plano nutricional, resistência muscular assistida/fisioterapia e comorbidades. Priorizar segurança e independência.
+- **Por que importa:** o alvo não é reduzir peso a qualquer custo; deve-se preservar capacidade funcional e qualidade de vida.
+
+### Caso 10 — Reganho ponderal e seguimento sem culpabilização
+Homem de 43 anos com obesidade desde a adolescência, perdeu 18% do peso com terapia farmacológica e apoio nutricional, mas precisou interromper a medicação por dificuldade de acesso. Nos seis meses seguintes recuperou parte do peso. Refere vergonha de voltar ao serviço.
+- **Hipótese:** recidiva ponderal compatível com curso crônico da obesidade e perda de efeito terapêutico, com determinantes biológicos/ambientais e possível impacto psicossocial.
+- **Raciocínio:** recuperação de peso após interrupção foi observada em estudos de semaglutida e tirzepatida; não é diagnóstico de “fraqueza de vontade”.
+- **Avaliação:** peso/cintura, mudanças de sono/trabalho, adesão alimentar e física, medicações, pressão, lipídios, diabetes, orçamento e saúde emocional.
+- **Conduta:** acolher, revisar opções de manutenção dentro do acesso real, ajustar plano nutricional/atividade e considerar alternativas farmacológicas ou avaliação cirúrgica conforme elegibilidade.
+- **Por que importa:** continuidade do cuidado é parte do tratamento, e o estigma pode afastar o paciente justamente na fase de maior necessidade.
+
+
+## 10. Questões comentadas de fixação
+
+**1. Em relação ao IMC, é correto afirmar que:**
+A) Mede diretamente percentual de gordura. B) É inútil em populações. C) É instrumento de triagem que deve ser complementado por cintura e complicações. D) Exclui riscos cardiometabólicos abaixo de 30.
+**Gabarito C.** É prático, mas não mede composição/órgãos. **A:** falso. **B:** tem utilidade ampla. **D:** riscos podem ocorrer em adiposidade central com IMC inferior. **Revisão:** associar antropometria a repercussão clínica.
+
+**2. Qual mecanismo é compatível com regulação fisiológica do apetite?**
+A) Só a grelina ativa fome. B) Leptina não se relaciona ao tecido adiposo. C) Há integração de vias NPY/AgRP, POMC/CART e sinais intestinais/centrais. D) GLP-1 não participa de saciedade.
+**Gabarito C.** O controle é multissistêmico. **A:** há numerosos estímulos orexígenos. **B:** leptina tem relação com massa adiposa. **D:** GLP-1 atua em saciedade e regulação glicêmica. **Revisão:** explicações monocausais são inadequadas.
+
+**3. Sobre tratamento farmacológico, qual afirmação é mais adequada?**
+A) Medicamento substitui integralmente cuidado comportamental. B) Se houver perda de peso, risco de desidratação não interessa. C) Indicação, contraindicações, formulação, resposta e acesso devem ser individualizados. D) Qualquer caneta adquirida na internet tem qualidade equivalente.
+**Gabarito C.** Intervenções precisam ser integradas. **A:** falso. **B:** efeitos adversos podem ser graves. **D:** risco de produto falsificado/não regulamentado. **Revisão:** vigilância e continuidade são partes do tratamento.
+
+**4. Adulto com IMC 32,5 e AOS grave pode, segundo a Resolução CFM 2.429/2025:**
+A) Nunca ser elegível a avaliação cirúrgica. B) Ser encaminhado para avaliação especializada, porque AOS grave integra situações específicas de IMC 30–34,9. C) Ser operado imediatamente sem avaliação. D) Receber bypass obrigatoriamente.
+**Gabarito B.** Resolução ampliou elegibilidade a condições selecionadas. **A:** usa critério antigo incompleto. **C:** elegibilidade não é liberação automática. **D:** técnica depende de avaliação. **Revisão:** separar indicação de encaminhamento e decisão terapêutica.
+
+**5. Após bypass gástrico, qual complicação deve ser considerada em dor abdominal forte, intermitente e taquicardia?**
+A) Hérnia interna e obstrução potencialmente grave. B) Apenas adaptação ao volume do novo estômago. C) Processo inevitavelmente benigno se exame abdominal discreto. D) Diagnóstico de síndrome do intestino irritável por exclusão sem investigação.
+**Gabarito A.** Anatomia pós-Y de Roux predispõe a hérnias internas. **B:** não explica sinais de alerta. **C:** exame pode não refletir gravidade. **D:** exclusão precipitada pode atrasar cirurgia. **Revisão:** histórico cirúrgico define diagnósticos a considerar.
+
+**6. Acerca da manutenção do peso reduzido:**
+A) Toda recuperação é falta de vontade. B) Tratamento deve terminar assim que o IMC normaliza. C) Mudanças adaptativas de fome e gasto e contexto ambiental tornam seguimento longitudinal importante. D) Treino resistido não agrega em quem perde peso.
+**Gabarito C.** Obesidade é crônica, heterogênea e recidivante. **A:** estigmatiza e ignora mecanismos. **B:** interromper acompanhamento pode aumentar recidiva. **D:** força e massa muscular importam. **Revisão:** eficácia envolve saúde e manutenção, não apenas queda inicial na balança.
+
+
+### Questão 7 — Critério harmonizado de síndrome metabólica
+Homem de 55 anos, IMC 26,5 kg/m², cintura considerada normal para a população correspondente, triglicerídeos 177 mg/dL, HDL 37 mg/dL, PA 133/82 mmHg e glicemia 93 mg/dL. Qual conclusão é correta?
+A) Não possui síndrome metabólica porque não apresenta obesidade central.
+B) Preenche três componentes da definição harmonizada de síndrome metabólica.
+C) A glicemia de 93 mg/dL comprova diabetes tipo 2.
+D) A definição harmonizada exige obrigatoriamente IMC ≥30 kg/m².
+**Gabarito: B.** TG ≥150, HDL <40 em homem e PA sistólica ≥130 perfazem três critérios. **A:** cintura é obrigatória em definições como a IDF antiga, não na harmonização. **C:** valor informado é insuficiente para DM2. **D:** IMC não integra os cinco componentes harmonizados. **Mini revisão:** identificar **nome do critério** e contar componentes antes de interpretar.
+
+### Questão 8 — Indicação de tratamento farmacológico
+Mulher de 45 anos, IMC 28,1 kg/m², hipertensão e pré-diabetes; após avaliação, deseja discutir tratamento medicamentoso para obesidade/sobrepeso de risco. Segundo ABESO 2026, qual afirmação está correta?
+A) Farmacoterapia só é discutida acima de IMC 40.
+B) A diretriz recomenda considerar tratamento farmacológico em IMC ≥27 associado a complicações por adiposidade, juntamente com mudança do estilo de vida.
+C) Modificação de alimentação e atividade física deve ser suspensa quando o medicamento começa.
+D) É obrigatório prescrever sempre o fármaco de maior potência, sem avaliar custo ou contraindicação.
+**Gabarito: B.** A recomendação R4 da ABESO 2026 inclui IMC ≥27 com complicações. **A:** ignora critérios farmacológicos. **C:** medidas comportamentais continuam parte do tratamento. **D:** segurança, comorbidades, preferência e custo influenciam seleção. **Mini revisão:** diretriz clínica deve ser conciliada com **registro específico do produto**.
+
+### Questão 9 — Segurança da tirzepatida
+Paciente com DM2 usa insulina basal e sulfonilureia, iniciando tirzepatida após indicação formal. Qual atitude deve acompanhar a titulação?
+A) Manter as doses prévias sem qualquer monitorização, pois hipoglicemia é impossível.
+B) Monitorar glicemia e reavaliar dose de insulina/secretagogo conforme evolução clínica.
+C) Aumentar diretamente tirzepatida de 2,5 para 15 mg após uma semana.
+D) Associar qualquer caneta manipulada de origem desconhecida para acelerar perda ponderal.
+**Gabarito: B.** Redução de ingesta e melhora do controle glicêmico modificam necessidade de terapia hipoglicemiante. **A:** risco de hipoglicemia aumenta em combinações. **C:** progressão de dose deve ocorrer em etapas, tipicamente após 4 semanas. **D:** produtos irregulares representam risco sanitário. **Mini revisão:** tirzepatida é semanal; após 2,5 mg inicialmente, a bula orienta 5 mg e incrementos posteriores graduais.
+
+### Questão 10 — Critérios brasileiros de cirurgia
+Homem de 52 anos, IMC 32 kg/m², DM2 com controle inadequado após manejo clínico multiprofissional, procura avaliação de cirurgia metabólica. Segundo Resolução CFM 2.429/2025, consolidada com alteração em 2026, a afirmação adequada é:
+A) Não pode ser avaliado porque apenas IMC ≥35 autoriza qualquer encaminhamento.
+B) É automaticamente obrigado a operar, dispensando discussão multidisciplinar.
+C) É potencialmente elegível para avaliação cirúrgica em razão de IMC 30–34,9 associado a DM2.
+D) O CFM recomenda banda gástrica ajustável como procedimento primário de eleição.
+**Gabarito: C.** DM2 está entre as condições específicas para a faixa. **A:** utiliza critérios antigos. **B:** elegibilidade não elimina escolha compartilhada nem avaliação de segurança. **D:** a banda ajustável está entre técnicas não recomendadas pelo CFM. **Mini revisão:** distinguir *critério para avaliação* de *indicação cirúrgica definitiva*.
+
+### Questão 11 — Emergência pós-bariátrica
+Paciente há três anos de bypass em Y de Roux tem dor abdominal episódica pós-prandial, hoje intensa e persistente, com vômitos e taquicardia. Mesmo sem peritonite franca, a melhor conduta é:
+A) Considerar somente intolerância alimentar, orientar retorno em seis meses.
+B) Encaminhar para avaliação hospitalar e cirúrgica urgente, incluindo hipótese de hérnia interna/obstrução.
+C) Prescrever laxante e observar em casa por sete dias obrigatoriamente.
+D) Descartar complicação se hemograma inicial for normal.
+**Gabarito: B.** Hérnia interna pode causar isquemia intestinal com manifestações pouco específicas no início. **A/C:** atrasam investigação. **D:** exames iniciais normais não excluem complicação abdominal grave. **Mini revisão:** anatomia do bypass muda o diferencial de dor abdominal; atenção a recorrência e progressão.
+
+### Questão 12 — Sarcopenia durante tratamento
+Mulher de 76 anos apresenta perda ponderal expressiva com tratamento antiobesidade, mas passou a ter dificuldade para subir escadas e levantar-se da cadeira, com baixa ingestão proteica. Conduta mais apropriada?
+A) Intensificar dose apenas para acelerar redução do IMC.
+B) Ignorar função porque a perda de peso sempre traz benefício.
+C) Reavaliar terapia, consumo nutricional, força, causas clínicas de fraqueza e treino resistido adaptado.
+D) Prescrever jejum prolongado como estratégia obrigatória.
+**Gabarito: C.** A redução de peso precisa preservar função e segurança. **A/B/D:** aumentam risco ou ignoram sarcopenia e desnutrição. **Mini revisão:** funcionalidade, composição corporal e saúde metabólica são desfechos clínicos, não acessórios estéticos.
+
+
+## 11. Matriz provisória de cobertura e imagens
+| Bloco essencial | Local | Situação |
+|---|---|---|
+| Classificação, composição e risco | §1, §3 | Base escrita; aprimorar critérios de adiposidade e risco étnico |
+| Fisiologia | §2 | Base escrita; precisa diagrama autoral |
+| Síndrome metabólica | §4, inclusive §4.3–4.9 | Tabela harmonizada e exemplos incluídos; revisar aplicabilidade dos cortes de cintura por população e checagem médica |
+| Nutrição, comportamento, atividade e sono | §5 | Base escrita; ampliar plano por comorbidade |
+| Farmacoterapia | §6, inclusive §6.3–6.8 | Posologias indicativas e regulação Anvisa/ABESO 2026 incluídas; validar cada formulação na bula vigente e interações individualmente |
+| Cirurgia | §7, inclusive §7.4–7.7 | CFM 2.429/2025 consolidada com alteração 2.470/2026; revisar normas em vigor, individualização e protocolo local |
+| Seguimento, complicações e cronograma | §8 | Base escrita; aprofundar carências pós-bariátrica |
+| Casos e questões | §§9–10 | Dez casos e doze questões originais comentadas; falta teste independente questão→capítulo e revisão de plausibilidade das alternativas |
+| Imagens | Não integradas | Fila de candidatos pendente, nenhuma licença avaliada |
+| 60K didáticos e autonomia de estudo | Manuscrito expandido, mais de 80 mil caracteres brutos | **NÃO CERTIFICADO**: auditar utilidade real, redundância, consistência e resolução sem referência externa |
+
+Candidatas didáticas para pesquisa e aprovação (sem URLs ou arquivos presumidamente livres): (1) circunferência de cintura medida corretamente; (2) imagem histológica de adipócito; (3) esquema autoral hipotálamo-sinais de saciedade; (4) MRI/TC demonstrando adiposidade visceral em fonte acadêmica; (5) gráfico de adiposidade corporal versus IMC; (6) esteatose hepática por ultrassonografia em banco licenciado; (7) polissonografia exemplificativa em fonte com licença; (8) ilustração **original** LURIA de sleeve; (9) ilustração **original** LURIA de bypass em Y de Roux; (10) fluxograma autoral de elegibilidade à cirurgia 2025.
+
+## 12. Referências priorizadas e verificáveis
+1. ABESO. **Diretrizes e posicionamentos**, incluindo diretriz farmacológica 2026 e orientação nutricional 2025: https://abeso.org.br/diretrizes/
+2. CFM. **Resolução nº 2.429/2025**, cirurgia bariátrica e metabólica: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2025/2429
+3. Organização Mundial da Saúde. **WHO issues global guideline on GLP-1 medicines in treating obesity**, 01/12/2025: https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-glp-1-medicines-in-treating-obesity/
+4. Obesity Canada et al. **Pharmacotherapy for obesity management in adults: 2025 clinical practice guideline update**: https://pmc.ncbi.nlm.nih.gov/articles/PMC12350384/
+5. Brasil, Ministério da Saúde: documentos de manejo de doenças crônicas e da atenção primária, a selecionar por tópico exato em auditoria; não usar citação genérica como substituto de suporte factual.
+
+**Auditoria editorial (15/10/2026):** rascunho ampliado, com critérios harmonizados, cenários gestação/idosos, revisão de fármacos e regulação brasileira, pós-bariátrica e 10 casos/12 questões. Ainda faltam checagem farmacológica individual por bula atual, conferência de fonte para cada alegação relevante, imagens licenciadas via Admin, validação manual de ≥60K caracteres didáticos úteis, teste das questões e inspeção visual desktop/PWA. **Não marcar como completo, não publicar e não integrar automaticamente.**
+
+
+### 12.1 Atualizações oficiais consultadas nesta ampliação (15/10/2026)
+6. ABESO. **Diretriz Brasileira de Tratamento Farmacológico da Obesidade, 5ª edição, 2026** (documento integral, recomendações R1–R32): https://abeso.org.br/wp-content/uploads/2026/03/Diretrizes-ABESO_completo_20260320.pdf
+7. CFM. **Resolução 2.429/2025 — versão consolidada com alteração pela Resolução 2.470/2026**: https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2025/2429_2025.pdf
+8. ANVISA. **Mounjaro (tirzepatida): inclusão de indicação para controle crônico do peso em adultos, 09/06/2025** (inclui esquema de escalonamento): https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/novos-medicamentos-e-indicacoes/mounjaro-r-tirzepatida-nova-indicacao
+9. ANVISA. **Agonistas GLP-1: prescrição e dispensação com retenção de receita, 2025**: https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/canetas-emagrecedoras-so-poderao-ser-vendidas-com-retencao-de-receita
+10. Novo Nordisk Brasil. **Bula brasileira de Wegovy, semaglutida**, com apresentações e titulação; conferir revisão vigente da bula profissional: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Wegovy_Bula_Paciente.pdf
+11. Novo Nordisk Brasil. **Comunicado 04/05/2026 sobre aprovação de Wegovy 7,2 mg no Brasil**: https://www.novonordisk.com.br/noticias-e-imprensa/busca-noticias/com-media-de-21-de-perda-de-peso-nova-dosagem-de-wegovy-e-aprovada-pela-anvisa-no-brasil.html
+12. World Health Organization. **Guideline on the use and indications of GLP-1 therapies for the treatment of obesity in adults, 2025**, recomendações condicionais: https://doi.org/10.1001/jama.2025.24288
+13. Endotext / NCBI. **Metabolic Syndrome**, critérios da definição harmonizada e limitações de cortes de cintura: https://www.ncbi.nlm.nih.gov/books/NBK278936/
+14. British Obesity and Metabolic Surgery Society. **2020 update on biochemical monitoring and micronutrient replacement after bariatric surgery**: https://pmc.ncbi.nlm.nih.gov/articles/PMC7583474/
+15. ANVISA. **Apreensão de produtos irregulares e lotes de Mounjaro Kwikpen, 2026**: https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apreende-produtos-irregulares-e-lotes-de-mounjaro-kwikpen
+
+**Nota metodológica:** resumos de cursinho do Drive foram usados exclusivamente para comparar tópicos, sem reprodução de redação, diagramas ou imagens protegidas. As referências oficiais acima sustentam itens específicos, mas o manuscrito ainda exige conferência integral por parágrafo e revisão médica final antes de integrar à LURIA.

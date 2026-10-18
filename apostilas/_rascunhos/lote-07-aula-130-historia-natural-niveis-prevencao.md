@@ -51,45 +51,6 @@ Em muitas infecções, **incubação** é intervalo entre aquisição do agente 
 ### 2.4. Transmissão e curso clínico não são a mesma linha temporal
 Na saúde pública, uma pessoa pode transmitir infecção antes de desenvolver sintomas, durante a fase clínica ou até sem nunca se tornar sintomática. Portanto, estratégias de prevenção devem considerar transmissibilidade e vigilância epidemiológica, não apenas momento do diagnóstico individual. Quarentena e isolamento são intervenções distintas em pessoas expostas e pessoas com doença suspeita/confirmada, cuja terminologia depende da norma de vigilância.
 
-
-### 2.5. História natural não é uma sentença: estados, transições e desfechos concorrentes
-
-O modelo clássico foi construído para ordenar a sequência **exposição → suscetibilidade → alterações subclínicas → doença manifesta → desfecho** na ausência de intervenção específica. Na realidade, cada transição tem uma probabilidade, não uma certeza. Uma pessoa pode ser exposta a um fator sem desenvolver doença; uma condição pode estabilizar, regredir, recrudescer ou competir com outras causas de morte.
-
-**Esquema autoral de estados:**
-
-\`Suscetível → Exposto → Alteração biológica → Doença clínica → Recuperação / limitação funcional / recorrência / morte\`
-
-Há ramos que não cabem numa linha simples: **remissão** pode retornar a uma fase de baixo sintoma com lesão residual; **recorrência** reaparece após período sem manifestação; **reinfecção** representa novo evento biológico após eliminar agente; **sequela** é limitação persistente depois da causa aguda cessar. Em saúde pública é crucial distinguir incidência de **primeiro evento** e incidência de **eventos repetidos**.
-
-**Exemplo, tuberculose:** infecção por *Mycobacterium tuberculosis* não equivale automaticamente a tuberculose ativa. Pode haver infecção sem doença ativa, progressão em contexto de risco (como HIV, desnutrição e imunossupressão), manifestação clínica pulmonar ou extrapulmonar e sequela funcional após cura microbiológica. A prevenção por vacina BCG, controle ambiental, investigação de contatos, tratamento de infecção latente quando indicado e tratamento da doença ativa atuam **em pontos diferentes da história natural**.
-
-**Exemplo, doença renal crônica:** hipertensão e diabetes podem levar a lesão renal subclínica, albuminúria e redução progressiva de filtração, mas há pessoas com evolução lenta, rápida ou com injúria aguda adicional. Não é uma sequência inevitável de "diabetes → hemodiálise". Controle da pressão/glicemia e medidas renoprotetoras modificam o curso; preparo de acesso dialítico e tratamento de anemia/mineral ósseo minimizam consequências da doença estabelecida.
-
-### 2.6. Causa necessária, causa suficiente e componentes causais
-
-**Causa necessária:** algo que precisa estar presente para determinada doença definida ocorrer; a infecção por HPV oncogênico persistente é causal central para a vasta maioria dos cânceres cervicais, com raras exceções etiológicas.  
-**Causa suficiente:** conjunto completo de condições capaz de produzir o evento sob modelo causal, muitas vezes difícil de identificar na prática.  
-**Causa componente:** fator que colabora com outras condições para completar mecanismo causal. O tabaco é componente em múltiplos processos de câncer pulmonar, mas câncer pode ocorrer em não fumantes.
-
-O modelo de **causas suficientes-componentes** (às vezes apresentado como tortas causais) ajuda compreender prevenção: remover um componente que participa de múltiplos mecanismos pode impedir muitos casos mesmo sem eliminar todos os fatores. Portanto, políticas contra tabagismo têm efeito em câncer, DPOC, doenças vasculares e gestação, e não precisam esperar uma etiologia única por pessoa.
-
-**Armadilha:** encontrar associação em estudo observacional não demonstra automaticamente causalidade. Confusão, viés de seleção, causalidade reversa e erro de mensuração podem produzir associação, embora critérios de temporalidade, gradiente, plausibilidade e triangulação entre desenhos fortaleçam julgamento.
-
-### 2.7. Exposição, período de indução e período de latência
-
-**Incubação** em infecção é tempo entre aquisição do agente e sintomas; **período infeccioso** é quando o hospedeiro transmite, podendo começar antes dos sintomas. Para câncer ocupacional ou tabagismo, há **indução** de alterações carcinogênicas e intervalo até manifestação reconhecível, sem um relógio universal. Entre infecção por HPV e câncer cervical pode haver anos de persistência, progressão ou regressão; vacinas atuam antes da aquisição relevante e rastreio pode detectar lesões precursoras em fase adequada.
-
-**Exemplo sanitário:** alguém pode transmitir sarampo antes de exantema. Medidas de vigilância e manejo de contatos devem considerar intervalo infectante, não apenas quando exame ficou positivo. Já um trabalhador exposto a amianto pode desenvolver doença muitos anos depois de cessar exposição; prevenir novas exposições hoje não eliminará imediatamente toda carga de doença acumulada.
-
-### 2.8. O contrafactual da prevenção
-
-A pergunta epidemiológica é: **o que teria acontecido se aquela pessoa ou população não tivesse recebido a intervenção, mantidas as outras condições?** Não conseguimos observar simultaneamente os dois futuros da mesma pessoa. Ensaios randomizados, experimentos naturais e estudos observacionais bem conduzidos aproximam estimativa de efeito causal, mas cada método tem limites.
-
-Não avaliar vacinação pela frase "a criança vacinada adoeceu, logo não funciona", pois a intervenção costuma reduzir probabilidade de evento, gravidade ou transmissão, não fornecer garantia absoluta. Da mesma forma, uma comunidade sem casos após campanha não prova isoladamente que a campanha foi causa da redução; sazonalidade, alterações de vigilância e evolução natural da epidemia podem contribuir.
-
-**Escopo da aula:** compreender ligação entre causa, história natural e momento da intervenção. A aula de epidemiologia analítica trata em maior profundidade desenhos e inferência causal, evitando repetir todo manual estatístico.
-
 ## 3. Prevenção primordial: agir antes de os fatores de risco se normalizarem
 
 **Prevenção primordial** busca evitar o próprio estabelecimento de fatores de risco em uma população. Exemplos: políticas públicas que reduzam disponibilidade e publicidade de tabaco para adolescentes, urbanismo que incentive deslocamento ativo e segurança alimentar, e ações estruturais para diminuir exposição ambiental nociva.
@@ -97,59 +58,6 @@ Não avaliar vacinação pela frase "a criança vacinada adoeceu, logo não func
 Diferencia-se da **prevenção primária**, que age sobre indivíduos/grupos já expostos a riscos e tenta impedir a ocorrência da doença (por exemplo, cessar tabagismo em fumante ou imunizar população susceptível). As duas categorias podem se sobrepor, e a classificação exige explicitar **qual fator e qual desfecho** se pretende prevenir.
 
 Exemplo: uma lei de ambiente livre de fumaça pode ser interpretada como primordial ao evitar instalação de exposição social e como primária ao reduzir exposição de pessoas suscetíveis. O nível não é atributo fixo da ferramenta, mas da **posição da intervenção em relação à ocorrência/curso da condição**.
-
-
-### 3.1. O paradoxo da prevenção de Geoffrey Rose
-
-Uma estratégia preventiva **de alto risco** oferece intervenção intensiva a poucas pessoas com probabilidade individual elevada. Uma estratégia **populacional** desloca a distribuição de exposição em toda a comunidade, podendo evitar mais eventos totais quando a maioria dos casos surge entre pessoas de risco moderado (porque elas são muito mais numerosas). Isso é conhecido como **paradoxo da prevenção**: uma medida que traz benefício pequeno a cada indivíduo pode gerar benefício grande na população.
-
-**Exercício hipotético:** território tem 10 mil adultos. Mil pessoas de risco alto têm incidência de evento 8% em cinco anos: **80 eventos**. As outras nove mil de risco moderado têm incidência 2%: **180 eventos**. Apesar de risco individual menor, a maior quantidade absoluta de eventos está no grupo moderado. Uma intervenção aplicada somente ao risco alto pode ser eficaz para essas mil pessoas, mas deixar a maior parte do problema comunitário intocada.
-
-O modelo não significa abandonar pessoas de maior risco; as duas estratégias são **complementares**. Tabagismo e qualidade do ar exemplificam ações ambientais/populacionais; tratamento intensivo de hipertensão em alto risco cardiovascular exemplifica abordagem clínica dirigida.
-
-**O benefício populacional precisa ser medido e os danos individuais continuam importando.** Uma política universal nociva não fica automaticamente ética por beneficiar a maioria. A aula 125 aprofunda método de avaliação de rastreio; aqui o foco é escolha do nível de intervenção ao longo da distribuição de risco.
-
-### 3.2. Produzir saúde antes do consultório: políticas que alteram risco
-
-**Segurança viária:** infraestrutura de travessia, limite de velocidade, fiscalização, transporte público de qualidade e desenho de ruas previnem colisões e traumas **antes** do evento. Atendimento pré-hospitalar pós-acidente e reabilitação são outros níveis.  
-**Saneamento:** água tratada, coleta de esgoto, vigilância de qualidade da água e proteção de bacias modificam exposição comunitária a agentes entéricos. Reidratação de criança com gastroenterite é tratamento da doença; ambas as estratégias importam, mas uma não substitui a outra.  
-**Ambientes alimentares:** oferta regular de refeições escolares adequadas, rotulagem, publicidade e disponibilidade de produtos ultraprocessados influenciam distribuição de consumo antes de diabetes/hipertensão se instalarem. Não reduzir problema à "falta de força de vontade".  
-**Tabaco:** regulação de publicidade, ambientes livres de fumo, tributação e apoio à cessação alcançam gerações e estágios diferentes. O serviço de APS ainda precisa oferecer cuidado individual para quem já fuma.
-
-**Onde há fronteiras:** "primordial" busca evitar estabelecimento **populacional** do fator; "primária" impedir doença em suscetíveis, inclusive já expostos; "promoção de saúde" pode ser estrutural e atravessar os níveis. Uma intervenção ambiental pode funcionar como primordial para crianças não expostas e primária para adultos já expostos.
-
-### 3.3. Gradiente social e determinação estrutural
-
-A **Lei 8.080/1990, art. 3º**, atualizada, explicita determinantes como alimentação, moradia, saneamento básico, meio ambiente, trabalho, renda, educação, atividade física, transporte, lazer e acesso a bens/serviços essenciais. O **Relatório Mundial da OMS sobre Determinantes Sociais da Equidade em Saúde, lançado em maio/2025**, associa desigualdades evitáveis a condições de nascer, crescer, morar, trabalhar, envelhecer e ao acesso a poder/recursos. Assim, a diferença de expectativa de vida entre bairros não pode ser atribuída somente à genética nem ao número de consultas.
-
-**Gradiente social** significa que risco de adoecimento frequentemente varia ao longo da distribuição socioeconômica, e não apenas em um grupo binário "pobres versus ricos". **Inequidade** é diferença evitável, injusta, vinculada a distribuição de oportunidades; não é sinônimo exato de toda diferença biológica. **Equidade no SUS** responde a necessidades diferentes com ações proporcionais, enquanto **universalidade** preserva direito de todas as pessoas ao sistema.
-
-Cuidado com a linguagem: raça/cor autodeclarada é marcador relevante para monitorar desigualdades estruturais e barreiras de acesso, não explicação genética genérica para todo desfecho. Informações por raça, território e renda devem ser analisadas eticamente e usadas para remover obstáculos, sem estigmatizar grupos.
-
-### 3.4. Doença em uma pessoa, risco coletivo no bairro
-
-Numa microárea de APS com muitos casos de asma infantil, prescrever broncodilatadores é assistência individual necessária, mas um mapa de casos pode revelar moradias úmidas, poluição industrial, queima de lixo e exposição ocupacional familiar. A linha de cuidado deve combinar:
-- avaliação diagnóstica, técnica inalatória e acesso a medicação (controle da doença);
-- identificação de exposição e medidas domésticas plausíveis (proteção primária);
-- vigilância ambiental, diálogo intersetorial e ações de mitigação (primordial);
-- avaliação de crises, absenteísmo e visitas ao pronto-socorro como desfechos (monitoramento);
-- participação comunitária na definição de prioridades.
-
-Sem ação territorial, o serviço "enxuga gelo": trata sucessivas exacerbações sem reduzir exposição que as provoca.
-
-### 3.5. Intersetorialidade com responsabilidade definida
-
-Dizer "precisamos de intersetorialidade" não é plano. Definir **qual setor**, **qual mecanismo**, **responsável**, **prazo**, **indicador** e **possível dano** é o que transforma a política em intervenção avaliável.
-
-| Risco identificado | Ação fora do consultório | Setores envolvidos | Indicador acompanhado |
-|---|---|---|---|
-| Diarreia por água insegura | Vigilância da água e melhorias de saneamento | Saúde, saneamento, meio ambiente | Doença diarreica por território/idade; qualidade da água |
-| Acidentes em travessia escolar | Redutores de velocidade/faixas/iluminação | Mobilidade, educação, município | Lesões no trânsito escolar, velocidade média |
-| Fumo passivo em espaços públicos | Fiscalização e apoio à cessação | Vigilância sanitária, legislativo, APS | Exposição autorreferida, adesão às normas |
-| Insegurança alimentar | Proteção social e alimentação escolar | Assistência, educação, agricultura | Insegurança alimentar e crescimento infantil |
-| Calor extremo em idosos | Plano municipal para ondas de calor | Defesa Civil, assistência, saúde | Internações e óbitos relacionados a calor, cobertura de busca ativa |
-
-Causalidade em políticas complexas requer séries temporais bem interpretadas, comparação geográfica quando possível, qualidade dos dados e análise de fatores concorrentes. Uma correlação antes/depois não basta como certeza causal.
 
 ## 4. Prevenção primária — antes da doença
 
@@ -262,72 +170,6 @@ A APS tem função de primeiro contato preferencial, longitudinalidade, coordena
 
 Prevenção populacional também exige vigilância em saúde, saneamento, políticas ambientais, escola, trabalho e proteção social. A atuação não é exclusiva da medicina clínica ou da UBS. No ambiente hospitalar, prevenção inclui infecções relacionadas à assistência, tromboprofilaxia quando indicada e redução de eventos adversos de medicação.
 
-
-### 11.1. Níveis de atenção não são níveis de prevenção: quadro de classificação com quatro exemplos
-
-**Primeiro nível de atenção (APS)** pode realizar prevenção primária (vacinar), secundária (diagnosticar precocemente DM), terciária (acompanhar pé diabético e reabilitação) e quaternária (evitar polifarmácia sem indicação). Um hospital terciário pode fazer **prevenção primária** ao vacinar profissional contra hepatite B ou prevenir infecção relacionada à assistência, além de realizar tratamento e reabilitação. A nomenclatura da complexidade do serviço descreve **organização da rede**, enquanto nível de prevenção descreve **momento/objetivo da intervenção na história natural da condição**.
-
-| Local | Ação | Alvo definido | Nível de prevenção |
-|---|---|---|---|
-| Escola/território | Melhorar alimentação escolar antes de fatores metabólicos se difundirem | Distribuição de riscos na comunidade | Primordial (também promoção da saúde) |
-| UBS | Vacinar suscetível contra sarampo | Evitar doença antes de ocorrer | Primária, proteção específica |
-| Ambulatório especializado | Detectar nefropatia inicial em DM conhecido | Detectar complicação ainda sem manifestação | Secundária **da complicação** |
-| Hospital | Reabilitar pessoa após AVC incapacitante | Reduzir impacto funcional de doença estabelecida | Terciária |
-| Enfermaria | Revisar antibiótico iniciado sem evidência e evitar evento adverso | Evitar iatrogenia de intervenção | Quaternária |
-| UBS/hospital | Orientar cessação de tabaco após infarto | Prevenir **novo evento** cardiovascular | Frequentemente chamada prevenção secundária cardiovascular, mas também pode ser primária de alguns outros agravos |
-
-### 11.2. Por que prevenção secundária cardiovascular não é a mesma coisa que o esquema clássico?
-
-Na cardiologia, "prevenção secundária do infarto/AVC" frequentemente significa impedir **recorrência** em quem já teve evento; pode envolver estatina, controle pressórico, antiagregação e reabilitação conforme indicação. No modelo clássico de Leavell e Clark, cuidados e reabilitação de pessoa com doença estabelecida podem estar próximos de **terciária** para aquela doença. A diferença é de **referente terminológico**, não contradição clínica.
-
-Para resolver questão: perguntar se o enunciado quer classificar **fase do processo doença/lesão/incapacidade** ou **prevenção de um segundo evento do mesmo tipo em diretriz cardiológica**. Responder com nomenclatura correta no contexto e explicar por quê.
-
-### 11.3. O sistema precisa acompanhar o paciente entre etapas
-
-Uma pessoa apresenta evento cardíaco agudo, é estabilizada no pronto-socorro, internada, recebe alta e necessita reabilitação. Se a APS não recebe resumo de internação, não reavalia medicações e não identifica barreiras de acesso, a linha de cuidado é fragmentada. **Coordenação e longitudinalidade** significam planejar seguimento, revisar objetivos, compartilhar informações relevantes com consentimento, monitorar riscos e reconciliar medicamentos.
-
-**Exemplo:** paciente com AVC e disfagia tem risco de pneumonia aspirativa e desnutrição. Durante internação: estabilização e avaliação de deglutição. Na alta: fonoaudiologia, fisioterapia, adaptação de alimentação/ambiente, suporte à cuidadora e revisão farmacológica. São medidas de reabilitação/prevenção de consequências, não dispensáveis por o AVC "já ter ocorrido".
-
-### 11.4. Controle social e dever do SUS além da clínica
-
-Lei 8.080/1990 organiza condições para acesso universal; Lei 8.142/1990 regula participação da comunidade e transferências intergovernamentais de recursos. **Conselhos de saúde** e **conferências de saúde** são instâncias distintas: os primeiros acompanham, formulam estratégias e fiscalizam execução de política em caráter permanente; as conferências avaliam situação de saúde e propõem diretrizes de forma periódica. Esses arranjos permitem debater se território precisa mais de ações de prevenção ambiental, vacinação, reabilitação ou outra prioridade, mas não substituem decisão clínica individual.
-
-**Ponto de prova:** os princípios doutrinários (universalidade, integralidade e equidade na formulação pedagógica usual) não correspondem aos níveis primário/secundário/terciário de atenção nem aos níveis de prevenção; questões podem usar os mesmos nomes e induzir erro semântico.
-
-### 11.5. A transição demográfica, epidemiológica e nutricional
-
-**Transição demográfica** descreve mudança de padrões de mortalidade/fecundidade, com envelhecimento populacional e alteração da estrutura etária. **Transição epidemiológica** analisa mudanças na distribuição das causas de morbimortalidade, frequentemente com maior peso de DCNT quando expectativa de vida aumenta — mas não é progresso linear obrigatório e uniforme. **Transição nutricional** envolve mudanças do perfil alimentar, da desnutrição, da obesidade e das doenças relacionadas, podendo coexistir deficiências e excesso de peso na mesma população.
-
-**Brasil:** coexistem DCNT cardiovasculares/neoplasias, infecções e arboviroses, violência/acidentes e desigualdades de saneamento/infância; chamar isso de "dupla" ou "tripla carga" depende do modelo e do que se classifica como causas externas. O território não segue linha única: uma comunidade pode enfrentar dengue, desnutrição e DM2 simultaneamente.
-
-**Consequência para programas:** uma UBS que dedica todo orçamento apenas a diagnóstico de hipertensão pode negligenciar vacinação e saúde ambiental, e outra que trata só febres pode perder oportunidade de prevenção de doença cardiovascular. A distribuição de esforços deve considerar incidência, gravidade, vulnerabilidade, capacidade de intervenção e preferência comunitária.
-
-### 11.6. Exposoma, curso da vida e janelas críticas
-
-O **curso da vida** reconhece que exposições precoces podem produzir efeitos tardios: desnutrição e violência na infância, exposição ocupacional cumulativa, tabagismo, ambiente poluído e estresse crônico influenciam risco de doenças décadas depois. O termo **exposoma** descreve conjunto amplo de exposições ao longo da vida, biológicas, químicas, sociais e comportamentais, e suas interações. Nem todo marcador de exposição medido em estudo estabelece causa clínica individual, mas o conceito melhora prevenção.
-
-**Janelas críticas:** vacinação gestacional, nutrição nos primeiros anos e prevenção de exposição fetal a álcool ou outros teratógenos têm valor porque atuam em períodos de desenvolvimento específicos. Prevenção também se acumula ao longo da vida — controle de PA aos 40 anos e apoio a exercício aos 70 anos podem oferecer benefícios diferentes. O custo de oportunidade é grande quando políticas esperam lesão final para agir.
-
-### 11.7. Um território pode precisar de ações de níveis diferentes para a mesma doença
-
-Considere **DPOC associada a tabagismo**:
-- Primordial: políticas públicas que reduzam iniciação do tabagismo na adolescência.
-- Primária: cessação tabágica em pessoa ainda sem DPOC, redução de exposição ocupacional e ambiental.
-- Secundária: avaliação diagnóstica oportuna de pessoa com tosse/dispneia e fatores de risco, após sintomas (melhor chamada diagnóstico precoce, não "rastreio universal por espirometria").
-- Terciária: reabilitação pulmonar, vacinação indicada, prevenção de exacerbações, suporte funcional e tratamento de doença estabelecida.
-- Quaternária: evitar antibiótico e corticoide em toda tosse sem indicação, retirar oxigênio prescrito indevidamente e reduzir exposição a medicamentos de benefício incerto.
-
-Essas categorias não são uma sequência de "uma por ano": várias podem estar presentes simultaneamente na população ou no paciente.
-
-### 11.8. Planejar intervenção usando modelo lógico
-
-**Insumos → atividades → produtos → resultados intermediários → resultados finais.**  
-Uma política de vacinação escolar tem insumos (vacinas, equipe, transporte, informação), atividades (buscar faltosos, encontros), produtos (doses aplicadas/registradas), resultados intermediários (cobertura válida, equidade por escola) e finais (redução de doença grave/transmissão). Avaliação não deve chamar "100 palestras realizadas" de sucesso se cobertura continuou baixa.
-
-Uma campanha antitabaco tem processos de fiscalização, apoio à cessação e educação; desfechos mais próximos são prevalência de fumantes/exposição à fumaça, e desfechos tardios incluem câncer pulmonar e mortalidade cardiovascular. **O tempo de observação** deve corresponder à história natural: não esperar queda imediata de câncer de pulmão um mês após política recém-instituída.
-
-**Dados insuficientes:** avaliação formal pode exigir grupos comparadores, séries temporais ou métodos qualitativos e considerar outros determinantes. Programas não devem interromper ações comprovadas só porque um desfecho de longo prazo ainda não pôde ser medido.
-
 ## 12. Indicadores para avaliar se uma ação preventiva realmente funciona
 
 - **Cobertura:** fração da população-alvo que efetivamente recebeu intervenção indicada, não número bruto de aplicações.
@@ -373,55 +215,6 @@ Uma campanha antitabaco tem processos de fiscalização, apoio à cessação e e
 **Exames:** selecionar apenas conforme problemas/risco, não painéis indiscriminados.
 **Conduta:** decisão compartilhada e documentação dos riscos, manutenção de cuidados úteis e plano de retorno para sintomas novos.
 **Por que importa:** não realizar exame também pode ser cuidado baseado em evidências quando o benefício líquido é desfavorável.
-
-
-### Caso 5 — gradiente social e asma em território vulnerável
-**Apresentação:** UBS registra frequentes consultas por crises asmáticas em crianças de uma microárea próxima a corredor de tráfego, com moradias úmidas e queima de lixo; em outro bairro de renda alta as visitas por crise são menores. Gestor propõe aumentar apenas número de nebulizações no pronto atendimento.  
-**Hipóteses:** carga ambiental e social de exacerbações asmáticas, com barreiras de diagnóstico e cuidado; associação geográfica que necessita investigação causal e vigilância.  
-**Raciocínio:** crise já instalada exige tratamento clínico, mas prevenção primordial envolve reduzir exposição estrutural (poluição, moradia) e prevenção primária reduzir riscos em suscetíveis. O acesso a controlador, técnica inalatória e plano de ação pode reduzir exacerbações em quem já tem doença; é parte de controle/terciária dependendo do alvo. A diferença entre bairros não demonstra por si só qual exposição causou cada crise.  
-**Exames/dados:** curva temporal de atendimentos, perfil de idade, padrões de diagnóstico, adesão e técnica, mapas de umidade/poluição com privacidade, participação de famílias, registro de hospitalização/uso de UTI.  
-**Conduta:** cuidado clínico para cada criança + articulação intersetorial e comunitária para ambiente seguro, qualidade do ar e moradia; metas de redução de exposição, crises e iniquidade de acesso.  
-**Por que importa:** ensina que prevenção não é apenas "mais atendimento" e que o território influencia o curso da doença.
-
-### Caso 6 — prevenção secundária do AVC versus terciária no modelo clássico
-**Apresentação:** homem de 64 anos após AVC isquêmico apresenta hemiparesia leve e disfagia, precisa de reabilitação; médico também prescreve controle pressórico, estatina e outras medidas indicadas para evitar novo evento. Questão pede o nível de prevenção da fisioterapia e depois pergunta pela expressão cardiológica "prevenção secundária do AVC".  
-**Hipóteses/conceitos:** duas classificações com **referentes diferentes**.  
-**Raciocínio:** reabilitação de sequela estabelecida é **terciária no modelo clássico**; estratégia para evitar **recorrência de AVC** é frequentemente chamada secundária em neurologia/cardiologia. A prescrição pode ser a mesma em ambos discursos; o rótulo muda porque o desfecho alvo muda.  
-**Exames/dados:** avaliar déficits funcionais, deglutição, controle de fatores de risco e adesão; necessidade de equipe multiprofissional.  
-**Conduta:** reabilitação, prevenção de broncoaspiração, manejo de risco cardiovascular e coordenação da APS com hospital.  
-**Por que importa:** evita perder questão por supor que só existe uma definição universal de "prevenção secundária".
-
-### Caso 7 — incidência baixa não significa programa preventivo ineficaz
-**Apresentação:** município introduz ação intersetorial de saneamento. No mês seguinte os casos notificados de diarreia diminuem, mas muitos bairros têm mudança na disponibilidade de testes e houve período seco. Prefeito atribui 100% da queda às obras.  
-**Hipóteses:** efeito benéfico possível de saneamento, com confusão temporal/viés de detecção e sazonalidade.  
-**Raciocínio:** contagem bruta de casos depende de tamanho populacional, definição, vigilância/diagnóstico e época do ano. É necessário comparar taxas por população, qualidade da água, internações e outros desfechos, com tempo e grupos comparadores adequados.  
-**Exames/dados:** séries históricas estratificadas, população, cobertura/qualidade de água, notificações, hospitalizações e adesão ao monitoramento, território com implementação gradual quando possível.  
-**Conduta:** manter ações tecnicamente justificadas enquanto avalia impacto com metodologia, ajustando vigilância e buscando comunidades excluídas.  
-**Por que importa:** separa monitoramento de atividade e inferência causal.
-
-### Caso 8 — diabetes, risco e múltiplos níveis no mesmo paciente
-**Apresentação:** mulher de 57 anos vive com DM2 há 11 anos, hipertensão, albuminúria incipiente e neuropatia periférica com perda de sensibilidade. No mesmo atendimento, pede orientações para netos adolescentes com sedentarismo, revisão de medicações e curativo de fissura do pé.  
-**Hipóteses/conceitos:** a classificação preventiva depende do **alvo específico**, não da pessoa ou da especialidade.  
-**Raciocínio:** ambiente escolar/urbano que impeça instalação de sedentarismo na geração jovem pode ser primordial; aconselhamento dos netos antes da doença, primário; rastreio apropriado de retinopatia/nefropatia inicial, secundário **das complicações**; prevenção de úlcera neuropática e reabilitação de limitação em diabetes estabelecido, terciário; reduzir medicações sem indicação, quaternário.  
-**Exames/dados:** HbA1c/PA/renal conforme cuidado de DM, avaliação sensibilidade/perfusão dos pés, exame ocular e revisão da farmacoterapia; não transformar todo exame em rastreio de doença inexistente.  
-**Conduta:** cuidado longitudinal centrado em riscos, tratamento de neuropatia/lesão, prevenção de úlcera e reavaliação compartilhada de intervenções sem benefício; apoio escolar/territorial em paralelo.  
-**Por que importa:** mostra por que **um único paciente pode receber todos os níveis** de prevenção na mesma semana.
-
-### Caso 9 — transição epidemiológica no território
-**Apresentação:** município de 40 mil habitantes apresenta aumento de idosos, pressão crescente por tratamento de DM e insuficiência cardíaca, mas também epidemias de dengue e elevado número de mortes por acidentes de motocicleta. A gestão decide extinguir vigilância de arboviroses para "investir só em DCNT porque estamos em transição epidemiológica".  
-**Hipóteses/conceitos:** convivência de doenças crônicas, infecciosas e causas externas — transição não implica substituição completa das causas anteriores.  
-**Raciocínio:** envelhecimento modifica a prevalência de DCNT, mas epidemiologia local pode incluir riscos simultâneos e emergentes. A decisão exige dados por idade, território, gravidade, custos de oportunidade e capacidade de intervenção.  
-**Exames/dados:** séries de mortalidade/idade ajustada, incidência de dengue, hospitalizações por DCNT, acidentes, vulnerabilidades socioambientais.  
-**Conduta:** planejamento integrado de APS, vigilância, urgência, mobilidade e reabilitação; priorização transparente sem supressão de programas essenciais.  
-**Por que importa:** transforma "transição epidemiológica" de expressão decorada em instrumento de planejamento.
-
-### Caso 10 — política antitabaco: benefício pequeno por pessoa, grande na comunidade
-**Apresentação:** gestores querem concentrar toda verba de prevenção do tabagismo nos cem fumantes de maior carga tabágica. Uma equipe argumenta que regular ambientes e publicidade para milhares de adolescentes não fumantes pode evitar mais novos fumantes ao longo do tempo.  
-**Hipóteses/conceitos:** estratégia de alto risco versus estratégia populacional, prevenção primordial versus primária.  
-**Raciocínio:** atuar em quem já fuma é importante, mas impedir instalação de hábito em grande população pode reduzir eventos totais de forma relevante. O **paradoxo da prevenção** afirma que benefício individual modesto pode somar benefício populacional grande.  
-**Exames/dados:** prevalência do tabagismo por idade, início de uso, exposição passiva, taxas de cessação, custos e impactos sociais, longitudinalmente.  
-**Conduta:** combinar política populacional com acesso ao tratamento de cessação, monitorar desigualdades e efeitos não intencionais.  
-**Por que importa:** evita falso dilema e mostra como níveis de prevenção se complementam.
 
 ## 14. Oito questões autorais com comentários
 
@@ -489,72 +282,6 @@ C. Prevenção secundária de AVC, no sentido de prevenir recorrência após eve
 D. Prevenção primordial por evitar exposição social inicial.
 **Gabarito C.** Especialidades usam “prevenção secundária” para evitar recorrência de evento já ocorrido, o que não é exatamente o mesmo recorte temporal de Leavell e Clark. **A** não é triagem. **B** apaga diferença terminológica. **D** não corresponde ao cenário. **Revisão:** explicitar doença-alvo e o vocabulário da pergunta.
 
-
-### Questão 9 — história natural não determinista
-O modelo clássico da história natural da doença é corretamente entendido como:
-A. Evolução inevitável da exposição à morte.  
-B. Relação de estados e transições probabilísticas, cujo curso pode ser modificado por fatores/intervenções.  
-C. Sequência exclusiva das doenças infecciosas.  
-D. Calendário sem influência de ambiente ou tratamento.
-**Gabarito B.** Exposição não determina desfecho em toda pessoa. **A:** ignora probabilidades/remissão. **C:** aplica-se também a doenças crônicas, com limites. **D:** ignora mecanismo e intervenções. **Mini-revisão:** suscetibilidade e risco não são destino.
-
-### Questão 10 — paradoxo da prevenção
-Em população com muito mais indivíduos de risco intermediário que alto risco, pode ocorrer:
-A. Número absoluto de eventos maior entre risco intermediário, apesar de menor risco individual.  
-B. Necessariamente todos os eventos no grupo de alto risco.  
-C. Ausência de benefício de qualquer política populacional.  
-D. Impossibilidade de coexistirem abordagens populacional e individual.
-**Gabarito A.** Tamanho populacional importa no total de casos. **B:** não há essa regra. **C:** intervenções populacionais podem mudar distribuição. **D:** são complementares. **Mini-revisão:** não confundir maior taxa de risco e maior número de eventos.
-
-### Questão 11 — gradiente social
-A Lei 8.080/1990, art. 3º, reconhece determinantes como:
-A. Apenas idade e composição genética.  
-B. Exclusivamente exames de laboratório.  
-C. Moradia, saneamento, renda, trabalho, educação e outros fatores sociais/ambientais.  
-D. Apenas número de consultas hospitalares.
-**Gabarito C.** A lei reconhece múltiplos determinantes e condicionantes. **A/B/D:** reducionistas. **Mini-revisão:** saúde reflete organização social/econômica e condições materiais.
-
-### Questão 12 — nível de atenção versus nível de prevenção
-Vacinação de profissional de saúde contra hepatite B realizada em hospital universitário é:
-A. Prevenção terciária porque ocorreu em hospital terciário.  
-B. Prevenção primária para hepatite B, apesar do nível de complexidade do serviço.  
-C. Sempre prevenção secundária porque o profissional é adulto.  
-D. Prevenção quaternária pelo local da aplicação.
-**Gabarito B.** A vacina busca evitar doença. **A/C/D:** confundem local/idade com alvo. **Mini-revisão:** **nível de atenção ≠ nível de prevenção**.
-
-### Questão 13 — "prevenção secundária" cardiovascular
-Paciente após AVC inicia fisioterapia e prevenção de recorrência. No modelo clássico, reabilitação de sequela é:
-A. Primordial.  
-B. Exclusivamente primária.  
-C. Sempre secundária independentemente da definição.  
-D. Terciária, enquanto evitar novo AVC costuma ser chamado secundária em diretrizes cardiovasculares.
-**Gabarito D.** Alvos diferentes explicam o nome. **A/B:** não correspondem. **C:** ignora terminologia. **Mini-revisão:** especificar doença/complicação e referencial.
-
-### Questão 14 — avaliando saneamento
-Uma cidade observou queda de diarreia logo após obra de saneamento. Qual interpretação científica?
-A. A queda isolada prova causalidade 100%.  
-B. Saneamento nunca altera diarreia.  
-C. Investigar sazonalidade, detecção, população, exposição e comparação antes de atribuir todo efeito à intervenção.  
-D. Usar apenas número de palestras como desfecho.
-**Gabarito C.** Efeito plausível deve ser avaliado com métodos adequados. **A:** confundimento temporal. **B:** nega mecanismo estabelecido. **D:** produto não é desfecho. **Mini-revisão:** avaliação de programa ≠ contagem de atividades.
-
-### Questão 15 — transição epidemiológica
-Município envelhece, registra mais DCNT, mas segue com dengue e mortalidade por acidentes. Conclusão mais adequada:
-A. Transição pode coexistir com carga infecciosa e causas externas; planejar múltiplas respostas por território.  
-B. Epidemias necessariamente desapareceram.  
-C. Mortalidade por acidente deixa de ser agravo de saúde pública.  
-D. Vigilância epidemiológica deve ser extinta.
-**Gabarito A.** Não existe substituição completa obrigatória. **B/C/D:** erros de planejamento. **Mini-revisão:** carga múltipla é marca de desigualdade e heterogeneidade.
-
-### Questão 16 — prevenção em diabetes e complicações
-Pessoa com DM2 estabelecido realiza avaliação para detectar retinopatia ainda assintomática e recebe reabilitação de neuropatia incapacitante. É correto:
-A. Tudo é primário porque ocorreu na UBS.  
-B. Retinopatia é sempre terciária porque há DM2.  
-C. Reabilitação é apenas secundária porque há exames.  
-D. Detecção precoce da **complicação** é secundária dessa complicação, e reabilitação de dano instalado é terciária.
-**Gabarito D.** O alvo determina classificação. **A/B/C:** confundem doença principal, local e fase da complicação. **Mini-revisão:** coexistência de níveis no mesmo paciente.
-
-
 ## 15. Pulo do Gato
 
 - A história natural **não** supõe progressão inevitável da exposição à morte.
@@ -601,54 +328,9 @@ A LURIA pode produzir esquemas originais internamente. Imagens clínicas reais d
 - [x] Fontes primárias e comparação parcial do Drive explícitas.
 - [ ] Livro comparativo equivalente no Drive e leitura de fonte brasileira acadêmica abrangente em medicina preventiva.
 - [ ] Ampliar políticas intersetoriais, linha de cuidado baseada em dados brasileiros, conceitos de transição epidemiológica e avaliação de programas preventivos.
-- [x] Superado o piso de **60 mil caracteres brutos** com aprofundamento novo em 15/10/2026; **não** equivale a 60 mil caracteres didáticos líquidos validados nem a certificação; manter a diferenciação frente à aula 125.
+- [ ] Desenvolver volume premium de ≥60 mil caracteres didáticos úteis **somente** com aprofundamento novo; não reproduzir a aula 125.
 - [ ] Selecionar figuras originais e imagens clínicas reais, verificar licença e aprovação.
 - [ ] Revisão médico-editorial e auditagem de bibliografia com edição do livro-texto histórico.
 - [ ] Validação de integração em HTML e experiência de leitura desktop/PWA.
 
 **Parecer:** rascunho de Medicina Preventiva com escopo próprio e relação explícita com aula 125, NÃO PUBLICADO.
-
-## 14A. Matriz de competências — curso próprio distinto da aula 125
-
-| Competência | Capítulo base e ampliação | Exemplo | Questão |
-|---|---|---|---|
-| Desenhar história natural com ramificações | 1, 2.5–2.8 | Tuberculose/DRC | 9 |
-| Causalidade necessária/componente | 2.6 | HPV, tabaco | 9 |
-| Evitar confundir transmissibilidade/incubação | 2.3–2.7 | Sarampo e exposições crônicas | discussão clínica |
-| Diferenciar primordial e primária | 3, 3.1–3.5, 4 | Casos 5 e 10 | 10 |
-| Identificar determinantes sociais e equidade | 3.3–3.5, 11 | Caso 5 | 11 |
-| Separar níveis de atenção e prevenção | 8, 11.1 | Caso 6 | 12 |
-| Explicar secundária cardiovascular e terciária clássica | 6, 11.2 | Caso 6 | 13 |
-| Avaliar política intersetorial | 3.5, 11.8, 12 | Caso 7 | 14 |
-| Aplicar transições e carga múltipla | 11.5 | Caso 9 | 15 |
-| Classificar múltiplos níveis no mesmo paciente | 9.4, 11.7 | Caso 8 | 16 |
-| Coordenar alta e continuidade | 11.3–11.4 | Caso 6 | 13 |
-
-## 17A. Referências e comparação atualizadas nesta rodada
-
-**Etapa zero:** a equipe abriu e releu “SUS.pdf” (2.670 caracteres extraídos) e “Estudos Epidemiológicos.pdf” (3.081) do Drive em 15/10/2026, com autoria institucional do Estratégia MED **não identificada**. São resumos de princípios do SUS e desenhos de estudos, não livro abrangente sobre história natural e prevenção. O rascunho LURIA existente foi auditado antes de inserir mecanismos causais, prevenção populacional, território, transição epidemiológica e linha de cuidado. Não foram reproduzidos textos/ilustrações dos comparativos. A aula 125 foi usada como fronteira: manter rastreamentos, matemática de testes e políticas de detecção específicas **lá**, não repetir aqui.
-
-- Brasil. **Lei nº 8.080, de 19 de setembro de 1990**, art. 3º, com redação da Lei 12.864/2013, determinantes/condicionantes da saúde. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
-- Brasil. **Lei nº 8.142, de 28 de dezembro de 1990**, participação da comunidade e transferências de recursos na saúde. https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
-- OMS. **World report on social determinants of health equity.** Publicado 06/05/2025. https://www.who.int/publications/i/item/9789240107588
-- OMS. **Social determinants of health equity — World Report 2025**, página informativa pública. https://www.who.int/teams/social-determinants-of-health/equity-and-health/world-report-on-social-determinants-of-health-equity
-- Leavell HR, Clark EG. *Preventive Medicine for the Doctor in His Community*. Referência histórica; edição exata e texto integral ainda precisam de checagem bibliográfica antes de citar páginas específicas.
-- Geoffrey Rose. *The Strategy of Preventive Medicine*. Referência de conceito de prevenção populacional/paradoxo preventivo; conferir edição e páginas exatas antes da publicação.
-
-**Licença de publicação:** o relatório OMS completo usa condições de licença com restrição de uso comercial para reprodução/adaptação; a LURIA **não copiou imagens, gráficos ou tabelas**, apenas usou conceitos e dados de apresentação pública com atribuição.
-
-## 18A. Auditoria após continuação em outubro de 2026
-
-- [x] Ampliados história natural probabilística, remissão/recorrência e temporalidade causal.
-- [x] Causa necessária/componente, fatores estruturais e curso de vida.
-- [x] Estratégia populacional versus alto risco, paradoxo da prevenção, políticas ambientais.
-- [x] Determinantes sociais, equidade territorial e transições demográfica/epidemiológica/nutricional.
-- [x] Diferenciados rigorosamente nível de atenção e nível de prevenção, incluindo prevenção secundária cardiovascular.
-- [x] Construída linha de cuidado, modelo lógico e avaliação de programas.
-- [x] Seis casos novos (5–10), oito questões novas (9–16) e matriz de autossuficiência.
-- [ ] Confirmar relevância/edições completas dos livros clássicos e exemplos oficiais brasileiros com revisão acadêmica independente.
-- [ ] Avaliar fluidez e repetição entre seções originalmente curtas e ampliação, sem converter tudo em blocos extensos para contar caracteres.
-- [ ] Desenvolver diagramas **originais** da história natural/risco populacional/linha de cuidado; verificar licença comercial e aprovar no fluxo de imagens Admin.
-- [ ] Fazer teste independente de questões e de autossuficiência integral; integrar HTML e validar PWA após aprovação.
-**Situação: rascunho com ampliação de conteúdo próprio, NÃO certificado/público.**
-
