@@ -1,0 +1,972 @@
+{
+  "v": 2,
+  "s": "diverticulite-aguda",
+  "t": "Diverticulite Aguda",
+  "p": "Tratado completo de Diverticulite Aguda para concursos de Residência Médica e ENAMED: epidemiologia da doença diverticular dos cólons e anatomia patológica dos pseudodivertículos por pulsação na vasa recta do sigmoide (Lei de Laplace); fisiopatologia da microperfuração primária e translocação bacteriana; disbiose da microbiota colônica e Colite Segmentar Associada à Diverticulose (SCAD); hemorragia digestiva diverticular indolor no cólon direito (fisiopatologia da vasa recta, colonoscopia com hemoclipes, angio-TC, arteriografia com embolização superseletiva e colectomia subtotal); manifestações clínicas típicas em fossa ilíaca esquerda (\"apendicite do lado esquerdo\") e atípicas (diverticulite cecal e do cólon direito); Tomografia Computadorizada de abdome e pelve com contraste intravenoso como exame de escolha padrão-ouro; contraindicação absoluta formal de colonoscopia e enema baritado na fase aguda (risco de macroperfuração livre e peritonite fecal/química); Classificação de Hinchey modificada por TC (estágios 0, Ia, Ib, II, III e IV); a revolução no tratamento da diverticulite não complicada em pacientes imunocompetentes sem sepse (ensaios AVOD e DIABOLO: conduta ambulatorial sem antibióticos com dieta e analgesia); manejo escalonado da diverticulite complicada: antibioticoterapia intravenosa de amplo espectro, drenagem percutânea guiada por TC para abscessos intra-abdominais >= 3 a 4 cm; indicações de cirurgia de urgência (peritonite purulenta e fecal): Cirurgia de Hartmann clássica vs ressecção primária com anastomose e ileostomia de proteção; regras obrigatórias de seguimento pós-agudo com colonoscopia total após 6 a 8 semanas para exclusão de adenocarcinoma colorretal oculto; fístulas colovesicais (pneumatúria e fecalúria) e colovaginais; casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+  "d": "Tratado completo de Diverticulite Aguda para concursos de Residência Médica e ENAMED: epidemiologia da doença diverticular dos cólons e anatomia patológica dos pseudodivertículos por pulsação na vasa recta do sigmoide (Lei de Laplace); fisiopatologia da microperfuração primária e translocação bacteriana; disbiose da microbiota colônica e Colite Segmentar Associada à Diverticulose (SCAD); hemorragia digestiva diverticular indolor no cólon direito (fisiopatologia da vasa recta, colonoscopia com hemoclipes, angio-TC, arteriografia com embolização superseletiva e colectomia subtotal); manifestações clínicas típicas em fossa ilíaca esquerda (\"apendicite do lado esquerdo\") e atípicas (diverticulite cecal e do cólon direito); Tomografia Computadorizada de abdome e pelve com contraste intravenoso como exame de escolha padrão-ouro; contraindicação absoluta formal de colonoscopia e enema baritado na fase aguda (risco de macroperfuração livre e peritonite fecal/química); Classificação de Hinchey modificada por TC (estágios 0, Ia, Ib, II, III e IV); a revolução no tratamento da diverticulite não complicada em pacientes imunocompetentes sem sepse (ensaios AVOD e DIABOLO: conduta ambulatorial sem antibióticos com dieta e analgesia); manejo escalonado da diverticulite complicada: antibioticoterapia intravenosa de amplo espectro, drenagem percutânea guiada por TC para abscessos intra-abdominais >= 3 a 4 cm; indicações de cirurgia de urgência (peritonite purulenta e fecal): Cirurgia de Hartmann clássica vs ressecção primária com anastomose e ileostomia de proteção; regras obrigatórias de seguimento pós-agudo com colonoscopia total após 6 a 8 semanas para exclusão de adenocarcinoma colorretal oculto; fístulas colovesicais (pneumatúria e fecalúria) e colovaginais; casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+  "a": "Cirurgia Geral",
+  "m": "Coloproctologia e Urgências Abdominais",
+  "h": [
+    "Apostila LURIA",
+    "Diverticulite Aguda",
+    "Tratado completo de Diverticulite Aguda para concursos de Residência Médica e ENAMED: epidemiologia da doença diverticular dos cólons e anatomia patológica dos pseudodivertículos por pulsação na vasa recta do sigmoide (Lei de Laplace); fisiopatologia da microperfuração primária e translocação bacteriana; disbiose da microbiota colônica e Colite Segmentar Associada à Diverticulose (SCAD); hemorragia digestiva diverticular indolor no cólon direito (fisiopatologia da vasa recta, colonoscopia com hemoclipes, angio-TC, arteriografia com embolização superseletiva e colectomia subtotal); manifestações clínicas típicas em fossa ilíaca esquerda (\"apendicite do lado esquerdo\") e atípicas (diverticulite cecal e do cólon direito); Tomografia Computadorizada de abdome e pelve com contraste intravenoso como exame de escolha padrão-ouro; contraindicação absoluta formal de colonoscopia e enema baritado na fase aguda (risco de macroperfuração livre e peritonite fecal/química); Classificação de Hinchey modificada por TC (estágios 0, Ia, Ib, II, III e IV); a revolução no tratamento da diverticulite não complicada em pacientes imunocompetentes sem sepse (ensaios AVOD e DIABOLO: conduta ambulatorial sem antibióticos com dieta e analgesia); manejo escalonado da diverticulite complicada: antibioticoterapia intravenosa de amplo espectro, drenagem percutânea guiada por TC para abscessos intra-abdominais >= 3 a 4 cm; indicações de cirurgia de urgência (peritonite purulenta e fecal): Cirurgia de Hartmann clássica vs ressecção primária com anastomose e ileostomia de proteção; regras obrigatórias de seguimento pós-agudo com colonoscopia total após 6 a 8 semanas para exclusão de adenocarcinoma colorretal oculto; fístulas colovesicais (pneumatúria e fecalúria) e colovaginais; casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Coloproctologia e Urgências Abdominais",
+      "Tema: Diverticulite Aguda"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "epidemiologia-fisiopatologia-pseudodiverticulos-microperfuracao",
+      "1. Epidemiologia e Fisiopatologia: Formação dos Pseudodivertículos Cólicos e Cascata da Micro/Macroperfuração"
+    ],
+    [
+      "microbiota-imunopatologia-e-doenca-diverticular-cronica",
+      "2. Microbiota Intestinal, Imunopatologia da Barreira Cólica e Síndrome SCAD"
+    ],
+    [
+      "quadro-clinico-diagnostico-tc-contraindicacoes",
+      "2. Quadro Clínico, Propedêutica Armada: Tomografia Computadorizada como Padrão-Ouro e Contraindicação Absoluta de Endoscopia"
+    ],
+    [
+      "classificacao-hinchey-estadiamento-tomografico",
+      "3. A Classificação de Hinchey Modificada: Estratificação Tomográfica e Prognóstica"
+    ],
+    [
+      "conduta-clinica-ambulatorial-vs-internacao-antibioticos",
+      "4. Manejo Terapêutico da Diverticulite Não Complicada: A Mudança de Paradigma dos Antibióticos e Critérios de Internação"
+    ],
+    [
+      "hemorragia-digestiva-diverticular-diagnostico-conduta",
+      "5. Hemorragia Digestiva Diverticular: Fisiopatologia, Diagnóstico Diferencial e Conduta Emergencial"
+    ],
+    [
+      "manejo-diverticulite-complicada-drenagem-hartmann-seguimento",
+      "5. Manejo da Diverticulite Complicada: Drenagem Percutânea de Abscessos, Cirurgia de Urgência e Rastreamento Pós-Agudo"
+    ],
+    [
+      "casos-clinicos-estruturados-diverticulite",
+      "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico-Cirúrgico Passo a Passo"
+    ],
+    [
+      "questoes-concurso-comentadas-diverticulite",
+      "7. Questões de Concursos de Residência Médica e Título de Cirurgia Geral Comentadas Passo a Passo"
+    ],
+    [
+      "conclusao-recomendações-finais-referencias-diverticulite",
+      "8. Síntese Terapêutica Integrada e Referências Internacionais Oficiais"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "epidemiologia-fisiopatologia-pseudodiverticulos-microperfuracao",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia e Fisiopatologia: Formação dos Pseudodivertículos Cólicos e Cascata da Micro/Macroperfuração"
+        ],
+        [
+          "3",
+          "Conceito e Epidemiologia da Doença Diverticular dos Cólons"
+        ],
+        [
+          "p",
+          "A <strong>Doença Diverticular dos Cólons (DDC)</strong> é uma afecção gastrointestinal de elevadíssima prevalência nas sociedades ocidentais industrializadas, exibindo forte correlação etiológica com o envelhecimento populacional, hábitos alimentares ultraprocessados com extrema escassez de fibras dietéticas solúveis e insolúveis, sedentarismo, constipação intestinal crônica e obesidade visceral. A prevalência da diverticulose cólica é inferior a 5% em indivíduos com menos de 40 anos, elevando-se vertiginosamente para <strong>30% aos 60 anos</strong> e superando <strong>65% a 70% na população octogenária (&gt; 80 anos)</strong>."
+        ],
+        [
+          "p",
+          "Historicamente, cerca de 80% a 85% das pessoas portadoras de divertículos colônicos permanecem completamente assintomáticas ao longo de toda a vida (<em>diverticulose assintomática</em> — achado incidental em colonoscopias ou tomografias computadorizadas). Entretanto, aproximadamente <strong>10% a 25% dos indivíduos com diverticulose manifestarão algum episódio sintomático ao longo da história natural da doença</strong>, subdividindo-se em duas síndromes clínicas maiores:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diverticulite Aguda (Inflamação e Perfuração Diverticular):</strong> Responde pela grande maioria das admissões hospitalares por dor abdominal na fossa ilíaca esquerda no adulto e idoso;",
+            "<strong>Hemorragia Digestiva Diverticular:</strong> Principal causa isolada de hemorragia digestiva baixa (HDB) maciça no idoso (responsável por 40% a 50% dos episódios de enterorragia aguda). Ocorre predominantemente em <em>cólon direito</em> por erosão mecânica e adelgaçamento excêntrico da arteríola nutridora sobre a cúpula do divertículo, cursando classicamente <strong>SEM inflamação concomitante</strong> (sangramento indolor)."
+          ]
+        ],
+        [
+          "3",
+          "Anatomia Patológica e a Formação dos \"Pseudodivertículos\""
+        ],
+        [
+          "p",
+          "Diferentemente dos divertículos verdadeiros do trato gastrointestinal (como o divertículo de Meckel, que é uma malformação congênita composta por todas as camadas histológicas da parede intestinal: mucosa, submucosa, muscular própria circular e longitudinal, e serosa), os <strong>divertículos colônicos adquiridos são PSEUDODIVERTÍCULOS (ou divertículos falsos de pulsação)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Composição Histológica:</strong> São herniações saculares compostas <strong>exclusivamente pela camada mucosa e submucosa</strong>, revestidas externamente apenas pelo peritônio seroso (ou gordura subserosa pericólica). A <em>túnica muscular própria NÃO faz parte da parede do divertículo</em>;",
+            "<strong>Os Pontos de Fraqueza Anatômica da Parede Cólica:</strong> No cólon humano, a camada muscular longitudinal externa não é contínua e uniforme, mas sim agrupada em três feixes espessos longitudinais denominados <strong>tênias cólicas</strong> (tênia omental, mesocólica e livre). As arteríolas retas nutrientes (<em>vasa recta</em>) que se originam da artéria marginal de Drummond penetram na parede muscular cólica entre a tênia mesocólica e as duas tênias antimesentéricas para irrigar a mucosa. <strong>Esses orifícios microscópicos por onde os vasos sanguíneos perfuram a camada muscular circular representam zonas de fraqueza anatômica congênitas</strong>;",
+            "<strong>A Lei de Laplace e o Espasmo Segmentar do Sigmoide:</strong> Segundo a <em>Lei de Laplace</em> ($P = \frac{2T}{r}$), para uma dada tensão parietal ($T$), a pressão intraluminal ($P$) gerada é inversamente proporcional ao raio ($r$) da víscera tubular:\n    $$\text{Pressão Intraluminal} propto \frac{1}{\text{Raio Cólico}}$$\n    Como o <strong>cólon sigmoide</strong> é o segmento de <strong>menor calibre (menor raio)</strong> de todo o trato cólico e o que desenvolve maior atividade motora segmentar peristáltica (contrações espasmódicas não propulsivas que isolam câmaras hiperbáricas fechadas), as pressões intraluminais no sigmoide alcançam patamares patológicos elevadíssimos. Por esse motivo biofísico, mais de <strong>90% a 95% dos pseudodivertículos cólicos na população ocidental localizam-se no CÓLON SIGMOIDE e cólon descendente</strong>."
+          ]
+        ],
+        [
+          "3",
+          "A Fisiopatologia da Diverticulite Aguda: O Primado da Micro/Macroperfuração"
+        ],
+        [
+          "p",
+          "Durante décadas, a literatura médica ensinou que a diverticulite aguda decorria de um mecanismo primário similar ao da apendicite aguda — a impactação estéril ou séptica de um fecalito no colo estreito do divertículo com retenção de secreções e supuração intraluminal (\"diverticulite como apendicite do lado esquerdo\"). Estudos anatomopatológicos contemporâneos refutaram essa teoria simples e consagraram o modelo atual:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Trauma Mecânico Focal e Abrasão Mucosa:</strong> Fezes ressecadas e endurecidas em câmara colônica hiperpressurizada exercem abrasão mecânica contínua sobre a delgada camada mucosa do fundo do divertículo, causando micro-ulcerações e quebra da barreira epitelial;",
+            "<strong>Isquemia Focal por Compressão da Vasa Recta:</strong> O alargamento progressivo do fundo do divertículo estira e comprime a arteríola reta penetrante que trafega intimamente aderida ao colo diverticular, gerando isquemia tecidual focal na cúpula do divertículo;",
+            "<strong>Microperfuração Transmural Primária:</strong> A necrose isquêmica da parede adelgaçada culmina na <strong>descontinuidade microscópica da mucosa e serosa (microperfuração)</strong>;",
+            "<strong>Translocação Bacteriana Polimicrobiana para o Espaço Pericólico:</strong> Bactérias comensais da microbiota colônica (aeróbios Gram-negativos facultativos como <em>Escherichia coli</em> e <em>Klebsiella pneumoniae</em>, associados a uma densa população de anaeróbios virulentos como <em>Bacteroides fragilis</em>, <em>Fusobacterium</em> e <em>Peptostreptococcus</em>) extravasam para a gordura mesocólica e apêndices epiploicos adjacentes;",
+            "<strong>A Dicootomia Biológica do Bloqueio Omental:</strong>\n    <ul>\n      <li><em>Diverticulite Não Complicada (Bloqueada):</em> Na grande maioria dos casos (75% a 80%), os mecanismos imunes e anatômicos de defesa do hospedeiro — em particular a migração precoce do <strong>grande omento (epíploon)</strong> e de alças de intestino delgado adjacentes — isolam com eficácia o processo inflamatório na gordura pericólica, circunscrevendo a inflamação como um flegmão localizado;",
+            "<em>Diverticulite Complicada (Macroperfuração):</em> Se a resposta de bloqueio falhar, se o inóculo bacteriano for maciço, ou se o paciente for imunossuprimido (diabético, desnutrido, usuário crônico de corticosteroides ou quimioterapia), a microperfuração progride para <strong>macroperfuração livre</strong> com formação de abscessos pericólicos ou pélvicos volumosos, fístulas para órgãos vizinhos (bexiga, vagina), estenoses obstrutivas ou peritonite fecal e purulenta generalizada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "microbiota-imunopatologia-e-doenca-diverticular-cronica",
+      0,
+      [
+        [
+          "2",
+          "2. Microbiota Intestinal, Imunopatologia da Barreira Cólica e Síndrome SCAD"
+        ],
+        [
+          "3",
+          "Disbiose da Microbiota Cólica e Quebra da Imunidade Mucosa"
+        ],
+        [
+          "p",
+          "Pesquisas metagenômicas recentes com sequenciamento de rRNA 16S demonstraram que a formação de divertículos e sua inflamação aguda associam-se a uma profunda <strong>disbiose da microbiota colônica luminal e aderida à mucosa</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Perda de Produtores de Ácidos Graxos de Cadeia Curta (AGCC):</strong> Indivíduos com doença diverticular sintomática apresentam redução significativa de bactérias comensais benéficas produtoras de butirato e acetato, em particular <em>Faecalibacterium prausnitzii</em> e espécies de <em>Bifidobacterium</em> e <em>Lactobacillus</em>. O butirato é o substrato energético primordial para os colonócitos e um potente indutor da síntese de proteínas de junção oclusiva (<em>tight junctions</em>: claudinas e ocludinas). Sua escassez acarreta adelgaçamento do muco colônico e aumento da permeabilidade da barreira epitelial;",
+            "<strong>Hiperproliferação de Espécies Pró-Inflamatórias:</strong> Ocorre expansão de proteobactérias anaeróbias facultativas e espécies de <em>Bacteroides</em> aderentes, que expressam proteases e sulfatases mucolíticas capazes de degradar a barreira mucosa defensiva;",
+            "<strong>Inflamação Microscópica Crônica de Baixo Grau:</strong> Mesmo em períodos intercríticos assintomáticos, biópsias da mucosa ao redor dos óstios diverticulares revelam infiltrado linfocitário crônico na lâmina própria e superexpressão de citocinas pró-inflamatórias (Fator de Necrose Tumoral Alfa - TNF-$alpha$, Interleucina-1$\beta$ e Interleucina-6). Esse estado microinflamatório crônico altera os plexos nervosos mioentéricos de Auerbach e submucosos de Meissner, gerando hipersensibilidade visceral, hipermotilidade segmentar e espasmo doloroso."
+          ]
+        ],
+        [
+          "3",
+          "Colite Segmentar Associada à Diverticulose (SCAD - Segmental Colitis Associated with Diverticulosis)"
+        ],
+        [
+          "p",
+          "A <strong>SCAD</strong> é uma entidade inflamatória crônica distinta e muitas vezes subdiagnosticada, caracterizada por inflamação crônica e difusa da mucosa colônica <strong>exclusivamente restrita ao segmento cólico portador de divertículos (o cólon sigmoide)</strong>, poupando rigorosamente a mucosa do reto distal e do cólon ascendente/ceco:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Diferenciação Histológica e Endoscópica:</strong> Na colonoscopia (realizada fora da crise de diverticulite), a SCAD manifesta-se por eritema mucoso difuso, friabilidade, perda do padrão vascular submucoso e úlceras superficiais na mucosa interdiverticular. Assemelha-se endoscopicamente e microscopicamente à Doença Inflamatória Intestinal (Retocolite Ulcerativa ou Doença de Crohn), mas distingue-se fundamentalmente pelo <strong>completo poupamento do reto</strong> e pela ausência de progressão para outros segmentos do trato gastrointestinal;",
+            "<strong>Quadro Clínico:</strong> Diarreia crônica com rajas de sangue, dor intermitente na FIE e tenesmo retal em indivíduos idosos portadores de diverticulose exuberante;",
+            "<strong>Tratamento Clínico Específico:</strong> Responde de forma favorável a <strong>Derivados do 5-ASA (Mesalazina 2,4 a 4,8 g/dia VO)</strong> por 4 a 12 semanas. Em casos refratários ou graves, utiliza-se curso curto de corticosteroide oral (Prednisona ou Budesonida de liberação colônica); raramente exige ressecção cirúrgica."
+          ]
+        ],
+        [
+          "3",
+          "O Papel da Dieta, Fibras e Hábitos de Vida na Prevenção Primária e Secundária"
+        ],
+        [
+          "p",
+          "Durante décadas, pacientes com diverticulose foram formalmente advertidos a evitar rigorosamente alimentos contendo sementes pequenas, grãos, milho, nozes e pipoca, sob a premissa mecânica intuitiva de que tais fragmentos poderiam impactar nos óstios dos divertículos e deflagrar diverticulite. O consagrado estudo prospectivo de coorte <strong>Health Professionals Follow-up Study (HPFS)</strong>, que acompanhou mais de 47.000 homens por 18 anos e foi publicado no JAMA (2008), <strong>desmistificou categoricamente essa crença</strong>:"
+        ],
+        [
+          "o",
+          [
+            "O consumo de nozes, pipoca e sementes (tomate, melancia, morango, gergelim) <strong>NÃO aumentou o risco de diverticulite aguda nem de hemorragia diverticular</strong>; pelo contrário, indivíduos que consumiam nozes e pipoca apresentaram menor incidência de episódios inflamatórios;",
+            "<strong>A Ingestão de Fibras Dietéticas:</strong> Uma dieta rica em fibras (<strong>25 a 35 g/dia</strong> de fibras solúveis e insolúveis: frutas com casca, aveia, leguminosas, vegetais folhosos e cereais integrais) associada à hidratação hídrica adequada ($> 2$ litros/dia) aumenta o volume e a hidratação do bolo fecal, diminuindo as contrações segmentares espasmódicas do sigmoide e reduzindo as pressões intraluminais segundo a Lei de Laplace, protegendo contra a formação e recorrência de diverticulite;",
+            "<strong>Fatores de Risco Modificáveis Independentes Comprovados:</strong>\n    <ul>\n      <li><em>Obesidade Visceral (IMC $> 30$):</em> Aumenta o risco de diverticulite complicada em mais de 40% devido à secreção de adipocinas pró-inflamatórias e maior pressão intra-abdominal crônica;",
+            "<em>Tabagismo Ativo:</em> Associa-se a um risco até 2 a 3 vezes maior de perfuração diverticular livre com peritonite fecal (Hinchey IV);",
+            "<em>Sedentarismo:</em> A prática regular de atividade física aeróbica moderada a vigorosa estimula a motilidade intestinal propulsiva fisiológica e reduz drasticamente o risco de complicações diverticulares;",
+            "<em>Uso Crônico de AINEs, Aspirina e Opioides:</em> Inibem a síntese de prostaglandinas protetoras na mucosa cólica, associando-se a maior incidência de sangramento digestivo e perfuração transmural."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-diagnostico-tc-contraindicacoes",
+      0,
+      [
+        [
+          "2",
+          "2. Quadro Clínico, Propedêutica Armada: Tomografia Computadorizada como Padrão-Ouro e Contraindicação Absoluta de Endoscopia"
+        ],
+        [
+          "3",
+          "Manifestações Clínicas e Apresentação Típica na Fossa Ilíaca Esquerda"
+        ],
+        [
+          "p",
+          "O quadro clínico clássico da diverticulite aguda é consagrado na semiologia cirúrgica como a <strong>\"Apendicite do Lado Esquerdo\"</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dor Abdominal Cardinal:</strong> Dor contínua, de início insidioso a subagudo (evolução típica de 24 a 72 horas), localizada na <strong>Fossa Ilíaca Esquerda (FIE)</strong> e no flanco esquerdo. A dor piora aos movimentos, à tosse e à deambulação, irradiando-se frequentemente para o hipogástrio e região suprapúbica;",
+            "<strong>Alteração do Hábito Intestinal:</strong> Constipação intestinal recente (em mais de 50% dos casos, decorrente de íleo paralítico reflexo ou estreitamento luminal inflamatório pelo flegmão) ou diarreia aguda paradoxal (em 25% a 30%, por irritação reflexa do reto e sigmoide);",
+            "<strong>Sintomas Urinários Irritativos de Contiguidade:</strong> Disúria, polaciúria e urgência miccional ocorrem em até 15% a 20% dos pacientes. Decorrem da aderência inflamatória direta do cólon sigmoide flegmonoso à cúpula da bexiga urinária (irritação vesical adjacente), podendo induzir piúria estéril no exame de urina (EAS);",
+            "<strong>Sinais Sistêmicos de Infecção:</strong> Febre baixa a moderada (37,8 a 38,5 ºC), anorexia, náuseas e vômitos esparsos. A presença de febre alta com calafrios em agulha sugere bacteremia sistêmica, abscesso intracavitário volumoso ou pileflebite (tromboflebite séptica da veia porta);",
+            "<strong>Exame Físico Abdominal:</strong>\n    <ul>\n      <li>Dor à palpação profunda na FIE;",
+            "<strong>Massa Palpável Dolorosa na FIE (Plastrão Diverticular):</strong> Presente em cerca de 20% a 30% dos pacientes, correspondendo ao sigmoide espessado bloqueado pelo omento e alças intestinais;",
+            "<strong>Sinais de Irritação Peritoneal:</strong> Descompressão brusca dolorosa localizada na FIE (Sinal de Blumberg positivo na FIE); descompressão brusca difusa em todo o abdome e abdome \"em tábua\" denotam peritonite generalizada por perfuração livre (Hinchey III ou IV)."
+          ]
+        ],
+        [
+          "3",
+          "Apresentações Atípicas: Diverticulite do Lado Direito e Cecal"
+        ],
+        [
+          "p",
+          "Embora incomum no Ocidente (onde responde por apenas 1,5% a 3% dos casos de diverticulite), a <strong>diverticulite cecal ou do cólon direito</strong> é extremamente prevalente em populações asiáticas (Japão, Coreia, China), nas quais atinge mais de 40% a 50% dos casos de doença diverticular. Diferentemente dos pseudodivertículos do sigmoide, os divertículos do cólon direito são frequentemente <strong>divertículos congênitos verdadeiros solitários</strong> localizados na parede anterior do ceco ou cólon ascendente. Manifesta-se clinicamente com <strong>dor aguda na Fossa Ilíaca Direita (FID), febre e leucocitose</strong>, tornando sua diferenciação pré-operatória da apendicite aguda praticamente indistinguível apenas pelo exame clínico, exigindo tomografia computadorizada multislice para evitar apendicectomias em branco ou hemicolectomias direitas desnecessárias."
+        ],
+        [
+          "3",
+          "Tomografia Computadorizada de Abdome Total e Pelve: O Padrão-Ouro Absoluto"
+        ],
+        [
+          "p",
+          "A <strong>Tomografia Computadorizada (TC) de abdome e pelve com contraste intravenoso (IV)</strong> é o exame de escolha de primeira linha indiscutível para o diagnóstico, estadiamento e planejamento terapêutico da diverticulite aguda (com sensibilidade de 95% a 98% e especificidade de 96% a 99%):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Achados Tomográficos Cardinais de Diverticulite:</strong>\n    <ol>\n      <li><strong>Presença de divertículos colônicos</strong> no segmento acometido;",
+            "<strong>Espessamento parietal circunferencial simétrico do cólon</strong> (espessura da parede cólica $> 4$ a 5 mm);",
+            "<strong>Densificação e borramento da gordura mesocólica pericólica (<em>fat stranding</em>):</strong> Marcador tomográfico mais precoce e sensível de inflamação aguda local;",
+            "<strong>Líquido livre pericólico ou pélvico</strong>;",
+            "<strong>Presença de ar extraluminal pericólico</strong> (pequenas bolhas gasosas retroperitoneais ou mesocólicas denotando microperfuração bloqueada);",
+            "<strong>Pneumoperitônio maciço livre sob as cúpulas diafragmáticas</strong> (sinal de perfuração para cavidade livre);",
+            "<strong>Coleções fluidas organizadas com realce periférico anelar pelo meio de contraste (abscessos intra-abdominais)</strong>.",
+            "<strong>Papel da Ultrassonografia de Abdome:</strong> Possui boa sensibilidade em mãos experientes (dor à compressão graduada com transdutor sobre alça rígida espessada $> 4$ mm e divertículo não compressível), sendo a alternativa de escolha segura em <strong>gestantes</strong> e pacientes com insuficiência renal dialítica grave sem condições de contraste iodado ou indisponibilidade de TC."
+          ]
+        ],
+        [
+          "3",
+          "A CONTRAINDICAÇÃO ABSOLUTA DA FASE AGUDA: Colonoscopia e Enema Baritado"
+        ],
+        [
+          "p",
+          "Este é um dos tópicos mais cobrados em concursos médicos em todo o país:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\"><p><strong>REGRA DE OURO DA PROPEDÊUTICA NA DIVERTICULITE AGUDA:</strong></p>\n  <p>A realização de <strong>Colonoscopia e Enema Opaco Baritado é FORMALMENTE CONTRAINDICADA durante a fase aguda da diverticulite</strong> (e nas primeiras <strong>6 a 8 semanas</strong> após o início dos sintomas).</p>\n  <p><strong>Racional Fisiopatológico:</strong></p>\n  <ul>\n    <li>A insuflação luminal forçada de ar durante a colonoscopia ou a introdução de bário sob pressão hidrostática <strong>converte uma microperfuração pericólica bloqueada benigna em uma MACROPERFURAÇÃO LIVRE CATASTRÓFICA</strong> com derramamento maciço de fezes e gás para a cavidade peritoneal livre, deflagrando peritonite fecal difusa e sepse grave;</li>\n    <li>O extravasamento de bário (sulfato de bário) para o peritônio induz <em>peritonite química crônica baritada</em> fulminante, com formação de granulomas teciduais densos, sepse fúngica/bacteriana e mortalidade superior a 50%.</li>\n  </ul></div>"
+        ]
+      ]
+    ],
+    [
+      "classificacao-hinchey-estadiamento-tomografico",
+      0,
+      [
+        [
+          "2",
+          "3. A Classificação de Hinchey Modificada: Estratificação Tomográfica e Prognóstica"
+        ],
+        [
+          "3",
+          "Evolução da Classificação de Hinchey: Da Laparotomia à Tomografia Multislice"
+        ],
+        [
+          "p",
+          "Em 1978, E. John Hinchey propôs uma classificação pioneira baseada exclusivamente nos achados intraoperatórios da laparotomia exploradora em pacientes com diverticulite perfurada. Com a consolidação da tomografia computadorizada multislice como o método diagnóstico padrão no final do século XX, a classificação foi refinada por Wasvary (1999) e Kaiser (2005), dando origem à <strong>Classificação de Hinchey Modificada por TC</strong>, amplamente adotada pela <em>World Society of Emergency Surgery (WSES)</em> e pela <em>American Society of Colon and Rectal Surgeons (ASCRS)</em>:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Estágio Hinchey Modificado",
+            "Achados Tomográficos e Anatomopatológicos Precisos",
+            "Gravidade Clínica e Classificação Operatória",
+            "Conduta Terapêutica Padrão Recomendada"
+          ],
+          [
+            [
+              "<strong>Estágio 0</strong>",
+              "Espessamento da parede do cólon sigmoide com presença de divertículos e discreto borramento da gordura pericólica, <strong>SEM gás extraluminal e sem coleções fluidas</strong>.",
+              "<strong>Diverticulite Aguda Não Complicada Leve</strong>.",
+              "Tratamento ambulatorial com dieta líquida/branda; antibióticos reservados conforme estratificação de risco (diretrizes WSES/AGA)."
+            ],
+            [
+              "<strong>Estágio Ia</strong>",
+              "Inflamação pericólica confinada e flegmão pericólico/mesocólico; espessamento parietal do cólon com <strong>pequenas bolhas de gás pericólicas restritas ao mesocólon</strong> (&lt; 5 cm do cólon), SEM formação de abscesso evidente.",
+              "<strong>Diverticulite Complicada Localizada (Flegmão Pericólico)</strong>.",
+              "Tratamento clínico com antibioticoterapia (ambulatorial ou internação conforme tolerância oral e dor)."
+            ],
+            [
+              "<strong>Estágio Ib</strong>",
+              "Presença de <strong>Abscesso Pericólico ou Mesocólico Confinado</strong> (coleção líquida com realce parietal) adjacente ao segmento do cólon inflamado, medindo tipicamente <strong>$&lt; 3$ a $4$ cm</strong> ou $ge 4$ cm no mesocólon.",
+              "<strong>Diverticulite Complicada com Abscesso Pericólico</strong>.",
+              "Internação hospitalar, antibioticoterapia intravenosa de amplo espectro; se abscesso $ge 3$ a 4 cm: <em>Drenagem Percutânea Guiada por TC</em>."
+            ],
+            [
+              "<strong>Estágio II</strong>",
+              "<strong>Abscesso Pélvico à Distância, Retroperitoneal ou Intra-abdominal Volumoso</strong> (distante do foco cólico primário, habitualmente localizado no fundo de saco de Douglas, goteira parietocólica ou entre alças de delgado), decorrente de migração exsudativa bloqueada.",
+              "<strong>Diverticulite Complicada com Abscesso Pélvico à Distância</strong>.",
+              "Internação mandatória, antibioticoterapia venosa estrita e <strong>Drenagem Percutânea Guiada por TC ou Ultrassom</strong> (se coleção acessível e $ge 3$ a 4 cm). Cirurgia se falha ou sepse refratária."
+            ],
+            [
+              "<strong>Estágio III</strong>",
+              "<strong>Peritonite Purulenta Generalizada</strong>. Ocorre rotura de um abscesso pericólico/pélvico para a cavidade peritoneal livre, preenchendo todos os quadrantes do abdome com líquido exsudativo purulento, <strong>sem comunicação macroscópica aberta com o lúmen fecal</strong> (sem contaminação fecal grosseira visível).",
+              "<strong>Diverticulite Complicada com Peritonite Purulenta</strong>. Emergência Cirúrgica.",
+              "<strong>Cirurgia de Emergência</strong>: Procedimento de Hartmann vs Ressecção Primária com Anastomose e Ileostomia de Proteção vs Laparoscopia com Lavagem Peritoneal (controversa)."
+            ],
+            [
+              "<strong>Estágio IV</strong>",
+              "<strong>Peritonite Fecal Generalizada</strong>. Macroperfuração transmural livre do cólon com extravasamento contínuo de fezes e material fecalóide fétido para a grande cavidade peritoneal.",
+              "<strong>Emergência Cirúrgica de Risco Máximo de Choque Séptico e Óbito</strong> (mortalidade histórica de 20% a 40%).",
+              "<strong>Cirurgia de Emergência Imediata: Cirurgia de Hartmann Clássica</strong> (ressecção do sigmoide, colostomia terminal em FIE e sepultamento do coto retal)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Nova Classificação da WSES (World Society of Emergency Surgery)"
+        ],
+        [
+          "p",
+          "Para agilizar a tomada de decisão no ambiente de pronto-socorro cirúrgico, a diretriz internacional da WSES simplificou o estadiamento em duas categorias pragmáticas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diverticulite Não Complicada:</strong> Inflamação restrita à parede do cólon com borramento da gordura pericólica (Hinchey 0 e Ia);",
+            "<strong>Diverticulite Complicada:</strong>\n    <ul>\n      <li><em>Complicada Estágio 1 (Abscesso Localizado):</em> Abscesso pericólico $le 4$ cm (1A) ou $> 4$ cm (1B);",
+            "<em>Complicada Estágio 2 (Abscesso Distante):</em> Abscesso pélvico ou abdominal distante $ge 4$ cm;",
+            "<em>Complicada Estágio 3 (Peritonite Difusa sem Fecal):</em> Gás e líquido livre distante sem fezes (Peritonite purulenta);",
+            "<em>Complicada Estágio 4 (Peritonite Fecal):</em> Fezes livres na cavidade peritoneal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "conduta-clinica-ambulatorial-vs-internacao-antibioticos",
+      0,
+      [
+        [
+          "2",
+          "4. Manejo Terapêutico da Diverticulite Não Complicada: A Mudança de Paradigma dos Antibióticos e Critérios de Internação"
+        ],
+        [
+          "3",
+          "A Revolução no Tratamento da Diverticulite Não Complicada: O Fim dos Antibióticos Obrigatórios"
+        ],
+        [
+          "p",
+          "Historicamente, todo paciente diagnosticado com diverticulite aguda recebia compulsoriamente antibioticoterapia de amplo espectro por 7 a 14 dias, sob o pressuposto de que a doença constituía uma infecção bacteriana bacterêmica primária. Grandes ensaios clínicos randomizados contemporâneos multicêntricos (com destaque para o estudo sueco <strong>AVOD</strong> em 2012 e o ensaio holandês <strong>DIABOLO</strong> em 2017) quebraram esse paradigma clássico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Evidências dos Ensaios Clínicos (AVOD e DIABOLO Trials):</strong>\n    <ul>\n      <li>Compararam o tratamento puramente sintomático (analgesia com paracetamol/dipirona e hidratação) <em>versus</em> tratamento sintomático somado a antibioticoterapia em pacientes imunocompetentes com diverticulite não complicada comprovada por TC (Hinchey 0 e Ia);",
+            "<strong>Resultados:</strong> Não houve nenhuma diferença estatisticamente significativa no tempo até a resolução da dor, na taxa de complicações secundárias (formação de abscessos ou perfurações), no tempo de internação hospitalar ou na taxa de recidiva em 6 e 12 meses;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Diretrizes Internacionais Contemporâneas (WSES, AGA e ASCRS):</strong>"
+        ],
+        [
+          "p",
+          "O tratamento <strong>SEM ANTIBIÓTICOS</strong> (apenas repouso intestinal relativo com dieta líquida e analgesia) é seguro, eficaz e formalmente recomendado para pacientes com <strong>Diverticulite Não Complicada (Hinchey 0) que sejam IMUNOCOMPETENTES e apresentem sintomas LEVES sem sinais de resposta inflamatória sistêmica (SIRS)</strong>."
+        ],
+        [
+          "3",
+          "Indicações Formais para Antibioticoterapia na Diverticulite Não Complicada"
+        ],
+        [
+          "p",
+          "Os antibióticos continuam formalmente indicados na diverticulite não complicada caso o paciente apresente qualquer uma das seguintes condições de alto risco:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Imunossupressão Conhecida:</strong> Pacientes em uso crônico de corticosteroides, imunobiológicos ou quimioterapia, transplantados de órgãos sólidos, portadores de HIV avançado com baixa contagem de linfócitos CD4, desnutrição grave ou insuficiência renal crônica dialítica;",
+            "<strong>Presença de Critérios de SIRS ou Sepsis:</strong> Febre elevada ($T ge 38,5$ ºC), taquicardia ($FC > 90$ bpm), taquipneia ($FR > 20$ irpm) ou hipotensão arterial;",
+            "<strong>Leucocitose Acentuada ou Proteína C Reativa (PCR) Muito Elevada:</strong> Leucócitos $> 15.000/\text{mm}³$ ou PCR $> 140$ a $150$ mg/L na admissão;",
+            "<strong>Doenças Crônicas Descompensadas Associadas:</strong> Diabetes Mellitus descompensado, cirrose hepática descompensada ou cardiopatia grave;",
+            "<strong>Pacientes com Sintomas Refratários ou Piora Clínica:</strong> Pacientes inicialmente manejados sem antibióticos que não apresentam alívio da dor após 48 a 72 horas de observação."
+          ]
+        ],
+        [
+          "3",
+          "Critérios de Internação Hospitalar vs Tratamento Ambulatorial"
+        ],
+        [
+          "p",
+          "O paciente pode receber tratamento <strong>ambulatorial com segurança</strong> se atender simultaneamente aos seguintes critérios: dor leve a moderada na FIE, ausência de vômitos incoercíveis com capacidade comprovada de ingesta de líquidos e medicamentos por via oral, ausência de sepse/febre alta, suporte familiar/social confiável no domicílio e garantia de retorno imediato caso surjam sinais de alarme."
+        ],
+        [
+          "p",
+          "<strong>Critérios Mandatórios de Internação Hospitalar:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Intolerância à via oral (náuseas e vômitos incoercíveis que impedem hidratação);",
+            "Dor intensa desproporcional exigindo analgesia com opioides parenterais;",
+            "Sinais de toxemia, peritonite ou instabilidade hemodinâmica;",
+            "Diverticulite Complicada (Hinchey $ge$ Ib: abscessos, fístulas ou perfuração livre);",
+            "Idosos fragilizados ou pacientes sem condições psicossociais de suporte domiciliar."
+          ]
+        ],
+        [
+          "3",
+          "Regimes Farmacológicos de Antibioticoterapia"
+        ],
+        [
+          "p",
+          "O espectro antimicrobiano deve cobrir obrigatoriamente <strong>Bacilos Gram-negativos entéricos (Enterobacteriaceae)</strong> e <strong>Anaeróbios estritos (Bacteroides fragilis)</strong>:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Cenário Clínico / Via",
+            "Regime de Primeira Escolha",
+            "Regimes Alternativos / Alergia a Penicilinas"
+          ],
+          [
+            [
+              "<strong>Ambulatorial (Via Oral)</strong>",
+              "<strong>Amoxicilina-Clavulanato (875/125 mg VO a cada 12 horas ou 1000/62,5 mg 2x/dia)</strong> por 7 a 10 dias.",
+              "<strong>Ciprofloxacino (500 mg VO a cada 12h)</strong> associado a <strong>Metronidazol (400 a 500 mg VO a cada 8h)</strong> OU Sulfametoxazol-Trimetoprima (800/160 mg VO 12/12h) + Metronidazol."
+            ],
+            [
+              "<strong>Hospitalar (Via Intravenosa)</strong>",
+              "<strong>Ceftriaxona (1 g a 2 g IV a cada 24 horas) + Metronidazol (500 mg IV a cada 8 horas)</strong> OU Ampicilina-Sulbactam (1,5 g a 3 g IV a cada 6 horas).",
+              "<strong>Piperacilina-Tazobactam (4,5 g IV a cada 6 ou 8 horas)</strong> em pacientes graves sépticos de UTI OU Ciprofloxacino (400 mg IV 12/12h) + Metronidazol em alérgicos."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "hemorragia-digestiva-diverticular-diagnostico-conduta",
+      0,
+      [
+        [
+          "2",
+          "5. Hemorragia Digestiva Diverticular: Fisiopatologia, Diagnóstico Diferencial e Conduta Emergencial"
+        ],
+        [
+          "3",
+          "Epidemiologia e Fisiopatologia da Hemorragia Diverticular"
+        ],
+        [
+          "p",
+          "A <strong>Hemorragia Digestiva Baixa (HDB) por doença diverticular</strong> é a causa isolada mais comum de sangramento intestinal baixo agudo volumoso no mundo ocidental, respondendo por aproximadamente <strong>40% a 50% dos episódios de enterorragia macroscópica em adultos e idosos</strong>. Ocorre em cerca de 3% a 5% de todos os indivíduos portadores de diverticulose cólica ao longo da vida."
+        ],
+        [
+          "p",
+          "<strong>Dicotomia Fisiopatológica: Inflamação vs Sangramento:</strong> É indispensável compreender que <strong>a hemorragia diverticular e a diverticulite aguda são manifestações clínicas mutuamente exclusivas em mais de 95% a 98% dos casos</strong>. A diverticulite aguda quase nunca sangra volumosamente (pois o processo inflamatório transmural deflagra trombose microvascular obliterante na parede do divertículo); e a hemorragia diverticular clássica ocorre em cólon <strong>não inflamado</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mecanismo da Rotura Vascular:</strong> À medida que o pseudodivertículo se projeta através do anel muscular da parede cólica, ele empurra a arteríola reta penetrante (<em>vasa recta</em>) sobre a sua cúpula. A arteríola fica separada do lúmen intestinal fecal apenas por uma delgada lâmina de mucosa adelgaçada e atrófica;",
+            "Com o passar dos anos, o estiramento pulsátil mecânico contínuo e o trauma de fezes endurecidas provocam <strong>hiperplasia excêntrica da túnica íntima e adelgaçamento focal da túnica média muscular da arteríola</strong>. Essa fragilidade estrutural culmina na <strong>ruptura arterial mecânica transmural</strong> para o interior da cavidade do divertículo;",
+            "<strong>A Predileção pelo Cólon Direito:</strong> Embora mais de 90% dos divertículos estejam situados no cólon esquerdo (sigmoide), mais de <strong>50% a 60% das hemorragias diverticulares volumosas têm origem no CÓLON DIREITO (ceco e cólon ascendente)</strong>. O motivo biológico reside no fato de que os divertículos do cólon direito possuem colos mais amplos e paredes mais finas com vasos retos mais expostos e vulneráveis ao estiramento."
+          ]
+        ],
+        [
+          "3",
+          "Apresentação Clínica e História Natural"
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Típico:</strong> Idoso previamente hígido que apresenta <strong>início súbito de eliminação maciça de sangue vivo ou vinho escuro com coágulos pelo reto (enterorragia / hematoquezia volumosa)</strong>, frequentemente precedida apenas por cólica evacuatória discreta ou sensação de urgência defecatória. O sangramento é classicamente <strong>INDOLOR</strong> e desprovido de sinais sistêmicos de infecção (ausência de febre ou peritonite);",
+            "<strong>Cessação Espontânea:</strong> Em cerca de <strong>75% a 85% dos pacientes, o sangramento cessa espontaneamente</strong> apenas com medidas de suporte clínico e hidratação cristaloide, devido à vasoconstrição reflexa da arteríola rota e formação de tampão plaquetário;",
+            "<strong>Risco de Recidiva Hemorrágica:</strong> Após um primeiro episódio, o risco de ressangramento ao longo da vida é de cerca de 25% a 30%; após um segundo episódio documentado, o risco de nova hemorragia salta para <strong>mais de 50%</strong>, justificando avaliação de colectomia segmentar eletiva."
+          ]
+        ],
+        [
+          "3",
+          "Algoritmo Propedêutico e Terapêutico na Hemorragia Diverticular Aguda"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ressuscitação Hemodinâmica Imediata:</strong>\n    <ul>\n      <li>Dois acessos venosos periféricos calibrosos (14G ou 16G);",
+            "Expansão volêmica vigorosa com cristaloides balanceados visando restauração da estabilidade pressórica;",
+            "Tipagem sanguínea, prova cruzada e transfusão de concentrado de hemácias se instabilidade hemodinâmica, choque hemorrágico ou hemoglobina $&lt; 7,0$ a $8,0$ g/dL (alvo de Hb entre 7 e 9 g/dL em cardiopatas);",
+            "Correção obrigatória de coagulopatias e suspensão de anticoagulantes (varfarina, NOACs) ou antiagregantes plaquetários se viável;",
+            "<strong>Descarte de Hemorragia Digestiva Alta (HDA) Maciça Exanguinante:</strong>\n    <p>Cerca de 10% a 15% dos pacientes admitidos com enterorragia maciça e instabilidade hemodinâmica têm, na verdade, uma <strong>HDA fulminante de trânsito hiper-rápido</strong> (ex.: úlcera duodenal sangrante com jato arterial exanguinante). Nesses pacientes graves chocados, deve-se realizar <strong>Endoscopia Digestiva Alta (EDA) de urgência imediata</strong> para descartar foco gástrico/duodenal antes da abordagem colônica;</p>",
+            "<strong>Colonoscopia de Urgência após Preparo de Cólon:</strong>\n    <ul>\n      <li>Uma vez garantida a estabilidade hemodinâmica, a <strong>Colonoscopia nas primeiras 12 a 24 horas</strong> (após preparo rápido com polietilenoglicol / PEG por via oral ou sonda nasogástrica para lavar coágulos e fezes) é o método diagnóstico e terapêutico de escolha;",
+            "<em>Tratamento Endoscópico:</em> Identificado o divertículo sangrante (com sangramento ativo em jato/babando, vaso visível não sangrante ou coágulo aderido), realiza-se hemostasia mecânica com <strong>aplicação de clipes metálicos (hemoclipes)</strong> sobre o vaso nutrício ou ligadura elástica do divertículo. O uso de injeção de adrenalina associada a coagulação térmica bipolar também é eficaz;",
+            "<strong>Angiotomografia Computadorizada (Angio-TC) e Arteriografia Angiográfica Seletiva:</strong>\n    <ul>\n      <li><em>Angio-TC de Abdome Trifásica:</em> Exame rápido, não invasivo e de altíssima sensibilidade. Detecta extravasamento ativo de meio de contraste para o lúmen intestinal em taxas de sangramento a partir de <strong>$ge 0,3$ a $0,5$ mL/min</strong>;",
+            "<em>Arteriografia Seletiva da Artéria Mesentérica Superior e Inferior com Embolização Superseletiva:</em> Indicada quando o sangramento é volumoso e persistente com instabilidade hemodinâmica que impede preparo de cólon para colonoscopia, ou após falha do tratamento endoscópico. Detecta sangramentos com taxa $ge 0,5$ a $1,0$ mL/min e permite a <strong>microembolização superseletiva com microesferas ou molas (coils) metálicas</strong>, obtendo hemostasia em mais de 85% a 90% dos casos com baixíssimo risco de isquemia cólica transmural quando superseletiva;",
+            "<strong>Tratamento Cirúrgico de Emergência:</strong>\n    <p>Reservado para menos de 5% dos casos (sangramento exanguinante refratário a suporte hemodinâmico, endoscópico e angiográfico, com necessidade transfusional contínua $> 4$ a 6 bolsas de hemácias em 24 horas):</p>\n    <ul>\n      <li>Se o sítio sangrante foi <strong>topograficamente localizado com precisão</strong> por angio-TC, colonoscopia ou arteriografia: realiza-se <strong>Colectomia Segmentar Ressectiva com anastomose primária</strong> (ex.: hemicolectomia direita ou sigmoidectomia);",
+            "Se o sangramento persistir maciço e todos os métodos diagnósticos <strong>falharem em identificar a topografia exata da hemorragia</strong>: o cirurgião <strong>NUNCA DEVE REALIZAR UMA COLECTOMIA SEGMENTAR \"ÀS CEGAS\"</strong> (o risco de ressecar o lado errado e o paciente continuar sangrando no pós-operatório é de mais de 35% com mortalidade de 50%). O procedimento cirúrgico mandatório para sangramento colônico volumoso sem topografia definida é a <strong>COLECTOMIA SUBTOTAL (OU TOTAL) com Anastomose Ileorretal</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Diagnóstico Diferencial Clínico e Tomográfico na FIE"
+        ],
+        [
+          "p",
+          "A dor na Fossa Ilíaca Esquerda no adulto impõe o diagnóstico diferencial sistemático entre diversas patologias:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Entidade Clínica",
+            "Achados Clínicos Distintivos",
+            "Diferenciação Tomográfica (TC) com Diverticulite"
+          ],
+          [
+            [
+              "<strong>Câncer de Cólon Sigmoide Perfurado</strong>",
+              "Perda de peso progressiva, anemia ferropriva crônica prévia, afilamento das fezes (\"fezes em fita\") e sangue oculto positivo.",
+              "Espessamento parietal <strong>assimétrico, excêntrico e focal (&lt; 5 cm)</strong>, com linfonodomegalias mesentéricas volumosas arredondadas (&gt; 1 cm) e margens abruptas (\"sinal da maçã mordida\"). Na diverticulite, o espessamento é longo (&gt; 5 a 10 cm), simétrico e circunferencial."
+            ],
+            [
+              "<strong>Colite Isquêmica</strong>",
+              "Dor abdominal em cólica súbita de início hiperagudo seguida de diarreia sanguinolenta (hematoquezia) em poucas horas, em pacientes idosos com vasculopatia, choque prévio ou fibrilação atrial. Localização clássica nas zonas de bacia hidrográfica terminal: <strong>ponto de Griffith (ângulo esplênico)</strong> e <strong>ponto de Sudeck (transição retossigmoide)</strong>.",
+              "Espessamento parietal em \"duplo halo\" ou \"alvo\" (edema submucoso), pneumatose intestinal em casos avançados e trombose vascular visível na angio-TC. Acometimento segmentar delimitado pelo território vascular."
+            ],
+            [
+              "<strong>Apendagite Epiploica</strong>",
+              "Dor focal aguda na FIE em paciente jovem ou de meia-idade saudável, <strong>SEM febre, sem leucocitose, sem alteração de trânsito intestinal e sem vômitos</strong>. Trata-se de infarto hemorrágico benigno por torção espontânea de um apêndice epiploico.",
+              "Achado tomográfico patognomônico: <strong>lesão ovóide com densidade de gordura (1 a 3 cm) adjacente à serosa do cólon com halo hiperdenso periférico bem delimitado e ponto central de atenuação hiperdensa (trombose da veia central do apêndice)</strong>, com parede do cólon adjacente <em>rigorosamente normal (sem espessamento cólico)</em>. Tratamento 100% conservador com analgésicos ambulatoriais."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "manejo-diverticulite-complicada-drenagem-hartmann-seguimento",
+      0,
+      [
+        [
+          "2",
+          "5. Manejo da Diverticulite Complicada: Drenagem Percutânea de Abscessos, Cirurgia de Urgência e Rastreamento Pós-Agudo"
+        ],
+        [
+          "3",
+          "Manejo Escalonado dos Abscessos Intra-abdominais (Hinchey Ib e II)"
+        ],
+        [
+          "p",
+          "A presença de abscesso intracavitário define a diverticulite aguda complicada. A conduta terapêutica é categoricamente ditada pelo <strong>diâmetro do abscesso medido na Tomografia Computadorizada</strong> e pelo acesso percutâneo seguro:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Tamanho da Coleção / Abscesso",
+            "Estadiamento Tomográfico",
+            "Conduta Terapêutica Primária Recomendada",
+            "Mecanismo e Taxa de Resolução Clínica"
+          ],
+          [
+            [
+              "<strong>Abscessos Pequenos (&lt; 3 a 4 cm)</strong>",
+              "Hinchey Ib inicial (microabscessos mesocólicos restritos)",
+              "<strong>Tratamento Clínico Exclusivo</strong>: Internação hospitalar, repouso digestivo com dieta líquida estrita/jejum, hidratação intravenosa e <strong>Antibioticoterapia Intravenosa de Amplo Espectro</strong> (Ceftriaxona + Metronidazol ou Piperacilina-Tazobactam) por 7 a 14 dias.",
+              "A vascularização do mesocólon permite boa penetração tecidual dos antimicrobianos. Mais de <strong>80% a 85% dos abscessos $&lt; 3$ cm reabsorvem-se e cicatrizam espontaneamente</strong> sem necessidade de procedimento invasivo."
+            ],
+            [
+              "<strong>Abscessos Grandes ($ge 3$ a 4 cm)</strong>",
+              "Hinchey Ib volumoso ou Hinchey II (Abscesso pélvico ou mesocólico acessível)",
+              "<strong>DRENAGEM PERCUTÂNEA GUIADA POR TOMOGRAFIA COMPUTADORIZADA (ou Ultrassom)</strong> associada a Antibioticoterapia Intravenosa contínua.",
+              "<strong>Padrão-ouro internacional absoluto</strong>. A drenagem percutânea esvazia a cavidade séptica, alivia a pressão local, converte uma cirurgia de urgência de altíssimo risco (que exigiria estoma definitivo) em um procedimento eletivo programado seguro de ressecção de intervalo em campo não séptico (cirurgia em tempo único sem colostomia)."
+            ],
+            [
+              "<strong>Abscessos Grandes Inacessíveis à Drenagem Percutânea ou com Falha Clínica</strong>",
+              "Hinchey Ib/II interposto entre alças intestinais sem janela radiológica segura",
+              "Indicação de <strong>Intervenção Cirúrgica de Urgência</strong>: ressecção cólica de emergência ou laparoscopia com lavagem e drenagem cirúrgica de coleções.",
+              "Indicada também se o paciente persistir com sepse descompensada, febre alta e piora do estado geral após 48 a 72 horas da drenagem percutânea."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Indicações Formais de Intervenção Cirúrgica de Urgência (Hinchey III e IV)"
+        ],
+        [
+          "p",
+          "A cirurgia de emergência imediata é mandatória nas seguintes situações clínicas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Peritonite Generalizada Purulenta ou Fecal (Hinchey III e IV):</strong> Perfuração livre do cólon com abdome em tábua, descompressão brusca difusa e choque séptico;",
+            "<strong>Pneumoperitônio Maciço à Distância:</strong> Presença de grande volume de gás livre intra-abdominal sob as cúpulas diafragmáticas associado a sinais de peritonite clínica;",
+            "<strong>Diverticulite Complicada com Choque Séptico Refratário à Ressuscitação;</strong>",
+            "<strong>Obstrução Intestinal Mecânica Completa do Cólon:</strong> Provocada pelo edema inflamatório circumferential ou estenose fibrótica do sigmoide bloqueado (obstrução colônica aguda em alça fechada com risco de perfuração do ceco por hiperdistensão);",
+            "<strong>Falha Inquestionável do Tratamento Conservador ou da Drenagem Percutânea</strong> após 48 a 72 horas com deterioração clínica."
+          ]
+        ],
+        [
+          "3",
+          "Opções Operatórias na Urgência: Hartmann vs Ressecção Primária com Anastomose"
+        ],
+        [
+          "p",
+          "O debate entre as técnicas cirúrgicas na diverticulite perfurada evoluiu significativamente com a publicação de grandes ensaios clínicos (como os ensaios <em>DILALA</em> e <em>LADIES</em>):"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Técnica Cirúrgica de Urgência",
+            "Etapas Anatômicas do Procedimento",
+            "Indicações Clínicas de Primeira Linha",
+            "Vantagens e Desvantagens Estruturais"
+          ],
+          [
+            [
+              "<strong>Cirurgia de Hartmann (Sigmoidectomia com Colostomia Terminal)</strong>",
+              "<strong>Ressecção do segmento acometido do cólon sigmoide</strong>; fechamento por sutura e sepultamento do coto retal na pelve (coto retal cego à Hartmann); e exteriorização da extremidade proximal do cólon descendente como uma <strong>Colostomia Terminal na Fossa Ilíaca Esquerda</strong>.",
+              "<strong>O padrão-ouro absoluto em pacientes instáveis hemodinamicamente (em choque séptico sob altas doses de noradrenalina), imunossuprimidos graves e na Peritonite Fecal Maciça (Hinchey IV)</strong>.",
+              "Procedimento rápido e salvador de vida; elimina o foco infeccioso sem o perigo de deiscência de anastomose em campo com peritonite grosseira. <em>Desvantagens:</em> Necessidade de uma segunda cirurgia de grande porte para reconstrução do trânsito intestinal meses depois; mais de <strong>40% a 50% dos pacientes nunca revertem a colostomia</strong> (permanecem com estoma definitivo para o resto da vida devido à idade e morbidades)."
+            ],
+            [
+              "<strong>Ressecção Primária com Anastomose e Ileostomia de Proteção (PRA)</strong>",
+              "Ressecção do cólon sigmoide doente; confecção de <strong>anastomose colorretal primária imediata</strong> (mecânica ou manual) e confecção concomitante de uma <strong>ileostomia de proteção em alça</strong> (para desviar temporariamente o trânsito fecal da anastomose).",
+              "Pacientes <strong>hemodinamicamente estáveis</strong> com peritonite purulenta (<strong>Hinchey III</strong>) ou Hinchey IV selecionados sem choque séptico, operados por cirurgião colorretal experiente.",
+              "Evita a colostomia terminal de Hartmann; a reversão da ileostomia em alça meses depois é um procedimento muito mais simples, rápido e com menor morbidade do que a reversão de Hartmann. Aprovada formalmente pelas diretrizes da WSES e ASCRS em pacientes estáveis."
+            ],
+            [
+              "<strong>Lavagem e Drenagem Peritoneal Laparoscópica (Laparoscopic Lavage)</strong>",
+              "Laparoscopia exploradora de urgência, aspiração do pus, lavagem exaustiva da cavidade com vários litros de soro aquecido e colocação de drenos, <strong>SEM ressecar o cólon sigmoide perfurado</strong>.",
+              "Técnica controversa; reservada para Hinchey III em centros selecionados. Ensaios clínicos demonstraram taxas mais elevadas de abscessos secundários e reintervenções cirúrgicas precoces em comparação com a ressecção primária."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Regra Obrigatória do Seguimento Pós-Agudo: A Colonoscopia após 6 a 8 Semanas"
+        ],
+        [
+          "p",
+          "Após a resolução clínica completa do episódio agudo de diverticulite (tratada clínica ou cirurgicamente), a conduta médica <strong>NÃO ESTÁ ENCERRADA</strong>:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\"><p><strong>RASTREAMENTO OBRIGATÓRIO DE CÂNCER COLORRETAL:</strong></p>\n  <p>Todo paciente que se recupera de um episódio de diverticulite aguda (especialmente se complicada ou se não realizou colonoscopia nos últimos 1 a 2 anos) deve ser submetido formalmente a uma <strong>COLONOSCOPIA TOTAL após 6 a 8 semanas da resolução da crise</strong>.</p>\n  <p><strong>Fundamentação Oncológica e Diagnóstica:</strong></p>\n  <ul>\n    <li>O <strong>Adenocarcinoma de Cólon Obstrutivo ou Perfurado</strong> pode se manifestar tomograficamente e clinicamente de forma rigorosamente idêntica à diverticulite aguda (espessamento parietal circunferencial do sigmoide com borramento da gordura pericólica e microperfuração);</li>\n    <li>Em pacientes com diverticulite complicada tratada clinicamente, a incidência de adenocarcinoma colorretal oculto subjacente ou pólipos adenomatosos avançados atinge <strong>8% a 11%</strong> (quase 1 em cada 10 pacientes);</li>\n    <li>Aguardar 6 a 8 semanas permite a cicatrização completa do processo inflamatório transmural, tornando a realização da colonoscopia segura e minimizando o risco de perfuração mecânica iatrogênica durante o exame.</li>\n  </ul></div>"
+        ],
+        [
+          "3",
+          "Indicações Contemporâneas para Colectomia Eletiva de Intervalo"
+        ],
+        [
+          "p",
+          "O antigo dogma cirúrgico de indicar colectomia eletiva profilática para todo paciente após dois episódios de diverticulite aguda não complicada foi completamente abandonado pela ASCRS e WSES. A indicação cirúrgica eletiva é atualmente <strong>individualizada</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Episódio Prévio de Diverticulite Complicada Tratada Conservadoramente:</strong> Pacientes que apresentaram abscesso pélvico volumoso drenado por via percutânea (Hinchey Ib/II) possuem risco de recidiva superior a 40% a 50%, recomendando-se ressecção eletiva do sigmoide (sigmoidectomia laparoscópica com anastomose primária) após 3 a 6 meses;",
+            "<strong>Presença de Fístulas Crônicas Estabelecidas:</strong>\n    <ul>\n      <li><em>Fístula Colovesical (a mais comum, 65% das fístulas):</em> Ocorre mais em homens e mulheres histerectomizadas (nas quais o útero não está presente para interpor-se como barreira anatômica entre o sigmoide e a bexiga). Manifesta-se clinicamente pela tríade patognomônica de <strong>Pneumatúria</strong> (eliminação de ar na urina com urina borbulhante), <strong>Fecalúria</strong> (fezes na urina) e infecções urinárias de repetição polimicrobianas por flora entérica. Exame mais sensível: TC com contraste oral/retal (presença de ar na bexiga na ausência de cateterismo vesical prévio);",
+            "<em>Fístula Colovaginal (em mulheres histerectomizadas):</em> Eliminação de fezes e gases pela vagina;",
+            "<strong>Estenose Cólica Fibrótica com Obstrução Parcial Recorrente:</strong> Pacientes com suboclusão crônica do sigmoide;",
+            "<strong>Pacientes Imunossuprimidos Crônicos:</strong> Transplantados e pacientes sob quimioterapia que sofrem um primeiro episódio têm altíssimo risco de perfuração livre letal na recidiva, justificando cirurgia eletiva após o primeiro episódio;",
+            "<strong>Impacto Negativo Severo e Intratável na Qualidade de Vida</strong> por episódios frequentes de recidiva não complicada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-diverticulite",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico-Cirúrgico Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Dor na FIE, Febre e Abscesso Pericólico Volumoso"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 61 anos, hipertenso, obeso (IMC 33 kg/m²), procura a emergência cirúrgica queixando-se de dor contínua de intensidade progressiva na Fossa Ilíaca Esquerda há 5 dias, associada a febre diária de até 38,7 ºC e parada de eliminação de fezes há 48 horas."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> REG, febril (T 38,4 ºC), taquicárdico (FC 102 bpm), PA 125/80 mmHg. Abdome distendido em andar inferior; palpação extremamente dolorosa na FIE, com presença de <strong>massa palpável mal delimitada e dolorosa (plastrão)</strong>, com descompressão brusca duvidosa restrita à FIE. Ausência de dor ou descompressão nos demais quadrantes abdominais."
+        ],
+        [
+          "p",
+          "<strong>Laboratório:</strong> Leucócitos: 16.800/mm³ com 8% de bastonetes (desvio à esquerda significativo); Proteína C Reativa (PCR): 185 mg/L; Creatinina: 1,0 mg/dL."
+        ],
+        [
+          "p",
+          "<strong>Tomografia Computadorizada de Abdome e Pelve com Contraste IV:</strong> Evidencia múltiplos divertículos no cólon sigmoide, espessamento parietal circunferencial acentuado da parede do sigmoide (8 mm), densificação densa da gordura pericólica e uma <strong>coleção líquida organizada com realce anelar periférico pelo meio de contraste medindo 5,2 cm de maior diâmetro no mesocólon adjacente</strong>, contendo pequenos focos de gás intraluminal. Ausência de pneumoperitônio livre ou líquido livre nos demais recessos peritoneais."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta Terapêutica Estruturada:</strong>"
+        ],
+        [
+          "p",
+          "<ul>\n    <li><em>Diagnóstico e Estadiamento:</em> <strong>Diverticulite Aguda Complicada com Grande Abscesso Mesocólico / Pericólico (Classificação de Hinchey Modificada Estágio Ib)</strong>;</li>\n    <li><em>Decisão Clínica vs Intervencionista:</em>\n      <ul>\n        <li>O paciente apresenta um abscesso de <strong>5,2 cm (claramente $ge 4$ cm)</strong> em paciente hospitalizado com resposta inflamatória sistêmica franca;</li>\n        <li>O tratamento puramente clínico com antibióticos isolados em abscessos $ge 4$ cm associa-se a taxa de falha superior a 50%, com risco de rotura secundária para o peritônio;</li>\n        <li>Indicação imediata de cirurgia laparotômica de urgência seria excessivamente invasiva e culminaria com alta probabilidade em sigmoidectomia à Hartmann com colostomia definitiva;</li>\n      </ul>\n    </li>\n    <li><em>Conduta Terapêutica Padrão-Ouro:</em>\n      <ol>\n        <li>Internação hospitalar e jejum oral inicial;</li>\n        <li>Antibioticoterapia intravenosa de amplo espectro imediata: <strong>Ceftriaxona 2 g IV 1x/dia + Metronidazol 500 mg IV a cada 8 horas</strong>;</li>\n        <li><strong>DRENAGEM PERCUTÂNEA GUIADA POR TOMOGRAFIA COMPUTADORIZADA COM INSERÇÃO DE CATETER DE PIGTAIL</strong>: Procedimento minimamente invasivo que drena o pus, descomprime o foco infeccioso e promove defervescência clínica rápida em 24 a 48 horas;</li>\n        <li>Manter dreno até débito seroso mínimo ($< 10-15$ mL/dia) e resolução tomográfica;</li>\n        <li>Após alta hospitalar, agendar <strong>Colonoscopia total após 6 a 8 semanas</strong> para excluir neoplasia colorretal oculta;</li>\n        <li>Encaminhar para <strong>sigmoidectomia eletiva laparoscópica de intervalo</strong> com anastomose primária após 2 a 3 meses.</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Peritonite Fecal e Choque Séptico (Indicação de Hartmann)"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 73 anos, portadora de artrite reumatoide em uso crônico de Prednisona 20 mg/dia há 5 anos, é admitida na sala de emergência em estado crítico, com quadro de dor abdominal difusa súbita de início há 12 horas que se iniciou na FIE e generalizou-se por todo o abdome."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Paciente torporosa, sudoreica, taquipneica (FR 32 irpm com uso de musculatura acessória), extremidades frias com tempo de enchimento capilar de 5 segundos. FC 136 bpm, <strong>PA 70/40 mmHg (PAM 50 mmHg)</strong>, febril (T 39,1 ºC). Abdome difusamente distendido, <strong>em tábua (hipertonia involuntária generalizada)</strong>, com descompressão brusca dolorosa intensamente positiva em todos os quatro quadrantes abdominais (Sinal de Blumberg generalizado). Ruídos hidroaéreos completamente abolidos."
+        ],
+        [
+          "p",
+          "<strong>Laboratório e Imagem:</strong> Gasometria arterial: pH 7,18, pO2 62 mmHg, pCO2 28 mmHg, HCO3- 10 mEq/L, Lactato 5,8 mmol/L (acidose metabólica lática grave com hiperlactatemia). TC de abdome rápida: <strong>volumoso pneumoperitônio livre sob as duas cúpulas diafragmáticas</strong>, grande quantidade de líquido livre com densidade de exsudato em toda a cavidade peritoneal e cólon sigmoide com espessamento parietal e solução de descontinuidade da parede (perfuração cólica macroscópica livre)."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Cirúrgica de Emergência:</strong>"
+        ],
+        [
+          "p",
+          "<ul>\n    <li><em>Diagnóstico e Gravidade:</em> <strong>Diverticulite Aguda Complicada Perfurada com Peritonite Generalizada e Choque Séptico Refratário (Classificação de Hinchey Estágio IV / Peritonite Fecal)</strong> em paciente imunossuprimida por corticoterapia crônica;</li>\n    <li><em>Ressuscitação Hemodinâmica Imediata (\"Golden Hour\"):</em>\n      <ol>\n        <li>Intubação orotraqueal e ventilação mecânica protetora;</li>\n        <li>Acesso venoso central e início imediato de <strong>Noradrenalina em infusão contínua</strong> visando PAM $ge 65$ mmHg;</li>\n        <li>Ressuscitação com cristaloide balanceado (Ringer Lactato);</li>\n        <li>Antibioticoterapia empírica imediata de amplo espectro na primeira hora: <strong>Piperacilina-Tazobactam 4,5 g IV</strong> associada a Vancomicina;</li>\n      </ol>\n    </li>\n    <li><em>Tratamento Cirúrgico Imediato:</em>\n      <ul>\n        <li><strong>Laparotomia Exploradora Mediana de Urgência Imediata</strong>;</li>\n        <li>Lavagem exaustiva da cavidade peritoneal com mais de 10 litros de solução salina isotônica morna para remoção completa de fezes e pus;</li>\n        <li><strong>Procedimento Cirúrgico de Escolha: CIRURGIA DE HARTMANN (Sigmoidectomia com Colostomia Terminal em FIE e Fechamento/Sepultamento do Coto Retal)</strong>;</li>\n        <li><em>Por que NÃO fazer anastomose primária?</em> A paciente está em <strong>choque séptico sob altas doses de noradrenalina</strong>, possui acidose metabólica severa ($pH = 7,18$), é imunossuprimida crônica por corticoide e apresenta peritonite fecal com contaminação grosseira. Qualquer tentativa de anastomose colorretal primária neste cenário teria taxa de deiscência catastrófica superior a 60% com morte da paciente. A prioridade absoluta é o controle do foco com mínima morbidade cirúrgica imediata (cirurgia de controle de danos / salvamento de vida).</li>\n      </ul>\n    </li>\n  </ul>\n</div>"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Pneumatúria e Fecalúria: O Rastreio da Fístula Colovesical"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 66 anos comparece ao ambulatório de coloproctologia referindo que teve dois episódios de dor na FIE tratados como infecção intestinal nos últimos 8 meses. Há 3 semanas, começou a perceber a <strong>eliminação de ar na urina (\"urina borbulhante e com chiado ao final da micção\")</strong> e saída de pequenas partículas escuras com odor fecalóide pelo meato uretral. Relata múltiplos episódios de disúria e urina turva no período, tratados repetidamente como ITU com antibióticos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Bom estado geral, eupnéico, afebril. Abdome flácido, indolor à palpação, sem visceromegalias ou massas palpáveis. Toque retal: próstata de tamanho normal e indolor; ausência de massas intraluminais."
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares:</strong> EAS: incontáveis leucócitos por campo, presença de bactérias polimicrobianas e debris vegetais amorfos microscópicos. Urocultura: crescimento polimicrobiano com $&gt; 100.000$ UFC/mL de <em>Escherichia coli</em> associada a <em>Klebsiella pneumoniae</em> e <em>Enterococcus faecalis</em>."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Raciocínio Clínico:</strong>"
+        ],
+        [
+          "p",
+          "<ul>\n    <li><em>Sinais Patognomônicos:</em> O paciente descreve a clássica associação de <strong>Pneumatúria</strong> (passagem de ar durante a micção) e <strong>Fecalúria</strong> (passagem de material fecalóide na urina), que constituem sinais patognomônicos de <strong>FÍSTULA COLOVESICAL</strong>;</li>\n    <li><em>Etiologia Principal:</em> A diverticulite aguda do cólon sigmoide responde por mais de <strong>65% a 70% de todas as fístulas colovesicais</strong> no adulto (muito mais frequente que câncer colorretal ou doença de Crohn);</li>\n    <li><em>Exame Propedêutico de Escolha:</em> <strong>Tomografia Computadorizada de Abdome e Pelve com Contraste Oral e Intravenoso (SEM contraste retal ou vesical inicial)</strong>: o achado tomográfico cardinal é a presença de <strong>ar no interior da bexiga urinária (gás intravesical)</strong> em paciente que não passou por cateterismo vesical recente, associado a espessamento da parede vesical adjacente à massa diverticular do sigmoide aderida;</li>\n    <li><em>Tratamento Definitivo:</em> O tratamento é cirúrgico eletivo após preparo: <strong>Sigmoidectomia com ressecção do trajeto fistuloso, desbridamento da parede vesical comprometida com sutura primária da bexiga em plano duplo</strong>, interposição de grande omento entre o cólon e a bexiga para prevenir recidivas, e anastomose colorretal primária, mantendo cateter vesical de demora por 7 a 14 dias para permitir descompressão e cicatrização da bexiga.</li>\n  </ul>\n</div>"
+        ]
+      ]
+    ],
+    [
+      "questoes-concurso-comentadas-diverticulite",
+      0,
+      [
+        [
+          "2",
+          "7. Questões de Concursos de Residência Médica e Título de Cirurgia Geral Comentadas Passo a Passo"
+        ],
+        [
+          "3",
+          "Questão 1 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 58 anos é admitido no pronto-socorro com queixa de dor na fossa ilíaca esquerda há 3 dias, febrícula (37,9 ºC) e constipação. Ao exame físico, apresenta-se em bom estado geral, hidratado, com abdome plano, doloroso à palpação na FIE, com leve defesa muscular voluntária e sinal de Blumberg duvidoso localizado restrito à FIE. Leucograma revela 11.200 leucócitos/mm³ e PCR de 38 mg/L. A Tomografia Computadorizada de abdome e pelve com contraste intravenoso demonstra espessamento parietal do cólon sigmoide (5 mm) com borramento da gordura pericólica, sem coleções líquidas, sem ar extraluminal e sem pneumoperitônio livre (Classificação de Hinchey 0). Com base nas diretrizes internacionais contemporâneas (WSES / AGA), qual é a conduta médica correta?"
+        ],
+        [
+          "o",
+          [
+            "Indicar colonoscopia de urgência nas primeiras 24 horas para visualização direta do orifício diverticular e hemostasia endoscópica profilática.",
+            "Internação hospitalar imediata em leito cirúrgico e laparotomia exploradora com sigmoidectomia à Hartmann devido ao risco iminente de deiscência colônica.",
+            "Tratamento ambulatorial com repouso, dieta leve líquida e analgesia com analgésicos comuns (dipirona/paracetamol), sendo o uso sistemático de antibióticos dispensável neste momento para paciente imunocompetente sem sepse.",
+            "Prescrição obrigatória de antibioticoterapia intravenosa com ciprofloxacino e metronidazol por 21 dias em regime de internação hospitalar mandatória."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> Grandes ensaios clínicos randomizados multicêntricos contemporâneos (ensaios AVOD e DIABOLO) provaram que em pacientes imunocompetentes com diverticulite aguda não complicada leve (Hinchey 0) comprovada por TC, o uso rotineiro de antibióticos não acelera a melhora da dor nem reduz complicações ou recidivas. As diretrizes da WSES e AGA recomendam <strong>tratamento sintomático ambulatorial com dieta líquida/branda e analgesia</strong>, reservando antibióticos para imunossuprimidos, gestantes, pacientes com sinais de sepse/SIRS ou PCR $> 140$ mg/L (Alternativa C correta). Colonoscopia na fase aguda é <strong>formalmente contraindicada</strong> (risco de perfuração livre - elimina A). Cirurgia de Hartmann é conduta para peritonite fecal Hinchey IV (elimina B)."
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Revalidação e Residência Médica)"
+        ],
+        [
+          "p",
+          "Mulher de 64 anos, com quadro de diverticulite aguda há 6 dias tratada em domicílio de forma irregular, procura a emergência com piora da dor na fossa ilíaca esquerda e febre alta diária. A Tomografia Computadorizada de abdome total com contraste IV revela diverticulite de sigmoide associada a uma <strong>coleção líquida hipodensa organizada com realce periférico parietal medindo 5,5 cm no maior eixo</strong>, localizada no mesocólon e adjacente à parede anterior do abdome (Hinchey Ib volumoso). A paciente encontra-se estável hemodinamicamente, lúcida, afebril no momento e com abdome doloroso na FIE sem sinais de peritonite difusa. Qual é a conduta padrão-ouro preconizada para esta paciente?"
+        ],
+        [
+          "o",
+          [
+            "Drenagem percutânea da coleção guiada por Tomografia Computadorizada associada à antibioticoterapia intravenosa de amplo espectro.",
+            "Manter tratamento ambulatorial exclusivo apenas dobrando a dose de antibiótico oral, visto que coleções menores de 10 cm não demandam intervenção.",
+            "Encaminhar imediatamente para realização de colonoscopia descompressiva para drenar o abscesso através do lúmen intestinal.",
+            "Laparotomia exploradora de emergência para realização de colectomia total com anastomose ileorretal primária sem estoma."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> As diretrizes internacionais estabelecem o corte de <strong>3 a 4 cm</strong> para a conduta em abscessos diverticulares:\n- Abscessos pequenos ($&lt; 3$ a 4 cm): Tratamento exclusivamente clínico com internação e antibioticoterapia venosa (reabsorção espontânea $> 80%$);\n- Abscessos volumosos ($ge 3$ a 4 cm): <strong>DRENAGEM PERCUTÂNEA GUIADA POR TC</strong> associada a antibióticos venosos (Alternativa A correta). A drenagem percutânea evita laparotomia de urgência com estoma, controla a sepse e permite realizar posteriormente ressecção eletiva de intervalo em tempo único sem colostomia."
+        ],
+        [
+          "3",
+          "Questão 3 (SURCE - Seleção Unificada para Residência Médica do Ceará)"
+        ],
+        [
+          "p",
+          "Homem de 70 anos é levado ao pronto-socorro com quadro de choque séptico, hipotensão refratária a volume necessitando de noradrenalina em altas doses, taquipneico e confuso. O exame físico revela abdome tenso, difusamente doloroso com contratura involuntária e rigidez generalizada (abdome em tábua). A tomografia computadorizada confirma perfuração livre de divertículo de sigmoide com fezes na grande cavidade peritoneal (Hinchey IV). Qual é o procedimento cirúrgico clássico mais indicado para este paciente?"
+        ],
+        [
+          "o",
+          [
+            "Laparoscopia diagnóstica com lavagem peritoneal isolada e manutenção do segmento cólico perfurado in situ.",
+            "Cirurgia de Hartmann (sigmoidectomia com colostomia terminal em fossa ilíaca esquerda e sepultamento do coto retal).",
+            "Colectomia total com anastomose ileorretal primária sem ileostomia de proteção.",
+            "Colocação de prótese metálica autoexpansível por colonoscopia para ocluir a perfuração cólica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> No paciente com <strong>Diverticulite Hinchey IV (Peritonite Fecal Generalizada)</strong> associada a <strong>choque séptico e instabilidade hemodinâmica grave</strong>, o procedimento salvador de vida padrão-ouro indiscutível é a <strong>Cirurgia de Hartmann</strong> (Alternativa B). A anastomose primária está formalmente contraindicada pelo risco extremo de deiscência em paciente chocado sob drogas vasoativas e acidose metabólica. A lavagem isolada sem ressecção (Alternativa A) é ineficaz e proscrita na peritonite fecal."
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP - Universidade Estadual de Campinas)"
+        ],
+        [
+          "p",
+          "Homem de 62 anos recuperou-se com sucesso de um quadro de diverticulite aguda de cólon sigmoide não complicada há 7 semanas, tendo recebido alta hospitalar com resolução completa dos sintomas e exames inflamatórios normais. Qual conduta é formalmente recomendada no acompanhamento pós-agudo deste paciente e qual a sua justificativa médica primordial?"
+        ],
+        [
+          "o",
+          [
+            "Prescrever enema baritado semanal para prevenir a formação de novos pseudodivertículos no reto.",
+            "Indicar colonoscopia total entre 6 e 8 semanas após a resolução do quadro agudo para descartar formalmente a presença de adenocarcinoma colorretal subjacente que pode mimetizar o quadro tomográfico e clínico de diverticulite.",
+            "Indicar sigmoidectomia laparoscópica profilática mandatória imediata para todos os pacientes após o primeiro episódio para evitar recidivas.",
+            "Proibir terminantemente a ingestão de sementes, nozes, pipoca e grãos por toda a vida devido ao risco comprovado de impactação intraluminal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> O adenocarcinoma de cólon pode se manifestar de forma indistinguível da diverticulite (espessamento parietal circunferencial com perfuração focal). A incidência de neoplasia cólica oculta pós-diverticulite atinge até 8% a 11% nos casos complicados. Portanto, a realização de <strong>Colonoscopia total após 6 a 8 semanas</strong> (quando o processo inflamatório agudo cicatrizou, tornando o procedimento seguro) é mandatória (Alternativa B correta). A proibição de sementes e pipoca (Alternativa D) é um mito popular refutado por grandes estudos epidemiológicos prospectivos (como o <em>Health Professionals Follow-up Study</em>), que comprovaram que sementes e nozes não aumentam o risco de diverticulite."
+        ],
+        [
+          "3",
+          "Questão 5 (UERJ - Universidade do Estado do Rio de Janeiro)"
+        ],
+        [
+          "p",
+          "Em relação à Classificação de Hinchey Modificada para diverticulite aguda por Tomografia Computadorizada, correlacione o estágio com o respectivo achado anatomopatológico:"
+        ],
+        [
+          "o",
+          [
+            "Estágio Ia corresponde a abscesso pélvico à distância; Estágio II corresponde a peritonite purulenta difusa.",
+            "Estágio Ib corresponde a abscesso pericólico ou mesocólico confinado; Estágio II corresponde a abscesso pélvico ou intra-abdominal à distância.",
+            "Estágio III corresponde a peritonite fecal com fezes livres; Estágio IV corresponde a abscesso retroperitoneal restrito.",
+            "Estágio 0 corresponde a abscesso mesocólico com gás livre; Estágio Ia corresponde a peritonite fecal generalizada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> Na classificação de Hinchey modificada por TC:\n- Estágio 0: Diverticulite não complicada leve (apenas espessamento cólico e leve inflamação pericólica);\n- Estágio Ia: Inflamação pericólica confinada / flegmão com microbolhas mesocólicas;\n- Estágio Ib: <strong>Abscesso pericólico ou mesocólico confinado</strong>;\n- Estágio II: <strong>Abscesso pélvico, retroperitoneal ou abdominal à distância</strong>;\n- Estágio III: Peritonite purulenta generalizada;\n- Estágio IV: Peritonite fecal generalizada. Portanto, a Alternativa B é a correta."
+        ],
+        [
+          "3",
+          "Questão 6 (IAMSPE - Instituto de Assistência Médica ao Servidor Público Estadual)"
+        ],
+        [
+          "p",
+          "Homem de 65 anos com história de episódios recorrentes de diverticulite de sigmoide procura atendimento ambulatorial queixando-se de eliminação de ar e \"bolhas de gás\" durante a micção (pneumatúria) e saída de fragmentos alimentares escuros na urina (fecalúria). Ao exame de urina, constata-se urocultura polimicrobiana com crescimento de <em>Escherichia coli</em> e <em>Enterococcus faecalis</em>. Qual é o diagnóstico e o exame tomográfico inicial mais apropriado?"
+        ],
+        [
+          "o",
+          [
+            "Fístula colovesical secundária à diverticulite; Tomografia Computadorizada de abdome e pelve com contraste oral e venoso evidenciando gás no interior da bexiga urinária.",
+            "Divertículo vesical congênito infectado; cistoscopia rígida imediata com biópsia transmural de colo vesical.",
+            "Carcinoma urotelial de pelve renal; urografia excretora com contraste iodado retrógrado em altas doses.",
+            "Abscesso perinefrítico espontâneo; cintilografia renal estática com DMSA."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A associação de <strong>Pneumatúria + Fecalúria + ITU polimicrobiana de repetição</strong> é o quadro clássico patognomônico de <strong>FÍSTULA COLOVESICAL</strong> (Alternativa A). A causa primordial disparada no adulto é a doença diverticular do sigmoide (responsável por cerca de 65% a 70% dos casos). O exame diagnóstico inicial padrão-ouro é a <strong>TC de abdome e pelve</strong>, que demonstra gás no interior do lúmen da bexiga em paciente não cateterizado, além de espessamento focal da parede vesical adjacente à massa diverticular colônica."
+        ]
+      ]
+    ],
+    [
+      "conclusao-recomendações-finais-referencias-diverticulite",
+      0,
+      [
+        [
+          "2",
+          "8. Síntese Terapêutica Integrada e Referências Internacionais Oficiais"
+        ],
+        [
+          "3",
+          "Algoritmo Prático de Decisão Clínica na Diverticulite Aguda"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Tomográfico Precoce:</strong> Todo paciente com dor na FIE suspeita deve ser submetido à TC de abdome e pelve com contraste IV. <strong>Proscrita a colonoscopia e o enema baritado na fase aguda</strong>;",
+            "<strong>Estratificação por Hinchey:</strong>\n    <ul>\n      <li><em>Hinchey 0 / Ia (Não Complicada):</em> Paciente imunocompetente, sintomas leves $\rightarrow$ tratamento sintomático ambulatorial <strong>sem antibióticos</strong> com dieta líquida/branda; se imunossuprimido, febril ou leucocitose acentuada $\rightarrow$ Amoxicilina-Clavulanato oral por 7 a 10 dias;",
+            "<em>Hinchey Ib / II (Abscesso):</em> Internação hospitalar + Ceftriaxona + Metronidazol IV; se coleção $ge 3$ a 4 cm $\rightarrow$ <strong>Drenagem Percutânea Guiada por TC</strong>;",
+            "<em>Hinchey III / IV (Peritonite Generalizada):</em> Cirurgia de Emergência Imediata $\rightarrow$ <strong>Cirurgia de Hartmann</strong> (paciente instável ou peritonite fecal) ou Ressecção Primária com Anastomose e Ileostomia de Proteção (paciente estável selecionado);",
+            "<strong>Rastreamento Oncológico Mandatório:</strong> <strong>Colonoscopia total após 6 a 8 semanas da resolução da crise</strong> para excluir adenocarcinoma colorretal oculto;",
+            "<strong>Cirurgia Eletiva de Intervalo:</strong> Indicada se abscesso prévio drenado por via percutânea, fístulas colovesicais/colovaginais, imunossupressão ou episódios frequentes refratários que impactam a qualidade de vida."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00313-4\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) — Guidelines for the management of acute left-sided colonic diverticulitis</a>",
+            "<a href=\"https://www.gastrojournal.org/article/S0016-5085(15)01432-8/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">American Gastroenterological Association (AGA) — Institute Guideline on the Management of Acute Diverticulitis</a>",
+            "<a href=\"https://journals.lww.com/dcrjournal/fulltext/2020/06000/the_american_society_of_colon_and_rectal.8.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">American Society of Colon and Rectal Surgeons (ASCRS) — Clinical Practice Guidelines for the Treatment of Left-Sided Colonic Diverticulitis</a>",
+            "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa1200234\" target=\"_blank\" rel=\"noopener noreferrer\">New England Journal of Medicine (NEJM) — Randomized Clinical Trial of Antibiotics in Uncomplicated Diverticulitis (AVOD Trial)</a>",
+            "<a href=\"https://sbcp.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) e Sociedade Brasileira de Coloproctologia (SBCP) — Diretrizes Nacionais para Diverticulite Aguda</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

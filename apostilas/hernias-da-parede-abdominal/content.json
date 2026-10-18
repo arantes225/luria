@@ -1,0 +1,1084 @@
+{
+  "v": 2,
+  "s": "hernias-da-parede-abdominal",
+  "t": "Hérnias da Parede Abdominal",
+  "p": "Tratado completo de Hérnias da Parede Abdominal para concursos de Residência Médica e ENAMED: anatomia cirúrgica da região inguinocrural (canal inguinal com suas 4 paredes e 2 anéis, trígono de Hesselbach, trato iliopúbico de Thompson, orifício miopectíneo de Fruchaud e canal femoral); diagnóstico diferencial clínico e semiológico de hérnias indiretas, diretas e femorais; classificação de Nyhus (tipos I a IV) e classificação da European Hernia Society (EHS); hérnias da parede anterior (umbilicais em crianças com conduta expectante até 4-5 anos vs adultos, hérnia epigástrica, hérnia incisional e fatores de risco com técnica de Rives-Stoppa, hérnia de Spigel na linha semilunar); hérnias raras e epônimos clássicos (Richter com isquemia sem obstrução total, Littré com divertículo de Meckel, Amyand com apêndice na hérnia inguinal, De Garengeot com apêndice na hérnia femoral, hérnia obturatória com sinal de Howship-Romberg); técnicas cirúrgicas abertas livres de tensão (Lichtenstein como padrão-ouro aberto) e teciduais (Shouldice, Bassini, McVay) vs videolaparoscópicas (TAPP e TEP); anatomia laparoscópica das zonas de perigo (Triângulo da Morte / Doom com vasos ilíacos e Triângulo da Dor com nervos sensitivos, além da corona mortis); biologia das telas sintéticas (classificação de Amid tipo I a IV, polipropileno, gramatura e ensaio STITCH com técnica de pequenas mordidas 4:1); complicações pós-operatórias (seroma, orquite isquêmica, atrofia testicular, inguinodinia crônica e neurites); conduta cirúrgica e pré-operatória estrita no encarceramento e estrangulamento agudo (contraindicação absoluta de redução manual por taxis, avaliação de viabilidade de alça intestinal e reparo em campo contaminado); casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+  "d": "Tratado completo de Hérnias da Parede Abdominal para concursos de Residência Médica e ENAMED: anatomia cirúrgica da região inguinocrural (canal inguinal com suas 4 paredes e 2 anéis, trígono de Hesselbach, trato iliopúbico de Thompson, orifício miopectíneo de Fruchaud e canal femoral); diagnóstico diferencial clínico e semiológico de hérnias indiretas, diretas e femorais; classificação de Nyhus (tipos I a IV) e classificação da European Hernia Society (EHS); hérnias da parede anterior (umbilicais em crianças com conduta expectante até 4-5 anos vs adultos, hérnia epigástrica, hérnia incisional e fatores de risco com técnica de Rives-Stoppa, hérnia de Spigel na linha semilunar); hérnias raras e epônimos clássicos (Richter com isquemia sem obstrução total, Littré com divertículo de Meckel, Amyand com apêndice na hérnia inguinal, De Garengeot com apêndice na hérnia femoral, hérnia obturatória com sinal de Howship-Romberg); técnicas cirúrgicas abertas livres de tensão (Lichtenstein como padrão-ouro aberto) e teciduais (Shouldice, Bassini, McVay) vs videolaparoscópicas (TAPP e TEP); anatomia laparoscópica das zonas de perigo (Triângulo da Morte / Doom com vasos ilíacos e Triângulo da Dor com nervos sensitivos, além da corona mortis); biologia das telas sintéticas (classificação de Amid tipo I a IV, polipropileno, gramatura e ensaio STITCH com técnica de pequenas mordidas 4:1); complicações pós-operatórias (seroma, orquite isquêmica, atrofia testicular, inguinodinia crônica e neurites); conduta cirúrgica e pré-operatória estrita no encarceramento e estrangulamento agudo (contraindicação absoluta de redução manual por taxis, avaliação de viabilidade de alça intestinal e reparo em campo contaminado); casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia do Aparelho Digestivo e Parede Abdominal",
+  "h": [
+    "Apostila LURIA",
+    "Hérnias da Parede Abdominal",
+    "Tratado completo de Hérnias da Parede Abdominal para concursos de Residência Médica e ENAMED: anatomia cirúrgica da região inguinocrural (canal inguinal com suas 4 paredes e 2 anéis, trígono de Hesselbach, trato iliopúbico de Thompson, orifício miopectíneo de Fruchaud e canal femoral); diagnóstico diferencial clínico e semiológico de hérnias indiretas, diretas e femorais; classificação de Nyhus (tipos I a IV) e classificação da European Hernia Society (EHS); hérnias da parede anterior (umbilicais em crianças com conduta expectante até 4-5 anos vs adultos, hérnia epigástrica, hérnia incisional e fatores de risco com técnica de Rives-Stoppa, hérnia de Spigel na linha semilunar); hérnias raras e epônimos clássicos (Richter com isquemia sem obstrução total, Littré com divertículo de Meckel, Amyand com apêndice na hérnia inguinal, De Garengeot com apêndice na hérnia femoral, hérnia obturatória com sinal de Howship-Romberg); técnicas cirúrgicas abertas livres de tensão (Lichtenstein como padrão-ouro aberto) e teciduais (Shouldice, Bassini, McVay) vs videolaparoscópicas (TAPP e TEP); anatomia laparoscópica das zonas de perigo (Triângulo da Morte / Doom com vasos ilíacos e Triângulo da Dor com nervos sensitivos, além da corona mortis); biologia das telas sintéticas (classificação de Amid tipo I a IV, polipropileno, gramatura e ensaio STITCH com técnica de pequenas mordidas 4:1); complicações pós-operatórias (seroma, orquite isquêmica, atrofia testicular, inguinodinia crônica e neurites); conduta cirúrgica e pré-operatória estrita no encarceramento e estrangulamento agudo (contraindicação absoluta de redução manual por taxis, avaliação de viabilidade de alça intestinal e reparo em campo contaminado); casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia do Aparelho Digestivo e Parede Abdominal",
+      "Tema: Hérnias da Parede Abdominal"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "anatomia-cirurgica-regiao-inguinocrural-espaco-bogros-frugaud",
+      "1. Anatomia Cirúrgica da Região Inguinocrural: Canal Inguinal, Trígono de Hesselbach e Orifício Miopectíneo de Fruchaud"
+    ],
+    [
+      "classificacoes-hernias-nyhus-ehs",
+      "2. Diagnóstico Diferencial Inguinal vs Femoral e Sistemas de Classificação (Nyhus e EHS)"
+    ],
+    [
+      "hernias-parede-anterior-especiais-eponimos",
+      "3. Hérnias da Parede Abdominal Anterior e Hérnias Especiais (Epônimos Cirúrgicos)"
+    ],
+    [
+      "biologia-das-telas-sinteticas-e-reconstrucao-complexa",
+      "4. Biologia das Telas Sintéticas, Biomateriais e Princípios de Reconstrução da Parede Abdominal Complexa"
+    ],
+    [
+      "tratamento-cirurgico-tecnicas-abertas-e-laparoscopicas",
+      "4. Técnicas Cirúrgicas: Reparo Aberto Livre de Tensão (Lichtenstein) vs Teciduais e Videolaparoscopia (TAPP e TEP)"
+    ],
+    [
+      "complicacoes-pos-operatorias-dor-cronica-conduta-urgencia",
+      "5. Complicações Pós-Operatórias, Inguinodinia Crônica e Manejo do Encarceramento / Estrangulamento Agudo"
+    ],
+    [
+      "casos-clinicos-estruturados-hernias",
+      "6. Casos Clínicos Estruturados e Raciocínio Cirúrgico Passo a Passo"
+    ],
+    [
+      "questoes-concurso-comentadas-hernias",
+      "7. Questões de Residência Médica e Concursos de Cirurgia Comentadas Alternativa por Alternativa"
+    ],
+    [
+      "conclusao-recomendações-finais-referencias-hernias",
+      "8. Recomendações e Diretrizes Internacionais das Sociedades de Hérnia (HerniaSurge / EHS)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "anatomia-cirurgica-regiao-inguinocrural-espaco-bogros-frugaud",
+      0,
+      [
+        [
+          "2",
+          "1. Anatomia Cirúrgica da Região Inguinocrural: Canal Inguinal, Trígono de Hesselbach e Orifício Miopectíneo de Fruchaud"
+        ],
+        [
+          "3",
+          "Importância da Anatomia da Parede Abdominal na Formação Cirúrgica"
+        ],
+        [
+          "p",
+          "As hérnias da parede abdominal figuram entre os procedimentos mais executados no mundo, correspondendo a mais de 20 milhões de herniorrafias realizadas anualmente em escala global. No Brasil, o reparo das hérnias inguinais e da parede anterior representa a intervenção cirúrgica eletiva mais prevalente no Sistema Único de Saúde (SUS). O domínio absoluto da <strong>anatomia tridimensional da virilha e da parede abdominal</strong> — tanto na visão anterior clássica (cirurgia aberta) quanto na visão posterior pré-peritoneal (cirurgia videolaparoscópica e robótica) — é indispensável para a correta indicação técnica, redução das taxas históricas de recidiva e prevenção de lesões iatrogênicas vasculares e neurais graves."
+        ],
+        [
+          "3",
+          "Anatomia do Canal Inguinal: As Quatro Paredes e os Dois Anéis"
+        ],
+        [
+          "p",
+          "O canal inguinal é uma fenda anatômica oblíqua com cerca de <strong>4 a 5 cm de comprimento</strong> em adultos, direcionada ínfero-medialmente, situada logo acima e paralelamente à metade medial do ligamento inguinal. Ele estabelece uma via de passagem entre a cavidade peritoneal/espaço pré-peritoneal e a genitália externa (bolsa escrotal no homem, contendo o <em>funículo espermático</em>; e grandes lábios na mulher, contendo o <em>ligamento redondo do útero</em>). A arquitetura do canal inguinal é classicamente descrita através de quatro paredes e dois anéis:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Estrutura Anatômica",
+            "Composição e Elementos Formadores",
+            "Significado Clínico e Relações Anatômicas Chave"
+          ],
+          [
+            [
+              "<strong>Parede Anterior</strong>",
+              "Formada em toda a sua extensão pela <strong>aponeurose do músculo oblíquo externo (oblíquo maior)</strong>, reforçada lateralmente pelas fibras musculares do <em>músculo oblíquo interno</em>.",
+              "É incisada na técnica cirúrgica aberta convencional de Lichtenstein para exposição da luz do canal inguinal e do funículo espermático."
+            ],
+            [
+              "<strong>Parede Posterior (assoalho do canal)</strong>",
+              "Formada predominantemente pela <strong>fáscia transversal</strong>, reforçada medialmente pelo <strong>tendão conjunto</strong> (confluência aponeurótica das fibras arqueadas do músculo oblíquo interno e músculo transverso do abdome) e pelo <em>ligamento reflexo de Colles</em>.",
+              "<strong>É o ponto de fraqueza no qual emergem as hérnias inguinais diretas.</strong> O enfraquecimento e a degeneração do colágeno na fáscia transversal do trígono de Hesselbach permitem a protrusão direta anterior do saco herniário."
+            ],
+            [
+              "<strong>Parede Superior (Teto)</strong>",
+              "Formada pela borda arqueada inferior conjunta das fibras dos músculos <strong>oblíquo interno e transverso do abdome</strong> (que se unem medialmente para compor o tendão conjunto).",
+              "Cruza superiormente o funículo espermático; contrai-se como um esfíncter durante manobras de Valsalva, protegendo o canal (\"mecanismo de persiana\")."
+            ],
+            [
+              "<strong>Parede Inferior (Assoalho/Chão)</strong>",
+              "Formada principalmente pela goteira encurvada do <strong>ligamento inguinal (de Poupart / Fallopio)</strong>, reforçada medialmente pelo <strong>ligamento lacunar (de Gimbernat)</strong>.",
+              "O ligamento inguinal é a borda livre enrolada inferior da aponeurose do músculo oblíquo externo, estendendo-se da Espinha Ilíaca Ântero-Superior (EIAS) até o tubérculo púbico."
+            ],
+            [
+              "<strong>Anel Inguinal Profundo (Interno)</strong>",
+              "Uma abertura infundibuliforme natural na <strong>fáscia transversal</strong>, localizada a meia distância entre a EIAS e a sínfise púbica (cerca de 1,5 a 2 cm acima do ponto médio do ligamento inguinal).",
+              "<strong>Sítio anatômico de emergência das Hérnias Inguinais Indiretas</strong>, localizado <em>lateralmente aos vasos epigástricos inferiores</em>. É por onde penetram os vasos testiculares e o ducto deferente para formar o funículo espermático."
+            ],
+            [
+              "<strong>Anel Inguinal Superficial (Externo)</strong>",
+              "Uma fenda triangular na aponeurose do músculo oblíquo externo, delimitada pelos pilares medial, lateral e intercrural, localizada logo acima do tubérculo púbico.",
+              "Por onde o funículo espermático exterioriza-se em direção à bolsa escrotal; facilmente palpável na semiologia física digital da região inguinal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Trígono de Hesselbach: O Epicentro das Hérnias Diretas"
+        ],
+        [
+          "p",
+          "O trígono inguinal de Hesselbach é a região triangular de menor resistência da parede posterior do canal inguinal, desprovida de suporte muscular estriado. Seus limites anatômicos precisos são constantemente cobrados em provas de cirurgia geral:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Limite Medial:</strong> Borda lateral do músculo reto abdominal (linha semilunar de Spigel);",
+            "<strong>Limite Súpero-lateral:</strong> <strong>Vasos Epigástricos Inferiores</strong> (artéria e veia epigástricas inferiores);",
+            "<strong>Limite Inferior:</strong> <strong>Ligamento Inguinal</strong> (de Poupart) e ligamento pectíneo (de Cooper) mais profundamente."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Regra dos Vasos Epigástricos Inferiores (O Marco Divisor das Hérnias Inguinais):</strong>"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\"><p><strong>A Relação Anatômica dos Vasos Epigástricos Inferiores:</strong></p>\n  <ul>\n    <li><strong>Hérnia Inguinal INDIRETA:</strong> Emerge <strong>LATERAL</strong> aos vasos epigástricos inferiores, através do anel inguinal profundo patologicamente dilatado;</li>\n    <li><strong>Hérnia Inguinal DIRETA:</strong> Emerge <strong>MEDIAL</strong> aos vasos epigástricos inferiores, projetando-se anteriormente por fraqueza da fáscia transversal no interior do <em>Trígono de Hesselbach</em>.</li>\n  </ul></div>"
+        ],
+        [
+          "3",
+          "O Orifício Miopectíneo de Fruchaud e o Trato Iliopúbico de Thompson"
+        ],
+        [
+          "p",
+          "Para a abordagem laparoscópica contemporânea (TAPP e TEP), o cirurgião abandona a visão anterior clássica e passa a visualizar a pelve por sua face posterior pré-peritoneal (espaço de Bogros e espaço retropúbico de Retzius). Nessa perspectiva, Henri Fruchaud definiu em 1956 o <strong>Orifício Miopectíneo de Fruchaud (OMP)</strong> — uma área de fraqueza anatômica congênita comum que engloba <strong>todos os sítios herniários da virilha (inguinal indireto, inguinal direto e femoral)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Limites do Orifício Miopectíneo de Fruchaud:</strong>\n    <ul>\n      <li><em>Superior:</em> Bordas inferiores dos músculos oblíquo interno e transverso do abdome;",
+            "<em>Inferior:</em> Ramo superior do púbis coberto pelo espesso <strong>Ligamento Pectíneo de Cooper</strong>;",
+            "<em>Medial:</em> Borda lateral do músculo reto abdominal e bainha dos retos;",
+            "<em>Lateral:</em> Músculo iliopsoas e fáscia ilíaca."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O Trato Iliopúbico de Thompson como Septo Divisor:</strong> Uma faixa fibrosa densa da fáscia transversal que corre paralelamente e profundamente ao ligamento inguinal, estendendo-se da espinha ilíaca até o púbis. O trato iliopúbico divide o Orifício Miopectíneo de Fruchaud em dois compartimentos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Compartimento Superior (Inguinal):</strong> Onde ocorrem as hérnias inguinais diretas (medialmente) e indiretas (lateralmente);",
+            "<strong>Compartimento Inferior (Crural / Femoral):</strong> Onde ocorrem as hérnias femorais através do canal femoral, abaixo do trato iliopúbico e ligamento inguinal."
+          ]
+        ],
+        [
+          "3",
+          "O Canal Femoral (Crural) e as Hérnias Femorais"
+        ],
+        [
+          "p",
+          "O anel femoral é o orifício de entrada do canal femoral, delimitado rigidamente por estruturas inextensíveis:"
+        ],
+        [
+          "u",
+          [
+            "<em>Anteriormente:</em> Ligamento inguinal (Poupart);",
+            "<em>Posteriormente:</em> Ligamento pectíneo (Cooper) sobreposto ao periósteo do ramo superior do púbis;",
+            "<em>Lateralmente:</em> <strong>Veia Femoral Comum</strong> (separada pelo septo fibroso femoral);",
+            "<em>Medialmente:</em> <strong>Ligamento Lacunar de Gimbernat</strong> (borda livre cortante medial)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Vulnerabilidade ao Estrangulamento:</strong> Como as paredes medial, anterior e posterior são formadas por ligamentos rígidos e tendões inextensíveis, o anel femoral possui diâmetro estreito e rígido. Por conseguinte, a hérnia femoral possui a <strong>maior taxa histórica de encarceramento e estrangulamento agudo de todas as hérnias da virilha (risco de 30% a 45%)</strong>, justificando cirurgia eletiva precoce mandatória após o diagnóstico."
+        ],
+        [
+          "3",
+          "Anatomia Neural da Virilha: Nervos sob Risco Cirúrgico"
+        ],
+        [
+          "p",
+          "A dissecção cirúrgica e a fixação de telas podem lesar ramos nervosos sensitivos e motores, deflagrando <em>inguinodinia crônica incapacitante</em>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Nervo Ílio-hipogástrico (L1):</strong> Trafega entre o oblíquo interno e transverso, perfura o oblíquo interno cerca de 2 a 3 cm medial à EIAS e corre superficialmente ao oblíquo interno paralelamente ao funículo espermático. Inerva a pele da região suprapúbica/hipogástrio;",
+            "<strong>Nervo Ílio-inguinal (L1):</strong> Trafega no interior do canal inguinal, anterior ao funículo espermático, imediatamente abaixo da aponeurose do oblíquo externo. Fornece sensibilidade à raiz do pênis, face anterior do escroto (ou monte de Vênus e grandes lábios na mulher) e porção medial superior da coxa. É o <strong>nervo mais comumente lesado ou aprisionado por suturas na técnica de Lichtenstein</strong>;",
+            "<strong>Ramo Genital do Nervo Genitofemoral (L1-L2):</strong> Penetra no canal inguinal pelo anel profundo e corre na face posterior do funículo espermático (junto aos vasos cremastéricos). Fornece inervação motora ao músculo cremáster (arco reflexo cremastérico) e sensitiva ao escroto e grandes lábios;",
+            "<strong>Ramo Femoral do Nervo Genitofemoral (L1-L2):</strong> Passa abaixo do ligamento inguinal sobre a artéria femoral externa; fornece sensibilidade à pele do triângulo femoral anterior superior da coxa."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacoes-hernias-nyhus-ehs",
+      0,
+      [
+        [
+          "2",
+          "2. Diagnóstico Diferencial Inguinal vs Femoral e Sistemas de Classificação (Nyhus e EHS)"
+        ],
+        [
+          "3",
+          "Diferenciação Semiológica: Hérnia Indireta vs Direta vs Femoral"
+        ],
+        [
+          "p",
+          "A propedêutica física da virilha é realizada com o paciente em ortostase e em decúbito dorsal, inspecionando abaulamentos sob repouso e durante manobra de Valsalva (tosse ou esforço expiratório contra a glote fechada):"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Característica Clínica / Anatômica",
+            "Hérnia Inguinal Indireta",
+            "Hérnia Inguinal Direta",
+            "Hérnia Femoral (Crural)"
+          ],
+          [
+            [
+              "<strong>Etiopatogenia Principal</strong>",
+              "<strong>Congênita</strong> (defeito embrionário por persistência do conduto peritônio-vaginal pérvio).",
+              "<strong>Adquirida</strong> (fraqueza da fáscia transversal por degradação senil de colágeno e elevação de pressão intra-abdominal).",
+              "<strong>Adquirida</strong> (alargamento do anel femoral por gestações múltiplas, esforço crônico e frouxidão pélvica)."
+            ],
+            [
+              "<strong>População Típica</strong>",
+              "Mais comum em crianças, adolescentes e adultos jovens (embora seja a mais comum em todas as idades). Homens &gt;&gt; Mulheres.",
+              "Homens idosos (&gt; 50-60 anos) com DPOC, prostatismo/HPB, constipação crônica ou tabagismo. Rara em mulheres e crianças.",
+              "<strong>Muito mais comum em Mulheres adultas/idosas</strong> (pelve ginecoide ampla), multíparas. Rara no homem."
+            ],
+            [
+              "<strong>Relação com os Vasos Epigástricos</strong>",
+              "<strong>Lateral</strong> aos vasos epigástricos inferiores.",
+              "<strong>Medial</strong> aos vasos epigástricos inferiores (no trígono de Hesselbach).",
+              "<strong>Inferior</strong> ao ligamento inguinal, medial à veia femoral."
+            ],
+            [
+              "<strong>Trajeto Anatômico</strong>",
+              "Penetra pelo anel inguinal profundo, percorre todo o canal inguinal e frequentemente exterioriza-se pelo anel superficial em direção ao escroto (<strong>Hérnia Inguinoescrotal</strong>).",
+              "Projeta-se diretamente para a frente pela parede posterior (fáscia transversal); quase nunca desce para a bolsa escrotal.",
+              "Desce através do anel femoral para a raiz da coxa (trígono de Scarpa). Abaulamento abaixo do ligamento inguinal."
+            ],
+            [
+              "<strong>Palpação Digital do Canal Inguinal (Manobra de Landivar / Valsalva)</strong>",
+              "A polpa digital invaginada pelo escroto no anel externo sente o impulso herniário bater <strong>na PONTA do dedo</strong> durante a tosse. A oclusão digital do anel profundo <em>impede</em> a saída da hérnia.",
+              "O saco herniário bate <strong>na POLPA (lateral) do dedo</strong> do examinador. A oclusão digital do anel profundo <em>não impede</em> a protrusão através do trígono de Hesselbach.",
+              "Abaulamento nodular palpável <strong>abaixo da linha traçada entre a EIAS e a sínfise púbica</strong> (abaixo do ligamento inguinal), logo medial aos pulsos femorais."
+            ],
+            [
+              "<strong>Risco de Encarceramento e Estrangulamento</strong>",
+              "Moderado (5% a 15%), maior que na hérnia direta devido ao anel profundo relativamente estreito.",
+              "<strong>Baixíssimo (&lt; 1% a 2%)</strong>; o colo herniário no trígono de Hesselbach é amplo e complacente.",
+              "<strong>Altíssimo (30% a 45%)</strong>; limites ósseos e ligamentares rígidos inextensíveis (anel femoral estenosante)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Classificação Internacional de Nyhus (1991): O Padrão Universal de Provas"
+        ],
+        [
+          "p",
+          "A classificação proposta por Lloyd M. Nyhus categoriza as hérnias da virilha com base no sítio anatômico, integridade do anel profundo, firmeza da parede posterior e histórico prévio de recidiva:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Tipo de Nyhus",
+            "Subtipo",
+            "Descrição Anatômica Detalhada",
+            "Conduta Cirúrgica Habitual"
+          ],
+          [
+            [
+              "<strong>Tipo I</strong>",
+              "—",
+              "<strong>Hérnia Inguinal INDIRETA com anel inguinal interno normal</strong> (anel profundo de tamanho e arquitetura normais, saco herniário indireto preenchendo o canal sem distorcer o assoalho). Típica de recém-nascidos, lactentes e crianças.",
+              "Ligadura alta e ressecção do saco herniário (Marcy), sem necessidade de reforço da parede posterior com tela."
+            ],
+            [
+              "<strong>Tipo II</strong>",
+              "—",
+              "<strong>Hérnia Inguinal INDIRETA com anel inguinal interno DILATADO</strong>, mas com a <strong>parede posterior (assoalho/fáscia transversal) INTACTA</strong> e vasos epigástricos inferiores não deslocados. Não atinge a bolsa escrotal profunda.",
+              "Hernioplastia livre de tensão com tela (Lichtenstein) ou laparoscopia (TAPP/TEP)."
+            ],
+            [
+              "<strong>Tipo III</strong><br>(Defeito da Parede Posterior)",
+              "<strong>IIIa</strong>",
+              "<strong>Hérnia Inguinal DIRETA</strong> (fraqueza difusa ou focal da fáscia transversal no trígono de Hesselbach).",
+              "Hernioplastia com tela (Lichtenstein) ou videolaparoscopia."
+            ],
+            [
+              "<strong>IIIb</strong>",
+              "<strong>Hérnia Inguinal INDIRETA volumosa</strong> com anel inguinal profundo maciçamente dilatado que <strong>destrói a parede posterior</strong> do canal inguinal (frequentemente inguinoescrotal ou por deslizamento de cólon/bexiga).",
+              "Hernioplastia com tela com reconstrução da parede posterior."
+            ],
+            [
+              "<strong>IIIc</strong>",
+              "<strong>Hérnia FEMORAL (Crural)</strong> através do anel femoral.",
+              "Reparo femoral com tela (plug femoral ou técnica laparoscópica pré-peritoneal) ou técnica de McVay."
+            ],
+            [
+              "<strong>Tipo IV</strong><br>(Hérnias Recidivantes)",
+              "<strong>IVa</strong>",
+              "Hérnia recidivante <strong>DIRETA</strong>.",
+              "Se cirurgia prévia anterior aberta $\rightarrow$ abordar preferencialmente por videolaparoscopia pré-peritoneal (TAPP/TEP). Se cirurgia prévia laparoscópica $\rightarrow$ abordar por via anterior aberta (Lichtenstein)."
+            ],
+            [
+              "<strong>IVb</strong>",
+              "Hérnia recidivante <strong>INDIRETA</strong>."
+            ],
+            [
+              "<strong>IVc</strong>",
+              "Hérnia recidivante <strong>FEMORAL</strong>."
+            ],
+            [
+              "<strong>IVd</strong>",
+              "Hérnia recidivante <strong>MISTA (combinada direta, indireta e/ou femoral)</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Classificação da European Hernia Society (EHS)"
+        ],
+        [
+          "p",
+          "Criada para simplificar e padronizar o registro internacional operatório, a EHS classifica a hérnia por localização anatômica e pelo tamanho do anel herniário medido em dedos/centímetros no intraoperatório:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Localização:</strong>\n    <ul>\n      <li><strong>L (Lateral / Indireta):</strong> Lateral aos vasos epigástricos;",
+            "<strong>M (Medial / Direta):</strong> Medial aos vasos epigástricos;",
+            "<strong>F (Femoral / Crural):</strong> Abaixo do ligamento inguinal pelo canal femoral;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Tamanho do Defeito (Diâmetro do Anel):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>1:</strong> Defeito $le 1,5$ cm ($le 1$ polpa digital);",
+            "<strong>2:</strong> Defeito $> 1,5$ a $3,0$ cm (1 a 2 polpas digitais);",
+            "<strong>3:</strong> Defeito $> 3,0$ cm ($> 2$ polpas digitais);"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Status:</strong> <strong>P</strong> (Primária) ou <strong>R</strong> (Recidivada). Exemplo: <em>EHS L2 P</em> = Hérnia indireta primária com defeito entre 1,5 e 3 cm.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "hernias-parede-anterior-especiais-eponimos",
+      0,
+      [
+        [
+          "2",
+          "3. Hérnias da Parede Abdominal Anterior e Hérnias Especiais (Epônimos Cirúrgicos)"
+        ],
+        [
+          "3",
+          "Hérnias da Parede Abdominal Anterior"
+        ],
+        [
+          "4",
+          "1. Hérnia Umbilical em Crianças e Adultos: Abordagens Divergentes"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hérnia Umbilical na Criança:</strong>\n    <ul>\n      <li><em>Etiologia:</em> Defeito congênito decorrente do fechamento incompleto do anel umbilical fibroso após a queda do cordão umbilical e cicatrização do anel;",
+            "<em>História Natural:</em> Fechamento espontâneo espetacular em mais de 85% a 90% das crianças até os 2 a 4 anos de vida, decorrente do desenvolvimento e aproximação fisiológica da musculatura dos retos abdominais;",
+            "<em>Conduta:</em> Conduta <strong>eminentemente expectante e conservadora até os 4 a 5 anos de idade</strong>. O risco de encarceramento e estrangulamento na infância é insignificante ($&lt; 0,1%$). Faixas e moedas sobre o umbigo são ineficazes e contraindicadas (risco de maceração dérmica e dermatite bacteriana);",
+            "<em>Indicações Cirúrgicas Formais na Criança:</em> Defeito do anel umbilical persistente <strong>após os 4 a 5 anos de idade</strong>; anel herniário com diâmetro <strong>$&gt; 2,0$ cm</strong> após os 2 anos de idade; episódios documentados de encarceramento prévio; ou associação com hérnia inguinal concomitante;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Hérnia Umbilical no Adulto:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Etiologia:</em> Condição adquirida em adultos por alargamento progressivo da cicatriz umbilical por fatores que elevam a pressão intra-abdominal: obesidade mórbida, gestações múltiplas, ascite volumosa em cirróticos e tosse crônica;",
+            "<em>Conduta:</em> Não fecha espontaneamente. Pelo contrário, o colo umbilical fibroso rígido predispõe ao encarceramento omental e ileal precoce;",
+            "<em>Técnica Cirúrgica:</em>\n        <ul>\n          <li>Defeitos pequenos ($&lt; 1,0$ a $1,5$ cm): Reparo primário simples com sutura aponeurótica sem tela (técnica de Mayo ou fechamento transversal);",
+            "Defeitos moderados a grandes (<strong>$ge 1,0$ a $2,0$ cm</strong>): Uso mandatório de <strong>tela sintética de polipropileno</strong> em posição pré-peritoneal (retromuscular) ou subaponeurótica para prevenir recidivas (as diretrizes internacionais da EHS recomendam tela para defeitos $ge 1,0$ cm);"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><em>Hérnia Umbilical no Paciente Cirrótico com Ascite:</em> O manejo clássico era protelar a cirurgia, mas o risco de rotura espontânea de pele sobre a hérnia com peritonite bacteriana fulminante e choque séptico levou à mudança de conduta contemporânea: <strong>indica-se cirurgia eletiva após otimização clínica e controle rigoroso da ascite</strong> (diuréticos e paracentese com albumina venosa).</li>\n    </ul>\n  </li>\n</ul>"
+        ],
+        [
+          "4",
+          "2. Hérnia Epigástrica"
+        ],
+        [
+          "p",
+          "Protrusão da gordura pré-peritoneal (ou raramente saco peritoneal contendo omento) através de pequenas fendas de decussação das fibras aponeuróticas na <strong>linha alba</strong>, entre o processo xifoide e a cicatriz umbilical. Frequentemente múltiplas ao longo da linha alba. Apresenta-se tipicamente como nódulo subcutâneo endurecido de pequeno diâmetro, intensamente doloroso aos esforços devido à isquemia da gordura pré-peritoneal encarcerada em anel aponeurótico rígido. Tratamento: ressecção da gordura necrosada e fechamento aponeurótico (com tela se defeito $> 1$ a 2 cm)."
+        ],
+        [
+          "4",
+          "3. Hérnia Incisional (Eventração Pós-Operatória)"
+        ],
+        [
+          "p",
+          "Desenvolve-se pela falência mecânica ou biológica da cicatrização da aponeurose em sítio prévio de incisão cirúrgica laparotômica. Acomete de 10% a 20% das laparotomias medianas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fatores de Risco Primordiais:</strong> <strong>Infecção de sítio cirúrgico profunda (o fator isolado mais potente)</strong>, obesidade (IMC $> 30$), tabagismo, desnutrição proteica, uso crônico de corticosteroides e imunossupressores, diabetes descompensado, hipertensão intra-abdominal pós-operatória e técnica inadequada de fechamento aponeurótico (relação comprimento da sutura : comprimento da ferida $< 4:1$);",
+            "<strong>Tratamento Cirúrgico:</strong> O fechamento primário por sutura simples sem tela em hérnias incisionais de adultos cursa com taxas de recidiva inaceitáveis de 40% a 50%. A colocação de <strong>tela de polipropileno é mandatória</strong>:\n    <ul>\n      <li><em>Posicionamento da Tela:</em> A posição <strong>retromuscular / pré-fascial posterior (Técnica de Rives-Stoppa)</strong>, alocando a tela no espaço retro-muscular entre o ventre muscular dos retos e o folheto posterior da bainha dos retos, é o padrão-ouro com menor índice de complicações e recidivas;",
+            "<em>Separação Anatômica de Componentes (Técnica de Ramirez / TAR):</em> Indicada em grandes defeitos incisionais com perda de domicílio ($ge 8$ a 10 cm), liberando a aponeurose do músculo oblíquo externo para permitir deslizamento medial dos retos e fechamento da linha média sem tensão excessiva."
+          ]
+        ],
+        [
+          "4",
+          "4. Hérnia de Spigel (Spigélia)"
+        ],
+        [
+          "p",
+          "Emerge pela zona de fraqueza da fáscia de Spigel (aponeurose do músculo transverso do abdome delimitada entre a borda lateral da bainha do reto abdominal e a linha semilunar de Spigel), no ponto de cruzamento com a <strong>linha arqueada de Douglas</strong> (abaixo da qual a aponeurose posterior dos retos desaparece). É uma hérnia <em>interparietal</em> (oculta sob a aponeurose do músculo oblíquo externo íntegro), tornando a palpação física difícil e exigindo tomografia computadorizada para confirmação."
+        ],
+        [
+          "3",
+          "Hérnias Raras e Epônimos Clássicos de Prova"
+        ],
+        [
+          "p",
+          "Os epônimos cirúrgicos constituem questões clássicas e recorrentes nas bancas mais tradicionais do país:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Epônimo / Denominação",
+            "Definição Fisiopatológica e Estrutura Anatômica Específica",
+            "Repercussão Clínica e Pegadinha Típica"
+          ],
+          [
+            [
+              "<strong>Hérnia de Richter</strong>",
+              "Pinçamento e encarceramento de <strong>apenas uma porção da borda antimesentérica da alça intestinal</strong> no interior do anel herniário, sem obstruir a totalidade do lúmen intestinal.",
+              "<strong>O paciente desenvolve isquemia, gangrena e perfuração intestinal com peritonite SEM APRESENTAR sinais clássicos de obstrução intestinal</strong> (mantém trânsito intestinal e eliminação de gases/fezes preservados). Diagnóstico frequentemente tardio e letal."
+            ],
+            [
+              "<strong>Hérnia de Littré</strong>",
+              "Presença de um <strong>Divertículo de Meckel</strong> no interior do saco herniário (seja em sítio inguinal, femoral ou umbilical).",
+              "Pode inflamar mimetizando estrangulamento herniário agudo. Tratamento: ressecção do divertículo de Meckel e herniorrafia com tela."
+            ],
+            [
+              "<strong>Hérnia de Amyand</strong>",
+              "Presença do <strong>Apêndice Cecal (vermiforme)</strong> no interior do saco de uma <strong>Hérnia INGUINAL</strong> (geralmente direita).",
+              "Pode apresentar-se inflamado (apendicite aguda no interior do saco herniário). Se apendicite supurada/perfurada, realiza-se apendicectomia e <strong>contraindica-se tela sintética de polipropileno</strong> (risco de infecção de tela), optando-se por rafia tecidual primária (Shouldice/Bassini)."
+            ],
+            [
+              "<strong>Hérnia de De Garengeot</strong>",
+              "Presença do <strong>Apêndice Cecal</strong> no interior do saco de uma <strong>Hérnia FEMORAL (Crural)</strong>.",
+              "Muito mais rara que a hérnia de Amyand. O apêndice sofre estrangulamento precoce pelo anel femoral estenosante."
+            ],
+            [
+              "<strong>Hérnia de Pantalona (em Sela)</strong>",
+              "Presença concomitante de um saco de <strong>hérnia direta e um saco de hérnia indireta ipsilaterais</strong> no mesmo paciente, separados pelos vasos epigástricos inferiores (\"duas pernas da calça\").",
+              "O cirurgião deve mobilizar ambos os sacos e dissecá-los lateralmente aos vasos antes de posicionar a tela."
+            ],
+            [
+              "<strong>Hérnia por Deslizamento</strong>",
+              "Condição em que uma víscera retroperitoneal (mais comumente <strong>cólon sigmoide à esquerda, ceco à direita ou bexiga urinária</strong>) desliza e forma <strong>parte integrante da própria parede do saco herniário</strong>.",
+              "<strong>Risco cirúrgico máximo de lesão iatrogênica acidental por secção inadvertida da víscera</strong> ao tentar abrir ou ligar o saco herniário pensando ser apenas peritônio parietal."
+            ],
+            [
+              "<strong>Hérnia de Grynfelt e Hérnia de Petit</strong>",
+              "Hérnias lombares posteriores: Grynfelt emerge pelo <strong>trígono lombar superior</strong> (delimitado pelo músculo oblíquo interno, 12ª costela e serrátil póstero-inferior); Petit emerge pelo <strong>trígono lombar inferior</strong> (músculo grande dorsal, oblíquo externo e crista ilíaca).",
+              "Apresentam-se como massa redutível no flanco ou região lombar posterior. Grynfelt é a mais comum entre as hérnias lombares."
+            ],
+            [
+              "<strong>Hérnia Obturatória</strong>",
+              "Protrusão de alça intestinal através do canal obturatório da pelve. Mais comum em <strong>mulheres idosas magras e caquéticas</strong>.",
+              "Comprime o nervo obturador, gerando o <strong>Sinal de Howship-Romberg</strong>: dor na face medial da coxa exacerbada pela extensão, adução e rotação medial do quadril, aliviada pela flexão."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "biologia-das-telas-sinteticas-e-reconstrucao-complexa",
+      0,
+      [
+        [
+          "2",
+          "4. Biologia das Telas Sintéticas, Biomateriais e Princípios de Reconstrução da Parede Abdominal Complexa"
+        ],
+        [
+          "3",
+          "Ciência dos Materiais Cirúrgicos: Classificação Biomecânica das Telas"
+        ],
+        [
+          "p",
+          "O sucesso das hernioplastias modernas depende intrinsecamente da interação biológica entre a prótese sintética e os tecidos conjuntivos do hospedeiro. A escolha do biomaterial adequado requer a compreensão da classificação de Amid para telas cirúrgicas:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Tipo de Tela (Classificação de Amid)",
+            "Estrutura Físico-Química e Tamanho dos Poros",
+            "Exemplos Comerciais e Resposta Tecidual",
+            "Indicações e Contraindicações Clínicas"
+          ],
+          [
+            [
+              "<strong>Tipo I (Macroporosas Monofilamentares)</strong>",
+              "<strong>Poros &gt; 75 $mu$m (idealmente &gt; 1 a 1,5 mm)</strong>, constituídas por fios monofilamentares de <strong>Polipropileno</strong> puro.",
+              "Marlex, Prolene, Trelex. Permite livre trânsito e infiltração de macrófagos (15 a 20 $mu$m), neutrófilos e neovascularização fibroblástica tecidual.",
+              "<strong>O padrão-ouro absoluto para hernioplastias abertas (Lichtenstein) e laparoscópicas (TAPP/TEP)</strong>. Altíssima resistência à infecção bacteriana; caso ocorra infecção superficial ou moderada de ferida, a tela habitualmente pode ser preservada com antibioticoterapia e curativos sem necessidade de explantação cirúrgica."
+            ],
+            [
+              "<strong>Tipo II (Microporosas)</strong>",
+              "<strong>Poros &lt; 10 $mu$m</strong>, constituídas por películas sólidas de <strong>ePTFE (Politetrafluoroetileno expandido)</strong>.",
+              "Gore-Tex. O tamanho diminuto dos microporos impede a entrada de macrófagos e fibroblastos, mas permite a colonização por bactérias menores (como <em>Staphylococcus aureus</em>, 1 $mu$m).",
+              "Baixa aderência visceral (pode ficar em contato direto com o intestino). <strong>Desvantagem crítica:</strong> Se infectada, a colonização bacteriana intraluminal torna-se inatingível pelo sistema imune do paciente e antibióticos sistêmicos, <strong>exigindo a remoção cirúrgica mandatória da prótese</strong>. Rara utilização na virilha hoje."
+            ],
+            [
+              "<strong>Tipo III (Macroporosas com Componente Multifilamentar)</strong>",
+              "Telas macroporosas tecidas com fios trançados/multifilamentares (poliéster / dacron ou polipropileno trançado).",
+              "Mersilene, Surgipro. As microfendas entre os filamentos individuais aprisionam colônias bacterianas.",
+              "Altas taxas de infecção bacteriana persistente, formação de fístulas e extrusão de tela. Amplamente desaconselhadas na cirurgia moderna."
+            ],
+            [
+              "<strong>Tipo IV (Compostas / Dupla Face)</strong>",
+              "Biomateriais híbridos com duas faces distintas: uma face parietal macroporosa de polipropileno/poliéster para fixação na parede e uma face visceral antiaderente lisa (colágeno, celulose oxidada regenerada, ácido hialurônico ou hidrogel).",
+              "Proceed, Parietex Composite, Ultrapro. A face lisa protege as alças intestinais contra aderências densas e fístulas entéricas durante as primeiras 2 a 4 semanas críticas.",
+              "Indicadas em <strong>reparos de hérnias incisionais ventrais por via laparoscópica (IPOM - Intraperitoneal Onlay Mesh)</strong>, onde a tela fica necessariamente posicionada em contato íntimo direto com as alças intestinais na cavidade peritoneal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Gramatura das Telas: Telas Pesadas vs Telas de Baixa Gramatura (Leves)"
+        ],
+        [
+          "p",
+          "A reação inflamatória crônica induzida pelo corpo estranho resulta em formação de cápsula fibrótica e contração da tela (<em>shrinkage</em>), que pode encolher de 20% a 50% de sua área original:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Telas Pesadas Convencionais (Heavyweight, $> 80$ g/m²):</strong> Possuem grande massa de polipropileno e poros menores. Induzem intensa fibrose rígida e espessa (\"placa de couraça\"), associando-se a maior sensação de corpo estranho, menor flexibilidade da parede e taxas mais altas de inguinodinia crônica nociceptiva;",
+            "<strong>Telas Leves / Baixa Gramatura (Lightweight, $< 35$ a $50$ g/m²):</strong> Possuem poros ultra-amplos ($> 2$ a 4 mm) e menor massa de plástico residual, com preservação de força biomecânica suficiente (a pressão intra-abdominal máxima fisiológica humana de pico durante tosse violenta não ultrapassa 150 a 180 mmHg, enquanto as telas leves suportam pressões $> 500$ mmHg). Oferecem menor reação inflamatória a corpo estranho, melhor elasticidade fisiológica da virilha e <strong>menor incidência de dor crônica pós-operatória</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Princípios de Fechamento da Parede e Prevenção de Hérnias Incisionais"
+        ],
+        [
+          "p",
+          "O ensaio clínico multicêntrico europeu <strong>STITCH (Lancet 2015)</strong> revolucionou as recomendações técnicas internacionais para o fechamento de laparotomias medianas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A Técnica das Pequenas Mordidas (Small Bites Technique):</strong> O fechamento aponeurótico em linha média deve ser realizado com sutura contínua com fio monofilamentar absorvível de absorção lenta (Polidioxanona / PDS 2-0 ou 3-0 com agulha pequena), aplicando mordidas de apenas <strong>5 mm da borda aponeurótica e com espaçamento entre pontos de 5 mm</strong>, avançando sem estrangulamento tecidual;",
+            "<strong>A Regra da Proporção Comprimento da Sutura : Comprimento da Ferida ($ge 4:1$):</strong> Para cada 1 cm de ferida cirúrgica, devem ser gastos pelo menos 4 cm de fio de sutura. A técnica de pequenas mordidas (small bites) reduziu a taxa de hérnia incisional de 21% (na técnica clássica de grandes mordidas de 1 cm) para apenas <strong>13%</strong> após 1 ano de seguimento com significância estatística indiscutível."
+          ]
+        ],
+        [
+          "3",
+          "Planos Anatômicos de Fixação de Telas em Hérnias Ventrais e Incisionais"
+        ],
+        [
+          "p",
+          "A localização da prótese em relação aos planos musculoaponeuróticos da parede abdominal determina o índice de complicações serofibrinosas e recidivas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Onlay (Pré-fascial / Subcutânea):</strong> A tela é suturada sobre a aponeurose anterior dos retos abdominais, logo abaixo do tecido celular subcutâneo. <em>Desvantagens:</em> Exige extenso descolamento do subcutâneo com desvascularização tecidual, cursando com altíssimas taxas de seroma volumoso (até 30% a 40%) e infecção de ferida operatória. Técnica em desuso;",
+            "<strong>Inlay (Interposicional):</strong> A tela é suturada nas bordas aponeuróticas retraídas, preenchendo o defeito como uma ponte sem fechar a linha média. Apresenta taxas inaceitáveis de recidiva (&gt; 50%) e não deve ser realizada;",
+            "<strong>Sublay / Retromuscular (Técnica de Rives-Stoppa):</strong> A tela é alocada no espaço retro-muscular pré-fascial (atrás do ventre do músculo reto abdominal e anteriormente ao folheto posterior da bainha dos retos e peritônio). <strong>É o padrão-ouro cirúrgico absoluto</strong>: a pressão intra-abdominal empurra a tela contra a parede muscular posterior, mantendo-a firmemente posicionada; excelente vascularização muscular que previne infecções; e isolamento completo das vísceras abdominais sem contato com as alças;",
+            "<strong>Underlay / IPOM (Intraperitoneal):</strong> A tela é fixada no interior da cavidade peritoneal diretamente sobre o peritônio parietal por videolaparoscopia. Exige obrigatoriamente tela composta com barreira antiaderente visceral."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-cirurgico-tecnicas-abertas-e-laparoscopicas",
+      0,
+      [
+        [
+          "2",
+          "4. Técnicas Cirúrgicas: Reparo Aberto Livre de Tensão (Lichtenstein) vs Teciduais e Videolaparoscopia (TAPP e TEP)"
+        ],
+        [
+          "3",
+          "O Marco da Cirurgia Moderna: O Conceito \"Tension-Free\" de Lichtenstein"
+        ],
+        [
+          "p",
+          "Durante mais de um século, as herniorrafias baseavam-se na aproximação sob tração das bordas musculares e aponeuróticas deficientes do paciente utilizando fios inabsorvíveis (técnicas teciduais clássicas de Bassini, Shouldice e McVay). O resultado histórico eram dores pós-operatórias lancinantes e taxas de recidiva inaceitáveis de 10% a 20%. Em 1989, Irving L. Lichtenstein revolucionou a cirurgia mundial ao introduzir o conceito do <strong>reparo livre de tensão (\"tension-free\") utilizando tela sintética de polipropileno plana</strong> para reforçar o assoalho inguinal sem tracionar os tecidos, despencando as taxas de recidiva para menos de 1% a 2%:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Técnica Cirúrgica",
+            "Via / Abordagem",
+            "Estruturas Anatômicas Suturadas e Detalhes da Técnica",
+            "Indicações Contemporâneas e Papel Atual"
+          ],
+          [
+            [
+              "<strong>Técnica de Lichtenstein</strong>",
+              "Aberta Anterior",
+              "Fixação de uma <strong>tela de polipropileno monofilamentar (dimensões mínimas de $7 \times 15$ cm)</strong> sobre a parede posterior do canal inguinal. A borda inferior é suturada com fio monofilamentar contínuo (polipropileno 2-0 ou 3-0) no <strong>ligamento inguinal</strong>, ultrapassando o tubérculo púbico medialmente por cerca de 2 cm; a borda superior é fixada com pontos simples na aponeurose do oblíquo interno/tendão conjunto; e a cauda lateral da tela é fendida para envolver o funículo espermático no anel profundo, criando um novo anel (\"cruzamento em rabo de peixe\").",
+              "<strong>Padrão-ouro internacional absoluto para o reparo aberto de hérnias inguinais unilaterais primárias em homens adultos</strong>. Pode ser realizada com segurança sob anestesia local infiltrativa e sedação ambulatorial com alta no mesmo dia."
+            ],
+            [
+              "<strong>Técnica de Shouldice</strong>",
+              "Aberta Anterior Tecidual (sem tela)",
+              "Reconstrução anatômica do assoalho inguinal através da imbricação em quatro planos contínuos de sutura com fio inabsorvível da fáscia transversal seccionada e dos músculos oblíquo interno e transverso.",
+              "<strong>A melhor técnica aberta pura SEM tela</strong>. Apresenta as menores taxas de recidiva entre as técnicas teciduais (&lt; 2% a 4% em centros especializados). Indicada em cirurgias de urgência com <strong>contaminação bacteriana grosseira (estrangulamento com necrose intestinal)</strong>, peritonite purulenta/fecal ou quando o uso de tela sintética é formalmente contraindicado."
+            ],
+            [
+              "<strong>Técnica de Bassini</strong>",
+              "Aberta Anterior Tecidual",
+              "Sutura com pontos simples interrompidos do tendão conjunto (músculos oblíquo interno e transverso) e fáscia transversal ao ligamento inguinal (Poupart).",
+              "Primeira técnica anatômica moderna histórica (1889). Abandonada na rotina eletiva moderna pelas altas taxas de tensão tecidual e dor crônica, servindo hoje de valor histórico e recurso de emergência na carência de telas."
+            ],
+            [
+              "<strong>Técnica de McVay</strong>",
+              "Aberta Anterior Tecidual",
+              "Sutura do tendão conjunto e fáscia transversal diretamente ao <strong>Ligamento Pectíneo de Cooper</strong> medialmente e ao ligamento inguinal lateralmente (exige incisão de relaxamento na bainha anterior do músculo reto abdominal para mitigar a tensão extrema).",
+              "<strong>Única técnica tecidual aberta que oclui simultaneamente o anel inguinal e o anel femoral</strong>. Padrão tecidual tradicional de escolha para hérnias femorais quando não se utiliza tela ou em ambiente de infecção contaminada."
+            ],
+            [
+              "<strong>TAPP (Transabdominal Pré-Peritoneal)</strong>",
+              "Videolaparoscópica Transperitoneal",
+              "Acesso inicial com pneumoperitônio à cavidade peritoneal; inspeção laparoscópica de vísceras; incisão peritoneal transversa acima do defeito herniário para abertura de ampla bolsa peritoneal e dissecção do espaço pré-peritoneal de Bogros e Retzius; posicionamento de ampla tela plana ($ge 10 \times 15$ cm) cobrindo todo o Orifício Miopectíneo de Fruchaud; fechamento peritoneal hermético contínuo da lâmina peritoneal.",
+              "Padrão-ouro em: <strong>Hérnias Inguinais Bilaterais</strong>, <strong>Hérnias Recidivadas após técnica aberta anterior prévia</strong>, suspeita de hérnia femoral oculta em mulheres, e em estrangulamentos reduzidos sob anestesia (permite inventariar a viabilidade da alça intestinal por dentro da cavidade)."
+            ],
+            [
+              "<strong>TEP (Totalmente Extraperitoneal)</strong>",
+              "Videolaparoscópica Extraperitoneal",
+              "A dissecção é realizada exclusivamente no espaço pré-peritoneal retromuscular/retropúbico utilizando balão dilatador específico ou dissecção óptica direta, <strong>SEM violar a cavidade peritoneal</strong>. Posiciona-se a tela cobrindo o OMP e desinsufla-se o espaço pré-peritoneal sob visão direta.",
+              "Mesmos benefícios da TAPP, com a vantagem de não penetrar na cavidade abdominal (dispensa fechamento peritoneal e anula o risco de lesões viscerais de alças ou aderências intestinais intraperitoneais à tela). Desvantagem: curva de aprendizado mais longa e espaço de trabalho mais restrito."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Anatomia Laparoscópica Pré-Peritoneal: As Duas Zonas de Perigo Mortal"
+        ],
+        [
+          "p",
+          "Durante a cirurgia laparoscópica (TAPP ou TEP), a fixação inadequada da tela com grampos cirúrgicos metálicos ou tackers absorvíveis pode acarretar hemorragias exanguinantes fulminantes ou neurites crônicas incapacitantes. Por isso, foram formalmente demarcadas as <strong>duas regiões de proibição absoluta de grampeamento</strong>:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Zona de Perigo",
+            "Limites Anatômicos Precisos",
+            "Estruturas Nobres em Risco de Lesão",
+            "Regra de Segurança de Ouro"
+          ],
+          [
+            [
+              "<strong>Triângulo da Morte (Triângulo de Doom)</strong>",
+              "Delimitado <strong>medialmente pelo ducto deferente</strong> (ou ligamento redondo) e <strong>lateralmente pelos vasos espermáticos/testiculares</strong> (artéria e veia testiculares), com ápice no anel inguinal profundo.",
+              "<strong>Artéria e Veia Ilíacas Externas</strong>.",
+              "<strong>PROIBIDO APLICAR QUALQUER GRAMPO, SUTURA OU TACKER NESTA ÁREA.</strong> Uma lesão das ilíacas externas pode acarretar choque hemorrágico catastrófico intraoperatório com risco iminente de morte ou amputação de membro."
+            ],
+            [
+              "<strong>Triângulo da Dor (Triângulo Elétrico)</strong>",
+              "Delimitado <strong>ântero-medialmente pelo trato iliopúbico</strong>, <strong>póstero-medialmente pelos vasos espermáticos/testiculares</strong> e lateralmente pela fáscia ilíaca/crista ilíaca.",
+              "<strong>Nervo Cutâneo Femoral Lateral</strong>, <strong>Ramo Femoral do Nervo Genitofemoral</strong> e <strong>Nervo Femoral</strong> mais profundamente.",
+              "<strong>NUNCA GRAMPEAR ABAIXO DO TRATO ILIOPÚBICO.</strong> A lesão ou transfixação por grampo deflagra neuralgia crônica intratável com dor queimação lancinante na coxa e perda sensitiva/motora incapacitante."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>A \"Corona Mortis\" (Coroa da Morte):</strong> Anastomose vascular anatômica aberrante entre o sistema vascular epigástrico inferior (ou ilíaco externo) e o sistema vascular obturatório, cruzando diretamente sobre a face posterior do ramo superior do púbis e ligamento de Cooper. Presente em cerca de 20% a 30% dos indivíduos. Sua secção inadvertida durante a dissecção do ligamento de Cooper para reparo de hérnias femorais ou fixação de telas na TAPP/TEP provoca sangramento arterial e venoso maciço de difícil controle hemostático."
+        ]
+      ]
+    ],
+    [
+      "complicacoes-pos-operatorias-dor-cronica-conduta-urgencia",
+      0,
+      [
+        [
+          "2",
+          "5. Complicações Pós-Operatórias, Inguinodinia Crônica e Manejo do Encarceramento / Estrangulamento Agudo"
+        ],
+        [
+          "3",
+          "Complicações Pós-Operatórias Precoces e Tardias nas Hernioplastias"
+        ],
+        [
+          "p",
+          "O reparo herniário, embora considerado um procedimento padronizado, envolve a manipulação de estruturas anatômicas ricamente inervadas e vascularizadas, associando-se a complicações específicas que devem ser prontamente reconhecidas e prevenidas:"
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Complicação Pós-Operatória",
+            "Mecanismo Fisiopatológico e Manifestação Clínica",
+            "Abordagem Terapêutica e Medidas Preventivas"
+          ],
+          [
+            [
+              "<strong>Seroma Pós-Operatório</strong>",
+              "Acúmulo de exsudato inflamatório e líquido seroso no espaço morto cirúrgico criado pela dissecção do saco herniário (especialmente em hérnias inguinoescrotais volumosas ou hérnias diretas com grande frouxidão da fáscia transversal). Ocorre em 5% a 15% dos casos; manifesta-se como tumefação indolor e flutuante na região inguinal que simula recidiva precoce da hérnia.",
+              "<strong>Conduta expectante na quase totalidade dos casos</strong> (reabsorção fisiológica espontânea em 4 a 8 semanas). Evitar punções de alívio inadvertidas e repetidas, pois a punção introduz bactérias da flora cutânea em loja cirúrgica contendo corpo estranho (tela de polipropileno), convertendo um seroma estéril benigno em abscesso grave de tela. Punção só se indica se compressão isquêmica de pele ou dor extrema."
+            ],
+            [
+              "<strong>Hematoma Inguinal e Escrotal</strong>",
+              "Sangramento pós-operatório decorrente de hemostasia inadequada de vasos cremastéricos, tributárias da veia safena ou laceração da fáscia transversal. O sangue desseca pela fáscia de Dartos para a bolsa escrotal e base do pênis, gerando sufusões hemorrágicas volumosas (escroto arroxeado edemaciado).",
+              "Gelo local, suspensório escrotal e analgesia nos hematomas contidos e estáveis. Reintervenção cirúrgica de urgência para drenagem e hemostasia se o hematoma for expansivo com repercussão hemodinâmica ou risco de necrose de pele escrotal."
+            ],
+            [
+              "<strong>Orquite Isquêmica e Atrofia Testicular</strong>",
+              "Trombose séptica ou asséptica do <strong>plexo venoso pampiniforme</strong> no interior do funículo espermático, desencadeada por dissecção excessivamente vigorosa de sacos herniários indiretos volumosos e aderidos ao cordão escrotal. Ocorre ingurgitamento venoso testicular com dor testicular intensa, aumento volumétrico endurecido do testículo após 48 a 72 horas, evoluindo tardiamente para atrofia testicular irreversível (em semanas).",
+              "A dissecção de sacos inguinoescrotais gigantes não deve tentar arrancar o saco do fundo escrotal; deve-se transectar o saco no canal inguinal, ligando o colo proximal e deixando o fundo distal aberto na bolsa (\"abandono do saco distal\"). Tratamento da orquite é conservador: analgésicos, AINEs e repouso."
+            ],
+            [
+              "<strong>Inguinodinia Crônica (Dor Crônica Pós-Hernioplastia)</strong>",
+              "Definida como <strong>dor clinicamente significativa que persiste por período superior a 3 meses após o procedimento cirúrgico</strong>. Acomete de 10% a 12% dos pacientes submetidos a reparo aberto, com cerca de 1% a 3% evoluindo com dor grave e incapacitante. Subdivide-se em:\n      <ul>\n        <li><em>Dor Neuropática:</em> Lesão parcial, transecção inadvertida, aprisionamento ou compressão direta de ramos nervosos (ílio-inguinal, ílio-hipogástrico ou ramo genital do genitofemoral) por suturas, grampos ou pela retração cicatricial e fibrose ao redor da tela (<em>meshoma</em>). Cursa com dor queimação, alodinia cutânea e choque paroxístico irradiado para o escroto/coxa;</li>\n        <li><em>Dor Nociceptiva Não Neuropática:</em> Inflamação crônica por reação a corpo estranho ou <strong>periostite do tubérculo púbico</strong> (osteíte púbica) causada pela colocação profunda de pontos no periósteo do osso púbico durante a ancoragem medial da tela de Lichtenstein.</li>\n      </ul>",
+              "Prevenção: identificação meticulosa e preservação dos nervos durante a dissecção cirúrgica; ancorar a tela na aponeurose e fáscia sem transfixar o periósteo púbico; evitar grampeamento no \"triângulo da dor\" na laparoscopia. Manejo clínico escalonado: analgésicos e gabapentinoides (pregabalina/gabapentina); bloqueios anestésicos guiados por ultrassom; e, nos casos refratários incapacitantes $> 6$ meses a 1 ano: <strong>neurectomia cirúrgica tripla</strong> com eventual retirada da tela (<em>meshoma</em>)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Emergência Cirúrgica: Hérnia Encarcerada vs Estrangulada"
+        ],
+        [
+          "p",
+          "O encarceramento e o estrangulamento agudo constituem as principais complicações agudas que demandam atendimento cirúrgico imediato:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hérnia Encarcerada (Irredutível):</strong>\n    <p>Consiste na impossibilidade mecânica de redução do conteúdo herniário para o interior da cavidade abdominal através do anel herniário. A vascularização tecidual encontra-se <strong>preservada</strong>, não havendo sofrimento isquêmico agudo no momento da avaliação. Apresenta-se como abaulamento herniário tenso, doloroso à palpação, porém <em>sem sinais flogísticos cutâneos evidentes</em> e sem toxemia sistêmica. Se o conteúdo for alça de intestino delgado, instala-se o quadro clínico de obstrução intestinal mecânica (dor em cólica, distensão abdominal, parada de eliminação de gases e fezes e vômitos biliares);</p>",
+            "<strong>Hérnia Estrangulada (Isquemia e Necrose):</strong>\n    <p>Ocorre quando a pressão tecidual exercida pelo colo estreito do anel herniário supera a pressão venular e arteriolar do mesentério da víscera herniada, deflagrando <strong>isquemia arterial, trombose microvascular, gangrena transmural, necrose celular e perfuração intestinal</strong>:</p>\n    <ul>\n      <li><em>Sinais Cardinais de Estrangulamento:</em> Dor contínua, intensa e desproporcional no sítio da hérnia; <strong>hiperemia, eritema cutâneo, calor local e edema violáceo da pele suprajacente</strong>; desaparecimento do impulso à tosse; febre; taquicardia; leucocitose com desvio à esquerda; acidose metabólica lática e peritonite focal ou difusa;",
+            "<strong>A REGRA DE OURO DAS URGÊNCIAS CIRÚRGICAS: CONTRAINDICAÇÃO ABSOLUTA DE TENTATIVA DE REDUÇÃO MANUAL (TAXIS):</strong>\n        <p>A manobra de redução manual sob pressão (manobra de Taxis) é <strong>FORMALMENTE PROSCRITA e CONTRAINDICADA se houver qualquer suspeita clínica ou temporal de estrangulamento</strong> (geralmente mais de 4 a 6 horas de encarceramento contínuo, presença de febre, flogose cutânea ou choque). A redução forçada pode empurrar uma alça intestinal necrosada, perfurada ou gangrenada de volta para a cavidade peritoneal livre — evento catastrófico conhecido como <em>\"redução em massa\" (réduction en bloc)</em> —, deflagrando peritonite fecal hiperaguda, choque séptico fulminante e óbito.</p>"
+          ]
+        ],
+        [
+          "3",
+          "Conduta Cirúrgica no Estrangulamento Agudo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Preparo Pré-Operatório Imediato:</strong> Dieta zero, descompressão gástrica com sonda nasogástrica calibrosa aberta, ressuscitação volêmica vigorosa com solução cristaloide balanceada (Ringer Lactato) e antibioticoterapia intravenosa de amplo espectro cobrindo flora entérica polimicrobiana (ex.: Cefazolina ou Ceftriaxona associada a Metronidazol);",
+            "<strong>Incisão Cirúrgica e Cuidados com o Saco Herniário:</strong>\n    <ul>\n      <li>Realiza-se inguinotomia sobre a hérnia;",
+            "<strong>Abertura e Apreensão Prévia do Saco Herniário:</strong> Antes de incisar o anel constritor fibroso para descompressão, o cirurgião deve obrigatoriamente abrir o saco herniário, aspirar o líquido inflamatório ou sanguinolento (habitualmente turvo e fétido) e <strong>segurar e prender firmemente a alça intestinal encarcerada com compressas úmidas</strong>. Se o anel for incisado antes dessa apreensão, a alça necrosada pode retrair-se espontaneamente para a cavidade peritoneal antes de sua inspeção visual, obrigando o cirurgião a realizar uma laparotomia exploradora mediana desnecessária para resgatá-la;",
+            "<strong>Avaliação da Viabilidade da Alça Intestinal:</strong>\n    <ul>\n      <li>Descomprime-se o anel constritor (no caso da hérnia femoral, secciona-se medialmente o ligamento lacunar de Gimbernat, atento à presença da <em>corona mortis</em>; na hérnia inguinal, incisa-se o anel profundo ou a parede anterior);",
+            "Envolve-se a alça intestinal em compressas embebidas em soro fisiológico aquecido a 37-38 ºC e hiperoxigena-se o paciente por <strong>10 a 15 minutos</strong>;",
+            "<em>Critérios de Viabilidade e Recuperação:</em> Retorno da coloração rósea da serosa, reaparecimento de pulsações arteriais no mesentério marginal da alça e retorno do peristaltismo ativo espontâneo ou induzido por leve estímulo tátil. Se a alça recuperar a viabilidade, procede-se à sua reinserção na cavidade abdominal;",
+            "<em>Critérios de Inviabilidade e Necrose Irreversível:</em> Parede intestinal cinzenta-escura, enegrecida ou arroxeada opaca, ausência de peristaltismo, ausência de pulsação arterial no bordo mesentérico e perda de consistência tecidual (friabilidade). Nesses casos, realiza-se <strong>enterectomia segmentar (ressecção da alça necrosada) com anastomose primária término-terminal</strong> entero-entérica;",
+            "<strong>O Dilema da Tela Sintética em Cirurgia Contaminada:</strong>\n    <ul>\n      <li>Se a alça foi apenas desencarcerada e encontra-se viável sem contaminação bacteriana (campo limpo-potencialmente contaminado): o uso de tela de polipropileno monofilamentar (Lichtenstein) é seguro e permitido pelas diretrizes modernas;",
+            "Se houve <strong>perfuração intestinal com derramamento intracavitário de fezes, peritonite purulenta ou contaminação grosseira</strong>: a colocação de tela de polipropileno de poro padrão é formalmente desaconselhada devido ao risco de infecção crônica de prótese com formação de fístula enterocutânea complexa. O reparo deve ser executado preferencialmente através de <strong>técnicas anatômicas teciduais puras (Shouldice para hérnias inguinais ou McVay para hérnias femorais)</strong> ou, quando disponível, tela biológica / tela absorvente sintética."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-hernias",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Raciocínio Cirúrgico Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Hérnia Inguinoescrotal com Propedêutica Topográfica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 32 anos, motorista rodoviário de cargas pesadas, procura o ambulatório de cirurgia geral referindo surgimento de tumefação indolor na virilha direita há 6 meses, que aumenta progressivamente ao longo do dia e \"desce para o testículo direito\" quando carrega caixas pesadas no trabalho, aliviando quase totalmente ao deitar-se à noite."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Paciente eutrófico, eupneico e afebril. Em posição ortostática, visualiza-se abaulamento oblíquo que se estende do terço médio do ligamento inguinal direito até a porção superior da bolsa escrotal direita. O abaulamento é facilmente reduzido com leve compressão manual, sem provocar dor. À palpação digital do canal inguinal invaginando a pele do escroto, a manobra de Valsalva faz com que a massa herniária <strong>toque diretamente a ponta do dedo examinador</strong>. Ao ocluir digitalmente com a outra mão o ponto médio correspondente ao anel inguinal profundo (2 cm acima do ligamento inguinal) e solicitar nova tosse, a massa <strong>não consegue se exteriorizar</strong>."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta:</strong>"
+        ],
+        [
+          "p",
+          "<ul>\n    <li><em>Diagnóstico Anatômico e Topográfico:</em> <strong>Hérnia Inguinoescrotal INDIRETA Direita Primária Não Complicada</strong>;</li>\n    <li><em>Classificação de Nyhus:</em> <strong>Nyhus Tipo II</strong> (se o anel profundo estiver dilatado mas a parede posterior preservada) ou <strong>Nyhus Tipo IIIb</strong> (se houver alargamento maciço com destruição da parede posterior);</li>\n    <li><em>Semiologia Fisiopatológica:</em> O toque na ponta do dedo e o bloqueio da saída pela oclusão do anel profundo comprovam que a hérnia trafega lateralmente aos vasos epigástricos inferiores, descendo por dentro do canal através do conduto peritônio-vaginal pérvio;</li>\n    <li><em>Indicação e Técnica Cirúrgica de Escolha:</em> Tratamento cirúrgico eletivo definitivo. Como se trata de paciente masculino jovem trabalhador braçal:\n      <ol>\n        <li><strong>Abordagem Aberta:</strong> Hernioplastia livre de tensão com tela de polipropileno segundo a <strong>Técnica de Lichtenstein</strong> sob anestesia local e sedação em regime de hospital-dia (alta precoce);</li>\n        <li><strong>Abordagem Laparoscópica (TAPP ou TEP):</strong> Excelente alternativa que permite retorno mais rápido às atividades físicas laborais pesadas e menor dor no pós-operatório imediato.</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Idosa com Abaulamento Doloroso na Raiz da Coxa e Obstrução"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 76 anos, multípara (4 partos normais prévios), magra (IMC 19,5 kg/m²), portadora de constipação intestinal crônica, é admitida no pronto-socorro com quadro de dor abdominal em cólica periumbilical, parada de eliminação de flatos e fezes há 24 horas e vômitos biliosos repetidos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> REG, desidratada ++/4+, taquicárdica (FC 104 bpm), PA 110/70 mmHg. Abdome moderadamente distendido, doloroso difusamente à palpação profunda, ruídos hidroaéreos aumentados com timbre metálico de luta. À ectoscopia da região inguinocrural, observa-se uma massa nodular arredondada, com cerca de 3 cm de diâmetro, localizada <strong>logo abaixo da prega inguinal direita e medialmente aos vasos femorais</strong>. A massa é extremamente dolorosa à palpação, irredutível e a pele suprajacente apresenta-se hiperemiada e quente ao toque."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Decisão Operatória:</strong>"
+        ],
+        [
+          "p",
+          "<ul>\n    <li><em>Diagnóstico Sindrômico e Anatômico:</em> <strong>Hérnia FEMORAL (Crural) Direita ESTRANGULADA (Nyhus IIIc)</strong> associada a Síndrome de Obstrução Intestinal Mecânica em alça de delgado;</li>\n    <li><em>Peculiaridades do Quadro:</em> A localização anatômica estritamente <em>abaixo do ligamento inguinal</em>, na fossa oval da raiz da coxa em uma mulher idosa multípara magra, sela o diagnóstico de hérnia femoral. Os sinais flogísticos locais (hiperemia, calor) associados à irredutibilidade e obstrução clínica fecham o diagnóstico de estrangulamento agudo com alto risco de necrose de alça;</li>\n    <li><em>Conduta Mandatória Imediata:</em>\n      <ol>\n        <li><strong>PROIBIDA QUALQUER TENTATIVA DE REDUÇÃO MANUAL (TAXIS)</strong> sob pena de redução em bloco de alça perfurada para o peritônio;</li>\n        <li>Jejum absoluto, sondagem nasogástrica descompressiva aberta e hidratação cristaloide intravenosa vigorosa;</li>\n        <li>Antibioticoterapia profilática/terapêutica cobrindo Gram-negativos e anaeróbios (Ceftriaxona + Metronidazol);</li>\n        <li><strong>Encaminhamento imediato para Centro Cirúrgico de Emergência</strong>: abordagem inguinotomica com exposição cuidadosa do saco femoral, abertura prévia do saco e apreensão da alça antes da secção medial do ligamento lacunar de Gimbernat. Se a alça estiver necrótica, realizar enterectomia segmentar com anastomose primária e reparo tecidual de McVay (ou plug/tela se contaminação mínima controlada).</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Dor Crônica Queimação Pós-Lichtenstein (Inguinodinia)"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 44 anos retorna ao ambulatório de cirurgia 5 meses após ter sido submetido à hernioplastia inguinal direita aberta pela técnica de Lichtenstein por hérnia indireta não complicada. Refere que a ferida cicatrizou perfeitamente, mas desenvolveu dor contínua em queimação e pontadas na região suprapúbica e na face anterior do escroto à direita, com piora expressiva ao caminhar ou ao atrito de roupas íntimas na virilha."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Ausência de abaulamentos ou recidivas herniárias. À palpação superficial da cicatriz cirúrgica e da pele medial adjacente, o paciente refere hiperalgesia marcante e choque elétrico que se irradia para a base do pênis e bolsa escrotal anterior ao mínimo toque (alodinia mecânica no território do nervo ílio-inguinal)."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Raciocínio Neurocirúrgico:</strong>"
+        ],
+        [
+          "p",
+          "<ul>\n    <li><em>Diagnóstico:</em> <strong>Inguinodinia Crônica Pós-Hernioplastia de Padrão Neuropático</strong> por encarceramento ou neurite do <strong>Nervo Ílio-inguinal Direito</strong>;</li>\n    <li><em>Mecanismo Provável:</em> Transfixação mecânica do nervo ílio-inguinal por sutura ou compressão por retração fibrótica da tela de polipropileno no interior do canal inguinal;</li>\n    <li><em>Estratégia de Manejo Clínico:</em>\n      <ol>\n        <li>Tratamento medicamentoso conservador inicial de primeira linha com neuromoduladores: <strong>Pregabalina (75 a 150 mg 2x/dia) ou Gabapentina</strong> associada a analgésicos e compressas mornas;</li>\n        <li>Se refratário: <strong>Bloqueio Anestésico Diagnóstico e Terapêutico</strong> do nervo ílio-inguinal guiado por ultrassonografia com anestésico local de longa duração (bupivacaína ou ropivacaína) associado a corticosteroide (triancinolona). Se houver alívio imediato temporário da dor durante o bloqueio, confirma-se o envolvimento causal do nervo;</li>\n        <li>Tratamento Cirúrgico Definitivo (reservado para dor incapacitante persistente $> 6$ a 12 meses): <strong>Neurectomia cirúrgica</strong> (secção do nervo ílio-inguinal proximalmente com ligadura e enterramento da extremidade neural no músculo oblíquo interno para evitar formação de neuroma de amputação) e eventual remoção de dobras fibróticas da tela (<em>meshoma</em>).</li>\n      </ol>\n    </li>\n  </ul>\n</div>"
+        ]
+      ]
+    ],
+    [
+      "questoes-concurso-comentadas-hernias",
+      0,
+      [
+        [
+          "2",
+          "7. Questões de Residência Médica e Concursos de Cirurgia Comentadas Alternativa por Alternativa"
+        ],
+        [
+          "3",
+          "Questão 1 (USP - Universidade de São Paulo / Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Homem de 62 anos é submetido a exame físico pré-admissional. O médico cirurgião constata um abaulamento redutível na região inguinal direita. Ao realizar a manobra tátil digital introduzindo a polpa digital no canal inguinal através do anel superficial invaginando a bolsa escrotal, o cirurgião percebe que, durante a manobra de Valsalva, a protrusão herniária <strong>empurra lateralmente a polpa do dedo examinador</strong>, e não a sua ponta. Ao comprimir o anel inguinal profundo com a outra mão e pedir para o paciente tossir novamente, a massa <strong>continua a protruir anteriormente</strong>. Com base na anatomia e na classificação de Nyhus, assinale a opção correta:"
+        ],
+        [
+          "o",
+          [
+            "Trata-se de hérnia inguinal indireta que emerge lateralmente aos vasos epigástricos inferiores; Classificação de Nyhus Tipo II.",
+            "Trata-se de hérnia femoral através do canal crural; Classificação de Nyhus Tipo IIIc.",
+            "Trata-se de hérnia inguinal direta resultante de fraqueza da fáscia transversal no trígono de Hesselbach, emergindo medialmente aos vasos epigástricos inferiores; Classificação de Nyhus Tipo IIIa.",
+            "Trata-se de hérnia obturatória com compressão crônica do nervo obturador e sinal de Howship-Romberg positivo; Classificação de Nyhus Tipo IV."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A semiologia física é clássica e mandatória em provas de cirurgia:\n1. <em>Toque na polpa do dedo:</em> Quando o saco herniário se projeta diretamente para a frente pela parede posterior e toca a <em>polpa lateral do dedo</em>, o diagnóstico é de <strong>Hérnia Inguinal DIRETA</strong> (se tocasse a ponta do dedo, seria indireta descendo pelo canal);\n2. <em>Falha na oclusão do anel profundo:</em> Ao comprimir o anel profundo (anel interno), impede-se a saída da hérnia indireta; porém, a hérnia direta emerge no <strong>Trígono de Hesselbach</strong> (medial aos vasos epigástricos inferiores), não sendo contida por essa manobra;\n3. <em>Classificação de Nyhus:</em> Toda hérnia inguinal direta primária é classificada como <strong>Nyhus Tipo IIIa</strong> (defeito na parede posterior/fáscia transversal). Portanto, Alternativa C é a correta."
+        ],
+        [
+          "3",
+          "Questão 2 (SURCE - Seleção Unificada para Residência Médica do Ceará)"
+        ],
+        [
+          "p",
+          "Durante a realização de uma hernioplastia inguinal videolaparoscópica pela técnica transabdominal pré-peritoneal (TAPP), o cirurgião procede à dissecção do espaço pré-peritoneal de Bogros e planeja a fixação da tela sintética com aplicador de grampos cirúrgicos (tackers). Em relação à anatomia cirúrgica laparoscópica posterior e às zonas de perigo, assinale a conduta <strong>CORRETA</strong> para evitar complicações vasculares e neurais graves:"
+        ],
+        [
+          "o",
+          [
+            "Os grampos devem ser aplicados preferencialmente no interior do Triângulo de Doom (da Morte) para fixar a tela com segurança no periósteo do colo do fêmur.",
+            "É formalmente proibido aplicar qualquer grampo cirúrgico no Triângulo da Morte (delimitado medialmente pelo ducto deferente e lateralmente pelos vasos testiculares) devido ao risco iminente de laceração da artéria e veia ilíacas externas.",
+            "A aplicação de grampos deve ser concentrada abaixo do trato iliopúbico no Triângulo da Dor para anestesiar temporariamente o nervo pudendo interno.",
+            "O nervo ílio-inguinal trafega no interior do Triângulo de Doom ao lado dos vasos epigástricos superiores, sendo a principal estrutura sob risco hemorrágico durante a TAPP."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> As zonas de perigo da anatomia laparoscópica posterior são as seguintes:\n1. <strong>Triângulo da Morte (Triângulo de Doom):</strong> Delimitado medialmente pelo ducto deferente e lateralmente pelos vasos gonadais/testiculares. Contém os <strong>vasos ilíacos externos (artéria e veia ilíacas externas)</strong>. O grampeamento nessa área provoca hemorragia exanguinante catastrófica;\n2. <strong>Triângulo da Dor:</strong> Localizado <em>abaixo do trato iliopúbico</em> e lateralmente aos vasos testiculares. Contém ramos nervosos sensitivos (nervo cutâneo femoral lateral e ramo femoral do genitofemoral). Grampos aí aplicados causam neuralgia crônica intratável;\nPortanto, a regra absoluta de segurança é <strong>NUNCA grampear no Triângulo da Morte e NUNCA grampear abaixo do trato iliopúbico</strong> (Alternativa B correta)."
+        ],
+        [
+          "3",
+          "Questão 3 (ENAMED / Exame Nacional de Medicina)"
+        ],
+        [
+          "p",
+          "Mãe comparece à consulta com o filho de 18 meses de vida referindo que a criança apresenta um \"estufamento no umbigo\" que fica evidente quando a criança chora ou evacua. A mãe relata que colocou uma fita adesiva com uma moeda de um real sobre o umbigo, mas o abaulamento persiste. Ao exame físico pediátrico, a criança encontra-se em excelente estado geral, ativa e corada; há uma hérnia umbilical facilmente redutível, indolor, com anel fibroso medindo 1,0 cm de diâmetro. Não há outras anormalidades anatômicas. Qual é a conduta médica correta recomendada para este caso?"
+        ],
+        [
+          "o",
+          [
+            "Encaminhar imediatamente para cirurgia ambulatorial para herniorrafia com tela de polipropileno de alta densidade antes dos 2 anos.",
+            "Manter a moeda com micropore bem apertado e reavaliar a criança semanalmente para garantir que o anel se feche sob pressão contínua.",
+            "Orientar a retirada imediata da moeda (risco de dermatite bacteriana e lesão de pele) e adotar conduta conservadora expectante com seguimento clínico até os 4 a 5 anos de idade, visto que a imensa maioria fecha espontaneamente.",
+            "Prescrever injeção periumbilical de esclerosante biológico para acelerar a fibrose do anel herniário."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A hérnia umbilical na infância é um defeito congênito que apresenta taxa de fechamento espontâneo de mais de 85% a 90% até os 4 a 5 anos de idade devido ao crescimento e fortalecimento da musculatura dos retos abdominais. O risco de estrangulamento na infância é insignificante. Moedas, botões e faixas compressivas não auxiliam o fechamento e induzem maceração dérmica, úlceras e infecções bacterianas graves (Alternativa C correta). A cirurgia é indicada apenas se o defeito persistir após os 4 a 5 anos, se o anel for $> 2$ cm aos 2 anos, ou se houver episódio documentado de encarceramento."
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP - Universidade Estadual de Campinas)"
+        ],
+        [
+          "p",
+          "Paciente feminina de 72 anos é admitida em unidade de terapia intensiva com sepse de foco abdominal e choque distributivo. Foi submetida à laparotomia exploradora de urgência, sendo constatada hérnia inguinal estrangulada à direita com necrose e perfuração de 15 cm de alça ileal e peritonite purulenta com fezes na cavidade peritoneal. Foi realizada enterectomia segmentar com anastomose primária e lavagem da cavidade. Ao realizar o reparo da parede inguinal com campo grosseiramente contaminado, qual é a conduta cirúrgica mais apropriada?"
+        ],
+        [
+          "o",
+          [
+            "Implantar uma tela de polipropileno monofilamentar pesada pela técnica de Lichtenstein com drenagem tubular fechada.",
+            "Realizar herniorrafia tecidual anatômica pura com imbricação em quatro planos pela técnica de Shouldice (ou técnica de Bassini), evitando o implante de tela sintética permanente em campo infectado.",
+            "Inserir um plug femoral de PTFE e fixá-lo com cola biológica diretamente sobre o ceco perfurado.",
+            "Não reparar a parede abdominal e deixar o anel herniário aberto para drenagem contínua de pus pelo canal inguinal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A presença de <strong>perfuração de alça intestinal com extravasamento de fezes e peritonite purulenta (campo contaminado Classe IV)</strong> contraindica formalmente o implante de telas sintéticas permanentes de polipropileno padrão, pelo risco inaceitável de colonização bacteriana crônica da prótese, abscesso de loja cirúrgica e formação de fístulas enterocutâneas complexas de difícil cicatrização. Nessas situações de contaminação bacteriana grosseira, o padrão-ouro clássico é o <strong>reparo tecidual anatômico sem tela, sendo a técnica de Shouldice a mais indicada</strong> por apresentar a menor taxa de recidiva entre as técnicas puramente teciduais (Alternativa B correta)."
+        ],
+        [
+          "3",
+          "Questão 5 (UNESP - Universidade Estadual Paulista)"
+        ],
+        [
+          "p",
+          "Um homem de 55 anos é admitido com obstrução intestinal e quadro febril. Na laparotomia, o cirurgião encontra um saco herniário inguinal contendo o apêndice cecal vermiforme agudamente inflamado e com perfuração focal na ponta do apêndice. Como é denominada classicamente essa entidade cirúrgica e qual a conduta para o apêndice e para a parede herniária?"
+        ],
+        [
+          "o",
+          [
+            "Hérnia de Littré; ressecção do divertículo e reparo com tela de polipropileno.",
+            "Hérnia de Amyand; apendicectomia e reparo da hérnia preferencialmente sem tela sintética (reparo tecidual).",
+            "Hérnia de De Garengeot; apenas redução do apêndice sem apendicectomia para não contaminar a tela.",
+            "Hérnia de Richter; rafia exclusiva da borda antimesentérica da alça intestinal e colocação de plug femoral."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong>\n1. <strong>Definição do Epônimo:</strong> A presença do apêndice cecal no saco herniário <strong>INGUINAL</strong> é consagrada historicamente como <strong>Hérnia de Amyand</strong> (Claudius Amyand realizou a primeira apendicectomia bem-sucedida da história em 1735 operando um menino com hérnia inguinal contendo apêndice perfurado por um alfinete). Se o apêndice estivesse em saco <em>femoral/crural</em>, seria a Hérnia de De Garengeot; se contivesse divertículo de Meckel, seria Hérnia de Littré;\n2. <strong>Conduta Cirúrgica:</strong> Havendo apendicite aguda purulenta/perfurada, realiza-se apendicectomia e reparo tecidual anatômico da hérnia SEM tela sintética (Shouldice/Bassini), eliminando o risco de infecção crônica de prótese (Alternativa B correta)."
+        ],
+        [
+          "3",
+          "Questão 6 (UERJ - Universidade do Estado do Rio de Janeiro)"
+        ],
+        [
+          "p",
+          "Em relação à técnica de Lichtenstein para reparo das hérnias inguinais em adultos, qual detalhe técnico é considerado fundamental para prevenir a complicação de <strong>osteíte púbica / periostite dolorosa</strong> e reduzir a taxa de recidiva medial?"
+        ],
+        [
+          "o",
+          [
+            "Ancorar a tela transfixando profundamente o osso púbico com fio de aço inabsorvível de grosso calibre.",
+            "Fixar a tela sobrepondo-se ao tubérculo púbico em cerca de 1,5 a 2,0 cm, ancorando a sutura medial na aponeurose e fáscia anterior sobre o púbis, sem transfixar o periósteo ósseo subjacente.",
+            "Ressecar rotineiramente os nervos ílio-inguinal, ílio-hipogástrico e genitofemoral em todos os pacientes assintomáticos.",
+            "Suturar a borda lateral da tela diretamente na veia femoral profunda com fio inabsorvível contínuo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A técnica padronizada de Lichtenstein preconiza que a tela deve ultrapassar o tubérculo púbico medialmente por cerca de <strong>1,5 a 2 cm</strong> para cobrir completamente a zona de fraqueza medial (prevenindo a recidiva medial precoce). No entanto, a sutura medial deve ser fixada com delicadeza na fáscia aponeurótica adjacente, <strong>sem jamais morder ou transfixar o periósteo do tubérculo púbico</strong>. A penetração da agulha no periósteo induz osteíte púbica crônica (periostite), uma das causas mais refratárias e incapacitantes de dor crônica pós-operatória nociceptiva (Alternativa B correta)."
+        ]
+      ]
+    ],
+    [
+      "conclusao-recomendações-finais-referencias-hernias",
+      0,
+      [
+        [
+          "2",
+          "8. Recomendações e Diretrizes Internacionais das Sociedades de Hérnia (HerniaSurge / EHS)"
+        ],
+        [
+          "3",
+          "Consenso Internacional HerniaSurge Guidelines"
+        ],
+        [
+          "p",
+          "As diretrizes internacionais consolidadas pelo grupo <em>HerniaSurge</em> estabelecem as seguintes regras fundamentais de prática clínica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Mulheres com Hérnia da Virilha:</strong> Devem ser <strong>sempre operadas por via videolaparoscópica (TAPP ou TEP)</strong>. O motivo: mulheres possuem incidência até 10 vezes maior de hérnia femoral oculta associada, que não é diagnosticada ou tratada adequadamente por técnicas anteriores abertas como Lichtenstein, resultando em altas taxas de recidiva femoral tardia e estrangulamento agudo;",
+            "<strong>Hérnia Bilateral e Hérnia Recidivada:</strong> A abordagem <strong>videolaparoscópica (TAPP/TEP)</strong> é a primeira escolha de consenso internacional para hérnias bilaterais (opera-se os dois lados pelos mesmos três trocartes com menor dor) e para recidivas após cirurgia aberta prévia (opera-se em plano virgem pré-peritoneal livre de fibrose cicatricial anterior);",
+            "<strong>Hérnia Inguinal Unilateral Primária no Homem:</strong> A técnica de Lichtenstein sob anestesia local infiltrativa e a videolaparoscopia (TAPP/TEP) apresentam eficácia e segurança equivalentes, sendo ambas opções de primeira linha respaldadas por evidências de alto nível;",
+            "<strong>Conduta Expectante (Watchful Waiting):</strong> Em homens idosos oligossintomáticos ou completamente assintomáticos portadores de hérnia inguinal direta ou indireta redutível com comorbidades clínicas graves, a conduta expectante é segura e recomendada, visto que o risco de encarceramento agudo é inferior a 0,2% a 0,5% ao ano."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://link.springer.com/article/10.1007/s10029-017-1668-x\" target=\"_blank\" rel=\"noopener noreferrer\">HerniaSurge Group — International guidelines for groin hernia management</a>",
+            "<a href=\"https://www.europeanherniasociety.eu/guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">European Hernia Society (EHS) — Guidelines on the management of groin and ventral hernias</a>",
+            "<a href=\"https://cbc.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) — Recomendações Nacionais no Manejo das Hérnias da Parede Abdominal</a>",
+            "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa040093\" target=\"_blank\" rel=\"noopener noreferrer\">New England Journal of Medicine (NEJM) — A Randomized Trial of Laparoscopic versus Open Repair of Inguinal Hernia</a>",
+            "<a href=\"https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00324-1\" target=\"_blank\" rel=\"noopener noreferrer\">World Journal of Emergency Surgery (WJES) — Guidelines for emergency repair of complicated abdominal wall hernias</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
