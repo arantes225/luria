@@ -6,9 +6,21 @@ import fs from 'fs';
 import path from 'path';
 
 const slug = 'planejamento-reprodutivo-contracepcao';
-const baseSections = parseExistingSections(slug);
+// Carregar o draft original limpo
+const htmlOriginal = fs.readFileSync(`apostilas/${slug}/index.html`, 'utf8');
+const secRegex = /<section\b[^>]*id=["']([^"']*)["'][^>]*>([\s\S]*?)<\/section>/gi;
+const baseSections = [];
+let m;
+while ((m = secRegex.exec(htmlOriginal)) !== null) {
+  const id = m[1];
+  const raw = m[2];
+  const h2Match = raw.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
+  const title = h2Match ? h2Match[1].replace(/<[^>]+>/g, '').trim() : id;
+  const body_html = raw.replace(/<h2[^>]*>[\s\S]*?<\/h2>/i, '').trim();
+  baseSections.push({ id, title, body_html });
+}
 
-// Integrar expansão antes das referências
+// Inserir as novas seções de expansão exatamente uma vez antes da seção de referências
 const finalSections = [];
 for (const s of baseSections) {
   if (s.id === 'referencias') {
