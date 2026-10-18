@@ -456,13 +456,10 @@
         .map(row => ({row, score:imageNoveltyScore(row, authoredKinds)}))
         .sort((a,b) => b.score - a.score || Number(a.row.id) - Number(b.row.id));
 
-      // Uma imagem principal já presente é mantida; no máximo um complemento visual
-      // realmente distinto por seção. Sem principal, no máximo duas em seção extensa.
-      const subsectionCount = [...section.children].filter(el => /^H[34]$/.test(el.tagName)).length;
-      const maxAdditional = authoredImages.length ? 1 : (subsectionCount >= 4 ? 2 : 1);
-      const chosen = ranked.filter(item => item.score >= (authoredImages.length ? 12 : 0))
-        .slice(0,maxAdditional)
-        .map(item => item.row);
+      // A aprovação no Admin é a decisão editorial de exibir a imagem.
+      // Não ocultar candidatas aprovadas por um limite arbitrário de 1–2 por seção.
+      // A prevenção de duplicatas por URL/identidade acima continua em vigor.
+      const chosen = ranked.map(item => item.row);
       chosen.forEach((row, index) => placeApprovedImage(row,index,chosen.length));
     });
   }
@@ -602,35 +599,21 @@
   async function loadRows() {
     if (!sb) return;
 
-    let pending = [];
-    let approved = [];
-
-    if (isAdmin) {
-      const { data: adminData, error: adminError } = await sb.rpc("admin_list_apostila_images", {
-        p_apostila_path: path
-      });
-      if (adminError) {
-        console.warn("Curadoria administrativa da apostila indisponível:", adminError);
-      } else {
-        const all = Array.isArray(adminData) ? adminData : [];
-        pending = all.filter(row => row.review_status === "pending");
-        approved = all.filter(row => row.review_status === "approved");
-      }
-    } else {
-      const { data: approvedData, error: approvedError } = await sb.rpc("list_approved_apostila_images", {
-        p_apostila_path: path
-      });
-      if (approvedError) {
-        console.warn("Imagens aprovadas da apostila indisponíveis:", approvedError);
-        return;
-      }
-      approved = Array.isArray(approvedData) ? approvedData : [];
+    // Esta página é apenas de leitura: a aprovação/rejeição pertence ao Admin.
+    // O endpoint público expõe exclusivamente registros aprovados e funciona
+    // tanto para visitantes anônimos quanto para administradores autenticados.
+    const { data: approvedData, error: approvedError } = await sb.rpc("list_approved_apostila_images", {
+      p_apostila_path: path
+    });
+    if (approvedError) {
+      // Em caso de falha temporária, preservar as figuras já renderizadas.
+      console.warn("Imagens aprovadas da apostila indisponíveis:", approvedError);
+      return;
     }
 
-    rows = [...approved, ...pending];
+    rows = (Array.isArray(approvedData) ? approvedData : [])
+      .filter(row => row.review_status === "approved");
     renderApproved();
-    // Revisão de candidatas acontece somente em /admin/ para permitir lotes.
-    // A página de leitura exibe exclusivamente as imagens aprovadas.
   }
 
   async function boot() {
