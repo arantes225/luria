@@ -87,7 +87,6 @@ function renderFriendsList(){
   const count=document.getElementById('social-friend-count');if(count)count.textContent=String(friendsRowsCache.length);
   host.innerHTML=rows.length?rows.map(friend=>`
     <div class="friend-row sf-person-card" data-friend-user="${fEsc(friend.user_id)}">
-      <div class="sc-person-cover" aria-hidden="true"><svg viewBox="0 0 160 64" fill="none"><path d="M12 47c29-39 67 30 119-21"/><circle cx="132" cy="25" r="15"/><path d="m65 19 14 5 14-5v22l-14 5-14-5V19Zm14 5v22"/></svg></div>
       <div class="friend-main">
         ${friendAvatar(friend)}
         <span class="friend-copy">

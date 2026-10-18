@@ -76,7 +76,8 @@ function ensureReviewBackButton(){
  bar.prepend(b);
 }
 function fullscreen(){
- const bar=document.getElementById("review-focus-toolbar");if(!bar||document.getElementById("flash-v21-fullscreen"))return;const b=document.createElement("button");b.id="flash-v21-fullscreen";b.className="button secondary";b.type="button";b.textContent="Tela cheia";b.onclick=async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch{document.body.classList.toggle("flash-review-session-active")}};bar.append(b)
+ const bar=document.getElementById("review-focus-toolbar");if(!bar||document.getElementById("flash-v21-fullscreen"))return;const b=document.createElement("button");b.id="flash-v21-fullscreen";b.className="button secondary";b.type="button";b.innerHTML='⛶ Tela cheia';b.onclick=async()=>{const isZen=document.body.classList.toggle("flash-zen-mode");b.innerHTML=isZen?'✕ Sair da tela cheia':'⛶ Tela cheia';try{if(isZen&&!document.fullscreenElement)await document.documentElement.requestFullscreen();else if(!isZen&&document.fullscreenElement)await document.exitFullscreen()}catch{}};bar.append(b);
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.classList.contains("flash-zen-mode")){document.body.classList.remove("flash-zen-mode");b.innerHTML='⛶ Tela cheia';}});
 }
 document.addEventListener("DOMContentLoaded",()=>{buildNavigation();ensureLibraryHero();ensureReviewBackButton();fullscreen();requestAnimationFrame(()=>document.body.classList.remove("flash-v21-booting"));let timer=0;["library-search","library-area","library-materia","library-active"].forEach(id=>document.getElementById(id)?.addEventListener(id==="library-search"?"input":"change",()=>{clearTimeout(timer);timer=setTimeout(rebuildDecks,id==="library-search"?180:0)}))});
 })();

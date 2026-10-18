@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-Rx0UIq+NoX2g+Pcdc9L8a/4oqHE+b3Teq+p0vJ3y3ZU=' 'sha256-ah0urH1M6QkbNwh6qYjoTdD1OKGGzjKGfRx9aDqR9S8=' https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -17,9 +17,18 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
 
   <style>
+    /* Cronograma — usa o mesmo fundo global/padrão do restante do site */
+    body[data-page="schedule"],
+    body[data-page="cronograma"],
+    body {
+      background: var(--bg) !important;
+      background-image: none !important;
+    }
+
     .schedule-stack {
       display: grid;
       gap: 16px;
@@ -2196,6 +2205,785 @@
   .exam-priority-badge.low { background:var(--surface-2); color:var(--muted); border:1px solid var(--border); }
 
 
+  /* Adição/importação de aulas vive em Configurações > Cronograma. */
+  body:not(.schedule-settings-embed) .schedule-add-hub,
+  body:not(.schedule-settings-embed) .schedule-add-section { display:none!important; }
+
+  /* Nova Atividade: exibe o compositor manual dentro do Cronograma. */
+  body:not(.schedule-settings-embed).activity-composer-open .schedule-add-hub{
+    display:block!important;
+  }
+  body:not(.schedule-settings-embed).activity-composer-open .schedule-add-section.active{
+    display:block!important;
+  }
+  html.schedule-settings-embed-root #sidebar-backdrop, body.schedule-settings-embed #sidebar-backdrop { display:none!important; pointer-events:none!important; }
+  html.schedule-settings-embed-root .sidebar, html.schedule-settings-embed-root .topbar, body.schedule-settings-embed .sidebar, body.schedule-settings-embed .topbar { pointer-events:none!important; }
+  body.schedule-settings-embed .schedule-stack { gap:16px!important; }
+  body.schedule-settings-embed .schedule-stack > :not(.schedule-add-hub):not(.schedule-add-section) { display:none!important; }
+
+
+  /* Cronograma 2026: calendário como elemento principal */
+  body:not(.schedule-settings-embed) .schedule-summary,
+  body:not(.schedule-settings-embed) .overdue-organizer,
+  body:not(.schedule-settings-embed) #deck-panel,
+  body:not(.schedule-settings-embed) .theme-library-panel{display:none!important}
+  body:not(.schedule-settings-embed) .schedule-stack{gap:12px}
+  body:not(.schedule-settings-embed) .planner-panel{padding:14px!important;border-radius:16px!important}
+  body:not(.schedule-settings-embed) .planner-header{align-items:center!important;margin-bottom:2px}
+  body:not(.schedule-settings-embed) .planner-header h2{font-size:18px!important}
+  body:not(.schedule-settings-embed) .planner-tools{flex-direction:row!important;align-items:center!important;gap:8px!important}
+  body:not(.schedule-settings-embed) .planner-nav{order:2!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle{order:1!important}
+  body:not(.schedule-settings-embed) .month-planner{background:transparent!important;gap:0!important;border-color:color-mix(in srgb,var(--border) 72%,transparent)!important}
+  body:not(.schedule-settings-embed) .month-weekday{min-height:34px!important;background:transparent!important;border-bottom:1px solid color-mix(in srgb,var(--border) 72%,transparent)!important}
+  body:not(.schedule-settings-embed) .month-day{min-height:145px!important;padding:8px!important;border-right:1px solid color-mix(in srgb,var(--border) 72%,transparent)!important;border-bottom:1px solid color-mix(in srgb,var(--border) 72%,transparent)!important}
+  body:not(.schedule-settings-embed) .month-day:nth-child(7n){border-right:0!important}
+  body:not(.schedule-settings-embed) .month-topic,
+  body:not(.schedule-settings-embed) .month-event{padding:5px 7px!important;border-radius:6px!important;font-size:9px!important}
+  body:not(.schedule-settings-embed) .week-planner{border:0!important;gap:8px!important;overflow:visible!important;height:auto!important;min-height:0!important}
+  body:not(.schedule-settings-embed) .planner-day{min-height:0!important;border:1px solid var(--border)!important;border-radius:12px!important;overflow:hidden}
+  body:not(.schedule-settings-embed) .planner-day-header{min-height:44px!important}
+  body:not(.schedule-settings-embed) .planner-day-body{padding:7px!important;gap:6px!important}
+  body:not(.schedule-settings-embed) .topic-card{padding:8px!important;border-radius:8px!important}
+  body:not(.schedule-settings-embed) .topic-card h3{font-size:10px!important}
+  @media(min-width:1050px){
+    body:not(.schedule-settings-embed) .planner-panel{min-height:0}
+    body:not(.schedule-settings-embed) .month-day{min-height:calc((100vh - 255px)/5)!important}
+  }
+
+
+  body:not(.schedule-settings-embed) .planner-header{display:flex;align-items:center!important;justify-content:space-between;gap:14px;margin-bottom:12px!important}
+  .planner-header-left{display:flex;align-items:center;gap:14px;min-width:0}
+  .planner-period-title{margin:0!important;font-size:20px!important;font-weight:850!important;letter-spacing:-.025em;color:var(--text);white-space:nowrap}
+  .planner-nav-arrows{display:flex;align-items:center;gap:6px;order:initial!important}
+  .planner-nav-arrows button{width:38px;height:38px;padding:0;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);font-size:23px;line-height:1;display:grid;place-items:center}
+  .planner-nav-arrows button:hover{background:var(--surface-2);border-color:color-mix(in srgb,var(--accent) 35%,var(--border))}
+  .planner-today{min-height:38px;padding:0 15px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--text);font:inherit;font-size:11px;font-weight:750;cursor:pointer}
+  .planner-today:hover{background:var(--surface-2)}
+  body:not(.schedule-settings-embed) .planner-tools{display:flex;flex-direction:row!important;align-items:center!important;gap:8px!important}
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .planner-header{align-items:flex-start!important;flex-wrap:wrap}
+    .planner-period-title{font-size:17px!important}
+    .planner-nav-arrows button{width:34px;height:34px}
+    body:not(.schedule-settings-embed) .planner-tools{width:100%;justify-content:space-between}
+  }
+  .agenda-workspace{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px;align-items:start}
+  .agenda-workspace .planner-panel{min-width:0;height:max-content;align-self:start}
+  .agenda-side{display:grid;gap:10px;position:sticky;top:14px}
+  .agenda-today-card{padding:0!important;overflow:hidden}
+  .agenda-today-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 13px;border-bottom:1px solid var(--border)}
+  .agenda-today-title-wrap{display:flex;align-items:center;gap:9px;min-width:0}
+  .agenda-today-icon{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:13px}
+  .agenda-today-title-wrap h3{margin:0;font-size:12px;font-weight:850;color:var(--text)}
+  .agenda-today-date{display:block;margin-top:2px;color:var(--muted);font-size:7.5px;white-space:nowrap}
+  .agenda-today-list{display:grid;gap:0!important;padding:5px}
+  .agenda-today-row{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;min-height:50px;padding:7px 7px 7px 12px;border-bottom:1px solid var(--border);background:var(--surface)}
+  .agenda-today-row:last-child{border-bottom:0}
+  .agenda-today-row::before{content:"";position:absolute;left:3px;top:8px;bottom:8px;width:3px;border-radius:999px;background:var(--agenda-row-accent,var(--accent))}
+  .agenda-today-check{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer}
+  .agenda-today-main{min-width:0}
+  .agenda-today-time{display:block;color:var(--muted);font-size:7.5px;font-weight:750;margin-bottom:2px}
+  .agenda-today-main strong{display:block;font-size:9px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .agenda-today-main small{display:block;margin-top:2px;color:var(--muted);font-size:7.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .agenda-today-kind{display:inline-flex;align-items:center;justify-content:center;min-height:22px;padding:0 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:7px;font-weight:800;white-space:nowrap}
+  .agenda-today-row.kind-review{--agenda-row-accent:#20b7aa}
+  .agenda-today-row.kind-simulation{--agenda-row-accent:#8b5cf6}
+  .agenda-today-row.kind-other{--agenda-row-accent:#f59e0b}
+  .agenda-today-row.kind-lesson{--agenda-row-accent:var(--accent)}
+
+  .agenda-side-card{padding:13px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+  .agenda-side-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px}
+  .agenda-side-head h3{margin:2px 0 0;font-size:12px}
+  .agenda-kicker{font-size:8px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .agenda-count{min-width:25px;height:25px;display:grid;place-items:center;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:10px;font-weight:850}
+  .agenda-today-list,.agenda-next-list{display:grid;gap:6px}
+  .agenda-task{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;padding:8px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2)}
+  .agenda-task input{margin-top:2px;accent-color:var(--accent)}
+  .agenda-task strong{display:block;font-size:9px;line-height:1.35}.agenda-task small{display:block;margin-top:2px;color:var(--muted);font-size:8px}
+  .agenda-next-item{padding:7px 0;border-bottom:1px solid var(--border)}.agenda-next-item:last-child{border-bottom:0}
+  .agenda-next-item strong{display:block;font-size:9px}.agenda-next-item span{font-size:8px;color:var(--muted)}
+  .agenda-empty{margin:0;color:var(--muted);font-size:9px;line-height:1.45}
+  .agenda-mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.agenda-mini-stats div{padding:8px 4px;border-radius:9px;background:var(--surface-2);text-align:center}
+  .agenda-mini-stats strong{display:block;font-size:14px}.agenda-mini-stats span{display:block;margin-top:2px;color:var(--muted);font-size:7px}
+  body:not(.schedule-settings-embed) .month-day{min-height:125px!important}
+  body:not(.schedule-settings-embed) .month-day-items{display:grid;gap:3px;align-content:start}
+  body:not(.schedule-settings-embed) .month-topic,body:not(.schedule-settings-embed) .month-event{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid var(--accent)!important;background:var(--accent-soft)!important;color:var(--text)!important}
+  body:not(.schedule-settings-embed) .month-event{border-left-color:#7b8798!important;background:var(--surface-2)!important}
+  @media(max-width:1050px){.agenda-workspace{grid-template-columns:1fr}.agenda-side{position:static;grid-template-columns:repeat(3,minmax(0,1fr))}}
+  @media(max-width:720px){.agenda-side{grid-template-columns:1fr}}
+  .week-matrix-grid{display:grid;grid-template-columns:minmax(105px,1.15fr) repeat(7,minmax(70px,1fr));border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--surface)}
+  .week-matrix-label,.week-matrix-head,.week-matrix-cell{min-height:48px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:7px;padding:7px}
+  .week-matrix-label{justify-content:flex-start;font-size:10px}.week-matrix-head{flex-direction:column;gap:1px;font-size:10px}.week-matrix-head span{color:var(--muted);text-transform:capitalize}.week-matrix-head strong{font-size:12px}.week-matrix-head.today{background:var(--accent);color:#fff}.week-matrix-head.today span{color:#fff}
+  .week-dot{width:9px;height:9px;border-radius:50%;display:block;background:var(--accent)}.week-dot.empty{background:var(--border)}.week-legend{width:9px;height:9px;border-radius:3px;background:var(--accent)}
+  .week-category-label{gap:8px!important}
+  .week-category-icon{width:25px;height:25px;display:grid;place-items:center;border-radius:7px;color:#fff;flex:0 0 25px}
+  .week-category-icon .week-category-svg{width:14px;height:14px}
+  .week-category-icon.kind-lesson{background:#2f8ff3}
+  .week-category-icon.kind-questions{background:#25b982}
+  .week-category-icon.kind-flashcards{background:#8b5cf6}
+  .week-category-icon.kind-review{background:#f07a14}
+  .week-category-icon.kind-errors{background:#e04f5f}
+  .week-category-icon.kind-simulation{background:#8b5cf6}
+  .week-category-icon.kind-other{background:#6e8199}
+
+  .kind-questions{background:#20b77a!important}.kind-flashcards{background:#8b5cf6!important}.kind-review{background:#f59e0b!important}.kind-simulation{background:#ef5350!important}.kind-other{background:#7b8798!important}
+  @media(max-width:900px){.week-matrix{overflow-x:auto}.week-matrix-grid{min-width:720px}}
+
+
+  /* Cronograma inspirado no layout de referência: calendário central + resumo lateral + cards inferiores */
+  body:not(.schedule-settings-embed) .schedule-stack{gap:14px!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:minmax(0,1fr) 285px;gap:14px;align-items:stretch}
+  body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{padding:14px!important;border-radius:15px!important;box-shadow:0 8px 24px rgba(15,35,65,.035)}
+  body:not(.schedule-settings-embed) .agenda-summary-side{position:static;display:block;height:100%}
+  body:not(.schedule-settings-embed) .agenda-week-summary-card{height:100%;padding:14px!important;display:flex;flex-direction:column}
+  .agenda-summary-head{margin-bottom:12px!important}
+  .agenda-summary-head h3{font-size:15px!important;margin-top:3px!important}
+  .agenda-summary-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .agenda-summary-metric{display:flex;align-items:center;gap:9px;min-height:58px;padding:10px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2)}
+  .agenda-summary-metric:last-child{grid-column:1/-1}
+  .agenda-summary-icon{width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-weight:900;font-size:11px}
+  .agenda-summary-metric strong{display:block;font-size:15px;line-height:1}.agenda-summary-metric span:last-child{display:block;margin-top:4px;color:var(--muted);font-size:8px}
+  .agenda-distribution{margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+  .agenda-distribution-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.agenda-distribution-head strong{font-size:10px}.agenda-distribution-head span{font-size:8px;color:var(--muted)}
+  .agenda-donut-row{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:center}
+  .agenda-donut{width:88px;aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--border) 0 100%);position:relative}
+  .agenda-donut::after{content:"";position:absolute;inset:19px;border-radius:50%;background:var(--surface)}
+  .agenda-distribution-legend{display:grid;gap:7px;min-width:0}.agenda-legend-item{display:grid;grid-template-columns:7px 1fr auto;gap:6px;align-items:center;font-size:8px;color:var(--muted)}.agenda-legend-dot{width:7px;height:7px;border-radius:50%}.agenda-legend-item strong{font-size:8px;color:var(--text)}
+  .agenda-bottom-grid{display:grid;grid-template-columns:1fr;gap:14px;align-items:stretch}
+  .agenda-bottom-grid>.agenda-side-card{min-height:188px;padding:0;border-radius:15px;overflow:hidden}
+  .agenda-bottom-grid .agenda-next-card,.agenda-bottom-grid .agenda-goals-card{padding:13px}
+  .agenda-bottom-grid .agenda-today-list{max-height:205px;overflow:auto}
+  .agenda-bottom-grid .agenda-next-list{display:grid;gap:0}
+  .agenda-bottom-grid .agenda-next-item{padding:10px 2px}
+  .agenda-goals-list{display:grid;gap:8px}.agenda-goal-row{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:9px}.agenda-goal-row span{color:var(--muted)}.agenda-goal-row strong{font-size:9px}.agenda-goal-progress{height:6px;border-radius:999px;background:var(--surface-2);overflow:hidden}.agenda-goal-progress i{display:block;height:100%;width:0;border-radius:inherit;background:var(--accent);transition:width .25s ease}
+  body:not(.schedule-settings-embed) .planner-period-title{text-transform:capitalize}
+  body:not(.schedule-settings-embed) .planner-view-toggle{order:0!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle button{min-width:58px}
+  body:not(.schedule-settings-embed) .month-planner{margin-top:10px!important;border-radius:12px!important}
+  body:not(.schedule-settings-embed) .month-weekday{min-height:30px!important;font-size:8px!important}
+  body:not(.schedule-settings-embed) .month-day{min-height:118px!important;padding:6px!important}
+  body:not(.schedule-settings-embed) .month-day-number{width:22px;height:22px;font-size:9px}
+  body:not(.schedule-settings-embed) .month-topic,body:not(.schedule-settings-embed) .month-event{padding:4px 6px!important;border-radius:5px!important;font-size:8px!important}
+  @media(min-width:1200px){body:not(.schedule-settings-embed) .month-day{min-height:102px!important}}
+  body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{max-height:none!important}
+  body:not(.schedule-settings-embed) .month-day{min-height:96px!important}
+  body:not(.schedule-settings-embed) .month-planner{margin-top:8px!important}
+  body:not(.schedule-settings-embed) .planner-header{margin-bottom:8px!important}
+  @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:1fr}.agenda-summary-side{width:100%}.agenda-bottom-grid{grid-template-columns:1fr 1fr}.agenda-bottom-grid .agenda-goals-card{grid-column:1/-1}}
+  @media(max-width:720px){.agenda-bottom-grid{grid-template-columns:1fr}.agenda-bottom-grid .agenda-goals-card{grid-column:auto}.agenda-donut-row{grid-template-columns:76px 1fr}.agenda-donut{width:72px}.agenda-donut::after{inset:16px}}
+  /* Ajuste fino do Cronograma conforme a referência visual */
+  body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:minmax(0,1fr) 300px!important;gap:16px!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{padding:14px!important;border:1px solid var(--border)!important;border-radius:16px!important;background:var(--surface)!important;box-shadow:none!important}
+  body:not(.schedule-settings-embed) .planner-header{gap:12px!important;margin-bottom:10px!important}
+  body:not(.schedule-settings-embed) .planner-header-left{gap:10px!important}
+  body:not(.schedule-settings-embed) .planner-period-title{font-size:18px!important;font-weight:800!important}
+  body:not(.schedule-settings-embed) .planner-nav-arrows button,
+  body:not(.schedule-settings-embed) .planner-today,
+  body:not(.schedule-settings-embed) .planner-view-toggle button{height:34px!important;min-height:34px!important;border-radius:10px!important;font-size:11px!important}
+  body:not(.schedule-settings-embed) .planner-nav-arrows button{width:34px!important}
+  body:not(.schedule-settings-embed) .month-planner{margin-top:8px!important;border:1px solid var(--border)!important;border-radius:14px!important;overflow:hidden!important;background:transparent!important;gap:0!important}
+  body:not(.schedule-settings-embed) .month-weekday{min-height:30px!important;font-size:9px!important;font-weight:800!important;border-bottom:1px solid var(--border)!important;background:transparent!important}
+  body:not(.schedule-settings-embed) .month-day{min-height:86px!important;padding:6px!important;background:var(--surface)!important}
+  body:not(.schedule-settings-embed) .month-day-number{width:22px!important;height:22px!important;font-size:10px!important}
+  body:not(.schedule-settings-embed) .month-topic,
+  body:not(.schedule-settings-embed) .month-event{padding:4px 6px!important;border-radius:6px!important;font-size:8px!important;line-height:1.2!important}
+  body:not(.schedule-settings-embed) .agenda-week-summary-card{border-radius:16px!important;box-shadow:none!important}
+  body:not(.schedule-settings-embed) .agenda-bottom-grid{gap:16px!important}
+  body:not(.schedule-settings-embed) .agenda-bottom-grid>.agenda-side-card{border-radius:16px!important;box-shadow:none!important}
+  body:not(.schedule-settings-embed) .week-matrix-grid{border-radius:12px!important}
+  body:not(.schedule-settings-embed) .week-matrix-label,
+  body:not(.schedule-settings-embed) .week-matrix-head,
+  body:not(.schedule-settings-embed) .week-matrix-cell{min-height:42px!important;padding:6px!important}
+  @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:1fr!important}}
+
+  /* Pixel-match do bloco de calendário com a referência enviada */
+  body:not(.schedule-settings-embed) .reference-cronograma-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:0 0 12px}
+  body:not(.schedule-settings-embed) .reference-cronograma-head h1{margin:0;color:var(--text);font-size:24px;line-height:1.05;font-weight:850;letter-spacing:-.035em}
+  body:not(.schedule-settings-embed) .reference-cronograma-head p{margin:5px 0 0;color:var(--muted);font-size:10px}
+  body:not(.schedule-settings-embed) .reference-new-activity{height:38px!important;padding:0 16px!important;border-radius:8px!important;font-size:10px!important;font-weight:800!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:minmax(0,1.82fr) minmax(245px,.9fr)!important;gap:12px!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{padding:12px!important;border:1px solid #e5eaf2!important;border-radius:10px!important;background:#fff!important;box-shadow:0 1px 3px rgba(22,42,70,.025)!important}
+  body:not(.schedule-settings-embed) .planner-header{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:12px!important;margin:0 0 9px!important}
+  body:not(.schedule-settings-embed) .planner-header-left{display:flex!important;align-items:center!important;gap:7px!important}
+  body:not(.schedule-settings-embed) .planner-nav-arrows{display:flex!important;gap:3px!important}
+  body:not(.schedule-settings-embed) .planner-nav-arrows button{width:26px!important;height:26px!important;min-height:26px!important;border:1px solid #e5eaf2!important;border-radius:6px!important;background:#fff!important;color:#7f8b9e!important;font-size:15px!important}
+  body:not(.schedule-settings-embed) .planner-period-title{order:2!important;margin-left:3px!important;font-size:13px!important;line-height:26px!important;font-weight:800!important;letter-spacing:-.01em!important;text-transform:capitalize!important}
+  body:not(.schedule-settings-embed) .planner-tools{display:flex!important;align-items:center!important;gap:5px!important}
+  body:not(.schedule-settings-embed) .planner-today{order:-1!important;height:27px!important;min-height:27px!important;padding:0 9px!important;border:1px solid #e5eaf2!important;border-radius:6px!important;background:#fff!important;color:#8490a3!important;font-size:8px!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle{display:flex!important;height:28px!important;padding:2px!important;border:1px solid #e5eaf2!important;border-radius:6px!important;background:#f7f9fc!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle button{min-width:51px!important;height:22px!important;min-height:22px!important;padding:0 11px!important;border:0!important;border-radius:4px!important;background:transparent!important;color:#657287!important;font-size:8px!important;font-weight:800!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle button.active{background:#0758b8!important;color:#fff!important;box-shadow:0 1px 2px rgba(0,55,130,.12)!important}
+  body:not(.schedule-settings-embed) .planner-settings-button{width:28px;height:28px;padding:0;border:1px solid #e5eaf2;border-radius:6px;background:#fff;color:#657287;font-size:12px;display:grid;place-items:center}
+  body:not(.schedule-settings-embed) .month-planner{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;margin:0!important;border:1px solid #e6ebf2!important;border-radius:7px!important;overflow:hidden!important;background:#fff!important}
+  /* Alternância real de visualização: Semana substitui Mês no mesmo bloco. */
+  body:not(.schedule-settings-embed) .month-planner[hidden],
+  body:not(.schedule-settings-embed) .week-planner[hidden]{
+    display:none!important;
+  }
+  body:not(.schedule-settings-embed) .week-planner:not([hidden]){
+    display:block!important;
+    width:100%!important;
+    margin:0!important;
+  }
+  body:not(.schedule-settings-embed) .month-weekday{display:flex!important;align-items:center!important;justify-content:center!important;min-height:24px!important;padding:0!important;border-right:1px solid #edf1f6!important;border-bottom:1px solid #e6ebf2!important;background:#fbfcfe!important;color:#8b96a8!important;font-size:7px!important;font-weight:700!important}
+  body:not(.schedule-settings-embed) .month-day{position:relative!important;min-height:68px!important;height:68px!important;padding:4px 5px!important;border-right:1px solid #edf1f6!important;border-bottom:1px solid #edf1f6!important;background:#fff!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .month-day.outside-month{background:#fcfdff!important}
+  body:not(.schedule-settings-embed) .month-day.outside-month .month-day-number{color:#c3cad5!important}
+  body:not(.schedule-settings-embed) .month-day-head{height:14px!important;display:flex!important;align-items:flex-start!important;justify-content:center!important;margin:0 0 1px!important}
+  body:not(.schedule-settings-embed) .month-day-number{display:grid!important;place-items:center!important;width:16px!important;height:16px!important;border-radius:50%!important;color:#4d596b!important;background:transparent!important;font-size:7px!important;font-weight:750!important}
+  body:not(.schedule-settings-embed) .month-day.today .month-day-number{background:#1768dc!important;color:#fff!important}
+  body:not(.schedule-settings-embed) .month-day-count{display:none!important}
+  body:not(.schedule-settings-embed) .month-day-items{display:grid!important;gap:2px!important;align-content:start!important}
+  body:not(.schedule-settings-embed) .month-topic,body:not(.schedule-settings-embed) .month-event{display:block!important;min-height:11px!important;padding:2px 4px 2px 8px!important;border:0!important;border-radius:3px!important;background:#eaf2ff!important;color:#315a91!important;font-size:6px!important;font-weight:650!important;line-height:1.15!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;position:relative!important}
+  body:not(.schedule-settings-embed) .month-topic::before,body:not(.schedule-settings-embed) .month-event::before{content:""!important;position:absolute!important;left:3px!important;top:50%!important;transform:translateY(-50%)!important;width:3px!important;height:3px!important;border-radius:50%!important;background:#2b7de9!important}
+  body:not(.schedule-settings-embed) .month-event{background:#f7eaf4!important;color:#9a4778!important}
+  body:not(.schedule-settings-embed) .month-event::before{background:#e53d93!important}
+  body:not(.schedule-settings-embed) .month-topic.is-overdue{background:#fff3dc!important;color:#8b6520!important}
+  body:not(.schedule-settings-embed) .month-topic.is-overdue::before{background:#f4ae2b!important}
+  body:not(.schedule-settings-embed) .agenda-week-summary-card{padding:12px!important;border:1px solid #e5eaf2!important;border-radius:10px!important;background:#fff!important}
+  body:not(.schedule-settings-embed) .agenda-summary-head h3{font-size:13px!important}
+  body:not(.schedule-settings-embed) .agenda-summary-metrics{gap:6px!important}
+  body:not(.schedule-settings-embed) .agenda-summary-metric{min-height:46px!important;padding:7px!important;border-radius:7px!important}
+  body:not(.schedule-settings-embed) .agenda-summary-metric:last-child{grid-column:auto!important}
+  body:not(.schedule-settings-embed) .agenda-summary-icon{width:22px!important;height:22px!important;border-radius:6px!important;font-size:8px!important}
+  body:not(.schedule-settings-embed) .agenda-summary-metric strong{font-size:11px!important}
+  body:not(.schedule-settings-embed) .agenda-summary-metric span:last-child{font-size:7px!important}
+  body:not(.schedule-settings-embed) .agenda-distribution{margin-top:10px!important;padding-top:9px!important}
+  body:not(.schedule-settings-embed) .agenda-donut-row{grid-template-columns:78px 1fr!important;gap:9px!important}
+  body:not(.schedule-settings-embed) .agenda-donut{width:76px!important}
+  body:not(.schedule-settings-embed) .agenda-donut::after{inset:17px!important}
+  body:not(.schedule-settings-embed) .agenda-bottom-grid{grid-template-columns:1fr 1fr 1fr!important;gap:10px!important}
+  body:not(.schedule-settings-embed) .agenda-bottom-grid>.agenda-side-card{min-height:150px!important;border:1px solid #e5eaf2!important;border-radius:10px!important;background:#fff!important}
+  @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:1fr!important}body:not(.schedule-settings-embed) .agenda-bottom-grid{grid-template-columns:1fr 1fr!important}}
+  @media(max-width:720px){body:not(.schedule-settings-embed) .agenda-bottom-grid{grid-template-columns:1fr!important}body:not(.schedule-settings-embed) .planner-header{grid-template-columns:1fr!important}}
+
+  /* Atividades de hoje — versão horizontal inspirada na referência */
+  .agenda-bottom-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;align-items:stretch!important}
+  .agenda-bottom-grid>.agenda-today-card{grid-column:1!important;grid-row:1 / span 2;min-height:0!important}
+  .agenda-bottom-grid>.agenda-next-card{grid-column:2!important;grid-row:1!important}
+  .agenda-bottom-grid>.agenda-goals-card{grid-column:2!important;grid-row:2!important}
+  .agenda-today-card{border:1px solid #e5eaf2!important;border-radius:14px!important;background:var(--surface)!important}
+  .agenda-today-head{padding:14px 16px!important;align-items:flex-start!important;gap:18px!important}
+  .agenda-today-title-wrap{gap:11px!important}
+  .agenda-today-icon{width:34px!important;height:34px!important;border-radius:9px!important;font-size:15px!important}
+  .agenda-today-title-wrap h3{font-size:15px!important;line-height:1.15!important}
+  .agenda-today-date{font-size:9px!important;margin-top:3px!important}
+  .agenda-today-progress{width:min(290px,38%);min-width:220px;margin-left:auto}
+  .agenda-today-progress-copy{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px;color:var(--muted);font-size:9px}
+  .agenda-today-progress-copy strong{color:var(--text);font-size:10px}
+  .agenda-today-progress-track{height:7px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+  .agenda-today-progress-track i{display:block;height:100%;width:0;border-radius:inherit;background:var(--accent);transition:width .2s ease}
+  .agenda-today-list{display:block!important;padding:0 16px 6px!important}
+  .agenda-today-row{
+    display:grid!important;
+    grid-template-columns:24px 62px minmax(0,1fr) auto 18px!important;
+    gap:10px!important;
+    min-height:54px!important;
+    padding:0 2px!important;
+    border-bottom:1px solid var(--border)!important;
+    background:transparent!important
+  }
+  .agenda-today-row::before{display:none!important}
+  .agenda-today-row:last-child{border-bottom:0!important}
+  .agenda-today-check{width:18px!important;height:18px!important}
+  .agenda-today-time{margin:0!important;font-size:9px!important;white-space:nowrap}
+  .agenda-today-main{display:contents}
+  .agenda-today-main strong{font-size:11px!important;line-height:1.15!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .agenda-today-main small{grid-column:3;margin-top:-18px!important;padding-top:20px;font-size:9px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .agenda-today-kind{min-height:24px!important;padding:0 10px!important;border-radius:999px!important;font-size:8px!important}
+  .agenda-today-row.kind-review .agenda-today-kind{color:#8b5cf6;background:color-mix(in srgb,#8b5cf6 14%,var(--surface))}
+  .agenda-today-row.kind-errors .agenda-today-kind{color:#e04f5f;background:color-mix(in srgb,#e04f5f 14%,var(--surface))}
+  .month-error-review{color:#e04f5f!important;border-color:color-mix(in srgb,#e04f5f 35%,var(--border))!important;background:color-mix(in srgb,#e04f5f 8%,var(--surface))!important;text-decoration:none!important}
+  .agenda-today-row.kind-simulation .agenda-today-kind{color:#c65a87;background:color-mix(in srgb,#c65a87 14%,var(--surface))}
+  .agenda-today-row.kind-other .agenda-today-kind{color:#16966f;background:color-mix(in srgb,#16966f 14%,var(--surface))}
+  .agenda-today-row.kind-lesson .agenda-today-kind{color:var(--accent);background:var(--accent-soft)}
+  .agenda-today-row::after{content:"⋮";grid-column:5;color:var(--muted);font-size:17px;text-align:center;line-height:1}
+  @media(max-width:720px){
+    .agenda-bottom-grid{grid-template-columns:1fr!important}
+    .agenda-bottom-grid>.agenda-today-card,
+    .agenda-bottom-grid>.agenda-next-card,
+    .agenda-bottom-grid>.agenda-goals-card{grid-column:auto!important;grid-row:auto!important}
+    .agenda-today-head{flex-direction:column}
+    .agenda-today-progress{width:100%;min-width:0}
+    .agenda-today-row{grid-template-columns:22px 48px minmax(0,1fr) auto 14px!important;gap:7px!important}
+    .agenda-today-kind{padding:0 7px!important}
+  }
+
+
+  /* Refinamento visual do calendário LURIA */
+  body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{
+    padding:16px!important;border-radius:16px!important;
+    border:1px solid color-mix(in srgb,var(--border) 86%,transparent)!important;
+    box-shadow:0 8px 28px rgba(20,48,84,.055)!important
+  }
+  body:not(.schedule-settings-embed) .planner-header{margin-bottom:14px!important}
+  body:not(.schedule-settings-embed) .planner-period-title{font-size:15px!important;letter-spacing:-.02em!important}
+  body:not(.schedule-settings-embed) .planner-nav-arrows button,
+  body:not(.schedule-settings-embed) .planner-today,
+  body:not(.schedule-settings-embed) .planner-settings-button{border-radius:8px!important}
+  body:not(.schedule-settings-embed) .planner-nav-arrows button:hover,
+  body:not(.schedule-settings-embed) .planner-today:hover,
+  body:not(.schedule-settings-embed) .planner-settings-button:hover{border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important;background:var(--accent-soft)!important;color:var(--accent)!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle{border-radius:9px!important;padding:3px!important;height:32px!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle button{height:24px!important;min-height:24px!important;border-radius:6px!important;font-size:9px!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle button.active{background:var(--accent)!important}
+
+  body:not(.schedule-settings-embed) .month-planner{
+    border-radius:13px!important;border-color:color-mix(in srgb,var(--border) 90%,transparent)!important;
+    background:var(--border)!important;gap:1px!important
+  }
+  body:not(.schedule-settings-embed) .month-weekday{
+    min-height:34px!important;background:color-mix(in srgb,var(--surface-2) 72%,var(--surface))!important;
+    border:0!important;color:var(--muted)!important;font-size:8px!important;font-weight:850!important;
+    text-transform:uppercase!important;letter-spacing:.055em!important
+  }
+  body:not(.schedule-settings-embed) .month-day{
+    height:auto!important;min-height:88px!important;padding:7px!important;border:0!important;
+    background:var(--surface)!important;transition:background .16s ease,box-shadow .16s ease!important
+  }
+  body:not(.schedule-settings-embed) .month-day:hover{background:color-mix(in srgb,var(--accent-soft) 28%,var(--surface))!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 14%,transparent)!important}
+  body:not(.schedule-settings-embed) .month-day.outside-month{background:color-mix(in srgb,var(--surface-2) 52%,var(--surface))!important;opacity:.68!important}
+  body:not(.schedule-settings-embed) .month-day-head{height:22px!important;justify-content:flex-end!important;align-items:center!important;margin:0 0 5px!important}
+  body:not(.schedule-settings-embed) .month-day-number{
+    width:23px!important;height:23px!important;font-size:9px!important;font-weight:850!important;color:var(--text)!important
+  }
+  body:not(.schedule-settings-embed) .month-day.today{background:color-mix(in srgb,var(--accent-soft) 38%,var(--surface))!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 25%,transparent)!important}
+  body:not(.schedule-settings-embed) .month-day.today .month-day-number{background:var(--accent)!important;color:#fff!important;box-shadow:0 3px 9px color-mix(in srgb,var(--accent) 25%,transparent)!important}
+  body:not(.schedule-settings-embed) .month-day-items{gap:3px!important}
+  body:not(.schedule-settings-embed) .month-topic,
+  body:not(.schedule-settings-embed) .month-event{
+    min-height:18px!important;padding:4px 6px 4px 11px!important;border-radius:6px!important;
+    font-size:7px!important;font-weight:750!important;line-height:1.3!important
+  }
+  body:not(.schedule-settings-embed) .month-topic{background:color-mix(in srgb,var(--accent-soft) 82%,var(--surface))!important;color:var(--accent)!important}
+  body:not(.schedule-settings-embed) .month-topic::before,
+  body:not(.schedule-settings-embed) .month-event::before{left:5px!important;width:3px!important;height:8px!important;border-radius:999px!important}
+  body:not(.schedule-settings-embed) .month-more{padding:2px 5px!important;font-size:7px!important;color:var(--accent)!important}
+
+  body:not(.schedule-settings-embed) .week-planner:not([hidden]){
+    display:grid!important;grid-template-columns:repeat(7,minmax(150px,1fr))!important;
+    border-radius:13px!important;border:1px solid var(--border)!important;overflow:auto!important
+  }
+  body:not(.schedule-settings-embed) .planner-day{min-height:330px!important;border-color:var(--border)!important}
+  body:not(.schedule-settings-embed) .planner-day-header{min-height:52px!important;background:color-mix(in srgb,var(--surface-2) 70%,var(--surface))!important}
+  body:not(.schedule-settings-embed) .planner-day.today .planner-day-header{background:var(--accent-soft)!important}
+  body:not(.schedule-settings-embed) .topic-card{border-radius:9px!important;box-shadow:0 2px 8px rgba(20,48,84,.04)!important}
+
+  body:not(.schedule-settings-embed) .agenda-bottom-grid{grid-template-columns:1fr!important}
+  body:not(.schedule-settings-embed) .agenda-bottom-grid>.agenda-today-card{grid-column:1!important;grid-row:auto!important}
+
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{padding:11px!important;border-radius:13px!important}
+    body:not(.schedule-settings-embed) .month-planner{overflow-x:auto!important;grid-template-columns:repeat(7,minmax(88px,1fr))!important}
+    body:not(.schedule-settings-embed) .month-day{min-height:82px!important;padding:6px!important}
+    body:not(.schedule-settings-embed) .planner-header{gap:8px!important}
+    body:not(.schedule-settings-embed) .planner-period-title{font-size:13px!important}
+  }
+
+
+  /* Atividades de hoje — cards por tipo */
+  body:not(.schedule-settings-embed) .agenda-today-card{
+    padding-bottom:14px!important;
+    overflow:visible!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-list{
+    display:grid!important;gap:10px!important;padding:2px 16px 4px!important;
+    max-height:none!important;overflow:visible!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-row{
+    --activity-color:#7d8ca3;
+    --activity-tint:color-mix(in srgb,var(--activity-color) 7%,var(--surface));
+    display:grid!important;
+    grid-template-columns:22px minmax(0,1fr) auto!important;
+    align-items:center!important;gap:12px!important;
+    min-height:72px!important;padding:12px 14px!important;
+    border:1.5px solid color-mix(in srgb,var(--activity-color) 52%,var(--border))!important;
+    border-left-width:5px!important;border-radius:12px!important;
+    background:var(--activity-tint)!important;
+    box-shadow:0 3px 12px rgba(20,48,84,.035)!important;
+    color:var(--text)!important;text-decoration:none!important;
+    transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-row:hover{
+    transform:translateY(-1px);box-shadow:0 6px 18px rgba(20,48,84,.07)!important;
+    border-color:var(--activity-color)!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-row::before,
+  body:not(.schedule-settings-embed) .agenda-today-row::after{display:none!important}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-lesson{--activity-color:#63a8ee}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-questions{--activity-color:#28a978}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-review{--activity-color:#8b5cf6}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-errors{--activity-color:#e05a67}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-simulation{--activity-color:#c65a87}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-flashcards{--activity-color:#e4a52c}
+  body:not(.schedule-settings-embed) .agenda-today-row.kind-other{--activity-color:#6d879d}
+  body:not(.schedule-settings-embed) .agenda-today-check{
+    width:19px!important;height:19px!important;margin:0!important;accent-color:var(--activity-color)!important
+  }
+  body:not(.schedule-settings-embed) span.agenda-today-check{
+    border:1.5px solid color-mix(in srgb,var(--activity-color) 55%,var(--border))!important;
+    border-radius:6px!important;background:var(--surface)!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-main{
+    display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;column-gap:10px!important;row-gap:4px!important;
+    align-items:center!important;min-width:0!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-time{
+    grid-column:1!important;grid-row:1!important;margin:0!important;
+    color:var(--activity-color)!important;font-size:9px!important;font-weight:850!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-main strong{
+    grid-column:2!important;grid-row:1!important;min-width:0!important;
+    font-size:12px!important;line-height:1.25!important;font-weight:850!important;
+    white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-main small{
+    grid-column:1 / -1!important;grid-row:2!important;margin:0!important;padding:0!important;
+    color:var(--muted)!important;font-size:9px!important;line-height:1.3!important;
+    white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-kind{
+    min-height:28px!important;display:inline-flex!important;align-items:center!important;
+    padding:0 11px!important;border:1px solid color-mix(in srgb,var(--activity-color) 28%,transparent)!important;
+    border-radius:999px!important;background:color-mix(in srgb,var(--activity-color) 11%,var(--surface))!important;
+    color:var(--activity-color)!important;font-size:8px!important;font-weight:850!important;white-space:nowrap!important
+  }
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .agenda-today-list{padding:2px 11px 3px!important;gap:8px!important}
+    body:not(.schedule-settings-embed) .agenda-today-row{
+      grid-template-columns:20px minmax(0,1fr)!important;gap:10px!important;
+      min-height:76px!important;padding:11px!important
+    }
+    body:not(.schedule-settings-embed) .agenda-today-kind{
+      grid-column:2!important;justify-self:start!important;min-height:24px!important;padding:0 9px!important
+    }
+    body:not(.schedule-settings-embed) .agenda-today-main{grid-template-columns:auto minmax(0,1fr)!important}
+  }
+
+
+  /* Semana compacta: 7 dias sempre visíveis */
+  body:not(.schedule-settings-embed) .week-planner:not([hidden]){
+    display:block!important;width:100%!important;overflow:hidden!important;border:0!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix{width:100%!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .week-matrix-grid{
+    width:100%!important;min-width:0!important;
+    grid-template-columns:minmax(82px,1.05fr) repeat(7,minmax(0,1fr))!important;
+    border-radius:10px!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-label,
+  body:not(.schedule-settings-embed) .week-matrix-head,
+  body:not(.schedule-settings-embed) .week-matrix-cell{
+    min-width:0!important;min-height:32px!important;padding:3px 4px!important;gap:4px!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-label{font-size:8px!important}
+  body:not(.schedule-settings-embed) .week-matrix-head{font-size:8px!important;gap:0!important}
+  body:not(.schedule-settings-embed) .week-matrix-head strong{font-size:10px!important}
+  body:not(.schedule-settings-embed) .week-category-label{gap:5px!important;white-space:nowrap!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .week-category-icon{
+    width:18px!important;height:18px!important;flex:0 0 18px!important;border-radius:5px!important
+  }
+  body:not(.schedule-settings-embed) .week-category-icon .week-category-svg{width:10px!important;height:10px!important}
+  body:not(.schedule-settings-embed) .week-dot{width:7px!important;height:7px!important}
+  @media(max-width:900px){
+    body:not(.schedule-settings-embed) .week-matrix{overflow:hidden!important}
+    body:not(.schedule-settings-embed) .week-matrix-grid{
+      min-width:0!important;grid-template-columns:minmax(72px,.95fr) repeat(7,minmax(0,1fr))!important
+    }
+  }
+  @media(max-width:520px){
+    body:not(.schedule-settings-embed) .week-matrix-grid{
+      grid-template-columns:minmax(62px,.9fr) repeat(7,minmax(0,1fr))!important
+    }
+    body:not(.schedule-settings-embed) .week-matrix-label,
+    body:not(.schedule-settings-embed) .week-matrix-head,
+    body:not(.schedule-settings-embed) .week-matrix-cell{min-height:29px!important;padding:2px!important}
+    body:not(.schedule-settings-embed) .week-category-icon{width:15px!important;height:15px!important;flex-basis:15px!important}
+    body:not(.schedule-settings-embed) .week-category-icon .week-category-svg{width:8px!important;height:8px!important}
+    body:not(.schedule-settings-embed) .week-category-label strong{font-size:7px!important;overflow:hidden!important;text-overflow:ellipsis!important}
+    body:not(.schedule-settings-embed) .week-matrix-head span{font-size:7px!important}
+    body:not(.schedule-settings-embed) .week-matrix-head strong{font-size:9px!important}
+    body:not(.schedule-settings-embed) .week-dot{width:6px!important;height:6px!important}
+  }
+
+
+  /* Atividades de hoje: abrir card + menu de remarcação */
+  body:not(.schedule-settings-embed) .agenda-today-row{
+    position:relative!important;display:flex!important;align-items:stretch!important;
+    padding:0!important;min-height:72px!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-open{
+    display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;gap:12px!important;flex:1!important;min-width:0!important;
+    padding:12px 8px 12px 14px!important;color:inherit!important;text-decoration:none!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-menu{
+    position:relative!important;display:flex!important;align-items:center!important;padding:8px 10px 8px 2px!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-more{
+    width:30px!important;height:30px!important;min-height:30px!important;padding:0!important;
+    border:0!important;border-radius:8px!important;background:transparent!important;color:var(--muted)!important;
+    font-size:19px!important;line-height:1!important;cursor:pointer!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-more:hover{background:color-mix(in srgb,var(--activity-color) 12%,transparent)!important;color:var(--activity-color)!important}
+  body:not(.schedule-settings-embed) .agenda-today-popover{
+    position:absolute!important;z-index:30!important;right:8px!important;top:45px!important;width:190px!important;
+    padding:10px!important;border:1px solid var(--border)!important;border-radius:11px!important;background:var(--surface)!important;
+    box-shadow:0 12px 32px rgba(20,48,84,.16)!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-popover[hidden]{display:none!important}
+  body:not(.schedule-settings-embed) .agenda-today-popover strong{display:block!important;margin-bottom:7px!important;font-size:9px!important}
+  body:not(.schedule-settings-embed) .agenda-today-popover input{width:100%!important;height:32px!important;margin-bottom:7px!important;padding:0 7px!important;border:1px solid var(--border)!important;border-radius:7px!important;background:var(--surface)!important;color:var(--text)!important;font-size:9px!important}
+  body:not(.schedule-settings-embed) .agenda-today-popover button{width:100%!important;height:30px!important;min-height:30px!important;border:0!important;border-radius:7px!important;background:var(--accent)!important;color:#fff!important;font-size:9px!important;font-weight:800!important}
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .agenda-today-open{grid-template-columns:1fr!important;padding:10px 4px 10px 11px!important}
+    body:not(.schedule-settings-embed) .agenda-today-kind{justify-self:start!important}
+    body:not(.schedule-settings-embed) .agenda-today-menu{padding-right:7px!important}
+  }
+
+
+  /* Coluna direita: insights de tempo inspirados na referência */
+  body:not(.schedule-settings-embed) .agenda-insights-side{display:grid!important;gap:10px!important;align-content:start!important;height:auto!important}
+  body:not(.schedule-settings-embed) .agenda-insight-card{padding:12px!important;border:1px solid var(--border)!important;border-radius:14px!important;background:var(--surface)!important;box-shadow:0 4px 16px rgba(20,48,84,.035)!important}
+  .agenda-insight-title{display:flex;align-items:center;gap:7px;margin-bottom:9px}.agenda-insight-title>span{color:var(--accent);font-size:18px}.agenda-insight-title h3{margin:0;font-size:12px;letter-spacing:-.02em}
+  .agenda-insight-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;padding:3px;border-radius:8px;background:var(--surface-2);margin-bottom:10px}
+  .agenda-insight-tabs button{height:24px;min-height:24px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--muted);font-size:8px;font-weight:750}.agenda-insight-tabs button.active{background:var(--accent);color:#fff}.agenda-insight-tabs button:disabled{opacity:.7}
+  .agenda-study-total{display:flex;flex-direction:column;margin-bottom:8px}.agenda-study-total strong{font-size:21px;line-height:1;font-weight:900;letter-spacing:-.04em}.agenda-study-total span{margin-top:3px;color:var(--muted);font-size:8px}
+  .agenda-study-bars{height:104px;display:grid;grid-template-columns:repeat(7,1fr);gap:5px;align-items:end;padding-top:12px;border-bottom:1px solid var(--border)}
+  .agenda-study-day{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px;min-width:0}.agenda-study-value{font-size:6px;font-weight:800;color:var(--text);white-space:nowrap}.agenda-study-bar-track{height:72px;width:min(22px,80%);display:flex;align-items:flex-end}.agenda-study-bar{display:block;width:100%;min-height:2px;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 75%,#fff),var(--accent))}.agenda-study-label{font-size:7px;font-weight:800;color:var(--muted)}
+  .agenda-category-body{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;align-items:center}
+  .agenda-category-donut{width:88px;aspect-ratio:1;border-radius:50%;position:relative;background:conic-gradient(var(--border) 0 100%);display:grid;place-items:center}.agenda-category-donut::after{content:"";position:absolute;inset:17px;border-radius:50%;background:var(--surface)}.agenda-category-donut span{position:relative;z-index:1;font-size:10px;font-weight:900;text-align:center}
+  .agenda-category-legend{display:grid;gap:6px;min-width:0}.agenda-category-item{display:grid;grid-template-columns:7px minmax(0,1fr) auto;gap:5px;align-items:center;font-size:7px}.agenda-category-dot{width:7px;height:7px;border-radius:50%}.agenda-category-copy{min-width:0}.agenda-category-copy strong{display:block;font-size:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.agenda-category-copy span{color:var(--muted);font-size:6px}.agenda-category-pct{font-weight:850}
+  @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-insights-side{grid-template-columns:1fr 1fr!important}}
+  @media(max-width:620px){body:not(.schedule-settings-embed) .agenda-insights-side{grid-template-columns:1fr!important}.agenda-category-body{grid-template-columns:84px 1fr}.agenda-category-donut{width:80px}}
+
+
+  /* Hoje / Todas + seleção e ações em massa */
+  .agenda-activity-view-switch{display:grid;grid-template-columns:1fr 1fr;gap:3px;padding:3px;border-radius:9px;background:var(--surface-2)}
+  .agenda-activity-view-switch button{min-width:58px;height:27px;min-height:27px;padding:0 10px;border:0;border-radius:7px;background:transparent;color:var(--muted);font-size:8px;font-weight:800}
+  .agenda-activity-view-switch button.active{background:var(--accent);color:#fff}
+  .agenda-today-card>.agenda-today-progress{margin:0 16px 10px!important}
+  .agenda-bulk-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 16px 10px;padding:9px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
+  .agenda-bulk-tools[hidden]{display:none!important}.agenda-bulk-filter,.agenda-bulk-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .agenda-bulk-tools select,.agenda-bulk-tools input[type=date]{height:30px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 8px;font-size:8px}
+  .agenda-select-all{display:flex;align-items:center;gap:5px;font-size:8px;font-weight:750;color:var(--muted)}
+  .agenda-bulk-actions>span{font-size:8px;color:var(--muted);font-weight:750}.agenda-bulk-actions button{height:30px;min-height:30px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 10px;font-size:8px;font-weight:800}.agenda-bulk-actions button:last-child{background:var(--accent);border-color:var(--accent);color:#fff}
+  .agenda-date-group{display:grid;gap:7px}.agenda-date-group-head{display:flex;align-items:center;gap:8px;padding:7px 2px 1px;font-size:9px;font-weight:850;color:var(--text)}.agenda-date-group-head::after{content:"";height:1px;flex:1;background:var(--border)}
+  .agenda-today-row.bulk-mode{grid-template-columns:30px minmax(0,1fr)!important}.agenda-bulk-check-wrap{display:grid;place-items:center;padding-left:10px}.agenda-bulk-check{width:16px;height:16px;accent-color:var(--accent)}
+  @media(max-width:720px){.agenda-today-head{align-items:flex-start!important}.agenda-activity-view-switch{margin-left:auto}.agenda-bulk-tools{margin-left:11px;margin-right:11px}.agenda-bulk-actions{width:100%}.agenda-bulk-actions button{flex:1}.agenda-today-card>.agenda-today-progress{margin-left:11px!important;margin-right:11px!important}}
+
+
+  /* Atividades acompanha a largura da Agenda, sem ocupar a coluna lateral */
+  body:not(.schedule-settings-embed) .agenda-bottom-grid{
+    width:calc(100% - 316px)!important;
+    max-width:calc(100% - 316px)!important;
+    justify-self:start!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-card{
+    width:100%!important;max-width:100%!important;min-width:0!important
+  }
+  @media(max-width:1050px){
+    body:not(.schedule-settings-embed) .agenda-bottom-grid{
+      width:100%!important;max-width:100%!important
+    }
+  }
+
+
+  /* Cabeçalho funcional: meta semanal */
+  body:not(.schedule-settings-embed) .reference-cronograma-head{display:none!important}
+  .agenda-week-goal-banner{display:grid;grid-template-columns:minmax(300px,1.35fr) minmax(390px,1.25fr) auto;align-items:center;gap:14px;margin:0 0 12px;padding:9px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);box-shadow:0 3px 14px rgba(20,48,84,.035)}
+  .agenda-week-goal-copy{display:grid;grid-template-columns:31px 1fr;gap:10px;align-items:start;min-width:0}.agenda-goal-target{width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:20px;font-weight:900}.agenda-week-goal-copy strong{display:block;font-size:11px}.agenda-week-goal-copy small{display:block;margin-top:2px;color:var(--muted);font-size:7px}
+  .agenda-goal-progress-line{display:grid;grid-template-columns:1fr auto;gap:5px;align-items:center;margin-top:6px}.agenda-goal-progress-line>span{height:6px;border-radius:999px;background:var(--surface-2);overflow:hidden}.agenda-goal-progress-line i{display:block;width:0;height:100%;border-radius:inherit;background:var(--accent);transition:width .25s ease}.agenda-goal-progress-line b{font-size:9px}.agenda-week-goal-copy em{display:block;margin-top:3px;color:var(--muted);font-size:7px;font-style:normal}
+  .agenda-goal-days{display:grid;grid-template-columns:repeat(7,minmax(34px,1fr));gap:7px;border-left:1px solid var(--border);padding-left:16px}.agenda-goal-day{text-align:center;display:grid;justify-items:center;gap:3px}.agenda-goal-day span{font-size:6px;font-weight:800;color:var(--muted)}.agenda-goal-day strong{font-size:7px}.agenda-goal-day i{width:24px;height:24px;border:1.5px solid var(--border);border-radius:50%;background:var(--surface);position:relative}.agenda-goal-day.done i{background:#dff6e9;border-color:#67c68f}.agenda-goal-day.done i::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#2fa866;font-size:11px;font-weight:900}.agenda-goal-day.current i{border:2px solid var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}.agenda-goal-day.has-progress:not(.done):not(.current) i{background:color-mix(in srgb,var(--accent) 12%,var(--surface));border-color:color-mix(in srgb,var(--accent) 35%,var(--border))}.agenda-goal-day small{font-size:6px;color:var(--muted)}
+  .agenda-week-goal-banner .reference-new-activity{align-self:center;white-space:nowrap}
+  @media(max-width:1050px){.agenda-week-goal-banner{grid-template-columns:1fr auto}.agenda-goal-days{grid-column:1/-1;grid-row:2;border-left:0;border-top:1px solid var(--border);padding:10px 0 0}}
+  @media(max-width:620px){.agenda-week-goal-banner{grid-template-columns:1fr;padding:11px}.agenda-week-goal-banner .reference-new-activity{grid-row:2;width:100%}.agenda-goal-days{grid-row:3;gap:3px}.agenda-goal-day i{width:21px;height:21px}}
+
+
+  .quick-activity-dialog{width:min(560px,calc(100vw - 28px));padding:0!important;border:0!important;border-radius:16px!important;background:var(--surface)!important;color:var(--text)!important;box-shadow:0 24px 70px rgba(15,35,65,.25)!important}.quick-activity-dialog::backdrop{background:rgba(12,25,43,.42);backdrop-filter:blur(2px)}
+  .quick-activity-form{padding:18px}.quick-activity-head{display:flex;justify-content:space-between;gap:16px;align-items:start}.quick-activity-head h2{margin:5px 0 2px;font-size:18px}.quick-activity-head p{margin:0;color:var(--muted);font-size:9px}.quick-activity-head>button{width:31px;height:31px;min-height:31px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--muted);font-size:18px}
+  .quick-activity-switch{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:16px 0 14px;padding:4px;border-radius:10px;background:var(--surface-2)}.quick-activity-switch button{height:32px;min-height:32px;border:0;border-radius:7px;background:transparent;color:var(--muted);font-size:9px;font-weight:800}.quick-activity-switch button.active{background:var(--accent);color:#fff}
+  .quick-activity-fields{display:none;grid-template-columns:1fr 1fr;gap:11px}.quick-activity-fields.active{display:grid}.quick-activity-fields label{display:grid;gap:5px}.quick-activity-fields label.wide{grid-column:1/-1}.quick-activity-fields label>span{font-size:8px;font-weight:800}.quick-activity-fields input,.quick-activity-fields select{width:100%;height:37px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);padding:0 10px;font-size:9px}
+  .quick-activity-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--border)}.quick-activity-actions>span{margin-right:auto;font-size:8px;color:var(--muted)}.quick-activity-actions button{height:35px!important;min-height:35px!important}
+  @media(max-width:520px){.quick-activity-fields{grid-template-columns:1fr}.quick-activity-fields label.wide{grid-column:auto}.quick-activity-form{padding:14px}}
+
+
+  /* Atividades exatamente na coluna do calendário */
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    grid-column:1!important;width:100%!important;max-width:none!important;min-width:0!important;
+    margin:0!important;align-self:start!important
+  }
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid>.agenda-today-card{
+    width:100%!important;max-width:none!important;box-sizing:border-box!important
+  }
+
+  /* Semana: tipografia LURIA mais legível, mantendo os 7 dias */
+  body:not(.schedule-settings-embed) .week-matrix-grid{
+    grid-template-columns:minmax(112px,1.28fr) repeat(7,minmax(0,1fr))!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-label,
+  body:not(.schedule-settings-embed) .week-matrix-head,
+  body:not(.schedule-settings-embed) .week-matrix-cell{
+    min-height:38px!important;padding:5px 6px!important
+  }
+  body:not(.schedule-settings-embed) .week-category-label{gap:7px!important}
+  body:not(.schedule-settings-embed) .week-category-label strong{
+    font-size:9px!important;font-weight:800!important;letter-spacing:-.01em!important;
+    color:var(--text)!important;line-height:1.15!important
+  }
+  body:not(.schedule-settings-embed) .week-category-icon{
+    width:21px!important;height:21px!important;flex:0 0 21px!important;border-radius:6px!important
+  }
+  body:not(.schedule-settings-embed) .week-category-icon .week-category-svg{width:11px!important;height:11px!important}
+  body:not(.schedule-settings-embed) .week-matrix-head span{
+    font-size:7px!important;font-weight:750!important;color:var(--muted)!important;letter-spacing:.01em!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-head strong{
+    font-size:10px!important;font-weight:850!important;color:var(--text)!important
+  }
+  body:not(.schedule-settings-embed) .week-dot{width:8px!important;height:8px!important}
+  @media(max-width:900px){
+    body:not(.schedule-settings-embed) .week-matrix-grid{grid-template-columns:minmax(92px,1.1fr) repeat(7,minmax(0,1fr))!important}
+    body:not(.schedule-settings-embed) .week-category-label strong{font-size:8px!important}
+  }
+  @media(max-width:520px){
+    body:not(.schedule-settings-embed) .week-matrix-grid{grid-template-columns:minmax(76px,1fr) repeat(7,minmax(0,1fr))!important}
+    body:not(.schedule-settings-embed) .week-matrix-label,
+    body:not(.schedule-settings-embed) .week-matrix-head,
+    body:not(.schedule-settings-embed) .week-matrix-cell{min-height:34px!important;padding:3px!important}
+    body:not(.schedule-settings-embed) .week-category-label{gap:4px!important}
+    body:not(.schedule-settings-embed) .week-category-icon{width:17px!important;height:17px!important;flex-basis:17px!important}
+    body:not(.schedule-settings-embed) .week-category-label strong{font-size:7.5px!important}
+    body:not(.schedule-settings-embed) .week-dot{width:7px!important;height:7px!important}
+  }
+
+
+  /* Atividades segue imediatamente a altura real do calendário */
+  body:not(.schedule-settings-embed) .agenda-reference-layout{
+    align-items:start!important
+  }
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.planner-panel{grid-column:1!important;grid-row:1!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-insights-side{grid-column:2!important;grid-row:1 / span 2!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    grid-column:1!important;grid-row:2!important;margin-top:12px!important;align-self:start!important
+  }
+
+  /* Hoje: contraste branco sobre o destaque azul */
+  body:not(.schedule-settings-embed) .week-matrix-head.today,
+  body:not(.schedule-settings-embed) .week-matrix-head.is-today,
+  body:not(.schedule-settings-embed) .week-matrix-head.current,
+  body:not(.schedule-settings-embed) .week-matrix-head[aria-current="date"],
+  body:not(.schedule-settings-embed) .week-matrix-head[data-today="true"]{
+    background:var(--accent)!important;color:#fff!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-head.today span,
+  body:not(.schedule-settings-embed) .week-matrix-head.today strong,
+  body:not(.schedule-settings-embed) .week-matrix-head.is-today span,
+  body:not(.schedule-settings-embed) .week-matrix-head.is-today strong,
+  body:not(.schedule-settings-embed) .week-matrix-head.current span,
+  body:not(.schedule-settings-embed) .week-matrix-head.current strong,
+  body:not(.schedule-settings-embed) .week-matrix-head[aria-current="date"] span,
+  body:not(.schedule-settings-embed) .week-matrix-head[aria-current="date"] strong,
+  body:not(.schedule-settings-embed) .week-matrix-head[data-today="true"] span,
+  body:not(.schedule-settings-embed) .week-matrix-head[data-today="true"] strong{
+    color:#fff!important
+  }
+
+
+  /* Mês compacto — mantém a lógica estável e reduz apenas a densidade visual */
+  body:not(.schedule-settings-embed) .month-planner{
+    border-radius:10px!important;
+  }
+  body:not(.schedule-settings-embed) .month-weekday{
+    min-height:25px!important;
+    font-size:7px!important;
+  }
+  body:not(.schedule-settings-embed) .month-day{
+    min-height:64px!important;
+    padding:4px 5px!important;
+  }
+  body:not(.schedule-settings-embed) .month-day-number{
+    font-size:8px!important;
+    margin-bottom:2px!important;
+  }
+  body:not(.schedule-settings-embed) .month-day-items{
+    gap:2px!important;
+  }
+  body:not(.schedule-settings-embed) .month-item{
+    min-height:14px!important;
+    padding:1px 4px!important;
+    font-size:6.5px!important;
+    border-radius:4px!important;
+  }
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .month-planner{
+      grid-template-columns:repeat(7,minmax(72px,1fr))!important;
+    }
+    body:not(.schedule-settings-embed) .month-day{
+      min-height:60px!important;
+      padding:4px!important;
+    }
+  }
+
+
+  /* Ritmo vertical uniforme: mesmo gap dos insights laterais (10px) */
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    margin-top:10px!important;
+  }
+
+
+  /* Meta semanal por produção */
+  body:not(.schedule-settings-embed) .agenda-goal-categories{grid-template-columns:repeat(6,minmax(82px,1fr))!important;gap:6px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day{min-width:0!important;padding:6px 7px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>span{white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>strong{font-size:11px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>i{display:block!important;height:3px!important;margin:4px 0 2px!important;border-radius:999px!important;background:var(--border)!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>i>b{display:block!important;width:0;height:100%;border-radius:inherit;background:var(--accent)!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day.done>i>b{background:var(--success)!important}
+  /* Cards de insights ligeiramente mais altos */
+  body:not(.schedule-settings-embed) .agenda-study-time-card,
+  body:not(.schedule-settings-embed) .agenda-category-card{min-height:222px!important}
+  @media(max-width:900px){body:not(.schedule-settings-embed) .agenda-goal-categories{grid-template-columns:repeat(3,1fr)!important}}
+
+
+  /* Gap efetivo entre calendário e Atividades = gap dos insights (10px).
+     O grid já adiciona 12px entre linhas; neutralizamos esse gap e usamos 10px explícitos. */
+  body:not(.schedule-settings-embed) .agenda-reference-layout{
+    column-gap:12px!important;
+    row-gap:0!important;
+  }
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    margin-top:10px!important;
+  }
+
+
+  /* Meta semanal: bloco mais compacto e afastado do CTA */
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner{grid-template-columns:minmax(210px,.82fr) minmax(0,1.45fr) auto!important;column-gap:14px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-copy{max-width:330px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-progress-line>span{max-width:170px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories{grid-template-columns:repeat(5,minmax(74px,1fr))!important;max-width:590px!important;justify-self:start!important;width:100%!important}
+  body:not(.schedule-settings-embed) .reference-new-activity{margin-left:14px!important}
+  @media(max-width:900px){body:not(.schedule-settings-embed) .agenda-week-goal-banner{grid-template-columns:1fr!important}.agenda-goal-categories{max-width:none!important}.reference-new-activity{margin-left:0!important}}
+
+
+  /* Tipografia refinada do cronograma */
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner :is(strong,small,em,span,b){font-size:calc(1em + 1.5px)}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner .agenda-goal-day>span{font-size:9px!important}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner .agenda-goal-day>strong{font-size:12px!important}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner .agenda-goal-day>small{font-size:7.5px!important}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner button{font-size:10px!important}
+  body:not(.schedule-settings-embed) .planner-tools button,
+  body:not(.schedule-settings-embed) .planner-nav button{font-size:10px!important}
+  body:not(.schedule-settings-embed) .planner-nav button{font-size:16px!important}
+  /* Filtros compartilhados */
+  .month-filter-tools{display:none;gap:6px;margin:0 0 8px;align-items:center}
+  .month-filter-tools select{height:29px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 8px;font-size:8px}
+  body:not(.schedule-settings-embed) .month-planner:not([hidden])~*{}
+  body:not(.schedule-settings-embed) .planner-panel:has(.month-planner:not([hidden])) .month-filter-tools{display:flex}
+  @media(max-width:720px){.month-filter-tools{flex-wrap:wrap}.month-filter-tools select{flex:1;min-width:110px}}
+
+
 
   /* Meta da semana v19 — compacto e no padrão visual do Caderno de Erros */
   body[data-page="cronograma"] .agenda-week-goal-banner{
@@ -2614,6 +3402,216 @@
   }
 
 
+  /* v21 — Cronograma no padrão visual do destaque de Flashcards */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    min-height:138px;
+    height:138px;
+    box-sizing:border-box;
+    margin:0 0 14px;
+    padding:24px 28px;
+    overflow:hidden;
+    border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+    border-radius:15px;
+    background:linear-gradient(
+      110deg,
+      color-mix(in srgb,var(--accent) 88%,#071c3c),
+      var(--accent) 58%,
+      color-mix(in srgb,var(--accent) 75%,#091f49)
+    );
+    color:#fff;
+    box-shadow:0 10px 30px rgba(17,65,130,.12);
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight:after{
+    content:"";
+    position:absolute;
+    width:310px;
+    height:310px;
+    right:-90px;
+    bottom:-220px;
+    border-radius:50%;
+    background:rgba(255,255,255,.07);
+    box-shadow:-80px -18px 0 rgba(255,255,255,.035);
+    pointer-events:none;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-copy{
+    position:relative;
+    z-index:2;
+    min-width:0;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-copy strong{
+    display:block;
+    margin:0;
+    font-size:32px;
+    line-height:1.08;
+    font-weight:900;
+    letter-spacing:-.8px;
+    color:inherit;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-helper{
+    display:block;
+    margin-top:7px;
+    color:rgba(255,255,255,.78);
+    font-size:11px;
+    font-weight:650;
+    line-height:1.3;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
+    position:relative;
+    z-index:3;
+    margin:0!important;
+    min-height:44px!important;
+    height:auto!important;
+    padding:0.65rem 1.4rem!important;
+    border:1.5px solid var(--color-border-interactive,#c8dcfa)!important;
+    border-radius:12px!important;
+    background:#ffffff!important;
+    color:var(--color-primary,#155dfc)!important;
+    box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;
+    white-space:nowrap;
+    font-size:0.875rem!important;
+    font-weight:700!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    transition:all 180ms ease!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover{
+    background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;
+    color:#ffffff!important;
+    border-color:transparent!important;
+    transform:translateY(-2px)!important;
+    box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary,#155dfc) 35%,transparent)!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+    background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
+    color:#fff!important;
+    border-color:#20344F!important;
+    box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight:after,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight:after{
+    background:rgba(255,255,255,.07)!important;
+    box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
+    border-color:var(--color-border,#243347)!important;
+    background:var(--color-surface,#151e2c)!important;
+    color:var(--color-primary-text,#93bbf0)!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover{
+    background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;
+    color:#ffffff!important;
+    border-color:transparent!important;
+  }
+  :root[data-theme="leila-mood"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+    background:linear-gradient(
+      110deg,
+      color-mix(in srgb,var(--accent) 88%,#321328),
+      var(--accent) 58%,
+      color-mix(in srgb,var(--accent) 75%,#35152d)
+    )!important;
+  }
+
+  /* Metas semanais passam a viver como um único bloco sob Distribuição por categoria */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-card{
+    min-height:0!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals{
+    margin:12px 0 0;
+    padding:10px;
+    border-top:1px solid var(--border);
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-categories{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+    width:100%!important;
+    max-width:none!important;
+    padding:0!important;
+    border:0!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;
+    gap:4px 7px!important;
+    min-width:0!important;
+    padding:8px 9px!important;
+    border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+    border-radius:9px!important;
+    background:color-mix(in srgb,var(--accent) 2.5%,var(--surface))!important;
+    text-align:left!important;
+    justify-items:stretch!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day:last-child{
+    grid-column:1/-1!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>span{
+    min-width:0!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+    font-size:7.5px!important;
+    font-weight:800!important;
+    color:var(--muted)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>strong{
+    font-size:10px!important;
+    color:var(--text)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>i{
+    grid-column:1/-1!important;
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    height:4px!important;
+    margin:1px 0 0!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:99px!important;
+    background:var(--surface-2)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>i>b{
+    display:block!important;
+    height:100%!important;
+    border-radius:inherit!important;
+    background:var(--accent)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day.done>i>b{
+    background:var(--success)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>small{
+    grid-column:1/-1!important;
+    font-size:6.5px!important;
+    line-height:1.2!important;
+    color:var(--muted)!important;
+  }
+
+  @media(max-width:700px){
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+      min-height:118px;
+      padding:20px;
+    }
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-copy strong{
+      font-size:25px;
+    }
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
+      min-height:38px!important;
+      height:38px!important;
+      padding:0 13px!important;
+    }
+  }
+
+
   /* Cronograma vNext — cabeçalho vive no spotlight */
   body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-label{
     display:block;
@@ -2630,12 +3628,461 @@
     color:color-mix(in srgb,var(--text) 62%,transparent);
   }
 
+
+    /* Calendário v37 — filtros em listas clicáveis no padrão LURIA */
+    .month-filter-tools{display:none;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 10px;align-items:start;position:relative;z-index:20}
+    body:not(.schedule-settings-embed) .planner-panel:has(.month-planner:not([hidden])) .month-filter-tools{display:grid}
+    .month-filter-group{position:relative;min-width:0}
+    .month-filter-native{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+    .month-filter-trigger{width:100%;min-height:44px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);cursor:pointer;text-align:left;box-shadow:0 2px 8px rgba(15,35,65,.035)}
+    .month-filter-trigger:hover,.month-filter-group.open .month-filter-trigger{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+    .month-filter-trigger>span{font-size:8px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+    .month-filter-trigger>strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:850;color:var(--text)}
+    .month-filter-trigger>i{font-style:normal;color:var(--accent);font-size:13px;transition:transform .15s ease}
+    .month-filter-group.open .month-filter-trigger>i{transform:rotate(180deg)}
+    .month-filter-list{position:absolute;top:calc(100% + 6px);left:0;right:0;max-height:280px;overflow:auto;padding:6px;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:0 14px 32px rgba(15,35,65,.14);z-index:60}
+    .month-filter-list button{width:100%;min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px;border:0;border-radius:8px;background:transparent;color:var(--text);font-size:10px;font-weight:750;text-align:left;cursor:pointer}
+    .month-filter-list button:hover{background:var(--surface-2);color:var(--accent)}
+    .month-filter-list button.active{background:var(--accent-soft);color:var(--accent);font-weight:900}
+    .month-filter-list button.active::after{content:"✓";font-weight:900}
+    @media(max-width:720px){.month-filter-tools{grid-template-columns:1fr}.month-filter-list{position:relative;top:4px;margin-bottom:4px;max-height:220px}}
+
+
+  /* Cronograma v38 — títulos em peso normal e períodos interativos */
+  body[data-page="cronograma"] .agenda-insight-title h3,
+  body[data-page="cronograma"] .agenda-today-title-wrap h3{
+    font-weight:400!important;
+  }
+  body[data-page="cronograma"] .agenda-insight-tabs button{
+    font-weight:400!important;
+    cursor:pointer!important;
+  }
+  body[data-page="cronograma"] .agenda-insight-tabs button.active{
+    font-weight:500!important;
+  }
+
+  </style>
+<style id="cronograma-switches-match-erros-v39">
+body[data-page="cronograma"] .planner-view-toggle,
+body[data-page="cronograma"] .agenda-activity-view-switch,
+body[data-page="cronograma"] .agenda-insight-tabs{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:var(--luria-switch-shell-height,50px)!important;
+  height:var(--luria-switch-shell-height,50px)!important;
+  padding:var(--luria-switch-shell-padding,4px)!important;
+  gap:var(--luria-switch-shell-gap,4px)!important;
+  border:1px solid var(--border)!important;
+  border-radius:var(--luria-switch-shell-radius,10px)!important;
+  background:var(--surface)!important;
+  box-sizing:border-box!important;
+  box-shadow:none!important;
+}
+body[data-page="cronograma"] .agenda-insight-tabs{
+  width:100%!important;
+  margin-bottom:10px!important;
+}
+body[data-page="cronograma"] .planner-view-toggle button,
+body[data-page="cronograma"] .agenda-activity-view-switch button,
+body[data-page="cronograma"] .agenda-insight-tabs button{
+  flex:1 1 0!important;
+  min-width:0!important;
+  min-height:var(--luria-switch-height,40px)!important;
+  height:var(--luria-switch-height,40px)!important;
+  padding:0 var(--luria-switch-pad-x,17px)!important;
+  border:0!important;
+  border-radius:var(--luria-switch-radius,7px)!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:var(--luria-switch-font-size,16px)!important;
+  font-weight:var(--luria-switch-font-weight,400)!important;
+  line-height:1!important;
+  cursor:pointer!important;
+  box-shadow:none!important;
+  transition:background .16s ease,color .16s ease,box-shadow .16s ease!important;
+}
+body[data-page="cronograma"] .planner-view-toggle button.active,
+body[data-page="cronograma"] .planner-view-toggle button[aria-pressed="true"],
+body[data-page="cronograma"] .agenda-activity-view-switch button.active,
+body[data-page="cronograma"] .agenda-insight-tabs button.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  font-weight:500!important;
+  box-shadow:none!important;
+}
+body[data-page="cronograma"] .planner-view-toggle button:hover:not(.active):not([aria-pressed="true"]),
+body[data-page="cronograma"] .agenda-activity-view-switch button:hover:not(.active),
+body[data-page="cronograma"] .agenda-insight-tabs button:hover:not(.active){
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+@media(max-width:700px){
+  body[data-page="cronograma"] .planner-view-toggle,
+  body[data-page="cronograma"] .agenda-activity-view-switch,
+  body[data-page="cronograma"] .agenda-insight-tabs{
+    min-height:var(--luria-switch-shell-height,50px)!important;
+    height:var(--luria-switch-shell-height,50px)!important;
+  }
+}
 </style>
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
-<script defer src="assets/js/luria-brand-v5.js?v=12"></script>
-  <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=15">
+
+<style id="cronograma-overdue-card-v40">
+body[data-page="cronograma"] .agenda-overdue-card{
+  display:grid!important;
+  gap:9px!important;
+  padding:12px!important;
+}
+body[data-page="cronograma"] .agenda-overdue-head{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+}
+body[data-page="cronograma"] .agenda-overdue-head>div{min-width:0!important}
+body[data-page="cronograma"] .agenda-overdue-kicker{
+  display:block!important;
+  margin-bottom:3px!important;
+  color:var(--muted)!important;
+  font-size:7px!important;
+  font-weight:700!important;
+  letter-spacing:.09em!important;
+}
+body[data-page="cronograma"] .agenda-overdue-head h3{
+  margin:0!important;
+  color:var(--text)!important;
+  font-size:12px!important;
+  font-weight:500!important;
+}
+body[data-page="cronograma"] #agenda-overdue-count{
+  display:grid!important;
+  place-items:center!important;
+  min-width:28px!important;
+  height:28px!important;
+  padding:0 7px!important;
+  border:1px solid color-mix(in srgb,#d67b2c 34%,var(--border))!important;
+  border-radius:9px!important;
+  background:color-mix(in srgb,#f4ae2b 11%,var(--surface))!important;
+  color:#a75d1a!important;
+  font-size:10px!important;
+  font-weight:800!important;
+}
+body[data-page="cronograma"] .agenda-overdue-help{
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  line-height:1.4!important;
+}
+body[data-page="cronograma"] .agenda-overdue-list{
+  display:grid!important;
+  gap:5px!important;
+  max-height:188px!important;
+  overflow-y:auto!important;
+  padding-right:2px!important;
+}
+body[data-page="cronograma"] .agenda-overdue-item{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:center!important;
+  gap:8px!important;
+  min-height:44px!important;
+  padding:7px 8px!important;
+  border:1px solid var(--border)!important;
+  border-radius:9px!important;
+  background:var(--surface-2)!important;
+}
+body[data-page="cronograma"] .agenda-overdue-copy{min-width:0!important}
+body[data-page="cronograma"] .agenda-overdue-copy strong{
+  display:block!important;
+  overflow:hidden!important;
+  color:var(--text)!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  line-height:1.2!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+}
+body[data-page="cronograma"] .agenda-overdue-copy span{
+  display:block!important;
+  margin-top:3px!important;
+  color:var(--muted)!important;
+  font-size:7px!important;
+  line-height:1.15!important;
+}
+body[data-page="cronograma"] .agenda-overdue-to-deck{
+  min-height:30px!important;
+  height:30px!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:7px!important;
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  font-size:8px!important;
+  font-weight:700!important;
+  cursor:pointer!important;
+}
+body[data-page="cronograma"] .agenda-overdue-to-deck:hover{
+  border-color:var(--accent)!important;
+  background:var(--accent-soft)!important;
+}
+body[data-page="cronograma"] .agenda-overdue-reinsert{
+  width:100%!important;
+  min-height:36px!important;
+  height:36px!important;
+  border:1px solid var(--accent)!important;
+  border-radius:8px!important;
+  background:var(--accent)!important;
+  color:#fff!important;
+  font-size:9px!important;
+  font-weight:750!important;
+  cursor:pointer!important;
+}
+body[data-page="cronograma"] .agenda-overdue-reinsert:disabled{
+  opacity:.45!important;
+  cursor:default!important;
+}
+body[data-page="cronograma"] .agenda-overdue-empty{
+  padding:12px 8px!important;
+  border:1px dashed var(--border)!important;
+  border-radius:9px!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  text-align:center!important;
+}
+@media(max-width:1050px){
+  body[data-page="cronograma"] .agenda-overdue-card{grid-column:1/-1!important}
+}
+</style>
+  <style id="cronograma-reorganize-switch-v41">
+body[data-page="cronograma"] .agenda-reorganize-switch{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:4px!important;
+  min-height:50px!important;
+  padding:4px!important;
+  border:1px solid var(--border)!important;
+  border-radius:10px!important;
+  background:var(--surface)!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch button{
+  min-height:40px!important;
+  height:auto!important;
+  padding:7px 10px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+  font-weight:600!important;
+  line-height:1.15!important;
+  cursor:pointer!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch button:hover{
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch button:active{
+  background:var(--accent)!important;
+  color:#fff!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-card .manual-status{
+  display:block!important;
+  min-height:0!important;
+  margin:0!important;
+  font-size:8px!important;
+}
+</style>
+<link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+<script defer src="/assets/js/luria-brand-v5.js?v=20261005-global-shell"></script>
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="canonical" href="/cronograma/">
-<script>(function(){try{if(location.pathname.endsWith("/cronograma.html"))history.replaceState(null,"","/cronograma/"+location.search+location.hash);}catch(e){}})();</script>
+<script src="/assets/js/medical-icons.js?v=2.0"></script>
+<style id="cronograma-switch-height-lock-v42">
+body[data-page="cronograma"] .planner-view-toggle button,
+body[data-page="cronograma"] .agenda-activity-view-switch button,
+body[data-page="cronograma"] .agenda-insight-tabs button{
+  height:40px!important;
+  min-height:40px!important;
+  font-weight:400!important;
+}
+body[data-page="cronograma"] .planner-view-toggle,
+body[data-page="cronograma"] .agenda-activity-view-switch,
+body[data-page="cronograma"] .agenda-insight-tabs{
+  min-height:50px!important;
+  height:50px!important;
+  padding:4px!important;
+  gap:4px!important;
+}
+</style>
+<style id="cronograma-callout-typography-lock-v43">
+body[data-page="cronograma"] .agenda-today-title-wrap h3,
+body[data-page="cronograma"] .agenda-insight-title h3,
+body[data-page="cronograma"] .agenda-overdue-head h3,
+body[data-page="cronograma"] .agenda-side-head h3{
+  margin:0!important;
+  font-size:14px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  letter-spacing:-.02em!important;
+  color:var(--text)!important;
+}
+body[data-page="cronograma"] .agenda-bottom-grid>.agenda-side-card,
+body[data-page="cronograma"] .agenda-insight-card{
+  border:1px solid var(--border)!important;
+  border-radius:14px!important;
+  background:var(--surface)!important;
+  box-shadow:0 4px 16px rgba(20,48,84,.035)!important;
+}
+body[data-page="cronograma"] .agenda-bottom-grid>.agenda-side-card{
+  padding:12px!important;
+}
+body[data-page="cronograma"] .agenda-today-head,
+body[data-page="cronograma"] .agenda-insight-title,
+body[data-page="cronograma"] .agenda-overdue-head{
+  min-height:28px!important;
+  align-items:center!important;
+}
+body[data-page="cronograma"] .agenda-today-date,
+body[data-page="cronograma"] .agenda-overdue-help,
+body[data-page="cronograma"] .agenda-study-total span,
+body[data-page="cronograma"] .agenda-category-copy span{
+  font-size:9px!important;
+  line-height:1.3!important;
+}
+</style>
+<style id="cronograma-switch-weight-lock-v44">
+body[data-page="cronograma"] .planner-view-toggle button.active,
+body[data-page="cronograma"] .planner-view-toggle button[aria-pressed="true"],
+body[data-page="cronograma"] .agenda-activity-view-switch button.active,
+body[data-page="cronograma"] .agenda-insight-tabs button.active{
+  font-weight:400!important;
+}
+</style>
+
+<style id="cronograma-today-match-switch-v45">
+body[data-page="cronograma"] .planner-today{
+  height:var(--luria-switch-height,40px)!important;
+  min-height:var(--luria-switch-height,40px)!important;
+  padding:0 var(--luria-switch-pad-x,17px)!important;
+  border:1px solid var(--border)!important;
+  border-radius:var(--luria-switch-radius,7px)!important;
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  font-size:var(--luria-switch-font-size,16px)!important;
+  font-weight:var(--luria-switch-font-weight,400)!important;
+  line-height:1!important;
+  box-sizing:border-box!important;
+}
+body[data-page="cronograma"] .planner-today:hover{
+  background:var(--surface-2)!important;
+}
+</style>
+
+<style id="cronograma-scroll-inset-v46">
+@media(min-width:981px){
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page{
+    box-sizing:border-box!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+    scrollbar-gutter:auto!important;
+    overscroll-behavior:contain!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-track,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-track-piece,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+    min-height:34px!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    background:transparent!important;
+    border:0!important;
+  }
+}
+</style>
+
+<style id="cronograma-global-shell-lock-v47">
+@media(min-width:981px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed){
+    overflow:hidden!important;
+    background:var(--luria-master-shell,#184888)!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell{
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before{
+    content:""!important;
+    opacity:1!important;
+    z-index:0!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+    content:none!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar{
+    opacity:1!important;
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page{
+    box-sizing:border-box!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    background:transparent!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-track,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-track-piece,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+  }
+}
+</style>
 
 <style id="cronograma-shell-parity-v48">
 @media(min-width:981px){
@@ -2660,12 +4107,13 @@
 </style>
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/cronograma-lumina-v2.css?v=20261016-lumina-ultra">
 </head>
-
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="cronograma">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
-  <div class="app-shell">
+<div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
 
@@ -2673,11 +4121,14 @@
       <div class="page">
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading">
-            <span class="eyebrow" data-page-eyebrow>Aulas e temas</span>
-            <h1 data-page-title>Cronograma</h1>
-          </div>
         </header>
+
+        <section class="luria-page-spotlight" aria-label="Cronograma">
+          <div class="luria-page-spotlight-copy">
+            <strong>Cronograma</strong>
+            <small class="luria-page-spotlight-helper">Organize suas aulas e revisões ao longo da semana.</small>
+          </div>
+        </section>
 
         <div class="schedule-stack">
 
@@ -2974,67 +4425,153 @@
             <div id="base-schedule-deck" class="base-schedule-deck"></div>
           </section>
 
-          <section class="planner-panel">
-            <div class="planner-header">
-              <div>
-                <h2>Planejador semanal</h2>
-                <p id="planner-range">Carregando...</p>
-              </div>
+          <section class="schedule-top-spotlight" aria-label="Cronograma">
+  <div class="schedule-top-spotlight-copy">
+    <strong>Cronograma</strong>
+    <small class="schedule-top-spotlight-helper">Organize o que estudar e quando revisar.</small>
+  </div>
+  <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
+</section>
 
-              <div class="planner-tools">
-                <div class="planner-view-toggle" role="group" aria-label="Visualização do planejador">
-                  <button id="planner-view-week" class="active" type="button" aria-pressed="true">Semana</button>
-                  <button id="planner-view-month" type="button" aria-pressed="false">Mês</button>
+          <dialog id="quick-activity-dialog" class="schedule-dialog quick-activity-dialog">
+  <form id="quick-activity-form" class="quick-activity-form">
+    <div class="quick-activity-head"><div><span class="badge accent">Cronograma</span><h2>Nova atividade</h2><p>Adicione uma aula ou outro compromisso à agenda.</p></div><button id="quick-activity-close" type="button" aria-label="Fechar">×</button></div>
+    <div class="quick-activity-switch"><button type="button" class="active" data-quick-kind="lesson">Nova aula</button><button type="button" data-quick-kind="event">Outros</button></div>
+    <section class="quick-activity-fields active" data-quick-fields="lesson">
+      <label><span>Área *</span><select id="quick-lesson-area" required><option value="">Selecione a área</option><option>Clínica Médica</option><option>Cirurgia Geral</option><option>Ginecologia e Obstetrícia</option><option>Medicina Preventiva</option><option>Pediatria</option></select></label>
+      <label><span>Matéria</span><input id="quick-lesson-materia" type="text" maxlength="120" placeholder="Ex.: Cardiologia"></label>
+      <label class="wide"><span>Tema da aula *</span><input id="quick-lesson-theme" type="text" maxlength="180" placeholder="Ex.: Insuficiência cardíaca"></label>
+      <label><span>Data *</span><input id="quick-lesson-date" type="date"></label>
+    </section>
+    <section class="quick-activity-fields" data-quick-fields="event">
+      <label class="wide"><span>Título *</span><input id="quick-event-title" type="text" maxlength="180" placeholder="Ex.: Congresso de Cardiologia"></label>
+      <label><span>Tipo de evento *</span><select id="quick-event-type"><option value="congresso">Congresso</option><option value="reuniao">Reunião</option><option value="festa">Festa / compromisso</option><option value="simulation">Prova / simulado</option><option value="plantao">Plantão</option><option value="other">Outro</option></select></label>
+      <label><span>Data *</span><input id="quick-event-date" type="date"></label>
+      <label><span>Horário <small>(opcional)</small></span><input id="quick-event-time" type="time"></label>
+    </section>
+    <div class="quick-activity-actions"><span id="quick-activity-status"></span><button id="quick-activity-save" class="button primary" type="submit">Adicionar aula</button></div>
+  </form>
+</dialog>
+
+<div class="agenda-workspace agenda-reference-layout">
+            <div class="agenda-calendar-column">
+            <section class="planner-panel">
+              <div class="planner-header">
+                <div class="planner-header-left">
+                  <div class="planner-nav planner-nav-arrows">
+                    <button id="week-prev" type="button" aria-label="Período anterior">‹</button>
+                    <button id="week-next" type="button" aria-label="Próximo período">›</button>
+                  </div>
+                  <h2 id="planner-range" class="planner-period-title">Carregando...</h2>
                 </div>
 
-                <div class="planner-nav">
-                  <button id="week-prev" type="button" aria-label="Período anterior">‹</button>
-                  <button id="week-today" type="button">Esta semana</button>
-                  <button id="week-next" type="button" aria-label="Próximo período">›</button>
+                <div class="planner-tools">
+                  <button id="week-today" class="planner-today" type="button">Hoje</button>
+                  <div class="planner-view-toggle" role="group" aria-label="Visualização do planejador">
+                    <button id="planner-view-month" class="active" type="button" aria-pressed="true">Mês</button>
+                    <button id="planner-view-week" type="button" aria-pressed="false">Semana</button>
+                  </div>
                 </div>
               </div>
+
+              <div id="week-planner" class="week-planner" hidden></div>
+              <div id="month-filter-tools" class="month-filter-tools" aria-label="Filtros do calendário">
+                <div class="month-filter-group" data-month-filter="month-filter-area">
+                  <button class="month-filter-trigger" type="button" aria-expanded="false"><span>Área</span><strong>Todas as áreas</strong><i>⌄</i></button>
+                  <div class="month-filter-list" hidden></div>
+                  <select id="month-filter-area" class="month-filter-native" aria-label="Filtrar mês por área"><option value="all">Todas as áreas</option></select>
+                </div>
+                <div class="month-filter-group" data-month-filter="month-filter-theme">
+                  <button class="month-filter-trigger" type="button" aria-expanded="false"><span>Tema</span><strong>Todos os temas</strong><i>⌄</i></button>
+                  <div class="month-filter-list" hidden></div>
+                  <select id="month-filter-theme" class="month-filter-native" aria-label="Filtrar mês por tema"><option value="all">Todos os temas</option></select>
+                </div>
+                <div class="month-filter-group" data-month-filter="month-filter-type">
+                  <button class="month-filter-trigger" type="button" aria-expanded="false"><span>Tipo</span><strong>Todos os tipos</strong><i>⌄</i></button>
+                  <div class="month-filter-list" hidden></div>
+                  <select id="month-filter-type" class="month-filter-native" aria-label="Filtrar mês por tipo"><option value="all">Todos os tipos</option><option value="lesson">Aulas</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="questions">Questões</option><option value="simulation">Simulados</option><option value="other">Outros eventos</option></select>
+                </div>
+              </div><div id="month-planner" class="month-planner"></div>
+            </section>
+
+            <div class="agenda-bottom-grid">
+            <section class="agenda-side-card agenda-today-card">
+              <div class="agenda-today-head">
+                <div class="agenda-today-title-wrap">
+                  <span class="agenda-today-icon" aria-hidden="true">▣</span>
+                  <div><h3 id="agenda-activities-title">Atividades de hoje</h3><span id="agenda-today-date" class="agenda-today-date"></span></div>
+                </div>
+                <div class="agenda-activity-view-switch" role="group" aria-label="Período das atividades">
+                  <button type="button" class="active" data-agenda-scope="today">Hoje</button>
+                  <button type="button" data-agenda-scope="overdue">Atrasadas</button>
+                </div>
+              </div>
+              <div id="agenda-bulk-tools" class="agenda-bulk-tools" hidden>
+                <div class="agenda-bulk-filter">
+                  <select id="agenda-filter-area" aria-label="Filtrar por área"><option value="all">Todas as áreas</option></select>
+                  <select id="agenda-filter-theme" aria-label="Filtrar por tema"><option value="all">Todos os temas</option></select>
+                  <select id="agenda-activity-filter" aria-label="Filtrar por tipo">
+                    <option value="all">Todos os tipos</option><option value="lesson">Aulas</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="questions">Questões</option><option value="simulation">Simulados</option><option value="other">Outros eventos</option>
+                  </select>
+                  <label class="agenda-select-all"><input id="agenda-select-all" type="checkbox"> Selecionar todos</label>
+                </div>
+                <div id="agenda-bulk-actions" class="agenda-bulk-actions">
+                  <span id="agenda-selected-count">0 selecionadas</span>
+                  <input id="agenda-bulk-date" type="date" aria-label="Nova data">
+                  <button id="agenda-bulk-reschedule" type="button">Mover</button>
+                  <button id="agenda-bulk-deck" type="button">Remover para o deck</button>
+                  <button id="agenda-bulk-delete" type="button">Apagar</button>
+                </div>
+              </div>
+              <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
+            </section>
             </div>
 
-            <div id="week-planner" class="week-planner"></div>
-            <div id="month-planner" class="month-planner" hidden></div>
-          </section>
-
-          <section class="overdue-organizer">
-            <div>
-              <strong>Reorganizar aulas</strong>
-
-              <p>
-                Aulas atrasadas usam uma data limite. Aulas adiantadas são
-                compactadas para frente somente quando não existem atrasos,
-                usando no máximo 3 dias de aula por semana.
-              </p>
             </div>
+            <aside class="agenda-side agenda-summary-side agenda-insights-side">
+              <section class="agenda-insight-card agenda-study-time-card">
+                <div class="agenda-insight-title"><span aria-hidden="true">◷</span><h3>Tempo de estudo</h3></div>
+                <div class="agenda-insight-tabs" data-insight-tabs="study"><button class="active" type="button" data-period="week">Semana</button><button type="button" data-period="month">Mês</button><button type="button" data-period="year">Ano</button></div>
+                <div class="agenda-study-total"><strong id="agenda-study-total">0min</strong><span>Nesta semana</span></div>
+                <div id="agenda-study-bars" class="agenda-study-bars" aria-label="Tempo de estudo por dia"></div>
+              </section>
+              <section class="agenda-insight-card agenda-category-card">
+                <div class="agenda-insight-title"><span aria-hidden="true">◔</span><h3>Distribuição por categoria</h3></div>
+                <div class="agenda-insight-tabs" data-insight-tabs="category"><button class="active" type="button" data-period="week">Semana</button><button type="button" data-period="month">Mês</button><button type="button" data-period="year">Ano</button></div>
+                <div class="agenda-category-body">
+                  <div class="agenda-category-donut-wrap">
+                    <div id="agenda-category-donut" class="agenda-category-donut"><span id="agenda-category-total">0min</span></div>
+                  </div>
+                  <div id="agenda-category-legend" class="agenda-category-legend"><span class="agenda-empty">Sem tempo registrado.</span></div>
+                </div>
+                <div class="agenda-category-goals" aria-label="Metas semanais por categoria">
+                  <div id="agenda-goal-days" class="agenda-goal-days agenda-goal-categories">
+                    <div class="agenda-goal-day" data-goal-kind="lesson"><span>Aulas</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="review"><span>Revisões</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="flashcards"><span>Flashcards</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="errors"><span>Caderno de erros</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="questions-simulation"><span>Questões / Simulados</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                  </div>
+                </div>
+              </section>
+              <section class="agenda-insight-card agenda-overdue-card agenda-reorganize-card" aria-labelledby="agenda-overdue-title">
+                <div class="agenda-overdue-head">
+                  <div>
+                    <span class="agenda-overdue-kicker">CRONOGRAMA</span>
+                    <h3 id="agenda-overdue-title">Reorganizar aulas</h3>
+                  </div>
+                </div>
+                <p class="agenda-overdue-help">Redistribua o cronograma usando as configurações atuais de dias e limite de aulas.</p>
+                <div class="agenda-reorganize-switch" role="group" aria-label="Reorganizar cronograma">
+                  <button id="reorganize-overdue" type="button">Reorganizar aulas atrasadas</button>
+                  <button id="reorganize-advanced" type="button">Reorganizar aulas adiantadas</button>
+                </div>
+                <span id="reorganize-overdue-status" class="manual-status" aria-live="polite"></span>
+              </section>
+            </aside>
 
-            <div class="reorganize-actions">
-              <button
-                id="reorganize-overdue"
-                class="button secondary"
-                type="button"
-              >
-                Reorganizar aulas atrasadas
-              </button>
 
-              <button
-                id="reorganize-advanced"
-                class="button secondary"
-                type="button"
-              >
-                Reorganizar aulas adiantadas
-              </button>
-            </div>
-
-            <span
-              id="reorganize-overdue-status"
-              class="manual-status"
-              aria-live="polite"
-            ></span>
-          </section>
-
+          </div>
 
           <dialog
             id="reorganize-overdue-dialog"
@@ -3460,290 +4997,16 @@
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 
 
-<script src="assets/js/supabase.js"></script>
+<script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261013-frame1"></script>
-<script src="assets/js/study-mode.js?v=12.1"></script>
-<script src="assets/js/exam-priority-data.js?v=1"></script>
-<script src="assets/js/exam-priority-extra.js?v=1"></script>
-<script src="assets/js/exam-priority.js?v=3"></script>
-<script src="assets/js/cronograma-base-data.js?v=12.6"></script>
+<script src="/assets/js/study-mode.js?v=12.1"></script>
+<script src="/assets/js/exam-priority-data.js?v=1"></script>
+<script src="/assets/js/exam-priority-extra.js?v=1"></script>
+<script src="/assets/js/exam-priority.js?v=20261017-neutral1"></script>
+<script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
 <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
-<script src="assets/js/cronograma.js?v=17.6"></script>
-<script src="/assets/js/google-calendar.js?v=3-side-lock"></script>\n<script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
-
-
-<style id="cronograma-visual-fix-20260929">
-@media(min-width:981px){
-  /* Restaura a referência global dos controles superiores. */
-  body[data-page="cronograma"]:not(.schedule-settings-embed){
-    --luria-top-controls-top:10px;
-    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
-  }
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
-    position:fixed!important;
-    top:var(--luria-top-controls-top)!important;
-    right:var(--luria-top-controls-right)!important;
-    bottom:auto!important;
-    left:auto!important;
-    margin:0!important;
-    transform:none!important;
-    translate:none!important;
-    z-index:245!important;
-  }
-}
-
-/* O fundo da página deve deixar o pattern global da LURIA visível. */
-body[data-page="cronograma"]{
-  background-color:transparent!important;
-  background-image:none!important;
-}
-body[data-page="cronograma"]::before,
-body[data-page="cronograma"]::after{
-  display:block!important;
-  content:""!important;
-  position:fixed!important;
-  inset:-14%!important;
-  pointer-events:none!important;
-  background-image:var(--luria-pattern-image)!important;
-  background-repeat:repeat!important;
-  background-size:var(--luria-pattern-size) var(--luria-pattern-size)!important;
-  transform:rotate(-8deg) scale(1.08)!important;
-  transform-origin:center!important;
-  opacity:var(--luria-pattern-opacity)!important;
-  z-index:0!important;
-}
-body[data-page="cronograma"]::before{
-  background-position:0 0!important;
-}
-body[data-page="cronograma"]::after{
-  background-position:calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
-}
-body[data-page="cronograma"] > .app-shell{
-  z-index:1!important;
-}
-</style>
-
-
-
-<style id="cronograma-geometry-final-20260929">
-@media(min-width:981px){
-  /* Card superior com a mesma geometria compacta aprovada do Cronograma. */
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-page-spotlight{
-    box-sizing:border-box!important;
-    width:100%!important;
-    height:118px!important;
-    min-height:118px!important;
-    max-height:118px!important;
-    padding:20px 24px!important;
-    margin-bottom:14px!important;
-    overflow:hidden!important;
-  }
-
-  /* O limite direito dos controles coincide exatamente com o limite direito da .page. */
-  body[data-page="cronograma"]:not(.schedule-settings-embed){
-    --cronograma-page-gutter:34px;
-    --luria-top-controls-right:max(
-      var(--cronograma-page-gutter),
-      calc((100vw - 1320px) / 2 + var(--cronograma-page-gutter))
-    );
-  }
-
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
-    position:fixed!important;
-    top:10px!important;
-    right:var(--luria-top-controls-right)!important;
-    left:auto!important;
-    margin:0!important;
-    transform:none!important;
-    translate:none!important;
-  }
-}
-</style>
-
-
-
-<style id="cronograma-switch-weight-20260929">
-/* Switches do Cronograma: texto regular, inclusive no estado ativo. */
-body[data-page="cronograma"] .planner-view-toggle button,
-body[data-page="cronograma"] .planner-view-toggle button.active,
-body[data-page="cronograma"] .planner-nav #week-today,
-body[data-page="cronograma"] [data-agenda-view],
-body[data-page="cronograma"] [data-agenda-view].active,
-body[data-page="cronograma"] .agenda-view-toggle button,
-body[data-page="cronograma"] .agenda-view-toggle button.active{
-  font-weight:400!important;
-}
-</style>
-
-
-
-<style id="cronograma-match-dashboard-reference-20260929">
-@media(min-width:981px){
-  /* Cronograma usa exatamente a mesma caixa horizontal do conteúdo/dashboard. */
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
-    box-sizing:border-box!important;
-  }
-
-  /* Título azul: mesma altura e largura visual do card do Dashboard. */
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-page-spotlight{
-    width:100%!important;
-    height:138px!important;
-    min-height:138px!important;
-    max-height:138px!important;
-    margin-left:0!important;
-    margin-right:0!important;
-    padding:24px 28px!important;
-    box-sizing:border-box!important;
-  }
-
-  /* Timer + sino + perfil terminam na MESMA borda direita do card azul. */
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .page > .topbar{
-    box-sizing:border-box!important;
-  }
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
-    position:absolute!important;
-    top:50%!important;
-    right:0!important;
-    bottom:auto!important;
-    left:auto!important;
-    margin:0!important;
-    transform:translateY(-50%)!important;
-    translate:none!important;
-    z-index:245!important;
-  }
-}
-</style>
-
-
-
-
-
-<style id="cronograma-switch-icon-polish-20260929">
-/* Autoritativo: tipografia dos switches do Cronograma, inclusive conteúdo injetado depois. */
-body[data-page="cronograma"] :is(
-  .agenda-scope-toggle,
-  .agenda-insight-tabs,
-  .planner-view-toggle,
-  [class*="agenda"][class*="tabs"],
-  [class*="agenda"][class*="toggle"]
-) button,
-body[data-page="cronograma"] button[data-agenda-scope],
-body[data-page="cronograma"] button[data-period]{
-  font-family:inherit!important;
-  font-size:12px!important;
-  font-weight:400!important;
-  line-height:1.15!important;
-}
-body[data-page="cronograma"] :is(
-  .agenda-scope-toggle,
-  .agenda-insight-tabs,
-  .planner-view-toggle,
-  [class*="agenda"][class*="tabs"],
-  [class*="agenda"][class*="toggle"]
-) button:is(.active,[aria-pressed="true"]),
-body[data-page="cronograma"] button[data-agenda-scope].active,
-body[data-page="cronograma"] button[data-period].active{
-  font-weight:400!important;
-}
-body[data-page="cronograma"] .luria-cronograma-card-icon{
-  width:20px;
-  height:20px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  color:var(--accent);
-  flex:0 0 20px;
-}
-body[data-page="cronograma"] .luria-cronograma-card-icon svg{
-  width:18px!important;
-  height:18px!important;
-  stroke:currentColor!important;
-  fill:none!important;
-  stroke-width:1.8!important;
-}
-</style>
-<script>
-(function(){
-  const svg={
-    calendar:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="15" rx="3"/><path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17"/><path d="M8 13h3M13 13h3M8 16.5h3"/></svg>',
-    clock:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 2"/></svg>',
-    chart:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5h16"/><rect x="5.5" y="11.5" width="3" height="6" rx="1"/><rect x="10.5" y="7.5" width="3" height="10" rx="1"/><rect x="15.5" y="4.5" width="3" height="13" rx="1"/></svg>'
-  };
-  const normalize=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-  function polish(){
-    document.querySelectorAll('body[data-page="cronograma"] h2,body[data-page="cronograma"] h3,body[data-page="cronograma"] strong,body[data-page="cronograma"] span').forEach(el=>{
-      const t=normalize(el.textContent.trim());
-      let name="";
-      if(t==="atividades de hoje"||t==="todas as atividades") name="calendar";
-      else if(t==="tempo de estudo") name="clock";
-      else if(t==="distribuicao por categoria") name="chart";
-      if(!name)return;
-      const host=el.closest(".agenda-side-card,.agenda-today-card,[class*='agenda']");
-      if(!host)return;
-      const candidates=[...host.querySelectorAll("span,i,div")].filter(x=>x!==el&&x.children.length===0&&/^[^A-Za-zÀ-ÿ0-9]{1,4}$/.test(x.textContent.trim()));
-      const target=host.querySelector(".agenda-insight-icon,.agenda-today-icon,.agenda-distribution-icon,[data-card-icon]")||candidates[0];
-      if(target){
-        target.classList.add("luria-cronograma-card-icon");
-        target.innerHTML=svg[name];
-      }
-    });
-  }
-  document.addEventListener("DOMContentLoaded",()=>{polish();setTimeout(polish,250);setTimeout(polish,1000);});
-  document.addEventListener("docmap:ready",polish);
-  new MutationObserver(()=>polish()).observe(document.documentElement,{childList:true,subtree:true});
-})();
-</script>
-
+<script src="/assets/js/cronograma.js?v=20261017-neutral1"></script>
+<script src="/assets/js/google-calendar.js?v=3-side-lock"></script>
+<script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
-
-
-<style id="cronograma-top-authoritative">
-@media(min-width:981px){
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack{
-    margin-top:0!important;
-  }
-}
-</style>
-
-<style id="cronograma-top-reference-final">
-@media(min-width:981px){
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack{
-    margin-top:0!important;
-  }
-}
-</style>
-
-<style id="cronograma-dashboard-control-size">
-@media(min-width:981px){
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-pomodoro-toggle{
-    height:43px!important;
-    min-height:43px!important;
-    min-width:156px!important;
-  }
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-notification-toggle,
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-profile-toggle{
-    width:43px!important;
-    height:43px!important;
-    min-width:43px!important;
-    min-height:43px!important;
-  }
-}
-</style>
-
-<style id="cronograma-dashboard-timer-width">
-@media(min-width:981px){
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-pomodoro-toggle{
-    width:auto!important;
-    min-width:0!important;
-    max-width:none!important;
-    padding:0 10px!important;
-    gap:8px!important;
-  }
-}
-</style>
-
-<!-- cronograma-modern-v62 -->
-<link rel="stylesheet" href="/assets/css/cronograma-modern-v62.css?v=20261007-modern-8px">

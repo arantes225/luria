@@ -509,3 +509,193 @@ body.theme-leila-mood .error-review-cat-logo-pinktheme{
     body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring{margin:16px auto!important}
   }
 }
+
+/* Ergonomia de Tela Única: Destaque Absoluto para o Card de Revisão e Zero Scroll Desktop */
+@media (min-width: 981px) {
+  html:has(body.error-review-page),
+  body.error-review-page {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    max-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+  body.error-review-page .app-shell,
+  body.error-review-page .main,
+  body.error-review-page .error-review-page-shell {
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  body.error-review-page .error-review-page-topbar {
+    flex: 0 0 auto !important;
+    padding-bottom: 4px !important;
+  }
+  body.error-review-page .error-review-topline {
+    flex: 0 0 auto !important;
+    margin: 0 0 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  body.error-review-page .error-review-page-back {
+    border-radius: 12px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 14px !important;
+    font-size: 11px !important;
+    font-weight: 750 !important;
+  }
+  body.error-review-page .error-review-page-grid {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    height: calc(100dvh - 125px) !important;
+    max-height: calc(100dvh - 125px) !important;
+    display: grid !important;
+    grid-template-columns: 200px minmax(0, 1fr) 200px !important;
+    gap: 12px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  body.error-review-page .error-review-page-side {
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    padding: 14px !important;
+    border-radius: 14px !important;
+    position: static !important;
+  }
+  body.error-review-page .error-review-next-list {
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    min-height: 0 !important;
+    scrollbar-width: thin !important;
+  }
+  body.error-review-page .error-review-page-center {
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+  body.error-review-page .error-review-card-wrap {
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 16px 20px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  body.error-review-page .error-review-card-meta {
+    flex: 0 0 auto !important;
+    margin-bottom: 8px !important;
+  }
+  body.error-review-page .error-review-big-card {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 24px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 16px !important;
+    border: 1.5px solid color-mix(in srgb, var(--accent) 35%, var(--border)) !important;
+    background: linear-gradient(180deg, var(--surface), color-mix(in srgb, var(--accent-soft) 25%, var(--surface))) !important;
+    box-sizing: border-box !important;
+    overflow: auto !important;
+  }
+  body.error-review-page .error-review-cat-logo {
+    width: 90px !important;
+    height: 65px !important;
+    margin-bottom: 14px !important;
+    flex: 0 0 auto !important;
+  }
+  body.error-review-page .error-review-big-copy {
+    font-size: clamp(20px, 2.3vw, 32px) !important;
+    font-weight: 850 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.02em !important;
+    color: var(--text) !important;
+    max-width: 780px !important;
+    margin: 0 !important;
+  }
+  body.error-review-page .error-review-page-actions {
+    flex: 0 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    margin-top: 10px !important;
+  }
+  body.error-review-page .error-review-page-actions .button {
+    height: 44px !important;
+    min-height: 44px !important;
+    border-radius: 12px !important;
+    font-size: 13px !important;
+    font-weight: 750 !important;
+  }
+  body.error-review-page .error-review-page-actions .button.primary {
+    background: linear-gradient(135deg, #184888, #2563EB) !important;
+    color: #ffffff !important;
+    border: 0 !important;
+    box-shadow: 0 4px 14px rgba(24, 72, 136, 0.28) !important;
+  }
+  body.error-review-page .error-review-page-actions .button.secondary {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+  }
+  body.error-review-page .error-review-page-metrics {
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 14px !important;
+    border-radius: 14px !important;
+  }
+  body.error-review-page .error-review-metric-ring {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    min-height: 90px !important;
+    margin: 8px auto !important;
+  }
+  body.error-review-page .error-review-metric-ring:after {
+    inset: 8px !important;
+  }
+  body.error-review-page .error-review-metric-ring strong {
+    font-size: 20px !important;
+  }
+  body.error-review-page .error-review-metric-pair {
+    margin: 4px 0 !important;
+  }
+  body.error-review-page .error-review-metric-pair > div {
+    padding: 6px 8px !important;
+    border-radius: 10px !important;
+  }
+  body.error-review-page .error-review-page-metrics h3 {
+    margin: 8px 0 6px !important;
+    font-size: 11px !important;
+  }
+  body.error-review-page .error-review-area-bars {
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    min-height: 0 !important;
+    scrollbar-width: thin !important;
+  }
+}
+

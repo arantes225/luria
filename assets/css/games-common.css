@@ -156,26 +156,53 @@
   justify-content: center;
   gap: 8px;
   min-height: 48px;
-  padding: 12px 21px;
-  background: var(--color-primary);
-  color: var(--color-primary-foreground);
-  border: 1px solid transparent;
-  border-radius: 11px;
-  font-size: 13px;
+  padding: 12px 24px;
+  background: #ffffff !important;
+  color: var(--color-primary, #155dfc) !important;
+  border: 1px solid var(--color-border-interactive, #c8dcfa) !important;
+  border-radius: 12px;
+  font-size: 13.5px;
   font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    color 0.18s ease;
 }
 .luria-game .g-button:hover:not(:disabled) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px #18488820;
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary) 38%, transparent);
+}
+[data-theme="dark"] .luria-game .g-button,
+[data-ui-appearance="dark"] .luria-game .g-button {
+  background: var(--color-surface, #151e2c) !important;
+  color: var(--color-primary-text, #93bbf0) !important;
+  border-color: var(--color-border, #243347) !important;
+}
+[data-theme="dark"] .luria-game .g-button:hover:not(:disabled),
+[data-ui-appearance="dark"] .luria-game .g-button:hover:not(:disabled) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
 }
 .luria-game .g-secondary {
-  background: var(--color-surface);
-  color: var(--color-primary-text);
-  border-color: var(--color-border);
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid var(--color-border-interactive) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.luria-game .g-secondary:hover:not(:disabled) {
+  background: var(--color-surface-elevated) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary-text) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
 }
 .luria-game .g-actions {
   display: flex;
@@ -635,4 +662,422 @@
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ==============================================================================
+   LURIA — Hub Central de Jogos (jogos/index.html)
+   Estilos limpos, sem sobreposições ou declarações redundantes.
+   ============================================================================== */
+
+body[data-page="jogos"] .games-page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  padding-bottom: 8px;
+}
+
+body[data-page="jogos"] .games-page > * {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+body[data-page="jogos"] .games-spotlight {
+  height: 126px;
+  min-height: 126px;
+  margin: 0;
+  padding: 20px 28px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy strong {
+  font-size: clamp(27px, 2.6vw, 33px);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+
+body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy small {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 9px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+body[data-page="jogos"] .games-spotlight-fig {
+  width: 170px;
+  height: 110px;
+  position: relative;
+  flex: none;
+  z-index: 2;
+  isolation: isolate;
+}
+
+body[data-page="jogos"] .games-spotlight-fig span {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 24px rgba(5, 20, 55, 0.19), inset 0 2px 2px rgba(255, 255, 255, 0.28);
+  transform: rotate(-10deg);
+  background: linear-gradient(145deg, #92c8ff, #377ac3);
+}
+
+body[data-page="jogos"] .games-spotlight-fig span:first-child {
+  right: 91px;
+  top: 19px;
+  transform: rotate(-15deg);
+  background: linear-gradient(145deg, #fff0b9, #edb34e);
+}
+
+body[data-page="jogos"] .games-spotlight-fig span:nth-child(2) {
+  right: 42px;
+  top: 32px;
+  transform: rotate(11deg);
+  background: linear-gradient(145deg, #d5e8ff, #709ddd);
+}
+
+body[data-page="jogos"] .games-spotlight-fig span:nth-child(3) {
+  right: 4px;
+  top: 12px;
+  transform: rotate(16deg);
+  background: linear-gradient(145deg, #b2f4de, #43a997);
+}
+
+body[data-page="jogos"] .games-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 2px 4px;
+}
+
+body[data-page="jogos"] .games-section-label h2 {
+  margin: 0;
+  color: var(--color-text-primary, #172033);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+body[data-page="jogos"] .games-section-label span {
+  font-size: 12px;
+  color: var(--color-text-secondary, #596579);
+}
+
+body[data-page="jogos"] .games-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+body[data-page="jogos"] .game-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border, #e3e7ed);
+  border-radius: 16px;
+  background: var(--color-surface, #fff);
+  box-shadow: 0 2px 12px rgba(15, 35, 66, 0.045);
+  padding: 22px 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+body[data-page="jogos"] .game-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(15, 35, 66, 0.08);
+  border-color: color-mix(in srgb, var(--card-color, var(--color-primary)) 40%, var(--color-border));
+}
+
+body[data-page="jogos"] .game-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+body[data-page="jogos"] .game-card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 13px;
+  background: var(--card-soft);
+  color: var(--card-color);
+  transition: transform 0.2s ease;
+}
+
+body[data-page="jogos"] .game-card:hover .game-card-icon {
+  transform: scale(1.08);
+}
+
+body[data-page="jogos"] .game-card-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body[data-page="jogos"] .game-card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: var(--color-text-secondary, #596579);
+  background: var(--color-surface-secondary, #f3f5f8);
+  border-radius: 50px;
+  border: 1px solid var(--color-border, #e4e9ef);
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+body[data-page="jogos"] .games-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #28896d;
+}
+
+body[data-page="jogos"] .game-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+body[data-page="jogos"] .game-card h2 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary, #172033);
+  margin: 0;
+}
+
+body[data-page="jogos"] .game-card p {
+  color: var(--color-text-secondary, #596579);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+body[data-page="jogos"] .game-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+body[data-page="jogos"] .game-card-tags span {
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 550;
+  color: var(--color-text-secondary, #547196);
+  background: var(--color-surface-secondary, #f3f7fc);
+  border: 1px solid var(--color-border, #e5eef6);
+  white-space: nowrap;
+}
+
+body[data-page="jogos"] .games-link {
+  width: 100%;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #ffffff !important;
+  border: 1.5px solid var(--color-border-interactive, #c8dcfa) !important;
+  color: var(--color-primary, #155dfc) !important;
+  padding: 12px 20px;
+  border-radius: 12px !important;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  min-height: 44px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 180ms ease;
+  margin-top: auto;
+}
+
+body[data-page="jogos"] .game-card:hover .games-link,
+body[data-page="jogos"] .games-link:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--color-primary, #155dfc) 35%, transparent);
+}
+
+[data-theme="dark"] body[data-page="jogos"] .games-link,
+[data-ui-appearance="dark"] body[data-page="jogos"] .games-link {
+  background: var(--color-surface, #151e2c);
+  color: var(--color-primary-text, #93bbf0);
+  border-color: var(--color-border, #243347);
+}
+
+[data-theme="dark"] body[data-page="jogos"] .games-link:hover,
+[data-ui-appearance="dark"] body[data-page="jogos"] .games-link:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+body[data-page="jogos"] .games-link:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+
+body[data-page="jogos"] .games-link svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body[data-page="jogos"] .game-card--rats {
+  --card-soft: #eaf1fb;
+  --card-color: #1e5bb8;
+}
+
+body[data-page="jogos"] .game-card--flash {
+  --card-soft: #fff3e4;
+  --card-color: #c57a1f;
+}
+
+body[data-page="jogos"] .game-card--sequence {
+  --card-soft: #e8f6f2;
+  --card-color: #278d79;
+}
+
+body[data-page="jogos"] .game-card--escape {
+  --card-soft: #f0ecfb;
+  --card-color: #7560ae;
+}
+
+body[data-page="jogos"] .games-footer-note {
+  color: var(--color-text-secondary, #596579);
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 8px 2px 0;
+}
+
+@media (max-width: 768px) {
+  body[data-page="jogos"] .games-grid-2x2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  body[data-page="jogos"] .game-card {
+    padding: 16px 18px;
+  }
+  body[data-page="jogos"] .game-card h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  body[data-page="jogos"] .games-spotlight {
+    height: 111px;
+    min-height: 111px;
+    padding: 18px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig {
+    width: 85px;
+    height: 80px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span {
+    width: 41px;
+    height: 41px;
+    font-size: 21px;
+    border-radius: 12px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span:first-child {
+    right: 43px;
+    top: 18px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span:nth-child(2) {
+    right: 20px;
+    top: 32px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span:nth-child(3) {
+    right: 0;
+    top: 7px;
+  }
+  body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy strong {
+    font-size: 27px;
+  }
+  body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy small {
+    font-size: 11px;
+    max-width: 230px;
+  }
+  body[data-page="jogos"] .games-section-label {
+    padding: 5px 2px 3px;
+  }
+  body[data-page="jogos"] .games-section-label span {
+    font-size: 10px;
+  }
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card {
+  background: var(--color-surface, #151e2c);
+  border-color: var(--color-border, #243347);
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card h2 {
+  color: var(--color-text-primary, #f4f8ff);
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card-tags span,
+:root[data-theme="dark"] body[data-page="jogos"] .game-card-status {
+  background: #13233a;
+  color: #b8c9d9;
+  border-color: #304358;
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card--rats {
+  --card-soft: #13243d;
+  --card-color: #79a6ea;
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card--flash {
+  --card-soft: #302213;
+  --card-color: #e5a458;
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card--sequence {
+  --card-soft: #122822;
+  --card-color: #5ec0ab;
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .game-card--escape {
+  --card-soft: #251c38;
+  --card-color: #aa95e8;
 }

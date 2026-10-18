@@ -1,4 +1,4 @@
-/* LURIA page spotlight — régua global baseada em Anotações */
+/* LURIA page spotlight — padrão único oficial do Dashboard */
 :root{
   --luria-page-card-height:138px;
   --luria-page-card-pad-y:24px;
@@ -9,51 +9,190 @@
 }
 
 body:not(.schedule-settings-embed) .luria-page-spotlight{
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  min-height:var(--luria-page-card-height);
-  height:var(--luria-page-card-height);
-  box-sizing:border-box;
-  margin:0 0 var(--luria-page-card-gap);
-  padding:var(--luria-page-card-pad-y) var(--luria-page-card-pad-x);
-  overflow:hidden;
-  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
-  border-radius:var(--luria-page-card-radius);
-  background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#071c3c),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#091f49));
-  color:#fff;
-  box-shadow:0 10px 30px rgba(17,65,130,.12);
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:20px!important;
+  width:100%!important;
+  min-height:110px!important;
+  height:auto!important;
+  box-sizing:border-box!important;
+  margin:0 0 14px 0!important;
+  padding:20px 24px!important;
+  overflow:hidden!important;
+  border:1px solid rgba(255,255,255,0.14)!important;
+  border-radius:15px!important;
+  background:var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%))!important;
+  color:#fff!important;
+  box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight:after{
-  content:"";position:absolute;width:310px;height:310px;right:-90px;bottom:-220px;border-radius:50%;
-  background:rgba(255,255,255,.07);box-shadow:-80px -18px 0 rgba(255,255,255,.035);pointer-events:none;
+body:not(.schedule-settings-embed) .luria-page-spotlight::after,
+body:not(.schedule-settings-embed) .luria-page-spotlight::before{
+  display:none!important;
+  content:none!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy{position:relative;z-index:2;min-width:0}
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-  display:block;margin:0;font-size:var(--luria-page-card-title);line-height:1.08;font-weight:900;letter-spacing:-.8px;color:inherit;
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
+  position:relative!important;
+  z-index:2!important;
+  min-width:0!important;
+  width:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+  display:block!important;
+  margin:0!important;
+  color:#fff!important;
+  font-size:26px!important;
+  font-weight:900!important;
+  line-height:1.15!important;
+  letter-spacing:-.6px!important;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy :is(small,.luria-page-spotlight-helper,p){
+  display:block!important;
+  margin:6px 0 0 0!important;
+  font-size:12.5px!important;
+  font-weight:600!important;
+  line-height:1.45!important;
+  color:rgba(255,255,255,.9)!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:break-word!important;
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
-body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
-  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight{
+  background:var(--ui-frame-bg, linear-gradient(135deg, #091A33 0%, #102C57 50%, #184888 100%))!important;
   color:#fff!important;
-  border-color:#20344F!important;
+  border-color:rgba(255,255,255,0.14)!important;
   box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
-:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight:after,
-body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight:after{
-  background:rgba(255,255,255,.07)!important;
-  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::after,
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::after,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::after,
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight::before,
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight::before,
+body[data-ui-appearance="dark"]:not(.schedule-settings-embed) .luria-page-spotlight::before{
+  display:none!important;
+  content:none!important;
 }
-:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight{
-  background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#321328),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#35152d))!important;
+:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight,
+body[data-ui-identity="pink"]:not(.schedule-settings-embed) .luria-page-spotlight{
+  background:var(--ui-frame-bg, linear-gradient(135deg, #4A153B 0%, #882E56 50%, #B2577D 100%))!important;
+  border-color:rgba(255,255,255,0.18)!important;
 }
 body[data-page="desafio"] .daily-topbar .page-heading,
 body[data-page="questoes"] .topbar .page-heading,
+body[data-page="questoes-simulados"] .topbar .page-heading,
 body[data-page="flashcards"] .topbar .page-heading,
 body[data-page="estatisticas"] .topbar .page-heading,
-body[data-page="plantao"] .sim-hub-topbar .page-heading{display:none!important}
+body[data-page="plantao"] .sim-hub-topbar .page-heading,
+body[data-page="aprender"] .topbar .page-heading,
+body[data-page="erros"] .topbar .page-heading,
+body[data-page="caderno-erros"] .topbar .page-heading,
+body[data-page="amigos"] .topbar .page-heading,
+body[data-page="jogos"] .topbar .page-heading,
+body[data-page="aplicar"] .topbar .page-heading,
+body[data-page="editais"] .topbar .page-heading,
+body[data-page="cronograma"] .topbar .page-heading,
+body[data-page="professor_alex"] .topbar .page-heading,
+body:has(.luria-page-spotlight) .topbar .page-heading,
+body:has(.luria-page-spotlight) .page-heading,
+body .topbar .page-heading:empty,
+body .topbar .page-heading:has(h1:empty):not(:has(h1:not(:empty))) {display:none!important}
+
+/* Supressão global estrita de callouts, badges e segundas linhas no topo de títulos */
+.luria-page-spotlight-label,
+.schedule-top-spotlight-label,
+.qs-spotlight-eyebrow,
+.qs-page-spotlight-eyebrow,
+.luria-page-spotlight-copy [class*="label"],
+.luria-page-spotlight-copy [class*="eyebrow"],
+.luria-page-spotlight-copy .badge,
+.schedule-top-spotlight-copy [class*="label"],
+.schedule-top-spotlight-copy [class*="eyebrow"] {
+  display:none!important;
+  visibility:hidden!important;
+  width:0!important;
+  height:0!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+/* Títulos com rigorosa formatação de 1 linha em cima e 1 embaixo */
+.luria-page-spotlight-copy strong {
+  display: block !important;
+  margin: 0 !important;
+  font-size: var(--luria-page-card-title, 26px) !important;
+  line-height: 1.15 !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.025em !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.luria-page-spotlight-copy small,
+.luria-page-spotlight-copy .luria-page-spotlight-helper {
+  display: block !important;
+  margin-top: 4px !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Ocultar qualquer 2ª descrição ou texto extra dentro do spotlight */
+.luria-page-spotlight-copy > :is(p, small, span):not(:first-of-type):not(strong) {
+  display: none !important;
+}
+
+/* Botão padrão elegante de voltar para subpáginas e telas aninhadas */
+.luria-back-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  padding: 0 16px !important;
+  margin: 0 0 14px 0 !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--color-border-interactive, var(--border, #cbd5e1)) !important;
+  background: var(--color-surface, var(--surface, #ffffff)) !important;
+  color: var(--color-text-primary, var(--text, #1e293b)) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+  width: fit-content !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+.luria-back-button:hover {
+  background: var(--color-surface-elevated, var(--surface-2, #f8fafc)) !important;
+  border-color: var(--color-primary, var(--accent, #0284c7)) !important;
+  color: var(--color-primary, var(--accent, #0284c7)) !important;
+  transform: translateX(-2px) !important;
+}
+.luria-back-button svg {
+  flex-shrink: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
+  transition: transform 0.15s ease !important;
+}
+.luria-back-button:hover svg {
+  transform: translateX(-2px) !important;
+}
+
 body[data-page="flashcards"] .flash-top-spotlight{display:none!important}
 body[data-page="caderno"] #notebook-view-library>.notebook-view-head{display:none!important}
 @media(max-width:700px){
@@ -82,12 +221,12 @@ body:not(.schedule-settings-embed) .page > .luria-page-spotlight{
   max-width:100%;
 }
 
-/* Topbar global: mantém a mesma altura de referência entre páginas. */
-body:not(.schedule-settings-embed) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
-  min-height:52px!important;
-  height:52px;
+/* Topbar global: mantém altura limpa e compacta */
+body:not(.schedule-settings-embed) .topbar{
+  min-height:46px!important;
+  height:46px;
   box-sizing:border-box;
-  margin-bottom:14px!important;
+  margin-bottom:8px!important;
 }
 
 @media(max-width:700px){
@@ -95,43 +234,45 @@ body:not(.schedule-settings-embed) .topbar:where(:not(body[data-ui-nav="v2"], bo
     --luria-page-card-height:118px;
     --luria-page-card-pad-y:20px;
     --luria-page-card-pad-x:20px;
-    --luria-page-card-title:25px;
+    --luria-page-card-title:27px;
   }
   body:not(.schedule-settings-embed) .luria-page-spotlight{
-    min-height:var(--luria-page-card-height);
-    height:var(--luria-page-card-height);
-    padding:var(--luria-page-card-pad-y) var(--luria-page-card-pad-x);
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-    font-size:var(--luria-page-card-title);
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+    font-size:27px!important;
   }
 }
 
-
-/* v3 — régua absoluta dos cards de título. Nenhum CSS local pode alterar a geometria. */
+/* Padrão soberano do Dashboard em todas as páginas */
 body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
 body:not(.schedule-settings-embed) .page .luria-page-spotlight{
   width:100%!important;
   max-width:none!important;
   min-width:0!important;
-  height:138px!important;
-  min-height:138px!important;
-  max-height:138px!important;
+  height:auto!important;
+  min-height:110px!important;
+  max-height:none!important;
   margin:0 0 14px 0!important;
-  padding:24px 28px!important;
+  padding:20px 24px!important;
   box-sizing:border-box!important;
   border-radius:15px!important;
-  flex:0 0 138px!important;
+  flex:0 0 auto!important;
   align-self:stretch!important;
 }
 body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
   margin:0!important;
   padding:0!important;
 }
-body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
   margin:0!important;
   font-size:32px!important;
   line-height:1.08!important;
+  font-weight:900!important;
+  letter-spacing:-.8px!important;
 }
 @media(max-width:700px){
   body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
@@ -140,10 +281,10 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
     min-height:118px!important;
     max-height:118px!important;
     padding:20px!important;
-    flex-basis:118px!important;
+    flex-basis:auto!important;
   }
-  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-    font-size:25px!important;
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy > strong{
+    font-size:27px!important;
   }
 }
 
@@ -266,222 +407,282 @@ body.pink[data-page="questoes"] img.qs-home-art-next{
 }
 
 
-/* QS cards v6 — texto + arte alinhados dentro do card */
-body[data-page="questoes"] .qs-home-action{
-  position:relative!important;
-  min-height:150px!important;
-  padding:18px!important;
-  overflow:hidden!important;
-  display:block!important;
-}
-body[data-page="questoes"] .qs-home-action .qs-home-action-icon{
-  position:absolute!important;
-  left:18px!important;
-  top:18px!important;
-  z-index:4!important;
-}
-body[data-page="questoes"] .qs-home-action .qs-home-action-arrow{
-  position:absolute!important;
-  left:calc(54% - 22px)!important;
-  right:auto!important;
-  top:20px!important;
-  z-index:4!important;
-}
-body[data-page="questoes"] .qs-home-action .qs-home-action-copy{
-  position:absolute!important;
-  left:18px!important;
-  bottom:18px!important;
-  width:50%!important;
-  max-width:50%!important;
-  z-index:4!important;
-  align-self:auto!important;
-}
-body[data-page="questoes"] .qs-home-action .qs-home-action-copy small{
-  max-width:100%!important;
-}
-body[data-page="questoes"] .qs-home-action img.qs-home-card-art{
-  position:absolute!important;
-  right:8px!important;
-  top:50%!important;
-  bottom:auto!important;
-  width:43%!important;
-  height:86%!important;
-  max-width:43%!important;
-  object-fit:contain!important;
-  object-position:center!important;
-  transform:translateY(-50%)!important;
-  opacity:.86!important;
-  z-index:2!important;
-}
-body[data-page="questoes"] .qs-home-action-create img.qs-home-card-art,
-body[data-page="questoes"] .qs-home-action-upload img.qs-home-card-art,
-body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
-  right:8px!important;
-  top:50%!important;
-  bottom:auto!important;
-  transform:translateY(-50%)!important;
+/* Obsolete QS card illustration overrides removed to preserve Lumina UI action buttons */
+
+/* ==========================================================================
+   LURIA UNIVERSAL PRIMARY BUTTON GRADIENT UNIFICATION (THEME LUMINA)
+   Guarantees that all primary buttons, CTAs, and key actions use the
+   authentic Lumina blue gradient (linear-gradient(135deg, #184888, #2563EB))
+   with white text, 12px rounded corners, and elevation.
+   Eliminates all flat solid blue buttons across the platform.
+   ========================================================================== */
+:is(
+  .button.primary,
+  button.primary,
+  .btn.primary,
+  .btn-primary,
+  [data-action="primary"],
+  .primary-action,
+  .primary-nav,
+  .qr-btn.primary,
+  #qr-confirm.primary,
+  .alex-action.primary,
+  .qs-v17-start-button,
+  .game-action-btn.primary,
+  .luria-daily-review-primary,
+  .exam-link-button:first-of-type,
+  .ed-primary-action,
+  .ed-new-exam,
+  .dl-primary,
+  .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
+  #start-review-session,
+  .qs-library-btn-solve,
+  .external-enter,
+  .external-savebar button,
+  .temp-note-savebar .primary,
+  .quick-chart-pin-setup button,
+  .luria-intel-button.primary,
+  .plantao-featured-start.button.primary,
+  .plantao-phone-compose-form button,
+  .plantao-phone-resume-button,
+  .pcr-drug-card button,
+  .dialog-actions button:last-child,
+  #quick-activity-save,
+  #confirm-import,
+  #manual-add-topic,
+  #apply-base-schedule,
+  #confirm-reorganize-overdue,
+  #theme-filter-apply,
+  #social-rooms .sl-room-card > .button,
+  #community-friends .friends-actions > .button,
+  #social-suggestions .button,
+  .community-shortcut-card .button
+) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #184888, #2563EB)) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-color: transparent !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(24, 72, 136, 0.22) !important;
+  text-decoration: none !important;
+  font-weight: 750 !important;
+  transition: transform 0.16s ease, filter 0.16s ease, box-shadow 0.16s ease !important;
 }
 
-@media(max-width:1050px){
-  body[data-page="questoes"] .qs-home-action{
-    min-height:132px!important;
-  }
-  body[data-page="questoes"] .qs-home-action .qs-home-action-copy{
-    width:56%!important;
-    max-width:56%!important;
-  }
-  body[data-page="questoes"] .qs-home-action .qs-home-action-arrow{
-    left:calc(60% - 22px)!important;
-  }
-  body[data-page="questoes"] .qs-home-action img.qs-home-card-art{
-    width:37%!important;
-    max-width:37%!important;
-    height:84%!important;
-  }
+:is(
+  .button.primary,
+  button.primary,
+  .btn.primary,
+  .btn-primary,
+  [data-action="primary"],
+  .primary-action,
+  .primary-nav,
+  .qr-btn.primary,
+  #qr-confirm.primary,
+  .alex-action.primary,
+  .qs-v17-start-button,
+  .game-action-btn.primary,
+  .luria-daily-review-primary,
+  .exam-link-button:first-of-type,
+  .ed-primary-action,
+  .ed-new-exam,
+  .dl-primary,
+  .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
+  #start-review-session,
+  .qs-library-btn-solve,
+  .external-enter,
+  .external-savebar button,
+  .temp-note-savebar .primary,
+  .quick-chart-pin-setup button,
+  .luria-intel-button.primary,
+  .plantao-featured-start.button.primary,
+  .plantao-phone-compose-form button,
+  .plantao-phone-resume-button,
+  .pcr-drug-card button,
+  .dialog-actions button:last-child,
+  #quick-activity-save,
+  #confirm-import,
+  #manual-add-topic,
+  #apply-base-schedule,
+  #confirm-reorganize-overdue,
+  #theme-filter-apply,
+  #social-rooms .sl-room-card > .button,
+  #community-friends .friends-actions > .button,
+  #social-suggestions .button,
+  .community-shortcut-card .button
+):hover {
+  background: var(--ui-hero-gradient, linear-gradient(135deg, #1e58a6, #3b82f6)) !important;
+  color: #ffffff !important;
+  filter: brightness(1.08) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 18px rgba(24, 72, 136, 0.28) !important;
 }
-@media(max-width:760px){
-  body[data-page="questoes"] .qs-home-action{
-    min-height:126px!important;
-    padding:16px!important;
-  }
-  body[data-page="questoes"] .qs-home-action .qs-home-action-icon{
-    left:16px!important;
-    top:16px!important;
-  }
-  body[data-page="questoes"] .qs-home-action .qs-home-action-copy{
-    left:16px!important;
-    bottom:16px!important;
-    width:57%!important;
-    max-width:57%!important;
-  }
-  body[data-page="questoes"] .qs-home-action .qs-home-action-arrow{
-    left:calc(61% - 18px)!important;
-    top:18px!important;
-  }
-  body[data-page="questoes"] .qs-home-action img.qs-home-card-art{
-    right:4px!important;
-    top:50%!important;
-    bottom:auto!important;
-    width:38%!important;
-    max-width:38%!important;
-    height:82%!important;
-    transform:translateY(-50%)!important;
-    opacity:.78!important;
-  }
+
+/* Also ensure dark mode theme stays elegant */
+:root[data-theme="dark"] :is(
+  .button.primary,
+  button.primary,
+  .btn.primary,
+  .btn-primary,
+  [data-action="primary"],
+  .primary-action,
+  .primary-nav,
+  .qr-btn.primary,
+  #qr-confirm.primary,
+  .alex-action.primary,
+  .qs-v17-start-button,
+  .game-action-btn.primary,
+  .luria-daily-review-primary,
+  .exam-link-button:first-of-type,
+  .ed-primary-action,
+  .ed-new-exam,
+  .dl-primary,
+  .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
+  #start-review-session,
+  .qs-library-btn-solve,
+  .external-enter,
+  .external-savebar button,
+  .temp-note-savebar .primary,
+  .quick-chart-pin-setup button,
+  .luria-intel-button.primary,
+  .plantao-featured-start.button.primary,
+  .plantao-phone-compose-form button,
+  .plantao-phone-resume-button,
+  .pcr-drug-card button,
+  .dialog-actions button:last-child,
+  #quick-activity-save,
+  #confirm-import,
+  #manual-add-topic,
+  #apply-base-schedule,
+  #confirm-reorganize-overdue,
+  #theme-filter-apply,
+  #social-rooms .sl-room-card > .button,
+  #community-friends .friends-actions > .button,
+  #social-suggestions .button,
+  .community-shortcut-card .button
+) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d4ed8, #3b82f6)) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.32) !important;
+}
+
+:root[data-theme="dark"] :is(
+  .button.primary,
+  button.primary,
+  .btn.primary,
+  .btn-primary,
+  [data-action="primary"],
+  .primary-action,
+  .primary-nav,
+  .qr-btn.primary,
+  #qr-confirm.primary,
+  .alex-action.primary,
+  .qs-v17-start-button,
+  .game-action-btn.primary,
+  .luria-daily-review-primary,
+  .exam-link-button:first-of-type,
+  .ed-primary-action,
+  .ed-new-exam,
+  .dl-primary,
+  .dl5-start,
+  .dl-study-now-start,
+  .games-link,
+  .cv-hub-btn,
+  .reference-new-activity,
+  .qs-builder-cta,
+  #start-review-session,
+  .qs-library-btn-solve,
+  .external-enter,
+  .external-savebar button,
+  .temp-note-savebar .primary,
+  .quick-chart-pin-setup button,
+  .luria-intel-button.primary,
+  .plantao-featured-start.button.primary,
+  .plantao-phone-compose-form button,
+  .plantao-phone-resume-button,
+  .pcr-drug-card button,
+  .dialog-actions button:last-child,
+  #quick-activity-save,
+  #confirm-import,
+  #manual-add-topic,
+  #apply-base-schedule,
+  #confirm-reorganize-overdue,
+  #theme-filter-apply,
+  #social-rooms .sl-room-card > .button,
+  #community-friends .friends-actions > .button,
+  #social-suggestions .button,
+  .community-shortcut-card .button
+):hover {
+  background: var(--ui-hero-gradient, linear-gradient(135deg, #2563eb, #60a5fa)) !important;
+  filter: brightness(1.08) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.4) !important;
+}
+
+/* Supressão global do botão do Alex na topbar (o Professor Alex agora reside exclusivamente como companheiro lateral) */
+#luria-alex-topbar,
+.luria-alex-topbar,
+.topbar [href*="professor-alex"],
+.topbar [data-alex-topbar],
+.topbar .alex-topbar-button {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* O mascote lateral sai da lateral em Aprender e Professor Alex (reside no card dedicado) */
+body[data-page="aprender"] luria-alex-companion,
+body[data-page="professor_alex"] luria-alex-companion {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* ==========================================================================
+   UNIFICAÇÃO DO TOPO E MOLDURA EXTERNA (FUNDO E TOPO SÃO UMA COISA SÓ)
+   Elimina qualquer separação ou distinção de cor entre a barra superior e as bordas laterais.
+   ========================================================================== */
+html:has(body[data-ui-nav="v2"]),
+body[data-ui-nav="v2"] {
+  background: var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%)) !important;
+  background-attachment: fixed !important;
+}
+
+body[data-ui-nav="v2"] .topbar,
+body[data-ui-nav="v2"] header.topbar,
+body[data-ui-nav="v2"] #topbar {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
 }
 
 
-/* QS cards v7 — corrige Iniciar + Biblioteca sem alterar Criar/Enviar */
-body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
-  position:absolute!important;
-  right:10px!important;
-  top:50%!important;
-  bottom:auto!important;
-  width:46%!important;
-  height:88%!important;
-  max-width:46%!important;
-  object-fit:cover!important;
-  object-position:right center!important;
-  transform:translateY(-50%)!important;
-  opacity:.9!important;
-  z-index:2!important;
-}
-body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
-  right:6px!important;
-  top:50%!important;
-  bottom:auto!important;
-  width:44%!important;
-  height:86%!important;
-  max-width:44%!important;
-  object-fit:cover!important;
-  object-position:right center!important;
-  transform:translateY(-50%)!important;
-  opacity:.86!important;
-  z-index:2!important;
-}
-@media(max-width:1050px){
-  body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
-    right:8px!important;
-    width:43%!important;
-    max-width:43%!important;
-    height:86%!important;
-  }
-  body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
-    right:4px!important;
-    width:40%!important;
-    max-width:40%!important;
-    height:82%!important;
-  }
-}
-@media(max-width:760px){
-  body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
-    right:4px!important;
-    top:50%!important;
-    bottom:auto!important;
-    width:45%!important;
-    max-width:45%!important;
-    height:80%!important;
-    object-fit:cover!important;
-    object-position:right center!important;
-    transform:translateY(-50%)!important;
-    opacity:.76!important;
-  }
-  body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
-    right:2px!important;
-    top:50%!important;
-    bottom:auto!important;
-    width:40%!important;
-    max-width:40%!important;
-    height:80%!important;
-    object-fit:cover!important;
-    object-position:right center!important;
-    transform:translateY(-50%)!important;
-    opacity:.76!important;
-  }
-}
-
-
-/* QS v7 — garante artes de Iniciar e Biblioteca visíveis */
-body[data-page="questoes"] .qs-home-next{
-  position:relative!important;
-  overflow:hidden!important;
-}
-body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
-  right:18px!important;
-  top:50%!important;
-  bottom:auto!important;
-  width:42%!important;
-  height:82%!important;
-  max-width:42%!important;
-  object-fit:contain!important;
-  object-position:center!important;
-  transform:translateY(-50%)!important;
-  opacity:.90!important;
-  z-index:2!important;
-}
-body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
-  opacity:.90!important;
-}
-@media(max-width:760px){
-  body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
-    right:6px!important;
-    top:50%!important;
-    bottom:auto!important;
-    width:39%!important;
-    max-width:39%!important;
-    height:76%!important;
-    transform:translateY(-50%)!important;
-    opacity:.78!important;
-  }
-  body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
-    opacity:.82!important;
-  }
-}
-
-
-/* QS cards v8 — arquivos fisicamente recortados, sem crop visual */
-body[data-page="questoes"] .qs-home-next img.qs-home-art-next,
-body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
-  object-fit:contain!important;
-  object-position:center!important;
-}

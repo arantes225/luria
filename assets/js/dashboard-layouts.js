@@ -4,8 +4,10 @@
   const root = document.createElement("div");
   root.id = "dashboard-alternative";
   root.setAttribute("aria-live", "off");
+  const spotlight = page.querySelector(".luria-page-spotlight");
   const topbar = page.querySelector(".topbar");
-  if (topbar) topbar.after(root);
+  if (spotlight) spotlight.after(root);
+  else if (topbar) topbar.after(root);
   else page.prepend(root);
   const current = "1";
   let selectedDate = new Date();
@@ -87,7 +89,6 @@
   function greeting() {
     return `<section class="luria-page-spotlight luria-dashboard-spotlight dl-dashboard-title-card" aria-label="Dashboard">
       <div class="luria-page-spotlight-copy">
-        <span class="luria-page-spotlight-label">VISÃO GERAL</span>
         <strong>Dashboard</strong>
         <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
       </div>
@@ -271,11 +272,8 @@
     try {
       const data = snap();
       const bodyHtml = layout1(data);
-      const html = greeting() + bodyHtml;
+      const html = bodyHtml;
       if (html && root.innerHTML !== html) root.innerHTML = html;
-      document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
-        if (!root.contains(el)) el.remove();
-      });
       syncDashboardHeading();
       root.hidden = false;
       root.dataset.rendered = "true";

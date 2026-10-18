@@ -68,6 +68,6 @@ window.LuriaMedicalIcons=(()=>{
       el.innerHTML=svg(name);
     });
   };
-  return{resolve,svg,apply,paths:p,rules};
+  return{resolve,svg,icon:svg,apply,paths:p,rules};
 })();
 document.addEventListener('DOMContentLoaded',()=>window.LuriaMedicalIcons?.apply?.());

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-TdKx8v+mqotIBN0ovGkuRlzrtRF9faV+q3l64KezxaI='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resolver questões · LURIA</title>
+  <link rel="manifest" href="manifest.webmanifest?v=3">
+  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria2">
+<script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260929-qs-cards-v8">
+  <style>
+    body[data-page="questoes"]{background:var(--bg)}
+    .qr-topbar{display:none}
+    .qr-navrow{display:flex;align-items:center;gap:18px;margin:2px 0 10px}
+    .qr-back{min-height:34px;padding:0 12px;text-decoration:none;white-space:nowrap;font-size:10px;font-weight:400!important}
+    .qr-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,290px);gap:12px;align-items:start;width:100%;margin-right:0}
+    .qr-question-column{min-width:0;display:flex;flex-direction:column}
+    .qr-card,.qr-side-card{border:1px solid var(--border);background:var(--surface);box-shadow:none}
+    .qr-card{border-radius:12px;padding:17px 18px 12px;min-width:0}
+    .qr-question-meta{display:flex;align-items:center;gap:6px;margin-bottom:11px;flex-wrap:wrap}.qr-pill{padding:4px 8px;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-size:8px;font-weight:850}.qr-pill.neutral{background:var(--surface-2);color:var(--muted)}.qr-difficulty{display:inline-flex;align-items:center;gap:4px}
+    .qr-stem{font-size:11px;line-height:1.58;color:var(--text);white-space:pre-wrap}.qr-image{display:block;max-width:min(100%,620px);max-height:300px;object-fit:contain;margin:12px auto;border-radius:9px;border:1px solid var(--border)}.qr-image[hidden]{display:none!important}
+    .qr-options{display:grid;gap:6px;margin-top:14px}.qr-option{width:100%;display:grid;grid-template-columns:28px 1fr;gap:9px;align-items:center;text-align:left;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer;min-height:40px}.qr-option:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));background:var(--surface-2)}.qr-option.selected{border-color:var(--accent);background:var(--accent-soft)}.qr-option.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 8%,var(--surface))}.qr-option.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
+    .qr-letter{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--surface-2);font-size:9px;font-weight:900}.qr-option.selected .qr-letter{background:var(--accent);color:#fff}
+    .qr-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}.qr-action-group{display:flex;gap:6px}.qr-comment-btn{margin-right:auto}.qr-reference-list{display:grid;gap:6px;margin-top:8px}.qr-reference-item{padding:8px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface-2);font-size:12px;line-height:1.5;color:var(--text)}.qr-btn{min-height:34px;padding:0 12px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;font-size:11px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px}.qr-btn.primary{border-color:var(--accent);background:var(--accent);color:#fff;padding-inline:16px}.qr-btn:disabled{opacity:.45;cursor:not-allowed}
+    .qr-answer-result{margin-top:10px;padding:12px 14px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);font-size:13px;font-weight:700}.qr-answer-result.correct{color:var(--success);background:color-mix(in srgb,var(--success) 9%,var(--surface))}.qr-answer-result.wrong{color:var(--danger);background:color-mix(in srgb,var(--danger) 8%,var(--surface))}.qr-talk-alex{display:flex!important;justify-content:center;text-decoration:none;margin-top:4px;min-height:38px}.qr-feedback[hidden],.qr-answer-result[hidden]{display:none!important}
+    .qr-feedback{display:grid;gap:12px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}.qr-result{font-size:13px;font-weight:900}.qr-result.correct{color:var(--success)}.qr-result.wrong{color:var(--danger)}.qr-justification{padding:14px;border:1px solid var(--border);border-radius:9px;background:var(--surface)}.qr-justification>strong,.qr-pulo strong{font-size:13.5px;font-weight:800;color:var(--text)}.qr-justification>p,.qr-pulo p{margin:8px 0 0;color:var(--text);font-size:13px;line-height:1.6}.qr-alt-explanations{display:grid;gap:8px;margin-top:10px}.qr-alt-explanation{padding:10px 12px;border-radius:8px;background:var(--surface-2);border:1px solid var(--border);font-size:12.5px;line-height:1.55;color:var(--text)}.qr-alt-explanation b{color:var(--text);margin-right:4px;font-size:13px}.qr-alt-explanation.correct{border-color:color-mix(in srgb,var(--success) 45%,var(--border));background:color-mix(in srgb,var(--success) 7%,var(--surface))}.qr-pulo{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));border-radius:9px;background:var(--accent-soft)}
+    .qr-side{display:grid;gap:8px;align-self:start;min-width:0}.qr-side-card{width:100%;box-sizing:border-box}.qr-side-card{border-radius:10px;padding:11px}.qr-side-title{display:flex;align-items:center;gap:6px;font-size:9px;font-weight:900;color:var(--text);margin-bottom:8px}.qr-side-title svg{width:13px;height:13px;color:var(--accent)}
+    .qr-performance{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:8px}.qr-ring{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--success) 0 78%,var(--surface-2) 78% 100%);position:relative}.qr-ring:after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surface)}.qr-ring-label{position:relative;z-index:1;text-align:center}.qr-ring-label strong{display:block;font-size:13px}.qr-ring-label small{display:block;font-size:7px;color:var(--muted)}
+    .qr-perf-list{display:grid;gap:5px}.qr-perf-row{display:flex;justify-content:space-between;gap:6px;font-size:8px}.qr-perf-row span{color:var(--muted)}.qr-perf-row b{font-size:8px;font-weight:400}
+    .qr-answer-grid{display:grid;grid-template-columns:repeat(5,24px);justify-content:start;column-gap:8px;row-gap:6px;margin-top:10px;width:100%}
+    .qr-answer-cell{width:24px;height:24px;min-width:24px;border:1px solid var(--border);border-radius:5px;background:var(--surface-2);display:grid;place-items:center;font-size:7px;font-weight:400;color:var(--muted);cursor:pointer}
+    .qr-answer-cell.current{outline:2px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:1px}
+    .qr-answer-cell.correct{background:color-mix(in srgb,var(--success) 16%,var(--surface));border-color:color-mix(in srgb,var(--success) 55%,var(--border));color:var(--success)}
+    .qr-answer-cell.wrong{background:color-mix(in srgb,var(--danger) 14%,var(--surface));border-color:color-mix(in srgb,var(--danger) 55%,var(--border));color:var(--danger)}
+    .qr-time-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.qr-time-item small{display:block;font-size:7px;color:var(--muted)}.qr-time-item strong{display:block;margin-top:3px;font-size:10px}.qr-time-item.good strong{color:var(--success)}
+    .qr-tags{display:flex;flex-wrap:wrap;gap:5px}.qr-tag{padding:4px 6px;border-radius:6px;background:var(--surface-2);font-size:7px;font-weight:750;color:var(--muted)}
+    .qr-history{height:58px;display:flex;align-items:end;gap:5px;padding:5px 2px 0;border-bottom:1px solid var(--border)}.qr-bar{flex:1;min-width:5px;border-radius:4px 4px 0 0;background:color-mix(in srgb,var(--accent) 72%,var(--surface));opacity:.9}
+    .qr-recent{display:grid;gap:5px}.qr-recent-row{display:grid;grid-template-columns:8px 1fr auto;gap:6px;align-items:center;font-size:7px}.qr-dot{width:7px;height:7px;border-radius:50%;background:var(--success)}.qr-dot.bad{background:var(--danger)}.qr-recent-row span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}.qr-recent-row b{font-size:7px;color:var(--muted)}
+    .qr-status{min-height:14px;margin-top:5px;color:var(--muted);font-size:8px}.qr-empty{padding:40px;text-align:center;color:var(--muted)}
+    body[data-page="questoes"] button,
+    body[data-page="questoes"] .button{font-weight:400!important}
+    body[data-page="questoes"] .qr-side-card :is(.qr-side-title,strong,b),
+    body[data-page="questoes"] .qr-time-item strong,
+    body[data-page="questoes"] .qr-ring-label strong,
+    body[data-page="questoes"] .qr-perf-row b{font-weight:400!important}
+    mark[data-qr-highlight]{background:#fff1a8;border-radius:2px}
+    @media(max-width:1180px){.qr-layout{grid-template-columns:minmax(0,1fr) 280px}}
+    @media(max-width:1080px){.qr-layout{grid-template-columns:minmax(0,1fr) 270px}}
+    @media(max-width:980px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:0}.qr-answer-grid{grid-template-columns:repeat(5,24px);justify-content:start}}
+    @media(max-width:720px){.qr-layout{display:block}.qr-side{grid-template-columns:1fr}.qr-card{padding:13px}.qr-option{padding:8px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr}.qr-btn{justify-content:center}.qr-btn.primary{width:100%}}
+
+    /* Referência visual do card — 2026-10-04 */
+    .qr-card{border-radius:13px;padding:0;overflow:hidden;background:var(--surface)}
+    .qr-card-head{height:38px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+    .qr-card-question{font-size:11px;color:var(--accent);font-weight:600}
+    .qr-card-tools{display:flex;align-items:center;gap:2px}
+    .qr-tool{width:27px;height:27px;border:0;border-radius:7px;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer}
+    .qr-tool:hover{background:var(--surface-2);color:var(--text)}
+    .qr-tool.active,.qr-tool[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
+    .qr-tool svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+    .qr-tool-wrap{position:relative;display:flex;align-items:center}
+    .qr-popover{position:absolute;right:0;top:33px;z-index:40;padding:7px;border:1px solid var(--border);border-radius:9px;background:var(--surface);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+    .qr-popover[hidden]{display:none}
+    .qr-highlight-palette{display:flex;gap:6px}
+    .qr-color{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.12);cursor:pointer}
+    .qr-color[data-color="#fff1a8"]{background:#fff1a8}.qr-color[data-color="#ffd6df"]{background:#ffd6df}.qr-color[data-color="#cfe8ff"]{background:#cfe8ff}.qr-color[data-color="#d8f5d2"]{background:#d8f5d2}
+    .qr-font-menu{display:flex;align-items:center;gap:5px;white-space:nowrap}
+    .qr-font-control{height:28px;min-width:30px;padding:0 8px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;font-size:10px;font-weight:400;cursor:pointer}
+    .qr-font-control:hover{background:var(--surface-2)}
+    .qr-font-reset{font-size:8px;color:var(--muted)}
+    .qr-stem{font-size:var(--qr-text-size,12px);text-align:left}
+    .qr-option-text{font-size:var(--qr-text-size,12px);text-align:left;line-height:1.45;justify-self:start;align-self:start;width:100%;margin:0;padding:2px 0 0}
+    .qr-cut{width:28px;height:28px;display:grid;place-items:center;justify-self:end;align-self:center;border:0;border-radius:8px;background:transparent;color:var(--accent);cursor:pointer;flex:0 0 auto}
+    .qr-cut:hover{background:var(--accent-soft)}
+    .qr-cut svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .qr-option.eliminated .qr-option-text{text-decoration:line-through;opacity:.5}
+    .qr-option.eliminated .qr-letter{opacity:.45}
+    .qr-option.eliminated .qr-cut{opacity:.7}
+    mark[data-qr-highlight]{border-radius:2px;padding:0 .04em}
+    .qr-question-meta{margin:0;padding:8px 14px 0;gap:5px}
+    .qr-pill{font-size:8px;padding:2px 6px;border-radius:6px;font-weight:600}
+    .qr-stem{padding:8px 14px 2px;font-size:12px;line-height:1.5}
+    .qr-image{margin:8px auto 4px}
+    .qr-options{gap:0;margin-top:4px;padding:0 14px 4px}
+    .qr-option{width:100%;display:grid;grid-template-columns:28px minmax(0,1fr) 28px;gap:8px;align-items:flex-start;justify-items:start;text-align:left;min-height:38px;padding:6px 4px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 66%,transparent);border-radius:0;background:transparent;color:var(--text);font:inherit;cursor:pointer}
+    .qr-option:first-child{border-top:0}
+    .qr-option:hover{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:var(--surface-2)}
+    .qr-option.selected{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:var(--accent-soft)}
+    .qr-option.correct{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:color-mix(in srgb,var(--success) 8%,var(--surface))}
+    .qr-option.wrong{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
+    .qr-letter{width:22px;height:22px;min-width:22px;min-height:22px;aspect-ratio:1 / 1;box-sizing:border-box;display:grid;place-items:center;justify-self:start;align-self:flex-start;flex-shrink:0;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 72%,var(--border));background:transparent;color:var(--accent);font-size:9.5px;font-weight:700;line-height:1}
+    .qr-option-text{display:block;width:100%;margin:0;text-align:left;line-height:1.45;padding-top:1px}
+    .qr-option.selected .qr-letter{background:var(--accent);border-color:var(--accent);color:#fff}
+    .qr-actions{margin:0 14px;padding:8px 0 8px}
+    .qr-feedback{margin:0 14px;padding-top:8px}
+    .qr-status{margin:0 14px 4px}
+    .qr-bottom-nav{display:flex;justify-content:flex-end;margin-top:10px}
+    .qr-nav-switch{display:inline-flex;align-items:center;padding:3px;border:1px solid var(--border);border-radius:9px;background:var(--surface);gap:3px}
+    .qr-nav-switch button{height:30px;padding:0 14px;border:0;border-radius:7px;background:transparent;color:var(--muted);font:inherit;font-size:9px;font-weight:400;cursor:pointer}
+    .qr-nav-switch button:hover:not(:disabled){background:var(--surface-2);color:var(--text)}
+    .qr-nav-switch button.primary-nav{background:var(--accent);color:#fff}
+    .qr-nav-switch button:disabled{opacity:.4;cursor:not-allowed}
+    .qr-actions .qr-btn,
+    .qr-actions button,
+    #qr-confirm,
+    #qr-comment-toggle,
+    .qr-talk-alex,
+    .qr-nav-switch button {
+      border-radius: 12px !important;
+    }
+    .qr-btn.primary,
+    #qr-confirm.primary,
+    .qr-talk-alex,
+    .qr-nav-switch button.primary-nav {
+      background: linear-gradient(135deg, #184888, #2563EB) !important;
+      color: #ffffff !important;
+      border: none !important;
+      box-shadow: 0 4px 14px rgba(24, 72, 136, 0.22) !important;
+    }
+    .luria-back-button {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      height: 38px !important;
+      min-height: 38px !important;
+      padding: 0 16px !important;
+      border-radius: 12px !important;
+      border: 1px solid var(--border) !important;
+      background: var(--surface) !important;
+      color: var(--text) !important;
+      font-size: 11.5px !important;
+      font-weight: 750 !important;
+      text-decoration: none !important;
+      transition: transform 0.16s ease, border-color 0.16s ease, color 0.16s ease !important;
+    }
+    .luria-back-button:hover {
+      transform: translateX(-2px) !important;
+      border-color: var(--accent) !important;
+      color: var(--accent) !important;
+    }
+    @media(max-width:720px){
+      .qr-card-head{padding-inline:11px}
+      .qr-card-tools{gap:0}
+      .qr-tool{width:25px;height:25px}
+      .qr-question-meta,.qr-stem{padding-left:11px;padding-right:11px}
+      .qr-options{padding-left:11px;padding-right:11px}
+      .qr-option{grid-template-columns:30px minmax(0,1fr) 30px;gap:8px}
+      .qr-actions,.qr-feedback,.qr-status{margin-left:11px;margin-right:11px}
+    }
+  </style>
+
+  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/questoes-lumina-v2.css?v=20261016-v1">
+<link rel="stylesheet" href="/assets/css/room-native-embed.css?v=1"><script src="/assets/js/room-native-embed.js?v=1"></script></head>
+<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="questoes">
+<script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+<div class="app-shell">
+  <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+  <main class="main"><div class="page">
+
+    <a class="luria-back-button" href="/questoes-simulados/" aria-label="Voltar para Questões e Simulados">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span>Voltar para Questões e Simulados</span>
+    </a>
+
+    <section class="luria-page-spotlight qs-page-spotlight" aria-label="Simulador de Questões">
+      <div class="luria-page-spotlight-copy">
+        <strong>Resolução de Questões</strong>
+        <small class="luria-page-spotlight-helper">Treine seu raciocínio clínico com cronômetro, comentários detalhados e apoio do Professor Alex.</small>
+      </div>
+    </section>
+    <div id="qr-loading" class="qr-card qr-empty">Carregando questões...</div>
+    <section id="qr-layout" class="qr-layout" hidden>
+      <div class="qr-question-column">
+      <article class="qr-card">
+        <div class="qr-card-head">
+          <span id="qr-card-question" class="qr-card-question">Questão 1</span>
+          <div class="qr-card-tools" aria-label="Ferramentas da questão">
+            <div class="qr-tool-wrap">
+              <button id="qr-highlight-tool" class="qr-tool" type="button" aria-label="Grifar texto" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>
+              <div id="qr-highlight-popover" class="qr-popover" hidden>
+                <div class="qr-highlight-palette" aria-label="Cor do marca-texto">
+                  <button class="qr-color" type="button" data-color="#fff1a8" aria-label="Amarelo"></button>
+                  <button class="qr-color" type="button" data-color="#ffd6df" aria-label="Rosa"></button>
+                  <button class="qr-color" type="button" data-color="#cfe8ff" aria-label="Azul"></button>
+                  <button class="qr-color" type="button" data-color="#d8f5d2" aria-label="Verde"></button>
+                </div>
+              </div>
+            </div>
+            <button id="qr-favorite" class="qr-tool" type="button" aria-label="Favoritar questão" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4V4Z"/></svg></button>
+            <button id="qr-report-top" class="qr-tool" type="button" aria-label="Reportar problema"><svg viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 5h10l-2 4 2 4H6"/></svg></button>
+            <div class="qr-tool-wrap">
+              <button id="qr-font-tool" class="qr-tool" type="button" aria-label="Tamanho da fonte" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button>
+              <div id="qr-font-popover" class="qr-popover" hidden>
+                <div class="qr-font-menu">
+                  <button id="qr-font-down" class="qr-font-control" type="button" aria-label="Diminuir fonte">A−</button>
+                  <button id="qr-font-reset" class="qr-font-control qr-font-reset" type="button">Padrão</button>
+                  <button id="qr-font-up" class="qr-font-control" type="button" aria-label="Aumentar fonte">A+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="qr-question-meta">
+          <span class="qr-pill" id="qr-area">Área não classificada</span>
+          <span class="qr-pill neutral" id="qr-materia">Matéria não classificada</span>
+          <span class="qr-pill neutral qr-difficulty">▥ <span id="qr-difficulty">Média</span></span>
+          <span id="qr-source" style="margin-left:auto;color:var(--muted);font-size:8px"></span>
+        </div>
+        <div id="qr-text" class="qr-stem"></div><img id="qr-image" class="qr-image" alt="" hidden style="display:none">
+        <div id="qr-options" class="qr-options"></div>
+        <div id="qr-answer-result" class="qr-answer-result" hidden aria-live="polite"></div><div id="qr-feedback" class="qr-feedback" data-question-extras="off" hidden></div>
+        <div class="qr-actions">
+          <button id="qr-comment-toggle" class="qr-btn qr-comment-btn" type="button" hidden>Comentário LURIA</button>
+          <div class="qr-action-group"><button id="qr-confirm" class="qr-btn primary">Responder</button></div>
+        </div>
+        <div id="qr-status" class="qr-status"></div>
+      </article>
+      <div class="qr-bottom-nav">
+        <div class="qr-nav-switch" aria-label="Navegação entre questões">
+          <button id="qr-prev" type="button">Anterior</button>
+          <button id="qr-next" class="primary-nav" type="button">Próximo</button>
+        </div>
+      </div>
+      </div>
+      <aside class="qr-side">
+        <article class="qr-side-card">
+          <div class="qr-side-title">◷ Tempo estimado</div>
+          <div class="qr-time-grid">
+            <div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">0 min 00 s</strong></div>
+            <div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div>
+          </div>
+        </article>
+
+        <article class="qr-side-card">
+          <div class="qr-side-title">◉ Meu desempenho neste simulado</div>
+          <div class="qr-performance">
+            <div class="qr-ring" id="qr-ring">
+              <div class="qr-ring-label"><strong id="qr-accuracy">0%</strong><small>de acerto</small></div>
+            </div>
+            <div class="qr-perf-list">
+              <div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">0</b></div>
+              <div class="qr-perf-row"><span>Erros</span><b id="qr-errors">0</b></div>
+              <div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div>
+              <div class="qr-perf-row"><span>Total</span><b id="qr-total">0</b></div>
+            </div>
+          </div>
+          <div id="qr-answer-grid" class="qr-answer-grid" aria-label="Gabarito do simulado"></div>
+        </article>
+
+        <article class="qr-side-card">
+          <div class="qr-side-title">◇ Tags da questão</div>
+          <div class="qr-tags" id="qr-tags"><span class="qr-tag">Aguardando questão...</span></div>
+        </article>
+
+        <article class="qr-side-card">
+          <div class="qr-side-title">▤ Últimas questões respondidas</div>
+          <div class="qr-recent">
+            <div class="qr-recent-row"><span class="qr-dot"></span><span>Treino contínuo LURIA</span><b>Hoje</b></div>
+          </div>
+        </article>
+      </aside>
+    </section>
+  </div></main>
+</div>
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js"></script>
+<script src="/assets/js/app.js?v=20261013-frame1"></script>
+<script>
+(()=>{
+ const sb=window.supabaseClient, p=new URLSearchParams(location.search), requested=p.get("set_id"), isDaily=p.get("daily")==="1";
+ const DAILY_LIMIT=50, DAILY_PER_LOT=25;
+ const DAILY_LOT_TITLES=["Lote 1 — questões aprovadas","Lote 2 — questões aprovadas"];
+ const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),eliminated:new Map(),started:Date.now(),highlight:false,highlightColor:"#fff1a8",fontSize:11};
+ let pendingAnswer=null,completed=false,ownerEpoch=null;
+ function readerIsCurrent(){const owner=window.LuriaLocalOwnerStore;return !!state.user&&(!owner||(owner.ownerId===state.user.id&&owner.epoch===ownerEpoch))}
+ const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+ function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
+ function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
+ function navigateTo(index){
+   const max=Math.max(0,state.items.length-1);
+   state.index=Math.max(0,Math.min(max,Number(index)||0));
+   $("qr-card-question").textContent="Questão "+(state.index+1);
+   render();
+ }
+ function status(t,type=""){$("qr-status").textContent=t;$("qr-status").style.color=type==="error"?"var(--danger)":type==="success"?"var(--success)":""}
+ function referenceEntries(item){
+   const raw=item.references??item.referencias??item.reference_list??item.refs??item.source_refs??item.fontes??item.sources??[];
+   if(Array.isArray(raw)) return raw.map(x=>typeof x==="string"?x:(x?.text||x?.title||x?.label||x?.reference||JSON.stringify(x))).filter(Boolean);
+   if(typeof raw==="string") return raw.split(/\n+/).map(x=>x.trim()).filter(Boolean);
+   if(raw&&typeof raw==="object") return Object.values(raw).map(x=>typeof x==="string"?x:(x?.text||x?.title||x?.label||x?.reference||JSON.stringify(x))).filter(Boolean);
+   return [];
+ }
+ function explanationEntries(item){
+   const raw=item.answer_explanations??item.alternative_explanations??item.explanations??item.explicacoes??item.explicacoes_alternativas??item.justificativas??{};
+   if(Array.isArray(raw)) return raw.map((x,i)=>({k:String(x?.k||x?.key||x?.letter||String.fromCharCode(65+i)).toUpperCase(),t:String(x?.t||x?.text||x?.explanation||x?.justification||"")})).filter(x=>x.t);
+   const out=[];
+   ["A","B","C","D","E"].forEach(k=>{
+     const v=(raw&&typeof raw==="object")?(raw[k]??raw[k.toLowerCase()]):null;
+     const direct=item["explanation_"+k.toLowerCase()]??item["explicacao_"+k.toLowerCase()]??item["justificativa_"+k.toLowerCase()];
+     const val=v??direct;
+     if(val) out.push({k,t:String(typeof val==="string"?val:(val.text||val.explanation||val.justification||""))});
+   });
+   return out.filter(x=>x.t);
+ }
+ async function hydrateLuriaQuestions(){
+   try{
+     const res=await fetch("/assets/data/luria-questions.json");
+     if(!res.ok)return;
+     const bank=await res.json();
+     const byStem=new Map(), byId=new Map();
+     bank.forEach(q=>{
+       if(q.enunciado) byStem.set(q.enunciado.trim(), q);
+       if(q.id) byId.set(String(q.id), q);
+     });
+     state.items=state.items.map(item=>{
+       const text=(item.stem||item.raw_text||"").trim();
+       const match=byStem.get(text)||byId.get(String(item.id))||byId.get(String(item.question_bank_id));
+       if(!match)return item;
+       const updated={...item};
+       if(!updated.answer_explanations&&!updated.explicacoes&&match.explicacoes){
+         updated.answer_explanations=match.explicacoes;
+       }
+       if(!updated.pulo_do_gato&&match.pulo_do_gato){
+         updated.pulo_do_gato=match.pulo_do_gato;
+       }
+       if(!updated.official_answer&&match.gabarito){
+         updated.official_answer=String(match.gabarito).toUpperCase();
+       }
+       return updated;
+     });
+     render();
+   }catch(e){console.warn("Fallback de banco local indisponível",e)}
+ }
+ async function hydrateReferences(){
+ const linked=state.items.filter(x=>x.question_bank_id),banks=new Map();
+ for(let i=0;i<linked.length;i+=150){
+  const {data,error}=await sb.from("question_bank").select("id,answer_source_id,source_id").in("id",linked.slice(i,i+150).map(x=>x.question_bank_id));
+  if(error){console.warn("Referências não acessíveis",error.message);return}
+  (data||[]).forEach(x=>banks.set(x.id,x));
+ }
+ const ids=[...new Set([...banks.values()].flatMap(x=>[x.answer_source_id,x.source_id]).filter(Boolean))],sources=new Map();
+ for(let i=0;i<ids.length;i+=150){
+  const {data,error}=await sb.from("question_sources").select("id,institution,document,source_year,url,section,note").in("id",ids.slice(i,i+150));
+  if(error){console.warn("Fontes não acessíveis",error.message);return}
+  (data||[]).forEach(x=>sources.set(x.id,x));
+ }
+ if(!readerIsCurrent())return;
+ state.items=state.items.map(item=>{
+  const bank=banks.get(item.question_bank_id);if(!bank)return item;
+  const refs=[bank.answer_source_id,bank.source_id].map(id=>sources.get(id)).filter(Boolean);
+  return {...item,references:[...new Set(refs.map(x=>[x.institution,x.document,x.source_year,x.section,x.url].filter(Boolean).join(" · ")))]};
+ });
+ render();
+}
+function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promise(resolve=>setTimeout(()=>resolve(fallback),ms))])}
+ function tick(){const sec=Math.floor((Date.now()-state.started)/1000);const m=Math.floor(sec/60),r=sec%60;$("qr-clock").textContent=m+" min "+String(r).padStart(2,"0")+" s"}
+ function render(){
+  const item=state.items[state.index]; if(!item)return;
+  $("qr-card-question").textContent="Questão "+(state.index+1);
+  state.started=Date.now(); const at=state.attempts.get(item.id), sel=at?String(at.selected_option||"").toUpperCase():state.selected.get(item.id), confirmed=!!at, locked=confirmed||pendingAnswer===item.id, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
+  $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Área não classificada";$("qr-materia").textContent=item.materia||item.subject||"Matéria não classificada";$("qr-difficulty").textContent=item.difficulty||"Não informada";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Sem tags"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
+  const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url);
+  img.onload=null;img.onerror=null;
+  if(hasQuestionImage){
+    img.hidden=true;img.style.display="none";
+    img.onload=()=>{img.hidden=false;img.style.removeProperty("display")};
+    img.onerror=()=>{img.hidden=true;img.style.display="none";img.removeAttribute("src")};
+    img.src=item.image_url;
+  }else{img.hidden=true;img.style.display="none";img.removeAttribute("src")}
+  const os=opts(item),cutSet=state.eliminated.get(item.id)||new Set();$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(cutSet.has(o.k))cl+=" eliminated";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span class="qr-option-text">'+esc(o.t)+'</span><span class="qr-cut" data-cut="'+o.k+'" role="button" tabindex="0" aria-label="Eliminar alternativa '+o.k+'"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="m8.2 8.2 11.3 7.3"/><path d="m8.2 15.8 11.3-7.3"/></svg></span></button>'}).join("");
+  document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(locked||e.target.closest("[data-cut]"))return;const set=state.eliminated.get(item.id)||new Set();if(set.has(b.dataset.opt))return;state.selected.set(item.id,b.dataset.opt);render()});
+  document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(locked)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
+  const result=$("qr-answer-result");result.hidden=!confirmed;result.className="qr-answer-result"+(confirmed?(correct&&sel===correct?" correct":" wrong"):"");result.textContent=confirmed?(correct?(sel===correct?"Resposta correta!":"Resposta incorreta. Gabarito: "+correct):"Resposta registrada."):"";const fb=$("qr-feedback"),commentBtn=$("qr-comment-toggle"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel),refs=referenceEntries(item);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";const refsHtml='<div class="qr-justification"><strong>Referências</strong>'+(refs.length?'<div class="qr-reference-list">'+refs.map((r,i)=>'<div class="qr-reference-item">'+(i+1)+'. '+esc(r)+'</div>').join("")+'</div>':'<p>As referências desta questão ainda não foram preenchidas no banco.</p>')+'</div>';commentBtn.hidden=false;commentBtn.textContent="Comentário LURIA";commentBtn.setAttribute("aria-expanded","false");fb.hidden=true;fb.innerHTML='<div class="qr-justification"><strong>Comentário LURIA</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div>'+refsHtml+'<div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div><a class="qr-btn primary qr-talk-alex" href="/professor-alex/?q='+encodeURIComponent("Explique esta questão da LURIA, o raciocínio para o gabarito e por que cada alternativa está correta ou incorreta:\n"+(item.stem||item.raw_text||"")+"\nAlternativas:\n"+opts(item).map(x=>x.k+") "+x.t).join("\n")+"\nGabarito: "+(correct||"não informado"))+'">Falar com Alex</a>'}else{commentBtn.hidden=true;fb.hidden=true;fb.innerHTML=""}
+  document.querySelectorAll("[data-opt]").forEach(b=>{b.disabled=locked});
+  $("qr-confirm").disabled=!!pendingAnswer;$("qr-confirm").textContent=confirmed?"Respondida":"Responder";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
+  $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
+  const total=state.items.length;
+  const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):0;$("qr-hits").textContent=hits;$("qr-errors").textContent=errs;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
+  $("qr-answer-grid").innerHTML=state.items.map((q,i)=>{const a=state.attempts.get(q.id);let cl="qr-answer-cell";if(i===state.index)cl+=" current";if(a?.result==="correct")cl+=" correct";else if(a?.result==="wrong")cl+=" wrong";return '<button class="'+cl+'" type="button" data-jump="'+i+'" aria-label="Questão '+(i+1)+(a?.result==='correct'?', respondida corretamente':a?.result==='wrong'?', respondida incorretamente':', pendente')+'" aria-current="'+(i===state.index?'step':'false')+'">'+(i+1)+'</button>'}).join("");
+  document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>navigateTo(Number(b.dataset.jump)||0));
+ }
+ async function confirm(){
+   const item=state.items[state.index];
+   if(!item||!readerIsCurrent()||pendingAnswer||state.attempts.has(item.id))return;
+   const selected=state.selected.get(item.id),correct=String(item.official_answer||"").trim().toUpperCase();
+   if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}
+   if(!opts(item).some(o=>o.k===correct)){status("Esta questão não possui um gabarito válido para correção.","error");return}
+   const userId=state.user.id,epoch=ownerEpoch;
+   const row={user_id:userId,question_item_id:item.id,selected_option:selected,result:selected===correct?"correct":"wrong",area:null,materia:null,correct_option:correct,ccq:null,what_i_thought:null,sent_to_error:false,error_entry_id:null,answered_at:new Date().toISOString()};
+   pendingAnswer=item.id;render();
+   try{
+     const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();
+     if(!readerIsCurrent()||state.user.id!==userId||ownerEpoch!==epoch)return;
+     if(error)throw error;
+     if(!data)throw new Error("O salvamento não foi confirmado. Verifique sua conexão e tente novamente.");
+     state.attempts.set(item.id,data);
+     if(!completed&&state.items.length>0&&state.items.every(q=>state.attempts.has(q.id))){
+       completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
+     }
+     status("Resposta salva.","success");
+   }catch(error){
+     state.attempts.set(item.id, row);
+     try {
+       const localAttempts = JSON.parse(localStorage.getItem(`luria:attempts:${state.set?.id}`) || "{}");
+       localAttempts[item.id] = row;
+       localStorage.setItem(`luria:attempts:${state.set?.id}`, JSON.stringify(localAttempts));
+     } catch (_) {}
+     if(!completed&&state.items.length>0&&state.items.every(q=>state.attempts.has(q.id))){
+       completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
+     }
+     status("Resposta registrada.","success");
+   }
+   finally{pendingAnswer=null;if(readerIsCurrent())render()}
+ }
+ async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
+ function dailyDaySerial(){const d=new Date();return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000)}
+ function rotatingSlice(items,count,offset){if(!items.length||count<=0)return[];const out=[];for(let i=0;i<Math.min(count,items.length);i+=1)out.push(items[(offset+i)%items.length]);return out}
+ function interleaveDaily(a,b){const out=[];const max=Math.max(a.length,b.length);for(let i=0;i<max;i+=1){if(a[i])out.push(a[i]);if(b[i])out.push(b[i])}return out.slice(0,DAILY_LIMIT)}
+ async function loadDailyItems(user){
+   const {data:sets,error:setsError}=await sb.from("question_sets").select("*").eq("status","ready").in("title",DAILY_LOT_TITLES);
+   if(setsError)throw setsError;
+   const byTitle=new Map((sets||[]).map(x=>[x.title,x]));
+   const lot1=byTitle.get(DAILY_LOT_TITLES[0]), lot2=byTitle.get(DAILY_LOT_TITLES[1]);
+   const ids=[lot1?.id,lot2?.id].filter(Boolean);
+   if(!ids.length)return{set:null,items:[]};
+   const {data:items,error:itemsError}=await sb.from("question_items").select("*").in("set_id",ids).order("order_index",{ascending:true});
+   if(itemsError)throw itemsError;
+   const g1=(items||[]).filter(x=>x.set_id===lot1?.id), g2=(items||[]).filter(x=>x.set_id===lot2?.id);
+   const serial=dailyDaySerial();
+   const a=rotatingSlice(g1,Math.min(DAILY_PER_LOT,DAILY_LIMIT),g1.length?(serial*DAILY_PER_LOT)%g1.length:0);
+   const b=rotatingSlice(g2,Math.min(DAILY_PER_LOT,DAILY_LIMIT-a.length),g2.length?(serial*DAILY_PER_LOT)%g2.length:0);
+   let mixed=interleaveDaily(a,b);
+   if(mixed.length<DAILY_LIMIT){
+     const used=new Set(mixed.map(x=>x.id));
+     const fallback=[...g1,...g2].filter(x=>!used.has(x.id));
+     mixed=mixed.concat(rotatingSlice(fallback,DAILY_LIMIT-mixed.length,fallback.length?(serial*DAILY_LIMIT)%fallback.length:0));
+   }
+   return{set:{title:"Questões do dia",total_questions:mixed.length,status:"ready"},items:mixed.slice(0,DAILY_LIMIT)};
+ }
+ async function init(){
+   await window.LuriaLocalOwnerStore?.ready;
+   const epoch=window.LuriaLocalOwnerStore?.epoch??null;
+   const {data:{user}}=await sb.auth.getUser();
+   if(!user){location.href="/login/";return}
+   if(window.LuriaLocalOwnerStore&&(window.LuriaLocalOwnerStore.ownerId!==user.id||window.LuriaLocalOwnerStore.epoch!==epoch))return;
+   state.user=user;ownerEpoch=epoch;
+   let set=null,items=[],attempts=[],loadError=null;
+   if(isDaily){
+     try{
+       const daily=await loadDailyItems(user);
+       set=daily.set;items=daily.items;
+       const attemptsResult=await withTimeout(sb.from("question_attempts").select("*").eq("user_id",user.id),8000,{data:null,error:{message:"Não foi possível confirmar o histórico de respostas."}});
+       attempts=attemptsResult.data||[];
+       if(attemptsResult.error)loadError=attemptsResult.error;
+     }catch(error){loadError=error}
+   }else{
+     let setId=requested;
+     if(!setId){
+       const {data:sets}=await sb.from("question_sets").select("*").eq("user_id",user.id).eq("status","ready").order("created_at",{ascending:false}).limit(10);
+       const pick=(sets||[]).find(x=>!DAILY_LOT_TITLES.includes(x.title))||(sets||[])[0];
+       setId=pick?.id;
+     }
+     if(!setId){$("qr-loading").textContent="Nenhuma lista pronta para resolver.";return}
+     const [{data:setData,error:se},{data:itemData,error:ie},{data:attemptData,error:ae}]=await Promise.all([
+       sb.from("question_sets").select("*").eq("id",setId).single(),
+       sb.from("question_items").select("*").eq("set_id",setId).order("order_index",{ascending:true}),
+       sb.from("question_attempts").select("*").eq("user_id",user.id)
+     ]);
+     set=setData;items=itemData||[];attempts=attemptData||[];loadError=se||ie||ae;
+     if ((!set || !items.length) && setId) {
+       try {
+         const localCache = JSON.parse(localStorage.getItem(`luria:question_set:${setId}`) || "null");
+         if (localCache && localCache.set && localCache.items?.length) {
+           set = localCache.set;
+           items = localCache.items;
+           loadError = null;
+         }
+       } catch (_) {}
+     }
+   }
+   if(!readerIsCurrent())return;
+   if(loadError||!set||!items.length){$("qr-loading").textContent=isDaily?"Não foi possível montar as 50 questões de hoje.":"Não foi possível carregar esta lista.";return}
+   state.set=set;state.items=items.map(x=>({...x,image_url:null}));
+   const ids=new Set(state.items.map(x=>x.id));
+   attempts.filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));
+   state.index=firstUnanswered();
+   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();hydrateReferences().catch(console.error);hydrateLuriaQuestions().catch(console.error);
+   withTimeout(signedImages(items),6000,null).then(signed=>{
+     if(!signed||!readerIsCurrent())return;
+     const urls=new Map(signed.map(x=>[x.id,x.image_url||null]));
+     state.items=state.items.map(x=>({...x,image_url:urls.get(x.id)||null}));
+     render();
+   }).catch(()=>{});
+ }
+ window.addEventListener("luria:owner-changed",()=>{
+   if(!state.user||readerIsCurrent())return;
+   state.user=null;state.items=[];state.attempts.clear();state.selected.clear();
+   $("qr-layout").hidden=true;$("qr-loading").hidden=false;
+   $("qr-loading").textContent="Sua sessão mudou. Atualize a página para continuar.";
+ });
+ function closeToolPopovers(except=null){
+   [["qr-highlight-popover","qr-highlight-tool"],["qr-font-popover","qr-font-tool"]].forEach(([pop,btn])=>{
+     if(pop===except)return;
+     $(pop).hidden=true;$(btn).setAttribute("aria-expanded","false");
+   });
+ }
+ function togglePopover(popId,btnId){
+   const pop=$(popId),willOpen=pop.hidden;closeToolPopovers(willOpen?popId:null);pop.hidden=!willOpen;$(btnId).setAttribute("aria-expanded",willOpen?"true":"false");
+ }
+ function applyHighlight(){
+   if(!state.highlight)return;
+   const sel=window.getSelection(); if(!sel||sel.rangeCount===0||sel.isCollapsed)return;
+   const range=sel.getRangeAt(0),root=$("qr-text");
+   if(!root.contains(range.commonAncestorContainer))return;
+   const mark=document.createElement("mark");mark.dataset.qrHighlight="1";mark.style.background=state.highlightColor;
+   try{mark.appendChild(range.extractContents());range.insertNode(mark);sel.removeAllRanges()}catch(e){}
+ }
+ function setQuestionFont(px){
+   state.fontSize=Math.max(9,Math.min(16,px));document.documentElement.style.setProperty("--qr-text-size",state.fontSize+"px");
+ }
+ $("qr-highlight-tool").onclick=e=>{e.stopPropagation();togglePopover("qr-highlight-popover","qr-highlight-tool")};
+ document.querySelectorAll(".qr-color").forEach(btn=>btn.onclick=e=>{e.stopPropagation();state.highlightColor=btn.dataset.color;state.highlight=true;$("qr-highlight-tool").classList.add("active");$("qr-highlight-popover").hidden=true;$("qr-highlight-tool").setAttribute("aria-expanded","false");status("Marca-texto ativado. Selecione um trecho do enunciado para grifar.","success")});
+ $("qr-text").addEventListener("mouseup",()=>setTimeout(applyHighlight,0));
+ $("qr-text").addEventListener("touchend",()=>setTimeout(applyHighlight,80));
+ $("qr-favorite").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);$("qr-favorite").setAttribute("aria-pressed",state.marked.has(id)?"true":"false");status(state.marked.has(id)?"Questão favoritada.":"Questão removida dos favoritos.","success")};
+ $("qr-report-top").onclick=()=>{const reason=window.prompt("Descreva o problema encontrado nesta questão:");if(reason&&reason.trim())status("Problema reportado para revisão.","success")};
+ $("qr-font-tool").onclick=e=>{e.stopPropagation();togglePopover("qr-font-popover","qr-font-tool")};
+ $("qr-font-down").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize-1)};
+ $("qr-font-up").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize+1)};
+ $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
+ document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
+ // Atalhos de teclado ergonômicos para o simulador
+ window.addEventListener("keydown", (e) => {
+   if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName)) return;
+   if (document.querySelector("dialog[open]")) return;
+   const key = e.key.toUpperCase();
+   const keyMap = { "1": "A", "2": "B", "3": "C", "4": "D", "5": "E" };
+   const optLetter = keyMap[key] || (["A", "B", "C", "D", "E"].includes(key) ? key : null);
+   if (optLetter && !e.ctrlKey && !e.altKey && !e.metaKey) {
+     const btn = document.querySelector(`.qr-option[data-opt="${optLetter}"]`);
+     if (btn && !btn.disabled) { e.preventDefault(); btn.click(); }
+     return;
+   }
+   if (key === "ENTER" || (e.code === "Space" && e.target === document.body)) {
+     const confirmBtn = $("qr-confirm");
+     if (confirmBtn && !confirmBtn.disabled) { e.preventDefault(); confirmBtn.click(); }
+     return;
+   }
+   if (key === "ARROWRIGHT" || key === "K" || key === "N") {
+     const nextBtn = $("qr-next");
+     if (nextBtn && !nextBtn.disabled) { e.preventDefault(); nextBtn.click(); }
+     return;
+   }
+   if (key === "ARROWLEFT" || key === "J" || key === "P") {
+     const prevBtn = $("qr-prev");
+     if (prevBtn && !prevBtn.disabled) { e.preventDefault(); prevBtn.click(); }
+     return;
+   }
+   if (key === "H") { e.preventDefault(); $("qr-highlight-tool")?.click(); return; }
+   if (key === "F") { e.preventDefault(); $("qr-favorite")?.click(); return; }
+   if (key === "C") {
+     const cBtn = $("qr-comment-toggle");
+     if (cBtn && !cBtn.hidden) { e.preventDefault(); cBtn.click(); }
+     return;
+   }
+ });
+ $("qr-comment-toggle").onclick=()=>{const fb=$("qr-feedback");fb.hidden=!fb.hidden;$("qr-comment-toggle").textContent=fb.hidden?"Comentário LURIA":"Fechar comentário";$("qr-comment-toggle").setAttribute("aria-expanded",String(!fb.hidden))};
+ $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);setTimeout(()=>{if(!$("qr-loading").hidden&&$("qr-loading").textContent.includes("Carregando"))$("qr-loading").textContent="O carregamento demorou mais que o esperado. Atualize a página para tentar novamente."},12000);init().catch(error=>{console.error(error);$("qr-loading").textContent="Não foi possível carregar as questões. Atualize a página para tentar novamente."});
+})();
+</script>
+<script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+</body></html>

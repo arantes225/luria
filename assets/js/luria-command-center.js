@@ -35,16 +35,8 @@ function installSearch(){
  const controls=bar.querySelector(".luria-notifications");
  if(!controls){setTimeout(installSearch,120);return}
 
- if(!d.getElementById("luria-alex-topbar")){
-   const alex=d.createElement("a");
-   alex.id="luria-alex-topbar";
-   alex.className="luria-alex-topbar";
-   alex.href="/professor-alex/";
-   alex.textContent="Alex";
-   alex.setAttribute("aria-label","Abrir Professor Alex");
-   const timerWrap=controls.querySelector(".luria-pomodoro-top");
-   if(timerWrap)controls.insertBefore(alex,timerWrap);else controls.prepend(alex);
- }
+ const existingAlex = d.getElementById("luria-alex-topbar");
+ if (existingAlex) existingAlex.remove();
 
  const open=(initialQuery="")=>{
    const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');

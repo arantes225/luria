@@ -23,6 +23,7 @@
 
   <link id="luria-global-master-css" rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/dashboard-layouts.css?v=20261006-dashboard3-fit">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261018-dashboard1">
 <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/dashboard/">
 <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
@@ -37,10 +38,13 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-eyebrow],
 body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
   display:none!important;
 }
+body[data-page="dashboard"] .ui-page-header{
+  display:none!important;
+}
 </style>
   <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/dashboard-cards.css?v=3">
-  <link rel="stylesheet" href="/assets/css/dashboard-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/dashboard-ui-v2.css?v=20261018-spotlight">
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
@@ -55,6 +59,13 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
 
     <main id="dashboard-content" class="main" tabindex="-1" aria-busy="true">
       <div class="page">
+
+        <section class="luria-page-spotlight luria-dashboard-spotlight" aria-label="Dashboard">
+          <div class="luria-page-spotlight-copy">
+            <strong>Dashboard</strong>
+            <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
+          </div>
+        </section>
 
         <section id="dashboard-loading" class="dashboard-loading" role="status" aria-live="polite">
           <strong>Carregando seu painel…</strong>
@@ -186,7 +197,7 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
 <script src="/assets/js/study-mode.js?v=12.1"></script>
 <script src="/assets/js/dashboard.js?v=20261006-css-owned-height"></script>
 <script src="/assets/js/dashboard-preferences.js?v=1"></script>
-<script src="/assets/js/dashboard-layouts.js?v=20261012-classic-only"></script>
+<script src="/assets/js/dashboard-layouts.js?v=20261018-spotlight"></script>
 <script>
   (function(){
     var fallback=document.getElementById("dashboard-fallback-shell");

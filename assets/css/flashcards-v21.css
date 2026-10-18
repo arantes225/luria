@@ -520,10 +520,16 @@ body.flash-review-session-active .page:where(:not(body[data-ui-nav="v2"], body[d
 .review-launcher-copy p{color:rgba(255,255,255,.78)!important}
 .review-launcher-action strong{color:#fff!important;font-weight:900!important}
 .review-launcher #start-review-session{
-  background:var(--accent)!important;
-  border-color:var(--accent)!important;
-  color:#fff!important;
-  box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 38%,transparent)!important;
+  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(24, 72, 136, 0.28) !important;
+}
+.review-launcher #start-review-session:hover{
+  background: linear-gradient(135deg, #1e58a6, #3b82f6) !important;
+  transform: translateY(-1px) !important;
+  filter: brightness(1.06) !important;
 }
 
 

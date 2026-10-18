@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-wbeOsQQAQL4aa3QUHFsA4qWPNj8bPPx3bMEOYlBwMtc=' https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js https://cdnjs.cloudflare.com/ajax/libs/diff_match_patch/20121119/diff_match_patch.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-wbeOsQQAQL4aa3QUHFsA4qWPNj8bPPx3bMEOYlBwMtc=' https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js https://cdnjs.cloudflare.com/ajax/libs/diff_match_patch/20121119/diff_match_patch.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://prod-files-secure.s3.us-west-2.amazonaws.com https://*.amazonaws.com; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -18,61 +18,165 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=20261001-more-menu-fix">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
-    <style>
-    /* Anotações v25 — topo alinhado ao padrão Prática Clínica/Questões */
-    body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar{
-      position:relative!important;
-      top:auto!important;
-      z-index:245!important;
-      background:transparent!important;
-      backdrop-filter:none!important;
-      -webkit-backdrop-filter:none!important;
-      box-shadow:none!important;
-      border:0!important;
-    }
-    @media (min-width:981px){
-      body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar{
-        min-height:60px!important;
-        height:60px!important;
-        margin:0 0 16px!important;
-        padding:0!important;
-        display:flex!important;
-        align-items:flex-start!important;
-        gap:14px!important;
-        overflow:visible!important;
-      }
-      body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar .page-heading{
-        display:block!important;
-        min-width:0!important;
-        align-self:flex-start!important;
-      }
-      body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar .luria-notifications{
-        position:fixed!important;
-        top:10px!important;
-        right:var(--luria-top-controls-right,34px)!important;
-        left:auto!important;
-        margin:0!important;
-        display:flex!important;
-        align-items:center!important;
-        gap:10px!important;
-        transform:none!important;
-        translate:none!important;
-        transition:none!important;
-        animation:none!important;
-      }
-      body[data-page="caderno"] .notebook-save-status{
-        margin-left:0!important;
-        align-self:flex-start!important;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/caderno.css?v=20261016-editor-tools">
   <link rel="canonical" href="/caderno/">
 <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260928-anotacoes-size-v2">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+<script defer src="assets/js/luria-brand-v5.js?v=12"></script>
 <script src="/assets/js/medical-icons.js?v=2.0"></script>
+<style id="notebook-apostila-outline-v1">
+@media (min-width:901px){
+  body[data-page="caderno"] .note-studio{
+    grid-template-columns:196px minmax(0,1fr)!important;
+    gap:14px!important;
+    align-items:start!important;
+  }
+  body[data-page="caderno"] .note-tree.note-outline-apostila{
+    position:sticky!important;
+    top:14px!important;
+    align-self:start!important;
+    width:auto!important;
+    max-height:calc(100dvh - 32px)!important;
+    padding:14px!important;
+    border:1px solid var(--border)!important;
+    border-radius:16px!important;
+    background:var(--surface)!important;
+    box-shadow:0 8px 22px rgba(15,35,66,.04)!important;
+    overflow:auto!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 60%,transparent) transparent!important;
+  }
+}
+body[data-page="caderno"] .note-outline-apostila .note-outline-back{
+  display:flex!important;
+  align-items:center!important;
+  width:100%!important;
+  min-height:34px!important;
+  margin:0 0 12px!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:9px!important;
+  background:var(--surface-2)!important;
+  color:var(--accent)!important;
+  font:inherit!important;
+  font-size:9.6px!important;
+  font-weight:600!important;
+  line-height:1!important;
+  text-align:left!important;
+  cursor:pointer!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-outline-back:hover{
+  background:var(--accent-soft)!important;
+  border-color:color-mix(in srgb,var(--accent) 28%,var(--border))!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-tree-head{
+  min-height:0!important;
+  margin:0!important;
+  padding:4px 3px 10px!important;
+  border:0!important;
+  border-bottom:1px solid var(--border)!important;
+  background:transparent!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-tree-head small{
+  display:block!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  letter-spacing:.06em!important;
+  text-transform:uppercase!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-tree-head strong{
+  display:block!important;
+  margin-top:3px!important;
+  color:var(--text)!important;
+  font-size:12.5px!important;
+  line-height:1.2!important;
+  font-weight:600!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-outline-help{
+  margin:8px 3px 3px!important;
+  color:var(--muted)!important;
+  font-size:8.6px!important;
+  line-height:1.35!important;
+}
+body[data-page="caderno"] .note-outline-apostila #notebook-topic-list{
+  display:grid!important;
+  gap:3px!important;
+  margin-top:8px!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item,
+body[data-page="caderno"] .note-outline-apostila .note-outline-item,
+body[data-page="caderno"] .note-outline-apostila .notebook-outline-item{
+  display:flex!important;
+  align-items:center!important;
+  width:100%!important;
+  min-height:30px!important;
+  margin:0!important;
+  padding:6px 8px!important;
+  border:0!important;
+  border-left:3px solid transparent!important;
+  border-radius:8px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font:inherit!important;
+  font-size:9.6px!important;
+  line-height:1.2!important;
+  text-align:left!important;
+  box-shadow:none!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item:hover,
+body[data-page="caderno"] .note-outline-apostila .note-outline-item:hover,
+body[data-page="caderno"] .note-outline-apostila .notebook-outline-item:hover{
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item strong{
+  font-size:9.6px!important;
+  line-height:1.2!important;
+  font-weight:500!important;
+  color:inherit!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item small{
+  display:none!important;
+}
+body[data-page="caderno"] .note-outline-apostila #notebook-topic-panel-toggle{
+  width:24px!important;
+  height:24px!important;
+  min-width:24px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:var(--surface-2)!important;
+  color:var(--accent)!important;
+}
+@media(max-width:900px){
+  body[data-page="caderno"] .note-tree.note-outline-apostila{
+    position:relative!important;
+    top:auto!important;
+    max-height:none!important;
+    padding:12px!important;
+  }
+  body[data-page="caderno"] .note-outline-apostila #notebook-topic-list{
+    display:flex!important;
+    gap:6px!important;
+    overflow-x:auto!important;
+    padding-bottom:2px!important;
+  }
+  body[data-page="caderno"] .note-outline-apostila .notebook-topic-item,
+  body[data-page="caderno"] .note-outline-apostila .note-outline-item,
+  body[data-page="caderno"] .note-outline-apostila .notebook-outline-item{
+    flex:0 0 auto!important;
+    width:auto!important;
+    white-space:nowrap!important;
+    border-left:0!important;
+    border-bottom:2px solid transparent!important;
+  }
+}
+</style>
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=3">
 </head>
@@ -86,98 +190,89 @@
 
     <main class="main notebook-main-shell">
       <div class="page notebook-page">
-
-        <header class="topbar notebook-topbar">
-          <button
-            id="menu-open"
-            class="menu-open"
-            type="button"
-            aria-label="Abrir menu"
-          >
-            ☰
-          </button>
-
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu" aria-controls="sidebar">☰</button>
           <div class="page-heading">
-            <span class="eyebrow" data-page-eyebrow>Estudar</span>
-            <h1 data-page-title>Anotações</h1>
+            <span class="eyebrow" data-page-eyebrow></span>
+            <h1 data-page-title></h1>
           </div>
-
-          <span
-            id="notebook-save-status"
-            class="notebook-save-status"
-          ></span>
         </header>
 
-        <nav class="notebook-tabs" aria-label="Seções de Anotações">
-          <button
-            class="notebook-tab active"
-            type="button"
-            data-notebook-tab="editor"
-          >
-            Editor
-          </button>
-
-          <button
-            class="notebook-tab"
-            type="button"
-            data-notebook-tab="library"
-          >
-            Cadernos
-          </button>
-        </nav>
-
-        <section id="notebook-view-editor" class="notebook-view">
-<section class="luria-page-spotlight" aria-label="Anotações"><div class="luria-page-spotlight-copy"><strong>Anotações</strong></div></section>
-<div class="note-studio">
-<aside class="note-tree">
- <div class="note-tree-head"><div><small>Anotações</small><strong>Meus cadernos</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
- <div class="note-tree-search"><input id="notebook-topic-search" type="search" placeholder="Buscar página..." autocomplete="off"><button id="notebook-filter-toggle" type="button">⌁</button></div>
+<section id="notebook-view-editor" class="notebook-view" hidden>
+<section class="luria-page-spotlight" aria-label="Anotações"><div class="luria-page-spotlight-copy"><strong>Anotações</strong><small class="luria-page-spotlight-helper">Seus cadernos, resumos e notas de estudo.</small></div></section>
+<div class="note-studio-wrap"><button id="notebook-back-library" class="note-back-library note-back-library-top" type="button" aria-label="Voltar para Meus Cadernos">← <span>Meus Cadernos</span></button><div class="note-studio">
+<aside class="note-tree note-outline-apostila">
+ <button id="notebook-back-library-outline" class="note-outline-back" type="button">← Voltar para a biblioteca</button>
+ <div class="note-tree-head"><div><small>Anotação atual</small><strong>Estrutura do conteúdo</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
+ <div class="note-outline-help">Navegue pelos títulos e subtítulos desta anotação.</div><input id="notebook-topic-search" type="search" hidden><button id="notebook-filter-toggle" type="button" hidden>⌁</button>
  <div id="notebook-filter-menu" class="notebook-filter-menu" hidden><button id="notebook-filter-close" type="button">×</button><select id="notebook-area-filter"><option value="">Todas as áreas</option></select><button id="notebook-filter-clear" type="button">Limpar</button><button id="notebook-filter-apply" type="button">Aplicar</button></div>
- <button id="notebook-new-free-page" class="note-new-page" type="button">＋ Nova página</button><span id="notebook-topic-count" hidden>0</span>
- <div id="notebook-topic-list" class="notebook-topic-list"><div class="notebook-empty-small">Carregando...</div></div>
+ <button id="notebook-new-free-page" class="note-new-page" type="button" hidden>＋ Nova página</button><span id="notebook-topic-count" hidden>0</span>
+ <div id="notebook-topic-list" class="notebook-topic-list note-page-outline"><div class="notebook-empty-small">Abra uma anotação para ver sua estrutura.</div></div>
 </aside>
 <main class="note-canvas">
- <div id="notebook-toolbar" class="note-toolbar">
-  <select id="notebook-block-style" disabled><option value="p">Texto</option><option value="h1">Título 1</option><option value="h2">Título 2</option><option value="h3">Título 3</option></select>
-  <select id="notebook-font-family" disabled><option value="default">Padrão</option><option value="Times New Roman">Times</option><option value="Georgia">Georgia</option><option value="Comic Sans MS">Escrita à mão</option></select><select id="notebook-font-size" class="note-doc-select" aria-label="Tamanho da fonte" title="Tamanho da fonte" disabled><option value="12">12 px</option><option value="14">14 px</option><option value="16" selected>16 px</option><option value="18">18 px</option><option value="20">20 px</option><option value="24">24 px</option><option value="28">28 px</option><option value="32">32 px</option></select>
-  <span class="note-tool-sep"></span><button id="notebook-bold" type="button" disabled><b>B</b></button><button id="notebook-italic" type="button" disabled><i>I</i></button><button id="notebook-underline" type="button" disabled><u>U</u></button>
-  <div class="notebook-color-palette-wrap"><button id="notebook-text-color" class="note-icon-tool notebook-color-button" type="button" title="Cor do texto" aria-expanded="false" disabled><span class="notebook-color-letter">A</span></button><div id="notebook-text-color-palette" class="notebook-color-palette" hidden aria-label="Paleta de cor do texto"><button type="button" data-text-color="#111827" style="--swatch:#111827" title="Preto"></button><button type="button" data-text-color="#ffffff" style="--swatch:#ffffff" title="Branco"></button><button type="button" data-text-color="#2563eb" style="--swatch:#2563eb" title="Azul"></button><button type="button" data-text-color="#60a5fa" style="--swatch:#60a5fa" title="Azul claro"></button><button type="button" data-text-color="#0f766e" style="--swatch:#0f766e" title="Verde petróleo"></button><button type="button" data-text-color="#16a34a" style="--swatch:#16a34a" title="Verde"></button><button type="button" data-text-color="#dc2626" style="--swatch:#dc2626" title="Vermelho"></button><button type="button" data-text-color="#f97316" style="--swatch:#f97316" title="Laranja"></button><button type="button" data-text-color="#eab308" style="--swatch:#eab308" title="Amarelo"></button><button type="button" data-text-color="#9333ea" style="--swatch:#9333ea" title="Roxo"></button><button type="button" data-text-color="#db2777" style="--swatch:#db2777" title="Rosa"></button><button type="button" data-text-color="#64748b" style="--swatch:#64748b" title="Cinza"></button></div></div><div class="notebook-color-palette-wrap"><button id="notebook-highlight-color" class="note-icon-tool notebook-color-button notebook-highlight-button" type="button" title="Marca-texto" aria-expanded="false" disabled><span>▰</span></button><div id="notebook-highlight-color-palette" class="notebook-color-palette" hidden aria-label="Paleta de marca-texto"><button type="button" data-highlight-color="transparent" class="no-color" title="Sem destaque">×</button><button type="button" data-highlight-color="#fff59d" style="--swatch:#fff59d" title="Amarelo"></button><button type="button" data-highlight-color="#fde68a" style="--swatch:#fde68a" title="Dourado"></button><button type="button" data-highlight-color="#fecaca" style="--swatch:#fecaca" title="Vermelho claro"></button><button type="button" data-highlight-color="#fed7aa" style="--swatch:#fed7aa" title="Laranja claro"></button><button type="button" data-highlight-color="#bbf7d0" style="--swatch:#bbf7d0" title="Verde claro"></button><button type="button" data-highlight-color="#bfdbfe" style="--swatch:#bfdbfe" title="Azul claro"></button><button type="button" data-highlight-color="#c7d2fe" style="--swatch:#c7d2fe" title="Índigo claro"></button><button type="button" data-highlight-color="#e9d5ff" style="--swatch:#e9d5ff" title="Roxo claro"></button><button type="button" data-highlight-color="#fbcfe8" style="--swatch:#fbcfe8" title="Rosa claro"></button></div></div>
-  <span class="note-tool-sep"></span>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-align-toggle" type="button" disabled>☰</button><span id="notebook-align-current-icon" hidden>☰</span><div id="notebook-align-menu" class="notebook-tool-menu" hidden><button data-align="left">Esquerda</button><button data-align="center">Centro</button><button data-align="right">Direita</button><button data-align="justify">Justificar</button></div></div>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-list-toggle" type="button" disabled>☷</button><div id="notebook-list-menu" class="notebook-tool-menu" hidden><button data-list-command="insertUnorderedList">• Marcadores</button><button data-list-command="insertOrderedList">1. Numerada</button><button type="button" data-list-command="checklist">☑ Caixas de seleção</button></div></div>
+ <header class="note-editor-identity"><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div></header><div id="notebook-toolbar" class="note-toolbar" aria-label="Barra de formatação">
+ <div class="note-toolbar-group note-history-tools"><button type="button" class="note-icon-tool" data-editor-command="undo" title="Desfazer">↶</button><button type="button" class="note-icon-tool" data-editor-command="redo" title="Refazer">↷</button></div>
+ <span class="note-tool-sep"></span>
+ <div class="note-toolbar-group note-type-tools"><select id="notebook-block-style" class="note-doc-select" disabled><option value="p">Texto normal</option><option value="h1">Título 1</option><option value="h2">Título 2</option><option value="h3">Título 3</option></select><select id="notebook-font-family" class="note-doc-select note-font-select" disabled><option value="default">Padrão</option><option value="Times New Roman">Times</option><option value="Georgia">Georgia</option><option value="Comic Sans MS">Escrita à mão</option></select><select id="notebook-font-size" class="note-doc-select" aria-label="Tamanho da fonte" title="Tamanho da fonte" disabled><option value="12">12 px</option><option value="14">14 px</option><option value="16" selected>16 px</option><option value="18">18 px</option><option value="20">20 px</option><option value="24">24 px</option><option value="28">28 px</option><option value="32">32 px</option></select></div>
+ <span class="note-tool-sep"></span>
+ <div class="note-toolbar-group"><button id="notebook-bold" class="note-icon-tool" type="button" title="Negrito" disabled><b>B</b></button><button id="notebook-italic" class="note-icon-tool" type="button" title="Itálico" disabled><i>I</i></button><button id="notebook-underline" class="note-icon-tool" type="button" title="Sublinhado" disabled><u>U</u></button><div class="notebook-color-palette-wrap"><button id="notebook-text-color" class="note-icon-tool notebook-color-button" type="button" title="Cor do texto" aria-expanded="false" disabled><span class="notebook-color-letter">A</span></button><div id="notebook-text-color-palette" class="notebook-color-palette" hidden aria-label="Paleta de cor do texto"><button type="button" data-text-color="#111827" style="--swatch:#111827" title="Preto"></button><button type="button" data-text-color="#ffffff" style="--swatch:#ffffff" title="Branco"></button><button type="button" data-text-color="#2563eb" style="--swatch:#2563eb" title="Azul"></button><button type="button" data-text-color="#60a5fa" style="--swatch:#60a5fa" title="Azul claro"></button><button type="button" data-text-color="#0f766e" style="--swatch:#0f766e" title="Verde petróleo"></button><button type="button" data-text-color="#16a34a" style="--swatch:#16a34a" title="Verde"></button><button type="button" data-text-color="#dc2626" style="--swatch:#dc2626" title="Vermelho"></button><button type="button" data-text-color="#f97316" style="--swatch:#f97316" title="Laranja"></button><button type="button" data-text-color="#eab308" style="--swatch:#eab308" title="Amarelo"></button><button type="button" data-text-color="#9333ea" style="--swatch:#9333ea" title="Roxo"></button><button type="button" data-text-color="#db2777" style="--swatch:#db2777" title="Rosa"></button><button type="button" data-text-color="#64748b" style="--swatch:#64748b" title="Cinza"></button></div></div><div class="notebook-color-palette-wrap"><button id="notebook-highlight-color" class="note-icon-tool notebook-color-button notebook-highlight-button" type="button" title="Marca-texto" aria-expanded="false" disabled><span>▰</span></button><div id="notebook-highlight-color-palette" class="notebook-color-palette" hidden aria-label="Paleta de marca-texto"><button type="button" data-highlight-color="transparent" class="no-color" title="Sem destaque">×</button><button type="button" data-highlight-color="#fff59d" style="--swatch:#fff59d" title="Amarelo"></button><button type="button" data-highlight-color="#fde68a" style="--swatch:#fde68a" title="Dourado"></button><button type="button" data-highlight-color="#fecaca" style="--swatch:#fecaca" title="Vermelho claro"></button><button type="button" data-highlight-color="#fed7aa" style="--swatch:#fed7aa" title="Laranja claro"></button><button type="button" data-highlight-color="#bbf7d0" style="--swatch:#bbf7d0" title="Verde claro"></button><button type="button" data-highlight-color="#bfdbfe" style="--swatch:#bfdbfe" title="Azul claro"></button><button type="button" data-highlight-color="#c7d2fe" style="--swatch:#c7d2fe" title="Índigo claro"></button><button type="button" data-highlight-color="#e9d5ff" style="--swatch:#e9d5ff" title="Roxo claro"></button><button type="button" data-highlight-color="#fbcfe8" style="--swatch:#fbcfe8" title="Rosa claro"></button></div></div></div>
+ <span class="note-tool-sep"></span>
+ <div class="note-toolbar-group"><div class="notebook-tool-menu-wrap"><button id="notebook-align-toggle" class="note-icon-tool" type="button" title="Alinhamento" disabled>☰</button><span id="notebook-align-current-icon" hidden>☰</span><div id="notebook-align-menu" class="notebook-tool-menu" hidden><button data-align="left">Alinhar à esquerda</button><button data-align="center">Centralizar</button><button data-align="right">Alinhar à direita</button><button data-align="justify">Justificar</button></div></div><div class="notebook-tool-menu-wrap"><button id="notebook-list-toggle" class="note-icon-tool" type="button" title="Lista" disabled>☷</button><div id="notebook-list-menu" class="notebook-tool-menu" hidden><button data-list-command="insertUnorderedList">• Marcadores</button><button data-list-command="insertOrderedList">1. Numerada</button><button type="button" data-list-command="checklist">☑ Caixas de seleção</button></div></div></div>
+ <span class="note-tool-sep"></span>
+ <div class="note-toolbar-group note-insert-tools"><div class="notebook-tool-menu-wrap"><button id="notebook-callout-toggle" class="note-doc-action" type="button" disabled>◇ Callout</button><div id="notebook-callout-menu" class="notebook-tool-menu" hidden><button data-study-block="important">★ Importante</button><button data-study-block="warning">⚠ Atenção</button><button data-study-block="memory">◉ Decore</button></div></div><div class="notebook-tool-menu-wrap"><button id="notebook-image-add" class="note-icon-tool" type="button" title="Imagem" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="9.5" r="1.6" fill="currentColor"/><path d="m6 17 4.4-4.6 3 3 2.2-2.2L19 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div id="notebook-image-menu" class="notebook-tool-menu" hidden><button data-image-source="camera">Câmera</button><button data-image-source="gallery">Galeria</button><button data-image-source="file">Arquivo</button></div></div><div class="notebook-tool-menu-wrap"><button id="notebook-table-toggle" class="note-icon-tool" type="button" title="Tabela" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.8 10h16.4M9 4.8v14.4M15 4.8v14.4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div id="notebook-table-menu" class="notebook-tool-menu" hidden><button data-table-action="manual">Adicionar tabela</button><button data-table-action="merge-row">Unir linha</button><button data-table-action="split-row">Separar linha</button></div></div></div>
+ <span class="note-toolbar-fill"></span>
+ <div class="notebook-tool-menu-wrap note-more-wrap"><button id="notebook-more-toggle" class="note-doc-action" type="button">Mais⌄</button><div id="notebook-more-menu" class="notebook-tool-menu note-more-menu" hidden>
   <div class="notebook-tool-menu-wrap"><button id="notebook-template" type="button" disabled>◇ Estrutura</button><div id="notebook-template-menu" class="notebook-tool-menu" hidden><button data-template-type="disease">Critérios da doença</button><button data-template-type="illness-script">Illness Script</button><button data-template-type="clinical-reasoning">Raciocínio clínico</button><button data-template-type="soap">SOAP</button><button data-template-type="rapid-review">Revisão rápida</button></div></div>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-callout-toggle" type="button" disabled>◈ Callout</button><div id="notebook-callout-menu" class="notebook-tool-menu" hidden><button data-study-block="important">★ Importante</button><button data-study-block="warning">⚠ Atenção</button><button data-study-block="memory">◉ Decore</button></div></div>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-table-toggle" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.8 10h16.4M9 4.8v14.4M15 4.8v14.4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div id="notebook-table-menu" class="notebook-tool-menu" hidden><button data-table-action="manual">Adicionar tabela</button><button data-table-action="merge-row">Unir linha</button><button data-table-action="split-row">Separar linha</button></div></div>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-image-add" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="9.5" r="1.6" fill="currentColor"/><path d="m6 17 4.4-4.6 3 3 2.2-2.2L19 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div id="notebook-image-menu" class="notebook-tool-menu" hidden><button data-image-source="camera">Câmera</button><button data-image-source="gallery">Galeria</button><button data-image-source="file">Arquivo</button></div></div>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-divider" type="button" disabled>━</button><div id="notebook-divider-menu" class="notebook-tool-menu" hidden><button data-divider-style="solid">Linha reta</button><button data-divider-style="dotted">Pontilhada</button><button data-divider-style="arabesque">LURIA</button></div></div>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-paper-toggle" type="button" disabled>▤</button><div id="notebook-paper-menu" class="notebook-tool-menu" hidden><button data-paper-style="white">Branco</button><button data-paper-style="lined">Pautado</button><button data-paper-style="dotted">Pontilhado</button><button data-paper-style="luria">LURIA</button></div></div>
-  <button id="notebook-columns" type="button" disabled>▥</button>
-  <div class="notebook-tool-menu-wrap"><button id="notebook-line-spacing" type="button" disabled>↕</button><span id="notebook-spacing-current" hidden></span><div id="notebook-spacing-menu" class="notebook-tool-menu" hidden><button data-line-spacing="1">1,0</button><button data-line-spacing="1.15">1,15</button><button data-line-spacing="1.5">1,5</button><button data-line-spacing="2">2,0</button></div></div>
-  <div class="notebook-emoji-wrap"><button id="notebook-emoji-toggle" type="button" disabled>☺</button><div id="notebook-emoji-menu" class="notebook-emoji-menu" hidden></div></div>
-  <span class="note-toolbar-fill"></span><button id="notebook-save-now" class="note-save" type="button" disabled>Salvar</button>
- </div>
- <input id="notebook-image-camera-input" type="file" accept="image/*" capture="environment" hidden><input id="notebook-image-gallery-input" type="file" accept="image/*" multiple hidden><input id="notebook-image-file-input" type="file" accept=".png,.jpg,.jpeg,.webp,.gif,image/*" multiple hidden>
+  <div class="notebook-tool-menu-wrap"><button id="notebook-divider" type="button" disabled>━ Linha divisória</button><div id="notebook-divider-menu" class="notebook-tool-menu" hidden><button data-divider-style="solid">Linha reta</button><button data-divider-style="dotted">Pontilhada</button><button data-divider-style="arabesque">LURIA</button></div></div>
+  <div class="notebook-tool-menu-wrap"><button id="notebook-paper-toggle" type="button" disabled>▤ Aparência da página</button><div id="notebook-paper-menu" class="notebook-tool-menu" hidden><button data-paper-style="white">Branco</button><button data-paper-style="lined">Pautado</button><button data-paper-style="dotted">Pontilhado</button><button data-paper-style="luria">LURIA</button></div></div>
+  <button id="notebook-columns" type="button" disabled>▥ Duas colunas</button>
+  <div class="notebook-tool-menu-wrap"><button id="notebook-line-spacing" type="button" disabled>↕ Espaçamento</button><span id="notebook-spacing-current" hidden></span><div id="notebook-spacing-menu" class="notebook-tool-menu" hidden><button data-line-spacing="1">1,0</button><button data-line-spacing="1.15">1,15</button><button data-line-spacing="1.5">1,5</button><button data-line-spacing="2">2,0</button></div></div>
+  <div class="notebook-emoji-wrap"><button id="notebook-emoji-toggle" type="button" disabled>☺ Emoji</button><div id="notebook-emoji-menu" class="notebook-emoji-menu" hidden></div></div>
+ </div></div>
+ <button id="notebook-save-now" class="note-save-status" type="button" disabled>✓ Salvo</button>
+</div>
+<input id="notebook-image-camera-input" type="file" accept="image/*" capture="environment" hidden><input id="notebook-image-gallery-input" type="file" accept="image/*" multiple hidden><input id="notebook-image-file-input" type="file" accept=".png,.jpg,.jpeg,.webp,.gif,image/*" multiple hidden>
  <div id="notebook-editor-hint" class="note-empty"><div>✎</div><strong>Abra uma página para começar</strong><span>Escolha uma anotação à esquerda ou crie uma nova página.</span></div>
  <div id="notebook-document-wrap" class="note-document" hidden>
   <article class="note-page">
-   <header class="note-page-head"><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div></header>
+
    <div id="notebook-editor" class="notebook-editor" contenteditable="false" aria-readonly="true" role="textbox" aria-multiline="true" spellcheck="true" data-placeholder="Comece a escrever..."></div>
   </article>
  </div>
 </main>
 <aside class="note-info">
-<section class="note-side-card note-actions-card"><div class="note-side-title"><h3>ϟ Ações rápidas</h3></div><button id="notebook-inspector-move" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h6l2 2h10v12H3z"/><path d="M7 13h9m-3-3 3 3-3 3"/></svg><span>Mover anotação</span></button><button id="notebook-inspector-open-theme" type="button"><svg viewBox="0 0 24 24"><path d="M4 6h6l2 2h8v10H4z"/><path d="m14 12 2 2-2 2M16 14h-5"/></svg><span>Abrir outro tema</span></button><button id="notebook-inspector-flashcards" type="button"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>Transformar em flashcards</span></button><button id="notebook-inspector-share" type="button"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg><span>Compartilhar</span></button><button id="notebook-inspector-delete" class="danger" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></svg><span>Excluir anotação</span></button></section>
+<section class="note-side-card note-actions-card"><div class="note-side-title"><h3>ϟ Ações rápidas</h3></div><button id="notebook-inspector-edit" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-3L4 17v3Z"/><path d="m13.5 7.5 3 3"/></svg><span>Editar</span></button><button id="notebook-inspector-move" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h6l2 2h10v12H3z"/><path d="M7 13h9m-3-3 3 3-3 3"/></svg><span>Mover anotação</span></button><button id="notebook-inspector-open-theme" type="button"><svg viewBox="0 0 24 24"><path d="M4 6h6l2 2h8v10H4z"/><path d="m14 12 2 2-2 2M16 14h-5"/></svg><span>Abrir outro tema</span></button><button id="notebook-inspector-flashcards" type="button"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>Transformar em flashcards</span></button><button id="notebook-inspector-share" type="button"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg><span>Compartilhar</span></button><button id="notebook-inspector-delete" class="danger" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></svg><span>Excluir anotação</span></button></section>
 <section class="note-side-card note-tasks-card"><div class="note-side-title"><h3>☑ Tarefas do estudo</h3><button id="notebook-task-add" type="button">＋</button></div><div id="notebook-study-tasks" class="note-study-tasks"></div><button class="note-add-row" id="notebook-task-add-row" type="button">＋ Adicionar tarefa</button></section>
 <section class="note-side-card note-links-card"><div class="note-side-title"><h3>↗ Links e referências</h3><button id="notebook-reference-add" type="button">Adicionar</button></div><div id="notebook-reference-list" class="note-reference-list"><div class="note-reference-empty">Nenhuma referência adicionada</div></div></section>
 <section class="note-side-card note-details-card"><div class="note-side-title"><h3>▣ Informações da anotação</h3></div><dl><div><dt>Nome</dt><dd id="notebook-inspector-title">—</dd></div><div><dt>Área</dt><dd id="notebook-inspector-area">—</dd></div><div><dt>Matéria</dt><dd id="notebook-inspector-subject">—</dd></div><div><dt>Palavras</dt><dd id="notebook-inspector-words">0 palavras</dd></div><div><dt>Criada em</dt><dd id="notebook-inspector-created">—</dd></div><div><dt>Última edição</dt><dd id="notebook-inspector-updated">—</dd></div></dl><span id="notebook-inspector-book" hidden>—</span><button id="notebook-inspector-edit-hidden" hidden type="button">Editar</button></section>
-</aside>
+</aside></div><div id="notebook-task-modal" class="notebook-modal-backdrop" hidden>
+  <section class="notebook-modal notebook-task-modal" role="dialog" aria-modal="true" aria-labelledby="notebook-task-modal-title">
+    <div class="notebook-modal-head">
+      <div><span class="badge accent">Tarefa</span><h2 id="notebook-task-modal-title">Adicionar tarefa</h2></div>
+      <button id="notebook-task-modal-close" class="notebook-modal-close" type="button" aria-label="Fechar">×</button>
+    </div>
+    <label class="notebook-modal-field">
+      <span>Nova tarefa de estudo</span>
+      <input id="notebook-task-modal-input" type="text" maxlength="160" placeholder="Ex.: Revisar insuficiência cardíaca" autocomplete="off">
+    </label>
+    <div class="notebook-modal-actions">
+      <button id="notebook-task-modal-cancel" class="button secondary" type="button">Cancelar</button>
+      <button id="notebook-task-modal-save" class="button primary" type="button">Adicionar tarefa</button>
+    </div>
+  </section>
+</div>
+<div id="notebook-theme-picker" class="note-theme-picker" hidden><div class="note-theme-picker-card"><div class="note-theme-picker-head"><div><small>ANOTAÇÕES</small><h3>Abrir outro tema</h3></div><button id="notebook-theme-picker-close" type="button">×</button></div><input id="notebook-theme-picker-search" type="search" placeholder="Pesquisar tema, aula ou área..." autocomplete="off"><div id="notebook-theme-picker-list" class="note-theme-picker-list"></div></div></div>
 </div></section>
 
 <section
           id="notebook-view-library"
           class="notebook-view"
-          hidden
         >
+          <a href="/aprender/" class="luria-back-button" aria-label="Voltar para Aprender">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>Voltar para Aprender</span>
+          </a>
+          <section class="luria-page-spotlight" aria-label="Anotações"><div class="luria-page-spotlight-copy"><strong>Anotações</strong><small class="luria-page-spotlight-helper">Seus cadernos, resumos e notas de estudo.</small></div></section>
           <div class="notebook-view-head">
             <div>
               <h2>Meus Cadernos</h2>
@@ -186,6 +281,14 @@
                 Organize suas anotações por área e pelas aulas vinculadas.
               </p>
             </div>
+          </div>
+
+          <div id="notebook-notion-first-connect" class="notebook-notion-first-connect" hidden>
+            <div class="notebook-notion-first-connect-copy">
+              <strong>Conectar Notion</strong>
+              <span>Conecte uma vez para trazer suas páginas para a biblioteca de Anotações.</span>
+            </div>
+            <button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button>
           </div>
 
           <div class="notebook-library-search-controls">
@@ -336,24 +439,30 @@
     </main>
   </div>
 
-  <div id="notebook-task-modal" class="notebook-modal-backdrop" hidden>
-  <section class="notebook-modal notebook-task-modal" role="dialog" aria-modal="true" aria-labelledby="notebook-task-modal-title">
-    <div class="notebook-modal-head">
-      <div><span class="badge accent">Tarefa</span><h2 id="notebook-task-modal-title">Adicionar tarefa</h2></div>
-      <button id="notebook-task-modal-close" class="notebook-modal-close" type="button" aria-label="Fechar">×</button>
-    </div>
-    <label class="notebook-modal-field">
-      <span>Nova tarefa de estudo</span>
-      <input id="notebook-task-modal-input" type="text" maxlength="160" placeholder="Ex.: Revisar insuficiência cardíaca" autocomplete="off">
-    </label>
-    <div class="notebook-modal-actions">
-      <button id="notebook-task-modal-cancel" class="button secondary" type="button">Cancelar</button>
-      <button id="notebook-task-modal-save" class="button primary" type="button">Adicionar tarefa</button>
-    </div>
-  </section>
-</div>
+  <div id="notebook-notion-reader" class="notebook-notion-reader-backdrop" hidden>
+    <section class="notebook-notion-reader" role="dialog" aria-modal="true" aria-labelledby="notebook-notion-reader-title">
+      <header class="notebook-notion-reader-head">
+        <div>
+          <small>NOTION · conectado à LURIA</small>
+          <h2 id="notebook-notion-reader-title">Página do Notion</h2>
+          <span id="notebook-notion-reader-updated"></span>
+        </div>
+        <div class="notebook-notion-reader-actions">
+          <button id="notebook-notion-edit" class="button secondary compact-button" type="button">Editar</button>
+          <button id="notebook-notion-add-paragraph" class="button secondary compact-button" type="button" hidden>+ Parágrafo</button>
+          <button id="notebook-notion-save" class="button primary compact-button" type="button" hidden>Salvar</button>
+          <button id="notebook-notion-cancel-edit" class="button secondary compact-button" type="button" hidden>Cancelar</button>
+          <a id="notebook-notion-open-original" class="button secondary compact-button" href="#" target="_blank" rel="noopener noreferrer">Abrir no Notion</a>
+          <button id="notebook-notion-reader-close" class="notebook-modal-close" type="button" aria-label="Fechar">×</button>
+        </div>
+      </header>
+      <div id="notebook-notion-reader-content" class="notebook-notion-reader-content">
+        <div class="notebook-notion-empty"><strong>Carregando página...</strong></div>
+      </div>
+    </section>
+  </div>
 
-<div
+  <div
     id="notebook-free-modal"
     class="notebook-modal-backdrop"
     hidden
@@ -480,6 +589,14 @@
           >
             Criar 3 × 3
           </button>
+
+          <label class="button secondary compact-button notebook-table-image-label" for="notebook-table-image">
+            Ler imagem
+          </label>
+          <input id="notebook-table-image" type="file" accept="image/*" hidden>
+          <button id="notebook-table-read-image" class="button secondary compact-button" type="button">
+            Reconstruir tabela
+          </button>
         </section>
 
       </div>
@@ -589,7 +706,7 @@
     }
   </style>
 
-<script src="assets/js/caderno.js?v=20261016-editor-tools"></script>
+<script src="assets/js/caderno.js?v=20261016-editor-tools"></script>\n<script src="assets/js/caderno-notion-editor-fix.js?v=7"></script>
 <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>

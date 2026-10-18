@@ -12,17 +12,7 @@
     const own=q('#editais-own-content');
     if(!own || q('.ed-approved-hero')) return;
 
-    const hero=document.createElement('section');
-    hero.className='ed-approved-hero';
-    hero.innerHTML='<div><div class="ed-approved-breadcrumb">⌂ <span>›</span> Editais e Provas</div><h1>Editais e Provas</h1><p>Acompanhe editais, organize suas inscrições e gerencie suas provas em um só lugar.</p></div><div class="ed-approved-art" aria-hidden="true"></div>';
-    own.parentNode.insertBefore(hero, own);
-
-    const catalog=document.createElement('button');
-    catalog.className='ed-catalog-link';
-    catalog.type='button';
-    catalog.textContent='Central de editais';
-    catalog.addEventListener('click',()=>q('[data-editais-source="catalog"]')?.click());
-    own.parentNode.insertBefore(catalog, own);
+    /* Hero and catalog link now handled via standard Luria Spotlight header */
 
     const head=q('.exam-create-head',own);
     if(head && !q('.ed-new-exam',head)){

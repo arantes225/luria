@@ -53,6 +53,13 @@
     window.addEventListener("hashchange", fromHash);
     window.addEventListener("popstate", fromHash);
     window.addEventListener("luria:open-rooms", () => navigate("rooms"));
+    document.addEventListener("click", event => {
+      const btn = event.target.closest("[data-open-community]");
+      if (btn) {
+        event.preventDefault();
+        navigate(btn.dataset.openCommunity, true);
+      }
+    });
     document.querySelectorAll("[data-open-rooms]").forEach(button => button.addEventListener("click", () => navigate("rooms", true)));
     if (addFriend) addFriend.addEventListener("click", event => {
       event.preventDefault();

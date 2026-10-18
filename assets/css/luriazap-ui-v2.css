@@ -12,21 +12,235 @@
     & .luriazap-heading h1 {font-size:var(--ui-h1)!important;line-height:1.2!important;letter-spacing:-.035em!important;font-weight:700!important;color:var(--color-text-primary)!important;margin:.5rem 0 .75rem!important;}
     & .luriazap-heading p {font-size:var(--ui-body)!important;line-height:1.5!important;color:var(--color-text-secondary)!important;margin:0!important;}
     & #plantao-library {display:block!important;width:100%!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important;}
-    & #plantao-telefone {display:block!important;position:static!important;inset:auto!important;z-index:auto!important;width:100%!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;background:transparent!important;overflow:visible!important;}
-    & .plantao-phone-layout,
-    & .plantao-phone-layout > .plantao-phone-station,
-    & .plantao-phone-device,
-    & .plantao-phone-screen {position:static!important;inset:auto!important;display:block!important;width:100%!important;max-width:none!important;min-width:0!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;aspect-ratio:auto!important;transform:none!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;}
+    & #plantao-telefone {display:flex!important;justify-content:center!important;position:static!important;inset:auto!important;z-index:auto!important;width:100%!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0 auto!important;padding:10px 0 30px!important;background:transparent!important;overflow:visible!important;}
+    & #plantao-telefone {display:flex!important;justify-content:center!important;position:static!important;inset:auto!important;z-index:auto!important;width:100%!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0 auto!important;padding:10px 0 30px!important;background:transparent!important;overflow:visible!important;}
+    & .plantao-phone-layout {display:flex!important;justify-content:center!important;width:100%!important;max-width:530px!important;margin:0 auto!important;}
+    & .plantao-phone-station {display:flex!important;justify-content:center!important;width:100%!important;max-width:510px!important;position:relative!important;padding-bottom:26px!important;}
+    & .plantao-phone-station::after {
+      content:""!important;
+      display:block!important;
+      position:absolute!important;
+      bottom:6px!important;
+      left:50%!important;
+      transform:translateX(-50%)!important;
+      width:min(94%,480px)!important;
+      height:20px!important;
+      background:radial-gradient(ellipse at center,rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.2) 42%,transparent 74%)!important;
+      border-radius:50%!important;
+      filter:blur(8px)!important;
+      pointer-events:none!important;
+      z-index:0!important;
+    }
+    & .plantao-phone-device {
+      position:relative!important;
+      display:flex!important;
+      flex-direction:column!important;
+      width:100%!important;
+      max-width:486px!important;
+      min-height:750px!important;
+      height:clamp(740px,86vh,880px)!important;
+      margin:0 auto!important;
+      padding:10px!important;
+      border:12px solid #1a2331!important;
+      border-radius:54px!important;
+      background:#080c14!important;
+      box-shadow:0 0 0 1.5px #3a495d, 0 0 0 3px #0a0f18, 0 34px 80px -15px rgba(0,0,0,0.55), 0 16px 36px -8px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.18), inset 0 0 0 3px #04070d!important;
+      overflow:visible!important;
+      z-index:1!important;
+    }
+    /* Ear speaker slit at the top bezel */
+    & .plantao-phone-speaker {
+      position:absolute!important;
+      top:4px!important;
+      left:50%!important;
+      transform:translateX(-50%)!important;
+      width:46px!important;
+      height:3.5px!important;
+      background:#090e18!important;
+      border-radius:3px!important;
+      box-shadow:inset 0 1px 1px rgba(0,0,0,0.8), 0 0.5px 0 rgba(255,255,255,0.12)!important;
+      z-index:40!important;
+      pointer-events:none!important;
+    }
+    /* Physical side buttons */
+    & .plantao-phone-device::before {
+      content:""!important;
+      display:block!important;
+      position:absolute!important;
+      left:-15.5px!important;
+      top:110px!important;
+      width:4px!important;
+      height:30px!important;
+      background:linear-gradient(to right,#64748b,#1e293b)!important;
+      border-radius:3px 0 0 3px!important;
+      box-shadow:0 52px 0 0 #475569, 0 108px 0 0 #475569!important;
+      z-index:2!important;
+      pointer-events:none!important;
+    }
+    & .plantao-phone-device::after {
+      content:""!important;
+      display:block!important;
+      position:absolute!important;
+      right:-15.5px!important;
+      top:140px!important;
+      width:4px!important;
+      height:75px!important;
+      background:linear-gradient(to left,#64748b,#1e293b)!important;
+      border-radius:0 3px 3px 0!important;
+      z-index:2!important;
+      pointer-events:none!important;
+    }
+    & .plantao-phone-screen {
+      position:relative!important;
+      display:flex!important;
+      flex-direction:column!important;
+      width:100%!important;
+      height:100%!important;
+      min-height:0!important;
+      border-radius:42px!important;
+      background:var(--color-background)!important;
+      overflow:hidden!important;
+      flex:1 1 0!important;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08)!important;
+    }
+    & .plantao-phone-statusbar {
+      position:relative!important;
+      top:0!important;
+      left:0!important;
+      right:0!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:space-between!important;
+      width:100%!important;
+      height:48px!important;
+      min-height:48px!important;
+      max-height:48px!important;
+      padding:0 22px!important;
+      background:var(--color-surface)!important;
+      border-bottom:1px solid var(--color-border)!important;
+      color:var(--color-text-primary)!important;
+      box-sizing:border-box!important;
+      flex-shrink:0!important;
+      z-index:35!important;
+    }
+    & #plantao-phone-status-time {
+      display:block!important;
+      font-size:14px!important;
+      font-weight:750!important;
+      letter-spacing:-0.02em!important;
+      color:var(--color-text-primary)!important;
+      min-width:58px!important;
+      text-align:left!important;
+      line-height:1!important;
+    }
+    & .plantao-phone-notch {
+      position:absolute!important;
+      left:50%!important;
+      top:50%!important;
+      transform:translate(-50%,-50%)!important;
+      width:122px!important;
+      height:28px!important;
+      background:#000000!important;
+      border-radius:20px!important;
+      margin:0!important;
+      padding:0 10px!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:flex-end!important;
+      gap:8px!important;
+      flex-shrink:0!important;
+      z-index:36!important;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08), 0 2px 8px rgba(0,0,0,0.35)!important;
+      pointer-events:none!important;
+    }
+    & .plantao-island-camera {
+      display:block!important;
+      width:9.5px!important;
+      height:9.5px!important;
+      border-radius:50%!important;
+      background:#0a1320!important;
+      box-shadow:inset 0 0 0 1.5px #15253e!important;
+    }
+    & .plantao-island-sensor {
+      display:block!important;
+      width:6.5px!important;
+      height:6.5px!important;
+      border-radius:50%!important;
+      background:#06090e!important;
+      box-shadow:inset 0 0 0 1px #111b2b!important;
+    }
+    & .plantao-phone-status-icons {
+      display:flex!important;
+      align-items:center!important;
+      justify-content:flex-end!important;
+      gap:7px!important;
+      min-width:58px!important;
+      color:var(--color-text-primary)!important;
+      line-height:1!important;
+      transform:none!important;
+    }
+    & .plantao-phone-status-icons svg {
+      display:block!important;
+      stroke-linecap:round!important;
+      stroke-linejoin:round!important;
+    }
+    & .plantao-phone-signal,
+    & .plantao-phone-wifi,
+    & .plantao-phone-battery {
+      display:inline-flex!important;
+      align-items:center!important;
+      justify-content:center!important;
+      line-height:1!important;
+      width:auto!important;
+      height:auto!important;
+      border:0!important;
+      background:transparent!important;
+    }
+    & .plantao-phone-signal::before,
+    & .plantao-phone-signal::after,
+    & .plantao-phone-wifi::before,
+    & .plantao-phone-wifi::after,
+    & .plantao-phone-battery::before,
+    & .plantao-phone-battery::after {
+      display:none!important;
+      content:none!important;
+    }
+    & .plantao-phone-signal i,
+    & .plantao-phone-wifi i,
+    & .plantao-phone-battery i {
+      display:none!important;
+    }
+    & .plantao-phone-home-indicator {
+      display:block!important;
+      width:140px!important;
+      height:5px!important;
+      background:currentColor!important;
+      opacity:0.35!important;
+      border-radius:999px!important;
+      margin:10px auto 8px!important;
+      flex-shrink:0!important;
+    }
     & .plantao-phone-layout > .plantao-phone-station::before,
-    & .plantao-phone-layout > .plantao-phone-station::after,
-    & .plantao-phone-device::before,
-    & .plantao-phone-device::after,
-    & .plantao-phone-notch,
-    & .plantao-phone-statusbar,
     & .plantao-phone-page-back,
     & #plantao-phone-exit,
     & .luriazap-chat-decoration {display:none!important;}
-    & :is(.plantao-phone-inbox,.plantao-phone-chat-view) {position:relative!important;display:flex!important;flex-direction:column!important;min-width:0!important;min-height:0!important;height:auto!important;max-height:none!important;overflow:hidden!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;background:var(--color-surface)!important;box-shadow:var(--ui-shadow)!important;color:var(--color-text-primary)!important;}
+    & :is(.plantao-phone-inbox,.plantao-phone-chat-view) {
+      position:relative!important;
+      display:flex!important;
+      flex-direction:column!important;
+      flex:1 1 0!important;
+      width:100%!important;
+      height:100%!important;
+      min-width:0!important;
+      min-height:0!important;
+      max-height:100%!important;
+      overflow:hidden!important;
+      border:0!important;
+      border-radius:0!important;
+      background:var(--color-surface)!important;
+      box-shadow:none!important;
+      color:var(--color-text-primary)!important;
+    }
     & :is(.plantao-phone-inbox,.plantao-phone-chat-view,.plantao-phone-search-wrap,.plantao-phone-choices)[hidden] {display:none!important;}
     & .plantao-phone-chat-head {display:flex!important;align-items:center!important;gap:.75rem!important;min-height:76px!important;padding:1rem 1.25rem!important;background:var(--color-surface)!important;border:0!important;border-bottom:1px solid var(--color-border)!important;box-shadow:none!important;color:var(--color-text-primary)!important;}
     & .plantao-phone-brand {display:flex!important;align-items:center!important;gap:.75rem!important;min-width:0!important;margin:0!important;}
@@ -49,8 +263,7 @@
     & input::placeholder {color:var(--color-text-secondary)!important;opacity:1!important;}
     & .plantao-phone-inbox-toolbar {display:flex!important;flex-wrap:wrap!important;gap:.375rem 1rem!important;align-items:center!important;margin:0!important;padding:1rem 1.25rem!important;background:transparent!important;border:0!important;}
     & .plantao-phone-inbox-toolbar strong {display:none!important;}
-    & .plantao-phone-inbox-toolbar small {font-size:var(--ui-secondary)!important;line-height:1.5!important;color:var(--color-text-secondary)!important;}
-    & .plantao-phone-case-list {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-content:start!important;gap:.875rem!important;min-height:0!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0 1.25rem 1.25rem!important;background:transparent!important;}
+    & .plantao-phone-case-list {display:grid!important;grid-template-columns:1fr!important;align-content:start!important;gap:.75rem!important;flex:1 1 0!important;min-height:0!important;height:auto!important;max-height:100%!important;overflow-y:auto!important;overflow-x:hidden!important;margin:0!important;padding:0 1rem 1.25rem!important;background:transparent!important;}
     & .plantao-phone-conversation {display:grid!important;grid-template-columns:48px minmax(0,1fr) 20px!important;align-items:center!important;gap:.875rem!important;width:100%!important;min-width:0!important;margin:0!important;padding:1rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;box-shadow:none!important;text-align:left!important;cursor:pointer!important;}
     & :is(.plantao-phone-conversation-avatar,.plantao-phone-contact-avatar) {display:grid!important;place-items:center!important;width:48px!important;height:48px!important;min-width:0!important;padding:0!important;border:1px solid var(--color-border)!important;border-radius:50%!important;background:var(--color-primary-subtle)!important;box-shadow:none!important;overflow:hidden!important;}
     & .plantao-phone-profile-avatar {width:100%!important;height:100%!important;min-width:0!important;border:0!important;border-radius:50%!important;background:transparent!important;box-shadow:none!important;color:var(--color-primary-text)!important;}

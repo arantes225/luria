@@ -22,7 +22,7 @@
     .books-page>.luria-page-spotlight{margin:0!important}
     .books-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
     .books-search{flex:1 1 520px;max-width:620px}
-    .books-search input{width:100%;height:44px;min-height:44px;padding:0 15px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font:inherit;font-size:10px;outline:none;box-sizing:border-box}
+    .books-search input{width:100%;height:44px;min-height:44px;padding:0 15px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-size:12.5px;outline:none;box-sizing:border-box}
     .books-search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
     .books-search-count{color:var(--muted);font-size:11px;white-space:nowrap}
 
@@ -36,7 +36,7 @@
 
     .books-row{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:100%;padding:3px 2px 8px;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 55%,transparent) transparent}
     .books-row::-webkit-scrollbar{height:7px}.books-row::-webkit-scrollbar-track{background:transparent}.books-row::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 55%,transparent);border-radius:999px}
-    .book-card{flex:0 0 210px;width:210px;min-height:190px;padding:17px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--text);overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%);border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border));border-left:5px solid var(--accent);border-radius:13px;box-shadow:none}
+    .book-card{flex:0 0 210px;width:210px;min-height:190px;padding:17px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--text);overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%);border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border));border-left:5px solid var(--accent);border-radius:12px;box-shadow:none}
     .book-card:hover{border-color:color-mix(in srgb,var(--accent) 62%,var(--border));background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
     .book-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
     .book-card-icon{width:35px;height:35px;min-width:35px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 11%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
@@ -75,6 +75,10 @@
     <main class="main"><div class="page">
       <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
       <section class="books-page">
+        <a href="/aprender/" class="luria-back-button" aria-label="Voltar para Aprender">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Voltar para Aprender</span>
+        </a>
         <section class="luria-page-spotlight" aria-label="Apostilas">
           <div class="luria-page-spotlight-copy">
             <strong>Apostilas</strong>

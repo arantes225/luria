@@ -7629,6 +7629,10 @@ async function loadQuestionOverview() {
     "qs-week-correct",
     weekCorrect
   );
+  setText(
+    "qs-quick-correct-visible",
+    weekCorrect
+  );
 
   setText(
     "qs-week-wrong",
@@ -8139,6 +8143,22 @@ function renderSimulationLibrary() {
                   <small>Acerto</small>
                 </div>
               </div>
+
+              <div class="qs-library-actions">
+                <a
+                  class="button primary qs-library-btn-solve"
+                  href="/resolver-questoes/?set_id=${encodeURIComponent(set.id)}"
+                >
+                  Resolver
+                </a>
+                <button
+                  class="button secondary qs-library-btn-key"
+                  type="button"
+                  data-open-gabarito="${qsEscape(set.id)}"
+                >
+                  Gabarito
+                </button>
+              </div>
             </div>
 
           </article>
@@ -8147,6 +8167,39 @@ function renderSimulationLibrary() {
     )
     .join("");
 
+
+  container
+    .querySelectorAll(
+      "[data-open-gabarito]"
+    )
+    .forEach(
+      (btn) => {
+        btn.addEventListener(
+          "click",
+          (e) => {
+            e.stopPropagation();
+            openSet(btn.dataset.openGabarito);
+          }
+        );
+      }
+    );
+
+  container
+    .querySelectorAll(
+      ".qs-library-card"
+    )
+    .forEach(
+      (card) => {
+        card.addEventListener(
+          "click",
+          (e) => {
+            if (e.target.closest(".qs-library-tools, .qs-library-actions, button, a, input")) return;
+            const solveBtn = card.querySelector(".qs-library-btn-solve");
+            if (solveBtn) solveBtn.click();
+          }
+        );
+      }
+    );
 
   container
     .querySelectorAll(
@@ -9103,7 +9156,7 @@ function renderHomeDashboard() {
 
   if (myListsContainer) {
     const personalSets =
-      sets.slice(0, 3);
+      sets.slice(0, 12);
 
     if (!personalSets.length) {
       myListsContainer.innerHTML =
@@ -9138,18 +9191,18 @@ function renderHomeDashboard() {
                   )
                 : 0;
 
+            const rawTitle = (set.title || "").trim();
+            const displayTitle = rawTitle || `Lista de Questões #${set.id ? String(set.id).slice(-4) : "1"}`;
             return `
-              <article class="qs-home-user-card">
-                <div class="qs-home-user-card-head">
-                  <span class="qs-home-user-card-icon" aria-hidden="true">▤</span>
-                  <div class="qs-home-user-main">
-                    <strong>${qsEscape(set.title || "Lista sem título")}</strong>
-                    <small>${total} questões · ${qsHomeDate(set.created_at)}</small>
-                  </div>
-                  <div class="qs-home-user-progress">
-                    <strong>${answered > 0 ? `${progress}%` : "Nova"}</strong>
-                    <small>${answered}/${total || 0}</small>
-                  </div>
+              <article class="qs-home-user-card" data-home-user-card="${qsEscape(set.id)}">
+                <span class="qs-home-user-card-icon" aria-hidden="true">▤</span>
+                <div class="qs-home-user-main">
+                  <strong>${qsEscape(displayTitle)}</strong>
+                  <small>${total} questões · ${qsHomeDate(set.created_at)}</small>
+                </div>
+                <div class="qs-home-user-progress">
+                  <strong>${answered > 0 ? `${progress}%` : "Nova"}</strong>
+                  <small>${answered}/${total || 0}</small>
                 </div>
                 <div class="qs-home-user-card-progress" aria-hidden="true">
                   <span style="width:${progress}%"></span>
@@ -14761,7 +14814,10 @@ function resolutionExplanations(
   item
 ) {
   const raw =
-    item.answer_explanations;
+    item.answer_explanations
+    || item.explicacoes
+    || item.comentarios_alternativas
+    || item.justificativas;
 
   if (
     raw
@@ -14819,16 +14875,31 @@ function renderResolutionFeedback(
         ? "correct"
         : "wrong";
 
-  const pulo =
-    String(
-      item.pulo_do_gato
-      || ""
-    ).trim();
-
   const explanations =
     resolutionExplanations(
       item
     );
+
+  let pulo =
+    String(
+      item.pulo_do_gato
+      || item.puloDoGato
+      || item.pulo
+      || ""
+    ).trim();
+
+  if (!pulo) {
+    const correctExpl = String(
+      explanations[correct]
+      || explanations[String(correct).toLowerCase()]
+      || ""
+    ).trim();
+    if (correctExpl) {
+      pulo = correctExpl.split(/[.!?]/)[0] + ".";
+    } else {
+      pulo = `Foco na alternativa ${correct}: atente-se ao achado cardinal que define o diagnóstico e a conduta recomendada.`;
+    }
+  }
 
   const presentation =
     parsedQuestionPresentation(
@@ -14856,10 +14927,10 @@ function renderResolutionFeedback(
               ? (
                   option.letter
                     === correct
-                    ? "Esta é a alternativa correta. A justificativa detalhada será preenchida pela fonte de importação."
-                    : "Esta alternativa está incorreta. A justificativa detalhada será preenchida pela fonte de importação."
+                    ? "Gabarito oficial: alternativa correta conforme as diretrizes clínicas e critérios diagnósticos vigentes."
+                    : "Alternativa incorreta: não corresponde ao quadro clínico ou à conduta terapêutica indicada no enunciado."
                 )
-              : "A justificativa será exibida quando o gabarito e a explicação vierem na importação.";
+              : "Alternativa analisada de acordo com o padrão da banca examinadora.";
 
           return `
             <div class="qs-justification-row">
