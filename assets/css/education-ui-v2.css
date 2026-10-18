@@ -221,7 +221,7 @@
   }
   /* Viewport-fit for questions resolution (no window scroll on desktop) */
   @media(min-width: 1024px) {
-    body[data-ui="v2"][data-page="questoes"]:has(#qr-layout) .main {height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important;}
+    body[data-ui="v2"][data-page="questoes"]:has(#qr-layout) .main > .page {height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important;}
     body[data-ui="v2"][data-page="questoes"]:has(#qr-layout) .page {height:100%!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding-bottom:0!important;}
     body[data-ui="v2"][data-page="questoes"] .main .qr-navrow {flex:0 0 auto!important;margin-bottom:0.5rem!important;}
     body[data-ui="v2"][data-page="questoes"] .main .qr-layout {flex:1 1 auto!important;min-height:0!important;height:100%!important;max-height:100%!important;display:grid!important;grid-template-columns:minmax(0,1fr) 300px!important;gap:1.25rem!important;overflow:hidden!important;margin:0!important;}
@@ -254,7 +254,7 @@
 
   /* Viewport-fit for Caderno de Erros Revisão (no window scroll on desktop) */
   @media(min-width: 1024px) {
-    body[data-ui="v2"][data-page="erros"].error-review-page .main {height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important;}
+    body[data-ui="v2"][data-page="erros"].error-review-page .main > .page {height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important;}
     body[data-ui="v2"][data-page="erros"].error-review-page .page {height:100%!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding-bottom:0!important;}
     body[data-ui="v2"][data-page="erros"].error-review-page .error-review-topline {flex:0 0 auto!important;margin-bottom:0.5rem!important;}
     body[data-ui="v2"][data-page="erros"].error-review-page .error-review-page-grid {flex:1 1 auto!important;min-height:0!important;height:100%!important;max-height:100%!important;display:grid!important;grid-template-columns:260px minmax(0,1fr) 260px!important;grid-template-areas:"next center metrics"!important;gap:1rem!important;overflow:hidden!important;padding:0!important;}
@@ -327,7 +327,7 @@
   body[data-ui="v2"][data-page="desafio"] .main #daily-submit {background:var(--ui-pill-gradient,var(--color-primary))!important;color:#fff!important;border:0!important;border-radius:12px!important;min-height:42px!important;padding:0.6rem 1.5rem!important;font-weight:700!important;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 28%,transparent)!important;}
   body[data-ui="v2"][data-page="desafio"] .main #daily-answer {border-radius:12px!important;padding-left:1.25rem!important;padding-right:1.25rem!important;}
   @media(min-width: 1024px) {
-    body[data-ui="v2"][data-page="desafio"] .main {height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important;}
+    body[data-ui="v2"][data-page="desafio"] .main > .page {height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important;}
     body[data-ui="v2"][data-page="desafio"] .page {height:100%!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding-bottom:0!important;}
     body[data-ui="v2"][data-page="desafio"] .daily-shell {flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;}
   }
