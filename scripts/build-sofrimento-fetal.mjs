@@ -187,7 +187,7 @@ const deepSections = [
         'E) Diâmetro biparietal corrigido pelo fêmur.'
       ]],
       ['p', '<strong>Gabarito Comentado: Alternativa C.</strong><br>' +
-        'O PVS-ACM &gt; 1,5 MoM apresenta sensibilidade superior a 95% para anemia fetal grave, substituindo a amniocentese com espectrofotometria (curva de Liley).' consultants.'],
+        'O PVS-ACM &gt; 1,5 MoM apresenta sensibilidade superior a 95% para anemia fetal grave, substituindo a amniocentese com espectrofotometria (curva de Liley).'],
 
       ['3', 'Questão 4: Significado da Onda "a" Reversa no Ducto Venoso (SCMSP)'],
       ['p', 'Em um feto com restrição de crescimento intrauterino extremo com 29 semanas, o Doppler do Ducto Venoso revela índice de pulsatilidade elevado com onda "a" reversa (negativa). Esse achado hemodinâmico indica:'],

@@ -1,0 +1,2309 @@
+{
+  "v": 2,
+  "s": "sofrimento-fetal-e-avaliacao-da-vitalidade-fetal",
+  "slug": "sofrimento-fetal-e-avaliacao-da-vitalidade-fetal",
+  "t": "Sofrimento Fetal e Avaliação da Vitalidade Fetal",
+  "title": "Sofrimento Fetal e Avaliação da Vitalidade Fetal",
+  "p": "Tratado completo sobre Sofrimento Fetal Agudo e Crônico e Métodos de Avaliação da Vitalidade Fetal: fisiologia da oxigenação fetal e centralização (brain-sparing), cardiotocografia anteparto e intraparto segundo FIGO e ACOG, análise minuciosa dos quatro tipos de desacelerações (DIP 1, DIP 2, DIP 3 e sinusoidal), Perfil Biofísico Fetal (PBF de Manning), Dopplervelocimetria obstétrica avançada (artéria umbilical com diástole zero/reversa, artéria cerebral média com PVS > 1,5 MoM e ducto venoso com onda \"a\" reversa), casos clínicos integradores e questões comentadas de residência médica.",
+  "o": [
+    [
+      "principio",
+      "1. Princípios fisiológicos"
+    ],
+    [
+      "indicacoes",
+      "2. Quem deve receber vigilância anteparto?"
+    ],
+    [
+      "movimentos",
+      "3. Movimentos fetais"
+    ],
+    [
+      "ctg-anteparto",
+      "4. Cardiotocografia anteparto / Nonstress test"
+    ],
+    [
+      "ctg-parametros",
+      "5. Como ler os parâmetros da FCF"
+    ],
+    [
+      "pbf",
+      "6. Perfil Biofísico Fetal"
+    ],
+    [
+      "liquido",
+      "7. Líquido amniótico"
+    ],
+    [
+      "doppler",
+      "8. Dopplervelocimetria obstétrica"
+    ],
+    [
+      "rcf",
+      "9. RCF: como o Doppler muda a vigilância"
+    ],
+    [
+      "situacoes",
+      "10. Situações especiais"
+    ],
+    [
+      "intraparto",
+      "11. CTG intraparto: um capítulo diferente"
+    ],
+    [
+      "integracao",
+      "12. Integração dos métodos"
+    ],
+    [
+      "armadilhas",
+      "13. Armadilhas frequentes"
+    ],
+    [
+      "casos",
+      "14. Casos clínicos integradores"
+    ],
+    [
+      "decisoes-resolvidas-vitalidade",
+      "Interpretação aplicada — cinco decisões que mudam a conduta"
+    ],
+    [
+      "revisao",
+      "15. Revisão de alto rendimento"
+    ],
+    [
+      "editorial-depth-avaliacao-vitalidade-fetal",
+      "Aprofundamento: mecanismos, diferenciais e conduta"
+    ],
+    [
+      "vitalidade-livro-40k",
+      "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade"
+    ],
+    [
+      "seguranca-sinal-ctg",
+      "15A. Segurança da cardiotocografia: qualidade do sinal, pulso materno e decisões proporcionais"
+    ],
+    [
+      "raciocinio-avancado-avaliacao-vitalidade-fetal",
+      "Raciocínio avançado e situações de risco"
+    ],
+    [
+      "fisiologia-oxigenacao-centralizacao",
+      "Fisiologia da Oxigenação Fetal e Centralização"
+    ],
+    [
+      "cardiotocografia-intraparto-figo-desaceleracoes",
+      "Cardiotocografia Intraparto Completa (FIGO)"
+    ],
+    [
+      "perfil-biofisico-fetal-manning",
+      "Perfil Biofísico Fetal (PBF de Manning)"
+    ],
+    [
+      "dopplerfluxometria-obstetrica-avancada",
+      "Dopplervelocimetria Obstétrica Avançada"
+    ],
+    [
+      "casos-clinicos-integradores-sofrimento-fetal",
+      "Casos Clínicos Resolvidos de Sofrimento Fetal"
+    ],
+    [
+      "questoes-comentadas-residencia-sofrimento",
+      "Questões de Concursos e Residência Médica Comentadas"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Sofrimento Fetal e Avaliação da Vitalidade Fetal",
+    "Tratado completo sobre Sofrimento Fetal Agudo e Crônico e Métodos de Avaliação da Vitalidade Fetal: fisiologia da oxigenação fetal e centralização (brain-sparing), cardiotocografia anteparto e intraparto segundo FIGO e ACOG, análise minuciosa dos quatro tipos de desacelerações (DIP 1, DIP 2, DIP 3 e sinusoidal), Perfil Biofísico Fetal (PBF de Manning), Dopplervelocimetria obstétrica avançada (artéria umbilical com diástole zero/reversa, artéria cerebral média com PVS > 1,5 MoM e ducto venoso com onda \"a\" reversa), casos clínicos integradores e questões comentadas de residência médica.",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Obstetrícia e Medicina Fetal",
+      "Tema: Sofrimento Fetal e Avaliação da Vitalidade Fetal"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "principio",
+      0,
+      [
+        [
+          "2",
+          "1. Princípios fisiológicos"
+        ],
+        [
+          "p",
+          "<h2>1. Princípios fisiológicos</h2>"
+        ],
+        [
+          "p",
+          "A vigilância fetal funciona porque hipóxia e insuficiência placentária provocam respostas fisiológicas relativamente previsíveis. O feto primeiro redistribui fluxo para órgãos nobres, depois reduz atividades biofísicas e, em deterioração avançada, surgem alterações cardiovasculares e ácido-básicas."
+        ],
+        [
+          "p",
+          "<div class=\"flow\"><div class=\"flow-step\">Insuficiência placentária / hipóxia</div><div class=\"flow-step\">Redistribuição de fluxo</div><div class=\"flow-step\">Menos movimentos e respiração</div><div class=\"flow-step\">Alterações da FCF</div><div class=\"flow-step\">Acidemia / falência</div></div>"
+        ],
+        [
+          "3",
+          "O que cada método enxerga?"
+        ],
+        [
+          "t",
+          [
+            "Método",
+            "O que avalia",
+            "Janela fisiológica"
+          ],
+          [
+            [
+              "Movimentos fetais",
+              "Atividade motora percebida pela gestante",
+              "Sinal clínico precoce e inespecífico"
+            ],
+            [
+              "CTG/NST",
+              "Reatividade autonômica da FCF",
+              "Estado agudo de oxigenação/SNA"
+            ],
+            [
+              "PBF",
+              "FCF + movimentos + respiração + tônus + líquido",
+              "Combina sinais agudos e crônicos"
+            ],
+            [
+              "Líquido amniótico",
+              "Produção urinária e equilíbrio hídrico fetal",
+              "Reflete fenômeno mais crônico"
+            ],
+            [
+              "Doppler AU",
+              "Resistência placentária",
+              "Insuficiência placentária"
+            ],
+            [
+              "Doppler ACM",
+              "Redistribuição cerebral/anemia por PSV",
+              "Adaptação fetal selecionada"
+            ],
+            [
+              "Ducto venoso",
+              "Hemodinâmica venosa/cardiaca",
+              "Deterioração avançada em cenários selecionados"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<div class=\"book-alert\"><strong>Importante</strong>Nenhum teste deve ser interpretado sem idade gestacional, motivo da vigilância, condição materna, crescimento fetal e tendência seriada.</div>"
+        ]
+      ]
+    ],
+    [
+      "indicacoes",
+      0,
+      [
+        [
+          "2",
+          "2. Quem deve receber vigilância anteparto?"
+        ],
+        [
+          "p",
+          "<h2>2. Quem deve receber vigilância anteparto?</h2>"
+        ],
+        [
+          "p",
+          "A vigilância não é “rotina para toda gestação”. Ela é mais útil quando existe risco aumentado de óbito fetal e quando o resultado do teste pode mudar conduta."
+        ],
+        [
+          "p",
+          "<div class=\"book-grid-2\">\r\n<div class=\"book-mini\"><strong>Maternas</strong>"
+        ],
+        [
+          "u",
+          [
+            "diabetes pré-gestacional;",
+            "hipertensão crônica/pré-eclâmpsia;",
+            "doença renal;",
+            "doença autoimune selecionada;",
+            "cardiopatias de maior risco."
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>Fetais/placentárias</strong>"
+        ],
+        [
+          "u",
+          [
+            "RCF;",
+            "oligodrâmnio;",
+            "gestação múltipla conforme corionicidade;",
+            "aloimunização;",
+            "malformações selecionadas;",
+            "redução de movimentos."
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>Obstétricas</strong>"
+        ],
+        [
+          "u",
+          [
+            "pós-datismo;",
+            "história obstétrica de maior risco;",
+            "RPM em contexto selecionado;",
+            "sangramento/trauma conforme quadro."
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>Quando começar?</strong>"
+        ],
+        [
+          "p",
+          "Depende da doença, da idade gestacional em que o parto seria uma opção e da magnitude do risco. Em muitos cenários, a vigilância inicia por volta de 32 semanas; em risco alto pode começar antes."
+        ],
+        [
+          "p",
+          "A frequência também é individualizada. Não transforme “1–2 vezes/semana” em regra universal: o risco clínico e a velocidade esperada de deterioração determinam a periodicidade."
+        ]
+      ]
+    ],
+    [
+      "movimentos",
+      0,
+      [
+        [
+          "2",
+          "3. Movimentos fetais"
+        ],
+        [
+          "p",
+          "<h2>3. Movimentos fetais</h2>"
+        ],
+        [
+          "3",
+          "O que importa de verdade"
+        ],
+        [
+          "p",
+          "Não existe um único número universal que substitua a percepção materna habitual. A gestante aprende o padrão do próprio feto; uma queda clara e persistente em relação ao habitual deve ser valorizada mesmo que um protocolo de contagem ainda não tenha atingido um ponto de corte."
+        ],
+        [
+          "3",
+          "Contagem estruturada"
+        ],
+        [
+          "p",
+          "Protocolos podem usar diferentes métodos. Uma opção prática é observar movimentos em período de maior atividade fetal, em repouso e após refeição. Métodos formais variam entre serviços; por isso, a orientação deve ser institucional e simples."
+        ],
+        [
+          "p",
+          "<div class=\"book-grid-2\"><div class=\"book-mini\"><strong>Mais tranquilizador</strong>"
+        ],
+        [
+          "u",
+          [
+            "movimentação semelhante ao padrão habitual;",
+            "sem comorbidade de alto risco;",
+            "sem sangramento/dor/rotura;",
+            "avaliação adicional normal quando indicada."
+          ]
+        ],
+        [
+          "p",
+          "</div><div class=\"book-mini\"><strong>Mais preocupante</strong>"
+        ],
+        [
+          "u",
+          [
+            "redução abrupta e sustentada;",
+            "ausência de movimentos percebidos;",
+            "RCF, HAS, diabetes, oligoâmnio;",
+            "associação com sangramento, dor ou sintomas maternos."
+          ]
+        ],
+        [
+          "3",
+          "Conduta"
+        ],
+        [
+          "p",
+          "Redução persistente de movimentos deve levar a avaliação obstétrica, geralmente com ausculta/FCF e, conforme idade gestacional e risco, CTG e ultrassonografia com líquido amniótico, crescimento e Doppler quando indicado."
+        ]
+      ]
+    ],
+    [
+      "ctg-anteparto",
+      0,
+      [
+        [
+          "2",
+          "4. Cardiotocografia anteparto / Nonstress test"
+        ],
+        [
+          "p",
+          "<h2>4. Cardiotocografia anteparto / Nonstress test</h2>"
+        ],
+        [
+          "3",
+          "O que o exame registra?"
+        ],
+        [
+          "p",
+          "Um transdutor Doppler registra a FCF e um tocodinamômetro registra atividade uterina. No anteparto, o teste busca principalmente a <strong>reatividade da FCF</strong> associada à movimentação fetal."
+        ],
+        [
+          "p",
+          "<figure class=\"book-figure\" id=\"ctg-anteparto-real\"><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Ampliar a cardiotocografia clínica real\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg\" loading=\"lazy\" decoding=\"async\" alt=\"Cardiotocografia real anteparto; A: frequência cardíaca fetal, B: marcação de movimento pela gestante, C: movimentos fetais registrados e D: contrações uterinas\" style=\"display:block;width:100%;height:auto;object-fit:contain;max-height:none\"></a><figcaption><strong>Registro real de cardiotocografia anteparto (ampliável).</strong> A: frequência cardíaca fetal; B: marcação da gestante; C: movimentos fetais; D: atividade uterina. A presença de contrações no canal inferior não transforma, por si só, esse registro em traçado intraparto. <strong>Autor: PhantomSteve.</strong> <a href=\"https://commons.wikimedia.org/wiki/File:CTG_Output.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY-SA 3.0</a>; sem alterações do arquivo. <a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Ampliar exame ↗</a></figcaption></figure>"
+        ],
+        [
+          "3",
+          "Leitura sistemática em cinco passos"
+        ],
+        [
+          "o",
+          [
+            "<strong>Contexto:</strong> idade gestacional, indicação, medicações, movimentos fetais e qualidade do registro.",
+            "<strong>Linha de base:</strong> estimar a FCF média em 10 minutos.",
+            "<strong>Variabilidade:</strong> verificar se é ausente, mínima, moderada ou acentuada.",
+            "<strong>Acelerações e desacelerações:</strong> procurar o padrão e sua persistência.",
+            "<strong>Conclusão e plano:</strong> avaliar reatividade e necessidade de prolongar o registro, realizar PBF ou investigação adicional."
+          ]
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Como usar este traçado na prática</strong>O papel tem duas curvas diferentes: acima está a frequência cardíaca fetal; abaixo, a atividade uterina. A tocografia externa informa a frequência e a duração aproximada das contrações, mas não mede com precisão a intensidade intrauterina. Avalie sempre qualidade do sinal e possibilidade de captação da frequência cardíaca materna.</div>"
+        ],
+        [
+          "3",
+          "Reatividade"
+        ],
+        [
+          "t",
+          [
+            "IG",
+            "Aceleração esperada",
+            "Interpretação"
+          ],
+          [
+            [
+              "≥32 semanas",
+              "≥15 bpm por ≥15 s",
+              "Duas ou mais acelerações em janela apropriada tornam o teste reativo"
+            ],
+            [
+              "&lt;32 semanas",
+              "Critério 10 × 10 pode ser usado",
+              "Evita falso “não reativo” por imaturidade"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O exame costuma começar com 20 minutos e pode ser prolongado até 40 minutos para contemplar ciclo de sono. Estímulo vibroacústico pode reduzir falsos positivos em contextos selecionados."
+        ],
+        [
+          "3",
+          "Reativa × não reativa"
+        ],
+        [
+          "t",
+          [
+            "Resultado",
+            "Significado",
+            "Próximo passo"
+          ],
+          [
+            [
+              "Reativa",
+              "Tranquilizadora naquele momento",
+              "Repetir conforme condição de base"
+            ],
+            [
+              "Não reativa",
+              "Não tranquilizadora, mas inespecífica",
+              "Prolongar/estimular e/ou complementar com PBF/USG"
+            ],
+            [
+              "Desacelerações repetidas",
+              "Eleva preocupação",
+              "Interpretar padrão, clínica e necessidade de investigação/intervenção"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato</strong>Anteparto, “não reativa” é uma chamada para investigar mais — não é a mesma coisa que “Categoria III” intraparto.</div>"
+        ]
+      ]
+    ],
+    [
+      "ctg-parametros",
+      0,
+      [
+        [
+          "2",
+          "5. Como ler os parâmetros da FCF"
+        ],
+        [
+          "p",
+          "<h2>5. Como ler os parâmetros da FCF</h2>"
+        ],
+        [
+          "3",
+          "Linha de base"
+        ],
+        [
+          "p",
+          "É a média aproximada em 10 minutos, excluindo acelerações, desacelerações e períodos marcadamente irregulares. Em geral, <strong>110–160 bpm</strong> é a faixa normal."
+        ],
+        [
+          "3",
+          "Variabilidade"
+        ],
+        [
+          "t",
+          [
+            "Amplitude",
+            "Descrição",
+            "Leitura"
+          ],
+          [
+            [
+              "Indetectável",
+              "Ausente",
+              "Preocupante se persistente e associada a outros achados"
+            ],
+            [
+              "≤5 bpm",
+              "Mínima",
+              "Sono, prematuridade, fármaco ou hipóxia"
+            ],
+            [
+              "6–25 bpm",
+              "Moderada",
+              "Achado tranquilizador"
+            ],
+            [
+              "&gt;25 bpm",
+              "Acentuada",
+              "Interpretar duração e contexto"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Acelerações"
+        ],
+        [
+          "p",
+          "São sinal de integridade autonômica e tendem a acompanhar movimentos fetais. Ausência isolada não prova acidemia."
+        ],
+        [
+          "3",
+          "Desacelerações"
+        ],
+        [
+          "p",
+          "Anteparto, desacelerações recorrentes exigem atenção, mas a classificação “precoce/tardia/variável” ganha maior relevância no intraparto, quando podem ser relacionadas às contrações."
+        ],
+        [
+          "3",
+          "Roteiro de leitura do traçado"
+        ],
+        [
+          "p",
+          "Confira velocidade do papel, qualidade do sinal e possibilidade de registrar pulso materno. Estime linha de base excluindo acelerações e desacelerações; descreva variabilidade, acelerações e desacelerações, relacionando estas últimas às contrações. Só depois formule a interpretação. “Reativo” não é sinônimo de “qualquer traçado com uma subida”. No NST a partir de 32 semanas, procuram-se pelo menos duas acelerações de 15 bpm com 15 segundos; antes de 32 semanas utiliza-se habitualmente 10 bpm por 10 segundos. A observação pode precisar alcançar 40 minutos por ciclo de sono."
+        ],
+        [
+          "p",
+          "Um traçado não reativo sem outros sinais não prova acidemia: demanda avaliação adicional. Já uma deterioração persistente exige revisão rápida do contexto. Não aplicar critérios de NST anteparto para classificar um traçado intraparto, no qual contrações e resposta fetal têm outra função interpretativa."
+        ]
+      ]
+    ],
+    [
+      "pbf",
+      0,
+      [
+        [
+          "2",
+          "6. Perfil Biofísico Fetal"
+        ],
+        [
+          "p",
+          "<h2>6. Perfil Biofísico Fetal</h2>"
+        ],
+        [
+          "p",
+          "O PBF clássico combina cinco componentes, cada um pontuado em 0 ou 2: NST/FCF, movimentos respiratórios, movimentos corporais, tônus e líquido amniótico."
+        ],
+        [
+          "t",
+          [
+            "Componente",
+            "Critério típico para 2 pontos"
+          ],
+          [
+            [
+              "NST/FCF",
+              "Reativo"
+            ],
+            [
+              "Respiração",
+              "≥1 episódio de respiração fetal com duração ≥30 segundos em até 30 minutos"
+            ],
+            [
+              "Movimentos corporais",
+              "≥3 movimentos distintos de corpo ou membros em até 30 minutos"
+            ],
+            [
+              "Tônus",
+              "≥1 episódio de extensão ativa com retorno à flexão em até 30 minutos"
+            ],
+            [
+              "Líquido",
+              "Maior bolsão vertical livre de cordão/partes fetais &gt;2 cm (critério adotado aqui) de líquido"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Interpretação"
+        ],
+        [
+          "t",
+          [
+            "Escore",
+            "Leitura prática"
+          ],
+          [
+            [
+              "8–10",
+              "Geralmente tranquilizador, desde que o líquido seja adequado"
+            ],
+            [
+              "6",
+              "Equívoco: repetir em curto intervalo ou considerar parto conforme IG/risco"
+            ],
+            [
+              "≤4",
+              "Anormal: exige avaliação rápida do contexto e frequentemente consideração de parto"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O <strong>líquido amniótico tem peso especial</strong>, porque representa fenômeno mais crônico. Um escore “bom” com oligodrâmnio não deve ser tratado como totalmente tranquilizador."
+        ],
+        [
+          "3",
+          "PBF modificado"
+        ],
+        [
+          "p",
+          "Combina NST com avaliação do líquido amniótico. É menos demorado e pode ser útil em vigilância seriada."
+        ],
+        [
+          "p",
+          "<div class=\"book-alert\"><strong>Não use escore como piloto automático</strong>Idade gestacional, causa de base, tendência, crescimento e Doppler podem mudar completamente a conduta diante do mesmo número.</div>"
+        ],
+        [
+          "3",
+          "Como pontuar e interpretar um exame real"
+        ],
+        [
+          "p",
+          "No PBF clássico, cada componente recebe <strong>0 ou 2 pontos</strong>; não usar 1 ponto para um achado “quase normal”. Observar os componentes ultrassonográficos por até 30 minutos antes de atribuir ausência. Sono fetal, prematuridade e medicamentos podem modificar a atividade: registrar contexto e duração."
+        ],
+        [
+          "p",
+          "<details class=\"clinical-case\"><summary>Exercício — calcule antes de abrir a resposta</summary>"
+        ],
+        [
+          "p",
+          "Gestação de 34 semanas: NST reativo, quatro movimentos corporais, extensão seguida de flexão, maior bolsão vertical de 3 cm e nenhum episódio respiratório de 30 segundos durante observação completa."
+        ],
+        [
+          "p",
+          "<strong>Resposta:</strong> 2 + 2 + 2 + 2 + 0 = 8/10. Com líquido normal, o resultado é tranquilizador no contexto adequado. Se o bolsão fosse inferior ao critério, a pontuação cairia e o líquido alterado exigiria avaliação própria. Um total favorável não anula oligodrâmnio, restrição de crescimento ou deterioração clínica."
+        ],
+        [
+          "p",
+          "Resultado 6/10 é equívoco: a idade gestacional e o contexto definem repetição em curto prazo ou avaliação de parto. Resultado ≤4/10 é anormal e exige avaliação obstétrica imediata, sem transformar a pontuação isolada em indicação automática de uma via de parto."
+        ],
+        [
+          "p",
+          "Fonte: <a href=\"https://www.acog.org/womens-health/faqs/special-tests-for-monitoring-fetal-well-being\">ACOG — testes de bem-estar fetal</a>."
+        ]
+      ]
+    ],
+    [
+      "liquido",
+      0,
+      [
+        [
+          "2",
+          "7. Líquido amniótico"
+        ],
+        [
+          "p",
+          "<h2>7. Líquido amniótico</h2>"
+        ],
+        [
+          "3",
+          "Fisiologia"
+        ],
+        [
+          "p",
+          "Na segunda metade da gestação, a urina fetal é a principal fonte, enquanto deglutição e trocas intramembranosas participam da remoção. Por isso, volume reduzido pode refletir insuficiência placentária, perda de líquido ou anomalia urinária; volume aumentado pode refletir diabetes, alteração de deglutição, anomalia fetal ou ser idiopático."
+        ],
+        [
+          "3",
+          "Como medir"
+        ],
+        [
+          "t",
+          [
+            "Método",
+            "Como é feito",
+            "Valores úteis"
+          ],
+          [
+            [
+              "Maior bolsão vertical",
+              "Maior bolsão livre de cordão/partes fetais",
+              "&lt;2 cm: oligodrâmnio; ≥8 cm: polidrâmnio"
+            ],
+            [
+              "ILA",
+              "Soma dos maiores bolsões em 4 quadrantes",
+              "≤5 cm: oligodrâmnio; ≥24–25 cm: polidrâmnio"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Oligodrâmnio"
+        ],
+        [
+          "u",
+          [
+            "rotura de membranas;",
+            "insuficiência placentária/RCF;",
+            "anomalias renais/urinárias fetais;",
+            "pós-datismo;",
+            "fármacos que reduzem perfusão renal fetal."
+          ]
+        ],
+        [
+          "3",
+          "Polidrâmnio"
+        ],
+        [
+          "u",
+          [
+            "diabetes materno;",
+            "malformações que comprometem deglutição;",
+            "anemia/aloimunização;",
+            "gestação múltipla;",
+            "idiopático."
+          ]
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato</strong>Indometacina não deve ser usada apenas para “baixar o líquido” em polidrâmnio. Amniorredução é reservada a cenários selecionados, sobretudo polidrâmnio grave sintomático.</div>"
+        ]
+      ]
+    ],
+    [
+      "doppler",
+      0,
+      [
+        [
+          "2",
+          "8. Dopplervelocimetria obstétrica"
+        ],
+        [
+          "p",
+          "<h2>8. Dopplervelocimetria obstétrica</h2>"
+        ],
+        [
+          "p",
+          "O Doppler não mede “oxigênio” diretamente. Ele mede padrões de velocidade de fluxo e resistência vascular. O valor clínico depende do vaso, da técnica e do contexto."
+        ],
+        [
+          "3",
+          "Artéria umbilical"
+        ],
+        [
+          "p",
+          "É o principal vaso na avaliação de insuficiência placentária associada à RCF. A resistência aumenta à medida que a circulação placentária se torna mais comprometida."
+        ],
+        [
+          "t",
+          [
+            "Achado",
+            "Significado"
+          ],
+          [
+            [
+              "IP acima do p95 / fluxo diastólico reduzido",
+              "Resistência placentária aumentada"
+            ],
+            [
+              "Diástole ausente",
+              "Comprometimento placentário importante"
+            ],
+            [
+              "Diástole reversa",
+              "Comprometimento grave e alto risco de deterioração"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Artéria cerebral média"
+        ],
+        [
+          "p",
+          "Em insuficiência placentária, queda do IP pode indicar redistribuição cerebral. A <strong>velocidade sistólica máxima</strong> da ACM tem papel clássico na avaliação de anemia fetal, enquanto o IP/CPR é usado em alguns protocolos de RCF tardia."
+        ],
+        [
+          "3",
+          "Relação cerebroplacentária"
+        ],
+        [
+          "p",
+          "Relaciona IP da ACM ao IP da AU. Pode ajudar a reconhecer redistribuição em fetos com Doppler umbilical ainda normal, mas seu papel rotineiro varia entre diretrizes."
+        ],
+        [
+          "3",
+          "Ducto venoso"
+        ],
+        [
+          "p",
+          "Reflete hemodinâmica cardíaca venosa e tem utilidade sobretudo em RCF precoce grave em protocolos especializados. Alterações da onda “a” são sinal de deterioração, mas a decisão de parto não deve ser reduzida a uma frase universal sem contexto de idade gestacional e protocolo."
+        ],
+        [
+          "3",
+          "Técnica importa"
+        ],
+        [
+          "u",
+          [
+            "AU: preferir alça livre do cordão e referência correspondente;",
+            "ACM: amostra no terço proximal, ângulo próximo de 0°;",
+            "DV: identificar corretamente o istmo e evitar contaminação de vasos adjacentes;",
+            "interpretar sempre por curvas específicas da idade gestacional."
+          ]
+        ]
+      ]
+    ],
+    [
+      "rcf",
+      0,
+      [
+        [
+          "2",
+          "9. RCF: como o Doppler muda a vigilância"
+        ],
+        [
+          "p",
+          "<h2>9. RCF: como o Doppler muda a vigilância</h2>"
+        ],
+        [
+          "t",
+          [
+            "AU",
+            "Vigilância típica",
+            "Momento de parto — referência prática"
+          ],
+          [
+            [
+              "Normal, PFE p3–p10",
+              "CTG e Doppler seriados conforme risco",
+              "Frequentemente 38–39 semanas"
+            ],
+            [
+              "Fluxo diastólico reduzido / PFE &lt;p3",
+              "Doppler pelo menos semanal",
+              "Frequentemente 37 semanas"
+            ],
+            [
+              "Diástole ausente",
+              "Doppler 2–3×/semana + vigilância intensificada",
+              "Referências SMFM: 33–34 semanas"
+            ],
+            [
+              "Diástole reversa",
+              "Internação e CTG frequente",
+              "Referências SMFM: 30–32 semanas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Essas idades são <strong>referenciais</strong>, não absolutos universais. Diretrizes europeias e protocolos de medicina fetal podem incorporar DV e outros marcadores de maneira diferente."
+        ],
+        [
+          "p",
+          "<div class=\"book-alert\"><strong>Erro clássico</strong>“ACM centralizou = parto agora” está errado como regra. A ACM deve ser interpretada em conjunto com idade gestacional, AU, crescimento, líquido e condição materna.</div>"
+        ]
+      ]
+    ],
+    [
+      "situacoes",
+      0,
+      [
+        [
+          "2",
+          "10. Situações especiais"
+        ],
+        [
+          "p",
+          "<h2>10. Situações especiais</h2>"
+        ],
+        [
+          "3",
+          "Pré-eclâmpsia e hipertensão"
+        ],
+        [
+          "p",
+          "A vigilância é guiada por gravidade materna, crescimento, líquido e testes fetais. Deterioração materna pode indicar parto mesmo com teste fetal tranquilizador."
+        ],
+        [
+          "3",
+          "Diabetes"
+        ],
+        [
+          "p",
+          "Necessidade e início da vigilância variam conforme tipo de diabetes, controle glicêmico, uso de medicação e complicações. Diabetes bem controlado por dieta não recebe necessariamente a mesma vigilância de DM pré-gestacional complicada."
+        ],
+        [
+          "3",
+          "Gestação múltipla"
+        ],
+        [
+          "p",
+          "Corionicidade define o risco e a estratégia. Em monocoriônicas, vigilância ultrassonográfica é mais intensa pela possibilidade de TTTS/TAPS e crescimento discordante."
+        ],
+        [
+          "3",
+          "Pós-datismo"
+        ],
+        [
+          "p",
+          "À medida que a gestação avança além do termo, cresce o risco de insuficiência placentária e óbito fetal; CTG/NST e avaliação de líquido podem ser usados até a resolução."
+        ],
+        [
+          "3",
+          "Redução de movimentos"
+        ],
+        [
+          "p",
+          "É indicação clínica frequente para avaliação imediata; o teste escolhido depende da idade gestacional e dos fatores de risco."
+        ]
+      ]
+    ],
+    [
+      "intraparto",
+      0,
+      [
+        [
+          "2",
+          "11. CTG intraparto: um capítulo diferente"
+        ],
+        [
+          "p",
+          "<h2>11. CTG intraparto: um capítulo diferente</h2>"
+        ],
+        [
+          "3",
+          "Comece pelas contrações"
+        ],
+        [
+          "p",
+          "Avalie a frequência em janela de 10 minutos, preferencialmente fazendo média de 30 minutos. <strong>Taquissistolia</strong> é mais de cinco contrações em 10 minutos, em média de 30 minutos, com ou sem alterações da FCF. O tocodinamômetro externo não quantifica de modo confiável a força das contrações: não deduza intensidade real apenas da altura do pico."
+        ],
+        [
+          "3",
+          "Desacelerações: a relação com as contrações"
+        ],
+        [
+          "p",
+          "Uma desaceleração gradual tem intervalo do início ao nadir de pelo menos 30 segundos; uma abrupta chega ao nadir em menos de 30 segundos. Compare início, nadir e recuperação com o pico da contração, e descreva duração, profundidade e recorrência. Desaceleração prolongada dura de 2 a menos de 10 minutos; a partir de 10 minutos, considera-se mudança da linha de base."
+        ],
+        [
+          "p",
+          "No trabalho de parto, a FCF é interpretada sob estresse repetitivo das contrações. Aqui sim, a relação temporal das desacelerações com a contração é fundamental."
+        ],
+        [
+          "3",
+          "Desaceleração precoce"
+        ],
+        [
+          "p",
+          "Gradual, geralmente espelha a contração. Está associada a compressão cefálica e costuma ser benigna."
+        ],
+        [
+          "3",
+          "Desaceleração tardia"
+        ],
+        [
+          "p",
+          "Gradual, com nadir após o pico da contração e recuperação tardia. Sugere insuficiência uteroplacentária quando recorrente."
+        ],
+        [
+          "3",
+          "Desaceleração variável"
+        ],
+        [
+          "p",
+          "Abrupta, com morfologia variável; associa-se principalmente à compressão do cordão. Gravidade depende de duração, profundidade, recuperação e associação com variabilidade."
+        ],
+        [
+          "3",
+          "Classificação em três categorias"
+        ],
+        [
+          "t",
+          [
+            "Categoria",
+            "Resumo"
+          ],
+          [
+            [
+              "I",
+              "Basal 110–160, variabilidade moderada, sem tardias/variáveis recorrentes"
+            ],
+            [
+              "II",
+              "Tudo que não cabe em I ou III; exige análise dinâmica e causa"
+            ],
+            [
+              "III",
+              "Variabilidade ausente + bradicardia ou desacelerações recorrentes, ou padrão sinusoidal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Medidas intrauterinas"
+        ],
+        [
+          "u",
+          [
+            "reposicionar a paciente;",
+            "suspender ocitocina diante de taquissistolia/padrão preocupante;",
+            "corrigir hipotensão materna;",
+            "hidratação conforme contexto;",
+            "tocolítico se taquissistolia persistente selecionada;",
+            "investigar prolapso de cordão/causa reversível;",
+            "oxigênio suplementar se houver hipoxemia materna — não como reflexo automático em paciente normoxêmica."
+          ]
+        ],
+        [
+          "p",
+          "Se o padrão não melhora e há forte suspeita de acidemia, deve-se acelerar a resolução pela via mais segura e factível."
+        ]
+      ]
+    ],
+    [
+      "integracao",
+      0,
+      [
+        [
+          "2",
+          "12. Integração dos métodos"
+        ],
+        [
+          "p",
+          "<h2>12. Integração dos métodos</h2>"
+        ],
+        [
+          "3",
+          "Teste alterado: como escolher o próximo passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Confirmar o achado:</strong> verificar artefatos, idade gestacional, duração e qualidade do exame.",
+            "<strong>Identificar risco imediato:</strong> desacelerações persistentes, variabilidade ausente acompanhada de outros achados, Doppler umbilical gravemente alterado ou deterioração materna.",
+            "<strong>Relacionar métodos:</strong> NST investiga reatividade; PBF complementa comportamento biofísico; líquido auxilia na avaliação de condição crônica; Doppler investiga hemodinâmica placentária e fetal.",
+            "<strong>Decidir frequência de reavaliação ou parto:</strong> combinar risco fetal, condição materna, idade gestacional e disponibilidade de cuidados neonatais, em protocolo assistencial."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Primeiro passo",
+            "Complemento"
+          ],
+          [
+            [
+              "Redução de movimentos",
+              "CTG/NST conforme IG",
+              "USG com líquido e crescimento; Doppler se risco/RCF"
+            ],
+            [
+              "RCF",
+              "Doppler AU",
+              "CTG; ACM/DV conforme protocolo e gravidade"
+            ],
+            [
+              "Pré-eclâmpsia",
+              "Condição materna + CTG",
+              "Crescimento, líquido e Doppler se indicado"
+            ],
+            [
+              "Oligodrâmnio",
+              "Confirmar medida e investigar causa",
+              "CTG/USG e decisão pela IG/contexto"
+            ],
+            [
+              "Pós-datismo",
+              "CTG/NST + líquido",
+              "Planejamento de resolução conforme IG/protocolo"
+            ],
+            [
+              "CTG anteparto não reativa",
+              "Prolongar/estimular",
+              "PBF ou avaliação adicional"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Raciocínio clínico</strong>Use o teste mais capaz de responder à pergunta do cenário: “há resposta autonômica?” → CTG; “há insuficiência placentária?” → AU; “há adaptação cerebral?” → ACM/CPR; “há deterioração hemodinâmica avançada?” → DV em cenário apropriado.</div>"
+        ]
+      ]
+    ],
+    [
+      "armadilhas",
+      0,
+      [
+        [
+          "2",
+          "13. Armadilhas frequentes"
+        ],
+        [
+          "p",
+          "<h2>13. Armadilhas frequentes</h2>"
+        ],
+        [
+          "t",
+          [
+            "Erro",
+            "Correção"
+          ],
+          [
+            [
+              "Usar categorias I/II/III para todo NST anteparto",
+              "Distinguir CTG anteparto de CTG intraparto"
+            ],
+            [
+              "CTG não reativa = sofrimento fetal",
+              "É não tranquilizadora; sono/prematuridade/fármacos podem explicar"
+            ],
+            [
+              "PBF 0–2 = parto imediato em qualquer IG",
+              "Resultado é grave, mas contexto e viabilidade importam"
+            ],
+            [
+              "Indometacina para “tratar” polidrâmnio",
+              "Não usar apenas para reduzir líquido"
+            ],
+            [
+              "ACM baixa = parto imediato",
+              "Integrar AU, IG, crescimento e protocolo"
+            ],
+            [
+              "DV alterado = regra universal de parto imediato",
+              "É marcador avançado, mas timing depende do cenário"
+            ],
+            [
+              "Oxigênio para toda CTG alterada",
+              "Reservar para hipoxemia materna ou indicação clínica"
+            ],
+            [
+              "Um teste tranquilizador “zera” risco",
+              "Todo teste tem falso-negativo e validade temporal limitada"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "14. Casos clínicos integradores"
+        ],
+        [
+          "p",
+          "<h2>14. Casos clínicos integradores</h2>"
+        ],
+        [
+          "3",
+          "Caso 1 — Redução de movimentos, CTG não reativa"
+        ],
+        [
+          "p",
+          "Gestante de 35 semanas relata redução importante dos movimentos. CTG por 20 minutos mostra basal 140, variabilidade moderada, sem desacelerações e apenas uma aceleração. A conduta não é “cesárea por sofrimento”: prolongar a avaliação, considerar estímulo e complementar com PBF/USG conforme risco."
+        ],
+        [
+          "3",
+          "Caso 2 — RCF com AU alterada"
+        ],
+        [
+          "p",
+          "32 semanas, PFE p2, AU com IP &gt;p95 e diástole ainda presente. Isso representa insuficiência placentária, mas não é o mesmo risco de diástole ausente/reversa. Intensifique vigilância e programe timing conforme evolução."
+        ],
+        [
+          "3",
+          "Caso 3 — RCF com diástole reversa"
+        ],
+        [
+          "p",
+          "29+5 semanas, AU com diástole reversa. Internação, corticoide, CTG frequente e planejamento de parto em centro adequado. A idade gestacional e o conjunto clínico importam."
+        ],
+        [
+          "3",
+          "Caso 4 — PBF 6/10"
+        ],
+        [
+          "p",
+          "36+5 semanas, PBF 6 e líquido normal. Resultado equívoco: repetir em curto intervalo e considerar resolução conforme contexto. O número isolado não é “diagnóstico de hipóxia”."
+        ],
+        [
+          "3",
+          "Caso 5 — Polidrâmnio leve idiopático"
+        ],
+        [
+          "p",
+          "38 semanas, MBV 9 cm, anatomia normal, diabetes excluído, assintomática. Não há indicação de indometacina; parto segue indicações obstétricas usuais."
+        ],
+        [
+          "3",
+          "Caso 6 — CTG intraparto com tardias recorrentes"
+        ],
+        [
+          "p",
+          "Trabalho de parto com ocitocina, taquissistolia e desacelerações tardias recorrentes. Suspender ocitocina, reposicionar, corrigir hipotensão se houver e reavaliar. Persistência com deterioração exige acelerar resolução."
+        ]
+      ]
+    ],
+    [
+      "decisoes-resolvidas-vitalidade",
+      0,
+      [
+        [
+          "2",
+          "Interpretação aplicada — cinco decisões que mudam a conduta"
+        ],
+        [
+          "p",
+          "<h2>Interpretação aplicada — cinco decisões que mudam a conduta</h2>"
+        ],
+        [
+          "p",
+          "Os casos seguintes complementam os exames <em>reais</em> apresentados acima. São situações clínicas fictícias elaboradas para treinamento; não substituem protocolos de urgência nem a decisão da equipe obstétrica. Em cada caso, a pergunta central é: <strong>o teste mede o quê, por quanto tempo e qual é a consequência de errar?</strong>"
+        ],
+        [
+          "3",
+          "1. Prematuridade: duas acelerações de 10 × 10"
+        ],
+        [
+          "p",
+          "Gestante de 29 semanas e 4 dias, internada para investigação de hipertensão, sem queixas fetais, realiza cardiotocografia anteparto de boa qualidade. Basal de 145 bpm, variabilidade moderada, sem desacelerações. Em 20 minutos há duas acelerações de pelo menos 10 bpm, sustentadas por 10 segundos, mas nenhuma de 15 × 15. Ela tem o mesmo critério de reatividade de uma gestante de 37 semanas?"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> não. Antes de 32 semanas pode-se utilizar o critério <strong>10 × 10</strong> devido à imaturidade autonômica; após 32 semanas geralmente se emprega <strong>15 × 15</strong>. Portanto, o exame descrito satisfaz o critério gestacional de reatividade anteparto, mas não descarta as complicações da hipertensão nem substitui a avaliação de crescimento e Doppler quando indicados. A vigilância futura depende da condição clínica. Para o estudante: não usar critérios da CTG intraparto para reclassificar esse NST."
+        ],
+        [
+          "3",
+          "2. Perfil biofísico: dois resultados 8/10, significados diferentes"
+        ],
+        [
+          "p",
+          "<strong>Paciente A:</strong> 36 semanas, PBF 8/10 por ausência de reatividade da CTG, com maior bolsão vertical de 4 cm, demais componentes preservados. <strong>Paciente B:</strong> mesma pontuação global, porém perde os 2 pontos do <em>líquido</em>: bolsão de 1,5 cm, com os outros quatro componentes normais. É correto afirmar que ambas têm o mesmo risco porque a soma é 8?"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> não. O PBF 8/10 com líquido adequado costuma ser tranquilizador no contexto apropriado. Já o mesmo escore com <strong>oligodrâmnio</strong> exige investigação etiológica e revisão do risco: pesquisar rotura de membranas, crescimento fetal, condição materno-fetal e eventual insuficiência placentária. A idade gestacional, achados adicionais e protocolo definem vigilância ou resolução. Não confundir <strong>pontuação agregada</strong> com <strong>interpretação dos componentes</strong>. O maior bolsão vertical menor que 2 cm é ponto de corte útil para oligodrâmnio; manter a técnica livre de cordão e pequenas partes."
+        ],
+        [
+          "3",
+          "3. Restrição de crescimento: CTG reativa não apaga Doppler grave"
+        ],
+        [
+          "p",
+          "Gestante de 30 semanas apresenta peso fetal estimado abaixo do percentil 3 e Doppler de artéria umbilical com <strong>fluxo diastólico reverso</strong>. Uma CTG anteparto obtida no mesmo dia é reativa. Pode-se liberar a gestante por causa da CTG?"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> não. A CTG descreve resposta autonômica fetal <em>naquele intervalo</em>; o Doppler umbilical revela comprometimento placentário grave com risco de deterioração. A recomendação SMFM para RCF com reversão diastólica prevê <strong>internação, corticoterapia antenatal conforme elegibilidade, avaliação materna e vigilância intensiva com CTG</strong>, além de planejamento individualizado de nascimento em serviço com suporte neonatal. Os marcos de 30–32 semanas do SMFM não são ordens cegas: a condição clínica pode indicar resolução antes ou vigilância especializada, conforme achados e capacidade assistencial."
+        ],
+        [
+          "p",
+          "<strong>Comparação honesta de diretrizes:</strong> a SMFM utiliza prioritariamente Doppler umbilical para orientar a RCF; alguns protocolos de medicina fetal incorporam artéria cerebral média e ducto venoso em situações específicas. Não misturar a estratégia de uma diretriz com a janela temporal de outra sem explicitar o protocolo."
+        ],
+        [
+          "3",
+          "4. Intraparto: taquissistolia com desacelerações tardias"
+        ],
+        [
+          "p",
+          "Durante indução com ocitocina, surgem seis contrações por 10 minutos em média de 30 minutos e desacelerações tardias recorrentes. A variabilidade ainda é moderada. Isso equivale automaticamente a traçado categoria III ou a indicação de oxigênio para toda paciente?"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> não. Variabilidade moderada com tardias recorrentes exige avaliação e medidas oportunas, mas não cumpre, só por esse conjunto, o critério clássico de categoria III com variabilidade <em>ausente</em>. Suspender/reduzir ocitocina, reposicionar, verificar hipotensão, taquissistolia e causas reversíveis, além de reavaliar o padrão e a segurança do prosseguimento. Se ocorrer deterioração sustentada ou impossibilidade de corrigir a causa, o parto deve ser antecipado pela via apropriada. <strong>Oxigênio suplementar não deve ser usado rotineiramente em gestante normoxêmica</strong> apenas para “tratar o monitor”; administrar quando houver hipoxemia materna ou outra indicação assistencial."
+        ],
+        [
+          "3",
+          "5. Testes discordantes: primeiro confirme a pergunta e a qualidade do sinal"
+        ],
+        [
+          "p",
+          "Uma gestante com queixa de redução importante de movimentos apresenta NST reativa, mas ultrassom revela oligoâmnio e desaceleração do crescimento em exames seriados. O resultado da CTG é “falso” ou o ultrassom é desnecessário?"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> não. Os métodos avaliam <strong>janelas fisiológicas diferentes</strong>. NST reativa não garante que a reserva placentária esteja preservada em longo prazo; líquido diminuído e crescimento reduzido exigem avaliação de membranas, placenta, hemodinâmica e risco materno. Confirme datação da gestação, adequação técnica, valores anteriores e critérios do laboratório, e formule plano de vigilância ou resolução compatível com a idade gestacional."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\" role=\"note\"><strong>Exercício de fechamento do capítulo</strong>"
+        ],
+        [
+          "p",
+          "Antes de concluir qualquer caso, escreva uma frase para cada item: <strong>(1) risco clínico basal, (2) exame que responde à pergunta, (3) achado de maior gravidade, (4) teste adicional realmente necessário, (5) intervalo seguro de reavaliação e (6) condição que mudaria a conduta para parto.</strong> Se você não consegue justificar o último item sem consultar fontes externas, retorne aos capítulos de CTG, PBF, Doppler e integração."
+        ],
+        [
+          "p",
+          "<small>Referências para conferência: <a href=\"https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG, vigilância anteparto (2021)</a>; <a href=\"https://www.acog.org/womens-health/faqs/special-tests-for-monitoring-fetal-well-being\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG, testes de bem-estar fetal (revisão 2026)</a>; <a href=\"https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/\" target=\"_blank\" rel=\"noopener noreferrer\">SMFM, RCF (2020, reafirmada em 2024)</a>; <a href=\"https://www.nice.org.uk/guidance/ng229/chapter/recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE NG229, monitorização intraparto</a>; <a href=\"https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2025/10/intrapartum-fetal-heart-rate-monitoring-interpretation-and-management\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG CPG nº 10 (2025)</a>.</small>"
+        ]
+      ]
+    ],
+    [
+      "revisao",
+      0,
+      [
+        [
+          "2",
+          "15. Revisão de alto rendimento"
+        ],
+        [
+          "p",
+          "<h2>15. Revisão de alto rendimento</h2>"
+        ],
+        [
+          "t",
+          [
+            "Ferramenta",
+            "Melhor pergunta",
+            "Achado de maior impacto"
+          ],
+          [
+            [
+              "Movimentos",
+              "O padrão fetal mudou?",
+              "Redução persistente em relação ao habitual"
+            ],
+            [
+              "NST/CTG anteparto",
+              "Há reatividade autonômica?",
+              "Não reatividade persistente/desacelerações"
+            ],
+            [
+              "PBF",
+              "Há atividade biofísica preservada?",
+              "Escore baixo + líquido reduzido"
+            ],
+            [
+              "Líquido",
+              "Há repercussão crônica/alteração de produção?",
+              "MBV &lt;2 cm ou ≥8 cm"
+            ],
+            [
+              "AU",
+              "Como está a resistência placentária?",
+              "Diástole ausente/reversa"
+            ],
+            [
+              "ACM",
+              "Há redistribuição/anemia?",
+              "IP reduzido ou PSV elevada conforme indicação"
+            ],
+            [
+              "DV",
+              "Há comprometimento hemodinâmico avançado?",
+              "Onda a ausente/reversa em cenário apropriado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato final</strong>Vitalidade fetal é tendência + contexto. O exame “de hoje” não garante o “amanhã”, e o teste alterado não deve ser convertido em parto automático sem responder qual risco ele realmente representa.</div>"
+        ]
+      ]
+    ],
+    [
+      "editorial-depth-avaliacao-vitalidade-fetal",
+      0,
+      [
+        [
+          "2",
+          "Aprofundamento: mecanismos, diferenciais e conduta"
+        ],
+        [
+          "p",
+          "<h2>Aprofundamento: mecanismos, diferenciais e conduta</h2>"
+        ],
+        [
+          "3",
+          "CTG: interpretar todos os parâmetros"
+        ],
+        [
+          "p",
+          "Linha de base, variabilidade, acelerações e desacelerações precisam ser interpretadas junto à idade gestacional, medicamentos e sono fetal. Traçado não reativo não confirma hipóxia e exige avaliação complementar adequada."
+        ],
+        [
+          "3",
+          "Doppler e perfil biofísico"
+        ],
+        [
+          "p",
+          "Doppler umbilical avalia resistência placentária, enquanto artéria cerebral média e ducto venoso acrescentam informações distintas em cenários específicos. Perfil biofísico combina parâmetros funcionais; resultados isolados devem ser integrados a quadro materno-fetal e exames seriados."
+        ],
+        [
+          "p",
+          "<strong>Revisão:</strong> aplicar protocolos FEBRASGO, Ministério da Saúde e diretrizes específicas atuais ao cenário clínico."
+        ]
+      ]
+    ],
+    [
+      "vitalidade-livro-40k",
+      0,
+      [
+        [
+          "2",
+          "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade"
+        ],
+        [
+          "p",
+          "<h2>16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade</h2>"
+        ],
+        [
+          "p",
+          "Os exames de vitalidade fetal são tentativas indiretas de responder a uma pergunta clínica: há sinais de que o ambiente intrauterino está oferecendo condições suficientes para o feto continuar a gestação com segurança? Nenhum dos métodos mede diretamente todos os componentes da oxigenação, da perfusão tecidual e do estado ácido-básico. A cardiotocografia examina manifestações da regulação autonômica da frequência cardíaca; o perfil biofísico observa comportamentos fetais e líquido amniótico; o Doppler avalia padrões de fluxo em segmentos vasculares; a biometria informa aspectos da trajetória de crescimento. Cada método ilumina uma parte diferente do problema."
+        ],
+        [
+          "3",
+          "16.1 Do oxigênio materno ao metabolismo fetal: onde pode ocorrer falha"
+        ],
+        [
+          "p",
+          "Para manter oxigenação adequada, é necessário que a mãe apresente ventilação e circulação suficientes, que o sangue alcance de maneira apropriada o espaço intervilositário e que ocorra troca de gases no tecido placentário. O sangue fetal circula nos capilares das vilosidades, separado do sangue materno por barreira de troca relativamente fina. A eficiência desse processo depende tanto do suprimento materno quanto da superfície de troca, do fluxo sanguíneo fetal e das propriedades da hemoglobina. Problemas em qualquer etapa podem reduzir disponibilidade de oxigênio, ainda que não produzam o mesmo padrão de alteração nos exames."
+        ],
+        [
+          "p",
+          "Diante de hipóxia relativa ou redução de aporte energético, o feto pode mobilizar mecanismos compensatórios, redistribuindo fluxo para órgãos prioritários e ajustando atividade motora e autonômica. Essas respostas têm intensidade e cronologia variáveis. Algumas alterações se manifestam inicialmente como desaceleração de crescimento; outras provocam mudanças no fluxo placentário ou cerebral; em situações agudas, pode ocorrer alteração rápida da frequência cardíaca. Por esse motivo, um teste feito em momento isolado tem valor dependente do contexto clínico e do intervalo em que o problema pode evoluir."
+        ],
+        [
+          "p",
+          "A capacidade compensatória fetal não é ilimitada. A persistência de oferta insuficiente pode levar a metabolismo anaeróbio crescente, acumulação de ácidos e comprometimento de funções celulares. Entretanto, nenhum traçado não reativo autoriza concluir sozinho que o feto está acidótico. Sono fetal, medicamentos, idade gestacional e fatores técnicos podem produzir achados semelhantes. O objetivo da vigilância é reconhecer padrões de risco e selecionar a próxima avaliação ou intervenção de modo proporcional, evitando tanto a falsa tranquilização quanto a antecipação desnecessária do nascimento."
+        ],
+        [
+          "3",
+          "16.2 Cardiotocografia anteparto: atividade neural e reatividade"
+        ],
+        [
+          "p",
+          "A frequência cardíaca fetal resulta da atividade do marcapasso cardíaco modulada pelos sistemas simpático e parassimpático, além de influências humorais e de reflexos cardiovasculares. A variabilidade batimento a batimento é um sinal indireto de modulação autonômica e depende do estado fetal. Em uma gestação saudável, a variabilidade e a resposta a movimentos tendem a aumentar com maturação neurológica. Antes de determinadas idades gestacionais, a ausência de critérios clássicos de aceleração não tem a mesma interpretação que teria em um feto de termo."
+        ],
+        [
+          "p",
+          "No teste sem estresse, ou nonstress test, registram-se a frequência cardíaca fetal e a atividade uterina, procurando acelerações espontâneas associadas a movimentos. Um exame reativo fornece informação tranquilizadora no momento em que foi realizado, mas não constitui previsão absoluta de segurança para todos os dias seguintes. Um exame não reativo pode decorrer de sono fetal, período de observação insuficiente, imaturidade ou uso de medicamentos, além de hipóxia e outros problemas. A conduta depende da idade gestacional, da duração adequada do registro e da possibilidade de estender a avaliação ou combinar métodos."
+        ],
+        [
+          "p",
+          "As acelerações refletem resposta autonômica e são interpretadas conforme critérios específicos da idade gestacional. A linha de base representa o nível médio de frequência ao longo de segmento apropriado do traçado, excluindo acelerações e desacelerações importantes. A variabilidade não deve ser confundida com grandes oscilações relacionadas a movimentos corporais nem com artefatos de captação. O monitor pode registrar frequência materna ou perder sinal fetal; sempre que houver padrão incompatível com a clínica, é necessário verificar a qualidade do registro antes de tomar decisões."
+        ],
+        [
+          "3",
+          "16.3 Desacelerações: a forma não substitui o contexto"
+        ],
+        [
+          "p",
+          "Uma desaceleração é redução transitória da frequência cardíaca fetal em relação à linha de base. Na monitorização intraparto, sua relação temporal com a contração ajuda a compreender mecanismos possíveis. Desacelerações precoces costumam acompanhar a contração de modo aproximadamente simétrico e podem estar associadas à compressão da cabeça fetal e resposta vagal. Desacelerações variáveis apresentam aspecto mais abrupto e podem refletir compressão do cordão umbilical, com oscilações de pressão e reflexos cardiovasculares. Desacelerações tardias começam e se recuperam depois do padrão temporal da contração, podendo sugerir limitação da reserva uteroplacentária em cenários relevantes."
+        ],
+        [
+          "p",
+          "É inadequado memorizar apenas desenhos e concluir gravidade sem avaliação global. Frequência, profundidade, duração, recorrência, variabilidade basal e estado materno modificam o significado. Uma desaceleração isolada curta em traçado com variabilidade preservada não corresponde automaticamente ao mesmo risco de desacelerações tardias recorrentes associadas a variabilidade mínima ou ausente. Também é preciso considerar taquissistolia, hipotensão materna, hipertermia, medicamentos uterotônicos e outras condições potencialmente corrigíveis."
+        ],
+        [
+          "p",
+          "Na avaliação anteparto, as desacelerações devem ser interpretadas conforme contexto próprio, pois contrações podem ser ausentes ou esporádicas. Regras de classificação usadas no trabalho de parto não devem ser transferidas de forma mecânica para o teste anteparto. Se houver redução de movimentos ou doença placentária grave, uma alteração da frequência pode modificar a urgência de avaliação mesmo quando o registro não preenche todas as características de determinado padrão intraparto. A equipe precisa interpretar a fisiologia e o cenário, não apenas a etiqueta de uma curva."
+        ],
+        [
+          "3",
+          "16.4 Perfil biofísico fetal: comportamento, oxigenação e temporalidade"
+        ],
+        [
+          "p",
+          "O perfil biofísico combina observações ultrassonográficas de movimentos corporais, movimentos respiratórios fetais, tônus e líquido amniótico, geralmente com avaliação cardiotocográfica. Esses componentes não têm origem fisiológica idêntica. Movimento e tônus dependem da atividade do sistema nervoso central e de sua regulação; movimentos respiratórios representam atividade motora fetal que não corresponde à ventilação de ar como no recém-nascido. O líquido amniótico integra processos de produção e circulação, com destaque para a diurese fetal na segunda metade da gestação."
+        ],
+        [
+          "p",
+          "Essa diversidade é uma vantagem e também uma fonte de armadilhas. Um período de sono pode reduzir movimentos observados durante a janela de exame sem implicar acidose. Por outro lado, oligodrâmnio persistente pode sinalizar problema crônico de perfusão renal fetal ou outra etiologia, e não é corrigido simplesmente porque a cardiotocografia atual é reativa. Pontuação do perfil deve ser interpretada segundo o método utilizado, idade gestacional e condições clínicas. O mesmo escore pode exigir respostas distintas em uma gestante de 26 semanas com doença placentária e em uma gestante próxima do termo."
+        ],
+        [
+          "p",
+          "O perfil biofísico modificado utiliza tipicamente nonstress test e avaliação do volume de líquido amniótico. Não significa que os demais componentes não sejam fisiologicamente relevantes; é uma estratégia prática de vigilância com escopo e limitações próprios. Se um resultado for anormal, o passo seguinte não é sempre interromper imediatamente a gestação. É necessário verificar gravidade, confiabilidade do teste, idade gestacional, riscos materno-fetais e se exames complementares podem esclarecer situação antes da decisão."
+        ],
+        [
+          "3",
+          "16.5 Líquido amniótico: por que o volume informa algo, mas não explica tudo"
+        ],
+        [
+          "p",
+          "O volume de líquido amniótico resulta do balanço entre produção e remoção por diferentes vias. Na segunda metade da gravidez, a diurese fetal representa importante fonte de líquido; a deglutição e a absorção intramembranosa participam da regulação do volume. Uma redução importante de perfusão renal fetal pode diminuir diurese e contribuir para oligodrâmnio. Entretanto, ruptura de membranas, anomalias do trato urinário e outras condições também podem reduzir o volume. Assim, oligodrâmnio não é diagnóstico etiológico completo."
+        ],
+        [
+          "p",
+          "Polidrâmnio também apresenta mecanismos diversos. Hiperglicemia fetal pode provocar diurese osmótica, aumentando a produção urinária, enquanto distúrbios da deglutição podem reduzir remoção de líquido. Malformações, infecções e condições idiopáticas entram no diagnóstico diferencial. A intensidade, a idade gestacional e a presença de outras alterações determinam a investigação. É equivocado classificar todo polidrâmnio como consequência de diabetes ou supor que qualquer bolsão aumentado represente risco fetal grave e imediato."
+        ],
+        [
+          "p",
+          "Índice de líquido amniótico e medida do maior bolsão vertical são técnicas distintas. A escolha do método pode influenciar frequência de classificação de oligodrâmnio e decisões derivadas. É importante utilizar técnica padronizada, sem incluir cordão umbilical na medida e respeitando o protocolo institucional. A observação seriada pode ser mais informativa do que valores muito próximos de um limiar em exames isolados, especialmente quando outros parâmetros estão tranquilizadores."
+        ],
+        [
+          "3",
+          "16.6 Doppler: três territórios e três perguntas fisiológicas"
+        ],
+        [
+          "p",
+          "O Doppler da artéria umbilical procura inferir resistência no território placentário. Diminuição do fluxo diastólico anterógrado, sua ausência ou inversão podem sugerir comprometimento placentário progressivo, especialmente em restrição de crescimento de início precoce. Esse exame é particularmente importante quando a hipótese central é insuficiência de trocas por doença placentária. Uma artéria umbilical normal, contudo, não elimina a possibilidade de comprometimento tardio, e a interpretação deve considerar peso fetal, crescimento seriado e outros índices."
+        ],
+        [
+          "p",
+          "O Doppler da artéria cerebral média avalia padrões de resistência em circulação cerebral fetal. Na hipóxia crônica relativa, mecanismos de redistribuição podem diminuir sua resistência. O mesmo vaso também pode ser utilizado com outra finalidade: medir velocidade sistólica máxima para investigar anemia fetal em cenários específicos. São interpretações diferentes da mesma artéria — índice de pulsatilidade para resistência/redistribuição, velocidade máxima para anemia — e não devem ser confundidas. Uma medida fora da referência precisa ser comparada ao parâmetro correto para a hipótese clínica."
+        ],
+        [
+          "p",
+          "O ducto venoso participa da circulação fetal, permitindo desvio de parte do sangue oxigenado da veia umbilical em direção à circulação central. Seu padrão Doppler reflete interações complexas entre retorno venoso, enchimento cardíaco e pressão atrial. Alterações importantes podem aparecer em quadros graves de comprometimento hemodinâmico e influenciar vigilância de casos selecionados de restrição precoce, mas o método requer expertise e não deve ser usado como substituto universal da artéria umbilical. Escolher Doppler por sua complexidade aparente, e não pela pergunta clínica, cria exames difíceis de interpretar e pode atrasar decisões relevantes."
+        ],
+        [
+          "3",
+          "16.7 Testes normais e anormais: limites da previsibilidade"
+        ],
+        [
+          "p",
+          "Uma avaliação fetal tranquilizadora reduz a preocupação imediata, mas a capacidade de prever morte fetal ou acidose depende da doença de base e da velocidade com que ela pode evoluir. Algumas condições deterioram-se gradualmente, permitindo vigilância seriada; outras, como eventos placentários agudos, podem surgir entre exames e não são excluídas por resultado anterior normal. Esse limite deve ser comunicado sem alarmismo, para que a gestante compreenda tanto o valor do acompanhamento quanto a importância de procurar assistência diante de sintomas novos."
+        ],
+        [
+          "p",
+          "A frequência de testes deve acompanhar risco real. ACOG Committee Opinion nº 828 ressalta que indicações e periodicidades são sugestões individualizáveis, não imposições universais. Doenças como restrição de crescimento com Doppler gravemente alterado podem exigir monitoramento muito mais frequente do que uma situação estável de menor risco. A realização excessiva de testes em população de baixo risco também pode gerar falso-positivo, ansiedade e intervenções que não melhoram desfechos. O melhor exame é aquele que responde uma pergunta relevante em momento no qual o resultado tem potencial de mudar conduta."
+        ],
+        [
+          "3",
+          "16.8 Um caso com dois testes aparentemente contraditórios"
+        ],
+        [
+          "p",
+          "Uma gestante com 31 semanas e restrição de crescimento fetal realiza cardiotocografia reativa, mas o Doppler da artéria umbilical demonstra fluxo diastólico ausente. Não é correto escolher o exame mais tranquilizador e desconsiderar o outro. A cardiotocografia fornece informação sobre reatividade autonômica naquele momento; o Doppler informa gravidade de resistência placentária. A combinação sugere que ainda existe resposta autonômica preservada, mas há doença vascular importante que exige plano de vigilância especializado, consideração da idade gestacional e avaliação do risco de deterioração."
+        ],
+        [
+          "p",
+          "Em outra paciente com 39 semanas, redução recente de movimentos fetais e teste não reativo, a ausência de alteração de líquido não demonstra automaticamente segurança. É preciso avaliar qualidade e duração do exame, possibilidade de sono fetal, repetir ou complementar a avaliação quando apropriado e considerar o contexto obstétrico. A interpretação correta nunca consiste em somar um exame normal e um alterado e tirar uma média. Cada teste responde a uma pergunta específica, e a conduta decorre do risco combinado e das condições de assistência."
+        ],
+        [
+          "p",
+          "<strong>Fontes para integração:</strong> ACOG. Antepartum Fetal Surveillance, Practice Bulletin nº 229 (2021; reafirmado 2024); ACOG/SMFM. Indications for Outpatient Antenatal Fetal Surveillance, Committee Opinion nº 828 (2021), disponível em <a href=\"https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG</a>; FIGO. Best practice advice for fetal growth restriction (2021), DOI 10.1002/ijgo.13522. Os critérios operacionais devem ser conferidos com a diretriz obstétrica brasileira vigente."
+        ]
+      ]
+    ],
+    [
+      "seguranca-sinal-ctg",
+      0,
+      [
+        [
+          "2",
+          "15A. Segurança da cardiotocografia: qualidade do sinal, pulso materno e decisões proporcionais"
+        ],
+        [
+          "p",
+          "<h2>15A. Segurança da cardiotocografia: qualidade do sinal, pulso materno e decisões proporcionais</h2>"
+        ],
+        [
+          "p",
+          "<strong>Objetivo clínico:</strong> reconhecer quando um traçado aparentemente normal ou anormal não representa adequadamente o coração fetal, diferenciar sinal perdido de alteração verdadeira e transformar a leitura de parâmetros em uma sequência segura de decisão. Interpretar um traçado começa por confirmar o que está sendo medido. Os demais capítulos ensinam a fisiologia das acelerações, desacelerações e variabilidade; este capítulo acrescenta o controle de qualidade e a prevenção de erros durante a assistência."
+        ],
+        [
+          "3",
+          "Por que o monitor pode registrar a frequência cardíaca errada?"
+        ],
+        [
+          "p",
+          "Na cardiotocografia externa, o transdutor utiliza ultrassom Doppler para captar movimento periódico relacionado ao coração fetal e um algoritmo apresenta uma estimativa da frequência. O monitor não realiza uma eletrocardiografia fetal direta: movimentação fetal ou materna, perda de contato, posição do transdutor, obesidade, contrações e alterações de posição podem comprometer a captação. Em determinadas circunstâncias, o equipamento pode registrar a <strong>frequência cardíaca da gestante como se fosse fetal</strong>. Esse risco aumenta no segundo período do parto, sobretudo durante esforços expulsivos, quando o sinal pode se perder e a frequência materna subir."
+        ],
+        [
+          "p",
+          "É um problema de identidade do sinal, não apenas de classificação. Um número próximo de 130 bpm no visor não garante que exista FCF de 130 bpm: pode corresponder ao pulso materno acelerado. Da mesma forma, um traçado interrompido não prova bradicardia fetal. O erro é potencialmente grave porque pode produzir tranquilização indevida, intervenção desnecessária ou atraso no reconhecimento de comprometimento fetal verdadeiro."
+        ],
+        [
+          "3",
+          "Checklist de conferência antes de interpretar uma linha de base"
+        ],
+        [
+          "o",
+          [
+            "<strong>Identifique a paciente e o contexto:</strong> idade gestacional, apresentação, período do parto, medicações, febre, fatores de risco, dinâmica uterina, indicação de monitorização e registros anteriores.",
+            "<strong>Confirme que há sinal fetal:</strong> compare a frequência exibida com o pulso materno medido simultaneamente, por palpação ou monitor cardíaco; não se contente com um valor instantâneo aparentemente aceitável.",
+            "<strong>Verifique qualidade e continuidade:</strong> procure períodos com perda de sinal, duplicação, valores subitamente incompatíveis e traçado sem variabilidade discernível. Diante de dúvida, reposicione o transdutor e utilize métodos complementares apropriados.",
+            "<strong>Inspecione o canal uterino:</strong> sem registro de contrações não se consegue relacionar com confiança o início, o pico e o nadir das desacelerações. Quando o sensor de contrações falhar, corrigir a técnica antes de rotular a desaceleração como precoce, tardia ou variável.",
+            "<strong>Integre sinais de risco:</strong> estabilidade materna, sangramento, febre, rotura de membranas, mecônio, ocitocina, progressão e qualquer deterioração da FCF ao longo do tempo."
+          ]
+        ],
+        [
+          "p",
+          "A NICE NG229, atualizada em março de 2026, recomenda diferenciar batimentos maternos e fetais ao menos de hora em hora e com maior frequência quando houver dúvida; no <strong>segundo estágio do trabalho de parto</strong>, a diferenciação deve ocorrer pelo menos <strong>a cada cinco minutos</strong>. A recomendação orienta comparar os pulsos, recorrer à ausculta, ao monitor simultâneo de frequência materna, à ultrassonografia à beira-leito ou, quando indicado e viável, a eletrodo fetal. O eletrodo de couro cabeludo não dispensa comparação com o pulso materno, porque também pode haver falsa captação em situações excepcionais."
+        ],
+        [
+          "p",
+          "<div class=\"book-alert\"><strong>Alerta de segurança:</strong> se não for possível identificar batimentos fetais com segurança, ou se houver suspeita persistente de captação materna, obter avaliação obstétrica urgente e confirmar a viabilidade/FCF por método apropriado; não documentar “traçado tranquilizador” com sinal duvidoso. Em emergência, resolver a incerteza em paralelo à assistência, sem usar sucessivas tentativas de ajuste como desculpa para atrasar conduta.</div>"
+        ],
+        [
+          "3",
+          "O que muda entre CTG anteparto e CTG intraparto?"
+        ],
+        [
+          "t",
+          [
+            "Questão",
+            "Anteparto",
+            "Intraparto"
+          ],
+          [
+            [
+              "<strong>Objetivo principal</strong>",
+              "Avaliar resposta autonômica fetal e risco dentro do contexto de vigilância.",
+              "Identificar mudanças de tolerância ao trabalho de parto e potenciais sinais de hipóxia."
+            ],
+            [
+              "<strong>Interpretação de acelerações</strong>",
+              "Reatividade depende de idade gestacional, tempo de observação e movimentos.",
+              "Acelerações podem ser tranquilizadoras, mas no expulsivo exigir confirmação de que não representam pulso materno."
+            ],
+            [
+              "<strong>Decisões imediatas</strong>",
+              "Repetir, completar com PBF/Doppler quando indicado ou antecipar assistência conforme gravidade.",
+              "Corrigir causas reversíveis e decidir necessidade/viabilidade de nascimento conforme categoria, evolução e conjunto clínico."
+            ],
+            [
+              "<strong>Limitações</strong>",
+              "Sono fetal, prematuridade, fármacos, qualidade do traçado e falsos positivos.",
+              "Artefato, movimentos, contratilidade, confusão entre sinais e variabilidade da resposta a contrações."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "A categorização intraparto em três níveis, discutida na diretriz ACOG de outubro de 2025, é uma <strong>linguagem para comunicar risco e orientar avaliação</strong>, não uma sentença diagnóstica automática de acidose. A categoria II abrange achados muito diferentes; uma desaceleração isolada com variabilidade moderada não equivale a desacelerações repetidas acompanhadas de redução progressiva de variabilidade. A direção da mudança importa: comparar o traçado atual com o anterior permite perceber deterioração mesmo antes de atingir os piores limiares."
+        ],
+        [
+          "3",
+          "Taquissistolia, hipóxia e medidas conservadoras: raciocínio causal"
+        ],
+        [
+          "p",
+          "Durante cada contração, a perfusão do espaço intervilositário pode diminuir temporariamente. Contrações excessivamente frequentes encurtam os intervalos de recuperação fetal, especialmente em placenta com reserva limitada. Diante de <strong>taquissistolia com alterações da FCF</strong>, verificar uso de ocitocina ou prostaglandinas, reduzir ou suspender ocitocina se presente e avaliar necessidade de outras medidas conforme protocolo e assistência obstétrica. Reposicionamento materno pode ajudar em algumas situações; corrigir hipotensão materna, hipoxemia ou outro fator identificado é mais racional do que aplicar manobras indiscriminadas."
+        ],
+        [
+          "p",
+          "<strong>Oxigênio para paciente normoxêmica não deve ser intervenção rotineira de ressuscitação fetal.</strong> NICE NG229 orienta evitar oxigenoterapia facial nessa situação, reservando-a à indicação materna como hipoxemia ou preparo anestésico. Não confundir a exposição tradicional em resumos antigos com conduta padronizada atual. Hidratação intravenosa deve responder a necessidade clínica, sem sobrecarga volêmica automática, particularmente em pré-eclâmpsia e cardiopatias. Mudanças persistentes ou graves requerem reavaliação obstétrica imediata e ponderação sobre nascimento oportuno."
+        ],
+        [
+          "3",
+          "Uma CTG reativa não anula um Doppler umbilical grave"
+        ],
+        [
+          "p",
+          "Na restrição de crescimento fetal (RCF), o Doppler da artéria umbilical mede resistência no território placentário e fornece uma dimensão de risco diferente da reatividade da CTG. A ausência ou reversão do fluxo diastólico final indica comprometimento hemodinâmico relevante e não pode ser descartada por uma CTG momentaneamente reativa. O SMFM Consult Series #52 (reafirmado em 2024) recomenda intensificar a vigilância diante de diástole ausente e considerar hospitalização com vigilância ainda maior quando há diástole reversa. As janelas sugeridas para parto variam de acordo com a condição; exemplos da recomendação incluem <strong>33–34 semanas</strong> em fluxo diastólico ausente e <strong>30–32 semanas</strong> em fluxo reverso, sempre interpretadas à luz da situação materno-fetal, corticoide, capacidade neonatal e protocolos assistenciais locais."
+        ],
+        [
+          "p",
+          "Esses números são recomendações de um documento específico, <strong>não uma autorização para decidir parto exclusivamente por idade gestacional</strong>. Não substituir a avaliação de crescimento, líquido, Doppler seriado, CTG, comorbidades e disponibilidade hospitalar por um escore isolado. Tampouco igualar condutas de RCF grave ao rastreamento de uma gestante sem fatores de risco."
+        ],
+        [
+          "3",
+          "Quatro casos com tomada de decisão"
+        ],
+        [
+          "p",
+          "<strong>Caso 1 — O “feto” tem 125 bpm, exatamente como a mãe.</strong> Durante puxos, o cardiotocógrafo mostra linha de base em torno de 125 bpm, sem padrão fetal claramente reconhecível. O oxímetro materno mostra 123–128 bpm. <strong>Decisão:</strong> suspeitar captação do pulso materno e conferir imediatamente a FCF por método apropriado, pedindo apoio obstétrico se a diferenciação não for rápida. Uma leitura numérica “normal” não justifica esperar sem confirmação."
+        ],
+        [
+          "p",
+          "<strong>Caso 2 — Desacelerações ou falha do toco?</strong> O traçado de FCF apresenta quedas ocasionais, mas o registro uterino está descontínuo porque o sensor perdeu contato. <strong>Decisão:</strong> examinar dinâmica por palpação e corrigir posicionamento/qualidade do monitor. Não chamar uma desaceleração de tardia com base em uma relação temporal que não foi adequadamente registrada; se a FCF for preocupante, agir em paralelo à correção do sinal."
+        ],
+        [
+          "p",
+          "<strong>Caso 3 — Taquissistolia durante indução.</strong> Gestante em ocitocina apresenta seis contrações em dez minutos e desacelerações recorrentes. <strong>Decisão:</strong> reconhecer excessiva frequência contrátil e suspender/reduzir ocitocina, avaliar pressão, posicionamento e resposta fetal e chamar obstetrícia. Não oferecer oxigênio facial rotineiramente se a saturação materna estiver normal; não estabelecer uma espera fixa para alterações graves persistentes."
+        ],
+        [
+          "p",
+          "<strong>Caso 4 — RCF com diástole reversa e CTG reativa.</strong> Com 29 semanas, o exame Doppler mostra fluxo diastólico reverso na artéria umbilical, enquanto um exame anteparto apresenta acelerações. <strong>Decisão:</strong> a CTG favorável naquele momento não anula gravidade placentária. Indicam-se avaliação especializada e vigilância intensificada em serviço capaz de prover acompanhamento e parto prematuro quando necessário, conforme quadro e diretrizes. A conduta não é “alta porque a CTG reativou”."
+        ],
+        [
+          "3",
+          "Autoteste: responda explicando o mecanismo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Por que a frequência de 140 bpm na CTG não prova bem-estar fetal?</strong> Porque é preciso confirmar a origem fetal do sinal, sua qualidade, variabilidade, desacelerações, tendência e contexto materno-fetal.",
+            "<strong>Qual é a periodicidade mínima de diferenciação materno-fetal recomendada pela NICE no expulsivo?</strong> Pelo menos a cada cinco minutos, e imediatamente quando houver dúvida.",
+            "<strong>Por que oxigênio materno com saturação normal não integra automaticamente o pacote de correção de uma CTG preocupante?</strong> Porque a intervenção sem indicação materna não demonstra benefício clínico que sustente uso rotineiro e é desaconselhada pela NICE.",
+            "<strong>Que elemento de uma RCF grave pode exigir vigilância ou parto apesar de CTG momentaneamente reativa?</strong> Aumento crítico da resistência placentária, especialmente fluxo diastólico ausente ou reverso no Doppler da artéria umbilical.",
+            "<strong>Se o sensor uterino falha, como classificar uma desaceleração aparentemente tardia?</strong> Primeiro confirmar frequência e tempo das contrações, sem ignorar qualquer alteração da FCF que exija intervenção imediata."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Leitura de origem:</strong> <a href=\"https://www.nice.org.uk/guidance/ng229/chapter/recommendations\" target=\"_blank\" rel=\"noopener noreferrer\">NICE NG229 — Fetal monitoring in labour, atualizada em 25/03/2026</a>; <a href=\"https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2025/10/intrapartum-fetal-heart-rate-monitoring-interpretation-and-management\" target=\"_blank\" rel=\"noopener noreferrer\">ACOG Clinical Practice Guideline nº 10 (2025)</a>; <a href=\"https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/\" target=\"_blank\" rel=\"noopener noreferrer\">SMFM Consult Series #52 (2020, reafirmada 2024)</a>. Material educativo para raciocínio de residência, com aplicação assistencial sujeita à avaliação especializada e protocolos do serviço."
+        ]
+      ]
+    ],
+    [
+      "raciocinio-avancado-avaliacao-vitalidade-fetal",
+      0,
+      [
+        [
+          "2",
+          "Raciocínio avançado e situações de risco"
+        ],
+        [
+          "p",
+          "<h2>Raciocínio avançado e situações de risco</h2>"
+        ],
+        [
+          "3",
+          "Cardiotocografia: cinco perguntas obrigatórias"
+        ],
+        [
+          "p",
+          "Qual a linha de base? Há variabilidade preservada, reduzida ou aumentada? Existem acelerações? Há desacelerações — e de qual tipo? O padrão muda ao longo do tempo? Interpretar conforme contexto, idade gestacional e estado materno. Um teste não reativo isoladamente pode refletir sono fetal ou prematuridade e requer avaliação complementar; desacelerações recorrentes ou perda significativa de variabilidade não devem ser banalizadas."
+        ],
+        [
+          "3",
+          "Perfil biofísico e líquido amniótico"
+        ],
+        [
+          "p",
+          "O PBF integra movimentos respiratórios, movimentos corporais, tônus, líquido e, quando protocolo inclui, cardiotocografia. Parâmetros agudos refletem função neurológica fetal, enquanto oligodrâmnio pode indicar alteração crônica ou rotura de membranas. Resultado intermediário exige decisão guiada por idade gestacional, risco basal e possibilidade de repetição; não utilizar pontuação sem contextualização."
+        ],
+        [
+          "3",
+          "Doppler em crescimento restrito"
+        ],
+        [
+          "p",
+          "Artéria umbilical reflete resistência vascular placentária; ausência/reversão de fluxo diastólico sugere comprometimento importante. Artéria cerebral média pode revelar redistribuição e ducto venoso agrega informação em deterioração precoce selecionada. Técnicas de amostragem, índices gestacionais e evolução seriada importam. O manejo difere entre feto constitucionalmente pequeno e restrição de crescimento patológica."
+        ]
+      ]
+    ],
+    [
+      "fisiologia-oxigenacao-centralizacao",
+      0,
+      [
+        [
+          "2",
+          "Fisiologia da Oxigenação Fetal e o Fenômeno da Centralização (Brain-Sparing)"
+        ],
+        [
+          "p",
+          "O feto desenvolve-se em um ambiente de hipoxemia fisiológica relativa quando comparado ao adulto (pO2 no sangue venoso umbilical em torno de 28 a 32 mmHg). Essa aparente privação de oxigênio é perfeitamente compensada por adaptações fisiológicas refinadas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Alta Concentração e Afinidade da Hemoglobina Fetal (HbF):</strong> A HbF possui subunidades gama em vez de beta, o que reduz sua afinidade pelo 2,3-difosfoglicerato (2,3-DPG), desviando a curva de dissociação da oxi-hemoglobina para a esquerda. Isso permite que a HbF capture oxigênio com altíssima avidez da hemoglobina materna no espaço interviloso placentário;",
+            "<strong>Elevado Débito Cardíaco Fetal Combinado:</strong> O coração fetal opera com débito cardíaco biventricular de aproximadamente 400 a 450 mL/kg/min (três a quatro vezes superior ao débito do adulto em repouso);",
+            "<strong>Shunts Fisiológicos Fetais:</strong> O ducto venoso direciona sangue oxigenado preferencialmente através do forame oval para o átrio esquerdo e ventrículo esquerdo, perfundindo o miocárdio coronariano e as artérias carótidas cerebrais com o melhor sangue disponível."
+          ]
+        ],
+        [
+          "3",
+          "O Mecanismo da Centralização Fetal (Brain-Sparing Effect)"
+        ],
+        [
+          "p",
+          "Quando a insuficiência placentária crônica reduz a oferta de oxigênio abaixo do limiar crítico, quimiorreceptores nos corpos carotídeos e aórticos disparam um reflexo autonômico simpático com redistribuição hemodinâmica seletiva:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Vasodilatação Arterial em Territórios Nobres:</strong> Ocorre vasodilatação maciça na circulação cerebral (queda do índice de pulsatilidade da Artéria Cerebral Média), circulação coronariana miocárdica e glândulas adrenais;",
+            "<strong>Vasoconstrição Reflexa em Territórios Periféricos:</strong> Vasoconstrição intensa nos leitos vascular renal, esplâncnico mesentérico, cutâneo e muscular esquelético;",
+            "<strong>Consequências Clínicas Diretas:</strong><br>• A vasoconstrição renal reduz o ritmo de filtração glomerular fetal, causando oligúria intrauterina e culminando em <strong>oligoidrâmnio crônico</strong> (o líquido amniótico na segunda metade da gravidez é composto quase exclusivamente por urina fetal);<br>• A vasoconstrição mesentérica predispõe o neonato a isquemia intestinal e <strong>enterocolite necrosante (ECN)</strong> precoce."
+          ]
+        ]
+      ]
+    ],
+    [
+      "cardiotocografia-intraparto-figo-desaceleracoes",
+      0,
+      [
+        [
+          "2",
+          "Cardiotocografia Intraparto Completa (FIGO 2015 / ACOG) e os Quatro DIPs"
+        ],
+        [
+          "p",
+          "A cardiotocografia (CTG) avalia a frequência cardíaca fetal e a contratilidade uterina de forma contínua, constituindo o método mais difundido de monitorização da vitalidade intraparto."
+        ],
+        [
+          "3",
+          "Os Parâmetros Cardiotocográficos Fundamentais"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro de FCF",
+            "Definição e Valores de Referência",
+            "Interpretação e Fisiopatologia"
+          ],
+          [
+            [
+              "<strong>Linha de Base da FCF</strong>",
+              "Normal: <strong>110 a 160 bpm</strong>.<br>Bradicardia: &lt; 110 bpm (&gt; 10 min).<br>Taquicardia: &gt; 160 bpm (&gt; 10 min).",
+              "Bradicardia severa (&lt; 100 bpm) indica asfixia ou bloqueio AV congênito. Taquicardia decorre de febre materna, corioamnionite, drogas ou hipóxia precoce compensatória."
+            ],
+            [
+              "<strong>Variabilidade da FCF</strong>",
+              "Normal / Moderada: <strong>6 a 25 bpm</strong>.<br>Mínima: &le; 5 bpm.<br>Ausente: indetectável.<br>Aumentada / Saltatória: &gt; 25 bpm.",
+              "A variabilidade moderada é o <strong>marcador mais sensível e confiável de oxigenação adequada do SNC fetal</strong>. Variabilidade ausente reflete depressão acidótica profunda do tronco encefálico."
+            ],
+            [
+              "<strong>Acelerações Transitórias</strong>",
+              "Aumento de &ge; 15 bpm durando &ge; 15s (&ge; 32 sem).<br>Em &lt; 32 sem: &ge; 10 bpm por &ge; 10s.",
+              "Marcador definitivo de integridade neurológica e ausência de acidose metabólica no momento do traçado."
+            ],
+            [
+              "<strong>Padrão Sinusoidal</strong>",
+              "Ondulação suave e regular de 3 a 5 ciclos/min com variabilidade normal ausente.",
+              "<strong>Patognomônico de anemia fetal grave</strong> (aloimunização Rh, transfusão feto-materna maciça, rotura de vasa prévia). Requer intervenção imediata."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Semiologia dos Quatro Padrões de Desaceleração"
+        ],
+        [
+          "u",
+          [
+            "<strong>DIP 1 / Desaceleração Precoce:</strong> Queda gradual e uniforme da FCF cujo nadir (ponto mais baixo) <strong>coincide perfeitamente com o pico da contração uterina</strong> (imagem em espelho). Fisiopatologia: compressão mecânica transitória do polo cefálico fetal contra o colo, estimulando barorreceptores durais com reflexo vagal parassimpático. <strong>É um achado fisiológico, benigno, não associado a hipóxia ou acidose fetal</strong>, não exigindo intervenção tocúrgica;",
+            "<strong>DIP 2 / Desaceleração Tardia:</strong> Queda gradual e uniforme da FCF cujo nadir ocorre de forma <strong>defasada e tardia APÓS o pico da contração uterina</strong> (intervalo &gt; 20 a 30 segundos entre o pico da contração e o nadir da FCF), com recuperação lenta após o término da contração. Fisiopatologia: <strong>insuficiência uteroplacentária aguda com hipóxia miocárdica direta</strong>. Durante a contração, a pO2 fetal cai abaixo do limiar crítico (18 mmHg), disparando quimiorreceptores e depressão miocárdica direta. <strong>É altamente patológica quando repetitiva</strong> (&gt; 50% das contrações), indicando acidose fetal iminente e exigindo ressuscitação intrauterina e parto se não revertida;",
+            "<strong>DIP 3 / Desaceleração Variável:</strong> Queda abrupta da FCF (tempo do início ao nadir &lt; 30 segundos) com amplitude variável e morfologia angular típica em \"V\" ou \"W\". Fisiopatologia: <strong>compressão transitória do cordão umbilical</strong> (procúbito, circular cervical de cordão, oligoidrâmnio). A oclusão da veia umbilical causa queda do retorno venoso (aceleração inicial compensatória \"ombro anterior\"), seguida pela oclusão das artérias umbilicais gerando aumento abrupto da pós-carga e reflexo barorreceptor (nadir agudo). <strong>Critérios de Gravidade (DIP Variável Desfavorável):</strong> perda da variabilidade interna, retorno lento à linha de base, taquicardia compensatória pós-desaceleração e duração prolongada &gt; 60 segundos com nadir &lt; 70 bpm (regra dos 60);",
+            "<strong>Desaceleração Prolongada:</strong> Queda da FCF &ge; 15 bpm com duração &ge; 2 minutos e &lt; 10 minutos. Se ultrapassar 10 minutos, configura mudança de linha de base (bradicardia sustentada)."
+          ]
+        ],
+        [
+          "3",
+          "Classificação Consensual FIGO / ACOG em 3 Categorias"
+        ],
+        [
+          "t",
+          [
+            "Categoria CTG",
+            "Achados Cardiotocográficos",
+            "Probabilidade de Acidose e Conduta"
+          ],
+          [
+            [
+              "<strong>Categoria I (Normal / Verde)</strong>",
+              "Linha de base 110-160 bpm; variabilidade moderada (6-25 bpm); ausência de DIP 2 e DIP variável; acelerações presentes ou ausentes; DIP 1 permitido.",
+              "Feto não acidótico; bem-estar assegurado. <strong>Conduta expectante habitual</strong>."
+            ],
+            [
+              "<strong>Categoria II (Suspeita / Amarela)</strong>",
+              "Taquicardia ou bradicardia sem perda de variabilidade; variabilidade mínima ou saltatória; ausência de acelerações; DIPs variáveis frequentes; DIP 2 ocasionais.",
+              "Risco indeterminado de hipóxia. <strong>Vigilância contínua, medidas de ressuscitação intrauterina e reavaliação seriada</strong>."
+            ],
+            [
+              "<strong>Categoria III (Patológica / Vermelha)</strong>",
+              "<strong>Variabilidade ausente</strong> associada a DIP 2 repetitivos, DIPs variáveis repetitivos ou bradicardia; ou <strong>Padrão Sinusoidal</strong>.",
+              "Altíssima probabilidade de acidose metabólica grave (pH &lt; 7,10 / BE &lt; -12). <strong>Indicação imediata de Parto de Emergência</strong> se não revertida instantaneamente."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "perfil-biofisico-fetal-manning",
+      0,
+      [
+        [
+          "2",
+          "Perfil Biofísico Fetal (PBF de Manning): Parâmetros e Cascata Biofísica"
+        ],
+        [
+          "p",
+          "O Perfil Biofísico Fetal combina a cardiotocografia com a avaliação ultrassonográfica de quatro parâmetros dinâmicos fetais e ovulares, avaliados durante uma janela contínua de 30 minutos."
+        ],
+        [
+          "3",
+          "Os Cinco Parâmetros do Escore de Manning"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Biofísico",
+            "Critério de Normalidade (Pontuação = 2)",
+            "Critério Alterado (Pontuação = 0)"
+          ],
+          [
+            [
+              "<strong>1. Cardiotocografia (CTG)</strong>",
+              "&ge; 2 acelerações transitórias de &ge; 15 bpm por &ge; 15s em 20-30 min",
+              "&lt; 2 acelerações ou hiporreatividade"
+            ],
+            [
+              "<strong>2. Movimentos Respiratórios</strong>",
+              "&ge; 1 episódio de respiração fetal contínua durando &ge; 30 segundos",
+              "Ausência de respiração ou &lt; 30s de duração"
+            ],
+            [
+              "<strong>3. Movimentos Corporais Fetais</strong>",
+              "&ge; 3 movimentos amplos distintos de tronco ou membros em 30 min",
+              "&le; 2 episódios de movimentos corporais"
+            ],
+            [
+              "<strong>4. Tônus Fetal</strong>",
+              "&ge; 1 episódio de extensão ativa de membro ou coluna com retorno à flexão",
+              "Membros em extensão flácida sem retorno à flexão"
+            ],
+            [
+              "<strong>5. Volume de Líquido Amniótico</strong>",
+              "Pelo menos 1 bolsão de líquido com &ge; 2 cm em diâmetro vertical (MBV &ge; 2 cm)",
+              "Maior Bolsão Vertical (MBV) &lt; 2 cm (Oligoidrâmnio)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Cascata Biofísica da Hipóxia Fetal"
+        ],
+        [
+          "p",
+          "A perda progressiva dos parâmetros biofísicos segue uma cronologia biológica estrita dependente da maturação ontogenética dos centros nervosos encefálicos:"
+        ],
+        [
+          "o",
+          [
+            "1º Parâmetro a desaparecer na acidose: <strong>Reatividade cardíaca (CTG)</strong> (centro regulador hipotalâmico/bulbar de maturação tardia);",
+            "2º Parâmetro a desaparecer: <strong>Movimentos respiratórios fetais</strong> (centro no quarto ventrículo);",
+            "3º Parâmetro a desaparecer: <strong>Movimentos corporais fetais</strong> (córtex motor fetal);",
+            "4º Parâmetro a desaparecer: <strong>Tônus fetal</strong> (centro subcortical primitivo de maturação muito precoce — sua perda indica acidose grave e depressão neurológica terminal);",
+            "Parâmetro crônico (não agudo): O <strong>Líquido Amniótico</strong> reflete a hipóxia crônica mantida ao longo de dias ou semanas decorrente da vasoconstrição renal seletiva."
+          ]
+        ]
+      ]
+    ],
+    [
+      "dopplerfluxometria-obstetrica-avancada",
+      0,
+      [
+        [
+          "2",
+          "Dopplervelocimetria Obstétrica: Artéria Umbilical, Cerebral Média e Ducto Venoso"
+        ],
+        [
+          "p",
+          "A avaliação por Doppler colorido e espectral revolucionou a medicina materno-fetal ao permitir a quantificação não invasiva da hemodinâmica nos compartimentos placentário, fetal e cardíaco."
+        ],
+        [
+          "3",
+          "Artéria Umbilical (AU): O Compartimento Placentário"
+        ],
+        [
+          "p",
+          "Avalia a resistência vascular do leito capilar vilositário da placenta:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Padrão Normal:</strong> Onda de velocidade de fluxo de baixa resistência com fluxo diastólico final amplo e contínuo;",
+            "<strong>Aumento de Resistência:</strong> Elevação do Índice de Pulsatilidade (IP &gt; percentil 95), refletindo obliteração de mais de 30% a 50% dos vasos vilositários;",
+            "<strong>Diástole Zero (Ausente):</strong> Ausência completa de fluxo sanguíneo na diástole; indica obliteração de 50% a 70% das vilosidades terciais placentárias;",
+            "<strong>Diástole Reversa:</strong> Fluxo sanguíneo que reflui em sentido retrógrado durante a diástole ventricular em direção à placenta; indica obliteração maciça (&gt; 70%) com risco elevadíssimo de óbito fetal em 48 a 72 horas. Impõe interrupção imediata a partir de 30 a 32 semanas sob corticoterapia e sulfato de magnésio."
+          ]
+        ],
+        [
+          "3",
+          "Artéria Cerebral Média (ACM): Vasodilatação e Anemia Fetal"
+        ],
+        [
+          "p",
+          "A ACM desempenha papel duplo de extrema relevância clínica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Índice de Pulsatilidade da ACM (IP-ACM):</strong> Na centralização fetal, a vasodilatação compensatória reduz o IP para valores <strong>&lt; percentil 5</strong> para a idade gestacional. A <strong>Relação Cérebro-Placentária (RCP = IP-ACM / IP-AU)</strong> torna-se <strong>&lt; 1,0</strong>, sendo o marcador mais sensível de restrição de crescimento e centralização precoce;",
+            "<strong>Pico de Velocidade Sistólica da ACM (PVS-ACM):</strong> Padrão-ouro não invasivo para diagnóstico de <strong>anemia fetal moderada a grave</strong> (por aloimunização Rh, parvovírus B19 ou transfusão gemelo-gemelar). Na anemia, a viscosidade sanguínea diminui e o débito cardíaco hiperdinâmico aumenta, elevando a velocidade de fluxo. Quando o <strong>PVS-ACM ultrapassa 1,5 Múltiplos da Mediana (MoM)</strong>, a sensibilidade para anemia severa aproxima-se de 100%, indicando cordocentese diagnóstica e transfusão intrauterina imediata."
+          ]
+        ],
+        [
+          "3",
+          "Ducto Venoso (DV): O Marcador Definitivo de Acidose e Descompensação Cardíaca"
+        ],
+        [
+          "p",
+          "O ducto venoso conecta a veia umbilical à veia cava inferior, conduzindo sangue oxigenado sob alta velocidade para o átrio esquerdo através do forame oval. Sua onda de velocidade possui três componentes: sístole ventricular (onda S), diástole ventricular (onda D) e <strong>contração atrial tele-diastólica (onda \"a\")</strong>."
+        ],
+        [
+          "p",
+          "Quando a acidose miocárdica e a sobrecarga de câmaras direitas se instalam, o ventrículo direito torna-se rígido, aumentando a pressão telediastólica. Durante a contração atrial, o sangue não consegue avançar, resultando em <strong>onda \"a\" zero ou reversa (onda \"a\" negativa)</strong>. A onda \"a\" reversa no ducto venoso é o <strong>preditor mais potente de óbito fetal iminente e acidose metabólica grave</strong>, sendo o gatilho absoluto para interrupção imediata da gravidez por cesariana em qualquer idade gestacional viável (&ge; 26 a 28 semanas)."
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-integradores-sofrimento-fetal",
+      0,
+      [
+        [
+          "2",
+          "Casos Clínicos Resolvidos de Sofrimento Fetal e Vitalidade"
+        ],
+        [
+          "3",
+          "Caso 1: Gestante com RCIU e Diástole Reversa na Artéria Umbilical"
+        ],
+        [
+          "p",
+          "Primigesta de 31 semanas com pré-eclâmpsia com sinais de gravidade apresenta ultrassom com peso fetal estimado no percentil &lt; 3 e oligoidrâmnio (MBV = 1,4 cm). Dopplerfluxometria revela Artéria Umbilical com <strong>diástole reversa sustentada</strong>, Artéria Cerebral Média com IP no percentil 2 (centralização acentuada) e Ducto Venoso com onda \"a\" positiva (IP = 0,95). CTG com variabilidade moderada de 8 bpm. <strong>Discussão e Conduta:</strong> Feto com insuficiência placentária gravíssima e centralização, porém sem falência cardíaca franca (onda \"a\" ainda positiva). Atingidas 31 semanas e com diástole reversa, o risco de óbito intrauterino supera o da prematuridade. Conduta: Internação imediata em UTI neonatal de referência, administração de Corticoterapia (Betametasona 12 mg IM 2 doses) associada a Sulfato de Magnésio para neuroproteção fetal e interrupção programada por <strong>Cesariana de urgência</strong> após 24 a 48h de corticoide (ou imediatamente se o ducto venoso alterar)."
+        ],
+        [
+          "3",
+          "Caso 2: Bradicardia Fetal Súbita Intraparto por Prolapso de Cordão"
+        ],
+        [
+          "p",
+          "Multípara em trabalho de parto na fase ativa com 7 cm de dilatação apresenta rotura espontânea de membranas ovulares. Imediatamente após a amniorrexe, a FCF cai abruptamente de 140 bpm para 70 bpm sustentada. Ao toque vaginal de emergência, palpa-se alça de cordão umbilical pulsátil protruindo através do canal cervical à frente do polo cefálico. <strong>Conduta Imediata:</strong> Diagnóstico de <strong>Prolapso Agudo de Cordão Umbilical</strong>. Conduta de emergência: 1) O examinador deve manter a mão na vagina elevando continuamente o polo cefálico fetal para descomprimir o funículo umbilical; 2) Posicionar a paciente em posição genupeitoral ou proclive invertida (Trendelenburg); 3) Encaminhamento em maca em disparada para o centro cirúrgico com a mão mantida no canal vaginal; 4) <strong>Cesariana emergencial imediata sob anestesia geral</strong>."
+        ],
+        [
+          "3",
+          "Caso 3: Aloimunização Rh com Pico de Velocidade Sistólica da ACM Elevado"
+        ],
+        [
+          "p",
+          "Gestante Rh negativo com Coombs Indireto positivo com título de 1:64 na 28ª semana de gestação. Submetida a Doppler seriado da Artéria Cerebral Média que demonstra <strong>PVS-ACM de 68 cm/s (equivalente a 1,65 MoM)</strong>. Cardiotocografia basal com padrão sinusoidal sutil. <strong>Discussão e Conduta:</strong> O PVS-ACM &gt; 1,5 MoM associado ao padrão sinusoidal confirma anemia fetal moderada a grave por hemólise imune. Com 28 semanas, a interrupção acarretaria prematuridade extrema. A conduta padrão-ouro é a <strong>Cordocentese diagnóstica imediata em sala cirúrgica com sangue tipado O negativo e realização de Transfusão Intrauterina (TIU)</strong> guiada por ultrassom, corrigindo o hematócrito fetal para &gt; 35% a 40%."
+        ],
+        [
+          "3",
+          "Caso 4: Taquissistolia por Ocitocina e DIP 2 Repetitivo Revertido com Terbutalina"
+        ],
+        [
+          "p",
+          "Nulípara de 39 semanas induzida com ocitocina atinge 6 contrações em 10 minutos. Cardiotocografia registra desacelerações tardias (DIP 2) consecutivas com perda de variabilidade. <strong>Conduta:</strong> Desligar a bomba de ocitocina imediatamente, decúbito lateral esquerdo, bólus de 500 mL de soro fisiológico e administração de <strong>Terbutalina 0,25 mg SC</strong>. Em 3 minutos, as contrações cessaram, a linha de base retornou para 135 bpm com variabilidade de 12 bpm e as desacelerações desapareceram, permitindo a condução segura do parto normal horas depois."
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-sofrimento",
+      0,
+      [
+        [
+          "2",
+          "Questões de Concursos e Residência Médica com Comentários Exaustivos"
+        ],
+        [
+          "3",
+          "Questão 1: Marcador Mais Sensível de Oxigenação do SNC Fetal (USP)"
+        ],
+        [
+          "p",
+          "Na análise sistemática da cardiotocografia basal anteparto e intraparto, qual parâmetro semiológico é considerado o indicador mais sensível e precoce de oxigenação adequada do sistema nervoso central fetal?"
+        ],
+        [
+          "o",
+          [
+            "A) Frequência cardíaca basal exatamente em 120 bpm.",
+            "B) Variabilidade moderada da frequência cardíaca fetal (entre 6 e 25 bpm).",
+            "C) Presença de pelo menos 10 contrações uterinas por hora.",
+            "D) Aparecimento regular de desacelerações precoces no traçado.",
+            "E) Presença de padrão sinusoidal contínuo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A variabilidade moderada (6 a 25 bpm) reflete a interação contínua entre o tônus simpático e parassimpático no nó sinusal fetal, exigindo tecido cerebral cortical e bulbar metabolicamente hígido e oxigenado."
+        ],
+        [
+          "3",
+          "Questão 2: Fisiopatologia do DIP 1 vs. DIP 2 (UNICAMP)"
+        ],
+        [
+          "p",
+          "Durante a monitorização intraparto de duas parturientes, o traçado da Paciente A apresenta desacelerações cujo nadir coincide com o ápice das contrações uterinas. O traçado da Paciente B apresenta desacelerações graduais cujo nadir ocorre 30 segundos após o término do pico das contrações. Quais são os diagnósticos e os mecanismos fisiopatológicos?"
+        ],
+        [
+          "o",
+          [
+            "A) Paciente A: DIP 2 por compressão de cordão; Paciente B: DIP 1 por hipóxia miocárdica.",
+            "B) Paciente A: DIP 1 (precoce) por compressão mecânica cefálica e reflexo vagal; Paciente B: DIP 2 (tardio) por insuficiência placentária e hipóxia miocárdica acidótica.",
+            "C) Paciente A: Padrão sinusoidal; Paciente B: Taquicardia fetal reflexa.",
+            "D) Ambas apresentam sofrimento fetal grave com indicação de cesariana de emergência.",
+            "E) Paciente A exige tocolítico imediato; Paciente B deve receber ocitocina em alta dose."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>O DIP 1 é precoce e decorre de compressão mecânica cefálica com reflexo vagal (benigno). O DIP 2 é tardio e expressa insuficiência uteroplacentária e acidose fetal, sendo altamente patológico."
+        ],
+        [
+          "3",
+          "Questão 3: Rastreamento Não Invasivo de Anemia Fetal (ENARE)"
+        ],
+        [
+          "p",
+          "Em uma gestante isoimunizada com teste de Coombs indireto positivo com títulos elevados, qual método ultrassonográfico Doppler é atualmente o padrão-ouro de escolha não invasivo para estimar o risco de anemia fetal moderada a grave e indicar cordocentese?"
+        ],
+        [
+          "o",
+          [
+            "A) Índice de Resistência da Artéria Umbilical.",
+            "B) Índice de Pulsatilidade do Ducto Venoso.",
+            "C) Pico de Velocidade Sistólica da Artéria Cerebral Média (PVS-ACM &gt; 1,5 MoM).",
+            "D) Espessura do miocárdio ventricular esquerdo.",
+            "E) Diâmetro biparietal corrigido pelo fêmur."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>O PVS-ACM &gt; 1,5 MoM apresenta sensibilidade superior a 95% para anemia fetal grave, substituindo a amniocentese com espectrofotometria (curva de Liley)."
+        ],
+        [
+          "3",
+          "Questão 4: Significado da Onda \"a\" Reversa no Ducto Venoso (SCMSP)"
+        ],
+        [
+          "p",
+          "Em um feto com restrição de crescimento intrauterino extremo com 29 semanas, o Doppler do Ducto Venoso revela índice de pulsatilidade elevado com onda \"a\" reversa (negativa). Esse achado hemodinâmico indica:"
+        ],
+        [
+          "o",
+          [
+            "A) Excelente prognóstico com feto hígido e permissão para aguardar 40 semanas.",
+            "B) Falência miocárdica de câmaras direitas com elevação da pressão telediastólica e acidose fetal grave iminente, sendo indicação de parto imediato.",
+            "C) Apenas compressão temporária do polo cefálico sem repercussão miocárdica.",
+            "D) Malformação renal congênita isolada.",
+            "E) Necessidade de iniciar imediatamente hidroclorotiazida materna."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A onda \"a\" reversa no ducto venoso reflete incapacidade do ventrículo direito de acomodar o fluxo atrial por acidose miocárdica terminal, com altíssimo risco de óbito intrauterino em 24-48h."
+        ],
+        [
+          "3",
+          "Questão 5: Padrão Sinusoidal Patognomônico (UERJ)"
+        ],
+        [
+          "p",
+          "Uma cardiotocografia que exibe ondulações sinusoidais suaves e regulares com frequência de 3 a 5 ciclos por minuto, amplitude fixa de 5 a 15 bpm e ausência de variabilidade normal de curta duração é patognomônica de:"
+        ],
+        [
+          "o",
+          [
+            "A) Sono fetal tranquilo fisiológico.",
+            "B) Anemia fetal grave por aloimunização Rh ou hemorragia feto-materna maciça.",
+            "C) Bradicardia reflexa após administração de analgesia peridural.",
+            "D) Gemelaridade monocoriônica com feto hígido.",
+            "E) Ingestão materna recente de cafeína ou chocolate."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>O padrão sinusoidal clássico é patognomônico de anemia fetal grave com hipóxia bulbar grave, exigindo intervenção resolutiva ou transfusão imediata."
+        ],
+        [
+          "3",
+          "Questão 6: Primeiro Parâmetro Biofísico a Desaparecer na Hipóxia (UNIFESP)"
+        ],
+        [
+          "p",
+          "De acordo com a teoria da cascata biofísica e o desenvolvimento ontogenético do sistema nervoso central fetal, qual dos cinco parâmetros do Perfil Biofísico Fetal de Manning é o primeiro a ser suprimido na vigência de hipoxemia/acidose aguda?"
+        ],
+        [
+          "o",
+          [
+            "A) Tônus fetal.",
+            "B) Movimentos corporais globais.",
+            "C) Reatividade da frequência cardíaca fetal na cardiotocografia.",
+            "D) Volume de líquido amniótico.",
+            "E) Grau de maturação placentária de Grannum."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>A reatividade da FCF é o centro mais sensível e de maturação mais tardia, sendo o primeiro a desaparecer na hipóxia. O tônus fetal é o último a desaparecer."
+        ],
+        [
+          "3",
+          "Questão 7: Definição de Diástole Zero e Conduta (USP-RP)"
+        ],
+        [
+          "p",
+          "Gestante de 34 semanas com pré-eclâmpsia apresenta diástole zero mantida na Artéria Umbilical. O ducto venoso apresenta onda \"a\" positiva normal e a CTG é categoria I. Qual a interpretação e a conduta preconizada?"
+        ],
+        [
+          "o",
+          [
+            "A) A diástole zero é um artefato técnico irrelevante; alta hospitalar.",
+            "B) Indica obliteração de mais de 50% do leito vilositário placentário; com 34 semanas completas, está indicada a interrupção da gravidez.",
+            "C) Exige infusão de 5 litros de soro fisiológico para abrir os vasos placentários.",
+            "D) Deve-se aguardar em casa até 41 semanas.",
+            "E) Prescrever aspirina em dose de 500 mg de 6 em 6 horas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A diástole zero na artéria umbilical atesta insuficiência placentária avançada. Ao atingir 34 semanas, o parto está formalmente indicado conforme diretrizes internacionais."
+        ],
+        [
+          "3",
+          "Questão 8: Fisiopatologia do Oligoidrâmnio na Centralização (SURCE)"
+        ],
+        [
+          "p",
+          "Por que o feto com restrição de crescimento e centralização hemodinâmica desenvolve oligoidrâmnio progressivo?"
+        ],
+        [
+          "o",
+          [
+            "A) Porque o feto deglute três vezes mais líquido amniótico para saciar a sede.",
+            "B) Devido à vasoconstrição reflexa da circulação renal para priorizar o cérebro, reduzindo a filtração glomerular e a produção de urina fetal.",
+            "C) Porque a placenta absorve todo o líquido através da placa coriônica.",
+            "D) Devido à rotura microscópica e imperceptível da bolsa amniótica.",
+            "E) Por evaporação transcutânea acelerada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>O líquido amniótico no 2º e 3º trimestres provém quase exclusivamente da urina fetal. A vasoconstrição renal seletiva no fenômeno de centralização causa oligúria e oligoidrâmnio."
+        ],
+        [
+          "3",
+          "Questão 9: Critérios de Categoria III da FIGO (AMP)"
+        ],
+        [
+          "p",
+          "Qual traçado cardiotocográfico classifica-se diretamente como Categoria III (Patológico / Anormal), exigindo intervenção obstétrica imediata?"
+        ],
+        [
+          "o",
+          [
+            "A) Linha de base em 130 bpm com variabilidade de 15 bpm e acelerações transitórias.",
+            "B) Desacelerações variáveis isoladas com recuperação rápida e linha de base estável.",
+            "C) Variabilidade da FCF ausente acompanhada de desacelerações tardias repetitivas ou padrão sinusoidal.",
+            "D) Presença de 3 contrações em 10 minutos com DIP 1 esporádico.",
+            "E) FCF basal de 155 bpm sem desacelerações."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>A Categoria III define traçados de alto risco de acidose (variabilidade ausente + DIP 2/variáveis ou padrão sinusoidal), impondo parto imediato."
+        ],
+        [
+          "3",
+          "Questão 10: Relação Cérebro-Placentária (RCP) (SCMSP)"
+        ],
+        [
+          "p",
+          "A Relação Cérebro-Placentária (RCP), calculada pela divisão do IP da Artéria Cerebral Média pelo IP da Artéria Umbilical (IP-ACM / IP-AU), é considerada alterada e sugestiva de centralização fetal quando seu valor é:"
+        ],
+        [
+          "o",
+          [
+            "A) Maior que 3,0.",
+            "B) Menor que 1,0.",
+            "C) Exatamente igual a 2,5.",
+            "D) Maior que 5,0.",
+            "E) Negativo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>Normalmente, a resistência na circulação cerebral é maior que na umbilical (RCP &gt; 1,0). Quando há vasodilatação cerebral e aumento da resistência placentária, a relação inverte-se, tornando-se &lt; 1,0."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências"
+        ],
+        [
+          "p",
+          "1. International Federation of Gynecology and Obstetrics (FIGO). <em>FIGO consensus guidelines on intrapartum fetal monitoring: Cardiotocography</em>. Int J Gynaecol Obstet, 2015; 131(1):13-24. https://doi.org/10.1016/j.ijgo.2015.06.020"
+        ],
+        [
+          "p",
+          "2. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 229: Antepartum Fetal Surveillance</em>. Obstet Gynecol, 2021; 137(6):e116-e127. https://doi.org/10.1097/AOG.0000000000004410"
+        ],
+        [
+          "p",
+          "3. Manning FA, Platt LD, Sipos L. <em>Antepartum fetal evaluation: development of a fetal biophysical profile score</em>. Am J Obstet Gynecol, 1980; 136(6):787-795. https://doi.org/10.1016/0002-9378(80)90457-3"
+        ],
+        [
+          "p",
+          "4. Mari G, Deter RL, Carpenter RL, et al. <em>Noninvasive diagnosis by Doppler ultrasonography of fetal anemia due to maternal red-cell alloimmunization</em>. N Engl J Med, 2000; 342(1):9-14. https://doi.org/10.1056/NEJM200001063420102"
+        ],
+        [
+          "p",
+          "5. Baschat AA, Cosmi E, Bilardo CM, et al. <em>Predictors of neonatal outcome in early-onset placental dysfunction</em>. Obstet Gynecol, 2007; 109(2 Pt 1):253-261. https://doi.org/10.1097/01.AOG.0000253215.79121.75"
+        ],
+        [
+          "p",
+          "6. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). <em>Avaliação da Vitalidade Fetal Anteparto e Intraparto</em>. Manual de Orientação FEBRASGO, São Paulo, 2023."
+        ]
+      ]
+    ]
+  ]
+}
