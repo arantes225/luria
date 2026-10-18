@@ -1,0 +1,22 @@
+{
+  "id": 50,
+  "slug": "financiamento-e-gestao-do-sus",
+  "block": 3,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 21,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 63726,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

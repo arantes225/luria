@@ -1,0 +1,22 @@
+{
+  "id": 20,
+  "slug": "atencao-primaria-saude-atributos",
+  "block": 1,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 19,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 87190,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

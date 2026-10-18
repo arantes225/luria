@@ -1,0 +1,22 @@
+{
+  "id": 66,
+  "slug": "derrame-pleural",
+  "block": 3,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 82,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 95018,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

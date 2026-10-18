@@ -1659,7 +1659,7 @@
       [
         [
           "2",
-          "16. Referências oficiais, limites de aplicação e pendências editoriais"
+          "Referências e limites de aplicação"
         ],
         [
           "3",
@@ -1768,8 +1768,7 @@
           "<strong>Critério de atualização:</strong> diretrizes brasileiras do Ministério da Saúde e do INCA prevalecem para o contexto de SUS. Recomendações estrangeiras de ACOG/SMFM 2026 sobre cfDNA são explicitamente internacionais e não equivalem a oferta universal obrigatória no SUS. O teste DNA-HPV em rastreamento cervical é atualização nacional de 2025–2026, não exigência automática de exame na gravidez."
         ],
         [
-          "p",
-          "<strong>Pendências antes da certificação:</strong> revisão obstétrica independente, confirmação sistemática da vigência das portarias e protocolos locais, auditoria de conteúdo por especialistas em medicina fetal/infectologia, teste das questões com aluno real, revisão semântica contra 004/009/infecções/diabetes, legibilidade desktop e PWA, seleção de imagens com licença e aprovação pelo Admin. Este documento é um rascunho editorial; não criar HTML/index, não adicionar ao catálogo e não fazer merge/deploy."
+          "p"
         ]
       ]
     ]

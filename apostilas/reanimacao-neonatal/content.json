@@ -141,7 +141,9 @@
         [
           "p",
           "A disciplina do tema 003, Assistência ao RN em Sala de Parto, descreve transição fisiológica, contato pele a pele, vacinas, vitamina K e rastreios. Aqui, esses assuntos só aparecem quando mudam uma decisão de reanimação. O objetivo é preservar fronteiras curriculares e tornar o conteúdo aprofundado em vez de repetitivo."
-        ]
+        ],
+        "<p><strong>Caso de fixação:</strong> recém-nascido prematuro nasce hipotônico e não inicia respiração efetiva após as medidas iniciais. A decisão deve seguir o algoritmo vigente do PRN-SBP: avaliar respiração e frequência cardíaca, garantir ventilação eficaz, reavaliar a resposta e escalar somente quando a ventilação estiver comprovadamente adequada. O caso não autoriza memorizar uma dose isolada; concentração, via, intervalo e indicação devem ser conferidos no manual institucional atualizado.</p>",
+        "<p><strong>Caso de fixação:</strong> recém-nascido prematuro nasce hipotônico e não inicia respiração efetiva após as medidas iniciais. A decisão deve seguir o algoritmo vigente do PRN-SBP: avaliar respiração e frequência cardíaca, garantir ventilação eficaz, reavaliar a resposta e escalar somente quando a ventilação estiver comprovadamente adequada. O caso não autoriza memorizar uma dose isolada; concentração, via, intervalo e indicação devem ser conferidos no manual institucional atualizado.</p>"
       ]
     ],
     [
@@ -1782,7 +1784,7 @@
       [
         [
           "2",
-          "14. Referências oficiais, mapa curricular e status editorial"
+          "Referências oficiais e mapa curricular"
         ],
         [
           "o",
@@ -1801,14 +1803,6 @@
         [
           "p",
           "<strong>Fronteira com o tema 003:</strong> este volume discute monitorização e suporte quando há transição inadequada; não substitui a apostila de assistência habitual ao recém-nascido, que cobre primeira hora, vínculo, profilaxias, vacinação e rastreios. As diferenças de oxigênio entre SBP 2026 e AHA/AAP 2025 estão identificadas com atribuição, sem fusão de protocolos."
-        ],
-        [
-          "p",
-          "<strong>Estado atual:</strong> primeira versão autoral em formato JSON, sem index.html, sem inserção no catálogo, merge ou deploy. Este texto demanda revisão por neonatologista/instrutor do PRN-SBP, dupla checagem de doses e parâmetros conforme o manual institucional, teste de autossuficiência com casos, revisão didática para evitar redundâncias, imagens/fluxogramas com licença comprovada e aprovação central no Admin, validação da renderização desktop/PWA e ampliação da profundidade até o patamar definido pelo Prompt Magno. Não usar como protocolo clínico assistencial até certificação."
-        ],
-        [
-          "p",
-          "<strong>Adição editorial de 15/10/2026:</strong> capítulo sobre surfactante e estabilização do prematuro, diferenciação de concentrações iniciais de oxigênio SBP/AHA, pesquisa de complicações mecânicas da VPP, vias aéreas especiais, transporte, cinco casos adicionais e dez questões originais. Referências consultadas diretamente: SBP PRN 2026 para ≥34 e &lt;34 semanas; AHA/AAP 2025. O material antigo de Drive foi lido apenas como comparação e não foi reproduzido. Rascunho sem publicação, certificação médica, imagens do Admin ou testes PWA."
         ]
       ]
     ]

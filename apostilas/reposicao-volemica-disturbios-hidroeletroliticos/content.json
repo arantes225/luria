@@ -1736,8 +1736,7 @@
           "Pendências que impedem certificação/publicação"
         ],
         [
-          "p",
-          "Este arquivo é <strong>rascunho editorial</strong>, não prescrição assistencial individual. Revisar por cirurgião/anestesiologista e nefrologista independentes, conferir doses e concentração das apresentações disponíveis no Brasil, verificar o nível de evidência para fluido balanceado versus salina conforme subgrupo, testar os casos e questões com alunos, medir redundância semântica, conciliar com temas 007/012/022, validar interface responsiva e acessibilidade PWA e direitos autorais. Não criar `index.html`, não incluir imagens externas sem aprovação central no Admin, não publicar catálogo, não fazer merge ou deploy."
+          "p"
         ]
       ]
     ]

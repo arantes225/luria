@@ -1,0 +1,22 @@
+{
+  "id": 58,
+  "slug": "diarreia-aguda",
+  "block": 3,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 23,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 62160,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

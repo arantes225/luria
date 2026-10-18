@@ -1,0 +1,22 @@
+{
+  "id": 62,
+  "slug": "trauma-abdominal",
+  "block": 3,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 15,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 63234,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}

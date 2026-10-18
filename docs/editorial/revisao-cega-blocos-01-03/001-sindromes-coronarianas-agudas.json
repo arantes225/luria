@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "slug": "sindromes-coronarianas-agudas",
+  "block": 1,
+  "status": "aprovado-na-triagem",
+  "findings": [],
+  "checks": {
+    "json": true,
+    "sections": 13,
+    "uniqueIds": true,
+    "toc": true,
+    "references": true,
+    "characters": 94545,
+    "controls": true,
+    "rawMath": true,
+    "questions": true,
+    "html": true,
+    "format": "content-json",
+    "htmlCharacters": 0,
+    "brokenAnchors": 0
+  }
+}
