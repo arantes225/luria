@@ -1,0 +1,1391 @@
+{
+  "v": 2,
+  "s": "diabetes-mellitus",
+  "t": "Diabetes Mellitus",
+  "p": "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores.",
+  "d": "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores.",
+  "a": "Clínica Médica",
+  "m": "Endocrinologia e Metabologia",
+  "h": [
+    "Apostila LURIA",
+    "Diabetes Mellitus",
+    "Tratado completo e atualizado sobre Diabetes Mellitus para provas de residência médica e ENAMED, fundamentado nas Diretrizes Oficiais da Sociedade Brasileira de Diabetes (SBD 2025/2026) e American Diabetes Association (ADA). Abrange critérios diagnósticos estritos, rastreamento do pré-diabetes, classificação etiológica (DM1, DM2, LADA, MODY), metas individualizadas de HbA1c, farmacoterapia moderna não insulínica (metformina, iSGLT2, agonistas GLP-1, coagonistas GIP/GLP-1 tirzepatida, iDPP-4, sulfonilureias, pioglitazona), insulinoterapia basal-bolus com contagem de carboidratos, rastreamento e manejo das complicações crônicas microvasculares e macrovasculares, casos clínicos detalhados e questões comentadas com todos os distratores.",
+    [
+      "Área: Clínica Médica",
+      "Matéria: Endocrinologia e Metabologia",
+      "Tema: Diabetes Mellitus"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "definicao-criterios-diagnosticos-pre-diabetes",
+      "1. Definição, Critérios Diagnósticos Oficiais e Pré-Diabetes (SBD / ADA)"
+    ],
+    [
+      "classificacao-etiologica-dm1-dm2-lada-mody",
+      "2. Classificação Etiológica: DM1, DM2, LADA, MODY e Formas Secundárias"
+    ],
+    [
+      "metas-glicemicas-individualizadas-hba1c",
+      "3. Metas Glicêmicas Individualizadas de HbA1c e Monitorização Contínua"
+    ],
+    [
+      "farmacoterapia-oral-injetavel-dm2-diretriz-sbd",
+      "4. Farmacoterapia Não Insulínica do DM2 (Diretriz SBD 2025/2026 e ADA)"
+    ],
+    [
+      "algoritmo-terapeutico-dm2-tabela-resumo",
+      "5. Algoritmo Terapêutico e Síntese Comparativa das Classes Medicamentosas"
+    ],
+    [
+      "insulinoterapia-dm1-dm2-esquemas-basal-bolus",
+      "6. Insulinoterapia no DM1 e DM2 Avançado: Esquemas, Perfis e Cálculos"
+    ],
+    [
+      "complicacoes-microvasculares-retinopatia-nefropatia-neuropatia",
+      "7. Complicações Crônicas Microvasculares: Retinopatia, Nefropatia e Neuropatia"
+    ],
+    [
+      "complicacoes-macrovasculares-pe-diabetico",
+      "8. Complicações Macrovasculares e Abordagem Multidisciplinar do Pé Diabético"
+    ],
+    [
+      "situacoes-especiais-gestacao-cirurgia-idoso",
+      "9. Situações Especiais: Diabetes na Gestação, Pré-operatório e o Idoso Frágil"
+    ],
+    [
+      "casos-clinicos-alta-complexidade-diabetes",
+      "10. Casos Clínicos Complexos com Discussão Fisiopatológica e Baseada em Evidências"
+    ],
+    [
+      "questoes-residencia-comentadas-diabetes",
+      "11. Questões de Concursos e Residência Médica com Comentários Exaustivos"
+    ],
+    [
+      "pontos-chave-enamed-sbd-2026",
+      "12. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "definicao-criterios-diagnosticos-pre-diabetes",
+      0,
+      [
+        [
+          "2",
+          "1. Definição, Critérios Diagnósticos Oficiais e Pré-Diabetes (SBD / ADA)"
+        ],
+        [
+          "3",
+          "Conceito e Epidemiologia do Diabetes Mellitus"
+        ],
+        [
+          "p",
+          "O Diabetes Mellitus (DM) compreende um grupo heterogêneo de distúrbios metabólicos caracterizados por hiperglicemia crônica resultante de defeitos na secreção de insulina pelas células beta pancreáticas, na ação periférica da insulina nos tecidos-alvo (músculo esquelético, tecido adiposo e fígado) ou em ambos os mecanismos. A hiperglicemia sustentada associa-se a dano endotelial progressivo, estresse oxidativo, disfunção e falência de múltiplos órgãos, especialmente olhos, rins, nervos periféricos, coração e vasos arteriais de médio e grande calibre. No Brasil, o DM atinge mais de 16 milhões de indivíduos adultos, configurando uma das principais causas de mortalidade prematura, doença renal crônica dialítica, cegueira adquirida e amputações não traumáticas de membros inferiores."
+        ],
+        [
+          "3",
+          "Critérios Diagnósticos Laboratoriais Estritos da SBD e ADA"
+        ],
+        [
+          "p",
+          "O diagnóstico laboratorial de Diabetes Mellitus é estabelecido quando preenchido pelo menos um dos quatro critérios oficiais normatizados pela Sociedade Brasileira de Diabetes (SBD) e pela American Diabetes Association (ADA). Para os testes realizados em indivíduos assintomáticos, <strong>é obrigatória a confirmação por uma segunda coleta em ocasião distinta</strong>, preferencialmente repetindo o mesmo teste alterado ou combinando dois testes diferentes da mesma amostra sanguínea:"
+        ],
+        [
+          "t",
+          [
+            "Exame Laboratorial",
+            "Normalidade",
+            "Pré-Diabetes (Risco Aumentado)",
+            "Diabetes Mellitus Estabelecido"
+          ],
+          [
+            [
+              "<strong>Glicemia de Jejum (Plasma Venoso)</strong>",
+              "&lt; 100 mg/dL",
+              "<strong>100 a 125 mg/dL</strong> (Glicemia de Jejum Alterada)",
+              "<strong>&ge; 126 mg/dL</strong> (confirmado em 2 ocasiões)"
+            ],
+            [
+              "<strong>Teste Oral de Tolerância à Glicose (TOTG 75g - 2 horas)</strong>",
+              "&lt; 140 mg/dL",
+              "<strong>140 a 199 mg/dL</strong> (Tolerância Diminuída à Glicose)",
+              "<strong>&ge; 200 mg/dL</strong> (confirmado em 2 ocasiões)"
+            ],
+            [
+              "<strong>Hemoglobina Glicada (HbA1c - Padronizada NGSP/DCCT)</strong>",
+              "&lt; 5,7%",
+              "<strong>5,7% a 6,4%</strong> (Pré-diabetes)",
+              "<strong>&ge; 6,5%</strong> (confirmado em 2 ocasiões)"
+            ],
+            [
+              "<strong>Glicemia Plasmática Aleatória (ao Acaso)</strong>",
+              "—",
+              "—",
+              "<strong>&ge; 200 mg/dL na presença inequívoca dos 4 Ps</strong> (dispensa confirmação laboratorial)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>A Regra de Ouro da Glicemia Aleatória:</strong> Quando o paciente se apresenta com os <strong>sintomas clássicos de hiperglicemia acentuada (os \"4 Ps\": Poliúria, Polidipsia, Polifagia e Perda Ponderal inexplicada)</strong> ou em crise hiperglicêmica aguda, a constatação de uma glicemia plasmática aleatória &ge; 200 mg/dL é <strong>suficiente e definitiva para o diagnóstico imediato</strong>, sendo contraindicado e antiético atrasar o início do tratamento para aguardar exames confirmatórios de jejum."
+        ],
+        [
+          "3",
+          "Fatores Interferentes na Interpretação da Hemoglobina Glicada (HbA1c)"
+        ],
+        [
+          "p",
+          "A dosagem de HbA1c reflete a média ponderada da glicemia dos últimos 90 a 120 dias, com maior peso (cerca de 50%) atribuído aos últimos 30 dias. No entanto, condições clínicas que alteram a meia-vida das hemácias invalidam a acurácia da HbA1c:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Falsa Redução da HbA1c:</strong> Anemias hemolíticas autoimunes ou microangiopáticas, esferocitose hereditária, perda sanguínea aguda recente, transfusão sanguínea nas últimas semanas, hemodiálise crônica e uso de eritropoietina recombinante (aumento da proporção de eritrócitos jovens recém-saídos da medula com menor tempo de glicação).",
+            "<strong>Falsa Elevação da HbA1c:</strong> Anemia ferropriva grave por carência de ferro (o turnover eritrocitário lentificado aumenta a idade média das hemácias circulantes, expondo-as por mais tempo à glicose plasmática), anemia megaloblástica por deficiência de B12 ou folato e hiperbilirrubinemia grave. Em tais cenários, o diagnóstico e monitorização devem ser guiados pela glicemia de jejum, TOTG ou dosagem de <strong>Frutosamina sérica</strong> (que avalia o controle glicêmico das últimas 2 a 3 semanas)."
+          ]
+        ],
+        [
+          "3",
+          "Rastreamento e Conduta no Pré-Diabetes"
+        ],
+        [
+          "p",
+          "O pré-diabetes representa um estado intermediário de alto risco biológico para progressão para DM2 clínico e desenvolvimento precoce de doença cardiovascular aterosclerótica. A diretriz SBD recomenda rastreamento em todos os indivíduos com idade &ge; 35 anos ou em adultos de qualquer idade que apresentem excesso de peso (IMC &ge; 25 kg/m², ou &ge; 23 kg/m² em asiáticos) associado a pelo menos um fator de risco adicional: sedentarismo, parente de primeiro grau com DM, hipertensão arterial (&ge; 130/80 mmHg ou em uso de anti-hipertensivos), dislipidemia (HDL &lt; 35 mg/dL e/ou triglicerídeos &gt; 250 mg/dL), história prévia de diabetes gestacional, síndrome dos ovários policísticos ou esteatose hepática metabólica."
+        ],
+        [
+          "p",
+          "A intervenção primária obrigatória no pré-diabetes consiste em <strong>Modificação Intensiva do Estilo de Vida (MEV)</strong>, com meta de redução ponderal de pelo menos <strong>7% do peso corporal</strong> e prática de pelo menos <strong>150 minutos semanais de atividade física aeróbica moderada a vigorosa</strong> associada a exercícios resistidos. A terapia farmacológica com <strong>Metformina (850 mg duas vezes ao dia)</strong> é formalmente recomendada pela SBD/ADA para prevenção do DM em indivíduos com pré-diabetes que apresentem IMC &ge; 35 kg/m², idade &lt; 60 anos ou mulheres com histórico de diabetes gestacional prévio."
+        ]
+      ]
+    ],
+    [
+      "classificacao-etiologica-dm1-dm2-lada-mody",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação Etiológica: DM1, DM2, LADA, MODY e Formas Secundárias"
+        ],
+        [
+          "3",
+          "Classificação Fisiopatológica Consolidada"
+        ],
+        [
+          "p",
+          "O diabetes mellitus é classificado etiologicamente em quatro grandes categorias clínicas distintas:"
+        ],
+        [
+          "4",
+          "1. Diabetes Mellitus Tipo 1 (DM1: Autoimune e Idiopático)"
+        ],
+        [
+          "p",
+          "Corresponde a 5% a 10% dos casos de diabetes e decorre da destruição autoimune crônica e mediada por linfócitos T citotóxicos (CD8+) das células beta dos ilhéus de Langerhans pancreáticos, culminando em <strong>deficiência absoluta de insulina</strong>. Acomete primordialmente crianças, adolescentes e adultos jovens com peso normal ou emagrecidos, com rápida progressão para cetoacidose diabética se não tratados imediatamente com insulina. Apresenta forte susceptibilidade genética ligada a alelos do complexo principal de histocompatibilidade (HLA-DR3-DQ2 e HLA-DR4-DQ8). A comprovação laboratorial da autoimunidade é realizada pela detecção sérica dos seguintes autoanticorpos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Anti-GAD65 (Anticorpo anti-descarboxilase do ácido glutâmico):</strong> Presente em 70% a 80% dos casos; é o anticorpo que permanece positivo por mais tempo ao longo dos anos, sendo o marcador mais sensível para o diagnóstico no adulto.",
+            "<strong>Anti-IA2 (Anticorpo anti-tirosina fosfatase-like protein IA-2):</strong> Marcador de destruição celular ativa rápida, altamente prevalente em crianças na fase inicial.",
+            "<strong>Anti-Insulina (IAA):</strong> Frequentemente o primeiro anticorpo a surgir na infância precoce; perde a validade após o início da insulinoterapia exógena.",
+            "<strong>Anti-ZnT8 (Anticorpo anti-transportador de zinco 8):</strong> Complementa o painel diagnóstico em pacientes negativos para os demais anticorpos."
+          ]
+        ],
+        [
+          "p",
+          "O nível plasmático de <strong>Peptídeo C</strong> (clivado da pró-insulina em proporção equimolar à insulina endógena) encontra-se <strong>indetectável ou marcadamente reduzido (&lt; 0,6 ng/mL)</strong> na fase estabelecida do DM1, confirmando a ausência de reserva funcional pancreática."
+        ],
+        [
+          "4",
+          "2. Diabetes Mellitus Tipo 2 (DM2)"
+        ],
+        [
+          "p",
+          "Representa 90% a 95% de todos os casos de diabetes. Sua gênese envolve uma complexa interação poligênica e ambiental caracterizada inicialmente por <strong>resistência periférica à insulina</strong> (especialmente em músculo esquelético e fígado) associada à obesidade visceral e sedentarismo. Para compensar a menor sensibilidade tecidual, as células beta aumentam a produção de insulina (hiperinsulinismo compensatório). Com o passar dos anos, ocorre exaustão e falência progressiva da secreção de insulina por glicotoxicidade, lipotoxicidade e deposição de amiloide nos ilhéus. O peptídeo C encontra-se inicialmente elevado ou normal, diminuindo apenas nas fases muito tardias. Não há autoimunidade detectável."
+        ],
+        [
+          "4",
+          "3. LADA (Latent Autoimmune Diabetes in Adults)"
+        ],
+        [
+          "p",
+          "O LADA é uma forma variante de <strong>DM1 autoimune de progressão lenta</strong> que se manifesta clinicamente na vida adulta (geralmente entre 30 e 50 anos). Inicialmente, o paciente é rotulado erroneamente como portador de DM2 e tratado com antidiabéticos orais com resposta parcial inicial. Contudo, em um período de meses a poucos anos (tipicamente dentro de 6 a 24 meses), o paciente apresenta emagrecimento rápido, falência glicêmica secundária a drogas orais e tendência à cetoacidose. Os critérios diagnósticos clássicos incluem: idade &gt; 30 anos ao diagnóstico; presença de autoanticorpos positivos (notadamente <strong>Anti-GAD positivo em títulos elevados</strong>); e ausência de necessidade obrigatória de insulina nos primeiros 6 meses pós-diagnóstico."
+        ],
+        [
+          "4",
+          "4. MODY (Maturity-Onset Diabetes of the Young)"
+        ],
+        [
+          "p",
+          "O MODY engloba um grupo monogênico raro de diabetes com herança autossômica dominante (acomete pelo menos três gerações consecutivas da mesma família), caracterizado por disfunção primária na secreção de insulina com sensibilidade periférica à insulina perfeitamente preservada. Costuma manifestar-se antes dos 25 anos em pacientes magros, sem estigmas de resistência insulínica (sem acantose nigricans) e com <strong>anticorpos anti-ilhéu estritamente negativos e peptídeo C detectável</strong>. Os dois subtipos clínicos mais cobrados em concursos são:"
+        ],
+        [
+          "u",
+          [
+            "<strong>MODY 2 (Mutação no gene da Glicoquinase - GCK):</strong> A glicoquinase atua como o \"sensor de glicose\" da célula beta. A mutação eleva o limiar de secreção de insulina, resultando em hiperglicemia de jejum leve, estável e assintomática (geralmente entre 100 e 145 mg/dL, com HbA1c 5,8% a 7,0%) desde o nascimento. Não progride com complicações microvasculares crônicas e <strong>NÃO necessita de tratamento medicamentoso</strong> na grande maioria dos casos (apenas MEV).",
+            "<strong>MODY 3 (Mutação no fator de transcrição nuclear HNF-1-alfa):</strong> É a forma monogênica mais comum com acometimento clínico progressivo. Cursa com glicosúria precoce (por baixo limiar tubular renal de glicose) e hiperglicemia progressiva com risco aumentado de retinopatia e nefropatia. O dado de altíssimo rendimento para provas é a sua <strong>extraordinária e duradoura sensibilidade a baixas doses de Sulfonilureias orais (ex: gliclazida ou glibenclamida)</strong>, que representam a terapia de escolha em substituição à insulina."
+          ]
+        ],
+        [
+          "4",
+          "5. Diabetes Secundário e Outras Formas Específicas"
+        ],
+        [
+          "t",
+          [
+            "Etiologia Específica",
+            "Mecanismo Fisiopatológico Principal",
+            "Exemplos Clínicos Típicos"
+          ],
+          [
+            [
+              "<strong>Doenças do Pâncreas Exócrino (DM Tipo 3c)</strong>",
+              "Destruição anatômica de todo o parênquima pancreático, afetando células beta (insulina), células alfa (glucagon) e ácinos exócrinos. Diabetes instável e volátil (\"brittle diabetes\") com alto risco de hipoglicemia severa.",
+              "Pancreatite crônica calcificante (alcoólica), pancreatectomia cirúrgica parcial ou total, fibrose cística e hemocromatose hereditária (\"diabetes bronzeado\")."
+            ],
+            [
+              "<strong>Endocrinopatias Antagônicas à Insulina</strong>",
+              "Hipersecreção de hormônios contra-reguladores que estimulam a gliconeogênese hepática e bloqueiam a captação periférica de glicose.",
+              "Síndrome de Cushing (excesso de cortisol), Acromegalia (excesso de GH e IGF-1), Feocromocitoma (hiperadrenergismo com bloqueio da secreção insulínica) e Glucagonoma."
+            ],
+            [
+              "<strong>Induzido por Fármacos e Químicos</strong>",
+              "Aumento da resistência insulínica tecidual ou toxicidade direta às células beta.",
+              "<strong>Glicocorticoides sistêmicos</strong> (principal causa medicamentosa, caracterizada por hiperglicemia predominantemente vespertina e pós-prandial), antirretrovirais (inibidores de protease), inibidores de checkpoint imune (anti-PD-1 causando DM1 fulminante), tacrolimo e diuréticos tiazídicos em altas doses."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "metas-glicemicas-individualizadas-hba1c",
+      0,
+      [
+        [
+          "2",
+          "3. Metas Glicêmicas Individualizadas de HbA1c e Monitorização Contínua"
+        ],
+        [
+          "3",
+          "Princípio da Individualização Terapêutica"
+        ],
+        [
+          "p",
+          "Historicamente, preconizava-se a obtenção de níveis de HbA1c o mais próximo possível da normalidade para todos os pacientes. No entanto, grandes ensaios clínicos randomizados de intervenção intensiva (ACCORD, ADVANCE e VADT) revelaram que a busca cega por metas estritas em indivíduos idosos ou com doença cardiovascular prévia resultou em aumento substancial de eventos de <strong>hipoglicemia grave e mortalidade cardiovascular</strong>. Assim, as diretrizes da SBD e ADA estabeleceram o princípio da <strong>metas individualizadas</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Perfil Clínico do Paciente",
+            "Meta Alvo de HbA1c",
+            "Justificativa Fisiológica e Segurança"
+          ],
+          [
+            [
+              "<strong>Maioria dos Adultos Não Grávidos</strong>",
+              "<strong>&lt; 7,0%</strong>",
+              "Equilíbrio consagrado na prevenção de complicações microvasculares (retinopatia, nefropatia, neuropatia) com baixo risco de hipoglicemias."
+            ],
+            [
+              "<strong>Adultos Jovens, Recém-Diagnosticados, Sem DCV e Longa Expectativa de Vida</strong>",
+              "<strong>&lt; 6,5%</strong>",
+              "Desde que alcançado sem hipoglicemias significativas e sem uso excessivo de drogas indutoras de ganho de peso. Promove a \"memória metabólica\" protetora duradoura."
+            ],
+            [
+              "<strong>Idosos Hígidos e Funcionalmente Independentes</strong>",
+              "<strong>&lt; 7,0% a 7,5%</strong>",
+              "Preservação cognitiva, ausência de fragilidade e expectativa de vida substancial justificam controle adequado sem hipoglicemia."
+            ],
+            [
+              "<strong>Idosos Frágeis, com Múltiplas Comorbidades ou Doença Cardiovascular Avançada</strong>",
+              "<strong>&lt; 8,0% (ou até 8,5%)</strong>",
+              "Prioridade absoluta na <strong>prevenção de hipoglicemia</strong>, quedas, fraturas ósseas, arritmias ventriculares e declínio cognitivo agudo. O foco é evitar sintomas de hiperglicemia extrema e desidratação."
+            ],
+            [
+              "<strong>Gestantes com Diabetes Pré-existente ou Gestacional</strong>",
+              "<strong>&lt; 6,0% a 6,5%</strong>",
+              "Prevenção de malformações congênitas embriofetais, macrossomia fetal, polidrâmnio e complicações de parto."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Metas Glicêmicas Capilares e Parâmetros de Tempo no Alvo (TIR)"
+        ],
+        [
+          "p",
+          "Para o automonitoramento capilar tradicional, os alvos preconizados pela SBD incluem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Glicemia Pré-Prandial (em jejum ou antes das refeições):</strong> Entre <strong>80 e 130 mg/dL</strong>.",
+            "<strong>Glicemia Pós-Prandial (1 a 2 horas após o início da refeição):</strong> Inferior a <strong>180 mg/dL</strong>.",
+            "<strong>Glicemia ao Deitar / Madrugada:</strong> Entre 100 e 140 mg/dL para prevenir hipoglicemia noturna."
+          ]
+        ],
+        [
+          "p",
+          "Com a expansão dos Sensores de Monitorização Contínua de Glicose (CGM), as diretrizes internacionais e a SBD incorporaram as métricas do Perfil Ambulatorial de Glicose (AGP), com as seguintes metas padronizadas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tempo no Alvo (TIR - Time in Range: 70 a 180 mg/dL):</strong> Deve ser <strong>superior a 70%</strong> do tempo total (para a maioria dos diabéticos tipo 1 e tipo 2) ou &gt; 50% em idosos frágeis. Cada acréscimo de 10% no TIR associa-se a uma redução de aproximadamente 0,8% na HbA1c e queda dramática na taxa de progressão de retinopatia e microalbuminúria.",
+            "<strong>Tempo Abaixo do Alvo (TBR - Time Below Range &lt; 70 mg/dL):</strong> Deve ser rigorosamente <strong>inferior a 4%</strong> (menos de 1 hora ao dia), sendo o tempo em hipoglicemia grave (&lt; 54 mg/dL) mantido <strong>&lt; 1%</strong> (menos de 15 minutos ao dia).",
+            "<strong>Tempo Acima do Alvo (TAR - Time Above Range &gt; 180 mg/dL):</strong> Deve ser <strong>inferior a 25%</strong> do tempo.",
+            "<strong>Coeficiente de Variação da Glicose (%CV):</strong> Mede a variabilidade glicêmica; a meta de estabilidade metabólica é <strong>&le; 36%</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "farmacoterapia-oral-injetavel-dm2-diretriz-sbd",
+      0,
+      [
+        [
+          "2",
+          "4. Farmacoterapia Não Insulínica do DM2 (Diretriz SBD 2025/2026 e ADA)"
+        ],
+        [
+          "3",
+          "Mudança de Paradigma: Tratamento Centrado em Desfechos Cardiorrenais"
+        ],
+        [
+          "p",
+          "A abordagem farmacológica moderna do Diabetes Tipo 2 rompeu definitivamente com a visão glicocêntrica isolada. De acordo com a Diretriz Consolidada da SBD 2025/2026 e o Consenso ADA/EASD, a seleção da terapia inicial e das combinações subsequentes não depende apenas da HbA1c de entrada, mas é categorizada prioritariamente pela presença de comorbidades clínicas de alto risco: <strong>Doença Cardiovascular Aterosclerótica (DCVA) estabelecida, Insuficiência Cardíaca (IC), Doença Renal Crônica (DRC) ou necessidade de potente perda ponderal</strong>."
+        ],
+        [
+          "3",
+          "Classes Farmacológicas em Detalhes"
+        ],
+        [
+          "4",
+          "1. Biguanidas (Metformina)"
+        ],
+        [
+          "p",
+          "Continua sendo o fármaco basal de primeira linha na grande maioria dos pacientes sem contraindicações formais. Seu mecanismo molecular envolve a ativação da enzima intracelular AMPK (proteína quinase ativada por AMP), que inibe a transcrição de enzimas-chave da gliconeogênese hepática, reduzindo a produção hepática de glicose basal e aumentando discretamente a sensibilidade insulínica muscular. Apresenta neutralidade de peso (ou discreta redução), ausência de risco intrínseco de hipoglicemia em monoterapia e baixo custo. Efeitos adversos mais comuns são gastrointestinais (diarreia osmótica, náuseas, empachamento). O uso prolongado (&gt; 4-5 anos) associa-se a <strong>má absorção ileal e deficiência de vitamina B12</strong>, exigindo monitorização laboratorial periódica. <strong>Ajuste de dose na DRC:</strong> dose plena até TFGe 45 mL/min; reduzir a dose pela metade (máximo 1.000 mg/dia) entre TFGe 30 e 44 mL/min; e <strong>CONTRAINDICADA se TFGe &lt; 30 mL/min</strong> pelo risco de acidose lática grave."
+        ],
+        [
+          "4",
+          "2. Inibidores do Co-transportador Sódio-Glicose 2 (iSGLT2 / Gliflozinas)"
+        ],
+        [
+          "p",
+          "Compreendem a <strong>Dapagliflozina</strong> (10 mg/dia) e a <strong>Empagliflozina</strong> (10 e 25 mg/dia). Atuam no túbulo contorcido proximal renal bloqueando seletivamente o co-transportador SGLT2, responsável por 90% da reabsorção da glicose filtrada, promovendo <strong>glicosúria e natriurese forçadas</strong> (eliminação de 70 a 80 g de glicose/dia na urina, equivalendo a 300 kcal/dia). Seus benefícios clínicos transcendem o controle glicêmico (redução de 0,6% a 1,0% na HbA1c):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Proteção Renal:</strong> A natriurese restaura o feedback tubuloglomerular ao entregar mais sódio à mácula densa, promovendo vasoconstrição reflexa da arteríola aferente glomerular, diminuindo a hiperfiltração e a hipertensão intraglomerular, reduzindo a proteinúria e retardando drasticamente a progressão para diálise. Indicados na DRC com TFGe entre 20 e 60 mL/min e/ou RAC &ge; 30 mg/g.",
+            "<strong>Insuficiência Cardíaca:</strong> Reduzem em 30% a 35% as hospitalizações por IC e mortalidade cardiovascular em portadores de IC com fração de ejeção reduzida (ICFEr) ou preservada (ICFEp), independentemente da presença de diabetes.",
+            "<strong>Efeitos Adversos e Riscos:</strong> Risco aumentado de <strong>infecções fúngicas genitais micóticas (candidíase vulvovaginal e balanite)</strong>, poliúria/desidratação em idosos e o risco raro, porém grave, de <strong>Cetoacidose Diabética Euglicêmica</strong> (glicemia &lt; 250 mg/dL com acidose e cetonemia positiva), precipitada por infecções, cirurgias de grande porte, jejum prolongado ou redução abrupta de insulina exógena. O fármaco deve ser suspenso de 3 a 4 dias antes de cirurgias eletivas."
+          ]
+        ],
+        [
+          "4",
+          "3. Agonistas do Receptor de GLP-1 (aGLP-1)"
+        ],
+        [
+          "p",
+          "Incluem análogos de longa ação diária (<strong>Liraglutida</strong> 1,2 a 1,8 mg SC/dia) e semanal (<strong>Semaglutida</strong> 0,5 a 1,0 mg SC/semana, e <strong>Dulaglutida</strong> 0,75 a 1,5 mg SC/semana). Mimetizam o hormônio incretínico endógeno GLP-1, ligando-se a receptores específicos e estimulando a secreção de insulina de forma <strong>estritamente glicose-dependente</strong> (baixo risco de hipoglicemia) enquanto suprimem a secreção inapropriada de glucagon. Além disso, lentificam o esvaziamento gástrico e ativam centros hipotalâmicos da saciedade, promovendo <strong>perda de peso expressiva (4 a 10 kg)</strong>. São a <strong>classe de escolha obrigatória em pacientes com Doença Cardiovascular Aterosclerótica estabelecida (infarto prévio, AVC, DAOP)</strong> ou altíssimo risco cardiovascular, reduzindo desfechos cardiovasculares adversos maiores (MACE: morte cardiovascular, IAM não fatal e AVC não fatal). Efeitos adversos comuns são náuseas e vômitos no início da titulação. Contraindicados em pacientes com histórico pessoal ou familiar de Carcinoma Medular de Tireoide ou Síndrome de Neoplasia Endócrina Múltipla tipo 2 (NEM-2)."
+        ],
+        [
+          "4",
+          "4. Coagonistas Duplos GIP/GLP-1 (Tirzepatida)"
+        ],
+        [
+          "p",
+          "A <strong>Tirzepatida</strong> representa uma nova classe inovadora (Twincretins), atuando simultaneamente como agonista dos receptores de GLP-1 e GIP (polipeptídeo inibitório gástrico). Apresenta potência terapêutica sem precedentes na história do diabetes, alcançando reduções de HbA1c superiores a 2,0% a 2,5% e <strong>perda de peso corporal média que ultrapassa 15% a 22%</strong> em doses de 10 a 15 mg semanais, com perfil de segurança semelhante aos aGLP-1."
+        ],
+        [
+          "4",
+          "5. Inibidores da Dipeptidil Peptidase-4 (iDPP-4 / Gliptinas)"
+        ],
+        [
+          "p",
+          "Compreendem a <strong>Vildagliptina, Sitagliptina, Saxagliptina e Linagliptina</strong>. Inibem a enzima DPP-4, impedindo a degradação rápida dos hormônios incretínicos endógenos (GLP-1 e GIP), prolongando sua meia-vida plasmática. São agentes orais com excelente tolerabilidade clínica, ausência de risco de hipoglicemia e <strong>neutralidade no peso corporal</strong>. Não demonstraram benefício cardiovascular em MACE ou IC, mas são amplamente utilizados em idosos frágeis pela segurança. A <strong>Linagliptina</strong> destaca-se por possuir eliminação predominantemente enterohepática/biliar (&gt; 95%), sendo o único iDPP-4 que <strong>não necessita de qualquer ajuste de dose na insuficiência renal grave ou dialítica</strong>. A Saxagliptina deve ser evitada em portadores de IC pelo discreto aumento de internações hospitalares observado no estudo SAVOR-TIMI 53."
+        ],
+        [
+          "4",
+          "6. Sulfonilureias (Secretagogos de Insulina)"
+        ],
+        [
+          "p",
+          "Representadas pela <strong>Gliclazida MR</strong> (30 a 120 mg/dia) e Glibenclamida. Atuam ligando-se ao receptor SUR1 nos canais de potássio sensíveis a ATP (K-ATP) da membrana das células beta pancreáticas, provocando fechamento dos canais, despolarização de membrana, influxo de cálcio e <strong>secreção contínua de insulina independente dos níveis de glicemia</strong>. Possuem alta potência inicial para reduzir a HbA1c (1,0% a 1,5%), mas acarretam <strong>risco substancial de hipoglicemia e ganho de peso (2 a 4 kg)</strong>. A Gliclazida MR é a sulfonilureia de escolha por apresentar menor taxa de hipoglicemias que a glibenclamida. Devem ser usadas com cautela extrema ou evitadas em idosos e doentes renais crônicos."
+        ],
+        [
+          "4",
+          "7. Tiazolidinedionas / Glitazonas (Pioglitazona)"
+        ],
+        [
+          "p",
+          "A <strong>Pioglitazona</strong> (15 a 45 mg/dia) atua como ligante agonista do receptor nuclear PPAR-gama, modulando genes relacionados ao metabolismo lipídico e glicídico. É um <strong>potente sensibilizador insulínico periférico</strong> (aumenta a captação de glicose no músculo e tecido adiposo e reduz a esteatose hepática metabólica). Não causa hipoglicemia em monoterapia e melhora o perfil lipídico. No entanto, induz retenção hidrossalina nos túbulos renais por ativação dos canais ENaC, sendo <strong>FORMALMENTE CONTRAINDICADA em portadores de Insuficiência Cardíaca sintomática (NYHA classes II, III e IV)</strong>. Outros efeitos adversos incluem ganho de peso, piora de osteopenia com aumento de fraturas ósseas em mulheres na pós-menopausa e risco potencial de edema macular."
+        ]
+      ]
+    ],
+    [
+      "algoritmo-terapeutico-dm2-tabela-resumo",
+      0,
+      [
+        [
+          "2",
+          "5. Algoritmo Terapêutico e Síntese Comparativa das Classes Medicamentosas"
+        ],
+        [
+          "3",
+          "Tabela Comparativa Oficial das Drogas Antidiabéticas (SBD / ADA)"
+        ],
+        [
+          "t",
+          [
+            "Classe Farmacológica",
+            "Eficácia em HbA1c",
+            "Impacto no Peso",
+            "Risco de Hipoglicemia",
+            "Benefício Cardiorrenal Comprovado",
+            "Pontos de Atenção e Efeitos Adversos"
+          ],
+          [
+            [
+              "<strong>Metformina</strong>",
+              "Alta (1,0 - 1,5%)",
+              "Neutro / Perda discreta",
+              "Muito baixo",
+              "Neutro (potencial benefício cardiovascular em estudos observacionais)",
+              "Desconforto GI, diarreia, déficit de vitamina B12. Suspender se TFGe &lt; 30 mL/min."
+            ],
+            [
+              "<strong>iSGLT2 (Dapagliflozina, Empagliflozina)</strong>",
+              "Intermediária (0,6 - 1,0%)",
+              "Perda (2 a 3 kg)",
+              "Muito baixo",
+              "<strong>Excelente redução de IC, DRC e morte CV</strong>",
+              "Infecções micóticas genitais, hipotensão, cetoacidose euglicêmica perioperatória."
+            ],
+            [
+              "<strong>aGLP-1 (Semaglutida, Liraglutida, Dulaglutida)</strong>",
+              "Muito Alta (1,2 - 2,0%)",
+              "<strong>Perda Potente (4 a 10 kg)</strong>",
+              "Muito baixo",
+              "<strong>Excelente redução de MACE na DCV aterosclerótica</strong> e benefício na albuminúria",
+              "Náuseas, vômitos, plenitude. Contraindicados no câncer medular de tireoide. Custo alto."
+            ],
+            [
+              "<strong>Coagonistas GIP/GLP-1 (Tirzepatida)</strong>",
+              "Excepcional (&gt; 2,0 - 2,5%)",
+              "<strong>Perda Extrema (&gt; 15 - 20%)</strong>",
+              "Muito baixo",
+              "Potente redução de pressão arterial, lipídios e peso; ensaios em desfechos CV em consolidação",
+              "Efeitos adversos GI (náuseas/diarreia) dose-dependentes. Custo elevado."
+            ],
+            [
+              "<strong>iDPP-4 (Gliptinas)</strong>",
+              "Intermediária (0,5 - 0,8%)",
+              "Neutro",
+              "Muito baixo",
+              "Neutro na DCV e IC (Saxagliptina: cautela em IC)",
+              "Excelente tolerabilidade em idosos e renais crônicos. Linagliptina dispensa ajuste na DRC."
+            ],
+            [
+              "<strong>Sulfonilureias (Gliclazida MR)</strong>",
+              "Alta (1,0 - 1,5%)",
+              "Ganho (2 a 4 kg)",
+              "<strong>Alto</strong>",
+              "Neutro (não demonstrado benefício cardiovascular)",
+              "Risco de hipoglicemia severa e prolongada. Exaustão secundária da célula beta."
+            ],
+            [
+              "<strong>Glitazonas (Pioglitazona)</strong>",
+              "Alta (1,0 - 1,5%)",
+              "Ganho (retenção hídrica)",
+              "Muito baixo",
+              "Redução de AVC/IAM recorrente; melhora na esteatose hepática",
+              "<strong>Contraindicada em IC NYHA II-IV</strong>. Risco de fraturas em mulheres e retenção hídrica."
+            ],
+            [
+              "<strong>Insulina Exógena</strong>",
+              "Ilimitada (titulável)",
+              "Ganho expressivo",
+              "<strong>Muito Alto</strong>",
+              "Neutro em eventos cardiovasculares",
+              "Hipoglicemia, lipodistrofia local, necessidade de monitorização frequente."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Regra Prática de Decisão Clínica para a Prova de Residência e ENAMED"
+        ],
+        [
+          "p",
+          "O raciocínio clínico diante de um paciente recém-diagnosticado ou em falha com metformina obedece ao seguinte fluxograma mental padronizado:"
+        ],
+        [
+          "o",
+          [
+            "<em>Paciente com Doença Cardiovascular Aterosclerótica (DCVA) estabelecida (IAM, AVC, DAOP, placa carotídea &gt; 50%):</em> A primeira escolha mandatória é associar um <strong>Agonista de GLP-1 com benefício comprovado em MACE (Semaglutida, Dulaglutida ou Liraglutida)</strong> OU um <strong>iSGLT2</strong>.",
+            "<em>Paciente com Insuficiência Cardíaca (ICFEr ou ICFEp):</em> A primeira escolha mandatória e indiscutível é um <strong>Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina)</strong>, independentemente da HbA1c basal.",
+            "<em>Paciente com Doença Renal Crônica (TFGe entre 20 e 60 mL/min e/ou RAC &ge; 30 mg/g):</em> A primeira escolha preferencial é um <strong>iSGLT2</strong>; se houver contraindicação ou persistência de albuminúria, associar <strong>aGLP-1</strong> ou <strong>Finerenona</strong> (antagonista não esteroide do receptor mineralocorticoide).",
+            "<em>Paciente sem DCV/IC/DRC com necessidade prioritária de perda de peso:</em> Prescrever <strong>Tirzepatida</strong> ou <strong>Semaglutida / Liraglutida</strong> em dose alta.",
+            "<em>Paciente sem comorbidades cardiorrenais e limitação financeira severa:</em> Metformina associada à <strong>Sulfonilureia de menor risco (Gliclazida MR)</strong> ou Pioglitazona."
+          ]
+        ]
+      ]
+    ],
+    [
+      "insulinoterapia-dm1-dm2-esquemas-basal-bolus",
+      0,
+      [
+        [
+          "2",
+          "6. Insulinoterapia no DM1 e DM2 Avançado: Esquemas, Perfis e Cálculos"
+        ],
+        [
+          "3",
+          "Fisiologia da Secreção Insulínica e Tipos de Insulina"
+        ],
+        [
+          "p",
+          "Em indivíduos saudáveis, o pâncreas endócrino secreta insulina segundo dois padrões biológicos distintos: a <strong>secreção basal contínua</strong> (baixas concentrações plasmáticas sustentadas durante 24 horas para suprimir a lipólise descontrolada e frear a gliconeogênese hepática) e a <strong>secreção prandial em bólus</strong> (picos rápidos e intensos deflagrados pela ingestão de nutrientes para promover a captação celular de glicose)."
+        ],
+        [
+          "t",
+          [
+            "Tipo de Insulina",
+            "Exemplos Comerciais",
+            "Início de Ação",
+            "Pico Plasmático",
+            "Duração Efetiva do Efeito"
+          ],
+          [
+            [
+              "<strong>Ultrarrápida (Análogos)</strong>",
+              "Lispro, Aspart, Glulisina",
+              "10 a 15 minutos",
+              "1 a 2 horas",
+              "3 a 5 horas (aplicar imediatamente antes ou até 20 min após o início das refeições)"
+            ],
+            [
+              "<strong>Rápida (Humana)</strong>",
+              "Regular (R)",
+              "30 a 60 minutos",
+              "2 a 4 horas",
+              "6 a 8 horas (obrigatoriedade de aplicar 30 minutos antes das refeições)"
+            ],
+            [
+              "<strong>Intermediária (Humana)</strong>",
+              "NPH (Neutral Protamine Hagedorn)",
+              "1 a 2 horas",
+              "<strong>4 a 10 horas</strong> (pico pronunciado associado a hipoglicemia noturna)",
+              "12 a 16 horas (exige 2 a 3 aplicações diárias)"
+            ],
+            [
+              "<strong>Longa / Ultralonga (Análogos)</strong>",
+              "Glargina U100/U300, Detemir, Degludeca",
+              "1 a 2 horas (Degludeca: 30-90 min)",
+              "<strong>Sem pico pronunciado</strong> (perfil quase plano/\"peakless\")",
+              "20 a 24 horas (Glargina/Detemir) até <strong>&gt; 42 horas</strong> (Degludeca)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Esquema Basal-Bolus no DM1 e DM2 com Falência Insulínica"
+        ],
+        [
+          "p",
+          "O esquema basal-bolus é o padrão-ouro fisiológico obrigatório para todo portador de DM1 e para indivíduos com DM2 com falência progressiva avançada de células beta. A dose total diária inicial de insulina no DM1 situa-se em torno de <strong>0,5 a 0,7 U/kg/dia</strong> (podendo atingir 1,0 a 1,5 U/kg/dia na puberdade ou em quadros de cetoacidose recente com resistência temporária) e 0,3 a 0,5 U/kg/dia no DM2. A dose diária total é dividida matematicamente em duas frações:"
+        ],
+        [
+          "u",
+          [
+            "<strong>50% como Insulina Basal:</strong> Fornecida por análogos longos (Glargina ou Degludeca uma vez ao dia) ou insulina NPH (dividida em 2/3 pela manhã antes do desjejum e 1/3 obrigatoriamente <em>ao deitar/às 22h</em>, e nunca no jantar, para que o pico coincida com a manhã e não com as 3h da madrugada, prevenindo hipoglicemias graves noturnas).",
+            "<strong>50% como Insulina Prandial (Bolus):</strong> Fracionada entre as 3 principais refeições (café, almoço e jantar) utilizando análogos ultrarrápidos (Lispro/Aspart/Glulisina) ou insulina Regular."
+          ]
+        ],
+        [
+          "3",
+          "Cálculos Avançados: Fator de Sensibilidade e Relação Insulina/Carboidrato"
+        ],
+        [
+          "p",
+          "O manejo intensivo moderno no DM1 baseia-se na contagem de carboidratos e no cálculo de doses corretivas individualizadas através de duas fórmulas matemáticas clássicas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fator de Sensibilidade à Insulina (FS):</strong> Representa quantos miligramas por decilitro (mg/dL) de glicemia são reduzidos por 1 unidade de insulina rápida ou ultrarrápida:\n    <ul>\n      <li><em>Para análogos ultrarrápidos: Regra dos 1800 &rarr; FS = 1800 / Dose Diária Total de Insulina (DDT)</em>",
+            "<em>Para insulina Regular: Regra dos 1500 &rarr; FS = 1500 / DDT</em>",
+            "<em>Exemplo: Paciente usando 50 U de insulina diária total com análogo ultrarrápido tem FS = 1800 / 50 = 36 mg/dL por unidade.</em>",
+            "<strong>Bolus de Correção:</strong> Calculado quando a glicemia pré-prandial está acima do alvo desejado (geralmente 100 mg/dL):\n    <br><em>Bolus de Correção (U) = (Glicemia Atual - Glicemia Alvo) / FS</em>",
+            "<strong>Relação Insulina / Carboidrato (Relação I:CHO):</strong> Quantos gramas de carboidratos são metabolizados por 1 unidade de insulina:\n    <ul>\n      <li><em>Regra dos 500: Relação I:CHO = 500 / DDT (em gramas/unidade)</em>",
+            "<em>Exemplo: Com DDT de 50 U, Relação I:CHO = 500 / 50 = 10 g/U (1 unidade cobre cada 10 g de carboidratos da refeição).</em>"
+          ]
+        ],
+        [
+          "3",
+          "Diagnóstico Diferencial: Fenômeno do Alvorecer vs Efeito Somogyi"
+        ],
+        [
+          "p",
+          "Um dos temas mais clássicos em concursos é a diferenciação da <strong>hiperglicemia matinal em jejum</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Critério de Diferenciação",
+            "Fenômeno do Alvorecer (Dawn Phenomenon)",
+            "Efeito Somogyi (Rebote Pós-Hipoglicêmico)"
+          ],
+          [
+            [
+              "<strong>Mecanismo Fisiopatológico</strong>",
+              "Elevação fisiológica circadiana normal dos hormônios contra-reguladores matinais (cortisol e GH) entre 4h e 8h da manhã, estimulando a gliconeogênese hepática em paciente com dose insuficiente de insulina basal noturna.",
+              "<strong>Hipoglicemia assintomática durante a madrugada (às 3h)</strong> decorrente de excesso de insulina noturna, deflagrando uma tempestade adrenérgica e glucagonêmica reflexa que gera hiperglicemia matinal de rebote."
+            ],
+            [
+              "<strong>Glicemia Capilar às 3h da Madrugada</strong>",
+              "<strong>Normal ou Elevada (&gt; 90-100 mg/dL)</strong>",
+              "<strong>Baixa (&lt; 70 mg/dL / Hipoglicemia franca)</strong>"
+            ],
+            [
+              "<strong>Conduta Terapêutica Correta</strong>",
+              "<strong>AUMENTAR a dose de insulina basal noturna</strong> ou adiar a aplicação da NPH para as 22h.",
+              "<strong>REDUZIR a dose de insulina noturna</strong> ou fornecer um lanche com proteína/carboidrato complexo antes de deitar."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "complicacoes-microvasculares-retinopatia-nefropatia-neuropatia",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações Crônicas Microvasculares: Retinopatia, Nefropatia e Neuropatia"
+        ],
+        [
+          "3",
+          "1. Retinopatia Diabética (RD)"
+        ],
+        [
+          "p",
+          "É a principal causa de cegueira irreversível adquirida na população em idade produtiva (20 a 74 anos). Decorre de microangiopatia da circulação retiniana por perda seletiva de pericitos capilares, espessamento da membrana basal endotelial, quebra da barreira hematorretiniana e hipóxia tecidual crônica mediada por superexpressão de <strong>VEGF (Fator de Crescimento Endotelial Vascular)</strong>. O rastreamento obrigatório com <strong>exame de fundoscopia sob midríase realizado por oftalmologista</strong> deve ocorrer:"
+        ],
+        [
+          "u",
+          [
+            "<strong>No DM1:</strong> Iniciar <strong>5 anos após o diagnóstico</strong> da doença (raramente há lesão retiniana antes de 5 anos de evolução no jovem).",
+            "<strong>No DM2:</strong> Iniciar <strong>no momento do diagnóstico</strong>, pois a fase subclínica do DM2 pode ter durado 5 a 10 anos antes da descoberta clínica, havendo retinopatia em 20% a 30% dos pacientes já na admissão. Repetir anualmente se normal."
+          ]
+        ],
+        [
+          "p",
+          "Classificação Clínica em dois estágios anatômicos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Retinopatia Não Proliferativa (RDNP):</strong> Caracterizada por microaneurismas retinianos (primeira lesão oftalmológica visível), micro-hemorragias em chama de vela ou em ponto, exsudatos duros (depósitos lipoproteicos) e manchas algodonosas (microinfartos da camada de fibras nervosas). O <em>Edema Macular Diabético</em> pode ocorrer em qualquer fase e é a causa mais comum de perda de acuidade visual central na RDNP.",
+            "<strong>Retinopatia Proliferativa (RDP):</strong> Definida pela presença de <strong>Neovasos anômalos na retina ou na papila óptica</strong> estimulados pelo VEGF. Esses neovasos são frágeis e rompem facilmente, gerando <strong>hemorragia vítrea súbita</strong>, proliferação de traves fibrovasculares cicatriciais e <strong>descolamento tracional de retina</strong> com cegueira fulminante. O tratamento de escolha da RDP é a <strong>Panfotocoagulação a Laser</strong> e injeções intravítreas periódicas de <strong>agentes anti-VEGF (Aflibercepte, Ranibizumabe)</strong>."
+          ]
+        ],
+        [
+          "3",
+          "2. Doença Renal do Diabetes (Nefropatia Diabética)"
+        ],
+        [
+          "p",
+          "Compreende a maior causa isolada de ingresso em terapia renal substitutiva (hemodiálise e transplante renal) no mundo ocidental. Inicia-se histologicamente por espessamento da membrana basal glomerular, hipertrofia renal e expansão da matriz mesangial, culminando na clássica <strong>Glomeruloesclerose Nodular de Kimmelstiel-Wilson</strong> (patognomônica da nefropatia diabética avançada)."
+        ],
+        [
+          "p",
+          "O rastreamento anual obrigatório é realizado pela avaliação combinada de dois parâmetros complementares:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Relação Albumina / Creatinina Urinária (RAC) em Amostra Isolada matinal:</strong>\n    <ul>\n      <li><em>Normal (Normoalbuminúria):</em> RAC &lt; 30 mg/g.",
+            "<em>Albuminúria Aumentada Moderada (antiga microalbuminúria):</em> <strong>RAC entre 30 e 300 mg/g</strong>.",
+            "<em>Albuminúria Aumentada Grave (antiga macroalbuminúria):</em> <strong>RAC &gt; 300 mg/g</strong>. Exige confirmação em 2 de 3 coletas alteradas no intervalo de 3 a 6 meses."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Taxa de Filtração Glomerular Estimada (TFGe):</strong> Calculada pela fórmula CKD-EPI baseada na creatinina sérica.</li>\n</ul>"
+        ],
+        [
+          "p",
+          "<strong>Pilares Terapêuticos do Bloqueio Cardiorrenal:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Bloqueio do Sistema Renina-Angiotensina (IECA ou BRA em monoterapia):</strong> Indicado formalmente em todo paciente hipertenso com DM e em todo paciente normotenso com albuminúria confirmada (RAC &ge; 30 mg/g). Promovem vasodilatação preferencial da arteríola eferente, reduzindo a hipertensão intraglomerular e a proteinúria. <em>Atenção: NUNCA associar IECA com BRA simultaneamente (risco elevado de hipercalemia e piora aguda da função renal).</em>",
+            "<strong>Inibidores de SGLT2 (Dapagliflozina / Empagliflozina):</strong> Terapia mandatória classe 1A em pacientes com TFGe &ge; 20 mL/min e RAC &ge; 30 mg/g para desacelerar o declínio renal e reduzir mortalidade.",
+            "<strong>Antagonista do Receptor Mineralocorticoide Não Esteroide (Finerenona):</strong> Indicado em associação a IECA/BRA e iSGLT2 em pacientes com albuminúria persistente com TFGe &gt; 25 mL/min e potássio sérico &le; 4,8 mEq/L, reduzindo a fibrose renal."
+          ]
+        ],
+        [
+          "3",
+          "3. Neuropatia Diabética Periférica e Autonômica"
+        ],
+        [
+          "p",
+          "Resulta da combinação de isquemia endoneural microvascular por arteriolosclerose dos <em>vasa nervorum</em> e lesão metabólica direta axonal decorrente do acúmulo de sorbitol e estresse oxidativo intracelular."
+        ],
+        [
+          "p",
+          "Formas Clínicas Principais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Polineuropatia Simétrica Distal (Sensitivo-Motora):</strong> É a apresentação mais prevalente (mais de 80%). Apresenta padrão clássico \"em bota e luva\", com início insidioso nos pododáctilos e pés, ascendendo progressivamente. Caracteriza-se por sintomas sensitivos positivos (dor em queimação, agulhadas, queimação noturna e alodinia) e negativos (perda da sensibilidade dolorosa, térmica e proprioceptiva vibratória).",
+            "<strong>Rastreamento Semiológico Anual do Pé em Risco:</strong>\n    <ul>\n      <li><em>Teste do Monofilamento de Semmes-Weinstein (10g):</em> Avalia a sensibilidade tátil protetora plantar em pontos anatômicos específicos (polpas dos 1º, 3º e 5º dedos e cabeças dos metatarsos). A perda de sensibilidade em &ge; 1 ponto indica alto risco de úlcera.",
+            "<em>Teste Vibratório com Diapasão de 128 Hz:</em> Avalia a função de fibras grossas mielinizadas no hálux.",
+            "<em>Teste Térmico e Doloroso:</em> Avalia fibras finas amielínicas C.",
+            "<em>Pesquisa de Reflexo Aquileu e Palpação de Pulsos Pedioso e Tibial Posterior.</em>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Tratamento Farmacológico da Dor Neuropática Diabética:</strong> O controle glicêmico estrito previne a progressão, mas não alivia a dor neuropática aguda instalada. Fármacos de primeira linha recomendados incluem: <strong>Anticonvulsivantes gabapentinoides (Pregabalina 150 a 600 mg/dia ou Gabapentina)</strong> e <strong>Inibidores da recaptação de serotonina e noradrenalina (Duloxetina 60 mg/dia)</strong> ou antidepressivos tricíclicos (Amitriptilina, com cautela em cardiopatas/idosos).</li>\n  <li><strong>Neuropatia Autonômica Diabética (NAD):</strong> Acomete o sistema nervoso autônomo. Manifesta-se como <strong>Hipotensão Postural ortostática</strong> (queda da PAS &gt; 20 mmHg ou PAD &gt; 10 mmHg ao ortostatismo sem taquicardia reflexa); <strong>Taquicardia sinusal fixa em repouso</strong> (perda do tônus parassimpático vagal); <strong>Gastroparesia diabética</strong> (náuseas matinais, saciedade precoce, vômitos tardios de alimentos não digeridos e descontrole glicêmico por absorção errática); bexiga neurogênica atônica e disfunção erétil precoce.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "complicacoes-macrovasculares-pe-diabetico",
+      0,
+      [
+        [
+          "2",
+          "8. Complicações Macrovasculares e Abordagem Multidisciplinar do Pé Diabético"
+        ],
+        [
+          "3",
+          "Doença Cardiovascular Aterosclerótica no Diabetes"
+        ],
+        [
+          "p",
+          "O diabetes mellitus é classicamente considerado um \"equivalente coronariano\" ou fator de altíssimo risco cardiovascular independente. Portadores de DM2 possuem risco 2 a 4 vezes maior de morte por Doença Arterial Coronariana (DAC), Doença Cerebrovascular e Doença Arterial Obstrutiva Periférica (DAOP) em comparação a indivíduos não diabéticos pareados por sexo e idade. A fisiopatologia macrovascular é acelerada pelo estado pró-inflamatório crônico, dislipidemia aterogênica (triglicerídeos elevados, HDL baixo e predomínio de partículas de LDL pequenas e densas altamente aterogênicas), disfunção endotelial e hiperreatividade plaquetária sistêmica."
+        ],
+        [
+          "3",
+          "Prevenção Primária e Secundária Cardiovascular na Diretriz SBD"
+        ],
+        [
+          "u",
+          [
+            "<strong>Terapia Antiagregante com Ácido Acetilsalicílico (AAS 100 mg/dia):</strong> Indicada de forma mandatória em <strong>Prevenção Secundária</strong> (pacientes com infarto prévio, cirurgia de revascularização, angioplastia, AVC ou DAOP confirmada). Na prevenção primária, é reservada exclusivamente a pacientes de altíssimo risco com baixo risco de sangramento gastrointestinal.",
+            "<strong>Manejo Lipídico Intensivo com Estatinas de Alta Potência (Atorvastatina 40-80 mg ou Rosuvastatina 20-40 mg):</strong>\n    <ul>\n      <li><em>Risco Cardiovascular Muito Alto (DM com DCVA estabelecida ou dano em &ge; 3 órgãos-alvo):</em> <strong>Meta de LDL-colesterol &lt; 50 mg/dL</strong> e redução &ge; 50% do basal. Associar Ezetimiba e/ou inibidores de PCSK9 se a meta não for alcançada.",
+            "<em>Risco Cardiovascular Alto (DM sem DCVA, mas com idade &ge; 50 anos ou presença de microalbuminúria/neuropatia/hipertensão):</em> <strong>Meta de LDL-colesterol &lt; 70 mg/dL</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Controle Rigoroso da Pressão Arterial:</strong> Meta &lt; 130/80 mmHg para a maioria dos adultos, utilizando preferencialmente IECA ou BRA associado a bloqueador de canal de cálcio di-hidropiridínico ou tiazídico.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Abordagem do Pé Diabético: Úlceras Neuropáticas vs Isquêmicas"
+        ],
+        [
+          "p",
+          "O \"Pé Diabético\" é a causa mais comum de hospitalizações prolongadas e amputações no diabético, resultando da interação destrutiva entre neuropatia periférica, vasculopatia isquêmica arterial e deformidades biomecânicas associadas a infecção secundária:"
+        ],
+        [
+          "t",
+          [
+            "Característica Clínica",
+            "Úlcera Neuropática Pura (Pé Quente)",
+            "Úlcera Isquêmica Pura (Pé Frio)"
+          ],
+          [
+            [
+              "<strong>Localização Anatômica</strong>",
+              "Superfície plantar de apoio de pressão (cabeças dos metatarsos, calcanhar) e áreas sob calosidades mecânicas.",
+              "Bordas externas dos pés, pontas dos artelhos (polpas digitais), leito subungueal e calcanhar lateral."
+            ],
+            [
+              "<strong>Aspecto da Úlcera</strong>",
+              "Bordas hiperceratóticas espessas (\"calosidade\"), fundo avermelhado e granuloso limpo, indolor à palpação.",
+              "Bordas bem delimitadas e escavadas, fundo pálido, cianótico ou necrótico (esfacelo seco/gangrena), extremamente dolorosa."
+            ],
+            [
+              "<strong>Temperatura e Pele</strong>",
+              "Pé quente, pele seca e descamativa (anidrose por desnervação simpática autonômica), veias dorsais túrgidas.",
+              "Pé frio, pele atrófica, lisa, brilhante, ausência de fâneros/pelos e unhas distróficas espessadas."
+            ],
+            [
+              "<strong>Pulsos Arteriais Periféricos</strong>",
+              "<strong>Amplos e Facilmente Palpáveis</strong> (pedioso e tibial posterior preservados).",
+              "<strong>Diminuídos ou Abolidos</strong> (tempo de enchimento capilar &gt; 3 segundos)."
+            ],
+            [
+              "<strong>Dor Associada</strong>",
+              "<strong>Indolor</strong> devido à perda da sensibilidade protetora ao monofilamento de 10g.",
+              "<strong>Dor isquêmica intensa</strong> em queimação que piora na elevação do membro e alivia ao pendurar o pé para fora da cama."
+            ],
+            [
+              "<strong>Deformidades Ósseas Típicas</strong>",
+              "Dedos em garra ou martelo, colapso de arco plantar e <strong>Artropatia de Charcot</strong> (luxações e colapso de tarso médio com pé em mata-borrão).",
+              "Atrofia muscular e palidez plantar acentuada à elevação do membro."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Classificação de Gravidade Infecciosa (IWGDF / IDSA) e Osteomielite"
+        ],
+        [
+          "p",
+          "Diante de uma úlcera infectada no pé diabético, a conduta divide-se em quatro graus objetivos de gravidade:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Grau 1 (Sem infecção):</strong> Úlcera limpa sem hiperemia ou supuração. Apenas alívio de pressão mecânica (off-loading) e curativo.",
+            "<strong>Grau 2 (Infecção Leve):</strong> Celulite perilesional restrita a &lt; 2 cm da borda da úlcera, sem atingir tecidos profundos e sem repercussão sistêmica. Tratar em regime ambulatorial com antibiótico oral direcionado a gram-positivos de pele (cefalexina ou amoxicilina-clavulanato por 7 a 14 dias).",
+            "<strong>Grau 3 (Infecção Moderada):</strong> Celulite extensa &gt; 2 cm ao redor da ferida OU acometimento de tecidos profundos (fáscia muscular, tendões, articulações e ossos) sem sepse sistêmica. Exige internação hospitalar, desbridamento cirúrgico de tecidos desvitalizados e antibioticoterapia parenteral de amplo espectro (amoxicilina-clavulanato IV, ciprofloxacino com clindamicina, ou ceftriaxona com metronidazol).",
+            "<strong>Grau 4 (Infecção Grave com Sepse):</strong> Presença de síndrome da resposta inflamatória sistêmica (febre, taquicardia, hipotensão, leucocitose). Urgência cirúrgica imediata para desbridamento agressivo ou amputação aberta de controle de danos, associada a vancomicina com piperacilina-tazobactam ou meropenem."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Pesquisa de Osteomielite Subjacente:</strong> O teste clínico do <strong>Probe-to-Bone (Sondagem com Pinça Metálica)</strong> deve ser realizado em toda ferida profunda: a palpação de superfície óssea dura, áspera e profunda no fundo da úlcera confere sensibilidade e especificidade &gt; 85% para osteomielite, justificando radiografia seriada ou ressonância magnética e antibioticoterapia prolongada de 4 a 6 semanas associada a ressecção cirúrgica do osso acometido."
+        ]
+      ]
+    ],
+    [
+      "situacoes-especiais-gestacao-cirurgia-idoso",
+      0,
+      [
+        [
+          "2",
+          "9. Situações Especiais: Diabetes na Gestação, Pré-operatório e o Idoso Frágil"
+        ],
+        [
+          "3",
+          "1. Diabetes Mellitus Gestacional (DMG) e Pré-Gestacional"
+        ],
+        [
+          "p",
+          "A gestação é um estado fisiológico de resistência insulínica progressiva mediada por hormônios placentários diabetogênicos (lactogênio placentário humano, cortisol, estrogênio e prolactina) que atingem o pico entre o segundo e o terceiro trimestres. O rastreamento oficial brasileiro padronizado pelo Ministério da Saúde e SBD estabelece duas etapas rigorosas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Primeira Consulta de Pré-Natal (1º Trimestre):</strong> Dosagem de <strong>Glicemia de Jejum</strong> plasmática:\n    <ul>\n      <li><em>Glicemia &lt; 92 mg/dL:</em> Normal. Prosseguir para o teste no 2º trimestre.",
+            "<em>Glicemia entre 92 e 125 mg/dL:</em> Confirma de imediato o diagnóstico de <strong>Diabetes Mellitus Gestacional (DMG)</strong>.",
+            "<em>Glicemia &ge; 126 mg/dL ou HbA1c &ge; 6,5%:</em> Diagnóstico de <strong>Overt Diabetes (Diabetes Mellitus Pré-Gestacional não diagnosticado)</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Entre 24 e 28 Semanas de Gestação:</strong> Teste Oral de Tolerância com 75g de Glicose (TOTG 75g) para todas as gestantes com glicemia inicial &lt; 92 mg/dL. O diagnóstico de DMG é firmado se <strong>pelo menos UM dos três pontos estiver alterado</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<em>Jejum: &ge; 92 mg/dL</em>",
+            "<em>1 hora: &ge; 180 mg/dL</em>",
+            "<em>2 horas: &ge; 153 mg/dL</em>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo Terapêutico na Gestação:</strong> Dieta balanceada fracionada e atividade física diária são instituídas inicialmente por 1 a 2 semanas. Se as metas capilares (jejum &lt; 95 mg/dL e 1h pós-prandial &lt; 140 mg/dL ou 2h &lt; 120 mg/dL) não forem atingidas em mais de 20% a 30% dos registros, o tratamento medicamentoso de escolha absoluta é a <strong>Insulinoterapia Plena</strong> (insulinas NPH, Regular, Lispro, Aspart e Detemir são aprovadas e seguras). Os antidiabéticos orais (incluindo metformina e sulfonilureias) atravessam a barreira placentária e não são a primeira escolha para o controle glicêmico definitivo no Brasil."
+        ],
+        [
+          "3",
+          "2. Manejo do Paciente Diabético Cirúrgico no Perioperatório"
+        ],
+        [
+          "p",
+          "O estresse cirúrgico deflagra uma liberação maciça de catecolaminas, glucagon e cortisol, estimulando a gliconeogênese e precipitando hiperglicemia acentuada que prejudica a cicatrização e quintuplica o risco de infecção do sítio cirúrgico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Meta Glicêmica Intraoperatória e Perioperatória:</strong> Manter glicemia capilar entre <strong>140 e 180 mg/dL</strong> em pacientes hospitalizados e cirúrgicos (evitar hipoglicemia e evitar glicemias &gt; 180 mg/dL).",
+            "<strong>Suspensão Racional de Antidiabéticos Orais:</strong>\n    <ul>\n      <li><em>Inibidores de SGLT2 (Dapagliflozina, Empagliflozina):</em> Suspender formalmente <strong>3 a 4 dias antes</strong> de cirurgias eletivas pelo risco fatal de cetoacidose euglicêmica perioperatória.",
+            "<em>Agonistas do Receptor de GLP-1 e Tirzepatida:</em> Suspender 1 semana antes (para doses semanais) devido ao atraso no esvaziamento gástrico com risco de broncoaspiração maciça durante a intubação orotraqueal.",
+            "<em>Metformina:</em> Suspender 24 a 48 horas antes em cirurgias de médio/grande porte ou procedimentos com contraste iodado, reintroduzindo após 48h se a função renal permanecer estável.",
+            "<em>Sulfonilureias:</em> Suspender na manhã do procedimento para prevenir hipoglicemia no jejum operatório."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Manejo da Insulina no Dia da Cirurgia:</strong> Reduzir a dose de insulina basal (NPH ou Glargina) na noite anterior ou na manhã da cirurgia para <strong>70% a 80% da dose habitual</strong>, mantendo infusão de soro glicosado a 5% durante o jejum se necessário. Em cirurgias de grande porte, utilizar bomba de infusão contínua de Insulina Regular venosa.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "3. Particularidades no Paciente Idoso e Síndrome de Fragilidade"
+        ],
+        [
+          "p",
+          "No idoso com diabetes, a avaliação geriátrica ampla é mandatória. A hipoglicemia no idoso é insidiosa e muitas vezes não cursa com sintomas adrenérgicos clássicos (sudorese, tremores), manifestando-se atipicamente como confusão mental aguda, sonolência, quedas da própria altura, crises convulsivas ou déficits neurológicos focais transitórios simulando AVC (\"stroke-like\"). Para o idoso frágil com demência ou declínio funcional grave, a meta de HbA1c deve ser relaxada para <strong>&lt; 8,0% a 8,5%</strong>, priorizando drogas que não causam hipoglicemia (iDPP-4 como a linagliptina e aGLP-1/iSGLT2 com monitorização volêmica cuidadosa) e <strong>desprescrevendo formalmente sulfonilureias potentes (glibenclamida)</strong>."
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-alta-complexidade-diabetes",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Complexos com Discussão Fisiopatológica e Baseada em Evidências"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Diabético com Infarto Prévio e Doença Renal - Escolha Terapêutica Baseada em Diretrizes"
+        ],
+        [
+          "p",
+          "<strong>História Clínica:</strong> Homem de 61 anos, pedreiro autônomo, tabagista ativo, portador de DM2 há 8 anos e hipertensão arterial. Apresenta histórico de infarto agudo do miocárdio com colocação de stent farmacológico na coronária descendente anterior há 1 ano e meio. Comparece à consulta ambulatorial assintomático. Encontra-se em uso regular de Metformina 1.000 mg duas vezes ao dia, Enalapril 20 mg/dia, Anlodipino 5 mg/dia, Carvedilol 25 mg duas vezes ao dia, AAS 100 mg/dia e Atorvastatina 40 mg/dia. Ao exame físico: lúcido, IMC 29,5 kg/m², PA 138/84 mmHg, FC 68 bpm. Exame cardiovascular e pulmonar sem alterações. Pulsos periféricos presentes e simétricos. Teste com monofilamento de 10g normal."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais Recentes:</strong> Glicemia de jejum: 178 mg/dL; HbA1c: 8,4%; Creatinina sérica: 1,4 mg/dL; Taxa de Filtração Glomerular Estimada (CKD-EPI): 54 mL/min/1,73m²; Relação Albumina/Creatinina Urinária (RAC) em amostra matinal confirmada: 185 mg/g (albuminúria aumentada moderada); Potássio sérico: 4,7 mEq/L; LDL-colesterol: 64 mg/dL."
+        ],
+        [
+          "p",
+          "<strong>Discussão Propedêutica e Raciocínio Clínico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Estratificação do Perfil Clínico e Risco:</em> O paciente possui <strong>Doença Cardiovascular Aterosclerótica (DCVA) estabelecida (IAM prévio)</strong> associada a <strong>Doença Renal do Diabetes Estádio 3aA2 (TFGe 54 mL/min e RAC 185 mg/g)</strong> com controle glicêmico inadequado (HbA1c 8,4% para meta &lt; 7,0%).",
+            "<em>Conduta Farmacológica Segundo a Diretriz SBD 2025/2026 e ADA:</em> O paciente já faz uso de metformina em dose otimizada e a TFGe de 54 mL/min autoriza sua manutenção plena (contraindicação apenas se &lt; 30). Frente à presença simultânea de DCVA e DRC com albuminúria, as duas classes com recomendação Classe 1A prioritária são:\n    <ul>\n      <li><strong>Inibidor de SGLT2 (Dapagliflozina 10 mg ou Empagliflozina 10 mg/dia):</strong> Possui indicação formal obrigatória para desacelerar a perda de função renal, reduzir a albuminúria e diminuir desfechos cardiovasculares e hospitalizações por IC.",
+            "<strong>Agonista do Receptor de GLP-1 com benefício comprovado em MACE (Semaglutida SC semanal ou Dulaglutida):</strong> Essencial pela presença de coronariopatia aterosclerótica prévia comprovada, promovendo redução de novos eventos isquêmicos maiores e contribuindo para perda ponderal.",
+            "<em>Manejo Lipídico e Renal:</em> Como o paciente possui DCVA clínica estabelecida, seu risco cardiovascular é classificado como <strong>MUITO ALTO</strong>. Portanto, sua meta de LDL-colesterol é <strong>&lt; 50 mg/dL</strong> (encontra-se em 64 mg/dL). A conduta indicada é associar <strong>Ezetimiba 10 mg/dia</strong> à Atorvastatina 40 mg. O enalapril deve ser mantido rigorosamente para proteção da microcirculação renal, já que o K+ está seguro (&lt; 5,0 mEq/L)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Suspeita Diagnóstica de LADA em Adulto Jovem Rotulado Inicialmente como DM2"
+        ],
+        [
+          "p",
+          "<strong>História Clínica:</strong> Mulher de 38 anos, professora, previamente hígida, foi diagnosticada com Diabetes Mellitus há 10 meses em exames de rotina admissionais (glicemia de jejum de 210 mg/dL e HbA1c 9,2%). À época, como tinha 37 anos, foi rotulada como portadora de DM2 e iniciada terapia oral combinada com Metformina 850 mg de 8/8h e Empagliflozina 25 mg/dia. Inicialmente apresentou discreta melhora, mas nos últimos 3 meses relata perda ponderal involuntária de 8 kg (peso caiu de 62 kg para 54 kg; IMC atual de 20,1 kg/m²), astenia profunda, polidipsia e poliúria de padrão progressivo. Nega sintomas dispépticos ou diarreia. Não há histórico familiar de diabetes."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais na Reavaliação:</strong> Glicemia de jejum: 264 mg/dL; HbA1c: 10,8%; Urina tipo 1 (EAS): glicosúria 4+/4+, cetonúria 2+/4+, sem leucocitúria; Gasometria venosa: pH 7,33, bicarbonato 18 mEq/L, ânion-gap 11 mEq/L."
+        ],
+        [
+          "p",
+          "<strong>Discussão Propedêutica e Raciocínio Clínico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Reconhecimento da Falha e Fenótipo Atípico:</em> A paciente é uma mulher jovem com peso normal/magra (IMC 20,1 kg/m²), sem quaisquer estigmas de síndrome metabólica ou resistência insulínica (sem acantose nigricans, hipertensão ou dislipidemia), que apresenta <strong>falência glicêmica secundária rápida à terapia oral máxima em menos de 1 ano</strong>, associada a emagrecimento acelerado e cetonúria inicial. Esse quadro é incompatível com o curso natural do DM2 típico.",
+            "<em>Hipótese Diagnóstica Principal:</em> <strong>Diabetes Autoimune Latente do Adulto (LADA)</strong>. Trata-se de uma forma autoimune de progressão gradual que mimetiza o DM2 inicialmente, mas cursa com destruição inexorável das células beta mediada por anticorpos.",
+            "<em>Confirmação Laboratorial:</em> Solicitação imediata de <strong>Anticorpo Anti-GAD65 sérico</strong> (que habitualmente se apresenta com títulos fortemente positivos no LADA) e <strong>Peptídeo C plasmático</strong> (que revelará ausência ou drástica redução da reserva de secreção endógena de insulina).",
+            "<em>Conduta Terapêutica Imediata:</em> Suspender imediatamente a Empagliflozina (devido ao risco iminente de deflagrar cetoacidose euglicêmica na presença de deficiência de insulina e cetonúria) e iniciar sem demora <strong>Insulinoterapia Plena em Esquema Basal-Bolus</strong> (ex: Glargina basal associada a Lispro/Aspart pré-refeições), única terapia capaz de interromper o catabolismo, restaurar o peso e prevenir cetoacidose franca."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Úlcera em Pé Diabético com Infecção Profunda e Suspeita de Osteomielite"
+        ],
+        [
+          "p",
+          "<strong>História Clínica:</strong> Homem de 67 anos, com DM2 de longa data mal controlado (HbA1c média de 10,2%), portador de retinopatia e polineuropatia periférica sensitivo-motora avançada. Comparece à emergência cirúrgica acompanhado da filha, que notou saída de secreção purulenta com odor fétido e mancha de sangue na meia direita ao retirar o sapato. O paciente relata que não sentia qualquer dor no local. Ao exame físico: paciente lúcido, febril (temperatura axilar de 38,3°C), PA 118/74 mmHg, FC 102 bpm. No membro inferior direito: presença de úlcera profunda medindo 3,5 &times; 2,5 cm localizada na face plantar sob a cabeça do primeiro metatarso, com halo eritematoso perilesional que se estende por mais de 4 cm pelo dorso e borda medial do pé, calor local intenso e saída de exsudato purulento abundante. Pulsos pedioso e tibial posterior são facilmente palpáveis e amplos em ambos os membros. Durante a exploração da ferida com estilete metálico estéril, o examinador sente o toque direto em estrutura óssea dura e áspera no fundo da lesão (teste Probe-to-Bone francamente positivo)."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais:</strong> Leucograma: 16.800 leucócitos/mm³ com 8% de bastonetes; PCR: 142 mg/L; Glicemia capilar: 310 mg/dL; Radiografia simples do pé direito: evidencia desmineralização cortical e erosão óssea irregular na cabeça do 1º metatarso, com presença de gás em tecidos moles adjacentes."
+        ],
+        [
+          "p",
+          "<strong>Discussão Propedêutica e Raciocínio Clínico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Diagnóstico Anatômico e Infeccioso:</em> Trata-se de um <strong>Pé Diabético Neuropático Infectado com Celulite Extensa (&gt; 2 cm) e Osteomielite Aguda subjacente</strong> (confirmada pelo teste probe-to-bone positivo e radiografia com erosão óssea e gás), classificado como <strong>Grau 3 a 4 (Infecção Grave com Manifestações Sistêmicas)</strong> pelas diretrizes internacionais IWGDF/IDSA.",
+            "<em>Fisiopatologia dos Pulsos Palpáveis:</em> Os pulsos amplos demonstram que a vasculatura macrovascular distal está pérvia (pé neuropático puro). A úlcera surgiu pela insensibilidade plantar combinada à sobrecarga mecânica repetitiva decorrente de deformidade motora, evoluindo com quebra da barreira cutânea e penetração bacteriana polimicrobiana profunda.",
+            "<em>Conduta Hospitalar Multidisciplinar Imediata:</em>\n    <ul>\n      <li><em>Internação Hospitalar Imediata em isolamento:</em> Jejum e início de hidratação venosa e controle glicêmico com Insulina Regular em bomba de infusão ou esquema intensivo.",
+            "<em>Avaliação Cirúrgica de Emergência:</em> Indicação mandatória de <strong>Desbridamento Cirúrgico Amplo em Centro Cirúrgico</strong> para drenagem de lojas de pus, desbridamento de tendões necrosados e ressecção óssea da cabeça do metatarso acometido por osteomielite (amputação menor de raio preservadora). Coleta de fragmento ósseo profundo e biópsia tecidual estéril para cultura bacteriana e antibiograma (swab superficial de pele é formalmente contraindicado por isolar apenas colonizantes).",
+            "<em>Antibioticoterapia Parenteral Empírica Imediata de Amplo Espectro:</em> Deve cobrir cocos gram-positivos (incluindo MRSA conforme epidemiologia local), bacilos gram-negativos e anaeróbios profundos. Esquema inicial: <strong>Piperacilina-Tazobactam associada à Vancomicina</strong> IV."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Hipoglicemia Grave Induzida por Fármaco no Idoso Renal Crônico"
+        ],
+        [
+          "p",
+          "<strong>História Clínica:</strong> Mulher de 78 anos, portadora de hipertensão arterial sistêmica, insuficiência cardíaca crônica e DM2 diagnosticado há 22 anos. Reside com a neta. Está em uso ambulatorial há mais de 10 anos de Glibenclamida 5 mg (1 comprimido antes do café e 1 antes do jantar) prescrita em posto de saúde e nunca modificada, associada a Losartana 50 mg/dia e Hidroclorotiazida 25 mg/dia. É levada ao pronto-socorro pelo SAMU após ser encontrada pela manhã em sua cama comatosa, sudoreica e irresponsiva a estímulos dolorosos intensos, tendo apresentado um episódio de crise convulsiva tônico-clônica generalizada presenciada no domicílio. Ao exame na sala de emergência: comatosa (Glasgow 6), sudorese fria profusa, pupilas isocóricas fotorreagentes, sem sinais de irritação meníngea ou déficits focais evidentes. PA 155/90 mmHg, FC 112 bpm. A glicemia capilar realizada na admissão acusa <strong>28 mg/dL</strong>."
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares:</strong> Creatinina sérica: 2,1 mg/dL; Ureia: 88 mg/dL; TFGe: 24 mL/min/1,73m² (Doença Renal Crônica Estádio 4); Potássio: 4,4 mEq/L."
+        ],
+        [
+          "p",
+          "<strong>Discussão Propedêutica e Raciocínio Clínico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Mecanismo da Neurodinâmica e Hipoglicemia Prolongada:</em> A glicose é o combustível energético primário obrigatório do encéfalo. Níveis &lt; 50 mg/dL desencadeiam neuroglicopenia aguda com disfunção neuronal, coma e convulsões, com risco de sequela isquêmica cortical se a correção demorar mais de 30 a 60 minutos.",
+            "<em>Fisiopatologia da Iatrogenia Farmacológica:</em> A <strong>Glibenclamida</strong> é uma sulfonilureia de segunda geração com meia-vida biológica prolongada e metabolização hepática gerando <strong>metabólitos ativos de excreção predominantemente renal</strong>. Na vigência de Doença Renal Crônica avançada (TFGe 24 mL/min), esses metabólitos ativos sofrem acúmulo plasmático maciço, estimulando continuamente a secreção de insulina pelas células beta mesmo com glicemias criticamente baixas, perpetuando hipoglicemias refratárias que duram de 24 a 72 horas.",
+            "<em>Conduta de Emergência e Manejo Hospitalar:</em>\n    <ul>\n      <li><em>Fase Imediata:</em> Administração intravenosa imediata de <strong>Glicose a 50% em bólus (40 a 50 mL IV direto)</strong>. O despertar neurológico costuma ocorrer em minutos.",
+            "<em>Prevenção do Rebote Hipoglicêmico:</em> Como a glibenclamida continua circulando e estimulando insulina, o paciente NUNCA deve receber alta após o bólus. É <strong>obrigatória a internação hospitalar por pelo menos 24 a 48 horas</strong> em infusão venosa contínua de <strong>Soro Glicosado a 10%</strong> para manter a glicemia entre 140 e 180 mg/dL com monitorização glicêmica horária. Se as hipoglicemias recidivarem apesar da glicose venosa contínua, o antídoto de resgate farmacológico é o <strong>Octreotida (50 a 100 mcg SC a cada 8 a 12 horas)</strong>, um análogo sintético da somatostatina que bloqueia de forma potente a secreção insulínica estimulada pelas sulfonilureias.",
+            "<em>Desprescrição e Mudança Terapêutica Definitiva:</em> A Glibenclamida é <strong>formalmente contraindicada em idosos e na DRC</strong>. No momento da alta, deve ser substituída por fármacos seguros na DRC estádio 4, como a <strong>Linagliptina (5 mg/dia sem ajuste)</strong> ou esquema de insulina em doses muito reduzidas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-residencia-comentadas-diabetes",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Concursos e Residência Médica com Comentários Exaustivos"
+        ],
+        [
+          "3",
+          "Questão 1 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um homem de 58 anos, portador de diabetes mellitus tipo 2 há 6 anos e hipertensão arterial, sem histórico de eventos cardiovasculares prévios, apresenta os seguintes exames na consulta de rotina: Glicemia de jejum de 162 mg/dL; HbA1c de 8,1%; Creatinina sérica de 1,1 mg/dL; TFGe de 78 mL/min/1,73m²; e Relação Albumina/Creatinina Urinária (RAC) confirmada em duas amostras de 140 mg/g. O paciente encontra-se em uso de Metformina 1.000 mg de 12/12h e Losartana 50 mg/dia. De acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD 2025/2026) e da ADA, qual a melhor conduta farmacológica a ser associada ao esquema atual?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Adicionar Glibenclamida 5 mg/dia para atingir a meta estrita de HbA1c &lt; 6,5% de forma mais econômica.",
+            "<strong>B)</strong> Adicionar um Inibidor de SGLT2 (como Dapagliflozina ou Empagliflozina) pela presença de albuminúria aumentada persistente, objetivando proteção cardiorrenal.",
+            "<strong>C)</strong> Associar um Inibidor da ECA (Enalapril) à Losartana para bloqueio duplo do sistema renina-angiotensina e regressão da albuminúria.",
+            "<strong>D)</strong> Iniciar imediatamente insulinoterapia plena em esquema basal-bolus com NPH e Regular, suspendendo todos os medicamentos orais."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A está incorreta:</em> A glibenclamida apresenta alto risco de hipoglicemia e ganho de peso, sem qualquer benefício na redução de progressão de nefropatia diabética ou desfechos cardiovasculares.",
+            "<em>Alternativa B está CORRETA:</em> O paciente é portador de <strong>Doença Renal do Diabetes incipiente/moderada</strong> caracterizada por albuminúria confirmada (RAC entre 30 e 300 mg/g: 140 mg/g). As diretrizes da SBD e ADA recomendam formalmente a adição de um <strong>Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina)</strong> em pacientes diabéticos com albuminúria persistente com TFGe &ge; 20 mL/min, pois essa classe demonstrou redução consistente na progressão para doença renal terminal, redução da albuminúria e diminuição de hospitalizações por IC e morte cardiovascular.",
+            "<em>Alternativa C está incorreta:</em> A associação de um IECA a um BRA (bloqueio duplo do SRAA) foi testada em grandes ensaios clínicos (estudos ONTARGET e VA NEPHRON-D) e demonstrou <strong>aumento expressivo de eventos adversos graves</strong> (hipercalemia, hipotensão e lesão renal aguda) sem benefício em sobrevida, sendo formalmente contraindicada.",
+            "<em>Alternativa D está incorreta:</em> A HbA1c está em 8,1%, sem sintomas de catabolismo franco ou descompensação aguda. A insulinoterapia em esquema basal-bolus é desproporcional neste momento, devendo-se priorizar terapias orais com benefício cardiorrenal."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 (ENARE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Uma mulher de 54 anos com diabetes mellitus tipo 2 de longa data, obesa (IMC 36 kg/m²), com histórico de infarto agudo do miocárdio prévio há 2 anos, apresenta HbA1c de 8,6% em uso de Metformina em dose máxima tolerada (2.000 mg/dia). A função renal encontra-se preservada (TFGe 85 mL/min sem albuminúria). Qual das seguintes classes medicamentosas é a preferencial para associação terapêutica neste momento, considerando o perfil clínico da paciente e as evidências de proteção cardiovascular?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Tiazolidinediona (Pioglitazona).",
+            "<strong>B)</strong> Sulfonilureia (Gliclazida MR).",
+            "<strong>C)</strong> Agonista do Receptor de GLP-1 com benefício cardiovascular comprovado (ex: Semaglutida ou Dulaglutida).",
+            "<strong>D)</strong> Inibidor da alfa-glicosidase (Acarbose)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A está incorreta:</em> A pioglitazona promove retenção hídrica e ganho de peso, sendo inadequada como primeira escolha em obesa com histórico de cardiopatia isquêmica pelo risco potencial de precipitar insuficiência cardíaca.",
+            "<em>Alternativa B está incorreta:</em> As sulfonilureias não demonstraram redução de eventos cardiovasculares ateroscleróticos maiores em grandes estudos randomizados e induzem ganho de peso, contrariando a necessidade da paciente.",
+            "<em>Alternativa C está CORRETA:</em> Em pacientes com DM2 e <strong>Doença Cardiovascular Aterosclerótica estabelecida (IAM prévio)</strong> associada a obesidade, a classe com recomendação prioritária de primeira linha é a dos <strong>Agonistas do Receptor de GLP-1 com comprovação de redução de MACE (Semaglutida, Dulaglutida ou Liraglutida)</strong>. Esses agentes reduzem significativamente novos infartos, AVCs e mortalidade cardiovascular, associados a uma potente perda de peso corporal (crucial para o IMC de 36 kg/m² da paciente).",
+            "<em>Alternativa D está incorreta:</em> A acarbose possui eficácia modesta na redução de HbA1c (0,3 a 0,5%), alta taxa de efeitos colaterais flatulentos gastrointestinais e nenhuma evidência robusta de redução de MACE em coronariopatas."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Gestante de 26 anos, primigesta, comparece à primeira consulta de pré-natal na 10ª semana de gestação. Não possui histórico prévio de comorbidades. O exame de glicemia de jejum plasmática colhido na rotina inicial revela resultado de 98 mg/dL. De acordo com as diretrizes do Ministério da Saúde do Brasil e da Sociedade Brasileira de Diabetes, qual o diagnóstico correto e a conduta recomendada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Glicemia normal para o primeiro trimestre; orientar hábitos saudáveis e solicitar TOTG 75g entre 24 e 28 semanas.",
+            "<strong>B)</strong> Diagnóstico confirmado de Diabetes Mellitus Gestacional (DMG); iniciar intervenção nutricional e monitorização glicêmica capilar.",
+            "<strong>C)</strong> Diagnóstico de Diabetes Mellitus Pré-Gestacional (Overt Diabetes); iniciar imediatamente insulinoterapia plena.",
+            "<strong>D)</strong> Exame inconclusivo; prescrever Metformina preventiva e repetir a glicemia de jejum em 4 semanas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A está incorreta:</em> A glicemia de jejum normal na gestação deve ser <strong>estritamente &lt; 92 mg/dL</strong>. O valor de 98 mg/dL já é patológico.",
+            "<em>Alternativa B está CORRETA:</em> No rastreamento precoce do primeiro trimestre, valores de glicemia de jejum <strong>entre 92 e 125 mg/dL estabelecem de forma definitiva o diagnóstico de Diabetes Mellitus Gestacional (DMG)</strong>. A conduta inicial mandatória consiste em orientação dietética fracionada e individualizada, prática de atividade física segura e monitorização glicêmica capilar regular (em jejum e pós-prandial). Caso as metas não sejam atingidas após 1 a 2 semanas, associa-se insulina.",
+            "<em>Alternativa C está incorreta:</em> Overt Diabetes (diabetes pré-existente à gravidez) é definido por glicemia de jejum &ge; 126 mg/dL ou HbA1c &ge; 6,5% no primeiro trimestre.",
+            "<em>Alternativa D está incorreta:</em> O critério é confirmatório e não inconclusivo. Metformina não é droga de primeira escolha para tratamento inicial de rotina no DMG no Brasil."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 (UNIFESP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um jovem de 19 anos com diagnóstico de diabetes mellitus há 4 meses, sem história de cetoacidose, magro (IMC 21 kg/m²), refere que seu pai e seu avô paterno também desenvolveram diabetes antes dos 25 anos de idade. Ao exame físico, não apresenta acantose nigricans e o exame neurológico e vascular é rigorosamente normal. Os exames laboratoriais mostram: Glicemia de jejum de 180 mg/dL; HbA1c de 7,8%; Anticorpos Anti-GAD, Anti-IA2 e Anti-Insulina negativos; Peptídeo C plasmático de 1,8 ng/mL (normal/preservado). O teste genético confirmou mutação no gene HNF-1-alfa (MODY 3). Qual é o tratamento farmacológico de escolha para este paciente?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Insulinoterapia intensiva em regime basal-bolus de aplicação contínua.",
+            "<strong>B)</strong> Sulfonilureia em baixa dose (ex: Gliclazida ou Glibenclamida).",
+            "<strong>C)</strong> Metformina em dose alta associada a inibidor de SGLT2.",
+            "<strong>D)</strong> Apenas dieta e atividade física, pois o MODY 3 nunca evolui com complicações microvasculares."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A está incorreta:</em> O paciente com MODY 3 não possui destruição autoimune de células beta e possui reserva secretora endógena de insulina preservada (peptídeo C normal de 1,8 ng/mL). A insulina exógena não é a terapia de escolha e pode gerar hipoglicemias desnecessárias.",
+            "<em>Alternativa B está CORRETA:</em> O MODY 3 decorre de mutação no gene do fator de transcrição nuclear do hepatócito 1-alfa (HNF-1A), provocando disfunção seletiva da secreção insulínica dependente de glicose. A marca terapêutica característica e clássica do MODY 3 é a sua <strong>notável hipersensibilidade farmacológica às Sulfonilureias orais</strong>. Doses muito baixas de sulfonilureias (como gliclazida 30 mg/dia) promovem controle glicêmico perfeito e duradouro, permitindo a substituição completa de insulina em pacientes previamente mal diagnosticados.",
+            "<em>Alternativa C está incorreta:</em> A metformina atua na resistência à insulina, que não é o defeito fisiopatológico primário do MODY.",
+            "<em>Alternativa D está incorreta:</em> O subtipo que habitualmente não necessita de tratamento medicamentoso e não progride com complicações é o <strong>MODY 2 (mutação na Glicoquinase)</strong>. O MODY 3 cursa com hiperglicemia progressiva e risco de retinopatia e nefropatia se não for tratado com sulfonilureia."
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 (ENAMED / Prova Nacional)"
+        ],
+        [
+          "p",
+          "Paciente de 62 anos, com DM2 há 14 anos sob insulinoterapia plena com esquema basal-bolus (NPH antes do café, antes do jantar e ao deitar, associada a Regular antes das refeições). Queixa-se de sudorese noturna frequente e desperta rotineiramente com cefaleia e glicemias capilares de jejum elevadas (entre 220 e 260 mg/dL). O médico assistente solicita a monitorização da glicemia capilar às 3 horas da madrugada durante três noites consecutivas, que revela valores médios de 48 mg/dL. Diante desse achado clássico, qual é o diagnóstico fisiopatológico e a conduta terapêutica indicada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Fenômeno do Alvorecer; aumentar a dose de insulina NPH da noite para cobrir o pico matinal de cortisol.",
+            "<strong>B)</strong> Efeito Somogyi; reduzir a dose de insulina NPH noturna ou ajustar a aplicação da dose noturna para o momento de deitar associada a lanche proteico.",
+            "<strong>C)</strong> Resistência hepática grave à insulina; associar pioglitazona ao deitar.",
+            "<strong>D)</strong> Falha primária de absorção cutânea; suspender a insulina e iniciar sulfonilureia de ação prolongada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A está incorreta:</em> No Fenômeno do Alvorecer, a glicemia às 3h da madrugada é <strong>normal ou elevada</strong>, pois o aumento da glicemia matinal decorre apenas da secreção circadiana de GH e cortisol. Se aumentássemos a insulina neste paciente, ele teria uma hipoglicemia noturna ainda mais severa e potencialmente fatal.",
+            "<em>Alternativa B está CORRETA:</em> A constatação de <strong>hipoglicemia franca na madrugada (3h da manhã com glicemia de 48 mg/dL)</strong> seguida de <strong>hiperglicemia matinal de jejum (&gt; 220 mg/dL)</strong> é a descrição clássica do <strong>Efeito Somogyi</strong>. A hipoglicemia desencadeia uma liberação em bólus de hormônios contra-reguladores (glucagon, adrenalina, cortisol), gerando glicogenólise e gliconeogênese rebote com hiperglicemia matinal. A conduta correta é <strong>REDUZIR a dose de insulina NPH noturna</strong>, certificar-se de que ela é aplicada ao deitar (às 22h-23h e não no jantar) e prescrever um pequeno lanche com carboidrato complexo e proteína antes de dormir.",
+            "<em>Alternativas C e D estão incorretas:</em> Não consideram a presença de hipoglicemia noturna como o evento primário causador do rebote."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um homem de 74 anos, com histórico de infarto do miocárdio antigo, osteoartrite grave, declínio cognitivo leve e dependência parcial para atividades instrumentais de vida diária, vive sob cuidados de familiares. Encontra-se em tratamento de diabetes mellitus tipo 2 com Metformina 1.000 mg/dia e Gliclazida MR 60 mg/dia. O último exame laboratorial evidencia HbA1c de 6,2%, glicemia de jejum de 82 mg/dL e TFGe de 52 mL/min/1,73m². A filha relata que, no último mês, o paciente sofreu duas quedas da própria altura dentro de casa pela manhã. Considerando as diretrizes de individualização terapêutica da SBD para o idoso frágil, qual a conduta clínica mais adequada?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Manter o esquema atual, visto que a HbA1c de 6,2% reflete excelência terapêutica com alcance de controle metabólico estrito.",
+            "<strong>B)</strong> Desprescrever a Gliclazida MR para flexibilizar a meta de HbA1c para níveis em torno de 7,5% a 8,0%, prevenindo episódios de hipoglicemia e quedas.",
+            "<strong>C)</strong> Adicionar Insulina Glargina em dose fixa matinal para estabilizar a variabilidade glicêmica.",
+            "<strong>D)</strong> Substituir a Metformina por Pioglitazona para reforçar a sensibilidade óssea e muscular."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A está incorreta:</em> Uma HbA1c de 6,2% em um idoso frágil em uso de secretagogo de insulina (gliclazida) é excessivamente baixa e altamente perigosa. O paciente está sofrendo quedas da própria altura, que frequentemente representam o equivalente clínico de hipoglicemias sintomáticas atípicas no idoso. Manter esse esquema eleva o risco de fratura de fêmur e morte.",
+            "<em>Alternativa B está CORRETA:</em> Para idosos frágeis, com comorbidades e declínio funcional, as metas de HbA1c devem ser relaxadas para <strong>&lt; 7,5% a 8,0% (ou até 8,5%)</strong> com o objetivo primário e absoluto de <strong>evitar hipoglicemias</strong>. A conduta mandatória é a <strong>desprescrição imediata da sulfonilureia (Gliclazida MR)</strong>, mantendo apenas a metformina (ou associando um inibidor de DPP-4 seguro, como a linagliptina), eliminando o risco de novas quedas e eventos hipoglicêmicos graves.",
+            "<em>Alternativa C está incorreta:</em> Adicionar insulina aumentaria ainda mais o risco de hipoglicemia grave no idoso já hipercontrolado.",
+            "<em>Alternativa D está incorreta:</em> A pioglitazona aumenta a perda de massa óssea e o risco de fraturas, sendo perigosa em um paciente com histórico de quedas e osteoartrite."
+          ]
+        ]
+      ]
+    ],
+    [
+      "pontos-chave-enamed-sbd-2026",
+      0,
+      [
+        [
+          "2",
+          "12. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais"
+        ],
+        [
+          "3",
+          "Os Dez Mandamentos do Diabetes Mellitus para Concursos e Prática Médica"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Diagnóstico Definitivo dos 4 Ps:</strong> Glicemia ao acaso &ge; 200 mg/dL na presença dos 4 Ps (Poliúria, Polidipsia, Polifagia e Perda Ponderal) <strong>confirma diabetes imediatamente</strong>, sem necessidade de segunda coleta confirmatória.",
+            "<strong>2. Confirmação Laboratorial no Assintomático:</strong> Jejum &ge; 126 mg/dL, TOTG 75g (2h) &ge; 200 mg/dL ou HbA1c &ge; 6,5% exigem <strong>confirmação em duas ocasiões distintas</strong>.",
+            "<strong>3. Rastreamento e Janela do Pré-Diabetes:</strong> Glicemia de jejum 100-125 mg/dL, TOTG 140-199 mg/dL ou HbA1c 5,7-6,4%. Conduta primária: MEV com perda &ge; 7% de peso e 150 min de exercícios. Metformina indicada se IMC &ge; 35 kg/m², idade &lt; 60 anos ou DMG prévio.",
+            "<strong>4. Escolha Terapêutica Guiada por Comorbidades (SBD 2025/2026):</strong>\n    <ul>\n      <li><em>Insuficiência Cardíaca (ICFEr ou ICFEp):</em> <strong>Inibidor de SGLT2 (Dapagliflozina / Empagliflozina)</strong> mandatória.",
+            "<em>Doença Cardiovascular Aterosclerótica (IAM/AVC/DAOP):</em> <strong>Agonista de GLP-1 (Semaglutida / Dulaglutida)</strong> mandatória.",
+            "<em>Doença Renal Crônica (TFGe 20-60 ou RAC &ge; 30 mg/g):</em> <strong>Inibidor de SGLT2</strong> mandatória."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>5. Contraindicações Clássicas das Drogas Orais:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Metformina:</em> Suspender se TFGe &lt; 30 mL/min (risco de acidose lática).",
+            "<em>Pioglitazona:</em> Contraindicada formalmente na Insuficiência Cardíaca classes II a IV (induz retenção hídrica).",
+            "<em>iSGLT2:</em> Suspender 3 a 4 dias antes de cirurgias eletivas (risco de cetoacidose euglicêmica)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>6. Segurança Renal dos Inibidores de DPP-4:</strong> A <strong>Linagliptina</strong> possui eliminação biliar e é a única gliptina que <strong>dispensa qualquer ajuste de dose na insuficiência renal avançada ou dialítica</strong>.</li>\n  <li><strong>7. Regra da NPH Noturna:</strong> A dose noturna de insulina NPH deve ser administrada <strong>obrigatoriamente ao deitar (às 22h-23h)</strong> e nunca antes do jantar, evitando que o pico de ação ocorra durante a madrugada (3h), prevenindo o Efeito Somogyi.</li>\n  <li><strong>8. Rastreamento das Complicações Microvasculares:</strong> No DM2, fundoscopia sob midríase, RAC urinária e avaliação neurológica com monofilamento de 10g devem iniciar <strong>no momento do diagnóstico</strong>; no DM1, iniciar <strong>5 anos após o diagnóstico</strong>.</li>\n  <li><strong>9. Alvos de LDL no Diabetes:</strong> Paciente com DCVA estabelecida ou dano em múltiplos órgãos = Risco Muito Alto &rarr; <strong>Meta de LDL &lt; 50 mg/dL</strong> com estatina de alta potência + ezetimiba. Alto Risco = <strong>Meta de LDL &lt; 70 mg/dL</strong>.</li>\n  <li><strong>10. Diagnóstico de Diabetes Gestacional (DMG):</strong> No 1º trimestre, Glicemia de jejum entre <strong>92 e 125 mg/dL</strong> confirma DMG. No TOTG 75g (24-28 sem), basta UM ponto alterado: Jejum &ge; 92, 1h &ge; 180 ou 2h &ge; 153 mg/dL. Terapia de escolha se refratário a MEV: <strong>Insulina</strong>.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Resumo Comparativo das Metas Clínicas e Laboratoriais"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Clínico / Laboratorial",
+            "Meta Alvo Recomendada (SBD / ADA)",
+            "População-Alvo ou Condição Específica"
+          ],
+          [
+            [
+              "<strong>HbA1c</strong>",
+              "<strong>&lt; 7,0%</strong>",
+              "Maioria dos adultos não gestantes para prevenção microvascular."
+            ],
+            [
+              "<strong>HbA1c</strong>",
+              "<strong>&lt; 6,5%</strong>",
+              "Adultos jovens, recém-diagnosticados, sem DCV, com longa expectativa."
+            ],
+            [
+              "<strong>HbA1c</strong>",
+              "<strong>&lt; 7,5% a 8,0% (até 8,5%)</strong>",
+              "Idosos frágeis, neuropatas graves, comorbidades avançadas (foco em evitar hipoglicemia)."
+            ],
+            [
+              "<strong>Tempo no Alvo (TIR: 70 a 180 mg/dL)</strong>",
+              "<strong>&gt; 70% do tempo</strong>",
+              "Monitorização contínua de glicose (CGM) em DM1 e DM2."
+            ],
+            [
+              "<strong>Tempo Abaixo do Alvo (&lt; 70 mg/dL)</strong>",
+              "<strong>&lt; 4% do tempo</strong> (&lt; 1% para &lt; 54 mg/dL)",
+              "Segurança máxima contra eventos hipoglicêmicos perigosos."
+            ],
+            [
+              "<strong>Pressão Arterial</strong>",
+              "<strong>&lt; 130 / 80 mmHg</strong>",
+              "Maioria dos pacientes diabéticos para proteção renal e cardiovascular."
+            ],
+            [
+              "<strong>LDL-Colesterol</strong>",
+              "<strong>&lt; 50 mg/dL</strong>",
+              "Risco Muito Alto (portadores de DCV aterosclerótica prévia)."
+            ],
+            [
+              "<strong>LDL-Colesterol</strong>",
+              "<strong>&lt; 70 mg/dL</strong>",
+              "Risco Alto (diabéticos &gt; 50 anos ou com dano de órgão-alvo)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://diretriz.diabetes.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Diretrizes da Sociedade Brasileira de Diabetes (SBD 2025/2026). Diagnóstico, Tratamento Farmacológico e Complicações</a>",
+            "<a href=\"https://diabetesjournals.org/care/issue/47/Supplement_1\" target=\"_blank\" rel=\"noopener noreferrer\">American Diabetes Association (ADA). Standards of Care in Diabetes — 2025/2026. Diabetes Care</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Protocolo Clínico e Diretrizes Terapêuticas do Diabetes Mellitus Tipo 1 e Tipo 2</a>",
+            "<a href=\"https://kdigo.org/guidelines/diabetes-ckd\" target=\"_blank\" rel=\"noopener noreferrer\">Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group. Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease</a>",
+            "<a href=\"https://iwgdfguidelines.org\" target=\"_blank\" rel=\"noopener noreferrer\">International Working Group on the Diabetic Foot (IWGDF) Guidelines on the Prevention and Management of Diabetic Foot Disease</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

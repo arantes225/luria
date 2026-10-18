@@ -1,0 +1,1594 @@
+{
+  "v": 2,
+  "s": "distocias-e-parto-operatorio",
+  "slug": "distocias-e-parto-operatorio",
+  "t": "Distocias e Parto Operatório",
+  "title": "Distocias e Parto Operatório",
+  "p": "Tratado completo sobre as distócias do trabalho de parto e parto operatório vaginal: distócias ósseas e pelvimetria de Caldwell-Moloy, distócias de trajeto mole e do objeto fetal, desproporção cefalopélvica (DCP), protocolo de emergência da distócia de ombros (mnemônico HELPERR, McRoberts, Rubin, Woods, Jacquemier e Zavanelli), requisitos obrigatórios e técnica do fórcipe obstétrico (Simpson, Piper e Kielland), vácuo-extrator, casos clínicos e questões comentadas de residência médica.",
+  "o": [
+    [
+      "fundamentos-classificacao-distocias",
+      "1. Fundamentos e Classificação Geral das Distócias do Parto"
+    ],
+    [
+      "distocias-trajeto-osseo-caldwell-moloy",
+      "2. Distócias do Trajeto Ósseo: Tipos de Pelve de Caldwell-Moloy e Estreitamentos"
+    ],
+    [
+      "distocias-trajeto-mole",
+      "3. Distócias do Trajeto Mole: Cervicais, Vaginais, Uterinas e Tumor Prévio"
+    ],
+    [
+      "distocias-fetais-macrossomia-malformacoes",
+      "4. Distócias do Objeto Fetal: Macrossomia, Hidrocefalia e Gemelaridade Intertravada"
+    ],
+    [
+      "desproporcao-cefalopelvica-dcp",
+      "5. Desproporção Cefalopélvica (DCP): Diagnóstico Clínico Dinâmico Intraparto"
+    ],
+    [
+      "distocia-espaduas-definicao-fisiopatologia",
+      "6. Distócia de Espáduas: Conceito, Fatores de Risco e Sinal da Tartaruga"
+    ],
+    [
+      "protocolo-helperr-manobras-espaduas",
+      "7. Protocolo HELPERR de Manobras Sequenciais na Distócia de Espáduas"
+    ],
+    [
+      "manobras-heroicas-zavanelli-sinfisiotomia",
+      "8. Manobras de Resgate Extremo: Zavanelli e Fratura Intencional de Clavícula"
+    ],
+    [
+      "parto-operatorio-requisitos-seguranca",
+      "9. Parto Operatório Vaginal: Requisitos Mandatórios de Segurança e Indicações"
+    ],
+    [
+      "forcipe-obstetrico-classificacao-tecnica",
+      "10. Fórcipe Obstétrico: Modelos (Simpson, Kielland, Piper) e Mecânica de Aplicação"
+    ],
+    [
+      "vacuo-extrator-indicacoes-cuidados",
+      "11. Vácuo-Extrator Obstétrico: Mecanismo, Cuidados e Contraindicações Absolutas"
+    ],
+    [
+      "auditoria-lesoes-perineais-prevencao",
+      "12. Prevenção de Traumas Perineais Graves e Proteção Médico-Legal"
+    ],
+    [
+      "atitudes-fetais-deflexoes",
+      "Mecanismo de Parto nas Apresentações Cefálicas: Vértice e Deflexões"
+    ],
+    [
+      "apresentacao-pelvica-manobras",
+      "Apresentação Pélvica: Mecanismo de Parto e Manobras Tocúrgicas"
+    ],
+    [
+      "assinclitismo-mecanica-pelvica",
+      "Assinclitismo: Sinclitismo vs. Assinclitismo Anterior e Posterior"
+    ],
+    [
+      "episiotomia-tecnica-reparo",
+      "Episiotomia Seletiva: Mediana vs. Médio-Lateral"
+    ],
+    [
+      "lesoes-plexo-braquial-auditoria",
+      "Paralisia Braquial Obstétrica Perinatal e Auditoria Pericial"
+    ],
+    [
+      "estudo-comparativo-tipos-forcipe-detalhado",
+      "Comparativo Extensivo dos Modelos de Fórcipe: Mecânica e Riscos"
+    ],
+    [
+      "cesariana-complicada-extracao-cabeca-impactada",
+      "Manejo da Cabeça Fetal Impactada na Cesariana"
+    ],
+    [
+      "vicio-pelvico-pelvimetria-radiologica-mri",
+      "Avaliação de Vícios Pélvicos e Imagem"
+    ],
+    [
+      "simulacao-treinamento-debriefing-distocia",
+      "Simulação Realística e Debriefing em Distócia"
+    ],
+    [
+      "casos-clinicos-integradores",
+      "13. Casos Clínicos Resolvidos de Distócias e Parto Instrumental"
+    ],
+    [
+      "questoes-comentadas-residencia",
+      "14. Questões de Concursos e Residência Médica com Comentários Exaustivos"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Distocias e Parto Operatório",
+    "Tratado completo sobre as distócias do trabalho de parto e parto operatório vaginal: distócias ósseas e pelvimetria de Caldwell-Moloy, distócias de trajeto mole e do objeto fetal, desproporção cefalopélvica (DCP), protocolo de emergência da distócia de ombros (mnemônico HELPERR, McRoberts, Rubin, Woods, Jacquemier e Zavanelli), requisitos obrigatórios e técnica do fórcipe obstétrico (Simpson, Piper e Kielland), vácuo-extrator, casos clínicos e questões comentadas de residência médica.",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Obstetrícia e Tococirurgia",
+      "Tema: Distocias e Parto Operatório"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "fundamentos-classificacao-distocias",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos e Classificação Geral das Distócias do Parto"
+        ],
+        [
+          "p",
+          "O termo <strong>distócia</strong> origina-se do grego <em>dys</em> (mau, difícil, doloroso) e <em>tokos</em> (parto), definindo qualquer perturbação ou desvio do mecanismo normal do parto que dificulta, prolonga ou impede o nascimento espontâneo por via vaginal. Em contraposição à eutocia (o parto fisiológico e harmonioso), a distócia resulta da alteração em pelo menos um dos três pilares fundamentais da mecânica obstétrica consagrados pela clássica tríade de Michaelis: <strong>o motor</strong> (força contrátil uterina e puxos abdominais maternos), <strong>o trajeto</strong> (canal de parto ósseo e tecidos moles do segmento inferior, colo, vagina e períneo) e <strong>o objeto</strong> (o feto com suas dimensões, atitudes, apresentações e anexos)."
+        ],
+        [
+          "3",
+          "A Classificação Didática das Distócias"
+        ],
+        [
+          "p",
+          "Para sistematizar o raciocínio clínico e a abordagem tocúrgica, as distócias dividem-se em quatro grandes categorias etiológicas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Distócias Funcionais ou do Motor Uterino:</strong> Anormalidades na frequência, intensidade, duração ou coordenação das contrações miometriais (hipoatividade, hiperatividade, taquissistolia, espasmo, anel de Bandl e discinesias);",
+            "<strong>Distócias do Trajeto Ósseo:</strong> Vícios pélvicos, bacias assimétricas ou estreitamentos dos diâmetros dos estreitos superior, médio e inferior;",
+            "<strong>Distócias do Trajeto Mole:</strong> Obstruções mecânicas decorrentes de estenoses congênitas ou cicatriciais do colo uterino, septos vaginais, atresias vulvares, edema de colo, bexigoma ou neoplasias obstrutivas (miomas prévios no colo ou segmento inferior);",
+            "<strong>Distócias do Objeto (Fetais):</strong> Alterações do tamanho fetal (macrossomia), malformações congênitas (hidrocefalia, higroma cístico, ascite fetal, gêmeos coligados), anomalias de apresentação e situação (apresentações córmicas, defletidas de 2º e 3º graus) e distócias mecânicas agudas intraparto (distócia de ombros)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "distocias-trajeto-osseo-caldwell-moloy",
+      0,
+      [
+        [
+          "2",
+          "2. Distócias do Trajeto Ósseo: Tipos de Pelve de Caldwell-Moloy e Estreitamentos"
+        ],
+        [
+          "p",
+          "O canal de parto ósseo é delimitado pela pelve materna (ossos ilíacos, sacro e cóccix). Em 1933, os anatomistas W. E. Caldwell e H. C. Moloy propuseram a classificação morfológica dos tipos de bacia feminina baseada na forma do estreito superior, que permanece universalmente adotada."
+        ],
+        [
+          "3",
+          "Os Quatro Tipos Pélvicos de Caldwell-Moloy"
+        ],
+        [
+          "t",
+          [
+            "Tipo de Pelve",
+            "Frequência na População",
+            "Morfologia do Estreito Superior e Espinhas",
+            "Ângulo Subpúbico e Prognóstico Obstétrico"
+          ],
+          [
+            [
+              "<strong>Pelve Ginecoide</strong>",
+              "50% das mulheres (Padrão mais comum)",
+              "Arredondada/ovalada; diâmetro transverso amplo; espinhas ciáticas não salientes; sacro côncavo amplo",
+              "Ângulo subpúbico amplo (&gt; 90°); <strong>excelente prognóstico para parto vaginal</strong>."
+            ],
+            [
+              "<strong>Pelve Androide</strong>",
+              "20% a 25% das mulheres",
+              "Coração / cunha triangular; diâmetro transverso posterior reduzido; espinhas ciáticas pontiagudas e salientes; paredes convergentes",
+              "Ângulo subpúbico estreito (&lt; 90°); <strong>pior prognóstico obstétrico</strong>; alta frequência de parada de descida e necessidade de cesárea."
+            ],
+            [
+              "<strong>Pelve Antropoide</strong>",
+              "20% a 25% das mulheres",
+              "Elíptica com diâmetro ântero-posterior (AP) maior que o transverso; sacro longo e retificado; incisura ciática ampla",
+              "Ângulo subpúbico normal ou discretamente reduzido; propensão marcante para <strong>variedades posteriores persistentes (OP/OS)</strong>."
+            ],
+            [
+              "<strong>Pelve Platipeloide</strong>",
+              "Rara: 3% a 5% das mulheres",
+              "Achatada em sentido AP; diâmetro transverso muito amplo e diâmetro AP estreito; sínfise púbica rasa",
+              "Ângulo subpúbico muito aberto (&gt; 100°); favorece <strong>insinuação em variedades transversas puras</strong> e assinclitismo de Naegele/Litzmann."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pelvimetria Clínica e Estreitamentos dos Planos da Bacia"
+        ],
+        [
+          "p",
+          "A bacia obstétrica é dividida em três planos funcionais de passagem obrigatória da cabeça fetal:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estreito Superior:</strong> Delimitado pelo promontório sacral, linhas inominadas e borda superior da sínfise púbica. O diâmetro ântero-posterior mais crítico é a <strong>Conjugata Vera Obstétrica</strong> (distância mínima entre o promontório e a face posterior da sínfise púbica). Como a conjugata obstétrica não é mensurável diretamente ao toque, afere-se a <strong>Conjugata Diagonalis</strong> (distância do promontório à borda inferior da sínfise). Em condições normais, a conjugata diagonalis mede &ge; 11,5 a 12,0 cm, e a conjugata obstétrica é obtida subtraindo-se 1,5 cm: $\text{Conjugata Obstétrica} = \text{Conjugata Diagonalis} - 1,5\text{ cm}$. Considera-se <strong>estreitamento do estreito superior</strong> quando a conjugata obstétrica é <strong>inferior a 10,0 cm</strong> (ou conjugata diagonalis &lt; 11,5 cm);",
+            "<strong>Estreito Médio:</strong> Delimitado pela altura das espinhas ciáticas (marco zero de De Lee) e o sacro inferior. O diâmetro crítico é o <strong>Diâmetro Biespinhoso (ou interespinhoso ciático)</strong>, cujo valor normal situa-se em torno de 10,5 cm. Considera-se <strong>estreitamento do estreito médio</strong> quando a distância interespinhosa é <strong>inferior a 9,5 cm</strong>, achado altamente associado a parada secundária da descida fetal no plano 0/+1;",
+            "<strong>Estreito Inferior:</strong> Delimitado pela ponta do cóccix, tuberosidades isquiáticas e ligamentos sacrotuberosos. O diâmetro transverso é o <strong>Diâmetro Biisquiático (ou intertuberositário)</strong>, que mede normalmente &ge; 10,5 a 11,0 cm (afere-se clinicamente posicionando os nós dos quatro dedos da mão fechada entre as tuberosidades isquiáticas maternas). Estreitamentos com valor <strong>&lt; 8,0 cm associados a ângulo subpúbico &lt; 90°</strong> impedem o desprendimento cefálico sem lacerações graves ou exigem cesariana."
+          ]
+        ]
+      ]
+    ],
+    [
+      "distocias-trajeto-mole",
+      0,
+      [
+        [
+          "2",
+          "3. Distócias do Trajeto Mole: Cervicais, Vaginais, Uterinas e Tumor Prévio"
+        ],
+        [
+          "p",
+          "As distócias de partes moles decorrem de obstáculos mecânicos ou rigidez dos tecidos musculares, conjuntivos e cutâneos que compõem o assoalho pélvico e o trajeto genital inferior."
+        ],
+        [
+          "3",
+          "Distócias Cervicais"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aglutinação e Rigidez Cicatricial do Colo:</strong> O orifício externo do colo uterino permanece puntiforme e indeiscente apesar de contrações fortes e apagamento do segmento inferior. Decorre frequentemente de cirurgias prévias no colo (conização com cirurgia de alta frequência - CAF, biópsias em cone ou cauterizações extensas) com fibrose estromal. O obstetra pode desfazer a aderência puntiforme por descolamento digital suave;",
+            "<strong>Edema de Colo Uterino:</strong> Ocorre quando a parturiente realiza esforços expulsivos voluntários (puxos precoces) antes da dilatação completa, ou por compressão vascular da apresentação contra a sínfise em partos prolongados. O lábio anterior do colo torna-se espessado, arroxeado e doloroso, aprisionando a calota craniana fetal. Conduta: suspender os puxos, decúbito lateral e aguardar a dilatação completa."
+          ]
+        ],
+        [
+          "3",
+          "Distócias Vaginais e Vulvares"
+        ],
+        [
+          "p",
+          "Incluem os <strong>septos vaginais longitudinais completos</strong> (que podem ser empurrados ou seccionados sob anestesia se impedirem o desprendimento) e os <strong>septos transversos</strong> (que constituem anéis estenosantes intransponíveis se espessos, indicando cesariana). As estenoses vulvares decorrem de mutilações genitais, cicatrizes cirúrgicas prévias ou estenoses senis."
+        ],
+        [
+          "3",
+          "O Tumor Prévio: O Obstáculo do Segmento Inferior"
+        ],
+        [
+          "p",
+          "Denomina-se <strong>tumor prévio</strong> qualquer massa tumoral pélvica que se localiza <strong>à frente da apresentação fetal no canal de parto</strong>, bloqueando mecanicamente a sua descida. A causa mais comum é o <strong>mioma uterino subseroso ou intramural do segmento inferior ou do colo uterino</strong>, seguido de neoplasias ovarianas sólidas (teratomas císticos maduros ou cistoadenomas volumosos impactados no fundo de saco de Douglas) e o carcinoma invasor do colo uterino. Quando o tumor é irredutível e permanece prévio após a insinuação teórica, a tentativa de parto normal resulta em rotura uterina ou hemorragia, sendo a <strong>cesariana com incisão cirúrgica corporal alta ou segmentar atípica mandatória</strong>."
+        ]
+      ]
+    ],
+    [
+      "distocias-fetais-macrossomia-malformacoes",
+      0,
+      [
+        [
+          "2",
+          "4. Distócias do Objeto Fetal: Macrossomia, Hidrocefalia e Gemelaridade Intertravada"
+        ],
+        [
+          "p",
+          "As distócias decorrentes de anomalias intrínsecas ao feto representam desafios tocúrgicos de alta complexidade."
+        ],
+        [
+          "3",
+          "Macrossomia Fetal"
+        ],
+        [
+          "p",
+          "Define-se <strong>macrossomia fetal</strong> pelo peso ao nascimento superior a <strong>4.000 gramas</strong> (ou superior a 4.500 g em muitas definições obstétricas internacionais). Está fortemente ligada a diabetes mellitus materno (diabetes gestacional e pré-gestacional), obesidade materna, multiparidade, pós-datismo e ganho ponderal gestacional excessivo."
+        ],
+        [
+          "p",
+          "A grande relevância obstétrica da macrossomia no feto filho de mãe diabética reside na sua <strong>biometria dismórfica assimétrica</strong>: a hiperinsulinemia fetal endógena estimula o depósito desproporcional de tecido adiposo no tronco, tórax e cintura escapular, conferindo ao concepto uma relação diâmetro biacromial / diâmetro biparietal muito elevada. Portanto, mesmo quando a cabeça fetal ultrapassa a bacia com facilidade, os ombros impactam violentamente contra a sínfise púbica materna, desencadeando a <strong>distócia de espáduas</strong>."
+        ],
+        [
+          "3",
+          "Hidrocefalia Fetal Congênita"
+        ],
+        [
+          "p",
+          "A dilatação maciça do sistema ventricular encefálico por acúmulo de líquor eleva o diâmetro biparietal fetal para além de 12 a 15 cm (muito superior à capacidade do estreito superior da bacia). Em casos de hidrocefalia grave com feto vivo ao termo, indica-se cesariana com incisão ampla para evitar traumatismo craniano catastrófico. Historicamente, em fetos mortos, realizava-se a cefalocentese descompressiva transvaginal."
+        ],
+        [
+          "3",
+          "Gemelaridade com Travamento de Cabeças (Locked Twins)"
+        ],
+        [
+          "p",
+          "Complicação catastrófica exclusiva de gestações gemelares diamnióticas em que o <strong>primeiro gemelar está em apresentação pélvica e o segundo gemelar em apresentação cefálica</strong>. Durante o desprendimento do corpo do primeiro gemelar, seu queixo engancha no queixo do segundo gemelar que já desceu parcialmente no estreito superior. Ambas as cabeças impactam-se mutuamente na entrada da bacia, impedindo a saída de ambos os fetos. O reconhecimento precoce da combinação Pélvico-Cefálico em gemelaridade deve motivar a indicação primária de <strong>cesariana eletiva programada</strong> para prevenção absoluta do travamento."
+        ]
+      ]
+    ],
+    [
+      "desproporcao-cefalopelvica-dcp",
+      0,
+      [
+        [
+          "2",
+          "5. Desproporção Cefalopélvica (DCP): Diagnóstico Clínico Dinâmico Intraparto"
+        ],
+        [
+          "p",
+          "A Desproporção Cefalopélvica (DCP) constitui uma incongruência espacial mecânica entre as dimensões do polo cefálico fetal e os diâmetros ósseos da bacia materna, impedindo a progressão do parto."
+        ],
+        [
+          "3",
+          "O Caráter Estritamente Intraparto do Diagnóstico"
+        ],
+        [
+          "p",
+          "Com exceção de deformidades esqueléticas extremas (como raquitismo grave ou cifoescoliose pélvica incapacitante), <strong>a DCP não pode ser diagnosticada com segurança antes do trabalho de parto ou na fase latente</strong>. A pelve materna apresenta certa flexibilidade hormonal durante o parto (afrouxamento da sínfise púbica e sacroilíacas por ação da relaxina), e a cabeça fetal sofre deformações plásticas fisiológicas por cavalgamento das suturas cranianas (sutura sagital, coronais e lambdoides), permitindo a redução de até 0,5 a 1,0 cm nos diâmetros biparietal e suboccipitobregmático."
+        ],
+        [
+          "3",
+          "Os Critérios Diagnósticos Intraparto da DCP Real"
+        ],
+        [
+          "p",
+          "O diagnóstico legítimo de desproporção cefalopélvica exige a comprovação concomitante de quatro elementos essenciais:"
+        ],
+        [
+          "o",
+          [
+            "1. Presença de <strong>fase ativa franca</strong> do trabalho de parto (dilatação &ge; 5 cm);",
+            "2. Presença de <strong>dinâmica uterina vigorosa e eficiente</strong> (4 a 5 contrações intensas e coordenadas a cada 10 minutos por palpação e cardiotocografia);",
+            "3. <strong>Parada completa da dilatação cervical e/ou da descida fetal por pelo menos 2 a 4 horas</strong> a despeito do motor uterino supereficiente;",
+            "4. Presença de sinais físicos inequívocos de compressão mecânica óssea: <strong>cavalgamento ósseo acentuado dos parietais (++/4 a +++/4)</strong>, formação exuberante de <strong>bossa serossanguínea (caput succedaneum volumoso)</strong> e edema de bordo cervical."
+          ]
+        ],
+        [
+          "p",
+          "Diante desse quadro, a desproporção mecânica é absoluta e insuperável por via vaginal. A infusão de ocitocina ou a aplicação forçada de fórcipe nesse cenário constitui erro médico gravíssimo, culminando na rotura do segmento inferior do útero grávido (síndrome do anel de Bandl-Frommel). A conduta mandatória e salvadora é a <strong>interrupção imediata por via cesariana</strong>."
+        ]
+      ]
+    ],
+    [
+      "distocia-espaduas-definicao-fisiopatologia",
+      0,
+      [
+        [
+          "2",
+          "6. Distócia de Espáduas: Conceito, Fatores de Risco e Sinal da Tartaruga"
+        ],
+        [
+          "p",
+          "A distócia de espáduas (ou distócia de ombros) representa uma das mais dramáticas e temidas emergências obstétricas intraparto. Trata-se de um evento agudo, imprevisível na maioria das ocorrências e que exige intervenção médica calma, sincronizada e altamente metódica em poucos minutos para salvar a vida e preservar a integridade neurológica do concepto."
+        ],
+        [
+          "3",
+          "Definição Objetiva"
+        ],
+        [
+          "p",
+          "Define-se formalmente <strong>distócia de espáduas</strong> como o parto vaginal que <strong>requer manobras obstétricas adicionais além da tração axial suave da cabeça fetal para a liberação dos ombros</strong>, ou quando o intervalo entre o desprendimento da cabeça e a expulsão completa do corpo fetal ultrapassa <strong>60 segundos</strong>."
+        ],
+        [
+          "3",
+          "Fisiopatologia Mecânica da Impactação"
+        ],
+        [
+          "p",
+          "No parto eutócico, após o desprendimento da cabeça fetal em plano ântero-posterior, ocorre a rotação externa cefálica (restituição), momento no qual o diâmetro biacromial fetal gira no sentido oblíquo ou ântero-posterior da pelve e o ombro anterior escorrega sob a sínfise púbica materna com facilidade."
+        ],
+        [
+          "p",
+          "Na distócia de espáduas, o <strong>ombro anterior fetal impacta-se firmemente contra a face posterior da borda superior da sínfise púbica materna</strong> (ou, mais raramente, o ombro posterior impacta contra o promontório sacral). O corpo fetal não desce e fica aprisionado."
+        ],
+        [
+          "3",
+          "O Sinal da Tartaruga (Turtle Sign)"
+        ],
+        [
+          "p",
+          "O sinal clínico patognomônico da distócia de espáduas é o clássico <strong>Sinal da Tartaruga (Turtle Sign)</strong>: no momento em que a cabeça fetal se desprende da vulva, em vez de se manter exteriorizada, ela <strong>retrai-se imediatamente de volta contra o períneo materno</strong>, com o queixo e a face pressionando firmemente o introito vulvar, como a cabeça de uma tartaruga que se retrai para dentro de sua carapaça. Qualquer tentativa de tração excessiva para baixo sobre o pescoço nessa hora traciona violentamente o plexo braquial fetal (raízes de C5, C6 e C7), provocando estiramento ou avulsão radicular irreversível (<strong>Paralisia de Duchenne-Erb</strong>)."
+        ]
+      ]
+    ],
+    [
+      "protocolo-helperr-manobras-espaduas",
+      0,
+      [
+        [
+          "2",
+          "7. Protocolo HELPERR de Manobras Sequenciais na Distócia de Espáduas"
+        ],
+        [
+          "p",
+          "Diante de uma distócia de espáduas, o fator tempo é crítico: a hipóxia fetal progride rapidamente devido à compressão do cordão umbilical no canal de parto e à restrição da circulação útero-placentária. O Colégio Americano de Obstetras e Ginecologistas (ACOG) e a <em>Advanced Life Support in Obstetrics</em> (ALSO) consagraram o mnemônico internacional <strong>HELPERR</strong> para orientar a conduta clínica estruturada:"
+        ],
+        [
+          "t",
+          [
+            "Passo do HELPERR",
+            "Ação Obstétrica Específica",
+            "Mecanismo Biofísico e Cuidados Críticos"
+          ],
+          [
+            [
+              "<strong>H - Help</strong>",
+              "Pedir ajuda imediata e chamar equipe",
+              "Convocar obstetra sênior, anestesiologista, pediatra/neonatologista e equipe de enfermagem; suspender puxos maternos."
+            ],
+            [
+              "<strong>E - Episiotomy</strong>",
+              "Avaliar episiotomia ampla",
+              "A distócia é <strong>óssea e não muscular</strong>. A episiotomia não desimpacta o ombro da sínfise, mas fornece espaço para manobras internas manuais."
+            ],
+            [
+              "<strong>L - Legs (McRoberts)</strong>",
+              "<strong>Manobra de McRoberts</strong>",
+              "Hiperflexão e abdução forçada das coxas maternas sobre o abdome. Aplana a lordose lombar e roda a sínfise púbica cefalicamente. <strong>Resolve &gt; 60% dos casos</strong>."
+            ],
+            [
+              "<strong>P - Pressure (Rubin I)</strong>",
+              "Pressão suprapúbica externa",
+              "Assistente realiza pressão contínua ou rítmica com a palma da mão ou punho fechado oblíqua sobre a sínfise (Rubin I), aduzindo os ombros. <strong>PROIBIDO KRISTELLER</strong>."
+            ],
+            [
+              "<strong>E - Enter (Rubin II / Woods)</strong>",
+              "Manobras rotacionais internas",
+              "Introduzir os dedos na vagina: <strong>Rubin II</strong> (pressão na face posterior do ombro anterior); <strong>Woods</strong> (pressão na face anterior do ombro posterior - manobra do parafuso)."
+            ],
+            [
+              "<strong>R - Remove Posterior Arm</strong>",
+              "<strong>Manobra de Jacquemier</strong>",
+              "Introduzir a mão na concavidade sacral até a fossa antecubital fetal, fletir o antebraço e varrer a mão sobre o tórax fetal, extraindo o braço posterior."
+            ],
+            [
+              "<strong>R - Roll the Patient (Gaskin)</strong>",
+              "<strong>Manobra de Gaskin (4 apoios)</strong>",
+              "Colocar a parturiente em posição de quatro apoios (mãos e joelhos apoiados na cama). A gravidade e a báscula pélvica aumentam os diâmetros conjugados e desprendem o ombro posterior."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Proscrição Absoluta da Manobra de Kristeller"
+        ],
+        [
+          "p",
+          "É terminantemente <strong>PROIBIDA a realização da manobra de Kristeller (pressão de fundo uterino)</strong> na distócia de espáduas. A pressão fúndica força ainda mais o ombro anterior fetal contra a borda óssea da sínfise púbica materna, agravando a impactação mecânica, triplicando a incidência de avulsão e lesão grave do plexo braquial fetal e acarretando risco de rotura uterina e descolamento prematuro de placenta."
+        ]
+      ]
+    ],
+    [
+      "manobras-heroicas-zavanelli-sinfisiotomia",
+      0,
+      [
+        [
+          "2",
+          "8. Manobras de Resgate Extremo: Zavanelli e Fratura Intencional de Clavícula"
+        ],
+        [
+          "p",
+          "Quando todas as manobras posturais, de pressão suprapúbica, rotacionais internas e extração do braço posterior falham, a situação evolui para uma catástrofe com hipóxia fetal severa, exigindo manobras de exceção (manobras de resgate extremo):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fratura Deliberada da Clavícula Anterior:</strong> Realizada pressionando-se a haste da clavícula anterior fetal para cima contra o ramo da sínfise púbica até a sua fratura mecânica. A ruptura da clavícula reduz o diâmetro biacromial instantaneamente em 2 a 3 cm, permitindo o desprendimento do corpo. A clavícula consolida-se em poucas semanas sem sequelas funcionais no neonato;",
+            "<strong>Manobra de Zavanelli (Reposicionamento Cefálico para Cesariana):</strong> Consiste na reversão dos tempos do mecanismo de parto: rotação cefálica para a variedade original (occipito-anterior), flexão do polo cefálico e empurrão digital suave e contínuo da cabeça de volta para o interior da cavidade uterina através da vagina, seguido de cesariana de emergência imediata sob anestesia geral e relaxamento uterino;",
+            "<strong>Sinfisiotomia Cirúrgica:</strong> Incisão cirúrgica estéril da cartilagem e dos ligamentos da sínfise púbica sob anestesia local para afastar os ossos ilíacos em até 2 a 3 cm, utilizada historicamente e em situações de desespero em locais sem bloco cirúrgico para cesárea."
+          ]
+        ]
+      ]
+    ],
+    [
+      "parto-operatorio-requisitos-seguranca",
+      0,
+      [
+        [
+          "2",
+          "9. Parto Operatório Vaginal: Requisitos Mandatórios de Segurança e Indicações"
+        ],
+        [
+          "p",
+          "O parto operatório vaginal (parto vaginal instrumental) compreende a utilização de fórcipe obstétrico ou vácuo-extrator para abreviar ou concluir o segundo período do trabalho de parto."
+        ],
+        [
+          "3",
+          "Indicações Formais para Parto Instrumental"
+        ],
+        [
+          "o",
+          [
+            "<strong>Indicações Fetais:</strong> Sofrimento fetal agudo intraparto no período expulsivo (desacelerações tardias repetitivas, bradicardia fetal sustentada) exigindo o nascimento imediato em menos de 5 a 10 minutos quando o feto já se encontra baixo e insinuado;",
+            "<strong>Indicações Maternas:</strong> Exaustão física materna incapacitante com cessação dos esforços expulsivos; e contraindicação formal ao esforço de puxo materno decorrente de cardiopatias maternas graves (estenose mitral, insuficiência cardíaca congestiva), aneurismas cerebrais ou aórticos, hipertensão intracraniana e descolamento prévio de retina;",
+            "<strong>Indicações Tocúrgicas:</strong> Período expulsivo prolongado com dinâmica adequada e ausência de progressão da descida fetal a partir do plano +2 de De Lee."
+          ]
+        ],
+        [
+          "3",
+          "Os Sete Requisitos Mandatórios para Aplicação Segura (Critérios de Ouro)"
+        ],
+        [
+          "p",
+          "A aplicação de fórcipe ou vácuo sem a estrita observância dos requisitos abaixo configura imperícia e expõe a mãe e o concepto a lacerações graves e traumatismos cranianos:"
+        ],
+        [
+          "t",
+          [
+            "Requisito Obrigatório",
+            "Justificativa Clínica e Probatória",
+            "Risco da Não Observância"
+          ],
+          [
+            [
+              "<strong>1. Dilatação Total de 10 cm</strong>",
+              "Colo 100% dilatado e retraído ao redor da cabeça",
+              "Laceração cervicovaginal gravíssima em bordo de taça e choque hemorrágico"
+            ],
+            [
+              "<strong>2. Membranas Ovulares Rotas</strong>",
+              "Bolsa rota espontânea ou artificialmente",
+              "Descolamento prematuro de placenta e escorregamento dos ramos"
+            ],
+            [
+              "<strong>3. Altura no Plano &ge; +2 de De Lee</strong>",
+              "Apresentação baixa (fórcipe baixo ou de saída)",
+              "Tentativa em plano alto (0 ou +1) traumatiza a bacia e causa fraturas cranianas"
+            ],
+            [
+              "<strong>4. Variedade e Posição Conhecidas</strong>",
+              "Orientação milimétrica da sutura sagital e fontanelas",
+              "Aplicação assimétrica sobre a face ou órbitas fetais"
+            ],
+            [
+              "<strong>5. Apresentação Cefálica Fletida</strong>",
+              "Apresentação de vértice (ou face com mento anterior)",
+              "Fórcipe é formalmente contraindicado em apresentação de fronte ou mento posterior"
+            ],
+            [
+              "<strong>6. Bacia Proporcional (Sem DCP)</strong>",
+              "Ausência de vício pélvico obstrutivo intransponível",
+              "Impactação forçada de calota óssea contra a bacia materna"
+            ],
+            [
+              "<strong>7. Bexiga Materna Esvaziada</strong>",
+              "Cateterismo vesical de alívio prévio",
+              "Fístula vesicovaginal e rotura vesical traumática"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "forcipe-obstetrico-classificacao-tecnica",
+      0,
+      [
+        [
+          "2",
+          "10. Fórcipe Obstétrico: Modelos (Simpson, Kielland, Piper) e Mecânica de Aplicação"
+        ],
+        [
+          "p",
+          "O fórcipe obstétrico é um instrumento bivalve desenhado para prender a cabeça fetal e aplicar tração e/ou rotação controladas pelo eixo de encaixe da pelve materna."
+        ],
+        [
+          "3",
+          "Anatomia Básica das Colheres do Fórcipe"
+        ],
+        [
+          "p",
+          "Cada ramo do fórcipe (ramo esquerdo e ramo direito) é composto por quatro segmentos: colher (com curvatura cefálica adaptada à calota fetal e curvatura pélvica adaptada à curva do sacro materno), haste, articulação (fechamento dos ramos) e cabo para empunhadura do operador."
+        ],
+        [
+          "3",
+          "Os Três Modelos Clássicos e suas Indicações Específicas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fórcipe de Simpson (ou Simpson-Braun):</strong> É o fórcipe mais utilizado em todo o mundo ocidental. Possui articulação fixa do tipo inglesa (encaixe por entalhe) e colheres fenestradas com curvatura pélvica e cefálica bem definidas. <strong>Indicação de escolha:</strong> Exclusivamente para <strong>TRAÇÃO</strong> em cabeças moldadas e insinuadas (variedades anteriores: púbica - OP, occipito-esquerda anterior - OEA e occipito-direita anterior - ODA). Não deve ser usado para rotações amplas superiores a 45 graus;",
+            "<strong>Fórcipe de Kielland:</strong> Instrumento desenhado pelo norueguês Christian Kielland em 1915, caracterizado por <strong>articulação deslizante</strong> e ausência quase total de curvatura pélvica (é praticamente reto no perfil sagital). <strong>Indicação de escolha:</strong> É o fórcipe de <strong>ROTAÇÃO</strong> por excelência, utilizado para corrigir variedades transversas persistentes (OET / ODT) e variedades posteriores (OEP / ODP), realizando a rotação interna de 90 a 180 graus na altura do estreito médio antes da tração;",
+            "<strong>Fórcipe de Piper:</strong> Apresenta hastes longas e frouxas com curvatura perineal invertida voltada para baixo. <strong>Indicação exclusiva e consagrada em prova:</strong> Destinado ao desprendimento da <strong>CABEÇA DERRADEIRA no parto pélvico vaginal</strong> de concepto em apresentação pélvica, quando a cabeça fica retida na pelve materna após o desprendimento dos ombros e membros superiores."
+          ]
+        ]
+      ]
+    ],
+    [
+      "vacuo-extrator-indicacoes-cuidados",
+      0,
+      [
+        [
+          "2",
+          "11. Vácuo-Extrator Obstétrico: Mecanismo, Cuidados e Contraindicações Absolutas"
+        ],
+        [
+          "p",
+          "O vácuo-extrator (ou <em>vacuum extractor</em>) consiste em uma campânula circular de silicone flexível ou metálica conectada a um sistema de sucção a vácuo com pressão negativa controlada (pressão de vácuo de 0,6 a 0,8 kg/cm² ou 500 a 600 mmHg)."
+        ],
+        [
+          "3",
+          "Vantagens em Relação ao Fórcipe"
+        ],
+        [
+          "p",
+          "O vácuo requer menor grau de analgesia, não introduz lâminas de aço rígidas entre a calota craniana e o canal vaginal (reduzindo expressivamente o risco de lacerações perineais de 3º e 4º graus maternas) e permite a autorrotação da cabeça fetal no sentido mais fisiológico de menor resistência da bacia materna durante a tração."
+        ],
+        [
+          "3",
+          "Contraindicações Absolutas ao Vácuo-Extrator"
+        ],
+        [
+          "p",
+          "O uso do vácuo-extrator exige restrições de biossegurança rígidas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Idade Gestacional Inferior a 34 Semanas (Prematuridade &lt; 34 semanas):</strong> É a <strong>contraindicação clássica mais cobrada em provas</strong>. O concepto prematuro possui vasos pericranianos extremamente frágeis e tecidos subaponeuróticos frouxos; a tração por vácuo acarreta descolamento pericraniano maciço com <strong>hemorragia subgaleal fulminante</strong>, hematoma subdural e fraturas da calota craniana;",
+            "<strong>Apresentações não de Vértice:</strong> Formalmente contraindicado em apresentações pélvicas, de face ou de fronte;",
+            "<strong>Descolamentos Sucessivos da Campânula:</strong> Caso a campânula sofra <strong>mais de 2 a 3 descolamentos acidentais</strong> (<em>pop-offs</em>) durante o procedimento, ou a tração ultrapasse 15 a 20 minutos sem progressão, o método deve ser imediatamente abandonado e indicada cesariana, sob pena de necrose cutânea e hemorragia intracraniana."
+          ]
+        ]
+      ]
+    ],
+    [
+      "auditoria-lesoes-perineais-prevencao",
+      0,
+      [
+        [
+          "2",
+          "12. Prevenção de Traumas Perineais Graves e Proteção Médico-Legal"
+        ],
+        [
+          "p",
+          "O parto operatório vaginal associa-se a um risco aumentado de traumas no assoalho pélvico materno, especificamente as lacerações de 3º e 4º graus (OASIS — <em>Obstetric Anal Sphincter Injuries</em>), exigindo técnica cirúrgica impecável de reparo para prevenir incontinência anal e fecal permanente."
+        ],
+        [
+          "3",
+          "Classificação das Lacerações Perineais (Sultan / RCOG)"
+        ],
+        [
+          "t",
+          [
+            "Grau da Lesão Perineal",
+            "Estruturas Anatômicas Acometidas",
+            "Técnica Cirúrgica de Reparo"
+          ],
+          [
+            [
+              "<strong>Grau 1</strong>",
+              "Apenas pele do períneo e mucosa vaginal",
+              "Fios absorvíveis sintéticos (poliglactina 910); sutura simples contínua"
+            ],
+            [
+              "<strong>Grau 2</strong>",
+              "Músculos do períneo (bulbocavernoso, transverso superficial); esfíncter anal íntegro",
+              "Sutura muscular por planos com Vicryl 2-0 ou 3-0"
+            ],
+            [
+              "<strong>Grau 3a</strong>",
+              "Laceração de &lt; 50% da espessura do Esfíncter Anal Externo (EAE)",
+              "Reparo término-terminal com fio PDS 3-0 ou Vicryl em bloco cirúrgico"
+            ],
+            [
+              "<strong>Grau 3b</strong>",
+              "Laceração de &gt; 50% da espessura do Esfíncter Anal Externo (EAE)",
+              "Técnica de sobreposição (<em>overlap</em>) ou término-terminal em ambiente cirúrgico"
+            ],
+            [
+              "<strong>Grau 3c</strong>",
+              "Laceração do Esfíncter Anal Externo E do Esfíncter Anal Interno (EAI)",
+              "Sutura individualizada do EAI e do EAE com antibioticoprofilaxia EV"
+            ],
+            [
+              "<strong>Grau 4</strong>",
+              "Lesão completa de EAE, EAI e <strong>abertura da mucosa retal / canal anal</strong>",
+              "Reparo da mucosa retal com nós submucosos invaginantes, seguido de EAI e EAE"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "atitudes-fetais-deflexoes",
+      0,
+      [
+        [
+          "2",
+          "Mecanismo de Parto nas Apresentações Cefálicas: Vértice e as Três Deflexões"
+        ],
+        [
+          "p",
+          "A atitude fetal cefálica em relação ao tronco determina o diâmetro ântero-posterior que se apresenta ao estreito superior da bacia materna, constituindo o fator primordial para a viabilidade mecânica do parto vaginal."
+        ],
+        [
+          "3",
+          "A Apresentação Cefálica Fletida (Vértice ou Occipício)"
+        ],
+        [
+          "p",
+          "Na atitude de flexão máxima, o queixo fetal encosta firmemente na fúrcula esternal do tórax, oferecendo à bacia o menor diâmetro cefálico possível: o <strong>Diâmetro Suboccipitobregmático (SOB = 9,5 cm)</strong> e circunferência de 32 cm. O ponto de referência anatômico ao toque vaginal é o <strong>occipício (pequena fontanela ou fontanela lambdoide / fontanela posterior triangular)</strong> e a linha de orientação é a <strong>sutura sagital</strong>. É a apresentação fisiológica presente em mais de 95% a 96% dos nascimentos a termo, proporcionando excelente prognóstico de parto vaginal espontâneo."
+        ],
+        [
+          "3",
+          "As Apresentações Cefálicas Defletidas: 1º, 2º e 3º Graus"
+        ],
+        [
+          "p",
+          "Quando ocorrem graus variáveis de extensão da cabeça sobre a coluna cervical, originam-se as apresentações defletidas:"
+        ],
+        [
+          "t",
+          [
+            "Grau de Deflexão",
+            "Ponto de Referência Anatômico",
+            "Linha de Orientação no Toque",
+            "Diâmetro de Insinuação e Medida",
+            "Viabilidade de Parto Vaginal"
+          ],
+          [
+            [
+              "<strong>Vértice / Fletida</strong>",
+              "Occipício / Fontanela Posterior (Lambda)",
+              "Sutura sagital",
+              "Suboccipitobregmático (SOB) = <strong>9,5 cm</strong>",
+              "<strong>Fisiológico / Excelente</strong> (95% dos partos)"
+            ],
+            [
+              "<strong>Defletida de 1º Grau (Bregma)</strong>",
+              "Bregma / Fontanela Anterior (Losango)",
+              "Sutura sagitometópica",
+              "Occipitofrontal (OF) = <strong>12,0 cm</strong>",
+              "<strong>Possível</strong>, mas trabalho de parto lento e arrastado"
+            ],
+            [
+              "<strong>Defletida de 2º Grau (Fronte)</strong>",
+              "Glabela / Raiz do Nariz",
+              "Sutura metópica",
+              "Occipitomentoniano (OM) = <strong>13,5 cm</strong>",
+              "<strong>IMPOSSÍVEL A TERMO</strong>; <strong>Indicação absoluta de Cesariana</strong>"
+            ],
+            [
+              "<strong>Defletida de 3º Grau (Face)</strong>",
+              "Mento (Queixo)",
+              "Linha facial (sutura intermaxilar)",
+              "Submentobregmático (SMB) = <strong>9,5 cm</strong>",
+              "<strong>Possível APENAS em Mento-Anterior</strong>; Mento-posterior exige Cesariana"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Particularidades Cruciais da Apresentação de Face: Mento-Anterior vs Mento-Posterior"
+        ],
+        [
+          "p",
+          "Na deflexão de 3º grau (apresentação de face), a cabeça fetal atinge extensão máxima (o occipício toca o dorso fetal), oferecendo um diâmetro compatível com a bacia (SMB = 9,5 cm). Contudo, a evolução do parto depende criticamente da rotação interna:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Variedade Mento-Anterior:</strong> O mento fetal gira para a sínfise púbica da mãe. O queixo escorrega sob a arcada púbica e a cabeça realiza o desprendimento por movimento de flexão gradual da face, fronte e occipício sobre o períneo materno. <strong>O parto vaginal é plenamente viável</strong>;",
+            "<strong>Variedade Mento-Posterior:</strong> O mento fetal gira para a concavidade sacral posterior da mãe. O queixo impacta contra o promontório sacral, enquanto o tórax fetal entra prematuramente no estreito superior e o pescoço curto não possui comprimento suficiente para permitir a extensão reversa. Ocorre encravamento mecânico absoluto. <strong>O parto vaginal é absolutamente IMPOSSÍVEL na variedade mento-posterior persistente</strong>, sendo a <strong>cesariana de emergência obrigatória</strong>. É terminantemente proibida a tentativa de fórcipe ou rotação manual forçada nessa posição."
+          ]
+        ]
+      ]
+    ],
+    [
+      "apresentacao-pelvica-manobras",
+      0,
+      [
+        [
+          "2",
+          "Apresentação Pélvica: Mecanismo de Parto, Variedades e Manobras Tocúrgicas Clássicas"
+        ],
+        [
+          "p",
+          "A apresentação pélvica ocorre quando o polo podálico do concepto ocupa o estreito superior da bacia materna, incidindo em 3% a 4% das gestações a termo."
+        ],
+        [
+          "3",
+          "Variedades Anatômicas da Apresentação Pélvica"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pélvica Incompleta Modo Nádegas (Aglocócica):</strong> As coxas encontram-se fletidas sobre o abdome e as pernas estendidas sobre a face anterior do tronco (o feto \"abraça as próprias pernas\"). É a variedade mais frequente (representando cerca de 65% a 70% das apresentações pélvicas a termo);",
+            "<strong>Pélvica Completa:</strong> As coxas e as pernas encontram-se completamente fletidas, com o concepto \"sentado de pernas cruzadas\" (alfaiate) sobre a entrada da bacia (cerca de 25% a 30%);",
+            "<strong>Pélvica Incompleta Modo Pés ou Joelhos:</strong> Uma ou ambas as extremidades inferiores encontram-se estendidas e prolapsadas no canal de parto (mais comum em prematuros extremos; alto risco de prolapso de cordão umbilical)."
+          ]
+        ],
+        [
+          "3",
+          "As Grandes Manobras Obstétricas no Parto Pélvico"
+        ],
+        [
+          "p",
+          "O parto pélvico vaginal assistido segue a regra áurea do \"hands-off\" (não intervir) até o desprendimento espontâneo do polo pélvico até o nível das escápulas. A partir desse marco anatômico, executam-se manobras padronizadas se houver dificuldade de progressão:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Manobra de Bracht:</strong> Manobra universal para auxílio simultâneo de ombros e cabeça. Quando o ângulo inferior das escápulas fetais se exterioriza pela vulva, o obstetra segura o polo pélvico e as coxas fetais com ambas as mãos (polegares nas faces posteriores das coxas e dedos sobre a região lombossacral) e realiza uma báscula contínua e suave do dorso fetal sobre o abdome materno em direção à sínfise púbica, mantendo a flexão da cabeça até o desprendimento simultâneo do queixo e da face;",
+            "<strong>Manobra de Rojas (ou Lovset):</strong> Indicada para liberação dos braços e ombros quando há retenção escapular. O obstetra segura o tronco fetal com ambas as mãos e imprime uma rotação de 180 graus no sentido horário, provocando o desprendimento do braço anterior sob a sínfise púbica; em seguida, inverte o movimento rodando 180 graus no sentido anti-horário para exteriorizar o outro braço;",
+            "<strong>Manobra de Mauriceau-Smellie-Veit:</strong> Manobra padrão-ouro manual para o desprendimento da <strong>cabeça derradeira retida</strong>. O corpo fetal é colocado cavalgando sobre o antebraço do obstetra; o dedo indicador (ou indicador e médio) da mão inferior é introduzido na vagina até a boca ou fossa canina da maxila fetal para promover a flexão ativa da cabeça sobre o peito, enquanto dois dedos da mão superior do obstetra apoiam-se sobre os ombros fetais em forma de garfo (ao redor do pescoço) exercendo tração oblíqua inicial para baixo até que o suboccipício engrene sob o púbis, seguido de movimento curvo para cima;",
+            "<strong>Aplicação do Fórcipe de Piper:</strong> Quando as manobras manuais para a cabeça derradeira falham, o Fórcipe de Piper é aplicado enquanto um assistente eleva o corpo fetal envolvido em campo cirúrgico estéril, permitindo a tração simétrica sem tração cervical nociva."
+          ]
+        ]
+      ]
+    ],
+    [
+      "assinclitismo-mecanica-pelvica",
+      0,
+      [
+        [
+          "2",
+          "Assinclitismo: Sinclitismo vs. Assinclitismo Anterior e Posterior"
+        ],
+        [
+          "p",
+          "A descida do polo cefálico fetal através do estreito superior da bacia raramente ocorre de forma milimetricamente perpendicular. A inclinação lateral da cabeça fetal em relação aos diâmetros da pelve denomina-se assinclitismo."
+        ],
+        [
+          "3",
+          "Sinclitismo Fisiológico"
+        ],
+        [
+          "p",
+          "No <strong>sinclitismo</strong>, a sutura sagital fetal encontra-se exatamente equidistante do promontório sacral e da borda superior da sínfise púbica materna durante a descida. Ambos os ossos parietais fetais descem no mesmo plano horizontal e transpõem o estreito superior simultaneamente."
+        ],
+        [
+          "3",
+          "Assinclitismo Anterior (Oblíqua de Naegele)"
+        ],
+        [
+          "p",
+          "No <strong>assinclitismo anterior</strong> (manobra de Naegele), a sutura sagital fetal encontra-se inclinada e <strong>deslocada posteriormente em direção ao promontório sacral</strong>. Como consequência geométrica, o <strong>osso parietal anterior</strong> (voltado para a sínfise púbica) é o primeiro a descer e a ser tocado pelo examinador. É o tipo mais comum e favorável de assinclitismo, facilitando a passagem do polo cefálico em bacias platipeloides e ginecoides."
+        ],
+        [
+          "3",
+          "Assinclitismo Posterior (Oblíqua de Litzmann)"
+        ],
+        [
+          "p",
+          "No <strong>assinclitismo posterior</strong> (manobra de Litzmann), a sutura sagital fetal encontra-se inclinada e <strong>deslocada anteriormente em direção à sínfise púbica materna</strong>. Como consequência, o <strong>osso parietal posterior</strong> (voltado para o sacro) é o primeiro a descer e a ser tocado. O osso parietal anterior fica temporariamente aprisionado atrás do púbis. Trata-se de uma distócia mais severa e de pior prognóstico; se persistente e irredutível associada a dinâmica forte, configura parada da insinuação e exige cesariana."
+        ]
+      ]
+    ],
+    [
+      "episiotomia-tecnica-reparo",
+      0,
+      [
+        [
+          "2",
+          "Episiotomia Seletiva: Mediana vs. Médio-Lateral e Prevenção de Lacerações Graves"
+        ],
+        [
+          "p",
+          "A episiotomia consiste na secção cirúrgica intencional do períneo com tesoura de Mayo reta ou curva durante o coroamento vulvar para ampliação do canal de parto."
+        ],
+        [
+          "3",
+          "Abolição da Episiotomia de Rotina"
+        ],
+        [
+          "p",
+          "As evidências científicas modernas consolidadas pela OMS e FEBRASGO aboliram definitivamente a episiotomia profilática ou rotineira em nulíparas. A prática universal não previne incontinência urinária, não reduz o prolapso genital futuro e eleva significativamente as taxas de dor puerperal crônica, dispareunia e sangramento. A indicação moderna é <strong>estritamente seletiva</strong>, restrita a partos instrumentais complexos (fórcipe/vácuo), distócia de ombros com necessidade de manobras internas manuais ou sofrimento fetal agudo com períneo excessivamente rígido."
+        ],
+        [
+          "3",
+          "Comparação Técnica: Episiotomia Médio-Lateral vs Mediana"
+        ],
+        [
+          "t",
+          [
+            "Critério Comparativo",
+            "Episiotomia Mediana (Central)",
+            "Episiotomia Médio-Lateral (Recomendada no Brasil)"
+          ],
+          [
+            [
+              "Incisão e Direção",
+              "Incisão na linha média vertical da fúrcula em direção ao ânus",
+              "Incisão a partir da fúrcula com ângulo de <strong>45° a 60°</strong> em direção à tuberosidade isquiática"
+            ],
+            [
+              "Estruturas Seccionadas",
+              "Rafe mediana do corpo perineal",
+              "Músculos bulbocavernoso e transverso superficial do períneo"
+            ],
+            [
+              "Risco de Lesão Esfincteriana (OASIS)",
+              "<strong>MUITO ELEVADO</strong>; extensão fácil para esfíncter anal e reto (Graus 3 e 4)",
+              "<strong>MUITO MENOR</strong>; protege ativamente o complexo esfincteriano anal"
+            ],
+            [
+              "Sangramento e Dor Pós-Parto",
+              "Menor sangramento cirúrgico; reparo fácil; menor dor",
+              "Maior sangramento cirúrgico; dor pós-parto mais acentuada nos primeiros dias"
+            ],
+            [
+              "Cicatrização e Dispareunia",
+              "Excelente cicatrização anatômica cosmética",
+              "Cicatrização mais lenta; maior risco de fibrose e dispareunia inicial"
+            ],
+            [
+              "Recomendação Oficial",
+              "Proscrita na maioria dos serviços com parto instrumental",
+              "<strong>Técnica de escolha preferencial</strong> quando necessária"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "lesoes-plexo-braquial-auditoria",
+      0,
+      [
+        [
+          "2",
+          "Paralisia Braquial Obstétrica Perinatal: Duchenne-Erb vs. Klumpke e Aspectos Periciais"
+        ],
+        [
+          "p",
+          "A paralisia braquial obstétrica decorre da tração excessiva e estiramento ou avulsão das raízes nervosas do plexo braquial durante o nascimento, habitualmente no contexto de distócia de espáduas."
+        ],
+        [
+          "3",
+          "Diagnóstico Diferencial Clínico"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paralisia de Duchenne-Erb (Alta / Superior - C5, C6 e C7):</strong> Corresponde a <strong>mais de 80% a 90% dos casos</strong>. Acomete os músculos deltoide, bíceps braquial, braquial anterior e supinador. O membro superior acometido apresenta a atitude clássica do <strong>\"braço em gorjeta de garçom\" (porter's tip sign)</strong>: aduzido junto ao tronco, em extensão e rotação interna do ombro, com o antebraço pronado e o punho fletido. <strong>Achado neurológico reflexo fundamental:</strong> O <strong>reflexo de Moro é assimétrico ou ausente</strong> do lado lesado, porém o <strong>reflexo de preensão palmar está rigorosamente normal e preservado</strong> (pois as raízes de C8-T1 estão intactas);",
+            "<strong>Paralisia de Dejerine-Klumpke (Baixa / Inferior - C8 e T1):</strong> Muito mais rara (menos de 2% a 5% dos casos). Acomete a musculatura intrínseca da mão e flexores do punho. A mão assume aspecto de <strong>\"mão em garra\"</strong>. O reflexo de Moro está preservado, mas o <strong>reflexo de preensão palmar está completamente AUSENTE</strong>. Pode associar-se à <strong>Síndrome de Horner</strong> (ptose palpebral, miose pupilar, enoftalmia e anidrose facial unilateral) quando há avulsão da raiz de T1 com comprometimento das fibras simpáticas cervicais."
+          ]
+        ],
+        [
+          "3",
+          "Auditoria Médico-Legal na Distócia de Ombros"
+        ],
+        [
+          "p",
+          "A presença de paralisia braquial neonatal é o principal motivador de ações cíveis indenizatórias de erro médico em obstetrícia. Para ilidir a alegação de negligência ou imperícia e demonstrar a inevitabilidade biológica do evento, o prontuário deve comprovar:"
+        ],
+        [
+          "o",
+          [
+            "1. Ausência de tração descendente forçada sobre o polo cefálico no momento do desprendimento;",
+            "2. Registro minucioso do tempo decorrido entre a saída da cabeça e o corpo (idealmente &lt; 3 a 5 minutos);",
+            "3. Descrição sequencial precisa das manobras executadas em ordem de complexidade (McRoberts, Rubin I, Rubin II/Woods, Jacquemier);",
+            "4. Ausência de manobra de Kristeller (cuja anotação em prontuário gera presunção jurídica quase absoluta de culpa por dano corporal culposo)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "estudo-comparativo-tipos-forcipe-detalhado",
+      0,
+      [
+        [
+          "2",
+          "Comparativo Extensivo dos Modelos de Fórcipe: Mecânica, Anatomia e Riscos"
+        ],
+        [
+          "p",
+          "A correta seleção do modelo de fórcipe obstétrico é imperativa para evitar desfechos traumáticos fetais e maternos. O conhecimento das características anatômicas das colheres, hastes e articulações define a sua aplicação precisa."
+        ],
+        [
+          "3",
+          "Anatomia Comparativa das Colheres e Articulações"
+        ],
+        [
+          "t",
+          [
+            "Modelo de Fórcipe",
+            "Tipo de Articulação",
+            "Curvaturas das Colheres",
+            "Função Mecânica Principal",
+            "Indicação Clínica Clássica"
+          ],
+          [
+            [
+              "<strong>Simpson / Simpson-Braun</strong>",
+              "Fixa (inglesa / encaixe por entalhe cruzado)",
+              "Curvatura cefálica e pélvica bem acentuadas; colheres fenestradas",
+              "<strong>Tração pura</strong> no eixo da bacia",
+              "Cabeças fletidas e moldadas em variedades anteriores (OP, OEA, ODA)"
+            ],
+            [
+              "<strong>Kielland</strong>",
+              "Deslizante (permite correção de assinclitismo)",
+              "Sem curvatura pélvica significativa (haste reta); botão direcionador no cabo",
+              "<strong>Rotação e tração</strong>",
+              "Variedades transversas e posteriores persistentes no estreito médio"
+            ],
+            [
+              "<strong>Piper</strong>",
+              "Frouxa (haste flexível alongada)",
+              "Curvatura perineal para baixo; colheres fenestradas",
+              "<strong>Tração na cabeça derradeira</strong>",
+              "Parto pélvico assistido com cabeça retida após saída das escápulas"
+            ],
+            [
+              "<strong>Tarnier</strong>",
+              "Fixa com parafuso francês e trator móvel",
+              "Curvatura cefálica e pélvica; trator mecânico no cabo",
+              "<strong>Tração no eixo pélvico</strong>",
+              "Parto instrumental histórico no estreito superior (atualmente em desuso)"
+            ],
+            [
+              "<strong>Barton</strong>",
+              "Articulação deslizante com colher anterior articulada",
+              "Colher anterior com dobradiça que se flete sobre a sínfise",
+              "<strong>Rotação em bacia platipeloide</strong>",
+              "Variedade transversa pura em bacia com estreitamento ântero-posterior"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Traumatismo Craniofacial Fetal pelo Fórcipe: Diagnóstico Diferencial"
+        ],
+        [
+          "p",
+          "A aplicação do fórcipe pode produzir marcas compressivas temporárias ou lesões graves que devem ser diagnosticadas e diferenciadas imediatamente pelo pediatra e obstetra:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Marca de Pressão das Colheres:</strong> Eritema e edema dérmico fugaz na região malar e pré-auricular, sem significado patológico, regredindo em 24 a 48 horas;",
+            "<strong>Paralisia Facial Periférica Traumática:</strong> Resulta da compressão do tronco do nervo facial (VII par craniano) na emergência do forame estilomastoideo pela extremidade posterior de uma colher assimétrica ou mal articulada. Manifesta-se por assimetria do choro, incapacidade de fechar a pálpebra do lado acometido (lagoftalmia), apagamento do sulco nasolabial e desvio da comissura labial para o lado contralateral sadio. O prognóstico é favorável em &gt; 90% dos casos com resolução espontânea em algumas semanas por tratar-se habitualmente de neuropraxia;",
+            "<strong>Cefaloematoma:</strong> Coleção hemática subperiosteal delimitada pelas suturas cranianas (<strong>NÃO ultrapassa as linhas de sutura</strong>), de consistência flácida ou elástica, que surge horas após o parto e regride lentamente em semanas;",
+            "<strong>Bossa Serossanguínea (Caput Succedaneum):</strong> Edema serossanguinolento subcutâneo que <strong>ultrapassa livremente as linhas de sutura</strong>, de consistência amolecida com sinal do cacifo positivo, presente logo ao nascimento e com reabsorção rápida em 48 a 72 horas;",
+            "<strong>Hemorragia Subgaleal:</strong> Sangramento maciço no espaço subaponeurótico entre a aponeurose epicraniana (gálea aponeurótica) e o periósteo. Apresenta consistência em bolsa d'água flutuante, ultrapassa suturas, estende-se para a fronte e nuca e pode acumular mais de 50% da volemia neonatal, causando choque hemorrágico hipovolêmico e óbito. É a complicação mais temida do vácuo-extrator e de aplicações forçadas de fórcipe."
+          ]
+        ]
+      ]
+    ],
+    [
+      "cesariana-complicada-extracao-cabeca-impactada",
+      0,
+      [
+        [
+          "2",
+          "Manejo da Cabeça Fetal Impactada na Cesariana após Falha de Descida"
+        ],
+        [
+          "p",
+          "Um dos cenários cirúrgicos mais aterrorizantes para o obstetra ocorre durante a cesariana de emergência indicada após trabalho de parto prolongado no segundo período ou após tentativa frustrada de fórcipe, na qual a cabeça fetal encontra-se profundamente encravada no estreito médio e inferior da pelve materna."
+        ],
+        [
+          "3",
+          "Riscos Cirúrgicos e Armadilhas Anatômicas"
+        ],
+        [
+          "p",
+          "A tentativa intempestiva do cirurgião de introduzir a mão por baixo da calota fetal impactada no segmento inferior edemaciado acarreta invariavelmente a <strong>laceração lateral do segmento uterino</strong> com extensão para os vasos uterinos (artéria e veias uterinas), hematoma retroperitoneal expansivo no ligamento largo, laceração vesical e hemorragia exsanguinante."
+        ],
+        [
+          "3",
+          "Técnicas Reconhecidas para Desimpactação Segura"
+        ],
+        [
+          "o",
+          [
+            "<strong>Técnica do Empurrão Vaginal Reverso (Push Technique):</strong> Um assistente estéril posicionado entre as pernas da paciente introduz a mão enluvada na vagina e aplica pressão contínua e suave com a palma da mão ou dedos espalmados sobre o vértice fetal para empurrá-lo cranialmente para fora da pelve, enquanto o cirurgião abdominal aguarda a elevação para apreender a cabeça;",
+            "<strong>Técnica de Extração Pélvica Reversa / Puxo Podálico (Pull Technique ou Manobra de Patwardhan):</strong> O cirurgião ignora a cabeça fetal encravada no segmento, introduz a mão no fundo uterino, localiza os pés ou a pelve fetal e realiza a extração pélvica invertida, retirando primeiro os membros inferiores, o tronco e os ombros, e finalmente desprendendo a cabeça suavemente por tração cranial. Ensaios clínicos randomizados demonstram que a técnica podálica (pull) reduz significativamente as lacerações uterinas e a hemorragia em comparação com a técnica de empurrão vaginal;",
+            "<strong>Uso de Balão Descompressor Uterino Cefálico (Fetal Pillow):</strong> Dispositivo de silicone posicionado na vagina antes da incisão cirúrgica e insuflado com 180 mL de soro fisiológico, elevando a cabeça fetal em 3 a 4 cm no estreito superior antes da histerotomia."
+          ]
+        ]
+      ]
+    ],
+    [
+      "vicio-pelvico-pelvimetria-radiologica-mri",
+      0,
+      [
+        [
+          "2",
+          "Avaliação de Vícios Pélvicos e Métodos Modernos de Imagem"
+        ],
+        [
+          "p",
+          "Embora a pelvimetria clínica digital pelo toque vaginal permaneça como o método universalmente acessível no leito do parto, o avanço dos métodos diagnósticos por imagem permitiu compreender com precisão milimétrica a volumetria pélvica."
+        ],
+        [
+          "3",
+          "A Radiopelvimetria e a Tomografia Computadorizada (Classificação de Thoms)"
+        ],
+        [
+          "p",
+          "A radiopelvimetria clássica foi amplamente abandonada no pré-natal de rotina devido à radiação ionizante no concepto. Contudo, em casos selecionados de sequelas traumáticas graves da pelve (fraturas pélvicas prévias com calo ósseo deformante, osteíte ou cirurgias ortopédicas reconstrutoras com próteses metálicas), a Tomografia Computadorizada ou Ressonância Magnética (RMN) volumétrica sem radiação é indicada no terceiro trimestre para aferir os diâmetros e planejar a via de parto programada."
+        ],
+        [
+          "3",
+          "Índices Pelvimétricos Clássicos"
+        ],
+        [
+          "u",
+          [
+            "<strong>Índice do Estreito Superior de Mengert:</strong> Produto do diâmetro ântero-posterior pelo diâmetro transverso do estreito superior. Valores inferiores a 85% do padrão médio populacional associam-se a falha absoluta de descida em &gt; 90% das apresentações cefálicas a termo;",
+            "<strong>Deformidades Pélvicas Específicas:</strong> Pelve de Naegele (ausência congênita de uma asa sacral gerando bacia assimetricamente estreitada unilateralmente); Pelve de Robert (ausência bilateral das asas sacrais com estreitamento transversal extremo intransponível); e Pelve Raquítica (achatamento ântero-posterior severo com promontório projetado para a frente reduzindo a conjugata obstétrica para &lt; 8 cm)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "simulacao-treinamento-debriefing-distocia",
+      0,
+      [
+        [
+          "2",
+          "Simulação Realística, Debriefing e Protocolos de Equipe em Emergências Tocúrgicas"
+        ],
+        [
+          "p",
+          "A ocorrência de distócia de espáduas ou a necessidade de parto operatório urgente exige perfeita sincronia da equipe multiprofissional. Estudos prospectivos demonstram que a capacitação sistemática com simulação em manequins obstétricos de alta fidelidade reduz a incidência de lesão permanente do plexo braquial neonatal em mais de 70% e diminui drasticamente o tempo entre o desprendimento cefálico e o desprendimento do corpo."
+        ],
+        [
+          "3",
+          "O Papel do Líder e a Distribuição de Tarefas no HELPERR"
+        ],
+        [
+          "p",
+          "Assim que o Sinal da Tartaruga é identificado, o médico responsável deve assumir verbalmente a liderança da sala e designar funções imediatas em voz alta:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Líder Obstétrico:</strong> Permanece no comando do períneo, suspende os puxos da paciente, orienta a flexão das pernas e realiza a tração suave e as manobras internas (Rubin II, Woods, Jacquemier);",
+            "<strong>Assistente 1 (Enfermagem / Residente):</strong> Posiciona-se imediatamente na sínfise púbica materna e executa a manobra de Rubin I (pressão suprapúbica externa contínua ou rítmica de 30 a 60 segundos com o calcanhar da mão ou punho em direção oblíqua);",
+            "<strong>Assistentes 2 e 3 (Profissionais de Apoio):</strong> Seguram as pernas da paciente e realizam a manobra de McRoberts (hiperflexão e abdução dos membros inferiores até que os joelhos toquem a parede torácica ou axilas maternas);",
+            "<strong>Cronometrista / Anotador de Prontuário:</strong> Registra em voz alta o tempo decorrido a cada 30 segundos (30s, 60s, 90s, 120s), anotando no prontuário o minuto exato de cada manobra executada;",
+            "<strong>Equipe Pediátrica e Anestésica:</strong> O pediatra prepara a unidade de reanimação neonatal com aquecimento radiante, fonte de oxigênio e bolsa-valva-máscara; o anestesiologista posiciona-se na cabeceira da paciente para eventual anestesia geral de emergência ou relaxamento miometrial para Zavanelli."
+          ]
+        ],
+        [
+          "3",
+          "O Debriefing Pós-Evento e Comunicação Familiar"
+        ],
+        [
+          "p",
+          "Após a resolução da emergência, a equipe deve reunir-se para o <em>debriefing</em> técnico, revisando a linha do tempo, a integridade anatômica do canal de parto e a condição do neonato. É mandatório realizar uma conversa empática e detalhada com a puérpera e seus familiares, explicando a natureza imprevisível da distócia mecânica, as manobras empregadas para a preservação da vida do concepto e o plano de seguimento conjunto com a fisioterapia e neurologia pediátrica em caso de déficit motor transitório."
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-integradores",
+      0,
+      [
+        [
+          "2",
+          "13. Casos Clínicos Resolvidos de Distócias e Parto Instrumental"
+        ],
+        [
+          "3",
+          "Caso 1: Distócia de Espáduas com Resolução Sequencial pelo HELPERR"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Secundigesta diabética de 39 semanas com peso fetal estimado de 4.200 g. Desprendimento cefálico ocorre espontaneamente. Imediatamente após a saída da cabeça, o queixo fetal retrai-se contra o períneo (Sinal da Tartaruga) e os ombros não descem com tração suave axial. A equipe médica convocou ajuda imediatamente (H), suspendeu os esforços de puxo, avaliou a necessidade de ampliar o espaço com episiotomia (E) e executou a <strong>Manobra de McRoberts</strong> (hiperflexão e abdução das pernas sobre o abdome materno) concomitante à <strong>pressão suprapúbica externa com manobra de Rubin I</strong> (P). Após 20 segundos de pressão oblíqua, o ombro anterior desimpactou-se da sínfise púbica e o corpo desprendeu-se suavemente. Recém-nascido chorando, sem fraturas de clavícula e com motricidade simétrica dos membros superiores."
+        ],
+        [
+          "3",
+          "Caso 2: Parada de Descida por Variedade Transversa e Fórcipe de Kielland"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Primigesta de 24 anos com dilatação total de 10 cm há 2 horas e 30 minutos sob analgesia de parto. Feto em vértice insinuado no plano +2 de De Lee, fixo em variedade occipito-esquerda transversa (OET). Dinâmica excelente de 4 contrações em 10 minutos. FCF normal. Diagnosticada parada secundária da descida por ausência de rotação interna. <strong>Conduta:</strong> Preenchidos todos os requisitos para parto instrumental (colo 10 cm, bolsa rota, plano +2, bexiga vazia). Como se trata de variedade transversa que exige rotação de 90 graus para anterior (OP), o instrumento de escolha por obstetra experiente é o <strong>Fórcipe de Kielland</strong> (com articulação deslizante), realizando a rotação cefálica suave para OP seguida de tração no eixo pélvico com desprendimento de RN vigoroso."
+        ],
+        [
+          "3",
+          "Caso 3: Distócia de Ombros Refratária com Extração do Braço Posterior (Jacquemier)"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Parturiente obesa (IMC 38) com feto de 4.350 g apresenta distócia de ombros com Sinal da Tartaruga. A manobra de McRoberts e a pressão suprapúbica (Rubin I) foram tentadas por 60 segundos sem sucesso. As manobras rotacionais internas de Rubin II e Woods também não conseguiram deslocar a cintura escapular. FCF com bradicardia de 70 bpm pelo colapso de funículo. <strong>Conduta:</strong> O operador introduziu a mão enluvada ao longo da concavidade sacral da mãe até alcançar a fossa antecubital do braço posterior do concepto, fletiu o antebraço e varreu o membro sobre o peito e a face fetal, exteriorizando o braço posterior (<strong>Manobra de Jacquemier</strong>). Com a liberação do braço posterior, o diâmetro biacromial caiu de 12 cm para 9 cm, permitindo a rotação imediata e a expulsão completa do concepto em menos de 3 minutos de distócia total. RN reanimado com ventilação por pressão positiva, recuperando tono e choro ativo."
+        ],
+        [
+          "3",
+          "Caso 4: Contraindicação de Vácuo-Extrator em Prematuro de 33 Semanas"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> Multípara em trabalho de parto prematuro com 33 semanas e 2 dias atinge dilatação total de 10 cm com feto em vértice no plano +2 de De Lee. Durante o expulsivo, a cardiotocografia apresenta DIP 2 repetitivas com bradicardia sustentada de 80 bpm. O residente sugere a aplicação rápida de vácuo-extrator de silicone para extração imediata. <strong>Discussão e Conduta:</strong> A proposta do residente é <strong>absolutamente contraindicada</strong>. O uso de vácuo-extrator em concepto com menos de 34 semanas acarreta risco altíssimo de descolamento subaponeurótico com hemorragia subgaleal letal e fraturas cranianas. Com feto prematuro de 33 semanas no plano +2 de De Lee e sofrimento agudo, o instrumento de escolha para abreviar o parto por via vaginal é o <strong>Fórcipe de Simpson com tração suave</strong> associado à episiotomia profilática para proteção do polo cefálico frágil."
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia",
+      0,
+      [
+        [
+          "2",
+          "14. Questões de Concursos e Residência Médica com Comentários Exaustivos"
+        ],
+        [
+          "3",
+          "Questão 1: Requisitos Obrigatórios do Fórcipe Obstétrico (ENARE / INEP)"
+        ],
+        [
+          "p",
+          "Para a aplicação segura do fórcipe de Simpson em um parto operatório vaginal, qual condição é absolutamente obrigatória?"
+        ],
+        [
+          "o",
+          [
+            "A) Colo uterino com 8 cm de dilatação em multíparas.",
+            "B) Apresentação cefálica fletida no plano +2 de De Lee com dilatação completa de 10 cm e membranas rotas.",
+            "C) Apresentação em plano 0 de De Lee em variedade transversa pura.",
+            "D) Bolsa íntegra tensa para amortecer a tração das colheres.",
+            "E) Presença de macrossomia fetal com suspeita de desproporção cefalopélvica absoluta."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A aplicação de fórcipe exige dilatação total (10 cm), membranas rotas, altura &ge; +2 de De Lee, pelve proporcional e apresentação fletida de vértice. Aplicar em plano alto ou com colo incompleto causa graves lacerações e hematomas."
+        ],
+        [
+          "3",
+          "Questão 2: Fórcipe de Escolha para Cabeça Derradeira no Parto Pélvico (USP)"
+        ],
+        [
+          "p",
+          "Em um parto vaginal em apresentação pélvica assistido no centro obstétrico, após o desprendimento do tronco e dos braços fetais, a cabeça do concepto fica retida na pelve materna sem progredir com as manobras clássicas de Bracht e Mauriceau. Qual fórcipe obstétrico possui desenho específico e indicação consagrada para desprendimento da cabeça derradeira?"
+        ],
+        [
+          "o",
+          [
+            "A) Fórcipe de Kielland com articulação deslizante.",
+            "B) Fórcipe de Simpson-Braun com articulação fixa.",
+            "C) Fórcipe de Piper com hastes longas e curvatura perineal invertida.",
+            "D) Fórcipe de Tarnier com trator móvel.",
+            "E) Vácuo-extrator de silicone flexível."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>O Fórcipe de Piper foi desenhado especificamente com curvatura perineal para baixo e hastes alongadas para desprendimento da cabeça derradeira no parto pélvico."
+        ],
+        [
+          "3",
+          "Questão 3: Sequência Inicial na Distócia de Ombros (UNICAMP)"
+        ],
+        [
+          "p",
+          "Imediatamente após a exteriorização do polo cefálico de um feto macrossômico, observa-se o Sinal da Tartaruga, com retração do queixo materno e falha de desprendimento do ombro anterior após tração axial suave. Qual é o primeiro passo postural do protocolo HELPERR a ser executado?"
+        ],
+        [
+          "o",
+          [
+            "A) Manobra de Kristeller com pressão forte no fundo uterino.",
+            "B) Manobra de McRoberts (hiperflexão e abdução das coxas maternas sobre o abdome).",
+            "C) Manobra de Zavanelli com cesariana imediata.",
+            "D) Fratura intencional de clavícula com bisturi.",
+            "E) Manobra de Woods com rotação de 360 graus."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A manobra de McRoberts aplana a coluna sacral e roda a sínfise púbica para cima, resolvendo mais de 60% das distócias de ombro quando associada à pressão suprapúbica (Rubin I). Kristeller é proscrito!"
+        ],
+        [
+          "3",
+          "Questão 4: Contraindicação Absoluta ao Vácuo-Extrator (ENARE)"
+        ],
+        [
+          "p",
+          "Qual das seguintes situações clínicas contraindica formalmente o uso do vácuo-extrator obstétrico para auxílio no período expulsivo?"
+        ],
+        [
+          "o",
+          [
+            "A) Nuliparidade sob analgesia de parto.",
+            "B) Gestação pré-termo com idade gestacional inferior a 34 semanas.",
+            "C) Colo com 10 cm de dilatação e feto no plano +3 de De Lee.",
+            "D) Bolsa rota há mais de 2 horas com líquido claro.",
+            "E) Mãe cardiopata com contraindicação a esforços de puxo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>Em fetos &lt; 34 semanas, o vácuo causa descolamento do escalpo com hemorragia subgaleal maciça potencialmente letal devido à fragilidade vascular e óssea."
+        ],
+        [
+          "3",
+          "Questão 5: Morfologia da Bacia com Pior Prognóstico Obstétrico (SCMSP)"
+        ],
+        [
+          "p",
+          "Segundo a classificação pelvimétrica de Caldwell-Moloy, qual tipo pélvico apresenta estreito superior triangular em cunha, espinhas ciáticas salientes, ângulo subpúbico estreito (&lt; 90°) e o pior prognóstico para o parto vaginal?"
+        ],
+        [
+          "o",
+          [
+            "A) Pelve Ginecoide.",
+            "B) Pelve Antropoide.",
+            "C) Pelve Platipeloide.",
+            "D) Pelve Androide.",
+            "E) Pelve Assimétrica de Naegele."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa D.</strong><br>A bacia androide mimetiza a pelve masculina, com afunilamento em cunha e espinhas ciáticas proeminentes, apresentando as maiores taxas de distócia e cesárea."
+        ],
+        [
+          "3",
+          "Questão 6: Manobra Rotacional Interna de Woods (USP-RP)"
+        ],
+        [
+          "p",
+          "Durante o manejo de uma distócia de espáduas refratária à manobra de McRoberts e pressão suprapúbica, o obstetra decide realizar manobras rotacionais internas. Em que consiste especificamente a Manobra de Woods (manobra do parafuso)?"
+        ],
+        [
+          "o",
+          [
+            "A) Aplicação de fórcipe de rotação de Kielland no abdome materno.",
+            "B) Pressão exercida com dois dedos na face anterior do ombro posterior fetal, rodando-o em 180 graus no sentido dos ponteiros do relógio.",
+            "C) Tração forte para baixo da cabeça fetal em ângulo de 90 graus com a coluna.",
+            "D) Empurrão da cabeça fetal de volta para o útero.",
+            "E) Compressão do fundo uterino com o antebraço do obstetra."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A manobra de Woods clássica aplica força sobre a face anterior do ombro posterior para rodar a cintura escapular como um parafuso, liberando o ombro anterior impactado."
+        ],
+        [
+          "3",
+          "Questão 7: Fórcipe de Escolha para Rotações Médias em Variedade Transversa (UERJ)"
+        ],
+        [
+          "p",
+          "Paciente no período expulsivo com parada da descida no plano +2 de De Lee em variedade transversa fixa (OET). O obstetra experiente decide aplicar fórcipe para realizar a rotação interna da apresentação para anterior. O modelo de fórcipe mais apropriado é:"
+        ],
+        [
+          "o",
+          [
+            "A) Fórcipe de Simpson.",
+            "B) Fórcipe de Kielland.",
+            "C) Fórcipe de Piper.",
+            "D) Fórcipe de Barton.",
+            "E) Fórcipe de Tarnier com trator fixo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>O Fórcipe de Kielland possui articulação deslizante e perfil plano sem curvatura pélvica acentuada, sendo o modelo exclusivo de rotação por excelência."
+        ],
+        [
+          "3",
+          "Questão 8: Manobra de Extração do Braço Posterior de Jacquemier (UNIFESP)"
+        ],
+        [
+          "p",
+          "Qual é a manobra obstétrica na qual o examinador introduz a mão profundamente até a fossa antecubital fetal posterior, flete o antebraço e extrai o membro superior posterior varrendo a face fetal para resolver a distócia de ombros?"
+        ],
+        [
+          "o",
+          [
+            "A) Manobra de McRoberts.",
+            "B) Manobra de Rubin I.",
+            "C) Manobra de Jacquemier.",
+            "D) Manobra de Zavanelli.",
+            "E) Manobra de Gaskin."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>A manobra de Jacquemier extrai o braço posterior, reduzindo o diâmetro biacromial para o diâmetro axilo-acromial e desfazendo a impactação escapular."
+        ],
+        [
+          "3",
+          "Questão 9: Definição da Manobra de Zavanelli (SURCE)"
+        ],
+        [
+          "p",
+          "A manobra de Zavanelli é uma técnica heroica de resgate extremo na distócia de ombros irredutível. Seu procedimento baseia-se em:"
+        ],
+        [
+          "o",
+          [
+            "A) Fratura cirúrgica bilateral das clavículas sob anestesia geral.",
+            "B) Flexão e reposicionamento digital da cabeça fetal de volta para a cavidade uterina através da vagina, seguida de cesariana de emergência imediata.",
+            "C) Secção rápida da cartilagem da sínfise púbica com bisturi.",
+            "D) Aplicação de fórcipe de Simpson com tração máxima por dois operadores.",
+            "E) Aspiração transcraniana do líquor fetal por cefalocentese."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A manobra de Zavanelli inverte os tempos do parto, recolocando o polo cefálico de volta no interior do útero grávido para permitir o nascimento cirúrgico por cesariana."
+        ],
+        [
+          "3",
+          "Questão 10: Classificação de Lesão Perineal de Grau 3b (AMP)"
+        ],
+        [
+          "p",
+          "Durante o desprendimento fetal por parto instrumental com fórcipe, ocorre uma laceração perineal que envolve a pele, a musculatura do corpo perineal e mais de 50% da espessura do Esfíncter Anal Externo (EAE), mantendo o Esfíncter Anal Interno (EAI) e a mucosa retal íntegros. Como essa lesão é classificada segundo os critérios da RCOG e Sultan?"
+        ],
+        [
+          "o",
+          [
+            "A) Laceração perineal de 2º grau.",
+            "B) Laceração perineal de 3º grau tipo 3a.",
+            "C) Laceração perineal de 3º grau tipo 3b.",
+            "D) Laceração perineal de 3º grau tipo 3c.",
+            "E) Laceração perineal de 4º grau."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>Classificação de Sultan:<br>• Grau 3a: &lt; 50% do EAE;<br>• Grau 3b: &gt; 50% do EAE;<br>• Grau 3c: lesão do EAE + lesão do EAI;<br>• Grau 4: acometimento da mucosa retal."
+        ],
+        [
+          "3",
+          "Questão 11: Distócia por Apresentação de Fronte (UNIFESP)"
+        ],
+        [
+          "p",
+          "Multípara com 39 semanas de gestação em trabalho de parto na fase ativa é avaliada pelo obstetra. Ao toque vaginal, identifica-se dilatação de 6 cm, bolsa rota com líquido claro, palpa-se a raiz do nariz (glabela) e a sutura metópica como pontos de referência no centro da bacia. O occipício e o mento não são palpáveis. Qual é a apresentação fetal, o diâmetro de insinuação e a conduta recomendada?"
+        ],
+        [
+          "o",
+          [
+            "A) Apresentação de vértice; diâmetro suboccipitobregmático de 9,5 cm; aguardar parto normal espontâneo.",
+            "B) Apresentação defletida de 1º grau; diâmetro occipitofrontal de 12 cm; aplicar vácuo-extrator de alívio.",
+            "C) Apresentação defletida de 2º grau (fronte); diâmetro occipitomentoniano de 13,5 cm; indicação de cesariana por impossibilidade mecânica de parto vaginal a termo.",
+            "D) Apresentação defletida de 3º grau (face); diâmetro submentobregmático de 9,5 cm; manobra de versão externa.",
+            "E) Apresentação pélvica modo pés; indicação de manobra de Bracht."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>A apresentação de fronte (deflexão de 2º grau) apresenta a glabela como ponto anatômico e oferece o diâmetro occipitomentoniano de 13,5 cm, que ultrapassa todos os diâmetros da pelve feminina a termo, sendo o parto vaginal impossível e a cesariana obrigatória."
+        ],
+        [
+          "3",
+          "Questão 12: Manobra de Gaskin e Posição em Quatro Apoios (SCMSP)"
+        ],
+        [
+          "p",
+          "Na distócia de espáduas refratária às manobras de McRoberts e pressão suprapúbica, qual manobra postural consiste em colocar a parturiente na posição de quatro apoios (mãos e joelhos apoiados na cama de parto) para ampliar os diâmetros pélvicos e facilitar o desprendimento do ombro posterior?"
+        ],
+        [
+          "o",
+          [
+            "A) Manobra de Zavanelli.",
+            "B) Manobra de Gaskin.",
+            "C) Manobra de Jacquemier.",
+            "D) Manobra de Woods.",
+            "E) Manobra de Rubin II."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A Manobra de Gaskin (all fours) utiliza a gravidade e o movimento da bacia em quatro apoios para liberar a impactação escapular com segurança e rapidez."
+        ],
+        [
+          "3",
+          "Questão 13: Diagnóstico e Fisiopatologia da Paralisia de Dejerine-Klumpke (UERJ)"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo após parto difícil com distócia de espáduas apresenta motricidade do braço e antebraço preservada, reflexo de Moro simétrico e normal, porém com deformidade em garra da mão, reflexo de preensão palmar completamente ausente e presença de ptose palpebral e miose ipsilateral (Síndrome de Horner). Qual é o diagnóstico neurológico?"
+        ],
+        [
+          "o",
+          [
+            "A) Paralisia de Duchenne-Erb por lesão de C5 e C6.",
+            "B) Paralisia de Dejerine-Klumpke por avulsão das raízes de C8 e T1 com acometimento da cadeia simpática cervical.",
+            "C) Paralisia cerebral espástica congênita.",
+            "D) Hemorragia subgaleal traumática compressiva.",
+            "E) Fratura diafisária de úmero sem lesão neurológica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A lesão das raízes inferiores do plexo braquial (C8-T1) caracteriza a Paralisia de Dejerine-Klumpke (mão em garra, ausência de preensão palmar e Síndrome de Horner por comprometimento simpático de T1)."
+        ],
+        [
+          "3",
+          "Questão 14: Manejo Cirúrgico da Cabeça Impactada na Cesariana (UNICAMP)"
+        ],
+        [
+          "p",
+          "Durante uma cesariana indicada por parada de descida no segundo período após 3 horas de puxos com feto no plano +1 de De Lee, o cirurgião realiza a histerotomia segmentar transversa e constata que a cabeça fetal está profundamente impactada no estreito médio da pelve materna, não sendo possível insinuar a mão por baixo do polo cefálico. A conduta cirúrgica recomendada para evitar lacerações vasculares graves é:"
+        ],
+        [
+          "o",
+          [
+            "A) Forçar a alavanca com espátula metálica cortante sobre a bexiga materna.",
+            "B) Solicitar a um assistente estéril que empurre a cabeça fetal suavemente pela vagina para cima (Push technique) ou optar pela técnica de extração podálica invertida de Patwardhan (Pull technique).",
+            "C) Fechar a histerotomia e abandonar a cirurgia.",
+            "D) Injetar ocitocina diretamente no miométrio para forçar a cabeça para fora.",
+            "E) Realizar manobra de Kristeller vigorosa no tórax materno."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A técnica de empurrão vaginal reverso (push) ou a extração pélvica invertida (pull / manobra de Patwardhan) são os métodos seguros consagrados para evitar lacerações do segmento uterino e vasos uterinos."
+        ],
+        [
+          "3",
+          "Questão 15: Manobra de Rubin II vs Manobra de Woods (USP-RP)"
+        ],
+        [
+          "p",
+          "Na distócia de ombros, as manobras rotacionais internas visam alterar o diâmetro biacromial para um diâmetro oblíquo mais favorável da bacia materna. A respeito da diferença biomecânica precisa entre a Manobra de Rubin II e a Manobra de Woods, assinale a opção CORRETA:"
+        ],
+        [
+          "o",
+          [
+            "A) Rubin II aplica pressão na face anterior do ombro anterior, abduzindo os ombros; Woods aplica pressão no occipício fetal.",
+            "B) Rubin II aplica pressão com dois dedos na face posterior do ombro anterior fetal, promovendo a adução de ambos os ombros e reduzindo o diâmetro biacromial; já a manobra de Woods clássica aplica pressão na face anterior do ombro posterior, rodando a cintura escapular em saca-rolhas.",
+            "C) Ambas as manobras são executadas externamente através da parede abdominal materna.",
+            "D) A manobra de Woods é exclusiva para a cabeça derradeira no parto pélvico.",
+            "E) Rubin II só pode ser realizada após a fratura deliberada de ambas as clavículas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>A Manobra de Rubin II aduz os ombros empurrando a face posterior do ombro anterior para a frente. A Manobra de Woods (do parafuso) atua no ombro posterior empurrando sua face anterior para rodar o tronco."
+        ],
+        [
+          "3",
+          "Questão 16: Anel de Bandl e Iminência de Rotura Uterina (ENARE)"
+        ],
+        [
+          "p",
+          "Durante a condução de um trabalho de parto obstruído por desproporção cefalopélvica não diagnosticada em multípara recebendo ocitocina, o médico palpa uma depressão anelar transversa visível e palpável no abdome materno na altura da cicatriz umbilical, com os ligamentos redondos retesados e espessados (Sinal de Frommel) e a paciente referindo dor extrema em pontada. Esse quadro semiológico clássico representa:"
+        ],
+        [
+          "o",
+          [
+            "A) Distócia funcional por inversão de gradiente.",
+            "B) Síndrome de Bandl-Frommel, indicativa de iminência de rotura uterina por distócia mecânica obstrutiva grave.",
+            "C) Apendicite aguda perfurada no terceiro trimestre.",
+            "D) Descolamento prematuro de placenta com útero de Couvelaire incipiente.",
+            "E) Falso trabalho de parto por contrações de Braxton-Hicks."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>O anel de Bandl (limite entre o corpo espessado hipertrófico e o segmento inferior afilado em bexiga de borracha) associado ao estiramento dos ligamentos redondos (sinal de Frommel) é a clássica Síndrome de Bandl-Frommel, patognomônica de iminência de rotura uterina por obstrução mecânica intransponível. A conduta é tocolítico imediato e cesariana urgente."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências"
+        ],
+        [
+          "p",
+          "1. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 154: Operative Vaginal Delivery</em>. Obstet Gynecol, 2015 (reaffirmed 2023); 126(5):e56-e65. https://doi.org/10.1097/AOG.0000000000001147"
+        ],
+        [
+          "p",
+          "2. American College of Obstetricians and Gynecologists (ACOG). <em>Practice Bulletin No. 178: Shoulder Dystocia</em>. Obstet Gynecol, 2017 (reaffirmed 2023); 129(5):e123-e134. https://doi.org/10.1097/AOG.0000000000002043"
+        ],
+        [
+          "p",
+          "3. Royal College of Obstetricians and Gynaecologists (RCOG). <em>Operative Vaginal Delivery</em>. Green-top Guideline No. 26. Londres: RCOG, 2020."
+        ],
+        [
+          "p",
+          "4. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). <em>Distócia de Ombros e Parto Instrumental</em>. Manual de Orientação FEBRASGO, 2023."
+        ],
+        [
+          "p",
+          "5. Sultan AH, Kettle C. <em>Perineal and Anal Sphincter Trauma: Diagnosis and Management</em>. Londres: Springer, 2007. https://doi.org/10.1007/978-1-84628-504-2"
+        ],
+        [
+          "p",
+          "6. Caldwell WE, Moloy HC. <em>Anatomical variations in the female pelvis and their effect in labor with a suggested classification</em>. Am J Obstet Gynecol, 1933; 26(4):479-505."
+        ]
+      ]
+    ]
+  ]
+}

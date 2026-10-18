@@ -1,0 +1,1266 @@
+{
+  "v": 2,
+  "s": "apendicite-aguda",
+  "t": "Apendicite Aguda",
+  "p": "Tratado completo de Apendicite Aguda para concursos de Residência Médica e ENAMED: anatomia cirúrgica e variações topográficas do apêndice cecal (retrocecal, pélvico, subcecal, pré e pós-ileal); fisiopatologia da obstrução mecânica intraluminal por hiperplasia linfoide (60% em jovens) e fecalito/apendicolito (35% em adultos), corpos estranhos, parasitas (Enterobius vermicularis, Ascaris lumbricoides) e tumores carcinoides neuroendócrinos e adenocarcinoma; as 4 fases histopatológicas evolutivas (edematosa/catarral, flegmonosa/supurada, gangrenosa/necrosante e perfurada); cronologia clássica de Murphy e anorexia como sintoma cardinal; semiologia de alta sensibilidade: ponto de McBurney, sinais de Blumberg, Rovsing, Psoas, Obturador, Dunphy e Lapinsky; escore de Alvarado e escore AIR; propedêutica armada com USG (critérios de compressão graduada, diâmetro > 6 mm e sombra acústica) e TC multislice de abdome total com contraste IV; apendicectomia videolaparoscópica como padrão-ouro cirúrgico vs via aberta; manejo do plastrão apendicular bloqueado com antibioticoterapia venosa, drenagem percutânea de coleções e apendicectomia de intervalo; regimes de antibioticoprofilaxia com cefazolina + metronidazol; 4 casos clínicos estruturados e questões de prova comentadas alternativa por alternativa.",
+  "d": "Tratado completo de Apendicite Aguda para concursos de Residência Médica e ENAMED: anatomia cirúrgica e variações topográficas do apêndice cecal (retrocecal, pélvico, subcecal, pré e pós-ileal); fisiopatologia da obstrução mecânica intraluminal por hiperplasia linfoide (60% em jovens) e fecalito/apendicolito (35% em adultos), corpos estranhos, parasitas (Enterobius vermicularis, Ascaris lumbricoides) e tumores carcinoides neuroendócrinos e adenocarcinoma; as 4 fases histopatológicas evolutivas (edematosa/catarral, flegmonosa/supurada, gangrenosa/necrosante e perfurada); cronologia clássica de Murphy e anorexia como sintoma cardinal; semiologia de alta sensibilidade: ponto de McBurney, sinais de Blumberg, Rovsing, Psoas, Obturador, Dunphy e Lapinsky; escore de Alvarado e escore AIR; propedêutica armada com USG (critérios de compressão graduada, diâmetro > 6 mm e sombra acústica) e TC multislice de abdome total com contraste IV; apendicectomia videolaparoscópica como padrão-ouro cirúrgico vs via aberta; manejo do plastrão apendicular bloqueado com antibioticoterapia venosa, drenagem percutânea de coleções e apendicectomia de intervalo; regimes de antibioticoprofilaxia com cefazolina + metronidazol; 4 casos clínicos estruturados e questões de prova comentadas alternativa por alternativa.",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral e Urgências Abdominais",
+  "h": [
+    "Apostila LURIA",
+    "Apendicite Aguda",
+    "Tratado completo de Apendicite Aguda para concursos de Residência Médica e ENAMED: anatomia cirúrgica e variações topográficas do apêndice cecal (retrocecal, pélvico, subcecal, pré e pós-ileal); fisiopatologia da obstrução mecânica intraluminal por hiperplasia linfoide (60% em jovens) e fecalito/apendicolito (35% em adultos), corpos estranhos, parasitas (Enterobius vermicularis, Ascaris lumbricoides) e tumores carcinoides neuroendócrinos e adenocarcinoma; as 4 fases histopatológicas evolutivas (edematosa/catarral, flegmonosa/supurada, gangrenosa/necrosante e perfurada); cronologia clássica de Murphy e anorexia como sintoma cardinal; semiologia de alta sensibilidade: ponto de McBurney, sinais de Blumberg, Rovsing, Psoas, Obturador, Dunphy e Lapinsky; escore de Alvarado e escore AIR; propedêutica armada com USG (critérios de compressão graduada, diâmetro > 6 mm e sombra acústica) e TC multislice de abdome total com contraste IV; apendicectomia videolaparoscópica como padrão-ouro cirúrgico vs via aberta; manejo do plastrão apendicular bloqueado com antibioticoterapia venosa, drenagem percutânea de coleções e apendicectomia de intervalo; regimes de antibioticoprofilaxia com cefazolina + metronidazol; 4 casos clínicos estruturados e questões de prova comentadas alternativa por alternativa.",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral e Urgências Abdominais",
+      "Tema: Apendicite Aguda"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "anatomia-e-epidemiologia-apendice",
+      "1. Anatomia Cirúrgica, Posições do Apêndice e Epidemiologia"
+    ],
+    [
+      "fisiopatologia-obstrucao-luminal",
+      "2. Fisiopatologia da Obstrução Luminal e Cascata Isquêmica"
+    ],
+    [
+      "fases-evolutivas-histopatologicas",
+      "3. As Quatro Fases Evolutivas Histopatológicas da Apendicite Aguda"
+    ],
+    [
+      "manifestacoes-clinicas-e-murphy",
+      "4. Manifestações Clínicas e a Cronologia Clássica de Murphy"
+    ],
+    [
+      "semiologia-completa-e-manobras-especiais",
+      "5. Semiologia Completa e Manobras Especiais (Blumberg, Rovsing, Psoas, Obturador, Dunphy e Lapinsky)"
+    ],
+    [
+      "estratificacao-alvarado-e-air-score",
+      "6. Estratificação de Risco Clínico e o Escore de Alvarado / Escore AIR"
+    ],
+    [
+      "diagnostico-por-imagem-usg-tc-rm",
+      "7. Diagnóstico por Imagem: Ultrassonografia, Tomografia Computadorizada e Ressonância Magnética"
+    ],
+    [
+      "diagnosticos-diferenciais-por-faixa-etaria",
+      "8. Diagnósticos Diferenciais por Faixa Etária e Sexo"
+    ],
+    [
+      "tratamento-cirurgico-laparoscopia-vs-aberta",
+      "9. Tratamento Cirúrgico: Apendicectomia Videolaparoscópica vs Laparotomia Aberta"
+    ],
+    [
+      "apendicite-complicada-e-plastrao",
+      "10. Apendicite Complicada, Plastrão Apendicular e Apendicectomia de Intervalo"
+    ],
+    [
+      "antibioticoprofilaxia-e-terapeutica",
+      "11. Antibioticoprofilaxia e Antibioticoterapia Terapêutica"
+    ],
+    [
+      "casos-clinicos-estruturados-apendicite",
+      "12. Casos Clínicos Estruturados e Discussões Práticas Baseadas em Evidências"
+    ],
+    [
+      "questoes-comentadas-residencia-apendicite",
+      "13. Questões Comentadas de Residência Médica e Revalida/ENAMED"
+    ],
+    [
+      "pontos-chave-enamed-apendicite",
+      "14. Pontos de Alto Rendimento e Diretrizes Práticas de Memorização para o ENAMED"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "anatomia-e-epidemiologia-apendice",
+      0,
+      [
+        [
+          "2",
+          "1. Anatomia Cirúrgica, Posições do Apêndice e Epidemiologia"
+        ],
+        [
+          "3",
+          "Embriologia e Anatomia Cirúrgica do Apêndice Vermiforme"
+        ],
+        [
+          "p",
+          "O apêndice cecal (ou vermiforme) é um divertículo tubular verdadeiro originado na confluência das três tênias cólicas (tênia anterior livre, tênia omental e tênia mesocólica) na porção póstero-medial do ceco, aproximadamente 2 a 3 cm abaixo da válvula ileocecal. Seu comprimento varia comumente entre 6 e 10 cm (podendo atingir de 1 a 25 cm), com diâmetro externo normal variando entre 4 e 6 mm e um lúmen estreito de apenas 1 a 3 mm."
+        ],
+        [
+          "p",
+          "A vascularização arterial é fornecida pela <strong>artéria apendicular</strong>, um ramo terminal da artéria ileocólica (ramo da artéria mesentérica superior). A artéria apendicular trafega no interior do mesoapêndice — uma prega peritoneal triangular derivada do mesentério do íleo terminal. Trata-se de uma <strong>artéria terminal funcional sem circulação colateral significativa</strong>; qualquer compressão extrínseca ou trombose infecciosa da artéria apendicular acarreta isquemia transmural precoce e necrose tecidual rápida, predominantemente na borda antimesentérica do terço distal do apêndice."
+        ],
+        [
+          "3",
+          "Variações Anatômicas de Posição da Ponta Apendicular"
+        ],
+        [
+          "p",
+          "Enquanto a base do apêndice cecal é anatomicamente fixa e constante (localizada no ponto de convergência das três tênias cólicas na parede do ceco), a sua ponta é livre e altamente móvel, podendo assumir diferentes orientações no interior da cavidade peritoneal e retroperitônio. O conhecimento dessas variações anatômicas é essencial para correlacionar a semiologia física e entender as apresentações clínicas atípicas:"
+        ],
+        [
+          "t",
+          [
+            "Posição Anatômica da Ponta",
+            "Frequência Relativa na População",
+            "Particularidades Clínicas e Manobras Semiológicas Específicas"
+          ],
+          [
+            [
+              "<strong>Retrocecal (Ascendente)</strong>",
+              "<strong>60% a 65%</strong> (a mais frequente de todas)",
+              "O apêndice situa-se atrás do ceco, podendo ser intraperitoneal ou verdadeiramente retroperitoneal fixo. A dor anterior na fossa ilíaca direita pode ser discreta ou tardia, com ausência de descompressão dolorosa anterior evidente. O paciente queixa-se de dor lombar baixa ou no flanco direito. <strong>Sinal do Psoas positivo</strong> por atrito com o músculo psoas maior retroperitoneal."
+            ],
+            [
+              "<strong>Pélvica (Descendente)</strong>",
+              "<strong>25% a 30%</strong> (segunda mais comum)",
+              "A ponta apendicular repousa sobre a borda da pelve verdadeira, adjacente à bexiga, reto, ureter direito e, nas mulheres, ao ovário e trompa direita. Manifesta-se por sintomas urinários (disúria, polaciúria, piúria estéril no EAS por irritação vesical adjacente), tenesmo retal e diarreia. <strong>Sinal do Obturador positivo</strong>; grande dor ao toque retal ou vaginal bimanual."
+            ],
+            [
+              "<strong>Subcecal</strong>",
+              "2% a 3%",
+              "Localiza-se imediatamente abaixo do polo inferior do ceco na fossa ilíaca direita. Apresentação clássica típica no ponto de McBurney."
+            ],
+            [
+              "<strong>Pré-ileal e Pós-ileal</strong>",
+              "1% a 2%",
+              "A ponta cruza anterior ou posteriormente o íleo terminal. A irritação do íleo adjacente promove hipermotilidade reflexa, apresentando-se frequentemente com vômitos precoces e diarreia aquosa que simula gastroenterite aguda viral."
+            ],
+            [
+              "<strong>Mesocílica / Medial</strong>",
+              "1%",
+              "Ponta voltada medialmente em direção às alças de intestino delgado e promontório sacral, promovendo íleo paralítico regional precoce."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Epidemiologia e Fatores de Risco"
+        ],
+        [
+          "p",
+          "A apendicite aguda é a <strong>causa mais comum de abdome agudo cirúrgico no mundo</strong>, acometendo aproximadamente 7% a 8% da população global ao longo da vida (risco cumulativo de 8,6% para o sexo masculino e 6,7% para o feminino). A incidência máxima ocorre na segunda e terceira décadas de vida (entre os <strong>10 e 30 anos de idade</strong>), sendo comparativamente rara em lactentes menores de 2 anos (graças ao formato infundibular amplo do apêndice nessa faixa) e crescendo novamente em incidência e letalidade na população idosa em virtude de diagnósticos tardios."
+        ]
+      ]
+    ],
+    [
+      "fisiopatologia-obstrucao-luminal",
+      0,
+      [
+        [
+          "2",
+          "2. Fisiopatologia da Obstrução Luminal e Cascata Isquêmica"
+        ],
+        [
+          "3",
+          "O Evento Primário Desencadeante: Obstrução da Luz Apendicular"
+        ],
+        [
+          "p",
+          "A fisiopatologia da apendicite aguda segue uma sequência cronológica e biológica universal iniciada, em mais de 90% dos casos, pela <strong>obstrução mecânica da luz apendicular</strong>. As etiologias responsáveis por essa oclusão luminal variam de forma nítida de acordo com a faixa etária:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hiperplasia dos Folículos Linfoides Submucosos (60% dos casos):</strong> É a causa etiológica primordial em <em>crianças, adolescentes e adultos jovens</em>. O apêndice cecal é rico em tecido linfoide associado à mucosa (MALT / folículos linfoides de Stöhr), que atinge o pico de volume imunológico entre os 10 e 20 anos. Episódios prévios de infecções virais sistêmicas ou gastrointestinais (ex: gastroenterites por rotavírus ou adenovírus, infecções de vias aéreas superiores, mononucleose infecciosa e sarampo) deflagram hiperplasia proliferativa intensa do tecido linfoide da submucosa, que se projeta para a luz e oblitera o lúmen apendicular estreito;",
+            "<strong>Fecalito ou Apendicolito (30% a 35% dos casos):</strong> É a causa prevalente em <em>adultos e idosos</em>. Consiste na precipitação concêntrica de fezes desidratadas ao redor de um núcleo de muco inorgânico e sais de cálcio e magnésio, formando uma concreção pétrea endurecida que impacta no colo ou terço proximal do apêndice. A presença de apendicolito calcificado correlaciona-se com evolução mais rápida para gangrena e perfuração precoce;",
+            "<strong>Corpos Estranhos Ingeridos (1% a 2%):</strong> Sementes de frutas (goiaba, melancia, tomate), espinhas de peixe, fragmentos de ossos pequenos e projéteis balísticos de chumbo retidos;",
+            "<strong>Parasitoses Intestinais (1% a 2%):</strong> Infestação por <em>Enterobius vermicularis</em> (oxiúros que se enovelam e ocluem o lúmen apendicular), <em>Ascaris lumbricoides</em> (obstrução mecânica por áscaris adulto que invade o orifício apendicular), <em>Taenia</em> e <em>Schistosoma mansoni</em> (granulomas teciduais na parede);",
+            "<strong>Neoplasias Cecais ou Apendiculares (1% a 3%):</strong> Devem ser ativamente suspeitadas em pacientes com idade <strong>&gt; 40 a 50 anos</strong> com apendicite aguda. As lesões tumorais incluem o <strong>Tumor Neuroendócrino Apendicular (antigo Carcinoide)</strong> — que acomete tipicamente a ponta do órgão —, o <strong>Adenocarcinoma mucinoso ou não mucinoso do ceco/apêndice</strong> e as neoplasias mucinosas apendiculares (LAMN/HAMN com risco de pseudomixoma peritoneal)."
+          ]
+        ],
+        [
+          "3",
+          "A Cascata Fisiopatológica de Isquemia e Infecção"
+        ],
+        [
+          "p",
+          "Uma vez bloqueada a luz apendicular, deflagra-se uma cascata contínua e autossustentada de eventos fisiopatológicos em alça fechada:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Produção Contínua de Muco e Elevação da Pressão Intraluminal:</strong> As glândulas tubulares de Lieberkühn da mucosa continuam secretando ativamente muco a uma taxa de aproximadamente 1 a 2 mL/dia. Como o lúmen está obstruído, o muco estagna e acumula-se. A pressão intraluminal sobe rapidamente dos valores basais normais de 2 a 5 mmHg para patamares patológicos de <strong>40 a 60 mmHg</strong>;",
+            "<strong>Bloqueio da Drenagem Linfática e Venosa (Fase Edematosa):</strong> Quando a pressão intraluminal supera a pressão venular e linfática parietal (cerca de 15 a 20 mmHg), a drenagem é completamente interrompida. Inicia-se congestão venosa passiva, edema transmural maciço e hiperemia parietal;",
+            "<strong>Proliferação Bacteriana Exponencial:</strong> O lúmen estagnado e hiperpressurizado torna-se uma câmara ideal de proliferação bacteriana. Inicialmente proliferam bactérias aeróbias facultativas (<em>Escherichia coli</em>); com a rápida queda da tensão de oxigênio tecidual intraluminal, ocorre explosão de bacilos e cocos anaeróbios virulentos (com destaque absoluto para <em>Bacteroides fragilis</em>, <em>Fusobacterium nucleatum</em> e <em>Peptostreptococcus</em>);",
+            "<strong>Isquemia Arterial e Necrose Coagulativa (Fase Gangrenosa):</strong> À medida que a pressão intraluminal atinge e supera a pressão sistólica arteriolar na parede apendicular, o fluxo arterial para a mucosa cessa. Os enterócitos e a barreira epitelial sofrem necrose isquêmica coagulativa transmural;",
+            "<strong>Perfuração Transmural:</strong> As bactérias anaeróbias invadem a parede gangrenada destruída, culminando na descontinuidade anatômica da serosa. A perfuração ocorre tipicamente na borda antimesentérica distal (onde o suprimento vascular terminal é mais frágil e precário)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "fases-evolutivas-histopatologicas",
+      0,
+      [
+        [
+          "2",
+          "3. As Quatro Fases Evolutivas Histopatológicas da Apendicite Aguda"
+        ],
+        [
+          "3",
+          "Cronopatologia da Apendicite Aguda"
+        ],
+        [
+          "p",
+          "A apendicite aguda não é uma doença estática, mas sim um processo biológico inflamatório-infeccioso dinâmico e evolutivo contínuo. Classicamente, a evolução anatomopatológica subdivide-se em quatro fases sucessivas bem delimitadas, que se correlacionam de forma direta com o tempo de evolução dos sintomas, os achados operatórios e o prognóstico cirúrgico:"
+        ],
+        [
+          "t",
+          [
+            "Fase Histopatológica",
+            "Tempo Médio de Evolução",
+            "Alterações Macroscópicas e Microscópicas",
+            "Quadro Clínico e Mecanismo da Dor Dominante"
+          ],
+          [
+            [
+              "<strong>Fase 1: Catarral, Edematosa ou Congestiva</strong>",
+              "Primeiras <strong>6 a 12 horas</strong>",
+              "Apêndice discretamente dilatado, com vasos serosos ingurgitados e hiperemiados, mucosa edemaciada com infiltrado inflamatório incipiente na lâmina própria. Presença de muco espesso retido na luz.",
+              "<strong>Dor puramente VISCERAL:</strong> Vaga, em cólica ou peso, localizada estritamente na <strong>linha média (epigástrio ou mesogástrio/periumbilical)</strong>. Acompanhada por anorexia marcante e náuseas discretas. <em>Ausência de peritonismo no exame físico.</em>"
+            ],
+            [
+              "<strong>Fase 2: Flegmonosa, Supurada ou Ulcerosa</strong>",
+              "<strong>12 a 24 horas</strong>",
+              "Edema transmural exuberante; erosões e microulcerações na mucosa; exsudato fibrino-purulento recobre a serosa externa; infiltrado maciço de neutrófilos atinge a muscular própria e a serosa. Proliferação de bactérias anaeróbias.",
+              "<strong>Dor SOMÁTICA / PARIETAL:</strong> Ocorre a <strong>migração clássica da dor para a Fossa Ilíaca Direita (FID)</strong>. A dor torna-se aguda, pontual, contínua e intensa. Surge <strong>dor focal no ponto de McBurney e Sinal de Blumberg positivo localizado</strong>. Febre baixa (37,8°C - 38,2°C)."
+            ],
+            [
+              "<strong>Fase 3: Gangrenosa ou Necrosante</strong>",
+              "<strong>24 a 36 horas</strong>",
+              "Microtrombose arterial na parede apendicular; áreas transmurais extensas de infarto isquêmico e necrose tecidual com coloração arroxeada, esverdeada ou enegrecida. Parede friável e adelgaçada. Exsudato purulento fétido intracavitário ao redor do apêndice.",
+              "Dor somática contínua lancinante na FID; <strong>defesa muscular involuntária nítida</strong>; taquicardia descompensada; leucocitose neutrofílica importante (&gt; 14.000/$mm^3$) com desvio à esquerda proeminente."
+            ],
+            [
+              "<strong>Fase 4: Perfurada</strong>",
+              "Habitualmente <strong>&gt; 36 a 48 horas</strong>",
+              "Ruptura macroscópica completa da parede do apêndice, com extravasamento de pus fétido, muco e eventualmente saída de apendicolito livre na cavidade. Pode evoluir para duas vias: <em>1. Bloqueio peritoneal</em> (plastrão/abscesso apendicular localizado circundado por omento e alças de íleo) ou <em>2. Peritonite bacteriana difusa livre</em>.",
+              "Pode haver um <strong>alívio transitório enganoso da dor no exato momento da ruptura</strong> (pela súbita descompressão da tensão intraluminal), seguido minutos depois por piora catastrófica com <strong>peritonite generalizada (dor difusa em todos os quadrantes, abdome em tábua, febre alta e choque séptico)</strong>."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "manifestacoes-clinicas-e-murphy",
+      0,
+      [
+        [
+          "2",
+          "4. Manifestações Clínicas e a Cronologia Clássica de Murphy"
+        ],
+        [
+          "3",
+          "A Cronologia Clássica de Murphy: O Padrão Semiológico de Ouro"
+        ],
+        [
+          "p",
+          "Em 1889, o eminente cirurgião norte-americano John Benjamin Murphy descreveu a sequência temporal típica dos sintomas que consagrou o diagnóstico clínico da apendicite aguda. Esta cronologia, denominada <strong>Tríade ou Cronologia de Murphy</strong>, está presente de forma completa em cerca de 60% a 70% dos pacientes e representa um dos temas mais repetidos em bancas de concursos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1º Evento — Dor Abdominal Epigástrica ou Periumbilical (Dor Visceral Inicial):</strong>\n    <ul>\n      <li>Inicia-se de forma insidiosa, imprecisa e difusa ao redor do umbigo ou no epigástrio. O paciente tem dificuldade de apontar a dor, espalmando a mão aberta sobre a região central do abdome;",
+            "<em>Base Fisiopatológica:</em> A distensão e o espasmo do apêndice estimulam fibras C amielínicas viscerais que trafegam pelo plexo mesentérico superior até os segmentos medulares de T9, T10 e T11 (que correspondem ao dermátomo periumbilical).",
+            "<strong>2º Evento — Anorexia e Sintomas Digestivos Associados:</strong>\n    <ul>\n      <li>A <strong>anorexia (inapetência absoluta)</strong> é um sintoma cardinal extraordinariamente constante (&gt; 95% dos pacientes). Em semiologia cirúrgica consagrada: <em>se o paciente refere fome voraz e apetite plenamente preservado, o diagnóstico de apendicite aguda torna-se altamente improvável</em>;",
+            "A anorexia é sucedida por <strong>náuseas e vômitos</strong> (em geral 1 a 3 episódios discretos de vômitos alimentares ou biliosos). <em>Importante detalhe de prova:</em> Na apendicite aguda, a dor abdominal <strong>SEMPRE PRECEDE OS VÔMITOS</strong>. Se os vômitos incoercíveis precederem o início da dor abdominal, deve-se suspeitar fortemente de gastroenterite aguda infecciosa viral ou bacteriana!",
+            "<strong>3º Evento — Migração da Dor para a Fossa Ilíaca Direita (Dor Somática Secundária):</strong>\n    <ul>\n      <li>Após um período de latência de <strong>6 a 12 horas</strong> (podendo variar de 4 a 24 horas) do início dos sintomas centrais, a dor migra e fixa-se com precisão na <strong>fossa ilíaca direita (ponto de McBurney)</strong>;",
+            "<em>Base Fisiopatológica:</em> O processo inflamatório ultrapassou a serosa do apêndice (fase flegmonosa) e entrou em contato direto com o <strong>peritônio parietal anterior da fossa ilíaca direita</strong>, ativando fibras somáticas A-delta mielínicas rápidas dos nervos intercostais T11-T12 e L1. A dor torna-se lancinante, contínua, pontual e exacerbada pela tosse ou deambulação.",
+            "<strong>4º Evento — Febre Baixa / Térmica Subfebril:</strong>\n    <ul>\n      <li>Geralmente entre 37,8°C e 38,3°C nas fases não complicadas (edematosa e flegmonosa);",
+            "<em>Alerta:</em> Picos febris elevados (&gt; 38,5°C - 39,0°C) acompanhados de calafrios profusos sugerem fortemente <strong>perfuração apendicular com abscesso intracavitário bloqueado ou peritonite generalizada</strong>, ou pileflebite (tromboflebite séptica da veia porta com múltiplos microabscessos hepáticos)."
+          ]
+        ],
+        [
+          "3",
+          "Alterações do Hábito Intestinal"
+        ],
+        [
+          "p",
+          "A constipação intestinal reflexa (íleo adinâmico localizado ao redor do ceco inflamado) é o achado mais frequente. Contudo, em crianças pequenas ou quando o apêndice adota <em>posição pélvica</em> (irritando diretamente o reto) ou <em>retroileal</em> (irritando o íleo terminal), podem ocorrer episódios de <strong>diarreia inflamatória com fezes pastosas e tenesmo</strong>, induzindo o médico ao erro diagnóstico de colite ou diarreia infecciosa."
+        ]
+      ]
+    ],
+    [
+      "semiologia-completa-e-manobras-especiais",
+      0,
+      [
+        [
+          "2",
+          "5. Semiologia Completa e Manobras Especiais (Blumberg, Rovsing, Psoas, Obturador, Dunphy e Lapinsky)"
+        ],
+        [
+          "3",
+          "O Exame Físico Abdominal Meticuloso"
+        ],
+        [
+          "p",
+          "O diagnóstico da apendicite aguda em suas fases iniciais repousa na propedêutica armada das mãos do cirurgião. O abdome deve ser examinado de forma sistemática, iniciando-se suavemente pelo quadrante mais distante da queixa (fossa ilíaca esquerda) e progredindo gradualmente em direção à fossa ilíaca direita para evitar defesa muscular voluntária precoce pelo medo da dor."
+        ],
+        [
+          "3",
+          "Os Epônimos e Sinais Semiológicos Clássicos de Prova"
+        ],
+        [
+          "t",
+          [
+            "Sinal Semiológico",
+            "Técnica Exata de Execução da Manobra",
+            "Mecanismo Fisiopatológico Específico"
+          ],
+          [
+            [
+              "<strong>Ponto de McBurney</strong>",
+              "Ponto anatômico situado na junção do <strong>terço lateral com os dois terços mediais</strong> de uma linha imaginária traçada entre a espinha ilíaca ântero-superior (EIAS) direita e a cicatriz umbilical.",
+              "Projeta exatamente a localização da base do apêndice cecal e da confluência das tênias no ceco sob a parede abdominal anterior. A palpação com a ponta dos dedos nesse ponto deflagra dor localizada intensa."
+            ],
+            [
+              "<strong>Sinal de Blumberg</strong>",
+              "Realiza-se compressão manual profunda, gradual e sustentada sobre o ponto de McBurney (ou qualquer ponto da FID) por cerca de 10 a 15 segundos, seguida de <strong>descompressão súbita e rápida da mão do examinador</strong>.",
+              "<strong>Descompressão dolorosa positiva.</strong> A descompressão brusca provoca o recuo elástico violento e a fricção das duas lâminas inflamadas do peritônio parietal anterior contra o peritônio visceral do apêndice, deflagrando um pico agudo de dor lancinante. Traduz <strong>irritação peritoneal (peritonite parietal localizada)</strong>."
+            ],
+            [
+              "<strong>Sinal de Rovsing</strong>",
+              "O examinador realiza <strong>compressão manual profunda e retrógrada contínua a partir da Fossa Ilíaca Esquerda (FIE)</strong> em direção ao cólon descendente, transverso e ceco (no sentido anti-horário).",
+              "A manobra mobiliza e empurra a coluna gasosa colônica de volta para o cólon ascendente e ceco. A distensão retrógrada súbita da parede do ceco traciona e desloca o apêndice inflamado, <strong>despertando dor referida na Fossa Ilíaca DIREITA</strong> (e não no local comprimido à esquerda)."
+            ],
+            [
+              "<strong>Sinal do Psoas</strong>",
+              "Paciente posicionado em <strong>decúbito lateral esquerdo</strong> com membros estendidos. O examinador estabiliza a pelve com uma mão e realiza a <strong>hiperextensão passiva da coxa direita</strong> para trás; alternativamente, em decúbito dorsal, solicita-se ao paciente que flexione ativamente a coxa direita contra a resistência da mão do examinador.",
+              "A manobra estira e contrai o <strong>músculo psoas maior</strong> retroperitoneal. Quando o apêndice inflamado encontra-se em <strong>posição RETROCECAL</strong>, ele repousa diretamente sobre a fáscia do psoas; o atrito muscular mecânico direto provoca dor intensa na FID e flanco direito."
+            ],
+            [
+              "<strong>Sinal do Obturador</strong>",
+              "Paciente em decúbito dorsal com o quadril direito e joelho direito flexionados a 90 graus. O examinador segura o joelho e realiza a <strong>rotação interna passiva da coxa direita</strong> (movendo o tornozelo para fora enquanto o joelho é estabilizado medialmente).",
+              "A manobra estira a fáscia e as fibras do <strong>músculo obturador interno</strong> na parede lateral da bacia. É altamente sugestivo de apêndice inflamado em <strong>posição PÉLVICA</strong>, em contato anatômico íntimo com o músculo obturador na pelve profunda."
+            ],
+            [
+              "<strong>Sinal de Dunphy</strong>",
+              "Solicita-se ao paciente que tussa com vigor, ou avalia-se a dor referida na FID durante episódios espontâneos de tosse.",
+              "O aumento súbito e vigoroso da pressão intra-abdominal e o choque mecânico do diafragma contra o peritônio parietal inflamado provocam <strong>exacerbação aguda da dor pontual na fossa ilíaca direita</strong>. Excelente teste de triagem precoce em crianças."
+            ],
+            [
+              "<strong>Sinal de Lapinsky</strong>",
+              "O examinador realiza a compressão do ponto de McBurney enquanto o paciente eleva ativamente o membro inferior direito completamente estendido.",
+              "A contração da musculatura abdominal anterior somada à elevação da tensão do psoas intensifica a dor apendicular na FID."
+            ],
+            [
+              "<strong>Sinal de Lenander</strong>",
+              "Aferição simultânea da temperatura axilar e da temperatura retal.",
+              "Presença de uma <strong>diferença &gt; 1,0°C</strong> entre a temperatura retal (mais quente) e a temperatura axilar (<strong>dissociação axilo-retal</strong>), traduzindo hipertermia regional pélvica decorrente de processo infeccioso ativo intra-abdominal/pélvico."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "estratificacao-alvarado-e-air-score",
+      0,
+      [
+        [
+          "2",
+          "6. Estratificação de Risco Clínico e o Escore de Alvarado / Escore AIR"
+        ],
+        [
+          "3",
+          "O Papel dos Escores Preditivos Clínicos"
+        ],
+        [
+          "p",
+          "Para sistematizar a tomada de decisão, padronizar o raciocínio médico e racionalizar a solicitação de exames de imagem avançados (evitando radiação desnecessária e reduzindo custos), diversos escores preditivos validados foram incorporados às diretrizes cirúrgicas mundiais (World Society of Emergency Surgery - WSES). O mais clássico e amplamente cobrado em concursos é o <strong>Escore de Alvarado (MANTRELS)</strong>, complementado modernamente pelo <strong>Escore AIR (Appendicitis Inflammatory Response)</strong>."
+        ],
+        [
+          "3",
+          "O Escore de Alvarado Clássico (Mnemônico MANTRELS — 10 Pontos)"
+        ],
+        [
+          "t",
+          [
+            "Categoria / Componente do Escore",
+            "Manifestação Clínica ou Laboratorial Específica",
+            "Pontuação Atribuída"
+          ],
+          [
+            [
+              "<strong>M</strong>igration of pain",
+              "Migração da dor do epigástrio/umbigo para a Fossa Ilíaca Direita",
+              "1 ponto"
+            ],
+            [
+              "<strong>A</strong>norexia",
+              "Anorexia (inapetência) ou presença de corpos cetônicos na urina",
+              "1 ponto"
+            ],
+            [
+              "<strong>N</strong>ausea and/or vomiting",
+              "Náuseas e/ou vômitos alimentares/biliosos",
+              "1 ponto"
+            ],
+            [
+              "<strong>T</strong>enderness in RLQ",
+              "<strong>Dor / Sensibilidade à palpação na Fossa Ilíaca Direita</strong>",
+              "<strong>2 PONTOS</strong>"
+            ],
+            [
+              "<strong>R</strong>ebound tenderness",
+              "Descompressão dolorosa positiva na FID (Sinal de Blumberg)",
+              "1 ponto"
+            ],
+            [
+              "<strong>E</strong>levation of temperature",
+              "Febre / Temperatura corporal &ge; 37,3°C (ou &ge; 37,8°C retal)",
+              "1 ponto"
+            ],
+            [
+              "<strong>L</strong>eukocytosis",
+              "<strong>Leucocitose sérica &gt; 10.000 / $mm^3$</strong>",
+              "<strong>2 PONTOS</strong>"
+            ],
+            [
+              "<strong>S</strong>hift to the left",
+              "Desvio de neutrófilos à esquerda (&gt; 75% de segmentados/bastonetes)",
+              "1 ponto"
+            ],
+            [
+              "<strong>PONTUAÇÃO TOTAL MÁXIMA</strong>",
+              "<strong>10 PONTOS</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Mnemônico Didático dos Valores Duplos:</em> Repare que apenas dois critérios recebem <strong>2 pontos</strong>: a <strong>dor focal à palpação na FID (Tenderness)</strong> e a <strong>leucocitose &gt; 10.000 (Leukocytosis)</strong>. Todos os demais recebem 1 ponto cada."
+        ],
+        [
+          "3",
+          "Conduta Prática Baseada na Estratificação do Escore de Alvarado"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pontuação de 0 a 4 Pontos — BAIXO RISCO (Apendicite Praticamente Descartada):</strong>\n    <ul>\n      <li>Probabilidade de apendicite aguda &lt; 5%;",
+            "<em>Conduta:</em> Não requer exames de imagem tomográficos nem cirurgia de rotina. Investigar causas alternativas de dor abdominal; alta segura com orientações estritas sobre sinais de alarme e reavaliação ambulatorial em 24 a 48 horas se persistirem os sintomas."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Pontuação de 5 a 6 Pontos — RISCO INTERMEDIÁRIO (Indeterminado / Duvidoso):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Probabilidade de apendicite em torno de 30% a 50%;",
+            "<em>Conduta:</em> <strong>Investigação complementar obrigatória com Exame de Imagem</strong> (USG na criança/gestante ou TC de abdome total com contraste IV no adulto e idoso) ou internação para observação clínica seriada com reavaliação abdominal a cada 6 a 8 horas pelo mesmo examinador."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Pontuação de 7 a 10 Pontos — ALTO RISCO (Apendicite Altamente Provável):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Probabilidade de apendicite confirmada &gt; 80% a 90%;",
+            "<em>Conduta:</em> Em homens adultos jovens com Alvarado &ge; 7 a 8 e quadro clínico clássico inequívoco, a diretriz clássica autoriza <strong>indicação cirúrgica imediata (Apendicectomia)</strong> sem necessidade obrigatória de exames de imagem prévios, embora a tendência contemporânea de serviços terciários preconize a confirmação pré-operatória por TC para descartar diagnósticos alternativos ou quantificar complicações. Em mulheres em idade fértil, idosos e crianças, o exame de imagem segue mandatório mesmo com escores elevados para evitar falso-positivos ginecológicos ou neoplasias cecais."
+          ]
+        ],
+        [
+          "3",
+          "O Escore AIR (Appendicitis Inflammatory Response Score)"
+        ],
+        [
+          "p",
+          "Desenvolvido para superar as limitações do Escore de Alvarado (que superestima apendicites em mulheres e não utiliza a Proteína C Reativa), o <strong>Escore AIR</strong> foi incorporado com grande entusiasmo pelas diretrizes da WSES. Ele introduz a dosagem da <strong>Proteína C Reativa (PCR)</strong> e gradua os parâmetros inflamatórios em níveis de intensidade:"
+        ],
+        [
+          "t",
+          [
+            "Critério Clínico / Laboratorial do Escore AIR",
+            "Graduação do Parâmetro",
+            "Pontuação Atribuída"
+          ],
+          [
+            [
+              "<strong>Vômitos</strong>",
+              "Presentes",
+              "1 ponto"
+            ],
+            [
+              "<strong>Dor na Fossa Ilíaca Direita</strong>",
+              "Presente",
+              "1 ponto"
+            ],
+            [
+              "<strong>Descompressão Dolorosa ou Defesa Muscular</strong>",
+              "Discreta / Leve<br>Moderada<br>Grave / Intensa",
+              "1 ponto<br>2 pontos<br>3 pontos"
+            ],
+            [
+              "<strong>Temperatura Corporal</strong>",
+              "&ge; 38,5°C",
+              "1 ponto"
+            ],
+            [
+              "<strong>Contagem de Leucócitos</strong>",
+              "10.000 a 14.900 / $mm^3$<br>&ge; 15.000 / $mm^3$",
+              "1 ponto<br>2 pontos"
+            ],
+            [
+              "<strong>Proporção de Neutrófilos</strong>",
+              "70% a 84%<br>&ge; 85%",
+              "1 ponto<br>2 pontos"
+            ],
+            [
+              "<strong>Proteína C Reativa (PCR)</strong>",
+              "10 a 49 mg/L<br>&ge; 50 mg/L",
+              "1 ponto<br>2 pontos"
+            ],
+            [
+              "<strong>PONTUAÇÃO TOTAL MÁXIMA DO ESCORE AIR</strong>",
+              "<strong>12 PONTOS</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Estratificação Prática pelo Escore AIR:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>0 a 4 Pontos — Baixa Probabilidade:</strong> Alta com seguimento ambulatorial se clinicamente estável; valor preditivo negativo &gt; 97%;",
+            "<strong>5 a 8 Pontos — Grupo Indeterminado:</strong> Observação em enfermaria com exames de imagem sequenciais (USG/TC) ou reavaliação clínica e laboratorial em 4 a 6 horas;",
+            "<strong>9 a 12 Pontos — Alta Probabilidade:</strong> Exploração cirúrgica laparoscópica imediata recomendada (acurácia superior ao Alvarado no diagnóstico de apendicites avançadas)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "diagnostico-por-imagem-usg-tc-rm",
+      0,
+      [
+        [
+          "2",
+          "7. Diagnóstico por Imagem: Ultrassonografia, Tomografia Computadorizada e Ressonância Magnética"
+        ],
+        [
+          "3",
+          "Quando Indicar Imagem no Diagnóstico da Apendicite?"
+        ],
+        [
+          "p",
+          "Embora a apendicite clássica no homem jovem seja eminentemente clínica, o uso disseminado dos métodos de imagem reduziu as taxas de apendicectomias negativas (\"laparotomia branca\") de 20-25% para menos de 3% a 5% dos procedimentos operatórios modernos. A escolha da modalidade de imagem deve ser guiada estritamente pela faixa etária, sexo e perfil biológico:"
+        ],
+        [
+          "3",
+          "1. Ultrassonografia de Abdome com Técnica de Compressão Graduada (USG)"
+        ],
+        [
+          "p",
+          "Desenvolvida pioneiramente por Puylaert em 1986, a USG com compressão gradual é o <strong>exame de primeira linha indiscutível na criança, no adolescente e na paciente gestante</strong> (isenta de radiação ionizante e contrastes nefrotóxicos):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Critérios Ultrassonográficos Diagnósticos de Apendicite Aguda:</strong>\n    <ol>\n      <li><strong>Estrutura tubular com fundo cego não peristáltica que se origina da base cecal</strong>;",
+            "<strong>Diâmetro transverso externo aumentado &gt; 6 mm</strong> (aferido de parede externa a parede externa; diâmetro entre 6 e 8 mm pode ser limítrofe, mas &gt; 8 mm é francamente diagnóstico);",
+            "<strong>Incompressibilidade à compressão graduada do transdutor</strong> (o apêndice inflamado não colaba sob pressão manual devido ao edema transmural e hipertensão luminal);",
+            "<strong>Espessamento da parede apendicular &gt; 2 mm</strong> com perda da estratificação normal das camadas teciduais;",
+            "<strong>Presença de Apendicolito:</strong> Imagem hiperecogênica intraluminal com <strong>sombra acústica posterior nítida</strong> (presente em 30% dos casos);",
+            "<strong>Halo hiperecogênico periapendicular:</strong> Correspondendo à densificação e inflamação da gordura mesoapendicular adjacente;",
+            "<strong>Sinal do Doppler em Cores:</strong> Hiperemia vascular periapendicular periférica nas fases flegmonosas iniciais (\"sinal do anel de fogo\"); na fase gangrenosa tardia, o Doppler revela ausência completa de fluxo sanguíneo por trombose microvascular.",
+            "<strong>Limitações do Método:</strong> Sensibilidade global de 75% a 85% e especificidade de 85% a 90%; fortemente prejudicada por obesidade, distensão gasosa de alças intestinais e apêndices em <em>posição retrocecal profunda</em> (que ficam ocultos atrás do ceco preenchido por ar)."
+          ]
+        ],
+        [
+          "3",
+          "2. Tomografia Computadorizada de Abdome e Pelve com Contraste (TC Multislice)"
+        ],
+        [
+          "p",
+          "A <strong>TC com contraste iodado intravenoso</strong> é o <strong>padrão-ouro absoluto em adultos masculinos, idosos e mulheres pós-menopáusicas</strong>, exibindo sensibilidade superior a 95% a 98% e especificidade de 96% a 99%:"
+        ],
+        [
+          "t",
+          [
+            "Achado Tomográfico",
+            "Significado Fisiopatológico",
+            "Sensibilidade / Especificidade"
+          ],
+          [
+            [
+              "<strong>Diâmetro transverso externo &gt; 6 mm</strong>",
+              "Dilatação luminal por estase de muco e edema parietal.",
+              "Alta sensibilidade (&gt; 95%)."
+            ],
+            [
+              "<strong>Espessamento da parede (&gt; 2 a 3 mm) com realce anelar pós-contraste</strong>",
+              "Hiperemia e neovascularização da submucosa inflamada (\"sinal do alvo\").",
+              "Alta especificidade (&gt; 96%)."
+            ],
+            [
+              "<strong>Densificação / Borramento da gordura periapendicular</strong>",
+              "Extravasamento do processo inflamatório para o omento e mesocólon (flegmão).",
+              "Achado mais precoce e confiável de inflamação local ativa."
+            ],
+            [
+              "<strong>Apendicolito Hiperdenso Calcificado</strong>",
+              "Cálculo intraluminal hiperatenuante com atenuação cálcica (&gt; 100 UH).",
+              "Presente em 30% a 40% dos casos; indica alto risco de perfuração."
+            ],
+            [
+              "<strong>Descontinuidade focal da parede com coleções gasosas extraluminais</strong>",
+              "Perfuração apendicular estabelecida com peritonite localizada ou abscesso.",
+              "Confirmação definitiva de apendicite complicada (fase 4)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3. Ressonância Magnética (RM) de Abdome sem Gadolínio"
+        ],
+        [
+          "p",
+          "Modalidade de escolha como exame de resgate na <strong>gestante com suspeita de apendicite cujo exame de ultrassonografia foi duvidoso, inconclusivo ou negativo com persistência de suspeita clínica</strong>. Apresenta acurácia diagnóstica idêntica à da TC (&gt; 95%), não emite radiação ionizante para o feto e dispensa o uso de gadolínio (o gadolínio atravessa a barreira placentária e é contraindicado na gestação)."
+        ]
+      ]
+    ],
+    [
+      "diagnosticos-diferenciais-por-faixa-etaria",
+      0,
+      [
+        [
+          "2",
+          "8. Diagnósticos Diferenciais por Faixa Etária e Sexo"
+        ],
+        [
+          "3",
+          "O Camaleão da Cirurgia Abdominal"
+        ],
+        [
+          "p",
+          "Em virtude das múltiplas posições anatômicas do apêndice cecal e da diversidade de afecções que acometem a fossa ilíaca direita, a apendicite aguda mimetiza dezenas de patologias médicas e cirúrgicas. O diagnóstico diferencial varia radicalmente em função da idade e do sexo do paciente:"
+        ],
+        [
+          "t",
+          [
+            "População-Alvo",
+            "Principais Diagnósticos Diferenciais",
+            "Elementos Distintivos Cruciais no Diagnóstico"
+          ],
+          [
+            [
+              "<strong>Mulheres em Idade Fértil (15 a 45 anos)</strong>",
+              "1. Gravidez Ectópica Rota;<br>2. Rotura de Cisto Folicular ou Luteínico (Mittelschmerz);<br>3. Doença Inflamatória Pélvica (DIP / salpingite);<br>4. Torção de Anexo / Ovário;<br>5. Endometriose profunda de íleo/ceco.",
+              "Histórico menstrual detalhado (atraso menstrual recente); dosagem mandatória de <strong>$\beta$-hCG sérico</strong> em toda mulher em idade fértil com dor abdominal; corrimento vaginal purulento com dor ao colo (DIP); USG transvaginal com Doppler (detecta fluxo ovariano ausente na torção e massas anexiais)."
+            ],
+            [
+              "<strong>Crianças e Jovens (&lt; 15 anos)</strong>",
+              "1. Linfadenite Mesentérica Aguda;<br>2. Divertículo de Meckel complicado (diverticulite);<br>3. Intussuscepção Intestinal (íleo-cólica);<br>4. Gastroenterite Aguda Viral;<br>5. Púrpura de Henoch-Schönlein.",
+              "<strong>Linfadenite Mesentérica:</strong> Frequentemente precedida por IVAS recente (amigdalite/faringite), dor menos localizada na FID, febre mais alta precoce, USG revela múltiplos linfonodos mesentéricos aumentados (&gt; 8 mm) com apêndice normal.<br><strong>Divertículo de Meckel:</strong> Sangramento digestivo baixo indolor (enterorragia) ou diverticulite que simula apendicite indistinguível (requer cintilografia com hemácias marcadas ou Tc-99m pertecnetato)."
+            ],
+            [
+              "<strong>Adultos e Idosos (&gt; 50 anos)</strong>",
+              "1. Neoplasia de Ceco / Cólon Ascendente perfurada ou estenosante;<br>2. Diverticulite de Cólon Direito ou Cecal;<br>3. Isquemia Mesentérica Aguda;<br>4. Úlcera Duodenal perfurada com líquido na goteira parietocólica direita (Sinal de Valentino);<br>5. Aneurisma de Aorta Abdominal roto.",
+              "Anemia microcítica ferropriva inexplicada e perda ponderal sugerem câncer de ceco; TC de abdome é obrigatória para afastar adenocarcinoma cecal simulador. Na úlcera duodenal perfurada, o suco gástrico escorre pela goteira parietocólica direita acumulando-se na FID, simulando apendicite (<strong>Sinal de Valentino</strong>)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "tratamento-cirurgico-laparoscopia-vs-aberta",
+      0,
+      [
+        [
+          "2",
+          "9. Tratamento Cirúrgico: Apendicectomia Videolaparoscópica vs Laparotomia Aberta"
+        ],
+        [
+          "3",
+          "O Tratamento Definitivo: A Apendicectomia"
+        ],
+        [
+          "p",
+          "O tratamento padrão-ouro indiscutível da apendicite aguda é a <strong>remoção cirúrgica do apêndice cecal (Apendicectomia)</strong>. Embora estudos recentes tenham avaliado o tratamento puramente clínico com antibioticoterapia isolada em casos não complicados selecionados, as diretrizes da <em>World Society of Emergency Surgery (WSES)</em> e do Colégio Brasileiro de Cirurgiões (CBC) mantêm a apendicectomia como o padrão de referência resolutivo de primeira linha, haja vista a taxa de falha primária do tratamento conservador em torno de 10% a 20% e a taxa de recorrência da apendicite em 1 ano superior a 30% a 40%."
+        ],
+        [
+          "3",
+          "Apendicectomia Videolaparoscópica: O Padrão-Ouro Atual"
+        ],
+        [
+          "p",
+          "A via videolaparoscópica consolidou-se como a <strong>técnica cirúrgica preferencial</strong> para o tratamento da apendicite aguda em todos os estágios evolutivos (fases 1 a 4, não complicadas ou complicadas), salvo contraindicações formais ao pneumoperitônio:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Vantagens Cientificamente Comprovadas da Laparoscopia:</strong>\n    <ol>\n      <li><strong>Menor Dor Pós-Operatória</strong> com redução expressiva da necessidade de opioides parenterais;",
+            "<strong>Redução Significativa da Infecção de Sítio Cirúrgico (ISC) de parede</strong> (redução de mais de 50% em comparação à via aberta);",
+            "<strong>Tempo de Internação Hospitalar Reduzido</strong> e retorno mais rápido às atividades profissionais e laborais (média de 1 a 2 dias);",
+            "<strong>Exploração Completa de Toda a Cavidade Abdominal:</strong> Permite inspecionar a pelve, os anexos ginecológicos, o fígado, o espaço subfrênico e o íleo terminal (pesquisa de divertículo de Meckel se o apêndice estiver normal), lavando coleções purulentas distantes sob visão direta;",
+            "<strong>Resultados Cosméticos Superiores</strong> e incidência substancialmente menor de hérnias incisionais tardias.",
+            "<strong>Indicações de Máxima Superioridade da Laparoscopia:</strong>\n    <ul>\n      <li><em>Pacientes Obesos:</em> Na via aberta, a espessura do panículo adiposo exige incisões enormes com altíssima taxa de infecção de ferida e seroma; na laparoscopia, os mesmos três trocartes de 5 a 10 mm são suficientes;",
+            "<em>Mulheres em Idade Fértil:</em> Permite visualizar e resolver diagnósticos ginecológicos associados ou alternativos;",
+            "<em>Pacientes Idosos e Atletas.</em>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Técnica dos Trocartes:</strong> Habitualmente realizada com 3 portais: um umbilical de 10 mm (para ótica de 30°), um suprapúbico de 5 mm e um na fossa ilíaca esquerda de 5 mm (ou fossa ilíaca direita/flanco esquerdo). Realiza-se ligadura da artéria apendicular no mesoapêndice com bipolar, bisturi harmônico ou clipes metálicos/polímero, e ligadura da base apendicular na parede cecal com fio laçado (Endoloop), grampeador endoscópico linear (EndoGIA) ou clipes Hem-o-lok.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "Apendicectomia por Laparotomia Aberta Convencional"
+        ],
+        [
+          "p",
+          "A cirurgia aberta preserva seu espaço insubstituível em hospitais desprovidos de torre de laparoscopia, na vigência de instabilidade hemodinâmica grave com choque séptico refratário ou em casos de conversão por distensão colônica maciça extrema ou flegmão cecal neoplásico invasivo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Incisão de McBurney (Oblíqua):</strong> Incisão oblíqua de 4 a 6 cm perpendicular à linha espinoumbilical sobre o ponto de McBurney, realizada no sentido das linhas de força da pele com secção por divulsão muscular das fibras dos músculos oblíquo externo, interno e transverso do abdome;",
+            "<strong>Incisão de Davis-Rockey (Transversa):</strong> Incisão transversa horizontal na FID com divulsão muscular, oferecendo excelente resultado estético;",
+            "<strong>Incisão Mediana Infraumbilical:</strong> Reservada para casos de peritonite difusa purulenta/fecal generalizada grave, dúvida diagnóstica importante com suspeita de outra catástrofe abdominal ou sepse grave."
+          ]
+        ],
+        [
+          "3",
+          "Achado Inesperado de Apêndice Cecal Normal na Cirurgia: O que Fazer?"
+        ],
+        [
+          "p",
+          "<strong>REGRA CIRÚRGICA CLÁSSICA:</strong> Se, durante a exploração laparotômica ou laparoscópica por suspeita de apendicite, o apêndice cecal for encontrado macroscopicamente sadio e sem qualquer sinal inflamatório:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Explorar Obrigatoriamente Toda a Cavidade Abdominal:</strong> Inspecionar o íleo terminal nos seus últimos 100 cm em busca de <strong>Divertículo de Meckel</strong> inflamado ou ileíte terminal aguda por Doença de Crohn; inspecionar os anexos femininos (ovários e trompas) pesquisando torção ou DIP; inspecionar a raiz do mesentério pesquisando linfadenite mesentérica; inspecionar estômago, duodeno e vias biliares;",
+            "<strong>Remover ou Não o Apêndice Normal?</strong> A conduta preconizada na cirurgia é <strong>realizar a apendicectomia incidental</strong>, exceto se a base cecal estiver envolvida por doença inflamatória intestinal grave ativa (Doença de Crohn com fístula em ceco). A remoção previne que o paciente venha a ter apendicite no futuro (evitando confusão diagnóstica em um paciente que já ostenta cicatriz cirúrgica na FID) e permite análise anatomopatológica histológica para afastar apendicite endoluminal microscópica incipiente ou lesões parasitárias/tumorais ocultas."
+          ]
+        ],
+        [
+          "3",
+          "Principais Complicações Pós-Operatórias da Apendicectomia"
+        ],
+        [
+          "p",
+          "Embora a apendicectomia seja uma das cirurgias mais realizadas no planeta, o pós-operatório pode cursar com intercorrências graves que devem ser reconhecidas precocemente:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Abscesso Intra-Abdominal Residual (Pélvico ou Subfrênico):</strong> Ocorre em 2% a 5% das apendicites complicadas perfuradas. O paciente apresenta piora clínica entre o <strong>5º e o 8º dia pós-operatório</strong>, caracterizada por retorno de febre em picos, taquicardia, dor pélvica, tenesmo retal ou diarreia e leucocitose reativa. Diagnóstico: TC de abdome e pelve com contraste. Tratamento de escolha: <strong>Drenagem percutânea guiada por TC ou USG</strong> (ou transretal se coleção pélvica flutuante adjacente ao reto) associada a antibioticoterapia venosa;",
+            "<strong>2. Infecção de Sítio Cirúrgico (ISC) de Parede:</strong> Complicação mais comum da cirurgia aberta (até 10% a 15% na apendicite perfurada vs &lt; 2% na laparoscopia). Manifesta-se no 4º a 6º dia por eritema, calor, edema e flutuação na incisão. Tratamento: abertura dos pontos da pele e celular subcutâneo, drenagem do exsudato purulento, curativos diários por segunda intenção e desbridamento;",
+            "<strong>3. Deiscência do Coto Apendicular e Fístula Estercorácea:</strong> Resulta de necrose da parede cecal friável adjacente à ligadura da base ou escape do coto apendicular. Apresenta-se como peritonite fecal localizada ou saída de fezes pelo orifício do dreno ou ferida operatória. Tratamento: se bem drenada e sem peritonite, manejo conservador com nutrição, proteção de pele e suporte clínico; se peritonite difusa livre, laparotomia com ressecção ileocecal;",
+            "<strong>4. Pileflebite (Tromboflebite Séptica da Veia Porta):</strong> Complicação rara, porém catastrófica e com altíssima letalidade. Consiste na embolização bacteriana séptica através das veias apendiculares e veia mesentérica superior para a veia porta, provocando trombose séptica da circulação portal e múltiplos microabscessos hepáticos purulentos. Apresenta-se com febre alta remitente, calafrios severos, icterícia e dor em hipocôndrio direito. Tratamento: antibioticoterapia venosa de amplo espectro prolongada em doses altas e anticoagulação plena com heparina."
+          ]
+        ]
+      ]
+    ],
+    [
+      "apendicite-complicada-e-plastrao",
+      0,
+      [
+        [
+          "2",
+          "10. Apendicite Complicada, Plastrão Apendicular e Apendicectomia de Intervalo"
+        ],
+        [
+          "3",
+          "O Conceito de Plastrão Apendicular (Bloqueio Peritoneal)"
+        ],
+        [
+          "p",
+          "Quando a perfuração apendicular ocorre de forma gradual e insidiosa em um hospedeiro imunocompetente, os mecanismos naturais de contenção da cavidade peritoneal entram em ação. O grande omento (epíplon maior), as alças adjacentes de íleo terminal e a parede do ceco migram em direção à fossa ilíaca direita, circundando e \"envelopando\" o apêndice perfurado. Cria-se assim um <strong>plastrão inflamatório apendicular ou fleimão</strong>, que isola o foco séptico do restante do peritônio livre, impedindo a progressão para peritonite difusa mortal."
+        ],
+        [
+          "p",
+          "Clinicamente, o paciente com plastrão apendicular apresenta tipicamente uma <strong>história arrastada de dor na FID com mais de 5 a 7 dias de evolução</strong>, associada a febre baixa ou moderada, anorexia e a palpação de uma <strong>massa tumoral endurecida, mal delimitada e dolorosa na fossa ilíaca direita</strong>."
+        ],
+        [
+          "3",
+          "A Conduta Conservadora Inicial no Plastrão Apendicular"
+        ],
+        [
+          "p",
+          "Operar de urgência um paciente com plastrão apendicular organizado com massa palpável de mais de 5 a 7 dias é um dos maiores erros cirúrgicos técnicos. Nessa fase, a anatomia local encontra-se completamente distorcida por um tecido inflamatório denso, friável e hipervascularizado (\"tecido em borracha\"), e as alças de íleo e ceco estão fundidas em bloco ao apêndice necrótico. A tentativa de dissecção forçada resulta frequentemente em <strong>lesões inadvertidas de alças entéricas, perfurações iatrogênicas de ceco com peritonite fecal e necessidade de hemicolectomia direita mutiladora de urgência com ileostomia</strong>:"
+        ],
+        [
+          "p",
+          "Por esse motivo, as diretrizes internacionais preconizam o <strong>Tratamento Clínico Conservador Inicial (Estratégia Ochsner)</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Internação Hospitalar e Repouso Intestinal</strong>;",
+            "<strong>Antibioticoterapia Venosa de Amplo Espectro</strong> cobrindo gram-negativos e anaeróbios entéricos (ex: Ceftriaxona + Metronidazol ou Piperacilina-Tazobactam) por 7 a 14 dias;",
+            "<strong>Avaliação Tomográfica Obrigatória (TC de Abdome Total):</strong>\n    <ul>\n      <li>Se a TC evidenciar <em>apenas fleimão sólido sem abscesso organizado</em>: manter antibioticoterapia isolada com vigilância clínica seriada;",
+            "Se a TC evidenciar <strong>abscesso apendicular volumoso (&gt; 3 a 4 cm de diâmetro)</strong>: realizar <strong>Drenagem Percutânea guiada por TC ou Ultrassonografia</strong> com colocação de dreno de \"pig-tail\" percutâneo associada a antibioticoterapia venosa contínua. Essa estratégia descomprime o foco purulento sem abrir a cavidade abdominal!",
+            "<strong>Critérios de Sucesso e Conversão Cirúrgica:</strong> Acompanhamento diário com curva térmica, leucograma e PCR. Em mais de 80% a 90% dos casos ocorre melhora expressiva da dor, desaparecimento da massa e normalização dos leucócitos. Se houver piora clínica, sepse progressiva, distensão obstrutiva ou sinais de peritonite difusa livre, indica-se cirurgia aberta ou laparoscópica de urgência."
+          ]
+        ],
+        [
+          "3",
+          "Apendicectomia de Intervalo e o Rastreio Colonoscópico Obrigatório"
+        ],
+        [
+          "u",
+          [
+            "<strong>Apendicectomia de Intervalo:</strong> Após a resolução clínica completa do plastrão e alta hospitalar, programa-se a ressecção cirúrgica eletiva do apêndice (apendicectomia videolaparoscópica de intervalo) após um período de <strong>6 a 12 semanas (habitualmente 8 a 10 semanas)</strong>. Nessa janela tardia, todo o exsudato fibrinoso e inflamatório foi reabsorvido, os planos de clivagem anatômicos estão restaurados e a cirurgia torna-se tecnicamente limpa, segura e simples;",
+            "<strong>ATENÇÃO CRUCIAL PARA PROVAS DE RESIDÊNCIA E ENAMED:</strong> Em todo paciente com <strong>idade &ge; 40 anos</strong> tratado conservadoramente por plastrão apendicular, é <strong>MANDATÓRIA A REALIZAÇÃO DE COLONOSCOPIA TOTAL PRÉVIA</strong> (após resolução do quadro agudo e antes ou concomitante à cirurgia)! O objetivo precípuo é descartar formalmente um <strong>Adenocarcinoma de Ceco ou Neoplasia Neuroendócrina / Mucinosa Apendicular oculta</strong> que se apresentou primariamente mimetizando apendicite complicada (presente em 5% a 12% dos pacientes acima de 40 a 50 anos com plastrão apendicular)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "antibioticoprofilaxia-e-terapeutica",
+      0,
+      [
+        [
+          "2",
+          "11. Antibioticoprofilaxia e Antibioticoterapia Terapêutica"
+        ],
+        [
+          "3",
+          "Racionalidade do Uso de Antimicrobianos na Apendicite"
+        ],
+        [
+          "p",
+          "A antibioticoterapia é um componente indissociável do manejo da apendicite aguda. No entanto, deve-se distinguir de forma rigorosa a <strong>antibioticoprofilaxia perioperatória</strong> da <strong>antibioticoterapia terapêutica curativa</strong>:"
+        ],
+        [
+          "3",
+          "1. Antibioticoprofilaxia Cirúrgica (Apendicite Não Complicada — Fases 1 e 2)"
+        ],
+        [
+          "p",
+          "Em pacientes com apendicite aguda não complicada (fases edematosa e flegmonosa, sem gangrena, necrose ou perfuração macroscópica):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Objetivo:</strong> Reduzir a taxa de infecção de sítio cirúrgico (incisional superficial e profunda) induzida pela translocação bacteriana transitória durante a manipulação da víscera;",
+            "<strong>Momento de Administração:</strong> Administrar dose única por via intravenosa no momento da indução anestésica (dentro dos <strong>30 a 60 minutos antes da incisão cirúrgica</strong>);",
+            "<strong>Esquemas Padronizados de Escolha:</strong>\n    <ul>\n      <li><strong>Cefazolina (2 g IV) + Metronidazol (500 mg IV)</strong> — excelente custo-efetividade; ou",
+            "<strong>Cefoxitina (2 g IV)</strong> — cefalosporina de 2ª geração com atividade antianaeróbia intrínseca contra <em>Bacteroides fragilis</em>; ou",
+            "<strong>Ampicilina-Sulbactam (3 g IV)</strong>.",
+            "<em>Pacientes com alergia grave a beta-lactâmicos:</em> Ciprofloxacino (400 mg IV) + Metronidazol (500 mg IV) ou Gentamicina + Clindamicina."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Duração do Tratamento:</strong> <strong>DOSE ÚNICA PERIOPERATÓRIA.</strong> As diretrizes da WSES e do CDC determinam categoricamente que, em apendicite não complicada ressecada completamente, <strong>NÃO HÁ INDICAÇÃO DE MANTER ANTIBIÓTICOS NO PÓS-OPERATÓRIO</strong>. Manter antibióticos por 24 ou 48 horas não traz benefícios clínicos e seleciona bactérias hospitalares resistentes.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "2. Antibioticoterapia Terapêutica (Apendicite Complicada — Fases 3 e 4)"
+        ],
+        [
+          "p",
+          "Em pacientes com apendicite complicada (fase gangrenosa avançada com necrose da base, apendicite perfurada, peritonite purulenta localizada ou difusa e abscessos intracavitários):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Objetivo:</strong> Erradicar bactérias entéricas gram-negativas e anaeróbias que invadiram a cavidade peritoneal e prevenir a formação tardia de abscessos intracavitários residuais e sepse sistêmica;",
+            "<strong>Regimes Antimicrobianos Recomendados:</strong>\n    <ul>\n      <li><em>Esquema 1:</em> <strong>Ceftriaxona (1 g IV 12/12h ou 2 g 1x/dia) + Metronidazol (500 mg IV 8/8h)</strong>;",
+            "<em>Esquema 2:</em> <strong>Ampicilina-Sulbactam (3 g IV 6/6h)</strong>;",
+            "<em>Esquema para Sepse Grave / Pacientes Críticos / Hospitalar:</em> <strong>Piperacilina-Tazobactam (4,5 g IV 6/6h ou 8/8h infusão estendida)</strong> ou Meropenem (1 g IV 8/8h)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Duração do Tratamento no Pós-Operatório:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Estudos clínicos randomizados robustos de alta qualidade (com destaque para o clássico <em>Trial STOP-IT</em> de Sawyer et al.) demonstraram que, após a remoção cirúrgica adequada da fonte séptica (apendicectomia e lavagem peritoneal adequada), um curso curto de <strong>3 a 5 dias (habitualmente 4 dias pós-operatórios)</strong> é absolutamente equivalente em eficácia e cura à terapia clássica prolongada de 7 a 10 dias;",
+            "Critérios para descalonamento e suspensão: paciente afebril por mais de 24 horas, tolerando dieta oral plena, com trânsito intestinal restabelecido e leucograma em regressão."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-apendicite",
+      0,
+      [
+        [
+          "2",
+          "12. Casos Clínicos Estruturados e Discussões Práticas Baseadas em Evidências"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Apendicite Aguda Típica com Cronologia de Murphy em Adulto Jovem"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 22 anos, estudante universitário, previamente hígido, procura a UPA queixando-se de dor abdominal iniciada há 14 horas."
+        ],
+        [
+          "p",
+          "<strong>História Clínica:</strong> Relata que a dor teve início na noite anterior como um desconforto vago em volta do umbigo, acompanhado de recusa alimentar absoluta (anorexia) e sensação de plenitude. Vomitou duas vezes durante a madrugada (vômitos biliosos). Pela manhã, a dor \"mudou de lugar\", descendo para o lado inferior direito da barriga, tornando-se contínua, em pontadas fortes que pioram ao tossir e ao caminhar."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Bom estado geral, corado, febril (Temp axilar: 38,0°C), FC: 96 bpm, PA: 120/75 mmHg. Abdome: plano, com dor à palpação profunda na fossa ilíaca direita. <strong>Dor intensa no ponto de McBurney associada a descompressão dolorosa positiva e nítida (Sinal de Blumberg positivo)</strong>. <strong>Sinal de Rovsing positivo</strong> (dor na FID ao comprimir a FIE). Sinais do psoas e obturador negativos."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais:</strong> Hemograma com 14.800 leucócitos/$mm^3$ (desvio à esquerda com 78% de neutrófilos e 6% de bastonetes). Exame de urina (EAS) normal sem leucocitúria ou bacteriúria."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Reconhecimento Clínico-Semiológico:</strong> O paciente apresenta a <strong>Cronologia de Murphy completa</strong> (dor periumbilical visceral $\rightarrow$ anorexia $\rightarrow$ vômitos $\rightarrow$ migração para a FID somática em 12-14 horas). Os sinais de McBurney, Blumberg e Rovsing fecham irritação peritoneal localizada típica na fossa ilíaca direita."
+        ],
+        [
+          "p",
+          "<strong>2. Aplicação do Escore de Alvarado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>3. Conduta Terapêutica:</strong> Em homem jovem com quadro clínico patognomônico e Alvarado máximo (10 pontos), não há necessidade mandatória de postergar o tratamento com exames tomográficos demorados. Conduta: jejum oral, hidratação venosa, <strong>antibioticoprofilaxia em dose única (Cefazolina 2 g + Metronidazol 500 mg IV na indução)</strong> e <strong>Apendicectomia Videolaparoscópica de Urgência</strong>. Achado intraoperatório confirmou apendicite flegmonosa (fase 2) por fecalito intraluminal. Alta no primeiro dia pós-operatório sem antibióticos em casa."
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Apendicite Retrocecal Atípica com Sinal do Psoas"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 35 anos, motorista rodoviário, procura pronto-socorro com dor em flanco direito e região lombar direita há 36 horas. Já passou por duas consultas ambulatoriais prévias recebendo analgésicos e diagnóstico presuntivo de cólica nefrética."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Abdome flácido, com sensibilidade profunda discreta em FID, <strong>sem sinal de Blumberg evidente à palpação anterior</strong>. Ausência de massas palpáveis. Giordano negativo à punho-percussão lombar. Ao posicionar o paciente em <strong>decúbito lateral esquerdo e realizar a hiperextensão passiva da coxa direita para trás, o paciente refere dor lancinante na profundidade da FID e flanco direito (Sinal do Psoas intensamente positivo)</strong>."
+        ],
+        [
+          "p",
+          "<strong>Laboratório e Imagem:</strong> Hemograma com 16.200 leucócitos/$mm^3$ com desvio à esquerda. EAS com 12 leucócitos por campo e raras hemácias (leucocitúria asséptica por contiguidade ureteral). Tomografia computadorizada de abdome e pelve com contraste IV evidenciou <strong>apêndice cecal em topografia retrocecal ascendente</strong>, distendido com 11 mm de diâmetro, parede espessada com realce anelar, borramento acentuado do plano adiposo retrocecal e contato anatômico direto com o ventre do músculo psoas maior direito."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Fisiopatologia da Apresentação Atípica:</strong> O apêndice retrocecal (posição mais frequente na anatomia humana, 65%) encontra-se protegido anteriormente pelo ceco e cólon ascendente repletos de ar. Por esse motivo, a palpação abdominal anterior superficial é frequentemente indolente e o sinal de Blumberg anterior costuma ser negativo ou duvidoso nas fases iniciais."
+        ],
+        [
+          "p",
+          "<strong>2. Valor da Manobra do Psoas:</strong> A tração e o estiramento passivo do músculo psoas deflagram atrito mecânico direto contra o apêndice retrocecal em chamas, confirmando o foco patológico."
+        ],
+        [
+          "p",
+          "<strong>3. Conduta:</strong> Paciente encaminhado para <strong>Apendicectomia Videolaparoscópica</strong>. A laparoscopia permitiu mobilização segura do cólon ascendente pela goteira parietocólica direita (manobra de Cattell-Braasch parcial), exposição do espaço retroperitoneal, clipagem do mesoapêndice e apendicectomia com lavagem local. Evolução excelente."
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Plastrão Apendicular em Paciente Idoso e Conduta de Intervalo"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 58 anos, diabética tipo 2, dá entrada no hospital com queixa de dor na fossa ilíaca direita associada a febre intermitente e perda de apetite iniciada há 8 dias."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Encontra-se em regular estado geral, afebril no momento da triagem (37,4°C), PA: 130/80 mmHg, FC: 84 bpm. Abdome globoso, com ruídos hidroaéreos presentes. À palpação da fossa ilíaca direita, nota-se <strong>massa tumoral palpável endurecida, dolorosa, medindo cerca de 6 a 7 cm de extensão</strong>, circundada por tecido tenso, sem sinais de peritonite difusa nos demais quadrantes."
+        ],
+        [
+          "p",
+          "<strong>Tomografia Computadorizada de Abdome com Contraste IV:</strong> Demonstra <strong>plastrão apendicular bloqueado</strong> composto por espessamento inflamatório maciço do ceco, apêndice perfurado contendo apendicolito na base, circundado pelo omento maior e alças de íleo aderidas, associado a uma <strong>coleção líquida com realce periférico em anel medindo 5,2 cm no maior diâmetro (abscesso apendicular bloqueado)</strong>."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Por que NÃO Operar de Urgência?</strong> A paciente apresenta evolução tardia (&gt; 7 dias) com plastrão apendicular organizado. A cirurgia de emergência nesse cenário apresenta risco exorbitante de fístula estercorácea cecal, rotura iatrogênica de alças e conversão mandatória para hemicolectomia direita aberta desnecessária."
+        ],
+        [
+          "p",
+          "<strong>2. Conduta Inicial Conservadora de Escolha:</strong>"
+        ],
+        [
+          "p",
+          "<strong>3. Conduta Tardia Obrigatória:</strong>"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Apendicite Aguda na Gestação (Segundo Trimestre)"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Gestante de 27 anos, primigesta na 22ª semana de idade gestacional, procura a maternidade de alto risco com dor no flanco direito e hipocôndrio direito iniciada há 20 horas, acompanhada de dois episódios de vômitos e febre de 38,1°C."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Altura uterina de 20 cm compatível com a idade gestacional. Batimentos cardiofetais (BCF) rítmicos a 148 bpm com boa vitalidade. Abdome: dor à palpação profunda localizada no <strong>flanco direito e hipocôndrio direito</strong> (acima do ponto clássico de McBurney), com descompressão dolorosa positiva localizada. Ausência de contrações uterinas ou perdas vaginais."
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares:</strong> Leucograma revelando 17.500 leucócitos/$mm^3$ com 8% de bastões (desvio à esquerda patológico além da leucocitose fisiológica gestacional). A <strong>Ultrassonografia obstétrica e abdominal com compressão gradual foi inconclusiva</strong> em virtude da interposição do útero gravídico e gases colônicos que impediram a visualização completa do ceco e apêndice."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Variação Anatômica Topográfica na Gestação:</strong> O útero gravídico volumoso desloca o ceco e o apêndice cefalicamente e lateralmente. No final do 2º trimestre e durante o 3º trimestre, o ponto de maior dor situa-se no flanco ou hipocôndrio direito, mimetizando colecistite aguda ou pielonefrite;"
+        ],
+        [
+          "p",
+          "<strong>2. Próximo Passo Propedêutico:</strong> Como a USG foi inconclusiva e a paciente é gestante, o exame de imagem complementar de escolha é a <strong>Ressonância Magnética (RM) de Abdome sem gadolínio</strong>. A RM confirmou apêndice de 9 mm com hiperintensidade de sinal em T2, líquido livre peri-apendicular e edema parietal no flanco direito;"
+        ],
+        [
+          "p",
+          "<strong>3. Tratamento Cirúrgico:</strong> <strong>Apendicectomia Videolaparoscópica de Urgência</strong> com técnica adaptada para gestantes: pneumoperitônio suave com pressão intra-abdominal reduzida (10 a 12 mmHg), posicionamento do primeiro trocarte guiado pela altura uterina (trocarte supraumbilical aberto por técnica de Hasson) e monitorização contínua dos batimentos cardiofetais. Procedimento realizado sem intercorrências, com preservação da integridade fetal e alta no 2º dia de pós-operatório."
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-apendicite",
+      0,
+      [
+        [
+          "2",
+          "13. Questões Comentadas de Residência Médica e Revalida/ENAMED"
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (Residência Médica / ENARE / USP):</strong><br>\n  Homem de 21 anos é admitido com história de dor periumbilical vaga iniciada há 16 horas, que migrou para a fossa ilíaca direita nas últimas 6 horas, acompanhada de náuseas e inapetência. Ao exame físico: corado, hidratado, temperatura axilar de 37,9°C. Abdome plano, ruídos hidroaéreos diminuídos. Apresenta dor intensa à compressão do ponto de McBurney com descompressão dolorosa brusca positiva na fossa ilíaca direita. Ao comprimir a fossa ilíaca esquerda de forma retrógrada em direção ao cólon descendente, o paciente refere dor intensa na fossa ilíaca direita. Qual é a denominação semiológica dessa manobra executada na fossa ilíaca esquerda e qual o mecanismo fisiopatológico subjacente?"
+        ],
+        [
+          "p",
+          "A) Sinal de Blumberg; irritação peritoneal parietal direta por atrito de lâminas serosas.<br>\n  B) Sinal de Rovsing; deslocamento retrógrado de gases colônicos distendendo o ceco inflamado.<br>\n  C) Sinal do Psoas; estiramento das fibras musculares do psoas em apêndice retrocecal.<br>\n  D) Sinal do Obturador; compressão da fáscia muscular pélvica em apêndice pélvico descendente.<br>\n  E) Sinal de Dunphy; elevação súbita da pressão intra-abdominal provocada pela tosse voluntária."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (UNICAMP / Revalida INEP):</strong><br>\n  Sobre a etiopatogenia e fisiopatologia da apendicite aguda, assinale a alternativa que correlaciona CORRETAMENTE a faixa etária à causa mais frequente de obstrução luminal apendicular:"
+        ],
+        [
+          "p",
+          "A) Em crianças e adolescentes, a causa predominante é o fecalito intraluminal calcificado decorrente de dieta pobre em fibras.<br>\n  B) Em adultos jovens e escolares, a causa mais comum é a hiperplasia dos folículos linfoides submucosos associada a infecções virais prévias.<br>\n  C) Em idosos acima de 65 anos, a obstrução luminal decorre exclusivamente de corpos estranhos de origem alimentar.<br>\n  D) A infestação por Enterobius vermicularis é a principal causa isolada de apendicite aguda em todas as faixas etárias nos países tropicais.<br>\n  E) O adenocarcinoma cecal estenosante responde por mais de 50% de todos os casos de apendicite aguda em homens com menos de 30 anos."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (SUS-SP / Cirurgia Geral):</strong><br>\n  Jovem de 19 anos comparece à sala de emergência com história de dor abdominal periumbilical que migrou para a fossa ilíaca direita há 10 horas, anorexia, dois episódios de náuseas, sem vômitos. Exame físico: dor à palpação profunda na fossa ilíaca direita com descompressão dolorosa moderada (Blumberg positivo). Temperatura axilar de 37,5°C. Hemograma colhido revela 12.500 leucócitos/$mm^3$ com 79% de neutrófilos segmentados. Calcule a pontuação deste paciente no Escore de Alvarado e defina a conduta preconizada:"
+        ],
+        [
+          "p",
+          "A) Alvarado 5 pontos (Baixo Risco); alta hospitalar com sintomáticos.<br>\n  B) Alvarado 7 pontos (Alto Risco); indicação de apendicectomia cirúrgica.<br>\n  C) Alvarado 9 pontos (Alto Risco); indicação de apendicectomia cirúrgica.<br>\n  D) Alvarado 6 pontos (Risco Intermediário); TC de abdome obrigatória.<br>\n  E) Alvarado 10 pontos (Altíssimo Risco); laparotomia exploradora imediata."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 4 (ENAMED / AMRIGS):</strong><br>\n  Mulher de 54 anos apresenta-se no pronto-atendimento com dor na fossa ilíaca direita há 8 dias, febre diária de 38,0°C e astenia. Ao exame abdominal, palpa-se massa dolorosa, fixa, de limites imprecisos na FID medindo cerca de 6 cm. A tomografia computadorizada confirma plastrão apendicular bloqueado por omento e alças de delgado, com abscesso organizado medindo 5,0 cm de diâmetro. A paciente encontra-se hemodinamicamente estável, sem sinais de peritonite difusa. Qual é a conduta sequencial mais adequada recomendada pelas diretrizes atuais?"
+        ],
+        [
+          "p",
+          "A) Laparotomia exploradora mediana imediata com apendicectomia e drenagem aberta da cavidade.<br>\n  B) Hemicolectomia direita de urgência com anastomose íleo-transversa primária.<br>\n  C) Tratamento clínico inicial com antibioticoterapia venosa associada a drenagem percutânea do abscesso guiada por TC/USG; colonoscopia após 6 semanas e apendicectomia de intervalo tardia.<br>\n  D) Apendicectomia videolaparoscópica de urgência com lise imediata de todas as aderências do plastrão.<br>\n  E) Alta hospitalar com ciprofloxacino oral e acompanhamento clínico sem necessidade de cirurgia."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 5 (USP-RP / Cirurgia Geral):</strong><br>\n  Em relação à profilaxia e terapia antimicrobiana na apendicite aguda, assinale a afirmativa correta:"
+        ],
+        [
+          "p",
+          "A) Na apendicite aguda não complicada (fases 1 e 2), a antibioticoprofilaxia com Cefazolina e Metronidazol deve ser iniciada na indução anestésica e mantida por 48 horas após a cirurgia.<br>\n  B) Na apendicite aguda não complicada completamente ressecada, a antibioticoprofilaxia restringe-se a uma dose única no perioperatório, não devendo ser mantida no pós-operatório.<br>\n  C) Na apendicite perfurada com peritonite purulenta difusa, a antibioticoterapia terapêutica deve ser mantida obrigatoriamente por 14 a 21 dias de internação hospitalar.<br>\n  D) O uso de antimicrobianos de amplo espectro dispensa a intervenção cirúrgica mesmo na vigência de peritonite purulenta livre.<br>\n  E) A cefazolina em monoterapia é suficiente para profilaxia em apendicite por cobrir com excelência o Bacteroides fragilis."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 6 (IAMSPE / Residência Médica):</strong><br>\n  Durante a realização de apendicectomia laparoscópica em um homem de 28 anos com suspeita clínica de apendicite aguda, o cirurgião inspeciona o apêndice cecal e constata que ele está absolutamente normal, desprovido de qualquer sinal macroscópico inflamatório. Diante desse achado intraoperatório, qual deve ser a conduta cirúrgica imediata?"
+        ],
+        [
+          "p",
+          "A) Interromper a cirurgia imediatamente, desinsuflar o pneumoperitônio e encaminhar o paciente à enfermaria sem retirar o apêndice.<br>\n  B) Realizar a apendicectomia incidental e encerrar o procedimento sem examinar o restante do abdome.<br>\n  C) Explorar sistematicamente a cavidade abdominal (especialmente os últimos 100 cm de íleo terminal para pesquisa de divertículo de Meckel e anexos) e realizar a apendicectomia incidental.<br>\n  D) Converter imediatamente para laparotomia mediana para realizar hemicolectomia direita profilática.<br>\n  E) Coletar apenas lavado peritoneal para citologia oncótica e fechar os portais."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 7 (UNICAMP / Cirurgia Oncológica / Residência):</strong><br>\n  Mulher de 46 anos é submetida a apendicectomia videolaparoscópica não complicada por apendicite aguda flegmonosa. O laudo anatomopatológico definitivo revela: Tumor Neuroendócrino Bem Diferenciado (antigo Carcinoide) do apêndice cecal, localizado na ponta do apêndice, medindo 0,8 cm no maior diâmetro, grau G1 (Ki-67 &lt; 2%), com margem cirúrgica na base apendicular livre (&gt; 15 mm), sem invasão angiolinfática ou perineural e sem infiltração do mesoapêndice. Qual é a conduta oncológica subsequente preconizada pelas diretrizes internacionais (ENETS / NANETS)?"
+        ],
+        [
+          "p",
+          "A) Indicar Hemicolectomia Direita Oncológica com linfadenectomia ileocólica imediata.<br>\n  B) Indicar quimioterapia adjuvante sistêmica com capecitabina associada a análogos de somatostatina.<br>\n  C) Nenhuma intervenção cirúrgica adicional necessária; a apendicectomia isolada foi curativa.<br>\n  D) Realizar colectomia transversa com anastomose primária.<br>\n  E) Indicar radioterapia de feixe externo dirigida à fossa ilíaca direita."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 8 (USP / ENARE):</strong><br>\n  Criança de 4 anos é trazida pela mãe ao pronto-socorro com febre de 38,5°C, irritabilidade, dor abdominal difusa e recusa alimentar iniciadas há 48 horas. A mãe relata que a criança chorava muito ao sentar ou deambular. Ao exame físico: fácies de dor, hipoativa, taquicárdica (FC 130 bpm). Abdome distendido, com dor difusa e defesa involuntária em quadrante inferior direito. Qual é a principal particularidade anatômica e fisiopatológica da apendicite aguda em crianças menores de 5 anos que justifica a elevada incidência de perfuração precoce nessa faixa etária?"
+        ],
+        [
+          "p",
+          "A) Presença de omento maior longo e redundante que bloqueia precocemente o apêndice formando plastrão palpável.<br>\n  B) Parede apendicular fina e hipodesenvolvimento do omento maior (epíplon curto), que é incapaz de conter o processo infeccioso, propiciando peritonite difusa rápida.<br>\n  C) Ausência completa de folículos linfoides submucosos no apêndice da criança pequena.<br>\n  D) Diâmetro intraluminal apendicular extremamente amplo que impede a proliferação bacteriana.<br>\n  E) Predomínio absoluto de bactérias anaeróbias estritas desde as primeiras 2 horas de vida."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 9 (Revalida INEP / Cirurgia Geral):</strong><br>\n  Em relação às vias de acesso cirúrgico na apendicite aguda, assinale a alternativa que descreve a INCISÃO DE ROCKEY-DAVIS:"
+        ],
+        [
+          "p",
+          "A) Incisão oblíqua na fossa ilíaca direita perpendicular à linha espinoumbilical sobre o ponto de McBurney.<br>\n  B) Incisão transversa horizontal na fossa ilíaca direita, cerca de 2 a 3 cm abaixo do umbigo, com divulsão da musculatura da parede abdominal.<br>\n  C) Incisão mediana longitudinal estendendo-se do processo xifoide até a sínfise púbica.<br>\n  D) Incisão subcostal direita paralela ao rebordo costal para visualização do ligamento falciforme.<br>\n  E) Incisão paramediana pararetal interna com secção transversa do músculo reto do abdome."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 10 (UNICAMP / Residência Médica):</strong><br>\n  Homem de 65 anos apresenta apendicite aguda confirmada por TC e é submetido a apendicectomia. O exame histopatológico da peça cirúrgica revela: Adenocarcinoma do Apêndice Cecal, infiltrativo, moderadamente diferenciado, invadindo a camada muscular própria e subserosa (pT2), com margem cirúrgica na base apendicular microscopicamente comprometida por células neoplásicas. Qual é a conduta cirúrgica e oncológica indicada para este paciente?"
+        ],
+        [
+          "p",
+          "A) Alta com seguimento colonoscópico anual sem nova cirurgia.<br>\n  B) Reoperação para realização de Hemicolectomia Direita Oncológica com linfadenectomia da cadeia ileocólica.<br>\n  C) Radioterapia adjuvante pélvica associada a 5-Fluorouracil sistêmico.<br>\n  D) Ressecção em cunha do ceco por videolaparoscopia com margem de 1 cm.<br>\n  E) Drenagem percutânea da fossa ilíaca direita e antibioticoterapia por 6 meses."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ]
+      ]
+    ],
+    [
+      "pontos-chave-enamed-apendicite",
+      0,
+      [
+        [
+          "2",
+          "14. Pontos de Alto Rendimento e Diretrizes Práticas de Memorização para o ENAMED"
+        ],
+        [
+          "3",
+          "Os Dez Mandamentos da Apendicite Aguda para Concursos"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Cronologia de Murphy é Regra de Ouro:</strong> Dor visceral periumbilical $\rightarrow$ anorexia absoluta $\rightarrow$ náuseas/vômitos discretos $\rightarrow$ migração para a FID somática contínua em 6 a 12 horas. A dor SEMPRE precede os vômitos.",
+            "<strong>2. Causas de Obstrução Luminal por Idade:</strong> Crianças e jovens = hiperplasia linfoide submucosa em 60% (pós-virose respiratória ou diarreica); Adultos e idosos = fecalito/apendicolito em 35%. Acima de 40-50 anos: pensar em neoplasia cecal ou tumor neuroendócrino.",
+            "<strong>3. As Quatro Fases Evolutivas:</strong> 1. Edematosa/catarral (dor visceral medial, peritônio íntegro); 2. Flegmonosa/supurada (dor somática na FID, Blumberg positivo); 3. Gangrenosa/necrosante (isquemia arterial, microtrombose, peritonismo franco); 4. Perfurada (alívio fugaz da tensão seguido de peritonite difusa ou abscesso bloqueado).",
+            "<strong>4. Sinal de Rovsing:</strong> Compressão retrógrada da fossa ilíaca ESQUERDA gera dor na fossa ilíaca DIREITA por deslocamento aéreo no cólon até o ceco.",
+            "<strong>5. Apêndice Retrocecal vs Pélvico:</strong> Retrocecal (65%) = dor lombar/flanco, Blumberg anterior negativo, <strong>Sinal do Psoas positivo</strong> (dor à hiperextensão da coxa); Pélvico = disúria, piúria estéril, tenesmo, <strong>Sinal do Obturador positivo</strong> (dor à rotação interna da coxa flexionada a 90°).",
+            "<strong>6. Escore de Alvarado (MANTRELS):</strong> 0-4 descarta (baixo risco); 5-6 observação e imagem (risco intermediário); 7-10 cirurgia indicada (alto risco). Ganham 2 pontos apenas: dor na FID (Tenderness) e leucocitose &gt; 10.000 (Leukocytosis).",
+            "<strong>7. Métodos de Imagem:</strong> USG com compressão graduada (diâmetro &gt; 6 mm incompressível, halo periapendicular, apendicolito com sombra acústica) de 1ª linha na criança e gestante; TC com contraste IV padrão-ouro no adulto e idoso; RM sem gadolínio de resgate na gestante.",
+            "<strong>8. Laparoscopia é Padrão-Ouro:</strong> Menor dor, menor infecção de ferida e retorno rápido. Superior especialmente em obesos e mulheres em idade fértil.",
+            "<strong>9. Plastrão Apendicular (&gt; 5-7 dias):</strong> Tratamento conservador com antibióticos venosos; drenagem percutânea por TC se abscesso &gt; 3 a 4 cm; colonoscopia em &ge; 40 anos para descartar câncer cecal; e <strong>apendicectomia de intervalo eletiva após 6 a 12 semanas</strong>.",
+            "<strong>10. Antibióticos:</strong> Dose única pré-operatória de Cefazolina + Metronidazol na apendicite não complicada (NÃO manter no pós-operatório!). Na apendicite complicada perfurada, manter 3 a 5 dias no pós-operatório (Ceftriaxona + Metronidazol)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://wses.biomedcentral.com/articles/10.1186/s13017-020-00306-3\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) — Jerusalem Guidelines for Diagnosis and Management of Acute Appendicitis</a>",
+            "<a href=\"https://cbc.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) — Recomendações e Diretrizes no Manejo da Apendicite Aguda</a>",
+            "<a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa1411162\" target=\"_blank\" rel=\"noopener noreferrer\">The New England Journal of Medicine (NEJM) — Trial of Short-Course Antimicrobial Therapy for Intraabdominal Infection (STOP-IT Trial)</a>",
+            "<a href=\"https://eaes.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">European Association for Endoscopic Surgery (EAES) — Consensus Development Conference on Laparoscopic Appendectomy</a>",
+            "<a href=\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Radiology (ACR) — ACR Appropriateness Criteria: Suspected Appendicitis</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
