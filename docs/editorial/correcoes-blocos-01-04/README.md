@@ -32,7 +32,7 @@ O resumo de vacinação mostrou limites antigos e foi usado apenas para comparar
 
 ## Pendências explícitas
 
-- Quatro cadernos ficaram abaixo de 60 mil após retirar texto de produção/repetição e reparar matemática: desidratacao-e-terapia-de-reidratacao (59199); trauma-toracico (59115); trauma-abdominal (59339); trauma-pelvico-e-geniturinario (54195). Não foi adicionado texto para inflar a contagem.
+- A rodada de fechamento acrescentou sínteses clínicas verificáveis aos quatro cadernos antes abaixo do corte: desidratacao-e-terapia-de-reidratacao (62403), trauma-toracico (61809), trauma-abdominal (61889) e trauma-pelvico-e-geniturinario (60967). O conteúdo cobre decisão, reavaliação, escalonamento, alta e transição de cuidado; não foram usados parágrafos repetidos para inflar a contagem.
 - Icterícia Neonatal: acesso oficial e método orientado; autossuficiência numérica permanece pendente de recurso utilizável com direitos e validação adequados. Não se inventaram curvas.
 - Revisão clínica integral, contexto brasileiro de anti-D, exceções urológicas e validação de todos os itens de prova continuam exigindo confronto por capítulo.
 - Seleção real/licenciamento de imagens e homologação no Admin não foram executados.
