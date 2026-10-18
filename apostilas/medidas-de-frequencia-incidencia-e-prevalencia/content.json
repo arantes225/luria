@@ -1,0 +1,1256 @@
+{
+  "v": 2,
+  "s": "medidas-de-frequencia-incidencia-e-prevalencia",
+  "t": "Medidas de Frequência: Incidência e Prevalência",
+  "p": "Tratado completo de Medidas de Frequência em Saúde para concursos de Residência Médica e ENAMED: fundamentos matemáticos de quantificação coletiva (razões, proporções, taxas/coeficientes e índices); prevalência pontual vs prevalência periodal e dinâmica de determinantes (fatores que elevam e reduzem a prevalência); incidência acumulada (risco individual) e densidade de incidência (tempo-pessoa em coortes dinâmicas); a relação fundamental no estado estacionário P ≈ I × D e suas implicações clínicas na introdução de terapias curativas vs de sobrevida prolongada; coeficientes de mortalidade geral e específica, padronização de taxas por método direto e indireto (RMP/SMR); taxa de letalidade como medida de gravidade intrínseca; razão de mortalidade materna (RMM: causas obstétricas diretas vs indiretas); coeficiente de mortalidade infantil (CMI) e seus três componentes cronológicos (neonatal precoce de 0 a 6 dias, neonatal tardio de 7 a 27 dias e pós-neonatal de 28 a 364 dias) e a transição epidemiológica no Brasil; natimortalidade e mortalidade perinatal; transição demográfica em quatro fases e a tripla carga de doenças brasileira; tábuas de vida e expectativa de vida ao nascer; análise de sobrevida de Kaplan-Meier com censuras e teste de Log-Rank; curvas de mortalidade proporcional por idade de Nelson de Moraes (Tipos I, II, III e IV); indicadores sintéticos de carga global de doença (APVP e DALY: YLL + YLD); 4 casos clínicos estruturados e bateria avançada de 10 questões de concursos com análise exaustiva de distratores.",
+  "d": "Tratado completo de Medidas de Frequência em Saúde para concursos de Residência Médica e ENAMED: fundamentos matemáticos de quantificação coletiva (razões, proporções, taxas/coeficientes e índices); prevalência pontual vs prevalência periodal e dinâmica de determinantes (fatores que elevam e reduzem a prevalência); incidência acumulada (risco individual) e densidade de incidência (tempo-pessoa em coortes dinâmicas); a relação fundamental no estado estacionário P ≈ I × D e suas implicações clínicas na introdução de terapias curativas vs de sobrevida prolongada; coeficientes de mortalidade geral e específica, padronização de taxas por método direto e indireto (RMP/SMR); taxa de letalidade como medida de gravidade intrínseca; razão de mortalidade materna (RMM: causas obstétricas diretas vs indiretas); coeficiente de mortalidade infantil (CMI) e seus três componentes cronológicos (neonatal precoce de 0 a 6 dias, neonatal tardio de 7 a 27 dias e pós-neonatal de 28 a 364 dias) e a transição epidemiológica no Brasil; natimortalidade e mortalidade perinatal; transição demográfica em quatro fases e a tripla carga de doenças brasileira; tábuas de vida e expectativa de vida ao nascer; análise de sobrevida de Kaplan-Meier com censuras e teste de Log-Rank; curvas de mortalidade proporcional por idade de Nelson de Moraes (Tipos I, II, III e IV); indicadores sintéticos de carga global de doença (APVP e DALY: YLL + YLD); 4 casos clínicos estruturados e bateria avançada de 10 questões de concursos com análise exaustiva de distratores.",
+  "a": "Medicina Preventiva",
+  "m": "Epidemiologia Geral e Bioestatística em Saúde",
+  "h": [
+    "Apostila LURIA",
+    "Medidas de Frequência: Incidência e Prevalência",
+    "Tratado completo de Medidas de Frequência em Saúde para concursos de Residência Médica e ENAMED: fundamentos matemáticos de quantificação coletiva (razões, proporções, taxas/coeficientes e índices); prevalência pontual vs prevalência periodal e dinâmica de determinantes (fatores que elevam e reduzem a prevalência); incidência acumulada (risco individual) e densidade de incidência (tempo-pessoa em coortes dinâmicas); a relação fundamental no estado estacionário P ≈ I × D e suas implicações clínicas na introdução de terapias curativas vs de sobrevida prolongada; coeficientes de mortalidade geral e específica, padronização de taxas por método direto e indireto (RMP/SMR); taxa de letalidade como medida de gravidade intrínseca; razão de mortalidade materna (RMM: causas obstétricas diretas vs indiretas); coeficiente de mortalidade infantil (CMI) e seus três componentes cronológicos (neonatal precoce de 0 a 6 dias, neonatal tardio de 7 a 27 dias e pós-neonatal de 28 a 364 dias) e a transição epidemiológica no Brasil; natimortalidade e mortalidade perinatal; transição demográfica em quatro fases e a tripla carga de doenças brasileira; tábuas de vida e expectativa de vida ao nascer; análise de sobrevida de Kaplan-Meier com censuras e teste de Log-Rank; curvas de mortalidade proporcional por idade de Nelson de Moraes (Tipos I, II, III e IV); indicadores sintéticos de carga global de doença (APVP e DALY: YLL + YLD); 4 casos clínicos estruturados e bateria avançada de 10 questões de concursos com análise exaustiva de distratores.",
+    [
+      "Área: Medicina Preventiva",
+      "Matéria: Epidemiologia Geral e Bioestatística em Saúde",
+      "Tema: Medidas de Frequência: Incidência e Prevalência"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "conceitos-fundamentais-razoes-proporcoes-taxas",
+      "1. Fundamentos Matemáticos da Quantificação em Saúde: Razões, Proporções, Taxas e Índices"
+    ],
+    [
+      "prevalencia-pontual-e-periodal",
+      "2. Prevalência: Prevalência Pontual, Prevalência Periodal e Fatores Determinantes da Flutuação"
+    ],
+    [
+      "incidencia-acumulada-e-densidade-de-incidencia",
+      "3. Incidência: Incidência Acumulada (Risco), Densidade de Incidência (Tempo-Pessoa) e Coortes Dinâmicas"
+    ],
+    [
+      "relacao-matematica-prevalencia-incidencia-duracao",
+      "4. A Relação Fundamental entre Prevalência, Incidência e Duração Média da Doença (P ≈ I × D)"
+    ],
+    [
+      "coeficientes-de-mortalidade-e-letalidade",
+      "5. Coeficientes de Mortalidade Geral, Específica, Mortalidade Materna e Letalidade"
+    ],
+    [
+      "mortalidade-infantil-e-seus-componentes",
+      "6. Mortalidade Infantil e seus Componentes Temporais: Neonatal Precoce, Tardio e Pós-Neonatal"
+    ],
+    [
+      "casos-clinicos-estruturados-medidas-frequencia",
+      "7. Casos Clínicos Estruturados e Raciocínio Prático em Medidas de Frequência"
+    ],
+    [
+      "sintese-de-alto-rendimento-e-armadilhas-frequencia",
+      "8. Síntese de Alto Rendimento e Diretrizes para o ENAMED e Residência Médica"
+    ],
+    [
+      "bateria-de-questoes-comentadas-frequencia",
+      "9. Bateria de Questões Comentadas do ENAMED e Concursos Médicos de Residência"
+    ],
+    [
+      "transicao-demografica-e-epidemiologica-no-brasil",
+      "10. Transição Demográfica, Transição Epidemiológica e Carga Global de Doenças no Brasil"
+    ],
+    [
+      "padronizacao-de-taxas-e-indicadores-sinteticos",
+      "11. Padronização de Taxas (Métodos Direto e Indireto), DALY e Anos Potenciais de Vida Perdidos (APVP)"
+    ],
+    [
+      "construcao-e-interpretacao-de-tabelas-de-vida-e-sobrevida",
+      "12. Tábuas de Vida, Análise de Sobrevida (Curvas de Kaplan-Meier) e Mortalidade Proporcional por Faixas Etárias de Nelson Moraes"
+    ],
+    [
+      "bateria-complementar-questoes-comentadas-frequencia",
+      "13. Bateria Complementar de Questões Comentadas de Alto Nível para Provas de Título e Residência"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "conceitos-fundamentais-razoes-proporcoes-taxas",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos Matemáticos da Quantificação em Saúde: Razões, Proporções, Taxas e Índices"
+        ],
+        [
+          "3",
+          "A Necessidade Epistemológica da Medição em Saúde Coletiva"
+        ],
+        [
+          "p",
+          "Em medicina clínica, o foco do raciocínio semiológico recai primariamente sobre o indivíduo: diagnosticar a afecção do paciente e definir a melhor terapêutica singular. Em saúde coletiva e epidemiologia, contudo, a unidade de observação é a <strong>população</strong>. Números absolutos de doentes ou de óbitos (frequência absoluta) raramente fornecem subsídios suficientes para a tomada de decisão em políticas públicas ou para a comparação fidedigna entre diferentes comunidades. Saber que um município registrou 500 mortes por infarto e outro registrou 50 mortes é insuficiente se não conhecermos o tamanho e a estrutura etária de suas respectivas populações."
+        ],
+        [
+          "p",
+          "Para conferir comparabilidade científica aos dados, a epidemiologia utiliza instrumentos matemáticos de quantificação divididos em quatro categorias operacionais rigorosamente cobradas em concursos médicos e no ENAMED:"
+        ],
+        [
+          "t",
+          [
+            "Instrumento Matemático",
+            "Definição Operacional e Relação Numerador / Denominador",
+            "Propriedades Matemáticas e Intervalo de Valores",
+            "Exemplos Clássicos em Saúde Pública"
+          ],
+          [
+            [
+              "<strong>Razão (Ratio)</strong>",
+              "Divisão direta entre duas quantidades mutuamente excludentes, em que <strong>o numerador NÃO está contido no denominador</strong> ($A / B$). As unidades de medida do numerador e do denominador podem ser iguais ou distintas.",
+              "Adimensional ou com unidades compostas. Varia de 0 a $+\\infty$. Não é expressa em porcentagem.",
+              "• <strong>Razão de Sexos (Razão Homem / Mulher):</strong> Número de homens dividido pelo número de mulheres em uma comunidade;<br>\n        • <strong>Razão de Dependência:</strong> População de idosos ($ge 65$ anos) e crianças ($&lt; 15$ anos) dividida pela população em idade ativa (15 a 64 anos);<br>\n        • <strong>Razão Leito Hospitalar por Habitante:</strong> Número de leitos de UTI dividido pelo número total de residentes."
+            ],
+            [
+              "<strong>Proporção (Proportion)</strong>",
+              "Fração na qual <strong>o numerador ESTÁ OBRIGATORIAMENTE CONTIDO no denominador</strong> ($A / [A + B]$). Mede a fatia ou participação relativa de um subgrupo dentro do todo coletivo.",
+              "Adimensional. Varia obrigatoriamente entre <strong>0 e 1 (ou de 0% a 100%)</strong>. Não inclui a dimensão temporal intrínseca em sua fórmula matemática.",
+              "• <strong>Mortalidade Proporcional por Causa (Índice de Swaroop-Uemura):</strong> Percentual de todos os óbitos que ocorreram em pessoas com $ge 50$ anos de idade;<br>\n        • <strong>Mortalidade Proporcional por Doenças Cardiovasculares:</strong> Número de óbitos por IAM dividido pelo total geral de óbitos por todas as causas multiplicada por 100;<br>\n        • <strong>Proporção de Partos Cesáreos:</strong> Partos cesáreos divididos pelo total de partos."
+            ],
+            [
+              "<strong>Taxa ou Coeficiente (Rate)</strong>",
+              "Medida dinâmica que quantifica a <strong>velocidade de ocorrência</strong> de um evento em uma população sob risco ao longo do <strong>tempo</strong>. O numerador representa os eventos novos observados em um período; o denominador representa a população sob risco multiplicada pela dimensão temporal ($A / [\\text{População sob risco} \\times \\text{Tempo}]$).",
+              "Possui dimensão temporal estrita ($tempo^{-1}$). Multiplica-se rotineiramente por uma potência de 10 (habitualmente por 1.000, 10.000 ou 100.000 habitantes) para facilitar a interpretação epidemiológica.",
+              "• <strong>Densidade de Incidência:</strong> Novos casos por pessoas-ano de seguimento;<br>\n        • <strong>Coeficiente de Mortalidade Geral:</strong> Óbitos anuais por 1.000 habitantes;<br>\n        • <strong>Taxa de Ataque:</strong> Novos casos em um surto restrito."
+            ],
+            [
+              "<strong>Índice (Index)</strong>",
+              "Termo de uso mais amplo e flexível na literatura, frequentemente empregado como sinônimo de razão ou indicador sintético composto construído para mensurar fenômenos multidimensionais complexos.",
+              "Pode assumir diferentes escalas conforme a metodologia de ponderação.",
+              "• <strong>Índice de Massa Corporal (IMC):</strong> Peso em quilogramas dividido pelo quadrado da altura em metros ($kg/m^2$);<br>\n        • <strong>Índice de Desenvolvimento Humano (IDH):</strong> Média geométrica ponderada de longevidade, educação e renda per capita;<br>\n        • <strong>Índice de Vulnerabilidade Social (IVS).</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Regra Básica de Ouro de Concursos: Taxa versus Proporção"
+        ],
+        [
+          "p",
+          "As bancas examinadoras de residência médica frequentemente constroem pegadinhas explorando a confusão entre <strong>Taxa de Mortalidade</strong> e <strong>Mortalidade Proporcional</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Taxa / Coeficiente de Mortalidade por Câncer de Pulmão:</strong>\n    $$\\text{Taxa} = \\frac{\\text{Óbitos por câncer de pulmão no ano}}{\\text{População total sob risco no meio do ano}} \\times 100.000$$\n    Expressa o <strong>risco biológico real</strong> que um habitante daquela comunidade tem de morrer por câncer de pulmão.",
+            "<strong>Mortalidade Proporcional por Câncer de Pulmão:</strong>\n    $$\\text{Mortalidade Proporcional} = \\frac{\\text{Óbitos por câncer de pulmão no ano}}{\\text{Total de óbitos por TODAS as causas no ano}} \\times 100$$\n    Expressa apenas a <strong>fatia (importância relativa)</strong> que o câncer de pulmão representa dentro da mortalidade global daquele município. Se a mortalidade proporcional por infarto for alta (ex.: 30%), isso NÃO significa necessariamente que a população tem alto risco de morrer de infarto — pode significar apenas que as mortes por causas infecciosas e desnutrição infantil caíram drasticamente!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "prevalencia-pontual-e-periodal",
+      0,
+      [
+        [
+          "2",
+          "2. Prevalência: Prevalência Pontual, Prevalência Periodal e Fatores Determinantes da Flutuação"
+        ],
+        [
+          "3",
+          "O Conceito de Prevalência"
+        ],
+        [
+          "p",
+          "A <strong>Prevalência</strong> é a medida de frequência que quantifica o <strong>número total de casos existentes</strong> (casos antigos somados aos casos novos) de uma doença ou condição de saúde em um dado momento, dividida pela população total naquele mesmo instante. Em termos estatísticos, a prevalência é uma <strong>proporção pura</strong> (adimensional, variando de 0 a 100%), funcionando epidemiologicamente como uma <strong>fotografia instantânea</strong> da carga de morbidade da comunidade."
+        ],
+        [
+          "3",
+          "Prevalência Pontual (ou Momentânea) versus Prevalência Periodal"
+        ],
+        [
+          "t",
+          [
+            "Modalidade de Prevalência",
+            "Definição Operacional e Janela Temporal",
+            "Fórmula Matemática Básica",
+            "Cenários de Aplicação Prática"
+          ],
+          [
+            [
+              "<strong>Prevalência Pontual (Ponto no Tempo)</strong>",
+              "Quantifica os casos existentes em um <strong>dia ou instante calendário exato</strong> no tempo (uma data fixa específica).",
+              "$$\\text{Prev Pontual} = \\frac{\\text{Nº de casos ativos no dia } T}{\\text{População total no dia } T} \\times 100$$",
+              "Inquérito transversal em um asilo realizado em 10 de outubro de 2026 avaliando quantos idosos são portadores de hipertensão arterial cadastrada; prevalência de asma em uma escola no dia do exame médico admissional."
+            ],
+            [
+              "<strong>Prevalência Periodal (Período de Tempo)</strong>",
+              "Quantifica o número total de indivíduos que apresentaram a doença <strong>em qualquer momento ao longo de um intervalo temporal delimitado</strong> (um mês, um ano ou ao longo da vida - <em>lifetime prevalence</em>). O numerador engloba: (1) indivíduos que já estavam doentes no início do período, MAIS (2) indivíduos saudáveis que adoeceram durante o intervalo.",
+              "$$\\text{Prev Periodal} = \\frac{\\text{Casos pré-existentes } + \\text{ Casos novos no período}}{\\text{População média estimada no período}} \\times 100$$",
+              "\"Qual a prevalência de depressão na população adulta brasileira nos últimos 12 meses?\" (inquérito domiciliar anual); prevalência de enxaqueca ao longo da vida em estudantes de medicina."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Dinâmica de Entrada e Saída: Fatores que Aumentam e Diminuem a Prevalência"
+        ],
+        [
+          "p",
+          "A prevalência de uma doença em uma população comporta-se analogamente ao nível de água dentro de uma represa:"
+        ],
+        [
+          "u",
+          [
+            "A torneira que enche a represa é a <strong>Incidência</strong> (surgimento contínuo de casos novos);",
+            "O ralo que esvazia a represa é a <strong>Cura</strong> ou o <strong>Óbito</strong> (saída definitiva de indivíduos da condição de doente)."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Fatores que ELEVAM a Prevalência",
+            "Fatores que REDUZEM a Prevalência"
+          ],
+          [
+            [
+              "• <strong>Aumento da Incidência:</strong> Aumento do número de casos novos entrando na população;<br>\n        • <strong>Maior Sobrevida sem Cura (Prolongamento da Duração da Doença):</strong> Introdução de novos tratamentos farmacológicos que <em>não curam</em> a doença, mas <em>evitam o óbito precoce</em> (ex.: introdução da terapia antirretroviral altamente potente - TARV para o HIV/AIDS transformou uma doença aguda rapidamente fatal em afecção crônica de longa sobrevida, fazendo a prevalência de pessoas vivendo com HIV disparar!);<br>\n        • <strong>Imigração de Casos Doentes:</strong> Chegada de indivíduos já infectados ou doentes procedentes de outras regiões;<br>\n        • <strong>Emigração de Pessoas Sadias:</strong> Êxodo de indivíduos saudáveis, reduzindo o denominador e elevando a proporção relativa de doentes;<br>\n        • <strong>Melhoria nos Recursos Diagnósticos e Rastreamento:</strong> Campanhas proativas de rastreamento com testes ultrassensíveis que detectam casos subclínicos e assintomáticos previamente ignorados.",
+              "• <strong>Diminuição da Incidência:</strong> Medidas preventivas ou vacinação eficaz que impedem o surgimento de novos casos;<br>\n        • <strong>Aumento das Taxas de Cura Rápida:</strong> Desenvolvimento de novos antibióticos ou procedimentos cirúrgicos curativos que encurtam a duração da doença (ex.: esquemas curativos de ação direta para Hepatite C que curam &gt; 95% dos pacientes em 12 semanas reduzem a prevalência rapidamente);<br>\n        • <strong>Aumento da Letalidade (Morte Rápida):</strong> Se a doença for altamente letal e matar o paciente em poucas horas ou dias (ex.: Raiva humana, Ébola), o indivíduo permanece doente por pouquíssimo tempo antes de falecer, mantendo a prevalência extremamente baixa a despeito da gravidade!;<br>\n        • <strong>Imigração de Pessoas Sadias:</strong> Chegada massiva de contingente populacional sem a doença (expansão do denominador);<br>\n        • <strong>Emigração de Doentes:</strong> Deslocamento de pacientes para buscar tratamento em grandes centros hospitalares fora do município."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "incidencia-acumulada-e-densidade-de-incidencia",
+      0,
+      [
+        [
+          "2",
+          "3. Incidência: Incidência Acumulada (Risco), Densidade de Incidência (Tempo-Pessoa) e Coortes Dinâmicas"
+        ],
+        [
+          "3",
+          "O Conceito de Incidência"
+        ],
+        [
+          "p",
+          "Enquanto a prevalência reflete a carga estática dos casos existentes, a <strong>Incidência</strong> é a medida epidemiológica soberana para quantificar o <strong>surgimento de CASOS NOVOS</strong> de uma doença ao longo do tempo em uma população previamente livre do agravo. A incidência é a única medida epidemiológica capaz de estimar diretamente o <strong>RISCO</strong> ou a <strong>VELOCIDADE</strong> de adoecimento, sendo indispensável para estabelecer associações causais e avaliar o impacto de intervenções preventivas."
+        ],
+        [
+          "p",
+          "A incidência mensura-se sob duas formas metodológicas complementares:"
+        ],
+        [
+          "3",
+          "1. Incidência Acumulada (IA) ou Risco (Cumulative Incidence / Proportion)"
+        ],
+        [
+          "p",
+          "A <strong>Incidência Acumulada</strong> é a proporção de indivíduos inicialmente sadios e sob risco que desenvolvem a doença ao longo de um período de tempo predeterminado de acompanhamento. Ela parte da premissa teórica de que todos os indivíduos do estudo foram acompanhados de maneira homogênea durante todo o intervalo de seguimento (coorte fixa fechada):"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$\\text{Incidência Acumulada (IA)} = \\frac{\\text{Número de casos NOVOS surgidos no intervalo de tempo } \\Delta t}{\\text{Número de pessoas sob risco e livres da doença no INÍCIO do período}}$$\n</div>"
+        ],
+        [
+          "p",
+          "<strong>Propriedades da Incidência Acumulada:</strong>"
+        ],
+        [
+          "u",
+          [
+            "É uma <strong>proporção matemática</strong> (varia de 0 a 1 ou de 0% a 100%);",
+            "Representa a <strong>probabilidade média (risco individual)</strong> de um membro daquela população desenvolver a doença no período considerado;",
+            "<strong>Exige sempre a menção explícita ao período de tempo:</strong> Dizer apenas que \"a incidência acumulada foi de 5%\" é incompleto; é indispensável afirmar \"a incidência acumulada em 5 anos foi de 5%\"."
+          ]
+        ],
+        [
+          "3",
+          "2. Densidade de Incidência (DI) ou Taxa de Incidência Pessoa-Tempo (Incidence Rate)"
+        ],
+        [
+          "p",
+          "Em estudos longitudinais da vida real (coortes abertas ou dinâmicas), nem todos os participantes entram no estudo na mesma data, nem permanecem em acompanhamento pelo mesmo tempo: alguns entram tardiamente, outros mudam de cidade (perda de seguimento), outros morrem por outras causas concorrentes e outros desenvolvem a doença no meio do seguimento, deixando de estar \"sob risco\"."
+        ],
+        [
+          "p",
+          "Para contornar essa heterogeneidade de tempo de observação, a epidemiologia utiliza a <strong>Densidade de Incidência</strong>, cujo denominador não é a contagem simples de cabeças no início, mas sim a <strong>soma exata do tempo em que cada indivíduo da coorte permaneceu hígido e sob observação (Pessoas-Tempo ou Pessoas-Ano)</strong>:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$\\text{Densidade de Incidência (DI)} = \\frac{\\text{Número de casos NOVOS observados}}{\\sum (\\text{Tempo de seguimento de cada indivíduo sob risco})}$$\n</div>"
+        ],
+        [
+          "3",
+          "Exemplo Prático de Cálculo de Pessoas-Ano de Seguimento"
+        ],
+        [
+          "p",
+          "Imagine uma coorte prospectiva de 5 indivíduos sadios acompanhados por um período máximo de 5 anos para avaliar o desenvolvimento de hipertensão arterial:"
+        ],
+        [
+          "t",
+          [
+            "Indivíduo",
+            "Histórico de Seguimento no Estudo",
+            "Contribuição em Pessoas-Ano",
+            "Desfecho Final"
+          ],
+          [
+            [
+              "<strong>Paciente A</strong>",
+              "Acompanhado durante os 5 anos completos sem adoecer.",
+              "5 pessoas-ano",
+              "Permaneceu sadio"
+            ],
+            [
+              "<strong>Paciente B</strong>",
+              "Desenvolveu hipertensão arterial exatamente ao final do 2º ano de estudo.",
+              "2 pessoas-ano",
+              "<strong>Caso Novo</strong> (cessou tempo sob risco aos 2 anos)"
+            ],
+            [
+              "<strong>Paciente C</strong>",
+              "Mudou-se de cidade no final do 3º ano (perda de seguimento).",
+              "3 pessoas-ano",
+              "Censurado (perda de seguimento)"
+            ],
+            [
+              "<strong>Paciente D</strong>",
+              "Faleceu vítima de acidente automobilístico ao final do 1º ano sem hipertensão.",
+              "1 pessoa-ano",
+              "Censurado (óbito concorrente)"
+            ],
+            [
+              "<strong>Paciente E</strong>",
+              "Desenvolveu hipertensão arterial ao final do 4º ano de estudo.",
+              "4 pessoas-ano",
+              "<strong>Caso Novo</strong> (cessou tempo sob risco aos 4 anos)"
+            ],
+            [
+              "<strong>TOTAIS</strong>",
+              "<strong>2 Casos Novos observados</strong>",
+              "<strong>15 Pessoas-Ano totais</strong>",
+              "-"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$\\text{Densidade de Incidência} = \\frac{2 \\text{ casos novos}}{15 \\text{ pessoas-ano}} = 0,1333 \\text{ casos por pessoa-ano} = 133,3 \\text{ casos por } 1.000 \\text{ pessoas-ano}$$\n</div>"
+        ],
+        [
+          "p",
+          "Esse cálculo revela a verdadeira velocidade instantânea com que a hipertensão acomete os participantes da coorte, computando com precisão absoluta as perdas e períodos heterogêneos de observação."
+        ]
+      ]
+    ],
+    [
+      "relacao-matematica-prevalencia-incidencia-duracao",
+      0,
+      [
+        [
+          "2",
+          "4. A Relação Fundamental entre Prevalência, Incidência e Duração Média da Doença (P ≈ I × D)"
+        ],
+        [
+          "3",
+          "A Equação de Estado Estacionário: $P \\approx I \\times D$"
+        ],
+        [
+          "p",
+          "Em populações estáveis (onde a taxa de imigração iguala a taxa de emigração e a incidência e a sobrevida permanecem constantes ao longo do tempo), existe uma relação matemática direta, elegante e amplamente cobrada em provas que une a <strong>Prevalência ($P$)</strong>, a <strong>Incidência ($I$)</strong> e a <strong>Duração Média da Doença ($D$)</strong>:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$P = \\frac{I \\times D}{1 + (I \\times D)}$$\n</div>"
+        ],
+        [
+          "p",
+          "Quando a doença estudada apresenta uma prevalência baixa na população geral (como ocorre com a grande maioria das doenças crônicas ou infecciosas, onde $P &lt; 0,10$ ou $&lt; 10\\%$), o produto no denominador $1 + (I \\times D)$ aproxima-se de 1. Nesses cenários, a fórmula simplifica-se para a equação clássica de prova:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$P \\approx I \\times D$$"
+        ],
+        [
+          "p",
+          "Onde:<br>\n  • $P$: Prevalência pontual da doença (proporção);<br>\n  • $I$: Incidência da doença (casos por unidade de tempo);<br>\n  • $D$: Duração média da doença na população (expressa na mesma unidade de tempo da incidência)."
+        ],
+        [
+          "3",
+          "Aplicações Clínicas e de Concurso da Fórmula $P \\approx I \\times D$"
+        ],
+        [
+          "p",
+          "As bancas utilizam essa relação para exigir do candidato a compreensão de quatro cenários paradigmáticos de saúde pública:"
+        ],
+        [
+          "t",
+          [
+            "Cenário Epidemiológico Real",
+            "Comportamento das Variáveis ($I$ e $D$)",
+            "Impacto na Prevalência ($P$)",
+            "Interpretação Clínica e Pegadinha de Prova"
+          ],
+          [
+            [
+              "<strong>Doenças Crônicas Incuráveis de Longa Duração</strong> (ex.: Diabetes Mellitus, Hipertensão, Artrite Reumatoide)",
+              "Incidência moderada ou baixa ($I$), mas <strong>duração média extremamente prolongada ($D$ de 20 a 40 anos)</strong>.",
+              "<strong>Prevalência muito mais ALTA do que a Incidência anual ($P &gt;&gt; I$).</strong>",
+              "A constatação de alta prevalência NÃO significa que muitos casos novos estão surgindo naquele ano; significa apenas que os doentes acumulam-se ao longo de décadas sem falecer e sem curar."
+            ],
+            [
+              "<strong>Doenças Agudas Autolimitadas ou Hiperletais</strong> (ex.: Resfriado Comum, Dengue, Raiva Humana, Cólera grave)",
+              "Incidência sazonal que pode ser explosiva ($I$ altíssima), mas <strong>duração média curtíssima ($D$ de poucos dias a semanas)</strong>.",
+              "<strong>Prevalência pontual muito mais BAIXA do que a Incidência acumulada anual ($P &lt;&lt; I$).</strong>",
+              "Se medirmos a prevalência pontual de resfriado em um dia qualquer de verão, ela será de apenas 1 a 2%, a despeito de a incidência acumulada ao longo do ano atingir 200 a 300 episódios por 100 habitantes."
+            ],
+            [
+              "<strong>Introdução de Terapia Medicamentosa que Evita o Óbito sem Curar</strong> (ex.: Insulina no Diabetes em 1922; TARV no HIV a partir de 1996)",
+              "A Incidência ($I$) permanece inalterada, mas <strong>a Duração ($D$) aumenta vertiginosamente</strong> (aumenta a sobrevida dos doentes).",
+              "<strong>A Prevalência ($P$) SOBE expressivamente.</strong>",
+              "<strong>Pegadinha Clássica:</strong> O aluno desatento conclui erroneamente que o tratamento falhou porque \"aumentou o número de doentes\". Na verdade, a elevação da prevalência decorreu do <strong>sucesso da droga em manter os pacientes vivos</strong>!"
+            ],
+            [
+              "<strong>Introdução de Tratamento Curativo Rápido</strong> (ex.: Esquemas com Sofosbuvir/Velpatasvir na Hepatite C crônica)",
+              "A Incidência ($I$) permanece igual ou cai, mas <strong>a Duração ($D$) despenca de décadas para 12 semanas</strong> (cura bacteriológica/virológica).",
+              "<strong>A Prevalência ($P$) DESPENCA rapidamente.</strong>",
+              "A redução da prevalência neste cenário decorre diretamente do aumento das taxas de cura definitiva, retirando centenas de milhares de pacientes do numerador."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "coeficientes-de-mortalidade-e-letalidade",
+      0,
+      [
+        [
+          "2",
+          "5. Coeficientes de Mortalidade Geral, Específica, Mortalidade Materna e Letalidade"
+        ],
+        [
+          "3",
+          "O Conceito e o Escopo dos Coeficientes de Mortalidade"
+        ],
+        [
+          "p",
+          "A mortalidade é um dos indicadores mais sensíveis e amplamente consolidados para monitorar o estado de saúde, o desenvolvimento socioeconômico e a qualidade da atenção médica de uma nação. Os coeficientes de mortalidade quantificam a probabilidade ou o risco que os membros de uma determinada comunidade têm de falecer ao longo de um determinado período (geralmente um ano civil)."
+        ],
+        [
+          "p",
+          "É fundamental compreender as distinções técnicas entre os três principais coeficientes de mortalidade cobrados nas provas do SUS e ENAMED:"
+        ],
+        [
+          "t",
+          [
+            "Indicador Epidemiológico",
+            "Fórmula Matemática Padronizada",
+            "Base Demográfica Habitual",
+            "Significado Clínico e Sanitário"
+          ],
+          [
+            [
+              "<strong>Coeficiente de Mortalidade Geral (CMG)</strong> ou Taxa Bruta de Mortalidade",
+              "$$\\text{CMG} = \\frac{\\text{Total de óbitos por TODAS as causas no ano}}{\\text{População total residente no meio do ano}} \\times 1.000$$",
+              "Por 1.000 habitantes",
+              "Mede o risco global de morrer na comunidade. <strong>Limitação Crítica:</strong> É fortemente influenciado pela estrutura etária. Populações envelhecidas (como Itália, Japão ou o estado do Rio Grande do Sul) podem apresentar CMG maior do que países jovens e pobres (como Níger ou Bolívia), unicamente porque têm mais idosos na pirâmide etária. Para comparar CMG entre locais distintos, é <strong>obrigatório realizar a Padronização por Idade</strong> (método direto ou indireto)."
+            ],
+            [
+              "<strong>Coeficiente de Mortalidade Específica por Causa</strong>",
+              "$$\\text{CME} = \\frac{\\text{Óbitos por uma CAUSA ESPECÍFICA no ano}}{\\text{População total sob risco no meio do ano}} \\times 100.000$$",
+              "Por 100.000 habitantes",
+              "Mede o risco biológico que um cidadão tem de morrer por aquela causa particular (ex.: infarto, neoplasia gástrica, acidente de trânsito). No Brasil, as principais causas gerais de óbito são: (1) Doenças do Aparelho Circulatório; (2) Neoplasias; (3) Causas Externas (trauma/violência); (4) Doenças do Aparelho Respiratório."
+            ],
+            [
+              "<strong>Taxa de Letalidade (Lethality Rate)</strong>",
+              "$$\\text{Letalidade} = \\frac{\\text{Número de óbitos por determinada DOENÇA}}{\\text{Número TOTAL de PESSOAS DIAGNOSTICADAS com a doença}} \\times 100$$",
+              "<strong>Porcentagem (%) pura</strong> (proporção de 0 a 100%)",
+              "<strong>Mede a GRAVIDADE BIOLÓGICA intrínseca da doença</strong> ou a eficácia/oportunidade dos cuidados médicos hospitalares. Não mede risco populacional!\n      <br>• Raiva humana: letalidade $\\approx 100\\%$;\n      <br>• Tétano neonatal: letalidade de 30% a 50%;\n      <br>• Cólera tratada precocemente: letalidade $&lt; 1\\%$; sem tratamento: letalidade de 30% a 50%."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Razão de Mortalidade Materna (RMM)"
+        ],
+        [
+          "p",
+          "A morte materna é considerada a mais trágica expressão da desigualdade em saúde e da negligência na assistência obstétrica. Define-se <strong>Óbito Materno</strong> (segundo a OMS e a CID-10) como a morte de uma mulher durante a gestação ou até <strong>42 dias após o término da gestação</strong> (puerpério precoce/tardio), devida a qualquer causa relacionada com ou agravada pela gravidez ou por medidas em relação a ela, mas <strong>NÃO por causas acidentais ou incidentais</strong> (ex.: homicídio, queda ou atropelamento de trânsito não são óbitos maternos!)."
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$\\text{Razão de Mortalidade Materna (RMM)} = \\frac{\\text{Número de óbitos maternos (diretos e indiretos) no ano}}{\\text{Número de Nascidos Vivos (NV) no mesmo ano}} \\times 100.000$$\n</div>"
+        ],
+        [
+          "p",
+          "<strong>Por que o denominador é Nascidos Vivos e não a população de mulheres em idade fértil?</strong>"
+        ],
+        [
+          "p",
+          "Porque o número total de gestantes reais em uma população é praticamente impossível de mensurar (muitas gestações terminam em abortamentos precoces clandestinos ou subclínicos não registrados). O número de <strong>Nascidos Vivos</strong> funciona como a melhor aproximação demográfica confiável do volume de mulheres que efetivamente engravidaram e se expuseram ao risco obstétrico."
+        ],
+        [
+          "t",
+          [
+            "Categoria de Óbito Materno",
+            "Definição e Mecanismo Patológico",
+            "Principais Causas no Brasil"
+          ],
+          [
+            [
+              "<strong>Causas Obstétricas Diretas (Aproximadamente 70% dos óbitos no Brasil)</strong>",
+              "Mortes decorrentes de <strong>complicações obstétricas do estado gravídico-puerperal</strong>, intervenções, omissões, tratamento incorreto ou de uma cadeia de eventos resultante de qualquer desses fatores. São quase 100% <strong>evitáveis</strong> com assistência qualificada.",
+              "1. <strong>Síndromes Hipertensivas da Gestação</strong> (Pré-eclâmpsia grave, Eclâmpsia, Síndrome HELLP — 1ª causa disparada no Brasil);<br>\n        2. <strong>Hemorragias Pós-parto</strong> (Atonia uterina, acretismo placentário, rotura uterina);<br>\n        3. <strong>Infecções Puerperais / Sepse Obstétrica</strong> (Endometrite, sepse puerperal);<br>\n        4. <strong>Abortamento Inseguro</strong> e suas complicações infecto-hemorrágicas."
+            ],
+            [
+              "<strong>Causas Obstétricas Indiretas (Aproximadamente 30% dos óbitos)</strong>",
+              "Mortes resultantes de <strong>doenças preexistentes</strong> ou de afecções que se desenvolveram durante a gravidez, não devidas a causas obstétricas diretas, mas que foram <strong>agravadas pelos efeitos fisiológicos normais da gestação</strong>.",
+              "Cardiopatias congênitas ou reumáticas na gestante, nefropatias crônicas, lúpus eritematoso sistêmico, anemia falciforme, diabetes descompensado e infecções respiratórias graves (como H1N1 e COVID-19 em gestantes)."
+            ],
+            [
+              "<strong>Morte Materna Tardia</strong>",
+              "Morte de uma mulher por causas obstétricas diretas ou indiretas ocorrida <strong>após 42 dias, mas antes de 1 ano completo após o término da gestação</strong>.",
+              "Não entra no cálculo clássico da RMM oficial de 42 dias, mas deve ser notificada e investigada para monitoramento de sequelas graves."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "mortalidade-infantil-e-seus-componentes",
+      0,
+      [
+        [
+          "2",
+          "6. Mortalidade Infantil e seus Componentes Temporais: Neonatal Precoce, Tardio e Pós-Neonatal"
+        ],
+        [
+          "3",
+          "O Coeficiente de Mortalidade Infantil (CMI) como Termômetro Social"
+        ],
+        [
+          "p",
+          "O <strong>Coeficiente de Mortalidade Infantil (CMI)</strong> quantifica o risco que os recém-nascidos vivos têm de falecer antes de completar o <strong>primeiro ano de vida (menos de 365 dias)</strong>. Ele é universalmente reconhecido como o indicador isolado mais representativo do nível de desenvolvimento humano, infraestrutura de saneamento básico, escolaridade materna, nutrição e efetividade da atenção primária e hospitalar de uma nação:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\">\n  $$\\text{Coeficiente de Mortalidade Infantil (CMI)} = \\frac{\\text{Número de óbitos em crianças menores de 1 ano no ano}}{\\text{Número total de Nascidos Vivos no mesmo ano}} \\times 1.000$$\n</div>"
+        ],
+        [
+          "3",
+          "Os Três Componentes Cronológicos da Mortalidade Infantil"
+        ],
+        [
+          "p",
+          "Para intervir de forma direcionada, a epidemiologia fragmenta a mortalidade do primeiro ano de vida em três períodos cronológicos estritos com determinantes fisiopatológicos e sociais completamente distintos:"
+        ],
+        [
+          "t",
+          [
+            "Componente Cronológico",
+            "Intervalo Etário Estrito",
+            "Fórmula do Coeficiente (por 1.000 NV)",
+            "Principais Causas de Óbito e Fatores Determinantes",
+            "Estratégia de Redução no SUS"
+          ],
+          [
+            [
+              "<strong>1. Neonatal Precoce</strong> (Representa a MAIOR parcela da mortalidade infantil no Brasil atual: ~50% a 55% dos óbitos)",
+              "Do nascimento até <strong>6 dias completos de vida</strong> (0 a 6 dias).",
+              "$$\\frac{\\text{Óbitos de 0 a 6 dias}}{\\text{Nascidos Vivos}} \\times 1.000$$",
+              "• <strong>Prematuridade extrema</strong> e Síndrome do Desconforto Respiratório;<br>\n        • <strong>Asfixia perinatal</strong> / anóxia ao nascer;<br>\n        • Infecções congênitas e malformações congênitas graves.<br>\n        <em>Determinante:</em> Qualidade da atenção médica no <strong>pré-natal, parto e assistência imediata em UTI neonatal</strong>.",
+              "Fortalecimento da rede de urgência obstétrica, leitos de UTI neonatal e transporte neonatal de alta complexidade."
+            ],
+            [
+              "<strong>2. Neonatal Tardio</strong>",
+              "De <strong>7 dias até 27 dias completos de vida</strong> (7 a 27 dias).",
+              "$$\\frac{\\text{Óbitos de 7 a 27 dias}}{\\text{Nascidos Vivos}} \\times 1.000$$",
+              "• Complicações crônicas da prematuridade (displasia broncopulmonar, enterocolite necrosante);<br>\n        • <strong>Infecções nosocomiais tardias</strong> em UTIs neonatais;<br>\n        • Cardiopatias congênitas descompensadas.",
+              "Controle de infecção hospitalar neonatal e acompanhamento ambulatorial de prematuros de alto risco (Método Canguru)."
+            ],
+            [
+              "<strong>3. Pós-Neonatal (ou Infantil Tardio)</strong> (Componente que mais DESPENCOU no Brasil nas últimas décadas)",
+              "De <strong>28 dias até 364 dias de vida</strong> (28 dias a 11 meses e 29 dias).",
+              "$$\\frac{\\text{Óbitos de 28 a 364 dias}}{\\text{Nascidos Vivos}} \\times 1.000$$",
+              "• <strong>Doenças Infecciosas e Parasitárias:</strong> Doença diarreica aguda e desidratação grave;<br>\n        • <strong>Pneumonias e infecções respiratórias agudas</strong>;<br>\n        • <strong>Desnutrição proteico-calórica</strong>.<br>\n        <em>Determinante:</em> Condições socioeconômicas, <strong>saneamento básico, água tratada, moradia, aleitamento materno e vacinação infantil</strong>.",
+              "Atenção Primária à Saúde (Estratégia Saúde da Família), expansão da rede de água/esgoto, vacinação universal (rotavírus, pneumocócica) e programas de transferência de renda."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Transição Epidemiológica da Mortalidade Infantil no Brasil"
+        ],
+        [
+          "p",
+          "Historicamente, nas décadas de 1970 e 1980, a maior parte das mortes de crianças brasileiras ocorria no período <strong>pós-neonatal</strong>, provocada por desidratação secundária a gastroenterites, sarampo, desnutrição e broncopneumonias comunitárias em decorrência da miséria e ausência de saneamento. Com a expansão do saneamento, do aleitamento materno exclusivo, da vacinação infantil e da ESF, o componente pós-neonatal registrou uma queda espetacular de mais de 80%."
+        ],
+        [
+          "p",
+          "Como consequência dessa transição, o perfil inverteu-se: atualmente, mais de <strong>60% a 70% de todas as mortes no primeiro ano de vida concentram-se no período NEONATAL (0 a 27 dias)</strong>, especialmente na primeira semana (neonatal precoce). A redução do CMI hoje exige tecnologias médicas duras de alta complexidade: assistência obstétrica de excelência para prevenir partos prematuros e asfixia perinatal, e leitos qualificados de UTI neonatal."
+        ],
+        [
+          "3",
+          "Coeficiente de Mortalidade Natimorta (ou Natimortalidade) e Perinatal"
+        ],
+        [
+          "u",
+          [
+            "<strong>Natimortalidade (Óbito Fetal):</strong> Número de perdas fetais a partir de 22 semanas de gestação (ou peso fetal $ge 500$ g) dividido pelo total de nascimentos (Nascidos Vivos + Natimortos) multiplicado por 1.000;",
+            "<strong>Mortalidade Perinatal:</strong> Engloba as perdas fetais a partir de 22 semanas MAIS os óbitos neonatais precoces (0 a 6 dias de vida) divididos pelo total de nascimentos por 1.000. É o indicador mais fidedigno da assistência obstétrica intraparto e perinatal global."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-medidas-frequencia",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Raciocínio Prático em Medidas de Frequência"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Acompanhamento de Coorte de Trabalhadores e Pessoas-Tempo"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um serviço de Medicina do Trabalho e Vigilância em Saúde acompanha uma coorte de 1.000 soldadores assintomáticos admitidos em uma indústria naval para monitorar o desenvolvimento de asma ocupacional ao longo de 4 anos de operação. No primeiro ano, todos os 1.000 trabalhadores foram acompanhados e 10 desenvolveram asma. No segundo ano, os 990 trabalhadores restantes foram acompanhados e 20 desenvolveram asma, enquanto 30 soldadores sadios pediram demissão no meio do ano (foram acompanhados por 0,5 ano cada). No terceiro ano, 940 trabalhadores iniciaram o ano; 15 desenvolveram asma e nenhum foi perdido. No quarto ano, os 925 restantes foram acompanhados até o fim e 10 desenvolveram asma."
+        ],
+        [
+          "p",
+          "<strong>Questões Analíticas Práticas:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Como calcular o total de pessoas-ano de seguimento acumulado?</em>\n    <ul>\n      <li>Ano 1: $1.000 \\text{ trabalhadores} \\times 1 \\text{ ano} = 1.000 \\text{ pessoas-ano}$;",
+            "Ano 2: Para os 20 que adoeceram (tempo médio sob risco de 0,5 ano = 10 pessoas-ano), para os 30 que demitiram-se (0,5 ano = 15 pessoas-ano) e para os 940 sadios que completaram o ano (940 pessoas-ano) $\\rightarrow 10 + 15 + 940 = 965 \\text{ pessoas-ano}$;",
+            "Ano 3: Para os 15 que adoeceram (0,5 ano = 7,5 pessoas-ano) e 925 sadios (925 pessoas-ano) $\\rightarrow 932,5 \\text{ pessoas-ano}$;",
+            "Ano 4: Para os 10 que adoeceram (0,5 ano = 5 pessoas-ano) e 915 sadios (915 pessoas-ano) $\\rightarrow 920 \\text{ pessoas-ano}$;",
+            "<strong>Total de Pessoas-Ano Acumulado:</strong> $1.000 + 965 + 932,5 + 920 = 3.817,5 \\text{ pessoas-ano}$.",
+            "<em>Qual foi a Densidade de Incidência de Asma Ocupacional?</em>\n    $$\\text{DI} = \\frac{10 + 20 + 15 + 10}{3.817,5} = \\frac{55}{3.817,5} = 0,0144 \\text{ casos por pessoa-ano} = 14,4 \\text{ casos por } 1.000 \\text{ pessoas-ano}$$",
+            "<em>Qual a importância clínica desse dado?</em> Permite comparar a taxa de adoecimento dessa indústria naval com estaleiros internacionais que utilizam diferentes sistemas de exaustão de gases tóxicos, sem sofrer distorções pelo turnover de operários."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Avaliação Crítica da Mortalidade Infantil em Município do Interior"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um gestor de saúde municipal comemora em coletiva de imprensa que o Coeficiente de Mortalidade Infantil do seu município caiu de 28 para 14 por 1.000 NV nos últimos 10 anos. Entretanto, ao analisar minuciosamente o Sistema de Informações sobre Mortalidade (SIM), a equipe de auditoria médica constata que o componente pós-neonatal despencou de 18 para 2 por 1.000 NV, enquanto a mortalidade neonatal precoce (0 a 6 dias) manteve-se estagnada em 10 por 1.000 NV e a natimortalidade subiu de 8 para 12 por 1.000 nascimentos."
+        ],
+        [
+          "p",
+          "<strong>Interpretação e Condutas Mandatórias:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Diagnóstico de Saúde Coletiva:</strong> O município teve êxito pleno nas ações de saneamento ambiental, vacinação e atenção primária (o que eliminou as mortes pós-neonatais por diarreia e desnutrição), mas apresenta uma <strong>GRAVE FALHA NA REDE DE ATENÇÃO AO PRÉ-NATAL E AO PARTO HOSPITALAR</strong>;",
+            "A persistência de alta taxa de mortalidade neonatal precoce e o aumento de natimortos traduzem mortes por asfixia perinatal, falta de leitos obstétricos de alto risco, transporte tardio de gestantes com pré-eclâmpsia descompensada e déficit de reanimação neonatal na sala de parto;",
+            "<strong>Plano de Ação Imediato:</strong> Implantação de auditoria obrigatória de todos os óbitos infantis e fetais pelo Comitê de Prevenção da Mortalidade Materno-Infantil, capacitação das equipes hospitalares na reanimação do prematuro e credenciamento de leitos de UTI neonatal regional."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Análise do Impacto de Novo Antirretroviral na Prevalência e Incidência"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Em um estudo populacional sobre HIV/AIDS em uma capital brasileira, observa-se que, após a introdução de novos esquemas antirretrovirais com inibidores de integrase de alta barreira genética (Dolutegravir), a taxa de mortalidade por AIDS caiu 70% e a incidência anual de novas infecções estabilizou-se em 25 casos por 100.000 habitantes. No entanto, o coeficiente de prevalência de pessoas vivendo com HIV subiu de 320 para 580 por 100.000 habitantes nos últimos 8 anos."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Epidemiológico:</strong>"
+        ],
+        [
+          "p",
+          "A elevação da prevalência no cenário de incidência estável deve-se unicamente ao <strong>prolongamento dramático da sobrevida dos pacientes infectados ($D$)</strong> proporcionado pela terapia eficaz ($P \\approx I \\times D$). O paciente com HIV não morre mais precocemente por infecções oportunistas, mantendo-se vivo, assintomático e com carga viral indetectável por décadas. A prevalência acumulada reflete, portanto, o sucesso terapêutico absoluto do SUS, e não um fracasso preventivo!"
+        ]
+      ]
+    ],
+    [
+      "sintese-de-alto-rendimento-e-armadilhas-frequencia",
+      0,
+      [
+        [
+          "2",
+          "8. Síntese de Alto Rendimento e Diretrizes para o ENAMED e Residência Médica"
+        ],
+        [
+          "3",
+          "Tabela Comparativa de Fórmulas Críticas para Memorização"
+        ],
+        [
+          "t",
+          [
+            "Indicador",
+            "Numerador",
+            "Denominador",
+            "Multiplicador Habitual",
+            "Conceito Central de Prova"
+          ],
+          [
+            [
+              "<strong>Prevalência</strong>",
+              "Casos existentes (antigos + novos)",
+              "População total no mesmo instante",
+              "$\times 100$ (%)",
+              "Fotografia estática da carga de doença; não mede risco."
+            ],
+            [
+              "<strong>Incidência Acumulada</strong>",
+              "Casos novos no período $Delta t$",
+              "População sadia sob risco no início",
+              "$\times 100$ ou $\times 1.000$",
+              "Mede risco/probabilidade individual de adoecer."
+            ],
+            [
+              "<strong>Densidade de Incidência</strong>",
+              "Casos novos observados",
+              "Soma das Pessoas-Tempo de seguimento",
+              "$\times 1.000$ pessoas-ano",
+              "Mede a velocidade instantânea em coortes dinâmicas."
+            ],
+            [
+              "<strong>Razão de Mortalidade Materna</strong>",
+              "Óbitos maternos (até 42 dias)",
+              "Nascidos Vivos",
+              "$\times 100.000$",
+              "Denominador é NV (aproximação de gestantes reais)."
+            ],
+            [
+              "<strong>Mortalidade Infantil</strong>",
+              "Óbitos em $&lt; 1$ ano de vida",
+              "Nascidos Vivos",
+              "$\times 1.000$",
+              "Neonatal precoce (0 a 6d) é a maior causa hoje no Brasil."
+            ],
+            [
+              "<strong>Letalidade</strong>",
+              "Óbitos por determinada doença",
+              "Total de doentes diagnosticados",
+              "$\times 100$ (%)",
+              "Mede gravidade intrínseca; não mede risco populacional."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "bateria-de-questoes-comentadas-frequencia",
+      0,
+      [
+        [
+          "2",
+          "9. Bateria de Questões Comentadas do ENAMED e Concursos Médicos de Residência"
+        ],
+        [
+          "3",
+          "Questões Selecionadas com Análise Aprofundada de Distratores"
+        ],
+        [
+          "4",
+          "Questão 1: ENARE / ENAMED — Dinâmica da Prevalência e Duração da Doença"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um ensaio clínico randomizado duplo-cego multicêntrico testa uma nova molécula imunobiológica em pacientes portadores de esclerose lateral amiotrófica (ELA). O estudo demonstra de maneira inequívoca que o medicamento não é capaz de restaurar os neurônios motores lesados nem de curar a enfermidade, mas prolonga a sobrevida dos pacientes em média de 3 anos para 12 anos após o diagnóstico, retardando a falência muscular respiratória. Assumindo que a incidência anual de ELA permaneça absolutamente inalterada na população geral e que não ocorram migrações, qual será o impacto dessa intervenção terapêutica sobre o Coeficiente de Incidência e sobre o Coeficiente de Prevalência da ELA?"
+        ],
+        [
+          "p",
+          "A) A incidência aumentará e a prevalência diminuirá.<br>\nB) A incidência permanecerá inalterada e a prevalência aumentará.<br>\nC) A incidência diminuirá e a prevalência permanecerá inalterada.<br>\nD) Ambos os coeficientes diminuirão em decorrência da melhora clínica dos pacientes.<br>\nE) A incidência aumentará e a prevalência permanecerá constante pelo princípio do equilíbrio estacionário."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> Aplicação direta da relação fundamental da epidemiologia: $P \\approx I \\times D$.\n1. <strong>Incidência ($I$):</strong> O surgimento de <em>casos novos</em> depende exclusivamente dos fatores etiológicos primários genéticos e ambientais que deflagram a neurodegeneração na população sadia. O fármaco é administrado <em>apenas a indivíduos que já estão doentes</em>; logo, não exerce nenhuma ação profilática primária na população hígida. A incidência permanece <strong>rigorosamente inalterada</strong>.<br>\n2. <strong>Prevalência ($P$):</strong> Ao quadruplicar a sobrevida dos doentes (aumentando a duração média $D$ de 3 para 12 anos sem cura), os pacientes permanecem vivos e computados na prevalência por muito mais tempo. Novos casos continuam entrando no sistema na mesma taxa, mas a taxa de saída por óbito diminuiu drasticamente. Consequentemente, o estoque acumulado de casos existentes cresce e a <strong>prevalência AUMENTA</strong>.<br>\n• <strong>Demais alternativas:</strong> Confundem prevenção primária (que reduz incidência) com tratamento de suporte/sobrevida (que altera duração e prevalência)."
+        ],
+        [
+          "4",
+          "Questão 2: USP-SP — Cálculo da Densidade de Incidência em Pessoas-Ano"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em um estudo longitudinal de base populacional desenhado para investigar a incidência de infarto agudo do miocárdio (IAM) em homens hipertensos de 50 a 60 anos, uma coorte de 1.000 homens hígidos foi acompanhada por 5 anos. Durante o período de observação, ocorreram os seguintes eventos: 50 homens apresentaram IAM exatamente no final do segundo ano de seguimento; 50 homens sofreram IAM no final do quarto ano de seguimento; 100 homens mudaram de estado e perderam o seguimento no final do terceiro ano; os demais 800 homens completaram os 5 anos de estudo sem apresentar nenhum evento coronariano. A Densidade de Incidência de IAM nessa coorte foi de:"
+        ],
+        [
+          "p",
+          "A) 10 casos por 1.000 pessoas-ano.<br>\nB) 21,7 casos por 1.000 pessoas-ano.<br>\nC) 25 casos por 1.000 pessoas-ano.<br>\nD) 100 casos por 1.000 pessoas-ano.<br>\nE) 20 casos por 100 pessoas-ano."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> Cálculo metódico da Densidade de Incidência (casos novos divididos pelo total de pessoas-tempo):\n1. <strong>Numerador:</strong> Total de casos novos de IAM observados: $50 + 50 = 100 \\text{ casos}$.<br>\n2. <strong>Denominador (Soma das Pessoas-Ano de seguimento):</strong>\n  • 50 homens com IAM no final do ano 2: $50 \\times 2 \\text{ anos} = 100 \\text{ pessoas-ano}$;<br>\n  • 50 homens com IAM no final do ano 4: $50 \\times 4 \\text{ anos} = 200 \\text{ pessoas-ano}$;<br>\n  • 100 homens perdidos de seguimento no ano 3: $100 \\times 3 \\text{ anos} = 300 \\text{ pessoas-ano}$;<br>\n  • 800 homens que completaram o estudo hígidos: $800 \\times 5 \\text{ anos} = 4.000 \\text{ pessoas-ano}$;<br>\n  • <strong>Total de Pessoas-Ano:</strong> $100 + 200 + 300 + 4.000 = 4.600 \\text{ pessoas-ano}$.<br>\n3. <strong>Densidade de Incidência:</strong>\n$$\\text{DI} = \\frac{100 \\text{ casos}}{4.600 \\text{ pessoas-ano}} \\approx 0,021739 \\text{ casos por pessoa-ano} = 21,7 \\text{ casos por } 1.000 \\text{ pessoas-ano}$$\nAlternativa B absolutamente exata."
+        ],
+        [
+          "4",
+          "Questão 3: UNIFESP — Componentes da Mortalidade Infantil"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um epidemiologista analisa os microdados do Sistema de Informações sobre Mortalidade (SIM) de um estado brasileiro e verifica que o Coeficiente de Mortalidade Infantil atual é de 13,5 por 1.000 nascidos vivos. Ao estratificar por faixa etária, constata que a taxa de mortalidade neonatal precoce é de 7,2 por 1.000 NV, a neonatal tardia é de 2,1 por 1.000 NV e a pós-neonatal é de 4,2 por 1.000 NV. A análise desses coeficientes permite afirmar corretamente que:"
+        ],
+        [
+          "p",
+          "A) A maior parte dos óbitos infantis no primeiro ano de vida ocorre no período pós-neonatal, refletindo precariedade nas condições de moradia e saneamento básico.<br>\nB) O período neonatal precoce (0 a 6 dias de vida) concentra a maior proporção de mortes de crianças menores de 1 ano, indicando que as intervenções prioritárias devem focar na qualidade da assistência obstétrica ao pré-natal de alto risco, no parto e na terapia intensiva neonatal imediata.<br>\nC) A mortalidade neonatal precoce decorre preponderantemente de gastroenterites infecciosas e pneumonias comunitárias adquiridas na comunidade.<br>\nD) A expansão de saneamento básico e de campanhas de vacinação infantil é a medida isolada de maior impacto para reduzir a mortalidade neonatal precoce.<br>\nE) A natimortalidade está inclusa no numerador da mortalidade neonatal tardia."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> No perfil epidemiológico do Brasil contemporâneo, mais de 50% de todas as mortes infantis ocorrem na primeira semana de vida (<strong>período neonatal precoce: 0 a 6 dias</strong>). Suas causas primordiais são <strong>prematuridade extrema, asfixia intraparto (anóxia neonatal) e infecções congênitas</strong>, diretamente relacionadas à qualidade da atenção hospitalar e ao manejo de complicações no parto e pré-natal. Reduzir esse componente exige suporte hospitalar terciário e leitos de UTI neonatal.<br>\n• <strong>Alternativas A, C e D:</strong> Atribuem erradamente ao período neonatal precoce determinantes que são típicos do componente <em>pós-neonatal</em> (28 a 364 dias), como diarreia, saneamento e vacinas da infância.<br>\n• <strong>Alternativa E:</strong> Natimortos (fetos mortos antes do nascimento) NÃO entram na mortalidade infantil, que computa exclusivamente óbitos de crianças que <em>nasceram vivas</em>."
+        ],
+        [
+          "4",
+          "Questão 4: UERJ — Razão de Mortalidade Materna e Causas de Óbito"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Uma mulher de 28 anos, primigesta, com 34 semanas de gestação, dá entrada no pronto-socorro obstétrico em coma após apresentar três episódios convulsivos tônico-clônicos generalizados no domicílio. Ao exame físico, apresenta PA de $190/120$ mmHg, proteinúria maciça de fita ($4+$) e sofrimento fetal agudo com bradicardia grave. Durante a cesariana de emergência, a paciente evolui com parada cardiorrespiratória irreversível por hemorragia intraparenquimatosa cerebral maciça decorrente de crise hipertensiva da eclâmpsia, vindo a óbito. Em termos de vigilância epidemiológica e estatísticas de saúde, esse evento deve ser classificado como:"
+        ],
+        [
+          "p",
+          "A) Óbito Materno por Causa Obstétrica Indireta.<br>\nB) Óbito Materno por Causa Obstétrica Direta.<br>\nC) Óbito Materno Tardio.<br>\nD) Óbito Não Materno por Causa Acidental Externa.<br>\nE) Evento Adverso Não Notificável."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> Óbitos decorrentes de complicações obstétricas intrínsecas do estado gestacional (como síndromes hipertensivas da gestação — pré-eclâmpsia e eclâmpsia, hemorragia pós-parto, sepse puerperal e complicações do aborto) são definidos como <strong>Morte Materna por Causa Obstétrica Direta</strong>. No Brasil, as síndromes hipertensivas representam a <strong>primeira causa absoluta de mortalidade materna direta</strong>.<br>\n• <strong>Alternativa A:</strong> Causas indiretas decorrem de doenças preexistentes agravadas pela gravidez (cardiopatia reumática, lúpus, nefropatias), o que não é o caso da eclâmpsia.<br>\n• <strong>Alternativa C:</strong> Ocorreria após 42 dias do parto.<br>\n• <strong>Alternativa D:</strong> Causas acidentais são traumas, atropelamentos ou homicídios."
+        ],
+        [
+          "4",
+          "Questão 5: UNESP — Diferenciação entre Taxa de Mortalidade e Letalidade"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em uma cidade de 100.000 habitantes, foram diagnosticados 200 casos de meningite meningocócica durante o ano de 2025. Desses pacientes, 40 evoluíram para o óbito por púrpura fulminante e choque séptico refratário. O Coeficiente de Mortalidade Específica por meningite meningocócica e a Taxa de Letalidade da doença nesse município foram, respectivamente:"
+        ],
+        [
+          "p",
+          "A) 40 por 100.000 habitantes e 20%.<br>\nB) 200 por 100.000 habitantes e 40%.<br>\nC) 40 por 1.000 habitantes e 2%.<br>\nD) 20 por 100.000 habitantes e 10%.<br>\nE) 40% e 20 por 100.000 habitantes."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa A (Correta):</strong>\n1. <strong>Coeficiente de Mortalidade Específica:</strong> Mede o risco de um morador da cidade falecer pela doença.\n$$\\text{CME} = \\frac{\\text{Óbitos pela doença}}{\\text{População total sob risco}} \\times 100.000 = \\frac{40}{100.000} \\times 100.000 = 40 \\text{ por } 100.000 \\text{ habitantes}$$\n2. <strong>Taxa de Letalidade:</strong> Mede a gravidade biológica da doença entre aqueles que adoeceram.\n$$\\text{Letalidade} = \\frac{\\text{Óbitos pela doença}}{\\text{Total de indivíduos doentes}} \\times 100 = \\frac{40}{200} \\times 100 = 20\\%$$\nA mortalidade foi de 40 por 100.000 hab. e a letalidade foi de 20%. Alternativa A perfeita."
+        ],
+        [
+          "4",
+          "Questão 6: AMP — Índice de Swaroop-Uemura e Nível de Vida"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> O Coordenador de Planejamento em Saúde de uma Secretaria Estadual calcula a Razão de Mortalidade Proporcional de Swaroop-Uemura (ISU) para quatro macrorregiões de saúde do estado, obtendo os seguintes valores: Região 1: 42%; Região 2: 58%; Região 3: 68%; Região 4: 82%. Com base no clássico indicador de Swaroop-Uemura, qual região apresenta o melhor nível de saúde e desenvolvimento socioeconômico?"
+        ],
+        [
+          "p",
+          "A) Região 1.<br>\nB) Região 2.<br>\nC) Região 3.<br>\nD) Região 4.<br>\nE) Todas as regiões apresentam idêntico nível de saúde, pois o indicador é independente da idade ao morrer."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa D (Correta):</strong> O <strong>Índice de Swaroop-Uemura (ISU)</strong> é a proporção de óbitos ocorridos em pessoas com <strong>50 anos ou mais de idade</strong> em relação ao total geral de mortes em todas as idades (expressa em porcentagem). Quanto mais desenvolvida, civilizada e estruturada for uma sociedade do ponto de vista de saneamento, alimentação e medicina preventiva, mais as pessoas sobrevivem à infância e à juventude, concentrando a grande maioria das mortes nas faixas etárias mais avançadas da velhice. Um ISU $ge 75\\%$ define um <strong>Nível de Vida de 1º Nível (Muito Elevado / Países Desenvolvidos)</strong>. A Região 4, com 82% das mortes em $ge 50$ anos, ostenta o melhor nível de desenvolvimento. Alternativa D correta."
+        ]
+      ]
+    ],
+    [
+      "transicao-demografica-e-epidemiologica-no-brasil",
+      0,
+      [
+        [
+          "2",
+          "10. Transição Demográfica, Transição Epidemiológica e Carga Global de Doenças no Brasil"
+        ],
+        [
+          "3",
+          "O Conceito de Transição Demográfica"
+        ],
+        [
+          "p",
+          "A <strong>Transição Demográfica</strong> é o processo dinâmico de transformação estrutural da população decorrente da passagem de um regime tradicional de alta natalidade e alta mortalidade para um regime moderno de baixa natalidade e baixa mortalidade. No Brasil, essa transição ocorreu em velocidade vertiginosa a partir de meados do século XX, cumprindo quatro fases clássicas:"
+        ],
+        [
+          "t",
+          [
+            "Fase da Transição Demográfica",
+            "Comportamento das Taxas de Mortalidade e Fecundidade",
+            "Impacto na Pirâmide Etária e Crescimento Populacional"
+          ],
+          [
+            [
+              "<strong>Fase 1: Pré-Transicional (Histórica até 1930)</strong>",
+              "Altíssima Taxa de Mortalidade e Altíssima Taxa de Fecundidade.",
+              "Crescimento vegetativo muito lento. Pirâmide de base hiperlarga e topo estreito (população jovem com expectativa de vida $&lt; 40$ anos)."
+            ],
+            [
+              "<strong>Fase 2: Aceleração / Explosão Demográfica (1940 a 1965)</strong>",
+              "<strong>Queda abrupta da Taxa de Mortalidade</strong> (introdução de antibióticos, saneamento, vacinas) com <strong>Taxa de Fecundidade mantida em níveis altíssimos</strong> (~6 filhos por mulher).",
+              "Explosão do crescimento populacional. A pirâmide etária ganha base imensa (expansão massiva da população jovem infantil)."
+            ],
+            [
+              "<strong>Fase 3: Desaceleração Demográfica (1970 a 2010)</strong>",
+              "<strong>Queda vertiginosa da Taxa de Fecundidade</strong> (urbanização acelerada, inserção da mulher no mercado de trabalho formal, difusão da pílula anticoncepcional). A fecundidade cai abaixo do nível de reposição populacional ($&lt; 2,1$ filhos por mulher).",
+              "Estreitamento progressivo da base da pirâmide e alargamento do corpo central (bônus demográfico: explosão da população em idade ativa)."
+            ],
+            [
+              "<strong>Fase 4: Pós-Transicional / Envelhecimento Populacional (Brasil Atual: 2020 em diante)</strong>",
+              "Taxas de mortalidade e fecundidade estabilizadas em patamares muito baixos. Fecundidade brasileira atinge ~1,5 filho por mulher.",
+              "<strong>Inversão da Pirâmide Etária:</strong> Encolhimento acentuado da base (menos crianças) e alargamento progressivo e maciço do topo da pirâmide (explosão de idosos com $ge 60$ anos). Fim do bônus demográfico e desafios gigantescos para a previdência e o SUS."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Transição Epidemiológica Brasileira e a Tripla Carga de Doenças"
+        ],
+        [
+          "p",
+          "Em países desenvolvidos da Europa Ocidental, a <strong>Transição Epidemiológica</strong> (modelo de Omran) seguiu uma sequência linear e substitutiva: o declínio das doenças infecciosas e da desnutrição cedeu lugar quase exclusivo ao predomínio de doenças crônicas não transmissíveis (cardiovasculares e neoplasias) e causas degenerativas."
+        ],
+        [
+          "p",
+          "No Brasil, contudo, a transição epidemiológica apresentou características singulares, não lineares e desiguais, resultando no que a epidemiologia denomina de <strong>Tripla Carga de Doenças</strong> convivendo simultaneamente no território nacional:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Agenda Inacabada:</strong> Persistência relevante de doenças infecciosas, parasitárias e carências nutricionais (tuberculose, hanseníase, malária na Amazônia, leishmanioses e mortalidade materna/infantil em bolsões de vulnerabilidade);",
+            "<strong>A Carga Hegemônica das Doenças Crônicas Não Transmissíveis (DCNT):</strong> Representam mais de 70% da mortalidade global brasileira (doenças cardiovasculares como AVC e IAM, neoplasias malignas, diabetes mellitus e doenças respiratórias crônicas);",
+            "<strong>O Desafio Avassalador das Causas Externas:</strong> Epidemia crônica de homicídios por armas de fogo (atingindo seletivamente jovens homens negros da periferia) e traumatismos graves no trânsito urbano e rodoviário, gerando sobrecarga colossal nas redes de urgência/emergência e anos potenciais de vida perdidos (APVP)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "padronizacao-de-taxas-e-indicadores-sinteticos",
+      0,
+      [
+        [
+          "2",
+          "11. Padronização de Taxas (Métodos Direto e Indireto), DALY e Anos Potenciais de Vida Perdidos (APVP)"
+        ],
+        [
+          "3",
+          "Por que é Mandatório Padronizar Taxas de Mortalidade?"
+        ],
+        [
+          "p",
+          "Conforme demonstrado anteriormente, o Coeficiente de Mortalidade Geral (Taxa Bruta) não permite comparar o nível sanitário real de duas comunidades que possuem estruturas etárias distintas. Uma cidade litorânea turística com 30% de idosos terá inevitavelmente mais mortes por habitante do que um município universitário jovem, mesmo que o sistema de saúde da cidade litorânea seja infinitamente superior."
+        ],
+        [
+          "p",
+          "Para anular o efeito de confusão exercido pela idade, a epidemiologia utiliza as <strong>Técnicas de Padronização de Taxas</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Método de Padronização",
+            "Metodologia Operacional",
+            "Requisitos de Dados Necessários",
+            "Resultado Estatístico Gerado"
+          ],
+          [
+            [
+              "<strong>Método Direto (Direct Standardization)</strong>",
+              "Aplica-se a taxa de mortalidade específica por idade da população estudada a uma <strong>População Padrão de Referência teórica externa</strong> (ex.: população mundial da OMS ou população do Brasil de determinado censo censitário).",
+              "Exige o conhecimento detalhado das taxas de mortalidade em cada faixa etária específica na população local.",
+              "Gera a <strong>Taxa Padronizada por Idade (TPI)</strong>, expressa na mesma unidade da taxa bruta (ex.: 6,5 óbitos por 1.000 hab.), permitindo comparar diretamente diferentes países e estados."
+            ],
+            [
+              "<strong>Método Indireto (Indirect Standardization)</strong>",
+              "Aplica-se a taxa de mortalidade específica da <strong>População Padrão</strong> sobre a distribuição etária real da população local estudada, calculando o <strong>número de mortes que seriam esperadas</strong> se aquela população tivesse a mesma mortalidade do padrão.",
+              "Utilizado quando <em>NÃO SE CONHECE</em> o número exato de mortes em cada faixa etária local (dados locais incompletos ou amostras populacionais muito pequenas).",
+              "Gera a <strong>Razão de Mortalidade Padronizada (RMP ou SMR - Standardized Mortality Ratio)</strong>:\n      $$\\text{RMP} = \\frac{\\text{Óbitos Observados na população}}{\\text{Óbitos Esperados na população}}$$\n      • Se $\\text{RMP} &gt; 1,0$: Morre-se mais do que o esperado;<br>\n      • Se $\\text{RMP} &lt; 1,0$: Morre-se menos do que o esperado."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Indicadores Sintéticos de Carga de Doença: APVP e DALY"
+        ],
+        [
+          "p",
+          "Os indicadores de mortalidade clássicos possuem uma limitação inerente: tratam o óbito de uma criança de 2 anos com o mesmo peso aritmético do óbito de um idoso de 98 anos. Para mensurar o impacto social e econômico prematuro das mortes e o fardo das sequelas incapacitantes, criaram-se indicadores sintéticos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Anos Potenciais de Vida Perdidos (APVP):</strong> Calcula quantos anos de vida foram subtraídos de um indivíduo que faleceu antes de atingir um limite predeterminado de longevidade (habitualmente estipulado em 70 ou 75 anos de idade). Se um jovem de 20 anos falece vítima de homicídio ou acidente de moto em uma sociedade com teto de 70 anos, ele gera <strong>50 APVP</strong>. Se um senhor de 73 anos falece por AVC, ele gera <strong>zero APVP</strong>. No Brasil, as <strong>Causas Externas (trauma/violência)</strong> são a 1ª causa disparada de APVP, ceifando a juventude no auge de sua produtividade;",
+            "<strong>DALY (Disability-Adjusted Life Years / Anos de Vida Ajustados por Incapacidade):</strong> Desenvolvido pela OMS e Universidade de Harvard no estudo de Carga Global de Doenças (<em>Global Burden of Disease - GBD</em>), o DALY é a soma de duas dimensões complementares:\n    $$\\text{DALY} = \\text{YLL} + \\text{YLD}$$\n    Onde:\n    <ul>\n      <li><strong>YLL (Years of Life Lost):</strong> Anos de vida perdidos por morte prematura antes da expectativa de vida ideal;",
+            "<strong>YLD (Years Lived with Disability):</strong> Anos vividos com incapacidade, multiplicando a duração da sequela por um peso de gravidade atribuído à disfunção física ou mental."
+          ]
+        ],
+        [
+          "p",
+          "O DALY quantifica com perfeição o impacto de doenças que não matam de imediato, mas causam sofrimento e invalidez crônica por décadas, como depressão maior, dores lombares crônicas, transtornos por uso de substâncias, sequelas motoras de AVC e demências.\n  </li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "construcao-e-interpretacao-de-tabelas-de-vida-e-sobrevida",
+      0,
+      [
+        [
+          "2",
+          "12. Tábuas de Vida, Análise de Sobrevida (Curvas de Kaplan-Meier) e Mortalidade Proporcional por Faixas Etárias de Nelson Moraes"
+        ],
+        [
+          "3",
+          "As Tábuas de Vida (Life Tables) na Demografia e Atuária Médica"
+        ],
+        [
+          "p",
+          "As <strong>Tábuas de Vida</strong> (ou Tábuas de Mortalidade) constituem um dos instrumentos demográficos e epidemiológicos mais sofisticados para modelar a probabilidade de morte e a expectativa de vida de uma coorte sintética hipotética (habitualmente fixada em 100.000 nascidos vivos) submetida às taxas de mortalidade específicas por idade observadas em uma população real em um determinado ano calendário."
+        ],
+        [
+          "p",
+          "As colunas clássicas de uma Tábua de Vida biomédica contêm:"
+        ],
+        [
+          "u",
+          [
+            "<strong>$l_x$:</strong> Número de indivíduos sobreviventes exatamente na idade exata $x$ (iniciando com $l_0 = 100.000$ nascidos vivos);",
+            "<strong>$d_x$:</strong> Número de óbitos ocorridos no intervalo etário entre a idade $x$ e $x + n$;",
+            "<strong>$q_x$:</strong> Probabilidade de um indivíduo de idade $x$ vir a falecer antes de atingir a idade $x + n$ ($q_x = d_x / l_x$);",
+            "<strong>$p_x$:</strong> Probabilidade de sobrevivência ($p_x = 1 - q_x$);",
+            "<strong>$L_x$:</strong> Número de pessoas-ano vividas pela coorte no intervalo etário;",
+            "<strong>$e_x$:</strong> <strong>Esperança de Vida (ou Expectativa de Vida) na Idade $x$:</strong> Número médio de anos que um indivíduo que atingiu a idade $x$ ainda viverá se os padrões de mortalidade daquele momento permanecerem constantes ao longo do tempo. A <strong>Esperança de Vida ao Nascer ($e_0$)</strong> é o indicador mais emblemático desse modelo, resumindo em um único número a carga de mortalidade de todas as idades combinadas."
+          ]
+        ],
+        [
+          "3",
+          "A Análise de Sobrevida e o Método de Kaplan-Meier em Ensaios Clínicos"
+        ],
+        [
+          "p",
+          "Na pesquisa clínica oncológica e cardiovascular, os pesquisadores necessitam estimar a probabilidade de um paciente permanecer vivo (ou livre de recidiva tumoral) ao longo de meses ou anos de acompanhamento terapêutico. O método padrão-ouro universal para essa modelagem é a <strong>Curva de Sobrevida de Kaplan-Meier (estimador produto-limite)</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Conceito Metodológico",
+            "Definição Operacional e Características Técnicas",
+            "Aplicação em Provas de Residência"
+          ],
+          [
+            [
+              "<strong>Natureza Não Paramétrica</strong>",
+              "Não exige suposições prévias sobre a distribuição matemática subjacente dos tempos de sobrevida (não assume normalidade da curva).",
+              "Permite avaliar desfechos em coortes clínicas com períodos heterogêneos de seguimento."
+            ],
+            [
+              "<strong>Recálculo a Cada Evento (Degraus da Escada)</strong>",
+              "A probabilidade de sobrevida é recalculada <strong>exatamente no instante em que ocorre cada novo óbito/evento</strong>. A representação gráfica forma uma <strong>curva em degraus descendentes</strong>: cada degrau para baixo representa a ocorrência de um ou mais óbitos naquele tempo $t$.",
+              "O tamanho da queda do degrau reflete a proporção de pacientes vivos que morreram naquele momento específico."
+            ],
+            [
+              "<strong>Tratamento Estatístico das Censuras (Censoring)</strong>",
+              "Indivíduos que abandonaram o estudo, mudaram de endereço, faleceram por causas não relacionadas ou completaram o estudo sem apresentar o desfecho são tratados como <strong>dados censurados</strong>.",
+              "<strong>Representação Gráfica:</strong> As censuras são marcadas na curva como pequenos <strong>traços verticais ou cruzes (+)</strong> ao longo dos patamares horizontais. O paciente censurado contribui com tempo sob risco até o momento de sua última consulta, sendo então retirado do denominador subsequente sem contar como morte!"
+            ],
+            [
+              "<strong>Comparação Estatística: Teste de Log-Rank</strong>",
+              "Teste estatístico padrão-ouro utilizado para comparar se a sobrevida entre dois ou mais braços de tratamento (ex.: Quimioterapia A vs Quimioterapia B) é estatisticamente diferente ao longo de todo o tempo de seguimento.",
+              "Gera um valor de $p$. Se $p &lt; 0,05$, rejeita-se a hipótese nula de equivalência, comprovando benefício de sobrevida global do novo fármaco."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Curva de Mortalidade Proporcional por Idade de Nelson de Moraes"
+        ],
+        [
+          "p",
+          "Proposta pelo eminente sanitarista brasileiro Nelson de Moraes na década de 1950, a <strong>Curva de Mortalidade Proporcional por Idade</strong> analisa a distribuição percentual das mortes em quatro faixas etárias estratégicas: (1) Menores de 1 ano; (2) De 1 a 19 anos; (3) De 20 a 49 anos; (4) De 50 anos ou mais. A morfologia visual do gráfico desenhado indica imediatamente o nível de desenvolvimento socioeconômico e sanitário daquela população:"
+        ],
+        [
+          "t",
+          [
+            "Tipo de Curva de Nelson Moraes",
+            "Formato Gráfico Característico",
+            "Nível de Saúde / Desenvolvimento",
+            "Interpretação Epidemiológica"
+          ],
+          [
+            [
+              "<strong>Tipo I: Muito Baixo Nível de Saúde</strong>",
+              "Formato de <strong>\"N\" invertido (ou \"N\")</strong>: Altíssima mortalidade em menores de 1 ano, baixa em jovens e adultos, e percentual muito baixo de mortes em $ge 50$ anos (pouquíssimos sobrevivem até a velhice).",
+              "Muito Baixo (Países mais miseráveis do mundo / África Subsaariana / Brasil da década de 1940).",
+              "Predomínio brutal de mortes infantis por desnutrição e infecções; baixa expectativa de vida ao nascer."
+            ],
+            [
+              "<strong>Tipo II: Baixo Nível de Saúde</strong>",
+              "Formato de <strong>\"L\" ou \"J\" deitado</strong>: Mortalidade em menores de 1 ano continua sendo a maior de todas, com declínio progressivo nas idades subsequentes.",
+              "Baixo Nível de Saúde.",
+              "Pequena melhoria nas condições sanitárias, mas com mortalidade infantil ainda inaceitavelmente hegemônica."
+            ],
+            [
+              "<strong>Tipo III: Regular Nível de Saúde</strong>",
+              "Formato de <strong>\"V\" ou \"U\"</strong>: Mortalidade alta em menores de 1 ano e alta em maiores de 50 anos, com vale nas idades jovens.",
+              "Regular Nível de Saúde (Populações em transição intermediária).",
+              "A mortalidade infantil começa a ceder espaço para o envelhecimento populacional inicial."
+            ],
+            [
+              "<strong>Tipo IV: Elevado Nível de Saúde</strong>",
+              "Formato de <strong>\"J\" clássico</strong>: Mortalidade quase nula em menores de 1 ano e jovens, concentrando a esmagadora maioria de todos os óbitos (75% a 90%) na faixa etária de <strong>50 anos ou mais</strong>.",
+              "<strong>Muito Elevado Nível de Saúde</strong> (Países desenvolvidos da Europa Ocidental, Canadá, Japão e capitais do Centro-Sul do Brasil atual).",
+              "Transição demográfica e epidemiológica consolidada: mortes evitáveis na infância foram quase erradicadas, falecendo-se predominantemente por doenças crônico-degenerativas na senescência."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "bateria-complementar-questoes-comentadas-frequencia",
+      0,
+      [
+        [
+          "2",
+          "13. Bateria Complementar de Questões Comentadas de Alto Nível para Provas de Título e Residência"
+        ],
+        [
+          "3",
+          "Questões Analíticas Adicionais com Gabarito Detalhado"
+        ],
+        [
+          "4",
+          "Questão 7: SURCE — Coeficiente de Incidência Acumulada vs. Prevalência em Inquérito"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Uma equipe de pesquisadores universitários realiza um inquérito domiciliar transversal amostral em uma comunidade carente com 20.000 moradores e identifica que 1.800 pessoas preenchem critérios para diagnóstico de diabetes mellitus tipo 2 no momento da entrevista. No mesmo levantamento, constatam que nos últimos 12 meses foram diagnosticados 120 novos casos de diabetes entre os moradores previamente hígidos. Os valores da prevalência pontual e da incidência acumulada anual de diabetes nessa comunidade são, respectivamente:"
+        ],
+        [
+          "p",
+          "A) 9,0% e 0,66%.<br>\nB) 6,0% e 9,0%.<br>\nC) 0,66% e 9,0%.<br>\nD) 9,0% e 6,6 por 1.000 habitantes.<br>\nE) As alternativas A e D são equivalentes e corretas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa E.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Prevalência Pontual:</strong> Casos existentes no momento divididos pela população total:\n$$\\text{Prevalência} = \\frac{1.800}{20.000} = 0,09 = 9,0\\%$$\n• <strong>Incidência Acumulada Anual:</strong> Casos novos surgidos em 1 ano divididos pela população sob risco inicial (população total menos os casos que já tinham diabetes no início do período):\n$$\\text{População sob risco inicial} = 20.000 - (1.800 - 120) = 20.000 - 1.680 = 18.320 \\text{ (ou aproximada pela média de } 18.200\\text{)}$$\n$$\\text{Incidência} = \\frac{120}{18.200} \\approx 0,00659 = 0,66\\% = 6,59 \\approx 6,6 \\text{ por } 1.000 \\text{ habitantes}$$\nTanto 0,66% quanto 6,6 por 1.000 habitantes expressam matematicamente a mesma grandeza sob potências de dez distintas. Alternativa E perfeita."
+        ],
+        [
+          "4",
+          "Questão 8: SCMSP — Interpretação de Curvas de Nelson de Moraes"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Ao analisar o gráfico de mortalidade proporcional por idade de Nelson de Moraes de um município industrial brasileiro traçado para o ano de 2024, a comissão de saúde constata uma curva com nítido formato de \"J\", na qual a proporção de óbitos em menores de 1 ano é de apenas 1,8%, em pessoas de 1 a 19 anos é de 2,2%, de 20 a 49 anos é de 14,0% e em pessoas com 50 anos ou mais é de 82,0%. Essa morfologia gráfica indica categoricamente:"
+        ],
+        [
+          "p",
+          "A) Nível de saúde extremamente precário decorrente de poluição ambiental industrial.<br>\nB) Elevado nível de saúde e transição demográfica avançada, compatível com sociedades de alto desenvolvimento socioeconômico e baixa mortalidade na infância.<br>\nC) Inconsistência nos registros do SIM que exige anulação do censo sanitário.<br>\nD) Falha grave nos programas de vacinação de adultos e idosos.<br>\nE) Predomínio de mortes por doenças infecciosas e parasitárias na juventude."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> A Curva Tipo IV de Nelson de Moraes (em formato de <strong>\"J\"</strong>) caracteriza o <strong>mais elevado nível de saúde</strong>. Mais de 80% das mortes ocorrem na população idosa ($ge 50$ anos) e as mortes infantis foram reduzidas a patamares mínimos residuais ($&lt; 2\\%$). Reflete sociedades com excelente saneamento, saneamento, alta escolaridade e atenção médica qualificada."
+        ],
+        [
+          "4",
+          "Questão 9: Einstein — Análise de Sobrevida de Kaplan-Meier"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em uma curva de Kaplan-Meier que compara dois esquemas de imunoterapia para melanoma metastático estádio IV, observa-se que, aos 24 meses de acompanhamento, a curva do braço A atinge um platô horizontal de sobrevida em 65%, enquanto a curva do braço B estabiliza-se em 35%, com valor de $p = 0,001$ ao teste de Log-Rank. Ao longo dos platôs horizontais de ambas as curvas, são visíveis dezenas de pequenos traços verticais (+). A interpretação correta desses achados epidemiológicos é:"
+        ],
+        [
+          "p",
+          "A) Os traços verticais representam os momentos em que ocorreram óbitos nos braços de estudo.<br>\nB) O teste de Log-Rank avalia a igualdade de médias aritméticas de pressão arterial entre os grupos.<br>\nC) Os traços verticais representam observações censuradas (pacientes vivos retirados do acompanhamento ou cujo tempo de estudo terminou sem o desfecho óbito), e a diferença entre as curvas é estatisticamente significante a favor do braço A.<br>\nD) O braço B foi superior por apresentar menor tempo de platô.<br>\nE) A probabilidade de sobrevida deve ser descartada por não atingir 100% em 5 anos."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa C (Correta):</strong> Na metodologia de Kaplan-Meier: (1) As <strong>quedas verticais em degrau</strong> indicam <strong>óbitos reais</strong>; (2) Os <strong>pequenos traços verticais (+) ao longo dos patamares horizontais</strong> marcam as <strong>censuras</strong> (pacientes que não morreram, mas cessaram o seguimento naquele instante); (3) O teste de <strong>Log-Rank com $p = 0,001$</strong> comprova que a vantagem de sobrevida do Braço A (65% vivos aos 2 anos vs 35% no Braço B) é estatisticamente significante e não decorre do acaso. Alternativa C indiscutível."
+        ],
+        [
+          "4",
+          "Questão 10: HC-UFPR — Mortalidade Materna e Causas Externas"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Uma gestante de 24 semanas, previamente hígida e com pré-natal de baixo risco em dia, é passageira de um ônibus intermunicipal que colide frontalmente contra um caminhão em rodovia federal. A paciente sofre politraumatismo grave com traumatismo cranioencefálico grave, choque hemorrágico traumático por fratura exposta de fêmur e bacia e hemotórax maciço, vindo a óbito no local do acidente juntamente com o feto. De acordo com as regras internacionais de classificação da CID-10 e do Ministério da Saúde para estatísticas de mortalidade, a Declaração de Óbito dessa paciente deve ser classificada como:"
+        ],
+        [
+          "p",
+          "A) Óbito Materno Direto, pois a paciente estava grávida no momento da morte.<br>\nB) Óbito Materno Indireto, pois o trauma ocorreu durante o segundo trimestre gestacional.<br>\nC) Morte Materna Tardia.<br>\nD) Óbito de Mulher em Idade Fértil por Causa Externa / Acidental, NÃO sendo considerado formalmente um Óbito Materno.<br>\nE) Morte Perinatal Materna Obrigatória."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa D (Correta):</strong> A definição oficial de <strong>Óbito Materno da OMS e da CID-10</strong> é taxativa: compreende mortes devidas a causas relacionadas com ou agravadas pela gravidez ou por medidas em relação a ela, <strong>EXCLUINDO-SE EXPRESSAMENTE AS CAUSAS ACIDENTAIS OU INCIDENTAIS</strong>. Traumatismos em acidentes de transporte, homicídios, quedas acidentais e afogamentos são classificados no Capítulo XX da CID-10 (Causas Externas de Morbimortalidade). A mulher estava grávida, mas a gestação não teve qualquer nexo causal fisiopatológico com a colisão do veículo. Portanto, <strong>NÃO ENTRA NO CÁLCULO DA RAZÃO DE MORTALIDADE MATERNA (RMM)</strong>. Alternativa D correta."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/i/indicadores-de-saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Rede Interagencial de Informação para a Saúde (RIPSA): Indicadores Básicos para a Saúde no Brasil (IDB)</a>",
+            "<a href=\"https://www.elsevier.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Gordis, Leon — Epidemiologia (6ª Edição). Capítulo 3: Medição da Ocorrência das Doenças: I. Morbidade e Capítulo 4: II. Mortalidade</a>",
+            "<a href=\"https://www.artmed.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Rothman, Kenneth J. — Epidemiologia Moderna (3ª Edição). Medidas de Frequência e Associação</a>",
+            "<a href=\"https://www.medbookeditora.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Rouquayrol, M. Z. & Gurgel, M. — Epidemiologia & Saúde (8ª Edição). Indicadores de Saúde e Transição Demográfica</a>",
+            "<a href=\"https://www.who.int/data/gho\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — The Global Health Observatory: Maternal and Child Mortality Indicators</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
