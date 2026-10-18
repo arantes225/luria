@@ -121,7 +121,7 @@
                   <textarea id="alex-prompt" placeholder="Ex.: quero entender do zero por que a estenose aórtica causa síncope e como isso aparece na prova."></textarea>
                 </div>
                 <div class="alex-actions">
-                  <input class="alex-file" id="alex-file" type="file" accept=".pdf,.txt,.md,.doc,.docx">
+                  <input class="alex-file" id="alex-file" type="file" accept=".pdf,.txt,.md">
                   <button class="alex-action" type="button" id="alex-file-button">Anexar material</button>
                   <button class="alex-action alex-voice" type="button" id="alex-voice-button">Falar</button>
                   <span class="alex-file-state" id="alex-file-state">Nenhum material anexado</span>
@@ -130,8 +130,8 @@
               </form>
               <div class="alex-output" id="alex-output" aria-live="polite">
                 <div class="alex-output-card">
-                  <h3>A aula está pronta para ser conectada ao motor do Professor Alex</h3>
-                  <p id="alex-output-copy">A interface, contexto, modo e material já estão sendo capturados. A próxima etapa é ligar este envio ao backend de IA e devolver a aula em blocos estruturados.</p>
+                  <h3>Professor Alex</h3>
+                  <p id="alex-output-copy">Escolha um tema ou digite sua pergunta para começar a aula.</p>
                 </div>
               </div>
             </section>
@@ -225,6 +225,7 @@
     })();
   </script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+  <script type="module" src="/assets/js/professor-alex-gemini.mjs?v=20261018-google1"></script>
   <script type="module" src="/assets/js/professor-alex-page.mjs?v=20261014-ready2"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+name: Professor Alex Gemini checks
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "professor-alex/**"
+      - "assets/js/professor-alex-gemini.mjs"
+      - "supabase/functions/professor-alex-gemini/**"
+      - "db/professor_alex_daily_quota.sql"
+      - "tests/professor-alex-gemini.test.cjs"
+      - ".github/workflows/professor-alex-gemini.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node --check assets/js/professor-alex-gemini.mjs
+      - run: node --test tests/professor-alex-gemini.test.cjs
+      - run: node scripts/check-syntax.cjs
+      - run: node scripts/sync-csp.cjs
