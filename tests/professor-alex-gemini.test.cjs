@@ -17,7 +17,7 @@ test("Professor Alex page loads the real integration and supports safe files", (
 });
 
 test("Gemini secret stays in backend and requests require authentication", () => {
-  assert.doesNotMatch(client, /Deno\.env|CLIENT_GEMINI|x-goog-api-key/);
+  assert.doesNotMatch(client, /Deno\.env|x-goog-api-key|generativelanguage\.googleapis\.com/);
   assert.match(edge, /Deno\.env\.get\("CLIENT_GEMINI"\)/);
   assert.match(edge, /auth\.getUser\(token\)/);
   assert.match(edge, /origin_not_allowed/);
