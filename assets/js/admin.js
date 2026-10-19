@@ -5874,7 +5874,11 @@
   function validateApostilaBatchCandidate(raw, index) {
     if (!raw || typeof raw !== "object" || Array.isArray(raw)) throw Error("Candidata " + index + ": registro inválido.");
     const path = String(raw.apostila_path || "").trim();
-    if (!/^\/apostilas\/[a-z0-9-]+\/$/.test(path)) throw Error("Candidata " + index + ": apostila_path inválido.");
+    // Importação provisória da curadoria visual: permite agrupar candidatas sem vínculo
+    // definitivo; o remapeamento para a apostila real ocorre após a revisão humana.
+    if (!/^\/apostilas\/[a-z0-9-]+\/$/.test(path) && path !== "/apostilas/curadoria-pendente/") {
+      throw Error("Candidata " + index + ": apostila_path inválido.");
+    }
     const key = String(raw.candidate_key || "").trim();
     if (!/^[a-zA-Z0-9_.-]{3,100}$/.test(key)) throw Error("Candidata " + index + ": candidate_key inválida.");
     const section = String(raw.target_section || "").trim();
