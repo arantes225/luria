@@ -10,12 +10,13 @@
     user: null,
     isAdmin: false,
     pinConfigured: false,
-    pinUnlocked: false
+    pinUnlocked: false,
+    currentView: "weekly" // "weekly" ou "monthly"
   };
 
   const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link";
 
-  // PLANNER SEMANAL ESTRUTURADO (7 DIAS DA SEMANA)
+  // PLANNER SEMANAL DETALHADO (7 DIAS)
   const WEEK_PLAN = [
     {
       dayCode: "seg",
@@ -141,6 +142,74 @@
     }
   ];
 
+  // CRONOGRAMA MENSAL ESTRUTURADO (4 SEMANAS)
+  const MONTH_PLAN = [
+    {
+      weekNumber: 1,
+      weekTitle: "Semana 1 · Fundação & Autoridade",
+      theme: "Emergências Médicas & Diagnóstico Crítico",
+      goal: "Apresentar o rigor técnico e a utilidade prática da LURIA para médicos e estudantes.",
+      badge: "Semana Atual",
+      badgeClass: "ready",
+      isCurrent: true,
+      items: [
+        { day: "Terça · 12h00", format: "Carrossel", title: "5 Condutas em Emergência que Mudaram" },
+        { day: "Quarta · 19h30", format: "Reels HD", title: "AVC vs Hipoglicemia (O Erro do Delta T)" },
+        { day: "Quinta · 12h30", format: "Carrossel", title: "Curva do Esquecimento na Medicina" },
+        { day: "Sexta · 18h30", format: "Reels Pílula", title: "ECG da Hipercalemia Grave em 30s" },
+        { day: "Domingo · 20h00", format: "Stories", title: "Desafio Clínico: Dor Torácica no PS" }
+      ]
+    },
+    {
+      weekNumber: 2,
+      weekTitle: "Semana 2 · Rotina do Internato & Raciocínio",
+      theme: "Condutas de Enfermaria & Prescrição Segura",
+      goal: "Resolver a insegurança do estudante no internato (antibióticos, hidratação, distúrbios hidroeletrolíticos).",
+      badge: "Planejada",
+      badgeClass: "progress",
+      isCurrent: false,
+      items: [
+        { day: "Terça · 12h00", format: "Carrossel", title: "Guia Rápido de Antibioticoterapia Empírica no PS" },
+        { day: "Quarta · 19h30", format: "Reels HD", title: "Por que Nunca Fazer Soro Fisiológico 0.9% Aberto?" },
+        { day: "Quinta · 12h30", format: "Carrossel", title: "Como Estruturar uma Evolução Médica Impecável" },
+        { day: "Sexta · 18h30", format: "Reels Pílula", title: "Como Calcular o Déficit de Sódio sem Errar" },
+        { day: "Domingo · 20h00", format: "Stories", title: "Desafio Clínico: Hiponatremia Aguda" }
+      ]
+    },
+    {
+      weekNumber: 3,
+      weekTitle: "Semana 3 · Alta Performance & Provas de Residência",
+      theme: "Estratégia de Estudos & Questões de Alta Dificuldade",
+      goal: "Atrair o público de vestibulandos e residentes com foco em simulados, editais e pegadinhas de banca.",
+      badge: "Planejada",
+      badgeClass: "planned",
+      isCurrent: false,
+      items: [
+        { day: "Terça · 12h00", format: "Carrossel", title: "Os 5 Temas Mais Cobrados no ENARE/USP nos Últimos 3 Anos" },
+        { day: "Quarta · 19h30", format: "Reels HD", title: "A Pegadinha Mais Comum de Pediatria nas Provas" },
+        { day: "Quinta · 12h30", format: "Carrossel", title: "Como Usar o Caderno de Erros para Subir 15% a Média" },
+        { day: "Sexta · 18h30", format: "Reels Pílula", title: "Critérios de Wells em 25 Segundos" },
+        { day: "Domingo · 20h00", format: "Stories", title: "Simulado Relâmpago: 5 Questões Comentadas" }
+      ]
+    },
+    {
+      weekNumber: 4,
+      weekTitle: "Semana 4 · Tomada de Decisão Sob Pressão",
+      theme: "Protocolos de UTI & Sala Vermelha",
+      goal: "Consolidar a LURIA como a ferramenta de consulta e treino obrigatória do profissional médico.",
+      badge: "Planejada",
+      badgeClass: "planned",
+      isCurrent: false,
+      items: [
+        { day: "Terça · 12h00", format: "Carrossel", title: "Manejo da Sepse Grave na Primeira Hora (Bundle 1h)" },
+        { day: "Quarta · 19h30", format: "Reels HD", title: "Intubação de Sequência Rápida: A Droga que Salva vidas" },
+        { day: "Quinta · 12h30", format: "Carrossel", title: "Grave vs Estável: Quando Usar Droga Vasoativa?" },
+        { day: "Sexta · 18h30", format: "Reels Pílula", title: "Pneumotórax Hipertensivo: Diagnóstico Clínico Imediato" },
+        { day: "Domingo · 20h00", format: "Stories", title: "Desafio de Sala Vermelha: Choque Indiferenciado" }
+      ]
+    }
+  ];
+
   function adminPinGraceStorageKey() {
     const userId = String(state.user?.id || window.docmapUser?.id || "admin");
     return `${ADMIN_PIN_GRACE_KEY}:${userId}`;
@@ -196,20 +265,20 @@
     }
     if (description) {
       description.textContent = state.pinConfigured
-        ? "Digite os 6 dígitos do Admin para acessar o Planner Editorial."
+        ? "Digite os 6 dígitos do Admin para acessar o Planejador Editorial."
         : "Este é seu primeiro acesso protegido. Crie um PIN de 6 dígitos.";
     }
     if (label) {
       label.textContent = state.pinConfigured ? "PIN de 6 dígitos" : "Criar PIN";
     }
     if (submit) {
-      submit.textContent = state.pinConfigured ? "Desbloquear Planner" : "Cadastrar PIN";
+      submit.textContent = state.pinConfigured ? "Desbloquear Editorial" : "Cadastrar PIN";
       submit.disabled = false;
     }
 
     setPinMessage(
       state.pinConfigured
-        ? "O planner permanece protegido por PIN."
+        ? "O planejamento permanece protegido por PIN."
         : "O PIN será protegido e sincronizado com o Admin."
     );
 
@@ -239,7 +308,7 @@
     if (gate) gate.hidden = true;
     if (app) app.hidden = false;
 
-    renderWeeklyPlanner();
+    renderCurrentView();
   }
 
   async function submitEditorialPin(event) {
@@ -299,7 +368,7 @@
         }
         if (submit) {
           submit.disabled = false;
-          submit.textContent = "Desbloquear Planner";
+          submit.textContent = "Desbloquear Editorial";
         }
       }
     } catch (err) {
@@ -307,73 +376,145 @@
       setPinMessage("Erro ao validar PIN administrativo.", "error");
       if (submit) {
         submit.disabled = false;
-        submit.textContent = "Desbloquear Planner";
+        submit.textContent = "Desbloquear Editorial";
       }
     }
   }
 
   function renderWeeklyPlanner() {
-    const board = $("editorial-planner-board");
-    if (!board) return;
+    const container = $("editorial-view-container");
+    if (!container) return;
 
-    board.innerHTML = WEEK_PLAN.map((col) => {
-      const hasPost = col.posts.length > 0;
-      return `
-        <div class="editorial-day-col ${hasPost ? "has-post" : ""}">
-          <div class="editorial-col-header">
-            <div class="editorial-col-day">
-              <span>${col.dayName}</span>
-              <small>${col.dateLabel}</small>
-            </div>
-            <span class="editorial-col-count ${hasPost ? "active-count" : ""}">
-              ${col.posts.length} ${col.posts.length === 1 ? "post" : "posts"}
-            </span>
-          </div>
-
-          <div class="editorial-col-body">
-            ${hasPost ? col.posts.map(post => `
-              <article class="planner-card">
-                <div class="planner-card-top">
-                  <span class="planner-time">⏰ ${post.time}</span>
-                  <span class="planner-badge badge-${post.badgeClass}">${post.badge}</span>
+    container.innerHTML = `
+      <div id="editorial-planner-board" class="editorial-planner-board">
+        ${WEEK_PLAN.map((col) => {
+          const hasPost = col.posts.length > 0;
+          return `
+            <div class="editorial-day-col ${hasPost ? "has-post" : ""}">
+              <div class="editorial-col-header">
+                <div class="editorial-col-day">
+                  <span>${col.dayName}</span>
+                  <small>${col.dateLabel}</small>
                 </div>
-
-                <h4 class="planner-title">${post.title}</h4>
-                <p class="planner-sub">${post.subtitle}</p>
-
-                <div class="planner-study">
-                  <strong>🔬 Estudo & Rationale:</strong>
-                  <p>${post.rationale}</p>
-                </div>
-
-                <div class="planner-action">
-                  <strong>🎯 Roteiro:</strong>
-                  <p>${post.actionPlan}</p>
-                </div>
-
-                <div class="planner-meta">
-                  <span>Formato: <strong>${post.type}</strong></span>
-                  <span>Objetivo: <strong>${post.goal}</strong></span>
-                  <span>Dimensões: <strong>${post.format}</strong></span>
-                </div>
-
-                <a href="${post.driveUrl}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
-                  📂 Ver no Drive
-                </a>
-              </article>
-            `).join("") : `
-              <div class="editorial-col-empty">
-                <span>☕</span>
-                <p>Dia reservado sem postagens no feed</p>
+                <span class="editorial-col-count ${hasPost ? "active-count" : ""}">
+                  ${col.posts.length} ${col.posts.length === 1 ? "post" : "posts"}
+                </span>
               </div>
-            `}
-          </div>
-        </div>
-      `;
-    }).join("");
+
+              <div class="editorial-col-body">
+                ${hasPost ? col.posts.map(post => `
+                  <article class="planner-card">
+                    <div class="planner-card-top">
+                      <span class="planner-time">⏰ ${post.time}</span>
+                      <span class="planner-badge badge-${post.badgeClass}">${post.badge}</span>
+                    </div>
+
+                    <h4 class="planner-title">${post.title}</h4>
+                    <p class="planner-sub">${post.subtitle}</p>
+
+                    <div class="planner-study">
+                      <strong>🔬 Estudo & Rationale:</strong>
+                      <p>${post.rationale}</p>
+                    </div>
+
+                    <div class="planner-action">
+                      <strong>🎯 Roteiro:</strong>
+                      <p>${post.actionPlan}</p>
+                    </div>
+
+                    <div class="planner-meta">
+                      <span>Formato: <strong>${post.type}</strong></span>
+                      <span>Objetivo: <strong>${post.goal}</strong></span>
+                      <span>Dimensões: <strong>${post.format}</strong></span>
+                    </div>
+
+                    <a href="${post.driveUrl}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
+                      📂 Ver no Drive
+                    </a>
+                  </article>
+                `).join("") : `
+                  <div class="editorial-col-empty">
+                    <span>☕</span>
+                    <p>Dia reservado sem postagens no feed</p>
+                  </div>
+                `}
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  function renderMonthlySchedule() {
+    const container = $("editorial-view-container");
+    if (!container) return;
+
+    container.innerHTML = `
+      <div class="editorial-month-grid">
+        ${MONTH_PLAN.map(week => `
+          <article class="month-week-card ${week.isCurrent ? "is-current" : ""}">
+            <div class="month-week-header">
+              <div class="month-week-badge-row">
+                <span class="month-week-num">${week.weekTitle}</span>
+                <span class="month-week-theme">${week.theme}</span>
+              </div>
+              <span class="planner-badge badge-${week.badgeClass}">${week.badge}</span>
+            </div>
+
+            <div class="month-week-goal">
+              <strong>🎯 Meta Estratégica:</strong> ${week.goal}
+            </div>
+
+            <div class="month-posts-list">
+              ${week.items.map(item => `
+                <div class="month-post-item">
+                  <div class="month-post-item-top">
+                    <span class="month-post-day">${item.day}</span>
+                    <span class="month-post-format">${item.format}</span>
+                  </div>
+                  <h5 class="month-post-title">${item.title}</h5>
+                </div>
+              `).join("")}
+            </div>
+
+            <div class="month-week-footer">
+              <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn">
+                📂 Acessar Pasta da Semana no Drive
+              </a>
+            </div>
+          </article>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function renderCurrentView() {
+    if (state.currentView === "weekly") {
+      renderWeeklyPlanner();
+    } else {
+      renderMonthlySchedule();
+    }
+
+    $("tab-weekly")?.classList.toggle("active", state.currentView === "weekly");
+    $("tab-monthly")?.classList.toggle("active", state.currentView === "monthly");
+  }
+
+  function setupViewToggle() {
+    $("tab-weekly")?.addEventListener("click", () => {
+      state.currentView = "weekly";
+      renderCurrentView();
+    });
+
+    $("tab-monthly")?.addEventListener("click", () => {
+      state.currentView = "monthly";
+      renderCurrentView();
+    });
   }
 
   async function init() {
+    setupViewToggle();
+
     const form = $("admin-pin-form");
     if (form) {
       form.addEventListener("submit", submitEditorialPin);
