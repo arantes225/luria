@@ -1,0 +1,897 @@
+{
+  "images": [
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "ECG_Atrial_Fibrillation.svg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ECG_Atrial_Fibrillation.svg",
+        "alt": "ECG de FA — derivação clínica",
+        "title": "ECG de FA — derivação clínica",
+        "caption": "ECG real retrabalhado em SVG; verificar medidas de RR e P",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:ECG_Atrial_Fibrillation.svg",
+      "source_name": "Ewingdo; vetorização Marnanel",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Atrial_Fibrillation_in_two_leads.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atrial_Fibrillation_in_two_leads.jpg",
+        "alt": "ECG de FA em duas derivações",
+        "title": "ECG de FA em duas derivações",
+        "caption": "Reconhecimento de irregularidade e ausência de P",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atrial_Fibrillation_in_two_leads.jpg",
+      "source_name": "PeaBrainC",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Atrial_fibrillation_vs._normal_sinus_rhythm.svg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atrial_fibrillation_vs._normal_sinus_rhythm.svg",
+        "alt": "FA comparada ao ritmo sinusal",
+        "title": "FA comparada ao ritmo sinusal",
+        "caption": "Comparação inicial; diagrama e não fotografia clínica",
+        "didactic_note": "CC BY 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atrial_fibrillation_vs._normal_sinus_rhythm.svg",
+      "source_name": "Peterhcharlton",
+      "source_license": "CC BY 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "ECG_Atrial_Fibrillation.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ECG_Atrial_Fibrillation.jpg",
+        "alt": "FA original — ECG 12 derivações",
+        "title": "FA original — ECG 12 derivações",
+        "caption": "Exame real; evitar duplicação com SVG derivado se não agrega",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:ECG_Atrial_Fibrillation.jpg",
+      "source_name": "Ewingdo (confirmar metadados no arquivo)",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "ECG-atrial_flutter.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ECG-atrial_flutter.jpg",
+        "alt": "Flutter atrial — ECG real",
+        "title": "Flutter atrial — ECG real",
+        "caption": "Onda F e relação com bloqueio AV",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:ECG-atrial_flutter.jpg",
+      "source_name": "Ciernik M",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "AtrialFlutter12.JPG",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AtrialFlutter12.JPG",
+        "alt": "Flutter 12 derivações",
+        "title": "Flutter 12 derivações",
+        "caption": "Ensinar suspeita de flutter com FC 150 e padrão inferior",
+        "didactic_note": "CC BY-SA 3.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:AtrialFlutter12.JPG",
+      "source_name": "James Heilman, MD",
+      "source_license": "CC BY-SA 3.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Atrial_flutter34.svg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atrial_flutter34.svg",
+        "alt": "Flutter com bloqueio variável",
+        "title": "Flutter com bloqueio variável",
+        "caption": "Demonstrar irregularidade que mimetiza FA",
+        "didactic_note": "CC BY-SA 3.0; autoria composta"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atrial_flutter34.svg",
+      "source_name": "Jmh649 (fonte), versão SVG derivada",
+      "source_license": "CC BY-SA 3.0; autoria composta",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Wolff-Parkinson-White_syndrome_12_lead_EKG.png",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolff-Parkinson-White_syndrome_12_lead_EKG.png",
+        "alt": "WPW / onda delta no ECG real",
+        "title": "WPW / onda delta no ECG real",
+        "caption": "PR curto/onda delta; discutir FA pré-excitada sem afirmar que imagem mostra FA",
+        "didactic_note": "CC BY-SA 3.0; licença GFDL alternativa"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wolff-Parkinson-White_syndrome_12_lead_EKG.png",
+      "source_name": "Ksheka",
+      "source_license": "CC BY-SA 3.0; licença GFDL alternativa",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Electrocardiogram_of_Ventricular_Tachycardia.png",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Electrocardiogram_of_Ventricular_Tachycardia.png",
+        "alt": "TV monomórfica — ECG",
+        "title": "TV monomórfica — ECG",
+        "caption": "Diagnóstico diferencial de QRS largo e batimentos ventriculares",
+        "didactic_note": "CC BY-SA 2.5"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Electrocardiogram_of_Ventricular_Tachycardia.png",
+      "source_name": "Karthik Sheka, MD",
+      "source_license": "CC BY-SA 2.5",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Torsades_de_Pointes_TdP.png",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torsades_de_Pointes_TdP.png",
+        "alt": "Torsades de pointes — ECG",
+        "title": "Torsades de pointes — ECG",
+        "caption": "QRS polimórfico, QT prolongado e diferenciação da cardioversão sincronizada",
+        "didactic_note": "CC BY-SA 3.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Torsades_de_Pointes_TdP.png",
+      "source_name": "Jer5150",
+      "source_license": "CC BY-SA 3.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Holter_AtrialFlutter.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Holter_AtrialFlutter.jpg",
+        "alt": "Holter com flutter e retorno sinusal",
+        "title": "Holter com flutter e retorno sinusal",
+        "caption": "Interpretação de arritmia paroxística e documentação dinâmica",
+        "didactic_note": "CC BY-SA 3.0; opção GFDL"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Holter_AtrialFlutter.jpg",
+      "source_name": "J. Heuser",
+      "source_license": "CC BY-SA 3.0; opção GFDL",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "Atrial_Flutter.svg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atrial_Flutter.svg",
+        "alt": "Flutter esquemático curto",
+        "title": "Flutter esquemático curto",
+        "caption": "Ensino básico de ondas F, apenas se não redundante com ECG real",
+        "didactic_note": "CC0 1.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atrial_Flutter.svg",
+      "source_name": "Rocuronium Bromide",
+      "source_license": "CC0 1.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/arritmias-fibrilacao-atrial/",
+      "apostila_title": "arritmias-fibrilacao-atrial",
+      "candidate_key": "CompleteHeartBlock.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/CompleteHeartBlock.jpg",
+        "alt": "BAV total — ECG real de terceiro grau",
+        "title": "BAV total — ECG real de terceiro grau",
+        "caption": "Identificar dissociação AV e ritmo de escape",
+        "didactic_note": "CC BY-SA 3.0, obra própria"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:CompleteHeartBlock.jpg",
+      "source_name": "James Heilman, MD",
+      "source_license": "CC BY-SA 3.0, obra própria",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Hypertensiveretinopathy.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hypertensiveretinopathy.jpg",
+        "alt": "Fundo de olho — retinopatia hipertensiva",
+        "title": "Fundo de olho — retinopatia hipertensiva",
+        "caption": "Comparar estreitamento vascular, hemorragias e exsudatos; discutir gravidade e diferencial com retinopatia diabética.",
+        "didactic_note": "CC BY 3.0 (VRT confirmado)"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hypertensiveretinopathy.jpg",
+      "source_name": "Frank Wood",
+      "source_license": "CC BY 3.0 (VRT confirmado)",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Left_ventricular_hypertrophy_with_secondary_repolarization.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Left_ventricular_hypertrophy_with_secondary_repolarization.jpg",
+        "alt": "ECG — HVE e repolarização secundária",
+        "title": "ECG — HVE e repolarização secundária",
+        "caption": "Ensinar HVE, voltagens e padrão strain versus isquemia aguda.",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Left_ventricular_hypertrophy_with_secondary_repolarization.jpg",
+      "source_name": "James Heilman, MD",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "RA_stenoz_doppler.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/RA_stenoz_doppler.jpg",
+        "alt": "Doppler de estenose de artéria renal",
+        "title": "Doppler de estenose de artéria renal",
+        "caption": "Diferenciar mecanismo renovascular; discutir imagem de fluxo e limitações.",
+        "didactic_note": "CC BY-SA 2.5 segundo página Commons"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:RA_stenoz_doppler.jpg",
+      "source_name": "Agatino Manganaro et al. (figura de Cardiovascular Ultrasound 2004; autor do upload İnfoCan)",
+      "source_license": "CC BY-SA 2.5 segundo página Commons",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+        "alt": "Radiografia portátil — edema pulmonar",
+        "title": "Radiografia portátil — edema pulmonar",
+        "caption": "Emergência hipertensiva com edema alveolar, padrão radiográfico e comparação clínica.",
+        "didactic_note": "CC BY-SA 3.0 com VRT confirmado"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+      "source_name": "Dr Jeremy Jones / Radiopaedia; upload Frank Gaillard",
+      "source_license": "CC BY-SA 3.0 com VRT confirmado",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "AoDiss_CTRekonstr.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AoDiss_CTRekonstr.jpg",
+        "alt": "Imagem de angio-TC / reconstrução de dissecção aórtica",
+        "title": "Imagem de angio-TC / reconstrução de dissecção aórtica",
+        "caption": "Relacionar urgência hipertensiva e dissecção; localizar falso lúmen, interpretação depende de exame.",
+        "didactic_note": "CC BY-SA 3.0 conforme Wikimedia Commons"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:AoDiss_CTRekonstr.jpg",
+      "source_name": "Dr Lars Grenacher / upload J. Heuser",
+      "source_license": "CC BY-SA 3.0 conforme Wikimedia Commons",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Aortic_dissection_types.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aortic_dissection_types.jpg",
+        "alt": "Ilustração das classes Stanford de dissecção",
+        "title": "Ilustração das classes Stanford de dissecção",
+        "caption": "Comparar tipo A vs B, consequências cirúrgicas e necessidade de anti-impulso.",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aortic_dissection_types.jpg",
+      "source_name": "Npatchett",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Renin_angiotensin_aldosterone_system.png",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Renin_angiotensin_aldosterone_system.png",
+        "alt": "Esquema fisiológico renina-angiotensina-aldosterona",
+        "title": "Esquema fisiológico renina-angiotensina-aldosterona",
+        "caption": "Conectar SRAA, sódio, volume e IECA/BRA/ARM; tradução original necessária se reutilizar.",
+        "didactic_note": "CC BY-SA 4.0, dupla licença disponível"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Renin_angiotensin_aldosterone_system.png",
+      "source_name": "Npatchett",
+      "source_license": "CC BY-SA 4.0, dupla licença disponível",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Blood_Pressure_Monitor.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Blood_Pressure_Monitor.jpg",
+        "alt": "Aparelho real de MAPA",
+        "title": "Aparelho real de MAPA",
+        "caption": "Mostrar instalação e diferenciar MAPA de MRPA e automedida avulsa.",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blood_Pressure_Monitor.jpg",
+      "source_name": "Urban Versis 32",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Ambulatory_blood_pressure_monitoring._Elevated_nocturnal_BP._-_es.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambulatory_blood_pressure_monitoring._Elevated_nocturnal_BP._-_es.jpg",
+        "alt": "Traçado de MAPA com pressão elevada durante o sono",
+        "title": "Traçado de MAPA com pressão elevada durante o sono",
+        "caption": "Interpretar vigília, sono e ausência de descenso; preparar versão legendada em português sem alterar valores.",
+        "didactic_note": "CC BY-SA 3.0 segundo página Commons"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ambulatory_blood_pressure_monitoring._Elevated_nocturnal_BP._-_es.jpg",
+      "source_name": "Verificar atribuição exata na página da obra",
+      "source_license": "CC BY-SA 3.0 segundo página Commons",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Close-up_of_a_woman_using_a_blood_pressure_monitor.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Close-up_of_a_woman_using_a_blood_pressure_monitor.jpg",
+        "alt": "Fotografia do ato de medir pressão em casa",
+        "title": "Fotografia do ato de medir pressão em casa",
+        "caption": "Mostrar postura, braço e manguito corretos ou usar como exercício de identificação de erro.",
+        "didactic_note": "CC BY 2.0 segundo Commons"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_woman_using_a_blood_pressure_monitor.jpg",
+      "source_name": "Shixart1985 (upload), conferir fonte primária",
+      "source_license": "CC BY 2.0 segundo Commons",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+      "apostila_title": "hipertensao-arterial-sistemica",
+      "candidate_key": "Left_Ventricular_Hypertrophy_Unlabeled.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Left_Ventricular_Hypertrophy_Unlabeled.jpg",
+        "alt": "ECG de hipertrofia ventricular esquerda sem anotações",
+        "title": "ECG de hipertrofia ventricular esquerda sem anotações",
+        "caption": "Autoteste com critérios ECG de HVE antes de revelar a solução.",
+        "didactic_note": "CC BY-SA 3.0; conferir atribuição composta"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Left_Ventricular_Hypertrophy_Unlabeled.jpg",
+      "source_name": "Andrewmeyerson (derivado CardioNetworks)",
+      "source_license": "CC BY-SA 3.0; conferir atribuição composta",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Jaundice_phototherapy.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaundice_phototherapy.jpg",
+        "alt": "1",
+        "title": "1",
+        "caption": "Fototerapia",
+        "didactic_note": "CC BY 3.0 atribuída a Martin Pot, conferida na página; checagem visual pendente"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jaundice_phototherapy.jpg",
+      "source_name": "Fotografia real, demonstrar exposição à luz em fototerapia",
+      "source_license": "CC BY 3.0 atribuída a Martin Pot, conferida na página; checagem visual pendente",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Phototherapy.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Phototherapy.jpg",
+        "alt": "2",
+        "title": "2",
+        "caption": "Fototerapia",
+        "didactic_note": "CC BY-SA 3.0 atribuída a Vtbijoy, conferida; verificar utilidade versus #1"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phototherapy.jpg",
+      "source_name": "Fotografia real do RN recebendo fototerapia",
+      "source_license": "CC BY-SA 3.0 atribuída a Vtbijoy, conferida; verificar utilidade versus #1",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Baby_BiliBlanket_Treatment.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Baby_BiliBlanket_Treatment.jpg",
+        "alt": "3",
+        "title": "3",
+        "caption": "Fototerapia",
+        "didactic_note": "CC BY-SA 3.0 atribuída a Rjmunro, conferida; verificar utilidade"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Baby_BiliBlanket_Treatment.jpg",
+      "source_name": "Fotografia real de manta de fototerapia, para comparar modalidades",
+      "source_license": "CC BY-SA 3.0 atribuída a Rjmunro, conferida; verificar utilidade",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Bili_light_with_newborn.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bili_light_with_newborn.jpg",
+        "alt": "4",
+        "title": "4",
+        "caption": "Fototerapia",
+        "didactic_note": "Página registra dedicação a domínio público; checar adequação clínica e origem"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bili_light_with_newborn.jpg",
+      "source_name": "Fotografia real de dispositivo de fototerapia neonatal",
+      "source_license": "Página registra dedicação a domínio público; checar adequação clínica e origem",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Infant_Under_Bili_Lights.png",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Infant_Under_Bili_Lights.png",
+        "alt": "5",
+        "title": "5",
+        "caption": "Fototerapia",
+        "didactic_note": "CC BY-SA 4.0 atribuída a BruceBlaus, conferida; ilustração NÃO é foto clínica real"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Infant_Under_Bili_Lights.png",
+      "source_name": "Ilustração, mostrar geometria da iluminação e cobertura",
+      "source_license": "CC BY-SA 4.0 atribuída a BruceBlaus, conferida; ilustração NÃO é foto clínica real",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Phototherapy1.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Phototherapy1.jpg",
+        "alt": "6",
+        "title": "6",
+        "caption": "Fototerapia",
+        "didactic_note": "CC BY-SA 4.0 na página, autoria Steph masih; somente selecionar se tiver diferencial"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phototherapy1.jpg",
+      "source_name": "Fotografia real para comparar dispositivos/ambiente",
+      "source_license": "CC BY-SA 4.0 na página, autoria Steph masih; somente selecionar se tiver diferencial",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Jaundice_in_newborn.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaundice_in_newborn.jpg",
+        "alt": "7",
+        "title": "7",
+        "caption": "Avaliação",
+        "didactic_note": "Licença e pertinência **a verificar individualmente**; não utilizar sem aprovação"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jaundice_in_newborn.jpg",
+      "source_name": "Candidata clínica de avaliação da cor da pele",
+      "source_license": "Licença e pertinência **a verificar individualmente**; não utilizar sem aprovação",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/ictericia/",
+      "apostila_title": "ictericia",
+      "candidate_key": "Ictericia_neonatal.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ictericia_neonatal.jpg",
+        "alt": "8",
+        "title": "8",
+        "caption": "Avaliação",
+        "didactic_note": "Licença, autoria, conteúdo e utilidade **a verificar**"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ictericia_neonatal.jpg",
+      "source_name": "Candidata clínica/ilustração para apresentação da icterícia",
+      "source_license": "Licença, autoria, conteúdo e utilidade **a verificar**",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Infected_site.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Infected_site.jpg",
+        "alt": "Infecção operatória de ferida cervical",
+        "title": "Infecção operatória de ferida cervical",
+        "caption": "ISC superficial, exsudação, cuidado com falsa atribuição de toda reação a pontos como infecção",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Infected_site.jpg",
+      "source_name": "Bp20151130",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Wound_Dehiscence_post_inguinal_hernia_repair_2014-05-27_00-46.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wound_Dehiscence_post_inguinal_hernia_repair_2014-05-27_00-46.jpg",
+        "alt": "Deiscência após herniorrafia inguinal",
+        "title": "Deiscência após herniorrafia inguinal",
+        "caption": "Deiscência cutânea vs risco de ruptura aponeurótica",
+        "didactic_note": "CC BY-SA 3.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wound_Dehiscence_post_inguinal_hernia_repair_2014-05-27_00-46.jpg",
+      "source_name": "Phoenix119",
+      "source_license": "CC BY-SA 3.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Anastomotic_leak_AO_AL.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anastomotic_leak_AO_AL.jpg",
+        "alt": "Vazamento de anastomose — imagem clínica 1",
+        "title": "Vazamento de anastomose — imagem clínica 1",
+        "caption": "Distinguir fístula/deiscência e local de extravasamento",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anastomotic_leak_AO_AL.jpg",
+      "source_name": "Federica Viazzi (AO AL)",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Anastomotic_leak_2_AO_AL.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anastomotic_leak_2_AO_AL.jpg",
+        "alt": "Vazamento de anastomose — imagem clínica 2",
+        "title": "Vazamento de anastomose — imagem clínica 2",
+        "caption": "Comparação de apresentação ou ângulo de vazamento anastomótico",
+        "didactic_note": "CC BY-SA 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anastomotic_leak_2_AO_AL.jpg",
+      "source_name": "Federica Viazzi (AO AL)",
+      "source_license": "CC BY-SA 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Upright_X-ray_demonstrating_small_bowel_obstruction.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Upright_X-ray_demonstrating_small_bowel_obstruction.jpg",
+        "alt": "Radiografia de obstrução de delgado",
+        "title": "Radiografia de obstrução de delgado",
+        "caption": "Íleo prolongado vs obstrução mecânica; níveis hidroaéreos",
+        "didactic_note": "CC BY-SA 3.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Upright_X-ray_demonstrating_small_bowel_obstruction.jpg",
+      "source_name": "James Heilman, MD",
+      "source_license": "CC BY-SA 3.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "LargeBowelObsUp2008.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/LargeBowelObsUp2008.jpg",
+        "alt": "Radiografia de obstrução de grosso intestino",
+        "title": "Radiografia de obstrução de grosso intestino",
+        "caption": "Contraste com obstrução de delgado e distensão de cólon",
+        "didactic_note": "CC BY-SA 3.0 (verificar licença selecionada)"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:LargeBowelObsUp2008.jpg",
+      "source_name": "James Heilman, MD",
+      "source_license": "CC BY-SA 3.0 (verificar licença selecionada)",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "IPK.JPG",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/IPK.JPG",
+        "alt": "Dispositivo de compressão pneumática intermitente",
+        "title": "Dispositivo de compressão pneumática intermitente",
+        "caption": "Prevenção mecânica de TEV e mecanismo de pressurização",
+        "didactic_note": "CC BY-SA 4.0 (licença alternativa)"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:IPK.JPG",
+      "source_name": "Enter",
+      "source_license": "CC BY-SA 4.0 (licença alternativa)",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+        "alt": "Radiografia de edema agudo pulmonar",
+        "title": "Radiografia de edema agudo pulmonar",
+        "caption": "Hipoxemia e hipervolemia no PO; diferencial de TEP e pneumonia",
+        "didactic_note": "CC BY-SA 3.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+      "source_name": "Jeremy Jones / Frank Gaillard",
+      "source_license": "CC BY-SA 3.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Redon_Bottle.JPG",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Redon_Bottle.JPG",
+        "alt": "Dreno de Redon — dispositivo",
+        "title": "Dreno de Redon — dispositivo",
+        "caption": "Mostrar reservatório/sucção, aspecto e controle de débito",
+        "didactic_note": "CC0 1.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Redon_Bottle.JPG",
+      "source_name": "Stefan Bellini",
+      "source_license": "CC0 1.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Surgical_drains.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Surgical_drains.jpg",
+        "alt": "Dreno operatório em ferida suturada",
+        "title": "Dreno operatório em ferida suturada",
+        "caption": "Identificação da drenagem de Redon e sítio de saída",
+        "didactic_note": "CC0 1.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_drains.jpg",
+      "source_name": "26RIJNA2020",
+      "source_license": "CC0 1.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Surgical_suture.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Surgical_suture.jpg",
+        "alt": "Sutura e pós-operatório de ferida",
+        "title": "Sutura e pós-operatório de ferida",
+        "caption": "Diferenciar evolução normal, curativo e retirada de pontos",
+        "didactic_note": "CC0 1.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_suture.jpg",
+      "source_name": "26RIJNA2020",
+      "source_license": "CC0 1.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/cuidados-perioperatorios-prevencao-complicacoes/",
+      "apostila_title": "cuidados-perioperatorios-prevencao-complicacoes",
+      "candidate_key": "Surgical_drain_-_waste_container.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Surgical_drain_-_waste_container.jpg",
+        "alt": "Recipiente de drenagem cirúrgica",
+        "title": "Recipiente de drenagem cirúrgica",
+        "caption": "Registrar volume/aspecto do débito; sinal de sangramento oculto",
+        "didactic_note": "CC0 1.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_drain_-_waste_container.jpg",
+      "source_name": "26RIJNA2020",
+      "source_license": "CC0 1.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/avaliacao-pre-operatoria-risco-cirurgico/",
+      "apostila_title": "avaliacao-pre-operatoria-risco-cirurgico",
+      "candidate_key": "Mallampati.svg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mallampati.svg",
+        "alt": "Classificação de Mallampati",
+        "title": "Classificação de Mallampati",
+        "caption": "Via aérea: ilustrar a visualização orofaríngea e explicar limitação como teste isolado",
+        "didactic_note": "CC BY-SA 3.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mallampati.svg",
+      "source_name": "Jmarchn",
+      "source_license": "CC BY-SA 3.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/avaliacao-pre-operatoria-risco-cirurgico/",
+      "apostila_title": "avaliacao-pre-operatoria-risco-cirurgico",
+      "candidate_key": "AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+        "alt": "RX portátil de edema agudo de pulmão",
+        "title": "RX portátil de edema agudo de pulmão",
+        "caption": "Cardíaco: reconhecer condição ativa que pode exigir adiamento de eletiva",
+        "didactic_note": "CC BY-SA 3.0 com VRT"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:AP_portable_CXR_of_a_patient_in_acute_pulmonary_oedema.jpg",
+      "source_name": "Jeremy Jones / Frank Gaillard, Radiopaedia",
+      "source_license": "CC BY-SA 3.0 com VRT",
+      "source_trust": "verified",
+      "review_status": "pending"
+    },
+    {
+      "apostila_path": "/apostilas/sindromes-coronarianas-agudas/",
+      "apostila_title": "sindromes-coronarianas-agudas",
+      "candidate_key": "DeWinterECG.jpg",
+      "target_section": "visao-geral",
+      "placement": "after",
+      "proposed_asset": {
+        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DeWinterECG.jpg",
+        "alt": "Traçado real de de Winter",
+        "title": "Traçado real de de Winter",
+        "caption": "Capítulo oclusão sem supra clássico — reconhecer infra ascendente com T altas",
+        "didactic_note": "CC BY 4.0"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:DeWinterECG.jpg",
+      "source_name": "EM Vilela, MD",
+      "source_license": "CC BY 4.0",
+      "source_trust": "verified",
+      "review_status": "pending"
+    }
+  ]
+}
