@@ -176,6 +176,10 @@
           "Da hemácia ao pigmento circulante"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Bili_light_with_newborn.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Bili%20light%20with%20newborn.jpg\" alt=\"Fototerapia de alta intensidade para hiperbilirrubinemia neonatal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Fototerapia de alta intensidade para hiperbilirrubinemia neonatal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABili%20light%20with%20newborn.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">User Jeremykemp on en.wikipedia ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "O catabolismo do heme gera biliverdina, convertida em bilirrubina não conjugada. Essa fração, também chamada indireta, é lipossolúvel e circula majoritariamente ligada à albumina. A albumina transporta o pigmento até o fígado, limitando a disponibilidade da fração livre para atravessar membranas e atingir o sistema nervoso central. O risco neurológico não depende apenas do número absoluto de bilirrubina total: hipoalbuminemia, acidose, prematuridade, sepse e instabilidade clínica podem alterar a vulnerabilidade da criança."
         ],

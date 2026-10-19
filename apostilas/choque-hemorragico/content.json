@@ -1,1 +1,1188 @@
-{"v":2,"s":"choque-hemorragico","t":"Choque Hemorrágico","p":"Fisiopatologia, identificação precoce, hemostasia e ressuscitação do sangramento grave","o":[["fundamentos","1. Conceito, fisiologia e perfusão"],["causas","2. Fontes de hemorragia e diagnóstico diferencial"],["reconhecimento","3. Reconhecimento à beira-leito e gravidade"],["primeira-hora","4. Primeiros minutos: prioridades simultâneas"],["controle","5. Controle de hemorragia por localização"],["ressuscitacao","6. Ressuscitação hemostática"],["pressao","7. Alvos hemodinâmicos e exceções"],["coagulopatia","8. Coagulopatia induzida por trauma"],["txa","9. Ácido tranexâmico e intervenções adjuvantes"],["diagnostico","10. Exames de imagem e reavaliação"],["populacoes","11. Situações clínicas particulares"],["algoritmo","12. Algoritmo mental de decisão"],["casos","Casos clínicos integradores"],["questoes","Questões originais comentadas"],["referencias","Referências e status editorial"]],"h":["Apostila LURIA","Choque Hemorrágico","Fisiopatologia, identificação precoce, hemostasia e ressuscitação do sangramento grave",["Área: Cirurgia Geral","Lote 1 · Tema 022"],"apostila-identity"],"q":[["fundamentos",0,[["2","1. Conceito, fisiologia e perfusão"],["p","Choque hemorrágico é insuficiência circulatória decorrente da perda de sangue, com redução progressiva da oferta de oxigênio aos tecidos. Não é sinônimo de hipotensão: vasoconstrição, taquicardia e redistribuição de fluxo podem manter pressão arterial aparentemente normal durante perda significativa. O problema biológico é a inadequação entre transporte de oxigênio, extração celular e demanda metabólica. Reconhecimento precoce evita a progressão para acidose, disfunção microcirculatória e falência de órgãos."],["p","A entrega sistêmica de oxigênio depende do débito cardíaco e do conteúdo arterial de oxigênio. A hemorragia reduz o retorno venoso e a pré-carga, diminuindo volume sistólico; a perda de hemácias também diminui o conteúdo de oxigênio, mas a hemoglobina inicial pode permanecer próxima ao basal antes da redistribuição de líquidos. Monitorar tendência e fisiologia é mais seguro do que aguardar anemia importante em uma coleta isolada."],["p","O sistema simpático eleva frequência cardíaca e resistência periférica para preservar perfusão cerebral e coronariana. Essa compensação tem custo: piora da perfusão cutânea, esplâncnica e renal, aumentando lactato e déficit de base. O jovem atleta pode manter pressão até fases avançadas; idosos, gestantes e pacientes em betabloqueadores frequentemente exibem respostas menos típicas. Assim, nenhuma frequência cardíaca isolada exclui sangramento ativo."],["p","Na fase de descompensação, a hipoperfusão persistente compromete mitocôndrias, endotélio e hemostasia. A injúria por reperfusão também pode intensificar inflamação após restauração de fluxo. Repor pressão sem controlar a fonte é tratamento incompleto: sangue administrado a um vaso aberto pode apenas prolongar a perda. A estratégia envolve ressuscitação hemostática e controle anatômico precoce."],["3","Transporte de oxigênio, extração e choque oculto"],["p","A equação de transporte de oxigênio reúne débito cardíaco e conteúdo arterial de oxigênio. Conteúdo arterial depende sobretudo de hemoglobina ligada ao oxigênio; pequena parcela está dissolvida no plasma. Na hemorragia, primeiro pode cair o débito cardíaco por queda do retorno venoso e, depois, a concentração de hemoglobina após redistribuição de líquidos. Por isso, SpO₂ de 99% indica saturação do sangue restante, não garante oferta suficiente de oxigênio. É possível manter saturação preservada enquanto tecidos estão hipoperfundidos."],["p","Em repouso, os tecidos extraem uma fração do oxigênio que recebem. Diante de débito reduzido, o organismo aumenta a extração e prioriza órgãos vitais, mas essa reserva tem limite. Quando a entrega cai abaixo do crítico, há produção crescente de lactato e comprometimento da função celular. Além disso, choque pode coexistir com microcirculação heterogênea: pressão média restaurada não significa capilares efetivamente perfundidos. O exame de pele, consciência, diurese e marcadores seriados contribui para reconhecer esse descompasso."],["p","Déficit de base negativo sugere componente metabólico acumulado e é utilizado em conjunto com lactato como marcador da gravidade e resposta. Entretanto, fluidos ricos em cloreto podem provocar acidose metabólica hiperclorêmica, enquanto disfunção hepática prejudica depuração do lactato. Não se pode inferir um volume perdido exato a partir de qualquer desses exames. O valor está em identificar hipoperfusão persistente, comparar tendência e confirmar melhora após hemostasia real."],["p","Na hemorragia aguda, a redução de pré-carga muitas vezes gera taquicardia, mas não se deve esperar frequência de 140 bpm para reconhecer risco. Paciente sob betabloqueador, portador de marca-passo, idoso com doença do nó sinusal ou atleta treinado pode ter reação menos típica. Medicamentos vasodilatadores, diuréticos e anestésicos modificam o tônus vascular e o balanço entre pressão e débito. Uma avaliação baseada somente em pressão sistólica e pulso pode subestimar gravidade."],["p","Após estabilização inicial, a reperfusão reintroduz oxigênio em tecidos previamente isquêmicos, com liberação de metabólitos e risco de inflamação sistêmica. A estratégia moderna de cuidado não termina quando a pressão melhora: necessita vigilância de órgão-alvo, hemólise, lesão pulmonar associada à transfusão, lesão renal e infecção. O risco clínico acompanha intensidade e duração da hipoperfusão, carga transfusional, comorbidades e qualidade da hemostasia."],["3","Microcirculação, lesão endotelial e reperfusão"],["p","Os vasos de resistência distribuem fluxo entre órgãos, mas a microcirculação é onde a oferta de oxigênio se transforma em metabolismo celular. Capilares podem apresentar fluxo heterogêneo no choque mesmo quando a pressão arterial volta a níveis aparentemente adequados. Endotélio lesado, edema intersticial e alterações da deformabilidade das hemácias contribuem para baixa extração. Por isso, não se deve concluir que a ressuscitação teve sucesso apenas com um único valor de pressão arterial."],["p","O glicocálice endotelial é uma camada que participa da regulação da permeabilidade e de interações com células sanguíneas. Trauma e hipoperfusão graves podem comprometer essa estrutura, favorecendo fuga capilar e edema. Grandes volumes de fluidos sem necessidade podem agravar expansão intersticial e limitar trocas gasosas. O mecanismo explica por que a ressuscitação focada no controle de sangramento e em sangue, em vez de cristaloide indiscriminado, faz sentido fisiopatológico."],["p","O rim é sensível à redução prolongada de perfusão, mas a diurese inicial depende também de catecolaminas, hormônio antidiurético e função renal preexistente. Débito urinário persistentemente reduzido após intervenção requer considerar choque residual, obstrução urinária, lesão renal e aumento da pressão intra-abdominal. O cérebro pode apresentar agitação e confusão antes de rebaixamento profundo de consciência; sedação não torna o indicador de perfusão dispensável, apenas menos acessível."],["p","Acidose e hiperfibrinólise podem coexistir na fase inicial de trauma, mas a coagulação evolui dinamicamente. Depois de controle de sangramento e imobilização, muitos doentes tornam-se hipercoaguláveis. Planejar profilaxia de tromboembolismo no momento seguro é continuidade do raciocínio hemostático, e não oposição a ele. O objetivo clínico muda ao longo das horas; medidas adequadas no primeiro momento podem tornar-se inadequadas se mantidas automaticamente."]]],["causas",0,[["2","2. Fontes de hemorragia e diagnóstico diferencial"],["p","No trauma, pesquisar sangramento externo, tórax, abdome, retroperitônio, pelve e ossos longos. O espaço retroperitoneal pode acumular volumes expressivos sem sinais externos evidentes; fraturas pélvicas instáveis exigem contenção apropriada e equipe preparada para controle endovascular ou operatório. No sangramento digestivo, obstétrico ou pós-operatório, a fisiologia do choque é similar, mas a estratégia de hemostasia é específica da origem."],["p","Choque obstrutivo por pneumotórax hipertensivo ou tamponamento, choque cardiogênico após contusão/infarto e choque distributivo podem coexistir com hemorragia. Isso é especialmente importante quando um paciente mantém sinais de hipoperfusão apesar de controle aparente da perda. Ultrassom à beira-leito ajuda a buscar sangramento ou disfunção associada, mas exame negativo não descarta fonte retroperitoneal ou sangramento intermitente."],["p","Em fraturas abertas e lacerações profundas, compressão direta e torniquete, quando indicado, salvam tempo para intervenção definitiva. Reexaminar roupas, dorso e feridas após a avaliação primária, protegendo temperatura e coluna quando pertinente. Hematoma em expansão, sangramento pulsátil e extremidade fria sugerem lesão vascular que demanda avaliação imediata."],["3","Quadro comparativo — onde o sangue pode estar oculto"],["t",["Compartimento/fonte","Pista clínica","Armadilha","Próximo passo"],[["Tórax","Trauma torácico, assimetria ventilatória, macicez","Exame físico isolado pode não quantificar hemotórax","eFAST/radiografia e avaliação cirúrgica de urgência conforme estabilidade"],["Abdome","Mecanismo abdominal, distensão, dor","Exame inicial e FAST negativos não excluem sangramento inicial","Reavaliar; imagem apenas se estabilidade permitir; controle de fonte se instável"],["Pelve/retroperitônio","Trauma de alta energia, pelve dolorosa","FAST pode não detectar hemorragia retroperitoneal","Estabilizador corretamente posicionado e hemostasia operatória/endovascular"],["Extremidades","Fratura de ossos longos, feridas extensas","Perda relevante sem hemorragia externa maciça","Compressão, imobilização e avaliação vascular"],["Pós-operatório","Oligúria, queda de perfusão, aumento de drenagem","Dreno silencioso não exclui coleção profunda","Acionar cirurgia e investigar sítio conforme fisiologia"]],"book-table"],["3","Anatomia da perda e busca sistemática de fonte"],["p","Identificar o compartimento que recebe sangue é exercício anatômico. No trauma penetrante de pescoço, tórax ou abdome, a trajetória ajuda a priorizar estruturas vasculares; em trauma contuso, mecanismo de alta energia pode produzir lesões profundas sem ferida. O retroperitônio abriga grandes vasos e permite acúmulo volumoso; a cavidade torácica e o abdome também podem alojar perdas importantes. Fratura de fêmur exige avaliação de tecido mole e sangramento intracompartimental, inclusive quando a deformidade parece moderada."],["p","Queda de pressão após estabilização inicial frequentemente resulta de hemorragia persistente, mas não é a única explicação. Pneumotórax hipertensivo pode surgir após ventilação com pressão positiva, hipotermia e acidose comprometem a circulação, e indução anestésica pode reduzir retorno venoso. Antes de concluir que todo choque refratário exige mais hemácias, repetir exame torácico, ultrassom, sinais de perfusão e revisão das lesões. O paciente pode ter hemorragia e choque obstrutivo simultaneamente."],["p","Na pelve, o anel ósseo pode se abrir após impacto, ampliando espaço disponível para sangramento venoso e ósseo. O estabilizador apropriado aproxima estruturas, mas não estanca obrigatoriamente uma lesão arterial. Em serviço com radiologia intervencionista, embolização pode ser crucial; em outros, tamponamento extraperitoneal e cirurgia desempenham papel central. A escolha deve considerar disponibilidade e tempo real de acesso ao procedimento, não somente a técnica idealizada em centros altamente especializados."],["p","Nas hemorragias pós-operatórias, observar tendência de sangue em dreno, distensão abdominal, dor desproporcional, palidez, oligúria e variações de pressão. Dreno com pouco sangue não exclui hemoperitônio se está obstruído ou mal posicionado. Em uso de anticoagulantes, o risco de sangramento tardio pode modificar a cronologia. Revisão operatória não deve ser retardada por avaliação repetitiva que não altera decisão em paciente francamente instável."],["p","Em choque sem mecanismo traumático, a perda pode originar-se de ruptura de aneurisma de aorta, gravidez ectópica rota, hemorragia digestiva, sangramento ginecológico e ruptura esplênica espontânea em situações particulares. A história de dor abdominal, melena, hematêmese, atraso menstrual ou doença vascular orienta fluxos diferentes. A fisiologia de oferta de oxigênio é compartilhada, mas a equipe e o controle de fonte precisam ser específicos."]]],["reconhecimento",0,[["2","3. Reconhecimento à beira-leito e gravidade"],["p","Alteração de consciência, pele fria/pegajosa, enchimento capilar lento, taquipneia, oligúria, pulso fino e pressão de pulso estreita indicam hipoperfusão. O índice de choque, frequência cardíaca dividida pela pressão sistólica, pode ajudar a reconhecer deterioração, mas sofre influência de idade, fármacos e condições basais. Não existe um índice isolado que autorize observar um paciente potencialmente hemorrágico sem reavaliação."],["p","A classificação tradicional em quatro classes de perda sanguínea é ferramenta mnemônica aproximada e não medidor volumétrico confiável. Pacientes reais variam conforme reserva fisiológica, velocidade de perda e reposição prévia. Descrever gravidade por perfusão, necessidade transfusional, trajetória hemodinâmica e possibilidade de controle da fonte é mais útil do que inferir um percentual exato de sangue perdido."],["p","Lactato e déficit de base são marcadores complementares de hipoperfusão e prognóstico, mas lactato pode aumentar por catecolaminas, convulsões ou insuficiência hepática. Valores seriados que não clareiam apesar de intervenção exigem reavaliação da causa. Pressão arterial normal e hemoglobina normal isoladamente não garantem estabilidade; é a evolução conjunta que orienta urgência."],["3","Exame, monitorização e o que números não dizem"],["p","A pressão arterial sistólica baixa é sinal tardio em vários pacientes e tende a variar com dor, ansiedade, ambiente, posição e método de medida. Repetir com manguito adequado, palpar pulso central e periférico e comparar pressão com a condição habitual acrescenta contexto. Pressão de pulso estreita e extremidades frias podem apontar vasoconstrição importante antes de hipotensão. Pulso radial palpável, porém, não é medidor preciso de pressão e não autoriza decisões definitivas."],["p","O índice de choque pode aumentar antes da queda acentuada da pressão, mas sua interpretação em gestantes, atletas, crianças e pacientes sob medicação cronotrópica difere do adulto saudável. O sinal de maior gravidade é o conjunto de deteriorações: aumento do esforço respiratório, palidez, confusão, perda de pulsos periféricos e produção urinária reduzida. Um número isolado pode ser transitório; uma tendência que piora em domínios independentes tem maior credibilidade."],["p","Choque hemorrágico oculto é especialmente relevante quando o doente foi encaminhado de outro hospital após receber líquidos. Os sinais podem parecer transitoriamente melhores, enquanto hemorragia continua e coágulos frágeis podem se desfazer. Registrar volume de infusão, transfusões, horário de torniquetes, diurese, mecanismos de lesão e exames anteriores evita interpretar o estado atual fora da trajetória. Nenhuma melhora após uma bolsa prova que o sangramento foi controlado."],["p","Os perfis de resposta à ressuscitação — resposta sustentada, transitória ou mínima — podem ajudar a estimar necessidade de controle urgente da fonte. Resposta transitória após sangue sugere que a reposição competiu com perda ainda ativa. Não é uma classificação rígida, pois dor, hipotermia e lesões concomitantes afetam medidas; ainda assim, o padrão temporal é mais útil que uma fotografia única dos sinais vitais."],["p","Sedação e ventilação podem impedir avaliar consciência, e vasopressores podem manter pressão enquanto débito segue inadequado. Nesses casos, buscar diurese, temperatura periférica, ecografia funcional, lactato/déficit de base e sangramento ativo ganha importância. A monitorização invasiva pode beneficiar casos selecionados, mas não substitui reavaliação clínica frequente."]]],["primeira-hora",0,[["2","4. Primeiros minutos: prioridades simultâneas"],["p","Acionar equipe de trauma/emergência, anestesia, cirurgia e hemoterapia conforme gravidade. Garantir segurança da cena, via aérea, ventilação e oxigenação adequadas. Hemorragia externa ameaçadora pode demandar compressão/torniquete antes ou em paralelo à via aérea. A intubação no choque grave pode precipitar colapso hemodinâmico por indução anestésica e redução do retorno venoso; exige planejamento e disponibilidade de ressuscitação imediata."],["p","Dois acessos periféricos calibrosos ou acesso intraósseo quando não há veias disponíveis possibilitam produtos sanguíneos e medicações. Colher hemograma, gasometria, lactato, coagulograma, fibrinogênio, cálcio, tipagem e prova de compatibilidade sem atrasar a ressuscitação. Aquecer paciente e fluidos; hipotermia piora função plaquetária e fatores de coagulação."],["p","A decisão entre ida imediata ao centro cirúrgico, radiologia intervencionista e tomografia depende principalmente da resposta hemodinâmica e da suspeita anatômica. Uma pessoa que permanece instável com provável sangramento intra-abdominal não deve ser enviada a exames prolongados sem capacidade de intervenção e monitorização; o controle da fonte tem prioridade."],["3","Organização de equipe e redução de atrasos"],["p","A primeira comunicação estruturada deve incluir mecanismo e horário, fisiologia, lesões identificadas, intervenções, acesso, produtos recebidos e necessidade provável de cirurgia ou radiologia. Definir líder, responsável por via aérea, hemostasia externa, produtos sanguíneos, acesso e registro impede ordens duplicadas e tempos mortos. Em trauma grave, antecipar sala cirúrgica e anestesia antes de confirmação por tomografia pode reduzir atraso evitável."],["p","Na abordagem das vias aéreas, reconhecer sinais de falha ventilatória, trauma facial e redução de consciência. Indução e ventilação de pressão positiva reduzem retorno venoso; em choque hemorrágico isso pode precipitar parada peri-intubação. Por isso, resgatar volume circulante com sangue quando indicado, preparar equipamentos e drogas apropriados à fisiologia, garantir operador experiente e manter equipe pronta para intervenção se colapso ocorrer. Não adiar via aérea absolutamente necessária; equilibrar prioridades simultâneas."],["p","A exposição completa procura lesões ocultas, mas todo tempo de despir e examinar deve ser acompanhado de prevenção ativa da hipotermia. Ambientes frios, infusão de soluções geladas, roupa molhada e transporte prolongado elevam risco. Cobertores térmicos, aquecimento de sala, dispositivos de aquecimento e redução de exposição desnecessária são ações terapêuticas, não conforto opcional."],["p","Produtos de emergência não totalmente compatibilizados podem ser necessários diante de exsanguinação; o banco de sangue define escolha de tipo, rastreabilidade e transição para hemocomponentes tipados. Nunca atrasar transfusão salvadora apenas para completar exames de rotina, mas colher amostras de compatibilidade assim que viável. Identificação correta do paciente e dupla checagem evitam erros transfusionais potencialmente fatais."],["p","Quando sangue não está disponível no ponto de atendimento, iniciar medidas de contenção, acesso intraósseo se preciso, aquecimento e transferência rápida com comunicação clara sobre provável necessidade de protocolo maciço. Manter paciente sem controle de fonte em unidade incapaz de intervir deve ser ponderado como risco logístico; transferência precisa considerar segurança durante deslocamento."]]],["controle",0,[["2","5. Controle de hemorragia por localização"],["p","Hemorragia externa visível: pressão direta firme, curativos hemostáticos quando apropriados e torniquete de extremidade em sangramento maciço não controlável por compressão. Registrar horário, evitar afrouxamento intermitente e transferir para controle cirúrgico. Lesões de junção anatômica exigem técnicas próprias; torniquete convencional não comprime adequadamente virilha ou axila."],["p","Na fratura pélvica suspeita com instabilidade, aplicar estabilizador sobre os grandes trocânteres e evitar manipulações repetidas do anel. A estabilização mecânica reduz volume pélvico e movimento, mas não substitui tamponamento pré-peritoneal, embolização ou cirurgia conforme disponibilidade e mecanismo. Radiografia ou tomografia de pelve não devem atrasar intervenção em paciente descompensado."],["p","Em trauma torácico, drenagem pleural e eventual toracotomia seguem sinais clínicos, volume drenado e persistência de sangramento; parâmetros precisam ser avaliados no contexto, não usados automaticamente. Em feridas penetrantes e abdome com peritonite/instabilidade, controle operatório pode prevalecer sobre investigação por imagem. Cirurgia de controle de danos combina hemostasia rápida, limitação de contaminação e reabordagem após correção fisiológica."],["3","Cirurgia de controle de danos e intervenção endovascular"],["p","Cirurgia de controle de danos trata a fisiologia instável como parte da decisão operatória. Em vez de reconstruções complexas durante coagulopatia profunda, o objetivo inicial pode ser comprimir, ligar ou controlar vasos, retirar contaminantes e estabilizar rapidamente. O paciente segue para correção de temperatura, coagulação, perfusão e suporte intensivo, retornando para tratamento definitivo quando condições permitirem. Essa decisão exige julgamento cirúrgico e não se aplica a todo trauma."],["p","Angioembolização é particularmente útil para certos sangramentos arteriais pélvicos, lesões de órgãos sólidos e complicações vasculares em pacientes selecionados, especialmente quando cirurgia aberta traria grande morbidade. Porém, hemorragia difusa venosa ou instabilidade extrema sem tempo para angiografia pode exigir outra rota. A escolha entre embolização e cirurgia depende de fonte provável, infraestrutura, resposta à transfusão e acesso temporal ao procedimento."],["p","Oligúria após trauma abdominal pode refletir choque, mas lesão de trato urinário e aumento de pressão intra-abdominal também são diferenciais. Hemoperitônio maciço e reposição elevada podem predispor a síndrome compartimental abdominal. A busca de hemostasia deve ser acompanhada de vigilância do abdome e repercussão respiratória/renal."],["p","Após controle inicial, remover precocemente dispositivos de compressão quando seguro e revisar sua necessidade. Torniquete não deve ser afrouxado ao acaso fora de ambiente controlado; conversão para curativo só pode ocorrer mediante avaliação técnica e hemostasia apropriada. Hemorragias em junções anatômicas exigem preparação específica para tamponamento ou abordagem cirúrgica."],["p","O cuidado com o doente não termina na sala operatória: sangramento oculto recorrente, coagulopatia tardia, complicações de embolização e reperfusão devem ser procurados. A equipe de UTI deve receber descrição de pontos de hemostasia, packs, drenos, necessidade de reoperação planejada e riscos de síndrome compartimental ou isquemia."],["3","Tomadas de decisão em lesão vascular e órgãos sólidos"],["p","Lesão esplênica de grau elevado no laudo não significa operação imediata em todos os pacientes: estabilidade sustentada, recursos de monitorização e possibilidade de embolização influenciam tratamento não operatório. Em contrapartida, lesão que parece menor à imagem mas mantém queda hemodinâmica pode requerer intervenção. A classificação anatômica e o estado circulatório são dimensões complementares, não substitutas."],["p","Em trauma hepático, sangramento arterial pode ser acessível a embolização, enquanto lesões venosas complexas e coagulopatia difusa exigem estratégias distintas. O tratamento deve antecipar risco de bile, isquemia hepática e complicações tardias. O principal desafio em emergências não é escolher procedimento pelo nome do órgão, mas associar anatomia lesionada, fisiologia e capacidade de controle rápido."],["p","Ferida penetrante com instabilidade e sinais de peritonite pode demandar laparotomia sem tomografia prévia, de acordo com julgamento cirúrgico. A investigação por imagem é valiosa quando muda estratégia e há tempo para realizá-la com segurança. Procedimento diagnóstico que expõe a risco circulatório sem alterar intervenção tem baixo valor e potencial dano."],["p","Hemorragia de vaso de membro pode exigir compressão inicial, controle proximal e reparo vascular. Extremidade fria com sinais de isquemia sugere interrupção de fluxo; o raciocínio precisa integrar preservação de vida e de membro. Torniquete protege contra exsanguinação, porém requer plano de controle definitivo e documentação cuidadosa."]]],["ressuscitacao",0,[["2","6. Ressuscitação hemostática"],["p","A transfusão precoce de hemocomponentes é central quando há hemorragia significativa com choque. Cristaloides em grandes volumes podem diluir fatores e plaquetas, agravar hipotermia, edema e acidose hiperclorêmica, sem repor capacidade de transporte de oxigênio. Usar pequenos volumes como ponte quando produtos sanguíneos não estiverem disponíveis, reavaliando continuamente a necessidade."],["p","Protocolos de transfusão maciça facilitam acesso coordenado a concentrado de hemácias, plasma e plaquetas em proporções iniciais equilibradas, ajustadas a exames e viscoelasticidade quando disponíveis. A proporção exata deve seguir o protocolo institucional e o cenário; nenhum esquema substitui hemostasia definitiva. Quando a situação estabiliza, desativar prontamente o protocolo e fazer terapia dirigida por anormalidades demonstradas."],["p","Ressuscitação guiada por viscoelasticidade (TEG/ROTEM) pode acelerar identificação de deficiência de fibrinogênio, baixa contribuição plaquetária ou hiperfibrinólise. Na ausência desses métodos, acompanhar INR/TTPa, fibrinogênio e plaquetas em série. O fibrinogênio costuma diminuir precocemente; reposição por concentrado ou crioprecipitado depende de níveis, sangramento e disponibilidade."],["p","Cada bolsa transfundida exige atenção à hipocalcemia por citrato, hipotermia, hipercalemia/hipocalemia, reações transfusionais e sobrecarga circulatória em vulneráveis. Medir cálcio ionizado e corrigi-lo conforme resultado e protocolo é parte da hemostasia. Transfundir de modo vigoroso sem vigilância metabólica pode manter o paciente acidótico e coagulopático apesar de pressão melhor."],["3","Quadro — componentes da transfusão e o déficit que corrigem"],["t",["Produto/recurso","Finalidade principal","O que não resolve sozinho"],[["Concentrado de hemácias","Restaurar massa de hemácias e transporte de oxigênio","Não repõe integralmente fatores, plaquetas e fibrinogênio"],["Plasma","Aportar múltiplos fatores da coagulação","Não substitui plaquetas nem controla vaso rompido"],["Concentrado plaquetário","Tratar deficiência quantitativa/funcional de plaquetas conforme contexto","Não corrige hipofibrinogenemia isolada"],["Crioprecipitado ou fibrinogênio","Restaurar substrato da rede de fibrina quando deficiente","Não substitui correção de fonte e plaquetas quando necessárias"],["Aquecimento e cálcio ionizado","Evitar deterioração térmica e metabólica da coagulação","Não substituem hemoterapia/hemostasia"]],"book-table"],["3","Componentes transfusionais e protocolos operacionais"],["p","O concentrado de hemácias restaura massa eritrocitária e transporte de oxigênio; plasma aporta diversos fatores de coagulação; plaquetas auxiliam na hemostasia primária; crioprecipitado ou concentrado de fibrinogênio trata deficiência desse substrato. Uma estratégia equilibrada reduz risco de diluição durante hemorragia maciça, mas não implica proporção estática até o final. Conforme exames e sangramento evoluem, a terapia deve migrar para componentes específicos e ser interrompida quando cessou a indicação."],["p","Transfusão maciça operacionalmente costuma ser definida de maneiras diversas, incluindo volume em 24 horas ou consumo rápido de hemácias em curto intervalo; a ativação clínica não deve depender de atingir uma definição retrospectiva. Em exsanguinação, ativar cedo garante logística, identificação, hemocomponentes e comunicação. Quando o paciente estabiliza, comunicar cancelamento evita desperdício e transfusões sem propósito."],["p","O estudo PROPPR influenciou o debate sobre proporções equilibradas iniciais em hemorragia traumática, mas resultados de estudos não autorizam dispensar hemostasia. Diversos serviços usam protocolo guiado por exames viscoelásticos assim que possível. A estratégia deve equilibrar sangramento continuado, risco trombótico e limitações da instituição, com atenção a fibrinogênio e plaquetas."],["p","Ácido-base e temperatura interferem na eficácia dos componentes. Amostras laboratoriais obtidas durante infusão acelerada podem refletir transitoriamente grande diluição ou alterações por citrato; ainda assim, resultados seriados ajudam a dirigir correção. A equipe deve conhecer o tempo de processamento dos exames, garantindo que resultado seja interpretado em relação ao momento da coleta."],["p","Reações transfusionais podem apresentar febre, hipoxemia, hipotensão, hemoglobinúria e piora clínica. Distinguir reação de continuidade do choque requer investigação e medidas institucionais de segurança. Em sangramento ameaçador, suspender indiscriminadamente todas as transfusões sem avaliar causa também pode ser fatal. Qualquer evento suspeito exige comunicação com hemoterapia e abordagem urgente contextualizada."],["3","Como interpretar resposta a sangue e sangramento em andamento"],["p","Paciente que recebe hemocomponentes e exibe melhora transitória de pressão e consciência, seguida de nova taquicardia e hipoperfusão, deve ser considerado possível sangrador persistente. Não basta repetir hemácias: é necessário localizar compartimento, conferir compressões, cirurgia ou embolização, repetir exame e avaliar coagulopatia. O intervalo entre bolsas e piora pode indicar velocidade de perda, embora não forneça cálculo preciso do volume."],["p","Após hemostasia, a queda persistente do lactato nem sempre é imediata. Produção residual, redistribuição e função hepática afetam curva; por isso, acompanhar tendências em intervalos clinicamente relevantes ao lado de temperatura, diurese, exame e necessidade de vasopressores. Lactato crescente apesar de boa pressão pressiona a equipe a procurar baixo débito, sangramento oculto ou fonte distinta de hipoperfusão."],["p","A necessidade de transfusão após controle da fonte pode persistir por anemia sintomática, hipoxemia ou risco de isquemia, mas transfusões de manutenção devem seguir avaliações individualizadas e limiares pertinentes. Alvos restritivos estabelecidos em pacientes estáveis não são aplicados de forma mecânica ao paciente exsanguinante, no qual a velocidade de perda e a instabilidade podem exigir intervenção antes de laboratório disponível."],["p","Em hemorragia controlada, risco de hipervolemia aumenta quando o espaço intravascular volta a ser preenchido e os produtos infundidos passam a superar perdas. Crepitações, piora de oxigenação, pressão venosa elevada e congestão ecográfica podem sugerir sobrecarga, embora tenham diferenciais. A transição da fase de ressuscitação para fase de otimização e posteriormente remoção de excessos de fluidos deve ser deliberada."],["p","O aquecimento dos hemocomponentes quando indicado requer equipamentos adequados, não improvisação que possa lesar produto ou paciente. Gelo, transporte e sistemas de infusão alteram temperatura corporal; a monitorização contínua permite detectar queda progressiva. Hipotermia, hipocalcemia e alterações de coagulação formam múltiplos fatores agravantes que precisam ser abordados em paralelo à hemostasia."],["3","O que aprendemos dos estudos sobre estratégia transfusional"],["p","Ensaios clínicos sobre proporções de plasma, plaquetas e hemácias informam protocolos de trauma grave, mas não substituem interpretação dos desfechos. O ensaio PROPPR comparou duas proporções iniciais em pacientes com previsão de transfusão maciça; seus resultados e análises posteriores reforçaram que disponibilidade coordenada de componentes é importante, ao mesmo tempo em que hemostasia precoce continua fundamental. A escolha de uma proporção inicial deve se alinhar às diretrizes e ao sistema local."],["p","Proporções transfusionais são úteis sobretudo no início, quando a rapidez da perda supera a disponibilidade de resultados laboratoriais. À medida que a situação passa a ser monitorada com fibrinogênio, plaquetas e testes de coagulação ou viscoelasticidade, a estratégia deve ser individualizada. Não é correto continuar fornecendo componentes em proporções rígidas quando os testes demonstram deficiência específica ou quando o sangramento terminou."],["p","Exposição a múltiplos produtos pode induzir complicações imediatas e tardias. Durante infusão rápida, hipotermia e hipocalcemia por citrato contribuem para contratilidade prejudicada e menor eficiência de coagulação. Após estabilização, investigar lesão pulmonar, sobrecarga circulatória, hemólise e outros eventos conforme achados. A indicação de cada componente deve equilibrar dano potencial da exposição com benefício de restaurar transporte de oxigênio e hemostasia."]]],["pressao",0,[["2","7. Alvos hemodinâmicos e exceções"],["p","Na hemorragia traumática não controlada sem lesão cerebral grave, evitar perseguir pressão arterial normal apenas com volumes altos antes da hemostasia pode reduzir extravasamento e diluição: é o princípio de ressuscitação com pressão permissivamente mais baixa. Não confundir com aceitar hipoperfusão prolongada. A equipe ajusta metas à perfusão, tempo até controle e risco individual."],["p","Trauma cranioencefálico e medular mudam a estratégia: hipotensão piora lesão secundária e a preservação de perfusão cerebral/medular assume grande importância. Gestação, idosos frágeis e doença cardiovascular também exigem cuidado individualizado. A frase 'todo choque hemorrágico deve receber pressão permissiva' é falsa e perigosa."],["p","Vasopressores não corrigem falta de volume e não podem substituir sangue e hemostasia. Eventualmente servem como ponte curta em vasoplegia ou hipotensão refratária, com reavaliação frequente e atenção à perfusão periférica. Manutenção de noradrenalina crescente sem buscar fonte hemorrágica ou componente misto é um sinal de revisão diagnóstica urgente."],["3","Raciocínio hemodinâmico: pressão não é perfusão"],["p","A pressão arterial média resulta da interação entre débito cardíaco, resistência periférica e retorno venoso. Vasoconstrição intensa pode normalizar a medida no manguito apesar de fluxo capilar baixo. Em choque hemorrágico, o objetivo não é produzir uma cifra agradável no monitor; é preservar aporte de oxigênio até corrigir a fonte de sangramento. A equipe acompanha múltiplos sinais clínicos e laboratoriais, observando necessidade transfusional e trajetória de melhora."],["p","Ressuscitação hipotensiva deliberada é uma estratégia temporal, aplicada em situações selecionadas de hemorragia não controlada, não uma meta definitiva. Seu raciocínio é reduzir pressão sobre coágulos frágeis e limitar diluição por fluidos enquanto se busca hemostasia. Prolongá-la sem capacidade de controlar a fonte conduz a hipoperfusão cumulativa e lesão celular. TCE grave, gravidez e outras populações podem demandar metas diferentes por risco de isquemia."],["p","Mesmo após controle cirúrgico, hipotensão pode persistir por vasoplegia, sedação, isquemia miocárdica, sepse, tamponamento ou lesões não encontradas. Uma estratégia útil é perguntar se existe hipovolemia residual, hemorragia ativa, disfunção miocárdica ou vasodilatação predominante. Ecografia focada e medidas de perfusão acrescentam pistas, mas não são infalíveis; a revisão de exames e da cirurgia anterior evita tratar o número sem considerar mecanismos."],["p","A elevação pressórica obtida com vasopressor pode mascarar perda sanguínea. Há cenários em que vasopressor transitório é empregado por especialista como ponte para restabelecer fluxo, mas sua titulação crescente deve disparar investigação de causa. Se extremidades permanecem marmóreas, diurese cai e lactato sobe, pressão aparentemente normal não equivale a sucesso terapêutico."],["p","Em pacientes com cardiopatia ou limitação de reserva, tanto volume insuficiente quanto excessivo podem reduzir oferta efetiva de oxigênio. Hemoconcentrados ajudam a transportar oxigênio, mas excesso de pressão venosa e edema pulmonar prejudica troca gasosa. Reavaliar responsividade a fluidos com método apropriado e evitar decisões binárias baseadas apenas em pressão é essencial."]]],["coagulopatia",0,[["2","8. Coagulopatia induzida por trauma"],["p","Coagulopatia pode surgir muito antes de transfusões volumosas, por lesão endotelial, hipoperfusão, ativação e consumo de sistemas hemostáticos e distúrbios do fibrinogênio. Hipotermia e acidose reduzem eficiência da coagulação. Esse processo é frequentemente chamado de coagulopatia traumática aguda e amplifica sangramento, formando ciclo de retroalimentação com o choque."],["p","Anticoagulantes crônicos (antagonistas da vitamina K, inibidores diretos da coagulação ou heparinas) agravam certas hemorragias e requerem história medicamentosa, tempo da última dose, função renal e eventual reversão específica. Reversores não são intercambiáveis; usar antídoto errado pode ser ineficaz ou trazer trombose. A decisão depende da molécula e dos recursos locais."],["p","Plaquetopenia, déficit de fibrinogênio e fatores são problemas diferentes. A transfusão guiada apenas por contagem de hemácias pode negligenciar hemorragia microvascular difusa. Quadro de sangramento persistente em campo cirúrgico sem vaso responsável, exames de coagulação alterados e hipotermia sugere necessidade de ressuscitação dirigida."],["3","Coagulação, fibrinogênio e interpretação de testes"],["p","Coagulação envolve hemostasia primária por plaquetas, formação de fibrina, mecanismos anticoagulantes e fibrinólise. Após trauma intenso, a disfunção endotelial e a hipoperfusão podem ativar vias fibrinolíticas e alterar a estrutura do coágulo; subsequentemente, consumo e diluição tornam anormalidades mais evidentes. Não se trata de uma única deficiência corrigida universalmente por plasma. Medir e dirigir componentes à anormalidade evita terapias cegas."],["p","Tempo de protrombina/INR e TTPa avaliam etapas em condições laboratoriais padronizadas e nem sempre traduzem toda dinâmica do sangue integral. Fibrinogênio plasmático, plaquetas e testes viscoelásticos acrescentam informações complementares. TEG e ROTEM descrevem início, firmeza e degradação do coágulo, mas exigem interpretação baseada no método e no protocolo local. Não equiparar diretamente números entre fabricantes."],["p","Fibrinogênio é substrato crítico para formação de rede de fibrina e para interação plaquetária; sua queda pode preceder alterações acentuadas em outros exames. Sangramento difuso com níveis baixos pode justificar reposição de crioprecipitado ou concentrado específico, seguindo limiar institucional. Por outro lado, dar fibrinogênio a todo traumatizado independentemente da avaliação não é terapia comprovadamente universal."],["p","Hipotermia reduz atividade enzimática e função plaquetária. Um resultado de coagulação processado a 37°C pode subestimar a disfunção hemostática do doente a 33°C. Aquecer não é medida acessória: faz parte de reverter fatores que impedem estabilização do trombo. Acidose, hipocalcemia e hipoperfusão contribuem, de modo que correção isolada do INR pode falhar se fisiologia não melhora."],["p","Em paciente que usava varfarina, a reversão emergencial pode empregar concentrado de complexo protrombínico e vitamina K conforme indicação clínica; em anticoagulantes diretos, estratégias dependem do agente, função renal e antídotos disponíveis. Reverter anticoagulação de modo desnecessário pode aumentar risco de tromboembolismo, enquanto não revertê-la em hemorragia ameaçadora piora prognóstico. Exige decisão estruturada, acompanhamento e plano de reinício posterior."],["p","Quando sangramento é controlado e hemostasia recuperada, o paciente pode migrar de fase hemorrágica para fase pró-trombótica, especialmente após cirurgia e imobilização. Profilaxia mecânica e farmacológica de tromboembolismo deve ser considerada no momento apropriado, equilibrando hemorragia residual e risco de trombose. Assim, tratar coagulopatia não significa manter anticoagulação suspensa por tempo indefinido."],["3","Exemplos de resultados que mudam decisão"],["p","Considere paciente com hemorragia difusa no campo, plaquetas muito baixas, fibrinogênio adequadamente preservado e alterações predominantemente de hemostasia primária. O componente faltante tende a ser diferente daquele em doente com contagem plaquetária preservada mas fibrinogênio criticamente baixo. Isso mostra por que transfundir somente plasma ou somente crioprecipitado em todo sangramento grave é biologicamente equivocado."],["p","Resultados viscoelásticos precisam ser correlacionados com cronologia da transfusão: se o exame foi colhido antes de importante reposição, não descreve necessariamente o estado no momento da interpretação. Fluxo de comunicação entre laboratório e centro cirúrgico deve registrar horário e intervenções desde a coleta. Repetições programadas e achados clínicos evitam perseguir déficit que já foi corrigido."],["p","Coagulopatia de consumo, lesão hepática, hipotermia e diluição podem produzir perfis parcialmente semelhantes. História de hepatopatia, hemorragia maciça, temperatura, nível de fibrinogênio e plaquetas ajuda a contextualizar. A abordagem não procura um rótulo único quando existem causas simultâneas; cada déficit tratável precisa de avaliação da magnitude e do impacto hemorrágico."],["p","O cálcio ionizado participa da cascata de coagulação e da contração miocárdica. O citrato dos hemocomponentes pode reduzi-lo durante transfusão rápida, sobretudo se o metabolismo estiver comprometido por choque. Reavaliar o cálcio ionizado durante ressuscitação maciça e corrigi-lo conforme protocolo é estratégia de segurança; cálcio total pode não refletir disponibilidade biológica no paciente crítico."],["p","Após extensa reposição, potássio, magnésio e glicemia também variam. Hemácias armazenadas podem contribuir para carga de potássio, enquanto alterações ácido-base e função renal modificam distribuição. Monitorização eletrocardiográfica e laboratorial direciona o manejo; não se administram eletrólitos por suposição sem considerar valores e contexto."]]],["txa",0,[["2","9. Ácido tranexâmico e intervenções adjuvantes"],["p","Em trauma com hemorragia significativa ou alto risco, o ácido tranexâmico pode reduzir morte por sangramento quando iniciado o mais cedo possível e dentro da janela recomendada pelas diretrizes, geralmente até três horas do trauma. A administração tardia não é benefício universal e pode ser prejudicial. A indicação deve considerar mecanismo, protocolo, contraindicações e evidência clínica, não um lactato isolado."],["p","Controle de temperatura, analgesia adequada sem colapso hemodinâmico, ventilação que não agrave pré-carga e correção de cálcio completam a ressuscitação. Acidose decorrente de hipoperfusão resolve com reperfusão e hemostasia; bicarbonato de rotina não é solução causal. Buscar lesão vascular tratável e evitar exames desnecessários traz maior benefício do que adicionar fármacos sem alvo."],["3","Ácido tranexâmico: indicações e limitações"],["p","Ácido tranexâmico bloqueia interação plasminogênio-fibrina e reduz a degradação de coágulos. A hipótese terapêutica no trauma é conter hiperfibrinólise precoce e reduzir morte por sangramento. O benefício depende do momento e da seleção clínica; a janela de até três horas é ponto fundamental nas recomendações clássicas, com preferência por administração o mais cedo possível. Atrasos desnecessários podem eliminar benefício."],["p","A proposta não é dar tranexâmico a qualquer pessoa com hematoma superficial ou a todos os pacientes hipotensos por qualquer causa. Deve haver trauma com hemorragia importante ou risco significativo, conforme diretriz e protocolo local. Doses e infusão devem ser checadas na versão vigente do protocolo assistencial; erro de dose e administração pode gerar eventos adversos, e função renal pode influenciar exposição."],["p","Em paciente com convulsão, história trombótica, insuficiência renal ou sangramento em território específico, avaliar peculiaridades e recomendações locais antes de extrapolar. A evidência de trauma não é transferida automaticamente para hemorragia gastrointestinal, intracraniana ou obstétrica: cada cenário possui estudos e protocolos próprios. Em prova, a pergunta precisa conter causa e janela de tempo para justificar conduta."],["p","Não há medicamento que substitua hemostasia mecânica quando artéria permanece aberta. Um paciente que continua recebendo tranexâmico e transfusões enquanto a fonte arterial sangra precisa de controle anatômico. A disponibilidade rápida de cirurgia ou embolização tem prioridade; fármacos compõem cuidado, não corrigem a estrutura lesada."]]],["diagnostico",0,[["2","10. Exames de imagem e reavaliação"],["p","FAST/eFAST investiga líquido livre peritoneal e pericárdico, pneumotórax ou hemotórax conforme janela e técnica. Sensibilidade varia com operador, tempo desde o trauma, quantidade de sangue e local da lesão. FAST negativo em paciente instável não elimina hemorragia retroperitoneal, pélvica ou de víscera sólida inicial. Repetir a avaliação quando a fisiologia muda."],["p","Tomografia contrastada é ferramenta de alta resolução para paciente suficientemente estabilizado, permitindo identificar extravasamento, lesões vasculares e outros focos de sangramento. O transporte de doente ainda dependente de múltiplas transfusões e ressuscitação ativa precisa ser cuidadosamente ponderado: exames só têm utilidade se não atrasam tratamento salvador."],["p","Após controle aparente, verificar sinais vitais seriados, diurese, gasometria, lactato, sangramento em drenos, exame abdominal, pulsos e temperatura. A melhora isolada do pulso após analgésico ou aquecimento não exclui sangramento. Hemoglobina após reposição deve ser interpretada com balanço hídrico e tempo desde a perda."],["3","Método de diagnóstico conforme estabilidade"],["p","A pergunta operacional diante de possível hemorragia interna é se há tempo e segurança para exame confirmatório. Em paciente capaz de manter perfusão após ressuscitação inicial, tomografia contrastada pode mapear órgãos lesionados e extravasamento. Em instabilidade persistente, transportar para aparelho distante pode oferecer detalhe anatômico ao custo de atraso fatal. A decisão se baseia na fisiologia e nos recursos realmente disponíveis."],["p","No eFAST, ausência de líquido livre não significa cavidade vazia; sensibilidade depende da quantidade, tempo, localização e habilidade do operador. Sangramento pélvico geralmente se projeta retroperitonealmente e pode não gerar líquido peritoneal detectável. É também possível obter FAST positivo por outras fontes de líquido ou achados crônicos; interpretar no contexto do trauma."],["p","Repetir eFAST pode ser útil quando suspeita evolui ou a primeira janela foi tecnicamente inadequada, mas repetições infinitas não substituem decisão de operar. A pressão para obter imagem perfeita não deve competir com hemostasia. Radiografia de tórax/pelve e monitorização clínica servem ao objetivo de localizar fonte tratável, não a cumprir uma lista imutável antes do centro cirúrgico."],["p","Depois da tomografia, perguntas úteis são: há extravasamento ativo, lesão arterial, pneumoperitônio, grande hemoperitônio, fratura instável, risco de sangramento tardio ou lesão concomitante? O laudo orienta escolha de operação, embolização ou observação com recursos apropriados. A imagem sem correlação clínica pode superestimar estabilidade de lesão em paciente que perde sangue lentamente."],["p","Revisão de hemoglobina seriada é necessária, mas o valor cai também por hemodiluição após grandes volumes e pode aumentar com transfusão sem controlar fonte. A discrepância entre hemoglobina e perfusão exige revisar cronologia. Um valor isolado de 9 g/dL não determina, por si, necessidade transfusional em trauma com hemorragia não controlada, da mesma forma que 13 g/dL não exclui exsanguinação."]]],["populacoes",0,[["2","11. Situações clínicas particulares"],["p","Sangramento digestivo maciço pode exigir endoscopia e estratégia transfusional própria, com atenção à hipertensão portal, coagulopatias e drogas antitrombóticas. Hemorragia pós-parto acrescenta atonia uterina, trauma obstétrico, tecido retido e alteração trombínica, exigindo abordagem obstétrica específica. O algoritmo traumático não deve ser aplicado integralmente a essas doenças."],["p","Em pacientes pediátricos, estimativas de volemia, sinais de compensação e metas são específicos da idade; bradicardia pode ser sinal tardio e grave. Gestantes podem esconder perda importante pela expansão volêmica fisiológica. Pacientes idosos podem piorar sem taquicardia por medicações e disfunção autonômica, e desenvolvem maior risco de complicações por excesso de fluidos."],["p","Suspeita de fratura pélvica associada a hipotensão persistente requer antecipar origem retroperitoneal. Cirurgias recentes, especialmente com anastomoses vasculares ou uso de anticoagulantes, podem sangrar internamente com pouca alteração externa. Uma alta precoce sem vigilância da tendência clínica pode perder a janela de reintervenção."],["3","Hemorragia no idoso, na gestação e em crianças"],["p","Idosos podem apresentar perdas menores em termos absolutos e desenvolver hipoperfusão devido a menor reserva de débito cardíaco, aterosclerose, doença renal e uso de medicamentos. O pulso pode não acelerar suficientemente. Em quem usa antiagregantes ou anticoagulantes, trauma aparentemente banal pode produzir sangramento tardio; o plano exige reconhecer o fármaco e avaliar necessidade de reversão, sem atribuir confusão aguda apenas à idade."],["p","Gestantes têm expansão fisiológica do volume plasmático e aumento do débito cardíaco, que podem retardar sinais típicos de choque mesmo em hemorragia relevante. O útero gravídico pode comprimir grandes vasos na posição supina, agravando retorno venoso; a equipe obstétrica deve integrar abordagem e cuidado fetal quando viável. A primeira prioridade é restaurar perfusão materna e controlar fonte, porque a circulação fetal depende dela."],["p","Crianças têm metabolismo e frequências cardíacas basais diferentes dos adultos. Elas podem manter pressão sistólica até fase avançada de perda sanguínea; hipotensão pediátrica é achado grave. A abordagem é guiada por parâmetros específicos para idade e peso, com hemocomponentes dimensionados e atenção ao risco de hipoglicemia e hipotermia. Não usar metas hemodinâmicas e volumes de adultos sem adaptação."],["p","Em hemorragia obstétrica, atonia, restos placentários, trauma do trato genital e coagulopatia são eixos etiológicos. Uterotônicos, manobras e procedimentos obstétricos são parte indispensável de controle da fonte, além de hemoterapia. Tranexâmico possui indicações e janela de tempo próprias na hemorragia pós-parto; não transferir a dose e a justificativa do trauma sem consultar protocolo obstétrico."],["p","Em sangramento digestivo por varizes esofágicas, a hemostasia pode exigir endoscopia terapêutica, drogas vasoativas específicas e manejo de hepatopatia. Ressuscitação agressiva sem considerar pressões portais e risco de ressangramento é inadequada. A visão integradora é que a fisiologia do choque une casos, mas cada etiologia acrescenta medidas definitivas intransferíveis."],["3","Anticoagulantes e riscos perioperatórios"],["p","Entre anticoagulantes orais, varfarina demanda interpretação de INR; dabigatrana e inibidores do fator Xa têm comportamento de laboratório e reversão diferentes. Horário da última dose, função renal, interações e dose habitual alteram persistência do efeito. Não tratar testes de rotina normais como garantia universal de ausência de anticoagulação com DOAC. Consultar serviço de hemoterapia e hematologia em hemorragia ameaçadora pode acelerar reversão apropriada."],["p","Antiagregantes plaquetários aumentam risco de sangramento em certos contextos, mas não possuem o mesmo mecanismo dos anticoagulantes. Uma pessoa com stent recente também tem risco de trombose caso a medicação seja interrompida, e isso torna decisões de reinício posteriores delicadas. Na emergência hemorrágica, salvar a vida e controlar fonte são prioritários; a transição de longo prazo envolve especialidades pertinentes."],["p","Em cirrose, o INR elevado reflete redução de fatores pró e anticoagulantes, e não corresponde isoladamente ao risco hemorrágico como o INR na varfarina. A interpretação de sangramento exige exame clínico, plaquetas, fibrinogênio e fonte. Transfundir plasma apenas para normalizar INR de hepatopata sem indicação clara pode provocar sobrecarga e elevar pressão portal."],["p","Pacientes com crenças ou decisões explícitas sobre transfusão precisam de comunicação respeitosa e registro de alternativas terapêuticas possíveis, considerando capacidade decisória e legislação aplicável. O planejamento antecipado de conservação de sangue e hemostasia torna-se ainda mais importante. Em situação crítica, equipe deve agir conforme normas legais, éticas e vontade válida documentada do paciente."]]],["algoritmo",0,[["2","12. Algoritmo mental de decisão"],["p","Passo A: identificar ameaça imediata e chamar ajuda; proteger via aérea e ventilação sem atrasar controle de hemorragia maciça. Passo B: localizar o sangramento provável por história, exame repetido, mecanismo e ultrassom quando útil. Passo C: obter acesso vascular, tipagem e exames, aquecer e iniciar protocolo transfusional se a perda for grave."],["p","Passo D: em instabilidade persistente, priorizar hemostasia operatória ou endovascular conforme fonte e recursos; não permitir que imagem prolongada substitua decisão clínica. Passo E: após controle, guiar hemocomponentes e correção de fibrinogênio/cálcio por dados dinâmicos, monitorar lactato, diurese e sinais de sangramento continuado. Passo F: investigar complicações e evitar reinício inadequado de fármacos antitrombóticos."],["p","Erros de prova: esperar hipotensão para agir, usar hemoglobina inicial para excluir choque, interpretar FAST negativo como ausência de sangue, infundir litros de cristaloide sem sangue, esquecer cálcio e temperatura, aplicar hipotensão permissiva a TCE grave e manter transfusão maciça após hemostasia sem reavaliar."],["3","Fluxograma textual de decisão integrada"],["o",["1. Reconhecer hemorragia ameaçadora: perfusão, contexto anatômico, sinais vitais em tendência e necessidade de ação imediata.","2. Ativar equipe, realizar compressão/torniquete quando indicado, proteger via aérea/ventilação e iniciar aquecimento.","3. Obter acesso e coletar exames em paralelo, acionar hemoterapia sem esperar anemia comprovada se há exsanguinação.","4. Priorizar controle de fonte: operação ou embolização segundo fisiologia e localização; exames que atrasam hemostasia são reavaliados.","5. Empregar ressuscitação hemostática e terapia dirigida por fibrinogênio, plaquetas, coagulograma/viscoelasticidade e cálcio.","6. Monitorar resposta e procurar sangramento oculto; individualizar pressão em TCE grave, idosos, gestantes e crianças.","7. Após hemostasia, desativar protocolo maciço, registrar transição e prevenir complicações, incluindo tromboembolismo quando seguro."]],["3","Reavaliação, transferência e segurança"],["p","Na passagem para o centro cirúrgico, documentar horário de início do choque, sangue administrado, cálcio/temperatura, resultados laboratoriais seriados, torniquetes, alergias conhecidas e suspeitas de hemorragia. Um resumo preciso reduz erros quando paciente atravessa UPA, ambulância, emergência, centro cirúrgico e UTI. Identificar familiares e consentimento conforme urgência e normas assistenciais sem atrasar procedimento salvador."],["p","Quando hospital não dispõe de embolização ou cirurgia especializada, reconhecer cedo a necessidade de transferência. Antes do transporte, priorizar medidas de hemostasia disponíveis, acesso, produtos apropriados, aquecimento e equipe treinada, com comunicação ao serviço receptor. Transporte não deve começar como aposta de que a pressão ficará estável: o plano deve prever deterioração e tempo para atendimento definitivo."],["p","Após controle da hemorragia, a transição para cuidado intensivo exige metas de perfusão e vigilância de sangramento secundário. Reavaliar necessidade de ventilação, diurese, função renal, lactato, coagulação, temperatura, troponina conforme contexto e possíveis complicações isquêmicas. Transfusões realizadas passam a integrar histórico de exposição, relevante para reações tardias e planejamento de novas cirurgias."],["p","Quando perfil passa de hipoperfusão para estabilidade, reduzir intervenções desnecessárias é parte do tratamento. Suspender protocolo de transfusão maciça após indicação cessar evita exposição sem benefício, e retomar nutrição, mobilização e profilaxia tromboembólica no tempo apropriado limita complicações. Uma equipe que só se concentra na primeira hora perde oportunidades de prevenção."],["p","Em revisão de prontuário ou discussão de caso, perguntar se havia evidência precoce de choque ignorada, se a busca de fonte foi atrasada, se foram administrados fluidos em excesso, se a equipe monitorou cálcio/temperatura, e se o transporte até hemostasia foi eficiente. Essas perguntas transformam eventos críticos em melhoria de processo sem depender de lembrar apenas uma lista de doses."],["3","Perguntas para verificar autossuficiência do tema"],["p","Quando o estudante encontra pressão normal em trauma, deve explicar por que a oferta de oxigênio pode estar inadequada. A resposta exige compreender vasoconstrição compensatória, massa circulante, conteúdo arterial de oxigênio e limites da hemoglobina inicial. Se o material ensinar apenas que 'choque é hipotensão', a questão não estará resolvida. O raciocínio etiológico antecede qualquer escolha de produto sanguíneo."],["p","Para decidir entre tomografia e operação, o estudante deve integrar estabilidade, foco provável, resposta à ressuscitação, capacidade do serviço e risco de transporte. A resposta correta não depende de memorizar que 'FAST positivo opera' e 'FAST negativo observa'. Paciente com pelve instável e FAST negativo ainda pode estar em hemorragia grave. A revisão de hipótese deve acompanhar resultados."],["p","Para escolher hemocomponentes, a explicação deve distinguir capacidade de transporte de oxigênio de formação de coágulo, ilustrando papéis de hemácias, plasma, plaquetas e fibrinogênio. Também deve explicar temperatura e cálcio, porque uma transfusão de hemácias em massa não corrige automaticamente defeitos de coagulação. É raciocínio fisiopatológico, não simples lista de bolsas."],["p","Para reconhecer situações especiais, é preciso compreender por que hipotensão permissiva não deve ser extrapolada ao TCE grave, por que gestantes podem compensar durante mais tempo e por que idosos sob betabloqueador podem não apresentar taquicardia. A aplicação exige adaptar evidência e não transformar recomendações em protocolos cegos."],["p","Para encerrar o cuidado, o aluno deve saber reconhecer necessidade de reabordagem, complicações transfusionais, lesão renal e momento de profilaxia trombótica. Uma sequência que termina quando a pressão melhora não descreve tratamento completo. O acompanhamento faz parte do mesmo ciclo de controle da fonte, restauração de perfusão e prevenção de sequelas."],["3","Comunicação de equipe e critérios de escalonamento"],["p","Um protocolo de hemorragia maciça é mais que a distribuição rápida de bolsas de sangue: organiza responsabilidades, entrega, rastreabilidade, checagem de compatibilidade, monitorização e comunicação entre emergência, hemoterapia, anestesia e cirurgia. O líder deve atualizar periodicamente a estimativa de sangramento ativo, resposta à ressuscitação, necessidade de controle anatômico e disponibilidade de recursos. Caso múltiplas equipes prescrevam separadamente, pode haver duplicação de componentes e atraso em concentrados hemostáticos."],["p","Entre os gatilhos para escalonamento estão hipotensão persistente, necessidade transfusional crescente, confusão ou oligúria progressiva, lactato ascendente, sangramento não controlado e sinais de lesão vascular. A decisão de ativar protocolo não exige aguardar número retrospectivo de bolsas. Inversamente, após hemostasia e normalização da trajetória clínica, é necessário comunicar a desativação formal, retornar à prescrição dirigida por exames e reavaliar indicações de profilaxia trombótica."],["p","Na transferência de cuidado para UTI, convém informar mecanismo e hora do trauma, achados anatômicos, procedimentos realizados, produtos utilizados, exames de coagulação e cálcio, torniquetes, focos ainda suspeitos e reoperação planejada. Um paciente aparentemente estável pode apresentar ressangramento ou síndrome compartimental nas horas subsequentes. O registro de tendências é mais informativo que uma lista de sinais vitais sem cronologia."],["p","O caso de hemorragia persistente apesar de concentrados de hemácias obriga a equipe a explicar o problema a partir de três eixos: a fonte sangra? o coágulo é capaz de se formar? o organismo recebe perfusão suficiente? Cada eixo corresponde a intervenções diferentes e complementares. Reduzir o problema a uma dose fixa de cristalóide, transfusão ou vasopressor ignora sua complexidade e potencialmente aumenta complicações."]]],["casos",0,[["2","Casos clínicos integradores"],["3","Caso clínico 1"],["p","Homem de 23 anos após colisão, PA 118/72, FC 130, pele fria, enchimento capilar de 5 s, fratura de fêmur e abdome doloroso. Hemoglobina 13,5 g/dL."],["p","Resolução comentada: Choque compensado é plausível apesar de pressão e hemoglobina aparentemente aceitáveis. Avaliar hemorragia em abdome, pelve e extremidade; eFAST e abordagem simultânea, dois acessos, tipagem e ressuscitação hemostática conforme sinais clínicos. Não aguardar queda de Hb."],["3","Caso clínico 2"],["p","Mulher de 46 anos com esmagamento pélvico, PA 76/40, confusa, eFAST sem líquido livre. Hematoma perineal e pelve dolorosa."],["p","Resolução comentada: FAST negativo não exclui hemorragia retroperitoneal pélvica. Aplicar estabilizador sobre trocânteres, ativar protocolo de hemorragia, aquecer, transfundir e obter controle imediato por equipe cirúrgica/intervencionista, conforme disponibilidade."],["3","Caso clínico 3"],["p","Motociclista politraumatizado com TCE grave, sangramento abdominal e PAS 82 mmHg. Alguém sugere manter hipotensão permissiva enquanto aguarda tomografia."],["p","Resolução comentada: A meta baixa de pressão não é apropriada automaticamente em lesão cerebral grave: perfusão cerebral precisa ser preservada. Solicitar controle hemorrágico urgente e ressuscitação dirigida, considerando avaliação neurológica concomitante."],["3","Caso clínico 4"],["p","Após protocolo transfusional maciço, doente mantém sangramento difuso, 34,2°C, cálcio ionizado reduzido e fibrinogênio baixo."],["p","Resolução comentada: Coagulopatia multifatorial: aquecer, corrigir cálcio, repor componentes hemostáticos conforme testes/laboratório e procurar hemorragia anatômica residual. Repetir só concentrado de hemácias sem corrigir déficits é insuficiente."],["3","Caso clínico 5"],["p","Paciente de 69 anos em betabloqueador, pós-operatório de grande cirurgia, apresenta oligúria e confusão sem taquicardia, com dreno sanguinolento crescente."],["p","Resolução comentada: Resposta cronotrópica pode estar mascarada. Buscar sangramento pós-operatório e perfusão inadequada; avaliação pela equipe cirúrgica não deve aguardar choque clássico."],["3","Caso clínico 6 — Trauma penetrante com resposta transitória"],["p","Paciente adulto é admitido após ferida por projétil no flanco. Recebe produtos sanguíneos e recupera pressão, mas após poucos minutos a perfusão periférica piora e a necessidade de hemácias aumenta. A primeira tomografia ainda não foi feita."],["p","Discussão: a resposta transitória sugere sangramento ativo. Exame repetido eFAST, busca anatômica e mobilização imediata da equipe capaz de controle de fonte têm prioridade. A decisão sobre tomografia depende de estabilidade real e logística; não aguardar múltiplos ciclos de transfusão apenas para confirmar hipótese que requer intervenção."],["3","Caso clínico 7 — Criança com choque ainda normotenso"],["p","Criança de seis anos após atropelamento permanece normotensa para idade, mas apresenta taquicardia crescente, extremidades frias, sonolência e abdome doloroso. Familiares relatam uso prévio de nenhum fármaco."],["p","Discussão: pressão normal não exclui hipovolemia grave em pediatria. É necessário ressuscitação e avaliação de hemorragia com metas pediátricas, equipe experiente e controle anatômico conforme evolução. Não utilizar algoritmos e volumes de adulto indiscriminadamente."]]],["questoes",0,[["2","Questões originais comentadas"],["3","Questão 1"],["p","Trauma com pulso rápido, extremidades frias e PA normal. A) estável sem risco B) choque compensado possível C) transfusão proibida D) FAST sempre detecta perda. "],["p","Gabarito e raciocínio: B. Vasoconstrição mantém PA até fases tardias; demais alternativas negam limitações fisiológicas."],["3","Questão 2"],["p","Maior erro de interpretar hemoglobina imediatamente após hemorragia: A) pode estar normal B) determina classe exata C) cai necessariamente em minutos D) dispensa exame seriado."],["p","Gabarito e raciocínio: A. Na fase precoce, concentração pode não refletir perda total por falta de hemodiluição; B/C/D não procedem."],["3","Questão 3"],["p","eFAST negativo em paciente com fratura pélvica e choque significa: A) não há hemorragia B) sangramento é retroperitoneal impossível C) ainda pode haver hemorragia pélvica D) tomografia obrigatória antes de tratar."],["p","Gabarito e raciocínio: C. FAST tem limitações anatômicas; instabilidade exige intervenção sem atrasos."],["3","Questão 4"],["p","O que completa protocolo de hemorragia grave? A) litros de salina isolados B) apenas hemácias C) componentes hemostáticos, temperatura, cálcio e hemostasia D) vasopressor isolado."],["p","Gabarito e raciocínio: C. Ressuscitação fisiológica e controle da fonte são complementares, não substitutos."],["3","Questão 5"],["p","Qual paciente exige cautela especial com metas pressóricas permissivamente baixas? A) TCE grave B) adulto sem comorbidades e sem lesão cerebral C) trauma periférico com sangue controlado D) todos igual."],["p","Gabarito e raciocínio: A. A perfusão cerebral pode ser comprometida por hipotensão, exigindo metas individuais."],["3","Questão 6"],["p","Sangramento persistente com fibrinogênio baixo pede: A) ignorar laboratórios B) avaliar reposição específica junto ao controle de fonte C) cancelar monitorização D) anticoagular empiricamente."],["p","Gabarito e raciocínio: B. Hipofibrinogenemia reduz formação de coágulos; controle dirigido é necessário."],["3","Questão 7"],["p","Ácido tranexâmico em trauma: A) usar independentemente do tempo B) maior benefício com início precoce dentro da janela indicada C) é substituto da cirurgia D) serve a todo paciente sem sangramento."],["p","Gabarito e raciocínio: B. A escolha respeita risco e tempo; não substitui controle da fonte."],["3","Questão 8"],["p","Quais dados devem ser seriados após a intervenção? A) apenas Hb B) perfusão, diurese, lactato, coagulação e cálcio C) somente pressão D) apenas imagem inicial."],["p","Gabarito e raciocínio: B. Reavaliação de múltiplos domínios detecta hipoperfusão residual e complicações."],["3","Questão 9"],["p","Após hemostasia, paciente continua com lactato elevado apesar de pressão normal. O correto é: A) encerrar vigilância B) integrar tendência, débito urinário, exame e causas adicionais de hipoperfusão C) transfundir indefinidamente D) ignorar cálcio."],["p","Gabarito B. Pressão arterial é apenas uma expressão macrocirculatória; lactato, perfusão e disfunção orgânica precisam ser reavaliados no contexto temporal."],["3","Questão 10"],["p","Sangramento ativo com fibrinogênio baixo e plaquetas preservadas exige pensar em: A) avaliação de reposição de fibrinogênio B) somente hemácias C) só antibiótico D) nenhum controle de fonte."],["p","Gabarito A. O déficit de fibrinogênio compromete a formação de fibrina; terapia guiada por testes e hemostasia devem caminhar juntas."],["3","Questão 11"],["p","A decisão sobre tomografia no trauma hemorrágico deve se basear em: A) local de ferimento apenas B) necessidade de registro visual C) estabilidade sustentada, provável fonte e capacidade de intervenção D) hemoglobina isolada."],["p","Gabarito C. Imagem é ferramenta para intervenção, não requisito anterior a qualquer hemostasia urgente."]]],["referencias",0,[["2","Referências e status editorial"],["p","Rossaint R et al. European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. https://doi.org/10.1186/s13054-023-04327-7 ."],["p","American College of Surgeons, ATLS: princípios de avaliação primária e manejo de trauma; consultar edição vigente e protocolos locais da instituição."],["p","Este tema complementa, mas não reproduz, LURIA 'Cuidados perioperatórios' e 'Reposição volêmica no paciente cirúrgico'. Limites de atuação e doses exigem checagem clínica antes da publicação."],["p","Benchmark consultado no Drive em 17/10/2026: '02 - CHOQUE - TIPOS DE CHOQUE.pdf' (material de Medicina Livre; não atribuído ao Estratégia MED). Analisados esquema de tipos, marcadores hemodinâmicos e exames. Lacunas identificadas para o tema: ressuscitação hemostática, controle de fonte, hemorragia pélvica, contraindicações da hipotensão permissiva e terapia por viscoelasticidade. Texto e casos novos autorais; nenhuma imagem reproduzida."],["p","STATUS EDITORIAL: RASCUNHO AUTORAL EM REVISÃO. Não certificado para publicação; requer completar ≥60.000 caracteres didáticos úteis, revisão médica independente, comparação com questões representativas, curadoria de imagens via Admin e inspeção no renderer desktop/PWA. Não é um protocolo assistencial nem substitui protocolos locais."],["p","Holcomb JB et al. Transfusion of plasma, platelets, and red blood cells in a 1:1:1 vs a 1:1:2 ratio and mortality in patients with severe trauma: the PROPPR randomized clinical trial. JAMA. 2015;313:471–482. https://doi.org/10.1001/jama.2015.12 . Referência para discussão crítica de ressuscitação hemostática; não substitui diretriz vigente."]]]]}
+{
+  "v": 2,
+  "s": "choque-hemorragico",
+  "t": "Choque Hemorrágico",
+  "p": "Fisiopatologia, identificação precoce, hemostasia e ressuscitação do sangramento grave",
+  "o": [
+    [
+      "fundamentos",
+      "1. Conceito, fisiologia e perfusão"
+    ],
+    [
+      "causas",
+      "2. Fontes de hemorragia e diagnóstico diferencial"
+    ],
+    [
+      "reconhecimento",
+      "3. Reconhecimento à beira-leito e gravidade"
+    ],
+    [
+      "primeira-hora",
+      "4. Primeiros minutos: prioridades simultâneas"
+    ],
+    [
+      "controle",
+      "5. Controle de hemorragia por localização"
+    ],
+    [
+      "ressuscitacao",
+      "6. Ressuscitação hemostática"
+    ],
+    [
+      "pressao",
+      "7. Alvos hemodinâmicos e exceções"
+    ],
+    [
+      "coagulopatia",
+      "8. Coagulopatia induzida por trauma"
+    ],
+    [
+      "txa",
+      "9. Ácido tranexâmico e intervenções adjuvantes"
+    ],
+    [
+      "diagnostico",
+      "10. Exames de imagem e reavaliação"
+    ],
+    [
+      "populacoes",
+      "11. Situações clínicas particulares"
+    ],
+    [
+      "algoritmo",
+      "12. Algoritmo mental de decisão"
+    ],
+    [
+      "casos",
+      "Casos clínicos integradores"
+    ],
+    [
+      "questoes",
+      "Questões originais comentadas"
+    ],
+    [
+      "referencias",
+      "Referências e status editorial"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Choque Hemorrágico",
+    "Fisiopatologia, identificação precoce, hemostasia e ressuscitação do sangramento grave",
+    [
+      "Área: Cirurgia Geral",
+      "Lote 1 · Tema 022"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "fundamentos",
+      0,
+      [
+        [
+          "2",
+          "1. Conceito, fisiologia e perfusão"
+        ],
+        [
+          "p",
+          "Choque hemorrágico é insuficiência circulatória decorrente da perda de sangue, com redução progressiva da oferta de oxigênio aos tecidos. Não é sinônimo de hipotensão: vasoconstrição, taquicardia e redistribuição de fluxo podem manter pressão arterial aparentemente normal durante perda significativa. O problema biológico é a inadequação entre transporte de oxigênio, extração celular e demanda metabólica. Reconhecimento precoce evita a progressão para acidose, disfunção microcirculatória e falência de órgãos."
+        ],
+        [
+          "p",
+          "A entrega sistêmica de oxigênio depende do débito cardíaco e do conteúdo arterial de oxigênio. A hemorragia reduz o retorno venoso e a pré-carga, diminuindo volume sistólico; a perda de hemácias também diminui o conteúdo de oxigênio, mas a hemoglobina inicial pode permanecer próxima ao basal antes da redistribuição de líquidos. Monitorar tendência e fisiologia é mais seguro do que aguardar anemia importante em uma coleta isolada."
+        ],
+        [
+          "p",
+          "O sistema simpático eleva frequência cardíaca e resistência periférica para preservar perfusão cerebral e coronariana. Essa compensação tem custo: piora da perfusão cutânea, esplâncnica e renal, aumentando lactato e déficit de base. O jovem atleta pode manter pressão até fases avançadas; idosos, gestantes e pacientes em betabloqueadores frequentemente exibem respostas menos típicas. Assim, nenhuma frequência cardíaca isolada exclui sangramento ativo."
+        ],
+        [
+          "p",
+          "Na fase de descompensação, a hipoperfusão persistente compromete mitocôndrias, endotélio e hemostasia. A injúria por reperfusão também pode intensificar inflamação após restauração de fluxo. Repor pressão sem controlar a fonte é tratamento incompleto: sangue administrado a um vaso aberto pode apenas prolongar a perda. A estratégia envolve ressuscitação hemostática e controle anatômico precoce."
+        ],
+        [
+          "3",
+          "Transporte de oxigênio, extração e choque oculto"
+        ],
+        [
+          "p",
+          "A equação de transporte de oxigênio reúne débito cardíaco e conteúdo arterial de oxigênio. Conteúdo arterial depende sobretudo de hemoglobina ligada ao oxigênio; pequena parcela está dissolvida no plasma. Na hemorragia, primeiro pode cair o débito cardíaco por queda do retorno venoso e, depois, a concentração de hemoglobina após redistribuição de líquidos. Por isso, SpO₂ de 99% indica saturação do sangue restante, não garante oferta suficiente de oxigênio. É possível manter saturação preservada enquanto tecidos estão hipoperfundidos."
+        ],
+        [
+          "p",
+          "Em repouso, os tecidos extraem uma fração do oxigênio que recebem. Diante de débito reduzido, o organismo aumenta a extração e prioriza órgãos vitais, mas essa reserva tem limite. Quando a entrega cai abaixo do crítico, há produção crescente de lactato e comprometimento da função celular. Além disso, choque pode coexistir com microcirculação heterogênea: pressão média restaurada não significa capilares efetivamente perfundidos. O exame de pele, consciência, diurese e marcadores seriados contribui para reconhecer esse descompasso."
+        ],
+        [
+          "p",
+          "Déficit de base negativo sugere componente metabólico acumulado e é utilizado em conjunto com lactato como marcador da gravidade e resposta. Entretanto, fluidos ricos em cloreto podem provocar acidose metabólica hiperclorêmica, enquanto disfunção hepática prejudica depuração do lactato. Não se pode inferir um volume perdido exato a partir de qualquer desses exames. O valor está em identificar hipoperfusão persistente, comparar tendência e confirmar melhora após hemostasia real."
+        ],
+        [
+          "p",
+          "Na hemorragia aguda, a redução de pré-carga muitas vezes gera taquicardia, mas não se deve esperar frequência de 140 bpm para reconhecer risco. Paciente sob betabloqueador, portador de marca-passo, idoso com doença do nó sinusal ou atleta treinado pode ter reação menos típica. Medicamentos vasodilatadores, diuréticos e anestésicos modificam o tônus vascular e o balanço entre pressão e débito. Uma avaliação baseada somente em pressão sistólica e pulso pode subestimar gravidade."
+        ],
+        [
+          "p",
+          "Após estabilização inicial, a reperfusão reintroduz oxigênio em tecidos previamente isquêmicos, com liberação de metabólitos e risco de inflamação sistêmica. A estratégia moderna de cuidado não termina quando a pressão melhora: necessita vigilância de órgão-alvo, hemólise, lesão pulmonar associada à transfusão, lesão renal e infecção. O risco clínico acompanha intensidade e duração da hipoperfusão, carga transfusional, comorbidades e qualidade da hemostasia."
+        ],
+        [
+          "3",
+          "Microcirculação, lesão endotelial e reperfusão"
+        ],
+        [
+          "p",
+          "Os vasos de resistência distribuem fluxo entre órgãos, mas a microcirculação é onde a oferta de oxigênio se transforma em metabolismo celular. Capilares podem apresentar fluxo heterogêneo no choque mesmo quando a pressão arterial volta a níveis aparentemente adequados. Endotélio lesado, edema intersticial e alterações da deformabilidade das hemácias contribuem para baixa extração. Por isso, não se deve concluir que a ressuscitação teve sucesso apenas com um único valor de pressão arterial."
+        ],
+        [
+          "p",
+          "O glicocálice endotelial é uma camada que participa da regulação da permeabilidade e de interações com células sanguíneas. Trauma e hipoperfusão graves podem comprometer essa estrutura, favorecendo fuga capilar e edema. Grandes volumes de fluidos sem necessidade podem agravar expansão intersticial e limitar trocas gasosas. O mecanismo explica por que a ressuscitação focada no controle de sangramento e em sangue, em vez de cristaloide indiscriminado, faz sentido fisiopatológico."
+        ],
+        [
+          "p",
+          "O rim é sensível à redução prolongada de perfusão, mas a diurese inicial depende também de catecolaminas, hormônio antidiurético e função renal preexistente. Débito urinário persistentemente reduzido após intervenção requer considerar choque residual, obstrução urinária, lesão renal e aumento da pressão intra-abdominal. O cérebro pode apresentar agitação e confusão antes de rebaixamento profundo de consciência; sedação não torna o indicador de perfusão dispensável, apenas menos acessível."
+        ],
+        [
+          "p",
+          "Acidose e hiperfibrinólise podem coexistir na fase inicial de trauma, mas a coagulação evolui dinamicamente. Depois de controle de sangramento e imobilização, muitos doentes tornam-se hipercoaguláveis. Planejar profilaxia de tromboembolismo no momento seguro é continuidade do raciocínio hemostático, e não oposição a ele. O objetivo clínico muda ao longo das horas; medidas adequadas no primeiro momento podem tornar-se inadequadas se mantidas automaticamente."
+        ]
+      ]
+    ],
+    [
+      "causas",
+      0,
+      [
+        [
+          "2",
+          "2. Fontes de hemorragia e diagnóstico diferencial"
+        ],
+        [
+          "p",
+          "No trauma, pesquisar sangramento externo, tórax, abdome, retroperitônio, pelve e ossos longos. O espaço retroperitoneal pode acumular volumes expressivos sem sinais externos evidentes; fraturas pélvicas instáveis exigem contenção apropriada e equipe preparada para controle endovascular ou operatório. No sangramento digestivo, obstétrico ou pós-operatório, a fisiologia do choque é similar, mas a estratégia de hemostasia é específica da origem."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"EquipmentforPelvicBinder.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/EquipmentforPelvicBinder.jpg\" alt=\"Cinta de compressão pélvica para fraturas em livro aberto instáveis\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cinta de compressão pélvica para fraturas em livro aberto instáveis</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AEquipmentforPelvicBinder.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Doc James ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Stauschlauch.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Stauschlauch.JPG\" alt=\"Torniquete hemostático para contenção de hemorragia exsanguinante em extremidade\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Torniquete hemostático para contenção de hemorragia exsanguinante em extremidade</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AStauschlauch.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">me Ernstl ↗</a> (CC BY-SA 2.5). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "p",
+          "Choque obstrutivo por pneumotórax hipertensivo ou tamponamento, choque cardiogênico após contusão/infarto e choque distributivo podem coexistir com hemorragia. Isso é especialmente importante quando um paciente mantém sinais de hipoperfusão apesar de controle aparente da perda. Ultrassom à beira-leito ajuda a buscar sangramento ou disfunção associada, mas exame negativo não descarta fonte retroperitoneal ou sangramento intermitente."
+        ],
+        [
+          "p",
+          "Em fraturas abertas e lacerações profundas, compressão direta e torniquete, quando indicado, salvam tempo para intervenção definitiva. Reexaminar roupas, dorso e feridas após a avaliação primária, protegendo temperatura e coluna quando pertinente. Hematoma em expansão, sangramento pulsátil e extremidade fria sugerem lesão vascular que demanda avaliação imediata."
+        ],
+        [
+          "3",
+          "Quadro comparativo — onde o sangue pode estar oculto"
+        ],
+        [
+          "t",
+          [
+            "Compartimento/fonte",
+            "Pista clínica",
+            "Armadilha",
+            "Próximo passo"
+          ],
+          [
+            [
+              "Tórax",
+              "Trauma torácico, assimetria ventilatória, macicez",
+              "Exame físico isolado pode não quantificar hemotórax",
+              "eFAST/radiografia e avaliação cirúrgica de urgência conforme estabilidade"
+            ],
+            [
+              "Abdome",
+              "Mecanismo abdominal, distensão, dor",
+              "Exame inicial e FAST negativos não excluem sangramento inicial",
+              "Reavaliar; imagem apenas se estabilidade permitir; controle de fonte se instável"
+            ],
+            [
+              "Pelve/retroperitônio",
+              "Trauma de alta energia, pelve dolorosa",
+              "FAST pode não detectar hemorragia retroperitoneal",
+              "Estabilizador corretamente posicionado e hemostasia operatória/endovascular"
+            ],
+            [
+              "Extremidades",
+              "Fratura de ossos longos, feridas extensas",
+              "Perda relevante sem hemorragia externa maciça",
+              "Compressão, imobilização e avaliação vascular"
+            ],
+            [
+              "Pós-operatório",
+              "Oligúria, queda de perfusão, aumento de drenagem",
+              "Dreno silencioso não exclui coleção profunda",
+              "Acionar cirurgia e investigar sítio conforme fisiologia"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Anatomia da perda e busca sistemática de fonte"
+        ],
+        [
+          "p",
+          "Identificar o compartimento que recebe sangue é exercício anatômico. No trauma penetrante de pescoço, tórax ou abdome, a trajetória ajuda a priorizar estruturas vasculares; em trauma contuso, mecanismo de alta energia pode produzir lesões profundas sem ferida. O retroperitônio abriga grandes vasos e permite acúmulo volumoso; a cavidade torácica e o abdome também podem alojar perdas importantes. Fratura de fêmur exige avaliação de tecido mole e sangramento intracompartimental, inclusive quando a deformidade parece moderada."
+        ],
+        [
+          "p",
+          "Queda de pressão após estabilização inicial frequentemente resulta de hemorragia persistente, mas não é a única explicação. Pneumotórax hipertensivo pode surgir após ventilação com pressão positiva, hipotermia e acidose comprometem a circulação, e indução anestésica pode reduzir retorno venoso. Antes de concluir que todo choque refratário exige mais hemácias, repetir exame torácico, ultrassom, sinais de perfusão e revisão das lesões. O paciente pode ter hemorragia e choque obstrutivo simultaneamente."
+        ],
+        [
+          "p",
+          "Na pelve, o anel ósseo pode se abrir após impacto, ampliando espaço disponível para sangramento venoso e ósseo. O estabilizador apropriado aproxima estruturas, mas não estanca obrigatoriamente uma lesão arterial. Em serviço com radiologia intervencionista, embolização pode ser crucial; em outros, tamponamento extraperitoneal e cirurgia desempenham papel central. A escolha deve considerar disponibilidade e tempo real de acesso ao procedimento, não somente a técnica idealizada em centros altamente especializados."
+        ],
+        [
+          "p",
+          "Nas hemorragias pós-operatórias, observar tendência de sangue em dreno, distensão abdominal, dor desproporcional, palidez, oligúria e variações de pressão. Dreno com pouco sangue não exclui hemoperitônio se está obstruído ou mal posicionado. Em uso de anticoagulantes, o risco de sangramento tardio pode modificar a cronologia. Revisão operatória não deve ser retardada por avaliação repetitiva que não altera decisão em paciente francamente instável."
+        ],
+        [
+          "p",
+          "Em choque sem mecanismo traumático, a perda pode originar-se de ruptura de aneurisma de aorta, gravidez ectópica rota, hemorragia digestiva, sangramento ginecológico e ruptura esplênica espontânea em situações particulares. A história de dor abdominal, melena, hematêmese, atraso menstrual ou doença vascular orienta fluxos diferentes. A fisiologia de oferta de oxigênio é compartilhada, mas a equipe e o controle de fonte precisam ser específicos."
+        ]
+      ]
+    ],
+    [
+      "reconhecimento",
+      0,
+      [
+        [
+          "2",
+          "3. Reconhecimento à beira-leito e gravidade"
+        ],
+        [
+          "p",
+          "Alteração de consciência, pele fria/pegajosa, enchimento capilar lento, taquipneia, oligúria, pulso fino e pressão de pulso estreita indicam hipoperfusão. O índice de choque, frequência cardíaca dividida pela pressão sistólica, pode ajudar a reconhecer deterioração, mas sofre influência de idade, fármacos e condições basais. Não existe um índice isolado que autorize observar um paciente potencialmente hemorrágico sem reavaliação."
+        ],
+        [
+          "p",
+          "A classificação tradicional em quatro classes de perda sanguínea é ferramenta mnemônica aproximada e não medidor volumétrico confiável. Pacientes reais variam conforme reserva fisiológica, velocidade de perda e reposição prévia. Descrever gravidade por perfusão, necessidade transfusional, trajetória hemodinâmica e possibilidade de controle da fonte é mais útil do que inferir um percentual exato de sangue perdido."
+        ],
+        [
+          "p",
+          "Lactato e déficit de base são marcadores complementares de hipoperfusão e prognóstico, mas lactato pode aumentar por catecolaminas, convulsões ou insuficiência hepática. Valores seriados que não clareiam apesar de intervenção exigem reavaliação da causa. Pressão arterial normal e hemoglobina normal isoladamente não garantem estabilidade; é a evolução conjunta que orienta urgência."
+        ],
+        [
+          "3",
+          "Exame, monitorização e o que números não dizem"
+        ],
+        [
+          "p",
+          "A pressão arterial sistólica baixa é sinal tardio em vários pacientes e tende a variar com dor, ansiedade, ambiente, posição e método de medida. Repetir com manguito adequado, palpar pulso central e periférico e comparar pressão com a condição habitual acrescenta contexto. Pressão de pulso estreita e extremidades frias podem apontar vasoconstrição importante antes de hipotensão. Pulso radial palpável, porém, não é medidor preciso de pressão e não autoriza decisões definitivas."
+        ],
+        [
+          "p",
+          "O índice de choque pode aumentar antes da queda acentuada da pressão, mas sua interpretação em gestantes, atletas, crianças e pacientes sob medicação cronotrópica difere do adulto saudável. O sinal de maior gravidade é o conjunto de deteriorações: aumento do esforço respiratório, palidez, confusão, perda de pulsos periféricos e produção urinária reduzida. Um número isolado pode ser transitório; uma tendência que piora em domínios independentes tem maior credibilidade."
+        ],
+        [
+          "p",
+          "Choque hemorrágico oculto é especialmente relevante quando o doente foi encaminhado de outro hospital após receber líquidos. Os sinais podem parecer transitoriamente melhores, enquanto hemorragia continua e coágulos frágeis podem se desfazer. Registrar volume de infusão, transfusões, horário de torniquetes, diurese, mecanismos de lesão e exames anteriores evita interpretar o estado atual fora da trajetória. Nenhuma melhora após uma bolsa prova que o sangramento foi controlado."
+        ],
+        [
+          "p",
+          "Os perfis de resposta à ressuscitação — resposta sustentada, transitória ou mínima — podem ajudar a estimar necessidade de controle urgente da fonte. Resposta transitória após sangue sugere que a reposição competiu com perda ainda ativa. Não é uma classificação rígida, pois dor, hipotermia e lesões concomitantes afetam medidas; ainda assim, o padrão temporal é mais útil que uma fotografia única dos sinais vitais."
+        ],
+        [
+          "p",
+          "Sedação e ventilação podem impedir avaliar consciência, e vasopressores podem manter pressão enquanto débito segue inadequado. Nesses casos, buscar diurese, temperatura periférica, ecografia funcional, lactato/déficit de base e sangramento ativo ganha importância. A monitorização invasiva pode beneficiar casos selecionados, mas não substitui reavaliação clínica frequente."
+        ]
+      ]
+    ],
+    [
+      "primeira-hora",
+      0,
+      [
+        [
+          "2",
+          "4. Primeiros minutos: prioridades simultâneas"
+        ],
+        [
+          "p",
+          "Acionar equipe de trauma/emergência, anestesia, cirurgia e hemoterapia conforme gravidade. Garantir segurança da cena, via aérea, ventilação e oxigenação adequadas. Hemorragia externa ameaçadora pode demandar compressão/torniquete antes ou em paralelo à via aérea. A intubação no choque grave pode precipitar colapso hemodinâmico por indução anestésica e redução do retorno venoso; exige planejamento e disponibilidade de ressuscitação imediata."
+        ],
+        [
+          "p",
+          "Dois acessos periféricos calibrosos ou acesso intraósseo quando não há veias disponíveis possibilitam produtos sanguíneos e medicações. Colher hemograma, gasometria, lactato, coagulograma, fibrinogênio, cálcio, tipagem e prova de compatibilidade sem atrasar a ressuscitação. Aquecer paciente e fluidos; hipotermia piora função plaquetária e fatores de coagulação."
+        ],
+        [
+          "p",
+          "A decisão entre ida imediata ao centro cirúrgico, radiologia intervencionista e tomografia depende principalmente da resposta hemodinâmica e da suspeita anatômica. Uma pessoa que permanece instável com provável sangramento intra-abdominal não deve ser enviada a exames prolongados sem capacidade de intervenção e monitorização; o controle da fonte tem prioridade."
+        ],
+        [
+          "3",
+          "Organização de equipe e redução de atrasos"
+        ],
+        [
+          "p",
+          "A primeira comunicação estruturada deve incluir mecanismo e horário, fisiologia, lesões identificadas, intervenções, acesso, produtos recebidos e necessidade provável de cirurgia ou radiologia. Definir líder, responsável por via aérea, hemostasia externa, produtos sanguíneos, acesso e registro impede ordens duplicadas e tempos mortos. Em trauma grave, antecipar sala cirúrgica e anestesia antes de confirmação por tomografia pode reduzir atraso evitável."
+        ],
+        [
+          "p",
+          "Na abordagem das vias aéreas, reconhecer sinais de falha ventilatória, trauma facial e redução de consciência. Indução e ventilação de pressão positiva reduzem retorno venoso; em choque hemorrágico isso pode precipitar parada peri-intubação. Por isso, resgatar volume circulante com sangue quando indicado, preparar equipamentos e drogas apropriados à fisiologia, garantir operador experiente e manter equipe pronta para intervenção se colapso ocorrer. Não adiar via aérea absolutamente necessária; equilibrar prioridades simultâneas."
+        ],
+        [
+          "p",
+          "A exposição completa procura lesões ocultas, mas todo tempo de despir e examinar deve ser acompanhado de prevenção ativa da hipotermia. Ambientes frios, infusão de soluções geladas, roupa molhada e transporte prolongado elevam risco. Cobertores térmicos, aquecimento de sala, dispositivos de aquecimento e redução de exposição desnecessária são ações terapêuticas, não conforto opcional."
+        ],
+        [
+          "p",
+          "Produtos de emergência não totalmente compatibilizados podem ser necessários diante de exsanguinação; o banco de sangue define escolha de tipo, rastreabilidade e transição para hemocomponentes tipados. Nunca atrasar transfusão salvadora apenas para completar exames de rotina, mas colher amostras de compatibilidade assim que viável. Identificação correta do paciente e dupla checagem evitam erros transfusionais potencialmente fatais."
+        ],
+        [
+          "p",
+          "Quando sangue não está disponível no ponto de atendimento, iniciar medidas de contenção, acesso intraósseo se preciso, aquecimento e transferência rápida com comunicação clara sobre provável necessidade de protocolo maciço. Manter paciente sem controle de fonte em unidade incapaz de intervir deve ser ponderado como risco logístico; transferência precisa considerar segurança durante deslocamento."
+        ]
+      ]
+    ],
+    [
+      "controle",
+      0,
+      [
+        [
+          "2",
+          "5. Controle de hemorragia por localização"
+        ],
+        [
+          "p",
+          "Hemorragia externa visível: pressão direta firme, curativos hemostáticos quando apropriados e torniquete de extremidade em sangramento maciço não controlável por compressão. Registrar horário, evitar afrouxamento intermitente e transferir para controle cirúrgico. Lesões de junção anatômica exigem técnicas próprias; torniquete convencional não comprime adequadamente virilha ou axila."
+        ],
+        [
+          "p",
+          "Na fratura pélvica suspeita com instabilidade, aplicar estabilizador sobre os grandes trocânteres e evitar manipulações repetidas do anel. A estabilização mecânica reduz volume pélvico e movimento, mas não substitui tamponamento pré-peritoneal, embolização ou cirurgia conforme disponibilidade e mecanismo. Radiografia ou tomografia de pelve não devem atrasar intervenção em paciente descompensado."
+        ],
+        [
+          "p",
+          "Em trauma torácico, drenagem pleural e eventual toracotomia seguem sinais clínicos, volume drenado e persistência de sangramento; parâmetros precisam ser avaliados no contexto, não usados automaticamente. Em feridas penetrantes e abdome com peritonite/instabilidade, controle operatório pode prevalecer sobre investigação por imagem. Cirurgia de controle de danos combina hemostasia rápida, limitação de contaminação e reabordagem após correção fisiológica."
+        ],
+        [
+          "3",
+          "Cirurgia de controle de danos e intervenção endovascular"
+        ],
+        [
+          "p",
+          "Cirurgia de controle de danos trata a fisiologia instável como parte da decisão operatória. Em vez de reconstruções complexas durante coagulopatia profunda, o objetivo inicial pode ser comprimir, ligar ou controlar vasos, retirar contaminantes e estabilizar rapidamente. O paciente segue para correção de temperatura, coagulação, perfusão e suporte intensivo, retornando para tratamento definitivo quando condições permitirem. Essa decisão exige julgamento cirúrgico e não se aplica a todo trauma."
+        ],
+        [
+          "p",
+          "Angioembolização é particularmente útil para certos sangramentos arteriais pélvicos, lesões de órgãos sólidos e complicações vasculares em pacientes selecionados, especialmente quando cirurgia aberta traria grande morbidade. Porém, hemorragia difusa venosa ou instabilidade extrema sem tempo para angiografia pode exigir outra rota. A escolha entre embolização e cirurgia depende de fonte provável, infraestrutura, resposta à transfusão e acesso temporal ao procedimento."
+        ],
+        [
+          "p",
+          "Oligúria após trauma abdominal pode refletir choque, mas lesão de trato urinário e aumento de pressão intra-abdominal também são diferenciais. Hemoperitônio maciço e reposição elevada podem predispor a síndrome compartimental abdominal. A busca de hemostasia deve ser acompanhada de vigilância do abdome e repercussão respiratória/renal."
+        ],
+        [
+          "p",
+          "Após controle inicial, remover precocemente dispositivos de compressão quando seguro e revisar sua necessidade. Torniquete não deve ser afrouxado ao acaso fora de ambiente controlado; conversão para curativo só pode ocorrer mediante avaliação técnica e hemostasia apropriada. Hemorragias em junções anatômicas exigem preparação específica para tamponamento ou abordagem cirúrgica."
+        ],
+        [
+          "p",
+          "O cuidado com o doente não termina na sala operatória: sangramento oculto recorrente, coagulopatia tardia, complicações de embolização e reperfusão devem ser procurados. A equipe de UTI deve receber descrição de pontos de hemostasia, packs, drenos, necessidade de reoperação planejada e riscos de síndrome compartimental ou isquemia."
+        ],
+        [
+          "3",
+          "Tomadas de decisão em lesão vascular e órgãos sólidos"
+        ],
+        [
+          "p",
+          "Lesão esplênica de grau elevado no laudo não significa operação imediata em todos os pacientes: estabilidade sustentada, recursos de monitorização e possibilidade de embolização influenciam tratamento não operatório. Em contrapartida, lesão que parece menor à imagem mas mantém queda hemodinâmica pode requerer intervenção. A classificação anatômica e o estado circulatório são dimensões complementares, não substitutas."
+        ],
+        [
+          "p",
+          "Em trauma hepático, sangramento arterial pode ser acessível a embolização, enquanto lesões venosas complexas e coagulopatia difusa exigem estratégias distintas. O tratamento deve antecipar risco de bile, isquemia hepática e complicações tardias. O principal desafio em emergências não é escolher procedimento pelo nome do órgão, mas associar anatomia lesionada, fisiologia e capacidade de controle rápido."
+        ],
+        [
+          "p",
+          "Ferida penetrante com instabilidade e sinais de peritonite pode demandar laparotomia sem tomografia prévia, de acordo com julgamento cirúrgico. A investigação por imagem é valiosa quando muda estratégia e há tempo para realizá-la com segurança. Procedimento diagnóstico que expõe a risco circulatório sem alterar intervenção tem baixo valor e potencial dano."
+        ],
+        [
+          "p",
+          "Hemorragia de vaso de membro pode exigir compressão inicial, controle proximal e reparo vascular. Extremidade fria com sinais de isquemia sugere interrupção de fluxo; o raciocínio precisa integrar preservação de vida e de membro. Torniquete protege contra exsanguinação, porém requer plano de controle definitivo e documentação cuidadosa."
+        ]
+      ]
+    ],
+    [
+      "ressuscitacao",
+      0,
+      [
+        [
+          "2",
+          "6. Ressuscitação hemostática"
+        ],
+        [
+          "p",
+          "A transfusão precoce de hemocomponentes é central quando há hemorragia significativa com choque. Cristaloides em grandes volumes podem diluir fatores e plaquetas, agravar hipotermia, edema e acidose hiperclorêmica, sem repor capacidade de transporte de oxigênio. Usar pequenos volumes como ponte quando produtos sanguíneos não estiverem disponíveis, reavaliando continuamente a necessidade."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Blood_transfusion.gif\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Blood%20transfusion.gif\" alt=\"Bolsa de concentrado de hemácias para transfusão no choque hemorrágico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Bolsa de concentrado de hemácias para transfusão no choque hemorrágico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABlood%20transfusion.gif\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Ian Furst/User:Doc James ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "p",
+          "Protocolos de transfusão maciça facilitam acesso coordenado a concentrado de hemácias, plasma e plaquetas em proporções iniciais equilibradas, ajustadas a exames e viscoelasticidade quando disponíveis. A proporção exata deve seguir o protocolo institucional e o cenário; nenhum esquema substitui hemostasia definitiva. Quando a situação estabiliza, desativar prontamente o protocolo e fazer terapia dirigida por anormalidades demonstradas."
+        ],
+        [
+          "p",
+          "Ressuscitação guiada por viscoelasticidade (TEG/ROTEM) pode acelerar identificação de deficiência de fibrinogênio, baixa contribuição plaquetária ou hiperfibrinólise. Na ausência desses métodos, acompanhar INR/TTPa, fibrinogênio e plaquetas em série. O fibrinogênio costuma diminuir precocemente; reposição por concentrado ou crioprecipitado depende de níveis, sangramento e disponibilidade."
+        ],
+        [
+          "p",
+          "Cada bolsa transfundida exige atenção à hipocalcemia por citrato, hipotermia, hipercalemia/hipocalemia, reações transfusionais e sobrecarga circulatória em vulneráveis. Medir cálcio ionizado e corrigi-lo conforme resultado e protocolo é parte da hemostasia. Transfundir de modo vigoroso sem vigilância metabólica pode manter o paciente acidótico e coagulopático apesar de pressão melhor."
+        ],
+        [
+          "3",
+          "Quadro — componentes da transfusão e o déficit que corrigem"
+        ],
+        [
+          "t",
+          [
+            "Produto/recurso",
+            "Finalidade principal",
+            "O que não resolve sozinho"
+          ],
+          [
+            [
+              "Concentrado de hemácias",
+              "Restaurar massa de hemácias e transporte de oxigênio",
+              "Não repõe integralmente fatores, plaquetas e fibrinogênio"
+            ],
+            [
+              "Plasma",
+              "Aportar múltiplos fatores da coagulação",
+              "Não substitui plaquetas nem controla vaso rompido"
+            ],
+            [
+              "Concentrado plaquetário",
+              "Tratar deficiência quantitativa/funcional de plaquetas conforme contexto",
+              "Não corrige hipofibrinogenemia isolada"
+            ],
+            [
+              "Crioprecipitado ou fibrinogênio",
+              "Restaurar substrato da rede de fibrina quando deficiente",
+              "Não substitui correção de fonte e plaquetas quando necessárias"
+            ],
+            [
+              "Aquecimento e cálcio ionizado",
+              "Evitar deterioração térmica e metabólica da coagulação",
+              "Não substituem hemoterapia/hemostasia"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Componentes transfusionais e protocolos operacionais"
+        ],
+        [
+          "p",
+          "O concentrado de hemácias restaura massa eritrocitária e transporte de oxigênio; plasma aporta diversos fatores de coagulação; plaquetas auxiliam na hemostasia primária; crioprecipitado ou concentrado de fibrinogênio trata deficiência desse substrato. Uma estratégia equilibrada reduz risco de diluição durante hemorragia maciça, mas não implica proporção estática até o final. Conforme exames e sangramento evoluem, a terapia deve migrar para componentes específicos e ser interrompida quando cessou a indicação."
+        ],
+        [
+          "p",
+          "Transfusão maciça operacionalmente costuma ser definida de maneiras diversas, incluindo volume em 24 horas ou consumo rápido de hemácias em curto intervalo; a ativação clínica não deve depender de atingir uma definição retrospectiva. Em exsanguinação, ativar cedo garante logística, identificação, hemocomponentes e comunicação. Quando o paciente estabiliza, comunicar cancelamento evita desperdício e transfusões sem propósito."
+        ],
+        [
+          "p",
+          "O estudo PROPPR influenciou o debate sobre proporções equilibradas iniciais em hemorragia traumática, mas resultados de estudos não autorizam dispensar hemostasia. Diversos serviços usam protocolo guiado por exames viscoelásticos assim que possível. A estratégia deve equilibrar sangramento continuado, risco trombótico e limitações da instituição, com atenção a fibrinogênio e plaquetas."
+        ],
+        [
+          "p",
+          "Ácido-base e temperatura interferem na eficácia dos componentes. Amostras laboratoriais obtidas durante infusão acelerada podem refletir transitoriamente grande diluição ou alterações por citrato; ainda assim, resultados seriados ajudam a dirigir correção. A equipe deve conhecer o tempo de processamento dos exames, garantindo que resultado seja interpretado em relação ao momento da coleta."
+        ],
+        [
+          "p",
+          "Reações transfusionais podem apresentar febre, hipoxemia, hipotensão, hemoglobinúria e piora clínica. Distinguir reação de continuidade do choque requer investigação e medidas institucionais de segurança. Em sangramento ameaçador, suspender indiscriminadamente todas as transfusões sem avaliar causa também pode ser fatal. Qualquer evento suspeito exige comunicação com hemoterapia e abordagem urgente contextualizada."
+        ],
+        [
+          "3",
+          "Como interpretar resposta a sangue e sangramento em andamento"
+        ],
+        [
+          "p",
+          "Paciente que recebe hemocomponentes e exibe melhora transitória de pressão e consciência, seguida de nova taquicardia e hipoperfusão, deve ser considerado possível sangrador persistente. Não basta repetir hemácias: é necessário localizar compartimento, conferir compressões, cirurgia ou embolização, repetir exame e avaliar coagulopatia. O intervalo entre bolsas e piora pode indicar velocidade de perda, embora não forneça cálculo preciso do volume."
+        ],
+        [
+          "p",
+          "Após hemostasia, a queda persistente do lactato nem sempre é imediata. Produção residual, redistribuição e função hepática afetam curva; por isso, acompanhar tendências em intervalos clinicamente relevantes ao lado de temperatura, diurese, exame e necessidade de vasopressores. Lactato crescente apesar de boa pressão pressiona a equipe a procurar baixo débito, sangramento oculto ou fonte distinta de hipoperfusão."
+        ],
+        [
+          "p",
+          "A necessidade de transfusão após controle da fonte pode persistir por anemia sintomática, hipoxemia ou risco de isquemia, mas transfusões de manutenção devem seguir avaliações individualizadas e limiares pertinentes. Alvos restritivos estabelecidos em pacientes estáveis não são aplicados de forma mecânica ao paciente exsanguinante, no qual a velocidade de perda e a instabilidade podem exigir intervenção antes de laboratório disponível."
+        ],
+        [
+          "p",
+          "Em hemorragia controlada, risco de hipervolemia aumenta quando o espaço intravascular volta a ser preenchido e os produtos infundidos passam a superar perdas. Crepitações, piora de oxigenação, pressão venosa elevada e congestão ecográfica podem sugerir sobrecarga, embora tenham diferenciais. A transição da fase de ressuscitação para fase de otimização e posteriormente remoção de excessos de fluidos deve ser deliberada."
+        ],
+        [
+          "p",
+          "O aquecimento dos hemocomponentes quando indicado requer equipamentos adequados, não improvisação que possa lesar produto ou paciente. Gelo, transporte e sistemas de infusão alteram temperatura corporal; a monitorização contínua permite detectar queda progressiva. Hipotermia, hipocalcemia e alterações de coagulação formam múltiplos fatores agravantes que precisam ser abordados em paralelo à hemostasia."
+        ],
+        [
+          "3",
+          "O que aprendemos dos estudos sobre estratégia transfusional"
+        ],
+        [
+          "p",
+          "Ensaios clínicos sobre proporções de plasma, plaquetas e hemácias informam protocolos de trauma grave, mas não substituem interpretação dos desfechos. O ensaio PROPPR comparou duas proporções iniciais em pacientes com previsão de transfusão maciça; seus resultados e análises posteriores reforçaram que disponibilidade coordenada de componentes é importante, ao mesmo tempo em que hemostasia precoce continua fundamental. A escolha de uma proporção inicial deve se alinhar às diretrizes e ao sistema local."
+        ],
+        [
+          "p",
+          "Proporções transfusionais são úteis sobretudo no início, quando a rapidez da perda supera a disponibilidade de resultados laboratoriais. À medida que a situação passa a ser monitorada com fibrinogênio, plaquetas e testes de coagulação ou viscoelasticidade, a estratégia deve ser individualizada. Não é correto continuar fornecendo componentes em proporções rígidas quando os testes demonstram deficiência específica ou quando o sangramento terminou."
+        ],
+        [
+          "p",
+          "Exposição a múltiplos produtos pode induzir complicações imediatas e tardias. Durante infusão rápida, hipotermia e hipocalcemia por citrato contribuem para contratilidade prejudicada e menor eficiência de coagulação. Após estabilização, investigar lesão pulmonar, sobrecarga circulatória, hemólise e outros eventos conforme achados. A indicação de cada componente deve equilibrar dano potencial da exposição com benefício de restaurar transporte de oxigênio e hemostasia."
+        ]
+      ]
+    ],
+    [
+      "pressao",
+      0,
+      [
+        [
+          "2",
+          "7. Alvos hemodinâmicos e exceções"
+        ],
+        [
+          "p",
+          "Na hemorragia traumática não controlada sem lesão cerebral grave, evitar perseguir pressão arterial normal apenas com volumes altos antes da hemostasia pode reduzir extravasamento e diluição: é o princípio de ressuscitação com pressão permissivamente mais baixa. Não confundir com aceitar hipoperfusão prolongada. A equipe ajusta metas à perfusão, tempo até controle e risco individual."
+        ],
+        [
+          "p",
+          "Trauma cranioencefálico e medular mudam a estratégia: hipotensão piora lesão secundária e a preservação de perfusão cerebral/medular assume grande importância. Gestação, idosos frágeis e doença cardiovascular também exigem cuidado individualizado. A frase 'todo choque hemorrágico deve receber pressão permissiva' é falsa e perigosa."
+        ],
+        [
+          "p",
+          "Vasopressores não corrigem falta de volume e não podem substituir sangue e hemostasia. Eventualmente servem como ponte curta em vasoplegia ou hipotensão refratária, com reavaliação frequente e atenção à perfusão periférica. Manutenção de noradrenalina crescente sem buscar fonte hemorrágica ou componente misto é um sinal de revisão diagnóstica urgente."
+        ],
+        [
+          "3",
+          "Raciocínio hemodinâmico: pressão não é perfusão"
+        ],
+        [
+          "p",
+          "A pressão arterial média resulta da interação entre débito cardíaco, resistência periférica e retorno venoso. Vasoconstrição intensa pode normalizar a medida no manguito apesar de fluxo capilar baixo. Em choque hemorrágico, o objetivo não é produzir uma cifra agradável no monitor; é preservar aporte de oxigênio até corrigir a fonte de sangramento. A equipe acompanha múltiplos sinais clínicos e laboratoriais, observando necessidade transfusional e trajetória de melhora."
+        ],
+        [
+          "p",
+          "Ressuscitação hipotensiva deliberada é uma estratégia temporal, aplicada em situações selecionadas de hemorragia não controlada, não uma meta definitiva. Seu raciocínio é reduzir pressão sobre coágulos frágeis e limitar diluição por fluidos enquanto se busca hemostasia. Prolongá-la sem capacidade de controlar a fonte conduz a hipoperfusão cumulativa e lesão celular. TCE grave, gravidez e outras populações podem demandar metas diferentes por risco de isquemia."
+        ],
+        [
+          "p",
+          "Mesmo após controle cirúrgico, hipotensão pode persistir por vasoplegia, sedação, isquemia miocárdica, sepse, tamponamento ou lesões não encontradas. Uma estratégia útil é perguntar se existe hipovolemia residual, hemorragia ativa, disfunção miocárdica ou vasodilatação predominante. Ecografia focada e medidas de perfusão acrescentam pistas, mas não são infalíveis; a revisão de exames e da cirurgia anterior evita tratar o número sem considerar mecanismos."
+        ],
+        [
+          "p",
+          "A elevação pressórica obtida com vasopressor pode mascarar perda sanguínea. Há cenários em que vasopressor transitório é empregado por especialista como ponte para restabelecer fluxo, mas sua titulação crescente deve disparar investigação de causa. Se extremidades permanecem marmóreas, diurese cai e lactato sobe, pressão aparentemente normal não equivale a sucesso terapêutico."
+        ],
+        [
+          "p",
+          "Em pacientes com cardiopatia ou limitação de reserva, tanto volume insuficiente quanto excessivo podem reduzir oferta efetiva de oxigênio. Hemoconcentrados ajudam a transportar oxigênio, mas excesso de pressão venosa e edema pulmonar prejudica troca gasosa. Reavaliar responsividade a fluidos com método apropriado e evitar decisões binárias baseadas apenas em pressão é essencial."
+        ]
+      ]
+    ],
+    [
+      "coagulopatia",
+      0,
+      [
+        [
+          "2",
+          "8. Coagulopatia induzida por trauma"
+        ],
+        [
+          "p",
+          "Coagulopatia pode surgir muito antes de transfusões volumosas, por lesão endotelial, hipoperfusão, ativação e consumo de sistemas hemostáticos e distúrbios do fibrinogênio. Hipotermia e acidose reduzem eficiência da coagulação. Esse processo é frequentemente chamado de coagulopatia traumática aguda e amplifica sangramento, formando ciclo de retroalimentação com o choque."
+        ],
+        [
+          "p",
+          "Anticoagulantes crônicos (antagonistas da vitamina K, inibidores diretos da coagulação ou heparinas) agravam certas hemorragias e requerem história medicamentosa, tempo da última dose, função renal e eventual reversão específica. Reversores não são intercambiáveis; usar antídoto errado pode ser ineficaz ou trazer trombose. A decisão depende da molécula e dos recursos locais."
+        ],
+        [
+          "p",
+          "Plaquetopenia, déficit de fibrinogênio e fatores são problemas diferentes. A transfusão guiada apenas por contagem de hemácias pode negligenciar hemorragia microvascular difusa. Quadro de sangramento persistente em campo cirúrgico sem vaso responsável, exames de coagulação alterados e hipotermia sugere necessidade de ressuscitação dirigida."
+        ],
+        [
+          "3",
+          "Coagulação, fibrinogênio e interpretação de testes"
+        ],
+        [
+          "p",
+          "Coagulação envolve hemostasia primária por plaquetas, formação de fibrina, mecanismos anticoagulantes e fibrinólise. Após trauma intenso, a disfunção endotelial e a hipoperfusão podem ativar vias fibrinolíticas e alterar a estrutura do coágulo; subsequentemente, consumo e diluição tornam anormalidades mais evidentes. Não se trata de uma única deficiência corrigida universalmente por plasma. Medir e dirigir componentes à anormalidade evita terapias cegas."
+        ],
+        [
+          "p",
+          "Tempo de protrombina/INR e TTPa avaliam etapas em condições laboratoriais padronizadas e nem sempre traduzem toda dinâmica do sangue integral. Fibrinogênio plasmático, plaquetas e testes viscoelásticos acrescentam informações complementares. TEG e ROTEM descrevem início, firmeza e degradação do coágulo, mas exigem interpretação baseada no método e no protocolo local. Não equiparar diretamente números entre fabricantes."
+        ],
+        [
+          "p",
+          "Fibrinogênio é substrato crítico para formação de rede de fibrina e para interação plaquetária; sua queda pode preceder alterações acentuadas em outros exames. Sangramento difuso com níveis baixos pode justificar reposição de crioprecipitado ou concentrado específico, seguindo limiar institucional. Por outro lado, dar fibrinogênio a todo traumatizado independentemente da avaliação não é terapia comprovadamente universal."
+        ],
+        [
+          "p",
+          "Hipotermia reduz atividade enzimática e função plaquetária. Um resultado de coagulação processado a 37°C pode subestimar a disfunção hemostática do doente a 33°C. Aquecer não é medida acessória: faz parte de reverter fatores que impedem estabilização do trombo. Acidose, hipocalcemia e hipoperfusão contribuem, de modo que correção isolada do INR pode falhar se fisiologia não melhora."
+        ],
+        [
+          "p",
+          "Em paciente que usava varfarina, a reversão emergencial pode empregar concentrado de complexo protrombínico e vitamina K conforme indicação clínica; em anticoagulantes diretos, estratégias dependem do agente, função renal e antídotos disponíveis. Reverter anticoagulação de modo desnecessário pode aumentar risco de tromboembolismo, enquanto não revertê-la em hemorragia ameaçadora piora prognóstico. Exige decisão estruturada, acompanhamento e plano de reinício posterior."
+        ],
+        [
+          "p",
+          "Quando sangramento é controlado e hemostasia recuperada, o paciente pode migrar de fase hemorrágica para fase pró-trombótica, especialmente após cirurgia e imobilização. Profilaxia mecânica e farmacológica de tromboembolismo deve ser considerada no momento apropriado, equilibrando hemorragia residual e risco de trombose. Assim, tratar coagulopatia não significa manter anticoagulação suspensa por tempo indefinido."
+        ],
+        [
+          "3",
+          "Exemplos de resultados que mudam decisão"
+        ],
+        [
+          "p",
+          "Considere paciente com hemorragia difusa no campo, plaquetas muito baixas, fibrinogênio adequadamente preservado e alterações predominantemente de hemostasia primária. O componente faltante tende a ser diferente daquele em doente com contagem plaquetária preservada mas fibrinogênio criticamente baixo. Isso mostra por que transfundir somente plasma ou somente crioprecipitado em todo sangramento grave é biologicamente equivocado."
+        ],
+        [
+          "p",
+          "Resultados viscoelásticos precisam ser correlacionados com cronologia da transfusão: se o exame foi colhido antes de importante reposição, não descreve necessariamente o estado no momento da interpretação. Fluxo de comunicação entre laboratório e centro cirúrgico deve registrar horário e intervenções desde a coleta. Repetições programadas e achados clínicos evitam perseguir déficit que já foi corrigido."
+        ],
+        [
+          "p",
+          "Coagulopatia de consumo, lesão hepática, hipotermia e diluição podem produzir perfis parcialmente semelhantes. História de hepatopatia, hemorragia maciça, temperatura, nível de fibrinogênio e plaquetas ajuda a contextualizar. A abordagem não procura um rótulo único quando existem causas simultâneas; cada déficit tratável precisa de avaliação da magnitude e do impacto hemorrágico."
+        ],
+        [
+          "p",
+          "O cálcio ionizado participa da cascata de coagulação e da contração miocárdica. O citrato dos hemocomponentes pode reduzi-lo durante transfusão rápida, sobretudo se o metabolismo estiver comprometido por choque. Reavaliar o cálcio ionizado durante ressuscitação maciça e corrigi-lo conforme protocolo é estratégia de segurança; cálcio total pode não refletir disponibilidade biológica no paciente crítico."
+        ],
+        [
+          "p",
+          "Após extensa reposição, potássio, magnésio e glicemia também variam. Hemácias armazenadas podem contribuir para carga de potássio, enquanto alterações ácido-base e função renal modificam distribuição. Monitorização eletrocardiográfica e laboratorial direciona o manejo; não se administram eletrólitos por suposição sem considerar valores e contexto."
+        ]
+      ]
+    ],
+    [
+      "txa",
+      0,
+      [
+        [
+          "2",
+          "9. Ácido tranexâmico e intervenções adjuvantes"
+        ],
+        [
+          "p",
+          "Em trauma com hemorragia significativa ou alto risco, o ácido tranexâmico pode reduzir morte por sangramento quando iniciado o mais cedo possível e dentro da janela recomendada pelas diretrizes, geralmente até três horas do trauma. A administração tardia não é benefício universal e pode ser prejudicial. A indicação deve considerar mecanismo, protocolo, contraindicações e evidência clínica, não um lactato isolado."
+        ],
+        [
+          "p",
+          "Controle de temperatura, analgesia adequada sem colapso hemodinâmico, ventilação que não agrave pré-carga e correção de cálcio completam a ressuscitação. Acidose decorrente de hipoperfusão resolve com reperfusão e hemostasia; bicarbonato de rotina não é solução causal. Buscar lesão vascular tratável e evitar exames desnecessários traz maior benefício do que adicionar fármacos sem alvo."
+        ],
+        [
+          "3",
+          "Ácido tranexâmico: indicações e limitações"
+        ],
+        [
+          "p",
+          "Ácido tranexâmico bloqueia interação plasminogênio-fibrina e reduz a degradação de coágulos. A hipótese terapêutica no trauma é conter hiperfibrinólise precoce e reduzir morte por sangramento. O benefício depende do momento e da seleção clínica; a janela de até três horas é ponto fundamental nas recomendações clássicas, com preferência por administração o mais cedo possível. Atrasos desnecessários podem eliminar benefício."
+        ],
+        [
+          "p",
+          "A proposta não é dar tranexâmico a qualquer pessoa com hematoma superficial ou a todos os pacientes hipotensos por qualquer causa. Deve haver trauma com hemorragia importante ou risco significativo, conforme diretriz e protocolo local. Doses e infusão devem ser checadas na versão vigente do protocolo assistencial; erro de dose e administração pode gerar eventos adversos, e função renal pode influenciar exposição."
+        ],
+        [
+          "p",
+          "Em paciente com convulsão, história trombótica, insuficiência renal ou sangramento em território específico, avaliar peculiaridades e recomendações locais antes de extrapolar. A evidência de trauma não é transferida automaticamente para hemorragia gastrointestinal, intracraniana ou obstétrica: cada cenário possui estudos e protocolos próprios. Em prova, a pergunta precisa conter causa e janela de tempo para justificar conduta."
+        ],
+        [
+          "p",
+          "Não há medicamento que substitua hemostasia mecânica quando artéria permanece aberta. Um paciente que continua recebendo tranexâmico e transfusões enquanto a fonte arterial sangra precisa de controle anatômico. A disponibilidade rápida de cirurgia ou embolização tem prioridade; fármacos compõem cuidado, não corrigem a estrutura lesada."
+        ]
+      ]
+    ],
+    [
+      "diagnostico",
+      0,
+      [
+        [
+          "2",
+          "10. Exames de imagem e reavaliação"
+        ],
+        [
+          "p",
+          "FAST/eFAST investiga líquido livre peritoneal e pericárdico, pneumotórax ou hemotórax conforme janela e técnica. Sensibilidade varia com operador, tempo desde o trauma, quantidade de sangue e local da lesão. FAST negativo em paciente instável não elimina hemorragia retroperitoneal, pélvica ou de víscera sólida inicial. Repetir a avaliação quando a fisiologia muda."
+        ],
+        [
+          "p",
+          "Tomografia contrastada é ferramenta de alta resolução para paciente suficientemente estabilizado, permitindo identificar extravasamento, lesões vasculares e outros focos de sangramento. O transporte de doente ainda dependente de múltiplas transfusões e ressuscitação ativa precisa ser cuidadosamente ponderado: exames só têm utilidade se não atrasam tratamento salvador."
+        ],
+        [
+          "p",
+          "Após controle aparente, verificar sinais vitais seriados, diurese, gasometria, lactato, sangramento em drenos, exame abdominal, pulsos e temperatura. A melhora isolada do pulso após analgésico ou aquecimento não exclui sangramento. Hemoglobina após reposição deve ser interpretada com balanço hídrico e tempo desde a perda."
+        ],
+        [
+          "3",
+          "Método de diagnóstico conforme estabilidade"
+        ],
+        [
+          "p",
+          "A pergunta operacional diante de possível hemorragia interna é se há tempo e segurança para exame confirmatório. Em paciente capaz de manter perfusão após ressuscitação inicial, tomografia contrastada pode mapear órgãos lesionados e extravasamento. Em instabilidade persistente, transportar para aparelho distante pode oferecer detalhe anatômico ao custo de atraso fatal. A decisão se baseia na fisiologia e nos recursos realmente disponíveis."
+        ],
+        [
+          "p",
+          "No eFAST, ausência de líquido livre não significa cavidade vazia; sensibilidade depende da quantidade, tempo, localização e habilidade do operador. Sangramento pélvico geralmente se projeta retroperitonealmente e pode não gerar líquido peritoneal detectável. É também possível obter FAST positivo por outras fontes de líquido ou achados crônicos; interpretar no contexto do trauma."
+        ],
+        [
+          "p",
+          "Repetir eFAST pode ser útil quando suspeita evolui ou a primeira janela foi tecnicamente inadequada, mas repetições infinitas não substituem decisão de operar. A pressão para obter imagem perfeita não deve competir com hemostasia. Radiografia de tórax/pelve e monitorização clínica servem ao objetivo de localizar fonte tratável, não a cumprir uma lista imutável antes do centro cirúrgico."
+        ],
+        [
+          "p",
+          "Depois da tomografia, perguntas úteis são: há extravasamento ativo, lesão arterial, pneumoperitônio, grande hemoperitônio, fratura instável, risco de sangramento tardio ou lesão concomitante? O laudo orienta escolha de operação, embolização ou observação com recursos apropriados. A imagem sem correlação clínica pode superestimar estabilidade de lesão em paciente que perde sangue lentamente."
+        ],
+        [
+          "p",
+          "Revisão de hemoglobina seriada é necessária, mas o valor cai também por hemodiluição após grandes volumes e pode aumentar com transfusão sem controlar fonte. A discrepância entre hemoglobina e perfusão exige revisar cronologia. Um valor isolado de 9 g/dL não determina, por si, necessidade transfusional em trauma com hemorragia não controlada, da mesma forma que 13 g/dL não exclui exsanguinação."
+        ]
+      ]
+    ],
+    [
+      "populacoes",
+      0,
+      [
+        [
+          "2",
+          "11. Situações clínicas particulares"
+        ],
+        [
+          "p",
+          "Sangramento digestivo maciço pode exigir endoscopia e estratégia transfusional própria, com atenção à hipertensão portal, coagulopatias e drogas antitrombóticas. Hemorragia pós-parto acrescenta atonia uterina, trauma obstétrico, tecido retido e alteração trombínica, exigindo abordagem obstétrica específica. O algoritmo traumático não deve ser aplicado integralmente a essas doenças."
+        ],
+        [
+          "p",
+          "Em pacientes pediátricos, estimativas de volemia, sinais de compensação e metas são específicos da idade; bradicardia pode ser sinal tardio e grave. Gestantes podem esconder perda importante pela expansão volêmica fisiológica. Pacientes idosos podem piorar sem taquicardia por medicações e disfunção autonômica, e desenvolvem maior risco de complicações por excesso de fluidos."
+        ],
+        [
+          "p",
+          "Suspeita de fratura pélvica associada a hipotensão persistente requer antecipar origem retroperitoneal. Cirurgias recentes, especialmente com anastomoses vasculares ou uso de anticoagulantes, podem sangrar internamente com pouca alteração externa. Uma alta precoce sem vigilância da tendência clínica pode perder a janela de reintervenção."
+        ],
+        [
+          "3",
+          "Hemorragia no idoso, na gestação e em crianças"
+        ],
+        [
+          "p",
+          "Idosos podem apresentar perdas menores em termos absolutos e desenvolver hipoperfusão devido a menor reserva de débito cardíaco, aterosclerose, doença renal e uso de medicamentos. O pulso pode não acelerar suficientemente. Em quem usa antiagregantes ou anticoagulantes, trauma aparentemente banal pode produzir sangramento tardio; o plano exige reconhecer o fármaco e avaliar necessidade de reversão, sem atribuir confusão aguda apenas à idade."
+        ],
+        [
+          "p",
+          "Gestantes têm expansão fisiológica do volume plasmático e aumento do débito cardíaco, que podem retardar sinais típicos de choque mesmo em hemorragia relevante. O útero gravídico pode comprimir grandes vasos na posição supina, agravando retorno venoso; a equipe obstétrica deve integrar abordagem e cuidado fetal quando viável. A primeira prioridade é restaurar perfusão materna e controlar fonte, porque a circulação fetal depende dela."
+        ],
+        [
+          "p",
+          "Crianças têm metabolismo e frequências cardíacas basais diferentes dos adultos. Elas podem manter pressão sistólica até fase avançada de perda sanguínea; hipotensão pediátrica é achado grave. A abordagem é guiada por parâmetros específicos para idade e peso, com hemocomponentes dimensionados e atenção ao risco de hipoglicemia e hipotermia. Não usar metas hemodinâmicas e volumes de adultos sem adaptação."
+        ],
+        [
+          "p",
+          "Em hemorragia obstétrica, atonia, restos placentários, trauma do trato genital e coagulopatia são eixos etiológicos. Uterotônicos, manobras e procedimentos obstétricos são parte indispensável de controle da fonte, além de hemoterapia. Tranexâmico possui indicações e janela de tempo próprias na hemorragia pós-parto; não transferir a dose e a justificativa do trauma sem consultar protocolo obstétrico."
+        ],
+        [
+          "p",
+          "Em sangramento digestivo por varizes esofágicas, a hemostasia pode exigir endoscopia terapêutica, drogas vasoativas específicas e manejo de hepatopatia. Ressuscitação agressiva sem considerar pressões portais e risco de ressangramento é inadequada. A visão integradora é que a fisiologia do choque une casos, mas cada etiologia acrescenta medidas definitivas intransferíveis."
+        ],
+        [
+          "3",
+          "Anticoagulantes e riscos perioperatórios"
+        ],
+        [
+          "p",
+          "Entre anticoagulantes orais, varfarina demanda interpretação de INR; dabigatrana e inibidores do fator Xa têm comportamento de laboratório e reversão diferentes. Horário da última dose, função renal, interações e dose habitual alteram persistência do efeito. Não tratar testes de rotina normais como garantia universal de ausência de anticoagulação com DOAC. Consultar serviço de hemoterapia e hematologia em hemorragia ameaçadora pode acelerar reversão apropriada."
+        ],
+        [
+          "p",
+          "Antiagregantes plaquetários aumentam risco de sangramento em certos contextos, mas não possuem o mesmo mecanismo dos anticoagulantes. Uma pessoa com stent recente também tem risco de trombose caso a medicação seja interrompida, e isso torna decisões de reinício posteriores delicadas. Na emergência hemorrágica, salvar a vida e controlar fonte são prioritários; a transição de longo prazo envolve especialidades pertinentes."
+        ],
+        [
+          "p",
+          "Em cirrose, o INR elevado reflete redução de fatores pró e anticoagulantes, e não corresponde isoladamente ao risco hemorrágico como o INR na varfarina. A interpretação de sangramento exige exame clínico, plaquetas, fibrinogênio e fonte. Transfundir plasma apenas para normalizar INR de hepatopata sem indicação clara pode provocar sobrecarga e elevar pressão portal."
+        ],
+        [
+          "p",
+          "Pacientes com crenças ou decisões explícitas sobre transfusão precisam de comunicação respeitosa e registro de alternativas terapêuticas possíveis, considerando capacidade decisória e legislação aplicável. O planejamento antecipado de conservação de sangue e hemostasia torna-se ainda mais importante. Em situação crítica, equipe deve agir conforme normas legais, éticas e vontade válida documentada do paciente."
+        ]
+      ]
+    ],
+    [
+      "algoritmo",
+      0,
+      [
+        [
+          "2",
+          "12. Algoritmo mental de decisão"
+        ],
+        [
+          "p",
+          "Passo A: identificar ameaça imediata e chamar ajuda; proteger via aérea e ventilação sem atrasar controle de hemorragia maciça. Passo B: localizar o sangramento provável por história, exame repetido, mecanismo e ultrassom quando útil. Passo C: obter acesso vascular, tipagem e exames, aquecer e iniciar protocolo transfusional se a perda for grave."
+        ],
+        [
+          "p",
+          "Passo D: em instabilidade persistente, priorizar hemostasia operatória ou endovascular conforme fonte e recursos; não permitir que imagem prolongada substitua decisão clínica. Passo E: após controle, guiar hemocomponentes e correção de fibrinogênio/cálcio por dados dinâmicos, monitorar lactato, diurese e sinais de sangramento continuado. Passo F: investigar complicações e evitar reinício inadequado de fármacos antitrombóticos."
+        ],
+        [
+          "p",
+          "Erros de prova: esperar hipotensão para agir, usar hemoglobina inicial para excluir choque, interpretar FAST negativo como ausência de sangue, infundir litros de cristaloide sem sangue, esquecer cálcio e temperatura, aplicar hipotensão permissiva a TCE grave e manter transfusão maciça após hemostasia sem reavaliar."
+        ],
+        [
+          "3",
+          "Fluxograma textual de decisão integrada"
+        ],
+        [
+          "o",
+          [
+            "1. Reconhecer hemorragia ameaçadora: perfusão, contexto anatômico, sinais vitais em tendência e necessidade de ação imediata.",
+            "2. Ativar equipe, realizar compressão/torniquete quando indicado, proteger via aérea/ventilação e iniciar aquecimento.",
+            "3. Obter acesso e coletar exames em paralelo, acionar hemoterapia sem esperar anemia comprovada se há exsanguinação.",
+            "4. Priorizar controle de fonte: operação ou embolização segundo fisiologia e localização; exames que atrasam hemostasia são reavaliados.",
+            "5. Empregar ressuscitação hemostática e terapia dirigida por fibrinogênio, plaquetas, coagulograma/viscoelasticidade e cálcio.",
+            "6. Monitorar resposta e procurar sangramento oculto; individualizar pressão em TCE grave, idosos, gestantes e crianças.",
+            "7. Após hemostasia, desativar protocolo maciço, registrar transição e prevenir complicações, incluindo tromboembolismo quando seguro."
+          ]
+        ],
+        [
+          "3",
+          "Reavaliação, transferência e segurança"
+        ],
+        [
+          "p",
+          "Na passagem para o centro cirúrgico, documentar horário de início do choque, sangue administrado, cálcio/temperatura, resultados laboratoriais seriados, torniquetes, alergias conhecidas e suspeitas de hemorragia. Um resumo preciso reduz erros quando paciente atravessa UPA, ambulância, emergência, centro cirúrgico e UTI. Identificar familiares e consentimento conforme urgência e normas assistenciais sem atrasar procedimento salvador."
+        ],
+        [
+          "p",
+          "Quando hospital não dispõe de embolização ou cirurgia especializada, reconhecer cedo a necessidade de transferência. Antes do transporte, priorizar medidas de hemostasia disponíveis, acesso, produtos apropriados, aquecimento e equipe treinada, com comunicação ao serviço receptor. Transporte não deve começar como aposta de que a pressão ficará estável: o plano deve prever deterioração e tempo para atendimento definitivo."
+        ],
+        [
+          "p",
+          "Após controle da hemorragia, a transição para cuidado intensivo exige metas de perfusão e vigilância de sangramento secundário. Reavaliar necessidade de ventilação, diurese, função renal, lactato, coagulação, temperatura, troponina conforme contexto e possíveis complicações isquêmicas. Transfusões realizadas passam a integrar histórico de exposição, relevante para reações tardias e planejamento de novas cirurgias."
+        ],
+        [
+          "p",
+          "Quando perfil passa de hipoperfusão para estabilidade, reduzir intervenções desnecessárias é parte do tratamento. Suspender protocolo de transfusão maciça após indicação cessar evita exposição sem benefício, e retomar nutrição, mobilização e profilaxia tromboembólica no tempo apropriado limita complicações. Uma equipe que só se concentra na primeira hora perde oportunidades de prevenção."
+        ],
+        [
+          "p",
+          "Em revisão de prontuário ou discussão de caso, perguntar se havia evidência precoce de choque ignorada, se a busca de fonte foi atrasada, se foram administrados fluidos em excesso, se a equipe monitorou cálcio/temperatura, e se o transporte até hemostasia foi eficiente. Essas perguntas transformam eventos críticos em melhoria de processo sem depender de lembrar apenas uma lista de doses."
+        ],
+        [
+          "3",
+          "Perguntas para verificar autossuficiência do tema"
+        ],
+        [
+          "p",
+          "Quando o estudante encontra pressão normal em trauma, deve explicar por que a oferta de oxigênio pode estar inadequada. A resposta exige compreender vasoconstrição compensatória, massa circulante, conteúdo arterial de oxigênio e limites da hemoglobina inicial. Se o material ensinar apenas que 'choque é hipotensão', a questão não estará resolvida. O raciocínio etiológico antecede qualquer escolha de produto sanguíneo."
+        ],
+        [
+          "p",
+          "Para decidir entre tomografia e operação, o estudante deve integrar estabilidade, foco provável, resposta à ressuscitação, capacidade do serviço e risco de transporte. A resposta correta não depende de memorizar que 'FAST positivo opera' e 'FAST negativo observa'. Paciente com pelve instável e FAST negativo ainda pode estar em hemorragia grave. A revisão de hipótese deve acompanhar resultados."
+        ],
+        [
+          "p",
+          "Para escolher hemocomponentes, a explicação deve distinguir capacidade de transporte de oxigênio de formação de coágulo, ilustrando papéis de hemácias, plasma, plaquetas e fibrinogênio. Também deve explicar temperatura e cálcio, porque uma transfusão de hemácias em massa não corrige automaticamente defeitos de coagulação. É raciocínio fisiopatológico, não simples lista de bolsas."
+        ],
+        [
+          "p",
+          "Para reconhecer situações especiais, é preciso compreender por que hipotensão permissiva não deve ser extrapolada ao TCE grave, por que gestantes podem compensar durante mais tempo e por que idosos sob betabloqueador podem não apresentar taquicardia. A aplicação exige adaptar evidência e não transformar recomendações em protocolos cegos."
+        ],
+        [
+          "p",
+          "Para encerrar o cuidado, o aluno deve saber reconhecer necessidade de reabordagem, complicações transfusionais, lesão renal e momento de profilaxia trombótica. Uma sequência que termina quando a pressão melhora não descreve tratamento completo. O acompanhamento faz parte do mesmo ciclo de controle da fonte, restauração de perfusão e prevenção de sequelas."
+        ],
+        [
+          "3",
+          "Comunicação de equipe e critérios de escalonamento"
+        ],
+        [
+          "p",
+          "Um protocolo de hemorragia maciça é mais que a distribuição rápida de bolsas de sangue: organiza responsabilidades, entrega, rastreabilidade, checagem de compatibilidade, monitorização e comunicação entre emergência, hemoterapia, anestesia e cirurgia. O líder deve atualizar periodicamente a estimativa de sangramento ativo, resposta à ressuscitação, necessidade de controle anatômico e disponibilidade de recursos. Caso múltiplas equipes prescrevam separadamente, pode haver duplicação de componentes e atraso em concentrados hemostáticos."
+        ],
+        [
+          "p",
+          "Entre os gatilhos para escalonamento estão hipotensão persistente, necessidade transfusional crescente, confusão ou oligúria progressiva, lactato ascendente, sangramento não controlado e sinais de lesão vascular. A decisão de ativar protocolo não exige aguardar número retrospectivo de bolsas. Inversamente, após hemostasia e normalização da trajetória clínica, é necessário comunicar a desativação formal, retornar à prescrição dirigida por exames e reavaliar indicações de profilaxia trombótica."
+        ],
+        [
+          "p",
+          "Na transferência de cuidado para UTI, convém informar mecanismo e hora do trauma, achados anatômicos, procedimentos realizados, produtos utilizados, exames de coagulação e cálcio, torniquetes, focos ainda suspeitos e reoperação planejada. Um paciente aparentemente estável pode apresentar ressangramento ou síndrome compartimental nas horas subsequentes. O registro de tendências é mais informativo que uma lista de sinais vitais sem cronologia."
+        ],
+        [
+          "p",
+          "O caso de hemorragia persistente apesar de concentrados de hemácias obriga a equipe a explicar o problema a partir de três eixos: a fonte sangra? o coágulo é capaz de se formar? o organismo recebe perfusão suficiente? Cada eixo corresponde a intervenções diferentes e complementares. Reduzir o problema a uma dose fixa de cristalóide, transfusão ou vasopressor ignora sua complexidade e potencialmente aumenta complicações."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "Casos clínicos integradores"
+        ],
+        [
+          "3",
+          "Caso clínico 1"
+        ],
+        [
+          "p",
+          "Homem de 23 anos após colisão, PA 118/72, FC 130, pele fria, enchimento capilar de 5 s, fratura de fêmur e abdome doloroso. Hemoglobina 13,5 g/dL."
+        ],
+        [
+          "p",
+          "Resolução comentada: Choque compensado é plausível apesar de pressão e hemoglobina aparentemente aceitáveis. Avaliar hemorragia em abdome, pelve e extremidade; eFAST e abordagem simultânea, dois acessos, tipagem e ressuscitação hemostática conforme sinais clínicos. Não aguardar queda de Hb."
+        ],
+        [
+          "3",
+          "Caso clínico 2"
+        ],
+        [
+          "p",
+          "Mulher de 46 anos com esmagamento pélvico, PA 76/40, confusa, eFAST sem líquido livre. Hematoma perineal e pelve dolorosa."
+        ],
+        [
+          "p",
+          "Resolução comentada: FAST negativo não exclui hemorragia retroperitoneal pélvica. Aplicar estabilizador sobre trocânteres, ativar protocolo de hemorragia, aquecer, transfundir e obter controle imediato por equipe cirúrgica/intervencionista, conforme disponibilidade."
+        ],
+        [
+          "3",
+          "Caso clínico 3"
+        ],
+        [
+          "p",
+          "Motociclista politraumatizado com TCE grave, sangramento abdominal e PAS 82 mmHg. Alguém sugere manter hipotensão permissiva enquanto aguarda tomografia."
+        ],
+        [
+          "p",
+          "Resolução comentada: A meta baixa de pressão não é apropriada automaticamente em lesão cerebral grave: perfusão cerebral precisa ser preservada. Solicitar controle hemorrágico urgente e ressuscitação dirigida, considerando avaliação neurológica concomitante."
+        ],
+        [
+          "3",
+          "Caso clínico 4"
+        ],
+        [
+          "p",
+          "Após protocolo transfusional maciço, doente mantém sangramento difuso, 34,2°C, cálcio ionizado reduzido e fibrinogênio baixo."
+        ],
+        [
+          "p",
+          "Resolução comentada: Coagulopatia multifatorial: aquecer, corrigir cálcio, repor componentes hemostáticos conforme testes/laboratório e procurar hemorragia anatômica residual. Repetir só concentrado de hemácias sem corrigir déficits é insuficiente."
+        ],
+        [
+          "3",
+          "Caso clínico 5"
+        ],
+        [
+          "p",
+          "Paciente de 69 anos em betabloqueador, pós-operatório de grande cirurgia, apresenta oligúria e confusão sem taquicardia, com dreno sanguinolento crescente."
+        ],
+        [
+          "p",
+          "Resolução comentada: Resposta cronotrópica pode estar mascarada. Buscar sangramento pós-operatório e perfusão inadequada; avaliação pela equipe cirúrgica não deve aguardar choque clássico."
+        ],
+        [
+          "3",
+          "Caso clínico 6 — Trauma penetrante com resposta transitória"
+        ],
+        [
+          "p",
+          "Paciente adulto é admitido após ferida por projétil no flanco. Recebe produtos sanguíneos e recupera pressão, mas após poucos minutos a perfusão periférica piora e a necessidade de hemácias aumenta. A primeira tomografia ainda não foi feita."
+        ],
+        [
+          "p",
+          "Discussão: a resposta transitória sugere sangramento ativo. Exame repetido eFAST, busca anatômica e mobilização imediata da equipe capaz de controle de fonte têm prioridade. A decisão sobre tomografia depende de estabilidade real e logística; não aguardar múltiplos ciclos de transfusão apenas para confirmar hipótese que requer intervenção."
+        ],
+        [
+          "3",
+          "Caso clínico 7 — Criança com choque ainda normotenso"
+        ],
+        [
+          "p",
+          "Criança de seis anos após atropelamento permanece normotensa para idade, mas apresenta taquicardia crescente, extremidades frias, sonolência e abdome doloroso. Familiares relatam uso prévio de nenhum fármaco."
+        ],
+        [
+          "p",
+          "Discussão: pressão normal não exclui hipovolemia grave em pediatria. É necessário ressuscitação e avaliação de hemorragia com metas pediátricas, equipe experiente e controle anatômico conforme evolução. Não utilizar algoritmos e volumes de adulto indiscriminadamente."
+        ]
+      ]
+    ],
+    [
+      "questoes",
+      0,
+      [
+        [
+          "2",
+          "Questões originais comentadas"
+        ],
+        [
+          "3",
+          "Questão 1"
+        ],
+        [
+          "p",
+          "Trauma com pulso rápido, extremidades frias e PA normal. A) estável sem risco B) choque compensado possível C) transfusão proibida D) FAST sempre detecta perda. "
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: B. Vasoconstrição mantém PA até fases tardias; demais alternativas negam limitações fisiológicas."
+        ],
+        [
+          "3",
+          "Questão 2"
+        ],
+        [
+          "p",
+          "Maior erro de interpretar hemoglobina imediatamente após hemorragia: A) pode estar normal B) determina classe exata C) cai necessariamente em minutos D) dispensa exame seriado."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: A. Na fase precoce, concentração pode não refletir perda total por falta de hemodiluição; B/C/D não procedem."
+        ],
+        [
+          "3",
+          "Questão 3"
+        ],
+        [
+          "p",
+          "eFAST negativo em paciente com fratura pélvica e choque significa: A) não há hemorragia B) sangramento é retroperitoneal impossível C) ainda pode haver hemorragia pélvica D) tomografia obrigatória antes de tratar."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: C. FAST tem limitações anatômicas; instabilidade exige intervenção sem atrasos."
+        ],
+        [
+          "3",
+          "Questão 4"
+        ],
+        [
+          "p",
+          "O que completa protocolo de hemorragia grave? A) litros de salina isolados B) apenas hemácias C) componentes hemostáticos, temperatura, cálcio e hemostasia D) vasopressor isolado."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: C. Ressuscitação fisiológica e controle da fonte são complementares, não substitutos."
+        ],
+        [
+          "3",
+          "Questão 5"
+        ],
+        [
+          "p",
+          "Qual paciente exige cautela especial com metas pressóricas permissivamente baixas? A) TCE grave B) adulto sem comorbidades e sem lesão cerebral C) trauma periférico com sangue controlado D) todos igual."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: A. A perfusão cerebral pode ser comprometida por hipotensão, exigindo metas individuais."
+        ],
+        [
+          "3",
+          "Questão 6"
+        ],
+        [
+          "p",
+          "Sangramento persistente com fibrinogênio baixo pede: A) ignorar laboratórios B) avaliar reposição específica junto ao controle de fonte C) cancelar monitorização D) anticoagular empiricamente."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: B. Hipofibrinogenemia reduz formação de coágulos; controle dirigido é necessário."
+        ],
+        [
+          "3",
+          "Questão 7"
+        ],
+        [
+          "p",
+          "Ácido tranexâmico em trauma: A) usar independentemente do tempo B) maior benefício com início precoce dentro da janela indicada C) é substituto da cirurgia D) serve a todo paciente sem sangramento."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: B. A escolha respeita risco e tempo; não substitui controle da fonte."
+        ],
+        [
+          "3",
+          "Questão 8"
+        ],
+        [
+          "p",
+          "Quais dados devem ser seriados após a intervenção? A) apenas Hb B) perfusão, diurese, lactato, coagulação e cálcio C) somente pressão D) apenas imagem inicial."
+        ],
+        [
+          "p",
+          "Gabarito e raciocínio: B. Reavaliação de múltiplos domínios detecta hipoperfusão residual e complicações."
+        ],
+        [
+          "3",
+          "Questão 9"
+        ],
+        [
+          "p",
+          "Após hemostasia, paciente continua com lactato elevado apesar de pressão normal. O correto é: A) encerrar vigilância B) integrar tendência, débito urinário, exame e causas adicionais de hipoperfusão C) transfundir indefinidamente D) ignorar cálcio."
+        ],
+        [
+          "p",
+          "Gabarito B. Pressão arterial é apenas uma expressão macrocirculatória; lactato, perfusão e disfunção orgânica precisam ser reavaliados no contexto temporal."
+        ],
+        [
+          "3",
+          "Questão 10"
+        ],
+        [
+          "p",
+          "Sangramento ativo com fibrinogênio baixo e plaquetas preservadas exige pensar em: A) avaliação de reposição de fibrinogênio B) somente hemácias C) só antibiótico D) nenhum controle de fonte."
+        ],
+        [
+          "p",
+          "Gabarito A. O déficit de fibrinogênio compromete a formação de fibrina; terapia guiada por testes e hemostasia devem caminhar juntas."
+        ],
+        [
+          "3",
+          "Questão 11"
+        ],
+        [
+          "p",
+          "A decisão sobre tomografia no trauma hemorrágico deve se basear em: A) local de ferimento apenas B) necessidade de registro visual C) estabilidade sustentada, provável fonte e capacidade de intervenção D) hemoglobina isolada."
+        ],
+        [
+          "p",
+          "Gabarito C. Imagem é ferramenta para intervenção, não requisito anterior a qualquer hemostasia urgente."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências e status editorial"
+        ],
+        [
+          "p",
+          "Rossaint R et al. European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. https://doi.org/10.1186/s13054-023-04327-7 ."
+        ],
+        [
+          "p",
+          "American College of Surgeons, ATLS: princípios de avaliação primária e manejo de trauma; consultar edição vigente e protocolos locais da instituição."
+        ],
+        [
+          "p",
+          "Este tema complementa, mas não reproduz, LURIA 'Cuidados perioperatórios' e 'Reposição volêmica no paciente cirúrgico'. Limites de atuação e doses exigem checagem clínica antes da publicação."
+        ],
+        [
+          "p",
+          "Benchmark consultado no Drive em 17/10/2026: '02 - CHOQUE - TIPOS DE CHOQUE.pdf' (material de Medicina Livre; não atribuído ao Estratégia MED). Analisados esquema de tipos, marcadores hemodinâmicos e exames. Lacunas identificadas para o tema: ressuscitação hemostática, controle de fonte, hemorragia pélvica, contraindicações da hipotensão permissiva e terapia por viscoelasticidade. Texto e casos novos autorais; nenhuma imagem reproduzida."
+        ],
+        [
+          "p",
+          "STATUS EDITORIAL: RASCUNHO AUTORAL EM REVISÃO. Não certificado para publicação; requer completar ≥60.000 caracteres didáticos úteis, revisão médica independente, comparação com questões representativas, curadoria de imagens via Admin e inspeção no renderer desktop/PWA. Não é um protocolo assistencial nem substitui protocolos locais."
+        ],
+        [
+          "p",
+          "Holcomb JB et al. Transfusion of plasma, platelets, and red blood cells in a 1:1:1 vs a 1:1:2 ratio and mortality in patients with severe trauma: the PROPPR randomized clinical trial. JAMA. 2015;313:471–482. https://doi.org/10.1001/jama.2015.12 . Referência para discussão crítica de ressuscitação hemostática; não substitui diretriz vigente."
+        ]
+      ]
+    ]
+  ]
+}

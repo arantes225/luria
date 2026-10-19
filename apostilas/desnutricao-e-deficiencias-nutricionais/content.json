@@ -1,1 +1,979 @@
-{"v":2,"s":"desnutricao-e-deficiencias-nutricionais","t":"Desnutrição e Deficiências Nutricionais","p":"Tratado completo de Desnutrição Energético-Proteica e Deficiências de Micronutrientes na Infância: fisiopatologia da desnutrição primária e secundária; classificação antropométrica de Gómez, critérios de Waterlow (emagrecimento vs nanismo) e curvas de escore-Z da OMS 2006/SISVAN; formas clínicas graves de Marasmo e Kwashiorkor (fisiopatologia da esteatose hepática, edema e dermatose); os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS/SBP) detalhados fase a fase (estabilização, transição e reabilitação); contraindicação formal de hidratação venosa rápida e uso de ReSoMal; proibição estrita de ferro na fase inicial; fisiopatologia e prevenção da Síndrome de Realimentação; carências específicas de Vitamina A (xeroftalmia, manchas de Bitot, ceratomalácia), Vitamina D (raquitismo carencial), Zinco (acrodermatite enteropática), Ferro, Folato, Vitamina C e Niacina; casos clínicos com raciocínio e questões de residência médica comentadas.","o":[["fisiopatologia-desnutricao-primaria-secundaria","1. Fisiopatologia da Desnutrição Energético-Proteica Primária e Secundária"],["classificacoes-antropometricas-gomez-waterlow-oms","2. Classificação Antropométrica: Critérios de Gómez, Waterlow e Padrões da OMS 2006"],["formas-clinicas-graves-marasmo-vs-kwashiorkor","3. Formas Clínicas Graves: Marasmo vs Kwashiorkor e Fisiopatologia do Edema"],["manejo-hospitalar-10-passos-oms-sbp","4. Os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS / SBP)"],["sindrome-de-realimentacao-refeeding","5. Síndrome de Realimentação (Refeeding Syndrome): Fisiopatologia e Prevenção"],["deficiencias-especificas-micronutrientes","6. Deficiências Específicas de Micronutrientes: Vitaminas A, D, C, B1, Niacina, Zinco e Ferro"],["casos-clinicos-desnutricao-pediatria","7. Casos Clínicos Pediátricos Estruturados e Discussão Passo a Passo"],["questoes-comentadas-residencia","8. Questões Comentadas no Padrão ENAMED e Principais Bancas de Concurso"],["algoritmos-e-fluxogramas-praticos","9. Algoritmos e Fluxogramas Decisórios na Prática Hospitalar"],["pontos-chave-enamed-desnutricao","10. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais"],["referencias","Referências"]],"h":["Apostila LURIA","Desnutrição e Deficiências Nutricionais","Tratado completo de Desnutrição Energético-Proteica e Deficiências de Micronutrientes na Infância: fisiopatologia da desnutrição primária e secundária; classificação antropométrica de Gómez, critérios de Waterlow (emagrecimento vs nanismo) e curvas de escore-Z da OMS 2006/SISVAN; formas clínicas graves de Marasmo e Kwashiorkor (fisiopatologia da esteatose hepática, edema e dermatose); os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS/SBP) detalhados fase a fase (estabilização, transição e reabilitação); contraindicação formal de hidratação venosa rápida e uso de ReSoMal; proibição estrita de ferro na fase inicial; fisiopatologia e prevenção da Síndrome de Realimentação; carências específicas de Vitamina A (xeroftalmia, manchas de Bitot, ceratomalácia), Vitamina D (raquitismo carencial), Zinco (acrodermatite enteropática), Ferro, Folato, Vitamina C e Niacina; casos clínicos com raciocínio e questões de residência médica comentadas.",["Área: Pediatria","Matéria: Nutrologia Pediátrica","Tema: Desnutrição e Deficiências Nutricionais"],"apostila-identity"],"q":[["fisiopatologia-desnutricao-primaria-secundaria",0,[["2","1. Fisiopatologia da Desnutrição Energético-Proteica Primária e Secundária"],["3","Conceito e Epidemiologia da Desnutrição Infantil"],["p","A Desnutrição Energético-Proteica (DEP) na infância é uma afecção patológica sistêmica de gravidade variável e etiologia multifatorial, caracterizada pela depleção celular de nutrientes essenciais necessária à manutenção do metabolismo basal, crescimento linear e maturação neuropsicomotora. Representa historicamente uma das maiores causas isoladas e associadas de morbimortalidade infantil global, potencializando infecções respiratórias, sepse e doenças diarreicas agudas."],["3","Desnutrição Primária vs Desnutrição Secundária"],["p","Do ponto de vista etiológico e fisiopatológico, a DEP classifica-se em duas categorias fundamentais:"],["t",["Eixo de Comparação","Desnutrição Primária (Carencial / Exógena)","Desnutrição Secundária (Orgânica / Endógena)"],[["<strong>Causa Primordial</strong>","<strong>Aporte alimentar quantitativa ou qualitativamente insuficiente.</strong> Determinada por vulnerabilidade social, extrema pobreza, insegurança alimentar, desmame precoce inadvertido, diluição incorreta de fórmulas lácteas (\"mamadeiras ralas\" excessivamente diluídas em água) e carência de acesso à água tratada.","<strong>Doença clínica ou cirúrgica de base</strong> que interfere nos processos de ingestão, digestão, absorção intestinal, transporte celular, utilização metabólica ou excreção de nutrientes, independentemente da disponibilidade externa de alimentos."],["<strong>Mecanismos Patogênicos Centrais</strong>","Adaptação metabólica hipometabólica crônica à privação exógena de calorias e proteínas, com preservação inicial das vias enzimáticas funcionais até fases descompensadas.","• Redução da ingestão oral por disfagia, dor ou anorexia inflamatória (câncer, paralisia cerebral, estomatites);<br>• Má absorção intestinal (Doença Celíaca, Doença Inflamatória Intestinal, Síndrome do Intestino Curto);<br>• Má digestão por insuficiência pancreática exócrina (Fibrose Cística);<br>• Aumento do gasto energético de repouso e hipermetabolismo inflamatório (Cardiopatias congênitas descompensadas, Sepse crônica, Infecções por HIV e Tuberculose disseminada, Queimaduras extensas);<br>• Perda excessiva de nutrientes (Enteropatia perdedora de proteínas, Síndrome Nefrótica com proteinúria maciça, Doença Renal Crônica dialítica)."],["<strong>População Típica</strong>","Lactentes e pré-escolares de bolsões de vulnerabilidade socioeconômica e áreas de extrema privação.","Crianças acompanhadas em hospitais pediátricos terciários portadoras de condições crônicas complexas de saúde."]],"book-table"],["3","A Resposta Metabólica Integrada à Inanição (Inanição Crônica Adaptativa)"],["p","Diante da redução crônica da disponibilidade de substratos energéticos exógenos, o organismo do lactente deflagra uma cascata de respostas neuroendócrinas e moleculares coordenadas para garantir a sobrevivência dos órgãos vitais nobres (cérebro e miocárdio) às custas do sacrifício do crescimento e da massa celular periférica:"],["o",["<strong>Fase Imediata e Queda da Insulina:</strong> A hipoglicemia relativa inibe a secreção de insulina pelas células beta pancreáticas e estimula a liberação de glucagon, catecolaminas e glicocorticoides (cortisol). A queda do tônus insulínico desacelera a lipogênese e interrompe o crescimento celular mediado pela via mTOR e IGF-1 hepático;","<strong>Glicogenólise e Gliconeogênese:</strong> As reservas hepáticas de glicogênio esgotam-se em menos de 12 a 24 horas no lactente jovem (cujas reservas glicogênicas são exíguas). O fígado passa a sintetizar glicose a partir de aminoácidos glicogênicos (alanina e glutamina) mobilizados pela proteólise da musculatura esquelética;","<strong>Lipólise e Cetogênese:</strong> Sob estímulo de adrenalina e cortisol, a lipase hormônio-sensível dos adipócitos hidrolisa os triglicerídeos, liberando ácidos graxos livres e glicerol na circulação. Os ácidos graxos são oxidados no fígado através da beta-oxidação mitocondrial, gerando corpos cetônicos (acetoacetato e beta-hidroxibutirato), que passam a ser utilizados pelo sistema nervoso central como substrato energético alternativo à glicose, poupando a destruição proteica muscular;","<strong>Hipometabolismo Basal (Redução da Taxa Metabólica de Repouso):</strong> Ocorre diminuição da conversão periférica da tiroxina (T4) em tri-iodotironina ativa (T3), com predomínio de T3-reverso (inativo). Essa \"síndrome do eutireóideo doente\" reduz a atividade das bombas de sódio-potássio ATPase nas membranas celulares, diminuindo o consumo de oxigênio em até 30% a 50%, gerando hipotermia e bradicardia fisiológica de economia;","<strong>Comprometimento Imunológico Secundário (Imunodeficiência Nutricional):</strong> A atrofia do timo, baço e placas de Peyer intestinais reduz drasticamente a proliferação de linfócitos T CD4+, provoca anergia cutânea celular, atrofia das vilosidades intestinais com quebra da barreira física mucosal e redução da produção de IgA secretora e proteínas do sistema complemento, tornando o desnutrido presa fácil de infecções graves invasivas por bactérias Gram-negativas entéricas (<em>Escherichia coli</em>, <em>Klebsiella</em>, <em>Salmonella</em>)."]]]],["classificacoes-antropometricas-gomez-waterlow-oms",0,[["2","2. Classificação Antropométrica: Critérios de Gómez, Waterlow e Padrões da OMS 2006"],["3","Evolução Histórica da Avaliação Nutricional"],["p","A determinação precisa do estado nutricional da criança fundamenta-se na comparação das medidas físicas individuais com padrões populacionais de referência. Três modelos conceituais dominam a literatura médica e as provas de concursos:"],["3","1. Classificação de Federico Gómez (1956)"],["p","<strong>Adequação do P/I (%) = (Peso Real da Criança / Peso Ideal no P50 para Idade e Sexo) &times; 100</strong>"],["t",["Classificação de Gómez","Porcentagem de Adequação do Peso/Idade","Significado Clínico e Conduta"],[["<strong>Eutrofia (Normal)</strong>","&gt; 90%","Criança sem deficit ponderal para a idade."],["<strong>Desnutrição de Grau I (Leve)</strong>","76% a 90% (deficit de 10% a 24%)","Alerta de risco nutricional; exige revisão dietética na Atenção Primária."],["<strong>Desnutrição de Grau II (Moderada)</strong>","61% a 75% (deficit de 25% a 39%)","Comprometimento ponderal significativo; intervenção ambulatorial imediata."],["<strong>Desnutrição de Grau III (Grave)</strong>","&le; 60% (deficit &ge; 40%) <strong>OU Presença de Edema Nutricional Bilateral</strong>","<strong>Atenção para Provas:</strong> Toda criança com <em>edema nutricional (Kwashiorkor) é automaticamente classificada como Grau III de Gómez</em>, independentemente de seu peso aparente (pois o edema mascareia o deficit tecidual real!)."]],"book-table"],["p","<em>Crítica Metodológica a Gómez:</em> O índice P/I não diferencia se o baixo peso decorre de um emagrecimento agudo recente (perda de massa magra e gordura) ou de uma baixa estatura crônica prévia (criança de baixa estatura proporcionalmente magra)."],["3","2. Classificação de John Waterlow (1977)"],["p","<strong>Adequação do P/E (%) = (Peso Real da Criança / Peso Esperado no P50 para Estatura Real) &times; 100</strong>"],["p","<strong>Adequação da E/I (%) = (Estatura Real da Criança / Estatura no P50 para Idade e Sexo) &times; 100</strong>"],["t",["Classificação de Waterlow","Peso/Estatura (P/E)<br>(Ponto de corte: 90%)","Estatura/Idade (E/I)<br>(Ponto de corte: 95%)","Denominação Clínica e Mecanismo Temporal"],[["<strong>Eutrófico (Normal)</strong>","<strong>&gt; 90%</strong>","<strong>&gt; 95%</strong>","Criança sem emagrecimento agudo e sem deficit estatural crônico."],["<strong>Desnutrido Agudo (Wasted / Magro)</strong>","<strong>&le; 90%</strong> (Emagrecido)","<strong>&gt; 95%</strong> (Estatura Normal)","Processo <strong>agudo e recente</strong> de privação alimentar ou doença consumptiva (ex: diarreia aguda prolongada). A criança perdeu peso rapidamente, mas não houve tempo biológico suficiente para comprometer o crescimento ósseo linear."],["<strong>Desnutrido Crônico (Stunted / Nanico / Pretérito)</strong>","<strong>&gt; 90%</strong> (Peso Proporcional)","<strong>&le; 95%</strong> (Baixa Estatura)","Processo de <strong>inanição crônica de longa duração no passado</strong>. A criança desacelerou seu ritmo de crescimento para se adaptar à privação energética contínua; no momento da consulta, ela possui peso proporcional à sua baixa estatura (\"pequena, mas proporcional\"), sem emagrecimento agudo ativo."],["<strong>Desnutrido Crônico Agudizado (Wasted and Stunted)</strong>","<strong>&le; 90%</strong> (Emagrecido)","<strong>&le; 95%</strong> (Baixa Estatura)","A pior situação clínica: uma criança que já apresentava <strong>comprometimento crônico linear prévio e que sofreu uma nova agressão aguda recente</strong> que levou à perda ponderal adicional."]],"book-table"],["3","3. Critérios Modernos das Curvas de Escore-Z da OMS 2006 (Adotados pelo SISVAN / Ministério da Saúde)"],["p","O Escore-Z (desvio-padrão em relação à mediana populacional de referência) padroniza internacionalmente a avaliação nutricional por faixas etárias estritas:"],["t",["Índice Antropométrico da OMS","Escore-Z &lt; -3 DP","Escore-Z entre -3 e &lt; -2 DP","Escore-Z entre -2 e +1 DP","Escore-Z &gt; +1 a +2 DP","Escore-Z &gt; +2 DP"],[["<strong>Peso para Idade (P/I)</strong><br>(&lt; 10 anos)","Muito baixo peso para a idade","Baixo peso para a idade","Peso adequado para a idade (Eutrofia)","Peso elevado para a idade","Peso elevado para a idade"],["<strong>Estatura para Idade (E/I)</strong><br>(todas as idades)","Muito baixa estatura para a idade","Baixa estatura para a idade","Estatura adequada para a idade","-","Estatura elevada"],["<strong>Peso para Estatura (P/E)</strong><br>(&lt; 5 anos)","<strong>Magreza Acentuada (Desnutrição Aguda Grave)</strong>","<strong>Magreza (Desnutrição Aguda Moderada)</strong>","Eutrofia","Risco de sobrepeso","Sobrepeso (&gt; +2 DP) / Obesidade (&gt; +3 DP)"],["<strong>IMC para Idade (IMC/I)</strong>","<strong>Magreza Acentuada</strong>","<strong>Magreza</strong>","Eutrofia","Risco de sobrepeso / Sobrepeso","Obesidade / Obesidade Grave"]],"book-table"],["3","Perímetro Braquial Médio (PB / MUAC): Triagem de Emergência"],["p","O <strong>Perímetro Braquial Médio (Mid-Upper Arm Circumference - MUAC)</strong> é uma fita métrica colorida padronizada aplicada no ponto médio entre o acrômio escapular e o olécrano ulnar do braço esquerdo estendido da criança entre <strong>6 e 59 meses de idade</strong>. Por sofrer pouca variação fisiológica nessa faixa etária, reflete diretamente a reserva de massa muscular e tecido adiposo subcutâneo:"],["u",["<strong>MUAC &lt; 115 mm (Faixa Vermelha):</strong> <strong>Desnutrição Aguda Grave (Severe Acute Malnutrition - SAM)</strong>. Apresenta risco relativo de óbito de 9 a 11 vezes superior ao normal. Critério diagnóstico imediato e mandatório para inclusão em programas terapêuticos de emergência;","<strong>MUAC entre 115 mm e 124 mm (Faixa Amarela):</strong> Desnutrição Aguda Moderada (MAM);","<strong>MUAC &ge; 125 mm (Faixa Verde):</strong> Estado nutricional adequado."]]]],["formas-clinicas-graves-marasmo-vs-kwashiorkor",0,[["2","3. Formas Clínicas Graves: Marasmo vs Kwashiorkor e Fisiopatologia do Edema"],["3","O Espectro da Desnutrição Grave: Marasmo vs Kwashiorkor"],["p","A Desnutrição Aguda Grave (SAM) manifesta-se sob dois fenótipos clínicos e fisiopatológicos diametralmente opostos, decorrentes do balanço diferencial entre calorias totais e aporte proteico:"],["t",["Característica Clínica e Fisiopatológica","MARASMO<br>(Desnutrição Calórica Pura / \"Forma Seca\")","KWASHIORKOR<br>(Desnutrição Proteica / \"Forma Úmida\")"],[["<strong>Etiologia Nutricional e Dieta</strong>","<strong>Deficiência global e equilibrada de calorias e proteínas.</strong> Privação alimentar extrema contínua (inanição pura por desmame precoce total sem reposição láctea em lactentes jovens &lt; 1 ano).","<strong>Deficiência proteica grave e desbalanceada na presença de ingestão calórica de carboidratos.</strong> Ocorre tipicamente após o desmame em crianças entre 1 e 4 anos de idade alimentadas exclusivamente com papas de amido, farináceos, mandioca ou tubérculos (\"a doença do primeiro filho quando nasce o segundo\")."],["<strong>Mecanismo Metabólico e Níveis de Insulina</strong>","<strong>Adaptação metabólica com hipoinsulinemia acentuada.</strong> A insulina baixa permite lipólise contínua com queima total das reservas de gordura e proteólise muscular para fornecimento de aminoácidos ao fígado, preservando a síntese hepática de albumina.","<strong>Falha de adaptação metabólica com hiperinsulinemia relativa.</strong> O consumo exclusivo de carboidratos estimula a secreção persistente de insulina, que <em>bloqueia a lipólise periférica</em>. O fígado sofre desabastecimento crítico de aminoácidos essenciais, entrando em falência de síntese de proteínas estruturais e de transporte."],["<strong>Edema Nutricional</strong>","<strong>TOTALMENTE AUSENTE.</strong> É uma forma \"seca\" de desnutrição.","<strong>OBRIGATÓRIO E MARCANTE (PATOGNOMÔNICO).</strong> Edema gravitacional bilateral simétrico com cacifo (sinal de Godet positivo), que se inicia nos pés e tornozelos, ascende para pernas e coxas e atinge a anasarca com ascite e edema periorbitário e facial (\"fácies em lua cheia\")."],["<strong>Massa Muscular e Tecido Adiposo</strong>","<strong>Consunção muscular extrema e desaparecimento total do panículo adiposo.</strong> Costelas, clavículas e fêmures visíveis sob a pele; nádegas com atrofia em \"saquinho de tabaco\"; perda da gordura malar profunda (bola de Bichat), resultando em <strong>fácies senil ou simiesca</strong> (fácies de velhinho).","Perda de massa muscular mascarada pelo edema gravitacional; tecido adiposo subcutâneo discretamente preservado em algumas regiões."],["<strong>Fígado e Esteatose Hepática</strong>","Fígado de tamanho normal ou diminuído, sem infiltração gordurosa.","<strong>HEPATOMEGALIA MACIÇA INDOLOR POR ESTEATOSE HEPÁTICA GRAVE.</strong> O fígado sintetiza triglicerídeos a partir do excesso de carboidratos da dieta, mas é incapaz de exportá-los para o sangue devido à ausência de apolipoproteínas (ApoB-100) para formação das lipoproteínas de muito baixa densidade (VLDL). O parênquima hepático torna-se amarelo-pálido e ingurgitado de gordura."],["<strong>Alterações Cutâneas e de Fâneros</strong>","Pele seca, frouxa, pregueada, sem turgor, sem lesões inflamatórias exuberantes. Cabelos ralos, mas sem descoloração marcante.","• <strong>Dermatose Pelagroide em Placas (\"Tintas Descamadas\" / \"Pele em Mosaico\"):</strong> Áreas de hiperpigmentação eritematosa que ulceram e descamam em grandes placas de bordas elevadas, deixando a derme crua exposta (lembrando tinta descascada em parede velha ou pavimentação asfáltica envernizada), principalmente em períneo, nádegas e coxas;<br>• <strong>\"Sinal da Bandeira\" no Cabelo:</strong> Faixas transversais alternadas de despigmentação avermelhada/acinzentada (períodos de privação proteica grave com deficiência de tirosina e melanina) e faixas escuras normais (períodos de melhora nutricional). Cabelos finos, desvitalizados, que caem aos tufos sem dor."],["<strong>Comportamento Psicomotor e Humor</strong>","Criança <strong>alerta, ansiosa, voraz</strong>, olha ativamente para o ambiente em busca de alimento, apetite insaciável (\"lactente famélico\").","<strong>Apatia extrema, prostração, letargia, indiferença profunda ao meio e aos estímulos afetivos, fácies de sofrimento crônico, irritabilidade ao ser tocada e ANOREXIA INTENSA</strong> (recusa veemente da alimentação)."]],"book-table"],["3","A Verdadeira Fisiopatologia do Edema no Kwashiorkor"],["p","Durante décadas, ensinou-se equivocadamente que o edema do Kwashiorkor decorria exclusivamente da queda da pressão oncótica intravascular secundária à hipoalbuminemia (Equação de Starling). Pesquisas moleculares modernas demonstraram que a gênese do edema nutricional é complexa e multifatorial:"],["o",["<strong>Estresse Oxidativo Severo e Peroxidação Lipídica:</strong> A deficiência aguda de aminoácidos sulfurados precursores (metionina e cisteína) associada à carência de cofatores enzimáticos antioxidantes (zinco, selênio, glutationa peroxidase e vitaminas C e E) desencadeia uma tempestade de radicais livres de oxigênio que peroxidam os lipídios das membranas endoteliais capilares;","<strong>Aumento da Permeabilidade Capilar Sistêmica:</strong> O dano oxidativo rompe a integridade da barreira endotelial, provocando extravasamento maciço de plasma e proteínas do compartimento vascular para o interstício;","<strong>Disfunção da Bomba de Na+/K+-ATPase e Retenção Celular de Líquidos:</strong> A falência energética celular inibe as bombas iônicas dependentes de ATP nas membranas celulares, resultando em acúmulo intracelular anormal de íons sódio e água, com tumefação e balonamento celular."]]]],["manejo-hospitalar-10-passos-oms-sbp",0,[["2","4. Os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS / SBP)"],["3","Estrutura Cronológica do Tratamento em Três Fases"],["p","O manejo da criança com Desnutrição Aguda Grave (SAM) com complicações clínicas ou anorexia deve ser realizado obrigatoriamente em regime de <strong>internação hospitalar</strong>, orientado pelo protocolo internacional em <strong>10 Passos da Organização Mundial da Saúde (OMS)</strong>, homologado pelo Ministério da Saúde e Sociedade Brasileira de Pediatria (SBP). O tratamento divide-se em três fases cronológicas e funcionais sucessivas:"],["u",["<strong>Fase 1: Estabilização (Dias 1 a 7):</strong> O objetivo NÃO É promover ganho acelerado de peso! O foco exclusivo é a sobrevivência imediata: corrigir a hipoglicemia, reverter a hipotermia, tratar a desidratação e o desequilíbrio eletrolítico com extrema cautela, tratar infecções ocultas e restabelecer a função metabólica inicial com dieta hipoproteica (Fórmula F-75). O peso pode até cair nos primeiros dias devido à regressão do edema nutricional;","<strong>Fase 2: Transição (Dias 8 a 14):</strong> A criança recupera o apetite espontâneo e o edema regride. Inicia-se a introdução progressiva de fórmulas de maior densidade calórica e proteica (F-100 ou RUTF);","<strong>Fase 3: Reabilitação e Alta (Semanas 2 a 6):</strong> Fase de crescimento compensatório acelerado (catch-up growth), com ganho ponderal vigoroso (&ge; 10 g/kg/dia), estimulação afetiva e treinamento familiar para o cuidado domiciliar."]],["t",["Passo Operacional","Fase do Manejo","Conduta Clínica Padronizada e Fármacos de Escolha","Armadilhas e Erros Fatais Proscritos"],[["<strong>1. Prevenir e Tratar a Hipoglicemia</strong>","Estabilização (Dias 1–2)","Considera-se hipoglicemia qualquer glicemia capilar <strong>&lt; 54 mg/dL (3,0 mmol/L)</strong>. Se paciente consciente: administrar imediatamente 50 mL de Soro Glicosado a 10% por via oral ou SNG, seguido da primeira oferta de F-75. Se paciente em torpor ou coma: <strong>Glicose a 10% venosa na dose de 5 mL/kg em bólus lento</strong>. Oferecer alimentação a cada 2 horas dia e noite.","Jamais usar glicose hipertônica a 50% em bólus sem diluição prévia no lactente desnutrido (risco de choque osmótico e hemorragia cerebral)."],["<strong>2. Prevenir e Tratar a Hipotermia</strong>","Estabilização (Dias 1–2)","Temperatura axilar <strong>&lt; 35,5 ºC (ou retal &lt; 36,0 ºC)</strong>. Aquecer o quarto (25 ºC a 28 ºC), colocar agasalhos e gorro de lã na criança, utilizar o <strong>Método Canguru (contato pele a pele contínuo com a mãe)</strong>, aquecedor radiante ou lâmpada de aquecimento segura. Monitorar temperatura a cada 2 horas.","<strong>NUNCA usar bolsas de água quente diretamente sobre a pele</strong> do desnutrido (risco de queimaduras térmicas extensas de terceiro grau por ausência de gordura isolante)."],["<strong>3. Prevenir e Tratar a Desidratação</strong>","Estabilização (Dias 1–2)","<strong>PROIBIÇÃO FORMAL DE HIDRATAÇÃO VENOSA RÁPIDA!</strong> Usar reidratação oral ou por SNG com solução especial de baixa osmolaridade: <strong>ReSoMal (Rehydration Solution for Malnutrition)</strong> na dose de 5 mL/kg a cada 30 minutos nas primeiras 2 horas, seguido de 5 a 10 mL/kg/hora até a hidratação completa (máximo de 10 horas).","<strong>ERRO LETAL:</strong> A hidratação venosa rápida (Planos B ou C convencionais) precipita <strong>Insuficiência Cardíaca Congestiva Aguda com Edema Pulmonar Fatal</strong> em horas, devido à atrofia miocárdica e rigidez ventricular desnutrida. A hidratação venosa é restrita exclusivamente ao paciente em <strong>choque circulatório descompensado</strong> com pulsos impalpáveis e letargia."],["<strong>4. Corrigir Distúrbios Eletrolíticos</strong>","Estabilização (Dias 1–7)","Todos os desnutridos graves possuem <strong>excesso de sódio intracelular</strong> associado a <strong>depleção maciça de potássio e magnésio corporal total</strong>. Suplementar Potássio (3 a 4 mEq/kg/dia) e Magnésio (0,4 a 0,6 mEq/kg/dia) adicionados à dieta e ao ReSoMal.","<strong>NÃO ADMINISTRAR SÓDIO ADICIONAL!</strong> O uso de soros salinos hipertônicos desencadeia retenção hídrica maciça, agrava o edema e deflagra falência miocárdica."],["<strong>5. Tratar e Prevenir Infecções</strong>","Estabilização (Dias 1–7)","A inflamação clínica é silenciosa (o desnutrido grave tem sepse grave sem febre e sem leucocitose). <strong>ANTIBIOTICOTERAPIA EMPÍRICA DE LARGO ESPECTRO É MANDATÓRIA PARA TODOS OS PACIENTES HOSPITALIZADOS:</strong><br>• Se sem complicações graves: Amoxicilina oral por 5 a 7 dias;<br>• Se com choque, letargia, hipotermia ou infecção localizada: <strong>Ampicilina venosa (50 mg/kg a cada 6h) + Gentamicina venosa (7,5 mg/kg em dose única diária)</strong> por 7 dias. Adicionar Metronidazol se suspeita de supercrescimento bacteriano intestinal ou infecção anaeróbia.","Jamais aguardar febre, hemogramas ou culturas para iniciar o antibiótico em uma criança com desnutrição aguda grave."],["<strong>6. Corrigir Deficiências de Micronutrientes</strong>","Estabilização e Reabilitação","• <strong>Vitamina A oral em Megadose:</strong> Administrada no <strong>Dia 1, Dia 2 e repetida 14 dias após</strong> (Doses: 50.000 UI para &lt; 6 meses; 100.000 UI para 6 a 12 meses; 200.000 UI para &gt; 12 meses);<br>• <strong>Ácido Fólico:</strong> 5 mg por via oral no Dia 1, seguido de 1 mg/dia contínuo;<br>• <strong>Zinco (2 mg/kg/dia)</strong> e <strong>Cobre (0,3 mg/kg/dia)</strong> misturados aos alimentos.","A megadose de Vitamina A deve ser realizada em todos os desnutridos graves internados, mesmo na ausência de lesões oculares aparentes, para restaurar a barreira mucosa e a imunidade celular."],["<strong>7. REGRA DE OURO: ATRASAR A INTRODUÇÃO DO FERRO!</strong>","<strong>PROIBIDO na Fase 1!</strong> Iniciar somente na Fase de Reabilitação (a partir da 2ª semana).","O sulfato ferroso (3 mg/kg/dia de ferro elementar) deve ser iniciado <strong>APENAS quando a criança estiver clinicamente estável, afebril, com infecções controladas, edema reabsorvido e ganhando peso ativamente na Fase de Reabilitação</strong>.","<strong>O FERRO É FORMALMENTE CONTRAINDICADO NA FASE DE ESTABILIZAÇÃO!</strong> Na fase aguda, a síntese de transferrina hepática está colapsada; o ferro livre sérico não ligado atua como potente gerador de radicais livres altamente citotóxicos via Reação de Fenton e estimula a proliferação bacteriana sistêmica, disparando <strong>sepse fulminante letal</strong>."],["<strong>8. Iniciar Alimentação Cautelosa (Cautious Feeding)</strong>","Estabilização (Dias 1–7)","Uso exclusivo da <strong>Fórmula F-75 da OMS</strong> (75 kcal e 0,9 g de proteína por 100 mL). Metas iniciais restritas: <strong>100 kcal/kg/dia de energia e 1 a 1,5 g/kg/dia de proteínas</strong>, com líquidos limitados a 130 mL/kg/dia (ou 100 mL/kg/dia se anasarca). Fracionar em 8 a 12 refeições ao dia (a cada 2 ou 3 horas).","Não tentar forçar ganho de peso precoce na fase 1. Iniciar fórmulas ricas em proteínas (F-100 ou leite integral puro) na fase de estabilização sobrecarrega o fígado e rins imaturos e deflagra a fatal <strong>Síndrome de Realimentação</strong>."],["<strong>9. Alcançar a Recuperação Ponderal (Catch-up Growth)</strong>","Transição e Reabilitação (Dias 8 a 42)","Quando a criança recuperar o apetite espontâneo e o edema regredir completamente, faz-se a transição para a <strong>Fórmula F-100</strong> (100 kcal e 2,9 g de proteína por 100 mL) ou <strong>RUTF (Ready-to-Use Therapeutic Food)</strong> em pasta de amendoim enriquecida. Meta calórica elevada: <strong>150 a 220 kcal/kg/dia</strong> com 4 a 6 g/kg/dia de proteína. Meta de ganho ponderal vigoroso: <strong>&ge; 10 g/kg/dia</strong>.","A transição deve ser gradual ao longo de 2 a 3 dias. Se o ganho de peso for &lt; 5 g/kg/dia na reabilitação, investigar infecção oculta não tratada (tuberculose, HIV, giardíase) ou oferta calórica insuficiente."],["<strong>10. Estimulação Sensorial, Apoio Afetivo e Preparo da Alta</strong>","Reabilitação e Seguimento","Ambiente acolhedor e estimulante com brinquedos, envolvimento maternal direto na alimentação da criança, fisioterapia motora, terapia ocupacional e educação nutricional dos pais. Preparar a alta hospitalar vinculando a família à equipe da Atenção Primária para monitoramento semanal.","Não dar alta hospitalar antes que a criança tenha concluído o esquema de vacinação atrasado, esteja em ganho de peso consolidado e a família saiba preparar os alimentos com segurança e higiene."]],"book-table"],["3","A Solução ReSoMal: Por Que Não Usar o Soro da OMS Convencional?"],["p","O Soro de Reidratação Oral (SRO) padrão da OMS formulado para diarreia secretora (como cólera) possui concentração de sódio de 75 mEq/L e potássio de 20 mEq/L. Se administrado ao lactente com desnutrição aguda grave, essa carga maciça de sódio sobrecarrega o sistema circulatório, atraindo água para o intravascular e provocando edema agudo de pulmão. A <strong>Solução ReSoMal (Rehydration Solution for Malnutrition)</strong> foi concebida especificamente para o metabolismo do desnutrido:"],["u",["<strong>Menor concentração de Sódio: 45 mEq/L</strong> (reduz o risco de sobrecarga hidrossalina);","<strong>Maior concentração de Potássio: 40 mEq/L</strong> (essencial para repor a grave depleção intracelular de potássio);","<strong>Magnésio: 3 mEq/L</strong> (sem magnésio, a bomba Na+/K+-ATPase não funciona e o potássio não entra nas células);","Adição de glicose e sacarose (10%) para prevenção simultânea da hipoglicemia e facilitação do cotransporte de água e eletrólitos via transportador SGLT-1 intestinal."]]]],["sindrome-de-realimentacao-refeeding",0,[["2","5. Síndrome de Realimentação (Refeeding Syndrome): Fisiopatologia e Prevenção"],["3","O Perigo Fatal da Realimentação Acelerada"],["p","A <strong>Síndrome de Realimentação</strong> é uma complicação metabólica aguda potencialmente letal que ocorre quando um indivíduo cronicamente desnutrido recebe uma oferta excessiva e súbita de calorias e carboidratos por via enteral ou parenteral. Historicamente documentada nos prisioneiros dos campos de concentração da Segunda Guerra Mundial após a libertação, a síndrome continua sendo uma das maiores causas de morte iatrogênica em enfermarias pediátricas quando os protocolos de realimentação cautelosa são ignorados."],["3","A Cascata Fisiopatológica da Síndrome de Realimentação"],["o",["<strong>Pico de Secreção de Insulina:</strong> A infusão rápida de carboidratos desencadeia uma liberação maciça e desproporcional de insulina pelas células beta do pâncreas;","<strong>Captação Celular Abrupta de Eletrólitos:</strong> A insulina estimula a bomba Na+/K+-ATPase e os transportadores celulares de fosfato, promovendo a entrada celular súbita e simultânea de <strong>Fósforo, Potássio e Magnésio</strong> para o interior das células musculares, hepáticas e eritrocitárias para suportar a glicólise intracelular e a fosforilação de ADP em ATP;","<strong>A Tríade Bioquímica Clássica da Síndrome de Realimentação:</strong>\n    <p><strong>&darr; Fosfato Sérico (Hipofosfatemia Severa), &darr; Potássio Sérico (Hipocalemia), &darr; Magnésio Sérico (Hipomagnesemia)</strong></p>","<strong>Consequências Orgânicas Catastróficas:</strong>\n    <ul>\n      <li><strong>Hipofosfatemia Crítica (&lt; 1,0 mg/dL):</strong> Leva ao colapso imediato da produção intracelular de ATP e depleção de 2,3-difosfoglicerato (2,3-DPG) nas hemácias. A ausência de 2,3-DPG desvia a curva de dissociação da hemoglobina para a esquerda, impedindo a liberação de oxigênio para os tecidos periféricos, resultando em: <strong>falência miocárdica aguda (choque cardiogênico), parada respiratória por fadiga da musculatura diafragmática, rabdomiólise aguda, convulsões, coma e hemólise intravascular aguda</strong>;","<strong>Hipocalemia e Hipomagnesemia Acentuadas:</strong> Desencadeiam arritmias ventriculares malignas letais (fibrilação ventricular, torsades de pointes) e íleo paralítico adinâmico;","<strong>Retenção de Água e Sódio Induzida pela Insulina:</strong> A hiperinsulinemia estimula diretamente a reabsorção tubular renal de sódio, expandindo o volume extracelular e provocando edema periférico agudo e edema agudo de pulmão."]],["3","Estratégias Clínicas de Prevenção e Monitoramento"],["t",["Estratégia Preventiva","Como Executar no Paciente sob Risco Nutricional Grave"],[["<strong>Alimentação Cautelosa Inicial (Start Low, Go Slow)</strong>","Iniciar a dieta na Fase de Estabilização com <strong>metas calóricas baixas (50% a 70% das necessidades diárias estimadas, cerca de 75 a 100 kcal/kg/dia)</strong> utilizando a fórmula <strong>F-75</strong>. Aumentar o aporte calórico de forma lenta e escalonada ao longo de 4 a 7 dias apenas se o paciente estiver clinicamente e bioquimicamente estável."],["<strong>Suplementação Precoce de Tiamina (Vitamina B1)</strong>","A tiamina é o cofator essencial das enzimas transcetolase, piruvato desidrogenase e alfa-cetoglutarato desidrogenase da glicólise e ciclo de Krebs. Administrar <strong>Tiamina oral ou venosa (50 a 100 mg/dia)</strong> antes ou concomitantemente ao início da realimentação para prevenir o desenvolvimento de <strong>Encefalopatia de Wernicke e Beribéri Úmido</strong> (insuficiência cardíaca de alto débito e acidose lática grave)."],["<strong>Monitoramento Laboratorial Seriado Estrito</strong>","Dosagem sérica diária obrigatória de <strong>Fósforo inorgânico, Potássio, Magnésio, Cálcio, Ureia, Creatinina e Glicemia</strong> nos primeiros 3 a 5 dias de realimentação. Diante de qualquer queda assintomática de fosfato ou potássio, realizar reposição venosa ou oral profilática imediata e reduzir o ritmo de progressão calórica da dieta."]],"book-table"]]],["deficiencias-especificas-micronutrientes",0,[["2","6. Deficiências Específicas de Micronutrientes: Vitaminas A, D, C, B1, Niacina, Zinco e Ferro"],["3","O Conceito da \"Fome Oculta\""],["p","A carência isolada ou combinada de vitaminas e oligoelementos (micronutrientes) é denominada \"fome oculta\". Pode ocorrer mesmo em crianças com ingestão calórica aparentemente preservada ou em crianças com obesidade consumindo dietas ultraprocessadas hipercalóricas e hiponutritivas."],["t",["Micronutriente","Papel Fisiológico Central","Manifestações Clínicas Clássicas de Deficiência","Prevenção e Tratamento de Escolha"],[["<strong>Vitamina A</strong><br>(Retinol)","Essencial para a síntese de rodopsina nos bastonetes da retina (visão escotópica/noturna), integridade epitelial e imunidade celular mediada por linfócitos T.","• <strong>Cegueira Noturna (Hemeralopia):</strong> Primeiro sintoma funcional;<br>• <strong>Manchas de Bitot:</strong> Placas triangulares opacas, esbranquiçadas e espumosas na conjuntiva bulbar perilímbica temporal, compostas por epitélio queratinizado descamado;<br>• <strong>Xeroftalmia e Ceratomalácia:</strong> Ressecamento da córnea que evolui para amolecimento gelatinoso liquefativo estromal, perfuração corneana e perda visual irreversível;<br>• Aumento drástico da gravidade do sarampo e diarreias.","<strong>Programa Nacional de Suplementação de Vitamina A:</strong> Megadoses orais administradas a cada 6 meses para crianças de 6 a 59 meses no SUS (100.000 UI aos 6-11 meses; 200.000 UI dos 12 aos 59 meses). No tratamento de ceratomalácia: administrar megadose no Dia 1, Dia 2 e Dia 14."],["<strong>Vitamina D e Cálcio</strong><br>(Colecalciferol)","Mineralização do tecido osteoide trabecular e cortical e homeostase de cálcio e fósforo via PTH.","<strong>RAQUITISMO CARENCIAL DA INFÂNCIA:</strong><br>• Craniotabes (sensação de bola de pingue-pongue à palpação do osso parietal/occipital no lactente jovem);<br>• Alargamento metafisário visível de punhos e tornozelos;<br>• <strong>\"Rosário Raquítico\":</strong> Nódulos proeminentes nas junções costocondrais anteriores do tórax;<br>• <strong>Sulco de Harrison:</strong> Depressão horizontal na base do tórax pela tração do diafragma sobre as costelas amolecidas;<br>• Deformidades arqueadas dos membros inferiores ao iniciar a marcha (Genu varum ou genu valgum).<br><em>Laboratório:</em> Fósforo baixo ou normal, Cálcio normal/baixo, PTH muito elevado e <strong>Fosfatase Alcalina marcadamente elevada</strong>.","<strong>Profilaxia Universal da SBP:</strong> Toda criança em aleitamento materno ou fórmula &lt; 1 litro/dia deve receber suplementação de <strong>400 UI/dia de Vitamina D3 no primeiro ano de vida</strong> (iniciada na 1ª semana de vida) e <strong>600 UI/dia dos 12 aos 24 meses</strong>. Tratamento do raquitismo: 2.000 a 5.000 UI/dia de Vitamina D3 oral por 12 semanas associada a cálcio elementar."],["<strong>Zinco</strong>","Cofator de mais de 300 enzimas celulares, replicação de DNA (domínios de zinco), regeneração dos enterócitos da mucosa intestinal e imunidade celular.","• <strong>Acrodermatite Enteropática:</strong> Doença genética autossômica recessiva (mutação do gene SLC39A4) ou adquirida grave; manifesta-se por erupções cutâneas eritematosas, vesicobolhosas e descamativas peri-orificiais (ao redor de boca, nariz e ânus) e nas extremidades acrais (dedos das mãos e pés);<br>• <strong>Diarreia crônica ou intratável</strong> e má absorção intestinal;<br>• <strong>Alopecia total ou difusa</strong> e atraso de cicatrização de feridas;<br>• Retardo do crescimento linear e hipogonadismo em adolescentes.","Suplementação oral de Zinco elementar na dose de <strong>1 a 3 mg/kg/dia</strong> (ou sulfato de zinco 10 mg/dia para &lt; 6 meses e 20 mg/dia para &gt; 6 meses por 10 a 14 dias em episódios de diarreia aguda para redução de recorrências)."],["<strong>Ferro</strong>","Síntese da hemoglobina eritrocitária, mioglobina muscular, citocromos e mielinização do sistema nervoso central no neurodesenvolvimento precoce.","<strong>ANEMIA FERROPRIVA (A CARÊNCIA MAIS COMUM DO MUNDO):</strong><br>• Palidez cutâneo-mucosa, fadiga, irritabilidade, taquicardia aos esforços;<br>• Perversão do apetite (<strong>Pica / Síndrome de Pica</strong>: geofagia - comer terra/barro, amilofagia - comer amido cru, pagofagia - mastigar gelo);<br>• Queilite angular, glossite atrófica com perda de papilas gustativas;<br>• <strong>Coiloníquia:</strong> Unhas quebradiças em formato côncavo de colher.<br><em>Laboratório:</em> Anemia microcítica e hipocrômica (VCM &lt; 80 fL, HCM &lt; 27 pg), <strong>RDW elevado (&gt; 14,5%)</strong>, <strong>Ferritina sérica reduzida</strong> e Capacidade Total de Ligação do Ferro (TIBC) elevada.","<strong>Profilaxia da SBP:</strong> Iniciar aos 3 meses de vida em prematuros (&lt; 37 semanas) ou baixo peso (&lt; 2.500 g); e iniciar aos 6 meses de vida na criança a termo e peso adequado mantendo até os 2 anos. Tratamento da anemia confirmada: <strong>Sulfato Ferroso na dose de 3 a 5 mg/kg/dia de ferro elementar por via oral</strong> em jejum ou associado a frutas cítricas (vitamina C potencializa absorção) por 3 a 6 meses."],["<strong>Vitamina C</strong><br>(Ácido Ascórbico)","Cofator para a hidroxilação de prolina e lisina na síntese de colágeno maduro e função da parede endotelial vascular.","<strong>ESCORBUTO:</strong> Fragilidade capilar difusa com petéquias perifoliculares em \"saca-rolhas\", sangramento e hipertrofia gengival violácea exuberante com perda dentária, <strong>hemorragias subperiosteais dolorosas nos ossos longos</strong> (a criança chora intensamente ao ser manuseada e assume a <strong>\"Posição em Pernas de Rã\" / Pseudoparalisia de Parrot</strong> por dor esquelética excruciante), hematomas cutâneos e hemartroses.","Vitamina C oral na dose de 100 a 300 mg/dia por 1 a 2 semanas (resposta clínica rápida com remissão da dor óssea em 48 a 72 horas)."],["<strong>Vitamina B1</strong><br>(Tiamina)","Metabolismo dos carboidratos e função neuromuscular e cardíaca.","<strong>BERIBÉRI:</strong><br>• <strong>Beribéri Seco:</strong> Polineuropatia periférica simétrica bilateral com queimação nas plantas dos pés, hiporreflexia e fraqueza motora ascendente;<br>• <strong>Beribéri Úmido:</strong> Insuficiência cardíaca congestiva de alto débito, taquicardia, cardiomegalia, anasarca e acidose lática severa;<br>• <strong>Encefalopatia de Wernicke:</strong> Tríade clássica de ataxia, oftalmoplegia/nistagmo e confusão mental aguda.","Tiamina venosa ou intramuscular (50 a 100 mg/dia) de urgência."],["<strong>Niacina / Vitamina B3</strong><br>(Ácido Nicotínico)","Síntese dos nucleotídeos de óxido-redução NAD e NADP essenciais à respiração celular mitocondrial.","<strong>PELAGRA (A DOENÇA DOS \"3 Ds\"):</strong><br>1. <strong>Dermatite Fotossensível:</strong> Eritema e hiperpigmentação bilateral e simétrica com descamação em áreas expostas à luz solar (pescoço: <strong>\"Colar de Casal\"</strong>; dorso das mãos e pés);<br>2. <strong>Diarreia:</strong> Má absorção, glossite e enterite crônica;<br>3. <strong>Demência / Delirium:</strong> Alterações de memória, insônia, apatia, confusão mental, depressão e psicose. Se não tratada, culmina no quarto \"D\": Desfecho letal (Death).","Nicotinamida oral na dose de 100 a 300 mg/dia dividida em tomadas por 3 a 4 semanas associada a complexo B e dieta balanceada."]],"book-table"]]],["casos-clinicos-desnutricao-pediatria",0,[["2","7. Casos Clínicos Pediátricos Estruturados e Discussão Passo a Passo"],["3","Caso Clínico 1: Lactente com Desnutrição Aguda Grave (Marasmo) Complicada"],["p","<strong>Identificação:</strong> Lactente do sexo masculino, 8 meses de vida, natural e procedente de comunidade periférica de grande centro metropolitano, trazido pela mãe à Unidade de Pronto Atendimento (UPA) infantil. A mãe relata que a criança \"não ganha peso desde que parou de mamar no peito aos 2 meses\", sendo alimentada desde então com água de arroz e leite de vaca integral excessivamente diluído em água sem fervura prévia. Refere evacuações líquidas recorrentes nos últimos 30 dias. Nas últimas 24 horas, a criança apresentou prostração progressiva e recusa total das mamadas. Ao exame físico de admissão: emagrecimento esquelético cadavérico extremo; ausência total de panículo adiposo em tronco, membros e nádegas (pele flácida dobrada em \"saquinho de tabaco\"); atrofia da gordura facial malar conferindo <strong>fácies senil de velhinho</strong>. Peso: 4.100 g (escore-Z de Peso para Idade &lt; -4 DP; Peso para Estatura &lt; -3,5 DP); comprimento: 65 cm; <strong>MUAC: 102 mm</strong>. Ausência total de edema nos membros inferiores. Criança torporosa, letárgica, gemente, com extremidades frias, tempo de enchimento capilar de 4 segundos, pulsos femorais filiformes e taquicardia (FC: 175 bpm). Temperatura axilar: 35,1 ºC (hipotermia grave). Glicemia capilar na fita: 42 mg/dL (hipoglicemia severa)."],["p","<strong>Discussão Passo a Passo e Conduta Imediata:</strong>"],["o",["<strong>Diagnóstico Nutricional e Sindrômico:</strong> Desnutrição Aguda Grave (SAM) sob a forma clínica clássica de <strong>MARASMO COMPLICADO</strong> com choque séptico/hipovolêmico, hipotermia e hipoglicemia;","<strong>Conduta Emergencial Prioritária (Passos 1 e 2 da OMS):</strong>\n    <ul>\n      <li><strong>Hipoglicemia com rebaixamento do sensório:</strong> Infundir imediatamente <strong>Glicose a 10% na dose de 5 mL/kg por via intravenosa lenta</strong> (20 mL de SG 10% em 5 minutos), reavaliando a glicemia capilar após 30 minutos;","<strong>Hipotermia grave (Tax 35,1 ºC):</strong> Despir roupas úmidas, colocar gorro térmico na cabeça, agasalhos secos e posicionar sob aquecedor radiante com monitoramento térmico contínuo a cada 2 horas. Incentivar o Método Canguru pele a pele assim que estabilizado;","<strong>Manejo do Choque Circulatório (Passo 3 da OMS):</strong>\n    <p>Por apresentar sinais inequívocos de choque (perfusão de 4s, pulsos filiformes, letargia), a hidratação venosa está excepcionalmente autorizada, mas <strong>MUITO DIFERENTE DA CRIANÇA EUTRÓFICA:</strong> infundir <strong>Soro Fisiológico a 0,9% (ou Ringer Lactato) na dose ultracautelosa de 15 mL/kg em 1 hora</strong> associado a glicose a 10% (1:1). Avaliar rigorosamente sinais vitais e ausculta cardíaca a cada 15 minutos: se a frequência respiratória aumentar ou surgirem estertores crepitantes em bases ou ritmo de galope (3ª bulha), suspender imediatamente o soro venoso pelo risco iminente de sobrecarga ventricular e edema pulmonar. Assim que os pulsos melhorarem, suspender a hidratação venosa e transitar imediatamente para a hidratação oral por SNG com <strong>ReSoMal</strong>;</p>","<strong>Antibioticoterapia Empírica Imediata (Passo 5 da OMS):</strong> Iniciar precocemente após coleta de hemocultura: <strong>Ampicilina venosa (50 mg/kg a cada 6h) + Gentamicina venosa (7,5 mg/kg em dose única diária)</strong> por 7 dias;","<strong>Início da Dieta e Restrições Formais (Passos 6, 7 e 8):</strong> Iniciar alimentação por sonda nasogástrica com fórmula <strong>F-75 da OMS</strong> fracionada em volumes de 11 mL a cada 2 horas dia e noite (100 kcal/kg/dia). Administrar Megadose de <strong>Vitamina A oral (100.000 UI)</strong> no Dia 1 e Dia 2. <strong>É FORMALMENTE PROIBIDO PRESCREVER SULFATO FERROSO NESTA FASE!</strong> O ferro só será introduzido após a 2ª semana quando a criança estiver clinicamente estável e ganhando peso na fase de reabilitação."]],["3","Caso Clínico 2: Pré-Escolar com Kwashiorkor Clássico e Dermatose em Placas"],["p","<strong>Identificação:</strong> Menina de 2 anos e 3 meses de idade, trazida ao ambulatório de pediatria com história de \"inchaço generalizado no corpo\" que começou pelos pés e pernas há 3 semanas e piorou progressivamente. A mãe relata que a criança foi desmamada aos 18 meses após o nascimento do irmão mais novo e, devido a graves restrições financeiras, passou a receber alimentação exclusiva à base de mingau ralo de fécula de mandioca (polvilho) com açúcar e pequenas porções de arroz branco, sem carne, leite, feijão ou ovos. Há 2 semanas a criança tornou-se extremamente apática, silenciosa, recusa qualquer tentativa de alimentação com choro fraco e irritação quando manipulada. Ao exame físico: paciente em anasarca, com <strong>edema gravitacional bilateral simétrico com cacifo importante (sinal de Godet 4+/4+)</strong> estendendo-se dos pés até as coxas, ascite e edema periorbitário conferindo \"fácies de lua cheia\". Peso aferido: 10,2 kg (peso falsamente inflado pela retenção hídrica). Abdome volumoso, globoso, com <strong>hepatomegalia maciça indolor com borda hepática romba e lisa palpável a 5 cm abaixo do rebordo costal direito</strong>. Pele das nádegas, região perineal e membros inferiores com extensas placas hiperpigmentadas eritemato-acastanhadas confluentes que ulceram e descamam em retalhos (<strong>dermatose pelagroide em \"tintas descamadas\"</strong>). Cabelos finos, desvitalizados, quebradiços, com áreas alternadas de descoloração avermelhada e faixas castanhas normais (<strong>sinal da bandeira</strong>)."],["p","<strong>Discussão Diagnóstica e Conduta Especializada:</strong>"],["o",["<strong>Diagnóstico Nutricional:</strong> Desnutrição Aguda Grave (SAM) sob a forma clássica de <strong>KWASHIORKOR</strong> (edema gravitacional bilateral simétrico, esteatose hepática maciça com hepatomegalia, dermatose pelagroide em mosaico, sinal da bandeira nos cabelos e apatia com anorexia profunda);","<strong>Fisiopatologia da Hepatomegalia:</strong> A dieta rica em carboidratos gerou hiperinsulinemia relativa que bloqueou a lipólise e privou o fígado de aminoácidos para síntese de apolipoproteínas. O acúmulo intracelular de triglicerídeos não exportados distendeu os hepatócitos gerando esteatose hepática severa;","<strong>Manejo da Fase de Estabilização:</strong>\n    <ul>\n      <li>Internação hospitalar obrigatória em enfermaria aquecida;","Por apresentar anorexia extrema e recusa alimentar, passar <strong>sonda nasogástrica (SNG)</strong> com técnica estéril para infusão fracionada da <strong>Fórmula F-75</strong> (75 kcal/100 mL e 0,9 g de proteína/100 mL) em alíquotas a cada 2 ou 3 horas dia e noite;","<strong>NÃO PRESCREVER DIURÉTICOS (como furosemida) para tratar o edema!</strong> O edema do Kwashiorkor é decorrente de alteração da permeabilidade endotelial e disfunção celular. O uso de diuréticos diminui abruptamente o volume intravascular eficaz, precipitando choque hipovolêmico distributivo e insuficiência renal aguda prerenal fatal. O edema regredirá espontaneamente com a reabilitação proteica da dieta F-75 ao longo de 7 a 10 dias;","Antibioticoterapia empírica ampla com ampicilina e gentamicina venosas;","Curativos tópicos nas lesões de pele com vaselina estéril sólida e banhos mornos de água pura, evitando pomadas antissépticas abrasivas;","Suplementação de Vitamina A em megadose (200.000 UI oral) no Dia 1 e 2; ácido fólico e zinco; com suspensão absoluta de ferro elementar até a fase de reabilitação."]],["3","Caso Clínico 3: Lactente com Deformidades Ósseas e Raquitismo Carencial"],["p","<strong>Identificação:</strong> Menino de 14 meses de idade, nascido a termo com peso adequado, em aleitamento materno exclusivo prolongado até os 10 meses, momento em que foi introduzida alimentação complementar vegetariana restrita sem ingestão de carnes, peixes ou derivados lácteos. A família reside em apartamento com escassa exposição solar direta (a mãe refere que a criança \"nunca toma sol por medo de queimaduras na pele sensível\"). A mãe nunca ofereceu suplementos vitamínicos prescritos ao nascimento. Comparece à consulta porque a criança ainda não fica em pé nem dá passos sozinha e chora quando os pais tentam apoiá-lo no chão. Ao exame físico: paciente ativo, hipocorado 1+/4+, afebril. Perímetro cefálico acima do percentil 90 com proeminência das bossas frontais e parietais (\"cabeça em forma de caixa\" / caput quadratum). Palpação dos arcos costais anteriores evidencia <strong>nódulos ósseos volumosos salientes nas junções costocondrais dispostos em fileira bilateral (\"Rosário Raquítico\")</strong>. Depressão horizontal na base do tórax correspondente à inserção diafragmática (<strong>Sulco de Harrison</strong>). Inspeção dos membros superiores e inferiores demonstra <strong>alargamento bulboso das metáfises dos punhos e tornozelos</strong> com arqueamento lateral das tíbias e fêmures (genu varum acentuado). Frouxidão ligamentar generalizada e hipotonia muscular moderada."],["p","<strong>Investigação Bioquímica, Radiológica e Conduta:</strong>"],["o",["<strong>Hipótese Diagnóstica:</strong> <strong>Raquitismo Carencial por Deficiência de Vitamina D e Cálcio</strong>, decorrente de aleitamento materno exclusivo prolongado sem suplementação profilática de colecalciferol associado à ausência total de síntese cutânea de vitamina D por falta de exposição solar aos raios UVB;","<strong>Perfil Bioquímico Laboratorial Esperado:</strong>\n    <ul>\n      <li>25-hidroxivitamina D sérica [25(OH)D]: severamente diminuída (&lt; 10 ng/mL; nível suficiente &ge; 20 ng/mL);","Cálcio Iônico/Sérico: normal ou ligeiramente diminuído (às custas do hiperparatireoidismo secundário compensatório);","Fósforo Sérico: diminuído (hipofosfatemia decorrente da fosfatúria induzida pelo PTH elevado);","<strong>Paratormônio (PTH): Marcadamente elevado</strong> (tentando mobilizar cálcio do osso e reabsorver nos túbulos renais);","<strong>Fosfatase Alcalina Sérica: Extremamente elevada</strong> (&gt; 800 a 1.500 U/L), refletindo intensa atividade osteoblástica de remodelamento ósseo sem mineralização da matriz;","<strong>Achados na Radiografia de Punhos e Joelhos (Padrão Radiológico Clássico):</strong>\n    <p>Alargamento, irregularidade e espessamento das linhas metafisárias dos ossos longos (rádio e ulna), perda da linha radiopaca de calcificação provisória, <strong>\"aspecto em taça\" (cupping)</strong> da metáfise e bordas desfiadas em <strong>\"ponta de pincel\" (fraying)</strong> associadas a adelgaçamento cortical generalizado;</p>","<strong>Tratamento Farmacológico Padronizado:</strong>\n    <ul>\n      <li>Administrar <strong>Colecalciferol (Vitamina D3) na dose de 2.000 UI/dia por via oral por 12 semanas</strong> (ou dose de ataque semanal supervisionada conforme protocolo);","Associar obrigatoriamente <strong>Cálcio elementar na dose de 500 mg/dia</strong> por via oral durante todo o período para prevenir a ocorrência de hipocalcemia aguda sintomática (tetania e convulsões hipocalcêmicas decorrentes da rápida mineralização da matriz desmineralizada - \"Síndrome dos Ossos Famintos / Hungry Bone Syndrome\");","Após 12 semanas e documentação de cura radiológica e normalização da fosfatase alcalina, manter a suplementação de manutenção profilática com 600 UI/dia de Vitamina D3 e orientar banhos de sol seguros e dieta rica em alimentos fortificados."]],["3","Caso Clínico 4: Lactente com Diarreia Crônica, Alopecia e Lesões Periorificiais"],["p","<strong>Identificação:</strong> Lactente do sexo feminino, 6 meses de vida, nascida a termo, sem antecedentes neonatais mórbidos, que esteve em aleitamento materno exclusivo até os 5 meses com excelente crescimento. Há cerca de 4 semanas, a mãe introduziu fórmula infantil de partida e papas caseiras e reduziu as mamadas ao seio. Desde então, a criança desenvolveu evacuações líquidas frequentes (5 a 8 episódios/dia) sem sangue, associadas a perda ponderal progressiva (perdeu 800 g no último mês). Há 15 dias surgiram lesões dermatológicas avermelhadas, exsudativas e vesicobolhosas intensamente inflamatórias ao redor da boca, orifícios nasais, regiões perianal e perineal, com crostas espessas e fissuras dolorosas. Concomitantemente, a mãe notou queda maciça e difusa de todo o cabelo do couro cabeludo, sobrancelhas e cílios, evoluindo para <strong>alopecia quase completa</strong>. Vários tratamentos prévios com pomadas de nistatina, mupirocina e hidrocortisona foram totalmente ineficazes. Ao exame físico: irritada, com choro fácil, <strong>placas eritemato-descamativas e bolhosas periorificiais e acrais em dedos das mãos e pés</strong> com queilite angular severa e alopecia total."],["p","<strong>Discussão Diagnóstica e Conduta:</strong>"],["o",["<strong>Tríade Clínica Patognomônica:</strong> A tríade de <strong>1. Erupções cutâneas periorificiais e acrais características; 2. Diarreia crônica/intratável; e 3. Alopecia difusa completa</strong> que surge tipicamente logo após o desmame do aleitamento materno é a apresentação clínica clássica da <strong>ACRODERMATITE ENTEROPÁTICA (Deficiência Grave de Zinco)</strong>;","<strong>Fisiopatologia Genética vs Nutricional:</strong> A forma congênita clássica decorre de mutação autossômica recessiva no gene <em>SLC39A4</em>, que codifica o transportador intestinal de zinco ZIP4 no duodeno e jejuno. Durante o aleitamento materno, a criança não apresenta sintomas porque o leite humano possui um ligante carreador de zinco de baixo peso molecular que permite absorção independente de ZIP4. O desmame precipita a queda catastrófica do zinco sérico;","<strong>Confirmação Laboratorial:</strong> Dosagem de <strong>Zinco Sérico marcadamente reduzido (&lt; 50 mcg/dL; normal &gt; 70 mcg/dL)</strong> e Fosfatase Alcalina sérica baixa (a fosfatase alcalina é uma enzima zinco-dependente);","<strong>Tratamento e Prognóstico:</strong> Suplementação imediata com <strong>Sulfato de Zinco oral na dose de 1 a 3 mg/kg/dia de zinco elementar</strong>. A resposta clínica é espetacular: a diarreia cessa em 24 a 48 horas, as lesões de pele cicatrizam completamente em 7 a 10 dias e o crescimento capilar se restabelece em 3 a 6 semanas, transformando o prognóstico da criança. Na forma hereditária, o tratamento com zinco oral é mantido por toda a vida."]]]],["questoes-comentadas-residencia",0,[["2","8. Questões Comentadas no Padrão ENAMED e Principais Bancas de Concurso"],["3","Questão 1 (ENAMED / Inep - Pediatria)"],["p","Um lactente de 11 meses de vida é levado à emergência de um hospital regional com quadro de desnutrição grave. Ao exame físico, encontra-se letárgico, afebril, com peso para estatura &lt; -3 desvios-padrão e presença de edema bilateral simétrico em pés e pernas (cacifo 3+/4+). Apresenta ainda hepatomegalia indolor a 4 cm do rebordo costal direito e lesões eritematodescamativas em nádegas e períneo. Não há diarreia ou vômitos no momento. De acordo com as diretrizes do Ministério da Saúde e da Organização Mundial da Saúde (OMS) para o manejo hospitalar da desnutrição aguda grave, assinale a conduta que é FORMALMENTE PROIBIDA na fase inicial de estabilização deste paciente:"],["p","A) Administrar antibiótico empírico de largo espectro por via parenteral, mesmo na ausência de febre ou foco infeccioso aparente.<br>\nB) Iniciar hidratação venosa rápida com Soro Fisiológico a 0,9% na dose de 50 mL/kg em 2 horas para expandir o volume extracelular.<br>\nC) Oferecer fórmula láctea com baixa concentração de proteínas e sódio (Fórmula F-75) em alíquotas fracionadas a cada 2 ou 3 horas.<br>\nD) Administrar Vitamina A em megadose por via oral no primeiro e segundo dias de internação.<br>\nE) Atrasar a introdução do sulfato ferroso, iniciando-o apenas na fase de reabilitação nutricional."],["p","<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> Na desnutrição aguda grave (especialmente no Kwashiorkor com edema), a <strong>hidratação venosa rápida com cristaloides é FORMALMENTE CONTRAINDICADA E LETAL</strong>. O miocárdio da criança desnutrida encontra-se atrofiado, com miofibrilas degeneradas e capacidade contrátil reduzida. A expansão volêmica venosa rápida precipita sobrecarga ventricular aguda, com insuficiência cardíaca congestiva descompensada e edema agudo de pulmão fulminante em poucas horas. A reidratação, quando necessária por diarreia, deve ser feita preferencialmente por via oral ou SNG com <strong>ReSoMal</strong> em velocidade controlada. A hidratação venosa só é admitida se o paciente estiver em choque circulatório comprovado (pulsos filiformes e má perfusão), e mesmo assim com volumes muito restritos (15 mL/kg em 1 hora).<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: Antibioticoterapia empírica ampla é mandatória para todos os desnutridos graves na admissão.<br>\nC incorreta: A fórmula F-75 é exatamente a dieta padronizada para a fase de estabilização.<br>\nD incorreta: A megadose de vitamina A é recomendada na admissão.<br>\nE incorreta: Atrasar o ferro até a fase de reabilitação é conduta preconizada para evitar estresse oxidativo e sepse."],["3","Questão 2 (USP / FUVEST - Residência Médica)"],["p","Um lactente de 16 meses de idade comparece à consulta de puericultura com a mãe. As medidas antropométricas aferidas com técnica padronizada demonstram: Peso de 8,1 kg (Adequação de Peso/Estatura de 84% em relação ao percentil 50); e Comprimento de 80 cm (Adequação de Estatura/Idade de 98% em relação ao percentil 50). O exame físico não evidencia edema periférico. De acordo com a Classificação Antropométrica de Waterlow, o estado nutricional deste paciente é classificado como:"],["p","A) Eutrófico.<br>\nB) Desnutrido Crônico (Stunted).<br>\nC) Desnutrido Agudo (Wasted / Magro).<br>\nD) Desnutrido Crônico Agudizado (Wasted and Stunted).<br>\nE) Obesidade com baixa estatura."],["p","<strong>Gabarito Comentado: Alternativa C.</strong><br>\n<em>Justificativa:</em> Na classificação de John Waterlow, utilizam-se dois cortes fundamentais: 1. <strong>Peso para a Estatura (P/E)</strong>: ponto de corte de <strong>90%</strong> para definir emagrecimento (wasting); e 2. <strong>Estatura para a Idade (E/I)</strong>: ponto de corte de <strong>95%</strong> para definir comprometimento estatural linear crônico (stunting). O paciente em questão apresenta: P/E = 84% (menor ou igual a 90% = emagrecido) e E/I = 98% (maior que 95% = estatura preservada). Portanto, trata-se de um <strong>Desnutrido Agudo (Wasted / Magro)</strong>, decorrente de uma agressão nutricional recente que consumiu peso sem tempo hábil para comprometer a estatura.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: P/E &le; 90% caracteriza emagrecimento anormal.<br>\nB incorreta: Desnutrido crônico exigiria E/I &le; 95% com P/E normal (&gt; 90%).<br>\nD incorreta: Desnutrido crônico agudizado exigiria ambos os índices alterados (P/E &le; 90% e E/I &le; 95%).<br>\nE incorreta: Não há obesidade."],["3","Questão 3 (Unicamp - Residência Médica)"],["p","Um menino de 3 anos de idade, internado há 3 dias com diagnóstico de Kwashiorkor descompensado, encontra-se na fase de estabilização do protocolo da OMS recebendo fórmula F-75 e antibioticoterapia empírica. Durante a visita médica da enfermaria, o médico residente propõe a prescrição imediata de Sulfato Ferroso oral na dose de 3 mg/kg/dia para o tratamento da anemia associada e Furosemida venosa para acelerar a redução da anasarca. Com base nas diretrizes internacionais e na fisiopatologia da desnutrição aguda grave, a análise da conduta do residente revela que:"],["p","A) Ambas as condutas são corretas e devem ser iniciadas imediatamente nas primeiras 24 horas.<br>\nB) A prescrição de sulfato ferroso é correta, mas a furosemida é contraindicada pelo risco de hipocalemia.<br>\nC) Ambas as condutas são formalmente contraindicadas: o ferro livre na fase aguda catalisa reações de estresse oxidativo e favorece bacteremia fulminante; e a furosemida reduz criticamente o volume intravascular circulante, podendo desencadear choque hipovolêmico e óbito.<br>\nD) A furosemida é recomendada para aliviar a sobrecarga volêmica pulmonar, mas o ferro só deve ser administrado por via intramuscular profunda.<br>\nE) O sulfato ferroso deve ser substituído por transfusão de concentrado de hemácias profilática imediata."],["p","<strong>Gabarito Comentado: Alternativa C.</strong><br>\n<em>Justificativa:</em> Trata-se de duas das maiores pegadinhas e erros clínicos no manejo da desnutrição grave: 1. <strong>O Ferro é formalmente PROIBIDO na fase de estabilização:</strong> na vigência de colapso da síntese de transferrina e antioxidantes pelo fígado desnutrido, o ferro administrado permanece na forma livre (\"unbound\"), catalisando a Reação de Fenton com geração descontrolada de radicais hidroxila livres citotóxicos e atuando como nutriente de replicação para bactérias entéricas, deflagrando sepse bacteriana fulminante. O ferro só pode ser introduzido na fase de reabilitação (a partir da 2ª semana); e 2. <strong>A Furosemida é FORMALMENTE CONTRAINDICADA no edema do Kwashiorkor:</strong> o edema decorre de permeabilidade capilar alterada e estresse oxidativo celular, com volume plasmático intravascular efetivo já diminuído. O diurético de alça depletaria abruptamente o volume vascular, precipitando choque hipovolêmico distributivo e colapso circulatório.<br>\n<em>Comentário dos Distratores:</em><br>\nA, B, D e E trazem condutas errôneas e perigosas que violam os 10 Passos da OMS."],["3","Questão 4 (UERJ - Residência Médica)"],["p","Uma criança de 18 meses de idade, com história de inanição crônica grave por abandono, é admitida na UTI pediátrica. A equipe decide iniciar suporte nutricional enteral vigoroso utilizando fórmula hipercalórica com alta densidade de carboidratos infundida continuamente. No 3º dia de realimentação, a criança evolui subitamente com taquicardia, insuficiência respiratória aguda com esforço diafragmático ineficaz, arritmia cardíaca ventricular e sonolência profunda. A gasometria e os eletrólitos séricos de urgência revelam: hipofosfatemia severa (fósforo sérico de 0,8 mg/dL), hipocalemia (potássio de 2,4 mEq/L) e hipomagnesemia (magnésio de 1,1 mg/dL). O quadro clínico e laboratorial é patognomônico de:"],["p","A) Cetoacidose diabética inaugural.<br>\nB) Síndrome de Realimentação (Refeeding Syndrome), desencadeada pelo pico de secreção de insulina induzido pelos carboidratos que promoveu a entrada intracelular maciça de fósforo, potássio e magnésio.<br>\nC) Síndrome hemolítico-urêmica pós-infecciosa por <em>E. coli</em> produtora de toxina Shiga.<br>\nD) Insuficiência adrenal primária aguda (Crise Addisoniana).<br>\nE) Intoxicação exógena acidental por organofosforados com síndrome colinérgica."],["p","<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> A <strong>Síndrome de Realimentação</strong> é a complicação metabólica clássica decorrente da oferta rápida e desmedida de calorias/carboidratos a um paciente gravemente desnutrido. A sobrecarga de carboidratos estimula um pico de insulina que aciona avidamente o influxo intracelular de glicose acompanhado de <strong>fósforo, potássio e magnésio</strong> para suprir a fosforilação oxidativa de ATP. A <strong>hipofosfatemia crítica (&lt; 1,0 mg/dL)</strong> colapsa a disponibilidade de ATP e 2,3-DPG, gerando falência muscular diafragmática (parada respiratória), choque cardiogênico, rabdomiólise e arritmias ventriculares graves.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: Cetoacidose cursa com hiperglicemia, acidose metabólica com ânion-gap elevado e hipercalemia inicial.<br>\nC incorreta: SHU cursa com anemia hemolítica microangiopática, trombocitopenia e uremia aguda.<br>\nD incorreta: Insuficiência adrenal cursa com hiponatremia e hipercalemia.<br>\nE incorreta: Síndrome colinérgica cursa com miose, sialorreia, broncorreia e fasciculações."],["3","Questão 5 (SURCE / PSU-CE - Residência Médica)"],["p","Lactente de 10 meses de vida, residente em comunidade vulnerável, é levado à UBS com queixa materna de dificuldade visual à noite (a mãe nota que a criança tromba nos móveis ao escurecer) e tosse produtiva frequente. Ao exame oftalmológico com lanterna, o médico identifica em conjuntiva bulbar perilímbica temporal de ambos os olhos placas triangulares ligeiramente elevadas, secas, de coloração branco-prateada com aspecto espumoso. As córneas estão íntegras e transparentes no momento. Em relação ao diagnóstico deste achado e à conduta clínica correta, assinale a alternativa adequada:"],["p","A) Trata-se de Pterígio congênito; a conduta é colírio lubrificante e ressecção cirúrgica eletiva aos 5 anos.<br>\nB) Trata-se de Manchas de Bitot secundárias à deficiência grave de Vitamina A (Xeroftalmia); a conduta mandatória é a administração oral imediata de Vitamina A em megadose no Dia 1, Dia 2 e repetição após 14 dias.<br>\nC) Trata-se de Catarata congênita associada à galactosemia; indicar suspensão do aleitamento e facectomia.<br>\nD) Trata-se de Ceratomalácia irreversível; a conduta é transplante penetrante de córnea de urgência.<br>\nE) Trata-se de Conjuntivite bacteriana crônica por <em>Chlamydia trachomatis</em>; prescrever azitromicina oral."],["p","<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> O quadro descreve a clássica sequência de <strong>Xeroftalmia por Hipovitaminose A</strong>: hemeralopia (cegueira noturna, sintoma funcional inicial) acompanhada de <strong>Manchas de Bitot</strong> (placas conjuntivais triangulares prateadas/espumosas patognomônicas resultantes da queratinização escamosa da conjuntiva bulbar). Trata-se de uma emergência nutricional médica, pois a deficiência de vitamina A não tratada evolui rapidamente para ceratite ulcerativa e <strong>ceratomalácia</strong> com necrose corneana e cegueira permanente bilateral. O esquema de tratamento curativo da OMS consiste em: <strong>Megadose de Vitamina A oral no Dia 1, no Dia 2 e no Dia 14</strong> (100.000 UI para lactentes de 6 a 11 meses de vida).<br>\n<em>Comentário dos Distratores:</em><br>\nA, C, D e E trazem diagnósticos incorretos e condutas cirúrgicas ou farmacológicas iatrogênicas desprovidas de base patológica."],["3","Questão 6 (AMRIGS - Residência Médica)"],["p","Em relação às diretrizes da Sociedade Brasileira de Pediatria (SBP) para a profilaxia e o tratamento da Anemia Ferropriva na infância, assinale a afirmativa correta:"],["p","A) Lactentes nascidos a termo e com peso adequado para a idade gestacional em aleitamento materno exclusivo não necessitam de nenhuma suplementação profilática de ferro medicamentoso até completarem 2 anos de vida.<br>\nB) Para recém-nascidos prematuros ou com peso de nascimento inferior a 2.500 g, a suplementação profilática com ferro elementar deve ser iniciada precocemente aos 30 dias de vida (ou a partir do momento em que a criança tolera a via oral plena), independentemente do tipo de aleitamento.<br>\nC) O diagnóstico de certeza de anemia ferropriva exige mielograma com pesquisa de ferro medular em todos os pacientes ambulatoriais.<br>\nD) A presença de RDW normal (&lt; 12%) associado a microcitose é o achado mais típico da anemia ferropriva, diferenciando-a dos traços talassêmicos.<br>\nE) O ferro oral deve ser administrado preferencialmente junto com leite de vaca integral para neutralizar a acidez e evitar epigastralgia."],["p","<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> Recém-nascidos prematuros (&lt; 37 semanas de idade gestacional) ou com baixo peso ao nascer (&lt; 2.500 g) nascem com estoques corporais de ferro severamente diminuídos, pois a maior parte da transferência transplacentária de ferro materno ocorre no terceiro trimestre gestacional. Portanto, as diretrizes da SBP determinam que a <strong>suplementação profilática de ferro elementar nesses prematuros/baixo peso deve ser iniciada aos 30 dias de vida</strong> (dose de 2 mg/kg/dia se peso entre 1.500 e 2.499 g; 3 mg/kg/dia se entre 1.000 e 1.499 g; e 4 mg/kg/dia se &lt; 1.000 g), mantida por todo o primeiro ano e seguida de 1 mg/kg/dia no segundo ano.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: A termo em aleitamento exclusivo necessita de 1 mg/kg/dia de ferro elementar a partir dos 6 meses de vida até 24 meses.<br>\nC incorreta: O diagnóstico é feito com hemograma, ferritina e cinética de ferro periférica.<br>\nD incorreta: Anemia ferropriva cursa classicamente com <strong>RDW elevado (&gt; 14,5%)</strong> (anisocitose acentuada); traço talassêmico cursa com RDW tipicamente normal.<br>\nE incorreta: O cálcio do leite bloqueia a absorção intestinal do ferro; o ferro deve ser administrado com água ou suco cítrico (vitamina C potencializa a absorção)."],["3","Questão 7 (UNICAMP - Residência Médica)"],["p","Um pré-escolar de 2 anos e meio é levado ao pronto-atendimento com história de irritabilidade, choro ao ser manuseado e recusa de deambular há 1 semana. A mãe relata que a criança assume espontaneamente uma postura deitada com as pernas fletidas e abduzidas (\"posição em pernas de rã\"). Ao exame físico: palidez cutânea, gengivas hipertrofiadas, edemaciadas e de coloração arroxeada/violácea com sangramento espontâneo fácil, e petéquias foliculares com pelos em saca-rolhas no abdome e membros inferiores. À palpação dos membros inferiores, a criança chora vigorosamente com dor intensa em diáfises e metáfises femorais e tibiais, correspondendo a hematomas subperiosteais confirmados por ultrassonografia. A dieta da criança é composta exclusivamente por leite fervido e biscoitos recheados, com aversão completa a frutas e vegetais frescos. O diagnóstico clínico mais provável é:"],["p","A) Escorbuto (Deficiência grave de Vitamina C).<br>\nB) Leucemia Linfoide Aguda (LLA).<br>\nC) Hemofilia A congênita grave.<br>\nD) Raquitismo dependente de vitamina D tipo 1.<br>\nE) Doença de Kawasaki atípica."],["p","<strong>Gabarito Comentado: Alternativa A.</strong><br>\n<em>Justificativa:</em> O quadro clínico reúne a constelação clássica do <strong>Escorbuto infantil por deficiência grave de Vitamina C (ácido ascórbico)</strong>: 1. Gengivorragia com gengivas hipertróficas violáceas; 2. Fragilidade capilar com petéquias perifoliculares e pelos em saca-rolhas; 3. <strong>Hemorragias subperiosteais dolorosas exuberantes</strong> nos ossos longos, que causam dor óssea excruciante, levando à recusa de marcha (pseudoparalisia) e à clássica <strong>\"Posição em Pernas de Rã\" (Postura de Parrot)</strong>; 4. História alimentar de dieta desprovida de frutas cítricas, verduras e rica em leite fervido (o calor destrói o ácido ascórbico termolábil). O tratamento com reposição de vitamina C oral produz regressão rápida e dramática da dor e das lesões em poucos dias.<br>\n<em>Comentário dos Distratores:</em><br>\nB incorreta: LLA pode dar dor óssea, mas não gengivite violácea com petéquias perifoliculares isoladas decorrentes de dieta restritiva.<br>\nC incorreta: Hemofilia cursa com hemartroses e hematomas musculares profundos sem gengivite escorbútica.<br>\nD e E trazem quadros sem a tríade escorbútica clássica."],["3","Questão 8 (FMUSP / HC-FMUSP - Residência Médica)"],["p","Lactente de 14 meses de vida é trazido para avaliação nutrológica. A mãe relata que a criança sempre residiu em área rural isolada e foi alimentada com leite de cabra in natura fervido desde os 3 meses de idade sem qualquer outro alimento de transição ou suplementação vitamínica. O hemograma automatizado revela: Hemoglobina: 6,2 g/dL, Hematócrito: 18%, Leucócitos: 3.200/mm³ (neutropenia leve com presença marcante de neutrófilos hipersegmentados com mais de 5 a 6 lobos nucleares), Plaquetas: 95.000/mm³ (trombocitopenia moderada); VCM: 118 fL (macrocitose acentuada). O exame neurológico não revela déficits motores, ataxia ou sinais de mielopatia, e a dosagem de ácido metilmalônico urinário encontra-se rigorosamente normal. Este quadro de anemia macrocítica megaloblástica na infância é atribuído à deficiência de:"],["p","A) Vitamina B12 (Cobalamina) por deficiência congênita de fator intrínseco.<br>\nB) Ácido Fólico (Vitamina B9), decorrente da alimentação exclusiva com leite de cabra, que é naturalmente desprovido de folato.<br>\nC) Ferro elementar por perda gastrointestinal oculta.<br>\nD) Vitamina E (Tocoferol) com hemólise oxidativa primária.<br>\nE) Cobre elementar por bloqueio da ceruloplasmina."],["p","<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> O <strong>leite de cabra in natura é extremamente pobre em Ácido Fólico (Vitamina B9)</strong>, contendo menos de um décimo do teor de folato presente no leite de vaca ou no leite humano. Crianças alimentadas exclusivamente com leite de cabra desenvolvem invariavelmente <strong>Anemia Megaloblástica por Deficiência de Folato</strong>, caracterizada por anemia macrocítica (VCM elevado &gt; 100 fL), neutrófilos hipersegmentados e pancitopenia leve a moderada por eritropoiese ineficaz com destruição intramedular de precursores. A ausência de sintomas neurológicos e a normalidade do ácido metilmalônico descartam a deficiência de cobalamina (vitamina B12). A conduta é prescrever ácido fólico oral na dose de 1 a 5 mg/dia.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: Deficiência de B12 cursa com ácido metilmalônico elevado e manifestações neurológicas precoces (degeneração combinada da medula).<br>\nC incorreta: Ferro causa anemia microcítica e hipocrômica (VCM baixo).<br>\nD e E incorretas: Não apresentam associação com leite de cabra nem neutrófilos hipersegmentados."]]],["algoritmos-e-fluxogramas-praticos",0,[["2","9. Algoritmos e Fluxogramas Decisórios na Prática Hospitalar"],["3","Fluxograma de Decisão na Admissão da Desnutrição Aguda Grave (SAM)"],["p","A conduta sequencial padronizada na emergência pediátrica organiza-se em três etapas imediatas:"],["o",["<strong>Avaliação de Emergência Imediata (Minutos 0 a 30):</strong>\n    <ul>\n      <li>Verificar Glicemia: se &lt; 54 mg/dL &rarr; SG 10% 5 mL/kg IV se inconsciente ou 50 mL oral/SNG se consciente;","Verificar Temperatura: se axilar &lt; 35,5 ºC &rarr; aquecimento térmico imediato (método canguru, gorro de lã, aquecedor seguro);","Verificar Choque (pulsos filiformes, letargia, tempo de enchimento capilar &gt; 3s): se presente &rarr; Soro Fisiológico 0,9% 15 mL/kg em 1 hora com monitoramento estrito; se sem choque &rarr; PROIBIDO soro venoso rápido!","<strong>Instalação do Suporte de Estabilização (Horas 1 a 24):</strong>\n    <ul>\n      <li>Se diarreia desidratante: reidratar exclusivamente com <strong>ReSoMal</strong> por via oral ou SNG (5 a 10 mL/kg/hora);","Iniciar antibioticoterapia empírica imediata (Ampicilina + Gentamicina venosas se complicado; Amoxicilina oral se sem complicações);","Iniciar <strong>Fórmula F-75</strong> fracionada a cada 2 ou 3 horas dia e noite (meta: 100 kcal/kg/dia e 1 a 1,5 g/kg/dia de proteína);","Administrar Vitamina A em megadose oral no Dia 1 e Dia 2; ácido fólico e zinco;","<strong>CONTRAINDICAÇÃO EXPRESSA: NUNCA prescrever Sulfato Ferroso nem diuréticos de alça (furosemida) nesta fase!</strong>","<strong>Transição e Reabilitação (Dias 8 em diante):</strong>\n    <ul>\n      <li>Quando o edema regredir totalmente e o apetite retornar voraz: transição gradual para <strong>Fórmula F-100 ou RUTF</strong> (meta: 150 a 220 kcal/kg/dia e ganho ponderal &ge; 10 g/kg/dia);","<strong>Iniciar Sulfato Ferroso (3 mg/kg/dia de ferro elementar)</strong> para tratar a anemia ferropriva agora que as infecções estão controladas e a transferrina hepática foi restabelecida."]]]],["pontos-chave-enamed-desnutricao",0,[["2","10. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais"],["3","Dez Mandamentos da Nutrologia Pediátrica para o ENAMED"],["u",["<strong>1. Gómez vs Waterlow:</strong> Gómez avalia Peso/Idade (Grau I: 76-90%, Grau II: 61-75%, Grau III: &le; 60% OU presença de edema). Waterlow avalia Peso/Estatura (emagrecido &le; 90%) e Estatura/Idade (nanico &le; 95%).","<strong>2. Marasmo vs Kwashiorkor:</strong> Marasmo é carência global (seca, sem edema, fácies senil, apetite famélico). Kwashiorkor é carência proteica aguda (úmida, edema com cacifo, esteatose hepática maciça, dermatose em tintas descamadas, sinal da bandeira nos cabelos, apatia e anorexia intensa).","<strong>3. Proibição de Hidratação Venosa Rápida:</strong> Jamais fazer hidratação rápida venosa em desnutrido grave pelo risco iminente de insuficiência cardíaca congestiva e edema pulmonar fatal. Usar ReSoMal oral ou por SNG.","<strong>4. ReSoMal:</strong> Solução com menos sódio (45 mEq/L) e mais potássio (40 mEq/L) e magnésio para evitar sobrecarga hidrossalina.","<strong>5. Proibição de Diuréticos:</strong> Jamais usar furosemida para o edema do Kwashiorkor (precipita choque hipovolêmico fatal). O edema é curado com alimentação F-75.","<strong>6. Atraso Mandatório do Ferro:</strong> O sulfato ferroso é formalmente PROIBIDO na fase de estabilização (gera radicais livres e sepse fulminante). Iniciar apenas na fase de reabilitação.","<strong>7. Síndrome de Realimentação:</strong> Sobrecarga calórica rápida deflagra pico de insulina com captação celular maciça de <strong>fósforo, potássio e magnésio</strong>. Hipofosfatemia severa causa choque cardiogênico, parada respiratória e morte.","<strong>8. Xeroftalmia (Vitamina A):</strong> Cegueira noturna (hemeralopia) &rarr; Manchas de Bitot &rarr; Ceratomalácia (cegueira irreversível). Tratar com megadose no Dia 1, 2 e 14.","<strong>9. Raquitismo Carencial (Vitamina D):</strong> Alargamento de punhos, rosário raquítico, sulco de Harrison, pernas arqueadas e fosfatase alcalina marcadamente elevada. Profilaxia com 400 UI/dia no 1º ano e 600 UI/dia no 2º ano.","<strong>10. Acrodermatite Enteropática:</strong> Deficiência de zinco surgindo ao desmame: tríade de lesões periorificiais/acrais eritematobolhosas + diarreia crônica + alopecia total. Responde espetacularmente ao sulfato de zinco oral."]]]],["referencias",0,[["2","Referências Oficiais e Diretrizes"],["o",["<a href=\"https://www.who.int/publications/i/item/9789241506328\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Guideline: Updates on the Management of Severe Acute Malnutrition in Infants and Children</a>","<a href=\"https://www.sbp.com.br/departamentos-cientificos/nutrologia/documentos-cientificos/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Departamento Científico de Nutrologia. Manual de Terapia Nutricional Pediátrica e Desnutrição Hospitalar</a>","<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Manual de Atenção Integrada às Doenças Prevalentes na Infância (AIDPI Criança) e Manejo da Desnutrição Grave</a>","<a href=\"https://www.who.int/tools/child-growth-standards\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — The WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length and body mass index-for-age</a>","<a href=\"https://www.sbp.com.br/departamentos-cientificos/nutrologia/diretrizes/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Departamento Científico de Nutrologia. Hipovitaminose D em Pediatria: Diagnóstico, Prevenção e Tratamento</a>"],"reference-list"]]]]}
+{
+  "v": 2,
+  "s": "desnutricao-e-deficiencias-nutricionais",
+  "t": "Desnutrição e Deficiências Nutricionais",
+  "p": "Tratado completo de Desnutrição Energético-Proteica e Deficiências de Micronutrientes na Infância: fisiopatologia da desnutrição primária e secundária; classificação antropométrica de Gómez, critérios de Waterlow (emagrecimento vs nanismo) e curvas de escore-Z da OMS 2006/SISVAN; formas clínicas graves de Marasmo e Kwashiorkor (fisiopatologia da esteatose hepática, edema e dermatose); os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS/SBP) detalhados fase a fase (estabilização, transição e reabilitação); contraindicação formal de hidratação venosa rápida e uso de ReSoMal; proibição estrita de ferro na fase inicial; fisiopatologia e prevenção da Síndrome de Realimentação; carências específicas de Vitamina A (xeroftalmia, manchas de Bitot, ceratomalácia), Vitamina D (raquitismo carencial), Zinco (acrodermatite enteropática), Ferro, Folato, Vitamina C e Niacina; casos clínicos com raciocínio e questões de residência médica comentadas.",
+  "o": [
+    [
+      "fisiopatologia-desnutricao-primaria-secundaria",
+      "1. Fisiopatologia da Desnutrição Energético-Proteica Primária e Secundária"
+    ],
+    [
+      "classificacoes-antropometricas-gomez-waterlow-oms",
+      "2. Classificação Antropométrica: Critérios de Gómez, Waterlow e Padrões da OMS 2006"
+    ],
+    [
+      "formas-clinicas-graves-marasmo-vs-kwashiorkor",
+      "3. Formas Clínicas Graves: Marasmo vs Kwashiorkor e Fisiopatologia do Edema"
+    ],
+    [
+      "manejo-hospitalar-10-passos-oms-sbp",
+      "4. Os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS / SBP)"
+    ],
+    [
+      "sindrome-de-realimentacao-refeeding",
+      "5. Síndrome de Realimentação (Refeeding Syndrome): Fisiopatologia e Prevenção"
+    ],
+    [
+      "deficiencias-especificas-micronutrientes",
+      "6. Deficiências Específicas de Micronutrientes: Vitaminas A, D, C, B1, Niacina, Zinco e Ferro"
+    ],
+    [
+      "casos-clinicos-desnutricao-pediatria",
+      "7. Casos Clínicos Pediátricos Estruturados e Discussão Passo a Passo"
+    ],
+    [
+      "questoes-comentadas-residencia",
+      "8. Questões Comentadas no Padrão ENAMED e Principais Bancas de Concurso"
+    ],
+    [
+      "algoritmos-e-fluxogramas-praticos",
+      "9. Algoritmos e Fluxogramas Decisórios na Prática Hospitalar"
+    ],
+    [
+      "pontos-chave-enamed-desnutricao",
+      "10. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "h": [
+    "Apostila LURIA",
+    "Desnutrição e Deficiências Nutricionais",
+    "Tratado completo de Desnutrição Energético-Proteica e Deficiências de Micronutrientes na Infância: fisiopatologia da desnutrição primária e secundária; classificação antropométrica de Gómez, critérios de Waterlow (emagrecimento vs nanismo) e curvas de escore-Z da OMS 2006/SISVAN; formas clínicas graves de Marasmo e Kwashiorkor (fisiopatologia da esteatose hepática, edema e dermatose); os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS/SBP) detalhados fase a fase (estabilização, transição e reabilitação); contraindicação formal de hidratação venosa rápida e uso de ReSoMal; proibição estrita de ferro na fase inicial; fisiopatologia e prevenção da Síndrome de Realimentação; carências específicas de Vitamina A (xeroftalmia, manchas de Bitot, ceratomalácia), Vitamina D (raquitismo carencial), Zinco (acrodermatite enteropática), Ferro, Folato, Vitamina C e Niacina; casos clínicos com raciocínio e questões de residência médica comentadas.",
+    [
+      "Área: Pediatria",
+      "Matéria: Nutrologia Pediátrica",
+      "Tema: Desnutrição e Deficiências Nutricionais"
+    ],
+    "apostila-identity"
+  ],
+  "q": [
+    [
+      "fisiopatologia-desnutricao-primaria-secundaria",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiopatologia da Desnutrição Energético-Proteica Primária e Secundária"
+        ],
+        [
+          "3",
+          "Conceito e Epidemiologia da Desnutrição Infantil"
+        ],
+        [
+          "p",
+          "A Desnutrição Energético-Proteica (DEP) na infância é uma afecção patológica sistêmica de gravidade variável e etiologia multifatorial, caracterizada pela depleção celular de nutrientes essenciais necessária à manutenção do metabolismo basal, crescimento linear e maturação neuropsicomotora. Representa historicamente uma das maiores causas isoladas e associadas de morbimortalidade infantil global, potencializando infecções respiratórias, sepse e doenças diarreicas agudas."
+        ],
+        [
+          "3",
+          "Desnutrição Primária vs Desnutrição Secundária"
+        ],
+        [
+          "p",
+          "Do ponto de vista etiológico e fisiopatológico, a DEP classifica-se em duas categorias fundamentais:"
+        ],
+        [
+          "t",
+          [
+            "Eixo de Comparação",
+            "Desnutrição Primária (Carencial / Exógena)",
+            "Desnutrição Secundária (Orgânica / Endógena)"
+          ],
+          [
+            [
+              "<strong>Causa Primordial</strong>",
+              "<strong>Aporte alimentar quantitativa ou qualitativamente insuficiente.</strong> Determinada por vulnerabilidade social, extrema pobreza, insegurança alimentar, desmame precoce inadvertido, diluição incorreta de fórmulas lácteas (\"mamadeiras ralas\" excessivamente diluídas em água) e carência de acesso à água tratada.",
+              "<strong>Doença clínica ou cirúrgica de base</strong> que interfere nos processos de ingestão, digestão, absorção intestinal, transporte celular, utilização metabólica ou excreção de nutrientes, independentemente da disponibilidade externa de alimentos."
+            ],
+            [
+              "<strong>Mecanismos Patogênicos Centrais</strong>",
+              "Adaptação metabólica hipometabólica crônica à privação exógena de calorias e proteínas, com preservação inicial das vias enzimáticas funcionais até fases descompensadas.",
+              "• Redução da ingestão oral por disfagia, dor ou anorexia inflamatória (câncer, paralisia cerebral, estomatites);<br>• Má absorção intestinal (Doença Celíaca, Doença Inflamatória Intestinal, Síndrome do Intestino Curto);<br>• Má digestão por insuficiência pancreática exócrina (Fibrose Cística);<br>• Aumento do gasto energético de repouso e hipermetabolismo inflamatório (Cardiopatias congênitas descompensadas, Sepse crônica, Infecções por HIV e Tuberculose disseminada, Queimaduras extensas);<br>• Perda excessiva de nutrientes (Enteropatia perdedora de proteínas, Síndrome Nefrótica com proteinúria maciça, Doença Renal Crônica dialítica)."
+            ],
+            [
+              "<strong>População Típica</strong>",
+              "Lactentes e pré-escolares de bolsões de vulnerabilidade socioeconômica e áreas de extrema privação.",
+              "Crianças acompanhadas em hospitais pediátricos terciários portadoras de condições crônicas complexas de saúde."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Resposta Metabólica Integrada à Inanição (Inanição Crônica Adaptativa)"
+        ],
+        [
+          "p",
+          "Diante da redução crônica da disponibilidade de substratos energéticos exógenos, o organismo do lactente deflagra uma cascata de respostas neuroendócrinas e moleculares coordenadas para garantir a sobrevivência dos órgãos vitais nobres (cérebro e miocárdio) às custas do sacrifício do crescimento e da massa celular periférica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase Imediata e Queda da Insulina:</strong> A hipoglicemia relativa inibe a secreção de insulina pelas células beta pancreáticas e estimula a liberação de glucagon, catecolaminas e glicocorticoides (cortisol). A queda do tônus insulínico desacelera a lipogênese e interrompe o crescimento celular mediado pela via mTOR e IGF-1 hepático;",
+            "<strong>Glicogenólise e Gliconeogênese:</strong> As reservas hepáticas de glicogênio esgotam-se em menos de 12 a 24 horas no lactente jovem (cujas reservas glicogênicas são exíguas). O fígado passa a sintetizar glicose a partir de aminoácidos glicogênicos (alanina e glutamina) mobilizados pela proteólise da musculatura esquelética;",
+            "<strong>Lipólise e Cetogênese:</strong> Sob estímulo de adrenalina e cortisol, a lipase hormônio-sensível dos adipócitos hidrolisa os triglicerídeos, liberando ácidos graxos livres e glicerol na circulação. Os ácidos graxos são oxidados no fígado através da beta-oxidação mitocondrial, gerando corpos cetônicos (acetoacetato e beta-hidroxibutirato), que passam a ser utilizados pelo sistema nervoso central como substrato energético alternativo à glicose, poupando a destruição proteica muscular;",
+            "<strong>Hipometabolismo Basal (Redução da Taxa Metabólica de Repouso):</strong> Ocorre diminuição da conversão periférica da tiroxina (T4) em tri-iodotironina ativa (T3), com predomínio de T3-reverso (inativo). Essa \"síndrome do eutireóideo doente\" reduz a atividade das bombas de sódio-potássio ATPase nas membranas celulares, diminuindo o consumo de oxigênio em até 30% a 50%, gerando hipotermia e bradicardia fisiológica de economia;",
+            "<strong>Comprometimento Imunológico Secundário (Imunodeficiência Nutricional):</strong> A atrofia do timo, baço e placas de Peyer intestinais reduz drasticamente a proliferação de linfócitos T CD4+, provoca anergia cutânea celular, atrofia das vilosidades intestinais com quebra da barreira física mucosal e redução da produção de IgA secretora e proteínas do sistema complemento, tornando o desnutrido presa fácil de infecções graves invasivas por bactérias Gram-negativas entéricas (<em>Escherichia coli</em>, <em>Klebsiella</em>, <em>Salmonella</em>)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacoes-antropometricas-gomez-waterlow-oms",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação Antropométrica: Critérios de Gómez, Waterlow e Padrões da OMS 2006"
+        ],
+        [
+          "3",
+          "Evolução Histórica da Avaliação Nutricional"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Bitot.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Bitot.jpg\" alt=\"Mancha de Bitot nacarada em conjuntiva por deficiência de vitamina A\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Mancha de Bitot nacarada em conjuntiva por deficiência de vitamina A</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABitot.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">CDC/Nutrition Program ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"An_American_text-book_of_the_diseases_of_children__1895___14782046202_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/An%20American%20text-book%20of%20the%20diseases%20of%20children%20(1895)%20(14782046202).jpg\" alt=\"Marasmo com consumo acentuado de massa muscular e gordura subcutânea\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Marasmo com consumo acentuado de massa muscular e gordura subcutânea</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AAn%20American%20text-book%20of%20the%20diseases%20of%20children%20(1895)%20(14782046202).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Starr, Louis, 1849-1925;\n\nWestcott, Thompson Seiser, 1862- ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Starved_girl.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Starved%20girl.jpg\" alt=\"Criança acometida por Kwashiorkor: edema maleolar bilateral e abdome globoso\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Criança acometida por Kwashiorkor: edema maleolar bilateral e abdome globoso</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AStarved%20girl.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Dr. Lyle Conrad ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "p",
+          "A determinação precisa do estado nutricional da criança fundamenta-se na comparação das medidas físicas individuais com padrões populacionais de referência. Três modelos conceituais dominam a literatura médica e as provas de concursos:"
+        ],
+        [
+          "3",
+          "1. Classificação de Federico Gómez (1956)"
+        ],
+        [
+          "p",
+          "<strong>Adequação do P/I (%) = (Peso Real da Criança / Peso Ideal no P50 para Idade e Sexo) &times; 100</strong>"
+        ],
+        [
+          "t",
+          [
+            "Classificação de Gómez",
+            "Porcentagem de Adequação do Peso/Idade",
+            "Significado Clínico e Conduta"
+          ],
+          [
+            [
+              "<strong>Eutrofia (Normal)</strong>",
+              "&gt; 90%",
+              "Criança sem deficit ponderal para a idade."
+            ],
+            [
+              "<strong>Desnutrição de Grau I (Leve)</strong>",
+              "76% a 90% (deficit de 10% a 24%)",
+              "Alerta de risco nutricional; exige revisão dietética na Atenção Primária."
+            ],
+            [
+              "<strong>Desnutrição de Grau II (Moderada)</strong>",
+              "61% a 75% (deficit de 25% a 39%)",
+              "Comprometimento ponderal significativo; intervenção ambulatorial imediata."
+            ],
+            [
+              "<strong>Desnutrição de Grau III (Grave)</strong>",
+              "&le; 60% (deficit &ge; 40%) <strong>OU Presença de Edema Nutricional Bilateral</strong>",
+              "<strong>Atenção para Provas:</strong> Toda criança com <em>edema nutricional (Kwashiorkor) é automaticamente classificada como Grau III de Gómez</em>, independentemente de seu peso aparente (pois o edema mascareia o deficit tecidual real!)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Crítica Metodológica a Gómez:</em> O índice P/I não diferencia se o baixo peso decorre de um emagrecimento agudo recente (perda de massa magra e gordura) ou de uma baixa estatura crônica prévia (criança de baixa estatura proporcionalmente magra)."
+        ],
+        [
+          "3",
+          "2. Classificação de John Waterlow (1977)"
+        ],
+        [
+          "p",
+          "<strong>Adequação do P/E (%) = (Peso Real da Criança / Peso Esperado no P50 para Estatura Real) &times; 100</strong>"
+        ],
+        [
+          "p",
+          "<strong>Adequação da E/I (%) = (Estatura Real da Criança / Estatura no P50 para Idade e Sexo) &times; 100</strong>"
+        ],
+        [
+          "t",
+          [
+            "Classificação de Waterlow",
+            "Peso/Estatura (P/E)<br>(Ponto de corte: 90%)",
+            "Estatura/Idade (E/I)<br>(Ponto de corte: 95%)",
+            "Denominação Clínica e Mecanismo Temporal"
+          ],
+          [
+            [
+              "<strong>Eutrófico (Normal)</strong>",
+              "<strong>&gt; 90%</strong>",
+              "<strong>&gt; 95%</strong>",
+              "Criança sem emagrecimento agudo e sem deficit estatural crônico."
+            ],
+            [
+              "<strong>Desnutrido Agudo (Wasted / Magro)</strong>",
+              "<strong>&le; 90%</strong> (Emagrecido)",
+              "<strong>&gt; 95%</strong> (Estatura Normal)",
+              "Processo <strong>agudo e recente</strong> de privação alimentar ou doença consumptiva (ex: diarreia aguda prolongada). A criança perdeu peso rapidamente, mas não houve tempo biológico suficiente para comprometer o crescimento ósseo linear."
+            ],
+            [
+              "<strong>Desnutrido Crônico (Stunted / Nanico / Pretérito)</strong>",
+              "<strong>&gt; 90%</strong> (Peso Proporcional)",
+              "<strong>&le; 95%</strong> (Baixa Estatura)",
+              "Processo de <strong>inanição crônica de longa duração no passado</strong>. A criança desacelerou seu ritmo de crescimento para se adaptar à privação energética contínua; no momento da consulta, ela possui peso proporcional à sua baixa estatura (\"pequena, mas proporcional\"), sem emagrecimento agudo ativo."
+            ],
+            [
+              "<strong>Desnutrido Crônico Agudizado (Wasted and Stunted)</strong>",
+              "<strong>&le; 90%</strong> (Emagrecido)",
+              "<strong>&le; 95%</strong> (Baixa Estatura)",
+              "A pior situação clínica: uma criança que já apresentava <strong>comprometimento crônico linear prévio e que sofreu uma nova agressão aguda recente</strong> que levou à perda ponderal adicional."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3. Critérios Modernos das Curvas de Escore-Z da OMS 2006 (Adotados pelo SISVAN / Ministério da Saúde)"
+        ],
+        [
+          "p",
+          "O Escore-Z (desvio-padrão em relação à mediana populacional de referência) padroniza internacionalmente a avaliação nutricional por faixas etárias estritas:"
+        ],
+        [
+          "t",
+          [
+            "Índice Antropométrico da OMS",
+            "Escore-Z &lt; -3 DP",
+            "Escore-Z entre -3 e &lt; -2 DP",
+            "Escore-Z entre -2 e +1 DP",
+            "Escore-Z &gt; +1 a +2 DP",
+            "Escore-Z &gt; +2 DP"
+          ],
+          [
+            [
+              "<strong>Peso para Idade (P/I)</strong><br>(&lt; 10 anos)",
+              "Muito baixo peso para a idade",
+              "Baixo peso para a idade",
+              "Peso adequado para a idade (Eutrofia)",
+              "Peso elevado para a idade",
+              "Peso elevado para a idade"
+            ],
+            [
+              "<strong>Estatura para Idade (E/I)</strong><br>(todas as idades)",
+              "Muito baixa estatura para a idade",
+              "Baixa estatura para a idade",
+              "Estatura adequada para a idade",
+              "-",
+              "Estatura elevada"
+            ],
+            [
+              "<strong>Peso para Estatura (P/E)</strong><br>(&lt; 5 anos)",
+              "<strong>Magreza Acentuada (Desnutrição Aguda Grave)</strong>",
+              "<strong>Magreza (Desnutrição Aguda Moderada)</strong>",
+              "Eutrofia",
+              "Risco de sobrepeso",
+              "Sobrepeso (&gt; +2 DP) / Obesidade (&gt; +3 DP)"
+            ],
+            [
+              "<strong>IMC para Idade (IMC/I)</strong>",
+              "<strong>Magreza Acentuada</strong>",
+              "<strong>Magreza</strong>",
+              "Eutrofia",
+              "Risco de sobrepeso / Sobrepeso",
+              "Obesidade / Obesidade Grave"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Perímetro Braquial Médio (PB / MUAC): Triagem de Emergência"
+        ],
+        [
+          "p",
+          "O <strong>Perímetro Braquial Médio (Mid-Upper Arm Circumference - MUAC)</strong> é uma fita métrica colorida padronizada aplicada no ponto médio entre o acrômio escapular e o olécrano ulnar do braço esquerdo estendido da criança entre <strong>6 e 59 meses de idade</strong>. Por sofrer pouca variação fisiológica nessa faixa etária, reflete diretamente a reserva de massa muscular e tecido adiposo subcutâneo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>MUAC &lt; 115 mm (Faixa Vermelha):</strong> <strong>Desnutrição Aguda Grave (Severe Acute Malnutrition - SAM)</strong>. Apresenta risco relativo de óbito de 9 a 11 vezes superior ao normal. Critério diagnóstico imediato e mandatório para inclusão em programas terapêuticos de emergência;",
+            "<strong>MUAC entre 115 mm e 124 mm (Faixa Amarela):</strong> Desnutrição Aguda Moderada (MAM);",
+            "<strong>MUAC &ge; 125 mm (Faixa Verde):</strong> Estado nutricional adequado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "formas-clinicas-graves-marasmo-vs-kwashiorkor",
+      0,
+      [
+        [
+          "2",
+          "3. Formas Clínicas Graves: Marasmo vs Kwashiorkor e Fisiopatologia do Edema"
+        ],
+        [
+          "3",
+          "O Espectro da Desnutrição Grave: Marasmo vs Kwashiorkor"
+        ],
+        [
+          "p",
+          "A Desnutrição Aguda Grave (SAM) manifesta-se sob dois fenótipos clínicos e fisiopatológicos diametralmente opostos, decorrentes do balanço diferencial entre calorias totais e aporte proteico:"
+        ],
+        [
+          "t",
+          [
+            "Característica Clínica e Fisiopatológica",
+            "MARASMO<br>(Desnutrição Calórica Pura / \"Forma Seca\")",
+            "KWASHIORKOR<br>(Desnutrição Proteica / \"Forma Úmida\")"
+          ],
+          [
+            [
+              "<strong>Etiologia Nutricional e Dieta</strong>",
+              "<strong>Deficiência global e equilibrada de calorias e proteínas.</strong> Privação alimentar extrema contínua (inanição pura por desmame precoce total sem reposição láctea em lactentes jovens &lt; 1 ano).",
+              "<strong>Deficiência proteica grave e desbalanceada na presença de ingestão calórica de carboidratos.</strong> Ocorre tipicamente após o desmame em crianças entre 1 e 4 anos de idade alimentadas exclusivamente com papas de amido, farináceos, mandioca ou tubérculos (\"a doença do primeiro filho quando nasce o segundo\")."
+            ],
+            [
+              "<strong>Mecanismo Metabólico e Níveis de Insulina</strong>",
+              "<strong>Adaptação metabólica com hipoinsulinemia acentuada.</strong> A insulina baixa permite lipólise contínua com queima total das reservas de gordura e proteólise muscular para fornecimento de aminoácidos ao fígado, preservando a síntese hepática de albumina.",
+              "<strong>Falha de adaptação metabólica com hiperinsulinemia relativa.</strong> O consumo exclusivo de carboidratos estimula a secreção persistente de insulina, que <em>bloqueia a lipólise periférica</em>. O fígado sofre desabastecimento crítico de aminoácidos essenciais, entrando em falência de síntese de proteínas estruturais e de transporte."
+            ],
+            [
+              "<strong>Edema Nutricional</strong>",
+              "<strong>TOTALMENTE AUSENTE.</strong> É uma forma \"seca\" de desnutrição.",
+              "<strong>OBRIGATÓRIO E MARCANTE (PATOGNOMÔNICO).</strong> Edema gravitacional bilateral simétrico com cacifo (sinal de Godet positivo), que se inicia nos pés e tornozelos, ascende para pernas e coxas e atinge a anasarca com ascite e edema periorbitário e facial (\"fácies em lua cheia\")."
+            ],
+            [
+              "<strong>Massa Muscular e Tecido Adiposo</strong>",
+              "<strong>Consunção muscular extrema e desaparecimento total do panículo adiposo.</strong> Costelas, clavículas e fêmures visíveis sob a pele; nádegas com atrofia em \"saquinho de tabaco\"; perda da gordura malar profunda (bola de Bichat), resultando em <strong>fácies senil ou simiesca</strong> (fácies de velhinho).",
+              "Perda de massa muscular mascarada pelo edema gravitacional; tecido adiposo subcutâneo discretamente preservado em algumas regiões."
+            ],
+            [
+              "<strong>Fígado e Esteatose Hepática</strong>",
+              "Fígado de tamanho normal ou diminuído, sem infiltração gordurosa.",
+              "<strong>HEPATOMEGALIA MACIÇA INDOLOR POR ESTEATOSE HEPÁTICA GRAVE.</strong> O fígado sintetiza triglicerídeos a partir do excesso de carboidratos da dieta, mas é incapaz de exportá-los para o sangue devido à ausência de apolipoproteínas (ApoB-100) para formação das lipoproteínas de muito baixa densidade (VLDL). O parênquima hepático torna-se amarelo-pálido e ingurgitado de gordura."
+            ],
+            [
+              "<strong>Alterações Cutâneas e de Fâneros</strong>",
+              "Pele seca, frouxa, pregueada, sem turgor, sem lesões inflamatórias exuberantes. Cabelos ralos, mas sem descoloração marcante.",
+              "• <strong>Dermatose Pelagroide em Placas (\"Tintas Descamadas\" / \"Pele em Mosaico\"):</strong> Áreas de hiperpigmentação eritematosa que ulceram e descamam em grandes placas de bordas elevadas, deixando a derme crua exposta (lembrando tinta descascada em parede velha ou pavimentação asfáltica envernizada), principalmente em períneo, nádegas e coxas;<br>• <strong>\"Sinal da Bandeira\" no Cabelo:</strong> Faixas transversais alternadas de despigmentação avermelhada/acinzentada (períodos de privação proteica grave com deficiência de tirosina e melanina) e faixas escuras normais (períodos de melhora nutricional). Cabelos finos, desvitalizados, que caem aos tufos sem dor."
+            ],
+            [
+              "<strong>Comportamento Psicomotor e Humor</strong>",
+              "Criança <strong>alerta, ansiosa, voraz</strong>, olha ativamente para o ambiente em busca de alimento, apetite insaciável (\"lactente famélico\").",
+              "<strong>Apatia extrema, prostração, letargia, indiferença profunda ao meio e aos estímulos afetivos, fácies de sofrimento crônico, irritabilidade ao ser tocada e ANOREXIA INTENSA</strong> (recusa veemente da alimentação)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Verdadeira Fisiopatologia do Edema no Kwashiorkor"
+        ],
+        [
+          "p",
+          "Durante décadas, ensinou-se equivocadamente que o edema do Kwashiorkor decorria exclusivamente da queda da pressão oncótica intravascular secundária à hipoalbuminemia (Equação de Starling). Pesquisas moleculares modernas demonstraram que a gênese do edema nutricional é complexa e multifatorial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estresse Oxidativo Severo e Peroxidação Lipídica:</strong> A deficiência aguda de aminoácidos sulfurados precursores (metionina e cisteína) associada à carência de cofatores enzimáticos antioxidantes (zinco, selênio, glutationa peroxidase e vitaminas C e E) desencadeia uma tempestade de radicais livres de oxigênio que peroxidam os lipídios das membranas endoteliais capilares;",
+            "<strong>Aumento da Permeabilidade Capilar Sistêmica:</strong> O dano oxidativo rompe a integridade da barreira endotelial, provocando extravasamento maciço de plasma e proteínas do compartimento vascular para o interstício;",
+            "<strong>Disfunção da Bomba de Na+/K+-ATPase e Retenção Celular de Líquidos:</strong> A falência energética celular inibe as bombas iônicas dependentes de ATP nas membranas celulares, resultando em acúmulo intracelular anormal de íons sódio e água, com tumefação e balonamento celular."
+          ]
+        ]
+      ]
+    ],
+    [
+      "manejo-hospitalar-10-passos-oms-sbp",
+      0,
+      [
+        [
+          "2",
+          "4. Os 10 Passos do Manejo Hospitalar da Desnutrição Aguda Grave (OMS / SBP)"
+        ],
+        [
+          "3",
+          "Estrutura Cronológica do Tratamento em Três Fases"
+        ],
+        [
+          "p",
+          "O manejo da criança com Desnutrição Aguda Grave (SAM) com complicações clínicas ou anorexia deve ser realizado obrigatoriamente em regime de <strong>internação hospitalar</strong>, orientado pelo protocolo internacional em <strong>10 Passos da Organização Mundial da Saúde (OMS)</strong>, homologado pelo Ministério da Saúde e Sociedade Brasileira de Pediatria (SBP). O tratamento divide-se em três fases cronológicas e funcionais sucessivas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fase 1: Estabilização (Dias 1 a 7):</strong> O objetivo NÃO É promover ganho acelerado de peso! O foco exclusivo é a sobrevivência imediata: corrigir a hipoglicemia, reverter a hipotermia, tratar a desidratação e o desequilíbrio eletrolítico com extrema cautela, tratar infecções ocultas e restabelecer a função metabólica inicial com dieta hipoproteica (Fórmula F-75). O peso pode até cair nos primeiros dias devido à regressão do edema nutricional;",
+            "<strong>Fase 2: Transição (Dias 8 a 14):</strong> A criança recupera o apetite espontâneo e o edema regride. Inicia-se a introdução progressiva de fórmulas de maior densidade calórica e proteica (F-100 ou RUTF);",
+            "<strong>Fase 3: Reabilitação e Alta (Semanas 2 a 6):</strong> Fase de crescimento compensatório acelerado (catch-up growth), com ganho ponderal vigoroso (&ge; 10 g/kg/dia), estimulação afetiva e treinamento familiar para o cuidado domiciliar."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Passo Operacional",
+            "Fase do Manejo",
+            "Conduta Clínica Padronizada e Fármacos de Escolha",
+            "Armadilhas e Erros Fatais Proscritos"
+          ],
+          [
+            [
+              "<strong>1. Prevenir e Tratar a Hipoglicemia</strong>",
+              "Estabilização (Dias 1–2)",
+              "Considera-se hipoglicemia qualquer glicemia capilar <strong>&lt; 54 mg/dL (3,0 mmol/L)</strong>. Se paciente consciente: administrar imediatamente 50 mL de Soro Glicosado a 10% por via oral ou SNG, seguido da primeira oferta de F-75. Se paciente em torpor ou coma: <strong>Glicose a 10% venosa na dose de 5 mL/kg em bólus lento</strong>. Oferecer alimentação a cada 2 horas dia e noite.",
+              "Jamais usar glicose hipertônica a 50% em bólus sem diluição prévia no lactente desnutrido (risco de choque osmótico e hemorragia cerebral)."
+            ],
+            [
+              "<strong>2. Prevenir e Tratar a Hipotermia</strong>",
+              "Estabilização (Dias 1–2)",
+              "Temperatura axilar <strong>&lt; 35,5 ºC (ou retal &lt; 36,0 ºC)</strong>. Aquecer o quarto (25 ºC a 28 ºC), colocar agasalhos e gorro de lã na criança, utilizar o <strong>Método Canguru (contato pele a pele contínuo com a mãe)</strong>, aquecedor radiante ou lâmpada de aquecimento segura. Monitorar temperatura a cada 2 horas.",
+              "<strong>NUNCA usar bolsas de água quente diretamente sobre a pele</strong> do desnutrido (risco de queimaduras térmicas extensas de terceiro grau por ausência de gordura isolante)."
+            ],
+            [
+              "<strong>3. Prevenir e Tratar a Desidratação</strong>",
+              "Estabilização (Dias 1–2)",
+              "<strong>PROIBIÇÃO FORMAL DE HIDRATAÇÃO VENOSA RÁPIDA!</strong> Usar reidratação oral ou por SNG com solução especial de baixa osmolaridade: <strong>ReSoMal (Rehydration Solution for Malnutrition)</strong> na dose de 5 mL/kg a cada 30 minutos nas primeiras 2 horas, seguido de 5 a 10 mL/kg/hora até a hidratação completa (máximo de 10 horas).",
+              "<strong>ERRO LETAL:</strong> A hidratação venosa rápida (Planos B ou C convencionais) precipita <strong>Insuficiência Cardíaca Congestiva Aguda com Edema Pulmonar Fatal</strong> em horas, devido à atrofia miocárdica e rigidez ventricular desnutrida. A hidratação venosa é restrita exclusivamente ao paciente em <strong>choque circulatório descompensado</strong> com pulsos impalpáveis e letargia."
+            ],
+            [
+              "<strong>4. Corrigir Distúrbios Eletrolíticos</strong>",
+              "Estabilização (Dias 1–7)",
+              "Todos os desnutridos graves possuem <strong>excesso de sódio intracelular</strong> associado a <strong>depleção maciça de potássio e magnésio corporal total</strong>. Suplementar Potássio (3 a 4 mEq/kg/dia) e Magnésio (0,4 a 0,6 mEq/kg/dia) adicionados à dieta e ao ReSoMal.",
+              "<strong>NÃO ADMINISTRAR SÓDIO ADICIONAL!</strong> O uso de soros salinos hipertônicos desencadeia retenção hídrica maciça, agrava o edema e deflagra falência miocárdica."
+            ],
+            [
+              "<strong>5. Tratar e Prevenir Infecções</strong>",
+              "Estabilização (Dias 1–7)",
+              "A inflamação clínica é silenciosa (o desnutrido grave tem sepse grave sem febre e sem leucocitose). <strong>ANTIBIOTICOTERAPIA EMPÍRICA DE LARGO ESPECTRO É MANDATÓRIA PARA TODOS OS PACIENTES HOSPITALIZADOS:</strong><br>• Se sem complicações graves: Amoxicilina oral por 5 a 7 dias;<br>• Se com choque, letargia, hipotermia ou infecção localizada: <strong>Ampicilina venosa (50 mg/kg a cada 6h) + Gentamicina venosa (7,5 mg/kg em dose única diária)</strong> por 7 dias. Adicionar Metronidazol se suspeita de supercrescimento bacteriano intestinal ou infecção anaeróbia.",
+              "Jamais aguardar febre, hemogramas ou culturas para iniciar o antibiótico em uma criança com desnutrição aguda grave."
+            ],
+            [
+              "<strong>6. Corrigir Deficiências de Micronutrientes</strong>",
+              "Estabilização e Reabilitação",
+              "• <strong>Vitamina A oral em Megadose:</strong> Administrada no <strong>Dia 1, Dia 2 e repetida 14 dias após</strong> (Doses: 50.000 UI para &lt; 6 meses; 100.000 UI para 6 a 12 meses; 200.000 UI para &gt; 12 meses);<br>• <strong>Ácido Fólico:</strong> 5 mg por via oral no Dia 1, seguido de 1 mg/dia contínuo;<br>• <strong>Zinco (2 mg/kg/dia)</strong> e <strong>Cobre (0,3 mg/kg/dia)</strong> misturados aos alimentos.",
+              "A megadose de Vitamina A deve ser realizada em todos os desnutridos graves internados, mesmo na ausência de lesões oculares aparentes, para restaurar a barreira mucosa e a imunidade celular."
+            ],
+            [
+              "<strong>7. REGRA DE OURO: ATRASAR A INTRODUÇÃO DO FERRO!</strong>",
+              "<strong>PROIBIDO na Fase 1!</strong> Iniciar somente na Fase de Reabilitação (a partir da 2ª semana).",
+              "O sulfato ferroso (3 mg/kg/dia de ferro elementar) deve ser iniciado <strong>APENAS quando a criança estiver clinicamente estável, afebril, com infecções controladas, edema reabsorvido e ganhando peso ativamente na Fase de Reabilitação</strong>.",
+              "<strong>O FERRO É FORMALMENTE CONTRAINDICADO NA FASE DE ESTABILIZAÇÃO!</strong> Na fase aguda, a síntese de transferrina hepática está colapsada; o ferro livre sérico não ligado atua como potente gerador de radicais livres altamente citotóxicos via Reação de Fenton e estimula a proliferação bacteriana sistêmica, disparando <strong>sepse fulminante letal</strong>."
+            ],
+            [
+              "<strong>8. Iniciar Alimentação Cautelosa (Cautious Feeding)</strong>",
+              "Estabilização (Dias 1–7)",
+              "Uso exclusivo da <strong>Fórmula F-75 da OMS</strong> (75 kcal e 0,9 g de proteína por 100 mL). Metas iniciais restritas: <strong>100 kcal/kg/dia de energia e 1 a 1,5 g/kg/dia de proteínas</strong>, com líquidos limitados a 130 mL/kg/dia (ou 100 mL/kg/dia se anasarca). Fracionar em 8 a 12 refeições ao dia (a cada 2 ou 3 horas).",
+              "Não tentar forçar ganho de peso precoce na fase 1. Iniciar fórmulas ricas em proteínas (F-100 ou leite integral puro) na fase de estabilização sobrecarrega o fígado e rins imaturos e deflagra a fatal <strong>Síndrome de Realimentação</strong>."
+            ],
+            [
+              "<strong>9. Alcançar a Recuperação Ponderal (Catch-up Growth)</strong>",
+              "Transição e Reabilitação (Dias 8 a 42)",
+              "Quando a criança recuperar o apetite espontâneo e o edema regredir completamente, faz-se a transição para a <strong>Fórmula F-100</strong> (100 kcal e 2,9 g de proteína por 100 mL) ou <strong>RUTF (Ready-to-Use Therapeutic Food)</strong> em pasta de amendoim enriquecida. Meta calórica elevada: <strong>150 a 220 kcal/kg/dia</strong> com 4 a 6 g/kg/dia de proteína. Meta de ganho ponderal vigoroso: <strong>&ge; 10 g/kg/dia</strong>.",
+              "A transição deve ser gradual ao longo de 2 a 3 dias. Se o ganho de peso for &lt; 5 g/kg/dia na reabilitação, investigar infecção oculta não tratada (tuberculose, HIV, giardíase) ou oferta calórica insuficiente."
+            ],
+            [
+              "<strong>10. Estimulação Sensorial, Apoio Afetivo e Preparo da Alta</strong>",
+              "Reabilitação e Seguimento",
+              "Ambiente acolhedor e estimulante com brinquedos, envolvimento maternal direto na alimentação da criança, fisioterapia motora, terapia ocupacional e educação nutricional dos pais. Preparar a alta hospitalar vinculando a família à equipe da Atenção Primária para monitoramento semanal.",
+              "Não dar alta hospitalar antes que a criança tenha concluído o esquema de vacinação atrasado, esteja em ganho de peso consolidado e a família saiba preparar os alimentos com segurança e higiene."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Solução ReSoMal: Por Que Não Usar o Soro da OMS Convencional?"
+        ],
+        [
+          "p",
+          "O Soro de Reidratação Oral (SRO) padrão da OMS formulado para diarreia secretora (como cólera) possui concentração de sódio de 75 mEq/L e potássio de 20 mEq/L. Se administrado ao lactente com desnutrição aguda grave, essa carga maciça de sódio sobrecarrega o sistema circulatório, atraindo água para o intravascular e provocando edema agudo de pulmão. A <strong>Solução ReSoMal (Rehydration Solution for Malnutrition)</strong> foi concebida especificamente para o metabolismo do desnutrido:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Menor concentração de Sódio: 45 mEq/L</strong> (reduz o risco de sobrecarga hidrossalina);",
+            "<strong>Maior concentração de Potássio: 40 mEq/L</strong> (essencial para repor a grave depleção intracelular de potássio);",
+            "<strong>Magnésio: 3 mEq/L</strong> (sem magnésio, a bomba Na+/K+-ATPase não funciona e o potássio não entra nas células);",
+            "Adição de glicose e sacarose (10%) para prevenção simultânea da hipoglicemia e facilitação do cotransporte de água e eletrólitos via transportador SGLT-1 intestinal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sindrome-de-realimentacao-refeeding",
+      0,
+      [
+        [
+          "2",
+          "5. Síndrome de Realimentação (Refeeding Syndrome): Fisiopatologia e Prevenção"
+        ],
+        [
+          "3",
+          "O Perigo Fatal da Realimentação Acelerada"
+        ],
+        [
+          "p",
+          "A <strong>Síndrome de Realimentação</strong> é uma complicação metabólica aguda potencialmente letal que ocorre quando um indivíduo cronicamente desnutrido recebe uma oferta excessiva e súbita de calorias e carboidratos por via enteral ou parenteral. Historicamente documentada nos prisioneiros dos campos de concentração da Segunda Guerra Mundial após a libertação, a síndrome continua sendo uma das maiores causas de morte iatrogênica em enfermarias pediátricas quando os protocolos de realimentação cautelosa são ignorados."
+        ],
+        [
+          "3",
+          "A Cascata Fisiopatológica da Síndrome de Realimentação"
+        ],
+        [
+          "o",
+          [
+            "<strong>Pico de Secreção de Insulina:</strong> A infusão rápida de carboidratos desencadeia uma liberação maciça e desproporcional de insulina pelas células beta do pâncreas;",
+            "<strong>Captação Celular Abrupta de Eletrólitos:</strong> A insulina estimula a bomba Na+/K+-ATPase e os transportadores celulares de fosfato, promovendo a entrada celular súbita e simultânea de <strong>Fósforo, Potássio e Magnésio</strong> para o interior das células musculares, hepáticas e eritrocitárias para suportar a glicólise intracelular e a fosforilação de ADP em ATP;",
+            "<strong>A Tríade Bioquímica Clássica da Síndrome de Realimentação:</strong>\n    <p><strong>&darr; Fosfato Sérico (Hipofosfatemia Severa), &darr; Potássio Sérico (Hipocalemia), &darr; Magnésio Sérico (Hipomagnesemia)</strong></p>",
+            "<strong>Consequências Orgânicas Catastróficas:</strong>\n    <ul>\n      <li><strong>Hipofosfatemia Crítica (&lt; 1,0 mg/dL):</strong> Leva ao colapso imediato da produção intracelular de ATP e depleção de 2,3-difosfoglicerato (2,3-DPG) nas hemácias. A ausência de 2,3-DPG desvia a curva de dissociação da hemoglobina para a esquerda, impedindo a liberação de oxigênio para os tecidos periféricos, resultando em: <strong>falência miocárdica aguda (choque cardiogênico), parada respiratória por fadiga da musculatura diafragmática, rabdomiólise aguda, convulsões, coma e hemólise intravascular aguda</strong>;",
+            "<strong>Hipocalemia e Hipomagnesemia Acentuadas:</strong> Desencadeiam arritmias ventriculares malignas letais (fibrilação ventricular, torsades de pointes) e íleo paralítico adinâmico;",
+            "<strong>Retenção de Água e Sódio Induzida pela Insulina:</strong> A hiperinsulinemia estimula diretamente a reabsorção tubular renal de sódio, expandindo o volume extracelular e provocando edema periférico agudo e edema agudo de pulmão."
+          ]
+        ],
+        [
+          "3",
+          "Estratégias Clínicas de Prevenção e Monitoramento"
+        ],
+        [
+          "t",
+          [
+            "Estratégia Preventiva",
+            "Como Executar no Paciente sob Risco Nutricional Grave"
+          ],
+          [
+            [
+              "<strong>Alimentação Cautelosa Inicial (Start Low, Go Slow)</strong>",
+              "Iniciar a dieta na Fase de Estabilização com <strong>metas calóricas baixas (50% a 70% das necessidades diárias estimadas, cerca de 75 a 100 kcal/kg/dia)</strong> utilizando a fórmula <strong>F-75</strong>. Aumentar o aporte calórico de forma lenta e escalonada ao longo de 4 a 7 dias apenas se o paciente estiver clinicamente e bioquimicamente estável."
+            ],
+            [
+              "<strong>Suplementação Precoce de Tiamina (Vitamina B1)</strong>",
+              "A tiamina é o cofator essencial das enzimas transcetolase, piruvato desidrogenase e alfa-cetoglutarato desidrogenase da glicólise e ciclo de Krebs. Administrar <strong>Tiamina oral ou venosa (50 a 100 mg/dia)</strong> antes ou concomitantemente ao início da realimentação para prevenir o desenvolvimento de <strong>Encefalopatia de Wernicke e Beribéri Úmido</strong> (insuficiência cardíaca de alto débito e acidose lática grave)."
+            ],
+            [
+              "<strong>Monitoramento Laboratorial Seriado Estrito</strong>",
+              "Dosagem sérica diária obrigatória de <strong>Fósforo inorgânico, Potássio, Magnésio, Cálcio, Ureia, Creatinina e Glicemia</strong> nos primeiros 3 a 5 dias de realimentação. Diante de qualquer queda assintomática de fosfato ou potássio, realizar reposição venosa ou oral profilática imediata e reduzir o ritmo de progressão calórica da dieta."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "deficiencias-especificas-micronutrientes",
+      0,
+      [
+        [
+          "2",
+          "6. Deficiências Específicas de Micronutrientes: Vitaminas A, D, C, B1, Niacina, Zinco e Ferro"
+        ],
+        [
+          "3",
+          "O Conceito da \"Fome Oculta\""
+        ],
+        [
+          "p",
+          "A carência isolada ou combinada de vitaminas e oligoelementos (micronutrientes) é denominada \"fome oculta\". Pode ocorrer mesmo em crianças com ingestão calórica aparentemente preservada ou em crianças com obesidade consumindo dietas ultraprocessadas hipercalóricas e hiponutritivas."
+        ],
+        [
+          "t",
+          [
+            "Micronutriente",
+            "Papel Fisiológico Central",
+            "Manifestações Clínicas Clássicas de Deficiência",
+            "Prevenção e Tratamento de Escolha"
+          ],
+          [
+            [
+              "<strong>Vitamina A</strong><br>(Retinol)",
+              "Essencial para a síntese de rodopsina nos bastonetes da retina (visão escotópica/noturna), integridade epitelial e imunidade celular mediada por linfócitos T.",
+              "• <strong>Cegueira Noturna (Hemeralopia):</strong> Primeiro sintoma funcional;<br>• <strong>Manchas de Bitot:</strong> Placas triangulares opacas, esbranquiçadas e espumosas na conjuntiva bulbar perilímbica temporal, compostas por epitélio queratinizado descamado;<br>• <strong>Xeroftalmia e Ceratomalácia:</strong> Ressecamento da córnea que evolui para amolecimento gelatinoso liquefativo estromal, perfuração corneana e perda visual irreversível;<br>• Aumento drástico da gravidade do sarampo e diarreias.",
+              "<strong>Programa Nacional de Suplementação de Vitamina A:</strong> Megadoses orais administradas a cada 6 meses para crianças de 6 a 59 meses no SUS (100.000 UI aos 6-11 meses; 200.000 UI dos 12 aos 59 meses). No tratamento de ceratomalácia: administrar megadose no Dia 1, Dia 2 e Dia 14."
+            ],
+            [
+              "<strong>Vitamina D e Cálcio</strong><br>(Colecalciferol)",
+              "Mineralização do tecido osteoide trabecular e cortical e homeostase de cálcio e fósforo via PTH.",
+              "<strong>RAQUITISMO CARENCIAL DA INFÂNCIA:</strong><br>• Craniotabes (sensação de bola de pingue-pongue à palpação do osso parietal/occipital no lactente jovem);<br>• Alargamento metafisário visível de punhos e tornozelos;<br>• <strong>\"Rosário Raquítico\":</strong> Nódulos proeminentes nas junções costocondrais anteriores do tórax;<br>• <strong>Sulco de Harrison:</strong> Depressão horizontal na base do tórax pela tração do diafragma sobre as costelas amolecidas;<br>• Deformidades arqueadas dos membros inferiores ao iniciar a marcha (Genu varum ou genu valgum).<br><em>Laboratório:</em> Fósforo baixo ou normal, Cálcio normal/baixo, PTH muito elevado e <strong>Fosfatase Alcalina marcadamente elevada</strong>.",
+              "<strong>Profilaxia Universal da SBP:</strong> Toda criança em aleitamento materno ou fórmula &lt; 1 litro/dia deve receber suplementação de <strong>400 UI/dia de Vitamina D3 no primeiro ano de vida</strong> (iniciada na 1ª semana de vida) e <strong>600 UI/dia dos 12 aos 24 meses</strong>. Tratamento do raquitismo: 2.000 a 5.000 UI/dia de Vitamina D3 oral por 12 semanas associada a cálcio elementar."
+            ],
+            [
+              "<strong>Zinco</strong>",
+              "Cofator de mais de 300 enzimas celulares, replicação de DNA (domínios de zinco), regeneração dos enterócitos da mucosa intestinal e imunidade celular.",
+              "• <strong>Acrodermatite Enteropática:</strong> Doença genética autossômica recessiva (mutação do gene SLC39A4) ou adquirida grave; manifesta-se por erupções cutâneas eritematosas, vesicobolhosas e descamativas peri-orificiais (ao redor de boca, nariz e ânus) e nas extremidades acrais (dedos das mãos e pés);<br>• <strong>Diarreia crônica ou intratável</strong> e má absorção intestinal;<br>• <strong>Alopecia total ou difusa</strong> e atraso de cicatrização de feridas;<br>• Retardo do crescimento linear e hipogonadismo em adolescentes.",
+              "Suplementação oral de Zinco elementar na dose de <strong>1 a 3 mg/kg/dia</strong> (ou sulfato de zinco 10 mg/dia para &lt; 6 meses e 20 mg/dia para &gt; 6 meses por 10 a 14 dias em episódios de diarreia aguda para redução de recorrências)."
+            ],
+            [
+              "<strong>Ferro</strong>",
+              "Síntese da hemoglobina eritrocitária, mioglobina muscular, citocromos e mielinização do sistema nervoso central no neurodesenvolvimento precoce.",
+              "<strong>ANEMIA FERROPRIVA (A CARÊNCIA MAIS COMUM DO MUNDO):</strong><br>• Palidez cutâneo-mucosa, fadiga, irritabilidade, taquicardia aos esforços;<br>• Perversão do apetite (<strong>Pica / Síndrome de Pica</strong>: geofagia - comer terra/barro, amilofagia - comer amido cru, pagofagia - mastigar gelo);<br>• Queilite angular, glossite atrófica com perda de papilas gustativas;<br>• <strong>Coiloníquia:</strong> Unhas quebradiças em formato côncavo de colher.<br><em>Laboratório:</em> Anemia microcítica e hipocrômica (VCM &lt; 80 fL, HCM &lt; 27 pg), <strong>RDW elevado (&gt; 14,5%)</strong>, <strong>Ferritina sérica reduzida</strong> e Capacidade Total de Ligação do Ferro (TIBC) elevada.",
+              "<strong>Profilaxia da SBP:</strong> Iniciar aos 3 meses de vida em prematuros (&lt; 37 semanas) ou baixo peso (&lt; 2.500 g); e iniciar aos 6 meses de vida na criança a termo e peso adequado mantendo até os 2 anos. Tratamento da anemia confirmada: <strong>Sulfato Ferroso na dose de 3 a 5 mg/kg/dia de ferro elementar por via oral</strong> em jejum ou associado a frutas cítricas (vitamina C potencializa absorção) por 3 a 6 meses."
+            ],
+            [
+              "<strong>Vitamina C</strong><br>(Ácido Ascórbico)",
+              "Cofator para a hidroxilação de prolina e lisina na síntese de colágeno maduro e função da parede endotelial vascular.",
+              "<strong>ESCORBUTO:</strong> Fragilidade capilar difusa com petéquias perifoliculares em \"saca-rolhas\", sangramento e hipertrofia gengival violácea exuberante com perda dentária, <strong>hemorragias subperiosteais dolorosas nos ossos longos</strong> (a criança chora intensamente ao ser manuseada e assume a <strong>\"Posição em Pernas de Rã\" / Pseudoparalisia de Parrot</strong> por dor esquelética excruciante), hematomas cutâneos e hemartroses.",
+              "Vitamina C oral na dose de 100 a 300 mg/dia por 1 a 2 semanas (resposta clínica rápida com remissão da dor óssea em 48 a 72 horas)."
+            ],
+            [
+              "<strong>Vitamina B1</strong><br>(Tiamina)",
+              "Metabolismo dos carboidratos e função neuromuscular e cardíaca.",
+              "<strong>BERIBÉRI:</strong><br>• <strong>Beribéri Seco:</strong> Polineuropatia periférica simétrica bilateral com queimação nas plantas dos pés, hiporreflexia e fraqueza motora ascendente;<br>• <strong>Beribéri Úmido:</strong> Insuficiência cardíaca congestiva de alto débito, taquicardia, cardiomegalia, anasarca e acidose lática severa;<br>• <strong>Encefalopatia de Wernicke:</strong> Tríade clássica de ataxia, oftalmoplegia/nistagmo e confusão mental aguda.",
+              "Tiamina venosa ou intramuscular (50 a 100 mg/dia) de urgência."
+            ],
+            [
+              "<strong>Niacina / Vitamina B3</strong><br>(Ácido Nicotínico)",
+              "Síntese dos nucleotídeos de óxido-redução NAD e NADP essenciais à respiração celular mitocondrial.",
+              "<strong>PELAGRA (A DOENÇA DOS \"3 Ds\"):</strong><br>1. <strong>Dermatite Fotossensível:</strong> Eritema e hiperpigmentação bilateral e simétrica com descamação em áreas expostas à luz solar (pescoço: <strong>\"Colar de Casal\"</strong>; dorso das mãos e pés);<br>2. <strong>Diarreia:</strong> Má absorção, glossite e enterite crônica;<br>3. <strong>Demência / Delirium:</strong> Alterações de memória, insônia, apatia, confusão mental, depressão e psicose. Se não tratada, culmina no quarto \"D\": Desfecho letal (Death).",
+              "Nicotinamida oral na dose de 100 a 300 mg/dia dividida em tomadas por 3 a 4 semanas associada a complexo B e dieta balanceada."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-desnutricao-pediatria",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Pediátricos Estruturados e Discussão Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Lactente com Desnutrição Aguda Grave (Marasmo) Complicada"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lactente do sexo masculino, 8 meses de vida, natural e procedente de comunidade periférica de grande centro metropolitano, trazido pela mãe à Unidade de Pronto Atendimento (UPA) infantil. A mãe relata que a criança \"não ganha peso desde que parou de mamar no peito aos 2 meses\", sendo alimentada desde então com água de arroz e leite de vaca integral excessivamente diluído em água sem fervura prévia. Refere evacuações líquidas recorrentes nos últimos 30 dias. Nas últimas 24 horas, a criança apresentou prostração progressiva e recusa total das mamadas. Ao exame físico de admissão: emagrecimento esquelético cadavérico extremo; ausência total de panículo adiposo em tronco, membros e nádegas (pele flácida dobrada em \"saquinho de tabaco\"); atrofia da gordura facial malar conferindo <strong>fácies senil de velhinho</strong>. Peso: 4.100 g (escore-Z de Peso para Idade &lt; -4 DP; Peso para Estatura &lt; -3,5 DP); comprimento: 65 cm; <strong>MUAC: 102 mm</strong>. Ausência total de edema nos membros inferiores. Criança torporosa, letárgica, gemente, com extremidades frias, tempo de enchimento capilar de 4 segundos, pulsos femorais filiformes e taquicardia (FC: 175 bpm). Temperatura axilar: 35,1 ºC (hipotermia grave). Glicemia capilar na fita: 42 mg/dL (hipoglicemia severa)."
+        ],
+        [
+          "p",
+          "<strong>Discussão Passo a Passo e Conduta Imediata:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Nutricional e Sindrômico:</strong> Desnutrição Aguda Grave (SAM) sob a forma clínica clássica de <strong>MARASMO COMPLICADO</strong> com choque séptico/hipovolêmico, hipotermia e hipoglicemia;",
+            "<strong>Conduta Emergencial Prioritária (Passos 1 e 2 da OMS):</strong>\n    <ul>\n      <li><strong>Hipoglicemia com rebaixamento do sensório:</strong> Infundir imediatamente <strong>Glicose a 10% na dose de 5 mL/kg por via intravenosa lenta</strong> (20 mL de SG 10% em 5 minutos), reavaliando a glicemia capilar após 30 minutos;",
+            "<strong>Hipotermia grave (Tax 35,1 ºC):</strong> Despir roupas úmidas, colocar gorro térmico na cabeça, agasalhos secos e posicionar sob aquecedor radiante com monitoramento térmico contínuo a cada 2 horas. Incentivar o Método Canguru pele a pele assim que estabilizado;",
+            "<strong>Manejo do Choque Circulatório (Passo 3 da OMS):</strong>\n    <p>Por apresentar sinais inequívocos de choque (perfusão de 4s, pulsos filiformes, letargia), a hidratação venosa está excepcionalmente autorizada, mas <strong>MUITO DIFERENTE DA CRIANÇA EUTRÓFICA:</strong> infundir <strong>Soro Fisiológico a 0,9% (ou Ringer Lactato) na dose ultracautelosa de 15 mL/kg em 1 hora</strong> associado a glicose a 10% (1:1). Avaliar rigorosamente sinais vitais e ausculta cardíaca a cada 15 minutos: se a frequência respiratória aumentar ou surgirem estertores crepitantes em bases ou ritmo de galope (3ª bulha), suspender imediatamente o soro venoso pelo risco iminente de sobrecarga ventricular e edema pulmonar. Assim que os pulsos melhorarem, suspender a hidratação venosa e transitar imediatamente para a hidratação oral por SNG com <strong>ReSoMal</strong>;</p>",
+            "<strong>Antibioticoterapia Empírica Imediata (Passo 5 da OMS):</strong> Iniciar precocemente após coleta de hemocultura: <strong>Ampicilina venosa (50 mg/kg a cada 6h) + Gentamicina venosa (7,5 mg/kg em dose única diária)</strong> por 7 dias;",
+            "<strong>Início da Dieta e Restrições Formais (Passos 6, 7 e 8):</strong> Iniciar alimentação por sonda nasogástrica com fórmula <strong>F-75 da OMS</strong> fracionada em volumes de 11 mL a cada 2 horas dia e noite (100 kcal/kg/dia). Administrar Megadose de <strong>Vitamina A oral (100.000 UI)</strong> no Dia 1 e Dia 2. <strong>É FORMALMENTE PROIBIDO PRESCREVER SULFATO FERROSO NESTA FASE!</strong> O ferro só será introduzido após a 2ª semana quando a criança estiver clinicamente estável e ganhando peso na fase de reabilitação."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Pré-Escolar com Kwashiorkor Clássico e Dermatose em Placas"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menina de 2 anos e 3 meses de idade, trazida ao ambulatório de pediatria com história de \"inchaço generalizado no corpo\" que começou pelos pés e pernas há 3 semanas e piorou progressivamente. A mãe relata que a criança foi desmamada aos 18 meses após o nascimento do irmão mais novo e, devido a graves restrições financeiras, passou a receber alimentação exclusiva à base de mingau ralo de fécula de mandioca (polvilho) com açúcar e pequenas porções de arroz branco, sem carne, leite, feijão ou ovos. Há 2 semanas a criança tornou-se extremamente apática, silenciosa, recusa qualquer tentativa de alimentação com choro fraco e irritação quando manipulada. Ao exame físico: paciente em anasarca, com <strong>edema gravitacional bilateral simétrico com cacifo importante (sinal de Godet 4+/4+)</strong> estendendo-se dos pés até as coxas, ascite e edema periorbitário conferindo \"fácies de lua cheia\". Peso aferido: 10,2 kg (peso falsamente inflado pela retenção hídrica). Abdome volumoso, globoso, com <strong>hepatomegalia maciça indolor com borda hepática romba e lisa palpável a 5 cm abaixo do rebordo costal direito</strong>. Pele das nádegas, região perineal e membros inferiores com extensas placas hiperpigmentadas eritemato-acastanhadas confluentes que ulceram e descamam em retalhos (<strong>dermatose pelagroide em \"tintas descamadas\"</strong>). Cabelos finos, desvitalizados, quebradiços, com áreas alternadas de descoloração avermelhada e faixas castanhas normais (<strong>sinal da bandeira</strong>)."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta Especializada:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Nutricional:</strong> Desnutrição Aguda Grave (SAM) sob a forma clássica de <strong>KWASHIORKOR</strong> (edema gravitacional bilateral simétrico, esteatose hepática maciça com hepatomegalia, dermatose pelagroide em mosaico, sinal da bandeira nos cabelos e apatia com anorexia profunda);",
+            "<strong>Fisiopatologia da Hepatomegalia:</strong> A dieta rica em carboidratos gerou hiperinsulinemia relativa que bloqueou a lipólise e privou o fígado de aminoácidos para síntese de apolipoproteínas. O acúmulo intracelular de triglicerídeos não exportados distendeu os hepatócitos gerando esteatose hepática severa;",
+            "<strong>Manejo da Fase de Estabilização:</strong>\n    <ul>\n      <li>Internação hospitalar obrigatória em enfermaria aquecida;",
+            "Por apresentar anorexia extrema e recusa alimentar, passar <strong>sonda nasogástrica (SNG)</strong> com técnica estéril para infusão fracionada da <strong>Fórmula F-75</strong> (75 kcal/100 mL e 0,9 g de proteína/100 mL) em alíquotas a cada 2 ou 3 horas dia e noite;",
+            "<strong>NÃO PRESCREVER DIURÉTICOS (como furosemida) para tratar o edema!</strong> O edema do Kwashiorkor é decorrente de alteração da permeabilidade endotelial e disfunção celular. O uso de diuréticos diminui abruptamente o volume intravascular eficaz, precipitando choque hipovolêmico distributivo e insuficiência renal aguda prerenal fatal. O edema regredirá espontaneamente com a reabilitação proteica da dieta F-75 ao longo de 7 a 10 dias;",
+            "Antibioticoterapia empírica ampla com ampicilina e gentamicina venosas;",
+            "Curativos tópicos nas lesões de pele com vaselina estéril sólida e banhos mornos de água pura, evitando pomadas antissépticas abrasivas;",
+            "Suplementação de Vitamina A em megadose (200.000 UI oral) no Dia 1 e 2; ácido fólico e zinco; com suspensão absoluta de ferro elementar até a fase de reabilitação."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Lactente com Deformidades Ósseas e Raquitismo Carencial"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 14 meses de idade, nascido a termo com peso adequado, em aleitamento materno exclusivo prolongado até os 10 meses, momento em que foi introduzida alimentação complementar vegetariana restrita sem ingestão de carnes, peixes ou derivados lácteos. A família reside em apartamento com escassa exposição solar direta (a mãe refere que a criança \"nunca toma sol por medo de queimaduras na pele sensível\"). A mãe nunca ofereceu suplementos vitamínicos prescritos ao nascimento. Comparece à consulta porque a criança ainda não fica em pé nem dá passos sozinha e chora quando os pais tentam apoiá-lo no chão. Ao exame físico: paciente ativo, hipocorado 1+/4+, afebril. Perímetro cefálico acima do percentil 90 com proeminência das bossas frontais e parietais (\"cabeça em forma de caixa\" / caput quadratum). Palpação dos arcos costais anteriores evidencia <strong>nódulos ósseos volumosos salientes nas junções costocondrais dispostos em fileira bilateral (\"Rosário Raquítico\")</strong>. Depressão horizontal na base do tórax correspondente à inserção diafragmática (<strong>Sulco de Harrison</strong>). Inspeção dos membros superiores e inferiores demonstra <strong>alargamento bulboso das metáfises dos punhos e tornozelos</strong> com arqueamento lateral das tíbias e fêmures (genu varum acentuado). Frouxidão ligamentar generalizada e hipotonia muscular moderada."
+        ],
+        [
+          "p",
+          "<strong>Investigação Bioquímica, Radiológica e Conduta:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hipótese Diagnóstica:</strong> <strong>Raquitismo Carencial por Deficiência de Vitamina D e Cálcio</strong>, decorrente de aleitamento materno exclusivo prolongado sem suplementação profilática de colecalciferol associado à ausência total de síntese cutânea de vitamina D por falta de exposição solar aos raios UVB;",
+            "<strong>Perfil Bioquímico Laboratorial Esperado:</strong>\n    <ul>\n      <li>25-hidroxivitamina D sérica [25(OH)D]: severamente diminuída (&lt; 10 ng/mL; nível suficiente &ge; 20 ng/mL);",
+            "Cálcio Iônico/Sérico: normal ou ligeiramente diminuído (às custas do hiperparatireoidismo secundário compensatório);",
+            "Fósforo Sérico: diminuído (hipofosfatemia decorrente da fosfatúria induzida pelo PTH elevado);",
+            "<strong>Paratormônio (PTH): Marcadamente elevado</strong> (tentando mobilizar cálcio do osso e reabsorver nos túbulos renais);",
+            "<strong>Fosfatase Alcalina Sérica: Extremamente elevada</strong> (&gt; 800 a 1.500 U/L), refletindo intensa atividade osteoblástica de remodelamento ósseo sem mineralização da matriz;",
+            "<strong>Achados na Radiografia de Punhos e Joelhos (Padrão Radiológico Clássico):</strong>\n    <p>Alargamento, irregularidade e espessamento das linhas metafisárias dos ossos longos (rádio e ulna), perda da linha radiopaca de calcificação provisória, <strong>\"aspecto em taça\" (cupping)</strong> da metáfise e bordas desfiadas em <strong>\"ponta de pincel\" (fraying)</strong> associadas a adelgaçamento cortical generalizado;</p>",
+            "<strong>Tratamento Farmacológico Padronizado:</strong>\n    <ul>\n      <li>Administrar <strong>Colecalciferol (Vitamina D3) na dose de 2.000 UI/dia por via oral por 12 semanas</strong> (ou dose de ataque semanal supervisionada conforme protocolo);",
+            "Associar obrigatoriamente <strong>Cálcio elementar na dose de 500 mg/dia</strong> por via oral durante todo o período para prevenir a ocorrência de hipocalcemia aguda sintomática (tetania e convulsões hipocalcêmicas decorrentes da rápida mineralização da matriz desmineralizada - \"Síndrome dos Ossos Famintos / Hungry Bone Syndrome\");",
+            "Após 12 semanas e documentação de cura radiológica e normalização da fosfatase alcalina, manter a suplementação de manutenção profilática com 600 UI/dia de Vitamina D3 e orientar banhos de sol seguros e dieta rica em alimentos fortificados."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Lactente com Diarreia Crônica, Alopecia e Lesões Periorificiais"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lactente do sexo feminino, 6 meses de vida, nascida a termo, sem antecedentes neonatais mórbidos, que esteve em aleitamento materno exclusivo até os 5 meses com excelente crescimento. Há cerca de 4 semanas, a mãe introduziu fórmula infantil de partida e papas caseiras e reduziu as mamadas ao seio. Desde então, a criança desenvolveu evacuações líquidas frequentes (5 a 8 episódios/dia) sem sangue, associadas a perda ponderal progressiva (perdeu 800 g no último mês). Há 15 dias surgiram lesões dermatológicas avermelhadas, exsudativas e vesicobolhosas intensamente inflamatórias ao redor da boca, orifícios nasais, regiões perianal e perineal, com crostas espessas e fissuras dolorosas. Concomitantemente, a mãe notou queda maciça e difusa de todo o cabelo do couro cabeludo, sobrancelhas e cílios, evoluindo para <strong>alopecia quase completa</strong>. Vários tratamentos prévios com pomadas de nistatina, mupirocina e hidrocortisona foram totalmente ineficazes. Ao exame físico: irritada, com choro fácil, <strong>placas eritemato-descamativas e bolhosas periorificiais e acrais em dedos das mãos e pés</strong> com queilite angular severa e alopecia total."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tríade Clínica Patognomônica:</strong> A tríade de <strong>1. Erupções cutâneas periorificiais e acrais características; 2. Diarreia crônica/intratável; e 3. Alopecia difusa completa</strong> que surge tipicamente logo após o desmame do aleitamento materno é a apresentação clínica clássica da <strong>ACRODERMATITE ENTEROPÁTICA (Deficiência Grave de Zinco)</strong>;",
+            "<strong>Fisiopatologia Genética vs Nutricional:</strong> A forma congênita clássica decorre de mutação autossômica recessiva no gene <em>SLC39A4</em>, que codifica o transportador intestinal de zinco ZIP4 no duodeno e jejuno. Durante o aleitamento materno, a criança não apresenta sintomas porque o leite humano possui um ligante carreador de zinco de baixo peso molecular que permite absorção independente de ZIP4. O desmame precipita a queda catastrófica do zinco sérico;",
+            "<strong>Confirmação Laboratorial:</strong> Dosagem de <strong>Zinco Sérico marcadamente reduzido (&lt; 50 mcg/dL; normal &gt; 70 mcg/dL)</strong> e Fosfatase Alcalina sérica baixa (a fosfatase alcalina é uma enzima zinco-dependente);",
+            "<strong>Tratamento e Prognóstico:</strong> Suplementação imediata com <strong>Sulfato de Zinco oral na dose de 1 a 3 mg/kg/dia de zinco elementar</strong>. A resposta clínica é espetacular: a diarreia cessa em 24 a 48 horas, as lesões de pele cicatrizam completamente em 7 a 10 dias e o crescimento capilar se restabelece em 3 a 6 semanas, transformando o prognóstico da criança. Na forma hereditária, o tratamento com zinco oral é mantido por toda a vida."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas no Padrão ENAMED e Principais Bancas de Concurso"
+        ],
+        [
+          "3",
+          "Questão 1 (ENAMED / Inep - Pediatria)"
+        ],
+        [
+          "p",
+          "Um lactente de 11 meses de vida é levado à emergência de um hospital regional com quadro de desnutrição grave. Ao exame físico, encontra-se letárgico, afebril, com peso para estatura &lt; -3 desvios-padrão e presença de edema bilateral simétrico em pés e pernas (cacifo 3+/4+). Apresenta ainda hepatomegalia indolor a 4 cm do rebordo costal direito e lesões eritematodescamativas em nádegas e períneo. Não há diarreia ou vômitos no momento. De acordo com as diretrizes do Ministério da Saúde e da Organização Mundial da Saúde (OMS) para o manejo hospitalar da desnutrição aguda grave, assinale a conduta que é FORMALMENTE PROIBIDA na fase inicial de estabilização deste paciente:"
+        ],
+        [
+          "p",
+          "A) Administrar antibiótico empírico de largo espectro por via parenteral, mesmo na ausência de febre ou foco infeccioso aparente.<br>\nB) Iniciar hidratação venosa rápida com Soro Fisiológico a 0,9% na dose de 50 mL/kg em 2 horas para expandir o volume extracelular.<br>\nC) Oferecer fórmula láctea com baixa concentração de proteínas e sódio (Fórmula F-75) em alíquotas fracionadas a cada 2 ou 3 horas.<br>\nD) Administrar Vitamina A em megadose por via oral no primeiro e segundo dias de internação.<br>\nE) Atrasar a introdução do sulfato ferroso, iniciando-o apenas na fase de reabilitação nutricional."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> Na desnutrição aguda grave (especialmente no Kwashiorkor com edema), a <strong>hidratação venosa rápida com cristaloides é FORMALMENTE CONTRAINDICADA E LETAL</strong>. O miocárdio da criança desnutrida encontra-se atrofiado, com miofibrilas degeneradas e capacidade contrátil reduzida. A expansão volêmica venosa rápida precipita sobrecarga ventricular aguda, com insuficiência cardíaca congestiva descompensada e edema agudo de pulmão fulminante em poucas horas. A reidratação, quando necessária por diarreia, deve ser feita preferencialmente por via oral ou SNG com <strong>ReSoMal</strong> em velocidade controlada. A hidratação venosa só é admitida se o paciente estiver em choque circulatório comprovado (pulsos filiformes e má perfusão), e mesmo assim com volumes muito restritos (15 mL/kg em 1 hora).<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: Antibioticoterapia empírica ampla é mandatória para todos os desnutridos graves na admissão.<br>\nC incorreta: A fórmula F-75 é exatamente a dieta padronizada para a fase de estabilização.<br>\nD incorreta: A megadose de vitamina A é recomendada na admissão.<br>\nE incorreta: Atrasar o ferro até a fase de reabilitação é conduta preconizada para evitar estresse oxidativo e sepse."
+        ],
+        [
+          "3",
+          "Questão 2 (USP / FUVEST - Residência Médica)"
+        ],
+        [
+          "p",
+          "Um lactente de 16 meses de idade comparece à consulta de puericultura com a mãe. As medidas antropométricas aferidas com técnica padronizada demonstram: Peso de 8,1 kg (Adequação de Peso/Estatura de 84% em relação ao percentil 50); e Comprimento de 80 cm (Adequação de Estatura/Idade de 98% em relação ao percentil 50). O exame físico não evidencia edema periférico. De acordo com a Classificação Antropométrica de Waterlow, o estado nutricional deste paciente é classificado como:"
+        ],
+        [
+          "p",
+          "A) Eutrófico.<br>\nB) Desnutrido Crônico (Stunted).<br>\nC) Desnutrido Agudo (Wasted / Magro).<br>\nD) Desnutrido Crônico Agudizado (Wasted and Stunted).<br>\nE) Obesidade com baixa estatura."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>\n<em>Justificativa:</em> Na classificação de John Waterlow, utilizam-se dois cortes fundamentais: 1. <strong>Peso para a Estatura (P/E)</strong>: ponto de corte de <strong>90%</strong> para definir emagrecimento (wasting); e 2. <strong>Estatura para a Idade (E/I)</strong>: ponto de corte de <strong>95%</strong> para definir comprometimento estatural linear crônico (stunting). O paciente em questão apresenta: P/E = 84% (menor ou igual a 90% = emagrecido) e E/I = 98% (maior que 95% = estatura preservada). Portanto, trata-se de um <strong>Desnutrido Agudo (Wasted / Magro)</strong>, decorrente de uma agressão nutricional recente que consumiu peso sem tempo hábil para comprometer a estatura.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: P/E &le; 90% caracteriza emagrecimento anormal.<br>\nB incorreta: Desnutrido crônico exigiria E/I &le; 95% com P/E normal (&gt; 90%).<br>\nD incorreta: Desnutrido crônico agudizado exigiria ambos os índices alterados (P/E &le; 90% e E/I &le; 95%).<br>\nE incorreta: Não há obesidade."
+        ],
+        [
+          "3",
+          "Questão 3 (Unicamp - Residência Médica)"
+        ],
+        [
+          "p",
+          "Um menino de 3 anos de idade, internado há 3 dias com diagnóstico de Kwashiorkor descompensado, encontra-se na fase de estabilização do protocolo da OMS recebendo fórmula F-75 e antibioticoterapia empírica. Durante a visita médica da enfermaria, o médico residente propõe a prescrição imediata de Sulfato Ferroso oral na dose de 3 mg/kg/dia para o tratamento da anemia associada e Furosemida venosa para acelerar a redução da anasarca. Com base nas diretrizes internacionais e na fisiopatologia da desnutrição aguda grave, a análise da conduta do residente revela que:"
+        ],
+        [
+          "p",
+          "A) Ambas as condutas são corretas e devem ser iniciadas imediatamente nas primeiras 24 horas.<br>\nB) A prescrição de sulfato ferroso é correta, mas a furosemida é contraindicada pelo risco de hipocalemia.<br>\nC) Ambas as condutas são formalmente contraindicadas: o ferro livre na fase aguda catalisa reações de estresse oxidativo e favorece bacteremia fulminante; e a furosemida reduz criticamente o volume intravascular circulante, podendo desencadear choque hipovolêmico e óbito.<br>\nD) A furosemida é recomendada para aliviar a sobrecarga volêmica pulmonar, mas o ferro só deve ser administrado por via intramuscular profunda.<br>\nE) O sulfato ferroso deve ser substituído por transfusão de concentrado de hemácias profilática imediata."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa C.</strong><br>\n<em>Justificativa:</em> Trata-se de duas das maiores pegadinhas e erros clínicos no manejo da desnutrição grave: 1. <strong>O Ferro é formalmente PROIBIDO na fase de estabilização:</strong> na vigência de colapso da síntese de transferrina e antioxidantes pelo fígado desnutrido, o ferro administrado permanece na forma livre (\"unbound\"), catalisando a Reação de Fenton com geração descontrolada de radicais hidroxila livres citotóxicos e atuando como nutriente de replicação para bactérias entéricas, deflagrando sepse bacteriana fulminante. O ferro só pode ser introduzido na fase de reabilitação (a partir da 2ª semana); e 2. <strong>A Furosemida é FORMALMENTE CONTRAINDICADA no edema do Kwashiorkor:</strong> o edema decorre de permeabilidade capilar alterada e estresse oxidativo celular, com volume plasmático intravascular efetivo já diminuído. O diurético de alça depletaria abruptamente o volume vascular, precipitando choque hipovolêmico distributivo e colapso circulatório.<br>\n<em>Comentário dos Distratores:</em><br>\nA, B, D e E trazem condutas errôneas e perigosas que violam os 10 Passos da OMS."
+        ],
+        [
+          "3",
+          "Questão 4 (UERJ - Residência Médica)"
+        ],
+        [
+          "p",
+          "Uma criança de 18 meses de idade, com história de inanição crônica grave por abandono, é admitida na UTI pediátrica. A equipe decide iniciar suporte nutricional enteral vigoroso utilizando fórmula hipercalórica com alta densidade de carboidratos infundida continuamente. No 3º dia de realimentação, a criança evolui subitamente com taquicardia, insuficiência respiratória aguda com esforço diafragmático ineficaz, arritmia cardíaca ventricular e sonolência profunda. A gasometria e os eletrólitos séricos de urgência revelam: hipofosfatemia severa (fósforo sérico de 0,8 mg/dL), hipocalemia (potássio de 2,4 mEq/L) e hipomagnesemia (magnésio de 1,1 mg/dL). O quadro clínico e laboratorial é patognomônico de:"
+        ],
+        [
+          "p",
+          "A) Cetoacidose diabética inaugural.<br>\nB) Síndrome de Realimentação (Refeeding Syndrome), desencadeada pelo pico de secreção de insulina induzido pelos carboidratos que promoveu a entrada intracelular maciça de fósforo, potássio e magnésio.<br>\nC) Síndrome hemolítico-urêmica pós-infecciosa por <em>E. coli</em> produtora de toxina Shiga.<br>\nD) Insuficiência adrenal primária aguda (Crise Addisoniana).<br>\nE) Intoxicação exógena acidental por organofosforados com síndrome colinérgica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> A <strong>Síndrome de Realimentação</strong> é a complicação metabólica clássica decorrente da oferta rápida e desmedida de calorias/carboidratos a um paciente gravemente desnutrido. A sobrecarga de carboidratos estimula um pico de insulina que aciona avidamente o influxo intracelular de glicose acompanhado de <strong>fósforo, potássio e magnésio</strong> para suprir a fosforilação oxidativa de ATP. A <strong>hipofosfatemia crítica (&lt; 1,0 mg/dL)</strong> colapsa a disponibilidade de ATP e 2,3-DPG, gerando falência muscular diafragmática (parada respiratória), choque cardiogênico, rabdomiólise e arritmias ventriculares graves.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: Cetoacidose cursa com hiperglicemia, acidose metabólica com ânion-gap elevado e hipercalemia inicial.<br>\nC incorreta: SHU cursa com anemia hemolítica microangiopática, trombocitopenia e uremia aguda.<br>\nD incorreta: Insuficiência adrenal cursa com hiponatremia e hipercalemia.<br>\nE incorreta: Síndrome colinérgica cursa com miose, sialorreia, broncorreia e fasciculações."
+        ],
+        [
+          "3",
+          "Questão 5 (SURCE / PSU-CE - Residência Médica)"
+        ],
+        [
+          "p",
+          "Lactente de 10 meses de vida, residente em comunidade vulnerável, é levado à UBS com queixa materna de dificuldade visual à noite (a mãe nota que a criança tromba nos móveis ao escurecer) e tosse produtiva frequente. Ao exame oftalmológico com lanterna, o médico identifica em conjuntiva bulbar perilímbica temporal de ambos os olhos placas triangulares ligeiramente elevadas, secas, de coloração branco-prateada com aspecto espumoso. As córneas estão íntegras e transparentes no momento. Em relação ao diagnóstico deste achado e à conduta clínica correta, assinale a alternativa adequada:"
+        ],
+        [
+          "p",
+          "A) Trata-se de Pterígio congênito; a conduta é colírio lubrificante e ressecção cirúrgica eletiva aos 5 anos.<br>\nB) Trata-se de Manchas de Bitot secundárias à deficiência grave de Vitamina A (Xeroftalmia); a conduta mandatória é a administração oral imediata de Vitamina A em megadose no Dia 1, Dia 2 e repetição após 14 dias.<br>\nC) Trata-se de Catarata congênita associada à galactosemia; indicar suspensão do aleitamento e facectomia.<br>\nD) Trata-se de Ceratomalácia irreversível; a conduta é transplante penetrante de córnea de urgência.<br>\nE) Trata-se de Conjuntivite bacteriana crônica por <em>Chlamydia trachomatis</em>; prescrever azitromicina oral."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> O quadro descreve a clássica sequência de <strong>Xeroftalmia por Hipovitaminose A</strong>: hemeralopia (cegueira noturna, sintoma funcional inicial) acompanhada de <strong>Manchas de Bitot</strong> (placas conjuntivais triangulares prateadas/espumosas patognomônicas resultantes da queratinização escamosa da conjuntiva bulbar). Trata-se de uma emergência nutricional médica, pois a deficiência de vitamina A não tratada evolui rapidamente para ceratite ulcerativa e <strong>ceratomalácia</strong> com necrose corneana e cegueira permanente bilateral. O esquema de tratamento curativo da OMS consiste em: <strong>Megadose de Vitamina A oral no Dia 1, no Dia 2 e no Dia 14</strong> (100.000 UI para lactentes de 6 a 11 meses de vida).<br>\n<em>Comentário dos Distratores:</em><br>\nA, C, D e E trazem diagnósticos incorretos e condutas cirúrgicas ou farmacológicas iatrogênicas desprovidas de base patológica."
+        ],
+        [
+          "3",
+          "Questão 6 (AMRIGS - Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação às diretrizes da Sociedade Brasileira de Pediatria (SBP) para a profilaxia e o tratamento da Anemia Ferropriva na infância, assinale a afirmativa correta:"
+        ],
+        [
+          "p",
+          "A) Lactentes nascidos a termo e com peso adequado para a idade gestacional em aleitamento materno exclusivo não necessitam de nenhuma suplementação profilática de ferro medicamentoso até completarem 2 anos de vida.<br>\nB) Para recém-nascidos prematuros ou com peso de nascimento inferior a 2.500 g, a suplementação profilática com ferro elementar deve ser iniciada precocemente aos 30 dias de vida (ou a partir do momento em que a criança tolera a via oral plena), independentemente do tipo de aleitamento.<br>\nC) O diagnóstico de certeza de anemia ferropriva exige mielograma com pesquisa de ferro medular em todos os pacientes ambulatoriais.<br>\nD) A presença de RDW normal (&lt; 12%) associado a microcitose é o achado mais típico da anemia ferropriva, diferenciando-a dos traços talassêmicos.<br>\nE) O ferro oral deve ser administrado preferencialmente junto com leite de vaca integral para neutralizar a acidez e evitar epigastralgia."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> Recém-nascidos prematuros (&lt; 37 semanas de idade gestacional) ou com baixo peso ao nascer (&lt; 2.500 g) nascem com estoques corporais de ferro severamente diminuídos, pois a maior parte da transferência transplacentária de ferro materno ocorre no terceiro trimestre gestacional. Portanto, as diretrizes da SBP determinam que a <strong>suplementação profilática de ferro elementar nesses prematuros/baixo peso deve ser iniciada aos 30 dias de vida</strong> (dose de 2 mg/kg/dia se peso entre 1.500 e 2.499 g; 3 mg/kg/dia se entre 1.000 e 1.499 g; e 4 mg/kg/dia se &lt; 1.000 g), mantida por todo o primeiro ano e seguida de 1 mg/kg/dia no segundo ano.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: A termo em aleitamento exclusivo necessita de 1 mg/kg/dia de ferro elementar a partir dos 6 meses de vida até 24 meses.<br>\nC incorreta: O diagnóstico é feito com hemograma, ferritina e cinética de ferro periférica.<br>\nD incorreta: Anemia ferropriva cursa classicamente com <strong>RDW elevado (&gt; 14,5%)</strong> (anisocitose acentuada); traço talassêmico cursa com RDW tipicamente normal.<br>\nE incorreta: O cálcio do leite bloqueia a absorção intestinal do ferro; o ferro deve ser administrado com água ou suco cítrico (vitamina C potencializa a absorção)."
+        ],
+        [
+          "3",
+          "Questão 7 (UNICAMP - Residência Médica)"
+        ],
+        [
+          "p",
+          "Um pré-escolar de 2 anos e meio é levado ao pronto-atendimento com história de irritabilidade, choro ao ser manuseado e recusa de deambular há 1 semana. A mãe relata que a criança assume espontaneamente uma postura deitada com as pernas fletidas e abduzidas (\"posição em pernas de rã\"). Ao exame físico: palidez cutânea, gengivas hipertrofiadas, edemaciadas e de coloração arroxeada/violácea com sangramento espontâneo fácil, e petéquias foliculares com pelos em saca-rolhas no abdome e membros inferiores. À palpação dos membros inferiores, a criança chora vigorosamente com dor intensa em diáfises e metáfises femorais e tibiais, correspondendo a hematomas subperiosteais confirmados por ultrassonografia. A dieta da criança é composta exclusivamente por leite fervido e biscoitos recheados, com aversão completa a frutas e vegetais frescos. O diagnóstico clínico mais provável é:"
+        ],
+        [
+          "p",
+          "A) Escorbuto (Deficiência grave de Vitamina C).<br>\nB) Leucemia Linfoide Aguda (LLA).<br>\nC) Hemofilia A congênita grave.<br>\nD) Raquitismo dependente de vitamina D tipo 1.<br>\nE) Doença de Kawasaki atípica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa A.</strong><br>\n<em>Justificativa:</em> O quadro clínico reúne a constelação clássica do <strong>Escorbuto infantil por deficiência grave de Vitamina C (ácido ascórbico)</strong>: 1. Gengivorragia com gengivas hipertróficas violáceas; 2. Fragilidade capilar com petéquias perifoliculares e pelos em saca-rolhas; 3. <strong>Hemorragias subperiosteais dolorosas exuberantes</strong> nos ossos longos, que causam dor óssea excruciante, levando à recusa de marcha (pseudoparalisia) e à clássica <strong>\"Posição em Pernas de Rã\" (Postura de Parrot)</strong>; 4. História alimentar de dieta desprovida de frutas cítricas, verduras e rica em leite fervido (o calor destrói o ácido ascórbico termolábil). O tratamento com reposição de vitamina C oral produz regressão rápida e dramática da dor e das lesões em poucos dias.<br>\n<em>Comentário dos Distratores:</em><br>\nB incorreta: LLA pode dar dor óssea, mas não gengivite violácea com petéquias perifoliculares isoladas decorrentes de dieta restritiva.<br>\nC incorreta: Hemofilia cursa com hemartroses e hematomas musculares profundos sem gengivite escorbútica.<br>\nD e E trazem quadros sem a tríade escorbútica clássica."
+        ],
+        [
+          "3",
+          "Questão 8 (FMUSP / HC-FMUSP - Residência Médica)"
+        ],
+        [
+          "p",
+          "Lactente de 14 meses de vida é trazido para avaliação nutrológica. A mãe relata que a criança sempre residiu em área rural isolada e foi alimentada com leite de cabra in natura fervido desde os 3 meses de idade sem qualquer outro alimento de transição ou suplementação vitamínica. O hemograma automatizado revela: Hemoglobina: 6,2 g/dL, Hematócrito: 18%, Leucócitos: 3.200/mm³ (neutropenia leve com presença marcante de neutrófilos hipersegmentados com mais de 5 a 6 lobos nucleares), Plaquetas: 95.000/mm³ (trombocitopenia moderada); VCM: 118 fL (macrocitose acentuada). O exame neurológico não revela déficits motores, ataxia ou sinais de mielopatia, e a dosagem de ácido metilmalônico urinário encontra-se rigorosamente normal. Este quadro de anemia macrocítica megaloblástica na infância é atribuído à deficiência de:"
+        ],
+        [
+          "p",
+          "A) Vitamina B12 (Cobalamina) por deficiência congênita de fator intrínseco.<br>\nB) Ácido Fólico (Vitamina B9), decorrente da alimentação exclusiva com leite de cabra, que é naturalmente desprovido de folato.<br>\nC) Ferro elementar por perda gastrointestinal oculta.<br>\nD) Vitamina E (Tocoferol) com hemólise oxidativa primária.<br>\nE) Cobre elementar por bloqueio da ceruloplasmina."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: Alternativa B.</strong><br>\n<em>Justificativa:</em> O <strong>leite de cabra in natura é extremamente pobre em Ácido Fólico (Vitamina B9)</strong>, contendo menos de um décimo do teor de folato presente no leite de vaca ou no leite humano. Crianças alimentadas exclusivamente com leite de cabra desenvolvem invariavelmente <strong>Anemia Megaloblástica por Deficiência de Folato</strong>, caracterizada por anemia macrocítica (VCM elevado &gt; 100 fL), neutrófilos hipersegmentados e pancitopenia leve a moderada por eritropoiese ineficaz com destruição intramedular de precursores. A ausência de sintomas neurológicos e a normalidade do ácido metilmalônico descartam a deficiência de cobalamina (vitamina B12). A conduta é prescrever ácido fólico oral na dose de 1 a 5 mg/dia.<br>\n<em>Comentário dos Distratores:</em><br>\nA incorreta: Deficiência de B12 cursa com ácido metilmalônico elevado e manifestações neurológicas precoces (degeneração combinada da medula).<br>\nC incorreta: Ferro causa anemia microcítica e hipocrômica (VCM baixo).<br>\nD e E incorretas: Não apresentam associação com leite de cabra nem neutrófilos hipersegmentados."
+        ]
+      ]
+    ],
+    [
+      "algoritmos-e-fluxogramas-praticos",
+      0,
+      [
+        [
+          "2",
+          "9. Algoritmos e Fluxogramas Decisórios na Prática Hospitalar"
+        ],
+        [
+          "3",
+          "Fluxograma de Decisão na Admissão da Desnutrição Aguda Grave (SAM)"
+        ],
+        [
+          "p",
+          "A conduta sequencial padronizada na emergência pediátrica organiza-se em três etapas imediatas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação de Emergência Imediata (Minutos 0 a 30):</strong>\n    <ul>\n      <li>Verificar Glicemia: se &lt; 54 mg/dL &rarr; SG 10% 5 mL/kg IV se inconsciente ou 50 mL oral/SNG se consciente;",
+            "Verificar Temperatura: se axilar &lt; 35,5 ºC &rarr; aquecimento térmico imediato (método canguru, gorro de lã, aquecedor seguro);",
+            "Verificar Choque (pulsos filiformes, letargia, tempo de enchimento capilar &gt; 3s): se presente &rarr; Soro Fisiológico 0,9% 15 mL/kg em 1 hora com monitoramento estrito; se sem choque &rarr; PROIBIDO soro venoso rápido!",
+            "<strong>Instalação do Suporte de Estabilização (Horas 1 a 24):</strong>\n    <ul>\n      <li>Se diarreia desidratante: reidratar exclusivamente com <strong>ReSoMal</strong> por via oral ou SNG (5 a 10 mL/kg/hora);",
+            "Iniciar antibioticoterapia empírica imediata (Ampicilina + Gentamicina venosas se complicado; Amoxicilina oral se sem complicações);",
+            "Iniciar <strong>Fórmula F-75</strong> fracionada a cada 2 ou 3 horas dia e noite (meta: 100 kcal/kg/dia e 1 a 1,5 g/kg/dia de proteína);",
+            "Administrar Vitamina A em megadose oral no Dia 1 e Dia 2; ácido fólico e zinco;",
+            "<strong>CONTRAINDICAÇÃO EXPRESSA: NUNCA prescrever Sulfato Ferroso nem diuréticos de alça (furosemida) nesta fase!</strong>",
+            "<strong>Transição e Reabilitação (Dias 8 em diante):</strong>\n    <ul>\n      <li>Quando o edema regredir totalmente e o apetite retornar voraz: transição gradual para <strong>Fórmula F-100 ou RUTF</strong> (meta: 150 a 220 kcal/kg/dia e ganho ponderal &ge; 10 g/kg/dia);",
+            "<strong>Iniciar Sulfato Ferroso (3 mg/kg/dia de ferro elementar)</strong> para tratar a anemia ferropriva agora que as infecções estão controladas e a transferrina hepática foi restabelecida."
+          ]
+        ]
+      ]
+    ],
+    [
+      "pontos-chave-enamed-desnutricao",
+      0,
+      [
+        [
+          "2",
+          "10. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais"
+        ],
+        [
+          "3",
+          "Dez Mandamentos da Nutrologia Pediátrica para o ENAMED"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Gómez vs Waterlow:</strong> Gómez avalia Peso/Idade (Grau I: 76-90%, Grau II: 61-75%, Grau III: &le; 60% OU presença de edema). Waterlow avalia Peso/Estatura (emagrecido &le; 90%) e Estatura/Idade (nanico &le; 95%).",
+            "<strong>2. Marasmo vs Kwashiorkor:</strong> Marasmo é carência global (seca, sem edema, fácies senil, apetite famélico). Kwashiorkor é carência proteica aguda (úmida, edema com cacifo, esteatose hepática maciça, dermatose em tintas descamadas, sinal da bandeira nos cabelos, apatia e anorexia intensa).",
+            "<strong>3. Proibição de Hidratação Venosa Rápida:</strong> Jamais fazer hidratação rápida venosa em desnutrido grave pelo risco iminente de insuficiência cardíaca congestiva e edema pulmonar fatal. Usar ReSoMal oral ou por SNG.",
+            "<strong>4. ReSoMal:</strong> Solução com menos sódio (45 mEq/L) e mais potássio (40 mEq/L) e magnésio para evitar sobrecarga hidrossalina.",
+            "<strong>5. Proibição de Diuréticos:</strong> Jamais usar furosemida para o edema do Kwashiorkor (precipita choque hipovolêmico fatal). O edema é curado com alimentação F-75.",
+            "<strong>6. Atraso Mandatório do Ferro:</strong> O sulfato ferroso é formalmente PROIBIDO na fase de estabilização (gera radicais livres e sepse fulminante). Iniciar apenas na fase de reabilitação.",
+            "<strong>7. Síndrome de Realimentação:</strong> Sobrecarga calórica rápida deflagra pico de insulina com captação celular maciça de <strong>fósforo, potássio e magnésio</strong>. Hipofosfatemia severa causa choque cardiogênico, parada respiratória e morte.",
+            "<strong>8. Xeroftalmia (Vitamina A):</strong> Cegueira noturna (hemeralopia) &rarr; Manchas de Bitot &rarr; Ceratomalácia (cegueira irreversível). Tratar com megadose no Dia 1, 2 e 14.",
+            "<strong>9. Raquitismo Carencial (Vitamina D):</strong> Alargamento de punhos, rosário raquítico, sulco de Harrison, pernas arqueadas e fosfatase alcalina marcadamente elevada. Profilaxia com 400 UI/dia no 1º ano e 600 UI/dia no 2º ano.",
+            "<strong>10. Acrodermatite Enteropática:</strong> Deficiência de zinco surgindo ao desmame: tríade de lesões periorificiais/acrais eritematobolhosas + diarreia crônica + alopecia total. Responde espetacularmente ao sulfato de zinco oral."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.who.int/publications/i/item/9789241506328\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — Guideline: Updates on the Management of Severe Acute Malnutrition in Infants and Children</a>",
+            "<a href=\"https://www.sbp.com.br/departamentos-cientificos/nutrologia/documentos-cientificos/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Departamento Científico de Nutrologia. Manual de Terapia Nutricional Pediátrica e Desnutrição Hospitalar</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Manual de Atenção Integrada às Doenças Prevalentes na Infância (AIDPI Criança) e Manejo da Desnutrição Grave</a>",
+            "<a href=\"https://www.who.int/tools/child-growth-standards\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — The WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length and body mass index-for-age</a>",
+            "<a href=\"https://www.sbp.com.br/departamentos-cientificos/nutrologia/diretrizes/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) — Departamento Científico de Nutrologia. Hipovitaminose D em Pediatria: Diagnóstico, Prevenção e Tratamento</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
