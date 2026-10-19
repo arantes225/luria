@@ -185,7 +185,7 @@ export const sec6 = {
   <li><em>Recaída:</em> Não é um fracasso moral, mas parte integrante e esperada do processo de aprendizagem comportamental. O paciente retorna a estágios anteriores (geralmente contemplação ou preparação), devendo ser acolhido com compaixão imediata pela equipe.</li>
 </ol>
 
-<h3>6.4 Intervenção Breve Estruturada: O Protocolo FRAMES</h3>
+<h3>6.4 Intervenção Breve Estruturada: O Protocolo FRAMES e as Técnicas das Réguas de Prontidão</h3>
 <p>Para intervenções rápidas (5 a 15 minutos) em tabagismo e álcool na atenção primária, utiliza-se internacionalmente o modelo <strong>FRAMES</strong>:</p>
 <ul>
   <li><strong>F - Feedback:</strong> Devolução clara e individualizada dos riscos e resultados de exames (ex.: 'O seu teste AUDIT revelou uma pontuação de 18 pontos, indicando que o seu consumo atual já está sobrecarregando o seu fígado e elevando sua pressão');</li>
@@ -195,6 +195,15 @@ export const sec6 = {
   <li><strong>E - Empathy:</strong> Postura calorosa, acolhedora e compreensiva;</li>
   <li><strong>S - Self-efficacy:</strong> Estímulo otimista à autoconfiança do sujeito em sua capacidade de triunfar.</li>
 </ul>
+
+<div class="clinical-box highlight">
+  <h4>A Ferramenta Prática das Réguas de Importância e Confiança</h4>
+  <p>Na consulta rápida da APS, as réguas analógicas de 0 a 10 são instrumentos formidáveis para extrair a <em>fala de mudança</em> do próprio paciente:</p>
+  <ul>
+    <li><em>Régua de Importância:</em> 'Em uma escala de 0 a 10, onde 0 é nada importante e 10 é extremamente importante, quão importante é para você parar de fumar hoje?'. Se o paciente responde <strong>5</strong>, o médico pergunta estrategicamente: <em>'Por que você escolheu 5 e não 2 ou 3?'</em>. Essa simples pergunta obriga o paciente a justificar os motivos pelos quais mudar é importante, evocando argumentos internos pró-mudança!</li>
+    <li><em>Régua de Confiança:</em> 'Se você decidisse parar hoje, quão confiante você se sente de que conseguiria, de 0 a 10?'. Se o paciente responde <strong>4</strong>, pergunta-se: <em>'O que seria necessário para que essa nota subisse para 6 ou 7?'</em>, auxiliando-o a identificar barreiras práticas e desenhar soluções viáveis.</li>
+  </ul>
+</div>
 `
 };
 
@@ -228,6 +237,35 @@ export const sec7 = {
     <li><em>Segurança Física Imediata:</em> <strong>NÃO DEIXAR O PACIENTE SOZINHO EM NENHUM MOMENTO</strong>. O médico permanece ao lado do paciente na sala de observação com porta aberta, comunicando discretamente à enfermeira para acionar a rede.</li>
     <li><em>Acionamento da Rede de Urgência:</em> Acionamento imediato do <strong>SAMU 192</strong> para transferência assistida e monitorada para a <strong>Unidade de Pronto Atendimento (UPA 24h) com leito de saúde mental</strong> para avaliação psiquiátrica de urgência e estabilização de crise aguda.</li>
     <li><em>Comunicação Familiar e Acolhimento:</em> Com o consentimento do jovem, a equipe entra em contato telefônico com a mãe para que ela compareça à unidade imediatamente, acolhendo a família com sensibilidade e sem julgamentos. Preenchimento da notificação compulsória no SINAN em até 24 horas.</li>
+  </ol>
+</div>
+
+<div class="clinical-box highlight">
+  <h4>Caso Clínico 3: Primeiro Episódio Psicótico em Jovem e Articulação RAPS / Matriciamento</h4>
+  <p><strong>Identificação:</strong> Matheus, 19 anos, solteiro, residente em área de abrangência da ESF, é trazido à consulta pelos pais. Os pais relatam que há cerca de 3 meses o filho trancou-se no quarto, abandonou o curso técnico de informática, parou de tomar banho regularmente e cobriu as janelas com papel alumínio. Nos últimos 15 dias, passou a afirmar que seus pensamentos estão sendo transmitidos pela televisão e que vizinhos instalaram câmeras ocultas nas tomadas elétricas para espioná-lo. Ao exame físico e mental: desconfiado, vigilante, afeto embotado, murmura frases ininteligíveis como se respondesse a alucinações auditivas fonêmicas em terceira pessoa. Nega uso de drogas (triagem toxicológica urinária negativa).</p>
+  <p><strong>Raciocínio Clínico e Conduta Compartilhada na APS:</strong></p>
+  <ol>
+    <li><em>Diagnóstico Sindrômico:</em> <strong>Primeiro Episódio Psicótico (FEP)</strong> com sintomas positivos floridos (delírios persecutórios de influência e alucinações auditivas) e sintomas negativos iniciais (isolamento social, avolia, embotamento afetivo), sugerindo início de Transtorno do Espectro da Esquizofrenia.</li>
+    <li><em>Afastamento de Causas Orgânicas:</em> Solicitar exames laboratoriais completos (hemograma, glicemia, função renal e hepática, eletrólitos, sorologias para HIV e Sífilis/VDRL, TSH) e avaliação neurológica com neuroimagem para descartar encefalite autoimune ou neoplasia de SNC.</li>
+    <li><em>Apoio Matricial e Inserção na RAPS:</em> O caso é apresentado imediatamente na reunião de <strong>Apoio Matricial com o psiquiatra do CAPS II do território</strong>. Pactua-se consulta compartilhada (médico da ESF + psiquiatra do CAPS) na própria UBS para não assustar o jovem;</li>
+    <li><em>Início de Antipsicótico de Segunda Geração:</em> Inicia-se <strong>Risperidona 1 mg a 2 mg/dia</strong> (menor risco de efeitos extrapiramidais e excelente controle de delírios/alucinações) e formula-se o <em>Projeto Terapêutico Singular (PTS)</em> com terapeuta ocupacional e assistente social para reinserção comunitária e suporte familiar.</li>
+  </ol>
+</div>
+
+<div class="clinical-box highlight">
+  <h4>Caso Clínico 4: Transtorno de Pânico Agudo vs Emergência Cardiovascular na UBS</h4>
+  <p><strong>Identificação:</strong> Roberta, 29 anos, bancária, entra na sala de emergência da UBS amparada por colegas de trabalho, em pânico extremo, gritando que 'está tendo um infarto fulminante e vai morrer agora'. Apresenta sudorese fria profusa, tremores incontroláveis de mãos, sensação de sufocamento com dispneia em suspiros, dor torácica atípica em pontada precordial e parestesia perioral e nas pontas dos dedos.</p>
+  <p><strong>Avaliação Imediata na Sala Vermelha/Emergência da UBS:</strong></p>
+  <ul>
+    <li>PA: 148 x 92 mmHg, FC: 122 bpm (taquicardia sinusal), FR: 28 irpm, SatO2: 99% em ar ambiente, Glicemia capilar: 98 mg/dL;</li>
+    <li><strong>Eletrocardiograma de 12 derivações realizado em 5 minutos:</strong> Taquicardia sinusal com intervalos e segmentos rigorosamente normais, ausência de supra ou infradesnivelamento de ST e ondas T normais;</li>
+    <li>Exame pulmonar e cardiovascular: Bulhas rítmicas normofonéticas sem sopros, murmúrio vesicular universalmente audível sem ruídos adventícios. Parestesias decorrentes de <em>alcalose respiratória aguda induzida por hiperventilação psicogênica</em>.</li>
+  </ul>
+  <p><strong>Conduta Clínica e Acolhimento na APS:</strong></p>
+  <ol>
+    <li><em>Manejo da Crise Aguda de Pânico:</em> O médico afasta com segurança a síndrome coronariana aguda pelo ECG normal e quadro epidemiológico. Posiciona-se à frente da paciente, fala em tom calmo, firme e acolhedor: 'Roberta, seu coração está forte e saudável, o eletrocardiograma está normal. Você está tendo uma crise de pânico. Essa sensação é horrível, mas garanto que ela não vai matá-la e vai passar em alguns minutos. Vamos respirar juntos devagar'.</li>
+    <li><em>Técnica de Respiração Diafragmática / Quadrada:</em> Inspirar pelo nariz contando até 4, segurar o ar por 4 segundos e expirar lentamente pela boca em 4 segundos, corrigindo a hipocapnia e eliminando as parestesias periorais em 10 minutos.</li>
+    <li><em>Plano Terapêutico Longitudinal:</em> Encaminhar para acompanhamento ambulatorial na própria ESF; iniciar psicoeducação sobre Transtorno de Pânico, introduzir <strong>Sertralina 25 mg/dia progredindo para 50 mg/dia</strong> e psicoterapia cognitivo-comportamental com psicóloga da eMulti. Evitar a prescrição rotineira de benzodiazepínicos crônicos de resgate para não criar dependência psicológica de 'bolsa'.</li>
   </ol>
 </div>
 
@@ -267,6 +305,18 @@ export const sec7 = {
   E) Prescrever haloperidol 5 mg à noite para sedação durante o desmame rápido do benzodiazepínico em 5 dias.</p>
   <p><strong>Gabarito Oficial Comentado: Alternativa C.</strong></p>
   <p><em>Comentário Didático:</em> A desprescrição de benzodiazepínicos de uso prolongado exige planejamento <strong>gradual, consentido e escalonado</strong>. A suspensão abrupta (Alternativa A) é absolutamente contraindicada pelo risco extremo de síndrome de abstinência grave, delirium e convulsões tônico-clônicas. A alternativa B é incorreta porque a idade avançada eleva substancialmente o risco de quedas, fraturas e demência, sendo a desprescrição altamente indicada e viável. A alternativa C descreve com exatidão o protocolo internacional de desprescrição (conversão opcional para diazepam devido à meia-vida longa estável, redução lenta de 10% a 25% da dose quinzenal ou mensal e suporte não farmacológico com higiene do sono). A alternativa D é falsa porque as drogas 'Z' (zolpidem) atuam no mesmo sítio do receptor GABA-A, compartilhando riscos idênticos de dependência, amnésia, quedas e sonambulismo complexo. A alternativa E prescreve antipsicótico típico de alta potência de forma iatrogênica e perigosa.</p>
+</div>
+
+<div class="clinical-box highlight">
+  <h4>Questão 4 (Unicamp / Residência Médica em Psiquiatria e Medicina de Família)</h4>
+  <p>Um homem de 72 anos, viúvo há 6 meses, aposentado, é trazido à consulta na UBS pela filha. A filha relata que o pai passa os dias deitado na cama, recusa-se a sair para caminhar na praça, perdeu 6 kg no último mês e tem afirmado que 'sua vida perdeu todo o sentido e só dá trabalho aos outros'. Durante a anamnese dirigida, ao ser questionado sobre ideação de morte, o paciente revela com olhar vago: 'Doutor, eu já peguei o revólver 38 que guardava no armário, comprei a munição ontem e deixei na gaveta da cabeceira. Só estou esperando a missa de 6 meses da minha esposa passar para acabar com tudo'. Ao exame físico e mental: lúcido, orientado, afeto intensamente deprimido, desesperança profunda. Diante da estratificação de risco de suicídio na Atenção Primária, qual é a conduta prioritária e imediata que deve ser adotada pela equipe de saúde?</p>
+  <p>A) Classificar o risco como intermediário, prescrever fluoxetina 20 mg/dia e agendar retorno ambulatorial para reavaliação em 15 dias.<br>
+  B) Classificar como Risco Alto/Iminente de suicídio; não deixar o paciente sozinho em nenhum momento, acionar imediatamente o SAMU 192 para transferência assistida a serviço de urgência/emergência psiquiátrica hospitalar e pactuar a remoção da arma de fogo com a família.<br>
+  C) Solicitar que o paciente assine um 'Contrato de Não Suicídio' de próprio punho e liberá-lo para domicílio sob supervisão da filha.<br>
+  D) Orientar a filha a esconder a arma e prescrever clonazepam 2 mg à noite para sedar o paciente em casa.<br>
+  E) Encaminhar o paciente por guia de referência comum via regulação ambulatorial para primeira consulta no CAPS AD.</p>
+  <p><strong>Gabarito Oficial Comentado: Alternativa B.</strong></p>
+  <p><em>Comentário Didático:</em> O paciente preenche critérios absolutos de <strong>RISCO ALTO E IMINENTE DE SUICÍDIO</strong>: homem idoso, viúvo recente (luto traumático), depressão grave com emagrecimento, plano detalhado e altamente letal estruturado (arma de fogo com munição comprada guardada na cabeceira) e data estipulada para a execução. Trata-se de uma <strong>emergência médica inadiável</strong>. A conduta mandatória consiste em: 1) Manter o paciente sob observação contínua da equipe, sem deixá-lo sozinho sequer por um instante; 2) Acionar o SAMU 192 para transporte seguro para unidade de emergência ou leito hospitalar de saúde mental para proteção física; 3) Orientar a filha e autoridades competentes para apreensão imediata da arma de fogo e munições; 4) Preencher a notificação compulsória no SINAN em até 24 horas. Contratos de não suicídio (Alternativa C) não protegem contra o ato e são contraindicados como medida isolada. Antidepressivos demoram 2 a 4 semanas para agir e benzodiazepínicos (Alternativa D) podem desinibir impulsos e precipitar o disparo da arma.</p>
 </div>
 `
 };
