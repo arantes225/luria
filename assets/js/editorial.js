@@ -26,7 +26,7 @@
       rationale: "Estudos de mercado (Sprout Social / Metricool 2024/2025) mostram que a janela de almoço de terça-feira tem o maior pico de salvamento de carrosséis educativos para o público médico.",
       actionPlan: "Apresentar 5 condutas contra-intuitivas (ex: oxigenioterapia liberal em IAM/AVC, bicarbonato em PCR, reposição rápida de potássio). Terminar com CTA para salvar para consulta rápida no plantão.",
       channel: "Instagram Feed (Carrossel 1080x1350)",
-      driveUrl: "https://drive.google.com/",
+      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
       status: "Pronto para Agendamento"
     },
     {
@@ -41,7 +41,7 @@
       rationale: "Reels postados na transição de saída do trabalho (19h30) atingem o maior público que ainda não segue o perfil. Formato de 30s maximiza a retenção de tela de 100%.",
       actionPlan: "Roteiro dinâmico com paciente simulado apresentando déficit focal e desvio de rima. Ponto central: glicemia capilar imediata antes da tomografia. Finaliza provocando discussão nos comentários.",
       channel: "Reels & TikTok (1080x1920 60fps)",
-      driveUrl: "https://drive.google.com/",
+      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
       status: "Renderização em 4K"
     },
     {
@@ -56,7 +56,7 @@
       rationale: "Quinta-feira ao meio-dia é o ápice do cansaço mental do estudante de medicina, momento em que ele mais busca estratégias de eficiência de estudo e ferramentas de retenção.",
       actionPlan: "Mostrar a taxa de perda de memória após 24h e 7 dias. Contrastar estudo passivo (grifos/releitura) com estudo ativo (testes diários e active recall). Introdução sutil da metodologia LURIA.",
       channel: "Instagram Feed (Carrossel 1080x1350)",
-      driveUrl: "https://drive.google.com/",
+      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
       status: "Em Diagramação"
     },
     {
@@ -71,7 +71,7 @@
       rationale: "Sexta-feira no fim da tarde médicos e internos entrando no plantão compartilham pílulas rápidas em grupos de WhatsApp e mensagens diretas.",
       actionPlan: "Análise ultra rápida de traçado eletrocardiográfico real com transição para gluconato de cálcio a 10% como estabilizador elétrico de membrana imediato.",
       channel: "Reels (1080x1920)",
-      driveUrl: "https://drive.google.com/",
+      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
       status: "Em Roteiro"
     },
     {
@@ -86,7 +86,7 @@
       rationale: "Domingo à noite registra o maior tempo de tela de relaxamento pré-semana. Usuários respondem ativamente a enquetes de múltiplos passos nos Stories.",
       actionPlan: "Sequência de 5 Stories: História clínica -> Exame físico -> Imagem/ECG -> Enquete de conduta -> Resolução detalhada com gabarito comentado.",
       channel: "Instagram Stories (Interativo)",
-      driveUrl: "https://drive.google.com/",
+      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
       status: "Planejado"
     }
   ];
