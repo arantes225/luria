@@ -1,0 +1,1011 @@
+{
+  "v": 2,
+  "s": "notificacao-compulsoria-de-doencas-e-agravos",
+  "t": "Notificação Compulsória de Doenças e Agravos",
+  "p": "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra.",
+  "d": "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra.",
+  "a": "Medicina Preventiva",
+  "m": "Vigilância Epidemiológica e Notificação Sanitária",
+  "h": [
+    "Apostila LURIA",
+    "Notificação Compulsória de Doenças e Agravos",
+    "Tratado completo sobre Notificação Compulsória no Sistema Único de Saúde (SUS) e Regulamento Sanitário Internacional (RSI 2005) para concursos de Residência Médica e ENAMED: fundamentos doutrinários e legais (Lei Federal nº 6.259/1975, Lei nº 8.080/1990, Portarias de Consolidação nº 4 e 5, e Portarias GM/MS vigentes atualizadas 2024–2026); conceito e finalidade sanitária (\"informação para a ação\"); obrigatoriedade legal e ética do profissional de saúde (Artigo 269 do Código Penal Brasileiro e infração ao Código de Ética Médica); quem deve notificar; o preceito inegociável da notificação na suspeita clínica (vedação absoluta de aguardar confirmação diagnóstica ou laboratorial); Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (DNC); cronologia e periodicidade rígida: Notificação Imediata em até 24 horas (comunicação pelo canal mais rápido à SMS, SES e Ministério da Saúde) versus Notificação Semanal em até 7 dias; Notificação Negativa sistemática; instrumentos do SINAN (Ficha de Notificação Individual — FNI e Ficha de Investigação de Caso — FIC); fluxo de retroalimentação e encerramento de casos; 4 casos clínicos estruturados com conduta de vigilância em saúde e questões comentadas na íntegra.",
+    [
+      "Área: Medicina Preventiva",
+      "Matéria: Vigilância Epidemiológica e Notificação Sanitária",
+      "Tema: Notificação Compulsória de Doenças e Agravos"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "marcos-legais-e-finalidade-sanitaria-notificacao",
+      "1. Marcos Legais, Doutrinários e a Finalidade Sanitária da Notificação Compulsória"
+    ],
+    [
+      "cronologia-imediata-vs-semanal",
+      "2. Periodicidade da Notificação: Imediata (até 24h) vs Semanal (até 7 dias)"
+    ],
+    [
+      "casos-especiais-de-notificacao-e-pegadinhas",
+      "3. Casos Especiais, Dicotomias Clássicas e Pegadinhas Recorrentes em Provas"
+    ],
+    [
+      "casos-clinicos-estruturados-notificacao",
+      "4. Casos Clínicos Estruturados e Condutas em Vigilância Epidemiológica"
+    ],
+    [
+      "questoes-comentadas-notificacao-compulsoria",
+      "5. Questões Comentadas de Concursos e Residência Médica na Íntegra"
+    ],
+    [
+      "sintese-de-alto-rendimento-notificacao-compulsoria",
+      "6. Síntese de Alto Rendimento e Regras Mnemônicas para o ENAMED"
+    ],
+    [
+      "lista-nacional-esmiucada-e-criterios-de-inclusao",
+      "Critérios Epidemiológicos de Definição da Lista Nacional e Análise Detalhada dos Agravos"
+    ],
+    [
+      "investigacao-epidemiologica-e-encerramento-sinan",
+      "A Investigação Epidemiológica de Campo, Busca Ativa e Critérios de Encerramento no SINAN"
+    ],
+    [
+      "casos-clinicos-complexos-notificacao-e-bateria",
+      "Casos Clínicos de Alta Complexidade e Questões Avançadas de Residência Médica"
+    ],
+    [
+      "protocolos-detalhados-de-notificacao-imediata-e-rsi",
+      "Protocolos das Doenças de Notificação Imediata (DNI), Emergências em Saúde Pública e Regulamento Sanitário Internacional"
+    ],
+    [
+      "vigilancia-sentinela-esavi-e-saude-trabalhador",
+      "Vigilância Sentinela, Redes Especializadas, Investigação de ESAVI e Agravos à Saúde do Trabalhador"
+    ],
+    [
+      "bateria-avancada-questoes-enamed-residencia-notificacao",
+      "Bateria de Questões Comentadas do ENAMED e Concursos Médicos de Alto Desafio"
+    ],
+    [
+      "referencias",
+      "Referências Oficiais e Diretrizes"
+    ]
+  ],
+  "q": [
+    [
+      "marcos-legais-e-finalidade-sanitaria-notificacao",
+      0,
+      [
+        [
+          "2",
+          "1. Marcos Legais, Doutrinários e a Finalidade Sanitária da Notificação Compulsória"
+        ],
+        [
+          "3",
+          "O Conceito Doutrinário: Informação para a Ação Imediata"
+        ],
+        [
+          "p",
+          "A <strong>Notificação Compulsória</strong> é a comunicação obrigatória à autoridade sanitária competente da ocorrência de determinada doença, agravo ou evento de saúde pública, realizada pelos profissionais de saúde ou qualquer cidadão, com a finalidade primordial de deflagrar medidas imediatas e inadiáveis de investigação epidemiológica, contenção de surtos, bloqueio vacinal, isolamento, quarentena, assistência clínica e proteção à coletividade."
+        ],
+        [
+          "p",
+          "No modelo de vigilância em saúde consolidado pelo Sistema Único de Saúde (SUS), a notificação compulsória jamais deve ser encarada pelo médico como uma tarefa meramente burocrática ou cartorial de preenchimento estatístico retrospectivo. A sua razão de ser é expressa no princípio clássico da epidemiologia: <strong>\"Informação para a Ação\"</strong>. O valor de uma notificação é medido pela sua <strong>oportunidade</strong> — isto é, pela rapidez com que a informação alcança as equipes de campo da vigilância para bloquear a cadeia de transmissão comunitária e salvar vidas."
+        ],
+        [
+          "3",
+          "Bases Legais e Regulatórias no Brasil"
+        ],
+        [
+          "o",
+          [
+            "<strong>Lei Federal nº 6.259, de 30 de outubro de 1975:</strong> Dispõe sobre a organização das ações de Vigilância Epidemiológica e do Programa Nacional de Imunizações (PNI), instituindo em âmbito nacional a notificação compulsória de doenças e regulamentando a sua obrigatoriedade em todo o território nacional;",
+            "<strong>Lei Federal nº 8.080, de 19 de setembro de 1990 (Lei Orgânica da Saúde):</strong> Define em seu Artigo 6º, § 2º que compete ao SUS executar as ações de vigilância epidemiológica, compreendendo o conhecimento contínuo e a intervenção sobre fatores condicionantes da saúde coletiva;",
+            "<strong>Portarias de Consolidação GM/MS nº 4/2017 e nº 5/2017:</strong> Consolidam as normas sobre os sistemas de vigilância em saúde e os fluxos tripartite (União, Estados e Municípios);",
+            "<strong>Portaria GM/MS vigente atualizada (Lista Nacional de Notificação Compulsória):</strong> Republicada e atualizada periodicamente pelo Ministério da Saúde (incorporando novos agravos emergentes, como Mpox, SRAG e eventos adversos graves pós-vacinação)."
+          ]
+        ],
+        [
+          "3",
+          "A Regra de Ouro Inegociável: Notifica-se a SUSPEITA Clínica!"
+        ],
+        [
+          "p",
+          "<div class=\"book-alert book-alert-important\">\n  <strong>REGRA ABSOLUTA DE PROVA E DA PRÁTICA CLÍNICA:</strong>"
+        ],
+        [
+          "p",
+          "A notificação compulsória <strong>DEVE SER REALIZADA DIANTE DA SIMPLES SUSPEITA CLÍNICA OU EPIDEMIOLÓGICA</strong> da doença ou agravo. <strong>É FORMALMENTE PROIBIDO E CONSTITUI ERRO GRAVE AGUARDAR O RESULTADO DE EXAMES LABORATORIAIS CONFIRMATÓRIOS (sorologias, culturas, PCR, histopatologia) OU A EVOLUÇÃO DO CASO PARA EMITIR A NOTIFICAÇÃO!</strong>"
+        ],
+        [
+          "p",
+          "<em>Racional Sanitário:</em> Se um médico aguardar 7 a 15 dias pelo laudo laboratorial de um caso suspeito de Sarampo, Febre Amarela, Meningite Meningocócica ou Cólera, a oportunidade sanitária de realizar o bloqueio vacinal dos contatos nas primeiras 72 horas, instituir a quimioprofilaxia ou isolar o paciente terá sido irremediavelmente perdida, deflagrando surtos comunitários incontroláveis com mortes evitáveis."
+        ],
+        [
+          "3",
+          "Quem Tem a Obrigação Legal de Notificar?"
+        ],
+        [
+          "u",
+          [
+            "<strong>Profissionais de Saúde no Exercício da Profissão:</strong> Médicos, enfermeiros, cirurgiões-dentistas, farmacêuticos, biomédicos e médicos veterinários que prestem assistência ao paciente ou animal acometido;",
+            "<strong>Responsáveis por Estabelecimentos Públicos e Privados:</strong> Diretores clínicos e administrativos de hospitais, Unidades Básicas de Saúde (UBS/ESF), UPAs, clínicas privadas, consultórios, laboratórios de análises clínicas, bancos de sangue, creches, escolas, presídios, portos, aeroportos e hotéis;",
+            "<strong>Qualquer Cidadão Comum:</strong> A legislação confere legitimidade a qualquer indivíduo do povo para comunicar à autoridade sanitária a ocorrência de casos suspeitos ou surtos em sua comunidade (comunicação de rumor)."
+          ]
+        ],
+        [
+          "3",
+          "Aspectos Médico-Legais e Éticos: O Crime de Omissão de Notificação de Doença"
+        ],
+        [
+          "p",
+          "O sigilo médico é um direito do paciente e um dever ético profissional, porém o Código de Ética Médica (Artigo 73) e a legislação brasileira estabelecem expressamente como justa causa para a revelação de fato sigiloso o <strong>\"dever legal de notificação compulsória\"</strong>. A omissão do médico assistente em comunicar doença de notificação legal não é mera falta administrativa, configurando <strong>Crime Contra a Saúde Pública</strong> tipificado no Código Penal Brasileiro:"
+        ],
+        [
+          "p",
+          "<blockquote>\n  <strong>Artigo 269 do Código Penal Brasileiro:</strong><br>\n  <em>\"Deixar o médico de denunciar à autoridade pública doença cuja notificação é compulsória:<br>\n  Pena — detenção, de 6 (seis) meses a 2 (dois) anos, e multa.\"</em>\n</blockquote>"
+        ]
+      ]
+    ],
+    [
+      "cronologia-imediata-vs-semanal",
+      0,
+      [
+        [
+          "2",
+          "2. Periodicidade da Notificação: Imediata (até 24h) vs Semanal (até 7 dias)"
+        ],
+        [
+          "3",
+          "Estratificação Temporal: A Lógica Epidemiológica da Urgência"
+        ],
+        [
+          "p",
+          "A Lista Nacional do Ministério da Saúde divide as doenças e agravos em duas categorias rígidas de periodicidade, com fluxos operacionais inteiramente distintos:"
+        ],
+        [
+          "3",
+          "1. Notificação Compulsória Imediata (Em até 24 Horas)"
+        ],
+        [
+          "p",
+          "Destina-se aos agravos que apresentam altíssimo potencial de disseminação rápida (transmissibilidade explosiva), elevada letalidade, vulnerabilidade a medidas urgentes de bloqueio comunitário nas primeiras horas, ou que configurem <strong>Emergência de Saúde Pública de Importância Internacional (ESPII)</strong> segundo o Regulamento Sanitário Internacional (RSI 2005)."
+        ],
+        [
+          "p",
+          "<strong>Como Notificar?</strong> Deve ser feita pelo meio de comunicação mais rápido e disponível (telefone institucional de plantão da vigilância, e-mail criptografado ou formulário eletrônico online em tempo real — FormSUS/SINAN Web), complementada posteriormente pela ficha física do SINAN."
+        ],
+        [
+          "p",
+          "<strong>Fluxo Tripartite Simultâneo:</strong> A Portaria ministerial exige que a maioria das doenças de notificação imediata seja comunicada <strong>simultaneamente às três esferas de gestão do SUS: Secretaria Municipal de Saúde (SMS), Secretaria Estadual de Saúde (SES) e Ministério da Saúde (MS)</strong>."
+        ],
+        [
+          "3",
+          "2. Notificação Compulsória Semanal (Em até 7 Dias)"
+        ],
+        [
+          "p",
+          "Destina-se a doenças de curso crônico, endêmico consolidado ou de menor velocidade de propagação direta pessoa a pessoa, nas quais as medidas de controle são programáticas e organizadas pela rotina das equipes de Atenção Primária e serviços especializados."
+        ],
+        [
+          "t",
+          [
+            "Periodicidade",
+            "Critérios Epidemiológicos de Enquadramento",
+            "Rol Completo dos Agravos de Notificação Obrigatória (Padrão Oficial de Prova)"
+          ],
+          [
+            [
+              "<strong>IMEDIATA<br>(Até 24 Horas)</strong>",
+              "Risco iminente de surto/epidemia, alta letalidade, necessidade de bloqueio vacinal ou quimioprofilaxia imediata de contatos, ou emergência internacional.",
+              "• <strong>Acidente por Animal Peçonhento</strong> (cobras, aranhas, escorpiões);<br>\n        • <strong>Acidente de Trabalho Grave, com Óbito ou em Crianças/Adolescentes</strong>;<br>\n        • <strong>Antraz Pneumônico ou Cutâneo</strong>;<br>\n        • <strong>Botulismo</strong> (intoxicação alimentar neuroparalítica grave);<br>\n        • <strong>Cólera</strong>;<br>\n        • <strong>Coqueluche</strong> (bloqueio de contactantes em creches/domicílio);<br>\n        • <strong>Dengue — Casos Graves e Óbitos Suspeitos</strong> (dengue clássica ambulatorial é semanal!);<br>\n        • <strong>Doença Aguda pelo Vírus Zika em Gestantes</strong>;<br>\n        • <strong>Doença de Chagas Aguda</strong> (transmissão oral por açaí/caldo de cana ou vetorial);<br>\n        • <strong>Doença Invasiva por Haemophilus influenzae</strong>;<br>\n        • <strong>Doença Meningocócica e Outras Meningites</strong> (urgência de quimioprofilaxia de contatos íntimos);<br>\n        • <strong>Doenças com Suspeita de Disseminação Intencional (Bioterrorismo)</strong>;<br>\n        • <strong>Febre Amarela</strong> (bloqueio vacinal no território);<br>\n        • <strong>Febre de Chikungunya — Casos em áreas sem transmissão prévia ou Óbitos</strong>;<br>\n        • <strong>Febre do Nilo Ocidental e Outras Arboviroses Emergentes</strong>;<br>\n        • <strong>Febre Maculosa e Outras Rickettsioses</strong>;<br>\n        • <strong>Hantavirose</strong>;<br>\n        • <strong>Influenza Humana por Novo Subtipo Viral</strong> (potencial pandêmico);<br>\n        • <strong>Malária na Região Extra-Amazônica</strong> (na Amazônia Legal é semanal!);<br>\n        • <strong>Mpox (Varíola dos Macacos)</strong>;<br>\n        • <strong>Paralisia Flácida Aguda (Vigilância da Poliomielite)</strong>;<br>\n        • <strong>Peste (Peste Bubônica/Pneumônica)</strong>;<br>\n        • <strong>Raiva Humana e Acidente por Animal Potencialmente Transmissor da Raiva</strong> (mordedura de cão/gato/morcego);<br>\n        • <strong>Rubéola e Síndrome da Rubéola Congênita (SRC)</strong>;<br>\n        • <strong>Sarampo</strong> (emergência de bloqueio vacinal em até 72 horas);<br>\n        • <strong>Síndrome Respiratória Aguda Grave (SRAG)</strong> hospitalizada;<br>\n        • <strong>Varíola</strong>;<br>\n        • <strong>Violência Sexual e Tentativa de Suicídio</strong> (outras violências são semanais!)."
+            ],
+            [
+              "<strong>SEMANAL<br>(Até 7 Dias)</strong>",
+              "Doenças crônicas, transmissíveis endêmicas com controle de programa ou agravos sem necessidade de intervenção ambiental imediata nas primeiras 24 horas.",
+              "• <strong>Acidentes de Trabalho Comuns (sem gravidade extrema/óbito)</strong>;<br>\n        • <strong>Câncer Relacionado ao Trabalho</strong>;<br>\n        • <strong>Dengue Clássica / Febre de Chikungunya em Áreas Endêmicas com Transmissão Estabelecida</strong>;<br>\n        • <strong>Dermatoses Ocupacionais</strong>;<br>\n        • <strong>Doença de Chagas Crônica</strong>;<br>\n        • <strong>Doença de Creutzfeldt-Jakob (DCJ)</strong>;<br>\n        • <strong>Esquistossomose</strong>;<br>\n        • <strong>Hanseníase</strong> (todas as formas clínicas);<br>\n        • <strong>Hepatites Virais (A, B, C, D, E)</strong>;<br>\n        • <strong>Infecção pelo Vírus HIV em Adultos, Crianças e Gestantes/Parturientes/Puérperas</strong>;<br>\n        • <strong>Intoxicações Exógenas (por substâncias químicas, medicamentos, agrotóxicos)</strong>;<br>\n        • <strong>Leishmaniose Tegumentar Americana (LTA)</strong>;<br>\n        • <strong>Leishmaniose Visceral (Calazar)</strong>;<br>\n        • <strong>LER/DORT Ocupacional</strong>;<br>\n        • <strong>Malária na Região Amazônica (Área Endêmica)</strong>;<br>\n        • <strong>Perda Auditiva Induzida por Ruído (PAIR) Ocupacional</strong>;<br>\n        • <strong>Pneumoconioses (Silicose, Asbestose)</strong>;<br>\n        • <strong>Sífilis (Adquirida, em Gestante e Congênita)</strong>;<br>\n        • <strong>Tétano Acidental e Tétano Neonatal</strong>;<br>\n        • <strong>Toxoplasmose Gestacional e Congênita</strong>;<br>\n        • <strong>Tuberculose (Pulmonar e Extrapulmonar)</strong>;<br>\n        • <strong>Violências Domésticas, Intrafamiliares e Outras Violências Interpessoais (exceto violência sexual e tentativa de suicídio, que são imediatas!)</strong>."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-especiais-de-notificacao-e-pegadinhas",
+      0,
+      [
+        [
+          "2",
+          "3. Casos Especiais, Dicotomias Clássicas e Pegadinhas Recorrentes em Provas"
+        ],
+        [
+          "3",
+          "As Quatro Dicotomias Clássicas de Prova (Imediata vs Semanal)"
+        ],
+        [
+          "p",
+          "Bancas examinadoras de residência médica e ENAMED frequentemente constroem questões explorando agravos cuja periodicidade de notificação varia conforme a gravidade, população afetada ou localização geográfica. Domine estas distinções:"
+        ],
+        [
+          "t",
+          [
+            "Agravo Epidemiológico",
+            "Quando a Notificação é IMEDIATA (até 24h)?",
+            "Quando a Notificação é SEMANAL (até 7 dias)?"
+          ],
+          [
+            [
+              "<strong>Dengue</strong>",
+              "Casos de <strong>Dengue Grave</strong>, dengue com sinais de alarme internados ou <strong>Óbitos Suspeitos por Dengue</strong>.",
+              "Casos suspeitos de <strong>Dengue Clássica / Sem Sinais de Alarme</strong> atendidos ambulatorialmente em municípios endêmicos."
+            ],
+            [
+              "<strong>Malária</strong>",
+              "Casos diagnosticados na <strong>Região Extra-Amazônica</strong> (qualquer caso fora da Amazônia Legal exige alerta imediato para investigar transmissão autóctone!).",
+              "Casos diagnosticados na <strong>Região Amazônica (Área Endêmica)</strong>."
+            ],
+            [
+              "<strong>Violência</strong>",
+              "<strong>Violência Sexual</strong> e <strong>Tentativa de Suicídio</strong> (exigem profilaxias de emergência e proteção imediata).",
+              "Violência doméstica física habitual, psicológica, negligência e violência patrimonial."
+            ],
+            [
+              "<strong>Vírus Zika</strong>",
+              "Caso agudo de infecção pelo Vírus Zika em <strong>GESTANTE</strong> ou óbito com suspeita de Zika.",
+              "Zika em adultos não gestantes em áreas com transmissão já estabelecida."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Notificação Negativa: Por Que Ela é Obrigatória?"
+        ],
+        [
+          "p",
+          "A <strong>Notificação Negativa</strong> é a declaração formal, semanal e obrigatória preenchida no SINAN pelo responsável técnico de cada unidade de saúde atestando que, <em>durante aquela semana epidemiológica específica, nenhuma doença de notificação compulsória constante da lista oficial foi atendida ou registrada no serviço</em>."
+        ],
+        [
+          "p",
+          "<em>Racional Epidemiológico:</em> A notificação negativa comprova que o sistema de vigilância epidemiológica daquele município está <strong>ativo, vigilante e em operação contínua</strong>. Sem a notificação negativa, a autoridade sanitária central não tem como discernir se a ausência de casos notificados decorre de uma real ausência biológica da doença no território ou se traduz um <strong>silêncio epidemiológico artificial</strong> causado por colapso, greve ou desleixo dos profissionais de saúde da unidade."
+        ],
+        [
+          "3",
+          "Os Instrumentos Operacionais do SINAN"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ficha de Notificação Individual (FNI):</strong> Preenchida no primeiro contato pelo médico ou equipe assistencial no momento da suspeita. Contém dados demográficos do paciente, ocupação, endereço residencial detalhado e hipótese diagnóstica primária;",
+            "<strong>Ficha de Investigação de Caso (FIC):</strong> Instrumento especializado preenchido pelos técnicos e epidemiologistas da vigilância epidemiológica municipal durante o rastreamento de campo. Registra dados clínicos aprofundados, resultados de exames laboratoriais, busca ativa de contactantes, fonte de infecção identificada e o <strong>encerramento formal do caso</strong> (critério laboratorial, clínico-epidemiológico ou descarte)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-notificacao",
+      0,
+      [
+        [
+          "2",
+          "4. Casos Clínicos Estruturados e Condutas em Vigilância Epidemiológica"
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Exantema Febril em Creche e Notificação Imediata"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa:</strong> Menina de 3 anos de idade, previamente hígida, é trazida pela mãe à Unidade de Pronto Atendimento com história de febre alta (39,2 °C) há 4 dias, acompanhada de tosse seca intensa, coriza hialina profusa, conjuntivite com fotofobia acentuada e surgimento há 24 horas de exantema maculopapular avermelhado de progressão craniocaudal, que se iniciou atrás das orelhas e na linha de implantação dos cabelos, estendendo-se para face e tronco, com áreas de pele sã entre as lesões. Ao exame da cavidade oral, o médico observa pequenas manchas esbranquiçadas puntiformes circundadas por halo hiperemiado na mucosa jugal, na altura dos molares (Manchas de Koplik). A mãe relata que a caderneta vacinal está atrasada e que a criança frequenta creche em tempo integral."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Médica:</strong>"
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Febre e Cefaleia em Jovem Recruta — Quimioprofilaxia de Contatos"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa:</strong> Jovem de 19 anos, recruta em quartel militar, dá entrada no pronto-socorro com febre de início súbito (40 °C), cefaleia holocraniana excruciante, vômitos em jato, confusão mental e surgimento de petéquias cutâneas em membros inferiores nas últimas 6 horas. Exame físico: rigidez de nuca marcante com sinais de Kernig e Brudzinski positivos. A punção lombar revela líquor turvo sob pressão com diplococos Gram-negativos aos pares intra e extracelulares (<em>Neisseria meningitidis</em>)."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Médica:</strong>"
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-notificacao-compulsoria",
+      0,
+      [
+        [
+          "2",
+          "5. Questões Comentadas de Concursos e Residência Médica na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1: ENARE — Periodicidade e Fluxo da Notificação Compulsória"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um médico recém-formado assume plantão em Unidade Básica de Saúde e atende quatro pacientes com diagnósticos suspeitos distintos:"
+        ],
+        [
+          "p",
+          "1. Paciente com tosse crônica produtiva há 4 semanas, emagrecimento e suspeita clínica de tuberculose pulmonar.<br>\n2. Paciente vítima de picada de cobra jararaca (acidente ofídico botrópico) com dor e edema no membro inferior direito.<br>\n3. Gestante de 22 semanas com teste rápido treponêmico positivo em consulta pré-natal (sífilis em gestante).<br>\n4. Criança de 5 anos trazida pelo SAMU com quadro agudo de febre alta, rigidez de nuca e petéquias purpúricas em tronco (suspeita de meningite meningocócica)."
+        ],
+        [
+          "p",
+          "De acordo com a Lista Nacional de Notificação Compulsória do Ministério da Saúde, exigem <strong>notificação imediata (em até 24 horas)</strong> às autoridades sanitárias os casos:"
+        ],
+        [
+          "p",
+          "A) 1 e 3 apenas.<br>\nB) 2 e 4 apenas.<br>\nC) 1, 2 e 4 apenas.<br>\nD) 2, 3 e 4 apenas.<br>\nE) 1, 2, 3 e 4."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Caso 1 (Tuberculose):</strong> Notificação compulsória <strong>SEMANAL</strong> (em até 7 dias). Trata-se de agravo transmissível de curso crônico manejado programmaticamente na APS.<br>\n• <strong>Caso 2 (Acidente por Animal Peçonhento):</strong> Notificação compulsória <strong>IMEDIATA (até 24 horas)</strong>. A vigilância epidemiológica precisa monitorar estoques de soros antivenenos e investigar o foco animal.<br>\n• <strong>Caso 3 (Sífilis em gestante):</strong> Notificação compulsória <strong>SEMANAL</strong> (em até 7 dias). O tratamento com penicilina benzatina deve ser iniciado na hora, mas a comunicação ao SINAN é semanal.<br>\n• <strong>Caso 4 (Doença Meningocócica):</strong> Notificação compulsória <strong>IMEDIATA (até 24 horas)</strong>. É fundamental deflagrar a quimioprofilaxia de contatos íntimos nas primeiras horas com rifampicina ou ceftriaxona para conter surtos secundários de alta letalidade.<br>\nPortanto, apenas os casos 2 e 4 exigem notificação imediata em até 24h. Alternativa B correta."
+        ],
+        [
+          "3",
+          "Questão 2: USP / Residência Médica — Momento da Notificação e Omissão Penal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante o atendimento em ambulatório de especialidades, um médico atende um paciente com lesões cutâneas hipocrômicas com perda de sensibilidade térmica e espessamento do nervo ulnar direito, suspeitando fortemente de hanseníase. O médico solicita biópsia de pele e baciloscopia de raspado intradérmico e decide aguardar o laudo anatomopatológico (previsto para 20 dias) antes de preencher a Ficha de Notificação do SINAN, temendo \"notificar um caso que venha a ser descartado\". Sobre a conduta do profissional frente às normas sanitárias e éticas vigentes, assinale a correta:"
+        ],
+        [
+          "p",
+          "A) A conduta está correta, pois a legislação brasileira veda a notificação de agravos crônicos sem confirmação microbiológica ou histopatológica prévia.<br>\nB) A conduta está equivocada, pois a notificação de doenças compulsórias deve ser realizada obrigatoriamente diante da suspeita clínica, sem aguardar exames complementares de confirmação, e a omissão deliberada constitui infração ética e crime tipificado no Código Penal.<br>\nC) A notificação é facultativa na hanseníase, sendo exigida apenas em casos que evoluem para incapacidade física de grau 2.<br>\nD) O médico agiu com prudência, pois a notificação de casos não confirmados gera penalidades administrativas automáticas ao profissional emitente pelo Conselho Federal de Medicina.<br>\nE) A responsabilidade pela notificação no SUS é exclusiva dos enfermeiros da Vigilância em Saúde, não cabendo ao médico qualquer obrigação formal."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\nA regra basilar da vigilância epidemiológica determina que <strong>notifica-se a SUSPEITA clínica</strong>. Aguardar resultados laboratoriais tardios retarda o início de ações de busca ativa de contactantes e controle sanitário. Se o exame laboratorial posterior resultar negativo, o caso será formalmente <em>descartado</em> na Ficha de Investigação do SINAN, sem qualquer prejuízo ou sanção ao médico notificador (pelo contrário: a suspeição faz parte do bom exercício da medicina preventiva). Além disso, a omissão voluntária da notificação de agravo compulsório contraria o Código de Ética Médica e configura o crime previsto no Artigo 269 do Código Penal. Alternativa B correta."
+        ]
+      ]
+    ],
+    [
+      "sintese-de-alto-rendimento-notificacao-compulsoria",
+      0,
+      [
+        [
+          "2",
+          "6. Síntese de Alto Rendimento e Regras Mnemônicas para o ENAMED"
+        ],
+        [
+          "3",
+          "Os Dez Mandamentos da Notificação Compulsória para Concursos"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Regra de Ouro Primária:</strong> Notifica-se a <strong>SUSPEITA CLÍNICA</strong>, NUNCA aguardando confirmação laboratorial! Notificar suspeita não é erro; deixar de notificar é crime (Art. 269 do Código Penal)!",
+            "<strong>2. Imediata em até 24 Horas:</strong> Lembrar das emergências epidêmicas e de bloqueio: <strong>Sarampo, Febre Amarela, Raiva humana e acidente rábico grave, Meningite meningocócica, Botulismo, Cólera, Peste, Antraz, Acidente por Animal Peçonhento, Violência Sexual e Tentativa de Suicídio</strong>!",
+            "<strong>3. Semanal em até 7 Dias:</strong> Agravos crônicos e de programa: <strong>Tuberculose, Hanseníase, Sífilis (todas), HIV/AIDS, Hepatites virais, Leishmanioses, Doença de Chagas crônica e Violência doméstica comum</strong>.",
+            "<strong>4. Dicotomias de Prova Decisivas:</strong>\n    <ul>\n      <li>Dengue clássica ambulatorial = Semanal; Dengue grave ou óbito = <strong>Imediata</strong>;",
+            "Malária na Amazônia = Semanal; Malária fora da Amazônia (extra-amazônica) = <strong>Imediata</strong>;",
+            "Violência física habitual/doméstica = Semanal; Violência sexual e tentativa de suicídio = <strong>Imediata</strong>;",
+            "Zika comum = Semanal; Zika em gestante ou óbito = <strong>Imediata</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>5. Notificação Negativa:</strong> Declaração semanal obrigatória de que nenhum caso ocorreu. Prova que o sistema está <strong>ativo e vigilante</strong>, descartando o silêncio epidemiológico artificial.</li>\n  <li><strong>6. Sigilo Médico vs Dever Legal:</strong> O sigilo médico cede expressamente diante do dever legal de notificação compulsória (justa causa ética do CEM).</li>\n  <li><strong>7. Acidente de Trabalho:</strong> Deve ser notificado no SINAN e ter <strong>CAT emitida até o 1º dia útil seguinte</strong>, havendo ou não afastamento das atividades laborais! Acidente grave ou com óbito exige notificação imediata em até 24h.</li>\n  <li><strong>8. Instrumentos do SINAN:</strong> FNI (Ficha de Notificação Individual na entrada) vs FIC (Ficha de Investigação de Caso aprofundada de campo).</li>\n  <li><strong>9. Bloqueio Vacinal no Sarampo:</strong> A notificação imediata do caso suspeito desencadeia o <strong>bloqueio vacinal com tríplice viral em até 72 horas</strong> nos contactantes da creche/domicílio a partir dos 6 meses de vida.</li>\n  <li><strong>10. Quimioprofilaxia da Meningite Meningocócica:</strong> Notificação imediata deflagra a quimioprofilaxia dos contatos íntimos nas primeiras 24-48h com <strong>Rifampicina oral por 2 dias</strong> (ou Ceftriaxona dose única em gestantes).</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "lista-nacional-esmiucada-e-criterios-de-inclusao",
+      0,
+      [
+        [
+          "2",
+          "Critérios Epidemiológicos de Definição da Lista Nacional e Análise Detalhada dos Agravos"
+        ],
+        [
+          "3",
+          "Critérios Técnicos da Portaria Ministerial para Inclusão de Doenças na Lista Nacional"
+        ],
+        [
+          "p",
+          "A formulação da Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública (Portaria de Consolidação GM/MS nº 4/2017 e atualizações vigentes) fundamenta-se em princípios epidemiológicos rigorosos recomendados pela Organização Mundial da Saúde (OMS) e pelo Centro de Vigilância Epidemiológica do Ministério da Saúde. Nem toda doença prevalente deve ser de notificação compulsória universal; a inclusão de um agravo obedece a sete critérios técnicos centrais:"
+        ],
+        [
+          "t",
+          [
+            "Critério Técnico Oficial",
+            "Fundamentação Conceitual e Operacional",
+            "Exemplos Típicos de Agravos Enquadrados"
+          ],
+          [
+            [
+              "<strong>1. Magnitude</strong>",
+              "Elevada frequência da doença expressa por coeficientes elevados de incidência, prevalência, mortalidade ou anos potenciais de vida perdidos (APVP), refletindo grande impacto na carga global de morbimortalidade populacional.",
+              "Tuberculose, Hanseníase, Dengue, Infecção pelo HIV/AIDS e Sífilis."
+            ],
+            [
+              "<strong>2. Transcendência</strong>",
+              "Severidade clínica, social e econômica do agravo, avaliada através de três componentes:\n        <ul>\n          <li><em>Severidade Clínica:</em> Alta taxa de letalidade e taxa de hospitalização;</li>\n          <li><em>Relevância Social:</em> Estigma, discriminação, invalidez precoce ou sequelas incapacitantes permanentes;</li>\n          <li><em>Relevância Econômica:</em> Perda massiva de produtividade, custos elevados com internações de alta complexidade e impacto na previdência social.</li>\n        </ul>",
+              "Raiva humana (letalidade próxima a 100%), Tétano neonatal, Paralisia Flácida Aguda / Poliomielite e Meningites bacterianas."
+            ],
+            [
+              "<strong>3. Potencial de Disseminação</strong>",
+              "Elevada velocidade de propagação direta ou vetorial do agente infeccioso, com alto número básico de reprodução ($R_0$) ou capacidade de deflagrar epidemias de alcance interestadual e internacional em curto período de tempo.",
+              "Sarampo ($R_0$ entre 12 e 18), Influenza com novo subtipo pandêmico, Febre Amarela, Cólera e Mpox."
+            ],
+            [
+              "<strong>4. Vulnerabilidade</strong>",
+              "Existência de <strong>instrumentos técnicos e operacionais eficazes de prevenção, controle e intervenção sanitária</strong> disponíveis na rede do SUS (vacinas eficazes, quimioprofilaxia de contatos, eliminação de vetores, saneamento ou tratamento curativo padronizado). Se não houver intervenção viável, a vigilância universal perde utilidade epidemiológica.",
+              "Doenças imunopreveníveis (Sarampo, Rubéola, Coqueluche, Difteria, Tétano) e infecções bacterianas com bloqueio quimioprofilático (Doença meningocócica)."
+            ],
+            [
+              "<strong>5. Compromissos Internacionais</strong>",
+              "Cumprimento das metas pactuadas de erradicação, eliminação ou controle de doenças assumidas pelo Estado brasileiro perante a Assembleia Mundial da Saúde e o Regulamento Sanitário Internacional (RSI 2005).",
+              "Poliomielite (manutenção do certificado de erradicação), Sarampo e Rubéola (eliminação da transmissão autóctone), Varíola e Peste."
+            ],
+            [
+              "<strong>6. Eventos Inusitados e Emergências de Saúde Pública</strong>",
+              "Ocorrência de doenças desconhecidas, variantes patogênicas mutantes, surtos de etiologia inexplicada ou eventos decorrentes de liberação acidental ou deliberada de agentes biológicos, químicos ou radioativos (Bioterrorismo).",
+              "Antraz pneumônico, Botulismo, Síndrome Respiratória Aguda Grave (SRAG) e acidentes nucleares ou com radiações ionizantes."
+            ],
+            [
+              "<strong>7. Regulamento Sanitário Internacional (RSI 2005)</strong>",
+              "Quatro doenças exigem notificação imediata mandatória universal e incondicional à OMS segundo o Artigo 6º do RSI: <strong>Varíola, Poliomielite por poliovírus selvagem, Influenza humana causada por novo subtipo viral e Síndrome Respiratória Aguda Grave (SARS)</strong>.",
+              "Poliovírus selvagem, gripe aviária pandêmica e novos coronavírus."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Aprofundamento Farmacoepidemiológico dos Agravos de Notificação Imediata"
+        ],
+        [
+          "p",
+          "A notificação em até 24 horas desencadeia protocolos clínicos farmacológicos imediatos que o médico de plantão deve conhecer detalhadamente:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Acidentes Ofídicos e por Animais Peçonhentos (Notificação em até 24h):</strong>\n    <ul>\n      <li><em>Acidente Botrópico (Jararaca - 85% dos acidentes ofídicos no Brasil):</em> Ação proteolítica (inflamação e necrose local), coagulante (consumo de fibrinogênio com sangue incoagulável) e hemorrágica (lesão endotelial sistêmica por hemorraginas com hematúria, gengivorragia e choque). Tratamento: <strong>Soro Antibotrópico (SAB)</strong> em doses de 2 a 4 ampolas (leve), 4 a 8 ampolas (moderado) ou 12 ampolas (grave) por via venosa sem teste de sensibilidade prévio;",
+            "<em>Acidente Crotálico (Cascavel - 10% dos casos):</em> Ação neurotóxica (fascies miastênica de Rosenfeld com ptose palpebral bilateral, oftalmoplegia e visão turva), miotóxica (rabdomiólise com dor muscular difusa e mioglobinúria com urina cor de coca-cola) e coagulante. Risco crítico: <strong>Insuficiência Renal Aguda por necrose tubular aguda pigmentar mioglobinúrica</strong>. Tratamento: <strong>Soro Anticrotálico (SAC)</strong> associado a hidratação venosa vigorosa e alcalinização urinária com bicarbonato de sódio para manter fluxo urinário &gt; 2 mL/kg/h;",
+            "<em>Acidente Laquético (Surucucu - florestas tropicais):</em> Ação idêntica à botrópica associada a <strong>síndrome vagal intensa</strong> (bradicardia, hipotensão, cólicas abdominais e diarreia profusa). Tratamento: <strong>Soro Antibotrópico-Laquético (SABL)</strong>;",
+            "<em>Acidente Elapídico (Coral verdadeira):</em> Ação neurotóxica pura com paralisia precoce da musculatura respiratória. Tratar com <strong>Soro Antielapídico (SAE)</strong> e suporte de ventilação mecânica."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Raiva Humana e Profilaxia Pré e Pós-Exposição (Notificação em até 24h):</strong>"
+        ],
+        [
+          "u",
+          [
+            "A raiva é uma encefalomielite viral aguda invariavelmente letal provocada por Rhabdovirus transmitido pela saliva de mamíferos infectados (cães, gatos, morcegos hematófagos e não hematófagos, macacos e raposas);",
+            "<em>Classificação dos Acidentes:</em> Leves (arranhaduras superficiais por cão/gato não agressivo) vs Graves (mordeduras em cabeça, pescoço, mãos ou pés; ferimentos profundos ou múltiplos; qualquer contato/arranhadura por <strong>morcegos, animais silvestres ou animais desconhecidos/raivosos</strong>);",
+            "<em>Esquema Pós-Exposição em Acidente Grave com Animal Silvestre / Morcego / Cão Suspeito Desaparecido:</em> Lavagem imediata exaustiva com água e sabão por 15 minutos + <strong>Vacina Antirrábica Celular (4 doses nos dias D0, D3, D7 e D14)</strong> associada OBRIGATORIAMENTE à infiltração de <strong>Soro Antirrábico Humano (SAR - 40 UI/kg) ou Imunoglobulina Humana Antirrábica (IGHAR - 20 UI/kg)</strong> no leito da ferida e nos tecidos vizinhos no D0."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Violência Sexual (Notificação Imediata em até 24h):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Atendimento multidisciplinar humanizado sem exigência de boletim de ocorrência policial ou autorização judicial;",
+            "<em>Profilaxia da Gravidez Indesejada:</em> <strong>Levonorgestrel oral (dose única de 1,5 mg)</strong> administrado idealmente nas primeiras 72 horas (podendo ser utilizado até 120 horas / 5 dias);",
+            "<em>Profilaxia do HIV (PEP Sexual):</em> <strong>Tenofovir + Lamivudina + Dolutegravir por 28 dias</strong>, iniciada obrigatoriamente nas primeiras 72 horas;",
+            "<em>Profilaxia de ISTs Não Virais:</em> <strong>Ceftriaxona 500 mg IM em dose única</strong> (gonorreia) + <strong>Azitromicina 1g oral em dose única</strong> (clamídia) + <strong>Metronidazol 2g oral em dose única</strong> (tricomoníase);",
+            "<em>Profilaxia da Hepatite B:</em> Vacina + Imunoglobulina específica (IGHA) se vítima não imunizada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "investigacao-epidemiologica-e-encerramento-sinan",
+      0,
+      [
+        [
+          "2",
+          "A Investigação Epidemiológica de Campo, Busca Ativa e Critérios de Encerramento no SINAN"
+        ],
+        [
+          "3",
+          "O Fluxo Operacional da Informação Epidemiológica no SINAN"
+        ],
+        [
+          "p",
+          "O Sistema de Informação de Agravos de Notificação (SINAN) constitui a espinha dorsal da vigilância no Brasil, operando de forma descentralizada e integrada nas três esferas de governo:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Unidade Notificadora Local (Porta de Entrada):</strong> Recepção do caso, identificação da suspeita clínica, atendimento imediato, preenchimento da <strong>Ficha de Notificação Individual (FNI)</strong> e comunicação imediata (se agravo de até 24h) por telefone/e-mail institucional ao setor de vigilância epidemiológica do distrito sanitário ou secretaria municipal;",
+            "<strong>Secretaria Municipal de Saúde (SMS):</strong> Digitação da notificação no banco de dados local do SINAN Net/SINAN Web, desencadeamento da equipe de campo para busca ativa de contatos e investigação ambiental, emissão de alertas locais e transmissão semanal dos lotes de dados para a SES;",
+            "<strong>Secretaria Estadual de Saúde (SES):</strong> Consolidação estadual, conferência de duplicidades, assessoria técnica aos municípios em surtos de grande magnitude, envio dos lotes de dados semanais para o Ministério da Saúde e articulação com Laboratórios Centrais de Saúde Pública (LACEN);",
+            "<strong>Ministério da Saúde (Secretaria de Vigilância em Saúde e Ambiente — SVSA):</strong> Consolidação nacional, análise epidemiológica dos coeficientes nacionais, monitoramento do cumprimento das metas do PNI e notificação à Organização Pan-Americana da Saúde (OPAS/OMS) de eventos internacionais."
+          ]
+        ],
+        [
+          "3",
+          "Critérios Formais de Encerramento de Casos no SINAN"
+        ],
+        [
+          "p",
+          "Todo caso notificado e investigado deve ser encerrado formalmente no sistema dentro de um prazo regulamentar (habitualmente 60 a 90 dias após a notificação). O encerramento pode ocorrer segundo quatro critérios epidemiológicos oficiais:"
+        ],
+        [
+          "t",
+          [
+            "Critério de Encerramento Oficial",
+            "Definição Operacional e Exigências Técnicas",
+            "Aplicações Clínicas Práticas"
+          ],
+          [
+            [
+              "<strong>1. Critério Laboratorial</strong>",
+              "Confirmação do agente etiológico ou de marcadores específicos através de métodos laboratoriais validados pelo LACEN/Fiocruz:\n        <ul>\n          <li>Isolamento do patógeno em cultura microbiológica pura;</li>\n          <li>Identificação de material genético por Biologia Molecular (RT-PCR / TRM-TB);</li>\n          <li>Sorologia específica: detecção de anticorpos da classe IgM ou soroconversão de IgG com aumento de 4 vezes nos títulos em amostras pareadas colhidas com 14 a 21 dias de intervalo;</li>\n          <li>Exame histopatológico com biópsia demonstrando lesões patognomônicas.</li>\n        </ul>",
+              "Padrão-ouro na confirmação da maioria das infecções (TRM-TB positivo na tuberculose, sorologia IgM reagente no sarampo, RT-PCR positivo na febre amarela)."
+            ],
+            [
+              "<strong>2. Critério Clínico-Epidemiológico</strong>",
+              "Utilizado quando o paciente <strong>não realizou exames laboratoriais específicos</strong> (ou os exames foram inconclusivos/inadequados por coleta tardia), mas apresenta <strong>quadro clínico compatível e VÍNCULO EPIDEMIOLÓGICO DIRETO COMPROVADO com outro caso confirmado por critério laboratorial</strong> durante o período de transmissibilidade e incubação da doença.",
+              "• Em epidemias consolidadas de <strong>Dengue</strong> em municípios com transmissão sustentada (confirma-se dengue na grande maioria dos pacientes por critério clínico-epidemiológico, reservando o teste laboratorial para casos graves, gestantes e idosos);<br>\n        • Contato domiciliar de caso de <strong>Sarampo</strong> que desenvolve exantema febril 10 dias após exposição direta."
+            ],
+            [
+              "<strong>3. Critério Clínico Puro</strong>",
+              "Aplicável a doenças que possuem <strong>expressão clínica e semiológica patognomônica</strong> inquestionável, dispensando exames microbiológicos sofisticados para confirmação diagnóstica.",
+              "• <strong>Tétano Acidental / Tétano Neonatal:</strong> O diagnóstico é puramente clínico (trismo, riso sardônico, opistótono e espasmos induzidos por estímulos táteis/sonoros sem alteração de líquor);<br>\n        • <strong>Acidentes Ofídicos e Peçonhentos:</strong> Diagnóstico clínico-anamnéstico baseado nas manifestações locais e sistêmicas causadas pelo veneno."
+            ],
+            [
+              "<strong>4. Descarte do Caso (Caso Descartado)</strong>",
+              "Ocorre quando a investigação clínica e epidemiológica minuciosa conclui que o paciente <strong>não apresentava a doença notificada</strong>, comprovando diagnóstico alternativo ou apresentando resultados laboratoriais negativos em amostras biológicas colhidas no momento e técnica adequados.",
+              "Suspeita inicial de meningite bacteriana com líquor límpido e bacterioscopia/cultura negativas, com evolução afebril atribuída a cefaleia tensional."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Busca Ativa Retrospectiva e Institucional"
+        ],
+        [
+          "p",
+          "A <strong>busca ativa de casos</strong> é a atividade de campo proativa indispensável para mensurar o volume de subnotificação e garantir que nenhum caso de agravo transmissível grave permaneça oculto na comunidade:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Busca Ativa Domiciliar:</strong> Varredura quarteirão a quarteirão realizada pelos Agentes Comunitários de Saúde (ACS) e técnicos de vigilância em áreas geográficas vizinhas ao domicílio de um caso confirmado de doença de transmissão vetorial ou por gotículas (ex: bloqueio de sarampo em raio de 9 quadras);",
+            "<strong>Busca Ativa Institucional / Hospitalar:</strong> Visita periódica sistemática de enfermeiros de vigilância aos estabelecimentos assistenciais de saúde para inspecionar:\n    <ul>\n      <li>Livros de registro de atendimento do pronto-socorro e triagem de enfermagem;",
+            "Livros de registros de punções lombares e laudos de líquor nos laboratórios de patologia clínica;",
+            "Declarações de Óbito (DO) do Cartório de Registro Civil que citem diagnósticos suspeitos (ex: \"óbito por febre a esclarecer\", \"insuficiência respiratória aguda\", \"sepse de foco indeterminado\");",
+            "Livros de internação de UTI pediátrica pesquisando Paralisias Flácidas Agudas em menores de 15 anos para vigilância da poliomielite."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-complexos-notificacao-e-bateria",
+      0,
+      [
+        [
+          "2",
+          "Casos Clínicos de Alta Complexidade e Questões Avançadas de Residência Médica"
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Vigilância das Paralisias Flácidas Agudas e Erradicação da Pólio"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa:</strong> Menino de 4 anos é admitido na enfermaria de neuropediatria de hospital regional com história de fraqueza muscular rapidamente progressiva iniciada há 3 dias. A mãe relata que a criança apresentou quadro febril baixo e diarreia há 1 semana, seguido por dificuldade para ficar de pé e claudicação. Ao exame neurológico: lúcido, sem sinais meníngeos, hipotonia muscular acentuada em membros inferiores com predomínio no membro inferior direito, com força muscular grau 2 à direita e grau 4 à esquerda (paralisia assimétrica), reflexo patelar e aquileu abolidos à direita (arreflexia osteotendínea profunda) e sensibilidade tátil e dolorosa integralmente preservadas. A caderneta vacinal revela apenas 2 doses de vacina inativada contra poliomielite (VIP) nos primeiros meses de vida, sem doses subsequentes."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Médica e de Vigilância:</strong>"
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Malária na Região Sudeste — Dicotomia Geográfica"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa:</strong> Homem de 34 anos, biólogo, residente na cidade de Campinas (SP), comparece à UBS referindo febre alta súbita (39,8 °C) com calafrios trepidantes intensos, sudorese profusa e cefaleia, com episódios recorrentes em dias alternados (febre terçã). Relata que retornou há 12 dias de uma viagem de trabalho ecológico no interior do estado do Amazonas, onde pernoitou em áreas ribeirinhas na floresta. A gota espessa e o teste rápido imunocromatográfico realizados na UBS confirmam a presença de trofozoítos de <em>Plasmodium vivax</em>."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Conduta Médica e de Vigilância:</strong>"
+        ],
+        [
+          "3",
+          "Bateria de Questões Comentadas com Distratores Exaustivos"
+        ],
+        [
+          "4",
+          "Questão 3: UNIFESP — A Notificação Compulsória e a Responsabilidade dos Serviços Privados"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> O diretor técnico de um prestigiado hospital terciário da rede privada de saúde emite uma circular interna orientando os médicos do corpo clínico a \"não preencher fichas de notificação compulsória do SUS no atendimento a pacientes particulares e de planos de saúde, cabendo a responsabilidade de vigilância exclusivamente aos serviços públicos municipais\". Considerando a Lei Federal nº 6.259/1975, a Lei Federal nº 8.080/1990 e as normas de vigilância epidemiológica, assinale a correta:"
+        ],
+        [
+          "p",
+          "A) A circular do diretor é plenamente legal, pois a fiscalização epidemiológica do SUS restringe-se estritamente aos usuários atendidos em unidades públicas ou filantrópicas conveniadas.<br>\nB) A circular é manifestamente ilegal e contraria a legislação sanitária brasileira, pois a notificação compulsória de doenças, agravos e eventos de saúde pública é OBRIGATÓRIA para todos os serviços de saúde públicos E privados em território nacional, vinculando todos os profissionais médicos sob pena de sanções penais e ético-disciplinares.<br>\nC) Apenas hospitais privados que recebem subsídios de renúncia fiscal são obrigados a notificar doenças infectocontagiosas.<br>\nD) A responsabilidade por notificar doenças em pacientes privados é transferida automaticamente para a operadora do plano de saúde, isentando os médicos do hospital.<br>\nE) A notificação em serviços privados só é permitida mediante autorização judicial expressa para quebra de sigilo médico do cliente pagante."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\nA legislação sanitária federal (Art. 7º da Lei 6.259/75 e Art. 8º da Portaria de Consolidação nº 4/2017) é peremptória: <strong>a notificação compulsória é de cumprimento obrigatório para todos os profissionais de saúde e para todos os estabelecimentos de saúde, públicos e PRIVADOS, em qualquer ponto do território nacional</strong>. O direito à vigilância epidemiológica e à proteção coletiva é de ordem pública e universal, não sofrendo qualquer mitigação pelo fato de o paciente ser atendido na rede privada suplementar. A omissão deliberada configura crime contra a saúde pública tipificado no Art. 269 do Código Penal. Alternativa B correta."
+        ],
+        [
+          "4",
+          "Questão 4: AMRIGS — Notificação em Violência contra a Mulher e Sigilo"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Uma mulher de 32 anos comparece ao pronto-atendimento hospitalar acompanhada por vizinha apresentando hematomas periorbitários bilaterais, escoriações em antebraços e equimoses digitais no pescoço decorrentes de agressão física desferida pelo cônjuge em ambiente doméstico. Durante o atendimento médico privativo, a paciente suplica em prantos ao médico para que \"não conte a ninguém e não chame a polícia nem faça denúncia, pois tem medo de que o marido a mate\". Frente à legislação federal vigente sobre a notificação de violência e ao Código de Ética Médica, qual a conduta legal e sanitária mandatória que o médico deve adotar?"
+        ],
+        [
+          "p",
+          "A) Respeitar irrestritamente o pedido da paciente, abstendo-se de registrar a ocorrência no prontuário e de emitir qualquer ficha de notificação.<br>\nB) Preencher compulsoriamente a Ficha de Notificação/Investigação de Violência Interpessoal e Autoprovocada do SINAN, encaminhando-a ao serviço de vigilância epidemiológica municipal em fluxo semanal sigiloso para fins estatísticos e de proteção social em saúde, acolhendo a paciente na rede de apoio assistencial, esclarecendo que a notificação epidemiológica em saúde NÃO se confunde com registro de ocorrência policial contra a vontade da mulher adulta capaz.<br>\nC) Acionar imediatamente a Polícia Militar e voz de prisão ao agressor no domicílio sem o consentimento da vítima.<br>\nD) Exigir que a paciente registre boletim de ocorrência na Delegacia da Mulher como condição prévia para receber o curativo e a prescrição médica.<br>\nE) Apenas notificar a violência se houver fratura óssea demonstrada ao raio-X."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\nA notificação de casos suspeitos ou confirmados de violência doméstica e intrafamiliar é <strong>COMPULSÓRIA no âmbito do SUS (alimentando o SINAN em caráter estritamente sigiloso e de proteção em saúde)</strong>. Essa notificação é epidemiológica e sanitária, vinculando a paciente à rede de assistência social, psicológica e de saúde da mulher. Ela <strong>NÃO é uma denúncia policial</strong>; a mulher adulta e mentalmente capaz tem a prerrogativa de decidir sobre a representação criminal contra o agressor (salvo nos casos de violência contra crianças, adolescentes, idosos ou incapazes, onde a comunicação aos Conselhos Tutelares/Ministério Público é compulsória imediata). Condicionar o atendimento médico ao boletim de ocorrência (D) ou ignorar o agravo (A) constituem faltas éticas graves. Alternativa B correta."
+        ]
+      ]
+    ],
+    [
+      "protocolos-detalhados-de-notificacao-imediata-e-rsi",
+      0,
+      [
+        [
+          "2",
+          "Protocolos das Doenças de Notificação Imediata (DNI), Emergências em Saúde Pública e Regulamento Sanitário Internacional"
+        ],
+        [
+          "3",
+          "Arquitetura Operacional da Notificação Compulsória Imediata (Até 24 Horas)"
+        ],
+        [
+          "p",
+          "A notificação compulsória imediata (prazo estrito de até 24 horas a partir do conhecimento da suspeita diagnóstica) destina-se a agravos cujo potencial de letalidade, rápida disseminação transfronteiriça ou vulnerabilidade a medidas urgentes de bloqueio de contatos e quimioprofilaxia exigem mobilização sanitária em tempo real. Uma demora de poucas horas no desencadeamento das ações de contenção pode inviabilizar o controle de um surto de meningite bacteriana ou permitir que uma variante emergente de influenza se dissemine por todo o território nacional."
+        ],
+        [
+          "p",
+          "A operacionalização da notificação imediata não depende da chegada de uma ficha física de papel ao órgão central de saúde. Ela se dá por canais eletrônicos rápidos e telefonia dedicada, especificamente:"
+        ],
+        [
+          "u",
+          [
+            "<strong>CIEVS (Centro de Informações Estratégicas em Vigilância em Saúde):</strong> Rede estruturada pelo Ministério da Saúde em articulação com as secretarias estaduais e municipais de saúde, disponível 24 horas por dia, 7 dias por semana, com números 0800, correio eletrônico institucional e aplicativos de mensageria criptografada;",
+            "<strong>Notifica-SUS / Sinan Web:</strong> Módulos digitais de inserção instantânea de dados clínicos preliminares;",
+            "<strong>Telefonia Direta dos Serviços de Vigilância Epidemiológica Municipal e Hospitalar (VEH).</strong>"
+          ]
+        ],
+        [
+          "3",
+          "A Diferenciação entre Esferas de Destino da Notificação Imediata"
+        ],
+        [
+          "p",
+          "Um dos pontos mais cobrados nos exames de residência médica de maior concorrência é a destinação da notificação imediata. Nem todo agravo de notificação imediata deve ser comunicado diretamente às três esferas de gestão (Municipal, Estadual e Federal/Ministério da Saúde). A Portaria de Consolidação estabelece distinções cruciais:"
+        ],
+        [
+          "t",
+          [
+            "Destino da Notificação Imediata",
+            "Doenças, Agravos e Eventos Enquadrados",
+            "Racional Epidemiológico e Operacional"
+          ],
+          [
+            [
+              "<strong>Notificação Imediata às TRÊS Esferas de Gestão (Município, Estado e Ministério da Saúde em até 24h)</strong>",
+              "• <strong>Botulismo</strong>, <strong>Cólera</strong> e <strong>Febre Amarela</strong>;<br>\n        • <strong>Peste</strong>, <strong>Poliomielite</strong> e <strong>Raiva Humana</strong>;<br>\n        • <strong>Sarampo</strong> e <strong>Rubéola</strong> (doenças em fase de eliminação);<br>\n        • <strong>Varíola</strong> e <strong>Varíola dos Macacos (Mpox)</strong>;<br>\n        • <strong>Síndrome Respiratória Aguda Grave (SRAG)</strong> associada a coronavírus emergente ou novo subtipo viral de Influenza;<br>\n        • <strong>Doença de Chagas Aguda</strong>;<br>\n        • <strong>Acidentes por animais peçonhentos graves ou óbitos</strong>;<br>\n        • <strong>Eventos Adversos Graves Pós-Vacinação (EAPV)</strong>;<br>\n        • <strong>Emergências de Saúde Pública de Importância Internacional (ESPII)</strong> e eventos inusitados.",
+              "Trata-se de agravos de alcance potencialmente pandêmico, ameaças de bioterrorismo ou compromissos globais de erradicação/eliminação, demandando resposta técnica e logística coordenada diretamente pela União em conjunto com estados e municípios."
+            ],
+            [
+              "<strong>Notificação Imediata APENAS à Secretaria Municipal de Saúde (SMS) em até 24h</strong>",
+              "• <strong>Doença Meningocócica e Outras Meningites</strong> (a esfera municipal organiza a quimioprofilaxia de contatos imediatos com rifampicina nas primeiras horas);<br>\n        • <strong>Coqueluche</strong> (bloqueio quimioprofilático e atualização vacinal dos contatos domiciliares e escolares mais próximos);<br>\n        • <strong>Difteria</strong> (busca de contatos, quimioprofilaxia com eritromicina/penicilina e isolamento respiratório de gotículas);<br>\n        • <strong>Tétano Acidental e Neonatal</strong> (investigação do foco ambiental e assistência hospitalar imediata em leito de UTI);<br>\n        • <strong>Febre Maculosa e Rickettsioses</strong> (orientação terapêutica empírica imediata com doxiciclina e controle de carrapatos no peridomicílio).",
+              "O bloqueio profilático dos contatos ou a investigação do foco primário ocorre no território de residência e convivência do paciente, cuja competência de campo é prioritariamente local da vigilância do município."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Regulamento Sanitário Internacional (RSI-2005) e o Algoritmo do Anexo 2"
+        ],
+        [
+          "p",
+          "O Regulamento Sanitário Internacional, aprovado pela 58ª Assembleia Mundial da Saúde em 2005 e promulgado no Brasil pelo Decreto nº 10.212/2020, é o principal instrumento jurídico global destinado a prevenir, proteger, controlar e dar resposta de saúde pública à propagação internacional de doenças, sem interferência desnecessária no tráfego e no comércio globais."
+        ],
+        [
+          "p",
+          "O Artigo 6º e o Anexo 2 do RSI-2005 estabelecem um instrumento decisório padronizado mundialmente. Quatro doenças exigem notificação imediata e incondicional à OMS (qualquer caso único já constitui ESPII ou evento que a deflagra):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Varíola</strong> (Smallpox);",
+            "<strong>Poliomielite por poliovírus selvagem</strong>;",
+            "<strong>Influenza humana causada por novo subtipo viral</strong> (com potencial pandêmico);",
+            "<strong>Síndrome Respiratória Aguda Grave (SARS)</strong>."
+          ]
+        ],
+        [
+          "p",
+          "Para qualquer outro evento de saúde pública, o Anexo 2 determina a aplicação de quatro perguntas-chave consecutivas. Se a resposta for AFIRMATIVA para <strong>pelo menos duas das quatro perguntas</strong>, o evento DEVE ser notificado imediatamente à OMS pelo Ponto Focal Nacional do RSI (no Brasil, sediado na SVS/MS):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pergunta 1:</strong> O impacto na saúde pública é GRAVE? (alta letalidade, acometimento maciço de população vulnerável, colapso de serviços de urgência);",
+            "<strong>Pergunta 2:</strong> O evento é INCOMUM ou INESPERADO? (doença desconhecida, apresentação clínica aberrante, surto sem causa aparente);",
+            "<strong>Pergunta 3:</strong> Há risco significativo de DISSEMINAÇÃO INTERNACIONAL? (presença de vetores com mobilidade internacional, agravo em polos turísticos de trânsito aeroportuário intenso);",
+            "<strong>Pergunta 4:</strong> Há risco significativo de RESTRIÇÃO AO COMÉRCIO OU ÀS VIAGENS internacionais? (restrições alfandegárias iminentes, interdição de voos ou de cargas de exportação)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "vigilancia-sentinela-esavi-e-saude-trabalhador",
+      0,
+      [
+        [
+          "2",
+          "Vigilância Sentinela, Redes Especializadas, Investigação de ESAVI e Agravos à Saúde do Trabalhador"
+        ],
+        [
+          "3",
+          "O Conceito e o Funcionamento da Vigilância Sentinela"
+        ],
+        [
+          "p",
+          "Ao contrário da vigilância universal (na qual cada caso suspeito em qualquer ponto do país deve ser reportado), a <strong>vigilância sentinela</strong> é uma estratégia amostral de alta sensibilidade e densidade técnica. Ela é instalada em estabelecimentos de saúde estratégicos (unidades sentinela, prontos-socorros de referência e laboratórios centrais) com o propósito de monitorar a circulação de patógenos, a variação antigênica e as tendências epidemiológicas sem sobrecarregar a rede com fichas universais de baixa especificidade."
+        ],
+        [
+          "p",
+          "Os principais exemplos práticos de vigilância sentinela no Brasil compreendem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Síndrome Gripal (SG):</strong> Unidades básicas e prontos-atendimentos selecionados colhem swabs de nasofaringe de uma cota pré-determinada de pacientes sintomáticos respiratórios agudos para tipagem viral (Influenza A e B, SARS-CoV-2, Vírus Sincicial Respiratório, Adenovírus, Rinovírus e Metapneumovírus), alimentando o sistema SIVEP-Gripe;",
+            "<strong>Vigilância Sentinela da Síndrome Respiratória Aguda Grave (SRAG) em UTIs:</strong> Todo paciente internado em UTI com desconforto respiratório, dessaturação ($SpO_2 &lt; 95\\%$) ou falência hemodinâmica é triado compulsoriamente com painel molecular completo;",
+            "<strong>Doenças Diarreicas Agudas (DDA):</strong> Monitoramento sentinela (Monitorização das Doenças Diarreicas Agudas - MDDA) para detecção precoce de enteropatógenos virais (Rotavírus, Norovírus) e bacterianos (Shigella, Salmonella, Vibrio cholerae);",
+            "<strong>Redes Sentinela para Resistência Antimicrobiana (RAM):</strong> Hospitais terciários sentinela que reportam isolados bacterianos multirresistentes (Enterobactérias produtoras de carbapenemase - KPC, NDM; Pseudomonas aeruginosa e Acinetobacter baumannii resistentes a polimixinas)."
+          ]
+        ],
+        [
+          "3",
+          "Eventos Supostamente Atribuíveis à Vacinação ou Imunização (ESAVI)"
+        ],
+        [
+          "p",
+          "A segurança dos imunobiológicos no Brasil é monitorada pelo Programa Nacional de Imunizações (PNI) em conjunto com a Anvisa através da plataforma e-SUS Notifica / Módulo ESAVI. É responsabilidade indeclinável de todo médico notificar e investigar eventos pós-vacinais adversos."
+        ],
+        [
+          "t",
+          [
+            "Categoria de ESAVI",
+            "Definição Operacional e Manifestações",
+            "Prazo e Conduta de Investigação"
+          ],
+          [
+            [
+              "<strong>ESAVI Grave</strong>",
+              "Qualquer evento adverso que:\n        <ul>\n          <li>Evolui para <strong>óbito</strong>;</li>\n          <li>Causa <strong>risco iminente de morte</strong> (choque anafilático agudo);</li>\n          <li>Exige <strong>hospitalização</strong> ou prolongamento de internação hospitalar prévia;</li>\n          <li>Resulta em <strong>anomalia congênita</strong> ou defeito de nascimento em concepto de mãe imunizada na gestação;</li>\n          <li>Causa <strong>incapacidade permanente</strong> ou disfunção residual significativa (ex.: Síndrome de Guillain-Barré, Encefalite pós-vacinal, Síndrome de Trombose com Trombocitopenia - STT).</li>\n        </ul>",
+              "<strong>Notificação Imediata em até 24 HORAS</strong> a todas as esferas de gestão. Coleta imediata de exames laboratoriais, parecer com neurologista/hematologista e registro rigoroso do lote e laboratório produtor do imunobiológico."
+            ],
+            [
+              "<strong>Cluster de ESAVI (Agrupamento Temporal)</strong>",
+              "Ocorrência de dois ou mais casos de evento adverso semelhante associados à aplicação de vacinas do mesmo lote em uma mesma sala de imunização ou município.",
+              "<strong>Notificação Imediata em até 24 HORAS</strong> com eventual retenção cautelar preventiva do lote de vacinas pela autoridade sanitária local até análise de controle de qualidade pelo INCQS/Fiocruz."
+            ],
+            [
+              "<strong>ESAVI Não Grave</strong>",
+              "Reações locais benignas autolimitadas (dor local leve, eritema local $&lt; 5$ cm, endurecimento) ou febre baixa transitória ($&lt; 38,5^\\circ$C) sem comprometimento sistêmico grave.",
+              "Notificação de rotina/semanal ou registro em prontuário, orientando medidas sintomáticas à família."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Agravos Relacionados ao Trabalho de Notificação Compulsória Universal"
+        ],
+        [
+          "p",
+          "A Portaria Ministerial inclui agravos ocupacionais específicos na Lista Nacional com ficha específica no SINAN, cuja notificação independe da modalidade de vínculo empregatício do trabalhador (formal, com carteira assinada, terceirizado, estatutário, autônomo ou informal):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Acidente de Trabalho com Exposição a Material Biológico:</strong> Acidentes perfurocortantes em profissionais de saúde ou coletores com risco de transmissão do HIV, Hepatite B e Hepatite C (notificação semanal, conduta de profilaxia pós-exposição imediata em até 72h);",
+            "<strong>Acidente de Trabalho Grave, Fatal ou Envolvendo Crianças e Adolescentes:</strong> Quedas de altura, mutilações, óbitos em ambiente de trabalho ou trabalho infantil perigoso (notificação <strong>IMEDIATA em até 24h</strong>);",
+            "<strong>LER / DORT (Lesões por Esforços Repetitivos / Distúrbios Osteomusculares Relacionados ao Trabalho):</strong> Tendinites, síndrome do túnel do carpo e bursites de nexo causal laboral (notificação semanal);",
+            "<strong>Perda Auditiva Induzida por Ruído (PAIR):</strong> Surdez neurossensorial bilateral ocupacional por ruído industrial contínuo (notificação semanal);",
+            "<strong>Dermatoses Ocupacionais e Câncer Relacionado ao Trabalho:</strong> Mesotelioma por amianto, leucemias por exposição crônica a benzeno (notificação semanal);",
+            "<strong>Intoxicações Exógenas Ocupacionais:</strong> Intoxicações por agrotóxicos em trabalhadores rurais, chumbo ou solventes orgânicos (notificação <strong>IMEDIATA em até 24h</strong> se agudas com internação/óbito)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "bateria-avancada-questoes-enamed-residencia-notificacao",
+      0,
+      [
+        [
+          "2",
+          "Bateria de Questões Comentadas do ENAMED e Concursos Médicos de Alto Desafio"
+        ],
+        [
+          "3",
+          "Questões com Análise Completa de Distratores"
+        ],
+        [
+          "4",
+          "Questão 1: ENAMED / ENARE — O Prazos de Notificação e Conduta em Meningite Bacteriana"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um médico plantonista atende em uma Unidade de Pronto Atendimento (UPA) um paciente de 19 anos com febre alta ($39,5^circ\\text{C}$), cefaleia holocraniana intensa, vômitos em jato, rigidez de nuca nítida e petéquias disseminadas em tronco e membros inferiores. A punção lombar revela líquor turvo, com 4.800 leucócitos/$mm^3$ (95% neutrófilos), glicose de 10 mg/dL e visualização de diplococos Gram-negativos aos pares à bacterioscopia. O médico inicia ceftriaxona endovenosa e isolamento respiratório de gotículas. Em relação à notificação compulsória deste caso, assinale a opção que descreve a conduta estritamente correta:"
+        ],
+        [
+          "p",
+          "A) A notificação é de periodicidade semanal, devendo a ficha do SINAN ser encaminhada no encerramento da semana epidemiológica após o resultado da cultura automatizada com antibiograma.<br>\nB) A notificação compulsória é IMEDIATA (em até 24 horas) e deve ser realizada prioritariamente à Secretaria Municipal de Saúde, não dependendo do resultado definitivo da cultura para o seu desencadeamento operacional.<br>\nC) Por se tratar de doença transmissível com risco comunitário, a notificação deve ser feita exclusivamente ao Ministério da Saúde em Brasília, sendo desnecessário comunicar a vigilância municipal.<br>\nD) A confirmação diagnóstica bacterioscópica é insuficiente para notificar; deve-se aguardar a identificação sorogrupal da cepa meningocócica pelo laboratório de referência (LACEN) para evitar falsos-positivos no sistema.<br>\nE) A notificação só é obrigatória se o paciente evoluir para óbito ou choque séptico com púrpura fulminante."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> A Doença Meningocócica é agravo de <strong>notificação compulsória IMEDIATA (até 24 horas) à Secretaria Municipal de Saúde</strong>. O princípio elementar da vigilância epidemiológica preconiza que a notificação deve ser disparada diante da <strong>SUSPEITA CLÍNICA</strong> (ou bacterioscópica preliminar), sem esperar o isolamento em cultura, pois os contatos íntimos domiciliares e de creche/alojamento necessitam de quimioprofilaxia quimioterápica urgente (habitualmente com Rifampicina) nas primeiras 24 a 48 horas após a suspeita.<br>\n• <strong>Alternativa A (Incorreta):</strong> Esperar a semana epidemiológica e o laudo de cultura inviabilizaria a quimioprofilaxia dos contatos íntimos, aumentando o risco de casos secundários graves.<br>\n• <strong>Alternativa C (Incorreta):</strong> O canal preferencial imediato da doença meningocócica é a esfera municipal (SMS), responsável pelas medidas operacionais no território.<br>\n• <strong>Alternativa D (Incorreta):</strong> A espera pela sorogrupagem contraria o princípio da intervenção em tempo hábil.<br>\n• <strong>Alternativa E (Incorreta):</strong> Qualquer suspeita de meningite meningocócica é notificável independentemente da evolução clínica favorável ou desfecho fatal."
+        ],
+        [
+          "4",
+          "Questão 2: USP-RP — Sífilis na Gestação e Notificação Universal"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante consulta de pré-natal de primeiro trimestre na Unidade Básica de Saúde, uma gestante de 22 anos, assintomática, apresenta teste rápido treponêmico reagente confirmado por VDRL com título de 1:32. O parceiro sexual é convocado para avaliação e recusa o tratamento, afirmando estar hígido. O médico prescreve Penicilina G Benzatina 2.400.000 UI IM semanal por 3 semanas consecutivas para a gestante. Quanto às obrigações sanitárias de notificação:"
+        ],
+        [
+          "p",
+          "A) A sífilis em gestante é de notificação compulsória periódica semanal, sendo dispensável notificar o concepto após o parto se a mãe completar as 3 doses de penicilina.<br>\nB) Deve-se emitir a Ficha de Notificação/Investigação de Sífilis em Gestante no SINAN em periodicidade semanal; caso o concepto nasça vivo ou natimorto com critérios de sífilis congênita, será gerada uma SEGUNDA ficha de notificação compulsória para Sífilis Congênita.<br>\nC) A notificação só é autorizada se o parceiro sexual consentir formalmente por escrito, sob pena de quebra de sigilo conjugal vedada pelo Código de Ética Médica.<br>\nD) Apenas casos com lesões clínicas ativas primárias (cancro duro) ou secundárias (roséola) são passíveis de inclusão no SINAN.<br>\nE) A sífilis em gestante é de notificação imediata em até 24 horas por telefone ao Ministério da Saúde."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> A Sífilis em Gestante é agravo de <strong>notificação semanal</strong>. O sistema do Ministério da Saúde trata a mãe e o filho como entidades epidemiológicas distintas: a gestante gera a ficha de <em>Sífilis em Gestante</em>; ao nascimento, o recém-nascido exposto que se enquadre na definição de caso (por exemplo, parceiro não tratado ou queda inadequada de títulos) DEVE gerar a ficha de <em>Sífilis Congênita</em>. Trata-se de duas notificações compulsórias obrigatórias complementares.<br>\n• <strong>Alternativa A (Incorreta):</strong> A notificação do recém-nascido é obrigatória quando há critérios de sífilis congênita, mesmo que a mãe tenha recebido penicilina, sobretudo com parceiro sabidamente infectado e não tratado.<br>\n• <strong>Alternativa C (Incorreta):</strong> O segredo médico cede diante do dever legal sanitário de notificação compulsória.<br>\n• <strong>Alternativa D (Incorreta):</strong> A sífilis latente (assintomática com sorologia reagente) é de notificação obrigatória plena.<br>\n• <strong>Alternativa E (Incorreta):</strong> A periodicidade oficial nacional é semanal, não imediata em 24h."
+        ],
+        [
+          "4",
+          "Questão 3: SMS-SP — Febre Amarela e Epizootias em Primatas Não Humanos"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um agente comunitário de saúde e moradores de uma área rural próxima a remanescente de Mata Atlântica encontram dois bugios (macacos do gênero Alouatta) mortos na mata sem sinais externos de traumatismo. No dia seguinte, um trabalhador rural residente a 1 km da área procura o posto de saúde com quadro de febre de início súbito há 3 dias, cefaleia intensa, mialgia proeminente e dor lombar. O médico suspeita de Febre Amarela. Qual a conduta de vigilância epidemiológica imperativa a ser adotada?"
+        ],
+        [
+          "p",
+          "A) Notificar a morte dos primatas não humanos (epizootia) e o caso humano suspeito em fluxo SEMANAL de rotina ao SINAN.<br>\nB) A notificação de epizootia de primatas não humanos é exclusiva de médicos veterinários, cabendo ao médico clínico apenas registrar a suspeita do paciente humano.<br>\nC) A suspeita de Febre Amarela Humana e a ocorrência de Morte/Adoecimento de Primatas Não Humanos (Epizootias) são eventos de NOTIFICAÇÃO COMPULSÓRIA IMEDIATA (em até 24 horas) a todas as três esferas de gestão (SMS, SES e MS), deflagrando imediatamente a busca de novos casos humanos e a intensificação vacinal seletiva na área.<br>\nD) Aguardar a confirmação de necropsia do macaco com PCR positivo para deflagrar a notificação do paciente humano.<br>\nE) A febre amarela não faz mais parte da lista nacional de notificação compulsória devido à cobertura vacinal histórica do país."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa C (Correta):</strong> Tanto o caso humano suspeito de Febre Amarela quanto as <strong>Epizootias em Primatas Não Humanos (PNH)</strong> são de notificação <strong>IMEDIATA em até 24 horas para o Município, Estado e Ministério da Saúde</strong>. Os primatas funcionam como sentinelas biológicos essenciais da circulação viral silvestre. A constatação de bugios mortos precede a eclosão de casos humanos em semanas ou meses, exigindo busca ativa e bloqueio vacinal peridomiciliar emergencial.<br>\n• <strong>Alternativas A, B, D e E:</strong> Estão frontalmente erradas quanto ao prazo de 24h, à relevância dos animais sentinelas e à necessidade de comunicação intergovernamental instantânea."
+        ],
+        [
+          "4",
+          "Questão 4: UERJ — Notificação Compulsória Negativa"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Em um determinado município do interior do estado, não foram diagnosticados nem notificados novos casos de tuberculose, hanseníase ou dengue durante a semana epidemiológica nº 14. O coordenador da vigilância epidemiológica municipal determinou o arquivamento das pastas sem qualquer envio de dados ao sistema estadual, alegando que \"não havendo casos, inexiste dever de prestar informações sanitárias\". Essa conduta do coordenador:"
+        ],
+        [
+          "p",
+          "A) É correta e expressa eficiência na desburocratização dos serviços locais de saúde.<br>\nB) É incorreta e constitui transgressão à norma técnica do SINAN, pois os municípios e estabelecimentos de saúde são obrigados a realizar a Notificação Compulsória Negativa, informando formalmente que na referida semana não foi identificado nenhum caso de doença constante da lista, atestando a sensibilidade e o funcionamento ativo do sistema de vigilância.<br>\nC) Só estaria incorreta se a omissão perdurasse por mais de seis meses consecutivos.<br>\nD) Está amparada pela Lei nº 8.080/1990, que desobriga gestores municipais de alimentar bancos de dados centrais.<br>\nE) É aceitável apenas para municípios com população inferior a 50.000 habitantes."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> A <strong>Notificação Negativa</strong> é a declaração formal periódica (semanal no SINAN) enviada pela autoridade ou unidade de saúde informando que, na semana epidemiológica correspondente, <strong>não foi registrado qualquer caso de doença ou agravo da lista de notificação</strong>. Isso comprova que a unidade esteve em pleno funcionamento e com profissionais atentos à vigilância, impedindo que o nível central confunda a ausência real de casos com omissão de notificação ou falência operacional do serviço de saúde.<br>\n• <strong>Demais alternativas:</strong> Desconhecem o conceito fundamental da notificação negativa no controle sanitário do SUS."
+        ],
+        [
+          "4",
+          "Questão 5: UNESP — Violência contra Idosos e Obrigações Legais"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Uma paciente de 78 anos, portadora de demência de Alzheimer em estágio moderado, é levada ao serviço de emergência por uma sobrinha distante. Ao exame físico, o médico constata desidratação grave, desnutrição proteico-calórica avançada, múltiplas lesões por pressão em região sacral e trocantérica com necrose tecidual e fezes ressecadas incrustadas, além de relato de que o filho curador retém o benefício previdenciário da idosa e a mantém trancada em quarto escuro sem cuidados de higiene. Diante do quadro flagrante de negligência grave e maus-tratos a pessoa idosa, assinale o dever legal do médico assistente:"
+        ],
+        [
+          "p",
+          "A) Emitir apenas atestado médico orientando a família e solicitar que a sobrinha procure um advogado civil se desejar.<br>\nB) Preencher compulsoriamente a Ficha de Notificação de Violência Interpessoal/Autoprovocada para o SINAN e realizar a comunicação OBRIGATÓRIA aos órgãos de proteção (Conselho Municipal do Idoso, Ministério Público ou Delegacia de Proteção ao Idoso) em cumprimento estrito ao Estatuto do Idoso (Lei nº 10.741/2003).<br>\nC) Manter sigilo profissional absoluto, pois a revelação de maus-tratos familiares é vedada pelo sigilo médico sem autorização prévia do filho curador.<br>\nD) Aguardar nova internação para certificar se a negligência é recorrente antes de acionar a rede protetiva.<br>\nE) A notificação de violência só se aplica a agressões físicas traumáticas por armas brancas ou de fogo, não abrangendo negligência ou abandono."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> No caso de suspeita ou confirmação de violência, abuso, negligência ou maus-tratos contra pessoas idosas (bem como contra crianças, adolescentes e pessoas com deficiência), o médico tem <strong>dupla obrigação inegociável</strong>: (1) Preencher a <strong>Ficha de Notificação de Violência no SINAN</strong> (dever epidemiológico-sanitário); e (2) Fazer a <strong>comunicação formal imediata ao Ministério Público, Delegacia de Polícia ou Conselho do Idoso</strong> (dever legal expresso no Art. 19 do Estatuto do Idoso). O sigilo profissional não se aplica frente a essa determinação legal expressa.<br>\n• <strong>Demais alternativas:</strong> São juridicamente incorretas e eticamente inaceitáveis, sujeitando o profissional a sanções legais e ético-disciplinares."
+        ],
+        [
+          "4",
+          "Questão 6: AMP — Doença de Chagas Aguda vs. Crônica"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante investigação epidemiológica de febre prolongada em município do Nordeste, dois pacientes são atendidos na mesma semana: o Paciente 1 apresenta febre há 18 dias, edema bipalpebral unilateral indolor (Sinal de Romaña) e chagoma de inoculação após ingestão de suco de açaí artesanal in natura; o exame a fresco de sangue periférico revela tripomastigotas móveis de Trypanosoma cruzi. O Paciente 2 é um senhor de 65 anos, hipertenso crônico, cuja radiografia de tórax e ecocardiograma solicitados para acompanhamento de rotina mostram cardiomegalia às custas de ventrículo esquerdo com aneurisma de ponta e bloqueio de ramo direito associado a hemibloqueio anterior esquerdo ao ECG, com sorologia IgG anti-T. cruzi reagente e ausência de quadro agudo. Em relação à notificação compulsória:"
+        ],
+        [
+          "p",
+          "A) Ambos os pacientes devem ser notificados imediatamente em até 24 horas a todas as esferas de governo.<br>\nB) Apenas o Paciente 1 (Doença de Chagas Aguda) é de notificação compulsória IMEDIATA (até 24 horas); a Doença de Chagas Crônica (Paciente 2) passou a ser de notificação compulsória de periodicidade SEMANAL (Portaria GM/MS nº 264/2020), não configurando notificação imediata.<br>\nC) A Doença de Chagas Crônica não é agravo de notificação compulsória em nenhuma hipótese no Brasil.<br>\nD) Ambos são agravos de notificação exclusivamente mensal realizada pelo laboratório de análises clínicas.<br>\nE) A Doença de Chagas só é notificável se houver transmissão vetorial clássica por triatomíneos, estando os casos por transmissão oral isentos de inserção no SINAN."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong><br>\n• <strong>Alternativa B (Correta):</strong> A distinção entre as formas de Chagas é um clássico de prova: a <strong>Doença de Chagas AGUDA é agravo de notificação compulsória IMEDIATA (em até 24 horas para Município, Estado e Ministério da Saúde)</strong>, visando o rastreamento urgente de surtos por transmissão oral (açaí/caldo de cana) ou vetorial ativa. Por outro lado, a <strong>Doença de Chagas CRÔNICA foi incluída na lista nacional pela Portaria nº 264/2020 com periodicidade SEMANAL</strong>, permitindo mapear a carga da doença e garantir acesso universal ao tratamento (Benznidazol) e ao acompanhamento cardiológico e digestivo no SUS.<br>\n• <strong>Alternativas A, C, D e E:</strong> Desconhecem a atualização da Portaria de 2020 e confundem os fluxos temporais de cada fase clínica."
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/vigilancia-em-saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Portaria de Consolidação GM/MS nº 4/2017 e Anexos Vigentes</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/n/notificacao-compulsoria\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — Guia de Vigilância em Saúde (5ª Edição Revisada)</a>",
+            "<a href=\"https://www.who.int/publications/i/item/9789241580496\" target=\"_blank\" rel=\"noopener noreferrer\">Organização Mundial da Saúde — Regulamento Sanitário Internacional (RSI-2005)</a>",
+            "<a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6259.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei Federal nº 6.259/1975 — Organização da Vigilância Epidemiológica no Brasil</a>",
+            "<a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10212.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto Federal nº 10.212/2020 — Promulgação das Emendas ao RSI-2005</a>",
+            "<a href=\"https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto-Lei nº 2.848/1940 — Código Penal Brasileiro (Art. 269)</a>",
+            "<a href=\"https://portal.cfm.org.br/etica-medica/codigo-de-etica-medica/\" target=\"_blank\" rel=\"noopener noreferrer\">Conselho Federal de Medicina — Código de Ética Médica</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

@@ -145,6 +145,18 @@
           "Pressão, fluxo, resistência e volume"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"ECG_LVH.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/ECG%20LVH.png\" alt=\"Eletrocardiograma com critérios de sobrecarga ventricular esquerda\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Eletrocardiograma com critérios de sobrecarga ventricular esquerda</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AECG%20LVH.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Bart ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Hypertensiveretinopathy.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Hypertensiveretinopathy.jpg\" alt=\"Fundoscopia óptica revelando retinopatia hipertensiva\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Fundoscopia óptica revelando retinopatia hipertensiva</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AHypertensiveretinopathy.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Frank Wood ↗</a> (CC BY 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Sphygmomanometer_Cuff.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Sphygmomanometer%26Cuff.JPG\" alt=\"Medição padronizada da pressão arterial com manguito adequado\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Medição padronizada da pressão arterial com manguito adequado</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ASphygmomanometer%26Cuff.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">ML5 at English Wikipedia ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "A pressão arterial resulta da interação entre débito cardíaco, resistência vascular periférica, complacência das grandes artérias e regulação do volume extracelular. O débito cardíaco é função da frequência e do volume sistólico; a resistência depende principalmente do tônus de pequenas artérias e arteríolas. A pressão de pulso se amplia quando as artérias perdem complacência, uma pista importante em idosos. A relação simplificada PA ≈ débito × resistência ajuda a organizar o raciocínio, mas não descreve todas as ondas refletidas e mudanças pulsáteis."
         ],
@@ -437,7 +449,7 @@
         ],
         [
           "p",
-          "Para ensaios por imunoensaio, os exemplos operacionais da Endocrine Society 2025 são renina suprimida (atividade ≤1 ng/mL/h ou concentração direta ≤8,2 mU/L) <strong>junto a</strong> aldosterona relativamente elevada (≥10 ng/dL) e ARR acima de limiares dependentes do ensaio (por exemplo, aldosterona em ng/dL dividida pela atividade de renina em ng/mL/h >20). Para aldosterona quantificada por LC-MS/MS, a referência de aldosterona pode ser menor, de ≥7,5 ng/dL, e a ARR tem outros valores. Esses são <strong>exemplos de orientação, não cortes universais</strong>: laboratório, unidade, método, posição de coleta e prevalência modificam desempenho. Não usar o valor de um resumo de material de estudo ('ARR ≥30 sempre') sem checar o método."
+          "Para ensaios por imunoensaio, os exemplos operacionais da Endocrine Society 2025 são renina suprimida (atividade ≤1 ng/mL/h ou concentração direta ≤8,2 mU/L) <strong>junto a</strong> aldosterona relativamente elevada (≥10 ng/dL) e ARR acima de limiares dependentes do ensaio (por exemplo, aldosterona em ng/dL dividida pela atividade de renina em ng/mL/h >20). Para aldosterona quantificada por LC-MS/MS, a referência de aldosterona pode ser menor, de ≥7,5 ng/dL, e a ARR tem outros valores. Esses são <strong>exemplos de orientação, não cortes universais</strong>: laboratório, unidade, método, posição de coleta e prevalência modificam desempenho. Não usar o valor de um resumo de cursinho ('ARR ≥30 sempre') sem checar o método."
         ],
         [
           "p",
@@ -1412,6 +1424,10 @@
             "<a href=\"https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2\" target=\"_blank\" rel=\"noopener noreferrer\">Endocrine Society. Primary Aldosteronism: Clinical Practice Guideline — 2025.</a>"
           ],
           0
+        ],
+        [
+          "p",
+          "<strong>Estado editorial após aprofundamento:</strong> a apostila agora aborda classificação brasileira de 2025, técnica, MAPA/MRPA, risco, tratamentos com faixas de dose, emergência hipertensiva, hipertensão secundária e cenários especiais. Ainda exige revisão médica independente de toda farmacologia e dos algoritmos, conferência de bibliografia e requisitos regulatórios, seleção de imagens clínicas com licença e aprovação centralizada no Admin, checagem de coesão e redundâncias e validação visual desktop/PWA. A metragem de texto aparente não substitui o gate de autossuficiência; não publicar até aprovação de todas as etapas."
         ]
       ]
     ]

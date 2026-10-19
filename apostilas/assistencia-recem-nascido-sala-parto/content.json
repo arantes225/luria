@@ -129,6 +129,18 @@
           "Dos pulmões preenchidos por líquido à ventilação alveolar"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Skin_to_skin_breastfeeding.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Skin%20to%20skin%20breastfeeding.jpg\" alt=\"Contato pele a pele precoce e promoção do vínculo mãe-bebê\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Contato pele a pele precoce e promoção do vínculo mãe-bebê</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ASkin%20to%20skin%20breastfeeding.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">David Goodman ↗</a> (CC BY 2.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Post-medieval_copper-alloy_pin_head__FindID_459708_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Post-medieval%20copper-alloy%20pin%20head%20(FindID%20459708).jpg\" alt=\"Aferição do perímetro cefálico na antropometria neonatal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Aferição do perímetro cefálico na antropometria neonatal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APost-medieval%20copper-alloy%20pin%20head%20(FindID%20459708).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Birmingham Museums Trust, Tom Brindle, 2011-08-24 09:28:18 ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Umbical_cord_clamp_2005.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Umbical%20cord%20clamp%202005.jpg\" alt=\"Clampeamento do cordão umbilical e hemostasia\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Clampeamento do cordão umbilical e hemostasia</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AUmbical%20cord%20clamp%202005.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Wikimedia Commons ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "Durante a vida fetal, as trocas gasosas dependem da placenta, enquanto os pulmões recebem fração relativamente pequena do débito cardíaco. Os alvéolos e vias aéreas contêm líquido, e a resistência vascular pulmonar é elevada. No nascimento, movimentos respiratórios e absorção do líquido pulmonar criam volume residual funcional e facilitam troca de oxigênio e dióxido de carbono. Com a oxigenação dos pulmões e expansão alveolar, cai a resistência vascular pulmonar, cresce o fluxo pulmonar e muda a relação de pressões entre os átrios. Essa sequência explica por que avaliar a eficácia respiratória tem prioridade sobre rotinas acessórias."
         ],
@@ -1449,7 +1461,7 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "12. Referências científicas e estado do rascunho"
         ],
         [
           "o",
@@ -1471,7 +1483,11 @@
         ],
         [
           "p",
-          "<strong>Comparativos consultados no Google Drive:</strong> 'Reanimação Neonatal.pdf' (2.130 caracteres extraídos) e '01 - ICTERICIA E COLESTASE NEONATAL.pdf' (14.963 caracteres), com autoria institucional material de referência não confirmada. Foram usados apenas para definir fronteiras curriculares e armadilhas: resumo antigo sugere aspiração meconial e regras de suspensão de reanimação desatualizadas; não reproduzimos suas figuras ou textos, e decisões de reanimação pertencem ao tema 008."
+          "<strong>Comparativos consultados no Google Drive:</strong> 'Reanimação Neonatal.pdf' (2.130 caracteres extraídos) e '01 - ICTERICIA E COLESTASE NEONATAL.pdf' (14.963 caracteres), com autoria institucional Estratégia MED não confirmada. Foram usados apenas para definir fronteiras curriculares e armadilhas: resumo antigo sugere aspiração meconial e regras de suspensão de reanimação desatualizadas; não reproduzimos suas figuras ou textos, e decisões de reanimação pertencem ao tema 008."
+        ],
+        [
+          "p",
+          "<strong>Estado editorial:</strong> rascunho original do tema curricular 003, primeira etapa de construção. Ainda não atende à meta de 60 mil caracteres didáticos úteis nem recebeu revisão independente, matriz de questões completa, curadoria de imagens ou validação de desktop/PWA. Não existe index.html nem vínculo novo ao catálogo; não publicado. Revisar em capítulo futuro os critérios de triagem neonatal por idade, detalhes dos exames e situações de prematuridade/infecção antes da certificação."
         ],
         [
           "p",

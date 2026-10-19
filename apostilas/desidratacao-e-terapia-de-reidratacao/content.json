@@ -69,6 +69,10 @@
       "Camada visual: 10 ideias com destino e indicação"
     ],
     [
+      "sec-19-referencias-e-auditoria-preliminar",
+      "Referências e auditoria preliminar"
+    ],
+    [
       "sec-aprofundamento-desidratacao-eletrolitos",
       "Aprofundamento Clínico: Compartimentos Hídricos, Holliday-Segar e Distúrbios Hidroeletrolíticos Críticos"
     ],
@@ -136,14 +140,6 @@
         [
           "p",
           "A OMS/UNICEF consolidaram SRO de baixa osmolaridade como ferramenta de alta efetividade, com composição clássica de aproximadamente <strong>75 mmol/L de sódio, 75 mmol/L de glicose e osmolaridade 245 mOsm/L</strong>. Solução industrializada deve ser reconstituída no volume exato do sachê, em água potável, seguindo instruções. Concentrá-la ou diluí-la excessivamente pode criar risco. Bebidas domésticas não devem substituir SRO preparada corretamente quando a criança já está desidratada."
-        ],
-        [
-          "p",
-          "<p><strong>Síntese operacional baseada em risco:</strong> a classificação deve começar pelo estado geral, perfusão, consciência, capacidade de beber, frequência respiratória, pulsos, enchimento capilar, extremidades e diurese. O rótulo de desidratação não substitui a busca de choque, sepse, hipoglicemia, distúrbio de sódio ou doença cirúrgica. Criança letárgica, com pulso muito fino, extremidades frias, enchimento prolongado ou hipotensão tardia exige reanimação e reavaliações seriadas; não se deve esperar a correção laboratorial para tratar hipoperfusão.</p><p>Na reidratação oral ou por sonda, registrar volume administrado, perdas, vômitos, evacuações, diurese e peso. A resposta é clínica: melhora do sensório, pulso, perfusão, sede, mucosas e aceitação. A ausência de resposta deve levar à revisão do diagnóstico, da técnica, da concentração da solução, da perda contínua e da possibilidade de choque ou abdome agudo. Em desnutrição grave, a reidratação é lenta e cuidadosa; a solução deve seguir a orientação específica, com atenção a sobrecarga, hipocalemia e hipoglicemia. Cólera ou diarreia aquosa profusa mudam a escolha da solução e exigem reposição das perdas.</p><p>Após estabilizar, manter alimentação apropriada, zinco quando indicado pelo protocolo vigente, aleitamento e orientação de retorno. Sinais de alarme para retorno incluem piora da prostração, incapacidade de beber, vômitos persistentes, sangue nas fezes, febre prolongada, oligúria, respiração anormal ou nova alteração da perfusão. A alta segura depende de cuidador capaz, acesso à solução correta, plano de perdas contínuas e reavaliação definida.</p>"
-        ],
-        [
-          "p",
-          "<p><strong>Síntese operacional baseada em risco:</strong> a classificação deve começar pelo estado geral, perfusão, consciência, capacidade de beber, frequência respiratória, pulsos, enchimento capilar, extremidades e diurese. O rótulo de desidratação não substitui a busca de choque, sepse, hipoglicemia, distúrbio de sódio ou doença cirúrgica. Criança letárgica, com pulso muito fino, extremidades frias, enchimento prolongado ou hipotensão tardia exige reanimação e reavaliações seriadas; não se deve esperar a correção laboratorial para tratar hipoperfusão.</p><p>Na reidratação oral ou por sonda, registrar volume administrado, perdas, vômitos, evacuações, diurese e peso. A resposta é clínica: melhora do sensório, pulso, perfusão, sede, mucosas e aceitação. A ausência de resposta deve levar à revisão do diagnóstico, da técnica, da concentração da solução, da perda contínua e da possibilidade de choque ou abdome agudo. Em desnutrição grave, a reidratação é lenta e cuidadosa; a solução deve seguir a orientação específica, com atenção a sobrecarga, hipocalemia e hipoglicemia. Cólera ou diarreia aquosa profusa mudam a escolha da solução e exigem reposição das perdas.</p><p>Após estabilizar, manter alimentação apropriada, zinco quando indicado pelo protocolo vigente, aleitamento e orientação de retorno. Sinais de alarme para retorno incluem piora da prostração, incapacidade de beber, vômitos persistentes, sangue nas fezes, febre prolongada, oligúria, respiração anormal ou nova alteração da perfusão. A alta segura depende de cuidador capaz, acesso à solução correta, plano de perdas contínuas e reavaliação definida.</p>"
         ]
       ]
     ],
@@ -158,6 +154,14 @@
         [
           "p",
           "<strong>Gastrointestinais:</strong> diarreia, vômitos e perdas por estomas/fístulas. <strong>Renais:</strong> diurese osmótica em hiperglicemia, diabetes insipidus e alterações tubulares. <strong>Cutâneas:</strong> febre, queimaduras, sudorese intensa e grande superfície exposta. <strong>Baixa entrada:</strong> recusa alimentar, dificuldade de amamentação, doença dolorosa e impossibilidade de acesso a água. <strong>Redistribuição:</strong> sepse e quadros com extravasamento capilar ou terceiro espaço podem reduzir volume circulante sem corresponder a desidratação simples; as estratégias terapêuticas divergem."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Adult_cholera_patient.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Adult%20cholera%20patient.jpg\" alt=\"Avaliação do sinal da prega no abdome para diagnosticar desidratação\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Avaliação do sinal da prega no abdome para diagnosticar desidratação</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AAdult%20cholera%20patient.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">CDC ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Cholera_rehydration_nurses.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Cholera%20rehydration%20nurses.jpg\" alt=\"Envelope e preparo de SRO (Sais de Reidratação Oral) para terapia enteral\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Envelope e preparo de SRO (Sais de Reidratação Oral) para terapia enteral</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ACholera%20rehydration%20nurses.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Centers for Disease Control and Prevention ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1155,6 +1159,42 @@
       ]
     ],
     [
+      "sec-19-referencias-e-auditoria-preliminar",
+      0,
+      [
+        [
+          "2",
+          "Referências e auditoria preliminar"
+        ],
+        [
+          "u",
+          [
+            "Ministério da Saúde. Doenças diarreicas agudas (DDA): tratamento e Planos A/B/C. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda .",
+            "Ministério da Saúde. Manejo do paciente com diarreia: avaliação do estado do paciente (atualizado em 10/07/2026). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente .",
+            "Ministério da Saúde. AIDPI Criança, manual de quadros de procedimentos para 2 meses a 5 anos. https://bvsms.saude.gov.br/bvs/publicacoes/manual_quadros_procedimentos_aidpi_crianca_2meses_5anos.pdf .",
+            "WHO/UNICEF. The treatment of diarrhoea (2005). https://pmnch.who.int/resources/publications/i/item/the-treatment-of-diarrhoea .",
+            "WHO. Severe acute malnutrition: dehydration without shock. https://www.who.int/tools/elena/interventions/dehydration-sam .",
+            "WHO. Diarrhoea: health topic, prevenção e terapêutica. https://www.who.int/health-topics/diarrhoea ."
+          ]
+        ],
+        [
+          "u",
+          [
+            "[x] Tema 053 distinguido da aula 058 sem copiar conteúdo etiológico completo.",
+            "[x] Buscas reais no Drive documentadas e PDF correlato lido; <strong>benchmark específico ainda não localizado</strong>.",
+            "[x] Base fisiológica, diagnóstico, estratégias A/B/C, manutenção e exceções de segurança.",
+            "[x] Seis casos clínicos comentados e dez questões autorais com justificativa.",
+            "[x] Planejamento de dez imagens, sem presumir licença nem publicar.",
+            "[ ] Leitura completa do cartaz técnico MS atualizado em julho de 2026 e reconciliação pontual com tabelas AIDPI; não parametrizar calculadora antes.",
+            "[ ] Revisão das doses atuais de zinco, antieméticos, dispositivos e manuais de reidratação para neonatos, hipernatremia e desnutrição grave.",
+            "[ ] Benchmark comparável específico de desidratação infantil, se disponível no acervo privado.",
+            "[ ] Auditoria de 60 mil caracteres <strong>didáticos úteis</strong>, eliminando tabelas, casos, questões, bibliografia e repetições; sem considerar texto bruto suficiente.",
+            "[ ] Revisão científica independente, imagens aprovadas, HTML/renderer e testes desktop/PWA."
+          ]
+        ]
+      ]
+    ],
+    [
       "sec-aprofundamento-desidratacao-eletrolitos",
       0,
       [
@@ -1278,9 +1318,7 @@
           [
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde - Protocolos e Diretrizes Clínicas</a>",
             "<a href=\"https://www.conitec.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">CONITEC - Recomendações e Diretrizes Nacionais</a>",
-            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>",
-            "<a href=\"https://iris.who.int/bitstream/handle/10665/95584/9789241506328_eng.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">OMS — Guideline: Updates on the management of severe acute malnutrition</a>",
-            "<a href=\"https://iris.who.int/bitstream/handle/10665/380059/9789240103412-eng.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">OMS — Guideline on low-osmolarity oral rehydration solution</a>"
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>"
           ],
           "reference-list"
         ]

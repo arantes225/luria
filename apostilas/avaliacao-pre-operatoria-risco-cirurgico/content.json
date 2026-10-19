@@ -687,7 +687,7 @@
         ],
         [
           "p",
-          "O RCRI é aplicado a cirurgia <strong>não cardíaca</strong> e deve ser interpretado junto ao risco intrínseco do procedimento. Não usar porcentagens antigas extraídas de listas de material de estudo como risco individual exato: elas pertencem a coortes e desfechos específicos, variam por validação e não equivalem automaticamente a chance de morte ou IAM. Um paciente com RCRI 0 e sangramento esperado elevado ainda precisa de planejamento transfusional e tromboprofilaxia; um paciente com RCRI 2 não está automaticamente proibido de operar."
+          "O RCRI é aplicado a cirurgia <strong>não cardíaca</strong> e deve ser interpretado junto ao risco intrínseco do procedimento. Não usar porcentagens antigas extraídas de listas de cursinho como risco individual exato: elas pertencem a coortes e desfechos específicos, variam por validação e não equivalem automaticamente a chance de morte ou IAM. Um paciente com RCRI 0 e sangramento esperado elevado ainda precisa de planejamento transfusional e tromboprofilaxia; um paciente com RCRI 2 não está automaticamente proibido de operar."
         ],
         [
           "t",
@@ -747,6 +747,14 @@
         [
           "p",
           "Solicitar exames laboratoriais e complementares quando a resposta vai alterar anestesia, tratamento ou segurança. Hemograma é útil quando há anemia suspeita, comorbidade, sangramento esperado ou cirurgia de maior porte. Creatinina/eletrólitos ajudam em DRC, diabetes, diuréticos, disfunção cardíaca e cirurgias com risco de alterações volêmicas. Coagulograma não é rastreio universal de sangramento em paciente com história negativa; indagar história hemorrágica, hepatopatia, anticoagulantes e procedimentos prévios."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"12_lead_generated_sinus_rhythm.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/12%20lead%20generated%20sinus%20rhythm.JPG\" alt=\"Traçado de eletrocardiograma de 12 derivações basal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Traçado de eletrocardiograma de 12 derivações basal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3A12%20lead%20generated%20sinus%20rhythm.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Glenlarson ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Mediastinal_structures_on_chest_X-ray.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Mediastinal%20structures%20on%20chest%20X-ray.jpg\" alt=\"Radiografia de tórax padrão PA na avaliação pré-operatória\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Radiografia de tórax padrão PA na avaliação pré-operatória</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AMediastinal%20structures%20on%20chest%20X-ray.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Mikael Häggström, from source images by ZooFari, Stillwaterising and Gray&#39;s Anat ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1886,7 +1894,7 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "12. Referências científicas, comparação documental e estado editorial"
         ],
         [
           "o",
@@ -1906,7 +1914,12 @@
           "<strong>Benchmark não incorporado:</strong> “01 - AVALIACAO PRE-ANESTESICA.pdf” foi aberto no Drive e mostra ASA, Lee, METs, exames, jejum e via aérea. Há nele afirmações demasiado absolutas (4 METs para autorizar cirurgia; porcentagens ASA como risco do indivíduo) e referências legais que exigem conferência; a redação LURIA usa diretrizes primárias e não reproduz imagens/tabelas/figuras da apostila comparativa."
         ],
         [
-          "p"
+          "p",
+          "<strong>Estado editorial atualizado (14/10/2026):</strong> o livro de avaliação pré-operatória foi profundamente ampliado nos eixos de risco cardiovascular (SBC/AHA 2024), RCRI/AUB-HAS2/DASI, exames dirigidos, viabilidade e intervalos pós-angioplastia, anticoagulantes e anestesia neuraxial (CHEST/ASRA), diabetes/iSGLT2/GLP-1, vias aéreas difíceis e jejum (ASA), populações especiais, casos e questões. O antigo bloco de revisão redundante foi desmembrado, preservando casos/questões específicos e fontes, de forma a manter progressão por tema. A metragem textual deve ser auditada quanto à utilidade e coesão. Permanecem pendentes revisão independente médica/anestésica, aprovação de imagens e licenças, integração do renderer e testes desktop/PWA. Rascunho não publicado, não prescrever diretamente sem protocolos e avaliações individuais."
+        ],
+        [
+          "p",
+          "Referências clínicas confirmadas: Gualandro DM et al. Diretriz de Avaliação Cardiovascular Perioperatória — SBC 2024, Arq Bras Cardiol 121(9):e20240590, https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/ ; AHA/ACC multisociety Guideline for Perioperative Cardiovascular Management 2024, vigente em 2026, https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery ; JACC 2024 DOI 10.1016/j.jacc.2024.06.013. Benchmark do Drive '01 - AVALIACAO PRE-ANESTESICA.pdf' reaberto; textos e imagens não reproduzidos."
         ]
       ]
     ]

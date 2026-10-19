@@ -169,6 +169,14 @@
           "Classificação por idade gestacional"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Remington_Rand_KMC_typewriter.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Remington%20Rand%20KMC%20typewriter.jpg\" alt=\"Método Canguru e contato pele a pele no prematuro\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Método Canguru e contato pele a pele no prematuro</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ARemington%20Rand%20KMC%20typewriter.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Georg Sommeregger ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Couveuse_pour_pr_matur_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Couveuse%20pour%20pr%C3%A9matur%C3%A9.jpg\" alt=\"Lactente prematuro em incubadora neonatal com termorregulação\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Lactente prematuro em incubadora neonatal com termorregulação</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ACouveuse%20pour%20pr%C3%A9matur%C3%A9.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Yann (talk) ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "t",
           [
             "Categoria",
@@ -1770,7 +1778,7 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "16. Referências oficiais, matriz de cobertura e pendências"
         ],
         [
           "3",
@@ -1867,15 +1875,20 @@
           "book-table"
         ],
         [
-          "3"
+          "3",
+          "Benchmark do Drive e conteúdo autoral"
         ],
         [
           "p",
-          "Os resumos privados do Google Drive 'Desconforto Respiratório do Recém...', 'Reanimação Neonatal' e 'Sepse neonatal' foram abertos para identificar temas e lacunas, mas não possuíam aprofundamento de prematuridade longitudinal. Autoria institucional de material de estudo não comprovada; alguns mnemônicos estavam desatualizados ou com unidades erradas, razão para priorizar literatura primária acima. Nenhuma ilustração ou tabela de terceiros foi copiada. Comparadas as apostilas LURIA 003 e 008 para delimitar escopo e prevenir reescrita de reanimação."
+          "Os resumos privados do Google Drive 'Desconforto Respiratório do Recém...', 'Reanimação Neonatal' e 'Sepse neonatal' foram abertos para identificar temas e lacunas, mas não possuíam aprofundamento de prematuridade longitudinal. Autoria institucional de cursinho não comprovada; alguns mnemônicos estavam desatualizados ou com unidades erradas, razão para priorizar literatura primária acima. Nenhuma ilustração ou tabela de terceiros foi copiada. Comparadas as apostilas LURIA 003 e 008 para delimitar escopo e prevenir reescrita de reanimação."
         ],
         [
           "3",
           "Pendências de revisão e publicação"
+        ],
+        [
+          "p",
+          "<strong>Status:</strong> apostila 013 criada em JSON como rascunho editorial. O formato e contagem de caracteres não comprovam suficiência clínica. Exigir revisão independente por neonatologista (incluindo critérios e data de rastreio de ROP, protocolo institucional de CPAP/surfactante, detalhes de vacinação, nutricional e limiares de alta); validação científica das questões; teste de autossuficiência; inspeção visual desktop/PWA; avaliação de quadros; imagens apenas com proveniência/licenças e aprovação no Admin. Não criar index.html, catálogo, merge ou deploy."
         ],
         [
           "p",

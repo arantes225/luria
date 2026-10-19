@@ -161,9 +161,7 @@
         [
           "p",
           "Políticas públicas podem atualizar a elegibilidade ou o produto sem mudar a fisiologia da doença. Por isso, explicar primeiro mecanismo e objetivo de cada intervenção permite que o aluno compreenda uma mudança futura de dose/semana sem decorar regra vazia. Após identificar o mecanismo, aplica-se a norma brasileira vigente. Quando um dispositivo ou apresentação comercial tem bula própria, ela não deve ser confundida com calendário de disponibilidade do SUS."
-        ],
-        "<p><strong>Caso de fixação:</strong> gestante sem registro vacinal confiável procura pré-natal no segundo trimestre. A conduta começa por reconstruir o histórico, verificar contraindicações e organizar as vacinas indicadas para a gestação e o puerpério conforme o calendário vigente. A resposta deve distinguir vacina recomendada durante a gestação, vacina adiada e vacina indicada para proteção do recém-nascido por estratégia materna.</p>",
-        "<p><strong>Caso de fixação:</strong> gestante sem registro vacinal confiável procura pré-natal no segundo trimestre. A conduta começa por reconstruir o histórico, verificar contraindicações e organizar as vacinas indicadas para a gestação e o puerpério conforme o calendário vigente. A resposta deve distinguir vacina recomendada durante a gestação, vacina adiada e vacina indicada para proteção do recém-nascido por estratégia materna.</p>"
+        ]
       ]
     ],
     [
@@ -177,6 +175,14 @@
         [
           "3",
           "Imunidade ativa, proteção passiva e cronologia"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Ferroceron.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ferroceron.svg\" alt=\"Suplementação oral diária de ferro elementar e ácido fólico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Suplementação oral diária de ferro elementar e ácido fólico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AFerroceron.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">BattlePeasant ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Pregnant_women_vaccination.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Pregnant%20women%20vaccination.jpg\" alt=\"Administração de vacina intramuscular no deltoide da gestante\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Administração de vacina intramuscular no deltoide da gestante</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APregnant%20women%20vaccination.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Arie Basuki ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1469,7 +1475,7 @@
       [
         [
           "2",
-          "Referências e limites de aplicação"
+          "14. Referências oficiais, escopo editorial e pendências"
         ],
         [
           "p",
@@ -1494,6 +1500,10 @@
         [
           "p",
           "<strong>OMS.</strong> WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience, suplementação de cálcio para contextos com baixa ingestão dietética; síntese em NCBI Bookshelf: https://www.ncbi.nlm.nih.gov/books/NBK409113/ ."
+        ],
+        [
+          "p",
+          "<strong>Status editorial:</strong> rascunho autoral do tema 019, separado dos detalhes gerais do pré-natal (tema 004) e de exames (tema 014). A priorização de particularidades do calendário 2026 impede cópia de esquemas antigos do material comparativo. Não considerar certificado antes de auditoria de conteúdo didático útil, validação de cada esquema/dose/questão, revisão médica e de política sanitária, imagens/diagramas aprovados e teste PWA/desktop. Sem criação de HTML, publicação ou merge."
         ]
       ]
     ]

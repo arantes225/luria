@@ -131,6 +131,10 @@
           "De onde vem o sangue que nutre o miocárdio?"
         ],
         [
+          "raw",
+          "<figure data-luria-curated-image=\"Ha1.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ha1.jpg\" alt=\"Cineangiocoronariografia demonstrando estenose coronariana crítica\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cineangiocoronariografia demonstrando estenose coronariana crítica</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AHa1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Bleiglass ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
           "p",
           "A artéria coronária esquerda costuma dividir-se em descendente anterior (DA) e circunflexa (CX); a direita irriga grande parte da parede inferior em corações com dominância direita. A DA abastece parede anterior e septo, a CX participa da irrigação lateral e a coronária direita frequentemente supre parede inferior e sistema de condução. As correspondências por derivações do ECG são pistas anatômicas, não um mapa perfeito: variam com dominância, extensão da lesão e anatomia individual."
         ],
@@ -167,6 +171,14 @@
         [
           "p",
           "Na suspeita de SCA, obter e interpretar ECG de 12 derivações em até <strong>10 minutos do primeiro contato médico</strong>, com monitorização, avaliação de sinais vitais e acesso à avaliação emergencial conforme risco. Documentar horário de início dos sintomas, contato, ECG, medicações, alergias e achados de instabilidade. Comparar ECG anterior, mas não esperar por ele em emergência. A diretriz ACC/AHA 2025 recomenda repetir ECG quando o inicial não é diagnóstico e a suspeita clínica persiste."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"ECG_tako-tsubo.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/ECG%20tako-tsubo.jpg\" alt=\"Padrão de Síndrome de Wellens em derivações precordiais\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Padrão de Síndrome de Wellens em derivações precordiais</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AECG%20tako-tsubo.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">J. Heuser JHeuser ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"12_Lead_EKG_ST_Elevation_tracing_only.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/12%20Lead%20EKG%20ST%20Elevation%20tracing%20only.jpg\" alt=\"ECG com supradesnivelamento do segmento ST (IAMCSST)\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>ECG com supradesnivelamento do segmento ST (IAMCSST)</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3A12%20Lead%20EKG%20ST%20Elevation%20tracing%20only.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Displaced ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "3",
@@ -1543,6 +1555,10 @@
             "<a href=\"https://doi.org/10.1093/eurheartj/ehad191\" target=\"_blank\" rel=\"noopener noreferrer\">ESC 2023. Guidelines for the management of acute coronary syndromes (estratégia invasiva e farmacoinvasiva, MINOCA).</a>"
           ],
           0
+        ],
+        [
+          "p",
+          "<strong>Estado editorial (14/10/2026, ciclo de aprofundamento):</strong> o rascunho já desenvolve ECG e equivalentes de oclusão, troponina e definição de IAM, estratificação invasiva do NSTEMI, ICP e farmacoinvasiva, farmacologia de referência, complicações e seguimento, com casos e questões. A metragem de prosa aparente pode ultrapassar 60 mil caracteres, mas não substitui auditoria de utilidade ou autossuficiência. Continuam pendentes revisão independente de doses/contraindicações e diretrizes brasileiras por cardiologista, correções de redundância editorial, candidatos de imagens aprovados no Admin, desempenho de renderização desktop/PWA e correspondência final com questões e fontes. Este conteúdo não é protocolo clínico prescritivo pronto e não deve ser publicado antes de certificação."
         ]
       ]
     ]

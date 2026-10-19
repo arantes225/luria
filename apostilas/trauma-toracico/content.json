@@ -93,6 +93,10 @@
       "Camada visual — planejamento de 12 candidatas, sem incorporação"
     ],
     [
+      "sec-25-referencias-de-fechamento-e-auditoria",
+      "Referências de fechamento e auditoria"
+    ],
+    [
       "sec-aprofundamento-trauma-toracico-critico",
       "Aprofundamento Clínico: Fisiopatologia das Lesões Torácicas Ameaçadoras e Critérios de Toracotomia de Emergência"
     ],
@@ -140,14 +144,6 @@
         [
           "p",
           "<strong>Pergunta de ouro:</strong> o paciente está perdendo ar, sangue ou retorno venoso — e qual intervenção imediata corrige o mecanismo?"
-        ],
-        [
-          "p",
-          "<p><strong>Atualização de segurança no trauma torácico:</strong> a avaliação é dinâmica. Após a intervenção imediata, repetir exame, saturação, frequência respiratória, trabalho ventilatório, ausculta, perfusão e dor; uma melhora inicial não exclui contusão pulmonar, hemotórax crescente, pneumotórax residual ou lesão cardíaca. A imagem deve responder a uma pergunta clínica e não atrasar o tratamento de ameaça imediata.</p><p>Fraturas costais e tórax instável exigem analgesia adequada, tosse assistida, fisioterapia respiratória, mobilização precoce e vigilância da mecânica ventilatória. A estratégia analgésica deve ser multimodal e individualizada, equilibrando sedação, hipotensão, função renal, risco hemorrágico e capacidade de cooperar. Queda da capacidade inspiratória, hipoxemia, retenção de secreções, fadiga ou dor refratária justificam escalonamento e avaliação de suporte ventilatório.</p><p>Depois de drenagem pleural, documentar indicação, lado, posição, débito, fuga aérea, oscilação do selo d’água, imagem de controle e plano de retirada. Não pinçar rotineiramente um dreno com fuga aérea ativa. Antes da alta, confirmar estabilidade clínica, controle da dor, ventilação adequada, ausência de progressão radiológica e retorno organizado. As recomendações devem ser confrontadas com o protocolo institucional e com a diretriz EAST de trauma torácico fechado.</p>"
-        ],
-        [
-          "p",
-          "<p><strong>Atualização de segurança no trauma torácico:</strong> a avaliação é dinâmica. Após a intervenção imediata, repetir exame, saturação, frequência respiratória, trabalho ventilatório, ausculta, perfusão e dor; uma melhora inicial não exclui contusão pulmonar, hemotórax crescente, pneumotórax residual ou lesão cardíaca. A imagem deve responder a uma pergunta clínica e não atrasar o tratamento de ameaça imediata.</p><p>Fraturas costais e tórax instável exigem analgesia adequada, tosse assistida, fisioterapia respiratória, mobilização precoce e vigilância da mecânica ventilatória. A estratégia analgésica deve ser multimodal e individualizada, equilibrando sedação, hipotensão, função renal, risco hemorrágico e capacidade de cooperar. Queda da capacidade inspiratória, hipoxemia, retenção de secreções, fadiga ou dor refratária justificam escalonamento e avaliação de suporte ventilatório.</p><p>Depois de drenagem pleural, documentar indicação, lado, posição, débito, fuga aérea, oscilação do selo d’água, imagem de controle e plano de retirada. Não pinçar rotineiramente um dreno com fuga aérea ativa. Antes da alta, confirmar estabilidade clínica, controle da dor, ventilação adequada, ausência de progressão radiológica e retorno organizado. As recomendações devem ser confrontadas com o protocolo institucional e com a diretriz EAST de trauma torácico fechado.</p>"
         ]
       ]
     ],
@@ -162,6 +158,18 @@
         [
           "p",
           "A cavidade torácica contém pulmões revestidos de pleura visceral, parede torácica com pleura parietal, mediastino com coração e grandes vasos, traqueia e brônquios e estruturas esofágicas. O diafragma separa tórax e abdome, mas move-se durante respiração; ferimento na transição toracoabdominal pode atingir víscera abdominal e pleura simultaneamente. Feixes neurovasculares intercostais percorrem região inferior de cada costela; isso condiciona segurança em procedimentos invasivos e risco de sangramento nas fraturas."
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Ugandan_Battle_Group_22_conducts_predeployment_training_170228-Z-CT752-0132.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan%20Battle%20Group%2022%20conducts%20predeployment%20training%20170228-Z-CT752-0132.jpg\" alt=\"Toracocentese descompressiva imediata no 2º espaço intercostal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Toracocentese descompressiva imediata no 2º espaço intercostal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AUgandan%20Battle%20Group%2022%20conducts%20predeployment%20training%20170228-Z-CT752-0132.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Staff Sgt. Penny Snoozy ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Methods_of_imaging_the_lymphatic_system.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Methods%20of%20imaging%20the%20lymphatic%20system.jpg\" alt=\"Dreno de tórax tubular selado sob água no 5º espaço intercostal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Dreno de tórax tubular selado sob água no 5º espaço intercostal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AMethods%20of%20imaging%20the%20lymphatic%20system.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">SGUL lymres ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Pneumothorax_CXR.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Pneumothorax%20CXR.jpg\" alt=\"Radiografia com pneumotórax e desvio de estruturas mediastinais\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Radiografia com pneumotórax e desvio de estruturas mediastinais</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APneumothorax%20CXR.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Photographed by User Clinical Cases 00:42, 7 November 2006 ↗</a> (CC BY-SA 2.5). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -988,6 +996,40 @@
       ]
     ],
     [
+      "sec-25-referencias-de-fechamento-e-auditoria",
+      0,
+      [
+        [
+          "2",
+          "Referências de fechamento e auditoria"
+        ],
+        [
+          "p",
+          "1. Coccolini F et al. Thoracic trauma WSES–AAST guidelines. World J Emerg Surg. 2025;20:78. DOI 10.1186/s13017-025-00651-1. https://link.springer.com/article/10.1186/s13017-025-00651-1\r<br>2. NICE. Major trauma: assessment and initial management. NG39. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations\r<br>3. Patel NJ et al. Management of simple and retained hemothorax: EAST guideline. Am J Surg. 2021;221:873–884. DOI 10.1016/j.amjsurg.2020.11.032. https://pubmed.ncbi.nlm.nih.gov/33487403/\r<br>4. EAST. Hemothorax and occult pneumothorax management. 2011; historical comparison, inferior priority to 2025 WSES in small collection selection. https://www.east.org/mobile/practice-management-guideline/trauma/77\r<br>5. ACS. ATLS 11. 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        ],
+        [
+          "4",
+          "Auditoria editorial — NÃO certificação"
+        ],
+        [
+          "u",
+          [
+            "[x] Benchmark de três documentos do Drive realmente aberto e examinado; origens registradas, sem pressupor Estratégia MED.",
+            "[x] Matriz de correção de regras absolutas antigas confrontada com diretriz 2025.",
+            "[x] Mecanismos, ameaças imediatas, lesões pleurais, grandes vasos, diafragma, costelas, bronquios e coração.",
+            "[x] Seis casos clínicos completos com hipótese, decisão e conduta.",
+            "[x] Dez questões originais de quatro alternativas, com justificativa.",
+            "[x] Planejamento de doze recursos de imagem.",
+            "[ ] Auditoria de profundidade didática <strong>≥60K caracteres instrutivos efetivamente úteis</strong>, retirando marcadores, repetição, questões, casos e referências.",
+            "[ ] Checagem de doses, procedimentos invasivos e diretrizes brasileiras de trauma por especialista; confirmar acesso a equipes e protocolos brasileiros.",
+            "[ ] Gerar algoritmo clínico e esquemas vetoriais com fidelidade clínica, aprovar imagens no Admin.",
+            "[ ] Testar autossuficiência por questões, corrigir lacunas internas e validar desktop/PWA no renderer.",
+            "[ ] Nunca publicar/mesclar sem revisão científica e autorização editorial."
+          ]
+        ]
+      ]
+    ],
+    [
       "sec-aprofundamento-trauma-toracico-critico",
       0,
       [
@@ -1221,9 +1263,7 @@
           [
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde - Protocolos e Diretrizes Clínicas</a>",
             "<a href=\"https://www.conitec.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">CONITEC - Recomendações e Diretrizes Nacionais</a>",
-            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>",
-            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/details/thoracic-trauma-blunt-pain-management-of\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Blunt thoracic trauma: pain management</a>",
-            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/archived/pulmonary-contusion-and-flail-chest-management\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Pulmonary contusion and flail chest management</a>"
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>"
           ],
           "reference-list"
         ]

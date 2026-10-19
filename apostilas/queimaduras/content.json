@@ -1,0 +1,1407 @@
+{
+  "v": 2,
+  "s": "queimaduras",
+  "t": "Queimaduras",
+  "p": "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra.",
+  "d": "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra.",
+  "a": "Cirurgia Geral",
+  "m": "Trauma e Emergências Cirúrgicas",
+  "h": [
+    "Apostila LURIA",
+    "Queimaduras",
+    "Tratado completo de Queimaduras para concursos de Residência Médica e ENAMED: fisiopatologia da lesão térmica e resposta inflamatória sistêmica (SIRS, perda de barreira cutânea, hiperpermeabilidade capilar generalizada e choque do queimado); classificação quanto à profundidade (1º grau epidérmica, 2º grau superficial, 2º grau profunda, 3º grau espessura total e 4º grau musculoesquelético); cálculo da Superfície Corporal Queimada (SCQ) pela Regra dos Nove de Wallace e Tabela de Lund-Browder; ressuscitação volêmica intensiva comparando Parkland clássica vs ATLS 10ª/11ª ed / ABA com Ringer Lactato e titulação estrita pelo débito urinário; lesão por inalação com critérios formais de via aérea definitiva e manejo de intoxicações por CO (carboxihemoglobina) e cianeto (hidroxicobalamina); indicações e técnicas de escarotomia e fasciotomia; antibioticoterapia tópica com sulfadiazina de prata e mafenida; resposta hipermetabólica, suporte nutricional e profilaxia da Úlcera de Curling; queimaduras elétricas e químicas; 4 casos clínicos estruturados e questões comentadas na íntegra.",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Trauma e Emergências Cirúrgicas",
+      "Tema: Queimaduras"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "epidemiologia-e-mecanismos",
+      "1. Introdução, Epidemiologia e Mecanismos do Trauma Térmico"
+    ],
+    [
+      "fisiopatologia-zonas-jackson",
+      "2. Fisiopatologia da Lesão Térmica: Efeitos Locais e as Três Zonas de Jackson"
+    ],
+    [
+      "resposta-sistemica-e-sirs",
+      "3. Resposta Inflamatória Sistêmica (SIRS) e Fenômeno de \"Capillary Leak\" no Grande Queimado"
+    ],
+    [
+      "classificacao-quanto-a-profundidade",
+      "4. Classificação da Profundidade das Queimaduras: Da Epidérmica ao 4º Grau"
+    ],
+    [
+      "mensuracao-scq-wallace-lund-browder",
+      "5. Mensuração da Superfície Corporal Queimada: Regra dos Nove de Wallace e Lund-Browder"
+    ],
+    [
+      "ressuscitacao-volemica-parkland-atls",
+      "6. Ressuscitação Volêmica no Trauma Térmico: Parkland vs ATLS 10ª/11ª Ed / ABA e Metas de Débito Urinário"
+    ],
+    [
+      "queimadura-inalatoria-e-intoxicacoes",
+      "7. Lesão Inalatória por Fumaça e Intoxicações Sistêmicas (Monóxido de Carbono e Cianeto)"
+    ],
+    [
+      "escarotomia-e-fasciotomia-urgencia",
+      "8. Emergências Cirúrgicas no Queimado: Escarotomia Torácica e Fasciotomia de Extremidades"
+    ],
+    [
+      "tratamento-topico-e-curativos",
+      "9. Tratamento Tópico, Curativos Avançados e Cuidados com a Ferida Queimada"
+    ],
+    [
+      "suporte-nutricional-e-curling",
+      "10. Suporte Nutricional, Metabolismo Hipermetabólico e Profilaxia da Úlcera de Curling"
+    ],
+    [
+      "queimaduras-especiais-e-ctq",
+      "11. Queimaduras Especiais: Queimadura Elétrica, Química e Critérios de Transferência para o CTQ"
+    ],
+    [
+      "casos-clinicos-estruturados",
+      "12. Casos Clínicos Estruturados e Discussões Práticas Baseadas em Evidências"
+    ],
+    [
+      "questoes-comentadas-residencia",
+      "13. Questões Comentadas de Residência Médica e Revalida/ENAMED"
+    ],
+    [
+      "pontos-chave-enamed-queimaduras",
+      "14. Pontos de Alto Rendimento e Diretrizes Práticas de Memorização"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "epidemiologia-e-mecanismos",
+      0,
+      [
+        [
+          "2",
+          "1. Introdução, Epidemiologia e Mecanismos do Trauma Térmico"
+        ],
+        [
+          "3",
+          "Definição e Magnitude Epidemiológica do Trauma Térmico"
+        ],
+        [
+          "p",
+          "As queimaduras representam uma das formas mais devastadoras de traumatismo físico e metabólico a que o organismo humano pode ser submetido. Definem-se como lesões agudas dos tecidos orgânicos — predominantemente da pele e anexos cutâneos, mas potencialmente envolvendo o trato respiratório, fáscias, músculos e ossos — causadas pela ação direta ou indireta de agentes térmicos (calor por condução, convecção ou radiação), químicos (ácidos e álcalis concentrados), elétricos (alta e baixa voltagem) ou radiações ionizantes."
+        ],
+        [
+          "p",
+          "No Brasil, segundo dados do Ministério da Saúde e da Sociedade Brasileira de Queimaduras (SBQ), estima-se a ocorrência de aproximadamente 1.000.000 de acidentes com queimaduras a cada ano. Destes, cerca de 100.000 pacientes buscam atendimento médico em serviços de urgência e emergência hospitalar, e aproximadamente 2.500 a 3.000 indivíduos evoluem para o óbito em decorrência de complicações sistêmicas diretas, incluindo choque distributivo-hipovolêmico, falência de múltiplos órgãos e sistemas (MODS) e sepse grave de foco cutâneo ou pulmonar."
+        ],
+        [
+          "p",
+          "O perfil epidemiológico nacional revela uma distribuição bimodal marcante:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Faixa Pediátrica (0 a 4 anos):</strong> Responde por cerca de um terço de todas as admissões hospitalares. O mecanismo predominante é a <em>escaldadura</em> por líquidos superaquecidos domésticos (água fervente, café, sopa, óleo de cozinha ou água de banho), ocorrendo quase invariavelmente no ambiente da cozinha ou banheiro sob supervisão inadequada. Nessa faixa etária, a espessura delgada da epiderme e derme propicia que temperaturas moderadas provoquem lesões de espessura total em frações de segundo;",
+            "<strong>Adultos Jovens (20 a 40 anos):</strong> Predominância masculina expressiva, com lesões decorrentes de chama direta em acidentes industriais, manuseio ilícito de inflamáveis (álcool líquido e combustíveis fósseis automotivos) e acidentes elétricos ocupacionais na construção civil e rede de distribuição de alta tensão;",
+            "<strong>População Idosa (&gt; 65 anos):</strong> Apresenta a maior taxa de mortalidade proporcional devido à associação com senescência imunológica, comorbidades cardiorrespiratórias e renais prévias e pele atrófica que favorece lesões profundas imediatas mesmo em exposições breves."
+          ]
+        ],
+        [
+          "3",
+          "Mecanismos Etiológicos e Física da Lesão Térmica"
+        ],
+        [
+          "p",
+          "A gravidade e a profundidade celular do dano tecidual são ditadas fundamentalmente por uma equação termodinâmica clássica: a temperatura máxima atingida pelo agente agressor multiplicada pelo tempo exato de contato com a superfície corpórea. A desnaturação irreversível das proteínas celulares e o colapso da bicamada lipídica das membranas plasmáticas iniciam-se quando a temperatura tecidual atinge 44°C em exposições prolongadas (&gt; 6 horas). À medida que a temperatura se eleva para além de 54°C, o tempo necessário para produzir destruição celular transmural cai exponencialmente: a 60°C, bastam 3 a 5 segundos de contato; a 70°C, menos de 1 segundo é suficiente para causar necrose coagulativa de toda a derme."
+        ],
+        [
+          "t",
+          [
+            "Etiologia do Agente",
+            "Mecanismo Físico Predominante",
+            "Padrão Típico de Lesão e Particularidades Clínicas"
+          ],
+          [
+            [
+              "<strong>Escaldadura (Líquidos Quentes)</strong>",
+              "Transferência rápida de calor por condução e convecção em meio úmido.",
+              "Mais comum na infância. Frequentemente resulta em queimaduras de 2º grau superficial a profunda. Padrão de escorrimento gravitacional (\"gotas e riachos\") ou de imersão forçada (quando associada a abuso infantil, observando-se linhas de demarcação retas sem salpicos)."
+            ],
+            [
+              "<strong>Chama Direta</strong>",
+              "Radiação térmica direta e ignição secundária de vestimentas sintéticas.",
+              "Gera queimaduras de 2º grau profundo e 3º grau com escaras coriáceas espessas. Altíssima incidência de lesão inalatória concomitante quando o acidente ocorre em ambiente fechado."
+            ],
+            [
+              "<strong>Contato Sólido</strong>",
+              "Condução pura de calor de superfície metálica ou vitrocerâmica em brasa.",
+              "Área restrita, porém com grande profundidade (frequentemente 3º ou 4º grau), com necrose dérmica profunda e fixação do tecido por aderência imediata."
+            ],
+            [
+              "<strong>Química (Ácidos e Álcalis)</strong>",
+              "Reação química exotérmica contínua: necrose de coagulação (ácidos) vs necrose de liquefação (álcalis).",
+              "Os álcalis (soda cáustica, amônia, cimento) saponificam gorduras e liquefazem proteínas, penetrando indefinidamente nas camadas profundas; os ácidos desnaturam proteínas superficiais formando barreira protetora relativa. Exige irrigação com água corrente por tempo prolongado (&gt; 30 a 60 min)."
+            ],
+            [
+              "<strong>Elétrica (Baixa e Alta Tensão)</strong>",
+              "Efeito Joule: conversão de energia elétrica em calor nos tecidos resistivos ($Q = I^2 cdot R cdot t$).",
+              "Acometimento profundo grave (\"efeito iceberg\"): a pele externa pode apresentar apenas pequenas marcas de entrada e saída, enquanto compartimentos musculares profundos sofrem necrose maciça, rabdomiólise com mioglobinúria e síndrome compartimental."
+            ],
+            [
+              "<strong>Radiação</strong>",
+              "Dano ao DNA celular e geração contínua de radicais livres oxidativos.",
+              "Exposição solar crônica/aguda ou acidentes industriais e radioterapia. Latência prolongada entre a exposição física e o eritema cutâneo máximo."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "fisiopatologia-zonas-jackson",
+      0,
+      [
+        [
+          "2",
+          "2. Fisiopatologia da Lesão Térmica: Efeitos Locais e as Três Zonas de Jackson"
+        ],
+        [
+          "3",
+          "O Modelo Conceitual das Três Zonas de Jackson"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Wallace_rule_of_nines-de.svg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Wallace%20rule%20of%20nines-de.svg\" alt=\"Diagrama da Regra dos Nove de Wallace para dimensionamento da área queimada\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Diagrama da Regra dos Nove de Wallace para dimensionamento da área queimada</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AWallace%20rule%20of%20nines-de.svg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Jmarchn ↗</a> (CC BY-SA 3.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"Curious_creatures_in_zoology__15569457942_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Curious%20creatures%20in%20zoology%20(15569457942).jpg\" alt=\"Queimadura de 3º grau profunda com escara esbranquiçada e indolor\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Queimadura de 3º grau profunda com escara esbranquiçada e indolor</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ACurious%20creatures%20in%20zoology%20(15569457942).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Ashton, John ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "raw",
+          "<figure data-luria-curated-image=\"The_standard_cyclopedia_of_modern_agriculture_and_rural_economy__by_the_most_dis\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/The%20standard%20cyclopedia%20of%20modern%20agriculture%20and%20rural%20economy%2C%20by%20the%20most%20distinguished%20authorities%20and%20specialists%20under%20the%20editorship%20of%20Professor%20R.%20Patrick%20Wright%20(1908)%20(14804836973).jpg\" alt=\"Queimadura de 2º grau superficial com vesículas e flictenas ricas em exsudato\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Queimadura de 2º grau superficial com vesículas e flictenas ricas em exsudato</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AThe%20standard%20cyclopedia%20of%20modern%20agriculture%20and%20rural%20economy%2C%20by%20the%20most%20distinguished%20authorities%20and%20specialists%20under%20the%20editorship%20of%20Professor%20R.%20Patrick%20Wright%20(1908)%20(14804836973).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Internet Archive Book Images ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
+        ],
+        [
+          "p",
+          "Em 1953, Douglas Jackson descreveu a arquitetura histopatológica tridimensional da queimadura cutânea aguda. O modelo clássico subdivide a lesão térmica local em três zonas concêntricas que possuem implicações fisiológicas, prognósticas e terapêuticas completamente distintas. O domínio desse conceito é fundamental para entender por que a ressuscitação hemodinâmica precoce salva tecido tegumentar viável:"
+        ],
+        [
+          "3",
+          "1. Zona de Coagulação (Necrose Central)"
+        ],
+        [
+          "p",
+          "Situa-se no ponto focal de contato máximo com o agente térmico. Nessa área central, a temperatura celular excedeu o ponto de tolerância crítica, ocorrendo desnaturação proteica maciça, colapso de membranas lipídicas, coagulação intravascular microcirculatória instantânea e morte celular imediata e irreversível. Nenhum tratamento farmacológico ou volêmico é capaz de ressuscitar ou reverter o tecido da zona de coagulação; sua evolução natural é a formação de escara necrótica que exigirá desbridamento cirúrgico ou cicatrização por segunda intenção."
+        ],
+        [
+          "3",
+          "2. Zona de Estase (Zona Crítica de Resgate Terapêutico)"
+        ],
+        [
+          "p",
+          "Circunda imediatamente a zona central de coagulação. Nessa região intermediária, as células sofreram dano subletal por calor: encontram-se metabolicamente deprimidas, com integridade mitocondrial marginal, enquanto a microcirculação capilar exibe estase vascular progressiva, adesão plaquetária e marginação neutrofílica intensa. O fluxo sanguíneo nessa zona está criticamente reduzido durante as primeiras 24 a 48 horas pós-trauma."
+        ],
+        [
+          "p",
+          "<strong>A zona de estase é o alvo terapêutico prioritário do cirurgião e do intensivista:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Se o paciente receber <em>ressuscitação volêmica precoce e adequada</em>, preservação da perfusão tecidual, oxigenação tecidual ótima e prevenção da infecção local, as células recuperam o potencial elétrico transmembrana e a microcirculação se reestabelece, promovendo a sobrevivência e regeneração do tecido;",
+            "Se houver <em>hipovolemia, hipotensão sistêmica, vasoconstrição adrenérgica desregulada, edema intersticial compressivo ou infecção bacteriana secundária</em>, a zona de estase evolui inexoravelmente para trombose microvascular completa e necrose secundária — fenômeno conhecido como <strong>conversão da queimadura</strong> (uma lesão que inicialmente era de 2º grau superficial aprofunda-se para 3º grau de espessura total)."
+          ]
+        ],
+        [
+          "3",
+          "3. Zona de Hiperemia (Zona Periférica Externa)"
+        ],
+        [
+          "p",
+          "Corresponde à periferia mais externa da lesão. Caracteriza-se por vasodilatação arteriolar proeminente induzida pela liberação maciça de histamina, bradicinina, óxido nítrico e prostaglandinas dilatadoras provenientes do tecido adjacente inflamado. O tecido dessa zona está 100% viável, exibe aumento marcado do fluxo sanguíneo microcirculatório e recupera-se espontaneamente dentro de 7 a 10 dias, a menos que ocorra sepse invasiva generalizada ou isquemia prolongada catastrófica."
+        ],
+        [
+          "t",
+          [
+            "Zona de Jackson",
+            "Status Histopatológico Celular",
+            "Perfusão Microvascular",
+            "Potencial de Sobrevivência e Meta Terapêutica"
+          ],
+          [
+            [
+              "<strong>Zona de Coagulação</strong>",
+              "Necrose celular irreversível, proteínas desnaturadas, trombose vascular total.",
+              "Nula (ausência completa de fluxo sanguíneo tecidual).",
+              "Inviável. Evolui para escara; tratamento cirúrgico com desbridamento e enxertia."
+            ],
+            [
+              "<strong>Zona de Estase</strong>",
+              "Dano celular subletal; células edemaciadas e funcionalmente deprimidas.",
+              "Fluxo sanguíneo marginal comprometido, com estase e microtrombose progressiva.",
+              "<strong>Potencialmente viável / reversível.</strong> Alvo primordial da hidratação volêmica; risco iminente de conversão para necrose na vigência de choque ou infecção."
+            ],
+            [
+              "<strong>Zona de Hiperemia</strong>",
+              "Células viáveis íntegras com estresse térmico mínimo.",
+              "Hiperperfusão reativa acentuada por vasodilatação mediada por autacoides inflamatórios.",
+              "Completamente viável. Resolução espontânea sem sequelas teciduais permanentes em 7 a 10 dias."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "resposta-sistemica-e-sirs",
+      0,
+      [
+        [
+          "2",
+          "3. Resposta Inflamatória Sistêmica (SIRS) e Fenômeno de \"Capillary Leak\" no Grande Queimado"
+        ],
+        [
+          "3",
+          "Transição da Inflamação Local para o Impacto Sistêmico (\"Grande Queimado\")"
+        ],
+        [
+          "p",
+          "Em queimaduras de extensão limitada (&lt; 15% a 20% da SCQ em adultos), a resposta inflamatória permanece predominantemente circunscrita ao leito da ferida e aos tecidos perilesionais. No entanto, quando a queimadura atinge ou ultrapassa <strong>20% da SCQ em adultos ou 10% a 15% em crianças e idosos</strong>, ocorre um transbordamento catastrófico de mediadores inflamatórios e endotoxinas para a circulação sistêmica, deflagrando uma síndrome de resposta inflamatória sistêmica (SIRS) hiperativa e descontrolada."
+        ],
+        [
+          "p",
+          "O paciente passa a apresentar o chamado <strong>choque do queimado</strong>, uma entidade fisiopatológica singular que combina componentes do choque hipovolêmico verdadeiro (por perda maciça de plasma para o terceiro espaço e evaporação) e do choque distributivo (por vasodilatação generalizada e perda da integridade da barreira endotelial sistêmica)."
+        ],
+        [
+          "3",
+          "A Fisiopatologia do Extravasamento Capilar (\"Capillary Leak\")"
+        ],
+        [
+          "p",
+          "O evento central nas primeiras 24 horas do grande queimado é a perda generalizada da seletividade do glicocálix e do endotélio microvascular em órgãos remotos não queimados (pulmões, fígado, rins, trato gastrointestinal e musculatura esquelética). Este colapso é impulsionado por uma tempestade de mediadores vasoativos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Aminas Vasoativas e Metabólitos do Ácido Araquidônico:</strong> Histamina liberada por mastócitos dérmicos, serotonina por plaquetas ativadas e prostaglandinas ($PGE_2$ e $PGI_2$) associadas ao tromboxano $A_2$ promovem dilatação arteriolar e contração ativa das células endoteliais vênulares, alargando as fenestras e junções intercelulares;",
+            "<strong>Citocinas Pró-Inflamatórias Centrais:</strong> Fator de Necrose Tumoral Alfa ($TNF-alpha$), Interleucina-1 beta ($IL-1\beta$), Interleucina-6 ($IL-6$) e Interleucina-8 ($IL-8$) ativam a cascata da coagulação e estimulam neutrófilos a liberar espécies reativas de oxigênio (ROS) e proteases (elastase e colagenase), que degradam proteoglicanos da membrana basal endotelial;",
+            "<strong>Colapso das Forças de Starling Microvasculares:</strong> A equação de Starling regula o movimento de fluidos transcapilares:\n  $$J_v = K_f cdot [(P_c - P_i) - sigma cdot (pi_c - pi_i)]$$\n  No grande queimado, o coeficiente de filtração capilar ($K_f$) eleva-se dramaticamente, enquanto o coeficiente de reflexão osmótico ($sigma$) desaba para valores próximos de zero. Como consequência, proteínas plasmáticas de alto peso molecular (especialmente a albumina) extravasam livremente do compartimento intravascular para o interstício;",
+            "<strong>Queda da Pressão Oncótica Intravascular ($pi_c$):</strong> Com a fuga de albumina para o interstício, o gradiente oncótico que retém líquido dentro dos vasos é aniquilado. Paralelamente, o tecido queimado desenvolve uma <em>pressão intersticial negativa anômala</em> (podendo atingir -10 a -30 mmHg) gerada pelo desdobramento osmótico do colágeno térmicamente lesado, que atua como uma esponja hidrofílica vigorosa, \"sugando\" volumes maciços de água e eletrólitos do intravascular para o interstício."
+          ]
+        ],
+        [
+          "3",
+          "Consequências Clínicas do Fenômeno de Fuga Capilar"
+        ],
+        [
+          "u",
+          [
+            "<strong>Edema Generalizado de Terceiro Espaço:</strong> Atinge o pico máximo entre <strong>12 e 24 horas</strong> pós-trauma. Ocorre não apenas na pele queimada, mas em tecidos sadios, miocárdio, parede intestinal (íleo adinâmico e hipertensão intra-abdominal) e vias aéreas superiores;",
+            "<strong>Hipovolemia Crítica e Hemoconcentração Extrema:</strong> O volume plasmático circulante eficaz cai em até 30% a 50% nas primeiras 4 horas. O hematócrito pode se elevar para 55% a 65% devido à perda exclusiva de água plasmática com preservação das hemácias (hemoconcentração relativa);",
+            "<strong>Depressão Miocárdica Primária:</strong> Além da queda do débito cardíaco por hipovolemia (redução da pré-carga), substâncias circulantes como o Fator Depressor Miocárdico (MDF) e o $TNF-alpha$ inibem diretamente a contratilidade intrínseca ventricular nas primeiras 24 horas;",
+            "<strong>Fenômeno de Fechamento da Barreira (\"Capillary Seal\"):</strong> Entre 24 e 48 horas após a lesão, sob terapia adequada, as células endoteliais recuperam progressivamente as junções de oclusão e o endotélio volta a ser impermeável a macromoléculas. Inicia-se a fase de reabsorção do terceiro espaço, aumento da diurese e estabilização da volemia."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacao-quanto-a-profundidade",
+      0,
+      [
+        [
+          "2",
+          "4. Classificação da Profundidade das Queimaduras: Da Epidérmica ao 4º Grau"
+        ],
+        [
+          "3",
+          "Estrutura Cutânea e Níveis Anatômicos de Lesão"
+        ],
+        [
+          "p",
+          "A pele humana é constituída pela epiderme (camada celular acelular superficial com queratinócitos e estrato córneo) e pela derme (tecido conjuntivo fibroelástico vascularizado contendo terminações nervosas sensoriais, vasos sanguíneos e folículos pilossebáceos e glândulas sudoríparas). A capacidade de regeneração cutânea espontânea depende exclusivamente da persistência de remanescentes epiteliais viáveis localizados na profundidade dos anexos dérmicos (células-tronco dos folículos pilosos e ductos glandulares)."
+        ],
+        [
+          "p",
+          "A classificação clássica em graus (1º, 2º, 3º e 4º graus) correlaciona-se com a terminologia histopatológica moderna (epidérmica, dérmica superficial, dérmica profunda e espessura total):"
+        ],
+        [
+          "3",
+          "1º Grau (Queimadura Epidérmica)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Camada Acometida:</strong> Restrita exclusivamente à epiderme. A membrana basal e a derme subjacente permanecem intactas e funcionais;",
+            "<strong>Aspecto Clínico:</strong> Eritema hiperemiado intenso, calor local, edema discreto ou ausente e <strong>ausência total de flictenas (bolhas)</strong>;",
+            "<strong>Sensibilidade:</strong> Extremamente dolorosa e hiperestésica ao menor toque (terminações nervosas desprotegidas);",
+            "<strong>Retorno Capilar:</strong> Rápido e exuberante (&lt; 2 segundos);",
+            "<strong>Evolução e Cicatrização:</strong> Cura completa e espontânea em 3 a 6 dias, com descamação epitelial fina, sem cicatrizes permanentes ou sequelas teciduais;",
+            "<strong>ATENÇÃO CRUCIAL PARA PROVAS:</strong> As queimaduras de 1º grau (ex: eritema solar simples) <strong>NÃO ENTRAM NO CÁLCULO DA SUPERFÍCIE CORPORAL QUEIMADA (SCQ)</strong> para fins de ressuscitação volêmica!"
+          ]
+        ],
+        [
+          "3",
+          "2º Grau Superficial (Dérmica Superficial)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Camada Acometida:</strong> Epiderme completa e terço superficial da derme (derme papilar);",
+            "<strong>Aspecto Clínico:</strong> Presença característica de <strong>flictenas (bolhas) intactas ou rotas</strong> com exsudato seroso abundante. Quando a bolha é removida, o leito da ferida apresenta-se <strong>vermelho vivo (eritematoso), úmido e brilhante</strong>;",
+            "<strong>Sensibilidade:</strong> Dor intensa e lancinante. É a queimadura clinicamente mais dolorosa de todas, pois os nociceptores dérmicos estão expostos e funcionais;",
+            "<strong>Retorno Capilar:</strong> Presente, rápido e nítido à digitopressão;",
+            "<strong>Evolução e Cicatrização:</strong> Epitelização espontânea a partir das células dos anexos da derme papilar em 7 a 14 dias (até 21 dias), raramente deixando cicatrizes hipertróficas se não houver infecção bacteriana secundária associada."
+          ]
+        ],
+        [
+          "3",
+          "2º Grau Profundo (Dérmica Profunda)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Camada Acometida:</strong> Epiderme e porção profunda da derme reticular, preservando apenas as porções mais profundas das glândulas sudoríparas e folículos;",
+            "<strong>Aspecto Clínico:</strong> Bolhas frequentemente rotas, com leito da ferida exibindo coloração <strong>rósea-pálida, esbranquiçada ou marmórea</strong>, com textura mais seca;",
+            "<strong>Sensibilidade:</strong> <strong>Hipoestesia</strong> (sensibilidade tátil e dolorosa francamente diminuída ou abolida no centro da lesão, preservando apenas sensibilidade à pressão profunda);",
+            "<strong>Retorno Capilar:</strong> Lentificado, duvidoso ou francamente ausente;",
+            "<strong>Evolução e Cicatrização:</strong> Demora mais de 21 dias para cicatrizar espontaneamente, com alta taxa de contraturas fibróticas e cicatrizes hipertróficas disfuncionais. Frequentemente se beneficia de excisão cirúrgica tangencial precoce e autoenxertia cutânea."
+          ]
+        ],
+        [
+          "3",
+          "3º Grau (Espessura Total)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Camada Acometida:</strong> Destruição irreversível de toda a espessura da epiderme e derme, estendendo-se até o tecido celular subcutâneo (hipoderme). Não resta nenhum anexo cutâneo vivo;",
+            "<strong>Aspecto Clínico:</strong> <strong>Escara coriácea espessa, inelástica e rígida</strong> (\"aspecto de couro\"), com coloração escura (carbonizada, marrom) ou branco-nacarada. Vasos dérmicos trombosados visíveis por transparência;",
+            "<strong>Sensibilidade:</strong> <strong>Completamente insensível / anestésica</strong> (destruição total dos receptores sensitivos dérmicos e das terminações nervosas livres). O paciente refere dor apenas nas bordas periféricas da ferida (onde há queimaduras de 1º e 2º graus);",
+            "<strong>Retorno Capilar:</strong> Completamente ausente (isquemia microvascular absoluta);",
+            "<strong>Evolução e Cicatrização:</strong> <strong>Incapaz de reepitelização espontânea</strong> (exceto pequenas margens milimétricas pelas bordas por contração miofibroblástica). Exige impreterivelmente desbridamento cirúrgico formal e enxertia de pele para o fechamento definitivo da ferida."
+          ]
+        ],
+        [
+          "3",
+          "4º Grau (Acometimento Subfascial e Estrutural Profundo)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Camada Acometida:</strong> Destruição transmural completa da pele, subcutâneo, fáscias musculares, massas musculares esqueléticas, tendões, feixes vásculo-nervosos e até cortical óssea;",
+            "<strong>Aspecto Clínico:</strong> Carbonização profunda, tecido enegrecido, seco e quebradiço;",
+            "<strong>Causas Frequentes:</strong> Queimaduras elétricas por arco de alta tensão, chamas presas em ambiente de confinamento com inconsciência prolongada ou contato industrial direto prolongado com metais fundidos;",
+            "<strong>Tratamento:</strong> Desbridamentos extensos seriados repetidos, retalhos microcirúrgicos complexos de cobertura ou amputações anatômicas de membros."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Grau / Profundidade",
+            "Estruturas Anatômicas",
+            "Aparência Macroscópica",
+            "Sensibilidade / Dor",
+            "Tempo / Forma de Cura"
+          ],
+          [
+            [
+              "<strong>1º Grau (Epidérmica)</strong>",
+              "Somente epiderme",
+              "Eritema seco, sem bolhas",
+              "Hiperestesia intensa",
+              "3 a 6 dias (descamação, sem cicatriz)"
+            ],
+            [
+              "<strong>2º Grau Superficial</strong>",
+              "Epiderme + derme papilar",
+              "Flictenas serosas, base eritematosa úmida",
+              "Dor extrema / lancinante",
+              "7 a 14 dias (reepitelização espontânea)"
+            ],
+            [
+              "<strong>2º Grau Profundo</strong>",
+              "Epiderme + derme reticular",
+              "Base esbranquiçada/marmórea, seca",
+              "Hipoestesia marcante",
+              "&gt; 21 dias (cicatriz hipertrófica; indicação de enxerto)"
+            ],
+            [
+              "<strong>3º Grau (Espessura Total)</strong>",
+              "Epiderme + derme + hipoderme",
+              "Escara coriácea espessa, vasos trombosados",
+              "Anestesia total (insensível)",
+              "Sem cura espontânea; cirurgia com enxerto"
+            ],
+            [
+              "<strong>4º Grau</strong>",
+              "Músculos, fáscias e ossos",
+              "Carbonização preta, necrose profunda",
+              "Anestesia completa",
+              "Desbridamento agressivo / amputação"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "mensuracao-scq-wallace-lund-browder",
+      0,
+      [
+        [
+          "2",
+          "5. Mensuração da Superfície Corporal Queimada: Regra dos Nove de Wallace e Lund-Browder"
+        ],
+        [
+          "3",
+          "Importância do Cálculo Rigoroso da Área Afetada"
+        ],
+        [
+          "p",
+          "A determinação precisa da Superfície Corporal Queimada (%SCQ) constitui o pilar fundamental para guiar a ressuscitação hidroeletrolítica, estimar a magnitude da resposta metabólica catabólica, definir os critérios de gravidade e subsidiar a indicação de transferência imediata para um Centro de Tratamento de Queimados (CTQ). O subdimensionamento acarreta hipovolemia, insuficiência renal aguda isquêmica e conversão da queimadura; o superdimensionamento induz sobrecarga volêmica grave, síndrome de compartimento abdominal e edema pulmonar agudo iatrogênico."
+        ],
+        [
+          "3",
+          "A Regra dos Nove de Wallace (Adultos)"
+        ],
+        [
+          "p",
+          "Em adultos e adolescentes (&gt; 14-15 anos), a proporção das áreas anatômicas em relação à superfície corpórea total mantém-se razoavelmente constante. O cirurgião escocês Alexander Wallace padronizou em 1951 a célebre \"Regra dos Nove\", que divide o corpo em múltiplos de 9%:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cabeça e Pescoço (total): 9%</strong> (4,5% face anterior e 4,5% face posterior);",
+            "<strong>Tronco Anterior (Tórax e Abdome): 18%</strong> (tórax anterior 9%, abdome anterior 9%);",
+            "<strong>Tronco Posterior (Dorso e Região Lombar/Nádegas): 18%</strong> (dorso superior 9%, dorso inferior/nádegas 9%);",
+            "<strong>Membro Superior Direito (total): 9%</strong> (4,5% anterior e 4,5% posterior);",
+            "<strong>Membro Superior Esquerdo (total): 9%</strong> (4,5% anterior e 4,5% posterior);",
+            "<strong>Membro Inferior Direito (total): 18%</strong> (coxa/perna/pé anterior 9% e posterior 9%);",
+            "<strong>Membro Inferior Esquerdo (total): 18%</strong> (coxa/perna/pé anterior 9% e posterior 9%);",
+            "<strong>Genitália e Períneo: 1%</strong>;",
+            "<strong>Soma Total:</strong> $9 + 18 + 18 + 9 + 9 + 18 + 18 + 1 = 100%$."
+          ]
+        ],
+        [
+          "3",
+          "A Regra da Palma da Mão (Lesões Esparsas ou Irregulares)"
+        ],
+        [
+          "p",
+          "Para queimaduras descontínuas, salpicadas ou em placas isoladas, utiliza-se a técnica da palma da mão do próprio paciente: <strong>a superfície palmar completa do paciente (incluindo os cinco dedos unidos e estendidos) equivale a aproximadamente 1,0% da sua SCQ</strong> (quando se considera apenas a palma sem os dedos, corresponde a 0,5%). Esta ferramenta prática é extremamente útil para mensurar áreas não queimadas dentro de grandes queimaduras ou calcular queimaduras pequenas e salpicadas."
+        ],
+        [
+          "3",
+          "Particularidades na Criança: A Tabela de Lund-Browder"
+        ],
+        [
+          "p",
+          "Em pediatria, a aplicação da Regra dos Nove de Wallace produz erros grosseiros e inaceitáveis de estimativa. O recém-nascido e o lactente possuem uma cabeça desproporcionalmente volumosa em relação ao tronco e membros inferiores comparativamente curtos. Conforme o crescimento e a maturação esquelética progridem, a proporção relativa da cabeça diminui gradualmente enquanto os membros inferiores aumentam."
+        ],
+        [
+          "p",
+          "Por esse motivo, utiliza-se obrigatoriamente a <strong>Tabela de Lund e Browder</strong>, que ajusta os percentuais de acordo com as faixas etárias exatas:"
+        ],
+        [
+          "t",
+          [
+            "Segmento Anatômico",
+            "Lactente (&lt; 1 ano)",
+            "Criança 1 a 4 anos",
+            "Criança 5 a 9 anos",
+            "Criança 10 a 14 anos",
+            "Adulto (&ge; 15 anos)"
+          ],
+          [
+            [
+              "<strong>Cabeça (total: anterior + posterior)</strong>",
+              "<strong>18%</strong> (9% ant / 9% post)",
+              "<strong>14%</strong>",
+              "<strong>12%</strong>",
+              "<strong>10%</strong>",
+              "<strong>9%</strong> (4,5% ant / 4,5% post)"
+            ],
+            [
+              "<strong>Tronco Anterior</strong>",
+              "18%",
+              "18%",
+              "18%",
+              "18%",
+              "18%"
+            ],
+            [
+              "<strong>Tronco Posterior</strong>",
+              "18%",
+              "18%",
+              "18%",
+              "18%",
+              "18%"
+            ],
+            [
+              "<strong>Cada Membro Superior (total)</strong>",
+              "9% (4,5% cada lado)",
+              "9%",
+              "9%",
+              "9%",
+              "9%"
+            ],
+            [
+              "<strong>Cada Membro Inferior (total)</strong>",
+              "<strong>13,5%</strong> (6,75% ant / 6,75% post)",
+              "<strong>15%</strong>",
+              "<strong>16%</strong>",
+              "<strong>17%</strong>",
+              "<strong>18%</strong> (9% ant / 9% post)"
+            ],
+            [
+              "<strong>Períneo / Genitália</strong>",
+              "1%",
+              "1%",
+              "1%",
+              "1%",
+              "1%"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Regra mnemônica pediátrica simplificada para provas:</em> No recém-nascido e lactente até 1 ano, a cabeça vale <strong>18%</strong> e cada membro inferior vale <strong>13,5%</strong> (ambos os MMII somam 27%). A cada ano de vida que a criança completa até os 10 anos, subtrai-se 1% da cabeça e adiciona-se 0,5% a cada membro inferior (1% na soma dos dois membros inferiores), mantendo a harmonia matemática até atingir os padrões do adulto."
+        ]
+      ]
+    ],
+    [
+      "ressuscitacao-volemica-parkland-atls",
+      0,
+      [
+        [
+          "2",
+          "6. Ressuscitação Volêmica no Trauma Térmico: Parkland vs ATLS 10ª/11ª Ed / ABA e Metas de Débito Urinário"
+        ],
+        [
+          "3",
+          "Evolução das Fórmulas de Reposição Volêmica"
+        ],
+        [
+          "p",
+          "A hidratação endovenosa imediata é a intervenção que mais impacta a sobrevida imediata do grande queimado. Historicamente, a fórmula mais difundida no mundo foi a <strong>Fórmula de Parkland clássica</strong>, desenvolvida por Charles Baxter no Parkland Memorial Hospital na década de 1960. No entanto, nas últimas duas décadas, o reconhecimento do fenômeno da <em>\"ressuscitação excessiva\" (fluid creep)</em> — que culmina em edema pulmonar agudo, síndrome compartimental de membros não queimados e síndrome de compartimento abdominal com falência renal — levou as principais entidades mundiais (American Burn Association - ABA e o Advanced Trauma Life Support - ATLS nas suas 10ª e 11ª edições) a atualizar as diretrizes de infusão inicial para patamares mais fisiológicos e conservadores."
+        ],
+        [
+          "3",
+          "Comparação das Diretrizes de Cálculo Volêmico Inicial (Primeiras 24 Horas)"
+        ],
+        [
+          "t",
+          [
+            "Protocolo / Diretriz",
+            "Fórmula de Volume Inicial (Primeiras 24h)",
+            "Solução Eletrolítica de Escolha",
+            "População-Alvo Específica"
+          ],
+          [
+            [
+              "<strong>Fórmula de Parkland Clássica</strong>",
+              "<strong>$4\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong>",
+              "Ringer Lactato",
+              "Uso histórico clássico em grandes queimados adultos e pediátricos."
+            ],
+            [
+              "<strong>ATLS 10ª/11ª Edição &amp; ABA (Adultos)</strong>",
+              "<strong>$2\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong>",
+              "Ringer Lactato",
+              "Queimaduras térmicas e químicas em adultos (&ge; 14 anos)."
+            ],
+            [
+              "<strong>ATLS 10ª/11ª Edição &amp; ABA (Pediatria &lt; 14 anos)</strong>",
+              "<strong>$3\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong>",
+              "Ringer Lactato (+ Manutenção com SG 5% + Na)",
+              "Crianças e lactentes com peso &lt; 30 kg ou idade &lt; 14 anos."
+            ],
+            [
+              "<strong>Queimadura Elétrica de Alta Voltagem</strong>",
+              "<strong>$3\text{ a } 4\text{ mL} \times \text{Peso (kg)} \times %\text{SCQ}$</strong> (ou mais)",
+              "Ringer Lactato",
+              "Trauma elétrico de alta tensão com suspeita de lesão muscular profunda e rabdomiólise."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Regra Temporal de Infusão: O Marco Zero da Queimadura"
+        ],
+        [
+          "p",
+          "O volume calculado para as primeiras 24 horas <strong>NÃO</strong> é dividido em parcelas iguais, e seu cronograma depende impreterivelmente da hora em que ocorreu o acidente térmico, e não da hora de chegada ao hospital:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Primeira Metade (50% do volume total calculado):</strong> Deve ser infundida nas <strong>primeiras 8 horas contadas a partir do MOMENTO DA QUEIMADURA</strong>. Se o paciente demorou 3 horas para chegar ao serviço de emergência, os 50% restantes deverão ser administrados nas 5 horas que restam do primeiro bloco de 8 horas;",
+            "<strong>Segunda Metade (50% do volume restante):</strong> Deve ser infundida uniformemente ao longo das <strong>16 horas subsequentes</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Soluções Cristaloides: Por que o Ringer Lactato é a Solução de Escolha?"
+        ],
+        [
+          "p",
+          "O <strong>Ringer Lactato</strong> é o cristaloide padrão-ouro para ressuscitação do queimado. Sua concentração de sódio (130 mEq/L) e osmolaridade aproximam-se mais do plasma que o Soro Fisiológico a 0,9%. O uso maciço de Soro Fisiológico 0,9% (que contém 154 mEq/L de sódio e 154 mEq/L de cloreto) induz rapidamente <strong>acidose metabólica hiperclorêmica grave</strong>, que piora a vasoconstrição renal, deprime a contratilidade miocárdica e confunde a interpretação laboratorial da acidose lática secundária à hipoperfusão tecidual."
+        ],
+        [
+          "p",
+          "<em>Ressuscitação em Crianças Pequenas (&lt; 30 kg):</em> Além do Ringer Lactato calculado pela fórmula da queimadura (3 mL/kg/%SCQ), as crianças possuem reservas escassas de glicogênio hepático e risco elevadíssimo de hipoglicemia convulsiva. Deve-se administrar concomitantemente <strong>soro glicosado a 5% com eletrólitos de manutenção fisiológica (Regra de Holliday-Segar)</strong> em via venosa paralela!"
+        ],
+        [
+          "3",
+          "Alvos de Monitorização e Titulação: O Débito Urinário Horário"
+        ],
+        [
+          "p",
+          "A fórmula de ressuscitação representa unicamente uma <em>estimativa inicial para nortear o primeiro frasco de infusão</em>. A partir da instalação da sonda vesical de demora de Foley, a velocidade da infusão deve ser <strong>titulada hora a hora de acordo com o débito urinário</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Adultos:</strong> Meta de débito urinário de <strong>$0,5\text{ mL/kg/hora}$</strong> (aproximadamente 30 a 50 mL/hora em adultos médios);",
+            "<strong>Crianças (&lt; 30 kg):</strong> Meta de débito urinário de <strong>$1,0\text{ mL/kg/hora}$</strong> (em lactentes &lt; 1 ano, alguns autores aceitam 1,0 a 1,5 mL/kg/hora);",
+            "<strong>Queimadura Elétrica com Mioglobinúria / Urina Escura:</strong> Meta mais agressiva de <strong>$1,0\text{ a }1,5\text{ mL/kg/hora}$</strong> no adulto (e até 2,0 mL/kg/h na criança) até que a urina torne-se macroscopicamente clara e límpida, prevenindo a precipitação intratubular de cilindros de ferri-hemato e mioglobina e a necrose tubular aguda (NTA) anúrica."
+          ]
+        ],
+        [
+          "p",
+          "<em>Ajuste Prático de Velocidade:</em> Se a diurese estiver abaixo da meta na última hora, aumenta-se o gotejamento em 20% a 33%; se estiver muito acima (&gt; 1,0 mL/kg/h em adultos), reduz-se na mesma proporção para evitar o <em>fluid creep</em>."
+        ]
+      ]
+    ],
+    [
+      "queimadura-inalatoria-e-intoxicacoes",
+      0,
+      [
+        [
+          "2",
+          "7. Lesão Inalatória por Fumaça e Intoxicações Sistêmicas (Monóxido de Carbono e Cianeto)"
+        ],
+        [
+          "3",
+          "Fisiopatologia da Lesão por Inalação"
+        ],
+        [
+          "p",
+          "A lesão inalatória é o principal fator isolado determinante de morbimortalidade no trauma térmico, elevando o risco de óbito em até 20% a 40% para uma mesma extensão de SCQ. A inalação da fumaça provoca três tipos distintos de agressão respiratória:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Lesão Térmica Direta das Vias Aéreas Superiores:</strong> Devido à elevada capacidade de dissipação de calor da nasofaringe e orofaringe e ao fechamento reflexo da glote pelo laringoespasmo, a agressão térmica pelo ar aquecido atinge primariamente estruturas <em>supraglóticas</em> (língua, palato, epiglote, aritenoides e pregas vocais). A consequência imediata é um <strong>edema inflamatório maciço e progressivo</strong> que atinge pico entre 12 e 24 horas, capaz de ocluir completamente a fenda glótica e impedir a intubação orotraqueal se esta não for instituída precocemente;",
+            "<strong>Lesão Química Irritativa das Vias Aéreas Inferiores e Parênquima:</strong> Gases tóxicos e produtos da combustão incompleta (aldeídos, acroleína, óxidos de enxofre e cloro) aderem a partículas de fuligem (partículas de carbono) e atingem a árvore traqueobrônquica infraglótica. Ocasionam destruição do epitélio ciliar, perda da produção de surfactante, broncoespasmo grave e formação de cilindros obstrutivos de fibrina, muco e epitélio descamado (plugs intraluminais), predispondo a atelectasias maciças e SDRA (Síndrome do Desconforto Respiratório Agudo) tardia;",
+            "<strong>Asfixia e Intoxicação Sistêmica Celular:</strong> Absorção de gases asfixiantes como o Monóxido de Carbono ($CO$) e o Cianeto de Hidrogênio ($HCN$)."
+          ]
+        ],
+        [
+          "3",
+          "Critérios de Suspeita e Indicações de Intubação Orotraqueal Precoce"
+        ],
+        [
+          "p",
+          "O manejo das vias aéreas no paciente com suspeita de lesão inalatória deve ser agressivo e profilático. A presença de edema avançado torna a intubação uma tarefa heroica, frequentemente exigindo cricotireoidostomia de emergência. Deve-se realizar a intubação orotraqueal (IOT) imediata na presença dos seguintes sinais de alerta:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estridor laríngeo inspiratório ou tiragem intercostal/supraclavicular</strong> (sinal de obstrução iminente de mais de 70% a 80% do lúmen glótico);",
+            "<strong>Rouquidão aguda ou mudança na tonalidade da voz (disfonia progressiva)</strong>;",
+            "<strong>Queimaduras térmicas profundas em face, lábios ou pescoço circunferencial</strong>;",
+            "<strong>Presença de fuligem na orofaringe, língua ou escarro carbonáceo</strong>;",
+            "<strong>Vibrissas nasais chamuscadas associadas a história de confinamento em ambiente fechado</strong>;",
+            "<strong>Grande queimado (&gt; 40% a 50% da SCQ)</strong> mesmo sem lesão inalatória evidente, antecipando o edema maciço gerado pela ressuscitação volêmica vigorosa;",
+            "<strong>Rebaixamento do nível de consciência (Glasgow &le; 8)</strong> por hipóxia, trauma craniano ou intoxicação."
+          ]
+        ],
+        [
+          "3",
+          "Intoxicação por Monóxido de Carbono (CO)"
+        ],
+        [
+          "p",
+          "O monóxido de carbono liga-se à molécula de hemoglobina com uma afinidade <strong>200 a 250 vezes superior à do oxigênio</strong>, formando a <strong>carboxihemoglobina (COHb)</strong>. Isso causa dois efeitos patológicos devastadores: bloqueia os sítios normais de transporte de $O_2$ e desloca a curva de dissociação da hemoglobina para a esquerda (efeito Haldane reverso), impedindo que o pouco $O_2$ restante seja liberado para os tecidos periféricos."
+        ],
+        [
+          "p",
+          "<strong>ARMADILHA CLÁSSICA DE PROVAS:</strong> O oxímetro de pulso padrão de duas ondas é <em>completamente incapaz de diferenciar a oxiemoglobina da carboxihemoglobina</em>, registrando falsamente saturações normais de 98% a 100%! O diagnóstico exige <strong>gasometria arterial com co-oximetria direta para dosagem de COHb</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Clínico:</strong> Cefaleia pulsátil, tontura, náuseas (&gt; 10%), confusão mental, ataxia, síncope, arritmias (&gt; 20-30%) e coma, convulsões e parada cardiorrespiratória (&gt; 40-50%). A clássica \"pele vermelho-cereja\" é um achado raro in vivo, quase restrito a necropsias;",
+            "<strong>Tratamento Imediato:</strong> Oxigênio a 100% sob máscara de alto fluxo com reservatório não reinalante. Em ar ambiente, a meia-vida da COHb é de 4 a 5 horas (320 minutos); com $O_2$ a 100% normobárico, cai para <strong>40 a 60 minutos</strong>; com <em>Oxigenoterapia Hiperbárica (OHB a 2,5-3,0 atm)</em>, a meia-vida despenca para <strong>20 a 30 minutos</strong>;",
+            "<strong>Indicações de Oxigenoterapia Hiperbárica:</strong> Níveis de $\text{COHb} &gt; 25%$ (ou $&gt; 15%$ em gestantes devido à altíssima afinidade da hemoglobina fetal pelo CO), perda de consciência/síncope, alterações isquêmicas no ECG, acidose metabólica grave refratária ou déficits neurológicos persistentes."
+          ]
+        ],
+        [
+          "3",
+          "Intoxicação por Cianeto de Hidrogênio (HCN)"
+        ],
+        [
+          "p",
+          "O cianeto é liberado pela combustão incompleta de materiais domésticos sintéticos (plásticos, poliuretano, nylon, lã, resinas de estofados). Uma vez inalado, liga-se irreversivelmente ao ferro férrico ($Fe^{3+}$) do citocromo c oxidase (complexo IV da cadeia de transporte de elétrons mitocondrial), paralisando a respiração celular aeróbica. A célula não consegue utilizar o oxigênio e recorre ao metabolismo anaeróbico, gerando <strong>acidose lática fulminante desproporcional</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Suspeita Clínica:</strong> Paciente resgatado de incêndio em ambiente fechado com rebaixamento de consciência, instabilidade hemodinâmica inexplicada e <strong>lactato sérico extremamente elevado (&gt; 8 a 10 mmol/L)</strong> com diferença arteriovenosa de $O_2$ diminuída;",
+            "<strong>Antídoto de Escolha:</strong> <strong>Hidroxicobalamina (Vitamina $B_{12a}$)</strong> na dose inicial de <strong>5,0 g IV em 15 minutos</strong> (em pediatria: 70 mg/kg). A hidroxicobalamina quelata o cianeto formando a atóxica cianocobalamina (vitamina $B_{12}$), que é excretada pela urina (causa coloração vermelho-escura temporária da urina e da pele);",
+            "<strong>Segunda Linha (se indisponível hidroxicobalamina):</strong> Tiossulfato de sódio a 25% (fornece substrato de enxofre para a enzima rodanase mitocondrial transformar cianeto em tiocianato). Deve-se <em>evitar nitritos</em> (nitrito de amila/sódio) no paciente com queimadura grave por causarem metemoglobinemia adicional e piorarem a hipóxia tecidual e o choque."
+          ]
+        ]
+      ]
+    ],
+    [
+      "escarotomia-e-fasciotomia-urgencia",
+      0,
+      [
+        [
+          "2",
+          "8. Emergências Cirúrgicas no Queimado: Escarotomia Torácica e Fasciotomia de Extremidades"
+        ],
+        [
+          "3",
+          "Fisiopatologia da Restrição Mecânica por Queimaduras Circunferencias"
+        ],
+        [
+          "p",
+          "A escara da queimadura de 3º grau é uma estrutura dura, coriácea, espessa e completamente desprovida de complacência elástica. Durante a fase de ressuscitação volêmica vigorosa, o edema tecidual acumula-se sob essa carapaça inelástica. Como o compartimento não se distende externamente, as pressões internas elevam-se exponencialmente. Essa dinâmica patológica gera duas emergências cirúrgicas com risco de morte ou perda de membro que devem ser reconhecidas e tratadas pelo médico na sala de emergência:"
+        ],
+        [
+          "3",
+          "1. Queimadura Circunferencial de Tórax: A Escarotomia Torácica"
+        ],
+        [
+          "p",
+          "Quando a queimadura de espessura total abrange circunferencialmente o tórax e o abdome superior, a escara age como um verdadeiro espartilho rígido inextensível. À medida que o edema da parede torácica se expande e o abdome distende:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manifestações Clínicas:</strong> Restrição ventilatória mecânica progressiva, taquipneia superficial ineficaz, dessaturação arterial, hipercapnia e, nos pacientes intubados sob ventilação mecânica, <strong>aumento expressivo e súbito das pressões de pico nas vias aéreas (&gt; 35 a 45 cm$H_2O$)</strong> com queda do volume-corrente;",
+            "<strong>Intervenção Cirúrgica de Emergência: Escarotomia Torácica:</strong>\n    <ul>\n      <li>Consiste na incisão cirúrgica longitudinal da escara necrótica até atingir a gordura viável do tecido celular subcutâneo;",
+            "<em>Técnica:</em> Realizam-se duas incisões nas linhas axilares anteriores bilaterais, estendendo-se do rebordo clavicular até a margem costal inferior, unidas por uma incisão horizontal transversal na altura do apêndice xifoide (padrão em \"H\" ou \"grade torácica\");",
+            "<em>Alívio Imediato:</em> No momento em que a escara é seccionada, as bordas da ferida abrem-se espontaneamente (espaçamento de 2 a 4 cm), restaurando a excursão da caixa torácica e reduzindo imediatamente as pressões ventilatórias do respirador mecânico;",
+            "<em>Anestesia:</em> <strong>Não requer anestesia local ou geral</strong> na área de 3º grau, pois as terminações nervosas estão totalmente destruídas pela queimadura (usa-se apenas sedoanalgesia suave para controle de ansiedade)."
+          ]
+        ],
+        [
+          "3",
+          "2. Queimadura Circunferencial de Extremidades: Escarotomia vs Fasciotomia"
+        ],
+        [
+          "p",
+          "Nos membros (antebraços, pernas, coxas), o edema sob a escara circunferencial comprime o leito venoso, reduzindo o retorno e aumentando a pressão hidrostática retrógrada. A pressão intersticial tecidual supera a pressão de perfusão capilar arteriolar (pressão compartimental &gt; 30 mmHg), culminando em isquemia muscular e nervosa periférica irreversível:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais Clínicos de Sofrimento Compartimental:</strong>\n    <ol>\n      <li><strong>Dor desproporcional ao estiramento passivo</strong> dos grupos musculares do membro afetado (sinal mais precoce e sensível no paciente consciente);",
+            "<strong>Parestesia e hipoestesia</strong> no território dos nervos periféricos (ex: dormência no primeiro interespaço dorsal do pé por compressão do fibular profundo);",
+            "Palidez, lentificação ou ausência de enchimento capilar nos leitos ungueais;",
+            "<strong>Desaparecimento dos pulsos arteriais periféricos</strong> (achado tardio e ominous, indicando necrose muscular iminente);",
+            "Tensão lenhosa palpável nos compartimentos da extremidade.",
+            "<strong>Primeiro Passo: Escarotomia do Membro:</strong>\n    <ul>\n      <li>Incisão longitudinal da pele e escara até a gordura subcutânea nas faces medial e lateral do membro (evitando lesão de troncos nervosos superficiais, como o fibular comum no colo da fíbula e o nervo ulnar no cotovelo);",
+            "Em queimaduras puramente térmicas de pele, a escarotomia é suficiente na grande maioria das vezes para descomprimir os tecidos e restabelecer os pulsos arteriais."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Quando Indicar Fasciotomia Formal?</strong>"
+        ],
+        [
+          "u",
+          [
+            "Se, após a escarotomia completa, a pressão compartimental permanecer <strong>&gt; 30 mmHg</strong> (aferida por manômetro de Stryker) ou persistirem ausência de pulsos e cianose;",
+            "<strong>Obrigatoriamente em Queimaduras Elétricas de Alta Tensão:</strong> Na lesão elétrica, o calor desenvolve-se no interior das massas musculares profundas (ao longo do eixo ósseo), destruindo o músculo profundamente sob uma pele que muitas vezes está íntegra. A fáscia muscular profunda está espessada e hiperpressurizada, exigindo <strong>abertura ampla da fáscia de todos os compartimentos (fasciotomia)</strong> no centro cirúrgico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-topico-e-curativos",
+      0,
+      [
+        [
+          "2",
+          "9. Tratamento Tópico, Curativos Avançados e Cuidados com a Ferida Queimada"
+        ],
+        [
+          "3",
+          "Princípios do Cuidado Local da Ferida"
+        ],
+        [
+          "p",
+          "A perda da epiderme priva o hospedeiro da sua principal barreira física e biológica contra microrganismos invasores, além de amplificar perdas hídricas evaporativas diárias (que podem alcançar 3.000 a 5.000 mL/dia em grandes queimados). O leito da ferida queimada é estéril nas primeiras 24 a 48 horas pós-trauma; após esse período, coloniza-se rapidamente por flora gram-positiva endógena da pele (<em>Staphylococcus aureus</em>, <em>Streptococcus pyogenes</em>) e, após 5 a 7 dias de internação, por bacilos gram-negativos hospitalares virulentos multirresistentes (<em>Pseudomonas aeruginosa</em>, <em>Acinetobacter baumannii</em>, <em>Klebsiella pneumoniae</em>) e leveduras oportunistas (<em>Candida albicans</em>)."
+        ],
+        [
+          "3",
+          "Antibioticoterapia Tópica: Principais Agentes e Farmacologia"
+        ],
+        [
+          "t",
+          [
+            "Agente Tópico",
+            "Espectro Antimicrobiano",
+            "Vantagens e Indicações",
+            "Efeitos Adversos e Limitações Clássicas"
+          ],
+          [
+            [
+              "<strong>Sulfadiazina de Prata a 1%</strong>",
+              "Amplo espectro: Gram-positivos, Gram-negativos (incluindo <em>Pseudomonas</em>) e leveduras.",
+              "<strong>Padrão-ouro tradicional mundial.</strong> Excelente tolerabilidade, indolor na aplicação, mantém leito úmido e favorece desbridamento autolítico de pequenas escaras.",
+              "<strong>Leucopenia transitória autolimitada</strong> (por supressão medular transitória, sem aumentar infecção); impregnação cinzenta da pele (argiria cosmética transitória); forma pseudomembrana que exige lavagem vigorosa nas trocas diárias; não penetra escaras espessas. Contraindicada em alérgicos a sulfa e neonatos &lt; 2 meses (risco de kernicterus)."
+            ],
+            [
+              "<strong>Acetato de Mafenida a 8,5% / 10%</strong>",
+              "Excelente espectro contra Gram-negativos e anaeróbios; altíssima potência contra <em>Pseudomonas aeruginosa</em>.",
+              "<strong>Capacidade ímpar de penetrar escaras necróticas espessas e cartilagens avasculares.</strong> Agente de escolha em queimaduras de orelha (condrite supurativa) e escaras profundas em preparação cirúrgica.",
+              "<strong>Inibidor potente da anidrase carbônica renal:</strong> promove perda urinária maciça de bicarbonato, deflagrando <strong>acidose metabólica hiperclorêmica grave com taquipneia compensatória</strong>. Aplicação extremamente dolorosa (ardência intensa)."
+            ],
+            [
+              "<strong>Nitrato de Prata a 0,5%</strong>",
+              "Bacteriostático amplo contra Gram-positivos e Gram-negativos.",
+              "Solução aquosa barata para compressas contínuas em grandes superfícies.",
+              "Solução hipotônica: extrai íons séricos promovendo <strong>hiponatremia grave e hipocloremia</strong>; risco de metemoglobinemia por conversão em nitritos por bactérias; mancha tecidos e móveis hospitalares de preto indelével."
+            ],
+            [
+              "<strong>Bacitracina / Neomicina / Polimixina B</strong>",
+              "Gram-positivos superficiais.",
+              "Pomada transparente inodora; excelente para <strong>queimaduras faciais de 2º grau superficial</strong> e enxertos recentes, permitindo inspeção direta contínua.",
+              "Espectro limitado contra anaeróbios e bactérias hospitalares; potencial de dermatite de contato alérgica."
+            ],
+            [
+              "<strong>Curativos com Prata Nanocristalina (ex: Acticoat)</strong>",
+              "Liberação sustentada contínua de íons prata livres ($Ag^+$) com ação bactericida prolongada.",
+              "Permite permanência de 3 a 7 dias sem trocas, reduzindo a dor das trocas de curativo, o estresse metabólico e o trauma epitelial.",
+              "Custo financeiro elevado; exige umedecimento estrito com água destilada (o soro fisiológico precipita a prata como cloreto de prata inativo)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Polêmica do Manejo das Flictenas (Bolhas)"
+        ],
+        [
+          "p",
+          "O manejo das bolhas em queimaduras de 2º grau superficial é um dos tópicos mais frequentes em provas de residência:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Flictenas Pequenas (&lt; 1,5 a 2,0 cm), Íntegras e Não Tensas:</strong> Recomenda-se mantê-las intactas. O líquido seroso é biológico e o teto da bolha atua como um curativo biológico natural ideal, reduzindo a dor e o risco de contaminação externa imediata;",
+            "<strong>Flictenas Grandes (&gt; 2,0 cm), Tensas, Rotos ou em Áreas Articulares Flexoras:</strong> Devem ser aspiradas ou cuidadosamente debridadas com pinça e tesoura delicadas sob técnica asséptica. Bolhas volumosas contêm níveis elevados de mediadores inflamatórios pro-trombóticos e enzimas líticas que podem retardar a epitelização e propiciar crescimento bacteriano estagnado. Uma vez rompida a bolha, todo o tecido epidermal desvitalizado deve ser retirado antes da aplicação do antimicrobiano tópico."
+          ]
+        ],
+        [
+          "3",
+          "Proscrição da Antibioticoterapia Sistêmica Profilática"
+        ],
+        [
+          "p",
+          "<strong>REGRA DE OURO DO ATLS E SBQ:</strong> <strong>É FORMALMENTE CONTRAINDICADO O USO DE ANTIBIÓTICOS SISTÊMICOS PROFILÁTICOS NO PACIENTE QUEIMADO.</strong> A administração de antibióticos parenterais na admissão não reduz a incidência de infecção de ferida e seleciona cepas bacterianas e fúngicas extremamente resistentes no ambiente do CTQ. Os antibióticos sistêmicos reservam-se exclusivamente para o tratamento guiado de <strong>infecção invasiva documentada</strong> (sepse clínica, celulite perilesional progressiva, pneumonia hospitalar associada à ventilação mecânica ou infecção de corrente sanguínea com identificação em hemoculturas)."
+        ]
+      ]
+    ],
+    [
+      "suporte-nutricional-e-curling",
+      0,
+      [
+        [
+          "2",
+          "10. Suporte Nutricional, Metabolismo Hipermetabólico e Profilaxia da Úlcera de Curling"
+        ],
+        [
+          "3",
+          "A Resposta Hipermetabólica Extrema do Grande Queimado"
+        ],
+        [
+          "p",
+          "O trauma térmico grave deflagra a resposta metabólica mais intensa e prolongada documentada na medicina humana. Mediada por uma elevação sustentada e maciça de catecolaminas circulantes (adrenalina e noradrenalina elevadas em 10 a 20 vezes), cortisol, glucagon e citocinas inflamatórias ($IL-6$ e $TNF-alpha$), o grande queimado desenvolve:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aumento do Gasto Energético de Repouso (GER):</strong> Pode atingir <strong>150% a 200% do valor basal</strong> calculado durante semanas ou meses;",
+            "<strong>Catabolismo Proteico Esquelético Severo:</strong> Degradação acelerada de massa magra muscular para fornecer aminoácidos gliconeogênicos (alanina e glutamina) ao fígado e leito da ferida, acarretando perda ponderal dramática, fraqueza diafragmática e imunossupressão;",
+            "<strong>Resistência Periférica à Insulina e Hiperglicemia de Estresse:</strong> Gliconeogênese desregulada associada à inibição da captação muscular de glicose;",
+            "<strong>Perda Hídrica Evaporativa Contínua:</strong> A destruição do estrato córneo dissipa imensas quantidades de calor por evaporação (cada 1 mL de água evaporada consome cerca de 0,58 kcal), amplificando o resfriamento corporal e perpetuando a termogênese adrenérgica reativa. O paciente deve ser mantido em quartos aquecidos (temperatura ambiente controlada entre 28°C e 32°C)."
+          ]
+        ],
+        [
+          "3",
+          "Diretrizes do Suporte Nutricional"
+        ],
+        [
+          "p",
+          "O suporte nutricional enteral precoce (iniciado dentro das <strong>primeiras 6 a 12 horas pós-trauma</strong> por sonda nasoentérica posicionada preferencialmente pós-pilórica) é mandatório em todo paciente com SCQ &gt; 20%:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Preservação da Barreira Mucosa Intestinal:</strong> A nutrição enteral precoce estimula o fluxo sanguíneo mesentérico, previne a atrofia das vilosidades intestinais e bloqueia a translocação bacteriana e a passagem de endotoxinas para a veia porta;",
+            "<strong>Metas Calóricas:</strong> Recomenda-se 25 a 30 kcal/kg/dia ou o emprego de equações empíricas consagradas como a <em>Fórmula de Curreri</em> para adultos:\n  $$\text{Calorias (kcal/dia)} = 25\text{ kcal} \times \text{Peso (kg)} + 40\text{ kcal} \times %\text{SCQ}$$",
+            "<strong>Aporte Proteico Hiperproteico Agressivo:</strong> Aporte de <strong>1,5 a 2,0 g/kg/dia em adultos</strong> e até <strong>2,5 a 3,0 g/kg/dia em crianças</strong> para compensar o balanço nitrogenado intensamente negativo e suprir a síntese de colágeno no leito cirúrgico;",
+            "<strong>Modulação Farmacológica do Hipermetabolismo:</strong> O uso de <strong>Propranolol</strong> (bloqueador beta-adrenérgico não seletivo) tem sido amplamente utilizado para reduzir a taquicardia de repouso, diminuir o gasto cardíaco e atenuar o catabolismo muscular; a <strong>Oxandrolona</strong> (esteroide anabolizante sintético) pode ser introduzida na fase de estabilidade para promover ganho de massa magra e acelerar a cicatrização de áreas doadoras de enxerto."
+          ]
+        ],
+        [
+          "3",
+          "Profilaxia da Úlcera de Estresse: A Úlcera de Curling"
+        ],
+        [
+          "p",
+          "Em 1842, Thomas Blizard Curling descreveu a ocorrência de úlceras pépticas agudas graves de estômago e duodeno em pacientes vítimas de queimaduras graves. A <strong>Úlcera de Curling</strong> é uma gastroduodenite erosiva aguda decorrente da intensa isquemia da mucosa gastrointestinal, provocada pela hipovolemia, vasoconstrição esplâncnica adrenérgica mediada por catecolaminas e retrodifusão de íons hidrogênio através de uma barreira mucosa gástrica empobrecida de muco e bicarbonato:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Apresentação Clínica:</strong> Hemorragia digestiva alta aguda (hematêmese maciça e melena) ou perfuração gástrica/duodenal súbita em pacientes instáveis;",
+            "<strong>Prevenção Padrão:</strong>\n    <ul>\n      <li>Início imediato de <strong>Inibidores da Bomba de Prótons (IBP)</strong> endovenosos (ex: Omeprazol 40 mg IV 1x ou 2x/dia) ou antagonistas dos receptores $H_2$ da histamina (Ranitidina);",
+            "A introdução de <strong>dieta enteral precoce</strong> é o método não farmacológico mais potente para tamponar o ácido luminal e estimular a secreção endógena de muco protetor gástrico."
+          ]
+        ],
+        [
+          "3",
+          "Imunização Antitetânica no Queimado"
+        ],
+        [
+          "p",
+          "Toda queimadura que ultrapassa o 1º grau é considerada ferida potencialmente tetanogênica. A profilaxia antitetânica deve seguir o calendário oficial do Ministério da Saúde:"
+        ],
+        [
+          "t",
+          [
+            "Histórico Vacinal Prévia",
+            "Última Dose de Vacina",
+            "Conduta Imediata"
+          ],
+          [
+            [
+              "<strong>Esquema Completo (&ge; 3 doses)</strong>",
+              "Menos de 5 anos",
+              "Nenhuma intervenção necessária."
+            ],
+            [
+              "<strong>Esquema Completo (&ge; 3 doses)</strong>",
+              "Mais de 5 anos (ou &gt; 10 anos)",
+              "Aplicar 1 dose de reforço da vacina (dT ou dTpa). Não necessita de imunoglobulina."
+            ],
+            [
+              "<strong>Esquema Incompleto (&lt; 3 doses) ou Desconhecido</strong>",
+              "Qualquer prazo",
+              "<strong>Vacina antitetânica (dT) + Imunoglobulina Humana Antitetânica (IGHAT 250 UI IM)</strong> ou Soro Antitetânico (SAT 5.000 UI) em sítios anatômicos diferentes com seringas separadas."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "queimaduras-especiais-e-ctq",
+      0,
+      [
+        [
+          "2",
+          "11. Queimaduras Especiais: Queimadura Elétrica, Química e Critérios de Transferência para o CTQ"
+        ],
+        [
+          "3",
+          "Queimaduras Elétricas: O Grande Desafio Diagnóstico"
+        ],
+        [
+          "p",
+          "As queimaduras elétricas dividem-se em baixa voltagem (&lt; 1.000 volts, acidentes domésticos em tomadas e fiação residencial) e alta voltagem (&ge; 1.000 volts, acidentes industriais e contato com redes de distribuição aérea). A corrente elétrica converte-se em energia térmica ao atravessar os tecidos orgânicos de acordo com a resistência ôhmica específica de cada estrutura biológica:"
+        ],
+        [
+          "p",
+          "$$\text{Osso} &gt; \text{Gordura} &gt; \text{Pele Seca} &gt; \text{Músculo} &gt; \text{Vasos Sanguíneos} &gt; \text{Nervos}$$"
+        ],
+        [
+          "p",
+          "Como o tecido ósseo possui a maior resistência física à passagem dos elétrons, ele atua como uma resistência incandescente que dissipa calor extremo para os tecidos musculares profundos justapostos. Disso resulta o clássico <strong>\"Efeito Iceberg\"</strong>: a lesão cutânea externa (orifícios de entrada e de saída) é discretíssima, enquanto massas musculares subfaciais inteiras sofrem necrose coagulativa profunda por calor."
+        ],
+        [
+          "3",
+          "Complicações Maiores do Trauma Elétrico"
+        ],
+        [
+          "o",
+          [
+            "<strong>Rabdomiólise e Insuficiência Renal Aguda:</strong> A lise de miócitos esqueléticos libera quantidades maciças de mioglobina monomérica na circulação. Nos túbulos renais contorcidos distais e coletores, a mioglobina precipita-se sob pH ácido, formando cilindros que obstruem a luz tubular e geram necrose tubular aguda (NTA). O paciente apresenta urina cor de \"chá escuro\" ou \"coca-cola\". Tratamento: ressuscitação volêmica agressiva com meta urinária de <strong>1,0 a 1,5 mL/kg/h</strong> e alcalinização urinária com bicarbonato de sódio IV (para elevar o pH urinário &gt; 6,5 e impedir a precipitação de mioglobina);",
+            "<strong>Arritmias Cardíacas Graves e Parada Cardíaca:</strong> A corrente alternada (AC, usual em redes elétricas residenciais a 60 Hz) despolariza o miocárdio durante o período refratário relativo vulnerável (fase T do eletrocardiograma), deflagrando <strong>Fibrilação Ventricular (FV)</strong> imediata; a corrente contínua (DC, alta voltagem industrial ou raios atmosféricos) costuma causar assistolia direta. Todo paciente vítima de acidente elétrico de alta voltagem ou com perda de consciência necessita de <strong>monitorização eletrocardiográfica contínua nas primeiras 24 horas</strong>;",
+            "<strong>Síndrome Compartimental de Extremidades:</strong> Edema muscular volumoso dentro de fáscias inelásticas, exigindo fasciotomia descompressiva urgente;",
+            "<strong>Lesões Traumáticas Associadas por Ejeção:</strong> A contração tetânica violenta dos músculos flexores ou a queda de altura decorrente do choque elétrico ocasiona fraturas de ossos longos, luxação posterior bilateral de ombro e traumatismo cranioencefálico / raquimedular associados."
+          ]
+        ],
+        [
+          "3",
+          "Queimaduras Químicas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Conduta Imediata Universal:</strong> Remoção imediata de todas as vestimentas contaminadas e <strong>irrigação copiosa e contínua com água corrente potável à temperatura ambiente por no mínimo 30 a 60 minutos</strong> (e até 2 a 4 horas em queimaduras por álcalis fortes ou nos olhos);",
+            "<strong>NUNCA TENTAR NEUTRALIZAR O AGENTE QUÍMICO COM OUTRA SUBSTÂNCIA QUÍMICA</strong> (ex: aplicar ácido para neutralizar soda cáustica). A reação química ácido-base é extremamente exotérmica e produz calor adicional, queimando ainda mais profundamente os tecidos;",
+            "<strong>Exceção - Pós Químicos Secos (ex: cal virgem):</strong> Devem ser <em>escovados a seco</em> da pele antes de aplicar água, pois a cal reage com pequenas quantidades de água gerando hidróxido de cálcio e liberando grande quantidade de calor;",
+            "<strong>Exceção - Ácido Fluorídrico ($HF$):</strong> Altamente penetrante, quelata cálcio e magnésio provocando hipocalcemia e hipomagnesemia fatais associadas a dor excruciante profunda. Tratamento: irrigação inicial seguida de aplicação tópica e infiltração local de <strong>Gel de Gluconato de Cálcio a 2,5% a 10%</strong> para neutralizar o íon fluoreto."
+          ]
+        ],
+        [
+          "3",
+          "Critérios Formais de Internação e Transferência para o CTQ (Critérios da ABA e SBQ)"
+        ],
+        [
+          "p",
+          "Pacientes que preenchem qualquer um dos seguintes critérios devem ser estabilizados segundo os princípios do ATLS e prontamente transferidos para uma Unidade de Queimados especializada:"
+        ],
+        [
+          "t",
+          [
+            "Critério de Encaminhamento ao CTQ",
+            "Justificativa Fisiopatológica e Clínica"
+          ],
+          [
+            [
+              "<strong>Queimaduras de 2º grau &gt; 10% da SCQ</strong> em crianças (&lt; 10 anos) e idosos (&gt; 50 anos)",
+              "Extremos de idade exibem menor reserva fisiológica e alto risco de conversão e desidratação."
+            ],
+            [
+              "<strong>Queimaduras de 2º grau &gt; 20% da SCQ</strong> em adultos de qualquer idade",
+              "Gera resposta inflamatória sistêmica generalizada (choque do queimado)."
+            ],
+            [
+              "<strong>Qualquer queimadura de 3º grau &gt; 5% da SCQ</strong>",
+              "Necessidade mandatória de desbridamento cirúrgico tangencial e autoenxertia especializada."
+            ],
+            [
+              "<strong>Queimaduras em Áreas Especiais / Nobres</strong>: Face, mãos, pés, genitália, períneo e grandes articulações",
+              "Risco crítico de sequelas estéticas e contraturas funcionais graves com incapacidade permanente."
+            ],
+            [
+              "<strong>Lesão Inalatória por Fumaça</strong>",
+              "Necessidade de suporte ventilatório avançado, fibrobroncoscopia e manejo de SDRA."
+            ],
+            [
+              "<strong>Queimaduras Elétricas Graves</strong> (incluindo lesão por raio atmosférico)",
+              "Lesão profunda muscular oculta, risco de arritmias malignas e síndrome compartimental."
+            ],
+            [
+              "<strong>Queimaduras Químicas Extensas</strong>",
+              "Evolução lenta e progressiva com toxicidade sistêmica associada."
+            ],
+            [
+              "<strong>Queimadura Circunferencial</strong> de tórax ou membros",
+              "Risco de restrição respiratória e síndrome compartimental requerendo escarotomia."
+            ],
+            [
+              "<strong>Comorbidades Clínicas Graves Pré-existentes</strong> (DM, insuficiência renal, cardiopatias, DPOC)",
+              "Descompensação sistêmica induzida pelo estresse hipermetabólico da queimadura."
+            ],
+            [
+              "<strong>Trauma Mecânico Grave Concomitante</strong>",
+              "Se o trauma mecânico for a ameaça imediata à vida, estabilizar no centro de trauma antes da transferência."
+            ],
+            [
+              "<strong>Suspeita de Violência, Abuso Infantil ou Vulnerabilidade Social</strong>",
+              "Necessidade de internação protetiva e investigação multidisciplinar legal."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados",
+      0,
+      [
+        [
+          "2",
+          "12. Casos Clínicos Estruturados e Discussões Práticas Baseadas em Evidências"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Grande Queimado com Repercussão Sistêmica e Cálculo Volêmico"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 34 anos, pedreiro, hígido, peso estimado em 80 kg, dá entrada na Unidade de Emergência trazido pelo SAMU após explosão de botijão de gás e incêndio em canteiro de obras ocorrido há exatamente 2 horas."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Inicial:</strong> Vias aéreas pérvias, lúcido, queixando-se de dor intensa nas extremidades. PA: 100/60 mmHg, FC: 118 bpm, FR: 22 irpm, $SatO_2$: 96% em ar ambiente. Exame da pele revela queimaduras térmicas com bolhas rotas, base vermelha úmida e flictenas intactas em todo o tórax anterior e abdome anterior completo, em toda a face anterior de ambos os membros superiores e em toda a face anterior de ambos os membros inferiores. O períneo e a cabeça não apresentam lesões. Não há queimaduras em dorso."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Cálculo da Superfície Corporal Queimada (%SCQ):</strong>"
+        ],
+        [
+          "p",
+          "<strong>2. Prescrição da Ressuscitação Volêmica pelas Diretrizes Vigentes do ATLS 10ª/11ª Ed / ABA:</strong>"
+        ],
+        [
+          "p",
+          "<strong>3. Metas de Monitorização:</strong> Cateter vesical de demora instalado. Meta de débito urinário: $0,5\text{ mL/kg/h} \times 80\text{ kg} = mathbf{40\text{ mL/hora}}$. A taxa de infusão deve ser ajustada para manter a diurese entre 35 e 50 mL/h."
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Lesão Inalatória por Fumaça e Intoxicação Oculta"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 26 anos é resgatada pelo Corpo de Bombeiros de incêndio em boate. Ficou presa no banheiro por 25 minutos até o socorro. Na admissão, está sonolenta, confusa (Glasgow 12), com tosse seca, rouquidão notável e escarro enegrecido."
+        ],
+        [
+          "p",
+          "<strong>Sinais Vitais:</strong> PA: 85/50 mmHg, FC: 135 bpm, FR: 30 irpm com estridor inspiratório audível à cabeceira, $SatO_2$: 99% em máscara de $O_2$. Exame físico revela queimaduras de 2º grau na face e pescoço anterior (cerca de 5% da SCQ), vibrissas nasais completamente chamuscadas e fuligem em toda a orofaringe posterior."
+        ],
+        [
+          "p",
+          "<strong>Laboratório Imediato:</strong> Gasometria arterial com acidose metabólica grave: pH 7,18, $HCO_3^-$ 11 mEq/L, $PaO_2$ 110 mmHg, $PaCO_2$ 34 mmHg, <strong>Lactato Sérico: 12 mmol/L</strong>. Co-oximetria revela <strong>Carboxihemoglobina (COHb): 28%</strong>."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Prioridade Aérea Absoluta (A do ATLS):</strong> A paciente apresenta critérios clássicos inquestionáveis de lesão inalatória com estridor inspiratório e rouquidão (obstrução iminente de glote por edema de vias aéreas superiores). <strong>Indicação de Intubação Orotraqueal (IOT) Precoce Imediata</strong> com tubo de diâmetro amplo (&ge; 7,5 ou 8,0 mm) para permitir futura fibrobroncoscopia para toalete brônquica."
+        ],
+        [
+          "p",
+          "<strong>2. Armadilha da Oximetria de Pulso:</strong> O valor de $SatO_2$ de 99% era puramente espúrio, decorrente da incapacidade do sensor convencional de diferenciar oxiemoglobina de carboxihemoglobina. A dosagem direta de COHb confirmou intoxicação moderada a grave por CO (28%). A conduta imediata pós-IOT é oferta de $FiO_2$ a 100%."
+        ],
+        [
+          "p",
+          "<strong>3. Diagnóstico e Antídoto para Intoxicação por Cianeto:</strong> A paciente foi resgatada de ambiente fechado com materiais sintéticos e apresenta choque com <em>acidose lática fulminante desproporcional (lactato 12 mmol/L)</em>. Trata-se de intoxicação por cianeto concomitante. Conduta imediata: infusão intravenosa de <strong>Hidroxicobalamina 5,0 g IV em 15 minutos</strong>."
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Queimadura Circunferencial de Membro e Síndrome Compartimental"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 42 anos sofreu queimadura com gasolina em chamas enquanto consertava um gerador. Apresenta queimadura de 3º grau profunda que envolve circunferencialmente todo o antebraço e mão esquerdos (escara coriácea esbranquiçada e seca)."
+        ],
+        [
+          "p",
+          "<strong>Evolução:</strong> Durante a 6ª hora de ressuscitação volêmica vigorosa, o paciente (que estava sedoanalgesiado) desenvolve agitação psicomotora. Ao exame físico do membro superior esquerdo, nota-se edema tenso e lenhoso no antebraço, cianose dos leitos ungueais da mão esquerda com tempo de enchimento capilar de 5 segundos, dor lancinante e resistência à extensão passiva dos dedos da mão e <strong>desaparecimento dos pulsos radial e ulnar palpáveis</strong> (confirmado por Doppler estéreo sem fluxo audível)."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Diagnóstico Clínico:</strong> Síndrome compartimental aguda de antebraço secundária à escara inelástica circunferencial associada ao edema tecidual do terceiro espaço."
+        ],
+        [
+          "p",
+          "<strong>2. Conduta Cirúrgica de Emergência:</strong> <strong>Escarotomia Imediata à Beira do Leito</strong>."
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Queimadura Elétrica de Alta Voltagem e Rabdomiólise"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 29 anos, eletricista da concessionária de energia, sofre descarga elétrica de alta tensão (13.800 volts) ao tocar acidentalmente na fiação aérea com uma barra metálica, sendo projetado ao solo."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Consciente, Glasgow 15, colar cervical mantido. Queimadura puntiforme carbonizada na palma da mão direita (\"orifício de entrada\") e lesão profunda com necrose tecidual no calcâneo e planta do pé esquerdo (\"orifício de saída\"). A área de queimadura cutânea aparente soma menos de 3% da SCQ. Todavia, a panturrilha esquerda e a coxa direita apresentam-se intensamente dolorosas, empastadas e edemaciadas."
+        ],
+        [
+          "p",
+          "<strong>Evolução na Emergência:</strong> Após cateterização vesical, o débito urinário inicial é de 20 mL de <strong>urina de coloração marrom-avermelhada escura (\"borra de café / coca-cola\")</strong>. Fita reagente de urina acusa sangue positivo +++, porém a microscopia urinária de campo não visualiza hemácias íntegras. CPK sérica: 48.000 U/L."
+        ],
+        [
+          "4",
+          "Discussão Clínica Passo a Passo:"
+        ],
+        [
+          "p",
+          "<strong>1. Fisiopatologia:</strong> Trauma elétrico de alta tensão com <em>efeito iceberg</em>. A passagem da corrente pelo compartimento muscular profundo causou mionecrose maciça com <strong>rabdomiólise aguda</strong>. O dipstick é falsamente positivo para hemoglobina devido à presença de mioglobina monomérica urinária."
+        ],
+        [
+          "p",
+          "<strong>2. Manejo Volêmico Agressivo e Metas Específicas:</strong>"
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia",
+      0,
+      [
+        [
+          "2",
+          "13. Questões Comentadas de Residência Médica e Revalida/ENAMED"
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (Residência Médica / Cirurgia Geral / ENAMED):</strong><br>\n  Um homem de 30 anos, pesando 70 kg, é vítima de queimadura térmica por chamas em ambiente aberto. Ao exame físico na sala de trauma, observam-se queimaduras de 2º grau superficial e profundo acometendo todo o dorso (18%), todo o membro superior direito (9%) e a face anterior da coxa e perna esquerdas (9%). Além disso, apresenta eritema solar intenso sem bolhas no tórax anterior (9%). O acidente ocorreu há exatamente 1 hora. Considerando as recomendações atuais do ATLS (10ª e 11ª edições) / American Burn Association (ABA), qual deve ser a taxa de infusão de Ringer Lactato nas primeiras horas de atendimento?"
+        ],
+        [
+          "p",
+          "A) 756 mL/hora nas próximas 7 horas.<br>\n  B) 504 mL/hora nas próximas 8 horas.<br>\n  C) 360 mL/hora nas próximas 7 horas.<br>\n  D) 504 mL/hora nas próximas 7 horas.<br>\n  E) 252 mL/hora nas próximas 16 horas."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (SUS-SP / Revalida INEP):</strong><br>\n  Lactente de 10 meses de vida (peso: 10 kg) sofreu queimadura por derramamento acidental de água fervente sobre a cabeça e o membro superior esquerdo completo. As lesões apresentam bolhas rotas com leito vermelho vivo e úmido e dor intensa. Qual é a porcentagem da Superfície Corporal Queimada (%SCQ) estimada pela Tabela de Lund-Browder e qual o débito urinário alvo a ser perseguido na ressuscitação volêmica?"
+        ],
+        [
+          "p",
+          "A) SCQ 18%; Débito urinário alvo 0,5 mL/kg/h.<br>\n  B) SCQ 27%; Débito urinário alvo 1,0 mL/kg/h.<br>\n  C) SCQ 18%; Débito urinário alvo 1,5 a 2,0 mL/kg/h.<br>\n  D) SCQ 27%; Débito urinário alvo 0,5 mL/kg/h.<br>\n  E) SCQ 36%; Débito urinário alvo 1,0 mL/kg/h."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (USP-RP / ENARE):</strong><br>\n  Um paciente de 24 anos é vítima de queimadura circunferencial de espessura total (3º grau) em ambas as pernas e no tronco superior decorrente de chamas em ambiente fechado. Após 8 horas de hidratação vigorosa, encontra-se intubado e ventilando em modo controlado. O ventilador mecânico começa a disparar alarmes sucessivos de pressão de pico elevada nas vias aéreas (atingindo 48 cmH2O), acompanhado de queda do volume-corrente de 500 mL para 280 mL e queda da SatO2 para 88%. Ao mesmo tempo, os pulsos pediosos e tibiais posteriores tornam-se filiformes e imperceptíveis ao Doppler. Qual é a conduta cirúrgica emergencial indicada imediatamente na sala de emergência?"
+        ],
+        [
+          "p",
+          "A) Realizar traqueostomia de urgência e iniciar nitroprussiato de sódio endovenoso.<br>\n  B) Administrar bloqueador neuromuscular e aumentar a PEEP para 18 cmH2O.<br>\n  C) Realizar escarotomia torácica e escarotomia das extremidades inferiores à beira do leito.<br>\n  D) Encaminhar imediatamente ao centro cirúrgico para fasciotomia dos quatro compartimentos da perna sob anestesia geral.<br>\n  E) Reduzir a infusão de cristaloides pela metade e prescrever furosemida intravenosa."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 4 (UNICAMP / Cirurgia Geral):</strong><br>\n  Paciente de 38 anos é admitido após ser retirado de um incêndio em depósito de materiais plásticos e móveis estofados. Encontra-se intubado na admissão devido a queimaduras em face e escarro carbonáceo. Os sinais vitais mostram PA: 75/40 mmHg, FC: 140 bpm, extremidades frias e pálidas. O hemograma e eletrólitos revelam hematócrito 52%, sódio 138 mEq/L, potássio 5,2 mEq/L. A gasometria arterial revela pH 7,10, PaO2 125 mmHg (FiO2 100%), PaCO2 28 mmHg, HCO3- 9 mEq/L, e Lactato sérico de 14 mmol/L (VR &lt; 2,0). A carboxihemoglobina dosada é de 8%. Diante do quadro clínico-laboratorial, qual é a principal hipótese etiológica para a acidose lática desproporcional e qual a conduta específica indicada?"
+        ],
+        [
+          "p",
+          "A) Intoxicação grave por Monóxido de Carbono; indicar Oxigenoterapia Hiperbárica em câmara fechada imediatamente.<br>\n  B) Acidose hiperclorêmica por ressuscitação com solução salina a 0,9%; trocar a hidratação por Ringer Lactato.<br>\n  C) Choque cardiogênico por infarto agudo do miocárdio sem supra de ST; indicar angioplastia primária.<br>\n  D) Intoxicação por Cianeto de Hidrogênio; administrar Hidroxicobalamina intravenosa.<br>\n  E) Choque séptico precoce; iniciar imediatamente Meropenem associado a Vancomicina."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 5 (ENAMED / AMRIGS):</strong><br>\n  Sobre o uso de antimicrobianos tópicos e curativos no cuidado de pacientes queimados, assinale a afirmativa correta:"
+        ],
+        [
+          "p",
+          "A) A sulfadiazina de prata a 1% é o agente de escolha para queimaduras de pavilhão auditivo devido à sua capacidade ímpar de penetrar cartilagens avasculares.<br>\n  B) O acetato de mafenida tem como principal efeito colateral a alcalose metabólica hipoclorêmica secundária à indução da anidrase carbônica renal.<br>\n  C) A antibioticoterapia profilática sistêmica com cefalosporinas de 1ª geração está indicada nas primeiras 48 horas para prevenir a colonização da ferida por Staphylococcus aureus.<br>\n  D) A sulfadiazina de prata a 1% pode provocar leucopenia transitória autolimitada que não requer a suspensão obrigatória do medicamento se o paciente estiver clinicamente bem.<br>\n  E) As queimaduras de 1º grau devem ser tratadas rotineiramente com sulfadiazina de prata para prevenir infecção e acelerar a cicatrização dérmica."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Questão 6 (IAMSPE / Cirurgia Geral):</strong><br>\n  Em relação às queimaduras elétricas de alta voltagem (&gt; 1.000 volts), assinale a alternativa INCORRETA:"
+        ],
+        [
+          "p",
+          "A) O dano tecidual interno costuma ser desproporcionalmente maior do que as lesões cutâneas externas visíveis nos pontos de contato (\"efeito iceberg\").<br>\n  B) O débito urinário deve ser mantido estritamente em 0,5 mL/kg/hora para evitar a sobrecarga de volume e edema cerebral.<br>\n  C) Há indicação formal de monitorização eletrocardiográfica contínua durante as primeiras 24 horas após o acidente devido ao risco de arritmias cardíacas tardias.<br>\n  D) A presença de urina avermelhada/escura com teste de fita positivo para sangue e ausência de hemácias no sedimento sugere mioglobinúria secundária à rabdomiólise.<br>\n  E) A alcalinização da urina com bicarbonato de sódio endovenoso ajuda a prevenir a precipitação tubular renal da mioglobina."
+        ],
+        [
+          "4",
+          "Comentário Detalhado:"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Incorreta: B.</strong>"
+        ]
+      ]
+    ],
+    [
+      "pontos-chave-enamed-queimaduras",
+      0,
+      [
+        [
+          "2",
+          "14. Pontos de Alto Rendimento e Diretrizes Práticas de Memorização"
+        ],
+        [
+          "3",
+          "Os Dez Mandamentos do Trauma Térmico para o ENAMED e Residências"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. 1º Grau não entra na conta da SCQ:</strong> Queimaduras epidérmicas (eritema sem bolhas, como o eritema solar) são excluídas rigorosamente do cálculo da %SCQ para ressuscitação volêmica.",
+            "<strong>2. ATLS 10ª/11ª Edição vs Parkland:</strong> O ATLS preconiza <strong>$2\text{ mL} \times \text{kg} \times %\text{SCQ}$ de Ringer Lactato</strong> para queimaduras térmicas e químicas em adultos, e <strong>$3\text{ mL} \times \text{kg} \times %\text{SCQ}$</strong> em crianças &lt; 14 anos (&lt; 30 kg) e queimaduras elétricas. A fórmula de Parkland clássica utiliza $4\text{ mL} \times \text{kg} \times %\text{SCQ}$.",
+            "<strong>3. Metade nas primeiras 8 horas da QUEIMADURA:</strong> A primeira metade do volume calculado deve correr nas primeiras 8 horas a partir da hora exata do acidente térmico, e os 50% restantes nas 16 horas seguintes.",
+            "<strong>4. Débito Urinário é o Guia Supremo:</strong> A fórmula apenas estima o início. Ajusta-se o volume para manter a diurese em <strong>$0,5\text{ mL/kg/h}$ no adulto</strong> e <strong>$1,0\text{ mL/kg/h}$ na criança</strong> ($1,0\text{ a }1,5\text{ mL/kg/h}$ na queimadura elétrica com mioglobinúria).",
+            "<strong>5. Intubação Precoce na Lesão Inalatória:</strong> Não hesite: estridor inspiratório, rouquidão, queimadura profunda de face/pescoço, fuligem na orofaringe e confinamento são critérios mandatórios de IOT imediata antes do edema oclusivo de glote.",
+            "<strong>6. Oximetria Mente no Monóxido de Carbono:</strong> A oximetria de pulso é normal mesmo com níveis letais de COHb. Diagnóstico exige gasometria com co-oximetria. Tratamento: $O_2$ a 100% não reinalante (OHB se $\text{COHb} &gt; 25%$ ou gestante $\text{COHb} &gt; 15%$).",
+            "<strong>7. Cianeto mata por Acidose Lática:</strong> Incêndio em ambiente fechado com materiais plásticos/estofados + choque com <strong>lactato sérico elevadíssimo (&gt; 10 mmol/L)</strong> = intoxicação por cianeto. Antídoto: <strong>Hidroxicobalamina 5,0 g IV</strong>.",
+            "<strong>8. Escarotomia é Urgência na Sala de Trauma:</strong> Queimaduras circunferenciais de tórax com hipóxia / alta pressão ventilatória ou membros com dor ao estiramento e perda de pulso exigem incisão longitudinal imediata da escara. Não requer anestesia na área de 3º grau.",
+            "<strong>9. Antimicrobianos Tópicos:</strong> Sulfadiazina de prata a 1% causa leucopenia benigna transitória e é o padrão geral; Acetato de Mafenida penetra escaras e cartilagens (orelha), mas causa <strong>acidose metabólica por inibir anidrase carbônica</strong>. Antibiótico profilático sistêmico é PROIBIDO!",
+            "<strong>10. Úlcera de Curling e Hipermetabolismo:</strong> Prevenção de úlcera de estresse com IBP e nutrição enteral precoce hiperproteica (1,5 a 2,0 g/kg/dia) nas primeiras 6 a 12 horas. Vacina e imunoglobulina antitetânica conforme calendário para feridas tetanogênicas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Surgeons — Advanced Trauma Life Support (ATLS), 10th and 11th Editions: Thermal Injuries</a>",
+            "<a href=\"https://ameriburn.org/education/burn-care-resources/\" target=\"_blank\" rel=\"noopener noreferrer\">American Burn Association (ABA) — Practice Guidelines for Burn Care and Fluid Resuscitation</a>",
+            "<a href=\"http://sbqueimaduras.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Queimaduras (SBQ) — Diretrizes Nacionais de Atendimento Inicial ao Paciente Queimado</a>",
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/q/queimaduras\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Cartilha para Tratamento de Emergência das Queimaduras</a>",
+            "<a href=\"https://www.euroburn.org/\" target=\"_blank\" rel=\"noopener noreferrer\">European Burn Association (EBA) — European Practice Guidelines for Burn Care</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
