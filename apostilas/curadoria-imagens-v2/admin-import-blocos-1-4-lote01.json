@@ -1,0 +1,876 @@
+[
+  {
+    "apostila_path": "/apostilas/sindromes-coronarianas-agudas/",
+    "apostila_title": "sindromes-coronarianas-agudas",
+    "candidate_key": "12_Lead_EKG_ST_Elevation_tracing_only.jpg",
+    "target_section": "avaliacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/12%20Lead%20EKG%20ST%20Elevation%20tracing%20only.jpg",
+      "alt": "ECG de 12 derivações com supradesnivelamento do segmento ST (IAMCSST)",
+      "title": "ECG de 12 derivações com supradesnivelamento do segmento ST (IAMCSST)",
+      "caption": "ECG de 12 derivações com supradesnivelamento do segmento ST (IAMCSST)",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A12%20Lead%20EKG%20ST%20Elevation%20tracing%20only.jpg",
+    "source_name": "Displaced",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/sindromes-coronarianas-agudas/",
+    "apostila_title": "sindromes-coronarianas-agudas",
+    "candidate_key": "WellensPain.JPG",
+    "target_section": "avaliacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/WellensPain.JPG",
+      "alt": "Padrão eletrocardiográfico de Síndrome de Wellens (onda T invertida/bifásica em V2-V3)",
+      "title": "Padrão eletrocardiográfico de Síndrome de Wellens (onda T invertida/bifásica em V2-V3)",
+      "caption": "Padrão eletrocardiográfico de Síndrome de Wellens (onda T invertida/bifásica em V2-V3)",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWellensPain.JPG",
+    "source_name": "James Heilman, MD",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/sindromes-coronarianas-agudas/",
+    "apostila_title": "sindromes-coronarianas-agudas",
+    "candidate_key": "Wellens__Warning.gif",
+    "target_section": "conduta",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wellens'%20Warning.gif",
+      "alt": "Cineangiocoronariografia demonstrando lesão grave em artéria descendente anterior",
+      "title": "Cineangiocoronariografia demonstrando lesão grave em artéria descendente anterior",
+      "caption": "Cineangiocoronariografia demonstrando lesão grave em artéria descendente anterior",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWellens'%20Warning.gif",
+    "source_name": "Jer5150",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/avaliacao-pre-operatoria-risco-cirurgico/",
+    "apostila_title": "avaliacao-pre-operatoria-risco-cirurgico",
+    "candidate_key": "American_X-ray_journal__1897___14756565052_.jpg",
+    "target_section": "exames",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/American%20X-ray%20journal%20(1897)%20(14756565052).jpg",
+      "alt": "Radiografia de tórax PA em avaliação pré-operatória",
+      "title": "Radiografia de tórax PA em avaliação pré-operatória",
+      "caption": "Radiografia de tórax PA em avaliação pré-operatória",
+      "didactic_note": "No restrictions"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AAmerican%20X-ray%20journal%20(1897)%20(14756565052).jpg",
+    "source_name": "Internet Archive Book Images",
+    "source_license": "No restrictions",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/avaliacao-pre-operatoria-risco-cirurgico/",
+    "apostila_title": "avaliacao-pre-operatoria-risco-cirurgico",
+    "candidate_key": "12_lead_generated_sinus_rhythm.JPG",
+    "target_section": "exames",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/12%20lead%20generated%20sinus%20rhythm.JPG",
+      "alt": "Eletrocardiograma basal de 12 derivações pré-operatório",
+      "title": "Eletrocardiograma basal de 12 derivações pré-operatório",
+      "caption": "Eletrocardiograma basal de 12 derivações pré-operatório",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A12%20lead%20generated%20sinus%20rhythm.JPG",
+    "source_name": "Glenlarson",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/assistencia-recem-nascido-sala-parto/",
+    "apostila_title": "assistencia-recem-nascido-sala-parto",
+    "candidate_key": "Umbical_cord_clamp_2005.jpg",
+    "target_section": "nascimento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Umbical%20cord%20clamp%202005.jpg",
+      "alt": "Clampeamento do cordão umbilical e identificação dos vasos",
+      "title": "Clampeamento do cordão umbilical e identificação dos vasos",
+      "caption": "Clampeamento do cordão umbilical e identificação dos vasos",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AUmbical%20cord%20clamp%202005.jpg",
+    "source_name": "Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/assistencia-recem-nascido-sala-parto/",
+    "apostila_title": "assistencia-recem-nascido-sala-parto",
+    "candidate_key": "Skin_to_skin_breastfeeding.jpg",
+    "target_section": "nascimento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Skin%20to%20skin%20breastfeeding.jpg",
+      "alt": "Contato pele a pele precoce mãe-bebê na primeira hora de vida",
+      "title": "Contato pele a pele precoce mãe-bebê na primeira hora de vida",
+      "caption": "Contato pele a pele precoce mãe-bebê na primeira hora de vida",
+      "didactic_note": "CC BY 2.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASkin%20to%20skin%20breastfeeding.jpg",
+    "source_name": "David Goodman",
+    "source_license": "CC BY 2.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/pre-natal-baixo-risco/",
+    "apostila_title": "pre-natal-baixo-risco",
+    "candidate_key": "CRL_Crown_rump_length_12_weeks_ecografia_Dr._Wolfgang_Moroder.jpg",
+    "target_section": "rotina",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/CRL%20Crown%20rump%20length%2012%20weeks%20ecografia%20Dr.%20Wolfgang%20Moroder.jpg",
+      "alt": "Ultrassonografia obstétrica com aferição do CCN (comprimento cabeça-nádega)",
+      "title": "Ultrassonografia obstétrica com aferição do CCN (comprimento cabeça-nádega)",
+      "caption": "Ultrassonografia obstétrica com aferição do CCN (comprimento cabeça-nádega)",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ACRL%20Crown%20rump%20length%2012%20weeks%20ecografia%20Dr.%20Wolfgang%20Moroder.jpg",
+    "source_name": "This Photo was taken by Wolfgang Moroder.  \nFeel free to use my photos, but plea",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/pre-natal-baixo-risco/",
+    "apostila_title": "pre-natal-baixo-risco",
+    "candidate_key": "Aphro_weeks.jpg",
+    "target_section": "consultas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphro%20weeks.jpg",
+      "alt": "Medição da altura uterina com fita métrica no pré-natal",
+      "title": "Medição da altura uterina com fita métrica no pré-natal",
+      "caption": "Medição da altura uterina com fita métrica no pré-natal",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AAphro%20weeks.jpg",
+    "source_name": "Ulysse2121",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/pre-natal-baixo-risco/",
+    "apostila_title": "pre-natal-baixo-risco",
+    "candidate_key": "Doptone.jpg",
+    "target_section": "consultas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Doptone.jpg",
+      "alt": "Ausculta dos batimentos cardiofetais (BCF) com sonar Doppler",
+      "title": "Ausculta dos batimentos cardiofetais (BCF) com sonar Doppler",
+      "caption": "Ausculta dos batimentos cardiofetais (BCF) com sonar Doppler",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ADoptone.jpg",
+    "source_name": "Harmid",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/insuficiencia-cardiaca/",
+    "apostila_title": "insuficiencia-cardiaca",
+    "candidate_key": "Journal_of_roentgenology__1918___14571705347__revised.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Journal%20of%20roentgenology%20(1918)%20(14571705347)%20revised.jpg",
+      "alt": "Radiografia de tórax com cardiomegalia (índice cardiotorácico > 0,5) e congestão",
+      "title": "Radiografia de tórax com cardiomegalia (índice cardiotorácico > 0,5) e congestão",
+      "caption": "Radiografia de tórax com cardiomegalia (índice cardiotorácico > 0,5) e congestão",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AJournal%20of%20roentgenology%20(1918)%20(14571705347)%20revised.jpg",
+    "source_name": "Western Roentgen Society",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/insuficiencia-cardiaca/",
+    "apostila_title": "insuficiencia-cardiaca",
+    "candidate_key": "Kerley_b_lines.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kerley%20b%20lines.jpg",
+      "alt": "Linhas B de Kerley em radiografia de tórax evidenciando edema intersticial",
+      "title": "Linhas B de Kerley em radiografia de tórax evidenciando edema intersticial",
+      "caption": "Linhas B de Kerley em radiografia de tórax evidenciando edema intersticial",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AKerley%20b%20lines.jpg",
+    "source_name": "Braegel",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/insuficiencia-cardiaca/",
+    "apostila_title": "insuficiencia-cardiaca",
+    "candidate_key": "2D_Echocardiogram_showing_Mitral_Regurgitation_in_PLAX_view_-_Navi_Mumbai.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2D%20Echocardiogram%20showing%20Mitral%20Regurgitation%20in%20PLAX%20view%20-%20Navi%20Mumbai.jpg",
+      "alt": "Ecocardiograma transtorácico no eixo paraesternal longo",
+      "title": "Ecocardiograma transtorácico no eixo paraesternal longo",
+      "caption": "Ecocardiograma transtorácico no eixo paraesternal longo",
+      "didactic_note": "CC BY 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A2D%20Echocardiogram%20showing%20Mitral%20Regurgitation%20in%20PLAX%20view%20-%20Navi%20Mumbai.jpg",
+    "source_name": "Goleisureintl",
+    "source_license": "CC BY 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/diagnostico-datacao-gestacao/",
+    "apostila_title": "diagnostico-datacao-gestacao",
+    "candidate_key": "4_mm_gestational_sac.png",
+    "target_section": "ultrassom",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/4%20mm%20gestational%20sac.png",
+      "alt": "Ultrassom transvaginal demonstrando saco gestacional inicial e vesícula vitelínica",
+      "title": "Ultrassom transvaginal demonstrando saco gestacional inicial e vesícula vitelínica",
+      "caption": "Ultrassom transvaginal demonstrando saco gestacional inicial e vesícula vitelínica",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A4%20mm%20gestational%20sac.png",
+    "source_name": "Luis Goncalves",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+    "apostila_title": "hipertensao-arterial-sistemica",
+    "candidate_key": "Measurement_of_blood_pressue_in_arm.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Measurement%20of%20blood%20pressue%20in%20arm.jpg",
+      "alt": "Aferição correta da pressão arterial com manguito e esfigmomanômetro",
+      "title": "Aferição correta da pressão arterial com manguito e esfigmomanômetro",
+      "caption": "Aferição correta da pressão arterial com manguito e esfigmomanômetro",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMeasurement%20of%20blood%20pressue%20in%20arm.jpg",
+    "source_name": "Pöllö",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/hipertensao-arterial-sistemica/",
+    "apostila_title": "hipertensao-arterial-sistemica",
+    "candidate_key": "E307__CardioNetworks_ECGpedia_.jpg",
+    "target_section": "lesao-orgao-alvo",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/E307%20(CardioNetworks%20ECGpedia).jpg",
+      "alt": "ECG com critérios de hipertrofia ventricular esquerda (sobrecarga de VE)",
+      "title": "ECG com critérios de hipertrofia ventricular esquerda (sobrecarga de VE)",
+      "caption": "ECG com critérios de hipertrofia ventricular esquerda (sobrecarga de VE)",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AE307%20(CardioNetworks%20ECGpedia).jpg",
+    "source_name": "Michael Rosengarten BEng, MD.McGill",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/resposta-metabolica-ao-trauma/",
+    "apostila_title": "resposta-metabolica-ao-trauma",
+    "candidate_key": "Self_Monitoring_of_Blood_Glucose.png",
+    "target_section": "metabolismo",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Self%20Monitoring%20of%20Blood%20Glucose.png",
+      "alt": "Controle glicêmico estrito e hiperglicemia de estresse perioperatória",
+      "title": "Controle glicêmico estrito e hiperglicemia de estresse perioperatória",
+      "caption": "Controle glicêmico estrito e hiperglicemia de estresse perioperatória",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASelf%20Monitoring%20of%20Blood%20Glucose.png",
+    "source_name": "Omstaal",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/prematuridade-baixo-peso-nascer/",
+    "apostila_title": "prematuridade-baixo-peso-nascer",
+    "candidate_key": "Human_Infant_in_Incubator.jpg",
+    "target_section": "cuidados",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Human%20Infant%20in%20Incubator.jpg",
+      "alt": "Recém-nascido prematuro em incubadora na UTI Neonatal com controle térmico",
+      "title": "Recém-nascido prematuro em incubadora na UTI Neonatal com controle térmico",
+      "caption": "Recém-nascido prematuro em incubadora na UTI Neonatal com controle térmico",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AHuman%20Infant%20in%20Incubator.jpg",
+    "source_name": "Zerbey at English Wikipedia",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/prematuridade-baixo-peso-nascer/",
+    "apostila_title": "prematuridade-baixo-peso-nascer",
+    "candidate_key": "Postpartum_baby2.jpg",
+    "target_section": "cuidados",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Postpartum%20baby2.jpg",
+      "alt": "Método Canguru em recém-nascido pré-termo / baixo peso",
+      "title": "Método Canguru em recém-nascido pré-termo / baixo peso",
+      "caption": "Método Canguru em recém-nascido pré-termo / baixo peso",
+      "didactic_note": "CC BY-SA 2.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APostpartum%20baby2.jpg",
+    "source_name": "Tom Adriaenssen",
+    "source_license": "CC BY-SA 2.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/exames-rastreamentos-pre-natal/",
+    "apostila_title": "exames-rastreamentos-pre-natal",
+    "candidate_key": "Nuchal_translucency_Dr._Wolfgang_Moroder.jpg",
+    "target_section": "primeiro-trimestre",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nuchal%20translucency%20Dr.%20Wolfgang%20Moroder.jpg",
+      "alt": "Ultrassonografia com medição da translucência nucal (11 a 13 semanas e 6 dias)",
+      "title": "Ultrassonografia com medição da translucência nucal (11 a 13 semanas e 6 dias)",
+      "caption": "Ultrassonografia com medição da translucência nucal (11 a 13 semanas e 6 dias)",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ANuchal%20translucency%20Dr.%20Wolfgang%20Moroder.jpg",
+    "source_name": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but ple",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/exames-rastreamentos-pre-natal/",
+    "apostila_title": "exames-rastreamentos-pre-natal",
+    "candidate_key": "Streptococcus_agalactiae_on_blood_agar.JPG",
+    "target_section": "terceiro-trimestre",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Streptococcus%20agalactiae%20on%20blood%20agar.JPG",
+      "alt": "Cultura para estreptococo do grupo B (SGB / GBS) vaginal e retal (35-37 semanas)",
+      "title": "Cultura para estreptococo do grupo B (SGB / GBS) vaginal e retal (35-37 semanas)",
+      "caption": "Cultura para estreptococo do grupo B (SGB / GBS) vaginal e retal (35-37 semanas)",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AStreptococcus%20agalactiae%20on%20blood%20agar.JPG",
+    "source_name": "43trevenque",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/reposicao-volemica-disturbios-hidroeletroliticos/",
+    "apostila_title": "reposicao-volemica-disturbios-hidroeletroliticos",
+    "candidate_key": "Combined_hyperkalemia_and_hypocalcemia.png",
+    "target_section": "potassio",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Combined%20hyperkalemia%20and%20hypocalcemia.png",
+      "alt": "Eletrocardiograma de hipercalemia com ondas T apiculadas e simétricas",
+      "title": "Eletrocardiograma de hipercalemia com ondas T apiculadas e simétricas",
+      "caption": "Eletrocardiograma de hipercalemia com ondas T apiculadas e simétricas",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ACombined%20hyperkalemia%20and%20hypocalcemia.png",
+    "source_name": "Jer5150",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/reposicao-volemica-disturbios-hidroeletroliticos/",
+    "apostila_title": "reposicao-volemica-disturbios-hidroeletroliticos",
+    "candidate_key": "LowKECG.JPG",
+    "target_section": "potassio",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/LowKECG.JPG",
+      "alt": "ECG de hipocalemia evidenciando onda U proeminente e infradesnivelamento de ST",
+      "title": "ECG de hipocalemia evidenciando onda U proeminente e infradesnivelamento de ST",
+      "caption": "ECG de hipocalemia evidenciando onda U proeminente e infradesnivelamento de ST",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ALowKECG.JPG",
+    "source_name": "James Heilman, MD",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/ictericia-neonatal/",
+    "apostila_title": "ictericia-neonatal",
+    "candidate_key": "Jaundice_phototherapy.jpg",
+    "target_section": "tratamento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaundice%20phototherapy.jpg",
+      "alt": "Fototerapia intensiva de LED para tratamento de hiperbilirrubinemia neonatal",
+      "title": "Fototerapia intensiva de LED para tratamento de hiperbilirrubinemia neonatal",
+      "caption": "Fototerapia intensiva de LED para tratamento de hiperbilirrubinemia neonatal",
+      "didactic_note": "CC BY 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AJaundice%20phototherapy.jpg",
+    "source_name": "Martybugs at en.wikipedia",
+    "source_license": "CC BY 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/vacinacao-suplementacao-gestacao/",
+    "apostila_title": "vacinacao-suplementacao-gestacao",
+    "candidate_key": "Stomach_-_Iron_Crystals_In_Gastric_Lamina_Propria_And_Epithelium__49270585877_.j",
+    "target_section": "suplementos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stomach%20-%20Iron%20Crystals%20In%20Gastric%20Lamina%20Propria%20And%20Epithelium%20(49270585877).jpg",
+      "alt": "Suplementação de sulfato ferroso e ácido fólico no pré-natal",
+      "title": "Suplementação de sulfato ferroso e ácido fólico no pré-natal",
+      "caption": "Suplementação de sulfato ferroso e ácido fólico no pré-natal",
+      "didactic_note": "CC BY-SA 2.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AStomach%20-%20Iron%20Crystals%20In%20Gastric%20Lamina%20Propria%20And%20Epithelium%20(49270585877).jpg",
+    "source_name": "Atlas of Medical Foreign Bodies",
+    "source_license": "CC BY-SA 2.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/choque-hemorragico/",
+    "apostila_title": "choque-hemorragico",
+    "candidate_key": "Pacific_Friendship_2025-_Vietnamese__Oregon_Army__Air_National_Guardsmen_exchang",
+    "target_section": "controle-sangramento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pacific%20Friendship%202025-%20Vietnamese%2C%20Oregon%20Army%2C%20Air%20National%20Guardsmen%20exchange%20lifesaving%20practices%20to%20enhance%20disaster%20response%20capabilities%20(9315178).jpg",
+      "alt": "Aplicação de torniquete tático para controle imediato de sangramento exsanguinante",
+      "title": "Aplicação de torniquete tático para controle imediato de sangramento exsanguinante",
+      "caption": "Aplicação de torniquete tático para controle imediato de sangramento exsanguinante",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APacific%20Friendship%202025-%20Vietnamese%2C%20Oregon%20Army%2C%20Air%20National%20Guardsmen%20exchange%20lifesaving%20practices%20to%20enhance%20disaster%20response%20capabilities%20(9315178).jpg",
+    "source_name": "U.S. Army photo by Sgt. Jacob Stansbury",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/sepse-neonatal/",
+    "apostila_title": "sepse-neonatal",
+    "candidate_key": "Pediatrics.__1910___14581028170_.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pediatrics.%20(1910)%20(14581028170).jpg",
+      "alt": "Punção lombar neonatal para coleta de líquor em suspeita de meningite associada",
+      "title": "Punção lombar neonatal para coleta de líquor em suspeita de meningite associada",
+      "caption": "Punção lombar neonatal para coleta de líquor em suspeita de meningite associada",
+      "didactic_note": "No restrictions"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APediatrics.%20(1910)%20(14581028170).jpg",
+    "source_name": "Internet Archive Book Images",
+    "source_license": "No restrictions",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/sindromes-hipertensivas-da-gestacao/",
+    "apostila_title": "sindromes-hipertensivas-da-gestacao",
+    "candidate_key": "Comp.Urine.Test.Strip.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Comp.Urine.Test.Strip.jpg",
+      "alt": "Fita reagente para detecção de proteinúria no pré-natal",
+      "title": "Fita reagente para detecção de proteinúria no pré-natal",
+      "caption": "Fita reagente para detecção de proteinúria no pré-natal",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AComp.Urine.Test.Strip.jpg",
+    "source_name": "J3D3",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/endocardite-infecciosa/",
+    "apostila_title": "endocardite-infecciosa",
+    "candidate_key": "Janeway_lesion.JPG",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Janeway%20lesion.JPG",
+      "alt": "Lesões de Janeway na palma da mão (êmbolos sépticos indolores na endocardite)",
+      "title": "Lesões de Janeway na palma da mão (êmbolos sépticos indolores na endocardite)",
+      "caption": "Lesões de Janeway na palma da mão (êmbolos sépticos indolores na endocardite)",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AJaneway%20lesion.JPG",
+    "source_name": "Warfieldian",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/pericardite-e-tamponamento-cardiaco/",
+    "apostila_title": "pericardite-e-tamponamento-cardiaco",
+    "candidate_key": "PericarditisMyocarditis.jpg",
+    "target_section": "pericardite",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/PericarditisMyocarditis.jpg",
+      "alt": "ECG com supradesnivelamento difuso do segmento ST com concavidade para cima e infradesnível de PR",
+      "title": "ECG com supradesnivelamento difuso do segmento ST com concavidade para cima e infradesnível de PR",
+      "caption": "ECG com supradesnivelamento difuso do segmento ST com concavidade para cima e infradesnível de PR",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APericarditisMyocarditis.jpg",
+    "source_name": "James Heilman, MD",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/infeccoes-gestacao-transmissao-vertical/",
+    "apostila_title": "infeccoes-gestacao-transmissao-vertical",
+    "candidate_key": "Hutchinson_teeth_congenital_syphilis_PHIL_2385.rsh.jpg",
+    "target_section": "sifilis",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hutchinson%20teeth%20congenital%20syphilis%20PHIL%202385.rsh.jpg",
+      "alt": "Estigmas de sífilis congênita: dentes de Hutchinson com entalhe central",
+      "title": "Estigmas de sífilis congênita: dentes de Hutchinson com entalhe central",
+      "caption": "Estigmas de sífilis congênita: dentes de Hutchinson com entalhe central",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AHutchinson%20teeth%20congenital%20syphilis%20PHIL%202385.rsh.jpg",
+    "source_name": "CDC/Susan Lindsley",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/infeccoes-gestacao-transmissao-vertical/",
+    "apostila_title": "infeccoes-gestacao-transmissao-vertical",
+    "candidate_key": "PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png",
+    "target_section": "toxoplasmose",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/PMID20029144%2001%20congenital%20toxoplasmosis%20-%20chorioretinal%20scar.png",
+      "alt": "Retinocoroidite macular cicatrizada por toxoplasmose congênita (tríade de Sabin)",
+      "title": "Retinocoroidite macular cicatrizada por toxoplasmose congênita (tríade de Sabin)",
+      "caption": "Retinocoroidite macular cicatrizada por toxoplasmose congênita (tríade de Sabin)",
+      "didactic_note": "CC BY 2.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APMID20029144%2001%20congenital%20toxoplasmosis%20-%20chorioretinal%20scar.png",
+    "source_name": "S Sudharshan, Sudha K Ganesh, Jyotirmay Biswas",
+    "source_license": "CC BY 2.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/tromboembolismo-venoso-e-embolia-pulmonar/",
+    "apostila_title": "tromboembolismo-venoso-e-embolia-pulmonar",
+    "candidate_key": "USG_scan_of_thrombus_in_the_left_common_femoral_vein.png",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/USG%20scan%20of%20thrombus%20in%20the%20left%20common%20femoral%20vein.png",
+      "alt": "Ultrassonografia com Doppler venoso de MMII com perda de compressibilidade vascular",
+      "title": "Ultrassonografia com Doppler venoso de MMII com perda de compressibilidade vascular",
+      "caption": "Ultrassonografia com Doppler venoso de MMII com perda de compressibilidade vascular",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AUSG%20scan%20of%20thrombus%20in%20the%20left%20common%20femoral%20vein.png",
+    "source_name": "Cerevisae",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/choque-circulatorio/",
+    "apostila_title": "choque-circulatorio",
+    "candidate_key": "Percutaneous_central_venous_catheters.png",
+    "target_section": "monitorizacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Percutaneous%20central%20venous%20catheters.png",
+      "alt": "Cateter venoso central em veia jugular interna para monitorização hemodinâmica",
+      "title": "Cateter venoso central em veia jugular interna para monitorização hemodinâmica",
+      "caption": "Cateter venoso central em veia jugular interna para monitorização hemodinâmica",
+      "didactic_note": "CC BY 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APercutaneous%20central%20venous%20catheters.png",
+    "source_name": "Glynda Rees Doyle and Jodie Anita McCutcheon, from Clinical Procedures for Safer",
+    "source_license": "CC BY 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/principios-de-tecnica-cirurgica/",
+    "apostila_title": "principios-de-tecnica-cirurgica",
+    "candidate_key": "Minor_Surgery_First-Aid_Tools_Kit.jpg",
+    "target_section": "instrumental",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Minor%20Surgery%20First-Aid%20Tools%20Kit.jpg",
+      "alt": "Instrumental cirúrgico básico de hemostasia, preensão e corte (Pinça Kelly, Mayo e Anatômica)",
+      "title": "Instrumental cirúrgico básico de hemostasia, preensão e corte (Pinça Kelly, Mayo e Anatômica)",
+      "caption": "Instrumental cirúrgico básico de hemostasia, preensão e corte (Pinça Kelly, Mayo e Anatômica)",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMinor%20Surgery%20First-Aid%20Tools%20Kit.jpg",
+    "source_name": "Ali Hassan",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/dpoc/",
+    "apostila_title": "dpoc",
+    "candidate_key": "Physical_diagnosis__1912___14770064641_.jpg",
+    "target_section": "clinica",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Physical%20diagnosis%20(1912)%20(14770064641).jpg",
+      "alt": "Tórax em tonel / enfisematoso com aumento do diâmetro anteroposterior na DPOC",
+      "title": "Tórax em tonel / enfisematoso com aumento do diâmetro anteroposterior na DPOC",
+      "caption": "Tórax em tonel / enfisematoso com aumento do diâmetro anteroposterior na DPOC",
+      "didactic_note": "No restrictions"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APhysical%20diagnosis%20(1912)%20(14770064641).jpg",
+    "source_name": "Internet Archive Book Images",
+    "source_license": "No restrictions",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/pneumonias-adquiridas-na-comunidade/",
+    "apostila_title": "pneumonias-adquiridas-na-comunidade",
+    "candidate_key": "Radiography__x-ray_therapeutics_and_radium_therapy__1915___14570946920_.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Radiography%2C%20x-ray%20therapeutics%20and%20radium%20therapy%20(1915)%20(14570946920).jpg",
+      "alt": "Radiografia de tórax demonstrando consolidação lobar típica com broncograma aéreo",
+      "title": "Radiografia de tórax demonstrando consolidação lobar típica com broncograma aéreo",
+      "caption": "Radiografia de tórax demonstrando consolidação lobar típica com broncograma aéreo",
+      "didactic_note": "No restrictions"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ARadiography%2C%20x-ray%20therapeutics%20and%20radium%20therapy%20(1915)%20(14570946920).jpg",
+    "source_name": "Internet Archive Book Images",
+    "source_license": "No restrictions",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/diarreia-aguda/",
+    "apostila_title": "diarreia-aguda",
+    "candidate_key": "Water_and_soap_one_of_the_used_in_Rwanda_in_prevention_of_spreading_og_covid-19.",
+    "target_section": "prevencao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Water%20and%20soap%20one%20of%20the%20used%20in%20Rwanda%20in%20prevention%20of%20spreading%20og%20covid-19.jpg",
+      "alt": "Higienização correta das mãos com água e sabão para prevenção de diarreia infecciosa",
+      "title": "Higienização correta das mãos com água e sabão para prevenção de diarreia infecciosa",
+      "caption": "Higienização correta das mãos com água e sabão para prevenção de diarreia infecciosa",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWater%20and%20soap%20one%20of%20the%20used%20in%20Rwanda%20in%20prevention%20of%20spreading%20og%20covid-19.jpg",
+    "source_name": "Davyimage",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/tuberculose-pulmonar/",
+    "apostila_title": "tuberculose-pulmonar",
+    "candidate_key": "Mycobacterium_tuberculosis_Ziehl-Neelsen_stain_640.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mycobacterium%20tuberculosis%20Ziehl-Neelsen%20stain%20640.jpg",
+      "alt": "Baciloscopia de escarro corada pelo método de Ziehl-Neelsen com BAAR vermelhos",
+      "title": "Baciloscopia de escarro corada pelo método de Ziehl-Neelsen com BAAR vermelhos",
+      "caption": "Baciloscopia de escarro corada pelo método de Ziehl-Neelsen com BAAR vermelhos",
+      "didactic_note": "Public domain"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMycobacterium%20tuberculosis%20Ziehl-Neelsen%20stain%20640.jpg",
+    "source_name": "Wikimedia Commons",
+    "source_license": "Public domain",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/partograma/",
+    "apostila_title": "partograma",
+    "candidate_key": "A_textbook_of_obstetrics__1899___14755271466_.jpg",
+    "target_section": "dilatacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20textbook%20of%20obstetrics%20(1899)%20(14755271466).jpg",
+      "alt": "Toque vaginal obstétrico avaliando dilatação do colo em centímetros e plano de De Lee",
+      "title": "Toque vaginal obstétrico avaliando dilatação do colo em centímetros e plano de De Lee",
+      "caption": "Toque vaginal obstétrico avaliando dilatação do colo em centímetros e plano de De Lee",
+      "didactic_note": "No restrictions"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AA%20textbook%20of%20obstetrics%20(1899)%20(14755271466).jpg",
+    "source_name": "Internet Archive Book Images",
+    "source_license": "No restrictions",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/diabetes-mellitus/",
+    "apostila_title": "diabetes-mellitus",
+    "candidate_key": "Neuropathic_heel_ulcer_diabetic.jpg",
+    "target_section": "pe-diabetico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neuropathic%20heel%20ulcer%20diabetic.jpg",
+      "alt": "Úlcera neuropática em região plantar de pé diabético sobre ponto de hiperpressão",
+      "title": "Úlcera neuropática em região plantar de pé diabético sobre ponto de hiperpressão",
+      "caption": "Úlcera neuropática em região plantar de pé diabético sobre ponto de hiperpressão",
+      "didactic_note": "CC BY 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ANeuropathic%20heel%20ulcer%20diabetic.jpg",
+    "source_name": "Jonathan Moore",
+    "source_license": "CC BY 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/abdome-agudo-abordagem-inicial/",
+    "apostila_title": "abdome-agudo-abordagem-inicial",
+    "candidate_key": "1._Bowel-obstruction-x-ray.jpg",
+    "target_section": "obstrutivo",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1.%20Bowel-obstruction-x-ray.jpg",
+      "alt": "Radiografia simples demonstrando múltiplos níveis hidroaéreos e distensão em empilhamento de moedas",
+      "title": "Radiografia simples demonstrando múltiplos níveis hidroaéreos e distensão em empilhamento de moedas",
+      "caption": "Radiografia simples demonstrando múltiplos níveis hidroaéreos e distensão em empilhamento de moedas",
+      "didactic_note": "CC BY-SA 4.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A1.%20Bowel-obstruction-x-ray.jpg",
+    "source_name": "Igboeze",
+    "source_license": "CC BY-SA 4.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/infeccoes-de-vias-aereas-superiores/",
+    "apostila_title": "infeccoes-de-vias-aereas-superiores",
+    "candidate_key": "Croup_steeple_sign.jpg",
+    "target_section": "laringite",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Croup%20steeple%20sign.jpg",
+      "alt": "Radiografia cervical demonstrando sinal da torre / ponta de lápis no crupe viral (laringotraqueíte)",
+      "title": "Radiografia cervical demonstrando sinal da torre / ponta de lápis no crupe viral (laringotraqueíte)",
+      "caption": "Radiografia cervical demonstrando sinal da torre / ponta de lápis no crupe viral (laringotraqueíte)",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ACroup%20steeple%20sign.jpg",
+    "source_name": "Frank Gaillard",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/bronquiolite-viral-aguda/",
+    "apostila_title": "bronquiolite-viral-aguda",
+    "candidate_key": "Bronchiolitis_chest_X-ray.jpg",
+    "target_section": "exames",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bronchiolitis%20chest%20X-ray.jpg",
+      "alt": "Radiografia de tórax com hiperinsuflação, retificação costal e áreas subsegmentares de atelectasia",
+      "title": "Radiografia de tórax com hiperinsuflação, retificação costal e áreas subsegmentares de atelectasia",
+      "caption": "Radiografia de tórax com hiperinsuflação, retificação costal e áreas subsegmentares de atelectasia",
+      "didactic_note": "CC BY 2.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ABronchiolitis%20chest%20X-ray.jpg",
+    "source_name": "Matteo Di Nardo, Daniela Perrotta, Francesca Stoppa, Corrado Cecchetti, Marco Ma",
+    "source_license": "CC BY 2.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/disturbios-da-tireoide/",
+    "apostila_title": "disturbios-da-tireoide",
+    "candidate_key": "The_American_journal_of_roentgenology__radium_therapy_and_nuclear_medicine__1906",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20American%20journal%20of%20roentgenology%2C%20radium%20therapy%20and%20nuclear%20medicine%20(1906)%20(14777407013).jpg",
+      "alt": "Bócio tireoidiano visível com aumento difuso do volume da glândula na região cervical",
+      "title": "Bócio tireoidiano visível com aumento difuso do volume da glândula na região cervical",
+      "caption": "Bócio tireoidiano visível com aumento difuso do volume da glândula na região cervical",
+      "didactic_note": "No restrictions"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AThe%20American%20journal%20of%20roentgenology%2C%20radium%20therapy%20and%20nuclear%20medicine%20(1906)%20(14777407013).jpg",
+    "source_name": "Internet Archive Book Images",
+    "source_license": "No restrictions",
+    "source_trust": "verified",
+    "review_status": "pending"
+  },
+  {
+    "apostila_path": "/apostilas/coledocolitiase-e-colangite/",
+    "apostila_title": "coledocolitiase-e-colangite",
+    "candidate_key": "3DPrinted_biliary_system_20151201.jpg",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/3DPrinted%20biliary%20system%2020151201.jpg",
+      "alt": "Colangiorressonância (CPRM) evidenciando dilatação de colédoco e falha de enchimento por coledocolitíase",
+      "title": "Colangiorressonância (CPRM) evidenciando dilatação de colédoco e falha de enchimento por coledocolitíase",
+      "caption": "Colangiorressonância (CPRM) evidenciando dilatação de colédoco e falha de enchimento por coledocolitíase",
+      "didactic_note": "CC BY-SA 3.0"
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A3DPrinted%20biliary%20system%2020151201.jpg",
+    "source_name": "Nevit Dilmen (talk)",
+    "source_license": "CC BY-SA 3.0",
+    "source_trust": "verified",
+    "review_status": "pending"
+  }
+]
