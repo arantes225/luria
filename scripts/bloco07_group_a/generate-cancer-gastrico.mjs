@@ -4,6 +4,7 @@ import { secCancerGastricoExpansao } from './cancer-gastrico-expansao.mjs';
 import { secCancerGastricoExpansao2 } from './cancer-gastrico-expansao2.mjs';
 import { secCancerGastricoExpansao3 } from './cancer-gastrico-expansao3.mjs';
 import { secCancerGastricoExpansao4 } from './cancer-gastrico-expansao4.mjs';
+import { secCancerGastricoExpansao5 } from './cancer-gastrico-expansao5.mjs';
 import fs from 'fs';
 import path from 'path';
 
@@ -532,6 +533,7 @@ const finalSections = [
   baseSections[5],
   secCancerGastricoExpansao[2],
   secCancerGastricoExpansao4[1],
+  secCancerGastricoExpansao5[0],
   baseSections[6],
   secCancerGastricoExpansao2[2],
   secCancerGastricoExpansao3[1],

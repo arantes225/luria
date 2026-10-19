@@ -65,6 +65,16 @@ export const sec3 = {
     </tr>
   </tbody>
 </table>
+
+<h3>3.4 Protocolos Modernos de Tratamento na LLA: Das Quimioterapias Clássicas à Imunoterapia Avançada</h3>
+<p>O tratamento da LLA é dividido classicamente em quatro fases consecutivas ao longo de 2 a 2,5 anos:</p>
+<ol>
+  <li><strong>1. Fase de Indução de Remissão:</strong> Quatro a cinco drogas (Vincristina, Corticoide [Dexametasona ou Prednisona], L-Asparaginase e Antraciclina [Daunorrubicina]) associadas à terapia intratecal precoce, visando erradicar a massa blástica visível e restaurar a hematopoiese normal (atingir &lt; 5% de blastos na medula e DRM negativa).</li>
+  <li><strong>2. Fase de Consolidação / Intensificação:</strong> Bloqueio com altas doses de Metotrexato (HD-MTX com resgate de ácido folínico/leucovorina) e Citarabina em altas doses para eliminar clones resistentes.</li>
+  <li><strong>3. Terapia Direcionada ao SNC:</strong> Manutenção de quimioterapia intratecal periódica.</li>
+  <li><strong>4. Fase de Manutenção:</strong> Quimioterapia oral ambulatorial contínua de baixa intensidade com 6-Mercaptopurina diária e Metotrexato semanal por 2 anos.</li>
+</ol>
+<p><em>Imunoterapias Revolucionárias na LLA B Recidivada/Refratária:</em> O advento do <strong>Blinatumomabe</strong> (anticorpo biespecífico BiTE que engaja receptores CD3 de linfócitos T aos antígenos CD19 dos linfoblastos B, induzindo lise imunológica direta), do <strong>Inotuzumabe ozogamicina</strong> (conjugado anti-CD22 ligado à caliqueamicina) e da terapia com <strong>Células CAR-T (Chimeric Antigen Receptor T-cell therapy - Tisagenlecleucel)</strong> redefiniu a sobrevida de pacientes previamente refratários.</p>
 `
 };
 
