@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Editorial & Growth · LURIA</title>
+  <title>Marketing Hub · LURIA</title>
   <link rel="manifest" href="manifest.webmanifest?v=3">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/pwa-icon-180.png?v=3">
   <meta name="theme-color" content="#0A2342">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
   <link rel="stylesheet" href="/assets/css/admin.css?v=20261013-consolidated1">
-  <link rel="stylesheet" href="/assets/css/editorial.css?v=4">
+  <link rel="stylesheet" href="/assets/css/editorial.css?v=5">
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20-admin-factory-pwa">
   <link rel="canonical" href="/editorial/">
   <script>(function(){try{if(location.pathname.endsWith("/editorial.html")){location.replace("/editorial/"+location.search+location.hash);}}catch(e){location.href="/editorial/";}})();</script>
@@ -103,62 +103,72 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
 
           <div class="page-heading">
-            <span class="eyebrow">Marketing & Inteligência de Crescimento</span>
-            <h1>Hub Editorial & Performance</h1>
+            <span class="eyebrow">Dossiê Oficial · Black November 2026</span>
+            <h1>Central de Comando de Marketing</h1>
           </div>
         </header>
 
         <div class="editorial-header">
           <p class="editorial-intro">
-            Gestão profissional de conteúdo e tração para Instagram e TikTok. Acompanhe a esteira de produção semanal, o mapa de crescimento dos próximos meses e as campanhas preparadas para a Meta Marketing API.
+            Operação completa de aquisição, experimentação e conversão médica. Calendário oficial de 27 peças, briefings com validação científica, esteira Kanban de produção, pauta de 30 Stories e CRM da pré-lista VIP.
           </p>
         </div>
 
-        <!-- CONTROLES: SELETORES DE VIEW + NAVEGAÇÃO DE MESES -->
+        <!-- CONTROLES: SELETORES DE VIEW CONFORME DOSSIÊ -->
         <div class="editorial-toolbar">
           <div class="editorial-view-toggle">
             <button id="tab-weekly" type="button" class="editorial-toggle-btn active">
-              📅 Planner Semanal (7 Dias)
+              📅 Planner Semanal
             </button>
             <button id="tab-monthly" type="button" class="editorial-toggle-btn">
-              🗓️ Visão Mensal (Estratégia)
+              🗓️ 27 Peças Oficiais
+            </button>
+            <button id="tab-kanban" type="button" class="editorial-toggle-btn">
+              📋 Estúdio Kanban
+            </button>
+            <button id="tab-stories" type="button" class="editorial-toggle-btn">
+              📱 Pauta de Stories (30 dias)
+            </button>
+            <button id="tab-crm" type="button" class="editorial-toggle-btn">
+              👥 Pré-Lista VIP (CRM)
             </button>
             <button id="tab-meta-ads" type="button" class="editorial-toggle-btn">
-              📊 Meta Ads & Tráfego Pago
+              📊 Meta Ads API
             </button>
           </div>
 
-          <!-- SELETOR DE MÊS (ATIVO NA VISÃO MENSAL) -->
+          <!-- SELETOR DE MÊS -->
           <div id="editorial-month-nav" class="editorial-month-nav" hidden>
             <label for="month-select" style="font-size: 0.78rem; color: #94a3b8; text-transform: uppercase;">Mês:</label>
             <select id="month-select">
-              <option value="2026-10" selected>Outubro 2026 (Lançamento)</option>
-              <option value="2026-11">Novembro 2026 (Black Luria)</option>
-              <option value="2026-12">Dezembro 2026 (Metas 2027)</option>
+              <option value="2026-10">Outubro 2026 (Autoridade & Lista)</option>
+              <option value="2026-11" selected>Novembro 2026 (Black Week & 15 Dias)</option>
+              <option value="2026-12">Dezembro 2026 (Retenção 2027)</option>
             </select>
           </div>
         </div>
 
+        <!-- STATS GLOBAIS DA CAMPANHA (DOSSIÊ PÁGINA 10 E 24) -->
         <section class="editorial-stats-row">
           <div class="editorial-stat-card">
-            <span class="stat-label">Planejamento Ativo</span>
-            <strong class="stat-val">Out · Nov · Dez</strong>
+            <span class="stat-label">Publicações Oficiais</span>
+            <strong class="stat-val">27 peças</strong>
           </div>
           <div class="editorial-stat-card">
-            <span class="stat-label">Padrão de Resolução</span>
-            <strong class="stat-val">Full HD / 4K</strong>
+            <span class="stat-label">Pauta de Stories</span>
+            <strong class="stat-val">30 dias</strong>
           </div>
           <div class="editorial-stat-card">
-            <span class="stat-label">Repositório de Mídias</span>
-            <strong class="stat-val" style="color: #38bdf8;">Google Drive</strong>
+            <span class="stat-label">Repositório Oficial</span>
+            <strong class="stat-val" style="color: #38bdf8;">Google Drive HD</strong>
           </div>
           <div class="editorial-stat-card">
-            <span class="stat-label">Tráfego Pago</span>
-            <strong class="stat-val" style="color: #4ade80;">Meta API Ready</strong>
+            <span class="stat-label">Oferta de Entrada</span>
+            <strong class="stat-val" style="color: #4ade80;">15 Dias VIP</strong>
           </div>
         </section>
 
-        <!-- CONTAINER DINÂMICO (INJETA SEMANAL, MENSAL OU ADS VIA JS) -->
+        <!-- CONTAINER DINÂMICO INJETADO VIA JAVASCRIPT -->
         <div id="editorial-view-container"></div>
       </div>
     </main>
@@ -167,7 +177,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261019-editorial1"></script>
-  <script src="/assets/js/editorial.js?v=4"></script>
+  <script src="/assets/js/editorial.js?v=5"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

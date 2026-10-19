@@ -11,373 +11,86 @@
     isAdmin: false,
     pinConfigured: false,
     pinUnlocked: false,
-    currentView: "weekly", // "weekly" | "monthly" | "meta_ads"
-    selectedMonth: "2026-10"
+    currentView: "weekly", // "weekly" | "monthly" | "kanban" | "stories" | "crm" | "meta_ads"
+    selectedMonth: "2026-11",
+    leadsList: []
   };
 
   const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link";
 
-  // PLANNER SEMANAL (7 DIAS DA SEMANA ATUAL)
-  const WEEK_PLAN = [
-    {
-      dayCode: "seg",
-      dayName: "Segunda-feira",
-      dateLabel: "Planejamento & Alinhamento",
-      posts: []
-    },
-    {
-      dayCode: "ter",
-      dayName: "Terça-feira",
-      dateLabel: "Pico de Saves (Almoço)",
-      posts: [
-        {
-          id: "post-1",
-          time: "12h00",
-          type: "Carrossel Técnico (7 Slides)",
-          goal: "Autoridade & Saves",
-          funnel: "Topo de Funil (Educação)",
-          funnelClass: "funnel-top",
-          badge: "Abertura",
-          badgeClass: "ready",
-          title: "5 Condutas em Emergência que Mudaram nas Últimas Diretrizes",
-          subtitle: "Diretrizes Atuais · Cuidados Críticos & PS",
-          rationale: "Estudos Sprout Social/Metricool mostram que o público médico tem o maior pico de salvamento de carrosséis na pausa do almoço de terça.",
-          actionPlan: "Apresentar 5 condutas contra-intuitivas (ex: O2 liberal, bicarbonato, reposição de K+). CTA focado em salvar para o plantão.",
-          format: "Feed (1080x1350)",
-          driveUrl: DRIVE_FOLDER,
-          status: "Pronto para Agendamento"
-        }
-      ]
-    },
-    {
-      dayCode: "qua",
-      dayName: "Quarta-feira",
-      dateLabel: "Alcance & Transição",
-      posts: [
-        {
-          id: "post-2",
-          time: "19h30",
-          type: "Reels / Vídeo Full HD (30s)",
-          goal: "Alcance & Descoberta",
-          funnel: "Topo de Funil (Viral/Reach)",
-          funnelClass: "funnel-top",
-          badge: "Ultra Blaster",
-          badgeClass: "progress",
-          title: "AVC ou Hipoglicemia? O Erro de 2 Minutos que Pode Custar o Delta T",
-          subtitle: "Neurologia / Emergência · Delta T & HGT",
-          rationale: "Reels no horário das 19h30 (transição pós-hospital) maximizam a entrega do algoritmo para contas que ainda não seguem a LURIA.",
-          actionPlan: "Simulação de paciente com déficit focal súbito e desvio de rima. Ponto central: HGT imediato antes de levar à TC.",
-          format: "Reels 60fps (1080x1920)",
-          driveUrl: DRIVE_FOLDER,
-          status: "Renderização em 4K"
-        }
-      ]
-    },
-    {
-      dayCode: "qui",
-      dayName: "Quinta-feira",
-      dateLabel: "Estudo & Neurociência",
-      posts: [
-        {
-          id: "post-3",
-          time: "12h30",
-          type: "Carrossel Mental (5 Slides)",
-          goal: "Dor do Estudante",
-          funnel: "Meio de Funil (Consideração)",
-          funnelClass: "funnel-mid",
-          badge: "Método de Estudo",
-          badgeClass: "ready",
-          title: "Curva do Esquecimento na Medicina: Por que Ler a Apostila 3x Não Funciona",
-          subtitle: "Neurociência · Repetição Espaçada",
-          rationale: "Quinta-feira ao meio-dia é o ponto de maior cansaço do estudante na semana; alta receptividade para soluções de produtividade médica.",
-          actionPlan: "Demonstrar perda de memória após 24h e 7 dias. Estudo passivo vs estudo ativo. Apresentação da metodologia de retenção LURIA.",
-          format: "Feed (1080x1350)",
-          driveUrl: DRIVE_FOLDER,
-          status: "Em Diagramação"
-        }
-      ]
-    },
-    {
-      dayCode: "sex",
-      dayName: "Sexta-feira",
-      dateLabel: "Pílula Rápida de Plantão",
-      posts: [
-        {
-          id: "post-4",
-          time: "18h30",
-          type: "Reels Curto / Pílula (20s)",
-          goal: "Compartilhamento",
-          funnel: "Topo de Funil (Social Share)",
-          funnelClass: "funnel-top",
-          badge: "Pulo do Gato",
-          badgeClass: "planned",
-          title: "ECG em 30 Segundos: O Sinal Silencioso da Hipercalemia Grave",
-          subtitle: "Cardiologia & Nefro · Onda T Apiculada",
-          rationale: "Médicos e internos entrando no plantão noturno de sexta compartilham intensamente pílulas rápidas em grupos de WhatsApp.",
-          actionPlan: "Traçado real e indicação imediata de gluconato de cálcio a 10% para estabilização elétrica de membrana cardíaca.",
-          format: "Reels (1080x1920)",
-          driveUrl: DRIVE_FOLDER,
-          status: "Em Roteiro"
-        }
-      ]
-    },
-    {
-      dayCode: "sab",
-      dayName: "Sábado",
-      dateLabel: "Descanso & Bastidores",
-      posts: []
-    },
-    {
-      dayCode: "dom",
-      dayName: "Domingo",
-      dateLabel: "Interação & Gamificação",
-      posts: [
-        {
-          id: "post-5",
-          time: "20h00",
-          type: "Stories Interativos",
-          goal: "Engajamento",
-          funnel: "Fundo de Funil (Conversão/Simulador)",
-          funnelClass: "funnel-bottom",
-          badge: "Gamificação",
-          badgeClass: "planned",
-          title: "Desafio Clínico do Domingo: Dor Torácica Súbita no PS",
-          subtitle: "Simulador de Casos · Enquetes",
-          rationale: "Domingo à noite é o momento pré-semana com maior taxa de resposta em caixas de perguntas e enquetes interativas.",
-          actionPlan: "Caso em 5 Stories: História clínica -> Exame -> ECG -> Enquete de conduta -> Resolução comentada com link para a LURIA.",
-          format: "Stories Interativos",
-          driveUrl: DRIVE_FOLDER,
-          status: "Planejado"
-        }
-      ]
-    }
+  // ==============================================================
+  // OS 27 POSTS OFICIAIS DO DOSSIÊ (PÁGINAS 10 A 15)
+  // ==============================================================
+  const OFFICIAL_POSTS = [
+    // OUTUBRO (Abertura de Autoridade e Pré-lista)
+    { id: "p01", date: "20/10 Ter", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Por que você esquece o que estudou?", cta: "Salvamento", status: "publicado", kanban: "publicado", script: "Curva do esquecimento de Ebbinghaus aplicada à medicina e a necessidade de repetição ativa." },
+    { id: "p02", date: "22/10 Qui", month: "2026-10", format: "Reel", pilar: "Educação", title: "Você está no PS: qual sua primeira conduta?", cta: "Compartilhamento", status: "publicado", kanban: "publicado", script: "Caso interativo de emergência: AVC vs Hipoglicemia e a obrigatoriedade do HGT antes da TC." },
+    { id: "p03", date: "24/10 Sáb", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Questão comentada: a pegadinha da semana", cta: "Resposta", status: "aprovado", kanban: "aprovado", script: "Análise minuciosa de distratores de uma questão real de residência médica com raciocínio clínico." },
+    { id: "p04", date: "26/10 Seg", month: "2026-10", format: "Reel", pilar: "Oferta", title: "Pré-lista VIP aberta (15 Dias Gratuitos)", cta: "Inscrição", status: "aprovado", kanban: "agendado", script: "Abertura oficial da pré-lista VIP da Black November da LURIA. 15 dias sem cartão." },
+    { id: "p05", date: "28/10 Qua", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Checklist de preparação 2027", cta: "Salvamento", status: "revisao", kanban: "design", script: "Como organizar os pilares do ano de estudos de medicina com metas realistas." },
+    { id: "p06", date: "30/10 Sex", month: "2026-10", format: "Reel", pilar: "Produto", title: "Tour: Dashboard → Questões → Flashcards", cta: "Inscrição", status: "revisao", kanban: "design", script: "Gravação real de tela mostrando como um erro em questão vira flashcard no mesmo instante." },
+    { id: "p07", date: "31/10 Sáb", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Cinco erros ao começar a estudar para residência", cta: "Compartilhamento", status: "revisao", kanban: "ciencia", script: "Estudo passivo, ausência de métricas, acúmulo de PDFs piratas e falta de revisão espaçada." },
+
+    // NOVEMBRO (Operação Principal Black November)
+    { id: "p08", date: "02/11 Seg", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Educação", title: "Sepse: cinco erros que custam uma questão", cta: "Salve para revisar", status: "revisao", kanban: "ciencia", script: "Reconhecimento de sepse, sinais de alerta, conduta fundamentada e resumo de 30 segundos." },
+    { id: "p09", date: "03/11 Ter", month: "2026-11", format: "Reel (25-30s)", pilar: "Educação", title: "Estudar seis horas não garante aprender mais", cta: "Envie a um amigo", status: "pauta", kanban: "roteiro", script: "Releitura passiva versus active recall com flashcards. Citação metodológica de retenção." },
+    { id: "p10", date: "05/11 Qui", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Educação", title: "Questão comentada: pré-eclâmpsia", cta: "Responda primeiro", status: "pauta", kanban: "roteiro", script: "Caso clínico de pré-eclâmpsia grave, conduta conforme FEBRASGO/MS e distratores explicados." },
+    { id: "p11", date: "07/11 Sáb", month: "2026-11", format: "Reel (30s)", pilar: "Produto", title: "Entrando na Sala de Emergência da LURIA", cta: "Entre na lista", status: "pauta", kanban: "roteiro", script: "Você assumiu o plantão: tomada de decisão no simulador com debriefing imediato." },
+    { id: "p12", date: "09/11 Seg", month: "2026-11", format: "Reel (20-25s)", pilar: "Oferta", title: "Primeiras ativações gratuitas: como funciona?", cta: "Receba seu convite", status: "ideia", kanban: "ideia", script: "Liberação progressiva dos primeiros convites da pré-lista VIP por coortes individuais." },
+    { id: "p13", date: "10/11 Ter", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Educação", title: "ECG: três sinais que você não deve ignorar", cta: "Salve e compartilhe", status: "ideia", kanban: "ideia", script: "Sequência sistemática diante de um traçado real de eletrocardiograma no pronto-socorro." },
+    { id: "p14", date: "12/11 Qui", month: "2026-11", format: "Reel (20-30s)", pilar: "Produto", title: "Errou uma questão? O estudo não termina aqui", cta: "Experimente", status: "ideia", kanban: "ideia", script: "Como transformar a frustração do erro em memorização através do Caderno de Erros LURIA." },
+    { id: "p15", date: "14/11 Sáb", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Educação", title: "Como organizar 30 minutos de estudo diário", cta: "Salve a rotina", status: "ideia", kanban: "ideia", script: "5 min de planejamento, 15 min de questões e 10 min de revisão com foco cirúrgico." },
+    { id: "p16", date: "16/11 Seg", month: "2026-11", format: "Reel (25-35s)", pilar: "Produto", title: "Sua evolução sem planilhas", cta: "Conheça a LURIA", status: "ideia", kanban: "ideia", script: "Painel analítico da LURIA mostrando pontos fortes e fracos sem planilhas manuais." },
+    { id: "p17", date: "17/11 Ter", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Educação", title: "Desidratação pediátrica: raciocínio clínico", cta: "Teste-se", status: "ideia", kanban: "ideia", script: "Avaliação da gravidade do estado de hidratação e reposição conforme protocolo pediátrico." },
+    { id: "p18", date: "19/11 Qui", month: "2026-11", format: "Reel (20-30s)", pilar: "Produto", title: "O que será o Modo Trabalho?", cta: "Entre na lista beta", status: "ideia", kanban: "ideia", script: "Conceito do módulo de gestão do trabalho e plantões para médicos em fase beta." },
+    { id: "p19", date: "21/11 Sáb", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Educação", title: "Checklist para preparar 2027", cta: "Salve para usar", status: "ideia", kanban: "ideia", script: "Distribuição de matérias por peso nas grandes bancas de residência." },
+    { id: "p20", date: "23/11 Seg", month: "2026-11", format: "Motion (15-20s)", pilar: "Oferta", title: "Começou a Black Week LURIA", cta: "Conheça as condições", status: "ideia", kanban: "ideia", script: "Início oficial da Black Week. Condições transparentes liberadas no site oficial." },
+    { id: "p21", date: "24/11 Ter", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Oferta", title: "Essential ou Pro: qual é para você?", cta: "Compare planos", status: "ideia", kanban: "ideia", script: "Tabela comparativa direta e honesta entre os planos Essential e Pro." },
+    { id: "p22", date: "25/11 Qua", month: "2026-11", format: "Reel (25-30s)", pilar: "Produto", title: "Do caso clínico ao aprendizado completo", cta: "Experimente o fluxo", status: "ideia", kanban: "ideia", script: "Demonstração do ciclo completo: Caso -> Decisão -> Debriefing -> Flashcard." },
+    { id: "p23", date: "26/11 Qui", month: "2026-11", format: "Carrossel (8 pág)", pilar: "Oferta", title: "FAQ: 15 dias e Black Week", cta: "Tire suas dúvidas", status: "ideia", kanban: "ideia", script: "Respostas claras sobre cobrança, ativação, período de teste e suporte." },
+    { id: "p24", date: "27/11 Sex", month: "2026-11", format: "Reel (30-35s)", pilar: "Oferta", title: "Black Friday: a condição principal", cta: "Assine pela oferta", status: "ideia", kanban: "ideia", script: "Vídeo principal da Black Friday com demonstração e condições exclusivas da data." },
+    { id: "p25", date: "28/11 Sáb", month: "2026-11", format: "Reel (20s)", pilar: "Educação", title: "Plantão Relâmpago: você acertaria?", cta: "Responda", status: "ideia", kanban: "ideia", script: "Desafio interativo com caso clínico de rápida tomada de decisão." },
+    { id: "p26", date: "29/11 Dom", month: "2026-11", format: "Motion (15s)", pilar: "Oferta", title: "Último dia da Black Week", cta: "Veja o prazo", status: "ideia", kanban: "ideia", script: "Encerramento verdadeiro no horário oficial informado no site." },
+    { id: "p27", date: "30/11 Seg", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Produto", title: "Seus primeiros sete dias na LURIA", cta: "Comece a estudar", status: "ideia", kanban: "ideia", script: "Guia passo a passo de onboarding para novos assinantes e membros do teste." }
   ];
 
-  // BANCO DE DADOS MULTI-MÊS (CRONOGRAMA EXPANSÍVEL)
-  const MONTHLY_DATABASE = {
-    "2026-10": {
-      name: "Outubro 2026",
-      theme: "Lançamento Oficial · Emergências & Fundação Técnica",
-      targetReach: "50.000 médicos & estudantes",
-      totalPosts: 20,
-      adBudgetPlanned: "R$ 1.500,00",
-      weeks: [
-        {
-          weekNumber: 1,
-          weekTitle: "Semana 1 · Fundação & Autoridade",
-          theme: "Emergências Médicas & Diagnóstico Crítico",
-          goal: "Apresentar o rigor técnico e a utilidade prática da LURIA para médicos e estudantes.",
-          badge: "Semana Atual",
-          badgeClass: "ready",
-          isCurrent: true,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "5 Condutas em Emergência que Mudaram" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "AVC vs Hipoglicemia (O Erro do Delta T)" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Curva do Esquecimento na Medicina" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "ECG da Hipercalemia Grave em 30s" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Desafio Clínico: Dor Torácica no PS" }
-          ]
-        },
-        {
-          weekNumber: 2,
-          weekTitle: "Semana 2 · Rotina do Internato & Raciocínio",
-          theme: "Condutas de Enfermaria & Prescrição Segura",
-          goal: "Resolver a insegurança do estudante no internato (antibióticos, hidratação, eletrólitos).",
-          badge: "Planejada",
-          badgeClass: "progress",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Guia Rápido de Antibioticoterapia Empírica no PS" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "Por que Nunca Fazer Soro Fisiológico 0.9% Aberto?" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Como Estruturar uma Evolução Médica Impecável" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Como Calcular o Déficit de Sódio sem Errar" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Desafio Clínico: Hiponatremia Aguda" }
-          ]
-        },
-        {
-          weekNumber: 3,
-          weekTitle: "Semana 3 · Alta Performance & Provas de Residência",
-          theme: "Estratégia de Estudos & Questões Difíceis",
-          goal: "Atrair vestibulandos e residentes com foco em simulados, editais e pegadinhas de banca.",
-          badge: "Planejada",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Os 5 Temas Mais Cobrados no ENARE/USP nos Últimos 3 Anos" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "A Pegadinha Mais Comum de Pediatria nas Provas" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Como Usar o Caderno de Erros para Subir 15% a Média" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Critérios de Wells em 25 Segundos" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Simulado Relâmpago: 5 Questões Comentadas" }
-          ]
-        },
-        {
-          weekNumber: 4,
-          weekTitle: "Semana 4 · Decisão Sob Pressão",
-          theme: "Protocolos de UTI & Sala Vermelha",
-          goal: "Consolidar a LURIA como a ferramenta de consulta e treino obrigatória do profissional médico.",
-          badge: "Planejada",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Manejo da Sepse Grave na Primeira Hora (Bundle 1h)" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "Intubação de Sequência Rápida: A Droga que Salva vidas" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Grave vs Estável: Quando Usar Droga Vasoativa?" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Pneumotórax Hipertensivo: Diagnóstico Clínico Imediato" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Desafio de Sala Vermelha: Choque Indiferenciado" }
-          ]
-        }
-      ]
-    },
-    "2026-11": {
-      name: "Novembro 2026",
-      theme: "Campanha Black November & Retenção Pré-Provas",
-      targetReach: "120.000 contas alcançadas",
-      totalPosts: 22,
-      adBudgetPlanned: "R$ 3.000,00",
-      weeks: [
-        {
-          weekNumber: 1,
-          weekTitle: "Semana 1 · Reta Final ENARE / SUS-SP",
-          theme: "Revisão Espaçada de Alto Rendimento",
-          goal: "Intensivo de questões resolvidas e simuladores da LURIA em tempo real.",
-          badge: "Programada",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Top 10 CCQs (Pulos do Gato) para a Prova de Domingo" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "O Erro Fatal que Elimina 40% dos Candidatos na Cirurgia" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Flashcards de Última Hora: Farmacologia Cardiovascular" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Escala de Glasgow-P: Como Não Errar a Reatividade Pupilar" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Plantão de Dúvidas & Análise Pós-Prova" }
-          ]
-        },
-        {
-          weekNumber: 2,
-          weekTitle: "Semana 2 · Primeiros Plantões & Prática Médica",
-          theme: "Transição Formatura -> Primeiro Emprego",
-          goal: "Atrair recém-formados para o Módulo de Trabalho e Gestor de Plantões da LURIA.",
-          badge: "Programada",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Manual de Sobrevivência do Recém-Formado no PS" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "Como Passar um Plantão sem Esquecer Nenhuma Conduta" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "As 7 Prescrições Básicas que Todo Médico Precisa Dominar" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Quando Chamar o Especialista? O Limite da Segurança" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Enquete de Plantão: Qual Caso te Deu Mais Frio na Barriga?" }
-          ]
-        },
-        {
-          weekNumber: 3,
-          weekTitle: "Semana 3 · Black LURIA (Aquecimento)",
-          theme: "Oferta Exclusiva de Acesso Anual & Beta VIP",
-          goal: "Conversão direta para planos pagos com cases de sucesso dos primeiros usuários.",
-          badge: "Planejada",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Como um Residente Estudou 400h com a LURIA sem Burnout" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "Tour Completo pelo Algoritmo do Caderno de Erros" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Estudar por Questões vs Teoria: O que Diz a Universidade de Harvard" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Desafio 60 Segundos: Casos Clínicos Interativos" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Abertura da Lista VIP da Black LURIA" }
-          ]
-        },
-        {
-          weekNumber: 4,
-          weekTitle: "Semana 4 · Black Friday Oficial & Fechamento",
-          theme: "Campanha de Conversão Máxima",
-          goal: "Pico de aquisição de novos assinantes na plataforma.",
-          badge: "Planejada",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Liberado: Condições Exclusivas de Assinatura LURIA" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "3 Motivos para Não Estudar Mais com PDFs Piratas em 2027" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Comparativo: Método Tradicional vs Inteligência LURIA" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Últimas 24h com Acesso Vitalício aos Simuladores" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Boas-Vindas aos Novos Membros & Ranking de Estudos" }
-          ]
-        }
-      ]
-    },
-    "2026-12": {
-      name: "Dezembro 2026",
-      theme: "Planejamento 2027 & Ano Letivo Médico",
-      targetReach: "80.000 contas",
-      totalPosts: 18,
-      adBudgetPlanned: "R$ 2.000,00",
-      weeks: [
-        {
-          weekNumber: 1,
-          weekTitle: "Semana 1 · Retrospectiva & Metas 2027",
-          theme: "Cronograma de Estudos para o Próximo Ano",
-          goal: "Captar estudantes montando o cronograma do ano letivo médico.",
-          badge: "Backlog",
-          badgeClass: "planned",
-          isCurrent: false,
-          items: [
-            { day: "Terça · 12h00", format: "Carrossel", title: "Como Montar um Cronograma de Residência 2027 Realista" },
-            { day: "Quarta · 19h30", format: "Reels HD", title: "O Erro Número 1 de Quem Começa a Estudar em Janeiro" },
-            { day: "Quinta · 12h30", format: "Carrossel", title: "Grade Curricular vs Residência: Como Conciliar" },
-            { day: "Sexta · 18h30", format: "Reels Pílula", title: "Dica de Ouro: Como Evitar a Procrastinação no Internato" },
-            { day: "Domingo · 20h00", format: "Stories", title: "Enquete: Qual Especialidade Você Quer Prestar em 2027?" }
-          ]
-        }
-      ]
-    }
-  };
+  // ==============================================================
+  // GRADE DE STORIES (30 DIAS DE NOVEMBRO - DOSSIÊ PÁGINA 17)
+  // ==============================================================
+  const STORIES_30_DAYS = [
+    { day: "01/11", idea: "Qual área foi mais difícil nesta semana?", resource: "Enquete interativa" },
+    { day: "02/11", idea: "Quiz sepse: o que chama atenção?", resource: "Quiz de múltipla escolha" },
+    { day: "03/11", idea: "Você costuma testar memória sem olhar o gabarito?", resource: "Enquete Sim/Não" },
+    { day: "04/11", idea: "Bastidores da revisão científica de questões", resource: "Vídeo curto" },
+    { day: "05/11", idea: "Resolva a alternativa clássica de GO", resource: "Quiz de conduta" },
+    { day: "06/11", idea: "Teaser da Sala de Emergência em ação", resource: "Vídeo de tela" },
+    { day: "07/11", idea: "Escolha sua conduta no simulador clínico", resource: "Enquete de decisão" },
+    { day: "08/11", idea: "Como começar a semana com metas claras", resource: "Checklist em carrossel" },
+    { day: "09/11", idea: "Perguntas sobre a ativação gratuita de 15 dias", resource: "Caixa de perguntas" },
+    { day: "10/11", idea: "ECG no PS: verdadeiro ou falso?", resource: "Quiz rápido" },
+    { day: "11/11", idea: "Qual o seu maior erro na hora da revisão?", resource: "Enquete de dores" },
+    { day: "12/11", idea: "Tour pelo fluxo do Caderno de Erros", resource: "Gravação de tela" },
+    { day: "13/11", idea: "FAQ dos 15 dias gratuitos sem cartão", resource: "Caixa de dúvidas" },
+    { day: "14/11", idea: "30 minutos: monte sua rotina diária", resource: "Checklist prático" },
+    { day: "15/11", idea: "Sua meta para esta nova semana de estudos", resource: "Enquete interativa" },
+    { day: "16/11", idea: "Tour pelas métricas e gráficos do Dashboard", resource: "Vídeo de produto" },
+    { day: "17/11", idea: "Caso de desidratação pediátrica no PS", resource: "Quiz de caso" },
+    { day: "18/11", idea: "O que você quer aprender no Modo Trabalho?", resource: "Caixa de sugestões" },
+    { day: "19/11", idea: "Status real da versão beta do Modo Trabalho", resource: "Bastidores de dev" },
+    { day: "20/11", idea: "Preparação para a Black Week oficial LURIA", resource: "Aviso de oferta" },
+    { day: "21/11", idea: "Checklist 2027 interativo para salvar", resource: "Sticker de interação" },
+    { day: "22/11", idea: "Últimas dúvidas antes da abertura da Black Week", resource: "Caixa de perguntas" },
+    { day: "23/11", idea: "Condições abertas: acesse o link oficial", resource: "Link com CTA" },
+    { day: "24/11", idea: "Comparação detalhada: Essential vs Pro", resource: "Cards de FAQ" },
+    { day: "25/11", idea: "Caso clínico completo resolvido na plataforma", resource: "Tour guiado" },
+    { day: "26/11", idea: "Tire dúvidas sobre pagamento, teste e cancelamento", resource: "Cards explicativos" },
+    { day: "27/11", idea: "Black Friday LURIA: reforço com transparência", resource: "Link oficial" },
+    { day: "28/11", idea: "Plantão Relâmpago: qual seria a sua conduta?", resource: "Enquete clínica" },
+    { day: "29/11", idea: "Encerramento verdadeiro: contagem de horas", resource: "Aviso de término" },
+    { day: "30/11", idea: "Primeiros passos após cadastro na plataforma", resource: "Tutorial de onboarding" }
+  ];
 
-  // MOCK DE DADOS DA META ADS API (ESTRUTURA COMPLETA DE MARKETING)
-  const META_ADS_MOCK = {
-    connected: false,
-    accountId: "act_4920194819283",
-    currency: "BRL",
-    summary: {
-      spent: "R$ 0,00",
-      budgetMonth: "R$ 1.500,00",
-      impressions: "0",
-      cpm: "R$ 0,00",
-      clicks: "0",
-      cpc: "R$ 0,00",
-      ctr: "0,00%",
-      leads: "0",
-      cpl: "R$ 0,00"
-    },
-    campaigns: [
-      {
-        id: "cmp-01",
-        name: "TOF · Reconhecimento · Vídeo AVC Isquêmico",
-        objective: "Visualizações de Vídeo (ThruPlay)",
-        funnel: "Topo de Funil",
-        status: "Pendente de Conexão",
-        statusClass: "pending",
-        budget: "R$ 25,00/dia",
-        target: "Médicos generalistas & Estudantes de Medicina (Brasil)"
-      },
-      {
-        id: "cmp-02",
-        name: "MOF · Consideração · Carrossel 5 Condutas em Emergência",
-        objective: "Tráfego para Perfil & Salvamentos",
-        funnel: "Meio de Funil",
-        status: "Pendente de Conexão",
-        statusClass: "pending",
-        budget: "R$ 20,00/dia",
-        target: "Seguidores de Sanar, Medgrupo e páginas médicas"
-      },
-      {
-        id: "cmp-03",
-        name: "BOF · Conversão · Cadastro Gratuito na LURIA",
-        objective: "Cadastros no Site (Lead)",
-        funnel: "Fundo de Funil",
-        status: "Pendente de Conexão",
-        statusClass: "pending",
-        budget: "R$ 30,00/dia",
-        target: "Remarketing (Visitantes do site últimos 30 dias)"
-      }
-    ]
-  };
-
+  // FUNÇÕES DE SEGURANÇA E PIN
   function adminPinGraceStorageKey() {
     const userId = String(state.user?.id || window.docmapUser?.id || "admin");
     return `${ADMIN_PIN_GRACE_KEY}:${userId}`;
@@ -385,10 +98,7 @@
 
   function rememberAdminPinUnlock() {
     try {
-      localStorage.setItem(
-        adminPinGraceStorageKey(),
-        String(Date.now() + ADMIN_PIN_GRACE_MS)
-      );
+      localStorage.setItem(adminPinGraceStorageKey(), String(Date.now() + ADMIN_PIN_GRACE_MS));
     } catch (_) {}
   }
 
@@ -396,11 +106,7 @@
     try {
       const key = adminPinGraceStorageKey();
       const expiresAt = Number(localStorage.getItem(key) || 0);
-      if (!Number.isFinite(expiresAt) || expiresAt <= Date.now()) {
-        localStorage.removeItem(key);
-        return false;
-      }
-      return true;
+      return Number.isFinite(expiresAt) && expiresAt > Date.now();
     } catch (_) {
       return false;
     }
@@ -428,31 +134,14 @@
 
     if (fields) fields.hidden = false;
     if (confirmWrap) confirmWrap.hidden = state.pinConfigured;
-    if (title) {
-      title.textContent = state.pinConfigured ? "Digite seu PIN" : "Cadastre seu PIN";
-    }
-    if (description) {
-      description.textContent = state.pinConfigured
-        ? "Digite os 6 dígitos do Admin para acessar o Marketing Hub."
-        : "Este é seu primeiro acesso protegido. Crie um PIN de 6 dígitos.";
-    }
-    if (label) {
-      label.textContent = state.pinConfigured ? "PIN de 6 dígitos" : "Criar PIN";
-    }
+    if (title) title.textContent = state.pinConfigured ? "Digite seu PIN" : "Cadastre seu PIN";
+    if (description) description.textContent = state.pinConfigured ? "Digite os 6 dígitos do Admin para abrir o Marketing Hub." : "Crie um PIN de 6 dígitos.";
+    if (label) label.textContent = state.pinConfigured ? "PIN de 6 dígitos" : "Criar PIN";
     if (submit) {
-      submit.textContent = state.pinConfigured ? "Desbloquear Editorial" : "Cadastrar PIN";
+      submit.textContent = state.pinConfigured ? "Desbloquear Marketing" : "Cadastrar PIN";
       submit.disabled = false;
     }
-
-    setPinMessage(
-      state.pinConfigured
-        ? "O hub de marketing permanece protegido por PIN."
-        : "O PIN será protegido e sincronizado com o Admin."
-    );
-
-    requestAnimationFrame(() => {
-      $("admin-pin")?.focus();
-    });
+    setPinMessage(state.pinConfigured ? "Área protegida por PIN." : "PIN protegido e sincronizado.");
   }
 
   async function loadPinStatus() {
@@ -460,62 +149,48 @@
     if (!sb) return false;
     const { data, error } = await sb.rpc("admin_pin_status");
     if (error) throw error;
-    const hasPin = data?.has_pin === true;
-    setPinGateMode(hasPin);
-    return hasPin;
+    setPinGateMode(data?.has_pin === true);
+    return data?.has_pin === true;
   }
 
   function unlockEditorialPage() {
     state.pinUnlocked = true;
     const gate = $("admin-pin-gate");
     const app = $("editorial-app");
-
     document.body.classList.remove("admin-pin-locked");
     document.body.classList.add("admin-unlocked");
-
     if (gate) gate.hidden = true;
     if (app) app.hidden = false;
-
     renderCurrentView();
   }
 
   async function submitEditorialPin(event) {
     event.preventDefault();
-    const pinInput = $("admin-pin");
-    const confirmInput = $("admin-pin-confirm");
+    const pin = normalizePin($("admin-pin")?.value);
+    const confirmPin = normalizePin($("admin-pin-confirm")?.value);
     const submit = $("admin-pin-submit");
-
-    const pin = normalizePin(pinInput?.value);
-    const confirmPin = normalizePin(confirmInput?.value);
-
-    if (pinInput) pinInput.value = pin;
-    if (confirmInput) confirmInput.value = confirmPin;
 
     if (pin.length !== 6) {
       setPinMessage("Digite exatamente 6 números.", "error");
-      pinInput?.focus();
       return;
     }
 
     if (!state.pinConfigured && pin !== confirmPin) {
       setPinMessage("Os PINs digitados não coincidem.", "error");
-      confirmInput?.focus();
       return;
     }
 
     if (submit) {
       submit.disabled = true;
-      submit.textContent = state.pinConfigured ? "Verificando..." : "Salvando...";
+      submit.textContent = "Verificando...";
     }
 
     const sb = window.supabaseClient || window.sb;
     try {
       if (!state.pinConfigured) {
         const { data, error } = await sb.rpc("admin_set_pin", { p_pin: pin });
-        if (error || data !== true) {
-          throw error || new Error("Não foi possível cadastrar o PIN.");
-        }
-        setPinMessage("PIN cadastrado com sucesso.", "success");
+        if (error || data !== true) throw error || new Error("Falha ao salvar PIN.");
+        setPinMessage("PIN cadastrado.", "success");
         rememberAdminPinUnlock();
         unlockEditorialPage();
         return;
@@ -529,149 +204,114 @@
         rememberAdminPinUnlock();
         unlockEditorialPage();
       } else {
-        setPinMessage(data?.message || "PIN incorreto. Tente novamente.", "error");
-        if (pinInput) {
-          pinInput.value = "";
-          pinInput.focus();
-        }
-        if (submit) {
-          submit.disabled = false;
-          submit.textContent = "Desbloquear Editorial";
-        }
+        setPinMessage(data?.message || "PIN incorreto.", "error");
+        if (submit) { submit.disabled = false; submit.textContent = "Tentar Novamente"; }
       }
     } catch (err) {
-      console.error("[Editorial PIN Error]", err);
-      setPinMessage("Erro ao validar PIN administrativo.", "error");
-      if (submit) {
-        submit.disabled = false;
-        submit.textContent = "Desbloquear Editorial";
-      }
+      setPinMessage("Erro ao autenticar.", "error");
+      if (submit) { submit.disabled = false; submit.textContent = "Desbloquear Marketing"; }
     }
   }
 
+  // ==============================================================
+  // TELAS DE RENDERIZAÇÃO
+  // ==============================================================
+
+  // 1. PLANNER SEMANAL (Página 10)
   function renderWeeklyPlanner() {
     const container = $("editorial-view-container");
     if (!container) return;
 
+    // Filtra posts da semana atual
+    const currentWeekPosts = OFFICIAL_POSTS.slice(0, 7);
+
     container.innerHTML = `
       <div id="editorial-planner-board" class="editorial-planner-board">
-        ${WEEK_PLAN.map((col) => {
-          const hasPost = col.posts.length > 0;
-          return `
-            <div class="editorial-day-col ${hasPost ? "has-post" : ""}">
-              <div class="editorial-col-header">
-                <div class="editorial-col-day">
-                  <span>${col.dayName}</span>
-                  <small>${col.dateLabel}</small>
-                </div>
-                <span class="editorial-col-count ${hasPost ? "active-count" : ""}">
-                  ${col.posts.length} ${col.posts.length === 1 ? "post" : "posts"}
-                </span>
+        ${currentWeekPosts.map(post => `
+          <div class="editorial-day-col has-post">
+            <div class="editorial-col-header">
+              <div class="editorial-col-day">
+                <span>${post.date}</span>
+                <small>${post.pilar}</small>
               </div>
-
-              <div class="editorial-col-body">
-                ${hasPost ? col.posts.map(post => `
-                  <article class="planner-card">
-                    <div class="planner-card-top">
-                      <span class="planner-time">⏰ ${post.time}</span>
-                      <span class="planner-badge badge-${post.badgeClass}">${post.badge}</span>
-                    </div>
-
-                    <h4 class="planner-title">${post.title}</h4>
-                    <p class="planner-sub">${post.subtitle}</p>
-
-                    <div class="planner-funnel">
-                      <span class="funnel-tag ${post.funnelClass}">${post.funnel}</span>
-                    </div>
-
-                    <div class="planner-study">
-                      <strong>🔬 Estudo & Rationale:</strong>
-                      <p>${post.rationale}</p>
-                    </div>
-
-                    <div class="planner-action">
-                      <strong>🎯 Roteiro de Gravação:</strong>
-                      <p>${post.actionPlan}</p>
-                    </div>
-
-                    <div class="planner-meta">
-                      <span>Formato: <strong>${post.type}</strong></span>
-                      <span>Objetivo: <strong>${post.goal}</strong></span>
-                      <span>Dimensões: <strong>${post.format}</strong></span>
-                    </div>
-
-                    <a href="${post.driveUrl}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
-                      📂 Ver no Google Drive
-                    </a>
-                  </article>
-                `).join("") : `
-                  <div class="editorial-col-empty">
-                    <span>☕</span>
-                    <p>Dia reservado sem postagens no feed</p>
-                  </div>
-                `}
-              </div>
+              <span class="editorial-col-count active-count">1 post</span>
             </div>
-          `;
-        }).join("")}
+            <div class="editorial-col-body">
+              <article class="planner-card">
+                <div class="planner-card-top">
+                  <span class="planner-time">⚡ ${post.format}</span>
+                  <span class="planner-badge badge-${post.status === 'publicado' ? 'ready' : post.status === 'aprovado' ? 'progress' : 'planned'}">${post.status}</span>
+                </div>
+                <h4 class="planner-title">${post.title}</h4>
+                <div class="planner-study">
+                  <strong>🎯 CTA:</strong>
+                  <p>${post.cta}</p>
+                </div>
+                <div class="planner-action">
+                  <strong>📝 Briefing & Roteiro:</strong>
+                  <p>${post.script}</p>
+                </div>
+                <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
+                  📂 Ver no Drive
+                </a>
+              </article>
+            </div>
+          </div>
+        `).join("")}
       </div>
     `;
   }
 
+  // 2. CRONOGRAMA DAS 27 PEÇAS (Páginas 10 e 11)
   function renderMonthlySchedule() {
     const container = $("editorial-view-container");
     if (!container) return;
 
-    const monthData = MONTHLY_DATABASE[state.selectedMonth] || MONTHLY_DATABASE["2026-10"];
+    const filtered = OFFICIAL_POSTS.filter(p => p.month === state.selectedMonth);
 
     container.innerHTML = `
       <div class="editorial-month-meta-bar">
         <div class="month-headline">
-          <strong>${monthData.name} — ${monthData.theme}</strong>
-          <span>Meta Geral: Alcançar ${monthData.targetReach} com conteúdo proprietário.</span>
+          <strong>${state.selectedMonth === "2026-10" ? "Outubro 2026 (Aquecimento & Pré-lista)" : state.selectedMonth === "2026-11" ? "Novembro 2026 (Black Week Oficial & 15 Dias)" : "Dezembro 2026 (Retenção 2027)"}</strong>
+          <span>${filtered.length} publicações programadas com validação científica e conformidade ética.</span>
         </div>
         <div class="month-kpis">
           <div class="month-kpi-item">
-            <small>Posts Programados</small>
-            <strong>${monthData.totalPosts}</strong>
+            <small>Posts no Mês</small>
+            <strong>${filtered.length}</strong>
           </div>
           <div class="month-kpi-item">
-            <small>Orçamento Tráfego</small>
-            <strong style="color: #4ade80;">${monthData.adBudgetPlanned}</strong>
+            <small>Repositório</small>
+            <strong style="color: #38bdf8;">Google Drive</strong>
           </div>
         </div>
       </div>
 
       <div class="editorial-month-grid">
-        ${monthData.weeks.map(week => `
-          <article class="month-week-card ${week.isCurrent ? "is-current" : ""}">
+        ${filtered.map(post => `
+          <article class="month-week-card ${post.status === 'publicado' ? 'is-current' : ''}">
             <div class="month-week-header">
               <div class="month-week-badge-row">
-                <span class="month-week-num">${week.weekTitle}</span>
-                <span class="month-week-theme">${week.theme}</span>
+                <span class="month-week-num">${post.date}</span>
+                <span class="month-week-theme">${post.pilar} · ${post.format}</span>
               </div>
-              <span class="planner-badge badge-${week.badgeClass}">${week.badge}</span>
+              <span class="planner-badge badge-${post.status === 'publicado' ? 'ready' : post.status === 'aprovado' ? 'progress' : 'planned'}">${post.status}</span>
             </div>
+
+            <h4 style="color:#fff; margin:0; font-size:1.05rem;">${post.title}</h4>
 
             <div class="month-week-goal">
-              <strong>🎯 Meta Estratégica:</strong> ${week.goal}
+              <strong>🎯 CTA Oficial:</strong> ${post.cta}
             </div>
 
-            <div class="month-posts-list">
-              ${week.items.map(item => `
-                <div class="month-post-item">
-                  <div class="month-post-item-top">
-                    <span class="month-post-day">${item.day}</span>
-                    <span class="month-post-format">${item.format}</span>
-                  </div>
-                  <h5 class="month-post-title">${item.title}</h5>
-                </div>
-              `).join("")}
+            <div class="planner-action">
+              <strong>📝 Roteiro Base:</strong>
+              <p>${post.script}</p>
             </div>
 
             <div class="month-week-footer">
               <a href="${DRIVE_FOLDER}" target="_blank" rel="noopener noreferrer" class="button secondary planner-card-btn">
-                📂 Acessar Pasta da Semana no Drive
+                📂 Acessar Arquivo no Drive
               </a>
             </div>
           </article>
@@ -680,18 +320,157 @@
     `;
   }
 
+  // 3. ESTÚDIO KANBAN DE APROVAÇÃO (Página 27)
+  function renderKanbanStudio() {
+    const container = $("editorial-view-container");
+    if (!container) return;
+
+    const columns = [
+      { key: "ideia", label: "💡 Ideia / Pauta" },
+      { key: "roteiro", label: "📝 Roteirização" },
+      { key: "ciencia", label: "🔬 Revisão Médica" },
+      { key: "design", label: "🎨 Design & Motion" },
+      { key: "aprovado", label: "✅ Aprovado (QA)" },
+      { key: "publicado", label: "🚀 Publicado" }
+    ];
+
+    container.innerHTML = `
+      <div class="kanban-board">
+        ${columns.map(col => {
+          const items = OFFICIAL_POSTS.filter(p => p.kanban === col.key);
+          return `
+            <div class="kanban-col">
+              <div class="kanban-col-head">
+                <strong>${col.label}</strong>
+                <span class="kanban-badge">${items.length}</span>
+              </div>
+              ${items.map(item => `
+                <div class="kanban-card" onclick="window.open('${DRIVE_FOLDER}', '_blank')">
+                  <div class="kanban-card-meta">
+                    <span>${item.date}</span>
+                    <span style="color:#38bdf8;">${item.format}</span>
+                  </div>
+                  <div class="kanban-card-title">${item.title}</div>
+                  <small style="color:#94a3b8;">CTA: ${item.cta}</small>
+                </div>
+              `).join("")}
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  // 4. GRADE DE 30 STORIES (Página 17)
+  function renderStoriesGrid() {
+    const container = $("editorial-view-container");
+    if (!container) return;
+
+    container.innerHTML = `
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="color:#fff; margin:0 0 0.5rem 0;">Pauta Completa de Stories · Todos os 30 Dias de Novembro</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; margin:0;">Rotina diária de engajamento baseada no Dossiê LURIA (Enquetes, Quizzes, Caixas de Dúvidas e Tours).</p>
+      </div>
+
+      <div class="stories-grid-container">
+        ${STORIES_30_DAYS.map(s => `
+          <div class="stories-day-card">
+            <div class="stories-day-top">
+              <span>Dia ${s.day}</span>
+              <span class="stories-tag">${s.resource}</span>
+            </div>
+            <p class="stories-idea">${s.idea}</p>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  // 5. CRM DE LEADS / PRÉ-LISTA VIP (Páginas 8 e 29)
+  async function renderCrmLeads() {
+    const container = $("editorial-view-container");
+    if (!container) return;
+
+    container.innerHTML = `<div style="text-align:center; padding:3rem; color:#94a3b8;">Carregando inscritos da pré-lista VIP...</div>`;
+
+    let leads = [];
+    try {
+      const sb = window.supabaseClient;
+      if (sb) {
+        const { data } = await sb.from("marketing_leads").select("*").order("created_at", { ascending: false }).limit(50);
+        leads = data || [];
+      }
+    } catch (_) {}
+
+    container.innerHTML = `
+      <div class="crm-leads-container">
+        <div class="crm-header-summary">
+          <div class="meta-ads-kpi-card">
+            <span>Inscritos na Pré-Lista</span>
+            <strong>${leads.length}</strong>
+            <small style="color:#4ade80;">15 Dias Gratuitos</small>
+          </div>
+          <div class="meta-ads-kpi-card">
+            <span>Página de Captura</span>
+            <strong>/black-november/</strong>
+            <small><a href="/black-november/" target="_blank" style="color:#38bdf8;">Abrir Landing Page ↗</a></small>
+          </div>
+          <div class="meta-ads-kpi-card">
+            <span>Validação Médica</span>
+            <strong>Sem Cartão</strong>
+            <small>Proteção contra atrito</small>
+          </div>
+        </div>
+
+        <div class="meta-campaigns-table-card">
+          <h3>Inscrições Recentes (Pré-Lista VIP 2026)</h3>
+          <table class="meta-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Momento / Etapa</th>
+                <th>Foco de Estudo</th>
+                <th>Origem</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${leads.length > 0 ? leads.map(l => `
+                <tr>
+                  <td><strong>${l.name}</strong></td>
+                  <td>${l.email_normalized}</td>
+                  <td><span class="funnel-tag funnel-mid">${l.study_stage}</span></td>
+                  <td>${l.interest || 'Geral'}</td>
+                  <td>${l.origin}</td>
+                  <td>${new Date(l.created_at).toLocaleDateString('pt-BR')}</td>
+                </tr>
+              `).join("") : `
+                <tr>
+                  <td colspan="6" style="text-align:center; padding:2rem; color:#94a3b8;">
+                    Nenhum lead registrado ainda. Divulgue o link <a href="/black-november/" target="_blank" style="color:#38bdf8;">/black-november/</a> para iniciar a captação!
+                  </td>
+                </tr>
+              `}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  }
+
+  // 6. META ADS DASHBOARD (Páginas 24 e 30)
   function renderMetaAdsHub() {
     const container = $("editorial-view-container");
     if (!container) return;
 
     container.innerHTML = `
       <div class="meta-ads-hub">
-        <!-- BANNER DE STATUS DA API -->
         <div class="meta-ads-api-banner">
           <div class="meta-ads-banner-copy">
-            <strong>🌐 Meta Marketing API (Instagram & Facebook Ads)</strong>
+            <strong>🌐 Meta Marketing API (Graph API v21.0)</strong>
             <p>
-              Pronto para sincronização via Graph API v21.0. Ao vincular o <code>System User Access Token</code> e o <code>Ad Account ID</code>, as métricas de ROAS, CAC, CPC e conversões serão atualizadas automaticamente em tempo real.
+              Pronto para reconciliação com o Gerenciador de Anúncios. Ao conectar o Access Token e o Ad Account ID, as métricas de CPM, CPC, Leads e ROAS serão atualizadas automaticamente.
             </p>
           </div>
           <div class="meta-ads-status-badge">
@@ -700,58 +479,63 @@
           </div>
         </div>
 
-        <!-- CARDS DE MÉTRICAS / KPIS DE TRÁFEGO PAGO -->
         <div class="meta-ads-kpis-grid">
           <div class="meta-ads-kpi-card">
-            <span>Investimento Total</span>
-            <strong>${META_ADS_MOCK.summary.spent}</strong>
-            <small>Orçamento: ${META_ADS_MOCK.summary.budgetMonth}</small>
+            <span>Orçamento Previsto</span>
+            <strong>R$ 1.500,00</strong>
+            <small>Teto: R$ 25 - R$ 100/semana</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Impressões</span>
-            <strong>${META_ADS_MOCK.summary.impressions}</strong>
-            <small>CPM Estimado: ${META_ADS_MOCK.summary.cpm}</small>
+            <span>Meta de Alcance</span>
+            <strong>50.000</strong>
+            <small>Estudantes e Médicos</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Cliques no Link (CTR)</span>
-            <strong>${META_ADS_MOCK.summary.clicks}</strong>
-            <small>CTR: ${META_ADS_MOCK.summary.ctr} · CPC: ${META_ADS_MOCK.summary.cpc}</small>
+            <span>Custo por Lead Alvo</span>
+            <strong>R$ 3,50 - R$ 5,00</strong>
+            <small>Pré-lista VIP</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Contas Criadas (Leads)</span>
-            <strong style="color: #38bdf8;">${META_ADS_MOCK.summary.leads}</strong>
-            <small>Custo por Lead: ${META_ADS_MOCK.summary.cpl}</small>
+            <span>Conversão em Venda</span>
+            <strong>20 - 25% Pro</strong>
+            <small>Oferta Black Friday</small>
           </div>
         </div>
 
-        <!-- TABELA DE CAMPANHAS E FUNIL -->
         <div class="meta-campaigns-table-card">
-          <h3>Campanhas Configuradas para Impulsionamento</h3>
+          <h3>Estrutura de Campanhas da Black November</h3>
           <table class="meta-table">
             <thead>
               <tr>
                 <th>Campanha</th>
-                <th>Etapa do Funil</th>
+                <th>Funil</th>
                 <th>Objetivo Meta</th>
-                <th>Público-Alvo Segmentado</th>
-                <th>Orçamento</th>
+                <th>Público Alvo</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody>
-              ${META_ADS_MOCK.campaigns.map(camp => `
-                <tr>
-                  <td><strong>${camp.name}</strong></td>
-                  <td><span class="funnel-tag funnel-top">${camp.funnel}</span></td>
-                  <td>${camp.objective}</td>
-                  <td>${camp.target}</td>
-                  <td>${camp.budget}</td>
-                  <td>
-                    <span class="status-dot ${camp.statusClass}"></span>
-                    ${camp.status}
-                  </td>
-                </tr>
-              `).join("")}
+              <tr>
+                <td><strong>TOF · Vídeo AVC Isquêmico (Erro de 2 Minutos)</strong></td>
+                <td><span class="funnel-tag funnel-top">Topo de Funil</span></td>
+                <td>Reconhecimento / ThruPlay</td>
+                <td>Interesse em Medicina, Residência Médica</td>
+                <td><span class="status-dot active"></span> Pronta</td>
+              </tr>
+              <tr>
+                <td><strong>MOF · Carrossel 5 Condutas em Emergência</strong></td>
+                <td><span class="funnel-tag funnel-mid">Meio de Funil</span></td>
+                <td>Engajamento & Salvamentos</td>
+                <td>Seguidores de Páginas Médicas</td>
+                <td><span class="status-dot active"></span> Pronta</td>
+              </tr>
+              <tr>
+                <td><strong>BOF · Pré-Lista VIP (15 Dias Gratuitos)</strong></td>
+                <td><span class="funnel-tag funnel-bottom">Fundo de Funil</span></td>
+                <td>Geração de Leads</td>
+                <td>Remarketing (Visitantes do Site)</td>
+                <td><span class="status-dot pending"></span> Em Configuração</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -760,40 +544,31 @@
   }
 
   function renderCurrentView() {
-    if (state.currentView === "weekly") {
-      renderWeeklyPlanner();
-    } else if (state.currentView === "monthly") {
-      renderMonthlySchedule();
-    } else if (state.currentView === "meta_ads") {
-      renderMetaAdsHub();
-    }
+    if (state.currentView === "weekly") renderWeeklyPlanner();
+    else if (state.currentView === "monthly") renderMonthlySchedule();
+    else if (state.currentView === "kanban") renderKanbanStudio();
+    else if (state.currentView === "stories") renderStoriesGrid();
+    else if (state.currentView === "crm") renderCrmLeads();
+    else if (state.currentView === "meta_ads") renderMetaAdsHub();
 
     $("tab-weekly")?.classList.toggle("active", state.currentView === "weekly");
     $("tab-monthly")?.classList.toggle("active", state.currentView === "monthly");
+    $("tab-kanban")?.classList.toggle("active", state.currentView === "kanban");
+    $("tab-stories")?.classList.toggle("active", state.currentView === "stories");
+    $("tab-crm")?.classList.toggle("active", state.currentView === "crm");
     $("tab-meta-ads")?.classList.toggle("active", state.currentView === "meta_ads");
 
-    // Mostra/esconde o seletor de mês apenas na visão mensal
     const monthNav = $("editorial-month-nav");
-    if (monthNav) {
-      monthNav.hidden = state.currentView !== "monthly";
-    }
+    if (monthNav) monthNav.hidden = state.currentView !== "monthly";
   }
 
   function setupViewToggle() {
-    $("tab-weekly")?.addEventListener("click", () => {
-      state.currentView = "weekly";
-      renderCurrentView();
-    });
-
-    $("tab-monthly")?.addEventListener("click", () => {
-      state.currentView = "monthly";
-      renderCurrentView();
-    });
-
-    $("tab-meta-ads")?.addEventListener("click", () => {
-      state.currentView = "meta_ads";
-      renderCurrentView();
-    });
+    $("tab-weekly")?.addEventListener("click", () => { state.currentView = "weekly"; renderCurrentView(); });
+    $("tab-monthly")?.addEventListener("click", () => { state.currentView = "monthly"; renderCurrentView(); });
+    $("tab-kanban")?.addEventListener("click", () => { state.currentView = "kanban"; renderCurrentView(); });
+    $("tab-stories")?.addEventListener("click", () => { state.currentView = "stories"; renderCurrentView(); });
+    $("tab-crm")?.addEventListener("click", () => { state.currentView = "crm"; renderCurrentView(); });
+    $("tab-meta-ads")?.addEventListener("click", () => { state.currentView = "meta_ads"; renderCurrentView(); });
 
     $("month-select")?.addEventListener("change", (e) => {
       state.selectedMonth = e.target.value;
@@ -803,28 +578,18 @@
 
   async function init() {
     setupViewToggle();
-
-    const form = $("admin-pin-form");
-    if (form) {
-      form.addEventListener("submit", submitEditorialPin);
-    }
+    $("admin-pin-form")?.addEventListener("submit", submitEditorialPin);
 
     const pinInput = $("admin-pin");
     if (pinInput) {
       pinInput.addEventListener("input", () => {
         pinInput.value = normalizePin(pinInput.value);
-        if (pinInput.value.length === 6 && state.pinConfigured) {
-          form?.requestSubmit();
-        }
+        if (pinInput.value.length === 6 && state.pinConfigured) $("admin-pin-form")?.requestSubmit();
       });
     }
 
     const sb = window.supabaseClient || window.sb;
-    if (!sb) {
-      setPinMessage("Conectando ao serviço de autenticação...", "");
-      setTimeout(init, 300);
-      return;
-    }
+    if (!sb) { setTimeout(init, 300); return; }
 
     try {
       const { data: { user } } = await sb.auth.getUser();
@@ -832,27 +597,18 @@
 
       let isAdmin = false;
       try {
-        const { data: rpcAdmin, error: rpcErr } = await sb.rpc("is_admin");
-        if (!rpcErr && rpcAdmin === true) {
-          isAdmin = true;
-        } else if (typeof window.verificarAcessoAdmin === "function") {
-          isAdmin = await window.verificarAcessoAdmin();
-        }
+        const { data: rpcAdmin } = await sb.rpc("is_admin");
+        if (rpcAdmin === true) isAdmin = true;
+        else if (typeof window.verificarAcessoAdmin === "function") isAdmin = await window.verificarAcessoAdmin();
       } catch (_) {
-        if (typeof window.verificarAcessoAdmin === "function") {
-          isAdmin = await window.verificarAcessoAdmin();
-        }
+        if (typeof window.verificarAcessoAdmin === "function") isAdmin = await window.verificarAcessoAdmin();
       }
 
       state.isAdmin = isAdmin;
 
       if (!isAdmin) {
         setPinMessage("Acesso restrito a administradores. Redirecionando...", "error");
-        const submit = $("admin-pin-submit");
-        if (submit) submit.disabled = true;
-        setTimeout(() => {
-          window.location.replace("/dashboard/");
-        }, 800);
+        setTimeout(() => { window.location.replace("/dashboard/"); }, 800);
         return;
       }
 
@@ -863,8 +619,7 @@
 
       await loadPinStatus();
     } catch (err) {
-      console.error("[Editorial Init Error]", err);
-      setPinMessage("Falha ao carregar credenciais.", "error");
+      console.error("[Marketing Init Error]", err);
     }
   }
 
