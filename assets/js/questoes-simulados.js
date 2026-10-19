@@ -8058,7 +8058,7 @@ function renderSimulationLibrary() {
     qsState.sets.map(
       (set) => {
         const m =
-          set.metrics;
+          set.metrics || { correct: 0, wrong: 0 };
 
 
         return `
@@ -8805,7 +8805,7 @@ function renderSetHistory() {
     historySets.map(
       (set) => {
         const m =
-          set.metrics;
+          set.metrics || { correct: 0, wrong: 0 };
 
         const isActive =
           qsState.currentSet?.id
