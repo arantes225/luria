@@ -10,62 +10,84 @@
     user: null,
     isAdmin: false,
     pinConfigured: false,
-    pinUnlocked: false,
-    activeTab: "overview",
-    calendar: []
+    pinUnlocked: false
   };
 
   const EDITORIAL_DATA = [
     {
-      id: "sem-1",
-      week: "Semana 1 - Outubro",
-      badge: "Pronto para Publicação",
+      id: "post-1",
+      day: "Terça-feira · 12h00",
+      type: "Carrossel Técnico (7 Slides)",
+      goal: "Autoridade & Saves",
+      badge: "Semana 1 - Abertura",
       badgeClass: "ready",
-      title: "Diagnóstico Rápido de AVC Isquêmico no PS",
-      sub: "AVC Isquêmico · Delta T · HGT de Emergência",
-      format: "Ultra Motion (12 KB)",
-      status: "Aprovado",
-      summary: "Ponto-chave clínico: teste obrigatório de HGT antes de levar o paciente à Tomografia Computadorizada para descartar 'stroke mimic' hipoglicêmico.",
-      demoUrl: "/demo-avc.html",
-      metrics: {
-        readTime: "32s",
-        targetAudience: "Médicos generalistas & Residentes",
-        channel: "Instagram Reels & TikTok"
-      }
+      title: "5 Condutas em Emergência que Mudaram nas Últimas Diretrizes",
+      subtitle: "Diretrizes Atuais · Cuidados Críticos & Pronto-Socorro",
+      rationale: "Estudos de mercado (Sprout Social / Metricool 2024/2025) mostram que a janela de almoço de terça-feira tem o maior pico de salvamento de carrosséis educativos para o público médico.",
+      actionPlan: "Apresentar 5 condutas contra-intuitivas (ex: oxigenioterapia liberal em IAM/AVC, bicarbonato em PCR, reposição rápida de potássio). Terminar com CTA para salvar para consulta rápida no plantão.",
+      channel: "Instagram Feed (Carrossel 1080x1350)",
+      driveUrl: "https://drive.google.com/",
+      status: "Pronto para Agendamento"
     },
     {
-      id: "sem-2",
-      week: "Semana 2 - Outubro",
-      badge: "Em Produção",
+      id: "post-2",
+      day: "Quarta-feira · 19h30",
+      type: "Reels / Vídeo Full HD (30s)",
+      goal: "Alcance & Descoberta",
+      badge: "Ultra Max Blaster",
       badgeClass: "progress",
-      title: "Hipercalemia Grave com Alteração de ECG",
-      sub: "Nefro / Emergência · Gluconato de Cálcio 10%",
-      format: "Ultra Motion + Carrossel",
-      status: "Em Roteirização",
-      summary: "Diferenciação do papel do Gluconato de Cálcio (estabilizador de membrana cardíaca) vs medidas de 'shift' intracelular (Insulina + Glicose, Nebulização com beta-2).",
-      demoUrl: null,
-      metrics: {
-        readTime: "45s",
-        targetAudience: "Plantão & Terapia Intensiva",
-        channel: "Reels / Carrossel Educativo"
-      }
+      title: "AVC ou Hipoglicemia? O Erro de 2 Minutos que Pode Custar o Delta T",
+      subtitle: "Neurologia / Emergência · Delta T & HGT Obrigatório",
+      rationale: "Reels postados na transição de saída do trabalho (19h30) atingem o maior público que ainda não segue o perfil. Formato de 30s maximiza a retenção de tela de 100%.",
+      actionPlan: "Roteiro dinâmico com paciente simulado apresentando déficit focal e desvio de rima. Ponto central: glicemia capilar imediata antes da tomografia. Finaliza provocando discussão nos comentários.",
+      channel: "Reels & TikTok (1080x1920 60fps)",
+      driveUrl: "https://drive.google.com/",
+      status: "Renderização em 4K"
     },
     {
-      id: "sem-3",
-      week: "Semana 3 - Outubro",
-      badge: "Planejado",
+      id: "post-3",
+      day: "Quinta-feira · 12h30",
+      type: "Carrossel Mental (5 Slides)",
+      goal: "Dor do Estudante & Retenção",
+      badge: "Método de Estudo",
+      badgeClass: "ready",
+      title: "Curva do Esquecimento na Medicina: Por que Ler a Apostila 3x Não Funciona",
+      subtitle: "Neurociência do Aprendizado · Repetição Espaçada & Flashcards",
+      rationale: "Quinta-feira ao meio-dia é o ápice do cansaço mental do estudante de medicina, momento em que ele mais busca estratégias de eficiência de estudo e ferramentas de retenção.",
+      actionPlan: "Mostrar a taxa de perda de memória após 24h e 7 dias. Contrastar estudo passivo (grifos/releitura) com estudo ativo (testes diários e active recall). Introdução sutil da metodologia LURIA.",
+      channel: "Instagram Feed (Carrossel 1080x1350)",
+      driveUrl: "https://drive.google.com/",
+      status: "Em Diagramação"
+    },
+    {
+      id: "post-4",
+      day: "Sexta-feira · 18h30",
+      type: "Reels Curto / Pílula (20s)",
+      goal: "Compartilhamento Rápido",
+      badge: "Pulo do Gato",
       badgeClass: "planned",
-      title: "Critérios de Wells & Manejo do TEP",
-      sub: "Pneumo / Emergência · Escore de Wells & D-Dímero",
-      format: "Carrossel Interativo",
-      status: "Backlog",
-      summary: "Fluxograma de tomada de decisão: quando pedir D-Dímero vs Angiotomografia de Tórax direto.",
-      demoUrl: null,
-      metrics: {
-        readTime: "1m",
-        targetAudience: "Internato & Médicos de Emergência",
-        channel: "Carrossel de Slides"
-      }
+      title: "ECG em 30 Segundos: O Sinal Silencioso da Hipercalemia Grave",
+      subtitle: "Cardiologia & Nefro · Onda T Apiculada & QRS Alargado",
+      rationale: "Sexta-feira no fim da tarde médicos e internos entrando no plantão compartilham pílulas rápidas em grupos de WhatsApp e mensagens diretas.",
+      actionPlan: "Análise ultra rápida de traçado eletrocardiográfico real com transição para gluconato de cálcio a 10% como estabilizador elétrico de membrana imediato.",
+      channel: "Reels (1080x1920)",
+      driveUrl: "https://drive.google.com/",
+      status: "Em Roteiro"
+    },
+    {
+      id: "post-5",
+      day: "Domingo · 20h00",
+      type: "Stories Interativos + Caso Clínico",
+      goal: "Engajamento & Interação",
+      badge: "Gamificação",
+      badgeClass: "planned",
+      title: "Desafio Clínico do Domingo: Dor Torácica Súbita no PS",
+      subtitle: "Simulador de Casos · Enquetes & Diagnóstico Diferencial",
+      rationale: "Domingo à noite registra o maior tempo de tela de relaxamento pré-semana. Usuários respondem ativamente a enquetes de múltiplos passos nos Stories.",
+      actionPlan: "Sequência de 5 Stories: História clínica -> Exame físico -> Imagem/ECG -> Enquete de conduta -> Resolução detalhada com gabarito comentado.",
+      channel: "Instagram Stories (Interativo)",
+      driveUrl: "https://drive.google.com/",
+      status: "Planejado"
     }
   ];
 
@@ -98,9 +120,7 @@
   }
 
   function normalizePin(value) {
-    return String(value || "")
-      .replace(/\D/g, "")
-      .slice(0, 6);
+    return String(value || "").replace(/\D/g, "").slice(0, 6);
   }
 
   function setPinMessage(text, type = "") {
@@ -249,39 +269,43 @@
     list.innerHTML = EDITORIAL_DATA.map((item) => `
       <article class="editorial-card ${item.badgeClass}">
         <div class="editorial-card-header">
-          <span class="editorial-week-tag">${item.week}</span>
+          <span class="editorial-week-tag">📅 ${item.day}</span>
           <span class="editorial-badge badge-${item.badgeClass}">${item.badge}</span>
         </div>
+
         <h3 class="editorial-title">${item.title}</h3>
-        <p class="editorial-sub">${item.sub}</p>
-        <p class="editorial-summary">${item.summary}</p>
+        <p class="editorial-sub">${item.subtitle}</p>
         
+        <div class="editorial-study-box">
+          <strong>🔬 Base Científica & Estudo de Mercado:</strong>
+          <p>${item.rationale}</p>
+        </div>
+
+        <div class="editorial-action-box">
+          <strong>🎯 Roteiro & Plano de Ação:</strong>
+          <p>${item.actionPlan}</p>
+        </div>
+
         <div class="editorial-meta-grid">
           <div class="editorial-meta-item">
             <span class="meta-label">Formato</span>
-            <strong class="meta-val">${item.format}</strong>
+            <strong class="meta-val">${item.type}</strong>
           </div>
           <div class="editorial-meta-item">
-            <span class="meta-label">Duração</span>
-            <strong class="meta-val">${item.metrics.readTime}</strong>
+            <span class="meta-label">Objetivo</span>
+            <strong class="meta-val">${item.goal}</strong>
           </div>
           <div class="editorial-meta-item">
             <span class="meta-label">Canal</span>
-            <strong class="meta-val">${item.metrics.channel}</strong>
+            <strong class="meta-val">${item.channel}</strong>
           </div>
         </div>
 
         <div class="editorial-card-actions">
-          ${item.demoUrl ? `
-            <a href="${item.demoUrl}" target="_blank" class="button primary editorial-demo-btn">
-              ▶ Assistir Prévia (< 500 KB)
-            </a>
-          ` : `
-            <button class="button secondary" disabled>Roteiro em Revisão</button>
-          `}
-          <button class="button text" onclick="alert('Histórico e notas editoriais gravadas com sucesso.')">
-            Notas de Produção
-          </button>
+          <a href="${item.driveUrl}" target="_blank" rel="noopener noreferrer" class="button primary editorial-drive-btn">
+            📂 Abrir no Google Drive (Ultra HD)
+          </a>
+          <span class="editorial-status-pill">${item.status}</span>
         </div>
       </article>
     `).join("");

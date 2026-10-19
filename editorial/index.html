@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob: https://drive.google.com; upgrade-insecure-requests">
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
   <link rel="stylesheet" href="/assets/css/admin.css?v=20261013-consolidated1">
-  <link rel="stylesheet" href="/assets/css/editorial.css?v=1">
+  <link rel="stylesheet" href="/assets/css/editorial.css?v=2">
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20-admin-factory-pwa">
   <link rel="canonical" href="/editorial/">
   <script>(function(){try{if(location.pathname.endsWith("/editorial.html")){location.replace("/editorial/"+location.search+location.hash);}}catch(e){location.href="/editorial/";}})();</script>
@@ -32,7 +32,7 @@
   <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
   <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
 
-  <!-- PIN GATE (IDÊNTICO AO ADMIN) -->
+  <!-- PIN GATE (PROTEÇÃO IDÊNTICA AO ADMIN) -->
   <section id="admin-pin-gate" class="admin-pin-gate" aria-labelledby="admin-pin-title">
     <form id="admin-pin-form" class="admin-pin-card" autocomplete="off">
       <div class="admin-pin-brand">
@@ -42,13 +42,13 @@
           src="assets/img/logos/logo-principal.png?v=luria7"
           alt="LURIA"
         >
-        <small>Acesso protegido por PIN</small>
+        <small>Acesso Restrito a Administradores</small>
       </div>
 
       <div class="admin-pin-copy">
-        <span class="eyebrow">Planejamento & Produção</span>
+        <span class="eyebrow">Planejamento & Estratégia</span>
         <h1 id="admin-pin-title">Verificando acesso...</h1>
-        <p id="admin-pin-description">Digite seu PIN de 6 dígitos para abrir o calendário editorial.</p>
+        <p id="admin-pin-description">Digite seu PIN de 6 dígitos para abrir o planejamento editorial.</p>
       </div>
 
       <div id="admin-pin-fields" class="admin-pin-fields" hidden>
@@ -103,38 +103,38 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
 
           <div class="page-heading">
-            <span class="eyebrow">Produção & Inteligência</span>
-            <h1>Calendário Editorial & Vídeos</h1>
+            <span class="eyebrow">Estratégia de Lançamento · Semana 1</span>
+            <h1>Calendário Editorial & Produção Instagram</h1>
           </div>
         </header>
 
         <div class="editorial-header">
           <p class="editorial-intro">
-            Planejamento semanal de conteúdos, roteiros médicos e validação de vídeos em código nativo (< 500 KB) para publicação e distribuição.
+            Cronograma fundamentado em estudos de mercado (Sprout Social / Metricool) para o público médico. Todos os vídeos em qualidade máxima (Ultra HD) e carrosséis são exportados diretamente para o Google Drive.
           </p>
         </div>
 
         <section class="editorial-stats-row">
           <div class="editorial-stat-card">
-            <span class="stat-label">Conteúdos no Mês</span>
-            <strong class="stat-val">4 temas</strong>
+            <span class="stat-label">Publicações Semana 1</span>
+            <strong class="stat-val">5 posts</strong>
           </div>
           <div class="editorial-stat-card">
-            <span class="stat-label">Peso Médio por Vídeo</span>
-            <strong class="stat-val">~12 KB</strong>
+            <span class="stat-label">Padrão de Resolução</span>
+            <strong class="stat-val">Full HD / 4K</strong>
           </div>
           <div class="editorial-stat-card">
-            <span class="stat-label">Economia de Carga</span>
-            <strong class="stat-val">99.9%</strong>
+            <span class="stat-label">Repositório de Mídias</span>
+            <strong class="stat-val" style="color: #38bdf8;">Google Drive</strong>
           </div>
           <div class="editorial-stat-card">
-            <span class="stat-label">Status da Automação</span>
-            <strong class="stat-val" style="color: #4ade80;">Ativo</strong>
+            <span class="stat-label">Metodologia</span>
+            <strong class="stat-val" style="color: #4ade80;">Base Científica</strong>
           </div>
         </section>
 
         <h2 class="editorial-section-title">
-          <span>📅</span> Cronograma de Publicações
+          <span>📅</span> Cronograma Semanal Detalhado & Links no Drive
         </h2>
 
         <div id="editorial-cards-list" class="editorial-grid">
@@ -147,7 +147,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261019-editorial1"></script>
-  <script src="/assets/js/editorial.js?v=1"></script>
+  <script src="/assets/js/editorial.js?v=2"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
