@@ -1,12 +1,12 @@
 /* Editorial CSS - Clean, responsive, dark-mode aligned */
 .editorial-page {
   padding: 1.5rem 1rem 3.5rem;
-  max-width: 1450px;
+  max-width: 1480px;
   margin: 0 auto;
 }
 
 .editorial-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -15,26 +15,34 @@
 .editorial-intro {
   font-size: 0.98rem;
   color: var(--text-muted, #94a3b8);
-  max-width: 850px;
+  max-width: 880px;
   line-height: 1.55;
 }
 
-/* VIEW TOGGLE TABS (Semanal vs Mensal) */
+/* TOP CONTROLS BAR: TABS + MONTH SELECTOR */
+.editorial-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .editorial-view-toggle {
   display: inline-flex;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
   border-radius: 10px;
   padding: 0.25rem;
   gap: 0.35rem;
-  margin-bottom: 1.5rem;
 }
 
 .editorial-toggle-btn {
   background: transparent;
   border: none;
   color: var(--text-muted, #94a3b8);
-  padding: 0.55rem 1.25rem;
+  padding: 0.55rem 1.15rem;
   border-radius: 8px;
   font-size: 0.88rem;
   font-weight: 600;
@@ -49,6 +57,32 @@
   background: #38bdf8;
   color: #0b1329;
   box-shadow: 0 2px 8px rgba(56, 189, 248, 0.3);
+}
+
+.editorial-month-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+}
+
+.editorial-month-nav select {
+  background: transparent;
+  border: none;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.editorial-month-nav select option {
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .editorial-stats-row {
@@ -81,17 +115,9 @@
   color: var(--text-primary, #f8fafc);
 }
 
-.editorial-section-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--text-primary, #f8fafc);
-  margin-bottom: 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* PLANNER SEMANAL - GRID DE 7 DIAS */
+/* ==============================================================
+   PLANNER SEMANAL (7 DIAS)
+   ============================================================== */
 .editorial-planner-board {
   display: grid;
   grid-template-columns: repeat(7, minmax(220px, 1fr));
@@ -107,7 +133,7 @@
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  min-height: 520px;
+  min-height: 540px;
   scroll-snap-align: start;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
@@ -187,7 +213,6 @@
   margin: 0;
 }
 
-/* CARD DENTRO DO PLANNER SEMANAL */
 .planner-card {
   background: rgba(30, 41, 59, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -261,6 +286,25 @@
   margin: 0;
 }
 
+.planner-funnel {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.funnel-tag {
+  font-size: 0.68rem;
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.funnel-top { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+.funnel-mid { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
+.funnel-bottom { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+
 .planner-study {
   background: rgba(56, 189, 248, 0.08);
   border-left: 2px solid #38bdf8;
@@ -332,11 +376,56 @@
 }
 
 /* ==============================================================
-   CRONOGRAMA MENSAL (4 SEMANAS ESTRUTURADAS)
+   CRONOGRAMA MENSAL MULTI-MÊS COM ESTRATÉGIA AVANÇADA
    ============================================================== */
+.editorial-month-meta-bar {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.month-headline strong {
+  font-size: 1.15rem;
+  color: #f8fafc;
+  display: block;
+}
+
+.month-headline span {
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.month-kpis {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.month-kpi-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.month-kpi-item small {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.month-kpi-item strong {
+  font-size: 1.1rem;
+  color: #38bdf8;
+}
+
 .editorial-month-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 1.5rem;
 }
 
@@ -388,8 +477,9 @@
 }
 
 .month-week-goal {
-  background: rgba(56, 189, 248, 0.1);
-  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.08);
+  border-left: 2px solid #38bdf8;
+  border-radius: 6px;
   padding: 0.65rem 0.85rem;
   font-size: 0.84rem;
   color: #cbd5e1;
@@ -445,3 +535,141 @@
   margin-top: auto;
   padding-top: 0.5rem;
 }
+
+/* ==============================================================
+   META ADS & GROWTH DASHBOARD (PRONTO PARA INTEGRAÇÃO DA API)
+   ============================================================== */
+.meta-ads-hub {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.meta-ads-api-banner {
+  background: linear-gradient(135deg, rgba(6, 104, 225, 0.15) 0%, rgba(56, 189, 248, 0.08) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.meta-ads-banner-copy strong {
+  font-size: 1.15rem;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-ads-banner-copy p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin: 0.25rem 0 0 0;
+  max-width: 650px;
+}
+
+.meta-ads-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  color: #facc15;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.meta-ads-status-badge.live {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.4);
+  color: #4ade80;
+}
+
+.meta-ads-kpis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.meta-ads-kpi-card {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.meta-ads-kpi-card span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.meta-ads-kpi-card strong {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.meta-ads-kpi-card small {
+  font-size: 0.75rem;
+  color: #4ade80;
+}
+
+.meta-campaigns-table-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.meta-campaigns-table-card h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.meta-table th {
+  padding: 0.75rem 1rem;
+  color: #94a3b8;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.meta-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+}
+
+.meta-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+}
+
+.status-dot.active { background: #4ade80; box-shadow: 0 0 8px #4ade80; }
+.status-dot.pending { background: #facc15; }
