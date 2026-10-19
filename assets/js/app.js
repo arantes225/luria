@@ -1294,7 +1294,7 @@ function writeCachedTheme(userId, theme) {
 function luriaSafeContentUrl(value, {relative = false, mailto = false} = {}) {
   const raw = String(value ?? "").trim();
   if (!raw || /[\u0000-\u001f\u007f\\]/.test(raw)) return "";
-  const local = relative && (/^\/(?!\/)/.test(raw) || /^[#?]/.test(raw));
+  const local = relative && (/^\/(?!\/)/.test(raw) || /^[#?]/.test(raw) || /^[a-zA-Z0-9_.-]+\//.test(raw));
   if (!local && !/^https?:\/\//i.test(raw) && !(mailto && /^mailto:/i.test(raw))) return "";
   try {
     const url = new URL(raw, window.location.href);
