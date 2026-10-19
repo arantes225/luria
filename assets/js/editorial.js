@@ -13,81 +13,131 @@
     pinUnlocked: false
   };
 
-  const EDITORIAL_DATA = [
+  const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link";
+
+  // PLANNER SEMANAL ESTRUTURADO (7 DIAS DA SEMANA)
+  const WEEK_PLAN = [
     {
-      id: "post-1",
-      day: "Terça-feira · 12h00",
-      type: "Carrossel Técnico (7 Slides)",
-      goal: "Autoridade & Saves",
-      badge: "Semana 1 - Abertura",
-      badgeClass: "ready",
-      title: "5 Condutas em Emergência que Mudaram nas Últimas Diretrizes",
-      subtitle: "Diretrizes Atuais · Cuidados Críticos & Pronto-Socorro",
-      rationale: "Estudos de mercado (Sprout Social / Metricool 2024/2025) mostram que a janela de almoço de terça-feira tem o maior pico de salvamento de carrosséis educativos para o público médico.",
-      actionPlan: "Apresentar 5 condutas contra-intuitivas (ex: oxigenioterapia liberal em IAM/AVC, bicarbonato em PCR, reposição rápida de potássio). Terminar com CTA para salvar para consulta rápida no plantão.",
-      channel: "Instagram Feed (Carrossel 1080x1350)",
-      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
-      status: "Pronto para Agendamento"
+      dayCode: "seg",
+      dayName: "Segunda-feira",
+      dateLabel: "Planejamento & Alinhamento",
+      posts: []
     },
     {
-      id: "post-2",
-      day: "Quarta-feira · 19h30",
-      type: "Reels / Vídeo Full HD (30s)",
-      goal: "Alcance & Descoberta",
-      badge: "Ultra Max Blaster",
-      badgeClass: "progress",
-      title: "AVC ou Hipoglicemia? O Erro de 2 Minutos que Pode Custar o Delta T",
-      subtitle: "Neurologia / Emergência · Delta T & HGT Obrigatório",
-      rationale: "Reels postados na transição de saída do trabalho (19h30) atingem o maior público que ainda não segue o perfil. Formato de 30s maximiza a retenção de tela de 100%.",
-      actionPlan: "Roteiro dinâmico com paciente simulado apresentando déficit focal e desvio de rima. Ponto central: glicemia capilar imediata antes da tomografia. Finaliza provocando discussão nos comentários.",
-      channel: "Reels & TikTok (1080x1920 60fps)",
-      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
-      status: "Renderização em 4K"
+      dayCode: "ter",
+      dayName: "Terça-feira",
+      dateLabel: "Pico de Saves (Almoço)",
+      posts: [
+        {
+          id: "post-1",
+          time: "12h00",
+          type: "Carrossel Técnico (7 Slides)",
+          goal: "Autoridade & Saves",
+          badge: "Abertura",
+          badgeClass: "ready",
+          title: "5 Condutas em Emergência que Mudaram nas Últimas Diretrizes",
+          subtitle: "Diretrizes Atuais · Cuidados Críticos & PS",
+          rationale: "Estudos de mercado mostram que a janela de almoço de terça-feira tem o maior pico de salvamento de carrosséis educativos para o público médico.",
+          actionPlan: "Apresentar 5 condutas contra-intuitivas (ex: O2 liberal, bicarbonato, reposição rápida de K+). CTA para salvar e consultar no plantão.",
+          format: "Feed (1080x1350)",
+          driveUrl: DRIVE_FOLDER,
+          status: "Pronto para Agendamento"
+        }
+      ]
     },
     {
-      id: "post-3",
-      day: "Quinta-feira · 12h30",
-      type: "Carrossel Mental (5 Slides)",
-      goal: "Dor do Estudante & Retenção",
-      badge: "Método de Estudo",
-      badgeClass: "ready",
-      title: "Curva do Esquecimento na Medicina: Por que Ler a Apostila 3x Não Funciona",
-      subtitle: "Neurociência do Aprendizado · Repetição Espaçada & Flashcards",
-      rationale: "Quinta-feira ao meio-dia é o ápice do cansaço mental do estudante de medicina, momento em que ele mais busca estratégias de eficiência de estudo e ferramentas de retenção.",
-      actionPlan: "Mostrar a taxa de perda de memória após 24h e 7 dias. Contrastar estudo passivo (grifos/releitura) com estudo ativo (testes diários e active recall). Introdução sutil da metodologia LURIA.",
-      channel: "Instagram Feed (Carrossel 1080x1350)",
-      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
-      status: "Em Diagramação"
+      dayCode: "qua",
+      dayName: "Quarta-feira",
+      dateLabel: "Alcance & Transição",
+      posts: [
+        {
+          id: "post-2",
+          time: "19h30",
+          type: "Reels / Vídeo Full HD (30s)",
+          goal: "Alcance & Descoberta",
+          badge: "Ultra Blaster",
+          badgeClass: "progress",
+          title: "AVC ou Hipoglicemia? O Erro de 2 Minutos que Pode Custar o Delta T",
+          subtitle: "Neurologia / Emergência · Delta T & HGT",
+          rationale: "Reels postados na transição de saída do trabalho (19h30) atingem grande público não-seguidor. 30s maximiza retenção completa.",
+          actionPlan: "Caso simulado com paciente apresentando déficit focal súbito e desvio de rima. Ponto central: HGT imediato antes da TC.",
+          format: "Reels 60fps (1080x1920)",
+          driveUrl: DRIVE_FOLDER,
+          status: "Renderização em 4K"
+        }
+      ]
     },
     {
-      id: "post-4",
-      day: "Sexta-feira · 18h30",
-      type: "Reels Curto / Pílula (20s)",
-      goal: "Compartilhamento Rápido",
-      badge: "Pulo do Gato",
-      badgeClass: "planned",
-      title: "ECG em 30 Segundos: O Sinal Silencioso da Hipercalemia Grave",
-      subtitle: "Cardiologia & Nefro · Onda T Apiculada & QRS Alargado",
-      rationale: "Sexta-feira no fim da tarde médicos e internos entrando no plantão compartilham pílulas rápidas em grupos de WhatsApp e mensagens diretas.",
-      actionPlan: "Análise ultra rápida de traçado eletrocardiográfico real com transição para gluconato de cálcio a 10% como estabilizador elétrico de membrana imediato.",
-      channel: "Reels (1080x1920)",
-      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
-      status: "Em Roteiro"
+      dayCode: "qui",
+      dayName: "Quinta-feira",
+      dateLabel: "Estudo & Neurociência",
+      posts: [
+        {
+          id: "post-3",
+          time: "12h30",
+          type: "Carrossel Mental (5 Slides)",
+          goal: "Dor do Estudante",
+          badge: "Método de Estudo",
+          badgeClass: "ready",
+          title: "Curva do Esquecimento na Medicina: Por que Ler a Apostila 3x Não Funciona",
+          subtitle: "Neurociência · Repetição Espaçada",
+          rationale: "Quinta ao meio-dia é o ápice do cansaço mental do estudante de medicina; busca por eficiência e ferramentas de retenção.",
+          actionPlan: "Demonstrar a perda de memória após 24h e 7 dias. Comparar estudo passivo vs estudo ativo (active recall). Metodologia LURIA.",
+          format: "Feed (1080x1350)",
+          driveUrl: DRIVE_FOLDER,
+          status: "Em Diagramação"
+        }
+      ]
     },
     {
-      id: "post-5",
-      day: "Domingo · 20h00",
-      type: "Stories Interativos + Caso Clínico",
-      goal: "Engajamento & Interação",
-      badge: "Gamificação",
-      badgeClass: "planned",
-      title: "Desafio Clínico do Domingo: Dor Torácica Súbita no PS",
-      subtitle: "Simulador de Casos · Enquetes & Diagnóstico Diferencial",
-      rationale: "Domingo à noite registra o maior tempo de tela de relaxamento pré-semana. Usuários respondem ativamente a enquetes de múltiplos passos nos Stories.",
-      actionPlan: "Sequência de 5 Stories: História clínica -> Exame físico -> Imagem/ECG -> Enquete de conduta -> Resolução detalhada com gabarito comentado.",
-      channel: "Instagram Stories (Interativo)",
-      driveUrl: "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link",
-      status: "Planejado"
+      dayCode: "sex",
+      dayName: "Sexta-feira",
+      dateLabel: "Pílula Rápida de Plantão",
+      posts: [
+        {
+          id: "post-4",
+          time: "18h30",
+          type: "Reels Curto / Pílula (20s)",
+          goal: "Compartilhamento",
+          badge: "Pulo do Gato",
+          badgeClass: "planned",
+          title: "ECG em 30 Segundos: O Sinal Silencioso da Hipercalemia Grave",
+          subtitle: "Cardiologia & Nefro · Onda T Apiculada",
+          rationale: "Médicos e internos entrando no plantão compartilham pílulas rápidas em grupos de WhatsApp e DMs.",
+          actionPlan: "Traçado eletrocardiográfico real e indicação imediata de gluconato de cálcio a 10% como estabilizador de membrana.",
+          format: "Reels (1080x1920)",
+          driveUrl: DRIVE_FOLDER,
+          status: "Em Roteiro"
+        }
+      ]
+    },
+    {
+      dayCode: "sab",
+      dayName: "Sábado",
+      dateLabel: "Descanso & Bastidores",
+      posts: []
+    },
+    {
+      dayCode: "dom",
+      dayName: "Domingo",
+      dateLabel: "Interação & Gamificação",
+      posts: [
+        {
+          id: "post-5",
+          time: "20h00",
+          type: "Stories Interativos",
+          goal: "Engajamento",
+          badge: "Gamificação",
+          badgeClass: "planned",
+          title: "Desafio Clínico do Domingo: Dor Torácica Súbita no PS",
+          subtitle: "Simulador de Casos · Enquetes",
+          rationale: "Domingo à noite registra alto tempo de tela de relaxamento pré-semana. Alto índice de respostas em enquetes interativas.",
+          actionPlan: "Sequência de 5 Stories: Caso -> Exame físico -> Imagem/ECG -> Enquete de conduta -> Resolução comentada.",
+          format: "Stories Interativos",
+          driveUrl: DRIVE_FOLDER,
+          status: "Planejado"
+        }
+      ]
     }
   ];
 
@@ -146,20 +196,20 @@
     }
     if (description) {
       description.textContent = state.pinConfigured
-        ? "Digite os 6 dígitos do Admin para acessar a página Editorial."
+        ? "Digite os 6 dígitos do Admin para acessar o Planner Editorial."
         : "Este é seu primeiro acesso protegido. Crie um PIN de 6 dígitos.";
     }
     if (label) {
       label.textContent = state.pinConfigured ? "PIN de 6 dígitos" : "Criar PIN";
     }
     if (submit) {
-      submit.textContent = state.pinConfigured ? "Desbloquear Editorial" : "Cadastrar PIN";
+      submit.textContent = state.pinConfigured ? "Desbloquear Planner" : "Cadastrar PIN";
       submit.disabled = false;
     }
 
     setPinMessage(
       state.pinConfigured
-        ? "A área editorial permanece protegida por PIN."
+        ? "O planner permanece protegido por PIN."
         : "O PIN será protegido e sincronizado com o Admin."
     );
 
@@ -189,7 +239,7 @@
     if (gate) gate.hidden = true;
     if (app) app.hidden = false;
 
-    renderEditorialList();
+    renderWeeklyPlanner();
   }
 
   async function submitEditorialPin(event) {
@@ -249,7 +299,7 @@
         }
         if (submit) {
           submit.disabled = false;
-          submit.textContent = "Desbloquear Editorial";
+          submit.textContent = "Desbloquear Planner";
         }
       }
     } catch (err) {
@@ -257,58 +307,70 @@
       setPinMessage("Erro ao validar PIN administrativo.", "error");
       if (submit) {
         submit.disabled = false;
-        submit.textContent = "Desbloquear Editorial";
+        submit.textContent = "Desbloquear Planner";
       }
     }
   }
 
-  function renderEditorialList() {
-    const list = $("editorial-cards-list");
-    if (!list) return;
+  function renderWeeklyPlanner() {
+    const board = $("editorial-planner-board");
+    if (!board) return;
 
-    list.innerHTML = EDITORIAL_DATA.map((item) => `
-      <article class="editorial-card ${item.badgeClass}">
-        <div class="editorial-card-header">
-          <span class="editorial-week-tag">📅 ${item.day}</span>
-          <span class="editorial-badge badge-${item.badgeClass}">${item.badge}</span>
-        </div>
-
-        <h3 class="editorial-title">${item.title}</h3>
-        <p class="editorial-sub">${item.subtitle}</p>
-        
-        <div class="editorial-study-box">
-          <strong>🔬 Base Científica & Estudo de Mercado:</strong>
-          <p>${item.rationale}</p>
-        </div>
-
-        <div class="editorial-action-box">
-          <strong>🎯 Roteiro & Plano de Ação:</strong>
-          <p>${item.actionPlan}</p>
-        </div>
-
-        <div class="editorial-meta-grid">
-          <div class="editorial-meta-item">
-            <span class="meta-label">Formato</span>
-            <strong class="meta-val">${item.type}</strong>
+    board.innerHTML = WEEK_PLAN.map((col) => {
+      const hasPost = col.posts.length > 0;
+      return `
+        <div class="editorial-day-col ${hasPost ? "has-post" : ""}">
+          <div class="editorial-col-header">
+            <div class="editorial-col-day">
+              <span>${col.dayName}</span>
+              <small>${col.dateLabel}</small>
+            </div>
+            <span class="editorial-col-count ${hasPost ? "active-count" : ""}">
+              ${col.posts.length} ${col.posts.length === 1 ? "post" : "posts"}
+            </span>
           </div>
-          <div class="editorial-meta-item">
-            <span class="meta-label">Objetivo</span>
-            <strong class="meta-val">${item.goal}</strong>
-          </div>
-          <div class="editorial-meta-item">
-            <span class="meta-label">Canal</span>
-            <strong class="meta-val">${item.channel}</strong>
-          </div>
-        </div>
 
-        <div class="editorial-card-actions">
-          <a href="${item.driveUrl}" target="_blank" rel="noopener noreferrer" class="button primary editorial-drive-btn">
-            📂 Abrir no Google Drive (Ultra HD)
-          </a>
-          <span class="editorial-status-pill">${item.status}</span>
+          <div class="editorial-col-body">
+            ${hasPost ? col.posts.map(post => `
+              <article class="planner-card">
+                <div class="planner-card-top">
+                  <span class="planner-time">⏰ ${post.time}</span>
+                  <span class="planner-badge badge-${post.badgeClass}">${post.badge}</span>
+                </div>
+
+                <h4 class="planner-title">${post.title}</h4>
+                <p class="planner-sub">${post.subtitle}</p>
+
+                <div class="planner-study">
+                  <strong>🔬 Estudo & Rationale:</strong>
+                  <p>${post.rationale}</p>
+                </div>
+
+                <div class="planner-action">
+                  <strong>🎯 Roteiro:</strong>
+                  <p>${post.actionPlan}</p>
+                </div>
+
+                <div class="planner-meta">
+                  <span>Formato: <strong>${post.type}</strong></span>
+                  <span>Objetivo: <strong>${post.goal}</strong></span>
+                  <span>Dimensões: <strong>${post.format}</strong></span>
+                </div>
+
+                <a href="${post.driveUrl}" target="_blank" rel="noopener noreferrer" class="button primary planner-card-btn">
+                  📂 Ver no Drive
+                </a>
+              </article>
+            `).join("") : `
+              <div class="editorial-col-empty">
+                <span>☕</span>
+                <p>Dia reservado sem postagens no feed</p>
+              </div>
+            `}
+          </div>
         </div>
-      </article>
-    `).join("");
+      `;
+    }).join("");
   }
 
   async function init() {
@@ -338,7 +400,6 @@
       const { data: { user } } = await sb.auth.getUser();
       state.user = user;
 
-      // Validação estrita de admin usando RPC oficial da plataforma
       let isAdmin = false;
       try {
         const { data: rpcAdmin, error: rpcErr } = await sb.rpc("is_admin");
@@ -365,7 +426,6 @@
         return;
       }
 
-      // Se já tem grace period ativo do Admin:
       if (hasRecentAdminPinUnlock()) {
         unlockEditorialPage();
         return;
