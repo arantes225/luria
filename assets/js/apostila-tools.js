@@ -42,13 +42,55 @@
 
   const tools=document.createElement('div');
   tools.className='book-tools';
-  tools.innerHTML='<button type="button" class="book-tool-btn" data-apostila-highlight>Grifar</button><button type="button" class="book-tool-btn" data-apostila-postit>Post-it</button><div class="book-highlight-palette" data-highlight-palette hidden><button type="button" class="book-tool-mini" data-highlight-undo title="Desfazer último grifo" aria-label="Desfazer último grifo">↶</button><button type="button" class="book-color-dot is-active" data-highlight-color="#fff09a" style="background:#fff09a" aria-label="Amarelo"></button><button type="button" class="book-color-dot" data-highlight-color="#bff3c8" style="background:#bff3c8" aria-label="Verde"></button><button type="button" class="book-color-dot" data-highlight-color="#bfe1ff" style="background:#bfe1ff" aria-label="Azul"></button><button type="button" class="book-color-dot" data-highlight-color="#ffc8df" style="background:#ffc8df" aria-label="Rosa"></button><button type="button" class="book-color-dot" data-highlight-color="#e6ccff" style="background:#e6ccff" aria-label="Roxo"></button></div><div class="book-postit-palette" data-postit-palette hidden><button type="button" class="book-tool-mini is-active" data-postit-shape="square">▭ Quadrado</button></div>';
+  tools.innerHTML='<button type="button" class="book-tool-btn" data-apostila-highlight>Grifar</button><button type="button" class="book-tool-btn" data-apostila-postit>Post-it</button><button type="button" class="book-tool-btn book-tool-notion" data-apostila-notion style="grid-column: 1 / -1; background: #23272f; border-color: #3e4451;">📝 Conectar ao Notion</button><div class="book-highlight-palette" data-highlight-palette hidden><button type="button" class="book-tool-mini" data-highlight-undo title="Desfazer último grifo" aria-label="Desfazer último grifo">↶</button><button type="button" class="book-color-dot is-active" data-highlight-color="#fff09a" style="background:#fff09a" aria-label="Amarelo"></button><button type="button" class="book-color-dot" data-highlight-color="#bff3c8" style="background:#bff3c8" aria-label="Verde"></button><button type="button" class="book-color-dot" data-highlight-color="#bfe1ff" style="background:#bfe1ff" aria-label="Azul"></button><button type="button" class="book-color-dot" data-highlight-color="#ffc8df" style="background:#ffc8df" aria-label="Rosa"></button><button type="button" class="book-color-dot" data-highlight-color="#e6ccff" style="background:#e6ccff" aria-label="Roxo"></button></div><div class="book-postit-palette" data-postit-palette hidden><button type="button" class="book-tool-mini is-active" data-postit-shape="square">▭ Quadrado</button></div>';
   outlineHead.insertAdjacentElement('afterend',tools);
   requestAnimationFrame(()=>requestAnimationFrame(fitOutline));
   window.addEventListener('resize',fitOutline,{passive:true});
 
   const highlightBtn=tools.querySelector('[data-apostila-highlight]');
-  const postitBtn=tools.querySelector('[data-apostila-postit]');const palette=tools.querySelector('[data-highlight-palette]');const postitPalette=tools.querySelector('[data-postit-palette]');let highlightColor='#fff09a';let postitShape='square';
+  const postitBtn=tools.querySelector('[data-apostila-postit]');
+  const notionBtn=tools.querySelector('[data-apostila-notion]');
+  const palette=tools.querySelector('[data-highlight-palette]');
+  const postitPalette=tools.querySelector('[data-postit-palette]');
+  let highlightColor='#fff09a';let postitShape='square';
+
+  if (notionBtn) {
+    // Verificar status do Notion e vincular evento de conexão
+    const checkNotion = async () => {
+      try {
+        const sb = window.supabaseClient;
+        if (!sb) return;
+        const { data } = await sb.functions.invoke("notion-api", { body: { action: "status" } });
+        if (data?.connected) {
+          notionBtn.textContent = "✓ Notion Conectado";
+          notionBtn.style.background = "#1b4d3e";
+          notionBtn.style.borderColor = "#2e7d32";
+        }
+      } catch (_) {}
+    };
+    checkNotion();
+
+    notionBtn.addEventListener('click', async () => {
+      try {
+        const sb = window.supabaseClient;
+        if (!sb) {
+          window.location.assign('/configuracoes/?section=perfil');
+          return;
+        }
+        notionBtn.disabled = true;
+        notionBtn.textContent = "Conectando...";
+        const redirectTo = window.location.href;
+        const { data, error } = await sb.functions.invoke("notion-auth", { body: { redirect_to: redirectTo } });
+        if (error || !data?.url) {
+          window.location.assign('/configuracoes/?section=perfil');
+          return;
+        }
+        window.location.assign(data.url);
+      } catch (_) {
+        window.location.assign('/configuracoes/?section=perfil');
+      }
+    });
+  }
   const base='luria:apostila:'+location.pathname.replace(/\/+$/,'');
   const highlightKey=base+':highlights:v1';
   const postitKey=base+':postits:v1';

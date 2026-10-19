@@ -202,11 +202,22 @@
     await refreshStatus();
 
     const params = new URLSearchParams(window.location.search);
-    if (params.get("google_calendar") === "connected") {
+    if (params.get("google_calendar") === "connected" || params.get("google_auth") === "1") {
+      try {
+        const { data: { session } } = await sb.auth.getSession();
+        if (session?.provider_token) {
+          await invoke("google-calendar-auth", {
+            provider_token: session.provider_token,
+            provider_refresh_token: session.provider_refresh_token || null
+          }).catch(() => null);
+        }
+      } catch (_) {}
+
       await refreshStatus();
       if (state.connected) await sync({ silent:true }).catch(()=>null);
       const url = new URL(window.location.href);
       url.searchParams.delete("google_calendar");
+      url.searchParams.delete("google_auth");
       window.history.replaceState({},"",url);
     }
   }

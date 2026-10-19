@@ -204,8 +204,48 @@ async function criarConta() {
   }
 })();
 
+async function entrarComGoogle() {
+  window.LuriaAuthStorage?.setRememberMe(lembrarInput?.checked !== false);
+  setCarregando(true);
+  mostrarMensagem("Redirecionando para o Google...");
+
+  try {
+    const redirectTo = window.location.origin + "/dashboard/?google_auth=1";
+    const { data, error } = await sb.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: redirectTo,
+        scopes: "email profile https://www.googleapis.com/auth/calendar",
+        queryParams: {
+          access_type: "offline",
+          prompt: "consent"
+        }
+      }
+    });
+
+    if (error) {
+      mostrarMensagem(error.message || "Erro ao conectar com Google.", "error");
+      setCarregando(false);
+      return;
+    }
+
+    if (data?.url) {
+      window.location.assign(data.url);
+    }
+  } catch (err) {
+    console.error("Google Auth Error:", err);
+    mostrarMensagem("Não foi possível iniciar a autenticação com Google.", "error");
+    setCarregando(false);
+  }
+}
+
 form.addEventListener("submit", entrar);
 criarButton.addEventListener("click", criarConta);
+
+const googleButton = document.getElementById("entrar-google");
+if (googleButton) {
+  googleButton.addEventListener("click", entrarComGoogle);
+}
 
 if (passkeyButton) {
   const supported = Boolean(window.PublicKeyCredential && sb?.auth?.signInWithPasskey);
