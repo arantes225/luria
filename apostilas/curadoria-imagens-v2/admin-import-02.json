@@ -1,0 +1,1532 @@
+[
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-92",
+    "target_section": "requisitos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Requisitos_artigo_4_lei_8142_repasses.svg",
+      "alt": "Os 6 Requisitos para recebimento de repasses (Artigo 4º)",
+      "title": "Os 6 Requisitos para recebimento de repasses (Artigo 4º)",
+      "caption": "Infográfico dos 6 itens obrigatórios: 1. Fundo de Saúde; 2. Conselho de Saúde; 3. Plano de Saúde; 4. Relatórios de Gestão; 5. Contrapartida orçamentária; 6. Comissão de elaboração do Plano de Carreira (PCCS).",
+      "didactic_note": "Infográfico dos 6 itens obrigatórios: 1. Fundo de Saúde; 2. Conselho de Saúde; 3. Plano de Saúde; 4. Relatórios de Gestão; 5. Contrapartida orçamentária; 6. Comissão de elaboração do Plano de Carreira (PCCS)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Requisitos_artigo_4_lei_8142_repasses.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-93",
+    "target_section": "arts6a7",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Artigo_7_principios_lei_8080_mapa.svg",
+      "alt": "Os Princípios do Artigo 7º da Lei 8.080",
+      "title": "Os Princípios do Artigo 7º da Lei 8.080",
+      "caption": "Mapeamento dos 14 incisos do art. 7º: universalidade, integralidade, preservação da autonomia, igualdade, direito à informação, divulgação, utilização da epidemiologia, etc.",
+      "didactic_note": "Mapeamento dos 14 incisos do art. 7º: universalidade, integralidade, preservação da autonomia, igualdade, direito à informação, divulgação, utilização da epidemiologia, etc."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Artigo_7_principios_lei_8080_mapa.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-94",
+    "target_section": "oxigenio",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_target_saturation_table.svg",
+      "alt": "Oximetria de pulso pré-ductal e metas de SpO₂ por minuto de vida",
+      "title": "Oximetria de pulso pré-ductal e metas de SpO₂ por minuto de vida",
+      "caption": "Tabela visual das metas da SBP: até 5 min (70–80%), 5–10 min (80–90%), > 10 min (85–95%); evitar hiperóxia e dano por radicais livres.",
+      "didactic_note": "Tabela visual das metas da SBP: até 5 min (70–80%), 5–10 min (80–90%), > 10 min (85–95%); evitar hiperóxia e dano por radicais livres."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_target_saturation_table.svg",
+    "source_name": "SBP / LURIA Graphic Team",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-95",
+    "target_section": "organizacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Niveis_atencao_saude_piramide.svg",
+      "alt": "Pirâmide de níveis de atenção e resolutividade (APS, Secundária, Terciária)",
+      "title": "Pirâmide de níveis de atenção e resolutividade (APS, Secundária, Terciária)",
+      "caption": "Demonstrar que a Atenção Primária é o centro ordenador das Redes de Atenção à Saúde (RAS), capaz de resolver mais de 80–85% das demandas populacionais.",
+      "didactic_note": "Demonstrar que a Atenção Primária é o centro ordenador das Redes de Atenção à Saúde (RAS), capaz de resolver mais de 80–85% das demandas populacionais."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Niveis_atencao_saude_piramide.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-96",
+    "target_section": "portas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portas_de_entrada_SUS_7508.svg",
+      "alt": "Portas de Entrada do SUS (Decreto 7.508/2011)",
+      "title": "Portas de Entrada do SUS (Decreto 7.508/2011)",
+      "caption": "Esquema das 4 portas de entrada oficiais: APS/UBS, Atenção Psicossocial (CAPS), Urgência e Emergência (UPA/Pronto-Socorro) e Serviços Especiais de Acesso Aberto.",
+      "didactic_note": "Esquema das 4 portas de entrada oficiais: APS/UBS, Atenção Psicossocial (CAPS), Urgência e Emergência (UPA/Pronto-Socorro) e Serviços Especiais de Acesso Aberto."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Portas_de_entrada_SUS_7508.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-97",
+    "target_section": "cuidado",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kangaroo_Mother_Care_preterm_baby.jpg",
+      "alt": "Posição Canguru (Método Canguru / Contato Pele a Pele prolongado)",
+      "title": "Posição Canguru (Método Canguru / Contato Pele a Pele prolongado)",
+      "caption": "Prematuro despido em posição vertical sobre o peito dos pais com contenção elástica; melhora da oxigenação, estabilidade térmica, ganho ponderal e vínculo afetivo.",
+      "didactic_note": "Prematuro despido em posição vertical sobre o peito dos pais com contenção elástica; melhora da oxigenação, estabilidade térmica, ganho ponderal e vínculo afetivo."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kangaroo_Mother_Care_preterm_baby.jpg",
+    "source_name": "Save the Children / Wikimedia",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-98",
+    "target_section": "inicial",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_airway_sniffing_position.jpg",
+      "alt": "Posicionamento da cabeça e coxim sob os ombros (posição de olfativa)",
+      "title": "Posicionamento da cabeça e coxim sob os ombros (posição de olfativa)",
+      "caption": "Leve extensão cervical sem hiperextensão ou flexão, garantindo abertura anatômica da via aérea neonatal.",
+      "didactic_note": "Leve extensão cervical sem hiperextensão ou flexão, garantindo abertura anatômica da via aérea neonatal."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_airway_sniffing_position.jpg",
+    "source_name": "American Heart Association / CDC",
+    "source_license": "Domínio Público"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-99",
+    "target_section": "profilaxias",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_eye_prophylaxis.jpg",
+      "alt": "Profilaxia ocular neonatal (nitrato de prata a 1% / eritromicina)",
+      "title": "Profilaxia ocular neonatal (nitrato de prata a 1% / eritromicina)",
+      "caption": "Aplicação correta no saco conjuntival inferior para prevenção de oftalmia gonocócica neonatal (Credé) sem lesar a córnea.",
+      "didactic_note": "Aplicação correta no saco conjuntival inferior para prevenção de oftalmia gonocócica neonatal (Credé) sem lesar a córnea."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_eye_prophylaxis.jpg",
+    "source_name": "World Health Organization (WHO)",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-100",
+    "target_section": "proteses",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mechanical_heart_valve_bilevel.jpg",
+      "alt": "Prótese Valvar Cardíaca Mecânica bivalvular (St. Jude Medical) vs Biológica",
+      "title": "Prótese Valvar Cardíaca Mecânica bivalvular (St. Jude Medical) vs Biológica",
+      "caption": "Prótese mecânica de duplo folheto de carbono pirolítico (durabilidade indefinida, anticoagulação permanente com Varfarina) comparada à bioprótese de pericárdio bovino (não exige anticoagulação perene, menor durabilidade por calcificação estrutural).",
+      "didactic_note": "Prótese mecânica de duplo folheto de carbono pirolítico (durabilidade indefinida, anticoagulação permanente com Varfarina) comparada à bioprótese de pericárdio bovino (não exige anticoagulação perene, menor durabilidade por calcificação estrutural)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mechanical_heart_valve_bilevel.jpg",
+    "source_name": "Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-101",
+    "target_section": "transfusao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Massive_transfusion_protocol_1_1_1_ratio.svg",
+      "alt": "Protocolo de Transfusão Maciça (MTP): Proporção balanceada 1:1:1",
+      "title": "Protocolo de Transfusão Maciça (MTP): Proporção balanceada 1:1:1",
+      "caption": "Infográfico da administração concomitante de 1 Concentrado de Hemácias : 1 Plasma Fresco Congelado : 1 Unidade de Plaquetas (pool), evitando a coagulopatia dilucional do choque grave.",
+      "didactic_note": "Infográfico da administração concomitante de 1 Concentrado de Hemácias : 1 Plasma Fresco Congelado : 1 Unidade de Plaquetas (pool), evitando a coagulopatia dilucional do choque grave."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Massive_transfusion_protocol_1_1_1_ratio.svg",
+    "source_name": "PROPPR Trial / LURIA Trauma Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-102",
+    "target_section": "sistemas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Necrotizing_enterocolitis_pneumatosis_intestinalis_xray.jpg",
+      "alt": "Radiografia de abdome em Enterocolite Necrosante (ECN - Critérios de Bell)",
+      "title": "Radiografia de abdome em Enterocolite Necrosante (ECN - Critérios de Bell)",
+      "caption": "Achado patognomônico de pneumatose intestinal (gás na parede de alças intestinais) e pneumoperitônio sinalizando perfuração com indicação cirúrgica de urgência.",
+      "didactic_note": "Achado patognomônico de pneumatose intestinal (gás na parede de alças intestinais) e pneumoperitônio sinalizando perfuração com indicação cirúrgica de urgência."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Necrotizing_enterocolitis_pneumatosis_intestinalis_xray.jpg",
+    "source_name": "Radiopaedia / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-103",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_congenital_pneumonia_strep_b_xray.jpg",
+      "alt": "Radiografia de tórax de Pneumonia Congênita / Sepse Precoce por Streptococcus agalactiae",
+      "title": "Radiografia de tórax de Pneumonia Congênita / Sepse Precoce por Streptococcus agalactiae",
+      "caption": "Infiltrado broncopulmonar bilateral assimétrico com broncogramas aéreos e derrame pleural associado, diferenciando de taquipneia transitória.",
+      "didactic_note": "Infiltrado broncopulmonar bilateral assimétrico com broncogramas aéreos e derrame pleural associado, diferenciando de taquipneia transitória."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_congenital_pneumonia_strep_b_xray.jpg",
+    "source_name": "Radiopaedia / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-104",
+    "target_section": "sistemas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyaline_membrane_disease_chest_xray.jpg",
+      "alt": "Radiografia de tórax de Síndrome do Desconforto Respiratório (Doença da Membrana Hialina)",
+      "title": "Radiografia de tórax de Síndrome do Desconforto Respiratório (Doença da Membrana Hialina)",
+      "caption": "Padrão clássico de infiltrado reticulogranular difuso (\"vidro moído\") com broncogramas aéreos visíveis além da silhueta cardíaca e hipoinsuflação pulmonar.",
+      "didactic_note": "Padrão clássico de infiltrado reticulogranular difuso (\"vidro moído\") com broncogramas aéreos visíveis além da silhueta cardíaca e hipoinsuflação pulmonar."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hyaline_membrane_disease_chest_xray.jpg",
+    "source_name": "Radiopaedia / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-105",
+    "target_section": "estenose-mitral",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Severe_left_atrial_enlargement_chest_xray.jpg",
+      "alt": "Radiografia de tórax de Valvopatia Mitral com Dilatação Aneurismática de Átrio Esquerdo",
+      "title": "Radiografia de tórax de Valvopatia Mitral com Dilatação Aneurismática de Átrio Esquerdo",
+      "caption": "Sinal do duplo contorno atrial à direita, elevação do brônquio-fonte esquerdo e retificação do arco médio esquerdo (abaulamento do apêndice atrial).",
+      "didactic_note": "Sinal do duplo contorno atrial à direita, elevação do brônquio-fonte esquerdo e retificação do arco médio esquerdo (abaulamento do apêndice atrial)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Severe_left_atrial_enlargement_chest_xray.jpg",
+    "source_name": "Radiopaedia / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-106",
+    "target_section": "data",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Regra_de_Nagele_calculo_DPP_infografico.svg",
+      "alt": "Regra de Nagele para cálculo da Data Provável do Parto (DPP)",
+      "title": "Regra de Nagele para cálculo da Data Provável do Parto (DPP)",
+      "caption": "Infográfico didático: DUM conhecida e regular → somar 7 dias ao dia da DUM; somar 9 meses (ou subtrair 3 meses) ao mês da DUM; ajustes para anos bissextos e ciclos não padronizados de 28 dias.",
+      "didactic_note": "Infográfico didático: DUM conhecida e regular → somar 7 dias ao dia da DUM; somar 9 meses (ou subtrair 3 meses) ao mês da DUM; ajustes para anos bissextos e ciclos não padronizados de 28 dias."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Regra_de_Nagele_calculo_DPP_infografico.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-107",
+    "target_section": "organos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SIRS_vs_CARS_PICS_trauma_trajectory.svg",
+      "alt": "Resposta Inflamatória Sistêmica (SIRS) vs Síndrome Anti-inflamatória Compensatória (CARS)",
+      "title": "Resposta Inflamatória Sistêmica (SIRS) vs Síndrome Anti-inflamatória Compensatória (CARS)",
+      "caption": "Trajetórias clínicas do politraumatizado: homeostase rápida vs evolução para Síndrome da Resposta Inflamatória Persistente, Imunossupressão e Catabolismo (PICS).",
+      "didactic_note": "Trajetórias clínicas do politraumatizado: homeostase rápida vs evolução para Síndrome da Resposta Inflamatória Persistente, Imunossupressão e Catabolismo (PICS)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:SIRS_vs_CARS_PICS_trauma_trajectory.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-108",
+    "target_section": "triagens",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pulse_oximetry_neonatal_hand.jpg",
+      "alt": "Sensor de oximetria de pulso em membro superior direito (pré-ductal)",
+      "title": "Sensor de oximetria de pulso em membro superior direito (pré-ductal)",
+      "caption": "Explicar o teste do coraçãozinho e a monitorização pré-ductal (pulso radial direito) antes da inserção do canal arterial.",
+      "didactic_note": "Explicar o teste do coraçãozinho e a monitorização pré-ductal (pulso radial direito) antes da inserção do canal arterial."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pulse_oximetry_neonatal_hand.jpg",
+    "source_name": "J. Heilman, MD",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-109",
+    "target_section": "calcio",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trousseau_sign_carpopedal_spasm.jpg",
+      "alt": "Sinal de Trousseau para hipocalcemia latente (espasmo carpopedal)",
+      "title": "Sinal de Trousseau para hipocalcemia latente (espasmo carpopedal)",
+      "caption": "Insuflação do manguito de pressão 20 mmHg acima da PAS por 3 minutos desencadeando flexão do punho e articulações metacarpofalângicas e adução dos dedos (\"mão de parteiro\").",
+      "didactic_note": "Insuflação do manguito de pressão 20 mmHg acima da PAS por 3 minutos desencadeando flexão do punho e articulações metacarpofalângicas e adução dos dedos (\"mão de parteiro\")."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Trousseau_sign_carpopedal_spasm.jpg",
+    "source_name": "Mikael Häggström, MD",
+    "source_license": "CC0 1.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-110",
+    "target_section": "subsistemas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Subsistema_saude_indigena_DSEI_SUS.svg",
+      "alt": "Subsistema de Saúde Indígena (Artigos 19-A a 19-H)",
+      "title": "Subsistema de Saúde Indígena (Artigos 19-A a 19-H)",
+      "caption": "Estrutura dos Distritos Sanitários Especiais Indígenas (DSEI), Casas de Apoio à Saúde Indígena (CASAI) e respeito às medicinas tradicionais indígenas.",
+      "didactic_note": "Estrutura dos Distritos Sanitários Especiais Indígenas (DSEI), Casas de Apoio à Saúde Indígena (CASAI) e respeito às medicinas tradicionais indígenas."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Subsistema_saude_indigena_DSEI_SUS.svg",
+    "source_name": "SESAI / Ministério da Saúde",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-111",
+    "target_section": "suplementacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Folic_acid_neural_tube_defect_prevention.svg",
+      "alt": "Suplementação de Ácido Fólico no período pré-concepcional e 1º trimestre",
+      "title": "Suplementação de Ácido Fólico no período pré-concepcional e 1º trimestre",
+      "caption": "Dose de 400 mcg (0,4 mg/dia) iniciada 30 dias antes da concepção até 12 semanas para prevenir Defeitos do Fechamento do Tubo Neural (DFTN); dose de 4–5 mg/dia em alto risco.",
+      "didactic_note": "Dose de 400 mcg (0,4 mg/dia) iniciada 30 dias antes da concepção até 12 semanas para prevenir Defeitos do Fechamento do Tubo Neural (DFTN); dose de 4–5 mg/dia em alto risco."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Folic_acid_neural_tube_defect_prevention.svg",
+    "source_name": "CDC / LURIA Obstetrícia",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-112",
+    "target_section": "suplementacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Calcium_supplementation_preeclampsia_prevention.svg",
+      "alt": "Suplementação de Cálcio em populações com baixa ingestão",
+      "title": "Suplementação de Cálcio em populações com baixa ingestão",
+      "caption": "Carbonato de cálcio 1,5 a 2,0 g/dia a partir de 12–20 semanas para prevenção de pré-eclâmpsia em gestantes de risco ou com baixa ingestão dietética de cálcio.",
+      "didactic_note": "Carbonato de cálcio 1,5 a 2,0 g/dia a partir de 12–20 semanas para prevenção de pré-eclâmpsia em gestantes de risco ou com baixa ingestão dietética de cálcio."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Calcium_supplementation_preeclampsia_prevention.svg",
+    "source_name": "WHO / FEBRASGO / LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-113",
+    "target_section": "suplementacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vitamin_D_supplementation_pregnancy.svg",
+      "alt": "Suplementação de Vitamina D na gestação: Indicações e Controvérsias",
+      "title": "Suplementação de Vitamina D na gestação: Indicações e Controvérsias",
+      "caption": "Triagem direcionada para gestantes de alto risco para hipovitaminose D (pouca exposição solar, obesidade, pele escura); meta de 25-OH-vitamina D > 30 ng/mL.",
+      "didactic_note": "Triagem direcionada para gestantes de alto risco para hipovitaminose D (pouca exposição solar, obesidade, pele escura); meta de 25-OH-vitamina D > 30 ng/mL."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vitamin_D_supplementation_pregnancy.svg",
+    "source_name": "Endocrine Society / FEBRASGO",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-114",
+    "target_section": "suplementacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iron_supplementation_pregnancy_WHO_MS.svg",
+      "alt": "Suplementação profilática de Sulfato Ferroso no pré-natal",
+      "title": "Suplementação profilática de Sulfato Ferroso no pré-natal",
+      "caption": "40 mg de ferro elementar por dia a partir da 20ª semana até o 3º mês pós-parto; se anemia diagnosticada (Hb 8 a 11 g/dL), escalonar para dose de tratamento (120–200 mg de ferro elementar/dia).",
+      "didactic_note": "40 mg de ferro elementar por dia a partir da 20ª semana até o 3º mês pós-parto; se anemia diagnosticada (Hb 8 a 11 g/dL), escalonar para dose de tratamento (120–200 mg de ferro elementar/dia)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Iron_supplementation_pregnancy_WHO_MS.svg",
+    "source_name": "Ministério da Saúde / OPAS",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-115",
+    "target_section": "crl",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tabela_redatacao_gestacional_ACOG_FEBRASGO.svg",
+      "alt": "Tabela de discordância entre DUM e USG precoce (ACOG / FEBRASGO)",
+      "title": "Tabela de discordância entre DUM e USG precoce (ACOG / FEBRASGO)",
+      "caption": "Matriz de redatação: ≤ 8+6 semanas (discordância > 5 dias corrige pela USG); 9+0 a 13+6 semanas (> 7 dias); 14+0 a 15+6 semanas (> 8 dias); 16+0 a 21+6 semanas (> 10 dias).",
+      "didactic_note": "Matriz de redatação: ≤ 8+6 semanas (discordância > 5 dias corrige pela USG); 9+0 a 13+6 semanas (> 7 dias); 14+0 a 15+6 semanas (> 8 dias); 16+0 a 21+6 semanas (> 10 dias)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tabela_redatacao_gestacional_ACOG_FEBRASGO.svg",
+    "source_name": "ACOG / FEBRASGO / LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-116",
+    "target_section": "compressao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_chest_compressions_two_thumb.jpg",
+      "alt": "Técnica das duas mãos com polegares para compressão torácica",
+      "title": "Técnica das duas mãos com polegares para compressão torácica",
+      "caption": "Os dois polegares sobre o terço inferior do esterno, logo abaixo da linha intermamilar, e as mãos circundando o tórax; compressão de 1/3 do diâmetro anteroposterior na relação 3:1 (90 compressões : 30 ventilações).",
+      "didactic_note": "Os dois polegares sobre o terço inferior do esterno, logo abaixo da linha intermamilar, e as mãos circundando o tórax; compressão de 1/3 do diâmetro anteroposterior na relação 3:1 (90 compressões : 30 ventilações)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_chest_compressions_two_thumb.jpg",
+    "source_name": "ERC / Wikimedia Commons",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-117",
+    "target_section": "diagnostico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_lumbar_puncture_procedure.jpg",
+      "alt": "Técnica e sítio da Punção Lombar Neonatal para pesquisa de Meningite",
+      "title": "Técnica e sítio da Punção Lombar Neonatal para pesquisa de Meningite",
+      "caption": "Posição fletida com contenção delicada evitando obstrução respiratória; punção no espaço intervertebral L3–L4 ou L4–L5; análise de celularidade, glicose, proteína, bacterioscopia (Gram) e cultura de LCR.",
+      "didactic_note": "Posição fletida com contenção delicada evitando obstrução respiratória; punção no espaço intervertebral L3–L4 ou L4–L5; análise de celularidade, glicose, proteína, bacterioscopia (Gram) e cultura de LCR."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_lumbar_puncture_procedure.jpg",
+    "source_name": "Global Health Media Project",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-118",
+    "target_section": "geneticos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cell_free_fetal_DNA_maternal_plasma.svg",
+      "alt": "Teste de DNA livre fetal circulante materno (NIPT / cfDNA)",
+      "title": "Teste de DNA livre fetal circulante materno (NIPT / cfDNA)",
+      "caption": "Triagem molecular não invasiva a partir da 10ª semana de gestação com alta sensibilidade e especificidade para trissomias 21, 18 e 13 e cromossomos sexuais.",
+      "didactic_note": "Triagem molecular não invasiva a partir da 10ª semana de gestação com alta sensibilidade e especificidade para trissomias 21, 18 e 13 e cromossomos sexuais."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cell_free_fetal_DNA_maternal_plasma.svg",
+    "source_name": "LURIA Genética Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-119",
+    "target_section": "metabolicos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/TOTG_75g_curva_glicemica_DMG_criterios.svg",
+      "alt": "Teste de Tolerância Oral à Glicose (TOTG 75g) e curva de Diabetes Gestacional",
+      "title": "Teste de Tolerância Oral à Glicose (TOTG 75g) e curva de Diabetes Gestacional",
+      "caption": "Critérios de 24–28 semanas: Jejum ≥ 92 mg/dL, 1h ≥ 180 mg/dL ou 2h ≥ 153 mg/dL (apenas um valor alterado confirma DMG).",
+      "didactic_note": "Critérios de 24–28 semanas: Jejum ≥ 92 mg/dL, 1h ≥ 180 mg/dL ou 2h ≥ 153 mg/dL (apenas um valor alterado confirma DMG)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:TOTG_75g_curva_glicemica_DMG_criterios.svg",
+    "source_name": "SBD / Febrasgo / LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-120",
+    "target_section": "triagens",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_reflex_examination.jpg",
+      "alt": "Teste do reflexo vermelho (Teste do Olhinho com oftalmoscópio)",
+      "title": "Teste do reflexo vermelho (Teste do Olhinho com oftalmoscópio)",
+      "caption": "Avaliar simetria e reflexo alaranjado bilateral; diferenciar de leucocoria sugestiva de retinoblastoma ou catarata congênita.",
+      "didactic_note": "Avaliar simetria e reflexo alaranjado bilateral; diferenciar de leucocoria sugestiva de retinoblastoma ou catarata congênita."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Red_reflex_examination.jpg",
+    "source_name": "Community Eye Health",
+    "source_license": "CC BY 2.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-121",
+    "target_section": "testes",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Positive_pregnancy_test_immunochromatography.jpg",
+      "alt": "Teste rápido imunocromatográfico de gravidez urinário (hCG em fita)",
+      "title": "Teste rápido imunocromatográfico de gravidez urinário (hCG em fita)",
+      "caption": "Visualização da linha controle (C) e da linha teste (T); explicar o princípio do sanduíche de anticorpos monoclonais e o ponto de corte típico de 20–25 mUI/mL.",
+      "didactic_note": "Visualização da linha controle (C) e da linha teste (T); explicar o princípio do sanduíche de anticorpos monoclonais e o ponto de corte típico de 20–25 mUI/mL."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Positive_pregnancy_test_immunochromatography.jpg",
+    "source_name": "Klaus D. Peter",
+    "source_license": "CC BY 3.0 DE"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-122",
+    "target_section": "rotina",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Indirect_Coombs_test_diagram.svg",
+      "alt": "Tipagem sanguínea e Teste de Coombs Indireto (Pesquisa de Anticorpos Irregulares)",
+      "title": "Tipagem sanguínea e Teste de Coombs Indireto (Pesquisa de Anticorpos Irregulares)",
+      "caption": "Em gestante Rh negativo com parceiro Rh positivo ou desconhecido: pesquisa mensal se negativo; se positivo, titulação de anti-D e acompanhamento de aloimunização.",
+      "didactic_note": "Em gestante Rh negativo com parceiro Rh positivo ou desconhecido: pesquisa mensal se negativo; se positivo, titulação de anti-D e acompanhamento de aloimunização."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Indirect_Coombs_test_diagram.svg",
+    "source_name": "A. Rad / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-123",
+    "target_section": "arts6a7",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Transparencia_estoques_medicamentos_lei_14654.svg",
+      "alt": "Transparência de Estoques de Medicamentos (Lei nº 14.654/2023 - Art. 6º-A)",
+      "title": "Transparência de Estoques de Medicamentos (Lei nº 14.654/2023 - Art. 6º-A)",
+      "caption": "Esquema da nova exigência legal: divulgação quinzenal dos estoques de medicamentos em sítios eletrônicos oficiais pelos gestores do SUS.",
+      "didactic_note": "Esquema da nova exigência legal: divulgação quinzenal dos estoques de medicamentos em sítios eletrônicos oficiais pelos gestores do SUS."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Transparencia_estoques_medicamentos_lei_14654.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-124",
+    "target_section": "perfusao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Oxygen_delivery_DO2_VO2_relationship_shock.svg",
+      "alt": "Transporte de Oxigênio (DO₂) e Curva de Consumo dependente de Oferta",
+      "title": "Transporte de Oxigênio (DO₂) e Curva de Consumo dependente de Oferta",
+      "caption": "Ponto crítico de DO₂ onde o consumo de oxigênio (VO₂) torna-se dependente da oferta, com produção anaeróbia de ATP e elevação progressiva de lactato e base deficit.",
+      "didactic_note": "Ponto crítico de DO₂ onde o consumo de oxigênio (VO₂) torna-se dependente da oferta, com produção anaeróbia de ATP e elevação progressiva de lactato e base deficit."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Oxygen_delivery_DO2_VO2_relationship_shock.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-125",
+    "target_section": "infeccoes",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Group_B_Streptococcus_beta_hemolysis_blood_agar.jpg",
+      "alt": "Triagem estreptocócica perianal e vaginal (Streptococcus agalactiae - GBS)",
+      "title": "Triagem estreptocócica perianal e vaginal (Streptococcus agalactiae - GBS)",
+      "caption": "Swab de terço inferior da vagina e reto entre 35 e 37 semanas de gestação inoculado em meio seletivo; indica antibioticoprofilaxia intraparto se positivo.",
+      "didactic_note": "Swab de terço inferior da vagina e reto entre 35 e 37 semanas de gestação inoculado em meio seletivo; indica antibioticoprofilaxia intraparto se positivo."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Group_B_Streptococcus_beta_hemolysis_blood_agar.jpg",
+    "source_name": "CDC PHIL",
+    "source_license": "Domínio Público"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-126",
+    "target_section": "coagulopatia",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ROTEM_trace_hyperfibrinolysis_trauma.svg",
+      "alt": "Tromboelastometria rotacional (ROTEM) no choque hemorrágico traumático",
+      "title": "Tromboelastometria rotacional (ROTEM) no choque hemorrágico traumático",
+      "caption": "Traçado mostrando hiperfibrinólise fulminante com colapso do coágulo (amplitude decrescente no EXTEM) e hipofibrinogenemia precoce (curva plana no FIBTEM), guiando uso de Ácido Tranexâmico e Crioprecipitado/Fibrinogênio.",
+      "didactic_note": "Traçado mostrando hiperfibrinólise fulminante com colapso do coágulo (amplitude decrescente no EXTEM) e hipofibrinogenemia precoce (curva plana no FIBTEM), guiando uso de Ácido Tranexâmico e Crioprecipitado/Fibrinogênio."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:ROTEM_trace_hyperfibrinolysis_trauma.svg",
+    "source_name": "Trauma Coagulopathy Journal / Wikimedia",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-127",
+    "target_section": "reposicao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Inferior_vena_cava_ultrasound_collapsibility.jpg",
+      "alt": "Ultrassonografia de Veia Cava Inferior (VCI) para avaliação volêmica",
+      "title": "Ultrassonografia de Veia Cava Inferior (VCI) para avaliação volêmica",
+      "caption": "Medição no modo M a 2 cm da junção átrio-caval: VCI < 1,5 cm com colapsabilidade respiratória > 50% indicando hipovolemia responsiva a fluidos.",
+      "didactic_note": "Medição no modo M a 2 cm da junção átrio-caval: VCI < 1,5 cm com colapsabilidade respiratória > 50% indicando hipovolemia responsiva a fluidos."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Inferior_vena_cava_ultrasound_collapsibility.jpg",
+    "source_name": "Critical Care Ultrasound / Wikimedia",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-128",
+    "target_section": "foco",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Morison_pouch_fluid_eFAST_ultrasound.jpg",
+      "alt": "Ultrassonografia eFAST no trauma: Espaço de Morrison (Hepatorrenal) positivo",
+      "title": "Ultrassonografia eFAST no trauma: Espaço de Morrison (Hepatorrenal) positivo",
+      "caption": "Faixa anecoica preta de líquido livre (hemoperitônio) entre a cápsula de Glisson do fígado e o córtex do rim direito na janela do flanco direito.",
+      "didactic_note": "Faixa anecoica preta de líquido livre (hemoperitônio) entre a cápsula de Glisson do fígado e o córtex do rim direito na janela do flanco direito."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Morison_pouch_fluid_eFAST_ultrasound.jpg",
+    "source_name": "Emergency Ultrasound / Wikimedia",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-129",
+    "target_section": "foco",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiac_tamponade_pericardial_fluid_FAST.jpg",
+      "alt": "Ultrassonografia eFAST no trauma: Janela Subxifoide demonstrando Hemopericárdio",
+      "title": "Ultrassonografia eFAST no trauma: Janela Subxifoide demonstrando Hemopericárdio",
+      "caption": "Lâmina anecoica de sangue circundando o miocárdio ventricular com colapso diastólico de ventrículo direito (Tamponamento Cardíaco traumático); indicação de toracotomia/pericardiocentese de urgência.",
+      "didactic_note": "Lâmina anecoica de sangue circundando o miocárdio ventricular com colapso diastólico de ventrículo direito (Tamponamento Cardíaco traumático); indicação de toracotomia/pericardiocentese de urgência."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cardiac_tamponade_pericardial_fluid_FAST.jpg",
+    "source_name": "J. Heilman, MD",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-130",
+    "target_section": "geneticos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nuchal_translucency_ultrasound_measurement.jpg",
+      "alt": "Ultrassonografia morfológica de primeiro trimestre: Translucência Nucal (TN)",
+      "title": "Ultrassonografia morfológica de primeiro trimestre: Translucência Nucal (TN)",
+      "caption": "Espessura do espaço subcutâneo anecoico posterior do colo fetal mensurado entre 11+0 e 13+6 semanas (CCN 45–84 mm); TN ≥ 3,5 mm ou > p95 associada a aneuploidias (T21) e cardiopatias congênitas.",
+      "didactic_note": "Espessura do espaço subcutâneo anecoico posterior do colo fetal mensurado entre 11+0 e 13+6 semanas (CCN 45–84 mm); TN ≥ 3,5 mm ou > p95 associada a aneuploidias (T21) e cardiopatias congênitas."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nuchal_translucency_ultrasound_measurement.jpg",
+    "source_name": "Fetal Medicine Foundation / Wikimedia",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-131",
+    "target_section": "rotina",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fetal_profile_ultrasound_second_trimester.jpg",
+      "alt": "Ultrassonografia morfológica de segundo trimestre (20 a 24 semanas)",
+      "title": "Ultrassonografia morfológica de segundo trimestre (20 a 24 semanas)",
+      "caption": "Avaliação anatômica sistemática detalhada: sistema nervoso central, face, perfil fetal, coração de 4 câmaras e vias de saída, abdome, rins e membros, além de doppler das artérias uterinas.",
+      "didactic_note": "Avaliação anatômica sistemática detalhada: sistema nervoso central, face, perfil fetal, coração de 4 câmaras e vias de saída, abdome, rins e membros, além de doppler das artérias uterinas."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fetal_profile_ultrasound_second_trimester.jpg",
+    "source_name": "Nevit Dilmen",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-132",
+    "target_section": "sistemas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Intraventricular_hemorrhage_neonatal_ultrasound.jpg",
+      "alt": "Ultrassonografia transfontanelar: Hemorragia Peri-intraventricular (Classificação de Papile)",
+      "title": "Ultrassonografia transfontanelar: Hemorragia Peri-intraventricular (Classificação de Papile)",
+      "caption": "Graus de Papile: Grau I (matriz germinativa subependimária), Grau II (sangue no ventrículo lateral sem dilatação), Grau III (com dilatação ventricular) e Grau IV (infarto hemorrágico parenquimatoso).",
+      "didactic_note": "Graus de Papile: Grau I (matriz germinativa subependimária), Grau II (sangue no ventrículo lateral sem dilatação), Grau III (com dilatação ventricular) e Grau IV (infarto hemorrágico parenquimatoso)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Intraventricular_hemorrhage_neonatal_ultrasound.jpg",
+    "source_name": "Radiopaedia / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-133",
+    "target_section": "ultrassom",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Early_gestational_sac_ultrasound.jpg",
+      "alt": "Ultrassonografia transvaginal: Saco Gestacional e Sinal da Dupla Decídua",
+      "title": "Ultrassonografia transvaginal: Saco Gestacional e Sinal da Dupla Decídua",
+      "caption": "Primeira estrutura ultrassonográfica visível na 4ª–5ª semana com TVUS; sinal da dupla decídua confirmando implantação intrauterina verdadeira (diferenciar de pseudosaco da ectópica).",
+      "didactic_note": "Primeira estrutura ultrassonográfica visível na 4ª–5ª semana com TVUS; sinal da dupla decídua confirmando implantação intrauterina verdadeira (diferenciar de pseudosaco da ectópica)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Early_gestational_sac_ultrasound.jpg",
+    "source_name": "Dr. Wolfgang Moroder",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-134",
+    "target_section": "rotina",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Urine_culture_streak_plate_ecoli.jpg",
+      "alt": "Urocultura com contagem de colônias e triagem de bacteriúria assintomática",
+      "title": "Urocultura com contagem de colônias e triagem de bacteriúria assintomática",
+      "caption": "Crescimento ≥ 10⁵ UFC/mL de patógeno único em urina de jato médio; na gestação, exige antibioticoterapia direcionada e urocultura de controle de cura devido ao risco de pielonefrite e prematuridade.",
+      "didactic_note": "Crescimento ≥ 10⁵ UFC/mL de patógeno único em urina de jato médio; na gestação, exige antibioticoterapia direcionada e urocultura de controle de cura devido ao risco de pielonefrite e prematuridade."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Urine_culture_streak_plate_ecoli.jpg",
+    "source_name": "CDC / Public Health Image Library",
+    "source_license": "Domínio Público"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-135",
+    "target_section": "especiais",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/RSV_maternal_vaccine_mechanism_infographic.svg",
+      "alt": "Vacina contra Vírus Sincicial Respiratório (VSR) materna bivalente",
+      "title": "Vacina contra Vírus Sincicial Respiratório (VSR) materna bivalente",
+      "caption": "Nova vacina recombinante aprovada no Brasil para gestantes entre 32 e 36 semanas prevenindo bronquiolite grave no recém-nascido.",
+      "didactic_note": "Nova vacina recombinante aprovada no Brasil para gestantes entre 32 e 36 semanas prevenindo bronquiolite grave no recém-nascido."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:RSV_maternal_vaccine_mechanism_infographic.svg",
+    "source_name": "ANVISA / CDC / LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-136",
+    "target_section": "hepatiteb",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hepatitis_B_vaccine_schedule_pregnancy.svg",
+      "alt": "Vacinação contra Hepatite B: Esquema de 3 doses (0, 1 e 6 meses)",
+      "title": "Vacinação contra Hepatite B: Esquema de 3 doses (0, 1 e 6 meses)",
+      "caption": "Indicação em qualquer idade gestacional para gestantes não vacinadas ou com esquema incompleto, protegendo contra transmissão vertical e cronificação neonatal.",
+      "didactic_note": "Indicação em qualquer idade gestacional para gestantes não vacinadas ou com esquema incompleto, protegendo contra transmissão vertical e cronificação neonatal."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hepatitis_B_vaccine_schedule_pregnancy.svg",
+    "source_name": "PNI / Ministério da Saúde",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-137",
+    "target_section": "seguranca",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Contraindicated_vaccines_pregnancy_live_attenuated.svg",
+      "alt": "Vacinas contraindicadas na gestação (vírus ou bactérias vivas atenuadas)",
+      "title": "Vacinas contraindicadas na gestação (vírus ou bactérias vivas atenuadas)",
+      "caption": "Alerta visual: Tríplice Viral (Sarampo, Caxumba, Rubéola), Varicela, Febre Amarela (salvo risco epidemiológico extremo com avaliação risco-benefício) e BCG.",
+      "didactic_note": "Alerta visual: Tríplice Viral (Sarampo, Caxumba, Rubéola), Varicela, Febre Amarela (salvo risco epidemiológico extremo com avaliação risco-benefício) e BCG."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Contraindicated_vaccines_pregnancy_live_attenuated.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-138",
+    "target_section": "vpp",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Neonatal_bag_valve_mask_ventilation.jpg",
+      "alt": "Ventilação com Pressão Positiva (VPP) com balão autoinflável e máscara",
+      "title": "Ventilação com Pressão Positiva (VPP) com balão autoinflável e máscara",
+      "caption": "Técnica do \"C e E\" para acoplamento firme da máscara facial anatômica, frequência de 40 a 60 movimentos por minuto (\"Aperta - Solta - Solta\").",
+      "didactic_note": "Técnica do \"C e E\" para acoplamento firme da máscara facial anatômica, frequência de 40 a 60 movimentos por minuto (\"Aperta - Solta - Solta\")."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neonatal_bag_valve_mask_ventilation.jpg",
+    "source_name": "Wellcome Collection",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-139",
+    "target_section": "vpp",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/T-piece_resuscitator_neopuff.jpg",
+      "alt": "Ventilador mecânico neonatal em T (Peça T / Neopuff)",
+      "title": "Ventilador mecânico neonatal em T (Peça T / Neopuff)",
+      "caption": "Demonstração do controle exato de PIP (20–25 cmH₂O) e PEEP (5 cmH₂O), fundamental na ventilação do recém-nascido pré-termo.",
+      "didactic_note": "Demonstração do controle exato de PIP (20–25 cmH₂O) e PEEP (5 cmH₂O), fundamental na ventilação do recém-nascido pré-termo."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:T-piece_resuscitator_neopuff.jpg",
+    "source_name": "Fisher & Paykel Healthcare / Wikimedia",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b01-140",
+    "target_section": "ultrassom",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yolk_sac_in_gestational_sac_US.jpg",
+      "alt": "Vesícula Vitelínica (Yolk Sac) em saco gestacional intrauterino",
+      "title": "Vesícula Vitelínica (Yolk Sac) em saco gestacional intrauterino",
+      "caption": "Estrutura anecoica arredondada com anel ecogênico bem delimitado (3–6 mm); confirmação definitiva de gravidez intrauterina, visível na 5ª–6ª semana.",
+      "didactic_note": "Estrutura anecoica arredondada com anel ecogênico bem delimitado (3–6 mm); confirmação definitiva de gravidez intrauterina, visível na 5ª–6ª semana."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Yolk_sac_in_gestational_sac_US.jpg",
+    "source_name": "Nevit Dilmen",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-141",
+    "target_section": "fisiopatologia",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Right_ventricular_death_spiral_pulmonary_embolism.svg",
+      "alt": "\"Espiral da Morte\" do Ventrículo Direito no Tromboembolismo Pulmonar Maciço",
+      "title": "\"Espiral da Morte\" do Ventrículo Direito no Tromboembolismo Pulmonar Maciço",
+      "caption": "Obstrução mecânica + vasoconstrição pulmonar por tromboxano A2 e serotonina → aumento abrupto da pós-carga do VD → dilatação do VD e aumento da tensão parietal → isquemia coronariana do VD + abaulamento septal para o VE → queda da pré-carga do VE e choque obstrutivo.",
+      "didactic_note": "Obstrução mecânica + vasoconstrição pulmonar por tromboxano A2 e serotonina → aumento abrupto da pós-carga do VD → dilatação do VD e aumento da tensão parietal → isquemia coronariana do VD + abaulamento septal para o VE → queda da pré-carga do VE e choque obstrutivo."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Right_ventricular_death_spiral_pulmonary_embolism.svg",
+    "source_name": "ESC / SBC / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-142",
+    "target_section": "diagnostico-imagem",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Prosthetic_valve_endocarditis_PET_CT.jpg",
+      "alt": "18F-FDG PET/CT demonstrando hipercaptação perivalvar em prótese aórtica",
+      "title": "18F-FDG PET/CT demonstrando hipercaptação perivalvar em prótese aórtica",
+      "caption": "Captação metabólica intensa ao redor do anel protético confirmando critério maior de imagem pelos Critérios de Duke-ISCVID 2023 / ESC 2023 em endocardite de prótese valvar.",
+      "didactic_note": "Captação metabólica intensa ao redor do anel protético confirmando critério maior de imagem pelos Critérios de Duke-ISCVID 2023 / ESC 2023 em endocardite de prótese valvar."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Prosthetic_valve_endocarditis_PET_CT.jpg",
+    "source_name": "European Heart Journal / Open-i",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-143",
+    "target_section": "transicao-epidemiologica",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tripla_carga_de_doencas_Brasil_RAS.svg",
+      "alt": "A Tripla Carga de Doenças no Brasil e a Inadequação dos Sistemas Fragmentados",
+      "title": "A Tripla Carga de Doenças no Brasil e a Inadequação dos Sistemas Fragmentados",
+      "caption": "Coexistência de agenda não concluída de doenças infecciosas e carenciais/materno-infantis, predomínio hegemônico das condições crônicas não transmissíveis e crescimento acentuado das causas externas (violências e acidentes).",
+      "didactic_note": "Coexistência de agenda não concluída de doenças infecciosas e carenciais/materno-infantis, predomínio hegemônico das condições crônicas não transmissíveis e crescimento acentuado das causas externas (violências e acidentes)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tripla_carga_de_doencas_Brasil_RAS.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-144",
+    "target_section": "terapia-parenteral",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Central_venous_catheter_parenteral_nutrition.svg",
+      "alt": "Acesso venoso central para Nutrição Parenteral Total (NPT) em veia cava superior",
+      "title": "Acesso venoso central para Nutrição Parenteral Total (NPT) em veia cava superior",
+      "caption": "Infusão de soluções hiperosmolares (> 850–900 mOsm/L) exclusivamente em veia central de alto fluxo com lúmen dedicado para evitar flebite química e infecção de corrente sanguínea.",
+      "didactic_note": "Infusão de soluções hiperosmolares (> 850–900 mOsm/L) exclusivamente em veia central de alto fluxo com lúmen dedicado para evitar flebite química e infecção de corrente sanguínea."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Central_venous_catheter_parenteral_nutrition.svg",
+    "source_name": "Blausen.com staff",
+    "source_license": "CC BY 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-145",
+    "target_section": "exacerbacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Acute_asthma_exacerbation_emergency_management.svg",
+      "alt": "Algoritmo de Manejo da Exacerbação Aguda de Asma na Emergência (Leve/Moderada, Grave e Quase Fatal)",
+      "title": "Algoritmo de Manejo da Exacerbação Aguda de Asma na Emergência (Leve/Moderada, Grave e Quase Fatal)",
+      "caption": "Fala em frases vs palavras, FC > 120 bpm, FR > 30 irpm, uso de musculatura acessória, PFE ≤ 50%, $SpO_2 < 90\\%$ e \"tórax silencioso\"; conduta na primeira hora: SABA (salbutamol 4–10 jatos a cada 20 min) + Brometo de Ipratrópio (na crise moderada/grave) + Oxigênio suplementar para $SpO_2$ 93–95% + Corticoide sistêmico precoce (prednisolona 40–50 mg VO ou hidrocortisona/metilprednisolona IV) + Sulfato de Magnésio 2g IV em 20 min nas crises graves refratárias ($VEF_1 < 25–30\\%$).",
+      "didactic_note": "Fala em frases vs palavras, FC > 120 bpm, FR > 30 irpm, uso de musculatura acessória, PFE ≤ 50%, $SpO_2 < 90\\%$ e \"tórax silencioso\"; conduta na primeira hora: SABA (salbutamol 4–10 jatos a cada 20 min) + Brometo de Ipratrópio (na crise moderada/grave) + Oxigênio suplementar para $SpO_2$ 93–95% + Corticoide sistêmico precoce (prednisolona 40–50 mg VO ou hidrocortisona/metilprednisolona IV) + Sulfato de Magnésio 2g IV em 20 min nas crises graves refratárias ($VEF_1 < 25–30\\%$)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Acute_asthma_exacerbation_emergency_management.svg",
+    "source_name": "GINA / SBPT / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-146",
+    "target_section": "triagem-avaliacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/NRS_2002_GLIM_nutritional_screening.svg",
+      "alt": "Algoritmo de Triagem Nutricional NRS-2002 e Critérios GLIM",
+      "title": "Algoritmo de Triagem Nutricional NRS-2002 e Critérios GLIM",
+      "caption": "Combinação de critério fenotípico (perda ponderal involuntária, baixo IMC, redução de massa muscular) e etiológico (redução da ingesta/absorção ou inflamação cirúrgica/oncológica).",
+      "didactic_note": "Combinação de critério fenotípico (perda ponderal involuntária, baixo IMC, redução de massa muscular) e etiológico (redução da ingesta/absorção ou inflamação cirúrgica/oncológica)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:NRS_2002_GLIM_nutritional_screening.svg",
+    "source_name": "ESPEN / BRASPEN / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-147",
+    "target_section": "diagnostico-tep",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Algoritmo_diagnostico_TEP_Wells_Ddimero_AngioTC.svg",
+      "alt": "Algoritmo Diagnóstico de TEP segundo Probabilidade Clínica (Wells/Genebra) e D-dímero",
+      "title": "Algoritmo Diagnóstico de TEP segundo Probabilidade Clínica (Wells/Genebra) e D-dímero",
+      "caption": "Probabilidade baixa/intermediária (ou TEP improvável) → aplicar PERC ou dosar D-dímero (com ponto de corte ajustado por idade: idade × 10 ng/mL acima dos 50 anos); Probabilidade alta (TEP provável) → indicar Angio-TC de tórax diretamente sem aguardar D-dímero.",
+      "didactic_note": "Probabilidade baixa/intermediária (ou TEP improvável) → aplicar PERC ou dosar D-dímero (com ponto de corte ajustado por idade: idade × 10 ng/mL acima dos 50 anos); Probabilidade alta (TEP provável) → indicar Angio-TC de tórax diretamente sem aguardar D-dímero."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Algoritmo_diagnostico_TEP_Wells_Ddimero_AngioTC.svg",
+    "source_name": "ESC / SBC / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-149",
+    "target_section": "criterios-duke",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Duke_ISCVID_2023_criteria_flowchart.svg",
+      "alt": "Algoritmo diagnóstico dos Critérios de Duke-ISCVID 2023 e ESC 2023",
+      "title": "Algoritmo diagnóstico dos Critérios de Duke-ISCVID 2023 e ESC 2023",
+      "caption": "Definição de EI definitiva (2 maiores, 1 maior + 3 menores, ou 5 menores), possível e rejeitada, destacando inclusão de *E. faecalis* comunitário e novos métodos de imagem.",
+      "didactic_note": "Definição de EI definitiva (2 maiores, 1 maior + 3 menores, ou 5 menores), possível e rejeitada, destacando inclusão de *E. faecalis* comunitário e novos métodos de imagem."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Duke_ISCVID_2023_criteria_flowchart.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-150",
+    "target_section": "infraestrutura",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Planta_ambientes_UBS_PNAB_padrao.svg",
+      "alt": "Ambiência e Infraestrutura da Unidade Básica de Saúde segundo a PNAB",
+      "title": "Ambiência e Infraestrutura da Unidade Básica de Saúde segundo a PNAB",
+      "caption": "Recepção sem grades, sala de acolhimento com privacidade, consultórios com sanitário, sala de vacina, sala de curativos/procedimentos, sala de nebulização/observação, farmácia e sala de atividades coletivas/ACS.",
+      "didactic_note": "Recepção sem grades, sala de acolhimento com privacidade, consultórios com sanitário, sala de vacina, sala de curativos/procedimentos, sala de nebulização/observação, farmácia e sala de atividades coletivas/ACS."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Planta_ambientes_UBS_PNAB_padrao.svg",
+    "source_name": "Ministério da Saúde / SOMASUS",
+    "source_license": "Domínio Público"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-151",
+    "target_section": "anatomia-fisiologia",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Breast_anatomy_normal_lactating_scheme.jpg",
+      "alt": "Anatomia funcional da glândula mamária: alvéolos, células mioepiteliais e ductos lactíferos",
+      "title": "Anatomia funcional da glândula mamária: alvéolos, células mioepiteliais e ductos lactíferos",
+      "caption": "Unidade lobular ducto-terminal secretora revestida por células epiteliais produtoras de leite (sob ação da prolactina) e rede de células mioepiteliais contráteis (sob ação da ocitocina).",
+      "didactic_note": "Unidade lobular ducto-terminal secretora revestida por células epiteliais produtoras de leite (sob ação da prolactina) e rede de células mioepiteliais contráteis (sob ação da ocitocina)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Breast_anatomy_normal_lactating_scheme.jpg",
+    "source_name": "Patrick J. Lynch / Yale University",
+    "source_license": "CC BY 2.5"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-152",
+    "target_section": "gestacao-ectopica",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arias_Stella_reaction_endometrium_histology.jpg",
+      "alt": "Anatomopatológico de Decídua Hipersecretora com Reação de Arias-Stella na Gestação Ectópica",
+      "title": "Anatomopatológico de Decídua Hipersecretora com Reação de Arias-Stella na Gestação Ectópica",
+      "caption": "Glândulas endometriais hipersecretoras com células de citooplasma claro vacuolizado e núcleos hipertróficos, hipercromáticos e pleomórficos na ausência de vilosidades coriônicas intrauterinas, achado clássico na curetagem de gravidez ectópica.",
+      "didactic_note": "Glândulas endometriais hipersecretoras com células de citooplasma claro vacuolizado e núcleos hipertróficos, hipercromáticos e pleomórficos na ausência de vilosidades coriônicas intrauterinas, achado clássico na curetagem de gravidez ectópica."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Arias_Stella_reaction_endometrium_histology.jpg",
+    "source_name": "Nephron / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-153",
+    "target_section": "diagnostico-tep",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saddle_pulmonary_embolism_CT_angiography.jpg",
+      "alt": "Angiotomografia de Artérias Pulmonares com Trombo em Sela (\"Saddle Embolus\")",
+      "title": "Angiotomografia de Artérias Pulmonares com Trombo em Sela (\"Saddle Embolus\")",
+      "caption": "Falha de enchimento hipodensa volumosa cavalgando a bifurcação do tronco da artéria pulmonar e estendendo-se para os ramos principais direito e esquerdo, associada a aumento da relação VD/VE > 1,0 no corte axial.",
+      "didactic_note": "Falha de enchimento hipodensa volumosa cavalgando a bifurcação do tronco da artéria pulmonar e estendendo-se para os ramos principais direito e esquerdo, associada a aumento da relação VD/VE > 1,0 no corte axial."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Saddle_pulmonary_embolism_CT_angiography.jpg",
+    "source_name": "Yale Rosen / Wikimedia Commons",
+    "source_license": "CC BY-SA 2.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-154",
+    "target_section": "abortamento-recorrente",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Uterine_mullerian_anomalies_classification.svg",
+      "alt": "Anomalias Müllerianas Uterinas: Útero Septado vs Útero Bicorno e Didelfo",
+      "title": "Anomalias Müllerianas Uterinas: Útero Septado vs Útero Bicorno e Didelfo",
+      "caption": "O útero septado (falha de reabsorção do septo fibroso avascular mediano com contorno fúndico externo normal) é a malformação mülleriana mais comum e a de maior associação com abortamento recorrente, sendo corrigido por septoplastia histeroscópica.",
+      "didactic_note": "O útero septado (falha de reabsorção do septo fibroso avascular mediano com contorno fúndico externo normal) é a malformação mülleriana mais comum e a de maior associação com abortamento recorrente, sendo corrigido por septoplastia histeroscópica."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Uterine_mullerian_anomalies_classification.svg",
+    "source_name": "OpenStax / Wikimedia Commons",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-155",
+    "target_section": "sulfato-magnesio",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Calcium_gluconate_10_percent_ampoule.jpg",
+      "alt": "Antídoto do Sulfato de Magnésio: Gluconato de Cálcio a 10%",
+      "title": "Antídoto do Sulfato de Magnésio: Gluconato de Cálcio a 10%",
+      "caption": "Ampola de 10 mL (1 g) para infusão intravenosa lenta em 3 a 5 minutos diante de depressão respiratória ou abolição do reflexo patelar com hipermagnesemia tóxica.",
+      "didactic_note": "Ampola de 10 mL (1 g) para infusão intravenosa lenta em 3 a 5 minutos diante de depressão respiratória ou abolição do reflexo patelar com hipermagnesemia tóxica."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Calcium_gluconate_10_percent_ampoule.jpg",
+    "source_name": "Intropin / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-156",
+    "target_section": "prevencao-bundle",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Surgical_skin_preparation_chlorhexidine.jpg",
+      "alt": "Antissepsia cirúrgica do campo operatório com Clorexidina Alcoólica a 2%",
+      "title": "Antissepsia cirúrgica do campo operatório com Clorexidina Alcoólica a 2%",
+      "caption": "Superioridade da clorexidina alcoólica sobre o PVPI aquoso na redução de ISC incisional, lembrando o tempo obrigatório de secagem espontânea antes do uso do bisturi elétrico para prevenir queimadura/incêndio em sala operatória.",
+      "didactic_note": "Superioridade da clorexidina alcoólica sobre o PVPI aquoso na redução de ISC incisional, lembrando o tempo obrigatório de secagem espontânea antes do uso do bisturi elétrico para prevenir queimadura/incêndio em sala operatória."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_skin_preparation_chlorhexidine.jpg",
+    "source_name": "U.S. Air Force / Wikimedia",
+    "source_license": "Domínio Público"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-157",
+    "target_section": "comissoes-intergestores",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Governanca_federativa_CIT_CIB_CIR_SUS.svg",
+      "alt": "Arquitetura da Governança Federativa: CIT, CIB e CIR (Comissão Intergestores Regional)",
+      "title": "Arquitetura da Governança Federativa: CIT, CIB e CIR (Comissão Intergestores Regional)",
+      "caption": "Instâncias de negociação e pactuação consensual entre gestores (Lei 12.466/2011 e Decreto 7.508/2011), diferenciando a CIR (secretários municipais da região + representação estadual) dos Conselhos de Saúde deliberativos.",
+      "didactic_note": "Instâncias de negociação e pactuação consensual entre gestores (Lei 12.466/2011 e Decreto 7.508/2011), diferenciando a CIR (secretários municipais da região + representação estadual) dos Conselhos de Saúde deliberativos."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Governanca_federativa_CIT_CIB_CIR_SUS.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-158",
+    "target_section": "financiamento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cofinanciamento_APS_Portaria_3493_2024.svg",
+      "alt": "Arquitetura do Novo Cofinanciamento Federal da APS (Portaria GM/MS 3.493/2024)",
+      "title": "Arquitetura do Novo Cofinanciamento Federal da APS (Portaria GM/MS 3.493/2024)",
+      "caption": "Componentes fixo (IED), vínculo e acompanhamento territorial, qualidade, implantação/manutenção de programas (eMulti, Saúde Bucal) e componente para atenção odontológica.",
+      "didactic_note": "Componentes fixo (IED), vínculo e acompanhamento territorial, qualidade, implantação/manutenção de programas (eMulti, Saúde Bucal) e componente para atenção odontológica."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cofinanciamento_APS_Portaria_3493_2024.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-159",
+    "target_section": "sec-10-ouvidoria-reclamacao-individual-e-resposta-coletiva",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sistema_Ouvidoria_SUS_manifestacoes_fluxo.svg",
+      "alt": "Arquitetura do Sistema Nacional de Ouvidorias do SUS (OuvidorSUS)",
+      "title": "Arquitetura do Sistema Nacional de Ouvidorias do SUS (OuvidorSUS)",
+      "caption": "Classificação das manifestações cidadãs (reclamação, denúncia, solicitação, elogio, sugestão e informação via Disque 136 ou Fala.BR) e transformação de demandas individuais em relatórios gerenciais para o Conselho de Saúde.",
+      "didactic_note": "Classificação das manifestações cidadãs (reclamação, denúncia, solicitação, elogio, sugestão e informação via Disque 136 ou Fala.BR) e transformação de demandas individuais em relatórios gerenciais para o Conselho de Saúde."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sistema_Ouvidoria_SUS_manifestacoes_fluxo.svg",
+    "source_name": "Ministério da Saúde / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-160",
+    "target_section": "escolha-via",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Surgical_nutrition_route_decision_tree.svg",
+      "alt": "Árvore decisória de escolha da via nutricional no paciente cirúrgico",
+      "title": "Árvore decisória de escolha da via nutricional no paciente cirúrgico",
+      "caption": "\"Se o trato gastrointestinal funciona, use-o\": preferência pela via oral/enteral precoce sobre a parenteral pela preservação do trofismo vilocitário, GALT e prevenção da translocação bacteriana.",
+      "didactic_note": "\"Se o trato gastrointestinal funciona, use-o\": preferência pela via oral/enteral precoce sobre a parenteral pela preservação do trofismo vilocitário, GALT e prevenção da translocação bacteriana."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_nutrition_route_decision_tree.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-161",
+    "target_section": "fases-cicatrizacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wound_healing_phases_timeline_cells.svg",
+      "alt": "As 3 Fases Sobrepostas da Cicatrização: Inflamatória, Proliferativa e Maturação",
+      "title": "As 3 Fases Sobrepostas da Cicatrização: Inflamatória, Proliferativa e Maturação",
+      "caption": "Cronologia da infiltração celular: plaquetas (minutos) → neutrófilos (pico em 24h) → macrófagos (pico em 48–96h, célula regente) → fibroblastos e células endoteliais (dia 4 ao dia 21) → remodelamento do colágeno III em colágeno I (semanas a mais de 1 ano).",
+      "didactic_note": "Cronologia da infiltração celular: plaquetas (minutos) → neutrófilos (pico em 24h) → macrófagos (pico em 48–96h, célula regente) → fibroblastos e células endoteliais (dia 4 ao dia 21) → remodelamento do colágeno III em colágeno I (semanas a mais de 1 ano)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wound_healing_phases_timeline_cells.svg",
+    "source_name": "OpenStax College",
+    "source_license": "CC BY 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-162",
+    "target_section": "diagnostico-clinico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Clinical_windows_of_tissue_perfusion_shock.svg",
+      "alt": "As 3 Janelas Clínicas de Perfusão Tecidual à Beira do Leito (Pele, Rim e Cérebro)",
+      "title": "As 3 Janelas Clínicas de Perfusão Tecidual à Beira do Leito (Pele, Rim e Cérebro)",
+      "caption": "(1) Janela cutânea (tempo de enchimento capilar > 3s, mottling score no joelho, extremidades frias); (2) Janela renal (oligúria < 0,5 mL/kg/h); (3) Janela neurológica (confusão mental, agitação, sonolência, queda na Escala de Glasgow).",
+      "didactic_note": "(1) Janela cutânea (tempo de enchimento capilar > 3s, mottling score no joelho, extremidades frias); (2) Janela renal (oligúria < 0,5 mL/kg/h); (3) Janela neurológica (confusão mental, agitação, sonolência, queda na Escala de Glasgow)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Clinical_windows_of_tissue_perfusion_shock.svg",
+    "source_name": "ESICM / LURIA Medicina Intensiva",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-163",
+    "target_section": "sec-11-triagem-neonatal-universal-tempo-metodo-e-interpretacao-clinica",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Triagem_Neonatal_Universal_5_testes_SUS.svg",
+      "alt": "As 5 Triagens Neonatais Universais no SUS (Pezinho, Olhinho, Orelhinha, Coraçãozinho e Linguinha)",
+      "title": "As 5 Triagens Neonatais Universais no SUS (Pezinho, Olhinho, Orelhinha, Coraçãozinho e Linguinha)",
+      "caption": "Teste do Pezinho (entre o 3º e o 5º dia de vida no calcanhar lateral; ampliação escalonada da Lei 14.154/2021 para até 50 doenças), Teste do Coraçãozinho (24–48h: SpO₂ ≥ 95% em MSD e MI com diferença ≤ 3%), Teste do Olhinho, Orelhinha (EOA/PEATE) e Linguinha (Protocolo Bristol/Martinelli).",
+      "didactic_note": "Teste do Pezinho (entre o 3º e o 5º dia de vida no calcanhar lateral; ampliação escalonada da Lei 14.154/2021 para até 50 doenças), Teste do Coraçãozinho (24–48h: SpO₂ ≥ 95% em MSD e MI com diferença ≤ 3%), Teste do Olhinho, Orelhinha (EOA/PEATE) e Linguinha (Protocolo Bristol/Martinelli)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Triagem_Neonatal_Universal_5_testes_SUS.svg",
+    "source_name": "Ministério da Saúde / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-164",
+    "target_section": "tratamento-esvaziamento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Manual_vacuum_aspiration_MVA_syringe_cannulas.jpg",
+      "alt": "Aspiração Manual Intrauterina (AMIU): Seringa de Vácuo com Válvula Dupla e Cânulas Flexíveis de Karman",
+      "title": "Aspiração Manual Intrauterina (AMIU): Seringa de Vácuo com Válvula Dupla e Cânulas Flexíveis de Karman",
+      "caption": "Método cirúrgico de 1ª escolha segundo OMS, FEBRASGO e Ministério da Saúde para esvaziamento uterino no 1º trimestre (≤ 12 semanas), com menor perda sanguínea, menor dor e menor risco de perfuração uterina e sinéquias de Asherman quando comparado à curetagem metálica.",
+      "didactic_note": "Método cirúrgico de 1ª escolha segundo OMS, FEBRASGO e Ministério da Saúde para esvaziamento uterino no 1º trimestre (≤ 12 semanas), com menor perda sanguínea, menor dor e menor risco de perfuração uterina e sinéquias de Asherman quando comparado à curetagem metálica."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Manual_vacuum_aspiration_MVA_syringe_cannulas.jpg",
+    "source_name": "WHO / Ipas / Wikimedia Commons",
+    "source_license": "CC BY-SA 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-165",
+    "target_section": "rue",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atencao_Domiciliar_AD1_AD2_AD3_EMAD_EMAP.svg",
+      "alt": "Atenção Domiciliar (Programa Melhor em Casa): Estratificação AD1, AD2 e AD3",
+      "title": "Atenção Domiciliar (Programa Melhor em Casa): Estratificação AD1, AD2 e AD3",
+      "caption": "AD1 (sob cuidado da eSF na APS); AD2 (cuidado intensivo/sequencial pela EMAD e EMAP); AD3 (paciente com necessidade de suporte ventilatório não invasivo/invasivo, paracentese repetida ou procedimentos complexos contínuos pela EMAD).",
+      "didactic_note": "AD1 (sob cuidado da eSF na APS); AD2 (cuidado intensivo/sequencial pela EMAD e EMAP); AD3 (paciente com necessidade de suporte ventilatório não invasivo/invasivo, paracentese repetida ou procedimentos complexos contínuos pela EMAD)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Atencao_Domiciliar_AD1_AD2_AD3_EMAD_EMAP.svg",
+    "source_name": "Ministério da Saúde / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-166",
+    "target_section": "atribuicoes",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atribuicoes_profissionais_PNAB_2017.svg",
+      "alt": "Atribuições específicas do Médico, Enfermeiro, Técnico de Enfermagem e ACS na PNAB",
+      "title": "Atribuições específicas do Médico, Enfermeiro, Técnico de Enfermagem e ACS na PNAB",
+      "caption": "Delimitar o que é atribuição comum a todos os membros (acolhimento, territorialização, educação permanente, notificação) vs privativa/específica de cada categoria (consulta de enfermagem e prescrição conforme protocolos municipais; novos procedimentos do ACS sob supervisão).",
+      "didactic_note": "Delimitar o que é atribuição comum a todos os membros (acolhimento, territorialização, educação permanente, notificação) vs privativa/específica de cada categoria (consulta de enfermagem e prescrição conforme protocolos municipais; novos procedimentos do ACS sob supervisão)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Atribuicoes_profissionais_PNAB_2017.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-167",
+    "target_section": "exacerbacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Auto_PEEP_dynamic_hyperinflation_ventilator_waveform.svg",
+      "alt": "Auto-PEEP (Hiperinsuflação Dinâmica) e Estratégia Ventilatória Protetora na Asma Quase Fatal Intubada",
+      "title": "Auto-PEEP (Hiperinsuflação Dinâmica) e Estratégia Ventilatória Protetora na Asma Quase Fatal Intubada",
+      "caption": "Na curva fluxo-tempo do ventilador mecânico, o fluxo expiratório não retorna a zero antes do próximo ciclo inspiratório (aprisionamento aéreo); ajustar FR baixa (10–14 irpm), volume corrente baixo (6 mL/kg de peso predito), fluxo inspiratório alto (60–80 L/min) e relação I:E prolongada (1:4 ou 1:5) com hipercapnia permissiva para evitar barotrauma (pneumotórax hipertensivo) e choque obstrutivo.",
+      "didactic_note": "Na curva fluxo-tempo do ventilador mecânico, o fluxo expiratório não retorna a zero antes do próximo ciclo inspiratório (aprisionamento aéreo); ajustar FR baixa (10–14 irpm), volume corrente baixo (6 mL/kg de peso predito), fluxo inspiratório alto (60–80 L/min) e relação I:E prolongada (1:4 ou 1:5) com hipercapnia permissiva para evitar barotrauma (pneumotórax hipertensivo) e choque obstrutivo."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Auto_PEEP_dynamic_hyperinflation_ventilator_waveform.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-168",
+    "target_section": "tratamento",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Glucometer_capillary_blood_glucose_testing.jpg",
+      "alt": "Automonitorização da Glicemia Capilar (AMGC) e Metas Terapêuticas no DMG",
+      "title": "Automonitorização da Glicemia Capilar (AMGC) e Metas Terapêuticas no DMG",
+      "caption": "Perfil glicêmico diário (4 a 6 pontas de dedo): metas rigorosas de jejum < 95 mg/dL, 1h pós-prandial < 140 mg/dL e 2h pós-prandial < 120 mg/dL (sem hipoglicemias < 60–70 mg/dL).",
+      "didactic_note": "Perfil glicêmico diário (4 a 6 pontas de dedo): metas rigorosas de jejum < 95 mg/dL, 1h pós-prandial < 140 mg/dL e 2h pós-prandial < 120 mg/dL (sem hipoglicemias < 60–70 mg/dL)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Glucometer_capillary_blood_glucose_testing.jpg",
+    "source_name": "David-i98 / Wikimedia Commons",
+    "source_license": "CC BY-SA 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-169",
+    "target_section": "nos-cirurgicos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Square_knot_vs_granny_knot_surgical_tying.svg",
+      "alt": "Biomecânica do Nó Cirúrgico Quadrado (Antideslizante) vs Nó Deslizante (\"Nó de Marinheiro\")",
+      "title": "Biomecânica do Nó Cirúrgico Quadrado (Antideslizante) vs Nó Deslizante (\"Nó de Marinheiro\")",
+      "caption": "Primeiro seminó de contenção e segundo seminó em sentido inverso (espelhado) de fixação sob tensão uniforme a 180°, compondo o nó quadrado seguro; fios monofilamentares sintéticos (Nylon, Prolene, PDS) têm alta memória e exigem 5 a 6 seminós.",
+      "didactic_note": "Primeiro seminó de contenção e segundo seminó em sentido inverso (espelhado) de fixação sob tensão uniforme a 180°, compondo o nó quadrado seguro; fios monofilamentares sintéticos (Nylon, Prolene, PDS) têm alta memória e exigem 5 a 6 seminós."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Square_knot_vs_granny_knot_surgical_tying.svg",
+    "source_name": "Wikimedia Commons",
+    "source_license": "Domínio Público"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-170",
+    "target_section": "baixa-estatura",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Target_height_calculation_formula_pediatrics.svg",
+      "alt": "Cálculo do Alvo Genético (Estatura-Alvo Parental) e Canal Familiar",
+      "title": "Cálculo do Alvo Genético (Estatura-Alvo Parental) e Canal Familiar",
+      "caption": "Meninos: (Altura do pai + Altura da mãe + 13) / 2 ± 8,5 cm; Meninas: (Altura do pai + Altura da mãe - 13) / 2 ± 8,5 cm; plotagem na idade de 18–19 anos da curva da OMS para verificar concordância com o potencial genético.",
+      "didactic_note": "Meninos: (Altura do pai + Altura da mãe + 13) / 2 ± 8,5 cm; Meninas: (Altura do pai + Altura da mãe - 13) / 2 ± 8,5 cm; plotagem na idade de 18–19 anos da curva da OMS para verificar concordância com o potencial genético."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Target_height_calculation_formula_pediatrics.svg",
+    "source_name": "SBP / LURIA Pediatria Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-171",
+    "target_section": "sec-6-organizacao-longitudinal-da-puericultura-no-sus-agenda-e-conteudo-da-consulta",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Calendario_consultas_puericultura_MS_SBP.svg",
+      "alt": "Calendário Oficial de Consultas de Puericultura do Ministério da Saúde vs SBP",
+      "title": "Calendário Oficial de Consultas de Puericultura do Ministério da Saúde vs SBP",
+      "caption": "Cronograma mínimo do MS nos primeiros 2 anos (7 consultas no 1º ano: 1ª semana, 1, 2, 4, 6, 9 e 12 meses + 2 consultas no 2º ano: 18 e 24 meses, e depois anuais) vs cronograma ampliado mensal da SBP.",
+      "didactic_note": "Cronograma mínimo do MS nos primeiros 2 anos (7 consultas no 1º ano: 1ª semana, 1, 2, 4, 6, 9 e 12 meses + 2 consultas no 2º ano: 18 e 24 meses, e depois anuais) vs cronograma ampliado mensal da SBP."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Calendario_consultas_puericultura_MS_SBP.svg",
+    "source_name": "MS / SBP / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-172",
+    "target_section": "cicatrizacao-patologica",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hypertrophic_scar_surgical_incision.jpg",
+      "alt": "Cicatriz Hipertrófica restrita às margens originais da incisão cirúrgica",
+      "title": "Cicatriz Hipertrófica restrita às margens originais da incisão cirúrgica",
+      "caption": "Cicatriz elevada e eritematosa que respeita estritamente os limites da ferida original, surge precocemente (4 semanas) em áreas de tensão mecânica e tende à regressão parcial espontânea em 12 a 24 meses.",
+      "didactic_note": "Cicatriz elevada e eritematosa que respeita estritamente os limites da ferida original, surge precocemente (4 semanas) em áreas de tensão mecânica e tende à regressão parcial espontânea em 12 a 24 meses."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hypertrophic_scar_surgical_incision.jpg",
+    "source_name": "Mikael Häggström, MD",
+    "source_license": "CC0 1.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-173",
+    "target_section": "sec-9-participacao-no-planejamento-e-orcamento-o-que-de-fato-e-fiscalizado",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ciclo_planejamento_orcamento_controle_social_LC141.svg",
+      "alt": "Ciclo de Fiscalização Orçamentária pelo Conselho: Plano de Saúde, PAS, RQPC e RAG (LC 141/2012)",
+      "title": "Ciclo de Fiscalização Orçamentária pelo Conselho: Plano de Saúde, PAS, RQPC e RAG (LC 141/2012)",
+      "caption": "Articulação entre Plano de Saúde (4 anos), Programação Anual de Saúde (PAS), Relatório Detalhado do Quadrimestre Anterior (RDQA/RQPC apresentado em fevereiro, maio e setembro) e Relatório Anual de Gestão (RAG enviado ao Conselho até 30 de março do ano seguinte).",
+      "didactic_note": "Articulação entre Plano de Saúde (4 anos), Programação Anual de Saúde (PAS), Relatório Detalhado do Quadrimestre Anterior (RDQA/RQPC apresentado em fevereiro, maio e setembro) e Relatório Anual de Gestão (RAG enviado ao Conselho até 30 de março do ano seguinte)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ciclo_planejamento_orcamento_controle_social_LC141.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-174",
+    "target_section": "ferramentas-familia",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Family_life_cycle_stages_chart.svg",
+      "alt": "Ciclo de Vida Familiar e crises normativas vs paranormativas",
+      "title": "Ciclo de Vida Familiar e crises normativas vs paranormativas",
+      "caption": "Estágios de Carter & McGoldrick: saída de casa, formação do casal, filhos pequenos, filhos adolescentes, lançamento dos filhos e estágio tardio.",
+      "didactic_note": "Estágios de Carter & McGoldrick: saída de casa, formação do casal, filhos pequenos, filhos adolescentes, lançamento dos filhos e estágio tardio."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Family_life_cycle_stages_chart.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-175",
+    "target_section": "toxoplasmose",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Toxoplasmosis_pregnancy_IgG_avidity_chart.svg",
+      "alt": "Cinética Imunológica na Toxoplasmose Gestacional e Teste de Avidez de IgG",
+      "title": "Cinética Imunológica na Toxoplasmose Gestacional e Teste de Avidez de IgG",
+      "caption": "Interpretação de IgM+ e IgG+ até 16 semanas: alta avidez de IgG indica infecção adquirida há mais de 12–16 semanas (pré-concepcional); baixa avidez sugere infecção aguda recente na gestação, indicando início imediato de espiramicina 1g 8/8h e investigação fetal.",
+      "didactic_note": "Interpretação de IgM+ e IgG+ até 16 semanas: alta avidez de IgG indica infecção adquirida há mais de 12–16 semanas (pré-concepcional); baixa avidez sugere infecção aguda recente na gestação, indicando início imediato de espiramicina 1g 8/8h e investigação fetal."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Toxoplasmosis_pregnancy_IgG_avidity_chart.svg",
+    "source_name": "FEBRASGO / MS / LURIA Design",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-176",
+    "target_section": "formas-clinicas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Types_of_spontaneous_abortion_cervix_ultrasound.svg",
+      "alt": "Classificação Clínica das Formas de Abortamento: Ameaça, Inevitável, Incompleto, Completo e Retido",
+      "title": "Classificação Clínica das Formas de Abortamento: Ameaça, Inevitável, Incompleto, Completo e Retido",
+      "caption": "Correlacionar o orifício cervical interno ao toque vaginal (fechado na ameaça, completo e retido; pérvio/dilatado no inevitável e incompleto) com o volume uterino e os achados ultrassonográficos.",
+      "didactic_note": "Correlacionar o orifício cervical interno ao toque vaginal (fechado na ameaça, completo e retido; pérvio/dilatado no inevitável e incompleto) com o volume uterino e os achados ultrassonográficos."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Types_of_spontaneous_abortion_cervix_ultrasound.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-177",
+    "target_section": "potencial-contaminacao",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Classificacao_potencial_contaminacao_cirurgias.svg",
+      "alt": "Classificação das Feridas Operatórias segundo o Potencial de Contaminação",
+      "title": "Classificação das Feridas Operatórias segundo o Potencial de Contaminação",
+      "caption": "Classe I — Limpa (herniorrafia eletiva sem tela ou com tela, tireoidectomia, mamoplastia); Classe II — Potencialmente contaminada (colecistectomia eletiva, gastrectomia, histerectomia); Classe III — Contaminada (colectomia com extravasamento grosseiro, trauma penetrante recente); Classe IV — Infectada (apendicite perfurada com peritonite purulenta, abscesso).",
+      "didactic_note": "Classe I — Limpa (herniorrafia eletiva sem tela ou com tela, tireoidectomia, mamoplastia); Classe II — Potencialmente contaminada (colecistectomia eletiva, gastrectomia, histerectomia); Classe III — Contaminada (colectomia com extravasamento grosseiro, trauma penetrante recente); Classe IV — Infectada (apendicite perfurada com peritonite purulenta, abscesso)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Classificacao_potencial_contaminacao_cirurgias.svg",
+    "source_name": "Colégio Brasileiro de Cirurgiões / LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-178",
+    "target_section": "feridas-cronicas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pressure_ulcer_stages_1_to_4_diagram.svg",
+      "alt": "Classificação das Lesões por Pressão (Estágios 1, 2, 3, 4 e Não Classificável — NPUAP)",
+      "title": "Classificação das Lesões por Pressão (Estágios 1, 2, 3, 4 e Não Classificável — NPUAP)",
+      "caption": "Estágio 1 (eritema não branqueável em pele íntegra); Estágio 2 (perda parcial da espessura dérmica / flictena); Estágio 3 (perda total da pele expondo tecido adiposo subcutâneo); Estágio 4 (exposição de músculo, tendão ou osso); Não classificável (coberta por escara ou esfacelo espesso).",
+      "didactic_note": "Estágio 1 (eritema não branqueável em pele íntegra); Estágio 2 (perda parcial da espessura dérmica / flictena); Estágio 3 (perda total da pele expondo tecido adiposo subcutâneo); Estágio 4 (exposição de músculo, tendão ou osso); Não classificável (coberta por escara ou esfacelo espesso)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pressure_ulcer_stages_1_to_4_diagram.svg",
+    "source_name": "Blausen.com staff",
+    "source_license": "CC BY 3.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-179",
+    "target_section": "fios-cirurgicos",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Surgical_sutures_classification_absorption_chart.svg",
+      "alt": "Classificação dos Fios de Sutura: Absorvíveis vs Inabsorvíveis e Monofilamentares vs Multifilamentares",
+      "title": "Classificação dos Fios de Sutura: Absorvíveis vs Inabsorvíveis e Monofilamentares vs Multifilamentares",
+      "caption": "Absorvíveis: Catgut simples/cromado (natural, fagocitose, alta reação tecidual), Poliglecaprone 25/Monocryl (~90–120d), Poliglactina 910/Vicryl (multifilamentar, hidrólise em 56–70d), Polidioxanona/PDS (monofilamentar de longa duração, 180–210d — ideal para aponeurose); Inabsorvíveis: Nylon/Poliamida, Polipropileno/Prolene (vascular/parede), Seda e Algodão (multifilamentares com alta capilaridade — evitar em feridas contaminadas).",
+      "didactic_note": "Absorvíveis: Catgut simples/cromado (natural, fagocitose, alta reação tecidual), Poliglecaprone 25/Monocryl (~90–120d), Poliglactina 910/Vicryl (multifilamentar, hidrólise em 56–70d), Polidioxanona/PDS (monofilamentar de longa duração, 180–210d — ideal para aponeurose); Inabsorvíveis: Nylon/Poliamida, Polipropileno/Prolene (vascular/parede), Seda e Algodão (multifilamentares com alta capilaridade — evitar em feridas contaminadas)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_sutures_classification_absorption_chart.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-180",
+    "target_section": "fistulas",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Enterocutaneous_fistula_management_algorithm.svg",
+      "alt": "Classificação e manejo nutricional de fístulas enterocutâneas de alto vs baixo débito",
+      "title": "Classificação e manejo nutricional de fístulas enterocutâneas de alto vs baixo débito",
+      "caption": "Fístula de alto débito (> 500 mL/24h) vs baixo débito (< 200 mL/24h), acróstico SOWATS (controle da sepse, otimização hidroeletrolítica, proteção cutânea, anatomia, terapia nutricional e cirurgia tardia) e mnemônico FRIEND para causas de não fechamento espontâneo.",
+      "didactic_note": "Fístula de alto débito (> 500 mL/24h) vs baixo débito (< 200 mL/24h), acróstico SOWATS (controle da sepse, otimização hidroeletrolítica, proteção cutânea, anatomia, terapia nutricional e cirurgia tardia) e mnemônico FRIEND para causas de não fechamento espontâneo."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:Enterocutaneous_fistula_management_algorithm.svg",
+    "source_name": "Elaboração Editorial LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-181",
+    "target_section": "guia-alimentar",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/NOVA_food_classification_system_Brasil.svg",
+      "alt": "Classificação NOVA dos Alimentos: In Natura vs Ultraprocessados",
+      "title": "Classificação NOVA dos Alimentos: In Natura vs Ultraprocessados",
+      "caption": "Grupo 1 (In natura ou minimamente processados — base da alimentação); Grupo 2 (Ingredientes culinários); Grupo 3 (Processados); Grupo 4 (Ultraprocessados: biscoitos recheados, embutidos, bebidas adoçadas, macarrão instantâneo, fórmulas lácteas açucaradas — proibidos antes de 2 anos).",
+      "didactic_note": "Grupo 1 (In natura ou minimamente processados — base da alimentação); Grupo 2 (Ingredientes culinários); Grupo 3 (Processados); Grupo 4 (Ultraprocessados: biscoitos recheados, embutidos, bebidas adoçadas, macarrão instantâneo, fórmulas lácteas açucaradas — proibidos antes de 2 anos)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:NOVA_food_classification_system_Brasil.svg",
+    "source_name": "Ministério da Saúde / USP / LURIA",
+    "source_license": "CC BY 4.0"
+  },
+  {
+    "apostila_path": "/apostilas/curadoria-pendente/",
+    "apostila_title": "Curadoria provisória — Blocos 1–3",
+    "candidate_key": "b02-182",
+    "target_section": "choque-cardiogenico",
+    "placement": "after",
+    "proposed_asset": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SCAI_cardiogenic_shock_stages_pyramid.svg",
+      "alt": "Classificação SCAI de Gravidade do Choque Cardiogênico (Estágios A a E)",
+      "title": "Classificação SCAI de Gravidade do Choque Cardiogênico (Estágios A a E)",
+      "caption": "Estágio A (At risk — IAM extenso sem sinais de hipoperfusão); Estágio B (Beginning — hipotensão relativa ou taquicardia sem hipoperfusão); Estágio C (Classic — hipoperfusão exigindo inotrópico/vasopressor); Estágio D (Deteriorating — refratário à terapia inicial); Estágio E (Extremis — colapso circulatório / PCR / ECMO-VA).",
+      "didactic_note": "Estágio A (At risk — IAM extenso sem sinais de hipoperfusão); Estágio B (Beginning — hipotensão relativa ou taquicardia sem hipoperfusão); Estágio C (Classic — hipoperfusão exigindo inotrópico/vasopressor); Estágio D (Deteriorating — refratário à terapia inicial); Estágio E (Extremis — colapso circulatório / PCR / ECMO-VA)."
+    },
+    "source_url": "https://commons.wikimedia.org/wiki/File:SCAI_cardiogenic_shock_stages_pyramid.svg",
+    "source_name": "ACC / SCAI / LURIA Design",
+    "source_license": "CC BY 4.0"
+  }
+]
