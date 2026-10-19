@@ -133,7 +133,23 @@
           <button class="admin-view-tab" type="button" data-admin-view-tab="plantao" aria-selected="false">
             Plantão
           </button>
+          <button class="admin-view-tab" type="button" data-admin-view-tab="images" aria-selected="false">
+            Imagens das apostilas
+          </button>
         </nav>
+
+        <section class="admin-section admin-apostila-curation-section" data-admin-view="images" hidden aria-labelledby="admin-apostila-curation-title">
+          <div class="admin-section-head">
+            <div>
+              <span class="eyebrow">Revisão administrativa</span>
+              <h2 id="admin-apostila-curation-title">Curadoria visual dos blocos 1–3</h2>
+              <p>Revise as prévias, fontes e licenças antes de decidir quais imagens podem entrar nas apostilas.</p>
+            </div>
+            <a class="button secondary" href="/apostilas/curadoria-imagens-v2/" target="_blank" rel="noopener">Abrir em nova aba</a>
+          </div>
+          <div class="admin-apostila-curation-notice">A galeria é uma fila de prévia. Nenhuma imagem é aprovada automaticamente; a decisão editorial continua sendo sua.</div>
+          <iframe class="admin-apostila-curation-frame" title="Curadoria visual das imagens dos blocos 1 a 3" src="/apostilas/curadoria-imagens-v2/"></iframe>
+        </section>
 
         <section class="admin-section admin-beta-section" data-admin-view="beta" hidden>
           <div class="admin-section-head">

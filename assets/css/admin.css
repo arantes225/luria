@@ -67,6 +67,7 @@
   border-radius: 14px;
   background: var(--surface);
 }
+.admin-apostila-curation-notice{margin:0 0 14px;padding:12px 14px;border:1px solid color-mix(in srgb,var(--warning) 38%,var(--border));border-radius:10px;background:color-mix(in srgb,var(--warning) 8%,var(--surface));color:var(--text);font-size:10px;line-height:1.45}.admin-apostila-curation-frame{display:block;width:100%;height:min(78vh,900px);border:1px solid var(--border);border-radius:12px;background:var(--surface);}
 
 .admin-plan-card,
 .admin-metric-card,
