@@ -269,7 +269,7 @@
     }
     const menu = document.getElementById("luria-profile-menu");
     if (!menu) return;
-    for (const id of ["admin-nav-link", "beta-testers-nav-link"]) {
+    for (const id of ["admin-nav-link", "editorial-nav-link", "beta-testers-nav-link"]) {
       const source = sidebar?.querySelector(`#${id}`);
       let item = menu.querySelector(`[data-work-account="${id}"]`);
       if (!source || source.hidden) { item?.remove(); continue; }
@@ -279,7 +279,7 @@
         item.dataset.workAccount = id;
         const visual = document.createElement("span");
         visual.className = "ui-profile-item-icon";
-        visual.innerHTML = icon(id === "admin-nav-link" ? '<path d="m12 3 9 9-9 9-9-9Z"/>' : '<circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M21 21v-2a6 6 0 0 0-4-5"/>');
+        visual.innerHTML = icon(id === "admin-nav-link" ? '<path d="m12 3 9 9-9 9-9-9Z"/>' : id === "editorial-nav-link" ? '<rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/>' : '<circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M21 21v-2a6 6 0 0 0-4-5"/>');
         item.append(visual, document.createTextNode(source.textContent.replace(/◆/g, "").trim()));
         const logout = menu.querySelector("#luria-profile-logout");
         if (logout) logout.before(item);

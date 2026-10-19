@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Editorial · LURIA</title>
+  <link rel="manifest" href="manifest.webmanifest?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/pwa-icon-180.png?v=3">
+  <meta name="theme-color" content="#0A2342">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LURIA">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria7">
+  
+  <script src="/assets/js/ui-routes.js?v=2"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
+  <link rel="stylesheet" href="/assets/css/admin.css?v=20261013-consolidated1">
+  <link rel="stylesheet" href="/assets/css/editorial.css?v=1">
+  <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20-admin-factory-pwa">
+  <link rel="canonical" href="/editorial/">
+  <script>(function(){try{if(location.pathname.endsWith("/editorial.html")){location.replace("/editorial/"+location.search+location.hash);}}catch(e){location.href="/editorial/";}})();</script>
+  <link rel="stylesheet" href="/assets/css/admin-ui-v2.css?v=1">
+</head>
+
+<body data-ui="v2" data-ui-nav="v2" data-ui-context="admin" data-ui-admin="v2" data-page="editorial" class="admin-pin-locked">
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+
+  <!-- PIN GATE (IDÊNTICO AO ADMIN) -->
+  <section id="admin-pin-gate" class="admin-pin-gate" aria-labelledby="admin-pin-title">
+    <form id="admin-pin-form" class="admin-pin-card" autocomplete="off">
+      <div class="admin-pin-brand">
+        <strong>LURIA Editorial</strong>
+        <img
+          class="admin-pin-logo"
+          src="assets/img/logos/logo-principal.png?v=luria7"
+          alt="LURIA"
+        >
+        <small>Acesso protegido por PIN</small>
+      </div>
+
+      <div class="admin-pin-copy">
+        <span class="eyebrow">Planejamento & Produção</span>
+        <h1 id="admin-pin-title">Verificando acesso...</h1>
+        <p id="admin-pin-description">Digite seu PIN de 6 dígitos para abrir o calendário editorial.</p>
+      </div>
+
+      <div id="admin-pin-fields" class="admin-pin-fields" hidden>
+        <label class="admin-pin-field">
+          <span id="admin-pin-label">PIN de 6 dígitos</span>
+          <input
+            id="admin-pin"
+            type="password"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            minlength="6"
+            autocomplete="off"
+            aria-describedby="admin-pin-message"
+          >
+        </label>
+
+        <label id="admin-pin-confirm-wrap" class="admin-pin-field" hidden>
+          <span>Confirmar PIN</span>
+          <input
+            id="admin-pin-confirm"
+            type="password"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            minlength="6"
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
+      <div id="admin-pin-message" class="admin-pin-message" aria-live="polite">
+        Verificando...
+      </div>
+
+      <button id="admin-pin-submit" class="button primary admin-pin-submit" type="submit" disabled>
+        Continuar
+      </button>
+
+      <a class="admin-pin-back" href="dashboard.html">Voltar ao Dashboard</a>
+    </form>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL (DESBLOQUEADO APÓS PIN) -->
+  <div id="editorial-app" class="app-shell" hidden>
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <main class="main">
+      <div class="page editorial-page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+
+          <div class="page-heading">
+            <span class="eyebrow">Produção & Inteligência</span>
+            <h1>Calendário Editorial & Vídeos</h1>
+          </div>
+        </header>
+
+        <div class="editorial-header">
+          <p class="editorial-intro">
+            Planejamento semanal de conteúdos, roteiros médicos e validação de vídeos em código nativo (< 500 KB) para publicação e distribuição.
+          </p>
+        </div>
+
+        <section class="editorial-stats-row">
+          <div class="editorial-stat-card">
+            <span class="stat-label">Conteúdos no Mês</span>
+            <strong class="stat-val">4 temas</strong>
+          </div>
+          <div class="editorial-stat-card">
+            <span class="stat-label">Peso Médio por Vídeo</span>
+            <strong class="stat-val">~12 KB</strong>
+          </div>
+          <div class="editorial-stat-card">
+            <span class="stat-label">Economia de Carga</span>
+            <strong class="stat-val">99.9%</strong>
+          </div>
+          <div class="editorial-stat-card">
+            <span class="stat-label">Status da Automação</span>
+            <strong class="stat-val" style="color: #4ade80;">Ativo</strong>
+          </div>
+        </section>
+
+        <h2 class="editorial-section-title">
+          <span>📅</span> Cronograma de Publicações
+        </h2>
+
+        <div id="editorial-cards-list" class="editorial-grid">
+          <!-- Injetado dinamicamente via assets/js/editorial.js -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=20261019-editorial1"></script>
+  <script src="/assets/js/editorial.js?v=1"></script>
+  <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
+</body>
+</html>

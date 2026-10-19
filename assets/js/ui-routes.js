@@ -1,7 +1,7 @@
 (() => {
   const aliases = new Set([
     'admin', 'amigos', 'aplicar', 'caderno', 'caderno-erros', 'configuracoes', 'cronograma',
-    'dashboard', 'desafio-diario', 'editais', 'estatisticas', 'flashcards', 'jogos',
+    'dashboard', 'desafio-diario', 'editais', 'editorial', 'estatisticas', 'flashcards', 'jogos',
     'questoes-simulados', 'registrar-questoes', 'vocacao'
   ]);
   const location = window.location;

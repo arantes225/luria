@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LURIA · Ultra Motion Demo (Diagnóstico de AVC) &lt; 300 KB</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #020617;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .header-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #38bdf8;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 0.25rem;
+      text-align: center;
+    }
+    .header-subtitle {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    /* PHONE CONTAINER VERTICAL 9:16 */
+    .phone-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 9 / 16;
+      background: #000000;
+      border-radius: 36px;
+      border: 4px solid #1e293b;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(56, 189, 248, 0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.25rem;
+    }
+
+    /* AMBIENT GLOW */
+    .ambient-glow-1, .ambient-glow-2 {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.35;
+      pointer-events: none;
+      transition: background 0.6s ease;
+    }
+    .ambient-glow-1 { top: -60px; right: -60px; background: #ef4444; }
+    .ambient-glow-2 { bottom: -60px; left: -60px; background: #3b82f6; }
+
+    /* RETENTION PROGRESS BAR */
+    .progress-bar-wrap {
+      position: relative;
+      z-index: 20;
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #ec4899, #facc15, #10b981);
+      border-radius: 9999px;
+      transition: width 0.05s linear;
+    }
+
+    /* TOP BAR INSIDE PHONE */
+    .phone-topbar {
+      position: relative;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+    }
+    .scene-pill {
+      font-size: 0.65rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 9999px;
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .scene-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #ef4444;
+      animation: pulse 1s infinite;
+    }
+    .fps-badge {
+      font-size: 0.65rem;
+      font-weight: 800;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.2rem 0.5rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* STICKERS & KINETIC TYPOGRAPHY */
+    .motion-body {
+      position: relative;
+      z-index: 20;
+      margin: auto 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .stickers-row {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 2.5rem;
+      animation: bounce 1s infinite alternate;
+    }
+    .kinetic-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.45rem;
+      max-width: 300px;
+    }
+    .word {
+      font-size: 1.35rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.15;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      transition: all 0.15s ease;
+    }
+    .word.highlight {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 0.15rem 0.45rem;
+      border-radius: 6px;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px currentColor;
+    }
+
+    .visual-director {
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.35rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #cbd5e1;
+      max-width: 280px;
+    }
+
+    /* FOOTER INSIDE PHONE */
+    .phone-footer {
+      position: relative;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 0.5rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #94a3b8;
+    }
+    .sfx-tag {
+      color: #facc15;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    /* CONTROLS OUTSIDE */
+    .controls-panel {
+      width: 100%;
+      max-width: 360px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      padding: 0.85rem;
+      border-radius: 20px;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .btn-play {
+      flex: 1;
+      background: linear-gradient(135deg, #ec4899, #f43f5e);
+      color: #ffffff;
+      border: none;
+      padding: 0.65rem 1rem;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: opacity 0.2s;
+    }
+    .btn-play:hover { opacity: 0.9; }
+    .btn-secondary {
+      background: #1e293b;
+      color: #cbd5e1;
+      border: 1px solid #334155;
+      padding: 0.65rem 0.85rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    .stats-footer {
+      font-size: 0.7rem;
+      color: #64748b;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .stats-green { color: #34d399; font-weight: 800; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-badge">⚡ Vídeo Nativo em Código &lt; 20 KB</div>
+  <h1 class="header-title">Diagnóstico de AVC: O 1º Teste Obrigatório</h1>
+  <p class="header-subtitle">Renderizado em 60 FPS direto no navegador com Web Audio API</p>
+
+  <!-- PHONE CONTAINER -->
+  <div class="phone-wrapper" id="player">
+    <!-- AMBIENT GLOW -->
+    <div class="ambient-glow-1" id="glow1"></div>
+    <div class="ambient-glow-2" id="glow2"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- TOPBAR -->
+    <div class="phone-topbar">
+      <div class="scene-pill" id="scenePill">
+        <span class="scene-dot"></span>
+        <span id="sceneType">GANCHO MAGNÉTICO</span>
+      </div>
+      <div class="fps-badge">60 FPS DOM</div>
+    </div>
+
+    <!-- BODY WITH MOTION AND KINETIC TYPOGRAPHY -->
+    <div class="motion-body" id="motionBody">
+      <div class="stickers-row" id="stickers">🧠 🚨 ⏱️</div>
+      <div class="kinetic-text" id="kineticWords"></div>
+      <div class="visual-director" id="visualDirector">
+        🎬 Olhar fixo para a lente, zoom rápido no rosto
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="phone-footer">
+      <div class="sfx-tag" id="sfxTag">⚡ SFX: IMPACTO</div>
+      <div id="timeCounter">0.0s / 32.0s</div>
+    </div>
+  </div>
+
+  <!-- EXTERNAL CONTROLS -->
+  <div class="controls-panel">
+    <div class="controls-row">
+      <button class="btn-play" id="btnPlay" onclick="togglePlay()">
+        <span>▶ Dar Play no Vídeo</span>
+      </button>
+      <button class="btn-secondary" onclick="resetVideo()">↺ Reiniciar</button>
+      <button class="btn-secondary" id="btnVoice" onclick="toggleVoice()">🗣️ Voz: Ligada</button>
+    </div>
+    <div class="stats-footer">
+      Peso total deste arquivo: <span class="stats-green">~12 KB</span> (Zero consumo de banda de vídeo)
+    </div>
+  </div>
+
+  <script>
+    // Roteiro estruturado segundo a segundo para AVC (Apostila Luria / Pronto-Socorro)
+    const SCENES = [
+      {
+        start: 0,
+        end: 4.0,
+        type: 'GANCHO DE CHOQUE',
+        stickers: '🧠 🚨 ❌',
+        sfx: 'impact',
+        glow1: '#ef4444',
+        glow2: '#f59e0b',
+        director: 'Corte seco 1.3x com zoom in, texto neon em alerta máximo',
+        words: [
+          { text: 'SUSPEITA', highlight: false },
+          { text: 'DE', highlight: false },
+          { text: 'AVC?', highlight: true, color: '#facc15' },
+          { text: 'QUAL', highlight: false },
+          { text: 'O', highlight: false },
+          { text: '1º', highlight: true, color: '#ef4444' },
+          { text: 'TESTE?', highlight: true, color: '#ef4444' }
+        ],
+        narration: 'Paciente chega no pronto-socorro com boca torta e fraqueza de um lado do corpo. Qual é o primeiro teste que você DEVE fazer?'
+      },
+      {
+        start: 4.0,
+        end: 10.0,
+        type: 'PEGA DA BANCA',
+        stickers: '❌ 🩸 ⚡',
+        sfx: 'whoosh',
+        glow1: '#8b5cf6',
+        glow2: '#3b82f6',
+        director: 'Split visual comparando glicemia capilar vs tomógrafo',
+        words: [
+          { text: 'NÃO', highlight: true, color: '#ef4444' },
+          { text: 'É' },
+          { text: 'TOMOGRAFIA!' },
+          { text: 'É' },
+          { text: 'A' },
+          { text: 'GLICEMIA', highlight: true, color: '#4ade80' },
+          { text: 'CAPILAR!', highlight: true, color: '#38bdf8' }
+        ],
+        narration: 'Se você respondeu Tomografia, você errou. O primeiro exame obrigatório em qualquer déficit neurológico agudo é a GLICEMIA CAPILAR!'
+      },
+      {
+        start: 10.0,
+        end: 18.0,
+        type: 'FISIOPATOLOGIA PRÁTICA',
+        stickers: '💉 ✨ 🧠',
+        sfx: 'pop',
+        glow1: '#10b981',
+        glow2: '#06b6d4',
+        director: 'Seringa de glicose piscando em verde menta',
+        words: [
+          { text: 'HIPOGLICEMIA', highlight: true, color: '#facc15' },
+          { text: 'IMITA' },
+          { text: 'AVC!' },
+          { text: 'GLICOSE', highlight: true, color: '#4ade80' },
+          { text: '50%' },
+          { text: 'NA' },
+          { text: 'VEIA.' }
+        ],
+        narration: 'Hipoglicemia é o maior stroke mimic da emergência! Você infunde glicose a 50% na veia e o déficit reverte em 3 minutos, poupando uma tomografia desnecessária.'
+      },
+      {
+        start: 18.0,
+        end: 26.0,
+        type: 'CONDUTA PADRÃO-OURO',
+        stickers: '⏱️ 📈 🫀',
+        sfx: 'ding',
+        glow1: '#3b82f6',
+        glow2: '#ec4899',
+        director: 'Cronômetro correndo em 4h30 com janela de trombólise',
+        words: [
+          { text: 'HGT' },
+          { text: 'NORMAL?' },
+          { text: 'TC', highlight: true, color: '#facc15' },
+          { text: 'SEM' },
+          { text: 'CONTRASTE.' },
+          { text: 'ALTEPLASE', highlight: true, color: '#4ade80' },
+          { text: 'ATÉ' },
+          { text: '4,5H!' }
+        ],
+        narration: 'Se o HGT for normal, aí sim corre para a TC sem contraste. Se não houver sangramento e estiver dentro de 4 horas e meia: Alteplase na veia!'
+      },
+      {
+        start: 26.0,
+        end: 32.0,
+        type: 'CHAMADA PARA AÇÃO',
+        stickers: '💬 👇 🎁',
+        sfx: 'pop',
+        glow1: '#ec4899',
+        glow2: '#facc15',
+        director: 'Balão de direct acendendo com logo da LURIA e seta pulsante',
+        words: [
+          { text: 'COMENTE' },
+          { text: '"AVC"', highlight: true, color: '#ec4899' },
+          { text: 'RECEBA' },
+          { text: 'A' },
+          { text: 'APOSTILA', highlight: true, color: '#facc15' },
+          { text: 'LURIA!' }
+        ],
+        narration: 'Comenta "AVC" aqui embaixo que eu te mando o fluxograma completo de conduta neurológica da apostila LURIA no direct!'
+      }
+    ];
+
+    const TOTAL_DURATION = 32.0;
+    let isPlaying = false;
+    let currentTime = 0;
+    let startTime = null;
+    let initialTime = 0;
+    let animFrame = null;
+    let enableVoice = true;
+    let currentSceneIndex = -1;
+
+    // Web Audio Synthesizer (SFX 0 KB)
+    let audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      return audioCtx;
+    }
+
+    function playSfx(type) {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+
+        if (type === 'impact') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(160, now);
+          osc.frequency.exponentialRampToValueAtTime(30, now + 0.3);
+          gain.gain.setValueAtTime(0.5, now);
+          gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+          osc.connect(gain); gain.connect(ctx.destination);
+          osc.start(now); osc.stop(now + 0.3);
+        } else if (type === 'ding') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, now);
+          gain.gain.setValueAtTime(0.3, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+          osc.connect(gain); gain.connect(ctx.destination);
+          osc.start(now); osc.stop(now + 0.4);
+        } else if (type === 'pop') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(300, now);
+          osc.frequency.exponentialRampToValueAtTime(900, now + 0.1);
+          gain.gain.setValueAtTime(0.35, now);
+          gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+          osc.connect(gain); gain.connect(ctx.destination);
+          osc.start(now); osc.stop(now + 0.1);
+        } else {
+          // whoosh
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.exponentialRampToValueAtTime(600, now + 0.1);
+          osc.frequency.exponentialRampToValueAtTime(100, now + 0.25);
+          gain.gain.setValueAtTime(0.25, now);
+          gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+          osc.connect(gain); gain.connect(ctx.destination);
+          osc.start(now); osc.stop(now + 0.25);
+        }
+      } catch (e) {}
+    }
+
+    // Web Speech API Narration (0 KB)
+    function speakText(text) {
+      if (!enableVoice || !('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'pt-BR';
+      utterance.rate = 1.25; // Rápido e dinâmico
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function renderScene(idx) {
+      if (idx === currentSceneIndex || idx < 0 || idx >= SCENES.length) return;
+      currentSceneIndex = idx;
+      const scene = SCENES[idx];
+
+      document.getElementById('sceneType').textContent = scene.type;
+      document.getElementById('stickers').textContent = scene.stickers;
+      document.getElementById('visualDirector').textContent = '🎬 ' + scene.director;
+      document.getElementById('sfxTag').textContent = '⚡ SFX: ' + scene.sfx.toUpperCase();
+      document.getElementById('glow1').style.background = scene.glow1;
+      document.getElementById('glow2').style.background = scene.glow2;
+
+      // Render kinetic words
+      const wordsWrap = document.getElementById('kineticWords');
+      wordsWrap.innerHTML = '';
+      scene.words.forEach(w => {
+        const span = document.createElement('span');
+        span.className = 'word' + (w.highlight ? ' highlight' : '');
+        span.textContent = w.text;
+        if (w.highlight && w.color) {
+          span.style.color = w.color;
+        } else {
+          span.style.color = '#ffffff';
+        }
+        wordsWrap.appendChild(span);
+      });
+
+      // Play audio & sound effects
+      if (isPlaying) {
+        playSfx(scene.sfx);
+        speakText(scene.narration);
+      }
+    }
+
+    function togglePlay() {
+      if (isPlaying) {
+        pauseVideo();
+      } else {
+        playVideo();
+      }
+    }
+
+    function playVideo() {
+      getAudioContext();
+      isPlaying = true;
+      startTime = performance.now();
+      initialTime = currentTime;
+      document.getElementById('btnPlay').innerHTML = '<span>⏸ Pausar Vídeo</span>';
+
+      // Dispara primeira cena se estava parado
+      const idx = SCENES.findIndex(s => currentTime >= s.start && currentTime < s.end);
+      renderScene(idx !== -1 ? idx : 0);
+
+      const loop = (now) => {
+        if (!isPlaying) return;
+        const elapsed = (now - startTime) / 1000;
+        currentTime = initialTime + elapsed;
+
+        if (currentTime >= TOTAL_DURATION) {
+          currentTime = TOTAL_DURATION;
+          pauseVideo();
+          currentTime = 0;
+          return;
+        }
+
+        // Update progress bar & counter
+        const pct = (currentTime / TOTAL_DURATION) * 100;
+        document.getElementById('progressBar').style.width = pct + '%';
+        document.getElementById('timeCounter').textContent = currentTime.toFixed(1) + 's / ' + TOTAL_DURATION.toFixed(1) + 's';
+
+        // Check scene switch
+        const activeIdx = SCENES.findIndex(s => currentTime >= s.start && currentTime < s.end);
+        if (activeIdx !== -1 && activeIdx !== currentSceneIndex) {
+          renderScene(activeIdx);
+        }
+
+        animFrame = requestAnimationFrame(loop);
+      };
+
+      animFrame = requestAnimationFrame(loop);
+    }
+
+    function pauseVideo() {
+      isPlaying = false;
+      if (animFrame) cancelAnimationFrame(animFrame);
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      document.getElementById('btnPlay').innerHTML = '<span>▶ Continuar Vídeo</span>';
+    }
+
+    function resetVideo() {
+      pauseVideo();
+      currentTime = 0;
+      currentSceneIndex = -1;
+      document.getElementById('progressBar').style.width = '0%';
+      document.getElementById('timeCounter').textContent = '0.0s / ' + TOTAL_DURATION.toFixed(1) + 's';
+      renderScene(0);
+      document.getElementById('btnPlay').innerHTML = '<span>▶ Dar Play no Vídeo</span>';
+    }
+
+    function toggleVoice() {
+      enableVoice = !enableVoice;
+      if (!enableVoice && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      document.getElementById('btnVoice').textContent = enableVoice ? '🗣️ Voz: Ligada' : '🔇 Voz: Desligada';
+    }
+
+    // Inicializa na primeira cena
+    renderScene(0);
+  </script>
+</body>
+</html>

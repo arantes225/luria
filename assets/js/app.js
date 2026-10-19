@@ -6173,11 +6173,17 @@ async function prepararAdminNavigation(acessoAdmin = null) {
   slot.replaceChildren(betaLink);
   const isAdmin = typeof acessoAdmin === "boolean" ? acessoAdmin : await verificarAcessoAdmin();
   if (!isAdmin) return false;
+  const editorialLink = document.createElement("a");
+  editorialLink.id = "editorial-nav-link";
+  editorialLink.className = `nav-link ${page === "editorial" ? "active" : ""}`;
+  editorialLink.href = "/editorial/";
+  editorialLink.innerHTML = `<span class="nav-icon">${luriaIcon("calendar")}</span><span>Editorial</span>`;
   const link = document.createElement("a");
   link.id = "admin-nav-link";
   link.className = `nav-link ${page === "admin" ? "active" : ""}`;
   link.href = "/admin/";
   link.innerHTML = '<span class="nav-icon">◆</span><span>Admin</span>';
+  slot.prepend(editorialLink);
   slot.prepend(link);
   return true;
 }
