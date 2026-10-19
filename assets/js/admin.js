@@ -5701,6 +5701,13 @@
     }
   }
 
+  function luriaSafeImageSrc(value) {
+    const raw = String(value ?? "").trim();
+    if (!raw) return "";
+    if (/^data:image\/(?:svg\+xml|png|jpeg|webp);/i.test(raw)) return raw;
+    return luriaSafeContentUrl(raw, {relative:true});
+  }
+
   function renderApostilaImageReviewQueue() {
     const list = $("admin-apostila-images-list");
     if (!list) return;
@@ -5729,7 +5736,7 @@
     }
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
-      const src = luriaSafeContentUrl(asset.src, {relative:true});
+      const src = luriaSafeImageSrc(asset.src);
       const preview = src
         ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '" onerror="if(!this.dataset.retried){this.dataset.retried=\'1\';var m=this.src.match(/File:(.+)$/);if(m){this.src=\'https://commons.wikimedia.org/wiki/Special:FilePath/\'+m[1];return;}}this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';"><div class="admin-image-placeholder-fallback" style="display:none;width:100%;height:140px;align-items:center;justify-content:center;background:var(--surface-muted,#f3f4f6);color:var(--text-muted,#6b7280);font-size:12px;text-align:center;padding:8px;border-radius:8px;border:1px dashed var(--border,#d1d5db)"><span>Imagem indisponível na fonte externa<br><small style=\'opacity:.8\'>Clique em Abrir fonte ou aguarde substituição</small></span></div>'
         : '<span>Prévia indisponível.</span>';
@@ -5843,7 +5850,7 @@
       const expand = event.target.closest("[data-apostila-image-expand]");
       if (expand) {
         const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(expand.dataset.apostilaImageExpand));
-        const src = luriaSafeContentUrl(row?.proposed_asset?.src, {relative:true});
+        const src = luriaSafeImageSrc(row?.proposed_asset?.src);
         if (src) {
           const modal = ensureAdminImageLightbox();
           const img = modal.querySelector("img");
@@ -5881,7 +5888,7 @@
     if (!/^[a-zA-Z][a-zA-Z0-9_-]{0,90}$/.test(section)) throw Error("Candidata " + index + ": target_section inválida.");
     const asset = raw.proposed_asset;
     if (!asset || typeof asset !== "object" || Array.isArray(asset)) throw Error("Candidata " + index + ": proposed_asset ausente.");
-    const src = luriaSafeContentUrl(String(asset.src || "").trim(), {relative:true});
+    const src = luriaSafeImageSrc(String(asset.src || "").trim());
     const original = luriaSafeContentUrl(String(raw.source_url || "").trim());
     if (!src || !original || !String(asset.alt || "").trim()
       || !String(raw.source_name || "").trim() || !String(raw.source_license || "").trim()) {
@@ -5921,7 +5928,7 @@
     const message = $("admin-apostila-images-import-status");
     const file = input?.files?.[0];
     if (!file) return;
-    if (file.size > 300000) throw Error("Limite de 300 KB para o manifesto de candidatas.");
+    if (file.size > 600000) throw Error("Limite de 600 KB para o manifesto de candidatas.");
     if (btn) btn.disabled = true;
     try {
       const parsed = JSON.parse(await file.text());
