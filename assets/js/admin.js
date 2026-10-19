@@ -5731,7 +5731,7 @@
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
       const src = luriaSafeContentUrl(asset.src, {relative:true});
       const preview = src
-        ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '">'
+        ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '" onerror="if(!this.dataset.retried){this.dataset.retried=\'1\';var m=this.src.match(/File:(.+)$/);if(m){this.src=\'https://commons.wikimedia.org/wiki/Special:FilePath/\'+m[1];return;}}this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';"><div class="admin-image-placeholder-fallback" style="display:none;width:100%;height:140px;align-items:center;justify-content:center;background:var(--surface-muted,#f3f4f6);color:var(--text-muted,#6b7280);font-size:12px;text-align:center;padding:8px;border-radius:8px;border:1px dashed var(--border,#d1d5db)"><span>Imagem indisponível na fonte externa<br><small style=\'opacity:.8\'>Clique em Abrir fonte ou aguarde substituição</small></span></div>'
         : '<span>Prévia indisponível.</span>';
       const sourceUrl = luriaSafeContentUrl(row.source_url);
       const source = sourceUrl
