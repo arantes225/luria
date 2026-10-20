@@ -17,8 +17,6 @@
   const titleEl = byId("qs-builder-title");
   const createBtn = byId("qs-builder-generate");
   const statusEl = byId("qs-builder-status");
-  const availableEl = byId("qs-builder-available-count");
-  const estimatedEl = byId("qs-builder-est-time");
   const nf = new Intl.NumberFormat("pt-BR");
   const state = { items: [], userId: null, ownerEpoch: null, maximum: 50, busy: false, hasDifficulty: false };
 
@@ -157,15 +155,12 @@
     optionsFor(themeEl, aggregate(applyFilters(2), x => x.tema), "Todos os temas");
     optionsFor(subthemeEl, aggregate(applyFilters(3), x => x.subtema), "Todos os subtemas");
     const available = applyFilters(5).length;
-    availableEl.textContent = nf.format(available) + (available === 1 ? " questão disponível" : " questões disponíveis");
-    const requested = Number(countEl.value) || 0;
-    estimatedEl.textContent = "~" + nf.format(Math.max(1, requested) * 2) + " min de resolução";
     countEl.max = String(state.maximum);
     const limit = byId("qs-builder-max-label");
     if (limit) limit.textContent = String(state.maximum);
     const tag = byId("qs-builder-count-limit-tag");
     if (tag) tag.textContent = "Máx " + state.maximum;
-    createBtn.textContent = "Gerar lista e começar (" + requested + " questões) →";
+    createBtn.textContent = "Gerar lista e começar →";
     createBtn.disabled = state.busy || !contextValid() || available === 0;
   }
   function resetBelow(level) {
@@ -225,7 +220,6 @@
       console.error("Falha ao carregar o catálogo de questões", error);
       inform("Não foi possível carregar as questões: " + (error.message || "tente atualizar a página."), "error");
       createBtn.disabled = true;
-      availableEl.textContent = "Banco indisponível";
     }
   }
   async function generate() {
