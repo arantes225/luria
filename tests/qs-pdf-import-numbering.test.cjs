@@ -66,3 +66,22 @@ test('Invalid or missing PDF numbers cannot collide and do not inherit unrelated
   assert.equal(result.skippedImages, 1);
   assert.deepEqual(result.images, []);
 });
+
+test('Correct 99 blocks outrank 106 false blocks and match structured answer key', () => {
+  const start = source.indexOf('function questionSetConfidence(');
+  const end = source.indexOf('function normalizeLine(', start);
+  assert.ok(start >= 0 && end > start);
+  const score = new Function(source.slice(start,end) + '\nreturn questionSetConfidence;')();
+  const make = ns => ns.map(n => ({
+    question_number:n, stem:'Enunciado', alternatives:{A:'A',B:'B',C:'C',D:'D'}, raw_text:'x'.repeat(100)
+  }));
+  const key = Object.fromEntries(Array.from({length:99},(_,i)=>[i+1,i===76?'X':'B']));
+  const good = make(Array.from({length:99},(_,i)=>i+1));
+  const bad = make([...Array.from({length:99},(_,i)=>i+1),1,3,4,6,13,25,54]);
+  assert.equal(good.length,99);
+  assert.equal(bad.length,106);
+  assert.ok(score(good,key)>score(bad,key));
+  assert.ok(score(good,{})>score(bad,{}));
+  assert.match(source,/const completeSequentialKey/);
+  assert.match(source,/Nenhuma lista foi criada/);
+});
