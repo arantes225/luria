@@ -1,0 +1,1344 @@
+{
+  "v": 2,
+  "s": "puberdade-precoce-e-atrasada",
+  "t": "Puberdade Precoce e Atrasada",
+  "p": "Puberdade Precoce e Atrasada — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal, Critérios de Marshall-Tanner, Puberdade Precoce Central e Periférica e Abordagem da Puberdade Atrasada",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Puberdade Precoce e Atrasada",
+    "Tratado de Alta Performance em Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal, Critérios de Marshall-Tanner, Puberdade Precoce Central e Periférica e Abordagem da Puberdade Atrasada",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Puberdade Precoce e Atrasada"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "puberdade-fisiologia-eixo-hpg",
+      "1. Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal e a Transição Puberal"
+    ],
+    [
+      "puberdade-criterios-tanner-cronologia",
+      "2. Critérios de Marshall e Tanner e a Cronologia Puberal Normal"
+    ],
+    [
+      "puberdade-precoce-central-verdadeira",
+      "3. Puberdade Precoce Central (Verdadeira / GnRH-Dependente): Etiologia, Propedêutica e Manejo"
+    ],
+    [
+      "puberdade-precoce-periferica-pseudopuberdade",
+      "4. Puberdade Precoce Periférica (Pseudopuberdade / GnRH-Independente): Etiologia e Manejo"
+    ],
+    [
+      "puberdade-atrasada-rccp-hipogonadismos",
+      "5. Puberdade Atrasada: RCCP versus Hipogonadismo Hipogonadotrófico e Hipergonadotrófico"
+    ],
+    [
+      "puberdade-casos-clinicos",
+      "6. Casos Clínicos Pediátricos Comentados Passo a Passo"
+    ],
+    [
+      "puberdade-questoes-comentadas",
+      "7. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "puberdade-tabela-high-yield-conclusao",
+      "8. Tabela Comparativa High-Yield e Takeaway Messages"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "puberdade-fisiologia-eixo-hpg",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia do Eixo Hipotálamo-Hipófise-Gonadal e a Transição Puberal"
+        ],
+        [
+          "p",
+          "A puberdade é o período biológico de transição entre a infância e a idade adulta, caracterizado pelo desenvolvimento dos caracteres sexuais secundários, pela aceleração da velocidade de crescimento estatural (o estirão puberal ou <em>growth spurt</em>), por modificações marcantes na composição corporal e pela aquisição definitiva da capacidade reprodutiva e fertilidade gamética. Do ponto de vista neuroendócrino, o desencadeamento da puberdade é governado pela <strong>reativação e desinibição funcional do Eixo Hipotálamo-Hipófise-Gonadal (HHG)</strong>, um sistema hormonal complexo que experimenta fases de atividade e silenciamento rigorosamente programadas ao longo do ciclo de vida humano."
+        ],
+        [
+          "3",
+          "1.1 A Ontogênese do Eixo HHG: A Minipuberdade e o Silenciamento Infantil"
+        ],
+        [
+          "p",
+          "O eixo hipotálamo-hipófise-gonadal não é uma estrutura inerte durante a infância precoce; ao contrário, sua maturação percorre três etapas cronológicas distintas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Período Fetal e a \"Minipuberdade\" do Lactente:</strong> Durante a vida intrauterina, a secreção hipofisária de gonadotrofinas (LH e FSH) atinge um pico transitório no segundo trimestre de gestação, declinando no terceiro trimestre sob o efeito de retroalimentação negativa exercido pelos altos níveis de estrogênios e progesterona placentários. Com o clampeamento do cordão umbilical e a remoção abrupta dos esteroides placentários ao nascimento, o eixo é bruscamente desinibido. Instala-se a chamada <strong>\"Minipuberdade da Infância\"</strong>:\n    <ul>\n      <li>Nos <strong>meninos</strong>, ocorre uma elevação exuberante do Hormônio Luteinizante (LH) e da <strong>Testosterona sérica</strong> entre a 1ª semana e o 3º a 6º mês de vida (com níveis de testosterona similares aos de um adulto jovem!), responsável pelo crescimento fálico inicial, descida e maturação testicular e proliferação de células de Leydig e Sertoli, declinando para níveis pré-puberais basais após os 6 meses.",
+            "Nas <strong>meninas</strong>, a elevação do Hormônio Folículo-Estimulante (FSH) e do <strong>Estradiol</strong> é mais sustentada, persistindo até os 18 a 24 meses de vida, podendo condicionar discreto desenvolvimento transitório de tecido mamário palpável (telarca do lactente) ou pequenos cistos ovarianos fisiológicos na ultrassonografia.",
+            "<strong>O Período de Silenciamento Pré-Puberal (O \"Gonadostato\" Ativo):</strong> Entre os 2 anos de idade e o início da puberdade, o eixo HHG entra em um estado de profundo <strong>repouso e supressão neuroendócrina (período juvenil de quiescência)</strong>. Esse silenciamento é mantido por dois mecanismos centrais sinérgicos:\n    <ul>\n      <li><em>Freio Central Intrínseco (Supressão Neuronal Inibitória):</em> Uma densa rede de interneurônios gabaérgicos e peptidérgicos no sistema nervoso central inibe tonicamente o gerador de pulsos de GnRH hipotalâmico, com predomínio do neurotransmissor inibitório <strong>GABA</strong> e do <strong>Neuropeptídeo Y (NPY)</strong>.",
+            "<em>Hipersensibilidade do \"Gonadostato\":</em> O hipotálamo pré-pubere torna-se extraordinariamente sensível aos efeitos inibitórios de retroalimentação negativa de concentrações infinitesimais de esteroides sexuais circulantes. Traços microscópicos de estradiol ou testosterona são capazes de suprimir por completo a secreção de GnRH e gonadotrofinas.",
+            "<strong>A Reativação Puberal: O Papel Central das Kisspeptinas e do Gene <em>KISS1/KISS1R</em>:</strong>\n    <p>A saída do repouso e o despertar puberal ocorrem quando o freio inibitório central é progressivamente suprimido e os estímulos excitatórios aumentam. A grande descoberta da neuroendocrinologia moderna foi a identificação da <strong>via das Kisspeptinas</strong>:</p>\n    <ul>\n      <li>Os neurônios do núcleo arqueado e anteroventral periventricular do hipotálamo secretam o peptídeo <strong>Kisspeptina</strong> (codificado pelo gene <em>KISS1</em>). A kisspeptina liga-se ao seu receptor transmembrana acoplado à proteína G <strong>KISS1R (antigo GPR54)</strong> localizado na membrana dos neurônios secretores de <strong>GnRH (Hormônio Liberador de Gonadotrofinas)</strong>.",
+            "A estimulação de KISS1R atua como o <strong>interruptor mestre (<em>master switch</em>) do despertar puberal</strong>, deflagrando o aumento sustentado da secreção pulsátil de GnRH. Mutações ativadoras em <em>KISS1</em> ou <em>KISS1R</em> causam Puberdade Precoce Central familiar; mutações inativadoras com perda de função causam Hipogonadismo Hipogonadotrófico congênito!",
+            "Esse sistema é modulado por outros neuropeptídios hipotalâmicos acoplados (o complexo <strong>KNDy: Kisspeptina, Neurocinina B e Dinorfina</strong>) e é integrado metabolicamente pelo hormônio <strong>Leptina</strong> (produzido pelo tecido adiposo branco) e pela ghrelina. A leptina atua como um \"sinalizador de suficiência nutricional e energética corpórea\": crianças com carência energética extrema e desnutrição grave apresentam deficiência de leptina e atraso puberal; inversamente, meninas com sobrepeso ou obesidade infantil apresentam hiperleptinemia relativa, que ativa precocemente o sistema das kisspeptinas e antecipa a idade da telarca!"
+          ]
+        ],
+        [
+          "3",
+          "1.2 A Dinâmica Pulsátil de GnRH, LH e FSH: O Padrão Noturno Inicial"
+        ],
+        [
+          "p",
+          "O GnRH é decapeptídeo secretado de forma pulsátil na circulação porta-hipofisária. Ele se liga aos receptores específicos nos gonadotrofos da adeno-hipófise, estimulando a síntese e secreção de duas glicoproteínas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hormônio Luteinizante (LH):</strong>\n    <ul>\n      <li>No sexo masculino: liga-se aos receptores de membrana das <strong>Células de Leydig</strong> no interstício testicular, estimulando a esteroidogênese e a síntese e liberação de <strong>Testosterona</strong>.",
+            "No sexo feminino: estimula as <strong>Células da Teca</strong> ovarianas a sintetizarem andrógenos (androstenediona e testosterona), que servem de substrato para a aromatização folicular, além de deflagrar a ovulação e a formação do corpo lúteo no ciclo menstrual maduro."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Hormônio Folículo-Estimulante (FSH):</strong>"
+        ],
+        [
+          "u",
+          [
+            "No sexo masculino: liga-se aos receptores das <strong>Células de Sertoli</strong> nos túbulos seminíferos, estimulando a espermatogênese e a secreção de <strong>Inibina B</strong> e da Proteína Ligadora de Andrógenos (ABP).",
+            "No sexo feminino: liga-se às <strong>Células da Granulosa</strong> dos folículos ovarianos, induzindo a proliferação folicular e estimulando a enzima <strong>Aromatase (CYP19A1)</strong>, que converte os andrógenos tecais em <strong>Estradiol (E2)</strong>, além de secretar <strong>Inibina B</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<em>Pérola Propedêutica Crucial:</em> O primeiro marcador neuroendócrino objetivo da ativação do eixo HHG na puberdade é o <strong>aparecimento de pulsos secretórios de LH de alta amplitude restritos EXCLUSIVAMENTE AO PERÍODO DE SONO NOTURNO</strong> (sono REM e não-REM). À medida que a puberdade progride para estágios intermediários e tardios de Tanner, esses pulsos de LH expandem-se e tornam-se contínuos ao longo de todo o dia (diurnos e noturnos)."
+        ],
+        [
+          "3",
+          "1.3 Adrenarca versus Gonadarca: Distinção Fisiopatológica Fundamental"
+        ],
+        [
+          "p",
+          "Um dos conceitos mais cobrados em concursos e provas de título reside na distinção biológica absoluta entre dois processos fisiológicos cronologicamente paralelos, mas funcionalmente e anatomicamente <strong>independentes</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Critério de Comparação",
+            "Adrenarca (Maturação da Glândula Suprarrenal)",
+            "Gonadarca (Ativação do Eixo Hipotálamo-Hipófise-Gonadal)"
+          ],
+          [
+            [
+              "<strong>Órgão Efetor Primário</strong>",
+              "<strong>Zona Reticular do Córtex da Glândula Suprarrenal</strong> (glândula adrenal).",
+              "<strong>Gônadas</strong> (Testículos nos meninos e Ovários nas meninas)."
+            ],
+            [
+              "<strong>Controle Endócrino</strong>",
+              "<strong>Independente de GnRH, LH e FSH!</strong> Não é governada pelo eixo hipotálamo-gonadal. Mediada por ACTH e fatores adrenais locais.",
+              "<strong>Estritamente dependente da secreção pulsátil de GnRH hipotalâmico</strong> e das gonadotrofinas adeno-hipofisárias (LH e FSH)."
+            ],
+            [
+              "<strong>Esteroides Produzidos</strong>",
+              "<strong>Andrógenos Adrenais Fracos:</strong> Sulfato de Desidroepiandrosterona (<strong>SDHEA</strong>), DHEA livre e Androstenediona.",
+              "<strong>Esteroides Sexuais Gonadais Potentes:</strong> <strong>Testosterona</strong> (células de Leydig) e <strong>Estradiol</strong> (células da granulosa ovarianas)."
+            ],
+            [
+              "<strong>Manifestações Clínicas Específicas</strong>",
+              "<strong>Pubarca</strong> (surgimento de pelos pubianos finos e escuros), <strong>axilarca</strong> (pelos axilares), odor corporal apócrino com cheiro de adulto e acne comedoniana facial.",
+              "<strong>Telarca</strong> (broto mamário nas meninas) e <strong>Aumento do Volume Testicular (>= 4 mL)</strong> nos meninos; induz o estirão de crescimento pleno e menarca."
+            ],
+            [
+              "<strong>Cronologia Típica Normal</strong>",
+              "Inicia-se habitualmente entre os <strong>6 e 8 anos de idade</strong> (precede a gonadarca em 1 a 2 anos).",
+              "Inicia-se fisiologicamente a partir dos <strong>8 anos em meninas e 9 anos em meninos</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Implicação Clínica Decisiva:</em> O surgimento isolado de pubarca (pelos pubianos) e odor axilar aos 7 anos em uma menina, sem qualquer broto mamário associado e com velocidade de crescimento normal, reflete apenas uma <strong>Adrenarca Precoce Isolada</strong> (uma variante benigna do desenvolvimento ligada à produção de SDHEA adrenal), e <strong>NÃO</strong> significa puberdade verdadeira dependente de GnRH!"
+        ]
+      ]
+    ],
+    [
+      "puberdade-criterios-tanner-cronologia",
+      0,
+      [
+        [
+          "2",
+          "2. Critérios de Marshall e Tanner e a Cronologia Puberal Normal"
+        ],
+        [
+          "p",
+          "A avaliação semiótica e estadiamento clínico da puberdade apoiam-se universalmente nos <strong>Critérios de Marshall e Tanner</strong>, estabelecidos na década de 1960. O estadiamento divide a maturação sexual em 5 fases contínuas (estágios 1 a 5) avaliadas separadamente para mamas (M1 a M5) e pelos pubianos (P1 a P5) no sexo feminino, e genitália (G1 a G5) e pelos pubianos (P1 a P5) no sexo masculino."
+        ],
+        [
+          "3",
+          "2.1 O Estadiamento Puberal no Sexo Feminino (Marshall & Tanner 1969)"
+        ],
+        [
+          "p",
+          "Na menina, a sequência puberal canônica compreende quatro eventos sucessivos: <strong>Telarca -> Pubarca -> Estirão Estatural Máximo (Pico de Velocidade de Crescimento) -> Menarca</strong>."
+        ],
+        [
+          "t",
+          [
+            "Estágio de Tanner",
+            "Desenvolvimento das Mamas (M)",
+            "Desenvolvimento dos Pelos Pubianos (P)",
+            "Correlação Fisiológica e Estirão"
+          ],
+          [
+            [
+              "<strong>Estágio 1 (M1 / P1)</strong>",
+              "<strong>Mamas Pré-puberais:</strong> Elevação apenas da papila (mamilo). Ausência completa de tecido glandular subareolar palpável.",
+              "<strong>Pré-puberal:</strong> Ausência total de pelos pubianos (pode haver discreta penugem velosa idêntica à do abdome).",
+              "Velocidade de crescimento pré-puberal constante (5 a 6 cm/ano)."
+            ],
+            [
+              "<strong>Estágio 2 (M2 / P2)</strong>",
+              "<strong>O MARCO DO INÍCIO PUBERAL FEMININO (TELARCA):</strong> Surgimento do <strong>broto mamário</strong> subareolar palpável, com elevação firme da mama e papila como um pequeno montículo, e discreto alargamento do diâmetro da aréola.",
+              "Pelos escassos, longos, finos, lisos ou levemente encaracolados, levemente pigmentados, localizados principalmente ao longo dos grandes lábios.",
+              "<strong>Início formal da puberdade feminina</strong> (idade cronológica média: 9,5 a 10,5 anos; limite inferior da normalidade: <strong>8 anos completos</strong>)."
+            ],
+            [
+              "<strong>Estágio 3 (M3 / P3)</strong>",
+              "Maior aumento da mama e da aréola, que continuam a crescer em um <strong>único contorno contínuo</strong> (sem separação entre a aréola e a mama circundante).",
+              "Pelos consideravelmente mais escuros, grossos, ásperos e encaracolados, espalhando-se sobre a sínfise púbica.",
+              "<strong>OCORRÊNCIA DO PICO DO ESTIRÃO DE CRESCIMENTO FEMININO (Pico de Velocidade de Crescimento - PVC):</strong> A menina cresce em ritmo acelerado de <strong>8 a 10 cm/ano</strong>! (Atenção: o estirão feminino é precoce, ocorrendo em Tanner M3!)."
+            ],
+            [
+              "<strong>Estágio 4 (M4 / P4)</strong>",
+              "Projeção da aréola e da papila formando uma <strong>segunda elevação (segundo montículo) acima do contorno geral do parênquima da mama</strong> (\"duplo contorno\").",
+              "Pelos do tipo adulto em espessura e textura, densos e encaracolados, mas com área de distribuição ainda menor que no adulto (não atingem as coxas).",
+              "<strong>OCORRÊNCIA DA MENARCA (Primeira Menstruação):</strong> Ocorre tipicamente em <strong>Tanner M4</strong> (cerca de 2 a 2,5 anos após a telarca M2; idade média no Brasil: 12 a 12,5 anos). <em>Após a menarca, o crescimento residual é limitado a apenas 4 a 7 cm até o fechamento epifisário definitivo!</em>"
+            ],
+            [
+              "<strong>Estágio 5 (M5 / P5)</strong>",
+              "<strong>Mama Adulta Definitiva:</strong> Regressão da aréola ao contorno geral da mama, com projeção persistente apenas da papila mamária.",
+              "Pelos de distribuição e aspecto adulto clássico, distribuídos em padrão triangular feminino invertido, estendendo-se para a superfície medial das coxas.",
+              "Fusão completa das cartilagens de crescimento (epífises ósseas); término do crescimento estatural linear."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2.2 O Estadiamento Puberal no Sexo Masculino (Marshall & Tanner 1970)"
+        ],
+        [
+          "p",
+          "No menino, a sequência puberal canônica compreende: <strong>Aumento do Volume Testicular (G2) -> Pubarca -> Crescimento Peniano em Comprimento (G3) -> Estirão Estatural Máximo tardio (G4) -> Espermarca</strong>."
+        ],
+        [
+          "t",
+          [
+            "Estágio de Tanner",
+            "Desenvolvimento dos Genitais Masculinos (G)",
+            "Desenvolvimento dos Pelos Pubianos (P)",
+            "Volume Testicular (Orquidômetro de Prader)"
+          ],
+          [
+            [
+              "<strong>Estágio 1 (G1 / P1)</strong>",
+              "Pênis, escroto e testículos de tamanho e proporção pré-puberais infantis. Pele escrotal fina e clara.",
+              "Ausência total de pelos pubianos.",
+              "Volume testicular <strong>inferior a 4 mL (1 a 3 mL)</strong>; comprimento do maior eixo < 2,5 cm."
+            ],
+            [
+              "<strong>Estágio 2 (G2 / P2)</strong>",
+              "<strong>O MARCO DO INÍCIO PUBERAL MASCULINO:</strong> Aumento inicial dos testículos e da bolsa escrotal; a pele do escroto torna-se mais avermelhada, delgada e enrugada. O pênis apresenta pouco ou nenhum aumento.",
+              "Pelos escassos, longos, lisos ou discretamente encaracolados, levemente pigmentados, situados principalmente na base do pênis.",
+              "<strong>VOLUME TESTICULAR MAIOR OU IGUAL A 4 mL (>= 4 mL)</strong> no orquidômetro de Prader (ou maior eixo >= 2,5 cm). <em>Idade média: 11 a 11,5 anos; limite inferior normal: <strong>9 anos completos</strong></em>."
+            ],
+            [
+              "<strong>Estágio 3 (G3 / P3)</strong>",
+              "Aumento marcante do pênis, que <strong>cresce primariamente em COMPRIMENTO</strong>. Maior crescimento dos testículos e bolsa escrotal.",
+              "Pelos mais escuros, grossos, ásperos e encaracolados, espalhando-se sobre o púbis.",
+              "Volume testicular entre <strong>6 e 12 mL</strong>."
+            ],
+            [
+              "<strong>Estágio 4 (G4 / P4)</strong>",
+              "Maior desenvolvimento do pênis, que agora <strong>cresce em DIÂMETRO (espessura) e desenvolve a glande</strong>. Escroto mais escuro e pregueado.",
+              "Pelos de aspecto adulto em espessura, mas cobrindo área menor que o adulto, sem atingir a raiz das coxas.",
+              "<strong>Volume testicular entre 12 e 20 mL. OCORRÊNCIA DO PICO DO ESTIRÃO MASCULINO (PVC):</strong> O menino cresce em ritmo de <strong>10 a 12 cm/ano</strong>! Ocorre cerca de 2 anos mais tarde que na menina (Tanner G4!). Ocorrência da espermarca (primeira ejaculação)."
+            ],
+            [
+              "<strong>Estágio 5 (G5 / P5)</strong>",
+              "<strong>Genitália Adulta Plena:</strong> Pênis e escroto com dimensões e proporções adultas normais. Pigmentação escrotal intensa.",
+              "Pelos em distribuição adulta clássica em padrão losângico, estendendo-se para a raiz das coxas e linha alba (em direção ao umbigo).",
+              "Volume testicular adulto <strong>entre 15 e 25 mL</strong>. Fechamento das epífises ósseas e término do crescimento."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "As Duas Fronteiras Cronológicas Mais Cobradas em Concursos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Definição Temporal de Puberdade Precoce:</strong>\n      <ul>\n        <li>No sexo feminino: Aparecimento de qualquer caractere sexual secundário (telarca M2 ou pubarca P2) <strong>ANTES DOS 8 ANOS DE IDADE</strong> (< 8,0 anos).",
+            "No sexo masculino: Aparecimento de qualquer caractere sexual secundário (aumento testicular G2 >= 4 mL ou pubarca P2) <strong>ANTES DOS 9 ANOS DE IDADE</strong> (< 9,0 anos)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Definição Temporal de Puberdade Atrasada:</strong>"
+        ],
+        [
+          "u",
+          [
+            "No sexo feminino: <strong>Ausência de qualquer sinal de desenvolvimento puberal (ausência de telarca / persistência em Tanner M1) AOS 13 ANOS DE IDADE</strong> completos; OU ausência de menarca após 3 a 5 anos da telarca (ou após os 15 anos de idade).",
+            "No sexo masculino: <strong>Ausência de qualquer sinal de desenvolvimento puberal (volume testicular mantido < 4 mL / persistência em Tanner G1) AOS 14 ANOS DE IDADE</strong> completos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "puberdade-precoce-central-verdadeira",
+      0,
+      [
+        [
+          "2",
+          "3. Puberdade Precoce Central (Verdadeira / GnRH-Dependente): Etiologia, Propedêutica e Manejo"
+        ],
+        [
+          "p",
+          "A <strong>Puberdade Precoce Central (PPC)</strong> — também historicamente denominada Puberdade Precoce Verdadeira ou <strong>GnRH-Dependente</strong> — decorre da <strong>ativação prematura e autônoma do gerador hipotalâmico de pulsos de GnRH</strong>. Ocorre a reativação fisiológica antecipada de todo o eixo neuroendócrino: o GnRH pulsátil estimula a adeno-hipófise a secretar LH e FSH de forma harmônica e coordenada, os quais atuam sobre as gônadas (ovários e testículos) estimulando a esteroidogênese gonadal (estradiol e testosterona) e a proliferação das linhagens foliculares e espermatogênicas."
+        ],
+        [
+          "p",
+          "Por essa razão biológica, na PPC o desenvolvimento dos caracteres sexuais é <strong>ISOSSEXUAL (ou seja, compatível com o sexo genético e fenotípico da criança)</strong> e segue exatamente a <strong>sequência fisiológica harmônica habitual</strong> (telarca seguida de pubarca nas meninas; aumento testicular simétrico >= 4 mL seguido de crescimento peniano nos meninos), porém em idade cronológica inapropriadamente precoce (< 8 anos em meninas e < 9 anos em meninos)."
+        ],
+        [
+          "3",
+          "3.1 Etiologia e a Disparidade Epidemiológica de Gênero (Pérola das Provas!)"
+        ],
+        [
+          "p",
+          "A proporção de PPC entre os sexos exibe um nítido predomínio feminino (cerca de 5 a 10 meninas para cada 1 menino acometido). No entanto, o aspecto etiológico subjacente guarda uma <strong>assimetria de gravidade orgânica extraordinária</strong> que é cobrada em praticamente todos os concursos médicos:"
+        ],
+        [
+          "t",
+          [
+            "Sexo do Paciente",
+            "Etiologia Mais Frequente",
+            "Proporção Idiopática vs. Causa Orgânica no SNC",
+            "Recomendação Prática da SBP / Endocrine Society"
+          ],
+          [
+            [
+              "<strong>Sexo Feminino</strong> (Meninas)",
+              "<strong>IDIOPÁTICA (Sem lesão estrutural demonstrável no SNC)</strong>",
+              "<strong>85% a 90% dos casos são IDIOPÁTICOS!</strong><br>Apenas 10% a 15% decorrem de lesões orgânicas expansivas ou congênitas do SNC.",
+              "Apesar de a maioria ser idiopática, a <strong>Ressonância Magnética (RM) de Encéfalo com foco em Sela Túrcica e Hipotálamo é OBRIGATÓRIA</strong> para todas as meninas com PPC (especialmente se < 6 anos ou progressão rápida)."
+            ],
+            [
+              "<strong>Sexo Masculino</strong> (Meninos)",
+              "<strong>CAUSA ORGÂNICA / LESÃO DO SNC</strong> (Neoplasias, malformações ou sequelas encefálicas)",
+              "<strong>Mais de 40% a 50% dos meninos têm LESÃO ESTRUTURAL NO SNC!</strong><br>Apenas cerca de metade é idiopática.",
+              "<strong>Em meninos, puberdade precoce é lesão do SNC até que se prove o contrário!</strong> A RM de crânio e hipotálamo/hipófise é de urgência absoluta."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Causas Orgânicas Centrais de Destaque:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hamartoma Hipotalâmico de Tuber Cinereum:</strong> É a causa tumoral/malformativa benigna mais comum de PPC em ambos os sexos (especialmente em crianças menores de 4 anos). Trata-se de uma massa heterotópica benigna congênita formada por neurônios maduros desorganizados que funcionam como um <strong>\"marcapasso ectópico secretor de GnRH\"</strong> autônomo, resistente ao freio inibitório central. Manifesta-se classicamente pela tríade: PPC + <strong>Crises Epilépticas Gelásticas (crises paroxísticas involuntárias de riso imotivado ou choro espasmódico)</strong> + distúrbios cognitivos e comportamentais. À RM de encéfalo, apresenta-se como massa séssil ou pedunculada não captante de contraste gadolínio localizada no assoalho do terceiro ventrículo.",
+            "<strong>Outras Neoplasias do SNC:</strong> Gliomas de via óptica e de hipotálamo (frequentes na Neurofibromatose Tipo 1), astrocitomas pilocíticos, craniofaringiomas (geralmente causam atraso puberal, mas podem deflagrar PPC por descompressão/desinibição do eixo), ependimomas e disgerminomas secretores.",
+            "<strong>Agressões Encefálicas Adquiridas e Congênitas:</strong> Hidrocefalia congênita ou adquirida, mielomeningocele, sequelas de meningite bacteriana ou encefalite viral na primeira infância, traumatismo cranioencefálico grave (TCE), hipóxia perinatal / paralisia cerebral e radioterapia holocraniana prévia para leucemia ou tumores cerebrais (doses baixas de radiação < 24 Gy desinibem o eixo precocemente!).",
+            "<strong>Causas Genéticas Monogênicas de PPC Familiar:</strong> Mutações com ganho de função nos genes <em>KISS1</em> ou <em>KISS1R</em>, ou mutações inativadoras com perda de função por <em>imprinting</em> no gene <strong><em>MKRN3</em> (Makorin ring finger protein 3)</strong>, situado no cromossomo 15q11-q13 (região de Prader-Willi), hoje reconhecida como a causa genética mais frequente de PPC familial hereditária transmitida pelo alelo paterno."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Propedêutica Laboratorial e de Imagem da PPC"
+        ],
+        [
+          "o",
+          [
+            "<strong>Radiografia Simples de Punho e Mão Esquerda para Avaliação da Idade Óssea (IO):</strong>\n    <p>O exame inicial de rastreio clínico indispensável! Avaliada pelos métodos de Greulich & Pyle ou Tanner-Whitehouse. Na Puberdade Precoce (tanto central quanto periférica progressiva), a exposição precoce aos esteroides sexuais acelera a maturação das placas epifisárias de crescimento, resultando em <strong>AVANÇO DA IDADE ÓSSEA EM MAIS DE 1 A 2 ANOS EM RELAÇÃO À IDADE CRONOLÓGICA (IO > IC + 1 a 2 anos)</strong>.</p>\n    <p><em>Paradoxo Estatural da Puberdade Precoce (Conceito Chave!):</em> A criança com PPC é inicialmente uma \"criança alta para a idade\" (estatura temporariamente acima do percentil 95 na infância precoce devido ao estirão puberal antecipado); contudo, os estrógenos aceleram a mineralização e fusão prematura das cartilagens epifisárias de crescimento, cessando o crescimento linear muito antes dos pares. O resultado final sem tratamento é uma <strong>BAIXA ESTATURA DEFINITIVA GRAVE NA VIDA ADULTA (perda de 10 a 20 cm do potencial genético alvo!)</strong>.</p>",
+            "<strong>Dosagem Basal de Gonadotrofinas (LH e FSH) por Ensaio Ultrasensível (ICMA / ECLIA):</strong>\n    <ul>\n      <li><strong>LH Basal Ultrasensível:</strong> É o marcador laboratorial de triagem de maior valor preditivo positivo! Níveis basais de <strong>LH sérico maiores ou iguais a 0,3 a 0,6 mUI/mL</strong> (especialmente LH basal >= 0,3 mUI/mL colhido pela manhã) confirmam com alta sensibilidade a ativação central do eixo hipotálamo-hipofisário!",
+            "Se o LH basal for indetectável ou duvidoso (< 0,2 mUI/mL) na vigência de caracteres sexuais progressivos e avanço da idade óssea, está indicado o teste de estímulo dinâmico.",
+            "<strong>Teste de Estímulo com GnRH Sintético (ou com Análogo de GnRH - Leuprorrelina):</strong>\n    <p>Considerado o <strong>exame laboratorial padrão-ouro confirmatório</strong>:</p>\n    <div class=\"note-box\">\n      <p>Administra-se GnRH nativo (100 mcg IV) com coletas seriadas de LH e FSH aos 0, 15, 30, 45 e 60 minutos (ou após leuprorrelina subcutânea com dosagem em 2 a 4 horas):</p>\n      <ul>\n        <li><strong>Resposta Positiva Confirmatória de Puberdade Precoce Central:</strong> Pico de <strong>LH estimulado MAIOR QUE 5,0 mUI/mL</strong> (critério consensual clássico da SBP e Consensos Internacionais; ensaios contemporâneos utilizam pico > 3,3 a 5,0 mUI/mL) associado a uma <strong>relação de pico LH / FSH maior que 1,0 (predomínio de LH sobre FSH)</strong>, mimetizando a resposta de um indivíduo puberal maduro!",
+            "<em>Resposta Pré-Puberal / Periférica:</em> Pico de LH permanece suprimido (< 3 a 5 mUI/mL) com predomínio absoluto de FSH (relação LH/FSH < 1,0).",
+            "<strong>Ultrassonografia Pélvica com Doppler (nas Meninas):</strong>\n    <p>Avalia a impregnação estrogênica sobre os órgãos-alvo genitais internos:</p>\n    <ul>\n      <li><strong>Útero:</strong> O útero pré-pubere é tubular com fundo estreito (relação colo/corpo 2:1 ou 1:1) e volume < 2 a 3 cm³. Na PPC, o útero adquire formato de pera (relação corpo/colo > 1:1), <strong>volume uterino MAIOR QUE 3,0 a 4,0 cm³</strong> e presença de <strong>linha endometrial hiperecogênica espessada</strong>.",
+            "<strong>Ovários:</strong> <strong>Volume ovariano bilateral MAIOR QUE 1,5 a 2,0 cm³</strong>, com múltiplos folículos em desenvolvimento (diâmetro folicular > 4 a 9 mm), descartando cistos ovarianos foliculares gigantes solitários autônomos.",
+            "<strong>Ressonância Magnética de Encéfalo e Hipotálamo-Hipófise com Gadolínio:</strong>\n    <p>Exame de neuroimagem obrigatório em todos os casos de PPC confirmada laboratorialmente, para rastreamento de hamartomas, gliomas e outras afecções expansivas intracranianas.</p>"
+          ]
+        ],
+        [
+          "3",
+          "3.3 Tratamento Farmacológico Padrão-Ouro: Análogos de GnRH de Depósito (GnRHa)"
+        ],
+        [
+          "p",
+          "O tratamento de escolha incontestável para a Puberdade Precoce Central progressiva é o uso de <strong>Análogos Sintéticos do GnRH de Longa Ação (GnRHa de Depósito)</strong>, sendo o acetato de <strong>Leuprorrelina de depósito</strong> ou a <strong>Triptorrelina de depósito</strong> os agentes mais amplamente empregados no mundo e fornecidos pelo Sistema Único de Saúde (SUS) no Brasil."
+        ],
+        [
+          "4",
+          "Mecanismo Molecular de Ação: Dessensibilização e Down-Regulation"
+        ],
+        [
+          "p",
+          "O GnRH hipotalâmico natural depende estritamente de sua secreção <strong>pulsátil intermitente</strong> (com intervalos de 60 a 90 minutos) para manter os gonadotrofos hipofisários ativos. Os análogos sintéticos (GnRHa) são moléculas modificadas com substituições de aminoácidos nas posições 6 e 10 que conferem uma afinidade de ligação ao receptor de GnRH até 100 vezes maior e uma meia-vida biológica muito prolongada."
+        ],
+        [
+          "p",
+          "A administração contínua e sustentada do GnRHa provoca:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Efeito \"Flare-up\" Inicial Transitório:</strong> Nos primeiros 5 a 10 dias, ocorre estimulação inicial dos receptores hipofisários com liberação transitória de LH/FSH e esteroides sexuais (pode ocorrer um discreto sangramento vaginal de privação transitório na menina após a primeira dose).",
+            "<strong>Dessensibilização e \"Down-Regulation\" Sustentada dos Receptores Hipofisários:</strong> A estimulação agonista contínua satura e induz a internalização e degradação dos receptores de GnRH na membrana dos gonadotrofos hipofisários. A adeno-hipófise torna-se completamente refratária ao GnRH. A síntese e a secreção de <strong>LH e FSH são profundamente bloqueadas e suprimidas</strong>.",
+            "<strong>Silenciamento Gonadal:</strong> Sem o estímulo das gonadotrofinas, os ovários e testículos retornam ao estado de quiescência pré-puberal total: os níveis de estradiol colapsam para < 10 a 20 pg/mL e a testosterona cai para < 20 a 30 ng/dL!"
+          ]
+        ],
+        [
+          "4",
+          "Posologia, Metas Terapêuticas e Momento da Suspensão:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Esquema Posológico:</strong> Acetato de Leuprorrelina de depósito por via intramuscular profunda ou subcutânea na dose de <strong>3,75 mg a cada 28 dias</strong> (formulação mensal) ou formulações trimestrais de depósito (11,25 mg a cada 12 semanas) devidamente validadas. Em crianças menores de 20 kg com escape hormonal, a dose pode ser ajustada para 7,5 mg/mês.",
+            "<strong>Metas Clínicas e Laboratoriais do Bloqueio:</strong>\n    <ul>\n      <li>Estabilização ou regressão dos caracteres sexuais secundários (redução do broto mamário, desaceleração do crescimento de pelos).",
+            "<strong>Desaceleração da velocidade de crescimento estatural para níveis normais infantis (5 a 6 cm/ano)</strong>, evitando o estirão prematuro.",
+            "<strong>Frenação do avanço da idade óssea</strong> (a relação Delta IO / Delta IC aproxima-se de 1,0), permitindo que a idade cronológica \"alcance\" a idade óssea e preservando o potencial genético de estatura adulta final!",
+            "Supressão laboratorial documentada: <strong>Pico de LH estimulado após GnRHa < 2,0 a 3,0 mUI/mL</strong> e esteroides gonadais em níveis pré-puberais."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Critérios de Interrupção do Tratamento:</strong> O análogo de GnRH deve ser suspenso no momento ideal para permitir a retomada puberal harmônica e o estirão final:"
+        ],
+        [
+          "u",
+          [
+            "Nas <strong>meninas</strong>: interromper quando a <strong>Idade Óssea atingir aproximadamente 12,0 a 12,5 anos</strong> (habitualmente entre 11 e 12 anos de idade cronológica). A menarca ocorre de forma fisiológica e previsível cerca de 12 a 18 meses após a suspensão da medicação.",
+            "Nos <strong>meninos</strong>: interromper quando a <strong>Idade Óssea atingir aproximadamente 13,0 a 13,5 anos</strong> (idade cronológica em torno de 12 a 13 anos)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "puberdade-precoce-periferica-pseudopuberdade",
+      0,
+      [
+        [
+          "2",
+          "4. Puberdade Precoce Periférica (Pseudopuberdade / GnRH-Independente): Etiologia e Manejo"
+        ],
+        [
+          "p",
+          "A <strong>Puberdade Precoce Periférica (PPP)</strong> — classicamente denominada Pseudopuberdade Precoce ou <strong>GnRH-Independente</strong> — é caracterizada pelo desenvolvimento de caracteres sexuais secundários decorrente da <strong>produção autônoma, excessiva e desregulada de esteroides sexuais (estrógenos e/ou andrógenos) a partir das gônadas (ovários ou testículos), das glândulas suprarrenais ou de fontes exógenas</strong>, de forma completamente desvinculada e independente da estimulação do GnRH e das gonadotrofinas hipofisárias."
+        ],
+        [
+          "3",
+          "4.1 O Perfil Hormonal Cardinal: A Supressão do Eixo Hipotálamo-Hipofisário"
+        ],
+        [
+          "p",
+          "Como a fonte produtora de esteroides sexuais é periférica e os níveis séricos de estradiol ou testosterona encontram-se acentuadamente elevados, esses hormônios exercem um potente e constante <strong>feedback negativo (retroalimentação negativa) sobre a adeno-hipófise e o hipotálamo</strong>. O resultado laboratorial patognomônico da Puberdade Precoce Periférica é a presença de:"
+        ],
+        [
+          "p",
+          "<strong>Perfil Laboratorial Típico da PPP:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Níveis séricos de Esteroides Sexuais Elevados:</strong> Estradiol sérico elevado nas meninas ou Testosterona sérica elevada nos meninos; ASSOCIADOS A:",
+            "<strong>Gonadotrofinas Hipofisárias PROFUNDAMENTE SUPRIMIDAS:</strong> <strong>LH e FSH basais indetectáveis ou em níveis pré-puberais mínimos (< 0,1 a 0,2 mUI/mL)</strong>; E",
+            "<strong>Teste de Estímulo com GnRH ou GnRHa \"Plano\" / Negativo:</strong> Ausência completa de elevação de LH após o estímulo (pico de LH permanece < 2 a 3 mUI/mL), comprovando que o eixo central está inibido!"
+          ]
+        ],
+        [
+          "p",
+          "Ao contrário da PPC (que é sempre isossexual e harmônica), a Puberdade Precoce Periférica pode manifestar-se tanto de forma <strong>Isossexual</strong> (desenvolvimento de caracteres concordantes com o sexo genético) quanto de forma <strong>Contrassexual (Heterossexual)</strong>, como a virilização em meninas (clitoromegalia, voz grave) ou a feminização em meninos (ginecomastia precoce)."
+        ],
+        [
+          "3",
+          "4.2 Principais Etiologias da Puberdade Precoce Periférica"
+        ],
+        [
+          "4",
+          "1. Hiperplasia Adrenal Congênita (HAC) - Forma Não Clássica (Tardia):"
+        ],
+        [
+          "p",
+          "Causada em mais de 90% a 95% dos casos pela deficiência autossômica recessiva da enzima <strong>21-hidroxilase (gene <em>CYP21A2</em> no cromossomo 6p21)</strong>. O bloqueio enzimático impede a síntese normal de cortisol e aldosterona, provocando acúmulo de precursores anteriores ao bloqueio, mormente a <strong>17-alfa-hidroxiprogesterona (17-OHP)</strong>. O cortisol baixo estimula a adeno-hipófise a hipersecretar <strong>ACTH</strong>, o qual hiperestimula a zona reticular do córtex adrenal, desviando os precursores acumulados para a rota de síntese excessiva de <strong>andrógenos adrenais (DHEA, androstenediona e testosterona)</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Manifestações Clínicas:</strong>\n    <ul>\n      <li>No menino: Crescimento peniano precoce acelerado, pelos pubianos abundantes (pubarca), acne inflamatória grave, aceleração da velocidade de crescimento estatural e avanço extremo da idade óssea. Crucialmente: <strong>OS TESTÍCULOS PERMANECEM COM VOLUME PRÉ-PUBERAL (< 4 mL)</strong>, pois os andrógenos vêm da adrenal, suprimindo o LH e impedindo o desenvolvimento dos túbulos seminíferos testiculares! (Essa dissociação — <em>pênis aumentado com testículos infantis</em> — é um clássico sinal patognomônico de HAC ou tumor adrenal em provas!). Em casos crônicos, podem surgir nódulos intratesticulares de restos adrenais ectópicos (TART).",
+            "Na menina: Pubarca precoce, axilarca, acne facial grave, clitoromegalia (virilização contrassexual) e avanço da idade óssea, <strong>sem desenvolvimento de broto mamário</strong> (ausência de telarca, pois não há hiperestrogenismo!)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Diagnóstico Padrão-Ouro:</strong> Dosagem sérica basal de <strong>17-alfa-hidroxiprogesterona (17-OHP) elevada</strong> (colhida em jejum às 8h da manhã); em casos limítrofes, realiza-se o <strong>Teste de Estímulo com ACTH sintético (Cortrosina 250 mcg IV)</strong> com dosagem de 17-OHP aos 60 minutos (valores estimulados > 10 a 15 ng/mL fecham o diagnóstico).</li>\n  <li><strong>Tratamento:</strong> Reposição de glicocorticoide oral (<strong>Hidrocortisona</strong> na dose de 10 a 15 mg/m²/dia dividida em 3 tomadas), que suprime a secreção excessiva de ACTH pela hipófise e normaliza a produção adrenal de andrógenos, permitindo o controle da idade óssea e o crescimento normal.</li>\n</ul>"
+        ],
+        [
+          "4",
+          "2. Tumores Gonadais e Adrenais Secretores de Esteroides Sexuais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cistos Foliculares Ovarianos Autônomos (Cistos da Granulosa):</strong> Causa mais frequente de PPP isossexual transitória em meninas. Cistos volumosos autônomos que secretam grandes quantidades de estradiol de forma pulsátil ou contínua, levando a desenvolvimento mamário rápido, espessamento endometrial e <strong>sangramento vaginal de privação súbito</strong> quando o cisto regride espontaneamente. A USG pélvica mostra cisto ovariano solitário > 2 a 3 cm, com útero aumentado e ovário contralateral pequeno/quiescente. Conduta: expectante (regressão espontânea na maioria dos casos).",
+            "<strong>Tumores de Células da Granulosa Ovariana:</strong> Neoplasias sólidas produtoras de estradiol que cursam com telarca precoce, aumento uterino e sangramentos de repetição. Marcador sérico tumoral: <strong>Inibina B</strong> maciçamente elevada.",
+            "<strong>Tumor de Células de Leydig Testicular:</strong> Causa rara de puberdade precoce no menino caracterizada pelo achado de <strong>AUMENTO TESTICULAR UNILATERAL ASSIMÉTRICO</strong> (um testículo volumoso contendo um nódulo palpável endurecido enquanto o outro testículo permanece atrófico/infantil). Produz testosterona autônoma com LH suprimido.",
+            "<strong>Carcinoma e Adenoma Adrenocortical:</strong> Produção maciça de andrógenos (e frequentemente hipercortisolismo concomitante - Síndrome de Cushing). Níveis séricos colapsadamente elevados de <strong>SDHEA</strong>, androstenediona e testosterona, com massa suprarrenal heterogênea à TC/RM."
+          ]
+        ],
+        [
+          "4",
+          "3. Síndrome de McCune-Albright:"
+        ],
+        [
+          "p",
+          "Desordem congênita esporádica (não herdável) causada por uma <strong>mutação somática pós-zigótica em mosaico de ganho de função no gene <em>GNAS1</em> (cromossomo 20q13.3)</strong>, que codifica a subunidade alfa da proteína estimuladora de nucleotídeo de guanina (<strong>Proteína Gs-alfa</strong>). Essa mutação mantém a enzima <em>adenilil ciclase</em> constitutivamente ativada em múltiplos tecidos, com hiperprodução contínua e autônoma de AMP cíclico (AMPc), mimetizando a estimulação de receptores acoplados a hormônios tróficos (FSH, LH, TSH, ACTH e GH), mesmo na ausência completa desses hormônios!"
+        ],
+        [
+          "u",
+          [
+            "<strong>A Tríade Clínica Clássica Patognomônica:</strong>\n    <ol>\n      <li><strong>Puberdade Precoce Periférica Recorrente e Autônoma:</strong> Muito mais comum em meninas, decorrente da formação recorrente de <strong>cistos ovarianos foliculares autônomos hipersecretantes de estradiol</strong>, manifestando-se por surtos de telarca flutuante e <strong>sangramento vaginal precoce recorrente em meninas com menos de 2 a 5 anos de idade</strong>, com LH/FSH indetectáveis.",
+            "<strong>Manchas Cutâneas \"Café-com-Leite\" Grandes e Típicas:</strong> Manchas hiperpigmentadas acastanhadas assimétricas com distribuição unilateral respeitando a linha média do corpo (seguindo as linhas de Blaschko), de <strong>contornos e bordas profundamente irregulares e recortadas (\"costa da costa do Maine\")</strong> — o que as diferencia categoricamente das manchas lisas e ovais da Neurofibromatose (\"costa da Califórnia\")!",
+            "<strong>Displasia Fibrosa Poliostótica:</strong> Substituição do tecido ósseo normal e medula por tecido fibroso frouxo hipomineralizado com trabéculas rudimentares, predispondo a deformidades ósseas graves, arqueamento de ossos longos (\"deformidade em cajado de pastor\" no fêmur proximal), dor óssea crônica e fraturas patológicas de repetição.",
+            "<em>Tratamento Farmacológico:</em> Inibidores da aromatase de terceira geração (<strong>Letrozol ou Anastrozol</strong>) para bloquear a síntese ovariana de estrógenos, ou moduladores seletivos do receptor de estrogênio (Tamoxifeno/Fulvestranto). Bisfosfonatos (Pamidronato ou Ácido Zoledrônico) para controle da dor e redução de fraturas na displasia fibrosa."
+          ]
+        ],
+        [
+          "4",
+          "4. Testotoxicose (Puberdade Precoce Familiar Limitada aos Homens):"
+        ],
+        [
+          "p",
+          "Desordem autossômica dominante restrita ao sexo masculino, causada por uma <strong>mutação ativadora no gene do receptor de LH (<em>LHCGR</em> no cromossomo 2p21)</strong>. O receptor de LH na membrana das células de Leydig permanece constitutivamente ligado e ativado sem necessitar de LH circulante! Meninos entre 2 e 4 anos de vida desenvolvem virilização precoce intensa (crescimento peniano rápido, ereções frequentes, pubarca, acne grave, estirão e avanço acentuado da idade óssea) com <strong>AUMENTO TESTICULAR BILATERAL MODERADO (em torno de 4 a 8 mL)</strong>, níveis de <strong>Testosterona na faixa do adulto e LH/FSH totalmente suprimidos</strong>! Tratamento: Combinação de antagonista do receptor de andrógenos (Bicalutamida ou Espironolactona) associado a inibidor da aromatase (Anastrozol)."
+        ],
+        [
+          "4",
+          "5. Exposição Exógena a Esteroides Sexuais:"
+        ],
+        [
+          "p",
+          "Causa iatrogênica ou acidental frequente na prática pediátrica decorrente do contato da pele da criança com pomadas ou <strong>géis transdérmicos de testosterona ou estrogênios utilizados pelos pais</strong> para reposição hormonal ou anabolismo muscular, ou ingestão acidental de pílulas anticoncepcionais combinadas. Provoca aparecimento súbito de caracteres sexuais sem avanço inicial da idade óssea e com gonadotrofinas suprimidas. A remoção da exposição resolve o quadro."
+        ]
+      ]
+    ],
+    [
+      "puberdade-atrasada-rccp-hipogonadismos",
+      0,
+      [
+        [
+          "2",
+          "5. Puberdade Atrasada: RCCP versus Hipogonadismo Hipogonadotrófico e Hipergonadotrófico"
+        ],
+        [
+          "p",
+          "A <strong>Puberdade Atrasada (ou Retardo Puberal)</strong> é definida formalmente pela <strong>ausência de quaisquer sinais de desenvolvimento sexual secundário em idades cronológicas situadas mais de 2 a 2,5 Desvios-Padrão acima da média populacional</strong>:"
+        ],
+        [
+          "u",
+          [
+            "No sexo feminino: <strong>Ausência de broto mamário (persistência em Tanner M1) AOS 13 ANOS DE IDADE COMPLETOS</strong>; ou um intervalo superior a 4 a 5 anos entre a telarca e a primeira menstruação (menarca ausente aos 15 a 16 anos).",
+            "No sexo masculino: <strong>Ausência de aumento do volume testicular (volume testicular mantido < 4 mL no orquidômetro de Prader / persistência em Tanner G1) AOS 14 ANOS DE IDADE COMPLETOS</strong>."
+          ]
+        ],
+        [
+          "3",
+          "5.1 Raciocínio Diagnóstico Algorítmico e os Três Grandes Grupos Etiológicos"
+        ],
+        [
+          "p",
+          "A abordagem diagnóstica estruturada divide a puberdade atrasada em três grupos fundamentais com base na avaliação clínica, na história familiar, na <strong>Idade Óssea (IO)</strong> e nos níveis basais das <strong>Gonadotrofinas Hipofisárias (LH e FSH)</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Categoria Etiológica",
+            "Mecanismo Fisiopatológico",
+            "Níveis de LH e FSH",
+            "Idade Óssea (IO)",
+            "Exemplos Clínicos Típicos"
+          ],
+          [
+            [
+              "<strong>1. Retardo Constitucional do Crescimento e da Puberdade (RCCP)</strong><br><em>(~60% a 70% dos casos; predomina em meninos)</em>",
+              "<strong>Variante normal do desenvolvimento</strong> (\"maturador lento\"); atraso fisiológico temporário na reativação do gerador pulsátil de GnRH hipotalâmico.",
+              "<strong>Normais Baixos ou Pré-Puberais</strong> (apropriados para a idade óssea atrasada, e não para a idade cronológica!).",
+              "<strong>Idade Óssea ATRASADA</strong> (IO atrasada em 2 a 3 anos em relação à IC), mas <strong>COMPATÍVEL COM A IDADE ESTATURAL (IO = IE < IC)</strong>.",
+              "História familiar positiva de \"estirão tardio\" em pais/irmãos; velocidade de crescimento constante normal; prognóstico de estatura adulta final totalmente preservado!"
+            ],
+            [
+              "<strong>2. Hipogonadismo Hipogonadotrófico (Central)</strong><br><em>(~15% a 20% dos casos)</em>",
+              "Defeito anatômico ou funcional primário no <strong>Hipotálamo ou na Adeno-hipófise</strong>, com falência congênita ou adquirida de síntese de GnRH, LH e FSH.",
+              "<strong>BAIXOS OU INDETECTÁVEIS</strong> (LH e FSH inapropriadamente baixos diante de esteroides sexuais nulos).",
+              "Atrasada.",
+              "<strong>Síndrome de Kallmann</strong> (anosmia/hiposmia); Craniofaringioma; Hipopituitarismo congênito; Doenças crônicas descompensadas (doença celíaca, anorexia, diabetes, insuficiência renal crônica)."
+            ],
+            [
+              "<strong>3. Hipogonadismo Hipergonadotrófico (Periférico)</strong><br><em>(~15% a 20% dos casos)</em>",
+              "<strong>Falência Gonadal Primária</strong> (disgenesia ou destruição dos ovários ou testículos). A gônada não produz esteroides; sem feedback negativo, a hipófise hiperproduz gonadotrofinas!",
+              "<strong>ELEVADOS OU MACIÇAMENTE ELEVADOS</strong> (FSH e LH muito altos, com FSH tipicamente > 30 a 40 mUI/mL!).",
+              "Atrasada.",
+              "<strong>Síndrome de Turner (45,X)</strong> nas meninas; <strong>Síndrome de Klinefelter (47,XXY)</strong> nos meninos; Quimioterapia / Radioterapia gonadal prévia; Criptorquidia bilateral não tratada; Torção testicular bilateral."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.2 Retardo Constitucional do Crescimento e da Puberdade (RCCP): O Protótipo da Normalidade"
+        ],
+        [
+          "p",
+          "O RCCP é responsável pela esmagadora maioria dos encaminhamentos de adolescentes masculinos ao ambulatório de endocrinologia pediátrica (proporção de 3 a 5 meninos para cada 1 menina). Trata-se de uma condição benigna, autolimitada e com forte componente de agregação genética e hereditariedade autossômica dominante:"
+        ],
+        [
+          "u",
+          [
+            "<strong>História Clínica Típica:</strong> Menino de 14 a 15 anos levado pelos pais por ser o mais baixo da turma escolar e \"não ter entrado na puberdade\". A anamnese revela frequentemente que o pai teve o estirão de crescimento tardio (cresceu até os 18 a 20 anos, começou a se barbear após sair do colégio) ou a mãe teve menarca tardia (aos 15 ou 16 anos).",
+            "<strong>Padrão de Crescimento e Idade Óssea (A Chave Diagnóstica!):</strong> A curva de crescimento mostra uma desaceleração da velocidade estatural na primeira infância (entre 1 e 3 anos), após a qual a criança passa a crescer em um <strong>canal paralelo e normal abaixo do percentil 3 (velocidade de crescimento normal de 4 a 5 cm/ano)</strong>. A radiografia de punho esquerdo revela o achado clássico:\n    <div class=\"note-box\">\n      <p><strong>A Tríade Antropométrica do RCCP:</strong></p>\n      <p><strong>Idade Óssea (IO) atrasada em relação à Idade Cronológica (IC), porém RIGOROSAMENTE IGUAL À IDADE ESTATURAL (IE): [ IO = IE < IC ]</strong></p>\n      <p><em>Exemplo Clínico:</em> Adolescente de 14 anos e 6 meses (IC = 14,5 anos), com estatura equivalente à de uma criança de 12 anos (IE = 12 anos) e Idade Óssea de 12 anos (IO = 12 anos). Como a placa de crescimento do paciente tem biologicamente 12 anos, ele tem ainda 2 a 3 anos a mais de crescimento linear residual pela frente! Sua estatura adulta final atingirá plenamente o canal do <strong>Alvo Genético Parental (Estatura Alvo)</strong>!</p>\n    </div>",
+            "<strong>Manejo do RCCP:</strong> Orientação e tranquilização do adolescente e da família quanto ao prognóstico favorável (\"tempo ao tempo\"). Quando o atraso puberal gera <strong>sofrimento psicológico agudo, estigmatização social, bullying escolar ou sintomas depressivos</strong>, está plenamente indicado um ciclo curto de \"indução puberal\" com <strong>Enantato ou Cipionato de Testosterona em baixas doses</strong> (50 a 100 mg por via intramuscular uma vez ao mês por 3 a 6 meses). Essa dose mínima não acelera indevidamente o fechamento epifisário, mas é suficiente para induzir o desenvolvimento inicial de caracteres sexuais, acelerar a velocidade de crescimento e \"destravar\" o eixo hipotálamo-hipofisário endógeno!"
+          ]
+        ],
+        [
+          "3",
+          "5.3 Hipogonadismo Hipogonadotrófico: Destaque para a Síndrome de Kallmann"
+        ],
+        [
+          "p",
+          "Ocorre quando os níveis de LH e FSH estão baixos ou indetectáveis diante da ausência de esteroides sexuais gonadais. Pode ser funcional e reversível (secundário a desnutrição crônica, anorexia nervosa, atividade física extenuante em atletas, hipotireoidismo grave ou doença celíaca não diagnosticada) ou permanente (congênito/genético ou tumoral):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Síndrome de Kallmann: O Protótipo Genético Clássico:</strong>\n    <p>Desordem do desenvolvimento embrionário caracterizada pela associação clássica entre <strong>Hipogonadismo Hipogonadotrófico congênito e ANOSMIA ou HIPOSMIA (incapacidade parcial ou total de sentir odores)</strong>.</p>\n    <ul>\n      <li><em>Base Embriológica Molecular:</em> Durante a organogênese embrionária fetal, os neurônios precursores secretores de GnRH originam-se no <strong>epitélio do placóide olfatório</strong> primitivo e realizam uma migração transnasal ao longo dos axônios dos nervos vomeronasal e olfatório até alcançarem o hipotálamo medial basal. Mutações genéticas (notadamente no gene <em>ANOS1 / KAL1</em> no cromossomo Xp22.3, com herança recessiva ligada ao X, ou nos genes <em>FGFR1</em>, <em>PROKR2</em> e <em>CHD7</em>) provocam <strong>aplasia ou hipoplasia dos bulbos e tratos olfatórios</strong>. Com a falha do arcabouço olfatório guia, os neurônios de GnRH sofrem parada migratória e não alcançam o hipotálamo!",
+            "<em>Quadro Clínico:</em> Adolescente masculino com genitália infantil (G1), micropênis, criptorquidia bilateral congênita e ausência completa de puberdade, associado à queixa de <strong>anosmia</strong> (o paciente nunca sentiu cheiro de café, perfume ou alimentos). Pode associar-se a anomalias na linha média: fenda labiopalatina, agenesia renal unilateral e sincinesia bimanual (movimentos em espelho involuntários das mãos). RM de crânio confirma a ausência/hipoplasia dos sulcos e bulbos olfatórios."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Craniofaringioma e Lesões Selares:</strong> Neoplasia epitelial benigna, originada de remanescentes da bolsa de Rathke na região selar e supraselar, que comprime o infundíbulo hipofisário e a adeno-hipófise. Manifesta-se por atraso puberal, cefaleia crônica, <strong>hemianopsia bitemporal (compressão do quiasma óptico)</strong>, diabetes insipidus central (poliúria e polidipsia) e deficiência associada de GH e TSH. À radiografia/TC, apresenta calcificações supraselares clássicas em mais de 80% das crianças.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "5.4 Hipogonadismo Hipergonadotrófico: Síndrome de Turner e Síndrome de Klinefelter"
+        ],
+        [
+          "p",
+          "Ocorre quando a gônada primária falha em responder aos estímulos tróficos da hipófise, gerando níveis marcadamente <strong>ELEVADOS de FSH e LH</strong>:"
+        ],
+        [
+          "4",
+          "1. Síndrome de Turner (45,X): O Protótipo Feminino:"
+        ],
+        [
+          "p",
+          "Acomete 1 em cada 2.500 meninas nascidas vivas, decorrente da perda completa ou estrutural de um dos cromossomos sexuais (monossomia do X - 45,X em cerca de 50% dos casos; os demais correspondem a mosaicismos como 45,X/46,XX ou anomalias estruturais como isocromossomo Xq). A ausência do segundo cromossomo X acarreta atresia folicular ovariana acelerada pré-natal:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Falência Ovariana Precoce:</strong> Ao nascimento ou nos primeiros anos de vida, as gônadas sofrem apoptose folicular total, transformando-se em tiras fibrosas acelulares desprovidas de folículos (chamadas <strong>\"gônadas em fita\" ou <em>streak gonads</em></strong>). A menina apresenta ausência completa de desenvolvimento puberal (Tanner M1P1), amenorreia primária e <strong>níveis séricos de FSH astronômicos (> 40 a 100 mUI/mL)</strong> já na infância e adolescência! (Em 10% a 15% com mosaicismo, pode haver puberdade espontânea transitória com menarca antes da falência precoce).",
+            "<strong>Estigmas Físicos e Fenótipo Clássico:</strong>\n    <ul>\n      <li><strong>Baixa Estatura Desproporcional Marcante (100% das pacientes):</strong> Decorrente da haploinsuficiência do gene <strong><em>SHOX</em> (Short Stature Homeobox)</strong> situado na região pseudoautossômica do cromossomo X (PAR1). <em>Alerta de Prova:</em> <strong>Toda menina com baixa estatura inexplicada ou queda de velocidade de crescimento deve realizar Cariótipo com Banda G, mesmo na ausência de estigmas físicos evidentes!</strong>",
+            "Linfedema congênito não compressivo em dorso de mãos e pés ao nascimento (edema em \"almofada\" neonatal).",
+            "Pescoço alado (<em>pterygium colli</em>), implantação baixa dos cabelos na nuca, hipertelorismo mamilar com tórax largo \"em escudo\".",
+            "<em>Cubitus valgus</em> (ângulo de carregamento do cotovelo aumentado), encurtamento do quarto metatarsiano.",
+            "<strong>Cardiopatias Congênitas Estruturais (Presentes em 30% a 50%):</strong> Especialmente <strong>Coarctação da Aorta</strong> e <strong>Valva Aórtica Bicúspide</strong>.",
+            "Anomalias renais (rim em ferradura em 20% a 30%)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Terapêutica Integrada:</strong> Somatropina (Hormônio do Crescimento Recombinante - rhGH em altas doses: 0,05 mg/kg/dia) iniciada precocemente aos 2 a 4 anos para otimizar a estatura final, associada à <strong>Indução Puberal Fisiológica Gradativa com 17-beta-Estradiol transdérmico a partir dos 11 a 12 anos de idade</strong>, acrescentando progesterona micronizada oral apenas após 2 a 3 anos de estrogênio (ou após primeiro sangramento de escape) para permitir a maturação endometrial e sangramentos cíclicos programados.</li>\n</ul>"
+        ],
+        [
+          "4",
+          "2. Síndrome de Klinefelter (47,XXY): O Protótipo Masculino:"
+        ],
+        [
+          "p",
+          "É a causa genética mais frequente de hipogonadismo hipergonadotrófico masculino e infertilidade na espécie humana, acometendo 1 em cada 500 a 1.000 meninos nascidos vivos. Caracterizada pela presença de um cromossomo X supranumerário (cariótipo clássico <strong>47,XXY</strong> em 80% dos casos; ou 48,XXXY e mosaicos):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia Testicular:</strong> Durante a infância, o desenvolvimento é sutil. Com a reativação puberal na adolescência, a presença do cromossomo X extra desencadeia degeneração progressiva e fibrose hialina dos túbulos seminíferos, perda de células germinativas (azoospermia completa definitiva) e hiperplasia pseudoadenomatosa disfuncional das células de Leydig. A produção de testosterona é insuficiente para a demanda puberal, gerando <strong>elevação acentuada de FSH e LH</strong>.",
+            "<strong>Fenótipo Clínico Clássico:</strong>\n    <ul>\n      <li><strong>Testículos Pequenos e Pétreos:</strong> O achado físico patognomônico universal! Os testículos são invariavelmente pequenos (<strong>volume mantido entre 1 e 5 mL, consistência endurecida/pétrea e dolorosa à palpação</strong>), em nítido contraste com o desenvolvimento peniano que pode ser quase normal.",
+            "<strong>Hábito Eunucoide e Alta Estatura:</strong> Pacientes altos, longilíneos, com pernas desproporcionalmente compridas em relação ao tronco (relação segmento superior/segmento inferior diminuída e envergadura excedendo a estatura em mais de 5 cm) decorrente da dosagem gênica tripla de <em>SHOX</em> e fechamento epifisário tardio.",
+            "<strong>Ginecomastia Verdadeira Bilateral (Presente em 50% a 80% dos adolescentes):</strong> Resultante do aumento patológico da relação circulante Estrógeno / Andrógeno, conferindo um risco 20 a 50 vezes maior de desenvolvimento tardio de câncer de mama masculino.",
+            "Escassa pilosidade facial, corporal e pubiana, diminuição da massa muscular e predisposição a dificuldades de aprendizado da linguagem, dislexia e desajustes psicossociais."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Tratamento:</strong> <strong>Reposição de Testosterona (Ésteres de Testosterona IM: Cipionato ou Enantato)</strong> iniciada na puberdade média (por volta dos 12 a 14 anos) em doses progressivas para induzir virilização plena, ganho de massa muscular, mineralização óssea e melhora da autoestima.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "puberdade-casos-clinicos",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Pediátricos Comentados Passo a Passo"
+        ],
+        [
+          "p",
+          "Os casos clínicos a seguir detalham situações cotidianas e de alto rendimento propedêutico em Endocrinologia Pediátrica, com raciocínio diagnóstico e planejamento terapêutico estruturado."
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Puberdade Precoce Central Idiopática em Menina de 6 Anos"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menina de 6 anos e 4 meses de vida, previamente hígida, acompanhada pela mãe à consulta na Unidade Básica de Saúde com queixa de desenvolvimento mamário precoce."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que notou o aparecimento de \"carocinhos dolorosos embaixo dos bicos dos peitos\" há cerca de 6 meses (aos 5 anos e 10 meses), com crescimento contínuo das mamas desde então. Há 2 meses, a mãe percebeu odor axilar semelhante ao de adulto e o surgimento de pelos pubianos finos e escuros na genitália. Concomitantemente, notou que a criança \"deu um pulo na altura\", trocando de roupas e sapatos com frequência acelerada. Nega cefaleia, alterações visuais, crises convulsivas ou episódios de riso involuntário. Nega uso ou contato com pomadas hormonais, cosméticos ou pílulas anticoncepcionais. A menarca da mãe ocorreu aos 12 anos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em excelente estado geral, eutrófica, corada, hidratada. Dados antropométricos: Estatura: 126 cm (z-score E/I = +2,2 DP; estatura acima do percentil 97 para a idade, compatível com estirão de crescimento inicial); Velocidade de crescimento no último ano: 9,5 cm/ano (ritmo puberal acelerado!). Peso: 26 kg (z-score P/I = +1,8 DP). Pele sem manchas café-com-leite ou lesões acneicas inflamatórias. Exame da tireoide normal. Estadiamento Puberal de Tanner: <strong>Mamas em Tanner M3</strong> (aumento do tecido glandular mamário além da aréola, em contorno contínuo, doloroso à palpação profunda subareolar); <strong>Pelos pubianos em Tanner P2</strong> (pelos finos e pigmentados ao longo dos grandes lábios). Genitália feminina externa: mucosa vaginal úmida, espessada, com coloração rosada pálida e discreto muco hialino fisiológico (impregnação estrogênica evidente); clitóris com dimensões normais (sem virilização)."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Laboratorial e de Imagem:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Radiografia de Punho e Mão Esquerda (Idade Óssea):</strong> Idade cronológica = 6 anos e 4 meses; <strong>Idade Óssea segundo Greulich & Pyle = 8 anos e 6 meses (Avanço patológico de mais de 2 anos da idade óssea!).</strong>",
+            "Ultrassonografia Pélvica com Doppler: <strong>Útero em formato de pera, com volume de 4,8 cm³ (valor normal pré-puberal < 2 a 3 cm³)</strong> e linha endometrial hiperecogênica medindo 2,5 mm de espessura; <strong>Ovários aumentados bilateralmente (Ovário D: 2,4 cm³; Ovário E: 2,1 cm³; valores pré-puberais normais < 1,5 cm³)</strong>, apresentando múltiplos folículos bilaterais medindo entre 5 e 8 mm de diâmetro.",
+            "Perfil Hormonal Basal:\n      <ul>\n        <li><strong>LH basal ultrasensível: 0,85 mUI/mL (ELEVADO / PUBERAL! VR pré-puberal: < 0,2 a 0,3 mUI/mL).</strong>",
+            "FSH basal: 2,8 mUI/mL; Estradiol sérico: 28 pg/mL (elevado para pré-púbere).",
+            "TSH: 1,8 mUI/L (normal); T4 livre: 1,2 ng/dL; 17-OH-Progesterona: normal; SDHEA normal para a idade."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li><strong>Ressonância Magnética de Encéfalo e Região Hipotálamo-Hipofisária com Contraste (Gadolínio):</strong> Sela túrcica e haste hipofisária com anatomia e dimensões normais; ausência de hamartomas no tuber cinereum, ausência de gliomas de quiasma óptico ou outras lesões expansivas intracranianas.</li>\n  </ul>"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O caso reúne todos os critérios da <strong>Puberdade Precoce Central (Verdadeira / GnRH-Dependente)</strong>: desenvolvimento de caracteres sexuais secundários isossexuais e harmônicos (telarca M3 e pubarca P2) antes dos 8 anos de idade em menina, acompanhado de estirão da velocidade de crescimento (9,5 cm/ano), avanço severo da idade óssea (IO = 8,5 anos), aumento uterino e ovariano à USG e <strong>nível sérico de LH basal espontâneo em faixa puberal (0,85 mUI/mL)</strong>.",
+            "A Ressonância Magnética normal excluiu causas tumorais/orgânicas do SNC, confirmando a etiologia como <strong>Puberdade Precoce Central Idiopática</strong> (que responde por 85% a 90% dos casos no sexo feminino).",
+            "<em>Indicação Terapêutica Precisa:</em> Como a puberdade é progressiva, com avanço acelerado da idade óssea e risco iminente de comprometimento drástico da estatura adulta final e estresse psicossocial precoce (risco de menarca aos 7 anos), está <strong>formalmente indicado o bloqueio farmacológico do eixo</strong>.",
+            "<strong>Tratamento Padrão-Ouro Instituído:</strong> Prescrição de <strong>Análogo de GnRH de depósito: Acetato de Leuprorrelina de depósito na dose de 3,75 mg por via intramuscular profunda a cada 28 dias</strong>.",
+            "<em>Evolução e Metas:</em> A paciente evoluiu com regressão parcial do broto mamário para M2, interrupção das perdas de sangue e normalização da velocidade de crescimento para 5,2 cm/ano. O avanço da idade óssea foi freado com sucesso. A leuprorrelina foi mantida até a idade óssea de 12 anos, quando foi suspensa, permitindo o estirão puberal final e menarca fisiológica aos 13 anos, com estatura final dentro do alvo parental!"
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Puberdade Precoce Central Secundária a Hamartoma Hipotalâmico em Menino"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 2 anos e 8 meses de idade, previamente hígido, levado pela mãe à consulta com endocrinologista pediátrico por aumento peniano precoce e \"crises estranhas de riso\"."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que há 6 meses percebeu aumento do tamanho do pênis, engrossamento da voz e aparecimento de pelos pubianos na base genital. Concomitantemente, notou que a criança começou a crescer muito rápido e a apresentar episódios diários peculiares: do nada, o menino solta uma risada curta, estridente, com expressão facial congelada, que dura cerca de 15 a 30 segundos, sem motivo aparente (\"crises de riso imotivado\"), após as quais fica sonolento por alguns minutos. Esses episódios acontecem de 4 a 6 vezes por dia, inclusive durante o sono. A mãe procurou atendimento prévio onde foi cogitado quadro comportamental."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Menino ativo, vigil, sem déficits motores focais. Dados antropométricos: Estatura: 102 cm (z-score E/I = +2,5 DP; muito alto para 2 anos e 8 meses!); Velocidade de crescimento: 11 cm/ano. Exame Genital (Estadiamento de Tanner): <strong>Pênis medindo 8,0 cm de comprimento esticado (VR para idade: 4,0 a 5,5 cm) e aumentado em diâmetro (Tanner G3); Pelos pubianos em Tanner P2; Bolsa escrotal pigmentada e pregueada; e VOLUME TESTICULAR BILATERAL E SIMÉTRICO DE 6 mL no orquidômetro de Prader (VR normal infantil: 1 a 2 mL -> DESENVOLVIMENTO GONADAL TESTICULAR >= 4 mL CONFIRMANDO ATIVAÇÃO DO EIXO!)</strong>. Pele: acne comedoniana em fronte e dorso, sem manchas café-com-leite."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Laboratorial e de Imagem:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Radiografia de mãos e punhos: <strong>Idade Óssea de 5 anos (Avanço de mais de 2 anos em relação à IC!)</strong>.",
+            "Dosagens Hormonais Basais:\n      <ul>\n        <li><strong>LH basal: 1,4 mUI/mL (Francamente puberal!); FSH: 2,2 mUI/mL.</strong>",
+            "<strong>Testosterona Total sérica: 165 ng/dL (Nível puberal adulto! VR pré-puberal: < 10 a 20 ng/dL).</strong>",
+            "17-OHP normal; SDHEA normal; TSH e prolactina normais."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li>Eletroencefalograma (EEG com vídeo): Demonstrou descargas paroxísticas epileptiformes focais no lobo temporal e estruturas da linha média durante as crises de riso, confirmando <strong>Crises Epilépticas Gelásticas</strong>.</li>\n    <li><strong>Ressonância Magnética de Encéfalo com Contraste:</strong> Revelou <strong>nódulo séssil medindo 12 mm de diâmetro, bem circunscrito, homogêneo, isointenso em T1 e hiperintenso em T2, localizado no tuber cinereum e assoalho do terceiro ventrículo, que NÃO APRESENTA REALCE APÓS INJEÇÃO DE GADOLÍNIO</strong>, característico de <strong>Hamartoma Hipotalâmico</strong>.</li>\n  </ul>"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente apresenta <strong>Puberdade Precoce Central (PPC) Orgânica em menino com menos de 3 anos</strong>. O aumento testicular bilateral simétrico (6 mL) é o marco físico inegociável que comprova a estimulação central por LH e FSH sobre as células de Leydig e Sertoli (diferenciando-o da HAC e de tumores adrenais, onde os testículos permaneceriam infantis < 4 mL!).",
+            "A associação clássica de PPC com <strong>crises epilépticas gelásticas (crises de riso involuntário)</strong> e lesão nodular séssil no terceiro ventrículo sem realce por gadolínio é patognomônica de <strong>Hamartoma Hipotalâmico de Tuber Cinereum</strong>.",
+            "<em>Lembrete Decisivo de Provas:</em> Em meninos, a puberdade precoce central exige sempre investigação exaustiva do SNC, pois mais de 50% decorrem de lesões estruturais orgânicas!",
+            "<strong>Planejamento Terapêutico Multidisciplinar:</strong>\n      <ul>\n        <li>Controle da Puberdade Precoce: Início imediato de <strong>Análogo de GnRH de depósito (Acetato de Leuprorrelina 3,75 mg IM mensal)</strong>, que promove bloqueio da secreção hipofisária de LH e colapsa a testosterona para níveis infantis (< 15 ng/dL), controlando a virilização e desacelerando o avanço ósseo. (O análogo de GnRH é altamente eficaz no hamartoma, pois a hipófise é dessensibilizada mesmo com o estímulo contínuo do hamartoma!).",
+            "Controle Neurológico das Crises Gelásticas: Introdução de anticonvulsivantes específicos (Oxcarbazepina / Levetiracetam) e avaliação de neurocirurgia funcional/terapia de ablação a laser guiada por RM (LITT) para desacoplar o circuito epileptogênico do hamartoma."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Puberdade Precoce Periférica por Hiperplasia Adrenal Congênita Não Clássica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 5 anos de idade, levado pela mãe à consulta pediátrica por \"crescimento rápido do pênis e aparecimento de pelos pubianos\" há 8 meses."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe notou que o pênis do filho cresceu acentuadamente nos últimos meses, apresentando ereções frequentes involuntárias e surgimento de pelos escuros e grossos na base do pênis e escroto. A criança também passou a apresentar acne espalhada pela testa e forte odor de suor axilar com cheiro de adulto. A mãe relata que a criança \"disparou na altura\", passando todos os colegas da mesma idade na escola. Nega cefaleia, queixas visuais ou alterações comportamentais."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em bom estado geral, eutrófica, forte musculatura corporal. Estatura: 122 cm (z-score E/I = +2,8 DP; percentil > 97); Velocidade de crescimento: 10,5 cm/ano. Face: presença de múltiplos comedões e pústulas em fronte e região malar. Região genital (Atenção Máxima à Semiologia!): <strong>Pênis medindo 8,5 cm de comprimento esticado (muito aumentado em comprimento e calibre - Tanner G3/G4); Pelos pubianos densos e encaracolados na base peniana (Tanner P3); Bolsa escrotal pigmentada; CONTUDO: O VOLUME TESTICULAR É DE APENAS 2,0 mL BILATERALMENTE no orquidômetro de Prader (TESTÍCULOS ESTRITAMENTE PRÉ-PUBERAIS E INFANTIS < 4 mL!)</strong>. Ausência de nódulos ou massas na palpação testicular."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Laboratorial:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Radiografia de punho e mão esquerda: <strong>Idade Óssea de 8 anos e 6 meses (Avanço dramático de mais de 3 anos e meio da idade óssea!).</strong>",
+            "Avaliação Hormonal Basal:\n      <ul>\n        <li><strong>LH basal: < 0,1 mUI/mL (INDETECTÁVEL / PROFUNDAMENTE SUPRIMIDO!).</strong>",
+            "<strong>FSH basal: 0,2 mUI/mL (Suprimido).</strong>",
+            "<strong>Testosterona Total: 180 ng/dL (Nível puberal elevado!).</strong>",
+            "<strong>17-alfa-Hidroxiprogesterona (17-OHP) basal: 28 ng/mL (VR normal matinal: < 1,0 a 2,0 ng/mL -> ELEVAÇÃO MACIÇA DE 17-OHP!).</strong>",
+            "Androstenediona: 4,8 ng/mL (elevada); SDHEA: elevado para a idade.",
+            "Cortisol basal: 7,2 mcg/dL (normal baixo); Eletrólitos: Sódio: 139 mEq/L; Potássio: 4,3 mEq/L (normais, sem perda de sal)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li>Teste de Estímulo com GnRH sintético: Pico de LH aos 30 minutos = 0,4 mUI/mL (<strong>Resposta totalmente plana/negativa, comprovando que o eixo hipotálamo-hipofisário central está bloqueado por feedback negativo!</strong>).</li>\n    <li>Ultrassonografia de loja suprarrenal: Discreto aumento homogêneo da espessura de ambas as glândulas adrenais, sem nódulos ou massas tumorais sólidas.</li>\n  </ul>"
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente apresenta <strong>Puberdade Precoce Periférica (Pseudopuberdade Precoce / GnRH-Independente)</strong>. O achado semiológico patognomônico é a <strong>DISSOCIAÇÃO ENTRE O DESENVOLVIMENTO PENIANO ACELERADO (G3/G4 com pubarca P3) E OS TESTÍCULOS PEQUENOS E INFANTIS (volume de 2 mL, Tanner G1)</strong>!",
+            "Se o eixo central estivesse ativado (PPC), os testículos estariam obrigatoriamente aumentados (>= 4 mL) pela ação do LH/FSH. A presença de testículos pequenos comprova que a fonte de testosterona é <strong>extratesticular</strong> (suprarrenal) e está suprimindo o eixo central por retroalimentação negativa (LH indetectável).",
+            "A elevação maciça de 17-OHP (28 ng/mL) e de andrógenos adrenais associada a eletrólitos normais estabelece o diagnóstico definitivo de <strong>Hiperplasia Adrenal Congênita por Deficiência de 21-Hidroxilase na Forma Não Clássica (de Início Tardio)</strong>.",
+            "<em>Tratamento Farmacológico Específico:</em> O tratamento <strong>NÃO É FEITO COM ANÁLOGO DE GnRH</strong> (que seria totalmente inútil, pois o eixo já está suprimido!). O tratamento de escolha é a <strong>Glicocorticoidoterapia de Reposição com Hidrocortisona oral na dose de 10 a 12 mg/m²/dia dividida em 3 tomadas</strong>. A hidrocortisona repõe o cortisol deficiente, inibe a hiperprodução de ACTH pela hipófise e \"desliga\" a síntese excessiva de andrógenos pela adrenal. A idade óssea estabilizou e a velocidade de crescimento retornou a 5 cm/ano."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Puberdade Atrasada em Menino de 14 Anos e Meio: RCCP versus Síndrome de Kallmann"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Adolescente masculino de 14 anos e 6 meses de idade, trazido pelos pais à consulta de hebiatria/endocrinologia com queixa de ausência de sinais puberais e baixa estatura."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> Os pais relatam que o filho \"ainda não deu nenhum sinal de puberdade\": a genitália permanece com aspecto de criança pequena, não tem pelos pubianos, a voz continua infantil e não apresentou estirão de crescimento. Refere que os colegas de classe são muito mais altos e já estão se barbeando, o que tem gerado constrangimento social grave e isolamento. Ao interrogatório detalhado sobre antecedentes familiares: o pai refere que teve desenvolvimento tardio (\"cresceu muito aos 17 anos no quartel e se barbeou aos 19 anos\"); a mãe teve menarca aos 14 anos. Ao interrogatório sistemático dirigido, o adolescente refere <strong>olfato normal</strong> (sente perfeitamente o cheiro de café e perfumes). Nega cefaleia crônica ou alterações visuais. Nega doenças crônicas ou uso contínuo de fármacos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Adolescente com proporções corporais infantis normais, eunucoidismo ausente. Dados antropométricos: Estatura: 148 cm (z-score E/I = -2,2 DP; abaixo do percentil 3 para 14,5 anos); Velocidade de crescimento: 4,8 cm/ano (ritmo constante pré-puberal perfeitamente normal). Estatura Alvo Familiar (Alvo Genético Parental): 174 cm (percentil 45 a 50). Peso: 39 kg. Exame da Tireoide: normal. Exame da Genitália (Estadiamento de Tanner): <strong>Genitália em Tanner G1 / Pelos em P1</strong> (Ausência total de pelos pubianos; pênis infantil com 4,5 cm de comprimento); <strong>VOLUME TESTICULAR DE 2,5 mL BILATERALMENTE no orquidômetro de Prader (ausência de puberdade confirmada aos 14,5 anos!)</strong>. Posição anatômica dos testículos normal na bolsa escrotal (sem criptorquidia). Exame neurológico e campimetria visual normais."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Laboratorial e Radiológica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Radiografia de Punho e Mão Esquerda (Idade Óssea):</strong> Idade cronológica (IC) = 14 anos e 6 meses; <strong>Idade Óssea (IO) = 12 anos e 0 meses (Atraso ósseo de 2 anos e meio em relação à IC!).</strong>",
+            "<em>Cálculo da Idade Estatural (IE):</em> A estatura do paciente (148 cm) corresponde exatamente ao percentil 50 de um menino de <strong>12 anos de idade (Idade Estatural = 12 anos)</strong>.",
+            "<strong>Demonstração da Relação Clássica: Idade Óssea (12 anos) = Idade Estatural (12 anos) < Idade Cronológica (14,5 anos)! [ IO = IE < IC ].</strong>",
+            "Dosagens Hormonais Basais:\n      <ul>\n        <li>LH basal: 0,15 mUI/mL (pré-puberal baixo); FSH basal: 0,8 mUI/mL.",
+            "Testosterona Total: < 15 ng/dL (nível pré-puberal).",
+            "TSH: 1,9 mUI/L; T4 livre: 1,1 ng/dL; Prolactina normal; IGF-1 sérico normal para a idade óssea.",
+            "Hemograma, ferritina, função renal, função hepática e anticorpo anti-tTG IgA normais (excluindo doenças sistêmicas crônicas e má absorção)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente preenche a definição de <strong>Puberdade Atrasada no Menino</strong> (ausência de aumento testicular G2 >= 4 mL após os 14 anos completos).",
+            "O conjunto de achados — história familiar positiva marcante em linha paterna, velocidade de crescimento anual normal constante (4,8 cm/ano), olfato preservado (afastando Síndrome de Kallmann), ausência de estigmas sindrômicos e a perfeita correlação antropométrica <strong>[ IO = IE < IC ]</strong> com previsão de estatura final concordante com o alvo genético parental — sela o diagnóstico de <strong>Retardo Constitucional do Crescimento e da Puberdade (RCCP)</strong>.",
+            "Trata-se de uma variante normal e benigna do desenvolvimento neuroendócrino (\"maturador lento\"), na qual o eixo simplesmente acordará mais tarde.",
+            "<strong>Planejamento Terapêutico e Manejo Psicossocial:</strong>\n      <ul>\n        <li>O paciente e os pais foram inicialmente tranquilizados quanto ao excelente prognóstico estatural e fertilidade futura normal.",
+            "No entanto, em decorrência do <strong>sofrimento psicológico significativo e isolamento escolar do adolescente</strong>, foi indicado um ciclo curto de indução puberal com <strong>Cipionato de Testosterona por via intramuscular na dose de 50 mg uma vez a cada 4 semanas por 4 meses consecutivos</strong>.",
+            "<em>Resultado:</em> Essa dose baixa induziu aumento peniano, surgimento de pelos pubianos iniciais (P2), incremento da velocidade de crescimento para 8 cm/ano e grande melhora da autoestima, sem precipitar fechamento epifisário. Após os 4 meses, a medicação foi suspensa; o eixo endógeno do paciente assumiu o comando espontaneamente, com aumento testicular progressivo para 8 mL em 6 meses. O paciente atingiu 173 cm na idade adulta, cumprindo com perfeição o alvo parental!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "puberdade-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "7. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "As questões a seguir representam as abordagens mais frequentes e desafiadoras sobre Puberdade Precoce e Atrasada nos principais concursos de Residência Médica do Brasil (USP, UNICAMP, ENARE, SURCE, SES-PE) e exames de revalidação."
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (USP - Acesso Direto / Pediatria):</strong> Menina de 6 anos e 8 meses de vida é levada pela mãe à consulta na Unidade Básica de Saúde devido ao aparecimento de broto mamário bilateral doloroso há 4 meses, associado a aceleração da velocidade de crescimento no último semestre (cresceu 5 cm em 6 meses). Ao exame físico: paciente em Tanner M3P2, com mucosa vaginal estrogenizada e sem virilização. A radiografia de mãos e punhos revela idade óssea de 8 anos e 6 meses. A ultrassonografia pélvica demonstra útero em formato de pera com volume de 4,2 cm³ e presença de eco endometrial, com ovários medindo 2,2 cm³ bilateralmente com múltiplos folículos. A dosagem de LH basal ultrasensível foi de 0,9 mUI/mL (valor de referência pré-puberal: < 0,2 mUI/mL) e o estradiol sérico foi de 32 pg/mL. Em relação a este caso clínico, assinale a alternativa que contém, respectivamente, a classificação etiológica mais provável, o exame de imagem complementar obrigatório e o tratamento medicamentoso padrão-ouro:"
+        ],
+        [
+          "u",
+          [
+            "A) Puberdade Precoce Periférica; Tomografia computadorizada de adrenais; Espironolactona oral associada a Anastrozol.",
+            "B) Puberdade Precoce Central; Ressonância magnética de encéfalo e região hipotálamo-hipofisária; Análogo de GnRH de depósito (Leuprorrelina).",
+            "C) Telarca Precoce Isolada benigna; Ultrassonografia seriada de mamas; Conduta expectante sem fármacos.",
+            "D) Puberdade Precoce Periférica; Cintilografia óssea de corpo inteiro; Pamidronato dissódico intravenoso.",
+            "E) Puberdade Precoce Central; Tomografia de crânio sem contraste; Cirurgia de ablação hipofisária transesfenoidal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A paciente apresenta o quadro clássico de <strong>Puberdade Precoce Central (Verdadeira / GnRH-Dependente)</strong>: desenvolvimento de mamas (telarca M3) antes dos 8 anos em menina, acompanhado de avanço acentuado da idade óssea (> 1,5 a 2 anos), aumento uterino e ovariano à USG pélvica e nível de <strong>LH basal ultrasensível claramente em faixa puberal (0,9 mUI/mL)</strong>. Na PPC, mesmo sendo a maioria dos casos idiopática no sexo feminino (85% a 90%), a realização de <strong>Ressonância Magnética (RM) de Encéfalo e Região Hipotálamo-Hipofisária com contraste (Gadolínio) é OBRIGATÓRIA</strong> para afastar tumores e malformações centrais (como o hamartoma hipotalâmico). O tratamento medicamentoso padrão-ouro incontestável para frear a puberdade e preservar a estatura adulta final é o uso de <strong>Análogo de GnRH de depósito (Acetato de Leuprorrelina mensal)</strong>."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> O quadro não é periférico, pois o LH basal está francamente elevado (na PPP o LH estaria totalmente suprimido). Espironolactona e anastrozol são usados na testotoxicose.",
+            "<em>Alternativa C incorreta:</em> Na telarca isolada benigna não há avanço da idade óssea, não há aceleração do crescimento nem aumento do volume uterino, e o LH permanece pré-puberal (< 0,2 mUI/mL).",
+            "<em>Alternativa D incorreta:</em> Descreve o manejo da Síndrome de McCune-Albright, que cursa com LH suprimido e manchas café-com-leite típicas.",
+            "<em>Alternativa E incorreta:</em> A cirurgia transesfenoidal está contraindicada; o tratamento da PPC é farmacológico com GnRHa."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (ENARE / Exame Nacional de Residência):</strong> Menino de 4 anos e 6 meses é trazido à consulta endocrinológica pediátrica por apresentar acne facial importante, pelos pubianos escuros e espessos na base peniana e crescimento peniano acelerado nos últimos 6 meses. O exame físico revela estadiamento de Tanner G3P3, com pênis medindo 8,0 cm de comprimento. À palpação da bolsa escrotal com o orquidômetro de Prader, o médico constata que <strong>ambos os testículos medem apenas 2,0 mL de volume (testículos infantis pré-puberais simétricos < 4 mL)</strong>. A radiografia de punho esquerdo revela idade óssea de 7 anos e 6 meses. Diante da dissociação marcante entre o desenvolvimento fálico exuberante e o volume testicular estritamente infantil, assinale a hipótese diagnóstica mais provável e o perfil laboratorial esperado:"
+        ],
+        [
+          "u",
+          [
+            "A) Puberdade Precoce Central por Hamartoma Hipotalâmico; LH e FSH basais e estimulados marcadamente elevados.",
+            "B) Puberdade Precoce Periférica por Hiperplasia Adrenal Congênita; Testosterona elevada associada a LH e FSH suprimidos/indetectáveis.",
+            "C) Retardo Constitucional do Crescimento e Puberdade; LH normal para a idade óssea e testosterona indetectável.",
+            "D) Tumor de Células de Leydig Testicular; Aumento testicular unilateral assimétrico com LH elevado.",
+            "E) Síndrome de Kallmann; LH baixo associado a anosmia e ausência de qualquer sinal de virilização."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A <strong>dissociação semiológica entre pênis e pelos pubianos desenvolvidos (Tanner G3P3) com TESTÍCULOS PEQUENOS E INFANTIS (< 4 mL)</strong> é a clássica \"assinatura clínica\" de <strong>Puberdade Precoce Periférica (GnRH-independente) de origem adrenal</strong> (notadamente a <strong>Hiperplasia Adrenal Congênita</strong> por deficiência de 21-hidroxilase ou tumor de córtex adrenal). Como a fonte de andrógenos é a suprarrenal, a testosterona circulante elevada promove a virilização peniana e acelera a idade óssea, ao mesmo tempo em que exerce potente retroalimentação negativa sobre a hipófise, <strong>suprimindo o LH e o FSH</strong>. Sem gonadotrofinas hipofisárias, os túbulos seminíferos testiculares não se desenvolvem, mantendo o volume testicular em níveis pré-puberais (< 4 mL)!"
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Se a causa fosse central (hamartoma), o LH/FSH estariam ativados e promoveriam obrigatoriamente o <strong>aumento bilateral simétrico dos testículos (>= 4 mL)</strong>!",
+            "<em>Alternativa C incorreta:</em> O RCCP cursa com atraso puberal e ausência de caracteres sexuais, não com virilização precoce aos 4 anos.",
+            "<em>Alternativa D incorreta:</em> No tumor de Leydig haveria nódulo e aumento unilateral assimétrico do testículo afetado.",
+            "<em>Alternativa E incorreta:</em> A Síndrome de Kallmann causa hipogonadismo hipogonadotrófico com ausência total de puberdade, e não virilização precoce."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP - Residência Médica):</strong> Menina de 3 anos de idade apresenta sangramento vaginal recorrente em moderada quantidade há 3 semanas, sem antecedente de trauma ou introdução de corpo estranho. Ao exame físico, observa-se desenvolvimento mamário em Tanner M3, sem pelos pubianos (P1). À inspeção da pele, o pediatra nota a presença de <strong>duas grandes manchas hiperpigmentadas acastanhadas em hemitórax esquerdo e dorso, com bordas recortadas, denteadas e profundamente irregulares (\"em costa recortada do Maine\"), que respeitam rigorosamente a linha média corporal</strong>. A radiografia de bacia e membros inferiores demonstra áreas de rarefação óssea osteolítica com aspecto de \"vidro fosco\" e arqueamento da diáfise femoral. O perfil hormonal evidencia estradiol sérico muito elevado com LH e FSH basais indetectáveis. Assinale o diagnóstico sindrômico correto e a alteração molecular subjacente:"
+        ],
+        [
+          "u",
+          [
+            "A) Neurofibromatose Tipo 1; mutação autossômica dominante no gene <em>NF1</em> com perda de neurofibromina.",
+            "B) Síndrome de McCune-Albright; mutação somática pós-zigótica em mosaico de ganho de função no gene <em>GNAS1</em> (Proteína Gs-alfa).",
+            "C) Síndrome de Turner; perda do braço curto do cromossomo X (45,X).",
+            "D) Tumor de Células da Granulosa Ovariana; deleção do cromossomo 11p15.5.",
+            "E) Síndrome de Peutz-Jeghers; mutação no gene <em>STK11</em> com pólipos hamartomatosos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O caso clínico ilustra a tríade patognomônica clássica da <strong>Síndrome de McCune-Albright</strong>: (1) <strong>Puberdade Precoce Periférica com sangramento vaginal cíclico precoce</strong> decorrente de cistos ovarianos foliculares autônomos hipersecretantes de estradiol (com LH/FSH suprimidos); (2) <strong>Grandes manchas cutâneas café-com-leite assimétricas com bordas irregulares e denteadas (\"costa do Maine\")</strong> respeitando a linha média; e (3) <strong>Displasia Fibrosa Poliostótica</strong> com lesões ósseas em vidro fosco e deformidades ósseas. Essa síndrome decorre de uma <strong>mutação somática pós-zigótica em mosaico no gene <em>GNAS1</em></strong>, resultando na ativação constitutiva da subunidade alfa da <strong>Proteína Gs</strong> com hiperprodução autônoma sustentada de AMP cíclico intracelular em múltiplos tecidos."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> As manchas café-com-leite da Neurofibromatose Tipo 1 são múltiplas (> 6), pequenas a médias, de contornos perfeitamente lisos e regulares (\"costa da Califórnia\"), associadas a nódulos de Lisch na íris e neurofibromas, sem displasia fibrosa poliostótica ou sangramento vaginal precoce autônomo.",
+            "<em>Alternativas C, D e E incorretas:</em> Não apresentam a constelação fenotípica nem o padrão radiológico e cutâneo patognomônico descrito."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 4 (Revalida INEP):</strong> Adolescente masculino de 14 anos e 8 meses de vida é trazido pela mãe para avaliação do desenvolvimento. A mãe está preocupada porque o filho é o menor menino da sua sala de aula e ainda não apresentou qualquer sinal de puberdade. Ao exame físico: paciente com proporções corporais normais, sem dismorfismos faciais, sem anosmia. Estatura no z-score -2,1 DP (abaixo do percentil 3 para a idade cronológica); velocidade de crescimento constante e normal de 4,7 cm/ano nos últimos 2 anos. Estatura alvo familiar (alvo genético): percentil 50. Genitália em Tanner G1P1, com <strong>volume testicular medido no orquidômetro de Prader de 2,0 mL bilateralmente</strong>. A radiografia de mãos e punhos revela <strong>Idade Óssea de 12 anos e 0 meses</strong>. A estatura atual da criança (146 cm) corresponde exatamente ao percentil 50 de um menino de 12 anos (<strong>Idade Estatural = 12 anos</strong>). A avaliação laboratorial inicial demonstra hemograma, função tireoidiana, anticorpos celíacos e bioquímica geral normais, com LH e testosterona em níveis pré-puberais basais normais para a idade óssea. Assinale a principal hipótese diagnóstica e a conduta clínica inicial mais adequada:"
+        ],
+        [
+          "u",
+          [
+            "A) Hipogonadismo Hipogonadotrófico congênito; iniciar reposição definitiva com testosterona injetável em doses plenas adultas imediatamente.",
+            "B) Retardo Constitucional do Crescimento e da Puberdade (RCCP); orientação e tranquilização da família quanto ao excelente prognóstico estatural final, podendo-se considerar curso curto de testosterona em baixa dose se houver sofrimento psicossocial importante.",
+            "C) Síndrome de Klinefelter (47,XXY); solicitar cariótipo com urgência e prescrever hormônio do crescimento (rhGH).",
+            "D) Craniofaringioma selar compressivo; indicar ressecção cirúrgica transesfenoidal de emergência antes de qualquer exame de imagem.",
+            "E) Deficiência isolada de Hormônio do Crescimento (DGH); iniciar somatropina recombinante diária contínua até os 18 anos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta o quadro prototípico do <strong>Retardo Constitucional do Crescimento e da Puberdade (RCCP)</strong>, a causa mais comum de puberdade atrasada e baixa estatura em meninos adolescentes. O diagnóstico é selado pela clássica relação antropométrica: <strong>Idade Óssea atrasada em relação à Idade Cronológica, porém perfeitamente coincidente com a Idade Estatural: [ IO = IE < IC ]</strong> (ambas iguais a 12 anos, enquanto a IC é de 14,8 anos), associada a velocidade de crescimento anual normal (4,7 cm/ano), olfato preservado e previsão de estatura adulta normal dentro do alvo genético parental. A conduta primordial é a <strong>orientação e tranquilização do adolescente e da família</strong>. Caso haja estigmatização social ou sofrimento psicológico severo, pode-se realizar um <strong>curso curto de Cipionato de Testosterona em doses baixas (50 mg IM/mês por 3 a 6 meses)</strong> apenas para deflagrar o processo sem comprometer a placa epifisária."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Não se inicia reposição definitiva em dose de adulto antes de afastar RCCP, que é imensamente mais frequente.",
+            "<em>Alternativa C incorreta:</em> A Síndrome de Klinefelter cursa com alta estatura e hipogonadismo hipergonadotrófico com testículos pequenos e endurecidos, com FSH/LH muito elevados.",
+            "<em>Alternativa D incorreta:</em> A cirurgia não é indicada empiricamente sem ressonância que comprove lesão expansiva.",
+            "<em>Alternativa E incorreta:</em> A velocidade de crescimento no RCCP é normal (4 a 5 cm/ano); na deficiência grave de GH, a velocidade de crescimento cai para < 3 cm/ano."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 5 (SURCE - Seleção Unificada para Residência Médica do Ceará):</strong> Adolescente feminina de 14 anos é trazida à consulta com queixa de baixa estatura e ausência total de menstruação (amenorreia primária) e de desenvolvimento de mamas. Ao exame físico: paciente em Tanner M1P1, estatura abaixo do percentil 3 (z-score -2,8 DP), com pescoço curto e alado (<em>pterygium colli</em>), implantação baixa da raiz dos cabelos na nuca, tórax amplo com aumento da distância intermamilar (hipertelorismo mamilar) e <em>cubitus valgus</em> discreto. A ausculta cardiovascular revela sopro telessistólico em borda esternal superior esquerda irradiado para dorso, com pulsos femorais diminuídos e atrasados em relação aos pulsos radiais. O perfil hormonal evidencia: <strong>FSH sérico de 78 mUI/mL (marcadamente elevado!)</strong> e LH sérico de 28 mUI/mL com estradiol indetectável. Diante deste quadro de hipogonadismo hipergonadotrófico, o exame genético confirmatório padrão-ouro e a cardiopatia congênita mais provável associada aos achados do exame físico são, respectivamente:"
+        ],
+        [
+          "u",
+          [
+            "A) Cariótipo com Banda G em linfócitos periféricos (45,X); Coarctação da Aorta.",
+            "B) Sequenciamento do gene <em>FBN1</em>; Prolapso de valva mitral.",
+            "C) Cariótipo 47,XXY; Comunicação Interatrial tipo ostium secundum.",
+            "D) MLPA para microdeleção 22q11.2; Tetralogia de Fallot.",
+            "E) Painel de sequenciamento para gene <em>CFTR</em>; Estenose pulmonar valvar."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O caso clínico reúne os estigmas físicos clássicos da <strong>Síndrome de Turner (disgenesia gonadal / monossomia do cromossomo X)</strong>: baixa estatura desproporcional, pescoço alado, tórax em escudo, <em>cubitus valgus</em> e <strong>hipogonadismo hipergonadotrófico</strong> (FSH maciçamente elevado decorrente da falência folicular com \"gônadas em fita\"). A diminuição e retardo dos pulsos femorais em comparação com os pulsos radiais associados a sopro interescapular caracterizam a <strong>Coarctação da Aorta</strong>, a cardiopatia congênita obstrutiva clássica mais temida na Síndrome de Turner (juntamente com a valva aórtica bicúspide). O exame padrão-ouro para o diagnóstico confirmatório definitivo é o <strong>Cariótipo com Banda G em sangue periférico (demonstrando 45,X ou suas variantes de mosaicismo)</strong>."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa B incorreta:</em> Descreve a Síndrome de Marfan (mutação no gene da fibrilina-1), que cursa com alta estatura e hiperfrouxidão ligamentar.",
+            "<em>Alternativa C incorreta:</em> 47,XXY é o cariótipo da Síndrome de Klinefelter em homens.",
+            "<em>Alternativas D e E incorretas:</em> Referem-se à Síndrome de DiGeorge (deleção 22q11) e Fibrose Cística, incompatíveis com o fenótipo turneriano clássico."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 6 (FMUSP - Residência Médica):</strong> Em relação à farmacologia e aos mecanismos moleculares dos análogos de GnRH de depósito (como a Leuprorrelina) empregados no tratamento da Puberdade Precoce Central, assinale a afirmativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) Atuam como antagonistas competitivos puros irreversíveis dos receptores gonadais de LH e FSH nos ovários e testículos.",
+            "B) A estimulação contínua e não pulsátil dos receptores de GnRH na adeno-hipófise induz sua internalização, dessensibilização e \"down-regulation\", bloqueando a secreção de gonadotrofinas.",
+            "C) Devem ser administrados por via oral diária associados a altas doses de estriol para prevenir o estirão de crescimento.",
+            "D) Promovem a aceleração imediata do fechamento epifisário ósseo para estancar o crescimento linear precoce.",
+            "E) São eficazes primariamente na Puberdade Precoce Periférica, suprimindo a atividade da enzima aromatase ovariana."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O GnRH natural depende estritamente de pulsos intermitentes para exercer sua ação fisiológica na hipófise. Os análogos de GnRH de depósito (GnRHa, como a <strong>Leuprorrelina de depósito</strong>) são agonistas potentes de ação prolongada. Sua administração contínua satura e estimula ininterruptamente os receptores hipofisários de GnRH nos gonadotrofos, deflagrando um processo de <strong>dessensibilização dos receptores e sua internalização (\"down-regulation\")</strong>. Com isso, os gonadotrofos tornam-se completamente refratários e cessam a síntese e secreção de <strong>LH e FSH</strong>, promovendo o retorno dos ovários e testículos ao estado de quiescência hormonal pré-puberal."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Os GnRHa atuam na adeno-hipófise (gonadotrofos), e não nos receptores gonadais periféricos.",
+            "<em>Alternativa C incorreta:</em> São administrados por via intramuscular ou subcutânea profunda mensal ou trimestral; o estriol é contraindicado.",
+            "<em>Alternativa D incorreta:</em> Eles <strong>RETARDAM / FREIAM o fechamento epifisário</strong>, permitindo que a idade cronológica alcance a idade óssea e preservando o potencial de estatura adulta final!",
+            "<em>Alternativa E incorreta:</em> Os GnRHa são totalmente ineficazes na Puberdade Precoce Periférica (onde o eixo central já se encontra naturalmente suprimido por feedback negativo!)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 7 (SES-PE - Residência Médica):</strong> Menino de 15 anos é trazido pelos pais por ausência de desenvolvimento puberal. O exame físico revela paciente alto, longilíneo, com membros desproporcionalmente compridos em relação ao tronco (hábito eunucoide), ginecomastia bilateral indolor e genitália com pênis de tamanho normal, mas com <strong>testículos bilateralmente diminuídos (volume de 2,5 mL), de consistência extremamente endurecida e pétrea à palpação</strong>. Os exames laboratoriais revelam Testosterona total de 110 ng/dL (baixa para a idade), com <strong>LH de 22 mUI/mL e FSH de 38 mUI/mL (ambos muito elevados)</strong>. Diante do quadro de hipogonadismo hipergonadotrófico masculino, a principal hipótese diagnóstica e a anomalia citogenética esperada no cariótipo são:"
+        ],
+        [
+          "u",
+          [
+            "A) Síndrome de Kallmann; mutação no gene <em>KAL1</em>.",
+            "B) Síndrome de Klinefelter; cariótipo 47,XXY.",
+            "C) Retardo Constitucional da Puberdade; cariótipo 46,XY normal.",
+            "D) Síndrome do X Frágil; expansão de tripletos CGG no gene <em>FMR1</em>.",
+            "E) Hiperplasia Adrenal Congênita tardia; cariótipo 46,XX com reversão sexual."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O quadro clínico descrito — paciente do sexo masculino com hábito eunucoide, alta estatura desproporcional, ginecomastia puberal bilateral e o achado patognomônico de <strong>testículos pequenos e pétreos (< 4 mL, consistência endurecida)</strong> associados a <strong>hipogonadismo hipergonadotrófico (FSH e LH muito elevados)</strong> — é clássico da <strong>Síndrome de Klinefelter</strong>. É a causa genética mais comum de hipogonadismo primário e infertilidade no homem, decorrente da presença de um cromossomo X supranumerário, cujo cariótipo canônico é <strong>47,XXY</strong> em cerca de 80% a 90% dos casos."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A Síndrome de Kallmann cursa com hipogonadismo hipogonadotrófico (FSH/LH baixos ou indetectáveis) e anosmia.",
+            "<em>Alternativa C incorreta:</em> O RCCP não cursa com elevação de gonadotrofinas nem com hábito eunucoide ou testículos pétreos.",
+            "<em>Alternativa D incorreta:</em> O X Frágil cursa com macroorquidia (testículos gigantes pós-puberais), deficiência intelectual e orelhas proeminentes.",
+            "<em>Alternativa E incorreta:</em> Incompatível com o quadro hormonal hipergonadotrófico e fenótipo eunucoide."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 8 (ENAMED / Exame Nacional de Medicina):</strong> Em relação à avaliação semiótica e aos marcos do desenvolvimento puberal segundo os critérios de Marshall e Tanner, assinale a afirmativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) O primeiro sinal físico de início puberal na menina é a pubarca (P2), que precede a telarca em 2 anos na fisiologia normal.",
+            "B) O marco clínico definidor do início da puberdade no menino (estágio G2 de Tanner) é o alcance de um volume testicular maior ou igual a 4 mL (>= 4 mL) avaliado pelo orquidômetro de Prader.",
+            "C) O pico do estirão de crescimento (PVC) no menino ocorre precocemente no estágio G2 de Tanner, coincidindo com a telarca feminina.",
+            "D) A menarca ocorre tipicamente no início da puberdade feminina em Tanner M2, antes do pico do estirão de crescimento.",
+            "E) O estágio M4 de Tanner feminino é caracterizado pelo contorno contínuo da mama com a aréola, sem projeção de segundo montículo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "De acordo com os critérios universais de Marshall e Tanner e consensos internacionais de hebiatria e endocrinologia pediátrica, <strong>o marco físico objetivo inegociável que define o início da puberdade no sexo masculino (estágio G2 de Tanner) é o alcance de um volume testicular igual ou superior a 4 mL (>= 4 mL)</strong> mensurado com o <strong>orquidômetro de Prader</strong> (ou comprimento longitudinal do maior eixo testicular >= 2,5 cm). Esse aumento decorre da proliferação inicial dos túbulos seminíferos estimulada pelo FSH."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> O primeiro marco puberal feminino é a <strong>Telarca (broto mamário - M2)</strong>, que precede a pubarca na vasta maioria das meninas.",
+            "<em>Alternativa C incorreta:</em> O pico do estirão masculino é <strong>tardio</strong>, ocorrendo em <strong>Tanner G4</strong> (cerca de 2 anos após o início puberal), ao passo que o estirão feminino é precoce (Tanner M3).",
+            "<em>Alternativa D incorreta:</em> A menarca é um evento tardio da puberdade feminina, ocorrendo tipicamente em <strong>Tanner M4</strong> (cerca de 2 a 2,5 anos após a telarca e após o pico do estirão).",
+            "<em>Alternativa E incorreta:</em> O contorno contínuo ocorre em Tanner M3; em <strong>Tanner M4 ocorre a projeção da aréola e papila formando um duplo contorno (segundo montículo)</strong> acima do parênquima mamário."
+          ]
+        ]
+      ]
+    ],
+    [
+      "puberdade-tabela-high-yield-conclusao",
+      0,
+      [
+        [
+          "2",
+          "8. Tabela Comparativa High-Yield e Takeaway Messages"
+        ],
+        [
+          "p",
+          "Esta seção consolida as desordens do desenvolvimento puberal em uma matriz de alta retenção mnemônica para revisão imediata pré-provas."
+        ],
+        [
+          "t",
+          [
+            "Parâmetro de Avaliação",
+            "Puberdade Precoce Central (PPC)<br><em>(GnRH-Dependente)</em>",
+            "Puberdade Precoce Periférica (PPP)<br><em>(GnRH-Independente)</em>",
+            "Retardo Constitucional (RCCP)<br><em>(Variante da Normalidade)</em>",
+            "Hipogonadismo Hipergonadotrófico<br><em>(Turner / Klinefelter)</em>"
+          ],
+          [
+            [
+              "<strong>Mecanismo Primário</strong>",
+              "Ativação precoce prematura do gerador de pulsos de GnRH no hipotálamo.",
+              "Secreção autônoma de esteroides sexuais por gônadas, adrenais ou exógena.",
+              "Atraso fisiológico temporário na reativação do eixo HHG (\"maturador lento\").",
+              "Falência gonadal primária (disgenesia ovariana ou fibrose testicular)."
+            ],
+            [
+              "<strong>Gonadotrofinas (LH e FSH)</strong>",
+              "<strong>ELEVADAS / EM FAIXA PUBERAL</strong> (LH basal >= 0,3-0,6 mUI/mL ou pico pós-GnRH > 5 mUI/mL).",
+              "<strong>PROFUNDAMENTE SUPRIMIDAS / INDETECTÁVEIS</strong> por feedback negativo (< 0,1 a 0,2 mUI/mL).",
+              "<strong>BAIXAS OU INDETECTÁVEIS</strong> (adequadas para a idade óssea atrasada).",
+              "<strong>MACIÇAMENTE ELEVADAS</strong> (FSH e LH muito altos pela ausência de feedback negativo gonadal)."
+            ],
+            [
+              "<strong>Esteroides Sexuais (E2 / T)</strong>",
+              "Elevados em faixa puberal para o estágio de Tanner.",
+              "Elevados (frequentemente em níveis muito altos de adulto precoce).",
+              "Níveis pré-puberais basais baixos.",
+              "Níveis pré-puberais nulos ou muito baixos."
+            ],
+            [
+              "<strong>Exame Testicular no Menino</strong>",
+              "<strong>AUMENTO TESTICULAR BILATERAL E SIMÉTRICO (>= 4 mL)</strong> no orquidômetro de Prader.",
+              "<strong>Testículos PEQUENOS (< 4 mL)</strong> na HAC/adrenal; ou <strong>ASSIMÉTRICOS</strong> no tumor de Leydig.",
+              "Testículos infantis (< 4 mL) normais para a idade óssea.",
+              "<strong>Testículos PEQUENOS E PÉTREOS (1 a 5 mL, endurecidos)</strong> no Klinefelter (47,XXY)."
+            ],
+            [
+              "<strong>Idade Óssea (IO) no Raio-X</strong>",
+              "<strong>AVANÇO ACENTUADO DA IDADE ÓSSEA (IO > IC + 1 a 2 anos)</strong>.",
+              "<strong>AVANÇO DRAMÁTICO DA IDADE ÓSSEA (IO >> IC)</strong>.",
+              "<strong>ATRASADA EM RELAÇÃO À IC, MAS IGUAL À IDADE ESTATURAL: [ IO = IE < IC ]</strong>.",
+              "Atrasada em relação à idade cronológica."
+            ],
+            [
+              "<strong>Prognóstico Estatural Adulto</strong>",
+              "Comprometimento grave sem tratamento (baixa estatura final por fechamento epifisário precoce).",
+              "Comprometimento grave sem tratamento (fusão prematura das cartilagens de crescimento).",
+              "<strong>TOTALMENTE PRESERVADO!</strong> Atinge plenamente o alvo genético parental (\"estirão tardio\").",
+              "Gravemente comprometido na Síndrome de Turner (haploinsuficiência de <em>SHOX</em>; exige rhGH)."
+            ],
+            [
+              "<strong>Tratamento Padrão-Ouro</strong>",
+              "<strong>Análogo de GnRH de depósito (Leuprorrelina 3,75 mg IM mensal)</strong>.",
+              "Depende da causa: Hidrocortisona na HAC; Inibidores de aromatase no McCune-Albright; Cirurgia em tumores.",
+              "Tranquilização da família; ciclo curto de Testosterona em baixa dose se sofrimento psicossocial.",
+              "Reposição hormonal: Estradiol transdérmico no Turner; Cipionato de Testosterona no Klinefelter."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "10 Takeaways Essenciais para Gabaritar em Puberdade:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fronteiras Cronológicas da Puberdade Precoce:</strong> Aparecimento de caracteres sexuais secundários <em>antes dos 8 anos na menina</em> (telarca) e <em>antes dos 9 anos no menino</em> (volume testicular >= 4 mL).",
+            "<strong>Fronteiras Cronológicas da Puberdade Atrasada:</strong> Ausência total de caracteres puberais <em>aos 13 anos na menina</em> (M1) e <em>aos 14 anos no menino</em> (G1 / testículo < 4 mL).",
+            "<strong>Marcos Iniciais de Tanner:</strong> Na menina, o 1º sinal é a <em>Telarca (M2)</em>; o estirão ocorre em M3 e a Menarca em M4. No menino, o 1º sinal é o <em>Aumento Testicular >= 4 mL (G2)</em>; o estirão ocorre tardiamente em G4.",
+            "<strong>Adrenarca vs Gonadarca:</strong> A adrenarca (SDHEA da adrenal -> pelos, odor, acne) é <em>independente de GnRH/gonadotrofinas</em>. A gonadarca (estradiol/testosterona -> mamas e testículos) é governada pelo eixo central HHG.",
+            "<strong>PPC nas Meninas vs Meninos:</strong> Nas meninas, 85% a 90% dos casos de Puberdade Precoce Central são <em>idiopáticos</em>. Nos meninos, mais de 50% decorrem de <em>lesões orgânicas do SNC</em> (hamartomas, gliomas)! A RM de sela e encéfalo é mandatória em ambos.",
+            "<strong>Hamartoma Hipotalâmico:</strong> Causa tumoral benigna mais comum de PPC no terceiro ventrículo. Apresenta-se com PPC + <em>crises epilépticas gelásticas (riso imotivado involuntário)</em>. Trata-se com análogo de GnRH.",
+            "<strong>O Sinal da Dissociação Testículo-Pênis:</strong> Menino com pênis e pelos pubianos desenvolvidos mas com <em>testículos infantis (< 4 mL)</em> diagnostica com certeza <em>Puberdade Precoce Periférica</em> (HAC por déficit de 21-hidroxilase ou tumor adrenal).",
+            "<strong>Síndrome de McCune-Albright:</strong> Mutação somática em mosaico no gene <em>GNAS1</em>. Tríade: Puberdade Precoce Periférica recorrente (sangramento vaginal em meninas pequenas) + Manchas café-com-leite assimétricas com bordas irregulares (\"costa do Maine\") + Displasia Fibrosa Poliostótica em vidro fosco.",
+            "<strong>Retardo Constitucional (RCCP):</strong> Variante normal (\"maturador lento\") predominante em meninos, com história familiar positiva de estirão tardio e a tríade antropométrica clássica: <em>Idade Óssea = Idade Estatural < Idade Cronológica [ IO = IE < IC ]</em>. A estatura adulta final é normal dentro do alvo familiar.",
+            "<strong>Hipogonadismo Hipergonadotrófico:</strong> Síndrome de Turner (45,X) em meninas (baixa estatura, pescoço alado, coarctação de aorta, gônadas em fita, FSH muito elevado); e Síndrome de Klinefelter (47,XXY) em meninos (alta estatura eunucoide, ginecomastia, testículos pequenos e pétreos, FSH/LH elevados). Trata-se com reposição de estrógenos e testosterona, respectivamente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamento Científico de Endocrinologia Pediátrica. Puberdade Precoce e Puberdade Atrasada: Atualização Diagnóstica e Terapêutica. Rio de Janeiro: SBP, 2021/2024.</a>",
+            "<a href=\"https://thelancet.com\" target=\"_blank\" rel=\"noopener noreferrer\">LATRONICO, A. C.; BRITO, V. N.; CARELS, P. Causes, evaluation, and treatment of central precocious puberty. The Lancet Diabetes & Endocrinology, v. 4, n. 3, p. 265-274, 2016.</a>",
+            "<a href=\"https://sarvier.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SETIAN, N. et al. Endocrinologia Pediátrica: Aspectos Fisiológicos e Clínicos. 4ª ed. São Paulo: Sarvier, 2018.</a>",
+            "<a href=\"https://pediatrics.aappublications.org\" target=\"_blank\" rel=\"noopener noreferrer\">CARELS, P. et al. Consensus statement on the use of gonadotropin-releasing hormone analogs in children. Pediatrics, v. 123, n. 4, p. e752-e762, 2009.</a>",
+            "<a href=\"https://aafp.org\" target=\"_blank\" rel=\"noopener noreferrer\">KLEIN, D. A. et al. Delayed Puberty: Evaluation and Management. American Family Physician, v. 96, n. 12, p. 790-799, 2017.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

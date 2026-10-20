@@ -1,0 +1,1192 @@
+{
+  "v": 2,
+  "s": "reabilitacao-comunitaria-e-cuidado-de-pessoas-com-deficiencia",
+  "t": "Reabilitação Comunitária e Cuidado de Pessoas com Deficiência",
+  "p": "Reabilitação Comunitária e Cuidado de Pessoas com Deficiência — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Modelo Biopsicossocial da CIF, Estatuto da PcD (Lei 13.146/15), Rede de Cuidados (RCPD), Lesão Medular, Espasticidade e Atenção Domiciliar",
+  "a": "Medicina de Família e Comunidade",
+  "m": "Medicina de Família e Comunidade",
+  "h": [
+    "Apostila LURIA",
+    "Reabilitação Comunitária e Cuidado de Pessoas com Deficiência",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Modelo Biopsicossocial da CIF, Estatuto da PcD (Lei 13.146/15), Rede de Cuidados (RCPD), Lesão Medular, Espasticidade e Atenção Domiciliar",
+    [
+      "Área: Medicina de Família e Comunidade",
+      "Matéria: Medicina de Família e Comunidade",
+      "Tema: Reabilitação Comunitária e Cuidado de Pessoas com Deficiência"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "reabilitacao-comunitaria-e-cuidado-longitudinal-de-pessoas-com-deficiencia",
+      "Reabilitação comunitária e cuidado longitudinal de pessoas com deficiência"
+    ],
+    [
+      "1-definicao-sair-do-modelo-exclusivamente-biomedico",
+      "1. Definição: sair do modelo exclusivamente biomédico"
+    ],
+    [
+      "classificacao-internacional-de-funcionalidade-cif-e-estatuto-da-pcd",
+      "1A. Da Lesão à Participação: A Classificação Internacional de Funcionalidade (CIF/OMS) e a Lei Brasileira de Inclusão (Lei nº 13.146/2015)"
+    ],
+    [
+      "sindromes-medulares-bexiga-neurogenica-e-disreflexia-autonomica",
+      "6A. Lesão Medular, Bexiga Neurogênica e Emergências Autonômicas: Avaliação ASIA, Cateterismo Intermitente Limpo e Manejo da Disreflexia"
+    ],
+    [
+      "2-habilitacao-e-reabilitacao",
+      "2. Habilitação e reabilitação"
+    ],
+    [
+      "3-a-rede-brasileira-rcpd-e-o-papel-da-aps",
+      "3. A rede brasileira RCPD e o papel da APS"
+    ],
+    [
+      "4-primeira-consulta-na-ubs-entrevista-e-exame-que-realmente-mudam-conduta",
+      "4. Primeira consulta na UBS: entrevista e exame que realmente mudam conduta"
+    ],
+    [
+      "5-projeto-terapeutico-singular-pts-objetivos-reais-e-responsabilidades",
+      "5. Projeto Terapêutico Singular (PTS): objetivos reais e responsabilidades"
+    ],
+    [
+      "6-deficiencia-fisica-sindrome-medular-sequelas-de-avc-e-mobilidade-reduzida",
+      "6. Deficiência física: síndrome medular, sequelas de AVC e mobilidade reduzida"
+    ],
+    [
+      "manejo-da-espasticidade-e-prevencao-de-lesoes-por-pressao",
+      "7A. Manejo da Espasticidade (Escala de Ashworth Modificada), Toxina Botulínica e Prevenção Sistemática de Lesões por Pressão (Escala de Braden)"
+    ],
+    [
+      "quatro-casos-clinicos-estruturados-reabilitacao-deficiencia",
+      "15B. Casos Clínicos Estruturados em Reabilitação Comunitária e Atenção Domiciliar na APS"
+    ],
+    [
+      "questoes-comentadas-reabilitacao-deficiencia-enamed-revalida",
+      "16B. Questões Inéditas Comentadas no Padrão Residência Médica, Revalida e ENAMED sobre Reabilitação Comunitária e Cuidados à PcD"
+    ],
+    [
+      "7-prevencao-de-complicacoes-da-imobilidade",
+      "7. Prevenção de complicações da imobilidade"
+    ],
+    [
+      "8-deficiencia-auditiva-visual-intelectual-e-comunicacao",
+      "8. Deficiência auditiva, visual, intelectual e comunicação"
+    ],
+    [
+      "9-desenvolvimento-infantil-e-participacao-escolar",
+      "9. Desenvolvimento infantil e participação escolar"
+    ],
+    [
+      "10-tecnologias-assistivas-e-indicacao-orientada-por-funcao",
+      "10. Tecnologias assistivas e indicação orientada por função"
+    ],
+    [
+      "11-saude-integral-alem-da-deficiencia",
+      "11. Saúde integral além da deficiência"
+    ],
+    [
+      "12-intersetorialidade-onde-a-rede-clinica-termina",
+      "12. Intersetorialidade: onde a rede clínica termina?"
+    ],
+    [
+      "13-seguimento-domiciliar-e-sobrecarga-de-cuidador",
+      "13. Seguimento domiciliar e sobrecarga de cuidador"
+    ],
+    [
+      "14-algoritmos-de-atendimento-e-decisao",
+      "14. Algoritmos de atendimento e decisão"
+    ],
+    [
+      "15-casos-clinicos-comentados",
+      "15. Casos clínicos comentados"
+    ],
+    [
+      "16-questoes-autorais-comentadas",
+      "16. Questões autorais comentadas"
+    ],
+    [
+      "17-plano-de-imagens-para-admin",
+      "17. Plano de imagens para Admin"
+    ],
+    [
+      "18-fontes-oficiais-e-referencia-tecnica",
+      "18. Fontes oficiais e referência técnica"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Lote 13 · Apostila 256</h1>"
+        ]
+      ]
+    ],
+    [
+      "reabilitacao-comunitaria-e-cuidado-longitudinal-de-pessoas-com-deficiencia",
+      0,
+      [
+        [
+          "2",
+          "Reabilitação comunitária e cuidado longitudinal de pessoas com deficiência"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Medicina de Família e Comunidade | <strong>Interface:</strong> Saúde Coletiva, Pediatria, Geriatria, Neurologia e Reabilitação.  \r<br><strong>Data:</strong> 15/10/2026 · <strong>Estado:</strong> RASCUNHO CIENTÍFICO PARCIAL — NÃO PUBLICAR; exige revisão especializada, benchmark integral e mínimo de 60.000 caracteres didáticos úteis."
+        ],
+        [
+          "3",
+          "Etapa zero e mapeamento de lacunas"
+        ],
+        [
+          "p",
+          "Foram abertos e lidos no Drive: \"SUS\" (princípios, integração e descentralização) e \"Cirurgia Plástica — Lesões por Pressão\" (imobilidade, risco, prevenção e manejo de complicação frequente na deficiência física). O segundo é <strong>material cirúrgico correlato</strong>, sem cobertura de reabilitação comunitária, direitos, tecnologia assistiva e coordenação do cuidado. A procura por termos \"reabilitação\", \"deficiência\", \"saúde da família\" e \"fisioterapia\" não localizou apostila geral equivalente; portanto a etapa zero permanece <strong>incompleta</strong>, ainda que material correlato tenha sido lido. A exposição abaixo é original e baseada sobretudo na PNAISPD/RCPD do Ministério da Saúde e na Lei Brasileira de Inclusão. Não atribuir autoria institucional não comprovada aos PDFs privados, nem copiar seus textos/figuras."
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico do acervo LURIA:</strong> manter tema #256 próprio; #255 cobre coordenação e matriciamento de modo geral, enquanto #256 deve ensinar cuidado biopsicossocial e reabilitação; #260 cobre IRAS, mas prevenção de lesão por pressão e complicações domiciliares é desenvolvida aqui no contexto longitudinal."
+        ]
+      ]
+    ],
+    [
+      "1-definicao-sair-do-modelo-exclusivamente-biomedico",
+      0,
+      [
+        [
+          "2",
+          "1. Definição: sair do modelo exclusivamente biomédico"
+        ],
+        [
+          "p",
+          "Deficiência é compreendida pela <strong>interação entre impedimentos duradouros físicos, mentais, intelectuais ou sensoriais e barreiras</strong> do ambiente e da sociedade, que podem restringir participação em igualdade de condições. Nem toda pessoa com doença crônica é necessariamente pessoa com deficiência, e diagnósticos idênticos podem produzir consequências funcionais diferentes segundo acessibilidade, suporte, ambiente e participação. A Lei nº 13.146/2015 (Lei Brasileira de Inclusão) e a política nacional orientam modelo <strong>biopsicossocial</strong>, em substituição à ideia limitada de \"deficiência como defeito individual\"."
+        ],
+        [
+          "p",
+          "<strong>Impairment/impedimento:</strong> alteração de função ou estrutura corporal;  \r<br><strong>Limitação de atividade:</strong> dificuldade de realizar tarefa como vestir-se ou caminhar;  \r<br><strong>Restrição de participação:</strong> impedimento de frequentar escola, trabalhar, exercer direito ou vida social;  \r<br><strong>Barreiras:</strong> obstáculos urbanísticos, arquitetônicos, comunicacionais, tecnológicos, atitudinais, organizacionais e de transporte;  \r<br><strong>Facilitadores:</strong> tecnologia assistiva, acessibilidade, transporte, apoio familiar e políticas intersetoriais."
+        ],
+        [
+          "p",
+          "A Classificação Internacional de Funcionalidade, Incapacidade e Saúde (CIF/ICF) da OMS descreve funções/estruturas corporais, atividades, participação e fatores ambientais/pessoais. Não substitui diagnóstico clínico CID, mas complementa sua utilidade: saber que pessoa teve AVC isquêmico não informa, isoladamente, se consegue falar, engolir, vestir-se ou acessar a UBS."
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> reabilitar não significa necessariamente \"voltar a andar\". O objetivo pode ser autonomia, comunicação efetiva, autocuidado, participação escolar, alívio de dor, cuidado seguro e redução de barreiras."
+        ]
+      ]
+    ],
+    [
+      "classificacao-internacional-de-funcionalidade-cif-e-estatuto-da-pcd",
+      0,
+      [
+        [
+          "2",
+          "1A. Da Lesão à Participação: A Classificação Internacional de Funcionalidade (CIF/OMS) e a Lei Brasileira de Inclusão (Lei nº 13.146/2015)"
+        ],
+        [
+          "3",
+          "A Ruptura Paradigmática: Da CID à CIF (Classificação Internacional de Funcionalidade)"
+        ],
+        [
+          "p",
+          "Durante décadas, a medicina operou sob o modelo biomédico tradicional, no qual a deficiência era compreendida unicamente como uma sequela ou falha biológica inerente ao corpo do indivíduo (etiologia $\rightarrow$ patologia $\rightarrow$ manifestação clínica $\rightarrow$ incapacidade). A publicação da <strong>Classificação Internacional de Funcionalidade, Incapacidade e Saúde (CIF) pela Organização Mundial da Saúde (OMS, 2001)</strong> e a <strong>Convenção sobre os Direitos das Pessoas com Deficiência da ONU (2006)</strong> consolidaram o <strong>Modelo Biopsicossocial</strong>, que desloca o foco da \"doença\" para a interação dinâmica entre a condição de saúde e o ambiente."
+        ],
+        [
+          "t",
+          [
+            "Dimensão da CIF",
+            "Definição Operacional",
+            "Exemplo Clínico em Reabilitação"
+          ],
+          [
+            [
+              "<strong>1. Funções do Corpo (b)</strong>",
+              "As funções fisiológicas ou psicológicas dos sistemas orgânicos (visão, audição, força muscular, tônus, cognição).",
+              "Espasticidade em membro inferior direito com hiperreflexia e clônus esgotável pós-AVC."
+            ],
+            [
+              "<strong>2. Estruturas do Corpo (s)</strong>",
+              "As partes anatômicas do corpo (órgãos, membros e seus componentes esqueléticos, neurais e vasculares).",
+              "Lesão isquêmica corticossubcortical no hemisfério cerebral esquerdo e atrofia muscular por desuso."
+            ],
+            [
+              "<strong>3. Atividade (d)</strong>",
+              "A execução de uma tarefa ou ação concreta por um indivíduo em nível pessoal (capacidade e desempenho).",
+              "Dificuldade para deambular 100 metros em terreno plano, subir escadas ou segurar talheres com a mão parética."
+            ],
+            [
+              "<strong>4. Participação (d)</strong>",
+              "O envolvimento do indivíduo em situações de vida social real e papéis comunitários (cidadania).",
+              "Impossibilidade de retornar ao trabalho como pedreiro, isolamento comunitário e perda de convívio social."
+            ],
+            [
+              "<strong>5. Fatores Ambientais (e)</strong>",
+              "O ambiente físico, social e atitudinal no qual as pessoas vivem (podem atuar como <strong>Barreiras</strong> ou <strong>Facilitadores</strong>).",
+              "<strong>Barreira:</strong> Calçadas esburacadas, ausência de rampas, transporte coletivo sem elevador, atitudes preconceituosas.<br>\n        <strong>Facilitador:</strong> Bengala canadense adaptada, órtese tornozelo-pé (AFO), apoio familiar amoroso, cuidador capacitado."
+            ],
+            [
+              "<strong>6. Fatores Pessoais</strong>",
+              "Características individuais não patológicas (idade, sexo, escolaridade, histórico laboral, resiliência subjetiva).",
+              "Homem de 62 anos com alta motivação para brincar com os netos e baixa escolaridade formal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da PcD - Lei nº 13.146/2015)"
+        ],
+        [
+          "p",
+          "O <strong>Estatuto da Pessoa com Deficiência (Lei Federal nº 13.146/2015)</strong> internalizou no ordenamento jurídico nacional os preceitos da Convenção da ONU com equivalência de <strong>Emenda Constitucional</strong> (por ter sido aprovada pelo rito qualificado do Art. 5º, § 3º da CF/88). O Artigo 2º da LBI traz a definição legal obrigatória em todos os concursos públicos:"
+        ],
+        [
+          "p",
+          "<blockquote>\n  <em>\"Art. 2º — Considera-se pessoa com deficiência aquela que tem impedimento de longo prazo de natureza física, mental, intelectual ou sensorial, o qual, em interação com uma ou mais barreiras, pode obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas.\"</em>\n</blockquote>"
+        ],
+        [
+          "p",
+          "Cumpre destacar três preceitos jurídicos e operacionais cruciais da LBI:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação Biopsicossocial Multiprofissional:</strong> A avaliação da deficiência, quando necessária, <strong>não é monopólio médico</strong>; deve ser realizada por equipe multiprofissional e interdisciplinar utilizando instrumentos baseados na CIF (como o Índice de Funcionalidade Brasileiro Modificado - IF-BrM);",
+            "<strong>Capacidade Civil Plena (Art. 6º da LBI):</strong> A deficiência <strong>NÃO afeta a plena capacidade civil da pessoa</strong> para casar-se, exercer direitos sexuais e reprodutivos, votar e ser votada, e trabalhar. O antigo instituto da interdição civil judicial foi transformado na <strong>Curatela</strong>, que é medida extraordinária restrita estritamente aos atos de natureza patrimonial e negocial, nunca afetando o direito ao próprio corpo, à sexualidade e ao matrimônio;",
+            "<strong>Tomada de Decisão Apoiada (Art. 1.783-A do Código Civil, inserido pela LBI):</strong> Processo judicial no qual a pessoa com deficiência elege pelo menos duas pessoas idôneas de sua confiança para lhe prestar apoio na tomada de decisão sobre atos da vida civil, mantendo a titularidade da decisão com a própria PcD."
+          ]
+        ],
+        [
+          "3",
+          "A Rede de Cuidados à Pessoa com Deficiência (RCPD) no SUS"
+        ],
+        [
+          "p",
+          "Instituída pela <strong>Portaria GM/MS nº 793/2012</strong> (consolidada na Portaria de Consolidação nº 3/2017), a Rede de Cuidados à Pessoa com Deficiência (RCPD) organiza-se em três componentes funcionais interligados:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Atenção Primária à Saúde:</strong> Acolhimento, detecção precoce de atrasos do neurodesenvolvimento, cuidado longitudinal, visitas domiciliares, prevenção de deformidades e escaras, prescrição e acompanhamento de tecnologias assistivas simples;",
+            "<strong>Atenção Especializada em Reabilitação:</strong>\n    <ul>\n      <li><strong>Centro Especializado em Reabilitação (CER):</strong> Ponto de atenção ambulatorial especializado que realiza diagnóstico, tratamento e concessão/adaptação de tecnologias assistivas. São classificados de acordo com o número de modalidades reabilitadoras que contemplam: <strong>CER II</strong> (atende 2 modalidades de deficiência), <strong>CER III</strong> (3 modalidades) e <strong>CER IV</strong> (atende integralmente as 4 modalidades: <em>física, auditiva, visual e intelectual/TEA</em>);",
+            "<strong>Oficinas Ortopédicas (fixas e itinerantes):</strong> Serviços responsáveis pela confecção, adaptação, dispensação e manutenção de órteses, próteses e meios auxiliares de locomoção (OPM);"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Atenção Hospitalar e de Urgência/Emergência:</strong> Leitos de reabilitação intensiva pós-trauma agudo, cirurgias ortopédicas reparadoras e leitos de retaguarda para agravos clínicos de pessoas com deficiência.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "sindromes-medulares-bexiga-neurogenica-e-disreflexia-autonomica",
+      0,
+      [
+        [
+          "2",
+          "6A. Lesão Medular, Bexiga Neurogênica e Emergências Autonômicas: Avaliação ASIA, Cateterismo Intermitente Limpo e Manejo da Disreflexia"
+        ],
+        [
+          "3",
+          "Classificação Neurológica da Lesão Medular (Escala ASIA / ISNCSCI)"
+        ],
+        [
+          "p",
+          "O exame do paciente com lesão medular exige a aplicação padronizada da escala da <em>American Spinal Injury Association</em> (ASIA), diferenciando lesões completas de incompletas através do exame sensório-motor dos dermátomos e miótomos-chave:"
+        ],
+        [
+          "t",
+          [
+            "Grau ASIA",
+            "Definição Neurológica",
+            "Significado Funcional e Prognóstico"
+          ],
+          [
+            [
+              "<strong>ASIA A (Completa)</strong>",
+              "<strong>Ausência total de função motora e sensitiva</strong> nos segmentos sacrais mais distais (<strong>S4-S5</strong>): ausência de sensibilidade anal profunda e ausência de contração esfincteriana voluntária.",
+              "Prognóstico de recuperação motora distal muito reservado. Reabilitação focada em adaptações funcionais e prevenção de complicações secundárias."
+            ],
+            [
+              "<strong>ASIA B (Sensitiva Incompleta)</strong>",
+              "Função sensitiva preservada abaixo do nível neurológico da lesão, estendendo-se até os segmentos sacrais S4-S5, com ausência de qualquer função motora voluntária.",
+              "Potencial intermediário de recuperação funcional; preservação de vias aferentes espinotalâmicas ou cordonais posteriores."
+            ],
+            [
+              "<strong>ASIA C (Motora Incompleta)</strong>",
+              "Função motora preservada abaixo do nível da lesão, porém <strong>mais da metade dos músculos-chave</strong> testados abaixo do nível neurológico apresentam força muscular <strong>menor que grau 3</strong> (não vencem a gravidade).",
+              "Músculos fracos requerem órteses e assistência mecânica expressiva para locomoção."
+            ],
+            [
+              "<strong>ASIA D (Motora Incompleta Útil)</strong>",
+              "Função motora preservada abaixo do nível da lesão, e <strong>pelo menos a metade (ou mais) dos músculos-chave</strong> apresentam força <strong>grau 3 ou superior</strong> (vencem a gravidade).",
+              "Excelente prognóstico funcional; grande maioria dos pacientes atinge marcha comunitária com ou sem órteses leves."
+            ],
+            [
+              "<strong>ASIA E (Normal)</strong>",
+              "Funções motora e sensitiva testadas encontram-se rigorosamente preservadas em todos os segmentos.",
+              "Recuperação neurológica completa."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Síndromes Medulares Incompletas Clássicas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Síndrome Centro-Medular (Schneider):</strong> Lesão central da substância cinzenta cervical (típica de hiperextensão em idosos com espondilose prévia). Cursa com <strong>fraqueza motora desproporcionalmente muito mais severa nos membros superiores</strong> do que nos membros inferiores, com perda de sensibilidade térmica e dolorosa suspensa;",
+            "<strong>Síndrome de Brown-Séquard (Hemissecção Medular):</strong> Típica de ferimentos por arma branca. Provoca: <strong>perda motora (paralisia espástica) e proprioceptiva/vibratória ipsilateral</strong> à lesão; e <strong>perda da sensibilidade térmica e dolorosa contralateral</strong> a partir de 1 a 2 dermátomos abaixo do nível lesional (devido ao cruzamento precoce do trato espinotalâmico lateral);",
+            "<strong>Síndrome Medular Anterior:</strong> Lesão isquêmica por oclusão da artéria espinhal anterior. Cursa com perda motora bilateral completa e perda da sensibilidade dolorosa e térmica abaixo da lesão, com <strong>preservação intacta da propriocepção, vibração e tato discriminativo</strong> (colunas posteriores supridas pelas artérias espinhais posteriores)."
+          ]
+        ],
+        [
+          "3",
+          "Bexiga Neurogênica e Cateterismo Intermitente Limpo (CIL)"
+        ],
+        [
+          "p",
+          "A disfunção vesicoesfincteriana é universal nas lesões medulares. Lesões <strong>suprasacrais (acima de S2)</strong> cursam com <em>bexiga neurogênica hiper-reflexa (espástica)</em> e dissinergia detrusor-esfincteriana (risco grave de refluxo vesicoureteral, hidronefrose e insuficiência renal terminal). Lesões <strong>infrasacrais (cone medular e cauda equina)</strong> cursam com <em>bexiga flácida (arreflexa)</em> e retenção com transbordamento."
+        ],
+        [
+          "p",
+          "<blockquote>\n  <strong>Padrão-Ouro de Conduta no SUS:</strong> O <strong>Cateterismo Intermitente Limpo (CIL)</strong> realizado a cada 4 a 6 horas pelo próprio paciente ou cuidador é o padrão-ouro internacional. <strong>Cateter vesical de demora (CVD) deve ser evitado ao máximo</strong>, pois associa-se a colonização bacteriana crônica, cálculos vesicais, pielonefrite de repetição e risco aumentado de carcinoma urotelial e escamoso de bexiga a longo prazo. Bacteriúria assintomática em pacientes em CIL <strong>NÃO deve ser tratada com antibióticos</strong>!\n</blockquote>"
+        ],
+        [
+          "3",
+          "Disreflexia Autonômica: A Grande Emergência Médica da Lesão Medular Alta"
+        ],
+        [
+          "p",
+          "A <strong>Disreflexia Autonômica (DA)</strong> é uma emergência médica com risco de morte (AVE hemorrágico, convulsões, IAM) que ocorre em indivíduos com lesão medular <strong>em nível T6 ou superior</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia:</strong> Um estímulo nociceptivo abaixo da lesão (sendo a <strong>distensão vesical aguda por obstrução do cateter</strong> responsável por mais de 80% dos casos, seguida por impactação fecal/fecaloma, úlcera por pressão ou unha encravada) deflagra uma descarga simpática reflexa maciça no plexo esplâncnico. Como a medula está transeccionada, os impulsos inibitórios descendentes do tronco encefálico não ultrapassam o nível lesional. Instala-se vasoconstrição arteriolar generalizada grave abaixo da lesão com <strong>crise hipertensiva aguda paroxística</strong> (PA pode atingir $220 \times 120\text{ mmHg}$). Em resposta, os barorreceptores carotídeos ativam o nervo vago, gerando vasodilatação compensatória e sudorese <em>acima</em> do nível da lesão e <strong>bradicardia reflexa</strong>;",
+            "<strong>Quadro Clínico:</strong> Hipertensão súbita severa acompanhada de cefaleia pulsátil occipital excruciante, congestão nasal, sudorese profusa e rubor facial acima da lesão, enquanto a pele abaixo da lesão fica fria, pálida e com piloereção (arrepios);",
+            "<strong>Conduta Imediata de Emergência (Mnemônico Sentar e Desobstruir):</strong>\n    <ol>\n      <li><strong>Colocar imediatamente o paciente SENTADO com as pernas pendentes</strong> (aproveita o represamento gravitacional venoso nos membros inferiores para reduzir o retorno venoso e a pressão arterial);",
+            "<strong>Afrouxar roupas apertadas</strong>, cintos e faixas abdominais;",
+            "<strong>Inspecionar imediatamente o sistema urinário:</strong> esvaziar a bexiga por cateterismo de alívio ou desdobrar/desobstruir a sonda urinária de demora. (Se a sonda estiver obstruída, desobstruir ou trocá-la após instilar lidocaína geleia na uretra);",
+            "Se a bexiga não for a causa, realizar <strong>toque retal suave com lidocaína tópica</strong> para desimpactar fecaloma;",
+            "Se a PAS mantiver-se $> 150\text{ mmHg}$ mesmo após alívio do gatilho, administrar anti-hipertensivo de ação rápida (ex.: Captopril 25 mg VO mastigado ou Nitropaste/Nifedipino)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "2-habilitacao-e-reabilitacao",
+      0,
+      [
+        [
+          "2",
+          "2. Habilitação e reabilitação"
+        ],
+        [
+          "p",
+          "<strong>Habilitação</strong> visa desenvolvimento de habilidades e capacidades que ainda não foram adquiridas, por exemplo uma criança com deficiência congênita aprendendo comunicação alternativa. <strong>Reabilitação</strong> busca recuperar, otimizar ou adaptar funções após alteração adquirida ou progressiva; na prática, há sobreposição e o serviço deve responder às metas da pessoa, não prender-se à semântica."
+        ],
+        [
+          "p",
+          "<strong>Modelo centrado na pessoa:</strong> conhecer o que ela considera prioritário, preferências, contexto familiar, ambiente físico, acesso a escola/trabalho e expectativas. Não presumir que deficiência implica incapacidade de decisão: capacidade jurídica, comunicação, apoios e decisões substitutivas são temas distintos, com regras legais específicas."
+        ],
+        [
+          "p",
+          "Uma estratégia de reabilitação eficaz geralmente combina:\r<li>avaliação funcional e clínica;</li>\r<li>controle de doença de base e prevenção de complicações;</li>\r<li>treinamento de habilidades e adaptação de atividades;</li>\r<li>dispositivos/tecnologia assistiva;</li>\r<li>ajustes ambientais e acesso a direitos;</li>\r<li>apoio a cuidadores sem transferir a eles toda responsabilidade;</li>\r<li>revisão periódica e transição entre serviços.</li>"
+        ]
+      ]
+    ],
+    [
+      "3-a-rede-brasileira-rcpd-e-o-papel-da-aps",
+      0,
+      [
+        [
+          "2",
+          "3. A rede brasileira RCPD e o papel da APS"
+        ],
+        [
+          "p",
+          "A <strong>Política Nacional de Atenção Integral à Saúde da Pessoa com Deficiência (PNAISPD)</strong> foi atualizada pela Portaria GM/MS nº 1.526/2023. A <strong>Rede de Cuidados à Pessoa com Deficiência (RCPD)</strong> integra serviços de APS, atenção especializada ambulatorial, hospitalar e urgência com abordagem regional e intersetorial. Serviços especializados incluem <strong>Centros Especializados em Reabilitação (CER)</strong>, oficinas ortopédicas, transporte sanitário adaptado e outros pontos habilitados."
+        ],
+        [
+          "p",
+          "Os CER podem abranger modalidades física, auditiva, visual e intelectual:\r<li>CER II: duas modalidades;</li>\r<li>CER III: três;</li>\r<li>CER IV: quatro.</li>\r<br>A denominação não indica gravidade individual; descreve modalidades habilitadas do estabelecimento. A oferta depende da região e do serviço cadastrado e ativo, e não apenas do tipo de equipamento disponível."
+        ],
+        [
+          "p",
+          "<strong>APS como coordenadora:</strong> identifica necessidade, acolhe pessoa e família, trata comorbidades, acompanha vacinação e rastreamento aplicável, controla risco cardiovascular, revisa medicamentos, previne lesões por pressão, acompanha saúde sexual e mental, organiza encaminhamento e retoma plano quando paciente volta do CER/hospital. <strong>O encaminhamento não extingue vínculo com a UBS.</strong>"
+        ],
+        [
+          "3",
+          "Matriz de responsabilidades"
+        ],
+        [
+          "t",
+          [
+            "Necessidade",
+            "APS",
+            "Equipe de reabilitação/CER",
+            "Rede/intersetorial"
+          ],
+          [
+            [
+              "Cuidado longitudinal",
+              "consulta e visitas, plano e revisão",
+              "relatório funcional e metas",
+              "transporte e continuidade"
+            ],
+            [
+              "Dor, espasticidade, mobilidade",
+              "identificar causas e comorbidades, cuidado inicial seguro",
+              "fisioterapia/TO, ajustes e terapias específicas",
+              "acesso a dispositivo, adaptações"
+            ],
+            [
+              "Comunicação/deglutição",
+              "rastrear barreiras, aspirar riscos clínicos",
+              "fonoaudiologia, comunicação aumentativa",
+              "escola, cuidadores e redes de inclusão"
+            ],
+            [
+              "Saúde mental e sexual",
+              "acolhimento não capacitista e rastreamento",
+              "apoio psicossocial e autonomia",
+              "educação, assistência social"
+            ],
+            [
+              "Lesão por pressão",
+              "avaliação de risco, prevenção domiciliar, encaminhamento",
+              "posicionamento/cadeira/colchão, plano interdisciplinar",
+              "acesso a insumos e cuidador"
+            ],
+            [
+              "Tecnologia assistiva",
+              "identificar finalidade e necessidade",
+              "avaliação, indicação, treino, manutenção",
+              "regulação, oficina ortopédica e direitos"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "4-primeira-consulta-na-ubs-entrevista-e-exame-que-realmente-mudam-conduta",
+      0,
+      [
+        [
+          "2",
+          "4. Primeira consulta na UBS: entrevista e exame que realmente mudam conduta"
+        ],
+        [
+          "p",
+          "Começar por <strong>como a pessoa deseja ser chamada e como prefere comunicar-se</strong>, respeitando autonomia. Oferecer tempo suficiente e ambiente acessível. Falar diretamente com a pessoa, não somente com acompanhante, salvo quando necessário para comunicação e com concordância pertinente."
+        ],
+        [
+          "3",
+          "Anamnese biopsicossocial"
+        ],
+        [
+          "p",
+          "1. História de condição e evolução: início, estabilidade, progressão, internações, tratamentos, reabilitação prévia.\r\n2. <strong>Metas da pessoa:</strong> realizar transferência cama-cadeira, tomar banho com segurança, voltar à escola/trabalho, comunicar-se com clareza, reduzir dor.\r\n3. Atividades básicas: alimentação, higiene, vestir, mobilidade, continência; e instrumentais: transporte, compras, gestão financeira, medicamentos.\r\n4. Participação: família, lazer, escola, sexualidade, trabalho e relações sociais.\r\n5. Ambiente: rampas, piso, degraus, banheiro, cama, transporte, internet, barreiras urbanas/atitudinais.\r\n6. Cuidador: exaustão, conhecimento de transferências, disponibilidade, rede de apoio e riscos de negligência.\r\n7. Comorbidades: dor, espasticidade, constipação, retenção urinária, infecção respiratória, sono, depressão, osteoporose e risco nutricional.\r\n8. Acesso: próteses/órteses, fornecimento de medicamentos, reavaliação de cadeira e equipamento, tempo de espera e benefícios sociais."
+        ],
+        [
+          "3",
+          "Exame funcional dirigido"
+        ],
+        [
+          "p",
+          "Avaliar cognição e comunicação adequadas à pessoa, deglutição se houver risco, pele em áreas de apoio, amplitude articular, força/espasticidade, sensibilidade, postura sentada e de pé conforme segurança, transferências, marcha, equilíbrio, cuidados de pés, eliminação urinária/intestinal, pressão arterial, peso e nutrição. Evitar prescrever exercício ou treino de carga sem investigar fraturas, instabilidade clínica e risco de queda."
+        ],
+        [
+          "p",
+          "<strong>Escalas</strong> como Barthel, WHODAS 2.0, Medida de Independência Funcional e testes funcionais podem ajudar a objetivar evolução, mas exigem versão válida, aplicabilidade e conhecimento de teto/piso; <strong>pontuação nunca substitui objetivo da pessoa</strong>."
+        ]
+      ]
+    ],
+    [
+      "5-projeto-terapeutico-singular-pts-objetivos-reais-e-responsabilidades",
+      0,
+      [
+        [
+          "2",
+          "5. Projeto Terapêutico Singular (PTS): objetivos reais e responsabilidades"
+        ],
+        [
+          "p",
+          "O PTS é construção compartilhada com pessoa, família quando apropriado e profissionais envolvidos. Deve registrar problemas priorizados, metas, responsáveis, intervenções, prazos, indicadores de resultado e reavaliação. Não é só reunião interdisciplinar, nem encaminhamento para \"fisioterapia 20 sessões\"."
+        ],
+        [
+          "p",
+          "<strong>Exemplo:</strong> adulto pós-AVC quer tomar banho sem ajuda em três meses. Avaliação identifica barra inexistente, déficit de equilíbrio, hemiparesia e medo de queda. Plano: treino de transferências em TO/fisioterapia, instalar barras/cadeira e revisar hipotensão postural/medicações com APS. Meta mensurável: transferir-se para cadeira de banho com supervisão apenas, sem quedas, em ambiente adaptado. Registrar quem providencia cada recurso e como medir progresso."
+        ],
+        [
+          "p",
+          "Intercorrência que ameaça meta (queda, pneumonia, lesão por pressão, depressão, transporte indisponível) exige revisão do plano; não responsabilizar usuário por \"falta de aderência\" antes de verificar barreiras."
+        ]
+      ]
+    ],
+    [
+      "6-deficiencia-fisica-sindrome-medular-sequelas-de-avc-e-mobilidade-reduzida",
+      0,
+      [
+        [
+          "2",
+          "6. Deficiência física: síndrome medular, sequelas de AVC e mobilidade reduzida"
+        ],
+        [
+          "p",
+          "<strong>Depois de AVC</strong>, além da prevenção secundária adequada, rastrear disfagia, afasia/disartria, negligência espacial, hemiparesia, dor de ombro, espasticidade, depressão, dificuldades de vestir e dirigir. A incapacidade pode ser maior do que a paresia motora sugere: afasia altera comunicação com equipe e capacidade de reportar sintomas; negligência aumenta risco de colisões e quedas."
+        ],
+        [
+          "p",
+          "<strong>Lesão medular:</strong> nível e completude determinam padrão motor/sensitivo, risco de disfunção autonômica e controle vesical/intestinal. Em lesões altas, lembrar <strong>disreflexia autonômica</strong> como emergência (cefaleia intensa, elevação importante de pressão, sudorese/flushing acima da lesão, bradicardia variável) desencadeada por distensão vesical, fezes impactadas ou estímulo nocivo. Sentar pessoa quando seguro, avaliar sinais vitais, procurar/remover gatilho e obter assistência emergencial conforme protocolo. Não tratar apenas \"ansiedade\" antes de verificar causas perigosas."
+        ],
+        [
+          "p",
+          "<strong>Fraqueza e quedas:</strong> avaliar pés, calçados, visão, hipotensão ortostática, medicações sedativas, ambiente e dispositivos. Reabilitação de marcha é personalizada; cadeira de rodas apropriada pode <strong>ampliar</strong>, e não reduzir, participação social. O objetivo não deve ser adiar dispositivo necessário como se fosse fracasso de recuperação."
+        ]
+      ]
+    ],
+    [
+      "manejo-da-espasticidade-e-prevencao-de-lesoes-por-pressao",
+      0,
+      [
+        [
+          "2",
+          "7A. Manejo da Espasticidade (Escala de Ashworth Modificada), Toxina Botulínica e Prevenção Sistemática de Lesões por Pressão (Escala de Braden)"
+        ],
+        [
+          "3",
+          "Fisiopatologia e Avaliação da Espasticidade"
+        ],
+        [
+          "p",
+          "A espasticidade é um componente motor positivo da Síndrome do Neurônio Motor Superior (piramidal), caracterizada por um <strong>aumento velocidade-dependente do tônus muscular</strong> acompanhado por exacerbação dos reflexos miotáticos profundos. A mensuração clínica padrão-ouro em centros de reabilitação e provas de residência é a <strong>Escala Modificada de Ashworth (MAS)</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Grau na Escala MAS",
+            "Descrição Semiológica do Tônus Muscular"
+          ],
+          [
+            [
+              "<strong>Grau 0</strong>",
+              "Nenhum aumento no tônus muscular durante a movimentação passiva."
+            ],
+            [
+              "<strong>Grau 1</strong>",
+              "Ligeiro aumento do tônus muscular, manifestado por uma <strong>tensão momentânea e liberação (catch and release)</strong> ou por resistência mínima no final da amplitude de movimento articular (ADM)."
+            ],
+            [
+              "<strong>Grau 1+</strong>",
+              "Ligeiro aumento do tônus muscular, manifestado por uma tensão momentânea seguida por resistência mínima durante o <strong>restante (menos da metade) da ADM</strong>."
+            ],
+            [
+              "<strong>Grau 2</strong>",
+              "Aumento mais pronunciado do tônus muscular durante quase toda a ADM, mas a articulação ou segmento corporal envolvido é movimentado passivamente com relativa facilidade."
+            ],
+            [
+              "<strong>Grau 3</strong>",
+              "Aumento considerável do tônus muscular; a movimentação passiva torna-se difícil."
+            ],
+            [
+              "<strong>Grau 4</strong>",
+              "O membro afetado encontra-se em <strong>rigidez estrita</strong> em flexão ou extensão (quase impossível de movimentar passivamente)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Escadinha Terapêutica da Espasticidade"
+        ],
+        [
+          "o",
+          [
+            "<strong>Eliminação de Fatores Agravantes Nociceptivos:</strong> A espasticidade piora dramaticamente na presença de estímulos dolorosos abaixo da lesão (infecção urinária assintomática, constipação/fecaloma, unha encravada, lesão por pressão incipiente ou fratura oculta). O primeiro passo é sempre pesquisar e tratar o foco irritativo;",
+            "<strong>Cinesioterapia e Terapias Físicas:</strong> Alongamento muscular estático passivo mantido por pelo menos 30 segundos, órteses de posicionamento (ex.: órtese tipo AFO para prevenir pé equinovaro e encurtamento do tendão calcâneo) e fortalecimento dos músculos antagonistas;",
+            "<strong>Bloqueio Químico Focal com Toxina Botulínica Tipo A:</strong> Padrão-ouro para espasticidade focal ou segmentar (ex.: flexão espástica do punho e dedos, ou adução espástica de coxas que impede a higienização íntima). Atua clivando a proteína SNAP-25 na terminação pré-sináptica, impedindo a liberação de acetilcolina na junção neuromuscular. Início de ação em 48-72 horas, pico em 2 a 4 semanas e duração média de 3 a 4 meses;",
+            "<strong>Farmacoterapia Sistêmica Oral:</strong> Indicada para espasticidade generalizada difusa:\n    <ul>\n      <li><strong>Baclofeno:</strong> Agonista dos receptores GABA-B que hiperpolariza interneurônios medulares. Dose inicial de 5 mg 3 vezes ao dia, titulada gradualmente até 60-80 mg/dia. <strong>Atenção:</strong> A retirada abrupta pode deflagrar crise de abstinência com hipertermia severa, convulsões e óbito;",
+            "<strong>Tizanidina:</strong> Agonista alfa-2 adrenérgico de ação central;",
+            "<strong>Dantroleno:</strong> Bloqueador da liberação de cálcio do retículo sarcoplasmático (risco de hepatotoxicidade, monitorar transaminases).",
+            "<strong>Intervenções Neurocirúrgicas Avançadas:</strong> Bomba de infusão intratecal de baclofeno e rizotomia dorsal seletiva em casos refratários graves."
+          ]
+        ],
+        [
+          "3",
+          "Prevenção Sistemática de Lesões por Pressão (LPP)"
+        ],
+        [
+          "p",
+          "A pele de pacientes cadeirantes ou acamados com perda sensitiva é extremamente vulnerável à isquemia tecidual por compressão contínua entre uma proeminência óssea e a superfície de apoio (sacro, trocanteres maiores, ísquios e calcâneos). A pressão capilar fisiológica é de aproximadamente $32\text{ mmHg}$; pressões externas prolongadas que excedam esse valor ocluem o fluxo microvascular, deflagrando necrose tecidual:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estratificação com a Escala de Braden:</strong> Avalia 6 subescalas (Percepção sensorial, Umidade, Atividade, Mobilidade, Nutrição, Fricção/Cisalhamento). Escore total $le 12$ pontos indica <strong>Alto Risco</strong> de lesão;",
+            "<strong>Mudança de Decúbito Programada:</strong> Em pacientes acamados, realizar mudança de decúbito no leito a cada <strong>2 horas rigorosamente</strong> (alternando decúbito dorsal, lateral direito a 30 graus e lateral esquerdo a 30 graus — evitar decúbito lateral a 90 graus para não sobrecarregar os trocanteres);",
+            "<strong>Alívio de Pressão em Cadeirantes:</strong> Instruir o paciente a realizar elevações do quadril (empurrando os braços da cadeira) por 15 a 30 segundos a cada <strong>15 a 30 minutos de assento contínuo</strong>. Uso obrigatório de almofadas com células de ar interconectadas (tipo Roho) ou gel elastomérico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quatro-casos-clinicos-estruturados-reabilitacao-deficiencia",
+      0,
+      [
+        [
+          "2",
+          "15B. Casos Clínicos Estruturados em Reabilitação Comunitária e Atenção Domiciliar na APS"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Paraplegia Traumática T4 e Crise Aguda de Disreflexia Autonômica"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa:</strong> Marcelo, 26 anos, portador de lesão medular traumática completa nível T4 (ASIA A) após acidente motociclístico há 8 meses, comparece à UBS em cadeira de rodas trazido às pressas pela mãe. Apresenta-se extremamente agitado, com sudorese profusa na fronte e pescoço, congestão nasal intensa e queixando-se de cefaleia occipital latejante de início abrupto há 30 minutos, descrita como \"a pior dor de cabeça da vida\"."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> PA $210 \times 115\text{ mmHg}$; FC 48 bpm (bradicardia sinusal); FR 18 irpm; SatO2 98% em ar ambiente. Pele da face, pescoço e membros superiores com rubor intenso e diaforese; pele do abdome e membros inferiores fria, pálida e com piloereção evidente. O paciente utiliza cateter vesical de demora (Foley) com bolsa coletora acoplada à cadeira de rodas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Imediata:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Reconhecimento Diagnóstico:</strong> Trata-se de uma <strong>Disreflexia Autonômica clássica</strong> em paciente com lesão medular alta ($ge \text{T6}$), evidenciada pela tétrade de hipertensão grave paroxística, bradicardia reflexa vagal, cefaleia e dissociação autonômica vasoativa (rubor/sudorese acima de T4 e palidez/frieza abaixo);",
+            "<strong>Intervenção Física Instantânea:</strong> O médico de família imediatamente <strong>mantém o paciente sentado</strong> na cadeira com as pernas pendentes (NUNCA deitar o paciente em decúbito horizontal, o que aumentaria perigosamente a pressão intracraniana por sobrecarga vascular encefálica);",
+            "<strong>Investigação e Alívio do Gatilho Urológico:</strong> O médico inspeciona a sonda de demora e nota que o tubo coletor plástico está <strong>dobrado e pinçado</strong> sob o assento da cadeira, com a bexiga visivelmente distendida e palpável no hipogástrio (bexigoma). Ao desdobrar o cateter, ocorre drenagem imediata de 800 mL de urina concentrada;",
+            "<strong>Desfecho Clínico:</strong> Cinco minutos após o esvaziamento vesical completo, a cefaleia desaparece, o rubor cede e a PA normaliza para $118 \times 74\text{ mmHg}$, com FC subindo para 72 bpm, sem necessidade de anti-hipertensivos parenterais;",
+            "<strong>Plano Educativo na APS:</strong> A equipe de enfermagem da UBS orienta o paciente e a mãe sobre a técnica do <strong>Cateterismo Intermitente Limpo (CIL)</strong> a cada 4 horas para a retirada definitiva do cateter de demora, prevenindo novas crises e infecções urinárias recorrentes."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Reabilitação Pós-AVC com Heminegligência e Espasticidade Grave de Punho"
+        ],
+        [
+          "p",
+          "<strong>História:</strong> D. Nair, 67 anos, hipertensa, sofreu um AVE isquêmico extenso em território de ACM direita há 4 meses. Apresenta hemiplegia à esquerda com tônus grau 3 na escala de Ashworth Modificada em flexores de punho e dedos da mão esquerda, com a mão permanentemente cerrada em garra, provocando maceração da pele palmar e odor fétido por impossibilidade de higienização. Além disso, a família relata que ela \"esquece o lado esquerdo do mundo\": não come a comida do lado esquerdo do prato e não veste a manga esquerda da camisa."
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico e Manejo Interdisciplinar:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Diagnóstico:</strong> Espasticidade focal grave pós-AVC associada à <strong>Síndrome de Heminegligência Espacial e Pessoal Esquerda</strong>;",
+            "<strong>Indicação de Toxina Botulínica Tipo A:</strong> Encaminhamento ao CER para injeção guiada por eletromiografia de Toxina Botulínica nos músculos flexor radial do carpo, flexor ulnar do carpo e flexores profundo e superficial dos dedos da mão esquerda;",
+            "<strong>Terapia Ocupacional e Fisioterapia:</strong> Uso de órtese extensora estática de repouso (tala volar) para manter os dedos abertos, e técnicas de reeducação perceptual com pistas visuais e espelho para reabilitação da negligência hemiespacial;",
+            "<strong>Orientações à Família:</strong> Abordar a paciente preferencialmente pelo lado esquerdo durante conversas e posicionar a mesa de cabeceira e a televisão no campo visual negligenciado para estimular a atenção cortical compensatória."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Diagnóstico Precoce de Transtorno do Espectro Autista (TEA) na Puericultura da UBS"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Menino de 18 meses comparece à consulta de puericultura com a mãe. A mãe está preocupada porque o filho \"não fala nenhuma palavra compreensível e não atende quando é chamado pelo nome, parecendo surdo\". A avaliação auditiva no teste da orelhinha ao nascimento e o exame otoscópico atual foram normais."
+        ],
+        [
+          "p",
+          "<strong>Semiologia do Neurodesenvolvimento:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O médico de família aplica o questionário padronizado <strong>M-CHAT-R/F (Modified Checklist for Autism in Toddlers)</strong>;",
+            "Observa ausência de contato visual sustentado, ausência de sorriso social responsivo, ausência de gesto de apontar com o indicador para compartilhar interesse (atenção compartilhada ausente) e presença de movimentos repetitivos com as mãos (flapping);",
+            "A criança empilha carrinhos em linha reta sistemática em vez de brincar funcionalmente;",
+            "<strong>Conduta Baseada na Linha de Cuidado do SUS:</strong> Não esperar a criança atingir 3 ou 4 anos para \"ver se a fala desabrocha\". Encaminhamento imediato ao CER para estimulação precoce com Fonoaudiologia, Terapia Ocupacional com integração sensorial e Psicologia baseada na Análise do Comportamento Aplicada (ABA), matriciando o caso com a escola infantil local para garantir adaptação curricular e suporte pedagógico."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Sobrecarga do Cuidador Familiar de Idoso com Demência Avançada"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Lúcia, 58 anos, é a cuidadora primária exclusiva de sua mãe de 86 anos com Doença de Alzheimer avançada (escore CDR 3, totalmente dependente para alimentação, banho e controle esfincteriano). Lúcia comparece à UBS chorando copiosamente, relatando exaustão física, insônia terminal, lombalgia incapacitante e pensamentos frequentes de desespero: \"Às vezes tenho vontade de fugir e sumir no mundo\"."
+        ],
+        [
+          "p",
+          "<strong>Intervenção Territorial e Suporte ao Cuidador:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Aplicação da <strong>Escala de Zarit (Zarit Burden Interview)</strong>, revelando escore de 68 pontos (Sobrecarga Intensa/Severa do Cuidador);",
+            "<strong>Construção de Projeto Terapêutico Singular Compartilhado:</strong>\n    <ul>\n      <li>Inclusão da mãe no programa do <strong>Melhor em Casa (Serviço de Atenção Domiciliar - SAD / EMAD)</strong> para suporte médico e de enfermagem quinzenal em domicílio;",
+            "Convocação dos outros dois irmãos de Lúcia para uma <strong>Reunião Familiar na UBS</strong>, pactuando judicialmente e consensualmente o rodízio do cuidado noturno e nos finais de semana;",
+            "Inserção de Lúcia no grupo terapêutico de apoio aos cuidadores de idosos coordenado pela psicóloga e assistente social da e-Multi na UBS;",
+            "Prescrição de fisioterapia domiciliar para ensinar técnicas ergonômicas de transferência da idosa (leito-cadeira) a fim de poupar a coluna de Lúcia."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-reabilitacao-deficiencia-enamed-revalida",
+      0,
+      [
+        [
+          "2",
+          "16B. Questões Inéditas Comentadas no Padrão Residência Médica, Revalida e ENAMED sobre Reabilitação Comunitária e Cuidados à PcD"
+        ],
+        [
+          "3",
+          "Banco de Questões de Alta Performance: Cuidado à Pessoa com Deficiência"
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (ENAMED / USP — 2025):</strong> Jovem de 24 anos com sequela de traumatismo raquimedular em nível T5 (lesão medular completa - ASIA A) encontra-se em programa de reabilitação. Durante a madrugada no hospital, desperta queixando-se de cefaleia occipital excruciante, congestão nasal e visão turva. Ao exame, o médico plantonista constata sudorese profusa na cabeça e pescoço, rubor facial, pressão arterial de $215 \times 125\text{ mmHg}$ e frequência cardíaca de 44 bpm. A pele dos membros inferiores está pálida e fria. Diante do quadro de Disreflexia Autonômica, qual é a conduta prioritária e sequencial imediata?"
+        ],
+        [
+          "p",
+          "A) Posicionar o paciente em decúbito dorsal horizontal com membros inferiores elevados e administrar Nitroprussiato de Sódio endovenoso em bomba de infusão.<br>\n  B) Posicionar o paciente sentado com as pernas pendentes, afrouxar roupas apertadas e checar/esvaziar imediatamente o sistema de drenagem vesical.<br>\n  C) Administrar Diazepam 10 mg intravenoso para sedação e realizar punção lombar diagnóstica para pesquisa de hemorragia subaracnóidea.<br>\n  D) Iniciar infusão imediata de Atropina 0,5 mg intravenosa para reverter a bradicardia sinusal e deitar o paciente em decúbito lateral esquerdo.<br>\n  E) Prescrever antibioticoterapia empírica imediata com Ceftriaxona para choque séptico de foco pulmonar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A Disreflexia Autonômica é uma emergência hipertensiva paroxística desencadeada por estímulos nociceptivos abaixo da lesão medular (em $ge \text{T6}$), sendo a distensão vesical aguda por obstrução do fluxo urinário responsável por mais de 80% dos eventos. A conduta imediata mandatória é: <strong>1) Colocar o paciente na posição SENTADA com pernas pendentes</strong> (o que promove represamento venoso gravitacional esplâncnico e periférico, diminuindo o retorno venoso e a PA, além de reduzir a hipertensão intracraniana reflexa); <strong>2) Afrouxar vestimentas constritivas; 3) Esvaziar imediatamente a bexiga por cateterismo ou desobstrução de sonda dobrada</strong>. A remoção do estímulo costuma abortar a crise hipertensiva em minutos."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Posicionar o paciente deitado com pernas elevadas é fatal, pois agrava drasticamente a sobrecarga vascular encefálica e o risco de AVE hemorrágico iminente;",
+            "<em>Alternativa C incorreta:</em> A cefaleia e hipertensão são secundárias à disreflexia medular, não havendo indicação primária de punção lombar sob risco de herniação;",
+            "<em>Alternativa D incorreta:</em> A bradicardia é uma resposta vagal reflexa fisiológica compensatória à hipertensão maciça; reverter a hipertensão aliviando a bexiga normaliza a FC;",
+            "<em>Alternativa E incorreta:</em> O quadro não é choque séptico, mas crise simpática hipertensiva."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (Revalida INEP — 2024):</strong> De acordo com a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da PcD - Lei Federal nº 13.146/2015), assinale a alternativa juridicamente e clinicamente correta sobre a capacidade civil das pessoas com deficiência:"
+        ],
+        [
+          "p",
+          "A) A existência de qualquer deficiência mental ou intelectual acarreta automaticamente a perda da capacidade civil plena e a interdição total compulsória.<br>\n  B) A pessoa com deficiência tem assegurado o direito ao exercício de sua capacidade civil plena em igualdade de condições, inclusive para casar-se, exercer direitos sexuais e reprodutivos e trabalhar, sendo a curatela medida extraordinária restrita aos atos patrimoniais e negociais.<br>\n  C) A curatela aplica-se compulsoriamente a todos os atos da vida da pessoa com deficiência, inclusive consentimento para cirurgias, casamento e voto político.<br>\n  D) A avaliação da deficiência para fins legais no Brasil deve ser realizada monocraticamente por médico perito, sendo vedada a participação de assistentes sociais ou terapeutas.<br>\n  E) É proibido à pessoa com deficiência aderir ao mecanismo de Tomada de Decisão Apoiada sem autorização prévia de um conselho tutelar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A Lei nº 13.146/2015 revolucionou o Direito Civil brasileiro ao proclamar no Art. 6º que a deficiência não afeta a plena capacidade civil da pessoa humana. O antigo modelo de interdição total foi superado: a curatela passou a ser uma medida extraordinária, transitória e estritamente restrita aos atos de conteúdo patrimonial e negocial (como venda de imóveis ou movimentação financeira vultosa), sendo expressamente vedado estender a curatela a direitos personalíssimos (direito ao próprio corpo, sexualidade, casamento, união estável, privacidade e direito ao voto)."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A e C incorretas:</em> Ferem a letra expressa do Art. 6º e Art. 84 da LBI;",
+            "<em>Alternativa D incorreta:</em> A LBI determina expressamente que a avaliação biopsicossocial da deficiência deve ser multiprofissional e interdisciplinar;",
+            "<em>Alternativa E incorreta:</em> A Tomada de Decisão Apoiada (Art. 1.783-A do CC) é um direito facultativo da própria pessoa com deficiência, homologado em juízo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP / ENARE — 2024):</strong> Paciente masculino de 60 anos, com sequela de AVE isquêmico há 6 meses, apresenta espasticidade grave em flexores do cotovelo e dedos esquerdos (grau 3 na Escala Modificada de Ashworth), que impede a higiene palmar diária e a colocação da órtese prescrita. Qual é a conduta terapêutica focal padrão-ouro preconizada para esse estágio clínico?"
+        ],
+        [
+          "p",
+          "A) Aplicação intramuscular de Toxina Botulínica Tipo A nos músculos espásticos afetados, associada a cinesioterapia e uso de órtese de posicionamento.<br>\n  B) Amputação eletiva do membro superior parético para controle do odor e dor local.<br>\n  C) Prescrição de Diazepam em doses elevadas contínuas por via oral sem qualquer terapia física.<br>\n  D) Cirurgia imediata de denervação total do plexo braquial esquerdo.<br>\n  E) Conduta expectante exclusiva, visto que a espasticidade pós-AVC se resolve espontaneamente em 1 ano."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A <strong>Toxina Botulínica Tipo A</strong> é a terapia padrão-ouro internacional para a espasticidade focal ou segmentar incapacitante. Ela bloqueia a liberação pré-sináptica de acetilcolina na placa motora, promovendo quimiodenervação transitória (duração de 3 a 4 meses) e relaxamento muscular focal, o que abre uma janela terapêutica indispensável para higienização palmar, reabilitação cinesioterapêutica e adaptação de órteses biomecânicas funcionais."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas B e D incorretas:</em> Procedimentos mutiladores e desprovidos de respaldo técnico;",
+            "<em>Alternativa C incorreta:</em> Benzodiazepínicos causam sedação central intensa, sonolência e risco de quedas, sem eficácia focal duradoura;",
+            "<em>Alternativa E incorreta:</em> A espasticidade crônica não tratada evolui invariavelmente para contraturas fixas, encurtamento tendíneo fibrótico e deformidades articulares irreversíveis."
+          ]
+        ]
+      ]
+    ],
+    [
+      "7-prevencao-de-complicacoes-da-imobilidade",
+      0,
+      [
+        [
+          "2",
+          "7. Prevenção de complicações da imobilidade"
+        ],
+        [
+          "p",
+          "A imobilidade favorece dor, contraturas, sarcopenia, trombose, constipação, retenção urinária, pneumonia aspirativa e <strong>lesão por pressão</strong>. Cada risco tem prevenção específica; não usar antibiótico ou anticoagulante universal como \"protocolo de acamado\" sem indicação/risco-benefício."
+        ],
+        [
+          "3",
+          "Lesão por pressão — entender para prevenir"
+        ],
+        [
+          "p",
+          "Pressão prolongada, cisalhamento, microclima/umidade, fricção e perfusão inadequada contribuem para dano tecidual, sobretudo em sacro, ísquios, trocânteres, calcâneos e pontos de contato com dispositivos. A pele pode parecer íntegra enquanto tecidos profundos estão lesionados. <strong>Não existe limiar fixo de pressão/tempo que garanta lesão ou segurança para todo paciente</strong>: tolerância varia com nutrição, perfusão, umidade e sensibilidade."
+        ],
+        [
+          "p",
+          "<strong>Avaliar risco:</strong> incapacidade de mudar posição, perda sensorial, umidade, nutrição, alterações de consciência e cisalhamento. Ferramenta de Braden pode apoiar avaliação, mas não substitui julgamento. <strong>Prevenção:</strong> plano individual de reposicionamento com frequência adaptada a superfície, pele e condição clínica; inspeção de proeminências, superfície de redistribuição de pressão adequada, manejo de umidade e suporte nutricional; aliviar pressão em cadeira de rodas com técnica segura. A rotina de \"virar exatamente a cada duas horas para todos\" não é indicação universal rígida."
+        ],
+        [
+          "p",
+          "<strong>Classificação clínica</strong> pode ir de eritema persistente em pele íntegra até perda tecidual profunda com exposição de estruturas; lesões tissulares profundas e não classificáveis demandam distinção. Avaliar cor da pele, textura, temperatura e integridade conforme tonalidade cutânea; eritema pode ser menos evidente em pele escura. Não remover escara estável de calcâneo isquêmico sem indicação especializada; avaliar perfusão, infecção e contexto."
+        ],
+        [
+          "p",
+          "<strong>Infecção/osteomielite:</strong> exsudato e odor não provam infecção óssea por si. Sinais sistêmicos, celulite progressiva, osso exposto ou ferida profunda podem demandar investigação e equipe de feridas/infectologia/cirurgia, considerando necessidade de culturas apropriadas e controle de foco. Uma radiografia ou RM isolada sem contexto não define todas as decisões cirúrgicas."
+        ],
+        [
+          "3",
+          "Contraturas e espasticidade"
+        ],
+        [
+          "p",
+          "Espasticidade pode atrapalhar higiene, transferência e dor, mas algum tônus pode compensar fraqueza em função específica; meta do tratamento deve ser explicitada. Reabilitação, posicionamento, órteses e medicação antiespástica/bloqueios em casos selecionados precisam considerar sonolência e piora de força. Alongamento indiscriminado e manipulações dolorosas podem causar trauma."
+        ],
+        [
+          "3",
+          "Continência e bexiga neurogênica"
+        ],
+        [
+          "p",
+          "Avaliar retenção, infecções sintomáticas, incontinência por transbordamento, hidratação, constipação, uso de cateter e integridade renal. <strong>Bacteriúria assintomática em usuário de cateter não justifica antibiótico em todos os casos</strong>, salvo indicações bem definidas (como gestação/procedimentos urológicos selecionados) conforme diretriz. Planejamento vesical pode exigir cateterismo intermitente, medicamentos e urologia; preservar dignidade e ensinar técnica sem culpar paciente por falhas de acesso."
+        ]
+      ]
+    ],
+    [
+      "8-deficiencia-auditiva-visual-intelectual-e-comunicacao",
+      0,
+      [
+        [
+          "2",
+          "8. Deficiência auditiva, visual, intelectual e comunicação"
+        ],
+        [
+          "p",
+          "<strong>Auditiva:</strong> identificar preferência de Libras, aparelho, leitura labial, escrita ou outros recursos; garantir intérprete quando necessário e comunicação clara, não presumir que pessoa surda não compreende decisão. Exames audiológicos e avaliação otorrinolaringológica são selecionados por quadro, idade e tecnologia disponível."
+        ],
+        [
+          "p",
+          "<strong>Visual:</strong> fornecer material em formato acessível, contraste, áudio, braile quando apropriado e orientação de mobilidade; medicamento com embalagem idêntica pode gerar erro e exigir adaptação (leitor, etiquetas táteis, cuidador treinado) sem retirar autonomia."
+        ],
+        [
+          "p",
+          "<strong>Intelectual:</strong> comunicação em linguagem clara, tempo para resposta, apoio à compreensão, avaliação das preferências e capacidade decisória específica à situação. Ter deficiência intelectual não significa automaticamente incapacidade jurídica ou inviabilidade de consentimento; observar apoio e regras legais vigentes."
+        ],
+        [
+          "p",
+          "<strong>Comunicação alternativa/aumentativa:</strong> recursos de prancha, aplicativo, gestos e dispositivos eletrônicos podem permitir participação de quem não fala oralmente. O profissional deve ajustar a consulta — não atribuir \"não colaborou\" quando serviço não disponibilizou forma de comunicação."
+        ]
+      ]
+    ],
+    [
+      "9-desenvolvimento-infantil-e-participacao-escolar",
+      0,
+      [
+        [
+          "2",
+          "9. Desenvolvimento infantil e participação escolar"
+        ],
+        [
+          "p",
+          "Em crianças, a avaliação inclui marcos, linguagem, alimentação, audição/visão, motricidade, oportunidades de brincadeira, interação e contexto familiar. Rastreios não são diagnósticos definitivos de deficiência; encaminhar precocemente para avaliação e intervenção quando há sinais de atraso ou regressão, sem aguardar arbitrariamente escolarização. <strong>Regressão do desenvolvimento</strong> exige investigação clínica urgente conforme apresentação, não apenas \"estimulação\" genérica."
+        ],
+        [
+          "p",
+          "O PTS deve contemplar escola, inclusão, materiais adaptados, comunicação com profissionais da educação (com consentimento/limites éticos), suporte à família, saúde bucal e transição para serviços adultos. A criança tem voz e participação progressiva conforme desenvolvimento; não reduzir todos os objetivos ao que pais/cuidadores desejam."
+        ]
+      ]
+    ],
+    [
+      "10-tecnologias-assistivas-e-indicacao-orientada-por-funcao",
+      0,
+      [
+        [
+          "2",
+          "10. Tecnologias assistivas e indicação orientada por função"
+        ],
+        [
+          "p",
+          "<strong>Órtese</strong> posiciona, estabiliza ou facilita função de segmento; <strong>prótese</strong> substitui parte corporal; <strong>meio auxiliar de locomoção</strong> inclui bengala, andador e cadeira de rodas; tecnologia assistiva também inclui comunicação, acessibilidade digital e adaptações domiciliares."
+        ],
+        [
+          "3",
+          "Antes de indicar cadeira de rodas"
+        ],
+        [
+          "p",
+          "Avaliar necessidade de mobilidade/participação, medidas corporais, postura pélvica, apoio de tronco/cabeça, sensibilidade, risco de lesão cutânea, transferências, força/coordenação de membros superiores, ambiente doméstico, transporte e possibilidade de manutenção. Equipamento muito largo, sem almofada indicada ou postura ruim pode aumentar lesão por pressão e dor. Treinamento é parte do fornecimento, não complemento opcional."
+        ],
+        [
+          "3",
+          "Dispositivos de marcha"
+        ],
+        [
+          "p",
+          "Bengala/andador são escolhas conforme equilíbrio, força, cognição, terreno e metas; ajustar altura, técnica e segurança. Dispositivo mais \"simples\" não é sempre melhor: bengala inadequada pode aumentar queda. Criança em crescimento exige reavaliação de órtese e tamanho; adulto com alteração de peso também."
+        ]
+      ]
+    ],
+    [
+      "11-saude-integral-alem-da-deficiencia",
+      0,
+      [
+        [
+          "2",
+          "11. Saúde integral além da deficiência"
+        ],
+        [
+          "p",
+          "Pessoa com deficiência continua necessitando <strong>rastreio de câncer indicado pela idade/sexo/risco</strong>, imunização, saúde sexual e reprodutiva, pré-natal, controle de doenças crônicas, prevenção de violência, odontologia, acesso a exames e aconselhamento de hábitos. Omissão por \"diagnostic overshadowing\" — atribuir todo sintoma à deficiência — causa perda de diagnóstico tratável."
+        ],
+        [
+          "p",
+          "Exemplo: mulher com paralisia cerebral e dor pélvica nova não deve receber apenas analgésico e \"é da paralisia\" sem história menstrual, ginecológica e exame adaptado. A cadeira inacessível de ginecologia é barreira organizacional a ser solucionada, não motivo para negar cuidado."
+        ],
+        [
+          "p",
+          "<strong>Sexualidade:</strong> evitar pressupor ausência de vida sexual ou infertilidade. Discutir privacidade, consentimento, prevenção de IST, contracepção e direitos reprodutivos. Violência pode ser subnotificada quando pessoa depende do agressor para transporte/comunicação; garantir escuta segura e fluxos de proteção previstos em lei."
+        ],
+        [
+          "p",
+          "<strong>Saúde mental:</strong> dor, isolamento, discriminação e mudança de papel social podem contribuir ao sofrimento, mas deficiência não implica depressão automática; perguntar ativamente sobre bem-estar e metas de vida. Apoiar cuidadores e trabalhadores da saúde sem substituir autonomia da pessoa."
+        ]
+      ]
+    ],
+    [
+      "12-intersetorialidade-onde-a-rede-clinica-termina",
+      0,
+      [
+        [
+          "2",
+          "12. Intersetorialidade: onde a rede clínica termina?"
+        ],
+        [
+          "p",
+          "A redução de barreiras frequentemente depende de educação, habitação, mobilidade urbana, trabalho, assistência social e cultura. A equipe da UBS deve conhecer recursos territoriais e facilitar encaminhamentos com consentimento, respeitando confidencialidade. Benefícios socioassistenciais possuem critérios próprios e não devem ser prometidos apenas com diagnóstico médico; relatório funcional bem fundamentado pode ajudar avaliação administrativa."
+        ],
+        [
+          "p",
+          "<strong>Teleatendimento e saúde digital</strong> ampliam acesso em certos cenários, mas podem excluir pessoas sem internet, dispositivos, acessibilidade ou letramento digital; oferecer alternativa inclusiva. Comunicação digital de prontuário e laudos deve obedecer LGPD e dever de sigilo."
+        ]
+      ]
+    ],
+    [
+      "13-seguimento-domiciliar-e-sobrecarga-de-cuidador",
+      0,
+      [
+        [
+          "2",
+          "13. Seguimento domiciliar e sobrecarga de cuidador"
+        ],
+        [
+          "p",
+          "Visitando domicílio, observar acessos, banheiro, superfície de repouso, armazenamento de medicamentos, transferência, risco de quedas, umidade de pele, cadeira/órtese, recursos alimentares e adaptação escolar/laboral. <strong>Não confundir vulnerabilidade material com negligência deliberada</strong>. Identificar se há pessoas ou recursos para executar o PTS e negociar prioridades factíveis."
+        ],
+        [
+          "p",
+          "Cuidadores podem apresentar exaustão, dor musculoesquelética, sono ruim e isolamento. Orientar ergonomia, descanso, divisão de tarefas, rede de apoio e encaminhamento quando houver sofrimento. Fornecer material educativo em linguagem adequada, demonstrar manobras e pedir retorno da técnica para verificar compreensão."
+        ]
+      ]
+    ],
+    [
+      "14-algoritmos-de-atendimento-e-decisao",
+      0,
+      [
+        [
+          "2",
+          "14. Algoritmos de atendimento e decisão"
+        ],
+        [
+          "3",
+          "A. Primeira consulta"
+        ],
+        [
+          "p",
+          "Acolher pessoa e estabelecer comunicação acessível → identificar metas funcionais → avaliação clínica de risco e prevenção → exame de atividades/participação e barreiras → mapear família/território → escolher intervenções APS e referência CER/equipe quando necessário → elaborar PTS com responsáveis → combinar retorno e indicadores de progresso → reavaliar após intercorrência."
+        ],
+        [
+          "3",
+          "B. Pessoa acamada com risco de lesão por pressão"
+        ],
+        [
+          "p",
+          "Inspecionar pele e superfícies → avaliar sensibilidade/mobilidade, incontinência, perfusão e nutrição → superfície apropriada e plano individual de reposicionamento → manejo de umidade e treinamento do cuidador → documentar lesões, classificar quando possível → encaminhar se lesão profunda, sinais de infecção ou falha de cicatrização → revisar periodicamente."
+        ],
+        [
+          "3",
+          "C. Demanda por cadeira de rodas"
+        ],
+        [
+          "p",
+          "Avaliar objetivo de mobilidade e participação → exame de postura e risco cutâneo → medir e testar opção adequada → definir prescrição técnica interdisciplinar → acionar regulação/oficina/CER conforme rede → treinar usuário/cuidadores → garantir manutenção e reavaliação → monitorar redução de barreiras, não apenas entrega da cadeira."
+        ]
+      ]
+    ],
+    [
+      "15-casos-clinicos-comentados",
+      0,
+      [
+        [
+          "2",
+          "15. Casos clínicos comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Pós-AVC e meta de banho"
+        ],
+        [
+          "p",
+          "Homem de 66 anos após AVC, usa andador, consegue alimentar-se sozinho, mas não entra no banheiro por degrau e não tem barra. <strong>Hipótese funcional:</strong> limitação de atividade agravada por barreira ambiental, não apenas hemiparesia. <strong>Avaliação:</strong> força, equilíbrio, cognição, sensibilidade, ortostatismo, risco de queda, ambiente e objetivo pessoal. <strong>Conduta:</strong> PTS com adaptação de banheiro, TO/fisioterapia, revisão de hipotensão/medicações e acompanhamento APS. <strong>Por que importa:</strong> tratar músculo sem ambiente não restitui participação."
+        ],
+        [
+          "3",
+          "Caso 2 — Lesão por pressão em paraplegia"
+        ],
+        [
+          "p",
+          "Mulher de 34 anos com lesão medular e perda de sensibilidade encontra área sacral violácea após longo período sentada. Afebril, sem dor. <strong>Hipótese:</strong> lesão tissular profunda por pressão possível; gravidade não depende de dor. <strong>Exames/avaliação:</strong> pele íntegra/bolhas, perfusão, superfície, tempo de apoio, fatores nutricionais e sinais de infecção; documentação fotográfica apenas com autorização/segurança. <strong>Conduta:</strong> aliviar pressão, avaliar equipe de feridas, ajustar cadeira/almofada, PTS de prevenção e monitorização. <strong>Por que importa:</strong> pele íntegra e ausência de dor não excluem dano profundo."
+        ],
+        [
+          "3",
+          "Caso 3 — Deficiência auditiva e consulta sem intérprete"
+        ],
+        [
+          "p",
+          "Jovem adulta surda procura atendimento para disúria. Profissional dirige-se apenas à mãe, sem verificar preferências da paciente. <strong>Problema:</strong> barreira comunicacional e violação potencial de autonomia. <strong>Avaliação:</strong> perguntar à paciente como deseja comunicar-se, buscar interpretação/recursos apropriados, garantir confidencialidade, obter história de sintomas urinários. <strong>Conduta:</strong> atendimento adaptado e protocolo clínico para ITU conforme história; registrar preferência comunicacional. <strong>Por que importa:</strong> boa comunicação é condição de segurança diagnóstica, não luxo."
+        ],
+        [
+          "3",
+          "Caso 4 — Criança com atraso motor e escola inacessível"
+        ],
+        [
+          "p",
+          "Menino de cinco anos com paralisia cerebral chega à UBS porque deixou de frequentar escola após mudança de prédio com escadas. <strong>Problema:</strong> restrição de participação por barreira arquitetônica. <strong>Avaliação:</strong> mobilidade, comunicação, equipamento, família e escola. <strong>Conduta:</strong> reavaliar cadeira/órteses, PTS compartilhado, articulação com educação e rede de reabilitação, sem concluir que \"não pode estudar\". <strong>Por que importa:</strong> a intervenção mais importante pode ser remover barreira, não mudar diagnóstico."
+        ],
+        [
+          "3",
+          "Caso 5 — Autonomia e decisão clínica"
+        ],
+        [
+          "p",
+          "Adulto com deficiência intelectual leve deseja iniciar relação afetiva e procurar contracepção, mas acompanhante afirma que \"ele não entende nada\". <strong>Problema:</strong> risco de paternalismo e omissão do direito à saúde sexual. <strong>Avaliação:</strong> ouvir pessoa em comunicação adaptada, compreender preferências e entendimento específico da decisão, verificar consentimento/segurança e riscos clínicos. <strong>Conduta:</strong> educação acessível, apoio à decisão sem substituir vontade injustificadamente e documentação ética; encaminhamento quando necessário. <strong>Por que importa:</strong> deficiência não suprime automaticamente autonomia."
+        ]
+      ]
+    ],
+    [
+      "16-questoes-autorais-comentadas",
+      0,
+      [
+        [
+          "2",
+          "16. Questões autorais comentadas"
+        ],
+        [
+          "p",
+          "<strong>Q1.</strong> O modelo biopsicossocial da deficiência afirma que:\r<br>A) diagnóstico isolado define participação; B) impedimentos e barreiras interagem e podem restringir participação; C) toda pessoa com deficiência é incapaz civil; D) reabilitação é sempre cirurgia; E) adaptação ambiental não muda funcionalidade.  \r<br><strong>Gabarito B.</strong> A ignora ambiente; C é discriminação e erro jurídico; D reduz escopo; E nega efeitos de barreiras; B corresponde à CIF/LBI. <strong>Mini-revisão:</strong> CID e CIF se complementam."
+        ],
+        [
+          "p",
+          "<strong>Q2.</strong> Sobre a Rede de Cuidados à Pessoa com Deficiência no SUS:\r<br>A) CER substitui toda APS. B) CER II/III/IV corresponde ao número de modalidades de reabilitação habilitadas. C) CER IV atende exclusivamente quatro pacientes. D) PTS dispensa usuário. E) Reabilitação é só hospitalar.  \r<br><strong>Gabarito B.</strong> A/E fragmentam rede, C interpreta nome incorretamente, D ignora cuidado compartilhado; B reflete organização oficial. <strong>Mini-revisão:</strong> APS mantém vínculo após encaminhamento."
+        ],
+        [
+          "p",
+          "<strong>Q3.</strong> Pessoa com paraplegia e área sacral arroxeada mas indolor e pele íntegra. A conduta adequada:\r<br>A) excluir lesão por pressão por não haver dor. B) suspeitar lesão profunda, aliviar carga, examinar/encaminhar e revisar dispositivos. C) massagear vigorosamente a área. D) iniciar antibiótico IV para todos. E) aguardar necrose.  \r<br><strong>Gabarito B.</strong> A/E atrasam diagnóstico; C pode agravar dano; D não é universal; B aborda mecanismo e risco. <strong>Mini-revisão:</strong> perda sensorial torna inspeção preventiva essencial."
+        ],
+        [
+          "p",
+          "<strong>Q4.</strong> Mulher surda chega à consulta. O profissional deve:\r<br>A) falar só com familiar; B) dispensar consentimento; C) perguntar preferência comunicacional e assegurar acesso a comunicação, dirigindo-se à paciente; D) adiar indefinidamente; E) presumir incapacidade intelectual.  \r<br><strong>Gabarito C.</strong> A/B/E são capacitistas e inseguras; D nega acesso; C respeita direitos e segurança. <strong>Mini-revisão:</strong> acessibilidade é componente do cuidado."
+        ],
+        [
+          "p",
+          "<strong>Q5.</strong> Uma cadeira de rodas mal ajustada pode:\r<br>A) sempre melhorar função independentemente da postura. B) aumentar dor, risco de lesão por pressão e dificultar transferências. C) dispensar treinamento. D) eliminar necessidade de manutenção. E) ser escolhida apenas pela cor.  \r<br><strong>Gabarito B.</strong> A/C/D/E negam avaliação funcional; B descreve problema de ajuste. <strong>Mini-revisão:</strong> tecnologia assistiva = indicação, adaptação, treino e reavaliação."
+        ],
+        [
+          "p",
+          "<strong>Q6.</strong> Qual é um exemplo de objetivo funcional de PTS?\r<br>A) \"Fazer 20 sessões\" sem desfecho. B) \"Voltar a tomar banho com supervisão mínima após adaptação e treino\", com prazo e avaliação. C) \"Ser curado da deficiência\" sempre. D) \"Pedir todos os exames disponíveis\". E) \"Nunca consultar UBS após CER\".  \r<br><strong>Gabarito B.</strong> A mede atividade e não resultado, C pode ser inadequado, D é excesso, E fragmenta cuidado; B explicita função e contexto. <strong>Mini-revisão:</strong> PTS precisa de meta da pessoa e indicadores."
+        ],
+        [
+          "p",
+          "<strong>Q7.</strong> No paciente com lesão medular alta, cefaleia intensa, sudorese e hipertensão abrupta sugerem:\r<br>A) sempre enxaqueca simples. B) disreflexia autonômica, procurar estímulo nocivo como bexiga distendida e encaminhar emergencialmente. C) hipotensão crônica sem relevância. D) apenas lesão de pressão. E) ausência de risco se paraplégico.  \r<br><strong>Gabarito B.</strong> A/C/D/E desconsideram emergência autonômica; B associa fisiopatologia e conduta. <strong>Mini-revisão:</strong> retenção urinária/fecal é gatilho clássico."
+        ]
+      ]
+    ],
+    [
+      "17-plano-de-imagens-para-admin",
+      0,
+      [
+        [
+          "2",
+          "17. Plano de imagens para Admin"
+        ],
+        [
+          "p",
+          "1. Diagrama biopsicossocial original CIF: impedimento, atividade, participação e barreiras.\r<br>2. Esquema de Rede de Cuidados à Pessoa com Deficiência e APS/CER.\r<br>3. Diagrama de PTS com objetivos SMART e responsabilidades.\r<br>4. Planta domiciliar fictícia mostrando barreira de banheiro e adaptação.\r<br>5. Ilustração original cadeira de rodas/apoio de pés/postura.\r<br>6. Ilustração de proeminências ósseas em repouso e sedestação.\r<br>7. Fotografias clínicas de lesão por pressão em tonalidades de pele diversas <strong>somente com autorização e licença</strong>, para aprovação no Admin.\r<br>8. Esquema de transferência cama–cadeira com ergonomia segura, produzido autoralmente.\r<br>9. Infográfico de acessibilidade comunicacional (Libras, texto, áudio, CAA).\r<br>10. Fluxograma de prevenção de quedas e monitorização funcional.\r<br>Nenhuma imagem privada ou do PDF comparativo foi utilizada. Todas devem ter origem, licença, legenda científica e WebP leve."
+        ]
+      ]
+    ],
+    [
+      "18-fontes-oficiais-e-referencia-tecnica",
+      0,
+      [
+        [
+          "2",
+          "18. Fontes oficiais e referência técnica"
+        ],
+        [
+          "p",
+          "1. Ministério da Saúde. Saúde da Pessoa com Deficiência — PNAISPD e reabilitação: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia\r<br>2. Ministério da Saúde. Rede de Cuidados à Pessoa com Deficiência, PTS e CER: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd/rede-de-cuidados-a-pessoa-com-deficiencia/\r<br>3. Ministério da Saúde. Centros Especializados em Reabilitação, modalidades: https://www.gov.br/saude/pt-br/assuntos/novo-pac-saude/selecao-2025/centros-especializados-em-reabilitacao\r<br>4. Ministério da Saúde. Legislação PNAISPD: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/legislacao/legislacao\r<br>5. Brasil. Lei nº 13.146/2015 (Lei Brasileira de Inclusão): https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm\r<br>6. OMS. Classificação Internacional de Funcionalidade, Incapacidade e Saúde: https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health\r<br>7. Ministério da Saúde. Notas técnicas e fluxos de reabilitação 2025/2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/notas-tecnicas/notas-tecnicas"
+        ],
+        [
+          "3",
+          "Auditoria desta versão"
+        ],
+        [
+          "p",
+          "<strong>Realizado:</strong> conteúdo original com definição de deficiência, avaliação funcional, organização RCPD/CER, plano centrado na pessoa, reabilitação física e cognitivo-comunicacional, prevenção de complicações, tecnologia assistiva, direitos e saúde integral, 5 casos e 7 questões comentadas.\r\n<strong>Pendente:</strong> literatura especializada de reabilitação comunitária, critérios de rastreamento e evidência de tecnologias específicas, aprofundar escalas e resultados por síndrome, políticas intersetoriais e financiamento, recomendações completas sobre lesões por pressão sem generalizações, benchmark equivalente, ≥60.000 caracteres únicos, revisão especializada, imagens com licença e inspeção PWA.\r\n<strong>Estado verdadeiro:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR. Nenhuma página existente foi alterada."
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,2083 @@
+{
+  "v": 2,
+  "s": "coagulopatias-trombofilias-e-hemoterapia",
+  "t": "Coagulopatias, Trombofilias e Hemoterapia",
+  "p": "Coagulopatias, Trombofilias e Hemoterapia — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Clínica Médica",
+  "m": "Clínica Médica",
+  "h": [
+    "Apostila LURIA",
+    "Coagulopatias, Trombofilias e Hemoterapia",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Clínica Médica",
+      "Matéria: Clínica Médica",
+      "Tema: Coagulopatias, Trombofilias e Hemoterapia"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "etapa-zero-auditoria-comparativa-e-escopo",
+      "Etapa zero — auditoria comparativa e escopo"
+    ],
+    [
+      "objetivos-de-aprendizagem",
+      "Objetivos de aprendizagem"
+    ],
+    [
+      "1-por-que-o-paciente-sangra-e-por-que-nem-todo-coagulograma-alterado-significa-sangramento",
+      "1. Por que o paciente sangra — e por que nem todo coagulograma alterado significa sangramento?"
+    ],
+    [
+      "2-perguntas-da-anamnese-que-mudam-a-hipotese",
+      "2. Perguntas da anamnese que mudam a hipótese"
+    ],
+    [
+      "3-coagulograma-em-contexto-tabela-de-interpretacao",
+      "3. Coagulograma em contexto: tabela de interpretação"
+    ],
+    [
+      "4-hemostasia-especial-e-exames-de-segunda-linha",
+      "4. Hemostasia especial e exames de segunda linha"
+    ],
+    [
+      "5-doenca-de-von-willebrand-dvw",
+      "5. Doença de von Willebrand (DVW)"
+    ],
+    [
+      "6-hemofilias-congenitas",
+      "6. Hemofilias congênitas"
+    ],
+    [
+      "7-plaquetopenias-raciocinio-por-mecanismo",
+      "7. Plaquetopenias: raciocínio por mecanismo"
+    ],
+    [
+      "8-conceito-prevalencia-clinica-e-o-problema-do-rastreio-indiscriminado",
+      "8. Conceito, prevalência clínica e o problema do rastreio indiscriminado"
+    ],
+    [
+      "9-sindrome-antifosfolipide-saf",
+      "9. Síndrome antifosfolípide (SAF)"
+    ],
+    [
+      "10-tev-na-pratica-interface-com-trombofilia",
+      "10. TEV na prática: interface com trombofilia"
+    ],
+    [
+      "11-anticoagulantes-reversao-e-interacoes-criticas",
+      "11. Anticoagulantes, reversão e interações críticas"
+    ],
+    [
+      "12-principio-central-transfundir-por-beneficio-clinico-nao-para-normalizar-papel",
+      "12. Princípio central: transfundir por benefício clínico, não para “normalizar papel”"
+    ],
+    [
+      "13-compatibilidade-abo-rh-e-imuno-hematologia",
+      "13. Compatibilidade ABO/Rh e imuno-hematologia"
+    ],
+    [
+      "14-reacoes-transfusionais-e-hemovigilancia",
+      "14. Reações transfusionais e hemovigilância"
+    ],
+    [
+      "15-transfusao-macica-trauma-e-hemorragia-obstetrica-interface",
+      "15. Transfusão maciça, trauma e hemorragia obstétrica — interface"
+    ],
+    [
+      "16-algoritmo-a-sangramento-sem-causa-obvia",
+      "16. Algoritmo A — Sangramento sem causa óbvia"
+    ],
+    [
+      "17-algoritmo-b-tev-e-duvida-sobre-trombofilia",
+      "17. Algoritmo B — TEV e dúvida sobre trombofilia"
+    ],
+    [
+      "18-algoritmo-c-reacao-transfusional-a-beira-leito",
+      "18. Algoritmo C — Reação transfusional à beira leito"
+    ],
+    [
+      "19-algoritmo-d-hemorragia-macica",
+      "19. Algoritmo D — Hemorragia maciça"
+    ],
+    [
+      "20-perolas-de-prova-e-seguranca",
+      "20. Pérolas de prova e segurança"
+    ],
+    [
+      "21-casos-clinicos-originais-do-laboratorio-a-decisao",
+      "21. Casos clínicos originais: do laboratório à decisão"
+    ],
+    [
+      "22-questoes-autorais-comentadas-estilo-residencia",
+      "22. Questões autorais comentadas — estilo residência"
+    ],
+    [
+      "23-fluxos-de-checagem-independente-dos-casos-e-questoes",
+      "23. Fluxos de checagem independente dos casos e questões"
+    ],
+    [
+      "24-curadoria-de-imagens-propostas-nao-incorporadas",
+      "24. Curadoria de imagens — propostas, não incorporadas"
+    ],
+    [
+      "25-leituras-prioritarias-e-referencias-publicas",
+      "25. Leituras prioritárias e referências públicas"
+    ],
+    [
+      "26-pendencias-bloqueadoras-de-certificacao",
+      "26. Pendências bloqueadoras de certificação"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Apostila 232: Coagulopatias, trombofilias e hemoterapia</h1>"
+        ],
+        [
+          "p",
+          "<strong>Lote 11 · Clínica Médica / Hematologia · Manuscrito autoral ampliado v0.2 · 15/10/2026</strong>"
+        ],
+        [
+          "p",
+          "> <strong>STATUS EDITORIAL: RASCUNHO NÃO CERTIFICADO — NÃO PUBLICAR.</strong> Este material é ensino médico e não substitui protocolos locais, atuação de hematologista, hemoterapeuta e equipes de emergência. Doses e limiares só podem ser transpostos para prescrição após checagem de bula, peso, indicação, disponibilidade, exames, comorbidades e política institucional. Ainda faltam verificação independente, imagens licenciadas, HTML/PWA e aferição de ≥60 mil caracteres didáticos úteis."
+        ]
+      ]
+    ],
+    [
+      "etapa-zero-auditoria-comparativa-e-escopo",
+      0,
+      [
+        [
+          "2",
+          "Etapa zero — auditoria comparativa e escopo"
+        ],
+        [
+          "p",
+          "<strong>Grade LURIA:</strong> a apostila #232 constava pendente no inventário do lote 11. Não havia manuscrito nesse caminho da branch isolada no início desta rodada. A matéria deve ensinar o raciocínio global de <strong>sangramento, trombose e uso racional de sangue</strong> e não recriar integralmente as aulas de anemia falciforme/talassemias (#231), gestação/hemorragia pós-parto, choque/trauma, doença hepática, trombose venosa e emergências oncológicas. Essas áreas entram como interfaces e referências cruzadas."
+        ],
+        [
+          "p",
+          "<strong>Google Drive, materiais efetivamente encontrados e lidos em 15/10/2026, apenas para escopo comparativo:</strong> (1) “04 - HEMATO - PURPURA TROMBOCITOPENICA IMUNE, HEMOFILIA, VON WILLEBRAND.pdf”, ~13.953 caracteres extraídos; (2) “03 - TROMBOFILIAS.pdf”, ~11.160 caracteres, com recorte principalmente obstétrico; (3) “01 - INTRODUCAO AS ANEMIAS.pdf”, ~19.164 caracteres, com seção de hemocomponentes; (4) “04 - HEMORRAGIA POS PARTO.pdf”, referência complementar de emergências. Os arquivos mencionam marcas de redistribuição por terceiros e/ou restrições de comercialização; <strong>a LURIA não copiará texto, estrutura peculiar, figuras ou tabelas desses documentos.</strong> Não há prova de autoria institucional Estratégia MED. O documento de trombofilias é <strong>específico de gestação</strong>, portanto não pode ser apresentado como guia geral de testagem no adulto. O resumo de hemoterapia tem limiares e sugestões que requerem confronto com diretrizes 2023–2026."
+        ],
+        [
+          "p",
+          "<strong>Comparação crítica baseada em fontes públicas atualizadas:</strong>\r<li>Hemofilia e von Willebrand: critérios e terapias atuais devem considerar WFH 2020 e diretrizes ASH/ISTH/NHF/WFH 2021; <strong>desmopressina não é universal</strong>, especialmente na DVW 2B e tipo 3.</li>\r<li>Trombofilias: ASH 2023 recomenda <strong>não investigar indiscriminadamente</strong> trombofilia hereditária após todo TEV, e não fazer rastreio da população geral antes do anticoncepcional combinado. Um teste só se justifica quando muda decisão.</li>\r<li>Plaquetas: AABB/ICTMG <strong>2025</strong> redefiniu limiares em contextos específicos (por exemplo, punção lombar <20 ×10⁹/L, CVC em sítio compressível <10 ×10⁹/L); <strong>não reproduzir como universal os valores mais liberais de resumos antigos</strong>.</li>\r<li>Hemácias: AABB <strong>2023</strong> recomenda estratégia restritiva em pacientes adultos internados e hemodinamicamente estáveis, geralmente considerar transfusão com Hb <7 g/dL; isso não se aplica mecanicamente a choque hemorrágico, situações especiais e toda isquemia ativa.</li>\r<li>Brasil: Ministério da Saúde mantém guia de uso de hemocomponentes e, em 2026, publicou nota específica de <strong>TACO</strong> e regras técnicas novas de hemoterapia. A norma e o protocolo local devem ser conferidos antes de publicação definitiva.</li>"
+        ],
+        [
+          "p",
+          "<strong>Matriz de responsabilidade editorial</strong>"
+        ],
+        [
+          "t",
+          [
+            "Aqui é obrigatório",
+            "Em outra aula deverá ficar aprofundado",
+            "Conexão essencial"
+          ],
+          [
+            [
+              "Hemostasia, coagulograma, sangramento mucoso/profundo e diferencial",
+              "Detalhamento de anemia hemolítica hereditária (#231)",
+              "Hemólise pós-transfusão e paciente politransfundido"
+            ],
+            [
+              "Hemofilias, von Willebrand, PTI, PTT, CIVD, trombocitopenias",
+              "Oncologia e microangiopatias secundárias",
+              "Emergências e encaminhamento"
+            ],
+            [
+              "Trombofilia hereditária, SAF, critérios de testagem",
+              "Trombofilia gestacional em obstetrícia",
+              "Saúde reprodutiva e HBPM na gestação"
+            ],
+            [
+              "Terapia transfusional e hemovigilância",
+              "Choque hemorrágico, HPP, trauma cirúrgico",
+              "Ativar hemoterapia cedo em sangramento maciço"
+            ],
+            [
+              "Seleção de hemoderivados e reversão",
+              "Posologia individual no Bulário LURIA",
+              "Monitorização farmacológica e contraindicações"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "objetivos-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "Objetivos de aprendizagem"
+        ],
+        [
+          "p",
+          "O estudante deverá: (1) distinguir padrão de sangramento por hemostasia primária, secundária, consumo e lesão vascular; (2) interpretar plaquetas, TP/INR, TTPa, fibrinogênio, D-dímero, esfregaço e mistura 1:1; (3) diferenciar hemofilia A/B, doença de von Willebrand e trombocitopenias; (4) reconhecer PTT e CIVD sem retardar intervenção de emergência; (5) decidir <strong>quando não solicitar</strong> painéis de trombofilia; (6) reconhecer SAF e diferenciais; (7) escolher componente sanguíneo conforme necessidade e risco; (8) evitar erros de compatibilidade; (9) reconhecer e manejar reação transfusional; (10) comunicar e planejar hemoterapia segura em condições especiais."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "p",
+          "<h1>PARTE I — FISIOLOGIA, SANGRAMENTO E COAGULOGRAMA</h1>"
+        ]
+      ]
+    ],
+    [
+      "1-por-que-o-paciente-sangra-e-por-que-nem-todo-coagulograma-alterado-significa-sangramento",
+      0,
+      [
+        [
+          "2",
+          "1. Por que o paciente sangra — e por que nem todo coagulograma alterado significa sangramento?"
+        ],
+        [
+          "p",
+          "Hemostasia é resposta organizada que limita perda sanguínea no local de lesão vascular sem promover trombose generalizada. Integra vasoconstrição, adesão/ativação/agregação plaquetária, geração de trombina, formação de fibrina, regulação anticoagulante e fibrinólise. Fatores plasmáticos, endotélio e plaquetas <strong>agem simultaneamente</strong>, de modo que “hemostasia primária” e “secundária” são esquemas didáticos úteis, não duas fases isoladas."
+        ],
+        [
+          "p",
+          "<strong>Padrão clínico tem valor:</strong> epistaxe recorrente, sangramento gengival, petéquias, equimoses e menorragia sugerem doença plaquetária ou von Willebrand; hemartrose, hematomas musculares profundos, hemorragia tardia após cirurgia e sangramento retroperitoneal sugerem deficiência de fator. Contudo, trauma, insuficiência renal, doença hepática, fármacos ou quadro misto podem borrar essa divisão. A gravidade do sangramento <strong>não se deduz apenas da contagem de plaquetas</strong>."
+        ],
+        [
+          "p",
+          "O paciente com INR 1,7 em cirrose avançada não está obrigatoriamente “autoanticoagulado”. A doença hepática reduz proteínas pró-coagulantes e anticoagulantes, com equilíbrio instável que não é capturado por TP/INR. Pode haver risco <strong>de sangrar e de trombosar</strong>. Corrigir INR isolado com plasma sem sangramento ou procedimento apropriado expõe a sobrecarga circulatória, reações e nenhum benefício clínico claro."
+        ],
+        [
+          "3",
+          "1.1 Hemostasia primária: endotélio, VWF e plaquetas"
+        ],
+        [
+          "p",
+          "Lesão vascular expõe matriz subendotelial; <strong>fator de von Willebrand</strong> facilita adesão ao complexo <strong>GPIb-IX-V</strong> da plaqueta. Após ativação, receptores <strong>αIIbβ3 (GPIIb/IIIa)</strong> ligam fibrinogênio/VWF, permitindo agregação entre plaquetas. O tampão inicial sofre estabilização pela fibrina. A redução da quantidade de plaquetas (trombocitopenia) e o defeito funcional de receptores, grânulos ou VWF produzem manifestações diferentes, mas clinicamente sobrepostas."
+        ],
+        [
+          "p",
+          "<strong>Correção de simplificação antiga:</strong> não atribuir adesão mediada por VWF principalmente a “GPIaIIb”. O eixo GPIb–VWF é peça central. GPIIb/IIIa é sobretudo agregação plaquetária. Isso aparece em provas de Glanzmann (defeito αIIbβ3) e Bernard–Soulier (defeito GPIb-IX-V, macrotrombocitopenia)."
+        ],
+        [
+          "3",
+          "1.2 Hemostasia secundária: cascata e modelo celular"
+        ],
+        [
+          "p",
+          "O <strong>fator tecidual</strong> exposto após lesão forma complexo com VIIa, ativando IX e X. Na superfície de plaquetas ativadas, o complexo IXa–VIIIa amplifica ativação de X; Xa–Va produz grande quantidade de trombina a partir de protrombina. A trombina transforma <strong>fibrinogênio (fator I)</strong> em fibrina e ativa fator XIII, que estabiliza a rede. Não confundir trombina com fator VIIa. A cascata clássica de “vias intrínseca/extrínseca” descreve a lógica dos testes laboratoriais, mas o <strong>modelo celular</strong> representa melhor hemostasia fisiológica."
+        ],
+        [
+          "p",
+          "Fatores dependentes de vitamina K: <strong>II, VII, IX, X, proteínas C e S</strong>. Varfarina inibe a regeneração de vitamina K ativa, reduzindo sua gama-carboxilação. Antitrombina controla trombina e Xa, intensificada por heparina; sistema proteína C ativada/proteína S inativa <strong>Va e VIIIa</strong>. Deficiências podem predispor trombose. Fator XII baixo pode prolongar TTPa profundamente sem provocar sangramento significativo; portanto, um TTPa longo não implica automaticamente deficiência hemorrágica."
+        ],
+        [
+          "3",
+          "1.3 Fibrinólise"
+        ],
+        [
+          "p",
+          "Plasminogênio ativado em plasmina degrada fibrina, gerando fragmentos e <strong>D-dímero</strong> quando há fibrina reticulada degradada. D-dímero elevado é <strong>inespecífico</strong>: infecção, câncer, gestação, trauma, pós-operatório e idade influenciam. D-dímero normal, dentro de método apropriado e algoritmo baseado em probabilidade pré-teste, pode ajudar a excluir TEV em pacientes selecionados; ele não deve ser usado sozinho em pacientes de alto risco."
+        ],
+        [
+          "p",
+          "Antifibrinolíticos como ácido tranexâmico bloqueiam ligação do plasminogênio à fibrina e são úteis em <strong>cenários definidos</strong> (por exemplo, trauma precoce/hemorragia pós-parto segundo protocolo), mas <strong>não substituem controle de foco hemorrágico ou fatores deficitários</strong>. Sua administração indiscriminada, sobretudo em hematúria macroscópica do trato urinário superior e algumas condições de trombose/consumo, pode ser perigosa."
+        ]
+      ]
+    ],
+    [
+      "2-perguntas-da-anamnese-que-mudam-a-hipotese",
+      0,
+      [
+        [
+          "2",
+          "2. Perguntas da anamnese que mudam a hipótese"
+        ],
+        [
+          "p",
+          "1. <strong>Sangra desde quando?</strong> História desde infância, procedimentos dentários e cirurgias passadas ajudam a reconhecer predisposição congênita; doença adquirida pode surgir a qualquer idade.\r<br>2. <strong>Onde sangra?</strong> Mucosas/petéquias versus hemartrose/hematoma muscular versus sangramento do sítio de punção.\r<br>3. <strong>Há familiares com quadro semelhante?</strong> Hemofilia ligada ao X e VWD autossômica em muitos tipos; ausência de familiares não exclui mutação nova.\r<br>4. <strong>Há exposição a fármacos?</strong> AAS, clopidogrel, DOACs, varfarina, heparina, AINE, antibióticos selecionados e suplementos com risco hemorrágico.\r<br>5. <strong>Há doença sistêmica?</strong> Sepse, disfunção hepática, uremia, neoplasia, doença autoimune, gravidez, trauma.\r<br>6. <strong>O sangramento mudou?</strong> Mudança abrupta em uma pessoa previamente assintomática sugere anticorpo adquirido, doença sistêmica ou exposição.\r<br>7. <strong>Sangra após procedimentos?</strong> Dentista, extração, parto, cirurgia e trauma prévio fornecem teste clínico “natural” da hemostasia."
+        ],
+        [
+          "p",
+          "História de sangramento menstrual intenso desde a menarca é pista para doença de von Willebrand e outras coagulopatias, mas não exclui causas ginecológicas estruturais. Questionário padronizado de sangramento (BAT) pode ajudar em probabilidade clínica, não substituir ensaios laboratoriais quando há forte suspeita."
+        ]
+      ]
+    ],
+    [
+      "3-coagulograma-em-contexto-tabela-de-interpretacao",
+      0,
+      [
+        [
+          "2",
+          "3. Coagulograma em contexto: tabela de interpretação"
+        ],
+        [
+          "t",
+          [
+            "Plaquetas",
+            "TP/INR",
+            "TTPa",
+            "Hipóteses prioritárias",
+            "O que verificar"
+          ],
+          [
+            [
+              "Baixas isoladamente",
+              "Normal",
+              "Normal",
+              "PTI, fármacos, infecção, hiperesplenismo, pseudotrombocitopenia",
+              "Esfregaço, repetição em citrato se agregados, história"
+            ],
+            [
+              "Normais",
+              "Normal",
+              "Prolongado",
+              "Hemofilia A/B, deficiência XI, heparina, anticoagulante lúpico, inibidor adquirido, deficiência XII",
+              "Mistura, fármacos, fator específico"
+            ],
+            [
+              "Normais",
+              "Prolongado",
+              "Normal",
+              "Deficiência FVII, varfarina precoce, deficiência vitamina K, doença hepática",
+              "Medicamentos, hepatograma, fibrinogênio"
+            ],
+            [
+              "Normais/baixas",
+              "Prolongado",
+              "Prolongado",
+              "CIVD, deficiência de vitamina K grave, hepatopatia, anticoagulante, deficiência via comum",
+              "Fibrinogênio, D-dímero, clínica, fator"
+            ],
+            [
+              "Baixas + esquizócitos",
+              "Muitas vezes normal",
+              "Muitas vezes normal",
+              "PTT/SHU e outras microangiopatias",
+              "Hemólise, creatinina, ADAMTS13, urgência"
+            ],
+            [
+              "Variáveis",
+              "Variável",
+              "Variável",
+              "Hemorragia maciça/diluição e consumo",
+              "Controle do foco, fibrinogênio e tendência temporal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Valores de referência, interferências e sensibilidade dos reagentes variam entre laboratórios. <strong>Nenhuma linha da tabela é diagnóstico definitivo.</strong> Um INR de 2,2 em paciente usando varfarina pode estar dentro de alvo terapêutico conforme indicação, ao passo que o mesmo número em pessoa sem anticoagulação exige investigação."
+        ],
+        [
+          "3",
+          "3.1 Quando repetir e como evitar erro pré-analítico"
+        ],
+        [
+          "p",
+          "Tubos de citrato devem estar corretamente preenchidos, sem contaminação por heparina de cateter; amostra hemolisada ou coagulada pode distorcer resultado. Hematócrito muito elevado pode requerer ajuste de citrato. TTPa anormal durante infusão de heparina pode refletir o anticoagulante, não defeito hereditário. DOACs interferem com testes de coagulação, anticoagulante lúpico e certas dosagens de fatores; interpretar um painel de trombofilia durante uso sem reconhecer interferência é erro frequente."
+        ],
+        [
+          "3",
+          "3.2 Teste de mistura 1:1"
+        ],
+        [
+          "p",
+          "Em TTPa prolongado, mistura com plasma normal ajuda a distinguir <strong>deficiência de fator</strong> (tende a corrigir) de <strong>inibidor</strong> (tende a não corrigir). Alguns inibidores do fator VIII são tempo- e temperatura-dependentes: mistura imediata pode corrigir parcialmente, prolongando após incubação. Anticoagulante lúpico também impede correção em muitas metodologias, mas não é por si sinônimo de sangramento; associa-se mais frequentemente a trombose. Teste de mistura deve ser interpretado com TTPa, drogas, razão de correção e ensaio específico."
+        ],
+        [
+          "3",
+          "3.3 Plaquetas baixas e sinais que exigem urgência"
+        ],
+        [
+          "p",
+          "Com plaquetopenia, procurar sangramento importante, alteração neurológica, icterícia/hemólise, insuficiência renal, febre, gestação e uso recente de heparina. <strong>PTT</strong> pode ocorrer sem a clássica pêntade de febre, insuficiência renal, sintomas neurológicos, trombocitopenia e anemia hemolítica. O atraso na plasmaférese por esperar os cinco achados é um erro de alto risco."
+        ],
+        [
+          "p",
+          "<strong>Pseudotrombocitopenia por EDTA</strong> é hipótese em plaquetas inesperadamente baixas sem manifestação; confirmar com lâmina, repetição em tubo apropriado e contagem alternativa antes de tratamento imunossupressor ou transfusão desnecessária, mantendo atenção a pacientes realmente graves."
+        ]
+      ]
+    ],
+    [
+      "4-hemostasia-especial-e-exames-de-segunda-linha",
+      0,
+      [
+        [
+          "2",
+          "4. Hemostasia especial e exames de segunda linha"
+        ],
+        [
+          "p",
+          "<li><strong>VWF antígeno e atividade</strong>: quantidade e função. Resultado é influenciado por estresse, inflamação, gravidez, grupo ABO e idade.</li>\r<li><strong>FVIII, FIX, FXI</strong>: avaliar suspeita clínica de deficiência com TTPa prolongado ou quadro típico; TTPa pode ser normal em deficiência leve.</li>\r<li><strong>Fibrinogênio funcional (Clauss)</strong>: essencial na hemorragia de grande porte, CIVD e contexto obstétrico.</li>\r<li><strong>Tempo de trombina</strong>: avalia transformação fibrinogênio–fibrina e pode ser alterado por heparina e inibidores diretos da trombina.</li>\r<li><strong>D-dímero</strong>: degradação de fibrina, não marcador específico de trombose confirmada.</li>\r<li><strong>Anti-Xa</strong>: monitoração de situações selecionadas de heparina/HBPM, não exame universal em todo uso de enoxaparina.</li>\r<li><strong>Agregometria e testes plaquetários</strong>: para defeitos qualitativos em serviços especializados.</li>\r<li><strong>ADAMTS13 atividade/inibidor</strong>: confirmação de PTT, mas <strong>não esperar resultado em suspeita clínica alta para iniciar plasmaférese</strong>.</li>\r<li><strong>Anticorpos antifosfolípides</strong>: anticoagulante lúpico, anticardiolipina IgG/IgM e anti-β2-glicoproteína I IgG/IgM, com persistência temporal e interpretação clínica.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "p",
+          "<h1>PARTE II — COAGULOPATIAS E TROMBOCITOPENIAS</h1>"
+        ]
+      ]
+    ],
+    [
+      "5-doenca-de-von-willebrand-dvw",
+      0,
+      [
+        [
+          "2",
+          "5. Doença de von Willebrand (DVW)"
+        ],
+        [
+          "p",
+          "DVW é distúrbio hemorrágico hereditário frequente e heterogêneo; fator de von Willebrand medeia adesão plaquetária e estabiliza FVIII. Pode manifestar-se por sangramento menstrual intenso, epistaxe recorrente, equimoses e hemorragia pós-extração dentária ou cirurgia. <strong>TP e TTPa normais não excluem DVW</strong>, especialmente tipo 1; TTPa pode estar prolongado quando FVIII está reduzido."
+        ],
+        [
+          "3",
+          "5.1 Tipos e interpretação"
+        ],
+        [
+          "t",
+          [
+            "Tipo",
+            "Mecanismo",
+            "Pista laboratorial/terapêutica"
+          ],
+          [
+            [
+              "1",
+              "Deficiência quantitativa parcial",
+              "Antígeno/atividade diminuídos; desmopressina pode funcionar conforme resposta"
+            ],
+            [
+              "1C",
+              "Maior depuração do VWF",
+              "Queda precoce após DDAVP; resposta curta exige plano"
+            ],
+            [
+              "2A",
+              "Defeito qualitativo, perda de multímeros de alto peso",
+              "Atividade proporcionalmente menor que antígeno"
+            ],
+            [
+              "2B",
+              "Maior interação com GPIb plaquetária",
+              "Plaquetopenia possível; <strong>evitar DDAVP</strong> em geral"
+            ],
+            [
+              "2M",
+              "Defeito funcional sem perda clássica de multímeros",
+              "Diferencial pela relação atividade/antígeno"
+            ],
+            [
+              "2N",
+              "Defeito de ligação VWF–FVIII",
+              "Pode imitar hemofilia A"
+            ],
+            [
+              "3",
+              "Deficiência quantitativa grave",
+              "Sangramento grave e FVIII baixo; requer VWF concentrado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Critério ASH/ISTH/NHF/WFH 2021:</strong> no tipo 1, VWF <0,30 UI/mL independentemente de sangramento e <0,50 UI/mL em pessoa com sangramento anormal permitem confirmação no contexto adequado; teste deve ocorrer quando paciente estiver em estado basal de saúde, porque VWF sobe na inflamação e gravidez. <strong>Não interpretar um resultado isolado sem repetir/confirmar quando necessário.</strong>"
+        ],
+        [
+          "3",
+          "5.2 Como investigar"
+        ],
+        [
+          "p",
+          "Anamnese estruturada, hemograma, TP/TTPa, VWF:Ag, atividade plaquetária dependente de VWF e FVIII. Conforme resultados, analisar razão atividade/antígeno, multímeros, RIPA, ligação de FVIII e eventual genética. A DVW 2N pode apresentar FVIII muito baixo com VWF aparentemente normal, mimetizando hemofilia A. Avaliação laboratorial deve ocorrer em serviço com expertise."
+        ],
+        [
+          "3",
+          "5.3 Tratamento didático"
+        ],
+        [
+          "p",
+          "<strong>Desmopressina (DDAVP)</strong> promove liberação endotelial de VWF e FVIII; pode beneficiar principalmente DVW tipo 1 em pacientes responsivos. Resposta deve ser confirmada/estimada com base em subtipagem e teste de resposta quando recomendado. Ela é <strong>contraindicada/ineficaz</strong> em tipo 3 e geralmente contraindicada em tipo 2B; restrições adicionais incluem cardiopatia ativa, hiponatremia, risco de convulsão e crianças pequenas. Monitorar balanço hídrico e risco de hiponatremia; repetição pode causar taquifilaxia."
+        ],
+        [
+          "p",
+          "Ácido tranexâmico pode ser útil em sangramento mucoso selecionado; ponderar trombose, trato urinário e contexto clínico. <strong>Concentrados de VWF</strong> são indicados em formas graves, em muitos tipos 2, cirurgias e quando DDAVP não é opção. Os alvos perioperatórios de VWF/FVIII dependem do procedimento, e uso prolongado de fator exige monitorização de trombose. Não é seguro ensinar “DDAVP para qualquer DVW”."
+        ]
+      ]
+    ],
+    [
+      "6-hemofilias-congenitas",
+      0,
+      [
+        [
+          "2",
+          "6. Hemofilias congênitas"
+        ],
+        [
+          "p",
+          "<strong>Hemofilia A</strong> = deficiência de fator VIII; <strong>hemofilia B</strong> = deficiência de fator IX. Herança clássica é ligada ao X, mas mulheres/carreadoras podem ter sangramento e deficiência de fator; ausência de história familiar não exclui doença por mutação de novo. A expressão “hemofilia C” pode designar deficiência de XI, que não segue simplesmente o mesmo padrão de herança ou prognóstico de A/B."
+        ],
+        [
+          "3",
+          "6.1 Gravidade e apresentações"
+        ],
+        [
+          "t",
+          [
+            "Atividade basal de fator",
+            "Classificação convencional",
+            "Apresentação provável"
+          ],
+          [
+            [
+              "<1%",
+              "Grave",
+              "Hemartrose e sangramento espontâneo"
+            ],
+            [
+              "1–5%",
+              "Moderada",
+              "Sangramento após traumas menores ou espontâneo em alguns"
+            ],
+            [
+              ">5% e <40%",
+              "Leve",
+              "Sangramento com cirurgia, extração, trauma; diagnóstico tardio possível"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Hemartrose repetida lesa sinovial/cartilagem, produz artrite hemofílica crônica; hemorragias profundas e intracranianas ameaçam vida. Paciente com dor de articulação e limitação recente pode ter hemartrose mesmo com edema discreto. Nunca atrasar reposição apropriada de fator em suspeita de hemorragia craniana aguardando tomografia, sobretudo se o paciente já tem diagnóstico e plano de emergência."
+        ],
+        [
+          "3",
+          "6.2 Investigação e confirmação"
+        ],
+        [
+          "p",
+          "TTPa pode ser prolongado, com TP/plaquetas normais; exame não exclui deficiência leve. Dosar FVIII, FIX; investigar VWF quando FVIII baixo ou fenótipo sugestivo. Em hemofilia adquirida, inibidor de FVIII surge frequentemente sem história pessoal/familiar, por exemplo em idosos, puerpério, doença autoimune ou malignidade, causando hematomas extensos e sangramento grave, TTPa isoladamente prolongado e mistura não corrigida após incubação. Confirmar com atividade de FVIII e ensaio de inibidor (Bethesda); tratamento em centro especializado."
+        ],
+        [
+          "3",
+          "6.3 Profilaxia versus tratamento episódico"
+        ],
+        [
+          "p",
+          "Na doença grave, profilaxia de fator VIII/IX individualizada é padrão de cuidado para prevenir hemorragias e artropatia, com escolha conforme fenótipo, acesso e produto. Emicizumabe é anticorpo biespecífico que mimetiza função de cofator do FVIIIa, <strong>não</strong> é FVIII: não substitui fator VIII em dosagens, altera interpretação de TTPa e de alguns ensaios de FVIII e tem uso específico conforme regulamentação. No Brasil, o Ministério da Saúde dispõe de protocolo atualizado em outubro de 2024 para hemofilia A moderada/grave com inibidores de FVIII."
+        ],
+        [
+          "p",
+          "<strong>Paciente com emicizumabe e sangramento:</strong> discutir agente hemostático com centro de hemofilia. Associar <strong>concentrado de complexo protrombínico ativado (aPCC)</strong> de forma indiscriminada pode aumentar risco de trombose e microangiopatia; há preferência por rFVIIa em muitos contextos de sangramento com inibidor, conforme orientação especializada. É situação de segurança crítica e não pode ser resumida por “repor FVIII sempre”."
+        ],
+        [
+          "3",
+          "6.4 Urgências hemofílicas"
+        ],
+        [
+          "p",
+          "Sinais de alerta: cefaleia intensa/trauma craniano, rebaixamento, dor abdominal ou lombar com instabilidade, hemorragia cervical/orofaríngea, dispneia, dor muscular com neurovascular comprometido, hematúria grave. ABCDE, acesso, contato imediato com hematologia, reposição hemostática conforme cartão/serviço e imagem sem atrasar fator quando necessário. Avaliar inibidor conhecido, profilaxia, última dose, produto disponível e histórico de reação."
+        ],
+        [
+          "p",
+          "<strong>Atenção:</strong> fórmula empírica de UI/kg baseada em elevação desejada do fator depende do concentrado, recuperação individual, meia-vida e idade. Não usar uma “fórmula de hemofilia A” para fator IX, formulações de longa duração ou paciente com inibidor. O tratamento deve ser escrito a partir do produto e plano de emergência do centro."
+        ]
+      ]
+    ],
+    [
+      "7-plaquetopenias-raciocinio-por-mecanismo",
+      0,
+      [
+        [
+          "2",
+          "7. Plaquetopenias: raciocínio por mecanismo"
+        ],
+        [
+          "p",
+          "Trombocitopenia pode derivar de menor produção medular, maior destruição/consumo periférico, sequestro esplênico ou diluição; coexistências são comuns. Interpretar tendência, grau de queda, outras séries do hemograma e esfregaço. Três urgências que não podem ser confundidas: <strong>PTT/microangiopatia</strong>, <strong>CIVD</strong> e <strong>trombocitopenia induzida por heparina (HIT)</strong>. PTI também pode ter sangramento grave, mas seu manejo é diferente."
+        ],
+        [
+          "3",
+          "7.1 Trombocitopenia imune (PTI)"
+        ],
+        [
+          "p",
+          "PTI é diagnóstico clínico por exclusão razoável, usualmente plaquetas <100×10⁹/L, com redução periférica imunomediada e prejuízo de produção. Pode ter petéquias e sangramento mucoso ou ser assintomática. Crianças podem recuperar-se espontaneamente após quadro viral; adultos frequentemente têm curso diferente. <strong>Não indicar tratamento apenas porque há plaquetas abaixo de 100 mil.</strong>"
+        ],
+        [
+          "p",
+          "Esfregaço/hemograma ajudam a excluir agregados de plaquetas, blastos, anemia hemolítica microangiopática e doença medular. Fármacos, hepatites, HIV, doenças autoimunes, câncer e doença hepática podem gerar plaquetopenias secundárias. A necessidade de mielograma depende de atipias, não é obrigatória em toda suspeita clássica."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> observar quando risco hemorrágico é baixo e não há sangramento importante, conforme idade, sintomas, contagem e segurança. Corticosteroides e imunoglobulina são opções em contexto apropriado; na hemorragia ameaçadora à vida, avaliação emergencial, controle do foco, corticosteroide/IVIG e transfusão de plaquetas <strong>como suporte hemostático</strong>, sem esperar que plaquetas isoladas resolvam mecanismo autoimune. No longo prazo, agonistas do receptor da trombopoietina, rituximabe e esplenectomia são opções selecionadas com riscos próprios."
+        ],
+        [
+          "p",
+          "<strong>Evitar erro de resumo antigo:</strong> o limiar “<20 mil = tratar toda criança” não é uma regra universal; os consensos enfatizam intensidade do sangramento, contexto, possibilidade de acompanhamento e qualidade de vida."
+        ],
+        [
+          "3",
+          "7.2 Púrpura trombocitopênica trombótica (PTT)"
+        ],
+        [
+          "p",
+          "PTT é microangiopatia trombótica decorrente de deficiência grave de <strong>ADAMTS13</strong> (adquirida por autoanticorpos na forma imune ou congênita por variantes bialélicas). Multímeros ultralongos de VWF desencadeiam microtrombos plaquetários, consumo de plaquetas, anemia hemolítica microangiopática e isquemia orgânica."
+        ],
+        [
+          "p",
+          "<strong>Suspeitar:</strong> plaquetopenia + esquizócitos/provas de hemólise, com ou sem alteração neurológica, renal, cardíaca e febre. TP e TTPa podem ser normais. PLASMIC score pode apoiar probabilidade, não justificar atraso terapêutico. Colher plasma para ADAMTS13 antes da plasmaférese <strong>se não atrasar tratamento</strong>."
+        ],
+        [
+          "p",
+          "<strong>Conduta emergencial:</strong> troca plasmática terapêutica urgente e corticosteroide; considerar caplacizumabe e rituximabe conforme protocolo/expertise. Diretriz ISTH <strong>2025</strong> preservou esquema essencial para PTT imune e expandiu recomendação de ADAMTS13 recombinante em PTT congênita quando disponível. <strong>Evitar transfusão rotineira de plaquetas</strong> em PTT sem hemorragia de risco de vida ou indicação procedimental crítica, por possibilidade de piorar trombose."
+        ],
+        [
+          "3",
+          "7.3 Síndrome hemolítico-urêmica e outras microangiopatias"
+        ],
+        [
+          "p",
+          "A tríade anemia hemolítica microangiopática, trombocitopenia e lesão renal aguda sugere <strong>síndrome hemolítico-urêmica (SHU)</strong>, mas existem formas relacionadas à toxina Shiga, ativação do complemento, gravidez e medicamentos. Investigar antecedente diarréico, insuficiência renal, diarreia sanguinolenta, drogas e contexto obstétrico. Não assumir que toda microangiopatia exige a mesma plasmaférese usada na PTT; avaliação precoce de nefrologia/hematologia determina tratamento etiológico, suporte e terapias específicas."
+        ],
+        [
+          "3",
+          "7.4 Coagulação intravascular disseminada (CIVD)"
+        ],
+        [
+          "p",
+          "CIVD é ativação sistêmica da coagulação em contexto de doença aguda, com geração de trombina/fibrina, disfunção microcirculatória, consumo de fatores e plaquetas e, frequentemente, fibrinólise alterada. <strong>Não é doença primária</strong>: sepse, neoplasias (incluindo leucemia promielocítica aguda), trauma grave, complicações obstétricas e outros gatilhos exigem busca imediata."
+        ],
+        [
+          "p",
+          "Laboratório: plaquetopenia em queda, TP prolongado, fibrinogênio reduzido ou em declínio, D-dímero elevado e fatores de risco presentes; <strong>fibrinogênio pode estar normal no início</strong>, como reagente de fase aguda. Interpretar evolução temporal e usar escore ISTH quando aplicável. Terapia primária é corrigir causa; produtos hemostáticos só são escolhidos por sangramento, procedimento, fibrinogênio/plaquetas e plano da equipe, evitando “plasma para normalizar todos os números”."
+        ],
+        [
+          "t",
+          [
+            "Aspecto",
+            "PTT",
+            "CIVD"
+          ],
+          [
+            [
+              "Principal processo",
+              "Microtrombos ricos em plaquetas por deficiência ADAMTS13",
+              "Coagulação sistêmica desencadeada por doença de base"
+            ],
+            [
+              "Hemólise por esquizócitos",
+              "Frequente",
+              "Pode ocorrer, mas variável"
+            ],
+            [
+              "TP/TTPa",
+              "Frequentemente normais",
+              "Frequentemente prolongados"
+            ],
+            [
+              "Fibrinogênio",
+              "Habitualmente preservado",
+              "Pode cair, sobretudo com evolução"
+            ],
+            [
+              "Tratamento imediato",
+              "Plasmaférese + imunossupressão na forma imune",
+              "Controle de causa + suporte hemostático dirigido"
+            ],
+            [
+              "Plaquetas",
+              "Evitar rotina sem indicação crítica",
+              "Considerar conforme sangramento/procedimento"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "7.5 Trombocitopenia induzida por heparina (HIT)"
+        ],
+        [
+          "p",
+          "HIT imunológica envolve anticorpos contra complexos PF4–heparina, causando <strong>alto risco trombótico apesar de contagem baixa</strong>. A queda típica começa 5–10 dias após início de heparina, mas pode ocorrer mais cedo com exposição recente. Queda relativa >50% é sugestiva mesmo sem plaquetas abaixo de 150 mil. Trombose nova, necrose cutânea no local e reação após bolus reforçam suspeita."
+        ],
+        [
+          "p",
+          "<strong>4Ts:</strong> magnitude da trombocitopenia, temporalidade, trombose e outras causas. Baixa probabilidade torna HIT improvável; probabilidade intermediária/alta justifica suspender <strong>todas</strong> as fontes de heparina (inclusive flush) e iniciar anticoagulante <strong>não heparínico</strong>, conforme sangramento/órgãos e equipe. Testar anticorpo PF4–heparina e, quando disponível, ensaio funcional. <strong>Trocar HNF por enoxaparina é erro</strong>, pois ambas podem participar de HIT. Não esperar normalização da plaqueta para considerar risco trombótico."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "p",
+          "<h1>PARTE III — TROMBOFILIAS E ESTADOS PRÓ-TROMBÓTICOS</h1>"
+        ]
+      ]
+    ],
+    [
+      "8-conceito-prevalencia-clinica-e-o-problema-do-rastreio-indiscriminado",
+      0,
+      [
+        [
+          "2",
+          "8. Conceito, prevalência clínica e o problema do rastreio indiscriminado"
+        ],
+        [
+          "p",
+          "Trombofilia é predisposição hereditária ou adquirida a trombose, predominantemente venosa em grande parte das trombofilias hereditárias clássicas. A probabilidade de evento depende de interação com idade, cirurgia, imobilização, câncer, estrogênio, gravidez, puerpério, obesidade, infecção e doenças crônicas. Um resultado genético <strong>não é destino individual nem igual a indicação vitalícia de anticoagulação</strong>."
+        ],
+        [
+          "p",
+          "A pergunta antes do teste é: <strong>o resultado mudará duração da anticoagulação, profilaxia futura, contracepção/reprodução ou decisão para familiar em risco?</strong> Se a resposta é não, a investigação pode produzir ansiedade e custos sem benefício. Em episódio claramente provocado por cirurgia, a duração de tratamento geralmente depende do fator transitório e do risco de recidiva, não de painel amplo feito por rotina. Em TEV não provocado, a decisão de manutenção muitas vezes já se baseia no risco clínico; teste pode não mudar tratamento."
+        ],
+        [
+          "3",
+          "8.1 Principais trombofilias hereditárias"
+        ],
+        [
+          "t",
+          [
+            "Trombofilia",
+            "Defeito",
+            "Ponto clínico"
+          ],
+          [
+            [
+              "Fator V Leiden (F5)",
+              "Resistência do fator Va à proteína C ativada",
+              "Aumenta risco de TEV; impacto varia com zigosidade e fatores adquiridos"
+            ],
+            [
+              "Protrombina G20210A (F2)",
+              "Aumento de protrombina",
+              "Risco aumentado de TEV, não “teste de INR”"
+            ],
+            [
+              "Deficiência de antitrombina",
+              "Menor inibição de trombina/Xa",
+              "Em formas hereditárias selecionadas, risco importante; distinguir consumo e perda renal"
+            ],
+            [
+              "Deficiência de proteína C",
+              "Menor inativação de Va e VIIIa",
+              "Dependente de vitamina K; valores alterados em anticoagulação/estado agudo"
+            ],
+            [
+              "Deficiência de proteína S",
+              "Redução do cofator de proteína C",
+              "Fração livre importante; reduzida em gestação e estados inflamatórios"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Erro conceitual comum:</strong> dividir todas em “alto” e “baixo” risco apenas pelo nome, como se deficiência de antitrombina fosse de baixo risco por heterozigose. A classificação varia conforme variante, história de TEV, família e contexto. <strong>Heterozigose Fator V Leiden</strong> é geralmente risco relativo menor que deficiência de antitrombina, mas não prevê isoladamente um evento."
+        ],
+        [
+          "3",
+          "8.2 Quando testar — ASH 2023"
+        ],
+        [
+          "p",
+          "A diretriz ASH 2023, fundada em modelos e evidências frequentemente de baixa certeza, sugere <strong>testar apenas em cenários selecionados</strong> quando isso muda conduta: TEV associado a fator de risco transitório <strong>não cirúrgico maior ou hormonal</strong> em contextos definidos; trombose venosa cerebral/esplâncnica se anticoagulação seria interrompida; familiares de pacientes com deficiências de antitrombina, proteína C ou S em decisões selecionadas de profilaxia e estrogênio; gravidez com história familiar de trombofilia de alto risco; determinados cenários de câncer e familiares."
+        ],
+        [
+          "p",
+          "Em contraste, a ASH recomenda <strong>contra rastrear a população geral antes de anticoncepcional combinado</strong> e sugere não testar <strong>TEV não provocado somente para decidir duração da anticoagulação</strong>, quando o padrão de cuidado já aponta continuidade clínica. A decisão pode variar com avaliação especializada, doença rara e recursos disponíveis."
+        ],
+        [
+          "3",
+          "8.3 Quando NÃO testar e as armadilhas do timing"
+        ],
+        [
+          "p",
+          "<li>Na fase aguda do TEV, quando proteína C/S e antitrombina podem estar alteradas por doença/consumo;</li>\r<li>Durante varfarina para interpretar proteína C/S, porque são dependentes de vitamina K;</li>\r<li>Em paciente recebendo DOACs sem metodologia laboratorial que controle interferência, sobretudo anticoagulante lúpico;</li>\r<li>Na gestação, para interpretar proteína S com corte não adaptado;</li>\r<li>Sem plano clínico que dependa do resultado;</li>\r<li>Em busca de causa para trombose <strong>arterial</strong> inespecífica sem suspeita de SAF/outros mecanismos;</li>\r<li>Por solicitação universal em toda mulher com perda gestacional isolada e sem critérios relevantes.</li>"
+        ],
+        [
+          "p",
+          "Testes genéticos para F5 Leiden/F2 G20210A não sofrem a mesma interferência da anticoagulação, mas a <strong>indicação de pedir</strong> continua dependente do impacto na decisão."
+        ]
+      ]
+    ],
+    [
+      "9-sindrome-antifosfolipide-saf",
+      0,
+      [
+        [
+          "2",
+          "9. Síndrome antifosfolípide (SAF)"
+        ],
+        [
+          "p",
+          "SAF é doença autoimune associada a tromboses venosas, arteriais e complicações obstétricas selecionadas, com anticorpos antifosfolípides persistentes. Pode ocorrer isoladamente ou associada a lúpus. Manifestações possíveis: TEV, AVC em paciente jovem, livedo, trombocitopenia, alterações valvares e eventos de microvasculopatia; nenhum sinal isolado é diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>Pesquisa laboratorial:</strong> anticoagulante lúpico, anticardiolipina IgG/IgM e anti-β2-glicoproteína I IgG/IgM; positividade persistente em <strong>pelo menos duas amostras com intervalo ≥12 semanas</strong>. Perfil triplo positivo, títulos e evento clínico influenciam risco. Anticorpo transitório durante infecção não prova SAF, e anticoagulante lúpico prolonga testes in vitro embora esteja associado a trombose <em>in vivo</em>."
+        ],
+        [
+          "p",
+          "<strong>Critérios de classificação versus diagnóstico:</strong> critérios de Sydney (2006) e ACR/EULAR 2023 servem a uniformização científica e podem apoiar raciocínio, mas <strong>não devem ser usados isoladamente como substituto de julgamento clínico</strong>. Um exame positivo sem evento não equivale a “SAF trombótica”. Investigar fatores tradicionais e descartar outras causas."
+        ],
+        [
+          "3",
+          "9.1 Tratamento trombótico e segurança dos DOACs"
+        ],
+        [
+          "p",
+          "Em SAF trombótica de alto risco, especialmente tripla positividade e/ou evento arterial, <strong>antagonista da vitamina K (varfarina)</strong> é a escolha padrão em diretrizes como EULAR; <strong>rivaroxabana não deve ser utilizada em SAF triplo-positiva</strong>, dada evidência de recidiva, sobretudo arterial. Em primeiro TEV não provocado associado à SAF, recomenda-se anticoagulação prolongada individualizada com INR alvo frequentemente 2–3. Não aumentar alvo de INR ou acrescentar antiagregante de forma automática — sangramento e local do evento importam."
+        ],
+        [
+          "3",
+          "9.2 SAF obstétrica"
+        ],
+        [
+          "p",
+          "O detalhamento gestacional pertence à apostila obstétrica correspondente, mas aqui o estudante deve reconhecer que evento trombótico prévio, perda fetal/restrições placentárias e perfil de anticorpos mudam o manejo. Diretrizes EULAR incluem associação <strong>AAS baixa dose + heparina profilática</strong> em muitas pessoas com SAF obstétrica; quem já teve trombose pode necessitar anticoagulação plena durante gestação, sob avaliação especializada. <strong>Varfarina e DOACs não são substitutos rotineiros de HBPM durante gravidez</strong>, considerando efeitos fetais e contexto. Não prescrever enoxaparina terapêutica para toda gestante “com mutação”, independentemente de história clínica."
+        ]
+      ]
+    ],
+    [
+      "10-tev-na-pratica-interface-com-trombofilia",
+      0,
+      [
+        [
+          "2",
+          "10. TEV na prática: interface com trombofilia"
+        ],
+        [
+          "p",
+          "<strong>Trombose venosa profunda:</strong> dor/edema unilateral, sinais inespecíficos; investigação por probabilidade pré-teste e ultrassom compressivo, com D-dímero em contexto apropriado. <strong>Embolia pulmonar:</strong> dispneia, dor pleurítica, taquicardia, hipoxemia e, em apresentações graves, choque. Instabilidade exige condução imediata e estratificação de risco, não apenas painel de trombofilia."
+        ],
+        [
+          "p",
+          "Distinguir evento provocado por fator transitório relevante, não provocado e associação a câncer/condição persistente ajuda mais que genética para duração inicial da anticoagulação. Pesquisar trombofilia seletivamente <strong>depois</strong> do manejo de evento e análise do impacto da informação."
+        ]
+      ]
+    ],
+    [
+      "11-anticoagulantes-reversao-e-interacoes-criticas",
+      0,
+      [
+        [
+          "2",
+          "11. Anticoagulantes, reversão e interações críticas"
+        ],
+        [
+          "t",
+          [
+            "Classe",
+            "Mecanismo",
+            "Monitorização",
+            "Questão de segurança"
+          ],
+          [
+            [
+              "HNF",
+              "Potencia antitrombina contra IIa/Xa",
+              "TTPa ou anti-Xa conforme protocolo",
+              "HIT, sangramento, ajuste rápido; reversão com protamina"
+            ],
+            [
+              "HBPM (enoxaparina)",
+              "Via antitrombina, maior ação anti-Xa",
+              "Geralmente não precisa anti-Xa rotineiro; contextos selecionados",
+              "Função renal, peso, gestação e HIT"
+            ],
+            [
+              "Varfarina",
+              "Diminui síntese de fatores II/VII/IX/X e proteínas C/S",
+              "INR",
+              "Interações, alimentação, início/término; reversão conforme gravidade"
+            ],
+            [
+              "Dabigatrana",
+              "Inibidor direto da trombina",
+              "Sem INR para medir efeito",
+              "Reversor específico (idarucizumabe) em indicações aprovadas"
+            ],
+            [
+              "Apixabana/rivaroxabana",
+              "Inibem Xa",
+              "INR não quantifica efeito",
+              "Ajuste por indicação/função renal/interações; reversão depende de acesso/protocolo"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Em hemorragia crítica sob varfarina, reversão urgente pode exigir <strong>complexo protrombínico de 4 fatores + vitamina K IV</strong> quando indicado e disponível, com atendimento do foco; PFC não é substituto equivalente em todo cenário. DOAC tem estratégias específicas, e não se deve usar INR normal para excluir anticoagulação farmacológica significativa. A escolha de antagonista não depende apenas do nome do fármaco: hora da última dose, função renal e gravidade importam."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "p",
+          "<h1>PARTE IV — HEMOTERAPIA, COMPONENTES E SEGURANÇA</h1>"
+        ]
+      ]
+    ],
+    [
+      "12-principio-central-transfundir-por-beneficio-clinico-nao-para-normalizar-papel",
+      0,
+      [
+        [
+          "2",
+          "12. Princípio central: transfundir por benefício clínico, não para “normalizar papel”"
+        ],
+        [
+          "p",
+          "Transfusão é intervenção com riscos infecciosos residuais, imunológicos, volumétricos e metabólicos. A decisão exige <strong>indicação, benefício esperado, alternativa viável e plano de monitorização</strong>. O mesmo valor de hemoglobina significa coisas diferentes em paciente estável, hemorragia ativa com choque, síndrome coronariana e doença falciforme. Uma bolsa não trata o sangramento causal. Em paciente estável, considerar unidade a unidade de hemácias, reavaliando clínica e Hb quando apropriado."
+        ],
+        [
+          "p",
+          "<strong>Termos:</strong> hemocomponentes (hemácias, plaquetas, plasma, crioprecipitado, derivados de sangue total por processamento de serviços de hemoterapia) versus hemoderivados industrializados (albumina, imunoglobulina e concentrados de fator, conforme origem/processamento). Misturar as categorias causa erros de prescrição e logística."
+        ],
+        [
+          "3",
+          "12.1 Antes da transfusão"
+        ],
+        [
+          "p",
+          "Confirmação de identidade do paciente, indicação, autorização/consentimento conforme cenário, tipo ABO/RhD, pesquisa de anticorpos irregulares e prova de compatibilidade quando aplicável; verificação independente à beira leito conforme protocolo. Conferir número e rótulo da bolsa, validade, aspecto, condições de armazenamento, compatibilidade, acesso e equipo adequados; registrar sinais vitais antes, durante e após segundo norma local. <strong>Erro de identificação é causa evitável de hemólise aguda grave.</strong>"
+        ],
+        [
+          "3",
+          "12.2 Concentrado de hemácias (CH)"
+        ],
+        [
+          "p",
+          "<strong>Objetivo:</strong> elevar capacidade de transporte de oxigênio, não volume circulante de forma isolada. No adulto sem sangramento ativo, uma unidade costuma elevar Hb em torno de 1 g/dL, com variação por tamanho, volume, perdas e hemodiluição. <strong>AABB 2023:</strong> para adulto hospitalizado hemodinamicamente estável, considerar transfusão geralmente quando Hb <7 g/dL; cirurgia cardíaca pode adotar 7,5 g/dL; cirurgia ortopédica ou doença cardiovascular preexistente, 8 g/dL, conforme contexto. Essas são <strong>faixas de decisão, não ordens automáticas</strong>. Hemorragia maciça, isquemia ativa, sintomas graves e populações específicas exigem protocolos próprios."
+        ],
+        [
+          "p",
+          "No choque hemorrágico, Hb inicial pode estar falsamente tranquilizadora antes de redistribuição de líquidos; conduta considera perfusão, pressão, frequência, lactato, sangramento e resposta à ressuscitação. <strong>Não atrasar transfusão e controle de hemorragia maciça porque a Hb “ainda está normal”.</strong>"
+        ],
+        [
+          "3",
+          "12.3 Concentrado de plaquetas"
+        ],
+        [
+          "p",
+          "As diretrizes AABB/ICTMG <strong>2025</strong> apresentam estratégia restritiva conforme população, não uma tabela universal. Exemplos:\r<li>Trombocitopenia hipoproliferativa após quimioterapia/transplante alogênico sem sangramento: profilaxia em geral se <strong><10 ×10⁹/L</strong>.</li>\r<li>Punção lombar em contextos da diretriz: sugerir transfusão se <strong><20 ×10⁹/L</strong> (nova orientação, diferente de recomendações antigas de 50).</li>\r<li>Cateter venoso central em adulto, sítio compressível: limiar condicional <strong><10 ×10⁹/L</strong>, ponderando técnica e cenário.</li>\r<li>Cirurgia maior não neuraxial em adulto: em geral <strong><50 ×10⁹/L</strong>.</li>\r<li>Trombocitopenia de consumo por dengue <strong>sem hemorragia maior</strong>: não recomendar transfusão profilática baseada só na contagem.</li>\r<li>Hemorragia intracraniana não operatória com plaquetas <strong>>100×10⁹/L</strong> em adultos não trombocitopênicos, incluindo usuários de antiagregantes: não recomendar plaquetas rotineiramente.</li>"
+        ],
+        [
+          "p",
+          "<strong>Não extrapolar</strong> essas recomendações a neurocirurgia, anestesia neuraxial, ECMO, hemorragia crítica, PTT ou PTI sem avaliação específica. Em PTI, a sobrevida transfundida pode ser curta; na PTT, plaquetas podem agravar microtrombose; em sangramento maior, entretanto, a indicação muda."
+        ],
+        [
+          "3",
+          "12.4 Plasma fresco congelado (PFC)"
+        ],
+        [
+          "p",
+          "Contém diversos fatores plasmáticos de coagulação e pode ser necessário em <strong>coagulopatia com sangramento relevante</strong> ou em cenários selecionados de procedimento, além de reposição em troca plasmática. PFC não contém plaquetas em dose terapêutica, não serve para repor hemácias e <strong>não deve ser empregado apenas para “aumentar albumina” ou “corrigir INR leve” em paciente estável</strong>. Seu volume pode causar TACO, especialmente em cardiopatas, renais e idosos. Quando existe concentrado específico mais seguro/eficaz, pode ser preferível conforme indicação."
+        ],
+        [
+          "3",
+          "12.5 Crioprecipitado e fibrinogênio"
+        ],
+        [
+          "p",
+          "Crioprecipitado fornece principalmente fibrinogênio, fator XIII, FVIII e VWF em quantidades variáveis; sua principal função contemporânea é tratar <strong>hipofibrinogenemia com sangramento ou necessidade de procedimento</strong>, quando não houver alternativa concentrada apropriada. Valor-alvo depende de cenário; na hemorragia maciça, <strong>fibrinogênio frequentemente é um dos primeiros componentes a se esgotar</strong>. Em obstetrícia e trauma, os limiares/estratégias são diferentes dos procedimentos eletivos e devem seguir protocolo atualizado."
+        ],
+        [
+          "p",
+          "Não considerar crioprecipitado equivalente ao concentrado padronizado de VWF ou FVIII para doença hereditária quando tais agentes estão disponíveis."
+        ],
+        [
+          "3",
+          "12.6 Seleção por situação clínica"
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Necessidade fisiológica",
+            "Componente potencial",
+            "O que NÃO fazer"
+          ],
+          [
+            [
+              "Anemia grave estável sintomática",
+              "Transporte de oxigênio",
+              "CH após avaliação",
+              "PFC para “aumentar Hb”"
+            ],
+            [
+              "Aplasia + plaquetas muito baixas",
+              "Hemostasia primária",
+              "Plaquetas segundo limiar/população",
+              "Dose profilática ignorando sangramento"
+            ],
+            [
+              "CIVD com fibrinogênio baixo e hemorragia",
+              "Fibrina estável",
+              "Crio/concentrado de fibrinogênio conforme acesso",
+              "PFC isolado sem tratar causa"
+            ],
+            [
+              "Deficiência multifatorial + sangramento",
+              "Fatores plasmáticos",
+              "PFC conforme indicação",
+              "Corrigir INR isolado em cirrose estável"
+            ],
+            [
+              "PTT imune",
+              "Remover anticorpo e repor ADAMTS13",
+              "Plasmaférese terapêutica, não “bolsa de plaquetas” de rotina",
+              "Esperar pentade/ADAMTS13 para iniciar"
+            ],
+            [
+              "Hb 8,2 em adulto assintomático estável",
+              "Geralmente observar causas e evolução",
+              "Não transfundir automaticamente",
+              "Transfusão sem indicação clínica"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "13-compatibilidade-abo-rh-e-imuno-hematologia",
+      0,
+      [
+        [
+          "2",
+          "13. Compatibilidade ABO/Rh e imuno-hematologia"
+        ],
+        [
+          "p",
+          "Hemácias carregam antígenos ABO e RhD; plasma do receptor pode conter anticorpos contra antígenos ausentes. A transfusão incompatível de hemácias pode provocar ativação complemento, hemólise intravascular, choque e lesão renal. <strong>A compatibilidade de plasma não segue a mesma direção da de hemácias</strong>: plasma de grupo AB não tem anti-A/anti-B clinicamente relevantes e pode ser compatível em emergência conforme política hemoterápica; “O universal” aplica-se em sentido específico a hemácias, não ao plasma."
+        ],
+        [
+          "p",
+          "No trauma com hemorragia maciça e tipagem ainda indisponível, o serviço segue protocolo de hemácias de emergência, considerando risco de aloimunização RhD e estoques. Não presumir que qualquer hemocomponente O negativo pode ser usado indiscriminadamente em todos os sistemas e situações. Em pacientes politransfundidos, fenotipagem/genotipagem Rh/Kell e outros antígenos podem prevenir aloimunização, particularmente em doença falciforme e hemoglobinopatias."
+        ],
+        [
+          "3",
+          "13.1 Produto leucorreduzido, irradiado, lavado e fenotipado"
+        ],
+        [
+          "p",
+          "<strong>Leucorreduzido/desleucocitado:</strong> reduz leucócitos do componente, atenua reações febris e aloimunização HLA em contextos apropriados e reduz parte do risco de CMV associado a leucócitos; não esteriliza a bolsa."
+        ],
+        [
+          "p",
+          "<strong>Irradiado:</strong> previne doença enxerto contra hospedeiro associada à transfusão em pacientes com risco específico (por exemplo, alguns transplantes, imunodeficiência celular, doação de parentes, conforme protocolo). <strong>Não</strong> é sinônimo de componente livre de infecção."
+        ],
+        [
+          "p",
+          "<strong>Lavado:</strong> reduz proteínas plasmáticas e pode ser indicado em reações alérgicas graves recorrentes selecionadas, incluindo alguns casos com anti-IgA; há perda celular e logística específica."
+        ],
+        [
+          "p",
+          "<strong>Fenotipado/compatibilizado estendido:</strong> especialmente importante em pacientes de múltiplas transfusões e aloanticorpos conhecidos. A escolha depende de antígeno, história e laboratório; conferir medidas brasileiras de 2026 em hemocentros."
+        ]
+      ]
+    ],
+    [
+      "14-reacoes-transfusionais-e-hemovigilancia",
+      0,
+      [
+        [
+          "2",
+          "14. Reações transfusionais e hemovigilância"
+        ],
+        [
+          "p",
+          "<strong>Na suspeita de reação, primeiro passo é interromper imediatamente a transfusão.</strong> Avaliar ABCDE, manter acesso venoso com solução compatível sem continuar o hemocomponente, conferir identificação da pessoa/bolsa, chamar equipe médica e hemoterapia e seguir protocolo de coleta/devolução/notificação. Sinais incluem febre, calafrios, rash, urticária, dor lombar, dispneia, hipotensão, hemoglobinúria e sangramento. Reações leves só podem ser manejadas com retomada se protocolo e avaliação profissional confirmarem segurança."
+        ],
+        [
+          "3",
+          "14.1 Reação hemolítica aguda"
+        ],
+        [
+          "p",
+          "Incompatibilidade ABO e outros mecanismos imunes podem provocar febre, dor em flancos/lombar, hipotensão, urina escura, sangramento por CIVD e insuficiência renal. Considerar erro de identificação. Solicitar nova prova de compatibilidade, hemólise (bilirrubina, LDH, haptoglobina), hemograma, TAD e avaliação renal/coagulação, sempre sob suporte clínico imediato."
+        ],
+        [
+          "3",
+          "14.2 Reação febril não hemolítica e alergia"
+        ],
+        [
+          "p",
+          "Febre/calafrios sem hemólise podem ser reação febril, mas <strong>infecção bacteriana da bolsa, hemólise e outras causas graves devem ser excluídas antes</strong> de rotular benigno. Reação alérgica leve cursa com prurido/urticária, mas anafilaxia pode produzir hipotensão, broncoespasmo e edema laríngeo, exigindo conduta emergencial e investigação. Histórico de reação grave deve ser comunicado antes das futuras transfusões."
+        ],
+        [
+          "3",
+          "14.3 TACO versus TRALI: não confundir"
+        ],
+        [
+          "p",
+          "<strong>TACO (transfusion-associated circulatory overload):</strong> sobrecarga circulatória associada à transfusão, frequentemente dispneia/hipoxemia e edema pulmonar com evidência de excesso de volume, piora pressórica, balanço positivo, BNP/NT-proBNP em contexto e resposta a diurético. Maior risco em idosos, cardiopatas, renais e transfusão rápida/múltiplas bolsas. <strong>Ministério da Saúde publicou Nota Técnica 225/2026 sobre prevenção, diagnóstico, notificação e manejo de TACO</strong>."
+        ],
+        [
+          "p",
+          "<strong>TRALI (transfusion-related acute lung injury):</strong> lesão pulmonar aguda temporalmente associada à transfusão, com hipoxemia e infiltrados bilaterais, sem que sobrecarga hidrostática seja a explicação principal; pode coexistir com outras causas de síndrome de desconforto respiratório e exige avaliação diferenciada. Diurético não é solução universal para TRALI."
+        ],
+        [
+          "t",
+          [
+            "Elemento",
+            "TACO",
+            "TRALI"
+          ],
+          [
+            [
+              "Mecanismo predominante",
+              "Hidrostático/volêmico",
+              "Lesão inflamatória pulmonar"
+            ],
+            [
+              "Fatores predisponentes",
+              "IC, DRC, idade, rapidez, volume",
+              "Estado inflamatório/doença crítica, componente transfundido"
+            ],
+            [
+              "Hipertensão/balanço positivo",
+              "Comuns, não obrigatórios",
+              "Não característicos como mecanismo principal"
+            ],
+            [
+              "BNP/NT-proBNP",
+              "Pode ajudar em contexto",
+              "Pode ser pouco discriminativo"
+            ],
+            [
+              "Tratamento",
+              "Parar transfusão, suporte respiratório e manejo de volume conforme clínica",
+              "Parar transfusão, suporte respiratório, investigação hemoterápica"
+            ],
+            [
+              "Hemovigilância",
+              "Obrigatória segundo rede local",
+              "Obrigatória segundo rede local"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "14.4 Contaminação bacteriana"
+        ],
+        [
+          "p",
+          "Febre alta, rigores, hipotensão e choque durante transfusão, especialmente de plaquetas, devem levantar suspeita de contaminação bacteriana. Além de interromper transfusão e tratar possível sepse, coletar culturas do paciente e do componente conforme rotina do hemocentro; iniciar antibiótico e suporte conforme gravidade. Não chamar toda febre de reação febril não hemolítica."
+        ],
+        [
+          "3",
+          "14.5 Complicações tardias"
+        ],
+        [
+          "p",
+          "Hemólise tardia após aloimunização (queda de Hb dias a semanas depois), aloimunização HLA e eritrocitária, sobrecarga de ferro por transfusões repetidas, doença enxerto contra hospedeiro transfusional em pacientes vulneráveis e infecções residuais devem ser reconhecidas. Pacientes com doença falciforme apresentam risco de hiper-hemólise e requerem plano compatibilizado especializado; ver aula #231."
+        ]
+      ]
+    ],
+    [
+      "15-transfusao-macica-trauma-e-hemorragia-obstetrica-interface",
+      0,
+      [
+        [
+          "2",
+          "15. Transfusão maciça, trauma e hemorragia obstétrica — interface"
+        ],
+        [
+          "p",
+          "Em hemorragia que ameaça a vida, ativar protocolo de transfusão maciça local, controlar foco cirúrgico/intervencionista e combater hipotermia, acidose, hipocalcemia, diluição e hipofibrinogenemia. Estratégias iniciais podem combinar hemácias/plasma/plaquetas com relação aproximada balanceada conforme protocolo, ajustando à evolução, fibrinogênio e testes viscoelásticos quando disponíveis. <strong>A proporção 1:1:1 não é receita universal fora de hemorragia maciça.</strong>"
+        ],
+        [
+          "p",
+          "Fibrinogênio deve ser acompanhado precocemente; em hemorragia obstétrica, queda rápida pode sinalizar gravidade e demandar reposição. Ácido tranexâmico tem janelas específicas (trauma e hemorragia pós-parto), mas dose/timing dependem de protocolo nacional/serviço. A intervenção que mais muda desfecho é controle rápido da fonte, preservação de perfusão e correção hemostática dirigida, não transfusão isolada de componentes."
+        ],
+        [
+          "3",
+          "15.1 Segurança no pós-parto"
+        ],
+        [
+          "p",
+          "Durante gestação, fibrinogênio fisiologicamente mais alto significa que “valor normal de não gestante” pode ser insuficiente diante de hemorragia obstétrica. Risco de CIVD é maior em certas complicações, e o hemograma inicial pode não mostrar toda perda. Aulas obstétricas cuidam da estratégia uterotônica e cirúrgica; aqui o foco é ativar hemoterapia e interpretar coagulopatia, nunca substituir obstetrícia."
+        ],
+        [
+          "3",
+          "15.2 Segurança na dengue"
+        ],
+        [
+          "p",
+          "Na dengue, plaquetopenia e hemoconcentração dependem de fase e fisiopatologia. <strong>Plaquetas baixas sem sangramento maior não indicam automaticamente transfusão profilática</strong> segundo AABB/ICTMG 2025; seguir protocolos nacionais vigentes, monitorar sinais de alarme e tratar gravidade clínica. Transfundir apenas porque a contagem caiu pode causar riscos sem benefício."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "p",
+          "<h1>PARTE V — ALGORITMOS DE DECISÃO E ARMADILHAS</h1>"
+        ]
+      ]
+    ],
+    [
+      "16-algoritmo-a-sangramento-sem-causa-obvia",
+      0,
+      [
+        [
+          "2",
+          "16. Algoritmo A — Sangramento sem causa óbvia"
+        ],
+        [
+          "p",
+          "1. <strong>ABCDE</strong> e classificar sangramento ameaçador à vida; reanimar/controlar fonte se grave.\r<br>2. Fazer história dirigida: mucosas vs articulações/músculos; fármacos; início; cirurgias anteriores; família.\r<br>3. Solicitar hemograma, plaquetas, esfregaço, TP/INR, TTPa e fibrinogênio conforme apresentação.\r<br>4. Plaquetas baixas? Confirmar e distinguir produção, destruição, consumo e agregação em EDTA.\r<br>5. TTPa isoladamente alto? Checar anticoagulante e considerar mistura/fatores/inibidor.\r<br>6. TP e TTPa altos em sepse? Investigar CIVD e doença hepática, acompanhar tendência.\r<br>7. Suspeita de PTT? Enviar ADAMTS13 sem retardar plasmaférese.\r<br>8. Encaminhar hematologia para confirmação e plano definitivo; registrar reações, procedimentos e medicamentos."
+        ]
+      ]
+    ],
+    [
+      "17-algoritmo-b-tev-e-duvida-sobre-trombofilia",
+      0,
+      [
+        [
+          "2",
+          "17. Algoritmo B — TEV e dúvida sobre trombofilia"
+        ],
+        [
+          "p",
+          "1. Confirmar TEV por probabilidade e imagem/protocolo.\r<br>2. Tratar evento agudo com anticoagulação apropriada e avaliar gravidade.\r<br>3. Classificar como provocado (cirúrgico/não cirúrgico/hormonal), não provocado ou câncer/risco persistente.\r<br>4. Perguntar: resultado de trombofilia mudará anticoagulação, profilaxia ou decisão reprodutiva?\r<br>5. Se não, <strong>não pedir painel</strong>.\r<br>6. Se sim, selecionar testes e cronologia com especialista; proteger da interferência de DOAC/varfarina/fase aguda.\r<br>7. Se SAF suspeita, testar anticorpos apropriados e repetir ≥12 semanas depois; não rotular por resultado único.\r<br>8. Registrar decisão de duração e riscos de sangramento/trombose com revisão periódica."
+        ]
+      ]
+    ],
+    [
+      "18-algoritmo-c-reacao-transfusional-a-beira-leito",
+      0,
+      [
+        [
+          "2",
+          "18. Algoritmo C — Reação transfusional à beira leito"
+        ],
+        [
+          "p",
+          "1. Interromper imediatamente a bolsa.\r<br>2. Garantir vias aéreas, oxigenação, circulação; acionar ajuda se instabilidade.\r<br>3. Conferir paciente, número da bolsa e compatibilidade.\r<br>4. Manter acesso com solução apropriada, sem reinfundir o produto.\r<br>5. Informar hemoterapia, coletar exames/culturas conforme suspeita, reter bolsa/equipo conforme protocolo.\r<br>6. Diferenciar hemólise, alergia/anafilaxia, sepse, TACO, TRALI e reação febril.\r<br>7. Tratar etiologia, notificar e registrar medidas para futuras transfusões."
+        ]
+      ]
+    ],
+    [
+      "19-algoritmo-d-hemorragia-macica",
+      0,
+      [
+        [
+          "2",
+          "19. Algoritmo D — Hemorragia maciça"
+        ],
+        [
+          "p",
+          "1. Reconhecer choque hemorrágico independentemente de Hb inicial.\r<br>2. Acionar equipe de controle do foco e protocolo transfusional institucional.\r<br>3. Administrar componentes conforme protocolo e reavaliar perfusão, cálcio, temperatura, acidose e fibrinogênio.\r<br>4. Evitar grande infusão de cristaloide que dilua hemostasia quando transfusão estiver indicada.\r<br>5. Usar intervenção local: compressão, cirurgia, endoscopia/intervenção e obstetrícia conforme etiologia.\r<br>6. Ajustar hemostasia por exames, evolução e testes viscoelásticos quando disponíveis; desativar protocolo quando controlado.\r<br>7. Prevenir complicações de sobrecarga, hemólise, hipotermia e hiperpotassemia conforme evolução."
+        ]
+      ]
+    ],
+    [
+      "20-perolas-de-prova-e-seguranca",
+      0,
+      [
+        [
+          "2",
+          "20. Pérolas de prova e segurança"
+        ],
+        [
+          "t",
+          [
+            "Erro frequente",
+            "Correção que muda conduta"
+          ],
+          [
+            [
+              "VWF adere à plaqueta por GPIIb/IIIa",
+              "Principal adesão ocorre por <strong>GPIb–VWF</strong>; GPIIb/IIIa agrega plaquetas"
+            ],
+            [
+              "Fator IIa + VIIa transforma fibrinogênio em fibrina",
+              "A enzima que transforma fibrinogênio em fibrina é <strong>trombina (IIa)</strong>"
+            ],
+            [
+              "Proteína C inativa VIIa",
+              "Proteína C ativada inativa <strong>Va e VIIIa</strong>"
+            ],
+            [
+              "TTPa isoladamente longo = alto risco de sangramento",
+              "Fator XII e anticoagulante lúpico podem prolongar sem sangramento"
+            ],
+            [
+              "Toda trombocitopenia grave = PTI",
+              "PTT, HIT, CIVD, sepse e doenças medulares mudam tratamento"
+            ],
+            [
+              "PTT exige pêntade",
+              "Plaquetas + hemólise podem exigir plasmaférese imediata"
+            ],
+            [
+              "Toda plaquetopenia por dengue exige plaquetas",
+              "<strong>Não</strong> sem sangramento maior apenas por contagem"
+            ],
+            [
+              "Testar toda trombose e toda gestante",
+              "ASH 2023 recomenda testagem <strong>selecionada</strong>"
+            ],
+            [
+              "SAF = exame positivo uma vez",
+              "Exige manifestação clínica relevante e persistência laboratorial; classificação ≠ diagnóstico automático"
+            ],
+            [
+              "Qualquer DOAC pode ser usado na SAF triplo-positiva",
+              "<strong>Evitar</strong>, particularmente rivaroxabana; considerar varfarina"
+            ],
+            [
+              "DDAVP sempre funciona para DVW",
+              "<strong>Não</strong> em tipo 3 e geralmente contraindicada em 2B"
+            ],
+            [
+              "Toda anemia Hb <10 exige hemácias",
+              "Adulto estável: estratégia em geral <strong>restritiva</strong>, contexto importa"
+            ],
+            [
+              "CVC exige plaquetas ≥50 sempre",
+              "AABB 2025 cita limiar bem menor em sítio compressível, conforme contexto"
+            ],
+            [
+              "INR alterado na cirrose = transfundir PFC",
+              "Não corrigir exame isolado sem indicação clínica"
+            ],
+            [
+              "Suspender transfusão apenas se choque",
+              "Qualquer <strong>suspeita</strong> de reação exige parar e investigar"
+            ],
+            [
+              "TACO e TRALI são a mesma coisa",
+              "Mecanismos e manejo distintos; nota MS 225/2026 para TACO"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "21-casos-clinicos-originais-do-laboratorio-a-decisao",
+      0,
+      [
+        [
+          "2",
+          "21. Casos clínicos originais: do laboratório à decisão"
+        ],
+        [
+          "3",
+          "Caso 1 — Menorragia desde a adolescência e coagulograma normal"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 27 anos relata menstruações abundantes desde a menarca, episódios frequentes de epistaxe e hemorragia importante após extração de terceiro molar. A mãe também tinha “sangramento forte”. Sem uso de anticoagulante. Hemograma com anemia ferropriva, 280 mil plaquetas/mm³, TP/INR normal, TTPa normal."
+        ],
+        [
+          "p",
+          "<strong>Hipótese principal:</strong> doença de von Willebrand ou disfunção plaquetária hereditária, associada a deficiência de ferro por perdas crônicas."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> padrão mucocutâneo com história familiar, início precoce e sangramento procedimental aponta defeito de hemostasia primária. TP/TTPa normais não afastam DVW, porque o FVIII pode permanecer normal. A menorragia também exige investigação ginecológica de etiologias estruturais, mas isso não encerra a investigação hematológica. Avaliação do impacto do sangramento ajuda a priorizar tratamento e prevenção da deficiência de ferro."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> hemograma e ferritina; VWF:Ag, atividade plaquetária dependente de VWF e FVIII, com repetição em estado basal se valores limítrofes/discordantes; testes específicos plaquetários se investigação de DVW não explicar. Considerar ferramenta padronizada de história hemorrágica e encaminhamento a serviço especializado."
+        ],
+        [
+          "p",
+          "<strong>Interpretação:</strong> VWF pode subir por estresse, gravidez ou inflamação; uma dosagem normal em cenário de reação de fase aguda não encerra definitivamente o caso. DVW tipo 1 sintomática pode ser confirmada por atividade ou antígeno abaixo de 0,50 UI/mL nas condições clínicas apropriadas, com revisão por hematologista."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> controle do sangramento menstrual em conjunto com ginecologia, reposição de ferro quando indicada, estratégia hemostática individualizada para futuros procedimentos. Desmopressina pode ser útil em subtipo e resposta apropriados; não iniciar sem distinguir DVW 2B/3 e riscos de hiponatremia. Antifibrinolítico em cenários mucosos selecionados e concentrado de VWF se gravidade exigir."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> uma paciente pode perder sangue por anos e receber apenas “tratamento para anemia” se a equipe interpretar TP/TTPa normais como exclusão de coagulopatia."
+        ],
+        [
+          "3",
+          "Caso 2 — Hemartrose repetida em menino sem história familiar"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> menino de 4 anos com joelho tumefeito e doloroso após brincadeira habitual, e episódios prévios de sangramento muscular após pequenos traumas. A família nega doença hemorrágica. Plaquetas 250 mil/mm³, TP normal, TTPa prolongado. FVIII atividade <1%, FIX normal."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> hemofilia A grave."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> sangramento profundo/articular típico de deficiência de fator; deficiência de FVIII com FIX preservado confirma padrão. Ausência de familiar afetado não exclui hemofilia por mutação nova, transmissão assintomática ou reconhecimento insuficiente de portadoras."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> ensaio de FVIII/IX, investigação de VWF se quadro/resultado pedir, avaliação de inibidor em casos pertinentes, imagem articular orientada quando útil, além de avaliação ortopédica e fisioterápica. TTPa mede parte do processo, não quantifica gravidade clínica nem substitui atividade de fator."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> sangramento articular exige tratamento hemostático conforme plano do centro de hemofilia, analgesia segura e proteção articular, evitando procedimentos invasivos desnecessários e anti-inflamatórios que agravem sangramento. Planejar <strong>profilaxia</strong> para prevenção de artropatia e educação da família sobre emergência e sinais intracranianos."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a abordagem deve impedir novo dano articular e não apenas aliviar o episódio atual; a família precisa de plano escrito e acesso oportuno ao fator."
+        ],
+        [
+          "3",
+          "Caso 3 — Paciente com emicizumabe, trauma craniano e TTPa aparentemente normal"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> adulto jovem com hemofilia A grave e inibidor do FVIII usa emicizumabe profilático. Sofre queda, bate a cabeça e apresenta cefaleia intensa progressiva. Laboratório inicial: TTPa normal ou encurtado; tomografia ainda não realizada."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> hemorragia intracraniana potencial em paciente com distúrbio hemostático de alto risco, apesar de teste rotineiro pouco informativo."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> emicizumabe aproxima FIXa e FX e altera testes baseados em TTPa. <strong>TTPa normal não demonstra normalidade hemostática</strong>, nem exclui hemorragia intracraniana. O tratamento de sangramento com inibidor em uso de emicizumabe exige precaução com aPCC pelo risco de trombose e microangiopatia."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> imagem craniana urgente, avaliação neurológica seriada, hemograma, investigação hemostática por métodos adequados ao emicizumabe em contato com centro de hemofilia. Testar inibidor/FVIII por ensaio apropriado quando relevante; não utilizar indiscriminadamente ensaio de coagulação baseado em TTPa como monitor."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> ABCDE, contato imediato com hematologia e neurocirurgia conforme quadro, terapia hemostática segundo plano individual <strong>sem esperar a imagem quando hemorragia grave é fortemente suspeita</strong>. Discutir rFVIIa ou outra estratégia específica em paciente com inibidor; não prescrever complexo protrombínico ativado automaticamente."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a evolução laboratorial aparente pode enganar; emicizumabe exige conhecimento das interferências analíticas e terapêuticas."
+        ],
+        [
+          "3",
+          "Caso 4 — Plaquetopenia, esquizócitos e confusão mental: PTT até prova em contrário"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 38 anos com fadiga intensa, cefaleia e confusão iniciadas há dois dias. Plaquetas 14 mil/mm³, Hb 8,3 g/dL, LDH muito elevada, bilirrubina indireta aumentada, haptoglobina reduzida e numerosos esquizócitos. TP 12 segundos e TTPa dentro do normal. Creatinina discretamente elevada."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> púrpura trombocitopênica trombótica imune (PTT), emergência hematológica."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> trombocitopenia + hemólise mecânica com testes de coagulação relativamente preservados favorece microangiopatia. Não precisa ter febre, insuficiência renal intensa ou pêntade completa. <strong>Não é PTI isolada</strong>, porque há anemia hemolítica microangiopática e dano orgânico. CIVD importante frequentemente altera TP/TTPa/fibrinogênio; SHU e outras microangiopatias ficam no diferencial."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> hemograma/lâmina, bilirrubina, LDH, haptoglobina, reticulócitos, função renal, troponina/ECG, coagulograma e fibrinogênio; colher amostra para ADAMTS13 e inibidor antes da plasmaférese <strong>sem atrasar tratamento</strong>."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> internação de urgência, centro com troca plasmática terapêutica, corticosteroides e discussão de caplacizumabe/rituximabe conforme protocolo; suporte e monitorização neurológica, cardíaca e renal. Não realizar transfusão profilática de plaquetas só para aumentar a contagem; reservá-la para situações excepcionais de hemorragia crítica/necessidade imediata."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> um erro de classificação entre PTI e PTT muda completamente o tratamento e pode ser fatal."
+        ],
+        [
+          "3",
+          "Caso 5 — Plaquetas caem após heparina, apesar de trombose nova"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 66 anos, internado por cirurgia vascular, em uso de heparina não fracionada há oito dias. Plaquetas caem de 270 mil para 105 mil/mm³, e novo Doppler mostra TVP proximal. Sem sepse e sem hemorragia. A equipe pensa em substituir HNF por enoxaparina porque “a plaqueta não está tão baixa”."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> trombocitopenia induzida por heparina (HIT) imunológica com trombose."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> queda superior a 50%, temporalidade de 5–10 dias e trombose nova elevam escore 4Ts. HIT associa-se mais a eventos trombóticos que a hemorragia. Enoxaparina também é heparina e pode perpetuar ativação imunológica. TP/TTPa ou contagem plaquetária absoluta isolada não determinam diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> calcular 4Ts, anticorpos anti-PF4/heparina com interpretação de densidade óptica conforme método, ensaio funcional quando disponível; investigar outras tromboses e monitorar plaquetas."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> suspender todas as fontes de heparina (incluindo lavagens), iniciar anticoagulante <strong>não heparínico</strong> individualizado conforme função renal/hepática e risco hemorrágico, discutir hematologia, escolher anticoagulante de longo prazo conforme recuperação plaquetária e situação clínica. Não iniciar varfarina isoladamente na fase aguda com plaquetas ainda baixas sem plano especializado."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> na HIT, a plaquetopenia é marcador de uma doença <strong>pró-trombótica</strong>, e a “troca para HBPM” não resolve."
+        ],
+        [
+          "3",
+          "Caso 6 — Sepse e sangramento em múltiplos sítios"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> paciente de 59 anos em choque séptico por infecção abdominal, com oozing nos acessos, equimoses novas e sangue em dreno. Plaquetas caíram de 180 para 45 mil/mm³, TP/INR e TTPa prolongaram, fibrinogênio diminuiu de 390 para 110 mg/dL e D-dímero está elevado."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> coagulação intravascular disseminada (CIVD) relacionada à sepse."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> a combinação de gatilho sistêmico, consumo progressivo de plaquetas/fatores e sangramento favorece CIVD, distinta da PTT clássica. A diminuição temporal do fibrinogênio pode ser mais reveladora que um número isolado, porque ele pode estar elevado inicialmente como reagente de fase aguda."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> coagulograma seriado, fibrinogênio, hemograma/plaquetas, D-dímero, lactato, gasometria, função renal/hepática e avaliação do foco; escore ISTH quando indicado. Verificar trombose/hipoperfusão microvascular e sangramento ativo."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> tratar foco infeccioso e choque, antibioticoterapia/controle de fonte, suporte hemodinâmico, reposição dirigida de fibrinogênio/plasma/plaquetas conforme sangramento e intervenção, evitando transfusão meramente cosmética para normalizar valores. Acionar hemoterapia e unidade intensiva."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> CIVD não é apenas “laboratório ruim”; é expressão de doença grave cuja causa precisa de tratamento imediato."
+        ],
+        [
+          "3",
+          "Caso 7 — Jovem com TVP provocada e solicitação de painel completo"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher, 31 anos, sofreu TVP femoropoplítea após cirurgia ortopédica complexa e imobilização prolongada. Sem TEV prévio, sem familiares com eventos e sem intenção atual de usar estrogênio. Está na fase aguda e recebendo anticoagulante direto. Profissional solicita F5 Leiden, F2 G20210A, proteínas C e S, antitrombina e anticoagulante lúpico “para definir três ou seis meses”."
+        ],
+        [
+          "p",
+          "<strong>Hipótese diagnóstica central:</strong> TEV provocado por forte fator transitório cirúrgico; painel de trombofilia provavelmente não acrescenta decisão nesta circunstância."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> cirurgia maior/imobilização explicam alto risco transitório; duração depende de localização, fator, evolução e risco de sangramento, não de rastreio universal. DOAC pode interferir em ensaios funcionais; fase aguda pode modificar proteínas anticoagulantes. ASH 2023 não apoia testagem indiscriminada após TEV claramente provocado por cirurgia."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> confirmar diagnóstico e extensão por Doppler, avaliação básica de segurança da anticoagulação e seguimento; testes hereditários somente se informação alterar decisão concreta, após consulta especializada."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> anticoagulação conforme diretriz aplicável ao TEV provocado, educação sobre sinais de EP/sangramento, reabilitação/mobilização e avaliação de recorrência antes da alta do acompanhamento. Reconsiderar investigação se surgirem eventos atípicos ou contexto familiar relevante."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> pedir exames pode parecer “mais completo”, mas frequentemente acrescenta resultado ininterpretável e não melhora cuidado."
+        ],
+        [
+          "3",
+          "Caso 8 — AVC e SAF triplo-positiva: risco com anticoagulante oral direto"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 43 anos com AVC isquêmico sem mecanismo cardioembólico típico e TVP prévia; exames fora de fase infecciosa mostram anticoagulante lúpico, anticardiolipina IgG e anti-β2-glicoproteína I IgG positivos, persistentes 13 semanas depois. Foi iniciada rivaroxabana automaticamente porque teve TEV anteriormente."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> síndrome antifosfolípide trombótica de alto risco, com manifestação arterial e tripla positividade."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> combinação de evento clínico e persistência de anticorpos de alto risco sustenta SAF, após avaliação de outros mecanismos de AVC. Evidência e recomendações EULAR não favorecem rivaroxabana nesse fenótipo devido a recorrência de trombose arterial. Um DOAC não é equivalente a varfarina em todas as indicações."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> confirmar datas/metodologia dos anticorpos, avaliar efeitos de anticoagulantes sobre anticoagulante lúpico, causas cardiovasculares, função renal/hepática, risco hemorrágico e interações."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> discutir transição a antagonista da vitamina K/varfarina com alvo individualizado e monitorização de INR sob especialista; abordar tabaco, pressão, lipídios, contracepção e educação sobre anticoagulação. Plano gestacional deve ser discutido antecipadamente."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> reconhecer SAF triplo-positiva altera <strong>a escolha do anticoagulante</strong>, não somente o rótulo diagnóstico."
+        ],
+        [
+          "3",
+          "Caso 9 — Reação durante transfusão: hemólise aguda ou sepse?"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem, 62 anos, recebe hemácias por anemia sintomática. Poucos minutos depois apresenta febre, tremores, dor lombar intensa, hipotensão e urina avermelhada. Na conferência, percebe-se possível erro de identificação na etiqueta da bolsa."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> reação hemolítica transfusional aguda por incompatibilidade, com diferencial de contaminação bacteriana e outras reações graves."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> início abrupto, dor lombar, hipotensão e hemoglobinúria sugerem hemólise intravascular. O risco é choque, CIVD e lesão renal. O mecanismo pode ser erro ABO, mas não deve ser presumido sem investigar compatibilidade. Continuar a bolsa agravaria exposição."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> rechecagem de identidade, grupo ABO/Rh e prova cruzada, TAD, bilirrubina, LDH, haptoglobina, hemoglobina, urina, função renal, coagulograma, culturas se suspeita de contaminação e avaliação pela hemoterapia."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> <strong>interromper imediatamente a transfusão</strong>, manter acesso venoso com solução apropriada, ABCDE, chamar hemoterapia, suporte de choque, manter bolsa/equipo para investigação, notificar hemovigilância e documentar nova restrição transfusional."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> conferir a bolsa e a pessoa é uma intervenção de segurança tão importante quanto conhecer fisiopatologia."
+        ],
+        [
+          "3",
+          "Caso 10 — Dispneia após múltiplas bolsas: TACO versus TRALI"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 84 anos com DRC G4 e insuficiência cardíaca recebe duas unidades de hemácias em intervalo curto. Evolui com dispneia, crepitações, hipertensão, edema periférico e radiografia com edema pulmonar. Balanço hídrico positivo."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> sobrecarga circulatória associada à transfusão (TACO), devendo diferenciar de TRALI e outras causas de insuficiência respiratória."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> perfil de risco cardíaco/renal, velocidade/volume e sinais hidrostáticos favorecem TACO. TRALI costuma representar lesão inflamatória, sem que a sobrecarga explique principalmente o quadro. Ambas são graves e exigem interrupção imediata, oxigênio e avaliação; resposta a diurético reforça TACO sem ser teste definitivo."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> avaliação clínica e hemodinâmica, oximetria/gasometria se indicado, imagem, ECG, balanço hídrico e marcadores cardíacos conforme cenário; investigação hemoterápica e notificação baseada na Nota Técnica brasileira 225/2026."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> parar transfusão, suporte respiratório, tratar excesso de volume de modo seguro quando presente, avaliar necessidade de unidade intensiva. Antes de transfusões futuras, reconsiderar indicação, velocidade, volume fracionado e monitorização."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a transfusão pode desencadear descompensação relevante mesmo quando o hemocomponente foi corretamente compatibilizado."
+        ],
+        [
+          "3",
+          "Caso 11 — PTT, dengue e a armadilha do “valor de plaquetas”"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> paciente com dengue laboratorialmente confirmada tem plaquetas de 18 mil/mm³ no quinto dia, sem sangramento maior, hemodinamicamente estável e com acompanhamento rigoroso. A equipe propõe plaquetas “porque está abaixo de 20 mil”."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> trombocitopenia consumptiva associada à dengue, sem indicação de transfusão profilática automática pela contagem isolada."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> o quadro de dengue exige avaliar sinais de alarme, hematócrito, perfusão, hidratação e sangramento. A diretriz AABB/ICTMG 2025 recomenda <strong>não transfundir plaquetas profilaticamente</strong> em dengue sem hemorragia maior devido à ausência de benefício demonstrado e aos riscos do componente. Não se deve confundir esse cenário com aplasia medular ou punção lombar."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> hemograma/hematócrito seriados e avaliação laboratorial conforme protocolo de dengue e evolução clínica; pesquisa de sangramento conforme sinais e sintomas."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> manejo de dengue conforme protocolos brasileiros, monitorização de gravidade e ressuscitação quando necessária; transfusão apenas por indicação clínica específica e orientação especializada, nunca por “gatilho universal”."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a <strong>mesma contagem de plaquetas</strong> pode levar a condutas diferentes conforme mecanismo e risco de sangramento."
+        ],
+        [
+          "3",
+          "Caso 12 — Cirurgia eletiva e anticoagulante lúpico sem sangramento"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 52 anos realiza exames pré-operatórios e apresenta TTPa de 60 s, TP normal, plaquetas 230 mil/mm³. Sem histórico de sangramento em partos, cirurgias ou extrações, mas teve episódio de TVP há anos. Teste de mistura não corrige satisfatoriamente; anticoagulante lúpico é positivo na investigação."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> prolongamento de TTPa relacionado a inibidor fosfolípide-dependente, que pode sinalizar risco trombótico, sem equivaler a deficiência de fator hemorrágico."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> a designação “anticoagulante” refere-se à interferência in vitro, mas pessoas com SAF podem desenvolver tromboses. A equipe deve diferenciar de inibidor adquirido de FVIII, que costuma provocar sangramento intenso; história clínica e atividade de fator ajudam. Um anticoagulante lúpico positivo isolado sem persistência e evento não confirma SAF."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> confirmar interferência farmacológica/anticoagulante, repetir avaliação de anticorpos no intervalo recomendado, investigar outros anticorpos antifosfolípides e histórico de TEV; dosar FVIII se história/laboratório suspeitarem inibidor hemorrágico."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> planejamento perioperatório pelo risco de trombose e sangramento reais, e não pela “normalização do TTPa” com plasma. Discutir profilaxia tromboembólica conforme cirurgia e história, com hematologia e anestesia se necessário."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> exames de coagulação descrevem fenômenos laboratoriais, que podem estar associados a riscos opostos."
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "22-questoes-autorais-comentadas-estilo-residencia",
+      0,
+      [
+        [
+          "2",
+          "22. Questões autorais comentadas — estilo residência"
+        ],
+        [
+          "3",
+          "Questão 1 — Hemostasia e fator von Willebrand"
+        ],
+        [
+          "p",
+          "O sangramento mucoso recorrente, com epistaxe e menorragia, é mais compatível com alteração de qual componente inicial da hemostasia?"
+        ],
+        [
+          "p",
+          "A. Fator XII exclusivamente, que sempre provoca sangramento grave.\r<br>B. Interação entre VWF e receptor plaquetário GPIb-IX-V.\r<br>C. Complexo fibrina–fator XIII sem participação de plaquetas.\r<br>D. Protrombina convertida diretamente por fator VII isolado.\r<br>E. Apenas antitrombina, independentemente de plaquetas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> deficiência de XII pode prolongar TTPa sem sangramento. <strong>B:</strong> correta, eixo de adesão plaquetária. <strong>C:</strong> fibrina/fator XIII participam da estabilização, não da adesão inicial. <strong>D:</strong> coagulação exige complexo e superfície; a frase é mecanisticamente errada. <strong>E:</strong> antitrombina é anticoagulante natural, não principal receptor de adesão. <strong>Mini-revisão:</strong> GPIb/VWF promove adesão, αIIbβ3–fibrinogênio promove agregação."
+        ],
+        [
+          "3",
+          "Questão 2 — Interpretação de TP/TTPa"
+        ],
+        [
+          "p",
+          "Paciente sem sangramento tem TTPa prolongado isolado, TP e plaquetas normais e teste de mistura com correção; fator XII baixo. Qual afirmação é mais apropriada?"
+        ],
+        [
+          "p",
+          "A. Fator XII baixo obriga transfundir plasma antes de qualquer procedimento.\r<br>B. Trata-se de hemofilia A grave necessariamente.\r<br>C. Deficiência de XII pode prolongar TTPa sem fenótipo hemorrágico relevante.\r<br>D. TP normal exclui anticoagulação farmacológica.\r<br>E. O D-dímero será necessariamente positivo."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> <strong>A:</strong> correção de laboratório isolado com PFC não é indicação automática. <strong>B:</strong> hemofilia A depende FVIII, fenótipo e investigação. <strong>C:</strong> correta. <strong>D:</strong> diversos anticoagulantes podem interferir em outros testes, não só TP. <strong>E:</strong> D-dímero não é marcador de XII. <strong>Mini-revisão:</strong> fator XII, pré-calicreína e cininogênio podem alterar TTPa sem sangramento clínico."
+        ],
+        [
+          "3",
+          "Questão 3 — DVW e desmopressina"
+        ],
+        [
+          "p",
+          "Paciente com DVW tipo 2B confirmada necessita de estratégia para sangramento procedural. Qual afirmação é correta?"
+        ],
+        [
+          "p",
+          "A. DDAVP é sempre primeira escolha e não necessita monitorização.\r<br>B. DDAVP é geralmente contraindicada por risco de agravar trombocitopenia; avaliar VWF concentrado e medidas adjuvantes.\r<br>C. DVW 2B é ausência absoluta de VWF.\r<br>D. TP sempre fica muito prolongado.\r<br>E. VWF não participa do transporte de FVIII."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> falso; risco plaquetário em tipo 2B. <strong>B:</strong> correta conforme ASH/ISTH/NHF/WFH 2021. <strong>C:</strong> ausência grave é DVW tipo 3. <strong>D:</strong> TP tende a ser normal. <strong>E:</strong> VWF estabiliza FVIII. <strong>Mini-revisão:</strong> subtipo determina escolha e segurança da terapia."
+        ],
+        [
+          "3",
+          "Questão 4 — Hemofilia com inibidor e emicizumabe"
+        ],
+        [
+          "p",
+          "Paciente em profilaxia com emicizumabe e inibidor do FVIII sofre trauma craniano. Qual conduta conceitual é adequada?"
+        ],
+        [
+          "p",
+          "A. TTPa normal afasta hemorragia.\r<br>B. Adiar avaliação até surgir convulsão.\r<br>C. Avaliação emergencial e terapia hemostática específica; cuidado com aPCC e interferência do emicizumabe em exames.\r<br>D. Usar dose maciça de aPCC em qualquer caso sem hematologia.\r<br>E. Nunca realizar imagem cerebral."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> <strong>A:</strong> TTPa pode ser normalizado pelo medicamento sem resolver todos os riscos. <strong>B:</strong> atraso pode ser fatal. <strong>C:</strong> correta. <strong>D:</strong> associação pode gerar trombose e microangiopatia. <strong>E:</strong> imagem urgente é indicada conforme apresentação. <strong>Mini-revisão:</strong> conhecer medicamento modifica interpretação analítica e escolha do tratamento."
+        ],
+        [
+          "3",
+          "Questão 5 — PTT imune"
+        ],
+        [
+          "p",
+          "Mulher com plaquetas 13 mil/mm³, anemia hemolítica microangiopática, confusão mental e TP/TTPa normais. Melhor conduta?"
+        ],
+        [
+          "p",
+          "A. Aguardar resultado de ADAMTS13 por uma semana.\r<br>B. Presumir PTI e apenas observar em casa.\r<br>C. Acionar centro de plasmaférese e tratar PTT presumida sem atraso, coletando ADAMTS13 antes se factível.\r<br>D. Transfundir plaquetas profilaticamente e dar alta.\r<br>E. Corrigir INR com PFC mesmo se normal."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> <strong>A:</strong> atrasaria tratamento tempo-dependente. <strong>B:</strong> esquizócitos e hemólise indicam microangiopatia, não PTI isolada. <strong>C:</strong> correta conforme ISTH. <strong>D:</strong> plaquetas profiláticas podem agravar microtrombos. <strong>E:</strong> não há INR alterado a corrigir. <strong>Mini-revisão:</strong> PTT é diagnóstico clínico inicial e emergência."
+        ],
+        [
+          "3",
+          "Questão 6 — HIT"
+        ],
+        [
+          "p",
+          "Após 8 dias de heparina, plaquetas caem 60% e surge TVP. Melhor interpretação?"
+        ],
+        [
+          "p",
+          "A. Queda de plaquetas reduz automaticamente risco de trombose.\r<br>B. Trocar para enoxaparina resolve HIT.\r<br>C. Suspender toda heparina e avaliar anticoagulante não heparínico, após probabilidade clínica adequada.\r<br>D. Transfundir plaquetas como única medida.\r<br>E. Esperar plaquetas menores que 20 mil para investigar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> <strong>A:</strong> HIT é pró-trombótica. <strong>B:</strong> enoxaparina compartilha mecanismo antigênico. <strong>C:</strong> correta. <strong>D:</strong> não trata anticorpo nem trombose. <strong>E:</strong> queda relativa importa, mesmo com valores >100 mil. <strong>Mini-revisão:</strong> escore 4Ts + testes PF4/funcional conforme probabilidade."
+        ],
+        [
+          "3",
+          "Questão 7 — CIVD versus PTT"
+        ],
+        [
+          "p",
+          "Paciente séptico tem TP/TTPa prolongados, D-dímero alto, plaquetas em queda e fibrinogênio diminuindo. Qual hipótese é mais provável?"
+        ],
+        [
+          "p",
+          "A. Deficiência isolada de XII.\r<br>B. CIVD secundária à sepse.\r<br>C. Tremor essencial.\r<br>D. Hemofilia B congênita de início súbito.\r<br>E. DVW tipo 1 assintomática."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> não explica consumo múltiplo. <strong>B:</strong> padrão de coagulação sistêmica e gatilho associado. <strong>C:</strong> não pertence ao sistema hemostático. <strong>D:</strong> não apresenta consumo generalizado pelo padrão clássico. <strong>E:</strong> não justifica coagulopatia disseminada. <strong>Mini-revisão:</strong> fibrinogênio pode estar normal no começo da sepse; observar tendência."
+        ],
+        [
+          "3",
+          "Questão 8 — Quando pedir teste de trombofilia"
+        ],
+        [
+          "p",
+          "Mulher, 32 anos, TEV provocado por cirurgia maior recente, sem família e sem evento prévio. Qual decisão segue melhor ASH 2023?"
+        ],
+        [
+          "p",
+          "A. Painel obrigatório para todo TEV, durante DOAC.\r<br>B. Investigação seletiva somente se resultado puder mudar manejo; não fazer painel rotineiro neste caso.\r<br>C. Testar a população geral antes de toda pílula combinada.\r<br>D. Medir proteína S durante gestação e concluir deficiência hereditária por um resultado baixo.\r<br>E. Pedir fatores de coagulação sem história, pois são livres de interferência."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> testes indiscriminados e durante interferência produzem erros. <strong>B:</strong> correta. <strong>C:</strong> ASH recomenda contra rastreio populacional. <strong>D:</strong> proteína S pode reduzir fisiologicamente. <strong>E:</strong> ensaios de fatores sofrem interferência e não são universais. <strong>Mini-revisão:</strong> a pergunta antes de testar é “o que faço diferente com o resultado?”."
+        ],
+        [
+          "3",
+          "Questão 9 — SAF trombótica"
+        ],
+        [
+          "p",
+          "Mulher com trombose arterial prévia e SAF triplo-positiva confirmada. A alternativa mais adequada é:"
+        ],
+        [
+          "p",
+          "A. Preferir rivaroxabana de rotina, igual em todos os fenotipos.\r<br>B. Considerar antagonista da vitamina K com monitorização, evitando rivaroxabana nesse grupo de alto risco.\r<br>C. Abandonar anticoagulação porque aPL é marcador apenas laboratorial.\r<br>D. Definir SAF por um único teste positivo em qualquer infecção.\r<br>E. Usar apenas vitamina K como anticoagulante."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> evidência de maior recidiva em perfis de alto risco. <strong>B:</strong> correta segundo EULAR. <strong>C:</strong> evento trombótico + anticorpos persistentes demandam estratégia. <strong>D:</strong> persistência ≥12 semanas é fundamental. <strong>E:</strong> vitamina K antagoniza efeito de varfarina, não é anticoagulante. <strong>Mini-revisão:</strong> tripla positividade é sinal de alto risco."
+        ],
+        [
+          "3",
+          "Questão 10 — Transfusão de hemácias"
+        ],
+        [
+          "p",
+          "Adulto internado, estável, Hb 7,8 g/dL, sem sintomas relevantes nem sangramento ativo, sem contexto cardiovascular especial. Qual decisão é mais alinhada a AABB 2023?"
+        ],
+        [
+          "p",
+          "A. Transfundir automaticamente duas bolsas até Hb 10.\r<br>B. Considerar estratégia restritiva, investigar e tratar causa, sem transfusão por número isolado.\r<br>C. Dar plasma porque contém hemoglobina.\r<br>D. Administrar plaquetas para aumentar Hb.\r<br>E. Usar o mesmo gatilho em choque hemorrágico não controlado."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> estratégia liberal indiscriminada traz risco. <strong>B:</strong> correta; Hb <7 costuma orientar consideração no adulto estável. <strong>C/D:</strong> componentes inadequados para reposição eritrocitária. <strong>E:</strong> choque hemorrágico é exceção e depende perfusão/fonte. <strong>Mini-revisão:</strong> “gatilho” é decisão clínica contextualizada, não ordem sem história."
+        ],
+        [
+          "3",
+          "Questão 11 — Plaquetas e punção lombar"
+        ],
+        [
+          "p",
+          "Adulto trombocitopênico vai realizar punção lombar diagnóstica simples. Qual atualização das diretrizes AABB/ICTMG 2025 merece ser conhecida?"
+        ],
+        [
+          "p",
+          "A. Toda punção lombar requer ≥100 mil plaquetas.\r<br>B. A diretriz recomenda limiar transfusional de <20 ×10⁹/L no cenário estudado, com avaliação clínica do risco individual.\r<br>C. Nunca fazer punção lombar se plaquetas <150 mil.\r<br>D. Transfusão de hemácias corrigirá contagem plaquetária.\r<br>E. Não há diferença de risco entre punção lombar e cirurgia intracraniana."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> não é limiar universal atual. <strong>B:</strong> correta; atualizar limiares antigos e observar contexto. <strong>C:</strong> restrição excessiva. <strong>D:</strong> não aumenta plaquetas. <strong>E:</strong> procedimentos e consequências do sangramento diferem. <strong>Mini-revisão:</strong> não transpor limiares entre procedimento, diagnóstico e contexto hemorrágico."
+        ],
+        [
+          "3",
+          "Questão 12 — Dengue"
+        ],
+        [
+          "p",
+          "Paciente com dengue, plaquetas 17 mil/mm³, sem hemorragia maior, clinicamente estável. Qual alternativa representa a evidência AABB/ICTMG 2025?"
+        ],
+        [
+          "p",
+          "A. Transfundir plaquetas profilaticamente em toda dengue se <50 mil.\r<br>B. Evitar transfusão profilática rotineira apenas pela contagem; seguir vigilância e protocolo de dengue.\r<br>C. Dar fator VIII para elevar contagem de plaquetas.\r<br>D. Corrigir INR independentemente do valor.\r<br>E. Proibir qualquer reavaliação clínica após a alta."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> não há benefício demonstrado para profilaxia universal. <strong>B:</strong> correta. <strong>C:</strong> fator VIII não corrige produção/consumo plaquetário por dengue. <strong>D:</strong> coagulograma deve ser interpretado em contexto. <strong>E:</strong> dengue pode piorar nas fases críticas, exige orientação e seguimento. <strong>Mini-revisão:</strong> transfundir significa oferecer benefício clínico esperado, não “corrigir contagem”."
+        ],
+        [
+          "3",
+          "Questão 13 — Reação transfusional aguda"
+        ],
+        [
+          "p",
+          "Após início de CH, paciente apresenta febre, dor lombar e hipotensão. Qual primeira conduta?"
+        ],
+        [
+          "p",
+          "A. Acelerar gotejamento para terminar a bolsa.\r<br>B. Continuar até sair hemoglobinúria.\r<br>C. Interromper imediatamente a transfusão, estabilizar e acionar hemoterapia.\r<br>D. Trocar a bolsa sem comunicar o evento.\r<br>E. Dar alta se temperatura cair com dipirona."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> <strong>A/B:</strong> aumentam possível exposição a componente incompatível/contaminado. <strong>C:</strong> correta e tempo-dependente. <strong>D:</strong> impede investigação de erro e hemovigilância. <strong>E:</strong> o quadro pode evoluir para choque e CIVD. <strong>Mini-revisão:</strong> primeiro suspender bolsa, depois investigar causa mantendo suporte."
+        ],
+        [
+          "3",
+          "Questão 14 — TACO e TRALI"
+        ],
+        [
+          "p",
+          "Idosa com insuficiência cardíaca e DRC desenvolve hipertensão, dispneia e edema pulmonar após transfusão rápida de hemácias. Qual mecanismo é mais provável?"
+        ],
+        [
+          "p",
+          "A. TACO por sobrecarga circulatória, a diferenciar de TRALI e insuficiência respiratória por outras causas.\r<br>B. Hemofilia A grave desencadeada pelo concentrado de hemácias.\r<br>C. PTT por perda exclusiva de ADAMTS13.\r<br>D. Tromboembolia pulmonar obrigatoriamente.\r<br>E. Alergia cutânea leve isolada."
+        ],
+        [
+          "p",
+          "<strong>Gabarito A.</strong> <strong>A:</strong> correta, coerente com comorbidades, volume e apresentação. <strong>B/C:</strong> não explicam padrão primário. <strong>D:</strong> é diferencial possível, não certeza obrigatória. <strong>E:</strong> não justifica edema pulmonar com congestão. <strong>Mini-revisão:</strong> nota brasileira de 2026 reforça prevenção, diagnóstico, notificação e manejo de TACO."
+        ],
+        [
+          "3",
+          "Questão 15 — Plaquetas em PTT versus PTI"
+        ],
+        [
+          "p",
+          "Pacientes A e B têm 12 mil plaquetas/mm³. A tem hemólise microangiopática com esquizócitos e confusão; B tem trombocitopenia isolada crônica e sangramento mucoso moderado. O que é mais correto?"
+        ],
+        [
+          "p",
+          "A. Tratar ambos como PTI com plaquetas e alta.\r<br>B. Tratar ambos como PTT com plasmaférese.\r<br>C. O contexto e mecanismo determinam condutas distintas; A exige investigação/tratamento urgente de PTT.\r<br>D. O valor numérico de plaquetas torna história irrelevante.\r<br>E. Excluir doença hemorrágica porque TP/TTPa podem ser normais."
+        ],
+        [
+          "p",
+          "<strong>Gabarito C.</strong> <strong>A:</strong> ignora microangiopatia. <strong>B:</strong> B não tem dados de PTT. <strong>C:</strong> correta. <strong>D:</strong> números isolados não definem etiologia. <strong>E:</strong> hemostasia primária pode estar muito comprometida com coagulograma normal. <strong>Mini-revisão:</strong> tratamento guiado por síndrome, etiologia e sangramento."
+        ],
+        [
+          "3",
+          "Questão 16 — Plasma na cirrose"
+        ],
+        [
+          "p",
+          "Homem com cirrose sem sangramento, sem procedimento planejado, INR 1,6, plaquetas 120 mil/mm³. Qual abordagem é preferível?"
+        ],
+        [
+          "p",
+          "A. Corrigir INR compulsoriamente com PFC para 1,0.\r<br>B. Avaliar riscos e não transfundir PFC apenas para normalizar INR isolado.\r<br>C. Transfundir crioprecipitado sempre, mesmo com fibrinogênio normal.\r<br>D. INR é medida perfeita do risco trombótico na cirrose.\r<br>E. Toda cirrose é equivalente a anticoagulação por varfarina."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> <strong>A:</strong> transfusão desnecessária pode causar TACO e outros eventos. <strong>B:</strong> correta; hemostasia na cirrose é reequilibrada e complexa. <strong>C:</strong> crio sem indicação não é apropriado. <strong>D:</strong> INR isolado não captura equilíbrio dos fatores. <strong>E:</strong> fisiologia é distinta. <strong>Mini-revisão:</strong> tratar paciente e evento, não “laboratório alterado” isoladamente."
+        ]
+      ]
+    ],
+    [
+      "23-fluxos-de-checagem-independente-dos-casos-e-questoes",
+      0,
+      [
+        [
+          "2",
+          "23. Fluxos de checagem independente dos casos e questões"
+        ],
+        [
+          "p",
+          "Antes de autorizar publicação, conferir com revisor externo: (a) cada caso representa síndrome plausível, com exames temporalmente adequados e nenhum dado contraditório; (b) cada gabarito possui uma única melhor resposta; (c) alternativas erradas são realmente erradas <strong>no cenário</strong>; (d) nenhuma conduta recomenda terapia indiscriminada ou omite urgência; (e) termos traduzidos conservam sentido; (f) se nova norma for publicada após 15/10/2026, revisão das condutas deve anteceder integração."
+        ],
+        [
+          "3",
+          "23.1 Ajustes editoriais previstos"
+        ],
+        [
+          "p",
+          "As seções de casos, questões e fluxos já foram reposicionadas antes do plano visual, bibliografia e auditoria final. A integração HTML deverá preservar essa hierarquia, com links internos e chamadas junto às explicações pertinentes. É mais importante que casos e perguntas se relacionem à explicação principal por links internos e chamadas textuais, e não fiquem como bloco desconectado."
+        ],
+        [
+          "3",
+          "23.2 Integração com o ecossistema LURIA"
+        ],
+        [
+          "p",
+          "O banco de questões só poderá incorporar as questões após auditoria independente e marcação adequada de dificuldade/área. O Professor Alex poderá explorar mecanismos e perguntas de correção, mas não substituir decisão médica em hemorragia ativa. Simulador de emergência pode reutilizar raciocínio de PTT, HIT e reação transfusional se houver parâmetros clínicos e consequências coerentes, <strong>sem importar automaticamente doses não validadas</strong>."
+        ]
+      ]
+    ],
+    [
+      "24-curadoria-de-imagens-propostas-nao-incorporadas",
+      0,
+      [
+        [
+          "2",
+          "24. Curadoria de imagens — propostas, não incorporadas"
+        ],
+        [
+          "p",
+          "Nenhuma imagem clínica foi importada, nenhuma licença de terceiros foi presumida. Candidatas obrigatórias à triagem documental, aquisição de direitos ou produção <strong>autoral</strong>:\r<br>1. Diagrama próprio adesão GPIb–VWF e agregação GPIIb/IIIa.\r<br>2. Fluxograma celular de trombina/fibrina/anticoagulantes.\r<br>3. Lâmina periférica de esquizócitos, instituição com licença verificável.\r<br>4. Foto clínica licenciada de petéquias de PTI, com consentimento.\r<br>5. Foto clínica licenciada de hemartrose hemofílica.\r<br>6. Tabela visual interpretativa TP/TTPa/plaquetas.\r<br>7. Fluxograma original teste de mistura e busca de inibidor.\r<br>8. Algoritmo diagnóstico original de DVW por VWF antígeno/atividade.\r<br>9. Esquema original de investigação de trombofilia dirigida pelo impacto clínico.\r<br>10. Fluxograma original para PTT, CIVD e HIT.\r<br>11. Infográfico de compatibilidade ABO por <strong>hemácias versus plasma</strong>.\r<br>12. Fluxo de reação transfusional e comparação TACO/TRALI.\r<br>13. Foto institucional de hemocomponentes com licença e rótulos fictícios.\r<br>14. Ilustração de crioprecipitado e fibrinogênio durante hemorragia maciça."
+        ],
+        [
+          "p",
+          "Para cada imagem, verificar fonte e direitos comerciais, nitidez, pertinência e legenda; converter para WebP com peso limitado conforme padrão LURIA, submetendo à <strong>aprovação no Admin</strong>. Sem aprovação, usar apenas indicação editorial, nunca imagem “placeholder” com licença presumida."
+        ]
+      ]
+    ],
+    [
+      "25-leituras-prioritarias-e-referencias-publicas",
+      0,
+      [
+        [
+          "2",
+          "25. Leituras prioritárias e referências públicas"
+        ],
+        [
+          "p",
+          "1. MINISTÉRIO DA SAÚDE (BRASIL). <strong>Guia para Uso de Hemocomponentes</strong>, 2ª edição; catálogo oficial, consultado 15/10/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/publicacoes/hemoterapia .\r<br>2. MINISTÉRIO DA SAÚDE (BRASIL). <strong>Nota Técnica Conjunta 225/2026-CGSH/DAET/SAES/MS: prevenção, diagnóstico, notificação e manejo de TACO</strong>, publicada 23/09/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-225-2026-cgsh-daet-saes-ms.pdf/view .\r<br>3. MINISTÉRIO DA SAÚDE (BRASIL). <strong>Regulamentos técnicos específicos da hemoterapia</strong>, incluindo Portaria GM/MS 11.685/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/legislacao/regulamentos-tecnicos-especificos-hemoterapia/ .\r<br>4. CARSON JL et al. <strong>Red Blood Cell Transfusion: 2023 AABB International Guidelines.</strong> JAMA. 2023;330:1892–1902. https://doi.org/10.1001/jama.2023.12914 .\r<br>5. METCALF RA et al. <strong>Platelet Transfusion: 2025 AABB and ICTMG International Clinical Practice Guidelines.</strong> JAMA. 2025;334:606–617. https://doi.org/10.1001/jama.2025.7529 .\r<br>6. SRIVASTAVA A et al. <strong>WFH Guidelines for the Management of Hemophilia</strong>, 3rd ed. Haemophilia. 2020;26(Suppl 6):1–158. https://doi.org/10.1111/hae.14046 .\r<br>7. MINISTÉRIO DA SAÚDE (BRASIL). <strong>Protocolo de uso de emicizumabe para hemofilia A moderada e grave com inibidores</strong>, aprovado em outubro de 2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hemofilia-a-2013-uso-do-emicizumabe-protocolo-de-uso/view .\r<br>8. JAMES PD et al. <strong>ASH ISTH NHF WFH 2021 guidelines on the diagnosis of von Willebrand disease.</strong> Blood Adv. 2021;5:280–300. https://doi.org/10.1182/bloodadvances.2020003265 .\r<br>9. CONNELL NT et al. <strong>ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease.</strong> Blood Adv. 2021;5:301–325. https://doi.org/10.1182/bloodadvances.2020003264 .\r<br>10. MIDDLEDORP S et al. <strong>American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing.</strong> Blood Adv. 2023;7:7101–7138. https://pubmed.ncbi.nlm.nih.gov/37195076/ .\r<br>11. TEKTONIDOU MG et al. <strong>EULAR recommendations for management of antiphospholipid syndrome in adults.</strong> Ann Rheum Dis. 2019;78:1296–1304. https://doi.org/10.1136/annrheumdis-2019-215213 .\r<br>12. ZHENG XL et al. <strong>2025 focused update of the 2020 ISTH guidelines for management of thrombotic thrombocytopenic purpura.</strong> J Thromb Haemost. 2025;23:3711–3732. https://pubmed.ncbi.nlm.nih.gov/40533296/ ."
+        ]
+      ]
+    ],
+    [
+      "26-pendencias-bloqueadoras-de-certificacao",
+      0,
+      [
+        [
+          "2",
+          "26. Pendências bloqueadoras de certificação"
+        ],
+        [
+          "p",
+          "<li>[x] Lote e tema conferidos com inventário; nenhum rascunho #232 existente no caminho visado.</li>\r<li>[x] Etapa zero do Drive com <strong>quatro fontes complementares efetivamente lidas</strong>; procedência institucional dos resumos não comprovada e não foi transcrito material.</li>\r<li>[x] Diretrizes oficiais consultadas para hemofilia, DVW, trombofilia, plaquetas, hemácias, PTT e TACO.</li>\r<li>[x] Núcleo principal escrito com raciocínio sindrômico, fisiopatologia, laboratoriais, manejo e quadros práticos.</li>\r<li>[ ] Mais de 90 mil caracteres <strong>brutos</strong>, sem auditoria conclusiva de ≥60.000 <strong>caracteres didáticos úteis</strong>; revisar densidade e redundâncias.</li>\r<li>[x] Incluídos 12 casos e 16 questões comentadas (alternativas A–E); <strong>validação independente de gabaritos ainda pendente</strong>.</li>\r<li>[ ] Auditoria farmacológica da integralidade de doses, apresentações e interações via PCDT/bulas.</li>\r<li>[ ] Conferência de disponibilidade brasileira e rotinas específicas: fator, emicizumabe, caplacizumabe, antídotos e hemoderivados.</li>\r<li>[ ] Selecionar ≥10 imagens candidatas, verificar licença e submeter ao Admin.</li>\r<li>[ ] Benchmark externo equivalente com comparação completa e auditoria de coesão de todas as partes.</li>\r<li>[ ] Revisão médica especializada, checagem dos critérios de cada diretriz em populações especiais, integração HTML e testes desktop/PWA.</li>\r<li>[ ] Manter <strong>NÃO PUBLICAR — não fazer merge, deploy ou alterar a main</strong>.</li>"
+        ]
+      ]
+    ]
+  ]
+}

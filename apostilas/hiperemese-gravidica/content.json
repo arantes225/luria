@@ -1,0 +1,1129 @@
+{
+  "v": 2,
+  "s": "hiperemese-gravidica",
+  "t": "Hiperêmese Gravídica",
+  "p": "Hiperêmese Gravídica — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Distúrbios Eméticos da Gestação, Eixo GDF15-GFRAL, Desidratação e Cetose de Jejum, Escore PUQE, Prevenção da Encefalopatia de Wernicke e Manejo Farmacológico Escalonado",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Ginecologia e Obstetrícia",
+  "h": [
+    "Apostila LURIA",
+    "Hiperêmese Gravídica",
+    "Tratado de Alta Performance em Distúrbios Eméticos da Gestação, Eixo GDF15-GFRAL, Desidratação e Cetose de Jejum, Escore PUQE, Prevenção da Encefalopatia de Wernicke e Manejo Farmacológico Escalonado",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Ginecologia e Obstetrícia",
+      "Tema: Hiperêmese Gravídica"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "definicoes-epidemiologia-emese-fisiologica-vs-hiperemese-gravidica",
+      "1. Espectro Clínico das Náuseas e Vômitos na Gravidez: Da Emese Fisiológica à Hiperêmese Gravídica (HG)"
+    ],
+    [
+      "criterios-diagnosticos-escore-puqe-e-disturbios-metabolicos",
+      "2. Critérios Diagnósticos, Estratificação pelo Escore PUQE e Distúrbios Hidroeletrolíticos e Ácido-Base"
+    ],
+    [
+      "diagnostico-diferencial-detalhado-na-hiperemese",
+      "3. Diagnóstico Diferencial Exhaustivo das Náuseas e Vômitos no Período Gestacional"
+    ],
+    [
+      "complicacoes-maternas-graves-wernicke-mielinolise-boerhaave-mallory-weiss",
+      "4. Complicações Maternas Críticas: Encefalopatia de Wernicke, Mielinólise Pontina Central, Lesões Esofágicas e Disfunção Renal Aguda"
+    ],
+    [
+      "tratamento-farmacologico-escalonado-linhas-de-cuidado",
+      "5. Tratamento Farmacológico Escalonado: Da Primeira Linha à Corticoterapia de Resgate e Segurança Fetal"
+    ],
+    [
+      "protocolo-de-hidratacao-parenteral-e-suporte-nutricional",
+      "6. Protocolo de Hidratação Parenteral, Reposição Hidroeletrolítica e Suporte Nutricional Crítico"
+    ],
+    [
+      "casos-clinicos-integrados-hiperemese-gravidica",
+      "7. Casos Clínicos Integrados com Raciocínio Diagnóstico e Condutas Passo a Passo"
+    ],
+    [
+      "questoes-comentadas-hiperemese-gravidica",
+      "8. Questões Comentadas de Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "tabela-high-yield-e-resumo-hiperemese-gravidica",
+      "9. Tabela High-Yield de Síntese e Diretrizes de Prática Clínica Baseada em Evidências"
+    ]
+  ],
+  "q": [
+    [
+      "definicoes-epidemiologia-emese-fisiologica-vs-hiperemese-gravidica",
+      0,
+      [
+        [
+          "2",
+          "1. Espectro Clínico das Náuseas e Vômitos na Gravidez: Da Emese Fisiológica à Hiperêmese Gravídica (HG)"
+        ],
+        [
+          "3",
+          "1.1 Introdução e Relevância Obstétrica"
+        ],
+        [
+          "p",
+          "As queixas de náuseas e vômitos no início da gestação representam uma das manifestações clínicas mais universais da gravidez humana, acometendo entre 50% e 85% de todas as gestantes no primeiro trimestre. Na imensa maioria dos casos, trata-se de um fenômeno autolimitado e benigno, historicamente denominado \"enjoo matinal\" (termo coloquial inadequado, já que mais de 80% das pacientes apresentam episódios que persistem ao longo de todo o dia e noite). Contudo, no extremo mais severo desse espectro clínico encontra-se a <strong>Hiperêmese Gravídica (HG)</strong>, uma condição patológica potencialmente devastadora que incide em aproximadamente 0,3% a 3% de todas as gestações, figurando como a <strong>principal causa de hospitalização obstétrica no primeiro trimestre da gravidez</strong> e a segunda causa mais frequente de internação durante toda a gestação, superada apenas pelo trabalho de parto prematuro."
+        ],
+        [
+          "p",
+          "A Hiperêmese Gravídica distingue-se fundamentalmente da emese fisiológica benigna pelo impacto catabólico sistêmico profundo: caracteriza-se pela presença de náuseas e vômitos incoercíveis e intratáveis que impedem a ingesta oral adequada de líquidos e nutrientes, culminando em <strong>desidratação clínica, perda ponderal acentuada (&gt; 5% do peso pré-gestacional), cetonúria (cetose de jejum prolongado) e distúrbios hidroeletrolíticos e metabólicos graves</strong>. Quando não reconhecida e manejada de forma agressiva e oportuna, a HG associa-se a complicações maternas com risco iminente de morte (como a encefalopatia de Wernicke e a rotura esofágica de Boerhaave) e desfechos perinatais adversos (como restrição de crescimento fetal intrauterino e prematuridade extrema)."
+        ],
+        [
+          "3",
+          "1.2 Diferenciação Semiológica: Emese Gravídica Fisiológica vs Hiperêmese Gravídica"
+        ],
+        [
+          "p",
+          "A distinção clínica precisa entre as duas entidades é o alicerce para evitar tanto a prescrição desnecessária de medicações de resgate em quadros leves quanto a perigosa negligência terapêutica em gestantes em franca deterioração metabólica:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Clínico-Laboratorial",
+            "Emese Gravídica Fisiológica (\"Enjoo Matinal\")",
+            "Hiperêmese Gravídica (HG)"
+          ],
+          [
+            [
+              "<strong>Início e Cronologia Típica</strong>",
+              "Início entre a 4ª e 6ª semana, pico na 9ª semana e resolução espontânea entre a 12ª e 16ª semana de idade gestacional (90% dos casos).",
+              "Início no primeiro trimestre (frequentemente antes da 8ª-9ª semana), persistindo com intensidade severa além da 16ª-20ª semana; em 10% a 20% das pacientes, estende-se até o terceiro trimestre ou até o parto."
+            ],
+            [
+              "<strong>Tolerância à Dieta e Hidratação Oral</strong>",
+              "Preservada ou discretamente reduzida; a paciente tolera pequenas porções fracionadas e ingesta hídrica satisfatória.",
+              "<strong>Intolerância oral absoluta ou quase absoluta</strong>: incapacidade de reter qualquer alimento sólido ou líquido por mais de 12 a 24 horas consecutivas."
+            ],
+            [
+              "<strong>Variação Ponderal</strong>",
+              "Peso corporal mantido estável ou com ganho ponderal discreto compatível com o primeiro trimestre.",
+              "<strong>Perda ponderal progressiva obrigatória: perda de mais de 5% do peso corporal pré-gestacional</strong> (frequentemente &gt; 10% nos casos não tratados)."
+            ],
+            [
+              "<strong>Estado de Hidratação</strong>",
+              "Euvolemia clínica: mucosas úmidas, turgor cutâneo normal, diurese clara e preservada.",
+              "<strong>Desidratação clínica moderada a grave</strong>: mucosas secas ou ressecadas, turgor cutâneo diminuído (\"sinal da tenda\"), olhos encovados, oligúria com urina hiperconcentrada, hipotensão postural e taquicardia compensatória."
+            ],
+            [
+              "<strong>Cetonúria (Cetose de Jejum)</strong>",
+              "Negativa (ausência total de corpos cetônicos no EAS / dipstick).",
+              "<strong>Positiva: cetonúria moderada a maciça (&ge; 2+ a 4+)</strong>, refletindo o esgotamento total dos estoques hepáticos de glicogênio e o início da lipólise de emergência."
+            ],
+            [
+              "<strong>Equilíbrio Hidroeletrolítico e Ácido-Base</strong>",
+              "Completamente normal; eletrólitos e gasometria venosa dentro dos padrões de referência.",
+              "<strong>Distúrbios frequentes e graves</strong>: Alcalose metabólica hipoclorêmica e hipocalêmica (decorrente da perda copiosa de ácido clorídrico no suco gástrico), hiponatremia e hipomagnesemia."
+            ],
+            [
+              "<strong>Impacto na Qualidade de Vida</strong>",
+              "Desconforto tolerável; capacidade preservada de desempenhar atividades cotidianas e laborais.",
+              "Incapacitação funcional completa, confinamento ao leito, isolamento social, sintomas depressivos severos e ideação abortiva secundária ao sofrimento intratável."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "1.3 Fisiopatologia Molecular e Hormonal: A Revolução do GDF15 e os Eixos Endócrinos"
+        ],
+        [
+          "p",
+          "A etiopatogenia da hiperêmese gravídica foi historicamente cercada por teorias reducionistas e equivocadas (inclusive formulações psicanalíticas anacrônicas que rotulavam a hiperêmese como \"rejeição psicológica inconsciente à gestação\" ou \"somatização histérica\"). Nas últimas décadas e, de forma revolucionária, nos estudos genômicos publicados entre 2018 e 2024 (destacando-se os trabalhos seminais da geneticista Marlena Fejzo e colaboradores na <em>Nature</em>), desvendou-se a base biológica, genética e molecular exata da hiperêmese gravídica."
+        ],
+        [
+          "4",
+          "1. O Eixo Fetal-Materno do Peptídeo GDF15 e seu Receptor GFRAL (A Descoberta Central):"
+        ],
+        [
+          "p",
+          "O <strong>Growth Differentiation Factor 15 (GDF15)</strong> é uma citocina circulante pertencente à superfamília do fator de crescimento transformador beta (TGF-beta), expressa constitutivamente em baixas concentrações em tecidos periféricos, mas produzida em <strong>quantidades astronômicas pelo sinciciotrofoblasto placentário</strong> durante o primeiro trimestre gestacional.\nO mecanismo neurobiológico do GDF15 na hiperêmese envolve uma cascata precisa:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Receptor Específico no Tronco Encefálico:</strong> O receptor fisiológico do GDF15, denominado <strong>GFRAL (GDNF Family Receptor Alpha-Like)</strong>, expresso exclusivamente associado ao co-receptor tirosina-quinase RET, localiza-se de forma estritamente restrita em duas regiões anatômicas do tronco cerebral: a <strong>área postrema (o centro do gatilho quimiorreceptor - CTZ)</strong> e o <strong>núcleo do trato solitário (NTS)</strong>. Crucialmente, a área postrema é uma estrutura periventricular circundesprovida de barreira hematoencefálica íntegra, permitindo que peptídeos e citocinas carreados pela corrente sanguínea materna estimulem diretamente os neurônios emetogênicos;",
+            "<strong>Sensibilidade Materna Pré-Gestacional e Polimorfismos:</strong> Estudos genéticos de associação genômica ampla (GWAS) revelaram que variantes genéticas no gene <em>GDF15</em> (como o alelo de risco rs16982345) e no gene <em>GFRAL</em> determinam a susceptibilidade à HG. Mulheres portadoras de mutações hipomórficas que produzem <strong>níveis pré-gestacionais cronicamente muito baixos de GDF15</strong> apresentam uma hipersensibilidade de regulação positiva (<em>upregulation</em>) dos receptores GFRAL no tronco cerebral. Quando essas mulheres engravidam de um feto/placenta geneticamente produtor de altos níveis de GDF15, o salto súbito e brutal na concentração sérica do hormônio causa hiperestimulação catastrófica da área postrema, deflagrando náuseas incoercíveis e aversão alimentar extrema;",
+            "<strong>Papel Protetor da Exposição Prévia:</strong> Por outro lado, mulheres que apresentam níveis basais cronicamente mais altos de GDF15 antes da gestação (como pacientes com certas hemoglobinopatias crônicas ou aquelas com hábitos específicos) desenvolvem tolerância dessensibilizante no receptor GFRAL e raramente apresentam hiperêmese gravídica."
+          ]
+        ],
+        [
+          "4",
+          "2. Gonadotrofina Coriônica Humana (beta-hCG):"
+        ],
+        [
+          "p",
+          "A correlação clínica temporal entre o pico de náuseas/vômitos e o pico das concentrações séricas de <strong>beta-hCG (entre a 8ª e a 11ª semana de gestação)</strong> sempre foi evidente. A incidência de hiperêmese é significativamente mais elevada em condições associadas a massas placentárias volumosas e níveis hiperfisiológicos de hCG, tais como a <strong>gestação gemelar/múltipla</strong> e a <strong>doença trofoblástica gestacional (mola hidatiforme completa e parcial)</strong>. O hCG possui uma subunidade alfa estruturalmente idêntica à do hormônio estimulador da tireoide (TSH), LH e FSH, além de homologia na subunidade beta. Em concentrações maciças, o hCG exerce efeito <em>crossover</em> sobre o receptor de TSH na glândula tireoide materna, estimulando a síntese de tiroxina livre (T4L) e suprimindo o TSH — fenômeno conhecido como <strong>Hipertireoidismo Gestacional Transitório</strong>, frequentemente associado aos quadros mais graves de HG."
+        ],
+        [
+          "4",
+          "3. Estrogênios e Progesterona:"
+        ],
+        [
+          "p",
+          "Os níveis exponencialmente crescentes de <strong>estradiol e estriol</strong> atuam em sinergia com o GDF15 e o hCG, potencializando a sensibilidade neuronal central e o olfato materno (hiperosmia gestacional acentuada, na qual odores específicos deflagram êmese imediata). Concomitantemente, as concentrações elevadas de <strong>progesterona</strong> exercem um potente efeito miorelaxante sobre a musculatura lisa do trato gastrointestinal através da inibição dos canais de cálcio dependentes de voltagem e modulação de óxido nítrico. Isso resulta em <strong>hipotonia acentuada do esfíncter esofágico inferior, retardo significativo do esvaziamento gástrico (gastroparesia fisiológica gestacional) e disritmias elétricas gástricas (taquigastria)</strong>, tornando o estômago um órgão mecanicamente distendido e predisposto ao refluxo gastroesofágico e à êmese."
+        ]
+      ]
+    ],
+    [
+      "criterios-diagnosticos-escore-puqe-e-disturbios-metabolicos",
+      0,
+      [
+        [
+          "2",
+          "2. Critérios Diagnósticos, Estratificação pelo Escore PUQE e Distúrbios Hidroeletrolíticos e Ácido-Base"
+        ],
+        [
+          "3",
+          "2.1 Critérios Diagnósticos Padronizados de Hiperêmese Gravídica"
+        ],
+        [
+          "p",
+          "O diagnóstico da hiperêmese gravídica é eminentemente <strong>clínico e de exclusão</strong>. O <em>Consensus on Hyperemesis Gravidarum Assessment and Research</em> (Consenso WINDSOR de 2021), apoiado pela Federação Internacional de Ginecologia e Obstetrícia (FIGO), pelo <em>American College of Obstetricians and Gynecologists</em> (ACOG) e pela Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), estabeleceu os quatro critérios cardeais que definem a Síndrome de Hiperêmese Gravídica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Início no Primeiro Trimestre da Gestação:</strong> Náuseas e vômitos com início característico entre a 4ª e 9ª semanas de gestação, com ausência de sintomas gastrointestinais semelhantes antes da concepção;",
+            "<strong>Intolerância Alimentar com Incapacidade de Manutenção Nutricional/Hídrica:</strong> Impossibilidade de manter hidratação e alimentação oral adequadas por período sustentado;",
+            "<strong>Perda Ponderal Objetiva e Significativa:</strong> Redução documentada de <strong>mais de 5% do peso corporal pré-gestacional</strong> (ou em relação ao peso medido na primeira consulta de pré-natal);",
+            "<strong>Presença de Desidratação e/ou Cetonúria/Distúrbios Metabólicos:</strong> Presença de sinais clínicos de espoliação de fluidos associada a cetonúria detectável e/ou alterações eletrolíticas séricas;",
+            "<strong>Exclusão Rigorosa de Outras Causas Médicas:</strong> Ausência de condições infecciosas, cirúrgicas, endócrinas ou gastrointestinais primárias que justifiquem o quadro emético."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Avaliação Objetiva de Gravidade: O Escore PUQE Modificado"
+        ],
+        [
+          "p",
+          "O escore <strong>PUQE (<em>Pregnancy-Unique Quantification of Emesis and Nausea</em>)</strong> modificado para as últimas 24 horas é a ferramenta psicométrica e clínica validada internacionalmente para quantificar a gravidade dos sintomas eméticos na gestação e guiar o escalonamento terapêutico farmacológico."
+        ],
+        [
+          "t",
+          [
+            "Pergunta Avaliada (Últimas 24 horas)",
+            "1 Ponto",
+            "2 Pontos",
+            "3 Pontos",
+            "4 Pontos",
+            "5 Pontos"
+          ],
+          [
+            [
+              "<strong>1. Durante quanto tempo você sentiu náuseas ou mal-estar no estômago?</strong>",
+              "Não sentiu",
+              "&le; 1 hora",
+              "2 a 3 horas",
+              "4 a 6 horas",
+              "&gt; 6 horas"
+            ],
+            [
+              "<strong>2. Quantas vezes você vomitou ao longo do dia?</strong>",
+              "Nenhuma",
+              "1 a 2 vezes",
+              "3 a 4 vezes",
+              "5 a 6 vezes",
+              "&ge; 7 vezes"
+            ],
+            [
+              "<strong>3. Quantas vezes você teve ânsia de vômito ou esforço sem conseguir vomitar (arcadas)?</strong>",
+              "Nenhuma",
+              "1 a 2 vezes",
+              "3 a 4 vezes",
+              "5 a 6 vezes",
+              "&ge; 7 vezes"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Interpretação Clínica e Conduta Guiada pelo Escore PUQE Total:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pontuação de 3 a 6 pontos — Emese Leve:</strong> Tratamento ambulatorial com medidas dietéticas comportamentais, fracionamento de refeições, uso de gengibre e farmacoterapia de primeira linha oral isolada;",
+            "<strong>Pontuação de 7 a 12 pontos — Emese Moderada:</strong> Tratamento ambulatorial intensivo ou em regime de hospital-dia com associação de antieméticos orais de classes complementares e hidratação parenteral intermitente se necessário;",
+            "<strong>Pontuação de 13 a 15 pontos — Emese Grave (Hiperêmese Gravídica):</strong> <strong>Indicação mandatória de internação hospitalar imediata</strong> para jejum gastrointestinal temporário, reposição parenteral vigorosa de fluidos e eletrólitos com tiamina profilática e antieméticos intravenosos em esquema multimodal."
+          ]
+        ],
+        [
+          "3",
+          "2.3 Fisiopatologia dos Distúrbios Hidroeletrolíticos e Ácido-Base"
+        ],
+        [
+          "p",
+          "A perda maciça e repetida de secreções gastrointestinais na hiperêmese desencadeia alterações sistêmicas profundas que afetam múltiplos eixos homeostáticos:"
+        ],
+        [
+          "4",
+          "1. A Tríade Eletrolítica Clássica: Hipocloremia, Hipocalemia e Alcalose Metabólica:"
+        ],
+        [
+          "p",
+          "O suco gástrico secretado pelas células parietais do estômago é extremamente rico em ácido clorídrico ($HCl$), contendo íons hidrogênio ($H^+$) e cloro ($Cl^-$) em concentrações de até 100 a 140 mEq/L, além de concentrações moderadas de potássio ($K^+$ ~ 10-15 mEq/L).\nA sequência de eventos patológicos ocorre da seguinte forma:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Perda Direta de Hidrogênio e Cloro:</strong> Os vômitos incoercíveis eliminam quantidades volumosas de $H^+$ e $Cl^-$. A perda de íons hidrogênio gera acúmulo relativo de bicarbonato ($HCO_3^-$) no plasma intravascular, instalando a <strong>alcalose metabólica</strong>;",
+            "<strong>Hipovolemia Efetiva e Ativação do Sistema Renina-Angiotensina-Aldosterona (SRAA):</strong> A desidratação decorrente da perda hídrica reduz a volemia arterial efetiva e a taxa de filtração glomerular, estimulando intensamente a liberação de aldosterona pelo córtex suprarrenal;",
+            "<strong>Secreção Renal Paradoxal de Potássio e Hidrogênio:</strong> No túbulo contorcido distal e ducto coletor cortical renal, a aldosterona atua promovendo a reabsorção máxima de sódio para preservar a volemia. Contudo, devido à depleção extrema de cloro circulante (hipocloremia grave), o rim é incapaz de reabsorver sódio acompanhado de cloro. Para manter a eletronegatividade luminal, o epitélio tubular renal é forçado a <strong>excretar massivamente potássio ($K^+$) e íons hidrogênio ($H^+$) na urina</strong>;",
+            "<strong>Agravamento da Hipocalemia e Acidúria Paradoxal:</strong> A perda renal de potássio, somada à perda gástrica e à baixa ingesta, induz <strong>hipocalemia severa</strong> (&lt; 3,0 mEq/L), propiciando arritmias cardíacas (onda U, achatamento de onda T, extrassístoles ventriculares) e íleo paralítico gastrointestinal. Além disso, quando o potássio intracelular se esgota por completo, as células tubulares renais passam a secretar exclusivamente íons $H^+$ na urina, gerando o fenômeno de <strong>acidúria paradoxal na vigência de alcalose metabólica sistêmica</strong>."
+          ]
+        ],
+        [
+          "4",
+          "2. Hiponatremia e Cetose de Jejum Prolongado:"
+        ],
+        [
+          "p",
+          "A privação calórica absoluta esgota os depósitos hepáticos de glicogênio em menos de 16 a 24 horas. Para suprir a demanda energética do organismo materno e do feto em desenvolvimento, o metabolismo celular migra obrigatoriamente para a beta-oxidação acelerada de ácidos graxos no fígado. A superprodução de acetil-CoA ultrapassa a capacidade do ciclo de Krebs, gerando corpos cetônicos (acetoacetato e beta-hidroxibutirato). A eliminação renal desses metabólitos manifesta-se como <strong>cetonúria volumosa</strong>.\nSimultaneamente, o estresse hipovolêmico estimula a liberação não osmótica de hormônio antidiurético (arginina-vasopressina - ADH) pela neuro-hipófise, promovendo a retenção de água livre nos ductos coletores renais e causando <strong>hiponatremia hipovolêmica hipotônica</strong> (sódio sérico frequentemente &lt; 130 mEq/L)."
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial-detalhado-na-hiperemese",
+      0,
+      [
+        [
+          "2",
+          "3. Diagnóstico Diferencial Exhaustivo das Náuseas e Vômitos no Período Gestacional"
+        ],
+        [
+          "3",
+          "3.1 O Princípio da Exclusão em Obstetrícia"
+        ],
+        [
+          "p",
+          "O diagnóstico de hiperêmese gravídica só é eticamente e cientificamente sustentável quando todas as afecções clínicas, cirúrgicas, infecciosas e metabólicas com potencial emético foram ativamente pesquisadas e descartadas. O surgimento de <strong>náuseas e vômitos com início TARDIO (após a 10ª-12ª semana de gestação) ou associados a febre, dor abdominal intensa ou cefaleia proeminente NUNCA deve ser atribuído primariamente à hiperêmese gravídica</strong> e exige investigação diagnóstica imediata."
+        ],
+        [
+          "t",
+          [
+            "Categoria / Condição Médica",
+            "Mecanismos e Pistas Clínicas Diferenciais",
+            "Exames Complementares Discriminatórios"
+          ],
+          [
+            [
+              "<strong>Doenças Gastrointestinais e Hepatobiliares:</strong><br>Gastroenterite Aguda Infecciosa",
+              "Início súbito, curso agudo curto (24 a 72 horas), <strong>presença de diarreia aquosa profusa concomitante</strong>, febre baixa a moderada e cólicas abdominais difusas. História epidemiológica de contaminação alimentar ou contactantes domiciliares com quadro semelhante.",
+              "Leucocitose com desvio à esquerda em casos bacterianos; pesquisa de leucócitos fecais ou PCR para enteropatógenos nas fezes."
+            ],
+            [
+              "<strong>Apendicite Aguda na Gestação</strong>",
+              "Vômitos precedidos ou acompanhados de <strong>dor abdominal persistente e progressiva</strong>, inicialmente periumbilical e que migra para o ponto de McBurney (no primeiro trimestre) ou para o flanco/hipocôndrio direito (conforme o útero gravídico eleva o ceco e o apêndice nos trimestres posteriores). Febre, taquicardia e descompressão dolorosa (sinal de Blumberg).",
+              "Ultrassonografia de abdome total (apêndice espessado &gt; 6 mm não compressível) ou <strong>Ressonância Magnética de Abdome sem gadolínio</strong> (método de escolha se USG inconclusivo). Evitar tomografia no 1º trimestre se RM disponível."
+            ],
+            [
+              "<strong>Colecistite Aguda e Coledocolitíase</strong>",
+              "Vômitos associados a <strong>dor intensa em cólica ou contínua no hipocôndrio direito irradiando para escápula</strong> (sinal de Murphy positivo), agravada pela ingestão de alimentos gordurosos. Pode haver icterícia obstrutiva com colúria e acolia fecal se houver coledocolitíase.",
+              "Ultrassonografia de vias biliares: cálculo impactado, espessamento de parede da vesícula &gt; 3-4 mm, líquido pericolecístico; elevação acentuada de Gama-GT, Fosfatase Alcalina e Bilirrubina Direta."
+            ],
+            [
+              "<strong>Hepatites Virais Agudas (A, B, C, E)</strong>",
+              "Pródromos constitucionais (astenia intensa, anorexia, mialgia, febre baixa) seguidos de vômitos, icterícia hepatocelular franca, colúria, acolia fecal e hepatomegalia dolorosa.",
+              "<strong>Transaminases (ALT e AST) maciçamente elevadas (frequentemente &gt; 1.000 U/L a 2.000 U/L)</strong>, diferentemente da HG onde as transaminases, se alteradas, raramente ultrapassam 200 a 300 U/L; sorologias virais reagentes (Anti-HAV IgM, HBsAg, Anti-HBc IgM, Anti-HCV, Anti-HEV IgM)."
+            ],
+            [
+              "<strong>Condições Nefrológicas:</strong><br>Pielonefrite Aguda Gestacional",
+              "Vômitos incoercíveis acompanhados de <strong>febre alta em picos com calafrios</strong>, taquicardia materna importante, <strong>dor lombar unilateral ou bilateral intensa e sinal de Giordano fortemente positivo</strong> à punho-percussão lombar. Sintomas urinários baixos (disúria, polaciúria) podem estar ausentes.",
+              "EAS com piúria maciça, bacteriúria, nitrito positivo e cilindros leucocitários; leucocitose neutrofílica com desvio à esquerda; Urocultura com antibiograma identificando o patógeno (mais comum: <em>E. coli</em>)."
+            ],
+            [
+              "<strong>Condições Endócrinas:</strong><br>Hipertireoidismo Gestacional Transitório vs Doença de Graves",
+              "O hipertireoidismo transitório gestacional induzido pelo pico maciço de hCG cursa com TSH suprimido e T4 livre elevado, mas <strong>sem bócio tireoidiano, sem oftalmopatia infiltrativa (exoftalmia) e sem anticorpos</strong>, resolvendo-se espontaneamente por volta da 16ª semana. Já a Doença de Graves cursa com bócio difuso vascularizado, oftalmopatia e risco de tempestade tireotóxica.",
+              "<strong>Anticorpo Anti-Receptor de TSH (TRAB)</strong>: estritamente negativo no hipertireoidismo transitório da HG e fortemente positivo na Doença de Graves."
+            ],
+            [
+              "<strong>Cetoacidose Diabética (CAD)</strong>",
+              "Gestantes com Diabetes Mellitus pré-gestacional tipo 1 (ou tipo 2 com falência de células beta) que descompensam com vômitos profusos, taquipneia compensatória profunda (respiração de Kussmaul), hálito cetônico e desidratação crítica. Na gestação, pode ocorrer a perigosa <strong>Cetoacidose Diabética Euglicêmica</strong> (glicemia &lt; 200 mg/dL devido ao consumo de glicose pela unidade fetoplacentária e glicosúria renal aumentada).",
+              "Gasometria arterial revelando acidose metabólica com <strong>ânion gap elevado</strong> ($pH &lt; 7,30$, $HCO_3^- &lt; 15$ mEq/L), cetonúria e cetonemia elevadas, diferindo da HG (que cursa classicamente com alcalose metabólica)."
+            ],
+            [
+              "<strong>Condições Obstétricas Específicas:</strong><br>Doença Trofoblástica Gestacional (Mola Hidatiforme)",
+              "Vômitos de intensidade extrema e precoce associados a <strong>sangramento genital intermitente em \"suco de ameixa\", útero de tamanho desproporcionalmente maior do que o esperado para a idade gestacional</strong>, saída de vesículas semelhantes a uvas pela vagina, hipertensão arterial precoce (&lt; 20 semanas) e ausência de batimentos cardiofetais.",
+              "<strong>Dosagem sérica de beta-hCG com valores astronômicos (&gt; 100.000 a 200.000 mUI/mL)</strong>; Ultrassonografia transvaginal revelando o aspecto clássico em \"tempestade de neve\", \"flocos de algodão\" ou \"queijo suíço\", sem feto visível (mola completa)."
+            ],
+            [
+              "<strong>Gestação Múltipla (Gemelaridade)</strong>",
+              "Massa placentária dobrada ou triplicada com níveis muito elevados de hCG e estrogênios, gerando náuseas severas.",
+              "Ultrassonografia obstétrica demonstrando dois ou mais sacos gestacionais e embriões viáveis."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "complicacoes-maternas-graves-wernicke-mielinolise-boerhaave-mallory-weiss",
+      0,
+      [
+        [
+          "2",
+          "4. Complicações Maternas Críticas: Encefalopatia de Wernicke, Mielinólise Pontina Central, Lesões Esofágicas e Disfunção Renal Aguda"
+        ],
+        [
+          "3",
+          "4.1 Encefalopatia de Wernicke na Gestação: A Catástrofe da Deficiência de Tiamina"
+        ],
+        [
+          "p",
+          "A <strong>Encefalopatia de Wernicke (EW)</strong> é uma emergência neuropsiquiátrica aguda potencialmente letal provocada pela depleção severa de <strong>vitamina B1 (tiamina pirofosfato)</strong>. Historicamente associada ao alcoolismo crônico, a gestação com hiperêmese gravídica representa o segundo cenário clínico mais clássico e perigoso de desenvolvimento da EW no mundo moderno."
+        ],
+        [
+          "4",
+          "Fisiopatologia da Depleção de Tiamina e Bioenergética Celular:"
+        ],
+        [
+          "p",
+          "O organismo humano possui estoques hepáticos extremamente limitados de tiamina (cerca de 30 a 50 mg no total), suficientes para manter o metabolismo celular por apenas <strong>14 a 21 dias na ausência total de ingesta alimentar</strong>. Na gestação, a demanda metabólica basal de tiamina encontra-se fisiologicamente aumentada devido ao consumo energético do feto e da placenta em rápido desenvolvimento. A gestante com hiperêmese grave que vomita repetidamente e permanece em jejum prolongado por 2 a 3 semanas atinge rapidamente o esgotamento total de suas reservas corpóreas de tiamina."
+        ],
+        [
+          "p",
+          "A forma ativa da tiamina — a <strong>tiamina pirofosfato (TPP)</strong> — atua como coenzima indispensável em três vias enzimáticas chaves do metabolismo mitocondrial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Complexo Piruvato Desidrogenase:</strong> catalisa a conversão de piruvato em acetil-CoA, o elo obrigatório entre a glicólise anaeróbia e o Ciclo de Krebs mitocondrial;",
+            "<strong>Complexo Alfa-Cetoglutarato Desidrogenase:</strong> etapa intermediária limitante do Ciclo do Ácido Cítrico no Ciclo de Krebs;",
+            "<strong>Transcetolase:</strong> enzima central da via das pentoses-fosfato, responsável pela manutenção dos níveis de mielina, integridade das membranas neuronais e síntese de NADPH (redutor de glutationa contra estresse oxidativo)."
+          ]
+        ],
+        [
+          "p",
+          "Na carência de tiamina, a célula neuronal perde a capacidade de oxidar glicose pela via aeróbia, acumulando lactato e piruvato, o que resulta em <strong>acidose lática cerebral focal, falência energética da bomba $Na^+/K^+$-ATPase, edema citotóxico e quebra da barreira hematoencefálica com micro-hemorragias focais</strong> em áreas de alta atividade metabólica basal: <strong>corpos mamilares, tálamo medial, hipotálamo, teto do mesencéfalo e assoalho do IV ventrículo</strong>."
+        ],
+        [
+          "4",
+          "O Erro Iatrogênico Fatal Mais Cobrado nas Bancas:"
+        ],
+        [
+          "p",
+          "<blockquote>\n<strong>ATENÇÃO MÁXIMA / REGRA DE OURO DAS BANCAS:</strong><br>\nA infusão intravenosa de soluções glicosadas (Soro Glicosado a 5% ou 10%) em uma paciente com estoques depletados de tiamina é o <strong>gatilho iatrogênico mais potente para deflagrar ou precipitar de forma fulminante a Encefalopatia de Wernicke aguda</strong>! A sobrecarga de glicose exógena estimula a glicólise acelerada, que consome rapidamente os últimos resquícios residuais de tiamina pirofosfato para descarboxilar o piruvato. <strong>Portanto, NUNCA prescreva soro glicosado a uma gestante com vômitos prolongados sem antes administrar TIAMINA 100 mg IV em bólus! A tiamina DEVE SEMPRE PRECEDER o soro com glicose!</strong>\n</blockquote>"
+        ],
+        [
+          "4",
+          "Manifestações Clínicas e a Tríade Clássica de Wernicke:"
+        ],
+        [
+          "p",
+          "A apresentação clínica canônica é descrita pela famosa <strong>Tríade de Wernicke</strong>, embora a presença simultânea dos três componentes ocorra em menos de um terço das pacientes obstétricas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Alterações Oculomotoras (Oftalmoplegia e Nistagmo):</strong> É a manifestação neurológica mais precoce e sensível. Caracteriza-se por <strong>nistagmo horizontal ou rotatório evocado pelo olhar lateral</strong>, paralisia bilateral do VI par craniano (nervo abducente, impedindo o desvio lateral dos globos oculares), paralisia do olhar conjugado vertical e pupilas com reflexo fotomotor lentificado ou midríase;",
+            "<strong>2. Ataxia de Marcha e Tronco:</strong> Incapacidade de caminhar em linha reta, marcha ebriosa de base alargada, instabilidade postural severa e dismetria apendicular (decorrente de lesão do vermis cerebelar e núcleos vestibulares);",
+            "<strong>3. Confusão Mental Global / Encefalopatia Aguda:</strong> Apatia profunda, desorientação têmporo-espacial, sonolência, letargia, lentificação do pensamento, amnésia anterógrada e retrógrada e confabulação compensatória (transição para a <strong>Síndrome de Korsakoff</strong>, sequela amnésica crônica irreversível)."
+          ]
+        ],
+        [
+          "4",
+          "Diagnóstico por Imagem e Protocolo Terapêutico de Resgate:"
+        ],
+        [
+          "p",
+          "O método de imagem padrão-ouro é a <strong>Ressonância Magnética de Encéfalo (sem contraste)</strong>, evidenciando hipersinal característico e simétrico nas sequências T2 e FLAIR nos <strong>corpos mamilares (altamente específico), tálamo dorsomedial, substância cinzenta periaquedutal e colículos</strong>."
+        ],
+        [
+          "p",
+          "<strong>Tratamento Imediato de Resgate:</strong> Diante da mera suspeita clínica, não aguarde a ressonância para iniciar o tratamento. Prescrever <strong>Cloridrato de Tiamina (Vitamina B1) 500 mg IV a cada 8 horas (diluído em 100 mL de soro fisiológico a 0,9% infundido em 30 minutos) por 3 a 5 dias consecutivos</strong>, seguido de manutenção com 250 mg IV uma vez ao dia por mais 3 a 5 dias e transição posterior para 100 mg VO diariamente até a resolução definitiva da hiperêmese. As alterações oculomotoras costumam regredir em 24 a 48 horas após a tiamina, mas a ataxia e a amnésia de Korsakoff podem persistir de forma permanente em até 60% a 80% das pacientes cujo tratamento foi tardio."
+        ],
+        [
+          "3",
+          "4.2 Mielinólise Pontina Central (Síndrome de Desmielinização Osmótica)"
+        ],
+        [
+          "p",
+          "A gestante com hiperêmese frequentemente apresenta hiponatremia hipovolêmica grave ($Na^+ &lt; 120$ a 125 mEq/L) decorrente de perdas gastrointestinais e liberação de ADH. As células gliais do sistema nervoso central adaptam-se à hiponatremia crônica extrudando osmólitos orgânicos intracelulares (glutamato, taurina, mio-inositol) para o líquido intersticial a fim de evitar o edema cerebral.\nSe o médico tentar normalizar o sódio sérico de maneira intempestiva e ultrarrápida (infusões agressivas de solução salina hipertônica a 3%), cria-se um gradiente osmótico extracelular agudo e dessecante. A água é violentamente drenada do meio intracelular neuronal para o leito vascular, provocando a <strong>morte apoptótica dos oligodendrócitos e retração da bainha de mielina na base da ponte cerebral — a Mielinólise Pontina Central</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Clínico:</strong> Instala-se 2 a 6 dias após a correção rápida do sódio, manifestando-se por tetraparesia ou tetraplegia espástica flácida inicial, disfagia grave, disartria anártrica, paralisia pseudobulbar e a trágica <strong>Síndrome do Cativeiro (<em>Locked-in Syndrome</em>)</strong>, na qual a paciente permanece em vigília e consciente, com sensibilidade intacta, porém completamente paralisada de todos os quatro membros e face, conseguindo comunicar-se apenas através de movimentos verticais dos olhos e piscamento palpebral;",
+            "<strong>Prevenção Rígida nas Bancas:</strong> A taxa de elevação do sódio sérico na hiponatremia crônica sintomática <strong>NUNCA deve ultrapassar o limite seguro de 8 a 10 mEq/L em um período de 24 horas</strong> (ou no máximo 0,5 mEq/L por hora)."
+          ]
+        ],
+        [
+          "3",
+          "4.3 Lesões Mecânicas Esofagogástricas: Síndrome de Mallory-Weiss e Síndrome de Boerhaave"
+        ],
+        [
+          "p",
+          "O esforço violento e incoercível da musculatura toracoabdominal contra uma glote fechada ou estômago espástico durante os episódios de êmese repetida pode gerar picos de pressão intraluminal gástrica superiores a 150-200 mmHg, deflagrando duas lesões anatômicas de prognóstico muito diferente:"
+        ],
+        [
+          "4",
+          "1. Síndrome de Mallory-Weiss:"
+        ],
+        [
+          "p",
+          "Consiste em uma <strong>laceração linear longitudinal superficial e mucosa/submucosa</strong> na junção esofagogástrica (linha Z). O quadro clássico é caracterizado por vários episódios prévios de vômitos contendo apenas suco gástrico alimentar e bilioso, seguidos subitamente por um episódio de <strong>êmese com sangue vivo rutilante (hematêmese)</strong>. Em mais de 85% a 90% das gestantes, o sangramento cessa espontaneamente com suspensão temporária da dieta oral e uso de inibidores da bomba de prótons intravenosos (Omeprazol 40 mg IV); nos casos de sangramento ativo refratário com instabilidade hemodinâmica, indica-se Endoscopia Digestiva Alta (EDA) terapêutica com injeção de adrenalina ou clipagem mecânica endoscópica."
+        ],
+        [
+          "4",
+          "2. Síndrome de Boerhaave (Rotura Esofágica Espontânea Completa):"
+        ],
+        [
+          "p",
+          "Trata-se de uma complicação catastrófica de altíssima letalidade (30% a 50%), consistindo na <strong>perfuração transmural completa de todas as camadas anatômicas da parede do esôfago distal</strong> (habitualmente na parede posterolateral esquerda, 2 a 3 cm acima da cárdia). O suco gástrico ácido e as bactérias contaminam violentamente o mediastino e o espaço pleural esquerdo."
+        ],
+        [
+          "u",
+          [
+            "<strong>A Tríade Clássica de Mackler:</strong> É composta por <strong>vômitos violentos repetidos + dor torácica retroesternal excruciante lancinante irradiando para o dorso + enfisema subcutâneo palpável na fúrcula esternal e no pescoço</strong>;",
+            "<strong>Achados Complementares:</strong> Radiografia ou Tomografia de tórax demonstrando pneumomediastino, derrame pleural esquerdo e pneumotórax; ausculta com crepitação mediastinal sincrônica com os batimentos cardíacos (sinal de Hamman);",
+            "<strong>Conduta Emergencial:</strong> Jejum absoluto, antibioticoterapia de amplo espectro para germes entéricos e anaeróbios, ressuscitação volêmica e <strong>toracotomia cirúrgica de emergência</strong> para sutura primária da fístula esofágica e drenagem torácica aberta ampla."
+          ]
+        ],
+        [
+          "3",
+          "4.4 Insuficiência Renal Aguda Pré-Renal e Necrose Tubular Aguda"
+        ],
+        [
+          "p",
+          "A perda maciça de água e eletrólitos pelo trato digestivo associada à incapacidade de ingestão de líquidos deflagra hipovolemia sistêmica grave. A perfusão da artéria renal despenca, ativando mecanismos compensatórios de vasoconstrição da arteríola eferente mediada por angiotensina II para manter a pressão de filtração capilar glomerular.\nClinicamente, instala-se uma <strong>Insuficiência Renal Aguda Pré-Renal clássica</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Oligúria (débito urinário &lt; 0,5 mL/kg/hora);",
+            "Relação Ureia / Creatinina sérica marcadamente elevada (&gt; 40:1);",
+            "Densidade urinária muito alta (&gt; 1.025) e osmolaridade urinária elevada (&gt; 500 mOsm/kg);",
+            "Fração de Excreção de Sódio ($FeNa$) extremamente baixa (&lt; 1%), comprovando a avidez dos túbulos em reter sódio."
+          ]
+        ],
+        [
+          "p",
+          "Contudo, se a reposição volêmica intravenosa for negligenciada ou postergada, a isquemia renal sustentada lesa irreversivelmente as células do epitélio tubular renal (especialmente na porção espessa da alça de Henle e túbulo contorcido proximal), convertendo o quadro pré-renal funcional em uma <strong>Necrose Tubular Aguda (NTA) isquêmica intrínseca</strong>, manifestada por cilindros granulosos acastanhados (\"lama marrom\") no sedimento urinário, $FeNa &gt; 2%$ e necessidade de diálise peritoneal ou hemodiálise na gestação."
+        ]
+      ]
+    ],
+    [
+      "tratamento-farmacologico-escalonado-linhas-de-cuidado",
+      0,
+      [
+        [
+          "2",
+          "5. Tratamento Farmacológico Escalonado: Da Primeira Linha à Corticoterapia de Resgate e Segurança Fetal"
+        ],
+        [
+          "3",
+          "5.1 Princípios Gerais e Abordagem Escalonada em Camadas"
+        ],
+        [
+          "p",
+          "O manejo das náuseas e vômitos na gravidez e da hiperêmese gravídica baseia-se em um algoritmo escalonado e racional, respaldado pelas diretrizes do <em>American College of Obstetricians and Gynecologists</em> (ACOG - Practice Bulletin nº 189, reafirmado em 2023), do <em>Royal College of Obstetricians and Gynaecologists</em> (RCOG - Green-top Guideline nº 69) e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO)."
+        ],
+        [
+          "p",
+          "A intervenção terapêutica precoce nos estágios iniciais de emese moderada (escore PUQE &ge; 7) é fundamental para impedir a progressão da desnutrição catabólica, a perda ponderal severa e a necessidade de internação em unidade de terapia intensiva."
+        ],
+        [
+          "3",
+          "5.2 Detalhamento das Linhas de Farmacoterapia"
+        ],
+        [
+          "t",
+          [
+            "Linha Terapêutica",
+            "Fármacos, Mecanismo de Ação e Posologia",
+            "Evidências de Segurança Fetal e Teratogenicidade",
+            "Efeitos Adversos Maternos Principais"
+          ],
+          [
+            [
+              "<strong>PRIMEIRA LINHA</strong><br>(Padrão-Ouro / Nível de Evidência 1A)",
+              "<strong>Cloridrato de Piridoxina (Vitamina B6) + Succinato de Doxilamina</strong>:<br>\n        - <em>Monoterapia com Piridoxina:</em> 10 a 25 mg VO a cada 8 horas (dose máxima: 100 mg/dia);<br>\n        - <em>Combinação Fixa Doxilamina + Piridoxina:</em> 10 mg de doxilamina + 10 mg de piridoxina (ou 20 mg + 20 mg de liberação prolongada): iniciar com 2 comprimidos à noite ao deitar; se persistir sintomática, adicionar 1 comprimido pela manhã e 1 à tarde (dose total: até 4 comprimidos/dia).<br>\n        <em>Mecanismo:</em> Doxilamina é anti-histamínico H1 com potente efeito sedativo central e anticolinérgico no centro do vômito; piridoxina é cofator na síntese de GABA e neurotransmissores inibitórios.",
+              "<strong>Segurança Fetal Classe A</strong> (o regime antiemético mais amplamente estudado na história da medicina, com mais de 200.000 gestantes analisadas em coortes prospectivas e ensaios clínicos randomizados). <strong>Risco teratogênico comprovadamente ZERO</strong> (não aumenta a incidência basal de malformações congênitas).",
+              "Sonolência materna diurna (efeito sedativo sedutor do anti-histamínico), boca seca, tontura postural, constipação intestinal leve."
+            ],
+            [
+              "<strong>SEGUNDA LINHA</strong><br>(Falha da 1ª Linha / Sintomas Persistentes)",
+              "<strong>1. Outros Anti-histamínicos H1:</strong><br>\n        - <em>Dimenidrinato:</em> 50 a 100 mg VO, VR ou IV a cada 4 a 6 horas (máx: 400 mg/dia);<br>\n        - <em>Prometazina:</em> 12,5 a 25 mg VO ou IM a cada 4 a 6 horas.<br>\n        <strong>2. Antagonistas Dopaminérgicos D2 (Procinéticos):</strong><br>\n        - <em>Metoclopramida:</em> 10 mg VO, IM ou IV lento (em 15 min) a cada 8 horas;<br>\n        - <em>Clorpromazina:</em> 10 a 25 mg VO a cada 6-8h ou 25-50 mg IV lento em casos refratários internados.",
+              "Segurança fetal amplamente demonstrada em grandes estudos epidemiológicos europeus e norte-americanos. Não demonstram associação com malformações congênitas maiores, abortamento ou restrição de crescimento fetal intrauterino.",
+              "Sedação acentuada, boca seca.<br>\n        <strong>Risco Neurológico Específico da Metoclopramida e Fenotiazinas:</strong> Risco de <strong>sintomas extrapiramidais agudos</strong> (distonias agudas de mandíbula, crise oculógira, torcicolo espasmódico e acatisia motora) decorrentes do bloqueio dos receptores D2 estriatais. Tratar distonias agudas imediatamente com biperideno (5 mg IM) ou difenidramina. Risco de <em>Discinesia Tardia</em> em uso crônico &gt; 12 semanas."
+            ],
+            [
+              "<strong>TERCEIRA LINHA</strong><br>(Refratariedade / Internação Hospitalar)",
+              "<strong>Antagonistas Seletivos do Receptor Serotoninérgico 5-HT3:</strong><br>\n        - <em>Ondansetrona:</em> 4 a 8 mg VO ou IV a cada 8 horas (dose máxima: 16 a 24 mg/dia).<br>\n        <em>Mecanismo:</em> Bloqueia competitivamente os receptores 5-HT3 periféricos nas terminações vagais da mucosa gastrintestinal e centrais na área postrema do tronco encefálico.",
+              "<strong>Controvérsia Teratogênica Histórica nas Bancas:</strong> Estudos caso-controle antigos sugeriram risco muito pequeno de <strong>fendas orofaciais (fenda palatina)</strong> e malformações cardíacas septais ventriculares se usada antes de 10 semanas de gestação (risco absoluto ínfimo de aproximadamente 3 casos adicionais por 10.000 gestantes tratadas). Por precaução, o ACOG e o RCOG recomendam <strong>reservar a ondansetrona para casos refratários ou preferencialmente após a 10ª semana de gestação</strong>.",
+              "<strong>Constipação intestinal severa</strong> (frequentemente agravando o desconforto abdominal materno), cefaleia em queimação.<br>\n        <strong>Eletrocardiograma:</strong> Risco de <strong>prolongamento do intervalo QT e precipitação de Torsades de Pointes</strong>, especialmente na presença de hipocalemia ou hipomagnesemia decorrentes dos vômitos. Exige ECG e correção prévia de eletrólitos!"
+            ],
+            [
+              "<strong>LINHA DE RESGATE</strong><br>(Refratariedade Extrema a Todos os Antieméticos)",
+              "<strong>Corticoterapia Sistêmica:</strong><br>\n        - <em>Metilprednisolona:</em> 16 mg VO ou IV a cada 8 horas (total: 48 mg/dia) durante 3 dias consecutivos. Se houver resposta terapêutica favorável, realizar desmame gradual e progressivo da dose ao longo de 1 a 2 semanas até atingir a dose mínima de manutenção eficaz;<br>\n        - Se não houver qualquer melhora clínica após 72 horas de corticoterapia em dose plena, o corticoide deve ser <strong>suspenso imediatamente</strong> por ineficácia.",
+              "<strong>RESTRIÇÃO TEMPORAL MANDATÓRIA:</strong> A corticoterapia sistêmica é <strong>FORMALMENTE CONTRAINDICADA ANTES DE 10 SEMANAS DE GESTAÇÃO</strong> devido ao aumento de risco documentado de <strong>fendas lábio-palatinas</strong> induzidas por glicocorticoides durante a fase crítica da palatogênese embrionária fetal.",
+              "Hiperglicemia materna (risco de descompensação de diabetes gestacional), retenção hidrossalina, supressão adrenal, imunossupressão materna e insônia/labilidade emocional."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "protocolo-de-hidratacao-parenteral-e-suporte-nutricional",
+      0,
+      [
+        [
+          "2",
+          "6. Protocolo de Hidratação Parenteral, Reposição Hidroeletrolítica e Suporte Nutricional Crítico"
+        ],
+        [
+          "3",
+          "6.1 Protocolo de Reidratação Intravenosa: Passo a Passo"
+        ],
+        [
+          "p",
+          "A paciente admitida em regime de internação hospitalar por hiperêmese gravídica grave deve ser colocada em <strong>jejum oral inicial temporário por 12 a 24 horas</strong> a fim de propiciar repouso da mucosa gastrointestinal hiperemética e quebrar o reflexo contínuo do centro do vômito. O suporte volêmico intravenoso deve obedecer a regras estritas de segurança biológica:"
+        ],
+        [
+          "4",
+          "Passo 1: Administração Mandatória de Tiamina Antes de Qualquer Solução com Glicose"
+        ],
+        [
+          "p",
+          "Todo médico assistente deve gravar indelevelmente em sua rotina clínica: <strong>NENHUMA gota de soro glicosado ou solução contendo carboidratos deve ser conectada à via venosa da paciente antes da administração de TIAMINA (Vitamina B1)</strong>.\nPrescrever:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cloridrato de Tiamina 100 mg IV diluído em 100 mL de Soro Fisiológico a 0,9% em infusão de 20 a 30 minutos UMA VEZ AO DIA por pelo menos 3 a 5 dias</strong> (ou 500 mg IV a cada 8 horas se já houver qualquer suspeita de sinais neurológicos da tríade de Wernicke);",
+            "Após a infusão da tiamina, o uso de soluções com glicose passa a ser seguro e permitido."
+          ]
+        ],
+        [
+          "4",
+          "Passo 2: Escolha dos Fluidos Cristaloides de Expansão e Manutenção"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fluidos de Primeira Escolha:</strong> Soluções cristaloides balanceadas, tais como <strong>Ringer Lactato</strong> ou <strong>Soro Fisiológico a 0,9%</strong>. O volume total diário habitual situa-se entre 2.000 e 3.000 mL nas primeiras 24 horas, titulado conforme débito urinário, pressão arterial e frequência cardíaca;",
+            "<strong>Manutenção com Glicose e Salino:</strong> Após a expansão inicial e administração de tiamina, alternar frascos de Soro Glicosado a 5% com Soro Fisiológico a 0,9% (ou solução glico-salina 1:1) com o objetivo primordial de <strong>fornecer substrato glicêmico exógeno para frear a lipólise hepática e negativar a cetonúria</strong>;",
+            "<strong>Correção Agressiva de Eletrólitos:</strong>\n    <ul>\n      <li>Adicionar <strong>Cloreto de Potássio ($KCl$) a 19,1%</strong> nas soluções de infusão venosa (habitualmente 10 a 20 mEq por litro de fluido, sem ultrapassar a velocidade de infusão periférica de 10 a 20 mEq/h) para correção da hipocalemia;",
+            "Avaliar e repor <strong>Sulfato de Magnésio</strong> se houver hipomagnesemia concomitante (já que o magnésio é cofator intracelular obrigatório da bomba $Na^+/K^+$-ATPase; sem a correção do magnésio, a hipocalemia torna-se metabolicamente refratária)."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Transição para Dieta Oral e Suporte Nutricional Avançado"
+        ],
+        [
+          "p",
+          "Assim que os vômitos forem controlados pelos antieméticos intravenosos e a cetonúria for negativada por pelo menos 12 a 24 horas, inicia-se a reintrodução alimentar oral:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dieta Fracionada:</strong> Pequenas porções em intervalos curtos (a cada 1 a 2 horas), evitando que o estômago fique completamente vazio ou excessivamente distendido;",
+            "<strong>Preferência por Alimentos Secos, Frios e Ricos em Carboidratos Complexos:</strong> Torradas, biscoitos de água e sal, bolachas secas, frutas frias (maçã, melão). Alimentos frios liberam significativamente menos voláteis e aromas, reduzindo o gatilho da hiperosmia;",
+            "<strong>Separação Estrita de Líquidos e Sólidos:</strong> A gestante deve ingerir líquidos somente 30 a 45 minutos antes ou depois das refeições sólidas, nunca durante a mastigação;",
+            "<strong>Evitar Alimentos Gordurosos, Frituras e Condimentados:</strong> Gorduras retardam o esvaziamento gástrico via colecistoquinina (CCK), deflagrando náuseas imediatas;",
+            "<strong>Uso Coadjuvante de Gengibre:</strong> O gengibre (<em>Zingiber officinale</em>) na forma de cápsulas secas (250 mg VO 4 vezes ao dia, totalizando 1.000 mg/dia) possui eficácia comprovada em ensaios clínicos controlados para o controle de náuseas leves a moderadas."
+          ]
+        ],
+        [
+          "4",
+          "Indicações de Terapia Nutricional Enteral ou Parenteral:"
+        ],
+        [
+          "p",
+          "Em pacientes com falência completa do escalonamento antiemético oral e venoso que persistam com perda ponderal progressiva superior a 10% do peso, desnutrição proteico-calórica severa e incapacidade de retenção alimentar por mais de 5 a 7 dias hospitalizadas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Nutrição Enteral por Sonda Nasojejunal (Padrão-Ouro Nutricional):</strong> A passagem de sonda pós-pilórica (nasojejunal) com infusão lenta contínua de dieta polimérica é o método de escolha preferencial. A infusão pós-pilórica contorna o estômago gastroparesiado e a área gastroduodenal emetogênica, preservando a integridade da barreira mucosa intestinal e a função imunológica, com taxa de sucesso superior a 80-90% e índice de complicações muito inferior ao da nutrição parenteral;",
+            "<strong>Nutrição Parenteral Total (NPT):</strong> Deve ser reservada estritamente como último recurso de exceção extrema quando a nutrição enteral for impossível ou contraindicada (ex.: íleo paralítico, perfuração esofágica de Boerhaave). A NPT na gestante associa-se a riscos graves de infecção de cateter venoso central de longa permanência (sepse por <em>Candida</em> ou estafilococos), trombose venosa profunda séptica e distúrbios metabólicos agudos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-integrados-hiperemese-gravidica",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Integrados com Raciocínio Diagnóstico e Condutas Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Primigesta com Hiperêmese Grave e Alcalose Metabólica Hipocalêmica Descompensada"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Primigesta de 24 anos, com 9 semanas de gestação confirmada por ultrassonografia com embrião único tópico e BCF presentes. Procura a emergência obstétrica relatando náuseas contínuas e vômitos incoercíveis há 3 semanas, com piora dramática nos últimos 5 dias, período em que não consegue ingerir qualquer alimento sólido ou líquido, inclusive água (\"tudo o que bebo coloco para fora imediatamente\"). Relata tontura intensa ao levantar-se da cama, fraqueza muscular nas pernas e boca seca. Seu peso habitual pré-gestacional era de 58 kg; na pesagem admissional, a balança registra 52,5 kg (perda de 5,5 kg, correspondendo a uma redução ponderal de 9,5% do peso corporal)."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong>\nGeral: Paciente emagrecida, em decúbito dorsal forçado, hipoativa, pálida (2+/4+), anictérica, com mucosas orais ressecadas, turgor cutâneo diminuído e olhos encovados.\nSinais Vitais: PA em decúbito: 95/60 mmHg; PA em ortostase: 75/45 mmHg (queda postural de 20 mmHg na sistólica caracterizando hipotensão ortostática grave); FC: 118 bpm (taquicardia sinusal compensatória); FR: 18 irpm; Temperatura axilar: 36,4°C.\nAbdome: Plano, flácido, difusamente doloroso à palpação profunda em epigástrio e mesogástrio sem sinais de irritação peritoneal (Murphy negativo, Blumberg negativo, Giordano negativo); ruídos hidroaéreos diminuídos.\nNeurológico: Consciente, orientada no tempo e espaço; sem nistagmo, pupilas isocóricas e fotorreagentes; força muscular preservada com reflexos profundos simétricos."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais de Urgência:</strong>\n- EAS (Sumário de Urina): Densidade = 1.032; Corpos cetônicos = <strong>4+ (maciço)</strong>; Proteínas = traços; Sedimento sem leucocitúria ou bacteriúria;\n- Gasometria Venosa: pH = <strong>7,52</strong>; $pCO_2$ = 46 mmHg; $HCO_3^-$ = <strong>36 mEq/L</strong>; Base Excess (BE) = +11 mEq/L (Alcalose metabólica primária descompensada);\n- Ionograma Sérico: Sódio ($Na^+$) = 131 mEq/L; <strong>Potássio ($K^+$) = 2,7 mEq/L (hipocalemia grave)</strong>; <strong>Cloro ($Cl^-$) = 84 mEq/L (hipocloremia acentuada)</strong>; Magnésio ($Mg^{2+}$) = 1,4 mg/dL (hipomagnesemia leve);\n- Função Renal e Hepática: Ureia = 56 mg/dL; Creatinina = 1,3 mg/dL (disfunção renal pré-renal aguda); TGO/AST = 68 U/L; TGP/ALT = 82 U/L (discreta hipertransaminasemia reativa secundária à hipoperfusão hepática e esteatose de jejum); Bilirrubina total = 0,9 mg/dL;\n- Escore PUQE (24h): Náusea &gt; 6h (5 pts) + Vômitos &ge; 7 vezes/dia (5 pts) + Arcadas &ge; 7 vezes/dia (5 pts) = <strong>15 pontos (Gravidade Máxima)</strong>."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Diagnóstico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Sindrômico e Nosológico:</strong> Hiperêmese Gravídica Grave com desidratação clínica avançada, perda ponderal maciça (&gt; 9%), cetose de jejum severa e alcalose metabólica hipoclorêmica e hipocalêmica clássica, complicada por insuficiência renal aguda pré-renal funcional;",
+            "<strong>Fisiopatologia do Distúrbio Ácido-Base:</strong> A perda copiosa de ácido clorídrico gástrico induziu a alcalose e a hipocloremia. A hipovolemia deflagrou hiperaldosteronismo secundário, forçando os túbulos renais distais a excretar potássio para reter sódio, agravando a hipocalemia materna (2,7 mEq/L);",
+            "<strong>Risco de Complicações Fatais Iminentes:</strong> Risco altíssimo de arritmias cardíacas ventriculares pela hipocalemia e hipomagnesemia; risco de precipitação de Encefalopatia de Wernicke se soluções glicosadas forem administradas antes da reposição de tiamina."
+          ]
+        ],
+        [
+          "4",
+          "Plano Terapêutico e Execução da Conduta Médica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Internação Hospitalar e Jejum Oral Temporário:</strong> Colocar a paciente em jejum oral nas primeiras 12 a 24 horas;",
+            "<strong>2. ADMINISTRAÇÃO MANDATÓRIA DE TIAMINA IMEDIATA:</strong> Prescrever <strong>Cloridrato de Tiamina 100 mg IV diluído em 100 mL de Soro Fisiológico a 0,9% infundido em 30 minutos ANTES de qualquer solução contendo glicose</strong>;",
+            "<strong>3. Ressuscitação Volêmica e Reposição Hidroeletrolítica:</strong>\n    <ul>\n      <li>Iniciar com 1.000 mL de Soro Fisiológico a 0,9% nas primeiras 2 horas para restauração rápida da volemia arterial efetiva e perfusão renal;",
+            "Em seguida, prescrever expansão contínua com alternância de Ringer Lactato e Soro Glicosado a 5% (totalizando 2.500 a 3.000 mL em 24h), adicionando <strong>20 mEq de Cloreto de Potássio ($KCl$) a 19,1%</strong> por litro de solução para correção lenta e segura da hipocalemia (velocidade de infusão de potássio mantida em 10 mEq/h com monitorização eletrocardiográfica contínua);",
+            "Reposição de 2 g de Sulfato de Magnésio a 10% IV em infusão de 1 hora para corrigir a hipomagnesemia e permitir a captação intracelular de potássio;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>4. Farmacoterapia Antiemética Multimodal Intravenosa:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Prescrever <strong>Metoclopramida 10 mg IV a cada 8 horas</strong> (infundida lentamente em 15 minutos) alternada com <strong>Dimenidrinato 50 mg IV a cada 6 a 8 horas</strong>;",
+            "Se persistirem náuseas refratárias após 24 horas, associar <strong>Ondansetrona 8 mg IV a cada 8 horas</strong> (após checagem do ECG descartando QT longo e após correção do potássio para &gt; 3,5 mEq/L);",
+            "Omeprazol 40 mg IV uma vez ao dia para proteção da mucosa gástrica e redução da secreção ácida;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>5. Evolução e Desfecho:</strong> Após 36 horas de protocolo, a paciente encontrava-se hidratada, com diurese clara e abundante (débito &gt; 1,5 mL/kg/h), potássio sérico corrigido para 4,1 mEq/L, creatinina normalizada para 0,7 mg/dL e cetonúria negativada no EAS. Foi iniciada dieta oral fracionada com bolachas secas e líquidos em pequenos goles, tolerada com sucesso. Recebeu alta hospitalar após 4 dias em uso de Doxilamina + Piridoxina oral associada a suplementação vitamínica.</li>\n</ul>\n\n<hr>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Encefalopatia de Wernicke Iatrogênica em Gestante após Infusão Inadvertida de Glicose"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Gestante de 19 anos, secundigesta, 11 semanas de idade gestacional, foi internada há 48 horas em hospital de pequeno porte por vômitos incoercíveis há 18 dias e perda de 6 kg. O médico plantonista prescreveu hidratação venosa contínua rápida exclusivamente com <strong>Soro Glicosado a 5% (4.000 mL em 36 horas) sem qualquer reposição de vitaminas</strong>. Na manhã do segundo dia de internação, a equipe de enfermagem nota que a paciente tornou-se sonolenta, apática e desorientada. O obstetra de sobreaviso é chamado para avaliação neurológica urgente."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico e Neurológico Minucioso:</strong>\nGeral: Paciente sonolenta, desorientada no tempo e no espaço, responde às perguntas com latência prolongada e confabulação (\"diz que estava no shopping fazendo compras esta manhã\").\nExame dos Pares Cranianos: <strong>Nistagmo horizontal bilateral exuberante evocado pelo olhar lateral</strong>; incapacidade de abduzir o olho esquerdo e o olho direito (paralisia bilateral do VI par craniano - nervo abducente); ptose palpebral leve.\nExame Motor e Marcha: Força muscular grau 4/5 difusa; reflexos profundos hipoativos simétricos. Quando solicitada a ficar de pé e caminhar, a paciente apresenta <strong>ataxia de marcha e tronco grave, cambaleando com base alargada e caindo para os lados (incapacidade total de deambular)</strong>.\nSinais Vitais: PA: 100/65 mmHg; FC: 110 bpm; Tax: 36,2°C; Glicemia capilar na ponta do dedo: 142 mg/dL."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Diagnóstico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Neurológico:</strong> Trata-se da forma clássica completa da <strong>Encefalopatia de Wernicke Aguda</strong>, exibindo a tríade patognomônica completa: <strong>Oftalmoplegia/Nistagmo + Ataxia de Marcha + Confusão Mental/Encefalopatia</strong>;",
+            "<strong>Mecanismo da Iatrogenia Médica:</strong> A paciente já possuía esgotamento crítico de suas reservas corporais de tiamina (vitamina B1) após quase 3 semanas de vômitos contínuos. A prescrição inadvertida de 4 litros de soro glicosado forneceu 200 gramas de carboidrato puro, que ativou a via da glicólise acelerada. O complexo piruvato desidrogenase consumiu as últimas moléculas de tiamina pirofosfato residual, colapsando o Ciclo de Krebs e provocando apoptose e micro-hemorragias nos corpos mamilares e tálamo dorsal."
+          ]
+        ],
+        [
+          "4",
+          "Conduta Terapêutica Emergencial de Resgate:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. INTERRUPÇÃO IMEDIATA DO SORO GLICOSADO:</strong> Trocar instantaneamente todos os frascos de soro glicosado por Soro Fisiológico a 0,9%;",
+            "<strong>2. Tiamina em Altas Doses (Protocolo de Wernicke):</strong>\n    <ul>\n      <li>Prescrever <strong>Cloridrato de Tiamina 500 mg IV a cada 8 horas (diluído em 100 mL de SF 0,9% em infusão de 30 minutos) durante 3 a 5 dias consecutivos</strong>;",
+            "Após o 5º dia, prosseguir com Tiamina 250 mg IV uma vez ao dia por mais 5 dias, e manutenção com 100 mg VO diariamente até o parto;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>3. Reposição Adjuvante de Complexo B e Magnésio:</strong> Administrar Sulfato de Magnésio 2 g IV (o magnésio é cofator indispensável para a fosforilação da tiamina em sua forma metabolicamente ativa TPP) e complexo vitamínico parenteral (vitamina C, riboflavina, nicotinamida);</li>\n  <li><strong>4. Neuroimagem de Urgência:</strong> Realizada Ressonância Magnética de Crânio (sem contraste paramagnético), que evidenciou <strong>hipersinal simétrico em sequências T2 e FLAIR envolvendo os corpos mamilares, tálamo medial e assoalho do quarto ventrículo</strong>, confirmando as lesões anatômicas de Wernicke;</li>\n  <li><strong>5. Evolução Clínica:</strong> Em 24 horas após o início da tiamina em altas doses, o nistagmo e a paralisia do VI par regrediram em cerca de 80%. A confusão mental clareou ao longo de 72 horas. A ataxia de marcha apresentou melhora progressiva lenta com fisioterapia motora, recebendo alta após 14 dias de internação hospitalar sem déficit cognitivo residual, evitando a progressão para a Síndrome Amnésica irreversível de Korsakoff.</li>\n</ul>\n\n<hr>"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Hiperêmese Refratária com Complicação Hemorrágica (Síndrome de Mallory-Weiss)"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Gestante de 28 anos, tercigesta com 1 parto anterior e 1 aborto, idade gestacional de 10 semanas e 4 dias. Internada há 24 horas na enfermaria obstétrica para tratamento de hiperêmese gravídica moderada a grave. Durante a madrugada, após uma crise paroxística violenta de vômitos gástricos repetidos e esforço abdominal exaustivo, a paciente apresenta subitamente um episódio volumoso de <strong>vômito com sangue vermelho-vivo abundante e coágulos (hematêmese estimada em 250 mL)</strong>, seguido de tonteira e palidez cutânea."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Pós-Hematêmese:</strong>\nGeral: Paciente muito ansiosa, sudorética, pálida (3+/4+).\nSinais Vitais: PA: 85/55 mmHg; FC: 124 bpm (taquicardia postural e compensatória); FR: 20 irpm; SpO2: 98% em cateter nasal.\nAparelho Digestivo: Abdome flácido, depressível, leve dor à palpação de epigástrio, sem peritonismo, sem visceromegalias. Toque retal com fezes de aspecto normal (sem melena evidente no momento).\nLaboratório Imediato: Hemoglobina: 8,8 g/dL (queda de 2,5 g/dL em relação ao valor admissional de 11,3 g/dL); Hematócrito: 26%; Plaquetas: 210.000/mm³; Coagulograma (TP, TTPA e Fibrinogênio): estritamente normais."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Diagnóstico Diferencial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Sindrômico:</strong> Hemorragia Digestiva Alta (HDA) aguda em gestante com hiperêmese;",
+            "<strong>Diferenciação Crítica: Mallory-Weiss vs Boerhaave:</strong>\n    <ul>\n      <li>Na <strong>Síndrome de Mallory-Weiss</strong>, o aumento súbito da pressão transmural no estômago gera uma <strong>laceração mucosa longitudinal não transmural</strong> na junção esofagogástrica. O quadro típico é de vômitos violentos repetidos não sanguinolentos seguidos de hematêmese de sangue vivo, sem mediastinite nem ar livre;",
+            "Na <strong>Síndrome de Boerhaave</strong>, há rotura transmural completa com contaminação do mediastino, manifestando-se pela Tríade de Mackler (vômito violento + dor retroesternal em punhalada + enfisema subcutâneo cervical/fúrcula) e colapso séptico iminente. Como a paciente não apresenta dor torácica retroesternal nem enfisema subcutâneo, o diagnóstico mais provável é Mallory-Weiss."
+          ]
+        ],
+        [
+          "4",
+          "Conduta Médica Imediata Baseada em Evidências:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Estabilização Hemodinâmica:</strong>\n    <ul>\n      <li>Garantir dois acessos venosos periféricos de grosso calibre (jelco 14 ou 16G);",
+            "Infusão rápida de 1.000 mL de Ringer Lactato aquecido com reversão da taquicardia e restauração da PA para 110/70 mmHg;",
+            "Tipagem sanguínea, prova cruzada e reserva de 2 concentrados de hemácias caso persista instabilidade;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>2. Supressão Ácida e Proteção Mucosa:</strong> Administrar <strong>Omeprazol 80 mg IV em bólus</strong>, seguido de infusão contínua de 8 mg/hora (ou 40 mg IV a cada 12 horas) para elevar o pH gástrico intragástrico &gt; 6,0 e estabilizar o coágulo sobre a laceração vascular;</li>\n  <li><strong>3. Endoscopia Digestiva Alta (EDA) de Urgência:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Realizada EDA à beira do leito na sala de parto/emergência com presença do anestesiologista e monitorização contínua;",
+            "<strong>Achado Endoscópico:</strong> Visualizada laceração linear mucosa longitudinal única de 1,2 cm na junção esofagogástrica, com sangramento gotejante ativo (Classificação de Forrest Ib);",
+            "<strong>Terapia Endoscópica:</strong> Realizada injeção perilesional de adrenalina 1:10.000 associada à <strong>aplicação de 2 hemoclipes metálicos mecânicos</strong> sobre a fissura, obtendo hemostasia imediata completa e definitiva;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>4. Otimização do Tratamento Antiemético:</strong> Introduzida <strong>Ondansetrona 8 mg IV a cada 8 horas</strong> associada a Dimenidrinato IV para erradicação total das contrações gástricas e novos episódios de êmese. A paciente evoluiu sem ressangramento, reiniciou dieta líquida em 48 horas e recebeu alta em uso de IBP e antieméticos orais.</li>\n</ul>\n\n<hr>"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Hiperêmese Refratária com Escore PUQE Máximo e Corticoterapia de Resgate Após 10 Semanas"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Gestante de 31 anos, secundigesta (1 parto cesáreo prévio), com idade gestacional de 11 semanas e 2 dias. Encontra-se em sua terceira internação hospitalar no último mês devido a quadro de hiperêmese gravídica intratável e refratária. Já fez uso ambulatorial e hospitalar contínuo e em doses máximas de Doxilamina + Piridoxina, Dimenidrinato intravenoso, Metoclopramida em infusão contínua e Ondansetrona 8 mg IV de 8/8h, sem qualquer controle dos vômitos. A paciente vomita de 10 a 15 vezes ao dia, não retém saliva (sialorreia copiosa), chora copiosamente, perdeu 7 kg desde o início da gestação (peso caiu de 62 kg para 55 kg = perda ponderal de 11,3%) e manifesta verbalmente o desejo desesperado de interromper a gravidez caso o quadro não cesse."
+        ],
+        [
+          "p",
+          "<strong>Avaliação Clínica e Laboratorial Atual:</strong>\n- Escore PUQE (24h) = 15 pontos (severidade máxima);\n- Exame Físico: Sem sinais de peritonismo, abdome doloroso difusamente pelo esforço muscular dos vômitos; sem sinais de Wernicke;\n- Laboratório: Hipocalemia recorrente ($K^+ = 3,1$ mEq/L), cetonúria persistente (3+), transaminases moderadamente elevadas (TGO: 120 U/L, TGP: 145 U/L);\n- Ultrassonografia Obstétrica: Feto único com comprimento cabeça-nádega (CCN) compatível com 11 semanas e 3 dias, translucência nucal normal (1,4 mm), BCF = 156 bpm, anatomia inicial preservada."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Indicação de Corticoterapia de Resgate:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Definição de Refratariedade:</strong> A paciente cumpriu rigorosamente todas as etapas farmacológicas de primeira linha (doxilamina/piridoxina), segunda linha (dimenidrinato e metoclopramida) e terceira linha (ondansetrona) em doses plenas, mantendo perda ponderal crítica &gt; 10%, desnutrição e sofrimento psíquico grave. Trata-se de <strong>Hiperêmese Gravídica Grave Refratária</strong>;",
+            "<strong>Avaliação da Janela de Segurança para Corticoterapia:</strong> O uso de glicocorticoides sistêmicos (metilprednisolona) é o recurso farmacológico de resgate validado pelo ACOG e RCOG. A restrição absoluta ao uso de corticoides é o período antes de 10 semanas de gestação, devido ao risco de fenda palatina embrionária. Como a gestante encontra-se com <strong>11 semanas e 2 dias (após a fase crítica da palatogênese)</strong>, a corticoterapia sistêmica está <strong>formalmente autorizada e indicada</strong>;",
+            "<strong>Prescrição do Esquema Terapêutico de Resgate:</strong>\n    <ul>\n      <li>Prescrever <strong>Metilprednisolona 16 mg IV a cada 8 horas (48 mg/dia) durante 3 dias consecutivos</strong>;",
+            "Monitorar a resposta clínica: se houver redução expressiva dos vômitos e tolerância à dieta oral, iniciar o desmame progressivo da corticoterapia ao longo de 2 semanas (ex.: reduzir para 32 mg/dia por 3 dias, 16 mg/dia por 3 dias, 8 mg/dia por 3 dias e suspensão);",
+            "Se não houvesse qualquer melhora clínica após 72 horas de metilprednisolona, o corticoide deveria ser suspenso sumariamente por ineficácia;",
+            "<strong>Suporte Nutricional Proativo:</strong> Simultaneamente, foi instalada uma <strong>sonda nasojejunal pós-pilórica guiada por radioscopia/ultrassonografia</strong> com infusão lenta de nutrição enteral contínua a 25 mL/h para garantir aporte calórico e protéico mínimo basal enquanto a corticoterapia atingia o pico de ação;",
+            "<strong>Desfecho Clínico:</strong> No 3º dia de metilprednisolona, a paciente apresentou remissão dramática e completa dos episódios eméticos, conseguiu alimentar-se por via oral, a cetonúria foi negativada e as transaminases normalizaram. A sonda enteral foi retirada com sucesso, o corticoide foi desmamado gradualmente e a paciente manteve a gestação até o termo com parto a termo saudável de recém-nascido com peso adequado para a idade gestacional (3.150 g)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-hiperemese-gravidica",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas de Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / ENARE)"
+        ],
+        [
+          "p",
+          "Primigesta de 22 anos, com idade gestacional de 8 semanas, procura o pronto atendimento obstétrico queixando-se de náuseas contínuas e vômitos frequentes (cerca de 5 a 6 episódios ao dia), sem conseguir reter a dieta habitual há uma semana. Relata fraqueza e boca seca. Na avaliação ponderal, constata-se uma perda de 4 kg em relação ao peso pré-gestacional de 55 kg (perda de 7,3%). Ao exame físico: desidratada 2+/4+, PA = 90/60 mmHg, FC = 104 bpm. O exame sumário de urina (EAS) revela cetonúria de 3+ e ausência de leucocitúria. Considerando os critérios diagnósticos e a abordagem terapêutica inicial da Hiperêmese Gravídica, assinale a conduta CORRETA:"
+        ],
+        [
+          "p",
+          "A) Trata-se de emese gravídica fisiológica benigna; orientar apenas dieta fracionada e prescrever metilprednisolona oral em altas doses por 14 dias.<br>\nB) O diagnóstico é de Hiperêmese Gravídica; a conduta imediata consiste em internação hospitalar, hidratação intravenosa, administração profilática de tiamina (vitamina B1) antes de soluções glicosadas e antieméticos.<br>\nC) Deve-se iniciar imediatamente infusão contínua rápida de soro glicosado a 10% para reverter a cetonúria, sendo a reposição de vitaminas contraindicada no primeiro trimestre pelo risco de malformações congênitas.<br>\nD) Trata-se de gastrite aguda por <em>H. pylori</em>; prescrever esquema tríplice com claritromicina, amoxicilina e omeprazol por 14 dias em regime ambulatorial.<br>\nE) A ondansetrona intravenosa em altas doses associada a dexametasona é a terapia de primeira linha obrigatória, dispensando hidratação venosa."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro clínico preenche com exatidão todos os critérios diagnósticos da <strong>Hiperêmese Gravídica (HG)</strong>: início no 1º trimestre, vômitos incoercíveis com intolerância alimentar, perda ponderal documentada superior a 5% do peso pré-gestacional (no caso, 7,3%), desidratação clínica e presença de cetonúria moderada a grave (3+). A conduta padrão preconizada pelas diretrizes mundiais (ACOG, RCOG, FEBRASGO) é a <strong>internação hospitalar</strong> para correção hidroeletrolítica vigorosa e suporte antiemético. O ponto crítico de segurança biológica é a <strong>administração mandatória de Cloridrato de Tiamina (Vitamina B1 - 100 mg IV) antes da infusão de soluções glicosadas</strong>, a fim de prevenir a precipitação iatrogênica da Encefalopatia de Wernicke. A alternativa A erra ao classificar o quadro como fisiológico e por indicar corticoide antes de 10 semanas (risco de fenda palatina). A alternativa C propõe uma iatrogenia potencialmente fatal (soro glicosado isolado sem tiamina precipita Wernicke aguda). A alternativa D negligencia a hiperêmese e propõe tratamento para <em>H. pylori</em> desnecessário e inadequado. A alternativa E erra ao classificar ondansetrona e dexametasona como primeira linha."
+        ],
+        [
+          "3",
+          "Questão 2 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Uma gestante de 26 anos, com 10 semanas de gestação, é admitida na enfermaria obstétrica com diagnóstico de hiperêmese gravídica grave. O médico plantonista solicita exames laboratoriais na admissão. Considerando as alterações fisiopatológicas clássicas provocadas pelas perdas prolongadas de secreção gástrica através dos vômitos repetidos, qual é o padrão hidroeletrolítico e ácido-base esperado no sangue dessa paciente?"
+        ],
+        [
+          "p",
+          "A) Acidose metabólica com ânion gap normal e hipercalemia.<br>\nB) Alcalose metabólica hipoclorêmica e hipocalêmica.<br>\nC) Acidose respiratória crônica compensada e hipernatremia hipervolêmica.<br>\nD) Alcalose respiratória pura decorrente de hiperventilação compensatória com normocalemia.<br>\nE) Acidose tubular renal tipo II com perda renal maciça de bicarbonato e hipofosfatemia isolada."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> Os vômitos incoercíveis da hiperêmese provocam perda maciça de suco gástrico, composto predominantemente por ácido clorídrico ($HCl$) e íons potássio ($K^+$). A perda de íons hidrogênio eleva o bicarbonato sérico, gerando <strong>alcalose metabólica</strong>; a perda de cloro gera <strong>hipocloremia</strong>. Concomitantemente, a desidratação e a hipovolemia ativam intensamente o sistema renina-angiotensina-aldosterona (SRAA). A aldosterona estimula os néfrons distais a reabsorverem sódio com avidez; contudo, na ausência de cloro para co-transporte, os túbulos renais excretam ativamente potássio e íons hidrogênio adicionais na urina. Isso consolida o distúrbio metabólico patognomônico da hiperêmese: <strong>Alcalose Metabólica Hipoclorêmica e Hipocalêmica</strong> (com frequência associada à acidúria paradoxal). A alternativa A seria vista em diarreia profusa ou insuficiência renal. A alternativa C não tem correlação com perdas gástricas. A alternativa D descreve quadro de alcalose respiratória que ocorre na hiperventilação psicogênica pura. A alternativa E é uma doença tubular rara não relacionada."
+        ],
+        [
+          "3",
+          "Questão 3 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Recentes avanços genéticos e moleculares publicados entre 2018 e 2024 revolucionaram a compreensão da fisiopatologia da hiperêmese gravídica, superando teorias psicológicas arcaicas. De acordo com as evidências contemporâneas de ensaios genômicos e de biologia molecular, qual fator peptídico de origem predominantemente trofoblástica e seu respectivo receptor localizado no tronco encefálico desempenham o papel central primário na gênese da hiperêmese gravídica?"
+        ],
+        [
+          "p",
+          "A) Fator de Diferenciação de Crescimento 15 (GDF15) e o receptor GFRAL localizado na área postrema e núcleo do trato solitário.<br>\nB) Fator Neurotrófico Derivado do Cérebro (BDNF) e o receptor TrkB localizado no córtex cerebral frontal.<br>\nC) Gonadotrofina Coriônica Humana (hCG) atuando exclusivamente nos receptores de ocitocina miometriais.<br>\nD) Fator de Crescimento Semelhante à Insulina tipo 1 (IGF-1) e receptores de grelina na mucosa gástrica duodenal.<br>\nE) Prolactina decidual atuando nos receptores dopaminérgicos D1 do sistema límbico hipocampal."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> As pesquisas seminais lideradas por Marlena Fejzo e Stephen O'Rahilly (publicadas na <em>Nature</em> em 2023/2024 e chanceladas pela comunidade obstétrica internacional) demonstraram que a hiperêmese gravídica é causada primariamente pelo hormônio fetal-placentário <strong>GDF15 (Growth Differentiation Factor 15)</strong>, secretado pelo sinciciotrofoblasto placentário, que atua ligando-se especificamente ao receptor <strong>GFRAL (GDNF Family Receptor Alpha-Like)</strong> localizado estritamente na <strong>área postrema e no núcleo do trato solitário (NTS)</strong> do tronco cerebral materno. As variantes genéticas maternas no gene <em>GDF15</em> provocam níveis pré-gestacionais muito baixos dessa citocina, acarretando uma hipersensibilidade de regulação positiva (<em>upregulation</em>) dos receptores GFRAL no centro do vômito. Ao engravidarem, a exposição súbita aos níveis placentários maciços de GDF15 desencadeia as náuseas e vômitos refratários da hiperêmese. As alternativas B, C, D e E citam moléculas e receptores que não correspondem à via etiopatogênica recém-descoberta."
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Gestante de 20 anos, primigesta com 9 semanas de gestação, interna por hiperêmese gravídica grave com perda de 8% do peso pré-gestacional. Encontra-se em jejum oral e hidratação intravenosa. O médico assistente deseja estruturar a prescrição farmacológica antiemética de acordo com as diretrizes baseadas em evidências do ACOG e FEBRASGO. Assinale a alternativa que indica a combinação farmacológica recomendada como PRIMEIRA LINHA de tratamento devido ao seu comprovado perfil de eficácia e segurança fetal:"
+        ],
+        [
+          "p",
+          "A) Ondansetrona intravenosa associada a metilprednisolona oral.<br>\nB) Cloridrato de Piridoxina (Vitamina B6) associado a Succinato de Doxilamina.<br>\nC) Clorpromazina intramuscular associada a haloperidol em altas doses.<br>\nD) Dexametasona intravenosa em bólus diário isolado.<br>\nE) Metoclopramida intravenosa associada a loperamida oral contínua."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> As diretrizes da FEBRASGO, ACOG (Practice Bulletin 189) e RCOG determinam de forma categórica que a <strong>terapia farmacológica de PRIMEIRA LINHA</strong> para náuseas e vômitos da gestação consiste na administração de <strong>Cloridrato de Piridoxina (Vitamina B6) isolado ou em combinação fixa com o anti-histamínico Succinato de Doxilamina</strong>. Essa associação possui o mais robusto nível de evidência científica (Nível 1A) e a mais extensa literatura de segurança fetal da obstetrícia (Classe A), com dezenas de estudos epidemiológicos e ensaios clínicos demonstrando ausência total de efeito teratogênico basal. A ondansetrona (alternativa A) é fármaco de 3ª linha e a metilprednisolona é terapia de resgate contraindicada antes de 10 semanas. As fenotiazinas (alternativa C) são reservadas para 2ª linha com cautela pelo risco extrapiramidal. Corticoterapia isolada (alternativa D) é proscrita antes de 10 semanas pelo risco de fenda palatina. Metoclopramida (alternativa E) é droga de 2ª linha e loperamida é antidiarreico."
+        ],
+        [
+          "3",
+          "Questão 5 (Hospital das Clínicas da FMUSP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Gestante de 25 anos, primigesta, com 11 semanas de idade gestacional, internada há 5 dias por hiperêmese gravídica severa sem conseguir alimentar-se por via oral. Recebeu hidratação venosa vigorosa com soro glicosado a 5% sem suplementação vitamínica. Evolui subitamente com desorientação têmporo-espacial, apatia, nistagmo horizontal bilateral ao olhar conjugado e marcha atáxica cambaleante de base alargada. A respeito do diagnóstico e da conduta imediata para este caso, assinale a opção CORRETA:"
+        ],
+        [
+          "p",
+          "A) Trata-se de Mielinólise Pontina Central; a conduta é a infusão rápida de cloreto de sódio a 3% para elevar o sódio sérico em 20 mEq/L nas primeiras 12 horas.<br>\nB) Trata-se de Encefalopatia de Wernicke; a conduta imediata é a interrupção de soluções glicosadas e a administração de altas doses de Cloridrato de Tiamina (Vitamina B1) por via intravenosa.<br>\nC) Trata-se de acidente vascular cerebral isquêmico em território vértebro-basilar; a conduta de escolha imediata é a trombólise química com alteplase intravenosa.<br>\nD) Trata-se de eclâmpsia atípica do primeiro trimestre; a conduta imediata é o ataque de sulfato de magnésio seguido de cesariana de emergência.<br>\nE) Trata-se de meningite bacteriana aguda por <em>Listeria monocytogenes</em>; iniciar ampicilina em altas doses associada a punção lombar imediata."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro clínico apresenta a manifestação completa e patognomônica da <strong>Encefalopatia de Wernicke</strong> (tríade de alterações oculomotoras com nistagmo + ataxia de marcha + encefalopatia/confusão mental). A patogênese decorre da depleção crítica de <strong>tiamina (vitamina B1)</strong> precipitada pela infusão de soro glicosado sem tiamina profilática prévia. O tratamento de emergência inegociável consiste em <strong>suspender soluções glicosadas e infundir imediatamente Tiamina intravenosa em altas doses (500 mg IV a cada 8 horas por 3 a 5 dias)</strong>. A alternativa A descreve uma iatrogenia nefasta (a correção rápida de sódio &gt; 10 mEq/L/dia é a causa, e não o tratamento, da mielinólise pontina central). A alternativa C erra no diagnóstico sindrômico. A alternativa D é absurda, pois eclâmpsia/pré-eclâmpsia só ocorre após 20 semanas de gestação (salvo na mola hidatiforme). A alternativa E erra ao propor meningite em paciente afebril com a clássica tríade de Wernicke pós-hiperêmese."
+        ],
+        [
+          "3",
+          "Questão 6 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Uma gestante de 28 anos, secundigesta, encontra-se internada com quadro de hiperêmese gravídica refratária com perda de 9% do peso corporal pré-gestacional e escore PUQE de 14 pontos. O obstetra planeja prescrever corticoterapia sistêmica com metilprednisolona como terapia de resgate. Considerando as diretrizes do ACOG e FEBRASGO a respeito do momento e dos riscos fetais da corticoterapia na gravidez, qual é a idade gestacional mínima recomendada para o início seguro dos corticoides sistêmicos e qual o risco fetal associado ao seu uso precoce?"
+        ],
+        [
+          "p",
+          "A) Idade gestacional mínima de 6 semanas; risco fetal de anencefalia.<br>\nB) Idade gestacional mínima de 10 semanas; risco fetal de fendas orofaciais (lábio leporino e fenda palatina).<br>\nC) Idade gestacional mínima de 16 semanas; risco fetal de retinopatia da prematuridade.<br>\nD) Idade gestacional mínima de 24 semanas; risco fetal de persistência do canal arterial.<br>\nE) Corticoides sistêmicos são totalmente contraindicados em qualquer fase da gravidez devido ao risco absoluto de óbito fetal."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> As diretrizes da FEBRASGO, RCOG e ACOG estabelecem que a corticoterapia sistêmica (metilprednisolona) atua como excelente terapia antiemética de resgate na hiperêmese grave refratária, porém <strong>sua administração é FORMALMENTE CONTRAINDICADA ANTES DE 10 SEMANAS DE GESTAÇÃO</strong>. Ensaios epidemiológicos e estudos caso-controle demonstraram que a exposição fetal a glicocorticoides sistêmicos durante a fase embrionária precoce da palatogênese (antes de 10 semanas de idade gestacional) associa-se a um aumento pequeno, porém estatisticamente significativo, no risco de <strong>fendas orofaciais (fenda palatina e lábio leporino)</strong>. A partir da 10ª semana completa, o palato fetal já se encontra estruturalmente fusionado, permitindo o uso seguro do corticoide em esquemas curtos de resgate (metilprednisolona 16 mg IV de 8/8h por 3 dias seguido de desmame). As demais alternativas citam idades gestacionais e malformações sem embasamento fisiopatológico."
+        ],
+        [
+          "3",
+          "Questão 7 (SUS-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Mulher de 27 anos, gestante de 10 semanas, com diagnóstico de hiperêmese gravídica, vem apresentando múltiplos episódios de vômitos diários. Nas últimas 4 horas, após uma crise paroxística de vômitos com grande esforço epigástrico, passou a apresentar dor torácica retroesternal intensa e persistente que irradia para as costas e piora com a deglutição. Ao exame físico: taquicardica (FC: 128 bpm), PA: 90/60 mmHg, taquipneica (FR: 28 irpm). À palpação cervical e da fúrcula esternal, nota-se crepitação típica de enfisema subcutâneo. À ausculta cardíaca, percebe-se um ruído crepitante sincrônico com os batimentos cardíacos (sinal de Hamman). Qual é a principal suspeita diagnóstica e a conduta prioritária imediata?"
+        ],
+        [
+          "p",
+          "A) Síndrome de Mallory-Weiss; indicar endoscopia digestiva alta terapêutica com ligadura elástica de varizes.<br>\nB) Síndrome de Boerhaave (perfuração transmural esofágica); indicar jejum absoluto, antibioticoterapia de amplo espectro e toracotomia cirúrgica de urgência.<br>\nC) Infarto agudo do miocárdio com supra de ST; realizar cineangiocoronariografia de emergência com angioplastia primária.<br>\nD) Tromboembolismo pulmonar maciço; iniciar anticoagulação plena com varfarina oral em dose dobrada.<br>\nE) Refluxo gastroesofágico fisiológico; prescrever antiácido líquido oral e liberar para acompanhamento pré-natal ambulatorial."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O caso clínico ilustra com perfeição a clássica <strong>Tríade de Mackler da Síndrome de Boerhaave</strong>: vômitos incoercíveis com esforço de êmese + dor retroesternal em punhalada com irradiação dorsal + enfisema subcutâneo palpável no pescoço/fúrcula esternal. A presença do <strong>sinal de Hamman</strong> (crepitação pré-cordial sincrônica com a sístole cardíaca) confirma a presença de ar livre no mediastino (pneumomediastino) resultante da perfuração transmural completa do esôfago distal torácico induzida pelo pico hipertensivo intragástrico durante os vômitos. A Síndrome de Boerhaave é uma catástrofe cirúrgica associada a mediastinite química e bacteriana fulminante, choque séptico e mortalidade de 30% a 50% se não tratada precocemente. A conduta de emergência consiste em <strong>jejum absoluto, suporte hemodinâmico vigoroso, antibioticoterapia parenteral de amplo espectro para germes entéricos e anaeróbios e toracotomia cirúrgica de urgência</strong> para sutura esofágica e drenagem de tórax. A alternativa A descreve Mallory-Weiss, que é uma lesão não transmural que cursa com hematêmese, sem pneumomediastino nem enfisema subcutâneo. A alternativa D propõe varfarina, que é teratogênica e contraindicada no 1º trimestre."
+        ],
+        [
+          "3",
+          "Questão 8 (ENAMED / Residência Médica)"
+        ],
+        [
+          "p",
+          "Durante a avaliação laboratorial de uma primigesta de 8 semanas com hiperêmese gravídica grave, o médico constata os seguintes exames hormonais: TSH = 0,02 mUI/L (suprimido) e T4 Livre = 2,8 ng/dL (elevado). A paciente não apresenta queixas prévias de disfunção tireoidiana, não possui bócio palpável ao exame da tireoide e não exibe oftalmopatia infiltrativa (exoftalmia). A dosagem de anticorpos Anti-TPO e TRAB foi estritamente negativa. A ultrassonografia obstétrica confirma gestação gemelar monocoriônica diamniótica viável. Considerando a fisiopatologia hormonal da gravidez e da hiperêmese, qual é o diagnóstico tireoidiano e a conduta médica indicada?"
+        ],
+        [
+          "p",
+          "A) Doença de Graves descompensada; iniciar imediatamente metimazol em altas doses por via oral.<br>\nB) Tireoidite subaguda de De Quervain; prescrever prednisona oral 40 mg/dia e suspender a gestação.<br>\nC) Hipertireoidismo Gestacional Transitório induzido por concentrações elevadas de beta-hCG; conduta expectante com tratamento sintomático da hiperêmese, sem necessidade de drogas antitireoidianas.<br>\nD) Tempestade tireotóxica iminente; realizar tireoidectomia subtotal cirúrgica no primeiro trimestre.<br>\nE) Hipotireoidismo subclínico em transição; iniciar reposição hormonal com levotiroxina sódica 100 mcg/dia."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro exposto é o clássico <strong>Hipertireoidismo Gestacional Transitório</strong>. A molécula de beta-hCG compartilha uma subunidade alfa idêntica à do hormônio estimulador da tireoide (TSH) e uma homologia estrutural relevante na subunidade beta. Em gestações gemelares ou em casos de hiperêmese grave, os níveis séricos de hCG atingem concentrações astronômicas, exercendo uma <strong>estimulação agonista direta (crossover) sobre o receptor de TSH</strong> nas células foliculares tireoidianas. Isso induz elevação transitória do T4 livre e supressão feedback do TSH. A ausência de bócio, ausência de oftalmopatia e a <strong>negatividade estrita do anticorpo TRAB</strong> descartam a Doença de Graves. Essa alteração laboratorial é autolimitada, com resolução espontânea paralela à queda fisiológica do hCG após a 14ª-16ª semana de gestação. <strong>Drogas antitireoidianas (como metimazol ou propiltiouracil) NÃO estão indicadas</strong> (alternativa A errada), pois causariam hipotireoidismo iatrogênico fetal e maternal desnecessário. A conduta correta é puramente expectante e de suporte antiemético."
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-e-resumo-hiperemese-gravidica",
+      0,
+      [
+        [
+          "2",
+          "9. Tabela High-Yield de Síntese e Diretrizes de Prática Clínica Baseada em Evidências"
+        ],
+        [
+          "3",
+          "9.1 Matriz de Decisão Clínica Rápida na Hiperêmese Gravídica"
+        ],
+        [
+          "t",
+          [
+            "Domínio Clínico",
+            "Parâmetro de Destaque",
+            "Manifestação / Critério Diagnóstico",
+            "Conduta Terapêutica Baseada em Evidências",
+            "Armadilha Crítica nas Provas de Residência"
+          ],
+          [
+            [
+              "<strong>Diagnóstico de HG</strong>",
+              "Perda Ponderal e Cetonúria",
+              "Perda de <strong>&gt; 5% do peso pré-gestacional</strong> associada a cetonúria &ge; 2+ e desidratação clínica.",
+              "Internação hospitalar imediata, jejum oral por 12-24h e hidratação parenteral vigorosa.",
+              "Não confundir com emese fisiológica (que mantém peso estável e não apresenta cetonúria)."
+            ],
+            [
+              "<strong>Etiopatogenia Molecular</strong>",
+              "Eixo GDF15 - GFRAL",
+              "Produção maciça de GDF15 placentário estimulando receptor GFRAL na área postrema do tronco encefálico.",
+              "Novas abordagens com dessensibilização pré-concepcional e bloqueio de GDF15 em ensaios clínicos.",
+              "Teorias puramente psicológicas ou histéricas estão definitivamente abolidas e banidas."
+            ],
+            [
+              "<strong>Metabolismo e Ácido-Base</strong>",
+              "Perda de Suco Gástrico",
+              "<strong>Alcalose metabólica hipoclorêmica e hipocalêmica</strong> com acidúria paradoxal.",
+              "Reposição com Soro Fisiológico 0,9% + Cloreto de Potássio (KCl 19,1%) + Sulfato de Magnésio.",
+              "Não infundir soro glicosado isolado (agrava a hipocalemia e precipita Wernicke)."
+            ],
+            [
+              "<strong>Complicação Neurológica</strong>",
+              "Encefalopatia de Wernicke",
+              "Tríade clássica: <strong>Oftalmoplegia/Nistagmo + Ataxia de marcha + Confusão mental</strong>.",
+              "<strong>TIAMINA (Vitamina B1) 500 mg IV de 8/8h</strong>. Profilaxia: 100 mg IV antes de soro glicosado.",
+              "<strong>NUNCA administrar glicose antes da tiamina</strong>: consome tiamina residual e causa óbito."
+            ],
+            [
+              "<strong>Correção do Sódio</strong>",
+              "Mielinólise Pontina Central",
+              "Tetraparesia flácida e Síndrome do Cativeiro (<em>locked-in</em>) por desmielinização osmótica.",
+              "Correção lenta da hiponatremia: elevar no máximo <strong>8 a 10 mEq/L em 24 horas</strong>.",
+              "Evitar infusões descontroladas de solução salina hipertônica a 3% em hiponatremia crônica."
+            ],
+            [
+              "<strong>Complicação Esofágica</strong>",
+              "Mallory-Weiss vs Boerhaave",
+              "Mallory-Weiss: laceração mucosa (hematêmese); Boerhaave: rotura transmural (Mackler/Hamman).",
+              "Mallory-Weiss: IBP IV + EDA; Boerhaave: jejum, antibioticoterapia e toracotomia de urgência.",
+              "Enfisema subcutâneo e dor retroesternal após vômitos = Boerhaave (emergência cirúrgica)."
+            ],
+            [
+              "<strong>Farmacoterapia 1ª Linha</strong>",
+              "Padrão-Ouro Seguro",
+              "Escore PUQE &ge; 7 sem desidratação grave; terapia inicial em todas as diretrizes.",
+              "<strong>Piridoxina (Vitamina B6) + Doxilamina</strong> (segurança comprovada Classe A).",
+              "Não retardar o início da doxilamina-piridoxina; é a droga com maior evidência de segurança."
+            ],
+            [
+              "<strong>Farmacoterapia 3ª Linha</strong>",
+              "Antagonista 5-HT3",
+              "Casos refratários internados com falha de metoclopramida e anti-histamínicos H1.",
+              "<strong>Ondansetrona 4 a 8 mg IV de 8/8h</strong> (uso preferencial após 10 semanas de gestação).",
+              "Monitorar QT no eletrocardiograma e corrigir previamente potássio e magnésio séricos."
+            ],
+            [
+              "<strong>Farmacoterapia de Resgate</strong>",
+              "Glicocorticoide Sistêmico",
+              "Refratariedade extrema a todas as 3 linhas antieméticas com desnutrição severa.",
+              "<strong>Metilprednisolona 16 mg IV de 8/8h por 3 dias</strong>, seguido de desmame gradual progressivo.",
+              "<strong>FORMALMENTE CONTRAINDICADA ANTES DE 10 SEMANAS</strong> (risco de fendas orofaciais)."
+            ],
+            [
+              "<strong>Eixo Tireoidiano</strong>",
+              "Hipertireoidismo Transitório",
+              "TSH suprimido com T4 livre elevado decorrente do efeito agonista do hCG sobre receptor de TSH.",
+              "Conduta expectante e sintomática; TRAB negativo; resolução espontânea até 16 semanas.",
+              "<strong>NÃO prescrever drogas antitireoidianas (metimazol/PTU)</strong>: não é Doença de Graves!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "9.2 Os Dez Mandamentos Obstétricos no Manejo da Hiperêmese Gravídica"
+        ],
+        [
+          "o",
+          [
+            "<strong>A regra de ouro da tiamina:</strong> Administre 100 mg de tiamina intravenosa antes de pendurar qualquer frasco contendo glicose em gestantes desidratadas;",
+            "<strong>O peso é a medida da verdade:</strong> Perda ponderal superior a 5% do peso pré-gestacional acompanhada de vômitos define hiperêmese e impõe intervenção hospitalar;",
+            "<strong>A área postrema é ativada pelo GDF15:</strong> A hiperêmese é uma doença neuroendócrina orgânica de origem trofoblástica mediada pelo receptor GFRAL;",
+            "<strong>Corticoterapia só após 10 semanas:</strong> Nunca prescreva corticoide no primeiro trimestre precoce pelo risco comprovado de lábio leporino e fenda palatina embrionária;",
+            "<strong>Ondansetrona exige coração em dia:</strong> Antes de prescrever ondansetrona, confira se o intervalo QT não está alargado e garanta potássio e magnésio normais;",
+            "<strong>Sódio deve subir a passos lentos:</strong> Jamais corrija a hiponatremia em ritmo superior a 8-10 mEq/L ao dia para evitar o desastre irreversível da mielinólise pontina;",
+            "<strong>Dor retroesternal com enfisema é Boerhaave:</strong> Vômitos intensos seguidos de dor torácica lancinante e crepitação no pescoço exigem toracotomia imediata;",
+            "<strong>Tireoide hiperativa na gravidez precoce geralmente é hCG:</strong> Peça TRAB antes de rotular a gestante com hiperêmese como portadora de Doença de Graves;",
+            "<strong>Nutrição enteral ganha de lavada da parenteral:</strong> Se a dieta oral falhar, passe sonda nasojejunal pós-pilórica antes de cogitar cateter venoso central e NPT;",
+            "<strong>Doxilamina com piridoxina é o alicerce:</strong> Inicie a combinação anti-histamínica precocemente para quebrar a cascata catabólica da hiperêmese."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

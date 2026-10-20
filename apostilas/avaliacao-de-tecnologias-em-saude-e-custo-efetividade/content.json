@@ -1,0 +1,1288 @@
+{
+  "v": 2,
+  "s": "avaliacao-de-tecnologias-em-saude-e-custo-efetividade",
+  "t": "Avaliação de Tecnologias em Saúde e Custo-Efetividade",
+  "p": "Avaliação de Tecnologias em Saúde e Custo-Efetividade — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Economia da Saúde, Análises de Custo-Efetividade e Custo-Utilidade, QALY, DALY, RCEI, Conitec, Modelagem de Decisão e Sistema GRADE",
+  "a": "Saúde Coletiva",
+  "m": "Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Avaliação de Tecnologias em Saúde e Custo-Efetividade",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Economia da Saúde, Análises de Custo-Efetividade e Custo-Utilidade, QALY, DALY, RCEI, Conitec, Modelagem de Decisão e Sistema GRADE",
+    [
+      "Área: Saúde Coletiva",
+      "Matéria: Saúde Coletiva",
+      "Tema: Avaliação de Tecnologias em Saúde e Custo-Efetividade"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "avaliacao-de-tecnologias-em-saude-ats-economia-da-saude-e-custo-efetividade",
+      "Avaliação de Tecnologias em Saúde (ATS), economia da saúde e custo-efetividade"
+    ],
+    [
+      "roteiro-de-aprendizagem",
+      "Roteiro de aprendizagem"
+    ],
+    [
+      "1-ats-evidencia-nao-e-apenas-funciona",
+      "1. ATS: evidência não é apenas \"funciona?\""
+    ],
+    [
+      "2-a-cadeia-da-evidencia-clinica-pico-e-certeza",
+      "2. A cadeia da evidência clínica: PICO e certeza"
+    ],
+    [
+      "tipos-de-avaliacao-economica-em-saude-e-metodologia-comparada",
+      "4A. Os Quatro Tipos Clássicos de Avaliação Econômica Completa em Saúde: Análise de Custo-Efetividade, Custo-Utilidade, Custo-Benefício e Custo-Minimização"
+    ],
+    [
+      "construcao-de-qaly-daly-e-calculo-da-rcei-icer",
+      "5A. Construção Metodológica de QALY e DALY, o Plano de Custo-Efetividade e a Razão de Custo-Efetividade Incremental (RCEI / ICER)"
+    ],
+    [
+      "3-custo-tem-perspectiva-tempo-e-contexto",
+      "3. Custo tem perspectiva, tempo e contexto"
+    ],
+    [
+      "4-tipos-de-avaliacao-economica",
+      "4. Tipos de avaliação econômica"
+    ],
+    [
+      "5-qaly-e-daly-construir-para-entender",
+      "5. QALY e DALY: construir para entender"
+    ],
+    [
+      "6-rcei-icer-interpretar-numerador-e-denominador",
+      "6. RCEI/ICER — interpretar numerador e denominador"
+    ],
+    [
+      "modelagem-matematica-de-decisao-markov-e-arvores",
+      "8A. Modelagem Matemática de Decisão em Saúde: Árvores de Decisão, Cadeias de Markov, Estados de Transição e Simulação de Monte Carlo"
+    ],
+    [
+      "analise-de-sensibilidade-e-sistema-grade-na-ats",
+      "9A. A Incerteza na Decisão: Análise de Sensibilidade Determinística (Tornado), Probabilística (Curva de Aceitabilidade) e o Sistema GRADE"
+    ],
+    [
+      "7-limiar-de-custo-efetividade-guia-nao-carimbo",
+      "7. Limiar de custo-efetividade: guia, não carimbo"
+    ],
+    [
+      "8-modelagem-de-decisao-arvore-markov-e-simulacao",
+      "8. Modelagem de decisão: árvore, Markov e simulação"
+    ],
+    [
+      "9-sensibilidade-quanto-a-resposta-depende-do-que-nao-sabemos",
+      "9. Sensibilidade: quanto a resposta depende do que não sabemos?"
+    ],
+    [
+      "10-analise-de-impacto-orcamentario-aio",
+      "10. Análise de Impacto Orçamentário (AIO)"
+    ],
+    [
+      "conitec-limiares-de-custo-efetividade-e-analise-de-impacto-orcamentario",
+      "12A. A Conitec (Lei nº 12.401/2011), o Limiar de Custo-Efetividade no Brasil (Portaria GM/MS nº 3.426/2022) e a Análise de Impacto Orçamentário (AIO)"
+    ],
+    [
+      "quatro-casos-clinicos-integradores-ats-economia-da-saude",
+      "15B. Casos Práticos Integradores: Modelagem de Markov, Cálculo da RCEI e Deliberação na Conitec"
+    ],
+    [
+      "questoes-comentadas-ats-economia-da-saude-enamed-revalida",
+      "16B. Questões Inéditas Comentadas de Residência Médica, Revalida e ENAMED sobre ATS e Economia da Saúde"
+    ],
+    [
+      "11-testes-diagnosticos-e-ats",
+      "11. Testes diagnósticos e ATS"
+    ],
+    [
+      "12-da-conitec-a-pratica-nao-confundir-instituicoes",
+      "12. Da Conitec à prática: não confundir instituições"
+    ],
+    [
+      "13-equidade-populacoes-raras-e-limites-do-modelo",
+      "13. Equidade, populações raras e limites do modelo"
+    ],
+    [
+      "14-algoritmos-de-interpretacao",
+      "14. Algoritmos de interpretação"
+    ],
+    [
+      "15-casos-integradores-com-comentario",
+      "15. Casos integradores com comentário"
+    ],
+    [
+      "16-questoes-autorais-de-residencia-comentarios-completos",
+      "16. Questões autorais de residência — comentários completos"
+    ],
+    [
+      "17-dez-visuais-didaticos-planejados-para-fila-de-aprovacao",
+      "17. Dez visuais didáticos planejados para fila de aprovação"
+    ],
+    [
+      "18-referencias-nacionais-e-internacionais-verificaveis",
+      "18. Referências nacionais e internacionais verificáveis"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Lote 13 · Apostila 258</h1>"
+        ]
+      ]
+    ],
+    [
+      "avaliacao-de-tecnologias-em-saude-ats-economia-da-saude-e-custo-efetividade",
+      0,
+      [
+        [
+          "2",
+          "Avaliação de Tecnologias em Saúde (ATS), economia da saúde e custo-efetividade"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Saúde Coletiva · Epidemiologia Clínica · Gestão · Economia da Saúde  \r<br><strong>Data editorial:</strong> 15/10/2026 · <strong>Situação:</strong> MANUSCRITO AUTORAL PARCIAL — NÃO PUBLICAR.  \r<br><strong>Prioridade:</strong> ensinar conceitos e interpretação de evidências para a prática e para provas de Medicina, sem transformar o tema em curso exclusivamente de econometria. <strong>Fronteira curricular:</strong> planejamento e decisão gestora na #257; sistemas e qualidade do dado na #259."
+        ],
+        [
+          "3",
+          "Benchmark e limitação da etapa zero"
+        ],
+        [
+          "p",
+          "Foram procurados no Drive os termos \"avaliação econômica\", \"custo-efetividade\", \"ATS\", \"economia da saúde\", \"estudos epidemiológicos\" e \"SUS\". Não se encontrou documento inteiramente equivalente a uma apostila de avaliação econômica. Foram <strong>abertos e lidos</strong> os PDFs comparáveis apenas em parte, \"Estudos Epidemiológicos\" (coortes, ensaios, riscos, medidas de associação e vieses) e \"SUS\" (fundamentação de sistema público e prioridades). O benchmark orienta pré-requisitos de evidência e decisão, <strong>não substitui</strong> um manual de economia da saúde e não permite afirmar conclusão do padrão editorial. Fontes primárias atuais centrais: CONITEC/MS, inclusive <strong>3ª edição (2026)</strong> das diretrizes metodológicas de avaliação econômica; apenas páginas institucionais e descrição geral foram verificadas, <strong>não</strong> a íntegra dos 164 páginas do manual. Não atribuir aos PDFs privados editora não identificada e não copiar gráficos/quadros do Drive."
+        ]
+      ]
+    ],
+    [
+      "roteiro-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "Roteiro de aprendizagem"
+        ],
+        [
+          "p",
+          "1. O que é tecnologia em saúde e o que ATS investiga.\r<br>2. Eficácia, efetividade, segurança, impacto organizacional e equidade.\r<br>3. Desenhos de estudos, certeza da evidência e PICO.\r<br>4. Perspectiva, comparador, horizonte temporal e custo.\r<br>5. Tipos de avaliações econômicas, com fórmulas.\r<br>6. Riscos, taxas, anos de vida, DALY e QALY.\r<br>7. Incremento, dominância e RCEI/ICER.\r<br>8. Curva/plano de custo-efetividade, fronteira e limiar.\r<br>9. Modelagem clínica-econômica, Markov e árvore de decisão.\r<br>10. Incerteza e análises de sensibilidade.\r<br>11. Análise de impacto orçamentário.\r<br>12. Equidade, ética, acesso e incorporação no SUS.\r<br>13. Avaliação de implantação e tecnologias emergentes.\r<br>14. Casos comentados e exercícios originais.\r<br>15. Perguntas autorais de residência, com alternativas.\r<br>16. Pautas visuais e referências."
+        ]
+      ]
+    ],
+    [
+      "1-ats-evidencia-nao-e-apenas-funciona",
+      0,
+      [
+        [
+          "2",
+          "1. ATS: evidência não é apenas \"funciona?\""
+        ],
+        [
+          "p",
+          "<strong>Tecnologia em saúde</strong> inclui medicamentos, vacinas, equipamentos, testes diagnósticos, procedimentos cirúrgicos, dispositivos, programas e processos assistenciais. A <strong>Avaliação de Tecnologias em Saúde</strong> é um processo multidisciplinar que examina propriedades e consequências de uso ao longo do ciclo de vida: eficácia/efetividade, segurança, consequências econômicas, éticas, organizacionais, sociais e, quando cabível, ambientais."
+        ],
+        [
+          "p",
+          "Um medicamento pode demonstrar ganho de sobrevida num ensaio rigoroso e ainda gerar perguntas relevantes antes da oferta universal: a população do ensaio parece-se com pacientes do SUS? Há laboratório para monitorar efeitos adversos? O comparador usado existe na rede? A cadeia de frio é exequível? O benefício aparece também em cenário real? Quantas pessoas seriam elegíveis? O preço comprometera outras ações? Como reduzir desigualdades na distribuição?"
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> ATS pergunta simultaneamente \"beneficia quem?\", \"com que certeza?\", \"a que custo?\", \"comparado a quê?\" e \"com que consequências para a população?\"."
+        ]
+      ]
+    ],
+    [
+      "2-a-cadeia-da-evidencia-clinica-pico-e-certeza",
+      0,
+      [
+        [
+          "2",
+          "2. A cadeia da evidência clínica: PICO e certeza"
+        ],
+        [
+          "p",
+          "<strong>PICO</strong> estrutura a pergunta: População, Intervenção, Comparador e Outcome/desfecho. Comparadores devem representar <strong>prática real ou alternativa relevante</strong>, não escolha conveniente que torne a intervenção artificialmente vantajosa. A evidência pode vir de ensaios clínicos, estudos observacionais, registros e revisões sistemáticas, cada qual com risco de vieses e limitações."
+        ],
+        [
+          "3",
+          "Eficácia vs efetividade"
+        ],
+        [
+          "p",
+          "<strong>Eficácia:</strong> benefício sob condições controladas de pesquisa, com critérios estritos e alta adesão.  \r\n<strong>Efetividade:</strong> resultado no mundo real, incluindo comorbidades, adesão variável, dificuldade de transporte, monitorização insuficiente e diversidade de pacientes.  \r\n<strong>Segurança:</strong> frequência/gravidade de danos; para efeitos raros, ensaios pequenos podem ser insuficientes.  \r\n<strong>Implementação:</strong> viabilidade e aceitação pela equipe, interoperabilidade, logística, tempo até início, custo de treinamento."
+        ],
+        [
+          "p",
+          "Um ensaio que reduz risco relativo de 50% pode ter impacto absoluto mínimo se o evento é raro. <strong>Exemplo:</strong> risco basal de 2% reduzido para 1% corresponde à redução relativa de 50%, mas redução absoluta de apenas 1 ponto percentual; NNT = 100 pacientes tratados para evitar um evento no horizonte estudado. Não transportar NNT para outra população sem discutir risco basal."
+        ],
+        [
+          "3",
+          "Qualidade da evidência"
+        ],
+        [
+          "p",
+          "Conceitos de GRADE incluem risco de viés, inconsistência, imprecisão, evidência indireta e viés de publicação; certeza pode ser elevada/baixa com justificativas. Uma recomendação clínica forte pode envolver mais dimensões que certeza pura, como gravidade da condição, valores e preferências, recursos, equidade e viabilidade."
+        ]
+      ]
+    ],
+    [
+      "tipos-de-avaliacao-economica-em-saude-e-metodologia-comparada",
+      0,
+      [
+        [
+          "2",
+          "4A. Os Quatro Tipos Clássicos de Avaliação Econômica Completa em Saúde: Análise de Custo-Efetividade, Custo-Utilidade, Custo-Benefício e Custo-Minimização"
+        ],
+        [
+          "3",
+          "A Escassez de Recursos e a Necessidade de Escolha Racional"
+        ],
+        [
+          "p",
+          "Em qualquer sistema de saúde do planeta — seja ele universal e público como o SUS, baseado em seguros sociais (modelo Bismarck) ou predominantemente privado como nos Estados Unidos —, os <strong>recursos financeiros, tecnológicos e humanos são estritamente finitos</strong>, enquanto as demandas em saúde e os custos das inovações biomédicas expandem-se de maneira praticamente infinita. A Economia da Saúde e a Avaliação de Tecnologias em Saúde (ATS) fornecem o ferramental metodológico analítico para guiar a alocação eficiente, equitativa e transparente dos recursos públicos."
+        ],
+        [
+          "3",
+          "A Matriz Comparativa das Quatro Avaliações Econômicas Completas"
+        ],
+        [
+          "p",
+          "Uma avaliação econômica é considerada \"completa\" quando compara simultaneamente <strong>duas ou mais alternativas terapêuticas</strong> e avalia tanto os <strong>custos monetários</strong> quanto as <strong>consequências clínicas (desfechos)</strong> de cada intervenção. As quatro modalidades distinguem-se primariamente pela forma como o desfecho clínico é mensurado e valorado:"
+        ],
+        [
+          "t",
+          [
+            "Tipo de Avaliação",
+            "Mensuração dos Custos",
+            "Unidade de Mensuração dos Desfechos Clínicos (Efeitos)",
+            "Medida Síntese Resultante",
+            "Indicação Principal e Exemplo Prático"
+          ],
+          [
+            [
+              "<strong>1. Análise de Custo-Efetividade (ACE)</strong>",
+              "Unidades monetárias (Reais - R$, Dólares - US$).",
+              "<strong>Unidades naturais de saúde</strong> (anos de vida ganhos, mortes evitadas, milímetros de mercúrio de pressão reduzidos, casos de infecção prevenidos).",
+              "Razão de Custo-Efetividade Incremental (RCEI / ICER): R$ por unidade natural de saúde ganha (ex.: R$ por ano de vida salvo).",
+              "Comparação de intervenções concorrentes que possuem o <strong>mesmo objetivo clínico primário</strong> (ex.: comparar dois anti-hipertensivos na redução de AVC, ou dois esquemas de quimioterapia na sobrevida em anos)."
+            ],
+            [
+              "<strong>2. Análise de Custo-Utilidade (ACU)</strong>",
+              "Unidades monetárias (R$, US$).",
+              "<strong>Unidades genéricas ajustadas pela qualidade de vida</strong>:\n        <ul>\n          <li><strong>QALY (Quality-Adjusted Life Year):</strong> Anos de Vida Ajustados pela Qualidade;</li>\n          <li><strong>DALY (Disability-Adjusted Life Year):</strong> Anos de Vida Ajustados por Incapacidade.</li>\n        </ul>",
+              "Razão de Custo-Utilidade Incremental (RCUI): <strong>R$ por QALY ganho</strong> ou <strong>R$ por DALY evitado</strong>.",
+              "<strong>Padrão-Ouro internacional e da Conitec:</strong> Permite comparar programas de saúde de <strong>áreas clínicas completamente distintas</strong> (ex.: comparar o custo-utilidade de expandir a vacinação de HPV versus incorporar uma nova droga para artrite reumatoide versus financiar cirurgias bariátricas)."
+            ],
+            [
+              "<strong>3. Análise de Custo-Benefício (ACB)</strong>",
+              "Unidades monetárias (R$, US$).",
+              "<strong>Unidades estritamente MONETÁRIAS (R$, US$)</strong>. Tanto os custos quanto os benefícios de saúde recebem um valor financeiro expresso em moeda.",
+              "Benefício Líquido (Benefício Monetário menos Custo Monetário) ou Razão Custo/Benefício.",
+              "Avaliação intersetorial de macroinvestimentos pelo Ministério da Fazenda ou Planejamento (ex.: comparar se R$ 1 bilhão gera maior retorno socioeconômico se investido em saneamento básico ou em rodovias). Exige métodos complexos de valoração da vida humana (como Disposição a Pagar - <em>Willingness to Pay</em>)."
+            ],
+            [
+              "<strong>4. Análise de Custo-Minimização (ACM)</strong>",
+              "Unidades monetárias (R$, US$).",
+              "Os desfechos clínicos e a eficácia de ambas as tecnologias são <strong>RIGOROSAMENTE IDÊNTICOS (comprovados por ensaios de equivalência ou não inferioridade)</strong>.",
+              "Diferença líquida de custos financeiros entre as alternativas. Escolhe-se simplesmente a opção mais barata.",
+              "Comparação entre medicamento genérico e o medicamento inovador de referência com bioequivalência demonstrada; ou comparar a realização do mesmo procedimento cirúrgico em regime de hospital-dia versus internação convencional de 3 dias."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "construcao-de-qaly-daly-e-calculo-da-rcei-icer",
+      0,
+      [
+        [
+          "2",
+          "5A. Construção Metodológica de QALY e DALY, o Plano de Custo-Efetividade e a Razão de Custo-Efetividade Incremental (RCEI / ICER)"
+        ],
+        [
+          "3",
+          "O Conceito e o Cálculo do QALY (Quality-Adjusted Life Year)"
+        ],
+        [
+          "p",
+          "O <strong>QALY</strong> (Ano de Vida Ajustado pela Qualidade) combina simultaneamente duas dimensões fundamentais do desfecho clínico: o <strong>ganho em quantidade de vida (tempo/sobrevida em anos)</strong> e o <strong>ganho em qualidade de vida (utilidade)</strong> durante esse tempo. A fórmula matemática fundamental do QALY é expressa por:"
+        ],
+        [
+          "p",
+          "<div style=\"text-align: center; margin: 15px 0; font-size: 1.15em; font-weight: bold;\">\n  $$\text{QALY} = \text{Tempo de Sobrevida (anos)} \times \text{Escore de Utilidade (U)}$$\n</div>"
+        ],
+        [
+          "p",
+          "O escore de utilidade ($U$) varia em uma escala ancorada entre <strong>0 e 1</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Utilidade = 1,0:</strong> Estado de saúde física e mental perfeito e pleno;",
+            "<strong>Utilidade = 0,0:</strong> Estado equivalente à morte;",
+            "<strong>Utilidades negativas (< 0):</strong> Estados de saúde percebidos como piores do que a própria morte (dor refratária extrema com sofrimento insuportável);",
+            "<strong>Exemplo Prático de Prova:</strong> Um paciente recebe um tratamento oncológico inovador que lhe proporciona 4 anos de sobrevida com escore de utilidade média de 0,75 (devido a efeitos adversos leves). O ganho gerado é: $4 \times 0,75 = 3,0\text{ QALYs}$. Se a terapia padrão anterior conferia apenas 2 anos de vida com utilidade de 0,5 (total de 1,0 QALY), o ganho incremental é de $3,0 - 1,0 = 2,0\text{ QALYs}$ ganhos."
+          ]
+        ],
+        [
+          "3",
+          "O Conceito e a Estrutura do DALY (Disability-Adjusted Life Year)"
+        ],
+        [
+          "p",
+          "Desenvolvido pela OMS e pela Universidade de Harvard no histórico estudo <em>Global Burden of Disease (Carga Global de Doença - GBD)</em>, o <strong>DALY</strong> é uma medida do <strong>fardo ou perda de saúde</strong> decorrente de doenças, lesões e fatores de risco. Representa um ano de vida saudável perdido:"
+        ],
+        [
+          "p",
+          "<div style=\"text-align: center; margin: 15px 0; font-size: 1.15em; font-weight: bold;\">\n  $$\text{DALY} = \text{YLL (Years of Life Lost)} + \text{YLD (Years Lived with Disability)}$$\n</div>"
+        ],
+        [
+          "p",
+          "Onde:"
+        ],
+        [
+          "u",
+          [
+            "<strong>YLL (Anos de Vida Perdidos por Morte Prematura):</strong> Quantifica o impacto dos óbitos precoces. Calcula-se multiplicando o número de mortes em cada faixa etária pela expectativa de vida teórica padronizada remanescente para aquela idade;",
+            "<strong>YLD (Anos Vividos com Incapacidade):</strong> Quantifica o impacto das doenças não fatais (como depressão, lombalgia crônica, diabetes, sequelas de trauma). Calcula-se multiplicando o número de casos prevalentes pela duração da condição e pelo respectivo <strong>peso de incapacidade (disability weight)</strong>, que varia de 0 (saúde perfeita) a 1 (perda funcional equivalente à morte)."
+          ]
+        ],
+        [
+          "3",
+          "A Razão de Custo-Efetividade Incremental (RCEI / ICER)"
+        ],
+        [
+          "p",
+          "Ao avaliar se uma nova tecnologia ($B$) deve substituir o tratamento habitual padrão ($A$), nunca se divide o custo total pelo efeito total. O parâmetro decisório obrigatório é a <strong>relação incremental</strong> entre a diferença de custos e a diferença de efeitos:"
+        ],
+        [
+          "p",
+          "<div style=\"text-align: center; margin: 15px 0; font-size: 1.15em; font-weight: bold;\">\n  $$\text{RCEI (ICER)} = \frac{Delta \text{Custo}}{Delta \text{Efeito}} = \frac{\text{Custo da Nova Tecnologia (B)} - \text{Custo da Tecnologia Padrão (A)}}{\text{Efeito da Nova Tecnologia (B)} - \text{Efeito da Tecnologia Padrão (A)}}$$\n</div>"
+        ],
+        [
+          "3",
+          "O Plano de Custo-Efetividade e a Teoria da Dominância"
+        ],
+        [
+          "p",
+          "O resultado da comparação incremental é graficamente projetado no <strong>Plano de Custo-Efetividade</strong> (com a diferença de efeito no eixo das abscissas $X$ e a diferença de custo no eixo das ordenadas $Y$):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Quadrante Inferior Direito (Dominância Forte / Dominância Absoluta):</strong> A nova tecnologia tem <strong>menor custo e maior efetividade</strong> ($Delta \text{Custo} < 0$ e $Delta \text{Efeito} > 0$). É a decisão mais fácil da gestão: a incorporação é imediata e incontestável;",
+            "<strong>Quadrante Superior Esquerdo (Dominada Forte / Inaceitável):</strong> A nova tecnologia tem <strong>maior custo e menor efetividade</strong> ($Delta \text{Custo} > 0$ e $Delta \text{Efeito} < 0$). É rejeitada sumariamente;",
+            "<strong>Quadrante Superior Direito (Cenário Clássico da Inovação):</strong> A nova tecnologia é <strong>mais efetiva, porém mais cara</strong> ($Delta \text{Custo} > 0$ e $Delta \text{Efeito} > 0$). É onde se concentra a imensa maioria dos pareceres da Conitec. A decisão de incorporar dependerá de a RCEI situar-se abaixo ou acima do <strong>Limiar de Custo-Efetividade</strong> aceito pelo sistema de saúde."
+          ]
+        ]
+      ]
+    ],
+    [
+      "3-custo-tem-perspectiva-tempo-e-contexto",
+      0,
+      [
+        [
+          "2",
+          "3. Custo tem perspectiva, tempo e contexto"
+        ],
+        [
+          "p",
+          "\"Custo\" não é sinônimo de preço de caixa. Uma internação envolve profissionais, insumos, estrutura, manutenção, energia e tempo; preço pago por tecnologia pode diferir de custo econômico social. <strong>Perspectiva</strong> define quais custos e efeitos contam:\r<li><strong>SUS/pagador público:</strong> despesas e recursos do sistema, conforme estudo.</li>\r<li><strong>Serviço/hospital:</strong> custos do estabelecimento e impacto operacional.</li>\r<li><strong>Paciente/família:</strong> transporte, copagamento, cuidador, tempo e perda de renda.</li>\r<li><strong>Sociedade:</strong> pode englobar custos sanitários e não sanitários, produtividade e efeitos ampliados, evitando dupla contagem.</li>"
+        ],
+        [
+          "p",
+          "<strong>Horizonte temporal</strong> precisa capturar diferenças relevantes entre opções. Para tratamento de câncer que gera benefício ao longo de décadas, horizonte de um ano subestima ganhos e custos tardios; para estratégia de testagem aguda, um horizonte menor pode ser adequado. Custos e benefícios futuros são frequentemente descontados por taxa metodológica definida na diretriz; taxa, perspectiva e moeda/ano de referência devem ser explicitados. Não inserir taxa arbitrária como universal sem conferência ao manual 2026."
+        ],
+        [
+          "3",
+          "Custos diretos e indiretos"
+        ],
+        [
+          "p",
+          "<strong>Diretos médicos:</strong> medicamentos, profissionais, exames, internações, eventos adversos.  \r\n<strong>Diretos não médicos:</strong> transporte sanitário, cuidadores pagos e outras despesas conforme perspectiva.  \r\n<strong>Indiretos:</strong> perda de produtividade por ausência laboral, incapacidade e mortalidade prematura.  \r\n<strong>Intangíveis:</strong> dor e sofrimento podem afetar qualidade de vida, mas não são facilmente mensuráveis como gasto de caixa e podem estar parcialmente representados em medidas de utilidade; evitar dupla contagem."
+        ],
+        [
+          "p",
+          "No SUS, número alto de internações registrado no SIH pode ser <strong>proxy</strong> de produção e não custo integral, porque tabela de remuneração e contabilidade de custos são objetos distintos."
+        ]
+      ]
+    ],
+    [
+      "4-tipos-de-avaliacao-economica",
+      0,
+      [
+        [
+          "2",
+          "4. Tipos de avaliação econômica"
+        ],
+        [
+          "t",
+          [
+            "Tipo",
+            "Medida de resultado",
+            "Pergunta",
+            "Limitação"
+          ],
+          [
+            [
+              "Custo-minimização",
+              "efeito considerado equivalente com justificativa robusta",
+              "Qual opção custa menos se efeitos são comparáveis?",
+              "equivalência não pode ser assumida sem evidência"
+            ],
+            [
+              "Custo-efetividade",
+              "unidades clínicas naturais (eventos evitados, anos de vida ganhos)",
+              "Quanto custa obter mais um desfecho clínico?",
+              "comparar doenças diferentes é difícil"
+            ],
+            [
+              "Custo-utilidade",
+              "QALY/AVAQ, por exemplo",
+              "Quanto custa obter ano de vida ajustado pela qualidade?",
+              "utilidades têm incertezas e limitações éticas"
+            ],
+            [
+              "Custo-benefício",
+              "custos e benefícios convertidos em moeda",
+              "Benefícios monetizados excedem custos?",
+              "valoração de saúde/vida é complexa"
+            ],
+            [
+              "Custo-consequência",
+              "desfechos e custos apresentados separadamente",
+              "Quais perdas e ganhos nas diversas dimensões?",
+              "não fornece critério único"
+            ],
+            [
+              "Impacto orçamentário",
+              "desembolso na população elegível ao longo de anos",
+              "O sistema consegue financiar a adoção?",
+              "não mede valor clínico incremental sozinho"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Custo-efetividade</strong> é termo usado às vezes como guarda-chuva para estudos econômicos, mas no sentido estrito usa unidade natural. Custo-utilidade usa medida de utilidade, frequentemente <strong>QALY</strong>. AIO responde se há capacidade de suportar financiamento, não se o valor por unidade de saúde é bom."
+        ]
+      ]
+    ],
+    [
+      "5-qaly-e-daly-construir-para-entender",
+      0,
+      [
+        [
+          "2",
+          "5. QALY e DALY: construir para entender"
+        ],
+        [
+          "p",
+          "<strong>QALY (quality-adjusted life year)</strong> combina anos vividos com peso de utilidade de qualidade de vida normalmente entre 0 (equivalente a morte) e 1 (saúde plena), admitindo valores negativos em certos instrumentos/estados de saúde considerados piores que morte. Um ano com utilidade 0,8 equivale a 0,8 QALY numa abordagem simplificada sem desconto. Exemplo: três anos a 0,7 = <strong>2,1 QALYs</strong> nesse período; cinco anos a 0,8 = 4 QALYs. A diferença para intervenções deve considerar comparador, mortalidade, progressão e horizonte temporal, não apenas multiplicação estática de utilidade."
+        ],
+        [
+          "p",
+          "<strong>DALY (disability-adjusted life year)</strong> mede carga de doença por anos de vida perdidos por morte prematura + anos vividos com incapacidade ponderada; diferentemente do QALY, maior DALY geralmente representa pior carga. <strong>Não confundir QALY ganho com DALY perdido ou assumir que ambos são espelhos perfeitos.</strong> Pesos e metodologia diferem."
+        ],
+        [
+          "p",
+          "A utilidade não representa simplesmente satisfação com serviço; instrumentos de qualidade de vida como EQ-5D produzem valores mediante algoritmos e conjuntos de preferências. Grupos etários e culturas podem variar na percepção; transferir utilidade internacional para Brasil sem análise de validade introduz incerteza."
+        ]
+      ]
+    ],
+    [
+      "6-rcei-icer-interpretar-numerador-e-denominador",
+      0,
+      [
+        [
+          "2",
+          "6. RCEI/ICER — interpretar numerador e denominador"
+        ],
+        [
+          "p",
+          "A <strong>razão de custo-efetividade incremental (RCEI ou ICER)</strong> é:\r<br>\\[\r<br>ICER = \\frac{C_{\\mathrm{nova}}-C_{\\mathrm{comparador}}}{E_{\\mathrm{nova}}-E_{\\mathrm{comparador}}}.\r<br>\\]\r<br>A unidade é R$/QALY ganho quando E mede QALY. Antes de calcular, verificar <strong>se custo e efeito foram mensurados para mesma população e horizonte</strong>."
+        ],
+        [
+          "p",
+          "<strong>Exemplo didático com números fictícios:</strong> alternativa A custa R$ 20.000 por paciente e resulta em 5,0 QALYs; B custa R$ 26.000 e resulta em 5,3 QALYs. Incremento de custo = R$ 6.000; incremento de benefício = 0,3 QALY; ICER = <strong>R$ 20.000 por QALY adicional</strong>. Isso <strong>não</strong> significa \"a vida vale R$ 20 mil\", nem \"o sistema necessariamente vai incorporar\". Significa que, nesse modelo e comparador, cada 0,3 unidade adicional de QALY custa R$ 6 mil por paciente."
+        ],
+        [
+          "3",
+          "Quatro quadrantes de decisão"
+        ],
+        [
+          "p",
+          "<li><strong>Mais eficaz e mais barato (dominante):</strong> nova opção domina a comparadora.</li>\r<li><strong>Menos eficaz e mais caro (dominada):</strong> usualmente não é racional adotá-la como alternativa clínica equivalente.</li>\r<li><strong>Mais eficaz e mais caro:</strong> ICER positivo e discussão de valor/limiar.</li>\r<li><strong>Menos eficaz e mais barato:</strong> requer discutir se perda de saúde é aceitável frente à economia, valores e acesso; o sinal algébrico isolado da razão é insuficiente.</li>"
+        ],
+        [
+          "p",
+          "<strong>Armadilha matemática:</strong> se custo e efeito diminuem, o ICER pode ser positivo, mas ele representa <strong>economia por perda de saúde</strong>, não ganho pelo mesmo preço. Sempre inspecionar os sinais de ΔC e ΔE antes de interpretar razão."
+        ],
+        [
+          "3",
+          "Dominância estendida e fronteira eficiente"
+        ],
+        [
+          "p",
+          "Ao comparar múltiplas alternativas, descartar opções estritamente dominadas; ordenar por efeito e observar taxas incrementais. Uma tecnologia pode sofrer <strong>dominância estendida</strong> quando combinação/linha entre alternativas produz maior benefício por custo incremental mais favorável. A fronteira de eficiência demonstra opções não dominadas; não comparar cada nova tecnologia apenas com \"não tratar\" se já existe tratamento efetivo e disponível."
+        ]
+      ]
+    ],
+    [
+      "modelagem-matematica-de-decisao-markov-e-arvores",
+      0,
+      [
+        [
+          "2",
+          "8A. Modelagem Matemática de Decisão em Saúde: Árvores de Decisão, Cadeias de Markov, Estados de Transição e Simulação de Monte Carlo"
+        ],
+        [
+          "3",
+          "Por que Modelar em Avaliação de Tecnologias em Saúde?"
+        ],
+        [
+          "p",
+          "Os ensaios clínicos randomizados (ECR), embora representem o padrão-ouro para estabelecer eficácia e segurança sob condições controladas, apresentam limitações metodológicas intrínsecas para a tomada de decisão em saúde pública:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Horizonte Temporal Curto:</strong> A maioria dos ECRs acompanha os pacientes por 6 meses a 2 anos, ao passo que doenças crônicas (como hipertensão, diabetes, osteoporose ou câncer de mama) afetam a vida do paciente por décadas;",
+            "<strong>Desfechos Substitutos (Surrogate Endpoints):</strong> Frequente utilização de marcadores intermediários laboratoriais (redução de HbA1c, redução de LDL-colesterol, regressão tumoral em tomografia) em vez de desfechos clínicos finais centrados no paciente (morte, cegueira, infarto, amputação de membro);",
+            "<strong>Validade Externa Reduzida:</strong> Populações altamente selecionadas em centros de excelência acadêmica, excluindo idosos frágeis, gestantes e portadores de multimorbidades prevalentes no mundo real."
+          ]
+        ],
+        [
+          "p",
+          "A <strong>Modelagem de Decisão em Saúde</strong> é a técnica quantitativa que permite sintetizar dados de múltiplas fontes (ensaios clínicos, dados epidemiológicos de coortes, tabelas de mortalidade do IBGE e custos reais do SUS) para projetar os custos e consequências clínicas em um <strong>horizonte temporal de longo prazo ou por toda a vida (lifetime horizon)</strong>."
+        ],
+        [
+          "3",
+          "1. Árvores de Decisão (Decision Trees)"
+        ],
+        [
+          "p",
+          "São modelos gráficos e determinísticos ideais para avaliar eventos de <strong>curta duração, processos agudos ou sequências simples de eventos não repetitivos</strong> (como o manejo de infecções bacterianas agudas, sepse na UTI ou procedimentos cirúrgicos de urgência). A árvore é composta por três elementos geométricos estruturais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Nó de Decisão (representado por um Quadrado $square$):</strong> O ponto inicial onde o gestor/médico faz a escolha ativa entre as alternativas terapêuticas concorrentes (ex.: Prescrever Medicamento A versus Medicamento B);",
+            "<strong>Nó de Probabilidade ou de Acaso (representado por um Círculo $\bigcirc$):</strong> O ponto onde eventos clínicos aleatórios ocorrem fora do controle do clínico, cada um com uma probabilidade específica associada (a soma das probabilidades de todos os ramos que saem de um nó de acaso deve ser obrigatoriamente <strong>igual a 1,0 ou 100%</strong>; ex.: Sucesso Clínico = 0,85; Falha Terapêutica = 0,15);",
+            "<strong>Nó Terminal (representado por um Triângulo $\u000bartriangle$):</strong> A extremidade final de cada ramo, onde são computados os custos acumulados e o desfecho final atingido (ex.: cura com utilidade 1,0; ou óbito com utilidade 0,0)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Limitação Metodológica Crucial:</strong> A árvore de decisão simples é incapaz de representar adequadamente eventos recorrentes no tempo (como pacientes que têm múltiplos infartos ou recaídas depressivas ao longo dos anos) sem se tornar excessivamente complexa e ininteligível (\"explosão combinatória de ramos\")."
+        ],
+        [
+          "3",
+          "2. Modelos e Cadeias de Markov"
+        ],
+        [
+          "p",
+          "Desenvolvidos pelo matemático russo Andrei Markov, os <strong>Modelos de Markov</strong> constituem a ferramenta analítica mais empregada no mundo para doenças crônicas não transmissíveis. O modelo assume que o paciente se encontra, a cada momento, em um determinado <strong>Estado de Saúde mutuamente exclusivo</strong> (o indivíduo só pode estar em um estado de cada vez):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estados de Saúde Típicos:</strong> Em um modelo de acidente vascular cerebral, por exemplo, os estados podem ser: 1) Assintomático; 2) Pós-AVC sem incapacidade (escore de Rankin 0-2); 3) Pós-AVC com incapacidade severa (Rankin 3-5); e 4) Morte;",
+            "<strong>Ciclos de Markov:</strong> O horizonte temporal total é fatiado em intervalos fixos de tempo idênticos e discretos chamados <em>ciclos</em> (geralmente ciclos anuais, semestrais ou mensais);",
+            "<strong>Probabilidades de Transição:</strong> A cada ciclo decorrido, o paciente possui uma probabilidade matemática de permanecer no mesmo estado de saúde ou transitar para outro estado, dependendo da eficácia do medicamento avaliado;",
+            "<strong>Estado Absorvente:</strong> É o estado de saúde do qual o paciente <strong>nunca mais pode sair</strong> após ingressar (sendo a <strong>Morte</strong> o clássico estado absorvente; a probabilidade de transição da morte para a vida é 0). O modelo encerra-se quando todos os indivíduos da coorte teórica atingem o estado absorvente ou quando o tempo programado se esgota;",
+            "<strong>A Premissa Markoviana (Memoryless):</strong> Uma limitação teórica clássica é que o modelo tradicional de Markov \"não tem memória\": a probabilidade de transição depende exclusivamente do estado atual em que o indivíduo se encontra, e não dos estados anteriores pelos quais passou (limitação superada por modelos mais modernos com estados túnel ou microssimulação)."
+          ]
+        ],
+        [
+          "3",
+          "3. Microssimulação e Modelagem Baseada em Indivíduos"
+        ],
+        [
+          "p",
+          "Enquanto a cadeia de Markov clássica analisa uma coorte agregada hipotética (\"modelo de coorte\"), a <strong>Microssimulação (Simulação de Monte Carlo de Primeiro Nível)</strong> simula um paciente individual por vez, permitindo que a história pregressa, o perfil genético, o nível de pressão arterial individual e os eventos adversos acumulados modifiquem dinamicamente as probabilidades de eventos futuros. É o modelo computacional mais avançado da economia médica."
+        ]
+      ]
+    ],
+    [
+      "analise-de-sensibilidade-e-sistema-grade-na-ats",
+      0,
+      [
+        [
+          "2",
+          "9A. A Incerteza na Decisão: Análise de Sensibilidade Determinística (Tornado), Probabilística (Curva de Aceitabilidade) e o Sistema GRADE"
+        ],
+        [
+          "3",
+          "O Manejo Científico da Incerteza nos Modelos Econômicos"
+        ],
+        [
+          "p",
+          "Todos os modelos econômicos em saúde apoiam-se em estimativas numéricas de parâmetros que possuem algum grau de incerteza: o custo unitário exato de uma diária de UTI pode variar entre hospitais; a taxa de desconto financeiro futuro oscila; a eficácia da droga na vida real possui um intervalo de confiança estatístico de 95%. A <strong>Análise de Sensibilidade</strong> é o teste metodológico obrigatório para verificar se a conclusão final do modelo (a decisão de que a droga é custo-efetiva) permanece sólida ou se ela se altera drasticamente perante variações plausíveis nos dados:"
+        ],
+        [
+          "t",
+          [
+            "Tipo de Análise de Sensibilidade",
+            "Metodologia Operacional",
+            "Representação Gráfica e Interpretação"
+          ],
+          [
+            [
+              "<strong>1. Determinística Univariada (One-Way)</strong>",
+              "Modifica-se o valor de <strong>um único parâmetro de cada vez</strong> entre seus limites plausíveis mínimo e máximo (ex.: variar o preço da droga entre -30% e +30%), mantendo todos os outros parâmetros estritamente fixos.",
+              "<strong>Diagrama de Tornado:</strong> Gráfico de barras horizontais empilhadas em ordem decrescente de amplitude. Os parâmetros posicionados no topo do tornado são aqueles cuja variação gera o <strong>maior impacto financeiro</strong> no resultado final da RCEI (parâmetros críticos onde o gestor deve focar sua negociação de preços)."
+            ],
+            [
+              "<strong>2. Determinística Multivariada e de Cenários</strong>",
+              "Altera-se simultaneamente o valor de dois ou mais parâmetros inter-relacionados para simular cenários extremos (ex.: <em>Cenário Pessimista</em>, com menor eficácia clínica e custo máximo de complicações; versus <em>Cenário Otimista</em>, com alta eficácia e custos reduzidos).",
+              "Permite ao tomador de decisão enxergar o pior cenário fiscal possível caso a tecnologia não tenha na prática o desempenho promissor visto nos ensaios acadêmicos."
+            ],
+            [
+              "<strong>3. Probabilística (PSA - Probabilistic Sensitivity Analysis)</strong>",
+              "Atribui-se a cada parâmetro uma <strong>distribuição de probabilidade estatística completa</strong> (ex.: distribuições Beta para utilidades, Gama para custos, Log-normal para razões de risco relativo). O computador executa milhares de iterações sucessivas (Simulação de Monte Carlo), sorteando valores aleatórios.",
+              "<strong>Curva de Aceitabilidade de Custo-Efetividade (CEAC):</strong> Gráfico que plota, no eixo $X$, diferentes limiares de disposição a pagar (ex.: de R$ 0 a R$ 200.000 por QALY) e, no eixo $Y$, a <strong>probabilidade matemática (de 0% a 100%)</strong> de a nova intervenção ser considerada custo-efetiva naquele limiar específico."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Hierarquia da Evidência e o Sistema GRADE na Avaliação de Tecnologias"
+        ],
+        [
+          "p",
+          "A Conitec, a OMS e os principais centros mundiais de ATS adotaram o <strong>Sistema GRADE (Grading of Recommendations Assessment, Development and Evaluation)</strong> como método oficial para classificar a <strong>certeza da evidência clínica</strong> e a <strong>força das recomendações</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Os Quatro Níveis de Certeza da Evidência:</strong>\n    <ol>\n      <li><strong>Alta ($oplusoplusoplusoplus$):</strong> Convicção muito forte de que o verdadeiro efeito biológico está muito próximo do efeito estimado nos estudos;",
+            "<strong>Moderada ($oplusoplusoplus\bigcirc$):</strong> Confiança moderada no efeito; o verdadeiro efeito é provavelmente próximo do estimado, mas há possibilidade de ser diferente;",
+            "<strong>Baixa ($oplusoplus\bigcirc\bigcirc$):</strong> Confiança limitada; o verdadeiro efeito pode ser substancialmente diferente do estimado;",
+            "<strong>Muito Baixa ($oplus\bigcirc\bigcirc\bigcirc$):</strong> Quase nenhuma confiança na estimativa; o efeito estimado é altamente incerto.",
+            "<strong>Fatores que Rebaixam a Certeza da Evidência (Down-grading):</strong>\n    <ul>\n      <li><em>Risco de Viés:</em> Falhas metodológicas na condução dos estudos (ausência de randomização adequada, quebra de cegamento, perdas elevadas de seguimento);",
+            "<em>Inconsistência:</em> Heterogeneidade estatística inexplicada e resultados conflitantes entre os ensaios clínicos ($I^2$ elevado);",
+            "<em>Evidência Indireta:</em> Quando os estudos avaliaram populações, intervenções ou comparadores diferentes da realidade clínica que se pretende tratar;",
+            "<em>Imprecisão:</em> Amostras pequenas com intervalos de confiança excessivamente amplos que abrangem tanto benefício clínico quanto dano;",
+            "<em>Viés de Publicação:</em> Omissão deliberada de estudos com resultados negativos por interesses comerciais da indústria."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Força da Recomendação:</strong> Classificada em <strong>Forte</strong> (quando os benefícios clínicos superam com grande margem os danos, custos e inconveniências, aplicando-se à grande maioria dos pacientes) ou <strong>Condicional / Fraca</strong> (quando existe equilíbrio tênue entre prós e contras, exigindo tomada de decisão compartilhada caso a caso).</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "7-limiar-de-custo-efetividade-guia-nao-carimbo",
+      0,
+      [
+        [
+          "2",
+          "7. Limiar de custo-efetividade: guia, não carimbo"
+        ],
+        [
+          "p",
+          "Limiar expressa valor de referência para discutir incremento de saúde diante de custo incremental e oportunidade perdida. No Brasil, a Conitec publicou em 2022 recomendações de uso de limiares, com valor de referência da ordem de <strong>R$ 40.000/QALY na ocasião</strong>, discutindo atualização e fatores modificadores; <strong>não usar esse número histórico como limiar nominal vigente em outubro de 2026 sem verificação de atualização anual e regras aplicáveis</strong>. Tampouco impor limiar único a todas as decisões."
+        ],
+        [
+          "p",
+          "O parecer brasileiro enfatiza <strong>custo-efetividade não isolada</strong>; mesmo ICER abaixo do limiar pode gerar recomendação desfavorável se faltam segurança, evidência, viabilidade ou outras condições. Um ICER acima do valor orientador pode coexistir com incorporação em situações ponderadas de necessidade, equidade ou inovação, devidamente justificada."
+        ],
+        [
+          "3",
+          "Custo de oportunidade e valor coletivo"
+        ],
+        [
+          "p",
+          "O orçamento é finito: ao financiar algo, uma parte de recursos deixa de financiar outra intervenção. Se a tecnologia custa R$ 10 milhões e oferece benefício a poucos, o gestor deve conhecer quem pode perder serviço com o deslocamento do recurso. Essa consideração não equivale a desvalorizar pacientes com doença rara — ao contrário, exige transparência das razões éticas e distributivas, evidência e proteção de direitos. Impacto social e gravidade também integram avaliação."
+        ]
+      ]
+    ],
+    [
+      "8-modelagem-de-decisao-arvore-markov-e-simulacao",
+      0,
+      [
+        [
+          "2",
+          "8. Modelagem de decisão: árvore, Markov e simulação"
+        ],
+        [
+          "p",
+          "Estudos clínicos podem acompanhar pacientes por tempo curto, enquanto impactos econômicos perduram. Modelos combinam probabilidades, custos e efeitos para estimar desfechos por horizonte:\r<li><strong>Árvore de decisão:</strong> útil para percurso relativamente curto com decisões e eventos sucessivos (teste positivo → tratamento → efeito adverso → resolução).</li>\r<li><strong>Modelo de Markov:</strong> estados de saúde ao longo de ciclos, com probabilidades de transição (estável, progressão, complicação, morte) e acúmulo de custos/utilidades.</li>\r<li><strong>Microssimulação:</strong> representa histórias de indivíduos e heterogeneidade, útil em contextos complexos, exigindo validação.</li>"
+        ],
+        [
+          "p",
+          "Nenhum modelo é \"verdade futura\": estrutura, transições, fonte de parâmetros, população e pressupostos devem ser documentados. Se probabilidade de progressão é estimada de país com acesso muito diferente ao SUS, a validade externa pode ser frágil. Validar tecnicamente: revisar cálculos internos, reproduzir resultados conhecidos e comparar previsões com dados externos plausíveis."
+        ],
+        [
+          "3",
+          "Desconto, horizonte e inflação"
+        ],
+        [
+          "p",
+          "Benefícios futuros e custos futuros podem exigir desconto para tempo presente em estudos com horizonte longo, de acordo com norma metodológica. Custos em anos distintos devem ser atualizados à mesma base monetária com índice apropriado, evitando tratar \"R$ 10 mil em 2010\" como \"R$ 10 mil em 2026\". <strong>Desconto temporal e correção inflacionária não são a mesma operação.</strong>"
+        ]
+      ]
+    ],
+    [
+      "9-sensibilidade-quanto-a-resposta-depende-do-que-nao-sabemos",
+      0,
+      [
+        [
+          "2",
+          "9. Sensibilidade: quanto a resposta depende do que não sabemos?"
+        ],
+        [
+          "p",
+          "As análises econômicas usam parâmetros estimados: taxa de eventos, preço, aderência, mortalidade, utilidade, dose, custo de internar, incorporação de genéricos e horizonte. <strong>Análise de sensibilidade determinística univariada</strong> varia um parâmetro dentro de faixa plausível, muitas vezes resumida em gráfico tornado. <strong>Multivariada/cenários</strong> alteram conjunto coerente (melhor cenário, pior cenário, acesso rural, aderência real). <strong>Probabilística (PSA)</strong> atribui distribuições aos parâmetros e executa simulações para descrever dispersão de ICER e probabilidade de custo-efetividade em diferentes limiares."
+        ],
+        [
+          "3",
+          "O que a curva de aceitabilidade NÃO diz"
+        ],
+        [
+          "p",
+          "\"80% de probabilidade de custo-efetivo\" sob modelo e limiar não significa \"80% de probabilidade de curar o paciente\" nem \"80% de chance de incorporação\". É probabilidade modelada, condicional às premissas, distribuições e limiar. A tomada de decisão requer também certeza clínica, equidade, impacto orçamentário e governança."
+        ],
+        [
+          "p",
+          "<strong>Parâmetro mais influente</strong> não é necessariamente o mais incerto; é aquele cuja alteração muda mais os resultados dentro da faixa escolhida. Se preço do medicamento domina sensibilidade, negociação de preço pode mudar atratividade sem qualquer mudança na eficácia clínica."
+        ]
+      ]
+    ],
+    [
+      "10-analise-de-impacto-orcamentario-aio",
+      0,
+      [
+        [
+          "2",
+          "10. Análise de Impacto Orçamentário (AIO)"
+        ],
+        [
+          "p",
+          "A AIO projeta <strong>consequências financeiras</strong> da adoção no sistema que paga, geralmente por anos e populações elegíveis. Fórmula introdutória:\r<br>\\[\r<br>\\text{Gasto adicional anual} \\approx \\text{usuários elegíveis} \\times \\text{custo incremental anual por usuário}\r<br>\\]\r<br>mas implementação real exige uptake gradual, eventos, persistência, adesão, custos de substituição, logística, perdas, descontos e população dinâmica."
+        ],
+        [
+          "p",
+          "<strong>Exemplo fictício:</strong> 10.000 pacientes elegíveis; 20% adotam nova terapia no primeiro ano; custo incremental de R$ 4.000 por paciente/ano. Gasto adicional simplificado = 10.000 × 0,20 × R$ 4.000 = <strong>R$ 8 milhões</strong> no primeiro ano, <em>antes</em> de custos evitados, descontos e crescimento de elegibilidade. A tecnologia pode ser custo-efetiva e, ainda assim, ter impacto orçamentário elevado que exige planejamento de implantação."
+        ],
+        [
+          "p",
+          "<strong>Diferença estrutural:</strong> ICER olha custo por unidade adicional de benefício; AIO olha desembolso agregado e trajetória. Não substituir uma análise pela outra. O Brasil publicou diretrizes de AIO e abriu consulta pública para revisão em maio de 2026; não presumir que documento em consulta já se tornou norma definitiva sem confirmação."
+        ]
+      ]
+    ],
+    [
+      "conitec-limiares-de-custo-efetividade-e-analise-de-impacto-orcamentario",
+      0,
+      [
+        [
+          "2",
+          "12A. A Conitec (Lei nº 12.401/2011), o Limiar de Custo-Efetividade no Brasil (Portaria GM/MS nº 3.426/2022) e a Análise de Impacto Orçamentário (AIO)"
+        ],
+        [
+          "3",
+          "O Marco Institucional da Conitec (Comissão Nacional de Incorporação de Tecnologias no SUS)"
+        ],
+        [
+          "p",
+          "Criada pela <strong>Lei Federal nº 12.401/2011</strong> (que alterou a Lei nº 8.080/1990) e regulamentada pelo Decreto nº 7.646/2011, a <strong>Conitec</strong> é o órgão colegiado de caráter permanente responsável por assessorar o Ministério da Saúde na incorporação, exclusão ou alteração de medicamentos, produtos e procedimentos no SUS, bem como na constituição ou alteração de Protocolos Clínicos e Diretrizes Terapêuticas (PCDT)."
+        ],
+        [
+          "p",
+          "O <strong>Artigo 19-Q da Lei nº 8.080/1990</strong> estabelece os critérios técnicos obrigatórios que devem instruir qualquer processo de incorporação:"
+        ],
+        [
+          "o",
+          [
+            "Evidências científicas de <strong>eficácia, acurácia, efetividade e segurança</strong> da tecnologia;",
+            "<strong>Avaliação econômica comparativa</strong> dos benefícios e dos custos em relação às tecnologias já incorporadas no SUS (Análise de Custo-Efetividade/Custo-Utilidade);",
+            "<strong>Análise de Impacto Orçamentário (AIO):</strong> Projeção financeira do impacto financeiro líquido da incorporação nos cofres do SUS em um horizonte temporal obrigatório de <strong>5 anos</strong>;",
+            "<strong>Consulta Pública Obrigatória:</strong> Todo relatório preliminar é submetido à consulta pública (prazo padrão de 20 dias, reduzido para 10 dias em casos de urgência sanitária) antes da deliberação final pelo Secretário de Ciência, Tecnologia e Inovação em Saúde (SECTICS/MS);",
+            "<strong>Prazo de Efetivação na Ponta (Art. 25 do Decreto nº 7.646/2011):</strong> Uma vez publicada a decisão positiva de incorporação no Diário Oficial da União (DOU), as áreas técnicas do SUS têm o prazo improrrogável de <strong>até 180 dias</strong> para efetivar a oferta da tecnologia aos pacientes no SUS."
+          ]
+        ],
+        [
+          "3",
+          "O Limiar de Custo-Efetividade no Brasil: Portaria GM/MS nº 3.426/2022"
+        ],
+        [
+          "p",
+          "Durante mais de uma década, o Brasil não possuía um limiar oficial explícito de custo-efetividade, utilizando-se informalmente a antiga regra da OMS (1 a 3 vezes o PIB per capita por DALY/QALY). Em 2022, o Ministério da Saúde oficializou as diretrizes metodológicas nacionais por meio da <strong>Portaria GM/MS nº 3.426/2022</strong>, fixando os seguintes parâmetros objetivos:"
+        ],
+        [
+          "t",
+          [
+            "Categoria de Tecnologia",
+            "Valor do Limiar de Custo-Efetividade (por QALY ganho)",
+            "Critérios Exigidos e Exceções Legais"
+          ],
+          [
+            [
+              "<strong>Regra Geral (Doenças Gerais e Prevalentes)</strong>",
+              "Até <strong>1 Produto Interno Bruto (PIB) per capita</strong> por QALY ganho.",
+              "Aplicável à imensa maioria dos medicamentos, insumos, vacinas e procedimentos ambulatoriais ou hospitalares para hipertensão, diabetes, infecções comuns e cirurgias eletivas."
+            ],
+            [
+              "<strong>Regra Especial Mitigada (Condições Excepcionais)</strong>",
+              "Até <strong>3 vezes o Produto Interno Bruto (PIB) per capita</strong> por QALY ganho.",
+              "Aplicável exclusivamente se a condição clínica preencher <strong>pelo menos um dos seguintes critérios</strong>:\n        <ol>\n          <li><strong>Doença Grave / Alta Mortalidade:</strong> Condição crônica debilitante com redução severa da expectativa de vida;</li>\n          <li><strong>Doenças Raras:</strong> Doenças geneticamente determinadas que afetam até 65 pessoas a cada 100.000 indivíduos;</li>\n          <li><strong>Crianças e Populações Pediátricas:</strong> Gravidade e impacto sobre o neurodesenvolvimento infantil;</li>\n          <li><strong>Ausência de Alternativa Terapêutica:</strong> Inexistência de qualquer tratamento eficaz previamente incorporado no SUS.</li>\n        </ol>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Diferença Crítica de Prova: Custo-Efetividade (RCEI) versus Impacto Orçamentário (AIO)"
+        ],
+        [
+          "p",
+          "<blockquote>\n  <strong>Atenção:</strong> Uma tecnologia médica pode ser <em>altamente custo-efetiva</em> e, ainda assim, ser <strong>fiscalmente inviável e rejeitada pelo gestor</strong> por possuir um <em>impacto orçamentário impagável</em>!\n  <br><br>\n  <strong>Exemplo Clássico:</strong> Novos antivirais de ação direta (DAA) para cura da Hepatite C crônica. A RCEI da droga era excelente (menos de R$ 10.000 por QALY ganho, muito abaixo do limiar de 1 PIB per capita). Porém, como existiam 500.000 pacientes infectados para tratar imediatamente no Brasil, o custo financeiro total anual ultrapassaria R$ 15 bilhões (impacto orçamentário insustentável). A solução não foi a rejeição da droga, mas a <strong>negociação de compras centralizadas em escala com desconto governamental maciço e escalonamento de prioridade clínica</strong> (tratar primeiro cirróticos e transplantados).\n</blockquote>"
+        ]
+      ]
+    ],
+    [
+      "quatro-casos-clinicos-integradores-ats-economia-da-saude",
+      0,
+      [
+        [
+          "2",
+          "15B. Casos Práticos Integradores: Modelagem de Markov, Cálculo da RCEI e Deliberação na Conitec"
+        ],
+        [
+          "3",
+          "Caso 1: O Dilema de Incorporação do Novo Anticoagulante Oral (DOAC) na Fibrilação Atrial"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um fabricante de um novo anticoagulante oral direto (DOAC) submete dossiê à Conitec pleiteando sua incorporação ao SUS para prevenção de acidente vascular cerebral em pacientes com fibrilação atrial não valvar. O comparador atual do SUS é a Varfarina sódica (antagonista da vitamina K). Os dados apresentados demonstram:"
+        ],
+        [
+          "u",
+          [
+            "Custo total do tratamento com Varfarina (fármaco + consultas de monitorização mensal de RNI + transporte do paciente): R$ 600,00 por paciente/ano; confere em média 6,0 QALYs;",
+            "Custo total do DOAC (fármaco sem necessidade de monitorização de RNI): R$ 2.400,00 por paciente/ano; confere em média 6,3 QALYs (devido a menor taxa de sangramento intracraniano e maior comodidade posológica)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Cálculo Passo a Passo da RCEI pelo Analista do Ministério da Saúde:</strong>"
+        ],
+        [
+          "o",
+          [
+            "$Delta \text{Custo} = \text{Custo DOAC} - \text{Custo Varfarina} = \text{R$} 2.400,00 - \text{R$} 600,00 = \text{R$} 1.800,00$;",
+            "$Delta \text{Efeito} = \text{QALY DOAC} - \text{QALY Varfarina} = 6,3 - 6,0 = 0,3\text{ QALYs}$;",
+            "$\text{RCEI} = \frac{\text{R$} 1.800,00}{0,3\text{ QALYs}} = \text{R$} 6.000,00\text{ por QALY ganho}$."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Deliberação Técnica:</strong> O PIB per capita do Brasil no período é de aproximadamente R$ 45.000,00. Como a RCEI de R$ 6.000,00/QALY situa-se <strong>muito abaixo de 1 PIB per capita</strong>, a tecnologia é considerada <em>altamente custo-efetiva</em>. A Conitec aprova a incorporação inicial com a condição de que a compra seja centralizada pelo Ministério da Saúde para redução de preços e dispensação restrita a pacientes com dificuldade documentada de controle de RNI ou histórico de AVC prévio."
+        ],
+        [
+          "3",
+          "Caso 2: A Armadilha da Dominância Fraca e o Custo-Minimização"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Uma indústria farmacêutica solicita a substituição de uma cefalosporina de 3ª geração clássica (Ceftriaxona injetável genérica, frasco a R$ 8,00) por uma nova marca comercial que alega possuir um solvente menos doloroso à injeção intramuscular, cobrando R$ 65,00 por ampola. Ensaios clínicos randomizados de não inferioridade demonstram que as taxas de cura microbiológica, tempo de internação e efeitos colaterais sistêmicos são idênticos em ambos os grupos."
+        ],
+        [
+          "p",
+          "<strong>Parecer da Comissão de Farmácia e Terapêutica (CFT):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Como a eficácia clínica e a segurança biológica são rigorosamente equivalentes, o tipo de avaliação econômica aplicável é a <strong>Análise de Custo-Minimização (ACM)</strong>;",
+            "A introdução da nova marca acarretaria um aumento de custos de mais de 700% sem qualquer ganho de desfecho duro de saúde;",
+            "A solicitação é <strong>indeferida por falta de vantagem econômica</strong>, mantendo-se a droga genérica bioequivalente de menor custo."
+          ]
+        ],
+        [
+          "3",
+          "Caso 3: Análise de Impacto Orçamentário de Droga Órfã para Doença Rara"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> A Conitec avalia um oligonucleotídeo antisense inovador para uma distrofia neuromuscular infantil rara de caráter degenerativo letal (sem nenhuma alternativa no SUS). A droga custa R$ 1.200.000,00 por paciente no primeiro ano de tratamento e prolonga a sobrevida livre de ventilação mecânica em 1,5 QALYs por criança."
+        ],
+        [
+          "p",
+          "<strong>Análise Metodológica:</strong>"
+        ],
+        [
+          "o",
+          [
+            "A RCEI calculada atinge cerca de R$ 800.000,00 por QALY (o que ultrapassa 15 vezes o PIB per capita);",
+            "Contudo, sob a ótica da <strong>Portaria GM/MS nº 3.426/2022</strong> e dos princípios constitucionais da Dignidade Humana e Equidade, aplica-se o <strong>Limiar Diferenciado de Doenças Raras</strong> e critérios de ponderação ética (ausência de alternativas);",
+            "A Conitec propõe a celebração de um <strong>Acordo de Compartilhamento de Risco (Risk-Sharing Agreement)</strong> com a fabricante: o Ministério da Saúde somente remunera integralmente os frascos dos pacientes que apresentarem ganho de marcos motores comprovados por escalas funcionais aos 6 e 12 meses de tratamento, protegendo o orçamento público contra pagamentos por falha terapêutica."
+          ]
+        ],
+        [
+          "3",
+          "Caso 4: Modelagem de Markov na Triagem do Câncer Colorretal"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um estado brasileiro avalia implementar um programa populacional de rastreamento de câncer colorretal para indivíduos de 50 a 75 anos. Compara-se a realização de Pesquisa de Sangue Oculto nas Fezes por método imunoquímico (FIT) bienal versus Colonoscopia a cada 10 anos."
+        ],
+        [
+          "p",
+          "<strong>Estrutura do Modelo de Decisão:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Como os pacientes transitam repetidamente ao longo de décadas entre estados de saúde (Saudável $\rightarrow$ Pólipo Adenomatoso Inicial $\rightarrow$ Pólipo com Displasia $\rightarrow$ Câncer Inicial $\rightarrow$ Câncer Avançado $\rightarrow$ Morte), utiliza-se um <strong>Modelo de Markov</strong> com ciclos anuais;",
+            "O modelo demonstra que, embora a colonoscopia decenal tenha maior sensibilidade pontual, a estratégia com FIT bienal seguido de colonoscopia diagnóstica apenas para os casos positivos apresenta melhor relação de custo-utilidade e viabilidade operacional no SUS, evitando a escassez de leitos e salas de endoscopia e prevenindo perfurações intestinais iatrogênicas em pessoas saudáveis."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-ats-economia-da-saude-enamed-revalida",
+      0,
+      [
+        [
+          "2",
+          "16B. Questões Inéditas Comentadas de Residência Médica, Revalida e ENAMED sobre ATS e Economia da Saúde"
+        ],
+        [
+          "3",
+          "Banco de Questões de Alta Performance: ATS e Economia da Saúde"
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (ENAMED / USP — 2025):</strong> A Comissão de Farmácia e Terapêutica de um hospital público universitário precisa avaliar a introdução de uma nova droga para sepse. Ao analisar a literatura, os avaliadores constatam que a nova droga possui eficácia clínica, taxas de mortalidade em 28 dias e perfil de efeitos adversos rigorosamente equivalentes aos do antibiótico padrão atualmente em uso, com bioequivalência comprovada por ensaios de não inferioridade. Qual tipo de avaliação econômica em saúde é a mais indicada para guiar a tomada de decisão?"
+        ],
+        [
+          "p",
+          "A) Análise de Custo-Efetividade.<br>\n  B) Análise de Custo-Utilidade.<br>\n  C) Análise de Custo-Benefício.<br>\n  D) Análise de Custo-Minimização.<br>\n  E) Análise de Custo Intangível."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: D</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A <strong>Análise de Custo-Minimização (ACM)</strong> é a modalidade de avaliação econômica aplicada especificamente quando duas ou mais intervenções terapêuticas concorrentes possuem <strong>desfechos clínicos e eficácia comprovadamente equivalentes ou idênticos</strong>. Como as consequências em saúde são as mesmas, a análise foca-se estritamente na comparação dos custos financeiros de cada alternativa, optando-se simplesmente pela tecnologia mais barata."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Aplica-se quando as alternativas possuem eficácias clínicas diferentes mensuradas em unidades naturais (ex.: uma droga reduz mais mortes que a outra);",
+            "<em>Alternativa B incorreta:</em> Utiliza-se quando se deseja mensurar o impacto em qualidade de vida (QALY ou DALY);",
+            "<em>Alternativa C incorreta:</em> Converte os desfechos clínicos em valores estritamente monetários (R$);",
+            "<em>Alternativa E incorreta:</em> Custo intangível é uma categoria de custo (dor, sofrimento), não um tipo de desenho de avaliação econômica completa."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (Revalida INEP — 2024):</strong> Um novo medicamento oncológico para melanoma metastático aumenta a sobrevida média dos pacientes em 2 anos em comparação à quimioterapia convencional. Durante esses 2 anos adicionais de sobrevida, o paciente relata um escore médio de utilidade de qualidade de vida de 0,60 (em uma escala de 0 a 1). Considerando esses dados, quantos QALYs (Quality-Adjusted Life Years) são gerados pelo medicamento durante esse período?"
+        ],
+        [
+          "p",
+          "A) 0,60 QALYs.<br>\n  B) 1,20 QALYs.<br>\n  C) 2,00 QALYs.<br>\n  D) 3,33 QALYs.<br>\n  E) 12,0 QALYs."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> O cálculo de QALYs baseia-se na multiplicação simples entre o tempo de vida (em anos) e a qualidade de vida vivenciada (escore de utilidade):\n    $$\text{QALY} = \text{Anos de Sobrevida} \times \text{Utilidade} = 2\text{ anos} \times 0,60 = 1,20\text{ QALYs}.$$"
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, C, D e E incorretas:</em> Decorrem de erros matemáticos básicos de multiplicação ou de não aplicação do conceito conceitual de QALY."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP / ENARE — 2024):</strong> De acordo com a Lei Federal nº 12.401/2011 e a regulamentação da Conitec, assinale a afirmativa correta sobre os prazos e processos de incorporação de tecnologias no SUS:"
+        ],
+        [
+          "p",
+          "A) A decisão de incorporação cabe monocraticamente ao Presidente do Conselho Federal de Medicina, sem participação do Ministério da Saúde.<br>\n  B) As tecnologias aprovadas pela Conitec devem ser efetivamente disponibilizadas no SUS no prazo máximo de até 180 dias após a publicação da decisão no Diário Oficial da União.<br>\n  C) É expressamente proibida a realização de consulta pública antes da deliberação da Conitec para evitar pressões populares.<br>\n  D) Uma tecnologia com registro cancelado na Anvisa pode ser incorporada ao SUS mediante autorização do secretário municipal.<br>\n  E) A análise de impacto orçamentário é dispensável para medicamentos de alto custo."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> O <strong>Artigo 25 do Decreto nº 7.646/2011</strong> (que regulamenta a Lei nº 12.401/2011) determina com clareza que, a partir da publicação da decisão de incorporação no Diário Oficial da União (DOU), as áreas técnicas competentes do Ministério da Saúde têm o prazo improrrogável de <strong>até 180 dias</strong> para efetivar a oferta da tecnologia aos usuários do SUS em todo o território nacional."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A decisão final cabe ao Secretário de Ciência e Tecnologia do Ministério da Saúde (SECTICS/MS);",
+            "<em>Alternativa C incorreta:</em> A consulta pública é etapa obrigatória do rito legal;",
+            "<em>Alternativa D incorreta:</em> O registro válido na ANVISA é pré-requisito indispensável para submissão à Conitec;",
+            "<em>Alternativa E incorreta:</em> A Análise de Impacto Orçamentário (AIO) em horizonte de 5 anos é requisito legal obrigatório."
+          ]
+        ]
+      ]
+    ],
+    [
+      "11-testes-diagnosticos-e-ats",
+      0,
+      [
+        [
+          "2",
+          "11. Testes diagnósticos e ATS"
+        ],
+        [
+          "p",
+          "A acurácia de teste deve ser interpretada pela probabilidade pré-teste. Sensibilidade/especificidade descrevem desempenho condicionado à doença/ausência de doença; valores preditivos mudam com prevalência. Teste caro com alta sensibilidade pode produzir muitos falsos positivos em população de baixíssimo risco, causando exames invasivos, ansiedade e custos."
+        ],
+        [
+          "p",
+          "Uma avaliação de teste não termina na curva ROC: é preciso saber se a informação muda conduta e melhora desfechos. Teste que detecta condição sem tratamento eficaz ou produz overdiagnosis pode gerar gasto e dano; teste barato com menor acurácia pode ser útil como triagem se seguido de confirmação e tratamento oportunos."
+        ],
+        [
+          "3",
+          "Exemplo"
+        ],
+        [
+          "p",
+          "Doença de prevalência de 1% em 10.000 pessoas. Um teste com sensibilidade 90% e especificidade 90% gera aproximadamente 90 verdadeiros positivos entre 100 doentes, mas cerca de 990 falsos positivos entre 9.900 não doentes. Valor preditivo positivo ≈ 90/(90+990)=<strong>8,3%</strong>; não significa \"teste ruim sempre\", e sim que indicação e algoritmo confirmatório importam."
+        ]
+      ]
+    ],
+    [
+      "12-da-conitec-a-pratica-nao-confundir-instituicoes",
+      0,
+      [
+        [
+          "2",
+          "12. Da Conitec à prática: não confundir instituições"
+        ],
+        [
+          "p",
+          "<strong>Anvisa</strong> avalia regulação sanitária/registro e aspectos definidos em sua competência; <strong>Conitec</strong> assessora incorporação, exclusão/alteração de tecnologias e diretrizes no SUS; Ministério da Saúde publica decisão formal, e redes precisam implementar e monitorar. <strong>ANS</strong> regula planos privados e cobertura suplementar nos limites legais, assunto ampliado na #257."
+        ],
+        [
+          "p",
+          "Caminho simplificado:\r<br>1. Definir população e problema clínico.\r<br>2. Formular pergunta comparativa, reunir evidências de benefício/segurança.\r<br>3. Analisar evidências e incertezas; realizar avaliação econômica e AIO quando cabível.\r<br>4. Abrir participação social, considerar avaliações técnicas e critérios éticos/organizacionais.\r<br>5. Emitir recomendação e decisão formal nos termos vigentes.\r<br>6. Preparar PCDT, fornecimento, rede e monitorização de uso/segurança.\r<br>7. Reavaliar tecnologias diante de novas evidências, custos ou alternativas."
+        ],
+        [
+          "p",
+          "<strong>Não presumir que relatório de consulta pública é decisão de incorporação</strong>; conferir portaria e situação vigente. Um medicamento pode ser registrado, recomendado e ainda não estar operacionalmente disponível em toda unidade, exigindo trabalho de implantação."
+        ]
+      ]
+    ],
+    [
+      "13-equidade-populacoes-raras-e-limites-do-modelo",
+      0,
+      [
+        [
+          "2",
+          "13. Equidade, populações raras e limites do modelo"
+        ],
+        [
+          "p",
+          "Doenças raras apresentam amostras pequenas, histórias naturais incertas e medicamentos caros; análises podem ter ICER muito elevado e grande incerteza. Isso pede métodos transparentes e consideração de gravidade, falta de alternativas, idade, desigualdades e preferências. <strong>Não é correto</strong> concluir automaticamente \"doença rara deve ser excluída\" ou \"qualquer tratamento experimental deve ser financiado\". A decisão pondera qualidade da evidência, magnitude e durabilidade do efeito, segurança e condições reais de acesso."
+        ],
+        [
+          "p",
+          "Em estratégias de saúde pública, o impacto distributivo pode importar tanto quanto média de QALY. Uma intervenção que beneficia principalmente pessoas com acesso já privilegiado pode ampliar desigualdade mesmo sendo custo-efetiva no agregado. Estudos de equidade e participação social ajudam revelar distribuição de benefícios e ônus."
+        ]
+      ]
+    ],
+    [
+      "14-algoritmos-de-interpretacao",
+      0,
+      [
+        [
+          "2",
+          "14. Algoritmos de interpretação"
+        ],
+        [
+          "3",
+          "A. Lendo artigo de avaliação econômica"
+        ],
+        [
+          "p",
+          "Confirmar população e indicação → comparar com prática real → avaliar certeza da evidência e horizonte → identificar perspectiva e custos incluídos → verificar utilidade e modelo → calcular ΔC/ΔE → identificar dominância/ICER → revisar sensibilidade e incerteza → comparar com limiar <strong>atual</strong> e outros critérios → considerar AIO e distribuição → declarar decisão com limitações."
+        ],
+        [
+          "3",
+          "B. Tecnologia muito cara e benefício aparentemente pequeno"
+        ],
+        [
+          "p",
+          "Confirmar magnitude absoluta e qualidade clínica → verificar se há subgrupo com maior benefício → avaliar preço negociável, duração, desfechos substitutos e efeitos adversos → modelar cenário real → olhar ICER, AIO, gravidade, equidade e acesso → solicitar mais dados quando necessário → não transformar dúvida em recomendação automática favorável ou contrária."
+        ],
+        [
+          "3",
+          "C. Teste diagnóstico novo"
+        ],
+        [
+          "p",
+          "Definir população de uso, pré-teste e comparador → medir sensibilidade/especificidade → prever VPP/VPN no contexto → modelar caminhos de falso positivo/falso negativo → avaliar resultados clínicos e custo → estudar capacidade de confirmação e tratamento → decidir implantação e monitorar danos."
+        ]
+      ]
+    ],
+    [
+      "15-casos-integradores-com-comentario",
+      0,
+      [
+        [
+          "2",
+          "15. Casos integradores com comentário"
+        ],
+        [
+          "3",
+          "Caso 1 — Duas terapias e ICER"
+        ],
+        [
+          "p",
+          "A custa R$ 10.000 e produz 4,0 QALYs; B custa R$ 14.000 e produz 4,2 QALYs por pessoa. <strong>Problema:</strong> qual custo incremental por QALY? <strong>Cálculo:</strong> ΔC=R$ 4.000; ΔE=0,2 QALY; ICER = R$ 20.000/QALY. <strong>Interpretação:</strong> B é mais eficaz e mais cara; precisa discussão de limiar vigente, orçamento, incerteza e população. <strong>Conduta:</strong> examinar análises de sensibilidade e AIO antes de recomendação. <strong>Por que importa:</strong> cálculo correto não dá incorporação automática."
+        ],
+        [
+          "3",
+          "Caso 2 — Nova tecnologia dominante"
+        ],
+        [
+          "p",
+          "C custa R$ 7.000 com 6,5 QALYs; D custa R$ 9.000 com 6,0 QALYs. <strong>Raciocínio:</strong> C produz mais saúde e custa menos, portanto domina D nos resultados modelados. <strong>Conduta:</strong> conferir validade da evidência, comparadores e segurança; em condições equivalentes, C é economicamente favorável. <strong>Por que importa:</strong> não calcular ICER positivo sem olhar os sinais."
+        ],
+        [
+          "3",
+          "Caso 3 — Preço e orçamento"
+        ],
+        [
+          "p",
+          "Nova terapia apresenta ICER favorável em comparação à terapia antiga, mas 50 mil elegíveis e absorção rápida podem exigir gasto elevado. <strong>Problema:</strong> custo-efetividade e impacto orçamentário não são a mesma pergunta. <strong>Exames:</strong> população elegível anual, preço, utilização, substituição e custos evitados. <strong>Conduta:</strong> estudar AIO, financiamento, fases de implementação e equidade. <strong>Por que importa:</strong> benefício econômico por QALY não indica desembolso pequeno."
+        ],
+        [
+          "3",
+          "Caso 4 — Teste de rastreio em baixa prevalência"
+        ],
+        [
+          "p",
+          "Em 10 mil pessoas, prevalência 1%; teste tem sensibilidade e especificidade de 90%. <strong>Resultado previsto:</strong> 90 VP, 10 FN, 990 FP, 8.910 VN; VPP ≈8,3%. <strong>Raciocínio:</strong> a baixa prevalência gera mais falsos positivos que verdadeiros em número absoluto. <strong>Conduta:</strong> selecionar população de risco, realizar confirmação e quantificar danos/custos antes de programa amplo. <strong>Por que importa:</strong> alto desempenho técnico não basta; contexto determina valor clínico."
+        ],
+        [
+          "3",
+          "Caso 5 — Pacientes diferentes, média enganosa"
+        ],
+        [
+          "p",
+          "Tratamento agrega pequeno benefício médio, mas subgrupo com mutação específica tem benefício grande e outro não responde. <strong>Hipótese:</strong> heterogeneidade de efeito e risco de modelar todos igualmente. <strong>Raciocínio:</strong> mistura dilui efeito no grupo respondedor e aumenta gasto sem benefício nos demais. <strong>Exames:</strong> estudos de subgrupo pré-especificados, validade do biomarcador, custo do teste e desfechos. <strong>Conduta:</strong> avaliar estratégia dirigida e comparar com tratamento universal; considerar acesso equitativo ao teste. <strong>Por que importa:</strong> ATS deve considerar paciente correto, não só média."
+        ]
+      ]
+    ],
+    [
+      "16-questoes-autorais-de-residencia-comentarios-completos",
+      0,
+      [
+        [
+          "2",
+          "16. Questões autorais de residência — comentários completos"
+        ],
+        [
+          "p",
+          "<strong>Q1.</strong> A RCEI/ICER representa:\r<br>A) risco relativo clínico; B) custo incremental dividido por benefício incremental; C) taxa de mortalidade; D) custo total de todos os hospitais; E) preço de medicamento isolado.  \r<br><strong>Gabarito B.</strong> A é medida clínica de associação; C desfecho populacional; D gasto agregado; E preço nominal; B fórmula correta. <strong>Mini-revisão:</strong> calcular ΔC/ΔE e sempre checar sinais."
+        ],
+        [
+          "p",
+          "<strong>Q2.</strong> Terapia A é simultaneamente mais barata e mais eficaz que B. Diz-se:\r<br>A) A é dominada. B) B domina A. C) A domina B. D) ICER obrigatoriamente maior que limiar. E) Não é possível comparar.  \r<br><strong>Gabarito C.</strong> A/B invertem dominância, D não decorre dos sinais, E ignora a comparação; C expressa economia e ganho. <strong>Mini-revisão:</strong> dominância primeiro, ICER depois."
+        ],
+        [
+          "p",
+          "<strong>Q3.</strong> Qual medida combina expectativa de vida e qualidade de vida?\r<br>A) Odds ratio. B) NNT. C) QALY. D) Coeficiente de mortalidade infantil. E) Razão de prevalência.  \r<br><strong>Gabarito C.</strong> A/E associação, B benefício absoluto, D mortalidade; C combina tempo e utilidade. <strong>Mini-revisão:</strong> 1 ano com utilidade 0,7 corresponde a 0,7 QALY num exemplo sem desconto."
+        ],
+        [
+          "p",
+          "<strong>Q4.</strong> Uma tecnologia tem boa custo-efetividade, mas grande número de elegíveis gera despesa de bilhões no primeiro ano. A análise específica é:\r<br>A) Teste de Shapiro-Wilk. B) Estudo de impacto orçamentário. C) Apenas descrição de medianas. D) Teste de gravidez. E) Curva ROC como única análise.  \r<br><strong>Gabarito B.</strong> A/C são métodos estatísticos inespecíficos, D/E não medem impacto agregado; B projeta despesa no pagador. <strong>Mini-revisão:</strong> valor incremental ≠ capacidade de pagamento."
+        ],
+        [
+          "p",
+          "<strong>Q5.</strong> Sobre limiar da Conitec, escolha a correta:\r<br>A) Qualquer ICER abaixo garante incorporação. B) Limiar é o único parâmetro. C) Deve ser considerado junto à certeza, segurança, impacto e equidade, verificando valor vigente. D) Limiar de 2022 permanece automaticamente imutável para sempre. E) Não há consideração econômica.  \r<br><strong>Gabarito C.</strong> A/B/D/E são simplificações incorretas; C corresponde à lógica multifatorial. <strong>Mini-revisão:</strong> não importar número histórico como vigente sem atualização."
+        ],
+        [
+          "p",
+          "<strong>Q6.</strong> Teste com 90% de sensibilidade e especificidade aplicado a população de doença muito rara:\r<br>A) VPP será necessariamente 90%. B) Pode haver muitos falsos positivos diante dos verdadeiros. C) VPN será sempre 10%. D) A especificidade varia com prevalência por definição. E) O teste cura a doença.  \r<br><strong>Gabarito B.</strong> A/C confundem condicionamento; D mistura propriedade do teste e população; E extrapola informação diagnóstica; B decorre de probabilidade pré-teste. <strong>Mini-revisão:</strong> Bayes explica valor preditivo."
+        ],
+        [
+          "p",
+          "<strong>Q7.</strong> No estudo econômico, o horizonte temporal deve:\r<br>A) ser sempre 30 dias. B) ser sempre o mesmo independente da doença. C) capturar diferenças relevantes de custos/efeitos entre opções e permitir sensibilidade. D) incluir apenas o primeiro comprimido. E) ignorar sobrevida futura.  \r<br><strong>Gabarito C.</strong> A/B/D/E podem ocultar custos/benefícios tardios; C exige alinhamento clínico. <strong>Mini-revisão:</strong> doenças crônicas exigem horizonte condizente."
+        ],
+        [
+          "p",
+          "<strong>Q8.</strong> A curva de aceitabilidade mostra 80% de probabilidade de custo-efetividade sob um limiar. Significa:\r<br>A) 80% dos pacientes vão curar. B) 80% de probabilidade de decisão da Conitec. C) Probabilidade modelada de ser custo-efetiva condicionada às premissas/limiar. D) Eficácia clínica de 80%. E) Risco de evento adverso de 80%.  \r<br><strong>Gabarito C.</strong> A/B/D/E confundem domínios; C descreve incerteza de resultado econômico do modelo. <strong>Mini-revisão:</strong> PSA não prediz aprovação regulatória."
+        ]
+      ]
+    ],
+    [
+      "17-dez-visuais-didaticos-planejados-para-fila-de-aprovacao",
+      0,
+      [
+        [
+          "2",
+          "17. Dez visuais didáticos planejados para fila de aprovação"
+        ],
+        [
+          "p",
+          "1. Diagrama autoral de dimensões da ATS.\r<br>2. Esquema PICO com comparador correto.\r<br>3. Gráfico de benefício absoluto × relativo e NNT.\r<br>4. Tabela visual original de tipos de avaliações econômicas.\r<br>5. Infográfico de construção QALY com utilidade e tempo fictícios.\r<br>6. Plano incremental ΔC × ΔE, quadrantes de dominância.\r<br>7. Reta da fronteira eficiente de três tecnologias hipotéticas.\r<br>8. Árvore decisória de teste diagnóstico e consequências clínicas.\r<br>9. Modelo de Markov ilustrativo de três estados de saúde e morte.\r<br>10. Tornado plot + curva aceitabilidade em dados totalmente fictícios.\r<br>Nenhum visual clínico foi incorporado. Todos os visuais finais precisam ser produzidos autoralmente ou licenciados para uso comercial, aprovados no Admin e testados em mobile."
+        ]
+      ]
+    ],
+    [
+      "18-referencias-nacionais-e-internacionais-verificaveis",
+      0,
+      [
+        [
+          "2",
+          "18. Referências nacionais e internacionais verificáveis"
+        ],
+        [
+          "p",
+          "1. Ministério da Saúde/Conitec. Diretrizes Metodológicas — lista e Diretriz de Avaliação Econômica, 3ª edição, 2026: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas\r<br>2. Ministério da Saúde. Diretrizes Metodológicas — Diretriz de Avaliação Econômica, 3ª edição, 2026 (obra de 164 páginas): https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_metodologicas_diretriz_avaliacao_economica_3ed.pdf\r<br>3. Conitec. Limiares de custo-efetividade, página institucional atualizada em 2026: https://www.gov.br/conitec/pt-br/centrais-de-conteudo/biblioteca-virtual/limiares\r<br>4. Conitec. Ministério da Saúde publica documento sobre limiares de custo-efetividade (2022): https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/novembro/ministerio-da-saude-publica-proposta-de-uso-de-limiares-de-custo-efetividade-lce-recomendada-pela-conitec/\r<br>5. Conitec. Diretrizes metodológicas de análise de impacto orçamentário e consulta pública 2026: https://www.gov.br/conitec/pt-br/assuntos/noticias/2026/Maio/consulta-publica-recebe-contribuicoes-sobre-diretrizes-metodologicas-de-analise-de-impacto-orcamentario\r<br>6. Conitec. Perguntas frequentes — processo e dimensões de incorporação: https://www.gov.br/conitec/pt-br/acesso-a-informacao/perguntas-frequentes\r<br>7. WHO. WHO guideline development and HTA background information, sítio de ATS: https://www.who.int/health-topics/health-technology-assessment\r<br>8. CHEERS 2022. Consolidated Health Economic Evaluation Reporting Standards: https://www.equator-network.org/reporting-guidelines/cheers/"
+        ],
+        [
+          "3",
+          "Auditoria e pendências"
+        ],
+        [
+          "p",
+          "<strong>Já redigido:</strong> conceitos essenciais de ATS, decisão baseada em PICO, economia, comparação, QALY/DALY, ICER, dominância, perspectiva, tempo, modelagem, sensibilidade, AIO, teste diagnóstico, equidade, cinco casos, oito questões comentadas e dez pautas visuais.\r\n<strong>Pendências obrigatórias:</strong> falta PDF dedicado no Drive, comparação especializada, leitura completa do manual econômico 2026 com revisão de parâmetros oficiais (taxas de desconto, perspectiva padrão, tratamento da heterogeneidade, métodos recomendados), fórmulas de fronteira de eficiência com casos calculados, análise crítica de incerteza, avaliações internacionais comparadas, integração com decisões brasileiras recentes para casos de incorporação, revisão matemática externa, ≥60 mil caracteres úteis e teste de autossuficiência, figuras validadas, HTML/PWA.\r\n<strong>Estado de verdade:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge, sem deploy."
+        ]
+      ]
+    ]
+  ]
+}

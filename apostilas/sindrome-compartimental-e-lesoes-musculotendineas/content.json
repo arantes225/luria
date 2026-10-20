@@ -1,0 +1,1044 @@
+{
+  "v": 2,
+  "s": "sindrome-compartimental-e-lesoes-musculotendineas",
+  "t": "Síndrome Compartimental e Lesões Musculotendíneas",
+  "p": "Síndrome Compartimental e Lesões Musculotendíneas — Livro-Texto LURIA",
+  "d": "Tratado Completo de Emergências Ortopédicas e Traumatologia Cirúrgica: Fisiopatologia da Isquemia Neuromuscular da Síndrome Compartimental Aguda, os 6 Ps e a Dor ao Estiramento Passivo, Mensuração da PIC e Critério do Delta P, Técnica Cirúrgica de Fasciotomia de Duplo Acesso da Perna e Antebraço, e Diagnóstico/Manejo das Lesões do Manguito Rotador (Supraespinal e Jobe), Ligamentos do Joelho (LCA e Lachman), Meniscos (McMurray) e Ruptura do Tendão de Aquiles (Teste de Thompson)",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Síndrome Compartimental e Lesões Musculotendíneas",
+    "Tratado Completo de Emergências Ortopédicas e Traumatologia Cirúrgica: Fisiopatologia da Isquemia Neuromuscular da Síndrome Compartimental Aguda, os 6 Ps e a Dor ao Estiramento Passivo, Mensuração da PIC e Critério do Delta P, Técnica Cirúrgica de Fasciotomia de Duplo Acesso da Perna e Antebraço, e Diagnóstico/Manejo das Lesões do Manguito Rotador (Supraespinal e Jobe), Ligamentos do Joelho (LCA e Lachman), Meniscos (McMurray) e Ruptura do Tendão de Aquiles (Teste de Thompson)",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Síndrome Compartimental e Lesões Musculotendíneas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fisiopatologia-e-etiologia-da-sindrome-compartimental-aguda",
+      "1. Síndrome Compartimental Aguda (SCA): Anatomia Cirúrgica Fascial, Fisiopatologia da Isquemia Neuromuscular e Etiologias"
+    ],
+    [
+      "quadro-clinico-os-6-ps-mensuracao-da-pic-e-criterios-de-fasciotomia",
+      "2. Quadro Clínico dos \"6 Ps\", Métodos de Mensuração da Pressão Intracompartimental e Critérios Formais de Fasciotomia (O Delta P)"
+    ],
+    [
+      "tecnica-cirurgica-da-fasciotomia-descompressiva-da-perna-e-antebraco",
+      "3. Técnica Cirúrgica da Fasciotomia Descompressiva: Técnica de Duplo Acesso na Perna (4 Compartimentos) e Descompressão do Antebraço"
+    ],
+    [
+      "lesoes-musculotendineas-frequentes-manguito-joelho-aquiles",
+      "4. Lesões Musculotendíneas e Ligamentares Frequentes: Manguito Rotador, Ligamentos/Meniscos do Joelho e Ruptura do Tendão de Aquiles"
+    ],
+    [
+      "casos-clinicos-estruturados-e-discussao-passo-a-passo",
+      "5. Casos Clínicos Estruturados e Discussão Diagnóstica e Cirúrgica Passo a Passo"
+    ],
+    [
+      "questoes-comentadas-de-concursos-e-residencia-medica",
+      "7. Questões Comentadas de Concursos e Residência Médica (Revalida, ENAMED e Institucionais)"
+    ],
+    [
+      "tabela-high-yield-e-pontos-chave-de-memorizacao",
+      "8. Tabela High-Yield Resumo e Pontos-Chave de Memorização para a Prova"
+    ]
+  ],
+  "q": [
+    [
+      "fisiopatologia-e-etiologia-da-sindrome-compartimental-aguda",
+      0,
+      [
+        [
+          "2",
+          "1. Síndrome Compartimental Aguda (SCA): Anatomia Cirúrgica Fascial, Fisiopatologia da Isquemia Neuromuscular e Etiologias"
+        ],
+        [
+          "3",
+          "Conceito e Definição Médica Oficial"
+        ],
+        [
+          "p",
+          "A <strong>Síndrome Compartimental Aguda (SCA)</strong> é uma das emergências cirúrgicas ortopédicas mais críticas e com maior potencial de sequela funcional incapacitante na traumatologia. É definida formalmente como um estado patológico agudo no qual a <strong>pressão tecidual intracompartimental (PIC) eleva-se dentro de um espaço osteofascial anatomicamente fechado</strong>, superando a pressão de perfusão capilar local. Isso resulta no colapso do gradiente microvascular arteriolar, <strong>isquemia tissular celular progressiva, anóxia de nervos periféricos e necrose de fibras musculares estriadas (rabdomiólise)</strong>, culminando em retração cicatricial fibrosa permanente e perda definitiva da função do membro se não for descomprimida a tempo."
+        ],
+        [
+          "3",
+          "Anatomia Cirúrgica e os Compartimentos Osteofascionais"
+        ],
+        [
+          "p",
+          "Os compartimentos musculares dos membros são delimitados por estruturas rígidas e virtualmente inelásticas: <strong>ossos</strong> (cortical óssea), <strong>membranas interósseas</strong> fibrosas densas e <strong>fáscias musculares profundas aponeuróticas</strong> de colágeno denso. Essas fáscias possuem altíssima resistência à tração e complacência mecânica praticamente nula (incapacidade quase absoluta de se expandir agudamente diante do acúmulo de líquidos):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Perna (O sítio anatômico individualmente mais acometido na prática clínica — responsável por > 40% a 50% de todos os casos de SCA!):</strong>\n    <p>A perna é subdividida rigidamente em <strong>QUATRO COMPARTIMENTOS MISTOS INDEPENDENTES</strong> pela tíbia, fíbula, membrana interóssea e septos intermusculares anterior, posterior e transverso:</p>\n    <ol>\n      <li><strong>Compartimento Anterior:</strong> Delimitado pela tíbia medialmente, fíbula lateralmente, membrana interóssea posteriormente e fáscia crural anteriormente. Contém os músculos <em>tibial anterior, extensor longo dos dedos, extensor longo do hálux e fibular terceiro</em> (responsáveis pela dorsiflexão do tornozelo e extensão dos pododáctilos). Contém a <strong>Artéria e Veias Tibiais Anteriores</strong> e o <strong>Nervo Fibular Profundo</strong> (responsável pela sensibilidade no primeiro espaço interdigital dorsal do pé entre o hálux e o 2º artelho). É o <strong>compartimento mais frequentemente afetado na perna e o mais vulnerável à isquemia</strong>!",
+            "<strong>Compartimento Lateral:</strong> Delimitado pela fíbula e septos intermusculares anterior e posterior. Contém os músculos <em>fibular longo e fibular curto</em> (responsáveis pela eversão do pé) e o <strong>Nervo Fibular Superficial</strong> (responsável pela sensibilidade de quase todo o dorso do pé).",
+            "<strong>Compartimento Posterior Superficial:</strong> Delimitado pela fáscia crural posterior e septo transverso profundo. Contém o <em>tríceps sural (gastrocnêmio medial, gastrocnêmio lateral e sóleo) e o músculo plantar delgado</em> (responsáveis pela flexão plantar do tornozelo) e o <strong>Nervo Sural</strong> sensitivo.",
+            "<strong>Compartimento Posterior Profundo:</strong> Situado profundamente ao septo transverso posterior, rente à membrana interóssea e faces posteriores da tíbia e fíbula. Contém os músculos <em>tibial posterior, flexor longo dos dedos e flexor longo do hálux</em> (inversão do pé e flexão dos artelhos), além do feixe neurovascular vital: <strong>Artéria e Veias Tibiais Posteriores, Artéria e Veias Fibulares</strong> e o <strong>Nervo Tibial</strong> (responsável pela sensibilidade de toda a planta do pé).",
+            "<strong>Antebraço (Segundo sítio anatômico mais acometido — ~20% dos casos):</strong>\n    <p>Subdividido em três compartimentos principais: <strong>Compartimento Volar / Anterior</strong> (o mais crítico, abrigando flexores dos dedos e punho, além dos nervos mediano e ulnar e artérias radial e ulnar), <strong>Compartimento Dorsal / Extensor</strong> (extensores do punho e dedos e nervo interósseo posterior) e o <strong>Compartimento Lateral / Móvel de Henry</strong> (músculos braquiorradial, extensor radial longo e curto do carpo).</p>",
+            "<strong>Outros Sítios Anatômicos Importantes:</strong> Coxa (3 compartimentos: anterior, posterior e medial), Pé (9 a 10 microcompartimentos), Mão (10 compartimentos: 4 interósseos dorsais, 3 interósseos volares, tenar, hipotenar e adutor do polegar), Braço (2 compartimentos: anterior e posterior) e Glúteo (3 compartimentos)."
+          ]
+        ],
+        [
+          "3",
+          "A Fisiopatologia da Cascata Isquêmica Veno-Arteriolar"
+        ],
+        [
+          "p",
+          "A fisiopatologia da Síndrome Compartimental Aguda é orquestrada por um ciclo de retroalimentação positiva (\"círculo vicioso\") de hipertensão tecidual intersticial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Evento Desencadeador:</strong> Inicia-se pelo aumento do conteúdo interno do compartimento (edema inflamatório pós-trauma, sangramento por hematoma de fratura) ou pela redução externa do volume compartimental (gesso constritivo circular não fenestrado, curativo compressivo apertado);",
+            "<strong>Colapso da Circulação Venosa e Linfática Capilar:</strong> A pressão intracompartimental (PIC) normal de repouso é extremamente baixa (entre <strong>0 e 8 mmHg</strong>). Conforme a PIC eleva-se acima de 15 a 20 mmHg, a pressão tecidual externa supera a baixa pressão intraluminal das vênulas pós-capilares e dos vasos linfáticos delgados, colabando o retorno venoso (oclusão venosa de baixa pressão);",
+            "<strong>Aumento da Pressão Hidrostática Pós-Capilar e Edema Extracelular Maciço:</strong> A estase venosa retrógrada eleva exponencialmente a pressão hidrostática no interior dos capilares. Ocorre transudação e exsudação contínua de água, eletrólitos e proteínas do plasma para o interstício muscular (terceiro espaço intracompartimental), elevando ainda mais a PIC;",
+            "<strong>Redução Crítica da Pressão de Perfusão Capilar (PPC):</strong> A perfusão tecidual efetiva dos músculos e nervos depende do gradiente de pressão entre o leito arterial de entrada e a pressão tissular intersticial: <em>Pressão de Perfusão Capilar = Pressão Arterial Diastólica (PAD) - Pressão Intracompartimental (PIC)</em>. Conforme a PIC aproxima-se da pressão arterial diastólica (Delta P ≤ 30 mmHg), o fluxo sanguíneo microvascular capilar cessa completamente;",
+            "<strong>Isquemia Celular, Falência Energética da Bomba de Na+/K+ e Rabdomiólise:</strong> A anóxia tecidual depleta os estoques intracelulares de trifosfato de adenosina (ATP). Sem ATP, a bomba de sódio-potássio ATPase da membrana do sarcolema muscular paralisa. Ocorre influxo maciço descontrolado de sódio e água para o citosol com <em>edema celular celular citotóxico intracelular</em> (agravando ainda mais a pressão tecidual!) e influxo maciço de cálcio iônico livre, ativando proteases e fosfolipases intracelulares que degradam a membrana celular. As fibras musculares sofrem necrose coagulativa isquêmica (rabdomiólise), liberando toneladas de <strong>mioglobina, creatinofosfoquinase (CPK), potássio e ácido lático</strong> na circulação sistêmica (com alto risco de lesão renal aguda por cilindros de mioglobina e hipercalemia arritmogênica letal);",
+            "<strong>Tolerância Temporal dos Tecidos à Isquemia (A Janela Crítica de Reversibilidade):</strong>\n    <ul>\n      <li><em>Tecido Nervoso Periférico:</em> É o mais vulnerável de todos à anóxia! A condução axonal e a perfusão endoneural começam a falhar após <strong>30 a 60 minutos de isquemia</strong> (manifestando-se com parestesia precoce). O dano funcional torna-se <strong>irreversível após 6 a 8 horas de isquemia contínua descompensada</strong>!",
+            "<em>Tecido Muscular Estriado:</em> Apresenta alterações celulares reversíveis até 3 a 4 horas. Entre <strong>4 e 6 horas</strong> instala-se necrose muscular miocítica focal significativa. Após <strong>8 a 10 horas de isquemia completa</strong>, instala-se <strong>necrose muscular transmural irreversível de 100% das fibras musculares do compartimento</strong>! Músculo morto jamais regenera: é substituído por tecido de granulação e fibrose densa e inelástica, originando a temida <strong>Contratura Isquêmica de Volkmann</strong> permanente."
+          ]
+        ],
+        [
+          "3",
+          "Etiologias e Fatores Desencadeantes da Síndrome Compartimental Aguda"
+        ],
+        [
+          "p",
+          "As causas dividem-se em dois grandes mecanismos patológicos:"
+        ],
+        [
+          "t",
+          [
+            "Mecanismo Etiológico Primário",
+            "Exemplos Clínicos e Fatores de Risco Traumatológicos",
+            "Particularidades em Provas de Residência Médica"
+          ],
+          [
+            [
+              "<strong>1. Aumento do Conteúdo Interno do Compartimento</strong><br><em>(Expansão volumétrica de fluidos sob fáscia inelástica)</em>",
+              "<strong>Fraturas Ósseas dos Membros (A causa isolada mais comum — 75% dos casos!):</strong><br>- <strong>Fraturas da Diáfise da Tíbia</strong> (adultos e adolescentes): a etiologia isolada mais frequente de SCA de perna.<br>- <strong>Fraturas Supracondilianas do Úmero na Criança</strong>: etiologia clássica de SCA do antebraço infantil.<br>- Fraturas do rádio distal, antebraço (osso duplo), platô tibial e fraturas do fêmur.",
+              "<strong>Ponto Crítico de Prova:</strong> A SCA pode ocorrer <strong>TANTO EM FRATURAS FECHADAS QUANTO EM FRATURAS EXPOSTAS!</strong> A presença de uma fratura exposta NÃO despressuriza o compartimento de forma completa ou confiável, pois a laceração fascial traumática é frequentemente pequena e localizada em apenas um compartimento, mantendo os outros sob hipertensão letal! Presumir que fratura exposta não faz SCA é ERRO GRAVE!"
+            ],
+            [
+              "<strong>Trauma Muscular por Esmagamento (\"Crush Injury\") e Contusão Grave:</strong> Acidentes automobilísticos graves, soterramentos em desabamentos de terra ou escombros de construções.",
+              "Gera edema mioedematoso massivo pós-descompressão e rabdomiólise sistêmica associada (Síndrome de Esmagamento)."
+            ],
+            [
+              "<strong>Lesões Vasculares Arteriais Agudas com Isquemia-Reperfusão:</strong> Oclusão arterial aguda embólica ou trombótica de membros; lesão traumática da artéria poplítea ou femoral; ou tempo prolongado de uso de garrote/torniquete cirúrgico ou hemostático.",
+              "A restauração do fluxo arterial após período prolongado de isquemia (> 4 a 6 horas) deflagra <strong>Síndrome de Isquemia-Reperfusão</strong>: liberação de radicais livres derivados do oxigênio, aumento catastrófico da permeabilidade capilar e extravasamento plasmático maciço. Exige frequentemente <strong>Fasciotomia Profilática ou Terapêutica Simultânea à revascularização arterial</strong>!"
+            ],
+            [
+              "<strong>Outras Causas de Aumento do Volume:</strong> Injeção extravascular acidental de drogas ou contraste por cateter venoso desposicionado; picadas de serpentes peçonhentas do gênero <em>Bothrops</em> (jararaca — cujo veneno proteolítico causa edema monstruoso e necrose muscular); hematomas musculares por sangramentos em pacientes hemofílicos ou anticoagulados.",
+              "A SCA deve ser ativamente suspeitada em pós-punção inadvertida da artéria femoral ou braquial com formação de hematoma expansivo."
+            ],
+            [
+              "<strong>2. Redução Externa do Volume do Compartimento</strong><br><em>(Constrição mecânica extrínseca sobre tecido edemaciado)</em>",
+              "<strong>Imobilizações Gessadas Circulares Rígidas e Curativos Compressivos:</strong> Aplicação de aparelho gessado circular fechado logo após fratura aguda sem abertura longitudinal (bivalvação).",
+              "Conforme o edema pós-fratura se expande nas primeiras 24 a 48 horas contra o gesso rígido indeformável, a PIC sobe vertiginosamente. Conduta inicial obrigatória: <strong>Bivalvação imediata do gesso e abertura completa de todos os curativos e faixas de algodão até a pele!</strong>"
+            ],
+            [
+              "<strong>Queimaduras Térmicas ou Elétricas de Espessura Total Circunferenciais:</strong> Queimaduras de 3º grau circundando circunferencialmente todo o membro ou tórax.",
+              "A escara necrótica da queimadura é inelástica, dura e atua como uma cinta inextensível constritiva sobre os tecidos profundos edemaciados pela ressuscitação volêmica hídrica vigorosa. Exige <strong>Escarotomia descompressiva de urgência</strong> na beira do leito."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-os-6-ps-mensuracao-da-pic-e-criterios-de-fasciotomia",
+      0,
+      [
+        [
+          "2",
+          "2. Quadro Clínico dos \"6 Ps\", Métodos de Mensuração da Pressão Intracompartimental e Critérios Formais de Fasciotomia (O Delta P)"
+        ],
+        [
+          "3",
+          "O Quadro Clínico Clássico e a Cronologia dos \"6 Ps\""
+        ],
+        [
+          "p",
+          "O diagnóstico da Síndrome Compartimental Aguda é <strong>EMINENTEMENTE CLÍNICO</strong>. O cirurgião e o ortopedista devem reconhecer os sinais precoces antes do surgimento dos sinais tardios. A clássica mnemônica anglo-saxônica dos <strong>\"6 Ps\"</strong> (<em>Pain, Paresthesia, Pallor, Paralysis, Pulselessness, Poikilothermia</em>) deve ser interpretada com extremo rigor cronológico e biológico nas provas de residência:"
+        ],
+        [
+          "t",
+          [
+            "Sinal Clínico dos \"6 Ps\"",
+            "Cronologia Fisiopatológica",
+            "Descrição Propedêutica e Valor Semiológico",
+            "Importância Crítica em Provas"
+          ],
+          [
+            [
+              "<strong>1. PAIN (Dor Desproporcional)</strong>",
+              "<strong>O SINAL MAIS PRECOCE, MAIS FREQUENTE E MAIS SENSÍVEL DA SCA!</strong>",
+              "A dor é caracteristicamente <strong>intensa, profunda, em queimação ou aperto constante, desproporcional à aparente gravidade da fratura ou lesão tecidual visível</strong>, e que tipicamente <strong>NÃO CEDE nem alivia com doses plenas de analgésicos e opioides potentes</strong> (morfina, fentanil). O paciente solicita analgesia repetidamente sem alívio.<br>\n      <strong>O TESTE SEMIOLÓGICO PADRÃO-OURO: DOR EXACERBADA PELO ESTIRAMENTO PASSIVO DOS MÚSCULOS DO COMPARTIMENTO!</strong><br>\n      - Ex.: na suspeita de SCA do compartimento anterior da perna, a <em>flexão plantar passiva do tornozelo e dos artelhos</em> estira as fibras isquêmicas do músculo tibial anterior e extensores, desencadeando dor excruciante intolerável!<br>\n      - Na SCA volar do antebraço, a <em>extensão passiva dos dedos</em> deflagra dor lancinante imediata!",
+              "<strong>É o achado clínico mais precoce e confiável em pacientes alertas e orientados!</strong> A presença de dor ao estiramento passivo em membro sob risco exige conduta imediata."
+            ],
+            [
+              "<strong>2. PARESTHESIA (Parestesia / Hipoestesia)</strong>",
+              "<strong>SEGUNDO SINAL PRECOCE</strong> (surge em 30 a 60 minutos de anóxia nervosa).",
+              "Sensação de formigamento, dormência ou queimação no território sensitivo dos nervos periféricos que atravessam o compartimento tenso:<br>\n      - <em>Compartimento Anterior da Perna:</em> Perda sensitiva no <strong>primeiro espaço interdigital dorsal do pé</strong> (nervo fibular profundo);<br>\n      - <em>Compartimento Lateral da Perna:</em> Dorso do pé (nervo fibular superficial);<br>\n      - <em>Compartimento Posterior Profundo da Perna:</em> Região plantar do pé (nervo tibial);<br>\n      - <em>Compartimento Volar do Antebraço:</em> Polpas digitais dos três primeiros dedos (nervo mediano).",
+              "O teste com monofilamento de nylon ou picada de agulha avaliando a perda de sensibilidade discriminativa tátil/dolorosa é o indicador objetivo precoce mais precoce de sofrimento neural."
+            ],
+            [
+              "<strong>3. PRESSURE (Tensão Palpatória / Edema Lenhoso)</strong>",
+              "Precoce a intermediário.",
+              "O compartimento muscular acometido encontra-se <strong>tumefeito, tenso, endurecido à palpação, inelástico e com turgor lenhoso (\"membro em madeira\" ou \"em pedra\")</strong>, com a pele brilhante e tensa.",
+              "Embora frequente, a palpação é subjetiva e pouco sensível em compartimentos musculares profundos (como o compartimento posterior profundo da perna ou coxa)."
+            ],
+            [
+              "<strong>4. PALLOR (Palidez Cutânea)</strong>",
+              "Intermediário a tardio.",
+              "Pele fria, pálida, cianótica ou com má perfusão periférica com tempo de enchimento capilar lentificado (> 3 segundos) decorrente da insuficiência microvascular periférica e edema.",
+              "Pode estar ausente se houver estase venosa prévia com congestão pletórica."
+            ],
+            [
+              "<strong>5. PARALYSIS (Paralisia / Plegia Muscular)</strong>",
+              "<strong>SINAL TARDIO DE DANO IRREVERSÍVEL!</strong>",
+              "Perda da motricidade ativa voluntária das articulações dependentes do compartimento (ex.: incapacidade de realizar dorsiflexão do tornozelo e extensão dos artelhos).",
+              "<strong>Quando a paralisia se instala, a necrose isquêmica das fibras musculares e a axonotmese dos troncos nervosos já ocorreram!</strong> A fasciotomia realizada nesta fase frequentemente não recupera a função motora."
+            ],
+            [
+              "<strong>6. PULSELESSNESS (Ausência de Pulsos Arteriais Distais)</strong>",
+              "<strong>O SINAL MAIS TARDIO E DE PIOR PROGNÓSTICO!</strong>",
+              "Desaparecimento dos pulsos arteriais periféricos distais palpatórios (artéria tibial posterior e artéria pediosa dorsal).",
+              "<strong>A MAIOR PEGADINHA DE PROVAS DE RESIDÊNCIA MÉDICA: A PRESENÇA DE PULSOS DISTAIS PALPÁVEIS E NORMAIS NÃO AFASTA O DIAGNÓSTICO DE SÍNDROME COMPARTIMENTAL AGUDA!</strong><br>\n      <em>Explicação Biológica:</em> A pressão intracompartimental que causa necrose tecidual (30 a 45 mmHg) supera a pressão capilar e arteriolar microvascular, mas é <strong>muito inferior à Pressão Arterial Sistólica sistêmica (120 mmHg)</strong>. Portanto, as grandes artérias axiais principais (artéria tibial anterior e posterior) continuam pulsando normalmente no tornozelo enquanto os músculos e nervos dentro do compartimento estão morrendo de anóxia! Aguardar a perda do pulso para diagnosticar SCA é erro gravíssimo; quando o pulso desaparece, o membro já está em estado de necrose isquêmica transmural irreversível ou há lesão arterial axial direta associada!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Mensuração Instrumental Objetiva da Pressão Intracompartimental (PIC)"
+        ],
+        [
+          "p",
+          "Em pacientes lúcidos, cooperativos e orientados, o diagnóstico clínico com base na dor desproporcional ao estiramento passivo e parestesia é soberano, dispensando instrumentação para indicar a cirurgia. Contudo, a <strong>Mensuração Instrumental Direta da PIC com agulha ou cateter</strong> é <strong>MANDATÓRIA E INDISPENSÁVEL</strong> nas seguintes situações clínicas:"
+        ],
+        [
+          "o",
+          [
+            "Pacientes com rebaixamento do nível de consciência (Traumatismo Cranioencefálico grave, coma, sedação contínua em ventilação mecânica na UTI);",
+            "Pacientes pediátricos incapazes de verbalizar ou quantificar adequadamente a dor;",
+            "Pacientes politraumatizados sob bloqueio anestésico locorregional (raquianestesia, bloqueio de nervo periférico com anestésico local que mascara completamente a dor!);",
+            "Pacientes com lesão neurológica central ou periférica prévia no mesmo membro (paraplegia, plexopatia pré-existente);",
+            "Quadros clínicos limítrofes ou duvidosos em que o exame físico é equívoco."
+          ]
+        ],
+        [
+          "4",
+          "Métodos Técnicos de Aferição"
+        ],
+        [
+          "u",
+          [
+            "<em>Aparelho Digital de Pressão de Stryker (Stryker Intra-Compartmental Pressure Monitor):</em> Aparelho portátil digital dotado de transdutor piezoelétrico e agulha biselada especial preenchida com salina. É inserido perpendicularmente no compartimento muscular após assepsia estrita, fornecendo a leitura digital imediata da PIC em mmHg. É o método padrão-ouro na maioria dos centros de trauma.",
+            "<em>Método da Coluna de Água e Manômetro de Mercúrio com Agulha (Técnica de Whitesides):</em> Método clássico artesanal utilizando uma agulha calibre 18G, uma torneirinha de 3 vias, um manômetro de pressão arterial e uma seringa com ar e água salina, medindo a pressão necessária para injetar uma microgota de soro no compartimento."
+          ]
+        ],
+        [
+          "3",
+          "Critérios Formais para Indicação de Fasciotomia Descompressiva: O Conceito do \"Delta P\""
+        ],
+        [
+          "p",
+          "Durante anos utilizou-se o critério da <strong>pressão absoluta isolada</strong>: considerava-se indicação de fasciotomia quando a <strong>PIC ultrapassava 30 a 40 mmHg</strong> em qualquer compartimento muscular. Contudo, esse critério absoluto falha em pacientes hipotensos (choque hemorrágico pós-trauma) ou hipertensos."
+        ],
+        [
+          "p",
+          "<strong>O Padrão-Ouro Contemporâneo das Diretrizes de Trauma (OTA, AAOS e ATLS): O DELTA P (Pressão de Perfusão Tissular):</strong>"
+        ],
+        [
+          "p",
+          "&Delta;P (Delta P) = Pressão Arterial Diastólica (PAD) - Pressão Intracompartimental Medida (PIC)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Se o &Delta;P for &le; 30 mmHg (Pressão Diastólica - PIC &le; 30 mmHg):</strong> Está configurada a <strong>INDICAÇÃO FORMAL, ABSOLUTA E IMEDIATA DE FASCIOTOMIA DESCOMPRESSIVA CIRÚRGICA DE URGÊNCIA!</strong>",
+            "<em>Exemplo Prático de Prova:</em> Um paciente politraumatizado chocado dá entrada com PA de 90/50 mmHg (Pressão Diastólica = 50 mmHg). A mensuração da PIC no compartimento anterior da perna revela 25 mmHg. Se o médico utilizasse o critério obsoleto de PIC absoluta (> 30 mmHg), ele não operaria o paciente. Contudo, calculando o Delta P: <em>&Delta;P = 50 - 25 = 25 mmHg</em>. Como o Delta P é <strong>&le; 30 mmHg</strong>, o leito microvascular está em anóxia isquêmica profunda, havendo <strong>indicação mandatória de fasciotomia imediata!</strong>"
+          ]
+        ],
+        [
+          "4",
+          "Conduta Pré-Operatória Imediata na Sala de Emergência"
+        ],
+        [
+          "p",
+          "Antes de encaminhar o paciente ao centro cirúrgico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Remover Imediatamente Todo Curativo ou Imobilização:</strong> Cortar e bivalvar completamente o gesso circular em ambos os lados e abrir toda a faixa de algodão até a pele nua (a simples abertura completa do gesso e curativos reduz a PIC em <strong>50% a 70%</strong>!);",
+            "<strong>Posicionamento do Membro ao Nível do Coração:</strong> Manter a extremidade acometida <strong>RIGOROSAMENTE NO NÍVEL DO CORAÇÃO</strong>. <strong>ERRO CLÁSSICO DE PROVA: É FORMALMENTE CONTRAINDICADO ELEVAR O MEMBRO ACIMA DO NÍVEL DO CORAÇÃO!</strong> A elevação do membro diminui a pressão arterial hidrostática de entrada, reduzindo ainda mais a pressão de perfusão capilar arterial já crítica e agravando a isquemia muscular! Da mesma forma, não pendurar o membro (aumenta o edema venoso dependente);",
+            "<strong>Otimização Hemodinâmica Sistêmica:</strong> Tratar a hipotensão arterial sistêmica e a hipovolemia com cristaloides ou hemotransfusão para elevar a pressão arterial diastólica, e oxigenoterapia suplementar;",
+            "<strong>NÃO aplicar gelo ou compressas frias locais</strong> (a vasoconstrição induzida pelo frio agrava dramaticamente a isquemia tecidual celular)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tecnica-cirurgica-da-fasciotomia-descompressiva-da-perna-e-antebraco",
+      0,
+      [
+        [
+          "2",
+          "3. Técnica Cirúrgica da Fasciotomia Descompressiva: Técnica de Duplo Acesso na Perna (4 Compartimentos) e Descompressão do Antebraço"
+        ],
+        [
+          "3",
+          "Princípios Gerais da Fasciotomia Cirúrgica"
+        ],
+        [
+          "p",
+          "A <strong>Fasciotomia Descompressiva</strong> é o único tratamento definitivo, resolutivo e curativo da Síndrome Compartimental Aguda estabelecida. Trata-se de um procedimento de emergência cuja meta é a abertura cirúrgica ampla e desimpedida de todas as fáscias osteofasciais inelásticas do segmento anatômico acometido, liberando a pressão e restaurando o fluxo microvascular antes que se instale necrose muscular e neural permanente."
+        ],
+        [
+          "p",
+          "Regras técnicas de ouro invioláveis:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Incisões Cutâneas Amplas (Longas):</strong> As incisões na pele e na fáscia devem ser generosas e completas de uma extremidade à outra do compartimento. <em>Pequenas incisões na pele com fasciotomia subcutânea às cegas são FORMALMENTE PROIBIDAS!</em> A pele intacta e o tecido subcutâneo edemaciado podem atuar como uma segunda camada constritiva inelástica (a chamada \"síndrome compartimental da pele\");",
+            "<strong>Descompressão de TODOS OS COMPARTIMENTOS:</strong> Na presença de suspeita ou confirmação de SCA em um segmento anatômico, <strong>TODOS os compartimentos daquele segmento devem ser sistematicamente abertos</strong> (mesmo aqueles aparentemente normais à palpação externa!), pois a liberação incompleta de um compartimento vizinho gera necrose silenciosa tardia;",
+            "<strong>Desbridamento de Músculo Desvitalizado e Segunda Olhada (\"Second-Look\"):</strong> Avaliar os <em>\"4 Cs\"</em> da viabilidade muscular (<strong>Cor, Consistência, Capacidade de sangramento ao corte com bisturi e Contratilidade ao estímulo elétrico com eletrocautério bipolar</strong>). Músculo com viabilidade duvidosa não deve ser ressecado na primeira cirurgia; deve ser reavaliado obrigatoriamente em uma cirurgia de revisão programada após <strong>48 a 72 horas (\"Second-Look\")</strong>;",
+            "<strong>NÃO REALIZAR FECHAMENTO PRIMÁRIO DA PELE!</strong> As feridas cirúrgicas da fasciotomia <strong>DEVEM permanecer totalmente ABERTAS</strong>. O fechamento primário da pele na urgência sob tensão recria imediatamente a síndrome compartimental! A ferida deve ser protegida com curativo a vácuo (Terapia por Pressão Negativa - VAC) ou aproximação elástica gradual da pele (\"técnica do cadarço de sapato\" / <em>shoelace technique</em>) com fechamento diferido ou enxertia cutânea em 5 a 10 dias."
+          ]
+        ],
+        [
+          "3",
+          "A Técnica de Duplo Acesso da Perna (Técnica de Mubarak e Hargens)"
+        ],
+        [
+          "p",
+          "A técnica clássica de duas incisões na perna (ântero-lateral e póstero-medial) é o procedimento padrão universal e o mais amplamente cobrado em provas de Residência de Cirurgia Geral e Ortopedia, permitindo a <strong>descompressão segura e anatômica dos QUATRO COMPARTIMENTOS DA PERNA</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Incisão Cirúrgica na Perna",
+            "Reparos Anatômicos da Incisão na Pele",
+            "Compartimentos Abertos",
+            "Passo a Passo Técnico e Estruturas Nobres a Proteger"
+          ],
+          [
+            [
+              "<strong>1. Acesso Ântero-Lateral</strong>",
+              "Incisão longitudinal ampla de 20 a 25 cm de extensão, realizada na face lateral da perna, centrada <strong>2 cm anteriormente ao bordo anterior da diáfise da fíbula</strong>, estendendo-se desde 5 cm distal à cabeça da fíbula até 5 cm proximal ao maléolo lateral.",
+              "<strong>Compartimento Anterior</strong><br>e<br><strong>Compartimento Lateral</strong>",
+              "Após a incisão cutânea e subcutânea, disseca-se até visualizar a fáscia aponeurótica e o <em>septo intermuscular anterior</em> que separa o compartimento anterior do lateral.<br>\n      - <strong>Abertura do Compartimento Anterior:</strong> Faz-se uma pequena incisão transversa na fáscia anterior ao septo e abre-se a fáscia longitudinalmente para cima e para baixo em toda a sua extensão com tesoura de Mayo ligeiramente aberta.<br>\n      - <strong>Abertura do Compartimento Lateral:</strong> Faz-se nova incisão na fáscia posterior ao septo, abrindo longitudinalmente sobre a linha do músculo fibular curto.<br>\n      - <strong>ESTRUTURA EM RISCO CRÍTICO: NERVO FIBULAR SUPERFICIAL!</strong> Ele perfura a fáscia do compartimento lateral no terço distal da perna para se tornar subcutâneo. O cirurgião deve identificá-lo e dissecá-lo meticulosamente para não sofrer secção iatrogênica!"
+            ],
+            [
+              "<strong>2. Acesso Póstero-Medial</strong>",
+              "Incisão longitudinal ampla de 20 a 25 cm na face medial da perna, posicionada <strong>2 cm posteriormente ao bordo póstero-medial da tíbia</strong>, desde a tuberosidade tibial medial até 5 cm proximal ao maléolo medial.",
+              "<strong>Compartimento Posterior Superficial</strong><br>e<br><strong>Compartimento Posterior Profundo</strong>",
+              "- <strong>ESTRUTURA EM RISCO CRÍTICO: VEIA SAFENA MAGNA E NERVO SAFENO!</strong> Localizados no tecido subcutâneo anterior à incisão; devem ser rebatidos anteriormente com afastador.<br>\n      - <strong>Abertura do Compartimento Posterior Superficial:</strong> Incisão longitudinal ampla sobre a fáscia que recobre o gastrocnêmio medial e sóleo, descomprimindo o tríceps sural.<br>\n      - <strong>Abertura do Compartimento Posterior Profundo (O passo mais negligenciado!):</strong> O compartimento posterior profundo situa-se profundamente ao sóleo. Para acessá-lo, o cirurgião deve <strong>desinserir a ponte fibrosa da cabeça medial do músculo sóleo da borda posterior da tíbia</strong> e rebater o ventre muscular póstero-lateralmente. Incisa-se a fáscia profunda sobre o músculo tibial posterior e flexores em toda a sua extensão, visualizando e protegendo o <strong>feixe neurovascular tibial posterior</strong> (artéria, veias e nervo tibial). Se a desinserção do sóleo não for realizada, o compartimento posterior profundo permanece comprimido, levando a necrose muscular e garra irreversível dos artelhos!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Técnica Alternativa de Único Acesso (Fastectomia Fibular / Acesso Peroneal Único de Matsen):</em> Incisão lateral única sobre a fíbula com dissecção anterior e posterior, raramente empregada na emergência devido a maior dissecção tecidual e risco aumentado de lesão do nervo fibular comum no colo da fíbula."
+        ],
+        [
+          "3",
+          "A Fasciotomia do Antebraço"
+        ],
+        [
+          "p",
+          "No antebraço, a descompressão cirúrgica de escolha é a <strong>Fasciotomia Volar com Incisão em S Itálico ou Z-plastia Contínua (Incisão de Henry modificada)</strong>:"
+        ],
+        [
+          "o",
+          [
+            "Inicia-se a incisão proximalmente na fossa antecubital (medial ao tendão do bíceps braquial, <strong>com secção obrigatória do lacertus fibrosus / aponeurose bicipital</strong>, que atua como uma guilhotina mecânica sobre o nervo mediano e artéria braquial!);",
+            "Estende-se distalmente em curva em direção ao bordo radial do antebraço e depois medialmente em direção ao punho;",
+            "Cruza a prega flexora do punho em ângulo oblíquo de 45º (para evitar bridas cicatriciais retráteis futuras) e <strong>estende-se para a palma da mão através da incisão de abertura completa do Ligamento Carpal Transverso (Túnel do Carpo)</strong>, descomprimindo o nervo mediano sob hipertensão aguda!",
+            "Se o compartimento dorsal permanecer tenso após a liberação volar, realiza-se uma incisão dorsal retilínea longitudinal sobre o compartimento extensor."
+          ]
+        ],
+        [
+          "3",
+          "Complicações da Fasciotomia Tardia e da Não Intervenção"
+        ],
+        [
+          "u",
+          [
+            "<strong>Contratura Isquêmica de Volkmann (Sequela Clássica Tardia):</strong> Decorre da necrose isquêmica dos músculos flexores profundos do antebraço (flexor profundo dos dedos e flexor longo do polegar), substituídos por tecido conjuntivo cicatricial fibrótico retrátil denso. Manifesta-se clinicamente pela deformidade fixa clássica: <strong>flexão rígida do punho, hiperextensão das articulações metacarpofalângicas e flexão inelástica em garra das interfalângicas dos dedos</strong>, com atrofia tenar/hipotenar e anestesia da mão. No membro inferior, gera deformidade em <em>equinovaro rígido com garra de artelhos e pé insensível</em>.",
+            "<strong>Dilema Clínico: A Fasciotomia Muito Tardia (> 36 a 48 horas de isquemia completa):</strong> Quando um paciente com SCA não tratada chega à emergência após 36 a 48 horas de evolução, com o membro completamente paralisado, insensível, com necrose muscular transmural estabelecida (músculos frios e liquefeitos): <strong>A REALIZAÇÃO DE FASCIOTOMIA É FORMALMENTE CONTRAINDICADA POR MUITOS CONSENSOS CIRÚRGICOS!</strong> A abertura da pele de um compartimento com necrose séptica/asséptica tardia transforma uma lesão fechada estéril em ferida aberta contaminada. As bactérias da pele colonizam o tecido muscular necrótico volumoso, gerando infecção bacteriana catastrófica, sepse fulminante de partes moles e necessidade de amputação de urgência, com letalidade de até 20% a 30%! O manejo nesses casos tardios negligenciados envolve estabilização clínica, diálise para a rabdomiólise e frequentemente <strong>Amputação Primária do membro</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "lesoes-musculotendineas-frequentes-manguito-joelho-aquiles",
+      0,
+      [
+        [
+          "2",
+          "4. Lesões Musculotendíneas e Ligamentares Frequentes: Manguito Rotador, Ligamentos/Meniscos do Joelho e Ruptura do Tendão de Aquiles"
+        ],
+        [
+          "3",
+          "1. Lesões do Manguito Rotador do Ombro"
+        ],
+        [
+          "p",
+          "O <strong>Manguito Rotador</strong> é o complexo miotendíneo dinâmico fundamental da articulação glenoumeral, responsável por manter a cabeça umeral centralizada e estabilizada contra a cavidade glenoide durante os movimentos multidirecionais do ombro. É composto por <strong>QUATRO MÚSCULOS</strong> anatômicos principais:"
+        ],
+        [
+          "t",
+          [
+            "Músculo do Manguito Rotador",
+            "Origem e Inserção Óssea",
+            "Inervação Periférica",
+            "Ação Biomecânica Primária",
+            "Testes Propedêuticos Clínicos Específicos"
+          ],
+          [
+            [
+              "<strong>Supraespinal (Supraespinhal)</strong><br><em>(O tendão mais frequentemente lesionado — > 85% dos casos!)</em>",
+              "Origem na fossa supraespinal da escápula; inserção na <strong>faceta superior do tubérculo maior do úmero</strong>. Passa sob o arco coracoacromial (zona crítica de hipovascularização de Codman).",
+              "Nervo Supraescapular (C5-C6).",
+              "<strong>Iniciação da abdução do braço (primeiros 0º a 15-30º)</strong> e estabilização superior da cabeça umeral.",
+              "<strong>Teste de Jobe (Empty Can Test):</strong> Braços abduzidos a 90º no plano da escápula (30º anterior), rotação interna máxima com polegares apontando para o chão (\"esvaziar uma lata\"). O examinador aplica força para baixo contra resistência do paciente. Dor e incapacidade de resistir (queda do braço) indicam tendinopatia ou rotura do supraespinal.<br>\n      <strong>Sinal da Queda do Braço (Drop Arm Sign):</strong> Abduz-se passivamente o braço do paciente a 90º e pede-se para mantê-lo ou baixá-lo lentamente; o braço despenca bruscamente por rotura maciça do tendão."
+            ],
+            [
+              "<strong>Infraespinal (Infraespinhal)</strong>",
+              "Fossa infraespinal da escápula; inserção na <strong>faceta média do tubérculo maior do úmero</strong>.",
+              "Nervo Supraescapular (C5-C6).",
+              "<strong>Rotação Externa (Lateral) do braço</strong>.",
+              "<strong>Teste de Patte:</strong> Braço em abdução a 90º e cotovelo fletido a 90º; testa-se a rotação externa contra resistência manual do examinador.<br>\n      <strong>Sinal do Retorno / Sinal da Queda em Rotação Externa (External Rotation Lag Sign):</strong> O examinador coloca passivamente o ombro em rotação externa máxima; ao soltar, a mão do paciente gira internamente involuntariamente como uma mola por fraqueza do infraespinal."
+            ],
+            [
+              "<strong>Redondo Menor (Teres Minor)</strong>",
+              "Borda lateral da escápula; inserção na <strong>faceta inferior do tubérculo maior do úmero</strong>.",
+              "<strong>Nervo Axilar (Circunflexo — C5-C6)</strong>.",
+              "<strong>Rotação Externa e adução leve do braço</strong>.",
+              "<strong>Sinal de Hornblower (Sinal do Corneteiro):</strong> Pede-se ao paciente para levar a mão à boca; se houver lesão grave do redondo menor e infraespinal, o paciente abduz excessivamente o cotovelo para cima para conseguir alcançar a boca (como se estivesse tocando um clarim/corneta)."
+            ],
+            [
+              "<strong>Subescapular</strong><br><em>(O único rotador interno do manguito!)</em>",
+              "Fossa subescapular (face anterior da escápula); inserção na <strong>tuberosidade menor (tubérculo menor / troquino) do úmero</strong>.",
+              "Nervos Subescapulares Superior e Inferior (C5-C6).",
+              "<strong>ROTAÇÃO INTERNA (Medial) potente do braço</strong> e estabilização anterior.",
+              "<strong>Teste de Gerber (Lift-off Test):</strong> O paciente posiciona o dorso da mão na região lombar posterior e tenta afastar a mão ativamente da coluna lombar contra a resistência do examinador. Incapacidade de afastar a mão indica rotura do subescapular.<br>\n      <strong>Teste do Abraço de Urso (Bear Hug Test):</strong> A mão do membro afetado é colocada sobre o ombro contralateral com os dedos estendidos e cotovelo anteriorizado; o examinador tenta puxar a mão para a frente contra a força de adução/rotação interna do paciente.<br>\n      <strong>Teste da Pressão Abdominal (Belly-Press Test):</strong> Pressionar a palma da mão contra o abdome mantendo o cotovelo anterior ao tronco."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Testes de Impacto Subacromial (Síndrome do Impacto)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manobra de Neer:</strong> O examinador estabiliza a escápula com uma mão e realiza a flexão anterior passiva forçada e rápida do braço em rotação interna máxima com a outra mão. Ocorre impacto mecânico direto do tubérculo maior contra a face ântero-inferior do acrômio, desencadeando dor aguda em tendinites do supraespinal.",
+            "<strong>Manobra de Hawkins-Kennedy:</strong> Braço em flexão anterior a 90º e cotovelo a 90º; o examinador realiza rotação interna passiva forçada e súbita do ombro, impactando o tendão supraespinal contra o ligamento coracoacromial.",
+            "<strong>Exame Diagnóstico Padrão-Ouro:</strong> <strong>Ressonância Magnética do Ombro</strong> (define com precisão milimétrica a espessura da rotura — parcial articular, parcial bursal ou espessura total / transmural —, retração miotendínea de Patte e grau de infiltração gordurosa muscular de Goutallier)."
+          ]
+        ],
+        [
+          "3",
+          "2. Lesões Ligamentares e Meniscais do Joelho"
+        ],
+        [
+          "p",
+          "O joelho é uma articulação sinovial em dobradiça estabilizada dinamicamente por músculos e estaticamente por ligamentos colaterais e intra-articulares cruzados:"
+        ],
+        [
+          "t",
+          [
+            "Estrutura Articular do Joelho",
+            "Mecanismo Típico de Trauma",
+            "Apresentação Clínica Típica",
+            "Testes Semiológicos Específicos e Padrão-Ouro"
+          ],
+          [
+            [
+              "<strong>Ligamento Cruzado Anterior (LCA)</strong><br><em>(A lesão ligamentar grave mais comum do joelho!)</em>",
+              "Trauma torsional indireto sem contato em desaceleração súbita com <strong>valgo e rotação externa do fêmur com pé fixo no solo</strong> (futebol, basquete, esqui) ou hiperextensão forçada.",
+              "O paciente refere sensação de <strong>estalo audível (\"pop\") no momento da entorse</strong>, incapacidade imediata de continuar jogando e surgimento de <strong>Hemartrose Volumosa Aguda de rápida instalação (nas primeiras 2 a 4 horas pós-trauma)</strong>. Sensação de \"joelho solto\" ou falseio ao mudar de direção.",
+              "<strong>TESTE DE LACHMAN: O TESTE MAIS SENSÍVEL E ESPECÍFICO (> 95%)!</strong> Joelho semi-fletido a 20º-30º; estabiliza-se o fêmur distal e traciona-se a tíbia proximal anteriormente. Observa-se translação anterior excessiva e ausência de ponto final firme (\"end-point mole\").<br>\n      <strong>Teste da Gaveta Anterior:</strong> Joelho a 90º e pé apoiado na mesa; traciona-se a tíbia anteriormente.<br>\n      <strong>Pivot-Shift Test (Teste da Mudança de Pivô):</strong> Avalia a instabilidade rotatória anterolateral patológica.<br>\n      <em>Radiografia:</em> Pode revelar a <strong>Fratura de Segond</strong> (fratura-avulsão por estiramento cortical da borda anterolateral do platô tibial — achado radiológico patognomônico de rotura do LCA!). RM é o exame confirmatório."
+            ],
+            [
+              "<strong>Ligamento Cruzado Posterior (LCP)</strong>",
+              "Trauma de alta energia com impacto direto ântero-posterior na tíbia proximal com o joelho fletido a 90º (<strong>\"Trauma de Painel de Carro\" em acidentes automobilísticos</strong>) ou queda direta sobre o joelho fletido com o pé em flexão plantar.",
+              "Dor posterior, derrame articular moderado e sensação de instabilidade na descida de escadas.",
+              "<strong>Teste da Gaveta Posterior:</strong> Joelho a 90º; empurra-se a tíbia posteriormente, observando translação posterior patológica.<br>\n      <strong>Sinal do Afundamento Posterior da Tíbia (Godfrey Test / Posterior Sag Sign):</strong> Com quadris e joelhos fletidos a 90º e calcanhares apoiados, observa-se que a tuberosidade anterior da tíbia afunda posteriormente em relação aos côndilos femorais por gravidade."
+            ],
+            [
+              "<strong>Ligamento Colateral Medial (LCM)</strong>",
+              "Trauma direto contra a face lateral do joelho gerando <strong>estresse em valgo forçado</strong> com o pé fixo no chão.",
+              "Dor e edema na face medial do joelho. Sem hemartrose volumosa livre (o ligamento é extracapsular!).",
+              "<strong>Teste de Estresse em Valgo:</strong> Realizado com joelho a 0º (extensão completa) e a 30º de flexão. Abertura da interlinha medial em 30º confirma lesão do LCM."
+            ],
+            [
+              "<strong>Meniscos (Menisco Medial e Menisco Lateral)</strong>",
+              "Mecanismo rotacional com joelho fletido e carga corporal (jovens) ou trauma mínimo de agachamento repetitivo em meniscos degenerativos (idosos). O <strong>menisco medial é 3 a 5 vezes mais acometido</strong> por ser menos móvel e firmemente aderido à cápsula e ao LCM.",
+              "Dor mecânica na interlinha articular com piora ao agachar e subir escadas; derrames articulares recidivantes de instalação lenta (após 24 horas); e episódios de <strong>Bloqueio Articular Mecânico Verdadeiro</strong> (o joelho trava em flexão de 30º, não permitindo extensão completa por interposição da lesão \"em alça de balde\").",
+              "<strong>Teste de McMurray:</strong> Paciente em decúbito dorsal; flete-se o joelho ao máximo e realiza-se extensão gradual associada à rotação externa (testa menisco medial) ou rotação interna (testa menisco lateral). Estalido doloroso audível/palpável na interlinha confirma a lesão.<br>\n      <strong>Teste de Apley (Compressão e Distração):</strong> Paciente em decúbito ventral com joelho fletido a 90º; o examinador aplica compressão axial no calcanhar enquanto roda a tíbia (dor à compressão indica lesão meniscal; dor à distração indica lesão ligamentar colateral).<br>\n      <strong>Palpação Dolorosa da Interlinha Articular.</strong>"
+            ],
+            [
+              "<strong>Tríade Terrível / Tríade Maldita de O'Donoghue</strong>",
+              "Entorse grave de alta energia em valgo e rotação externa forçada do joelho.",
+              "Instabilidade articular catastrófica com impotência funcional total e hemartrose.",
+              "<strong>Ruptura simultânea de 3 estruturas anatômicas:</strong><br>\n      1. <strong>Ligamento Cruzado Anterior (LCA);</strong><br>\n      2. <strong>Ligamento Colateral Medial (LCM);</strong><br>\n      3. <strong>Menisco Medial (ou Menisco Lateral, conforme estudos biomecânicos modernos).</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3. Ruptura Aguda do Tendão de Aquiles (Tendão Calcâneo)"
+        ],
+        [
+          "p",
+          "O <strong>Tendão de Aquiles (Tendão Calcâneo)</strong> é o tendão mais volumoso, espesso e resistente de toda a anatomia humana, formado pela união dos tendões distais dos músculos gastrocnêmio medial, gastrocnêmio lateral e sóleo (tríceps sural), inserindo-se na tuberosidade posterior do calcâneo. A sua ruptura aguda acomete classicamente <strong>homens entre 30 e 50 anos de idade (\"atletas de final de semana\")</strong> durante a prática de esportes com aceleração e desaceleração bruscas (futebol, tênis, corrida):"
+        ],
+        [
+          "4",
+          "Fatores Predisponentes e Zona Crítica de Hipovascularização"
+        ],
+        [
+          "u",
+          [
+            "<em>Zona de Vulnerabilidade Anatômica:</em> A imensa maioria das rupturas (> 85%) ocorre na <strong>zona de hipovascularização relativa situada entre 2 e 6 centímetros proximais à inserção óssea no calcâneo</strong>.",
+            "<em>Fatores de Risco Farmacológicos e Médicos:</em>\n    <ol>\n      <li><strong>Uso Prévio de Quinolonas (Fluorquinolonas como Ciprofloxacino e Levofloxacino):</strong> As quinolonas inibem os tenócitos e promovem estresse oxidativo mitocondrial na matriz de colágeno tendíneo, elevando em até 4 a 8 vezes o risco de ruptura de Aquiles mesmo com poucos dias de uso!;",
+            "<strong>Infiltração Local Intratendínea ou Peritendínea de Corticoides:</strong> Causa necrose focal de colágeno e é formalmente contraindicada em tendinopatias de Aquiles!;",
+            "Uso crônico de corticosteroides orais sistêmicos, insuficiência renal crônica, hiperparatireoidismo e doenças reumatológicas inflamatórias."
+          ]
+        ],
+        [
+          "4",
+          "Quadro Clínico: A Sensação da \"Pedrada\""
+        ],
+        [
+          "p",
+          "A apresentação é dramática e inconfundível:"
+        ],
+        [
+          "u",
+          [
+            "O paciente relata que, durante uma corrida, salto ou arrancada esportiva, sentiu uma <strong>dor súbita, aguda e lancinante na face posterior da panturrilha/tornozelo, associada a estalo audível de \"chicote\"</strong>. É comum o paciente virar-se para trás com raiva acreditando piamente que foi chutado ou que <strong>recebeu uma pedrada violenta de alguém por trás (o clássico \"Sinal da Pedrada\")</strong>.",
+            "A deambulação torna-se imediatamente claudicante, com incapacidade de ficar na ponta dos pés (perda do suporte mecânico do tríceps sural)."
+          ]
+        ],
+        [
+          "4",
+          "Propedêutica Armada e os Testes Semiológicos Mandatórios"
+        ],
+        [
+          "o",
+          [
+            "<strong>TESTE DE THOMPSON (O Teste Físico Patognomônico e Padrão-Ouro):</strong>\n    <ul>\n      <li>O paciente posiciona-se em <strong>decúbito ventral com os joelhos estendidos e os pés pendentes fora da maca de exame</strong> (ou de joelhos sobre uma cadeira com os pés livres);",
+            "O examinador comprime vigorosamente a massa muscular da panturrilha (ventre do tríceps sural) com a mão espalmada:\n        <ul>\n          <li><em>Resposta Normal (Tendão Íntegro):</em> A compressão muscular traciona passivamente o tendão de Aquiles, provocando uma <strong>flexão plantar automática imediata do pé (Teste de Thompson Negativo)</strong>;",
+            "<em>Resposta Patológica (Ruptura Completa de Aquiles):</em> Ocorre <strong>AUSÊNCIA COMPLETA DE FLEXÃO PLANTAR DO PÉ; O PÉ PERMANECE TOTALMENTE IMÓVEL À COMPRESSÃO DA PANTURRILHA (TESTE DE THOMPSON POSITIVO / PRESENTE)!</strong>",
+            "<strong>Sinal do Hiato Palpável (Sinal do Degrau / \"Gap Sign\"):</strong>\n    <ul>\n      <li>À palpação digital da borda posterior do tornozelo, 2 a 6 cm acima do calcâneo, palpa-se uma <strong>depressão em degrau / fossa vazia profunda</strong> onde deveria estar o tendão tenso, correspondente à descontinuidade mecânica das fibras rompidas (que pode ser preenchida por hematoma com o passar dos dias).",
+            "<strong>Sinal de Matles:</strong>\n    <ul>\n      <li>Paciente em decúbito ventral com joelhos fletidos a 90º. O pé do lado rompido perde o tônus equino fisiológico em repouso e <strong>cai em dorsiflexão neutra ou excessiva</strong> comparado ao lado normal sadio.",
+            "<strong>Cuidado com o Falso-Negativo da Flexão Plantar Ativa:</strong>\n    <ul>\n      <li><em>Pegadinha de Prova:</em> O paciente com ruptura completa de Aquiles <strong>PODE AINDA CONSEGUIR REALIZAR ALGUMA FLEXÃO PLANTAR LEVE ATIVA SEM CARGA QUANDO DEITADO NA MACA!</strong> Essa flexão compensatória fraca é executada pelos músculos flexores profundos secundários da perna (tibial posterior, flexor longo dos dedos e flexores plantares). Contudo, o paciente é <strong>TOTALMENTE INCAPAZ DE FICAR NA PONTA DO PÉ SUSTENTANDO O PRÓPRIO PESO CORPORAL (incapaz de fazer apoio monopodálico sobre a ponta do pé acometido)</strong>!",
+            "<strong>Exames de Imagem:</strong> O diagnóstico é essencialmente clínico com base no teste de Thompson positivo e no hiato palpável. A <strong>Ultrassonografia e a Ressonância Magnética</strong> são indicadas se houver dúvida clínica, para avaliar o grau de retração das cotas tendíneas e na suspeita de rotura parcial ou crônica negligenciada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-e-discussao-passo-a-passo",
+      0,
+      [
+        [
+          "2",
+          "5. Casos Clínicos Estruturados e Discussão Diagnóstica e Cirúrgica Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Fratura Fechada da Diáfise da Tíbia, Gesso Apertado e Fasciotomia de Urgência"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 24 anos, motoboy, sofreu acidente de motocicleta com colisão lateral contra anteparo rígido há 14 horas. Deu entrada em pronto-socorro ortopédico com diagnóstico de fratura diafisária fechada oblíqua curta da tíbia e fíbula direitas, classificada como AO/OTA 42-A2. Foi realizada redução incruenta provisória e aplicada uma <strong>imobilização gessada inguinopodálica circular rígida fechada</strong> para analgesia e estabilização provisória enquanto aguardava leito para fixação cirúrgica definitiva. Cerca de 8 horas após a confecção do gesso, o paciente passa a queixar-se de <strong>dor excruciante, progressiva e lancinante na perna direita</strong>. Recebeu Dipirona venosa 2 g, Cetoprofeno 100 mg e duas doses de Morfina 10 mg IV em intervalo de 2 horas, <strong>sem qualquer alívio da dor</strong>. O paciente queixa-se de sensação de \"aperto explosivo\" dentro do gesso e dormência entre o primeiro e o segundo dedo do pé."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Intercorrência na Enfermaria:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Inspeção e Atitude:</em> Paciente em decúbito dorsal, sudoreico, taquicárdico (FC 115 bpm), hipertenso reativo à dor intensa (PA 150/95 mmHg), extremamente agitado pelo sofrimento álgico. Os artelhos direitos encontram-se pálidos e edemaciados projetando-se fora do gesso.",
+            "<em>Conduta Propedêutica Imediata Obrigatória:</em> <strong>Retirada completa do gesso!</strong> O médico assistente utilizou serra vibratória, <strong>bivalvou completamente o aparelho gessado em ambos os lados e abriu integralmente toda a camada de algodão ortopédico até expor a pele nua</strong>.",
+            "<em>Exame Físico da Perna Após Abertura do Gesso:</em>\n    <ul>\n      <li>Perna direita com aumento volumétrico maciço, pele brilhante, com turgor tenso e lenhoso à palpação profunda (\"membro duro como pedra\"), especialmente nos compartimentos anterior e lateral.",
+            "<strong>O TESTE DO ESTIRAMENTO PASSIVO:</strong> Ao realizar a <strong>flexão plantar passiva suave do tornozelo e dos artelhos</strong>, o paciente gritou de dor, retirando o membro violentamente e referindo dor insuportável no compartimento anterior da perna!",
+            "<em>Sensibilidade:</em> Presença de hipoestesia e parestesia nítida no primeiro espaço interdigital dorsal do pé direito (território do nervo fibular profundo).",
+            "<em>Pulsos Periféricos:</em> <strong>Pulsos das artérias tibial posterior e pediosa dorsal PRESENTES E PALPÁVEIS</strong> (+/4+). Tempo de enchimento capilar nos artelhos de 3 segundos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Cirúrgica Imediata:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico de Certeza:</strong> <em>Síndrome Compartimental Aguda (SCA) da perna direita pós-fratura diafisária da tíbia</em> em paciente alerta, clinicamente incontestável (dor desproporcional refratária a opioides + dor ao estiramento passivo + parestesia no território do fibular profundo + compartimento tenso).",
+            "<strong>Por que os pulsos distais estavam presentes?</strong>\n    <ul>\n      <li>Porque a pressão intracompartimental (em torno de 40 a 50 mmHg) é suficiente para colabar capilares e vênulas e gerar necrose muscular isquêmica, mas não supera a pressão sistólica sistêmica de 150 mmHg da artéria tibial. <strong>A presença de pulsos normais NÃO AFASTA a síndrome compartimental!</strong>",
+            "<strong>Necessidade de Medir a Pressão com Agulha (PIC)?</strong>\n    <ul>\n      <li>NÃO é necessária neste paciente! Em paciente lúcido e comunicativo com quadro clínico florido e típico dos 6 Ps, a tentativa de medir a PIC apenas atrasa a descompressão cirúrgica de urgência. A aferição é reservada para comatosos ou casos duvidosos.",
+            "<strong>Condutas Imediatas até o Centro Cirúrgico:</strong>\n    <ul>\n      <li>Manter a perna rigorosamente <strong>AO NÍVEL DO CORAÇÃO</strong> (não elevar e não pendurar!);",
+            "Hidratação venosa vigorosa com cristaloide para prevenir nefropatia por mioglobina;",
+            "Encaminhamento com caráter de urgência máxima para o bloco cirúrgico (tempo porta-bisturi < 30 minutos).",
+            "<strong>Ato Cirúrgico — Fasciotomia Descompressiva Ampla de Duplo Acesso da Perna:</strong>\n    <ul>\n      <li>Realizou-se a técnica clássica de duas incisões de 22 cm:\n        <ol>\n          <li><em>Acesso Ântero-Lateral:</em> Aberta a fáscia aponeurótica do <strong>Compartimento Anterior</strong> e do <strong>Compartimento Lateral</strong>, identificando e preservando o nervo fibular superficial. Ao abrir a fáscia, o músculo tibial anterior herniou-se imediatamente para fora da ferida cirúrgica, edemaciado e pálido, recuperando a coloração rósea e sangramento em 10 minutos.",
+            "<em>Acesso Póstero-Medial:</em> Incisão medial ampla, rebatendo veia safena magna e nervo safeno; abertura do <strong>Compartimento Posterior Superficial</strong>; desinserção cuidadosa do músculo sóleo da borda tibial com descompressão profunda completa do <strong>Compartimento Posterior Profundo</strong> e inspeção do feixe tibial posterior."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li>Estabilização esquelética da fratura da tíbia com <strong>Fixador Externo Transfixante Tubular Provisório</strong> (evitando colocação de haste intramedular fresada no momento agudo sob edema tecidual!).</li>\n      <li><strong>As feridas foram deixadas TOTALMENTE ABERTAS</strong>, aplicando-se curativo a vácuo (pressão negativa a -125 mmHg).</li>\n    </ul>\n  </li>\n  <li><strong>Evolução:</strong> Alívio completo e instantâneo da dor logo após a recuperação anestésica. No \"second-look\" após 48 horas, todos os compartimentos apresentavam musculatura viável (cor, contratilidade e sangramento preservados). Realizou-se aproximação gradual de bordas e fechamento cutâneo secundário no 7º dia sem sequelas neurológicas.</li>\n</ol>\n\n<hr>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Entorse de Joelho no Futebol com Estalo, Hemartrose Rápida e Lachman Positivo"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 22 anos, estudante universitário e jogador amador de futebol de campo. Dá entrada no pronto-atendimento 3 horas após sofrer entorse no joelho direito durante uma partida. Relata que, ao tentar realizar uma mudança brusca de direção em corrida rápida (drible com o pé direito fixo e cravado no gramado com o corpo rodando sobre o membro), sentiu e ouviu um <strong>estalo seco de estalido audível (\"pop\") no interior do joelho direito</strong>, seguido de dor aguda intensa. Caiu no gramado e foi totalmente incapaz de apoiar o pé no chão ou continuar a partida. Refere que, em menos de 2 horas após o trauma, seu joelho \"inchou monstruosamente como uma bola de futebol\". Nega traumas prévios no mesmo joelho."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Dirigido no Pronto-Socorro:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Inspeção e Derrame:</em> Joelho direito com volumoso aumento de volume articular difuso. Apresenta o <strong>Sinal da Tecla de Piano Positivo (Sinal do Rechaço Patelar exuberante)</strong>, compatível com grande derrame intra-articular sob tensão.",
+            "<em>Artrocentese Descompressiva Diagnóstica:</em> Realizada punção estéril superolateral da patela, aspirando-se <strong>65 mL de sangue vivo puro sem coágulos, com presença de gotículas de gordura sobrenadantes (Hemartrose aguda verdadeira com lipo-hemartrose)</strong>. O procedimento proporcionou alívio álgico imediato da tensão capsular.",
+            "<em>Testes de Instabilidade Ligamentar:</em>\n    <ul>\n      <li><strong>TESTE DE LACHMAN: FORTEMENTE POSITIVO!</strong> Com o joelho a 20º-30º de flexão, ao estabilizar o fêmur e tracionar a tíbia anteriormente, observa-se <strong>translação anterior patológica da tíbia de mais de 8 mm em comparação com o joelho contralateral sadio, associada a uma sensação terminal de \"parada elástica e mole\" (ausência do ponto final firme ligamentar)</strong>.",
+            "<em>Teste da Gaveta Anterior:</em> Positivo com joelho a 90º de flexão.",
+            "<em>Testes de Estresse em Valgo e Varo a 0º e 30º:</em> Firmes, sem abertura anormal das interlinhas (LCM e LCL íntegros)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Investigação Complementar e Conduta:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Radiografias Simples do Joelho (AP e Perfil sob carga e túnel):</strong>\n    <ul>\n      <li>Não revelam fraturas de platô tibial ou eminência intercondilar. Identifica-se pequena avulsão óssea cortical milimétrica na margem anterolateral do platô tibial correspondente à <strong>Fratura de Segond</strong> (fratura patognomônica de rotura do ligamento anterolateral e do LCA!).",
+            "<strong>Ressonância Magnética do Joelho Direito:</strong>\n    <ul>\n      <li>Confirma <strong>Ruptura Completa Transmural do Ligamento Cruzado Anterior (LCA)</strong> em seu terço médio com descontinuidade de fibras e edema circunjacente;",
+            "Presença de contusão óssea clássica (\"bone bruise\") em \"beijo\" na porção posterior do platô tibial lateral e no côndilo femoral lateral;",
+            "Identifica ainda <em>lesão longitudinal periférica vertical do corno posterior do menisco medial na zona vermelha-vermelha vascularizada</em>.",
+            "<strong>Plano Terapêutico Estruturado:</strong>\n    <ul>\n      <li><em>Fase Aguda Pré-Operatória (Protocolo POLICE):</em> Proteção com imobilizador de joelho articulado, carga protegida com muletas canadenses, crioterapia local, elevação e fisioterapia precoce visando recuperação da amplitude articular de extensão completa e redução do derrame inflamatório (operar joelho inflamado com hemartrose aguda aumenta risco de artrofibrose pós-operatória!);",
+            "<em>Tratamento Cirúrgico Definitivo:</em> Como o paciente é jovem, ativo e praticante de esportes de pivô (futebol), há indicação formal de <strong>Reconstrução Artroscópica do LCA com enxerto autólogo (tendões dos flexores semitendíneo e grácil ou tendão patelar com blocos ósseos) associada à Sutura Meniscal Artroscópica (Meniscorrafia) do menisco medial</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Ruptura Aguda do Tendão de Aquiles Durante Partida de Tênis e Teste de Thompson"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 42 anos, analista de sistemas, \"atleta de final de semana\". Praticava partida de tênis em quadra de saibro quando, ao dar uma arrancada súbita para frente para alcançar uma bola curta na rede, sentiu um <strong>estalo sonoro e uma dor violenta e lancinante na face posterior do tornozelo esquerdo</strong>. O paciente relata textualmente: <em>\"Doutor, foi como se eu tivesse levado uma pedrada violenta ou um chute com chuteira de ferro por trás no meu calcanhar!\"</em>. Chegou a olhar para trás com raiva para ver quem o havia agredido, percebendo que estava sozinho no fundo da quadra. Foi incapaz de continuar no jogo, claudicando intensamente. Refere que há cerca de 10 dias vinha tomando Ciprofloxacino oral prescrito para um quadro de sinusite aguda."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Dirigido no Consultório:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Inspeção e Palpação da Borda Posterior do Tornozelo:</em>\n    <ul>\n      <li>Edema e equimose perimaleolar moderada. Ao palpar o trajeto do tendão calcâneo cerca de <strong>4 cm proximalmente à sua inserção na tuberosidade posterior do calcâneo</strong>, identifica-se nitidamente uma <strong>depressão em degrau / descontinuidade mecânica palpável profunda com uma fossa vazia (Sinal do Degrau / Gap Sign Positivo)</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O TESTE DE THOMPSON (A Manobra Patognomônica):</strong>"
+        ],
+        [
+          "u",
+          [
+            "O paciente foi colocado em <strong>decúbito ventral na maca de exame com os joelhos estendidos e ambos os pés projetando-se livremente para fora da borda inferior da maca</strong>;",
+            "No tornozelo direito sadio: ao comprimir manualmente a panturrilha com a mão espalmada, observou-se uma flexão plantar nítida e automática do pé direito (resposta fisiológica normal);",
+            "No tornozelo esquerdo lesionado: ao comprimir vigorosamente o ventre muscular do tríceps sural esquerdo, <strong>HOUVE AUSÊNCIA TOTAL DE FLEXÃO PLANTAR DO PÉ ESQUERDO; O PÉ PERMANECEU RIGIDAMENTE INERTE E PARALISADO (TESTE DE THOMPSON POSITIVO / PATOLÓGICO!)</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><em>Teste de Matles:</em> Ao fletir passivamente ambos os joelhos a 90º na posição de decúbito ventral, o pé esquerdo perdeu o equino fisiológico em repouso e caiu espontaneamente em posição neutra / dorsiflexão excessiva.</li>\n  <li><em>Avaliação Funcional com Carga:</em> O paciente é <strong>totalmente incapaz de realizar apoio monopodálico sobre a ponta do pé esquerdo</strong> (não consegue elevar o calcanhar do chão sustentando o próprio peso corporal).</li>\n</ul>"
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico e Conduta Cirúrgica:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico de Certeza:</strong> <em>Ruptura Traumática Aguda Completa do Tendão de Aquiles Esquerdo em zona de hipovascularização</em> (com fator facilitador pelo uso recente de Quinolona). O teste de Thompson positivo associado ao hiato palpável é diagnóstico e suficiente, dispensando outros exames.",
+            "<strong>Conduta e Escolha Terapêutica:</strong>\n    <ul>\n      <li>Discutiram-se as opções de tratamento conservador funcional (com imobilização em equino progressivo) versus cirúrgico. Como se trata de um paciente jovem (42 anos), ativo, praticante regular de esportes e sem comorbidades clínicas graves ou vasculopatia, a <strong>Opção Cirúrgica de Tenorrafia Aberta ou Percutada</strong> foi a conduta de escolha para proporcionar menor taxa de re-ruptura (2% no cirúrgico contra 10% a 15% no conservador) e recuperação precoce da força explosiva de impulsão.",
+            "Procedimento Realizado: <strong>Tenorrafia primária término-terminal do tendão calcâneo utilizando sutura de alta resistência tipo Kessler modificada ou Bunnell</strong> com fio inabsorvível de poliéster trançado, com aproximação perfeita das cotas tendíneas sob tensão fisiológica.",
+            "<em>Reabilitação Pós-Operatória Moderna:</em> Imobilização com bota ortopédica rígida removível inicialmente em equino de 20º, com início de carga parcial progressiva precoce e redução gradual do ângulo a cada 2 semanas até atingir 90º neutro, associada a fisioterapia motora supervisionada."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Ombro Doloroso, Teste de Jobe Positivo e Rotura Transmural do Supraespinal"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente feminino, 58 anos, costureira autônoma e dona de casa. Procura a consulta ambulatorial com história de dor crônica no ombro direito há 8 meses, com piora progressiva e incapacitante nas últimas 6 semanas. Relata que a dor localiza-se na face ântero-lateral do ombro com irradiação até a inserção distal do deltoide no braço, com <strong>piora severa durante a noite (despertando-a do sono quando deita sobre o ombro direito afetado)</strong>. Refere grande dificuldade e fraqueza para realizar tarefas domésticas simples que exijam elevação do braço acima da cabeça (como pendurar roupas no varal, pentear o cabelo ou alcançar objetos em prateleiras altas). Nega trauma agudo de alta energia, referindo apenas que os sintomas começaram de forma insidiosa."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Ortopédico do Ombro Direito:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Inspeção:</em> Sem atrofia muscular grosseira evidente da fossa supra ou infraespinal. Amplitude de movimento passivo da articulação glenoumeral preservada em todos os planos (afastando o diagnóstico diferencial de capsulite adesiva / \"ombro congelado\").",
+            "<em>Testes de Impacto Subacromial:</em>\n    <ul>\n      <li><strong>Manobra de Neer Positiva:</strong> Elevação passiva forçada e rápida do braço em rotação interna estabilizando a escápula desencadeia dor aguda na face anterior do ombro;",
+            "<strong>Manobra de Hawkins-Kennedy Positiva:</strong> Rotação interna passiva forçada com cotovelo e ombro a 90º reproduz dor subacromial evidente."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><em>Testes de Força Específicos do Manguito Rotador:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>TESTE DE JOBE (EMPTY CAN TEST) FORTEMENTE POSITIVO:</strong> Com ambos os braços abduzidos a 90º no plano da escápula (30º anterior) e rotação interna com polegares voltados para o chão, o examinador aplica força descendente contra resistência da paciente. A paciente refere <strong>dor lancinante no ombro direito e exibe fraqueza motora importante (queda do membro), sendo incapaz de manter o braço contra a gravidade e resistência</strong> (indicativo de lesão importante do músculo supraespinal).",
+            "<em>Teste de Patte:</em> Força de rotação externa contra resistência normal (músculos infraespinal e redondo menor íntegros).",
+            "<em>Teste de Gerber (Lift-off test):</em> Consegue afastar o dorso da mão da coluna lombar normalmente contra resistência (músculo subescapular íntegro)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Investigação por Imagem e Plano Terapêutico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ressonância Magnética (RM) do Ombro Direito:</strong>\n    <ul>\n      <li>Revela <strong>Ruptura Completa Transmural (de Espessura Total) do Tendão do Músculo Supraespinal</strong> junto à sua inserção na faceta superior do tubérculo maior do úmero, com retração medial do coto tendíneo de cerca de 1,5 cm (estádio 1 de Patte);",
+            "Bursite subacromial-subdeltoidea inflamatória volumosa;",
+            "Gordura muscular dos ventres do supraespinal e infraespinal preservada (grau 0 de Goutallier — ausência de degeneração gordurosa irreversível);",
+            "Tendões do subescapular, infraespinal e cabo longo do bíceps íntegros.",
+            "<strong>Indicação e Abordagem Cirúrgica:</strong>\n    <ul>\n      <li>A paciente apresenta rotura transmural completa do supraespinal sintomática, com fraqueza motora funcional e falha de tratamento clínico prévio conservador com fisioterapia e AINEs por mais de 3 meses. A ausência de degeneração gordurosa avançada confere excelente prognóstico de cicatrização biológica.",
+            "Procedimento Indicado: <strong>Artroscopia do Ombro Direito com Acromioplastia Anterior (ressecção de osteófito subacromial) associada ao Reparo Artroscópico do Tendão Supraespinal com Âncoras de Sutura Bioabsorvíveis</strong> (reparo anatômico em dupla fileira ou fileira simples transóssea).",
+            "Pós-operatório com tipoia funcional com coxim de abdução por 4 a 6 semanas, seguida de protocolo fisioterápico estruturado em três fases (ganho de amplitude passiva, fortalecimento isométrico e reabilitação funcional ativa). A paciente obteve recuperação completa da força e remissão total da dor noturna em 4 meses de seguimento."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-de-concursos-e-residencia-medica",
+      0,
+      [
+        [
+          "2",
+          "7. Questões Comentadas de Concursos e Residência Médica (Revalida, ENAMED e Institucionais)"
+        ],
+        [
+          "3",
+          "Questão 1 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Um jovem de 21 anos é admitido no pronto-socorro ortopédico após sofrer queda de motocicleta há 6 horas, com fratura fechada do terço médio da diáfise da tíbia direita. O membro foi provisoriamente imobilizado com uma calha gessada suropodálica. O paciente evolui na enfermaria com queixa de dor intensa em queimação e aperto na perna, de caráter progressivo, refratária a duas doses de morfina venosa administradas na última hora. Ao exame físico imediato, após a retirada de toda a imobilização gessada e faixas: a perna direita encontra-se edemaciada e com musculatura intensamente tensa à palpação profunda; a flexão plantar passiva do tornozelo e dos artelhos desencadeia dor lancinante e insuportável no compartimento anterior da perna; detecta-se perda da sensibilidade no primeiro espaço interdigital dorsal do pé direito; os pulsos arteriais tibial posterior e pedioso dorsal encontram-se cheios e palpáveis bilateralmente. Diante deste quadro clínico, qual é o diagnóstico e a conduta imediata MAIS ADEQUADA?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Trombose Venosa Profunda aguda; solicitar Ultrassonografia Doppler venosa de urgência e iniciar anticoagulação plena com enoxaparina.<br>\n<strong>B)</strong> Lesão neurológica do nervo ciático por compressão óssea; indicar eletroneuromiografia imediata e manter o membro elevado acima do tórax.<br>\n<strong>C)</strong> Síndrome Compartimental Aguda da perna; indicar Fasciotomia Descompressiva de urgência com abertura ampla dos quatro compartimentos da perna.<br>\n<strong>D)</strong> Síndrome da Dor Complexa Regional tipo 1; realizar bloqueio simpático venoso com lidocaína e aplicar compressas mornas.<br>\n<strong>E)</strong> Quadro álgico habitual de fratura óssea; dobrar a dose de opioides venosos e manter a calha gessada apertada por 48 horas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O caso apresenta a descrição clássica e inconfundível da <strong>Síndrome Compartimental Aguda (SCA) da perna</strong>: paciente com fratura diafisária de tíbia (a causa mais frequente de SCA), apresentando <strong>dor desproporcional refratária a opioides potentes</strong>, <strong>dor excruciante ao estiramento passivo das fibras musculares do compartimento (flexão plantar passiva estirando o compartimento anterior)</strong>, compartimento tenso e lenhoso, e <strong>parestesia/hipoestesia no território do nervo fibular profundo (primeiro espaço interdigital dorsal do pé)</strong>. <em>Ponto crítico de prova:</em> A presença de pulsos arteriais periféricos cheios e palpáveis <strong>NÃO EXCLUI o diagnóstico de SCA</strong>, pois a pressão necessária para colapsar capilares e gerar necrose muscular (30 a 45 mmHg) é muito inferior à pressão sistólica das grandes artérias (120 mmHg). O tratamento de urgência é a <strong>Fasciotomia Descompressiva de todos os quatro compartimentos da perna</strong> pela técnica de duplo acesso. A alternativa A erra no diagnóstico e conduta (anticoagular um compartimento hipertenso causaria hematoma massivo letal!). A alternativa B erra ao mandar elevar o membro (elevar o membro diminui a perfusão capilar arterial e agrava a necrose!). As alternativas D e E representam imperícia médica."
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Residência Médica)"
+        ],
+        [
+          "p",
+          "Paciente de 28 anos, vítima de atropelamento com politraumatismo e traumatismo cranioencefálico moderado (Escala de Coma de Glasgow de 10), encontra-se em sala de emergência sob sedação superficial para realização de tomografias. Apresenta fratura fechada cominutiva de tíbia e fíbula esquerdas. Devido ao rebaixamento do nível de consciência, o paciente não verbaliza queixas álgicas. O médico assistente nota grande aumento de volume na perna esquerda, que se encontra endurecida e tensa à palpação. A pressão arterial do paciente é de 100/60 mmHg (Pressão Arterial Diastólica = 60 mmHg). Realiza-se a mensuração instrumental direta da pressão intracompartimental (PIC) com monitor eletrônico de agulha calibrado no compartimento anterior da perna esquerda, que registra o valor de <strong>38 mmHg</strong>. Aplicando o critério internacional do gradiente de perfusão tecidual (Delta P), qual é o valor calculado e a conduta formal indicada?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Delta P = 22 mmHg; Indicação formal e imediata de Fasciotomia Descompressiva de urgência.<br>\n<strong>B)</strong> Delta P = 62 mmHg; Conduta conservadora expectante com elevação do membro acima do coração.<br>\n<strong>C)</strong> Delta P = 38 mmHg; Aguardar a normalização neurológica do paciente para avaliar a dor antes de operar.<br>\n<strong>D)</strong> Delta P = 12 mmHg; Indicação de arteriografia diagnóstica percutânea eletiva.<br>\n<strong>E)</strong> Delta P = 76 mmHg; Aplicação de bota gessada fechada circular sob tração cutânea."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: A.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O padrão-ouro contemporâneo preconizado pelas diretrizes da <em>Orthopaedic Trauma Association</em> (OTA) e ATLS para indicação cirúrgica na Síndrome Compartimental Aguda baseia-se no cálculo do <strong>Delta P (Pressão de Perfusão Tissular)</strong>:\n<em>Delta P = Pressão Arterial Diastólica (PAD) - Pressão Intracompartimental Medida (PIC)</em>.\nNo caso em tela:\n- PAD = 60 mmHg;\n- PIC = 38 mmHg;\n- <strong>&Delta;P = 60 - 38 = 22 mmHg</strong>.\nPela regra internacional, <strong>um Delta P &le; 30 mmHg constitui critério mandatório e absoluto para a realização imediata de FASCIOTOMIA DESCOMPRESSIVA CIRÚRGICA DE URGÊNCIA</strong>, pois demonstra que o gradiente microvascular capilar colapsou e os tecidos encontram-se em isquemia tecidual crítica. Além disso, a PIC absoluta de 38 mmHg já superaria o limite empírico clássico de 30 mmHg. As demais alternativas trazem cálculos matemáticos errôneos ou condutas conservadoras inaceitáveis diante de sofrimento isquêmico agudo."
+        ],
+        [
+          "3",
+          "Questão 3 (Residência Médica / USP-SP)"
+        ],
+        [
+          "p",
+          "Durante a realização de uma fasciotomia descompressiva de duplo acesso na perna para tratamento de síndrome compartimental aguda pós-traumática, o cirurgião geral e o residente realizam o acesso póstero-medial (incisão longitudinal 2 cm posterior à borda tibial medial). Após abrir a fáscia do compartimento posterior superficial e expor o tríceps sural, o cirurgião orienta o residente sobre a necessidade imperativa de descomprimir também o <strong>Compartimento Posterior Profundo</strong>. Qual é a manobra cirúrgica anatômica indispensável que deve ser realizada para acessar adequadamente e descomprimir o compartimento posterior profundo da perna?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Realizar a osteotomia transversa proximal da fíbula com serra oscilante.<br>\n<strong>B)</strong> Desinserir a ponte fibrosa da cabeça medial do músculo sóleo da borda posterior da tíbia e rebater o ventre muscular póstero-lateralmente para expor a fáscia profunda sobre o músculo tibial posterior.<br>\n<strong>C)</strong> Ligar e seccionar a veia safena magna e o nervo safeno na fossa poplítea.<br>\n<strong>D)</strong> Seccionar transversalmente o tendão do músculo tibial anterior na altura do tornozelo.<br>\n<strong>E)</strong> Ressecar em monobloco o músculo gastrocnêmio lateral."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> A anatomia cirúrgica da perna no acesso póstero-medial exige extrema atenção: o <strong>Compartimento Posterior Profundo</strong> situa-se em um plano anatômico profundo, recoberto pela densa fáscia transversa profunda e pela volumosa massa da cabeça medial do músculo sóleo originada na linha solear da tíbia. Para alcançá-lo com segurança e descomprimir o músculo tibial posterior, os flexores dos dedos/hálux e o feixe neurovascular tibial posterior, o cirurgião <strong>DEVE OBRIGATORIAMENTE DESINSERIR O MÚSCULO SÓLEO DE SUA INSERÇÃO NA BORDA MEDIAL DA TÍBIA</strong>, rebatendo o músculo para trás. Somente assim a fáscia profunda é visualizada e incisada em toda a sua extensão. A omissão dessa etapa é o erro técnico mais comum de cirurgiões inexperientes, resultando em descompressão incompleta, necrose silenciosa do compartimento profundo e garra permanente dos pododáctilos com perda de sensibilidade plantar (lesão do nervo tibial). As demais opções trazem manobras incorretas ou mutilantes desnecessárias."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica / ENARE)"
+        ],
+        [
+          "p",
+          "Um homem de 38 anos, professor de educação física e praticante amador de futebol, dá entrada no pronto-atendimento relatando que, durante o jogo há 2 horas, sentiu uma dor súbita e excruciante na parte de trás do tornozelo esquerdo, acompanhada de um estalo nítido como um \"estalo de chicote\". O paciente refere que achou que alguém havia atirado uma pedra contra o seu calcanhar (sensação da \"pedrada\"), mas percebeu que não havia ninguém próximo a ele. Desde então, apresenta claudicação intensa. Ao exame físico ortopédico com o paciente posicionado em decúbito ventral com os pés pendentes fora da maca, o médico comprime a massa muscular da panturrilha esquerda e <strong>observa ausência completa de flexão plantar do pé esquerdo (o pé permanece imóvel)</strong>. À palpação posterior cerca de 4 cm acima do calcâneo, palpa-se uma depressão em degrau (hiato palpável). Qual é a denominação clínica deste teste semiológico e a estrutura anatômica acometida?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Teste de Lachman; Ruptura do Ligamento Cruzado Anterior.<br>\n<strong>B)</strong> Teste de Thompson; Ruptura Completa do Tendão de Aquiles (Tendão Calcâneo).<br>\n<strong>C)</strong> Teste de McMurray; Ruptura do Menisco Medial em alça de balde.<br>\n<strong>D)</strong> Teste de Jobe; Ruptura do Tendão do Músculo Supraespinal.<br>\n<strong>E)</strong> Teste de Finkelstein; Tenossinovite de De Quervain."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O quadro clínico é patognomônico de <strong>Ruptura Aguda do Tendão de Aquiles (Tendão Calcâneo)</strong>, com a clássica sensação da \"pedrada\" descrita pelo paciente. A manobra realizada na maca de exame em decúbito ventral consiste na compressão manual do ventre muscular do tríceps sural: a ausência de flexão plantar passiva do pé caracteriza o <strong>TESTE DE THOMPSON POSITIVO (ou presente)</strong>, que é o sinal semiológico padrão-ouro patognomônico de descontinuidade mecânica total das fibras do tendão de Aquiles. O hiato palpável (sinal do degrau / gap sign) 2 a 6 cm acima do calcâneo confirma a rotura na zona crítica de hipovascularização. O teste de Lachman (A) avalia o LCA do joelho; McMurray (C) avalia meniscos; Jobe (D) avalia o supraespinal no ombro; e Finkelstein (E) avalia o abdutor longo e extensor curto do polegar no punho."
+        ],
+        [
+          "3",
+          "Questão 5 (Residência Médica / SUS-SP)"
+        ],
+        [
+          "p",
+          "Mulher de 54 anos, trabalhadora de limpeza que realiza movimentos repetitivos com os braços elevados acima da cabeça, consulta por dor crônica insidiosa no ombro direito há 5 meses. A dor é localizada na face anterolateral do ombro e piora acentuadamente durante a noite ao deitar sobre o lado afetado. Ao exame físico: amplitude passiva de movimentos do ombro completamente normal (sem bloqueio capsular). Ao exame de força muscular específica: o <strong>Teste de Jobe (Empty Can Test)</strong> revela dor intensa e fraqueza com incapacidade de manter o braço abduzido a 90º no plano da escápula contra a resistência para baixo do examinador. O teste de rotação externa contra resistência (Teste de Patte) e o teste de Gerber (Lift-off test) são rigorosamente normais. O teste de Jobe positivo isolado indica lesão primária em qual músculo do manguito rotador?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Músculo Subescapular.<br>\n<strong>B)</strong> Músculo Supraespinal (Supraespinhal).<br>\n<strong>C)</strong> Músculo Redondo Menor.<br>\n<strong>D)</strong> Músculo Peitoral Maior.<br>\n<strong>E)</strong> Músculo Grande Dorsal."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O <strong>Teste de Jobe (Empty Can Test / Teste da Lata Vazia)</strong> é a manobra propedêutica de escolha para avaliação isolada da integridade biomecânica e contratilidade do <strong>MÚSCULO SUPRAESPINAL (SUPRAESPINHAL)</strong>, que é o tendão mais frequentemente lesionado de todo o manguito rotador (> 85% dos casos). Ele posiciona o ombro em abdução a 90º no plano da escápula (30º anterior ao plano coronal) com rotação interna máxima (polegares apontados para o solo), isolando a ação abdutora inicial do supraespinal. Dor associada a perda de força ou queda do braço confirmam tendinopatia ou rotura do supraespinal. O músculo subescapular (A) é testado pelo Teste de Gerber (Lift-off) ou Belly-press; o redondo menor e infraespinal (C) são testados por rotação externa (Teste de Patte e Hornblower)."
+        ],
+        [
+          "3",
+          "Questão 6 (Residência Médica / AMRIGS)"
+        ],
+        [
+          "p",
+          "Atleta de basquetebol de 20 anos sofre entorse do joelho esquerdo em desaceleração súbita com rotação externa e estresse em valgo ao aterrissar de um salto em uma partida. Refere estalo audível no interior do joelho e evolui nas primeiras 3 horas pós-trauma com hemartrose volumosa e incapacidade funcional para apoiar o membro. Ao exame físico inicial, qual é o teste clínico considerado MAIS SENSÍVEL E ESPECÍFICO (> 95%) para a detecção de ruptura aguda do Ligamento Cruzado Anterior (LCA)?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Teste da Gaveta Posterior a 90º.<br>\n<strong>B)</strong> Teste de Lachman a 20º-30º de flexão do joelho.<br>\n<strong>C)</strong> Teste de Apley em compressão a 90º de flexão.<br>\n<strong>D)</strong> Teste de Thomas para flexão do quadril.<br>\n<strong>E)</strong> Manobra de Ober para contratura da fáscia lata."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O <strong>TESTE DE LACHMAN</strong>, realizado com o joelho em leve flexão de <strong>20º a 30º</strong>, é consagrado na literatura ortopédica mundial e em diretrizes internacionais como o <strong>teste semiológico isolado mais sensível (sensibilidade superior a 95%) e mais específico para o diagnóstico de ruptura do Ligamento Cruzado Anterior (LCA)</strong>. Nesta angulação de 20-30º, a contenção secundária dos meniscos e da cápsula articular posterior é relaxada, permitindo a translação anterior pura da tíbia em relação ao fêmur, com percepção nítida da ausência do ponto final firme ligamentar (\"end-point mole\"). O teste da gaveta anterior a 90º apresenta menor sensibilidade na fase aguda (frequentemente falso-negativo por bloqueio muscular defensivo dos isquiotibiais e interposição do corno posterior do menisco). O teste da gaveta posterior (A) avalia o LCP; Apley (C) avalia meniscos; Thomas e Ober (D e E) avaliam quadril."
+        ],
+        [
+          "3",
+          "Questão 7 (Residência Médica / CERMAM)"
+        ],
+        [
+          "p",
+          "Sobre as condutas imediatas na suspeita clínica de Síndrome Compartimental Aguda (SCA) antes da abordagem cirúrgica definitiva, assinale a medida que está FORMALMENTE CONTRAINDICADA por agravar a isquemia tecidual e acelerar a necrose muscular:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Bivalvação completa do gesso circular rígido e abertura de todo o curativo de algodão até a pele nua.<br>\n<strong>B)</strong> Otimização da pressão arterial com reposição volêmica com cristaloides em pacientes hipotensos.<br>\n<strong>C)</strong> Elevação da perna acometida em suporte suspenso bem acima do nível do coração.<br>\n<strong>D)</strong> Posicionamento da extremidade afetada rigorosamente ao nível do coração.<br>\n<strong>E)</strong> Suspensão de faixas elásticas compressivas ao redor do membro."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> A <strong>ELEVAÇÃO DO MEMBRO ACIMA DO NÍVEL DO CORAÇÃO ESTÁ FORMALMENTE PROIBIDA E CONTRAINDICADA NA SÍNDROME COMPARTIMENTAL AGUDA!</strong> <em>Fundamentação Fisiopatológica:</em> Ao elevar a perna acima do coração, a coluna hidrostática gravitacional diminui a pressão arterial sistólica e diastólica local que chega aos vasos do membro. Como a perfusão capilar tissular depende da diferença entre a pressão arterial e a pressão intracompartimental (Pressão de Perfusão = PAD - PIC), a elevação reduz ainda mais o fluxo sanguíneo arterial de entrada em um compartimento que já se encontra sob hipertensão crítica, precipitando anóxia e acelerando a necrose muscular transmural! A posição correta mandatória é manter o membro <strong>RIGOROSAMENTE AO NÍVEL DO CORAÇÃO</strong>. As medidas A, B, D e E são corretas e recomendadas."
+        ],
+        [
+          "3",
+          "Questão 8 (Residência Médica / UNIFESP)"
+        ],
+        [
+          "p",
+          "Um homem de 32 anos é atendido em pronto-socorro ortopédico com dor mecânica no joelho esquerdo iniciada após trauma rotacional durante jogo de futebol há 3 semanas. Relata episódios recorrentes de <strong>\"travamento\" mecânico articular verdadeiro (o joelho bloqueia em flexão de cerca de 30º e não permite a extensão completa sem manipulação)</strong>, associado a inchaço articular leve recidivante. Ao exame físico: dor palpável bem localizada na interlinha articular medial do joelho esquerdo. Ao realizar flexão máxima do joelho seguida de extensão passiva gradual associada a rotação externa da tíbia, o examinador ausculta e palpa um estalido doloroso nítido na interlinha medial. Qual é o diagnóstico provável e a denominação deste teste propedêutico?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Ruptura do tendão quadricipital; Teste de Lachman.<br>\n<strong>B)</strong> Lesão do menisco medial (lesão em alça de balde); Teste de McMurray.<br>\n<strong>C)</strong> Ruptura do ligamento colateral lateral; Teste de Estresse em Valgo.<br>\n<strong>D)</strong> Fratura osteocondral da patela; Sinal de Tinel.<br>\n<strong>E)</strong> Cisto de Baker roto; Teste de Thompson."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> A história de trauma rotacional, dor na interlinha articular, derrame articular recidivante e, acima de tudo, episódios de <strong>bloqueio mecânico verdadeiro do joelho</strong> (incapacidade de extensão completa por interposição do fragmento meniscal deslocado na fossa intercondilar) são a apresentação clássica da <strong>Lesão Meniscal Medial do tipo \"Alça de Balde\"</strong>. A manobra realizada consiste no <strong>TESTE DE MCMURRAY</strong>: flexão máxima do joelho seguida de extensão progressiva sob <strong>rotação externa da tíbia para estressar o menisco medial</strong> (a rotação interna estressa o menisco lateral). A presença de estalido e dor palpável na interlinha confirma a lesão meniscal. As demais opções citam patologias e testes anatômicos não correspondentes."
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-e-pontos-chave-de-memorizacao",
+      0,
+      [
+        [
+          "2",
+          "8. Tabela High-Yield Resumo e Pontos-Chave de Memorização para a Prova"
+        ],
+        [
+          "3",
+          "Tabela Comparativa Sinóptica: Lesões Ortopédicas de Alta Frequência em Provas"
+        ],
+        [
+          "t",
+          [
+            "Entidade Ortopédica",
+            "Mecanismo Fisiopatológico",
+            "Quadro Clínico Cardeal",
+            "Teste Propedêutico Padrão-Ouro",
+            "Conduta Terapêutica Primária Obrigatória",
+            "Pegadinha Clássica de Prova"
+          ],
+          [
+            [
+              "<strong>Síndrome Compartimental Aguda (SCA)</strong>",
+              "Elevação da PIC em compartimento osteofascial inelástico -> colapso microvascular capilar -> isquemia celular e necrose neuromuscular irreversível em 6-8 horas. Causa: Fratura de tíbia (75%), antebraço, esmagamento, gesso apertado.",
+              "<strong>Dor desproporcional refratária a opioides</strong>, piora lancinante ao estiramento passivo, parestesia no território neural, compartimento duro/lenhoso. Paralisia e pulso ausente são tardios!",
+              "<strong>Clínico (Dor ao estiramento passivo)</strong>.<br>Instrumental: <strong>Delta P &le; 30 mmHg</strong> (PAD - PIC &le; 30).",
+              "<strong>Fasciotomia Descompressiva Imediata</strong> (Duplo acesso na perna: 4 compartimentos; feridas abertas com curativo a vácuo). Retirar gessos/curativos imediatamente!",
+              "<strong>PULSOS PERIFÉRICOS PRESENTES NÃO AFASTAM SCA!</strong> A PIC de necrose (35 mmHg) é muito menor que a pressão sistólica sistêmica (120 mmHg). <strong>NUNCA elevar o membro acima do coração</strong> (piora a isquemia!)."
+            ],
+            [
+              "<strong>Ruptura do Tendão de Aquiles (Calcâneo)</strong>",
+              "Sobrecarga súbita de tração no tríceps sural em aceleração/arrancada em homens de 30-50 anos (\"atletas de final de semana\"). Zona hipovascular 2-6 cm acima do calcâneo. Fator de risco: <strong>Fluorquinolonas (Cipro) e corticoide</strong>.",
+              "<strong>Sensação súbita de \"pedrada\" / chute por trás no calcanhar</strong>, estalo sonoro (\"chicote\"), claudicação imediata e incapacidade de apoio monopodálico na ponta do pé.",
+              "<strong>TESTE DE THOMPSON</strong> (Ausência de flexão plantar do pé ao comprimir a panturrilha em decúbito ventral).<br>Sinal do hiato/degrau palpável.",
+              "Tenorrafia cirúrgica primária (aberta ou percutânea) em jovens e ativos (menor re-ruptura); ou tratamento conservador funcional com imobilização em equino decrescente em idosos/comorbidades.",
+              "O paciente pode conseguir realizar flexão plantar fraca na maca sem carga com os flexores profundos secundários! O que ele <strong>NÃO CONSEGUE é ficar na ponta do pé sustentando o próprio peso</strong>!"
+            ],
+            [
+              "<strong>Ruptura do Ligamento Cruzado Anterior (LCA)</strong>",
+              "Entorse torsional em desaceleração sem contato com estresse em valgo e rotação externa com pé fixo no solo (futebol, basquete).",
+              "Estalo audível seco (\"pop\"), falseio articular (\"joelho solto\") e <strong>Hemartrose Volumosa de rápida instalação (< 2-4 horas)</strong>.",
+              "<strong>TESTE DE LACHMAN</strong> (a 20º-30º de flexão da tíbia — sensibilidade > 95%). Gaveta anterior e Pivot-Shift. Rx: <em>Fratura de Segond</em> patognomônica.",
+              "Reconstrução artroscópica do LCA com enxerto autólogo (semitendíneo/grácil ou patelar) associada à sutura meniscal se lesão concomitante.",
+              "O teste de Lachman a 20-30º é muito mais sensível que a Gaveta Anterior a 90º na fase aguda, pois elimina o bloqueio meniscal e dos isquiotibiais."
+            ],
+            [
+              "<strong>Lesão do Menisco Medial</strong>",
+              "Mecanismo rotacional com joelho fletido e carga (jovens) ou agachamento repetitivo degenerativo (idosos). Menisco medial é 3x mais acometido que o lateral.",
+              "Dor na interlinha articular medial, derrames recidivantes tardios (> 24h) e <strong>Bloqueio Articular Mecânico Verdadeiro</strong> (em lesões em alça de balde).",
+              "<strong>TESTE DE MCMURRAY</strong> (estalido e dor à extensão com rotação externa da tíbia) e Teste de Apley em compressão.",
+              "Artroscopia: <strong>Meniscorrafia (sutura meniscal)</strong> se lesão em zona vascularizada periférica vermelha-vermelha; ou Meniscectomia parcial econômica se zona branca avascular.",
+              "Diferença de derrames do joelho: Derrame de LCA é <strong>hemartrose rápida em 2-4h</strong> (sangue vivo). Derrame de menisco é <strong>hidrartrose lenta e recidivante após 24h</strong> (líquido sinovial citrino)."
+            ],
+            [
+              "<strong>Lesão do Manguito Rotador (Supraespinal)</strong>",
+              "Tendinopatia degenerativa e impacto crônico sob o arco coracoacromial (zona de hipovascularização de Codman) em > 50 anos ou trauma em atletas de arremesso.",
+              "Dor na face anterolateral do ombro com irradiação até o deltoide, <strong>dor noturna severa ao deitar sobre o ombro</strong> e fraqueza para abdução do braço acima da cabeça.",
+              "<strong>TESTE DE JOBE (EMPTY CAN TEST)</strong>: braço abduzido a 90º no plano da escápula com rotação interna máxima (polegares para baixo) contra resistência.",
+              "Conservador (AINEs + fisioterapia) em roturas parciais/idosos; Cirúrgico (Reparo artroscópico do supraespinal com âncoras + acromioplastia) em roturas transmurais completas refratárias.",
+              "O músculo subescapular é o <strong>único rotador interno do manguito</strong> (avaliado pelo teste de Gerber/Lift-off); o supraespinal faz abdução inicial; infraespinal e redondo menor fazem rotação externa (teste de Patte)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Checklist Mnemônico Rápido para a Prova de Residência"
+        ],
+        [
+          "u",
+          [
+            "<strong>Mnemônica dos 6 Ps na Síndrome Compartimental:</strong>\n    <ul>\n      <li><em>Pain (Dor desproporcional ao estiramento passivo):</em> O sinal mais precoce e sensível!",
+            "<em>Paresthesia:</em> Segundo sinal precoce (nervo anóxico em 30-60 min).",
+            "<em>Pressure:</em> Compartimento tenso e lenhoso.",
+            "<em>Pallor:</em> Palidez/enchimento lentificado.",
+            "<em>Paralysis:</em> Sinal TARDIO de necrose muscular estabelecida!",
+            "<em>Pulselessness:</em> Sinal TARDIO/TERMINAL. <strong>Pulso normal NÃO afasta SCA!</strong>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Critério de Fasciotomia:</strong> <strong>&Delta;P = PAD - PIC &le; 30 mmHg</strong> -> Cirurgia imediata! Posição do membro: <strong>ao nível do coração</strong>. Nunca elevar!</li>\n  <li><strong>Técnica de Duplo Acesso da Perna:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Acesso Ântero-Lateral: abre <strong>Compartimento Anterior e Lateral</strong> (cuidado com o <em>Nervo Fibular Superficial</em>!).",
+            "Acesso Póstero-Medial: abre <strong>Compartimento Posterior Superficial e Posterior Profundo</strong> (obrigatório <strong>desinserir o músculo sóleo da tíbia</strong>!).",
+            "Feridas deixadas <strong>totalmente abertas</strong> (curativo a vácuo)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Tendão de Aquiles Roto:</strong> Sensação de \"pedrada\", hiato palpável e <strong>Teste de Thompson POSITIVO</strong> (ausência de flexão plantar à compressão da panturrilha). Fator facilitador: <strong>Quinolonas (Ciprofloxacino)</strong>.</li>\n  <li><strong>LCA Roto:</strong> Entorse em valgo e rotação externa + \"pop\" audível + hemartrose rápida em 2h + <strong>Teste de Lachman a 20-30º positivo</strong> (o mais sensível!). Rx: <em>Fratura de Segond</em>.</li>\n  <li><strong>Menisco Roto:</strong> Bloqueio articular mecânico verdadeiro + <strong>Teste de McMurray positivo</strong>.</li>\n  <li><strong>Supraespinal Roto:</strong> Dor noturna ao deitar sobre o ombro + <strong>Teste de Jobe (Empty Can) positivo</strong>.</li>\n</ul>"
+        ]
+      ]
+    ]
+  ]
+}

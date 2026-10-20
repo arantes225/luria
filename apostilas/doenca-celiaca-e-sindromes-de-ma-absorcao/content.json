@@ -1,0 +1,1367 @@
+{
+  "v": 2,
+  "s": "doenca-celiaca-e-sindromes-de-ma-absorcao",
+  "t": "Doença Celíaca e Síndromes de Má Absorção",
+  "p": "Doença Celíaca e Síndromes de Má Absorção — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Enteropatia Imunomediada, Critérios ESPGHAN 2020 e Síndromes de Má Absorção Pediátricas",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Doença Celíaca e Síndromes de Má Absorção",
+    "Tratado de Alta Performance em Enteropatia Imunomediada, Critérios ESPGHAN 2020 e Síndromes de Má Absorção Pediátricas",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Doença Celíaca e Síndromes de Má Absorção"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "doenca-celiaca-introducao-epidemiologia",
+      "1. Introdução, Definição Conceitual e Epidemiologia da Doença Celíaca"
+    ],
+    [
+      "doenca-celiaca-imunopatogenese",
+      "2. Fisiopatologia e Imunopatogênese Molecular da Doença Celíaca"
+    ],
+    [
+      "doenca-celiaca-quadro-clinico-formas",
+      "3. Formas Clínicas, Classificação e Manifestações Gastrointestinais e Extraintestinais"
+    ],
+    [
+      "doenca-celiaca-diagnostico-laboratorial-criterios",
+      "4. Propedêutica Diagnóstica: Sorologia, Critérios ESPGHAN 2020 e a Dispensa de Biópsia"
+    ],
+    [
+      "doenca-celiaca-histopatologia-marsh",
+      "5. Histopatologia Duodenal e a Classificação de Marsh-Oberhuber"
+    ],
+    [
+      "doenca-celiaca-diagnostico-diferencial-ma-absorcao",
+      "6. Diagnóstico Diferencial das Síndromes de Má Absorção Pediátricas"
+    ],
+    [
+      "doenca-celiaca-tratamento-monitoramento-longo-prazo",
+      "7. Tratamento, Dieta Isenta de Glúten, Complicações e Monitoramento Clínico"
+    ],
+    [
+      "doenca-celiaca-casos-clinicos",
+      "8. Casos Clínicos Pediátricos Comentados Passo a Passo"
+    ],
+    [
+      "doenca-celiaca-questoes-comentadas",
+      "9. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "doenca-celiaca-tabela-high-yield-conclusao",
+      "10. Tabela Comparativa High-Yield e Takeaway Messages"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "doenca-celiaca-introducao-epidemiologia",
+      0,
+      [
+        [
+          "2",
+          "1. Introdução, Definição Conceitual e Epidemiologia da Doença Celíaca"
+        ],
+        [
+          "p",
+          "A <strong>Doença Celíaca (DC)</strong> — historicamente denominada enteropatia sensível ao glúten ou espru celíaco — é uma enteropatia imunomediada crônica sistêmica, desencadeada pela ingestão de glúten e prolaminas correlatas em indivíduos geneticamente suscetíveis que expressam os antígenos leucocitários humanos (HLA) de classe II <strong>DQ2</strong> e/ou <strong>DQ8</strong>. Longe de ser uma afecção estritamente confinada à mucosa gastrointestinal proximal, a doença celíaca é contemporaneamente definida como uma <em>desordem sistêmica autoimune</em> caracterizada por uma combinação variável de manifestações clínicas glúten-dependentes, presença sérica de autoanticorpos específicos dirigidos contra a enzima autoantigênica <strong>transglutaminase tecidual recombinante tipo 2 (tTG-IgA)</strong> e contra o <strong>endomísio (EMA-IgA)</strong>, enteropatia inflamatória no intestino delgado proximal e expressão obrigatória dos alelos de suscetibilidade genética."
+        ],
+        [
+          "p",
+          "De acordo com os consensos internacionais da <em>European Society for Paediatric Gastroenterology, Hepatology and Nutrition (ESPGHAN)</em>, da <em>North American Society for Pediatric Gastroenterology, Hepatology and Nutrition (NASPGHAN)</em> e da <em>Sociedade Brasileira de Pediatria (SBP)</em>, a doença celíaca deixou de ser encarada como uma afecção digestiva rara e pediátrica da infância precoce para se consolidar como uma das doenças autoimunes crônicas mais frequentes da humanidade, acometendo crianças, adolescentes e adultos em todas as faixas etárias."
+        ],
+        [
+          "3",
+          "1.1 Epidemiologia Global e no Brasil: A Metáfora do Iceberg Celíaco"
+        ],
+        [
+          "p",
+          "Estudos sorológicos populacionais contemporâneos demonstram uma prevalência global estimada em aproximadamente <strong>1% da população geral</strong> (variando entre 0,7% e 1,4% dependendo da ancestralidade e da intensidade do rastreio sorológico). No Brasil, inquéritos soroepidemiológicos realizados em doadores de sangue e em populações pediátricas ambulatoriais apontam prevalência similar, oscilando entre 1:140 (cerca de 0,7%) e 1:286 (0,35%), com variações regionais influenciadas pelos padrões de imigração europeia (especialmente no Sul e Sudeste)."
+        ],
+        [
+          "p",
+          "Contudo, a grande maioria dos indivíduos celíacos permanece <strong>não diagnosticada</strong>. Essa discrepância histórica é universalmente ilustrada pela consagrada metáfora do <strong>\"Iceberg Celíaco\"</strong> (<em>Celiac Iceberg</em>):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ponta Visível do Iceberg (Casos Diagnosticados):</strong> Corresponde a apenas 10% a 20% do contingente total de pacientes celíacos. Representa os indivíduos sintomáticos que apresentam a forma clássica gastrointestinal — diarreia crônica secretora/osmótica com esteatorreia, emaciação grave, perda ponderal acentuada, distensão abdominal proeminente e hipotrofia de musculatura glútea —, facilmente reconhecida pelos pediatras em lactentes após a introdução de farináceos.",
+            "<strong>Massa Submersa do Iceberg (Casos Não Diagnosticados / Silenciosos):</strong> Corresponde a 80% a 90% da população acometida. Inclui pacientes com formas <em>não clássicas</em> (oligosintomáticas ou extraintestinais: anemia ferropriva refratária a sulfato ferroso oral, baixa estatura idiopática, artralgias recorrentes, hipoplasia do esmalte dentário, osteopenia precoce, hipertransaminasemia inexplicada), formas <em>assintomáticas</em> (frequentemente parentes de primeiro grau identificados por triagem ativa) e formas <em>potenciais</em> (sorologia positiva com mucosa duodenal histologicamente normal)."
+          ]
+        ],
+        [
+          "p",
+          "A proporção epidemiológica estimada entre casos diagnosticados e não diagnosticados gira em torno de 1:5 a 1:8 no Brasil e na América Latina. O atraso diagnóstico médio situa-se entre 4 e 8 anos a partir do início dos sintomas sutis, período no qual a inflamação intestinal crônica e a má absorção subclínica podem acarretar déficit de mineralização óssea, prejuízo definitivo na velocidade de crescimento estatural puberal, desnutrição proteico-calórica e predisposição ao desenvolvimento de outras patologias autoimunes secundárias e malignidades linfoproliferativas (como o temido linfoma de células T associado à enteropatia - EATL)."
+        ],
+        [
+          "3",
+          "1.2 Grupos de Alto Risco para Doença Celíaca"
+        ],
+        [
+          "p",
+          "Em virtude da forte agregação genética e da sobreposição autoimune, diretrizes nacionais e internacionais preconizam a realização de <strong>rastreamento sorológico ativo</strong> (mediante dosagem de anti-tTG IgA e IgA sérica total), mesmo na ausência de quaisquer sintomas digestivos evidentes, nos seguintes grupos populacionais vulneráveis:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Parentes de Primeiro Grau:</strong> Pais, irmãos e filhos de indivíduos com diagnóstico confirmado de doença celíaca apresentam um risco empírico de 10% a 15% de desenvolver a enfermidade ao longo da vida (risco até 15 vezes superior ao da população geral). Em gêmeos monozigóticos, a taxa de concordância clínica atinge impressionantes 75% a 85%.",
+            "<strong>Diabetes Mellitus Tipo 1 (DM1):</strong> Cerca de 3% a 8% das crianças e adolescentes com DM1 desenvolvem doença celíaca. Compartilham bases imunogenéticas idênticas (haplótipos HLA-DQ2 e HLA-DR3/DR4). O rastreio celíaco deve ser realizado obrigatoriamente ao diagnóstico do DM1 e repetido a cada 1 a 2 anos na infância.",
+            "<strong>Tireoidite Autoimune de Hashimoto e Doença de Graves:</strong> Prevalência de 2% a 5% de celíacos em portadores de tireoidites autoimunes.",
+            "<strong>Síndrome de Down (Trissomia do 21):</strong> Prevalência de doença celíaca estimada entre 5% e 12%. Recomenda-se triagem sorológica aos 2 a 3 anos de idade ou ao surgimento de retardo de crescimento ou constipação/diarreia de difícil controle.",
+            "<strong>Síndrome de Turner (45,X):</strong> Prevalência de 4% a 8% de doença celíaca. O rastreio sistemático é obrigatório na avaliação inicial de meninas com disgenesia gonadal e baixa estatura.",
+            "<strong>Síndrome de Williams:</strong> Risco aumentado (8% a 10%), exigindo rastreio sorológico periódico na infância.",
+            "<strong>Deficiência Seletiva de Imunoglobulina A (Deficiência de IgA):</strong> Apresenta uma frequência de doença celíaca de 10 a 15 vezes maior que na população geral (prevalência de 2% a 3% em celíacos vs. 0,2% na população controle). Essa associação é de fundamental importância propedêutica, pois inviabiliza testes diagnósticos baseados na classe IgA!",
+            "<strong>Hepatite Autoimune, Nefropatia por IgA e Doença Inflamatória Intestinal:</strong> Associação epidemiológica e patogênica relevante."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Condição Associada / Grupo de Risco",
+            "Prevalência Estimada de Doença Celíaca",
+            "Mecanismo e Justificativa do Rastreamento",
+            "Recomendação Prática da ESPGHAN / SBP"
+          ],
+          [
+            [
+              "<strong>Parentes de 1º Grau de Celíacos</strong>",
+              "10% a 15%",
+              "Compartilhamento alélico de HLA-DQ2/DQ8; suscetibilidade poligênica comum.",
+              "Rastreio sorológico na infância inicial e repetição periódica ou se surgirem sintomas."
+            ],
+            [
+              "<strong>Diabetes Mellitus Tipo 1 (DM1)</strong>",
+              "3% a 8%",
+              "Autoimunidade mediada por células T; forte ligação aos haplótipos HLA-DR3-DQ2.",
+              "Triagem sorológica obrigatória ao diagnóstico do DM1 e a cada 1-2 anos durante a infância."
+            ],
+            [
+              "<strong>Síndrome de Down (Trissomia 21)</strong>",
+              "5% a 12%",
+              "Desregulação imunológica global, predisposição à autoimunidade e disbiose.",
+              "Rastreio sorológico de rotina a partir dos 2 anos de idade em todas as crianças com trissomia."
+            ],
+            [
+              "<strong>Síndrome de Turner (45,X)</strong>",
+              "4% a 8%",
+              "Haploinsuficiência de genes reguladores imunológicos no cromossomo X.",
+              "Triagem sorológica no momento do diagnóstico genético e monitoramento do canal de crescimento."
+            ],
+            [
+              "<strong>Deficiência Seletiva de IgA</strong>",
+              "2% a 8% dos celíacos têm deficiência de IgA",
+              "Compartilhamento de regiões genéticas de histocompatibilidade do cromossomo 6p21.",
+              "Obriga a dosagem rotineira da IgA sérica total; se < 0,2 g/L, usar sorologias da classe IgG."
+            ],
+            [
+              "<strong>Tireoidite Autoimune (Hashimoto)</strong>",
+              "2% a 5%",
+              "Poliautoimunidade endócrina; ativação crônica de linfócitos Th1 autorreativos.",
+              "Investigar na presença de sintomas gastrointestinais, anemia ou descontrole levotiroxínico."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-imunopatogenese",
+      0,
+      [
+        [
+          "2",
+          "2. Fisiopatologia e Imunopatogênese Molecular da Doença Celíaca"
+        ],
+        [
+          "p",
+          "A patogênese da doença celíaca constitui um modelo paradigmático em medicina da confluência precisa entre um <strong>fator ambiental exógeno deflagrador</strong> (o glúten alimentar), uma <strong>base genética permissiva indispensável</strong> (moléculas HLA-DQ2 e HLA-DQ8) e uma <strong>resposta autoimune amplificada</strong> orquestrada pela enzima endógena <strong>transglutaminase tecidual 2 (tTG-2)</strong>, culminando em agressão imunológica direta à mucosa do intestino delgado."
+        ],
+        [
+          "3",
+          "2.1 O Agente Ambiental: O Glúten e a Toxicidade dos Peptídeos da Gliadina"
+        ],
+        [
+          "p",
+          "O glúten é um complexo proteico insolúvel em água de armazenamento de reserva presente no endosperma de gramíneas alimentares da família <em>Poaceae</em>, especificamente no <strong>trigo</strong> (e suas variedades espelta, kamut), no <strong>centeio</strong> (secalinas) e na <strong>cevada</strong> (hordeínas). A <strong>aveia</strong> pura é desprovida de glúten tóxico (sua proteína de reserva é a avenina, que possui baixíssima reatividade imunológica), mas encontra-se quase universalmente contaminada por trigo durante o cultivo, transporte e processamento industrial."
+        ],
+        [
+          "p",
+          "O glúten é composto por duas frações proteicas principais: as <strong>gluteninas</strong> (de alto e baixo peso molecular) e as <strong>prolaminas</strong> (ricas em prolina e glutamina). No trigo, a prolamina tóxica é a <strong>gliadina</strong> (subdividida em frações alfa, beta, gama e ômega). O trato gastrointestinal humano — por meio de suas enzimas digestivas luminais gástricas (pepsina) e pancreáticas (tripsina, quimotripsina, elastase) associadas às enteropeptidases da borda em escova — é <strong>incapaz de clivar completamente</strong> ligações peptídicas envolvendo prolina e glutamina em posições adjacentes."
+        ],
+        [
+          "p",
+          "Como consequência dessa digestão luminal fisiologicamente incompleta, formam-se oligopeptídeos estáveis e resistentes de comprimento substancial, dos quais o mais célebre e estudado é o <strong>peptídeo 33-mer da alfa-gliadina</strong> (resíduos 56-88: LQLQPFPQPQLPYPQPQLPYPQPQLPYPQPQPF). Esse macropeptídeo contém sequências repetitivas poliproil-glutamínicas que desafiam a barreira proteolítica intestinal, cruzam a barreira do muco e alcançam o epitélio do enterócito."
+        ],
+        [
+          "3",
+          "2.2 Ruptura da Barreira Epitelial e o Papel da Zonulina"
+        ],
+        [
+          "p",
+          "Na mucosa intestinal saudável, as junções de oclusão (<em>tight junctions</em>) presentes nos ápices das células epiteliais mantêm o controle estrito do transporte paracelular macromolecular. Em indivíduos celíacos geneticamente predispostos, a exposição da superfície apical dos enterócitos a determinados fragmentos da gliadina (notadamente o peptídeo p31-43) induz a ligação ao receptor de quimiocina <strong>CXCR3</strong>, deflagrando uma cascata de sinalização intracelular que estimula a liberação maciça de <strong>zonulina</strong>."
+        ],
+        [
+          "p",
+          "A zonulina atua autocrinamente ligando-se a receptores transmembrana específicos (como o receptor EGFR e receptor ativado por protease 2 - PAR2), desregulando as proteínas de ancoramento ocludina, claudinas e ZO-1. Ocorre então abertura sustentada das junções de oclusão, aumento dramático da permeabilidade paracelular intestinal e influxo desimpedido dos fragmentos de gliadina (como o 33-mer) em direção à <strong>lâmina própria</strong> subepitelial."
+        ],
+        [
+          "3",
+          "2.3 A Enzima Transglutaminase Tecidual 2 (tTG-2) e a Desamidação"
+        ],
+        [
+          "p",
+          "Ao penetrar na lâmina própria do intestino delgado, a gliadina depara-se com uma enzima ubíqua intracelular e da matriz extracelular: a <strong>transglutaminase tecidual recombinante tipo 2 (tTG-2)</strong>. A tTG-2 é uma enzima dependente de cálcio cuja função fisiológica primordial envolve a reparação tecidual, a reticulação de colágeno e a angiogênese em resposta ao estresse celular."
+        ],
+        [
+          "p",
+          "Na vigência de microinflamação intestinal e níveis elevados de cálcio, a tTG-2 atua sobre os resíduos neutros de <strong>glutamina</strong> dos peptídeos da gliadina, convertendo-os em <strong>ácido glutâmico</strong> por meio de um processo bioquímico denominado <strong>desamidação</strong>. O ácido glutâmico adquire uma forte <strong>carga elétrica negativa</strong>. Além disso, a tTG-2 forma ligações cruzadas covalentes transitórias com a própria gliadina, gerando neoepítopos quiméricos gliadina-tTG de altíssima imunogenicidade."
+        ],
+        [
+          "3",
+          "2.4 Apresentação Antigênica Restrita ao HLA-DQ2 e HLA-DQ8"
+        ],
+        [
+          "p",
+          "A desamidação enzimática é o elo-chave patogênico que transforma um peptídeo alimentar em um antígeno altamente agressivo. As moléculas do Complexo Maior de Histocompatibilidade de classe II (MHC-II) presentes na membrana das células apresentadoras de antígenos (CPA) da lâmina própria — macrófagos, células dendríticas e linfócitos B — possuem fendas de ligação com arquitetura espacial e eletrostática peculiar:"
+        ],
+        [
+          "u",
+          [
+            "<strong>HLA-DQ2 (heterodímero codificado por DQA1*05:01 e DQB1*02:01):</strong> Presente em cerca de <strong>90% a 95%</strong> dos pacientes com doença celíaca. Possui bolsões de ligação eletropositivos que se ajustam com afinidade extraordinária aos resíduos carregados negativamente do ácido glutâmico gerados pela desamidação!",
+            "<strong>HLA-DQ8 (heterodímero codificado por DQA1*03:01 e DQB1*03:02):</strong> Presente na imensa maioria dos <strong>5% a 10% restantes</strong> dos indivíduos celíacos."
+          ]
+        ],
+        [
+          "p",
+          "<em>Pérola Propedêutica Crucial:</em> A presença de HLA-DQ2 ou DQ8 confere <strong>valor preditivo negativo (VPN) de praticamente 100%</strong>. Se um indivíduo é <strong>negativo para HLA-DQ2 E HLA-DQ8</strong>, a probabilidade de desenvolver doença celíaca é virtualmente nula! No entanto, a positividade para esses alelos confere <strong>baixo valor preditivo positivo (VPP)</strong>, haja vista que cerca de 30% a 40% da população geral caucasiana saudável carrega HLA-DQ2 ou DQ8 e nunca desenvolverá a doença ao longo da vida."
+        ],
+        [
+          "3",
+          "2.5 A Resposta Imunológica Adquirida e Inata: A Destruição Tecidual"
+        ],
+        [
+          "p",
+          "A ativação patogênica desdobra-se em dois eixos imunológicos sinérgicos e devastadores:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Imunidade Adaptativa (Lâmina Própria - Células T CD4+ e Linfócitos B):</strong>\n    <p>As CPAs carregando os peptídeos de gliadina desamidados em suas fendas HLA-DQ2/DQ8 interagem com os receptores de células T (TCR) de <strong>linfócitos T CD4+ auxiliares (helper)</strong> na lâmina própria. Essa ligação deflagra diferenciação primariamente para o padrão <strong>Th1</strong>, liberando torrentes de citocinas pró-inflamatórias, mormente o <strong>Interferon-gama (IFN-γ)</strong> e o <strong>Fator de Necrose Tumoral alfa (TNF-α)</strong>. Esse ambiente induz os fibroblastos estromais a sintetizarem <strong>metaloproteinases de matriz tecidual (MMP-1, MMP-3 e MMP-12)</strong>, as quais clivam e destroem a matriz colágena de sustentação das vilosidades intestinais.</p>\n    <p>Simultaneamente, os linfócitos T CD4+ estimulam os <strong>linfócitos B</strong> a proliferarem e se diferenciarem em plasmócitos clonais que passam a secretar os autoanticorpos diagnósticos clássicos: <strong>anti-transglutaminase tecidual (anti-tTG IgA)</strong>, <strong>anti-endomísio (anti-EMA IgA)</strong> e anticorpos contra os <strong>peptídeos de gliadina desamidados (anti-DGP IgG e IgA)</strong>.</p>",
+            "<strong>Imunidade Inata (Compartimento Epitelial - Linfócitos Intraepiteliais CD8+):</strong>\n    <p>Paralelamente, certos fragmentos de gliadina (como o p31-43) atuam sobre o enterócito ativando a produção maciça de <strong>Interleucina-15 (IL-15)</strong>. A IL-15 é a citocina-mestra da agressão intraepitelial. Ela desempenha duas funções letais: (a) bloqueia a regulação inibitória exercida pelas células T reguladoras (Treg), e (b) hiperexpressa o receptor ativador citotóxico <strong>NKG2D</strong> na superfície dos <strong>Linfócitos Intraepiteliais (LIEs) CD8+ alfa-beta e gama-delta</strong>.</p>\n    <p>Sob estresse oxidativo e inflamatório promovido pela gliadina, os enterócitos passam a hiperexpressar em sua membrana basolateral as moléculas não clássicas de MHC de classe I denominadas <strong>MICA e MICB</strong> (<em>MHC class I polypeptide-related sequence A and B</em>). O receptor NKG2D dos LIEs reconhece e se liga avidamente a MICA/MICB no enterócito, transformando os LIEs em verdadeiras células citotóxicas semelhantes a <em>Natural Killers</em>. Os LIEs degranulam perforinas e granzimas B, induzindo a apoptose em massa dos enterócitos vilositários. Para tentar compensar a morte acelerada dos enterócitos do topo dos vilos, as células-tronco das criptas intestinais entram em mitose desenfreada, gerando o quadro histopatológico clássico de <strong>hiperplasia de criptas</strong> acompanhada da consequente <strong>atrofia vilositária</strong> total ou subtotal.</p>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-quadro-clinico-formas",
+      0,
+      [
+        [
+          "2",
+          "3. Formas Clínicas, Classificação e Manifestações Gastrointestinais e Extraintestinais"
+        ],
+        [
+          "p",
+          "O espectro clínico da doença celíaca é extremamente heterogêneo, dependendo da idade de início, do grau de exposição dietética ao glúten, da extensão do comprometimento anatômico do intestino delgado (habitualmente mais intenso no duodeno descendente e jejuno proximal, mas podendo atingir todo o íleo) e da predisposição genética individual. A classificação contemporânea unificada reconhece quatro apresentações clínicas fundamentais:"
+        ],
+        [
+          "3",
+          "3.1 As Quatro Formas Clínicas Principais da Doença Celíaca"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Forma Clássica (Típica ou Gastrointestinal):</strong>\n    <p>Acomete predominantemente lactentes e crianças na primeira infância (geralmente entre os 6 e 24 meses de vida, após a introdução de papas de farinha de trigo, aveia ou biscoitos). O início dos sintomas é insidioso e surge semanas a meses após a exposição regular ao glúten alimentar.</p>\n    <ul>\n      <li><strong>Diarreia Crônica com Características de Má Absorção:</strong> Evacuações volumosas, pastosas ou semilíquidas, de coloração pálida/acinzentada, espumosas, fétidas e com aspecto brilhante de esteatorreia (gordura fecal não absorvida).",
+            "<strong>Distensão Abdominal Proeminente:</strong> Decorrente da fermentação bacteriana de carboidratos intraluminais não digeridos, hipotonia muscular da parede abdominal e meteorismo acentuado, contrastando dramaticamente com o emagrecimento geral (\"abdome em batráquio\").",
+            "<strong>Parada do Ganho Ponderoestatural e Perda Ponderal:</strong> Desaceleração acentuada da curva de crescimento, queda de percentis de peso e estatura nas curvas da OMS (z-score de peso/idade e peso/estatura < -2 ou -3).",
+            "<strong>Hipotrofia Muscular Marcante:</strong> Especialmente visível nas cinturas escapular e pélvica, com atrofia severa das massas glúteas (\"nádegas descaídas\" com pregas cutâneas frouxas pendentes) e adelgaçamento dos membros (\"membros em graveto\").",
+            "<strong>Alterações Neurocomportamentais Típicas:</strong> Apatia, prostração, anorexia profunda, irritabilidade extrema, labilidade emocional e recusa alimentar progressiva.",
+            "<strong>Crise Celíaca (Emergência Médica Pediátrica):</strong> Forma fulminante de apresentação da forma clássica, hoje rara devido ao diagnóstico precoce, caracterizada por diarreia aquosa profusa e explosiva, desidratação hiponatrêmica grave, hipocalemia, acidose metabólica descompensada, hipoalbuminemia extrema com anasarca e choque hipovolêmico secundário. Requer internação em UTI pediátrica, suporte hidroeletrolítico venoso imediato e corticoterapia sistêmica endovenosa transitória (hidrocortisona ou metilprednisolona) até a resposta à suspensão estrita do glúten.",
+            "<strong>2. Forma Não Clássica (Atípica ou Extraintestinal):</strong>\n    <p>É hoje a forma de apresentação <strong>mais prevalente</strong> em crianças maiores, escolares, adolescentes e adultos jovens. Os sintomas gastrointestinais clássicos estão ausentes ou são muito discretos e inespecíficos (dor abdominal recorrente tipo cólica periumbilical, dispepsia, náuseas esporádicas, constipação intestinal crônica refratária a laxativos osmóticos por retenção fecal funcional ou espasmo retal). O paciente procura assistência médica por manifestações isoladas de órgãos distantes:</p>\n    <ul>\n      <li><strong>Anemia Ferropriva Refratária:</strong> É a manifestação não clássica isolada mais frequente! O ferro inorgânico dietético é absorvido primariamente nos enterócitos do <em>duodeno descendente e jejuno proximal</em> — exatamente o sítio anatômico de maior destruição vilositária na doença celíaca. Caracteriza-se por microcitose, hipocromia e ferritina sérica colapsada que não responde ou responde de maneira efêmera à reposição oral de sais de ferro em doses adequadas (3 a 5 mg/kg/dia de ferro elementar por mais de 3 meses).",
+            "<strong>Baixa Estatura Idiopática ou Desaceleração do Crescimento:</strong> Criança ou adolescente que apresenta desaceleração da velocidade de crescimento (queda de percentil estatural nas curvas da OMS), idade óssea atrasada e puberdade retardada, mesmo na ausência de diarreia ou queixas digestivas. Representa até 10% dos casos investigados por baixa estatura em ambulatórios de endocrinologia pediátrica!",
+            "<strong>Hipoplasia do Esmalte Dentário:</strong> Defeitos simétricos, cronológicos e bilaterais no esmalte dos dentes permanentes (ranhuras horizontais, depressões, coloração amarelada ou acastanhada que acomete preferencialmente incisivos e primeiros molares em erupção durante a infância). É um achado altamente específico ao exame físico estomatológico.",
+            "<strong>Estomatite Aftosa Recorrente:</strong> Úlceras orais dolorosas frequentes e indolentes na mucosa jugal, labial e lingual, secundárias à carência crônica de micronutrientes (ferro, ácido fólico, zinco e vitamina B12) associada a distúrbios da imunidade local.",
+            "<strong>Hepatopatia Celíaca (Hipertransaminasemia Inexplicada):</strong> Elevação crônica e assintomática de ALT (TGP) e AST (TGO), geralmente 1,5 a 3 vezes acima do limite superior da normalidade, com sorologias virais e autoanticorpos hepáticos negativos e ultrassonografia de abdome inocente. Ocorre por aumento da permeabilidade da barreira epitelial intestinal, permitindo a translocação de antígenos bacterianos e toxinas pela veia porta diretamente para os sinusoides hepáticos (\"hepatite celíaca reativa\"). O início da dieta sem glúten normaliza as transaminases em mais de 90% dos casos em 6 a 12 meses.",
+            "<strong>Osteopenia e Osteoporose Precoce:</strong> Decorrentes da má absorção crônica de cálcio iônico duodenal combinada à deficiência de vitamina D lipossolúvel, gerando hiperparatireoidismo secundário e risco elevado de fraturas de baixo impacto em adolescentes.",
+            "<strong>Artrite e Artralgia Inflamatória Soronegativa:</strong> Sinovite oligoarticular recorrente de joelhos, tornozelos ou punhos sem deformidades ósseas, muitas vezes confundida com Artrite Idiopática Juvenil (AIJ).",
+            "<strong>Manifestações Neurológicas e Psiquiátricas:</strong> Cefaleia crônica refratária tipo enxaqueca, ataxia cerebelar celíaca (mediada por anticorpos anti-tTG6 e anti-gliadina com destruição de células de Purkinje no cerebelo), neuropatia periférica axonal sensitiva e déficits cognitivos com desatenção e irritabilidade (\"névoa cerebral\").",
+            "<strong>3. Forma Assintomática (Silenciosa):</strong>\n    <p>Indivíduos que não referem queixas clínicas perceptíveis no interrogatório habitual, mas que apresentam <strong>sorologia celíaca francamente positiva</strong> e <strong>biópsia de duodeno demonstrando atrofia vilositária característica (Marsh 3)</strong>. São tipicamente identificados em programas de triagem ativa de grupos de risco (parentes de 1º grau de celíacos ou portadores de DM1, Síndrome de Down ou Turner). É comum que, após a introdução da dieta sem glúten, esses pacientes relatem retrospectivamente melhora substancial do padrão de energia, do rendimento escolar e do bem-estar geral, evidenciando que haviam se acostumado a viver em estado de mal-estar crônico.</p>",
+            "<strong>4. Forma Potencial:</strong>\n    <p>Pacientes que apresentam <strong>sorologia específica positiva (anti-tTG IgA positivo)</strong>, expressam HLA-DQ2 e/ou DQ8, mas cujas <strong>biópsias duodenais revelam mucosa histologicamente intacta (Marsh 0) ou apenas com discreto aumento de linfócitos intraepiteliais (Marsh 1)</strong>, sem atrofia vilositária. Podem permanecer assintomáticos por anos ou desenvolver atrofia vilositária tardia se submetidos a gatilhos inflamatórios adicionais (como infecções entéricas). A conduta nesses casos é individualizada: não se impõe dieta sem glúten se a criança for assintomática e mantiver velocidade de crescimento normal, devendo ser acompanhada clinicamente e sorologicamente a cada 1 a 2 anos.</p>"
+          ]
+        ],
+        [
+          "3",
+          "3.2 A Dermatite Herpetiforme de Duhring-Brocq: O Espelho Cutâneo da Doença Celíaca"
+        ],
+        [
+          "p",
+          "A <strong>Dermatite Herpetiforme (DH)</strong> é considerada a manifestação dermatológica patognomônica e a expressão cutânea inequívoca da doença celíaca. Afeta cerca de 10% a 15% dos indivíduos celíacos (sendo mais comum no final da infância, adolescência e idade adulta jovem, com predomínio no sexo masculino na proporção de 2:1)."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Dermatológico Típico:</strong> Erupção papulovesicular intensamente pruriginosa, em queimação e ferroada, com distribuição simétrica clássica nas <strong>superfícies extensoras dos membros</strong> (cotovelos, superfícies anteriores dos joelhos, nádegas, região sacral, couro cabeludo e dorso superior). Devido ao prurido incoercível, as vesículas intactas agrupadas (\"em buquê de herpes\") rompem-se rapidamente, sendo mais frequente observar no consultório crostas escoriadas, pápulas eritematosas e áreas de hiperpigmentação pós-inflamatória secundárias.",
+            "<strong>Fisiopatologia Cutânea:</strong> A estimulação imunológica crônica na lâmina própria intestinal leva à produção de anticorpos da classe IgA dirigidos contra a <strong>transglutaminase epidérmica (eTG ou tTG-3)</strong>. Esses imunocomplexos circulantes IgA-tTG3 ligam-se e depositam-se nas papilas dérmicas superficiais da pele, ativando a via alternativa do complemento com liberação de C5a. O C5a atrai neutrófilos em massa, os quais liberam elastase e enzimas líticas na junção dermoepidérmica, clivando a lâmina lúcida e gerando microabscessos neutrofílicos subepidérmicos e vesículas tênues.",
+            "<strong>Diagnóstico Padrão-Ouro:</strong> O exame definitivo é a <strong>Biópsia de Pele Perilesional Saudável</strong> (e não do centro da vesícula escoriada, onde o infiltrado inflamatório digere os depósitos!) com exame por <strong>Imunofluorescência Direta (IFD)</strong>, que revela <strong>depósitos granulares de IgA nas papilas dérmicas</strong> em padrão pontilhado ou microgranular contínuo ao longo da membrana basal.",
+            "<em>Implicação Prática Crucial em Exames:</em> <strong>Mais de 90% a 95% dos pacientes com Dermatite Herpetiforme apresentam lesão histopatológica celíaca na biópsia de intestino delgado</strong> (embora a maioria seja assintomática do ponto de vista digestivo). A presença de Dermatite Herpetiforme comprovada por biópsia com IFD granular dérmica positiva <strong>DISPENSA A REALIZAÇÃO DE ENDOSCOPIA DIGESTIVA E BIÓPSIA DUODENAL</strong> para confirmação de doença celíaca! O tratamento definitivo de longo prazo é a <strong>dieta sem glúten estrita e para a vida toda</strong>, associada à <strong>Dapsona oral</strong> (1 a 2 mg/kg/dia) nas fases agudas para alívio rápido do prurido e controle das vesículas enquanto a mucosa e a pele cicatrizam (a resposta clínica à dapsona ocorre em 24 a 48 horas!)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-diagnostico-laboratorial-criterios",
+      0,
+      [
+        [
+          "2",
+          "4. Propedêutica Diagnóstica: Sorologia, Critérios ESPGHAN 2020 e a Dispensa de Biópsia"
+        ],
+        [
+          "p",
+          "O diagnóstico da doença celíaca passou por uma revolução paradigmática ao longo das últimas décadas. Historicamente, os critérios de Interlaken (1969) exigiam três biópsias duodenais consecutivas (ao diagnóstico inicial com glúten, após remissão com dieta sem glúten e após teste de provocação oral com glúten). Com o advento de testes sorológicos de acurácia excepcional e o aprofundamento da imunopatologia, a <em>European Society for Paediatric Gastroenterology, Hepatology and Nutrition (ESPGHAN)</em> revisou e refinou suas diretrizes em 2012 e 2020, endossadas amplamente pela Sociedade Brasileira de Pediatria (SBP)."
+        ],
+        [
+          "3",
+          "4.1 O Passo Inicial Obrigatório: Anti-tTG IgA + Dosagem da IgA Sérica Total"
+        ],
+        [
+          "p",
+          "Diante da suspeita clínica de doença celíaca (seja por manifestações clássicas, não clássicas ou por pertencer a grupos de alto risco), a propedêutica diagnóstica inicial <strong>deve ser SEMPRE realizada enquanto o paciente mantém uma dieta com consumo diário e regular de glúten</strong> (nunca suspender o glúten antes de colher a sorologia ou realizar a biópsia!)."
+        ],
+        [
+          "p",
+          "O teste de triagem inicial padrão-ouro de primeira linha é a dosagem simultânea de:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Anticorpo Anti-Transglutaminase Tecidual da classe IgA (anti-tTG IgA):</strong> Realizado por técnica imunoenzimática quantitativa automatizada (ELISA ou Quimioluminescência). Apresenta sensibilidade superior a 95% e especificidade entre 96% e 98%.",
+            "<strong>Dosagem de Imunoglobulina A Sérica Total (IgA total):</strong> Obrigatória em conjunto com o anti-tTG IgA! Por que essa dosagem simultânea é inegociável em pediatria? Porque a <strong>Deficiência Seletiva de IgA</strong> é de 10 a 15 vezes mais comum em indivíduos com doença celíaca do que na população geral. Se o médico solicitar apenas o anti-tTG IgA em um paciente celíaco que possui deficiência congênita de IgA, o resultado do anti-tTG IgA será <strong>FALSAMENTE NEGATIVO</strong>, retardando gravemente o diagnóstico!"
+          ]
+        ],
+        [
+          "3",
+          "4.2 Conduta perante Deficiência Seletiva de IgA"
+        ],
+        [
+          "p",
+          "A deficiência seletiva de IgA é definida na faixa pediátrica como níveis séricos de IgA total inferiores a <strong>0,2 g/L (20 mg/dL)</strong>, ou abaixo do limite de detecção do laboratório para a faixa etária. Se a IgA total for baixa ou indetectável, os testes baseados na classe IgA tornam-se completamente inválidos. A conduta mandatória é migrar imediatamente para a <strong>pesquisa de anticorpos baseados na classe IgG</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Anticorpo Anti-Peptídeo de Gliadina Desamidada da classe IgG (anti-DGP IgG):</strong> Teste de escolha na deficiência de IgA, apresentando excelente sensibilidade (> 92%) e especificidade (> 95%).",
+            "<strong>Anticorpo Anti-Transglutaminase Tecidual da classe IgG (anti-tTG IgG):</strong> Opção alternativa ou complementar baseada na classe IgG."
+          ]
+        ],
+        [
+          "3",
+          "4.3 O Segundo Anticorpo: Anti-Endomísio da classe IgA (anti-EMA IgA)"
+        ],
+        [
+          "p",
+          "O anticorpo anti-endomísio (anti-EMA IgA) é detectado por <strong>Imunofluorescência Indireta (IFI)</strong> utilizando cortes histológicos criostáticos de esôfago de primata ou cordão umbilical humano como substrato. Ele reconhece a própria enzima transglutaminase tecidual expressa nos feixes de tecido conjuntivo que envolvem os miócitos da muscular da mucosa."
+        ],
+        [
+          "u",
+          [
+            "<strong>Acurácia:</strong> Apresenta uma <strong>especificidade que se aproxima de 99% a 100%</strong> quando positivo em títulos significativos, embora sua sensibilidade seja um pouco inferior à do anti-tTG em crianças menores de 2 anos.",
+            "<strong>Papel Propedêutico:</strong> O anti-EMA IgA <strong>NÃO</strong> é indicado como teste de triagem inicial isolado (por ser operador-dependente, custoso e qualitativo/semiquantitativo). Ele atua fundamentalmente como <strong>anticorpo de confirmação e alta especificidade</strong>, sendo colhido em uma segunda amostra de sangue independente quando o anti-tTG IgA inicial é francamente positivo!"
+          ]
+        ],
+        [
+          "3",
+          "4.4 Outros Testes e Anticorpos Históricos: O que NÃO Solicitar"
+        ],
+        [
+          "u",
+          [
+            "<strong>Anticorpos Anti-Gliadina Nativos (AGA IgA e AGA IgG):</strong> Foram os primeiros testes laboratoriais desenvolvidos na década de 1980. Apresentam baixíssima especificidade e sensibilidade errática, gerando enorme contingente de falsos-positivos em crianças com diarreia aguda infecciosa, intolerância à lactose e alergia alimentar. <em>Diretriz contemporânea unânime:</em> <strong>O teste anti-gliadina nativo está formalmente OBSOLETO e PROSCRITO da prática médica contemporânea!</strong> Sua solicitação em provas de residência configura erro técnico clássico."
+          ]
+        ],
+        [
+          "3",
+          "4.5 Critérios da ESPGHAN 2020 para Dispensa de Biópsia Duodenal em Crianças"
+        ],
+        [
+          "p",
+          "Esta é a pedra angular mais cobrada em todas as provas de Residência Médica, Revalida e ENAMED no Brasil nos últimos cinco anos! Em 2012, a ESPGHAN estabeleceu um protocolo revolucionário permitindo diagnosticar doença celíaca em crianças sintomáticas sem a necessidade de endoscopia e biópsia intestinal. Em sua revisão de <strong>2020</strong>, a ESPGHAN simplificou e expandiu ainda mais essas diretrizes, consolidando a seguinte regra:"
+        ],
+        [
+          "4",
+          "Critérios ESPGHAN 2020 para o Diagnóstico de Doença Celíaca SEM Biópsia Duodenal:"
+        ],
+        [
+          "p",
+          "Uma criança ou adolescente (com OU sem sintomas digestivos típicos) pode ter o diagnóstico definitivo de Doença Celíaca estabelecido com segurança absoluta <strong>DISPENSANDO A ENDOSCOPIA DIGESTIVA ALTA E A BIÓPSIA DUODENAL</strong>, desde que cumpra estritamente a seguinte tríade confirmatória:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Anti-tTG IgA Francamente Positivo:</strong> Níveis séricos de anti-transglutaminase tecidual IgA <strong>maiores ou iguais a 10 vezes o Limite Superior da Normalidade (>= 10x LSN)</strong> na amostra de triagem inicial (com dosagem normal de IgA sérica total para a idade). <em>Exemplo: se o valor de referência normal do laboratório é até 10 U/mL, o resultado do paciente deve ser >= 100 U/mL!</em>",
+            "<strong>Anti-EMA IgA Positivo em Segunda Amostra Independente:</strong> Diante de um anti-tTG IgA >= 10x LSN, coleta-se uma <strong>segunda punção venosa independente</strong> para pesquisar <strong>Anticorpos Anti-Endomísio da classe IgA (EMA-IgA)</strong>. Se o EMA-IgA for <strong>POSITIVO</strong> nessa segunda amostra, o diagnóstico está fechado!",
+            "<strong>Decisão Compartilhada e Resposta Clínica:</strong> Os pais/responsáveis devem ser amplamente informados e concordar com a abordagem não invasiva, iniciando-se a dieta 100% sem glúten, seguida da verificação de remissão dos sintomas e negativação progressiva da curva de anticorpos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>ATENÇÃO ÀS MUDANÇAS CRUCIAIS DE 2020:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>1. O teste genético HLA-DQ2/DQ8 NÃO É MAIS OBRIGATÓRIO</em> para a dispensa de biópsia segundo o consenso ESPGHAN 2020! (Nas diretrizes de 2012 ele era exigido; hoje, o teste de HLA é reservado apenas para casos duvidosos, biópsias limítrofes ou para exclusão de doença em grupos de risco com sorologia discordante).",
+            "<em>2. A presença de sintomas clássicos NÃO É MAIS CONDICIONAL!</em> A abordagem sem biópsia pode ser estendida também a crianças assintomáticas detectadas em grupos de risco, desde que preencham anti-tTG IgA >= 10x LSN e anti-EMA IgA positivo em 2ª amostra.",
+            "Quando o <strong>anti-tTG IgA for positivo, porém em títulos baixos ou moderados (< 10 vezes o LSN)</strong>. Nesses valores, a probabilidade de falsos-positivos não pode ser negligenciada.",
+            "Quando houver <strong>discordância sorológica</strong> (exemplo: anti-tTG fracamente positivo e anti-EMA negativo).",
+            "Em pacientes com <strong>Deficiência Seletiva de IgA</strong> (onde a estratégia sem biópsia não está formalmente validada pela ESPGHAN, exigindo confirmação histopatológica mesmo com anti-DGP IgG positivo).",
+            "Em indivíduos adultos (onde as diretrizes da maioria dos consensos de gastroenterologia ainda exigem comprovação tecidual para orientar dietas vitalícias e rastreio de malignidades, exceto diretrizes britânicas muito recentes em circunstâncias especiais)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-histopatologia-marsh",
+      0,
+      [
+        [
+          "2",
+          "5. Histopatologia Duodenal e a Classificação de Marsh-Oberhuber"
+        ],
+        [
+          "p",
+          "Quando a endoscopia digestiva alta com biópsia é indicada, ela deve seguir um protocolo técnico rigoroso. Como o acometimento inflamatório na doença celíaca tem caráter frequentemente <em>salteado ou em mosaico (patchy)</em>, biópsias insuficientes ou colhidas apenas do bulbo duodenal podem gerar laudos falso-negativos ou laudos falso-positivos (a mucosa bulbar sofre agressão péptica gástrica frequente, com metaplasia gástrica e infiltrado inflamatório que mimetizam atrofia vilositária)."
+        ],
+        [
+          "3",
+          "5.1 Protocolo de Amostragem Endoscópica"
+        ],
+        [
+          "p",
+          "As diretrizes internacionais exigem a coleta de <strong>no mínimo 5 a 6 fragmentos teciduais</strong> durante a endoscopia:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1 a 2 fragmentos colhidos do bulbo duodenal</strong> (orientados separadamente, colhidos preferencialmente nas posições 9 e 12 horas para evitar o canal pilórico).",
+            "<strong>Pelo menos 4 fragmentos colhidos da segunda ou terceira porções do duodeno (duodeno descendente)</strong>, sítio representativo de maior sensibilidade diagnóstica."
+          ]
+        ],
+        [
+          "p",
+          "Os fragmentos devem ser adequadamente estendidos e orientados sobre papel de filtro antes da fixação em formol neutro tamponado a 10%, permitindo cortes histológicos perpendiculares à superfície mucosa que preservem o eixo vilositário completo."
+        ],
+        [
+          "3",
+          "5.2 Critérios Histológicos e a Classificação de Marsh Modificada por Oberhuber"
+        ],
+        [
+          "p",
+          "A lesão celíaca decorre de um processo dinâmico e progressivo de agressão tecidual mediada por linfócitos intraepiteliais (LIEs), expansão inflamatória das criptas de Lieberkühn e colapso arquitetural dos vilos. Essa sequência patológica é universalmente categorizada pela <strong>Classificação de Marsh Modificada por Oberhuber</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Classificação de Marsh-Oberhuber",
+            "Denominação Histológica",
+            "Linfócitos Intraepiteliais (LIEs / 100 enterócitos)",
+            "Hiperplasia de Criptas",
+            "Arquitetura Vilositária (Atrofia)",
+            "Significado e Correlação Clínica"
+          ],
+          [
+            [
+              "<strong>Marsh 0</strong>",
+              "Pré-infiltrativa (Normal)",
+              "Normal (< 25 LIEs / 100 enterócitos)",
+              "Ausente",
+              "Vilosidades digitiformes normais (relação vilo/cripta 3:1 a 4:1)",
+              "Mucosa preservada. Se sorologia positiva, define <em>Doença Celíaca Potencial</em>."
+            ],
+            [
+              "<strong>Marsh 1</strong>",
+              "Lesão Infiltrativa",
+              "Aumentados (<strong>> 25 LIEs / 100 enterócitos</strong>)",
+              "Ausente",
+              "Vilosidades normais",
+              "Não é patognomônico de DC! Ocorre em infecção por <em>H. pylori</em>, giardíase, uso de AINEs, alergia à proteína do leite de vaca (APLV)."
+            ],
+            [
+              "<strong>Marsh 2</strong>",
+              "Lesão Hiperplásica",
+              "Aumentados (> 25 LIEs)",
+              "<strong>Presente</strong> (mitoses aumentadas, alongamento de criptas)",
+              "Vilosidades normais",
+              "Raramente observada isoladamente; transição rápida para atrofia. Vista na DC e dermatite herpetiforme."
+            ],
+            [
+              "<strong>Marsh 3a</strong>",
+              "Lesão Destrutiva:<br><em>Atrofia Parcial</em>",
+              "Aumentados (> 25 LIEs)",
+              "Presente",
+              "<strong>Atrofia vilositária parcial</strong> (vilos rombos, encurtados, espessados)",
+              "Diagnóstico inequívoco de <strong>Doença Celíaca ativa</strong> (se compatível com contexto clínico-sorológico)."
+            ],
+            [
+              "<strong>Marsh 3b</strong>",
+              "Lesão Destrutiva:<br><em>Atrofia Subtotal</em>",
+              "Aumentados (> 25 LIEs)",
+              "Presente",
+              "<strong>Atrofia vilositária subtotal</strong> (vilosidades rudimentares isoladas)",
+              "Forma avançada de destruição absortiva. Marcante em crianças sintomáticas."
+            ],
+            [
+              "<strong>Marsh 3c</strong>",
+              "Lesão Destrutiva:<br><em>Atrofia Total</em>",
+              "Aumentados (> 25 LIEs)",
+              "Presente e intensa",
+              "<strong>Atrofia vilositária total</strong> (ausência completa de vilosidades; aspecto liso, \"achatado\")",
+              "Quadro clássico grave. Colapso completo da área de superfície absortiva duodenojejunal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Pérola Propedêutica Crucial:</em> A presença isolada de Marsh 1 (infiltrado de linfócitos intraepiteliais sem hiperplasia de criptas nem atrofia vilositária) <strong>NÃO É SUFICIENTE</strong> para fechar o diagnóstico de doença celíaca na ausência de sorologia específica positiva em títulos significativos, devendo suscitar a investigação de outros diagnósticos diferenciais da lâmina epitelial (como infecção por <em>Giardia lamblia</em>, infecção por <em>Helicobacter pylori</em> ou sobrecargas imunológicas da infância)."
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-diagnostico-diferencial-ma-absorcao",
+      0,
+      [
+        [
+          "2",
+          "6. Diagnóstico Diferencial das Síndromes de Má Absorção Pediátricas"
+        ],
+        [
+          "p",
+          "As síndromes de má absorção na infância compartilham frequentemente manifestações comuns: diarreia crônica (com duração superior a 14 a 30 dias), distensão abdominal, esteatorreia, flatulência fétida e déficit de ganho ponderal. No entanto, suas origens fisiopatológicas variam amplamente entre desordens de digestão intraluminal, defeitos de barreira e transporte epitelial, e processos inflamatórios transmurais."
+        ],
+        [
+          "3",
+          "6.1 Alergia à Proteína do Leite de Vaca (APLV)"
+        ],
+        [
+          "p",
+          "A APLV é a alergia alimentar mais comum do primeiro ano de vida. Ao contrário da doença celíaca (que necessita da introdução prévia de cereais contendo glúten aos 6 meses ou mais), as formas não IgE-mediadas de APLV (como a <strong>Proctocolite Alérgica Eosinofílica</strong> e a <strong>Enteropatia Induzida por Proteína Alimentar</strong>) surgem tipicamente nos <strong>primeiros 2 a 6 meses de vida</strong>, frequentemente na vigência de aleitamento materno exclusivo (por passagem de traços de betalactoglobulina bovina pelo leite humano) ou logo após a introdução de fórmulas infantis convencionais à base de leite de vaca."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Clínico Diferencial:</strong> Na proctocolite alérgica, o lactente encontra-se em <em>bom estado geral, corado, ativo e com ganho de peso perfeitamente preservado</em>, apresentando fezes com estrias de sangue vivo (hematoquezia) e muco visível. Na enteropatia por proteína alimentar, pode haver má absorção e diarreia crônica, mas com biópsia mostrando infiltrado eosinofílico proeminente na lâmina própria e resposta rápida (em 72 a 96 horas) à exclusão do leite da dieta materna ou uso de fórmula extensamente hidrolisada. Os anticorpos celíacos (anti-tTG e anti-EMA) são rigorosamente negativos."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Fibrose Cística (Mucoviscidose)"
+        ],
+        [
+          "p",
+          "A Fibrose Cística é uma doença autossômica recessiva multissistêmica causada por mutações bialélicas no gene <em>CFTR</em> (cromossomo 7q31.2). Cerca de 85% a 90% dos pacientes apresentam <strong>Insuficiência Pancreática Exócrina</strong> primária decorrente do espessamento das secreções ductais pancreáticas, obstrução crônica dos ácinos, autodigestão enzimática pré-natal e substituição fibrótica e cística do parênquima exócrino."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Clínico Diferencial:</strong> A diarreia crônica na fibrose cística manifesta-se desde as primeiras semanas de vida por <strong>esteatorreia maciça</strong>: fezes extremamente volumosas, oleosas, brilhantes, fétidas, que boiam no vaso sanitário e deixam um halo gorduroso na fralda. Há fome voraz (polifagia compensatória) contrastando com desnutrição progressiva. Crucialmente, associa-se a manifestações do trato respiratório (tosse crônica persistente, bronquiolite obliterante de repetição, colonização precoce por <em>Staphylococcus aureus</em> e <em>Pseudomonas aeruginosa</em>), além de história de íleo meconial no período neonatal.",
+            "<strong>Marcadores Diagnósticos:</strong> Teste do Suor positivo (concentração de cloreto no suor >= 60 mEq/L em pelo menos duas dosagens independentes colhidas por iontoforese com pilocarpina); <strong>Elastase-1 fecal colapsada (< 100 mcg/g de fezes)</strong> confirmando insuficiência pancreática primária; sorologia celíaca negativa."
+          ]
+        ],
+        [
+          "3",
+          "6.3 Giardíase Crônica (Infecção por Giardia duodenalis / lamblia)"
+        ],
+        [
+          "p",
+          "A giardíase é uma das parasitoses intestinais mais comuns na infância em países em desenvolvimento, acometendo creches e pré-escolares. Os trofozoítos de <em>Giardia</em> colonizam especificamente o <strong>duodeno e o jejuno proximal</strong>, fixando-se ao epitélio dos enterócitos por meio de seus discos suctórios ventrais."
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia e Mimetismo:</strong> O recobrimento físico em massa da superfície mucosa pelos parasitas, associado à liberação de proteases e clivagem das junções intercelulares, provoca encurtamento transitório de vilosidades, redução da atividade das dissacaridases da borda em escova (especialmente a lactase) e má absorção osmótica de carboidratos e gorduras. O quadro clínico mimetiza perfeitamente a doença celíaca: distensão abdominal, flatulência explosiva fétida, dor epigástrica/periumbilical pós-prandial, fezes amolecidas gordurosas e perda de peso.",
+            "<strong>Diferenciação Propedêutica:</strong> A biópsia duodenal na giardíase pode apresentar Marsh 1 (aumento de LIEs), mas revela tipicamente trofozoítos de <em>Giardia</em> piriformes e flagelados aderidos à superfície dos enterócitos na coloração por Giemsa ou Hematoxilina-Eosina. O Exame Parasitológico de Fezes (EPF) em 3 amostras colhidas em dias alternados ou o teste de antígeno fecal de <em>Giardia</em> por ELISA fecham o diagnóstico. Responde pronta e completamente a agentes antiparasitários orais (Tinidazol dose única de 50 mg/kg, Nitazoxanida ou Metronidazol), sem necessidade de dieta sem glúten!"
+          ]
+        ],
+        [
+          "3",
+          "6.4 Doença de Crohn Pediátrica (Doença Inflamatória Intestinal)"
+        ],
+        [
+          "p",
+          "A Doença de Crohn é uma inflamação granulomatosa crônica transmural que pode afetar qualquer segmento do trato gastrointestinal, da boca ao ânus, com predileção clássica pelo <strong>íleo terminal e ceco</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Clínico Diferencial:</strong> Manifesta-se comumente em escolares e adolescentes com a tríade clássica: <strong>dor abdominal em cólica (especialmente em fossa ilíaca direita), diarreia crônica (por vezes com sangue ou muco) e perda ponderal</strong>. Ao contrário da doença celíaca típica, a Doença de Crohn frequentemente cursa com <strong>febre recorrente inexplicada</strong>, artrite de grandes articulações, lesões anais e perianais características (plicomas inflamatórios sentinelas, fissuras atípicas indolores, fístulas e abscessos perianais recidivantes) e marcadores inflamatórios sistêmicos extremamente elevados (PCR sérica elevada, VHS > 50 mm/h, anemia de doença crônica e <strong>Calprotectina Fecal maciçamente elevada > 250 a 500 mcg/g</strong>).",
+            "<strong>Achados Histológicos:</strong> Inflamação transmural com infiltrado linfo-histiocitário focal, fissuras ulceradas profundas e presença de <strong>granulomas epitelioides não caseosos</strong> em até 40% a 60% das biópsias intestinais. Sorologia celíaca negativa; positividade eventual para ASCA (anticorpo anti-<em>Saccharomyces cerevisiae</em>)."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica",
+            "Faixa Etária Típica",
+            "Mecanismo Fisiopatológico Principal",
+            "Achados Semioclinicos Marcantes",
+            "Achado Laboratorial / Padrão-Ouro"
+          ],
+          [
+            [
+              "<strong>Doença Celíaca</strong>",
+              "> 6 meses a qualquer idade (pico 9m-2 anos e adolescência)",
+              "Enteropatia autoimune mediada por Th1 e LIEs deflagrada por glúten em HLA-DQ2/DQ8.",
+              "Diarreia crônica com esteatorreia, hipotrofia glútea, distensão abdominal, anemia ferropriva refratária.",
+              "Anti-tTG IgA elevado (>= 10x LSN) + Anti-EMA IgA positivo; Atrofia vilositária (Marsh 3)."
+            ],
+            [
+              "<strong>Fibrose Cística</strong>",
+              "Primeiras semanas de vida ao lactente precoce",
+              "Mutação no canal CFTR levando a secreções ductais espessas e insuficiência pancreática exócrina.",
+              "Esteatorreia maciça oleosa, polifagia voraz com emagrecimento, tosse crônica e bronquiectasias de repetição.",
+              "Teste do Suor: Cloreto >= 60 mEq/L; Elastase-1 fecal colapsada (< 100 mcg/g)."
+            ],
+            [
+              "<strong>APLV (Enteropatia / Proctocolite)</strong>",
+              "1º ao 6º mês de vida (lactentes jovens)",
+              "Hipersensibilidade não mediada por IgE às frações caseína e proteínas do soro bovino.",
+              "Lactente em aleitamento ou fórmula com fezes mucossanguinolentas ou diarreia crônica com bom ganho de peso.",
+              "Teste de exclusão do leite (15 a 30 dias) seguido de Teste de Provocação Oral (TPO) positivo."
+            ],
+            [
+              "<strong>Giardíase Crônica</strong>",
+              "Pré-escolares e escolares (> 1 ano)",
+              "Colonização duodenojejunal por trofozoítos de <em>G. duodenalis</em> com desconjugação de sais biliares e atrofia vilositária transitória.",
+              "Fezes amolecidas brilhantes, meteorismo fétido (\"arrotos com cheiro de ovo podre\"), dor epigástrica pós-prandial.",
+              "Exame Parasitológico de Fezes (cistos) ou Antígeno Fecal de <em>Giardia</em> por ELISA positivo; parasitas na biópsia."
+            ],
+            [
+              "<strong>Doença de Crohn</strong>",
+              "Escolares, adolescentes e adultos jovens",
+              "Doença inflamatória transmural granulomatosa idiopática de qualquer segmento do TGI (íleo-cecal).",
+              "Dor em fossa ilíaca direita, diarreia sanguinolenta crônica, febre vespertina, retardo puberal, fístulas/plicomas perianais.",
+              "Calprotectina Fecal elevada (> 250 mcg/g); Ileo-colonoscopia com úlceras serpiginosas e granulomas não caseosos."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-tratamento-monitoramento-longo-prazo",
+      0,
+      [
+        [
+          "2",
+          "7. Tratamento, Dieta Isenta de Glúten, Complicações e Monitoramento Clínico"
+        ],
+        [
+          "p",
+          "O único tratamento cientificamente comprovado, eficaz e seguro para a doença celíaca até o presente momento é a <strong>Dieta 100% Isenta de Glúten (DIG)</strong> estrita, permanente e mantida por toda a vida. A instituição da dieta requer orientação multidisciplinar com nutricionista especializado em distúrbios da absorção, adesão incondicional da família e apoio psicossocial."
+        ],
+        [
+          "3",
+          "7.1 Pilares da Dieta Isenta de Glúten e a Questão da Contaminação Cruzada"
+        ],
+        [
+          "p",
+          "A exclusão deve ser absoluta para todos os alimentos, preparações, condimentos e bebidas contendo derivados de <strong>trigo, centeio e cevada</strong> (incluindo o malte de cevada, amplamente empregado na indústria alimentícia em chocolates, cereais matinais e xaropes). O limiar seguro de ingestão diária de glúten para pacientes celíacos situa-se abaixo de <strong>10 a 20 miligramas por dia</strong> (padrão internacional <em>Codex Alimentarius</em>: produtos rotulados como \"Sem Glúten\" ou \"Gluten-Free\" devem conter concentração máxima inferior a <strong>20 partes por milhão - 20 ppm</strong> ou 20 mg/kg de alimento)."
+        ],
+        [
+          "4",
+          "A Aveia na Dieta Celíaca: Mitos e Diretrizes"
+        ],
+        [
+          "p",
+          "A proteína de reserva da aveia pura é a <strong>avenina</strong>. A vasta maioria (> 95%) dos pacientes celíacos tolera perfeitamente o consumo regular de aveia pura e não contaminada. Contudo, em países como o Brasil, a aveia comum comercializada no varejo é quase universalmente processada nas mesmas colheitadeiras, silos de armazenamento, moinhos e esteiras industriais que manipulam trigo e cevada, resultando em contaminação cruzada maciça por glúten."
+        ],
+        [
+          "p",
+          "<em>Recomendação Prática:</em> Permite-se apenas o consumo de aveia que traga certificação explícita em seu rótulo de <strong>\"Aveia Pura Certificada Isenta de Glúten\"</strong>, introduzida de forma gradual após a remissão clínica e sorológica completa da doença celíaca, sob supervisão nutricional rigorosa."
+        ],
+        [
+          "4",
+          "A Prevenção da Contaminação Cruzada Domiciliar"
+        ],
+        [
+          "p",
+          "A ingestão inadvertida de traços microscópicos de glúten no ambiente doméstico é a causa mais prevalente de falha de cicatrização da mucosa e persistência de títulos de anticorpos em crianças celíacas. As famílias devem ser orientadas a:"
+        ],
+        [
+          "u",
+          [
+            "Utilizar utensílios exclusivos ou rigorosamente higienizados para o preparo de refeições do paciente (torradeiras elétricas separadas, tábuas de corte de vidro ou polietileno — proibir tábuas de madeira porosa —, esponjas de pia separadas).",
+            "Nunca reutilizar óleos de fritura que tenham sido previamente utilizados para fritar alimentos empanados ou com farinha de trigo (salgadinhos, batatas fritas em restaurantes comerciais).",
+            "Atenção rigorosa aos rótulos industriais: a legislação brasileira (Lei Federal nº 10.674/2003) obriga expressamente que todos os alimentos industrializados tragam em sua embalagem a inscrição clara: <strong>\"CONTÉM GLÚTEN\"</strong> ou <strong>\"NÃO CONTÉM GLÚTEN\"</strong>.",
+            "Verificar formulações de medicamentos alopáticos, suplementos vitamínicos, cosméticos orais e cremes dentais que possam conter amido de trigo como excipiente farmacotécnico."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Resposta Clínica, Histológica e Monitoramento Laboratorial"
+        ],
+        [
+          "p",
+          "Após a instituição correta da dieta isenta de glúten, a resposta biológica segue uma sequência temporal previsível:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Melhora Clínica e Comportamental (Dias a Semanas):</strong> Em 48 a 72 horas, observa-se melhora notável do apetite, do humor e da disposição geral da criança. Em 2 a 4 semanas, a diarreia cessa e o ganho de peso inicia uma curva ascendente acelerada (<em>catch-up growth</em>).",
+            "<strong>Normalização Sorológica (Meses):</strong> Os títulos séricos de anticorpos anti-tTG IgA declinam gradualmente de forma exponencial. A normalização completa ocorre habitualmente entre <strong>6 e 12 meses</strong> após o início da dieta estrita. A persistência de sorologia positiva após 12 meses sugere fortemente transgressão dietética involuntária ou contaminação cruzada domiciliar crônica!",
+            "<strong>Recuperação Histopatológica da Mucosa (1 a 2 Anos):</strong> A regeneração completa das vilosidades duodenais e a normalização da contagem de linfócitos intraepiteliais demoram de 12 a 24 meses na infância (e até mais tempo em adultos). Em crianças que apresentaram excelente resposta clínica e normalização dos títulos de anti-tTG IgA, <strong>NÃO HÁ INDICAÇÃO de realizar endoscopia e biópsia de controle</strong> para documentar cura tecidual!"
+          ]
+        ],
+        [
+          "3",
+          "7.3 Complicações Crônicas da Doença Celíaca Não Tratada"
+        ],
+        [
+          "p",
+          "A persistência crônica da inflamação da lâmina própria e a destruição vilositária secundárias à não adesão dietética acarretam repercussões de gravidade extrema:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Déficit Estatural Definitivo:</strong> Falha de atingir o potencial genético alvo devido ao fechamento precoce das epífises ósseas ou comprometimento da velocidade de crescimento puberal.",
+            "<strong>Osteopenia, Osteoporose Grave e Fraturas Patológicas:</strong> A má absorção de cálcio e vitamina D desmineraliza o esqueleto axial e apendicular.",
+            "<strong>Doenças Autoimunes Secundárias:</strong> Pacientes celíacos expostos cronicamente ao glúten têm risco significativamente maior de desenvolver novas doenças autoimunes, como DM1, tireoidite de Hashimoto e hepatite autoimune.",
+            "<strong>Neoplasias Malignas Linfoproliferativas e Digestivas:</strong> A complicação mais temida da doença celíaca não tratada a longo prazo é o desenvolvimento do <strong>Linfoma de Células T Associado à Enteropatia (EATL - <em>Enteropathy-Associated T-Cell Lymphoma</em>)</strong>, uma neoplasia agressiva do intestino delgado com prognóstico reservado, além do aumento da incidência de adenocarcinoma de jejuno/íleo e carcinoma espinocelular de esôfago. A adesão irrestrita à dieta sem glúten reduz o risco oncológico progressivamente até níveis próximos aos da população geral após vários anos.",
+            "<strong>Doença Celíaca Refratária (RCD):</strong> Entidade rara caracterizada pela persistência ou recorrência de sintomas malabsortivos e atrofia vilositária severa apesar de mais de 12 meses de dieta isenta de glúten rigorosamente confirmada. É subdividida em Tipo 1 (linfócitos intraepiteliais policlonais normais; tratada com imunossupressores) e Tipo 2 (expansão clonal aberrante de LIEs sem receptores CD3/CD8 normais, considerada um estado pré-linfomatoso de alto risco para EATL)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-casos-clinicos",
+      0,
+      [
+        [
+          "2",
+          "8. Casos Clínicos Pediátricos Comentados Passo a Passo"
+        ],
+        [
+          "p",
+          "Os casos clínicos a seguir foram desenvolvidos no padrão das bancas de Residência Médica de acesso direto e do Revalida/ENAMED, ilustrando a aplicação prática dos consensos internacionais (ESPGHAN 2020 e SBP) na tomada de decisão diagnóstica e terapêutica."
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Apresentação Gastrointestinal Clássica e Aplicação dos Critérios Sem Biópsia"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lactente masculino de 16 meses de vida, previamente hígido, natural e procedente de São Paulo, levado à UBS pela mãe por quadro de diarreia crônica e parada do crescimento."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança recebeu aleitamento materno exclusivo até os 6 meses, quando foi introduzida alimentação complementar habitual da família. Aos 8 meses, iniciou a oferta diária de mingaus de farinha de trigo, aveia e biscoitos. Desde os 11 meses (há cerca de 5 meses), a mãe notou que as evacuações tornaram-se progressivamente mais volumosas, pastosas, de coloração amarelada pálida, com odor muito fétido e aspecto brilhante e espumoso, com frequência de 4 a 6 evacuações por dia, sem sangue macroscópico. Concomitantemente, a criança tornou-se extremamente irritada, chorosa, apática, com recusa alimentar importante e distensão abdominal progressiva. A mãe notou que as roupas ficaram largas e as pernas e nádegas \"emagreceram muito\"."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança emagrecida, apática no colo da mãe, discretamente hipocorada (+/4+), anictérica, sem edemas periféricos. Dados antropométricos: Peso: 8,1 kg (z-score P/I = -2,8 DP; aos 8 meses pesava 9,5 kg); Comprimento: 74 cm (z-score E/I = -2,1 DP). Segmento Cefálico: sem anormalidades. Aparelho Respiratório e Cardiovascular normais. Abdome: acentuadamente distendido, globoso, timpânico à percussão difusa, flácido, indolor à palpação, sem visceromegalias palpáveis. Musculatura: hipotrofia muscular marcante nas quatro extremidades e emagrecimento severo das nádegas com pregas cutâneas redundantes pendentes (\"sinal da calça frouxa\")."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Laboratorial:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemoglobina: 10,2 g/dL; VCM: 72 fL (microcitose); HCM: 23 pg (hipocromia); Ferritina sérica: 8 ng/mL (valor normal: 20 a 200 ng/mL).",
+            "Albumina sérica: 3,4 g/dL; Proteína C-Reativa (PCR): 1,2 mg/L (normal).",
+            "Parasitológico de fezes (3 amostras): negativo para cistos, ovos e larvas.",
+            "<strong>IgA sérica total: 0,85 g/L (Normal para a idade: 0,2 a 1,5 g/L — deficiência de IgA descartada).</strong>",
+            "<strong>Anticorpo Anti-Transglutaminase Tecidual IgA (anti-tTG IgA): 180 U/mL (Valor de Referência Normal: < 10 U/mL; portanto, resultado = 18x o LSN!).</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente apresenta a <em>forma clássica</em> de Doença Celíaca, com síndrome de má absorção, esteatorreia, emaciação glútea, distensão abdominal e anemia ferropriva após a introdução de glúten na dieta.",
+            "A dosagem de IgA sérica total é normal, validando com segurança o ensaio sorológico baseado na classe IgA.",
+            "O nível sérico de <strong>anti-tTG IgA (180 U/mL) é superior a 10 vezes o limite superior da normalidade (>= 10x LSN)</strong>.",
+            "De acordo com o consenso internacional ESPGHAN 2020 e as diretrizes da SBP, para confirmar o diagnóstico <strong>SEM NECESSIDADE DE ENDOSCOPIA DIGESTIVA ALTA E BIÓPSIA DUODENAL</strong>, a conduta mandatória imediata é coletar uma <strong>segunda amostra de sangue independente</strong> para pesquisar <strong>Anticorpos Anti-Endomísio da classe IgA (anti-EMA IgA)</strong>. Não é necessário realizar tipagem de HLA-DQ2/DQ8.",
+            "A segunda amostra confirmou: <em>Anti-EMA IgA POSITIVO (título 1:80)</em>. O diagnóstico definitivo de Doença Celíaca está estabelecido!",
+            "<strong>Planejamento Terapêutico:</strong> Orientação detalhada à família e instituição imediata de Dieta 100% Isenta de Glúten (exclusão de trigo, centeio, cevada e contaminação cruzada) + reposição oral de sulfato ferroso (3 mg/kg/dia de ferro elementar em jejum por 3 meses) e suplementação de polivitamínicos contendo zinco, ácido fólico e vitamina D. Agendado retorno em 30 dias para avaliar ganho ponderal e retorno em 6 meses para reavaliação da curva de anti-tTG IgA."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Forma Não Clássica, Anemia Ferropriva Refratária e Deficiência de IgA"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menina de 8 anos de idade, estudante, acompanhada pela mãe em consulta ambulatorial de hematologia pediátrica encaminhada por anemia ferropriva de difícil controle."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a paciente apresenta palidez cutaneomucosa progressiva, adinamia e fraqueza aos esforços há cerca de 1 ano. Vem recebendo sulfato ferroso oral em dose terapêutica plena (5 mg/kg/dia de ferro elementar associado a suco de laranja) há 6 meses ininterruptos, com adesão supervisionada pela mãe, sem melhora nos exames laboratoriais de controle. Nega diarreia, evacuações líquidas ou fezes gordurosas; o hábito intestinal é constipado (evacua a cada 2 ou 3 dias fezes cilíndricas normais). A mãe refere que a menina sempre teve o apetite um pouco reduzido e apresenta queixas recorrentes de \"aftas dolorosas na boca\" e cansaço fácil nas aulas de educação física. Nega febre ou perda de peso evidente, mas o professor notou que ela é a mais baixa da sala de aula."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Paciente lúcida, orientada, bastante hipocorada (3+/4+), anictérica. Peso no percentil 15; Estatura no percentil 5 (desaceleração da velocidade de crescimento no último ano). Orofaringe: presença de duas úlceras aftoides rasas e dolorosas em mucosa jugal inferior com halo eritematoso. Dentes: ranhuras horizontais e opacidades esbranquiçadas e amareladas nos incisivos centrais superiores e inferiores permanentes (hipoplasia simétrica de esmalte dentário). Abdome plano, indolor, sem visceromegalias. Sem queixas articulares."
+        ],
+        [
+          "p",
+          "<strong>Investigação Laboratorial Inicial:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemoglobina: 8,1 g/dL; Hematócrito: 26%; VCM: 64 fL; HCM: 19 pg; RDW: 18,5% (anemia microcítica e hipocrômica com anisocitose).",
+            "Ferritina sérica: 4 ng/mL (estoques de ferro zerados); Ferro sérico: 22 mcg/dL; Índice de Saturação de Transferrina: 6%.",
+            "Pesquisa de sangue oculto nas fezes: negativa. Urina tipo I e urocultura normais.",
+            "TSH: 2,1 mUI/L (normal); T4 livre: 1,1 ng/dL (normal).",
+            "<strong>Rastreio Inicial de Doença Celíaca:</strong>\n      <ul>\n        <li><strong>Anti-tTG IgA: 1,2 U/mL (Negativo! VR: < 10 U/mL).</strong>",
+            "<strong>IgA Sérica Total: < 0,05 g/L (Indetectável! Valor de Referência Normal: 0,4 a 2,2 g/L).</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O examinador desavisado concluiria falsamente que a paciente não tem doença celíaca, pois o anti-tTG IgA resultou negativo. No entanto, o médico atento observa que a <strong>IgA sérica total é INDETECTÁVEL (< 0,05 g/L)</strong>, firmando o diagnóstico concomitante de <strong>Deficiência Seletiva de Imunoglobulina A</strong>.",
+            "Na deficiência de IgA, os anticorpos anti-tTG IgA e anti-EMA IgA são sistematicamente falsos-negativos! A conduta correta é solicitar a pesquisa de anticorpos baseados na <strong>classe IgG</strong>.",
+            "Exames complementares solicitados:\n      <ul>\n        <li><strong>Anticorpo Anti-Peptídeo de Gliadina Desamidada IgG (anti-DGP IgG): 98 U/mL (Fortemente Positivo! VR: < 10 U/mL).</strong>",
+            "<strong>Anti-tTG IgG: 64 U/mL (Positivo! VR: < 10 U/mL).</strong>",
+            "Em pacientes com deficiência seletiva de IgA, a ESPGHAN recomenda a realização de <strong>Endoscopia Digestiva Alta com biópsias duodenais múltiplas</strong> para confirmação histológica antes do início da dieta.",
+            "A EDA revelou mucosa do duodeno descendente com pregueamento atenuado e aspecto serrilhado (\"scalloping\"). A histopatologia de 5 fragmentos revelou: aumento maciço de linfócitos intraepiteliais (> 45 LIEs/100 enterócitos), hiperplasia exuberante de criptas e atrofia vilositária subtotal, caracterizando <strong>Lesão de Marsh 3b</strong>.",
+            "Diagnóstico fechado: <em>Doença Celíaca Não Clássica associada a Deficiência Seletiva de IgA</em>. Tratamento: Dieta 100% isenta de glúten por toda a vida + reposição de ferro intravenoso (ou ferro oral após início da cicatrização da mucosa). Em 6 meses, a hemoglobina subiu para 12,8 g/dL e as aftas desapareceram por completo."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Dermatite Herpetiforme com Poucos Sintomas Digestivos"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Adolescente masculino de 14 anos, praticante de futebol amador, levado à consulta dermatológica por lesões de pele intensamente pruriginosas há 8 meses."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> O paciente desenvolveu erupção cutânea extremamente pruriginosa, descrita como sensação insuportável de picada e queimação, que piora com o calor e suor. As lesões surgiram inicialmente nos cotovelos e depois nos joelhos e nádegas. Recebeu múltiplos tratamentos empíricos prévios para escabiose (ivermectina oral e permetrina tópica) e para dermatite atópica (corticoides tópicos potentes), com alívio efêmero seguido de piora rebote. Ao interrogatório sistemático dirigido, o adolescente nega diarreia ou perda de peso perceptível, mas admite apresentar sensação de empachamento pós-prandial frequente e meteorismo com flatulência excessiva desde a infância."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Paciente com desenvolvimento puberal em Tanner G4P4, eutrófico. Exame dermatológico: presença de pápulas eritematosas, placas urticadas e pequenas vesículas agrupadas com aspecto herpetiforme, entremeadas por crostas escoriadas e máculas hiperpigmentadas residuais, com distribuição rigorosamente simétrica nas <strong>faces extensoras de ambos os cotovelos, faces anteriores dos joelhos, região glútea superior e sacro</strong>. Ausência de lesões em dobras flexurais ou genitália."
+        ],
+        [
+          "p",
+          "<strong>Investigação Diagnóstica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Realizada <strong>biópsia por punch de pele perilesional clinicamente sadia</strong> adjacente às lesões ativas dos cotovelos.",
+            "Histopatologia convencional (HE): microabscessos de neutrófilos e eosinófilos nos ápices das papilas dérmicas, com descolamento dermoepidérmico subepidérmico incipiente.",
+            "<strong>Imunofluorescência Direta (IFD) da pele perilesional: DEPÓSITO GRANULAR CONTÍNUO DE IgA NAS PAPILAS DÉRMICAS e ao longo da membrana basal</strong>, confirmando patognomonicamente o diagnóstico de <strong>Dermatite Herpetiforme de Duhring-Brocq</strong>.",
+            "Sorologia complementar: IgA sérica total: 2,1 g/L; Anti-tTG IgA: 82 U/mL (Elevado!)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta e Raciocínio Clínico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "A demonstração de depósitos granulares de IgA nas papilas dérmicas pela IFD é diagnóstica de Dermatite Herpetiforme.",
+            "Como a Dermatite Herpetiforme é a manifestação cutânea direta da sensibilidade ao glúten da doença celíaca, <strong>NÃO É NECESSÁRIO REALIZAR ENDOSCOPIA DIGESTIVA ALTA NEM BIÓPSIA DUODENAL</strong> para instituir o tratamento definitivo da doença celíaca!",
+            "<strong>Manejo Farmacológico e Dietético:</strong>\n      <ul>\n        <li>Introdução de <strong>Dieta 100% Isenta de Glúten para o resto da vida</strong> (única medida capaz de cicatrizar a mucosa intestinal e erradicar os depósitos de IgA da pele a longo prazo).",
+            "Prescrição de <strong>Dapsona oral</strong> na dose inicial de 1 mg/kg/dia (após dosagem prévia de glicose-6-fosfato desidrogenase - G6PD normal e hemograma de controle para prevenir hemólise aguda por metemoglobinemia), visando alívio sintomático imediato do prurido e controle das vesículas nas primeiras semanas. A dapsona foi descontinuada gradualmente após 6 meses de dieta estrita sem recidiva de lesões."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Rastreamento em Grupo de Risco (Criança com Diabetes Mellitus Tipo 1)"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menina de 7 anos de idade, com diagnóstico prévio de Diabetes Mellitus Tipo 1 (DM1) há 2 anos, em uso de esquema basal-bolus com análogos de insulina rápida e ultralenta."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> Comparece à consulta de rotina no ambulatório de endocrinologia pediátrica. A mãe refere que a criança encontra-se totalmente assintomática do ponto de vista gastrointestinal: não tem diarreia, dor abdominal, vômitos ou perda de peso. O hábito intestinal é diário, com fezes moldadas Bristol tipo 4. No entanto, no último semestre, a mãe relata episódios recorrentes e inexplicados de <strong>hipoglicemias leves a moderadas no meio da manhã e da tarde</strong>, motivando sucessivas reduções nas doses de insulina basal calculadas pelo endocrinologista. O controle glicêmico prévio era bom (HbA1c = 7,4%), mas a curva estatural mostrou discreta desaceleração da velocidade de crescimento no último ano."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Eutrófica, hidratada, acianótica, anictérica, corada. Peso: 22 kg (percentil 40); Estatura: 120 cm (caiu do percentil 50 para o percentil 35). Abdome inocente, indolor, ruídos hidroaéreos normais, sem massas ou visceromegalias. Exame segmentar normal."
+        ],
+        [
+          "p",
+          "<strong>Rastreio Sorológico Anual de Doença Celíaca:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemoglobina glicada (HbA1c): 6,9%; Hemoglobina: 11,8 g/dL; VCM: 78 fL; Ferritina: 18 ng/mL.",
+            "IgA sérica total: 1,4 g/L (Normal).",
+            "<strong>Anti-tTG IgA: 42 U/mL (Valor de Referência Normal: < 10 U/mL; portanto, resultado POSITIVO, mas equivalente a 4,2x o LSN).</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "A paciente pertence a um grupo de alto risco para doença celíaca (DM1). O aparecimento de hipoglicemias inexplicadas com necessidade de redução de dose de insulina em crianças com DM1 é um sinal de alerta clássico para absorção irregular de carboidratos secundária à atrofia vilositária subclínica da doença celíaca!",
+            "O resultado do anti-tTG IgA é francamente positivo (42 U/mL), porém é <strong>INFERIOR a 10 vezes o limite superior da normalidade (< 10x LSN)</strong>.",
+            "<em>Ponto Crucial de Decisão:</em> De acordo com as diretrizes da ESPGHAN 2020 e da SBP, em pacientes cujo anti-tTG IgA situa-se abaixo de 10x o LSN, <strong>NÃO É PERMITIDO dispensar a biópsia duodenal!</strong> A realização de Endoscopia Digestiva Alta com biópsias múltiplas é estritamente obrigatória antes de submeter uma criança diabética a uma segunda restrição dietética crônica severa.",
+            "A paciente foi submetida à EDA enquanto mantinha dieta com glúten. A histopatologia de fragmentos duodenais revelou infiltração de 38 LIEs/100 enterócitos, hiperplasia de criptas e atrofia vilositária parcial, confirmando <strong>Marsh 3a</strong>.",
+            "Com a confirmação tecidual, iniciou-se a Dieta 100% Isenta de Glúten associada à readequação contínua de carboidratos com o serviço de nutrição. Em 3 meses, as hipoglicemias cessaram, a necessidade de insulina estabilizou-se e a velocidade de crescimento foi recuperada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "9. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "As questões a seguir foram selecionadas e adaptadas dos principais concursos de Residência Médica do Brasil (USP, UNICAMP, ENARE, SURCE, SES-PE) e das provas oficiais do Revalida INEP e ENAMED, com gabarito fundamentado e refutação analítica exaustiva de cada distrator."
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (USP - Acesso Direto / Pediatria):</strong> Lactente de 14 meses de vida é trazido à consulta pediátrica por apresentar fezes amolecidas, volumosas, espumosas e fétidas há cerca de 4 meses, associadas a distensão abdominal progressiva, irritabilidade, anorexia e parada do ganho de peso. A introdução alimentar ocorreu aos 6 meses, com acréscimo de papas de farinha de trigo e aveia aos 7 meses. Ao exame físico: peso no z-score -2,5 DP; abdome acentuadamente globoso e timpânico; atrofia evidente da musculatura glútea. Diante da principal suspeita diagnóstica, assinale a conduta propedêutica inicial mais adequada de acordo com as diretrizes contemporâneas:"
+        ],
+        [
+          "u",
+          [
+            "A) Suspender imediatamente o glúten da dieta e prescrever reposição oral de sulfato ferroso e polivitamínicos por 30 dias para avaliar resposta terapêutica.",
+            "B) Solicitar dosagem de anticorpos anti-gliadina nativos das classes IgA e IgG por técnica imunoenzimática.",
+            "C) Solicitar anticorpo anti-transglutaminase tecidual da classe IgA (anti-tTG IgA) juntamente com a dosagem da imunoglobulina A (IgA) sérica total, mantendo o consumo regular de glúten.",
+            "D) Indicar imediatamente endoscopia digestiva alta com biópsia jejunal para confirmar a presença de atrofia vilositária total.",
+            "E) Solicitar tipagem dos alelos HLA-DQ2 e HLA-DQ8 e anticorpo anti-endomísio IgA como teste de triagem inicial."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta o quadro clássico de Doença Celíaca na infância. Conforme as diretrizes internacionais da ESPGHAN e da Sociedade Brasileira de Pediatria (SBP), a triagem diagnóstica inicial padrão-ouro consiste na dosagem do <strong>anti-tTG IgA</strong> combinada obrigatoriamente à <strong>dosagem de IgA sérica total</strong>. A IgA total deve ser mensurada porque a Deficiência Seletiva de IgA é significativamente mais frequente em pacientes celíacos (cerca de 2% a 8%); caso o paciente tenha deficiência de IgA, o anti-tTG IgA resultará em um falso-negativo desastroso. Além disso, todo o rastreio deve ser rigorosamente realizado enquanto a criança mantém ingestão contínua e regular de alimentos com glúten na dieta."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Suspender o glúten antes de colher a sorologia ou biópsia é um erro gravíssimo de conduta, pois leva à rápida redução dos títulos de anticorpos e cicatrização da mucosa, inviabilizando o diagnóstico laboratorial definitivo e condenando o paciente a testes futuros de provocação oral com glúten.",
+            "<em>Alternativa B incorreta:</em> A pesquisa de anticorpos anti-gliadina nativos (AGA) é um teste laboratorial arcaico, obsoleto e formalmente proscrito devido à baixíssima sensibilidade e alta taxa de falsos-positivos em crianças com diarreias inespecíficas.",
+            "<em>Alternativa D incorreta:</em> A endoscopia direta sem investigação sorológica prévia não é a conduta inicial recomendada. Além disso, as diretrizes da ESPGHAN permitem a dispensa completa da biópsia duodenal se o anti-tTG IgA for >= 10x LSN e o anti-EMA IgA for positivo em segunda amostra. Ademais, a biópsia é preferencialmente duodenal (bulbo e duodeno descendente), não jejunal direta.",
+            "<em>Alternativa E incorreta:</em> A tipagem genética de HLA-DQ2/DQ8 não é exame de triagem populacional inicial devido ao seu baixo valor preditivo positivo (cerca de 30% a 40% da população sadia possui esses alelos). O anti-EMA IgA também não é teste de triagem de primeira linha isolado, mas sim teste confirmatório de segunda etapa."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (ENARE / Exame Nacional de Residência):</strong> Uma menina de 4 anos de idade com queixas de constipação crônica e baixa estatura idiopática realiza investigação laboratorial para doença celíaca. O resultado revela: dosagem de IgA sérica total de 1,2 g/L (normal para a idade) e anticorpo anti-transglutaminase tecidual da classe IgA (anti-tTG IgA) de 150 U/mL (valor de referência normal: < 10 U/mL). De acordo com as diretrizes atualizadas da ESPGHAN (2020) para o diagnóstico não invasivo de doença celíaca na faixa pediátrica, a conduta correta imediata é:"
+        ],
+        [
+          "u",
+          [
+            "A) Solicitar tipagem de HLA-DQ2 e HLA-DQ8; se positiva, instituir imediatamente a dieta sem glúten sem necessidade de novos exames.",
+            "B) Coletar uma segunda amostra de sangue independente para dosagem de anticorpos anti-endomísio da classe IgA (anti-EMA IgA).",
+            "C) Encaminhar obrigatoriamente a paciente para endoscopia digestiva alta com realização de múltiplas biópsias duodenais.",
+            "D) Iniciar de imediato a dieta isenta de glúten e prescrever corticoterapia oral com prednisona por 4 semanas.",
+            "E) Solicitar teste de dosagem de anti-peptídeo de gliadina desamidada da classe IgG (anti-DGP IgG) para confirmação diagnóstica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta IgA sérica total normal e anti-tTG IgA de 150 U/mL, o que equivale a <strong>15 vezes o limite superior da normalidade (>= 10x LSN)</strong>. De acordo com os critérios consolidados da ESPGHAN 2020, quando o anti-tTG IgA inicial atinge ou ultrapassa 10x o LSN, a conduta mandatória para confirmar o diagnóstico <strong>SEM NECESSIDADE DE ENDOSCOPIA OU BIÓPSIA</strong> é coletar uma <strong>segunda punção venosa independente</strong> para dosar o <strong>anticorpo anti-endomísio IgA (anti-EMA IgA)</strong>. Se o anti-EMA IgA for positivo nessa segunda amostra, o diagnóstico está definitivamente confirmado."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Na atualização da ESPGHAN de 2020, o teste de HLA-DQ2/DQ8 <strong>deixou de ser obrigatório</strong> para a via de diagnóstico sem biópsia (uma grande mudança em relação ao protocolo de 2012, muito cobrada em provas atuais!).",
+            "<em>Alternativa C incorreta:</em> A biópsia é dispensada nesse cenário com títulos >= 10x LSN se o anti-EMA for confirmado em segunda amostra.",
+            "<em>Alternativa D incorreta:</em> Não se deve instituir dieta antes de colher a segunda amostra para anti-EMA; ademais, o uso de corticoides orais está totalmente contraindicado na doença celíaca não complicada (reservado exclusivamente para crises celíacas fulminantes ou doença celíaca refratária tipo 1 comprovada).",
+            "<em>Alternativa E incorreta:</em> O anti-DGP IgG é o teste de escolha quando há deficiência de IgA; como os níveis de IgA total da paciente são normais, o teste confirmatório de altíssima especificidade é o anti-EMA IgA."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (Revalida INEP):</strong> Escolar de 9 anos com quadro de baixa estatura, cansaço fácil aos esforços e anemia microcítica e hipocrômica refratária ao uso de sulfato ferroso oral por 6 meses é submetido à investigação laboratorial. A dosagem de IgA sérica total é de 0,08 g/L (valor de referência: 0,4 a 2,0 g/L). O resultado do anticorpo anti-transglutaminase tecidual IgA foi de 1,5 U/mL (referência: < 10 U/mL). Diante desses achados laboratoriais, assinale a conduta propedêutica correta:"
+        ],
+        [
+          "u",
+          [
+            "A) Excluir definitivamente o diagnóstico de doença celíaca e investigar causas secundárias de perda sanguínea gastrointestinal oculta.",
+            "B) Solicitar pesquisa de anticorpos baseados na classe IgG, preferencialmente o anticorpo anti-peptídeo de gliadina desamidada IgG (anti-DGP IgG).",
+            "C) Repetir o anti-tTG IgA após sobrecarga oral com suplementação de zinco e ferro quelato por 60 dias.",
+            "D) Solicitar teste do suor para afastar insuficiência pancreática exócrina por fibrose cística.",
+            "E) Iniciar dieta de prova sem glúten por 30 dias e dosar a calprotectina fecal para avaliar remissão."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta <strong>Deficiência Seletiva de Imunoglobulina A</strong>, caracterizada por IgA sérica total colapsada (0,08 g/L, abaixo do limiar de 0,2 g/L). Em pacientes com deficiência de IgA, a produção fisiológica dessa classe de imunoglobulina está ausente ou criticamente reduzida, tornando o teste de anti-tTG IgA um <strong>falso-negativo metodológico</strong>. Portanto, a doença celíaca não foi afastada! A conduta inegociável é migrar para o rastreio baseado na classe IgG, sendo o <strong>anti-DGP IgG</strong> o anticorpo de maior sensibilidade e especificidade nesse cenário clínico."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> É o erro clássico do candidato que ignora a IgA total e assume falsamente que o paciente não tem doença celíaca porque a sorologia IgA veio negativa.",
+            "<em>Alternativa C incorreta:</em> Repetir o mesmo teste imunoenzimático de classe IgA não resolverá a deficiência genética primária de síntese de IgA.",
+            "<em>Alternativa D incorreta:</em> A fibrose cística cursa com esteatorreia neonatal/lactente precoce e doença pulmonar crônica supurativa, não justificando desvio prioritário do foco investigativo da enteropatia imunomediada.",
+            "<em>Alternativa E incorreta:</em> Não se inicia dieta de teste sem confirmação sorológica ou tecidual prévia."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 4 (UNICAMP - Residência Médica):</strong> Em relação ao envolvimento dermatológico na doença celíaca, assinale a afirmativa correta a respeito da Dermatite Herpetiforme de Duhring-Brocq:"
+        ],
+        [
+          "u",
+          [
+            "A) É uma erupção maculopapular descamativa e indolor que acomete preferencialmente as dobras flexurais e a região perioral.",
+            "B) A biópsia de pele perilesional com imunofluorescência direta demonstra depósitos granulares de IgA nos ápices das papilas dérmicas.",
+            "C) Sua presença comprovada por biópsia de pele impõe a realização obrigatória de endoscopia digestiva alta com biópsia duodenal para iniciar o tratamento.",
+            "D) O tratamento medicamentoso de escolha na crise aguda é a prednisona oral em altas doses, sendo a dieta sem glúten ineficaz nas manifestações cutâneas.",
+            "E) Ao contrário da doença celíaca clássica, a dermatite herpetiforme não apresenta associação com os alelos HLA-DQ2 e HLA-DQ8."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A <strong>Dermatite Herpetiforme</strong> é a manifestação cutânea patognomônica da doença celíaca. O diagnóstico padrão-ouro é estabelecido pela biópsia de pele perilesional (clinicamente sã) submetida à <strong>Imunofluorescência Direta (IFD)</strong>, que evidencia o achado patognomônico de <strong>depósitos microgranulares de imunoglobulina A (IgA) nos ápices das papilas dérmicas</strong> e ao longo da zona da membrana basal, decorrentes da formação de complexos com a transglutaminase epidérmica (eTG / tTG-3)."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A dermatite herpetiforme é intensamente pruriginosa e em queimação, formada por pápulas e vesículas agrupadas com predileção pelas superfícies <strong>extensoras</strong> (cotovelos, joelhos, nádegas), e não flexurais.",
+            "<em>Alternativa C incorreta:</em> Como a presença de dermatite herpetiforme comprovada por IFD é patognomônica da sensibilidade ao glúten da DC, a endoscopia com biópsia duodenal é <strong>totalmente dispensada</strong> para o diagnóstico e início terapêutico.",
+            "<em>Alternativa D incorreta:</em> O fármaco de escolha na fase aguda é a <strong>Dapsona</strong> (que alivia o prurido em 24 a 48 horas); o corticoide oral não tem boa resposta. A dieta isenta de glúten é o único tratamento curativo e definitivo de longo prazo tanto para o intestino quanto para a pele.",
+            "<em>Alternativa E incorreta:</em> A dermatite herpetiforme compartilha exatamente a mesma base imunogenética da DC (praticamente 100% expressam HLA-DQ2 ou HLA-DQ8)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 5 (SURCE - Seleção Unificada para Residência Médica do Ceará):</strong> Escolar de 6 anos com diagnóstico prévio de Diabetes Mellitus Tipo 1 é submetido à triagem sorológica anual assintomática para doença celíaca. Apresenta IgA sérica normal e anti-tTG IgA de 35 U/mL (referência: < 10 U/mL; portanto, 3,5x o LSN). Submetido a endoscopia digestiva alta com múltiplas biópsias duodenais, o laudo histopatológico demonstra: arquitetura vilositária preservada, ausência de hiperplasia de criptas e contagem de 38 linfócitos intraepiteliais (LIEs) por 100 enterócitos na coloração histológica. Assinale a correta classificação de Marsh dessa lesão e a respectiva interpretação clínica:"
+        ],
+        [
+          "u",
+          [
+            "A) Marsh 0; afasta completamente qualquer envolvimento celíaco.",
+            "B) Marsh 1; lesão infiltrativa isolada, devendo-se investigar também diagnósticos diferenciais da mucosa entérica.",
+            "C) Marsh 2; presença de hiperplasia de criptas obrigatória para justificar o infiltrado de LIEs.",
+            "D) Marsh 3a; atrofia vilositária inicial confirmada pelo número de linfócitos intraepiteliais.",
+            "E) Marsh 3c; atrofia vilositária total decorrente da sobreposição com o diabetes."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A <strong>Classificação de Marsh 1 (lesão infiltrativa)</strong> caracteriza-se estritamente pelo <strong>aumento de Linfócitos Intraepiteliais (LIEs > 25 por 100 enterócitos)</strong> com arquitetura vilositária inteiramente normal e criptas de profundidade normal (sem hiperplasia). O infiltrado intraepitelial isolado não é patognomônico de doença celíaca e pode ocorrer em infecções por <em>Helicobacter pylori</em>, parasitoses (giardíase), uso de anti-inflamatórios não esteroides (AINEs), alergia alimentar e na doença celíaca potencial."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Marsh 0 corresponde à mucosa histologicamente normal (< 25 LIEs/100 enterócitos).",
+            "<em>Alternativa C incorreta:</em> Marsh 2 requer a presença comprovada de hiperplasia de criptas associada ao infiltrado de LIEs.",
+            "<em>Alternativas D e E incorretas:</em> Marsh 3 exige atrofia vilositária (3a = parcial; 3b = subtotal; 3c = total); no enunciado, os vilos estavam explicitamente normais/preservados."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 6 (FMUSP - Faculdade de Medicina da Universidade de São Paulo):</strong> Assinale a alternativa que indica o mecanismo molecular determinante pelo qual a enzima transglutaminase tecidual 2 (tTG-2) amplifica a toxicidade imunológica da gliadina na lâmina própria intestinal:"
+        ],
+        [
+          "u",
+          [
+            "A) Fosforilação de resíduos de serina e treonina, bloqueando a captação de gliadina por células dendríticas.",
+            "B) Acetilação de resíduos de lisina, inibindo a degradação intracelular do peptídeo 33-mer nos lisossomos.",
+            "C) Desamidação de resíduos neutros de glutamina em ácido glutâmico carregado negativamente, aumentando a afinidade de ligação às fendas eletropositivas de HLA-DQ2 e HLA-DQ8.",
+            "D) Clivagem hidrolítica das ligações peptídicas da gliadina, transformando-a em aminoácidos simples absorvíveis.",
+            "E) Metilação de histonas epigenéticas nos enterócitos, silenciando a expressão dos receptores de zonulina CXCR3."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A enzima <strong>transglutaminase tecidual recombinante tipo 2 (tTG-2)</strong> catalisa a reação de <strong>desamidação</strong> dos resíduos neutros de glutamina presentes nos fragmentos oligopeptídicos da gliadina (como o 33-mer), convertendo-os em <strong>ácido glutâmico</strong>. O ácido glutâmico carrega uma forte <strong>carga elétrica negativa</strong>. As moléculas do MHC de classe II codificadas pelos alelos de suscetibilidade <strong>HLA-DQ2 e HLA-DQ8</strong> possuem sítios de ligação com bolsões fortemente eletropositivos; assim, a introdução de cargas negativas pela desamidação aumenta dramaticamente a afinidade e a estabilidade da ligação do peptídeo às fendas de HLA-DQ2/DQ8 nas células apresentadoras de antígeno, deflagrando uma vigorosa e sustentada resposta inflamatória mediada por células T CD4+ Th1."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, B, D e E incorretas:</em> Descrevem modificações bioquímicas incompatíveis com a ação canônica da tTG-2. A enzima não fosforila, não acetila lisina, não metila histonas e não é uma peptidase digestiva capaz de clivar a gliadina em aminoácidos livres."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 7 (SES-PE - Residência Médica):</strong> Menino de 3 anos de idade, previamente hígido, é trazido pela mãe com queixas de fezes pastosas, pálidas e com gotículas de aspecto oleoso, acompanhadas de meteorismo fétido e distensão abdominal após as refeições há 6 semanas. A criança frequenta creche em período integral. Não há história de tosse crônica ou pneumopatias prévias. O teste do pezinho foi normal. Exame físico: abdome distendido e meteorizado, peso no percentil 25 (estável em relação às consultas anteriores). O pediatra suspeita de parasitose intestinal antes de prosseguir para rastreio celíaco invasivo. O patógeno entérico mais frequentemente associado a esse quadro clínico e que mimetiza a síndrome de má absorção celíaca na faixa pré-escolar é:"
+        ],
+        [
+          "u",
+          [
+            "A) <em>Ascaris lumbricoides</em>.",
+            "B) <em>Giardia duodenalis (lamblia)</em>.",
+            "C) <em>Enterobius vermicularis</em>.",
+            "D) <em>Entamoeba histolytica</em>.",
+            "E) <em>Ancylostoma duodenale</em>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A infecção por <strong><em>Giardia duodenalis</em> (também chamada de <em>G. lamblia</em> ou <em>G. intestinalis</em>)</strong> é o protótipo de parasitose intestinal associada à síndrome de má absorção na infância em ambientes coletivos (creches). Os trofozoítos de <em>Giardia</em> fixam-se preferencialmente à mucosa do <strong>duodeno e jejuno proximal</strong> por meio de seus discos suctórios ventrais, causando atrofia vilositária transitória, desconjugação de sais biliares e inibição das dissacaridases da borda em escova. Isso gera um quadro perfeitamente mimetizador de doença celíaca, com esteatorreia, flatulência fétida (\"arrotos com cheiro de enxofre/ovo podre\"), dor em cólica epigástrica/periumbilical pós-prandial e fezes gordurosas."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> <em>Ascaris</em> causa suboclusão mecânica por bolo de vermes, desnutrição espoliativa ou síndrome de Löffler pulmonar, não cursando com esteatorreia por atrofia duodenal.",
+            "<em>Alternativa C incorreta:</em> <em>Enterobius</em> causa prurido anal noturno e vulvovaginite, sem síndrome de má absorção duodenal.",
+            "<em>Alternativa D incorreta:</em> <em>E. histolytica</em> coloniza o cólon e reto, causando colite amebiana invasiva com disenteria (sangue, muco e pus) e abscesso hepático amebiano.",
+            "<em>Alternativa E incorreta:</em> Ancilostomídeos causam anemia ferropriva grave por sangramento capilar duodenal contínuo (\"amarelão\"), sem esteatorreia volumosa característica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 8 (ENAMED / Exame Nacional de Medicina):</strong> Em relação ao seguimento clínico e laboratorial de longo prazo da criança com diagnóstico confirmado de doença celíaca em uso de dieta isenta de glúten, assinale a recomendação correta:"
+        ],
+        [
+          "u",
+          [
+            "A) A persistência de títulos elevados de anti-tTG IgA após 12 meses de dieta indica habitualmente transgressão alimentar ou contaminação cruzada involuntária por glúten.",
+            "B) A endoscopia digestiva alta com repetição de biópsias duodenais é mandatória aos 12 meses de tratamento para todos os pacientes a fim de documentar a regeneração histológica da mucosa.",
+            "C) Pequenas quantidades de glúten (até 1 a 2 fatias de pão por semana) são permitidas a partir dos 10 anos de idade para induzir tolerância oral progressiva.",
+            "D) O consumo de aveia comum não certificada vendida a granel é seguro e deve ser incentivado desde a primeira semana de tratamento.",
+            "E) Uma vez normalizados os níveis de anti-tTG IgA, o paciente pode reintroduzir gradualmente derivados de centeio e cevada na dieta."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "Após a instituição da dieta estritamente isenta de glúten, os níveis séricos de anticorpos anti-tTG IgA caem exponencialmente, atingindo a negativação habitual entre 6 e 12 meses de adesão. A <strong>persistência de títulos elevados de anticorpos após 12 meses</strong> de acompanhamento é o marcador biológico mais fidedigno de <strong>não adesão dietética</strong>, seja por transgressões voluntárias da criança ou, mais frequentemente, por <strong>contaminação cruzada inadvertida por glúten no ambiente doméstico ou escolar</strong> (utensílios compartilhados, produtos industrializados com amido de trigo, etc.)."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa B incorreta:</em> Em pacientes pediátricos assintomáticos com resposta clínica favorável e curva sorológica em queda/normalizada, <strong>NÃO HÁ INDICAÇÃO de realizar biópsia duodenal de controle</strong>! A biópsia de seguimento é reservada exclusivamente para casos de suspeita de doença celíaca refratária ou falha inexplicada de resposta à dieta confirmada.",
+            "<em>Alternativas C e E incorretas:</em> A tolerância oral ao glúten não se restabelece na doença celíaca. A exclusão de trigo, centeio e cevada deve ser <strong>100% isenta e permanente por toda a vida</strong>. Pequenas quantidades desencadeiam recidiva inflamatória e elevam o risco de osteopenia e malignidades linfoproliferativas.",
+            "<em>Alternativa D incorreta:</em> A aveia comum comercializada no Brasil sofre contaminação cruzada sistemática por trigo durante a colheita e moagem; permite-se apenas o consumo de aveia com certificação expressa de \"isenta de glúten\" após remissão inicial."
+          ]
+        ]
+      ]
+    ],
+    [
+      "doenca-celiaca-tabela-high-yield-conclusao",
+      0,
+      [
+        [
+          "2",
+          "10. Tabela Comparativa High-Yield e Takeaway Messages"
+        ],
+        [
+          "p",
+          "Esta seção sintetiza os pontos cardinais da Doença Celíaca e das Síndromes de Má Absorção Pediátricas em uma matriz de alta retenção mnemônica para consultas rápidas na véspera das provas."
+        ],
+        [
+          "t",
+          [
+            "Parâmetro de Avaliação",
+            "Doença Celíaca Pediátrica",
+            "Alergia à Proteína do Leite de Vaca (APLV)",
+            "Fibrose Cística (Mucoviscidose)",
+            "Giardíase Duodenojejunal"
+          ],
+          [
+            [
+              "<strong>Base Fisiopatológica</strong>",
+              "Autoimune: gliadina + HLA-DQ2/DQ8 + tTG-2 + ativação de Th1 e LIEs CD8+.",
+              "Imunológica alérgica (predomínio não IgE-mediado por linfócitos e eosinófilos).",
+              "Genética autossômica recessiva (mutação CFTR) com insuficiência exócrina pancreática.",
+              "Parasitária intraluminal duodenal: adesão de trofozoítos de <em>G. duodenalis</em>."
+            ],
+            [
+              "<strong>Faixa Etária de Início</strong>",
+              "Após introdução de farináceos (> 6 meses, pico 9 a 24 meses; escolares).",
+              "Primeiro semestre de vida (geralmente primeiras semanas a 6 meses).",
+              "Período neonatal ou primeiros meses de vida.",
+              "Crianças de creches e pré-escolares (> 1 ano de vida)."
+            ],
+            [
+              "<strong>Apresentação Digestiva</strong>",
+              "Diarreia crônica osmótica/fermentativa, esteatorreia, distensão abdominal proeminente.",
+              "Proctocolite: sangue vivo (hematoquezia) e muco em lactente hígido; ou diarreia crônica.",
+              "Esteatorreia maciça oleosa fétida, polifagia voraz com emagrecimento severo.",
+              "Fezes amolecidas com brilho gorduroso, meteorismo fétido, dor periumbilical pós-prandial."
+            ],
+            [
+              "<strong>Manifestações Extraintestinais</strong>",
+              "Anemia ferropriva refratária, baixa estatura, aftas orais, dermatite herpetiforme, osteopenia.",
+              "Pode associar-se a dermatite atópica, refluxo gastroesofágico ou anafilaxia (se IgE).",
+              "Íleo meconial, tosse crônica supurativa, bronquiectasias, sinusopatia crônica.",
+              "Habitualmente sem manifestações sistêmicas além de emagrecimento e distensão abdominal."
+            ],
+            [
+              "<strong>Diagnóstico Padrão-Ouro</strong>",
+              "Anti-tTG IgA (>= 10x LSN) + Anti-EMA IgA em 2ª amostra; ou Biópsia duodenal (Marsh 3).",
+              "Melhora com exclusão da dieta materna/fórmula hidrolisada + Teste de Provocação Oral (TPO).",
+              "Teste do Suor: Cloreto >= 60 mEq/L (duas amostras) e/ou sequenciamento do gene CFTR.",
+              "Exame Parasitológico de Fezes (cistos) ou Antígeno Fecal de <em>Giardia</em> por ELISA."
+            ],
+            [
+              "<strong>Tratamento Primário</strong>",
+              "Dieta 100% Isenta de Glúten (sem trigo, centeio, cevada) estrita e vitalícia.",
+              "Fórmula extensamente hidrolisada ou fórmula de aminoácidos; exclusão na dieta materna.",
+              "Reposição de enzimas pancreáticas (lipase) a cada refeição + vitaminas ADEK + suporte pulmonar.",
+              "Antiparasitários orais específicos: Tinidazol (dose única de 50 mg/kg), Nitazoxanida ou Metronidazol."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "10 Takeaways Essenciais para Gabaritar em Pediatria:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Sempre dose a IgA total:</strong> O rastreio de triagem inicial padrão-ouro da Doença Celíaca é a solicitação simultânea de <em>anti-tTG IgA + IgA sérica total</em>.",
+            "<strong>A armadilha da Deficiência de IgA:</strong> Se a IgA sérica total for inferior a 0,2 g/L, os testes anti-tTG IgA e anti-EMA IgA são falsamente negativos. Solicite obrigatoriamente <em>anti-DGP IgG</em> e <em>anti-tTG IgG</em>.",
+            "<strong>A Regra dos 10x LSN (ESPGHAN 2020):</strong> Em crianças, se o anti-tTG IgA for <em>>= 10 vezes o limite superior da normalidade</em>, a endoscopia e a biópsia duodenal são <strong>DISPENSADAS</strong> caso uma segunda amostra de sangue independente confirme a positividade do <em>anti-EMA IgA</em>.",
+            "<strong>HLA não é mais obrigatório para dispensar biópsia:</strong> Desde a revisão de 2020 da ESPGHAN, a tipagem de HLA-DQ2/DQ8 não é necessária para a estratégia diagnóstica sem biópsia.",
+            "<strong>Valor do HLA:</strong> O teste genético HLA-DQ2/DQ8 possui <em>altíssimo valor preditivo negativo (próximo a 100%)</em>; se ambos forem negativos, afasta-se doença celíaca com segurança. No entanto, possui baixo valor preditivo positivo.",
+            "<strong>Proscrito:</strong> Os anticorpos anti-gliadina nativos (AGA IgA e AGA IgG) são exames obsoletos que não devem ser solicitados em hipótese alguma.",
+            "<strong>Histopatologia de Marsh:</strong> Marsh 1 = infiltrado de LIEs (> 25/100 enterócitos); Marsh 2 = LIEs + hiperplasia de criptas; Marsh 3 = atrofia vilositária (3a parcial, 3b subtotal, 3c total). Para biópsia diagnóstica, coletar 1-2 fragmentos do bulbo e pelo menos 4 do duodeno descendente.",
+            "<strong>Dermatite Herpetiforme:</strong> Erupção papulovesicular intensamente pruriginosa simétrica em cotovelos, joelhos e nádegas. Biópsia de pele perilesional com IFD mostra depósitos granulares de IgA nas papilas dérmicas. Sua confirmação <em>dispensa biópsia duodenal</em>! Trata-se com dieta sem glúten + Dapsona aguda.",
+            "<strong>Dieta Vitalícia:</strong> O glúten deve ser excluído totalmente e para sempre (trigo, centeio, cevada). A aveia comum comercial não deve ser consumida devido à contaminação cruzada industrial, exceto aveia pura certificada livre de glúten.",
+            "<strong>Monitoramento:</strong> A sorologia anti-tTG IgA deve negativar entre 6 e 12 meses de dieta. Se persistir positiva após 1 ano, a principal causa é a transgressão alimentar inadvertida ou contaminação cruzada doméstica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://journals.lww.com/jpgn\" target=\"_blank\" rel=\"noopener noreferrer\">HUSBY, S. et al. European Society Paediatric Gastroenterology, Hepatology, and Nutrition Guidelines for Diagnosing Coeliac Disease 2020. Journal of Pediatric Gastroenterology and Nutrition, v. 70, n. 1, p. 141-156, 2020.</a>",
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamento Científico de Gastroenterologia. Doença Celíaca na Criança e no Adolescente: Documento Científico Atualizado. Rio de Janeiro: SBP, 2021/2024.</a>",
+            "<a href=\"https://nature.com\" target=\"_blank\" rel=\"noopener noreferrer\">LEFFLER, D. A. et al. Extraintestinal Manifestations of Celiac Disease. Nature Reviews Gastroenterology & Hepatology, v. 12, p. 561-571, 2015.</a>",
+            "<a href=\"https://journals.physiology.org\" target=\"_blank\" rel=\"noopener noreferrer\">FASANO, A. Zonulin and its regulation of intestinal barrier function: the biological door to inflammation, autoimmunity, and cancer. Physiological Reviews, v. 91, n. 1, p. 151-175, 2011.</a>",
+            "<a href=\"https://pmph-usa.com\" target=\"_blank\" rel=\"noopener noreferrer\">KLEINMAN, R. E.; GOULET, O. Pediatric Gastrointestinal Disease. 6th ed. Shelton: PMPH USA, 2018.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1097 @@
+{
+  "v": 2,
+  "s": "hanseniase-diagnostico-tratamento-e-prevencao-de-incapacidades",
+  "t": "Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades",
+  "p": "Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades — Livro-Texto LURIA",
+  "d": "Tratado Completo da Doença de Hansen: Biologia do Mycobacterium leprae, Espectro de Ridley-Jopling, Propedêutica da Perda de Sensibilidade e Exame de Troncos Neurais, Classificação Operacional PB vs MB, Novo PCDT da Poliquimioterapia Única (PQT-U), Reação Tipo 1 vs Tipo 2 (Talidomida e Corticoterapia), Grau de Incapacidade Física e Vigilância com BCG",
+  "a": "Clínica Médica",
+  "m": "Clínica Médica",
+  "h": [
+    "Apostila LURIA",
+    "Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades",
+    "Tratado Completo da Doença de Hansen: Biologia do Mycobacterium leprae, Espectro de Ridley-Jopling, Propedêutica da Perda de Sensibilidade e Exame de Troncos Neurais, Classificação Operacional PB vs MB, Novo PCDT da Poliquimioterapia Única (PQT-U), Reação Tipo 1 vs Tipo 2 (Talidomida e Corticoterapia), Grau de Incapacidade Física e Vigilância com BCG",
+    [
+      "Área: Clínica Médica",
+      "Matéria: Clínica Médica",
+      "Tema: Hanseníase: Diagnóstico, Tratamento e Prevenção de Incapacidades"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "etiologia-imunopatogenia-e-espectro-de-ridley-jopling",
+      "1. Agente Etiológico, Imunopatogenia e o Espectro Imunoclinico de Ridley-Jopling"
+    ],
+    [
+      "quadro-clinico-dermatoneurologico-e-classificacao-operacional-ms-oms",
+      "2. Quadro Clínico Dermatoneurorradicular e a Classificação Operacional da OMS/Ministério da Saúde"
+    ],
+    [
+      "tratamento-oficial-pcdt-ministerio-da-saude-pqt-u",
+      "3. Tratamento Oficial pelo PCDT do Ministério da Saúde: A Poliquimioterapia Única (PQT-U) e Manejo Farmacológico"
+    ],
+    [
+      "estados-reacionais-reacao-tipo-1-vs-tipo-2-e-manejo",
+      "4. Estados Reacionais na Hanseníase: Reação Reversa (Tipo 1) vs Eritema Nodoso Hansênico (Tipo 2) e Abordagem Terapêutica"
+    ],
+    [
+      "prevencao-de-incapacidades-vigilancia-de-contatos-e-bcg",
+      "5. Avaliação do Grau de Incapacidade Física (GIF), Vigilância Epidemiológica de Contatos e Quimioprofilaxia/Vacinação BCG"
+    ],
+    [
+      "casos-clinicos-estruturados-e-discussao-passo-a-passo",
+      "6. Casos Clínicos Estruturados e Discussão Diagnóstica e Terapêutica Passo a Passo"
+    ],
+    [
+      "questoes-comentadas-de-concursos-e-residencia-medica",
+      "7. Questões Comentadas de Concursos e Residência Médica (Revalida, ENAMED e Institucionais)"
+    ],
+    [
+      "tabela-high-yield-e-pontos-chave-de-memorizacao",
+      "8. Tabela High-Yield Resumo e Pontos-Chave de Memorização para a Prova"
+    ]
+  ],
+  "q": [
+    [
+      "etiologia-imunopatogenia-e-espectro-de-ridley-jopling",
+      0,
+      [
+        [
+          "2",
+          "1. Agente Etiológico, Imunopatogenia e o Espectro Imunoclinico de Ridley-Jopling"
+        ],
+        [
+          "3",
+          "O Agente Etiológico: Mycobacterium leprae e Mycobacterium lepromatosis"
+        ],
+        [
+          "p",
+          "A <strong>Hanseníase (antigamente denominada lepra)</strong> é uma doença infecciosa crônica, granulomatosa e curável, causada primariamente pelo <strong>Mycobacterium leprae</strong>, bacilo descoberto em 1873 pelo médico norueguês Gerhard Henrik Armauer Hansen (sendo uma das primeiras bactérias associadas formalmente a uma doença humana infecciosa). Recentemente, uma segunda espécie filogeneticamente próxima, o <em>Mycobacterium lepromatosis</em>, foi identificada como agente causal de formas lepromatosas difusas (fenômeno de Lúcio) em áreas da América do Norte, México e Ásia."
+        ],
+        [
+          "p",
+          "O <em>Mycobacterium leprae</em> apresenta propriedades biológicas singulares que determinam a patogenia e a evolução insidiosa da enfermidade:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Morfologia e Propriedades Tintoriais:</strong> Trata-se de um bacilo fino, reto ou ligeiramente encurvado, medindo 1 a 8 micrometros de comprimento por 0,2 a 0,5 micrometro de largura. É uma bactéria <strong>Álcool-Ácido Resistente (BAAR)</strong>, corando-se em vermelho brilhante pela técnica clássica de Ziehl-Neelsen ou Kinyoun devido ao elevadíssimo teor de lipídios complexos em sua parede celular (notadamente ácidos micólicos, lipoarabinomanana e glicolipídio fenólico 1 - PGL-1).",
+            "<strong>Parasitismo Intracelular Obrigatório e Tropismos Celulares:</strong> O <em>M. leprae</em> possui um genoma reduzido e repleto de pseudogenes (sofrendo um processo evolutivo de decaimento genômico massivo), o que o torna incapaz de produzir nutrientes essenciais de forma autônoma. Por essa razão, é um <strong>parasita intracelular estrito</strong>, com afinidade biológica extrema e quase exclusiva por dois tipos celulares no hospedeiro humano:\n    <ol>\n      <li><strong>Células de Schwann dos Nervos Periféricos:</strong> O bacilo liga-se especificamente à cadeia alfa-2 da laminina da lâmina basal neural através do PGL-1 e da proteína de 21-kDa da parede celular bacteriana, invadindo os axônios e bainhas mielínicas dos nervos periféricos cutâneos e tronculares mistos;",
+            "<strong>Macrófagos do Sistema Fagocítico Mononuclear:</strong> Onde se abriga e multiplica livremente no interior de vacúolos lipídicos espumosos (as clássicas <em>células de Virchow</em>).",
+            "<strong>Termossensibilidade e Multiplicação Lenta:</strong> O bacilo multiplica-se preferencialmente em temperaturas corporais mais baixas (entre <strong>27 ºC e 33 ºC</strong>). Essa termotolerância restrita explica o tropismo seletivo pelas áreas corporais periféricas mais frias: pele, pavilhão auricular, lobos das orelhas, septo nasal, extremidades distais dos membros, testículos e câmara anterior dos olhos (poupando axilas, fossas poplíteas e o couro cabeludo aquecido). O tempo de duplicação celular mitótica é extraordinariamente lento (cerca de <strong>12 a 14 dias</strong>, comparado a 20 minutos da <em>E. coli</em> ou 24 horas do <em>M. tuberculosis</em>), o que resulta em um período de incubação prolongado, variando de <strong>2 a 7 anos</strong> (podendo ultrapassar 10 a 20 anos em formas multibacilares).",
+            "<strong>Não Cultivável em Meios Acelulares Artificiais:</strong> O <em>M. leprae</em> jamais pôde ser cultivado <em>in vitro</em> em meios de cultura axênicos artificiais sintéticos convencionais. A propagação experimental biológica só é obtida por inoculação na pata traseira de camundongos atímicos ou em tatus-de-nove-faixas (<em>Dasypus novemcinctus</em>), animais que desenvolvem infecção lepromatosa sistêmica devido à sua baixa temperatura corporal basal."
+          ]
+        ],
+        [
+          "3",
+          "Imunopatogenia: O Balanço entre Resposta Th1 (Protetora) e Th2 (Permissiva)"
+        ],
+        [
+          "p",
+          "A hanseníase é fundamentalmente uma <strong>doença de espectro imunológico</strong>. A imensa maioria da população humana adulta (> 90% a 95%) possui resistência inata natural contra o <em>M. leprae</em> e, mesmo quando exposta ao bacilo, não adoece. Nos indivíduos geneticamente suscetíveis que desenvolvem a doença, as manifestações clínicas, a carga bacilar, o padrão histopatológico e o risco de incapacidades físicas dependem estritamente da <strong>qualidade e intensidade da resposta imune celular mediada por Linfócitos T (CMI)</strong> do hospedeiro:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Imunológico",
+            "Polo Tuberculoide (TT) — Alta Imunidade Celular",
+            "Polo Virchowiano (VV) — Annergia Celular Específica"
+          ],
+          [
+            [
+              "<strong>Padrão de Resposta de Linfócitos T Auxiliares</strong>",
+              "<strong>Resposta Th1 Protetora Eficaz</strong> (Imunidade Celular Eficiente).",
+              "<strong>Resposta Th2 Ineficaz / Permissiva</strong> (Imunidade Humoral Aberrante sem controle celular)."
+            ],
+            [
+              "<strong>Perfil de Citocinas Produzidas</strong>",
+              "<strong>IFN-gama, Interleucina-2 (IL-2), IL-12 e TNF-alfa</strong>. Promovem ativação macrofágica robusta, produção de óxido nítrico e destruição intracelular do bacilo.",
+              "<strong>Interleucina-4 (IL-4), IL-10, IL-13 e TGF-beta</strong>. Desativam macrófagos, bloqueiam a produção de óxido nítrico e promovem tolerância imunológica anérgica ao bacilo."
+            ],
+            [
+              "<strong>Carga Bacilar e Bacilos na Lesão</strong>",
+              "<strong>Escassos ou ausentes</strong> (Paucibacilar — PB). Índice baciloscópico (IB) = 0.",
+              "<strong>Incontáveis bacilos e globias</strong> (Multibacilar — MB). Índice baciloscópico (IB) = 4+ a 6+."
+            ],
+            [
+              "<strong>Arquitetura Histopatológica</strong>",
+              "<strong>Granulomas epitelioides bem organizados</strong> compostos por células gigantes multinucleadas (tipo Langhans) circundados por uma densa e vigorosa coroa de linfócitos T CD4+. Ausência de zona livre de Grenz (o infiltrado estende-se até a epiderme, erodindo a camada basal).",
+              "<strong>Infiltrado macrofágico espumoso desorganizado (células de Virchow)</strong> repletas de lipídios e agregados bacilares intracelulares (globias). Presença conspícua da <strong>Banda ou Faixa de Grenz</strong> (faixa subepidérmica acelular de colágeno preservado que separa a epiderme do infiltrado dermo-hipodérmico)."
+            ],
+            [
+              "<strong>Teste de Mitsuda (Reação à Lepromina)</strong>",
+              "<strong>Fortemente Positivo (> 5 a 10 mm de enduração eritematosa aos 21-28 dias)</strong>. Indica imunidade celular tardia competente contra antígenos bacilares.",
+              "<strong>Totalmente Negativo (0 mm)</strong>. Annergia celular absoluta específica ao <em>M. leprae</em> (o paciente responde normalmente a outros antígenos como tuberculina / PPD)."
+            ],
+            [
+              "<strong>Produção de Anticorpos Séricos Anti-PGL-1</strong>",
+              "Títulos baixos, indetectáveis ou negativos de anticorpos séricos.",
+              "<strong>Títulos extraordinariamente elevados de anticorpos IgM anti-PGL-1</strong> circulantes (inúteis para proteção, mas com formação massiva de imunocomplexos)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O Espectro Imunoclínico de Ridley-Jopling (1966)"
+        ],
+        [
+          "p",
+          "Proposta pelos pesquisadores Dennis S. Ridley e William H. Jopling em 1966, esta classificação é o alicerce biológico mundial da hanseníase, dividindo a doença em <strong>dois polos estáveis e três formas clínicas instáveis interpolares (dimorfas ou borderline)</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hanseníase Indeterminada (HI — Forma Inicial Transitória):</strong> É a manifestação clínica inaugural pós-infecção, antes que o sistema imune defina o polo de resposta. Apresenta-se tipicamente como <strong>uma única mancha hipocrômica</strong> com bordas imprecisas, plana, com alteração precoce da sensibilidade térmica e preservação da sensibilidade tátil e dolorosa inicial. Não há espessamento de troncos neurais periféricos. Mitsuda pode ser positivo ou negativo. Pode curar espontaneamente ou evoluir para qualquer um dos polos do espectro.",
+            "<strong>Polo Tuberculoide Estável (TT):</strong> Representa o ápice da imunidade celular eficaz. Caracteriza-se por lesões cutâneas isoladas (geralmente 1 a 3 lesões): <strong>placas eritematosas ou eritêmato-acastanhadas circulares, com bordas elevadas, micropapulosas e centro atrófico e hipocrômico (\"em anel\" ou sarcoídicas)</strong>. Apresenta anestesia cutânea completa (térmica, dolorosa e tátil), alopecia focal e anidrose (perda de pelos e suor na placa). Ocorre comprometimento neural precoce, localizado e assimétrico: espessamento acentuado de um único tronco neural periférico adjacente à lesão (ex.: nervo ulnar ou auricular), com dor neuropática intensa e risco de dano motor focal precoce.",
+            "<strong>Formas Interpolares / Dimorfas / Borderline (Instáveis):</strong> Representam a maioria dos casos no Brasil, situando-se em um gradiente contínuo de perda da imunidade celular:\n    <ul>\n      <li><em>Hanseníase Dimorfa-Tuberculoide (DT / Borderline-Tuberculoid - BT):</em> Lesões semelhantes às tuberculoides, porém mais numerosas (4 a 10 lesões), satélites e assimétricas, com bordas externas esfumadas e acometimento de mais de um tronco nervoso.",
+            "<em>Hanseníase Dimorfa-Dimorfa (DD / Borderline-Borderline - BB):</em> Lesões altamente características em aspecto <strong>fóvea, anular ou \"em queijo suíço\"</strong> (placas eritematosas com bordo interno nítido bem demarcado e bordo externo impreciso que se dissolve na pele normal sadia, com o centro da lesão deprimido e aparentemente poupado). Múltiplos troncos neurais espessados assimetricamente. Forma de extrema instabilidade imunológica, sujeita a graves reações do Tipo 1.",
+            "<em>Hanseníase Dimorfa-Virchowiana (DV / Borderline-Lepromatous - BL):</em> Múltiplas lesões máculo-papulosas, placas e nódulos acastanhados disseminados pelo corpo, simétricos no tronco e membros, com limites pouco definidos, infiltração difusa incipiente e comprometimento neural periférico bilateral e simétrico.",
+            "<strong>Polo Virchowiano Estável (VV / Lepromatoso - LL):</strong> Representa a anergia celular absoluta. O bacilo prolifera descontroladamente, invadindo macrófagos, células endoteliais e nervos em todo o organismo. Manifesta-se por:\n    <ul>\n      <li>Infiltração cutânea eritemato-acobreada difusa, brilhante e endurecida da pele, com pele seca e anidrótica;",
+            "<strong>Fácies Leonina:</strong> Espessamento e infiltração monstruosa da pele frontal e superciliar com acentuação dos sulcos naturais faciais, tumefação nasal e espessamento das bochechas, conferindo aspecto leonino;",
+            "<strong>Madarose Ciliar e Superciliar:</strong> Queda e destruição bilateral simétrica dos pelos das sobrancelhas (iniciando pelos dois terços externos - madarose parcial) e dos cílios palpebrais;",
+            "Presença de múltiplos <strong>hansenomas (lepromas)</strong>: pápulas e nódulos dérmicos firmes acastanhados distribuídos simetricamente nas orelhas, face e membros extensores;",
+            "Comprometimento visceral sistêmico: rinite lepromatosa crônica com rinorreia purulenta/crostosa sanguinolenta, perfuração do septo nasal cartilaginoso com colapso da ponte nasal (\"nariz em sela\"), orquite e atrofia testicular com ginecomastia e esterilidade no homem, ceratite e uveíte anterior crônica causadoras de cegueira, hepatoesplenomegalia e amiloidose secundária sistêmica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-dermatoneurologico-e-classificacao-operacional-ms-oms",
+      0,
+      [
+        [
+          "2",
+          "2. Quadro Clínico Dermatoneurorradicular e a Classificação Operacional da OMS/Ministério da Saúde"
+        ],
+        [
+          "3",
+          "O Quadro Clínico Dermatoneurológico: A Marca Registrada da Hanseníase"
+        ],
+        [
+          "p",
+          "A hanseníase distingue-se de todas as outras afecções dermatológicas por ser obrigatoriamente uma <strong>doença neurológica com manifestações cutâneas</strong>. O <em>Mycobacterium leprae</em> ataca os pequenos ramos nervosos sensitivos e autonômicos intraepidérmicos da derme e os grandes troncos nervosos periféricos mistos."
+        ],
+        [
+          "4",
+          "1. A Sequência Obrigatória da Perda de Sensibilidade Cutânea"
+        ],
+        [
+          "p",
+          "Nas lesões de pele suspeitas da hanseníase, o acometimento das fibras nervosas amielínicas e mielínicas finas obedece a uma <strong>cronologia fisiopatológica estrita de destruição axonal</strong>, que deve ser rotineiramente testada na propedêutica armada na atenção primária:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1º: Perda da Função Autonômica / Simpática (Anidrose e Perda Térmica):</strong>\n    <ul>\n      <li>As pequenas fibras C autonômicas amielínicas são as primeiras a sofrer lise pelo bacilo. Ocorre <em>anidrose</em> (abolição da sudorese local) e perda da vasoconstrição reflexa, tornando a pele da lesão seca, descamativa e quente. O teste de histamina (prova da histamina) revela a ausência da tríplice reação eritematosa reflexa periférica de Lewis (restando apenas o eritema direto mecânico inicial).",
+            "Concomitantemente, instala-se a <strong>perda da sensibilidade térmica</strong> (fibras A-delta e C). Pesquisa-se utilizando dois tubos de ensaio fechados: um contendo água quente (40 ºC a 45 ºC) e outro com água fria (10 ºC a 15 ºC). O paciente fecha os olhos e deve identificar prontamente a diferença. A abolição da percepção térmica na área de uma mancha cutânea é frequentemente o <strong>primeiro sinal objetivo precoce da hanseníase</strong>!",
+            "<strong>2º: Perda da Sensibilidade Dolorosa (Fibras A-delta mielínicas):</strong>\n    <ul>\n      <li>Avalia-se com a ponta de uma agulha descartável estéril (ou estesiômetro). O paciente com os olhos fechados não percebe a picada dolorosa (analgesia focal) no interior da lesão, ao passo que percebe perfeitamente na pele circunvizinha sadia.",
+            "<strong>3º: Perda da Sensibilidade Tátil (Fibras A-beta mielinizadas grossas — A mais tardia a desaparecer!):</strong>\n    <ul>\n      <li>Pesquisa-se tocando a lesão suavemente com uma mecha de algodão seco ou com o monofilamento de nylon de Semmes-Weinstein (estesiômetro). Por ser mediada por fibras mielinizadas mais calibrosas e resistentes, a sensibilidade tátil é a <strong>última a desaparecer</strong>.",
+            "<em>Atenção para pegadinha clássica de prova de Residência:</em> Uma mancha cutânea que preserva a sensibilidade tátil mas perdeu a sensibilidade térmica e dolorosa é <strong>plenamente compatível com Hanseníase inicial (forma indeterminada)</strong>! Exigir anestesia tátil total para pensar em hanseníase é imperícia que retarda o diagnóstico precoce!"
+          ]
+        ],
+        [
+          "4",
+          "2. Exame Físico dos Troncos Nervosos Periféricos (Palpação e Espessamento Neural)"
+        ],
+        [
+          "p",
+          "Todo paciente com suspeita de hanseníase deve ser submetido à palpação comparativa e sistemática dos <strong>troncos nervosos periféricos mais vulneráveis ao M. leprae</strong>, avaliando espessamento (calibre), dor espontânea ou à palpação (neurite aguda) e consistência mecânica:"
+        ],
+        [
+          "t",
+          [
+            "Tronco Nervoso Periférico",
+            "Ponto Anatômico de Palpação e Exame Clínico",
+            "Consequências Clínicas do Dano Neural Motor e Sensitivo",
+            "Deformidades e Incapacidades Resultantes"
+          ],
+          [
+            [
+              "<strong>Nervo Ulnar (Cubital)</strong><br><em>(O nervo mais frequentemente acometido!)</em>",
+              "Palpado na goteira epitrócleo-olecraniana (sulco do nervo ulnar na face posterior do cotovelo) com o membro semi-fletido a 90º.",
+              "Perda de sensibilidade na face ulnar da mão, metade ulnar do 4º dedo e todo o 5º dedo. Atrofia da eminência hipotenar e dos músculos interósseos da mão. Fraqueza de pinça ulnar.",
+              "<strong>\"Garra Ulnar\"</strong> (hiperextensão das articulações metacarpofalângicas e flexão das interfalângicas do 4º e 5º dedos). Sinal de Froment positivo (fraqueza do adutor do polegar compensada pela flexão da falange distal via nervo mediano)."
+            ],
+            [
+              "<strong>Nervo Mediano</strong>",
+              "Palpado profundamente na prega flexora anterior do punho, logo medial ao tendão do flexor radial do carpo.",
+              "Anestesia da face palmar dos três primeiros dedos e metade lateral do 4º dedo. Paralisia e atrofia acentuada da eminência tenar. Perda da oponência do polegar.",
+              "<strong>\"Mão de Macaco\"</strong> (impossibilidade de opor o polegar aos demais dedos, ficando no mesmo plano da palma) e garra medular nos 2º e 3º quirodáctilos."
+            ],
+            [
+              "<strong>Nervo Radial</strong>",
+              "Palpado na face lateral do braço, onde cruza a goteira de torção do úmero, e no dorso do punho.",
+              "Perda da extensão do punho, dos dedos e do polegar (atrofia dos extensores do antebraço). Hipoestesia no dorso do primeiro espaço interdigital.",
+              "<strong>\"Mão Caída\" / \"Mão Pendente\"</strong> (queda do punho em flexão permanente, impossibilitando a preensão)."
+            ],
+            [
+              "<strong>Nervo Fibular Comum (Ciático Poplíteo Externo)</strong>",
+              "Palpado no membro inferior cruzando superficialmente o colo da fíbula logo abaixo da cabeça da fíbula na face lateral da perna.",
+              "Paralisia dos músculos do compartimento anterior e lateral da perna (tibial anterior, extensores dos dedos e fibulares). Anestesia do dorso do pé.",
+              "<strong>\"Pé Caído\" / \"Pé Pendente\"</strong> com marcha escarvante (o paciente eleva excessivamente o joelho durante a deambulação para o pé não arrastar no chão)."
+            ],
+            [
+              "<strong>Nervo Tibial Posterior</strong>",
+              "Palpado na face medial do tornozelo, na goteira retromaleolar medial, logo posterior à artéria tibial posterior.",
+              "Anestesia de toda a região plantar do pé e atrofia dos músculos intrínsecos plantares.",
+              "<strong>\"Garra de Pododáctilos\" (Garra de Artelhos)</strong> e <strong>Mal Perfurante Plantar</strong> (úlceras tróficas crônicas indolores de pressão sob as cabeças dos metatarsos e calcâneo devido à marcha sobre área anestésica!)."
+            ],
+            [
+              "<strong>Nervo Facial (7º Par Craniano — Ramos Zigomático e Temporal)</strong>",
+              "Avaliado funcionalmente solicitando ao paciente oclusão ocular forçada e enrugamento da fronte.",
+              "Paresia ou paralisia do músculo orbicular das pálpebras.",
+              "<strong>Lagoftalmo</strong> (incapacidade de ocluir completamente a fenda palpebral), ectrópio cicatricial, ceratite por dessecação e exposição contínua da córnea, culminando em opacificação corneana e amaurose (cegueira)."
+            ],
+            [
+              "<strong>Nervo Auricular Magno</strong>",
+              "Palpado na face lateral do pescoço, cruzando obliquamente a porção média do músculo esternocleidomastoideo em direção ao lóbulo da orelha.",
+              "Espessamento cordonal visível e palpável no pescoço com dor reflexa auricular.",
+              "Sinal de valor diagnóstico altíssimo quando associado a lesões faciais ou lobulares."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Classificação Operacional Oficial do Ministério da Saúde / OMS"
+        ],
+        [
+          "p",
+          "Para simplificar a abordagem terapêutica nas unidades básicas de saúde e dispensar a necessidade obrigatória de biópsias histopatológicas especializadas complexas no campo, a Organização Mundial da Saúde (OMS) e o Ministério da Saúde do Brasil adotaram a <strong>Classificação Operacional</strong>, dividindo os pacientes em apenas dois grandes grupos com base no número de lesões de pele e na baciloscopia:"
+        ],
+        [
+          "t",
+          [
+            "Classificação Operacional",
+            "Critério Clínico do Número de Lesões de Pele",
+            "Resultado da Baciloscopia de Raspado Dérmico",
+            "Formas Clínicas de Ridley-Jopling Incluídas",
+            "Esquema Terapêutico PQT-U Padronizado"
+          ],
+          [
+            [
+              "<strong>Paucibacilar (PB)</strong>",
+              "Presença de <strong>até 5 lesões de pele</strong> (1 a 5 lesões ativas com perda de sensibilidade).",
+              "<strong>Obrigatoriamente NEGATIVA (Índice Baciloscópico = 0)</strong> em todos os sítios coletados. (A baciloscopia negativa não exclui hanseníase PB!).",
+              "Hanseníase Indeterminada (HI) e Hanseníase Tuberculoide (TT).",
+              "<strong>6 cartelas / doses supervisionadas</strong> da PQT-U tomadas em até 9 meses consecutivos."
+            ],
+            [
+              "<strong>Multibacilar (MB)</strong>",
+              "Presença de <strong>MAIS DE 5 lesões de pele (> 5 lesões)</strong>; OU comprometimento de <strong>mais de um tronco nervoso periférico</strong>.",
+              "<strong>Baciloscopia de Raspado Dérmico POSITIVA</strong> (qualquer presença de bacilos BAAR em qualquer sítio examinado torna o caso automaticamente Multibacilar, mesmo que tenha menos de 5 lesões!).",
+              "Hanseníase Dimorfa (DT, DD, DV) e Hanseníase Virchowiana (VV).",
+              "<strong>12 cartelas / doses supervisionadas</strong> da PQT-U tomadas em até 18 meses consecutivos."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Regra de ouro das bancas examinadoras:</em> Se houver divergência entre o número de lesões cutâneas e a baciloscopia (por exemplo: paciente com 2 lesões de pele apenas, mas cuja baciloscopia de raspado dérmico resultou positiva com IB 2+), <strong>O PACIENTE É CLASSIFICADO COMO MULTIBACILAR (MB) E DEVE RECEBER O TRATAMENTO DE 12 DOSES! A baciloscopia positiva sempre sobrepõe o número de lesões cutâneas!</strong> Na dúvida diagnóstica operacional sem acesso à baciloscopia, o Ministério da Saúde determina classificar e tratar o paciente como Multibacilar para garantir a cura plena e evitar subtratamento."
+        ]
+      ]
+    ],
+    [
+      "tratamento-oficial-pcdt-ministerio-da-saude-pqt-u",
+      0,
+      [
+        [
+          "2",
+          "3. Tratamento Oficial pelo PCDT do Ministério da Saúde: A Poliquimioterapia Única (PQT-U) e Manejo Farmacológico"
+        ],
+        [
+          "3",
+          "O Marco Histórico da Poliquimioterapia Única (PQT-U) no Brasil"
+        ],
+        [
+          "p",
+          "Durante décadas, a Organização Mundial da Saúde e o Ministério da Saúde mantiveram dois esquemas de tratamento distintos: o esquema Paucibacilar (composto apenas por Rifampicina e Dapsona) e o esquema Multibacilar (composto por Rifampicina, Dapsona e Clofazimina). Em 2018, a OMS recomendou a unificação internacional e, a partir de <strong>julho de 2021 (com publicação de Notas Técnicas oficiais e incorporação plena no Protocolo Clínico e Diretrizes Terapêuticas - PCDT da Hanseníase do Ministério da Saúde do Brasil)</strong>, o país adotou oficialmente o regime denominado <strong>Poliquimioterapia Única (PQT-U)</strong>."
+        ],
+        [
+          "p",
+          "No modelo da PQT-U, <strong>TODOS OS PACIENTES (tanto Paucibacilares quanto Multibacilares) utilizam exatamente a mesma composição de três drogas: RIFAMPICINA, DAPSONA e CLOFAZIMINA</strong>, acondicionadas em uma cartela blister padronizada única. A <strong>ÚNICA DIFERENÇA entre PB e MB reside exclusivamente na DURAÇÃO TOTAL DO TRATAMENTO (número de doses supervisionadas)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Paucibacilar (PB):</strong> <strong>6 doses mensais supervisionadas</strong> da cartela PQT-U administradas em até <strong>9 meses consecutivos</strong>;",
+            "<strong>Multibacilar (MB):</strong> <strong>12 doses mensais supervisionadas</strong> da cartela PQT-U administradas em até <strong>18 meses consecutivos</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<em>Vantagens Estratégicas da Adoção da PQT-U:</em> Elimina o risco de subtratamento por erro de classificação diagnóstica no campo (uma vez que o paciente PB agora recebe também a Clofazimina, droga com potente ação anti-inflamatória protetora contra reações hansênicas), simplifica a logística de compras, armazenamento e distribuição nas farmácias básicas do SUS e diminui as taxas de abandono e recidiva."
+        ],
+        [
+          "3",
+          "Composição, Mecanismo e Posologia da PQT-U em Adultos"
+        ],
+        [
+          "p",
+          "A cartela da PQT-U para adultos é composta por doses mensais supervisionadas (tomadas presencialmente na unidade de saúde diante do profissional de saúde) e doses diárias autoadministradas no domicílio pelo próprio paciente:"
+        ],
+        [
+          "t",
+          [
+            "Medicamento Integrante da PQT-U",
+            "Mecanismo Molecular de Ação Farmacológica",
+            "Dose Mensal Supervisionada (Presencial na UBS)",
+            "Dose Diária Autoadministrada (Domiciliar pelo Paciente)",
+            "Toxicidades Específicas e Monitorização Clínica"
+          ],
+          [
+            [
+              "<strong>Rifampicina</strong>",
+              "Inibição potente da subunidade beta da enzima bacteriana <strong>RNA-polimerase DNA-dependente</strong>, bloqueando a síntese de RNA mensageiro. É a droga bactericida mais potente do esquema (destrói 99,9% dos bacilos viáveis na primeira dose!).",
+              "<strong>600 mg em dose única mensal</strong> (administrada sob a forma de 2 cápsulas de 300 mg sob supervisão direta do profissional).",
+              "<strong>NÃO HÁ dose autoadministrada domiciliar</strong> (a rifampicina é tomada estritamente uma única vez a cada 28 a 30 dias!).",
+              "Hepatotoxicidade com elevação de transaminases; coloração avermelhada / alaranjada inofensiva das excreções corporais (urina, suor, lágrimas e saliva — <em>orientação mandatória ao paciente para evitar pânico!</em>); síndrome gripal (\"flu-like syndrome\") imunomediada; potente indutor enzimático do citocromo P450 hepático (interação clássica reduzindo a eficácia de anticoncepcionais orais hormonais e antirretrovirais!)."
+            ],
+            [
+              "<strong>Dapsona (DDS / Diaminodifenilsulfona)</strong>",
+              "Inibição competitiva da enzima bacteriana <strong>di-hidropteroato sintase</strong>, bloqueando a síntese de ácido fólico bacteriano e síntese de purinas/timidina (ação bacteriostática).",
+              "<strong>100 mg em dose única</strong> tomada no dia da consulta supervisionada.",
+              "<strong>100 mg via oral uma vez ao dia</strong> (todos os dias do mês).",
+              "<strong>Hemólise oxidativa intravascular com anemia hemolítica</strong> (especialmente em indivíduos com deficiência genética da enzima G6PD); <strong>Metemoglobinemia</strong> (manifestando-se com cianose labial e periférica com saturação baixa refratária ao O2 por oximetria de pulso!); Síndrome de Hipersensibilidade à Sulfona (Febre, exantema esfoliativo grave, adenopatia, hepatite e icterícia — exige suspensão imediata e definitiva da dapsona!); agranulocitose medicamentosa e neuropatia periférica motora distal."
+            ],
+            [
+              "<strong>Clofazimina (Lamprene)</strong>",
+              "Corante iminofenazínico lipofílico que se liga avidamente às sequências de DNA ricas em guanina do <em>M. leprae</em>, inibindo a replicação bacteriana e gerando espécies reativas de oxigênio (efeito bacteriostático e bactericida lento). Possui marcante e potente <strong>efeito anti-inflamatório imunomodulador</strong> (inibe neutrófilos e macrófagos, prevenindo e atenuando o eritema nodoso hansênico).",
+              "<strong>300 mg em dose única mensal</strong> (3 cápsulas gelatinosas de 100 mg sob supervisão).",
+              "<strong>50 mg via oral uma vez ao dia</strong> (todos os dias do mês, ou 100 mg em dias alternados).",
+              "<strong>Pigmentação cutânea avermelhada a castanho-escura / enegrecida característica e marcante</strong> (a droga acumula-se nas células de gordura e no sistema reticuloendotelial, provocando escurecimento da pele que se intensifica com a exposição solar — <em>causa frequente de estigma psicológico e abandono; deve ser exaustivamente explicada ao paciente, assegurando que é reversível após o término do tratamento!</em>); ressecamento cutâneo extremo (ictiose medicamentosa); toxicidade gastrointestinal por acúmulo de cristais de clofazimina na lâmina própria intestinal (dor abdominal, náuseas, diarreia e raros casos de enteropatia obstrutiva por cristais)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "PQT-U em Crianças e Ajustes de Dose Pediátrica"
+        ],
+        [
+          "p",
+          "Em crianças, as doses são estritamente ajustadas pelo peso corporal:"
+        ],
+        [
+          "u",
+          [
+            "<em>Rifampicina:</em> 10 mg/kg/dose mensal supervisionada (máximo 600 mg);",
+            "<em>Dapsona:</em> 1 a 2 mg/kg/dia autoadministrada (máximo 100 mg/dia);",
+            "<em>Clofazimina:</em> Dose supervisionada mensal de 150 mg (se 10 a 14 anos) ou 100 mg (se < 10 anos); dose domiciliar de 50 mg duas vezes por semana ou em dias alternados."
+          ]
+        ],
+        [
+          "4",
+          "Esquemas Alternativos Oficiais na Intolerância ou Toxicidade Severa"
+        ],
+        [
+          "p",
+          "Quando ocorrem reações adversas graves que obrigam a suspensão definitiva de componentes da PQT-U, o Ministério da Saúde disponibiliza medicamentos de segunda linha para a composição de esquemas substitutivos padronizados:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Intolerância Severa ou Alergia Grave à Dapsona (Anemia hemolítica grave, metemoglobinemia, Síndrome da Sulfona):</strong>\n    <ul>\n      <li>Substitui-se a Dapsona por <strong>Ofloxacino (400 mg/dia VO)</strong> OU <strong>Minociclina (100 mg/dia VO)</strong>, mantendo a Rifampicina e a Clofazimina no esquema.",
+            "<strong>Hepatotoxicidade Grave ou Alergia à Rifampicina:</strong>\n    <ul>\n      <li>Substitui-se a Rifampicina por uma quinolona (Ofloxacino 400 mg/dia) associada a Minociclina 100 mg/dia e Clofazimina.",
+            "<strong>Recusa Absoluta da Clofazimina por Pigmentação Cutânea Extrema:</strong>\n    <ul>\n      <li>Substitui-se a Clofazimina por Minociclina 100 mg/dia ou Ofloxacino 400 mg/dia."
+          ]
+        ]
+      ]
+    ],
+    [
+      "estados-reacionais-reacao-tipo-1-vs-tipo-2-e-manejo",
+      0,
+      [
+        [
+          "2",
+          "4. Estados Reacionais na Hanseníase: Reação Reversa (Tipo 1) vs Eritema Nodoso Hansênico (Tipo 2) e Abordagem Terapêutica"
+        ],
+        [
+          "3",
+          "Fisiopatologia dos Episódios Reacionais (Reações Hansênicas)"
+        ],
+        [
+          "p",
+          "Os <strong>Estados Reacionais ou Reações Hansênicas</strong> são episódios inflamatórios agudos e subagudos desencadeados por alterações abruptas no equilíbrio imunológico entre o sistema imune do hospedeiro e os antígenos bacilares do <em>M. leprae</em>. <strong>NÃO representam falha terapêutica medicamentosa, não significam progressão da infecção ativa nem indicam resistência bacteriana!</strong>"
+        ],
+        [
+          "p",
+          "Podem ocorrer em três momentos clínicos distintos: antes do diagnóstico (levando o paciente à primeira consulta médica), durante o tratamento com a PQT-U (sendo muito frequentes nos primeiros 6 meses) ou até mesmo <strong>anos após a conclusão bem-sucedida e cura com a poliquimioterapia</strong> (devido à permanência de restos antigênicos bacilares mortos retidos nos tecidos por anos). Fatores precipitantes clássicos incluem: estresse físico/emocional, infecções bacterianas ou virais intercorrentes, vacinação prévia, gestação e puerpério (momento de alta incidência de reação reversa pela restauração pós-parto da resposta imune celular Th1!)."
+        ],
+        [
+          "t",
+          [
+            "Parâmetro de Diferenciação",
+            "Reação Hansênica Tipo 1 (Reação Reversa / Reversal Reaction)",
+            "Reação Hansênica Tipo 2 (Eritema Nodoso Hansênico - ENH)"
+          ],
+          [
+            [
+              "<strong>Mecanismo Imunopatológico</strong>",
+              "<strong>Hipersensibilidade Celular Tardia (Tipo IV de Gell & Coombs)</strong>. Aumento súbito da resposta imune celular Th1 específica contra antígenos bacilares nos tecidos e nervos, com liberação maciça de IFN-gama e TNF-alfa.",
+              "<strong>Hipersensibilidade por Imunocomplexos (Tipo III de Gell & Coombs)</strong> mediada por resposta Th2. Formação excessiva de imunocomplexos circulantes antígeno-anticorpo que precipitam nas paredes dos vasos e órgãos com ativação de complemento e liberação fulminante de TNF-alfa e IL-6."
+            ],
+            [
+              "<strong>Formas Clínicas Predispostas</strong>",
+              "Ocorre tipicamente nas <strong>Formas Dimorfas / Borderline instáveis (DT, DD e DV)</strong> do espectro de Ridley-Jopling. Rara no polo virchowiano estável.",
+              "Ocorre <strong>EXCLUSIVAMENTE em pacientes Multibacilares com alta carga bacilar: Forma Virchowiana (VV) e Dimorfa-Virchowiana (DV)</strong>. Jamais ocorre em paucibacilares!"
+            ],
+            [
+              "<strong>Lesões Dermatológicas Características</strong>",
+              "As <strong>lesões pré-existentes tornam-se agudamente eritematosas, edematosas, brilhantes, infiltradas e dolorosas</strong>, com surgimento de novas lesões eritematosas semelhantes. As lesões podem descamar ou sofrer ulceração nas formas graves. Não há nódulos subcutâneos efêmeros.",
+              "Surgimento súbito de <strong>múltiplos nódulos e placas eritematosas inflamatórias, quentes, extremamente dolorosas à palpação</strong>, localizados na derme profunda e tecido celular subcutâneo. Distribuem-se simetricamente na face e nas superfícies extensoras dos membros superiores e inferiores. Nódulos são efêmeros (surgem em surtos, involuem em 1 a 2 semanas deixando máculas hipercrômicas). Podem evoluir para nódulos necrotizantes / bolhosos (ENH necrotizante)."
+            ],
+            [
+              "<strong>Acometimento de Troncos Nervosos (Neurite Aguda)</strong>",
+              "<strong>Frequente, precoce, intensa e destrutiva!</strong> Dor neural espontânea e à palpação ao longo do trajeto dos troncos nervosos periféricos (ulnar, fibular, tibial), perda súbita de sensibilidade e fraqueza motora aguda com risco imediato de garra ou pé caído.",
+              "Comum, porém geralmente menos destrutiva e acompanhada por dor articular e muscular generalizada intensa."
+            ],
+            [
+              "<strong>Manifestações Sistêmicas Extracutâneas</strong>",
+              "Geralmente ausentes ou leves. O paciente mantém-se afebril ou com febrícula discreta, sem toxicidade sistêmica importante, com estado geral preservado.",
+              "<strong>Quadro sistêmico exuberante e tóxico:</strong> Febre alta contínua com calafrios, astenia prostrante, anorexia, artralgia migratória inflamatória incapacitante, mialgia difusa, orquiepididimite aguda bilateral (risco de esterilidade testicular), uveíte anterior aguda / iridociclite (risco de cegueira!), glomerulonefrite aguda e linfoadenopatia generalizada."
+            ],
+            [
+              "<strong>Tratamento Farmacológico de PRIMEIRA ESCOLHA</strong>",
+              "<strong>CORTICOTERAPIA ORAL EM ALTAS DOSES: PREDNISONA</strong><br>Dose de ataque: <strong>1 a 1,5 mg/kg/dia por via oral</strong> (em dose única matinal), mantida até melhora clínica e neurológica completa, seguida de desmame lento e gradual ao longo de <strong>vários meses (4 a 6 meses ou mais)</strong> para prevenir o efeito rebote!",
+              "<strong>TALIDOMIDA (Medicamento Padrão-Ouro Oficial)</strong><br>Dose de ataque: <strong>100 a 400 mg/dia por via oral</strong> (dividida em tomadas ou dose única noturna conforme a gravidade), reduzindo progressivamente para doses de manutenção (50 a 100 mg/dia) após remissão dos nódulos."
+            ],
+            [
+              "<strong>Uso da Talidomida vs Corticoide</strong>",
+              "A <strong>Talidomida é TOTALMENTE INEFICAZ na Reação Tipo 1</strong> e NÃO deve ser utilizada!",
+              "Se a Talidomida for contraindicada (ex.: mulher em idade fértil) ou se houver neurite aguda, orquite ou iridociclite concomitante, o tratamento de escolha é a <strong>Corticoterapia Oral (Prednisona 1 a 1,5 mg/kg/dia) associada ou isolada</strong>."
+            ],
+            [
+              "<strong>Conduta Quanto à Poliquimioterapia (PQT-U)</strong>",
+              "<strong>NUNCA SUSPENDER A PQT-U!</strong> O tratamento antibacteriano deve ser rigorosamente mantido conforme o calendário regular regular do paciente!",
+              "<strong>NUNCA SUSPENDER A PQT-U!</strong> O tratamento antibacteriano deve ser continuado rigorosamente sem qualquer interrupção!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "A Talidomida e a Legislação Específica no Brasil (Lei Federal nº 10.651/2003)"
+        ],
+        [
+          "p",
+          "A <strong>Talidomida</strong> é um sedativo hipnótico com potente ação imunomoduladora anti-TNF-alfa. É a droga de escolha mais eficaz para o controle do eritema nodoso hansênico grave. Contudo, devido à sua <strong>teratogenicidade catastrófica comprovada</strong> — causadora clássica de <strong>focomelia, amelia, microrrizomelia e anomalias cardíacas congênitas graves</strong> quando ingerida durante a embriogênese —, seu uso é regulado pela Portaria SVS/MS nº 344/98 e pela Lei Federal nº 10.651/2003:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Contraindicação Formal Absoluta:</strong> Gestantes e <strong>mulheres em idade fértil (menacme) que não estejam em uso comprovado de dupla contracepção eficaz</strong> (um método de alta eficácia como DIU ou implante associado a método de barreira). No Brasil, para mulheres no menacme, a talidomida é evitada ao máximo, optando-se prioritariamente pela Prednisona ou Pentoxifilina!",
+            "Termo de Consentimento Pós-Informado e Notificação de Receita B específica obrigatória no SUS."
+          ]
+        ],
+        [
+          "4",
+          "Manejo da Neurite Aguda na Hanseníase (A Urgência Neurológica Máxima)"
+        ],
+        [
+          "p",
+          "A neurite aguda é definida como dor espontânea ou à palpação de um tronco nervoso periférico, associada à perda funcional motora ou sensitiva aguda (com menos de 6 meses de evolução):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conduta Clínica Imediata:</strong> Início imediato de <strong>Prednisona 1 a 2 mg/kg/dia por via oral</strong>; imobilização do membro afetado com tala gessada ou órtese funcional em posição anatômica neutra para repouso neural; fisioterapia motora precoce passiva e ativa supervisionada;",
+            "<strong>Indicação de Neurolise Cirúrgica (Descompressão Cirúrgica de Troncos Nervosos):</strong>\n    <ul>\n      <li>Neurite persistente refratária com dor excruciante que não cede após 4 semanas de corticoterapia em doses plenas otimizadas;",
+            "Piora progressiva do déficit motor/sensitivo durante a corticoterapia;",
+            "Abscesso intraneural comprovado (flutuação localizada no trajeto do tronco ulnar ou fibular);",
+            "Neurite subentrante crônica com intolerância ou contraindicação formal ao corticoide sistêmico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "prevencao-de-incapacidades-vigilancia-de-contatos-e-bcg",
+      0,
+      [
+        [
+          "2",
+          "5. Avaliação do Grau de Incapacidade Física (GIF), Vigilância Epidemiológica de Contatos e Quimioprofilaxia/Vacinação BCG"
+        ],
+        [
+          "3",
+          "Avaliação do Grau de Incapacidade Física (GIF) da OMS"
+        ],
+        [
+          "p",
+          "O <strong>Grau de Incapacidade Física (GIF)</strong> é o indicador epidemiológico oficial da OMS e do Ministério da Saúde utilizado mundialmente para mensurar o diagnóstico precoce da hanseníase, o impacto social e a efetividade das ações de controle da atenção primária. Uma proporção elevada de pacientes diagnosticados já no momento do diagnóstico com <strong>Grau 2 de Incapacidade Física</strong> é um marcador inequívoco de <strong>diagnóstico tardio na rede de saúde pública</strong>."
+        ],
+        [
+          "p",
+          "O GIF deve ser avaliado obrigatoriamente em três momentos do acompanhamento clínico: no momento do diagnóstico inicial, a cada 6 meses durante o tratamento, e no momento da <strong>alta por cura</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Grau de Incapacidade Física (GIF)",
+            "Olhos",
+            "Mãos",
+            "Pés"
+          ],
+          [
+            [
+              "<strong>Grau 0</strong><br><em>(Nenhuma incapacidade física detectável)</em>",
+              "Força muscular dos olhos preservada (fechamento palpebral completo normal sem fraqueza); acuidade visual normal (≥ 0,1 ou 6/60 na tabela de Snellen).",
+              "Sensibilidade tátil preservada nas palmas das mãos ao teste com monofilamento de Semmes-Weinstein (percebe o monofilamento lilás de 2,0 g ou verde de 0,05 g); força muscular intrínseca normal (grau V/V). Sem deformidades visíveis.",
+              "Sensibilidade protetora plantar preservada em todos os pontos testados com o monofilamento de Semmes-Weinstein (percebe o monofilamento laranja de 10 g); força muscular normal. Sem deformidades ou feridas plantares."
+            ],
+            [
+              "<strong>Grau 1</strong><br><em>(Perda de Sensibilidade Protetora SEM deformidade visível)</em>",
+              "Diminuição da força do músculo orbicular dos olhos sem lagoftalmo manifesto; diminuição da sensibilidade da córnea (hipoestesia corneana). Acuidade visual preservada.",
+              "<strong>Diminuição ou perda da sensibilidade protetora na palma da mão</strong> (não sente o monofilamento de 2,0 g em um ou mais pontos de teste), porém <strong>SEM nenhuma deformidade anatômica visível</strong> (mãos móveis, sem garra, sem atrofia visível).",
+              "<strong>Diminuição ou perda da sensibilidade protetora plantar no pé</strong> (não sente o monofilamento de nylon de 10 g em um ou mais pontos anatômicos plantares), porém <strong>SEM nenhuma deformidade anatômica visível</strong> e sem úlceras."
+            ],
+            [
+              "<strong>Grau 2</strong><br><em>(Presença de Lesões e Deformidades Visíveis Decorrentes do Dano Neural)</em>",
+              "<strong>Lagoftalmo evidente</strong> (incapacidade de fechar totalmente os olhos); ectrópio; entrópio; triquíase; opacidade corneana central grave; iridociclite ativa; acuidade visual severamente reduzida (< 0,1 ou não conta dedos a 6 metros) ou <strong>amaurose (cegueira)</strong>.",
+              "<strong>Lesões visíveis francas decorrentes de dano motor ou sensitivo</strong>: \"Garra ulnar\", \"mão de macaco\", \"mão caída\", atrofia tenar/hipotenar avançada, reabsorção óssea de falanges (dedos encurtados por osteólise e reabsorção), fissuras profundas, feridas abertas, úlceras tróficas ou contraturas articulares rígidas."
+            ],
+            [
+              "<em>Grau 2 (Continuação Pés)</em>",
+              "-",
+              "-",
+              "<strong>Lesões visíveis francas</strong>: \"Pé caído / pendente\", \"garra de artelhos\", <strong>mal perfurante plantar (úlcera trófica aberta na sola do pé)</strong>, reabsorção óssea dos pododáctilos, desabamento do arco plantar (pé plano neurogênico), osteomielite secundária ou calosidades fissuradas infectadas."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Regra de Classificação do GIF Global:</em> O <strong>Grau de Incapacidade Física Global do paciente corresponde à MAIOR NOTA obtida entre os seis sítios anatômicos avaliados</strong> (olho direito, olho esquerdo, mão direita, mão esquerda, pé direito e pé esquerdo). Por exemplo: se um paciente possui sensibilidade e olhos normais (grau 0), mãos normais (grau 0), mas apresenta perda de sensibilidade protetora em um ponto plantar do pé esquerdo (grau 1), o seu GIF global será <strong>Grau 1</strong>. Se apresentar uma única garra no 5º dedo da mão direita (grau 2) com todo o restante normal, o seu GIF global será <strong>Grau 2</strong>."
+        ],
+        [
+          "3",
+          "Vigilância Epidemiológica de Contatos Domiciliares"
+        ],
+        [
+          "p",
+          "O controle da transmissão da hanseníase depende da vigilância ativa sistemática dos <strong>Contatos Domiciliares</strong> (toda pessoa que convive ou conviveu de forma prolongada e contínua no mesmo domicílio com o caso índice nos últimos 5 anos que antecederam o diagnóstico):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Avaliação Dermatoneuroradicular Obrigatória:</strong> Todo contato domiciliar de caso de hanseníase (seja PB ou MB) deve ser convocado à Unidade Básica de Saúde para realização de <strong>exame clínico dermatoneurológico minucioso</strong> (inspeção de toda a superfície cutânea, teste de sensibilidade em manchas suspeitas e palpação de troncos nervosos periféricos). Se for encontrada qualquer alteração clínica suspeita, o contato deve ser investigado e diagnosticado como caso novo.",
+            "<strong>Conduta diante do Contato Clínico Assintomático (Sem Sinais de Hanseníase):</strong>\n    <ul>\n      <li>Deve ser avaliada a caderneta de vacinação e a presença de cicatriz vacinal da <strong>Vacina BCG (Bacilo Calmette-Guérin)</strong>. A BCG não confere proteção de 100%, mas induz imunidade celular cruzada protetora contra o <em>M. leprae</em>, reduzindo a incidência de formas multibacilares graves em 50% a 80%.",
+            "<strong>Protocolo Oficial do Ministério da Saúde para Aplicação da Vacina BCG em Contatos:</strong>\n        <table class=\"book-table\">\n          <thead>\n            <tr>\n              <th>Histórico Vacinal Prévia do Contato Domiciliar</th>\n              <th>Cicatriz de BCG Encontrada no Braço</th>\n              <th>Conduta Vacinal Padronizada pelo Ministério da Saúde</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>Sem cicatriz comprovada de BCG</td>\n              <td>Nenhuma cicatriz visível (0 cicatriz)</td>\n              <td><strong>Administrar 1 dose de vacina BCG intradérmica</strong> imediatamente.</td>\n            </tr>\n            <tr>\n              <td>Histórico comprovado de 1 dose de BCG na infância</td>\n              <td>Presença de 1 cicatriz vacinal única de BCG</td>\n              <td><strong>Administrar 1 dose de reforço de vacina BCG intradérmica</strong> (respeitando intervalo mínimo de 6 meses após a dose da infância).</td>\n            </tr>\n            <tr>\n              <td>Histórico comprovado de 2 ou mais doses de BCG</td>\n              <td>Presença de 2 ou mais cicatrizes vacinais de BCG</td>\n              <td><strong>NÃO APLICAR nenhuma dose adicional de BCG</strong> (o contato já atingiu a proteção celular máxima permitida pelo protocolo).</td>\n            </tr>\n          </tbody>\n        </table>",
+            "<em>Exceção Pediátrica:</em> Menores de 1 ano de idade que já receberam a dose de BCG ao nascer <strong>NÃO necessitam de dose adicional</strong> mesmo sendo contatos domiciliares."
+          ]
+        ],
+        [
+          "3",
+          "Quimioprofilaxia de Contatos com Dose Única de Rifampicina (SDR-PEP)"
+        ],
+        [
+          "p",
+          "Em consonância com as diretrizes internacionais da OMS e incorporada pelo Ministério da Saúde em projetos estratégicos e no novo PCDT, a <strong>Quimioprofilaxia com Dose Única de Rifampicina (SDR-PEP — Single-Dose Rifampicin Post-Exposure Prophylaxis)</strong> consiste na administração supervisionada de uma dose única de Rifampicina para contatos assintomáticos (após exclusão rigorosa de doença ativa e ausência de contraindicações como hepatopatia ou gravidez):"
+        ],
+        [
+          "u",
+          [
+            "<em>Posologia da SDR-PEP:</em> Adultos ≥ 15 anos: 600 mg VO dose única; Crianças de 10 a 14 anos: 450 mg VO dose única; Crianças de 6 a 9 anos: 300 mg VO dose única; Crianças de 2 a 5 anos: 150 mg VO.",
+            "<em>Impacto:</em> A associação de <strong>Vacinação com BCG + Quimioprofilaxia com Dose Única de Rifampicina</strong> reduz em mais de 70% a 80% o risco de adoecimento por hanseníase entre contatos domiciliares e comunitários."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-e-discussao-passo-a-passo",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Discussão Diagnóstica e Terapêutica Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Mancha Hipocrômica Anestésica Inicial e Classificação Paucibacilar"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente feminina, 34 anos, professora de ensino fundamental, comparece à Unidade de Saúde da Família referindo que há cerca de 6 meses notou o surgimento de uma mancha clara na face anterior da coxa direita. Relata que a lesão não coça, não descama e não dói, mas percebeu que ao depilar a perna não sentia a lâmina passar sobre a área da mancha. Além disso, notou que a pele no local ficou mais ressecada e com menos pelos. Nega lesões semelhantes em outras regiões do corpo ou sintomas articulares. Nega histórico familiar conhecido de hanseníase."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Dermatoneurológico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Inspeção Dermatológica:</em> Presença de uma única lesão macular hipocrômica ovalada, medindo 4,0 × 3,0 cm, com bordas imprecisas, plana, localizada no terço médio da face anterior da coxa direita. Observa-se rarefação local de pelos (alopecia focal) e pele opaca e ressecada (anidrose local). Ausência de qualquer outra mancha ou pápula no restante do tegumento cutâneo.",
+            "<em>Propedêutica Armada da Sensibilidade na Lesão:</em>\n    <ul>\n      <li><em>Sensibilidade Térmica:</em> Testada com tubos de água aquecida e gelada. O paciente erra consistentemente 100% dos estímulos térmicos dentro da mancha hipocrômica, queixando-se de não distinguir quente de frio (<strong>anestesia térmica absoluta</strong>), ao passo que discrimina perfeitamente na pele sadia adjacente da mesma coxa.",
+            "<em>Sensibilidade Dolorosa:</em> Testada com ponta de agulha descartável. Perda evidente da sensibilidade à dor em toda a extensão da lesão (analgesia focal).",
+            "<em>Sensibilidade Tátil:</em> Testada com mecha de algodão. A paciente refere perceber o toque, porém com menor intensidade que na pele sadia circunvizinha (hipoestesia tátil relativa)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><em>Palpação dos Troncos Nervosos Periféricos:</em> Troncos nervosos ulnares, medianos, radiais, fibulares comuns e tibiais posteriores palpados bilateralmente: sem espessamento patológico, indolores à palpação, simétricos. Nervo auricular magno normal.</li>\n  <li><em>Avaliação do Grau de Incapacidade Física:</em> Teste com monofilamentos de Semmes-Weinstein nas mãos (sensibilidade protetora normal, monofilamento verde de 0,05 g) e pés (monofilamento laranja de 10 g sentido em todos os pontos plantares bilateralmente). Fechamento palpebral com força V/V bilateralmente. <strong>Grau de Incapacidade Física Inicial: Grau 0</strong>.</li>\n</ul>"
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico e Conduta Terapêutica Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Clínico:</strong> <em>Hanseníase Forma Indeterminada (HI)</em> do espectro de Ridley-Jopling (apresentação inicial clássica com mancha hipocrômica única com perda térmica/dolorosa precoce e ausência de comprometimento neural troncular).",
+            "<strong>Classificação Operacional do Ministério da Saúde:</strong> <strong>PAUCIBACILAR (PB)</strong>, por apresentar apenas 1 lesão de pele (≤ 5 lesões) e ausência de troncos neurais espessados.",
+            "<strong>Baciloscopia de Raspado Dérmico (Lóbulo auricular direito, esquerdo, cotovelo e lesão):</strong> Realizada conforme protocolo, com <strong>resultado NEGATIVO (Índice Baciloscópico = 0)</strong>. Confirmação operacional da categoria Paucibacilar.",
+            "<strong>Plano Terapêutico Padronizado (PCDT - Ministério da Saúde):</strong>\n    <ul>\n      <li>Início imediato da <strong>Poliquimioterapia Única (PQT-U) para Paucibacilar</strong>:\n        <ul>\n          <li><strong>6 doses mensais supervisionadas</strong> da cartela PQT-U (compostas por Rifampicina 600 mg dose única mensal supervisionada + Dapsona 100 mg supervisionada mensal + Clofazimina 300 mg supervisionada mensal);",
+            "Associadas ao uso diário domiciliar autoadministrado de <strong>Dapsona 100 mg/dia + Clofazimina 50 mg/dia</strong>;",
+            "Prazo máximo para a conclusão das 6 cartelas supervisionadas: <strong>até 9 meses consecutivos</strong>.",
+            "<em>Orientações Farmacológicas Mandatórias:</em> Esclarecer que a urina e o suor ficarão avermelhados após a dose supervisionada de Rifampicina (fenômeno inofensivo) e que a Clofazimina poderá causar ressecamento e escurecimento temporário da pele, assegurando que este pigmento regride completamente após o término do tratamento.",
+            "<strong>Investigação de Contatos Domiciliares:</strong> Convocação do esposo e dos dois filhos para exame dermatoneuro no posto de saúde. Todos assintomáticos. O esposo possuía 1 cicatriz prévia de BCG e recebeu 1 dose de reforço de BCG; os filhos (< 5 anos com vacinação completa) não necessitaram de doses adicionais."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Fácies Leonina, Madarose, Fissuras Plantares e Anestesia em Luva e Bota"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 48 anos, lavrador, natural e residente em município do interior do Maranhão. Procura o centro de saúde com queixa de que nos últimos 3 anos seu \"rosto foi mudando de formato, ficando inchado e avermelhado\". Refere ainda dormência e queimação constante nas mãos e nos pés (\"sensação de andar pisando em algodão\"), perda progressiva dos pelos das sobrancelhas e episódios frequentes de queimaduras indolores nas mãos ao manusear panelas quentes no fogão a lenha. Nega febre, dor articular aguda ou nódulos dolorosos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Dermatoneurológico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Ectoscopia Facial:</em> Infiltração eritemato-acastanhada difusa da face, com acentuação pronunciada dos sulcos naturais da fronte e das regiões malares, conferindo aspecto característico de <strong>Fácies Leonina</strong>. Espessamento nodular acentuado de ambos os lóbulos auriculares. <strong>Madarose completa</strong> (perda total dos pelos das sobrancelhas nos dois terços externos) e perda dos cílios palpebrais inferiores bilateralmente. Congestão da mucosa nasal com crostas hemáticas e perfuração cartilaginosa inicial do septo nasal.",
+            "<em>Tronco e Membros:</em> Múltiplas pápulas, placas infiltradas e pequenos tubérculos acastanhados distribuídos simetricamente nas faces extensoras dos braços, antebraços e coxas (hansenomas). Pele seca, anidrótica e descamativa.",
+            "<em>Exame Neurológico dos Membros:</em>\n    <ul>\n      <li>Hipoestesia térmica, dolorosa e tátil profunda com distribuição simétrica distal <strong>\"em luva e bota\"</strong> que se estende até o terço médio dos antebraços e pernas bilateralmente.",
+            "Palpação dos troncos nervosos revela <strong>espessamento acentuado, endurecido e indolor (\"em cordão de violão\") dos nervos ulnares nos cotovelos e dos nervos fibulares comuns nos colos das fíbulas bilateralmente</strong>.",
+            "Nas mãos: atrofia moderada da eminência hipotenar bilateralmente, porém com força de preensão preservada (sem garra).",
+            "Nos pés: presença de calosidades exuberantes nas bordas externas dos pés e uma fissura profunda indolor sob a cabeça do primeiro metatarso esquerdo (úlcera trófica superficial de 1 cm)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><em>Avaliação do Grau de Incapacidade Física:</em> Monofilamento de 10 g não sentido em nenhum ponto plantar bilateralmente, associado à presença de lesão visível (úlcera plantar trófica no pé esquerdo). <strong>Grau de Incapacidade Física: Grau 2</strong>.</li>\n</ul>"
+        ],
+        [
+          "p",
+          "<strong>Confirmação Diagnóstica e Conduta:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Clínico:</strong> <em>Hanseníase Virchowiana (Polo Lepromatoso - VV)</em> do espectro de Ridley-Jopling.",
+            "<strong>Classificação Operacional:</strong> <strong>MULTIBACILAR (MB)</strong>, por apresentar múltiplas lesões de pele infiltradas (> 5 lesões) e comprometimento bilateral de múltiplos troncos neurais.",
+            "<strong>Baciloscopia de Raspado Dérmico (4 sítios: lóbulos auriculares direito e esquerdo, cotovelo direito e lesão infiltrada):</strong> Revela incontáveis bacilos álcool-ácido resistentes (BAAR) isolados e agrupados em grandes agregados intracelulares arredondados (<strong>Globias</strong>). <strong>Índice Baciloscópico (IB) = 5+</strong> e Índice Morfológico com predomínio de bacilos íntegros.",
+            "<strong>Esquema Terapêutico Padronizado:</strong>\n    <ul>\n      <li><strong>Poliquimioterapia Única (PQT-U) para Multibacilar</strong>:\n        <ul>\n          <li><strong>12 doses mensais supervisionadas</strong> da cartela PQT-U (Rifampicina 600 mg + Dapsona 100 mg + Clofazimina 300 mg);",
+            "Associadas ao uso domiciliar diário contínuo de <strong>Dapsona 100 mg/dia + Clofazimina 50 mg/dia</strong>;",
+            "Prazo para conclusão das 12 cartelas: <strong>até 18 meses consecutivos</strong>.",
+            "<strong>Prevenção Secundária de Incapacidades e Manejo das Úlceras:</strong>\n    <ul>\n      <li>Curativo e desbridamento da calosidade hiperceratótica plantar;",
+            "Prescrição de <strong>palmilhas de acomodação em EVA macio e calçados adaptados com solado rígido em balanço (\"rocker-bottom\")</strong> para redistribuição da pressão plantar durante a marcha;",
+            "Autocuidado domiciliar diário: hidratação cutânea com óleo vegetal ou vaselina, lubrificação ocular com lágrimas artificiais diárias para prevenção de ceratite crônica e inspeção diária rigorosa dos pés com espelho de mão para detecção imediata de feridas pré-ulcerativas."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Reação Reversa (Tipo 1) com Neurite Ulnar Aguda e Risco de Garra"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente feminina, 29 anos, em tratamento regular há 3 meses para Hanseníase Dimorfa-Tuberculoide (DT / Borderline-Tuberculoid), tendo completado a 3ª cartela supervisionada da PQT-U. Comparece em caráter de urgência à Unidade Básica de Saúde queixando-se de dor intensa em choque queimação (\"como choque elétrico\") no cotovelo esquerdo irradiando para a borda medial do antebraço e 4º e 5º dedos da mão esquerda iniciada há 48 horas. Refere que a mão esquerda começou a ficar fraca para segurar objetos leves e que suas manchas antigas na pele ficaram repentinamente inchadas, muito vermelhas e quentes. Nega febre alta, calafrios ou dor em outras articulações."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Dirigido:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Tegumento Cutâneo:</em> As quatro placas eritêmato-acastanhadas pré-existentes no dorso e braço encontram-se francamente edematosas, infiltradas, com halo eritematoso brilhante periférico e dolorosas ao toque. Ausência de novos nódulos subcutâneos efêmeros.",
+            "<em>Exame Neurológico do Membro Superior Esquerdo:</em>\n    <ul>\n      <li>Palpação do <strong>Nervo Ulnar Esquerdo na goteira epitrócleo-olecraniana:</strong> nervo acentuadamente tumefeito, espessado e <strong>extremamente doloroso ao toque mais suave (Sinal de Tinel ulnar positivo exuberante com parestesia imediata nos quirodáctilos)</strong>.",
+            "<em>Avaliação Motora:</em> Fraqueza muscular aguda: força grau III/V para adução do 5º dedo e para a pinça entre o polegar e o indicador. Presença do <strong>Sinal de Froment positivo</strong> (ao tentar segurar uma folha de papel entre o polegar e o indicador contra tração do examinador, a paciente flete a falange distal do polegar utilizando o músculo flexor longo do polegar inervado pelo mediano, evidenciando paralisia aguda do músculo adutor do polegar inervado pelo nervo ulnar). Esboço inicial de garra ulnar no 4º e 5º quirodáctilos com menos de 48 horas de evolução."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico e Conduta Emergencial:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Sindrômico:</strong> <em>Reação Hansênica Tipo 1 (Reação Reversa)</em> de alta gravidade complicada por <strong>Neurite Ulnar Aguda</strong> (hipersensibilidade tardia Th1 mediada por células com lise antigênica e compressão intraneural aguda). Trata-se de uma urgência neurológica com risco iminente de dano neural irreversível e deformidade definitiva (Grau 2).",
+            "<strong>Conduta Medicamentosa Imediata:</strong>\n    <ul>\n      <li><strong>Corticoterapia Oral Imediata em Altas Doses: Prednisona 1 a 1,5 mg/kg/dia (60 mg/dia via oral em dose única matinal)</strong> associada a protetor gástrico (Omeprazol 20 mg/dia);",
+            "<em>Atenção para erro em provas:</em> A Talidomida é <strong>INÚTIL E FORMALMENTE INEFICAZ</strong> na Reação Tipo 1 e NUNCA deve ser prescrita!",
+            "<strong>Manutenção Rigorosa da Poliquimioterapia (PQT-U):</strong> A 4ª dose da PQT-U deve ser mantida conforme o cronograma mensal; <strong>NUNCA suspender a PQT-U durante estados reacionais!</strong>",
+            "<strong>Medidas Ortopédicas e de Enfermagem:</strong>\n    <ul>\n      <li>Imobilização do cotovelo esquerdo com tala gessada axilopalmar a 90º por 7 a 14 dias para repouso mecânico e descompressão estática do nervo ulnar na goteira epitrócleo-olecraniana;",
+            "Fisioterapia motora passiva e ativa supervisionada iniciada logo após a remissão da fase álgica aguda;",
+            "Critérios para neurolise cirúrgica de urgência: se houver ausência de melhora da dor ou progressão da garra motora após 4 semanas de corticoterapia oral máxima, está indicada a <em>descompressão cirúrgica aberta com transposição anterior subcutânea do nervo ulnar</em>.",
+            "<strong>Evolução:</strong> Em 72 horas pós-prednisona, a dor excruciante desapareceu completamente. Ao final de 3 semanas, a força motora recuperou-se para grau V/V com regressão total do edema das placas cutâneas. A prednisona foi desmamada lentamente em doses decrescentes de 10 mg a cada 15 dias, ao longo de 5 meses consecutivos, evitando rebote reacional."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Eritema Nodoso Hansênico (Reação Tipo 2), Orquiepididimite e Manejo com Talidomida"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 38 anos, motorista rodoviário, em acompanhamento no 7º mês de tratamento com a PQT-U para Hanseníase Virchowiana (Multibacilar). Dá entrada na sala de emergência com febre alta diária de 39,0 ºC a 39,8 ºC acompanhada de calafrios solenes e dor generalizada iniciada há 4 dias. Refere surgimento súbito de múltiplos \"caroços vermelhos e quentes\" extremamente dolorosos nas pernas, braços e rosto. Queixa-se de dor intensa nas articulações dos joelhos, punhos e tornozelos que o impede de caminhar. Há 24 horas evoluiu com dor e inchaço escrotal agudo bilateral acentuado."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico de Admissão:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Sinais Vitais:</em> PA: 120/75 mmHg; FC: 112 bpm; FR: 20 irpm; Tax: 39,4 ºC. Paciente com fácies de dor aguda, prostrado e gemente.",
+            "<em>Exame Dermatológico:</em> Erupção súbita exuberante de <strong>dezenas de nódulos dérmicos e subcutâneos eritematosos, quentes, brilhantes e intensamente dolorosos à mínima palpação</strong>, medindo de 1 a 4 cm, distribuídos simetricamente nas faces extensoras dos antebraços, coxas, pernas e face anterior do tórax. Alguns nódulos confluem em placas edematosas e um nódulo na perna esquerda apresenta centro purpúrico bolhoso (aspecto de eritema nodoso necrosante).",
+            "<em>Exame Articular:</em> Artrite inflamatória aguda simétrica em punhos e joelhos com derrame articular volumoso bilateral e calor local acentuado.",
+            "<em>Exame Urológico:</em> <strong>Bolsa escrotal hiperemiada, edematosa e com dor excruciante à palpação bilateral</strong> de testículos e epidídimos (orquiepididimite aguda bilateral).",
+            "<em>Exames Laboratoriais de Urgência:</em> Leucocitose importante (18.500 leucócitos/mm³ com 12% de bastões sem foco bacteriano pulmonar ou urinário); PCR de 142 mg/L; VHS de 98 mm/h; Hemoculturas bacterianas negativas; Sumário de urina com proteinúria discreta e hematúria microscópica."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico e Conduta Estruturada:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Definitivo:</strong> <em>Reação Hansênica Tipo 2 — Eritema Nodoso Hansênico (ENH) Grave</em> associado a manifestações viscerais inflamatórias agudas (Orquiepididimite bilateral e Artrite reacional). Fisiopatologia: deposição de imunocomplexos circulantes tipo III com liberação de TNF-alfa em paciente Multibacilar com alta carga bacilar prévia.",
+            "<strong>Estratégia Terapêutica Farmacológica de Choque:</strong>\n    <ul>\n      <li><strong>Talidomida Oral:</strong> O paciente é do sexo masculino (sem qualquer risco de gestação e teratogenia!). Administrou-se <strong>Talidomida 300 mg/dia via oral</strong> (dose de ataque dividida em 200 mg à noite e 100 mg pela manhã), com notificação de receita específica B e assinatura do termo de responsabilidade no SUS. A talidomida atua inibindo seletivamente a síntese de TNF-alfa e a quimiotaxia neutrofílica, cessando a febre e a dor dos nódulos em 24 a 48 horas.",
+            "<strong>Associação Obrigatória de Corticoterapia Oral (Prednisona):</strong> Como o paciente apresenta <strong>Orquiepididimite Aguda Bilateral</strong> (risco iminente de orquite necrotizante com atrofia testicular fibrosa, azoospermia e esterilidade permanente) e artrite com glomerulonefrite incipiente, a Talidomida isolada é insuficiente! Indicou-se a associação formal de <strong>Prednisona 1 mg/kg/dia (60 mg/dia VO)</strong> para proteção rápida do parênquima testicular e articular.",
+            "<em>Manutenção da Poliquimioterapia:</em> A PQT-U de 12 meses <strong>NÃO É INTERROMPIDA</strong>, devendo ser mantida rigorosamente.",
+            "<em>Suporte Escrotal:</em> Repouso absoluto no leito, bolsa de gelo local e uso de suspensório escrotal anatômico elevado para drenagem venosa.",
+            "<strong>Evolução e Desmame:</strong> A febre cedeu em 36 horas e os nódulos do ENH regrediram rapidamente em 5 dias. A orquite entrou em remissão completa ao final da segunda semana sem sequelas atróficas. A Talidomida foi reduzida para 100 mg/dia e a Prednisona foi desmamada ao longo de 8 semanas. O paciente completou o 12º mês da PQT-U com cura clínica e índice baciloscópico em declínio progressivo."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-de-concursos-e-residencia-medica",
+      0,
+      [
+        [
+          "2",
+          "7. Questões Comentadas de Concursos e Residência Médica (Revalida, ENAMED e Institucionais)"
+        ],
+        [
+          "3",
+          "Questão 1 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Um homem de 42 anos, pedreiro, comparece à Unidade Básica de Saúde queixando-se de dormência e perda de sensibilidade em duas manchas na pele que surgiram há 8 meses. Ao exame físico dermatoneurológico, o médico identifica 2 lesões: uma placa eritêmato-acastanhada com bordas elevadas nítidas e centro atrófico hipocrômico no dorso, medindo 5 cm, e outra placa semelhante no antebraço direito. O teste de sensibilidade térmica e dolorosa com agulha demonstra anestesia completa no interior das lesões e ausência de sudorese. À palpação dos troncos nervosos periféricos, identifica-se espessamento moderado do nervo ulnar direito no cotovelo, com dor leve à palpação, porém com força muscular preservada nas mãos e sem deformidades visíveis (Grau 0 de incapacidade física). A baciloscopia de raspado dérmico (lóbulos auriculares e cotovelos) resulta NEGATIVA em todos os sítios examinados. Com base nas diretrizes oficiais vigentes do Ministério da Saúde do Brasil (PCDT da Hanseníase), qual é a classificação operacional e a conduta terapêutica padronizada para este paciente?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Classificação Paucibacilar (PB); iniciar Poliquimioterapia Única (PQT-U) com Rifampicina, Dapsona e Clofazimina pelo período total de 6 doses mensais supervisionadas em até 9 meses.<br>\n<strong>B)</strong> Classificação Multibacilar (MB); iniciar esquema com Rifampicina e Dapsona durante 12 meses, excluindo a Clofazimina por se tratar de forma tuberculoide.<br>\n<strong>C)</strong> Classificação Paucibacilar (PB); iniciar esquema contendo exclusivamente Dapsona em monoterapia por 6 meses.<br>\n<strong>D)</strong> Paciente sem diagnóstico de certeza devido à baciloscopia negativa; deve ser encaminhado para biópsia de nervo periférico antes de prescrever qualquer antimicrobiano.<br>\n<strong>E)</strong> Classificação Multibacilar (MB); indicar 12 doses supervisionadas da PQT-U obrigatoriamente associadas a Talidomida contínua."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: A.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O paciente apresenta <strong>Hanseníase Paucibacilar (PB)</strong> segundo os critérios operacionais da OMS e Ministério da Saúde: possui <strong>até 5 lesões de pele (tem apenas 2 lesões) associadas à baciloscopia de raspado dérmico NEGATIVA (IB = 0)</strong>. Conforme a atualização oficial do Ministério da Saúde que implementou a <strong>Poliquimioterapia Única (PQT-U)</strong>, todos os pacientes no Brasil agora utilizam a cartela blister de três drogas: <strong>Rifampicina (600 mg supervisionada mensal), Dapsona (100 mg supervisionada mensal + 100 mg/dia domiciliar) e Clofazimina (300 mg supervisionada mensal + 50 mg/dia domiciliar)</strong>. A duração do tratamento para casos Paucibacilares é rigorosamente de <strong>6 doses mensais supervisionadas concluídas em até 9 meses</strong> consecutivos. A alternativa B erra ao omitir a clofazimina (a PQT-U possui as 3 drogas para todos!). A alternativa C é proibida (monoterapia induz resistência rápida e está proscrita). A alternativa D erra ao exigir biópsia, pois a baciloscopia negativa é o padrão esperado na forma paucibacilar (polo tuberculoide) e o diagnóstico na atenção básica é eminentemente clínico! A alternativa E erra na classificação (é PB e não MB) e no uso indevido de talidomida sem eritema nodoso."
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Residência Médica)"
+        ],
+        [
+          "p",
+          "Mulher de 26 anos, previamente hígida, não gestante, em tratamento no 4º mês para Hanseníase Virchowiana (Multibacilar) com a PQT-U regular, procura atendimento médico de emergência com febre diária de 39,2 ºC, calafrios, astenia intensa e dor articular incapacitante em joelhos e punhos iniciada há 3 dias. Ao exame dermatológico, nota-se o surgimento súbito de dezenas de nódulos eritematosos violáceos profundos, com calor e extrema dor à palpação, distribuídos simetricamente nas faces extensoras dos membros superiores e inferiores e na face anterior das pernas. Não há espessamento neural novo ou perda de força motora nas mãos e pés. A hipótese diagnóstica firmada é de Reação Hansênica Tipo 2 (Eritema Nodoso Hansênico). Após excluir gravidez mediante teste Beta-hCG urinário negativo e confirmar o uso de método contraceptivo de barreira e hormonal eficaz, qual é o medicamento de PRIMEIRA ESCOLHA indicado para o tratamento desta intercorrência clínica e qual a orientação em relação à poliquimioterapia (PQT-U)?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Prednisona oral 1 a 2 mg/kg/dia; e suspender temporariamente a PQT-U até a regressão completa dos nódulos.<br>\n<strong>B)</strong> Talidomida oral 100 a 400 mg/dia; e manter rigorosamente a administração da PQT-U sem qualquer interrupção.<br>\n<strong>C)</strong> Dapsona em dose dobrada para 200 mg/dia; e suspender a Clofazimina devido à fotossensibilidade.<br>\n<strong>D)</strong> Metotrexato venoso em dose de pulso semanal; e interromper a Rifampicina.<br>\n<strong>E)</strong> Talidomida oral 300 mg/dia; e suspender definitivamente o tratamento da hanseníase por se tratar de falha terapêutica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O quadro clínico é a expressão clássica do <strong>Eritema Nodoso Hansênico (Reação Tipo 2)</strong>: nódulos eritematosos e dolorosos que surgem subitamente em paciente multibacilar (Virchowiano), acompanhados de febre alta e sintomas sistêmicos. A droga de <strong>primeira escolha oficial e mais eficaz para a Reação Tipo 2 é a TALIDOMIDA (100 a 400 mg/dia via oral)</strong>, que atua inibindo o TNF-alfa e a infiltração neutrofílica. Em mulheres em idade fértil, a talidomida pode ser utilizada apenas após exclusão formal de gravidez (Beta-hCG negativo) e garantia de contracepção rigorosa efetiva com termo de consentimento assinado. O segundo ponto crítico de prova: <strong>A POLIQUIMIOTERAPIA (PQT-U) DEVE SER MANTIDA RIGOROSAMENTE CONFORME O CALENDÁRIO REGULAR!</strong> Estados reacionais não são falha da quimioterapia e a suspensão da PQT é um erro grave. A alternativa A erra ao colocar o corticoide como única primeira escolha sem citar a talidomida e, principalmente, por suspender a PQT. As alternativas C, D e E trazem condutas errôneas e perigosas."
+        ],
+        [
+          "3",
+          "Questão 3 (Residência Médica / ENARE)"
+        ],
+        [
+          "p",
+          "Durante a consulta de acompanhamento de um paciente com Hanseníase Dimorfa-Tuberculoide no 2º mês de PQT-U, o médico da Atenção Primária identifica que as placas cutâneas antigas tornaram-se intensamente eritematosas, edematosas e infiltradas, e o paciente queixa-se de dor em choque no cotovelo esquerdo com fraqueza súbita para fechar os dedos da mão esquerda. Ao exame: Sinal de Froment positivo na mão esquerda e dor excruciante à palpação do nervo ulnar esquerdo (neurite ulnar aguda). Diante do diagnóstico de Reação Hansênica Tipo 1 (Reação Reversa) com neurite aguda em evolução, assinale a conduta farmacológica CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Prescrever Talidomida 300 mg/dia via oral, pois é o medicamento de escolha para reverter o espessamento neural.<br>\n<strong>B)</strong> Prescrever Prednisona oral na dose de 1 a 1,5 mg/kg/dia imediatamente, associar imobilização do membro afetado e manter a PQT-U.<br>\n<strong>C)</strong> Indicar cirurgia de laminectomia descompressiva imediata no mesmo dia e suspender a Rifampicina.<br>\n<strong>D)</strong> Prescrever Pentoxifilina em monoterapia oral e aguardar 4 semanas antes de introduzir qualquer corticoide.<br>\n<strong>E)</strong> Interromper imediatamente todo o tratamento da hanseníase e iniciar imunoglobulina humana intravenosa."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> A <strong>Reação Hansênica Tipo 1 (Reação Reversa)</strong> é mediada por hipersensibilidade celular tipo IV (resposta Th1). Quando associada a <strong>Neurite Aguda com déficit neurológico motor recente (como a paresia ulnar e sinal de Froment com risco de garra)</strong>, trata-se de uma urgência médica para prevenção de incapacidade física permanente (Grau 2). O tratamento de escolha absoluto e mandatório é a <strong>Corticoterapia Oral em Altas Doses com PREDNISONA (1 a 1,5 mg/kg/dia)</strong>, mantendo-se a dose plena até melhora motora e realizando desmame lento ao longo de vários meses. O membro deve ser imobilizado com tala funcional para repouso do nervo e a PQT-U deve ser continuada normalmente. <em>Atenção máxima:</em> A <strong>Talidomida é totalmente INEFICAZ na Reação Tipo 1</strong> (alternativa A errada!). A cirurgia (C) é de exceção apenas se falha após 4 semanas de corticoide. Pentoxifilina e imunoglobulina (D e E) não são preconizadas para neurite aguda."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica / SUS-SP)"
+        ],
+        [
+          "p",
+          "Um homem de 55 anos, diagnosticado com Hanseníase Virchowiana com baciloscopia positiva (IB 4+), comparece para avaliação do Grau de Incapacidade Física (GIF) da OMS no momento da alta por cura após 12 doses de PQT-U. Ao exame sistemático padronizado:\n- Olhos: Fechamento palpebral completo normal com força V/V bilateralmente e acuidade visual preservada;\n- Mãos: Sensibilidade preservada ao monofilamento de 2,0 g em todos os pontos palmares e força muscular intrínseca grau V/V em ambas as mãos;\n- Pés: O paciente apresenta diminuição da sensibilidade protetora na região plantar do pé esquerdo (não percebe o monofilamento laranja de 10 g em 2 pontos da cabeça dos metatarsos), porém a pele é íntegra, sem calosidades fissuradas, sem úlceras tróficas e sem qualquer deformidade visível ou pé caído (força motora normal bilateralmente).\nDe acordo com os critérios da Organização Mundial da Saúde e do Ministério da Saúde do Brasil, qual é o Grau de Incapacidade Física (GIF) atribuído a este paciente?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Grau 0.<br>\n<strong>B)</strong> Grau 1.<br>\n<strong>C)</strong> Grau 2.<br>\n<strong>D)</strong> Grau 3.<br>\n<strong>E)</strong> Grau Indeterminado."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> Pelos critérios oficiais do Ministério da Saúde e OMS:\n- <strong>Grau 0:</strong> Nenhuma incapacidade detectada nos olhos, mãos e pés (sensibilidade e força normais em todos os sítios).\n- <strong>Grau 1:</strong> Diminuição ou <strong>perda da sensibilidade protetora nos olhos, mãos ou pés (ex.: não sente o monofilamento de 10 g na sola do pé ou de 2 g na palma da mão), mas SEM NENHUMA lesão ou deformidade visível</strong>.\n- <strong>Grau 2:</strong> Presença de lesões ou deformidades visíveis francas (lagoftalmo, ectrópio, cegueira, garra nas mãos/pés, pé caído, mão caída, atrofia visível severa ou úlcera trófica como mal perfurante plantar).\nComo o paciente apresenta perda da sensibilidade protetora ao monofilamento de 10 g no pé esquerdo, mas <strong>NÃO possui deformidades ou úlceras visíveis</strong>, o sítio do pé esquerdo pontua como Grau 1. Como os outros sítios pontuam Grau 0 e a regra do GIF global estabelece que a classificação final corresponde à <strong>maior pontuação encontrada</strong>, o paciente é classificado estritamente como <strong>Grau 1 de Incapacidade Física</strong>."
+        ],
+        [
+          "3",
+          "Questão 5 (Residência Médica / USP-SP)"
+        ],
+        [
+          "p",
+          "Na Unidade de Saúde da Família, uma mulher de 40 anos é diagnosticada com Hanseníase Multibacilar (forma Dimorfa) e inicia o tratamento com a PQT-U. O Agente Comunitário de Saúde convoca os contatos intradomiciliares para avaliação epidemiológica na unidade: o marido de 42 anos e uma filha de 16 anos, ambos assintomáticos e sem quaisquer lesões de pele ou alterações de sensibilidade/troncos neurais ao exame clínico dermatoneurológico minucioso. Ao checar a caderneta e inspecionar os braços dos contatos:\n- O marido apresenta histórico comprovado e presença de UMA cicatriz vacinal de BCG no deltoide direito;\n- A filha apresenta comprovante e presença de DUAS cicatrizes vacinais de BCG no deltoide direito.\nCom base no Protocolo de Vigilância dos Contatos do Ministério da Saúde do Brasil, qual é a conduta profilática e vacinal correta a ser adotada para cada um dos contatos?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Aplicar uma dose de BCG para o marido; e NÃO aplicar nenhuma dose adicional de BCG para a filha.<br>\n<strong>B)</strong> Aplicar uma dose de BCG para ambos os contatos, independentemente do número de cicatrizes prévias.<br>\n<strong>C)</strong> Iniciar PQT-U de 6 doses profilática para o marido e para a filha.<br>\n<strong>D)</strong> Não aplicar BCG para nenhum dos dois, pois a vacina BCG é formalmente contraindicada para contatos domiciliares de hanseníase.<br>\n<strong>E)</strong> Aplicar duas doses de vacina BCG para o marido e prescrever Talidomida profilática para a filha."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: A.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O Ministério da Saúde estabelece um algoritmo rigoroso e altamente cobrado em concursos para a vacinação com BCG em <strong>contatos domiciliares assintomáticos</strong> de hanseníase:\n1. Contato SEM cicatriz prévia de BCG (0 cicatriz): administrar <strong>1 dose de BCG</strong>.\n2. Contato com <strong>1 cicatriz prévia de BCG: administrar 1 dose de reforço de BCG</strong> (com intervalo mínimo de 6 meses após a dose da infância). É exatamente o caso do marido!\n3. Contato com <strong>2 ou mais cicatrizes prévias de BCG: NÃO administrar nenhuma dose adicional</strong>. É exatamente o caso da filha!\nA PQT (C) nunca é feita em contatos assintomáticos. A BCG é altamente recomendada (D errada). Talidomida é teratogênica e contraindicada como profilaxia (E errada)."
+        ],
+        [
+          "3",
+          "Questão 6 (Residência Médica / CERMAM)"
+        ],
+        [
+          "p",
+          "Em relação às toxicidades farmacológicas dos medicamentos que compõem a Poliquimioterapia Única (PQT-U) da Hanseníase, assinale a assertiva que correlaciona CORRETAMENTE o fármaco ao seu efeito colateral característico:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Rifampicina - Hemólise intravascular oxidativa com metemoglobinemia grave em indivíduos com deficiência de G6PD.<br>\n<strong>B)</strong> Clofazimina - Pigmentação cutânea avermelhada a castanho-escura acentuada e ressecamento ictiosiforme da pele reversíveis após o término do tratamento.<br>\n<strong>C)</strong> Dapsona - Secreção de suor, lágrimas e urina de coloração alaranjada inofensiva e indução potente do citocromo P450.<br>\n<strong>D)</strong> Rifampicina - Focomelia e amelia em neonatos se utilizada durante o primeiro trimestre gestacional.<br>\n<strong>E)</strong> Clofazimina - Paralisia periférica do nervo radial com incapacidade de estender o punho e agranulocitose."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> A <strong>Clofazimina</strong> acumula-se no tecido adiposo e células do sistema fagocítico mononuclear, causando <strong>pigmentação cutânea castanho-avermelhada a enegrecida característica</strong>, que escurece nas áreas fotoexpostas, além de xerodermia/ictiose acentuada. Esse efeito deve ser esclarecido detalhadamente ao paciente, reforçando que é benigno e que a cor da pele regride lentamente após o término do tratamento. A alternativa A inverte com a Dapsona (a hemólise e metemoglobinemia são efeitos clássicos da <strong>Dapsona</strong>). A alternativa C inverte com a Rifampicina (as secreções avermelhadas/alaranjadas e indução do CYP450 são características clássicas da <strong>Rifampicina</strong>). A focomelia (D) é efeito teratogênico da <strong>Talidomida</strong> e não da rifampicina. A agranulocitose e neuropatia são toxicidades da dapsona (E errada)."
+        ],
+        [
+          "3",
+          "Questão 7 (Residência Médica / UNIFESP)"
+        ],
+        [
+          "p",
+          "Paciente masculino de 60 anos, em acompanhamento por hanseníase, apresenta lesão eritematosa na face lateral da perna esquerda e queixa-se de dificuldade para caminhar há 2 meses: relata que a ponta do pé esquerdo \"arrasta no chão\" e que precisa elevar excessivamente o joelho durante a marcha (\"marcha escarvante\"). Ao exame físico, o médico constata perda da força muscular para dorsiflexão do tornozelo e extensão dos pododáctilos esquerdos (força grau I/V) associada a anestesia no dorso do pé e espessamento palpável de um tronco nervoso no membro inferior. Qual é o tronco nervoso periférico acometido e qual a denominação clínica desta deformidade?"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Nervo Tibial Posterior; Garra de pododáctilos.<br>\n<strong>B)</strong> Nervo Fibular Comum; Pé Caído (Pé Pendente).<br>\n<strong>C)</strong> Nervo Femoral; Genu recurvatum.<br>\n<strong>D)</strong> Nervo Isquiático Troncular; Mão caída.<br>\n<strong>E)</strong> Nervo Sural; Mal perfurante plantar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O <strong>Nervo Fibular Comum (antigamente chamado ciático poplíteo externo)</strong> contorna superficialmente o colo da fíbula na face súpero-lateral da perna, sendo altamente vulnerável à invasão e compressão inflamatória pelo <em>M. leprae</em>. Ele inerva os músculos do compartimento ântero-lateral da perna (tibial anterior, extensor longo dos dedos e extensor longo do hálux), responsáveis pela dorsiflexão do pé e extensão dos artelhos. A sua paralisia impede a elevação da ponta do pé, originando a clássica deformidade de <strong>Pé Caído (Pé Pendente)</strong> com marcha escarvante. A lesão do nervo tibial posterior (A) acomete os músculos plantares intrínsecos e a sensibilidade da sola do pé, gerando garra de artelhos e predispondo a úlceras tróficas plantares."
+        ],
+        [
+          "3",
+          "Questão 8 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Em uma consulta médica de rotina em saúde coletiva, debate-se a imunologia da Hanseníase segundo o espectro de Ridley-Jopling. Sobre os polos de estabilidade imunológica da doença, assinale a assertiva CORRETA:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> O Polo Virchowiano é caracterizado por imunidade celular Th1 hiperativa com produção abundante de IFN-gama e teste de Mitsuda fortemente positivo.<br>\n<strong>B)</strong> O Polo Tuberculoide caracteriza-se por alta imunidade celular mediada por Th1, granulomas epitelioides organizados, escassez de bacilos nas lesões e teste de Mitsuda positivo.<br>\n<strong>C)</strong> As formas interpolares dimorfas são as mais imunologicamente estáveis e nunca apresentam episódios de reação hansênica tipo 1.<br>\n<strong>D)</strong> O Eritema Nodoso Hansênico ocorre com igual frequência nos pacientes do polo tuberculoide e do polo virchowiano.<br>\n<strong>E)</strong> O teste de Mitsuda positivo é o padrão-ouro laboratorial para definir a cura bacteriológica do paciente com hanseníase."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa Correta: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Justificativa Detalhada:</em> O <strong>Polo Tuberculoide (TT)</strong> representa o polo de máxima resistência celular específica mediada por <strong>Linfócitos Th1</strong>, caracterizado por secreção de IFN-gama e TNF-alfa, formação de <strong>granulomas epitelioides organizados com células de Langhans</strong>, erradicação ou confinamento extremo dos bacilos (paucibacilar, IB = 0) e <strong>Teste de Mitsuda fortemente positivo (> 5 mm)</strong>. A alternativa A erra porque o polo virchowiano é anérgico (Th2 ineficaz com Mitsuda negativo). A alternativa C erra porque as formas dimorfas são extremamente instáveis e as que mais sofrem reação tipo 1. A alternativa D erra porque o ENH ocorre exclusivamente em multibacilares (virchowianos). O teste de Mitsuda (E) avalia o perfil imunológico do hospedeiro e NÃO serve para diagnosticar a doença nem para critério de cura bacteriológica."
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-e-pontos-chave-de-memorizacao",
+      0,
+      [
+        [
+          "2",
+          "8. Tabela High-Yield Resumo e Pontos-Chave de Memorização para a Prova"
+        ],
+        [
+          "3",
+          "Tabela Comparativa Sinóptica: Estados Reacionais na Hanseníase"
+        ],
+        [
+          "t",
+          [
+            "Critério de Comparação",
+            "Reação Hansênica Tipo 1 (Reação Reversa)",
+            "Reação Hansênica Tipo 2 (Eritema Nodoso Hansênico - ENH)"
+          ],
+          [
+            [
+              "<strong>Mecanismo Imunológico</strong>",
+              "<strong>Hipersensibilidade Celular Tipo IV (Th1)</strong> mediada por células contra antígenos bacilares.",
+              "<strong>Hipersensibilidade por Imunocomplexos Tipo III (Th2)</strong> com liberação maciça de TNF-alfa."
+            ],
+            [
+              "<strong>Formas Clínicas Acometidas</strong>",
+              "<strong>Formas Dimorfas / Borderline instáveis (DT, DD, DV)</strong>.",
+              "<strong>Exclusivamente Multibacilares com alta carga (VV e DV)</strong>. Jamais em paucibacilares!"
+            ],
+            [
+              "<strong>Lesões Dermatológicas</strong>",
+              "Manchas e placas antigas tornam-se agudamente <strong>eritematosas, edematosas, infiltradas e dolorosas</strong>.",
+              "Surgimento súbito de <strong>múltiplos nódulos eritematosos violáceos profundos, quentes e intensamente dolorosos</strong>."
+            ],
+            [
+              "<strong>Sintomas Sistêmicos</strong>",
+              "Ausentes ou febrícula discreta; estado geral preservado.",
+              "<strong>Febre alta contínua, astenia, artrite aguda, orquiepididimite, uveíte anterior</strong> e glomerulite."
+            ],
+            [
+              "<strong>Dano Neural (Neurite Aguda)</strong>",
+              "<strong>Precoce, frequente e destrutivo</strong> (urgência para prevenir garra e pé caído!).",
+              "Presente, acompanhado de dor osteomuscular e articular intensa."
+            ],
+            [
+              "<strong>Droga de Escolha Padronizada</strong>",
+              "<strong>PREDNISONA oral em altas doses (1 a 1,5 mg/kg/dia)</strong> com desmame lento ao longo de 4 a 6 meses.",
+              "<strong>TALIDOMIDA oral (100 a 400 mg/dia)</strong>. Se contraindicada (mulher no menacme) ou neurite/orquite associada -> <strong>Prednisona</strong>."
+            ],
+            [
+              "<strong>Eficácia da Talidomida</strong>",
+              "<strong>TOTALMENTE INEFICAZ!</strong> (Não prescrever jamais!).",
+              "<strong>Padrão-Ouro</strong> (melhora dramática da febre e dor em 24 a 48h)."
+            ],
+            [
+              "<strong>Conduta com a PQT-U</strong>",
+              "<strong>MANTER A PQT-U RIGOROSAMENTE!</strong> Nunca interromper!",
+              "<strong>MANTER A PQT-U RIGOROSAMENTE!</strong> Nunca suspender!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Checklist Mnemônico Rápido para a Prova de Residência"
+        ],
+        [
+          "u",
+          [
+            "<strong>M. leprae:</strong> BAAR álcool-ácido resistente intracelular estrito, tropismo por células de Schwann e macrófagos, termossensível (prefere áreas frias: orelhas, nariz, extremidades).",
+            "<strong>Perda de Sensibilidade na Lesão:</strong> Ordem estrita: <strong>1º Térmica -> 2º Dolorosa -> 3º Tátil</strong> (a tátil é a última a desaparecer!).",
+            "<strong>Classificação Operacional OMS/MS:</strong>\n    <ul>\n      <li><em>Paucibacilar (PB):</em> Até 5 lesões de pele E baciloscopia negativa -> <strong>6 doses de PQT-U em até 9 meses</strong>.",
+            "<em>Multibacilar (MB):</em> Mais de 5 lesões de pele OU mais de 1 tronco neural acometido OU baciloscopia positiva -> <strong>12 doses de PQT-U em até 18 meses</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Poliquimioterapia Única (PQT-U):</strong> Todas as formas usam as 3 drogas: <strong>Rifampicina (mensal) + Dapsona (mensal + diária) + Clofazimina (mensal + diária)</strong>. Só muda a duração (6 vs 12 doses).</li>\n  <li><strong>Toxicidades Marcantes:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Rifampicina:</em> Secreções avermelhadas/alaranjadas inofensivas e indução enzimática.",
+            "<em>Dapsona:</em> Hemólise com anemia em deficiência de G6PD, metemoglobinemia e Síndrome da Sulfona.",
+            "<em>Clofazimina:</em> Pigmentação cutânea avermelhada a castanho-escura reversível e ressecamento."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Troncos Nervosos e Deformidades Clássicas:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Nervo Ulnar: <strong>Garra ulnar</strong> (4º e 5º dedos) e sinal de Froment positivo.",
+            "Nervo Mediano: <strong>Mão de macaco</strong> (perda de oponência do polegar).",
+            "Nervo Radial: <strong>Mão caída / pendente</strong>.",
+            "Nervo Fibular Comum: <strong>Pé caído / pendente</strong> com marcha escarvante.",
+            "Nervo Tibial Posterior: <strong>Garra de artelhos e Mal perfurante plantar</strong> (úlcera trófica).",
+            "Nervo Facial: <strong>Lagoftalmo</strong> (fechamento incompleto com risco de cegueira)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Grau de Incapacidade Física (GIF):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Grau 0: Normal.",
+            "Grau 1: <strong>Perda de sensibilidade protetora SEM lesão visível</strong> (olhos, mãos ou pés).",
+            "Grau 2: <strong>Lesão ou deformidade VISÍVEL franca</strong> (garra, pé caído, lagoftalmo, úlcera plantar)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Contatos Domiciliares e BCG:</strong> Exame dermatoneuro obrigatório em todos. Se assintomático: 0 cicatriz -> 1 dose de BCG; 1 cicatriz -> 1 dose de reforço de BCG; 2 cicatrizes -> nenhuma dose adicional!</li>\n</ul>"
+        ]
+      ]
+    ]
+  ]
+}

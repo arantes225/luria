@@ -1,0 +1,1505 @@
+{
+  "v": 2,
+  "s": "oncologia-pediatrica-leucemias-linfomas-e-tumores-solidos",
+  "t": "Oncologia Pediátrica: Leucemias, Linfomas e Tumores Sólidos",
+  "p": "Oncologia Pediátrica: Leucemias, Linfomas e Tumores Sólidos — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Leucemias Agudas, Linfomas da Infância, Tumores Sólidos Abdominais e Emergências Oncológicas Pediátricas",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Oncologia Pediátrica: Leucemias, Linfomas e Tumores Sólidos",
+    "Tratado de Alta Performance em Leucemias Agudas, Linfomas da Infância, Tumores Sólidos Abdominais e Emergências Oncológicas Pediátricas",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Oncologia Pediátrica: Leucemias, Linfomas e Tumores Sólidos"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "onco-ped-introducao-epidemiologia",
+      "1. Introdução, Epidemiologia Geral e Particularidades do Câncer na Infância"
+    ],
+    [
+      "onco-ped-leucemia-linfoblastica-aguda",
+      "2. Leucemia Linfoblástica Aguda (LLA): Fisiopatologia, Quadro Clínico e Propedêutica"
+    ],
+    [
+      "onco-ped-imunofenotipagem-citogenetica-estratificacao",
+      "3. Classificação Imunofenotípica, Citogenética Molecular e Estratificação de Risco na LLA"
+    ],
+    [
+      "onco-ped-lma-pediatrica",
+      "4. Leucemia Mieloide Aguda (LMA) Pediátrica: Morfologia, Bastonetes de Auer e Subtipos"
+    ],
+    [
+      "onco-ped-tumor-de-wilms-nefroblastoma",
+      "5. Tumores Renais Pediátricos: Tumor de Wilms (Nefroblastoma) e Diagnóstico Diferencial"
+    ],
+    [
+      "onco-ped-neuroblastoma-tumores-crista-neural",
+      "6. Tumores da Crista Neural: Neuroblastoma Pediátrico e Síndromes Paraneoplásicas"
+    ],
+    [
+      "onco-ped-linfomas-pediatricos-lh-lnh",
+      "7. Linfomas na Infância: Linfoma de Hodgkin e Linfoma Não-Hodgkin (Burkitt e Linfoblástico)"
+    ],
+    [
+      "onco-ped-emergencias-oncopediatricas-slt",
+      "8. Emergências Oncológicas Pediátricas: Síndrome de Lise Tumoral, SVCS e Neutropenia Febril"
+    ],
+    [
+      "onco-ped-casos-clinicos",
+      "9. Casos Clínicos Pediátricos Comentados Passo a Passo"
+    ],
+    [
+      "onco-ped-questoes-comentadas",
+      "10. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "onco-ped-tabela-high-yield-conclusao",
+      "11. Tabela Comparativa High-Yield e Takeaway Messages"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "onco-ped-introducao-epidemiologia",
+      0,
+      [
+        [
+          "2",
+          "1. Introdução, Epidemiologia Geral e Particularidades do Câncer na Infância"
+        ],
+        [
+          "p",
+          "O câncer pediátrico — compreendido como o espectro de neoplasias malignas que acometem indivíduos entre o nascimento e os 19 anos de vida — exibe características biológicas, genéticas, epidemiológicas, histopatológicas e clínicas fundamentalmente distintas das neoplasias do adulto. Enquanto no adulto os tumores malignos derivam predominantemente de tecidos epiteliais diferenciados (carcinomas de pulmão, próstata, mama, cólon e reto), com forte causalidade associada a hábitos de vida e exposições cumulativas ambientais (tabagismo, obesidade, radiação ultravioleta, álcool e agentes infecciosos crônicos), <strong>o câncer na infância é caracterizado por neoplasias de origem mesenquimal e embrionária (blastomas, sarcomas, leucemias e linfomas)</strong>, decorrentes de aberrações genômicas primárias que afetam células imaturas pluripotentes durante o desenvolvimento e morfogênese tecidual."
+        ],
+        [
+          "3",
+          "1.1 Relevância Epidemiológica e Transição Epidemiológica"
+        ],
+        [
+          "p",
+          "No Brasil e na maioria dos países desenvolvidos e em desenvolvimento, após o declínio sustentado da mortalidade infantil por doenças infectocontagiosas e desnutrição calórico-proteica nas últimas três décadas, <strong>o câncer assumiu o posto de primeira causa de morte por doença (e segunda causa geral de óbito, superada apenas pelas causas externas/acidentes) na faixa etária de 1 a 19 anos</strong>."
+        ],
+        [
+          "p",
+          "Segundo estimativas consolidadas do Instituto Nacional de Câncer (INCA), diagnosticam-se anualmente no Brasil aproximadamente <strong>8.000 a 8.500 novos casos</strong> de câncer infantojuvenil. As três grandes categorias oncológicas pediátricas mais prevalentes distribuem-se da seguinte forma:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Leucemias Agudas (aproximadamente 28% a 33% de todos os casos):</strong> Com ampla hegemonia da Leucemia Linfoblástica Aguda (LLA), que responde por cerca de 75% a 80% de todas as leucemias infantis.",
+            "<strong>Tumores do Sistema Nervoso Central (SNC) (cerca de 20% a 25%):</strong> Segunda neoplasia mais comum da infância e o <em>tumor sólido pediátrico mais frequente</em> (astrocitomas pilocíticos, meduloblastomas, ependimomas e gliomas de alto grau).",
+            "<strong>Linfomas (cerca de 12% a 15%):</strong> Divididos entre Linfomas Não-Hodgkin (LNH, com destaque para o Linfoma de Burkitt e Linfoma Linfoblástico) e Linfoma de Hodgkin (LH, prevalente em adolescentes).",
+            "<strong>Tumores Sólidos Abdominais e Blastomas (cerca de 20%):</strong> Notadamente o Neuroblastoma (tumor sólido extracraniano mais comum em lactentes), o Tumor de Wilms (nefroblastoma, tumor renal maligno mais prevalente), o Rabdomiossarcoma (sarcoma de partes moles mais comum) e os tumores ósseos primários (Osteossarcoma e Sarcoma de Ewing, típicos do estirão puberal)."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Biologia Tumoral Pediátrica: O Paradigma Embrionário"
+        ],
+        [
+          "p",
+          "A taxa de replicação mitótica dos tumores pediátricos é substancialmente superior à das neoplasias adultas. Os tecidos neoplásicos exibem tempos de duplicação celular curtos, fração proliferativa elevada (com fração de crescimento avaliada por Ki-67 frequentemente próxima a 100%, como no Linfoma de Burkitt) e tempo de latência clínico-tumoral curto (semanas a poucos meses). Por essa mesma razão biológica — alta fração proliferativa e dependência de vias moleculares imaturas —, <strong>os tumores infantis são extraordinariamente quimiossensíveis e radiossensíveis</strong>."
+        ],
+        [
+          "p",
+          "As taxas de cura global (sobrevida livre de eventos em 5 anos) para o câncer infantil em centros especializados de alta complexidade saltaram de menos de 20% na década de 1960 para <strong>75% a 85% na atualidade</strong>, representando uma das maiores conquistas da medicina científica contemporânea. O prognóstico, contudo, é drasticamente afetado pelo <strong>diagnóstico precoce</strong>, uma vez que a suspeição ágil pelo pediatra na Atenção Primária previne a progressão tumoral para estadiamentos metastáticos e síndromes metabólicas agudas potencialmente fatais (como a Síndrome de Lise Tumoral)."
+        ],
+        [
+          "3",
+          "1.3 Síndromes Genéticas e Predisposição Hereditária ao Câncer Pediátrico"
+        ],
+        [
+          "p",
+          "Embora mais de 85% a 90% dos casos de câncer na infância ocorram de forma esporádica sem mutações germinativas herdáveis conhecidas, aproximadamente 8% a 10% dos pacientes albergam <strong>Síndromes de Predisposição Hereditária ao Câncer</strong>, cuja identificação orienta o rastreamento direcionado e a conduta terapêutica:"
+        ],
+        [
+          "t",
+          [
+            "Síndrome Genética",
+            "Aberração Genética / Gene Mutado",
+            "Neoplasias Pediátricas Associadas",
+            "Manifestações Fenotípicas e Semiologia"
+          ],
+          [
+            [
+              "<strong>Síndrome de Down (Trissomia 21)</strong>",
+              "Cromossomo 21 supranumerário (amplificação de <em>RUNX1</em>, mutação somática em <em>GATA1</em>)",
+              "<strong>Risco 10 a 20x maior de LLA</strong> e Leucemia Mieloide Aguda megacarioblástica (LMA-M7 / Reação Leucemoide Transitória).",
+              "Fácies sindrômica típica, cardiopatia congênita (defeito do septo atrioventricular), hipotonia."
+            ],
+            [
+              "<strong>Síndrome de Beckwith-Wiedemann</strong>",
+              "Desregulação epigenética da região 11p15.5 (superexpressão de <em>IGF2</em>)",
+              "<strong>Tumor de Wilms (nefroblastoma)</strong>, Hepatoblastoma e Carcinoma Adrenocortical.",
+              "Macrossomia ao nascimento, macroglossia, onfalocele/hérnia umbilical, hemi-hipertrofia corporal, visceromegalia."
+            ],
+            [
+              "<strong>Síndrome WAGR</strong>",
+              "Microdeleção contígua no cromossomo 11p13 (genes <em>WT1</em> e <em>PAX6</em>)",
+              "<strong>Tumor de Wilms</strong> (risco de 50%).",
+              "<strong>W</strong>ilms tumor, <strong>A</strong>niridia congênita (ausência de íris), <strong>G</strong>enitourinary anomalies (criptorquidia, hipospadia), <strong>R</strong>etardo mental."
+            ],
+            [
+              "<strong>Síndrome de Li-Fraumeni</strong>",
+              "Mutação germinativa autossômica dominante no gene supressor tumoral <em>TP53</em> (17p13.1)",
+              "Sarcomas de partes moles e ósseos, Carcinoma Adrenocortical na infância, Leucemias, tumores cerebrais, câncer de mama precoce.",
+              "Múltiplas neoplasias primárias em idade jovem na mesma linhagem familiar de 1º grau."
+            ],
+            [
+              "<strong>Neurofibromatose Tipo 1 (Doença de von Recklinghausen)</strong>",
+              "Mutação autossômica dominante no gene <em>NF1</em> (17q11.2 - perda de neurofibromina / ativação de RAS)",
+              "Gliomas de via óptica (astrocitomas pilocíticos), Tumor Maligno da Bainha do Nervo Periférico (MPNST), Leucemia Mielomonocítica Juvenil (LMMJ).",
+              "6 ou mais manchas café-com-leite (> 5 mm pré-púbere), efélides axilares/inguinais (sinal de Crowe), neurofibromas cutâneos, nódulos de Lisch na íris."
+            ],
+            [
+              "<strong>Retinoblastoma Hereditário</strong>",
+              "Mutação germinativa autossômica dominante no gene <em>RB1</em> (13q14)",
+              "Retinoblastoma bilateral e multifocal na infância precoce; risco tardio de Osteossarcoma e outros sarcomas.",
+              "Leucocoria (\"reflexo do olho de gato\") ao teste do reflexo vermelho (teste do olhinho), estrabismo convergente ou divergente."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "onco-ped-leucemia-linfoblastica-aguda",
+      0,
+      [
+        [
+          "2",
+          "2. Leucemia Linfoblástica Aguda (LLA): Fisiopatologia, Quadro Clínico e Propedêutica"
+        ],
+        [
+          "p",
+          "A <strong>Leucemia Linfoblástica Aguda (LLA)</strong> é a neoplasia maligna mais frequente da infância, respondendo por aproximadamente <strong>75% a 80% de todas as leucemias pediátricas</strong>. Caracteriza-se pela proliferação clonal desordenada, bloqueio maturativo e acúmulo patológico de células precursoras linfoides imaturas (<strong>linfoblastos</strong>) na medula óssea, com consequente supressão da hematopoiese normal e potencial disseminação para o sangue periférico e sítios extramedulares (sistema nervoso central, testículos, fígado, baço e linfonodos)."
+        ],
+        [
+          "3",
+          "2.1 Epidemiologia e Fisiopatologia Celular"
+        ],
+        [
+          "p",
+          "A LLA exibe um pico de incidência bimodal bem documentado, com uma curva de distribuição muito acentuada na infância precoce: <strong>o pico clássico ocorre entre os 2 e 5 anos de idade</strong>, com discreto predomínio no sexo masculino (1,2:1). O evento biológico primário costuma envolver uma aberração cromossômica estrutural (translocação cromossômica ou aneuploidia) originada ainda <em>in utero</em> durante a hematopoiese fetal (primeiro \"hit\" genômico), seguida de mutações somáticas secundárias adicionais pós-natais desencadeadas por estímulos imunológicos infecciosos anormais."
+        ],
+        [
+          "3",
+          "2.2 Quadro Clínico Clássico: A Síndrome de Falência Medular e Infiltração Extramedular"
+        ],
+        [
+          "p",
+          "O início das manifestações costuma ser insidioso ou subagudo ao longo de 2 a 6 semanas. Os sinais e sintomas decorrem da sobreposição de dois fenômenos fisiopatológicos cardinais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Síndrome de Falência (Insuficiência) Medular:</strong> Ocorre quando os blastos leucêmicos ocupam e substituem o microambiente hematopoético medular, gerando citopenias periféricas em uma, duas ou nas três séries celulares (pancitopenia):\n    <ul>\n      <li><strong>Anemia Hipoproliferativa Normocítica e Normocrômica:</strong> Manifesta-se por palidez cutaneomucosa progressiva e acentuada, astenia, apatia, prostração, taquicardia e sopro sistólico funcional ejetivo.",
+            "<strong>Trombocitopenia (Plaquetopenia):</strong> Queda dos níveis plaquetários habitualmente abaixo de 50.000/mm³ (e frequentemente < 20.000/mm³), levando a manifestações hemorrágicas mucocutâneas espontâneas: petéquias generalizadas (não palpáveis), equimoses e sufusões em locais não habituais de trauma, gengivorragia espontânea, epistaxe e sangramentos viscerais.",
+            "<strong>Neutropenia (Leucopenia com Granulocitopenia Absoluta):</strong> Mesmo quando a contagem global de leucócitos no hemograma está falsamente elevada pela presença de blastos circulantes, a contagem de neutrófilos segmentados costuma estar criticamente deprimida (Neutrófilos Totais < 500/mm³). Manifesta-se por <strong>febre inexplicada, persistente ou recorrente</strong>, com resposta pobre a antibióticos comuns, estomatite, úlceras orais e infecções bacterianas invasivas de repetição.",
+            "<strong>Síndrome Infiltrativa Óssea e Articular (Pérola Propedêutica Crucial!):</strong>\n    <p>A expansão física e a pressão hidrostática dos blastos no espaço subperiosteal e na cavidade trabecular óssea provocam <strong>dor óssea e articular intensa</strong>, que acomete cerca de 40% a 50% das crianças com LLA. As características semiológicas dessa dor são patognomônicas:</p>\n    <ul>\n      <li>Dor desproporcional, difusa ou migratória, acometendo preferencialmente ossos longos dos membros inferiores e coluna vertebral.",
+            "<strong>Dor que desperta a criança no meio da noite (dor noturna acordadora)</strong>, sem relação com atividade física diurna (o que a diferencia categoricamente das chamadas \"dores do crescimento\" benignas da infância, que ocorrem tipicamente ao entardecer e não acordam o paciente).",
+            "<strong>Recusa da marcha ou claudicação súbita</strong> em lactentes e pré-escolares. Frequentemente rotulada de forma errônea como Artrite Idiopática Juvenil (AIJ) ou sinovite transitória do quadril. <em>Alerta máximo:</em> O uso inadvertido de corticoides orais sob a suspeita equivocada de artrite pode mascarar temporariamente a LLA, induzindo lise blastica parcial e gerando resistência futura ao tratamento quimioterápico!",
+            "<strong>Síndrome Infiltrativa Extramedular Visceral e Linfonodal:</strong>\n    <ul>\n      <li><strong>Hepatoesplenomegalia Indolor:</strong> O fígado e o baço encontram-se aumentados em 60% a 70% dos casos, de consistência firme, bordo rombo e superfície lisa, sem dor aguda à palpação.",
+            "<strong>Linfadenopatia Generalizada:</strong> Cadeias cervicais, axilares e inguinais aumentadas (> 1,5 a 2,0 cm), indolores, firmes, sem sinais flogísticos (eritema ou calor) e não aderidas a planos profundos.",
+            "<strong>Acometimento de Santuários Anatômicos:</strong>\n        <ul>\n          <li><strong>Sistema Nervoso Central (SNC):</strong> Infiltração leptomeníngea presente em menos de 5% ao diagnóstico, manifestando-se por sinais de hipertensão intracraniana (cefaleia matinal que melhora após vômitos em jato, papiledema), paralisia de pares cranianos (notadamente paralisia do VI par craniano - nervo abducente com estrabismo convergente e diplopia, e paralisia do VII par - paralisia facial periférica).",
+            "<strong>Santuário Testicular:</strong> Infiltração blastica no estroma testicular provocando <strong>aumento de volume testicular unilateral ou bilateral indolor, endurecido e assimétrico</strong>. É mais comum nas recidivas tardias e nas linhagens T. Todo exame físico de menino com suspeita de leucemia exige palpação testicular minuciosa!"
+          ]
+        ],
+        [
+          "3",
+          "2.3 Propedêutica Laboratorial: Do Hemograma ao Mielograma Padrão-Ouro"
+        ],
+        [
+          "p",
+          "A propedêutica segue uma hierarquia técnica estrita:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemograma com Análise de Lâmina de Sangue Periférico:</strong>\n    <ul>\n      <li>A contagem global de leucócitos é extremamente variável: cerca de 50% dos pacientes apresentam contagens normais ou diminuídas (leucopenia < 4.000/mm³); cerca de 30% apresentam leucocitose moderada (10.000 a 50.000/mm³); e cerca de 15% a 20% apresentam <strong>hiperleucocitose extrema (> 100.000/mm³)</strong>, configurando emergência médica com alto risco de leucostase tecidual e síndrome de lise tumoral.",
+            "Presença de <strong>blastos no sangue periférico</strong> identificados na hematoscopia manual (embora a ausência de blastos circulantes na forma dita \"aleucêmica\" ocorra em até 10% dos casos e NUNCA afaste o diagnóstico!).",
+            "Anemia normocítica normocrômica hipoproliferativa (reticulócitos baixos ou inapropriadamente normais) e plaquetopenia grave (< 50.000/mm³)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Mielograma (Aspirado de Medula Óssea): O Exame Padrão-Ouro Indispensável:</strong>"
+        ],
+        [
+          "p",
+          "A confirmação diagnóstica inequívoca exige a punção e aspiração de medula óssea (realizada na crista ilíaca póstero-superior sob sedação e analgesia local). De acordo com os critérios da Organização Mundial da Saúde (OMS), o diagnóstico definitivo de Leucemia Aguda requer:"
+        ],
+        [
+          "p",
+          "<strong>Critério Diagnóstico da OMS: Presença de 20% ou mais de linfoblastos na celularidade total da medula óssea (>= 20% de blastos medulares).</strong>"
+        ]
+      ]
+    ],
+    [
+      "onco-ped-imunofenotipagem-citogenetica-estratificacao",
+      0,
+      [
+        [
+          "2",
+          "3. Classificação Imunofenotípica, Citogenética Molecular e Estratificação de Risco na LLA"
+        ],
+        [
+          "p",
+          "O diagnóstico morfológico pelo mielograma isolado é insuficiente para o planejamento terapêutico moderno. A abordagem contemporânea exige a caracterização biológica tridimensional da leucemia através da <strong>Imunofenotipagem por Citometria de Fluxo Multiparamétrica</strong>, da <strong>Citogenética Clássica (Cariótipo com Banda G)</strong> e da <strong>Genética Molecular (FISH e RT-PCR)</strong>."
+        ],
+        [
+          "3",
+          "3.1 Imunofenotipagem por Citometria de Fluxo: Linhagem B versus Linhagem T"
+        ],
+        [
+          "p",
+          "A citometria de fluxo avalia a expressão de antígenos de diferenciação celular de membrana e intracitoplasmáticos (CD - <em>Cluster of Differentiation</em>), permitindo subdividir a LLA em dois grandes grupos imunológicos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>LLA de Linhagem B (LLA-B):</strong> Representa aproximadamente <strong>85% dos casos pediátricos</strong>.\n    <ul>\n      <li>Marcadores característicos de linhagem B: <strong>CD19, CD22, CD79a intracitoplasmático</strong> e <strong>CD10</strong> (antígeno comum da LLA - CALLA).",
+            "O marcador <strong>CD10 (CALLA)</strong> é de altíssimo valor prognóstico: os subtipos CD10 positivos (\"Pre-B comum\") associam-se a excelentes taxas de remissão e cura completa (> 85% a 90%). Subtipos CD10 negativos (Pró-B) associam-se a maior risco e rearranjos do gene <em>KMT2A (MLL)</em> em lactentes.",
+            "<strong>LLA de Linhagem T (LLA-T):</strong> Representa aproximadamente <strong>15% dos casos</strong>.\n    <ul>\n      <li>Marcadores característicos de linhagem T: <strong>CD3 intracitoplasmático (marcador mais específico de linhagem T)</strong>, CD2, CD5, CD7, CD1a, CD4 e CD8.",
+            "<em>Perfil Clínico Típico:</em> Meninos mais velhos e adolescentes do sexo masculino; apresentação frequente com hiperleucocitose extrema (> 100.000/mm³), hepatoesplenomegalia volumosa e a presença patognomônica de <strong>Grande Massa Mediastinal Anterior</strong> ao raio-X de tórax (infiltração do timo), acarretando risco iminente de <strong>Síndrome da Veia Cava Superior (SVCS)</strong> e compressão traqueobrônquica aguda."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Citogenética Molecular e Alterações Cromossômicas: Estratificação Prognóstica"
+        ],
+        [
+          "p",
+          "As alterações genéticas somáticas presentes nos blastos leucêmicos são os determinantes mais poderosos da resposta ao tratamento e da sobrevida livre de doença:"
+        ],
+        [
+          "t",
+          [
+            "Alteração Citogenética / Molecular",
+            "Incidência na Faixa Pediátrica",
+            "Significado Biológico e Vias Envolvidas",
+            "Classificação de Risco e Prognóstico"
+          ],
+          [
+            [
+              "<strong>Hiperdiploidia Alta (> 50 cromossomos / Índice de DNA > 1,16)</strong>",
+              "25% a 30% das LLA-B",
+              "Ganho maciço de cromossomos específicos (trissomias dos cromossomos 4, 10 e 17). Alta sensibilidade ao metotrexato.",
+              "<strong>EXCELENTE PROGNÓSTICO</strong> (Sobrevida livre de eventos > 90%). Risco habitual."
+            ],
+            [
+              "<strong>Translocação t(12;21)(p13;q22) / Fusão <em>ETV6-RUNX1</em> (TEL-AML1)</strong>",
+              "20% a 25% das LLA-B",
+              "Fusão de dois fatores de transcrição hematopoéticos críticos. Detectada por FISH ou RT-PCR.",
+              "<strong>EXCELENTE PROGNÓSTICO</strong> (Sobrevida livre de eventos > 90%). Excelente resposta à quimioterapia padrão."
+            ],
+            [
+              "<strong>Hipodiploidia (< 44 cromossomos)</strong>",
+              "1% a 2%",
+              "Perda cromossômica maciça; instabilidade genômica com frequente mutação concomitante em <em>TP53</em>.",
+              "<strong>ALTO RISCO / PROGNÓSTICO MUITO DESFAVORÁVEL</strong>. Candidatos a transplante alogênico de medula óssea (TMO)."
+            ],
+            [
+              "<strong>Translocação t(9;22)(q34;q11.2) / Cromossomo Philadelphia (Fusão <em>BCR-ABL1</em>)</strong>",
+              "3% a 5% dos casos pediátricos",
+              "Gera a tirosina-quinase constitutivamente ativa p190 (ou p210), hiperestimulando proliferação celular.",
+              "<strong>ALTO RISCO</strong> histórico. Revolucionado pelo uso adjuvante de <strong>Inibidores de Tirosina-Quinase (Imatinibe ou Dasatinibe)</strong> associados à quimioterapia."
+            ],
+            [
+              "<strong>Rearranjo do gene <em>KMT2A</em> (antigo <em>MLL</em>) em 11q23 / ex: t(4;11)</strong>",
+              "~80% das leucemias em lactentes (< 1 ano)",
+              "Desregulação epigenética da metilação de histonas e homeobox. Frequente fenótipo pró-B CD10 negativo.",
+              "<strong>ALTO RISCO / PROGNÓSTICO RESERVADO</strong>. Alta taxa de recidiva medular e meníngea precoce."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "3.3 Estratificação de Risco Clínico Inicial (Critérios do NCI / Rome): Baixo Risco versus Alto Risco"
+        ],
+        [
+          "p",
+          "Historicamente definida pelo <em>National Cancer Institute (NCI)</em> em 1993 e mantida até hoje como base universal de estratificação clínica pré-tratamento:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Risco Padrão (Habitual / Baixo Risco):</strong> Preenche cumulativamente:\n    <ul>\n      <li>Idade entre <strong>1 ano e 9,99 anos</strong> (1 a 9 anos completos); E",
+            "Contagem global de leucócitos inicial <strong>menor que 50.000/mm³</strong> (< 50 x 10⁹/L)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Alto Risco Clínico:</strong> Apresenta QUALQUER um dos seguintes critérios:"
+        ],
+        [
+          "u",
+          [
+            "Idade <strong>menor que 1 ano (lactentes)</strong> OU <strong>igual ou superior a 10 anos (adolescentes)</strong>; OU",
+            "Contagem global de leucócitos inicial <strong>maior ou igual a 50.000/mm³</strong> (>= 50 x 10⁹/L)."
+          ]
+        ],
+        [
+          "3",
+          "3.4 O Marcador Moderno Definitivo de Resposta: A Doença Residual Mínima (DRM)"
+        ],
+        [
+          "p",
+          "Atualmente, o fator prognóstico isolado mais poderoso para direcionar a intensidade da quimioterapia e a indicação de transplante de medula óssea é a <strong>Doença Residual Mínima (DRM ou MRDs)</strong>, mensurada por citometria de fluxo de 8 a 10 cores ou sequenciamento de nova geração (NGS) no <strong>Dia 15 e no final da Indução (Dia 33 a 35)</strong>. A persistência de DRM positiva (>= 0,01% ou >= 1 blasto em 10.000 células medulares) identifica pacientes com falha de depuração citolítica, exigindo intensificação imediata de protocolo ou terapia celular CAR-T cell."
+        ]
+      ]
+    ],
+    [
+      "onco-ped-lma-pediatrica",
+      0,
+      [
+        [
+          "2",
+          "4. Leucemia Mieloide Aguda (LMA) Pediátrica: Morfologia, Bastonetes de Auer e Subtipos"
+        ],
+        [
+          "p",
+          "A <strong>Leucemia Mieloide Aguda (LMA)</strong> é responsável por aproximadamente <strong>15% a 20% de todas as leucemias agudas na infância</strong>, porém responde desproporcionalmente por cerca de <strong>40% a 50% da mortalidade por leucemia pediátrica</strong>. Ao contrário da LLA, que atinge um pico acentuado entre 2 e 5 anos, a incidência da LMA é relativamente constante ao longo da infância, com ligeiro acréscimo nos primeiros dois anos de vida e novo incremento durante a adolescência."
+        ],
+        [
+          "3",
+          "4.1 Fisiopatologia e Diferenciação Morfológica dos Mieloblastos"
+        ],
+        [
+          "p",
+          "A LMA decorre da proliferação clonal neoplásica e parada de maturação na linhagem dos progenitores mieloides (granulocítica, monocítica, eritroide ou megacariocítica). Os mieloblastos exibem características citomorfológicas distintas dos linfoblastos:"
+        ],
+        [
+          "u",
+          [
+            "Células de tamanho médio a grande, com citoplasma mais abundante, frequentemente basofílico e contendo granulações azurofílicas primárias finas.",
+            "Núcleo com cromatina frouxa e rendilhada, contendo de 2 a 5 nucléolos proeminentes e bem delimitados.",
+            "<strong>Bastonetes (ou Corpos) de Auer:</strong> Inclusões citoplasmáticas patognomônicas em forma de bastonetes ou agulhas avermelhadas/azurofílicas, compostas pela agregação condensada e fusão de grânulos primários azurofílicos ricos em <strong>mieloperoxidase (MPO)</strong> e lisossomos. <em>Pérola Propedêutica Crucial:</em> A visualização de bastonetes de Auer no sangue periférico ou mielograma <strong>fecha o diagnóstico inequívoco de linhagem mieloide</strong> (LMA), excluindo taxativamente o diagnóstico de LLA!",
+            "<strong>Citoquímica Clássica:</strong> Positividade marcante para a reação da <strong>Mieloperoxidase (MPO)</strong> e <strong>Sudan Black B</strong>, além de Esterase Inespecífica positiva nas linhagens monocíticas."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Imunofenotipagem da LMA"
+        ],
+        [
+          "p",
+          "A citometria de fluxo caracteriza a linhagem mieloide pela expressão combinada de antígenos de membrana e citoplasmáticos específicos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Marcadores Pan-Mieloides:</strong> <strong>CD13, CD33, CD117 (c-Kit) e Mieloperoxidase intracitoplasmática (MPO-cito)</strong>.",
+            "<strong>Marcadores de Linhagem Monocítica:</strong> CD14, CD64 e CD11b (proeminentes nos subtipos com hipertrofia gengival).",
+            "<strong>Marcadores Megacarioblásticos:</strong> CD41 (glicoproteína IIb/IIIa) e CD61 (típicos da LMA em crianças com Síndrome de Down)."
+          ]
+        ],
+        [
+          "3",
+          "4.3 Apresentações Clínicas Peculiares e Subtipos Especiais"
+        ],
+        [
+          "p",
+          "Além da clássica síndrome de falência medular (anemia, plaquetopenia com sangramentos graves e neutropenia febril), a LMA pediátrica pode manifestar-se por padrões anatômicos exuberantes:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Leucemia Cutis (Cloroma Cutâneo):</strong> Infiltração neoplásica mieloide direta na derme e tecido celular subcutâneo, apresentando-se como pápulas, nódulos ou placas azuladas, violáceas ou acinzentadas firmes disseminadas (\"bebê com aspecto de bolinho de mirtilo\" ou <em>blueberry muffin baby</em>, diagnóstico diferencial com infecções congênitas do grupo STORCH e neuroblastoma congênito).",
+            "<strong>Hipertrofia e Infiltração Gengival Maciça:</strong> Edema gengival inflamatório volumoso, arroxeado e friável que recobre os dentes, associado a sangramento fácil. É classicamente observado nos subtipos com diferenciação monocítica (antigos M4 e M5 da classificação FAB / LMA com mutações monocíticas).",
+            "<strong>Sarcoma Granulocítico (Cloroma):</strong> Massa tumoral sólida extramedular composta por mieloblastos, que pode preceder o acometimento medular difuso ou surgir simultaneamente. Localiza-se com frequência na órbita (provocando proptose ocular súbita unilateral e hematoma periorbitário), ossos do crânio, coluna vertebral (com compressão medular) e pele. Denomina-se cloroma devido à coloração esverdeada que o tumor adquire quando exposto ao oxigênio ambiente, conferida pela altíssima concentração local da enzima mieloperoxidase.",
+            "<strong>Leucemia Promielocítica Aguda (LPA / antigo subtipo M3):</strong>\n    <p>Caracterizada geneticamente pela translocação <strong>t(15;17)(q24;q21)</strong>, que funde o gene <em>PML</em> ao receptor alfa do ácido retinoico (<em>RARA</em>), gerando o oncogene quimérico <em>PML-RARA</em>. Os promielócitos anormais são repletos de múltiplos feixes de bastonetes de Auer agrupados no citoplasma (chamadas \"células de Faggot\").</p>\n    <p><em>Emergência Médica Pediátrica Máxima:</em> A LPA cursa com <strong>Coagulação Intravascular Disseminada (CIVD) fulminante</strong> associada a hiperfibrinólise primária induzida pela liberação maciça de anexina II e tromboplastina tecidual dos grânulos promielocíticos. Os pacientes apresentam hemorragias intracranianas e pulmonares letais ao diagnóstico.</p>\n    <p><em>Revolução Terapêutica:</em> O tratamento imediato baseia-se na administração oral de <strong>Ácido Todo-Trans-Retinoico (ATRA / Tretinoína)</strong> combinado com <strong>Trióxido de Arsênico (ATO)</strong>, que induzem a diferenciação e degradação do receptor quimérico mutado, transformando a LPA de uma das leucemias mais letais para a de maior taxa de cura (> 95%) sem necessidade de quimioterapia citotóxica convencional intensiva!</p>",
+            "<strong>LMA na Síndrome de Down:</strong> Crianças com Trissomia 21 têm predisposição genética única:\n    <ul>\n      <li><strong>Transtorno Mieloproliferativo Transitório (TMT / Leucemia Transitória do Recém-Nascido):</strong> Ocorre nas primeiras semanas de vida em até 10% dos neonatos com Down, com proliferação clonal de blastos com mutação somática adquirida no gene <em>GATA1</em>. Apresenta remissão espontânea em até 80% a 90% dos casos em 2 a 3 meses.",
+            "<strong>Leucemia Megacarioblástica Aguda (antigo M7):</strong> Desenvolve-se entre 1 e 4 anos de vida em crianças com Down que carregam a mutação em <em>GATA1</em>. Exibe sensibilidade extraordinária a doses reduzidas de Citarabina, alcançando taxas de cura superiores a 90% a 95% (muito superiores às crianças sem Down)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "onco-ped-tumor-de-wilms-nefroblastoma",
+      0,
+      [
+        [
+          "2",
+          "5. Tumores Renais Pediátricos: Tumor de Wilms (Nefroblastoma) e Diagnóstico Diferencial"
+        ],
+        [
+          "p",
+          "O <strong>Tumor de Wilms</strong>, também denominado <strong>Nefroblastoma</strong>, é a neoplasia renal maligna primária mais frequente da infância, respondendo por mais de <strong>90% a 95% de todos os tumores renais pediátricos</strong> e por aproximadamente 6% a 7% de todos os cânceres da faixa etária pediátrica. Origina-se de remanescentes nefrogênicos embrionários metanéfricos anômalos que persistem no parênquima renal após o nascimento e sofrem transformação maligna."
+        ],
+        [
+          "3",
+          "5.1 Epidemiologia e Fatores Genéticos"
+        ],
+        [
+          "p",
+          "O pico de incidência clássico situa-se entre os <strong>2 e 4 anos de idade</strong> (cerca de 80% dos casos ocorrem antes dos 5 anos), com incidência igual entre meninos e meninas. Em cerca de 5% a 7% dos pacientes, o envolvimento tumoral é <strong>bilateral</strong> (sincrônico ou metacrônico), exigindo preservação cirúrgica máxima de parênquima renal."
+        ],
+        [
+          "p",
+          "O tumor está intimamente associado a mutações ou alterações epigenéticas envolvendo o gene supressor tumoral <strong><em>WT1</em> (cromossomo 11p13)</strong>, o gene <strong><em>WT2</em> / cluster 11p15.5</strong> e o gene <strong><em>CTNNB1</em> (beta-catenina)</strong>, manifestando-se isoladamente ou no contexto das síndromes genéticas clássicas descritas na Seção 1 (WAGR, Denys-Drash e Beckwith-Wiedemann)."
+        ],
+        [
+          "3",
+          "5.2 Histopatologia: O Padrão Trifásico Clássico e o Impacto da Anaplasia"
+        ],
+        [
+          "p",
+          "O padrão histopatológico característico do Tumor de Wilms é <strong>trifásico</strong>, recapitulando a embriogênese renal primitiva com proporções variáveis de três componentes celulares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Componente Blastematoso:</strong> Pequenas células azuis indiferenciadas, densamente agrupadas com alta atividade mitótica.",
+            "<strong>Componente Epitelial:</strong> Formação rudimentar de túbulos coletores e estruturas que simulam glomérulos primitivos.",
+            "<strong>Componente Estromal:</strong> Tecido mesenquimal frouxo fusocelular que pode apresentar diferenciação heteróloga para músculo estriado esquelético, cartilagem, tecido adiposo ou osteoide."
+          ]
+        ],
+        [
+          "p",
+          "<em>O Fator Histológico Prognóstico Decisivo:</em> A histologia é categorizada pela classificação do <em>National Wilms Tumor Study Group (NWTSG / COG)</em> em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Histologia Favorável (cerca de 90% dos casos):</strong> Ausência de atipias bizarras. Associa-se a taxas de cura global que ultrapassam 90%.",
+            "<strong>Histologia Desfavorável (Anaplasia presente em cerca de 10%):</strong> Caracterizada por figuras mitóticas multipolares atípicas e núcleos celulares gigantes hipercorados (núcleos pelo menos três vezes maiores que os vizinhos). A anaplasia confere <strong>resistência primária à quimioterapia convencional</strong> e pior prognóstico, exigindo intensificação de protocolos citotóxicos e radioterapia."
+          ]
+        ],
+        [
+          "3",
+          "5.3 Apresentação Clínica Típica e Achados de Exame Físico"
+        ],
+        [
+          "p",
+          "O quadro clínico do Tumor de Wilms é marcado pela dissimulação e oligosintomatologia inicial:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Massa Abdominal Assintomática Palpável:</strong> É o sinal de apresentação em mais de <strong>80% a 90% dos casos</strong>. Tipicamente descoberta de modo acidental pelos pais durante o banho, a troca de roupas ou pelo pediatra em consulta de puericultura de rotina.",
+            "<strong>Semiologia da Massa Abdominal (Pérola Propedêutica Crucial em Provas!):</strong>\n    <ul>\n      <li>Massa volumosa, arredondada ou ovalada, de superfície <strong>lisa ou discretamente lobulada</strong>.",
+            "Consistência firme e elástica, com contornos bem definidos.",
+            "Localizada no flanco e hipocôndrio, com crescimento anteroinferior.",
+            "<strong>A MASSA NÃO ULTRAPASSA A LINHA MÉDIA DO ABDOME</strong> (fica restrita a um dos hemilabdomes, respeitando a linha média anatômica em mais de 90% dos tumores unilaterais)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Outros Achados Clínicos:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dor Abdominal em Cólica:</strong> Presente em cerca de 30% a 40%, secundária à distensão da cápsula renal ou compressão mecânica de alças intestinais.",
+            "<strong>Hipertensão Arterial Sistêmica:</strong> Ocorre em 25% a 30% das crianças, decorrente da compressão mecânica da artéria renal ou de vasos intraparenquimatosos pelo tumor, ativando o sistema renina-angiotensina-aldosterona (hiper-reninemia).",
+            "<strong>Hematúria:</strong> Microcópica em 20% a 30% e macroscópica em cerca de 10% a 15% (indicando invasão tumoral direta do sistema pielocalicial).",
+            "A criança encontra-se geralmente em <strong>BOM ESTADO GERAL</strong>, ativa, nutrida e sem fácies de sofrimento crônico ou toxemia (em nítido contraste com o neuroblastoma!)."
+          ]
+        ],
+        [
+          "4",
+          "ALERTA SEMIOLÓGICO MÁXIMO EM PEDIATRIA:"
+        ],
+        [
+          "p",
+          "<strong>NUNCA PALPAR REPETIDAMENTE O ABDOME DE UMA CRIANÇA COM SUSPEITA DE TUMOR DE WILMS!</strong>"
+        ],
+        [
+          "p",
+          "A massa tumoral é circundada por uma pseudocápsula fibrosa fina e extremamente frágil e vascularizada. A palpação abdominal vigorosa, profunda ou repetida por múltiplos examinadores pode provocar a <strong>rotura mecânica da pseudocápsula tumoral</strong>, causando hemorragia intra-abdominal aguda, contaminação peritoneal livre por células neoplásicas (derramamento tumoral / <em>spillage</em>) e elevando instantaneamente o estadiamento cirúrgico de Estágio I ou II para <strong>Estágio III</strong>, o que obriga a criança a receber <strong>radioterapia abdominal e quimioterapia mais agressiva</strong>!"
+        ],
+        [
+          "3",
+          "5.4 Estadiamento e Abordagens Terapêuticas Internacionais: COG versus SIOP"
+        ],
+        [
+          "p",
+          "O sítio metastático hematogênico mais comum do Tumor de Wilms é o <strong>pulmão</strong> (responsável por 80% das metástases), seguido pelo fígado e linfonodos regionais do hilo renal. A investigação de estadiamento exige Tomografia Computadorizada (TC) de abdome com contraste iodado intravenoso e TC de tórax."
+        ],
+        [
+          "p",
+          "Existem duas correntes de conduta consolidadas no cenário mundial:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Abordagem Norte-Americana (COG - <em>Children’s Oncology Group</em>):</strong> Preconiza a <strong>Nefrectomia Radical Inicial Imediata</strong> com amostragem reglamentar de linfonodos hilares e para-aórticos, seguida de estadiamento patológico cirúrgico rigoroso e quimioterapia adjuvante pós-operatória. A vantagem é obter o tecido histológico virgem e estadiamento anatômico exato.",
+            "<strong>Abordagem Europeia e Brasileira (SIOP - <em>International Society of Paediatric Oncology</em>):</strong> Adotada na maioria dos centros oncológicos de referência no Brasil. Preconiza a administração de <strong>Quimioterapia Neoadjuvante Pré-Operatória</strong> (Vincristina + Dactinomicina por 4 a 6 semanas) antes da cirurgia, mesmo sem biópsia prévia (desde que os critérios radiológicos e clínicos de nefroblastoma sejam típicos). A grande vantagem é promover redução expressiva do volume da massa tumoral, endurecer a cápsula fibrosa e diminuir drasticamente o risco de rotura tumoral intraoperatória e derrame neoplásico durante a nefrectomia subsequente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "onco-ped-neuroblastoma-tumores-crista-neural",
+      0,
+      [
+        [
+          "2",
+          "6. Tumores da Crista Neural: Neuroblastoma Pediátrico e Síndromes Paraneoplásicas"
+        ],
+        [
+          "p",
+          "O <strong>Neuroblastoma</strong> é uma neoplasia maligna embrionária originada de células precursoras simpáticas pluripotentes derivadas da <strong>crista neural</strong> (neuroblastos da cadeia simpática paravertebral e medula da glândula suprarrenal). Constitui o <strong>tumor sólido extracraniano mais prevalente da infância</strong> e o tumor maligno mais frequente no <strong>primeiro ano de vida (lactentes)</strong>, respondendo por aproximadamente 8% a 10% de todos os cânceres pediátricos e por cerca de 15% de toda a mortalidade oncológica pediátrica."
+        ],
+        [
+          "3",
+          "6.1 Epidemiologia e Sítios Anatômicos de Origem"
+        ],
+        [
+          "p",
+          "Aproximadamente 90% dos casos são diagnosticados antes dos 5 anos de idade, com idade média ao diagnóstico de cerca de <strong>18 a 22 meses</strong> (pico no lactente). Os tumores podem surgir em qualquer ponto do sistema nervoso simpático embrionário:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Glândula Suprarrenal (Medula Adrenal):</strong> É a localização primária mais comum, correspondendo a <strong>cerca de 40% a 50% dos casos</strong>.",
+            "<strong>Gânglios Simpáticos Abdominais e Pélvicos Para-Aórticos:</strong> Cerca de 25% a 30% dos casos. Juntas, as localizações retroperitoneais abdominais representam cerca de 70% a 75% de todos os neuroblastomas.",
+            "<strong>Mediastino Posterior (Gânglios Simpáticos Torácicos):</strong> Cerca de 15% a 20% dos casos (costumam ter melhor prognóstico e menor taxa de metástases).",
+            "<strong>Cadeia Simpática Cervical:</strong> Cerca de 3% a 5% dos casos (frequentemente associados à Síndrome de Horner congênita ou adquirida: miose, ptose palpebral e anidrose unilateral)."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Quadro Clínico e Semiologia Comparativa Direta com o Tumor de Wilms"
+        ],
+        [
+          "p",
+          "O quadro clínico do neuroblastoma é dramático e polimórfico, dependendo do sítio primário, da presença de metástases ósseas precoces e da secreção de metabólitos adrenérgicos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Massa Abdominal Retroperitoneal:</strong>\n    <ul>\n      <li>Massa endurecida, volumosa, de contornos profundamente <strong>irregulares, nodulares e fixos</strong> (\"aspecto de saco de nozes\" à palpação profunda).",
+            "<strong>A MASSA ULTRAPASSA FREQUENTEMENTE A LINHA MÉDIA DO ABDOME!</strong> Ela cruza a aorta abdominal e a veia cava inferior, englobando e deslocando os grandes vasos retroperitoneais (em nítido contraste com o Tumor de Wilms, que não ultrapassa a linha média).",
+            "À radiografia simples e à Tomografia Computadorizada de abdome, o neuroblastoma exibe <strong>CALCIFICAÇÕES GROSSEIRAS E FINAS INTRATUMORAIS em mais de 80% a 90% dos casos</strong>, além de áreas extensas de necrose e hemorragia. No Wilms, as calcificações são raras (< 10%)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Estado Geral e Sofrimento Sistêmico:</strong> Ao contrário da criança com tumor de Wilms (que habitualmente se mantém em excelente estado geral), a criança com neuroblastoma apresenta-se frequentemente <strong>toxêmica, emagrecida, febril, com dor óssea intensa e fácies de sofrimento crônico</strong>.</li>\n  <li><strong>Massa \"Em Haltere\" (Compressão Medular Aguda):</strong> Quando o tumor primário paravertebral torácico ou abdominal estende-se através dos forames de conjugação vertebral para o interior do canal raquidiano (tumor com morfologia em ampulheta ou haltere), provocando <strong>compressão medular extradural aguda</strong>. Constitui emergência oncológica que se manifesta por paraparesia flácida ou espástica progressiva, perda do controle esfincteriano (retenção urinária ou incontinência fecal) e dor radicular lombar/dorsal.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "6.3 Síndromes Metastáticas e Paraneoplásicas Patognomônicas"
+        ],
+        [
+          "p",
+          "Mais de <strong>60% a 70% dos pacientes com mais de 1 ano de idade já apresentam metástases hematogênicas disseminadas ao diagnóstico</strong> (com tropismo maciço para a medula óssea, cortical óssea, fígado e linfonodos distantes):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Metástases Orbitárias e \"Olhos de Guaxinim\" (Sinal de Hutchinson):</strong>\n    <p>A infiltração das paredes ósseas da órbita e do teto esfenoidal associada a hematomas subperiosteais retro-oculares gera <strong>proptose ocular súbita e equimose periorbitária bilateral violácea</strong> (\"olhos de guaxinim\" ou fácies de panda). É um achado clássico cobrado reiteradamente em provas de Residência Médica!</p>",
+            "<strong>Síndrome Opsoclonus-Mioclonus-Ataxia (OMA / \"Síndrome dos Olhos Dançantes\"):</strong>\n    <p>Síndrome paraneoplásica imunomediada rara (ocorre em 2% a 4% dos pacientes), mediada por autoanticorpos dirigidos contra receptores sinápticos cerebelares. Caracteriza-se pela tríade clínica espetacular:</p>\n    <ul>\n      <li><strong>Opsoclonus:</strong> Movimentos oculares involuntários, rápidos, caóticos, multidirecionais e conjugados (\"olhos que dançam\").",
+            "<strong>Mioclonias:</strong> Abalos musculares breves e espasmódicos na cabeça, tronco e membros.",
+            "<strong>Ataxia Cerebelar e Irritabilidade Extrema:</strong> Instabilidade extrema da marcha e alterações comportamentais graves.",
+            "<em>Curiosidade Prognóstica:</em> Os pacientes com OMA paradoxalmente apresentam neuroblastomas de histologia favorável e excelente sobrevida oncológica, porém com alto risco de sequelas neurocognitivas de longo prazo.",
+            "<strong>Síndrome de Pepper (Metástases Hepáticas Maciças no Lactente):</strong>\n    <p>Infiltração metastática difusa e explosiva do fígado em lactentes menores de 6 meses a 1 ano de vida, provocando <strong>hepatomegalia gigante e maciça que preenche toda a cavidade abdominal e pélvica</strong>, comprimindo a veia cava inferior e elevando as cúpulas diafragmáticas, gerando insuficiência respiratória restritiva grave.</p>",
+            "<strong>Diarreia Aquosa Secretora Refratária (Síndrome de Verner-Morrison / WDHA):</strong>\n    <p>Síndrome paraneoplásica induzida pela hiperprodução e liberação tumoral do <strong>Peptídeo Intestinal Vasoativo (VIP)</strong>, caracterizada por diarreia aquosa profusa em grande volume, hipocalemia grave e acloridria.</p>"
+          ]
+        ],
+        [
+          "3",
+          "6.4 Diagnóstico Laboratorial e Marcadores Moleculares de Sobrevida"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dosagem Urinária de Metabólitos das Catecolaminas:</strong>\n    <p>Em virtude de sua origem embrionária simpática, mais de <strong>90% a 95% dos neuroblastomas produzem catecolaminas</strong>. A dosagem em urina de 24 horas (ou relação em amostra isolada corrigida pela creatinina) do <strong>Ácido Homovanílico (HVA)</strong> e do <strong>Ácido Vanilmandélico (VMA)</strong> encontra-se maciçamente elevada, constituindo o teste laboratorial de escolha para triagem, monitoramento e rastreamento de recidivas!</p>",
+            "<strong>Cintilografia de Corpo Inteiro com MIBG (Metaiodobenzilguanidina com Iodo-123):</strong>\n    <p>A molécula de MIBG é um análogo estrutural da noradrenalina que é captada especificamente pelos transportadores de catecolaminas expressos na membrana das células do neuroblastoma. É o exame de imagem funcional padrão-ouro para estadiamento corporal total e detecção de micrometástases ósseas.</p>",
+            "<strong>O Marcador Genômico Prognóstico Crucial: Amplificação do Oncogene <em>MYCN</em>:</strong>\n    <p>A amplificação do oncogene <strong><em>MYCN</em> (cromossomo 2p24)</strong> — definida pela presença de <strong>mais de 10 cópias do gene por célula neoplásica</strong> demonstrada por hibridização <em>in situ</em> fluorescente (FISH) — ocorre em cerca de 20% a 25% dos neuroblastomas. É o <strong>marcador biológico independente isolado mais temido e potente de altíssimo risco, progressão ultra-rápida e falha quimioterápica</strong>, exigindo regimes citotóxicos intensivos com transplante autólogo duplo de medula óssea e imunoterapia com anticorpo monoclonal anti-GD2 (Dinutuximabe).</p>",
+            "<strong>O Subestágio Curioso: Estágio MS (antigo 4S):</strong>\n    <p>Lactentes com <strong>idade inferior a 12 ou 18 meses</strong> que apresentam tumor primário pequeno (estágio 1 ou 2) associado a metástases restritas estritamente ao <strong>fígado, pele (nódulos de mirtilo) e/ou medula óssea mínima (< 10% de blastos)</strong>, sem metástases ósseas corticais e sem amplificação de <em>MYCN</em>. Esses pacientes apresentam o fenômeno biológico fascinante de <strong>regressão tumoral espontânea</strong> ou diferenciação terminal benigna para ganglioneuroma sem necessidade de quimioterapia citotóxica agressiva!</p>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "onco-ped-linfomas-pediatricos-lh-lnh",
+      0,
+      [
+        [
+          "2",
+          "7. Linfomas na Infância: Linfoma de Hodgkin e Linfoma Não-Hodgkin (Burkitt e Linfoblástico)"
+        ],
+        [
+          "p",
+          "Os linfomas constituem o terceiro grupo neoplásico mais comum na faixa pediátrica, perfazendo cerca de <strong>12% a 15% de todos os cânceres da infância e adolescência</strong>. Dividem-se fundamentalmente em <strong>Linfoma de Hodgkin (LH)</strong> e <strong>Linfomas Não-Hodgkin (LNH)</strong>, os quais guardam profundas disparidades epidemiológicas, histopatológicas e clínicas."
+        ],
+        [
+          "3",
+          "7.1 Linfoma de Hodgkin (LH) Pediátrico"
+        ],
+        [
+          "p",
+          "O Linfoma de Hodgkin apresenta uma curva de distribuição etária muito característica: é <strong>raro em crianças com menos de 5 anos de idade</strong>, com incidência aumentando progressivamente a partir dos 10 anos e atingindo um pico exuberante na <strong>adolescência e início da vida adulta jovem (15 aos 24 anos)</strong>."
+        ],
+        [
+          "4",
+          "Histopatologia e a Célula Patognomônica de Reed-Sternberg"
+        ],
+        [
+          "p",
+          "Diferentemente da quase totalidade das outras neoplasias malignas, a massa tumoral no Linfoma de Hodgkin é composta por apenas <strong>1% a 5% de células neoplásicas clonais</strong>; os 95% a 99% restantes correspondem a um infiltrado inflamatório reativo e abundante de linfócitos T, histiócitos, plasmócitos e <strong>eosinófilos</strong> estimulado pela liberação parácrina de citocinas (como IL-5). A célula neoplásica marcadora e patognomônica é a <strong>Célula de Reed-Sternberg (Célula RS)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Célula gigante binucleada ou multinucleada de origem linfoide B aberrante, com núcleos espelhados ou sobrepostos, exibindo nucléolos gigantes hipercorados e halo perinucleolar límpido, conferindo o aspecto microscópico clássico de <strong>\"olhos de coruja\"</strong>.",
+            "<strong>Imunofenótipo Clássico:</strong> Positividade uniforme para <strong>CD30 e CD15</strong> (com negatividade para CD45 e expressão variável/fraca de CD20). Forte associação com a infecção latente pelo <strong>Vírus Epstein-Barr (EBV)</strong>, especialmente no subtipo celularidade mista.",
+            "<strong>Subtipos Histológicos Principais:</strong>\n    <ul>\n      <li><strong>Esclerose Nodular (cerca de 70% a 80% dos casos em adolescentes):</strong> Subtipo mais prevalente, caracterizado por bandas densas de colágeno dividindo o linfonodo em nódulos e presença de \"células lacunares\" (variante da RS). Predomina no mediastino anterior e cadeias cervicais de meninas adolescentes.",
+            "<strong>Celularidade Mista (cerca de 15% a 20%):</strong> Mais comum em crianças menores de 10 anos e pacientes com imunodeficiências, com grande quantidade de eosinófilos e forte associação com EBV.",
+            "<strong>Predomínio Linfocítico e Depleção Linfocítica:</strong> Subtipos raros na infância."
+          ]
+        ],
+        [
+          "4",
+          "Apresentação Clínica do Linfoma de Hodgkin"
+        ],
+        [
+          "u",
+          [
+            "<strong>Linfadenopatia Periférica Indolor e Crônica:</strong> É a queixa inicial em mais de <strong>80% a 90% dos pacientes</strong>. Acomete primariamente as <strong>cadeias cervicais inferiores e a fossa supraclavicular (virchowiana)</strong>.",
+            "<strong>Semiologia Linfonodal de Alerta Oncológico:</strong> Linfonodos de consistência elástica, fibroelástica (\"borrachosa\") ou pétrea; completamente <strong>indolores</strong>; sem hiperemia, calor ou flutuação; medindo <strong>mais de 2,0 a 2,5 cm de diâmetro</strong>; aderidos ou coalescentes (\"em bloco\"); e que <strong>persistem crescendo após 4 a 6 semanas</strong> sem resposta a cursos prévios de antibióticos. <em>Regra de Ouro em Provas:</em> <strong>Linfonodo supraclavicular palpável em qualquer idade da infância e adolescência é SEMPRE patológico e oncológico até que se prove o contrário, exigindo biópsia excisional imediata!</strong>",
+            "<strong>Grande Massa Mediastinal Anterior:</strong> Presente em cerca de 60% dos pacientes com esclerose nodular. Pode ser assintomática (achado de raio-X) ou gerar tosse seca persistente, dispneia e Síndrome da Veia Cava Superior.",
+            "<strong>Sintomas B Sistêmicos (Impacto Prognóstico Direto):</strong>\n    <ul>\n      <li><strong>Febre Inexplicada:</strong> Temperatura axilar > 38,0 °C, diária, persistente ou com o padrão ondulante cíclico de Pel-Ebstein (dias de febre alta seguidos de períodos apiréticos).",
+            "<strong>Sudorese Noturna Profusa:</strong> A ponto de molhar as roupas de cama e exigir a troca de pijamas durante o sono.",
+            "<strong>Perda Ponderal Involuntária:</strong> Queda de <strong>mais de 10% do peso corporal habitual nos últimos 6 meses</strong>.",
+            "<em>Outros Sintomas Associados:</em> Prurido cutâneo intratável e generalizado (sem lesões primárias de pele) e a dor linfonodal desencadeada pela ingestão de bebidas alcoólicas (rara, mas específica em adolescentes)."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Linfomas Não-Hodgkin (LNH) Pediátricos"
+        ],
+        [
+          "p",
+          "Os Linfomas Não-Hodgkin da infância são entidades completamente diferentes dos LNH do adulto indolente. Na pediatria, <strong>praticamente 100% dos LNH são de Alto Grau de Malignidade, com crescimento difuso e comportamento agressivo e explosivo</strong>, sem formas foliculares ou de baixo grau."
+        ],
+        [
+          "4",
+          "1. Linfoma de Burkitt: O Tumor Humano de Maior Taxa de Proliferação Celular"
+        ],
+        [
+          "p",
+          "Neoplasia derivada de células B maduras pós-centro germinativo, caracterizada pela presença constante da translocação do oncogene <strong><em>MYC</em> no cromossomo 8q24</strong> para os loci de imunoglobulinas, classicamente <strong>t(8;14)(q24;q32)</strong> (justaposição de <em>MYC</em> com o promotor da cadeia pesada de imunoglobulina <em>IGH</em>), ou variantes t(2;8) e t(8;22)."
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia Mitótica:</strong> O tempo de duplicação celular do Linfoma de Burkitt é extraordinariamente rápido: <strong>menos de 24 horas</strong>! O índice de proliferação avaliado por Ki-67 atinge <strong>praticamente 100%</strong>.",
+            "<strong>Histopatologia Patognomônica: O Padrão em \"Céu Estrelado\" (<em>Starry Sky</em>):</strong> Sob o microscópio óptico em pequeno aumento, observa-se um mar homogêneo e denso de pequenas células azuis monomórficas com citoplasma intensamente basofílico e vacuolizado (\"o céu noturno escuro\"), salpicado uniformemente por macrófagos volumosos claros de corpos tingíveis que fagocitam restos apoptóticos neoplásicos abundantes (\"as estrelas brancas brilhantes\").",
+            "<strong>Formas Epidemiológicas e Apresentação Clínica:</strong>\n    <ul>\n      <li><strong>Forma Endêmica (Africana):</strong> Predomina na África subsaariana e equatorial; 100% associada ao Vírus Epstein-Barr (EBV) e à malária crônica. Manifesta-se tipicamente como <strong>massa tumoral volumosa e osteolítica na mandíbula e maxila</strong>, com deformidade facial grotesca e perda dentária.",
+            "<strong>Forma Esporádica (Ocidental / Brasileira):</strong> Forma predominante no Brasil e países ocidentais. Associação com EBV em cerca de 20% a 30%. O sítio anatômico primordial é a <strong>Cavidade Abdominal (especialmente o Quadrante Inferior Direito / Região Ileo-Cecal e Mesentério)</strong>:\n        <p>Apresenta-se como <strong>massa abdominal palpável de crescimento galopante</strong>, dor abdominal aguda em cólica, ascite quilosa volumosa e o desenvolvimento frequente de <strong>Intussuscepção Intestinal Aguda Ileo-Cólica</strong> (o nódulo tumoral na parede ileal atua como cabeça de invaginação e ponto de partida mecânico da intussuscepção em escolares maiores de 4 a 5 anos!).</p>"
+          ]
+        ],
+        [
+          "4",
+          "2. Linfoma Linfoblástico"
+        ],
+        [
+          "p",
+          "Responde por cerca de 20% dos LNH infantis. Representa a contrapartida tecidual e nodal sólida da Leucemia Linfoblástica Aguda (LLA), sendo denominado linfoma quando a infiltração na medula óssea for <strong>inferior a 25% de blastos</strong> (se >= 20-25% de blastos medulares, é reclassificado formalmente como Leucemia LLA!). Mais de 75% a 80% são de linhagem T (Linfoma Linfoblástico T), manifestando-se classicamente em adolescentes do sexo masculino com <strong>Massa Mediastinal Anterior Volumosa e Derrame Pleural</strong> associado."
+        ],
+        [
+          "4",
+          "3. Linfoma Anaplásico de Grandes Células (ALCL)"
+        ],
+        [
+          "p",
+          "Neoplasia de células T maduras caracterizada pela expressão uniforme e intensa do marcador <strong>CD30</strong> e, na grande maioria dos casos pediátricos, pela translocação <strong>t(2;5)(p23;q35)</strong>, que gera a proteína de fusão <strong>NPM-ALK</strong>. Manifesta-se frequentemente por linfadenopatia periférica associada a sintomas B intensos (febre alta remitente) e infiltração cutânea, óssea e visceral."
+        ]
+      ]
+    ],
+    [
+      "onco-ped-emergencias-oncopediatricas-slt",
+      0,
+      [
+        [
+          "2",
+          "8. Emergências Oncológicas Pediátricas: Síndrome de Lise Tumoral, SVCS e Neutropenia Febril"
+        ],
+        [
+          "p",
+          "As emergências oncológicas na infância decorrem da rápida cinética de proliferação celular característica dos tumores embrionários, da fragilidade anatômica dos compartimentos torácico e retroperitoneal e do efeito mielossupressor profundo das terapias citotóxicas intensivas. O reconhecimento ágil e o manejo protocolado dessas intercorrências determinam a sobrevida imediata do paciente."
+        ],
+        [
+          "3",
+          "8.1 Síndrome de Lise Tumoral (SLT): Fisiopatologia, Critérios de Cairo-Bishop e Manejo"
+        ],
+        [
+          "p",
+          "A <strong>Síndrome de Lise Tumoral (SLT)</strong> é uma emergência onco-hematológica metabólica causada pela destruição massiva, simultânea e abrupta de células neoplásicas (espontânea ou, mais comumente, nas primeiras 12 a 72 horas após o início da quimioterapia ou corticoterapia), com liberação torrencial de ácidos nucleicos, proteínas intracelulares, potássio e fosfato na circulação sistêmica."
+        ],
+        [
+          "4",
+          "Fisiopatologia dos Quatro Distúrbios Metabólicos Cardinais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hiperuricemia:</strong> O catabolismo maciço dos ácidos nucleicos (DNA/RNA) purínicos (adenina e guanina) degrada-se em xantina e hipoxantina e, pela ação da enzima hepática <strong>xantina oxidase</strong>, em <strong>ácido úrico</strong>. Em meio urinário ácido fisiológico (pH < 5,5), o ácido úrico torna-se insolúvel e precipita em microcristais nos túbulo-coletores renais, provocando <strong>Nefropatia Obstrutiva por Urato Aguda</strong> e Insuficiência Renal Aguda anúrica.",
+            "<strong>Hiperpotassemia (Hipercalemia):</strong> O potássio é o principal cátion intracelular (concentração de 140 mEq/L no citosol). A lise celular rápida inunda o plasma de K+, levando a arritmias cardíacas ventriculares letais (onda T apiculada \"em tenda\", alargamento do complexo QRS, perda de onda P, taquicardia ventricular e parada cardíaca em assistolia ou fibrilação ventricular). É a complicação mais rápida e letal da SLT!",
+            "<strong>Hiperfosfatemia:</strong> Os blastos leucêmicos e as células do Linfoma de Burkitt possuem até <strong>quatro vezes mais fósforo intracelular</strong> do que os linfócitos maduros normais. A lise blastica maciça causa hiperfosfatemia extrema. Quando a capacidade de reabsorção e excreção tubular renal de fosfato é saturada, o fosfato liga-se avidamente ao cálcio iônico circulante, ultrapassando o produto de solubilidade [Cálcio x Fósforo > 60 mg²/dL²] e precipitando cristais insolúveis de <strong>fosfato de cálcio</strong> nos túbulos renais (gerando nefrocalcinose aguda e agravando o colapso renal) e no sistema de condução miocárdico.",
+            "<strong>Hipocalcemia Secundária:</strong> Ocorre pelo sequestro e precipitação rápida do cálcio iônico sérico em complexos de fosfato de cálcio. Provoca hiperexcitabilidade neuromuscular (sinais de Trousseau e Chvostek positivos, parestesias periorais, cãibras musculares tetânicas, laringoespasmo, convulsões e prolongamento do intervalo QT no eletrocardiograma)."
+          ]
+        ],
+        [
+          "4",
+          "Critérios Diagnósticos de Cairo-Bishop (Consenso Internacional):"
+        ],
+        [
+          "p",
+          "A SLT é formalmente classificada em <strong>SLT Laboratorial</strong> (presença de duas ou mais alterações metabólicas nas 24h antes até 7 dias após o início do tratamento) e <strong>SLT Clínica</strong> (SLT laboratorial associada a disfunção orgânica clínica grave):"
+        ],
+        [
+          "t",
+          [
+            "Distúrbio Metabólico",
+            "Valor de Corte Laboratorial (Cairo-Bishop)",
+            "Variação Percentual em Relação ao Basal"
+          ],
+          [
+            [
+              "<strong>Ácido Úrico</strong>",
+              "<strong>>= 8,0 mg/dL</strong> (ou >= 476 mcmol/L)",
+              "Aumento de 25% sobre o valor basal"
+            ],
+            [
+              "<strong>Potássio</strong>",
+              "<strong>>= 6,0 mEq/L</strong> (ou >= 6,0 mmol/L)",
+              "Aumento de 25% sobre o valor basal"
+            ],
+            [
+              "<strong>Fósforo</strong>",
+              "<strong>>= 6,5 mg/dL</strong> em crianças (ou >= 2,1 mmol/L)",
+              "Aumento de 25% sobre o valor basal"
+            ],
+            [
+              "<strong>Cálcio Corrigido / Iônico</strong>",
+              "<strong><= 7,0 mg/dL</strong> (ou Cálcio iônico < 1,12 mmol/L)",
+              "Redução de 25% em relação ao basal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>SLT Clínica:</em> Presença de SLT laboratorial associada a: (1) Creatinina sérica >= 1,5x o limite superior para a idade; (2) Arritmias cardíacas ventriculares graves ou morte súbita; ou (3) Convulsões, tetania ou espasmos musculares."
+        ],
+        [
+          "4",
+          "Neoplasias de Mais Alto Risco para SLT:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Linfoma de Burkitt e LLA-B madura</strong> (risco extremo pela taxa mitótica de duplicação < 24h).",
+            "<strong>LLA e LMA com Hiperleucocitose (> 100.000 leucócitos/mm³)</strong>.",
+            "Linfoma Linfoblástico T com grande massa mediastinal."
+          ]
+        ],
+        [
+          "4",
+          "Manejo Preventivo e Terapêutico da SLT:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Hiper-hidratação Venosa Vigorosa:</strong> Iniciar 24 a 48 horas antes da quimioterapia. Infusão de <strong>2.500 a 3.000 mL/m²/dia</strong> (ou 150 a 200 mL/kg/dia em lactentes) de soro fisiológico a 0,45% com glicose a 5%, <strong>SEM ADIÇÃO DE POTÁSSIO OU CÁLCIO</strong> na solução de hidratação! Meta: manter débito urinário vigoroso de <strong>>= 3 a 4 mL/kg/hora</strong> (ou > 100 mL/m²/hora). Se o débito urinário for insuficiente apesar da reposição hídrica adequada e volemia preenchida, associar diurético de alça (Furosemida 0,5 a 1 mg/kg IV).",
+            "<strong>2. Manejo do Ácido Úrico: Alopurinol versus Rasburicase:</strong>\n    <ul>\n      <li><strong>Alopurinol:</strong> Inibidor competitivo da enzima <em>xantina oxidase</em>. Impede a formação de <em>novo</em> ácido úrico a partir de xantina e hipoxantina. <em>Limitação:</em> NÃO destrói nem reduz o ácido úrico já formado e circulante; além disso, causa acúmulo de xantina, que também pode precipitar nos túbulos renais (xantinúria). Indicado na profilaxia de pacientes de <strong>baixo a intermediário risco</strong>.",
+            "<strong>Rasburicase (Urato-oxidase recombinante):</strong> Enzima lítica recombinante que converte enzimaticamente o ácido úrico circulante pré-existente em <strong>alantoína</strong>. A alantoína é um metabólito inerte altamente solúvel em água (cinco vezes mais solúvel que o ácido úrico), que é excretado pelos rins com extrema facilidade. Reduz os níveis plasmáticos de ácido úrico para valores normais ou indetectáveis em <strong>menos de 4 horas</strong>! Indicada na profilaxia e tratamento de <strong>alto risco de SLT</strong> (Burkitt, hiperleucocitose > 100.000/mm³ ou ácido úrico basal elevado). <em>Contraindicação Absoluta:</em> Pacientes com <strong>Deficiência de Glicose-6-Fosfato Desidrogenase (G6PD)</strong>, pelo risco de induzir hemólise intravascular aguda grave e metemoglobinemia (pois a reação da urato-oxidase produz peróxido de hidrogênio)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>3. A Proscrição da Alcalinização Urinária na Era Moderna:</strong> Historicamente, infundia-se bicarbonato de sódio para alcalinizar a urina (pH > 7,0), visando solubilizar o ácido úrico. <strong>ESSA PRÁTICA ESTÁ HOJE PROSCRITA E CONTRAINDICADA PELOS CONSENSOS ATUAIS!</strong> A alcalinização urinária promove a precipitação maciça de <strong>cristais insolúveis de fosfato de cálcio</strong> nos túbulos renais, desencadeia nefrocalcinose aguda e agrava a hipocalcemia sintomática (por aumentar a ligação do cálcio à albumina). Com o uso da rasburicase, a alcalinização tornou-se completamente desnecessária e prejudicial!</li>\n  <li><strong>4. Tratamento da Hipocalcemia:</strong> Administrar Gluconato de Cálcio a 10% por via intravenosa <strong>EXCLUSIVAMENTE se houver manifestações clínicas graves ou eletrocardiográficas</strong> (tetania, convulsão, alargamento patológico do intervalo QT). O cálcio <strong>NUNCA deve ser infundido em hipocalcemia assintomática</strong> na presença de hiperfosfatemia, sob risco iminente de calcificação metastática renal, pulmonar e cardíaca letal!</li>\n</ul>"
+        ],
+        [
+          "3",
+          "8.2 Neutropenia Febril em Oncologia Pediátrica: Protocolo de Sobrevivência"
+        ],
+        [
+          "p",
+          "A neutropenia febril é a emergência infecciosa mais recorrente no paciente pediátrico submetido à quimioterapia mielossupressora:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Definição Técnica Consensual:</strong>\n    <ul>\n      <li><strong>Febre:</strong> Aferição de temperatura axilar <strong>>= 38,3 °C em aferição única</strong> OU <strong>>= 38,0 °C sustentada por mais de 1 hora</strong>; ASSOCIADA A:",
+            "<strong>Neutropenia:</strong> Contagem absoluta de neutrófilos segmentados (CAN) <strong>< 500/mm³</strong> (ou CAN < 1.000/mm³ com previsão de queda rápida para < 500/mm³ nas próximas 24 a 48 horas)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O Tempo É Vida (\"Golden Hour\"):</strong> A bacteremia e o choque séptico por bacilos Gram-negativos entéricos (como <em>Pseudomonas aeruginosa</em>, <em>Klebsiella pneumoniae</em> e <em>Escherichia coli</em>) podem evoluir para óbito fulminante em menos de 4 a 6 horas em um paciente neutropênico. As diretrizes internacionais estabelecem a <strong>\"Golden Hour\"</strong>: o antibiótico de largo espectro intravenoso bactericida empírico deve ser <strong>administrado na primeira hora após a apresentação no pronto-socorro (tempo porta-agulha < 60 minutos)</strong>, imediatamente após a coleta de hemoculturas (duas amostras: uma do cateter venoso central totalmente implantado e outra de veia periférica).</li>\n  <li><strong>Esquema Antibacteriano Inicial de Primeira Linha:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Monoterapia intravenosa com betalactâmico antipseudomonas: <strong>Cefepima</strong> (150 mg/kg/dia dividido em 3 doses) OU <strong>Piperacilina-Tazobactam</strong> OU Carbapenêmico (Meropenem, se instabilidade hemodinâmica ou histórico de colonização por bactérias multirresistentes produtoras de ESBL).",
+            "<em>Quando Associar Vancomicina Inicialmente?</em> O uso de glicopeptídeos (Vancomicina) não é rotineiro para todos os pacientes. Está estritamente indicado na presença de: (1) Instabilidade hemodinâmica ou choque séptico; (2) Infecção óbvia relacionada a cateter venoso central (hiperemia, drenagem purulenta no túnel ou trajeto); (3) Infecção grave de partes moles, pele ou mucosite grave; (4) Hemocultura prévia positiva para Gram-positivos (S. aureus resistente à oxacilina - MRSA); ou (5) Uso prévio recente de profilaxia com fluoroquinolonas."
+          ]
+        ]
+      ]
+    ],
+    [
+      "onco-ped-casos-clinicos",
+      0,
+      [
+        [
+          "2",
+          "9. Casos Clínicos Pediátricos Comentados Passo a Passo"
+        ],
+        [
+          "p",
+          "Os casos a seguir ilustram situações reais de alta relevância prática na prática pediátrica, emergências e provas de título de especialista e Residência Médica."
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Leucemia Linfoblástica Aguda de Linhagem B com Dor Óssea Noturna"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 3 anos e 6 meses de idade, previamente hígido, levado pela mãe ao pronto-atendimento pediátrico com queixa de febre diária e dor nos membros inferiores há 3 semanas."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança vinha apresentando episódios de febre diária de até 38,5 °C há 20 dias, tratada inicialmente como amigdalite com amoxicilina por 7 dias, sem melhora. Concomitantemente, passou a apresentar dor difusa nas pernas e recusa progressiva para andar. A mãe enfatiza que o menino acorda no meio da noite aos prantos, queixando-se de dor intensa nas coxas e joelhos (\"dor que desperta a criança à noite\"). Há 5 dias surgiram \"pontinhos vermelhos\" na barriga e pernas e sangramento gengival após a escovação dentária. A criança encontra-se apática, hipoativa e inapetente."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em regular estado geral, prostrada, muito hipocorada (3+/4+), anictérica, febril (38,2 °C). Pele: presença de múltiplas petéquias em tronco, abdome e membros inferiores, associadas a três equimoses espontâneas de 2 a 3 cm em coxas e dorso (locais não habituais de trauma). Orofaringe: palidez de mucosas, hipertrofia gengival discreta com pontos hemorrágicos. Cadeias linfonodais: linfonodos cervicais bilaterais múltiplos, axilares e inguinais palpáveis, medindo de 1,5 a 2,0 cm, indolores, firmes e móveis. Abdome: globoso, fígado palpável a 4 cm do rebordo costal direito, consistência firme e indolor; baço palpável a 3,5 cm do rebordo costal esquerdo. Aparelho osteoarticular: dor intensa à palpação das diáfises de ambos os fêmures e tíbias, sem sinais inflamatórios articulares locais (sem calor, rubor ou derrame articular visível). Testículos: volume simétrico normal (1,5 mL), sem massas."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais Iniciais:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemograma: Hemoglobina: 6,8 g/dL; VCM: 84 fL; Leucócitos totais: 34.000/mm³ (Blastos: 62%, Promielócitos: 0%, Mielócitos: 0%, Bastonetes: 1%, Segmentados: 8%, Linfócitos: 26%, Monócitos: 3%); Neutrófilos absolutos: 3.060/mm³; Plaquetas: 18.000/mm³.",
+            "Coagulograma: TP (INR): 1,0; TTPA: normal; Fibrinogênio: 290 mg/dL.",
+            "Ácido úrico: 6,2 mg/dL; Creatinina: 0,4 mg/dL; Potássio: 4,1 mEq/L; Fósforo: 4,5 mg/dL; DHL (Desidrogenase Lática): 1.850 U/L (muito elevada!).",
+            "Radiografia de ossos longos: bandas radiotransparentes metafisárias transversais em fêmures distais e tíbias proximais (\"linhas leucêmicas\")."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O quadro clínico reúne a tríade clássica de falência medular (anemia hipoproliferativa grave, plaquetopenia com sangramentos mucocutâneos e febre) associada a infiltração osteoarticular com dor noturna acordadora e infiltração reticuloendotelial (hepatoesplenomegalia e poliadenomegalia indolor).",
+            "A presença de 62% de blastos no sangue periférico e DHL maciçamente elevada sela a urgência onco-hematológica.",
+            "<strong>Procedimento Diagnóstico Padrão-Ouro:</strong> Internação imediata em enfermaria oncopediátrica e realização de <strong>Mielograma por Punção Aspirativa da Medula Óssea na Crista Ilíaca Póstero-Superior</strong> associado a Punção Lombar diagnóstica com quimioterapia intratecal profilática.",
+            "<strong>Resultados da Medula Óssea:</strong>\n      <ul>\n        <li>Citologia: Medula hipercelular com <strong>88% de linfoblastos</strong> pequenos com relação núcleo-citoplasma alta e nucléolos inconspícuos (morfologia L1).",
+            "Imunofenotipagem por citometria de fluxo: Blastos fortemente positivos para <strong>CD19, CD22, CD10 (CALLA+), CD79a e TdT</strong>; negativos para mieloperoxidase e marcadores de células T. Confirma <strong>Leucemia Linfoblástica Aguda de Células Precursoras B Comum (LLA-B Comum)</strong>.",
+            "Citogenética / FISH: Demonstrou cariótipo hiperdiploide com 55 cromossomos (favorável) e presença da fusão <em>ETV6-RUNX1</em> / t(12;21). Ausência de cromossomo Philadelphia.",
+            "<strong>Estratificação e Terapêutica:</strong> Classificado como Risco Padrão do NCI (idade entre 1 e 9 anos e leucócitos < 50.000/mm³). Iniciada hidratação venosa vigorosa e profilaxia com alopurinol para lise tumoral + quimioterapia de indução da remissão de 4 drogas (Dexametasona, Vincristina, L-asparaginase e Daunorrubicina) conforme protocolo GBTLI / BFM. No D33 de indução, alcançou remissão citológica completa com Doença Residual Mínima (DRM) negativa (< 0,01%). Prognóstico de cura a longo prazo superior a 90%!"
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Massa Abdominal Pediátrica: Diagnóstico Diferencial de Wilms versus Neuroblastoma"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menina de 3 anos de idade, previamente hígida, levada pela mãe à Unidade Básica de Saúde após notar aumento de volume no abdome durante o banho."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que há cerca de duas semanas percebeu uma \"massa dura\" no lado esquerdo da barriga da filha enquanto a ensaboava. A criança não se queixa de dor, não apresentou febre, vômitos, tosse ou alterações no hábito intestinal. A mãe nega emagrecimento; a menina continua ativa, brincando normalmente e com apetite preservado. Nega hematúria macroscópica visível."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em <strong>EXCELENTE ESTADO GERAL</strong>, corada, hidratada, ativa e cooperativa, afebril, anictérica. Dados antropométricos: Peso e Estatura no percentil 50. Sinais vitais: Frequência cardíaca: 98 bpm; <strong>Pressão arterial: 124/82 mmHg (Pressão Arterial acima do percentil 95 + 12 mmHg para idade, sexo e estatura — caracterizando Hipertensão Arterial Estágio 2!)</strong>. Segmento cefálico e tórax sem anormalidades. Abdome: assimétrico à inspeção, com abaulamento evidente em flanco esquerdo. À palpação suave: presença de <strong>massa tumoral volumosa no flanco e hipocôndrio esquerdos, medindo aproximadamente 10 x 8 cm, de superfície LISA, consistência firme-elástica, discretamente móvel e indolor</strong>. Crucialmente: <strong>A MASSA NÃO ULTRAPASSA A LINHA MÉDIA DO ABDOME</strong> (respeita rigorosamente o plano sagital mediano). Fígado e baço não palpáveis além da massa renal. Ausência de linfonodomegalias periféricas. Fundo de olho normal."
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Urina tipo I: densidade 1.020, pH 6,0; presença de <strong>hematúria microscópica (35 hemácias por campo de grande aumento)</strong>, sem proteinúria.",
+            "Hemograma e coagulograma normais; Ureia e Creatinina normais.",
+            "Ultrassonografia e TC com contraste de Abdome: Massa sólida volumosa, heterogênea, com epicentro no <strong>parênquima do rim esquerdo</strong>, medindo 11 cm no maior eixo, circundada por pseudocápsula íntegra, promovendo compressão e distorção do sistema pielocalicial e parênquima renal adjacente remanescente (\"sinal do crescente renal\" ou \"sinal da garra\"), <strong>sem calcificações macroscópicas</strong>. Não cruza a linha média. Veia renal esquerda e veia cava inferior pérvias, sem trombos tumorais intraluminais. Rim contralateral normal.",
+            "TC de tórax com contraste: ausência de nódulos ou metástases pulmonares.",
+            "Dosagem de Ácido Homovanílico (HVA) e Ácido Vanilmandélico (VMA) urinários: rigorosamente normais!"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O caso reúne todas as características patognomônicas do <strong>Tumor de Wilms (Nefroblastoma)</strong>: idade de 3 anos, excelente estado geral da criança, massa abdominal unilateral lisa e firme que <strong>NÃO ULTRAPASSA A LINHA MÉDIA</strong>, presença de hipertensão arterial sistêmica e hematúria microscópica, com exames de imagem mostrando origem intrarrenal sem calcificações e catecolaminas urinárias normais.",
+            "A hipótese de Neuroblastoma é descartada pela preservação do estado geral, ausência de calcificações intratumorais na TC, respeito estrito à linha média e normalidade do HVA/VMA urinários.",
+            "<em>Conduta Imediata de Proteção:</em> Orientação estrita à equipe médica e de enfermagem: <strong>PROIBIDA A PALPAÇÃO REPETIDA DO ABDOME</strong> pelo risco de rotura da pseudocápsula e derrame neoplásico peritoneal.",
+            "<em>Tratamento Instituído:</em> Encaminhamento a centro oncológico de referência. Conforme protocolo SIOP, a paciente recebeu Quimioterapia Pré-Operatória com Vincristina e Dactinomicina por 4 semanas, demonstrando redução de 60% no volume da massa. Foi submetida à <strong>Nefrectomia Radical Esquerda</strong> sem intercorrências e sem rotura capsular. O exame anatomopatológico confirmou Tumor de Wilms trifásico clássico de Histologia Favorável Estágio I. Seguiu em quimioterapia adjuvante curta, atingindo cura completa sem necessidade de radioterapia."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Neuroblastoma Metastático com \"Olhos de Guaxinim\" e Síndrome Paraneoplásica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Lactente masculino de 18 meses de vida, trazido ao hospital terciário por febre, perda ponderal, irritabilidade extrema e manchas roxas ao redor dos olhos há 3 semanas."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> Os pais relatam que o lactente era saudável até 1 mês atrás, quando passou a apresentar apatia, sudorese excessiva, perda de peso (emagreceu 1,5 kg) e episódios de febre diária de 38,0 °C a 38,8 °C. Há 3 semanas, os pais notaram o aparecimento espontâneo de \"manchas roxas\" ao redor de ambos os olhos, acompanhadas de \"olhos saltados para fora\" (proptose ocular progressiva bilateral), inicialmente atribuídas a suposto traumatismo doméstico que os pais negam veementemente. Concomitantemente, a criança chora copiosamente ao ser manipulada ou colocada de pé (dor óssea intensa e generalizada). Há relato de evacuações amolecidas frequentes."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Lactente em <strong>MAU ESTADO GERAL</strong>, profundamente irritado, emagrecido, toxêmico, hipocorado (2+/4+), taquicárdico (FC: 155 bpm) e hipertenso (PA: 118/78 mmHg). Exame Ocular: <strong>proptose ocular bilateral evidente com equimose periorbitária exuberante violácea bilateral em formato de óculos (\"olhos de guaxinim\" ou fácies de panda)</strong>. Abdome: distendido, com <strong>massa retroperitoneal volumosa, pétrea, endurecida, profundamente irregular e nodular (\"aspecto de saco de nozes\"), com epicentro em hipocôndrio direito, MAS QUE ULTRAPASSA AMPLAMENTE A LINHA MÉDIA DO ABDOME</strong> estendendo-se para a fossa ilíaca esquerda, fixa e aderida a planos profundos. Membros: choro intenso à palpação de membros inferiores."
+        ],
+        [
+          "p",
+          "<strong>Investigação Diagnóstica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemograma: Anemia normocítica (Hb: 7,9 g/dL); Plaquetas: 110.000/mm³; Leucócitos normais. Ferritina sérica: 980 ng/mL (muito elevada). DHL: 2.400 U/L.",
+            "<strong>Bioquímica Urinária: Ácido Homovanílico (HVA) e Ácido Vanilmandélico (VMA) urinários em níveis 8 vezes acima do limite superior da normalidade!</strong>",
+            "Tomografia Computadorizada de Abdome com contraste: Volumosa massa sólida retroperitoneal adrenal direita de 12 cm, heterogênea, com áreas de necrose central e <strong>MICRO E MACROCALCIFICAÇÕES GROSSEIRAS DIFUSAS NO SEU INTERIOR (em mais de 80% do tumor)</strong>. A massa cruza amplamente a linha média, engloba concentricamente a aorta abdominal e a veia cava inferior e desloca o rim direito inferiormente (\"sinal do rim em gota de lágrima\" por compressão extrínseca, mantendo parênquima renal íntegro).",
+            "TC de Órbitas e Crânio: Múltiplas lesões ósseas líticas destrutivas com invasão de partes moles nas paredes laterais das órbitas, teto orbitário e calota craniana, justificando a proptose e os hematomas periorbitários.",
+            "Aspirado e Biópsia de Medula Óssea: Infiltração maciça por células redondas pequenas azuis agrupadas em <strong>rosetas de Homer-Wright</strong> (rosetas neuroblásticas com centro eosinofílico fibrilar).",
+            "Genética Molecular Tumoral (FISH): Demonstrou <strong>AMPLIFICAÇÃO DO ONCOGENE <em>MYCN</em> (> 20 cópias do gene)</strong>.",
+            "Cintilografia de Corpo Inteiro com ¹²³I-MIBG: Intensa hipercaptação na massa adrenal primária e em múltiplos focos ósseos disseminados em crânio, arcos costais, bacia e fêmures."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O quadro configura a apresentação clássica de <strong>Neuroblastoma Metastático Adrenal de Alto Risco (Estágio M do INRGSS / Estágio 4)</strong>, caracterizado por massa abdominal adrenal calcificada que <strong>cruza a linha média</strong>, metástases osteomedulares disseminadas com sinal patognomônico de Hutchinson (\"olhos de guaxinim\"), elevação de HVA/VMA e <strong>amplificação de <em>MYCN</em></strong>.",
+            "Trata-se de uma neoplasia de altíssimo risco biológico. O tratamento imediato requer protocolo multimodal agressivo: quimioterapia de indução intensiva de altas doses com regimes combinados (Ciclofosfamida, Doxorrubicina, Cisplatina, Etoposídeo e Vincristina), seguida de ressecção cirúrgica tardia da massa adrenal residual, Quimioterapia em Megadose com Resgate de Células-Tronco Hematopoéticas (Transplante Autólogo Duplo de Medula Óssea), Radioterapia adjuvante do leito tumoral e sítios metastáticos residuais, Ácido 13-Cis-Retinoico para induzir diferenciação e Imunoterapia com <strong>anticorpo anti-GD2 (Dinutuximabe)</strong> associado a GM-CSF e IL-2."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Linfoma de Burkitt Abdominal e Síndrome de Lise Tumoral Aguda"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 6 anos de idade, previamente hígido, admitido na emergência com dor abdominal aguda progressiva, distensão abdominal e vômitos há 5 dias."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança começou a queixar-se de dor em cólica no lado direito da barriga há menos de 1 semana, com aparecimento rápido de um inchaço endurecido que \"cresceu dia a dia\" a ponto de distender todo o abdome. Nas últimas 24 horas, apresentou 6 episódios de vômitos inicialmente alimentares e depois biliosos, parada de eliminação de gases e fezes e letargia. Nega febre prévia ou sintomas constitucionais de longa data."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em regular a mau estado geral, sonolenta, gemente, desidratada (2+/4+), taquicárdica (FC: 142 bpm), taquipneica (FR: 34 irpm), afebril. Abdome: distendido, ruídos hidroaéreos com timbre metálico de luta alternando com silêncio. À palpação: <strong>massa abdominal volumosa no quadrante inferior direito (fossa ilíaca direita e mesogástrio), medindo cerca de 9 x 8 cm, pétrea, fixa e dolorosa</strong>, com sinais de peritonismo localizado e ascite moderada concomitante."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Emergencial:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Ultrassonografia e TC de abdome: Revelaram invaginação íleo-cólica clássica (sinal do alvo/pseudorrim) decorrente de volumosa massa tumoral na parede do íleo terminal com adenomegalias mesentéricas confluentes e ascite volumosa.",
+            "A criança foi levada com urgência ao centro cirúrgico pelo cirurgião pediátrico sob hipótese de abdome agudo obstrutivo por intussuscepção. Realizada laparotomia exploradora: identificada massa tumoral infiltrando todo o ceco e íleo distal com intussuscepção irredutível; realizada enterectomia segmentar com biópsia da lesão e ileostomia de proteção.",
+            "<strong>Laudo Anatomopatológico Rápido e Imunofenotipagem:</strong>\n      <ul>\n        <li>Histopatologia: Lâmina celular difusa de células linfoides médias monomórficas com citoplasma vacuolizado basofílico e incontáveis macrófagos de corpos tingíveis gerando o padrão clássico em <strong>\"CÉU ESTRELADO\" (<em>Starry Sky</em>)</strong>.",
+            "Imunofenotipagem: CD20+, CD19+, CD10+, BCL6+, BCL2 negativo, <strong>Ki-67 de 100%</strong> (proliferação mitótica máxima).",
+            "Citogenética / FISH: <strong>Translocação t(8;14)(q24;q32) positiva</strong>, fundindo o gene <em>MYC</em> ao promotor de cadeia pesada de imunoglobulina. Diagnóstico definitivo: <strong>Linfoma de Burkitt Esporádico Abdominal</strong>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Evolução Pós-Operatória Crítica (Instalação da Síndrome de Lise Tumoral):</strong>"
+        ],
+        [
+          "p",
+          "Cerca de 18 horas após a cirurgia e antes do início formal da quimioterapia, o paciente apresentou lise tumoral espontânea decorrente do estresse cirúrgico:"
+        ],
+        [
+          "u",
+          [
+            "Débito urinário colapsou para 0,3 mL/kg/hora nas últimas 6 horas (oligúria severa).",
+            "<strong>Bioquímica Sérica de Urgência:</strong>\n      <ul>\n        <li><strong>Ácido úrico: 14,8 mg/dL (Valor basal normal: até 6,0 mg/dL!).</strong>",
+            "<strong>Potássio sérico: 6,8 mEq/L (Hiperpotassemia grave; eletrocardiograma evidenciou ondas T apiculadas e simétricas em tenda nas derivações precordiais!).</strong>",
+            "<strong>Fósforo sérico: 9,2 mg/dL (Hiperfosfatemia extrema!).</strong>",
+            "<strong>Cálcio sérico total: 6,1 mg/dL (Cálcio iônico: 0,82 mmol/L - Hipocalcemia acentuada; paciente com sinal de Chvostek positivo e espasmo carpopedal incipiente).</strong>",
+            "<strong>Creatinina sérica: 2,1 mg/dL (Aumento de mais de 4 vezes o limite normal para a idade, caracterizando Insuficiência Renal Aguda anúrica).</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo Emergencial da Síndrome de Lise Tumoral Clínica Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente preenche todos os critérios de <strong>Síndrome de Lise Tumoral Clínica Grave de Cairo-Bishop</strong> (hiperuricemia + hiperpotassemia + hiperfosfatemia + hipocalcemia associadas a insuficiência renal aguda oligúrica e alterações eletrocardiográficas).",
+            "<strong>Tratamento Imediato da Hipercalemia Ameaçadora à Vida:</strong>\n      <ul>\n        <li>Administração intravenosa imediata de <strong>Gluconato de Cálcio a 10% (0,5 mL/kg IV lento em 5 a 10 minutos sob monitorização cardíaca contínua)</strong> para estabilizar a membrana dos cardiomiócitos contra arritmias ventriculares (o cálcio é o único tratamento imediato que protege o coração, apesar da hiperfosfatemia, por haver alteração de ECG!).",
+            "Medidas de deslocamento intracelular de potássio: Solução de <strong>Glicose 50% + Insulina Regular</strong> (0,1 U/kg de insulina com 0,5 g/kg de glicose IV em 30 min), inalação com beta-2 agonista (Salbutamol em altas doses) e resina de troca iônica intestinal (Poliestirenossulfonato de cálcio/Sorcal).",
+            "<strong>Controle do Ácido Úrico:</strong> Prescrição imediata de <strong>Rasburicase intravenosa (0,2 mg/kg IV infundido em 30 minutos)</strong>. O alopurinol isolado seria totalmente ineficaz neste momento, pois não degrada o ácido úrico de 14,8 mg/dL já cristalizado nos rins. A rasburicase cliva o ácido úrico em alantoína solúvel rapidamente. (Atenção: alcalinização urinária com bicarbonato foi expressamente evitada para não piorar a precipitação de fosfato de cálcio!).",
+            "<strong>Suporte Dialítico de Urgência:</strong> Devido à oligoanúria refratária, creatinina de 2,1 mg/dL e produto cálcio x fósforo > 60 mg²/dL² com hiperfosfatemia de 9,2 mg/dL, indicou-se <strong>Hemodiálise de Urgência / Hemodiafiltração Contínua</strong> para remoção rápida de fósforo e potássio e recuperação do equilíbrio volêmico.",
+            "Após estabilização metabólica e normalização da função renal pela diálise em 48 horas, iniciou-se a quimioterapia em doses escalonadas conforme o protocolo B-NHL-BFM, com excelente regressão das lesões residuais."
+          ]
+        ]
+      ]
+    ],
+    [
+      "onco-ped-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "10. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "As questões a seguir representam os temas mais incidentes em Oncologia Pediátrica nos concursos de Residência Médica de Acesso Direto (USP, UNIFESP, UNICAMP, ENARE, UERJ) e no Revalida INEP/ENAMED."
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (USP - Acesso Direto):</strong> Menino de 3 anos de idade é trazido ao pronto-socorro infantil com história de palidez cutaneomucosa progressiva, adinamia e febre diária de até 38,4 °C há 3 semanas. A mãe refere que a criança vem apresentando dor nos membros inferiores que a desperta frequentemente durante a madrugada, associada à recusa recente da deambulação. Ao exame físico: descorado (3+/4+), presença de petéquias esparsas em tronco e membros inferiores e equimose espontânea em coxa direita; micropoliadenopatia cervical e inguinal indolor; fígado palpável a 3 cm do RCD e baço a 3 cm do RCE; dor moderada à palpação das tíbias bilateralmente. Hemograma: Hb 7,2 g/dL, Leucócitos 28.000/mm³ (presença de 45% de blastos pequenos com alta relação núcleo-citoplasma) e Plaquetas 24.000/mm³. Diante do quadro clínico e laboratorial, assinale a alternativa que contém o procedimento padrão-ouro para confirmação diagnóstica definitiva e o achado esperado:"
+        ],
+        [
+          "u",
+          [
+            "A) Biópsia de linfonodo cervical excisional; presença de células gigantes de Reed-Sternberg CD15+ e CD30+.",
+            "B) Aspirado de medula óssea (mielograma); celularidade medular com 20% ou mais de blastos.",
+            "C) Biópsia óssea trepanada da tíbia; presença de proliferação histiocítica com grânulos de Birbeck à microscopia eletrônica.",
+            "D) Dosagem urinária de ácido homovanílico (HVA) e ácido vanilmandélico (VMA) em urina de 24 horas.",
+            "E) Imunofenotipagem exclusiva de sangue periférico; dispensa da realização de aspirado de medula óssea se blastos > 20%."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta o quadro clínico clássico de <strong>Leucemia Linfoblástica Aguda (LLA)</strong>: síndrome de insuficiência medular (anemia, plaquetopenia com manifestações hemorrágicas, febre), síndrome infiltrativa osteoarticular (dor óssea noturna acordadora que desperta a criança, recusa de marcha) e infiltração reticuloendotelial (hepatoesplenomegalia indolor). De acordo com os critérios consensuais da Organização Mundial da Saúde (OMS), o exame padrão-ouro indispensável para o diagnóstico definitivo é a <strong>análise citológica do aspirado de medula óssea (mielograma)</strong>, demonstrando <strong>infiltração igual ou superior a 20% de blastos (>= 20%)</strong> na celularidade total medular."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Descreve o diagnóstico do Linfoma de Hodgkin, que acomete preferencialmente adolescentes com linfadenopatia cervical/supraclavicular indolor crônica, sem insuficiência medular trilinear aguda.",
+            "<em>Alternativa C incorreta:</em> Descreve a Histiocitose de Células de Langerhans, que apresenta lesões osteolíticas em \"saca-bocado\" no crânio, sem blastos leucêmicos na hematoscopia periférica.",
+            "<em>Alternativa D incorreta:</em> HVA e VMA são metabólitos urinários das catecolaminas usados para diagnosticar Neuroblastoma, não leucemias.",
+            "<em>Alternativa E incorreta:</em> Embora a imunofenotipagem de sangue periférico possa sugerir a linhagem celular, ela <strong>NÃO substitui nem dispensa a realização do mielograma</strong> para a caracterização morfológica, citogenética e avaliação biológica basal completa da medula óssea."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (ENARE / Exame Nacional de Residência):</strong> Menino de 3 anos é levado à consulta ambulatorial porque a mãe percebeu uma massa endurecida no lado esquerdo do abdome durante o banho. O menino está ativo, corado, afebril e sem dor. O exame físico revela massa abdominal volumosa, palpável no flanco esquerdo, de superfície lisa, consistência firme-elástica, indolor e que NÃO ultrapassa a linha média abdominal. A pressão arterial encontra-se no percentil 99 para idade e estatura. A urina tipo I mostra 25 hemácias por campo. A tomografia de abdome confirma massa sólida intrarrenal esquerda heterogênea sem calcificações. A principal hipótese diagnóstica e a conduta de exame físico a ser evitada são, respectivamente:"
+        ],
+        [
+          "u",
+          [
+            "A) Neuroblastoma adrenal; evitar a palpação profunda pelo risco de liberação maciça de catecolaminas e crise hipertensiva aguda.",
+            "B) Tumor de Wilms (nefroblastoma); evitar palpações abdominais repetidas pelo risco iminente de rotura da pseudocápsula tumoral e derrame neoplásico peritoneal.",
+            "C) Rabdomiossarcoma retroperitoneal; evitar a realização de exames contrastados com iodo pelo risco de lesão renal.",
+            "D) Linfoma de Burkitt; evitar palpação pelo risco de induzir invaginação intestinal imediata.",
+            "E) Cisto renal simples infectado; evitar punção aspirativa percutânea."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A descrição clínica é patognomônica do <strong>Tumor de Wilms (Nefroblastoma)</strong>: criança pré-escolar (pico 2 a 4 anos) em excelente estado geral, apresentando massa abdominal unilateral lisa e firme que <strong>NÃO ULTRAPASSA A LINHA MÉDIA</strong>, associada a hipertensão arterial (por compressão da artéria renal e ativação do sistema renina-angiotensina) e hematúria microscópica, sem calcificações macroscópicas na imagem. A regra de ouro semiológica pediátrica determina: <strong>evitar terminantemente palpações abdominais repetidas e vigorosas</strong>, sob risco de romper a fina pseudocápsula que recobre o tumor, provocando sangramento agudo e extravasamento de células neoplásicas para a cavidade peritoneal (<em>spillage</em>), o que eleva o estadiamento para Estágio III e piora o prognóstico da criança."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> O neuroblastoma adrenal geralmente ultrapassa a linha média abdominal, apresenta contornos muito irregulares e lobulados (\"saco de nozes\"), contém calcificações grosseiras em > 80% na TC e cursa com estado geral comprometido.",
+            "<em>Alternativas C, D e E incorretas:</em> O quadro não corresponde a rabdomiossarcoma, linfoma ou cisto renal. O risco de rotura capsular por palpação é uma clássica pérola associada ao tumor de Wilms."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP - Residência Médica):</strong> Lactente de 16 meses de vida apresenta massa retroperitoneal volumosa e irregular que ultrapassa a linha média à palpação abdominal, associada a febre persistente, prostração, equimoses periorbitárias bilaterais violáceas (\"olhos de guaxinim\") e proptose ocular. A tomografia computadorizada demonstra massa na loja suprarrenal direita com microcalcificações grosseiras difusas em seu interior. Diante da principal hipótese diagnóstica, assinale o teste laboratorial urinário não invasivo de escolha e o marcador de biologia molecular associado a prognóstico altamente desfavorável:"
+        ],
+        [
+          "u",
+          [
+            "A) Dosagem de ácido 5-hidroxi-indolacético (5-HIAA); mutação no gene <em>BRAF V600E</em>.",
+            "B) Dosagem urinária de ácido homovanílico (HVA) e ácido vanilmandélico (VMA); amplificação do oncogene <em>MYCN</em>.",
+            "C) Dosagem de metanefrinas fracionadas urinárias; deleção do cromossomo 11p13 (gene <em>WT1</em>).",
+            "D) Pesquisa de fosfátase alcalina urinária; translocação t(12;21) / fusão <em>ETV6-RUNX1</em>.",
+            "E) Dosagem de aldosterona urinária; presença do cromossomo Philadelphia t(9;22)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O quadro clínico descrito — lactente, massa abdominal adrenal irregular que <strong>cruza a linha média</strong>, calcificações intratumorais na TC e metástases orbitárias com hematoma periorbitário bilateral (\"olhos de guaxinim\" / sinal de Hutchinson) — é patognomônico de <strong>Neuroblastoma Metastático</strong>. Como o tumor deriva da crista neural simpática embrionária, mais de 90% excretam catecolaminas, sendo o teste laboratorial de triagem a <strong>dosagem urinária de metabólitos das catecolaminas: Ácido Homovanílico (HVA) e Ácido Vanilmandélico (VMA)</strong>. No plano da biologia molecular tumoral, o marcador genômico isolado mais temido de altíssimo risco e comportamento biológico agressivo é a <strong>amplificação do oncogene <em>MYCN</em> (> 10 cópias)</strong> no cromossomo 2p24."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> 5-HIAA é metabólito da serotonina usado em tumores carcinoides intestinais (raros na infância).",
+            "<em>Alternativa C incorreta:</em> Deleção de 11p13 está associada à síndrome WAGR e ao tumor de Wilms.",
+            "<em>Alternativas D e E incorretas:</em> t(12;21) é alteração de excelente prognóstico na LLA; cromossomo Philadelphia ocorre na LLA e LMC, não tendo relação com neuroblastoma."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 4 (UERJ - Residência Médica):</strong> Adolescente de 15 anos procura assistência médica por apresentar aumento progressivo e indolor de linfonodos no lado esquerdo do pescoço há cerca de 2 meses. Ao interrogatório sistemático, refere febre diária de 38,2 °C, sudorese noturna que molha o travesseiro e perda de 6 kg de peso corporal (peso habitual 55 kg) nos últimos 3 meses. Ao exame físico: linfonodos aumentados em cadeia cervical anterior esquerda e fossa supraclavicular esquerda, medindo 3,0 cm no maior eixo, consistência elástica/borrachosa, indolores, aderidos entre si, sem sinais flogísticos cutâneos. A radiografia de tórax evidencia alargamento significativo do mediastino anterior. Diante da principal suspeita diagnóstica, assinale a conduta propedêutica confirmatória padrão-ouro e a correta interpretação dos sintomas sistêmicos:"
+        ],
+        [
+          "u",
+          [
+            "A) Punção aspirativa por agulha fina (PAAF) do linfonodo supraclavicular; presença de Sintomas B indicando necessidade exclusiva de radioterapia local.",
+            "B) Biópsia excisional completa do linfonodo acometido; o paciente apresenta Sintomas B sistêmicos (febre, sudorese noturna e perda ponderal > 10%), fatores que conferem maior gravidade e requerem quimioterapia sistêmica combinada.",
+            "C) Teste tuberculínico (PPD) e broncoscopia com lavado broncoalveolar; os sintomas configuram escrófula tuberculosa com cura apenas por tuberculostáticos.",
+            "D) Sorologia para toxoplasmose e citomegalovírus; conduta expectante por 60 dias para resolução espontânea da linfadenite.",
+            "E) Drenagem cirúrgica do linfonodo cervical sob suspeita de abscesso bacteriano estafilocócico subagudo."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O quadro é o clássico do <strong>Linfoma de Hodgkin</strong> em adolescentes (pico na faixa dos 15 aos 24 anos): linfadenopatia cervical e supraclavicular crônica (> 4 semanas), indolor, endurecida, com massa mediastinal anterior associada. O paciente apresenta todos os três <strong>Sintomas B constitucionais</strong> clássicos: febre inexplicada (> 38 °C), sudorese noturna profusa e perda involuntária de mais de 10% do peso corporal nos últimos 6 meses (perdeu 6 kg de 55 kg = quase 11%). O exame confirmatório padrão-ouro é a <strong>biópsia excisional completa do linfonodo (remoção de todo o gânglio para avaliação da arquitetura nodal tridimensional)</strong>. A PAAF é formalmente contraindicada em suspeita de linfoma porque não preserva a arquitetura tecidual necessária para identificar as raras células de Reed-Sternberg em meio ao infiltrado reativo."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A PAAF não fornece tecido suficiente para estadiamento arquitetural e imunofenotipagem de Linfoma de Hodgkin.",
+            "<em>Alternativas C, D e E incorretas:</em> Linfonodo supraclavicular aderido de 3,0 cm associado a massa mediastinal anterior e sintomas B não deve ser conduzido como infecção benigna ou abscesso; a punção ou drenagem de linfoma pode provocar fístulas e disseminação tumoral local."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 5 (Revalida INEP):</strong> Escolar de 7 anos em tratamento quimioterápico de indução para Leucemia Linfoblástica Aguda de alto risco com hiperleucocitose inicial desenvolve, 36 horas após o início da quimioterapia, oligúria marcante (débito urinário de 0,4 mL/kg/hora). Os exames séricos de controle revelam: Ácido Úrico: 12,5 mg/dL; Potássio: 6,4 mEq/L; Fósforo: 8,8 mg/dL; Cálcio total: 6,4 mg/dL; Creatinina: 1,9 mg/dL. O eletrocardiograma demonstra ondas T pontiagudas e simétricas em tenda nas derivações V2 a V5. Em relação ao manejo da complicação metabólica instalada, assinale a conduta farmacológica CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) Administrar Gluconato de Cálcio intravenoso imediatamente para todos os pacientes com a meta de normalizar o cálcio sérico total acima de 9,0 mg/dL.",
+            "B) Prescrever Bicarbonato de Sódio intravenoso para alcalinizar a urina acima de pH 7,5 a fim de aumentar a excreção de fosfato e ácido úrico.",
+            "C) Iniciar Rasburicase intravenosa para degradação imediata do ácido úrico em alantoína solúvel e administrar Gluconato de Cálcio IV prioritariamente para estabilização de membrana miocárdica em virtude das alterações no eletrocardiograma.",
+            "D) Prescrever Alopurinol oral em dose dobrada, pois atua degradando diretamente os cristais já precipitados nos túbulos renais.",
+            "E) Suspender totalmente a hidratação venosa para evitar sobrecarga volêmica diante da oligúria instalada."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta <strong>Síndrome de Lise Tumoral (SLT) Clínica Grave</strong> com hiperuricemia, hipercalemia com repercussão eletrocardiográfica (ondas T apiculadas em tenda), hiperfosfatemia e hipocalcemia secundária associadas a lesão renal aguda oligúrica. O manejo correto exige: (1) <strong>Gluconato de Cálcio IV imediato</strong> para proteger o miocárdio contra arritmias ventriculares potencialmente letais pela hiperpotassemia (estabilização de membrana); e (2) <strong>Rasburicase IV</strong>, uma urato-oxidase que cliva diretamente o ácido úrico circulante em alantoína solúvel, reduzindo a uremia em poucas horas."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Não se administra cálcio para \"normalizar cálcio sérico\" na SLT, pois o cálcio infundido precipita com o fosfato elevado gerando calcificação metastática renal; o cálcio só é indicado quando há repercussão eletrocardiográfica da hipercalemia ou tetania grave!",
+            "<em>Alternativa B incorreta:</em> A alcalinização urinária com bicarbonato de sódio está <strong>PROSCRITA</strong> nas diretrizes atuais porque promove a precipitação de fosfato de cálcio nos túbulos renais, agravando a falência renal.",
+            "<em>Alternativa D incorreta:</em> O alopurinol atua inibindo a <em>xantina oxidase</em> (impede nova formação), mas não elimina o ácido úrico já formado e circulante.",
+            "<em>Alternativa E incorreta:</em> A hiper-hidratação vigorosa deve ser mantida; a oligúria exige suporte dialítico (hemodiálise), e não interrupção da hidratação para manter depuração."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 6 (FMUSP - Residência Médica):</strong> Criança de 5 anos de idade com diagnóstico recente de leucemia aguda realiza mielograma. À análise citomorfológica das lâminas coradas por Leishman, o hematologista identifica a presença inequívoca de estruturas lineares avermelhadas e fusiformes dispostas no citoplasma dos blastos, descritas como bastonetes (ou corpos) de Auer. A identificação dessa estrutura intracelular permite afirmar com certeza absoluta que se trata de:"
+        ],
+        [
+          "u",
+          [
+            "A) Leucemia Linfoblástica Aguda de linhagem B CD10 positiva.",
+            "B) Leucemia Linfoblástica Aguda de linhagem T.",
+            "C) Leucemia Mieloide Aguda (linhagem mieloide).",
+            "D) Linfoma de Burkitt em fase leucêmica com infiltração medular.",
+            "E) Anemia Aplásica Grave em fase de regeneração clonal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "Os <strong>bastonetes (ou corpos) de Auer</strong> são inclusões citoplasmáticas patognomônicas resultantes da coalescência condensada de grânulos azurofílicos primários lisossômicos ricos na enzima <strong>mieloperoxidase (MPO)</strong>. Sua visualização na microscopia óptica é <strong>100% patognomônica da linhagem mieloide</strong>, confirmando sem exceção o diagnóstico de <strong>Leucemia Mieloide Aguda (LMA)</strong> e excluindo de forma categórica qualquer linhagem linfoide (LLA-B, LLA-T ou Linfoma de Burkitt)."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, B e D incorretas:</em> Linfoblastos não possuem grânulos azurofílicos de mieloperoxidase e nunca formam bastonetes de Auer.",
+            "<em>Alternativa E incorreta:</em> A anemia aplásica cursa com hipocelularidade medular profunda e substituição gordurosa do parênquima, sem proliferação blástica ou corpos de Auer."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 7 (SES-PE - Residência Médica):</strong> Menino de 8 anos portador de Leucemia Linfoblástica Aguda em quimioterapia de manutenção apresenta febre aferida em domicílio de 38,5 °C há 2 horas. Encontra-se em uso de cateter venoso central totalmente implantado (Port-a-Cath). Ao chegar ao pronto-socorro oncológico: REG, hipoativo, FC 135 bpm, PA 95/60 mmHg, FR 22 irpm, afebril no momento (37,4 °C após dipirona domiciliar). O hemograma colhido na admissão revela: Leucócitos totais: 1.200/mm³ (Segmentados: 15%, Bastonetes: 5%, Linfócitos: 80%), correspondendo a uma Contagem Absoluta de Neutrófilos (CAN) de 240/mm³. Diante do diagnóstico de Neutropenia Febril, assinale a conduta prioritária e o prazo temporal preconizado pelas diretrizes internacionais:"
+        ],
+        [
+          "u",
+          [
+            "A) Aguardar o resultado das culturas de sangue e urina antes de prescrever qualquer antimicrobiano para evitar indução de resistência bacteriana.",
+            "B) Prescrever amoxicilina com clavulanato por via oral e liberar a criança para monitoramento domiciliar se mantiver pressão normal.",
+            "C) Coletar hemoculturas (periférica e do cateter) e administrar imediatamente antibiótico bactericida antipseudomonas intravenoso (como Cefepima) na primeira hora de admissão (\"Golden Hour\").",
+            "D) Retirar cirurgicamente o cateter totalmente implantado de imediato antes de qualquer exame laboratorial.",
+            "E) Iniciar antifúngico intravenoso empírico com voriconazol na primeira hora de atendimento."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta os dois critérios formais de <strong>Neutropenia Febril</strong>: temperatura >= 38,3 °C associada a neutrófilos totais < 500/mm³ (CAN = 240/mm³). Em oncologia pediátrica, a neutropenia febril é uma emergência infecciosa crítica de altíssima letalidade por choque séptico bacteriano por Gram-negativos. As diretrizes internacionais estabelecem o princípio inegociável da <strong>\"Golden Hour\"</strong>: após a coleta rápida de hemoculturas (duas amostras: do cateter e periférica), deve-se administrar um betalactâmico intravenoso com atividade antipseudomonas (como <strong>Cefepima ou Piperacilina-Tazobactam</strong>) dentro da <strong>primeira hora (60 minutos) da admissão no serviço de saúde</strong>!"
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Jamais esperar o crescimento bacteriano das culturas (que demora de 24 a 48 horas); o retardo na antibioticoterapia aumenta exponencialmente a mortalidade em neutropênicos febris.",
+            "<em>Alternativa B incorreta:</em> Pacientes neutropênicos com CAN < 500/mm³ em uso de cateter não devem ser tratados em regime ambulatorial oral com amoxicilina-clavulanato.",
+            "<em>Alternativa D incorreta:</em> O cateter não deve ser retirado empiricamente na chegada, exceto se houver infecção grosseira do túnel/loja, choque refratário ou bacteremias comprovadas por patógenos intratáveis no dispositivo (<em>Candida</em>, <em>S. aureus</em> resistente, <em>Pseudomonas</em> refratária).",
+            "<em>Alternativa E incorreta:</em> Antifúngicos não são indicados na abordagem inicial (D1); são reservados para neutropenia febril persistente após 4 a 7 dias de antibioticoterapia de largo espectro sem foco definido."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 8 (SURCE - Seleção Unificada para Residência Médica do Ceará):</strong> Em relação ao Linfoma Não-Hodgkin do tipo Burkitt na infância, assinale a afirmativa INCORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) Possui um dos tempos de duplicação celular mais rápidos entre todas as neoplasias humanas, exibindo fração de proliferação avaliada por Ki-67 próxima a 100%.",
+            "B) A histopatologia microscópica clássica caracteriza-se pelo padrão em \"céu estrelado\", com macrófagos fagocitando restos celulares em meio a uma lâmina densa de células monomórficas basofílicas.",
+            "C) Apresenta translocação característica envolvendo o oncogene <em>MYC</em> no cromossomo 8q24, com destaque para a t(8;14)(q24;q32).",
+            "D) Na forma esporádica ocidental (frequente no Brasil), a manifestação anatômica mais prevalente é a massa abdominal em quadrante inferior direito, que pode se apresentar como intussuscepção intestinal.",
+            "E) Trata-se de uma neoplasia de baixo grau de malignidade e crescimento indolente, sendo indicada conduta expectante inicial com quimioterapia apenas se houver metástases à distância."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa E (Afirmativa Incorreta)</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Incorreta (Gabarito da Questão):</strong>"
+        ],
+        [
+          "p",
+          "A afirmativa E é categoricamente <strong>falsa</strong>. Na oncologia pediátrica, <strong>praticamente 100% dos Linfomas Não-Hodgkin são de ALTO GRAU DE MALIGNIDADE, agressivos e com crescimento ultra-rápido</strong>. O Linfoma de Burkitt, especificamente, é considerado a neoplasia humana de maior proliferação mitótica existente (duplicação em menos de 24 horas). Não existem formas indolentes ou de baixo grau na infância; a conduta é uma emergência oncológica que exige estadiamento imediato, profilaxia agressiva contra a Síndrome de Lise Tumoral e início rápido de protocolos quimioterápicos combinados intensivos em altas doses, atingindo taxas de cura superiores a 85% a 90%."
+        ],
+        [
+          "p",
+          "<strong>Por que as demais alternativas estão corretas:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>A está correta:</em> O tempo de duplicação celular é < 24 horas com Ki-67 próximo a 100%.",
+            "<em>B está correta:</em> O aspecto histológico em \"céu estrelado\" (<em>starry sky</em>) é patognomônico.",
+            "<em>C está correta:</em> A translocação t(8;14) do gene <em>MYC</em> com a cadeia pesada de imunoglobulinas define a patogenia molecular do Burkitt.",
+            "<em>D está correta:</em> A forma esporádica acomete preferencialmente a região ileocecal no quadrante inferior direito e é causa clássica de intussuscepção intestinal secundária em crianças com mais de 4 anos."
+          ]
+        ]
+      ]
+    ],
+    [
+      "onco-ped-tabela-high-yield-conclusao",
+      0,
+      [
+        [
+          "2",
+          "11. Tabela Comparativa High-Yield e Takeaway Messages"
+        ],
+        [
+          "p",
+          "A matriz comparativa a seguir consolida as disparidades cardinais entre os dois principais tumores sólidos abdominais pediátricos (Tumor de Wilms versus Neuroblastoma), constituindo a questão diferencial mais frequente em concursos de Residência Médica em Pediatria e Cirurgia Pediátrica."
+        ],
+        [
+          "t",
+          [
+            "Critério Semioclinico e Laboratorial",
+            "Tumor de Wilms (Nefroblastoma)",
+            "Neuroblastoma Abdominal"
+          ],
+          [
+            [
+              "<strong>Origem Embriológica</strong>",
+              "Blastema metanéfrico renal (células precursoras renais pluripotentes).",
+              "Crista neural simpática embrionária (medula adrenal ou gânglios simpáticos para-aórticos)."
+            ],
+            [
+              "<strong>Pico de Incidência Etária</strong>",
+              "2 a 4 anos de idade (raro em menores de 1 ano; 80% < 5 anos).",
+              "Lactentes e primeira infância (pico 18 a 22 meses; 90% < 5 anos; mais comum no 1º ano de vida)."
+            ],
+            [
+              "<strong>Estado Geral da Criança</strong>",
+              "<strong>BOM ESTADO GERAL</strong>; eutrófica, corada, assintomática e ativa.",
+              "<strong>COMPROMETIDO / TOXÊMICA</strong>; emagrecida, febril, com dor óssea e irritabilidade acentuada."
+            ],
+            [
+              "<strong>Comportamento quanto à Linha Média</strong>",
+              "<strong>NÃO ULTRAPASSA A LINHA MÉDIA</strong> (fica confinada a um dos hemilabdomes).",
+              "<strong>ULTRAPASSA FREQUENTEMENTE A LINHA MÉDIA</strong> (cruza a aorta e a veia cava inferior)."
+            ],
+            [
+              "<strong>Superfície e Consistência à Palpação</strong>",
+              "Superfície <strong>LISA</strong> ou discretamente lobulada; firme-elástica, contornos regulares.",
+              "Superfície profundamente <strong>IRREGULAR e NODULAR (\"saco de nozes\")</strong>; consistência pétrea e fixa."
+            ],
+            [
+              "<strong>Calcificações à Imagem (Raio-X / TC)</strong>",
+              "Raras (< 10% dos casos; calcificações lineares finas).",
+              "<strong>MUITO FREQUENTES (> 80% a 90% dos casos)</strong>; calcificações grosseiras intratumorais."
+            ],
+            [
+              "<strong>Metabólitos Urinários de Catecolaminas (HVA / VMA)</strong>",
+              "Rigorosamente <strong>NORMAIS</strong>.",
+              "<strong>ELEVADOS em mais de 90% a 95% dos pacientes</strong> (Ácido Homovanílico e Vanilmandélico)."
+            ],
+            [
+              "<strong>Achados Clínicos Associados Típicos</strong>",
+              "Hipertensão arterial sistêmica (compressão de artéria renal) e hematúria microscópica.",
+              "Metástases periorbitárias (\"olhos de guaxinim\"), síndrome opsoclonus-mioclonus, diarreia por VIP."
+            ],
+            [
+              "<strong>Sítio Preferencial de Metástases</strong>",
+              "<strong>PULMÃO</strong> (80% das metástases hematogênicas), seguido pelo fígado.",
+              "<strong>OSSOS e MEDULA ÓSSEA</strong> (tropismo maciço osteomedular), fígado e pele."
+            ],
+            [
+              "<strong>Marcadores Moleculares de Pior Prognóstico</strong>",
+              "Histologia Desfavorável (Anaplasia nuclear difusa).",
+              "<strong>Amplificação do oncogene <em>MYCN</em></strong> (> 10 cópias por célula tumoral)."
+            ],
+            [
+              "<strong>Alerta Semiocirúrgico Mandatório</strong>",
+              "<strong>PROIBIDA A PALPAÇÃO REPETIDA</strong> pelo risco de rotura capsular e derrame neoplásico peritoneal!",
+              "Investigar compressão medular em haltere (paraparesia, retenção urinária) em tumores paravertebrais."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "10 Takeaways Essenciais para Gabaritar em Oncologia Pediátrica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Epidemiologia Pediátrica:</strong> O câncer na infância é a 1ª causa de morte por doença na faixa de 1 a 19 anos. Leucemias (LLA) são as mais comuns (30%), seguidas por Tumores do SNC (20%) e Linfomas (15%).",
+            "<strong>Mielograma na LLA:</strong> Diagnóstico confirmatório exige <em>>= 20% de blastos</em> na medula óssea. O pico da LLA ocorre entre 2 e 5 anos de vida.",
+            "<strong>Dor Óssea que Desperta à Noite:</strong> Dor osteoarticular intensa em ossos longos que acorda a criança no meio da noite é sinal de alerta máximo para LLA!",
+            "<strong>Citogenética da LLA:</strong> Hiperdiploidia (> 50 cromossomos) e translocação t(12;21) indicam <em>excelente prognóstico</em>. Hipodiploidia, cromossomo Philadelphia t(9;22) e rearranjo <em>KMT2A (MLL)</em> em lactentes indicam <em>alto risco</em>.",
+            "<strong>Bastonetes de Auer = LMA:</strong> A visualização de corpos de Auer na microscopia óptica fecha o diagnóstico inequívoco de linhagem mieloide (LMA).",
+            "<strong>Wilms vs Neuroblastoma:</strong> Wilms = bom estado geral, liso, NÃO cruza a linha média, sem calcificações, metástase pulmonar. Neuroblastoma = lactente, mau estado geral, irregular/nodular, CRUZA a linha média, calcificações (> 80%), metástases ósseas (\"olhos de guaxinim\"), HVA/VMA elevados e amplificação de <em>MYCN</em>.",
+            "<strong>Nunca Palpar Repetidamente o Wilms:</strong> Evitar palpação abdominal vigorosa ou repetida para não romper a pseudocápsula tumoral e disseminar células na cavidade peritoneal.",
+            "<strong>Linfoma de Hodgkin:</strong> Adolescentes, linfonodopatia cervical/supraclavicular indolor > 2,0 cm elástica crônica, sintomas B (febre, sudorese noturna, perda de peso > 10%). Células de Reed-Sternberg (\"olhos de coruja\") CD15+ e CD30+.",
+            "<strong>Linfoma de Burkitt:</strong> O tumor de maior taxa mitótica (duplicação < 24h, Ki-67 100%). Translocação t(8;14) do gene <em>MYC</em>, aspecto em \"céu estrelado\", massa abdominal em FID e intussuscepção intestinal.",
+            "<strong>Síndrome de Lise Tumoral:</strong> Hiperuricemia, Hiperpotassemia, Hiperfosfatemia e Hipocalcemia. Manejo: hiper-hidratação vigorosa sem potássio, Rasburicase (ou alopurinol), Gluconato de Cálcio IV apenas se alteração de ECG. Proscrita a alcalinização urinária com bicarbonato! Na Neutropenia Febril, antibiótico antipseudomonas (Cefepima) na primeira hora (\"Golden Hour\")."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://atheneu.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">PINHO, V. S. et al. Tratado de Oncologia Pediátrica. 2ª ed. São Paulo: Atheneu, 2021.</a>",
+            "<a href=\"https://www.gov.br/inca\" target=\"_blank\" rel=\"noopener noreferrer\">INCA - Instituto Nacional de Câncer. Estimativa 2023-2025: Incidência de Câncer no Brasil. Rio de Janeiro: INCA, 2023.</a>",
+            "<a href=\"https://shop.lww.com\" target=\"_blank\" rel=\"noopener noreferrer\">PIZZO, P. A.; POPLACK, D. G. Principles and Practice of Pediatric Oncology. 8th ed. Philadelphia: Wolters Kluwer, 2021.</a>",
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamento Científico de Oncologia Pediátrica. Diagnóstico Precoce do Câncer na Criança e no Adolescente. Rio de Janeiro: SBP, 2022/2024.</a>",
+            "<a href=\"https://onlinelibrary.wiley.com\" target=\"_blank\" rel=\"noopener noreferrer\">CAIRO, M. S.; BISHOP, M. Tumour lysis syndrome: new therapeutic strategies and classification. British Journal of Haematology, v. 127, n. 1, p. 3-11, 2004.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

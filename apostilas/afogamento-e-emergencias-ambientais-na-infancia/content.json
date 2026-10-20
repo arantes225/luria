@@ -1,0 +1,1113 @@
+{
+  "v": 2,
+  "s": "afogamento-e-emergencias-ambientais-na-infancia",
+  "t": "Afogamento e Emergências Ambientais na Infância",
+  "p": "Afogamento e Emergências Ambientais na Infância — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Asfixia por Submersão, Classificação de Szpilman, RCP Adaptada ao Afogamento, Hipotermia Acidental, Doenças Térmicas e Acidentes por Animais Peçonhentos na Pediatria",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Afogamento e Emergências Ambientais na Infância",
+    "Tratado de Alta Performance em Asfixia por Submersão, Classificação de Szpilman, RCP Adaptada ao Afogamento, Hipotermia Acidental, Doenças Térmicas e Acidentes por Animais Peçonhentos na Pediatria",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Afogamento e Emergências Ambientais na Infância"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fisiopatologia-do-afogamento-asfixia-surfactante-e-shunts",
+      "1. Epidemiologia, Definições Internacionais e Fisiopatologia da Asfixia por Submersão e Imersão"
+    ],
+    [
+      "classificacao-de-szpilman-graus-1-a-6-e-condutas",
+      "2. Classificação de Szpilman: Estratificação de Gravidade, Parâmetros Clínicos e Algoritmo de Conduta"
+    ],
+    [
+      "cadeia-de-sobrevivencia-do-afogamento-e-suporte-basico-avancado",
+      "3. Cadeia de Sobrevivência do Afogamento e Algoritmo de Ressuscitação Cardiopulmonar Pediátrica Específica"
+    ],
+    [
+      "hipotermia-acidental-pediatrica-e-manejo-da-pcr-hipotermica",
+      "4. Hipotermia Acidental Pediátrica: Fisiopatologia, Eletrocardiografia (Onda J de Osborn) e Reanimação Hipotérmica"
+    ],
+    [
+      "emergencias-termicas-queimaduras-solares-e-intermacao",
+      "5. Emergências Térmicas Pediátricas: Queimaduras Solares Graves, Exaustão Térmica e Intermação (Golpe de Calor)"
+    ],
+    [
+      "acidentes-com-animais-peconhentos-em-pediatria",
+      "6. Acidentes por Animais Peçonhentos na Infância: Escorpionismo e Ofidismo (Botrópico, Crotálico, Laquético e Elapídico)"
+    ],
+    [
+      "casos-clinicos-integrados-afogamento-e-emergencias-ambientais",
+      "7. Casos Clínicos Integrados com Raciocínio Diagnóstico e Terapêutico Passo a Passo"
+    ],
+    [
+      "questoes-comentadas-afogamento-e-emergencias-ambientais",
+      "8. Questões Comentadas de Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "tabela-high-yield-e-resumo-afogamento-e-emergencias-ambientais",
+      "9. Tabela High-Yield de Síntese e Diretrizes de Prática Clínica Baseada em Evidências"
+    ]
+  ],
+  "q": [
+    [
+      "fisiopatologia-do-afogamento-asfixia-surfactante-e-shunts",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia, Definições Internacionais e Fisiopatologia da Asfixia por Submersão e Imersão"
+        ],
+        [
+          "3",
+          "1.1 Contexto Epidemiológico e Definições de Consenso Global"
+        ],
+        [
+          "p",
+          "O afogamento permanece como uma das principais causas externas de morbimortalidade evitável em todo o mundo, ocupando historicamente a terceira causa de morte por traumatismo não intencional segundo a Organização Mundial da Saúde (OMS). No Brasil e na América Latina, o impacto na faixa etária pediátrica é desproporcional e devastador: representa a segunda causa de óbito por acidentes em crianças de 1 a 4 anos e a terceira em indivíduos de 5 a 14 anos, conforme dados do Sistema de Informações sobre Mortalidade (SIM/DATASUS) e da Sociedade Brasileira de Salvamento Aquático (SOBRASA). Estima-se que, para cada criança que evolui para o óbito por afogamento, outras 4 a 5 necessitam de internação hospitalar de urgência e cerca de metade dos sobreviventes de episódios com parada cardiorrespiratória (PCR) recuperada permanece com sequelas neurológicas anóxicas devastadoras e permanentes."
+        ],
+        [
+          "p",
+          "Historicamente, a literatura médica utilizava uma miríade de termos confusos, imprecisos e desprovidos de relevância terapêutica — tais como \"quase-afogamento\" (<em>near-drowning</em>), \"afogamento seco\", \"afogamento úmido\", \"afogamento secundário\" e \"afogamento tardio\". A partir do <strong>Consenso Mundial de Afogamento de Amsterdã (World Congress on Drowning, 2002)</strong>, ratificado pela OMS, pela <em>American Heart Association</em> (AHA), pelo ILCOR e pela SOBRASA, <strong>todos esses termos arcaicos foram formalmente abolidos e proscritos</strong> da prática médica contemporânea."
+        ],
+        [
+          "p",
+          "Atualmente, adota-se uma definição padronizada, universal e de aplicabilidade clínica inequívoca:"
+        ],
+        [
+          "p",
+          "<blockquote>\n<strong>Definição Universal de Afogamento (OMS / ILCOR / SOBRASA):</strong><br>\n<em>\"Afogamento é o processo de vivenciar comprometimento respiratório decorrente de submersão ou imersão em meio líquido.\"</em>\n</blockquote>"
+        ],
+        [
+          "p",
+          "A classificação do desfecho do processo de afogamento divide-se estritamente em três categorias:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Afogamento com Morte:</strong> óbito imediato no local ou secundário às complicações respiratórias/cerebrais tardias;",
+            "<strong>Afogamento com Morbidade:</strong> sobrevivência após o evento, porém com disfunções orgânicas ou sequelas neurológicas temporárias ou permanentes;",
+            "<strong>Afogamento sem Morbidade:</strong> recuperação integral sem sequelas funcionais clinicamente detectáveis."
+          ]
+        ],
+        [
+          "p",
+          "Adicionalmente, diferencia-se o mecanismo físico de contato com o líquido:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Submersão:</strong> ocorre quando as vias aéreas do indivíduo (boca e nariz) encontram-se integralmente abaixo da superfície do líquido, impedindo a ventilação aérea normal;",
+            "<strong>Imersão:</strong> refere-se à presença de parte do corpo dentro da água, mas com a face inicialmente livre ou intermitentemente exposta, frequentemente associada ao esgotamento físico, estresse por frio e hipotermia acidental."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Cascata Fisiopatológica: Da Luta Inicial à Hipoxemia Grave"
+        ],
+        [
+          "p",
+          "A fisiopatologia do afogamento pediátrico deflagra uma cascata de alterações fisiológicas sequenciais e dramáticas que culminam na asfixia celular sistêmica. A compreensão precisa de cada etapa temporal dessa cascata é mandatória para a intervenção no suporte básico e avançado de vida:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase de Luta e Apneia Voluntária Reflexa:</strong> Ao perceber a submersão e a impossibilidade de manter a respiração, a criança entra em pânico motor desordenado, com movimentos involuntários e retenção consciente/involuntária da respiração (apneia reflexa). Durante essa fase de apneia, a privação de ar e o metabolismo celular contínuo promovem rápida elevação da pressão parcial de dióxido de carbono ($PaCO_2$) e consumo gradual de oxigênio ($PaO_2$);",
+            "<strong>Ponto de Quebra (<em>Breakpoint</em>) Respiratório e Laringoespasmo:</strong> Conforme o nível de hipercapnia atinge valores críticos (habitualmente quando a $PaCO_2$ ultrapassa 45 a 55 mmHg) e a acidose hipercápnica estimula fortemente os quimiorreceptores do bulbo e dos corpos carotídeos, deflagra-se o estímulo reflexo incoercível à inspiração. Quando pequenas quantidades de líquido atingem a mucosa laringotraqueal hipersensível, ocorre uma contração espasmódica reflexa e involuntária das cordas vocais — o <strong>laringoespasmo reflexo</strong>. Durante décadas debateu-se a incidência do \"afogamento sem aspiração\" (antigo afogamento seco), postulando-se que o laringoespasmo impedisse a entrada de água em até 10-15% dos casos; contudo, evidências anatomopatológicas modernas demonstram que, à medida que a anóxia cerebral progride, o laringoespasmo invariavelmente cede por relaxamento muscular central, permitindo a aspiração final maciça de líquido na esmagadora maioria das vítimas;",
+            "<strong>Aspiração de Líquido e Lesão Alveolar Aguda:</strong> A entrada de líquido aspirado nas vias aéreas distais desencadeia alterações ultraestruturais imediatas no epitélio respiratório. Diferentemente de conceitos laboratoriais antigos em modelos animais, hoje se sabe que os distúrbios clínicos em humanos são <strong>essencialmente idênticos na aspiração de água doce (hipotônica) ou água salgada (hipertônica)</strong>. Em ambas as situações, o volume de líquido aspirado raramente ultrapassa 2 a 4 mL/kg de peso corporal, volume insuficiente para gerar grandes alterações osmolares na circulação sistêmica, porém mais do que suficiente para destruir a homeostase pulmonar:\n    <ul>\n      <li><strong>Na água doce:</strong> O líquido hipotônico é rapidamente absorvido pelos capilares alveolares, causando diluição, lavagem e inativação do surfactante alveolar nativo, além de lise celular epitelial tipo II;",
+            "<strong>Na água salgada:</strong> A alta osmolaridade da água do mar exerce um gradiente osmótico que atrai ativamente água e proteínas do plasma intravascular para a luz alveolar, associado à desnaturação do surfactante pulmonar.",
+            "<strong>Perda de Surfactante, Atelectasia Difusa e Queda da Complacência:</strong> O surfactante pulmonar (composto por dipalmitoilfosfatidilcolina e proteínas específicas SP-A, SP-B, SP-C e SP-D) é responsável por reduzir a tensão superficial alveolar nos baixos volumes pulmonares expiratórios, impedindo o colapso dos alvéolos ao final da expiração. A destruição física, lavagem e inativação funcional do surfactante provocam um aumento dramático na tensão superficial, resultando em <strong>microatelectasias alveolares difusas</strong> e redução maciça da complacência estática pulmonar;",
+            "<strong>Edema Pulmonar Não Cardiogênico e Incompatibilidade V/Q:</strong> A agressão físico-química à barreira alvéolo-capilar induz uma resposta inflamatória fulminante com liberação de citocinas pró-inflamatórias (IL-1, TNF-alfa, IL-6), lesão de pneumócitos tipo I e extravasamento de transudato proteináceo para os espaços alveolares e intersticiais. Estabelece-se um quadro clássico de <strong>edema pulmonar não cardiogênico</strong> (Síndrome do Desconforto Respiratório Agudo - SDRA induzida por afogamento), gerando extensas áreas pulmonares perfundidas, porém totalmente não ventiladas — configurando um <strong>shunt intrapulmonar direito-esquerdo maciço</strong>;",
+            "<strong>Hipoxemia Refratária, Acidose Mista e Parada Cardiorrespiratória:</strong> O shunt intrapulmonar grave e o mismatch ventilação/perfusão geram <strong>hipoxemia arterial profunda</strong> e hipercapnia, resultando em acidose mista (metabólica láctica decorrente da hipoperfusão celular e respiratória decorrente da hipoventilação alveolar). O miocárdio pediátrico, altamente suscetível à carência de oxigênio, sofre disfunção sistólica progressiva, bradicardia sinusal reflexa, hipotensão arterial e, por fim, colapso hemodinâmico que culmina em parada cardiorrespiratória (PCR). Na infância, a via final comum da PCR por afogamento é a <strong>asfixia pura</strong>, manifestando-se quase universalmente como atividade elétrica sem pulso (AESP) ou assistolia."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacao-de-szpilman-graus-1-a-6-e-condutas",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação de Szpilman: Estratificação de Gravidade, Parâmetros Clínicos e Algoritmo de Conduta"
+        ],
+        [
+          "3",
+          "2.1 A Relevância da Classificação de Szpilman"
+        ],
+        [
+          "p",
+          "Criada e validada pelo médico e pesquisador brasileiro <strong>Dr. David Szpilman</strong> em 1997 com base no acompanhamento prospectivo de milhares de casos de afogamento no litoral do Rio de Janeiro, a <strong>Classificação de Szpilman</strong> consolidou-se internacionalmente como o escore clínico padrão-ouro mundial para avaliação, estratificação prognóstica e orientação de condutas terapêuticas imediatas no afogamento de adultos e crianças."
+        ],
+        [
+          "p",
+          "A genialidade da classificação de Szpilman reside em utilizar parâmetros semiológicos puramente clínicos, obtidos à beira-leito ou na faixa de areia em menos de 30 segundos, sem a necessidade de exames complementares imediatos:"
+        ],
+        [
+          "o",
+          [
+            "Presença de tosse;",
+            "Ausculta pulmonar (estertores creptantes em bases ou difusos);",
+            "Presença e intensidade de espuma rósea ou esbranquiçada exteriorizando-se pela boca e/ou nariz;",
+            "Estado hemodinâmico (perfusão capilar periférica, pressão arterial sistêmica e pulso arterial palpável);",
+            "Presença de movimentos ventilatórios espontâneos."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Análise Pormenorizada dos Graus 1 a 6 de Szpilman"
+        ],
+        [
+          "p",
+          "A estratificação de Szpilman divide as vítimas de afogamento em categorias que correlacionam de forma direta o achado clínico com o risco de mortalidade e o nível de intervenção necessário:"
+        ],
+        [
+          "t",
+          [
+            "Grau de Szpilman",
+            "Apresentação Clínica e Semiológica",
+            "Mortalidade Estimada",
+            "Conduta Imediata e Destino do Paciente"
+          ],
+          [
+            [
+              "<strong>Resgate (Grau 0)</strong>",
+              "Vítima sem tosse, sem espuma em boca/nariz, ausculta pulmonar inteiramente limpa e hemodinâmica estável. Apenas estresse e cansaço físico decorrente da água.",
+              "0%",
+              "Aquecer a criança, tranquilizar a família, avaliar condições gerais. Não necessita de hospitalização ou oxigenoterapia se assintomática após 30 a 60 minutos de observação no local."
+            ],
+            [
+              "<strong>Grau 1</strong>",
+              "Presença de <strong>tosse</strong> seca ou produtiva, porém <strong>ausculta pulmonar normal</strong> (sem estertores e sem sibilos), ausência total de espuma em boca/nariz e sinais vitais normais.",
+              "0%",
+              "Repouso em decúbito elevado, despir roupas molhadas e aquecer. Oxigenoterapia geralmente dispensável, a menos que SpO2 &lt; 94%. Observação de 6 horas; se mantiver estabilidade e sem novos sintomas, alta médica segura."
+            ],
+            [
+              "<strong>Grau 2</strong>",
+              "Ausculta pulmonar com <strong>estertores crepitantes em bases pulmonares</strong> ou moderados, acompanhada de <strong>pequena quantidade de espuma</strong> exteriorizando-se pela boca ou nariz. Hemodinâmica preservada.",
+              "0,6% a 1%",
+              "Oxigenoterapia imediata em máscara não reinalante com reservatório (10 a 15 L/min) com alvo de SpO2 &ge; 94%. Manter aquecimento ativo. Internação hospitalar obrigatória em leito de enfermaria/observação por no mínimo 24 a 48 horas para vigilância de SDRA."
+            ],
+            [
+              "<strong>Grau 3</strong>",
+              "<strong>Grande quantidade de espuma</strong> fluindo pela boca e nariz (edema agudo de pulmão clínico exuberante), estertores creptantes difusos em ambos os campos pleuropulmonares, porém <strong>pulsos radiais palpáveis e PA sistólica normal para a idade</strong> (sem hipotensão arterial).",
+              "5,2% a 10%",
+              "Oxigênio a 100% de alto fluxo. Indicação precoce de <strong>Ventilação Não Invasiva (VNI com CPAP/BiPAP)</strong> para recrutar alvéolos e reduzir o trabalho respiratório. Se rebaixamento de consciência ou falha da VNI, intubação orotraqueal imediata com PEEP. Internação obrigatória em UTI Pediátrica."
+            ],
+            [
+              "<strong>Grau 4</strong>",
+              "<strong>Grande quantidade de espuma</strong> saindo pela boca e nariz associada a <strong>sinais claros de choque hemodinâmico</strong> (hipotensão arterial sistêmica, pulsos centrais filiformes ou pulsos periféricos ausentes, tempo de enchimento capilar &gt; 3 segundos, oligúria e rebaixamento do sensório).",
+              "19,4% a 25%",
+              "Emergência médica crítica: oxigênio a 100%, <strong>intubação orotraqueal precoce mandatória</strong> com ventilação protetora (PEEP titulada de 8 a 15 cmH2O), ressuscitação volêmica cautelosa com cristaloides balanceados (10-20 mL/kg) e suporte vasoativo inotrópico (adrenalina ou noradrenalina contínua). Transferência imediata para UTI Pediátrica."
+            ],
+            [
+              "<strong>Grau 5</strong>",
+              "<strong>Parada Respiratória Isolada</strong>: ausência de movimentos respiratórios espontâneos (apneia), porém com <strong>pulso arterial central claramente palpável</strong> (carotídeo ou braquial presente) e batimentos cardíacos detectáveis.",
+              "44%",
+              "Suporte ventilatório imediato no local: ofertar <strong>ventilação de resgate com bolsa-válvula-máscara (BVM) conectada a oxigênio a 100%</strong> a uma frequência de 20 a 30 incursões/minuto (1 ventilação a cada 2-3 segundos) até o retorno da ventilação espontânea. Se não houver retorno rápido, intubar. Se o pulso desaparecer, migra-se instantaneamente para o Grau 6."
+            ],
+            [
+              "<strong>Grau 6</strong>",
+              "<strong>Parada Cardiorrespiratória (PCR)</strong> completa: paciente em apneia (ou respiração agônica tipo <em>gasping</em>) e <strong>ausência de pulsos arteriais centrais palpáveis</strong>. Quase sempre em ritmo de AESP ou assistolia.",
+              "&gt; 90% a 93%",
+              "Ressuscitação Cardiopulmonar (RCP) imediata adaptada ao afogamento: iniciar com <strong>5 ventilações de resgate iniciais</strong> seguidas de ciclos de compressões e ventilações na proporção 15:2 (se dois socorristas) ou 30:2 (se socorrista único), desfibrilador quando disponível, acesso venoso/intraósseo e adrenalina conforme protocolo PALS. Suporte neurológico neurointensivo pós-PCR."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2.3 Peculiaridades Práticas e Armadilhas nas Bancas de Residência"
+        ],
+        [
+          "p",
+          "As bancas examinadoras exploram frequentemente os limites divisórios entre os graus de Szpilman:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Diferenciação Grau 2 vs Grau 3:</strong> No Grau 2 há pouca espuma e estertores predominantemente basais; no Grau 3 há espuma abundante em boca e nariz com estertores difusos em ambos os hemitórax, indicando edema pulmonar volumoso. Contudo, em ambos o paciente mantém pressão arterial e pulsos palpáveis normais.",
+            "<strong>Diferenciação Grau 3 vs Grau 4:</strong> Ambos apresentam grande volume de espuma e edema pulmonar alveolar grave. O divisor de águas absoluto é a <strong>estabilidade hemodinâmica</strong>. Se o pulso radial estiver preservado e a PA sistólica for compatível com a faixa etária, trata-se de Grau 3. Se houver hipotensão arterial evidente, tempo de enchimento capilar lentificado e colapso circulatório periférico, classifica-se sumariamente como Grau 4, com mortalidade quatro vezes superior.",
+            "<strong>A conduta no Grau 5:</strong> Não inicie compressões torácicas se o pulso central estiver indiscutivelmente presente! A conduta correta é apenas a ventilação com pressão positiva e oxigênio. Contudo, se o examinador tiver dúvida sobre a palpação do pulso em menos de 10 segundos, as diretrizes pediátricas determinam iniciar a RCP completa."
+          ]
+        ]
+      ]
+    ],
+    [
+      "cadeia-de-sobrevivencia-do-afogamento-e-suporte-basico-avancado",
+      0,
+      [
+        [
+          "2",
+          "3. Cadeia de Sobrevivência do Afogamento e Algoritmo de Ressuscitação Cardiopulmonar Pediátrica Específica"
+        ],
+        [
+          "3",
+          "3.1 A Cadeia de Sobrevivência do Afogamento"
+        ],
+        [
+          "p",
+          "Diferentemente da parada cardiorrespiratória clínica habitual do adulto (onde a etiologia primária clássica é a fibrilação ventricular por coronariopatia aguda isquêmica), a parada cardíaca no afogamento pediátrico é o resultado terminal de uma <strong>asfixia hipóxica progressiva</strong>. Por essa razão fundamental, as intervenções da ressuscitação devem priorizar de maneira inegociável a <strong>oxigenação tecidual e a restauração da ventilação pulmonar</strong>."
+        ],
+        [
+          "p",
+          "A Cadeia de Sobrevivência do Afogamento, proposta pela SOBRASA e chancelada pela <em>International Life Saving Federation</em> (ILS), é estruturada em 5 elos interconectados:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Prevenção:</strong> Supervisão visual ininterrupta e a um braço de distância de crianças em piscinas, praias e banheiras; instalação de cercas perimetrais com altura mínima de 1,5 m e trincos autotravantes; uso de coletes salva-vidas homologados (boias de braço infláveis não oferecem proteção segura e geram falsa sensação de confiança);",
+            "<strong>Reconhecimento do Afogamento e Pedido de Ajuda:</strong> Identificação precoce de banhista em dificuldade (que geralmente não grita nem agita os braços de modo cinematográfico, mas apresenta padrão motor verticalizado, cabeça estendida para trás e movimentos ineficazes de subida e descida) e acionamento imediato dos serviços de emergência (Guarda-Vidas, SAMU 192, Corpo de Bombeiros 193);",
+            "<strong>Fornecimento de Flutuação:</strong> Lançamento imediato de objetos flutuantes (boias, pranchas, garrafas PET vazias presas a cordas) antes de qualquer tentativa arriscada de resgate aquático por leigos;",
+            "<strong>Remoção da Água com Segurança:</strong> Retirada da vítima do meio aquático sem que o socorrista se torne uma segunda vítima (\"Salvar sem entrar na água, salvo se treinado\");",
+            "<strong>Suporte Médico e Cuidados Pós-Ressuscitação:</strong> Início imediato de suporte respiratório e circulatório precoce em solo firme e encaminhamento hospitalar com suporte intensivo."
+          ]
+        ],
+        [
+          "3",
+          "3.2 A Exceção da RCP no Afogamento: Abertura com 5 Ventilações de Resgate Iniciais"
+        ],
+        [
+          "p",
+          "Em 2010, a AHA e os comitês internacionais de ressuscitação adotaram a sequência <strong>C-A-B</strong> (Compressões, Abertura de vias aéreas, Boa ventilação) para paradas de etiologia primariamente cardíaca em adultos. Contudo, <strong>nas paradas por asfixia hipóxica — cujo modelo prototípico é o afogamento — a sequência clássica e mandatória preconizada pelo PALS, ERC e SOBRASA é a sequência A-B-C modificada com 5 VENTILAÇÕES DE RESGATE INICIAIS</strong>."
+        ],
+        [
+          "4",
+          "Racional Fisiopatológico das 5 Ventilações Iniciais:"
+        ],
+        [
+          "p",
+          "No momento em que a criança em PCR por afogamento é retirada da água, os alvéolos pulmonares encontram-se atelectasiados, preenchidos por transudato e líquido aspirado, e o sangue venoso circulante está com saturação de oxigênio zerada e acúmulo extremo de CO2 e lactato. Se o socorrista iniciar imediatamente com compressões torácicas isoladas (sequência C-A-B sem ventilações), o miocárdio e o encéfalo continuarão recebendo sangue puramente anóxico e acidótico, o que não restaurará a perfusão celular nem permitirá o retorno à circulação espontânea (RCE). A administração de <strong>5 ventilações de resgate eficazes</strong> (preferencialmente com pressão positiva via bolsa-válvula-máscara com reservatório conectado a fluxo de O2 de 15 L/min) tem como objetivo superar a resistência das vias aéreas colapsadas, recrutar parte dos alvéolos atelectasiados e injetar oxigênio no leito vascular pulmonar antes de empurrar o sangue pelas compressões torácicas."
+        ],
+        [
+          "4",
+          "Algoritmo Sequencial de RCP no Afogamento Pediátrico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Posicionamento Seguro em Solo Firme:</strong> Posicionar a criança em decúbito dorsal horizontal sobre superfície rígida. <em>Atenção crítica:</em> <strong>Nunca tente \"esvaziar os pulmões\" comprimindo o abdome da criança ou realizando manobra de Heimlich!</strong> Essas manobras não removem a água dos alvéolos, aumentam a regurgitação do conteúdo gástrico e elevam exponencialmente o risco de aspiração de restos alimentares, pneumonia aspirativa e rotura gástrica;",
+            "<strong>Avaliação de Responsividade e Respiração:</strong> Chamar a criança e observar movimentos torácicos por até 10 segundos. Se a criança não responde e não respira (ou apenas apresenta gasping agônico), acionar ajuda avançada (SAMU 192 / DEA);",
+            "<strong>Checagem Simultânea de Pulso por Profissional de Saúde:</strong> Palpar pulso braquial (em lactentes &lt; 1 ano) ou carotídeo/femoral (em crianças &gt; 1 ano) por no máximo 10 segundos:\n    <ul>\n      <li>Se houver pulso nítido, mas sem respiração: estamos diante do <strong>Grau 5 de Szpilman</strong>. Administrar 1 ventilação a cada 2 a 3 segundos (20-30 ventilações/min) e reavaliar o pulso a cada 2 minutos;",
+            "Se o pulso estiver ausente ou houver qualquer dúvida quanto à sua presença: estamos diante do <strong>Grau 6 de Szpilman</strong> (PCR estabelecida);",
+            "<strong>Administração das 5 Ventilações de Resgate Iniciais:</strong> Abrir a via aérea (manobra de inclinação da cabeça e elevação do queixo, ou anteriorização da mandíbula se suspeita de trauma cervical) e fornecer 5 ventilações lentas de 1 segundo cada, observando a expansão do tórax;",
+            "<strong>Ciclos de Compressões e Ventilações:</strong>\n    <ul>\n      <li>Se socorrista profissional único: realizar ciclos de <strong>30 compressões torácicas para 2 ventilações</strong>;",
+            "Se dois socorristas presentes na cena: realizar ciclos de <strong>15 compressões para 2 ventilações</strong>;",
+            "Frequência das compressões: 100 a 120 compressões por minuto, com profundidade de 4 cm em lactentes e 5 cm em crianças maiores, permitindo o retorno completo do tórax após cada compressão;",
+            "<strong>Uso do Desfibrilador Externo Automático (DEA):</strong> Ligar e conectar as pás do DEA assim que o aparelho chegar ao local. Secar rapidamente o tórax da criança antes de colar os eletrodos autoadesivos. Utilizar pás pediátricas com atenuador de carga em crianças &lt; 8 anos ou peso &lt; 25 kg (caso não estejam disponíveis pás pediátricas, utilizar as pás de adulto padrão posicionadas em configuração anteroposterior). Embora o ritmo inicial no afogamento seja na imensa maioria das vezes não chocável (AESP ou assistolia), a fibrilação ventricular pode ocorrer por hipotermia grave ou miocardite anóxica induzida por catecolaminas endógenas;",
+            "<strong>Suporte Avançado de Vias Aéreas e Drogas:</strong>\n    <ul>\n      <li>Acesso venoso periférico ou <strong>acesso intraósseo imediato</strong> (se o acesso venoso não for obtido em menos de 60 segundos);",
+            "<strong>Adrenalina:</strong> Dose pediátrica padrão de 0,01 mg/kg (0,1 mL/kg da solução 1:10.000) a cada 3 a 5 minutos durante a PCR;",
+            "<strong>Manejo da Via Aérea Avançada:</strong> Intubação orotraqueal com tubo orotraqueal com balonete (cuff), garantindo vedação hermética para aplicação de pressão expiratória positiva final (PEEP de 5 a 10 cmH2O) indispensável para contrabalançar o edema pulmonar e a perda de surfactante;",
+            "<strong>Descompressão Gástrica:</strong> Passagem mandatória de sonda orogástrica precoce, pois quase todas as crianças afogadas deglutem volumes maciços de ar e água durante a submersão, causando distensão gástrica severa que comprime a veia cava inferior e eleva a cúpula diafragmática, restringindo a ventilação e a circulação."
+          ]
+        ]
+      ]
+    ],
+    [
+      "hipotermia-acidental-pediatrica-e-manejo-da-pcr-hipotermica",
+      0,
+      [
+        [
+          "2",
+          "4. Hipotermia Acidental Pediátrica: Fisiopatologia, Eletrocardiografia (Onda J de Osborn) e Reanimação Hipotérmica"
+        ],
+        [
+          "3",
+          "4.1 Vulnerabilidade Pediátrica e Mecanismos de Perda de Calor em Água"
+        ],
+        [
+          "p",
+          "A criança apresenta uma vulnerabilidade anatômica e termorreguladora acentuadamente superior à do adulto perante a exposição a ambientes aquáticos. Essa suscetibilidade extrema deve-se a múltiplos fatores fisiológicos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Alta Relação Superfície Corporal / Massa:</strong> A superfície corporal exposta em relação ao peso é muito maior no lactente e na criança pequena do que no adulto, facilitando a perda rápida de calor;",
+            "<strong>Escassez de Tecido Adiposo Subcutâneo:</strong> Menor isolamento térmico anatômico passivo;",
+            "<strong>Condutividade Térmica da Água:</strong> A condutividade térmica da água é aproximadamente <strong>25 vezes superior à condutividade térmica do ar</strong>. Em água a 20°C, a perda térmica corporal é cerca de 4 a 5 vezes mais rápida do que no ar na mesma temperatura, desencadeando queda abrupta da temperatura central em poucos minutos;",
+            "<strong>Mecanismos Termorreguladores Imaturos:</strong> Lactentes jovens não apresentam capacidade eficaz de gerar calor por calafrios musculares (termogênese sem tremor dependente da gordura marrom é rapidamente esgotada pela hipóxia)."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Classificação da Hipotermia (Classificação Suíça de Estadiamento)"
+        ],
+        [
+          "p",
+          "A temperatura central corporal idealmente deve ser aferida por sonda esofágica (terço inferior do esôfago) em pacientes intubados, ou por sonda retal/vesical profunda. A Classificação Suíça estabelece quatro estágios clínicos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estágio I — Hipotermia Leve (32°C a 35°C):</strong> Vítima consciente, lúcida, porém ansiosa; calafrios vigorosos (resposta termogênica máxima), taquicardia sinusal, taquipneia, hipertensão arterial discreta e vasoconstrição periférica intensa com extremidades frias e pálidas;",
+            "<strong>Estágio II — Hipotermia Moderada (28°C a 32°C):</strong> Desaparecimento dos calafrios (cessação do tremor muscular espontâneo devido ao esgotamento do glicogênio muscular); confusão mental progressiva, letargia, disartria, ataxia, bradicardia progressiva, bradipneia, hipotensão e hiporreflexia osteotendínea;",
+            "<strong>Estágio III — Hipotermia Grave (24°C a 28°C):</strong> Paciente em coma profundo; pupilas fixas e midriáticas (mimetizando morte encefálica); bradicardia extrema, hipotensão grave, edema pulmonar não cardiogênico e alto risco de arritmias ventriculares malignas desencadeadas por estímulos mecânicos mínimos;",
+            "<strong>Estágio IV — Hipotermia Profunda com Parada Cardíaca (&lt; 24°C):</strong> Parada cardiorrespiratória completa ou fluxo circulatório tão reduzido que se torna indetectável à palpação de pulsos periféricos e centrais."
+          ]
+        ],
+        [
+          "3",
+          "4.3 Alterações Eletrocardiográficas: A Onda J de Osborn"
+        ],
+        [
+          "p",
+          "O resfriamento miocárdico altera profundamente a cinética dos canais iônicos cardíacos, provocando retardo na condução atrioventricular e intraventricular, aumento do período refratário e dispersão heterogênea da repolarização ventricular."
+        ],
+        [
+          "p",
+          "Os achados eletrocardiográficos clássicos da hipotermia acidental incluem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Prolongamento de Todos os Intervalos:</strong> Prolongamento do intervalo PR, alargamento difuso do complexo QRS e prolongamento acentuado do intervalo QT corrigido (propiciando o surgimento de torsades de pointes e FV);",
+            "<strong>Bradicardia Sinusal Refratária:</strong> Bradicardia sinusal que não responde à atropina (pois não é mediada por tônus vagal parassimpático, mas por lentificação direta intrínseca do nodo sinoatrial);",
+            "<strong>Artefato de Tremor Muscular:</strong> Oscilações rápidas da linha de base causadas pelos calafrios nos estágios iniciais;",
+            "<strong>Onda J de Osborn (Patognomônica):</strong> A <strong>onda J de Osborn</strong> consiste em uma deflexão positiva arredondada ou em domo imediatamente na junção entre o final do complexo QRS e o início do segmento ST (o ponto J). Sua amplitude é diretamente proporcional à gravidade da hipotermia (torna-se mais proeminente e ampla quanto menor a temperatura corporal central, habitualmente surgindo abaixo de 32°C a 30°C). Resulta de um gradiente de voltagem transmural transmural proeminente entre o epicárdio e o endocárdio decorrente da heterogeneidade da corrente transiente de potássio ($I_{to}$)."
+          ]
+        ],
+        [
+          "3",
+          "4.4 Estratégias de Recalecimento Ativo e Manejo da PCR Hipotérmica"
+        ],
+        [
+          "p",
+          "O manejo térmico divide-se em três modalidades fundamentais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Recalecimento Passivo Externo:</strong> Indicado na hipotermia leve (Estágio I). Retirada imediata de todas as roupas molhadas, secagem meticulosa do corpo da criança, colocação em ambiente aquecido e proteção com mantas térmicas convencionais ou aluminizadas;",
+            "<strong>Recalecimento Ativo Externo:</strong> Indicado na hipotermia moderada a grave. Utilização de mantas de ar aquecido forçado (sistema <em>Bair Hugger</em>), compressas térmicas aquecidas posicionadas preferencialmente no tronco, axilas e virilhas (evitando extremidades para prevenir vasodilatação periférica com retorno venoso de sangue frio e acidótico ao coração — o fenômeno de <em>core temperature afterdrop</em>);",
+            "<strong>Recalecimento Ativo Interno:</strong> Mandatório na hipotermia grave e na parada cardíaca. Inclui:\n    <ul>\n      <li>Infusão de cristaloides isotônicos balanceados aquecidos a 38°C a 42°C;",
+            "Ventilação pulmonar com oxigênio umidificado e aquecido a 40°C a 42°C;",
+            "Lavagem gástrica, vesical e peritoneal com fluidos isotônicos mornos (40°C);",
+            "Suporte de Vida Extracorpóreo (ECLS / ECMO venoarterial): Considerado o método de eleição padrão-ouro na PCR hipotérmica refratária com hipotermia profunda, propiciando recalecimento rápido (6°C a 9°C por hora) com circulação artificial mantida."
+          ]
+        ],
+        [
+          "4",
+          "Adaptação Crítica da RCP na Parada Hipotérmica Pediátrica:"
+        ],
+        [
+          "p",
+          "As diretrizes do ILCOR, AHA e ERC estabelecem normas estritas para o uso de desfibrilação e medicações na PCR hipotérmica:"
+        ],
+        [
+          "p",
+          "<blockquote>\n<strong>Regra de Ouro nas Bancas:</strong><br>\n1. <strong>Se temperatura central &lt; 30°C:</strong> O miocárdio hipotérmico é metabolicamente inativo e praticamente refratário a drogas adrenérgicas e choques repetidos. Limitar a desfibrilação a <strong>no máximo 3 choques</strong> e <strong>suspender a administração de adrenalina e antiarrítmicos</strong> até que o recalecimento ativo eleve a temperatura central para &ge; 30°C (pois o metabolismo hepático das drogas está zerado e as doses acumulariam toxicidade fatal quando o coração reaquecer).<br>\n2. <strong>Se temperatura central entre 30°C e 35°C:</strong> As doses de adrenalina devem ser administradas com o <strong>dobro do intervalo padrão</strong> (a cada 6 a 10 minutos em vez de 3 a 5 minutos).<br>\n3. <strong>Axioma Forense e Emergencial:</strong> <em>\"Nenhum paciente hipotérmico deve ser declarado morto até que esteja aquecido e morto\"</em> (<em>\"No one is dead until warm and dead\"</em>). Os esforços de reanimação cardiopulmonar e recalecimento devem prosseguir de forma contínua até que a temperatura central atinja pelo menos 32°C a 35°C sem retorno da circulação espontânea, exceto se houver lesões traumáticas letais evidentes incompatíveis com a vida ou rigidez cadavérica em ambiente normotérmico prévio.\n</blockquote>"
+        ]
+      ]
+    ],
+    [
+      "emergencias-termicas-queimaduras-solares-e-intermacao",
+      0,
+      [
+        [
+          "2",
+          "5. Emergências Térmicas Pediátricas: Queimaduras Solares Graves, Exaustão Térmica e Intermação (Golpe de Calor)"
+        ],
+        [
+          "3",
+          "5.1 Queimaduras Solares na Infância: Fisiopatologia e Abordagem"
+        ],
+        [
+          "p",
+          "As queimaduras solares (eritema actínico induzido por radiação ultravioleta B - UVB e UVA) na infância possuem impacto imediato agudo e repercussões oncológicas tardias a longo prazo (risco cumulativo de melanoma maligno e carcinoma basocelular na vida adulta). A pele da criança, caracterizada por estrato córneo mais delgado, menor densidade de melanócitos funcionais e sistema imune cutâneo em desenvolvimento, é extremamente vulnerável aos efeitos da radiação fotoquímica."
+        ],
+        [
+          "4",
+          "Apresentação Clínica e Fases da Lesão:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1º Grau (Eritema Solar):</strong> Lesão limitada à epiderme; eritema doloroso, quente ao toque, edema leve, sem flictenas (bolhas). O pico de dor e vasodilatação ocorre habitualmente entre 12 e 24 horas após a exposição excessiva;",
+            "<strong>2º Grau Superficial ou Profundo:</strong> Destruição epidérmica e comprometimento da derme papilar. Formação de <strong>flictenas (bolhas) preenchidas por exsudato seroso</strong>, edema facial ou de extremidades exuberante, dor intensa e descamação subsequente. Em crianças pequenas, áreas extensas de queimadura solar de 2º grau (&gt; 10% da superfície corporal) podem induzir perda transepidérmica maciça de fluidos, desidratação hipernatrêmica, choque hipovolêmico e febre sistêmica actínica (\"envenenamento solar\")."
+          ]
+        ],
+        [
+          "4",
+          "Conduta Terapêutica Baseada em Evidências:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Interrupção Imediata da Exposição Térmica:</strong> Acolhimento em ambiente fresco e ventilado;",
+            "<strong>Compressas Frias e Analgesia Sistêmica:</strong> Aplicação de compressas úmidas com soro fisiológico ou água fria corrente (nunca aplicar gelo diretamente sobre a pele lesada para evitar isquemia tecidual adicional por vasoconstrição). Analgesia com anti-inflamatórios não esteroides (Ibuprofeno 10 mg/kg a cada 6-8 horas) nas primeiras 24-48 horas para inibir a síntese de prostaglandinas e reduzir a dor e o eritema cutâneo;",
+            "<strong>Hidratação e Cuidados Tópicos:</strong> Hidratação oral generosa com soluções eletrolíticas ou fluidos isotônicos intravenosos se intolerância oral. Aplicação de loções emolientes calmantes e hidratantes neutros. <strong>Contraindicações formais:</strong> nunca romper flictenas intactas (a cúpula da bolha atua como curativo biológico estéril natural); não aplicar anestésicos tópicos locais (benzocaína/lidocaína tópica em áreas extensas apresenta risco de meta-hemoglobinemia e reações alérgicas); não aplicar substâncias caseiras irritantes (manteiga, pasta de dente, vinagre);",
+            "<strong>Critérios de Hospitalização:</strong> Crianças com queimaduras de 2º grau &gt; 10% da superfície corporal, lesão envolvendo áreas nobres (face, mãos, genitália), sinais de infecção bacteriana secundária (impetiginização estafilocócica), vômitos incoercíveis ou instabilidade hidroeletrolítica."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Espectro das Doenças Térmicas: Da Exaustão Térmica à Intermação (Golpe de Calor)"
+        ],
+        [
+          "p",
+          "O espectro clínico das alterações térmicas decorrentes da sobrecarga de calor ambiental divide-se fundamentalmente em duas síndromes de gravidade contrastante:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro",
+            "Exaustão Térmica (Fadiga por Calor)",
+            "Intermação (Golpe de Calor / <em>Heatstroke</em>)"
+          ],
+          [
+            [
+              "<strong>Temperatura Corporal Central</strong>",
+              "Normal ou levemente elevada (&lt; 40°C, geralmente entre 37,5°C e 39,5°C).",
+              "<strong>Gravemente elevada: &ge; 40,0°C a 40,5°C</strong> (medida retal/esofágica)."
+            ],
+            [
+              "<strong>Estado Neurológico Central</strong>",
+              "<strong>Função do Sistema Nervoso Central PRESERVADA</strong>: criança pode estar queixosa, com cefaleia, tontura, náusea e fraqueza, mas lúcida e orientada; sem coma e sem convulsões.",
+              "<strong>DISFUNÇÃO NEUROLÓGICA CENTRAL GRAVE OBRIGATÓRIA</strong>: delírio, confusão mental aguda, letargia profunda, convulsões, ataxia cerebelar, pupilas anormais ou coma."
+            ],
+            [
+              "<strong>Padrão de Sudorese</strong>",
+              "<strong>Sudorese profusa</strong> (diaforese abundante), pele úmida, fria e pegajosa.",
+              "Pode haver <strong>anidrose (pele quente e seca)</strong> na intermação clássica (passiva), ou sudorese residual na intermação por esforço físico vigoroso."
+            ],
+            [
+              "<strong>Fisiopatologia</strong>",
+              "Depleção hidroeletrolítica decorrente de perda excessiva de água e sódio pelo suor. Os mecanismos termorreguladores centrais continuam funcionando.",
+              "<strong>Colapso catastrófico e falência dos centros termorreguladores hipotalâmicos</strong>, associada a resposta inflamatória sistêmica maciça, liberação endotelial de citocinas pró-inflamatórias, coagulação intravascular disseminada (CIVD) e disfunção de múltiplos órgãos."
+            ],
+            [
+              "<strong>Mortalidade</strong>",
+              "Virtualmente 0% com reposição volêmica precoce.",
+              "Extremamente alta (20% a 50%) se houver atraso no resfriamento corporal ativo."
+            ],
+            [
+              "<strong>Conduta Imediata</strong>",
+              "Ambiente climatizado, repouso horizontal com pernas elevadas, reidratação oral com soro de reidratação oral ou hidratação venosa isotônica.",
+              "<strong>EMERGÊNCIA MÉDICA EXTREMA</strong>: Resfriamento ativo imediato no local (\"resfriar primeiro, transportar depois\"), via aérea avançada se coma/convulsões, hidratação cuidadosa."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Algoritmo de Resfriamento Ativo na Intermação Pediátrica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Métodos de Resfriamento Rápido:</strong> O padrão-ouro é a imersão em água fria (15°C a 20°C) com monitorização contínua ou o método de evaporação forçada (borrifar água morna/temperatura ambiente sobre todo o corpo nu associado a ventiladores de alta potência para promover evaporação contínua rápida), associado a bolsas de gelo nas axilas, virilhas e pescoço;",
+            "<strong>Alvo de Temperatura:</strong> Interromper o resfriamento ativo assim que a temperatura central atingir <strong>38,5°C a 39,0°C</strong> para prevenir o fenômeno de efeito rebote para hipotermia acidental iatrogênica;",
+            "<strong>Medicamentos Antitérmicos PROSCRITOS:</strong> <strong>Dipirona, Paracetamol e Ácido Acetilsalicílico são ESTRITAMENTE INEFICAZES E CONTRAINDICADOS na intermação!</strong> A hipertermia do golpe de calor não é mediada por aumento do ponto de ajuste hipotalâmico por prostaglandina E2 (como na febre infecciosa), mas sim por sobrecarga física pura de calor. O paracetamol agrava a lesão hepatocelular fulminante e a aspirina precipita sangramentos pela coagulopatia de consumo instalada;",
+            "<strong>Controle de Tremores e Convulsões:</strong> Se a criança apresentar tremores musculares vigorosos durante o resfriamento (o que geraria calor metabólico indesejado), administrar benzodiazepínicos (Midazolam ou Diazepam)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "acidentes-com-animais-peconhentos-em-pediatria",
+      0,
+      [
+        [
+          "2",
+          "6. Acidentes por Animais Peçonhentos na Infância: Escorpionismo e Ofidismo (Botrópico, Crotálico, Laquético e Elapídico)"
+        ],
+        [
+          "3",
+          "6.1 Escorpionismo Pediátrico: O Grande Desafio Toxicológico"
+        ],
+        [
+          "p",
+          "No Brasil, os acidentes escorpiônicos representam a principal causa de envenenamento zootóxico em humanos, sendo o <strong>Tityus serrulatus (escorpião-amarelo)</strong> a espécie de maior relevância médica devido à alta toxicidade do seu veneno e sua reprodução por partenogênese (as fêmeas geram clones sem necessidade de fecundação por machos), facilitando a proliferação urbana em entulhos, redes de esgoto e domicílios."
+        ],
+        [
+          "4",
+          "Fisiopatologia da Peçonha Escorpiônica:"
+        ],
+        [
+          "p",
+          "O veneno do escorpião é composto por uma mistura complexa de peptídeos de baixo peso molecular (escorpitoxinas) que atuam ligando-se especificamente aos <strong>canais de sódio dependentes de voltagem ($Na_V$) e canais de potássio</strong> nas membranas dos neurônios pré-sinápticos pós-ganglionares do sistema nervoso autônomo. Isso provoca despolarização neuronal prolongada e sustentada, deflagrando uma <strong>tempestade neuroendócrina aguda e liberação maciça de catecolaminas (adrenalina e noradrenalina) pelas terminações simpáticas e medula adrenal, associada à liberação de acetilcolina pelas terminações parassimpáticas</strong>."
+        ],
+        [
+          "4",
+          "Manifestações Clínicas e Classificação de Gravidade do Ministério da Saúde:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Leve:</strong> Dor local de intensidade variável (queimação, pontada), acompanhada de parestesia local, edema discreto e eritema perilesional. Sem alterações sistêmicas. Em crianças maiores e adultos representa a grande maioria dos casos;",
+            "<strong>Moderado:</strong> Dor local associada a <strong>manifestações sistêmicas colinérgicas ou adrenérgicas precoces</strong>: sudorese profusa discreta ou moderada, náuseas, vômitos ocasionais, salivação excessiva (sialorreia), taquicardia ou bradicardia, e hipertensão arterial transitória;",
+            "<strong>Grave (Prioridade Absoluta em Pediatria):</strong> Quadro dramático com <strong>vômitos incoercíveis profusos e precoces</strong> (o principal marcador preditor clínico de evolução para gravidade em crianças!), sudorese generalizada profusa, sialorreia intensa, broncorreia, miose ou midríase, priapismo (sinal colinérgico clássico), hipertermia ou hipotermia e, fundamentalmente, <strong>falência cardiopulmonar aguda caracterizada por Choque Cardiogênico e Edema Agudo de Pulmão (EAP)</strong>."
+          ]
+        ],
+        [
+          "4",
+          "Fisiopatologia do Choque e Edema Pulmonar no Escorpionismo Grave:"
+        ],
+        [
+          "p",
+          "O choque cardiogênico no escorpionismo resulta da combinação devastadora de:"
+        ],
+        [
+          "o",
+          [
+            "Efeito inotrópico negativo direto do veneno no sarcolema miocárdico;",
+            "Espasmo coronariano e isquemia miocárdica induzidos pela tempestade catecolaminérgica maciça (miocardiopatia adrenérgica aguda por estresse, similar à Síndrome de Takotsubo);",
+            "Elevação abrupta da pós-carga ventricular por vasoconstrição periférica severa;",
+            "Edema pulmonar misto: componente cardiogênico (pressão hidrostática capilar pulmonar extremamente elevada decorrente da disfunção sistólica ventricular esquerda aguda) somado a componente não cardiogênico (aumento da permeabilidade capilar pulmonar mediado por substância P, neuropeptídeo Y e citocinas)."
+          ]
+        ],
+        [
+          "4",
+          "Conduta e Terapêutica no Escorpionismo Pediátrico:"
+        ],
+        [
+          "t",
+          [
+            "Gravidade",
+            "Indicação de Soroterapia",
+            "Dose e Via de Administração",
+            "Manejo Sintomático e Suporte Crítico"
+          ],
+          [
+            [
+              "<strong>Leve</strong>",
+              "<strong>NÃO indicado soro</strong>.",
+              "Nenhuma ampola.",
+              "Bloqueio anestésico local com lidocaína sem vasoconstritor (1-2 mL) ou analgesia oral (dipirona/paracetamol); compressas mornas locais (o calor local reduz a dor pela vasodilatação e facilitação da dissipação da toxina). Observação clínica por no mínimo 4 a 6 horas."
+            ],
+            [
+              "<strong>Moderado</strong>",
+              "<strong>SIM</strong>: Soro Antiescorpiônico (SAEsc) ou Soro Antiaraquídico (SAAr).",
+              "<strong>2 a 3 ampolas IV</strong> em infusão rápida (15 a 30 minutos).",
+              "Internação hospitalar imediata, monitorização contínua de sinais vitais e eletrocardiograma seriado. Observação mínima de 24 horas."
+            ],
+            [
+              "<strong>Grave</strong>",
+              "<strong>SIM MANDATÓRIO</strong>: Soro Antiescorpiônico (SAEsc) de emergência.",
+              "<strong>4 a 6 ampolas IV</strong> em infusão direta rápida (15 a 20 minutos).",
+              "Internação imediata em UTI Pediátrica. Tratar o choque cardiogênico com <strong>inotrópicos com ação vasodilatadora periférica (DOBUTAMINA ou MILRINONA)</strong>. Tratar a hipertensão severa com vasodilatadores diretos (Nitroprussiato de Sódio). Suporte ventilatório invasivo com PEEP alta para o edema pulmonar. <strong>ATENÇÃO: A reposição volêmica agressiva com cristaloides é CONTRAINDICADA no choque escorpiônico cardiogênico, pois agrava drasticamente o edema agudo de pulmão!</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.2 Ofidismo Pediátrico: Aspectos Comparativos dos Quatro Gêneros de Relevância Médica"
+        ],
+        [
+          "p",
+          "No Brasil, as serpentes peçonhentas pertencem a duas famílias fundamentais: <strong>Viperidae</strong> (gêneros <em>Bothrops</em>, <em>Crotalus</em> e <em>Lachesis</em> — serpentes que possuem fosseta loreal, órgão termorreceptor entre o olho e a narina) e <strong>Elapidae</strong> (gênero <em>Micrurus</em> — corais verdadeiras, desprovidas de fosseta loreal, com anéis coloridos e dentes proteróglifos anteriores fixos pequenos)."
+        ],
+        [
+          "t",
+          [
+            "Acidente e Serpente",
+            "Frequência Nacional",
+            "Ações Fisiopatológicas da Peçonha",
+            "Quadro Clínico e Alterações Laboratoriais",
+            "Soroterapia Específica Recomendada (Ministério da Saúde)"
+          ],
+          [
+            [
+              "<strong>Botrópico</strong><br>(<em>Bothrops</em>: Jararaca, Jararacuçu, Urutu)",
+              "<strong>85% a 90%</strong> (o mais frequente de todos)",
+              "1. <strong>Proteolítica/Citotóxica:</strong> metaloproteinases causam necrose tecidual e inflamação;<br>\n        2. <strong>Coagulante:</strong> ativação direta dos fatores II (protrombina) e X, consumindo fibrinogênio (afibrinogenemia);<br>\n        3. <strong>Hemorrágica:</strong> hemorraginas destroem a lâmina basal capilar vascular.",
+              "<strong>Local exuberante:</strong> dor intensa imediata, edema duro e progressivo, eritema, calor, equimoses, flictenas hemorrágicas e risco alto de <strong>Síndrome Compartimental</strong> e necrose.<br>\n        <strong>Sistêmico:</strong> hemorragias espontâneas (gengivorragia, hematúria, hematêmese, hemorragia intracraniana).<br>\n        <strong>Laboratório:</strong> Tempo de Coagulação (TC) prolongado ou incoagulável; plaquetopenia; insuficiência renal aguda oligúrica.",
+              "<strong>Soro Antibotrópico (SAB)</strong> IV:<br>\n        - <em>Leve:</em> 2 a 4 ampolas;<br>\n        - <em>Moderado:</em> 4 a 8 ampolas;<br>\n        - <em>Grave:</em> 12 ampolas.<br>\n        <em>Vigilância estrita de síndrome compartimental (fasciotomia cirúrgica se pressão compartimental &gt; 30 mmHg após neutralização da coagulopatia).</em>"
+            ],
+            [
+              "<strong>Crotálico</strong><br>(<em>Crotalus durissus</em>: Cascavel)",
+              "<strong>8% a 10%</strong> (maior letalidade clínica)",
+              "1. <strong>Neurotóxica:</strong> crotoxina bloqueia a liberação pré-sináptica de acetilcolina na placa motora;<br>\n        2. <strong>Miotóxica sistêmica:</strong> lesão generalizada de fibras musculares esqueléticas (rabdomiólise com liberação de mioglobina e CPK);<br>\n        3. <strong>Coagulante:</strong> consumo de fibrinogênio.",
+              "<strong>Local mínimo/ausente:</strong> dor discreta ou ausente, sem edema ou eritema expressivo (apenas parestesia local leve).<br>\n        <strong>Sistêmico característico:</strong> \"Fácies Miasthênica ou Crotálica\" (ptose palpebral bilateral, oftalmoplegia com diplopia, midríase e paralisia de musculatura facial e velopalatina).<br>\n        <strong>Músculos e Rins:</strong> Mialgia difusa intensa, <strong>urina escura cor de coca-cola / conhaque (mioglobinúria maciça)</strong> com altíssimo risco de <strong>Necrose Tubular Aguda (NTA) e Insuficiência Renal Aguda anúrica</strong>. CPK sérica atinge dezenas de milhares de U/L.",
+              "<strong>Soro Anticrotálico (SAC)</strong> IV:<br>\n        - <em>Leve:</em> 5 ampolas;<br>\n        - <em>Moderado:</em> 10 ampolas;<br>\n        - <em>Grave:</em> 20 ampolas.<br>\n        <em>Conduta adjunta vital:</em> hidratação venosa vigorosa (diurese alvo de 2 a 3 mL/kg/h em crianças) e alcalinização urinária com bicarbonato de sódio para impedir a precipitação de cilindros de ferri-hemato de mioglobina nos túbulos renais."
+            ],
+            [
+              "<strong>Laquético</strong><br>(<em>Lachesis muta</em>: Surucucu Pico-de-Jaca)",
+              "<strong>2% a 3%</strong> (restrito a florestas úmidas - Amazônia e Mata Atlântica)",
+              "1. <strong>Proteolítica</strong> (intensa lesão local);<br>\n        2. <strong>Hemorrágica</strong>;<br>\n        3. <strong>Coagulante</strong>;<br>\n        4. <strong>Neurotóxica autonômica parassimpática (Síndrome Vagal)</strong>.",
+              "Quadro idêntico ao botrópico (dor, necrose, edema, bolhas e hemorragias) <strong>MAIS manifestações de estimulação vagal autonômica intensa: diarreia aquosa profusa incoercível, cólicas abdominais intensas, vômitos, bradicardia grave e hipotensão arterial/choque precoce</strong>.",
+              "<strong>Soro Antilaquético (SAL)</strong> ou Antibotrópico-Laquético (SABL) IV:<br>\n        - <em>Moderado:</em> 10 ampolas;<br>\n        - <em>Grave:</em> 20 ampolas.<br>\n        Atropina IV para reverter bradicardia sintomática e hipermotilidade gastrointestinal vagal."
+            ],
+            [
+              "<strong>Elapídico</strong><br>(<em>Micrurus</em>: Coral Verdadeira)",
+              "<strong>&lt; 1%</strong> (raro, porém de gravidade fulminante)",
+              "<strong>Neurotóxica pré e pós-sináptica pura:</strong> fração alfa-neurotoxina bloqueia competitivamente os receptores nicotínicos de acetilcolina na placa motora muscular (efeito curarizante idêntico à tubocurarina).",
+              "Sem sinais inflamatórios locais (apenas marcas tênues dos dentes). Instalação precoce e rápida (minutos a horas) de <strong>paralisia muscular descendente: ptose palpebral, oftalmoplegia, disfagia, sialorreia, disartria, fraqueza muscular periférica e PARALISIA DA MUSCULATURA RESPIRATÓRIA DIAFRAGMÁTICA COM APNEIA E MORTE POR ASFIXIA</strong>.",
+              "<strong>Soro Antielapídico (SAE)</strong> IV:<br>\n        <strong>10 ampolas IV em TODOS os acidentes confirmados</strong> (todo acidente elapídico com sintomas neuroparalíticos é considerado GRAVE).<br>\n        <em>Ensaio com Anticolinesterásicos:</em> Administração de <strong>Sulfato de Atropina IV</strong> (para bloquear efeitos colinérgicos muscarínicos) seguida de <strong>Neostigmina IV</strong> (0,05 mg/kg em crianças), que prolonga a ação da acetilcolina na fenda e pode reverter temporariamente a fraqueza neuromuscular. Suporte ventilatório com intubação orotraqueal imediata se insuficiência respiratória."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Regras Gerais Cruciais no Atendimento Inicial do Ofidismo Pediátrico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dose Pediátrica de Antiveneno:</strong> A dose de soro antiofídico ou antiescorpiônico é <strong>EXATAMENTE A MESMA PARA CRIANÇAS E ADULTOS</strong>! O veneno inoculado pela serpente ou escorpião possui a mesma quantidade de miligramas independentemente de a vítima pesar 10 kg ou 80 kg; logo, a quantidade de anticorpos neutralizantes necessária para neutralizar o veneno circulante é idêntica. Ademais, como o volume de distribuição na criança é muito menor, a concentração sérica de veneno é mais alta, justificando rigor máximo e velocidade na aplicação;",
+            "<strong>Práticas Tradicionais PROIBIDAS:</strong> Nunca realizar torniquetes ou garrotes (aumentam drasticamente a isquemia e necrose no membro picado); nunca fazer incisões, perfurações ou cortes no local da picada; nunca tentar sucção mecânica ou com a boca; nunca aplicar folhas, borra de café, querosene ou fezes de animais (alto risco de tétano e infecções bacterianas polimicrobianas graves por <em>Morganella morganii</em> e anaeróbios);",
+            "<strong>Profilaxia Antibiótica e Antitetânica:</strong> Antibioticoterapia profilática cega <strong>NÃO é recomendada de rotina</strong>. Deve ser reservada apenas se houver sinais inequívocos de infecção bacteriana secundária (celulite bacteriana, abscesso ou necrose infectada) utilizando amoxicilina-clavulanato ou clindamicina associada a ceftriaxona. A verificação da vacinação antitetânica e administração de reforço de toxoide tetânico e imunoglobulina humana antitetânica (IGHAT), se indicado, é mandatória."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-integrados-afogamento-e-emergencias-ambientais",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Integrados com Raciocínio Diagnóstico e Terapêutico Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Afogamento em Piscina Residencial com Edema Pulmonar Maciço (Szpilman Grau 3 vs 4)"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Paciente masculino, 3 anos e 6 meses (peso: 15 kg), é trazido pela equipe do SAMU à Sala de Emergência Pediátrica após ter sido retirado de piscina residencial de água doce onde permaneceu submerso por tempo estimado de 3 a 4 minutos sem supervisão de adultos. O pai iniciou compressões torácicas no chão até a chegada da equipe de resgate, que ofertou ventilação com bolsa-válvula-máscara e O2 a 100%."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong> Criança torporosa, gemente, com palidez cutânea e cianose perioral evidente.\nVias Aéreas e Respiração: presença de grande quantidade de espuma rósea exteriorizando-se profusamente pela boca e pelas narinas; retração subcostal e intercostal grave, batimento de asa de nariz; FR: 58 irpm; SpO2: 81% sob máscara com reservatório a 15 L/min. À ausculta pulmonar: estertores crepitantes difusos em ambos os hemitórax, desde os ápices até as bases pulmonares.\nCirculação: Pulsos periféricos (radiais) finos, porém pulsos centrais (femorais e carotídeos) cheios e palpáveis; FC: 142 bpm (taquicardia sinusal); PA: 92/56 mmHg (dentro do percentil 50-90 para idade e sexo); Tempo de Enchimento Capilar (TEC): 2 segundos; abdome muito distendido e timpânico.\nNeurológico: Escala de Coma de Glasgow pediátrica = 10 (abre olhos ao estímulo verbal, emite palavras inapropriadas e localiza estímulo doloroso); pupilas isocóricas e fotorreagentes.\nTemperatura central axilar/timpânica: 34,2°C (hipotermia leve)."
+        ],
+        [
+          "4",
+          "Raciocínio Diagnóstico e Estratificação:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Classificação de Szpilman:</strong> O paciente apresenta espuma abundante em boca e narinas associada a estertores creptantes bilaterais difusos, o que o enquadra de imediato nos graus avançados com edema pulmonar alveolar (Grau 3 ou Grau 4). Para diferenciar entre ambos, avalia-se a estabilidade hemodinâmica: a PA sistólica está normal para a idade (92 mmHg) e os pulsos radiais ainda são palpáveis com enchimento capilar &le; 2 segundos. Portanto, classifica-se tecnicamente como <strong>Grau 3 de Szpilman</strong> (edema agudo de pulmão sem hipotensão arterial). A taxa de mortalidade esperada neste estágio situa-se entre 5% e 10%, com risco iminente de colapso respiratório e transição para choque (Grau 4) se não houver suporte imediato;",
+            "<strong>Disfunção Respiratória e Mecanismo:</strong> A aspiração de água doce provocou inativação e lavagem do surfactante nativo, gerando microatelectasias alveolares difusas, aumento da permeabilidade vascular capilar pulmonar e shunt intrapulmonar direito-esquerdo maciço;",
+            "<strong>Distensão Gástrica:</strong> A ingestão maciça de água e ar durante a asfixia restringe os movimentos diafragmáticos e aumenta o risco de broncoaspiração gástrica secundária maciça."
+          ]
+        ],
+        [
+          "4",
+          "Plano Terapêutico e Decisões Críticas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manejo da Via Aérea e Ventilação:</strong> Diante do rebaixamento neurológico (Glasgow 10), esgotamento respiratório e SpO2 &lt; 85%, a Ventilação Não Invasiva (VNI) torna-se arriscada pelo perigo de aspiração gástrica. Indica-se <strong>Intubação Orotraqueal (IOT) em Sequência Rápida</strong> com tubo traqueal com balonete (nº 4.5 com cuff), pré-oxigenação criteriosa, indução com Cetamina (1,5 mg/kg) e bloqueio com Rocurônio (1 mg/kg);",
+            "<strong>Ventilação Mecânica Protetora:</strong> Volume corrente baixo (6 mL/kg = 90 mL), frequência respiratória de 24 a 28 rpm, e <strong>PEEP elevada (iniciar com 8 a 10 cmH2O e titular até 12-14 cmH2O)</strong> para recrutar alvéolos colapsados e conter o extravasamento de líquido capilar para a luz alveolar; FiO2 inicial a 100% titulada rapidamente para manter SpO2 entre 94% e 98%;",
+            "<strong>Descompressão Gástrica Mandatória:</strong> Instalação imediata de sonda orogástrica calibrosa aberta em frasco coletor sob aspiração contínua logo após a intubação, drenando 350 mL de líquido e resíduos alimentares;",
+            "<strong>Manejo Térmico:</strong> Recalecimento ativo externo com mantas térmicas de ar aquecido forçado e infusão de fluidos aquecidos até atingir normotermia (&ge; 36,0°C);",
+            "<strong>Vigilância Infecciosa:</strong> <strong>NÃO prescrever antibióticos profiláticos</strong>. A febre nas primeiras 24 horas e a leucocitose decorrem da pneumonite química e inflamatória estéril provocada pelo líquido aspirado. Antibióticos serão introduzidos apenas se houver deterioração clínica tardia após 48-72 horas, com novos infiltrados radiológicos purulentos ou culturas positivas. Encaminhado à UTI Pediátrica."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Parada Cardiorrespiratória por Afogamento e Hipotermia Profunda em Lago Congelado"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Lactente de 18 meses (11 kg) cai em lago de águas extremamente frias (temperatura da água ~ 4°C) em área rural durante inverno rigoroso. Tempo de submersão até o resgate pelos bombeiros foi de aproximadamente 15 minutos. Na retirada, a criança encontrava-se cianótica, sem movimentos respiratórios e sem pulsos centrais palpáveis."
+        ],
+        [
+          "p",
+          "<strong>Conduta Inicial na Cena:</strong> A equipe do suporte avançado constatou apneia e assistolia no monitor do desfibrilador. Foram fornecidas 5 ventilações de resgate com BVM conectada a O2 a 100%, seguidas de ciclos de RCP 15:2. Ao monitorar a temperatura central por sonda esofágica, o termômetro registrou <strong>25,4°C (hipotermia profunda - Estágio III/IV de Szpilman/Suíça)</strong>."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Decisões no Suporte Avançado de Vida:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fisiopatologia Protetora e Armadilhas:</strong> O resfriamento rápido e profundo da cabeça e do corpo de lactentes em água gelada reduz drasticamente a taxa metabólica basal cerebral (diminuição de cerca de 6% a 7% do consumo de oxigênio encefálico para cada 1°C de queda da temperatura central). Isso viabiliza sobrevida intacta mesmo após períodos prolongados de submersão. Por outro lado, o miocárdio com temperatura &lt; 30°C é extremamente refratário à estimulação farmacológica e elétrica;",
+            "<strong>Manejo Farmacológico e Desfibrilação:</strong>\n    <ul>\n      <li>Conforme as diretrizes internacionais (AHA/PALS/ERC), como a temperatura central está abaixo de 30°C, <strong>a administração de adrenalina intravenosa/intraóssea e antiarrítmicos DEVE SER TOTALMENTE SUSPENSA</strong>. Se aplicada, a adrenalina não agirá no miocárdio frio, acumulará na circulação e causará arritmias fatais e hipertensão paroxística no momento do reaquecimento;",
+            "Se surgir fibrilação ventricular no monitor, administrar <strong>no máximo 3 choques</strong>. Se a arritmia persistir, suspender novos choques e focar exclusivamente nas compressões contínuas e recalecimento ativo até que a temperatura atinja &ge; 30°C;",
+            "<strong>Técnicas de Recalecimento Ativo:</strong>\n    <ul>\n      <li>Infusão contínua de soro fisiológico a 0,9% aquecido a 40°C por acesso intraósseo tibial bilateral;",
+            "Ventilação com ar aquecido e umidificado a 42°C;",
+            "Sonda nasogástrica e vesical com lavagens em alíquotas com solução aquecida a 40°C;",
+            "Mantas térmicas com fluxo de ar quente no tronco;",
+            "Acionamento da equipe cirúrgica do centro de referência para canulação periférica de <strong>ECMO venoarterial (suporte extracorpóreo)</strong>;",
+            "<strong>Evolução e Critério de Morte:</strong> Após 45 minutos de reanimação e suporte extracorpóreo, a temperatura central atingiu 32,8°C. Nesse momento, o ritmo no monitor converteu-se espontaneamente para fibrilação ventricular fina; foi administrado 1 choque com 4 J/kg (44 J) e 1 dose de adrenalina (0,01 mg/kg = 0,11 mg). Seguiu-se o retorno da circulação espontânea (RCE) com ritmo sinusal e pulsos palpáveis. A regra máxima <em>\"No one is dead until warm and dead\"</em> foi rigorosamente obedecida, salvando a vida da criança."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Escorpionismo Grave em Pré-Escolar com Choque Cardiogênico e Edema Pulmonar"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Menina de 4 anos (peso: 16 kg), previamente hígida, é trazida pelos pais à Unidade de Pronto Atendimento (UPA) no interior de Minas Gerais. Há 1 hora e meia, enquanto calçava um sapato no quarto, sentiu picada dolorosa no hálux direito; os familiares capturaram o animal e o trouxeram em um pote de vidro, sendo identificado visualmente como <em>Tityus serrulatus</em> (escorpião-amarelo)."
+        ],
+        [
+          "p",
+          "<strong>Evolução Clínica:</strong> Inicialmente a criança chorava de dor local. Nos últimos 40 minutos, evoluiu com <strong>vômitos incoercíveis profusos (mais de 6 episódios)</strong>, sialorreia intensa escorrendo pela comissura labial, sudorese generalizada que encharca as roupas e prostração súbita."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Sala Vermelha:</strong>\nGeral: Criança torporosa, pálida, com extremidades frias, cianose de leitos ungueais e sudorese fria abundante.\nSinais Vitais: FC: 168 bpm; PA: 70/40 mmHg (choque descompensado); FR: 52 irpm; SpO2: 84% em ar ambiente.\nAparelho Respiratório: Tiragem intercostal e subcostal; ausculta pulmonar com estertores creptantes abundantes em terços médios e inferiores de ambos os hemitórax, além de sibilos expiratórios e roncos de transmissão.\nAparelho Cardiovascular: Ritmo cardíaco em 3 tempos com presença de <strong>galope por terceira bulha ($B_3$)</strong>; pulsos periféricos impalpáveis e pulsos centrais filiformes; Tempo de Enchimento Capilar (TEC) = 5 segundos.\nMembro Inferior Direito: Lesão puntiforme discreta no hálux, com hiperemia perilesional leve, sem necrose."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Diagnóstico Sindrômico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estratificação de Gravidade (Ministério da Saúde):</strong> Trata-se de <strong>Escorpionismo Grave</strong>. A presença de vômitos múltiplos precoces, sudorese profusa, salivação excessiva associada a choque circulatório, galope por B3 e estertores creptantes bilaterais difusos confirma a tempestade autonômica grave com <strong>falência miocárdica aguda (choque cardiogênico) e edema agudo de pulmão misto</strong>;",
+            "<strong>Erro Crítico Iatrogênico a Ser Evitado:</strong> A conduta instintiva de muitos plantonistas diante de uma criança em choque com extremidades frias e TEC lentificado é infundir bólus rápidos de volume cristaloide (20 mL/kg em 10 minutos). <strong>NO CHOQUE ESCORPIÔNICO CARDIOGÊNICO, A EXPANSÃO VOLÊMICA RÁPIDA É POTENCIALMENTE FATAL!</strong> O ventrículo esquerdo está gravemente deprimido e não tolera aumento da pré-carga; a sobrecarga hídrica precipita edema agudo de pulmão fulminante e asfixia mecânica."
+          ]
+        ],
+        [
+          "4",
+          "Conduta Terapêutica Imediata Baseada em Evidências:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Soroterapia Específica de Emergência:</strong> Indicação mandatória e imediata de <strong>Soro Antiescorpiônico (SAEsc) na dose de 4 a 6 ampolas intravenosas</strong> (diluídas ou puras em infusão lenta de 20 minutos). A idade pediátrica e o peso baixo NÃO reduzem o número de ampolas;",
+            "<strong>Suporte Inotrópico e Vasoativo:</strong> A droga de primeira escolha para restaurar o débito cardíaco é a <strong>Dobutamina contínua (5 a 15 mcg/kg/min)</strong> ou o inodilatador <strong>Milrinona (0,375 a 0,75 mcg/kg/min)</strong>, que aumentam a contratilidade miocárdica através do estímulo aos receptores beta-1 e promovem vasodilatação arteriolar sistêmica e pulmonar, reduzindo a pós-carga ventricular;",
+            "<strong>Suporte Ventilatório:</strong> Aplicação precoce de suporte com oxigenoterapia e pressão positiva; caso o rebaixamento de consciência e a hipoxemia persistam, realizar intubação em sequência rápida com PEEP adequada para afastar o edema alveolar;",
+            "<strong>Bloqueio da Dor Local:</strong> Infiltração local com Lidocaína a 1% sem vasoconstritor (1 mL) no hálux e compressas mornas locais para alívio imediato da dor e quebra do estímulo doloroso autonômico;",
+            "<strong>Monitorização Intensiva:</strong> Eletrocardiograma evidenciou taquicardia sinusal, infradesnivelamento de ST em parede anterior e inversão simétrica de ondas T (compatíveis com isquemia miocárdica catecolaminérgica); ecocardiograma demonstrou fração de ejeção de VE de 32% com hipocinesia difusa; Troponina I ultrassensível elevada. Encaminhada à UTI Pediátrica, recebendo alta hospitalar após 5 dias com recuperação completa da função sistólica ventricular."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Acidente Crotálico em Escolar com Fácies Miastênica e Risco de Insuficiência Renal Aguda"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Menino de 8 anos (peso: 28 kg), residente em área de cerrado no estado de Goiás, dá entrada no pronto-socorro infantil acompanhado pelo pai. Há 4 horas, enquanto caminhava em trilha de pastagem, foi picado na região maleolar da perna esquerda por uma serpente descrita pelo pai como \"grossa, cinzenta e com um chocalho sonoro na ponta do rabo\" (<em>Crotalus durissus</em> - cascavel)."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong>\nLocal da Picada: Duas marcas de presas discretas na pele, dor leve ao toque local, ausência de edema significativo, sem necrose e sem bolhas (aspecto local quase inocente).\nGeral e Neurológico: Criança apática, queixando-se de visão dupla (diplopia) e \"peso nos olhos\". Ao exame da face, observa-se <strong>ptose palpebral bilateral acentuada que obriga a criança a inclinar a cabeça para trás para tentar enxergar (fácies miastênica ou neurotóxica crotálica)</strong>, oftalmoplegia extrínseca (dificuldade de movimentação ocular conjugada lateral e vertical) e midríase bilateral com reflexo fotomotor lentificado; fala anasalada (paresia velopalatina); força muscular em membros grau 4/5 com reflexos diminuídos.\nSinais Vitais: FC: 104 bpm; PA: 105/65 mmHg; FR: 22 irpm; SpO2: 98% em ar ambiente.\nAparelho Locomotor: Mialgia intensa generalizada, a criança chora quando os músculos das coxas e panturrilhas são palpados.\nUrina: Durante a avaliação no leito, a criança urina em comadre; a urina apresenta <strong>coloração castanho-escura acentuada, com aspecto característico de \"caldo de carne\", conhaque ou refrigerante de cola</strong>."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Exames Complementares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Identificação do Acidente e Gravidade:</strong> A tríade semiológica composta por <strong>lesão local branda + fácies miastênica neurotóxica precoce + rabdomiólise com urina colúrica/mioglobinúria</strong> é diagnóstica inquestionável de <strong>Acidente Crotálico Grave</strong>;",
+            "<strong>Laboratório de Urgência:</strong>\n    <ul>\n      <li>Tempo de Coagulação (TC): Incoagulável (&gt; 30 minutos);",
+            "Creatinoquinase (CPK): 48.500 U/L (marcador de lesão muscular esquelética maciça);",
+            "Ureia: 64 mg/dL; Creatinina: 1,8 mg/dL (disfunção renal aguda instalada);",
+            "Fitas reagentes de urina (dipstick): Fortemente positivo para \"sangue/hemoglobina\" na fita, porém à microscopia do sedimento urinário há apenas 0-2 hemácias por campo, confirmando que o pigmento é <strong>mioglobina livre</strong> e não sangue glomerular;",
+            "Eletrólitos: Potássio sérico ($K^+$) = 5,9 mEq/L (hipercalemia decorrente da lise celular).",
+            "<strong>Mecanismo da Lesão Renal Aguda:</strong> A mioglobina monomérica livre precipitada na luz dos túbulos renais sob a forma de cilindros intratubulares de ferri-hemato causa obstrução tubular mecânica, combinada com toxicidade tubular oxidativa direta decorrente da geração de radicais livres de ferro e vasoconstrição renal isquêmica severa."
+          ]
+        ],
+        [
+          "4",
+          "Plano Terapêutico e Decisões Críticas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Soroterapia Específica Imediata:</strong> Administração intravenosa de <strong>20 ampolas de Soro Anticrotálico (SAC)</strong> em infusão contínua em 30 a 60 minutos (a gravidade é estabelecida pela presença de oligúria/urina escura e mialgia generalizada com fácies neurotóxica nítida);",
+            "<strong>Proteção Renal Agressiva:</strong>\n    <ul>\n      <li>Hiper-hidratação venosa isotônica com Soro Fisiológico a 0,9% em infusão contínua vigorosa, com meta de débito urinário rigoroso de <strong>2 a 3 mL/kg/hora</strong> em crianças;",
+            "<strong>Alcalinização Urinária:</strong> Infusão de Bicarbonato de Sódio a 8,4% adicionado às soluções hidroeletrolíticas com alvo de manter o <strong>pH urinário entre 6,5 e 7,5</strong>. Em meio alcalino, a mioglobina não se dissocia em ferri-hemato tóxico e não polimeriza na luz tubular, prevenindo a NTA fulminante;",
+            "Se o débito urinário não responder à hidratação adequada após restauração volemica completa e o paciente tornar-se oligúrico refratário com elevação do potássio sérico, suspender sobrecarga hídrica e indicar precocemente <strong>terapia de substituição renal (hemodiálise ou hemodiafiltração contínua)</strong>;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Vigilância da Musculatura Respiratória:</strong> Avaliação seriada da capacidade vital e movimentos torácicos; se houver progressão da paralisia flácida para os músculos diafragmáticos e intercostais, proceder à intubação orotraqueal e ventilação mecânica invasiva. O paciente respondeu favoravelmente à soroterapia e alcalinização, obtendo clareamento da urina em 48 horas e normalização da creatinina após 7 dias de internação.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-afogamento-e-emergencias-ambientais",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas de Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / SUS-SP)"
+        ],
+        [
+          "p",
+          "Um menino de 4 anos é socorrido após ter caído na piscina de um condomínio, onde permaneceu submerso por cerca de 2 minutos. Foi retirado por leigos que o colocaram na borda da piscina. À chegada do médico da unidade de suporte avançado, a criança encontra-se acordada, chorando, porém com tosse seca persistente e respiração discretamente acelerada. Não há exteriorização de espuma pela boca ou pelo nariz. À ausculta pulmonar, o murmúrio vesicular está universalmente audível e simétrico, sem estertores, roncos ou sibilos. Frequência cardíaca: 110 bpm; Pressão arterial: 95/60 mmHg; Oximetria de pulso (SpO2): 96% em ar ambiente. Segundo a classificação de Szpilman, qual é o grau de afogamento e a conduta recomendada para este caso?"
+        ],
+        [
+          "p",
+          "A) Grau 0 (Resgate); liberação imediata aos familiares com orientações domiciliares.<br>\nB) Grau 1; aquecimento, repouso, observação médica de aproximadamente 6 horas e alta se mantiver estabilidade.<br>\nC) Grau 2; oxigenoterapia obrigatória em máscara não reinalante a 15 L/min e internação em UTI Pediátrica.<br>\nD) Grau 2; antibioticoterapia profilática imediata com amoxicilina-clavulanato por 7 dias e alta em 12 horas.<br>\nE) Grau 3; intubação orotraqueal imediata, VNI com PEEP alta e internação em enfermaria."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> De acordo com a classificação estadiada de Szpilman:\n- No <em>Resgate (Grau 0)</em>, a vítima não apresenta tosse, não tem espuma e a ausculta pulmonar é normal;\n- No <strong>Grau 1</strong>, a criança apresenta <strong>tosse evidente</strong>, porém a <strong>ausculta pulmonar permanece estritamente normal</strong> (sem estertores crepitantes) e não há presença de espuma na cavidade oral ou nasal. A mortalidade no Grau 1 é virtualmente de 0%. A conduta padrão consiste em retirar as roupas frias e molhadas, manter a criança aquecida e em repouso em decúbito elevado, com monitorização clínica e oximetria de pulso por um período de segurança de aproximadamente <strong>6 horas</strong>. Se após esse período a criança mantiver-se afebril, com ausculta limpa, sem taquipneia e saturação &gt; 95%, recebe alta médica com segurança. A alternativa A está errada porque a presença de tosse retira o paciente da categoria de resgate. A alternativa C está errada porque o Grau 2 exige a presença de estertores crepitantes na ausculta pulmonar e/ou discreta quantidade de espuma. A alternativa D comete dois erros crassos: classifica incorretamente como Grau 2 e propõe antibioticoterapia profilática, prática absolutamente proscrita e condenada por todos os consensos médicos. A alternativa E descreve conduta do Grau 3/4."
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Revalida INEP)"
+        ],
+        [
+          "p",
+          "Durante o atendimento a uma ocorrência de afogamento na praia, a equipe de suporte básico de vida do Corpo de Bombeiros retira do mar uma criança de 6 anos que se encontrava submersa. A criança é deitada em decúbito dorsal na areia firme. O socorrista constata que a vítima está inconsciente, não responde aos chamados e não apresenta movimentos respiratórios (apneia completa). Ao palpar o pulso carotídeo por 8 segundos, o socorrista não sente nenhuma pulsação arterial. Considerando as recomendações internacionais da SOBRASA e do PALS (Pediatric Advanced Life Support) para a parada cardiorrespiratória secundária a afogamento, qual deve ser a PRIMEIRA ação do socorrista após chamar ajuda?"
+        ],
+        [
+          "p",
+          "A) Realizar imediatamente 30 compressões torácicas rápidas e profundas no centro do tórax (sequência C-A-B).<br>\nB) Realizar imediatamente 5 compressões abdominais vigorosas (manobra de Heimlich) para drenar a água contida nos pulmões.<br>\nC) Abrir a via aérea e aplicar imediatamente 5 ventilações de resgate antes de iniciar as compressões torácicas.<br>\nD) Lateralizar a vítima em decúbito lateral esquerdo e realizar tapotagem dorsal até que a espuma das vias aéreas cesse espontaneamente.<br>\nE) Ligar o desfibrilador externo automático (DEA) e aplicar choque de imediato, independentemente do ritmo cardíaco."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O afogamento é o protótipo clássico de parada cardiorrespiratória por <strong>asfixia hipóxica primária</strong>. Nesses pacientes, o oxigênio alveolar e intravascular está completamente exaurido e a causa direta da parada cardíaca é a hipoxemia crítica miocárdica e cerebral. Por essa razão, as diretrizes internacionais da SOBRASA, ERC e AHA/PALS estabelecem que, no afogamento, a sequência padrão universal do suporte de vida deve iniciar-se com a <strong>abertura das vias aéreas e fornecimento imediato de 5 VENTILAÇÕES DE RESGATE</strong> com oxigênio/pressão positiva, antes de iniciar o ciclo de compressões torácicas. As compressões isoladas sem ventilação prévia apenas empurram sangue sem oxigênio para os tecidos, não sendo eficazes para reverter a AESP ou assistolia do afogado. A alternativa A descreve o protocolo para PCR de origem primariamente cardíaca (arritmias isquêmicas do adulto), não sendo a conduta preconizada no afogamento. A alternativa B é terminantemente proscrita: a manobra de compressão abdominal (Heimlich) não drena água alveolar, provoca vômitos maciços, broncoaspiração grave e pode romper vísceras abdominais. A alternativa D atrasa o início da reanimação e mantém a asfixia letal. A alternativa E é incorreta, pois o DEA deve ser instalado assim que disponível, mas a desfibrilação só é disparada se o ritmo identificado for chocável (FV/TV sem pulso), o que não ocorre antes da checagem do ritmo pelo aparelho."
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP - Residência Médica)"
+        ],
+        [
+          "p",
+          "Um menino de 2 anos é trazido ao pronto-socorro após ter sido resgatado de um tanque de água de lavanderia no quintal de sua casa. O exame físico revela criança obnubilada, com cianose labial, tiragem subcostal grave, FR = 64 irpm, estertores crepitantes em todos os campos pulmonares e grande quantidade de espuma rósea exteriorizando-se pela boca e narinas. A frequência cardíaca é de 160 bpm, os pulsos carotídeos e femorais são filiformes, os pulsos radiais periféricos estão impalpáveis, o tempo de enchimento capilar é de 4 segundos e a pressão arterial sistólica encontra-se em 60 mmHg (abaixo do percentil 5 para o sexo e faixa etária). De acordo com a classificação de gravidade de Szpilman, trata-se de afogamento:"
+        ],
+        [
+          "p",
+          "A) Grau 2, indicando oxigenoterapia por cânula nasal e observação clínica por 12 horas.<br>\nB) Grau 3, cuja conduta mandatória inicial é a ventilação não invasiva com máscara facial em enfermaria.<br>\nC) Grau 4, exigindo suporte avançado de vida imediato com intubação traqueal, ventilação mecânica com PEEP, expansão volêmica cautelosa, suporte inotrópico e UTI Pediátrica.<br>\nD) Grau 5, sendo necessário apenas ventilação com bolsa-válvula-máscara em sala de emergência até o despertar.<br>\nE) Grau 6, devendo-se iniciar compressões torácicas contínuas por ausência de pulso central."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O paciente em questão apresenta espuma abundante fluindo pelas vias aéreas superiores associada a estertores creptantes difusos, achados característicos de edema pulmonar maciço. O elemento semiológico decisivo para a diferenciação prognóstica entre o Grau 3 e o Grau 4 é a presença de <strong>hipotensão arterial e colapso circulatório periférico (choque)</strong>. Como a criança apresenta PA sistólica de 60 mmHg (hipotensão acentuada para 2 anos de idade), pulsos periféricos não palpáveis e TEC lentificado (4 segundos), ela se enquadra categoricamente no <strong>Grau 4 de Szpilman</strong>. A taxa de mortalidade no Grau 4 alcança aproximadamente 20% a 25%. A conduta prioritária imediata consiste em suporte avançado com <strong>intubação orotraqueal e ventilação mecânica com pressão positiva ao final da expiração (PEEP)</strong> para contrabalançar o colapso alveolar decorrente da inativação do surfactante, reposição volêmica parcimoniosa e suporte vasoativo/inotrópico para reversão do choque, com internação obrigatória em UTI Pediátrica. A alternativa B é incorreta porque a VNI é contraindicada na presença de choque hemodinâmico e rebaixamento do sensório. A alternativa D é o Grau 5 (parada respiratória isolada com pulso palpável e sem choque). A alternativa E seria o Grau 6 (parada cardiorrespiratória completa)."
+        ],
+        [
+          "3",
+          "Questão 4 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um adolescente de 13 anos é resgatado de um lago em parque estadual no qual permaneceu submerso em água a aproximadamente 8°C. Na sala de emergência do hospital regional, encontra-se em parada cardiorrespiratória em ritmo de fibrilação ventricular refratária a um primeiro choque despolarizante de 4 J/kg. O termômetro de sonda esofágica registra uma temperatura corporal central de 27,2°C. Diante do quadro de hipotermia grave e PCR, assinale a orientação terapêutica CORRETA com base nas diretrizes internacionais de ressuscitação:"
+        ],
+        [
+          "p",
+          "A) Administrar imediatamente amiodarona na dose de 5 mg/kg associada a bólus sequenciais de adrenalina 0,01 mg/kg a cada 3 minutos, mantendo choques elétricos a cada 2 minutos.<br>\nB) Manter as manobras de RCP, realizar recalecimento ativo interno e externo, limitar os choques elétricos a no máximo 3 tentativas e SUSPENDER a administração de adrenalina e drogas antiarrítmicas até que a temperatura central atinja pelo menos 30°C.<br>\nC) Declarar o óbito imediatamente, uma vez que o tempo de PCR sob hipotermia &lt; 28°C é incompatível com a sobrevida encefálica e o miocárdio sofreu necrose isquêmica irreversível.<br>\nD) Realizar aquecimento rápido exclusivo das extremidades (mãos e pés) com bolsas de água fervente para restabelecer a circulação periférica antes de aquecer o tronco.<br>\nE) Administrar dose dobrada de adrenalina (0,02 mg/kg) a cada 2 minutos para compensar a vasoconstrição periférica intensa induzida pelo frio."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> Na hipotermia grave (temperatura corporal central inferior a 30°C), o miocárdio encontra-se em estado de hipometabolismo profundo e é notoriamente não responsivo a drogas vasoativas e desfibrilações elétricas repetidas. Além disso, a depuração hepática e renal das medicações está virtualmente parada nessa faixa de temperatura; se doses sucessivas de adrenalina ou antiarrítmicos forem administradas repetidamente a cada 3 a 5 minutos, os fármacos acumulam-se no compartimento vascular e atingirão níveis plasmáticos extremamente tóxicos quando o paciente for reaquecido, precipitando taquiarritmias ventriculares intratáveis e colapso vasoplégico. Por esse motivo, as diretrizes internacionais da AHA/PALS e do European Resuscitation Council (ERC) recomendam formalmente:\n1. Limitar a desfibrilação a <strong>no máximo 3 choques</strong>; se a FV persistir, continuar a RCP contínua sem novos choques até que a temperatura atinja &ge; 30°C;\n2. <strong>Suspender todas as medicações de reanimação (adrenalina e amiodarona)</strong> enquanto a temperatura for &lt; 30°C;\n3. Quando a temperatura central alcançar entre 30°C e 35°C, as drogas podem ser introduzidas, porém com intervalos aumentados para o dobro do habitual (a cada 6 a 10 minutos).\nA alternativa C é frontalmente refutada pelo clássico aforismo: <em>\"Ninguém está morto até que esteja aquecido e morto\"</em>. A alternativa D causaria o perigoso fenômeno de <em>afterdrop</em> e choque distributivo pelo retorno maciço de sangue periférico estagnado e frio ao miocárdio. A alternativa E é tóxica e contraindicada."
+        ],
+        [
+          "3",
+          "Questão 5 (Hospital Albert Einstein / Residência Médica)"
+        ],
+        [
+          "p",
+          "Menina de 5 anos é admitida no pronto atendimento com história de ter sido picada por um escorpião amarelo (<em>Tityus serrulatus</em>) na mão esquerda há 2 horas. Apresenta-se com dor intensa local, palidez, sudorese profusa, salivação copiosa e mais de 6 episódios de vômitos incoercíveis. Ao exame cardiovascular, nota-se taquicardia (FC: 165 bpm), ritmo de galope com presença de terceira bulha ($B_3$), pressão arterial limítrofe e ausculta pulmonar com estertores crepitantes bilaterais em bases e terços médios. Assinale a alternativa que apresenta a classificação de gravidade correta e a conduta preconizada segundo o Ministério da Saúde do Brasil:"
+        ],
+        [
+          "p",
+          "A) Escorpionismo Moderado; analgesia com bloqueio anestésico local e observação clínica por 6 horas, sem indicação de soro.<br>\nB) Escorpionismo Grave; administração imediata de 4 a 6 ampolas de Soro Antiescorpiônico por via intravenosa, internação em UTI Pediátrica e suporte inotrópico com dobutamina se choque/edema pulmonar.<br>\nC) Escorpionismo Grave; administração de 2 ampolas de Soro Antiescorpiônico intramuscular e hidratação venosa agressiva com bólus de 60 mL/kg de soro fisiológico a 0,9% na primeira hora.<br>\nD) Escorpionismo Leve; aplicação de compressas frias com gelo no local da picada, anti-histamínicos orais e alta hospitalar imediata.<br>\nE) Escorpionismo Grave; uso imediato de betabloqueadores em altas doses para combater a tempestade adrenérgica e realização de torniquete no membro afetado."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro clínico descrito caracteriza de forma inequívoca o <strong>Escorpionismo Grave</strong> na infância. A peçonha do <em>Tityus serrulatus</em> provoca liberação maciça de catecolaminas e acetilcolina pelas terminações autonômicas. Os vômitos incoercíveis e repetidos são o sinal sentinela clássico de gravidade em crianças. A presença de disfunção miocárdica aguda (ritmo de galope com B3, taquicardia) associada a estertores pulmonares bilaterais revela <strong>insuficiência cardíaca esquerda aguda com edema agudo de pulmão e choque cardiogênico</strong>.\nA conduta recomendada pelo Ministério da Saúde consiste em:\n1. <strong>Soroterapia específica imediata com Soro Antiescorpiônico (SAEsc) ou Soro Antiaraquídico na dose de 4 a 6 ampolas por via intravenosa</strong> (a via intramuscular é proscrita por ter absorção lenta e errática);\n2. Internação mandatória em Unidade de Terapia Intensiva Pediátrica;\n3. <strong>Suporte inotrópico com Dobutamina ou Milrinona</strong> para restabelecer a contratilidade miocárdica e diminuir a pós-carga ventricular;\n4. <strong>Contraindicação absoluta à expansão volêmica agressiva</strong> (proposta errônea da alternativa C), visto que sobrecarregaria o ventrículo em falência e agravaria catastroficamente o edema pulmonar. A alternativa E erra ao propor torniquetes (proscritos em qualquer picada de animal peçonhento) e betabloqueadores em paciente com choque cardiogênico agudo."
+        ],
+        [
+          "3",
+          "Questão 6 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Um menino de 7 anos foi picado por uma serpente enquanto brincava em área de vegetação rasteira no estado do Paraná. É levado ao pronto-socorro após 3 horas do acidente. Ao exame, o médico observa marcas puntiformes na perna direita, sem edema significativo ou equimose local. No entanto, a criança apresenta queixa de visão dupla (diplopia), ptose palpebral bilateral evidente, midríase e queixa de dor muscular generalizada nas coxas e braços. Ao colher urina por sondagem de alívio, observa-se líquido de cor castanho-avermelhada escura (urina cor de conhaque). O exame com fita reagente urinária foi fortemente positivo para sangue, porém o sedimento urinário revelou apenas 1 hemácia por campo de grande aumento. Considerando os dados clínicos e laboratoriais, assinale o gênero da serpente responsável pelo acidente e a principal complicação sistêmica a ser prevenida:"
+        ],
+        [
+          "p",
+          "A) Gênero <em>Bothrops</em> (Jararaca); complicação: síndrome compartimental grave e fasciotomia cirúrgica de urgência.<br>\nB) Gênero <em>Crotalus</em> (Cascavel); complicação: necrose tubular aguda e insuficiência renal aguda por mioglobinúria.<br>\nC) Gênero <em>Lachesis</em> (Surucucu); complicação: choque séptico e perfuração intestinal por síndrome vagal fulminante.<br>\nD) Gênero <em>Micrurus</em> (Coral verdadeira); complicação: insuficiência hepática aguda por lesão hepatocelular direta.<br>\nE) Gênero <em>Philodryas</em> (Cobra-verde não peçonhenta); complicação: reação anafilática ao veneno inoculado."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro clínico expõe com extrema elegância e precisão o <strong>Acidente Crotálico (serpente do gênero <em>Crotalus</em> - cascavel)</strong>. A peçonha crotálica tem três ações essenciais:\n1. <strong>Neurotóxica:</strong> mediada pela crotoxina, que bloqueia a transmissão de acetilcolina nas placas motoras, gerando a clássica <strong>fácies miastênica ou neurotóxica</strong> (ptose palpebral bilateral, oftalmoplegia com diplopia, midríase e paresia velopalatina);\n2. <strong>Miotóxica sistêmica:</strong> lesão extensa de fibras musculares esqueléticas (rabdomiólise difusa), manifestando-se com mialgia intensa e liberação de quantidades maciças de mioglobina e creatinoquinase (CPK);\n3. <strong>Coagulante:</strong> consumo de fibrinogênio.\nO achado crucial na urina é a <strong>mioglobinúria</strong>: urina marrom-escura com fita positiva para sangue (já que a fita detecta a fração heme presente tanto na hemoglobina quanto na mioglobina), porém com sedimento limpo (ausência de hemácias inteiras no microscópio). A grande complicação que determina a morbimortalidade do acidente crotálico é a <strong>Insuficiência Renal Aguda por Necrose Tubular Aguda (NTA) induzida pela mioglobina precipitada</strong>. A prevenção exige administração de Soro Anticrotálico (SAC) em dose adequada (10 a 20 ampolas nos casos moderados/graves), hiper-hidratação venosa vigorosa e alcalinização urinária com bicarbonato de sódio. A alternativa A descreve acidente botrópico (que apresenta reação local inflamatória exuberante com edema duro, dor intensa e necrose). A alternativa D descreve acidente elapídico (que causa neurotoxicidade paralisante periférica pura, sem rabdomiólise nem lesão renal)."
+        ],
+        [
+          "3",
+          "Questão 7 (UNICAMP - Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação às lesões provocadas pelo calor ambiental excessivo em crianças, assinale a opção que diferencia de maneira inequívoca a Exaustão Térmica da Intermação (Golpe de Calor / <em>Heatstroke</em>):"
+        ],
+        [
+          "p",
+          "A) A exaustão térmica cursa com temperatura corporal central superior a 41°C, enquanto a intermação raramente ultrapassa 38,5°C.<br>\nB) A intermação caracteriza-se obrigatoriamente por temperatura corporal central elevada (&gt; 40°C) acompanhada de disfunção grave do sistema nervoso central (delírio, convulsões ou coma), ausente na exaustão térmica.<br>\nC) O uso de antitérmicos comuns como dipirona e paracetamol por via intravenosa é o tratamento de escolha padrão-ouro na intermação para reduzir o ponto de ajuste hipotalâmico.<br>\nD) A presença de sudorese profusa exclui sumariamente o diagnóstico de intermação em qualquer faixa etária.<br>\nE) A exaustão térmica decorre de coagulação intravascular disseminada e falência de múltiplos órgãos, necessitando de hemodiálise precoce."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O divisor de águas patognomônico entre a <strong>Exaustão Térmica</strong> e a <strong>Intermação</strong> reside na integridade das funções encefálicas e no colapso dos centros termorreguladores centrais:\n- Na <em>Exaustão Térmica</em>, a perda hidroeletrolítica pelo suor causa fraqueza, náusea, cefaleia e temperatura moderada (&lt; 40°C), porém <strong>o sistema nervoso central permanece preservado</strong> (criança lúcida, orientada, sem coma ou convulsões);\n- Na <strong>Intermação</strong>, há uma falência aguda catastrófica dos mecanismos hipotalâmicos de dissipação térmica, com temperatura corporal central &ge; 40°C ou 40,5°C associada <strong>obrigatoriamente a disfunções neurológicas centrais graves</strong> (rebaixamento do nível de consciência, agitação psicomotora, delírio, convulsões generalizadas ou coma profundo).\nA alternativa C comete um erro gravíssimo: <strong>antitérmicos são totalmente ineficazes na intermação</strong> (pois o mecanismo térmico não envolve PGE2 no hipotálamo, mas sim sobrecarga ambiental externa direta) e agravam a hepatotoxicidade e a coagulopatia. A alternativa D está errada porque a intermação por esforço físico pode manter sudorese residual. A alternativa E inverte os conceitos (a disfunção de múltiplos órgãos e a CIVD ocorrem na intermação, não na exaustão térmica)."
+        ],
+        [
+          "3",
+          "Questão 8 (FMUSP / Revalida)"
+        ],
+        [
+          "p",
+          "Lactente de 11 meses é trazido à emergência por familiares após sofrer queimaduras solares de 2º grau superficial e profundo acometendo aproximadamente 18% da superfície corporal total (dorso e membros), após ter permanecido sob exposição solar direta sem proteção em praia das 10h às 15h. Apresenta flictenas volumosas íntegras, eritema intenso e choro inconsolável por dor. Não há lesões de vias aéreas. A respeito do manejo terapêutico agudo indicado para este lactente, assinale a conduta CORRETA:"
+        ],
+        [
+          "p",
+          "A) Realizar punção e debridamento imediato de todas as flictenas na sala de emergência, aplicando anestésico tópico com benzocaína a 5% sobre a derme cruenta para analgesia.<br>\nB) Internar a criança para reposição volêmica intravenosa calculada, analgesia sistêmica escalonada, manutenção da integridade das flictenas intactas e curativo biológico/estéril oclusivo sem romper bolhas.<br>\nC) Prescrever antibioticoterapia profilática com cefazolina intravenosa por 10 dias para prevenir infecção estafilocócica e liberar para casa após curativo.<br>\nD) Aplicar compressas de gelo diretamente sobre o dorso e as extremidades por 40 minutos para interromper o calor fotoquímico na profundidade dos tecidos.<br>\nE) Administrar corticoterapia oral em altas doses por 14 dias para acelerar a regeneração epitelial epidérmica."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> As queimaduras solares de segundo grau acometendo mais de 10% da superfície corporal em lactentes representam queimaduras pediátricas de espessura parcial significativas, impondo <strong>internação hospitalar obrigatória</strong>.\nPontos-chave da abordagem:\n1. <strong>Manejo das Flictenas:</strong> A cúpula íntegra da bolha é o melhor curativo biológico estéril disponível; rompê-la intencionalmente expõe a derme subjacente a colonização bacteriana precoce, dessecação e piora dramática da dor. As bolhas devem ser mantidas intactas e protegidas com curativos não aderentes ou gaze estéril;\n2. <strong>Contraindicações Clínicas Críticas:</strong>\n   - <em>Anestésicos tópicos locais (benzocaína/lidocaína)</em> em grandes áreas desnudas de pele infantil são terminantemente contraindicados devido ao risco elevado de absorção sistêmica tóxica e meta-hemoglobinemia letal (alternativa A errada);\n   - <em>Aplicação de gelo direto</em> causa vasoconstrição intensa e isquemia dérmica secundária, aprofundando a queimadura (alternativa D errada);\n   - <em>Antibioticoterapia profilática</em> sistêmica não tem indicação e apenas seleciona flora hospitalar resistente (alternativa C errada);\n   - Corticoterapia prolongada não acelera reepitelização e eleva risco infeccioso e imunossupressão (alternativa E errada);\n3. <strong>Tratamento Padrão:</strong> Hidratação venosa para reposição das perdas transepidérmicas insensíveis, analgesia sistêmica (dipirona e anti-inflamatórios ou opioides fracos se dor refratária) e cuidados locais estéreis."
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-e-resumo-afogamento-e-emergencias-ambientais",
+      0,
+      [
+        [
+          "2",
+          "9. Tabela High-Yield de Síntese e Diretrizes de Prática Clínica Baseada em Evidências"
+        ],
+        [
+          "3",
+          "9.1 Matriz de Decisão Clínica Rápida em Emergências Ambientais Pediátricas"
+        ],
+        [
+          "t",
+          [
+            "Condição Clínica",
+            "Mecanismo Fisiopatológico Central",
+            "Achado Semiológico Sentinela",
+            "Conduta Imediata de Alta Prioridade",
+            "Erro Crítico Proscrito nas Bancas"
+          ],
+          [
+            [
+              "<strong>Afogamento Grau 1</strong>",
+              "Irritação de vias aéreas superiores sem lesão alveolar.",
+              "Tosse presente, porém <strong>ausculta pulmonar normal</strong> e sem espuma.",
+              "Aquecimento, repouso e <strong>observação clínica de 6 horas</strong>; alta se estável.",
+              "Não realizar antibioticoterapia nem prescrever corticoides profiláticos."
+            ],
+            [
+              "<strong>Afogamento Grau 2</strong>",
+              "Microatelectasias basais e transudação alveolar leve.",
+              "Estertores em bases pulmonares e <strong>pequena quantidade de espuma</strong>.",
+              "<strong>O2 sob máscara com reservatório (10-15 L/min)</strong> e internação hospitalar por 24-48h.",
+              "Não liberar o paciente antes de 24 horas pelo risco de evolução para SDRA tardia."
+            ],
+            [
+              "<strong>Afogamento Grau 3</strong>",
+              "Edema pulmonar alveolar maciço com shunt intrapulmonar extenso.",
+              "<strong>Grande volume de espuma</strong> em boca/nariz, mas com <strong>pressão arterial e pulsos normais</strong>.",
+              "Oxigênio a 100%, <strong>Ventilação Não Invasiva (VNI/CPAP precoce)</strong> e UTI Pediátrica.",
+              "Não postergar IOT se houver fadiga respiratória ou rebaixamento do nível de consciência."
+            ],
+            [
+              "<strong>Afogamento Grau 4</strong>",
+              "Edema pulmonar maciço associado a <strong>choque circulatório anóxico</strong>.",
+              "Grande volume de espuma em boca/nariz associado a <strong>hipotensão arterial sistêmica e má perfusão</strong>.",
+              "<strong>Intubação Orotraqueal imediata com PEEP alta</strong>, drogas vasoativas e UTI Pediátrica.",
+              "Não utilizar VNI em paciente com choque circulatório ou Glasgow &lt; 9."
+            ],
+            [
+              "<strong>Afogamento Grau 5</strong>",
+              "Parada respiratória isolada por asfixia bulbar precoce.",
+              "<strong>Apneia completa</strong>, porém com <strong>pulso central palpável</strong> presente.",
+              "<strong>Ventilação com pressão positiva (BVM com O2)</strong>: 1 incursão a cada 2-3 segundos.",
+              "Não iniciar compressões torácicas se o pulso central estiver inequivocamente presente."
+            ],
+            [
+              "<strong>Afogamento Grau 6 (PCR)</strong>",
+              "Parada cardiorrespiratória por asfixia celular anóxica global.",
+              "Inconsciência, apneia e <strong>ausência de pulso central palpável</strong> (AESP/Assistolia).",
+              "Iniciar a reanimação com <strong>5 ventilações de resgate iniciais</strong> antes das compressões torácicas.",
+              "<strong>NUNCA realizar manobra de Heimlich</strong> ou compressões abdominais para drenar água."
+            ],
+            [
+              "<strong>Hipotermia Grave (&lt; 30°C)</strong>",
+              "Hipometabolismo extremo e refratariedade miocárdica a drogas e eletricidade.",
+              "Temperatura central &lt; 30°C, coma, bradicardia refratária e <strong>onda J de Osborn no ECG</strong>.",
+              "Recalecimento ativo interno e externo; <strong>limitar a 3 choques</strong> de desfibrilação.",
+              "<strong>SUSPENDER adrenalina e antiarrítmicos</strong> até que a temperatura atinja &ge; 30°C."
+            ],
+            [
+              "<strong>Intermação (Heatstroke)</strong>",
+              "Falência catastrófica dos centros termorreguladores hipotalâmicos.",
+              "Temperatura central &ge; 40°C associada <strong>obrigatoriamente a coma, delírio ou convulsões</strong>.",
+              "<strong>Resfriamento ativo imediato na cena</strong> (imersão em água fria ou evaporação forçada).",
+              "<strong>PROSCRITO uso de antitérmicos</strong> (dipirona/paracetamol): são ineficazes e tóxicos."
+            ],
+            [
+              "<strong>Escorpionismo Grave</strong>",
+              "Tempestade autonômica com miocardiopatia adrenérgica aguda.",
+              "<strong>Vômitos precoces incoercíveis</strong>, sudorese, <strong>choque cardiogênico e edema pulmonar</strong>.",
+              "<strong>Soro Antiescorpiônico (4 a 6 ampolas IV)</strong> + Inotrópico (Dobutamina/Milrinona).",
+              "<strong>CONTRAINDICADA expansão volêmica rápida com cristaloides</strong> (agrava edema pulmonar)."
+            ],
+            [
+              "<strong>Ofidismo Crotálico Grave</strong>",
+              "Neurotoxicidade pré-sináptica e rabdomiólise sistêmica por crotoxina.",
+              "<strong>Fácies miastênica (ptose palpebral)</strong>, mialgia difusa e <strong>urina escura (mioglobinúria)</strong>.",
+              "<strong>Soro Anticrotálico (20 ampolas IV)</strong> + Hiper-hidratação venosa + Alcalinização urinária.",
+              "Não realizar torniquetes, cortes ou sucção na ferida picada."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "9.2 Dez Mandamentos de Segurança no Trauma e Emergência Ambiental Pediátrica"
+        ],
+        [
+          "o",
+          [
+            "<strong>A água aspirada é o menor dos problemas osmolares:</strong> No afogamento humano, o volume aspirado é pequeno e a distinção entre água doce e salgada perde relevância terapêutica. O tratamento universal é a reversão da hipoxemia e a restauração da PEEP;",
+            "<strong>Ventilar é prioridade zero no afogamento:</strong> Em PCR por afogamento, abra as vias aéreas e oferte 5 ventilações de resgate antes das compressões torácicas;",
+            "<strong>Estômago cheio em todo afogado:</strong> Pase sonda gástrica precoce em todo paciente submetido a suporte ventilatório com pressão positiva após afogamento;",
+            "<strong>\"No one is dead until warm and dead\":</strong> Em vítimas hipotérmicas de submersão, não declare óbito antes de aquecer a vítima até pelo menos 32°C a 35°C;",
+            "<strong>A onda J de Osborn avisa a frieza miocárdica:</strong> A deflexão pós-QRS é diretamente proporcional à profundidade da hipotermia e prenuncia arritmias ventriculares graves se houver manipulação descuidada;",
+            "<strong>A intermação não é febre:</strong> Nunca use antitérmicos na hipertermia ambiental extrema; resfrie ativamente o corpo com água e ventiladores;",
+            "<strong>Bolha de queimadura solar é curativo biológico:</strong> Não rompa flictenas e não aplique anestésicos tópicos pelo risco de meta-hemoglobinemia letal;",
+            "<strong>Vômitos múltiplos no escorpião exigem UTI:</strong> O vômito incoercível na criança picada por escorpião é o alerta vermelho máximo de tempestade autonômica e choque cardiogênico iminente;",
+            "<strong>No choque cardiogênico escorpiônico, cristaloide mata:</strong> Use dobutamina ou milrinona e restrinja sobrecargas volêmicas para não inundar os pulmões;",
+            "<strong>A dose do antiveneno não depende do peso da criança:</strong> A quantidade de ampolas de soro antiescorpiônico ou antiofídico é idêntica para crianças e adultos, pois a quantidade de veneno a neutralizar é a mesma."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1043 @@
+{
+  "v": 2,
+  "s": "colestase-intra-hepatica-da-gestacao",
+  "t": "Colestase Intra-Hepática da Gestação",
+  "p": "Colestase Intra-Hepática da Gestação — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Prurido Gestacional, Genética dos Transportadores Biliares (ABCB4/MDR3 e ABCB11/BSEP), Estratificação por Ácidos Biliares Totais, Farmacoterapia com UDCA, Prevenção do Óbito Fetal Súbito e Diagnóstico Diferencial com EHAG e Síndrome HELLP",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Ginecologia e Obstetrícia",
+  "h": [
+    "Apostila LURIA",
+    "Colestase Intra-Hepática da Gestação",
+    "Tratado de Alta Performance em Prurido Gestacional, Genética dos Transportadores Biliares (ABCB4/MDR3 e ABCB11/BSEP), Estratificação por Ácidos Biliares Totais, Farmacoterapia com UDCA, Prevenção do Óbito Fetal Súbito e Diagnóstico Diferencial com EHAG e Síndrome HELLP",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Ginecologia e Obstetrícia",
+      "Tema: Colestase Intra-Hepática da Gestação"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "etiopatogenia-multifatorial-genetica-hormonios-ambiente",
+      "1. Introdução, Epidemiologia e Etiopatogenia Multifatorial da Colestase Intra-Hepática da Gestação (CIHG)"
+    ],
+    [
+      "quadro-clinico-classico-prurido-palmo-plantar-e-diagnostico-laboratorial",
+      "2. Apresentação Clínica Típica (O Prurido Palmoplantar) e Diagnóstico Laboratorial com Estratificação de Ácidos Biliares"
+    ],
+    [
+      "riscos-materno-fetais-e-fisiopatologia-do-obito-fetal-subito",
+      "3. Riscos Materno-Fetais: Fisiopatologia do Óbito Fetal Súbito, Líquido Meconial e Prematuridade"
+    ],
+    [
+      "diagnostico-diferencial-esteatose-hellp-hepatites-virais",
+      "4. Diagnóstico Diferencial Aprofundado: Critérios de Swansea na EHAG, Síndrome HELLP e Hepatites"
+    ],
+    [
+      "tratamento-farmacologico-udca-mecanismos-e-posologia",
+      "5. Tratamento Farmacológico de Escolha: Ácido Ursodesoxicólico (UDCA), Mecanismos Moleculares e Terapias Adjuvantes"
+    ],
+    [
+      "monitoramento-fetal-e-momento-do-parto-estratificado-por-acidos-biliares",
+      "6. Vigilância da Vitalidade Fetal e Momento Oportuno da Resolução da Gestação Estratificada por Ácidos Biliares"
+    ],
+    [
+      "casos-clinicos-integrados-colestase-intra-hepatica",
+      "7. Casos Clínicos Integrados com Raciocínio Diagnóstico e Decisões Obstétricas Passo a Passo"
+    ],
+    [
+      "questoes-comentadas-colestase-intra-hepatica",
+      "8. Questões Comentadas de Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "tabela-high-yield-e-resumo-colestase-intra-hepatica",
+      "9. Tabela High-Yield de Síntese e Diretrizes de Prática Clínica Baseada em Evidências"
+    ]
+  ],
+  "q": [
+    [
+      "etiopatogenia-multifatorial-genetica-hormonios-ambiente",
+      0,
+      [
+        [
+          "2",
+          "1. Introdução, Epidemiologia e Etiopatogenia Multifatorial da Colestase Intra-Hepática da Gestação (CIHG)"
+        ],
+        [
+          "3",
+          "1.1 Conceito, Relevância Clínica e Epidemiologia Global"
+        ],
+        [
+          "p",
+          "A <strong>Colestase Intra-Hepática da Gestação (CIHG)</strong>, também classicamente denominada <em>colestase obstétrica</em> ou <em>prurigo gravídico</em>, é a doença hepática reversível específica da gravidez mais prevalente no mundo ocidental. Caracteriza-se clinicamente pelo aparecimento insidioso de <strong>prurido cutâneo difuso sem lesões cutâneas primárias (com predomínio patognomônico palmoplantar e acentuação noturna)</strong>, associado laboratorialmente à <strong>elevação das concentrações séricas maternas de ácidos biliares totais</strong> e, frequentemente, de aminotransferases (ALT/AST), manifestando-se tipicamente no final do segundo ou durante o terceiro trimestre da gestação e com <strong>resolução completa espontânea nas primeiras semanas do puerpério</strong>."
+        ],
+        [
+          "p",
+          "A incidência global da CIHG varia expressivamente de acordo com a base étnica e a localização geográfica:"
+        ],
+        [
+          "u",
+          [
+            "Na Europa Central e América do Norte, a incidência situa-se entre <strong>0,5% e 1,5%</strong> de todas as gestações;",
+            "Nas populações da América do Sul (especialmente no Chile e Bolívia) e na Escandinávia, historicamente registravam-se as taxas mundiais mais elevadas, chegando a atingir entre <strong>5% e 14% das gestantes de etnia indígena Mapuche e Araucana</strong> (embora tenha decrescido para cerca de 2% a 4% nas últimas décadas devido à miscigenação e melhoria do perfil nutricional);",
+            "No Brasil, estima-se uma prevalência média de <strong>1% a 2%</strong>, com forte agregação familiar e recorrência extremamente elevada em gestações subsequentes (risco de recorrência de <strong>45% a 70%</strong> nas gestações futuras)."
+          ]
+        ],
+        [
+          "p",
+          "Embora a CIHG seja uma condição de curso materno habitualmente benigno (limitada ao desconforto excruciante do prurido, privação de sono e escoriações secundárias por coçadura), seu prognóstico fetal e perinatal é <strong>potencialmente sombrio e desastroso</strong>: correlaciona-se de forma direta com riscos aumentados de <strong>trabalho de parto prematuro espontâneo, líquido amniótico meconial intraútero, padrão anormal da frequência cardíaca fetal, síndrome de angústia respiratória do recém-nascido e, de forma temível, ÓBITO FETAL INTRAUTERINO SÚBITO E INESPERADO</strong>."
+        ],
+        [
+          "3",
+          "1.2 Etiopatogenia Multifatorial: A Interação Gene-Hormônio-Ambiente"
+        ],
+        [
+          "p",
+          "A patogênese da colestase intra-hepática da gestação é reconhecidamente multifatorial, resultando de uma complexa convergência entre <strong>suscetibilidade genética individual, sobrecarga hormonal esteroide placentária e fatores exógenos ambientais</strong>:"
+        ],
+        [
+          "4",
+          "1. Suscetibilidade Genética e Mutações em Transportadores Biliares Canaliculares:"
+        ],
+        [
+          "p",
+          "A excreção de bile a partir dos hepatócitos para os canalículos biliares contra um gradiente de concentração acentuado é um processo ativo primário estritamente dependente de energia ($ATP$), realizado por uma família altamente especializada de proteínas carreadoras transmembrana pertencentes à superfamília ABC (<em>ATP-Binding Cassette</em>). Mutações heterozigotas em genes que codificam esses transportadores conferem uma fragilidade intrínseca à excreção biliar:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Gene ABCB4 (MDR3 - <em>Multidrug Resistance Protein 3</em>):</strong> É o gene mais frequentemente implicado e mais cobrado em provas de residência. Codifica a <strong>flipase de fosfolipídios canalicular (fosfatidilcolina translocase)</strong>, responsável por transportar fosfatidilcolina da face interna para a face luminal da membrana canalicular. A fosfatidilcolina forma micelas mistas com os ácidos biliares, neutralizando sua ação detergente citotóxica sobre a membrana do canalículo. Mutações hipomórficas no gene <em>ABCB4</em> reduzem a secreção de fosfolipídios, gerando uma bile litogênica e citotóxica com retenção intracelular de ácidos biliares. As gestantes com mutação em <em>ABCB4</em> apresentam uma característica laboratorial distintiva: <strong>elevação desproporcional da enzima Gama-Glutamiltransferase (GGT)</strong>, além de risco vitalício aumentado de litíase biliar precoce intra-hepática (síndrome LPAC - <em>Low Phospholipid-Associated Cholelithiasis</em>);",
+            "<strong>Gene ABCB11 (BSEP - <em>Bile Salt Export Pump</em>):</strong> Codifica a <strong>bomba exportadora de sais biliares</strong>, o transportador ativo primário responsável pela extrusão de ácidos biliares conjugados (taurocolato e glicocolato) do citoplasma hepatocitário para a luz canalicular. Mutações heterozigotas reduzem a densidade funcional da BSEP na membrana canalicular apical. As gestantes portadoras dessa mutação cursam tipicamente com <strong>elevação marcante de ácidos biliares e aminotransferases, porém com níveis normais de GGT</strong>;",
+            "<strong>Gene ATP8B1 (FIC1 - <em>Familial Intrahepatic Cholestasis 1</em>):</strong> Codifica uma aminofosfolipídio-flipase (translocadora de fosfatidilserina) que preserva a assimetria lipídica e a fluidez da membrana canalicular apical contra o estresse osmótico e detergente dos ácidos biliares. Polimorfismos nesse gene associam-se a formas familiares de CIHG com GGT normal;",
+            "<strong>Gene ABCC2 (MRP2 - <em>Multidrug Resistance-Associated Protein 2</em>):</strong> Transportador apical responsável pela excreção de bilirrubina conjugada direta e glutationa. Mutações homozigotas causam a Síndrome de Dubin-Johnson, e polimorfismos heterozigotos podem predispor à colestase gestacional colestática com hiperbilirrubinemia direta."
+          ]
+        ],
+        [
+          "4",
+          "2. Influência Hormonal Estrogênica e Progestagênica:"
+        ],
+        [
+          "p",
+          "O fato de a CIHG manifestar-se quase exclusivamente a partir do final do segundo e durante o terceiro trimestre — período que coincide perfeitamente com o <strong>pico máximo das concentrações circulantes de estrogênios e metabólitos sulfatados de progesterona secretados pela placenta</strong> — e remitir rapidamente após a dequitação placentária no puerpério imediato comprova o papel permissivo e desencadeante fundamental dos esteroides sexuais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Efeito Colestático dos Estrogênios:</strong> Concentrações suprafisiológicas de estradiol e seus metabólitos hidroxilados (especialmente o <strong>17-beta-estradiol glicuronídeo</strong>) induzem colestase através de múltiplos mecanismos moleculares:\n    <ol>\n      <li>Inibição transcricional direta da expressão do transportador <em>BSEP (ABCB11)</em> mediada pela interação com o receptor nuclear farnesoide X (FXR);",
+            "Internalização endocítica patológica dos transportadores canaliculares BSEP e MRP2 para o citoplasma, retirando-os de sua localização funcional na membrana apical dos hepatócitos;",
+            "Redução da fluidez da membrana lipídica sinusoidal e canalicular pela alteração da proporção colesterol/fosfolipídios;",
+            "<strong>Efeito Colestático da Progesterona e seus Metabólitos Sulfatados:</strong> Durante o terceiro trimestre gestacional, a produção placentária diária de progesterona atinge níveis até 20 vezes superiores aos da fase lútea. Os metabólitos sulfatados da progesterona (como a <strong>epialopregnanolona sulfato</strong>) competem diretamente com os ácidos biliares pelos transportadores canaliculares e exercem efeito inibitório sobre o receptor nuclear FXR, desregulando o feedback inibitório fisiológico da síntese biliar;",
+            "<strong>Evidências Clínicas de Carga Hormonal:</strong> A incidência de colestase intra-hepática é até <strong>três a cinco vezes superior em gestações gemelares e trigemelares</strong> (que produzem massa placentária e níveis séricos de estrogênio e progesterona significativamente maiores do que gestações únicas) e em pacientes submetidas a protocolos de reprodução assistida com hiperestimulação ovariana controlada."
+          ]
+        ],
+        [
+          "4",
+          "3. Fatores Ambientais, Nutricionais e Variação Sazonal:"
+        ],
+        [
+          "p",
+          "Estudos epidemiológicos em países do hemisfério sul e na Escandinávia documentaram consistentemente uma <strong>incidência sazonal acentuada da CIHG durante os meses frios de inverno</strong>. A deficiência de selênio e a depleção dos níveis séricos de vitamina D durante o inverno foram correlacionadas com uma maior suscetibilidade hepática ao estresse oxidativo induzido por ácidos biliares retidos, alterando a permeabilidade da membrana hepatocitária."
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-classico-prurido-palmo-plantar-e-diagnostico-laboratorial",
+      0,
+      [
+        [
+          "2",
+          "2. Apresentação Clínica Típica (O Prurido Palmoplantar) e Diagnóstico Laboratorial com Estratificação de Ácidos Biliares"
+        ],
+        [
+          "3",
+          "2.1 Quadro Clínico Típico e Semiológica do Prurido Gestacional"
+        ],
+        [
+          "p",
+          "O sinal cardeal e a queixa que inaugura a quase totalidade dos casos de CIHG é o <strong>PRURIDO CUTÂNEO INTENSO</strong>. Suas características semiológicas são tão peculiares e estereotipadas que devem despertar suspeita clínica instantânea em qualquer profissional de saúde pré-natalista:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Topografia Eletiva Predileta:</strong> O prurido inicia-se de forma quase patognomônica na <strong>região palmoplantar (palmas das mãos e plantas dos pés)</strong>, estendendo-se posteriormente de forma centrípeta para os membros superiores, membros inferiores, tronco e abdome. O envolvimento da face e do pescoço é muito raro;",
+            "<strong>Padrão Circadiano e Piora Noturna:</strong> O prurido apresenta uma <strong>exacerbação noturna dramática</strong>, tornando-se excruciante e intolerável ao deitar-se. Essa característica priva a gestante do sono reparador, provocando insônia grave, fadiga crônica, exaustão física e psicológica, e labilidade emocional intensa;",
+            "<strong>AUSÊNCIA COMPLETA DE LESÕES CUTÂNEAS PRIMÁRIAS:</strong> O exame dermatológico inicial da pele revela uma derme <strong>absolutamente limpa e sem lesões cutâneas primárias (sem pápulas, sem pústulas, sem placas urticariformes e sem vesículas)</strong>. Os únicos achados dermatológicos observados são <strong>lesões secundárias por coçadura mecânica (escoriações lineares, crostas hemáticas, liquenificação crônica e nódulos de prurigo)</strong> decorrentes do traumatismo das unhas da paciente na tentativa desesperada de aliviar a sensação pruriginosa;",
+            "<strong>Icterícia Clínica Tardia (Manifestação Menor):</strong> A icterícia visível (escleras e mucosas amareladas) é uma manifestação tardia e relativamente incomum na CIHG, acometendo apenas <strong>10% a 25% dos casos</strong>. Quando surge, instala-se habitualmente 1 a 4 semanas após o início do prurido, cursa com bilirrubina total que raramente ultrapassa 4 a 6 mg/dL (com predomínio de bilirrubina conjugada direta) e pode ser acompanhada de <strong>colúria (urina escura) e hipocolia fecal transitória</strong>;",
+            "<strong>Sintomas Constitucionais Leves:</strong> A paciente pode referir náuseas discretas, desconforto epigástrico inespecífico e astenia secundária à privação do sono. <strong>A presença de dor abdominal intensa em hipocôndrio direito, febre, vômitos incoercíveis ou encefalopatia NÃO faz parte do quadro clássico da CIHG e impõe a busca imediata por diagnósticos alternativos mais graves</strong>."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Fisiopatologia do Prurido: Ácidos Biliares, Lisofosfatidato e Sulfatos de Progesterona"
+        ],
+        [
+          "p",
+          "Historicamente, acreditava-se que o prurido fosse causado pela precipitação mecânica direta de cristais de sais biliares nas terminações nervosas sensoriais da epiderme. No entanto, pesquisas neurobiológicas modernas revelaram que a fisiopatologia do prurido colestático é significativamente mais complexa:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ácido Lisofosfatídico (LPA) e a Enzima Autotaxina:</strong> Gestantes com CIHG apresentam níveis séricos marcadamente elevados de <strong>autotaxina</strong> (uma fosfodiesterase que converte lisofosfatidilcolina em ácido lisofosfatídico - LPA). O LPA é um fosfolipídio bioativo extremamente potente que atua ligando-se a receptores neuronais específicos nos gânglios da raiz dorsal e nas fibras nervosas amielínicas C prurigogênicas, deflagrando a sensação incoercível de prurido;",
+            "<strong>Sulfatos de Progesterona e Receptor Mas-related G Protein-Coupled Receptor X2 (MRGPRX2):</strong> Metabólitos esteroides sulfatados ativam mastócitos dérmicos e fibras nervosas sensoriais dérmicas independentemente de histamina, explicando por que <strong>os anti-histamínicos clássicos são notoriamente ineficazes para aliviar o prurido da colestase</strong>."
+          ]
+        ],
+        [
+          "3",
+          "2.3 Diagnóstico Laboratorial Padrão-Ouro e Estratificação Prognóstica"
+        ],
+        [
+          "p",
+          "O diagnóstico definitivo da CIHG é estabelecido pela presença do quadro clínico compatível associado à confirmação laboratorial da disfunção colestática:"
+        ],
+        [
+          "4",
+          "1. Ácidos Biliares Totais Séricos (O Biomarcador Diagnóstico e Prognóstico Padrão-Ouro):"
+        ],
+        [
+          "p",
+          "A dosagem dos <strong>ácidos biliares totais séricos colhidos preferencialmente em jejum</strong> é o exame laboratorial central obrigatório. Considera-se <strong>diagnóstico de CIHG um nível sérico de ácidos biliares totais &ge; 10 micromol/L (ou &ge; 14 micromol/L em certos ensaios analíticos)</strong>."
+        ],
+        [
+          "p",
+          "De acordo com o Consenso do <em>Royal College of Obstetricians and Gynaecologists</em> (RCOG - Green-top Guideline nº 43), da <em>Society for Maternal-Fetal Medicine</em> (SMFM - 2021) e da FEBRASGO, a gestante com CIHG deve ser <strong>estratificada com base no pico máximo sérico de ácidos biliares atingido</strong> em três faixas de gravidade:"
+        ],
+        [
+          "t",
+          [
+            "Estratificação de Gravidade",
+            "Concentração Máxima de Ácidos Biliares Totais",
+            "Incidência Relativa",
+            "Risco Perinatal Associado",
+            "Idade Gestacional Recomendada para Resolução do Parto"
+          ],
+          [
+            [
+              "<strong>CIHG Leve</strong>",
+              "<strong>10 a 39 micromol/L</strong>",
+              "60% a 70% dos casos",
+              "Risco de óbito fetal intrauterino semelhante ao da população obstétrica geral de baixo risco (&lt; 0,13% a 0,28%). Baixo risco de mecônio.",
+              "Parto planejado entre <strong>38 e 39 semanas</strong> de gestação."
+            ],
+            [
+              "<strong>CIHG Moderada</strong>",
+              "<strong>40 a 99 micromol/L</strong>",
+              "20% a 25% dos casos",
+              "Risco intermediário e aumentado de prematuridade espontânea (trabalho de parto prematuro) e eliminação intraútero de mecônio. Risco de óbito fetal ligeiramente aumentado (~0,3% a 0,4%).",
+              "Parto planejado entre <strong>36 e 38 semanas</strong> de gestação."
+            ],
+            [
+              "<strong>CIHG Grave (Alto Risco)</strong>",
+              "<strong>&ge; 100 micromol/L</strong>",
+              "10% a 15% dos casos",
+              "<strong>RISCO DRAMÁTICO E EXPONENCIAL DE ÓBITO FETAL SÚBITO (risco atinge 3,4% a 7% após 36 semanas)</strong>, alta incidência de mecônio espesso (até 40%), arritmias fetais intrauterinas graves e asfixia perinatal.",
+              "<strong>Resolução do parto estritamente indicada com 35 a 36 semanas</strong> (não ultrapassar 36 semanas completas!)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "2. Outros Parâmetros Bioquímicos Hepáticos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Aminotransferases (ALT e AST):</strong> As transaminases hepáticas encontram-se elevadas em até <strong>60% a 85% das pacientes</strong>. A Alanina Aminotransferase (ALT/TGP) é mais sensível e costuma elevar-se precocemente, com valores oscilando habitualmente entre 2 a 10 vezes o limite superior da normalidade (raramente ultrapassam 500 U/L). Em algumas gestantes, a elevação das transaminases pode preceder em semanas o aumento dos ácidos biliares;",
+            "<strong>Fosfatase Alcalina (FA):</strong> Apresenta-se fisiologicamente elevada no terceiro trimestre da gravidez devido à produção maciça da <strong>isoenzima placentária fetal da fosfatase alcalina</strong>, perdendo especificidade diagnóstica na CIHG;",
+            "<strong>Gama-Glutamiltransferase (GGT):</strong> Na maioria dos casos clássicos de CIHG, a GGT encontra-se <strong>normal ou apenas discretamente elevada</strong>. Uma elevação expressiva da GGT (&gt; 2-3 vezes o normal) é indicativa da presença de mutação patogênica no gene <em>ABCB4 (MDR3)</em>;",
+            "<strong>Bilirrubinas:</strong> Encontram-se normais em até 75% a 90% dos casos. Quando elevadas, trata-se de hiperbilirrubinemia mista com predomínio direto, raramente ultrapassando 4 a 6 mg/dL;",
+            "<strong>Coagulograma (Tempo de Protrombina - TP):</strong> Permanece estritamente normal na imensa maioria das pacientes. Contudo, em casos raros de colestase grave prolongada com esteatorreia severa, pode haver <strong>má absorção gastrointestinal de vitaminas lipossolúveis (A, D, E e K)</strong> por ausência de micelas biliares duodenais. A deficiência de vitamina K pode acarretar alargamento do TP/INR, gerando risco aumentado de hemorragia pós-parto materna caso não corrigida com vitamina K1 parenteral antes do parto."
+          ]
+        ]
+      ]
+    ],
+    [
+      "riscos-materno-fetais-e-fisiopatologia-do-obito-fetal-subito",
+      0,
+      [
+        [
+          "2",
+          "3. Riscos Materno-Fetais: Fisiopatologia do Óbito Fetal Súbito, Líquido Meconial e Prematuridade"
+        ],
+        [
+          "3",
+          "3.1 O Paradoxo da CIHG: Mãe Pouco Acometida vs Risco Letal Fetal"
+        ],
+        [
+          "p",
+          "O aspecto mais angustiante e desafiador da colestase intra-hepática da gestação é a profunda <strong>dissociação clínico-prognóstica materno-fetal</strong>: enquanto a gestante sofre principalmente com o incômodo físico e o estresse psicológico do prurido crônico (sem risco de cirrose, falência hepática ou morte materna), o feto intrauterino encontra-se sob ameaça constante de <strong>morte súbita e imprevisível</strong>. Além disso, as ferramentas convencionais de avaliação da vitalidade fetal intrauterina (como a cardiotocografia anteparto basal e o perfil biofísico fetal) falham frequentemente em predizer a catástrofe: é comum um feto com perfil biofísico 10/10 ou cardiotocografia perfeitamente reativa evoluir para o óbito poucas horas após o exame."
+        ],
+        [
+          "3",
+          "3.2 Fisiopatologia Molecular do Óbito Fetal Intrauterino Súbito"
+        ],
+        [
+          "p",
+          "Estudos translacionais e modelos fisiopatológicos experimentais (especialmente os conduzidos por Catherine Williamson e Peter Dixon) desvendaram os três mecanismos moleculares que explicam a letalidade fetal provocada pelo acúmulo transplacentário de ácidos biliares:"
+        ],
+        [
+          "4",
+          "1. Sobrecarga Miocárdica de Taurocolato e Arritmias Cardíacas Fetais Letais:"
+        ],
+        [
+          "p",
+          "Na circulação fetal normal, o fígado imaturo não consegue depurar adequadamente os ácidos biliares, dependendo quase que exclusivamente da placenta para transportá-los de volta para a circulação materna através de carreadores transmembrana. Na CIHG grave, o gradiente de concentração materno-fetal inverte-se: <strong>os ácidos biliares maternos atravessam massivamente a placenta, acumulando-se no plasma e nos tecidos fetais em concentrações tóxicas</strong>."
+        ],
+        [
+          "p",
+          "O <strong>ácido taurocólico (taurocolato)</strong> exerce toxicidade eletrofisiológica direta devastadora sobre os cardiomiócitos fetais:"
+        ],
+        [
+          "u",
+          [
+            "Liga-se aos <strong>receptores muscarínicos colinérgicos $M_2$</strong> nas membranas dos miócitos atriais e ventriculares fetais, mimetizando uma hiperestimulação vagal intensa;",
+            "Despolariza a membrana celular miocárdica, inibe a corrente de influxo de cálcio tipo L ($I_{Ca,L}$) e provoca <strong>descoordenação na dinâmica de recaptação de cálcio pelo retículo sarcoplasmático</strong> através do receptor de rianodina;",
+            "Isso resulta em desacoplamento mecânico-elétrico, lentificação da condução atrioventricular e deflagração súbita de <strong>arritmias ventriculares malignas fulminantes (fibrilação ventricular ou bloqueio atrioventricular total com assistolia aguda)</strong>. Esse mecanismo arritmogênico explica perfeitamente por que o óbito fetal é instantâneo e não precedido por sofrimento hipóxico crônico detectável na cardiotocografia."
+          ]
+        ],
+        [
+          "4",
+          "2. Vasoespasmo Agudo nos Vasos da Placa Coriônica Placentária:"
+        ],
+        [
+          "p",
+          "Concentrações séricas elevadas de ácidos biliares (especialmente quando ultrapassam o limiar crítico de 40 a 100 micromol/L) estimulam os receptores endoteliais e musculares lisos dos <strong>grandes vasos da placa coriônica e dos cotilédones placentários</strong>.\nOcorre uma resposta contrátil espástica intensa e sustentada da musculatura lisa vascular placentária mediada pela via da Rho-quinase e influxo de cálcio, deflagrando <strong>vasoespasmo agudo fulminante do leito vascular fetal-placentário</strong>. Isso provoca colapso abrupto da perfusão útero-placentária, anóxia fetal aguda e óbito intrauterino em questão de minutos."
+        ],
+        [
+          "4",
+          "3. Aumento da Motilidade do Cólon Fetal e Eliminação Precoce de Mecônio:"
+        ],
+        [
+          "p",
+          "Os ácidos biliares acumulados no feto atuam de forma potente sobre os receptores muscarínicos e purinérgicos do plexo mioentérico do cólon fetal, <strong>acelerando o peristaltismo intestinal e induzindo o relaxamento prematuro do esfíncter anal interno fetal</strong>.\nIsso resulta na <strong>eliminação precoce de mecônio espesso para o líquido amniótico</strong> (incidência de mecônio de até 30% a 40% na CIHG grave), mesmo na completa ausência de acidose respiratória ou asfixia prévia. Se o feto realizar movimentos respiratórios intraútero decorrentes de hipoxemia episódica, aspira o líquido meconial espesso, deflagrando a gravíssima <strong>Síndrome de Aspiração Meconial (SAM)</strong> e hipertensão pulmonar persistente neonatal."
+        ],
+        [
+          "4",
+          "4. Trabalho de Parto Prematuro Espontâneo e Iatrogênico:"
+        ],
+        [
+          "p",
+          "A incidência de trabalho de parto prematuro espontâneo na CIHG é significativamente elevada (atingindo 20% a 30% dos casos não tratados). Os ácidos biliares elevam a sensibilidade miometrial à ocitocina e ativam a expressão de receptores de ocitocina ($OXTR$) e a síntese local de prostaglandina $E_2$ e $F_{2alpha}$ na decídua e membranas corioamnióticas, deflagrando contrações uterinas pré-termo. Concomitantemente, a necessidade médica mandatória de antecipar o parto para prevenir a morte súbita fetal eleva as taxas de prematuridade iatrogênica eletiva."
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial-esteatose-hellp-hepatites-virais",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico Diferencial Aprofundado: Critérios de Swansea na EHAG, Síndrome HELLP e Hepatites"
+        ],
+        [
+          "3",
+          "4.1 O Desafio Clínico do Diagnóstico Diferencial Hepático no 3º Trimestre"
+        ],
+        [
+          "p",
+          "No terceiro trimestre da gestação, a sobreposição de manifestações hepáticas exige raciocínio diagnóstico rápido, estruturado e rigoroso. O obstetra deve saber discriminar com clareza matemática a <strong>Colestase Intra-Hepática da Gestação (CIHG)</strong> de três patologias hepáticas de gravidade dramática e potencialmente letais: a <strong>Esteatose Hepática Aguda da Gestação (EHAG)</strong>, a <strong>Pré-eclâmpsia com Síndrome HELLP</strong> e as <strong>Hepatites Virais Agudas</strong>."
+        ],
+        [
+          "t",
+          [
+            "Critério Clínico / Laboratorial",
+            "Colestase Intra-Hepática da Gestação (CIHG)",
+            "Esteatose Hepática Aguda da Gestação (EHAG)",
+            "Síndrome HELLP (Pré-Eclâmpsia Grave)",
+            "Hepatite Viral Aguda"
+          ],
+          [
+            [
+              "<strong>Sintoma Inicial Predominante</strong>",
+              "<strong>Prurido intenso palmoplantar com piora noturna</strong>. Sem lesões primárias.",
+              "<strong>Náuseas, vômitos incoercíveis, dor epigástrica</strong>, polidipsia/poliúria e astenia profunda.",
+              "<strong>Dor intensa no quadrante superior direito / epigástrio</strong>, cefaleia, escotomas e mal-estar.",
+              "Pródromos virais: febre, anorexia, astenia intensa, mialgia seguidas de icterícia."
+            ],
+            [
+              "<strong>Presença e Tipo de Icterícia</strong>",
+              "Incomum (10-25%), discreta (BT &lt; 5 mg/dL) e tardia.",
+              "<strong>Universal, precoce e progressivamente grave</strong> (BT frequentemente &gt; 5 a 15 mg/dL).",
+              "Rara ou discreta (decorrente de hemólise microangiopática).",
+              "<strong>Marcante e precoce</strong> (icterícia colestática/hepatocelular intensa com colúria e acolia)."
+            ],
+            [
+              "<strong>Pressão Arterial e Proteinúria</strong>",
+              "<strong>Normotensão arterial estrita</strong>; ausência de proteinúria de fita.",
+              "Normotensa ou hipertensão leve em até 50% dos casos; proteinúria variável.",
+              "<strong>Hipertensão arterial sistêmica evidente (&ge; 140/90 mmHg)</strong> associada a proteinúria de 24h.",
+              "Normotensão estrita; sem proteinúria."
+            ],
+            [
+              "<strong>Transaminases (ALT / AST)</strong>",
+              "Discreta a moderada elevação: habitualmente <strong>2 a 10 vezes o limite normal (&lt; 500 U/L)</strong>.",
+              "Elevação moderada a importante: <strong>300 a 1.000 U/L</strong> (raramente ultrapassa 1.000 U/L).",
+              "Elevação importante: <strong>AST e/ou ALT &ge; 70 U/L</strong> (critérios de Tennessee).",
+              "<strong>Elevação astronômica fulminante: tipicamente &gt; 1.000 a 3.000 U/L</strong>."
+            ],
+            [
+              "<strong>Plaquetopenia e Hemólise</strong>",
+              "<strong>Ausentes</strong>: contagem plaquetária e esfregaço de sangue periférico normais.",
+              "Plaquetopenia moderada a grave (&lt; 100.000/mm³); sem hemólise microangiopática franca.",
+              "<strong>Obrigatórias</strong>: Plaquetas &lt; 100.000/mm³; <strong>esquizócitos</strong> em sangue periférico; LDH &ge; 600 U/L.",
+              "Ausentes (plaquetas normais ou levemente reduzidas por hiperesplenismo)."
+            ],
+            [
+              "<strong>Hipoglicemia e Coagulopatia</strong>",
+              "<strong>Ausentes</strong> (glicemia e coagulograma estritamente normais).",
+              "<strong>MARCADORES CARDEAIS PATOGNOMÔNICOS</strong>: <strong>Hipoglicemia severa (&lt; 50-60 mg/dL)</strong>, <strong>alargamento do TP/INR, fibrinogênio &lt; 150 mg/dL e hiperamonemia</strong>.",
+              "Sem hipoglicemia primária; coagulopatia apenas se evoluir para CIVD associada a descolamento de placenta.",
+              "Hipoglicemia e coagulopatia presentes apenas na rara forma de Hepatite Fulminante aguda."
+            ],
+            [
+              "<strong>Ácidos Biliares Totais Séricos</strong>",
+              "<strong>MARCADOR CARDEAL: Elevados (&ge; 10 micromol/L a &gt; 100 micromol/L)</strong>.",
+              "Geralmente elevados devido à falência hepática global, mas não são o foco do diagnóstico.",
+              "Geralmente normais ou discretamente elevados.",
+              "Variáveis (não são o biomarcador primário)."
+            ],
+            [
+              "<strong>Mortalidade Materna e Resolução</strong>",
+              "Mortalidade materna de 0%. Parto eletivo conforme ácidos biliares (36-39 semanas).",
+              "<strong>Altíssima mortalidade materna e fetal (10-20%)</strong>. <strong>Indicação de parto IMEDIATO de emergência</strong> após estabilização clínica.",
+              "Alta morbimortalidade materna. <strong>Indicação de parto de urgência</strong> após estabilização hemodinâmica.",
+              "Mortalidade materna baixa (exceto Hepatite E na gestação que atinge 20% de letalidade). Tratamento suporte."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.2 Os Critérios de Swansea para Esteatose Hepática Aguda da Gestação (EHAG)"
+        ],
+        [
+          "p",
+          "A EHAG decorre do acúmulo microvesicular de triglicerídeos nos hepatócitos maternos, causado por um defeito genético recessivo na enzima da beta-oxidação mitocondrial <strong>LCHAD (Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase)</strong> no feto e na placenta. A mãe heterozigota para a mutação (G1528C) torna-se incapaz de metabolizar os ácidos graxos de cadeia longa sobrecarregados pela unidade fetoplacentária no 3º trimestre."
+        ],
+        [
+          "p",
+          "O diagnóstico padrão-ouro não invasivo é consolidado pelos <strong>Critérios de Swansea</strong>. Exige-se a presença de <strong>pelo menos 6 dos 14 critérios seguintes</strong> na ausência de outra explicação:"
+        ],
+        [
+          "o",
+          [
+            "Vômitos incoercíveis no 3º trimestre;",
+            "Dor abdominal em hipocôndrio direito ou epigástrio;",
+            "Polidipsia / Poliúria (manifestação de diabetes insipidus gestacional associado);",
+            "Encefalopatia hepática aguda (letargia, confusão mental, flapping/asterixis);",
+            "Bilirrubina total sérica &gt; 0,8 mg/dL (14 micromol/L);",
+            "<strong>Hipoglicemia materna (&lt; 72 mg/dL ou &lt; 4 mmol/L) — Achado clássico e de altíssima relevância!</strong>;",
+            "Elevação de Ureia sérica (&gt; 340 micromol/L);",
+            "Leucocitose neutrofílica marcante (&gt; 11.000/mm³);",
+            "Ascite ou líquido livre peri-hepático na ultrassonografia de abdome;",
+            "Transaminases (ALT ou AST) elevadas (&gt; 42 U/L);",
+            "Hiperamonemia sérica (&gt; 47 micromol/L);",
+            "Disfunção Renal Aguda (Creatinina &gt; 1,7 mg/dL ou 150 micromol/L);",
+            "<strong>Coagulopatia: Tempo de Protrombina alargado (&gt; 14 segundos) ou INR &gt; 1,5</strong>;",
+            "Esteatose microvesicular demonstrada em biópsia hepática (raramente necessária)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-farmacologico-udca-mecanismos-e-posologia",
+      0,
+      [
+        [
+          "2",
+          "5. Tratamento Farmacológico de Escolha: Ácido Ursodesoxicólico (UDCA), Mecanismos Moleculares e Terapias Adjuvantes"
+        ],
+        [
+          "3",
+          "5.1 O Ácido Ursodesoxicólico (UDCA): O Padrão-Ouro Indiscutível"
+        ],
+        [
+          "p",
+          "O <strong>Ácido Ursodesoxicólico (UDCA - Ursodiol)</strong> é um ácido biliar secundário hidrofílico natural, presente fisiologicamente em concentrações mínimas (cerca de 1% a 3%) no pool biliar humano. Ele é o <strong>fármaco de PRIMEIRA LINHA absoluto e padrão-ouro mundial para o tratamento da Colestase Intra-Hepática da Gestação</strong>, recomendado com unanimidade pelas diretrizes da FEBRASGO, da <em>Society for Maternal-Fetal Medicine</em> (SMFM), do <em>Royal College of Obstetricians and Gynaecologists</em> (RCOG) e da <em>European Association for the Study of the Liver</em> (EASL)."
+        ],
+        [
+          "4",
+          "Mecanismos Moleculares de Ação do UDCA na Gestante e no Feto:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Substituição do Pool de Ácidos Biliares Citotóxicos:</strong> A administração exógena oral de UDCA enriquece o pool de ácidos biliares circulantes, competindo com os ácidos biliares hidrofóbicos endógenos altamente citotóxicos e detergentes (como o ácido litocólico, ácido desoxicólico e ácido quenodesoxicólico). O UDCA converte o pool biliar tóxico em uma composição hidrofílica não lesiva;",
+            "<strong>Estímulo Transcricional e Pós-Transcricional da Excreção Biliar:</strong> O UDCA ativa vias de sinalização intracelular mediadas por quinases (MAPK e PKC-alfa), promovendo a <strong>inserção direta de vesículas citoplasmáticas contendo os transportadores canaliculares BSEP (ABCB11), MRP2 (ABCC2) e MDR3 (ABCB4) na membrana apical hepatocitária</strong>. Isso restaura a capacidade secretora dos hepatócitos e diminui o refluxo de bile para os sinusoides hepáticos;",
+            "<strong>Proteção Hepatocitária Anti-Apoptótica:</strong> Inibe a translocação mitocondrial da proteína pró-apoptótica Bax, impedindo a abertura dos poros de transição de permeabilidade mitocondrial e bloqueando a liberação de citocromo C no citoplasma dos hepatócitos maternos e trofoblastos placentários;",
+            "<strong>Estímulo ao Transporte Feto-Materno Transplacentário:</strong> O UDCA restaura a expressão dos transportadores placentários de efluxo (como o OATP4A1 e MRP1), <strong>facilitando a transferência e o clearence ativo de ácidos biliares tóxicos acumulados no feto de volta para a circulação materna</strong>, diminuindo diretamente a sobrecarga de taurocolato no miocárdio fetal."
+          ]
+        ],
+        [
+          "4",
+          "Posologia e Monitorização Clínica do UDCA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dose Padrão Recomendada:</strong> <strong>10 a 15 mg/kg/dia por via oral</strong>, divididos em 2 a 3 tomadas diárias junto às principais refeições (habitualmente administrado na dose de <strong>300 mg duas a três vezes ao dia</strong>, ou 500 mg duas vezes ao dia, podendo ser titulada até a dose máxima de 20 a 25 mg/kg/dia em casos refratários com prurido grave);",
+            "<strong>Perfil de Segurança Fetal e Materna:</strong> Excelente perfil de tolerabilidade e <strong>segurança fetal comprovada</strong> ao longo de décadas de uso clínico no 2º e 3º trimestres da gestação. Não há relatos de toxicidade embrionária ou efeito teratogênico adverso. O efeito colateral materno mais comum é a diarreia osmótica transitória leve autolimitada (em 5% das pacientes);",
+            "<strong>Eficácia Clínica e Laboratorial:</strong> Alivia expressivamente o prurido materno em mais de 75% a 85% das gestantes tratadas em 1 a 2 semanas, além de promover redução sustentada de 40% a 60% nas concentrações séricas de ácidos biliares e transaminases hepáticas;",
+            "<strong>A Controvérsia do Estudo PITCHES (The Lancet, 2019):</strong> O megaensaio clínico randomizado placebo-controlado PITCHES avaliou o UDCA na CIHG e concluiu que, embora o UDCA reduza significativamente os parâmetros laboratoriais maternos e alivie o prurido, ele não demonstrou redução estatisticamente significativa no desfecho composto perinatal adverso (morte perinatal, parto prematuro ou admissão em UTI neonatal) quando analisada a coorte geral heterogênea. Contudo, subanálises posteriores demonstraram que o benefício perinatal é evidente e protetor no subgrupo de <strong>gestantes de alto risco com ácidos biliares &ge; 40 a 100 micromol/L</strong>. Por essa razão, todas as sociedades obstétricas mundiais continuam recomendando formalmente o UDCA como o fármaco padrão-ouro."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Fármacos Adjuvantes e de Segunda Linha"
+        ],
+        [
+          "p",
+          "Em gestantes que persistem com prurido intolerável ou que não toleram doses elevadas de UDCA:"
+        ],
+        [
+          "t",
+          [
+            "Fármaco",
+            "Mecanismo e Posologia",
+            "Indicação / Utilidade Clínica",
+            "Limitações e Efeitos Adversos"
+          ],
+          [
+            [
+              "<strong>Rifampicina</strong>",
+              "Indutor potente do receptor nuclear PXR (<em>Pregnane X Receptor</em>) e do complexo microssomal hepático CYP3A4, estimulando a glicuronidação e excreção biliar alternativa de ácidos biliares.<br><em>Dose:</em> 150 a 300 mg VO 2x/dia (máx: 600 mg/dia).",
+              "<strong>Droga adjuvante de segunda linha de escolha</strong> em combinação com o UDCA em casos graves refratários com ácidos biliares &ge; 100 micromol/L.",
+              "Pode causar <strong>hepatotoxicidade medicamentosa paradoxal</strong> (exige monitorização semanal estrita de ALT/AST). Urina e lágrimas com coloração alaranjada avermelhada inócua."
+            ],
+            [
+              "<strong>S-Adenosil-L-Metionina (SAMe)</strong>",
+              "Doador de grupos metil para fosfatidilcolina, melhorando a fluidez da membrana hepatocitária canalicular.<br><em>Dose:</em> 500 mg IV 2x/dia ou 1.000 mg VO/dia.",
+              "Pode ser utilizado em associação com UDCA, com eficácia terapêutica sinérgica discreta no prurido.",
+              "Eficácia inferior ao UDCA em monoterapia; custo elevado e disponibilidade limitada no Brasil."
+            ],
+            [
+              "<strong>Colestiramina</strong>",
+              "Resina de troca iônica que sequestra ácidos biliares na luz intestinal, impedindo sua reabsorção entero-hepática.<br><em>Dose:</em> 4 a 16 g/dia VO fracionados.",
+              "<strong>QUASE TOTALMENTE ABANDONADA NA PRÁTICA MODERNA</strong>.",
+              "Sabor desagradável, constipação severa.<br><strong>RISCO GRAVE NAS BANCAS:</strong> Sequestra e <strong>impede a absorção de vitaminas lipossolúveis (A, D, E e K)</strong>, agravando drasticamente a deficiência de vitamina K materna e precipitando <strong>hemorragia pós-parto fatal por atonia e coagulopatia</strong>! Se usada, exige reposição de vitamina K parenteral."
+            ],
+            [
+              "<strong>Anti-histamínicos Orais</strong><br>(Clorfeniramina, Hidroxizina)",
+              "Bloqueio dos receptores H1 de histamina periféricos e centrais.",
+              "Úteis <strong>exclusivamente pelo efeito sedativo central noturno</strong>, facilitando o sono da gestante que não dorme pelo prurido.",
+              "<strong>Completamente ineficazes para tratar o prurido colestático propriamente dito</strong> (pois o prurido da CIHG não é mediado por histamina, mas por autotaxina/LPA)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "monitoramento-fetal-e-momento-do-parto-estratificado-por-acidos-biliares",
+      0,
+      [
+        [
+          "2",
+          "6. Vigilância da Vitalidade Fetal e Momento Oportuno da Resolução da Gestação Estratificada por Ácidos Biliares"
+        ],
+        [
+          "3",
+          "6.1 Protocolo de Vigilância Fetal Anteparto e suas Limitações"
+        ],
+        [
+          "p",
+          "O monitoramento da vitalidade fetal anteparto é um componente obrigatório do protocolo assistencial na CIHG, mas o médico deve estar plenamente consciente das suas limitações intrínsecas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Cardiotocografia (CTG) Basal Anteparto:</strong> Recomenda-se a realização de cardiotocografia semanal a partir do momento do diagnóstico e duas vezes por semana nas gestantes com ácidos biliares &ge; 40 micromol/L. O padrão habitual é normal até momentos antes da catástrofe; contudo, desacelerações variáveis atípicas, taquicardia fetal persistente (&gt; 160 bpm) ou perda abrupta da variabilidade batimento a batimento são sinais de alarme extremo para intervenção imediata;",
+            "<strong>Perfil Biofísico Fetal (PBF) e Avaliação do Volume de Líquido Amniótico:</strong> Avaliação semanal com ultrassonografia. A presença de oligo-hidrâmnio (Índice de Líquido Amniótico - ILA &lt; 5 cm ou maior bolsão vertical &lt; 2 cm) é incomum na CIHG, mas se presente sugere insuficiência placentária sobreposta;",
+            "<strong>Dopplerfluxometria Útero-Placentária e Fetal (Artéria Umbilical e Cerebral Média):</strong> <strong>A dopplerfluxometria da artéria umbilical é tipicamente NORMAL na CIHG pura!</strong> Isso ocorre porque a CIHG não é uma doença da placentação de 1º trimestre (como a pré-eclâmpsia ou restrição de crescimento fetal), mas um evento metabólico agudo arritmogênico do 3º trimestre. Portanto, <strong>um Doppler umbilical com resistência normal e fluxo diastólico preservado NÃO garante segurança contra o óbito fetal súbito</strong>!"
+          ]
+        ],
+        [
+          "3",
+          "6.2 Momento da Resolução da Gestação: O Algoritmo Baseado em Evidências"
+        ],
+        [
+          "p",
+          "A única intervenção definitiva comprovada capaz de <strong>eliminar categoricamente o risco de óbito fetal intrauterino é a resolução do parto</strong>. Por outro lado, a interrupção prematura excessiva impõe os riscos graves da morbidade respiratória neonatal (doença da membrana hialina, taquipneia transitória) e internação em UTI neonatal. A decisão da idade gestacional ideal do parto baseia-se no equilíbrio matemático entre esses dois riscos, guiado pelo <strong>pico máximo documentado de ácidos biliares totais maternos</strong> (diretrizes SMFM/RCOG/FEBRASGO):"
+        ],
+        [
+          "4",
+          "1. Ácidos Biliares Totais Séricos &ge; 100 micromol/L (CIHG Grave):"
+        ],
+        [
+          "p",
+          "<blockquote>\n<strong>REGRA DE CONDUTA MANDATÓRIA:</strong><br>\nO risco de óbito fetal súbito eleva-se dramaticamente a partir da 36ª semana. O parto planejado (indução do parto ou cesariana se contraindicação obstétrica) deve ser realizado <strong>com 35 semanas completas a no máximo 36 semanas e 0 dias de gestação</strong>.<br>\nRecomenda-se a realização de corticoterapia antenatal para aceleração da maturidade pulmonar fetal (Betametasona 12 mg IM em duas doses com intervalo de 24 horas) se o parto for programado antes de 37 semanas, conforme os protocolos do serviço.\n</blockquote>"
+        ],
+        [
+          "4",
+          "2. Ácidos Biliares Totais Séricos entre 40 e 99 micromol/L (CIHG Moderada):"
+        ],
+        [
+          "p",
+          "O risco de óbito fetal é intermediário. Recomenda-se a resolução da gestação entre <strong>36 semanas e 0 dias e 38 semanas e 6 dias</strong> (habitualmente com 37 semanas completas), ponderando-se a resposta sintomática e laboratorial ao UDCA e os antecedentes obstétricos da paciente."
+        ],
+        [
+          "4",
+          "3. Ácidos Biliares Totais Séricos entre 10 e 39 micromol/L (CIHG Leve):"
+        ],
+        [
+          "p",
+          "O risco de óbito fetal súbito é comparável ao de gestantes de baixo risco geral. Não há indicação de parto prematuro iatrogênico. A gestação pode ser conduzida de forma segura até o termo, programando-se a resolução entre <strong>38 semanas e 0 dias e 39 semanas e 6 dias</strong> (nunca ultrapassando 40 semanas completas)."
+        ],
+        [
+          "4",
+          "Via de Parto e Cuidados Intraparto:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A CIHG NÃO É INDICAÇÃO DE CESARIANA ELETIVA!</strong> A via de parto é de indicação puramente obstétrica. A <strong>indução farmacológica do parto vaginal</strong> (com misoprostol se colo desfavorável ou ocitocina com sonda de Foley se colo favorável) é a conduta padrão de escolha, com taxas de sucesso semelhantes às de outras gestantes;",
+            "<strong>Monitorização Contínua Intraparto:</strong> Cardiotocografia contínua intraparto é estritamente recomendada durante todo o trabalho de parto devido à alta incidência de líquido meconial espesso e compressão de cordão ou arritmias induzidas por contrações uterinas;",
+            "<strong>Vigilância da Coagulopatia e Vitamina K:</strong> Se o tempo de protrombina (TP/INR) estiver alargado por má absorção colestática de vitamina K, administrar <strong>Fitomenadiona (Vitamina K1) 10 mg IV lento</strong> antes do trabalho de parto para prevenir atonia e hemorragia puerperal;",
+            "<strong>Seguimento Puerperal Padrão:</strong> O prurido desaparece espetacularmente em 48 a 72 horas após o parto. A dosagem confirmatória de ácidos biliares totais e transaminases deve ser repetida <strong>6 a 8 semanas pós-parto</strong> para comprovar a normalização total. Se as enzimas persistirem alteradas após 3 meses, encaminhar a paciente para propedêutica hepatológica especializada (investigar colangite esclerosante primária, cirrose biliar primária ou mutações crônicas em ABCB4)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-integrados-colestase-intra-hepatica",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Integrados com Raciocínio Diagnóstico e Decisões Obstétricas Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Gestante no 3º Trimestre com Prurido Palmoplantar Grave e Ácidos Biliares &ge; 100 micromol/L"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História Clínica:</strong> Primigesta de 29 anos, com 34 semanas e 2 dias de gestação por ecografia de 1º trimestre, previamente hígida, procura o pronto atendimento obstétrico de hospital terciário queixando-se de prurido cutâneo intenso e generalizado há 10 dias. Relata que a coceira começou nas palmas das mãos e plantas dos pés, estendendo-se para as pernas e abdome, piorando dramaticamente durante a noite (\"passo as madrugadas em claro me coçando, não consigo pregar os olhos\"). Não refere febre, náuseas, vômitos ou dor abdominal. Não fez uso de medicamentos recentes exceto sulfato ferroso e ácido fólico."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong>\nGeral: Paciente visivelmente exausta e angustiada pela privação do sono; anictérica, hidratada, acianótica.\nSinais Vitais: PA: 115/75 mmHg; FC: 82 bpm; Tax: 36,5°C.\nExame Dermatológico: Ausência total de lesões cutâneas primárias (sem pápulas, sem vesículas, sem placas eritematosas). Presença de <strong>múltiplas escoriações lineares secundárias com crostas hemáticas nos antebraços, coxas e região palmoplantar</strong> decorrentes de atrito ungueal vigoroso.\nExame Obstétrico: Fundo uterino compatível com a idade gestacional (33 cm); dinâmica uterina ausente; batimentos cardiofetais (BCF): 144 bpm rítmicos.\nCardiotocografia (CTG) de Admissão: Linha de base de 145 bpm, variabilidade normal (10 a 15 bpm), com 2 acelerações transitórias em 20 minutos e ausência de desacelerações (traçado Categoria I de Green / Reativo)."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais de Urgência:</strong>\n- <strong>Ácidos Biliares Totais Séricos: 118 micromol/L</strong> (Valor de referência &lt; 10 micromol/L);\n- TGO / AST: 142 U/L (VR &lt; 35 U/L);\n- TGP / ALT: 215 U/L (VR &lt; 35 U/L);\n- Bilirrubina Total: 1,8 mg/dL (Bilirrubina Direta = 1,4 mg/dL);\n- Gama-GT: 28 U/L (normal);\n- Fosfatase Alcalina: 290 U/L (compatível com terceiro trimestre);\n- Coagulograma: TP/INR = 1,0; Plaquetas = 245.000/mm³; Fibrinogênio = 420 mg/dL;\n- Sorologias para Hepatites Virais (A, B, C): Todas não reagentes;\n- Ultrassonografia de Abdome Superior: Fígado com ecotextura homogênea, sem esteatose e sem dilatação de vias biliares intra ou extra-hepáticas; vesícula biliar de paredes finas sem cálculos."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Diagnóstico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Nosológico e Estratificação:</strong> Colestase Intra-Hepática da Gestação (CIHG) de <strong>GRAU GRAVE (Ácidos Biliares Totais &ge; 100 micromol/L)</strong>;",
+            "<strong>Avaliação de Risco Fetal Crítico:</strong> Com ácidos biliares em 118 micromol/L, o feto encontra-se sob risco exponencial de toxicidade cardíaca direta (arritmias letais induzidas por taurocolato) e vasoespasmo dos vasos coriônicos placentários, com taxa de óbito fetal súbito que atinge até 7% a partir de 36 semanas. A cardiotocografia reativa (Categoria I) traz tranquilidade apenas momentânea, pois o óbito pode ocorrer de forma fulminante em horas sem sofrimento prévio crônico."
+          ]
+        ],
+        [
+          "4",
+          "Plano Terapêutico e Decisões Obstétricas Passo a Passo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Início Imediato da Farmacoterapia Padrão-Ouro:</strong>\n    <ul>\n      <li>Prescrever <strong>Ácido Ursodesoxicólico (UDCA) na dose de 15 mg/kg/dia por via oral</strong> (peso: 68 kg = ~1.000 mg/dia, prescrito como 500 mg VO de 12 em 12 horas junto às refeições);",
+            "Prescrever Hidroxizina 25 mg VO à noite para sedação noturna e alívio da insônia;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>2. Corticoterapia Antenatal para Maturação Pulmonar:</strong> Como o parto será planejado com 35 a 36 semanas completas, administrar <strong>Betametasona 12 mg IM uma vez ao dia por dois dias consecutivos</strong> (duas doses com intervalo de 24h) entre 34 e 35 semanas;</li>\n  <li><strong>3. Monitoramento Fetal Rigoroso:</strong> Cardiotocografia duas vezes por semana e perfil biofísico fetal semanal;</li>\n  <li><strong>4. Programação e Momento da Resolução da Gestação:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Conforme o protocolo do SMFM/RCOG/FEBRASGO para ácidos biliares &ge; 100 micromol/L, <strong>o parto foi agendado para exatamente 35 semanas e 5 dias de gestação</strong>;",
+            "Como o colo uterino apresentava índice de Bishop = 3 (desfavorável), foi realizada maturação cervical com sonda de Foley transcervical associada a ocitocina intravenosa;",
+            "Evoluiu para <strong>parto vaginal eutócico assistido</strong> com 36 semanas. Na amniorrexe artificial com 6 cm de dilatação, visualizou-se líquido amniótico meconial espesso (confirmando a hiperestimulação colônica fecal induzida pelos ácidos biliares);",
+            "Recém-nascido nasceu vigoroso, chorando ao nascer, com índice de Apgar 8/9 e peso de 2.620 g, recebendo suporte em alojamento conjunto;",
+            "A paciente apresentou alívio total do prurido no 3º dia pós-parto; os ácidos biliares repetidos com 6 semanas de puerpério normalizaram para 4,2 micromol/L e as transaminases normalizaram por completo."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Diagnóstico Diferencial Crítico entre CIHG e Esteatose Hepática Aguda da Gestação (Critérios de Swansea)"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Tercigesta de 33 anos, com 35 semanas de gestação, é admitida na emergência obstétrica com queixa de náuseas, anorexia, astenia extrema e vômitos repetidos há 6 dias. Refere também dor em peso contínua no quadrante superior direito do abdome e sede excessiva com micção muito frequente (polidipsia e poliúria). Há 2 dias, os familiares notaram que seus olhos tornaram-se intensamente amarelados e ela apresentou episódios de lentidão para responder e confusão temporal."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong>\nGeral: Paciente sonolenta, desorientada no tempo, <strong>intensamente ictérica (icterícia escleral e cutânea franca 3+/4+)</strong>, desidratada; sem prurido prévio relevante.\nSinais Vitais: PA: 130/80 mmHg; FC: 106 bpm; Tax: 36,8°C.\nNeurológico: Escala de Coma de Glasgow = 13 (abertura ocular espontânea, respostas confusas, obedece a comandos); ao solicitar que estenda os punhos com dorsiflexão, observa-se <strong>presença de batimentos oscilatórios involuntários típicos de Flapping / Asterixis (Encefalopatia Hepática Grau II)</strong>.\nAbdome: Fígado doloroso à palpação profunda em hipocôndrio direito, com espaço de Traube livre; presença de sinal do piparote positivo demonstrando ascite volumosa."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais de Urgência:</strong>\n- <strong>Glicemia de Jejum / Capilar: 44 mg/dL (HIPOGLICEMIA SEVERA)</strong>;\n- Coagulograma: <strong>Tempo de Protrombina alargado com INR = 2,4</strong>; Fibrinogênio = 95 mg/dL (gravemente consumido);\n- TGO / AST: 540 U/L; TGP / ALT: 620 U/L;\n- Bilirrubina Total: 14,8 mg/dL (Bilirrubina Direta = 11,2 mg/dL);\n- Ureia: 88 mg/dL; <strong>Creatinina: 2,4 mg/dL (Insuficiência Renal Aguda franca)</strong>;\n- Hemograma: Leucócitos = 22.400/mm³ (neutrofilia acentuada sem desvio à esquerda infeccioso); Plaquetas = 78.000/mm³;\n- Amônia Sérica: 92 micromol/L (hiperamonemia moderada a grave);\n- Ácidos Biliares Totais Séricos: 45 micromol/L;\n- Ácido Úrico: 9,8 mg/dL."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Aplicação dos Critérios de Swansea:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diferenciação Sumária com a CIHG:</strong> A CIHG não causa vômitos severos, não causa dor abdominal intensa, não gera ascite, não causa icterícia com bilirrubina &gt; 10 mg/dL, não cursa com hipoglicemia e JAMAIS causa coagulopatia ou encefalopatia hepática com flapping. Rotular essa paciente como portadora de CIHG seria um erro médico trágico e fatal;",
+            "<strong>Avaliação dos Critérios de Swansea para Esteatose Hepática Aguda da Gestação (EHAG):</strong>\n    A paciente preenche <strong>10 critérios de Swansea</strong>: (1) Vômitos, (2) Dor abdominal em hipocôndrio direito, (3) Polidipsia/Poliúria, (4) Encefalopatia hepática/Flapping, (5) Bilirrubina &gt; 0,8 mg/dL, (6) <strong>Hipoglicemia &lt; 72 mg/dL</strong>, (7) Ureia elevada, (8) Leucocitose &gt; 11.000/mm³, (9) Disfunção renal com creatinina &gt; 1,7 mg/dL, (10) <strong>Coagulopatia com INR &gt; 1,5</strong> e Fibrinogênio baixo. O diagnóstico de <strong>EHAG (Insuficiência Hepática Fulminante Específica da Gravidez)</strong> é categórico e inquestionável."
+          ]
+        ],
+        [
+          "4",
+          "Conduta Médica Imediata e Emergencial:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Estabilização Metabólica e Hemoterápica na UTI:</strong>\n    <ul>\n      <li>Correção imediata da hipoglicemia severa com <strong>infusão contínua de Glicose a 10% em bomba de infusão</strong> com glicemia capilar horária (alvo &gt; 100 mg/dL), visto que a gliconeogênese hepática e a glicogenólise estão zeradas pelo colapso mitocondrial;",
+            "Transfusão de <strong>Plasma Fresco Congelado (PFC)</strong> e Crioprecipitado para correção da coagulopatia de consumo antes de qualquer procedimento cirúrgico (alvo: INR &lt; 1,5 e Fibrinogênio &gt; 150 mg/dL);"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>2. RESOLUÇÃO IMEDIATA DA GESTAÇÃO:</strong> O único tratamento etiológico definitivo que interrompe a produção trofoblástica dos metabólitos graxos tóxicos da LCHAD fetal é o <strong>PARTO DE URGÊNCIA</strong>. A gestação deve ser interrompida em poucas horas após estabilização hemodinâmica e hemostática mínima;</li>\n  <li><strong>3. Desfecho:</strong> Foi realizada cesariana de urgência sob anestesia geral (bloqueio neuroaxial contraindicado pelo INR de 2,4 e plaquetas de 78.000/mm³). O recém-nascido foi encaminhado à UTI neonatal com suporte metabólico específico (pesquisa genética de mutação no gene LCHAD). A mãe permaneceu em suporte intensivo por 6 dias com recuperação progressiva da função hepática, renal e hemostática, recebendo alta hospitalar no 18º dia de puerpério curada.</li>\n</ul>\n\n<hr>"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: CIHG Leve com Prurido Noturno e Resolução no Termo"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Secundigesta de 31 anos (1 parto vaginal anterior saudável), 32 semanas de gestação, relata início de prurido em pés e mãos há 1 semana, predominantemente ao deitar. Nega outros sintomas. Ao exame físico: paciente em excelente estado geral, normotensa (PA: 110/70 mmHg), anictérica, com pequenas escoriações por coçadura em pernas e antebraços."
+        ],
+        [
+          "p",
+          "<strong>Laboratório Inicial:</strong>\n- Ácidos Biliares Totais Séricos: <strong>22 micromol/L</strong> (faixa de CIHG Leve: 10 a 39 micromol/L);\n- ALT / TGP: 74 U/L; AST / TGO: 58 U/L; Bilirrubinas normais; Coagulograma e plaquetas normais."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Manejo Obstétrico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estratificação de Risco:</strong> CIHG Leve. O risco de óbito fetal intrauterino antes de 39 semanas é estatisticamente idêntico ao da população de baixo risco. Não há indicação de parto prematuro iatrogênico nem de corticoterapia para maturação pulmonar;",
+            "<strong>Farmacoterapia:</strong> Iniciar Ácido Ursodesoxicólico (UDCA) 10 mg/kg/dia (300 mg VO de 8 em 8 horas). A paciente relatou melhora de 80% do prurido em 10 dias;",
+            "<strong>Vigilância Seriada:</strong> A dosagem de ácidos biliares totais deve ser repetida a cada 1 a 2 semanas até o parto, pois <strong>até 15% a 20% das gestantes inicialmente leves podem ascender para moderadas (&ge; 40 micromol/L) ou graves (&ge; 100 micromol/L)</strong> conforme a gestação avança e a carga hormonal placentária atinge o zênite;",
+            "<strong>Desfecho e Momento do Parto:</strong> As dosagens subsequentes com 34 e 36 semanas mantiveram ácidos biliares estáveis em 18 a 24 micromol/L. A vitalidade fetal manteve-se preservada com CTG semanal normal. Com <strong>38 semanas e 4 dias</strong>, foi realizada a indução eletiva do parto com ocitocina intravenosa, culminando em parto vaginal fisiológico espontâneo com líquido amniótico claro sem mecônio, recém-nascido a termo pesando 3.340 g, Apgar 9/10, e alta conjunta em 48 horas."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: CIHG Moderada com Líquido Amniótico Meconial e Resolução com 37 Semanas"
+        ],
+        [
+          "p",
+          "<strong>Identificação e História:</strong> Primigesta de 27 anos, gestação de 36 semanas e 1 dia, em acompanhamento por CIHG diagnosticada com 31 semanas em uso de Ácido Ursodesoxicólico 600 mg/dia. O prurido encontrava-se parcialmente controlado. No retorno ambulatorial, a nova dosagem de ácidos biliares totais séricos revelou um valor de <strong>68 micromol/L</strong> (ascensão do nível biliar para a faixa de CIHG Moderada: 40 a 99 micromol/L), com ALT = 180 U/L e AST = 110 U/L."
+        ],
+        [
+          "p",
+          "<strong>Exame Obstétrico e Avaliação de Vitalidade:</strong>\n- PA: 110/70 mmHg; Altura Uterina: 35 cm; BCF: 150 bpm;\n- Cardiotocografia: Traçado Categoria I com desacelerações variáveis leves isoladas não recorrentes;\n- Ultrassonografia com Perfil Biofísico Fetal: PBF = 8/8; Doppler de artéria umbilical normal ($IP = 0,85$, diástole ampla); maior bolsão de líquido amniótico = 4,2 cm (normal)."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Decisão do Momento do Parto:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Estratificação:</strong> CIHG Moderada (pico de ácidos biliares entre 40 e 99 micromol/L). Nessa faixa, os consensos do SMFM e RCOG determinam a resolução da gestação <strong>entre 36 semanas e 0 dias e 38 semanas e 6 dias (idealmente entre 36 e 37 semanas completas)</strong>, devido ao aumento progressivo do risco de mecônio espesso e arritmias fetais;",
+            "<strong>Conduta Obstétrica:</strong> Como a paciente encontrava-se com 36 semanas completas e ácidos biliares em ascensão progressiva (68 micromol/L), foi programada a internação para <strong>indução do trabalho de parto com 37 semanas e 0 dias</strong>;",
+            "<strong>Trabalho de Parto e Cuidados Especiais:</strong>\n    <ul>\n      <li>Indução iniciada com preparo de colo uterino;",
+            "Cardiotocografia contínua durante todo o trabalho de parto;",
+            "Durante a fase ativa (7 cm de dilatação), houve rotura espontânea da bolsa das águas com saída de <strong>líquido amniótico meconial fluido (grau II)</strong>, sem alterações agudas da FCF;",
+            "Evoluiu rapidamente para parto transpélvico assistido com vácuo-extrator por exaustão materna no período expulsivo; recém-nascido a termo vigoroso, sem necessidade de intubação orotraqueal, com recuperação imediata;",
+            "Mãe recebeu fitomenadiona profilática no intraparto e evoluiu sem atonia uterina ou hemorragia pós-parto, com remissão completa do prurido no 2º dia de puerpério."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-colestase-intra-hepatica",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas de Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / USP-SP)"
+        ],
+        [
+          "p",
+          "Primigesta de 30 anos, com 33 semanas de gestação, procura a consulta pré-natal relatando prurido intenso de início há 2 semanas, que começou nas palmas das mãos e plantas dos pés e depois se disseminou pelo corpo, com exacerbação noturna insuportável. Ao exame dermatológico minucioso, não há evidência de pápulas, vesículas ou placas eritematosas, observando-se apenas lesões lineares de escoriação por atrito ungueal nos membros. Pressão arterial: 110/70 mmHg. Exames laboratoriais revelam: Ácidos biliares totais séricos = 48 micromol/L (VR &lt; 10 micromol/L); TGP/ALT = 160 U/L; TGO/AST = 110 U/L; Bilirrubinas e coagulograma normais. Considerando a principal hipótese diagnóstica, assinale o fármaco de primeira escolha para o tratamento e o risco fetal específico associado a essa patologia:"
+        ],
+        [
+          "p",
+          "A) Prednisona oral; risco fetal de fechamento prematuro do canal arterial.<br>\nB) Ácido Ursodesoxicólico (UDCA); risco fetal de óbito fetal intrauterino súbito e eliminação de líquido meconial.<br>\nC) Colestiramina oral; risco fetal de agenesia renal unilateral.<br>\nD) Difenidramina oral; risco fetal de restrição de crescimento intrauterino assimétrica por insuficiência placentária crônica.<br>\nE) Sulfato de magnésio parenteral; risco fetal de hidrocefalia comunicante obstrutiva."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro clínico e laboratorial é o modelo prototípico da <strong>Colestase Intra-Hepática da Gestação (CIHG)</strong>: prurido característico de início no terceiro trimestre com predomínio palmoplantar e exacerbação noturna, sem lesões cutâneas primárias, acompanhado de elevação de ácidos biliares totais (&ge; 10 micromol/L) e transaminases.\n1. <strong>Fármaco de Escolha:</strong> O <strong>Ácido Ursodesoxicólico (UDCA) na dose de 10 a 15 mg/kg/dia</strong> é o padrão-ouro terapêutico indiscutível, capaz de restaurar a secreção biliar hepatocitária, proteger os colangiócitos e reduzir o pool de ácidos biliares hidrofóbicos tóxicos;\n2. <strong>Risco Fetal Específico:</strong> A grande preocupação obstétrica na CIHG não é o sofrimento crônico por insuficiência vascular da placenta (o crescimento fetal e o Doppler de cordão costumam ser normais), mas sim o <strong>ÓBITO FETAL INTRAUTERINO SÚBITO</strong> decorrente de arritmias ventriculares induzidas pela sobrecarga miocárdica de taurocolato e vasoespasmo agudo dos vasos da placa coriônica, além da liberação precoce de mecônio.\nA alternativa A erra, pois corticoterapia não é tratamento da CIHG. A alternativa C erra porque a colestiramina foi abandonada pelo alto risco de má absorção de vitamina K e hemorragia pós-parto materna. A alternativa D cita anti-histamínico, que apenas seda a paciente mas não trata a colestase nem protege o feto."
+        ],
+        [
+          "3",
+          "Questão 2 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Uma gestante de 32 anos, secundigesta, com idade gestacional de 36 semanas confirmada por ultrassonografia precoce, encontra-se em acompanhamento por colestase intra-hepática da gestação grave. O resultado do perfil bioquímico hepático colhido nesta semana revela concentração sérica máxima de ácidos biliares totais de 124 micromol/L. O exame obstétrico revela feto em apresentação cefálica, BCF = 140 bpm, movimentação fetal ativa preservada e cardiotocografia basal anteparto com padrão reativo (Categoria I). De acordo com as diretrizes da Society for Maternal-Fetal Medicine (SMFM) e da FEBRASGO, qual deve ser a conduta obstétrica quanto ao momento e via de resolução da gestação?"
+        ],
+        [
+          "p",
+          "A) Manter acompanhamento clínico ambulatorial semanal com perfil biofísico fetal até que a gestação atinja 40 semanas completas, indicando cesariana eletiva.<br>\nB) Programar a resolução do parto de imediato (entre 35 e 36 semanas completas de gestação), sendo a indução farmacológica do trabalho de parto vaginal a via de escolha na ausência de contraindicações obstétricas.<br>\nC) Aguardar o início espontâneo do trabalho de parto em qualquer idade gestacional, já que a cardiotocografia reativa afasta qualquer perigo de morte fetal.<br>\nD) Indicar cesariana de emergência imediata em menos de 1 hora, pois a colestase intra-hepática constitui contraindicação formal absoluta ao parto transpélvico.<br>\nE) Suspender o ácido ursodesoxicólico e iniciar fenobarbital oral para induzir a maturidade hepática fetal, aguardando 38 semanas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> Na estratificação de gravidade da CIHG, gestantes com <strong>ácidos biliares totais séricos &ge; 100 micromol/L enquadram-se na categoria GRAVE</strong>. Nessa faixa crítica, o risco cumulativo de óbito fetal intrauterino súbito atinge entre 3,4% e 7% a partir de 36 semanas. As diretrizes internacionais e nacionais (SMFM, RCOG, FEBRASGO) são enfáticas: <strong>gestantes com ácidos biliares &ge; 100 micromol/L devem ter o parto resolvido com 35 semanas completas a no máximo 36 semanas e 0 dias</strong>. A cardiotocografia normal não afasta o risco de óbito súbito, pois a parada cardíaca arritmogênica fetal ocorre em minutos sem aviso prévio. Quanto à via de parto: <strong>a CIHG NÃO é indicação de cesariana</strong>; a indução do parto vaginal é perfeitamente indicada e bem-sucedida (alternativa D errada). A alternativa A e C impõem risco inaceitável de morte intrauterina. A alternativa E cita fenobarbital, que é droga arcaica e ineficaz."
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação às bases genéticas e moleculares da Colestase Intra-Hepática da Gestação (CIHG), qual é o transportador canalicular dependente de ATP cuja mutação heterozigota no gene ABCB4 (MDR3) está classicamente associada ao subtipo de colestase que cursa com níveis séricos desproporcionalmente elevados de Gama-Glutamiltransferase (GGT) e risco de microlitíase biliar na gestante?"
+        ],
+        [
+          "p",
+          "A) Flipase de fosfatidilcolina canalicular (MDR3).<br>\nB) Bomba exportadora de sais biliares apical (BSEP / ABCB11).<br>\nC) Transportador de ânions orgânicos e bilirrubina conjugada (MRP2 / ABCC2).<br>\nD) Aminofosfolipídio-translocase de membrana (FIC1 / ATP8B1).<br>\nE) Co-transportador sódio-taurocolato basolateral (NTCP / SLC10A1)."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O gene <strong>ABCB4</strong> codifica a proteína <strong>MDR3 (Multidrug Resistance Protein 3)</strong>, que funciona biologicamente como uma <strong>flipase de fosfatidilcolina (fosfolipídios)</strong> na membrana canalicular apical dos hepatócitos. A fosfatidilcolina excretada na bile é indispensável para formar micelas mistas com os ácidos biliares hidrofóbicos, neutralizando o poder detergente corrosivo da bile. Mutações hipomórficas em <em>ABCB4</em> acarretam excreção deficiente de fosfolipídios, gerando bile citotóxica que agride os colangiócitos dos ductos biliares intra-hepáticos. Essa agressão colangiocitária manifesta-se laboratorialmente por <strong>elevação marcante da enzima Gama-GT (GGT)</strong>, além de predispor à formação de cálculos de colesterol intra-hepáticos e na vesícula (síndrome LPAC). As mutações no gene <em>ABCB11</em> (bomba BSEP - alternativa B) e no gene <em>ATP8B1</em> (FIC1 - alternativa D) cursam caracteristicamente com <strong>GGT normal</strong>. O MRP2 (alternativa C) excreta bilirrubina direta, e o NTCP (alternativa E) situa-se no polo sinusoidal basolateral, não canalicular."
+        ],
+        [
+          "3",
+          "Questão 4 (ENAMED / Residência Médica)"
+        ],
+        [
+          "p",
+          "Uma gestante de 34 semanas dá entrada no pronto-socorro obstétrico com dor epigástrica de forte intensidade, náuseas, vômitos e sonolência. Ao exame: paciente francamente ictérica, confusa, com tremores grosseiros nas mãos em dorsiflexão (flapping/asterixis). Exames laboratoriais revelam: Glicemia = 38 mg/dL; TGO = 650 U/L; TGP = 710 U/L; Bilirrubina Total = 12,5 mg/dL; Tempo de Protrombina alargado com INR = 2,8; Creatinina = 2,1 mg/dL; Plaquetas = 70.000/mm³; Leucócitos = 24.000/mm³. Diante desse quadro clínico e laboratorial, qual é a hipótese diagnóstica primária de acordo com os Critérios de Swansea e qual a conduta imediata mandatória?"
+        ],
+        [
+          "p",
+          "A) Colestase Intra-Hepática da Gestação Leve; iniciar ácido ursodesoxicólico ambulatorial e aguardar 39 semanas.<br>\nB) Esteatose Hepática Aguda da Gestação (EHAG); internar em UTI, corrigir hipoglicemia com glicose a 10% IV, corrigir coagulopatia e proceder à interrupção imediata da gestação.<br>\nC) Hiperêmese gravídica tardia; iniciar doxilamina oral e dieta rica em fibras, liberando para casa.<br>\nD) Síndrome de Gilbert gestacional; hidratação oral com água de coco e repouso no leito.<br>\nE) Coledocolitíase simples; realizar colecistectomia videolaparoscópica de urgência mantendo a gestação até o termo."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O quadro expõe com clareza uma das maiores emergências da obstetrícia moderna: a <strong>Esteatose Hepática Aguda da Gestação (EHAG)</strong>. A paciente apresenta falência hepática fulminante no 3º trimestre evidenciada por <strong>hipoglicemia severa (38 mg/dL), coagulopatia grave (INR = 2,8), encefalopatia hepática com flapping/asterixis, insuficiência renal aguda (Cr = 2,1 mg/dL) e leucocitose exuberante</strong>. Aplicando os <strong>Critérios de Swansea</strong>, a paciente preenche mais de 6 critérios diagnósticos obrigatórios. A mortalidade materna e fetal é altíssima se a gravidez não for interrompida rapidamente. A conduta mandatória imediata é a <strong>estabilização hemodinâmica e metabólica em UTI (infusão de glicose hipertônica a 10% contínua e plasma fresco congelado/crioprecipitado) seguida de RESOLUÇÃO IMEDIATA DA GESTAÇÃO (parto de urgência)</strong>, que é o único tratamento etiológico definitivo. A alternativa A é incorreta (a CIHG nunca causa hipoglicemia, encefalopatia ou coagulopatia grave). A alternativa C é absurda (hiperêmese é doença de primeiro trimestre). As alternativas D e E não justificam a falência multissistêmica."
+        ],
+        [
+          "3",
+          "Questão 5 (Hospital Israelita Albert Einstein / Residência Médica)"
+        ],
+        [
+          "p",
+          "Durante o seguimento de uma paciente com colestase intra-hepática da gestação de início na 30ª semana, o médico residente propõe a prescrição de Colestiramina para o alívio do prurido materno. O preceptor adverte sobre um risco materno grave e potencialmente letal associado ao uso prolongado de colestiramina em gestantes colestáticas. Qual é esse risco e qual o seu mecanismo fisiopatológico?"
+        ],
+        [
+          "p",
+          "A) Ruptura prematura de membranas pré-termo por toxicidade coriônica direta.<br>\nB) Hemorragia pós-parto grave por atonia e coagulopatia materna, decorrente da má absorção intestinal de vitamina K.<br>\nC) Insuficiência renal aguda anúrica por precipitação de cristais de estruvita intratubulares.<br>\nD) Crise tireotóxica aguda por indução da síntese de anticorpos TRAB estimuladores.<br>\nE) Hipercalemia refratária com parada cardíaca em diástole por bloqueio da excreção renal de potássio."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> A colestiramina é uma resina básica de troca iônica não absorvível que se liga aos ácidos biliares na luz intestinal, impedindo sua reabsorção pela circulação entero-hepática. Embora tenha sido usada no passado, <strong>seu uso na gestação é amplamente desencorajado ou proscrito na obstetrícia moderna</strong>. O mecanismo da complicação consiste em: a colestiramina sequestra não apenas ácidos biliares, mas também as <strong>vitaminas lipossolúveis (A, D, E e K)</strong>. Como a paciente colestática já apresenta absorção deficiente de gorduras pela hipocolia intestinal, o uso de colestiramina induz <strong>depleção rápida e profunda de Vitamina K materna</strong>. Sem vitamina K, o fígado não consegue realizar a gama-carboxilação dos fatores de coagulação II, VII, IX e X, provocando <strong>alargamento crítico do Tempo de Protrombina (TP/INR) e deflagrando hemorragia pós-parto materna maciça e catastrófica</strong> no momento do descolamento da placenta. Se a colestiramina for utilizada por extrema exceção, a reposição parenteral de vitamina K1 (fitomenadiona) é mandatória. As alternativas A, C, D e E citam desfechos inexistentes."
+        ],
+        [
+          "3",
+          "Questão 6 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "A respeito da fisiopatologia do sofrimento fetal e óbito intrauterino na Colestase Intra-Hepática da Gestação (CIHG), analise as seguintes afirmativas:"
+        ],
+        [
+          "p",
+          "I. O ácido taurocólico materno atravessa a barreira placentária e atua nos receptores muscarínicos M2 miocárdicos fetais, provocando desacoplamento eletromecânico, arritmias ventriculares graves e parada cardíaca súbita.<br>\nII. Níveis elevados de ácidos biliares induzem contração sustentada e vasoespasmo dos vasos da placa coriônica placentária, reduzindo criticamente o fluxo sanguíneo interviloso fetal.<br>\nIII. A CIHG cursa invariavelmente com insuficiência placentária crônica precoce, manifestada por restrição de crescimento intrauterino (RCIU) grave e alteração na dopplerfluxometria da artéria umbilical com diástole zero ou reversa desde o segundo trimestre.<br>\nIV. Os ácidos biliares estimulam o peristaltismo do cólon fetal e provocam o relaxamento prematuro do esfíncter anal interno, acarretando eliminação precoce de mecônio intraútero."
+        ],
+        [
+          "p",
+          "Estão CORRETAS as afirmativas:"
+        ],
+        [
+          "p",
+          "A) I, II e III, apenas.<br>\nB) I, II e IV, apenas.<br>\nC) II, III e IV, apenas.<br>\nD) I e III, apenas.<br>\nE) I, II, III e IV."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> As afirmativas I, II e IV sintetizam com precisão matemática a fisiopatologia perinatal moderna da CIHG:\n- A afirmativa I é <strong>verdadeira</strong>: o taurocolato transplacentário sobrecarrega o coração fetal, ligando-se a receptores muscarínicos M2 e desregulando a cinética do cálcio no retículo sarcoplasmático, precipitando arritmias letais instantâneas;\n- A afirmativa II é <strong>verdadeira</strong>: o vasoespasmo dos vasos da placa coriônica placentária induzido pelos ácidos biliares gera anóxia aguda súbita;\n- A afirmativa IV é <strong>verdadeira</strong>: os ácidos biliares estimulam o trânsito do intestino grosso fetal, gerando líquido amniótico meconial espesso mesmo em fetos sem asfixia prévia;\n- A afirmativa III é <strong>FALSA</strong>: a CIHG é uma doença metabólica e funcional aguda do 3º trimestre; ela <strong>NÃO decorre de defeito da invasão trofoblástica de 1º trimestre</strong>, não se associa à restrição de crescimento intrauterino (os fetos costumam ter peso normal para a idade gestacional) e <strong>o Doppler de artéria umbilical é tipicamente NORMAL</strong>. Portanto, o Doppler normal não serve como garantia de ausência de risco de óbito súbito."
+        ],
+        [
+          "3",
+          "Questão 7 (SUS-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Gestante de 35 semanas, secundigesta, com diagnóstico de Colestase Intra-Hepática da Gestação confirmada laboratorialmente com ácidos biliares totais séricos de 26 micromol/L (CIHG Leve). Encontra-se assintomática após início de Ácido Ursodesoxicólico em dose adequada. Ao exame: PA: 120/70 mmHg, BCF: 136 bpm, altura uterina: 34 cm. A avaliação da vitalidade fetal por cardiotocografia basal anteparto e ultrassonografia obstétrica com Doppler de artérias umbilicais e cerebrais encontra-se rigorosamente normal. De acordo com as diretrizes da FEBRASGO e do RCOG, a conduta obstétrica mais adequada quanto ao momento do parto é:"
+        ],
+        [
+          "p",
+          "A) Indicar cesariana eletiva imediata com 35 semanas completas para evitar qualquer risco de óbito fetal súbito.<br>\nB) Manter conduta expectante com monitoramento fetal e programar a resolução da gestação entre 38 semanas e 0 dias e 39 semanas e 6 dias.<br>\nC) Suspender o ácido ursodesoxicólico e permitir que a gestação ultrapasse 41 semanas, aguardando início espontâneo do parto sem indução.<br>\nD) Realizar corticoterapia antenatal de emergência e interrupção da gravidez com 36 semanas completas.<br>\nE) Indicar amniocentese para dosagem de bilirrubina no líquido amniótico e interromper se índice de Liley for zona 3."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> Na <strong>CIHG Leve (ácidos biliares totais séricos entre 10 e 39 micromol/L)</strong>, o risco de óbito fetal intrauterino antes de 39 semanas é extremamente baixo (&lt; 0,13% a 0,28%), sendo estatisticamente comparável ao risco basal de gestantes hígidas de baixo risco da população geral. Dessa forma, antecipar o parto antes de 38 semanas expõe desnecessariamente o feto aos riscos e custos da prematuridade iatrogênica (síndrome de angústia respiratória, icterícia neonatal e necessidade de UTI neonatal). As diretrizes da FEBRASGO, RCOG e SMFM recomendam formalmente a <strong>resolução do parto entre 38 semanas e 0 dias e 39 semanas e 6 dias (idealmente com 38-39 semanas)</strong>. A alternativa A e D indicam interrupção prematura iatrogênica sem respaldo em evidências. A alternativa C erra ao propor ultrapassar 41 semanas (gestação em CIHG nunca deve ultrapassar 40 semanas pelo risco cumulativo tardio). A alternativa E cita curva de Liley, que se aplica à isoimunização Rh, não à colestase."
+        ],
+        [
+          "3",
+          "Questão 8 (FMUSP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Puérpera de 28 anos, primípara, deu à luz por parto normal a termo sem intercorrências há 24 horas. Havia sido acompanhada no pré-natal por colestase intra-hepática da gestação diagnosticada com 34 semanas, com pico de ácidos biliares de 54 micromol/L e ALT de 180 U/L, tratada com ácido ursodesoxicólico. No primeiro dia de puerpério na enfermaria de alojamento conjunto, a paciente relata com surpresa que o prurido palmoplantar desapareceu quase por completo. A respeito do seguimento pós-parto e do prognóstico materno na CIHG, qual a orientação CORRETA a ser fornecida à paciente?"
+        ],
+        [
+          "p",
+          "A) O prurido costuma remitir rapidamente após a dequitação placentária; deve-se dosar novamente os ácidos biliares e enzimas hepáticas após 6 a 8 semanas pós-parto para confirmar a cura completa, orientando que o risco de recorrência em futuras gestações é elevado (cerca de 45% a 70%).<br>\nB) A paciente desenvolveu cirrose biliar secundária irreversível e deverá ser mantida em uso vitalício de ácido ursodesoxicólico e imunossupressão com azatioprina.<br>\nC) O desaparecimento do prurido é ilusório e transitório; haverá rebote do prurido com icterícia fulminante em até 30 dias de pós-parto.<br>\nD) A amamentação natural é estritamente contraindicada na colestase pelo risco de passagem de ácidos biliares tóxicos no colostro materno.<br>\nE) A paciente nunca mais poderá utilizar métodos contraceptivos hormonais combinados ou de progesterona isolada pelo risco absoluto de trombose venosa profunda imediata."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado: A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada:</strong> O curso pós-parto da CIHG é notavelmente favorável e confirma a etiologia hormonal placentária da doença: com a saída da placenta (dequitação), os níveis de estrogênio e metabólitos de progesterona despencam vertiginosamente. Consequentemente, <strong>o prurido materno regride e desaparece de forma espetacular em 48 a 72 horas após o parto</strong>.\nPontos-chave da conduta no puerpério:\n1. <strong>Confirmação de Resolução Laboratorial:</strong> As enzimas hepáticas (ALT/AST) e os ácidos biliares totais devem ser <strong>reavaliados entre 6 e 8 semanas pós-parto</strong> para comprovar a normalização completa e descartar hepatopatias crônicas subjacentes desmascaradas pela gravidez;\n2. <strong>Aconselhamento Reprodutivo:</strong> A taxa de recorrência em gestações futuras é extremamente expressiva, situando-se entre <strong>45% e 70% (podendo atingir até 90% em certos grupos)</strong>;\n3. <strong>Amamentação:</strong> O aleitamento materno é <strong>totalmente seguro, incentivado e não apresenta restrições</strong> (alternativa D errada);\n4. <strong>Contracepção:</strong> Métodos de progesterona isolada (implante de etonogestrel, DIU com levonorgestrel, desogestrel) e DIUs não hormonais de cobre/prata são métodos de primeira escolha excelentes e seguros. A alternativa B é falsa, pois a CIHG não causa cirrose nem falência hepática crônica."
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-e-resumo-colestase-intra-hepatica",
+      0,
+      [
+        [
+          "2",
+          "9. Tabela High-Yield de Síntese e Diretrizes de Prática Clínica Baseada em Evidências"
+        ],
+        [
+          "3",
+          "9.1 Matriz de Decisão Clínica Rápida na Colestase Intra-Hepática da Gestação (CIHG)"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro de Avaliação",
+            "Padrão Clássico na CIHG",
+            "Conduta Clínica Baseada em Evidências",
+            "Armadilha Frequente nas Provas de Residência"
+          ],
+          [
+            [
+              "<strong>Quadro Semiológico Inicial</strong>",
+              "<strong>Prurido intenso palmoplantar com acentuação noturna</strong>.",
+              "Investigação laboratorial com Ácidos Biliares Totais e perfil hepático completo.",
+              "<strong>AUSÊNCIA de lesões cutâneas primárias</strong> (apenas escoriações por coçadura)."
+            ],
+            [
+              "<strong>Diagnóstico Laboratorial</strong>",
+              "<strong>Ácidos Biliares Totais Séricos &ge; 10 micromol/L</strong> em jejum.",
+              "Estratificar em Leve (10-39), Moderada (40-99) ou Grave (&ge; 100 micromol/L).",
+              "Fosfatase alcalina isolada é inespecífica (produção placentária fisiológica)."
+            ],
+            [
+              "<strong>CIHG Grave (&ge; 100 micromol/L)</strong>",
+              "Risco exponencial de óbito fetal intrauterino súbito e arritmias cardíacas.",
+              "<strong>Parto programado com 35 semanas completas a no máximo 36 semanas</strong>.",
+              "Cardiotocografia reativa <strong>NÃO descarta o risco de óbito fetal súbito</strong>!"
+            ],
+            [
+              "<strong>CIHG Moderada (40 a 99 micromol/L)</strong>",
+              "Risco intermediário de mecônio, trabalho de parto prematuro e óbito.",
+              "Parto planejado entre <strong>36 semanas e 0 dias e 38 semanas e 6 dias</strong>.",
+              "Titular UDCA e monitorar ácidos biliares seriados (risco de ascensão &gt; 100)."
+            ],
+            [
+              "<strong>CIHG Leve (10 a 39 micromol/L)</strong>",
+              "Risco de óbito semelhante ao da população de baixo risco geral.",
+              "Parto planejado entre <strong>38 semanas e 0 dias e 39 semanas e 6 dias</strong>.",
+              "Não realizar interrupção prematura iatrogênica desnecessária (&lt; 38 sem)."
+            ],
+            [
+              "<strong>Farmacoterapia de Escolha</strong>",
+              "<strong>Ácido Ursodesoxicólico (UDCA) 10 a 15 mg/kg/dia VO</strong>.",
+              "Administrar em 2 a 3 tomadas diárias com as refeições; alivia prurido e transaminases.",
+              "Anti-histamínicos não tratam o prurido da CIHG (não é mediado por histamina)."
+            ],
+            [
+              "<strong>Fármaco Proscrito / Abandonado</strong>",
+              "<strong>Colestiramina</strong> (resina de troca iônica intestinal).",
+              "Evitar o uso de rotina; se usada, suplementar obrigatoriamente <strong>Vitamina K1</strong>.",
+              "Gera má absorção de vitamina K e causa <strong>Hemorragia Pós-Parto maciça</strong>!"
+            ],
+            [
+              "<strong>Via de Parto Recomendada</strong>",
+              "<strong>Indicação estritamente obstétrica (Parto Vaginal preferencial)</strong>.",
+              "Indução do trabalho de parto com misoprostol/Foley/ocitocina conforme colo.",
+              "<strong>A CIHG NÃO É INDICAÇÃO DE CESARIANA ELETIVA!</strong>"
+            ],
+            [
+              "<strong>Diagnóstico Diferencial com EHAG</strong>",
+              "Critérios de Swansea: hipoglicemia severa, INR &gt; 1,5, encefalopatia e coma.",
+              "EHAG exige UTI, glicose a 10% IV e <strong>parto IMEDIATO de emergência</strong>.",
+              "CIHG não causa hipoglicemia nem encefalopatia hepática com flapping."
+            ],
+            [
+              "<strong>Prognóstico Puerperal e Recorrência</strong>",
+              "Remissão espetacular do prurido em 48-72h após o parto com a saída da placenta.",
+              "Dosagem de controle de ácidos biliares e transaminases com <strong>6 a 8 semanas</strong> pós-parto.",
+              "<strong>Altíssima taxa de recorrência em gestações futuras (45% a 70%)</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "9.2 Os Dez Mandamentos Obstétricos no Manejo da CIHG"
+        ],
+        [
+          "o",
+          [
+            "<strong>Prurido palmo-plantar noturno é CIHG até que se prove o contrário:</strong> A localização nas palmas e plantas com piora ao deitar é o sinal semiológico patognomônico da colestase;",
+            "<strong>Pele sem lesões primárias é regra:</strong> Se houver pápulas urticariformes ou bolhas, pense em erupção polimorfa da gravidez (PUPPP) ou penfigoide gestacional;",
+            "<strong>Ácidos biliares &ge; 100 micromol/L é alerta vermelho:</strong> O parto deve ser realizado categoricamente com 35 a 36 semanas para evitar a morte fetal intrauterina;",
+            "<strong>O Doppler de artéria umbilical normal não tranquiliza:</strong> A morte fetal decorre de arritmias súbitas por taurocolato e vasoespasmo agudo, não de insuficiência placentária crônica;",
+            "<strong>Ácido Ursodesoxicólico é o rei do tratamento:</strong> Use UDCA na dose de 10-15 mg/kg/dia para aliviar o prurido e otimizar a depuração feto-materna de bile;",
+            "<strong>Colestiramina atrai hemorragia pós-parto:</strong> Não prescreva colestiramina sem repor vitamina K parenteral para evitar atonia e choque hemorrágico;",
+            "<strong>Indução do parto é a conduta padrão:</strong> A colestase não obriga a realização de cesariana; faça indução com monitorização contínua;",
+            "<strong>Hipoglicemia com icterícia é Esteatose Hepática Aguda (EHAG):</strong> Aplique os critérios de Swansea e interrompa a gravidez com suporte intensivo;",
+            "<strong>O prurido evapora após a dequitação:</strong> A queda dos hormônios placentários encerra o ciclo colestático em poucos dias pós-parto;",
+            "<strong>Avise sobre o risco nas próximas gestações:</strong> Mais da metade das mulheres terá colestase novamente na gravidez seguinte."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

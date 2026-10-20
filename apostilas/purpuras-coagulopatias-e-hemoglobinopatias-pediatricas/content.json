@@ -1,0 +1,1317 @@
+{
+  "v": 2,
+  "s": "purpuras-coagulopatias-e-hemoglobinopatias-pediatricas",
+  "t": "Púrpuras, Coagulopatias e Hemoglobinopatias Pediátricas",
+  "p": "Púrpuras, Coagulopatias e Hemoglobinopatias Pediátricas — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Trombocitopenia Imune Primária, Vasculite por IgA, Hemofilias Congênitas, Doença de von Willebrand e Doença Falciforme na Infância",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Púrpuras, Coagulopatias e Hemoglobinopatias Pediátricas",
+    "Tratado de Alta Performance em Trombocitopenia Imune Primária, Vasculite por IgA, Hemofilias Congênitas, Doença de von Willebrand e Doença Falciforme na Infância",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Púrpuras, Coagulopatias e Hemoglobinopatias Pediátricas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "hemato-ped-hemostasia-introducao",
+      "1. Fisiologia da Hemostasia Pediátrica: Hemostasia Primária versus Secundária"
+    ],
+    [
+      "hemato-ped-pti-pediatrica",
+      "2. Trombocitopenia Imune Primária (PTI) Pediátrica: Fisiopatologia, Apresentação e Manejo"
+    ],
+    [
+      "hemato-ped-vasculite-iga-henoch-schonlein",
+      "3. Vasculite por IgA (Púrpura de Henoch-Schönlein): Imunopatogenia e a Tétrade Clássica"
+    ],
+    [
+      "hemato-ped-hemofilias-hereditarias",
+      "4. Hemofilias Congênitas A e B: Genética, Fisiopatologia e Artropatia Hemofílica"
+    ],
+    [
+      "hemato-ped-doenca-von-willebrand",
+      "5. Doença de von Willebrand (DvW): Tipos, Diagnóstico e Diagnóstico Diferencial"
+    ],
+    [
+      "hemato-ped-anemia-falciforme-e-hemoglobinopatias",
+      "6. Hemoglobinopatias Pediátricas: Doença Falciforme e Crises Vaso-Oclusivas"
+    ],
+    [
+      "hemato-ped-casos-clinicos",
+      "7. Casos Clínicos Pediátricos Comentados Passo a Passo"
+    ],
+    [
+      "hemato-ped-questoes-comentadas",
+      "8. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+    ],
+    [
+      "hemato-ped-tabela-high-yield-conclusao",
+      "9. Tabela Comparativa High-Yield e Takeaway Messages"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "hemato-ped-hemostasia-introducao",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia da Hemostasia Pediátrica: Hemostasia Primária versus Secundária"
+        ],
+        [
+          "p",
+          "O sistema hemostático constitui um mecanismo biológico de defesa altamente integrado, cuja finalidade primordial consiste em manter o sangue em estado fluido no interior dos vasos normais e promover a formação rápida, localizada e transitória de um tampão hemostático hemostático estável em resposta à lesão endotelial vascular. Na faixa etária pediátrica, a interpretação dos distúrbios hemorrágicos exige o domínio prévio do conceito de <strong>\"hemostasia do desenvolvimento\"</strong>: os níveis plasmáticos de diversos fatores pró-coagulantes (como os fatores dependentes de vitamina K — II, VII, IX e X — e os fatores de contato XI e XII) encontram-se fisiologicamente reduzidos ao nascimento e na infância precoce, alcançando os níveis do adulto apenas ao término do primeiro ano de vida ou durante a puberdade, sem que isso implique tendência hemorrágica patológica espontânea."
+        ],
+        [
+          "3",
+          "1.1 Hemostasia Primária: O Tampão Plaquetário"
+        ],
+        [
+          "p",
+          "A hemostasia primária compreende a resposta imediata (segundos a minutos) à injúria vascular, mediada pela interação íntima entre a <strong>parede vascular (endotélio e colágeno subendotelial)</strong> e as <strong>plaquetas circulantes</strong>, com a cooperação indispensável do <strong>Fator de von Willebrand (vWF)</strong>. Didaticamente, desdobra-se em quatro fases sequenciais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Vasoconstrição Reflexa Miogênica e Neuro-Humoral:</strong> Ocorre imediatamente após a lesão da parede vascular, mediada por reflexos axonais locais e pela liberação de potentes vasoconstritores derivados do endotélio lesado e de plaquetas ativadas, como a <strong>endotelina-1</strong> e o <strong>tromboxano A2 (TXA2)</strong>, reduzindo temporariamente o fluxo sanguíneo local.",
+            "<strong>Adesão Plaquetária:</strong> A denudação do endotélio expõe as macromoléculas de colágeno subendotelial ao fluxo sanguíneo. O <strong>Fator de von Willebrand (vWF)</strong> — um multímero glicoproteico sintetizado pelas células endoteliais (armazenado nos corpos de Weibel-Palade) e pelos megacariócitos (grânulos alfa plaquetários) — desenrola-se sob as forças de cisalhamento do fluxo sanguíneo e atua como uma \"ponte molecular\" elástica: uma extremidade do vWF liga-se ao colágeno subendotelial e a outra extremidade liga-se ao complexo glicoproteico <strong>GPIb-V-IX</strong> presente na membrana plaquetária. Adicionalmente, as glicoproteínas GPVI e GPIa/IIa interagem diretamente com o colágeno.",
+            "<strong>Ativação e Secreção Granular Plaquetária:</strong> A adesão ao subendotélio desencadeia transdução de sinal intracelular que resulta em: (a) Mudança conformacional radical da plaqueta, que transita de um disco biconcave liso para uma forma esferoidal repleta de pseudópodes filamentosos; (b) Ativação da fosfolipase A2 com clivagem de fosfolipídios de membrana e produção maciça de <strong>tromboxano A2 (TXA2)</strong> pela via da ciclo-oxigenase-1 (COX-1); (c) Degranulação dos grânulos alfa (liberando fibrinogênio, fibronectina, fator V, fator IV plaquetário e mais vWF) e dos grânulos densos (liberando <strong>ADP</strong>, cálcio iônico e serotonina). O ADP e o TXA2 liberados atuam de forma autócrina e parácrina sobre receptores plaquetários acoplados à proteína G (receptores P2Y1 e P2Y12 para o ADP; receptores TP para o TXA2), recrutando e ativando ondas sucessivas de novas plaquetas circulantes.",
+            "<strong>Agregação Plaquetária e Formação do Tampão Primário:</strong> O estímulo de ativação finaliza na ativação conformacional do receptor de integrina mais abundante na membrana plaquetária: o complexo <strong>Glicoproteína IIb/IIIa (GPIIb/IIIa ou integrina alfa-IIb-beta-3)</strong>. Uma vez ativado, o receptor GPIIb/IIIa liga-se com alta afinidade a moléculas divalentes de <strong>fibrinogênio plasmático</strong> (e secundariamente de vWF), formando pontes cruzadas entre plaquetas adjacentes, gerando o <strong>tampão hemostático primário (trombo branco)</strong>, que é frouxo, lábil e hidraulicamente vulnerável se não for reforçado pela fibrina da coagulação secundária."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Hemostasia Secundária: A Cascata da Coagulação e o Modelo Baseado em Células"
+        ],
+        [
+          "p",
+          "A hemostasia secundária visa gerar a enzima proteolítica <strong>trombina (fator IIa)</strong>, a qual cliva o fibrinogênio solúvel em monômeros insolúveis de fibrina, os quais se polimerizam e são reticulados covalentemente pelo fator XIIIa, conferindo estabilidade mecânica definitiva ao coágulo (trombo vermelho)."
+        ],
+        [
+          "4",
+          "A Visão Clássica da Cascata (Vias Intrínseca, Extrínseca e Comum) e sua Utilidade Laboratorial:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Via Extrínseca (Iniciada pelo Fator Tecidual):</strong> Depende da exposição do Fator Tecidual (FT) subendotelial, que forma complexo com o Fator VII circulante na presença de cálcio, ativando o Fator VII em VIIa. Avaliada laboratorialmente pelo <strong>Tempo de Protrombina (TP / INR)</strong>, que monitora os fatores dependentes de vitamina K (II, VII, X) e o fator V.",
+            "<strong>Via Intrínseca (Via de Contato):</strong> Inicia-se pela ativação do fator XII (fator de Hageman) por contato com superfícies carregadas negativamente, ativando sequencialmente os fatores XI, IX e VIII. Avaliada laboratorialmente pelo <strong>Tempo de Tromboplastina Parcial Ativada (TTPa)</strong>, que monitora os fatores XII, XI, IX, VIII, X, V, protrombina (II) e fibrinogênio (I).",
+            "<strong>Via Comum:</strong> Inicia-se na ativação do Fator X em Xa (pelo complexo tenase intrínseco [FVIIIa + FIXa + Ca²⁺ + fosfolipídios] ou extrínseco [FVIIa + FT + Ca²⁺]). O FXa une-se ao Fator Va, íons cálcio e fosfolipídios plaquetários de carga negativa na superfície celular para formar o complexo <strong>protrombinase</strong>, que cliva a protrombina (Fator II) em <strong>trombina (Fator IIa)</strong>."
+          ]
+        ],
+        [
+          "4",
+          "O Modelo Celular Contemporâneo da Coagulação (Iniciação, Amplificação e Propagação):"
+        ],
+        [
+          "p",
+          "Na fisiologia <em>in vivo</em>, a coagulação não ocorre em tubos de ensaio separados, mas na superfície de membranas celulares contendo fosfatidilserina:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase de Iniciação (na célula apresentadora de Fator Tecidual - fibroblasto/monócito):</strong> O complexo FT-FVIIa ativa quantidades residuais diminutas de FXa e FIXa. O FXa gera traços iniciais de trombina localmente.",
+            "<strong>Fase de Amplificação (na superfície da plaqueta):</strong> Essa quantidade ínfima de trombina inicial liga-se aos receptores ativados por protease (PAR-1 e PAR-4) na plaqueta adjacente, ativando-a completamente, ao mesmo tempo em que cliva e ativa os cofatores <strong>Fator V (em Va)</strong> e <strong>Fator VIII (em VIIIa, liberando-o de seu carreador plasmático vWF)</strong> e ativa o Fator XI em XIa.",
+            "<strong>Fase de Propagação (na superfície da plaqueta ativada):</strong> O complexo tenase intrínseco (FIXa-FVIIIa) forma-se com eficiência máxima na membrana plaquetária carregada negativamente, ativando quantidades maciças de FXa, o qual recruta o FVa para gerar a <strong>\"explosão de trombina\" (<em>thrombin burst</em>)</strong>, capaz de clivar gramas de fibrinogênio em fibrina e ativar o Fator XIII (fator estabilizador da fibrina)."
+          ]
+        ],
+        [
+          "3",
+          "1.3 Raciocínio Clínico Diferencial: Distúrbios Primários versus Secundários"
+        ],
+        [
+          "p",
+          "A distinção semiológica entre desordens da hemostasia primária e secundária é um dos temas mais recorrentes em provas de Pediatria e Hematologia:"
+        ],
+        [
+          "t",
+          [
+            "Característica Semioclinica",
+            "Distúrbios da Hemostasia Primária<br><em>(Plaquetas, Endotélio, vWF)</em>",
+            "Distúrbios da Hemostasia Secundária<br><em>(Deficiência de Fatores de Coagulação)</em>"
+          ],
+          [
+            [
+              "<strong>Sítios Típicos de Sangramento</strong>",
+              "<strong>Sangramento Mucocutâneo Superficial:</strong> Petéquias (lesões puntiformes < 2 mm não palpáveis), púrpuras, equimoses frouxas, epistaxe, gengivorragia, menorragia profusa, sangramento gastrointestinal mucoso.",
+              "<strong>Sangramentos Profundos e Viscerais:</strong> Hemartroses (sangramento intra-articular), hematomas musculares intramusculares profundos, hemorragias retroperitoneais e intracranianas maciças."
+            ],
+            [
+              "<strong>Resposta a Pequenos Traumas e Cortes</strong>",
+              "Sangramento <strong>imediato e prolongado</strong> após punção venosa, escoriações ou cortes de barbear/unhas.",
+              "O sangramento inicial costuma estancar (pois a hemostasia primária está intacta), mas ocorre <strong>ressangramento tardio (horas a dias depois)</strong> pela instabilidade do trombo de fibrina."
+            ],
+            [
+              "<strong>Tempo de Sangramento (TS) / PFA-100</strong>",
+              "<strong>Prolongado</strong> (reflete a disfunção de adesão ou número plaquetário).",
+              "Rigorosamente <strong>Normal</strong>."
+            ],
+            [
+              "<strong>Exames de Coagulação (TP e TTPa)</strong>",
+              "Rigorosamente <strong>Normais</strong> (exceto na Doença de von Willebrand tipo 2N ou tipo 3 com queda acentuada secundária de FVIII, onde o TTPa alarga).",
+              "<strong>Alargados / Anormais:</strong> TTPa prolongado isolado (Hemofilias A e B, déficit de FXI); TP prolongado isolado (déficit de FVII); ou ambos (CIVD, hepatopatia grave)."
+            ],
+            [
+              "<strong>Exemplos Clínicos Típicos</strong>",
+              "Trombocitopenia Imune Primária (PTI), Doença de von Willebrand, Trombastenia de Glanzmann, Síndrome de Bernard-Soulier.",
+              "Hemofilia A (Déficit de FVIII), Hemofilia B (Déficit de FIX), Deficiência de Fator XIII, Coagulopatia por carência de Vitamina K."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-pti-pediatrica",
+      0,
+      [
+        [
+          "2",
+          "2. Trombocitopenia Imune Primária (PTI) Pediátrica: Fisiopatologia, Apresentação e Manejo"
+        ],
+        [
+          "p",
+          "A <strong>Trombocitopenia Imune Primária (PTI)</strong> — classicamente denominada Púrpura Trombocitopênica Idiopática — é a causa mais frequente de trombocitopenia aguda isolada na infância. É definida formalmente como uma desordem autoimune adquirida caracterizada por contagem plaquetária no sangue periférico <strong>inferior a 100.000/mm³ (< 100 x 10⁹/L)</strong>, na <strong>ausência de outras anormalidades hematológicas</strong> (anemia inexplicada, leucopenia ou atipias morfológicas) e sem causas sistêmicas identificáveis de plaquetopenia (como lúpus eritematoso sistêmico, infecção por HIV ou uso de fármacos mielotóxicos)."
+        ],
+        [
+          "3",
+          "2.1 Fisiopatologia Imunológica: Mecanismo Periférico e Central"
+        ],
+        [
+          "p",
+          "A fisiopatologia da PTI pediátrica é desencadeada por um fenômeno de <strong>mimetismo molecular pós-infeccioso</strong>. Em aproximadamente <strong>60% a 80% dos casos</strong>, há história evidente de uma infecção viral autolimitada prévia (infecções das vias aéreas superiores, resfriado comum, varicela, rubéola, EBV ou citomegalovírus) ou imunização recente (como a vacina tríplice viral - SCR) ocorrida <strong>1 a 4 semanas antes</strong> do aparecimento dos sangramentos."
+        ],
+        [
+          "o",
+          [
+            "<strong>Destruição Periférica no Sistema Reticuloendotelial (Baço):</strong> O organismo produz autoanticorpos patogênicos da classe <strong>IgG dirigidos contra glicoproteínas da membrana plaquetária</strong>, com predileção absoluta pelos complexos <strong>GPIIb/IIIa</strong> e <strong>GPIb/IX</strong>. As plaquetas opsonizadas por IgG circulam até os cordões esplênicos do baço, onde a porção Fc do anticorpo é reconhecida com alta afinidade pelos receptores <strong>Fc-gama (FcγRIIa e FcγRIIIa)</strong> presentes na membrana dos macrófagos teciduais esplênicos. Os macrófagos fagocitam e destroem as plaquetas prematuramente, reduzindo a meia-vida plaquetária fisiológica de 7 a 10 dias para poucas horas ou minutos!",
+            "<strong>Inibição Central da Trombopoiese:</strong> Além da destruição periférica acelerada, estudos contemporâneos demonstraram que os autoanticorpos anti-GPIb e anti-GPIIb/IIIa penetram no microambiente medular e ligam-se aos próprios <strong>megacariócitos</strong>, inibindo a sua diferenciação, causando apoptose megacariocítica precoce e deprimindo a taxa de síntese de novas plaquetas, o que é agravado por níveis circulantes inadequadamente baixos de trombopoietina (TPO)."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Apresentação Clínica Clássica no Pronto-Socorro"
+        ],
+        [
+          "p",
+          "O perfil epidemiológico é característico: acomete tipicamente <strong>crianças previamente hígidas na faixa etária entre 2 e 6 anos</strong>, sem distinção de sexo, de instalação súbita e explosiva (\"a criança foi dormir perfeita e acordou coberta de manchas roxas\"):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Manifestações Hemorrágicas Cutâneas:</strong> Petéquias generalizadas (lesões puntiformes avermelhadas ou violáceas que não desaparecem à digitopressão), equimoses extensas espontâneas e sufusões distribuídas difusamente pelo corpo.",
+            "<strong>Manifestações Mucosas:</strong> Epistaxe anterior autolimitada, gengivorragia leve provocada pela escovação e pequenas bolhas hemorrágicas isoladas na mucosa jugal (\"púrpura úmida\").",
+            "<strong>Ausência de Sinais Sistêmicos (A Chave Diagnóstica!):</strong> A criança com PTI aguda encontra-se em <strong>EXCELENTE ESTADO GERAL</strong>, afebril, ativa, nutrida e sem fácies de sofrimento.",
+            "<strong>O Exame Físico Negativo:</strong> Ao exame físico, <strong>NÃO HÁ HEPATOMEGALIA, NÃO HÁ ESPLENOMEGALIA PALPÁVEL E NÃO HÁ LINFADENOPATIA PATOLÓGICA</strong>! <em>Pérola Propedêutica Crucial:</em> Se uma criança com plaquetopenia grave apresentar esplenomegalia volumosa, adenomegalia generalizada ou dor óssea, <strong>A HIPÓTESE DE PTI ESTÁ VIRTUALMENTE EXCLUÍDA</strong>, devendo-se investigar imediatamente Leucemia Aguda ou Síndrome Hemofagocítica!"
+          ]
+        ],
+        [
+          "3",
+          "2.3 Propedêutica Laboratorial e Quando Indicar o Mielograma"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemograma Completo:</strong> Revela <strong>plaquetopenia isolada</strong>, frequentemente severa com contagens <strong>inferiores a 20.000/mm³ (e em até 50% dos casos < 10.000/mm³)</strong>. A série vermelha é estritamente normal (a menos que haja anemia ferropriva secundária a sangramento mucoso volumoso prolongado). A série branca (leucócitos e contagem diferencial de neutrófilos e linfócitos) é rigorosamente normal.",
+            "<strong>Hematoscopia de Sangue Periférico:</strong> Exame obrigatório para confirmar a plaquetopenia verdadeira, excluir pseudotrombocitopenia por aglutinação induzida por EDTA (visualização de agregados plaquetários em sangue com heparina/citrato) e descartar categoricamente a presença de blastos, corpos de Auer, esquizócitos (fragmentos de hemácias vistos na PTT e SHU) ou neutrófilos anormais. Frequentemente observam-se plaquetas gigantes (macrotrombócitos jovens) refletindo o esforço medular de regeneração.",
+            "<strong>A Grande Dúvida das Provas: Quando o Mielograma É Realmente Necessário na PTI Pediátrica?</strong>\n    <p>De acordo com as diretrizes da <em>American Society of Hematology (ASH)</em> e da Sociedade Brasileira de Pediatria (SBP):</p>\n    <div class=\"note-box\">\n      <p><strong>O mielograma (aspirado de medula óssea) NÃO É INDICADO rotineiramente em crianças com apresentação clínica e laboratorial típica de PTI (criança previamente hígida, plaquetopenia isolada, exame físico normal sem organomegalias).</strong></p>\n      <p>O mielograma torna-se <strong>ESTRITAMENTE OBRIGATÓRIO</strong> apenas nas seguintes exceções:</p>\n      <ol>\n        <li>Presença de alterações concomitantes nas outras séries hematológicas (anemia inexplicada não proporcional a sangramento externo, leucopenia, neutropenia ou presença de células imaturas/blastos).",
+            "Presença de alterações ao exame físico: esplenomegalia palpável além do rebordo costal esquerdo, hepatomegalia, linfadenopatia generalizada ou dor óssea/articular que acorda à noite.",
+            "Falha terapêutica completa ou resposta refratária ao uso de imunoglobulina humana intravenosa ou corticoides.",
+            "<strong>Antes de iniciar corticoterapia sistêmica SE HOUVER qualquer dúvida diagnóstica</strong>, para não mascarar temporariamente uma Leucemia Linfoblástica Aguda incipiente."
+          ]
+        ],
+        [
+          "3",
+          "2.4 Manejo Terapêutico Contemporâneo: Tratar o Paciente, Não o Número de Plaquetas!"
+        ],
+        [
+          "p",
+          "A conduta na PTI pediátrica passou por uma mudança paradigmática fundamental sintetizada na máxima internacional: <strong>\"Treat the patient, not the platelet count\" (Trate o paciente, e não a contagem de plaquetas)</strong>. Crianças têm um risco de sangramento intracraniano extremamente baixo na PTI (< 0,1% a 0,5%), mesmo com contagens < 10.000/mm³."
+        ],
+        [
+          "4",
+          "Estratificação e Diretrizes da ASH / SBP:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Conduta Expectante e Observação Clínica Exclusiva (Sem Fármacos):</strong>\n    <p>Indicada para a grande maioria das crianças que apresentam <strong>ausência de sangramento ou apenas sangramento cutâneo leve</strong> (petéquias, equimoses, sem sangramentos de mucosas ativos), <strong>INDEPENDENTEMENTE DA CONTAGEM DE PLAQUETAS</strong> (mesmo se as plaquetas estiverem em 5.000 ou 8.000/mm³!).</p>\n    <ul>\n      <li>Orientações essenciais: repouso relativo, evitar esportes de contato e traumatismos cranianos, contraindicar formalmente o uso de anti-inflamatórios não esteroides (AINEs) e ácido acetilsalicílico (AAS), contraindicar injeções intramusculares e manter monitoramento ambulatorial semanal ou quinzenal.",
+            "Cerca de <strong>75% a 80% das crianças com PTI aguda apresentam remissão espontânea completa e sustentada em até 3 a 6 meses</strong> sem qualquer intervenção medicamentosa!",
+            "<strong>Tratamento Farmacológico de Primeira Linha (Quando Intervir?):</strong>\n    <p>Indicado quando a criança apresenta <strong>sangramento mucoso ativo moderado a grave</strong> (epistaxe profusa contínua, hematúria macroscópica, sangramento gastrointestinal, menorragia severa, bolhas hemorrágicas extensas em cavidade oral) ou presença de fatores de risco adicionais para sangramento grave.</p>\n    <ul>\n      <li><strong>Opção 1: Imunoglobulina Humana Intravenosa (IVIG):</strong> Dose de <strong>0,8 a 1,0 g/kg em dose única</strong> (ou 1 g/kg/dia por 2 dias). É a droga de escolha quando se busca a <strong>elevação plaquetária mais rápida possível (resposta em 24 a 48 horas)</strong>. <em>Mecanismo de Ação:</em> As moléculas de IgG infundidas promovem o <strong>bloqueio competitivo dos receptores Fc-gama (FcγR) nos macrófagos do baço</strong> (saturação dos receptores), impedindo fisicamente que os macrófagos fagocitem as plaquetas opsonizadas pelo autoanticorpo.",
+            "<strong>Opção 2: Corticoterapia Sistêmica Oral ou Venosa:</strong>\n        <ul>\n          <li><strong>Prednisona oral:</strong> 1 a 2 mg/kg/dia por 7 a 14 dias com desmame rápido; OU",
+            "<strong>Pulsoterapia com Dexametasona oral:</strong> 0,6 mg/kg/dia (máx 40 mg/dia) por 4 dias; OU Metilprednisolona venosa (30 mg/kg/dia por 3 dias). <em>Mecanismo:</em> Reduz a depuração esplênica mediada por receptores Fc, diminui a síntese de autoanticorpos pelos linfócitos B e melhora a integridade endotelial capilar.",
+            "<strong>Transfusão de Concentrado de Plaquetas:</strong> Está <strong>FORMALMENTE CONTRAINDICADA na rotina da PTI</strong>! As plaquetas transfundidas são destruídas em minutos pelos autoanticorpos circulantes. A transfusão de plaquetas é reservada exclusivamente para situações de <strong>sangramento com risco iminente de morte (Hemorragia Intracraniana Aguda)</strong>, devendo ser administrada em infusão contínua em altas doses associada a IVIG em bolus e metilprednisolona venosa!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-vasculite-iga-henoch-schonlein",
+      0,
+      [
+        [
+          "2",
+          "3. Vasculite por IgA (Púrpura de Henoch-Schönlein): Imunopatogenia e a Tétrade Clássica"
+        ],
+        [
+          "p",
+          "A <strong>Vasculite por Imunoglobulina A (Vasculite por IgA)</strong> — historicamente consagrada na literatura médica mundial como <strong>Púrpura de Henoch-Schönlein (PHS)</strong> — é a vasculite primária mais frequente da infância, respondendo por aproximadamente <strong>50% de todas as vasculites sistêmicas pediátricas</strong>. Caracteriza-se por uma vasculite leucocitoclástica não granulomatosa necrosante que acomete seletivamente <strong>vasos de pequeno calibre</strong> (vênulas pós-capilares, capilares e arteríolas), mediada pela deposição tecidual de imunocomplexos contendo predominantemente <strong>Imunoglobulina A da subclasse 1 (IgA1)</strong> aberrante."
+        ],
+        [
+          "3",
+          "3.1 Imunopatologia Molecular: O Papel da IgA1 Hipogalactosilada"
+        ],
+        [
+          "p",
+          "O gatilho imunológico primordial reside em uma anomalia na glicosilação pós-traducional da molécula de IgA1. A região de dobradiça da IgA1 contém cadeias de carboidratos com resíduos de O-glicanos terminados em galactose. Em indivíduos geneticamente predispostos, frequentemente após uma infecção das vias aéreas superiores por <em>Streptococcus pyogenes</em> ou vírus respiratórios, ocorre uma alteração enzimática transitória (deficiência de galactosiltransferase) que resulta na produção de <strong>IgA1 hipogalactosilada (deficiente em galactose na dobradiça)</strong>."
+        ],
+        [
+          "p",
+          "O sistema imunológico reconhece esses resíduos de O-glicanos expostos e anômalos como antígenos estranhos, produzindo autoanticorpos específicos (IgG ou IgA) contra a IgA1 alterada, gerando <strong>macromoléculas de imunocomplexos circulantes IgA1-IgG</strong>. Esses imunocomplexos de grande peso molecular têm dificuldade de depuração hepática e depositam-se avidamente nas paredes dos pequenos vasos da <strong>pele, do trato gastrointestinal, das sinóvias articulares e do mesângio glomerular renal</strong>. A deposição ativa a via alternativa e a via das lectinas do sistema complemento (com consumo local de C3 e liberação de fatores quimiotáticos C3a e C5a), recrutando <strong>neutrófilos em massa</strong>. Os neutrófilos aderem ao endotélio, degranulam elastase e enzimas líticas e sofrem fragmentação nuclear (fenômeno histopatológico de <strong>leucocitoclasia</strong> com \"poeira nuclear\"), provocando extravasamento de hemácias, necrose fibrinoide segmentar e trombose microvascular focal."
+        ],
+        [
+          "3",
+          "3.2 A Tétrade Clínica Clássica da Vasculite por IgA"
+        ],
+        [
+          "p",
+          "O perfil epidemiológico típico atinge <strong>crianças de 3 a 10 anos de idade</strong> (pico aos 4 a 6 anos), com discreto predomínio masculino (1,5:1). A doença manifesta-se tipicamente no outono e inverno pela clássica <strong>tétrade clínica</strong>, cujo elemento cutâneo é obrigatório segundo os critérios diagnósticos internacionais de EULAR/PRINTO/PRES:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Púrpura Palpável Não Trombocitopênica (O Elemento Clínico Mandatório!):</strong>\n    <p>Presente em <strong>100% dos pacientes</strong>. Inicia-se como lesões maculopapulares eritematosas ou placas urticadas que rapidamente evoluem para <strong>púrpuras e petéquias palpáveis</strong> (lesões elevadas, discretamente infiltradas ao tato, que não desaparecem à vitroimpressão). Podem confluir formando placas purpúricas extensas e equimoses.</p>\n    <ul>\n      <li><strong>Distribuição Gravitacional Patognomônica:</strong> As lesões cutâneas têm distribuição topográfica rigorosamente simétrica nas <strong>regiões pendentes e de maior pressão hidrostática</strong>: <strong>membros inferiores (coxas, pernas e maléolos) e nádegas</strong>. Em lactentes que ainda não andam, as lesões podem concentrar-se no dorso, face e membros superiores. O tronco costuma ser poupado.",
+            "<em>Pérola Propedêutica Crucial:</em> É uma púrpura <strong>NÃO TROMBOCITOPÊNICA</strong>! O hemograma revela contagem de <strong>plaquetas normal ou aumentada (trombocitose reativa pela inflamação)</strong>, o que a distingue categoricamente da PTI e da Meningococcemia!",
+            "<strong>2. Artrite ou Artralgia Transitória Não Deformante:</strong>\n    <p>Presente em <strong>60% a 80% dos casos</strong>. Acomete preferencialmente <strong>grandes articulações dos membros inferiores</strong> (especialmente tornozelos e joelhos). Caracteriza-se por dor periarticular intensa, edema periarticular proeminente e limitação funcional da marcha (claudicação ou recusa para ficar de pé). É uma artrite tipicamente <strong>oligoarticular, transitória e autolimitada (dura poucos dias a 2 semanas), NÃO EROSIVA e que se resolve completamente sem deixar sequelas ou deformidades articulares permanentes</strong>.</p>",
+            "<strong>3. Dor Abdominal em Cólica e Complicações Gastrointestinais:</strong>\n    <p>Presente em <strong>50% a 75% dos pacientes</strong>. Ocorre pelo edema submucoso e vasculite isquêmica das vênulas do intestino delgado (especialmente jejuno e íleo). Manifesta-se por dor abdominal paroxística intensa em cólica (frequentemente periumbilical ou difusa), agravada após as refeições, associada a náuseas, vômitos e fezes com sangue oculto ou sangramento visível (melena ou hematoquezia).</p>\n    <ul>\n      <li><strong>A Temida Complicação Abdominal: Intussuscepção Intestinal Ileo-Ileal:</strong>\n        <p>A vasculite e o hematoma intramural na parede intestinal funcionam como um ponto de partida mecânico (cabeça de invaginação), predispondo ao desenvolvimento de <strong>Intussuscepção Intestinal Aguda</strong> em cerca de 3% a 5% dos casos. <em>Alerta de Prova:</em> Enquanto a intussuscepção idiopática comum do lactente é tipicamente ileo-cólica, na Vasculite por IgA <strong>mais de 60% a 70% das invaginações são do tipo ILEO-ILEAL pura</strong>, o que pode passar despercebido em enemas baritados convencionais, exigindo ultrassonografia abdominal com Doppler minuciosa!</p>",
+            "<strong>4. Envolvimento Renal (Nefrite por IgA / Púrpura Renal):</strong>\n    <p>Presente em <strong>30% a 50% dos pacientes</strong>. É o componente clínico que determina o <strong>prognóstico de longo prazo</strong> da Vasculite por IgA! A histopatologia renal é indistinguível da <em>Nefropatia por IgA primária (Doença de Berger)</em>, com proliferação mesangial e depósitos granulares de IgA1 e C3 no mesângio à imunofluorescência.</p>\n    <ul>\n      <li>Manifestações: A alteração mais comum é a <strong>hematúria microscópica isolada</strong> com ou sem proteinúria leve. Cerca de 10% a 20% evoluem com proteinúria na faixa nefrótica (> 50 mg/kg/dia ou relação proteína/creatinina urinária > 2,0), hipertensão arterial sistêmica, insuficiência renal aguda (síndrome nefrítica-nefrótica) e formação de crescentes glomerulares (> 50% dos glomérulos), com risco de progressão tardia para doença renal crônica terminal (DRC em 1% a 2%).",
+            "<em>Protocolo de Seguimento Mandatório:</em> Todas as crianças com diagnóstico de Vasculite por IgA devem realizar <strong>Urina tipo I (EAS) e aferição de Pressão Arterial semanalmente no primeiro mês e mensalmente por no mínimo 6 meses</strong> após o episódio agudo, pois o comprometimento renal pode manifestar-se tardiamente, mesmo após a resolução completa das lesões purpúricas de pele!"
+          ]
+        ],
+        [
+          "3",
+          "3.3 Diagnóstico e Tratamento: O Papel dos Corticoides"
+        ],
+        [
+          "p",
+          "O diagnóstico é eminentemente clínico, apoiado pelos critérios EULAR/PRINTO/PRES (púrpura palpável obrigatória associada a pelo menos um dos seguintes: dor abdominal difusa, artrite/artralgia aguda, envolvimento renal com hematúria/proteinúria ou biópsia tecidual com depósitos de IgA)."
+        ],
+        [
+          "u",
+          [
+            "<strong>Tratamento de Suporte Básico:</strong> Repouso, hidratação adequada, elevação dos membros inferiores e analgesia com paracetamol ou dipirona. Evitar anti-inflamatórios não esteroides (AINEs como ibuprofeno) se houver suspeita de sangramento digestivo ou nefrite ativa pelo risco de nefrotoxicidade e sangramento gastrintestinal!",
+            "<strong>Indicações Precisas da Corticoterapia Sistêmica (Prednisona 1 a 2 mg/kg/dia por 1 a 2 semanas):</strong>\n    <div class=\"note-box\">\n      <p><em>Onde os Corticoides Funcionam:</em> O corticoide é altamente eficaz para <strong>alívio rápido da dor abdominal em cólica intensa</strong>, controle do edema escrotal exuberante, nefrite rapidamente progressiva (em pulsoterapia com metilprednisolona) e artrite refratária incapacitante.</p>\n      <p><em>O Que os Corticoides NÃO Fazem (Pegadinha Clássica de Provas!):</em> Estudos prospectivos randomizados comprovaram que o uso precoce de corticoides <strong>NÃO PREVINE O APARECIMENTO NEM A PROGRESSÃO DA DOENÇA RENAL CRÔNICA (NEFRITE)</strong> e <strong>NÃO PREVINE AS RECIDIVAS CUTÂNEAS DA PÚRPURA</strong>! Portanto, não se prescreve corticoide de forma profilática para prevenir nefrite.</p>\n    </div>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-hemofilias-hereditarias",
+      0,
+      [
+        [
+          "2",
+          "4. Hemofilias Congênitas A e B: Genética, Fisiopatologia e Artropatia Hemofílica"
+        ],
+        [
+          "p",
+          "As hemofilias são coagulopatias hereditárias graves decorrentes de mutações nos genes que codificam fatores essenciais da via intrínseca da cascata da coagulação secundária:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemofilia A (Deficiência do Fator VIII da coagulação):</strong> É a hemofilia mais comum, correspondendo a aproximadamente <strong>80% a 85% de todos os casos</strong> (incidência de 1 para cada 5.000 a 10.000 nascimentos masculinos).",
+            "<strong>Hemofilia B (Deficiência do Fator IX da coagulação / Doença de Christmas):</strong> Responde por cerca de <strong>15% a 20% dos casos</strong> (incidência de 1 para cada 30.000 a 50.000 nascidos vivos masculinos)."
+          ]
+        ],
+        [
+          "3",
+          "4.1 Padrão de Herança Genética e Mutações Moleculares"
+        ],
+        [
+          "p",
+          "Tanto o gene do Fator VIII (<em>F8</em>) quanto o gene do Fator IX (<em>F9</em>) estão localizados no <strong>braço longo do cromossomo X (Xq28 e Xq27.1, respectivamente)</strong>. Portanto, as hemofilias A e B apresentam <strong>Padrão de Herança Recessiva Ligada ao Cromossomo X</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Acometem quase que exclusivamente indivíduos do <strong>sexo masculino (homens hemicigóticos XY)</strong>.",
+            "As mulheres são portadoras assintomáticas (heterozigóticas XX), que transmitem o cromossomo mutado para 50% de seus filhos homens (que serão doentes) e para 50% de suas filhas mulheres (que serão portadoras). Homens hemofílicos casados com mulheres não portadoras transmitem o gene afetado para 100% de suas filhas (que serão portadoras obrigatórias) e para nenhum de seus filhos homens (herança ligada ao X sem transmissão de pai para filho!).",
+            "<em>Mutações De Novo:</em> Em cerca de <strong>30% de todos os novos diagnósticos de hemofilia</strong>, não há qualquer história familiar prévia da doença (mutação germinativa nova e espontânea na mãe ou no embrião).",
+            "A alteração genética mais frequente na Hemofilia A grave é a <strong>inversão do íntron 22</strong> do gene <em>F8</em> (presente em 45% a 50% dos casos graves), decorrente de recombinação homóloga intracrossing-over."
+          ]
+        ],
+        [
+          "3",
+          "4.2 Classificação da Gravidade Conforme o Nível Residual de Fator"
+        ],
+        [
+          "p",
+          "A gravidade clínica das manifestações hemorrágicas correlaciona-se com a atividade coagulante residual do Fator VIII ou IX no plasma:"
+        ],
+        [
+          "t",
+          [
+            "Classificação da Gravidade",
+            "Nível Plasmático de Fator VIII ou IX (% da atividade normal)",
+            "Frequência de Sangramentos e Padrão Clínico Típico"
+          ],
+          [
+            [
+              "<strong>Hemofilia Grave</strong>",
+              "<strong>< 1% da atividade normal</strong> (< 0,01 UI/mL)",
+              "<strong>Sangramentos espontâneos frequentes</strong> (várias vezes ao mês), com hemartroses recorrentes e hematomas intramusculares extensos iniciados no primeiro ano de vida (ao começar a engatinhar/andar). Alto risco de hemorragia intracraniana letal."
+            ],
+            [
+              "<strong>Hemofilia Moderada</strong>",
+              "<strong>1% a 5% da atividade normal</strong> (0,01 a 0,05 UI/mL)",
+              "Sangramentos espontâneos raros; <strong>hemorragias graves após traumas mínimos ou moderados</strong> e após procedimentos cirúrgicos/extrações dentárias."
+            ],
+            [
+              "<strong>Hemofilia Leve</strong>",
+              "<strong>> 5% a < 40% da atividade normal</strong> (0,05 a 0,40 UI/mL)",
+              "Não apresentam sangramento espontâneo. O diagnóstico é frequentemente tardio na adolescência ou vida adulta, manifestando-se por <strong>sangramento desproporcional prolongado após grandes cirurgias, extrações dentárias ou traumas maiores</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.3 Apresentação Clínica: A Artropatia Hemofílica e Sangramentos Ameaçadores"
+        ],
+        [
+          "p",
+          "Os sinais hemorrágicos refletem a falência da hemostasia secundária (trombina insuficiente para estabilizar a fibrina):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hemartroses (Sangramentos Intra-articulares Recorrentes):</strong>\n    <p>É a manifestação clínica mais característica, dolorosa e incapacitante das hemofilias (presente em 75% a 80% dos sangramentos na forma grave). As articulações mais vulneráveis são as articulações sinoviais em dobradiça: <strong>joelhos (mais frequente), cotovelos, tornozelos, ombros e quadris</strong>.</p>\n    <ul>\n      <li><strong>Hemartrose Aguda:</strong> A criança refere dor súbita em queimação (\"sensação de aura\"), seguida de tumefação volumosa, calor local, derrame articular com empastamento e posição antálgica em flexão com impotência funcional completa.",
+            "<strong>Fisiopatologia da Artropatia Hemofílica Crônica:</strong> O sangue intra-articular degrada-se em hemossiderina, a qual é fagocitada pelas células sinoviais. A sobrecarga de ferro induz sinovite inflamatória crônica hipertrófica exuberante e neoangiogênese com vasos frágeis, criando um ciclo vicioso de \"articulação-alvo\" (repetição de sangramentos na mesma articulação). As metaloproteinases liberadas destroem a cartilagem hialina e o osso subcondral, evoluindo para anquilose fibrosa e óssea, osteófitos, deformidades articulares permanentes e atrofia muscular intensa.",
+            "<strong>Hematomas Musculares Profundos:</strong> Acometem músculos volumosos (iliopsoas, gastrocnêmio, quadríceps e antebraço). O <strong>hematoma de iliopsoas</strong> manifesta-se por dor aguda em fossa ilíaca, flexão forçada do quadril com rotação interna e dor excruciante à extensão passiva da coxa (mimetizando apendicite aguda ou artrite séptica). Em antebraços e pernas, os hematomas podem gerar <strong>Síndrome Compartimental Aguda</strong> com compressão nervosa isquêmica e necrose tecidual.",
+            "<strong>Hemorragia Intracraniana (HIC):</strong> É a principal causa de morte por hemorragia em hemofílicos (ocorre espontaneamente ou após traumas cranianos leves). Requer reposição imediata de fator 100% antes mesmo da realização de tomografia de crânio!",
+            "<strong>Sangramentos Pós-Procedimento:</strong> Sangramento prolongado após circuncisão neonatal (frequentemente o primeiro sinal de hemofilia grave em neonatos), após punção de calcanhar ou após quedas com laceração do freio labial."
+          ]
+        ],
+        [
+          "3",
+          "4.4 Diagnóstico Laboratorial: O Teste da Mistura e a Dosagem de Fatores"
+        ],
+        [
+          "p",
+          "O perfil laboratorial clássico das Hemofilias A e B caracteriza-se por:"
+        ],
+        [
+          "u",
+          [
+            "Plaquetas normais; Tempo de Sangramento (TS) normal; Tempo de Protrombina (TP / INR) rigorosamente <strong>NORMAL</strong>.",
+            "<strong>Tempo de Tromboplastina Parcial Ativada (TTPa) ISOLADAMENTE ALARGADO (relação TTPa paciente/controle > 1,3 a 2,5).</strong>",
+            "<strong>O Teste da Mistura 1:1 com Plasma Normal (Pérola Propedêutica Crucial!):</strong>\n    <p>Para diferenciar a deficiência de fator da presença de um inibidor circulante (como o anticoagulante lúpico ou autoanticorpos), realiza-se o teste da mistura:</p>\n    <div class=\"note-box\">\n      <p><strong>Mistura 1:1 de Plasma do Paciente + Plasma Normal Fresco:</strong></p>\n      <ul>\n        <li>Se o <strong>TTPa CORRIGIR</strong> (retornar ao intervalo de referência normal): Confirma <strong>DEFICIÊNCIA QUANTITATIVA DE FATOR DA COAGULAÇÃO</strong>! (Pois apenas 50% de fator fornecido pelo plasma normal é suficiente para normalizar o teste <em>in vitro</em>).",
+            "Se o <strong>TTPa NÃO CORRIGIR</strong>: Diagnostica a presença de um <strong>INIBIDOR / ANTICORPO NEUTRALIZANTE CIRCULANTE</strong>!"
+          ]
+        ],
+        [
+          "p",
+          "</div>\n  </li>\n  <li><strong>Dosagem Específica da Atividade Coagulante dos Fatores VIII e IX:</strong> É o exame definitivo que fecha o diagnóstico e define a gravidade (se FVIII < 1% = Hemofilia A grave; se FIX < 1% = Hemofilia B grave).</li>\n</ul>"
+        ],
+        [
+          "3",
+          "4.5 Manejo Contemporâneo: Profilaxia Primária e Terapias Avançadas"
+        ],
+        [
+          "u",
+          [
+            "<strong>Profilaxia Primária Padrão-Ouro:</strong> A Sociedade Mundial de Hemofilia preconiza a infusão venosa periódica regular de <strong>Concentrado de Fator VIII Recombinante</strong> (25 a 40 UI/kg, 3 vezes por semana ou em dias alternados na Hemofilia A) ou <strong>Fator IX Recombinante</strong> (40 a 60 UI/kg, 2 vezes por semana na Hemofilia B), iniciada precocemente entre 1 e 2 anos de idade (antes ou após a primeira hemartrose). O objetivo é manter o nível basal residual sempre acima de 1% a 3%, transformando o fenótipo grave em moderado e prevenindo definitivamente a artropatia hemofílica crônica.",
+            "<strong>DDAVP (Desmopressina / 1-desamino-8-D-arginina vasopressina):</strong> Análogo sintético da vasopressina que estimula a liberação endotelial de Fator VIII e vWF endógenos pré-formados a partir dos corpos de Weibel-Palade. Indicado exclusivamente na <strong>Hemofilia A LEVE</strong> para procedimentos menores (extrações dentárias). Totalmente ineficaz na Hemofilia A grave e na Hemofilia B!",
+            "<strong>A Revolução Terapêutica dos Anticorpos Biespecíficos: Emicizumabe:</strong>\n    <p>O <strong>Emicizumabe</strong> é um anticorpo monoclonal humanizado biespecífico que mimetiza a função cofatora do Fator VIII ativado: liga-se simultaneamente ao Fator IXa e ao Fator X, promovendo a ativação eficiente do FX em FXa. Possui a imensa vantagem de <strong>administração subcutânea semanal ou mensal</strong> e é eficaz mesmo na presença de anticorpos inibidores anti-FVIII!</p>",
+            "<strong>A Formação de Inibidores:</strong> A complicação mais temida da reposição é o desenvolvimento de aloanticorpos neutralizantes da classe IgG contra o fator infundido (ocorre em 25% a 30% dos pacientes com Hemofilia A grave). O tratamento exige Imunotolerância (ITI) e agentes de desvio (<em>bypassing agents</em>: Complexo Protrombínico Parcialmente Ativado - aPCC / FEIBA ou Fator VII ativado recombinante - rFVIIa)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-doenca-von-willebrand",
+      0,
+      [
+        [
+          "2",
+          "5. Doença de von Willebrand (DvW): Tipos, Diagnóstico e Diagnóstico Diferencial"
+        ],
+        [
+          "p",
+          "A <strong>Doença de von Willebrand (DvW)</strong> é a <strong>coagulopatia hemorrágica hereditária mais comum na espécie humana</strong>, com prevalência populacional estimada em aproximadamente <strong>1% da população geral</strong> (embora a prevalência de casos clinicamente sintomáticos com necessidade de assistência médica gire em torno de 1:1.000 a 1:10.000 indivíduos). Ao contrário das hemofilias (que são recessivas ligadas ao cromossomo X), a vasta maioria dos casos de DvW apresenta <strong>Padrão de Herança Autossômica Dominante</strong>, acometendo igualmente homens e mulheres."
+        ],
+        [
+          "3",
+          "5.1 As Duas Funções Biológicas Cruciais do Fator de von Willebrand (vWF)"
+        ],
+        [
+          "p",
+          "O gene do vWF está localizado no <strong>braço curto do cromossomo 12 (12p13.3)</strong>. O vWF é uma grande glicoproteína multimérica sintetizada exclusivamente por células endoteliais e megacariócitos, exercendo duas funções biológicas indispensáveis à hemostasia:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ponte Molecular na Hemostasia Primária (Adesão Plaquetária):</strong> Conforme detalhado na Seção 1, sob condições de alto estresse de cisalhamento arteriolar, os multímeros de alto peso molecular de vWF ligam-se ao colágeno subendotelial exposto e ao complexo glicoproteico <strong>GPIb-V-IX</strong> da membrana das plaquetas, promovendo a adesão plaquetária inicial à matriz lesada. Além disso, o vWF participa da agregação plaquetária interagindo com a integrina GPIIb/IIIa.",
+            "<strong>Proteína Carreadora e Protetora do Fator VIII na Circulação (Hemostasia Secundária):</strong> No plasma circulante, mais de 95% do <strong>Fator VIII da coagulação viaja intimamente ligado em complexo não covalente de alta afinidade ao vWF</strong>. Essa ligação desempenha um papel protetor vital: impede que o Fator VIII livre seja rapidamente degradado e inativado pelas proteases plasmáticas fisiológicas (como a Proteína C ativada e o Fator Xa). Na ausência ou deficiência grave de vWF, a meia-vida plasmática do Fator VIII colapsa de 12 horas normais para menos de 1 a 2 horas! Por essa razão, defeitos quantitativos severos de vWF acarretam uma <strong>queda secundária acentuada dos níveis de Fator VIII</strong>, provocando concomitante alargamento do TTPa e manifestações clínicas mistas (primárias e secundárias!)."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Classificação Fisiopatológica dos Tipos de Doença de von Willebrand"
+        ],
+        [
+          "p",
+          "A classificação internacional reconhece três categorias fundamentais subdivididas em subtipos qualitativos:"
+        ],
+        [
+          "t",
+          [
+            "Classificação da DvW",
+            "Mecanismo Fisiopatológico",
+            "Padrão Genético de Herança",
+            "Características Laboratoriais e Clínicas"
+          ],
+          [
+            [
+              "<strong>Tipo 1</strong><br>(~75% a 80% dos casos)",
+              "<strong>Deficiência QUANTITATIVA PARCIAL</strong> de vWF estruturalmente normal.",
+              "Autossômica Dominante (com penetrância e expressividade variáveis).",
+              "Forma mais comum e clinicamente mais leve. Redução proporcional do antígeno de vWF (vWF:Ag) e da atividade do cofator de ristocetina (vWF:RCo). Relação vWF:RCo / vWF:Ag > 0,6 ou 0,7. Resposta excelente ao DDAVP."
+            ],
+            [
+              "<strong>Tipo 2</strong><br>(~15% a 20% dos casos)",
+              "<strong>Defeitos QUALITATIVOS FUNCIONAIS</strong> na molécula de vWF.",
+              "Autossômica Dominante (exceto Tipo 2N, que é recessivo).",
+              "Dividida em 4 subtipos: <strong>2A, 2B, 2M e 2N</strong>. A atividade funcional cai muito mais que a quantidade proteica (Relação vWF:RCo / vWF:Ag < 0,6)."
+            ],
+            [
+              "<em>Subtipo 2A</em>",
+              "Perda seletiva dos multímeros de alto e intermediário peso molecular (por secreção defeituosa ou clivagem proteolítica excessiva pela enzima ADAMTS13).",
+              "Autossômica Dominante",
+              "Queda acentuada da adesão plaquetária dependente de vWF."
+            ],
+            [
+              "<em>Subtipo 2B</em>",
+              "<strong>Ganho de função anômalo</strong>: o vWF mutado liga-se espontaneamente ao receptor GPIb das plaquetas no plasma livre, formando agregados que são depurados rapidamente.",
+              "Autossômica Dominante",
+              "<strong>Cursa com Trombocitopenia intermitente ou crônica</strong> e ausência dos grandes multímeros. <em>ATENÇÃO:</em> <strong>O uso de DDAVP é CONTRAINDICADO no Tipo 2B</strong> pelo risco de piorar a trombocitopenia e induzir trombose!"
+            ],
+            [
+              "<em>Subtipo 2M</em>",
+              "Diminuição da função de ligação à plaqueta (GPIb) ou colágeno, mas com <strong>perfil de multímeros normal</strong>.",
+              "Autossômica Dominante",
+              "vWF:RCo reduzido com eletroforese de multímeros normal."
+            ],
+            [
+              "<em>Subtipo 2N (Normandia)</em>",
+              "<strong>Mutação no sítio de ligação do Fator VIII</strong>: o vWF não consegue se ligar nem proteger o FVIII no plasma.",
+              "<strong>Autossômica Recessiva</strong>",
+              "<strong>Mimetiza perfeitamente a Hemofilia A!</strong> vWF:Ag e vWF:RCo normais, mas <strong>níveis de Fator VIII criticamente baixos com TTPa muito prolongado</strong> em homens e mulheres!"
+            ],
+            [
+              "<strong>Tipo 3</strong><br>(Rara: 1:1.000.000)",
+              "<strong>Deficiência QUANTITATIVA TOTAL / AUSÊNCIA COMPLETA</strong> de vWF no plasma e plaquetas.",
+              "<strong>Autossômica Recessiva</strong> (pais heterozigotos assintomáticos).",
+              "Forma mais grave e incapacitante. vWF:Ag e vWF:RCo <strong>indetectáveis (< 1% a 3%)</strong>. Queda drástica de FVIII (< 5% a 10%). Manifesta-se com sangramentos mucocutâneos gravíssimos associados a <strong>hemartroses espontâneas</strong> (fenótipo misto de hemofilia grave!). Totalmente refratário a DDAVP; requer reposição direta de concentrado de FVIII/vWF."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.3 Apresentação Clínica Típica da Doença de von Willebrand"
+        ],
+        [
+          "p",
+          "O quadro clínico típico reflete a falência primordial da hemostasia primária:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sangramentos Mucocutâneos Espontâneos ou Pós-Traumáticos:</strong> Epistaxes recorrentes e prolongadas na infância (que exigem tamponamento anterior ou duram mais de 10 a 15 minutos), sangramento gengival espontâneo ao escovar os dentes, facilidade para formar equimoses extensas em resposta a traumas mínimos e sangramento prolongado em cortes superficiais.",
+            "<strong>Menorragia / Sangramento Uterino Anormal Grave na Menarca:</strong> É uma das queixas mais prevalentes em adolescentes femininas. Até <strong>15% a 20% das meninas que procuram o pronto-socorro ou ginecologista por menorragia volumosa desde a primeira menstruação são portadoras de Doença de von Willebrand Tipo 1 não diagnosticada</strong>!",
+            "<strong>Hemorragias Pós-Procedimentos Cirúrgicos:</strong> Sangramento excessivo e prolongado após adenoamigdalectomia (sítio cirúrgico mucoso rico em plasmina e altamente dependente de hemostasia primária) e após exodontias."
+          ]
+        ],
+        [
+          "3",
+          "5.4 Diagnóstico Laboratorial Específico"
+        ],
+        [
+          "p",
+          "A investigação diagnóstica exige um painel laboratorial direcionado:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Testes de Triagem Inicial:</strong>\n    <ul>\n      <li>Hemograma com contagem de plaquetas: normal (exceto no subtipo 2B, que apresenta trombocitopenia leve a moderada).",
+            "Tempo de Protrombina (TP / INR): rigorosamente normal.",
+            "Tempo de Tromboplastina Parcial Ativada (TTPa): normal nos casos leves de Tipo 1; ou <strong>prolongado</strong> se a atividade de Fator VIII estiver reduzida (< 40%) nos Tipos 1 moderado/grave, Tipo 2N e Tipo 3.",
+            "Tempo de Sangramento de Ivy (TS) ou Analisador de Função Plaquetária (PFA-100): habitualmente prolongado.",
+            "<strong>O Painel Diagnóstico Específico da DvW (A Tríade Laboratorial):</strong>\n    <ul>\n      <li><strong>1. Dosagem do Antígeno do Fator de von Willebrand (vWF:Ag):</strong> Mensura por método imunoenzimático quantitativo (ELISA ou turbidimetria) a quantidade total da proteína vWF no plasma (reduzido no Tipo 1 e indetectável no Tipo 3).",
+            "<strong>2. Ensaio de Atividade do Cofator de Ristocetina (vWF:RCo):</strong> Avalia a capacidade funcional do vWF plasmático do paciente de se ligar ao receptor plaquetário GPIb na presença do antibiótico indutor ristocetina. É o teste funcional clássico de atividade do vWF (diminuído nos Tipos 1, 2 e 3).",
+            "<strong>3. Dosagem da Atividade Coagulante do Fator VIII (FVIII:C):</strong> Avalia a capacidade secundária carreadora de FVIII.",
+            "<strong>4. Análise Eletroforética de Multímeros de vWF em Gel de Agarose:</strong> Realizada para diferenciar os subtipos qualitativos do Tipo 2 (demonstrando a perda dos multímeros de alto peso molecular nos subtipos 2A e 2B)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Atenção aos Fatores de Variação Fisiológica do vWF (Pegadinha Clássica de Provas!):</strong>"
+        ],
+        [
+          "p",
+          "O vWF é uma <strong>proteína de fase aguda</strong>: seus níveis plasmáticos sobem substancialmente em resposta a estresse físico, dor, choro vigoroso no momento da punção venosa em crianças, gravidez, febre, processos inflamatórios agudos e uso de anticoncepcionais orais contendo estrógenos. Portanto, uma amostra colhida durante um quadro infeccioso pode mostrar níveis falsamente normais de vWF em um paciente com DvW leve!"
+        ],
+        [
+          "p",
+          "Além disso, <strong>indivíduos com Tipagem Sanguínea Grupo O apresentam níveis fisiológicos basais de vWF cerca de 25% a 30% menores</strong> do que indivíduos dos grupos não-O (A, B ou AB), devido à depuração hepática acelerada de vWF mediada pelos antígenos glicídicos ABH."
+        ],
+        [
+          "3",
+          "5.5 Manejo Terapêutico"
+        ],
+        [
+          "u",
+          [
+            "<strong>Desmopressina (DDAVP):</strong> Droga de escolha no <strong>Tipo 1</strong> (dose de 0,3 mcg/kg IV ou subcutâneo diluído em SF em 30 min, ou formulação nasal concentrada). Estimula a exocitose rápida dos corpos de Weibel-Palade das células endoteliais, promovendo elevação de 3 a 5 vezes nos níveis plasmáticos de vWF e FVIII em 30 a 60 minutos. <em>Cuidados:</em> Restringir a ingesta hídrica por 24 horas para evitar intoxicação hídrica e <strong>hiponatremia dilucional com convulsões</strong> (pelo efeito antidiurético V2 do DDAVP). O uso de doses repetidas leva à depleção dos estoques endoteliais (<strong>taquifilaxia</strong>). <em>Contraindicado no Tipo 2B e Tipo 3!</em>",
+            "<strong>Concentrado de Fator VIII e vWF Derivado de Plasma de Alta Pureza (vírus-inativado):</strong> Tratamento padrão-ouro para o <strong>Tipo 3, Tipo 2 (especialmente 2B) e Tipo 1 com sangramentos maiores graves</strong> ou refratários ao DDAVP.",
+            "<strong>Antifibrinolíticos Adjuvantes (Ácido Tranexâmico / Ácido Épsilon-Aminocaproico):</strong> Altamente eficazes no controle de sangramentos de mucosas (epistaxes, sangramentos orais em cirurgias odontológicas e menorragias), inibindo a degradação do tampão plaquetário pela plasmina local na saliva e secreções."
+          ]
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-anemia-falciforme-e-hemoglobinopatias",
+      0,
+      [
+        [
+          "2",
+          "6. Hemoglobinopatias Pediátricas: Doença Falciforme e Crises Vaso-Oclusivas"
+        ],
+        [
+          "p",
+          "As hemoglobinopatias estruturais e as talassemias constituem o grupo de doenças genéticas monogênicas mais comum da humanidade. No Brasil, em decorrência da expressiva miscigenação e da ancestralidade afrodescendente, a <strong>Doença Falciforme (DF)</strong> representa um grave problema de saúde pública, com prevalência do traço falciforme (HbAS) variando de 2% a 10% da população geral (atingindo até 1:650 nascidos vivos na Bahia e 1:1.000 a 1:1.400 em São Paulo e Rio de Janeiro)."
+        ],
+        [
+          "3",
+          "6.1 Genética Molecular e Fisiopatologia da Polimerização da HbS"
+        ],
+        [
+          "p",
+          "A Anemia Falciforme clássica (forma homozigótica HbSS) é uma doença autossômica recessiva decorrente de uma mutação de ponto pontual no códon 6 do gene da globina beta (<em>HBB</em>) localizado no braço curto do cromossomo 11 (11p15.5): <strong>substituição de uma única base nitrogenada adenina por timina (GAG -> GTG), resultando na troca do aminoácido hidrofílico ácido glutâmico pelo aminoácido hidrofóbico valina na sexta posição da cadeia polipeptídica beta-globina (Glu6Val / beta-S)</strong>."
+        ],
+        [
+          "p",
+          "A presença da valina hidrofóbica cria um \"bolsão adesivo\" na superfície externa do tetrâmero de hemoglobina (HbS: alfa-2 / beta-S-2). Sob condições de estresse fisiológico celular — notadamente <strong>hipóxia tecidual, acidose metabólica, desidratação celular, hipertermia/febre e aumento de 2,3-difosfoglicerato (2,3-DPG)</strong> —, os tetrâmeros de desoxiemoglobina S sofrem uma transição conformacional que expõe o resíduo de valina, desencadeando um processo espontâneo de agregação intermolecular denominado <strong>polimerização da HbS</strong>."
+        ],
+        [
+          "p",
+          "Os polímeros insolúveis organizam-se em longos filamentos helicoidais rígidos de 14 filamentos tubulares que distorcem o citoesqueleto da hemácia, transformando o disco biconcave maleável em uma <strong>célula rígida, espiculada e em forma de foice (drepanócito / hemácia falcizada)</strong>. Ocorre dano oxidativo severo à membrana celular eritrocitária, perda de potássio e água via canais Gardos, externalização patológica de fosfatidilserina na monocamada lipídica externa e aprisionamento mecânico nos leitos capilares."
+        ],
+        [
+          "p",
+          "A patogenia contemporânea da Doença Falciforme não é meramente reológica, mas consiste em um estado crônico de <strong>vasculopatia inflamatória endotelial e estresse oxidativo</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemólise Intravascular Crônica e Depleção de Óxido Nítrico (NO):</strong> A destruição intravascular contínua das hemácias falcizadas libera grandes quantidades de <strong>hemoglobina livre no plasma</strong> e da enzima <strong>arginase-1</strong>. A hemoglobina livre atua como um potente \"sequestrador\" estequiométrico que consome e inativa o <strong>Óxido Nítrico endotelial (NO)</strong>, enquanto a arginase consome a L-arginina (substrato da síntese de NO). A depleção maciça de NO resulta em perda do tônus vasodilatador fisiológico, vasoconstrição arteriolar sustentada, proliferação miointimal vascular, ativação endotelial com hiperexpressão de moléculas de adesão (VCAM-1, ICAM-1, selectinas E e P) e hipertensão arterial pulmonar crônica.",
+            "<strong>Fenômeno Multicelular da Vaso-Oclusão:</strong> A vaso-oclusão microvascular aguda não é causada apenas pelo \"engasgamento\" de hemácias falcizadas, mas por uma complexa interação multicelular aderente envolvendo neutrófilos ativados, reticulócitos hiperadesivos expressando integrina alfa-4-beta-1, plaquetas e células endoteliais inflamatórias."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Cronologia Clínica na Infância: A Proteção Transitória da Hemoglobina Fetal"
+        ],
+        [
+          "p",
+          "Ao nascimento, o recém-nascido portador de HbSS é <strong>completamente assintomático</strong>. Por que a doença falciforme não se manifesta clinicamente no período neonatal? Porque os eritrócitos do recém-nascido são compostos predominantemente por <strong>Hemoglobina Fetal (HbF: alfa-2 / gama-2)</strong>, cujos níveis situam-se entre 70% e 90% ao nascer. As cadeias gama da HbF possuem arquitetura estérica que <strong>inibe e bloqueia ativamente a polimerização da HbS</strong>! À medida que ocorre a transição fisiológica da expressão de gama para beta-globina entre o 3º e o 6º mês de vida (com queda da HbF para níveis < 10% a 15%), surgem as primeiras manifestações clínicas da doença."
+        ],
+        [
+          "3",
+          "6.3 O Espectro das Crises Vaso-Oclusivas e Complicações Pediátricas"
+        ],
+        [
+          "o",
+          [
+            "<strong>Dactilite Falcêmica (Síndrome Mão-Pé):</strong>\n    <p>É tipicamente a <strong>primeira manifestação clínica da doença falciforme</strong>, surgindo entre os <strong>6 meses e 2 anos de idade</strong>. Caracteriza-se por microenfartes ósseos isquêmicos agudos e necrose asséptica da medula óssea das falanges proximais e metacarpianos/metatarsianos, onde persiste hematopoiese ativa nessa faixa etária. Manifesta-se por <strong>edema volumoso, tenso, doloroso, eritematoso e quente no dorso das mãos e/ou pés</strong>, com choro inconsolável à manipulação e recusa de engatinhar ou apoiar os membros. As radiografias iniciais são normais, podendo mostrar periostite laminar reativa após 1 a 2 semanas.</p>",
+            "<strong>Crises Álgicas Ósseas Vaso-Oclusivas (Crises de Dor):</strong>\n    <p>São a causa mais frequente de internação hospitalar e atendimento de urgência em crianças maiores e adolescentes. Envolvem infartos isquêmicos do osso medular em fêmures, tíbias, úmeros, vértebras e pelve. A dor é lancinante, em pontada ou queimação contínua, frequentemente precipitada por desidratação, infecções bacterianas ou virais intercorrentes, exposição ao frio súbito ou estresse físico.</p>",
+            "<strong>Síndrome Torácica Aguda (STA): A Maior Causa de Óbito na Infância:</strong>\n    <p>É uma emergência respiratória potencialmente fulminante definida clinicamente pelo surgimento de um <strong>novo infiltrado pulmonar à radiografia de tórax</strong> acompanhado de pelo menos um dos seguintes sinais/sintomas: <strong>febre >= 38,5 °C, tosse, taquipneia, dor torácica aguda, tiragem intercostal ou hipoxemia aguda (queda da SpO2 > 3% a 4% em relação ao basal)</strong>.</p>\n    <ul>\n      <li>Fisiopatologia: Desencadeada por uma combinação de infarto pulmonar microvascular local, <strong>embolia gordurosa da medula óssea necrótica</strong> e infecções pulmonares por germes atípicos (<em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em>) ou bacterianos clássicos (<em>Streptococcus pneumoniae</em>).",
+            "Manejo Emergencial: Oxigenioterapia suplementar para manter SpO2 > 92% a 95%; analgesia criteriosa (opioides intravenosos com cautela para não deprimir o centro respiratório); antibioticoterapia empírica imediata combinando uma <strong>Cefalosporina de 3ª geração (Ceftriaxona) associada obrigatoriamente a um Macrolídeo (Azitromicina ou Claritromicina)</strong> para cobertura de atípicos; broncodilatadores inalatórios; e <strong>Transfusão Simples ou Exsanguinotransfusão Parcial de Troca (Meta: reduzir os níveis de HbS para < 30% a 40% e manter Hb total em torno de 10 g/dL sem elevar o hematócrito acima de 30% para não aumentar a viscosidade sanguínea!)</strong>.",
+            "<strong>Crise de Sequestro Esplênico Agudo (Emergência Pediátrica Fulminante):</strong>\n    <p>Ocorre primariamente em lactentes e pré-escolares entre <strong>6 meses e 3 anos de idade</strong> (período no qual o baço ainda se encontra palpável e funcionante, antes de sofrer fibrose e autoesplenectomia completa). Ocorre aprisionamento mecânico súbito e maciço de um volume extraordinário de hemácias nos cordões de Billroth do baço. Manifesta-se por <strong>esplenomegalia dolorosa gigante de surgimento abrupto (em poucas horas), palidez extrema cadavérica, letargia profunda e choque hipovolêmico distributivo</strong>, com queda abrupta de 3 a 5 g/dL na hemoglobina em relação ao basal e reticulocitose explosiva (> 15% a 25%). O tratamento imediato é a expansão volêmica vigorosa com cristaloides e <strong>transfusão cuidadosa de concentrado de hemácias (10 mL/kg)</strong> para restaurar a perfusão tecidual (o baço frequentemente \"esvazia\" o sangue sequestrado de volta para a circulação sistêmica após o suporte). Episódios recorrentes exigem <strong>esplenectomia cirúrgica eletiva</strong>.</p>",
+            "<strong>Crise Aplásica Transitória (Infecção pelo Parvovírus B19):</strong>\n    <p>O Parvovírus B19 possui tropismo citotóxico seletivo e destrói diretamente os <strong>precursores eritroides na medula óssea (pró-eritroblastos)</strong>, cessando temporariamente a produção de novas hemácias por 7 a 14 dias. Como a hemácia falcêmica tem sobrevida ultra-curta (10 a 20 dias, contra 120 dias normais), a parada transitória da hematopoiese provoca uma <strong>queda catastrófica da hemoglobina associada ao achado patognomônico de CONTAGEM DE RETICULÓCITOS COLAPSADA (< 1% ou próxima de 0%)</strong>! (O que a diferencia categoricamente do sequestro esplênico e da crise hemolítica, onde há reticulocitose exuberante!). O tratamento baseia-se em suporte transfusional de emergência até a recuperação espontânea da medula óssea.</p>",
+            "<strong>Acidente Vascular Cerebral (AVC) Isquêmico e Doppler Transcraniano:</strong>\n    <p>Ocorre em até 10% a 11% das crianças não triadas com anemia falciforme, com pico de incidência entre os 2 e 9 anos de idade, causado por estenose progressiva e oclusão de grandes vasos do Polígono de Willis (artéria cerebral média e carótida interna terminal). A triagem anual com <strong>Doppler Transcraniano (DTC)</strong> iniciada a partir dos <strong>2 anos até os 16 anos de idade</strong> é obrigatória: se a velocidade de fluxo na artéria cerebral média for <strong>>= 200 cm/s (fluxo de alto risco)</strong>, a criança deve ser inserida imediatamente em um <strong>programa de Transfusão Crônica Regular mensal</strong> para manter HbS < 30%, o que reduz o risco relativo de primeiro AVC em mais de 90%!</p>",
+            "<strong>Asplenia Funcional e Infecções Graves por Germes Encapsulados:</strong>\n    <p>Devido aos microinfartos esplênicos repetidos na microcirculação, ocorre <strong>asplenia funcional precoce já no primeiro ano de vida</strong> (completando a <strong>autoesplenectomia fibrótica até os 5 a 6 anos de idade</strong>). As hemácias passam a exibir <strong>Corpúsculos de Howell-Jolly</strong> (inclusões basofílicas de restos nucleares de DNA que o baço são não consegue mais remover). A perda da filtração esplênica e da produção de opsoninas torna a criança criticamente suscetível a sepse fulminante e meningite por bactérias capsuladas, mormente <strong><em>Streptococcus pneumoniae</em> (Pneumococo)</strong>, <em>Haemophilus influenzae</em> tipo b e <em>Salmonella enterica</em> (agente causador clássico de <strong>Osteomielite</strong> na anemia falciforme!).</p>"
+          ]
+        ],
+        [
+          "3",
+          "6.4 Profilaxia e Terapias Modificadoras da Doença"
+        ],
+        [
+          "u",
+          [
+            "<strong>Triagem Neonatal (Teste do Pezinho):</strong> A eletroforese de hemoglobina em sangue colhido em papel de filtro (ou HPLC/focalização isoelétrica) permite o diagnóstico precoce ao nascimento:\n    <ul>\n      <li>Padrão Normal: <strong>Hb FA</strong> (predomínio de HbF com presença de HbA).",
+            "Traço Falciforme (Assintomático): <strong>Hb FAS</strong>.",
+            "Anemia Falciforme Homozigótica: <strong>Hb FS</strong> (apenas HbF e HbS, sem qualquer traço de HbA).",
+            "S-Beta Talassemia: <strong>Hb FSA</strong> (se S-beta+) ou <strong>Hb FS</strong> (se S-beta-zero)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Profilaxia com Penicilina Oral Contínua:</strong>"
+        ],
+        [
+          "p",
+          "Iniciada obrigatoriamente a partir dos <strong>2 a 3 meses de vida até no mínimo os 5 anos de idade</strong> (Penicilina V potássica oral ou Penicilina Benzatina IM a cada 21 a 30 dias). Reduz a mortalidade por sepse pneumocócica em mais de 84%!"
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Vacinação Especial Ampliada:</strong> Imunização obrigatória nos CRIE (Centros de Referência para Imunobiológicos Especiais) com a vacina pneumocócica conjugada 13-valente (VPC13) seguida da polissacarídica 23-valente (VPP23 aos 2 anos e reforço aos 5 anos), além de meningocócica conjugada ACWY e meningocócica B, e hepatite B.</li>\n  <li><strong>Suplementação de Ácido Fólico (1 a 5 mg/dia):</strong> Indicada de rotina para prevenir a carência de folato secundária à intensa eritropoiese compensatória hiperplásica da medula óssea.</li>\n  <li><strong>Hidroxiureia (Hidroxicarbamida): O Fármaco Modificador da Doença:</strong>"
+        ],
+        [
+          "p",
+          "Agente quimioterápico oral que inibe a ribonucleotídeo redutase e <strong>estimula a transcrição dos genes da globina gama, promovendo uma elevação expressiva dos níveis intracelulares de Hemoglobina Fetal (HbF)</strong>. Ao elevar a HbF para > 15% a 20%, a hidroxiureia bloqueia a polimerização da HbS, reduz o número de crises vaso-oclusivas em mais de 50%, diminui a incidência de Síndrome Torácica Aguda, reduz a necessidade de transfusões de sangue e hospitalizações e prolonga significativamente a sobrevida global. Indicada formalmente pela SBP/Ministério da Saúde a partir dos <strong>9 a 12 meses de idade</strong> para todas as crianças com anemia falciforme homozigótica HbSS ou S-beta-zero talassemia, independentemente da gravidade clínica inicial!"
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Terapia Curativa:</strong> O <strong>Transplante Alogênico de Células-Tronco Hematopoéticas (TMO alogênico de doador aparentado HLA-idêntico)</strong> é a única terapia curativa amplamente estabelecida, com taxas de cura superiores a 90% a 95% quando realizado na infância. A terapia gênica autóloga (como a edição gênica com CRISPR-Cas9 para reativar HbF - Exagamglogene autotemcel) foi aprovada recentemente por agências regulatórias internacionais, inaugurando uma nova era terapêutica.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-casos-clinicos",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Pediátricos Comentados Passo a Passo"
+        ],
+        [
+          "p",
+          "Os quatro casos clínicos a seguir detalham cenários clássicos de emergência, ambulatório e enfermaria pediátrica, com raciocínio propedêutico e terapêutico estruturado."
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Trombocitopenia Imune Primária Aguda em Lactente Saudável"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menina de 3 anos de idade, previamente hígida e eutrófica, é trazida pela mãe ao pronto-socorro infantil por apresentar \"manchas roxas e pintinhas vermelhas\" na pele há 24 horas."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança acordou ontem pela manhã com petéquias espalhadas pelo tórax e pernas e equimoses de 2 cm em braços e nádegas. Não houve história de queda, traumatismo ou uso de medicamentos. Há cerca de 3 semanas, a paciente apresentou quadro de coriza hialina, tosse seca e febrícula por 3 dias, atribuído a resfriado comum, que se resolveu espontaneamente sem sequelas. A menina está ativa, brincando normalmente, alimentando-se bem e afebril. Não houve sangramento gengival, epistaxe, hematúria ou melena."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em <strong>EXCELENTE ESTADO GERAL</strong>, corada, hidratada, ativa e cooperativa, afebril, anictérica. Sinais vitais normais para a idade. Pele: presença de <strong>petéquias disseminadas em face anterior do tórax, abdome e membros inferiores</strong>, associadas a quatro equimoses superficiais planas em antebraço esquerdo e coxas. Cavidade oral: mucosas úmidas e coradas, sem bolhas hemorrágicas em palato ou gengiva, sem sangramento gengival ativo. Orofaringe normal. Cadeias ganglionares: <strong>ausência de linfonodomegalias patológicas</strong> (sem adenomegalias cervicais, axilares ou inguinais). Abdome: plano, flácido, ruídos normais, <strong>FÍGADO E BAÇO RIGOROSAMENTE NÃO PALPÁVEIS</strong>. Aparelho osteoarticular: livre de dor à palpação ou movimentação de ossos longos e articulações."
+        ],
+        [
+          "p",
+          "<strong>Investigação Laboratorial de Urgência:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemograma completo: Hemoglobina: 12,4 g/dL; Hematócrito: 37%; VCM: 82 fL; Leucócitos totais: 6.800/mm³ (Neutrófilos segmentados: 52%, Linfócitos: 40%, Monócitos: 6%, Eosinófilos: 2%, Blastos: 0%); <strong>Plaquetas: 8.000/mm³ (Trombocitopenia grave isolada!)</strong>.",
+            "Hematoscopia de lâmina de sangue periférico: confirmação da plaquetopenia verdadeira, presença de macrotrombócitos jovens ocasionais, ausência de agregados de EDTA, ausência de blastos ou esquizócitos.",
+            "Coagulograma: TP (INR): 1,0; TTPa: 28 segundos (relação 0,95); Fibrinogênio: normal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O quadro preenche rigorosamente todos os critérios de <strong>Trombocitopenia Imune Primária (PTI) Aguda Típica da Infância</strong>: criança previamente sadia, história de pródromo viral recente, plaquetopenia isolada profunda (< 10.000/mm³) em criança com exame físico normal, sem hepatoesplenomegalia e sem adenomegalias.",
+            "<em>Dúvida Propedêutica Clássica:</em> <strong>É necessário realizar Mielograma? NÃO!</strong> Em crianças com PTI típica sem sinais de alarme no exame físico e sem alterações nas outras séries hematológicas, o mielograma <strong>não está indicado</strong>.",
+            "<em>Decisão Terapêutica Baseada em Evidências (Diretriz ASH / SBP):</em> Tratar o paciente, e não a contagem numérica de plaquetas! A paciente apresenta <strong>apenas manifestações hemorrágicas cutâneas leves a moderadas (grau 1 a 2 de Buchan)</strong>, sem qualquer sangramento mucoso ativo. Portanto, a conduta mais adequada e segura é a <strong>OBSERVAÇÃO CLÍNICA VIGILANTE e CONDUTA EXPECTANTE</strong>, sem necessidade de imunoglobulina IV, corticoterapia ou transfusão de plaquetas neste momento!",
+            "<strong>Orientações à Família:</strong> Repouso relativo domiciliar, suspensão temporária de esportes de contato e brincadeiras que envolvam risco de traumatismo craniano, contraindicação formal e absoluta de ácido acetilsalicílico e AINEs (ibuprofeno, cetoprofeno), contraindicação de injeções intramusculares. Retorno ambulatorial agendado em 7 dias com novo hemograma. Caso surja sangramento de mucosas ativo (epistaxe profusa, gengivorragia contínua), a conduta será prescrever Imunoglobulina Humana Intravenosa (IVIG 0,8 a 1 g/kg). Em 8 semanas, a paciente apresentou remissão espontânea completa com plaquetas em 210.000/mm³."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Vasculite por IgA (Púrpura de Henoch-Schönlein) com Dor Abdominal"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 5 anos de idade, previamente hígido, levado pela mãe à UPA por dor nas pernas, dor abdominal e \"erupções elevadas\" nos membros inferiores há 3 dias."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> Há cerca de 10 dias a criança apresentou episódio de faringoamigdalite bacteriana tratada com amoxicilina por 7 dias com resolução completa. Há 3 dias, a mãe notou o surgimento de lesões avermelhadas nas nádegas e pernas que \"parecem pequenas bolinhas duras ao passar a mão\". Concomitantemente, passou a queixar-se de dor intensa nos tornozelos, recusando-se a andar e pedindo colo. Nas últimas 24 horas, iniciou quadro de dor abdominal em cólica periumbilical intermitente e intensa, que piora após comer, acompanhada de 2 episódios de vômitos com restos alimentares. Nega febre no momento. Evacuações normais sem sangue visível."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em regular estado geral, irritada, queixosa de dor abdominal e articular, afebril, anictérica. Membros inferiores e região glútea: presença de <strong>múltiplas púrpuras e petéquias palpáveis (infiltradas ao toque), de formato arredondado, variando de 2 a 8 mm de diâmetro, confluentes em placas nos maléolos, com distribuição rigorosamente simétrica nas nádegas e superfícies posteriores de pernas e coxas</strong>, poupando tronco e face. Articulações: edema periarticular acentuado e calor discreto em ambos os tornozelos, com dor importante à dorsiflexão passiva e claudicação/recusa da marcha. Abdome: discretamente distendido, ruídos aumentados, dor difusa moderada à palpação profunda em mesogástrio, sem massas palpáveis ou descompressão brusca dolorosa. Bolsa escrotal normal, sem edema ou dor."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica Laboratorial e de Imagem:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemograma completo: Hemoglobina: 12,8 g/dL; Leucócitos: 13.500/mm³ (Segmentados 68%, Bastões 2%, Linfócitos 24%); <strong>Plaquetas: 380.000/mm³ (Plaquetas normais a elevadas / PÚRPURA NÃO TROMBOCITOPÊNICA!)</strong>.",
+            "Coagulograma: TP (INR): 1,0; TTPa: 27 s (normal).",
+            "Urina tipo I (EAS): Densidade 1.022; Proteínas: traços; <strong>Sedimento urinário: 15 a 20 hemácias por campo (hematúria microscópica glomerular)</strong>, ausência de leucocitúria.",
+            "Creatinina: 0,35 mg/dL; Ureia: 22 mg/dL.",
+            "Ultrassonografia abdominal com Doppler: Não evidenciou intussuscepção intestinal ileo-ileal ou ileo-cólica; demonstrado apenas discreto espessamento da parede de alças ileais distais compatível com edema de mucosa secundário à vasculite."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente preenche plenamente os critérios diagnósticos da <strong>Vasculite por IgA (Púrpura de Henoch-Schönlein)</strong> de acordo com o consenso internacional EULAR/PRINTO/PRES: <strong>Púrpura palpável de membros inferiores e nádegas (critério obrigatório) associada a artrite transitória não deformante de tornozelos, dor abdominal em cólica e envolvimento renal (hematúria microscópica)</strong>.",
+            "A presença de plaquetas normais (380.000/mm³) descarta PTI, meningococcemia e leucemia aguda.",
+            "A USG descartou a complicação cirúrgica imediata da intussuscepção intestinal.",
+            "<strong>Conduta Terapêutica:</strong>\n      <ul>\n        <li>Internação hospitalar para vigilância clínica, repouso no leito com membros elevados e dieta branda fracionada.",
+            "Prescrição de <strong>Prednisona oral na dose de 1 a 2 mg/kg/dia por 7 a 14 dias</strong> (com desmame subsequente). O corticoide é altamente eficaz para o <strong>alívio rápido da dor abdominal em cólica intensa e controle da dor articular</strong>!",
+            "<em>Ponto Conceitual Importante para a Família:</em> Esclarecer que o corticoide melhora a dor abdominal e articular, mas <strong>não previne novas recidivas cutâneas da púrpura e não impede a evolução para nefrite crônica</strong>.",
+            "<strong>Monitoramento Renal Obrigatório:</strong> Acompanhamento ambulatorial rigoroso com dosagem de Urina tipo I (EAS), relação proteína/creatinina urinária e aferição da pressão arterial semanalmente no primeiro mês e mensalmente por 6 meses. O paciente evoluiu com remissão completa da dor abdominal em 48h, resolução da artrite em 5 dias e desaparecimento da hematúria em 3 meses."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 3: Hemofilia A Grave com Hemartrose Aguda de Joelho"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 18 meses de vida, sexo masculino, levado à emergência pediátrica com dor intensa e inchaço no joelho direito há 6 horas após queda da própria altura."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança começou a andar há cerca de 3 meses. Hoje, após tropeçar em um tapete e sofrer uma queda de pequena altura com impacto no joelho direito, começou a chorar copiosamente de dor. Em poucas horas, a articulação do joelho aumentou dramaticamente de volume, tornando-se quente e tensa, com recusa completa de apoiar o membro no chão. Ao interrogatório sobre antecedentes pessoais, a mãe recorda que o menino apresentou sangramento excessivo e prolongado no local da punção do teste do pezinho ao nascer e hematomas subcutâneos volumosos em coxas após as vacinas intramusculares do primeiro ano de vida. Não há história de consanguinidade entre os pais. O irmão da mãe (tio materno da criança) faleceu na juventude por complicação hemorrágica após cirurgia dentária."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em choro contínuo antálgico. Sinais vitais estáveis, afebril. Membro inferior direito: <strong>articulação do joelho direito volumosa, acentuadamente edemaciada, com aumento de temperatura local, tensão capsular extrema, rechaço patelar positivo (\"sinal da tecla\" evidenciando derrame articular maciço), mantida em flexão antálgica forçada a 30 graus, com dor excruciante a qualquer tentativa de mobilização passiva</strong>. Ausência de petéquias cutâneas; presença de duas equimoses volumosas em panturrilha direita e região lombar. Fígado e baço normais."
+        ],
+        [
+          "p",
+          "<strong>Exames Laboratoriais Emergenciais:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hemograma completo: Hemoglobina: 11,2 g/dL; Leucócitos: 8.900/mm³; Plaquetas: 290.000/mm³ (normais).",
+            "Tempo de Protrombina (TP / INR): 1,0 (Atividade de protrombina 100% - normal).",
+            "<strong>Tempo de Tromboplastina Parcial Ativada (TTPa): 86 segundos (Controle: 28 segundos; Relação Paciente/Controle = 3,07 -> ALARGAMENTO ISOLADO E GRAVE DO TTPa!).</strong>",
+            "Fibrinogênio sérico: 310 mg/dL (normal).",
+            "<strong>Teste da Mistura 1:1 com Plasma Normal: O TTPa reduziu para 30 segundos (CORRIGIU TOTALMENTE, indicando deficiência quantitativa de fator da via intrínseca!).</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente apresenta a manifestação prototípica de <strong>Hemofilia Hereditária (Herança Recessiva Ligada ao X, com histórico em tio materno)</strong>: sangramento profundo (<strong>hemartrose aguda de joelho</strong> após trauma mínimo ao início da marcha) com <strong>alargamento isolado do TTPa que corrige no teste da mistura 1:1</strong> e plaquetas/TP estritamente normais.",
+            "<em>Conduta Emergencial Imediata:</em> <strong>REPOSIÇÃO IMEDIATA DE FATOR DE COAGULAÇÃO!</strong> Não atrasar a infusão de fator para aguardar exames de imagem!\n      <p>A dosagem específica de fatores revelou: <strong>Atividade de Fator VIII < 1% (0,005 UI/mL)</strong> e Atividade de Fator IX = 85%, firmando o diagnóstico inequívoco de <strong>Hemofilia A Grave</strong>.</p>",
+            "<strong>Cálculo da Dose de Reposição na Hemartrose Aguda:</strong>\n      <p>A meta para hemartrose aguda é elevar o nível plasmático de Fator VIII para <strong>40% a 50% da atividade normal</strong>.</p>\n      <p><em>Fórmula: Cada 1 UI/kg de Fator VIII infundido eleva a atividade plasmática em 2%!</em></p>\n      <p>Portanto, dose necessária = 40 a 50 UI / 2 = <strong>20 a 25 UI/kg de Concentrado de Fator VIII Recombinante intravenoso</strong> em bolus lento. Para um lactente de 12 kg, infundem-se cerca de 300 UI de Fator VIII, repetindo a cada 12 a 24 horas por 2 a 3 dias até a regressão total da sinovite.</p>",
+            "<em>Procedimento a ser EVITADO:</em> <strong>ARTROCENTESE / PUNÇÃO DO JOELHO É FORMALMENTE CONTRAINDICADA NA FASE AGUDA</strong>, a menos que haja suspeita associada de artrite séptica bacteriana ou síndrome compartimental articular extrema, devendo ser realizada apenas sob cobertura prévia de Fator VIII a 100%!",
+            "<strong>Plano de Seguimento de Longo Prazo:</strong> Inclusão no programa de <strong>Profilaxia Primária Regular com Fator VIII Recombinante venoso (ou Emicizumabe subcutâneo)</strong> para manter os níveis basais acima de 1% a 3%, protegendo a cartilagem articular e prevenindo a progressão para artropatia hemofílica crônica deformante."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 4: Anemia Falciforme com Síndrome Torácica Aguda em Escolar"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Menino de 7 anos de idade, pardo, com diagnóstico neonatal conhecido de Anemia Falciforme homozigótica (HbSS), trazido pela mãe à emergência pediátrica com tosse, febre alta e falta de ar há 18 horas."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> A mãe relata que a criança estava em uso regular de Hidroxiureia e ácido fólico. Há 2 dias começou a queixar-se de dor moderada em dorso e arcos costais, tratada em casa com paracetamol e hidratação oral. Ontem à noite evoluiu com febre aferida de 38,9 °C, tosse produtiva e piora progressiva da dor torácica (\"dor no peito ao respirar fundo\"), seguida de cansaço e respiração rápida. Nega hemoptise. A mãe nega crises prévias de sequestro esplênico; o baço não é palpável desde os 4 anos."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Criança em regular a mau estado geral, prostrada, toxêmica, gemente, intensamente hipocorada (3+/4+), ictérica (2+/4+ com escleras amareladas). Dados vitais: FC: 138 bpm; FR: 42 irpm (taquipneia importante); Temperatura axilar: 38,7 °C; <strong>Oximetria de pulso (SpO2): 89% em ar ambiente (queda crítica em relação à saturação basal habitual da criança de 95%!)</strong>. Aparelho respiratório: expansibilidade torácica diminuída à direita por dor; presença de <strong>tiragem subcostal e intercostal moderada, batimento de asas nasais</strong>; ausculta pulmonar revela <strong>estertores crepitantes finos e redução do murmúrio vesicular em terço médio e base pulmonar direita</strong> com sopro tubário. Aparelho cardiovascular: taquicárdico, sopro sistólico ejetivo 2+/6+ em foco pulmonar. Abdome: plano, indolor, sem visceromegalias palpáveis (baço atrófico não palpável por autoesplenectomia). Membros: sem edema ou dor óssea periférica."
+        ],
+        [
+          "p",
+          "<strong>Investigação Propedêutica de Urgência:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Radiografia de tórax (PA e perfil): Demonstrou <strong>consolidação alveolar com broncograma aéreo em lobo médio e lobo inferior direito associada a discreto velamento do seio costofrênico homolateral (infiltrado novo!)</strong>.",
+            "Hemograma completo: Hemoglobina: 6,4 g/dL (Hb basal habitual da criança: 8,2 g/dL; queda aguda de 1,8 g/dL); Hematócrito: 19%; <strong>Leucócitos: 24.500/mm³ (Segmentados: 76%, Bastões: 8%, Linfócitos: 12%); Plaquetas: 410.000/mm³</strong>.",
+            "Contagem de reticulócitos: 14% (reticulocitose compensatória ativa descartando crise aplásica por parvovírus).",
+            "Gasometria arterial (em ar ambiente): pH: 7,34; PaO2: 56 mmHg; PaCO2: 32 mmHg; HCO3: 17 mEq/L; SaO2: 88%.",
+            "Bilirrubina total: 4,8 mg/dL (Bilirrubina indireta: 3,9 mg/dL - hemólise crônica basal exacerbada)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Passo a Passo:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O paciente preenche todos os critérios diagnósticos e operacionais de <strong>Síndrome Torácica Aguda (STA)</strong>: portador de Doença Falciforme apresentando <strong>infiltrado pulmonar novo à radiografia de tórax acompanhado de febre alta, tosse, dor torácica, taquipneia, esforço respiratório e hipoxemia aguda (SpO2 89%)</strong>.",
+            "A Síndrome Torácica Aguda é a principal causa de admissão em UTI pediátrica e a <strong>principal causa de óbito</strong> em pacientes com doença falciforme! O manejo deve ser imediato e agressivo:",
+            "<strong>Pilares do Manejo Terapêutico na UTI Pediátrica:</strong>\n      <ul>\n        <li><strong>Oxigenioterapia Imediata:</strong> Máscara com reservatório não reinalante a 10 L/min visando manter SpO2 >= 95% e prevenir novas crises de vaso-oclusão induzidas por hipoxemia tecidual.",
+            "<strong>Antibioticoterapia Intravenosa de Amplo Espectro Combinada:</strong> Prescrição imediata de <strong>Ceftriaxona (100 mg/kg/dia) associada a Azitromicina oral/venosa (10 mg/kg/dia)</strong>, cobrindo tanto patógenos bacterianos capsulados clássicos (<em>S. pneumoniae</em>) quanto bactérias atípicas intracelulares (<em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em>, agentes desencadeantes primordiais de STA em escolares).",
+            "<strong>Analgesia Criteriosa:</strong> Morfina intravenosa titulada para alívio da dor torácica, associada a fisioterapia respiratória intensiva com espirômetro de incentivo (para prevenir atelectasias secundárias à hipoventilação antálgica).",
+            "<strong>Terapia Transfusional de Urgência:</strong>\n          <p>O paciente apresenta comprometimento multilobar com hipoxemia importante e queda da hemoglobina para 6,4 g/dL. Indicada <strong>Transfusão Simples de Concentrado de Hemácias fenotipadas (desleucocitadas e compatibilizadas para os antígenos C, E e Kell) na dose de 10 mL/kg</strong>.</p>\n          <p><em>Regra de Segurança Hematológica:</em> A meta transfusional é elevar a hemoglobina para cerca de 9,5 a 10 g/dL, <strong>SEM ULTRAPASSAR O HEMATÓCRITO DE 30%</strong> (pois hematócritos acima de 30% na doença falciforme elevam criticamente a viscosidade sanguínea e deflagram vaso-oclusão generalizada!). Em casos refratários ou de maior gravidade, indica-se a Exsanguinotransfusão parcial (eritrocitaférese) para reduzir a HbS < 30%.</p>\n      </ul>",
+            "O paciente apresentou melhora clínica da mecânica ventilatória em 24h, desmame do oxigênio no 4º dia e alta hospitalar após 7 dias de antibioticoterapia, mantendo seguimento com hidroxiureia ambulatorial."
+          ]
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "8. Questões Comentadas no Padrão Residência Médica, Revalida e ENAMED"
+        ],
+        [
+          "p",
+          "As questões a seguir foram selecionadas e minuciosamente comentadas para consolidar os temas de maior incidência em Hematologia Pediátrica nos concursos de Residência Médica e exames de revalidação."
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (USP - Acesso Direto):</strong> Lactente de 2 anos e 8 meses de vida, previamente hígido e com vacinação em dia, é trazido ao pronto-socorro infantil pela mãe, que notou o aparecimento súbito de petéquias disseminadas pelo tronco e membros inferiores e duas equimoses em nádegas há cerca de 12 horas. A mãe nega história de traumatismos. Relata que a criança apresentou quadro de febre e rinorreia hialina há 2 semanas, com melhora espontânea. Ao exame físico: paciente em excelente estado geral, ativo, corado, anictérico e afebril. Não há sangramentos ativos de mucosas, epistaxe ou gengivorragia. Fígado e baço não são palpáveis; ausência de linfonodomegalias periféricas. O hemograma revela: Hemoglobina 12,6 g/dL; Leucócitos 7.200/mm³ (com diferencial normal); e Plaquetas 9.000/mm³. A lâmina de sangue periférico confirma a plaquetopenia isolada com presença de algumas plaquetas gigantes, sem blastos ou outras atipias. De acordo com as diretrizes contemporâneas da Sociedade Brasileira de Pediatria (SBP) e da American Society of Hematology (ASH), a conduta mais adequada neste momento é:"
+        ],
+        [
+          "u",
+          [
+            "A) Realizar punção aspirativa de medula óssea (mielograma) de urgência para descartar Leucemia Linfoblástica Aguda antes de qualquer decisão.",
+            "B) Prescrever transfusão imediata de concentrado de plaquetas na dose de 1 unidade para cada 10 kg de peso para elevar a contagem acima de 50.000/mm³.",
+            "C) Adotar conduta expectante com observação clínica rigorosa e orientações de segurança para a família, sem necessidade de terapia farmacológica imediata.",
+            "D) Iniciar corticoterapia com prednisona oral na dose de 2 mg/kg/dia por 30 dias contínuos.",
+            "E) Indicar imunoglobulina humana intravenosa de urgência associada a esplenectomia de emergência."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta o quadro prototípico da <strong>Trombocitopenia Imune Primária (PTI) Aguda Pediátrica</strong>: criança saudável com antecedente de pródromo viral recente, plaquetopenia isolada profunda (< 10.000/mm³) em excelente estado geral e sem visceromegalias ou adenomegalias. As diretrizes internacionais modernas (ASH e SBP) consagraram a máxima: <em>\"Trate o paciente, não o número de plaquetas\"</em>. Em crianças que apresentam <strong>apenas manifestações hemorrágicas cutâneas leves</strong> (petéquias e equimoses), sem sangramento mucoso ativo ou fatores de risco, <strong>a conduta de escolha é a OBSERVAÇÃO CLÍNICA VIGILANTE e acompanhamento ambulatorial</strong>, independentemente da contagem de plaquetas. Mais de 75% a 80% das crianças evoluem para remissão espontânea completa em até 3 a 6 meses sem necessidade de fármacos!"
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> O mielograma NÃO está indicado de rotina na PTI típica sem alterações em outras séries hematológicas e com exame físico normal.",
+            "<em>Alternativa B incorreta:</em> A transfusão de plaquetas é formalmente contraindicada na rotina da PTI, pois as plaquetas transfundidas são destruídas em minutos pelos autoanticorpos circulantes; reserva-se exclusivamente para hemorragias com risco iminente de morte (hemorragia intracraniana).",
+            "<em>Alternativa D incorreta:</em> Corticoterapia não é necessária na ausência de sangramento mucoso significativo; se indicada, faz-se cursos curtos de 7 a 14 dias, e nunca 30 dias contínuos em crianças.",
+            "<em>Alternativa E incorreta:</em> Esplenectomia de emergência é uma conduta proscrita e desastrosa na infância precoce."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (ENARE / Exame Nacional de Residência):</strong> Menino de 6 anos é admitido na unidade de emergência com queixa de manchas arroxeadas nas pernas há 2 dias, dor e inchaço nos tornozelos e dor abdominal em cólica periumbilical. Ao exame físico: paciente eupneico, afebril; presença de púrpuras palpáveis confluentes de distribuição simétrica em membros inferiores e nádegas; edema e dor à mobilização de ambos os tornozelos; abdome doloroso à palpação profunda em mesogástrio, sem peritonismo. O hemograma demonstra: Hemoglobina: 12,2 g/dL; Leucócitos: 11.500/mm³; e <strong>Plaquetas: 340.000/mm³</strong>. O exame de urina tipo I revela hematúria microscópica com 20 hemácias por campo. Em relação ao diagnóstico mais provável e suas características clínicas e evolutivas, assinale a afirmativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) O diagnóstico é de Púrpura Trombocitopênica Trombótica (PTT), sendo necessária plasmaférese de urgência.",
+            "B) Trata-se de Vasculite por IgA (Púrpura de Henoch-Schönlein); o prognóstico de longo prazo depende fundamentalmente da gravidade do comprometimento renal.",
+            "C) O uso precoce de corticoterapia sistêmica está indicado para prevenir em definitivo a instalação da nefrite crônica.",
+            "D) A complicação cirúrgica gastrointestinal mais prevalente associada a esse quadro é a apendicite aguda perfurada por microtrombos.",
+            "E) O quadro de artrite dos tornozelos é habitualmente erosivo e destrutivo, exigindo uso precoce de metotrexato para evitar anquilose."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta a tétrade clássica da <strong>Vasculite por IgA (Púrpura de Henoch-Schönlein)</strong>: púrpura palpável não trombocitopênica em membros inferiores/nádegas (plaquetas normais de 340.000/mm³), artrite de tornozelos, dor abdominal em cólica e nefrite (hematúria microscópica). Embora as manifestações cutâneas, articulares e gastrointestinais sejam autolimitadas, o <strong>prognóstico de longo prazo e a morbimortalidade futura do paciente são determinados exclusivamente pela gravidade do acometimento renal</strong> (risco de glomerulonefrite proliferativa e insuficiência renal crônica em até 1% a 2% dos casos)."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Na PTT há trombocitopenia grave com anemia hemolítica microangiopática e esquizócitos na lâmina, quadro ausente no paciente.",
+            "<em>Alternativa C incorreta:</em> Clássica pegadinha de concursos! Ensaios clínicos demonstraram que o corticoide oral alivia a dor abdominal e articular, mas <strong>NÃO PREVINE O APARECIMENTO NEM A PROGRESSÃO DA DOENÇA RENAL</strong> e não previne recidivas da púrpura.",
+            "<em>Alternativa D incorreta:</em> A complicação gastrointestinal clássica é a <strong>Intussuscepção Intestinal Aguda</strong> (predominantemente ileo-ileal), e não apendicite.",
+            "<em>Alternativa E incorreta:</em> A artrite na Vasculite por IgA é transitória, autolimitada e <strong>não erosiva</strong>, curando completamente sem deixar deformidades."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP - Residência Médica):</strong> Menino de 1 ano de idade, do sexo masculino, inicia os primeiros passos e apresenta episódio de hemartrose volumosa de joelho direito após queda leve da própria altura, além de hematomas musculares extensos nos locais de vacinação no primeiro ano de vida. Não há histórico familiar conhecido de sangramentos. Os exames laboratoriais revelam: Plaquetas: 250.000/mm³; Tempo de Protrombina (TP / INR): 1,0 (normal); <strong>Tempo de Tromboplastina Parcial Ativada (TTPa): 78 segundos (Controle: 26 segundos; relação 3,0)</strong>; Fibrinogênio normal. Ao realizar o teste da mistura do plasma do paciente com plasma normal na proporção 1:1, <strong>o TTPa normalizou completamente para 27 segundos</strong>. Assinale a alternativa que indica o diagnóstico mais provável, o padrão de herança genética e a conduta medicamentosa preventiva padrão-ouro:"
+        ],
+        [
+          "u",
+          [
+            "A) Doença de von Willebrand Tipo 3; autossômica dominante; administração diária de DDAVP por via nasal.",
+            "B) Hemofilia A Grave; herança recessiva ligada ao cromossomo X; reposição profilática regular periódica com concentrado de Fator VIII recombinante.",
+            "C) Deficiência de Fator VII da coagulação; autossômica recessiva; infusão de plasma fresco congelado semanal.",
+            "D) Presença de Anticoagulante Lúpico circulante; autoimune adquirida; anticoagulação plena com varfarina.",
+            "E) Trombastenia de Glanzmann; autossômica recessiva; transfusão semanal de plaquetas filtradas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O quadro de <strong>hemartrose espontânea/pós-trauma leve em menino ao iniciar a deambulação</strong>, associado a hematomas profundos e <strong>alargamento isolado do TTPa com TP e plaquetas normais</strong>, é característico de <strong>Hemofilia Hereditária</strong>. O fato de o <strong>TTPa corrigir totalmente no teste da mistura 1:1 com plasma normal confirma que se trata de uma DEFICIÊNCIA QUANTITATIVA DE FATOR</strong> (e exclui a presença de inibidores ou anticoagulante lúpico, que não corrigem a mistura). Como a Hemofilia A é 5 vezes mais comum que a B e afeta o sexo masculino por herança recessiva ligada ao cromossomo X (com mutação <em>de novo</em> em 30% sem história familiar), a hipótese primordial é Hemofilia A. A conduta preventiva padrão-ouro mundial para prevenir a artropatia hemofílica crônica deformante é a <strong>profilaxia primária com Concentrado de Fator VIII Recombinante</strong> iniciado precocemente."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A DvW Tipo 3 é autossômica recessiva e é completamente refratária ao DDAVP (pois não há síntese de vWF nos estoques para liberar).",
+            "<em>Alternativa C incorreta:</em> A deficiência de Fator VII cursa com alargamento isolado do Tempo de Protrombina (TP), com TTPa normal (via extrínseca).",
+            "<em>Alternativa D incorreta:</em> Se houvesse anticoagulante lúpico (inibidor), o TTPa NÃO corrigiria no teste da mistura 1:1!",
+            "<em>Alternativa E incorreta:</em> Na Trombastenia de Glanzmann, os tempos de coagulação (TP e TTPa) são normais e o Tempo de Sangramento é muito prolongado com plaquetas normais (defeito de GPIIb/IIIa)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 4 (Revalida INEP):</strong> Uma adolescente de 14 anos é trazida à consulta médica com história de sangramento menstrual excessivo e prolongado (duração de 9 a 10 dias, com coágulos e necessidade de trocar absorventes noturnos a cada 2 horas) desde a menarca há 8 meses. Refere também histórico de epistaxes frequentes na infância e sangramento gengival durante a escovação dentária. Nega dores articulares ou hematomas musculares profundos. O hemograma demonstra: Hemoglobina: 9,8 g/dL; VCM: 74 fL; Ferritina: 7 ng/mL; Plaquetas: 260.000/mm³. O coagulograma revela TP (INR) de 1,0 e TTPa com relação de 1,1 (limítrofe). A avaliação da hemostasia primária revela tempo de oclusão no analisador de função plaquetária (PFA-100) acentuadamente prolongado. Diante da principal hipótese diagnóstica, assinale a opção que contém o teste confirmatório específico e o fármaco que estimula a liberação endógena da proteína deficiente:"
+        ],
+        [
+          "u",
+          [
+            "A) Dosagem do Fator IX da coagulação; Fator VII ativado recombinante.",
+            "B) Dosagem do Antígeno do Fator de von Willebrand (vWF:Ag) e atividade do Cofator de Ristocetina (vWF:RCo); Desmopressina (DDAVP).",
+            "C) Mielograma com biópsia óssea; Prednisona oral.",
+            "D) Tempo de lise da euglobina; Ácido Tranexâmico.",
+            "E) Agregação plaquetária com ADP e colágeno; Hidroxiureia."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "Menorragia grave e persistente desde a menarca associada a sangramentos mucocutâneos prévios (epistaxe, gengivorragia) e anemia ferropriva em adolescente com contagem de plaquetas normal é a apresentação clínica clássica da <strong>Doença de von Willebrand (DvW Tipo 1)</strong>. O diagnóstico confirmatório exige o painel específico composto pela <strong>dosagem do antígeno do vWF (vWF:Ag) e pelo ensaio funcional de atividade do cofator de ristocetina (vWF:RCo)</strong>, associados à dosagem de Fator VIII. O fármaco de escolha no Tipo 1 é a <strong>Desmopressina (DDAVP)</strong>, que induz a rápida exocitose dos corpos de Weibel-Palade das células endoteliais, liberando estoques endógenos de vWF e FVIII na circulação."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Fator IX refere-se à Hemofilia B, que cursa com sangramentos profundos (hemartroses) e herança ligada ao X, sendo rara em meninas.",
+            "<em>Alternativa C incorreta:</em> O mielograma é totalmente desnecessário e invasivo para investigar menorragia com plaquetas normais.",
+            "<em>Alternativa D incorreta:</em> O tempo de lise de euglobina avalia hiperfibrinólise primária sistêmica rara.",
+            "<em>Alternativa E incorreta:</em> A hidroxiureia é utilizada na anemia falciforme, sem indicação na DvW."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 5 (SURCE - Seleção Unificada para Residência Médica do Ceará):</strong> Lactente de 11 meses de vida com diagnóstico de Anemia Falciforme homozigótica (HbSS) é trazido pela mãe à emergência pediátrica com história de palidez cutânea acentuada de instalação súbita há 4 horas, acompanhada de prostração, sonolência e choro fraco. Ao exame físico: paciente gemente, extremamente descorado (4+/4+), taquicárdico (FC 168 bpm), perfusão capilar periférica lentificada (4 segundos). À palpação do abdome, o médico detecta um <strong>baço doloroso, endurecido e gigante, palpável a 6 cm abaixo do rebordo costal esquerdo e estendendo-se até a fossa ilíaca esquerda</strong> (a mãe refere que nas consultas anteriores o baço mal era palpável). O hemograma urgente revela: Hemoglobina: 3,8 g/dL (Hb basal da criança: 8,0 g/dL); Plaquetas: 85.000/mm³; e Contagem de Reticulócitos: 22%. Diante deste quadro de extrema gravidade, assinale o diagnóstico e a conduta imediata prioritária:"
+        ],
+        [
+          "u",
+          [
+            "A) Crise Aplásica por Parvovírus B19; administrar concentrado de hemácias e imunoglobulina IV de emergência.",
+            "B) Crise de Hiper-hemólise aguda; realizar plasmaférese e corticoterapia venosa imediata.",
+            "C) Crise de Sequestro Esplênico Agudo; estabilização hemodinâmica com expansão volêmica e transfusão criteriosa de concentrado de hemácias.",
+            "D) Síndrome Torácica Aguda fulminante; iniciar antibioticoterapia com Ceftriaxona e Macrolídeo e ventilação mecânica.",
+            "E) Leucemia Aguda secundária; realizar punção de medula óssea imediata."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "O paciente apresenta uma das emergências mais temidas e letais da pediatria: a <strong>Crise de Sequestro Esplênico Agudo</strong>. Ocorre em lactentes e crianças pequenas com HbSS (antes de ocorrer a autoesplenectomia por fibrose), caracterizando-se por aprisionamento maciço e súbito de sangue na rede vascular esplênica. O quadro clínico é inconfundível: <strong>esplenomegalia dolorosa de rápido crescimento, palidez cadavérica aguda, choque hipovolêmico, queda vertiginosa da hemoglobina e RETICULOCITOSE MARCANTE (22%)</strong>. A conduta imediata prioritária é o combate ao choque hipovolêmico com expansão volêmica de cristaloides e <strong>transfusão criteriosa de concentrado de hemácias (10 mL/kg)</strong> para restabelecer a volemia e o transporte de oxigênio."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A crise aplásica pelo Parvovírus B19 cursa com <strong>reticulócitos colapsados (< 1% ou 0%)</strong> e não apresenta esplenomegalia gigante aguda.",
+            "<em>Alternativa B incorreta:</em> A hiper-hemólise cursa com icterícia exuberante e hemoglobinúria, sem acúmulo esplênico maciço isolado.",
+            "<em>Alternativa D incorreta:</em> Na Síndrome Torácica Aguda o foco primordial é respiratório (infiltrado novo no RX de tórax, esforço ventilatório, tosse).",
+            "<em>Alternativa E incorreta:</em> O quadro agudo é uma emergência mecânica vascular do baço, não havendo indicação de mielograma no choque."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 6 (FMUSP - Residência Médica):</strong> Em relação ao mecanismo de ação e aos benefícios clínicos do uso da Hidroxiureia (Hidroxicarbamida) em crianças com Anemia Falciforme homozigótica (HbSS), assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) Atua quelando o ferro livre tóxico intracelular, prevenindo a hemocromatose secundária às múltiplas transfusões.",
+            "B) Inibe seletivamente a ciclo-oxigenase-2 (COX-2) nos endotélios vasculares, reduzindo os níveis de prostaglandinas inflamatórias.",
+            "C) Estimula a transcrição dos genes da cadeia gama-globina, promovendo a elevação dos níveis intracelulares de Hemoglobina Fetal (HbF) e inibindo a polimerização da HbS.",
+            "D) Promove a dilatação seletiva das artérias coronárias e renais através do aumento direto da síntese de endotelina-1.",
+            "E) Bloqueia irreversivelmente os receptores plaquetários de ADP P2Y12, exercendo efeito antiagregante idêntico ao clopidogrel."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A <strong>Hidroxiureia</strong> é o principal fármaco modificador da história natural da Doença Falciforme. Seu principal mecanismo terapêutico consiste em <strong>estimular a reativação transcricional dos genes da globina gama (HBG1/HBG2)</strong> nos progenitores eritroides medulares, resultando em um <strong>aumento substancial dos níveis de Hemoglobina Fetal (HbF)</strong> no interior das hemácias. Como o tetrâmero da HbF (alfa-2 / gama-2) não participa da polimerização e bloqueia estericamente o alinhamento das moléculas de HbS desoxigenadas, a elevação da HbF previne o afoiçamento celular, reduz drasticamente as crises álgicas vaso-oclusivas e os episódios de Síndrome Torácica Aguda, além de reduzir a adesão leucocitária endotelial e elevar a sobrevida."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A quelação de ferro é realizada por quelantes específicos como Deferasirox e Desferroxamina.",
+            "<em>Alternativas B, D e E incorretas:</em> Descrevem mecanismos farmacológicos de anti-inflamatórios, vasodilatadores e antiagregantes plaquetários que não correspondem à farmacodinâmica da hidroxiureia."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 7 (SES-PE - Residência Médica):</strong> Lactente de 9 meses de vida, portador de anemia falciforme diagnosticado no teste do pezinho (padrão Hb FS), é trazido pela mãe para consulta de puericultura na Atenção Primária. A criança encontra-se assintomática e em aleitamento materno complementado. Em relação às medidas profiláticas universais preconizadas pelo Ministério da Saúde e Sociedade Brasileira de Pediatria para essa criança, assinale a conduta CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "A) Iniciar profilaxia contínua com Penicilina V oral diária até pelo menos os 5 anos de idade e prescrever suplementação diária de ácido fólico.",
+            "B) Prescrever sulfato ferroso profilático em altas doses (5 mg/kg/dia) contínuo para evitar a anemia falcêmica.",
+            "C) Indicar esplenectomia cirúrgica profilática aos 12 meses de idade para evitar crises de sequestro esplênico.",
+            "D) Contraindicar a aplicação de qualquer vacina de vírus atenuado ou bacteriana pelo risco de induzir aplasia medular fulminante.",
+            "E) Manter repouso absoluto no leito e indicar transfusão profilática bimensal de sangue desde o primeiro ano de vida."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa A</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "Devido à asplenia funcional precoce decorrente de microenfartes vasculares repetidos no baço, crianças com doença falciforme homozigótica têm um risco extraordinariamente elevado de bacteremia oculta e sepse fulminante por germes capsulados, especialmente o <strong><em>Streptococcus pneumoniae</em> (Pneumococo)</strong>. A medida preventiva mais impactante na redução da mortalidade pediátrica é a <strong>profilaxia universal com Penicilina oral iniciada aos 2 a 3 meses de vida e mantida até pelo menos os 5 anos de idade</strong>, associada à <strong>suplementação rotineira de ácido fólico (1 mg/dia)</strong> para suprir a alta demanda da eritropoiese hiperplásica."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa B incorreta:</em> <strong>NUNCA administrar ferro de rotina na doença falciforme!</strong> A anemia é hemolítica crônica (o ferro reciclado das hemácias destruídas acumula-se no organismo); a sobrecarga de ferro induz hemocromatose secundária com falência hepática e cardíaca. O ferro só é reposto se houver deficiência de ferro documentada laboratorialmente por ferritina sérica colapsada.",
+            "<em>Alternativa C incorreta:</em> A esplenectomia não é profilática universal aos 12 meses; é indicada apenas após episódios graves ou repetidos de sequestro esplênico agudo.",
+            "<em>Alternativa D incorreta:</em> O calendário vacinal deve ser ampliado com vacinas para encapsulados (pneumococo conjugada e polissacarídica, meningocócicas ACWY e B), e não suspenso.",
+            "<em>Alternativa E incorreta:</em> A transfusão crônica é indicada para pacientes com DTC alterado ou AVC prévio, não de rotina a todos os lactentes."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 8 (ENAMED / Exame Nacional de Medicina):</strong> Menino de 4 anos com anemia falciforme é trazido ao pronto-atendimento com tosse produtiva, febre de 38,8 °C e dor torácica há 24 horas. Ao exame: taquipneico (FR 44 irpm), com tiragem intercostal moderada e SpO2 de 90% em ar ambiente. A radiografia de tórax revela consolidação alveolar em base direita com broncograma aéreo (infiltrado pulmonar novo). Diante do diagnóstico de Síndrome Torácica Aguda (STA), o esquema antimicrobiano empírico intravenoso inicial mandatório deve incluir:"
+        ],
+        [
+          "u",
+          [
+            "A) Amoxicilina oral em monoterapia ambulatorial por 7 dias.",
+            "B) Cefalosporina de 3ª geração (Ceftriaxona) associada a um Macrolídeo (Azitromicina ou Claritromicina).",
+            "C) Penicilina Cristalina intravenosa em monoterapia.",
+            "D) Ciprofloxacino intravenoso associado a Metronidazol.",
+            "E) Vancomicina associada a Anfotericina B desoxicolato."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Justificativa Detalhada da Alternativa Correta:</strong>"
+        ],
+        [
+          "p",
+          "A <strong>Síndrome Torácica Aguda (STA)</strong> é uma emergência crítica com alta taxa de mortalidade. Na sua etiologia infecciosa, além dos patógenos comunitários e capsulados clássicos como o <em>Streptococcus pneumoniae</em>, há uma frequência extraordinariamente alta de infecções por <strong>bactérias atípicas intracelulares</strong>, com destaque absoluto para o <strong><em>Mycoplasma pneumoniae</em> e <em>Chlamydia pneumoniae</em></strong>. Por essa razão, todos os consensos internacionais e a SBP determinam que a antibioticoterapia intravenosa inicial deve combinar obrigatoriamente um betalactâmico de largo espectro (<strong>Ceftriaxona</strong>) com um agente com cobertura excelente para germes atípicos (<strong>Macrolídeo: Azitromicina ou Claritromicina</strong>)."
+        ],
+        [
+          "p",
+          "<strong>Refutação Minuciosa dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> A STA exige internação hospitalar imediata e terapia parenteral, nunca tratamento ambulatorial com amoxicilina oral.",
+            "<em>Alternativa C incorreta:</em> A penicilina isolada não cobre germes atípicos (que não possuem parede celular de peptideoglicano).",
+            "<em>Alternativa D incorreta:</em> Fluoroquinolonas e metronidazol cobrem Gram-negativos e anaeróbios de foco abdominal, inadequados para a microbiota pulmonar pediátrica.",
+            "<em>Alternativa E incorreta:</em> Antifúngicos não têm indicação no manejo inicial da pneumonia comunitária em pediatria."
+          ]
+        ]
+      ]
+    ],
+    [
+      "hemato-ped-tabela-high-yield-conclusao",
+      0,
+      [
+        [
+          "2",
+          "9. Tabela Comparativa High-Yield e Takeaway Messages"
+        ],
+        [
+          "p",
+          "Esta seção consolida as desordens hemostáticas e hematológicas pediátricas em uma matriz comparativa estruturada para revisão e fixação imediata."
+        ],
+        [
+          "t",
+          [
+            "Entidade Clínica",
+            "Mecanismo Fisiopatológico Principal",
+            "Padrão de Herança / Etiologia",
+            "Quadro Clínico Distintivo",
+            "Perfil Laboratorial Característico",
+            "Tratamento Inicial / Específico"
+          ],
+          [
+            [
+              "<strong>Trombocitopenia Imune Primária (PTI)</strong>",
+              "Autoanticorpos IgG anti-GPIIb/IIIa e anti-GPIb/IX levando à destruição esplênica de plaquetas por macrófagos.",
+              "Autoimune pós-viral adquirida (1 a 4 semanas após IVAS).",
+              "Petéquias e equimoses súbitas em criança previamente saudável em <strong>bom estado geral, SEM organomegalias</strong>.",
+              "<strong>Plaquetopenia isolada severa (< 20.000/mm³)</strong>; séries vermelha e branca rigorosamente normais. Mielograma dispensado na forma típica.",
+              "Conduta expectante se sangramento mucoso ausente. Se sangramento ativo grave: <strong>Imunoglobulina IV (IVIG 0,8 a 1 g/kg) ou corticoide</strong>. Transfusão de plaquetas proscrita na rotina!"
+            ],
+            [
+              "<strong>Vasculite por IgA (Henoch-Schönlein)</strong>",
+              "Deposição de imunocomplexos de IgA1 hipogalactosilada em vênulas pós-capilares com vasculite leucocitoclástica.",
+              "Imunomediada pós-infecciosa (após faringite estreptocócica ou viral).",
+              "<strong>Púrpura palpável em nádegas e MMII</strong>, artrite transitória não deformante de tornozelos/joelhos, dor abdominal em cólica (intussuscepção) e nefrite (hematúria).",
+              "<strong>Plaquetas NORMAIS ou aumentadas</strong> (não trombocitopênica); coagulograma normal; hematúria/proteinúria na urina tipo I.",
+              "Suporte clínico e repouso. Corticoterapia (prednisona) alivia a dor abdominal e articular, mas <strong>não previne a nefrite crônica</strong>! Monitorar urina por 6 meses."
+            ],
+            [
+              "<strong>Hemofilia A e B</strong>",
+              "Deficiência congênita do Fator VIII (Hemofilia A) ou Fator IX (Hemofilia B) da cascata da coagulação secundária.",
+              "<strong>Recessiva Ligada ao Cromossomo X</strong> (homens acometidos; mulheres portadoras; 30% mutação <em>de novo</em>).",
+              "<strong>Sangramentos profundos</strong>: hemartroses recorrentes de joelhos/cotovelos (artropatia hemofílica), hematomas intramusculares volumosos e HIC.",
+              "<strong>TTPa ALARGADO ISOLADO que CORRIGE no teste da mistura 1:1 com plasma normal</strong>. Plaquetas, TP e fibrinogênio normais. Dosagem de fator específica < 1% (grave).",
+              "<strong>Profilaxia primária com Concentrado de Fator Recombinante</strong> (FVIII ou FIX). DDAVP apenas na Hemofilia A leve. Emicizumabe subcutâneo na Hemofilia A. Proscrita artrocentese na hemartrose aguda sem fator!"
+            ],
+            [
+              "<strong>Doença de von Willebrand (DvW)</strong>",
+              "Deficiência quantitativa (Tipo 1 e 3) ou qualitativa (Tipo 2) do vWF, prejudicando a adesão plaquetária e a estabilidade do Fator VIII.",
+              "<strong>Autossômica Dominante</strong> (Tipos 1 e 2) ou Recessiva (Tipo 3 e 2N). Acomete homens e mulheres igualmente.",
+              "<strong>Sangramentos mucocutâneos</strong>: epistaxes de repetição, gengivorragias, equimoses fáceis e <strong>menorragia severa desde a menarca</strong> em adolescentes.",
+              "Plaquetas normais (exceto trombocitopenia no 2B); PFA-100 ou Tempo de Sangramento prolongado; <strong>vWF:Ag e vWF:RCo diminuídos</strong>. TTPa alargado nos casos graves.",
+              "<strong>DDAVP (Desmopressina)</strong> no Tipo 1. Concentrado de FVIII/vWF plasmático no Tipo 3 e 2. Antifibrinolíticos orais (Ácido Tranexâmico). <em>DDAVP contraindicado no Tipo 2B!</em>"
+            ],
+            [
+              "<strong>Anemia Falciforme (HbSS)</strong>",
+              "Mutação de ponto Glu6Val na cadeia beta-globina gerando HbS, que polimeriza sob hipóxia e deforma a hemácia em foice.",
+              "<strong>Autossômica Recessiva</strong> (homozigose HbSS; traço HbAS assintomático).",
+              "Dactilite (6m-2a), crises álgicas ósseas, <strong>Síndrome Torácica Aguda (infiltrado novo + febre + hipoxemia)</strong>, sequestro esplênico e asplenia funcional.",
+              "Eletroforese no Teste do Pezinho: <strong>Padrão Hb FS</strong>. Anemia hemolítica com drepanócitos e reticulocitose intensa (exceto reticulocitopenia na crise aplásica por Parvovírus B19).",
+              "<strong>Profilaxia com Penicilina oral (até 5 anos)</strong> + vacinas conjugadas especiais + Ácido Fólico. <strong>Hidroxiureia</strong> (eleva HbF e reduz crises). Na STA: Ceftriaxona + Macrolídeo + Transfusão com alvo Hb 10 g/dL (Ht < 30%)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "10 Takeaways Essenciais para Gabaritar em Hematologia Pediátrica:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Trate o Paciente na PTI:</strong> Criança hígida com plaquetopenia isolada (< 20.000/mm³) sem sangramento mucoso ativo deve receber conduta expectante e vigilância, sem corticoide ou IVIG imediatos.",
+            "<strong>Visceromegalia NÃO É PTI:</strong> A presença de esplenomegalia, hepatomegalia ou linfonodomegalia exclui PTI e obriga a investigação imediata de Leucemia Linfoblástica Aguda.",
+            "<strong>Mielograma na PTI:</strong> Não é obrigatório na forma típica; é mandatório apenas se houver bicitopenia/pancitopenia, visceromegalias, dor óssea noturna ou falha de resposta terapêutica.",
+            "<strong>Vasculite por IgA é NÃO TROMBOCITOPÊNICA:</strong> A púrpura palpável em membros inferiores e nádegas cursa com plaquetas normais ou aumentadas. O prognóstico tardio depende exclusivamente da nefrite por IgA.",
+            "<strong>Corticoides na Vasculite por IgA:</strong> Aliviam a dor abdominal em cólica e a artrite, mas NÃO previnem a nefrite crônica nem as recidivas cutâneas da púrpura.",
+            "<strong>Herança das Hemofilias:</strong> Hemofilias A (Fator VIII) e B (Fator IX) têm herança recessiva ligada ao X; acometem meninos; 30% decorrem de mutações novas sem história familiar.",
+            "<strong>TTPa e o Teste da Mistura:</strong> TTPa alargado isolado que corrige na mistura 1:1 com plasma normal define deficiência quantitativa de fator (Hemofilias). Se não corrigir, há inibidor circulante presente.",
+            "<strong>Doença de von Willebrand:</strong> É a coagulopatia hereditária mais comum; herança autossômica dominante (homens e mulheres); manifesta-se por sangramento mucocutâneo e menorragia severa na menarca. DDAVP é a droga de escolha no Tipo 1, mas contraindicado no Tipo 2B!",
+            "<strong>Dactilite Falcêmica:</strong> É a primeira manifestação da Anemia Falciforme (6 meses a 2 anos), com edema doloroso em dorso de mãos e pés. A HbF protege o recém-nascido nos primeiros meses.",
+            "<strong>Emergências Falcêmicas:</strong> Na Síndrome Torácica Aguda, associar Ceftriaxona + Macrolídeo (para cobrir <em>Mycoplasma</em>) e transfundir sem passar Ht de 30%. No Sequestro Esplênico, há esplenomegalia gigante súbita, choque e reticulocitose explosiva. Na crise por Parvovírus B19, há anemia súbita com reticulócitos colapsados (0%). Penicilina profilática diária até os 5 anos de idade!"
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Departamento Científico de Hematologia Pediátrica. Guia Prático de Púrpuras e Coagulopatias na Infância. Rio de Janeiro: SBP, 2022/2024.</a>",
+            "<a href=\"https://ashpublications.org\" target=\"_blank\" rel=\"noopener noreferrer\">NEUNERT, C. et al. American Society of Hematology 2019 guidelines for immune thrombocytopenia. Blood Advances, v. 3, n. 23, p. 3829-3866, 2019.</a>",
+            "<a href=\"https://ard.bmj.com\" target=\"_blank\" rel=\"noopener noreferrer\">OZEN, S. et al. EULAR/PRINTO/PRES criteria for Henoch-Schonlein purpura. Annals of the Rheumatic Diseases, v. 69, p. 798-806, 2010.</a>",
+            "<a href=\"https://wfh.org\" target=\"_blank\" rel=\"noopener noreferrer\">WORLD FEDERATION OF HEMOPHILIA (WFH). Guidelines for the Management of Hemophilia. 3rd ed. Haemophilia, v. 26, Suppl 6, p. 1-158, 2020.</a>",
+            "<a href=\"https://bvsms.saude.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">BRASIL. Ministério da Saúde. Doença Falciforme: Diretrizes Básicas da Linha de Cuidado. Brasília: Editora do Ministério da Saúde, 2018/2024.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1406 @@
+{
+  "v": 2,
+  "s": "saude-mental-no-ciclo-gravidico-puerperal",
+  "t": "Saúde Mental no Ciclo Gravídico-Puerperal",
+  "p": "Saúde Mental no Ciclo Gravídico-Puerperal — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Saúde Mental",
+  "m": "Saúde Mental",
+  "h": [
+    "Apostila LURIA",
+    "Saúde Mental no Ciclo Gravídico-Puerperal",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Saúde Mental",
+      "Matéria: Saúde Mental",
+      "Tema: Saúde Mental no Ciclo Gravídico-Puerperal"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "saude-mental-na-gestacao-e-no-puerperio",
+      "Saúde mental na gestação e no puerpério"
+    ],
+    [
+      "objetivos-de-aprendizagem",
+      "Objetivos de aprendizagem"
+    ],
+    [
+      "1-periodo-perinatal-e-formulacao-de-risco",
+      "1. Período perinatal e formulação de risco"
+    ],
+    [
+      "2-mudancas-emocionais-transitorias-versus-transtorno-mental",
+      "2. Mudanças emocionais transitórias versus transtorno mental"
+    ],
+    [
+      "3-rastreamento-e-diagnostico-com-ferramentas-interpretadas-corretamente",
+      "3. Rastreamento e diagnóstico com ferramentas interpretadas corretamente"
+    ],
+    [
+      "4-depressao-perinatal-diagnostico-e-impacto",
+      "4. Depressão perinatal — diagnóstico e impacto"
+    ],
+    [
+      "5-bipolaridade-durante-gestacao-e-puerperio",
+      "5. Bipolaridade durante gestação e puerpério"
+    ],
+    [
+      "6-psicose-pos-parto-emergencia-psiquiatrica-e-obstetrica",
+      "6. Psicose pós-parto: emergência psiquiátrica e obstétrica"
+    ],
+    [
+      "7-toc-perinatal-trauma-obstetrico-e-tept",
+      "7. TOC perinatal, trauma obstétrico e TEPT"
+    ],
+    [
+      "8-substancias-violencia-e-transtornos-alimentares-no-ciclo-gravidico",
+      "8. Substâncias, violência e transtornos alimentares no ciclo gravídico"
+    ],
+    [
+      "9-farmacoterapia-e-lactacao-o-balanco-correto",
+      "9. Farmacoterapia e lactação: o balanço correto"
+    ],
+    [
+      "10-rede-sus-e-papel-dos-servicos",
+      "10. Rede SUS e papel dos serviços"
+    ],
+    [
+      "11-fluxogramas-autorais",
+      "11. Fluxogramas autorais"
+    ],
+    [
+      "11a-rastrear-durante-a-gestacao-e-alem-da-consulta-puerperal-sistema-de-cuidado-e-nao-so-questionario",
+      "11A. Rastrear durante a gestação e além da consulta puerperal: sistema de cuidado e não só questionário"
+    ],
+    [
+      "11b-tristeza-puerperal-depressao-mania-e-psicose-distinguir-pela-evolucao-nao-por-estereotipo",
+      "11B. Tristeza puerperal, depressão, mania e psicose: distinguir pela evolução, não por estereótipo"
+    ],
+    [
+      "11c-depressao-perinatal-do-diagnostico-clinico-a-recuperacao-funcional",
+      "11C. Depressão perinatal: do diagnóstico clínico à recuperação funcional"
+    ],
+    [
+      "11d-transtorno-bipolar-na-gestacao-o-risco-de-retirar-e-o-risco-de-manter-tratamentos",
+      "11D. Transtorno bipolar na gestação: o risco de retirar e o risco de manter tratamentos"
+    ],
+    [
+      "11e-psicose-puerperal-raciocinio-de-emergencia-com-responsabilidade-sobre-duas-pessoas",
+      "11E. Psicose puerperal: raciocínio de emergência com responsabilidade sobre duas pessoas"
+    ],
+    [
+      "11f-toc-perinatal-tept-obstetrico-luto-e-violencia-tratar-sofrimento-sem-patologizar-maternidade",
+      "11F. TOC perinatal, TEPT obstétrico, luto e violência: tratar sofrimento sem patologizar maternidade"
+    ],
+    [
+      "11g-psicofarmacologia-perinatal-selecionar-pelo-mecanismo-e-pela-exposicao-real",
+      "11G. Psicofarmacologia perinatal: selecionar pelo mecanismo e pela exposição real"
+    ],
+    [
+      "11h-rede-sus-cuidado-compartilhado-e-passagem-de-responsabilidade",
+      "11H. Rede SUS, cuidado compartilhado e passagem de responsabilidade"
+    ],
+    [
+      "11i-casos-clinicos-adicionais-com-decisao-e-diferencial",
+      "11I. Casos clínicos adicionais — com decisão e diferencial"
+    ],
+    [
+      "11j-questoes-autorais-adicionais-e-mini-revisao-integrada",
+      "11J. Questões autorais adicionais e mini revisão integrada"
+    ],
+    [
+      "12-cinco-casos-clinicos-comentados",
+      "12. Cinco casos clínicos comentados"
+    ],
+    [
+      "13-questoes-autorais-comentadas",
+      "13. Questões autorais comentadas"
+    ],
+    [
+      "14-revisao-de-alta-retencao",
+      "14. Revisão de alta retenção"
+    ],
+    [
+      "15-pautas-visuais-para-admin",
+      "15. Pautas visuais para Admin"
+    ],
+    [
+      "16-referencias-clinicas",
+      "16. Referências clínicas"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Lote 13 · Apostila 252</h1>"
+        ]
+      ]
+    ],
+    [
+      "saude-mental-na-gestacao-e-no-puerperio",
+      0,
+      [
+        [
+          "2",
+          "Saúde mental na gestação e no puerpério"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Saúde Mental · Interface Ginecologia e Obstetrícia/MFC/Pediatria | <strong>Data:</strong> 15/10/2026  \r<br><strong>Prioridade curricular:</strong> Transtornos Psiquiátricos na Gestação e Pós-parto, Alta.  \r<br><strong>Status:</strong> PRIMEIRO MANUSCRITO ORIGINAL, PARCIAL, NÃO PUBLICADO. Ainda NÃO atende aos 60.000 caracteres didáticos únicos, à revisão clínica por especialista e ao teste de autossuficiência da LURIA."
+        ],
+        [
+          "3",
+          "Etapa zero: benchmark e limites"
+        ],
+        [
+          "p",
+          "O Google Drive do projeto não retornou apostila específica de transtornos mentais perinatais pela busca de \"psiquiatria\", \"transtornos psiquiátricos gestação\", \"depressão pós-parto\", \"ansiedade\" ou \"luto\". Foi efetivamente aberto e estudado o material <strong>\"Assistência ao Pré-Natal\"</strong> (longitudinalidade, doenças maternas e rastreio; não apresenta capítulo psiquiátrico equivalente); a base LURIA de Alterações Fisiológicas da Gestação também foi inspecionada para concepção editorial da página. <strong>Comparação específica de psicopatologia NÃO concluída</strong>: o texto é preparatório e jamais deve herdar status de apostila homologada. Usar, para revisão clínica atual, ACOG Clinical Practice Guidelines 4 e 5 (2023), materiais da FEBRASGO e do Ministério da Saúde. Não reproduzir material privado."
+        ]
+      ]
+    ],
+    [
+      "objetivos-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "Objetivos de aprendizagem"
+        ],
+        [
+          "p",
+          "A pessoa que estuda este volume deve distinguir <strong>adaptações emocionais esperadas</strong>, tristeza puerperal transitória, depressão perinatal, ansiedade patológica, transtorno bipolar e psicose pós-parto; realizar rastreamento e confirmar diagnóstico clínico; reconhecer sinais de urgência como ideação suicida, psicose e mania; compreender implicações de doença não tratada e medicação sem superestimar riscos; construir cuidado compartilhado entre obstetrícia, psiquiatria, APS e pediatria; preservar autonomia materna, vínculo e proteção do recém-nascido."
+        ]
+      ]
+    ],
+    [
+      "1-periodo-perinatal-e-formulacao-de-risco",
+      0,
+      [
+        [
+          "2",
+          "1. Período perinatal e formulação de risco"
+        ],
+        [
+          "p",
+          "A gravidez e o primeiro ano após parto envolvem alterações hormonais, sono, relações, renda, trabalho e expectativas. A vulnerabilidade a transtornos de humor e ansiedade não é mera \"questão hormonal\": história pessoal de depressão/bipolaridade, trauma, violência, falta de suporte, adversidades econômicas, privação de sono, problemas obstétricos e predisposição biológica interagem. Um transtorno pode iniciar <strong>antes da gestação, durante ou após o parto</strong>, reaparecer após suspensão indevida de tratamento ou piorar com intercorrências."
+        ],
+        [
+          "p",
+          "<strong>Definição operacional:</strong> cuidado de saúde mental perinatal acompanha gestante, puérpera e família, incluindo risco de agravamento até pelo menos um ano após nascimento. O especificador DSM \"início no periparto\" para episódio afetivo tem janela diagnóstica própria e <strong>não restringe a atenção clínica</strong> a apenas quatro semanas. Quando o Ministério da Saúde usa expressão \"depressão pós-parto\", o aluno deve reconhecer que critérios formais de episódio depressivo e janelas de serviços podem diferir."
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> não perguntar somente \"você está triste?\". Perguntar sono quando há oportunidade de dormir, apetite, interesse, medo intenso, pensamento intrusivo, sensação de culpa, autocuidado, funcionalidade, segurança, apoio e capacidade de procurar assistência."
+        ]
+      ]
+    ],
+    [
+      "2-mudancas-emocionais-transitorias-versus-transtorno-mental",
+      0,
+      [
+        [
+          "2",
+          "2. Mudanças emocionais transitórias versus transtorno mental"
+        ],
+        [
+          "p",
+          "<strong>Tristeza puerperal (baby blues):</strong> instabilidade emocional leve/moderada, choro fácil, sensibilidade e irritabilidade nos primeiros dias depois do parto, geralmente de resolução espontânea em cerca de duas semanas. A pessoa mantém teste de realidade, pode cuidar de si/bebê com apoio e não apresenta quadro depressivo persistente incapacitante. Se sintomas <strong>persistem, pioram ou contêm ideação suicida, perda de realidade ou grave prejuízo</strong>, avaliar transtorno mental e segurança."
+        ],
+        [
+          "p",
+          "<strong>Depressão perinatal:</strong> sintomas de humor deprimido/anedonia associados a alterações de sono/apetite, energia, culpa, concentração e possível pensamentos de morte com duração e prejuízo compatíveis com episódio depressivo maior; não confundir sono interrompido exclusivamente por cuidado neonatal com insônia depressiva. Podem predominar irritabilidade, ansiedade e sentimento de inadequação, mas não se deve diagnosticar apenas por \"não ter vínculo imediato com o bebê\". Gravidade e funcionalidade determinam urgência."
+        ],
+        [
+          "p",
+          "<strong>Ansiedade perinatal:</strong> preocupação persistente, tensão e medo difíceis de controlar, hipervigilância e sintomas físicos que ultrapassam preocupações proporcionais e comprometem função. Diferenciar de desconforto fisiológico gestacional, tireotoxicose, arritmia, anemia e condições obstétricas. O espectro inclui pânico, fobias, ansiedade generalizada e sintomas obsessivo-compulsivos."
+        ],
+        [
+          "3",
+          "O medo normal de cuidar e a ansiedade clinicamente significativa"
+        ],
+        [
+          "p",
+          "É comum que cuidadores fiquem atentos a alimentação/sono do recém-nascido; patológico é quando preocupação impede dormir mesmo com oportunidade, gera verificação incessante sem alívio, isolamento ou incapacidade de funcionar. A avaliação pergunta intensidade, persistência, prejuízo e risco, evitando patologizar todas as inseguranças do puerpério."
+        ]
+      ]
+    ],
+    [
+      "3-rastreamento-e-diagnostico-com-ferramentas-interpretadas-corretamente",
+      0,
+      [
+        [
+          "2",
+          "3. Rastreamento e diagnóstico com ferramentas interpretadas corretamente"
+        ],
+        [
+          "p",
+          "ACOG recomenda rastrear depressão e ansiedade com ferramentas validadas <strong>no início do pré-natal, em etapa posterior da gravidez e no pós-parto</strong>, dentro de um sistema com avaliação diagnóstica, tratamento e monitorização. Instrumentos como <strong>EPDS</strong>, <strong>PHQ-9</strong> e <strong>GAD-7</strong> podem acompanhar sintomas, mas escores <strong>não substituem entrevista clínica</strong>, avaliação de segurança ou investigação de doença bipolar. Não decorar ponto de corte único de EPDS sem conferir validação brasileira, idioma, prevalência e objetivo do serviço."
+        ],
+        [
+          "p",
+          "É importante perguntar sobre episódios prévios de <strong>mania/hipomania antes de iniciar antidepressivo</strong>, especialmente se rastreio para depressão for positivo. História de energia muito aumentada, menor necessidade de sono, aceleração de pensamentos, comportamento arriscado e sintomas psicóticos exige avaliação para espectro bipolar. Antidepressivo isolado pode agravar mania ou desestabilização em pessoa com bipolaridade."
+        ],
+        [
+          "p",
+          "<strong>Triagem positiva → confirmação:</strong> identificar duração, história pregressa, comorbidades, funcionalidade, exame mental, sinais de violência, rede de apoio e risco suicida; considerar anemia, alterações tireoidianas, uso de substâncias, medicações e doenças clínicas conforme quadro. A psicose e a incapacidade de manter segurança exigem avaliação imediata independentemente do escore."
+        ],
+        [
+          "3",
+          "Perguntas de segurança"
+        ],
+        [
+          "p",
+          "<li>Houve pensamentos de que a vida não vale mais a pena ou de se machucar?</li>\r<li>Esses pensamentos incluem intenção atual ou insegurança de ficar sozinha?</li>\r<li>Há vozes, crenças assustadoras e inabaláveis ou confusão?</li>\r<li>É possível descansar quando alguém cuida do bebê ou existe energia acelerada apesar de vários dias quase sem sono?</li>\r<li>Há pensamentos indesejados e aterrorizantes reconhecidos como próprios e evitados, ou crenças delirantes com convicção e perda de crítica?</li>\r\nA avaliação deve ser acolhedora e direta. Resposta afirmativa sobre segurança solicita exploração e plano adequado, não punição."
+        ]
+      ]
+    ],
+    [
+      "4-depressao-perinatal-diagnostico-e-impacto",
+      0,
+      [
+        [
+          "2",
+          "4. Depressão perinatal — diagnóstico e impacto"
+        ],
+        [
+          "p",
+          "Os sintomas essenciais incluem humor deprimido ou perda persistente de prazer, acompanhados de alterações cognitivas/vegetativas e prejuízo. A gravidade não depende apenas de chorar muito: algumas pessoas descrevem anestesia afetiva, culpa, irritabilidade ou sensação de incapacidade. <strong>Não é prova de que uma mãe não ame a criança.</strong> A pessoa pode ter excelente cuidado objetivo apesar de depressão, e vínculo imediato não é critério diagnóstico."
+        ],
+        [
+          "3",
+          "Fatores de risco e vulnerabilidade"
+        ],
+        [
+          "p",
+          "Episódio depressivo anterior, depressão na gestação, história de depressão pós-parto, bipolaridade, pouco suporte, violência, insegurança financeira, complicações obstétricas, isolamento, privação intensa de sono e determinadas condições clínicas elevam preocupação. Contudo não é aceitável usar ausência de fatores de risco para dispensar rastreamento universal."
+        ],
+        [
+          "3",
+          "Diagnóstico diferencial"
+        ],
+        [
+          "p",
+          "<li>Tristeza puerperal limitada aos primeiros dias com resolução e sem disfunção grave.</li>\r<li>Hipotireoidismo pós-parto ou outras doenças tireoidianas: sintomas somáticos/cognitivos que merecem investigação orientada.</li>\r<li>Anemia e hemorragia, alterações metabólicas, dor persistente e privação de sono por necessidades neonatais.</li>\r<li>Bipolaridade com episódio depressivo: rastrear história de hipomania/mania, sintomas mistos.</li>\r<li>Psicose pós-parto: perda de contato com realidade, desorganização, delírios e/ou grave alteração afetiva.</li>\r<li>Transtorno obsessivo-compulsivo perinatal: obsessões intrusivas indesejadas que causam medo e evitamento, com consciência de sua natureza, diferindo de crença psicótica.</li>\r<li>Reação de luto após perda gestacional: sofrimento pode ser esperado, embora depressão/TEPT também possam coexistir.</li>"
+        ],
+        [
+          "3",
+          "Plano terapêutico"
+        ],
+        [
+          "p",
+          "Psicoterapia baseada em evidências (por exemplo TCC ou terapia interpessoal), apoio familiar, intervenções sobre sono/suporte, abordagem de violência e tratamento medicamentoso quando indicado conforme gravidade, história de eficácia e preferências. <strong>Não suspender automaticamente antidepressivo eficaz ao descobrir gestação</strong> sem discutir recaída, risco fetal relacionado à doença/medicação e alternativas; ACOG orienta pesar risco de exposição e de transtorno não tratado."
+        ],
+        [
+          "p",
+          "Entre antidepressivos, ISRS são frequentemente considerados opções de primeira linha quando indicado, com escolha individual apoiada em resposta anterior e perfil gestacional/lactação, e monitorização de sintomas/efeitos. Sertralina é opção frequentemente utilizada, mas <strong>não é \"100% isenta de risco\"</strong>; avaliação da farmacoterapia precisa de psiquiatria/obstetrícia e fonte atualizada. A dosagem deve ser definida conforme diagnóstico, fase, interação e bula/protocolo, não por regra universal do texto."
+        ]
+      ]
+    ],
+    [
+      "5-bipolaridade-durante-gestacao-e-puerperio",
+      0,
+      [
+        [
+          "2",
+          "5. Bipolaridade durante gestação e puerpério"
+        ],
+        [
+          "p",
+          "Transtorno bipolar tem episódios de mania/hipomania e, em muitos casos, depressão. A identificação importa porque <strong>antidepressivo em monoterapia</strong> pode desestabilizar o humor de certas pessoas; a suspensão de estabilizador sem plano pode elevar risco de recaída, especialmente no pós-parto."
+        ],
+        [
+          "p",
+          "<strong>Mania:</strong> humor elevado/expansivo ou irritabilidade anormal com aumento de energia/atividade e outros sinais como necessidade de sono reduzida sem fadiga, grandiosidade, fala acelerada, distraibilidade e decisões potencialmente perigosas, com duração e prejuízo segundo critérios clínicos. <strong>Pós-parto com insônia completa, pensamento acelerado e comportamento muito desorganizado</strong> não é \"adaptação normal\"; avaliação urgente."
+        ],
+        [
+          "3",
+          "Planejamento antes da concepção"
+        ],
+        [
+          "p",
+          "Idealmente revisar diagnóstico, estabilidade, doses, efeitos e comorbidades com psiquiatra e obstetra antes de engravidar. Discutir tratamento com maior risco teratogênico e substituições clinicamente seguras <strong>antes da concepção</strong>, quando possível. Valproato está associado a risco importante de malformações e alterações de neurodesenvolvimento e deve ser evitado na gestação em geral para transtornos psiquiátricos, seguindo recomendações vigentes; decisões em pessoa com epilepsia complexa não devem ser feitas sem equipe pertinente."
+        ],
+        [
+          "p",
+          "Lítio pode ser opção selecionada em transtorno bipolar com resposta conhecida, mas exige monitorização da concentração sérica, função renal/tireoide, interações, mudanças farmacocinéticas ao longo da gravidez e manejo no período do parto, junto a especialista. Algumas terapias atípicas têm riscos metabólicos e efeitos maternos; nenhuma classe deve ser prescrita só pelo nome sem ponderar evidência e contexto."
+        ],
+        [
+          "p",
+          "<strong>Plano perinatal de recaída:</strong> proteger sono, reconhecer sintomas precoces, planejar apoio ao recém-nascido, manter consultas, definir contato de crise e rever medicações no pós-parto. Esse plano é tão importante quanto a receita."
+        ]
+      ]
+    ],
+    [
+      "6-psicose-pos-parto-emergencia-psiquiatrica-e-obstetrica",
+      0,
+      [
+        [
+          "2",
+          "6. Psicose pós-parto: emergência psiquiátrica e obstétrica"
+        ],
+        [
+          "p",
+          "Psicose puerperal costuma manifestar-se <strong>rapidamente nos primeiros dias/semanas</strong>, com insônia importante, desorganização, agitação, oscilações de humor, pensamento delirante, alucinações ou comportamento incoerente. Pode representar episódio do espectro bipolar e associar-se a alto risco de dano à paciente e criança por perda de julgamento. <strong>Requer avaliação emergencial e frequentemente hospitalização</strong>, com proteção de ambos e tratamento especializado."
+        ],
+        [
+          "p",
+          "<strong>Não confundir com depressão comum nem com pensamento intrusivo de TOC.</strong> No TOC perinatal, pensamentos indesejados podem ser ego-distônicos, causam medo e evitamento, com preservação de crítica; na psicose, crenças podem ser mantidas com convicção e perda de percepção de realidade. A distinção é clínica, não licença para menosprezar sofrimento de TOC."
+        ],
+        [
+          "3",
+          "Primeiros passos"
+        ],
+        [
+          "p",
+          "1. Avaliar segurança da pessoa e bebê; garantir supervisão adequada e ambiente protegido.\r\n2. Identificar estado mental, agitação, privação de sono, sintomas de mania e história pessoal/familiar de bipolaridade/psicose.\r\n3. Excluir doença médica relevante: infecção, encefalopatia, alterações metabólicas, tireoide, intoxicação, complicações neurológicas e obstétricas.\r\n4. Acionar psiquiatria e obstetrícia com urgência; avaliar necessidade de internação e suporte.\r\n5. Instituir tratamento especializado conforme gravidade, considerando antipsicótico, estabilizador e, em situações indicadas, ECT; decisões e doses dependem de monitorização materno-neonatal.\r\n6. Planejar apoio ao bebê e comunicação não estigmatizante com família, respeitando sigilo e medidas de proteção."
+        ],
+        [
+          "p",
+          "A família deve entender sinais de agravamento sem culpar paciente. <strong>A segurança é prioridade</strong>, e o encaminhamento não deve esperar \"consulta de rotina em 30 dias\"."
+        ]
+      ]
+    ],
+    [
+      "7-toc-perinatal-trauma-obstetrico-e-tept",
+      0,
+      [
+        [
+          "2",
+          "7. TOC perinatal, trauma obstétrico e TEPT"
+        ],
+        [
+          "p",
+          "<strong>TOC perinatal</strong> pode envolver obsessões intrusivas associadas a contaminação, segurança do bebê ou erros de cuidado e comportamentos repetitivos para aliviar ansiedade. O profissional distingue pensamento involuntário e indesejado de intenção ou convicção delirante, sempre avaliando segurança e incapacidade funcional. TCC com prevenção de exposição/resposta e farmacoterapia quando indicada são abordagens usadas, com cuidado específico perinatal."
+        ],
+        [
+          "p",
+          "<strong>Trauma obstétrico/TEPT:</strong> experiência de violência, perda de controle, evento crítico, sangramento, parto traumático ou UTI neonatal pode gerar sintomas de reexperiência, evitação, hiperalerta, alterações negativas de cognição/humor e prejuízo. Uma intercorrência clínica grave não equivale automaticamente a TEPT; diagnóstico requer síndrome e tempo. Comunicação respeitosa, consentimento informado, apoio psicoterápico baseado em evidências e cuidado obstétrico seguro são essenciais."
+        ],
+        [
+          "p",
+          "<strong>Perda gestacional/neonatal:</strong> luto é experiência humana heterogênea. Não impor prazo para \"superar\", não minimizar com comentários sobre futuras gestações e não medicalizar automaticamente tristeza. Reavaliar se sofrimento se torna incapacitante, há risco suicida ou sinais de transtorno depressivo/estresse pós-traumático."
+        ]
+      ]
+    ],
+    [
+      "8-substancias-violencia-e-transtornos-alimentares-no-ciclo-gravidico",
+      0,
+      [
+        [
+          "2",
+          "8. Substâncias, violência e transtornos alimentares no ciclo gravídico"
+        ],
+        [
+          "p",
+          "Uso de álcool, cannabis, tabaco e outros psicoativos demanda entrevista livre de julgamento, investigação de dependência, risco de abstinência e suporte especializado. A violência doméstica e coercitiva pode aumentar risco de depressão/ansiedade e comprometer adesão ao pré-natal; entrevistas devem permitir conversa <strong>sem acompanhante potencialmente controlador</strong>, com encaminhamentos de proteção apropriados. O silêncio da paciente na presença do parceiro não exclui violência."
+        ],
+        [
+          "p",
+          "Transtornos alimentares prévios ou ativos podem interferir em nutrição, imagem corporal, glicemia, suporte familiar e crescimento fetal; acompanhar com nutrição/saúde mental/obstetrícia, sem prescrever restrições calóricas arbitrárias. O puerpério pode reativar medo de peso e comportamento compensatório, exigindo rastreamento cuidadoso."
+        ]
+      ]
+    ],
+    [
+      "9-farmacoterapia-e-lactacao-o-balanco-correto",
+      0,
+      [
+        [
+          "2",
+          "9. Farmacoterapia e lactação: o balanço correto"
+        ],
+        [
+          "p",
+          "Uma droga pode atravessar placenta e leite em graus variados, mas <strong>exposição não equivale automaticamente a dano clínico</strong>; risco depende de dose, fármaco, idade gestacional, maturidade neonatal, metabolismo, evidência disponível e doença materna não tratada. Para lactação, considerar concentração no leite e exposição relativa, eventos relatados e condição do lactente — sobretudo prematuros e neonatos doentes."
+        ],
+        [
+          "p",
+          "Na depressão/ansiedade clinicamente significativa, suspender tratamento eficaz sem plano pode elevar recaída; por outro lado, iniciar farmacoterapia deve seguir indicação, monitorização e preferências. ACOG 2023 enfatiza decisões individualizadas e que lactação não deve ser tratada como proibição automática de todo psicotrópico."
+        ],
+        [
+          "p",
+          "<strong>Atenção a exemplos de alto impacto:</strong>\r<li><strong>Valproato:</strong> riscos teratogênicos/desenvolvimento fetal; evitar na gestação psiquiátrica conforme recomendações.</li>\r<li><strong>Lítio:</strong> monitorização específica de níveis, rim e tireoide, e planejamento no parto/puerpério.</li>\r<li><strong>ISRS:</strong> escolher com base no benefício prévio e perfil de segurança, monitorando sintomas e recém-nascido quando apropriado.</li>\r<li><strong>Benzodiazepínicos:</strong> não utilizar rotineiramente como primeira linha para ansiedade persistente; riscos de sedação, dependência e exposição neonatal devem ser pesados.</li>\r<li><strong>Antipsicóticos:</strong> considerar efeitos metabólicos, sedação e eficácia por condição; não escolher apenas por aparente menor teratogenicidade.</li>\r<li><strong>ECT:</strong> pode ser terapêutica importante em depressão/psicose grave refratária com avaliação anestésica/obstétrica adequada; não é punição e requer critérios de segurança.</li>"
+        ],
+        [
+          "p",
+          "<strong>Não fornecer tabelas rígidas de \"permitido/proibido\" para todos os psicofármacos</strong>, pois evidência muda e condições individuais variam; detalhes farmacológicos exigem consulta às fontes e cuidado especializado."
+        ]
+      ]
+    ],
+    [
+      "10-rede-sus-e-papel-dos-servicos",
+      0,
+      [
+        [
+          "2",
+          "10. Rede SUS e papel dos serviços"
+        ],
+        [
+          "p",
+          "<strong>Pré-natal e APS:</strong> rastrear, acolher, avaliar risco, tratar quadros compatíveis com competência/estrutura, acompanhar retorno, medidas de proteção e comunicar com obstetrícia. <strong>eMulti/matriciamento:</strong> apoio técnico para equipe de referência, caso compartilhado e psicoterapia. <strong>CAPS/RAPS:</strong> atenção especializada de acordo com gravidade, vulnerabilidade e organização territorial, sem retirar vínculo APS. <strong>Urgência/hospital:</strong> suicidabilidade iminente, psicose e mania grave, desorganização/risco ao bebê, incapacidade de autocuidado ou doença médica aguda."
+        ],
+        [
+          "p",
+          "<strong>Consulta puerperal não encerra todos os riscos:</strong> ACOG incentiva acompanhamento ao longo do primeiro ano, com transição para atenção longitudinal. O pediatra que observa dificuldades de cuidado ou sintomas da cuidadora pode facilitar ligação com saúde da mulher, respeitando confidencialidade e sem responsabilizar a criança."
+        ]
+      ]
+    ],
+    [
+      "11-fluxogramas-autorais",
+      0,
+      [
+        [
+          "2",
+          "11. Fluxogramas autorais"
+        ],
+        [
+          "3",
+          "A. Primeiro pré-natal"
+        ],
+        [
+          "p",
+          "História de saúde mental, sintomas atuais, riscos/violência e medicamentos → rastreio validado de depressão/ansiedade, avaliação bipolar antes de fármaco → confirmar diagnóstico e funcionalidade → segurança e condições médicas → escolher psicoterapia, suporte e medicação se indicada → plano compartilhado e monitorização em consultas seguintes."
+        ],
+        [
+          "3",
+          "B. Sintomas pós-parto"
+        ],
+        [
+          "p",
+          "Primeiros dias com labilidade leve e preservação de crítica, sem risco → suporte/monitorar resolução → sintomas persistentes, anedonia ou incapacidade → avaliação de depressão/ansiedade e bipolaridade → psicose, mania, desorganização, risco suicida ou de dano ao bebê → <strong>atendimento emergencial</strong> com segurança e equipe multidisciplinar."
+        ],
+        [
+          "3",
+          "C. Tratamento psiquiátrico já em curso e gestação detectada"
+        ],
+        [
+          "p",
+          "Rever indicação, resposta prévia e estabilidade → avaliar riscos da doença não tratada e do fármaco, inclusive teratogenicidade/monitorização → discussão compartilhada com psiquiatria e obstetrícia → ajustar somente com plano e vigilância de sintomas → revisão por trimestre, parto, amamentação e prevenção de recaída."
+        ]
+      ]
+    ],
+    [
+      "11a-rastrear-durante-a-gestacao-e-alem-da-consulta-puerperal-sistema-de-cuidado-e-nao-so-questionario",
+      0,
+      [
+        [
+          "2",
+          "11A. Rastrear durante a gestação e além da consulta puerperal: sistema de cuidado e não só questionário"
+        ],
+        [
+          "3",
+          "O período perinatal é mais amplo que o pós-parto imediato"
+        ],
+        [
+          "p",
+          "Condições de saúde mental podem anteceder a concepção, iniciar na gestação, manifestar-se logo após o parto ou emergir meses depois. A <strong>ACOG CPG nº 4 (junho de 2023)</strong> aborda depressão, ansiedade, bipolaridade, suicidabilidade e psicose pós-parto durante gestação e <strong>até o primeiro ano após o parto</strong>. Reduzir a assistência a perguntar “está triste?” na consulta de 40 dias perde apresentações tardias e pacientes que nunca fazem a consulta puerperal tradicional."
+        ],
+        [
+          "p",
+          "O plano começa, idealmente, <strong>antes da concepção</strong>, especialmente se existem transtorno bipolar, psicose prévia, depressão grave, internação psiquiátrica, autolesão, trauma ou tratamento psicotrópico em uso. Essas condições não contraindicam maternidade; indicam conversa compartilhada sobre sintomas, recaída, riscos de suspensão abrupta de medicação, proteção do sono, rede de apoio, planejamento do parto e acesso à urgência."
+        ],
+        [
+          "p",
+          "<strong>Durante o pré-natal</strong>, inserir perguntas sobre humor, ansiedade, sono, suporte e violência em consultas apropriadas, com ambiente privado. Rastreamento universal com instrumentos validados em momentos recomendados — início do acompanhamento, fase posterior da gestação e puerpério — é mais eficiente quando há caminho efetivo para avaliação diagnóstica, tratamento e seguimento. Uma unidade que apenas aplica EPDS sem definir quem analisará resultado oferece identificação sem cuidado."
+        ],
+        [
+          "3",
+          "EPDS, PHQ-9, GAD-7 e entrevista clínica"
+        ],
+        [
+          "p",
+          "A <strong>Edinburgh Postnatal Depression Scale (EPDS)</strong> pode ajudar a detectar sintomas depressivos perinatais, inclusive durante a gestação. O <strong>PHQ-9</strong> avalia sintomas depressivos, e o <strong>GAD-7</strong>, sintomas ansiosos. Contudo nenhum deles confirma diagnóstico por si. Os escores podem ser afetados por idioma, prevalência, contexto cultural, perda perinatal, privação de sono e estado clínico. Utilizar <strong>versão validada para português brasileiro e finalidade pretendida</strong>."
+        ],
+        [
+          "p",
+          "Perguntas sobre pensamentos de morte ou autoagressão, em qualquer instrumento, requerem <strong>avaliação imediata da segurança conforme resposta e contexto</strong>, e não apenas somar pontos para próxima consulta. Antes de iniciar antidepressivo, perguntar por <strong>mania/hipomania prévia</strong>, como recomenda a ACOG: antidepressivos em monoterapia podem desestabilizar certos quadros bipolares."
+        ],
+        [
+          "t",
+          [
+            "Etapa",
+            "Pergunta clínica",
+            "O que registrar",
+            "Resultado esperado"
+          ],
+          [
+            [
+              "Primeiro pré-natal",
+              "Já houve depressão, bipolaridade, psicose, crise ou tratamento?",
+              "Diagnóstico, remédios atuais, recaídas, suporte, violência",
+              "Plano basal de prevenção e seguimento"
+            ],
+            [
+              "Consultas posteriores",
+              "Mudou sono, prazer, esperança, preocupação ou funcionamento?",
+              "Questionário validado e exame clínico quando indicado",
+              "Identificar casos incidentes e monitorar progressão"
+            ],
+            [
+              "Internação obstétrica/parto",
+              "Existe plano psiquiátrico? Há risco de abstinência de medicação?",
+              "Fármacos, interações, sono, cuidadores e contato de crise",
+              "Continuidade sem suspensão automática"
+            ],
+            [
+              "Primeira fase do puerpério",
+              "Há privação extrema de sono, desorganização, psicose, mania ou depressão?",
+              "Estado mental, segurança dela/bebê, suporte concreto",
+              "Emergência imediata quando necessária"
+            ],
+            [
+              "Consultas de saúde da criança",
+              "A cuidadora recebeu seguimento? Há sintomas tardios?",
+              "Consentimento, contato com APS/obstetrícia, dificuldade de cuidado",
+              "Não perder casos após alta obstétrica"
+            ],
+            [
+              "Após início de tratamento",
+              "Houve resposta clínica, eventos adversos e melhora funcional?",
+              "EPDS/PHQ-9/GAD-7 quando pertinentes + entrevista",
+              "Ajustar plano sem depender de pontuação isolada"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Quem tem maior risco de ficar sem diagnóstico?"
+        ],
+        [
+          "p",
+          "Mulheres podem esconder sintomas pelo medo de serem vistas como mães inadequadas, de perder guarda da criança ou de receber julgamento familiar; profissionais precisam explicar <strong>por que perguntam</strong>, quem terá acesso à informação e quais situações exigem medidas de proteção. Uma entrevista em frente a possível agressor pode impedir revelação de violência e pensamentos suicidas."
+        ],
+        [
+          "p",
+          "Adolescentes, mulheres em vulnerabilidade social, mães solo, famílias deslocadas, pessoas com deficiência e puérperas cujo bebê permanece internado em UTI neonatal têm barreiras específicas de comparecimento e comunicação. O rastreamento deve ser <strong>acessível, confidencial e conectado a intervenção</strong>, respeitando autonomia e necessidades de suporte. A identidade cultural e a orientação sexual não são causas psiquiátricas por si."
+        ]
+      ]
+    ],
+    [
+      "11b-tristeza-puerperal-depressao-mania-e-psicose-distinguir-pela-evolucao-nao-por-estereotipo",
+      0,
+      [
+        [
+          "2",
+          "11B. Tristeza puerperal, depressão, mania e psicose: distinguir pela evolução, não por estereótipo"
+        ],
+        [
+          "3",
+          "Tristeza puerperal transitória (baby blues)"
+        ],
+        [
+          "p",
+          "Oscilações de humor, choro fácil, sensibilidade e irritabilidade nos primeiros dias após o parto são comuns; a tristeza puerperal tende a melhorar espontaneamente nas duas primeiras semanas, especialmente com descanso, apoio e adaptação. <strong>A pessoa mantém contato com a realidade</strong>, e o prejuízo funcional não costuma atingir intensidade de um quadro depressivo maior."
+        ],
+        [
+          "p",
+          "O erro é tomar o rótulo de <em>baby blues</em> como permissão para ignorar sofrimento: <strong>pensamentos suicidas, desorganização, delírios, alucinações, incapacidade significativa de autocuidado, hipomania/mania e piora progressiva</strong> exigem avaliação imediatamente, independentemente de o parto ter ocorrido ontem. Quando sintomas persistem ou se intensificam após cerca de duas semanas, investigar depressão ou outro quadro clínico."
+        ],
+        [
+          "3",
+          "Depressão perinatal: não perguntar apenas se a mãe chora"
+        ],
+        [
+          "p",
+          "Um episódio depressivo maior inclui <strong>humor deprimido persistente ou anedonia</strong>, em associação a sintomas cognitivos e vegetativos, sofrimento e prejuízo funcional. Em puérperas, fadiga e sono fragmentado pela criança são fenômenos frequentes, mas insônia <strong>mesmo quando há oportunidade de dormir</strong>, falta de esperança, culpa intensa, perda global de interesse e ideias de morte aumentam suspeita."
+        ],
+        [
+          "p",
+          "O diagnóstico formal considera duração e conjunto de sintomas apropriados, frequentemente ao menos duas semanas para episódio depressivo maior, e não apenas um questionário elevado. O clínico deve investigar histórico anterior, episódios de mania/hipomania, psicose, ideação suicida, uso de substâncias, dor e doença médica concorrente. Uma mulher pode cuidar adequadamente do bebê e ainda apresentar depressão significativa; <strong>qualidade do vínculo não é teste diagnóstico</strong>."
+        ],
+        [
+          "p",
+          "Não assumir que depressão pós-parto decorre de “falta de amor”. Processos biológicos, história de humor, sono, estresse, violência e fatores sociais interagem; uma causa única raramente explica o caso. O cuidado envolve sintomas da paciente, função, suporte e relações, sem moralização da maternidade."
+        ],
+        [
+          "3",
+          "Mania perinatal: a quantidade de sono, isolada, engana"
+        ],
+        [
+          "p",
+          "Quase toda pessoa com recém-nascido dorme menos, mas na <strong>mania/hipomania</strong> existe, com frequência, redução da <strong>necessidade</strong> de sono: a pessoa pode ficar muitas horas acordada sem sentir cansaço proporcional, enquanto apresenta energia muito elevada, aceleração de pensamento, fala intensa, expansividade/irritabilidade marcante e comportamento incomum. A diferença entre “não pude dormir porque o bebê acorda” e “não sinto necessidade de dormir e estou acelerada” é crítica."
+        ],
+        [
+          "p",
+          "Mania pode ocorrer com <strong>sintomas mistos</strong>, disforia, agitação e sofrimento, não apenas euforia. A investigação de bipolaridade é essencial antes de antidepressivos, porque monoterapia antidepressiva inadequada pode precipitar desestabilização em pacientes suscetíveis. Efeitos de medicamentos, hipertireoidismo, consumo de substâncias e delirium são diferenciais."
+        ],
+        [
+          "3",
+          "Psicose pós-parto: emergência de segurança"
+        ],
+        [
+          "p",
+          "Psicose puerperal frequentemente aparece <strong>nos primeiros dias a semanas</strong> e pode ter início muito abrupto, com delírios, alucinações, desorganização, confusão, sintomas afetivos graves e insônia. A condição tem associação importante com espectro bipolar e episódios afetivos psicóticos; não é obrigatoriamente “depressão que evoluiu”, apesar de alguns materiais introdutórios apresentarem essa sequência como única."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> proteger imediatamente a pessoa e o bebê, não deixar a paciente em situação de cuidado exclusivo do bebê enquanto há comprometimento importante de julgamento, providenciar avaliação de urgência em ambiente supervisionado, acionar psiquiatria e obstetrícia, pesquisar etiologias médicas e discutir internação. Tratamento pode incluir antipsicóticos, estabilizadores e, em situações indicadas, ECT em serviço especializado; a escolha depende de síndrome, comorbidades e lactação. Não aguardar consulta eletiva para quadro compatível."
+        ],
+        [
+          "3",
+          "Pensamentos intrusivos no TOC perinatal: não confundir conteúdo com intenção"
+        ],
+        [
+          "p",
+          "Algumas mulheres têm pensamentos intrusivos, indesejados e aterrorizantes envolvendo possível dano, reconhecem-nos como incompatíveis com seus valores e os evitam. No <strong>TOC perinatal</strong>, essa <strong>ego-distonia</strong> e crítica preservada podem ser pistas fundamentais, além de compulsões de verificação/evitação. Isso não torna a experiência irrelevante: pode causar sofrimento e grande prejuízo, necessitando avaliação e tratamento como TCC com exposição e prevenção de resposta por equipe treinada."
+        ],
+        [
+          "p",
+          "Em <strong>psicose</strong>, uma convicção delirante pode ser mantida sem crítica, com desorganização e alteração de julgamento. Não usar uma frase isolada (“pensei que algo aconteceria ao bebê”) como prova de psicose, nem considerar qualquer pensamento intrusivo automaticamente isento de necessidade de avaliação. Explorar <strong>intenção, convicção, crítica, sofrimento, impulsos, comportamentos e capacidade de manter segurança</strong> individualmente."
+        ],
+        [
+          "3",
+          "Matriz de diferenciação rápida"
+        ],
+        [
+          "t",
+          [
+            "Quadro",
+            "Relação temporal e núcleo",
+            "Realidade crítica",
+            "Decisão"
+          ],
+          [
+            [
+              "Tristeza puerperal",
+              "Dias iniciais, labilidade leve, melhora espontânea",
+              "Preservada",
+              "Apoio, rastreio e retorno; vigiar alarme"
+            ],
+            [
+              "Depressão perinatal",
+              "Humor/anedonia persistentes, prejuízo, culpa/desesperança",
+              "Em geral preservada, salvo depressão psicótica",
+              "Diagnóstico formal, psicoterapia e/ou medicação, avaliar suicidabilidade"
+            ],
+            [
+              "Ansiedade perinatal",
+              "Preocupação desproporcional, pânico ou sintomas somáticos com prejuízo",
+              "Preservada",
+              "Excluir mimetizadores clínicos, psicoterapia e tratamento proporcional"
+            ],
+            [
+              "TOC perinatal",
+              "Intrusões indesejadas, rituais/evitação, medo do próprio pensamento",
+              "Geralmente preservada",
+              "Avaliar segurança e TCC adequada, ISRS quando indicado"
+            ],
+            [
+              "Mania pós-parto",
+              "Energia/atividade aumentada, pouca necessidade de sono, aceleração",
+              "Pode ficar comprometida",
+              "Avaliação psiquiátrica urgente"
+            ],
+            [
+              "Psicose pós-parto",
+              "Delírios/alucinações, desorganização, alteração grave de julgamento",
+              "Comprometida",
+              "<strong>Emergência</strong>, proteção e tratamento hospitalar frequentemente necessário"
+            ],
+            [
+              "Delirium/metabólico",
+              "Início agudo, desatenção/flutuação, doença clínica",
+              "Flutuante",
+              "Avaliação médica imediata e tratamento da causa"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "11c-depressao-perinatal-do-diagnostico-clinico-a-recuperacao-funcional",
+      0,
+      [
+        [
+          "2",
+          "11C. Depressão perinatal: do diagnóstico clínico à recuperação funcional"
+        ],
+        [
+          "3",
+          "Fatores de vulnerabilidade não servem como ferramenta para excluir risco"
+        ],
+        [
+          "p",
+          "Histórico pessoal de depressão, bipolaridade, depressão pós-parto, transtornos ansiosos, episódio psiquiátrico grave, violência, pouco apoio, pobreza, gravidez não planejada, perda perinatal e complicações obstétricas são dados relevantes. <strong>Risco aumentado não significa destino inevitável</strong>; ausência de fatores de risco não elimina necessidade de rastreio."
+        ],
+        [
+          "p",
+          "A avaliação precisa incluir <strong>violência pelo parceiro, segurança alimentar, sono, doença crônica, sobrecarga de cuidado e isolamento</strong>. Intervenções apenas farmacológicas podem ter efeito limitado se a pessoa permanece sem proteção contra violência ou sem alguém com quem compartilhar cuidado noturno."
+        ],
+        [
+          "3",
+          "Excluir causas e contribuintes clínicos"
+        ],
+        [
+          "p",
+          "<strong>Anemia</strong> após sangramento obstétrico pode amplificar fadiga, tontura e prejuízo de concentração. <strong>Tireoidite pós-parto</strong> pode provocar manifestações ansiosas/afetivas e variações de energia conforme fase; TSH/T4 livre são úteis quando há suspeita. Dor persistente, infecção, apneia, distúrbio do sono, efeitos de medicamentos e condições metabólicas podem contribuir; não pedir painel inespecífico a todas, mas investigar achados clínicos que explicam sintomas."
+        ],
+        [
+          "p",
+          "O exame do estado mental considera aparência, humor/afeto, psicomotricidade, pensamento, concentração, crítica e risco. Em triagem positiva, perguntar <strong>se houve episódios prévios de energia/atividade anormalmente aumentadas</strong> e a relação com antidepressivos, drogas e privação de sono. Diagnóstico de depressão unipolar precipitado pode mascarar transtorno bipolar."
+        ],
+        [
+          "3",
+          "Plano terapêutico escalonado"
+        ],
+        [
+          "p",
+          "Quadros <strong>leves a moderados</strong>, sem risco e com acesso adequado, podem receber <strong>psicoterapia baseada em evidência</strong>, como TCC e terapia interpessoal, com monitorização da função e resposta. Em depressão moderada/grave, persistente, recorrente ou com impacto funcional expressivo, <strong>farmacoterapia com antidepressivo e psicoterapia</strong> podem ser necessárias conforme preferência, história de resposta e avaliação de risco, em articulação com obstetrícia/psiquiatria."
+        ],
+        [
+          "p",
+          "<strong>ISRS</strong> são frequentemente considerados opções de primeira linha quando indicados para depressão e ansiedade perinatais; a escolha leva em conta eficácia anterior, interações, sintomas-alvo, perfil individual, idade gestacional e lactação. A ACOG CPG 5 recomenda que obstetras possam discutir riscos e benefícios e iniciar tratamento quando clinicamente indicado, em vez de apenas encaminhar sem cuidado. <strong>Tratamento não deve ser adiado por medo abstrato de qualquer exposição farmacológica</strong>, assim como não deve ser iniciado sem avaliação."
+        ],
+        [
+          "p",
+          "A resposta precisa ser acompanhada de <strong>melhora funcional, sono, cuidado pessoal, sofrimento, relação com atividades e monitoramento por instrumento validado</strong>, sem reduzir sucesso a um número de EPDS. Iniciar e abandonar a paciente até o próximo parto não é seguimento adequado."
+        ],
+        [
+          "3",
+          "O tratamento do bebê passa por cuidar da cuidadora — sem culpabilizar"
+        ],
+        [
+          "p",
+          "Quando há depressão perinatal, o planejamento pode incluir apoio a alimentação infantil, visitas domiciliares, descanso materno, assistência de pessoas de confiança e acesso a serviços sociais. Não apresentar dificuldades temporárias de vínculo como prova de negligência intencional. O pediatra pode reconhecer sinais de sofrimento e facilitar contato com APS, mas deve respeitar confidencialidade e consentimento."
+        ],
+        [
+          "p",
+          "A família pode auxiliar no transporte, nas refeições, na medicação e no sono; porém, se houver violência ou coerção, o plano deve incluir proteção e suporte alternativo. “Chamar o marido” não é intervenção universal."
+        ]
+      ]
+    ],
+    [
+      "11d-transtorno-bipolar-na-gestacao-o-risco-de-retirar-e-o-risco-de-manter-tratamentos",
+      0,
+      [
+        [
+          "2",
+          "11D. Transtorno bipolar na gestação: o risco de retirar e o risco de manter tratamentos"
+        ],
+        [
+          "3",
+          "Planejamento pré-concepcional e estabilidade real"
+        ],
+        [
+          "p",
+          "O ideal é revisar com antecedência <strong>diagnóstico, episódios prévios, tratamentos que funcionaram, histórico de descompensação após interrupção, função renal/tireoide, comorbidades e preferências reprodutivas</strong>. A gravidez altera volume de distribuição, metabolismo e depuração de alguns medicamentos; parto e puerpério modificam rapidamente farmacocinética e privação de sono."
+        ],
+        [
+          "p",
+          "Não existe decisão “todas as gestantes com bipolaridade devem suspender todos os estabilizadores”. O risco de recaída e psicose puerperal pode ser alto em determinados históricos, e <strong>interrupção abrupta sem planejamento</strong> pode ser especialmente perigosa. A conversa deve comparar explicitamente danos da doença não tratada e riscos dos tratamentos disponíveis, por trimestre e gravidade."
+        ],
+        [
+          "3",
+          "Valproato: um alerta de segurança maior"
+        ],
+        [
+          "p",
+          "<strong>Valproato</strong> está associado a malformações congênitas e riscos ao neurodesenvolvimento fetal. Diretrizes como NICE CG192 desencorajam seu uso para problemas de saúde mental em mulheres que planejam engravidar ou estão grávidas; o contexto regulatório britânico inclui programa específico de prevenção de gravidez. Não transpor a estrutura regulatória do Reino Unido como se fosse uma norma brasileira idêntica. Em pessoa já exposta, avaliação obstétrica e psiquiátrica <strong>não deve incentivar abandono unilateral de toda terapia</strong>, pois a transição depende de risco atual, diagnóstico e alternativas. Se usado também para epilepsia, neurologia deve integrar o plano."
+        ],
+        [
+          "p",
+          "<strong>Carbamazepina</strong> também exige avaliação crítica de riscos gestacionais e interações; <strong>lamotrigina</strong> pode ser opção para certos padrões de bipolaridade, mas concentração plasmática e necessidade de ajuste podem variar amplamente entre gestação e pós-parto, exigindo acompanhamento especializado. Não usar equivalências simplistas “todos anticonvulsivantes são iguais”."
+        ],
+        [
+          "3",
+          "Lítio: uma opção complexa, não totalmente proibida ou isenta de risco"
+        ],
+        [
+          "p",
+          "<strong>Lítio</strong> possui eficácia importante para algumas pessoas com transtorno bipolar e pode ser considerado quando risco de recaída é elevado ou alternativas foram insuficientes. Na gestação, exige discussão de risco fetal, especialmente cardiológico relacionado à exposição precoce, junto a risco de descompensação sem tratamento. Mudanças de depuração renal ao longo da gravidez e após parto podem alterar <strong>concentração sérica e risco de toxicidade</strong>, exigindo monitoramento de litemia, função renal e tireoide."
+        ],
+        [
+          "p",
+          "Ao redor do parto, desidratação, mudanças de volume e medicamentos interferentes podem elevar risco de toxicidade, de modo que deve existir <strong>plano acordado com obstetrícia, psiquiatria e anestesia</strong>, incluindo monitorização, administração e retomada/ajustes. Evitar transformar recomendações específicas de uma guideline de 2014 em ordem universal automática de suspender lítio em momento exato, sem atualização e protocolo local."
+        ],
+        [
+          "p",
+          "Na <strong>lactação</strong>, o lítio pode passar ao leite em concentrações clinicamente relevantes; NICE adota abordagem de forte cautela, e decisões em centros especializados podem considerar circunstâncias individuais e monitorização de bebê/mãe. <strong>Não orientar amamentação com lítio como universalmente segura</strong>, nem suspender tratamento eficaz de paciente de alto risco sem plano. Revisar protocolos e recursos reais de seguimento de lactente antes de qualquer decisão."
+        ],
+        [
+          "3",
+          "Antipsicóticos e saúde metabólica"
+        ],
+        [
+          "p",
+          "Antipsicóticos podem ser essenciais para mania/psicose e manutenção em certas pacientes, com evidência gestacional variável por composto. Monitorar <strong>ganho ponderal, glicemia/diabetes gestacional e efeitos extrapiramidais ou sedação</strong> conforme molécula. A decisão deve considerar condição psiquiátrica, resposta prévia, comorbidades e necessidades neonatais, não apenas uma lista de “fármacos verdes e vermelhos”."
+        ],
+        [
+          "3",
+          "Plano de prevenção da recaída no puerpério"
+        ],
+        [
+          "p",
+          "Em pacientes de alto risco, combinar <strong>planejamento do sono</strong>, quem assumirá períodos de cuidado do bebê, sinais iniciais reconhecidos pela família, consulta psiquiátrica próxima ao parto, medicação em dose monitorada, contatos de urgência e revisão de lactação. O sono não pode ser tratado como “luxo” em bipolaridade puerperal: a privação importante pode contribuir para desestabilização em pessoa predisposta."
+        ]
+      ]
+    ],
+    [
+      "11e-psicose-puerperal-raciocinio-de-emergencia-com-responsabilidade-sobre-duas-pessoas",
+      0,
+      [
+        [
+          "2",
+          "11E. Psicose puerperal: raciocínio de emergência com responsabilidade sobre duas pessoas"
+        ],
+        [
+          "3",
+          "A segurança exige ação imediata e respeito à dignidade"
+        ],
+        [
+          "p",
+          "O cenário de psicose pós-parto envolve urgência psiquiátrica, frequentemente em interface com obstetrícia e pediatria. A paciente pode apresentar crenças delirantes sobre o bebê, agitação, alterações de humor, insônia total, desorganização e desconfiança; a crítica pode estar comprometida. <strong>Jamais deixar pessoa com perda importante de julgamento como única responsável pela segurança de bebê até avaliação</strong>, sem necessidade de culpabilizar ou ameaçar."
+        ],
+        [
+          "p",
+          "<strong>Primeiras ações:</strong> avaliar estado físico e mental, manter ambiente supervisionado, identificar acompanhante seguro, providenciar cuidado ao bebê com equipe/família apropriada, acionar emergência psiquiátrica e obstetrícia, e investigar síndrome orgânica simultânea. Delirium por sepse, encefalopatia, alterações hidroeletrolíticas, complicações neurológicas, tireoide e intoxicação podem imitar ou coexistir com transtorno mental. A presença de parto recente não transforma toda confusão em psicose primária."
+        ],
+        [
+          "3",
+          "Pistas de estados médicos que mudam o fluxo"
+        ],
+        [
+          "p",
+          "Confusão flutuante, febre, hipotensão, alteração focal neurológica, convulsão, alteração importante de glicose/sódio, cefaleia intensa ou sinais obstétricos de hipertensão/complicações demandam avaliação médica urgente. <strong>Eclâmpsia, encefalopatias, infecções puerperais e causas metabólicas</strong> são diferenciais relevantes. Investigar história de medicações e substâncias sem atitude acusatória."
+        ],
+        [
+          "3",
+          "Tratamento especializado"
+        ],
+        [
+          "p",
+          "Antipsicóticos e, em síndromes bipolares selecionadas, estabilizadores podem ser necessários; <strong>ECT</strong> é opção estabelecida em casos graves, como depressão psicótica ou catatonia e outras indicações psiquiátricas após avaliação. O plano envolve monitoramento somático, risco para bebê, lactação e consentimento/capacidade conforme legislação. A decisão de internação deve considerar benefícios, segurança e alternativas disponíveis, com mínima restrição necessária e documentação fundamentada."
+        ],
+        [
+          "p",
+          "<strong>Não é adequado</strong> agendar psicoterapia ambulatorial para “ver se melhora” quando há delírios, desorganização ou risco importante; o tratamento psicológico pode integrar recuperação, mas não substitui estabilização emergencial."
+        ],
+        [
+          "3",
+          "Alta e seguimento: o maior erro é encerrar a crise no portão do hospital"
+        ],
+        [
+          "p",
+          "Antes de alta, documentar melhora da psicose/mania, plano farmacológico com monitorização, ambiente seguro, necessidade de supervisão do bebê, suporte real, sinais de recaída e contato de emergência. Família e paciente precisam compreender o plano sem ser submetidas a julgamentos morais. <strong>Privação de sono e suspensão de medicamentos no pós-parto</strong> devem integrar educação de prevenção."
+        ]
+      ]
+    ],
+    [
+      "11f-toc-perinatal-tept-obstetrico-luto-e-violencia-tratar-sofrimento-sem-patologizar-maternidade",
+      0,
+      [
+        [
+          "2",
+          "11F. TOC perinatal, TEPT obstétrico, luto e violência: tratar sofrimento sem patologizar maternidade"
+        ],
+        [
+          "3",
+          "TOC com intrusões e rituais"
+        ],
+        [
+          "p",
+          "No <strong>TOC</strong>, pensamentos intrusivos recorrentes podem provocar ansiedade intensa, com verificação, limpeza, evitamento e busca repetida de reafirmação. A pessoa frequentemente reconhece os pensamentos como indesejados e incompatíveis com seus valores, diferentemente de convicções delirantes. Essa diferenciação evita encaminhamento coercitivo desnecessário para pacientes com TOC <strong>e</strong>, no extremo oposto, reduz risco de desconsiderar psicose real."
+        ],
+        [
+          "p",
+          "A terapia cognitivo-comportamental com <strong>exposição e prevenção de resposta</strong>, quando realizada por profissional capacitado e adaptada a segurança real, é intervenção importante. ISRS podem ser indicados por avaliação clínica; benzodiazepínicos não são terapia de primeira linha rotineira para TOC crônico. Avaliar sinais de risco suicida, comorbidades e exaustão, independentemente do nível de crítica."
+        ],
+        [
+          "3",
+          "Trauma obstétrico e TEPT"
+        ],
+        [
+          "p",
+          "Parto com risco percebido de morte, tratamento sem comunicação adequada, violência obstétrica, emergência neonatal e hospitalização de recém-nascido podem ser experiências traumáticas, mas <strong>nem todo parto difícil produz TEPT</strong>. O transtorno envolve reexperiência traumática, evitação, hiperexcitação/sensação de ameaça e prejuízo persistente após exposição traumática apropriada aos critérios, necessitando avaliação específica."
+        ],
+        [
+          "p",
+          "Evitar obrigar a mulher a recontar detalhes repetidamente antes de estar segura. Acolhimento, estabilização, proteção contra violência, psicoterapia focada em trauma quando indicada e decisão compartilhada com obstetrícia integram cuidado. A família pode precisar de informação clara sobre eventos clínicos e direitos, sem que isso substitua psicoterapia."
+        ],
+        [
+          "3",
+          "Perdas gestacionais/neonatais e sofrimento de luto"
+        ],
+        [
+          "p",
+          "Aborto espontâneo, natimortalidade e morte neonatal podem produzir luto intenso e legítimo. Choro, saudade, culpa e alteração de sono próximos à perda não constituem automaticamente depressão maior nem transtorno de luto prolongado. A equipe deve oferecer espaço para a pessoa expressar necessidades, evitar frases como “pode tentar de novo” e perguntar como deseja receber informações e rituais culturais/espirituais, quando pertinentes."
+        ],
+        [
+          "p",
+          "Ao mesmo tempo, avaliar risco de depressão maior, TEPT ou risco suicida se há desesperança persistente, prejuízo extremo, isolamento, psicose ou outros sinais relevantes. <strong>A ausência de um bebê vivo não torna desnecessário o acompanhamento puerperal físico e mental.</strong> Parceiros e familiares também podem precisar de apoio."
+        ],
+        [
+          "3",
+          "Violência na gestação e no puerpério"
+        ],
+        [
+          "p",
+          "Violência doméstica, sexual, psicológica e econômica pode agravar ansiedade/depressão e dificultar acesso à consulta. Perguntar em privacidade, não diante de possível agressor; oferecer acolhimento e seguir fluxos brasileiros de proteção/notificação conforme lei e território. <strong>Não compartilhar automaticamente o resultado de rastreio com pessoa que possa ameaçar segurança.</strong>"
+        ],
+        [
+          "p",
+          "Quando existem condições de insegurança alimentar, falta de moradia, pobreza e trabalho precário, tratar apenas sintomas emocionais sem articular assistência social reduz efetividade. Atenção à saúde mental perinatal é também coordenação de determinantes sociais, com planejamento de transporte, consultas e cuidado do bebê."
+        ]
+      ]
+    ],
+    [
+      "11g-psicofarmacologia-perinatal-selecionar-pelo-mecanismo-e-pela-exposicao-real",
+      0,
+      [
+        [
+          "2",
+          "11G. Psicofarmacologia perinatal: selecionar pelo mecanismo e pela exposição real"
+        ],
+        [
+          "3",
+          "Uma decisão que considera mãe e bebê, não “risco zero” impossível"
+        ],
+        [
+          "p",
+          "A ACOG CPG nº 5 discute <strong>benefícios e riscos de tratamento de depressão, ansiedade, bipolaridade e psicose</strong> na gestação/lactação. Exposição fetal a medicamento precisa ser considerada junto a riscos de <strong>doença mental materna não tratada</strong>, incluindo prejuízo de sono, alimentação, acesso pré-natal e segurança. O fármaco ideal é aquele com melhor equilíbrio para o quadro individual, não um produto tido como universalmente seguro."
+        ],
+        [
+          "p",
+          "Ao revisar remédio, documentar: indicação diagnóstica, eficácia anterior, intensidade da doença, riscos de recaída ao suspender, trimestre/exposição, comorbidades, interações, dose efetiva, história de adesão e preferências sobre amamentação. Não mudar medicamento eficaz apenas porque existe outro com mais publicações se a troca aumenta risco de descompensação; a decisão deve ser compartilhada."
+        ],
+        [
+          "3",
+          "Antidepressivos"
+        ],
+        [
+          "p",
+          "Os <strong>ISRS</strong> têm evidência relativamente ampla em transtornos depressivos e ansiosos perinatais. Em pacientes sem histórico de uso, sertralina ou escitalopram podem ser consideradas conforme diretrizes e perfil individual, enquanto um medicamento previamente eficaz merece análise séria antes de troca. É importante investigar <strong>bipolaridade antes de monoterapia antidepressiva</strong>, porque a mudança pode precipitar mania em pacientes suscetíveis."
+        ],
+        [
+          "p",
+          "Riscos/efeitos relevantes variam: náuseas, alterações gastrointestinais, disfunção sexual, agitação inicial, interações e eventual adaptação neonatal após exposição tardia podem requerer acompanhamento. <strong>Associação observacional entre exposição e desfecho não prova causalidade</strong>, pois a própria doença e fatores sociais podem confundir estudos. Evitar prometer segurança total ou atribuir inevitavelmente malformação ao uso de ISRS."
+        ],
+        [
+          "3",
+          "Estabilizadores do humor"
+        ],
+        [
+          "p",
+          "<strong>Valproato</strong> apresenta riscos gestacionais expressivos, de modo que deve ser evitado como tratamento psiquiátrico na gestação em geral, conforme diretrizes; troca de tratamento demanda supervisão, sobretudo se há epilepsia associada. <strong>Lamotrigina</strong> pode exigir monitorização e ajustes pela variação da depuração, especialmente em transição entre trimestres e pós-parto. <strong>Lítio</strong> exige monitorização de litemia, rim, tireoide e avaliação obstétrica/neonatal, com cuidado redobrado no parto, em desidratação e na lactação."
+        ],
+        [
+          "p",
+          "Não apresentar “tabela de medicamento permitido x proibido” sem ressalvas: exceções justificadas, indicações independentes e evolução de evidência exigem consulta ao especialista e às normas do país."
+        ],
+        [
+          "3",
+          "Antipsicóticos, sedativos e ECT"
+        ],
+        [
+          "p",
+          "Antipsicóticos podem ser essenciais em mania e psicose, mas têm perfis diferentes de sedação, ganho de peso, alterações metabólicas e efeitos neonatais; monitorar glicemia e outros riscos gestacionais conforme molécula. <strong>Benzodiazepínicos</strong> não devem ser primeira linha rotineira para ansiedade crônica no ciclo perinatal; uso curto em agitação/ansiedade grave é decisão médica individualizada e monitorada."
+        ],
+        [
+          "p",
+          "<strong>ECT</strong> pode ser indicada em depressão grave refratária, catatonia, psicose ou outras síndromes selecionadas quando benefício esperado supera riscos; requer equipe psiquiátrica, anestésica e obstétrica competente. É tratamento médico legítimo, não intervenção punitiva, e o consentimento segue padrões legais/éticos pertinentes."
+        ],
+        [
+          "3",
+          "Lactação: exposição pelo leite e condições do lactente"
+        ],
+        [
+          "p",
+          "O planejamento deve levar em conta <strong>idade e prematuridade do bebê</strong>, funcionamento renal/hepático neonatal, concentração no leite, biodisponibilidade oral do fármaco e efeitos relatados. A relação de exposição costuma ser estimada por dose relativa infantil, mas <strong>número pequeno de dose relativa não garante ausência absoluta de evento</strong>, e o risco de descontinuação do tratamento materno também importa."
+        ],
+        [
+          "p",
+          "<strong>Sertralina</strong> é uma opção frequentemente considerada favorável durante lactação quando indicada por apresentar baixas concentrações infantis em muitos estudos; porém não é universalmente adequada para todas as mães. <strong>Lítio</strong> e alguns outros fármacos exigem particular cautela e avaliação especializada, possivelmente com monitorização laboratorial do lactente, conforme protocolo. Uma mãe com psicose aguda e sono extremamente comprometido pode priorizar estabilização e plano seguro de alimentação infantil; forçar amamentação a qualquer custo não é assistência centrada na pessoa."
+        ],
+        [
+          "p",
+          "Acompanhamento do bebê inclui observação de <strong>sonolência excessiva, dificuldade de alimentação, crescimento inadequado, irritabilidade, alterações de tônus</strong> ou outros sintomas pertinentes ao fármaco, com pediatria. Evitar recomendar suspensão de amamentação automaticamente por qualquer psicotrópico, assim como não dizer que toda exposição pelo leite é irrelevante."
+        ],
+        [
+          "3",
+          "Matriz para revisar uma prescrição"
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Decisão orientadora",
+            "O que evitar"
+          ],
+          [
+            [
+              "Depressão leve em gestação, sem risco e com acesso à psicoterapia",
+              "Discutir TCC/TIP e monitorar, considerar fármacos conforme preferência e gravidade",
+              "Negar cuidado por “ser normal sentir tristeza”"
+            ],
+            [
+              "Depressão moderada/grave, história de boa resposta a ISRS",
+              "Discussão de manter/iniciar fármaco e psicoterapia com plano",
+              "Suspender automaticamente sem avaliar recaída"
+            ],
+            [
+              "História de hipomania/mania e rastreio depressivo positivo",
+              "Avaliação de bipolaridade e tratamento correspondente",
+              "Antidepressivo em monoterapia por protocolo automático"
+            ],
+            [
+              "Gestante com uso de valproato psiquiátrico",
+              "Revisão especializada urgente de risco gestacional e alternativas",
+              "Orientar abandono unilateral de toda medicação"
+            ],
+            [
+              "Bipolaridade de alto risco com lítio efetivo",
+              "Monitorar e discutir risco fetal, recaída, parto e lactação",
+              "Declarar “sempre proibido” ou “sempre seguro”"
+            ],
+            [
+              "Psicose/mania grave no puerpério",
+              "Emergência, proteção, avaliação de internação e tratamento",
+              "Adiar para psicoterapia eletiva"
+            ],
+            [
+              "Lactente prematuro exposto a psicotrópico pelo leite",
+              "Monitorização pediátrica e escolha personalizada",
+              "Usar recomendações para bebê saudável a termo sem adaptação"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "11h-rede-sus-cuidado-compartilhado-e-passagem-de-responsabilidade",
+      0,
+      [
+        [
+          "2",
+          "11H. Rede SUS, cuidado compartilhado e passagem de responsabilidade"
+        ],
+        [
+          "3",
+          "Do pré-natal para a APS e de volta ao serviço especializado"
+        ],
+        [
+          "p",
+          "A organização brasileira pode envolver <strong>pré-natal na APS, obstetrícia de alto risco, eMulti, CAPS/RAPS, urgência, psiquiatria, psicologia e assistência social</strong>. O acesso real varia por município; a frase “encaminhar ao CAPS” é insuficiente se o serviço não atende o perfil clínico, não existe no território ou não foi contatado."
+        ],
+        [
+          "p",
+          "Quando há rastreio positivo, a UBS deve definir <strong>quem fará avaliação diagnóstica, quando, como a paciente será contatada e que serviço receberá caso grave</strong>. O parto não apaga a necessidade de seguimento; a transição para acompanhamento longitudinal no primeiro ano deve ser planejada, inclusive por contato com serviços de saúde da criança quando apropriado e consentido."
+        ],
+        [
+          "3",
+          "Plano de crise com dois focos de segurança"
+        ],
+        [
+          "p",
+          "Em mulher com bipolaridade ou histórico de psicose pós-parto, pactuar:\r<br>1. Sinais próprios de recaída (redução pronunciada da necessidade de sono, agitação, pensamento acelerado, crenças estranhas, desorganização).\r<br>2. Pessoas confiáveis que possam acompanhar a paciente e assumir temporariamente cuidados infantis quando houver crise.\r<br>3. Serviço de referência, emergência e transporte, com contato real e disponibilidade.\r<br>4. Estratégia de sono/apoio noturno e acompanhamento farmacológico.\r<br>5. O que fazer em caso de ideação suicida, mania ou psicose.\r<br>6. Retorno após alta ou alteração de medicação, com responsável definido."
+        ],
+        [
+          "p",
+          "A <strong>criança não pode ser invisibilizada</strong> no plano, mas também não se pode usar o filho para ameaçar ou culpabilizar a paciente. O foco é segurança e recuperação, respeitando direitos e necessidade de medidas proporcionais de proteção."
+        ],
+        [
+          "3",
+          "Indicadores de um programa efetivo"
+        ],
+        [
+          "p",
+          "<li>Proporção de gestantes com rastreio válido e registrado em momentos relevantes.</li>\r<li>Proporção de rastreios positivos com avaliação diagnóstica posterior efetivamente documentada.</li>\r<li>Tempo entre identificação de risco importante e cuidado especializado.</li>\r<li>Proporção de pacientes com bipolaridade/psicose prévia com plano perinatal disponível.</li>\r<li>Continuidade do tratamento após parto e acesso ao seguimento.</li>\r<li>Acompanhamento de segurança da paciente/bebê sem medidas coercitivas desnecessárias.</li>\r<li>Avaliação de satisfação, barreiras de acesso e equidade.</li>"
+        ],
+        [
+          "p",
+          "Um programa que anuncia “100% de EPDS preenchidas”, mas não oferece tratamento a quem precisa, mede papel preenchido e não desfecho assistencial."
+        ]
+      ]
+    ],
+    [
+      "11i-casos-clinicos-adicionais-com-decisao-e-diferencial",
+      0,
+      [
+        [
+          "2",
+          "11I. Casos clínicos adicionais — com decisão e diferencial"
+        ],
+        [
+          "3",
+          "Caso A — rastreio positivo não define remédio"
+        ],
+        [
+          "p",
+          "Gestante de 22 semanas, primeira consulta na UBS, pontua alto na EPDS e descreve anedonia, insônia mesmo quando pode descansar e prejuízo funcional. <strong>Hipótese:</strong> episódio depressivo perinatal a confirmar, sem excluir bipolaridade ou anemia/tireoide. <strong>Exames:</strong> avaliação do estado mental e risco, história afetiva longitudinal, avaliação clínica e exames dirigidos. <strong>Conduta:</strong> acolher, confirmar diagnóstico, organizar psicoterapia/apoio e decidir farmacoterapia conforme gravidade e preferências. <strong>Por que importa:</strong> o questionário abre acesso, não substitui diagnóstico."
+        ],
+        [
+          "3",
+          "Caso B — sinais de hipomania antes de antidepressivo"
+        ],
+        [
+          "p",
+          "Mulher com sintomas depressivos gestacionais relata episódios antigos em que ficava vários dias com pouca necessidade de sono, energia aumentada e comportamento incomum. <strong>Hipótese:</strong> transtorno bipolar a investigar. <strong>Conduta:</strong> evitar iniciar antidepressivo em monoterapia automaticamente; avaliação psiquiátrica e plano obstétrico conforme gravidade. <strong>Por que importa:</strong> história de mania/hipomania muda a terapia."
+        ],
+        [
+          "3",
+          "Caso C — puérpera do quinto dia com choro fácil"
+        ],
+        [
+          "p",
+          "Puérpera de cinco dias chora mais e sente-se sensível, mas conserva crítica, pede ajuda, alimenta-se e melhora ao descansar; não há ideação suicida nem psicose. <strong>Hipótese:</strong> tristeza puerperal transitória possível. <strong>Conduta:</strong> apoio, orientações e reavaliação planejada, com sinais claros de urgência. <strong>Por que importa:</strong> reconhecer variação comum sem ignorar possibilidade de deterioração."
+        ],
+        [
+          "3",
+          "Caso D — psicose puerperal após insônia completa"
+        ],
+        [
+          "p",
+          "Puérpera de oito dias passa noites praticamente sem dormir e desenvolve crenças delirantes, fala desorganizada e incapacidade de avaliar perigos. <strong>Hipótese:</strong> psicose puerperal, possível síndrome bipolar, com causas médicas a excluir. <strong>Conduta:</strong> emergência, proteção da paciente e do bebê, avaliação de quadro orgânico/obstétrico e internação/terapia especializada conforme risco. <strong>Por que importa:</strong> não é “apenas depressão pós-parto” nem deve aguardar retorno eletivo."
+        ],
+        [
+          "3",
+          "Caso E — pensamentos intrusivos no TOC"
+        ],
+        [
+          "p",
+          "Puérpera relata pensamentos assustadores e indesejados, sente repulsa pelo conteúdo e procura ajuda, sem desejo de agir e com julgamento preservado. <strong>Hipótese:</strong> TOC perinatal, com avaliação individual da segurança. <strong>Conduta:</strong> entrevista fenomenológica, diferenciação de psicose, encaminhamento para TCC com exposição/prevenção de resposta quando apropriado, considerar tratamento farmacológico conforme prejuízo. <strong>Por que importa:</strong> conteúdo intrusivo não é delírio automaticamente."
+        ],
+        [
+          "3",
+          "Caso F — mulher com bipolaridade interrompe lítio sem consulta"
+        ],
+        [
+          "p",
+          "Gestante com bipolaridade estável interrompe lítio abruptamente por medo de exposição fetal e evolui com irritabilidade marcante e sono reduzido sem fadiga. <strong>Hipótese:</strong> recaída afetiva possível. <strong>Conduta:</strong> avaliação psiquiátrica/obstétrica urgente, discutir riscos da interrupção e alternativas/monitorização, sem reiniciar ou mudar doses indiscriminadamente. <strong>Por que importa:</strong> tanto doença quanto medicação exigem análise de risco-benefício."
+        ],
+        [
+          "3",
+          "Caso G — depressão e violência"
+        ],
+        [
+          "p",
+          "Puérpera de três meses tem sintomas depressivos e parceiro que controla acesso ao celular e consultas; teme relatar sofrimento. <strong>Hipótese:</strong> depressão e situação de violência/coerção. <strong>Conduta:</strong> entrevistar em privacidade, avaliar segurança, articular rede de proteção e suporte social, além de tratamento clínico/psicológico. <strong>Por que importa:</strong> psicofármaco isolado não remove violência nem barreiras reais."
+        ],
+        [
+          "3",
+          "Caso H — luto após morte neonatal"
+        ],
+        [
+          "p",
+          "Mulher perdeu recém-nascido há três semanas, relata tristeza profunda, saudade e vontade de falar do bebê, mas mantém contato com realidade e suporte de pessoas próximas. <strong>Hipótese:</strong> reação de luto, não necessariamente depressão maior. <strong>Conduta:</strong> acolher, oferecer acompanhamento e avaliar sinais de depressão, TEPT, suicidabilidade ou luto persistente com prejuízo se surgirem. <strong>Por que importa:</strong> sofrimento humano legítimo não é automaticamente doença, mas merece cuidado."
+        ]
+      ]
+    ],
+    [
+      "11j-questoes-autorais-adicionais-e-mini-revisao-integrada",
+      0,
+      [
+        [
+          "2",
+          "11J. Questões autorais adicionais e mini revisão integrada"
+        ],
+        [
+          "p",
+          "<strong>Q-A.</strong> Puérpera no sexto dia apresenta delírios, insônia quase total e desorganização, com julgamento prejudicado. Qual prioridade?  \r<br>A) Tratar como tristeza puerperal comum e observar em casa; B) Esperar EPDS; C) Avaliação emergencial com proteção da paciente e bebê, descartando causas orgânicas; D) Psicoterapia eletiva em um mês; E) Orientar apenas banho relaxante.  \r<br><strong>Gabarito C.</strong> Psicose puerperal é emergência. A/B/D/E retardam proteção e tratamento. <strong>Conceito:</strong> perda da realidade muda urgência independentemente de escore."
+        ],
+        [
+          "p",
+          "<strong>Q-B.</strong> Antes de iniciar antidepressivo em gestante com depressão aparente, qual antecedente deve ser investigado de modo sistemático?  \r<br>A) Apenas idade materna; B) Episódios de mania/hipomania; C) Número de roupas do bebê; D) Preferência alimentar exclusiva; E) Cor dos olhos.  \r<br><strong>Gabarito B.</strong> ACOG recomenda rastrear bipolaridade antes de antidepressivo pela possibilidade de desestabilização. A/C/D/E não respondem à segurança psiquiátrica. <strong>Conceito:</strong> bipolaridade pode se apresentar primeiro como depressão."
+        ],
+        [
+          "p",
+          "<strong>Q-C.</strong> Mulher com depressão moderada controlada por ISRS descobre gestação e deseja suspender imediatamente a medicação. Melhor princípio?  \r<br>A) Suspender qualquer psicotrópico abruptamente; B) Manter sem conversa; C) Discutir individualmente riscos de tratamento e doença não tratada, resposta prévia e opções com obstetrícia/psiquiatria; D) Garantir risco zero; E) Proibir psicoterapia.  \r<br><strong>Gabarito C.</strong> ACOG recomenda decisão informada e individualizada. A pode provocar recaída, B exclui autonomia, D promete impossível e E retira intervenção útil. <strong>Conceito:</strong> exposição e recaída integram o mesmo balanço."
+        ],
+        [
+          "p",
+          "<strong>Q-D.</strong> Puérpera relata pensamentos intrusivos indesejados, crítico-preservados, com medo e evitamento, sem delírios. Qual hipótese considerar?  \r<br>A) Psicose obrigatória; B) TOC perinatal e necessidade de avaliação psicossocial; C) Nenhum sofrimento; D) Mania confirmada; E) Simulação obrigatória.  \r<br><strong>Gabarito B.</strong> Ego-distonia, crítica e sofrimento podem apontar TOC; A/D/E inferem diagnósticos sem base, C despreza sofrimento. <strong>Conceito:</strong> diferenciar <em>pensamento</em> de <em>convicção delirante</em>."
+        ],
+        [
+          "p",
+          "<strong>Q-E.</strong> Paciente com bipolaridade e lítio efetivo planeja gestação. Qual conduta geral é mais segura?  \r<br>A) Dizer que lítio é 100% seguro; B) Retirar medicação abruptamente; C) Discussão especializada do risco de recaída, exposição fetal, monitorização renal/tireoidiana/litemia e plano de parto/lactação; D) Aguardar psicose puerperal; E) Prescrever valproato automaticamente.  \r<br><strong>Gabarito C.</strong> Lítio pode ter lugar em quadros selecionados, mas exige monitorização e decisão perinatal individual; A/B/D/E são inadequadas. <strong>Conceito:</strong> stabilizador não é categoria única de risco."
+        ],
+        [
+          "p",
+          "<strong>Q-F.</strong> Mulher de cinco dias pós-parto relata choro fácil, irritabilidade leve, crítica preservada e apoio eficaz. Qual interpretação inicial?  \r<br>A) Psicose puerperal automaticamente; B) Baby blues possível, com acompanhamento e sinais de alerta; C) Transtorno bipolar confirmado; D) Alta definitiva sem retorno; E) ECT obrigatória.  \r<br><strong>Gabarito B.</strong> Sintomas leves e transitórios podem refletir adaptação; A/C/E são excessivos, D ignora acompanhamento. <strong>Conceito:</strong> duração, função e gravidade orientam diferencial."
+        ],
+        [
+          "p",
+          "<strong>Q-G.</strong> Por que um programa de pré-natal que aplica EPDS em todas as consultas ainda pode falhar?  \r<br>A) Rastreamento nunca tem valor; B) Falta caminho real de avaliação, tratamento e seguimento para positivos; C) Escala sempre diagnostica sozinha; D) Toda paciente necessita medicação; E) Violência não interessa.  \r<br><strong>Gabarito B.</strong> Triagem sem resposta assistencial pouco modifica desfecho. A/C/D/E são reducionistas ou incorretas. <strong>Conceito:</strong> rastrear pressupõe capacidade de agir."
+        ],
+        [
+          "p",
+          "<strong>Q-H.</strong> Mulher sofreu perda neonatal recente e apresenta tristeza/saudade intensas sem outros sinais de depressão maior. Melhor atitude?  \r<br>A) Diagnosticar depressão automaticamente; B) Negar acompanhamento; C) Acolher luto e acompanhar, investigando transtornos quando critérios e gravidade indicarem; D) Mandar esquecer a perda; E) Considerar psicose pela intensidade da saudade.  \r<br><strong>Gabarito C.</strong> Luto legítimo merece cuidado e não é diagnóstico automático; A/E patologizam, B/D negligenciam. <strong>Conceito:</strong> diferenciar sofrimento esperado de transtorno sem abandonar paciente."
+        ],
+        [
+          "3",
+          "Síntese para prova em 30 segundos"
+        ],
+        [
+          "p",
+          "<li><strong>Rastreio:</strong> no pré-natal e no puerpério, usando escala validada, avaliação clínica e porta de entrada para tratamento.</li>\r<li><strong>Antes de antidepressivo:</strong> investigar bipolaridade.</li>\r<li><strong>Baby blues:</strong> labilidade breve com crítica preservada, sem prejuízo grave; acompanhar.</li>\r<li><strong>Depressão:</strong> sintomas persistentes e prejuízo, com avaliação de risco e comorbidades.</li>\r<li><strong>Mania:</strong> pouca <strong>necessidade</strong> de sono associada a energia/atividade alteradas; não confundir com noites interrompidas pelo bebê.</li>\r<li><strong>Psicose puerperal:</strong> perda do juízo de realidade, emergência; proteger paciente e bebê, investigar causas orgânicas e tratar.</li>\r<li><strong>TOC:</strong> pensamentos intrusivos ego-distônicos não equivalem a delírios, mas exigem avaliação e podem necessitar TCC/ISRS.</li>\r<li><strong>Bipolaridade:</strong> tratamento individualizado, cuidado com valproato, lítio e interrupção abrupta.</li>\r<li><strong>Lactação:</strong> considerar remédio específico e condição do lactente, sem “proibir tudo” ou “liberar tudo”.</li>\r<li><strong>Rede:</strong> rastrear → diagnosticar → tratar → coordenar → seguir após parto.</li>"
+        ],
+        [
+          "3",
+          "Referências científicas para a expansão"
+        ],
+        [
+          "p",
+          "1. <strong>ACOG CPG nº 4</strong> (2023). <em>Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum</em>. https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum\r<br>2. <strong>ACOG CPG nº 5</strong> (2023). <em>Treatment and Management of Mental Health Conditions During Pregnancy and Postpartum</em>. https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/treatment-and-management-of-mental-health-conditions-during-pregnancy-and-postpartum\r<br>3. <strong>ACOG.</strong> <em>Patient Screening — Perinatal Mental Health</em>. https://www.acog.org/programs/perinatal-mental-health/patient-screening\r<br>4. <strong>NICE CG192.</strong> <em>Antenatal and postnatal mental health: clinical management and service guidance</em>. https://www.nice.org.uk/guidance/cg192/chapter/recommendations\r<br>5. <strong>Ministério da Saúde.</strong> <em>Depressão pós-parto</em>. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/depressao-pos-parto\r<br>6. <strong>Ministério da Saúde.</strong> <em>Rede de Atenção Psicossocial</em>. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+        ],
+        [
+          "p",
+          "<strong>Comparação e origem:</strong> o PDF privado <em>Assistência ao Pré-Natal</em> foi efetivamente relido no Drive. Seu foco está em rastreamento e assistência obstétrica, com elementos sobre doenças maternas, mas <strong>não constitui referência psiquiátrica perinatal integral</strong>; imagens, diagramas e redação não foram reutilizados. A redação deste complemento é original e baseada em diretrizes públicas identificadas. A licença de quaisquer imagens futuras deve ser validada no Admin. Não foram certificadas segurança e acesso de cada fármaco no Brasil, atualização integral de critérios diagnósticos brasileiros, revisão por psiquiatra/obstetra, contagem de 60k didáticos úteis nem testes HTML/PWA; <strong>não publicar</strong>."
+        ]
+      ]
+    ],
+    [
+      "12-cinco-casos-clinicos-comentados",
+      0,
+      [
+        [
+          "2",
+          "12. Cinco casos clínicos comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Tristeza puerperal versus depressão"
+        ],
+        [
+          "p",
+          "Puérpera de cinco dias relata choro fácil e sensibilidade, mas consegue descansar quando recebe apoio, deseja cuidar do bebê e nega ideias suicidas; sem desorganização. <strong>Hipótese:</strong> labilidade puerperal transitória possível. <strong>Raciocínio:</strong> tempo, intensidade, função e ausência de sinais de alarme apoiam acompanhamento; não garantem diagnóstico definitivo. <strong>Conduta:</strong> apoio, rastreamento organizado e retorno; persistência além de duas semanas, piora ou sinais de risco → avaliação para depressão/ansiedade. <strong>Por que importa:</strong> não minimizar riscos e não patologizar reação transitória."
+        ],
+        [
+          "3",
+          "Caso 2 — Depressão com rastreio positivo"
+        ],
+        [
+          "p",
+          "Gestante de 26 semanas pontua alto em instrumento validado, relata anedonia, humor deprimido há várias semanas, dificuldade de funcionar e insônia mesmo quando pode dormir. <strong>Hipótese:</strong> episódio depressivo perinatal. <strong>Exames:</strong> avaliação clínica e mental, risco suicida, história prévia de bipolaridade, anemia/tireoide conforme caso. <strong>Conduta:</strong> confirmar diagnóstico, iniciar acesso à psicoterapia/apoio, discutir farmacoterapia conforme gravidade e preferências, agendar seguimento. <strong>Por que importa:</strong> instrumento sinaliza, não define diagnóstico isoladamente."
+        ],
+        [
+          "3",
+          "Caso 3 — Tratamento bipolar interrompido por conta própria"
+        ],
+        [
+          "p",
+          "Mulher de 31 anos com bipolaridade estável há anos interrompe medicação sem consulta após teste de gravidez positivo; evolui com sono muito reduzido sem cansaço e irritabilidade crescente. <strong>Hipótese:</strong> desestabilização do humor/possível hipomania ou mania inicial. <strong>Raciocínio:</strong> quadro não é simples \"ansiedade normal\" e exige avaliar episódio, segurança, medicação e doença materna. <strong>Conduta:</strong> avaliação psiquiátrica urgente, plano com obstetrícia, sem reiniciar ou substituir dose às cegas; proteger sono e seguimento. <strong>Por que importa:</strong> retirada abrupta de tratamento também gera risco."
+        ],
+        [
+          "3",
+          "Caso 4 — Psicose puerperal no sexto dia"
+        ],
+        [
+          "p",
+          "Puérpera de seis dias passa noites sem dormir, apresenta desorganização, acredita firmemente em mensagens ameaçadoras irreais e recusa apoio; família nota mudança brusca. <strong>Hipótese:</strong> psicose pós-parto, possível episódio bipolar; excluir causas médicas. <strong>Conduta:</strong> segurança dela e do bebê, emergência com psiquiatria/obstetrícia, avaliação clínica e necessidade de internação. <strong>Por que importa:</strong> não confundir com tristeza puerperal ou TOC com crítica preservada."
+        ],
+        [
+          "3",
+          "Caso 5 — Pensamentos intrusivos com crítica preservada"
+        ],
+        [
+          "p",
+          "Puérpera de dois meses apresenta imagens mentais indesejadas de perigo ao bebê, fica aterrorizada com o próprio pensamento e pede ajuda; nega vontade de agir, mantém contato com realidade e evita objetos por medo. <strong>Hipótese:</strong> sintomas obsessivo-compulsivos perinatais, sem concluir automaticamente doença nem descartar necessidade de avaliação de segurança. <strong>Raciocínio:</strong> ego-distonia, crítica preservada e ansiedade diferem de delírio com convicção. <strong>Conduta:</strong> entrevista psiquiátrica, avaliação de risco, psicoterapia adequada e tratamento conforme prejuízo, diferenciando de psicose. <strong>Por que importa:</strong> identificar sofrimento sem rotular injustamente paciente como perigosa."
+        ]
+      ]
+    ],
+    [
+      "13-questoes-autorais-comentadas",
+      0,
+      [
+        [
+          "2",
+          "13. Questões autorais comentadas"
+        ],
+        [
+          "p",
+          "<strong>Q1.</strong> Qual é a recomendação de rastreamento perinatal mais apropriada?\r<br>A) Rastrear só após parto. B) Depressão/ansiedade no início e em etapa posterior da gestação e no pós-parto, com sistema de resposta e seguimento. C) EPDS positivo confirma diagnóstico. D) Exame de urina substitui avaliação mental. E) Não rastrear quem não tem fatores.  \r<br><strong>Gabarito B.</strong> A/E deixam quadros invisíveis; C confunde triagem com diagnóstico; D é irrelevante; B corresponde à ACOG."
+        ],
+        [
+          "p",
+          "<strong>Q2.</strong> Puérpera no décimo dia com insônia grave, agitação, delírios e desorganização. Melhor conduta:\r<br>A) Aguardar consulta em um mês. B) Tratar como baby blues sem avaliar. C) Atendimento psiquiátrico e obstétrico emergencial com segurança. D) Administrar antidepressivo isolado sem avaliação. E) Concluir TOC porque fala sobre bebê.  \r<br><strong>Gabarito C.</strong> A/B atrasam urgência; D pode ser inadequado em mania/psicose; E confunde crítica/realidade. <strong>Revisão:</strong> psicose pós-parto é emergência."
+        ],
+        [
+          "p",
+          "<strong>Q3.</strong> Antes de iniciar antidepressivo em gestante com sintomas depressivos, é essencial:\r<br>A) Excluir qualquer suporte familiar. B) Investigar história de mania/hipomania e bipolaridade. C) Declarar que gestação proíbe todo tratamento. D) Usar somente laboratório. E) Garantir remissão com dose única.  \r<br><strong>Gabarito B.</strong> A/C/D/E são inadequadas; B evita antidepressivo em monoterapia no transtorno bipolar não reconhecido."
+        ],
+        [
+          "p",
+          "<strong>Q4.</strong> Uma gestante estabilizada com tratamento psiquiátrico descobre gravidez. A melhor afirmação:\r<br>A) Suspender automaticamente tudo. B) Fármacos são universalmente inofensivos. C) Revisar em decisão compartilhada riscos da medicação e da doença não tratada antes de modificar regime. D) Nunca informar obstetra. E) Trocar para valproato como regra.  \r<br><strong>Gabarito C.</strong> A e E expõem risco, B é falso, D fragmenta cuidado; C equilibra evidência e individualização."
+        ],
+        [
+          "p",
+          "<strong>Q5.</strong> Pensamento intrusivo indesejado com consciência de ser irracional, medo de realizá-lo e evitamento, sem delírios, aponta primeiro para:\r<br>A) Psicose puerperal necessariamente. B) TOC perinatal como diferencial, exigindo avaliação e segurança. C) Confirma intenção de dano. D) Baby blues obrigatório. E) Delirium sempre.  \r<br><strong>Gabarito B.</strong> A/C ignoram ego-distonia, D/E não explicam síndrome; B orienta diferencial com segurança."
+        ],
+        [
+          "p",
+          "<strong>Q6.</strong> Sobre sintomas afetivos puerperais, é correto afirmar:\r<br>A) Todos duram para sempre. B) Labilidade leve nos primeiros dias pode remitir em até ~2 semanas; persistência, prejuízo ou sinais de risco exigem investigação. C) Psicose tem o mesmo tratamento de blues. D) Depressão exige amenorreia. E) Ausência de tristeza exclui anedonia.  \r<br><strong>Gabarito B.</strong> A/C/D/E não refletem critérios; B diferencia tempo/gravidade."
+        ],
+        [
+          "p",
+          "<strong>Q7.</strong> Sobre rastreamento de depressão e ansiedade perinatais:\r<br>A) Um escore dispensa risco suicida. B) Só psiquiatra pode fazer qualquer pergunta inicial. C) Ferramenta positiva pede avaliação clínica, plano e monitorização. D) Altos escores provam psicose. E) Rastrear sem oferecer cuidado é suficiente.  \r<br><strong>Gabarito C.</strong> A/D confundem dimensão da escala, B cria barreira, E não garante resposta; C integra cuidado."
+        ]
+      ]
+    ],
+    [
+      "14-revisao-de-alta-retencao",
+      0,
+      [
+        [
+          "2",
+          "14. Revisão de alta retenção"
+        ],
+        [
+          "p",
+          "<li><strong>Depressão perinatal não começa obrigatoriamente após o parto.</strong></li>\r<li>\"Baby blues\" é transitório; duração, funcionalidade e risco distinguem transtorno.</li>\r<li>EPDS/PHQ-9 ajudam <strong>rastrear</strong>, não substituem entrevista.</li>\r<li>Antes de antidepressivo, considerar <strong>bipolaridade</strong>.</li>\r<li><strong>Psicose pós-parto = emergência</strong> de segurança e tratamento.</li>\r<li>TOC com pensamentos ego-distônicos e crítica preservada exige diferencial de psicose.</li>\r<li>Decisão farmacológica pondera <strong>doença não tratada</strong> e riscos de exposição, não proibição universal.</li>\r<li>Valproato tem risco gestacional importante; lítio requer monitorização especializada quando indicado.</li>\r<li>APS, obstetrícia, psiquiatria, RAPS e cuidado neonatal mantêm plano compartilhado e acompanhamento.</li>"
+        ]
+      ]
+    ],
+    [
+      "15-pautas-visuais-para-admin",
+      0,
+      [
+        [
+          "2",
+          "15. Pautas visuais para Admin"
+        ],
+        [
+          "p",
+          "1. Linha do tempo gravidez → parto → 12 meses de puerpério de risco.\r<br>2. Fluxograma baby blues vs depressão vs psicose.\r<br>3. Quadro EPDS/PHQ-9/GAD-7/MDQ: finalidade, sem reproduzir escala protegida.\r<br>4. Diagrama cuidado perinatal com triagem/resposta/seguimento.\r<br>5. Comparação autoral bipolar vs depressão unipolar.\r<br>6. Quadro de sinais de alerta de psicose puerperal.\r<br>7. Fluxograma TOC com crítica preservada vs delírio.\r<br>8. Matriz materna risco de doença não tratada × medicação.\r<br>9. Diagrama redes APS/eMulti/CAPS/obstetrícia/neonatologia.\r<br>10. Plano fictício de proteção ao sono e transição de cuidado.\r<br>Sem imagens clínicas reais ou capturas de PDFs privados, sem publicação antes de curadoria e licença."
+        ]
+      ]
+    ],
+    [
+      "16-referencias-clinicas",
+      0,
+      [
+        [
+          "2",
+          "16. Referências clínicas"
+        ],
+        [
+          "p",
+          "1. ACOG Clinical Practice Guideline 4. Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum (2023). https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum\r<br>2. ACOG Clinical Practice Guideline 5. Treatment and Management of Mental Health Conditions During Pregnancy and Postpartum (2023). https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/treatment-and-management-of-mental-health-conditions-during-pregnancy-and-postpartum\r<br>3. ACOG. Implementing Perinatal Mental Health Screening (recomendações de instrumentos e fluxo). https://www.acog.org/programs/perinatal-mental-health/implementing-perinatal-mental-health-screening\r<br>4. Ministério da Saúde. Depressão pós-parto e acesso aos serviços do SUS. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/depressao-pos-parto\r<br>5. ACOG. Assessment and Treatment of Perinatal Mental Health Conditions. https://www.acog.org/programs/perinatal-mental-health/assessment-and-treatment-of-perinatal-mental-health-conditions\r<br>6. Brasil. Ministério da Saúde. Rede de Atenção Psicossocial (RAPS). https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+        ],
+        [
+          "3",
+          "Controle de qualidade e lacunas"
+        ],
+        [
+          "p",
+          "<strong>Produzido:</strong> definições, rastreio, diagnóstico diferencial, mecanismo, depressão/ansiedade, bipolaridade, psicose, TOC, psicofármacos por princípio, lactação, 5 casos, 7 questões e 10 visuais planejados.  \r\n<strong>Pendente:</strong> benchmark psiquiátrico específico no Drive; aprofundamento de critérios formais DSM/CID e intervalos; diretrizes FEBRASGO/PCDT psicofarmacológico brasileiro e lactação em tabela por fármaco/dose com avaliação individual; terapias psicossociais e implementação SUS; >=60 mil caracteres didáticos úteis; revisão por obstetra/psiquiatra, teste de autossuficiência, licença de imagens e PWA.  \r\n<strong>Status:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge/deploy."
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1279 @@
+{
+  "v": 2,
+  "s": "planejamento-avaliacao-e-gestao-de-servicos-de-saude",
+  "t": "Planejamento, Avaliação e Gestão de Serviços de Saúde",
+  "p": "Planejamento, Avaliação e Gestão de Serviços de Saúde — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Planejamento Estratégico Situacional (PES), Lei Complementar 141/2012, Tríade de Donabedian, Regulação do Acesso, Judicialização e RDC 36/2013",
+  "a": "Saúde Coletiva",
+  "m": "Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Planejamento, Avaliação e Gestão de Serviços de Saúde",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Planejamento Estratégico Situacional (PES), Lei Complementar 141/2012, Tríade de Donabedian, Regulação do Acesso, Judicialização e RDC 36/2013",
+    [
+      "Área: Saúde Coletiva",
+      "Matéria: Saúde Coletiva",
+      "Tema: Planejamento, Avaliação e Gestão de Serviços de Saúde"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "planejamento-avaliacao-e-gestao-dos-servicos-de-saude",
+      "Planejamento, avaliação e gestão dos serviços de saúde"
+    ],
+    [
+      "competencias-a-desenvolver",
+      "Competências a desenvolver"
+    ],
+    [
+      "planejamento-estrategico-situacional-pes-carlos-matus",
+      "1A. Do Planejamento Normativo Tradicional ao Planejamento Estratégico Situacional (PES) de Carlos Matus: Os Quatro Momentos e a Viabilidade Política"
+    ],
+    [
+      "instrumentos-formais-de-planejamento-do-sus-e-regras-orcamentarias",
+      "5A. O Ciclo do PlanejaSUS: Plano de Saúde, Programação Anual (PAS), Relatório de Gestão (RAG) e a Lei Complementar nº 141/2012"
+    ],
+    [
+      "1-gestao-e-uma-intervencao-em-saude",
+      "1. Gestão é uma intervenção em saúde"
+    ],
+    [
+      "2-quem-governa-o-que-no-sus",
+      "2. Quem governa o quê no SUS?"
+    ],
+    [
+      "3-rede-de-atencao-a-saude-ras-circulacao-de-pessoas-nao-so-predios",
+      "3. Rede de Atenção à Saúde (RAS) — circulação de pessoas, não só prédios"
+    ],
+    [
+      "4-diagnostico-situacional-antes-de-propor-uma-solucao",
+      "4. Diagnóstico situacional: antes de propor uma solução"
+    ],
+    [
+      "5-instrumentos-formais-de-planejamento-do-sus",
+      "5. Instrumentos formais de planejamento do SUS"
+    ],
+    [
+      "triade-de-donabedian-e-avaliacao-da-qualidade-em-saude",
+      "8A. A Tríade de Avedis Donabedian (Estrutura, Processo e Resultado) e os Modelos de Gestão Pública (OSS, OSCIP e Consórcios Intermunicipais)"
+    ],
+    [
+      "quatro-casos-de-gestao-e-planejamento-comentados",
+      "13B. Casos Práticos de Gestão, Regulação e Planejamento em Saúde Coletiva"
+    ],
+    [
+      "questoes-comentadas-gestao-planejamento-residencia-enamed",
+      "14B. Questões Inéditas Comentadas de Residência Médica, Revalida e ENAMED sobre Planejamento, Gestão e Avaliação em Saúde"
+    ],
+    [
+      "judicializacao-da-saude-stf-stj-e-saude-suplementar-ans",
+      "10A. Judicialização da Saúde (Temas 793 do STF e 106 do STJ), Regulação da Saúde Suplementar (Rol da ANS e Lei nº 14.454/2022) e Segurança do Paciente (RDC nº 36/2013)"
+    ],
+    [
+      "6-financiamento-orcamento-e-capacidade",
+      "6. Financiamento, orçamento e capacidade"
+    ],
+    [
+      "7-regulacao-assistencial-fila-nao-e-apenas-ordem-cronologica",
+      "7. Regulação assistencial: fila não é apenas ordem cronológica"
+    ],
+    [
+      "8-avaliacao-dos-servicos-estrutura-processo-e-resultado",
+      "8. Avaliação dos serviços — estrutura, processo e resultado"
+    ],
+    [
+      "9-saude-suplementar-setor-privado-e-complementariedade",
+      "9. Saúde suplementar, setor privado e complementariedade"
+    ],
+    [
+      "10-judicializacao-direito-evidencia-acesso-e-decisoes-dificeis",
+      "10. Judicialização: direito, evidência, acesso e decisões difíceis"
+    ],
+    [
+      "11-seguranca-melhoria-continua-e-implementacao",
+      "11. Segurança, melhoria contínua e implementação"
+    ],
+    [
+      "12-algoritmos-praticos",
+      "12. Algoritmos práticos"
+    ],
+    [
+      "13-casos-de-prova-e-pratica-comentados",
+      "13. Casos de prova e prática, comentados"
+    ],
+    [
+      "14-questoes-autorais-comentadas",
+      "14. Questões autorais comentadas"
+    ],
+    [
+      "15-imagens-candidatas-para-aprovacao-do-admin",
+      "15. Imagens candidatas para aprovação do Admin"
+    ],
+    [
+      "16-referencias-institucionais-e-auditaveis",
+      "16. Referências institucionais e auditáveis"
+    ],
+    [
+      "17-auditoria-de-conteudo-e-pendencias",
+      "17. Auditoria de conteúdo e pendências"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Lote 13 · Apostila 257</h1>"
+        ]
+      ]
+    ],
+    [
+      "planejamento-avaliacao-e-gestao-dos-servicos-de-saude",
+      0,
+      [
+        [
+          "2",
+          "Planejamento, avaliação e gestão dos serviços de saúde"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Saúde Coletiva · Gestão do SUS · Políticas Públicas · Saúde Suplementar e Judicialização  \r<br><strong>Data editorial:</strong> 15/10/2026 · <strong>Situação:</strong> MANUSCRITO ORIGINAL PARCIAL; NÃO PUBLICAR.  \r<br><strong>Relação curricular:</strong> mantém como complemento o módulo Diamante \"Saúde Privada, Suplementar e Judicialização em Saúde\" (PDF curricular p.29); a #258 ensina avaliação econômica de tecnologia, enquanto #259 aprofunda sistemas e indicadores."
+        ],
+        [
+          "3",
+          "Etapa zero e benchmark"
+        ],
+        [
+          "p",
+          "Foram abertos e examinados no Google Drive os arquivos \"SUS\" e \"Vigilância epidemiológica\", com princípios, redes, organização interfederativa, conselhos, participação social, regulação e informação. São <strong>resumos correlatos</strong>, não cobrem integralmente planejamento estratégico, contratualização, custos, regulação de filas ou judicialização. Não foi confirmada a autoria institucional/editorial desses PDFs e <strong>não se deve tratar o benchmark como plenamente satisfeito</strong>. Complementação normativa foi realizada com Ministério da Saúde (PNS 2024–2027, PAS 2026, RAG 2025), ANS e documentos nacionais de gestão. A apostila LURIA já existente sobre crescimento fetal foi inspecionada como referência do padrão gráfico, sem criar página duplicada ou copiar o material do Drive."
+        ]
+      ]
+    ],
+    [
+      "competencias-a-desenvolver",
+      0,
+      [
+        [
+          "2",
+          "Competências a desenvolver"
+        ],
+        [
+          "p",
+          "1. Explicar por que a gestão organiza o <strong>direito à saúde</strong> por necessidade, rede, população e recursos finitos, sem confundir equidade com tratamento idêntico.\r<br>2. Distinguir <strong>gestor, prestador, regulador, auditor, Conselho de Saúde e controle social</strong>.\r<br>3. Traduzir diagnóstico situacional em metas mensuráveis, orçamento, programação, execução, monitoramento e avaliação.\r<br>4. Conhecer Plano de Saúde, PAS, RQPC/RDQA, RAG e participação social, respeitando seus períodos.\r<br>5. Avaliar acesso, qualidade, segurança, resultados, continuidade do cuidado, produtividade e equidade.\r<br>6. Planejar redes APS–atenção especializada–urgência–hospital–reabilitação e transporte/regulação.\r<br>7. Diferenciar SUS, prestador privado complementar e planos de saúde suplementar (ANS).\r<br>8. Debater judicialização sem negar proteção judicial nem substituir decisão técnica por simplificação econômica.\r<br>9. Resolver casos de fila, vagas, baixa cobertura, aumento de internações, prioridades e conflito de cobertura."
+        ]
+      ]
+    ],
+    [
+      "planejamento-estrategico-situacional-pes-carlos-matus",
+      0,
+      [
+        [
+          "2",
+          "1A. Do Planejamento Normativo Tradicional ao Planejamento Estratégico Situacional (PES) de Carlos Matus: Os Quatro Momentos e a Viabilidade Política"
+        ],
+        [
+          "3",
+          "A Crítica Radical ao Planejamento Normativo Tradicional"
+        ],
+        [
+          "p",
+          "Durante a metade do século XX, o planejamento em saúde na América Latina foi dominado pelo <strong>modelo normativo clássico</strong> (desenvolvido primariamente pela CEPAL e pelo método CENDES/OPS na década de 1960). Esse modelo partia de pressupostos mecanicistas e positivistas:"
+        ],
+        [
+          "u",
+          [
+            "O planejador situa-se \"fora\" do sistema social, como um observador neutro e onisciente dotado de autoridade técnica incontestável;",
+            "O sistema de saúde e os atores sociais obedecem docilmente às ordens do \"plano\" como uma máquina previsível;",
+            "O plano é um documento estático, tecnocrático e fechado, expresso como um receituário rígido (\"o que deve ser feito\" - o <em>deve-ser</em>)."
+          ]
+        ],
+        [
+          "p",
+          "O fracasso sistemático desse modelo decorreu de uma premissa ingênua: a realidade social não é um laboratório inanimado. Existem outros atores sociais com interesses, projetos de poder e forças antagônicas que jogam no mesmo tabuleiro e resistem às diretrizes impostas."
+        ],
+        [
+          "3",
+          "A Revolução do Planejamento Estratégico Situacional (PES)"
+        ],
+        [
+          "p",
+          "O economista chileno Carlos Matus formulou a <strong>Teoria do Planejamento Estratégico Situacional (PES)</strong> a partir de sua vivência como Ministro da Economia no governo Salvador Allende e de reflexões teóricas durante seu encarceramento político. Matus estabeleceu novos axiomas epistemológicos que revolucionaram a Saúde Coletiva latino-americana:"
+        ],
+        [
+          "o",
+          [
+            "<strong>O Ator Planejador está DENTRO da Realidade (Autoinclusão):</strong> O gestor de saúde não é um observador externo; ele governa convivendo com conflitos, assimetrias de poder, pressões sindicais, corporativas, orçamentárias e eleitorais;",
+            "<strong>Conceito de Situação e Poliocularidade:</strong> A realidade não é uma \"verdade absoluta objetiva\". A <em>situação</em> é a explicação da realidade produzida a partir de um ponto de vista específico (onde o ator pisa e quais são seus interesses). A situação vista pelo Secretário Municipal de Saúde difere radicalmente da situação explicada pelo sindicato dos médicos, pelos conselheiros municipais de saúde ou pelos usuários que aguardam na fila da madrugada;",
+            "<strong>Coexistência de Múltiplos Atores e Projetos em Disputa:</strong> Nenhum ator possui o monopólio exclusivo do poder; governar é a capacidade contínua de processar problemas e construir viabilidade política em meio à incerteza;",
+            "<strong>Superação do Tempo Linear:</strong> O planejamento não é uma sequência cronológica estática de \"etapas\" (diagnóstico $\rightarrow$ execução $\rightarrow$ avaliação). O planejamento é um processo circular e ininterrupto estruturado em <strong>Quatro Momentos Lógicos</strong> que coexistem simultaneamente."
+          ]
+        ],
+        [
+          "3",
+          "Os Quatro Momentos do PES de Carlos Matus"
+        ],
+        [
+          "p",
+          "As bancas de residência médica cobram recorrentemente a denominação e o conteúdo conceitual de cada momento matusiano:"
+        ],
+        [
+          "t",
+          [
+            "Momento do PES",
+            "Axioma Central",
+            "Objetivo Metodológico e Ferramentas Empregadas"
+          ],
+          [
+            [
+              "<strong>1. Momento Explicativo</strong>",
+              "<strong>\"Foi, É e Tende a Ser\"</strong>",
+              "Identificação, seleção e processamento dos problemas relevantes da realidade. Constrói-se a árvore de causas e efeitos através do <strong>Fluxograma Situacional (Árvore de Problemas)</strong>.\n        <br><br>\n        <strong>Conceito Chave — Nós Críticos:</strong> Causas centrais que cumprem três critérios simultâneos: 1) Alto impacto nos descritores do problema; 2) Centro de encadeamento causal; e 3) Politicamente atacáveis pelo ator que planeja (onde a ação é factível)."
+            ],
+            [
+              "<strong>2. Momento Normativo</strong>",
+              "<strong>\"Deve Ser\"</strong>",
+              "Desenho das operações, projetos e ações necessárias para intervir nos nós críticos identificados. Define-se o cenário-objetivo, a imagem-objetivo e os resultados almejados. Desenham-se os módulos operacionais (recursos, prazos, produtos esperados e responsáveis diretos)."
+            ],
+            [
+              "<strong>3. Momento Estratégico</strong>",
+              "<strong>\"Pode Ser\" (Construção da Viabilidade)</strong>",
+              "Avaliação das forças sociais e da correlação de poder. O que fazer para tornar viável aquilo que foi desenhado no momento normativo? Matus divide a viabilidade em quatro dimensões essenciais:\n        <ul>\n          <li><strong>Viabilidade Política:</strong> Apoio de bancadas parlamentares, conselho de saúde, imprensa e movimentos populares;</li>\n          <li><strong>Viabilidade Econômico-Financeira:</strong> Disponibilidade de orçamento e fluxo de caixa;</li>\n          <li><strong>Viabilidade Técnico-Cognitiva:</strong> Conhecimento científico e competência gerencial;</li>\n          <li><strong>Viabilidade Jurídico-Institucional:</strong> Conformidade com a Lei nº 8.080/90, Lei Complementar nº 141/2012 e Lei de Responsabilidade Fiscal (LRF).</li>\n        </ul>\n        Construção de alianças, negociação, cooptação ou confronto de oponentes."
+            ],
+            [
+              "<strong>4. Momento Tático-Operacional</strong>",
+              "<strong>\"Fazer e Recalcular\"</strong>",
+              "A entrada em ação no mundo real. Execução das operações acompanhada de um sistema rigoroso de monitoramento, prestação de contas (<em>accountability</em>) e correção de rumo. O plano é continuamente recalculado à medida que a conjuntura social e política se altera na prática cotidiana."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "instrumentos-formais-de-planejamento-do-sus-e-regras-orcamentarias",
+      0,
+      [
+        [
+          "2",
+          "5A. O Ciclo do PlanejaSUS: Plano de Saúde, Programação Anual (PAS), Relatório de Gestão (RAG) e a Lei Complementar nº 141/2012"
+        ],
+        [
+          "3",
+          "O Sistema de Planejamento do SUS (PlanejaSUS)"
+        ],
+        [
+          "p",
+          "O planejamento no Sistema Único de Saúde é obrigatório para as três esferas de governo (União, Estados e Municípios), possuindo caráter contínuo, participativo e tripartite (regulado pela Portaria de Consolidação nº 1/2017 e pela Lei nº 8.080/1990). O <strong>Ciclo de Planejamento do SUS</strong> é articulado através de três instrumentos fundamentais interconectados com as leis orçamentárias gerais da administração pública (Plano Plurianual - PPA, Lei de Diretrizes Orçamentárias - LDO e Lei Orçamentária Anual - LOA):"
+        ],
+        [
+          "t",
+          [
+            "Instrumento do SUS",
+            "Periodicidade e Horizonte Temporal",
+            "Conteúdo Obrigatório e Papel Institucional",
+            "Aprovação e Controle Social"
+          ],
+          [
+            [
+              "<strong>Plano de Saúde (PS)</strong>",
+              "<strong>Quadrienal (4 anos)</strong><br>(Elaborado no 1º ano de cada mandato de governo, vigendo do 2º ano da gestão até o 1º ano da gestão subsequente).",
+              "É o instrumento central que expressa as políticas, compromissos e diretrizes estratégicas da saúde para 4 anos. Contém: análise situacional epidemiológica do território, metas físico-financeiras quadrienais, recursos orçamentários previstos e mecanismos de monitoramento.",
+              "Deve ser submetido à apreciação e <strong>deliberação obrigatória do Conselho de Saúde</strong> (Municipal, Estadual ou Nacional) antes do envio da lei orçamentária ao Legislativo."
+            ],
+            [
+              "<strong>Programação Anual de Saúde (PAS)</strong>",
+              "<strong>Anual (1 ano)</strong>",
+              "Instrumento que operacionaliza ano a ano as intenções estratégicas do Plano de Saúde. Define: metas anuais quantitativas e qualitativas, ações orçamentárias detalhadas, valores alocados e identificação dos órgãos/unidades executores.",
+              "Enviada anualmente ao Conselho de Saúde para ciência e acompanhamento orçamentário."
+            ],
+            [
+              "<strong>Relatório Detalhado do Quadrimestre Anterior (RDQA)</strong>",
+              "<strong>Quadrimestral (a cada 4 meses)</strong><br>(Apresentado em maio, setembro e fevereiro).",
+              "Previsto no <strong>Artigo 36 da Lei Complementar nº 141/2012</strong>. O gestor do SUS é obrigado a prestar contas perante o Poder Legislativo (Câmara de Vereadores / Assembleia / Congresso) e ao Conselho de Saúde em audiência pública, demonstrando montante de recursos aplicados, auditorias concluídas e oferta de serviços.",
+              "Apresentação obrigatória em <strong>audiência pública no Poder Legislativo</strong> e posterior envio ao Conselho de Saúde."
+            ],
+            [
+              "<strong>Relatório Anual de Gestão (RAG)</strong>",
+              "<strong>Anual (1 ano)</strong><br>(Elaborado até 30 de março do ano seguinte).",
+              "Instrumento de comprovação e prestação de contas que consolida os resultados alcançados no ano anterior. Compara o planejado na PAS com o executado: cumprimento das metas, execução orçamentária, auditorias realizadas e recomendações para o próximo ciclo.",
+              "<strong>Aprovação expressa do Conselho de Saúde</strong>. O parecer conclusivo deve ser registrado no sistema DigiSUS. A não aprovação do RAG pode deflagrar bloqueio de repasses federais e investigação pelos órgãos de controle (TCU, TCE, Ministério Público)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Financiamento e Vinculação Constitucional: Lei Complementar nº 141/2012"
+        ],
+        [
+          "p",
+          "A Lei Complementar nº 141/2012 regulamentou o § 3º do Artigo 198 da Constituição Federal, fixando com precisão matemática os percentuais mínimos de receitas próprias que Estados e Municípios devem obrigatoriamente investir em <strong>Ações e Serviços Públicos de Saúde (ASPS)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Municípios:</strong> Mínimo de <strong>15%</strong> da arrecadação de seus impostos próprios e de transferências constitucionais (IPTU, ISS, ITBI, cota-parte do FPM, cota-parte do ICMS e IPVA);",
+            "<strong>Estados e Distrito Federal:</strong> Mínimo de <strong>12%</strong> da arrecadação de seus impostos próprios (ICMS, IPVA, ITCMD) e transferências constitucionais;",
+            "<strong>União:</strong> Historicamente regia-se pela variação nominal do PIB do ano anterior; após a Emenda Constitucional nº 86/2015 e Emenda Constitucional nº 95/2016 (Teto de Gastos), e com a revogação parcial pela EC 126/2022 e novo Arcabouço Fiscal (LC 200/2023), fixou-se a aplicação mínima de <strong>15% da Receita Corrente Líquida (RCL)</strong> federal no exercício financeiro."
+          ]
+        ],
+        [
+          "3",
+          "Atenção Máxima para Provas: O que NÃO é considerado Ação e Serviço Público de Saúde (ASPS)?"
+        ],
+        [
+          "p",
+          "O <strong>Artigo 4º da LC nº 141/2012</strong> lista taxativamente o que <strong>NÃO pode ser contabilizado</strong> dentro dos percentuais mínimos de 12% e 15% da saúde, sendo o tema preferido de bancas examinadoras para verificar conhecimento de gestão fiscal:"
+        ],
+        [
+          "p",
+          "<blockquote>\n  <strong>Lista Exaustiva de Vedações do Art. 4º da LC 141/2012:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Pagamento de aposentadorias e pensões de servidores da saúde (deve ser custeado pela previdência social);",
+            "Pessoal ativo da área de saúde quando em atividade alheia à saúde (ex.: médico cedido para a secretaria de educação ou turismo);",
+            "Merenda escolar e outros programas de alimentação, mesmo que executados em escolas públicas;",
+            "Saneamento básico geral (salvo ações específicas de saneamento em domicílios vulneráveis no âmbito de programas de saúde da família);",
+            "Limpeza urbana e remoção de resíduos sólidos (lixo comum);",
+            "Preservação e recuperação do meio ambiente;",
+            "Ações de assistência social e benefícios previdenciários."
+          ]
+        ]
+      ]
+    ],
+    [
+      "1-gestao-e-uma-intervencao-em-saude",
+      0,
+      [
+        [
+          "2",
+          "1. Gestão é uma intervenção em saúde"
+        ],
+        [
+          "p",
+          "O gestor de saúde decide <strong>como transformar necessidades de uma população em cuidado efetivamente acessível, seguro e sustentável</strong>. Essa atividade é clínica em sentido ampliado: uma fila de ultrassonografia que atrasa diagnóstico de câncer pode produzir dano tanto quanto uma conduta médica inadequada. Planejar consiste em escolher objetivos, recursos, operações e modos de avaliar resultados; gestão inclui executar, negociar, monitorar, ajustar e prestar contas."
+        ],
+        [
+          "p",
+          "Princípios doutrinários do SUS — <strong>universalidade, integralidade e equidade</strong> — orientam decisões. Universalidade garante direito de acesso; integralidade exige cuidado articulado em promoção, prevenção, diagnóstico, tratamento e reabilitação; equidade direciona atenção proporcional às necessidades e vulnerabilidades. <strong>Equidade não é privilégio arbitrário</strong>: priorização exige critérios clínicos, transparência, revisão e proteção contra discriminação."
+        ],
+        [
+          "p",
+          "Regiões com dificuldades de transporte, insuficiência de especialistas ou pobreza podem precisar de maior investimento para resultados semelhantes. Distribuição estritamente igual de vagas por município não garante equidade, pois risco, população, perfil etário, deslocamento e oferta prévia são diferentes."
+        ]
+      ]
+    ],
+    [
+      "2-quem-governa-o-que-no-sus",
+      0,
+      [
+        [
+          "2",
+          "2. Quem governa o quê no SUS?"
+        ],
+        [
+          "p",
+          "A Constituição de 1988 e a Lei nº 8.080/1990 estruturam SUS em sistema público com gestão compartilhada pela União, estados, Distrito Federal e municípios, integrada em rede regionalizada/hierarquizada e com direção única em cada esfera. A Lei nº 8.142/1990 regulamenta participação da comunidade e transferências intergovernamentais sob requisitos legais."
+        ],
+        [
+          "t",
+          [
+            "Esfera/ator",
+            "Responsabilidades de interesse para prova",
+            "Erro comum"
+          ],
+          [
+            [
+              "União/Ministério da Saúde",
+              "políticas nacionais, normas gerais, cooperação, financiamento e diretrizes",
+              "supor que MS atende diretamente todos os casos"
+            ],
+            [
+              "Estado/secretaria estadual",
+              "coordenação regional e redes, apoio municipal, serviços próprios e articulação",
+              "supor que toda competência foi municipalizada"
+            ],
+            [
+              "Município/secretaria municipal",
+              "gestão local, APS e serviços de sua esfera, vigilância e execução programada",
+              "reduzir gestão municipal apenas à UBS"
+            ],
+            [
+              "CIT/CIB",
+              "pactuação interfederativa tripartite/bipartite segundo organização legal",
+              "confundir instâncias de negociação com conselho gestor de hospital"
+            ],
+            [
+              "Conselho de Saúde",
+              "controle social permanente, participação e fiscalização de políticas",
+              "confundir conselho deliberativo com órgão executivo"
+            ],
+            [
+              "Conferência de Saúde",
+              "debate e proposição de diretrizes com periodicidade legal",
+              "supor que substitui a PAS anual"
+            ],
+            [
+              "Regulação assistencial",
+              "gestão de acesso baseado em necessidade/rede/capacidade",
+              "funcionar como fila puramente cronológica"
+            ],
+            [
+              "Prestador de serviço",
+              "execução assistencial, segurança e indicadores contratados",
+              "definir sozinho prioridades populacionais sem pactuação"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Conselhos têm representação de usuários, trabalhadores, gestores e prestadores nos termos das normas de paridade aplicáveis; a literatura de prova costuma apresentar <strong>50% usuários, 25% trabalhadores, 25% gestores/prestadores</strong>. A composição e funcionamento concreto devem observar resolução vigente, lei local e regimento. O controle social não significa expor dados sigilosos de pacientes em reuniões públicas."
+        ],
+        [
+          "p",
+          "A participação privada <strong>complementar</strong> ao SUS ocorre em condições e instrumentos próprios quando rede pública não é suficiente, com preferência legal às entidades filantrópicas/sem fins lucrativos em condições previstas. Isso difere de <strong>saúde suplementar</strong>, na qual operadoras reguladas pela ANS oferecem contratos de planos privados."
+        ]
+      ]
+    ],
+    [
+      "3-rede-de-atencao-a-saude-ras-circulacao-de-pessoas-nao-so-predios",
+      0,
+      [
+        [
+          "2",
+          "3. Rede de Atenção à Saúde (RAS) — circulação de pessoas, não só prédios"
+        ],
+        [
+          "p",
+          "A rede deve ofertar <strong>porta de entrada, coordenação longitudinal, referência e contrarreferência</strong>, além de pontos especializados, hospitalares e de reabilitação. A Atenção Primária à Saúde pode resolver grande parte de necessidades frequentes e ordenar cuidado, mas não deve ser descrita como barreira que impede o usuário de procurar emergência: urgências e outras portas previstas existem."
+        ],
+        [
+          "p",
+          "Um ambulatório de cardiologia que não devolve plano terapêutico à equipe da APS multiplica consultas e descontinuidade. Uma alta hospitalar sem lista correta de medicamentos, apoio domiciliar e agendamento pode gerar reinternação evitável. <strong>Linha de cuidado</strong> conecta intervenções numa trajetória baseada em condição clínica e necessidades sociais."
+        ],
+        [
+          "3",
+          "Três problemas de rede que não podem ser confundidos"
+        ],
+        [
+          "p",
+          "1. <strong>Falta de oferta:</strong> não existem profissionais, estrutura, vagas ou serviços em quantidade compatível com demanda.\r\n2. <strong>Mau fluxo:</strong> oferta existe, mas encaminhamentos, regulação e retorno são descoordenados.\r\n3. <strong>Desigualdade de acesso:</strong> parte da população não alcança oferta por distância, renda, idioma, barreiras arquitetônicas, racismo ou inadequação cultural, mesmo que o serviço esteja \"cadastrado\"."
+        ],
+        [
+          "p",
+          "O tratamento é diferente: ampliar vagas pode ser inútil quando problema é absenteísmo por transporte; informatizar fila pode ser inútil se não houver indicação clínica padronizada; centralizar serviço de alta complexidade pode melhorar segurança mas exigir transporte sanitário robusto."
+        ]
+      ]
+    ],
+    [
+      "4-diagnostico-situacional-antes-de-propor-uma-solucao",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico situacional: antes de propor uma solução"
+        ],
+        [
+          "p",
+          "Inicia-se com <strong>território e população</strong>, incluindo distribuição etária, carga de doença, mortalidade, condições sociais, ambiente, rede, força de trabalho, acessibilidade e financiamento. Usar dados do SIM, SINASC, SINAN, CNES, SIH/SIA e atenção primária com limitações detalhadas na #259, mas apresentar critérios mínimos aqui."
+        ],
+        [
+          "p",
+          "Exemplo: município com \"muitas internações por insuficiência cardíaca\" pode ter envelhecimento, subdiagnóstico na APS, dificuldade de obter medicamento, insuficiência de ambulatório, falha de aderência ou perfil de hospital de referência regional. Sem separar por residência e avaliar séries, aumentar leitos isoladamente pode tratar o desfecho sem enfrentar a causa."
+        ],
+        [
+          "3",
+          "Perguntas do diagnóstico situacional"
+        ],
+        [
+          "p",
+          "<li>Quem precisa? Qual gravidade, risco, frequência, tendência e inequidade?</li>\r<li>Que recurso existe? Profissionais, horas disponíveis, equipamentos utilizáveis, insumos e transporte.</li>\r<li>Onde está gargalo? Entrada, triagem, agendamento, exame, tratamento, retorno ou alta?</li>\r<li>Há dano evitável? Tempo até diagnóstico, perda de seguimento, eventos adversos, mortalidade.</li>\r<li>Como usuários percebem acesso? Horário, deslocamento, acolhimento, confiança e continuidade.</li>\r<li>Quais grupos têm piores resultados? Desagregar sem expor identidades.</li>\r<li>O que já foi tentado? Recursos consumidos, efeito mensurado, barreiras e lições.</li>"
+        ],
+        [
+          "p",
+          "<strong>Não interpretar correlação como causalidade.</strong> Queda de internações simultânea a nova campanha pode dever-se também a mudanças sazonais, codificação ou acesso. Avaliar com indicadores e desenhos adequados."
+        ]
+      ]
+    ],
+    [
+      "5-instrumentos-formais-de-planejamento-do-sus",
+      0,
+      [
+        [
+          "2",
+          "5. Instrumentos formais de planejamento do SUS"
+        ],
+        [
+          "p",
+          "O Plano de Saúde tem horizonte de <strong>quatro anos</strong> e explicita diretrizes, objetivos e metas de médio prazo. A <strong>Programação Anual de Saúde (PAS)</strong> detalha, em cada exercício, ações e metas e sua programação financeira. O <strong>Relatório Quadrimestral de Prestação de Contas (RQPC)</strong> acompanha execução a cada quadrimestre; o <strong>Relatório Anual de Gestão (RAG)</strong> consolida resultados e presta contas anuais, permitindo redirecionamento."
+        ],
+        [
+          "t",
+          [
+            "Instrumento",
+            "Para quê serve",
+            "Pergunta típica"
+          ],
+          [
+            [
+              "Plano de Saúde (4 anos)",
+              "definir estratégia, diretrizes, objetivos e metas plurianuais",
+              "\"Onde queremos chegar?\""
+            ],
+            [
+              "PAS (anual)",
+              "traduzir metas e ações para exercício e recursos",
+              "\"O que faremos neste ano, com qual programação?\""
+            ],
+            [
+              "RQPC (quadrimestral)",
+              "monitorar execução e recursos periodicamente",
+              "\"O plano está acontecendo neste quadrimestre?\""
+            ],
+            [
+              "RAG (anual)",
+              "avaliar resultados, demonstrar execução e orientar correções",
+              "\"O que fizemos, com que resultados e explicações?\""
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "No âmbito federal, o PNS 2024–2027 foi revisado em 2025 e a <strong>PAS 2026</strong> foi disponibilizada no portal do Ministério da Saúde em outubro/2026; citar esses instrumentos como exemplos de período concreto, não confundir data de publicação de documento com início do ciclo de quatro anos. As normas de elaboração/aprovação e prazos variam por instrumento e devem ser conferidas em legislação consolidada e sistemas oficiais antes de decorar."
+        ],
+        [
+          "3",
+          "Planejamento estratégico situacional: problema antes da solução"
+        ],
+        [
+          "p",
+          "Objetivo útil descreve mudança desejada e não apenas atividade. \"Capacitar 20 enfermeiros\" é <strong>produto de processo</strong>; \"reduzir tempo de identificação de sepse\", com indicador e desenho de avaliação, aproxima objetivo de resultado. Metas devem ser específicas, mensuráveis, alcançáveis em condições razoáveis, relevantes e temporais; a sigla SMART é auxiliar, não substitui diagnóstico."
+        ],
+        [
+          "p",
+          "Uma <strong>teoria de mudança</strong> conecta recursos (insumos/profissionais), atividades (busca ativa), produtos (pessoas contactadas), resultados intermediários (início de tratamento em tempo) e impactos (redução de complicações). Atribuição causal demanda comparação/estratégia analítica, não só sequência temporal."
+        ]
+      ]
+    ],
+    [
+      "triade-de-donabedian-e-avaliacao-da-qualidade-em-saude",
+      0,
+      [
+        [
+          "2",
+          "8A. A Tríade de Avedis Donabedian (Estrutura, Processo e Resultado) e os Modelos de Gestão Pública (OSS, OSCIP e Consórcios Intermunicipais)"
+        ],
+        [
+          "3",
+          "O Modelo Clássico de Avedis Donabedian para Avaliação em Saúde"
+        ],
+        [
+          "p",
+          "Publicado em 1966 pelo médico armênio-americano Avedis Donabedian, o paradigma <strong>Estrutura - Processo - Resultado</strong> permanece como a referência mundial incontestável para avaliação da qualidade dos serviços e auditoria em saúde:"
+        ],
+        [
+          "t",
+          [
+            "Dimensão Donabediana",
+            "Definição Operacional",
+            "Exemplos Práticos na Atenção Básica e Hospitalar",
+            "Vantagens e Limitações Metodológicas"
+          ],
+          [
+            [
+              "<strong>1. Estrutura</strong>",
+              "As características relativamente estáveis e permanentes do ambiente no qual o cuidado é prestado: recursos físicos, materiais, tecnológicos, humanos e financeiros disponíveis, bem como a qualificação profissional e normas organizacionais.",
+              "<ul>\n          <li>Presença de desfibrilador operante e oxigênio medicinal na sala de emergência da UBS;</li>\n          <li>Número de médicos com título de especialista em Medicina de Família e Comunidade por habitante;</li>\n          <li>Disponibilidade contínua de testes rápidos de HIV e sífilis na farmácia municipal;</li>\n          <li>Sistema de prontuário eletrônico interoperável implantado.</li>\n        </ul>",
+              "<strong>Vantagem:</strong> Fácil mensuração, auditoria e fiscalização objetiva.<br>\n        <strong>Limitação:</strong> Uma excelente estrutura física é condição necessária, mas <strong>não suficiente</strong> para garantir uma assistência de alta qualidade (um hospital de luxo pode cometer erros médicos fatais)."
+            ],
+            [
+              "<strong>2. Processo</strong>",
+              "O conjunto de atividades e intervenções realizadas <strong>pelo profissional de saúde junto ao paciente</strong> durante a prestação da assistência (o \"fazer clínico\"): anamnese, exame físico, adesão aos protocolos clínicos baseados em evidências, solicitação de exames pertinentes e prescrição terapêutica correta.",
+              "<ul>\n          <li>Proporção de gestantes com início de pré-natal no 1º trimestre e pelo menos 6 consultas registradas;</li>\n          <li>Percentual de pacientes diabéticos com dosagem de hemoglobina glicada (HbA1c) e exame dos pés realizado no último ano;</li>\n          <li>Adesão à higienização das mãos antes e após contato com o paciente na UTI;</li>\n          <li>Tempo porta-balão no infarto agudo do miocárdio com supra de ST.</li>\n        </ul>",
+              "<strong>Vantagem:</strong> É o indicador mais diretamente controlável pela equipe médica; reflete a prática clínica contemporânea.<br>\n        <strong>Limitação:</strong> Depende de registros de prontuário completos e fidedignos; exige auditoria de pares."
+            ],
+            [
+              "<strong>3. Resultado</strong>",
+              "As mudanças no estado de saúde atual e futuro dos pacientes ou da população atribuíveis aos cuidados recebidos (ou não recebidos). Inclui recuperação biológica, sobrevida, incapacidade, complicações, mortalidade e a satisfação do usuário.",
+              "<ul>\n          <li>Taxa de mortalidade materna ou infantil neonatal precoce;</li>\n          <li>Taxa de internação hospitalar por complicações agudas de diabetes (cetoacidose) ou asma (ICSAP);</li>\n          <li>Taxa de infecção de sítio cirúrgico limpo após cirurgia cardíaca;</li>\n          <li>Escore de satisfação percebida pelo usuário em pesquisas validadas.</li>\n        </ul>",
+              "<strong>Vantagem:</strong> É o objetivo final supremo da intervenção em saúde coletiva.<br>\n        <strong>Limitação:</strong> O resultado sofre forte influência de variáveis externas não controláveis pelo médico (determinantes sociais, renda, genética, escolaridade, adesão do paciente e gravidade basal da patologia)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Modelos Jurídicos de Gestão no SUS: Direta versus Indireta e Parcerias"
+        ],
+        [
+          "p",
+          "O gestor do SUS pode operacionalizar os serviços através de diferentes arranjos administrativos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Administração Direta:</strong> A gestão é executada pelos próprios órgãos da Secretaria de Saúde, com contratação de servidores por concurso público sob regime estatutário (Lei nº 8.112 ou municipal) e aquisições sob a Lei de Licitações (Lei nº 14.133/2021);",
+            "<strong>Organizações Sociais de Saúde (OSS - Lei Federal nº 9.637/1998):</strong> Pessoas jurídicas de direito privado sem fins lucrativos que celebram <strong>Contrato de Gestão</strong> com o poder público para gerir hospitais, UPAs ou redes de UBS. Possuem maior agilidade para contratação de pessoal (regime CLT) e compras de insumos, mas estão sujeitas a metas estritas de produção/qualidade e fiscalização permanente pelo Tribunal de Contas;",
+            "<strong>Consórcios Públicos Intermunicipais de Saúde (Lei nº 11.107/2005):</strong> Associação voluntária entre municípios limítrofes para financiar e gerir conjuntamente serviços de média e alta complexidade (policlínicas regionais, CAPS regional, SAMU regional), rateando custos operacionais e promovendo ganho de escala e equidade regional."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quatro-casos-de-gestao-e-planejamento-comentados",
+      0,
+      [
+        [
+          "2",
+          "13B. Casos Práticos de Gestão, Regulação e Planejamento em Saúde Coletiva"
+        ],
+        [
+          "3",
+          "Caso 1: Gestão de Filas de Espera e Regulação do Acesso na Macrorregião"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Ao assumir a Secretaria Municipal de Saúde de um município de 250.000 habitantes, o novo gestor depara-se com uma fila reprimida de 3.800 pacientes aguardando consulta com médico especialista em ortopedia, com tempo médio de espera de 14 meses. Ao analisar as guias de encaminhamento, constata que mais de 65% das solicitações contêm apenas \"dor nas costas\" ou \"solicito avaliação de artrose\", sem história clínica, exame físico ou tratamentos prévios anotados."
+        ],
+        [
+          "p",
+          "<strong>Intervenção e Ferramentas de Gestão:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Implantação de Protocolos de Acesso Regulado com Classificação de Risco (Manchester / Diretrizes de Regulação):</strong> A fila cronológica cega é extinta. A equipe do Complexo Regulador Municipal estabelece critérios objetivos de gravidade:</p>\n    <ul>\n      <li><strong>Prioridade Vermelha (Urgente - em até 72h):</strong> Sinais de alarme para síndrome da cauda equina (anestesia em sela, perda de controle esfincteriano), suspeita de neoplasia óssea ou trauma agudo instável;",
+            "<strong>Prioridade Amarela (Prioritária - em até 30 dias):</strong> Radiculopatia com déficit motor progressivo ou estenose de canal severa com claudicação neurogênica;",
+            "<strong>Prioridade Verde (Ambulatorial Geral):</strong> Lombalgias crônicas mecânicas sem déficits focais;",
+            "<strong>Teleinterconsultoria Formativa (Telessaúde):</strong> Os médicos reguladores realizam teleconsultoria assíncrona com os médicos da atenção primária, orientando fisioterapia comunitária, analgesia escalonada e perda ponderal, devolvendo casos leves para manejo resolutivo na própria UBS;",
+            "<strong>Resultado aos 6 Meses:</strong> Redução da fila em 55%, eliminação de consultas desnecessárias e atendimento das verdadeiras urgências cirúrgicas em menos de 10 dias úteis."
+          ]
+        ],
+        [
+          "3",
+          "Caso 2: Planejamento Estratégico Situacional (PES) para Mortalidade Infantil na Periferia"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um município registra elevação abrupta no Coeficiente de Mortalidade Infantil (CMI) de 11 para 18 por 1.000 nascidos vivos, concentrada quase que exclusivamente em dois distritos sanitários periféricos. A bancada de oposição exige a exoneração do secretário e a construção de um novo hospital infantil."
+        ],
+        [
+          "p",
+          "<strong>Aplicação dos Quatro Momentos do PES de Matus:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Momento Explicativo:</strong> O comitê de investigação de óbito infantil constata que 70% das mortes foram neonatais precoces decorrentes de prematuridade extrema e asfixia perinatal, e que as gestantes desses bairros realizaram menos de 3 consultas de pré-natal devido a horário restrito de funcionamento da UBS local (que fecha às 17h) e ausência de transporte público. <em>Nó Crítico Identificado:</em> Baixa adesão e barreiras de acesso ao pré-natal na periferia;",
+            "<strong>Momento Normativo:</strong> Desenho do projeto \"Pré-Natal Acolhedor\", estendendo o horário da UBS até às 21h (Programa Saúde na Hora), garantindo vaga de transporte sanitário gratuito e teste rápido de sífilis/HIV descentralizado no acolhimento;",
+            "<strong>Momento Estratégico:</strong> Negociação com o Conselho Municipal de Saúde e sindicato dos servidores para pagamento de gratificação de horário estendido aos profissionais;",
+            "<strong>Momento Tático-Operacional:</strong> Monitoramento semanal das faltosas no pré-natal através do prontuário eletrônico e busca ativa por agentes comunitários, revertendo o CMI para 10,2 por 1.000 NV em 12 meses."
+          ]
+        ],
+        [
+          "3",
+          "Caso 3: Auditoria Fiscal da Lei Complementar nº 141/2012 e Glosa do Tribunal de Contas"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> O Tribunal de Contas do Estado (TCE) emite parecer prévio pela rejeição das contas anuais de um prefeito, alegando que o município teria aplicado apenas 12,5% de suas receitas em ações e serviços públicos de saúde, descumprindo o piso constitucional de 15% fixado pela LC 141/2012. O prefeito alega que o município gastou R$ 12 milhões em obras de recapeamento asfáltico ao redor do hospital municipal e R$ 4 milhões com o pagamento de proventos de aposentadoria de médicos estatutários inativos, registrando tais valores na rubrica da saúde."
+        ],
+        [
+          "p",
+          "<strong>Parecer Técnico-Jurídico da Auditoria em Saúde:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O Tribunal de Contas agiu com total acerto e respaldo no <strong>Artigo 4º da Lei Complementar nº 141/2012</strong>;",
+            "Aposentadorias e pensões previdenciárias de servidores inativos e obras gerais de pavimentação urbana <strong>são expressamente vedadas</strong> de serem computadas como despesa de Ações e Serviços Públicos de Saúde (ASPS);",
+            "Com a glosa desses R$ 16 milhões indevidamente alocados, o município comprovadamente descumpriu o percentual mínimo constitucional, sujeitando o chefe do executivo a processo por crime de responsabilidade e bloqueio de transferências voluntárias da União."
+          ]
+        ],
+        [
+          "3",
+          "Caso 4: Judicialização da Saúde e a Aplicação do Tema 106 do STJ"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Uma paciente de 56 anos com diagnóstico de artrite reumatoide grave ingressa com ação judicial de tutela de urgência em face da Secretaria Estadual de Saúde, pleiteando o fornecimento contínuo de um anticorpo monoclonal inovador de custo anual superior a R$ 200.000,00, que não consta na Relação Nacional de Medicamentos Essenciais (RENAME) nem foi incorporado pela Conitec."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Jurídico-Sanitário sob o Tema 106 do STJ (Recurso Especial 1.657.156/RJ):</strong>"
+        ],
+        [
+          "o",
+          [
+            "O STJ pacificou os <strong>Três Requisitos Cumulativos Obrigatórios</strong> para que o Poder Judiciário determine o fornecimento estatal de remédio não incorporado ao SUS:\n    <ul>\n      <li><strong>1º Requisito:</strong> Comprovação, por meio de laudo médico fundamentado e circunstanciado expedido pelo médico assistente, da <em>imprescindibilidade ou necessidade do medicamento</em>, bem como da <strong>ineficácia, para o tratamento da moléstia, dos fármacos fornecidos pelo SUS</strong> (esgotamento prévio das alternativas da RENAME);",
+            "<strong>2º Requisito:</strong> Incapacidade financeira comprovada do paciente de arcar com o custo do medicamento prescrito (hipossuficiência econômica);",
+            "<strong>3º Requisito:</strong> Existência de registro válido do medicamento na <strong>Agência Nacional de Vigilância Sanitária (ANVISA)</strong> — é vedado ao juiz obrigar o SUS a fornecer medicamentos experimentais sem registro sanitário nacional.",
+            "A assessoria jurídica do SUS constata que a paciente nunca utilizou os imunobiológicos de primeira e segunda linha padronizados pelo Protocolo Clínico e Diretrizes Terapêuticas (PCDT) da artrite reumatoide no SUS (como Metotrexato e Leflunomida associados a Adalimumabe). A Justiça cassa a liminar e determina que a paciente seja tratada com as drogas padronizadas de eficácia comprovada, preservando a sustentabilidade do SUS."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-gestao-planejamento-residencia-enamed",
+      0,
+      [
+        [
+          "2",
+          "14B. Questões Inéditas Comentadas de Residência Médica, Revalida e ENAMED sobre Planejamento, Gestão e Avaliação em Saúde"
+        ],
+        [
+          "3",
+          "Banco de Questões de Alta Performance: Planejamento e Avaliação no SUS"
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (ENAMED / USP — 2025):</strong> No Planejamento Estratégico Situacional (PES) desenvolvido por Carlos Matus, o planejamento é compreendido como um processo dinâmico e circular, estruturado em quatro momentos interdependentes. Assinale a alternativa que descreve corretamente o <strong>Momento Estratégico</strong>:"
+        ],
+        [
+          "p",
+          "A) É a fase em que o gestor atua fora da realidade social, elaborando tabelas estatísticas neutras e definitivas para os próximos 20 anos.<br>\n  B) É o momento da análise de governabilidade e viabilidade política, no qual o ator que planeja calcula como articular forças sociais, vencer resistências e negociar recursos para tornar realizável o plano normativo.<br>\n  C) É a etapa exclusiva de auditoria financeira posterior à execução do orçamento anual.<br>\n  D) É o momento em que se proíbem divergências políticas nos conselhos municipais de saúde sob pena de demissão do corpo clínico.<br>\n  E) É o momento da árvore de problemas em que se identificam unicamente as causas genéticas das doenças crônicas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> No PES de Carlos Matus, o <strong>Momento Estratégico</strong> responde à indagação do <em>\"Pode Ser\"</em>. Enquanto o momento normativo desenha o <em>\"Deve Ser\"</em> (as ações ideais desejadas), o momento estratégico avalia a correlação de forças entre os atores sociais e constrói a viabilidade política, econômica, jurídica e cognitiva necessária para que o plano saia do papel e seja implementado no mundo real."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> Descreve a visão tecnocrática do planejamento normativo clássico da CEPAL, combatida duramente por Matus;",
+            "<em>Alternativa C incorreta:</em> Refere-se a controle contábil posterior;",
+            "<em>Alternativa E incorreta:</em> A árvore de problemas e nós críticos pertencem ao <em>Momento Explicativo</em>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (Revalida INEP — 2024):</strong> Um Secretário Municipal de Saúde apresenta perante a Câmara de Vereadores e ao Conselho Municipal de Saúde o relatório de gestão financeira, demonstrando que o município aplicou 16% de suas receitas em ações de saúde. Contudo, a auditoria externa aponta que foram incluídos nos cálculos os gastos com merenda escolar de creches municipais e as despesas com aposentadorias de cirurgiões inativos do município. De acordo com a Lei Complementar nº 141/2012, qual é o enquadramento dessas despesas?"
+        ],
+        [
+          "p",
+          "A) São despesas legítimas e podem ser computadas integralmente no cálculo do piso constitucional da saúde.<br>\n  B) O gasto com merenda escolar é aceito pelo SUS, mas o pagamento de inativos deve ser obrigatoriamente glosado.<br>\n  C) Ambas as despesas são vedadas pelo Artigo 4º da LC 141/2012 e não podem ser contabilizadas para cumprimento do percentual mínimo de 15% em Ações e Serviços Públicos de Saúde (ASPS).<br>\n  D) A decisão sobre a inclusão dessas despesas cabe monocraticamente ao Secretário Municipal de Educação.<br>\n  E) Todas as despesas públicas de um município são consideradas saúde para fins de prestação de contas no DigiSUS."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> O <strong>Artigo 4º da Lei Complementar nº 141/2012</strong> estabelece taxativamente as ações que <strong>NÃO constituem despesas com ações e serviços públicos de saúde</strong> para fins de cômputo dos percentuais constitucionais mínimos vinculados (12% para Estados e 15% para Municípios). Dentre as vedações expressas constam: pagamento de aposentadorias e pensões de servidores, merenda escolar, saneamento básico amplo não domiciliar e limpeza urbana. Devem ser integralmente glosadas."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, B, D e E incorretas:</em> Contrariam a proibição categórica da legislação orçamentária do SUS."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP / ENARE — 2024):</strong> Segundo a tríade de Avedis Donabedian para avaliação da qualidade em serviços de saúde, a verificação da proporção de gestantes cadastradas na UBS que realizaram no mínimo seis consultas de pré-natal e exames sorológicos para sífilis no primeiro trimestre constitui um indicador de:"
+        ],
+        [
+          "p",
+          "A) Estrutura.<br>\n  B) Processo.<br>\n  C) Resultado.<br>\n  D) Governança corporativa.<br>\n  E) Eficácia orçamentária."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<p><strong>Comentário Detalhado:</strong> Na taxonomia de Donabedian:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Estrutura:</strong> Recursos físicos, humanos e equipamentos disponíveis (ex.: ter sala de vacina, testes rápidos no estoque, consultórios com balança);",
+            "<strong>Processo:</strong> As ações e condutas clínicas efetivamente executadas pelos profissionais junto ao paciente de acordo com protocolos pré-definidos (ex.: aferir PA, solicitar sorologias, orientar vacinação, número de consultas realizadas);",
+            "<strong>Resultado:</strong> O impacto real sobre o estado de saúde da população (ex.: incidência de sífilis congênita, óbito fetal, mortalidade neonatal)."
+          ]
+        ],
+        [
+          "p",
+          "A proporção de gestantes com pré-natal oportuno e sorologia realizada avalia diretamente o \"fazer clínico\", sendo um clássico indicador de <strong>PROCESSO</strong>.</p>"
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, C, D e E incorretas:</em> Confundem a ação assistencial com o insumo físico ou com o desfecho epidemiológico final."
+          ]
+        ]
+      ]
+    ],
+    [
+      "judicializacao-da-saude-stf-stj-e-saude-suplementar-ans",
+      0,
+      [
+        [
+          "2",
+          "10A. Judicialização da Saúde (Temas 793 do STF e 106 do STJ), Regulação da Saúde Suplementar (Rol da ANS e Lei nº 14.454/2022) e Segurança do Paciente (RDC nº 36/2013)"
+        ],
+        [
+          "3",
+          "O Fenômeno da Judicialização da Saúde no Brasil Contemporâneo"
+        ],
+        [
+          "p",
+          "O direito fundamental à saúde, expressamente consagrado no Artigo 196 da Constituição Federal de 1988 como <em>\"dever do Estado, garantido mediante políticas sociais e econômicas\"</em>, transformou o Poder Judiciário em um ator direto e permanente na alocação de recursos públicos de saúde. O crescimento exponencial das ações judiciais individuais determinando o fornecimento de medicamentos de alto custo, cirurgias experimentais e leitos de UTI gerou graves distorções orçamentárias nos municípios e estados, além de tensionar o princípio da <strong>Equidade</strong> e da <strong>Reserva do Possível</strong> versus o <strong>Mínimo Existencial</strong>."
+        ],
+        [
+          "3",
+          "Os Marcos Vinculantes do Supremo Tribunal Federal (STF)"
+        ],
+        [
+          "p",
+          "As decisões dos tribunais superiores uniformizaram a jurisprudência nacional e são cobradas de forma recorrente em provas de Saúde Coletiva:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Tema 793 do STF (Recurso Extraordinário 855.178/SE - Repercussão Geral):</strong> Fixou a responsabilidade solidária dos entes federados (União, Estados, DF e Municípios) no dever de prestar assistência à saúde. Contudo, o STF estabeleceu a <strong>obrigação de direcionamento do cumprimento da decisão judicial de acordo com as regras de repartição de competências do SUS</strong>:\n    <ul>\n      <li>Se a ação pleiteia medicamento não incorporado ou que ainda não conste nas listas do SUS, a competência financeira primordial recai sobre a <strong>União</strong> (polo passivo na Justiça Federal);",
+            "Se o medicamento ou procedimento já foi padronizado no Componente Especializado da Assistência Farmacêutica (CEAF), o cumprimento cabe aos <strong>Estados</strong>;",
+            "Se pertence à RENAME básica (Atenção Primária), a execução incumbe aos <strong>Municípios</strong>. O ente federado que arcar com o custo de atribuição de outro tem o direito de requerer o ressarcimento administrativo ou judicial.",
+            "<strong>Tema 500 do STF (RE 657.718/MG):</strong> O Estado <strong>NÃO pode ser obrigado a fornecer medicamentos experimentais ou sem registro na ANVISA</strong>, salvo hipóteses excepcionalíssimas de mora desarrazoada da agência reguladora e existência de registro em agências internacionais de renome (FDA, EMA) para doenças raras sem alternativa no país;",
+            "<strong>Tema 106 do STJ (REsp 1.657.156/RJ - Recurso Repetitivo):</strong> Fixou os três critérios cumulativos rígidos que o magistrado deve exigir para deferir medicamentos fora da RENAME:\n    <ol>\n      <li>Comprovação de imprescindibilidade clínica por laudo fundamentado atestando a ineficácia prévia de todos os fármacos do SUS;",
+            "Incapacidade financeira (hipossuficiência) do postulante;",
+            "Existência de registro válido na ANVISA."
+          ]
+        ],
+        [
+          "3",
+          "Regulação da Saúde Suplementar: Agência Nacional de Saúde Suplementar (ANS)"
+        ],
+        [
+          "p",
+          "A Saúde Suplementar brasileira é regulada pela <strong>Lei Federal nº 9.656/1998</strong> e fiscalizada pela <strong>Agência Nacional de Saúde Suplementar (ANS - Lei nº 9.961/2000)</strong>. As diretrizes contemporâneas mais cobradas englobam:"
+        ],
+        [
+          "u",
+          [
+            "<strong>O Rol de Procedimentos e Eventos em Saúde da ANS:</strong> Lista de cobertura mínima obrigatória que os planos de saúde privados devem assegurar aos seus beneficiários conforme o segmento contratado (ambulatorial, hospitalar com ou sem obstetrícia, odontológico);",
+            "<strong>A Lei Federal nº 14.454/2022 (Superação do Rol Taxativo Estrito):</strong> Após intensa controvérsia jurídica em que o STJ havia julgado o Rol da ANS como \"taxativo mitigado\", o Congresso Nacional promulgou a Lei nº 14.454/2022, estabelecendo que o Rol da ANS é uma <strong>referência básica de cobertura</strong>, determinando que tratamentos e exames <strong>fora do rol devem ser compulsoriamente cobertos</strong> pelas operadoras de planos de saúde, desde que preencham um dos seguintes critérios:\n    <ol>\n      <li>Exista comprovação da eficácia daquele tratamento com base em <strong>evidências científicas sólidas e plano terapêutico</strong>; OU",
+            "Exista recomendação formal por órgãos técnicos de renome nacional (como Conitec) ou internacional.",
+            "<strong>Prazos Máximos de Atendimento (Resolução Normativa ANS nº 259/2011):</strong>\n    <ul>\n      <li>Consulta básica (pediatria, clínica médica, ginecologia, cirurgia geral): até <strong>7 dias úteis</strong>;",
+            "Consulta nas demais especialidades médicas: até <strong>14 dias úteis</strong>;",
+            "Exames laboratoriais e radiológicos simples: até <strong>3 dias úteis</strong>;",
+            "Exames de alta complexidade (ressonância, tomografia, cateterismo) e internação eletiva: até <strong>21 dias úteis</strong>;",
+            "Urgência e emergência: atendimento <strong>imediato</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Segurança do Paciente no SUS e a RDC nº 36/2013 da ANVISA"
+        ],
+        [
+          "p",
+          "O Programa Nacional de Segurança do Paciente (PNSP - Portaria MS nº 529/2013 e Resolução de Diretoria Colegiada <strong>RDC ANVISA nº 36/2013</strong>) impõe a todos os estabelecimentos de saúde a criação obrigatória de um <strong>Núcleo de Segurança do Paciente (NSP)</strong> e a elaboração do Plano de Segurança do Paciente, com foco na cultura justa e nas <strong>Seis Metas Internacionais de Segurança do Paciente da OMS</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Identificar os Pacientes Corretamente:</strong> Uso de pulseira indelével com pelo menos <strong>dois identificadores</strong> (ex.: nome completo do paciente e data de nascimento; NUNCA utilizar número de quarto ou leito como identificador!);",
+            "<strong>Melhorar a Comunicação Efetiva:</strong> Protocolos de dupla checagem para ordens verbais e comunicação em situações críticas (método SBAR: Situação, Breve histórico, Avaliação e Recomendação);",
+            "<strong>Melhorar a Segurança dos Medicamentos de Alta Vigilância:</strong> Armazenamento segregado, identificação com etiquetas vermelhas chamativas e dupla checagem independente de eletrólitos concentrados, anticoagulantes e quimioterápicos;",
+            "<strong>Assegurar Cirurgias com Local de Intervenção Correto, Procedimento Correto e Paciente Correto:</strong> Aplicação sistemática da Lista de Verificação de Segurança Cirúrgica da OMS (Checklist em três tempos: <em>Sign In</em> antes da indução anestésica, <em>Time Out</em> antes da incisão cirúrgica e <em>Sign Out</em> antes da saída da sala operatória);",
+            "<strong>Reduzir o Risco de Infecções Associadas aos Cuidados de Saúde:</strong> Higienização universal das mãos nos 5 momentos preconizados pela OMS;",
+            "<strong>Reduzir o Risco de Danos Decorrentes de Quedas e Lesões por Pressão:</strong> Aplicação diária de escalas preditivas de risco (Escala de Morse para quedas e Escala de Braden para lesões por pressão)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "6-financiamento-orcamento-e-capacidade",
+      0,
+      [
+        [
+          "2",
+          "6. Financiamento, orçamento e capacidade"
+        ],
+        [
+          "p",
+          "A sustentabilidade não é \"gastar menos em qualquer cenário\": uma intervenção preventiva pode aumentar custo imediato e reduzir internações futuras, ou aumentar uso de serviços ao identificar necessidade antes invisível. Custos diretos incluem salários, medicamentos, exames e estrutura; indiretos se relacionam a absenteísmo/produtividade de famílias conforme perspectiva de análise. A gestão pública deve separar <strong>recurso disponível</strong>, <strong>despesa empenhada/liquidada/paga</strong> e serviço efetivamente realizado, conforme terminologia contábil aplicável."
+        ],
+        [
+          "p",
+          "<strong>Capacidade instalada</strong> descreve salas, leitos e equipamentos disponíveis; <strong>capacidade operacional</strong> depende de equipes, insumos, turnos e fluxos. Uma unidade com dez consultórios mas dois médicos por turno não tem automaticamente dez agendas completas. Profissional escalado sem insumo laboratorial também não produz diagnóstico final oportuno."
+        ],
+        [
+          "3",
+          "Painel simplificado de capacidade"
+        ],
+        [
+          "p",
+          "<li>Vagas teoricamente ofertadas vs efetivamente utilizadas; ociosidade pode decorrer de cancelamentos, transporte ou agendas incompatíveis.</li>\r<li>Tempo de espera mediano e percentis altos: média isolada pode esconder pacientes esperando um ano.</li>\r<li>Proporção de encaminhamentos com indicação apropriada; acesso qualificado evita exame desnecessário.</li>\r<li>Taxa de retorno com laudo e resolução do problema; consulta realizada sem fechamento diagnóstico não demonstra qualidade.</li>\r<li>Desagregação por idade, prioridade, território e vulnerabilidade para equidade.</li>\r<li>Custo por episódio resolvido quando a informação é confiável, sem induzir alta precoce insegura.</li>"
+        ]
+      ]
+    ],
+    [
+      "7-regulacao-assistencial-fila-nao-e-apenas-ordem-cronologica",
+      0,
+      [
+        [
+          "2",
+          "7. Regulação assistencial: fila não é apenas ordem cronológica"
+        ],
+        [
+          "p",
+          "A regulação ordena demanda conforme critérios clínicos, capacidade e redes de referência. Uma gestante com pré-eclâmpsia grave não pode aguardar consulta eletiva porque entrou depois de pessoa com condição estável. O critério de prioridade deve ser <strong>público, defensável e auditável</strong>, preservando sigilo e direitos dos demais usuários. Ferramenta informatizada pode ajudar, mas algoritmo enviesado pode reproduzir desigualdades."
+        ],
+        [
+          "3",
+          "Manejo de fila de exame de imagem"
+        ],
+        [
+          "p",
+          "1. Revisar indicação e gravidade de cada pedido, preferencialmente em colaboração com clínicos.\r\n2. Identificar condições tempo-dependentes, red flags e prioridade por risco.\r\n3. Checar se há acesso a modalidades alternativas adequadas, evitando exames que não respondem pergunta clínica.\r\n4. Mapear oferta real e no-show; confirmar transporte e comunicação.\r\n5. Reclassificar quando estado de saúde muda — fila não é fotografia imutável.\r\n6. Monitorar tempos percentis por categoria clínica e resultados, não só total de vagas.\r\n7. Auditar equidade e reclamações; corrigir erros sem retirar acesso legítimo."
+        ],
+        [
+          "p",
+          "O risco oposto também existe: \"prioridade\" excessiva sem critérios objetivos torna toda fila urgente e piora acesso de quem mais precisa. Diagnóstico e regulação são atos distintos que exigem comunicação."
+        ]
+      ]
+    ],
+    [
+      "8-avaliacao-dos-servicos-estrutura-processo-e-resultado",
+      0,
+      [
+        [
+          "2",
+          "8. Avaliação dos serviços — estrutura, processo e resultado"
+        ],
+        [
+          "p",
+          "A tríade de <strong>Donabedian</strong> é clássica:\r<li><strong>Estrutura:</strong> recursos físicos, profissionais, protocolos, equipamentos, segurança.</li>\r<li><strong>Processo:</strong> o que é feito: medição de pressão, exame, prescrição, encaminhamento, orientação, higienização, comunicação.</li>\r<li><strong>Resultado:</strong> desfechos clínicos, eventos adversos, funcionalidade, experiência do usuário e equidade.</li>"
+        ],
+        [
+          "p",
+          "Uma UTI com equipamentos modernos (boa estrutura) pode ter alta taxa de infecção (resultado ruim), se adesão à prevenção é falha (processo). Entretanto resultado também depende de <strong>gravidade/case mix</strong>; não comparar mortalidade bruta entre hospital terciário e unidade de baixo risco como ranking automático."
+        ],
+        [
+          "3",
+          "Dimensões indispensáveis"
+        ],
+        [
+          "p",
+          "<strong>Segurança:</strong> eventos adversos evitáveis, medicação correta, IRAS, identificação segura.  \r\n<strong>Efetividade:</strong> cuidado com benefício demonstrado na condição indicada.  \r\n<strong>Eficiência:</strong> melhor resultado possível com uso responsável de recursos, sem cortar intervenções necessárias.  \r\n<strong>Acesso/oportunidade:</strong> entrada no tempo adequado e com continuidade.  \r\n<strong>Centralidade na pessoa:</strong> decisão compartilhada, informação compreensível e respeito.  \r\n<strong>Equidade:</strong> resultados e acesso ajustados às necessidades de grupos diferentes."
+        ],
+        [
+          "p",
+          "<strong>Auditoria</strong> analisa conformidade, documentação e qualidade, podendo identificar desvios e oportunidades; não equivale automaticamente a investigação punitiva. <strong>Monitoramento</strong> é acompanhamento contínuo de indicadores; <strong>avaliação</strong> busca julgar mérito, implementação, mecanismos e resultados com desenho adequado."
+        ]
+      ]
+    ],
+    [
+      "9-saude-suplementar-setor-privado-e-complementariedade",
+      0,
+      [
+        [
+          "2",
+          "9. Saúde suplementar, setor privado e complementariedade"
+        ],
+        [
+          "p",
+          "SUS é universal e organizado por dever estatal; a saúde suplementar organiza contratos privados sob regulação da <strong>Agência Nacional de Saúde Suplementar (ANS)</strong>. O <strong>Rol de Procedimentos e Eventos em Saúde</strong>, disciplinado pela RN ANS nº 465/2021 e atualizações, é referência de coberturas obrigatórias segundo segmentação e condições legais/contratuais. A ANS informa que o rol se aplica aos <strong>planos novos</strong> contratados a partir de 02/01/1999 e aos contratos antigos adaptados; não presumir cobertura de qualquer procedimento sem examinar o tipo de plano, a DUT e a legislação vigente."
+        ],
+        [
+          "t",
+          [
+            "Categoria",
+            "Quem organiza acesso",
+            "Ponto de atenção"
+          ],
+          [
+            [
+              "Atendimento público SUS",
+              "gestor/rede pública, eventualmente com prestador contratado",
+              "acesso universal, regionalização e regulação"
+            ],
+            [
+              "Prestador privado complementar ao SUS",
+              "atendimento contratado/conveniado segundo regras públicas",
+              "não vira plano particular; observar contratualização e controle"
+            ],
+            [
+              "Plano de saúde suplementar",
+              "operadora de plano privado regulada pela ANS",
+              "segmentação, rede, rol, contrato e legislação"
+            ],
+            [
+              "Pagamento direto particular",
+              "paciente/terceiro contrata serviço sem operadora",
+              "deveres assistenciais, éticos e consumeristas continuam"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O aluno não deve confundir <strong>ANS</strong>, que regula operadoras/planos de saúde, com <strong>Anvisa</strong>, que regula produtos e serviços sob vigilância sanitária, nem com <strong>Conitec</strong>, que assessora decisões de incorporação de tecnologias no SUS. Registro sanitário, cobertura de plano e incorporação ao SUS são decisões com requisitos distintos."
+        ],
+        [
+          "3",
+          "Exemplo"
+        ],
+        [
+          "p",
+          "Um fármaco possui registro na Anvisa mas ainda não está incorporado no SUS para determinada indicação. Isso <strong>não</strong> equivale a \"ineficaz\" nem a \"deve ser fornecido automaticamente\". Análise envolve evidência clínica, efetividade, segurança, custo-efetividade, impacto orçamentário, população elegível, decisão formal e, às vezes, via judicial. Cada camada responde pergunta diferente."
+        ]
+      ]
+    ],
+    [
+      "10-judicializacao-direito-evidencia-acesso-e-decisoes-dificeis",
+      0,
+      [
+        [
+          "2",
+          "10. Judicialização: direito, evidência, acesso e decisões difíceis"
+        ],
+        [
+          "p",
+          "Judicialização envolve busca do Poder Judiciário para efetivar ou contestar ações/omissões na garantia de cuidado, medicamentos, leitos e outras prestações. Pode proteger pessoa frente a falha efetiva de acesso e, simultaneamente, criar desafios de equidade, previsibilidade financeira e avaliação de evidência quando ordens isoladas não consideram alternativas disponíveis ou efeitos distributivos."
+        ],
+        [
+          "p",
+          "A análise exige separar <strong>urgência e risco imediato</strong>, registro sanitário, diretriz/PCDT aplicável, alternativas terapêuticas disponíveis, falha documentada, evidência de eficácia/segurança para indicação, eventual incorporação na Conitec, logística e regras jurídicas vigentes. O médico deve emitir relatório <strong>clínico fiel e fundamentado</strong>, não garantir concessão nem afirmar que todo medicamento de alto custo é automaticamente necessário."
+        ],
+        [
+          "p",
+          "<strong>A jurisprudência muda</strong>, inclusive competências judiciais e critérios de medicamentos não incorporados; não memorizar decisão antiga sem conferir sua versão aplicável. Ferramentas técnicas de apoio ao Judiciário (como NatJus/e-NatJus) podem informar evidência disponível, mas não substituem julgamento judicial nem decisão clínica individual."
+        ],
+        [
+          "3",
+          "Comunicação clínica de pedido"
+        ],
+        [
+          "p",
+          "<li>Descrever diagnóstico, gravidade, histórico e risco de atraso.</li>\r<li>Listar opções previstas em protocolo, uso/ineficácia, intolerância ou contraindicações comprovadas.</li>\r<li>Justificar o tratamento proposto com base em evidência para aquele paciente, usando dose e desfecho esperado.</li>\r<li>Informar monitorização, duração estimada, critérios de interrupção e custos quando pertinentes.</li>\r<li>Preservar autonomia, privacidade e imparcialidade, sem conflitar interesse econômico.</li>"
+        ]
+      ]
+    ],
+    [
+      "11-seguranca-melhoria-continua-e-implementacao",
+      0,
+      [
+        [
+          "2",
+          "11. Segurança, melhoria contínua e implementação"
+        ],
+        [
+          "p",
+          "Qualidade não se melhora apenas publicando um protocolo: equipe precisa de insumos, treinamento, condições de trabalho, prontuário adequado, auditoria e feedback. Um ciclo <strong>PDSA (Plan–Do–Study–Act)</strong> testa mudança pequena, observa processo/desfecho e ajusta antes de ampliação. <strong>Exemplo:</strong> melhorar conciliação medicamentosa na alta hospitalar com checklist de cinco itens e chamada para APS; medir erros de medicação e reinternações, separando efeito da sazonalidade."
+        ],
+        [
+          "p",
+          "<strong>Indicadores de equilíbrio (balancing measures)</strong> detectam dano colateral: reduzir permanência hospitalar é desejável se não aumenta readmissão evitável ou abandono de tratamento. Melhorar taxa de primeiras consultas pode piorar acompanhamento de pacientes complexos se não ampliar capacidade real."
+        ],
+        [
+          "3",
+          "Gestão de crise"
+        ],
+        [
+          "p",
+          "Surtos, enchentes, falta de energia, desabastecimento e greve demandam contingência: identificar serviços essenciais, população dependente de tratamento, estoques críticos, transportes, comunicação com usuários e rotas de referência. Gestão de continuidade integra vigilância, assistência e logística. Priorizar apenas volume de atendimentos durante crise pode invisibilizar qualidade/segurança."
+        ]
+      ]
+    ],
+    [
+      "12-algoritmos-praticos",
+      0,
+      [
+        [
+          "2",
+          "12. Algoritmos práticos"
+        ],
+        [
+          "3",
+          "A. Transformar problema em ação"
+        ],
+        [
+          "p",
+          "Demanda/queixa → definir população e evento → checar dados de qualidade → avaliar gravidade, causas e barreiras → ouvir equipe e usuários → estabelecer objetivo e meta → escolher intervenção com evidência e capacidade → programar PAS/orçamento conforme ciclo → executar e registrar → medir processo, resultado e equidade → devolver resultados e corrigir."
+        ],
+        [
+          "3",
+          "B. Uma fila de cirurgia eletiva cresceu"
+        ],
+        [
+          "p",
+          "Excluir emergência/risco tempo-dependente → validar indicação e priorização → mapear capacidade real (equipe, centro cirúrgico, anestesia, leito, material) → analisar cancelamento, permanência, referências e contrarreferências → planejar ação combinada → medir tempo até cirurgia <strong>e</strong> desfechos/iatrogenias → ajustar e comunicar."
+        ],
+        [
+          "3",
+          "C. Prestação de contas"
+        ],
+        [
+          "p",
+          "Retomar meta do Plano/PAS → verificar execução física e financeira → documentar resultados, barreiras e fonte de dados → apresentar quadrimestralmente quando pertinente → consolidar no RAG com aprendizagem e transparência → discutir em instâncias competentes e planejar novo ciclo."
+        ]
+      ]
+    ],
+    [
+      "13-casos-de-prova-e-pratica-comentados",
+      0,
+      [
+        [
+          "2",
+          "13. Casos de prova e prática, comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Município com filas de mamografia"
+        ],
+        [
+          "p",
+          "Cidade tem longa espera para mamografia diagnóstica, mas equipamento registrado como disponível. A oferta real está reduzida porque técnico trabalha somente dois turnos e há falta de manutenção. <strong>Diagnóstico gerencial:</strong> gargalo de capacidade operacional, não falta exclusiva de aparelho. <strong>Dados:</strong> horários, agendas, exames concluídos, cancelamentos, prioridades clínicas e tempo até laudo/biópsia. <strong>Conduta:</strong> avaliar manutenção, recursos humanos e rede de referência; priorizar quadros suspeitos e monitorar tempo até diagnóstico. <strong>Por que importa:</strong> CNES/estrutura não equivale a oferta real."
+        ],
+        [
+          "3",
+          "Caso 2 — Mortalidade hospitalar aparentemente pior"
+        ],
+        [
+          "p",
+          "Hospital de referência oncológica tem mortalidade bruta maior que hospital municipal. <strong>Hipóteses:</strong> case mix de doenças avançadas, demora de transferência, segurança e diferenças de qualidade. <strong>Raciocínio:</strong> comparar apenas morte/número de altas é injusto sem ajuste por gravidade, procedência e denominador. <strong>Dados:</strong> mortalidade ajustada, complicações, tempo até terapia, eventos adversos, paliativos e perfil clínico. <strong>Conduta:</strong> investigar segurança e fluxo sem ranking simplista. <strong>Por que importa:</strong> resultado não informa sozinho qual processo falhou."
+        ],
+        [
+          "3",
+          "Caso 3 — Meta anual e relatório de gestão"
+        ],
+        [
+          "p",
+          "Gestor incluiu no Plano de Saúde quadrienal objetivo de ampliar rastreamento do câncer de colo. Precisa definir número de ações e recurso em 2026 e depois demonstrar execução. <strong>Instrumentos:</strong> <strong>PAS 2026</strong> para anualizar, relatórios quadrimestrais para monitoramento e <strong>RAG</strong> para resultado anual. <strong>Raciocínio:</strong> cada documento responde a temporalidade distinta e o RAG não substitui planejamento prospectivo. <strong>Conduta:</strong> estabelecer meta com população-alvo e denominador, qualidade do teste e seguimento de alterados, não apenas número de coletas. <strong>Por que importa:</strong> medir volume sem completude da linha de cuidado engana."
+        ],
+        [
+          "3",
+          "Caso 4 — Plano de saúde negou exame"
+        ],
+        [
+          "p",
+          "Paciente tem pedido de procedimento sob contrato particular. <strong>Problema:</strong> é preciso identificar segmentação do plano, contrato novo/antigo adaptado, Rol vigente e eventual DUT; casos fora do rol também exigem análise da legislação/jurisprudência aplicável. <strong>Conduta:</strong> consultar ANS e documentação clínica, orientar canais de atendimento/regulação, registrar riscos assistenciais e alternativas oportunas; não prometer cobertura sem análise. <strong>Por que importa:</strong> distinguir ANS, SUS, Anvisa e Conitec."
+        ],
+        [
+          "3",
+          "Caso 5 — Medicamento não incorporado e pedido judicial"
+        ],
+        [
+          "p",
+          "Paciente com doença rara não respondeu a duas opções do PCDT; médico cogita tratamento registrado na Anvisa ainda não incorporado ao SUS para essa indicação. <strong>Problema:</strong> documentar gravidade, alternativas adequadas, falhas, evidência para indicação, monitoramento e status da Conitec, sem reduzir direito a custo nem extrapolar eficácia de estudos heterogêneos. <strong>Exames/documentos:</strong> diagnóstico e evidência atualizada, laudo clínico sem informações omitidas. <strong>Conduta:</strong> discussão especializada, avaliação de ATS e vias administrativas/jurídicas pertinentes, com prioridade à segurança e transparência. <strong>Por que importa:</strong> judicialização não é sinônimo de indicação clínica automaticamente comprovada."
+        ]
+      ]
+    ],
+    [
+      "14-questoes-autorais-comentadas",
+      0,
+      [
+        [
+          "2",
+          "14. Questões autorais comentadas"
+        ],
+        [
+          "p",
+          "<strong>Q1.</strong> Qual instrumento operacionaliza anualmente as metas do Plano de Saúde?\r<br>A) SIM. B) PAS. C) DNV. D) CNES. E) SINAN.  \r<br><strong>Gabarito B.</strong> PAS traduz metas para exercício; A é mortalidade, C documento de nascido vivo, D cadastro de serviços, E notificação. <strong>Revisão:</strong> Plano 4 anos → PAS anual → RQPC quadrimestral → RAG anual."
+        ],
+        [
+          "p",
+          "<strong>Q2.</strong> Um hospital tem dez salas, mas só funciona em duas. Qual conceito explica?\r<br>A) Capacidade instalada e capacidade operacional diferem. B) Dez salas são dez vagas imediatas garantidas. C) É sempre problema de codificação CID. D) Indica que o SUS não faz regulação. E) É resultado clínico ajustado.  \r<br><strong>Gabarito A.</strong> Capacidade instalada não garante recursos para funcionar; B é inferência indevida; C/D/E não resolvem gargalo. <strong>Revisão:</strong> processo e equipe determinam uso real da estrutura."
+        ],
+        [
+          "p",
+          "<strong>Q3.</strong> A diferença entre complementariedade privada ao SUS e saúde suplementar é:\r<br>A) São idênticas. B) Complementariedade integra prestação no SUS sob contratação pública; suplementar diz respeito a planos privados regulados pela ANS. C) ANS é gestora de todas as UBS. D) Conitec regula rede hospitalar de planos. E) Anvisa define toda agenda de consultas do SUS.  \r<br><strong>Gabarito B.</strong> A apaga regimes distintos, C/D/E confundem órgãos. <strong>Revisão:</strong> órgãos regulam dimensões específicas."
+        ],
+        [
+          "p",
+          "<strong>Q4.</strong> Qual par segue Donabedian?\r<br>A) Estrutura = profissionais e equipamentos; processo = adesão a protocolo; resultado = complicações/desfechos. B) Estrutura = mortalidade; processo = prédio; resultado = equipe. C) Todos os três são custos. D) Não pode avaliar segurança. E) Resultado sempre causa direta do processo observado.  \r<br><strong>Gabarito A.</strong> B inverte definições; C/D são falsas; E ignora case mix/confundimento. <strong>Revisão:</strong> ligar níveis sem inferência causal simplista."
+        ],
+        [
+          "p",
+          "<strong>Q5.</strong> Gestor aplica igual número de consultas especializadas a territórios com demandas muito diferentes e chama isso de equidade. A melhor crítica:\r<br>A) Equidade é sempre dividir tudo igualmente. B) Equidade orienta distribuição considerando necessidades e barreiras. C) Universalidade exige negar a alguns grupos. D) Integralidade limita-se a internação. E) Regionalização proíbe APS.  \r<br><strong>Gabarito B.</strong> A confunde igualdade formal; C/D/E deturpam princípios; B usa proporcionalidade de necessidades. <strong>Revisão:</strong> acesso digno e distribuição transparente."
+        ],
+        [
+          "p",
+          "<strong>Q6.</strong> O RAG serve principalmente para:\r<br>A) Substituir consulta clínica. B) Registrar só mortes. C) Demonstrar anualmente resultados da execução e subsidiar redirecionamento da gestão. D) Regular contratos individuais de planos. E) Certificar medicamento com registro na Anvisa.  \r<br><strong>Gabarito C.</strong> A/B reduzem a função, D é ANS/contratos, E é Anvisa; C descreve prestação de contas. <strong>Revisão:</strong> RAG analisa execução da PAS."
+        ],
+        [
+          "p",
+          "<strong>Q7.</strong> Sobre judicialização, melhor conduta médica:\r<br>A) Declarar que registro Anvisa garante fornecimento no SUS. B) Evitar todo relatório médico. C) Fornecer documento técnico fiel com alternativas, evidências, risco e monitorização, sem antecipar decisão judicial. D) Prometer que Conitec autorizará tecnologia. E) Considerar custo único fator de decisão.  \r<br><strong>Gabarito C.</strong> A confunde registro/incorporação, B inviabiliza informação, D prevê decisão sem base, E ignora clínica e direitos; C é responsável. <strong>Revisão:</strong> decisão clínica, ATS e decisão judicial são instâncias distintas."
+        ]
+      ]
+    ],
+    [
+      "15-imagens-candidatas-para-aprovacao-do-admin",
+      0,
+      [
+        [
+          "2",
+          "15. Imagens candidatas para aprovação do Admin"
+        ],
+        [
+          "p",
+          "1. Mapa conceitual autoral das três esferas de gestão SUS e pactuação CIT/CIB.\r<br>2. Linha temporal autoral Plano 4 anos → PAS → RQPC → RAG.\r<br>3. Diagrama da rede APS → especialidade → hospital → alta/contrarreferência.\r<br>4. Pirâmide de necessidades e barreiras (equidade ≠ quotas iguais).\r<br>5. Gráfico sintético capacidade instalada × capacidade operacional.\r<br>6. Fluxo de regulação de fila por risco clínico.\r<br>7. Matriz estrutura-processo-resultado de Donabedian, autoral.\r<br>8. Quadro comparativo SUS × complementar × suplementar.\r<br>9. Fluxograma Anvisa → avaliação Conitec → decisão de incorporação/PCDT, sem inferir automatismo.\r<br>10. Ciclo PDSA e indicadores de equilíbrio, com caso sintético."
+        ],
+        [
+          "p",
+          "Nenhum recurso visual foi inserido. Pautas devem receber fonte/licença, produção autoral quando possível e checagem de acessibilidade legibilidade e dimensão no Admin."
+        ]
+      ]
+    ],
+    [
+      "16-referencias-institucionais-e-auditaveis",
+      0,
+      [
+        [
+          "2",
+          "16. Referências institucionais e auditáveis"
+        ],
+        [
+          "p",
+          "<li>Brasil. Constituição de 1988, artigos 196–200 e legislação correlata: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm</li>\r<li>Brasil. Lei nº 8.080/1990: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm</li>\r<li>Brasil. Lei nº 8.142/1990: https://www.planalto.gov.br/ccivil_03/leis/l8142.htm</li>\r<li>Ministério da Saúde. Gestão do SUS: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/gestao-do-sus</li>\r<li>Ministério da Saúde. Instrumentos de planejamento: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento</li>\r<li>Ministério da Saúde. Plano Nacional de Saúde 2024–2027 (revisado em 2025): https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pns</li>\r<li>Ministério da Saúde. Programação Anual de Saúde — PAS 2026: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas</li>\r<li>Ministério da Saúde. Relatório Anual de Gestão e arquivos 2025: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag</li>\r<li>Agência Nacional de Saúde Suplementar. Cobertura assistencial e Rol: https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos/cobertura-assistencial</li>\r<li>Agência Nacional de Saúde Suplementar. Atualização do Rol: https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos</li>"
+        ]
+      ]
+    ],
+    [
+      "17-auditoria-de-conteudo-e-pendencias",
+      0,
+      [
+        [
+          "2",
+          "17. Auditoria de conteúdo e pendências"
+        ],
+        [
+          "p",
+          "<strong>Produção atual:</strong> explicação dos princípios e estrutura, pactuação, rede, planejamento, indicadores, regulação, cobertura suplementar, judicialização, 5 casos, 7 questões, 3 algoritmos e 10 propostas de visuais. <strong>Régua científica:</strong> fontes oficiais do MS e ANS verificadas, sem transposição literal de material do Drive.\r<br><strong>Pendências para encerramento:</strong> detalhar legislação vigente da judicialização de medicamentos por temas STF e CNJ sem erro de competência; jurisprudência atual não pode ser presumida; fortalecer governança regional, fluxo de financiamento e instrumentos interfederativos; aprofundar indicadores assistenciais e auditoria de qualidade com exemplos calculados; conhecer nova política de atenção especializada 2026; benchmark mais abrangente de planejamento; atingir ≥60 mil caracteres únicos; revisar casos por especialista, curadoria de imagens e PWA. <strong>Piso não alcançado — conteúdo ainda é rascunho.</strong>\r<br><strong>Status:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR."
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1234 @@
+{
+  "v": 2,
+  "s": "sistemas-de-informacao-em-saude-e-qualidade-dos-dados",
+  "t": "Sistemas de Informação em Saúde e Qualidade dos Dados",
+  "p": "Sistemas de Informação em Saúde e Qualidade dos Dados — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — SIM, SINASC, SINAN, SIH/SUS, e-SUS APS, Preenchimento da Declaração de Óbito, SISVAN, SI-PNI, Linkage de Bancos e LGPD",
+  "a": "Saúde Coletiva",
+  "m": "Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Sistemas de Informação em Saúde e Qualidade dos Dados",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — SIM, SINASC, SINAN, SIH/SUS, e-SUS APS, Preenchimento da Declaração de Óbito, SISVAN, SI-PNI, Linkage de Bancos e LGPD",
+    [
+      "Área: Saúde Coletiva",
+      "Matéria: Saúde Coletiva",
+      "Tema: Sistemas de Informação em Saúde e Qualidade dos Dados"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "sistemas-de-informacao-em-saude-e-qualidade-dos-dados",
+      "Sistemas de Informação em Saúde e qualidade dos dados"
+    ],
+    [
+      "etapa-zero-material-realmente-consultado",
+      "Etapa zero — material realmente consultado"
+    ],
+    [
+      "objetivos-de-aprendizagem",
+      "Objetivos de aprendizagem"
+    ],
+    [
+      "arquitetura-comparada-dos-sistemas-de-informacao-em-saude-sus",
+      "2A. A Arquitetura dos Sistemas de Informação em Saúde (SIS): Tipologia dos Dados, Instrumentos de Coleta e Competências Sanitárias"
+    ],
+    [
+      "declaracao-de-obito-regras-do-cfm-e-preenchimento-correto",
+      "4A. A Declaração de Óbito (DO): Resolução CFM nº 1.779/2005, Hierarquia das Causas (Cadeia Causal) e Responsabilidades Médico-Legais"
+    ],
+    [
+      "sistemas-especializados-sisvan-sipni-siscel-siclom",
+      "3A. Sistemas Especializados de Informação do SUS: SISVAN, SI-PNI, SISCEL, SICLOM e Indicadores Demográfico-Sanitários Avançados"
+    ],
+    [
+      "1-por-que-sistemas-de-informacao-sao-instrumentos-clinicos",
+      "1. Por que sistemas de informação são instrumentos clínicos?"
+    ],
+    [
+      "2-arquitetura-dos-sistemas-quem-registra-e-para-que",
+      "2. Arquitetura dos sistemas: quem registra e para quê?"
+    ],
+    [
+      "3-quadro-rapido-pergunta-certa-fonte-inicial",
+      "3. Quadro rápido: pergunta certa → fonte inicial"
+    ],
+    [
+      "4-da-ficha-ao-indicador-o-ciclo-de-qualidade",
+      "4. Da ficha ao indicador: o ciclo de qualidade"
+    ],
+    [
+      "qualidade-dos-dados-linkage-de-bancos-e-lgpd-na-saude",
+      "6A. Qualidade da Informação em Saúde, Metodologia de Vinculação de Bancos (Linkage Determinístico e Probabilístico) e Aplicação da LGPD (Lei nº 13.709/2018)"
+    ],
+    [
+      "quatro-casos-clinico-epidemiologicos-comentados-sistemas-informacao",
+      "10B. Casos Clínico-Epidemiológicos Estruturados: Erros em Declaração de Óbito, Investigação de Surto no SINAN e Linkage de Nascidos Vivos"
+    ],
+    [
+      "questoes-comentadas-sistemas-informacao-enamed-revalida",
+      "11B. Questões Inéditas Comentadas no Padrão Residência Médica, Revalida e ENAMED sobre Sistemas de Informação em Saúde"
+    ],
+    [
+      "5-vies-e-confundimento-no-uso-de-bancos-administrativos",
+      "5. Viés e confundimento no uso de bancos administrativos"
+    ],
+    [
+      "6-vinculacao-de-bancos-possibilidades-e-riscos",
+      "6. Vinculação de bancos: possibilidades e riscos"
+    ],
+    [
+      "7-privacidade-lgpd-e-seguranca",
+      "7. Privacidade, LGPD e segurança"
+    ],
+    [
+      "8-paineis-e-indicadores-como-ler-sem-cair-em-armadilhas",
+      "8. Painéis e indicadores: como ler sem cair em armadilhas"
+    ],
+    [
+      "9-fluxogramas-autorais",
+      "9. Fluxogramas autorais"
+    ],
+    [
+      "10-casos-clinico-epidemiologicos-comentados",
+      "10. Casos clínico-epidemiológicos comentados"
+    ],
+    [
+      "11-questoes-autorais-com-comentario-por-alternativa",
+      "11. Questões autorais, com comentário por alternativa"
+    ],
+    [
+      "12-imagens-didaticas-candidatas-apenas-pauta-para-admin",
+      "12. Imagens didáticas candidatas — apenas pauta para Admin"
+    ],
+    [
+      "13-referencias-oficiais-verificadas-e-controle-editorial",
+      "13. Referências oficiais verificadas e controle editorial"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Lote 13 · Apostila 259</h1>"
+        ]
+      ]
+    ],
+    [
+      "sistemas-de-informacao-em-saude-e-qualidade-dos-dados",
+      0,
+      [
+        [
+          "2",
+          "Sistemas de Informação em Saúde e qualidade dos dados"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Saúde Coletiva | <strong>Módulo:</strong> Vigilância, epidemiologia aplicada, gestão da informação e saúde digital.  \r<br><strong>Data de redação:</strong> 15/10/2026. <strong>Situação:</strong> MANUSCRITO PARCIAL ORIGINAL, NÃO PUBLICAR. Meta de 60 mil caracteres instrutivos únicos e auditoria clínica/editorial ainda pendentes.  \r<br><strong>Fronteiras:</strong> a #257 aprofunda planejamento e gestão; a #258, avaliação econômica; a #259 explica geração, confiabilidade, interpretação e uso dos dados em sistemas assistenciais e de vigilância."
+        ]
+      ]
+    ],
+    [
+      "etapa-zero-material-realmente-consultado",
+      0,
+      [
+        [
+          "2",
+          "Etapa zero — material realmente consultado"
+        ],
+        [
+          "p",
+          "Foram abertos e examinados no Drive do projeto os PDFs \"Vigilância epidemiológica\" (traz quadro resumido de SIM, SINASC, SIH, SIA, SINAN, SI-PNI, SIAB; registro de notificação e declaração de óbito), \"SUS\" (princípios, descentralização e controle social) e \"Estudos Epidemiológicos\" (desenhos e medidas). Nenhum traz a atualização suficientemente profunda da transformação digital/Siaps; portanto o benchmark é <strong>parcial</strong>, não é atribuído à editora não confirmada e não aprova encerramento. Foi também analisado o HTML de referência LURIA da apostila de crescimento fetal, para manter organização futura da interface. O texto deste arquivo é original, sem transcrever material do Drive.\r<br><strong>Fontes oficiais de checagem:</strong> DataSUS/Ministério da Saúde, sistemas da MAC, Siaps/e-SUS APS (notas 2025), notificação compulsória (portaria de 2026), legislação de proteção de dados. Não usar tabelas ou imagens de terceiros sem licença e aprovação."
+        ]
+      ]
+    ],
+    [
+      "objetivos-de-aprendizagem",
+      0,
+      [
+        [
+          "2",
+          "Objetivos de aprendizagem"
+        ],
+        [
+          "p",
+          "<li>Distinguir <strong>dado, informação, indicador e decisão</strong> e explicar como erros de registro transformam-se em erro de política pública.</li>\r<li>Selecionar fonte adequada para <strong>nascido vivo, óbito, notificação, produção hospitalar, produção ambulatorial, imunização, rede de estabelecimentos e acompanhamento na APS</strong>.</li>\r<li>Entender por que SINAN mede registros notificados e não necessariamente a incidência completa na população.</li>\r<li>Aplicar qualidade de dados: completude, consistência, oportunidade, duplicidade, validade, cobertura e acurácia.</li>\r<li>Distinguir denominador, numerador, subregistro, viés de seleção e inferência causal indevida.</li>\r<li>Identificar instrumentos de interoperabilidade e desafios de saúde digital sem confundir sistemas distintos.</li>\r<li>Reconhecer limites éticos e de privacidade do uso de dados clínicos.</li>\r<li>Resolver casos sobre investigação epidemiológica, mortalidade, cobertura vacinal, internações, APS e base inadequada.</li>"
+        ]
+      ]
+    ],
+    [
+      "arquitetura-comparada-dos-sistemas-de-informacao-em-saude-sus",
+      0,
+      [
+        [
+          "2",
+          "2A. A Arquitetura dos Sistemas de Informação em Saúde (SIS): Tipologia dos Dados, Instrumentos de Coleta e Competências Sanitárias"
+        ],
+        [
+          "3",
+          "O Papel Estratégico dos SIS na Tomada de Decisão Epidemiológica e Clínica"
+        ],
+        [
+          "p",
+          "Na Saúde Coletiva contemporânea, os <strong>Sistemas de Informação em Saúde (SIS)</strong> não são meros repositórios burocráticos de dados administrativos, mas instrumentos fundamentais de inteligência clínica, planejamento regional e vigilância epidemiológica. Coordenados pelo Departamento de Informática do SUS (DATASUS) e pela Secretaria de Vigilância em Saúde e Ambiente (SVSA) do Ministério da Saúde, os SIS alimentam a formulação de políticas públicas, o cálculo de coeficientes de morbimortalidade e a distribuição dos recursos financeiros da União."
+        ],
+        [
+          "3",
+          "A Matriz Comparativa Completa dos Grandes SIS Nacionais"
+        ],
+        [
+          "p",
+          "O domínio detalhado da ferramenta de entrada, do fato gerador, da cobertura e das fragilidades metodológicas de cada sistema é um dos temas mais recorrentes nas provas de Residência Médica, Revalida e ENAMED:"
+        ],
+        [
+          "t",
+          [
+            "Sistema de Informação",
+            "Nome Completo e Ano de Criação",
+            "Instrumento Padronizado de Coleta",
+            "Fato Gerador Primário",
+            "Responsável pelo Preenchimento e Fluxo",
+            "Principais Indicadores e Utilidade Sanitária"
+          ],
+          [
+            [
+              "<strong>SIM</strong>",
+              "Sistema de Informações sobre Mortalidade (1975/1979).",
+              "<strong>Declaração de Óbito (DO)</strong> — documento público oficial impresso em três vias carbonadas (ou eletrônica com certificação digital).",
+              "Ocorrência de óbito de qualquer indivíduo ou óbito fetal (concepto com $ge 20$ semanas de gestação OU peso $ge 500\text{ g}$ OU estatura $ge 25\text{ cm}$).",
+              "<strong>Preenchimento PRIVATIVO do MÉDICO</strong> (Art. 115 do CEM e Resolução CFM nº 1.779/2005). Encaminhada à Secretaria Municipal de Saúde, que digita os dados e repassa às instâncias estadual e federal.",
+              "Mortalidade Geral, Coeficiente de Mortalidade Infantil (CMI), Razão de Mortalidade Materna (RMM), mortalidade proporcional por causas (Swaroop-Uemura), anos de vida perdidos por morte prematura (YLL)."
+            ],
+            [
+              "<strong>SINASC</strong>",
+              "Sistema de Informações sobre Nascidos Vivos (1990).",
+              "<strong>Declaração de Nascido Vivo (DNV)</strong> — documento oficial impresso em 3 vias (ou digital).",
+              "Nascimento com vida de qualquer concepto (expulsão ou extração completa que manifeste qualquer sinal de vida: respiração, batimento cardíaco, pulsação de cordão ou movimento voluntário).",
+              "Profissional de saúde que assistiu o parto (médico, enfermeiro obstetra, obstetriz). No parto domiciliar sem assistência: preenchimento em cartório com testemunhas ou pela UBS.",
+              "Taxa de Natalidade, Fecundidade, proporção de baixo peso ao nascer (< 2.500 g), proporção de prematuridade (< 37 semanas), cobertura de consultas de pré-natal, tipo de parto (cesárea vs normal), idade materna. <strong>Denominador oficial de todos os coeficientes infantis!</strong>"
+            ],
+            [
+              "<strong>SINAN</strong>",
+              "Sistema de Informação de Agravos de Notificação (1993).",
+              "<strong>Ficha de Notificação/Investigação Individual</strong>.",
+              "Suspeita clínica ou confirmação diagnóstica de doença, agravo ou evento de saúde pública constante na Lista Nacional de Notificação Compulsória (Portaria GM/MS).",
+              "<strong>Qualquer profissional de saúde</strong> (médicos, enfermeiros, farmacêuticos, odontólogos) de serviços públicos ou privados; notificação por qualquer cidadão é facultada.",
+              "Incidência e prevalência de doenças transmissíveis (dengue, tuberculose, HIV, sífilis congênita), intoxicações exógenas, acidentes de trabalho graves e violência interpessoal. Detecção precoce de surtos e epidemias."
+            ],
+            [
+              "<strong>SIH/SUS</strong>",
+              "Sistema de Informações Hospitalares do SUS (década de 1980).",
+              "<strong>Autorização de Internação Hospitalar (AIH)</strong>.",
+              "Internação de paciente em leito hospitalar financiado pelo SUS (rede própria pública ou conveniada/filantrópica).",
+              "Médico solicitante preenche o Laudo Médico para Emissão de AIH; serviço de faturamento e auditoria hospitalar digita no sistema.",
+              "Morbidade hospitalar, tempo médio de permanência, taxa de ocupação de leitos de UTI, custo médio por internação hospitalar, taxa de mortalidade intra-hospitalar. <strong>Atenção: Base estritamente administrativa de faturamento (não cobre internações do setor privado puro!).</strong>"
+            ],
+            [
+              "<strong>SIA/SUS</strong>",
+              "Sistema de Informações Ambulatoriais do SUS (década de 1990).",
+              "<strong>Boletim de Produção Ambulatorial (BPA)</strong> e <strong>APAC (Autorização de Procedimentos Ambulatoriais de Alta Complexidade)</strong>.",
+              "Realização de consultas, exames, vacinas, cirurgias ambulatoriais, sessões de hemodiálise, quimioterapia e radioterapia no SUS.",
+              "Serviços ambulatoriais municipais, estaduais e prestadores contratados do SUS.",
+              "Produção ambulatorial física e orçamentária, procedimentos de alta complexidade em oncologia e nefrologia."
+            ],
+            [
+              "<strong>e-SUS APS / SISAB</strong>",
+              "Sistema de Informação em Saúde para a Atenção Básica (reestruturado a partir de 2013).",
+              "<strong>Prontuário Eletrônico do Cidadão (PEC)</strong> ou fichas do sistema de Coleta de Dados Simplificada (CDS).",
+              "Atendimento individual, visita domiciliar, atividade coletiva e cadastro individual/familiar realizado pelas equipes de APS no território.",
+              "Médicos de família, enfermeiros, técnicos de enfermagem, agentes comunitários de saúde (ACS) e e-Multi.",
+              "Acompanhamento longitudinal de pessoas com hipertensão e diabetes, pré-natal, cobertura vacinal infantil, cálculo do financiamento da Atenção Primária à Saúde."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "declaracao-de-obito-regras-do-cfm-e-preenchimento-correto",
+      0,
+      [
+        [
+          "2",
+          "4A. A Declaração de Óbito (DO): Resolução CFM nº 1.779/2005, Hierarquia das Causas (Cadeia Causal) e Responsabilidades Médico-Legais"
+        ],
+        [
+          "3",
+          "O Duplo Papel da Declaração de Óbito (DO)"
+        ],
+        [
+          "p",
+          "A Declaração de Óbito possui duas funções indissociáveis na sociedade contemporânea:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Função Jurídica e Civil:</strong> É o documento médico legal indispensável para que o Cartório de Registro Civil das Pessoas Naturais lavre a <strong>Certidão de Óbito</strong> (sem a qual é expressamente proibido o sepultamento ou cremação, nos termos da Lei Federal nº 6.015/1973 - Lei de Registros Públicos);",
+            "<strong>Função Epidemiológica e Sanitária:</strong> É o insumo primário exclusivo que alimenta o Sistema de Informações sobre Mortalidade (SIM), permitindo o conhecimento real do perfil de mortalidade da população para planejamento de saúde."
+          ]
+        ],
+        [
+          "3",
+          "Quem Deve Preencher a Declaração de Óbito? (Resolução CFM nº 1.779/2005)"
+        ],
+        [
+          "p",
+          "O preenchimento da DO é um <strong>ato médico personalíssimo e privativo</strong>. O médico assistente não pode recusar-se a fornecê-la sob pena de infração ética (Art. 87 do CEM). A responsabilidade é rigorosamente estratificada conforme a natureza da morte:"
+        ],
+        [
+          "t",
+          [
+            "Circunstância do Óbito",
+            "Definição e Cenário Clínico",
+            "Quem DEVE Emitir a Declaração de Óbito?",
+            "Conduta Terminantemente VEDADA"
+          ],
+          [
+            [
+              "<strong>Morte Natural COM Assistência Médica</strong>",
+              "Óbito decorrente de processo patológico clínico ou cirúrgico no qual o paciente vinha recebendo assistência médica regular por sua doença de base.",
+              "O <strong>médico que vinha prestando assistência ao paciente</strong>. Se o óbito ocorrer em hospital: o médico assistente ou, na sua ausência/impedimento, o médico substituto/plantonista da instituição ou o médico do corpo clínico formalmente designado.",
+              "É vedado ao médico cobrar honorários para emitir a DO (Art. 89 do CEM) ou encaminhar o corpo para o IML."
+            ],
+            [
+              "<strong>Morte Natural SEM Assistência Médica</strong>",
+              "Óbito natural ocorrido no domicílio ou na via pública em indivíduo sem acompanhamento médico recente por doença conhecida.",
+              "<ul>\n          <li><strong>Localidade COM Serviço de Verificação de Óbito (SVO):</strong> Encaminhar o corpo ao <strong>SVO</strong>, onde médicos patologistas farão a necropsia clínica para esclarecimento etiológico;</li>\n          <li><strong>Localidade SEM SVO:</strong> O <strong>médico do serviço público de saúde mais próximo</strong> do local do óbito (médico da UBS ou pronto-atendimento municipal) é legalmente obrigado a examinar o corpo e emitir a DO; na sua falta, qualquer médico da localidade.</li>\n        </ul>",
+              "É expressamente proibido encaminhar mortes naturais sem assistência para o Instituto Médico Legal (IML), que atende com exclusividade mortes violentas ou suspeitas!"
+            ],
+            [
+              "<strong>Morte Violenta ou Suspeita (Não Natural)</strong>",
+              "Óbito decorrente de causa externa: <strong>homicídio, suicídio, acidente de trânsito, queda, queimadura, afogamento, lesão por arma de fogo/branca, intoxicação exógena aguda, agressão física ou suspeita de crime</strong>.",
+              "O corpo deve ser <strong>obrigatoriamente encaminhado ao Instituto Médico Legal (IML)</strong> para necropsia forense e a DO deve ser emitida exclusivamente por <strong>Médico Legista</strong>.\n      <br><br>\n      <em>Atenção para Localidades sem IML:</em> A autoridade policial ou judicial nomeará dois médicos idôneos da comunidade (peritos <em>ad hoc</em>) para o exame cadavérico e emissão da DO.",
+              "<strong>É CRIME E INFRAÇÃO ÉTICA GRAVE</strong> o médico assistente de hospital emitir a DO em paciente vítima de causa externa! Mesmo que o paciente tenha sobrevivido por 3 meses na UTI após um traumatismo craniano por acidente automobilístico e venha a falecer de broncopneumonia bacteriana intra-hospitalar, <strong>a causa básica do óbito continua sendo o acidente de trânsito</strong> e a competência de emissão da DO pertence estritamente ao IML!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Estrutura Lógica do Bloco V da DO: Cadeia Causal da Morte"
+        ],
+        [
+          "p",
+          "O Bloco V (Condições e Causas do Óbito) é composto por duas partes cruciais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Parte I (Cadeia de Causas Diretamente Relacionadas à Morte):</strong>\n    <ol>\n      <li><strong>Linha a) — Causa Terminal / Imediata:</strong> A doença, complicação final ou estado mórbido que causou diretamente o óbito (ex.: Choque Séptico, Insuficiência Respiratória Aguda);",
+            "<strong>Linha b) — Causa Intermediária:</strong> Condição mórbida que precedeu e levou à causa terminal (ex.: Pneumonia Bacteriana Hospitalar);",
+            "<strong>Linha c) — Causa Intermediária / Antecedente:</strong> Estado que antecedeu a linha b (ex.: Acidente Vascular Cerebral Isquêmico);",
+            "<strong>Linha d) — Causa Básica do Óbito:</strong> <strong>A linha mais importante de toda a DO!</strong> A CID-11 e a OMS a definem como: <em>\"A doença ou lesão que iniciou a cadeia de acontecimentos patológicos que conduziram diretamente à morte, ou as circunstâncias do acidente ou violência que produziram a lesão fatal\"</em> (ex.: Hipertensão Arterial Sistêmica). É a causa básica que será selecionada pelo sistema para compor as estatísticas oficiais de mortalidade!",
+            "<strong>Parte II (Outras Condições Significativas):</strong> Outras doenças preexistentes ou concomitantes que contribuíram desfavoravelmente para a evolução do paciente, mas que <strong>não entraram diretamente na cadeia causal</strong> descrita na Parte I (ex.: Diabetes Mellitus tipo 2, Tabagismo crônico)."
+          ]
+        ],
+        [
+          "p",
+          "<blockquote>\n  <strong>Regra de Ouro do Preenchimento Clínico:</strong> Termos imprecisos que representam apenas o mecanismo final de parada biológica (como <strong>\"Parada Cardiorrespiratória\", \"Falência de Múltiplos Órgãos\" ou \"Insuficiência Cardíaca\"</strong>) <strong>NUNCA devem ser colocados como causa básica do óbito</strong>! Se utilizados na Linha a, é mandatório preencher as linhas inferiores identificando a patologia etiológica real subjacente.\n</blockquote>"
+        ]
+      ]
+    ],
+    [
+      "sistemas-especializados-sisvan-sipni-siscel-siclom",
+      0,
+      [
+        [
+          "2",
+          "3A. Sistemas Especializados de Informação do SUS: SISVAN, SI-PNI, SISCEL, SICLOM e Indicadores Demográfico-Sanitários Avançados"
+        ],
+        [
+          "3",
+          "Os Sistemas Setoriais de Informação e seu Papel na Vigilância Especializada"
+        ],
+        [
+          "p",
+          "Além dos grandes sistemas universais de mortalidade e nascimentos (SIM e SINASC), o SUS opera subsistemas estratégicos altamente especializados que subsidiam políticas públicas dirigidas a ciclos de vida específicos, programas de imunização e agravos crônicos transmissíveis:"
+        ],
+        [
+          "3",
+          "1. SISVAN (Sistema de Vigilância Alimentar e Nutricional)"
+        ],
+        [
+          "p",
+          "O <strong>SISVAN</strong> coleta dados contínuos sobre o estado nutricional e o consumo alimentar da população usuária da Atenção Primária à Saúde, com foco prioritário em gestantes, crianças, idosos e beneficiários do Programa Bolsa Família:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Parâmetros Antropométricos:</strong> Peso, estatura/comprimento e idade, processados segundo as curvas de crescimento da Organização Mundial da Saúde (OMS, 2006/2007) em escores-z e percentis:\n    <ul>\n      <li><em>Peso para Idade (P/I):</em> Triagem global rápida;",
+            "<em>Estatura para Idade (E/I):</em> Indicador ouro de <strong>desnutrição crônica pregressa</strong> (baixa estatura reflete privação nutricional ou infecções de repetição ao longo da infância);",
+            "<em>Peso para Estatura (P/E) e Índice de Massa Corporal para Idade (IMC/I):</em> Indicadores de <strong>desnutrição aguda (emaciação)</strong> ou de <strong>sobrepeso e obesidade infantil</strong>;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Marcadores de Consumo Alimentar:</strong> Monitoramento de aleitamento materno exclusivo até 6 meses, introdução precoce de ultraprocessados, consumo de bebidas açucaradas e padrão de alimentação saudável familiar.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "2. SI-PNI (Sistema de Informação do Programa Nacional de Imunizações)"
+        ],
+        [
+          "p",
+          "Historicamente operado como SI-PNI descentralizado e atualmente integrado ao <strong>e-SUS APS / RNDS (Rede Nacional de Dados em Saúde)</strong>, o sistema é responsável por:"
+        ],
+        [
+          "u",
+          [
+            "Registrar nominalmente cada dose de vacina administrada por lote, fabricante, via de administração e vacinador em cada sala de vacina do país;",
+            "Cálculo da <strong>Cobertura Vacinal (CV)</strong>: razão entre o número de doses aplicadas da última dose do esquema primário (ex.: D3 de pentavalente ou D2 de tríplice viral) e a população-alvo de nascidos vivos (estimada pelo SINASC);",
+            "Cálculo da <strong>Taxa de Abandono Vacinal</strong>: percentual de crianças que iniciaram o esquema vacinal com a primeira dose (D1), mas não retornaram para receber a última dose recomendada (D3 ou reforço):\n    <div style=\"text-align: center; margin: 10px 0; font-weight: bold;\">\n      $$\text{Taxa de Abandono (%)} = \frac{\text{Doses D1 Aplicadas} - \text{Doses D3 Aplicadas}}{\text{Doses D1 Aplicadas}} \times 100$$\n    </div>\n    Um abandono $> 10%$ sinaliza falha operacional grave da equipe de saúde, demandando busca ativa imediata por agentes comunitários de saúde."
+          ]
+        ],
+        [
+          "3",
+          "3. SISCEL e SICLOM: O Monitoramento Clínico do HIV e Hepatites"
+        ],
+        [
+          "p",
+          "O Departamento de HIV/Aids, Tuberculose, Hepatites Virais e Infecções Sexualmente Transmissíveis (DATHI/SVSA/MS) utiliza dois sistemas laboratoriais e logísticos integrados de alta precisão:"
+        ],
+        [
+          "u",
+          [
+            "<strong>SISCEL (Sistema de Controle de Exames Laboratoriais):</strong> Centraliza os laudos laboratoriais de contagem de <strong>Linfócitos T-CD4+/CD8+</strong> e quantificação de <strong>Carga Viral (RNA-HIV plasmático)</strong> realizados na rede pública de laboratórios credenciados. Permite rastrear falhas virológicas precoces, abandono de seguimento clínico e imunodeficiência avançada;",
+            "<strong>SICLOM (Sistema de Controle Logístico de Medicamentos):</strong> Gerencia em tempo real o estoque, a dispensação nas farmácias do SUS e o histórico farmacoterapêutico individual de cada paciente em uso de antirretrovirais (ARV) para HIV e antivirais de ação direta (DAA) para Hepatite C. Se um paciente deixa de retirar seus medicamentos por mais de 30 dias, o SICLOM emite alerta para busca ativa de adesão pela equipe multidisciplinar."
+          ]
+        ],
+        [
+          "3",
+          "Os Grandes Indicadores Demográficos Construídos pelos SIS"
+        ],
+        [
+          "p",
+          "O domínio dos cálculos e fontes dos indicadores demográficos é crucial para a prova de Título e Residência Médica:"
+        ],
+        [
+          "t",
+          [
+            "Indicador de Saúde",
+            "Fórmula Matemática do Coeficiente",
+            "Fontes de Dados Utilizadas",
+            "Significado Epidemiológico Central"
+          ],
+          [
+            [
+              "<strong>Coeficiente de Mortalidade Geral (CMG)</strong>",
+              "$$\frac{\text{Total de óbitos no ano}}{\text{População total no meio do ano}} \times 1.000$$",
+              "SIM (numerador) e IBGE (denominador).",
+              "Indicador bruto; sofre forte distorção pela estrutura etária da população (países desenvolvidos com muitos idosos podem ter CMG superior a países jovens). Exige padronização por idade."
+            ],
+            [
+              "<strong>Coeficiente de Mortalidade Infantil (CMI)</strong>",
+              "$$\frac{\text{Óbitos em menores de 1 ano no ano}}{\text{Total de Nascidos Vivos no ano}} \times 1.000$$",
+              "SIM (numerador) e SINASC (denominador).",
+              "<strong>Principal indicador clássico de desenvolvimento socioeconômico e qualidade de vida global</strong> de uma comunidade. Divide-se em:\n        <ul>\n          <li><em>Mortalidade Neonatal (0 a 27 dias):</em> Precoce (0 a 6 dias) e Tardia (7 a 27 dias). Reflete qualidade da assistência pré-natal e ao parto;</li>\n          <li><em>Mortalidade Pós-Neonatal (28 a 364 dias):</em> Reflete saneamento básico, desnutrição e infecções respiratórias/diarreicas (altamente sensível ao desenvolvimento).</li>\n        </ul>"
+            ],
+            [
+              "<strong>Razão de Mortalidade Materna (RMM)</strong>",
+              "$$\frac{\text{Óbitos maternos (causas obstétricas)}}{\text{Total de Nascidos Vivos no ano}} \times 100.000$$",
+              "SIM (numerador) e SINASC (denominador). Multiplicado pela base de <strong>100.000</strong>!",
+              "Mede o risco de morte de mulheres por causas ligadas à gravidez, parto e puerpério (até 42 dias pós-parto). Reflete a qualidade e equidade dos serviços de saúde reprodutiva e obstetrícia de urgência."
+            ],
+            [
+              "<strong>Curva de Mortalidade Proporcional de Nelson Moraes</strong>",
+              "Distribuição percentual dos óbitos em 4 faixas etárias (< 1 ano, 1 a 19 anos, 20 a 49 anos, e $ge 50$ anos).",
+              "SIM.",
+              "Classifica o nível de saúde de uma população em 4 tipos (Tipo I ao Tipo IV). O <strong>Tipo IV (Curva em \"J\" ou de Nível de Saúde Muito Elevado)</strong> exibe concentração maciça de óbitos em indivíduos com 50 anos ou mais ($ge 75%$) e percentual ínfimo de óbitos infantis."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "1-por-que-sistemas-de-informacao-sao-instrumentos-clinicos",
+      0,
+      [
+        [
+          "2",
+          "1. Por que sistemas de informação são instrumentos clínicos?"
+        ],
+        [
+          "p",
+          "Um atendimento gera achados, decisões e registros; milhões desses registros alimentam bases que descrevem adoecimento, nascimento, morte, vacinação e utilização de recursos. O sistema de informação em saúde (SIS) reúne <strong>pessoas, processos, documentos, padrões, infraestrutura e mecanismos de análise</strong>: não é apenas um software. Se a ficha clínica registra diagnóstico errado ou chega atrasada, o problema pode aparecer adiante como falsa tendência epidemiológica, meta não cumprida ou escolha indevida de investimento."
+        ],
+        [
+          "p",
+          "Um <strong>dado</strong> é valor observado (idade, diagnóstico, data). Torna-se <strong>informação</strong> quando recebe definição, verificação e contexto (número de casos novos em determinado território e período). Um <strong>indicador</strong> combina informação com regra reprodutível (taxa de mortalidade infantil por mil nascidos vivos), permitindo monitoramento. Por fim, a <strong>decisão</strong> combina indicador, necessidade e viabilidade: uma taxa alta pode direcionar investigação, mas não demonstra por si só qual intervenção será eficaz."
+        ],
+        [
+          "p",
+          "<strong>Pulo do Gato:</strong> boa decisão não nasce do maior banco, mas da definição correta de variável, população de referência, tempo, cobertura, consistência e método analítico."
+        ]
+      ]
+    ],
+    [
+      "2-arquitetura-dos-sistemas-quem-registra-e-para-que",
+      0,
+      [
+        [
+          "2",
+          "2. Arquitetura dos sistemas: quem registra e para quê?"
+        ],
+        [
+          "3",
+          "SIM — Sistema de Informações sobre Mortalidade"
+        ],
+        [
+          "p",
+          "Baseado em dados da Declaração de Óbito (DO), alimenta estatísticas de mortalidade por causa, idade, território e período. Serve a análises de mortalidade infantil, materna, doenças crônicas, causas externas e desigualdades regionais. É preciso distinguir <strong>local de ocorrência</strong>, <strong>local de residência</strong>, <strong>causa básica</strong> e causas associadas. O município com hospital de referência pode registrar muitos óbitos de não residentes: analisar apenas local de ocorrência distorce risco da população municipal."
+        ],
+        [
+          "p",
+          "A DO é documento médico-legal e epidemiológico; emissão, investigação de causa, codificação CID e circunstâncias de óbitos suspeitos seguem regras específicas. Não presumir que causa imediata (\"parada cardiorrespiratória\") equivale à causa básica útil para estatística. Investigação de morte materna/infantil pode corrigir classificação e ampliar completude."
+        ],
+        [
+          "3",
+          "SINASC — Sistema de Informações sobre Nascidos Vivos"
+        ],
+        [
+          "p",
+          "Usa informações da Declaração de Nascido Vivo (DNV), incluindo características maternas, pré-natal, parto e recém-nascido. É denominador importante de indicadores como mortalidade infantil e avaliação de prematuridade e baixo peso ao nascer, com limites de cobertura e qualidade. \"Nascido vivo\" é definição epidemiológica baseada em sinais de vida após completa expulsão/extração, independentemente de duração gestacional; não confundir com óbito fetal."
+        ],
+        [
+          "3",
+          "SINAN — Sistema de Informação de Agravos de Notificação"
+        ],
+        [
+          "p",
+          "Reúne notificações e investigações de doenças, agravos e eventos incluídos nas listas e rotinas aplicáveis. A <strong>notificação de suspeita</strong> pode ser obrigatória antes da confirmação; a investigação atualiza classificação final, local provável de infecção, encerramento e vínculos epidemiológicos. Normas definem periodicidade (imediata/semanal), responsável e fluxo. A lista de notificação é dinâmica: não memorizar relação antiga de PDF como se fosse lei permanente. Em janeiro/2026, a Portaria GM/MS nº 10.175 atualizou a lista nacional; confirmar versão consolidada e normas estaduais/municipais específicas."
+        ],
+        [
+          "p",
+          "<strong>O número de casos no SINAN não é automaticamente incidência real:</strong> dependem de procura por serviço, suspeição, testagem, notificação, processamento, duplicidade e encerramento. Queda abrupta após falta de testes pode ser queda de <strong>detecção</strong>, não de transmissão. Um surto pode ser perceptível inicialmente por sinais indiretos e exige investigação mesmo antes do fechamento de todas as fichas."
+        ],
+        [
+          "3",
+          "SIH/SUS — Sistema de Informações Hospitalares"
+        ],
+        [
+          "p",
+          "Registra hospitalizações processadas no âmbito do SUS com base em Autorizações de Internação Hospitalar (AIH) e informações administrativas/assistenciais associadas. Útil para descrever internações, procedimentos, permanência, valores e diagnósticos nos estabelecimentos cobertos. <strong>Uma AIH não equivale sempre a uma pessoa única</strong>; reinternações, AIHs de continuidade, mudanças de faturamento e regras administrativas exigem análise cautelosa. Não estimar diretamente incidência de doença na população a partir de número bruto de AIHs sem discutir acesso, cobertura e outras fontes."
+        ],
+        [
+          "3",
+          "SIA/SUS — Sistema de Informações Ambulatoriais"
+        ],
+        [
+          "p",
+          "Registra produção ambulatorial do SUS; instrumentos incluem BPA (Boletim de Produção Ambulatorial) e APAC (Autorização de Procedimentos Ambulatoriais) em contextos específicos. Pode informar volume de consultas/procedimentos aprovados, não necessariamente pessoas únicas atendidas ou necessidade populacional atendida. Mudanças em regras de registro podem gerar \"crescimento de produção\" sem aumento real de atendimentos."
+        ],
+        [
+          "3",
+          "CNES — Cadastro Nacional de Estabelecimentos de Saúde"
+        ],
+        [
+          "p",
+          "Identifica estabelecimentos, equipes, serviços e informações cadastrais, conforme periodicidade e critérios definidos. Útil para mapear capacidade instalada, oferta e composição de rede. Porém cadastro atualizado não equivale a plantão realmente disponível hoje: equipamentos quebrados, profissionais afastados ou agendas fechadas demandam validação local. <strong>CNES descreve estrutura cadastrada</strong>, não garante acesso efetivo."
+        ],
+        [
+          "3",
+          "SI-PNI e sistemas de imunização"
+        ],
+        [
+          "p",
+          "Sistemas de registro de imunização sustentam análise de doses aplicadas, esquemas, cobertura e vigilância, com fluxos que evoluem com plataformas digitais. <strong>Dose aplicada não é sinônimo de pessoa plenamente imunizada</strong>; coberturas precisam definir população-alvo, ano, produto e esquema, com deduplicação e atualizações. Uma cobertura acima de 100% pode decorrer de população estimada menor que real, atendimento de não residentes, migração ou duplicidade — não significa que \"mais de 100% da população foi imunizada\"."
+        ],
+        [
+          "3",
+          "APS: SIAB histórico, SISAB e Siaps"
+        ],
+        [
+          "p",
+          "O <strong>SIAB</strong> pertence a contexto histórico da Atenção Básica e não deve ser ensinado como se fosse a única infraestrutura atual. A estratégia <strong>e-SUS APS</strong>, com registros clínicos/territoriais, modificou captação, interoperabilidade e monitoramento; é necessário diferenciar aplicativos de entrada (por exemplo prontuário eletrônico e coleta) do sistema federal de consolidação e validação."
+        ],
+        [
+          "p",
+          "Em dezembro/2025, o Ministério da Saúde publicou orientações sobre atualização do e-SUS APS e critérios de validação de dados no <strong>Sistema de Informação em Saúde para a Atenção Primária (Siaps)</strong>, encerrando suporte de versões antigas. No período de transição, identificar qual indicador usa qual plataforma, versão, competência e regra de validação antes de comparar séries históricas. <strong>Não dizer que SIAB, SISAB e Siaps são idênticos ou que seus valores são automaticamente comparáveis.</strong>"
+        ],
+        [
+          "3",
+          "RNDS e interoperabilidade"
+        ],
+        [
+          "p",
+          "A Rede Nacional de Dados em Saúde busca conectar informações entre sistemas e pontos assistenciais com regras de interoperabilidade e segurança. <strong>Interoperar não significa disponibilizar qualquer prontuário a qualquer profissional</strong>. Exige identificação, autorização, governança, terminologias, rastreabilidade e finalidade assistencial/legal. A interoperabilidade sem padronização pode apenas propagar um erro mais rapidamente."
+        ]
+      ]
+    ],
+    [
+      "3-quadro-rapido-pergunta-certa-fonte-inicial",
+      0,
+      [
+        [
+          "2",
+          "3. Quadro rápido: pergunta certa → fonte inicial"
+        ],
+        [
+          "t",
+          [
+            "Pergunta",
+            "Fonte preferencial inicial",
+            "Limite principal"
+          ],
+          [
+            [
+              "Quantas mortes por causa básica e residência?",
+              "SIM",
+              "atraso/investigação, qualidade de causa básica"
+            ],
+            [
+              "Quantos nascidos vivos e características do parto?",
+              "SINASC",
+              "completude da DNV, variação geográfica"
+            ],
+            [
+              "Quantas notificações de dengue e casos encerrados?",
+              "SINAN + fontes específicas do agravo",
+              "subnotificação, definição de caso, encerramento"
+            ],
+            [
+              "Quantas internações SUS por doença?",
+              "SIH/SUS",
+              "autorizações não são pessoas; não cobre todos os hospitais"
+            ],
+            [
+              "Quantos procedimentos ambulatoriais registrados no SUS?",
+              "SIA/SUS",
+              "produção faturada não é necessidade atendida"
+            ],
+            [
+              "Que serviços/equipes estão cadastrados?",
+              "CNES",
+              "cadastro não demonstra funcionamento em tempo real"
+            ],
+            [
+              "Como evoluiu a vacinação por faixa etária?",
+              "Bases de imunização vigentes",
+              "duplicidade, denominador, doses vs esquema"
+            ],
+            [
+              "Como estão cadastros/atividades da APS?",
+              "e-SUS APS/Siaps conforme competência",
+              "atualização, validação, mudanças de versão"
+            ],
+            [
+              "Onde buscar informações para integrar sistemas?",
+              "DataSUS/RNDS conforme acesso autorizado",
+              "padrões, proteção e interoperabilidade"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "4-da-ficha-ao-indicador-o-ciclo-de-qualidade",
+      0,
+      [
+        [
+          "2",
+          "4. Da ficha ao indicador: o ciclo de qualidade"
+        ],
+        [
+          "p",
+          "<strong>Passo 1 — Definir finalidade e variável.</strong> \"Morte evitável\" exige classificação e recorte; não basta contar todos os óbitos.  \r<br><strong>Passo 2 — Registrar com precisão.</strong> Identificador, data, endereço, diagnóstico, serviço e desfecho em campos corretos.  \r<br><strong>Passo 3 — Validar.</strong> Regras de preenchimento, intervalos impossíveis, códigos válidos, consistência entre campos.  \r<br><strong>Passo 4 — Deduplicar e vincular.</strong> Um paciente pode aparecer em várias unidades; duplicidade não é repetição clínica legítima.  \r<br><strong>Passo 5 — Consolidar e proteger.</strong> Transferência, acesso mínimo necessário, registro de operações e segurança.  \r<br><strong>Passo 6 — Produzir indicador com denominador adequado.</strong> Sempre declarar população, período, inclusão/exclusão.  \r<br><strong>Passo 7 — Interpretar e agir.</strong> Investigar mudança de cobertura ou regra antes de concluir tendência.  \r<br><strong>Passo 8 — Devolver resultados aos serviços.</strong> Qualificação de dados é cíclica: quem preenche precisa saber para que serve."
+        ],
+        [
+          "3",
+          "Dimensões da qualidade"
+        ],
+        [
+          "p",
+          "<li><strong>Completude:</strong> proporção de campos obrigatórios/relevantes preenchidos de forma útil; campo com \"ignorado\" não significa informação clínica válida.</li>\r<li><strong>Consistência:</strong> coerência lógica entre campos (por exemplo, data do desfecho não pode anteceder nascimento; estado gestacional não pode ser registrado arbitrariamente).</li>\r<li><strong>Validade:</strong> valor pertence à categoria/faixa possível; data inválida ou CID incompatível é problema.</li>\r<li><strong>Oportunidade:</strong> tempo entre evento, notificação, digitação, investigação e disponibilidade; atraso pode inutilizar resposta a surto.</li>\r<li><strong>Cobertura:</strong> parcela do universo real atingida pelo sistema; excluir hospitais privados de indicador SIH SUS e afirmar incidência nacional é erro.</li>\r<li><strong>Duplicidade:</strong> repetição do mesmo evento/pessoa sem regra de consolidação.</li>\r<li><strong>Acurácia:</strong> proximidade entre valor registrado e realidade verificada; uma data formalmente válida pode estar factualmente errada.</li>\r<li><strong>Confiabilidade/reprodutibilidade:</strong> definição documentada gera resultados consistentes em diferentes análises.</li>"
+        ],
+        [
+          "3",
+          "Denominadores, taxas e proporções"
+        ],
+        [
+          "p",
+          "Taxa de mortalidade infantil: óbitos de menores de 1 ano em período/território <em>divididos por</em> nascidos vivos do mesmo recorte, multiplicados por 1.000, com ajustes quando protocolo exige. A comparação entre anos depende de estabilidade de capturas, população pequena e investigação de óbitos."
+        ],
+        [
+          "p",
+          "<strong>Taxa de incidência (ou coeficiente de incidência)</strong> aproxima casos novos em população sob risco por tempo; sua forma exata pode ser casos novos/população inicial ou pessoa-tempo, dependendo do desenho. <strong>Prevalência</strong> inclui casos existentes num ponto/período. Contagens de notificações não são sinônimo de casos incidentes confirmados, e internação por doença pode representar doença prevalente ou readmissão."
+        ],
+        [
+          "p",
+          "Em vigilância territorial, taxas com poucos eventos variam muito por acaso; usar períodos agregados, intervalos de confiança e eventualmente suavização geográfica quando adequado, evitando ranking sensacionalista de municípios com denominadores mínimos."
+        ]
+      ]
+    ],
+    [
+      "qualidade-dos-dados-linkage-de-bancos-e-lgpd-na-saude",
+      0,
+      [
+        [
+          "2",
+          "6A. Qualidade da Informação em Saúde, Metodologia de Vinculação de Bancos (Linkage Determinístico e Probabilístico) e Aplicação da LGPD (Lei nº 13.709/2018)"
+        ],
+        [
+          "3",
+          "As Dimensões Clássicas de Avaliação da Qualidade dos Dados"
+        ],
+        [
+          "p",
+          "Um sistema de informação epidemiológico só é útil se as informações registradas refletirem com fidelidade a realidade demográfica e sanitária. A literatura internacional e a Rede Interagencial de Informação para a Saúde (RIPSA) avaliam a qualidade dos dados por meio de seis dimensões padronizadas:"
+        ],
+        [
+          "t",
+          [
+            "Dimensão da Qualidade",
+            "Definição Conceitual",
+            "Indicador Típico de Mensuração e Limitações"
+          ],
+          [
+            [
+              "<strong>1. Cobertura (Completude da Captação)</strong>",
+              "Proporção de eventos reais ocorridos na população que foram efetivamente captados e registrados no sistema de informação.",
+              "<strong>Subregistro:</strong> Ocorre quando óbitos ou nascimentos ocorrem (especialmente em áreas rurais ou indígenas remotas) e não são notificados nem registrados em cartório. Mede-se pela razão entre nascimentos/óbitos informados no SINASC/SIM e as estimativas demográficas projetadas pelo IBGE."
+            ],
+            [
+              "<strong>2. Completude dos Campos (Preenchimento)</strong>",
+              "Grau em que os campos obrigatórios e essenciais das fichas (idade, raça/cor, escolaridade, causa de óbito) são preenchidos sem estarem em branco ou ignorados.",
+              "Percentual de registros com campos preenchidos como \"ignorado\" ou em branco. Alta proporção de ignorados na variável \"raça/cor\" ou \"escolaridade\" inviabiliza a análise de determinantes sociais e equidade."
+            ],
+            [
+              "<strong>3. Confiabilidade e Validade</strong>",
+              "A capacidade do dado de reproduzir fielmente o fenômeno clínico real sem viés sistemático de aferição.",
+              "Concordância diagnóstica entre a causa básica declarada na DO pelo médico e os achados da necropsia ou revisão do prontuário hospitalar."
+            ],
+            [
+              "<strong>4. Especificidade / Redução de Códigos Garbage (Lixo)</strong>",
+              "Proporção de causas de morte codificadas na CID com códigos inespecíficos ou mal definidos (Capítulo XVIII da CID-10: Sintomas, sinais e achados anormais).",
+              "Percentual de <strong>óbitos por causas mal definidas</strong>. Historicamente ultrapassava 20% no Norte e Nordeste; a implantação de comitês de investigação de óbito reduziu essa proporção para menos de 5% nas capitais brasileiras."
+            ],
+            [
+              "<strong>5. Oportunidade (Timeliness)</strong>",
+              "O intervalo de tempo transcorrido entre a ocorrência do evento de saúde e sua disponibilização no banco de dados para a equipe de vigilância.",
+              "Tempo médio em dias entre a notificação de um caso suspeito de sarampo ou meningite no SINAN e o início da investigação de campo e bloqueio vacinal (deve ser menor que 24 a 48 horas!)."
+            ],
+            [
+              "<strong>6. Consistência Interna e Coerência</strong>",
+              "A ausência de contradições lógicas entre variáveis do mesmo formulário.",
+              "Detecção de incoerências pelo software de entrada (ex.: óbito fetal com idade materna de 4 anos; homem com diagnóstico de câncer de colo de útero; recém-nascido com peso de 50 kg)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Metodologia de Vinculação de Bancos de Dados (Linkage)"
+        ],
+        [
+          "p",
+          "Nenhum sistema de informação isolado cobre toda a trajetória do paciente. O SIM registra apenas quem morre; o SINASC registra apenas o nascimento; o SINAN registra quem adoece por causas notificáveis; e o SIH registra apenas quem é internado no SUS. A <strong>Vinculação de Bancos de Dados (Linkage)</strong> é o processo metodológico e computacional que une os registros do mesmo indivíduo dispersos em diferentes bases de dados:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Linkage Determinístico:</strong> Utilizado quando existe uma <strong>chave única identificadora inequívoca</strong> presente em ambos os bancos (como o número do <strong>CPF</strong> ou o número do <strong>Cartão Nacional de Saúde - CNS</strong>). É rápido e com taxa de erro próxima de zero, desde que os números estejam digitados corretamente;",
+            "<strong>Linkage Probabilístico:</strong> Necessário quando não há chave única confiável em comum. Utiliza algoritmos probabilísticos baseados na Teoria de Fellegi-Sunter para comparar múltiplos campos textuais e numéricos imperfeitos:\n    <ol>\n      <li>Nome completo da mãe (campo de altíssimo poder discriminatório);",
+            "Nome completo do paciente (processado por algoritmos fonéticos como o Soundex para contornar erros de grafia);",
+            "Data de nascimento e sexo biológico;",
+            "Município de residência e código do logradouro."
+          ]
+        ],
+        [
+          "3",
+          "A Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) na Saúde Pública"
+        ],
+        [
+          "p",
+          "Os dados de saúde são legalmente classificados pela LGPD como <strong>Dados Pessoais Sensíveis (Art. 5º, inciso II)</strong>, exigindo camadas redobradas de segurança e sigilo:"
+        ],
+        [
+          "p",
+          "<blockquote>\n  <strong>Regra de Ouro da LGPD em Saúde Coletiva:</strong> A utilização de dados de saúde para fins de <strong>Vigilância Epidemiológica, Tutela da Saúde Pública e Pesquisa Científica</strong> está formalmente autorizada pelo <strong>Artigo 11 da LGPD, DISPENSANDO O CONSENTIMENTO INDIVIDUAL DO PACIENTE</strong>, desde que:"
+        ],
+        [
+          "o",
+          [
+            "O tratamento seja realizado exclusivamente por órgãos de saúde pública legítimos (Ministério da Saúde, Secretarias de Saúde, Fiocruz, universidades públicas);",
+            "Sempre que possível e viável, seja garantida a <strong>Anonimização ou Pseudonimização dos Dados</strong> antes da divulgação pública ou análise estatística (remoção de nomes, CPFs, endereços residenciais exatos);",
+            "Seja terminantemente vedada a comercialização ou compartilhamento dos dados de saúde para finalidades econômicas de seguradoras, bancos ou empregadores privados (Art. 11, § 4º da LGPD)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "quatro-casos-clinico-epidemiologicos-comentados-sistemas-informacao",
+      0,
+      [
+        [
+          "2",
+          "10B. Casos Clínico-Epidemiológicos Estruturados: Erros em Declaração de Óbito, Investigação de Surto no SINAN e Linkage de Nascidos Vivos"
+        ],
+        [
+          "3",
+          "Caso 1: O Erro Médico Clássico no Preenchimento da Declaração de Óbito de Idoso Hipertenso"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um homem de 74 anos, com histórico de hipertensão arterial sistêmica grave há 25 anos e tabagista pesado, é admitido no pronto-socorro com hemiplegia completa à direita e afasia motora súbita. A tomografia de crânio confirma volumoso hematoma intraparenquimatoso em núcleos da base esquerdos (Acidente Vascular Cerebral Hemorrágico). O paciente é intubado, admitido na UTI e, no 12º dia de ventilação mecânica, desenvolve pneumonia bacteriana associada à ventilação mecânica por <em>Pseudomonas aeruginosa</em>, evoluindo refratário para choque séptico e óbito."
+        ],
+        [
+          "p",
+          "<strong>A Declaração de Óbito Incorreta Preenchida pelo Residente:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Linha a: Parada Cardiorrespiratória",
+            "Linha b: Falência de Múltiplos Órgãos",
+            "Linha c: Choque Séptico",
+            "Linha d: Idade Avançada / Senilidade"
+          ]
+        ],
+        [
+          "p",
+          "<strong>Crítica Metodológica e Correção Epidemiológica Padrão-Ouro pelo Preceptor:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O preenchimento do residente é considerado um <strong>desastre para o SIM</strong>: \"Parada cardiorrespiratória\" é apenas o mecanismo final de cessação da vida comum a todos os mortais (termo inútil para a saúde pública); \"Senilidade\" é um código lixo (garbage code) inaceitável em paciente com diagnóstico firmado;",
+            "<strong>O Preenchimento Correto da Cadeia Causal da Morte:</strong>\n    <ul>\n      <li><strong>Linha a (Causa Terminal/Imediata):</strong> Choque Séptico (CID-10: R57.2);",
+            "<strong>Linha b (Causa Intermediária):</strong> Pneumonia Associada à Ventilação Mecânica (CID-10: J95.8);",
+            "<strong>Linha c (Causa Intermediária/Antecedente):</strong> Acidente Vascular Cerebral Hemorrágico (CID-10: I61.9);",
+            "<strong>Linha d (Causa Básica da Morte):</strong> <strong>Hipertensão Arterial Sistêmica (CID-10: I10)</strong> — foi a hipertensão crônica não controlada que rompeu o vaso cerebral e iniciou toda a cadeia sucessiva e inexorável de eventos fatais!",
+            "<strong>Parte II (Outras Condições Concomitantes):</strong> Tabagismo crônico (CID-10: F17.2)."
+          ]
+        ],
+        [
+          "3",
+          "Caso 2: Morte Violenta Ocorrida no Hospital após Longa Internação e Conflito de Competência"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um jovem de 19 anos foi vítima de agressão por projétil de arma de fogo em via pública há 45 dias, sofrendo traumatismo raquimedular torácico grave. Permaneceu internado na enfermaria de ortopedia de um hospital terciário e faleceu durante a noite devido a sepse decorrente de infecção urinária associada a cateterismo e pneumonia aspirativa. O médico plantonista da enfermaria, alegando que o tiro ocorreu há mais de um mês e que o jovem morreu de sepse intra-hospitalar, emite a DO atestando morte natural."
+        ],
+        [
+          "p",
+          "<strong>Auditoria Médico-Legal e Deontológica:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O médico plantonista cometeu <strong>grave erro legal e infração ética (Resolução CFM nº 1.779/2005)</strong>;",
+            "A natureza da morte é <strong>VIOLENTA / CAUSA EXTERNA (homicídio tentado consumado)</strong>. Não importa se a morte ocorreu 1 hora, 45 dias ou 1 ano após a agressão: o evento primário que desencadeou o processo patológico foi a lesão por projétil de arma de fogo;",
+            "O corpo deve ser <strong>obrigatoriamente encaminhado ao Instituto Médico Legal (IML)</strong> com o relatório hospitalar detalhado de internação e o laudo médico das cirurgias; a emissão da DO cabe com exclusividade ao <strong>Médico Legista</strong> após necropsia forense pericial com fins de inquérito criminal."
+          ]
+        ],
+        [
+          "3",
+          "Caso 3: Investigação de Surto de Doença Exantemática e Oportunidade no SINAN"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> Um médico da Atenção Primária à Saúde em uma cidade portuária atende uma criança de 4 anos com febre alta, tosse seca, coriza, conjuntivite com fotofobia intensa e exantema maculopapular confluente cefalocaudal há 2 dias. No exame da mucosa bucal, nota pequenas manchas brancacentas puntiformes com halo eritematoso na altura dos molares (Sinal de Koplik)."
+        ],
+        [
+          "p",
+          "<strong>Manejo de Vigilância no SINAN:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O médico reconhece a <strong>suspeita clínica inequívoca de Sarampo</strong>;",
+            "O Sarampo é agravo de <strong>Notificação Compulsória IMEDIATA (em até 24 horas)</strong> para as secretarias municipal e estadual de saúde e Ministério da Saúde;",
+            "O médico <strong>não aguarda a sorologia IgM/PCR confirmatória</strong> para notificar! A notificação no SINAN é feita na <em>suspeita clínica</em>;",
+            "A notificação imediata deflagra a <strong>Ação de Bloqueio Vacinal Seletivo</strong> pela equipe de imunizações em até 72 horas em todos os contatos domiciliares, escolares e vizinhança da criança, impedindo o restabelecimento da transmissão endêmica do vírus no território nacional."
+          ]
+        ],
+        [
+          "3",
+          "Caso 4: Linkage entre SINASC e SIM para Redução da Mortalidade Infantil Evitável"
+        ],
+        [
+          "p",
+          "<strong>Cenário:</strong> O Comitê Municipal de Prevenção do Óbito Infantil e Materno de uma capital realiza uma pesquisa avaliativa vinculando o banco de nascidos vivos (SINASC) com o banco de óbitos em menores de 1 ano (SIM) através de <strong>linkage probabilístico</strong>."
+        ],
+        [
+          "p",
+          "<strong>Achados Epidemiológicos:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O cruzamento demonstrou que 78% dos óbitos neonatais ocorreram em crianças cujas mães compareceram a menos de 4 consultas de pré-natal (dado registrado na DNV), e que 62% das Declarações de Óbito (DO) originais continham campos em branco para a causa básica da morte prematura;",
+            "A investigação domiciliar com a família e a revisão dos prontuários hospitalares permitiram reclassificar 85% dos óbitos como <strong>Evitáveis por Adequada Atenção à Mulher na Gestação e no Parto</strong> (Critérios de Evitabilidade da Fundação Seade/Ministério da Saúde);",
+            "A gestão municipal utilizou essa evidência para implantar a linha de cuidado materno-infantil com busca ativa obrigatória de gestantes faltosas pelas equipes de Saúde da Família via prontuário e-SUS APS."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-sistemas-informacao-enamed-revalida",
+      0,
+      [
+        [
+          "2",
+          "11B. Questões Inéditas Comentadas no Padrão Residência Médica, Revalida e ENAMED sobre Sistemas de Informação em Saúde"
+        ],
+        [
+          "3",
+          "Banco de Questões de Alta Performance: Sistemas de Informação em Saúde"
+        ],
+        [
+          "p",
+          "<strong>Questão 1 (ENAMED / USP — 2025):</strong> Uma idosa de 82 anos, acamada em domicílio devido a sequelas graves de AVE isquêmico ocorrido há 4 anos, vinha sendo acompanhada quinzenalmente pela equipe da Estratégia Saúde da Família (eSF) da Unidade Básica de Saúde. A filha comparece à UBS pela manhã informando que sua mãe faleceu durante o sono no leito doméstico de forma tranquila, sem qualquer sinal de violência. O município não possui Serviço de Verificação de Óbito (SVO) implantado. Diante do Código de Ética Médica e da Resolução CFM nº 1.779/2005, qual é a conduta médica correta?"
+        ],
+        [
+          "p",
+          "A) O médico da eSF deve orientar a família a chamar o rabecão da Polícia Civil para encaminhar o corpo ao Instituto Médico Legal (IML).<br>\n  B) O médico da eSF que vinha prestando assistência regular à paciente é legalmente e eticamente obrigado a examinar o corpo e emitir a Declaração de Óbito.<br>\n  C) A Declaração de Óbito pode ser assinada pelo Agente Comunitário de Saúde que conhecia a idosa, visto que não houve violência.<br>\n  D) O médico deve recusar a emissão da DO e orientar o sepultamento sem documentação mediante duas testemunhas no cemitério.<br>\n  E) A DO só pode ser fornecida se a família pagar uma taxa de emissão de atestado diretamente ao médico."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> A <strong>Resolução CFM nº 1.779/2005</strong> regulamenta as responsabilidades médicas na emissão da Declaração de Óbito (DO). Em caso de <strong>morte natural de paciente sob assistência médica domiciliar</strong> acompanhado pela atenção primária, o médico assistente (médico da eSF/SAD) tem o <strong>dever legal e deontológico</strong> de examinar o corpo e emitir a respectiva Declaração de Óbito. Como a paciente tinha acompanhamento prévio por doença crônica e faleceu de forma natural, é <strong>terminantemente proibido encaminhar o corpo ao IML</strong> (que é exclusivo para mortes violentas ou de causa externa suspeita)."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativa A incorreta:</em> O IML não atende mortes naturais; encaminhar um óbito natural ao IML sobrecarrega o serviço pericial e traumatiza desnecessariamente a família;",
+            "<em>Alternativa C incorreta:</em> O preenchimento da DO é ato médico privativo; profissionais de outras categorias não podem assiná-la;",
+            "<em>Alternativa D incorreta:</em> O sepultamento sem certidão de óbito expedida por cartório é crime contra a fé pública (Lei nº 6.015/1973);",
+            "<em>Alternativa E incorreta:</em> Cobrar honorários para emissão de DO é infração ética expressa do Código de Ética Médica (Art. 89)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 2 (Revalida INEP — 2024):</strong> Um epidemiologista municipal deseja calcular o Coeficiente de Mortalidade Infantil (CMI) e a Razão de Mortalidade Materna (RMM) do seu município no último ano civil. Para obter, respectivamente, o número oficial de óbitos (numerador) e o número oficial de nascidos vivos (denominador), quais são as bases de dados nacionais oficiais do DATASUS que devem ser consultadas?"
+        ],
+        [
+          "p",
+          "A) SIH/SUS para os óbitos e SIA/SUS para os nascidos vivos.<br>\n  B) SIM para os óbitos e SINASC para os nascidos vivos.<br>\n  C) SINAN para os óbitos e SISAB para os nascidos vivos.<br>\n  D) SIM para os óbitos e IBGE Censo Demográfico para os nascidos vivos.<br>\n  E) SIA/SUS para os óbitos e SINASC para os nascidos vivos."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<p><strong>Comentário Detalhado:</strong> No sistema epidemiológico brasileiro:"
+        ],
+        [
+          "u",
+          [
+            "O número oficial de óbitos infantis e maternos (numerador) é alimentado com exclusividade pelo <strong>Sistema de Informações sobre Mortalidade (SIM)</strong> a partir das Declarações de Óbito (DO);",
+            "O número oficial de nascidos vivos (denominador de todos os coeficientes infantis e da razão de mortalidade materna) é alimentado pelo <strong>Sistema de Informações sobre Nascidos Vivos (SINASC)</strong> a partir das Declarações de Nascido Vivo (DNV)."
+          ]
+        ],
+        [
+          "p",
+          "O SIH registra apenas internações pagas pelo SUS e o SINAN registra doenças transmissíveis e agravos de notificação.</p>"
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, C, D e E incorretas:</em> Utilizam bases inadequadas que não cobrem o universo total de eventos vitais da população."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Questão 3 (UNICAMP / ENARE — 2024):</strong> Durante uma cirurgia ortopédica eletiva em hospital privado com fins lucrativos, um paciente jovem e hígido sofre uma parada cardiorrespiratória irreversível por choque anafilático grave após infusão de um anestésico geral. Em qual sistema de informação hospitalar essa internação foi registrada pelo hospital privado?"
+        ],
+        [
+          "p",
+          "A) SIH/SUS, através da emissão de Autorização de Internação Hospitalar (AIH).<br>\n  B) SINAN, pois toda anafilaxia é de notificação compulsória universal.<br>\n  C) Esse óbito constará obrigatoriamente no SIM, mas essa internação NÃO constará no SIH/SUS, visto que o SIH capta apenas internações financiadas pelo SUS (rede pública e conveniada).<br>\n  D) SINASC, visto que o paciente era jovem.<br>\n  E) O caso não precisa ser informado a nenhum órgão governamental por ter ocorrido em hospital privado de elite."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong> Uma das pegadinhas epidemiológicas mais clássicas em concursos de medicina preventiva: o <strong>SIH/SUS (Sistema de Informações Hospitalares)</strong> é uma base de faturamento administrativo que cobre <strong>estritamente as internações pagas pelo SUS</strong> (rede pública municipal/estadual e leitos filantrópicos conveniados ao SUS). Ele <strong>NÃO abrange as internações particulares de desembolso direto ou cobertas por operadoras privadas de planos de saúde</strong>! Portanto, a morbidade dessa cirurgia não entra no SIH. Contudo, como o óbito ocorreu, a Declaração de Óbito (DO) é universal e de preenchimento obrigatório, alimentando o <strong>SIM</strong> independentemente de o hospital ser público ou privado."
+        ],
+        [
+          "p",
+          "<strong>Refutação dos Distratores:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Alternativas A, B, D e E incorretas:</em> Demonstram desconhecimento das fronteiras institucionais entre o setor público/SUS e o mercado privado de saúde suplementar."
+          ]
+        ]
+      ]
+    ],
+    [
+      "5-vies-e-confundimento-no-uso-de-bancos-administrativos",
+      0,
+      [
+        [
+          "2",
+          "5. Viés e confundimento no uso de bancos administrativos"
+        ],
+        [
+          "p",
+          "<strong>Subnotificação:</strong> profissionais deixam de notificar, serviços ficam sem insumos ou certas populações têm dificuldade de acesso.  \r<br><strong>Viés de detecção:</strong> teste melhora ou cresce oferta de serviços; casos notificados aumentam sem incremento proporcional da transmissão.  \r<br><strong>Viés de seleção:</strong> SIH representa principalmente internações SUS, não amostra aleatória de todos os doentes.  \r<br><strong>Mudança de definição:</strong> um novo critério de caso transforma série histórica.  \r<br><strong>Confundimento:</strong> município com mais exames registra mais casos e também pode ter piores indicadores socioeconômicos; correlação não define causalidade."
+        ],
+        [
+          "p",
+          "Evitar usar indicador de procedimento para afirmar eficácia terapêutica individual. A maior taxa de colonoscopias pode significar expansão de rastreamento, demanda reprimida, mudança de faturamento ou excesso de indicação. Para inferir desfecho, relacionar exposição e resultado em desenho adequado com variáveis e janela temporal explícitas."
+        ]
+      ]
+    ],
+    [
+      "6-vinculacao-de-bancos-possibilidades-e-riscos",
+      0,
+      [
+        [
+          "2",
+          "6. Vinculação de bancos: possibilidades e riscos"
+        ],
+        [
+          "p",
+          "Vincular SIM e SINASC permite estudar mortalidade neonatal associada a características de nascimento, desde que correspondência de identidade/tempo seja válida. Vincular SIH e SIM pode investigar mortalidade após internações, mas faltas de linkage produzem viés. <strong>Record linkage</strong> pode ser determinístico (identificador unívoco confiável) ou probabilístico (nome, data, filiação e outros campos com controles); quanto maior a complexidade, maior a necessidade de governança, autorização, segurança e avaliação de falso pareamento."
+        ],
+        [
+          "p",
+          "<strong>Falso positivo de pareamento:</strong> une pessoas distintas e pode imputar óbito ao indivíduo errado.  \r<br><strong>Falso negativo:</strong> não liga registros verdadeiros e subestima eventos.  \r<br><strong>Qualidade longitudinal:</strong> mudanças de CPF/CNS, transcrição e homônimos requerem regras de limpeza auditáveis.  \r<br><strong>Risco ético:</strong> combinar bancos aumenta capacidade de reidentificação; anonimização tem limites, especialmente em doenças raras e municípios pequenos."
+        ]
+      ]
+    ],
+    [
+      "7-privacidade-lgpd-e-seguranca",
+      0,
+      [
+        [
+          "2",
+          "7. Privacidade, LGPD e segurança"
+        ],
+        [
+          "p",
+          "Informações de saúde são <strong>dados pessoais sensíveis</strong> e demandam hipótese legal, finalidade específica, minimização, adequação, segurança, retenção e transparência. A execução de políticas públicas, tutela da saúde e outras bases previstas na LGPD podem autorizar tratamento em condições definidas; <strong>não é verdade que todo uso em saúde exige consentimento expresso</strong>, nem que a finalidade assistencial permite acesso indiscriminado."
+        ],
+        [
+          "p",
+          "Separar <strong>dado identificado</strong> (uso assistencial autorizado), <strong>pseudonimizado</strong> (identificador substituído, ainda potencialmente reversível), <strong>anonimizado</strong> adequadamente (risco de identificação razoavelmente mitigado) e <strong>agregado</strong> (resumo estatístico, cuja privacidade ainda requer atenção para células pequenas). Controles de acesso por papel, logs, criptografia e plano de incidentes são camadas complementares; nenhuma garante segurança sozinha."
+        ],
+        [
+          "p",
+          "<strong>Exemplo:</strong> gestor apresenta \"apenas dois casos\" de doença estigmatizante numa aldeia pequena com idade e data exatas. Mesmo sem nomes, pode haver reidentificação; publicar agregados maiores ou suprimir células pequenas conforme política de divulgação."
+        ]
+      ]
+    ],
+    [
+      "8-paineis-e-indicadores-como-ler-sem-cair-em-armadilhas",
+      0,
+      [
+        [
+          "2",
+          "8. Painéis e indicadores: como ler sem cair em armadilhas"
+        ],
+        [
+          "p",
+          "Um painel de controle deve mostrar definição, fonte, competência, última atualização, numerador, denominador, desagregações relevantes e eventuais rupturas de série. Variação percentual sem base absoluta pode exagerar relevância: subir de 1 para 2 eventos é 100% de aumento, mas com grande incerteza. Taxa ajustada por idade difere da taxa bruta e pode inverter comparação entre regiões com pirâmides etárias diferentes."
+        ],
+        [
+          "p",
+          "Mapas podem evidenciar vazios assistenciais, mas densidade de postos CNES não mede automaticamente acesso físico (estradas, transporte, horários), qualidade e produção. Não atribuir desempenho de equipe exclusivamente a \"número de consultas\" sem considerar população, complexidade, qualidade do registro e resultados."
+        ],
+        [
+          "3",
+          "Alertas para prova"
+        ],
+        [
+          "p",
+          "1. <strong>SIM</strong> = mortalidade; <strong>SINASC</strong> = nascidos vivos; <strong>SINAN</strong> = notificação; <strong>SIH/SIA</strong> = produção hospitalar/ambulatorial; <strong>CNES</strong> = estrutura cadastrada.\r\n2. SIAB é <strong>histórico</strong>; e-SUS APS/Siaps requerem regras contemporâneas de validação e comparação de competência.\r\n3. Notificação não espera sempre confirmação laboratorial; prazo varia com evento e portaria.\r\n4. AIH ≠ indivíduo único e procedimento ≠ pessoa beneficiada.\r\n5. Óbitos por local de ocorrência não são iguais a risco do município de residência.\r\n6. \"100% cobertura vacinal\" depende de denominador e doses/esquema — checar população-alvo.\r\n7. Melhorar qualidade é <strong>corrigir a cadeia inteira</strong>, não apenas limpar planilha no final."
+        ]
+      ]
+    ],
+    [
+      "9-fluxogramas-autorais",
+      0,
+      [
+        [
+          "2",
+          "9. Fluxogramas autorais"
+        ],
+        [
+          "3",
+          "A. Investigar aumento inesperado de doença notificada"
+        ],
+        [
+          "p",
+          "Sinal no painel → conferir definição de caso e período → comparar capacidade de testagem e acesso → auditar duplicidades e datas → estratificar por local de residência/ocorrência, idade e severidade → investigar contexto epidemiológico em campo → comparar indicadores independentes (internação/óbito/laboratório) → comunicar achados e implementar ações proporcionais → monitorar evolução."
+        ],
+        [
+          "3",
+          "B. Escolher sistema para responder pergunta de gestão"
+        ],
+        [
+          "p",
+          "Definir evento (nascimento/óbito/notificação/internação/ambulatória/APS) → identificar universo coberto → selecionar SIS → verificar dicionário de dados e competência → limpar/integrar de forma autorizada → calcular indicador/intervalo de confiança → testar sensibilidade a mudanças de regra → apresentar limitação junto ao resultado → definir ação e reavaliação."
+        ],
+        [
+          "3",
+          "C. Corrigir ficha incompleta"
+        ],
+        [
+          "p",
+          "Erro detectado → verificar gravidade/urgência epidemiológica → retornar à fonte primária documentada com segurança → corrigir campo, preservar trilha de auditoria → revisar se alteração muda classificação/denominador → atualizar painel e serviços → orientar prevenção de recorrência (treinamento, interface, alertas e checagem)."
+        ]
+      ]
+    ],
+    [
+      "10-casos-clinico-epidemiologicos-comentados",
+      0,
+      [
+        [
+          "2",
+          "10. Casos clínico-epidemiológicos comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Morte infantil e denominador"
+        ],
+        [
+          "p",
+          "Município registrou 12 óbitos de menores de um ano de residentes em um ano e 2.000 nascidos vivos residentes. Pergunta: que indicador calcular?  \r\n<strong>Hipótese/objetivo:</strong> coeficiente de mortalidade infantil. <strong>Raciocínio:</strong> usar numerador e denominador por residência e período comparáveis. <strong>Cálculo:</strong> 12/2.000 × 1.000 = <strong>6 óbitos por mil nascidos vivos</strong>. <strong>Exames/fontes:</strong> SIM e SINASC, após verificar investigação, cobertura e consistência. <strong>Conduta de gestão:</strong> monitorar causas evitáveis, estratificar por componentes neonatal/pós-neonatal e território; não concluir causalidade por um ano de pequena contagem. <strong>Por que importa:</strong> associar fontes corretas e denominador coerente."
+        ],
+        [
+          "3",
+          "Caso 2 — \"Surto\" que era mais testagem"
+        ],
+        [
+          "p",
+          "Unidade relata aumento de 90 para 150 notificações mensais após ampliar testes rápidos; hospitalizações e positividade diminuíram.  \r\n<strong>Hipótese:</strong> aumento de detecção, mas surto real não está excluído. <strong>Raciocínio:</strong> contagem absoluta aumentou com oferta de teste; acompanhar taxa de positividade, gravidade e distribuição temporal/geográfica antes de concluir transmissão. <strong>Exames/fontes:</strong> SINAN, laboratório, SIH e inquérito de campo conforme necessidade. <strong>Conduta:</strong> validar dados, investigar conglomerados, manter vigilância e comunicação proporcional. <strong>Por que importa:</strong> uma tendência de notificação não é tendência causal automática."
+        ],
+        [
+          "3",
+          "Caso 3 — Produção SIH versus indivíduos"
+        ],
+        [
+          "p",
+          "Gestor afirma que 1.500 AIHs significam 1.500 pacientes distintos com insuficiência cardíaca, usando isso como incidência anual.  \r\n<strong>Problema:</strong> mistura unidade administrativa com pessoa e doença nova. <strong>Raciocínio:</strong> reinternações e continuidade de AIH alteram contagem; nem todos os cuidados ocorrem no SIH, e o CID pode ser secundário. <strong>Exame:</strong> definições AIH, identificadores e regras de deduplicação sob acesso autorizado. <strong>Conduta:</strong> relatar internações por 100 mil habitantes SUS-dependentes com limitações, ou construir estudo de indivíduos/incidência real com método próprio. <strong>Por que importa:</strong> denominador errado leva a planejamento errado."
+        ],
+        [
+          "3",
+          "Caso 4 — Cobertura vacinal acima de 100%"
+        ],
+        [
+          "p",
+          "Cidade informa 108% de cobertura de dose de vacina em menores de um ano.  \r\n<strong>Hipóteses:</strong> migração, atendimento de não residentes, população-alvo estimada defasada, duplicidade ou registro tardio. <strong>Raciocínio:</strong> a porcentagem acima de 100 indica incompatibilidade entre numerador e denominador, não a \"imunização de pessoas extras\". <strong>Exames/fontes:</strong> registros nominais/doses por residência, população-alvo, competência e regras de deduplicação. <strong>Conduta:</strong> qualificar base e explicar numerador/denominador. <strong>Por que importa:</strong> indicadores administrativos não são fotografia perfeita da população."
+        ],
+        [
+          "3",
+          "Caso 5 — Mudança de versão na APS"
+        ],
+        [
+          "p",
+          "Município observou queda abrupta de cadastros válidos após atualização do sistema de transmissão e novas regras Siaps, sem mudanças visíveis nas equipes.  \r\n<strong>Hipóteses:</strong> falha de envio, incompatibilidade de versão, invalidação por regra nova, problema de cadastro ou queda real. <strong>Raciocínio:</strong> série foi afetada por processo informacional. <strong>Exames:</strong> logs de validação, competências, versões e registros rejeitados, com suporte autorizado. <strong>Conduta:</strong> corrigir fluxo técnico e realizar reconciliação antes de punir equipes por \"queda de atendimento\". <strong>Por que importa:</strong> mudança tecnológica pode aparentar mudança epidemiológica."
+        ]
+      ]
+    ],
+    [
+      "11-questoes-autorais-com-comentario-por-alternativa",
+      0,
+      [
+        [
+          "2",
+          "11. Questões autorais, com comentário por alternativa"
+        ],
+        [
+          "p",
+          "<strong>1.</strong> Para estudar mortalidade infantil por município de residência, a combinação principal é:\r<br>A) SINAN + SIA; B) SIM + SINASC; C) SIH + CNES; D) SI-PNI + SIAB; E) APAC + BPA.  \r<br><strong>Gabarito B.</strong> SIM dá óbitos, SINASC nascidos vivos; A registra notificação/produção; C hospitalização/estrutura; D imunização/APS histórica; E produção ambulatorial. <strong>Mini-revisão:</strong> alinhar ano/território por residência."
+        ],
+        [
+          "p",
+          "<strong>2.</strong> Município registrou crescimento de casos notificados após expandir testes. Qual inferência correta?\r<br>A) Transmissão necessariamente dobrou. B) Incidência real necessariamente caiu. C) Aumento de detecção pode explicar parte da variação; verificar positividade, gravidade e definição. D) Dados notificados são sempre o universo completo. E) Não se deve investigar.  \r<br><strong>Gabarito C.</strong> A/B não consideram testagem; D assume cobertura integral; E ignora risco; C exige triangulação. <strong>Mini-revisão:</strong> notificação ≠ incidência real."
+        ],
+        [
+          "p",
+          "<strong>3.</strong> Sobre SIH/SUS, assinale a adequada:\r<br>A) Cada AIH equivale a caso incidente novo. B) Cobre toda internação privada no país. C) Registra autorizações/produção hospitalar do SUS e não garante pessoas únicas. D) Informa vacinação individual. E) Substitui a DO no registro de morte.  \r<br><strong>Gabarito C.</strong> A ignora reinternação; B excede cobertura; D é imunização; E confunde sistemas. <strong>Mini-revisão:</strong> unidade da base determina inferência possível."
+        ],
+        [
+          "p",
+          "<strong>4.</strong> Cobertura vacinal de 105% pode indicar:\r<br>A) Imunidade biológica acima de 100%. B) Denominador inadequado, duplicidade ou vacinação de não residentes. C) Falha obrigatória da vacina. D) Erro ético em vacinar. E) Diagnóstico de epidemia.  \r<br><strong>Gabarito B.</strong> A é impossibilidade interpretativa; C/D/E não são decorrência; B reconhece problema de numerador/denominador. <strong>Mini-revisão:</strong> conferir unidade dose/pessoa, população-alvo e residência."
+        ],
+        [
+          "p",
+          "<strong>5.</strong> Sobre qualidade de dados, a <em>oportunidade</em> mede:\r<br>A) Percentual de campos vazios. B) Proporção de registros duplicados. C) Tempo entre evento, notificação e disponibilidade da informação. D) Comparação com padrão de verdade. E) Acesso sem autenticação.  \r<br><strong>Gabarito C.</strong> A é completude, B duplicidade, D acurácia, E falha de segurança; C corresponde à oportunidade. <strong>Mini-revisão:</strong> dado correto que chega tarde também pode falhar em vigilância."
+        ],
+        [
+          "p",
+          "<strong>6.</strong> Em 2026, um manual diz que o SIAB é o único sistema de informação da APS. Melhor interpretação:\r<br>A) Correto; nenhum sistema novo existe. B) Histórico incompleto: considerar e-SUS APS/Siaps e competência de validação. C) SIAB é o mesmo que SIM. D) Substituir tudo por SINAN. E) Interpretar todas as séries como idênticas.  \r<br><strong>Gabarito B.</strong> A está desatualizada; C/D confundem objetos; E ignora ruptura de séries; B aplica mudanças institucionais. <strong>Mini-revisão:</strong> distinguir estratégia de prontuário/entrada do ambiente de consolidação."
+        ],
+        [
+          "p",
+          "<strong>7.</strong> Uma tabela pública informa dois casos de doença rara em comunidade de 50 habitantes com idade e data exatas. A principal preocupação é:\r<br>A) Nenhuma, se não há nome. B) Reidentificação mesmo sem nome e violação de minimização. C) Impossibilidade de usar dados agregados em saúde. D) Dever de revelar prontuários para todos. E) Exclusão de anonimização de políticas públicas.  \r<br><strong>Gabarito B.</strong> A ignora tamanho de célula; C é excessiva; D viola confidencialidade; E mistura base legal com proteção. <strong>Mini-revisão:</strong> divulgação pública precisa preservar privacidade em pequenas células."
+        ]
+      ]
+    ],
+    [
+      "12-imagens-didaticas-candidatas-apenas-pauta-para-admin",
+      0,
+      [
+        [
+          "2",
+          "12. Imagens didáticas candidatas — apenas pauta para Admin"
+        ],
+        [
+          "p",
+          "1. Diagrama autoral \"atendimento → registro → SIS → indicador → decisão\", na introdução.  \r<br>2. Mapa conceitual original SIM/SINASC/SINAN/SIH/SIA/CNES, no quadro de fontes.  \r<br>3. Formulário fictício de Declaração de Óbito <strong>sem dados reais</strong>, com campos epidemiológicos destacados.  \r<br>4. Formulário fictício DNV, demonstrando denominador de nascimentos.  \r<br>5. Gráfico original \"casos notificados × volume de testes\", no capítulo de viés.  \r<br>6. Comparação ilustrativa de cobertura >100% com denominador defasado.  \r<br>7. Fluxograma de limpeza e deduplicação de registros fictícios.  \r<br>8. Mapa coroplético sintético com população pequena e discussão de instabilidade.  \r<br>9. Diagrama histórico \"SIAB → e-SUS APS / validação Siaps\" com datas verificadas.  \r<br>10. Quadro visual autoral de privacidade: identificado / pseudonimizado / agregado / anonimizado."
+        ],
+        [
+          "p",
+          "Não selecionar automaticamente imagens privadas ou capturas de plataformas com pacientes. Licença, utilidade, contraste, otimização WebP e avaliação via Admin obrigatórias antes de publicação."
+        ]
+      ]
+    ],
+    [
+      "13-referencias-oficiais-verificadas-e-controle-editorial",
+      0,
+      [
+        [
+          "2",
+          "13. Referências oficiais verificadas e controle editorial"
+        ],
+        [
+          "p",
+          "1. Ministério da Saúde. DataSUS — competências, sistemas e interoperabilidade: https://www.gov.br/saude/pt-br/composicao/seidigi/datasus/datasus\r<br>2. Ministério da Saúde. Sistemas de Informação em Saúde da MAC: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/programacao-regulacao-controle-e-financiamento-da-mac/sistemas-de-informacao-em-saude\r<br>3. Ministério da Saúde. Notificação Compulsória e lista atualizada pela Portaria GM/MS 10.175/2026: https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/\r<br>4. Ministério da Saúde. Normativas para e-SUS APS e validação Siaps, 23/12/2025: https://www.gov.br/saude/pt-br/assuntos/noticias/2025/dezembro/ministerio-da-saude-publica-normativas-que-orientam-atualizacao-do-e-sus-aps-e-reforcam-qualidade-dos-dados-da-atencao-primaria\r<br>5. Lei nº 13.709/2018 — LGPD: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm\r<br>6. Ministério da Saúde. Boletins epidemiológicos e sistemas oficiais — consultar versões pertinentes ao agravo no Portal da Vigilância: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z"
+        ],
+        [
+          "3",
+          "Auditoria honesta desta versão"
+        ],
+        [
+          "p",
+          "<li><strong>Produzido:</strong> capítulos originais em sequência lógica, 5 casos completos, 7 questões comentadas, matrizes e fluxos, 10 pautas de imagens e fontes atuais.</li>\r<li><strong>Cobertura forte:</strong> utilidade de SIM/SINASC/SINAN/SIH/SIA/CNES; normas Siaps; qualidade, viés, denominadores, uso/privacidade.</li>\r<li><strong>Lacunas para ≥60k úteis e autossuficiência:</strong> dicionários completos de variáveis por sistema; fluxo de notificações compulsórias e prazos específicos da lista 2026 por agravo; linkage e dados federados com exemplos em profundidade; análise de sensibilidade e séries temporais; indicadores adicionais (mortalidade materna, letalidade, internação evitável); interoperabilidade FHIR/terminologias; legislação/instituições e segurança; mais exercícios; verificação de licença das dez imagens; revisão por especialista e teste PWA.</li>\r<li><strong>Etapa zero:</strong> satisfeita <strong>parcialmente</strong> por material de vigilância do Drive lido, sem equivalente completo de saúde digital.</li>\r<li><strong>Status técnico:</strong> RASCUNHO_PARCIAL_NAO_PUBLICAR. Não converter em HTML, não certificar meta por contagem de Markdown.</li>"
+        ]
+      ]
+    ]
+  ]
+}

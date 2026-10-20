@@ -1,0 +1,1205 @@
+{
+  "v": 2,
+  "s": "biosseguranca-e-prevencao-de-infeccoes-relacionadas-a-assistencia",
+  "t": "Biossegurança e Prevenção de Infecções Relacionadas à Assistência",
+  "p": "Biossegurança e Prevenção de Infecções Relacionadas à Assistência — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Epidemiologia, Cadeia de Transmissão, Bundles ANVISA, Gestão de Surtos, MDR e Stewardship",
+  "a": "Saúde Coletiva",
+  "m": "Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Biossegurança e Prevenção de Infecções Relacionadas à Assistência",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED — Epidemiologia, Cadeia de Transmissão, Bundles ANVISA, Gestão de Surtos, MDR e Stewardship",
+    [
+      "Área: Saúde Coletiva",
+      "Matéria: Saúde Coletiva",
+      "Tema: Biossegurança e Prevenção de Infecções Relacionadas à Assistência"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "biosseguranca-e-prevencao-das-infeccoes-relacionadas-a-assistencia-a-saude",
+      "Biossegurança e prevenção das infecções relacionadas à assistência à saúde"
+    ],
+    [
+      "1-definicao-e-relevancia",
+      "1. Definição e relevância"
+    ],
+    [
+      "2-cadeia-de-infeccao-e-hierarquia-de-controle",
+      "2. Cadeia de infecção e hierarquia de controle"
+    ],
+    [
+      "3-precaucoes-padrao-para-todos-os-pacientes",
+      "3. Precauções padrão: para todos os pacientes"
+    ],
+    [
+      "4-precaucoes-baseadas-na-transmissao",
+      "4. Precauções baseadas na transmissão"
+    ],
+    [
+      "5-infeccao-primaria-de-corrente-sanguinea-associada-a-cateter-ipcs-clabsi",
+      "5. Infecção primária de corrente sanguínea associada a cateter (IPCS/CLABSI)"
+    ],
+    [
+      "6-infeccao-urinaria-associada-ao-cateter-vesical-itu-cvd",
+      "6. Infecção urinária associada ao cateter vesical (ITU-CVD)"
+    ],
+    [
+      "7-pneumonia-associada-a-ventilacao-mecanica-pav-e-pneumonia-hospitalar",
+      "7. Pneumonia associada à ventilação mecânica (PAV) e pneumonia hospitalar"
+    ],
+    [
+      "8-infeccao-do-sitio-cirurgico-isc",
+      "8. Infecção do sítio cirúrgico (ISC)"
+    ],
+    [
+      "9-resistencia-antimicrobiana-e-stewardship",
+      "9. Resistência antimicrobiana e stewardship"
+    ],
+    [
+      "10-limpeza-desinfeccao-esterilizacao-e-classificacao-de-materiais",
+      "10. Limpeza, desinfecção, esterilização e classificação de materiais"
+    ],
+    [
+      "11-acidente-com-material-biologico-conduta-imediata",
+      "11. Acidente com material biológico: conduta imediata"
+    ],
+    [
+      "12-vigilancia-epidemiologica-e-indicadores",
+      "12. Vigilância epidemiológica e indicadores"
+    ],
+    [
+      "13-gestao-de-surtos-passo-a-passo",
+      "13. Gestão de surtos: passo a passo"
+    ],
+    [
+      "14-diagnostico-diferencial-infeccao-inflamacao-colonizacao-e-contaminacao",
+      "14. Diagnóstico diferencial: infecção, inflamação, colonização e contaminação"
+    ],
+    [
+      "15-fluxogramas-de-conduta",
+      "15. Fluxogramas de conduta"
+    ],
+    [
+      "15a-da-evidencia-a-beira-leito-desenho-do-programa-de-prevencao",
+      "15A. Da evidência à beira-leito: desenho do programa de prevenção"
+    ],
+    [
+      "15b-bacteremia-e-cateter-separar-vigilancia-diagnostico-clinico-e-controle-do-foco",
+      "15B. Bacteremia e cateter: separar vigilância, diagnóstico clínico e controle do foco"
+    ],
+    [
+      "15c-setores-especiais-reduzir-dano-sem-aplicar-mecanicamente-um-bundle-unico",
+      "15C. Setores especiais: reduzir dano sem aplicar mecanicamente um bundle único"
+    ],
+    [
+      "15d-indicadores-que-explicam-o-desempenho-e-nao-apenas-decoram-uma-prova",
+      "15D. Indicadores que explicam o desempenho, e não apenas decoram uma prova"
+    ],
+    [
+      "15e-investigacao-de-surtos-com-exemplo-de-raciocinio-epidemiologico",
+      "15E. Investigação de surtos com exemplo de raciocínio epidemiológico"
+    ],
+    [
+      "candida-auris-e-fungos-multirresistentes-alerta-sanitario-e-manejo",
+      "15F. Emergência de Candida auris e Fungos Multirresistentes: Alerta Epidemiológico da ANVISA, Mecanismos de Resistência e Rigor de Contenção"
+    ],
+    [
+      "bacilos-gram-negativos-carbapenemases-e-stewardship-avancado",
+      "15G. Bacilos Gram-Negativos Produtores de Carbapenemases (KPC, NDM, OXA-48): Taxonomia de Resistência, Detecção Rápida e Terapia Combinada Racional"
+    ],
+    [
+      "16-casos-clinicos-comentados",
+      "16. Casos clínicos comentados"
+    ],
+    [
+      "17-questoes-autorais-comentadas",
+      "17. Questões autorais comentadas"
+    ],
+    [
+      "18-perolas-de-prova-e-pratica",
+      "18. Pérolas de prova e prática"
+    ],
+    [
+      "19-banco-inicial-de-figuras-educativas-nenhuma-imagem-aprovada",
+      "19. Banco inicial de figuras educativas (nenhuma imagem aprovada)"
+    ],
+    [
+      "20-referencias-institucionais",
+      "20. Referências institucionais"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Lote 13 · Apostila 260</h1>"
+        ]
+      ]
+    ],
+    [
+      "biosseguranca-e-prevencao-das-infeccoes-relacionadas-a-assistencia-a-saude",
+      0,
+      [
+        [
+          "2",
+          "Biossegurança e prevenção das infecções relacionadas à assistência à saúde"
+        ],
+        [
+          "p",
+          "<strong>Situação:</strong> rascunho editorial de conteúdo aprofundado, NÃO PUBLICAR; faltam revisão final e meta ≥60 mil caracteres úteis.  \r<br><strong>Área:</strong> Saúde Coletiva | <strong>Interfaces:</strong> Clínica, Cirurgia, Pediatria e MFC  \r<br><strong>Data:</strong> 15/10/2026. <strong>Fontes nacionais centrais:</strong> ANVISA PNPCIRAS 2026–2030; Notas técnicas de vigilância e prevenção de IRAS (2025–2026)."
+        ],
+        [
+          "3",
+          "Benchmark obrigatório registrado (etapa zero, parcial)"
+        ],
+        [
+          "p",
+          "Consulta efetiva ao Google Drive: documento “Infecção de corrente sanguínea”, origem institucional não confirmada (aparece distribuição livre no conteúdo). O material cobre bacteremia, interpretação microbiológica e cateteres, mas <strong>não</strong> oferece cobertura integral de precauções, ISC, PAV, ITU, acidente biológico, limpeza ambiental, IRAS no SUS, indicadores e gestão. Por isso esse benchmark é somente <strong>comparável parcial</strong>, não certifica livro-texto completo. O texto e as tabelas adiante são originais. Foi também examinada a estrutura HTML real de apostilas LURIA #279 e #280."
+        ]
+      ]
+    ],
+    [
+      "1-definicao-e-relevancia",
+      0,
+      [
+        [
+          "2",
+          "1. Definição e relevância"
+        ],
+        [
+          "p",
+          "Infecção relacionada à assistência à saúde (IRAS) é infecção adquirida no contexto do cuidado, independentemente de ocorrer em hospital, ambulatório, unidade de diálise, instituições de longa permanência ou assistência domiciliar. Nem toda infecção diagnosticada durante internação foi causada pelo hospital; cronologia, local de aquisição, presença na admissão, incubação, critérios padronizados e dispositivos precisam ser avaliados. O limite de “48 horas após internação” é pista operacional em algumas situações, <strong>não definição universal para todas as IRAS</strong> e não substitui vigilância técnica."
+        ],
+        [
+          "p",
+          "A prevenção de IRAS combina componentes <strong>individuais</strong> (higiene das mãos, prática asséptica, vacinação, uso de equipamentos de proteção), <strong>assistenciais</strong> (indicação e remoção precoce de dispositivos, prevenção de broncoaspiração, antibioticoprofilaxia adequada) e <strong>organizacionais</strong> (serviço de controle de infecção, auditoria, monitoramento de indicadores, segurança de suprimentos, limpeza, educação e gestão de surtos). O erro estrutural é reduzir prevenção a “usar luvas”."
+        ],
+        [
+          "p",
+          "O <strong>Programa Nacional de Prevenção e Controle de Infecções Relacionadas à Assistência à Saúde — PNPCIRAS 2026–2030</strong>, aprovado pela ANVISA em 2026, inclui prevenção e controle de IRAS, surtos e resistência antimicrobiana, com indicadores e planos operacionais. A capacidade do estudante de usar indicadores deve vir junto ao reconhecimento de riscos no leito."
+        ]
+      ]
+    ],
+    [
+      "2-cadeia-de-infeccao-e-hierarquia-de-controle",
+      0,
+      [
+        [
+          "2",
+          "2. Cadeia de infecção e hierarquia de controle"
+        ],
+        [
+          "p",
+          "A transmissão exige interação entre reservatório, patógeno, porta de saída, meio, porta de entrada e pessoa suscetível. Intervir em vários elos é mais robusto que uma medida isolada. Reservatórios incluem microbiota do próprio paciente (origem endógena), profissionais, mãos, superfícies, equipamentos e produtos contaminados. O mesmo achado bacteriano pode representar <strong>colonização</strong>, <strong>contaminação da amostra</strong> ou <strong>infecção invasiva</strong>, decisões com consequências distintas."
+        ],
+        [
+          "p",
+          "<strong>Exemplo mecanístico:</strong> o cateter central rompe a barreira cutânea, permite migração de microrganismos e formação de biofilme; quanto maior a manipulação e o tempo de exposição, maior a oportunidade de infecção. Prevenção inclui evitar o dispositivo sem indicação, escolher sítio e técnica, barreira estéril, antissepsia, higienização de conexões e reavaliação diária de necessidade."
+        ],
+        [
+          "p",
+          "<strong>Outro exemplo:</strong> a sonda vesical cria via de ascensão microbiana e prejudica mecanismos naturais de defesa. Adotar técnica asséptica de inserção, manter sistema fechado, fluxo livre e retirar o quanto antes altera risco. Não faz sentido prescrever antibiótico de rotina para “esterilizar urina de sonda” em paciente assintomático."
+        ]
+      ]
+    ],
+    [
+      "3-precaucoes-padrao-para-todos-os-pacientes",
+      0,
+      [
+        [
+          "2",
+          "3. Precauções padrão: para todos os pacientes"
+        ],
+        [
+          "p",
+          "Precauções padrão aplicam-se <strong>independentemente de diagnóstico conhecido</strong> e baseiam-se no potencial de exposição a sangue, secreções, mucosas e pele não íntegra. Incluem higiene das mãos, seleção de luvas/máscara/avental/proteção ocular pelo procedimento, segurança de injeções e perfurocortantes, higiene respiratória, processamento de materiais e limpeza ambiental."
+        ],
+        [
+          "p",
+          "A escolha de EPI exige <strong>avaliação de risco por tarefa</strong>, não uma receita igual para tudo. Para punção com risco de respingos, além de luvas pode ser necessária proteção facial; para contato com pele íntegra e sem fluidos, luva nem sempre é indicada. O uso de luvas <strong>não substitui</strong> higiene das mãos antes/depois; luvas podem carregar microrganismos e causar contaminação cruzada durante trocas de tarefas."
+        ],
+        [
+          "3",
+          "Higiene das mãos"
+        ],
+        [
+          "p",
+          "O conceito prático da OMS inclui cinco momentos: antes de tocar o paciente; antes de procedimento limpo/asséptico; após risco de exposição a fluidos; após tocar o paciente; após tocar superfícies do entorno. A fricção alcoólica é efetiva para diversas situações com mãos não visivelmente sujas; água e sabão são necessários quando há sujidade visível e importantes quando esporos, como C. difficile, podem estar nas mãos, seguindo protocolo institucional. Unhas artificiais e adornos representam risco adicional nas áreas de alto risco; seguir política local. A execução correta, cobrindo toda a superfície da mão, importa mais que “molhar com álcool”."
+        ],
+        [
+          "3",
+          "Segurança do uso de material perfurocortante"
+        ],
+        [
+          "p",
+          "Nunca reencapar agulha manualmente como rotina; descartar imediatamente em coletor rígido no ponto de uso, sem ultrapassar linha de enchimento. Não manipular recipientes cheios ou improvisados. Prevenção inclui dispositivos de segurança e organização de fluxo de trabalho — acidente não é apenas “falha pessoal”. Higiene respiratória, injeção segura (agulhas e seringas de uso único) e esterilização correta dos instrumentos fazem parte do mesmo sistema."
+        ]
+      ]
+    ],
+    [
+      "4-precaucoes-baseadas-na-transmissao",
+      0,
+      [
+        [
+          "2",
+          "4. Precauções baseadas na transmissão"
+        ],
+        [
+          "p",
+          "Quando o agente provável ou confirmado requer controle adicional, adicionar medidas específicas às precauções padrão."
+        ],
+        [
+          "t",
+          [
+            "Tipo",
+            "Via predominante e exemplos",
+            "Medidas principais"
+          ],
+          [
+            [
+              "<strong>Contato</strong>",
+              "Superfícies/mãos/contato com material infectante; C. difficile e alguns microrganismos multirresistentes conforme política",
+              "Acomodação apropriada, avental e luvas, higiene e limpeza ambiental reforçadas"
+            ],
+            [
+              "<strong>Gotículas</strong>",
+              "Partículas respiratórias de maior alcance limitado; síndromes selecionadas como coqueluche e algumas infecções respiratórias",
+              "Máscara apropriada ao atendimento, etiqueta respiratória, controle de fonte, acomodação"
+            ],
+            [
+              "<strong>Aerossóis / via aérea</strong>",
+              "Partículas que permanecem em suspensão; tuberculose pulmonar bacilífera, sarampo e varicela em situações relevantes",
+              "Respirador com vedação/teste de ajuste, acomodação com controle de ar/pressão negativa quando indicada, transporte minimizado"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Doença, procedimento e diretrizes locais podem indicar <strong>combinação de medidas</strong>, especialmente em patógenos respiratórios emergentes. Não tratar “gotículas” e “aerossóis” como categorias fixas apenas pelo tamanho imaginado: a exposição a procedimentos geradores de aerossóis, transmissão comunitária e disponibilidade de ambiente técnico mudam conduta."
+        ],
+        [
+          "p",
+          "<strong>Ordem clínica:</strong> reconhecer precocemente → aplicar precaução e proteção apropriadas → testar/tratar em paralelo → reavaliar critério de suspensão. Não esperar cultura em síndrome de alto risco transmissível."
+        ]
+      ]
+    ],
+    [
+      "5-infeccao-primaria-de-corrente-sanguinea-associada-a-cateter-ipcs-clabsi",
+      0,
+      [
+        [
+          "2",
+          "5. Infecção primária de corrente sanguínea associada a cateter (IPCS/CLABSI)"
+        ],
+        [
+          "3",
+          "Mecanismos"
+        ],
+        [
+          "p",
+          "A pele é uma via frequente de acesso do patógeno pela face externa do cateter. A inoculação pela conexão, migração por biofilme e infusão contaminada também ocorrem. Biofilme protege agentes da resposta imune e modifica a probabilidade de erradicação apenas com fármaco."
+        ],
+        [
+          "p",
+          "<strong>IPCSL associada a cateter</strong> é uma classificação de vigilância, com critérios epidemiológicos de tempo de dispositivo e ausência de foco alternativo; não é necessariamente idêntica ao diagnóstico clínico de infecção comprovadamente originada do cateter. A classificação formal requer <strong>Nota Técnica 03/2026 ANVISA</strong> e critérios institucionais atuais. O clínico não deve reduzir qualquer febre em portador de acesso a “infecção do cateter” sem procurar pneumonia, urinária, abdominal, endocardite, farmacológica e causas não infecciosas."
+        ],
+        [
+          "3",
+          "Inserção: bundle racional"
+        ],
+        [
+          "p",
+          "<li>Revisar indicação, escolher dispositivo de menor invasividade que atenda à necessidade, evitar punções e trocas desnecessárias.</li>\r<li>Higienização das mãos e técnica asséptica; para <strong>CVC/PICC</strong>, aplicar barreiras máximas (gorro, máscara, capote e luvas estéreis, campo estéril amplo).</li>\r<li>Antissepsia cutânea com formulação apropriada (frequentemente clorexidina alcoólica, quando segura para idade/área) e esperar secagem.</li>\r<li>Avaliar sítio quanto a risco infeccioso <strong>e</strong> mecânico (por exemplo, subclávia não é automaticamente melhor em DRC avançada por risco de estenose venosa relevante).</li>\r<li>Não puncionar rotineiramente cateter sem finalidade clínica e não trocá-lo por calendário se não há indicação.</li>"
+        ],
+        [
+          "3",
+          "Manutenção"
+        ],
+        [
+          "p",
+          "Antes de manipular conexão/hub, higienizar mãos e desinfetar adequadamente o dispositivo, respeitando tempo de fricção/contato recomendado para produto; manter curativos íntegros e documentação de data/condição; inspecionar sítio, perfusão e sinais de extravasamento; revisar diariamente se o cateter ainda é necessário. A <strong>retirada precoce quando desnecessário</strong> é uma das intervenções mais poderosas."
+        ],
+        [
+          "3",
+          "Suspeita de bacteremia relacionada ao cateter"
+        ],
+        [
+          "p",
+          "Febre, calafrios durante infusão, hipotensão, disfunção orgânica ou cultura positiva em pessoa com acesso merecem avaliação de infecção sistêmica e foco. No paciente estável, colher hemoculturas periféricas e, quando clinicamente apropriado, do cateter antes de antimicrobianos. Diferença de tempo de positividade, crescimento quantitativo e culturas de ponta têm <strong>critérios técnicos</strong>, não substituíveis pelo raciocínio “um positivo = cateter infectado”. Em sepse, <strong>não atrasar tratamento</strong> para completar investigação. Não cultivar ponta de cateter sem motivo clínico e não tratar toda cultura positiva de pele como bacteremia."
+        ],
+        [
+          "p",
+          "<strong>Controle de foco:</strong> remoção pode ser necessária em instabilidade, infecção de túnel/bolsa, fungemia, bacteremia persistente e patógenos de difícil erradicação; a possibilidade de preservar cateter de longa permanência é decisão individual de infectologia, considerando tipo de agente, acesso vascular disponível e estabilidade. Não escrever “retirar todo cateter curto sempre” sem contextualizar etiologia e risco de acesso. Terapia antimicrobiana é dirigida por gravidade, local, culturas e antibiograma; esquemas genéricos não substituem o protocolo de sepse."
+        ]
+      ]
+    ],
+    [
+      "6-infeccao-urinaria-associada-ao-cateter-vesical-itu-cvd",
+      0,
+      [
+        [
+          "2",
+          "6. Infecção urinária associada ao cateter vesical (ITU-CVD)"
+        ],
+        [
+          "p",
+          "A prevenção começa <strong>antes</strong> da inserção: a sonda realmente é necessária? Indicações legítimas incluem certas retenções urinárias, mensuração rigorosa de diurese em pacientes críticos selecionados, perioperatório definido e feridas graves com necessidade pontual. Incontinência sem outras razões não é indicação rotineira. Considerar alternativas adequadas, como coleta intermitente ou sistemas externos em perfis selecionados."
+        ],
+        [
+          "p",
+          "Na inserção, utilizar técnica asséptica e sistema de drenagem fechado, fixação para reduzir tração, bolsa abaixo do nível da bexiga e fora do chão, sem dobras, mantendo fluxo contínuo. Manter acesso de coleta apropriado, reduzir desconexões, e documentar diariamente indicação de permanência. <strong>A forma mais eficaz de reduzir risco é evitar e reduzir tempo de uso do dispositivo</strong>."
+        ],
+        [
+          "p",
+          "Diferenciar <strong>bacteriúria assintomática</strong> (colonização comum em dispositivos prolongados) de ITU com sintomas e sinais clínicos pertinentes. Odor, urina turva, leucocitúria isolada ou cultura positiva sem quadro clínico <strong>não</strong> autorizam antibiótico automaticamente; há exceções clínicas específicas, como gestação e determinados procedimentos urológicos com trauma mucoso, que requerem protocolos próprios. Em pacientes críticos, excluir outras causas de febre."
+        ],
+        [
+          "p",
+          "Um programa de redução de sonda pode usar alertas no prontuário, revisão diária multiprofissional e protocolos de retirada por enfermagem autorizados, além de auditoria de adesão e taxa de ITU por cateter-dia."
+        ]
+      ]
+    ],
+    [
+      "7-pneumonia-associada-a-ventilacao-mecanica-pav-e-pneumonia-hospitalar",
+      0,
+      [
+        [
+          "2",
+          "7. Pneumonia associada à ventilação mecânica (PAV) e pneumonia hospitalar"
+        ],
+        [
+          "p",
+          "A intubação compromete barreiras protetoras, altera depuração mucociliar, permite microaspiração em torno do cuff e favorece colonização do circuito superior. Sedação excessiva, imobilidade, posição inadequada e maior duração de VM elevam risco. Os patógenos variam por hospital, UTI, duração de exposição e resistência local: uma lista fixa de antibióticos sem antibiograma institucional é perigosa."
+        ],
+        [
+          "3",
+          "Estratégias de prevenção"
+        ],
+        [
+          "p",
+          "<li>Avaliar diariamente prontidão para despertar/redução de sedação e liberação da ventilação, quando seguro e protocolizado.</li>\r<li>Favorecer mobilização precoce e prevenção de delirium, conforme gravidade e recursos.</li>\r<li>Manter cabeceira elevada em ângulo apropriado quando não contraindicado.</li>\r<li>Realizar cuidados bucais protocolizados; <strong>não presumir que clorexidina oral seja indicada rotineiramente para todos</strong> sem indicação atual, pois evidência e riscos dependem do cenário.</li>\r<li>Manusear circuitos e aspiração com técnica adequada, evitando trocas arbitrárias sem necessidade, contaminação ou desconexões repetidas.</li>\r<li>Identificar e tratar prontamente aspiração e instabilidade; não usar antibiótico preventivo em toda pessoa intubada.</li>"
+        ],
+        [
+          "p",
+          "Quando surge febre, secreção purulenta, infiltrado novo e deterioração oxigenatória, construir diagnóstico diferencial: PAV, edema pulmonar, atelectasia, embolia, síndrome inflamatória e outros focos. Coletar amostras respiratórias quando indicado antes de antimicrobiano, <strong>sem retardar</strong> terapia de sepse. Revisar e descalonar tratamento conforme culturas, evolução e risco local."
+        ]
+      ]
+    ],
+    [
+      "8-infeccao-do-sitio-cirurgico-isc",
+      0,
+      [
+        [
+          "2",
+          "8. Infecção do sítio cirúrgico (ISC)"
+        ],
+        [
+          "p",
+          "A ISC pode envolver plano superficial, incisão profunda ou órgão/espaço operado; critérios dependem do procedimento, janela temporal e vigilância. Fatores incluem duração e complexidade, contaminação da ferida, normotermia e glicemia perioperatórias, técnica e condições clínicas. Incisão eritematosa no primeiro dia não é automaticamente ISC: reconhecer processo inflamatório esperado, hematoma, reação a fios, dermatite e infecção verdadeira."
+        ],
+        [
+          "p",
+          "A prevenção abrange três fases:\r<br>1. <strong>Pré-operatório:</strong> identificar infecções ativas, otimizar condições clínicas quando possível, higiene, evitar remoção rotineira de pelos (usar aparador quando estritamente necessário), prescrever antibioticoprofilaxia somente quando indicada, fármaco e tempo antes da incisão de acordo com tipo de cirurgia.\r<br>2. <strong>Intraoperatório:</strong> preparo adequado de pele e mãos, técnica estéril, normotermia, controle glicêmico sem hipoglicemia, oxigenação e perfusão; redosagem do antibiótico profilático quando duração/perda sanguínea exigirem por protocolo.\r<br>3. <strong>Pós-operatório:</strong> curativo apropriado, manejo de drenos, reconhecimento precoce de sinais de infecção, comunicação com paciente e vigilância pós-alta."
+        ],
+        [
+          "p",
+          "<strong>Antibioticoprofilaxia não equivale ao tratamento de ISC</strong>, nem se prolonga automaticamente por haver dreno. O tratamento da ISC instalada pode exigir abrir/drenar foco, cultura, remoção de tecido desvitalizado e antimicrobiano <strong>conforme profundidade/sinais sistêmicos</strong>; prescrição isolada sem controle de foco frequentemente falha. Os detalhes cirúrgicos pertencem também à apostila de complicações pós-operatórias #177, com remissão sem duplicação."
+        ]
+      ]
+    ],
+    [
+      "9-resistencia-antimicrobiana-e-stewardship",
+      0,
+      [
+        [
+          "2",
+          "9. Resistência antimicrobiana e stewardship"
+        ],
+        [
+          "p",
+          "Resistência microbiana não resulta apenas de um indivíduo “tomar antibiótico demais”; há seleção em escala populacional e transmissão cruzada. A resposta combina vigilância, precauções, saneamento, diagnóstico, imunização e <strong>gestão criteriosa de antimicrobianos</strong> (stewardship). Estratégias incluem identificar síndrome antes de prescrever, obter culturas se indicadas, considerar microbiologia local, individualizar espectro, dose e duração, revisar antibiótico em 48–72 h, reduzir/descalonar quando dados permitem e registrar data de suspensão."
+        ],
+        [
+          "p",
+          "Antibiograma institucional descreve susceptibilidade de isolados amostrados, não “sensibilidade de toda a população”; interpretar quantidade de culturas, duplicatas, local e vieses. Prescrever carbapenêmico universalmente para qualquer febre hospitalar amplia pressão seletiva e risco de novas IRAS. De igual modo, deixar pessoa em choque séptico sem cobertura adequada à espera de cultura é falha grave: stewardship exige <strong>acertar cedo e reavaliar</strong>, não simplesmente reduzir antibiótico a qualquer custo."
+        ]
+      ]
+    ],
+    [
+      "10-limpeza-desinfeccao-esterilizacao-e-classificacao-de-materiais",
+      0,
+      [
+        [
+          "2",
+          "10. Limpeza, desinfecção, esterilização e classificação de materiais"
+        ],
+        [
+          "p",
+          "<strong>Limpeza</strong> remove matéria orgânica e sujidade e antecede outras etapas; <strong>desinfecção</strong> reduz ou elimina grupos de microrganismos, variando conforme nível e produto; <strong>esterilização</strong> visa eliminar todas as formas de vida microbiana viáveis sob parâmetros validados. Agentes esporulados exigem tratamento ambiental apropriado — desinfetante de baixa atividade esporicida é insuficiente mesmo quando cheira “forte”."
+        ],
+        [
+          "p",
+          "A classificação de Spaulding orienta processamento:\r<li><strong>Crítico:</strong> instrumento penetra tecido estéril/sistema vascular → esterilizar, respeitando compatibilidade.</li>\r<li><strong>Semicrítico:</strong> contato com mucosa/pele não íntegra → desinfecção de alto nível ou esterilização quando aplicável.</li>\r<li><strong>Não crítico:</strong> contato com pele íntegra → limpeza e desinfecção de nível pertinente.</li>"
+        ],
+        [
+          "p",
+          "O serviço de processamento deve seguir normas sanitárias, validação de ciclos, rastreabilidade e controle de qualidade. O médico não precisa operar autoclave, mas deve reconhecer que reutilização indevida de dispositivo “descartável” ou mau reprocessamento pode desencadear surtos graves."
+        ]
+      ]
+    ],
+    [
+      "11-acidente-com-material-biologico-conduta-imediata",
+      0,
+      [
+        [
+          "2",
+          "11. Acidente com material biológico: conduta imediata"
+        ],
+        [
+          "p",
+          "<strong>Primeira decisão:</strong> interromper procedimento em segurança, realizar cuidado local adequado (lavagem com água e sabão em lesão de pele; irrigação abundante com água/soro se mucosa atingida), <strong>não</strong> espremer ferida nem aplicar produtos cáusticos ou abrasivos. Notificar imediatamente o fluxo ocupacional e avaliar tipo de material, profundidade, instrumento, fonte, condição vacinal do trabalhador e necessidade de testes."
+        ],
+        [
+          "p",
+          "Há risco de HIV, hepatites B e C em exposições pertinentes. A <strong>PEP para HIV</strong> é urgência e, quando indicada por avaliação de risco, deve começar o quanto antes, dentro do limite de <strong>72 horas</strong>, mantida por <strong>28 dias</strong> conforme Ministério da Saúde; não se deve atrasar PEP para aguardar exames desnecessários. Esquema antirretroviral específico, interações, função renal e contraindicações exigem protocolo SUS vigente. Para hepatite B, a conduta depende de vacinação/anti-HBs e status da fonte, podendo incluir vacina e imunoglobulina em situações apropriadas. Para hepatite C, seguir investigação basal e seriada; não assumir existência de profilaxia antiviral pós-exposição padronizada equivalente à HIV. Formalizar acompanhamento, exames de controle, acolhimento e documentação adequada."
+        ],
+        [
+          "p",
+          "<strong>Prevenção institucional:</strong> vacinação HBV, imunidade documentada para trabalhadores expostos, treinamento, recipientes próximos, dispositivos seguros e comunicação de incidentes sem cultura punitiva."
+        ]
+      ]
+    ],
+    [
+      "12-vigilancia-epidemiologica-e-indicadores",
+      0,
+      [
+        [
+          "2",
+          "12. Vigilância epidemiológica e indicadores"
+        ],
+        [
+          "p",
+          "Prevenção não se avalia apenas por contagem bruta de infecções. Uma UTI maior, com mais pacientes-dia e mais dispositivos, terá números absolutos maiores mesmo com desempenho melhor. É preciso usar denominador de exposição e padronização clínica."
+        ],
+        [
+          "3",
+          "Densidade de incidência por dispositivo"
+        ],
+        [
+          "p",
+          "\\[\r\n\\text{DI de IPCS por 1000 cateter-dia}=\\frac{\\text{número de IPCS elegíveis}}{\\text{total de cateter central-dia}}\\times 1000\r\n\\]\r\nSe uma unidade teve 6 IPCSL elegíveis em 2.000 cateter-dia, sua DI é 3 por 1.000 cateter-dia. <strong>Não comparar</strong> com taxa por pacientes internados sem converter denominadores. Dispositivo-dia significa soma dos dias de pacientes expostos ao dispositivo no período, aplicando critério de vigilância para datas válidas."
+        ],
+        [
+          "p",
+          "Indicadores de processo: percentual de inserções com checklist completo; revisão diária de indicação de cateter; conformidade de higiene de mãos; adesão à antibioticoprofilaxia com tempo correto; avaliação de uso de sondas. Indicadores de resultado: IPCS/1.000 CVC-dia, ITU/1.000 CVD-dia, PAV/1.000 ventilador-dia, ISC por tipo de procedimento com ajuste de risco. A qualidade da coleta condiciona interpretação — redução súbita de “infecção notificada” pode sinalizar subnotificação, não melhora real."
+        ],
+        [
+          "p",
+          "A ANVISA estabelece critérios, notas técnicas e metas nacionais atualizadas para PNPCIRAS 2026–2030. O auditor deve conferir a <strong>versão 2026 dos critérios diagnósticos obrigatórios</strong>, sobretudo IPCSL, ITU-CVD, PAV e ISC, antes de usar uma taxa como dado oficial."
+        ]
+      ]
+    ],
+    [
+      "13-gestao-de-surtos-passo-a-passo",
+      0,
+      [
+        [
+          "2",
+          "13. Gestão de surtos: passo a passo"
+        ],
+        [
+          "p",
+          "Um surto é aumento acima do esperado ou ocorrência incomum de casos relacionados no tempo/lugar/pessoas, segundo definição epidemiológica. Não se exige aguardar dezenas de infecções para agir em ambiente de alto risco (neonatal/UTI). Conduta: reconhecer sinal, informar controle de infecção/vigilância, <strong>validar se casos cumprem definição</strong>, formular hipótese (produto, equipamento, manipulação, ambiente, profissional, paciente), construir linha do tempo e mapa de exposição, coletar amostras microbiológicas de modo racional, adotar medidas imediatas de contenção, revisar esterilização/água/soluções quando pertinentes, comunicar autoridades conforme norma e avaliar efeito das intervenções."
+        ],
+        [
+          "p",
+          "A busca indiscriminada de culturas ambientais sem hipótese pode gerar resultados difíceis de interpretar; amostrar de forma dirigida e garantir rastreabilidade. Cuidado com estigmatização de profissionais e pacientes: investigação busca processo causal corrigível."
+        ]
+      ]
+    ],
+    [
+      "14-diagnostico-diferencial-infeccao-inflamacao-colonizacao-e-contaminacao",
+      0,
+      [
+        [
+          "2",
+          "14. Diagnóstico diferencial: infecção, inflamação, colonização e contaminação"
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Risco de erro",
+            "Melhor conduta de raciocínio"
+          ],
+          [
+            [
+              "Sonda vesical, urocultura positiva, sem sinais infecciosos",
+              "Tratar colonização",
+              "Ver sintomas, necessidade de sonda e exceções apropriadas"
+            ],
+            [
+              "CVC com febre, sem outros sinais",
+              "Atribuir foco ao dispositivo",
+              "Hemoculturas adequadas, examinar outros focos, estabilidade"
+            ],
+            [
+              "Incisão eritematosa, sem secreção, pós-operatório recente",
+              "Confundir inflamação com ISC",
+              "Avaliar progressão, dor, calor, secreção, febre e profundidade"
+            ],
+            [
+              "Tubo endotraqueal com cultura positiva, sem quadro de pneumonia",
+              "Tratar colonização do tubo",
+              "Avaliar imagem, oxigenação, sinais clínicos e qualidade de amostra"
+            ],
+            [
+              "PCR elevada após grande cirurgia, sem instabilidade",
+              "Diagnosticar infecção por marcador isolado",
+              "Interpretar temporalidade e sinais de foco"
+            ],
+            [
+              "Duas hemoculturas com mesmo patógeno invasivo",
+              "Minimizar bacteremia como contaminação",
+              "Considerar relevância microbiológica e origem, agir cedo"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "15-fluxogramas-de-conduta",
+      0,
+      [
+        [
+          "2",
+          "15. Fluxogramas de conduta"
+        ],
+        [
+          "3",
+          "Fluxo A — impedir IRAS por dispositivo"
+        ],
+        [
+          "p",
+          "1. A indicação é indispensável? Se não, não inserir.  \r\n2. Qual dispositivo de menor risco atende a finalidade?  \r\n3. Preparação, mãos, EPI, técnica asséptica e antissepsia corretos.  \r\n4. Registrar profissional, data, sítio e checklist; padronizar curativo/manutenção.  \r\n5. A cada turno/dia: verificar sistema fechado, integridade, conexão e necessidade.  \r\n6. Suspeita de infecção: avaliar sepse, coletar exames adequados, considerar retirada/controle de foco sem esperar deterioração.  \r\n7. Retirar assim que desnecessário e registrar evento/indicador."
+        ],
+        [
+          "3",
+          "Fluxo B — decisão sobre isolamento"
+        ],
+        [
+          "p",
+          "1. Sintomas, exames e epidemiologia sugerem agente transmissível?  \r\n2. Precauções padrão em <strong>todos</strong>, sempre.  \r\n3. Acrescentar precauções de contato/gotículas/aerossóis de acordo com transmissão suspeita, sem esperar confirmação em alta probabilidade.  \r\n4. Disponibilizar EPI, orientar equipe e paciente, ambiente e transporte.  \r\n5. Rever isolamento conforme diagnóstico, eficácia de medidas, tempo de transmissão e protocolo.  \r\n6. Manter registro, treinamento e auditoria de adesão, não apenas cartaz na porta."
+        ],
+        [
+          "3",
+          "Fluxo C — profissional com perfurocortante"
+        ],
+        [
+          "p",
+          "1. Cuidado local seguro → notificação imediata.  \r\n2. Classificar exposição e fonte; avaliar HBV/HCV/HIV e vacinação.  \r\n3. Se risco de HIV e elegível, <strong>PEP urgente dentro de 72 h</strong>, 28 dias.  \r\n4. Decidir profilaxia HBV segundo status imune; investigação HCV/seguimento.  \r\n5. Registrar, acolher, reavaliar exames e corrigir fator de risco ocupacional."
+        ]
+      ]
+    ],
+    [
+      "15a-da-evidencia-a-beira-leito-desenho-do-programa-de-prevencao",
+      0,
+      [
+        [
+          "2",
+          "15A. Da evidência à beira-leito: desenho do programa de prevenção"
+        ],
+        [
+          "3",
+          "Prevenção não é um cartaz: estrutura, processo, desfecho e realimentação"
+        ],
+        [
+          "p",
+          "O programa de prevenção de IRAS precisa tornar as práticas seguras <strong>executáveis</strong> no local de trabalho. Uma recomendação como “higienizar as mãos antes de manipular o cateter” só funciona quando há preparação alcoólica acessível, treinamento de toda a equipe, previsibilidade de suprimentos, gestão das interrupções durante o procedimento, observação de desempenho e devolutiva tempestiva. Sem essas condições, atribuir a infecção exclusivamente à distração de um trabalhador é uma leitura incompleta do risco."
+        ],
+        [
+          "p",
+          "Na abordagem de <strong>Donabedian</strong>, estrutura inclui a disponibilidade de pias, dispensadores, luvas adequadas, material estéril e equipes com capacitação; processo inclui o que foi realmente feito em cada oportunidade assistencial; desfecho inclui as IRAS, eventos adversos e danos relacionados. Os três níveis se complementam. É possível haver material estéril disponível e baixa adesão à técnica de inserção; também é possível melhorar muito a adesão em uma semana sem perceber imediatamente queda das infecções, pois os eventos são relativamente raros e os indicadores precisam de tempo e denominadores suficientes."
+        ],
+        [
+          "p",
+          "Um ciclo prático de melhoria pode seguir: <strong>diagnóstico local → definição de oportunidade → intervenção simples e mensurável → auditoria → devolutiva não punitiva → reavaliação</strong>. A equipe escolhe um problema factível, como curativos de CVC que perdem integridade, registra dados basais, revisa suprimentos e técnica, testa uma solução e monitora se a mudança sustentou resultado. A liderança deve dar segurança para comunicar quase-erros; ocultar eventos para “melhorar o número” destrói a vigilância."
+        ],
+        [
+          "p",
+          "<strong>Exemplo de projeto local:</strong> uma UTI percebe cinco IPCSL elegíveis no trimestre e muitos curativos úmidos. Em vez de instituir vancomicina profilática indiscriminadamente, verifica a definição de caso, o número de CVC-dia, a taxa de utilização de CVC, a adesão à antissepsia do hub, o estado dos curativos e a indicação diária de cada cateter. Se o principal desvio for manutenção, a intervenção deve mirar troca apropriada de curativos, integridade das conexões, qualificação de observação e retirada oportuna, com reavaliação semanal dos processos."
+        ],
+        [
+          "3",
+          "Cinco momentos de higiene das mãos na sequência real do atendimento"
+        ],
+        [
+          "p",
+          "Os <strong>cinco momentos</strong>, adotados pela OMS e difundidos pela Anvisa, são oportunidades clínicas, não apenas cinco etapas decoradas de uma lista: (1) antes de tocar o paciente; (2) antes de procedimento limpo ou asséptico; (3) após risco de exposição a fluidos corporais; (4) após tocar o paciente; (5) após tocar superfícies próximas ao paciente. O objetivo do primeiro e do segundo é sobretudo impedir que os microrganismos cheguem ao paciente; o terceiro, o quarto e o quinto também protegem profissional, outros pacientes e ambiente."
+        ],
+        [
+          "p",
+          "Considere o médico que entra em um quarto, afere o pulso, prepara e manipula o conector de um CVC e depois digita no computador compartilhado. A transição <strong>do pulso para o hub</strong> cria uma nova oportunidade de higiene das mãos <em>antes do procedimento asséptico</em>, mesmo que o médico “já tenha higienizado ao entrar”. Após retirar luvas e terminar a manipulação, deve higienizar novamente antes de tocar superfícies compartilhadas. O uso de luvas não elimina oportunidades. Se houver sujidade visível ou necessidade de remoção mecânica — especialmente em contextos de microrganismos esporulados — considerar água e sabonete conforme protocolo, porque a preparação alcoólica não tem atividade equivalente contra esporos. Não transformar essa distinção em proibição geral do álcool nas demais situações: adesão consistente a uma técnica indicada importa mais que regras de conveniência."
+        ],
+        [
+          "p",
+          "Na auditoria, o denominador é o <strong>número de oportunidades observadas</strong> e o numerador é o número de oportunidades efetivamente atendidas segundo a definição institucional. Se em 120 oportunidades observadas houve 90 higienizações corretas, adesão observada = 90/120 = <strong>75%</strong>. Isso não significa que “75% dos profissionais são seguros”, pois um mesmo profissional pode gerar inúmeras oportunidades, o observador pode modificar o comportamento e os turnos selecionados podem não representar a unidade. Registrar método, setores, turnos e limitações é tão relevante quanto apresentar a porcentagem."
+        ],
+        [
+          "3",
+          "Escolha de precauções: raciocínio por transmissão e procedimento"
+        ],
+        [
+          "p",
+          "A escolha do equipamento depende de duas perguntas diferentes: <strong>qual é o mecanismo provável de transmissão do agente?</strong> e <strong>qual exposição ocorrerá durante esta tarefa?</strong> As precauções padrão são universais; as adicionais dependem de síndrome/agente e do protocolo local. Uma criança com tosse paroxística e suspeita de coqueluche exige avaliação imediata de precauções para gotículas enquanto a investigação prossegue; um paciente com suspeita de tuberculose pulmonar transmissível requer medidas para aerossóis, com proteção respiratória apropriada. A proteção contra respingos no rosto pode ser necessária em ambos conforme a tarefa, independentemente da categoria de isolamento."
+        ],
+        [
+          "p",
+          "O erro de prova mais frequente é substituir <strong>risco de transmissão</strong> por “resultado da cultura”. Não se precisa aguardar resultado de laboratório para aplicar precaução quando a síndrome e a epidemiologia já justificam proteção. Da mesma forma, identificar bactéria multirresistente não permite, isoladamente, concluir que todo contato respiratório demanda N95: definir se são necessárias precauções adicionais de contato e outras medidas pelo sítio de colonização/infecção, agente, transmissibilidade e orientação vigente da CCIH."
+        ],
+        [
+          "p",
+          "No transporte intra-hospitalar, avaliar necessidade real, avisar o setor receptor, orientar higiene de mãos e medidas de barreira apropriadas, cobrir secreções/lesões quando indicado, providenciar equipamentos limpos e higienizar superfícies tocadas. Colocar máscaras indiscriminadamente em pacientes sem considerar tolerância, contraindicações e mecanismo não é substituto de organização segura."
+        ]
+      ]
+    ],
+    [
+      "15b-bacteremia-e-cateter-separar-vigilancia-diagnostico-clinico-e-controle-do-foco",
+      0,
+      [
+        [
+          "2",
+          "15B. Bacteremia e cateter: separar vigilância, diagnóstico clínico e controle do foco"
+        ],
+        [
+          "3",
+          "Três perguntas que não devem ser confundidas"
+        ],
+        [
+          "p",
+          "<strong>Primeira — o paciente tem infecção de corrente sanguínea?</strong> Hemoculturas devem ser interpretadas pela identidade do microrganismo, quantos conjuntos cresceram, tempo de coleta, manifestações, antibióticos prévios e presença de dispositivo/protese. Uma hemocultura com <em>Staphylococcus aureus</em> em contexto clínico compatível tem relevância que difere de um estafilococo coagulase-negativo isolado em apenas uma coleta; este último pode ser contaminante, mas também causa infecção verdadeira em cateteres e próteses. O padrão microbiológico e clínico é indispensável."
+        ],
+        [
+          "p",
+          "<strong>Segunda — a infecção está relacionada ao cateter?</strong> O diagnóstico clínico de infecção de corrente sanguínea relacionada ao cateter (frequentemente referida na literatura como <em>CRBSI</em>) depende de evidências microbiológicas e avaliação dos outros focos, inclusive conjuntos de hemoculturas obtidos por via periférica e pelo dispositivo conforme situação. O crescimento mais precoce no sangue do cateter, comparado ao periférico, pode contribuir para atribuição causal quando a coleta e o método são adequados; não deve ser tratado como regra infalível. Uma cultura de ponta positiva, isoladamente, indica colonização do cateter e <strong>não prova bacteremia</strong>."
+        ],
+        [
+          "p",
+          "<strong>Terceira — o episódio preenche definição de IPCSL associada a CVC para vigilância?</strong> Essa definição usa critérios operacionais padronizados da Anvisa, com regras de janela, dispositivo e exclusões, e não se confunde com diagnóstico clínico de CRBSI. Um paciente pode ter bacteremia necessitando investigação e tratamento mesmo que o evento não entre no numerador de uma taxa institucional particular. O inverso também exige atenção: um indicador de vigilância tem finalidade comparativa e não é justificativa para postergar a avaliação à beira-leito."
+        ],
+        [
+          "p",
+          "<strong>Exemplo comentado:</strong> paciente dialítico com cateter de longa permanência apresenta febre e hipotensão. Coletam-se, quando viável sem atrasar antibiótico, amostras adequadas segundo o acesso e a orientação da equipe; iniciam-se medidas de sepse e avaliam-se outros focos. A decisão de retirar, trocar ou tentar salvamento do cateter depende de estabilidade, agente, infecção de túnel, persistência das culturas e viabilidade de acesso. Frases como “todo cateter de curta permanência deve ser retirado sempre” ou “cultura positiva do cateter obriga antibiótico, mesmo sem bacteremia” não são algoritmos clínicos válidos em todos os casos. A suspeita de infecção comprovada em acesso temporário e a possibilidade de controle do foco, contudo, frequentemente pesam a favor de remoção."
+        ],
+        [
+          "3",
+          "Risco anatômico e escolha do sítio vascular"
+        ],
+        [
+          "p",
+          "Na prevenção de infecção, o sítio de inserção não é escolhido por uma hierarquia universal isolada. A veia subclávia pode apresentar vantagem relativa de risco infeccioso em certas condições de CVC não tunelizado de adultos, mas sua punção traz riscos mecânicos e de estenose venosa; em pacientes com doença renal avançada e provável necessidade de acesso para hemodiálise, preservar o patrimônio vascular é prioridade. O sítio femoral pode ter limitações infecciosas, trombóticas e de manutenção dependendo da população, mas o risco de cada contexto deve ser ponderado com ultrassonografia, urgência, anatomia, experiência e contraindicações."
+        ],
+        [
+          "p",
+          "A intervenção correta é escolher <strong>o acesso e o local com melhor balanço benefício-risco</strong>, colocar o cateter com técnica asséptica, manter a via desinfectada antes de cada manipulação e retirar quando não houver indicação. Se a equipe só consegue reduzir risco do procedimento central trocando todos os cateteres periodicamente, provavelmente está focando a medida errada: trocas programadas sem indicação não devem substituir prevenção de inserção/manutenção."
+        ],
+        [
+          "3",
+          "Como interpretar microrganismo, gravidade e falha terapêutica"
+        ],
+        [
+          "p",
+          "Se o paciente com CVC tem instabilidade e hemoculturas positivas, diferenciar necessidade de <strong>terapia antimicrobiana imediata</strong> da necessidade de <strong>controle do foco</strong>. Atrasar antibiótico em choque é perigoso; por outro lado, seguir por dias ampliando espectro sem discutir retirada de dispositivo infectado é uma causa comum de persistência de bacteremia. Fatores que tornam o salvamento menos atraente incluem infecção de túnel/bolsa, tromboflebite séptica, endocardite, instabilidade grave, bacteremia/fungemia persistente ou determinados patógenos, sobretudo <em>S. aureus</em>, <em>Pseudomonas</em> e <em>Candida</em>. A duração e a escolha do tratamento dependem de agente, complicação, controle do foco e eventual endocardite/metástases; não presumir que “duas semanas” sirvam para toda bacteremia."
+        ],
+        [
+          "p",
+          "Em pacientes com <em>Candida</em> na corrente sanguínea, a decisão sobre avaliação oftalmológica pode variar conforme contexto e diretrizes/especialidade, especialmente se há sintomas visuais ou incapacidade de relatá-los. Não apresentar exame de fundo de olho universal como regra invariável sem indicar protocolo adotado. A suspeita de endoftalmite modifica estratégia terapêutica, pois há diferenças de penetração intraocular entre antifúngicos. Esta nuance é particularmente importante ao comparar materiais didáticos antigos com referências contemporâneas."
+        ]
+      ]
+    ],
+    [
+      "15c-setores-especiais-reduzir-dano-sem-aplicar-mecanicamente-um-bundle-unico",
+      0,
+      [
+        [
+          "2",
+          "15C. Setores especiais: reduzir dano sem aplicar mecanicamente um bundle único"
+        ],
+        [
+          "3",
+          "Hemodiálise e cateteres de longa permanência"
+        ],
+        [
+          "p",
+          "O paciente em hemodiálise acumula fatores de risco: exposição frequente a procedimentos vasculares, comorbidades, dependência de acesso e possibilidade de colonização de circuitos e conectores. A prevenção inclui técnica asséptica de conexão/desconexão, higienização adequada de mãos, avaliação do local de saída, processos reprodutíveis de desinfecção dos conectores e treinamento repetido da equipe e do paciente. Em suspeita de bacteremia, a limitação de obtenção de acesso periférico deve ser ponderada pela nefrologia, sem sacrificar investigação ou tratamento oportuno."
+        ],
+        [
+          "p",
+          "Sempre que possível e indicado, o planejamento longitudinal de fístula arteriovenosa e preservação de veias reduz exposição a cateteres. Isso não significa que fístula esteja indicada para todos, nem que o acesso cirúrgico esteja livre de complicações. Uma recomendação útil na apostila deve conectar o <strong>objetivo de reduzir dias de cateter</strong> à possibilidade real do paciente, ao calendário de diálise e ao risco de complicações vasculares."
+        ],
+        [
+          "3",
+          "Neonatologia e pediatria"
+        ],
+        [
+          "p",
+          "Recém-nascidos prematuros têm barreiras cutâneas imaturas, imunidade em desenvolvimento, maior exposição a cateteres e necessidade de manipulação frequente. O cuidado deve buscar equilíbrio entre acesso imprescindível para tratamento/nutrição e danos por procedimentos repetidos, com técnica adequada à faixa etária e revisão diária de indicação. Concentrações de antissépticos, dispositivos e curativos não devem ser transplantados automaticamente dos protocolos de adultos para neonatos; seguir padronização específica por idade, peso, integridade cutânea e risco de absorção/lesão."
+        ],
+        [
+          "p",
+          "Febre ou instabilidade em recém-nascido com cateter não prova que o dispositivo é o foco. A investigação de sepse neonatal inclui avaliação clínica e microbiológica conforme protocolos pediátricos, sem depender apenas de secreção no óstio. Em crianças maiores, também é preciso distinguir febre viral coincidente de bacteremia verdadeira, mantendo baixo limiar de reavaliação quando há dispositivos, imunossupressão ou deterioração."
+        ],
+        [
+          "3",
+          "Atenção obstétrica, parto e puerpério"
+        ],
+        [
+          "p",
+          "A assistência obstétrica combina internações curtas, procedimentos invasivos, cesariana, parto vaginal, exposição a antibióticos, cateter urinário e contato com recém-nascidos. O raciocínio deve separar a prevenção de <strong>infecção puerperal, ISC pós-cesariana, infecção urinária associada a dispositivos e infecção neonatal</strong>. Medidas como antibioticoprofilaxia cirúrgica no momento apropriado, higiene e técnica asséptica, retirada oportuna de sonda, limpeza de superfícies e reconhecimento da febre puerperal não são substituíveis umas pelas outras."
+        ],
+        [
+          "p",
+          "O <strong>Caderno 8 de 2026 da Anvisa</strong> trata especificamente de prevenção de IRAS na atenção obstétrica, incluindo cuidado pré-parto, parto, pós-parto e recém-nascido. O material local deve ser atualizado segundo o caderno e os protocolos da maternidade; não usar o resumo institucional da publicação como fonte de doses ou janelas operatórias específicas. A apostila de biossegurança explica a lógica transversal; as decisões obstétricas detalhadas devem ser conferidas nas apostilas de infecção puerperal e assistência ao parto, mantendo consistência em vez de duplicar capítulos."
+        ],
+        [
+          "3",
+          "Atenção Primária, ambulatório e cuidado domiciliar"
+        ],
+        [
+          "p",
+          "Fora do hospital, o problema raramente recebe o nome de “infecção hospitalar”, mas continua sendo infecção relacionada à assistência. Punção, curativo de ferida, vacina, inserção/manutenção de dispositivo, pequenos procedimentos e atendimento odontológico requerem higiene das mãos, insumos seguros, técnica limpa/asséptica adequada, processamento de materiais conforme classificação e descarte correto de perfurocortantes. A menor complexidade aparente do cenário não autoriza reutilizar instrumento sem validação."
+        ],
+        [
+          "p",
+          "No cuidado domiciliar, explicar ao cuidador <strong>o que monitorar</strong> pode prevenir atraso diagnóstico: alteração local progressiva, febre, secreção purulenta, perda de integridade de curativo, sintomas sistêmicos e sinais de gravidade. Também é importante evitar condutas danosas, como manipular cateter sem treinamento ou utilizar antibiótico que sobrou de outra prescrição. O plano precisa definir qual equipe contatar, como obter material e quando ir à urgência; somente falar “observar” sem mecanismo de retorno não constitui seguimento."
+        ]
+      ]
+    ],
+    [
+      "15d-indicadores-que-explicam-o-desempenho-e-nao-apenas-decoram-uma-prova",
+      0,
+      [
+        [
+          "2",
+          "15D. Indicadores que explicam o desempenho, e não apenas decoram uma prova"
+        ],
+        [
+          "3",
+          "Denominadores: paciente-dia, dispositivo-dia e procedimentos"
+        ],
+        [
+          "p",
+          "<strong>Paciente-dia</strong> expressa a soma dos dias de internação dos pacientes sob vigilância em determinado intervalo. <strong>CVC-dia</strong> expressa a soma dos dias em que pacientes sob o critério de vigilância apresentaram CVC. Um indivíduo com um ou mais CVCs no mesmo dia não pode automaticamente gerar tantos “pacientes com CVC-dia” quantos cateteres tiver: usar a regra específica do sistema de vigilância, que deve ser descrita antes de comparar unidades."
+        ],
+        [
+          "p",
+          "A <strong>taxa de utilização de CVC</strong> costuma comparar CVC-dia com pacientes-dia da unidade e informa intensidade de exposição ao dispositivo. Por exemplo, com 1.500 CVC-dia e 2.500 pacientes-dia, a razão de utilização = <strong>0,60</strong>. Duas UTIs podem ter a mesma densidade de IPCS por 1.000 CVC-dia mas proporções diferentes de utilização; reduzir inserções desnecessárias pode baixar o risco absoluto para pacientes sem alterar instantaneamente a taxa condicionada aos dias de dispositivo."
+        ],
+        [
+          "p",
+          "Para <strong>infecção de sítio cirúrgico</strong>, a referência não é necessariamente CVC-dia. É preciso identificar o procedimento, período de vigilância e denominador compatível, considerar vigilância pós-alta e perfil de risco. Comparar ISC de uma unidade de alta complexidade com outra de casos eletivos simples sem ajustes é interpretar volume como qualidade."
+        ],
+        [
+          "3",
+          "Investigar melhora real versus artefato de registro"
+        ],
+        [
+          "p",
+          "Uma unidade registra IPCS de 6 para 1 por mil CVC-dia entre dois meses. Três explicações distintas merecem avaliação: (a) intervenção preventiva eficaz; (b) variação aleatória por poucos eventos; (c) mudança de coleta ou classificação, inclusive subnotificação. O revisor deve verificar critérios diagnósticos e numeradores, conferir CVC-dia, disponibilidade de culturas, critérios de notificação e estabilidade do perfil de pacientes antes de atribuir causalidade. Uma auditoria que usa apenas taxa final pode recompensar quem investiga menos."
+        ],
+        [
+          "p",
+          "Suponha três indicadores simultâneos:"
+        ],
+        [
+          "t",
+          [
+            "Indicador",
+            "Situação inicial",
+            "Após intervenção",
+            "O que permite concluir"
+          ],
+          [
+            [
+              "Oportunidades de higiene cumpridas",
+              "60/100",
+              "93/110",
+              "Melhorou a adesão observada, sujeita a viés do observador"
+            ],
+            [
+              "CVC-dia por paciente-dia",
+              "900/1500",
+              "620/1500",
+              "Houve menor exposição a CVC, a confirmar com complexidade dos casos"
+            ],
+            [
+              "IPCSL/1.000 CVC-dia",
+              "4/900 × 1.000 = 4,44",
+              "2/620 × 1.000 = 3,23",
+              "Diferença numericamente favorável, mas poucos eventos e sem certeza de efeito causal"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Interpretação:</strong> o conjunto de sinais de processo e exposição sustenta plausibilidade de melhora; a taxa de infecção por si só não permite atribuição definitiva. Indicadores devem subsidiar revisão clínica, não ranking punitivo. Para metas institucionais, a versão de <strong>critérios nacionais de vigilância</strong> precisa ser a mesma nos períodos comparados."
+        ],
+        [
+          "3",
+          "Resistência antimicrobiana: antibiograma agregado e decisão individual"
+        ],
+        [
+          "p",
+          "Um antibiograma de UTI é resumo de amostras colhidas, não prova de prevalência em todos os internados. Quando são cultivados principalmente pacientes graves e já expostos a antibióticos, há viés de seleção. Repetidas culturas do mesmo paciente podem inflar resistência se não houver deduplicação. Por isso o laudo do indivíduo, a origem de infecção e os dados de unidade cumprem funções diferentes: <strong>terapia empírica inicial</strong> orientada pela síndrome/gravidade e epidemiologia local; <strong>tratamento dirigido</strong> após identificação de patógeno, perfil de sensibilidade e resposta clínica."
+        ],
+        [
+          "p",
+          "O programa de <em>stewardship</em> deve registrar indicação e síndrome antes da primeira dose, reavaliar necessidade após exames e cultura, respeitar controle de foco, documentar duração prevista e evitar tanto cobertura excessiva quanto espectro insuficiente em choque. Não confundir descalonamento com suspender antibiótico independentemente de evidências: descalonar é revisar uma decisão à luz dos dados coletados, podendo reduzir, manter, trocar ou interromper tratamento quando adequado."
+        ]
+      ]
+    ],
+    [
+      "15e-investigacao-de-surtos-com-exemplo-de-raciocinio-epidemiologico",
+      0,
+      [
+        [
+          "2",
+          "15E. Investigação de surtos com exemplo de raciocínio epidemiológico"
+        ],
+        [
+          "3",
+          "Caso-síntese — infecções após procedimentos em uma mesma sala"
+        ],
+        [
+          "p",
+          "Em 12 dias, três pacientes submetidos a procedimento invasivo na mesma sala apresentam infecção pelo mesmo microrganismo incomum. A observação gera um <strong>sinal</strong> de possível surto, não prova imediatamente fonte comum. Primeiro confirmar se cada caso cumpre definição e coletar datas de procedimento, início de sintomas, agentes e métodos microbiológicos. Depois construir uma lista de casos (<em>line list</em>) com exposição a equipes, produtos, lotes de material, procedimentos e equipamentos. A hipótese inicial deve perguntar <strong>o que os casos compartilharam e o que não compartilharam</strong>, incluindo pacientes expostos que não adoeceram."
+        ],
+        [
+          "p",
+          "A contenção não deve aguardar resultado de toda investigação quando há risco em curso. É possível restringir temporariamente equipamento ou insumo suspeito, auditar reprocessamento, reforçar precauções e comunicar setores e vigilância pertinentes em paralelo à coleta de evidências. Investigações ambientais não dirigidas geram falsos caminhos: a seleção de swabs, amostras de água ou produtos deve partir de hipótese plausível, documentando quem colheu, quando e em quais condições."
+        ],
+        [
+          "p",
+          "Uma <strong>curva epidêmica</strong> organiza casos por data de início e ajuda a diferenciar exposição pontual de transmissão continuada. O aumento temporal pode também refletir intensificação de busca ativa. A equipe precisa examinar se houve mudança no método laboratorial, início de novo procedimento, troca de insumo, alteração de fluxo ou profissional comum — sem transformar coincidência em culpa individual."
+        ],
+        [
+          "p",
+          "Depois de intervenções, medir recorrência de casos com um denominador apropriado de procedimentos ou pessoas expostas. Mesmo com ausência de novos casos, registrar medidas permanentes de prevenção, compartilhar lições e monitorar recidiva. O relatório final deve discriminar <strong>achados confirmados, hipóteses prováveis e causas não demonstradas</strong>, evitando atribuir causalidade apenas porque uma intervenção coincidiu com o fim dos casos."
+        ],
+        [
+          "3",
+          "Questões de integração para verificar autossuficiência"
+        ],
+        [
+          "p",
+          "<strong>Situação A:</strong> paciente em isolamento por gotículas precisa de punção venosa com possibilidade de respingos. A máscara cirúrgica indicada pela transmissão <strong>não elimina</strong> a necessidade de proteção ocular quando há risco de fluidos, assim como luvas não dispensam higiene das mãos. A escolha completa do EPI deriva da combinação entre precauções adicionais e risco do procedimento."
+        ],
+        [
+          "p",
+          "<strong>Situação B:</strong> ao avaliar febre com CVC, duas amostras revelam microrganismo comensal de pele em uma só delas, sem piora clínica. A decisão não se resume a “cateter infectado”: reavaliar coleta, sinais, outros focos e necessidade do dispositivo, com repetição dirigida quando cabível. Se o paciente evolui com choque, a prioridade muda para resposta imediata a sepse, culturas sem atraso indevido e controle do foco."
+        ],
+        [
+          "p",
+          "<strong>Situação C:</strong> após uma ação educativa, a taxa de IPCS “zerou”, mas ninguém registrou dias de CVC no mês. <strong>Não é possível calcular densidade de incidência válida.</strong> A ausência de numerador registrado sem vigilância confiável não comprova ausência de eventos, e um denominador omitido impede comparações."
+        ],
+        [
+          "3",
+          "Referências verificadas para o complemento (consulta em 15/10/2026)"
+        ],
+        [
+          "p",
+          "<li>ANVISA. <em>Programa Nacional de Prevenção e Controle de Infecções Relacionadas à Assistência à Saúde (PNPCIRAS 2026–2030)</em>, aprovado pela Portaria nº 79/2026: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/pnpciras-e-pan-servicos-de-saude</li>\r<li>ANVISA. <em>Infecção primária de corrente sanguínea</em>: protocolos e cartazes de prevenção, página atualizada em janeiro de 2026: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-primaria-de-corrente-sanguinea</li>\r<li>ANVISA. <em>Higiene das mãos</em>: manual técnico e estratégia multimodal: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/higienizacao-das-maos-1/copy_of_higienizacao-das-maos</li>\r<li>ANVISA. <em>Série Segurança do Paciente e Qualidade em Serviços de Saúde, cadernos 2025/2026</em> (inclui caderno 8, prevenção de IRAS na atenção obstétrica): https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/manuais/serie-seguranca-do-paciente-e-qualidade-em-servicos-de-saude-2013-2025-6</li>\r<li>Ministério da Saúde. <em>PCDT para Profilaxia Pós-Exposição a HIV, IST e Hepatites Virais</em>, anexo atualizado em março de 2025: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-pos-exposicao-de-risco-pep-a-infeccao-pelo-hiv/view</li>"
+        ],
+        [
+          "p",
+          "<strong>Nota de transparência:</strong> o complemento emprega informações clínicas de fontes oficiais e raciocínios originais. O material do Google Drive foi utilizado apenas como comparação didática parcial; nenhuma imagem ou tabela alheia foi reproduzida. Este texto NÃO supre a necessidade de conferir os critérios operacionais íntegros de vigilância da Anvisa, de validar o manuscrito com revisor técnico e de concluir a auditoria do mínimo de 60 mil caracteres didáticos úteis."
+        ]
+      ]
+    ],
+    [
+      "candida-auris-e-fungos-multirresistentes-alerta-sanitario-e-manejo",
+      0,
+      [
+        [
+          "2",
+          "15F. Emergência de Candida auris e Fungos Multirresistentes: Alerta Epidemiológico da ANVISA, Mecanismos de Resistência e Rigor de Contenção"
+        ],
+        [
+          "3",
+          "Importância Epidemiológica e Alerta Nacional da ANVISA"
+        ],
+        [
+          "p",
+          "A emergência de <em>Candida auris</em> como patógeno nosocomial de alta virulência e perfil de multirresistência constitui uma das ameaças biológicas mais graves enfrentadas pelas Comissões de Controle de Infecção Hospitalar (CCIH) no cenário contemporâneo. Identificada pela primeira vez em 2009 no conduto auditivo de uma paciente japonesa, a espécie rapidamente disseminou-se em escala global, deflagrando surtos em unidades de terapia intensiva (UTIs) em todos os continentes. No Brasil, os primeiros surtos foram notificados a partir de 2020 e confirmados pela ANVISA e pelos Laboratórios Centrais de Saúde Pública (LACENs), demandando a publicação de Notas Técnicas específicas (como a Nota Técnica GVIMS/GGTES/ANVISA nº 11/2020 e revisões posteriores)."
+        ],
+        [
+          "p",
+          "Diferentemente das espécies usuais do gênero <em>Candida</em> (como <em>C. albicans</em>, que coloniza primariamente as mucosas do trato gastrointestinal e geniturinário), <em>Candida auris</em> exibe um tropismo cutâneo exuberante, colonizando avidamente a pele humana (especialmente axilas, virilhas, fossas nasais e períneo) e exibindo alta capacidade de persistência no ambiente inanimado por semanas a meses. Ela adere a colchões, grades de leito, monitores multiparamétricos, bombas de infusão e termômetros, resistindo a desinfetantes hospitalares à base de amônio quaternário rotineiramente empregados."
+        ],
+        [
+          "3",
+          "Mecanismos Moleculares de Resistência Antifúngica"
+        ],
+        [
+          "p",
+          "O perfil de sensibilidade de <em>C. auris</em> representa um desafio terapêutico sem precedentes na micologia médica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Resistência Intrínseca e Adquirida aos Azólicos (Fluconazol):</strong> Mais de 90% dos isolados mundiais apresentam concentração inibitória mínima (CIM) extremamente elevada ao fluconazol, mediada por mutações de ponto no gene <em>ERG11</em> (que codifica a enzima lanosterol 14-alfa-desmetilase) e superexpressão de bombas de efluxo das famílias ABC (<em>CDR1</em>) e MFS;",
+            "<strong>Resistência à Anfotericina B:</strong> Aproximadamente 30% dos isolados apresentam sensibilidade reduzida ou resistência franca aos polienos, decorrente de alterações conformacionais na estrutura do ergosterol de membrana plasmática;",
+            "<strong>Resistência às Equinocandinas:</strong> Embora as equinocandinas (anidulafungina, caspofungina e micafungina) permaneçam como o tratamento de primeira linha preconizado pela ANVISA e CDC, cepas portadoras de mutações no gene <em>FKS1</em> (que sintetiza a 1,3-beta-D-glucana sintetase) já emergiram em surtos nosocomiais, conferindo resistência pan-antifúngica;",
+            "<strong>Desafio Diagnóstico Laboratorial:</strong> Métodos automatizados convencionais de espectrofotometria ou sistemas fenotípicos manuais costumam identificar <em>C. auris</em> erroneamente como <em>Candida haemulonii</em>, <em>Candida famata</em> ou <em>Rhodotorula glutinis</em>. A identificação fidedigna exige <strong>espectrometria de massas MALDI-TOF (Matrix-Assisted Laser Desorption/Ionization Time-of-Flight)</strong> com banco de dados atualizado ou sequenciamento genético da região ITS/LSU do rDNA."
+          ]
+        ],
+        [
+          "3",
+          "Diretrizes Operacionais de Contenção e Biossegurança Hospitalar"
+        ],
+        [
+          "p",
+          "A confirmação ou suspeita clínica de <em>C. auris</em> exige a implementação imediata de medidas agressivas de biossegurança coordenadas pela CCIH:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Isolamento de Contato Estrito:</strong> Quarto privativo imediato para o paciente colonizado ou infectado. Quando não houver leitos individuais suficientes, a <strong>coorte de pacientes</strong> (agrupamento espacial de pacientes comprovadamente positivos) é mandatória, com equipe de enfermagem e fisioterapia dedicada exclusivamente ao setor;",
+            "<strong>Paramentação Obrigatória:</strong> Uso de avental impermeável de mangas longas e luvas descartáveis para qualquer contato com o paciente ou com o ambiente perileito, colocado na antessala ou imediatamente antes da entrada e descartado antes de sair do quarto, seguido de imediata higienização das mãos com água e sabão ou fricção alcoólica a 70%;",
+            "<strong>Desinfecção de Superfícies com Agentes Esporicidas:</strong> Amônios quaternários comuns são <strong>ineficazes</strong> contra biofilmes de <em>C. auris</em>. A ANVISA recomenda exclusivamente saneantes de alto nível devidamente validados, com destaque para <strong>hipoclorito de sódio na concentração de 1.000 ppm a 5.000 ppm (0,1% a 0,5% de cloro ativo)</strong>, peróxido de hidrogênio acelerado ou compostos liberadores de oxigênio ativo, aplicados com fricção mecânica vigorosa;",
+            "<strong>Rastreamento de Contatos (Screening de Colonização):</strong> Todo paciente internado que dividiu quarto ou UTI com o caso índice deve ser submetido a swab cutâneo combinado de axila e virilha (bilaterais) em busca de colonização assintomática;",
+            "<strong>Preconização de Não Descolonização:</strong> Não se recomenda o uso de banhos universais de clorexidina como método de erradicação garantida, pois cepas de <em>C. auris</em> podem expressar genes de tolerância a antissépticos tópicos, embora o banho diário com clorexidina a 2% possa reduzir a carga bacteriana e fúngica superficial em UTIs sob vigilância estrita."
+          ]
+        ]
+      ]
+    ],
+    [
+      "bacilos-gram-negativos-carbapenemases-e-stewardship-avancado",
+      0,
+      [
+        [
+          "2",
+          "15G. Bacilos Gram-Negativos Produtores de Carbapenemases (KPC, NDM, OXA-48): Taxonomia de Resistência, Detecção Rápida e Terapia Combinada Racional"
+        ],
+        [
+          "3",
+          "Taxonomia Molecular das Carbapenemases (Classificação de Ambler)"
+        ],
+        [
+          "p",
+          "A resistência aos antibióticos carbapenêmicos (meropenem, imipenem e ertapenem) em enterobactérias (<em>Klebsiella pneumoniae</em>, <em>Enterobacter cloacae</em>, <em>Escherichia coli</em>) e bacilos não fermentadores (<em>Pseudomonas aeruginosa</em> e <em>Acinetobacter baumannii</em>) constitui a principal causa de mortalidade atribuível a IRAS em centros cirúrgicos e UTIs terciárias. O conhecimento da classificação de Ambler é indispensável tanto para a prática do infectologista e intensivista quanto para resolução de questões de alta complexidade nas provas de residência:"
+        ],
+        [
+          "t",
+          [
+            "Classe de Ambler",
+            "Mecanismo Bioquímico Central",
+            "Exemplos de Carbapenemases",
+            "Perfil Típico de Inibidores",
+            "Opções Terapêuticas Preconizadas"
+          ],
+          [
+            [
+              "<strong>Classe A (Serina-beta-lactamases)</strong>",
+              "Presença de resíduo de serina no sítio ativo; hidrolisam penicilinas, cefalosporinas, monobactâmicos e carbapenêmicos.",
+              "<em>Klebsiella pneumoniae</em> carbapenemase (<strong>KPC-2, KPC-3</strong>).",
+              "Inibidas por <strong>Avibactam</strong>, Vaborbactam e Relebactam. Não inibidas por clavulanato ou tazobactam clássico.",
+              "<strong>Ceftazidima-Avibactam (CAZ-AVI)</strong>, Meropenem-Vaborbactam, Polimixinas, Tigeciclina, Plazomicina."
+            ],
+            [
+              "<strong>Classe B (Metalo-beta-lactamases - MBL)</strong>",
+              "Dependência estrita de íons de <strong>zinco ($Zn^{2+}$)</strong> para clivagem do anel beta-lactâmico. Não hidrolisam Aztreonam.",
+              "New Delhi Metallo-beta-lactamase (<strong>NDM-1</strong>), VIM, IMP.",
+              "<strong>Resistentes ao Avibactam isolado</strong>. Inibidas in vitro por quelantes de zinco (EDTA).",
+              "<strong>Ceftazidima-Avibactam associado a Aztreonam (CAZ-AVI + ATM)</strong>, Cefiderocol, Polimixina B, Tigeciclina."
+            ],
+            [
+              "<strong>Classe D (Oxacilinases)</strong>",
+              "Serino-carbapenemases com alta capacidade de clivagem de oxacilina e carbapenêmicos; hidrólise fraca de cefalosporinas de 3ª/4ª geração.",
+              "<strong>OXA-48-like</strong> (em enterobactérias) e OXA-23/OXA-51 (em <em>A. baumannii</em>).",
+              "Geralmente fracamente inibidas por inibidores clássicos; Avibactam restaura sensibilidade em OXA-48.",
+              "Ceftazidima-Avibactam para OXA-48; para <em>A. baumannii</em> OXA-23: Ampicilina-Sulbactam em altas doses + Polimixina B."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Revolução da Detecção Fenotípica e Molecular Rápida"
+        ],
+        [
+          "p",
+          "A espera de 48 a 72 horas para a liberação do teste de sensibilidade convencional por microdiluição em caldo acarreta atraso crítico no início da terapia guiada. As diretrizes do BrCAST (Brazilian Committee on Antimicrobial Susceptibility Testing) e da ANVISA preconizam a introdução de metodologias aceleradas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Testes Imunocromatográficos Rápidos (LFIA):</strong> Permitem detectar em menos de 15 minutos, diretamente de colônias bacterianas ou do frasco de hemocultura positiva, as principais enzimas circulantes no Brasil (KPC, NDM, VIM, IMP e OXA-48);",
+            "<strong>Painéis Moleculares Multiplex (PCR em Tempo Real / Microarray):</strong> Identificam genes de resistência (como <em>bla</em><sub>KPC</sub>, <em>bla</em><sub>NDM</sub>, <em>bla</em><sub>OXA-48</sub>, <em>vanA</em>/<em>vanB</em> e <em>mecA</em>) diretamente do sangue periférico em 1 a 2 horas, permitindo o desescalonamento precoce ou o início direcionado de Ceftazidima-Avibactam;",
+            "<strong>Teste de Inativação do Carbapenêmico Modificado (mCIM) e eCIM:</strong> Permitem distinguir com acurácia fenotípica se a resistência é mediada por serino-carbapenemase ou metalo-beta-lactamase no laboratório de microbiologia local."
+          ]
+        ],
+        [
+          "3",
+          "Princípios Fundamentais do Antimicrobial Stewardship em UTIs"
+        ],
+        [
+          "p",
+          "O gerenciamento prudente de antimicrobianos (Stewardship) não visa unicamente à redução de custos hospitalares, mas à contenção da pressão seletiva, mitigação de infecções secundárias por <em>Clostridioides difficile</em> e preservação da eficácia das drogas de reserva. Os pilares consolidados englobam:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Time-Out de 48-72 Horas:</strong> Reavaliação sistemática obrigatória da prescrição após a chegada dos resultados preliminares e definitivos das culturas microbiológicas, convertendo a cobertura empírica ampliada em terapia direcionada de espectro estreito;",
+            "<strong>Dose Otimizada baseada em Farmacocinética e Farmacodinâmica (PK/PD):</strong> Uso de infusão estendida (3 a 4 horas) ou contínua para beta-lactâmicos (como meropenem e piperacilina-tazobactam) a fim de maximizar o tempo em que a concentração sérica permanece acima da CIM ($T > \text{CIM}$);",
+            "<strong>Monitorização Terapêutica de Nível Sérico (TDM):</strong> Essencial para glicopeptídeos (Vancomicina — alvo de AUC/MIC entre 400 e 600 mg·h/L para prevenir falha terapêutica e nefrotoxicidade) e aminoglicosídeos;",
+            "<strong>Encurtamento Racional da Duração do Tratamento:</strong> Pneumonia nosocomial e ITU associada a cateter respondem com igual eficácia e menor risco de seleção de resistência a esquemas curtos de 7 dias na grande maioria dos pacientes clinicamente estáveis, abandonando-se os esquemas empíricos prolongados de 14 a 21 dias do passado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "16-casos-clinicos-comentados",
+      0,
+      [
+        [
+          "2",
+          "16. Casos clínicos comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Bacteriúria em paciente sondada"
+        ],
+        [
+          "p",
+          "Mulher de 80 anos em recuperação de fratura tem sonda há sete dias; urocultura de rotina mostra crescimento bacteriano, sem febre, dor, alteração hemodinâmica ou sintomas urinários avaliáveis. <strong>Hipótese principal:</strong> bacteriúria relacionada ao dispositivo sem evidência suficiente de ITU clínica. <strong>Exames:</strong> não repetir cultura aleatória; avaliar indicação de sonda, sinais de outras fontes, contexto de exceções. <strong>Conduta:</strong> considerar retirada da sonda e evitar antimicrobiano na ausência de indicação. <strong>Por que importa:</strong> trata-se exposição a dispositivo e colonização, não “cultura positiva = infecção”."
+        ],
+        [
+          "3",
+          "Caso 2 — Febre e calafrios durante infusão por CVC"
+        ],
+        [
+          "p",
+          "Paciente em quimioterapia com CVC apresenta febre e calafrios durante infusão, está hipotensa e tem lactato elevado. <strong>Hipóteses:</strong> infecção de corrente sanguínea relacionada a cateter versus outra sepse; risco de neutropenia. <strong>Exames:</strong> hemoculturas periféricas e de cateter conforme condição e protocolo; hemograma, função orgânica, lactato e investigação de outros focos. <strong>Conduta:</strong> ressuscitação e antibioticoterapia empírica adequada ao risco/antibiograma, controle de foco, discutir retirada do cateter conforme agente, persistência e estabilidade. <strong>Por que importa:</strong> prontidão na sepse importa mais que prova microbiológica definitiva, mas não supor automaticamente fonte no CVC."
+        ],
+        [
+          "3",
+          "Caso 3 — Prevenção de ISC em cirurgia abdominal"
+        ],
+        [
+          "p",
+          "Homem de 56 anos com diabetes controlada será submetido a cirurgia eletiva com indicação de profilaxia. Questiona manter antibioticoprofilaxia por cinco dias para “garantir”. <strong>Hipótese:</strong> necessidade de prevenção perioperatória adequada, sem indicação rotineira de curso terapêutico prolongado. <strong>Conduta:</strong> antibiótico escolhido pelo procedimento e microbiota esperada, administrado no tempo pré-incisão correto; redosagem apenas se indicação, cuidado com pele, glicemia, temperatura e técnica. <strong>Por que importa:</strong> mais antibiótico não significa melhor prevenção de ISC e aumenta seleção de resistência."
+        ],
+        [
+          "3",
+          "Caso 4 — Acidente com agulha contaminada"
+        ],
+        [
+          "p",
+          "Enfermeiro sofre perfuração profunda com agulha recém-usada em paciente com status viral ainda não conhecido, há 40 minutos. <strong>Hipótese:</strong> exposição ocupacional percutânea potencialmente relevante. <strong>Conduta:</strong> lavar, não espremer nem aplicar químicos, acionar fluxo ocupacional imediatamente; avaliar fonte e risco; se elegível, iniciar PEP HIV tão logo possível, não esperando janela acabar; avaliar hepatite B e C. <strong>Por que importa:</strong> há janela de prevenção, e incidentes devem ser acolhidos e investigados sem culpa."
+        ]
+      ]
+    ],
+    [
+      "17-questoes-autorais-comentadas",
+      0,
+      [
+        [
+          "2",
+          "17. Questões autorais comentadas"
+        ],
+        [
+          "p",
+          "<strong>Q1.</strong> Sobre precauções padrão, qual alternativa é correta?  \r<br>A) Aplicar apenas em paciente com cultura positiva. B) Luvas substituem higiene das mãos. C) Aplicar a todos conforme risco de exposição. D) Máscara N95 é obrigatória em toda consulta. E) Suspender limpeza quando houver luvas.  \r<br><strong>Gabarito C.</strong> Precauções padrão são universais; A restringe indevidamente, B/E promovem contaminação, D confunde indicação por transmissão. <strong>Revisão:</strong> EPI é dependente da tarefa, e higiene de mãos permanece central."
+        ],
+        [
+          "p",
+          "<strong>Q2.</strong> Paciente com CVC desnecessário e sem sinais de infecção, melhor medida de prevenção de IPCS?  \r<br>A) Trocar todos os cateteres diariamente. B) Retirar o cateter assim que clinicamente desnecessário. C) Vancomicina profilática. D) Cultivar ponta semanalmente. E) Cobrir hub sem higiene de mãos.  \r<br><strong>Gabarito B.</strong> Reduzir tempo de dispositivo diminui exposição; A/C/D não são prevenção rotineira; E viola técnica. <strong>Revisão:</strong> necessidade deve ser reavaliada todos os dias."
+        ],
+        [
+          "p",
+          "<strong>Q3.</strong> Em paciente estável sondado com urocultura positiva e sem sinais de infecção, qual conduta é mais apropriada em regra?  \r<br>A) Meropenem. B) Urocultura diária. C) Presumir bacteriúria assintomática e avaliar retirada de sonda. D) Metronidazol IV. E) Esquecer risco do dispositivo.  \r<br><strong>Gabarito C.</strong> Cultura positiva não define ITU; A/D causam dano potencial, B promove exames desnecessários, E ignora intervenção causal. <strong>Revisão:</strong> tratar somente em indicações clínicas/exceções apropriadas."
+        ],
+        [
+          "p",
+          "<strong>Q4.</strong> Indicador de uma UTI: 4 IPCSL elegíveis e 2.000 cateter central-dia. Qual DI?  \r<br>A) 0,2/100. B) 2/1.000 cateter-dia. C) 20/1.000 pacientes-dia. D) 200 por 100 internações. E) Não é possível calcular.  \r<br><strong>Gabarito B.</strong> 4 ÷ 2000 × 1000 = 2. A muda denominador; C/D introduzem denominadores ausentes; E ignora dados suficientes. <strong>Revisão:</strong> nunca comparar denominadores incompatíveis."
+        ],
+        [
+          "p",
+          "<strong>Q5.</strong> Profissional sofre perfuração por agulha potencialmente contaminada, há 2 horas. Se PEP HIV for indicada, qual janela de início?  \r<br>A) Apenas após 30 dias. B) Depois que a sorologia repetir três vezes. C) Em até 72 h, preferencialmente imediatamente. D) Até seis meses. E) Não existe PEP ocupacional.  \r<br><strong>Gabarito C.</strong> A PEP tem janela máxima de 72 horas e dura 28 dias. A/B/D atrasam, E desconhece prevenção disponível. <strong>Revisão:</strong> avaliar HBV e HCV no mesmo atendimento."
+        ],
+        [
+          "p",
+          "<strong>Q6.</strong> Candidato cirúrgico receberá antibiótico profilático corretamente antes de incisão. Em regra, qual orientação adicional é apropriada?  \r<br>A) Manter antimicrobiano até remover todo dreno. B) Redosar conforme duração/perda sanguínea e protocolo; não prolongar automaticamente por dreno. C) Fazer tricotomia com lâmina em todos. D) Dispensar antissepsia de pele. E) Ignorar glicemia/temperatura.  \r<br><strong>Gabarito B.</strong> A e C aumentam risco sem benefício necessário; D/E comprometem bundle preventivo. <strong>Revisão:</strong> ISC tem prevenção em múltiplos pontos; profilaxia deve ser racional."
+        ]
+      ]
+    ],
+    [
+      "18-perolas-de-prova-e-pratica",
+      0,
+      [
+        [
+          "2",
+          "18. Pérolas de prova e prática"
+        ],
+        [
+          "p",
+          "1. IRAS pode ocorrer fora de hospital e manifestar-se depois da alta; cronologia isolada não basta.\r<br>2. Colonização não é automaticamente infecção — especialmente urina sondada e dispositivos respiratórios.\r<br>3. Higiene das mãos e indicação diária de dispositivos têm grande impacto preventivo.\r<br>4. Precauções padrão aplicam-se a todos, precauções adicionais dependem da transmissão.\r<br>5. Uso de luvas sem higienizar mãos aumenta falsa sensação de segurança.\r<br>6. CVC é simultaneamente oportunidade de terapia e risco infeccioso; remover quando possível.\r<br>7. Cateter vesical mantém risco contínuo — evitar inserção desnecessária.\r<br>8. Prevenir PAV significa especialmente evitar tempo de VM desnecessário e microaspiração, com bundle adequado.\r<br>9. Antibiótico profilático não trata ISC instalada nem precisa prolongamento arbitrário.\r<br>10. Medir por dispositivo-dia e acompanhar processo + desfecho; “zero casos” sem vigilância não comprova segurança.\r<br>11. PEP HIV após acidente é urgência de 72 h e requer 28 dias quando indicada.\r<br>12. Em 2026, a referência brasileira de indicadores é PNPCIRAS 2026–2030 e notas técnicas vigentes da ANVISA."
+        ]
+      ]
+    ],
+    [
+      "19-banco-inicial-de-figuras-educativas-nenhuma-imagem-aprovada",
+      0,
+      [
+        [
+          "2",
+          "19. Banco inicial de figuras educativas (nenhuma imagem aprovada)"
+        ],
+        [
+          "p",
+          "1. Ilustração <strong>original</strong> da cadeia epidemiológica da infecção.\r<br>2. Diagrama autoral de precauções padrão versus contato/gotículas/aerossóis.\r<br>3. Mapa visual dos cinco momentos de higiene das mãos.\r<br>4. Infográfico autoral de CVC: inserção, hub, manutenção e retirada.\r<br>5. Diagrama de ITU associada a sonda: sistema fechado e pontos de quebra.\r<br>6. Diagrama próprio de PAV por microaspiração e intervenções de prevenção.\r<br>7. Fluxo autoral de ISC pré/intra/pós-operatória.\r<br>8. Mapa de fluxo seguro no centro de materiais e classificação de Spaulding.\r<br>9. Árvore de decisão de acidente com material biológico e PEP.\r<br>10. Gráfico original por 1.000 dispositivos-dia, explicando numerador/denominador.\r<br><strong>Não</strong> reproduzir PDFs/figuras externas sem licença e aprovação Admin. Os esquemas autorais devem integrar as respectivas seções quando forem gerados e revisados."
+        ]
+      ]
+    ],
+    [
+      "20-referencias-institucionais",
+      0,
+      [
+        [
+          "2",
+          "20. Referências institucionais"
+        ],
+        [
+          "p",
+          "1. ANVISA. Programa Nacional de Prevenção e Controle de Infecções Relacionadas à Assistência à Saúde, 2026–2030. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/pnpciras-e-pan-servicos-de-saude\r<br>2. ANVISA. Notas Técnicas, especialmente vigilância/critério de IRAS 2026 e Nota 11/2025. https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/notas-tecnicas/notas-tecnicas\r<br>3. CDC. Core Infection Prevention and Control Practices for Safe Healthcare Delivery. https://www.cdc.gov/infection-control/hcp/core-practices/index.html\r<br>4. CDC. Transmission-Based Precautions. https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html\r<br>5. CDC. Guidelines for prevention of catheter-related infections. https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infection/prevention-strategies.html\r<br>6. CDC. Prevention of catheter-associated UTI. https://www.cdc.gov/infection-control/hcp/cauti/index.html\r<br>7. WHO. Guidelines for prevention of bloodstream infections associated with intravascular catheters, 2024. https://www.who.int/southeastasia/publications/i/item/9789240093829\r<br>8. Ministério da Saúde. PEP HIV. https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada/pep-profilaxia-pos-exposicao-ao-hiv"
+        ],
+        [
+          "3",
+          "Auditoria preliminar — NÃO CONCLUÍDA"
+        ],
+        [
+          "p",
+          "<strong>Produzido:</strong> corpo original explicativo com 19 capítulos, quadros, 3 fluxogramas, 4 casos, 6 questões e roteiro de 10 figuras. <strong>Benchmark:</strong> documento de bacteremia do Drive lido, mas é apenas parcial e não há comparativo equivalente integral; etapa zero de toda a apostila ainda não homologada. <strong>Faltam:</strong> 60 mil caracteres úteis, aprofundamento com critérios ANVISA 2026 reproduzidos corretamente após inspeção completa, indicativos de resistência por contexto, detalhamento da prevenção em diálise/neo/APS, auditoria científica e de dose, imagens licenciadas, inspeção PWA e teste de autossuficiência com justificativas ancoradas. <strong>Status:</strong> `RASCUNHO_PARCIAL_NAO_PUBLICAR`."
+        ]
+      ]
+    ]
+  ]
+}
