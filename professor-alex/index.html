@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.12-no-legacy-dashboard">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
-<script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+<script defer src="/assets/js/luria-brand-v5.js?v=13-review-fixes"></script>
   <link rel="canonical" href="/professor-alex/">
   <style>
     .alex-page{display:grid;gap:18px;padding-bottom:36px}
@@ -90,18 +90,21 @@
               </div>
             </div>
 
-            <!-- Card Explicativo: Modo Estourado -->
+            <!-- Controles compactos de resposta, acima do card do Alex. -->
             <div class="alex-mode-card" id="alex-mode-card">
               <div class="alex-mode-info">
                 <div class="alex-mode-title-row">
-                  <span class="alex-mode-badge">💥 Modo Estourado</span>
-                  <span class="alex-mode-tag" id="alex-mode-tag">Desativado</span>
+                  <span class="alex-mode-badge">Modo Normal</span>
+                  <span class="alex-mode-tag" id="alex-mode-tag">Normal</span>
                 </div>
-                <p><strong>Aprofundamento Máximo & Fisiopatologia Minuciosa:</strong> Quando ativado, o Professor Alex detalha o mecanismo fisiopatológico completo, diagnósticos diferenciais complexos, armadilhas frequentes de bancas e correlações clínicas avançadas. Deixe desativado para respostas diretas, concisas e focadas no essencial.</p>
               </div>
               <button type="button" class="alex-mode-switch" id="alex-mode-toggle" role="switch" aria-checked="false" aria-label="Ativar ou desativar Modo Estourado">
                 <span class="switch-handle"></span>
               </button>
+              <div class="alex-depth-toggle" role="group" aria-label="Formato da resposta">
+                <button type="button" class="is-active" data-alex-depth="rapida" aria-pressed="true">Dúvida rápida</button>
+                <button type="button" data-alex-depth="aula" aria-pressed="false">Aula completa</button>
+              </div>
             </div>
 
             <!-- Chat Conversacional Unificado (Sem matérias nem selects rígidos) -->
@@ -202,7 +205,7 @@
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script>
     (() => {
-      const state = { mode: "normal", file: null };
+      const state = { mode: "normal", depth: "rapida", file: null };
       const mascot = document.getElementById("alex-mascot");
       const modeToggle = document.getElementById("alex-mode-toggle");
       const modeTag = document.getElementById("alex-mode-tag");
@@ -229,7 +232,8 @@
         const nextState = !isEstourado;
         modeToggle.setAttribute("aria-checked", String(nextState));
         state.mode = nextState ? "estourado" : "normal";
-        modeTag.textContent = nextState ? "Ativado (Fisiopatologia Máxima)" : "Desativado";
+        modeTag.textContent = nextState ? "Estourado" : "Normal";
+        document.querySelector(".alex-mode-badge").textContent = nextState ? "Modo Estourado" : "Modo Normal";
         modeTag.classList.toggle("active", nextState);
         document.getElementById("alex-mode-card").classList.toggle("estourado-active", nextState);
         document.getElementById("alex-response-mode-pill").textContent = nextState ? "💥 Modo Estourado" : "Modo Normal";
@@ -245,6 +249,18 @@
             statusText.textContent = "Modo Normal ativado: Respostas diretas e didáticas.";
           }
         }
+      });
+
+      document.querySelectorAll("[data-alex-depth]").forEach(button => {
+        button.addEventListener("click", () => {
+          state.depth = button.dataset.alexDepth || "rapida";
+          document.querySelectorAll("[data-alex-depth]").forEach(option => {
+            const selected = option === button;
+            option.classList.toggle("is-active", selected);
+            option.setAttribute("aria-pressed", String(selected));
+          });
+          statusText.textContent = state.depth === "aula" ? "Aula completa selecionada." : "Dúvida rápida selecionada.";
+        });
       });
 
       // Anexar material com ícone de clipe

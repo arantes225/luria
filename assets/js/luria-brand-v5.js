@@ -2,6 +2,20 @@
 (() => {
   "use strict";
 
+  // Load review corrections after each page's local CSS, so page-level legacy
+  // rules cannot reintroduce the documented spacing and contrast regressions.
+  const reviewPages = new Set([
+    "dashboard", "cronograma", "professor_alex", "aprender", "plantao",
+    "questoes", "flashcards", "erros", "jogos", "study-rats", "aplicar"
+  ]);
+  if (reviewPages.has(document.body?.dataset.page) && !document.getElementById("luria-review-fixes")) {
+    const reviewCss = document.createElement("link");
+    reviewCss.id = "luria-review-fixes";
+    reviewCss.rel = "stylesheet";
+    reviewCss.href = "/assets/css/review-fixes-20261020.css?v=1";
+    document.head.appendChild(reviewCss);
+  }
+
   const LOGOS = {
     light: "assets/img/logos/logo-icone-original.png?v=luria9",
     dark: "assets/img/logos/logo-icone-azul-claro.png?v=luria9",

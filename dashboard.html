@@ -24,7 +24,7 @@
   <link id="luria-global-master-css" rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/dashboard-layouts.css?v=20261020-card-grid-all">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261018-dashboard1">
-<script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+<script defer src="/assets/js/luria-brand-v5.js?v=13-review-fixes"></script>
   <link rel="canonical" href="/dashboard/">
 <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
 <script src="/assets/js/medical-icons.js?v=2.0"></script>
@@ -83,7 +83,7 @@ body[data-page="dashboard"] .ui-page-header{
           </div>
         </header>
 
-        <section id="ui-review-summary" class="ui-review-summary" aria-label="Indicadores rápidos"><p id="ui-review-copy" class="ui-visually-hidden" role="status">Aguardando os dados das suas revisões.</p><a class="ui-quick-metric" href="/flashcards/"><span>Flashcards pendentes</span><strong id="ui-review-flashcards">—</strong><small>Revisar flashcards <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/cronograma/"><span>Aulas de hoje concluídas</span><strong id="ui-review-lessons">—</strong><small>Ver cronograma <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/caderno-erros/"><span>Erros ativos</span><strong id="ui-review-errors">—</strong><small>Abrir caderno <span aria-hidden="true">↗</span></small></a></section>
+        <section id="ui-review-summary" class="ui-review-summary" aria-label="Indicadores rápidos"><p id="ui-review-copy" class="ui-visually-hidden" role="status">Aguardando os dados das suas revisões.</p><span id="ui-review-lessons" class="ui-visually-hidden" aria-hidden="true">—</span><a class="ui-quick-metric" href="/flashcards/"><span>Flashcards pendentes</span><strong id="ui-review-flashcards">—</strong><small>Revisar flashcards <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/flashcards/"><span>Taxa de retenção</span><strong id="metric-retention">—</strong><small id="metric-retention-helper">Suas revisões <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/caderno-erros/"><span>Erros ativos</span><strong id="ui-review-errors">—</strong><small>Abrir caderno <span aria-hidden="true">↗</span></small></a></section>
         <div id="dashboard-fallback-shell" hidden><p class="ui-feedback" data-state="warning" role="status">O Dashboard está demorando para carregar. Se a espera continuar, <a href="/dashboard/">tente novamente</a>.</p></div>
       </div>
     </main>

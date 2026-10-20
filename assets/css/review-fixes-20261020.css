@@ -1,0 +1,128 @@
+/* Targeted UI corrections from the product review. Kept page-scoped to avoid
+   changing the shared shell or its authenticated data contracts. */
+
+/* Dashboard */
+body[data-page="dashboard"] .dl-agenda-study-pair { align-items: stretch !important; }
+body[data-page="dashboard"] .dl-agenda-study-pair > .dl-card { height: 100% !important; }
+body[data-page="dashboard"] .dl-layout-1 .dl-cat { grid-column: 1 / -1 !important; grid-row: 1 !important; }
+body[data-page="dashboard"] .dl-layout-1 .dl-agenda-study-pair { grid-column: 1 / 2 !important; grid-row: 2 !important; }
+body[data-page="dashboard"] .dl-layout-1 .dl-side { grid-column: 2 / 3 !important; grid-row: 2 !important; }
+@media (max-width: 700px) {
+  body[data-page="dashboard"] .dl-layout-1 .dl-cat,
+  body[data-page="dashboard"] .dl-layout-1 .dl-agenda-study-pair,
+  body[data-page="dashboard"] .dl-layout-1 .dl-side { grid-column: 1 !important; grid-row: auto !important; }
+}
+
+/* Cronograma: controls share one compact, predictable rhythm. */
+body[data-page="cronograma"] .schedule-top-spotlight,
+body[data-page="cronograma"] .schedule-summary > article:first-child { display: none !important; }
+body[data-page="cronograma"] :is(.planner-view-toggle,.agenda-insight-tabs,.agenda-activity-view-switch,.agenda-reorganize-switch) {
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(0,1fr) !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+  padding: 3px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 11px !important;
+  background: var(--surface-2) !important;
+  width: 100% !important;
+}
+body[data-page="cronograma"] :is(.planner-view-toggle,.agenda-insight-tabs,.agenda-activity-view-switch,.agenda-reorganize-switch) > button {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 34px !important;
+  padding: 7px 10px !important;
+  border-radius: 8px !important;
+  line-height: 1.15 !important;
+  white-space: normal !important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch > button { min-height: 64px !important; }
+body[data-page="cronograma"] .agenda-bottom-grid { width: 100% !important; max-width: none !important; grid-template-columns: minmax(0,1fr) !important; }
+body[data-page="cronograma"] .agenda-bottom-grid > .agenda-today-card { width: 100% !important; min-height: 0 !important; }
+body[data-page="cronograma"] .reference-new-activity { align-self: center !important; min-height: 40px !important; white-space: nowrap !important; }
+
+/* Alex: small controls instead of a second explanatory card. */
+body[data-page="professor_alex"] .alex-mode-card {
+  order: -1 !important;
+  width: auto !important;
+  justify-self: center !important;
+  padding: 7px 10px !important;
+  border-radius: 999px !important;
+  gap: 10px !important;
+  box-shadow: none !important;
+}
+body[data-page="professor_alex"] .alex-mode-info p { display: none !important; }
+body[data-page="professor_alex"] .alex-mode-title-row { margin: 0 !important; gap: 6px !important; }
+body[data-page="professor_alex"] .alex-mode-badge { font-size: 12px !important; }
+body[data-page="professor_alex"] .alex-mode-tag { font-size: 10px !important; }
+body[data-page="professor_alex"] .alex-mode-switch { width: 40px !important; height: 22px !important; min-width: 40px !important; }
+body[data-page="professor_alex"] .alex-mode-switch .switch-handle { width: 16px !important; height: 16px !important; }
+body[data-page="professor_alex"] .alex-depth-toggle { display: inline-flex; gap: 2px; padding: 2px; border-radius: 999px; background: var(--surface-2); }
+body[data-page="professor_alex"] .alex-depth-toggle button { min-height: 26px; padding: 4px 8px; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-size: 10px; font-weight: 750; cursor: pointer; }
+body[data-page="professor_alex"] .alex-depth-toggle button.is-active { background: var(--surface); color: var(--text); box-shadow: 0 1px 4px rgba(15,35,66,.12); }
+body[data-page="aprender"] .alex-open-tutoring,
+body[data-page="aprender"] .alex-open-tutoring:hover,
+body[data-page="aprender"] .alex-open-tutoring:visited { color: #fff !important; }
+body[data-page="aprender"] .alex-open-tutoring:hover { filter: none !important; }
+body[data-page="professor_alex"] .alex-send-button,
+body[data-page="professor_alex"] .alex-send-button:hover { color: #fff !important; background: var(--accent) !important; border-color: var(--accent) !important; }
+
+/* LuriaZap: the phone remains contained by the viewport and conversation rows
+   reserve vertical space for every text line. */
+body[data-page="plantao"] .luria-page-spotlight { display: none !important; }
+body[data-page="plantao"] .plantao-phone-layout { width: min(100%, 980px) !important; margin-inline: auto !important; }
+body[data-page="plantao"] .plantao-phone-station { width: min(100%, 430px) !important; justify-self: center !important; }
+body[data-page="plantao"] .plantao-phone-device { width: 100% !important; height: auto !important; max-height: calc(100dvh - 40px) !important; }
+body[data-page="plantao"] .plantao-phone-conversation { min-height: 96px !important; align-items: start !important; }
+body[data-page="plantao"] .plantao-phone-conversation-main { overflow: hidden !important; }
+body[data-page="plantao"] .plantao-phone-conversation-title,
+body[data-page="plantao"] .plantao-phone-conversation-preview { overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
+@media (max-width: 680px) {
+  body[data-page="plantao"] .plantao-phone-layout,
+  body[data-page="plantao"] .plantao-phone-station { width: 100% !important; }
+  body[data-page="plantao"] .plantao-phone-device { max-height: none !important; min-height: calc(100dvh - 86px) !important; }
+}
+
+/* Questões, Flashcards e Caderno de Erros: prevent sparse four-cell grids and
+   make the main action area flow before metrics. */
+body[data-page="questoes"] #qs-daily-card { min-height: 230px !important; height: auto !important; align-items: stretch !important; }
+body[data-page="questoes"] #qs-daily-card .qs-home-system-copy { display: grid !important; align-content: start !important; gap: 10px !important; }
+body[data-page="questoes"] #qs-start-daily { align-self: end !important; width: min(100%, 360px) !important; margin-top: auto !important; }
+body[data-page="questoes"] #qs-home-daily-count { display: inline-flex !important; width: max-content !important; }
+body[data-page="questoes"] :is(.error-metric-summary-grid,.error-metric-summary-grid.qs-metric-4col) { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+body[data-page="questoes"] .error-home-actions,
+body[data-page="erros"] .error-home-actions { order: -1 !important; }
+body[data-page="questoes"] .error-home-actions > button,
+body[data-page="erros"] .error-home-actions > button { min-height: 62px !important; }
+body[data-page="erros"] .qs-home-my-lists-content { display: grid !important; grid-auto-flow: column !important; grid-auto-columns: minmax(250px, 1fr) !important; overflow-x: auto !important; align-items: stretch !important; padding-bottom: 8px !important; }
+body[data-page="erros"] #error-daily-card { min-height: 270px !important; align-items: center !important; }
+body[data-page="flashcards"] .qs-home-workspace { min-width: 0 !important; }
+@media (min-width: 981px) {
+  body[data-page="flashcards"],
+  body[data-page="flashcards"] .app-shell,
+  body[data-page="flashcards"] main.main,
+  body[data-page="flashcards"] .page { height: auto !important; min-height: 100dvh !important; overflow: visible !important; }
+}
+body[data-page="flashcards"] .qs-home-main-column,
+body[data-page="flashcards"] .qs-home-side-column { min-width: 0 !important; height: auto !important; max-height: none !important; overflow: visible !important; }
+
+/* Error review is a bounded responsive grid instead of a fixed ultra-wide row. */
+body.error-review-page .error-review-page-shell { max-width: 1440px !important; margin-inline: auto !important; padding-inline: 16px !important; }
+body.error-review-page .error-review-page-grid { grid-template-columns: minmax(210px,.72fr) minmax(0,1.65fr) minmax(210px,.72fr) !important; }
+body.error-review-page .error-review-card-wrap { min-width: 0 !important; }
+@media (max-width: 1050px) { body.error-review-page .error-review-page-grid { grid-template-columns: minmax(0,1fr) !important; } body.error-review-page .error-review-page-side { position: static !important; } }
+
+/* Games and Aplicar: keep CTA labels legible in every theme. */
+body[data-page="jogos"] .games-link,
+body[data-page="jogos"] .games-link:hover,
+body[data-page="aplicar"] .cv-hub-btn,
+body[data-page="aplicar"] .cv-hub-btn:hover { color: #fff !important; }
+body[data-page="jogos"] .games-link svg,
+body[data-page="aplicar"] .cv-hub-btn svg { stroke: currentColor !important; }
+body[data-page="jogos"] .luria-game .g-back { color: var(--text) !important; background: var(--surface) !important; border-color: var(--border) !important; }
+body[data-page="jogos"] .page-heading { display: flex !important; align-items: center !important; min-height: 56px !important; padding: 10px 14px !important; border-radius: 14px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; }
+
+/* Study Rats: no decorative empty header space and a visible action surface. */
+body[data-page="study-rats"] .sr-stage { margin-top: 0 !important; }
+body[data-page="study-rats"] #study-rats-host { min-height: min(760px, calc(100dvh - 90px)) !important; }

@@ -44,7 +44,7 @@ function workerFixture({ fetch: network = async () => { throw new Error('offline
       skipWaiting: async () => { skipped++; }, clients: { claim: async () => { claimed++; } } },
   });
   vm.runInContext(source, context, { filename: 'service-worker.js' });
-  const config = JSON.parse(vm.runInContext('JSON.stringify({STATIC_CACHE,RUNTIME_CACHE,WEEKLY_CONTENT_CACHE,PLANTAO_IMAGE_CACHE,APP_SHELL})', context));
+  const config = JSON.parse(vm.runInContext('JSON.stringify({STATIC_CACHE,RUNTIME_CACHE,WEEKLY_CONTENT_CACHE,PLANTAO_IMAGE_CACHE,APP_SHELL,INSTALL_PRECACHE:[...INSTALL_PRECACHE]})', context));
   function request(url, { mode, ...options } = {}) {
     const req = new Request(new URL(url, origin), options);
     if (mode) Object.defineProperty(req, 'mode', { value: mode });

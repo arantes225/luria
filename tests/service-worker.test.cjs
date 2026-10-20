@@ -242,19 +242,19 @@ test('install/activate purge owned legacy caches without touching unrelated cach
   assert.ok(f.entries.has('unrelated-app'));
   assert.ok(f.entries.has(f.RUNTIME_CACHE));
   assert.deepEqual(f.deleted.sort(), ['luria-plantao-images-v3', 'luria-pwa-v281-mobile-flow-static', 'luria-weekly-content-v1'].sort());
-  assert.equal(f.writes.filter(entry => entry.name === f.STATIC_CACHE).length, f.APP_SHELL.length);
+  assert.equal(f.writes.filter(entry => entry.name === f.STATIC_CACHE).length, f.INSTALL_PRECACHE.length);
 });
 
-test('optional shell resource failure cannot prevent activation or other public precache entries', async () => {
+test('a failed install-precache resource cannot prevent activation or the remaining core cache entries', async () => {
   const f = workerFixture({ fetch: async req => {
-    if (req.url.includes('pwa-icon-192')) throw Error('optional unavailable');
+    if (req.url.includes('luria-brand-v5.css')) throw Error('core resource unavailable');
     return resource(req);
   } });
   await f.dispatch('install').done(); await f.dispatch('activate').done();
   assert.equal(f.claimed(), 1);
   assert.ok(f.writes.some(entry => entry.url.endsWith('/dashboard/')));
-  assert.ok(f.calls.some(entry => entry.request.url.includes('pwa-icon-192')));
-  assert.ok(!f.writes.some(entry => entry.url.includes('pwa-icon-192')));
+  assert.ok(f.calls.some(entry => entry.request.url.includes('luria-brand-v5.css')));
+  assert.ok(!f.writes.some(entry => entry.url.includes('luria-brand-v5.css')));
 });
 
 test('cache storage/quota unavailability never breaks successful online fetch', async () => {
