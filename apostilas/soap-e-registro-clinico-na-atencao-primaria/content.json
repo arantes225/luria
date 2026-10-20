@@ -1,0 +1,1413 @@
+{
+  "v": 2,
+  "s": "soap-e-registro-clinico-na-atencao-primaria",
+  "t": "SOAP e Registro Clínico na Atenção Primária",
+  "p": "SOAP e Registro Clínico na Atenção Primária — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Medicina de Família e Comunidade",
+  "m": "Medicina de Família e Comunidade",
+  "h": [
+    "Apostila LURIA",
+    "SOAP e Registro Clínico na Atenção Primária",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Medicina de Família e Comunidade",
+      "Matéria: Medicina de Família e Comunidade",
+      "Tema: SOAP e Registro Clínico na Atenção Primária"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "rmop-lawrence-weed-rccp-esus",
+      "1. Do Registro Médico Orientado por Problemas (RMOP de Lawrence Weed) ao Registro Clínico Centrado na Pessoa (RCCP) e e-SUS APS"
+    ],
+    [
+      "analise-minuciosa-subjetivo-objetivo",
+      "2. Anatomia Minuciosa do SOAP (Parte I): O Subjetivo (S) e o Objetivo (O)"
+    ],
+    [
+      "analise-minuciosa-avaliacao-plano",
+      "3. Anatomia Minuciosa do SOAP (Parte II): A Avaliação (A) e o Plano (P)"
+    ],
+    [
+      "classificacao-internacional-atencao-primaria-ciap2",
+      "4. Classificação Internacional de Atenção Primária (CIAP-2 / ICPC-2): Estrutura Biaxial e Comparação com a CID-10"
+    ],
+    [
+      "episodio-cuidado-folha-rosto-lista-problemas",
+      "5. Episódio de Cuidado na APS, Gestão da Lista de Problemas e a Folha de Rosto"
+    ],
+    [
+      "aspectos-etico-legais-prontuario-cfm",
+      "6. Aspectos Ético-Legais do Prontuário Médico, Sigilo Profissional e Normativas do CFM e LGPD"
+    ],
+    [
+      "qualidade-registro-auditoria-indicadores-esus",
+      "7. Qualidade do Registro Clínico, Indicadores de Desempenho da APS, Prontuário Familiar e Auditoria"
+    ],
+    [
+      "casos-clinicos-soap-estruturados",
+      "8. Quatro Casos Clínicos Complexos Integralmente Estruturados em Formato SOAP e Codificados com CIAP-2 e CID-10"
+    ],
+    [
+      "questoes-comentadas-residencia-soap-ciap2",
+      "9. Questões Comentadas de Residência Médica, Revalida e ENAMED (SOAP, RMOP e CIAP-2)"
+    ],
+    [
+      "tabela-high-yield-soap-ciap2",
+      "10. Síntese High-Yield e Quadro Sinóptico para Revisão Rápida (SOAP, RMOP e CIAP-2)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "rmop-lawrence-weed-rccp-esus",
+      0,
+      [
+        [
+          "2",
+          "1. Do Registro Médico Orientado por Problemas (RMOP de Lawrence Weed) ao Registro Clínico Centrado na Pessoa (RCCP) e e-SUS APS"
+        ],
+        [
+          "p",
+          "O registro clínico constitui a espinha dorsal da longitudinalidade, da coordenação do cuidado, da segurança do paciente, da comunicação interprofissional e da defesa ético-legal na Atenção Primária à Saúde (APS). Para compreender a estrutura do método <strong>SOAP</strong> e do prontuário moderno utilizado no Sistema Único de Saúde (como o Prontuário Eletrônico do Cidadão — PEC e-SUS APS), é indispensável dominar a evolução histórica que levou do registro hospitalar cronológico tradicional ao <strong>Registro Médico Orientado por Problemas (RMOP)</strong> de Lawrence Weed e, subsequentemente, ao <strong>Registro Clínico Centrado na Pessoa (RCCP)</strong>."
+        ],
+        [
+          "3",
+          "1.1 Crítica ao Prontuário Tradicional Orientado por Fonte ou Cronológico"
+        ],
+        [
+          "p",
+          "Até o final da década de 1960, a totalidade dos prontuários médicos seguia o formato narrativo livre ou orientado pela fonte da informação (bloco médico, bloco de enfermagem, bloco de laboratório) em ordem meramente cronológica. Na prática ambulatorial longitudinal da Atenção Primária — onde um mesmo cidadão é acompanhado ao longo de 10, 20 ou 30 anos por múltiplas condições crônicas simultâneas, intercorrências agudas, demandas psicossociais e ações preventivas —, o prontuário narrativo tradicional revela-se catastrófico por quatro motivos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Perda de informações críticas no \"mar de texto\":</strong> Para descobrir se uma paciente de 65 anos já realizou colonoscopia há 4 anos ou por que o captopril foi suspenso em 2019, o médico precisaria folhear dezenas de páginas de texto corrido desestruturado.",
+            "<strong>Forçar diagnósticos prematuros e especulativos:</strong> O modelo hospitalar tradicional exigia ao final da anamnese uma \"Hipótese Diagnóstica (HD)\" nosológica fechada (muitas vezes seguida de pontos de interrogação: <em>\"HD: Lúpus? Fibromialgia? Neoplasia oculta?\"</em>), induzindo raciocínio clínico precipitado diante de queixas ainda indiferenciadas.",
+            "<strong>Fragmentação da Lista de Problemas:</strong> Problemas crônicos compensados ou vulnerabilidades sociais importantes (como analfabetismo funcional, luto recente ou violência doméstica) desapareciam das evoluções subsequentes quando o paciente vinha por uma queixa aguda banal (ex: entorse de tornozelo).",
+            "<strong>Impossibilidade de auditoria científica e continuidade multiprofissional:</strong> A ausência de pareamento lógico entre o dado coletado, a avaliação diagnóstica e a conduta tomada impedia que outro membro da equipe compreendesse o raciocínio clínico do colega."
+          ]
+        ],
+        [
+          "3",
+          "1.2 A Revolução de Lawrence Weed (1968): O Registro Médico Orientado por Problemas (RMOP / POMR)"
+        ],
+        [
+          "p",
+          "Em 1968, no clássico artigo publicado no <em>New England Journal of Medicine</em> intitulado <em>\"Medical Records that Guide and Teach\"</em>, o médico e pesquisador norte-americano <strong>Lawrence L. Weed</strong> criou o <strong>Registro Médico Orientado por Problemas (RMOP)</strong> — em inglês, <em>Problem-Oriented Medical Record (POMR)</em> — e cunhou o acrônimo mundialmente consagrado <strong>SOAP</strong> para as notas de evolução clínica."
+        ],
+        [
+          "p",
+          "Na concepção original de Lawrence Weed, o RMOP estrutura-se sobre <strong>quatro pilares fundamentais</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Base de Dados do Paciente (<em>Database</em>):</strong> Conjunto de informações basais padronizadas do indivíduo (identificação demográfica, antecedentes pessoais e familiares, histórico ocupacional, alergias, imunizações, hábitos de vida e revisão basal de sistemas).",
+            "<strong>Lista de Problemas (<em>Problem List</em>):</strong> É o índice dinâmico e a peça mais importante do RMOP, localizada na folha de rosto (ou tela principal do prontuário eletrônico). Contém todos os problemas significativos da pessoa, divididos em <strong>Problemas Ativos</strong> (que exigem manejo, monitoramento ou impacto contínuo) e <strong>Problemas Inativos / Resolvidos</strong> (antecedentes relevantes que não requerem ação atual, mas cujo histórico importa, como \"Tuberculose pulmonar tratada em 2015\" ou \"Apendicectomia em 2010\").",
+            "<strong>Plano Inicial (<em>Initial Plans</em>):</strong> Estratégia estruturada para cada problema numerado da lista.",
+            "<strong>Notas de Evolução no formato SOAP (<em>Progress Notes</em>):</strong> Registro estruturado de cada encontro clínico em quatro blocos lógicos: <strong>S</strong> (<em>Subjective</em> / Subjetivo), <strong>O</strong> (<em>Objective</em> / Objetivo), <strong>A</strong> (<em>Assessment</em> / Avaliação) e <strong>P</strong> (<em>Plan</em> / Plano)."
+          ]
+        ],
+        [
+          "3",
+          "1.3 O Que Define um \"Problema\" para Lawrence Weed e Ian McWhinney?"
+        ],
+        [
+          "p",
+          "Esta é uma das questões conceituais mais cobradas em provas de Medicina de Família e Comunidade! Para Lawrence Weed, um <strong>Problema</strong> na Lista de Problemas e na Avaliação (A) é definido como <em>\"qualquer condição que afete o paciente, que preocupe o paciente ou para a qual o médico/equipe necessite dedicar atenção diagnóstica, terapêutica, preventiva ou de acompanhamento\"</em>."
+        ],
+        [
+          "p",
+          "A regra de ouro epistemológica de Weed é: <strong><em>\"Um problema deve ser registrado no exato nível de síntese e certeza científica em que ele é compreendido naquele momento — nunca além!\"</em></strong> Portanto, um problema na Lista de Problemas ou na letra \"A\" do SOAP pode pertencer a diversas naturezas distintas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Um diagnóstico anatomopatológico ou etiológico firmado:</strong> Ex: <em>Diabetes Mellitus tipo 2</em>, <em>Hipotireoidismo primário</em>, <em>Adenocarcinoma de mama</em>.",
+            "<strong>Uma síndrome fisiopatológica:</strong> Ex: <em>Insuficiência Cardíaca Congestiva</em>, <em>Síndrome Nefrótica</em>.",
+            "<strong>Um sintoma isolado ou queixa física ainda indiferenciada:</strong> Ex: <em>Cefaleia</em>, <em>Dor abdominal epigástrica</em>, <em>Fadiga</em>, <em>Tosse há 2 semanas</em>.",
+            "<strong>Um sinal de exame físico anormal:</strong> Ex: <em>Esplenomegalia</em>, <em>Nódulo mamário palpável</em>, <em>Sopro sistólico mitral</em>.",
+            "<strong>Um resultado de exame complementar alterado sem diagnóstico etiológico fechado:</strong> Ex: <em>Hiperglicemia de jejum</em>, <em>Anemia microcítica</em>, <em>Nódulo pulmonar solitário na radiografia</em>.",
+            "<strong>Um fator de risco, condição psicológica, familiar, ocupacional ou social:</strong> Ex: <em>Tabagismo</em>, <em>Luto por perda de cônjuge</em>, <em>Desemprego</em>, <em>Conflito conjugal</em>, <em>Baixo letramento em saúde</em>, <em>Cuidador sobrecarregado</em>.",
+            "<strong>Uma necessidade preventiva ou administrativa:</strong> Ex: <em>Consulta de manutenção da saúde / Rastreamento</em>, <em>Puericultura</em>, <em>Pré-natal de risco habitual</em>."
+          ]
+        ],
+        [
+          "3",
+          "1.4 Do RMOP Biomédico ao Registro Clínico Centrado na Pessoa (RCCP) e ao PEC e-SUS APS"
+        ],
+        [
+          "p",
+          "Embora o RMOP de Weed tenha revolucionado a organização lógica do prontuário, sua formulação original hospitalar de 1968 ainda refletia uma visão predominantemente biomédica. Nas décadas seguintes, autores da Medicina de Família (como Ian McWhinney, Moira Stewart e Gustavo Gusso) integraram o RMOP ao <strong>Método Clínico Centrado na Pessoa (MCCP)</strong>, dando origem ao <strong>Registro Clínico Centrado na Pessoa (RCCP)</strong>."
+        ],
+        [
+          "p",
+          "Qual é a diferença fundamental entre o RMOP clássico e o RCCP? No RCCP, a <strong>perspectiva da pessoa (a experiência da doença — <em>Illness</em>, sistematizada pelo acrônimo SIFE: Sentimentos, Ideias, Funcionalidade e Expectativas)</strong>, o contexto familiar/comunitário e as metas pactuadas em conjunto deixam de ser detalhes acessórios e passam a ter lugar obrigatório e estruturado dentro do registro <strong>SOAP</strong> (especialmente nos campos Subjetivo e Plano)."
+        ],
+        [
+          "p",
+          "No Brasil, o Ministério da Saúde adotou oficialmente o modelo do RMOP/RCCP estruturado em <strong>SOAP</strong> associado à dupla codificação (<strong>CIAP-2 e CID-10</strong>) como o padrão nacional da Atenção Primária por meio do <strong>Prontuário Eletrônico do Cidadão (PEC e-SUS APS)</strong>. No PEC e-SUS APS, além do bloco SOAP de cada atendimento individual, o sistema integra a Folha de Rosto com a Lista de Problemas/Condições (Ativos, Latentes e Resolvidos), Alergias e Reações Adversas, Medicamentos de Uso Contínuo, Histórico de Imunizações e Antecedentes Familiares/Sociais."
+        ]
+      ]
+    ],
+    [
+      "analise-minuciosa-subjetivo-objetivo",
+      0,
+      [
+        [
+          "2",
+          "2. Anatomia Minuciosa do SOAP (Parte I): O Subjetivo (S) e o Objetivo (O)"
+        ],
+        [
+          "p",
+          "O domínio cirúrgico do que pertence — e do que <strong>não pertence</strong> — a cada uma das quatro letras do acrônimo <strong>SOAP</strong> é um dos temas mais recorrentes em provas de Residência Médica (USP, UNICAMP, ENARE, SUS-SP, SBMFC) e no Exame Nacional de Revalidação de Diplomas Médicos (Revalida/ENAMED). Muitas questões apresentam fragmentos da consulta e exigem que o candidato classifique exatamente em qual letra (S, O, A ou P) cada informação deve ser registrada."
+        ],
+        [
+          "3",
+          "2.1 Letra S — Subjetivo (Subjective): A Voz da Pessoa e a Anamnese"
+        ],
+        [
+          "p",
+          "O campo <strong>Subjetivo (S)</strong> compreende toda e qualquer informação relatada verbalmente pelo paciente, por seu acompanhante/familiar ou colhida pelo profissional por meio da anamnese durante a entrevista clínica. É a narrativa histórica e fenomenológica sob a ótica de quem vivencia o problema."
+        ],
+        [
+          "p",
+          "No Registro Clínico Centrado na Pessoa (RCCP) e no e-SUS APS, o <strong>Subjetivo (S)</strong> estrutura-se nos seguintes subcomponentes essenciais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Motivo(s) da Consulta (MC) / Queixa Principal:</strong> Registrado com clareza (e codificado com a CIAP-2 no campo de motivo de consulta do e-SUS APS). Deve refletir todas as demandas levantadas no rastreamento da agenda inicial, incluindo demandas administrativas (ex: \"vem para renovação de receita\", \"solicita atestado para hidroginástica\") e sintomas físicos ou psíquicos.",
+            "<strong>História do Problema Atual (Anamnese Biomédica da <em>Disease</em>):</strong> Caracterização semiológica completa dos sintomas relatados: cronologia, início, localização, qualidade/caráter, intensidade, irradiação, fatores de melhora e piora, sintomas associados e evolução temporal.",
+            "<strong>Exploração da Experiência da Doença (<em>Illness</em> — O Acrônimo SIFE no \"S\"):</strong> Ponto crucial de prova! Onde se registra o <strong>SIFE</strong> no SOAP? <strong>Inteiramente na letra S (Subjetivo)!</strong>\n    <ul>\n      <li><strong>S (Sentimentos):</strong> <em>\"Relata medo intenso de estar com câncer de estômago.\"</em>",
+            "<strong>I (Ideias):</strong> <em>\"Acredita que a dor epigástrica foi causada pelo anti-inflamatório que tomou na semana passada.\"</em>",
+            "<strong>F (Funcionalidade):</strong> <em>\"Refere que a dor tem impedido que durma à noite e precisou faltar dois dias ao trabalho na padaria.\"</em>",
+            "<strong>E (Expectativas):</strong> <em>\"Diz que veio hoje esperando realizar uma endoscopia digestiva alta.\"</em>",
+            "<strong>Revisão de Sistemas Focada e Pertinentes Negativos da Anamnese:</strong> Sintomas pesquisados ativamente pelo médico para descartar gravidade (<em>red flags</em>). Exemplo: <em>\"Nega febre, nega perda ponderal involuntária, nega disfagia, nega hematêmese ou melena.\"</em> (Atenção: \"nega febre\" ou \"nega dispneia\" é um relato da anamnese, logo pertence ao <strong>S</strong>, e não ao O!).",
+            "<strong>Contexto Psicossocial, Familiar, Hábitos de Vida e Adesão Relatada:</strong> Relatos sobre alimentação, atividade física, tabagismo, consumo de álcool, dinâmica familiar atual, estressores no trabalho e <strong>como o paciente relata estar tomando suas medicações</strong> (ex: <em>\"Conta que parou de tomar a hidroclorotiazida por conta própria há 15 dias porque estava urinando muito no ônibus\"</em>)."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Letra O — Objetivo (Objective): O Exame Físico e a Propedêutica Armada"
+        ],
+        [
+          "p",
+          "O campo <strong>Objetivo (O)</strong> destina-se exclusivamente aos dados concretos, mensuráveis, observáveis e reprodutíveis obtidos diretamente pela inspeção/exame físico do profissional ou por meio de exames complementares (laboratoriais, de imagem, eletrocardiográficos, anatomopatológicos)."
+        ],
+        [
+          "p",
+          "O que compõe obrigatoriamente a letra <strong>O (Objetivo)</strong>?"
+        ],
+        [
+          "u",
+          [
+            "<strong>Impressão Geral e Ectoscopia Observada pelo Médico:</strong> Estado geral (BEG, REG, MEG), nível de consciência e orientação (lúcido, orientado no tempo e espaço, Glasgow 15), coloração de mucosas (corado, hidratado, anictérico, acianótico), fácies, postura, marcha observada ao entrar na sala e comportamento motor observável (ex: <em>\"Paciente apresenta choro fácil durante a consulta, tremor fino de repouso em mãos, marcha claudicante à direita\"</em>).",
+            "<strong>Dados Antropométricos e Sinais Vitais Aferidos na Consulta:</strong> Pressão Arterial (PA), Frequência Cardíaca (FC), Frequência Respiratória (FR), Temperatura Axilar (Tax), Saturação periférica de O₂ (SpO₂), Peso, Estatura, Índice de Massa Corporal (IMC), Circunferência Abdominal e Perímetro Cefálico (na puericultura).",
+            "<strong>Exame Físico Geral e Segmentar (Inspeção, Palpação, Percussão, Ausculta, Manobras Especiais):</strong> Todos os achados positivos e os achados negativos relevantes do exame físico realizado no consultório (ex: <em>\"Ausculta pulmonar com murmúrio vesicular universalmente audível, sem ruídos adventícios; abdome flácido, indolor à palpação superficial e profunda, sinal de Murphy negativo, sem visceromegalias\"</em>).",
+            "<strong>Resultados de Testes Rápidos (Point-of-Care) Realizados na UBS:</strong> Glicemia capilar (HGT), teste rápido de gravidez na urina, testes rápidos para HIV, sífilis, hepatites B e C, fita reagente urinária (dipstick), pico de fluxo expiratório (<em>peak flow</em>) ou oximetria.",
+            "<strong>Exames Complementares Trazidos pelo Paciente (Resultados Anteriores ou Recentes):</strong> <strong>ATENÇÃO MÁXIMA PARA ESTA PEGADINHA CLÁSSICA DE PROVA!</strong> Quando o paciente chega à consulta trazendo envelopes de exames laboratoriais, radiografias, ultrassonografias ou laudos realizados há dias ou semanas fora da UBS, onde os resultados desses exames devem ser transcritos no SOAP? <strong>Na letra O (Objetivo)!</strong> Mesmo que o paciente diga verbalmente \"meu exame deu colesterol de 260\", a leitura e transcrição do resultado laboratorial ou de imagem (com a respectiva data de realização, ex: <em>\"Exames lab de 10/10/2026: Hb 13,2 g/dL; Glicemia de jejum 142 mg/dL; HbA1c 7,9%; Creatinina 0,9 mg/dL\"</em>) é um dado estritamente <strong>Objetivo (O)</strong>!"
+          ]
+        ],
+        [
+          "t",
+          [
+            "Informação Clínica da Consulta",
+            "Letra Correta no SOAP",
+            "Justificativa Técnica (Por que cai em prova?)"
+          ],
+          [
+            [
+              "<em>\"Paciente refere que aferiu a pressão na farmácia ontem e estava 180x110 mmHg.\"</em>",
+              "<strong>S (Subjetivo)</strong>",
+              "Não foi aferida pela equipe nem documentada em laudo oficial no ato; é um relato histórico verbal da anamnese."
+            ],
+            [
+              "<em>\"PA aferida no acolhimento pela técnica de enfermagem hoje: 156x94 mmHg.\"</em>",
+              "<strong>O (Objetivo)</strong>",
+              "Sinal vital mensurado diretamente no serviço de saúde durante o episódio de atendimento."
+            ],
+            [
+              "<em>\"Nega febre, nega vômitos e nega disúria.\"</em>",
+              "<strong>S (Subjetivo)</strong>",
+              "Pertinentes negativos colhidos pelo interrogatório sintomatológico (anamnese)."
+            ],
+            [
+              "<em>\"Afebril ao toque / Tax 36,6°C; sinal de Giordano negativo bilateralmente.\"</em>",
+              "<strong>O (Objetivo)</strong>",
+              "Dados obtidos pelo exame físico e termometria."
+            ],
+            [
+              "<em>\"Traz ultrassonografia abdominal realizada na semana passada evidenciando esteatose hepática moderada e cálculo único na vesícula biliar de 1,2 cm.\"</em>",
+              "<strong>O (Objetivo)</strong>",
+              "Resultados de exames complementares (mesmo realizados previamente e trazidos pelo paciente) pertencem sempre ao Objetivo (O)."
+            ],
+            [
+              "<em>\"Preocupada que a pedra na vesícula possa virar câncer como ocorreu com sua tia; deseja operar logo.\"</em>",
+              "<strong>S (Subjetivo)</strong>",
+              "Sentimentos, Ideias e Expectativas (SIFE) sobre o achado do exame pertencem ao Subjetivo (S)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "analise-minuciosa-avaliacao-plano",
+      0,
+      [
+        [
+          "2",
+          "3. Anatomia Minuciosa do SOAP (Parte II): A Avaliação (A) e o Plano (P)"
+        ],
+        [
+          "p",
+          "Os campos <strong>Avaliação (A)</strong> e <strong>Plano (P)</strong> representam o núcleo intelectual e decisório do registro orientado por problemas. É na Avaliação que o médico sintetiza a lista de problemas abordados naquele encontro, e é no Plano que se desdobram as condutas pactuadas para cada um desses problemas."
+        ],
+        [
+          "3",
+          "3.1 Letra A — Avaliação (Assessment): Síntese de Problemas e a Proibição da Interrogação (?)"
+        ],
+        [
+          "p",
+          "No método SOAP original de Lawrence Weed e no Registro Clínico Centrado na Pessoa (RCCP), a letra <strong>A (Avaliação)</strong> <strong>não é sinônimo estrito de \"Hipótese Diagnóstica (HD)\" hospitalar</strong>! A Avaliação é a síntese interpretativa e a nomeação precisa de todos os problemas ativos ou demandas que foram abordados naquela consulta (com base na integração dos dados do Subjetivo e do Objetivo), atualizando a Lista de Problemas da Folha de Rosto."
+        ],
+        [
+          "4",
+          "A Regra de Ouro Absoluta da Letra \"A\": NUNCA Usar Ponto de Interrogação (?) ou \"A Esclarecer\""
+        ],
+        [
+          "p",
+          "Esta é, disparadamente, a regra mais cobrada em todas as provas de Residência Médica de Medicina de Família e Comunidade e no Revalida sobre registro clínico:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Na Avaliação (A) do SOAP, é estritamente PROIBIDO utilizar pontos de interrogação (\"?\"), termos especulativos (\"Suspeita de...\", \"Provável...\", \"A esclarecer\", \"Descartar...\") ou listar hipóteses diagnósticas ainda não confirmadas!</strong>",
+            "<em>Por que é proibido escrever \"A: Colelitíase?\" ou \"A: Dengue? / Covid-19?\" na Avaliação?</em> Porque, segundo a epistemologia de Lawrence Weed, o médico deve registrar o problema no <strong>mais alto grau de certeza e resolução que os dados de S e O permitem naquele exato momento, sem jamais extrapolar</strong>.",
+            "Se uma paciente apresenta dor abdominal no hipocôndrio direito com Murphy duvidoso e ainda não tem ultrassonografia que comprove cálculo biliar, o médico <strong>não tem certeza</strong> de que é colelitíase. O que ele tem com 100% de certeza naquele momento? Ele tem o sintoma: <strong>\"Dor abdominal localizada no hipocôndrio direito\" (CIAP-2: D06)</strong>! Portanto, na Avaliação (A), registra-se <strong>\"Dor abdominal em hipocôndrio direito\"</strong> (sem ponto de interrogação!). Quando a paciente retornar na semana seguinte com a ultrassonografia mostrando o cálculo biliar (registrada no \"O\"), aí sim o problema na Avaliação (A) e na Lista de Problemas será atualizado/promovido para <strong>\"Colelitíase\" (CIAP-2: D98 / CID-10: K80)</strong>!",
+            "Da mesma forma, se um paciente vem com febre há 2 dias, mialgia e cefaleia retro-orbitária sem teste confirmatório ainda, não se registra \"A: Dengue?\" na Avaliação; registra-se <strong>\"Febre (A03)\"</strong> ou <strong>\"Síndrome febril aguda\"</strong> (ou <em>Doença viral não especificada - A77</em>), podendo-se detalhar o raciocínio diferencial em texto complementar se necessário, mas mantendo o título do problema sem interrogação."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Cenário Clínico na APS (Dados de S e O)",
+            "Registro ERRADO na Avaliação (A) (Vício Hospitalar / Condenado em Prova)",
+            "Registro CORRETO na Avaliação (A) do SOAP (Padrão Weed / CIAP-2)"
+          ],
+          [
+            [
+              "Homem de 60 anos com emagrecimento de 8 kg em 2 meses e astenia, ainda sem exames laboratoriais ou de imagem.",
+              "<em>A: Neoplasia oculta? / Câncer gástrico a esclarecer? / Tuberculose?</em>",
+              "<strong>A: 1. Perda de peso (T08); 2. Fraqueza/cansaço geral (A04).</strong>"
+            ],
+            [
+              "Mulher de 32 anos com atraso menstrual de 10 dias e náuseas matinais; teste rápido de gravidez ainda não realizado.",
+              "<em>A: Gestação inicial? / Gravidez provável?</em>",
+              "<strong>A: 1. Menstruação atrasada / escassa (X05); 2. Náusea (D09).</strong> (Só muda para <em>Gravidez - W78</em> após BHCG ou teste rápido positivo no \"O\"!)."
+            ],
+            [
+              "Paciente masculino de 48 anos assintomático trazendo 1ª medida isolada de PA = 146x92 mmHg na consulta de hoje (sem medidas prévias ou MRPA/MAPA).",
+              "<em>A: Hipertensão Arterial Sistêmica? / HAS em investigação.</em>",
+              "<strong>A: Pressão arterial elevada sem diagnóstico de hipertensão (K85).</strong> (Só passa a <em>Hipertensão não complicada - K86</em> após confirmação diagnóstica pelos critérios vigentes)."
+            ],
+            [
+              "Criança de 4 anos trazida pela mãe apenas para avaliação de rotina e atualização vacinal, sem queixas e com exame físico normal.",
+              "<em>A: Hígido / Eutrófico / Sem doença.</em>",
+              "<strong>A: Exame médico / Avaliação de saúde de rotina — Puericultura (A97 / A98).</strong>"
+            ],
+            [
+              "Mulher de 40 anos com tristeza, choro e insônia há 10 dias após demissão do marido e ameaça de despejo.",
+              "<em>A: Transtorno Depressivo Maior?</em>",
+              "<strong>A: 1. Sentir-se triste (P03); 2. Distúrbio do sono (P06); 3. Problema econômico/financeiro (Z01) / Desemprego do parceiro.</strong>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Qualificação de Problemas Crônicos Conhecidos na Avaliação (A)"
+        ],
+        [
+          "p",
+          "Quando o paciente já possui um diagnóstico crônico previamente firmado na Lista de Problemas (ex: Hipertensão Arterial Sistêmica, Diabetes Mellitus tipo 2, Asma, Depressão), na Avaliação (A) da consulta atual o médico deve listar o problema qualificando seu <strong>grau de controle ou estado clínico atual</strong>: por exemplo, <em>\"1. Diabetes Mellitus tipo 2 — descompensado (HbA1c 9,2%)\"</em>; <em>\"2. Hipertensão Arterial Sistêmica — controlada\"</em>; <em>\"3. Tabagismo — em estágio de contemplação\"</em>. Isso permite que qualquer profissional que abra o prontuário compreenda instantaneamente a fotografia clínica daquele encontro."
+        ],
+        [
+          "3",
+          "3.2 Letra P — Plano (Plan): As 4 (ou 5) Dimensões Estruturadas do Manejo"
+        ],
+        [
+          "p",
+          "O campo <strong>Plano (P)</strong> registra todas as ações, decisões e condutas pactuadas em conjunto com a pessoa (Terceiro Componente do MCCP) para manejar os problemas elencados na Avaliação (A). Sempre que houver múltiplos problemas na letra A (enumerados como 1, 2, 3...), recomenda-se indexar o Plano de forma correspondente (ou agrupada com clareza), contemplando as <strong>quatro grandes dimensões clássicas de Lawrence Weed</strong> (acrescidas da dimensão preventiva/administrativa na APS):"
+        ],
+        [
+          "o",
+          [
+            "<strong>Plano Diagnóstico (Propedêutico):</strong> Solicitação de exames laboratoriais, exames de imagem, testes funcionais, biópsias ou encaminhamento para investigação diagnóstica específica.\n    <ul>\n      <li><em>Atenção para a pegadinha clássica:</em> Resultados de exames trazidos hoje entram no <strong>O (Objetivo)</strong>; novos exames que o médico está solicitando hoje para investigar um problema entram no <strong>P (Plano Diagnóstico)</strong>!",
+            "<strong>Plano Terapêutico (Farmacológico, Não Farmacológico e Procedimental):</strong>\n    <ul>\n      <li><em>Farmacológico:</em> Prescrição de novos medicamentos (com nome genérico, concentração, posologia, via e duração), ajuste de doses de medicações contínuas ou <strong>desprescrição</strong> (suspensão de fármacos inapropriados).",
+            "<em>Não Farmacológico / Psicossocial:</em> Orientações dietéticas pactuadas, plano de atividade física, fisioterapia, psicoterapia, higiene do sono, manejo de estresse.",
+            "<em>Procedimentos realizados ou agendados:</em> Lavagem otológica (remoção de cerume), sutura, drenagem de abscesso, infiltração articular, inserção de DIU, crioterapia, nebulização. (Nota: no e-SUS APS, quando um procedimento ambulatorial é executado durante a própria consulta, sua indicação/execução integra o Plano Terapêutico, e a descrição técnica de como transcorreu e o aspecto final da ferida podem constar no Objetivo/Plano).",
+            "<strong>Plano Educacional (Educação em Saúde e Comunicação Centrada na Pessoa):</strong> Registro das explicações fornecidas sobre a natureza da doença, esclarecimento das dúvidas e medos trazidos no SIFE, aplicação da técnica <em>Teach-Back</em> e orientações sobre a <strong>Rede de Segurança (<em>Safety Netting</em> — sinais de alarme para retorno imediato)</strong>.",
+            "<strong>Plano de Seguimento (Acompanhamento, Monitoramento e Coordenação do Cuidado):</strong> Prazo e modalidade do próximo retorno programado (ex: <em>\"Retorno agendado em 30 dias com resultados de exames\"</em> ou <em>\"Monitoramento de PA residencial por 5 dias\"</em>), acionamento de visita domiciliar pelo Agente Comunitário de Saúde (ACS), discussão de caso com a equipe multiprofissional (eMulti / matriciamento) ou encaminhamento (referência) para atenção especializada mantendo o acompanhamento compartilhado.",
+            "<strong>Plano Preventivo e Administrativo (específico da APS):</strong> Rastreamentos oportunísticos pactuados (coleta de citopatológico do colo uterino, solicitação de mamografia, testes rápidos de ISTs), atualização do cartão vacinal, emissão de atestado médico, laudo previdenciário, receita de controle especial ou notificação compulsória ao SINAN."
+          ]
+        ]
+      ]
+    ],
+    [
+      "classificacao-internacional-atencao-primaria-ciap2",
+      0,
+      [
+        [
+          "2",
+          "4. Classificação Internacional de Atenção Primária (CIAP-2 / ICPC-2): Estrutura Biaxial e Comparação com a CID-10"
+        ],
+        [
+          "p",
+          "Elaborada pelo Comitê Internacional de Classificação da WONCA (<em>World Organization of Family Doctors</em>) e reconhecida pela Organização Mundial da Saúde (OMS) como parte da Família de Classificações Internacionais (FIC-OMS), a <strong>Classificação Internacional de Atenção Primária — Segunda Edição (CIAP-2 / ICPC-2)</strong> é o sistema classificatório padrão-ouro para codificar os episódios de cuidado na Atenção Primária à Saúde e no PEC e-SUS APS no Brasil."
+        ],
+        [
+          "3",
+          "4.1 Por Que a CID-10 é Insuficiente (e Inadequada Isoladamente) para a Atenção Primária?"
+        ],
+        [
+          "p",
+          "A Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (CID-10 / CID-11) foi historicamente desenhada a partir de estatísticas de mortalidade (causas de óbito de William Farr e Jacques Bertillon no século XIX) e morbidade hospitalar de doenças anatomopatológicas já definidas. Quando aplicada isoladamente na Atenção Primária, a CID-10 fracassa por três razões epidemiológicas fundamentais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Incapacidade de codificar adequadamente os Motivos de Consulta na ótica da pessoa:</strong> Pacientes não chegam à UBS dizendo \"Doutor, vim por uma Rinofaringite Aguda J00\"; eles vêm por \"Tosse\", \"Dor de garganta\", \"Medo de estar com pneumonia\" ou \"Pedido de exame de sangue\".",
+            "<strong>Predomínio de queixas indiferenciadas na APS:</strong> Cerca de 50% dos atendimentos na APS encerram-se no nível de sintomas, sinais ou problemas psicossociais que não preenchem critérios para uma doença fechada da CID-10.",
+            "<strong>Ausência de códigos integrados para Problemas Sociais e Processos de Cuidado na mesma taxonomia clínica simples:</strong> A CIAP-2 permite codificar em apenas 3 caracteres (1 letra + 2 números) tanto o motivo da consulta (no S), quanto o problema/diagnóstico (no A) e o processo de cuidado/intervenção (no P), organizando tudo em <strong>Episódios de Cuidado</strong> ao longo do tempo!"
+          ]
+        ],
+        [
+          "t",
+          [
+            "Característica Taxonômica",
+            "CIAP-2 (WONCA)",
+            "CID-10 (OMS)"
+          ],
+          [
+            [
+              "<strong>Foco Epistemológico Principal</strong>",
+              "Centrada na <strong>Pessoa</strong> e no <strong>Episódio de Cuidado</strong> na Atenção Primária (motivos de consulta, problemas e intervenções).",
+              "Centrada na <strong>Doença (<em>Disease</em>)</strong>, etiologia anatomopatológica, morbidade hospitalar e estatísticas de mortalidade."
+            ],
+            [
+              "<strong>Estrutura do Código</strong>",
+              "<strong>Biaxial</strong> de 3 caracteres: <strong>1 Letra</strong> (Capítulo = Sistema corporal/área) + <strong>2 Algarismos numéricos</strong> (Componente = 01 a 99).",
+              "Alfanumérica hierárquica (1 Letra + 2 números + ponto + 1 número subdivisional), organizada primariamente por etiologia/anatomia."
+            ],
+            [
+              "<strong>Onde é utilizada no SOAP (PEC e-SUS APS)?</strong>",
+              "Nos <strong>três momentos</strong>: no <strong>Subjetivo (S)</strong> (Motivo da Consulta), na <strong>Avaliação (A)</strong> (Problema/Diagnóstico) e no <strong>Plano (P)</strong> (Processo/Intervenção).",
+              "Restrita quase exclusivamente à <strong>Avaliação (A)</strong> quando há diagnóstico nosológico firmado, emissão de atestados, laudos de alto custo (LME), AIH e Declaração de Óbito."
+            ],
+            [
+              "<strong>Abordagem do \"Medo de Doença\"</strong>",
+              "Possui códigos específicos dedicados ao <strong>\"Medo de...\"</strong> (ex: A26 = Medo de contraír HIV; X25 = Medo de câncer genital feminino; K24 = Medo de doença cardíaca).",
+              "Não possui eixo sistemático por capítulo para codificar o medo subjetivo de doenças específicas como motivo de consulta."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.2 A Estrutura Biaxial da CIAP-2: Os 17 Capítulos (Letras) e os 7 Componentes (Números)"
+        ],
+        [
+          "p",
+          "Esta é uma questão de prova extremamente frequente e técnica! A CIAP-2 possui uma arquitetura <strong>biaxial</strong> (dois eixos que se cruzam):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Eixo 1 — Os 17 Capítulos (representados por UMA LETRA):</strong> Baseados na localização anatômica/sistema orgânico ou área de problema (regra fundamental da CIAP-2: <strong>a localização no sistema corporal tem precedência sobre a etiologia!</strong> Por exemplo: uma pneumonia bacteriana ou tuberculose pulmonar não fica num capítulo de \"infecções\", mas sim no Capítulo <strong>R — Respiratório</strong>!).",
+            "<strong>Eixo 2 — Os 7 Componentes (representados por DOIS DÍGITOS NUMÉRICOS de 01 a 99):</strong> Padronizados de maneira idêntica dentro de todos os 17 capítulos!"
+          ]
+        ],
+        [
+          "4",
+          "Os 17 Capítulos da CIAP-2 (Letras Mnemônicas em Inglês)"
+        ],
+        [
+          "t",
+          [
+            "Letra do Capítulo",
+            "Sistema Corporal ou Área de Problema",
+            "Origem Mnemônica (Inglês) e Exemplos Clássicos"
+          ],
+          [
+            [
+              "<strong>A</strong>",
+              "Geral e Inespecífico",
+              "<em>All / Unspecified</em> (Febre A03, Fadiga A04, Dor generalizada A01, Exame de rotina A97/A98, Tuberculose A70, Sífilis A79)"
+            ],
+            [
+              "<strong>B</strong>",
+              "Sangue, Órgãos Hematopoiéticos e Linfáticos (Baço/Linfonodos)",
+              "<em>Blood</em> (Anemia ferropriva B80, Linfadenomegalia B02, HIV/AIDS B90)"
+            ],
+            [
+              "<strong>D</strong>",
+              "Aparelho Digestivo",
+              "<em>Digestive</em> (Dor abdominal D01, Epigastralgia D02, Diarreia D11, Colelitíase D98)"
+            ],
+            [
+              "<strong>F</strong>",
+              "Olho (Oftalmológico)",
+              "<em>Focus / Eye</em> (Olho vermelho F02, Conjuntivite infecciosa F70, Catarata F92)"
+            ],
+            [
+              "<strong>H</strong>",
+              "Ouvido (Otorrinolaringológico auditivo)",
+              "<em>Hearing / Ear</em> (Otalgia H01, Cerume H81, Otite média aguda H71)"
+            ],
+            [
+              "<strong>K</strong>",
+              "Aparelho Circulatório (Cardiovascular)",
+              "<em>Kardio</em> (Pressão elevada sem diagnóstico de HAS K85, HAS não complicada K86, HAS com complicações K87, Insuficiência cardíaca K77)"
+            ],
+            [
+              "<strong>L</strong>",
+              "Sistema Musculoesquelético (Locomotor)",
+              "<em>Locomotor</em> (Lombalgia sem irradiação L03, Lombalgia com ciatalgia L86, Osteoartrite de joelho L90)"
+            ],
+            [
+              "<strong>N</strong>",
+              "Sistema Neurológico",
+              "<em>Neurological</em> (Cefaleia N01, Cefaleia tensional N95, Enxaqueca N89, Epilepsia N88)"
+            ],
+            [
+              "<strong>P</strong>",
+              "Psicológico / Saúde Mental",
+              "<em>Psychological</em> (Sentir-se ansioso P01, Sentir-se triste P03, Abuso de álcool P15, Abuso de tabaco P17, Depressão P76)"
+            ],
+            [
+              "<strong>R</strong>",
+              "Aparelho Respiratório",
+              "<em>Respiratory</em> (Tosse R05,Dispneia R02, IVAS/Resfriado comum R74, Sinusite R75, Pneumonia R81, Asma R96, DPOC R95)"
+            ],
+            [
+              "<strong>S</strong>",
+              "Pele (Tegumentar / Dermatológico)",
+              "<em>Skin</em> (Prurido S02, Dermatite atópica S87, Escabiose S72, Acne S96)"
+            ],
+            [
+              "<strong>T</strong>",
+              "Endócrino, Metabólico e Nutricional",
+              "<em>Thyroid / Endocrine</em> (Excesso de peso T83, Obesidade T82, Hipotireoidismo T86, DM insulino-dependente T89, DM não insulino-dependente T90, Dislipidemia T93)"
+            ],
+            [
+              "<strong>U</strong>",
+              "Aparelho Urinário",
+              "<em>Urological</em> (Disúria U01, Cistite/ITU U71, Litíase urinária U95)"
+            ],
+            [
+              "<strong>W</strong>",
+              "Gravidez, Parto e Planejamento Familiar",
+              "<em>Women / Pregnancy</em> (Gravidez confirmada W78, Pré-natal, Anticoncepção oral W11, DIU W12)"
+            ],
+            [
+              "<strong>X</strong>",
+              "Aparelho Genital Feminino e Mamas",
+              "<em>X chromosome</em> (Menstruação atrasada X05, Corrimento vaginal X14, Nódulo mamário X19, Candidíase genital feminina X72, Síndrome do climatério X11)"
+            ],
+            [
+              "<strong>Y</strong>",
+              "Aparelho Genital Masculino",
+              "<em>Y chromosome</em> (Disfunção erétil/impotência Y07, Hiperplasia prostática benigna Y85)"
+            ],
+            [
+              "<strong>Z</strong>",
+              "Problemas Sociais",
+              "<em>Social</em> (Pobreza/Problema financeiro Z01, Desemprego Z06, Problema conjugal/parceiro Z12, Luto/Morte de parceiro Z15 ou familiar Z23)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Os 7 Componentes Numéricos da CIAP-2 (Faixas de 2 Dígitos de 01 a 99)"
+        ],
+        [
+          "p",
+          "Em qualquer um dos 17 capítulos acima, os dois números após a letra obedecem rigorosamente à mesma divisão em <strong>7 componentes</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Componente 1 — Queixas, Sinais e Sintomas (números <code>01 a 29</code>):</strong> Inclui todos os sintomas, queixas subjetivas e, crucialmente, os códigos de <strong>\"Medo de...\"</strong> (geralmente nos números 24, 25, 26 e 27 de cada capítulo, como <code>A27</code> = Medo de outra doença, <code>R26</code> = Medo de câncer respiratório) e limitação funcional/incapacidade (número <code>28</code>).",
+            "<strong>Componente 2 — Procedimentos Diagnósticos, Preventivos e de Rastreamento (números <code>30 a 49</code>):</strong> Ex: <code>30</code> = Exame médico completo, <code>31</code> = Exame médico parcial, <code>34</code> = Análise de sangue, <code>35</code> = Análise de urina, <code>41</code> = Radiologia/Imagem diagnóstica, <code>44</code> = Vacinação/Medicação preventiva, <code>45</code> = Educação em saúde/Aconselhamento.",
+            "<strong>Componente 3 — Medicamentos, Tratamentos e Procedimentos Terapêuticos (números <code>50 a 59</code>):</strong> Ex: <code>50</code> = Medicação/Prescrição/Injeção, <code>51</code> = Incisão/Drenagem, <code>52</code> = Excisão/Biópsia/Remoção, <code>54</code> = Reparação/Sutura/Gesso.",
+            "<strong>Componente 4 — Resultados de Exames (números <code>60 e 61</code>):</strong> Quando o motivo do encontro é especificamente avaliar/entregar resultados de testes.",
+            "<strong>Componente 5 — Componente Administrativo (número <code>62</code>):</strong> Emissão de atestados, certificados, formulários burocráticos ou receitas administrativas.",
+            "<strong>Componente 6 — Encaminhamentos / Referências e Outras Razões de Consulta (números <code>63 a 69</code>):</strong> Ex: <code>63</code> = Consulta de seguimento não especificada, <code>64</code> = Episódio iniciado pelo profissional, <code>65</code> = Episódio iniciado por terceiro (ex: familiar), <code>67</code> = Encaminhamento para médico especialista/hospital, <code>68</code> = Outros encaminhamentos (equipe multiprofissional).",
+            "<strong>Componente 7 — Diagnósticos e Doenças (números <code>70 a 99</code>):</strong> Subdividido internamente de forma lógica:\n    <ul>\n      <li><code>70 a 79</code>: <strong>Doenças Infecciosas</strong> (ex: R74 = IVAS, R81 = Pneumonia, U71 = Cistite, S72 = Escabiose);",
+            "<code>80 a 81</code> (e 79/82 conforme capítulo): <strong>Traumatismos e Lesões</strong> (ex: L77 = Entorse de tornozelo) ou <strong>Neoplasias</strong> (ex: R84 = Neoplasia maligna de brônquio/pulmão, X76 = Neoplasia maligna da mama feminina);",
+            "<code>82 a 83</code>: <strong>Anomalias Congênitas</strong>;",
+            "<code>84 a 99</code>: <strong>Outros Diagnósticos e Doenças Específicas</strong> (doenças crônicas degenerativas, metabólicas, cardiovasculares, psiquiátricas, como K86 = HAS sem complicações, T90 = DM tipo 2, P76 = Depressão)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Dica de Ouro para Provas:</strong> Note que os <strong>Componentes 2 a 6 (números 30 a 69)</strong> são idênticos em todos os capítulos e representam <strong>Processos de Cuidado (Intervenções)</strong>! Assim, se o paciente vem com queixa respiratória e recebe prescrição medicamentosa, o código de processo é <code>R50</code>; se é encaminhado ao pneumologista, é <code>R67</code>; se vem por problema cardiológico e recebe orientação em estilo de vida, é <code>K45</code>."
+        ]
+      ]
+    ],
+    [
+      "episodio-cuidado-folha-rosto-lista-problemas",
+      0,
+      [
+        [
+          "2",
+          "5. Episódio de Cuidado na APS, Gestão da Lista de Problemas e a Folha de Rosto"
+        ],
+        [
+          "p",
+          "Para utilizar a CIAP-2 e o método SOAP em toda a sua potência clínica e epidemiológica, o médico de família precisa dominar o conceito de <strong>Episódio de Cuidado</strong> (WONCA) e as regras dinâmicas de manutenção da <strong>Lista de Problemas</strong> na Folha de Rosto do prontuário."
+        ],
+        [
+          "3",
+          "5.1 O Conceito de Episódio de Cuidado vs. Episódio de Consulta (Encontro)"
+        ],
+        [
+          "p",
+          "Na Atenção Primária, não se deve confundir uma \"consulta isolada\" (encontro clínico) com um \"Episódio de Cuidado\":"
+        ],
+        [
+          "u",
+          [
+            "<strong>Episódio de Cuidado (<em>Episode of Care</em>):</strong> É definido pela WONCA como todo o processo de atenção prestada a um determinado problema de saúde ou doença em um indivíduo, <strong>desde a primeira vez em que o problema é apresentado a um profissional de saúde até a última consulta relacionada àquele mesmo problema</strong>.",
+            "Um único Episódio de Cuidado pode durar um único dia (ex: remoção de rolha de cerume em consulta única — H81), várias semanas (ex: episódio de pneumonia adquirida na comunidade que envolve 3 encontros clínicos — R81) ou décadas (ex: episódio de cuidado de Diabetes Mellitus tipo 2 — T90).",
+            "Por outro lado, em uma <strong>única consulta (encontro)</strong>, frequentemente são abordados <strong>dois, três ou quatro Episódios de Cuidado distintos simultaneamente</strong> (os chamados <em>subencontros</em>): na mesma visita de 20 minutos, o médico avalia a hipertensão crônica (Episódio 1: K86), analisa uma queixa aguda de tontura posicional (Episódio 2: H82) e realiza o rastreamento oportunístico de câncer do colo uterino (Episódio 3: X37 / A98)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>A Transição Evolutiva do Código CIAP-2 dentro do Mesmo Episódio de Cuidado:</strong> Na primeira consulta do episódio, quando a pessoa se apresenta com \"Fadiga e cansaço há 1 mês\" sem causa definida, o episódio nasce na Avaliação (A) com o código de sintoma (Componente 1: <code>A04</code>). Na segunda consulta, ao trazer o hemograma e ferritina comprovando anemia por deficiência de ferro, o código daquele mesmo episódio evolui para <code>B80</code> (Anemia ferropriva). Na terceira consulta, após a colonoscopia solicitada para investigar a causa da perda sanguínea revelar um adenocarcinoma de cólon, o título do episódio de cuidado é atualizado definitivamente na Lista de Problemas para <code>D75</code> (Neoplasia maligna do cólon/reto)."
+        ],
+        [
+          "3",
+          "5.2 Arquitetura da Folha de Rosto (Resumo Clínico do Paciente) e Lista de Problemas"
+        ],
+        [
+          "p",
+          "Tanto no prontuário físico estruturado quanto no PEC e-SUS APS, a <strong>Folha de Rosto</strong> funciona como o painel de comando longitudinal do paciente. Ela evita que informações vitais fiquem soterradas em notas de evolução antigas. Seus elementos obrigatórios incluem:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Alertas de Segurança e Alergias / Reações Adversas a Medicamentos (RAM):</strong> Destacados no topo, diferenciando alergia imunológica verdadeira (ex: anafilaxia ou angioedema por dipirona/penicilina) de intolerância ou efeito colateral farmacodinâmico previsível (ex: tosse seca por enalapril, epigastralgia por AINE).",
+            "<strong>Lista de Problemas Ativos (Crônicos e Agudos Relevantes):</strong> Problemas que demandam ação contínua, vigilância ou tratamento atual. Cada problema recebe um número identificador ou código CIAP-2/CID-10 e sua data de início/identificação.",
+            "<strong>Lista de Problemas Latentes / Inativos / Resolvidos:</strong> Condições passadas já curadas ou cirurgias prévias que não requerem conduta ativa hoje, mas cujo conhecimento pode impactar decisões futuras (ex: <em>\"Nefrectomia unilateral esquerda pós-trauma em 2012\"</em> — essencial para evitar prescrição de fármacos nefrotóxicos; <em>\"Episódio depressivo grave pós-parto em 2018\"</em>; <em>\"Sífilis secundária tratada adequadamente em 2021 com VDRL cicatricial 1:2\"</em>).",
+            "<strong>Lista de Medicamentos de Uso Contínuo e Prescrições Vigentes:</strong> Com dose exata, posologia real em uso pelo paciente e data da última reconciliação medicamentosa.",
+            "<strong>Grade de Rastreamentos, Imunizações e Monitoramento Periódico (<em>Flowsheets</em>):</strong> Registro estruturado das datas e resultados dos últimos rastreamentos (data e laudo do último citopatológico de colo uterino, mamografia, pesquisa de sangue oculto nas fezes/colonoscopia, sorologias de ISTs, exame dos pés no diabético e fundo de olho)."
+          ]
+        ],
+        [
+          "3",
+          "5.3 Regras de Fusão, Desmembramento e Atualização da Lista de Problemas"
+        ],
+        [
+          "p",
+          "Quando múltiplos problemas registrados separadamente na Lista de Problemas revelam-se manifestações de uma única entidade nosológica, o médico deve realizar a <strong>fusão (unificação) de problemas</strong>. Exemplo: um paciente tinha na lista o Problema #1 (<em>Poliúria - U02</em>), o Problema #2 (<em>Perda de peso - T08</em>) e o Problema #3 (<em>Polidipsia - T01</em>). Ao confirmar o diagnóstico laboratorial de Diabetes Mellitus tipo 2 (<code>T90</code>), aqueles três sintomas deixam de existir isoladamente na lista de problemas ativos e são fundidos sob o diagnóstico definitivo <code>T90 — Diabetes Mellitus não insulino-dependente</code>."
+        ],
+        [
+          "p",
+          "Inversamente, quando um problema crônico desenvolve uma complicação grave que exige manejo próprio (ex: paciente com Diabetes Mellitus tipo 2 que desenvolve <em>Retinopatia diabética proliferativa - F83</em> ou <em>Doença renal crônica estágio 4 - U99</em>), registra-se a nova complicação de forma explícita e vinculada, mantendo a clareza do perfil de morbidade e multimorbidade do paciente."
+        ]
+      ]
+    ],
+    [
+      "aspectos-etico-legais-prontuario-cfm",
+      0,
+      [
+        [
+          "2",
+          "6. Aspectos Ético-Legais do Prontuário Médico, Sigilo Profissional e Normativas do CFM e LGPD"
+        ],
+        [
+          "p",
+          "O prontuário médico (físico ou eletrônico) é um documento técnico, científico, assistencial e jurídico de altíssima relevância. As regras ético-legais que regem sua propriedade, guarda, sigilo, acesso pelo paciente, fornecimento a terceiros ou autoridades judiciais e liberação pós-óbito estão entre os temas mais cobrados nas provas de Medicina Preventiva, Bioética e Medicina de Família e Comunidade em todo o Brasil (regidas pelo <strong>Código de Ética Médica — Resolução CFM nº 2.217/2018</strong>, pelas <strong>Resoluções CFM nº 1.638/2002 e nº 1.821/2007</strong> e pela <strong>Lei nº 13.787/2018</strong>)."
+        ],
+        [
+          "3",
+          "6.1 Propriedade Documental vs. Guarda do Prontuário: De Quem é o Prontuário?"
+        ],
+        [
+          "p",
+          "Esta é uma pegadinha clássica de concurso médico! Afinal, o prontuário pertence ao médico, ao hospital/UBS ou ao paciente?"
+        ],
+        [
+          "u",
+          [
+            "<strong>As informações contidas no prontuário e o documento em sua essência pertencem ao PACIENTE (titular absoluto dos dados)!</strong>",
+            "Ao médico e à instituição de saúde (Unidade Básica de Saúde, clínica ou hospital) cabe o dever legal de <strong>elaboração, guarda, custódia e preservação sigilosa</strong> do documento.",
+            "Por pertencer ao paciente, nos termos do Art. 88 do Código de Ética Médica, é <strong>vedado ao médico negar ao paciente (ou ao seu representante legal) acesso ao seu prontuário</strong>, deixar de lhe fornecer <strong>cópia integral</strong> quando solicitada, bem como deixar de lhe dar explicações necessárias à sua compreensão (salvo quando ocasionar risco comprovado ao próprio paciente ou a terceiros).",
+            "<em>Atenção:</em> O paciente tem direito inalienável à <strong>cópia integral</strong> do prontuário a qualquer momento (sem precisar de ordem judicial e sem que o médico possa cobrar taxas abusivas pela elaboração), mas a via original (ou a base de dados eletrônica matriz) permanece sob a guarda e custódia legal da instituição de saúde pelo prazo previsto em lei."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Prazo Legal de Guarda e Arquivamento do Prontuário (Lei nº 13.787/2018 e CFM)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Prontuários em suporte de papel (não digitalizados):</strong> Devem ser preservados pelo prazo mínimo de <strong>20 (vinte) anos</strong> a partir do <strong>último registro</strong> efetuado no documento! Após decorridos os 20 anos do último atendimento, o prontuário em papel pode ser eliminado (ou devolvido ao paciente), exceto se houver interesse de preservação histórica/científica.",
+            "<strong>Prontuários eletrônicos (com certificação digital padrão ICP-Brasil, Nível de Garantia de Segurança 2 — NGS2):</strong> De acordo com a Resolução CFM nº 1.821/2007, os prontuários armazenados em meio eletrônico certificado possuem guarda <strong>permanente</strong> (ou no mínimo pelo prazo legal de 20 anos da Lei nº 13.787/2018, sendo que a digitalização certificada autoriza a eliminação do papel original após análise pela Comissão de Revisão de Prontuários)."
+          ]
+        ],
+        [
+          "3",
+          "6.3 Sigilo Médico do Prontuário: Requisição Judicial, Policial e Planos de Saúde"
+        ],
+        [
+          "p",
+          "O sigilo profissional sobre o prontuário médico é protegido constitucionalmente (inviolabilidade da intimidade e vida privada — Art. 5º, X da CF/88), penalmente (crime de violação do segredo profissional — Art. 154 do Código Penal) e eticamente (Capítulo IX e X do Código de Ética Médica). As três únicas exceções éticas clássicas para quebra de sigilo médico são: <strong>(1) Consentimento expresso (por escrito) do paciente</strong>; <strong>(2) Dever Legal</strong> (como a Notificação Compulsória de doenças e agravos previstos na lista oficial do Ministério da Saúde ao SINAN, e comunicação de maus-tratos contra crianças/adolescentes ao Conselho Tutelar conforme o ECA); e <strong>(3) Motivo Justo / Justa Causa</strong> (perigo real, concreto e iminente à vida ou saúde de terceiros determináveis, quando esgotadas as tentativas de persuasão do paciente)."
+        ],
+        [
+          "p",
+          "<strong>Como agir quando um Juiz, Promotor (Ministério Público) ou Delegado de Polícia requisita o prontuário médico de um paciente?</strong>"
+        ],
+        [
+          "u",
+          [
+            "Conforme entendimento consolidado pelo Supremo Tribunal Federal (STF), Superior Tribunal de Justiça (STJ) e pelo Art. 89 do Código de Ética Médica: <strong>O médico ou diretor técnico NÃO deve enviar o prontuário diretamente ao Delegado de Polícia ou ao Ministério Público sem autorização expressa do paciente ou ordem judicial específica!</strong>",
+            "Mesmo diante de determinação judicial, o Art. 89 do CEM estabelece que é vedado ao médico liberar cópias do prontuário sob sua guarda exceto para atender a ordem judicial ou para a sua própria defesa, sendo que, quando requisitado judicialmente, o prontuário será disponibilizado ao <strong>perito médico nomeado pelo juiz</strong> (ou em segredo de justiça estrito, preservando o sigilo perante leigos).",
+            "<strong>Operadoras de Planos de Saúde e Auditores:</strong> É estritamente vedado enviar cópia de prontuário a empresas empregadoras ou seguradoras sem anuência do paciente. O médico auditor (devidamente identificado com CRM) tem direito de examinar o prontuário <em>in loco</em> dentro da unidade de saúde para fins exclusivos de auditoria médica, estando ele próprio submetido ao mesmo dever de sigilo profissional, mas não pode retirar os originais da instituição."
+          ]
+        ],
+        [
+          "3",
+          "6.4 Acesso ao Prontuário de Paciente Falecido (Parecer CFM nº 06/2010 e Recomendação CFM nº 03/2014)"
+        ],
+        [
+          "p",
+          "O dever de sigilo médico permanece mesmo após a morte do paciente (Art. 73, parágrafo único, do CEM)! Contudo, e se a família do paciente falecido solicitar cópia do prontuário na UBS ou no hospital para esclarecer circunstâncias do óbito ou questões securitárias/previdenciárias?"
+        ],
+        [
+          "u",
+          [
+            "Decorrente da Ação Civil Pública e normatizado pela <strong>Recomendação CFM nº 03/2014</strong>, o médico e a instituição <strong>DEVEM fornecer cópia do prontuário do paciente falecido</strong> quando solicitada pelo <strong>cônjuge/companheiro sobrevivente</strong> ou pelos <strong>sucessores legítimos do morto em linha reta ou colateral até o quarto grau (pais, filhos, netos, irmãos, tios, sobrinhos, primos)</strong>, desde que comprovado documentalmente o vínculo familiar e observada a ordem de vocação hereditária, <strong>SALVO se houver manifestação expressa em vida do próprio paciente em sentido contrário (objecção registrada pelo paciente em vida)!</strong>"
+          ]
+        ],
+        [
+          "t",
+          [
+            "Situação Ético-Legal do Prontuário",
+            "Conduta CORRETA (Segundo o CEM / CFM / Legislação)",
+            "Pegadinha Comum nas Provas"
+          ],
+          [
+            [
+              "<strong>Paciente lúcido pede cópia integral do próprio prontuário na UBS.</strong>",
+              "Fornecer a cópia integral prontamente (direito inalienável do titular dos dados — Art. 88 do CEM).",
+              "Dizer que o prontuário pertence ao médico/prefeitura e só pode ser entregue mediante ordem judicial (ERRADO!)."
+            ],
+            [
+              "<strong>Prazo mínimo de guarda de prontuário em papel.</strong>",
+              "<strong>20 anos</strong> contados a partir da data do <strong>último registro</strong> (Lei nº 13.787/2018).",
+              "Marcar 5 anos ou 10 anos a partir da abertura do prontuário (ERRADO!)."
+            ],
+            [
+              "<strong>Empregador (patrão) liga para a UBS pedindo saber o diagnóstico do funcionário que entregou atestado.</strong>",
+              "Negar terminantemente qualquer informação sem autorização do paciente; o CID no atestado só pode ser colocado por solicitação expressa do próprio paciente.",
+              "Revelar o diagnóstico ao patrão sob o pretexto de confirmar a veracidade do atestado (quebra ilícita de sigilo!)."
+            ],
+            [
+              "<strong>Filho legítimo solicita cópia do prontuário do pai recém-falecido (sem oposição prévia registrada pelo pai).</strong>",
+              "Fornecer a cópia mediante comprovação documental de parentesco e assinatura de termo (Recomendação CFM nº 03/2014).",
+              "Negar acesso ao cônjuge ou filho exigindo alvará judicial mesmo sem objeção prévia do falecido (ERRADO!)."
+            ],
+            [
+              "<strong>Prontuário de Equipe Multiprofissional na APS (PEC e-SUS APS).</strong>",
+              "O prontuário é <strong>único, integrado e transdisciplinar</strong> da pessoa, com controle de acesso perfilado por categoria profissional (LGPD), onde dados cadastrais e lista de problemas são compartilhados pela equipe e notas clínicas sensíveis respeitam as atribuições de cada conselho.",
+              "Dizer que cada profissional da UBS (médico, enfermeiro, dentista) deve manter uma pasta física secreta separada sem comunicação entre si (ERRADO!)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "qualidade-registro-auditoria-indicadores-esus",
+      0,
+      [
+        [
+          "2",
+          "7. Qualidade do Registro Clínico, Indicadores de Desempenho da APS, Prontuário Familiar e Auditoria"
+        ],
+        [
+          "p",
+          "Além de organizar o raciocínio clínico individual no consultório, o registro estruturado em formato <strong>SOAP</strong> e codificado com a <strong>CIAP-2</strong> e a <strong>CID-10</strong> no PEC e-SUS APS é a fonte primária do <strong>Sistema de Informação em Saúde para a Atenção Básica (SISAB)</strong>. Na gestão contemporânea do Sistema Único de Saúde, \"o que não é registrado adequadamente nos campos estruturados do SOAP simplesmente não existe para fins epidemiológicos, de financiamento federal e de vigilância em saúde\"."
+        ],
+        [
+          "3",
+          "7.1 Impacto do Registro SOAP e da Codificação CIAP-2/CID-10 nos Indicadores e no Financiamento da APS"
+        ],
+        [
+          "p",
+          "Um erro gravíssimo cometido por médicos iniciantes na Estratégia Saúde da Família é digitar toda a consulta (anamnese, resultados de exames, pressão arterial, diagnóstico e receitas) dentro de um único bloco de \"texto livre\" no campo Subjetivo, deixando os campos estruturados de antropometria/sinais vitais (no Objetivo), a codificação CIAP-2/CID-10 (na Avaliação) e os procedimentos/exames avaliados (no Plano) em branco."
+        ],
+        [
+          "p",
+          "Por que o preenchimento correto de cada campo estruturado do SOAP no PEC e-SUS APS é vital?"
+        ],
+        [
+          "u",
+          [
+            "<strong>Identificação da População-Alvo Denominadora:</strong> Para que uma gestante, um paciente hipertenso (<code>CIAP-2: K86/K87</code> ou <code>CID-10: I10</code>) ou uma pessoa com diabetes (<code>CIAP-2: T89/T90</code> ou <code>CID-10: E10-E14</code>) entre na lista nominal de acompanhamento da equipe e do município, o código correspondente precisa estar devidamente inserido no campo estruturado da <strong>Avaliação (A) / Lista de Problemas</strong>!",
+            "<strong>Registro de Sinais Vitais e Exames Avaliados em Campos Específicos:</strong> Se o médico aferir a Pressão Arterial de um hipertenso e escrever apenas \"PA 120x80\" no texto livre do Subjetivo ou Objetivo sem preencher o campo numérico específico de Pressão Arterial do PEC, o SISAB computará que aquele hipertenso <strong>não teve a pressão aferida no semestre</strong>! Da mesma forma, ao avaliar o resultado da Hemoglobina Glicada (HbA1c) ou do citopatológico do colo uterino, é indispensável registrar a avaliação e a solicitação nos campos estruturados do SOAP.",
+            "<strong>Vigilância Epidemiológica e Gestão da Clínica (Listas de Busca Ativa):</strong> O uso consistente da CIAP-2 permite extrair relatórios automatizados em segundos: por exemplo, listar todos os pacientes do território com <code>T90</code> (DM2) que não têm registro de exame do pé diabético nos últimos 12 meses, ou todas as mulheres de 25 a 64 anos sem registro de coleta de citopatológico nos últimos 3 anos para busca ativa pelos Agentes Comunitários de Saúde (ACS)."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Prontuário Familiar vs. Prontuário Individual Integrado"
+        ],
+        [
+          "p",
+          "Na tradição da Medicina de Família e Comunidade brasileira e internacional, o prontuário na APS articula duas dimensões complementares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>O Prontuário Individual (orientado por problemas em SOAP):</strong> Documenta a trajetória biopsicossocial singular de cada cidadão, resguardando o sigilo individual (por exemplo, um adolescente de 16 anos ou um cônjuge que revela uma IST ou questão íntima em consulta tem direito a que essa informação conste exclusivamente em seu registro individual, sem ficar exposta na folha coletiva de outros membros da família).",
+            "<strong>O Envelope / Cadastro Familiar (Prontuário Familiar):</strong> Agrega e vincula os prontuários individuais de todos os moradores de um mesmo domicílio/núcleo familiar sob um identificador familiar comum (Ficha de Cadastro Domiciliar e Territorial no e-SUS APS), contendo os instrumentos de abordagem familiar compartilhados pela equipe: o <strong>Genograma</strong>, o <strong>Ecomapa</strong>, o estágio do <strong>Ciclo de Vida Familiar</strong>, as condições de saneamento e moradia, o risco familiar (ex: Escala de Risco Familiar de Coelho-Savassi) e o histórico de conferências familiares ou Projetos Terapêuticos Singulares (PTS) domiciliares."
+          ]
+        ],
+        [
+          "3",
+          "7.3 Comissão de Revisão de Prontuários e Regras de Ouro da Escrita Médica"
+        ],
+        [
+          "p",
+          "De acordo com a <strong>Resolução CFM nº 1.638/2002</strong>, toda instituição de saúde deve manter uma <strong>Comissão de Revisão de Prontuários</strong>, encarregada de auditar periodicamente a qualidade técnica e ética dos registros. As boas práticas inegociáveis de documentação clínica exigem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Legibilidade Absoluta (Art. 87 do CEM):</strong> É vedado ao médico deixar de elaborar prontuário legível para cada paciente. No prontuário eletrônico, a legibilidade caligráfica é substituída pela clareza redacional: <strong>evitar siglas obscuras, ambíguas ou inventadas</strong> (ex: escrever \"PCTE C/ D.P.I. EM H.I.D.\" que ninguém fora daquele serviço compreende).",
+            "<strong>Proibição de Rasuras, Líquido Corretivo ou Supressão Retroativa:</strong> Em prontuário físico de papel, jamais usar corretivo (\"branquinho\"), arrancar folhas ou rabiscar de modo a ocultar o texto anterior. Caso ocorra erro de escrita no papel, utiliza-se a expressão técnica <em>\"digo\"</em> (ex: <em>\"ausculta pulmonar com estertores em base direita, digo, base esquerda\"</em>) ou traça-se uma linha simples sobre o termo incorreto mantendo-o legível e justificando a retificação logo a seguir, com data, hora e assinatura. No prontuário eletrônico (PEC e-SUS APS), após o fechamento/assinatura da consulta, o registro torna-se imutável para fins de auditoria (qualquer adendo posterior gera um novo registro temporal rastreável — <em>audit trail</em>).",
+            "<strong>Linguagem Respeitosa, Descritiva e Isenta de Julgamento Moral ou Pejorativo:</strong> O prontuário pertence ao paciente e será lido por ele! Jamais registrar adjetivos depreciativos, irônicos ou moralistas (ex: <em>\"paciente poliqueixosa e histérica\"</em>, <em>\"mãe negligente e preguiçosa\"</em>, <em>\"paciente mente sobre a dieta\"</em>). Deve-se descrever o comportamento de forma técnica, objetiva e respeitosa, utilizando aspas para falas literais relevantes (ex: <em>\"Paciente relata múltiplos sintomas somáticos e demonstra intensa ansiedade durante a entrevista; refere dificuldade financeira e de organização doméstica para seguir as orientações nutricionais\"</em>).",
+            "<strong>Identificação Completa do Profissional:</strong> Data, horário do atendimento, nome completo do médico e número de inscrição no Conselho Regional de Medicina (CRM) com assinatura física ou eletrônica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-soap-estruturados",
+      0,
+      [
+        [
+          "2",
+          "8. Quatro Casos Clínicos Complexos Integralmente Estruturados em Formato SOAP e Codificados com CIAP-2 e CID-10"
+        ],
+        [
+          "p",
+          "Para demonstrar a aplicação prática impecável do Registro Clínico Centrado na Pessoa (RCCP) em formato <strong>SOAP</strong> na Atenção Primária à Saúde, apresentamos a seguir 4 casos clínicos completos (abrangendo multimorbidade crônica, sintoma indiferenciado agudo, saúde mental/violência e puericultura/prevenção), com transcrição exata de como cada consulta deve ser registrada nas letras <strong>S, O, A e P</strong> e codificada pela <strong>CIAP-2</strong> e <strong>CID-10</strong>."
+        ],
+        [
+          "3",
+          "Caso Clínico 1 (SOAP): Multimorbidade Crônica, Exames Trazidos, Queixa Aguda e SIFE"
+        ],
+        [
+          "p",
+          "<strong>Contexto da Consulta:</strong> Dona Raimunda, 61 anos, aposentada, comparece à consulta programada na UBS acompanhada da filha. Ela possui diagnóstico prévio de Hipertensão Arterial Sistêmica e Diabetes Mellitus tipo 2 há 8 anos. Vem mostrar os exames laboratoriais solicitados há 3 semanas, renovar a receita de losartana 50 mg (12/12h) e metformina 850 mg (2x/dia) e queixa-se também de uma \"queimação na boca do estômago\" e \"tosse seca chata\" há 10 dias. Relata que começou a tomar diclofenaco sódico 50 mg de 8/8h por conta própria há 12 dias por causa de uma dor no joelho direito após limpar o quintal, e que a queimação no estômago começou logo depois. Conta que tem medo de estar com úlcera perfurada porque seu falecido marido operou de úlcera no passado, e espera que o médico troque o remédio da dor no joelho e veja se os exames do diabetes estão bons. Nega hematêmese, melena, vômitos, perda ponderal, disfagia ou febre. Ao exame físico: BEG, corada, hidratada; PA = 134x82 mmHg, FC = 76 bpm, Peso = 74 kg, Estatura = 1,58 m (IMC = 29,6 kg/m²). Ausculta cardíaca e pulmonar normais. Abdome globoso, flácido, doloroso discretamente à palpação profunda em epigástrio, sem visceromegalias ou irritação peritoneal. Joelho direito com crepitação fina à flexo-extensão, sem calor, rubor ou derrame articular (sinal da tecla negativo). Exames dos pés com sensibilidade protetora preservada ao monofilamento de 10g e pulsos pediosos e tibiais posteriores amplos e simétricos. Exames laboratoriais trazidos (datados de 05/10/2026): Hb 13,4 g/dL, Glicemia de jejum 118 mg/dL, HbA1c 6,8%, Creatinina 0,85 mg/dL (TFGe = 74 mL/min/1,73m²), Potássio 4,3 mEq/L, Colesterol total 182 mg/dL, HDL 48 mg/dL, LDL 98 mg/dL, Triglicerídeos 180 mg/dL, Relação albumina/creatinina urinária = 12 mg/g."
+        ],
+        [
+          "4",
+          "Registro Clínico Oficial no Prontuário (Formato SOAP — RCCP / e-SUS APS):"
+        ],
+        [
+          "u",
+          [
+            "<strong>S (Subjetivo):</strong>\n    <ul>\n      <li><em>Motivos da Consulta (CIAP-2):</em> Resultados de exames / procedimentos (<code>A60</code>); Prescrição / renovação de medicação cardiovascular/endócrina (<code>K50</code> / <code>T50</code>); Dor epigástrica (<code>D02</code>); Dor no joelho (<code>L15</code>); Medo de outra doença digestiva (<code>D27</code>).",
+            "<em>História e SIFE:</em> Comparece acompanhada da filha para avaliação de exames de rotina de HAS e DM2 e renovação de prescrição contínua (em uso regular de Losartana 50 mg 12/12h e Metformina 850 mg 2x/dia, boa adesão relatada). Refere início há 10 dias de dor epigástrica em queimação de moderada intensidade, pós-prandial, associada a tosse seca noturna ocasional, iniciada após automedicação com diclofenaco 50 mg 8/8h há 12 dias devido a dor mecânica em joelho direito desencadeada por esforço doméstico. <strong>S (Sentimentos):</strong> Receio importante de estar com úlcera gástrica grave. <strong>I (Ideias):</strong> Associa a queimação ao uso do anti-inflamatório e lembra do marido que operou de úlcera. <strong>F (Funcionalidade):</strong> Dor epigástrica atrapalha o início do sono; dor no joelho melhora ao repouso e piora ao subir degraus, sem impedir caminhadas no plano. <strong>E (Expectativas):</strong> Deseja saber se o diabetes está controlado e substituir o remédio do joelho por um que não ataque o estômago.",
+            "<em>Revisão de Sistemas (Pertinentes Negativos):</em> Nega dispneia, dor torácica, febre, disfagia, odinofagia, vômitos, hematêmese, melena, hematoquezia ou perda ponderal."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O (Objetivo):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Ectoscopia e Antropometria/Sinais Vitais:</em> BEG, lúcida e orientada, corada, hidratada, anictérica, acianótica, eupneica. PA: 134x82 mmHg | FC: 76 bpm | FR: 16 irpm | Peso: 74,0 kg | Estatura: 1,58 m | IMC: 29,64 kg/m² (Sobrepeso).",
+            "<em>Exame Segmentar:</em> ACV: RCR em 2T, BNF, sem sopros. AR: MV+ universalmente audível, sem ruídos adventícios. Abdome: globoso, ruídos hidroaéreos presentes, flácido, dor leve à palpação profunda em região epigástrica, sem defesa abdominal, descompressão brusca negativa, fígado e baço não palpáveis. Locomotor (Joelho D): ausência de edema, calor ou hiperemia; crepitação articular palpável à mobilização passiva, sem gaveta ou instabilidade ligamentar, sinal da tecla negativo. Exame dos pés (Pé Diabético): pele íntegra, sem calosidades ou fissuras, pulsos pediosos e tibiais posteriores 4+/4+ simétricos, sensibilidade protetora preservada ao monofilamento Semmes-Weinstein 10g e sensibilidade vibratória normal ao diapasão 128 Hz.",
+            "<em>Exames Complementares Trazidos (Lab de 05/10/2026):</em> Hb: 13,4 g/dL | Ht: 40% | Glicemia de jejum: 118 mg/dL | HbA1c: 6,8% | Creatinina: 0,85 mg/dL (TFGe CKD-EPI: 74 mL/min/1,73m²) | K+: 4,3 mEq/L | CT: 182 mg/dL | HDL: 48 mg/dL | LDL: 98 mg/dL | TG: 180 mg/dL | Albuminúria isolada (RAC): 12 mg/g."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>A (Avaliação — Lista de Problemas Abordados na Consulta, SEM interrogações):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>1.</strong> Diabetes Mellitus não insulino-dependente — compensado / dentro da meta glicêmica (<code>CIAP-2: T90</code> | <code>CID-10: E11.9</code>).",
+            "<strong>2.</strong> Hipertensão Arterial Sistêmica não complicada — controlada (<code>CIAP-2: K86</code> | <code>CID-10: I10</code>).",
+            "<strong>3.</strong> Dor epigástrica / Dispepsia induzida por uso de AINE (<code>CIAP-2: D02 / D07</code> | <code>CID-10: K30</code>) + Efeito adverso de medicação em dose correta / automedicação com AINE (<code>CIAP-2: A85</code>).",
+            "<strong>4.</strong> Osteoartrite de joelho (gonartrose) à direita (<code>CIAP-2: L90</code> | <code>CID-10: M17.1</code>).",
+            "<strong>5.</strong> Excesso de peso / Sobrepeso (<code>CIAP-2: T83</code> | <code>CID-10: E66.0</code>)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>P (Plano — Estruturado por Problemas e Pactuado com a Paciente):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Plano Terapêutico e Desprescrição:</em>\n        <ul>\n          <li>Para Problemas #1 e #2: Mantidos Losartana potássica 50 mg VO de 12/12h, Metformina 850 mg VO no almoço e jantar, e Sinvastatina 20 mg VO à noite (renovada receita contínua por 6 meses — <code>K50</code>, <code>T50</code>).",
+            "Para Problema #3: <strong>Suspenso imediatamente o Diclofenaco sódico</strong> (desprescrição de AINE por alto risco gastrointestinal, renal e pressórico em idosa hipertensa e diabética). Prescrito Omeprazol 20 mg VO em jejum pela manhã por 4 semanas (<code>D50</code>) e medidas antirrefluxo (elevar cabeceira da cama, evitar deitar-se logo após o jantar).",
+            "Para Problema #4 e #5: Prescrito Paracetamol 500 mg a 750 mg VO se dor aguda eventual (máximo 6/6h) e compressas mornas locais; encaminhada para grupo de fortalecimento muscular de quadríceps e hidroginástica com fisioterapeuta da eMulti (<code>L68</code>)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><em>Plano Educacional e SIFE:</em> Parabenizada pelo excelente controle do diabetes (HbA1c 6,8%) e da pressão arterial. Explicado em linguagem acessível o mecanismo pelo qual o anti-inflamatório agrediu a mucosa do estômago e que não há sinais de úlcera perfurada. Aplicado <em>Teach-Back</em> com a paciente e a filha sobre a proibição de uso futuro de AINEs (diclofenaco, ibuprofeno, nimesulida, cetoprofeno). Orientada <strong>Rede de Segurança (<em>Safety Netting</em>)</strong>: retornar imediatamente caso surjam vômitos escuros, fezes pretas como piche (melena), dor abdominal intensa refratária ou dificuldade para engolir.</li>\n      <li><em>Plano Diagnóstico e de Seguimento:</em> Não há indicação de endoscopia digestiva alta no momento (início agudo claramente associado ao AINE, sem sinais de alarme); reavaliar sintomas dispépticos em 4 semanas (se persistirem após suspensão do AINE e curso de IBP, solicitar EDA). Retorno programado de rotina para HAS/DM2 em 6 meses (ou em 30 dias se persistência da dispepsia).</li>\n    </ul>\n  </li>\n</ul>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2 (SOAP): Queixa Indiferenciada Aguda na APS (A Regra da \"Não-Interrogação\" na Avaliação)"
+        ],
+        [
+          "p",
+          "<strong>Contexto da Consulta:</strong> Lucas, 24 anos, estudante universitário, previamente hígido, comparece ao acolhimento de demanda espontânea da UBS relatando febre medida de 38,5°C há 36 horas, acompanhada de cefaleia frontal, mialgia difusa em dorso e panturrilhas e inapetência. Conta que na sua rua dois vizinhos tiveram dengue na semana passada e está preocupado de desenvolver dengue hemorrágica, mas também pergunta se não pode ser gripe ou Covid-19. Nega tosse, coriza, odinofagia, dispneia, dor abdominal, vômitos persistentes, sangramento gengival, epistaxe, petéquias, disúria ou diarreia. Ao exame físico: BEG, lúcido, corado, hidratado, acianótico. Tax = 37,8°C, PA = 118x74 mmHg (sentado) e 116x76 mmHg (em pé — sem hipotensão postural), FC = 88 bpm, FR = 16 irpm, SpO₂ = 98% AA, Peso = 70 kg. Orofaringe sem hiperemia ou exsudato; otoscopia normal; ausculta cardiopulmonar limpa; abdome plano, flácido, indolor à palpação profunda em hipocôndrio direito e epigástrio, fígado não palpável; ausência de exantema ou petéquias; Prova do Laço realizada no consultório: negativa (apenas 4 petéquias no quadrado de 2,5 x 2,5 cm)."
+        ],
+        [
+          "4",
+          "Registro Clínico Oficial no Prontuário (Formato SOAP):"
+        ],
+        [
+          "u",
+          [
+            "<strong>S (Subjetivo):</strong>\n    <ul>\n      <li><em>Motivos da Consulta (CIAP-2):</em> Febre (<code>A03</code>); Cefaleia (<code>N01</code>); Dor muscular / Mialgia (<code>L18</code>); Medo de outra doença infecciosa (<code>A27</code>).",
+            "<em>História e SIFE:</em> Quadro agudo iniciado há 36 horas de febre (até 38,5°C), cefaleia holocraniana com predomínio frontal/retro-orbitário e mialgia generalizada. <strong>S/I (Sentimentos e Ideias):</strong> Preocupado com risco de dengue grave pois dois vizinhos da mesma rua tiveram dengue há 7 dias; cogita também gripe ou Covid-19. <strong>F (Funcionalidade):</strong> Faltou às aulas da faculdade ontem e hoje por prostração, mas mantém boa aceitação de líquidos por via oral. <strong>E (Expectativas):</strong> Deseja fazer exame de sangue, receber orientação segura de hidratação e atestado para abono de faltas na universidade.",
+            "<em>Pertinentes Negativos (Pesquisa de Sinais de Alarme da Dengue e Sintomas Respiratórios):</em> Nega dor abdominal intensa e contínua, vômitos persistentes, tontura postural/lipotimia, sangramento de mucosas (gengivorragia, epistaxe, hematúria), sonolência ou irritabilidade. Nega tosse, coriza, obstrução nasal, odinofagia ou dispneia."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O (Objetivo):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Sinais Vitais e Antropometria:</em> BEG, lúcido, corado, mucosas úmidas, enchimento capilar &lt; 2 segundos. Tax: 37,8°C | PA sentado: 118x74 mmHg | PA ortostática: 116x76 mmHg (ausência de convergência pressórica ou hipotensão postural) | FC: 88 bpm | FR: 16 irpm | SpO₂: 98% AA | Peso: 70,0 kg.",
+            "<em>Exame Segmentar e Prova do Laço:</em> Pele sem exantema ou equimoses espontâneas. <strong>Prova do Laço: Negativa</strong> (4 petéquias na área demarcada). Oroscopia sem alterações. AR e ACV fisiológicos. Abdome flácido, indolor à palpação superficial e profunda, sem hepatomegalia dolorosa."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>A (Avaliação — Observando o Nível de Certeza de Weed, SEM usar \"Dengue?\"):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>1.</strong> Febre / Síndrome febril aguda indiferenciada — vínculo epidemiológico para Dengue Grupo A (<code>CIAP-2: A03 / A77</code> — Doença viral aguda). <em>[Nota pedagógica: se o teste rápido NS1 for realizado no ato na UBS e vier positivo no \"O\", aí sim registra-se diretamente <code>A77 — Dengue confirmada / CID-10 A90</code>; caso ainda não haja confirmação laboratorial, mantém-se Febre A03 ou Virosa aguda A77 sem ponto de interrogação!].</em>"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>P (Plano):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Plano Diagnóstico e Epidemiológico:</em> Solicitado Teste Rápido de Antígeno NS1 para Dengue na unidade e Hemograma completo com contagem de plaquetas (<code>A34</code>). Realizada notificação compulsória de caso suspeito de Dengue no SINAN e acionada equipe de vigilância/ACE para bloqueio de foco vetorial no quarteirão.",
+            "<em>Plano Terapêutico (Manejo Dengue Grupo A — MS):</em> Prescrita hidratação oral vigorosa calculada pelo peso (60 mL/kg/dia × 70 kg = <strong>4.200 mL/dia</strong>, sendo 1/3 com sais de reidratação oral [1,4 L] e 2/3 com água, sucos, água de coco e chás [2,8 L]). Prescrito Dipirona 500 mg a 1 g VO de 6/6h se dor ou febre (<code>A50</code>).",
+            "<em>Plano Educacional e Administrativo:</em> Orientado enfaticamente a <strong>não utilizar ácido acetilsalicílico (AAS) nem anti-inflamatórios não esteroidais (ibuprofeno, diclofenaco, nimesulida, cetoprofeno)</strong> pelo risco hemorrágico. Entregue Cartão de Acompanhamento da Dengue preenchido. Explicada a <strong>Rede de Segurança (<em>Safety Netting</em>)</strong>: atenção máxima no período de defervescência da febre (entre o 3º e o 7º dia de doença) para sinais de alarme (dor abdominal intensa e contínua, vômitos persistentes, tontura ao levantar, sangramentos, prostração extrema), devendo retornar imediatamente se surgirem. Emitido atestado médico de 3 dias (<code>A62</code>) com reavaliação clínica programada na UBS em 48 horas (ou no dia de queda da febre)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3 (SOAP): Saúde Mental, Luto e Problemas Sociais (Capítulo Z da CIAP-2)"
+        ],
+        [
+          "p",
+          "<strong>Contexto da Consulta:</strong> Cláudia, 44 anos, costureira autônoma, comparece à consulta agendada referindo dificuldade para dormir, cansaço matinal e choro frequente há 3 semanas, desde que seu filho único de 22 anos mudou-se para outro estado a trabalho e seu marido perdeu o emprego na metalúrgica, gerando atraso de dois meses no aluguel. Diz que sente o coração acelerar quando pensa nas contas, mas que consegue costurar suas encomendas durante o dia e sente prazer quando conversa com a irmã ou vai à igreja no domingo. Nega ideação suicida, nega desejo de morte, nega anedonia total, nega delírios ou alucinações, nega abuso de álcool ou psicotrópicos. Ao exame físico: BEG, lúcida, orientada, contato visual preservado, humor reativo (emociona-se ao falar do filho e sorri ao mostrar foto dele no celular), afeto congruente, discurso coerente, sem lentificação psicomotora. PA = 120x78 mmHg, FC = 74 bpm, ausculta cardiopulmonar e exame tireoidiano normais."
+        ],
+        [
+          "4",
+          "Registro Clínico Oficial no Prontuário (Formato SOAP):"
+        ],
+        [
+          "u",
+          [
+            "<strong>S (Subjetivo):</strong>\n    <ul>\n      <li><em>Motivos da Consulta (CIAP-2):</em> Perturbação do sono / Insônia (<code>P06</code>); Sentir-se triste (<code>P03</code>); Sentir-se ansiosa/nervosa (<code>P01</code>); Problema financeiro (<code>Z01</code>).",
+            "<em>História e SIFE:</em> Relata insônia inicial (demora 2 horas para adormecer pensando nas dívidas) e tristeza reativa há 3 semanas, coincidindo com dois eventos vitais estressores agudos: saída do filho único de casa (transição para estágio de lançamento dos filhos) e demissão do marido com atraso no aluguel. <strong>S (Sentimentos):</strong> Saudade intensa do filho (\"casa vazia\") e medo de sofrer ação de despejo. <strong>I (Ideias):</strong> Teme estar \"entrando em depressão profunda\" e acha que precisa de \"um calmante tarja preta para apagar à noite\". <strong>F (Funcionalidade):</strong> Capacidade laboral mantida (entrega as costuras no prazo) e preservação do prazer hedônico no convívio com a irmã e comunidade religiosa. <strong>E (Expectativas):</strong> Gostaria de algo para ajudar a dormir e desabafar sobre o momento difícil.",
+            "<em>Pertinentes Negativos Psiquiátricos:</em> Nega anedonia generalizada, nega desesperança persistente, nega ideação de autolesão, morte ou suicídio (passiva ou ativa), nega episódios prévios de mania/hipomania, nega sintomas tireoidianos."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O (Objetivo):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Exame do Estado Mental e Físico:</em> BEG, asseada, cooperativa, lúcida e orientada alo e autopsiquicamente. Atenção e memória preservadas. Humor discretamente hipotímico/ansioso, porém amplamente <strong>reativo e modulável</strong> aos estímulos positivos da entrevista; afeto congruente. Pensamento de curso, forma e conteúdo normais (preocupações realistas com finanças, sem ideias delirantes de ruína ou culpa patológica, sem ideação suicida). Psicomotricidade normal. PA: 120x78 mmHg | FC: 74 bpm | Tireoide tópica, fibroelástica, sem nódulos."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>A (Avaliação — Evitando o Sobrediagnóstico Psiquiátrico e Usando os Capítulos P e Z):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>1.</strong> Perturbação do sono / Insônia reativa (<code>CIAP-2: P06</code>).",
+            "<strong>2.</strong> Sensação de ansiedade e tristeza situacional — reação de ajustamento a crise normativa (saída do filho) e paranormativa (desemprego conjugal), sem critérios para Transtorno Depressivo Maior (<code>CIAP-2: P01 / P03 / P02</code> — Reação aguda ao estresse).",
+            "<strong>3.</strong> Problema econômico / pobreza / dificuldade financeira familiar (<code>CIAP-2: Z01</code> | <code>CID-10: Z59.6</code>).",
+            "<strong>4.</strong> Problema relacionado com desemprego do parceiro (<code>CIAP-2: Z06 / Z12</code>)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>P (Plano — Prevenção Quaternária e Abordagem Psicossocial):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Plano Terapêutico e Prevenção Quaternária:</em> Praticada <strong>Prevenção Quaternária</strong> — explicado com empatia que seu quadro representa uma resposta humana compreensível às mudanças na família e à pressão financeira (e não uma doença psiquiátrica grave), e discutidos os riscos de dependência, tolerância e sonolência diurna dos benzodiazepínicos (\"tarja preta\"), decidindo-se em conjunto por <strong>não iniciar psicofármacos nem benzodiazepínicos</strong> neste momento.",
+            "<em>Plano Não Farmacológico e Comunitário:</em> Orientadas medidas estruturadas de Higiene do Sono (evitar telas/celular na cama, horário regular de despertar, ritual de relaxamento noturno, chá de camomila/passiflora — <code>P45</code>). Articulado atendimento com Assistente Social e Psicóloga da eMulti (<code>P68</code>, <code>Z68</code>) para orientação sobre benefícios eventuais/programas sociais do CRAS e espaço de escuta breve focada na transição familiar. Convidada para o grupo de caminhada e artesanato comunitário da UBS.",
+            "<em>Plano de Seguimento:</em> Retorno programado em 3 semanas para reavaliação longitudinal do sono e do humor; orientada Rede de Segurança (procurar a equipe antes caso surja piora acentuada do humor, incapacidade de trabalhar ou pensamentos negativos sobre a vida)."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4 (SOAP): Consulta de Manutenção da Saúde, Rastreamento e Decisão Compartilhada"
+        ],
+        [
+          "p",
+          "<strong>Contexto da Consulta:</strong> Sr. Eduardo, 54 anos, bancário, assintomático, comparece para avaliação periódica de saúde (\"check-up\"). Não possui doenças crônicas diagnosticadas, não usa medicamentos contínuos, nega tabagismo, bebe 1 taça de vinho aos sábados e caminha 30 minutos 4 vezes por semana. Pai teve infarto aos 72 anos; nega história familiar de câncer de próstata, cólon ou mama. Diz que veio porque a esposa insistiu para ele \"fazer todos os exames da próstata (PSA e toque), teste ergométrico na esteira e vitaminas\". Ao exame físico: BEG, corado. PA = 124x78 mmHg, FC = 68 bpm, Peso = 76 kg, Estatura = 1,75 m (IMC = 24,8 kg/m²), Circunferência abdominal = 88 cm. Exame cardiovascular, pulmonar e abdominal normais."
+        ],
+        [
+          "4",
+          "Registro Clínico Oficial no Prontuário (Formato SOAP):"
+        ],
+        [
+          "u",
+          [
+            "<strong>S (Subjetivo):</strong>\n    <ul>\n      <li><em>Motivos da Consulta (CIAP-2):</em> Exame médico / Avaliação de saúde de rotina / Prevenção (<code>A98</code> / <code>A30</code>); Medo de câncer genital masculino / Rastreamento prostático (<code>Y26</code> / <code>Y30</code>).",
+            "<em>História e SIFE:</em> Comparece assintomático para revisão periódica de saúde. Pratica caminhada 120 min/semana, alimentação balanceada, não tabagista, etilismo social esporádico (AUDIT-C = 1 ponto). Antecedente familiar: pai teve IAM aos 72 anos (não precoce); nega história familiar de neoplasia de próstata ou colorretal em parentes de 1º grau. <strong>S/I (Sentimentos e Ideias):</strong> Sente-se saudável, mas acredita que todo homem após os 50 anos deve fazer check-up completo anual. <strong>E (Expectativas):</strong> Solicita dosagem de PSA, teste ergométrico em esteira e dosagem de vitaminas por recomendação da esposa.",
+            "<em>Pertinentes Negativos:</em> Nega sintomas do trato urinário inferior (jato forte, sem noctúria, sem hesitação ou urgência miccional), nega hematúria, nega alteração do hábito intestinal ou hematoquezia, nega dor torácica ou dispneia aos esforços."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>O (Objetivo):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Sinais Vitais e Antropometria:</em> BEG, eutrófico, corado. PA: 124x78 mmHg | FC: 68 bpm | Peso: 76,0 kg | Estatura: 1,75 m | IMC: 24,81 kg/m² (Eutrofia) | Circunferência abdominal: 88 cm.",
+            "<em>Exame Segmentar:</em> ACV: RCR 2T, BNF, sem sopros, pulsos periféricos cheios e simétricos. AR: MV+ sem ruídos adventícios. Abdome: plano, flácido, indolor, sem massas ou visceromegalias. Cartão vacinal verificado: dT (dupla adulto) realizada há 12 anos; vacina de Hepatite B com 3 doses completas; Febre Amarela com dose única documentada."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>A (Avaliação):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>1.</strong> Manutenção da saúde / Medicina preventiva / Indivíduo sem doença (<code>CIAP-2: A98 / A97</code> | <code>CID-10: Z00.0</code>)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>P (Plano — Rastreamento Baseado em Evidências e Decisão Compartilhada):</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Plano Diagnóstico / Rastreamento Baseado em Evidências (USPSTF / MS / SBMFC):</em> Solicitados apenas os exames de rastreamento com grau de recomendação A/B para homem de 54 anos assintomático: Glicemia de jejum / HbA1c, Perfil Lipídico (Colesterol total, HDL, Triglicerídeos) para cálculo de risco cardiovascular global, Pesquisa de Sangue Oculto nas Fezes (PSOF imunocitoquímica para rastreamento de câncer colorretal de 50 a 75 anos) e Testes Rápidos para HIV, Sífilis, Hepatite B e Hepatite C (<code>A34</code>, <code>D36</code>).",
+            "<em>Plano Educacional, Decisão Compartilhada e Prevenção Quaternária:</em>\n        <ul>\n          <li>Realizada <strong>Decisão Compartilhada sobre o rastreamento de câncer de próstata (PSA/toque retal)</strong> utilizando ferramenta gráfica de comunicação de risco (frequências naturais em 1.000 homens rastreados por 10 anos): explicados a ausência de redução na mortalidade geral e os riscos reais de resultados falso-positivos, complicações de biópsia, sobrediagnóstico de tumores indolentes e sequelas de sobretratamento (incontinência urinária e disfunção erétil). Após compreender os números e discutir suas preferências, o paciente optou conscientemente por <strong>não realizar o rastreamento com PSA</strong>.",
+            "Explicado por que o Teste Ergométrico em esteira e a dosagem rotineira de vitaminas (como vitamina D ou B12) não são recomendados em pessoas assintomáticas de baixo risco (alto índice de falso-positivos e cascatas de cateterismo iatrogênico)."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n      <li><em>Plano Preventivo / Imunização e Seguimento:</em> Encaminhado à sala de vacina hoje para dose de reforço da vacina <strong>dT (dupla adulto)</strong> (<code>A44</code> — última há &gt; 10 anos). Retorno agendado com resultados dos exames de rastreamento.</li>\n    </ul>\n  </li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-residencia-soap-ciap2",
+      0,
+      [
+        [
+          "2",
+          "9. Questões Comentadas de Residência Médica, Revalida e ENAMED (SOAP, RMOP e CIAP-2)"
+        ],
+        [
+          "p",
+          "A seguir, analisamos e resolvemos em profundidade 8 questões de alta complexidade sobre Registro Clínico Orientado por Problemas (RMOP), estrutura do SOAP, Classificação Internacional de Atenção Primária (CIAP-2) e aspectos ético-legais do prontuário médico."
+        ],
+        [
+          "3",
+          "Questão 1 — A Regra de Lawrence Weed para a Avaliação (A) no SOAP"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Mulher de 29 anos comparece à consulta de demanda espontânea na Unidade de Saúde da Família relatando dor em fossa ilíaca direita há 24 horas, associada a hiporexia, sem febre e sem atraso menstrual. Ao exame físico, apresenta dor leve à palpação profunda em fossa ilíaca direita, sinal de Blumberg negativo e sinal de Giordano negativo. Ainda não realizou exames laboratoriais ou de imagem. Ao realizar o registro clínico no formato SOAP (Registro Médico Orientado por Problemas de Lawrence Weed), como o médico de família deve preencher corretamente o campo <strong>Avaliação (A)</strong>?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> A: Apendicite aguda? / Cisto ovariano hemorrágico a esclarecer?",
+            "<strong>B)</strong> A: Dor abdominal localizada em fossa ilíaca direita (CIAP-2: D06).",
+            "<strong>C)</strong> A: Abdome agudo cirúrgico confirmado (CID-10: K35), solicitando laparoscopia diagnóstica.",
+            "<strong>D)</strong> A: Paciente refere dor em fossa ilíaca direita há 24 horas; abdome flácido com Blumberg negativo.",
+            "<strong>E)</strong> O campo Avaliação (A) deve ser deixado totalmente em branco até que a paciente retorne com o laudo da tomografia computadorizada de abdome."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> De acordo com os fundamentos do Registro Médico Orientado por Problemas (RMOP) de Lawrence Weed e as regras da CIAP-2, um problema deve ser registrado na letra <strong>A (Avaliação)</strong> no exato grau de certeza e resolução diagnóstica disponível naquele encontro, <strong>sendo terminantemente proibido o uso de pontos de interrogação (\"?\") ou termos como \"a esclarecer\" / \"suspeita de\"</strong>. Como o diagnóstico etiológico ainda não está firmado, o problema real e inequívoco naquele momento é o sintoma: <strong>Dor abdominal localizada (CIAP-2: D06)</strong>.",
+            "<strong>Refutação da alternativa A (Incorreta):</strong> É a pegadinha mais clássica das provas! Escrever \"Apendicite?\" ou \"Cisto ovariano?\" com ponto de interrogação é um vício do modelo hospitalar tradicional e está incorreto no método SOAP.",
+            "<strong>Refutação das alternativas C, D e E (Incorretas):</strong> Firmar um diagnóstico cirúrgico sem evidência (C) é erro médico; repetir a anamnese e o exame físico na letra A (D) confunde S/O com A; e deixar a Avaliação em branco (E) inviabiliza a codificação do encontro no prontuário."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 — Classificação de Dados no SOAP (Onde entram os Exames Trazidos e o SIFE?)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Homem de 57 anos comparece à consulta agendada na UBS. Durante o atendimento, colhem-se os seguintes elementos: (I) O paciente diz que está com muito medo de ficar impotente caso precise tomar remédio para pressão alta; (II) Ele entrega ao médico o resultado de um ecocardiograma transtorácico realizado há 15 dias que mostra hipertrofia ventricular esquerda concêntrica leve e fração de ejeção de 64%; (III) O médico ausculta bulhas rítmicas normofonéticas sem sopros e afere PA = 152x96 mmHg; (IV) O médico solicita dosagem de creatinina sérica, potássio e exame sumário de urina para complementar a investigação. No método SOAP, os elementos I, II, III e IV devem ser registrados, respectivamente, nas letras:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> S — S — O — P.",
+            "<strong>B)</strong> S — O — O — P.",
+            "<strong>C)</strong> A — O — O — P.",
+            "<strong>D)</strong> S — P — O — A.",
+            "<strong>E)</strong> O — O — S — P."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong>\n    <ul>\n      <li><strong>Item I (S — Subjetivo):</strong> O medo de disfunção erétil com o anti-hipertensivo faz parte da exploração da experiência da doença (<em>Illness</em> — letra S de Sentimentos/Ideias do acrônimo <strong>SIFE</strong>), que é registrada integralmente no <strong>Subjetivo (S)</strong>.",
+            "<strong>Item II (O — Objetivo):</strong> Resultados de exames complementares (laboratoriais, de imagem, gráficos) trazidos pelo paciente para a consulta — mesmo que realizados dias ou semanas antes — são dados estritamente mensuráveis e pertencem sempre ao <strong>Objetivo (O)</strong>!",
+            "<strong>Item III (O — Objetivo):</strong> Achados da ausculta cardíaca e sinais vitais aferidos na consulta pertencem ao <strong>Objetivo (O)</strong>.",
+            "<strong>Item IV (P — Plano):</strong> A solicitação de novos exames complementares faz parte do <strong>Plano Diagnóstico (P)</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 — Estrutura Biaxial da CIAP-2 (Capítulos e Componentes)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> A Classificação Internacional de Atenção Primária — 2ª Edição (CIAP-2 / WONCA) é utilizada nacionalmente no Prontuário Eletrônico do Cidadão (PEC e-SUS APS). Sobre a estrutura lógica e as regras de codificação da CIAP-2, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> É uma classificação monoaxial organizada exclusivamente pela etiologia microbiológica ou genética das doenças, utilizando códigos de 5 dígitos alfanuméricos.",
+            "<strong>B)</strong> Possui estrutura biaxial composta por 17 capítulos representados por letras (baseados predominantemente na localização em sistemas orgânicos, além de geral e problemas sociais) e 7 componentes representados por dois dígitos numéricos (de 01 a 99) que se repetem em todos os capítulos.",
+            "<strong>C)</strong> Na CIAP-2, os números de 01 a 29 correspondem a diagnósticos anatomopatológicos confirmados por biópsia, enquanto os números de 70 a 99 correspondem a sintomas subjetivos.",
+            "<strong>D)</strong> A CIAP-2 não possui códigos para problemas sociais, econômicos ou conjugais, exigindo o uso obrigatório da DSM-5 para essas condições.",
+            "<strong>E)</strong> Uma pneumonia bacteriana aguda deve ser codificada no capítulo \"I\" de Doenças Infecciosas e Parasitárias da CIAP-2."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Descreve com precisão cirúrgica a estrutura biaxial da CIAP-2: 17 capítulos identificados por uma letra (A, B, D, F, H, K, L, N, P, R, S, T, U, W, X, Y, Z) cruzados com 7 componentes padronizados de dois algarismos (Componente 1 [01-29]: Sinais e Sintomas; Componentes 2 a 6 [30-69]: Processos/Procedimentos/Administrativo/Encaminhamentos; Componente 7 [70-99]: Diagnósticos e Doenças).",
+            "<strong>Refutação das demais alternativas:</strong> Os números 01-29 são sintomas/queixas e 70-99 são diagnósticos/doenças (o inverso do afirmado em C); problemas sociais têm capítulo exclusivo na CIAP-2 (Capítulo <strong>Z</strong>, refutando D); e na CIAP-2 a localização anatômica/sistema orgânico tem precedência sobre a etiologia (logo, pneumonia fica no Capítulo <strong>R — Respiratório: R81</strong>, e não existe capítulo \"I\" na CIAP-2, refutando E)."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 — Diferenciação entre os Códigos K85, K86 e K87 na CIAP-2"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante atendimento na UBS, um homem de 42 anos, assintomático e sem diagnóstico prévio de hipertensão arterial, comparece para avaliação odontológica e tem sua pressão arterial aferida na triagem pela primeira vez na vida, registrando PA = 148x94 mmHg (confirmada em segunda medida pelo médico no consultório). O exame físico cardiovascular e o fundo de olho são normais. O médico orienta mudanças no estilo de vida e solicita monitorização residencial da pressão arterial (MRPA) para retorno em 2 semanas. Qual é o código e o título da CIAP-2 que devem ser registrados na Avaliação (A) desta consulta?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> K86 — Hipertensão sem complicações.",
+            "<strong>B)</strong> K87 — Hipertensão com complicações.",
+            "<strong>C)</strong> K85 — Pressão arterial elevada (sem diagnóstico de hipertensão).",
+            "<strong>D)</strong> K77 — Insuficiência cardíaca hipertensiva.",
+            "<strong>E)</strong> A97 — Ausência de doença cardiovascular."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> Como a pressão arterial foi medida em apenas uma única ocasião com valores de estágio 1 (148x94 mmHg) e sem lesão de órgão-alvo, os critérios diagnósticos de Hipertensão Arterial Sistêmica ainda não estão preenchidos (exigem medidas repetidas em visitas distintas ou confirmação por MAPA/MRPA, evitando rotular erroneamente uma hipertensão do avental branco!). Portanto, a CIAP-2 disponibiliza especificamente o código <strong>K85 — Pressão arterial elevada</strong> (para leituras elevadas que ainda não preenchem critérios de doença hipertensiva crônica). Somente após a confirmação diagnóstica na MRPA é que o código passará a ser <strong>K86 (Hipertensão sem complicações)</strong> ou, se houver lesão de órgão-alvo (HVE, retinopatia grau III/IV, nefropatia, AVC/IAM), <strong>K87 (Hipertensão com complicações)</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 — Sigilo Médico e Acesso ao Prontuário pelo Próprio Paciente e por Autoridades"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> À luz do Código de Ética Médica vigente (Resolução CFM nº 2.217/2018), da Lei nº 13.787/2018 e da jurisprudência dos tribunais superiores sobre prontuário médico e sigilo profissional, assinale a alternativa CORRETA:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> O prontuário médico é de propriedade exclusiva da Secretaria Municipal de Saúde, podendo o médico negar o fornecimento de cópia ao paciente caso este pretenda processar a instituição.",
+            "<strong>B)</strong> O prazo mínimo legal para guarda e arquivamento de prontuários médicos em suporte de papel é de 5 (cinco) anos a contar da primeira consulta na unidade.",
+            "<strong>C)</strong> Quando um Delegado de Polícia envia um ofício simples solicitando cópia integral do prontuário de um paciente investigado em inquérito policial (sem consentimento do paciente e sem ordem judicial), o médico da UBS é obrigado a enviar imediatamente o prontuário à delegacia.",
+            "<strong>D)</strong> Os dados do prontuário pertencem ao paciente (cabendo ao médico e à instituição a sua guarda sigilosa), sendo vedado ao médico negar ao paciente ou a seu representante legal o acesso e a cópia integral de seu prontuário, e o prazo mínimo de guarda em papel é de 20 anos a partir do último registro.",
+            "<strong>E)</strong> Com o falecimento do paciente, extingue-se imediatamente o sigilo médico, tornando o prontuário um documento de domínio público acessível a qualquer vizinho ou jornalista."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa D.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa D está correta:</strong> Reúne os três pilares ético-legais fundamentais: (1) o paciente é o proprietário das informações de seu prontuário, e a instituição/médico é apenas o fiel depositário/guardião; (2) é direito absoluto do paciente obter cópia integral de seu prontuário a qualquer tempo (Art. 88 do CEM), inclusive se desejar buscar segunda opinião ou ingressar com ação judicial; e (3) a Lei nº 13.787/2018 fixa o prazo mínimo de <strong>20 anos a partir do último registro</strong> para guarda dos prontuários em papel.",
+            "<strong>Refutação da alternativa C (Incorreta):</strong> Requisição direta de Delegado de Polícia ou Ministério Público sem autorização do paciente e sem ordem judicial específica <strong>não</strong> autoriza o envio do prontuário médico (protegido pela reserva de jurisdição e pelo Art. 89 do CEM).",
+            "<strong>Refutação da alternativa E (Incorreta):</strong> O dever de sigilo permanece mesmo após a morte do paciente (Art. 73 do CEM), sendo o acesso pós-óbito restrito ao cônjuge/companheiro e sucessores legítimos até o 4º grau (Recomendação CFM nº 03/2014), salvo objeção expressa do paciente em vida."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 — Conceito de Episódio de Cuidado na APS"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um paciente de 35 anos comparece à UBS na segunda-feira com queixa de tosse produtiva e febre há 4 dias (1º encontro). Na quarta-feira, retorna trazendo radiografia de tórax que confirma consolidação em base direita, iniciando amoxicilina (2º encontro). Após 10 dias, comparece para revisão clínica, encontrando-se assintomático e com ausculta limpa, recebendo alta do quadro agudo (3º encontro). Na terminologia da WONCA e da CIAP-2, essa sequência completa do início ao desfecho do problema respiratório constitui:"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Três episódios de cuidado independentes e desconectados.",
+            "<strong>B)</strong> Um único Episódio de Cuidado composto por três encontros (consultas), cujo título final na Avaliação é atualizado para Pneumonia (R81).",
+            "<strong>C)</strong> Um problema inativo de caráter hospitalar terciário.",
+            "<strong>D)</strong> Uma falha de longitudinalidade, pois cada consulta na APS deve gerar um novo número de prontuário.",
+            "<strong>E)</strong> Um código administrativo exclusivo (R62) sem registro clínico no SOAP."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Na taxonomia da WONCA/CIAP-2, um <strong>Episódio de Cuidado</strong> engloba todo o acompanhamento de um problema de saúde desde o primeiro contato até a última consulta referente a ele. Neste caso, houve <strong>1 Episódio de Cuidado</strong> (Pneumonia — R81) que abrangeu <strong>3 encontros clínicos (consultas)</strong>, demonstrando a transição evolutiva do registro (de sintoma inicial para diagnóstico confirmado até a resolução)."
+          ]
+        ],
+        [
+          "3",
+          "Questão 7 — Registro de Pertinentes Negativos da Anamnese vs. Exame Físico"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante a redação de um prontuário no formato SOAP de uma criança de 3 anos atendida por diarreia aguda, o médico residente escreve: <em>\"Mãe nega vômitos, nega sangue ou muco nas fezes e refere diurese presente com urina clara. Ao exame: criança ativa, olhos normocavados, lágrima presente ao choro, sinal da prega cutânea desaparece imediatamente, enchimento capilar de 1 segundo.\"</em> Como essas duas frases devem ser distribuídas no SOAP?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Ambas as frases devem ser registradas na letra O (Objetivo), pois tratam de sinais de desidratação.",
+            "<strong>B)</strong> Ambas as frases devem ser registradas na letra S (Subjetivo), pois foram colhidas no consultório sem exames de sangue.",
+            "<strong>C)</strong> A primeira frase (\"Mãe nega vômitos...\") deve ser registrada na letra S (Subjetivo), e a segunda frase (\"Ao exame: criança ativa...\") deve ser registrada na letra O (Objetivo).",
+            "<strong>D)</strong> A primeira frase deve ser registrada na letra A (Avaliação) e a segunda na letra P (Plano).",
+            "<strong>E)</strong> Pertinentes negativos nunca devem ser registrados no prontuário SOAP por ocuparem espaço desnecessário."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está correta:</strong> Pertinentes negativos e positivos informados pela mãe ou pelo paciente durante a anamnese (\"nega vômitos, nega disenteria, refere diurese clara\") pertencem estritamente ao <strong>Subjetivo (S)</strong>. Já os sinais clínicos verificados diretamente pela inspeção e palpação médica no exame físico (\"olhos normocavados, sinal da prega imediato, enchimento capilar de 1s\") pertencem estritamente ao <strong>Objetivo (O)</strong>."
+          ]
+        ],
+        [
+          "3",
+          "Questão 8 — Desprescrição, Reconciliação Medicamentosa e Lista de Problemas"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Idoso de 78 anos muda-se de bairro e comparece à primeira consulta na nova Unidade de Saúde da Família trazendo uma sacola com 11 medicamentos contínuos prescritos por diferentes médicos ao longo dos últimos anos, incluindo duas receitas de sinvastatina de laboratórios diferentes (tomando 40 mg + 20 mg sem saber que eram o mesmo princípio ativo), omeprazol 40 mg há 6 anos sem indicação atual e diazepam 10 mg à noite, relatando tonturas matinais e duas quedas da própria altura no último mês. No contexto do Registro Clínico Orientado por Problemas (SOAP) e da segurança do paciente na APS, qual é a conduta CORRETA?"
+        ],
+        [
+          "u",
+          [
+            "<strong>A)</strong> Renovar automaticamente todas as 11 receitas no campo P (Plano) sem questionar, pois o médico de família não pode alterar prescrições feitas por especialistas focais.",
+            "<strong>B)</strong> Realizar a Reconciliação Medicamentosa estruturada, registrar as quedas e a polifarmácia/intoxicação iatrogênica na Lista de Problemas e na Avaliação (A), corrigir a duplicidade da estatina e pactuar no Plano (P) o desmame gradual do benzodiazepínico e a desprescrição do inibidor de bomba de prótons sem indicação.",
+            "<strong>C)</strong> Suspender abruptamente todos os 11 medicamentos no mesmo dia, incluindo o diazepam em uso há 6 anos, registrando a conduta no campo Subjetivo (S).",
+            "<strong>D)</strong> Registrar \"Suspeita de doença de Parkinson?\" com ponto de interrogação na Avaliação (A) e prescrever levodopa e flunarizina para a tontura.",
+            "<strong>E)</strong> Orientar o idoso a retornar aos 5 especialistas anteriores para que cada um revise sua própria receita isoladamente."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Acadêmico Exaustivo:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está correta:</strong> Exemplifica o atributo essencial da <strong>Coordenação do Cuidado</strong> e a prática da <strong>Prevenção Quaternária</strong> integradas ao registro SOAP: realizar a <em>reconciliação medicamentosa</em> (confrontando o que está prescrito com o que o paciente realmente ingere da sacola de remédios), identificar a duplicidade de genéricos/similares, incluir \"Quedas recorrentes\" e \"Polifarmácia / Efeito adverso medicamentoso (A85)\" na Lista de Problemas e na Avaliação (A), e estruturar no Plano (P) a <strong>desprescrição segura</strong> (lembrando que benzodiazepínicos crônicos exigem desmame gradual de 10% a 25% a cada 2 semanas para evitar síndrome de abstinência grave/convulsões, jamais suspensão abrupta como sugere o distrator C)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-high-yield-soap-ciap2",
+      0,
+      [
+        [
+          "2",
+          "10. Síntese High-Yield e Quadro Sinóptico para Revisão Rápida (SOAP, RMOP e CIAP-2)"
+        ],
+        [
+          "p",
+          "Revise a seguir o quadro sinóptico definitivo com todos os pontos de altíssimo rendimento sobre o Registro Médico Orientado por Problemas (RMOP), estrutura do SOAP, CIAP-2 e normas ético-legais do prontuário para gabaritar as questões de Residência Médica, Revalida e ENAMED:"
+        ],
+        [
+          "t",
+          [
+            "Dimensão / Letra do SOAP",
+            "O que DEVE conter obrigatoriamente",
+            "O que NUNCA deve conter (Erros de Prova!)",
+            "Codificação no PEC e-SUS APS"
+          ],
+          [
+            [
+              "<strong>S — Subjetivo</strong><br>(A voz da pessoa e a anamnese)",
+              "• Motivos da consulta (agenda completa);<br>• História do problema atual (anamnese biomédica);<br>• <strong>Acrônimo SIFE completo</strong> (Sentimentos, Ideias, Funcionalidade, Expectativas);<br>• Revisão de sistemas e pertinentes negativos relatados (\"nega febre/vômitos\");<br>• Adesão relatada, hábitos e contexto psicossocial.",
+              "• Achados de exame físico do médico;<br>• Resultados de exames laboratoriais ou de imagem trazidos;<br>• Diagnósticos médicos fechados pelo profissional.",
+              "<strong>CIAP-2</strong> (qualquer componente de 01 a 69 ou 70-99 conforme expresso pela pessoa como motivo de consulta)."
+            ],
+            [
+              "<strong>O — Objetivo</strong><br>(O exame físico e exames complementares)",
+              "• Ectoscopia e estado geral observados;<br>• Sinais vitais e antropometria aferidos (PA, FC, FR, Tax, SpO₂, Peso, Altura, IMC, CA);<br>• Exame físico geral, segmentar e estado mental;<br>• Testes rápidos realizados na UBS (HGT, TR HIV/Sífilis);<br>• <strong>Exames complementares trazidos pelo paciente (com a data de realização!)</strong>.",
+              "• Relatos verbais subjetivos (\"paciente diz que teve febre ontem\");<br>• Solicitação de novos exames (que pertence ao Plano!).",
+              "Campos numéricos estruturados de antropometria, sinais vitais, glicemia e avaliação de exames registrados no e-SUS APS."
+            ],
+            [
+              "<strong>A — Avaliação</strong><br>(Síntese de problemas no grau exato de certeza)",
+              "• Lista numerada dos problemas abordados na consulta;<br>• Diagnósticos confirmados (qualificando se controlados ou descompensados);<br>• Sinais, sintomas ou achados ainda indiferenciados (no maior grau de certeza atual);<br>• Problemas psicossociais/familiares (Capítulos P e Z).",
+              "• <strong>PROIBIDO usar ponto de interrogação (\"?\")!</strong><br>• <strong>PROIBIDO usar \"Suspeita de...\", \"Provável...\", \"A esclarecer\"!</strong><br>• Não repetir narrativa de S nem exame físico de O.",
+              "<strong>Dupla codificação no PEC e-SUS: CIAP-2</strong> (obrigatória para todos os problemas) + <strong>CID-10</strong> (quando aplicável/diagnóstico firmado)."
+            ],
+            [
+              "<strong>P — Plano</strong><br>(Condutas pactuadas por problema)",
+              "• <strong>1. Plano Diagnóstico:</strong> novos exames solicitados hoje;<br>• <strong>2. Plano Terapêutico:</strong> prescrições, ajustes, desprescrição, procedimentos;<br>• <strong>3. Plano Educacional:</strong> explicações, <em>Teach-Back</em>, <strong>Rede de Segurança (<em>Safety Netting</em>)</strong>;<br>• <strong>4. Plano de Seguimento:</strong> prazo de retorno, visita domiciliar, encaminhamentos;<br>• <strong>5. Plano Preventivo/Administrativo:</strong> vacinas, rastreamento, atestados, notificações.",
+              "• Resultados de exames antigos trazidos pelo paciente (que ficam no O!).",
+              "<strong>CIAP-2 de Processo</strong> (Componentes 2 a 6: números <code>30 a 69</code>) + códigos da Tabela SIGTAP/SUS."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Resumo Relâmpago da CIAP-2 e Aspectos Ético-Legais do Prontuário"
+        ],
+        [
+          "u",
+          [
+            "<strong>Criador do RMOP e do SOAP (1968):</strong> Lawrence L. Weed.",
+            "<strong>Estrutura Biaxial da CIAP-2 (WONCA):</strong> <strong>17 Capítulos (1 Letra)</strong> por sistema corporal (com precedência da localização sobre a etiologia; ex: <code>K</code> = Circulatório, <code>L</code> = Locomotor, <code>N</code> = Neurológico, <code>P</code> = Psicológico, <code>R</code> = Respiratório, <code>S</code> = Pele, <code>T</code> = Endócrino/Metabólico, <code>U</code> = Urinário, <code>W</code> = Gravidez/Planejamento Familiar, <code>X</code> = Genital Feminino/Mama, <code>Y</code> = Genital Masculino, <code>Z</code> = Problemas Sociais) + <strong>7 Componentes (2 Números de 01 a 99)</strong>: <code>01-29</code> (Sinais e Sintomas, incluindo \"Medo de...\" nos nº 24-27), <code>30-69</code> (Processos/Exames/Terapêutica/Administrativo/Encaminhamentos) e <code>70-99</code> (Doenças e Diagnósticos).",
+            "<strong>Códigos de Pressão Arterial na CIAP-2:</strong> <code>K85</code> = Pressão arterial elevada (medida isolada sem diagnóstico firmado de HAS); <code>K86</code> = Hipertensão sem complicações; <code>K87</code> = Hipertensão com complicações (LOA).",
+            "<strong>Propriedade e Guarda do Prontuário:</strong> Os dados pertencem ao <strong>paciente</strong> (direito inalienável à cópia integral — Art. 88 do CEM); a guarda cabe ao médico/instituição por no mínimo <strong>20 anos a partir do último registro</strong> em papel (Lei nº 13.787/2018).",
+            "<strong>Prontuário de Paciente Falecido:</strong> O sigilo persiste após o óbito, mas deve ser fornecida cópia ao <strong>cônjuge/companheiro e sucessores legítimos até o 4º grau</strong> mediante comprovação de vínculo, salvo objeção expressa registrada pelo paciente em vida (Recomendação CFM nº 03/2014)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.nejm.org\" target=\"_blank\" rel=\"noopener noreferrer\">WEED, L. L. Medical records that guide and teach. New England Journal of Medicine, v. 278, n. 11-12, p. 593-600 / 652-657, 1968.</a>",
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">ORGANIZAÇÃO MUNDIAL DE MÉDICOS DE FAMÍLIA (WONCA). Classificação Internacional de Atenção Primária (CIAP-2 / ICPC-2). 2ª ed. Florianópolis: SBMFC, 2010.</a>",
+            "<a href=\"https://www.sbmfc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">GUSSO, G.; LOPES, J. M. C.; DIAS, L. C. Tratado de Medicina de Família e Comunidade: Princípios, Formação e Prática. 2ª ed. Porto Alegre: Artmed, 2019.</a>",
+            "<a href=\"https://sisaps.saude.gov.br/esus/\" target=\"_blank\" rel=\"noopener noreferrer\">BRASIL. Ministério da Saúde. Manual de Uso do Sistema com Prontuário Eletrônico do Cidadão PEC e-SUS APS. Brasília: MS, 2024/2026.</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

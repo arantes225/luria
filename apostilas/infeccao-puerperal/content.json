@@ -1,0 +1,1165 @@
+{
+  "v": 2,
+  "s": "infeccao-puerperal",
+  "t": "Infecção Puerperal",
+  "p": "Tratado completo de Infecção Puerperal: definição epidemiológica da Organização Mundial da Saúde (OMS) e critérios clássicos de Gibbs (temperatura axilar >= 38,0ºC em 2 dias quaisquer dos primeiros 10 dias pós-parto, com exclusão formal das primeiras 24 horas decorrentes de desidratação e esforço muscular; exceção de Gibbs para choque precoce e febre >= 38,5ºC nas primeiras 24h por sepse fulminante ou Streptococcus pyogenes do grupo A); estratificação dos fatores de risco maiores com ênfase na cesariana como fator independente principal (elevação de 5 a 20 vezes do risco relativo em relação ao parto vaginal), bolsa rota prolongada > 18-24 horas, múltiplos toques vaginais > 5, trabalho de parto arrastado, corioamnionite intraparto prévia, anemia e obesidade; microbiologia e etiopatogenia polimicrobiana mista sinérgica (bactérias anaeróbias estritas como Bacteroides fragilis, Peptostreptococcus e Prevotella em cooperação enzimática com bacilos Gram-negativos entéricos facultativos como Escherichia coli e Klebsiella pneumoniae, e cocos Gram-positivos como Streptococcus agalactiae GBS, Streptococcus pyogenes GAS e Enterococcus faecalis); espectro das formas clínicas e topográficas (endomiometrite pós-parto com a tríade clássica de febre puerperal, subinvolução uterina dolorosa e lochia foetida pútrida; infecção e abscesso de ferida operatória pós-cesariana e fasciíte necrotizante com crepitação subcutânea exigindo desbridamento cirúrgico de emergência; parametrite com empastamento lenhoso unilateral dos parâmetros vaginais e abscesso pélvico de fundo de saco de Douglas; peritonite puerperal com abdome em tábua e íleo paralítico reflexo; e Tromboflebite Pélvica Séptica com febre persistente em picos/agulhas apesar de antibioticoterapia correta, sinal da febre sem taquicardia desproporcional contínua, trombo venoso ovariano à tomografia contrastada e resposta espetacular ao teste terapêutico com heparina plena em 48 a 72 horas); prevenção e profilaxia cirúrgica (timing da Cefazolina 2 g IV 30-60 min antes da incisão, ajuste para obesidade >=120 kg para 3 g, profilaxia estendida com Azitromicina em cesarianas de urgência, antissepsia com clorexidina alcoólica); diagnóstico laboratorial e por imagem (TC contrastada e USG pélvica); protocolo de sepse puerperal e qSOFA obstétrico com pacote de 1 hora; protocolo terapêutico padrão-ouro de primeira linha intravenoso com Clindamicina 900 mg IV 8/8h + Gentamicina 5 mg/kg IV dose única diária (ou 1,5 mg/kg 8/8h); conduta frente à falha clínica após 48 a 72 horas de tratamento (associação tripla com Ampicilina 2 g IV 6/6h para cobertura de Enterococcus faecalis e busca ativa de coleções por TC/USG); critérios formais de cura e alta hospitalar (paciente afebril e assintomática por 24 a 48 horas consecutivas) com descontinuação pura dos antimicrobianos e desmistificação da prescrição de antibióticos orais ambulatoriais; múltiplos casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
+  "d": "Tratado completo de Infecção Puerperal: definição epidemiológica da Organização Mundial da Saúde (OMS) e critérios clássicos de Gibbs (temperatura axilar >= 38,0ºC em 2 dias quaisquer dos primeiros 10 dias pós-parto, com exclusão formal das primeiras 24 horas decorrentes de desidratação e esforço muscular; exceção de Gibbs para choque precoce e febre >= 38,5ºC nas primeiras 24h por sepse fulminante ou Streptococcus pyogenes do grupo A); estratificação dos fatores de risco maiores com ênfase na cesariana como fator independente principal (elevação de 5 a 20 vezes do risco relativo em relação ao parto vaginal), bolsa rota prolongada > 18-24 horas, múltiplos toques vaginais > 5, trabalho de parto arrastado, corioamnionite intraparto prévia, anemia e obesidade; microbiologia e etiopatogenia polimicrobiana mista sinérgica (bactérias anaeróbias estritas como Bacteroides fragilis, Peptostreptococcus e Prevotella em cooperação enzimática com bacilos Gram-negativos entéricos facultativos como Escherichia coli e Klebsiella pneumoniae, e cocos Gram-positivos como Streptococcus agalactiae GBS, Streptococcus pyogenes GAS e Enterococcus faecalis); espectro das formas clínicas e topográficas (endomiometrite pós-parto com a tríade clássica de febre puerperal, subinvolução uterina dolorosa e lochia foetida pútrida; infecção e abscesso de ferida operatória pós-cesariana e fasciíte necrotizante com crepitação subcutânea exigindo desbridamento cirúrgico de emergência; parametrite com empastamento lenhoso unilateral dos parâmetros vaginais e abscesso pélvico de fundo de saco de Douglas; peritonite puerperal com abdome em tábua e íleo paralítico reflexo; e Tromboflebite Pélvica Séptica com febre persistente em picos/agulhas apesar de antibioticoterapia correta, sinal da febre sem taquicardia desproporcional contínua, trombo venoso ovariano à tomografia contrastada e resposta espetacular ao teste terapêutico com heparina plena em 48 a 72 horas); prevenção e profilaxia cirúrgica (timing da Cefazolina 2 g IV 30-60 min antes da incisão, ajuste para obesidade >=120 kg para 3 g, profilaxia estendida com Azitromicina em cesarianas de urgência, antissepsia com clorexidina alcoólica); diagnóstico laboratorial e por imagem (TC contrastada e USG pélvica); protocolo de sepse puerperal e qSOFA obstétrico com pacote de 1 hora; protocolo terapêutico padrão-ouro de primeira linha intravenoso com Clindamicina 900 mg IV 8/8h + Gentamicina 5 mg/kg IV dose única diária (ou 1,5 mg/kg 8/8h); conduta frente à falha clínica após 48 a 72 horas de tratamento (associação tripla com Ampicilina 2 g IV 6/6h para cobertura de Enterococcus faecalis e busca ativa de coleções por TC/USG); critérios formais de cura e alta hospitalar (paciente afebril e assintomática por 24 a 48 horas consecutivas) com descontinuação pura dos antimicrobianos e desmistificação da prescrição de antibióticos orais ambulatoriais; múltiplos casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Infectologia Obstétrica e Cirurgia Pélvica",
+  "h": [
+    "Apostila LURIA",
+    "Infecção Puerperal",
+    "Tratado completo de Infecção Puerperal: definição epidemiológica da Organização Mundial da Saúde (OMS) e critérios clássicos de Gibbs (temperatura axilar >= 38,0ºC em 2 dias quaisquer dos primeiros 10 dias pós-parto, com exclusão formal das primeiras 24 horas decorrentes de desidratação e esforço muscular; exceção de Gibbs para choque precoce e febre >= 38,5ºC nas primeiras 24h por sepse fulminante ou Streptococcus pyogenes do grupo A); estratificação dos fatores de risco maiores com ênfase na cesariana como fator independente principal (elevação de 5 a 20 vezes do risco relativo em relação ao parto vaginal), bolsa rota prolongada > 18-24 horas, múltiplos toques vaginais > 5, trabalho de parto arrastado, corioamnionite intraparto prévia, anemia e obesidade; microbiologia e etiopatogenia polimicrobiana mista sinérgica (bactérias anaeróbias estritas como Bacteroides fragilis, Peptostreptococcus e Prevotella em cooperação enzimática com bacilos Gram-negativos entéricos facultativos como Escherichia coli e Klebsiella pneumoniae, e cocos Gram-positivos como Streptococcus agalactiae GBS, Streptococcus pyogenes GAS e Enterococcus faecalis); espectro das formas clínicas e topográficas (endomiometrite pós-parto com a tríade clássica de febre puerperal, subinvolução uterina dolorosa e lochia foetida pútrida; infecção e abscesso de ferida operatória pós-cesariana e fasciíte necrotizante com crepitação subcutânea exigindo desbridamento cirúrgico de emergência; parametrite com empastamento lenhoso unilateral dos parâmetros vaginais e abscesso pélvico de fundo de saco de Douglas; peritonite puerperal com abdome em tábua e íleo paralítico reflexo; e Tromboflebite Pélvica Séptica com febre persistente em picos/agulhas apesar de antibioticoterapia correta, sinal da febre sem taquicardia desproporcional contínua, trombo venoso ovariano à tomografia contrastada e resposta espetacular ao teste terapêutico com heparina plena em 48 a 72 horas); prevenção e profilaxia cirúrgica (timing da Cefazolina 2 g IV 30-60 min antes da incisão, ajuste para obesidade >=120 kg para 3 g, profilaxia estendida com Azitromicina em cesarianas de urgência, antissepsia com clorexidina alcoólica); diagnóstico laboratorial e por imagem (TC contrastada e USG pélvica); protocolo de sepse puerperal e qSOFA obstétrico com pacote de 1 hora; protocolo terapêutico padrão-ouro de primeira linha intravenoso com Clindamicina 900 mg IV 8/8h + Gentamicina 5 mg/kg IV dose única diária (ou 1,5 mg/kg 8/8h); conduta frente à falha clínica após 48 a 72 horas de tratamento (associação tripla com Ampicilina 2 g IV 6/6h para cobertura de Enterococcus faecalis e busca ativa de coleções por TC/USG); critérios formais de cura e alta hospitalar (paciente afebril e assintomática por 24 a 48 horas consecutivas) com descontinuação pura dos antimicrobianos e desmistificação da prescrição de antibióticos orais ambulatoriais; múltiplos casos clínicos estruturados e questões comentadas para o ENAMED e residência médica.",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Infectologia Obstétrica e Cirurgia Pélvica",
+      "Tema: Infecção Puerperal"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "definicao-classica-criterios-gibbs-febre-puerperal",
+      "1. Definição Clássica da OMS, Critérios de Gibbs e Febre Puerperal"
+    ],
+    [
+      "fatores-risco-maiores-infeccao-puerperal",
+      "2. Fatores de Risco Maiores: Análise Crítica e Estratificação Epidemiológica"
+    ],
+    [
+      "etiopatogenia-polimicrobiana-microbiologia",
+      "3. Microbiologia e Etiopatogenia Polimicrobiana Mista"
+    ],
+    [
+      "formas-clinicas-endometrite-ferida-peritonite-tromboflebite",
+      "4. Formas Clínicas: Endometrite, Ferida Operatória, Parametrite, Peritonite e Tromboflebite Pélvica Séptica"
+    ],
+    [
+      "profilaxia-antimicrobiana-cirurgica-e-medidas-prevencao",
+      "5. Prevenção e Profilaxia Antimicrobiana: Normas da FEBRASGO, ACOG e OMS"
+    ],
+    [
+      "diagnostico-laboratorial-imagem-sepse-puerperal",
+      "6. Diagnóstico Laboratorial, Avaliação por Imagem e Protocolos de Sepse Puerperal Materna"
+    ],
+    [
+      "tratamento-padrao-ouro-antimicrobianos-criterios-alta",
+      "5. Tratamento Farmacológico Padrão-Ouro, Escalonamento Terapêutico e Critérios de Alta"
+    ],
+    [
+      "casos-clinicos-estruturados-infeccao-puerperal",
+      "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico Integrado"
+    ],
+    [
+      "questoes-comentadas-infeccao-puerperal",
+      "7. Questões de Concursos Médicos e ENAMED Comentadas"
+    ],
+    [
+      "sintese-pratica-guia-bolso-infeccao-puerperal",
+      "8. Guia Prático de Conduta e Síntese de Infecção Puerperal para o Plantão e ENAMED"
+    ],
+    [
+      "casos-clinicos-complexos-adicionais",
+      "9. Casos Clínicos Complexos de Plantão Cirúrgico e Tomada de Decisão"
+    ],
+    [
+      "questoes-comentadas-aprofundadas-infeccao-puerperal",
+      "10. Banco Complementar de Questões de Alto Desempenho Comentadas"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "definicao-classica-criterios-gibbs-febre-puerperal",
+      0,
+      [
+        [
+          "2",
+          "1. Definição Clássica da OMS, Critérios de Gibbs e Febre Puerperal"
+        ],
+        [
+          "3",
+          "Magnitude e Impacto da Infecção Puerperal na Mortalidade Materna"
+        ],
+        [
+          "p",
+          "A <strong>infecção puerperal</strong> (historicamente conhecida como febre puerperal ou febre de leito) permanece, juntamente com as síndromes hipertensivas e as hemorragias pós-parto, entre as <strong>três principais causas diretas de morte materna evitável em todo o mundo</strong>, com especial gravidade em países de média e baixa renda. Trata-se de qualquer infecção bacteriana do trato genital feminino que ocorra no intervalo entre o início do trabalho de parto (ou da rotura das membranas ovulares) e o 42º dia após o parto."
+        ],
+        [
+          "p",
+          "Desde as descobertas seminais de Ignaz Semmelweis em Viena no século XIX — demonstrando a transmissibilidade de partículas cadavéricas pelas mãos de médicos e estudantes e o impacto salvador da higienização antisséptica —, a medicina moderna desenvolveu técnicas cirúrgicas assépticas e terapias antimicrobianas potentes. Contudo, a infecção puerperal ainda responde por altas taxas de morbidade cirúrgica, re-hospitalizações prolongadas, histerectomias de urgência, sepse com choque distributivo e morte materna."
+        ],
+        [
+          "3",
+          "Definição Clássica da OMS e Critérios de Gibbs para Febre Puerperal"
+        ],
+        [
+          "p",
+          "A definição de <strong>febre puerperal</strong> é um dos conceitos mais clássicos e recorrentes na medicina obstétrica e em provas de residência:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Definição Clássica da Organização Mundial da Saúde (OMS):</strong>\n    <p>A OMS define a febre puerperal como a <strong>elevação da temperatura corporal &ge; 38,0ºC, verificada em quaisquer dois dias consecutivos ou alternados durante os primeiros 10 dias após o parto, com exclusão obrigatória das primeiras 24 horas pós-parto</strong>, devendo a temperatura ser aferida por via oral ou axilar no mínimo quatro vezes ao dia com termômetro confiável.</p>",
+            "<strong>Critérios Clínicos Modernos de Gibbs e Fisiopatologia das Primeiras 24 Horas:</strong>\n    <p>O Professor Ronald S. Gibbs e o Colégio Americano de Obstetras e Ginecologistas (ACOG) consolidaram o critério de que elevações térmicas transitórias nas <strong>primeiras 24 horas pós-parto</strong> decorrem habitualmente de fatores não infecciosos: <strong>desidratação decorrente do esforço físico do trabalho de parto, liberação maciça de pirógenos endógenos (IL-1, IL-6 e TNF-&alpha;) pelo estresse miometrial e tecidual, reabsorção de hematomas cirúrgicos e a própria febre de apojadura mamária</strong>. Essas elevações térmicas precoces costumam ser inferiores a 38,5ºC e cedem espontaneamente com hidratação oral ou venosa vigorosa.</p>\n    <p><strong>A Exceção Crítica de Gibbs:</strong> A presença de febre alta (&ge; 38,5ºC a 39,0ºC) nas <strong>primeiras 24 horas pós-parto</strong> NÃO deve ser desconsiderada quando acompanhada de hipotensão, calafrios intensos, taquicardia desproporcional ou dor uterina severa. Nestas circunstâncias imediatas, o quadro sugere <strong>corioamnionite intraparto que evoluiu para sepse puerperal hiperaguda</strong> ou infecção bacteriana fulminante por <strong><em>Streptococcus pyogenes</em> (Streptococo do Grupo A - GAS)</strong> produtor de exotoxinas pirogênicas ou <em>Clostridium perfringens</em>.</p>"
+          ]
+        ],
+        [
+          "t",
+          [
+            "<tr>\n      <th>Parâmetro de Vigilância",
+            "Critério Formal da OMS / Gibbs",
+            "Fundamentação Fisiológica e Racional Clínico"
+          ],
+          [
+            [
+              "<strong>Ponto de Corte Térmico</strong>",
+              "Temperatura axilar ou oral &ge; 38,0ºC.",
+              "Supera as variações circadianas fisiológicas e o estado subfebril do esforço muscular."
+            ],
+            [
+              "<strong>Frequência e Confirmação</strong>",
+              "Verificada em pelo menos 2 dias quaisquer (consecutivos ou não).",
+              "Evita falsos diagnósticos de picos febris isolados e passageiros decorrentes de desidratação."
+            ],
+            [
+              "<strong>Janela Cronológica</strong>",
+              "Primeiros 10 dias pós-parto (puerpério imediato).",
+              "Intervalo de máxima replicação bacteriana e invasão tecidual no miométrio e leito placentário."
+            ],
+            [
+              "<strong>Exclusão Obrigatória</strong>",
+              "<strong>Primeiras 24 horas pós-parto</strong> (exceto se sepse franca ou febre > 38,5ºC com toxemia).",
+              "Filtra a hipertermia por desidratação pós-esforço físico, sudorese intensa, trauma tecidual e apojadura precoce."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "fatores-risco-maiores-infeccao-puerperal",
+      0,
+      [
+        [
+          "2",
+          "2. Fatores de Risco Maiores: Análise Crítica e Estratificação Epidemiológica"
+        ],
+        [
+          "3",
+          "A Cesariana como Fator de Risco Isolado Mais Poderoso"
+        ],
+        [
+          "p",
+          "Entre todas as variáveis obstétricas e epidemiológicas conhecidas, <strong>a operação cesariana é o fator de risco independente mais importante para o desenvolvimento de infecção puerperal</strong>. Em comparação com o parto vaginal eutócico, a realização de cesariana eleva o risco relativo de endometrite e endomiometrite em <strong>5 a 20 vezes</strong>. Enquanto a incidência de infecção puerperal após parto vaginal não complicado situa-se entre 1% e 3%, nas cesarianas eletivas sem antibioprofilaxia atinge 5% a 15%, e nas <strong>cesarianas realizadas de urgência no curso do trabalho de parto após rotura de membranas prolongada pode superar estarrecedores 30% a 40%</strong>."
+        ],
+        [
+          "p",
+          "Os determinantes biológicos e mecânicos desse risco abissal associado ao parto cirúrgico incluem:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Solução de Continuidade Cirúrgica Ampla:</strong> A histerotomia rompe a barreira miometrial e o peritônio visceral, expondo o estroma vascularizado, o tecido conjuntivo retroperitoneal e os espaços de dissecção tecidual da parede abdominal à contaminação por microrganismos cervicovaginais;",
+            "<strong>Corpos Estranhos e Material de Sutura:</strong> Os fios de sutura cirúrgica hemostática no miométrio (catgut ou poliglactina) atuam como corpos estranhos que favorecem a formação de biofilmes bacterianos;",
+            "<strong>Isquemia Tecidual e Necrose de Bordas:</strong> Suturas miometriais excessivamente apertadas (\"chuleio hemostático hemostasiante\") ou pontos em massa geram áreas focais de necrose tecidual e hipóxia celular, criando o microambiente anaeróbico de baixo potencial de oxirredução ideal para a proliferação descontrolada de bactérias anaeróbias estritas;",
+            "<strong>Presença de Hematomas e Coleções Serosas:</strong> O sangramento residual nos folhetos da fáscia de Scarpa, no plano subaponeurótico ou na plica vesicouterina fornece meio de cultura altamente nutritivo para o crescimento bacteriano."
+          ]
+        ],
+        [
+          "3",
+          "Outros Fatores de Risco Maiores e Menores"
+        ],
+        [
+          "p",
+          "A gênese da infecção é tipicamente multifatorial, decorrente do colapso dos mecanismos locais de barreira associado a fatores facilitadores maternos e assistenciais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Rotura Prematura de Membranas Ovulares Prolongada (RPMO > 18 a 24 horas):</strong> A perda precoce do tampão mucoso e das membranas corioamnióticas elimina a barreira física que isola a cavidade uterina da flora vaginal comensal. Quanto maior a latência entre a amniorrexe e o parto, maior a ascensão bacteriana contínua para o líquido amniótico e a decídua;",
+            "<strong>Trabalho de Parto Prolongado e Múltiplos Toques Vaginais (> 5 toques):</strong> A cada exame especular ou toque digital endocervical, microrganismos da vulva e do introito vaginal são carreados mecanicamente para o segmento inferior do útero e canal de parto, quebrando o epitélio e semeando colônias bacterianas;",
+            "<strong>Corioamnionite Clínica Intraparto Prévia:</strong> Infecção intra-amniótica documentada durante o trabalho de parto (critérios de Gibbs maternos: febre &ge; 38,0ºC + taquicardia materna, taquicardia fetal > 160 bpm, útero doloroso e líquido amniótico purulento/fétido);",
+            "<strong>Manobras Obstétricas Intrauterinas Invasivas:</strong> Extração manual de placenta, dequitação instrumental, curetagem pós-parto de urgência para retirada de restos placentários e inserção de cateteres de pressão intrauterina ou eletrodos de couro cabeludo fetal;",
+            "<strong>Condições Maternas de Vulnerabilidade Sistêmica:</strong>\n    <ul>\n      <li><strong>Anemia Ferropriva Grave (Hb &lt; 9 a 10 g/dL):</strong> Compromete a capacidade oxidativa bactericida dos neutrófilos e a cicatrização tecidual;",
+            "<strong>Desnutrição e Baixo Nível Socioeconômico:</strong> Deficiências de micronutrientes, zinco e proteínas necessárias à síntese de imunoglobulinas;",
+            "<strong>Diabetes Mellitus e Imunossupressão (ex.: HIV/AIDS):</strong> Disfunção de quimiotaxia e fagocitose celular leucocitária;",
+            "<strong>Obesidade Materna (IMC &ge; 30 kg/m²):</strong> Aumento da espessura do panículo adiposo pouco vascularizado, predispondo à isquemia, seromas e deiscência de ferida operatória."
+          ]
+        ]
+      ]
+    ],
+    [
+      "etiopatogenia-polimicrobiana-microbiologia",
+      0,
+      [
+        [
+          "2",
+          "3. Microbiologia e Etiopatogenia Polimicrobiana Mista"
+        ],
+        [
+          "3",
+          "Natureza Polimicrobiana Sinergística da Infecção Puerperal"
+        ],
+        [
+          "p",
+          "Diferentemente de muitas infecções cirúrgicas comunitárias monomicrobianas causadas por um único germe virulento, a infecção puerperal do trato genital é classicamente uma <strong>infecção polimicrobiana mista endógena ascendente</strong>. Em mais de 80% a 90% dos casos de endometrite pós-parto, as culturas intrauterinas obtidas por cateter de triplo lúmen isolam uma média de <strong>2 a 3 microrganismos anaeróbios associados a 1 ou 2 bactérias aeróbias facultativas</strong> por paciente."
+        ],
+        [
+          "p",
+          "Os patógenos provêm da própria microbiota endógena vaginal, cervical e anoperineal da paciente, que aproveita a perda da barreira cervical pós-dilatação, o tecido deciduado necrótico residual e os coágulos sanguíneos para ascender e invadir o endométrio e o miométrio. Estabelece-se um complexo <strong>sinergismo bacteriano</strong>:"
+        ],
+        [
+          "u",
+          [
+            "As bactérias <strong>aeróbias facultativas</strong> (como <em>Escherichia coli</em> e os estreptococos) consomem ativamente o oxigênio tecidual livre local e sintetizam fatores de crescimento e catalase, diminuindo drasticamente o potencial redox tecidual e degradando peróxidos tóxicos;",
+            "Esse microambiente de anaerobiose estrita e hipóxia permite que as bactérias <strong>anaeróbias estritas</strong> (como <em>Bacteroides fragilis</em> e <em>Peptostreptococcus</em>) proliferem intensamente e produzam enzimas proteolíticas devastadoras (colagenases, heparinases, hialuronidases), que lisam o interstício tecidual, digerem membranas basais e promovem trombose microvascular séptica."
+          ]
+        ],
+        [
+          "3",
+          "Espectro Microbiológico Detalhado"
+        ],
+        [
+          "p",
+          "Os principais microrganismos isolados na infecção puerperal distribuem-se em quatro grupos fundamentais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Cocos Gram-Positivos Aeróbios e Facultativos:</strong>\n    <ul>\n      <li><strong>Streptococcus agalactiae (GBS - Estreptococo do Grupo B):</strong> Colonizador comum do trato genital inferior; pode ascender e causar endometrite precoce e bacteriemia materna fulminante, associada à sepse neonatal precoce;",
+            "<strong>Streptococcus pyogenes (GAS - Estreptococo do Grupo A):</strong> Embora menos frequente na era moderna, é o agente causador da \"febre puerperal epidêmica maligna\". Apresenta curso hiperagudo (nas primeiras 24-48h pós-parto), com dor abdominal severa, febre altíssima, choque tóxico estreptocócico e secreção vaginal aquosa serosanguinolenta <strong>SEM odor fétido</strong> (pegadinha clássica: GAS produz lóquios inodoros!);",
+            "<strong>Enterococcus faecalis e Enterococcus faecium:</strong> Cocos Gram-positivos entéricos, resistentes naturais a cefalosporinas e clindamicina. Estão associados a infecções graves pós-cesariana e falhas terapêuticas do esquema inicial clindamicina + gentamicina;",
+            "<em>Staphylococcus aureus</em> (MSSA/MRSA): Mais comum em infecções de sítio cirúrgico de parede abdominal e mastites.",
+            "<strong>Bacilos Gram-Negativos Aeróbios Entéricos:</strong>\n    <ul>\n      <li><strong>Escherichia coli:</strong> O bacilo Gram-negativo facultativo mais frequentemente isolado; produz endotoxinas (LPS) altamente pirogênicas e indutoras de choque séptico e coagulação intravascular disseminada (CIVD);",
+            "<strong>Klebsiella pneumoniae, Proteus mirabilis e Enterobacter spp.:</strong> Patógenos entéricos oportunistas com grande capacidade de disseminação hematogênica e lesão vascular.",
+            "<strong>Bactérias Anaeróbias Estritas:</strong>\n    <ul>\n      <li><strong>Peptostreptococcus spp. e Peptococcus spp.:</strong> Cocos Gram-positivos anaeróbios abundantes na cavidade vaginal, fortemente produtores de ácidos graxos voláteis responsáveis pelo clássico <strong>odor pútrido fétido dos lóquios</strong>;",
+            "<strong>Bacteroides fragilis e espécies do grupo Bacteroides:</strong> Bacilos Gram-negativos anaeróbios estritos, resistentes a penicilinas convencionais por produção de betalactamases. Sintetizam <strong>heparinases</strong> que degradam a heparina tecidual local e ativam a cascata de coagulação, predispondo à trombose microvascular e à <strong>tromboflebite pélvica séptica</strong>;",
+            "<strong>Fusobacterium spp. e Prevotella bivia:</strong> Anaeróbios estritos Gram-negativos que agem em sinergia promovendo necrose tecidual profunda;",
+            "<em>Clostridium perfringens</em>: Bacilo Gram-positivo esporulado anaeróbio, associado a endometrite gangrenosa necrotizante com hemólise maciça, hemoglobinúria, insuficiência renal aguda anúrica e presença de gás intrauterino.",
+            "<strong>Outros Microrganismos Genitais:</strong>\n    <p><em>Mycoplasma hominis</em>, <em>Ureaplasma urealyticum</em> e <em>Chlamydia trachomatis</em> (esta última associada tipicamente a endometrites de início subagudo ou tardio, após a 2ª semana pós-parto).</p>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "formas-clinicas-endometrite-ferida-peritonite-tromboflebite",
+      0,
+      [
+        [
+          "2",
+          "4. Formas Clínicas: Endometrite, Ferida Operatória, Parametrite, Peritonite e Tromboflebite Pélvica Séptica"
+        ],
+        [
+          "3",
+          "1. Endometrite Pós-Parto (Endomiometrite)"
+        ],
+        [
+          "p",
+          "A <strong>endometrite</strong> é a forma clínica mais comum de infecção puerperal, representando mais de 80% dos casos atendidos em enfermarias de obstetrícia. Como o processo infeccioso não se restringe à decídua, invadindo quase invariavelmente os feixes musculares miometriais superficiais e profundos, a designação mais precisa do ponto de vista anatomopatológico é <strong>endomiometrite</strong>."
+        ],
+        [
+          "u",
+          [
+            "<strong>Quadro Clínico e Tríade Clássica:</strong>\n    <ol>\n      <li><strong>Febre Puerperal:</strong> Febre &ge; 38,0ºC com calafrios que surge tipicamente entre o <strong>2º e o 5º dia pós-parto</strong> (pico no 3º dia);",
+            "<strong>Subinvolução Uterina Dolorosa:</strong> Útero aumentado de volume para a idade puerperal, de consistência amolecida (\"em pasta de dente\") e <strong>intensamente doloroso à palpação abdominal e à descompressão súbita no hipogástrio</strong>;",
+            "<strong>Alteração dos Lóquios (Lochia foetida):</strong> Lóquios abundantes, de coloração acinzentada, achocolatada ou purulenta, com <strong>odor fétido característico pútrido</strong> (decorrente dos metabólitos anaeróbios de <em>Peptostreptococcus</em> e <em>Bacteroides</em>). <em>Atenção de Prova:</em> A ausência de odor fétido NÃO descarta infecção, sendo típica de estreptococos do grupo A e B;",
+            "<strong>Toque Vaginal Bimanual:</strong> Colo uterino pérvio, doloroso à mobilização cervical e à palpação dos fundos de saco laterais, com dor uterina desproporcional."
+          ]
+        ],
+        [
+          "3",
+          "2. Infecção de Parede Abdominal e Ferida Operatória (Cesariana / Episiotomia)"
+        ],
+        [
+          "p",
+          "Manifesta-se tipicamente entre o <strong>4º e o 7º dia pós-parto</strong>. Caracteriza-se por eritema cutâneo peri-incisional progressivo, edema tenso, calor local e hiperestesia dolorosa que se intensifica em vez de diminuir com o tempo de pós-operatório:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Abscesso de Parede / Celulite de Ferida Operatória:</strong> A palpação pode revelar ponto de flutuação e drenagem espontânea ou induzida de secreção purulenta ou sero-hemática (\"água de carne\"). Tratamento: <strong>abertura da incisão cirúrgica nos pontos de flutuação, desbridamento mecânico de tecidos desvitalizados, lavagem abundante com soro fisiológico e drenagem ampla</strong>. O fechamento por segunda intenção é a conduta padrão;",
+            "<strong>Fasciíte Necrotizante (Fáscia de Colles / Scarpa):</strong> Complicação cirúrgica rara, catastrófica e de letalidade superior a 30% a 50%, induzida por infecção mista ou por <em>Streptococcus pyogenes</em>. Caracteriza-se por <strong>dor desproporcional aos achados físicos externos</strong>, pele com coloração acinzentada violácea, bolhas hemorrágicas, <strong>crepitação subcutânea à palpação (gás tecidual)</strong>, anestesia cutânea focal por necrose dos filetes nervosos e choque séptico refratário. <strong>Conduta de Emergência Vital:</strong> <strong>DESBRIDAMENTO CIRÚRGICO RADICAL IMEDIATO EM CENTRO CIRÚRGICO</strong> de toda a fáscia e tecido necrótico até encontrar margens sangrantes viáveis, associado a suporte intensivo e antibioticoterapia venosa de amplo espectro com Penicilina Cristalina em altas doses + Clindamicina (efeito inibidor da síntese de exotoxinas) + Carbapenêmico/Vancomicina."
+          ]
+        ],
+        [
+          "3",
+          "3. Parametrite (Celulite Pélvica) e Abscesso Pélvico"
+        ],
+        [
+          "p",
+          "Ocorre quando a invasão bacteriana transpõe o miométrio e atinge o tecido conjuntivo frouxo e o sistema linfático do ligamento largo e dos parâmetros pélvicos:"
+        ],
+        [
+          "u",
+          [
+            "Clinicamente, a puérpera mantém picos febris diários elevados e dor pélvica contínua e unilateral irradiada para a raiz da coxa ou flanco;",
+            "Ao toque vaginal bimanual combinado com palpação abdominal, evidencia-se <strong>empastamento tenso, lenhoso, doloroso e assimétrico de um ou ambos os fundos de saco vaginais laterais</strong>, fixando o colo uterino (que se encontra lateralizado para o lado não acometido);",
+            "Caso haja liquefação purulenta, forma-se um <strong>abscesso do ligamento largo ou abscesso de fundo de saco de Douglas</strong>. O diagnóstico de certeza exige <strong>Tomografia Computadorizada (TC) ou Ultrassonografia Pélvica com Doppler</strong>. Abscessos colecionados exigem drenagem percutânea guiada por TC/USG ou colpotomia posterior (se coleção no fundo de saco posterior)."
+          ]
+        ],
+        [
+          "3",
+          "4. Peritonite Puerperal"
+        ],
+        [
+          "p",
+          "Decorre da disseminação bacteriana por contiguidade através das tubas uterinas (salpingite purulenta), rotura de abscesso miometrial/tubo-ovariano ou necrose da histerorrafia pós-cesariana com deiscência total:"
+        ],
+        [
+          "u",
+          [
+            "Manifesta-se por febre alta persistente, taquicardia extrema, <strong>dor abdominal difusa em cólica e queimação com nítida contratura involuntária (\"abdome em tábua\")</strong> e sinal de Blumberg generalizado positivo;",
+            "Associa-se a <strong>íleo paralítico reflexo severo</strong> (parada de eliminação de gases e fezes, náuseas e vômitos biliosos incoercíveis, distensão timpânica difusa e desidratação);",
+            "Indicação formal de laparotomia exploradora imediata para lavado peritoneal exaustivo, drenagem e eventual histerectomia se o útero for a fonte necrótica séptica."
+          ]
+        ],
+        [
+          "3",
+          "5. Tromboflebite Pélvica Séptica (TPS)"
+        ],
+        [
+          "p",
+          "A <strong>Tromboflebite Pélvica Séptica</strong> é uma complicação rara (1 em cada 2.000 partos vaginais e 1 em cada 800 cesarianas), porém clássica em provas de título e concursos médicos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia (Tríade de Virchow Puerperal):</strong> A associação de <strong>lesão endotelial da parede vascular uterina</strong> por infecção bacteriana ascendente (especialmente anaeróbios como <em>Bacteroides fragilis</em> produtores de heparinases), <strong>hipercoagulabilidade fisiológica do puerpério</strong> e <strong>estase venosa nos volumosos plexos venosos uterovarianos</strong> resulta em trombose e supuração das veias ovarianas (mais comum à direita por maior comprimento e ausência de válvulas) ou veias ilíacas internas;",
+            "<strong>Quadro Clínico e Sinal Semiológico Típico:</strong>\n    <p>O quadro típico é o de uma puérpera com endometrite que, <strong>a despeito de estar recebendo antibioticoterapia venosa adequada e de amplo espectro por mais de 48 a 72 horas, continua mantendo picos febris diários elevados com calafrios (febre em agulhas)</strong>, sem melhora clínica. Pode apresentar dor abdominal vaga unilateral em flanco ou fossa ilíaca, ou apresentar-se paradoxalmente sem dor significativa;</p>\n    <p><strong>Sinal da Febre sem Taquicardia Proporcional ou \"Taquicardia Desproporcional em Picos\":</strong> A paciente frequentemente mantém bom estado geral nos períodos de apirexia, mas desenvolve picos febris de 40ºC;</p>",
+            "<strong>Exames de Imagem:</strong> A <strong>Tomografia Computadorizada ou Ressonância Magnética com contraste venoso</strong> demonstra dilatação da veia ovariana acometida com defeito de enchimento luminal central intraluminal (trombo hipodenso intravascular) e espessamento inflamatório da parede vascular;",
+            "<strong>Teste Terapêutico Diagnóstico e Conduta Padrão-Ouro:</strong>\n    <p>Diante da forte suspeita clínica ou imagem confirmatória de TPS, a conduta consiste na <strong>associação imediata de Anticoagulação Plena à antibioticoterapia venosa ampla</strong>:</p>\n    <ul>\n      <li>Utiliza-se <strong>Heparina Plena</strong> (Heparina de Baixo Peso Molecular - Enoxaparina 1 mg/kg SC a cada 12 horas, ou Heparina Não Fracionada IV com controle rigoroso de TTPa entre 1,5 e 2,5 vezes o controle);",
+            "<strong>O Teste da Heparina:</strong> A defervescência térmica completa e dramática (queda da febre) dentro de <strong>48 a 72 horas após o início da heparina plena</strong> é classicamente considerada um teste terapêutico diagnóstico confirmatório da etiologia tromboflebítica;",
+            "A anticoagulação plena deve ser mantida por cerca de 7 a 14 dias (se trombose confinada à veia ovariana) ou prolongada por 3 a 6 meses com varfarina/anticoagulantes orais se houver extensão para veia cava inferior ou tromboembolismo pulmonar associado."
+          ]
+        ]
+      ]
+    ],
+    [
+      "profilaxia-antimicrobiana-cirurgica-e-medidas-prevencao",
+      0,
+      [
+        [
+          "2",
+          "5. Prevenção e Profilaxia Antimicrobiana: Normas da FEBRASGO, ACOG e OMS"
+        ],
+        [
+          "3",
+          "Importância da Profilaxia na Redução da Mortalidade Materna"
+        ],
+        [
+          "p",
+          "A profilaxia antimicrobiana em cirurgia obstétrica constitui uma das medidas de saúde pública mais custo-efetivas e de maior impacto comprovado na história da medicina perinatal. Estudos randomizados multicêntricos e meta-análises da Cochrane demonstraram que a administração rotineira e protocolada de antibioprofilaxia em cesarianas reduz a incidência de endometrite pós-parto em <strong>60% a 70%</strong> e diminui as infecções incisionais da parede abdominal em cerca de <strong>50%</strong>, tanto em cesarianas eletivas quanto naquelas realizadas em caráter de urgência durante o trabalho de parto."
+        ],
+        [
+          "3",
+          "Momento Ótimo de Administração (Timing Cirúrgico)"
+        ],
+        [
+          "p",
+          "Durante décadas, vigorou o dogma errôneo de que o antibiótico profilático na cesariana deveria ser administrado somente após o clampeamento do cordão umbilical, sob a alegação de evitar a passagem transplacentária de antibióticos para a circulação fetal e prevenir a alteração de culturas neonatais ou toxicidade no recém-nascido."
+        ],
+        [
+          "p",
+          "Entretanto, ensaios clínicos modernos de alta qualidade desmistificaram categoricamente essa conduta pregressa. As diretrizes consensuais da <strong>FEBRASGO, OMS, ACOG e CDC estabelecem hoje de maneira inequívoca</strong>:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\"><p><strong>Timing Padrão-Ouro da Antibioprofilaxia na Cesariana:</strong></p>\n  <p><strong>Administração intravenosa dentro de 30 a 60 minutos ANTES da incisão cirúrgica da pele (idealmente no momento da indução anestésica em sala de cirurgia)</strong>.</p></div>"
+        ],
+        [
+          "p",
+          "O racional farmacocinético para essa recomendação baseia-se no princípio de que, para prevenir eficazmente a colonização e a infecção bacteriana, as <strong>concentrações teciduais do antimicrobiano no miométrio, decídua, subcutâneo e pele devem estar acima da Concentração Inibitória Mínima (CIM) no exato instante em que o bisturi rompe o tecido</strong>. A administração precoce antes da incisão reduz pela metade a taxa de endometrite em comparação à administração tardia pós-clampeamento, sem qualquer aumento de complicações, sepse ou tempo de internação em UTI neonatal para os recém-nascidos."
+        ],
+        [
+          "3",
+          "Regimes Antimicrobianos Profiláticos Recomendados"
+        ],
+        [
+          "p",
+          "O fármaco de escolha absoluta para a profilaxia cirúrgica na cesariana é a <strong>Cefazolina</strong>, uma cefalosporina de primeira geração que apresenta excelente espectro de ação contra cocos Gram-positivos (incluindo <em>Staphylococcus aureus</em> sensível à meticilina e estreptococos) e atividade satisfatória contra bacilos Gram-negativos entéricos comensais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Dose Padrão:</strong> <strong>Cefazolina 2,0 g por via intravenosa</strong> diluída em bólus lento ou infusão rápida antes da incisão;",
+            "<strong>Ajuste Obrigatório para Obesidade Materna:</strong> Em pacientes gestantes com peso corporal <strong>&ge; 120 kg</strong> (ou Índice de Massa Corporal &ge; 35-40 kg/m²), o volume de distribuição do fármaco encontra-se marcadamente aumentado; portanto, a dose recomendada de Cefazolina deve ser elevada para <strong>3,0 g IV</strong> para garantir níveis teciduais miometriais adequados;",
+            "<strong>Duração da Profilaxia:</strong> <strong>DOSE ÚNICA</strong>. A repetição da dose intraoperatória de Cefazolina (1,0 g a 2,0 g IV) é indicada apenas se a cirurgia se prolongar por <strong>mais de 3 a 4 horas</strong> (duas meias-vidas do fármaco) ou na ocorrência de hemorragia obstétrica maciça com perda volêmica estimada <strong>> 1.500 mL</strong>;",
+            "<strong>Profilaxia Estendida com Azitromicina em Cesarianas de Urgência:</strong>\n    <p>Grandes estudos randomizados (estudo C-STUB) demonstraram que em mulheres submetidas a <strong>cesarianas não eletivas (em trabalho de parto ativo ou com rotura de membranas prévia)</strong>, a adição de uma dose única de <strong>Azitromicina 500 mg IV em infusão de 1 hora</strong> associada à Cefazolina reduz significativamente a incidência de infecção puerperal e endometrite, conferindo cobertura adicional contra micoplasmas e ureaplasmas urogenitais;</p>",
+            "<strong>Pacientes com Alergia Grave a Betalactâmicos (Histórico de Anafilaxia, Broncoespasmo ou Angioedema):</strong>\n    <p>O uso de cefalosporinas é contraindicado. Os esquemas profiláticos alternativos consistem em:</p>\n    <ul>\n      <li><strong>Clindamicina (900 mg IV) associada a Gentamicina (5 mg/kg IV ou 1,5 mg/kg IV)</strong>; ou",
+            "<strong>Vancomicina (1,0 g a 1,5 g IV em infusão lenta de pelo menos 60 a 90 minutos) associada a Gentamicina</strong> (se suspeita de alta prevalência de MRSA na instituição)."
+          ]
+        ],
+        [
+          "3",
+          "Medidas Cirúrgicas e Assepsia na Sala de Parto"
+        ],
+        [
+          "p",
+          "A prevenção da infecção não se resume a antibióticos. Envolve uma cadeia rigorosa de boas práticas obstétricas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Preparo Cutâneo Cirúrgico Antisséptico:</strong> A antissepsia da parede abdominal com <strong>solução alcoólica de clorexidina a 2%</strong> é comprovadamente superior às soluções iodadas (PVPI), reduzindo significativamente a taxa de infecções incisionais superficiais e profundas;",
+            "<strong>Preparo Vaginal Antisséptico Imediatamente Pré-Operatório:</strong> A higienização pré-operatória da cavidade vaginal com solução aquosa de iodopovidona a 10% (ou clorexidina aquosa em alérgicas a iodo) imediatamente antes da cesariana reduz expressivamente a carga bacteriana do trato genital inferior carreada para o miométrio;",
+            "<strong>Técnica Cirúrgica Primorosa:</strong> Extração manual delicada da placenta sem curetagem vigorosa da cavidade; exteriorização uterina cuidadosa ou histerorrafia in situ com pontos hemostáticos sem isquemia excessiva; sutura cuidadosa do tecido celular subcutâneo com espessura > 2 cm (reduz seromas e hematomas em 30%);",
+            "<strong>Prevenção no Parto Vaginal:</strong> Restringir o número de toques vaginais ao estritamente necessário (idealmente a cada 2 a 4 horas na fase ativa); evitar episiotomias de rotina; realizar revisão meticulosa do canal de parto para suturar lacerações hemostáticas e remover completamente os anexos ovulares."
+          ]
+        ]
+      ]
+    ],
+    [
+      "diagnostico-laboratorial-imagem-sepse-puerperal",
+      0,
+      [
+        [
+          "2",
+          "6. Diagnóstico Laboratorial, Avaliação por Imagem e Protocolos de Sepse Puerperal Materna"
+        ],
+        [
+          "3",
+          "Avaliação Propedêutica Laboratorial Completa"
+        ],
+        [
+          "p",
+          "Diante da suspeita clínica de infecção puerperal, a investigação diagnóstica deve ser estruturada e ágil para dimensionar a repercussão sistêmica do processo infeccioso e guiar a terapêutica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hemograma Completo com Leucograma:</strong> A contagem de leucócitos no puerpério normal pode alcançar 15.000 a 25.000/mm³ nas primeiras 24 a 48h. Na vigência de infecção puerperal verdadeira, observa-se frequentemente leucocitose acentuada (> 20.000 a 30.000/mm³) acompanhada de <strong>desvio à esquerda com presença de mais de 6% a 10% de formas jovens (bastonetes, metamielócitos), granulações tóxicas citoplasmáticas grosseiras e vacuolização neutrofílica</strong>. A presença de leucopenia (&lt; 4.000/mm³) é sinal de altíssima gravidade e imunoparalisia em choque séptico;",
+            "<strong>Proteína C Reativa (PCR) e Procalcitonina:</strong> A PCR eleva-se rapidamente após o trauma cirúrgico do parto, atingindo pico fisiológico no 2º dia e regredindo a seguir. Níveis persistentemente elevados de PCR (> 50 a 100 mg/L) após o 3º dia correlacionam-se fortemente com infecção bacteriana ativa. A <strong>Procalcitonina</strong> é altamente específica para infecções bacterianas invasivas com bacteriemia;",
+            "<strong>Hemoculturas Periféricas:</strong> Coleta mandatória de <strong>dois pares de frascos (aeróbio e anaeróbio)</strong> colhidos de veias periféricas distintas antes da primeira dose de antibióticos. São positivas em 10% a 30% das pacientes com endometrite severa e documentam a presença de bacteriemia (mais comum com <em>Streptococcus</em> spp., <em>E. coli</em> e <em>Bacteroides</em>);",
+            "<strong>Urina Tipo 1 e Urocultura com Antibiograma:</strong> Essenciais para o diagnóstico diferencial com infecções do trato urinário (ITU baixa e pielonefrite puerperal), comuns devido à cateterização vesical intraparto;",
+            "<strong>Culturas de Secreção Cervical e Intrauterina:</strong> Coletas cervicais com swab simples são desaconselhadas porque isolam a flora saprófita vaginal normal sem relevância diagnóstica. Culturas intrauterinas só têm valor quando obtidas por cateter protegido de triplo lúmen ou aspiração transcervical protegida, procedimento raramente disponível na rotina hospitalar;",
+            "<strong>Lactato Sérico Arterial ou Venoso:</strong> Marcador essencial de perfusão tecidual. Níveis de lactato <strong>> 2,0 mmol/L</strong> indicam hipoperfusão celular e sinalizam risco iminente de disfunção orgânica múltipla; valores > 4,0 mmol/L definem choque séptico e hipoxemia tissular grave."
+          ]
+        ],
+        [
+          "3",
+          "Propedêutica por Métodos de Imagem"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ultrassonografia Pélvica Transvaginal e Pélvica Abdominal:</strong>\n    <ul>\n      <li>Exame de triagem inicial de escolha no leito da paciente;",
+            "Avalia a presença de <strong>restos placentários retidos</strong> (massa ecogênica heterogênea intracavitária com fluxo ao Doppler colorido), coleções purulentas intrauterinas (piometra), hematomas de histerorrafia ou abscessos da parede abdominal;",
+            "<em>Atenção aos achados fisiológicos:</em> A presença de pequenas quantidades de líquido e diminutas bolhas de gás na cavidade uterina nas primeiras 48 a 72 horas pós-parto é achado fisiológico comum e não fecha diagnóstico isolado de endomiometrite sem correlação clínica;",
+            "<strong>Tomografia Computadorizada (TC) de Abdome e Pelve com Contraste Venoso:</strong>\n    <ul>\n      <li>Exame padrão-ouro indispensável nos casos de <strong>refratariedade clínica à antibioticoterapia após 48 a 72 horas</strong>, suspeita de peritonite, abscessos profundos do ligamento largo ou retroperitônio e avaliação de tromboflebite pélvica séptica;",
+            "Identifica com máxima acurácia coleções pélvicas complexas, gás patológico em planos fasciais musculares (fasciíte necrotizante) e defeitos de enchimento luminal tromboembólicos nas veias ovarianas e ilíacas."
+          ]
+        ],
+        [
+          "3",
+          "Sepse Puerperal Materna: Estratificação qSOFA e Bundles da Campanha Sobrevivendo à Sepse"
+        ],
+        [
+          "p",
+          "A <strong>Sepse Puerperal</strong> representa a resposta desregulada e desproporcional do hospedeiro materno à infecção genital, resultando em disfunção orgânica potencialmente fatal. É fundamental reconhecer que as alterações hemodinâmicas fisiológicas da gestação e do puerpério imediato (taquicardia basal de 80 a 90 bpm, taquipneia compensatória, leucocitose fisiológica de até 25.000/mm³ e redução da resistência vascular sistêmica) dificultam a aplicação cega dos critérios clássicos de sepse para adultos não grávidas."
+        ],
+        [
+          "p",
+          "Utiliza-se o escore adaptado de triagem à beira do leito <strong>qSOFA Materno (quick SOFA)</strong> ou os escores de alerta obstétrico precoce (MEOWS - Modified Early Obstetric Warning Score). A presença de <strong>dois ou mais critérios</strong> abaixo na presença de infecção puerperal suspeita ou confirmada exige ação emergencial imediata:"
+        ],
+        [
+          "u",
+          [
+            "1. <strong>Frequência Respiratória &ge; 22 a 25 irpm</strong>;",
+            "2. <strong>Alteração Aguda do Estado Mental</strong> (escala de Glasgow &lt; 15, confusão mental, letargia);",
+            "3. <strong>Pressão Arterial Sistólica &le; 90 mmHg</strong> ou Pressão Arterial Média &le; 65 mmHg."
+          ]
+        ],
+        [
+          "p",
+          "<strong>O Pacote da 1ª Hora (Bundle de 1 Hora na Sepse Puerperal):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Medir o Lactato Sérico:</strong> Reavaliar em 2 a 4 horas se inicial > 2,0 mmol/L;",
+            "<strong>Colher Hemoculturas Imediatas:</strong> 2 pares antes de infundir antimicrobianos (sem atrasar a medicação por mais de 45 minutos);",
+            "<strong>Iniciar Antibioticoterapia Venosa de Amplo Espectro na Primeira Hora:</strong> Clindamicina + Gentamicina + Ampicilina (ou Piperacilina-Tazobactam 4,5 g IV ou Meropenem 1 g IV se choque séptico franco);",
+            "<strong>Ressuscitação Volêmica Agressiva Precoce:</strong> Infusão rápida de <strong>cristaloides isotônicos (Ringer Lactato ou SF 0,9%) na dose de 30 mL/kg de peso ideal</strong> em caso de hipotensão (PAS &le; 90 mmHg) ou lactato sérico &ge; 4,0 mmol/L;",
+            "<strong>Vasopressores:</strong> Caso a pressão arterial média (PAM) não atinja &ge; 65 mmHg após a sobrecarga de cristaloides, iniciar imediatamente <strong>Noradrenalina em bomba de infusão contínua</strong> via acesso central para restauração da perfusão microvascular."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-padrao-ouro-antimicrobianos-criterios-alta",
+      0,
+      [
+        [
+          "2",
+          "5. Tratamento Farmacológico Padrão-Ouro, Escalonamento Terapêutico e Critérios de Alta"
+        ],
+        [
+          "3",
+          "O Esquema Padrão-Ouro Clássico: Clindamicina + Gentamicina"
+        ],
+        [
+          "p",
+          "O tratamento da infecção puerperal estabelecida (endomiometrite) é <strong>obrigatoriamente hospitalar e por via intravenosa</strong>. O esquema clássico preconizado há décadas pela literatura internacional (ACOG, CDC, Cochrane Library) e adotado pelo Ministério da Saúde do Brasil e FEBRASGO é a associação de:"
+        ],
+        [
+          "p",
+          "<div class=\"formula-box\"><p><strong>Esquema Padrão-Ouro Intravenoso de Primeira Linha:</strong></p>\n  <p><strong>Clindamicina (900 mg IV a cada 8 horas) + Gentamicina (5 mg/kg IV em dose única diária ou 1,5 mg/kg IV a cada 8 horas)</strong></p></div>"
+        ],
+        [
+          "p",
+          "<strong>Racional Farmacodinâmico e Microbiológico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Clindamicina:</strong> Proporciona cobertura primorosa contra a vasta maioria dos <strong>microrganismos anaeróbios estritos</strong> (incluindo <em>Bacteroides fragilis</em>, <em>Prevotella</em> e <em>Peptostreptococcus</em>) e cocos Gram-positivos como <em>Staphylococcus aureus</em> e estreptococos. Além disso, inibe a síntese de proteínas na subunidade ribossômica 50S bacteriana, bloqueando a produção de toxinas;",
+            "<strong>Gentamicina:</strong> Aminoglicosídeo bactericida de alta potência com excelente espectro de ação contra <strong>bacilos Gram-negativos entéricos aeróbios e facultativos</strong> (<em>Escherichia coli</em>, <em>Klebsiella pneumoniae</em>, <em>Proteus mirabilis</em>). A dose única diária (5 mg/kg IV em infusão de 60 minutos diluída em SF 0,9%) é preferível à administração fracionada de 8/8h, pois proporciona pico sérico bactericida concentração-dependente mais elevado, efeito pós-antibiótico prolongado e menor risco de nefrotoxicidade e ototoxicidade tubular renal. Em pacientes com insuficiência renal prévia, a dose deve ser rigorosamente corrigida pelo clearance de creatinina;",
+            "<strong>Eficácia Clínica:</strong> Este esquema binário alcança taxas de cura clínica e microbiológica superiores a <strong>90% a 95%</strong> dos casos quando iniciado precocemente."
+          ]
+        ],
+        [
+          "3",
+          "Falha Clínica após 48 a 72 Horas e Escalonamento Terapêutico"
+        ],
+        [
+          "p",
+          "Considera-se resposta terapêutica satisfatória a queda progressiva da temperatura, melhora substancial do estado geral, alívio da dor à palpação uterina e clareamento dos lóquios dentro de 48 horas. Se a paciente mantiver <strong>febre persistente, leucocitose sustentada ou dor abdominal após 48 a 72 horas</strong> de infusão regular de Clindamicina e Gentamicina, estamos diante de uma <strong>falha terapêutica</strong> que exige conduta diagnóstica e escalonamento imediatos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Adição de Ampicilina ao Esquema (Associação Tripla Clindamicina + Gentamicina + Ampicilina):</strong>\n    <p>A causa microbiológica mais comum de falha ao esquema binário é a presença de <strong><em>Enterococcus faecalis</em></strong> (que é intrinsecamente resistente a clindamicina e aminoglicosídeos). A conduta consiste em <strong>acrescentar Ampicilina 2 g IV a cada 6 horas</strong> ao esquema prévio. Esse esquema triplo cobre praticamente todo o espectro polimicrobiano pélvico;</p>",
+            "<strong>Esquemas Alternativos de Amplo Espectro:</strong>\n    <ul>\n      <li><strong>Ampicilina-Sulbactam:</strong> 3,0 g IV a cada 6 horas (monoterapia excelente com cobertura mista anaeróbia/aeróbia e enterocócica);",
+            "<strong>Piperacilina-Tazobactam:</strong> 4,5 g IV a cada 6 ou 8 horas (indicado em infecções nosocomiais graves ou choque séptico);",
+            "<strong>Cefotetan ou Cefoxitina:</strong> 2 g IV a cada 6 horas (cefalosporinas de 2ª geração com atividade anti-anaeróbia);",
+            "<strong>Meropenem (1 g IV 8/8h) ou Imipenem:</strong> Reservados para casos críticos com choque séptico refratário ou bactérias multirresistentes produtoras de ESBL.",
+            "<strong>Investigação Propedêutica Obrigatória de Complicações Ocultas:</strong>\n    <p>Não basta apenas trocar antibióticos! Febre persistente após 48-72h obriga a realização de exames complementares de imagem e laboratoriais para afastar:</p>\n    <ul>\n      <li><strong>Abscesso de parede abdominal ou abscesso pélvico (ligamento largo/Douglas):</strong> Solicitar <strong>Ultrassonografia ou TC de abdome e pelve</strong>;",
+            "<strong>Tromboflebite Pélvica Séptica:</strong> Solicitar TC helicoidal contrastada e iniciar teste terapêutico com heparina plena;",
+            "<strong>Restos placentários infectados retidos:</strong> USG pélvica revelando massa ecogênica intracavitária espessa heterogênea; conduta: <strong>curetagem uterina hemostática delicada ou aspiração manual intrauterina (AMIU) SOMENTE APÓS pelo menos 4 a 6 horas de antibioticoterapia venosa ampla iniciada</strong> (para evitar bacteriemia maciça cataclísmica durante a instrumentação);",
+            "<strong>Febre Medicamentosa:</strong> Reação alérgica a fármacos administrados (antibióticos ou analgésicos), caracterizada por eosinofilia periférica, rash cutâneo morbiliforme e ausência de toxemia sistêmica."
+          ]
+        ],
+        [
+          "3",
+          "Critérios de Cura, Descontinuação dos Antibióticos e Desmistificação do Antibiótico Oral"
+        ],
+        [
+          "p",
+          "Um dos tópicos de maior relevância prática e pegadinha contumaz em exames de residência médica diz respeito ao momento da alta e à <strong>desnecessidade absoluta de prescrição de antibióticos por via oral após o tratamento venoso hospitalar bem-sucedido</strong>:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Critérios Clínicos de Cura:</strong>\n    <ol>\n      <li>Paciente <strong>completamente afebril por no mínimo 24 a 48 horas consecutivas</strong> (temperatura &lt; 37,5ºC constante);",
+            "Ausência total de dor à palpação ou descompressão uterina e ausência de dor aos toques pélvicos;",
+            "Normalização do trânsito gastrointestinal (eliminação de flatos e fezes, apetite restaurado, ausência de náuseas);",
+            "Lóquios normais em volume e odor (ausência de lochia foetida);",
+            "Normalização clínica geral e tendência à queda progressiva do leucograma e PCR.",
+            "<strong>A Regra de Ouro da Descontinuação Antimicrobiana:</strong>\n    <p>Uma vez atingidos os critérios acima (afebril e assintomática por 24 a 48 horas), <strong>os antibióticos intravenosos devem ser simplesmente SUSPENSOS e a paciente pode receber alta hospitalar!</strong></p>\n    <p><strong>NÃO HÁ QUALQUER INDICAÇÃO DE COMPLEMENTAR O TRATAMENTO COM ANTIBIÓTICO ORAL AMBULATORIAL</strong> (como Cefalexina, Amoxicilina ou Metronidazol) para casa. Ensaios clínicos randomizados robustos demonstraram que a prescrição de antibióticos orais profiláticos ou de manutenção após a cura clínica da endometrite não previne recidivas, aumenta custos, induz efeitos colaterais gastrointestinais maternos, altera a microbiota fecal do lactente e seleciona cepas bacterianas resistentes. Essa recomendação é unânime nos protocolos do Ministério da Saúde, FEBRASGO, ACOG e CDC.</p>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-infeccao-puerperal",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico Integrado"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Endomiometrite Pós-Cesariana de Evolução Típica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Puérpera de 23 anos, secundípara, no 3º dia de pós-operatório de cesariana indicada de urgência após 16 horas de trabalho de parto e bolsa rota com líquido meconial fluido há 20 horas. Realizou 8 toques vaginais durante o trabalho de parto. Não fez uso de antibioprofilaxia antes da incisão da pele por esquecimento da equipe cirúrgica."
+        ],
+        [
+          "p",
+          "<strong>História da Moléstia Atual:</strong> No 3º dia pós-parto, antes da alta programada, queixa-se de cólicas abdominais intensas em baixo ventre, calafrios e indisposição marcada. Refere saída de secreção vaginal de odor extremamente desagradável."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Sinais Vitais: PA: 110x70 mmHg; FC: 112 bpm; FR: 18 irpm; Temp axilar: 38,8ºC;",
+            "Incisão Cirúrgica: Incisão de Pfannenstiel com bordas aproximadas, pele sem hiperemia acentuada, ausência de coleções ou secreção purulenta à palpação da ferida;",
+            "Palpação Abdominal: Abdome flácido, sem peritonismo (Blumberg negativo). Fundo de útero situado cerca de 3 cm acima da cicatriz umbilical (subinvolução uterina), com consistência amolecida e extremamente doloroso à palpação bimanual;",
+            "Exame Especular: Presença de lóquios turvos, acinzentados, abundantes e com odor fétido cadavérico intenso saindo pelo colo uterino;",
+            "Toque Vaginal: Colo permeável para 1 dedo, com dor excruciante à mobilização do colo uterino e fundos de saco vaginais livres e sem empastamentos."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Condutas:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Sindrômico e Etiológico:</strong> Endomiometrite pós-parto aguda decorrente de infecção bacteriana polimicrobiana mista ascendente. Apresenta os maiores fatores de risco clássicos: cesariana de urgência, bolsa rota prolongada (> 18h), trabalho de parto arrastado, múltiplos toques vaginais (> 5 toques) e ausência de profilaxia com cefazolina;",
+            "<strong>Conduta Imediata:</strong>\n    <ul>\n      <li>Internação hospitalar imediata em enfermaria obstétrica;",
+            "Coleta de exames laboratoriais: Hemograma completo (leucocitose importante com desvio à esquerda e granulações tóxicas), Proteína C Reativa (PCR elevada), Urina tipo 1 e Urocultura (para descartar pielonefrite puerperal), e dois pares de Hemoculturas periféricas colhidas de sítios venosos distintos antes do início do antibiótico;",
+            "Início imediato do esquema antimicrobiano venoso padrão-ouro: <strong>Clindamicina 900 mg IV a cada 8 horas + Gentamicina 5 mg/kg IV em dose única diária (infusão em 60 min)</strong>;",
+            "Manutenção do aleitamento materno (Clindamicina e Gentamicina são compatíveis com a amamentação);",
+            "Analgesia escalonada com Dipirona e anti-inflamatórios se função renal preservada.",
+            "<strong>Evolução Clínica:</strong> A paciente apresentou defervescência térmica completa em 36 horas, com involução uterina progressiva e desaparecimento do odor fétido dos lóquios. Permaneceu afebril e assintomática por 48 horas completas. Foi suspensa a antibioticoterapia venosa no 5º dia de internação e recebeu alta hospitalar sem prescrição de antibióticos orais."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Febre Persistente após 72h e Tromboflebite Pélvica Séptica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Puérpera de 28 anos, primípara, no 6º dia pós-cesariana e no 3º dia de tratamento com Clindamicina + Gentamicina venosa por diagnóstico prévio de endometrite puerperal."
+        ],
+        [
+          "p",
+          "<strong>História Clínica:</strong> A despeito do uso correto do esquema antimicrobiano nas doses preconizadas por mais de 72 horas, a paciente mantém picos febris diários de 39,5ºC acompanhados de calafrios solenes, alternados com períodos de apirexia e bem-estar relativo. Queixa-se de dor contínua de intensidade moderada no flanco direito."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Sinais Vitais: Temperatura axilar no pico de 39,4ºC; Frequência cardíaca: 125 bpm durante o pico febril, normalizando nos períodos afebris (sinal da febre sem taquicardia constante); PA: 120x80 mmHg;",
+            "Abdome: Abdome flácido; útero em involução adequada (abaixo da cicatriz umbilical, discretamente doloroso); palpação profunda revela dor e discreta resistência no quadrante inferior direito e flanco direito; ferida operatória íntegra sem secreções; descompressão súbita negativa;",
+            "Exame Ginecológico: Lóquios serosos sem odor fétido; toques sem massas palpáveis evidentes."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Condutas:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Diferencial da Falha Terapêutica após 72h:</strong> Diante de febre em picos diários que não responde à antibioticoterapia venosa ampla, as quatro principais hipóteses são: resistência por <em>Enterococcus faecalis</em>, abscesso pélvico oculto/hematoma infectado, restos placentários retidos e <strong>Tromboflebite Pélvica Séptica (TPS)</strong>;",
+            "<strong>Investigação Propedêutica por Imagem:</strong> Realização de <strong>Tomografia Computadorizada de Abdome e Pelve com contraste venoso</strong>, que revelou útero sem retenção de restos ovulares e sem coleções purulentas pélvicas, mas evidenciou dilatação importante da <strong>veia ovariana direita com trombo hipodenso intraluminal expansivo e espessamento inflamatório de sua parede</strong>, confirmando Tromboflebite da Veia Ovariana Direita;",
+            "<strong>Conduta Terapêutica Definitiva:</strong>\n    <ul>\n      <li>Início imediato de anticoagulação plena com <strong>Enoxaparina 1 mg/kg por via subcutânea a cada 12 horas</strong> (ou Heparina Não Fracionada IV mantendo TTPa entre 1,5 e 2,5 vezes o controle);",
+            "Manutenção da antibioticoterapia venosa de amplo espectro (Clindamicina + Gentamicina, associando Ampicilina 2 g IV de 6/6h);",
+            "<strong>Resposta ao Teste da Heparina:</strong> Em 36 horas após a introdução da enoxaparina, a paciente cessou completamente os picos febris, demonstrando defervescência térmica rápida e melhora clínica expressiva;",
+            "A paciente completou 7 dias de antibioticoterapia venosa e manteve enoxaparina terapêutica por 14 dias até a alta definitiva com segurança."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-infeccao-puerperal",
+      0,
+      [
+        [
+          "2",
+          "7. Questões de Concursos Médicos e ENAMED Comentadas"
+        ],
+        [
+          "3",
+          "Questão 1 (ENAMED / Residência Médica — Inédita Autoral)"
+        ],
+        [
+          "p",
+          "Puérpera de 22 anos, primípara, no 4º dia de pós-operatório de cesariana não programada realizada após trabalho de parto prolongado e bolsa rota de 24 horas, apresenta temperatura axilar de 38,9ºC com calafrios. Ao exame clínico, o útero encontra-se aumentado de volume, situado na cicatriz umbilical, amolecido e extremamente doloroso à palpação abdominal. O exame especular revela lóquios abundantes, turvos e de odor francamente pútrido fétido. A ferida operatória encontra-se limpa e sem secreções. Considerando o diagnóstico de endomiometrite pós-parto, assinale a opção que descreve o esquema antimicrobiano padrão-ouro de primeira linha e a conduta recomendada para o momento da alta hospitalar:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Cefepima IV em monoterapia; manter por 7 dias hospitalares e prescrever Ciprofloxacino oral por mais 14 dias após a alta."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Clindamicina (900 mg IV a cada 8 horas) associada a Gentamicina (5 mg/kg IV ao dia); após a paciente permanecer afebril e assintomática por 24 a 48 horas, suspender o antibiótico venoso e conceder alta SEM necessidade de antibióticos orais ambulatoriais."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Amoxicilina associada a Clavulanato de potássio por via oral ambulatorial por 10 dias, sem necessidade de internação ou antibióticos venosos."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Metronidazol associado a Ampicilina venosa; manter tratamento venoso por 14 dias ininterruptos e contraindicar a amamentação em definitivo."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> Vancomicina associada a Meropenem venosos; descontinuar após 72 horas e prescrever Doxiciclina oral por 21 dias."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está CORRETA?</strong> O esquema padrão-ouro clássico para o tratamento da endomiometrite pós-parto é a combinação intravenosa de <strong>Clindamicina (900 mg IV 8/8h) + Gentamicina (5 mg/kg IV dose única diária ou 1,5 mg/kg IV 8/8h)</strong>, que oferece cobertura bactericida sinérgica contra a flora mista anaeróbia estrita e bacilos Gram-negativos entéricos. O critério de cura é a ausência de febre e sintomas por <strong>24 a 48 horas</strong>, momento em que o antibiótico venoso é simplesmente <strong>suspenso e a alta concedida SEM antibiótico oral ambulatorial</strong> (ensaio clínico clássico provou que antibiótico oral não traz benefício algum);",
+            "<strong>Por que as alternativas A, C, D e E estão INCORRETAS?</strong> Cefepima em monoterapia não cobre anaeróbios adequadamente; tratamento oral ambulatorial na endometrite é erro crasso; o tratamento não exige 14 dias venosos nem contraindica amamentação; e Vancomicina + Meropenem é esquema de reserva para sepse refratária com bactérias multirresistentes."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 (SUS-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "De acordo com os critérios clássicos adotados pela Organização Mundial da Saúde (OMS) e internacionalmente reconhecidos como critérios de Gibbs, define-se febre puerperal como a temperatura corporal igual ou superior a:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> 37,8ºC em qualquer momento a partir da dequitação placentária até o 42º dia pós-parto."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> 38,0ºC verificada em quaisquer dois dias durante os primeiros 10 dias pós-parto, excluindo obrigatoriamente as primeiras 24 horas."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> 38,5ºC nas primeiras 12 horas pós-parto aferida em duas tomadas com intervalo de 4 horas."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> 38,0ºC persistente por mais de 48 horas contínuas após o 15º dia pós-parto."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> 39,0ºC em aferição única acompanhada de calafrios em qualquer período do puerpério."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está CORRETA?</strong> A clássica definição da OMS de febre puerperal exige <strong>temperatura &ge; 38,0ºC observada em pelo menos 2 dias quaisquer dos primeiros 10 dias pós-parto, com exclusão formal das primeiras 24 horas</strong>. A exclusão das primeiras 24h fundamenta-se na alta prevalência de elevações térmicas reacionais por desidratação, esforço físico do trabalho de parto e apojadura inicial;",
+            "<strong>Por que as alternativas A, C, D e E estão INCORRETAS?</strong> Nenhuma delas reproduz a definição quantitativa e temporal estrita da OMS e de Gibbs."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 (CERMAM / ENARE)"
+        ],
+        [
+          "p",
+          "Mulher de 26 anos, no 5º dia pós-cesariana, encontra-se internada em uso de Clindamicina (900 mg IV de 8/8h) e Gentamicina (5 mg/kg IV ao dia) há 72 horas por endometrite. A paciente continua apresentando picos febris diários com calafrios que atingem 39,2ºC, embora relate melhora discreta da dor à palpação uterina. O exame físico não mostra secreção ou abaulamento na ferida cirúrgica e os pulmões estão limpos. A ultrassonografia pélvica não evidenciou coleções líquidas e a cavidade uterina está vazia. Considerando a principal bactéria causadora de falha terapêutica ao esquema de Clindamicina e Gentamicina e a respectiva modificação farmacológica indicada, assinale a opção correta:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> <em>Pseudomonas aeruginosa</em>; substituir Gentamicina por Amicacina."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> <em>Enterococcus faecalis</em>; acrescentar Ampicilina venosa ao esquema em curso."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> <em>Chlamydia trachomatis</em>; acrescentar Doxiciclina oral ao esquema em curso."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> <em>Bacteroides fragilis</em>; acrescentar Metronidazol venoso ao esquema em curso."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> <em>Staphylococcus epidermidis</em>; associar Vancomicina e suspender a Clindamicina."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está CORRETA?</strong> O <strong><em>Enterococcus faecalis</em></strong> é um coco Gram-positivo intrinsecamente resistente a clindamicina e a aminoglicosídeos em doses habituais. É a principal causa microbiológica de falha clínica após 48 a 72 horas de Clindamicina + Gentamicina. A conduta padrão de escalonamento consiste em <strong>acrescentar Ampicilina (2 g IV de 6/6h)</strong> ao esquema, compondo a clássica terapia tripla antimicrobiana;",
+            "<strong>Por que as alternativas A, C, D e E estão INCORRETAS?</strong> A <em>Pseudomonas</em> é rara na endometrite comunitária; <em>Chlamydia</em> não se manifesta com falha hiperaguda desse tipo; o <em>Bacteroides</em> já é amplamente coberto pela Clindamicina; e o <em>S. epidermidis</em> não é a causa habitual de falha uterina."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP / Revalidação Médica)"
+        ],
+        [
+          "p",
+          "Puérpera de 30 anos, no 7º dia pós-parto cirúrgico, em tratamento para endometrite com Clindamicina, Gentamicina e Ampicilina IV há 4 dias. Permanece com picos febris diários de até 39,5ºC acompanhados de calafrios, mas encontra-se em bom estado geral nos períodos intercríticos. Ao exame físico, apresenta dor à palpação profunda em fossa ilíaca direita e flanco direito, sem peritonismo ou coleções palpáveis. A tomografia computadorizada com contraste de abdome e pelve evidencia defeito de enchimento luminal na veia ovariana direita, compatível com tromboflebite pélvica séptica. Assinale a conduta terapêutica imediata a ser associada à antibioticoterapia:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Laparotomia de urgência com ressecção cirúrgica da veia ovariana trombosada e histerectomia total."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Introdução imediata de anticoagulação com Heparina plena em dose terapêutica."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Embolização arterial uterina percutânea com microesferas de polivinilálcool."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Implante de filtro de veia cava inferior por via percutânea femoral."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> Terapia fibrinolítica endovenosa com alteplase (rtPA) em infusão rápida."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa B está CORRETA?</strong> A conduta mandatória e salvadora na <strong>Tromboflebite Pélvica Séptica (TPS)</strong> é a introdução imediata de <strong>anticoagulação plena com Heparina</strong> (Enoxaparina 1 mg/kg SC 12/12h ou Heparina Não Fracionada IV contínua) associada à manutenção da antibioticoterapia venosa ampla. A rápida queda da febre em 48 a 72 horas confirma a resposta terapêutica (teste da heparina);",
+            "<strong>Por que as alternativas A, C, D e E estão INCORRETAS?</strong> Cirurgia ressectiva é proscrita hoje em dia frente ao sucesso clínico da heparina; embolização trata sangramento e não flebite; filtro de cava e trombolíticos têm indicações restritas em embolias maciças refratárias, não sendo primeira linha aqui."
+          ]
+        ]
+      ]
+    ],
+    [
+      "sintese-pratica-guia-bolso-infeccao-puerperal",
+      0,
+      [
+        [
+          "2",
+          "8. Guia Prático de Conduta e Síntese de Infecção Puerperal para o Plantão e ENAMED"
+        ],
+        [
+          "3",
+          "Os Dez Mandamentos da Infecção Puerperal"
+        ],
+        [
+          "o",
+          [
+            "<strong>Critérios de Febre Puerperal (OMS / Gibbs):</strong> Temperatura axilar &ge; 38,0ºC em 2 dias quaisquer dos primeiros 10 dias pós-parto, <strong>excluindo as primeiras 24 horas</strong> (onde predomina desidratação, trauma mecânico e febre transitória de apojadura).",
+            "<strong>Exceção da Febre nas Primeiras 24 Horas:</strong> Febre &ge; 38,5ºC acompanhada de taquicardia, hipotensão ou toxemia imediata NÃO pode ser ignorada: indica <strong>corioamnionite prévia</strong> ou infecção fulminante por <strong><em>Streptococcus pyogenes</em> (GAS)</strong>.",
+            "<strong>Fator de Risco Número 1:</strong> <strong>Operação Cesariana</strong> (eleva o risco de endometrite em 5 a 20 vezes). A profilaxia com <strong>Cefazolina 2 g IV dose única na indução anestésica</strong> (antes da incisão) é mandatória e reduz drasticamente as taxas de infecção.",
+            "<strong>Microbiologia Clássica:</strong> Infecção <strong>polimicrobiana mista ascendente</strong> (bactérias anaeróbias estritas como <em>Bacteroides fragilis</em> e <em>Peptostreptococcus</em> associadas a bacilos Gram-negativos entéricos como <em>E. coli</em> e estreptococos).",
+            "<strong>Tríade Clássica da Endomiometrite:</strong> Febre puerperal (pico 3º ao 5º dia) + <strong>Subinvolução uterina amolecida e dolorosa</strong> + <strong>Lóquios fétidos acinzentados (<em>lochia foetida</em>)</strong>. Lóquios inodoros podem ocorrer com GAS e GBS.",
+            "<strong>Tratamento Padrão-Ouro Intravenoso:</strong> <strong>Clindamicina (900 mg IV 8/8h) + Gentamicina (5 mg/kg IV dose única diária)</strong>. Eficácia clínica superior a 90%. Tratamento sempre hospitalar.",
+            "<strong>Falha Terapêutica após 48 a 72 Horas:</strong> Se mantiver febre e dor: <strong>adicionar Ampicilina (2 g IV 6/6h)</strong> para cobertura de <strong><em>Enterococcus faecalis</em></strong> (resistente à clindamicina/aminoglicosídeos). Solicitar USG/TC de abdome e pelve para investigar coleções purulentas e tromboflebite.",
+            "<strong>Tromboflebite Pélvica Séptica (TPS):</strong> Febre persistente em picos (agulhas) a despeito de antibióticos venosos corretos, dor em flanco/fossa ilíaca e bom estado geral relativo intercrítico. Diagnóstico por TC contrastada e <strong>tratamento com Heparina plena</strong> (defervescência térmica em 48-72h = teste da heparina positivo).",
+            "<strong>Restos Placentários Infectados:</strong> Se USG evidenciar massa ecogênica intracavitária, realizar curetagem delicada ou AMIU <strong>SOMENTE após pelo menos 4 a 6 horas de antibioticoterapia venosa ampla iniciada</strong> para evitar bacteriemia e choque séptico.",
+            "<strong>Critérios de Alta e Descontinuação:</strong> Paciente afebril e assintomática por <strong>24 a 48 horas consecutivas</strong>. <strong>SUSPENDER OS ANTIBIÓTICOS E DAR ALTA SEM ANTIBIÓTICO ORAL!</strong> Não há necessidade de comprimidos de antibiótico em casa."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-complexos-adicionais",
+      0,
+      [
+        [
+          "2",
+          "9. Casos Clínicos Complexos de Plantão Cirúrgico e Tomada de Decisão"
+        ],
+        [
+          "3",
+          "Caso Clínico Avançado 1: Fasciíte Necrotizante Pós-Cesariana em Diabética"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Puérpera de 34 anos, multípara, portadora de Diabetes Mellitus tipo 2 pré-gestacional com controle metabólico inadequado (HbA1c prévia de 9,8%) e Obesidade Grau III (IMC: 42 kg/m²), no 5º dia pós-cesariana de urgência por sofrimento fetal agudo."
+        ],
+        [
+          "p",
+          "<strong>Quadro Clínico:</strong> Queixa-se de dor excruciante na ferida operatória em hipogástrio, que se intensificou de forma desesperadora nas últimas 24 horas, refratária a analgésicos opioides. A paciente relata sensação de desmaio, sudorese fria e febre com calafrios."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Estado Geral: Mau estado geral, obnubilada, taquipneica, hipocorada 2+/4+, sudorese fria;",
+            "Sinais Vitais: PA: 80x45 mmHg (choque distributivo); FC: 138 bpm; FR: 28 irpm; SpO2: 92% em ar ambiente; Temp axilar: 39,4ºC;",
+            "Exame do Abdome e Ferida Operatória: A cicatriz cirúrgica apresenta bordas desfeitas com drenagem de líquido acinzentado serossanguinolento com aspecto de \"água de lavagem de carne\" e odor adocicado pútrido; a pele perilesional estende-se em placa arroxeada/violácea com bolhas hemorrágicas; à palpação delicada das bordas da incisão até os flancos e espinhas ilíacas, <strong>evidencia-se nítida crepitação subcutânea de gás sob os dedos e áreas de anestesia cutânea focal</strong>; abdome difusamente doloroso com defesa involuntária."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Conduta Emergencial Baseada em Evidências:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico de Extrema Gravidade:</strong> <strong>Fasciíte Necrotizante de Parede Abdominal (Síndrome Polimicrobiana de Meleney / Infecção Necrotizante de Tecidos Moles)</strong> pós-cesariana com Choque Séptico em paciente imunocomprometida;",
+            "<strong>Conduta Cirúrgica Imediata (Terapêutica Curativa Mandatória):</strong>\n    <p>O atraso cirúrgico é o principal determinante de mortalidade nessa condição. A paciente deve ser transferida <strong>IMEDIATAMENTE PARA O CENTRO CIRÚRGICO</strong> sem esperar qualquer exame de imagem (TC ou USG);</p>\n    <ul>\n      <li>Realização de <strong>desbridamento cirúrgico agressivo e radical de toda a fáscia necrosada, tecido subcutâneo e pele desvitalizada</strong> até atingir margens perfeitamente viáveis e sangrantes;",
+            "Inspeção da cavidade peritoneal e miométrio (laparotomia exploradora associada); lise de aderências e lavagem copiosa da cavidade com litros de soro fisiológico aquecido; colocação de curativo a vácuo (pressão negativa) ou drenos tubulares calibrosos;",
+            "Programação de <strong>reabordagem cirúrgica sistemática (second-look) em 24 a 48 horas</strong> para revisão de margens e novos desbridamentos;",
+            "<strong>Terapia Antimicrobiana e Suporte Hemodinâmico:</strong>\n    <ul>\n      <li>Ressuscitação volêmica imediata com 30 mL/kg de Ringer Lactato associada à introdução precoce de <strong>Noradrenalina em cateter venoso central</strong> para atingir PAM &ge; 65 mmHg;",
+            "Esquema antibiótico venoso intensivo: <strong>Meropenem (1,0 g IV 8/8h) + Clindamicina (900 mg IV 8/8h - ação essencial de supressão da síntese de exotoxinas e fatores de virulência de GAS e estafilococos) + Vancomicina (15-20 mg/kg IV 12/12h para cobertura de MRSA)</strong>;",
+            "Internação pós-operatória em leito de Unidade de Terapia Intensiva (UTI) adulto."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico Avançado 2: Deiscência Infectada de Parede vs Fasciíte vs Coleção Pélvica"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Puérpera de 27 anos, primípara, no 8º dia pós-cesariana eletiva, retorna ao pronto-socorro referindo que sua cicatriz abdominal começou a \"vazar secreção amarela parecendo leite condensado\" há 2 dias. Nega dor intensa em repouso, febre diária ou calafrios."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Sinais Vitais: PA: 120x70 mmHg; FC: 78 bpm; FR: 16 irpm; Temp: 36,8ºC (eutérmica);",
+            "Abdome: Flácido, indolor à palpação profunda fora da ferida; descompressão súbita negativa; útero intrapélvico impalpável;",
+            "Ferida Operatória: A incisão de Pfannenstiel apresenta deiscência parcial no terço médio de cerca de 3 cm, com saída espontânea de pus espesso amarelo-dourado; ao inspecionar a profundidade da ferida sob iluminação adequada com pinça estéril, nota-se que a <strong>aponeurose dos retos abdominais encontra-se perfeitamente ÍNTEGRA, com os pontos de sutura aponeurótica fechados e firmes</strong>; não há crepitação subcutânea, eritema violáceo ou dor desproporcional."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Condutas:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Clínico:</strong> <strong>Infecção de Sítio Cirúrgico Superficial / Abscesso de Subcutâneo Incisional Pós-Cesariana</strong>, sem envolvimento de fáscia aponeurótica (sem evisceração) e sem peritonite;",
+            "<strong>Conduta Local Definitiva:</strong>\n    <ul>\n      <li>Abertura manual/instrumental delicada da pele sobre a loja de pus, lise digital cuidadosa das lojas no subcutâneo para drenagem completa da coleção purulenta;",
+            "Coleta de amostra de secreção purulenta para bacterioscopia pelo Gram e cultura com antibiograma;",
+            "Lavagem exaustiva da ferida com jatos de soro fisiológico a 0,9%;",
+            "Deixar a ferida aberta para <strong>cicatrização por segunda intenção</strong> com curativos diários com gaze umedecida em soro;",
+            "<strong>Conduta Antimicrobiana:</strong> Como o processo é puramente superficial, sem celulite extensa circundante (> 5 cm) e a paciente encontra-se absolutamente afebril e sem sinais sistêmicos, <strong>a simples drenagem adequada do abscesso subcutâneo é curativa</strong>. Caso haja celulite periférica leve associada, prescreve-se <strong>Cefalexina 500 mg VO 6/6h por 7 dias</strong> em regime ambulatorial."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-aprofundadas-infeccao-puerperal",
+      0,
+      [
+        [
+          "2",
+          "10. Banco Complementar de Questões de Alto Desempenho Comentadas"
+        ],
+        [
+          "3",
+          "Questão 5 (ENARE / Residência Médica — Inédita Autoral)"
+        ],
+        [
+          "p",
+          "Mulher de 29 anos, no 2º dia pós-parto normal sem episiotomia, evolui com pico febril de 38,1ºC às 14 horas após o parto. A puérpera encontra-se em ótimo estado geral, assintomática, com mamas túrgidas da apojadura láctea sem sinais flogísticos focais, abdome flácido, útero contraído abaixo da cicatriz umbilical, indolor à palpação, e lóquios rubros em quantidade fisiológica com odor característico normal. A paciente consumiu pouco líquido nas últimas 18 horas devido a náuseas no pós-parto imediato. Com base nas diretrizes epidemiológicas da OMS e nos critérios clínicos clássicos de Gibbs, assinale a conduta médica correta para este momento:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Iniciar imediatamente Clindamicina e Gentamicina venosas por se tratar do primeiro dia de febre puerperal documentada."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Prescrever Cefalexina por via oral e solicitar ultrassonografia pélvica de urgência para pesquisa de restos placentários retidos."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Reconhecer o quadro como provável hipertermia por desidratação e esforço muscular pós-parto; estimular hidratação oral vigorosa e manter vigilância clínica sem iniciar antibióticos."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Realizar curetagem uterina profilática na enfermaria devido ao risco iminente de infecção ascendente."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> Suspender imediatamente o aleitamento materno e introduzir fórmula láctea infantil artificial."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> Pelos critérios clássicos da OMS e de Gibbs, as elevações térmicas nas <strong>primeiras 24 horas pós-parto são formalmente excluídas do diagnóstico de febre puerperal infecciosa</strong> na ausência de toxemia ou sinais focais. Decorrem primariamente de desidratação pós-parto, esforço muscular exaustivo e apojadura mamária fisiológica inicial. A conduta correta é suporte hídrico, vigilância e reavaliação clínica, sem antibióticos;",
+            "<strong>Por que as alternativas A, B, D e E estão INCORRETAS?</strong> Indicar antimicrobianos venosos ou orais nesse momento constitui conduta iatrogênica precipitada; a curetagem uterina é absolutamente contraindicada em útero contraído sem sangramento; e a suspensão da amamentação é deletéria e descabida."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 (USP-RP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Uma puérpera de 22 anos foi submetida a cesariana de urgência por descolamento prematuro de placenta. No 4º dia pós-operatório, evolui com quadro de febre de 39,0ºC, útero doloroso e subinvoluído e lóquios fétidos. Foi corretamente internada e iniciado o esquema padrão de Clindamicina (900 mg IV 8/8h) associada a Gentamicina (5 mg/kg IV ao dia). Após 48 horas de infusão, a paciente evolui afebril, com involução uterina franca, útero completamente indolor à palpação profunda e lóquios escassos sem odor fétido. A paciente completou 48 horas inteiras sem qualquer episódio febril ou sintoma (afebril por 48h). Assinale a conduta antimicrobiana correta para o plano de alta hospitalar desta puérpera:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Manter Clindamicina e Gentamicina IV por mais 10 dias hospitalares para evitar recidiva microbiológica bacteriana."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> Suspender a Gentamicina venosa, converter a Clindamicina para a via oral (300 mg VO 6/6h) e dar alta para completar 14 dias de tratamento em casa."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> Suspender os antibióticos venosos e conceder alta hospitalar sem prescrição de antibióticos por via oral para o domicílio."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> Prescrever alta médica com Amoxicilina associada a Clavulanato de potássio oral (875/125 mg VO 12/12h) por 7 dias adicionais."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> Substituir o esquema por Ciprofloxacino oral associado a Metronidazol por via retal por 10 dias."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Alternativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Por que a alternativa C está CORRETA?</strong> O critério formal de cura da endomiometrite pós-parto consiste na permanência da paciente em estado <strong>completamente afebril e assintomático por 24 a 48 horas consecutivas</strong>. Atingido esse marco, <strong>os antibióticos venosos devem ser imediatamente suspensos e a paciente liberada para alta hospitalar SEM a prescrição de qualquer antibiótico por via oral</strong>. A manutenção de antibióticos orais ambulatoriais em pacientes curadas clinicamente não traz nenhum benefício comprovado em ensaios randomizados e seleciona bactérias resistentes;",
+            "<strong>Por que as alternativas A, B, D e E estão INCORRETAS?</strong> Todas propõem a extensão indevida de antibióticos intravenosos prolongados ou a conversão errônea para esquemas orais ambulatoriais domiciliares desnecessários."
+          ]
+        ],
+        [
+          "3",
+          "Questão 7 (UNICAMP / Cirurgia Obstétrica)"
+        ],
+        [
+          "p",
+          "Sobre a prevenção e antibioticoprofilaxia cirúrgica na cesariana recomendada pela FEBRASGO e ACOG, analise as afirmativas a seguir:"
+        ],
+        [
+          "p",
+          "I. A Cefazolina (cefalosporina de 1ª geração) é a droga de escolha e deve ser administrada em dose única intravenosa de 2,0 g dentro de 30 a 60 minutos antes da incisão cirúrgica na pele."
+        ],
+        [
+          "p",
+          "II. Em gestantes com peso corporal igual ou superior a 120 kg, a dose profilática de Cefazolina deve ser aumentada para 3,0 g por via intravenosa."
+        ],
+        [
+          "p",
+          "III. O antibiótico profilático só deve ser injetado na veia da gestante após o clampeamento do cordão umbilical para prevenir toxicidade no concepto."
+        ],
+        [
+          "p",
+          "IV. Em cesarianas realizadas em trabalho de parto ativo ou com membranas rotas, a adição de Azitromicina (500 mg IV) em infusão pré-operatória reduz adicionalmente as taxas de infecção pós-parto."
+        ],
+        [
+          "p",
+          "Estão CORRETAS as afirmativas:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> I, II e IV, apenas."
+        ],
+        [
+          "p",
+          "<strong>B)</strong> I e III, apenas."
+        ],
+        [
+          "p",
+          "<strong>C)</strong> II, III e IV, apenas."
+        ],
+        [
+          "p",
+          "<strong>D)</strong> I, II, III e IV."
+        ],
+        [
+          "p",
+          "<strong>E)</strong> II e IV, apenas."
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito: A.</strong>"
+        ],
+        [
+          "p",
+          "<em>Análise das Afirmativas:</em>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Item I: CORRETO.</strong> Cefazolina 2 g IV é a droga de escolha e deve ser aplicada antes da incisão cirúrgica da pele (idealmente na indução anestésica);",
+            "<strong>Item II: CORRETO.</strong> Pacientes com peso &ge; 120 kg exigem dose aumentada de 3,0 g IV para compensar o maior volume de distribuição;",
+            "<strong>Item III: INCORRETO.</strong> O dogma antigo de aplicar após o clampeamento foi abandonado; aplicar antes da incisão reduz pela metade a taxa de infecção sem afetar a saúde do neonato;",
+            "<strong>Item IV: CORRETO.</strong> O estudo C-STUB demonstrou o benefício da adição de Azitromicina 500 mg IV em cesarianas não eletivas (em trabalho de parto ou pós-amniorrexe)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde do Brasil — Protocolo de Prevenção e Tratamento das Infecções Puerperais e Manejo da Sepse Materna</a>",
+            "<a href=\"https://www.febrasgo.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) — Manual de Infecções Puerperais e Cirurgia Obstétrica</a>",
+            "<a href=\"https://www.who.int/publications/i/item/9789241549363\" target=\"_blank\" rel=\"noopener noreferrer\">World Health Organization (WHO) — WHO recommendations for prevention and treatment of maternal peripartum infections</a>",
+            "<a href=\"https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/06/prevention-of-infection-after-gynecologic-procedures\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Obstetricians and Gynecologists (ACOG) — Practice Bulletin No. 195: Prevention of Infection After Gynecologic Procedures and Cesarean Delivery</a>",
+            "<a href=\"https://www.cochranelibrary.com\" target=\"_blank\" rel=\"noopener noreferrer\">Cochrane Pregnancy and Childbirth Group — Antibiotic regimens for postpartum endometritis (Mackeen AD et al.)</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

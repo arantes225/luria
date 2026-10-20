@@ -1,0 +1,1075 @@
+{
+  "v": 2,
+  "s": "hipoglicemia-e-disturbios-metabolicos-neonatais",
+  "t": "Hipoglicemia e Distúrbios Metabólicos Neonatais",
+  "p": "Hipoglicemia e Distúrbios Metabólicos Neonatais — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Adaptação Metabólica, TIG, Hiperinsulinismo, Hipocalcemia e Hipomagnesemia Neonatal",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Hipoglicemia e Distúrbios Metabólicos Neonatais",
+    "Tratado de Alta Performance em Adaptação Metabólica, TIG, Hiperinsulinismo, Hipocalcemia e Hipomagnesemia Neonatal",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Hipoglicemia e Distúrbios Metabólicos Neonatais"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fisiologia-energetica-transicao-metabolica-neonatal-e-fisiopatologia",
+      "1. Fisiologia Energética Fetal, Adaptação Metabólica Neonatal e Fisiopatologia da Hipoglicemia"
+    ],
+    [
+      "definicao-criterios-diagnosticos-e-valores-operacionais-de-corte",
+      "2. Definição Operacional, Valores de Corte Baseados em Evidências e Estratificação de Risco"
+    ],
+    [
+      "apresentacao-clinica-semiologia-minuciosa-e-diagnostico-diferencial",
+      "3. Apresentação Clínica, Semiologia Minuciosa e Diagnóstico Diferencial dos Erros Inatos"
+    ],
+    [
+      "investigacao-laboratorial-amostra-critica-e-protocolos",
+      "4. Investigação Laboratorial Estruturada e a Coleta da \"Amostra Crítica\""
+    ],
+    [
+      "abordagem-terapeutica-calculo-da-tig-e-farmacoterapia",
+      "5. Abordagem Terapêutica Integrada: Cálculo da TIG, Protocolos de Bolus e Farmacoterapia"
+    ],
+    [
+      "outros-disturbios-metabolicos-neonatais-calcio-magnesio-sodio",
+      "6. Outros Distúrbios Metabólicos Críticos do Recém-Nascido: Cálcio, Magnésio e Sódio"
+    ],
+    [
+      "casos-clinicos-estruturados-e-resolvidos-metabolismo",
+      "7. Casos Clínicos Estruturados e Resolvidos com Raciocínio Clínico Completo"
+    ],
+    [
+      "questoes-de-prova-comentadas-e-sintese-high-yield",
+      "8. Questões de Residência Médica Comentadas na Íntegra e Síntese High-Yield"
+    ]
+  ],
+  "q": [
+    [
+      "fisiologia-energetica-transicao-metabolica-neonatal-e-fisiopatologia",
+      0,
+      [
+        [
+          "2",
+          "1. Fisiologia Energética Fetal, Adaptação Metabólica Neonatal e Fisiopatologia da Hipoglicemia"
+        ],
+        [
+          "3",
+          "O Metabolismo Energético Fetal e o Suprimento de Glicose Intraútero"
+        ],
+        [
+          "p",
+          "Durante a vida intrauterina, o feto não produz glicose de forma autônoma em quantidades significativas. A homeostase glicêmica fetal depende estritamente da transferência contínua de glicose materna através da placenta por meio de <strong>difusão facilitada carreada por transportadores específicos de glicose (GLUT-1 e GLUT-3)</strong>. A concentração de glicose no sangue fetal mantém-se fisiologicamente em cerca de <strong>70% a 80% da glicemia materna circulante</strong> (uma média de 55 a 65 mg/dL). Qualquer alteração na glicemia materna repercute diretamente na glicemia fetal."
+        ],
+        [
+          "p",
+          "Em resposta à glicose transferida, o pâncreas endócrino fetal secreta sua própria insulina a partir da 10ª à 12ª semana de gestação. A insulina é o <strong>principal hormônio anabólico do crescimento fetal</strong>, promovendo a captação celular de glicose, a síntese de proteínas teciduais, a lipogênese e, de modo crucial no terceiro trimestre (após a 28ª semana), o <strong>acúmulo maciço de glicogênio hepático e muscular</strong> e a deposição de tecido adiposo marrom e branco. Nas últimas 8 a 10 semanas de gestação, o feto armazena glicogênio hepático em concentrações que superam em duas a três vezes as reservas do adulto (cerca de 50 mg de glicogênio por grama de tecido hepático ao termo), estocando energia para a transição extrauterina imediata."
+        ],
+        [
+          "3",
+          "A Transição Metabólica Pós-Natal Imediata: O \"Nadir Glicêmico Fisiológico\""
+        ],
+        [
+          "p",
+          "Com o clampeamento do cordão umbilical ao nascimento, ocorre a interrupção abrupta e definitiva do influxo placentário contínuo de glicose materna. Simultaneamente, o recém-nascido é exposto ao estresse do parto, ao resfriamento térmico do ambiente e ao trabalho respiratório mecânico espontâneo, elevando substancialmente o consumo energético celular. Em todos os recém-nascidos normais a termo hígidos, a glicemia sofre uma <strong>queda fisiológica acentuada nas primeiras 1 a 2 horas de vida extrauterina</strong>, atingindo um valor mínimo fisiológico (o chamado <strong>nadir glicêmico neonatal</strong>, com níveis que frequentemente caem para 30 a 40 mg/dL entre 60 e 90 minutos de vida)."
+        ],
+        [
+          "p",
+          "Esse nadir glicêmico transitório não é um evento patológico acidental, mas sim um <strong>gatilho endócrino fisiológico evolutivo primordial</strong>. A queda da glicose circulante associada ao estresse do parto deflagra uma vigorosa resposta hormonal e enzimática:"
+        ],
+        [
+          "u",
+          [
+            "Queda abrupta da secreção de insulina pelas células beta pancreáticas fetais;",
+            "Elevação maciça dos hormônios contrarreguladores: <strong>Glucagon</strong> (seus níveis séricos aumentam em três a cinco vezes nos primeiros minutos de vida), <strong>Adrenalina e Noradrenalina</strong> (pico simpaticomimético induzido pelo nascimento) e secreção sustentada de <strong>Hormônio do Crescimento (GH)</strong> e <strong>Cortisol</strong>;",
+            "Ativação imediata da <strong>Glicogenólise Hepática</strong>: a enzima glicogênio fosforilase é fosforilada e ativada pelo glucagon, quebrando o glicogênio estocado e liberando glicose livre no sangue nas primeiras 4 a 6 horas de vida (responsável pela estabilização da glicemia antes das primeiras mamadas);",
+            "Indução da <strong>Gliconeogênese Hepática</strong>: ativação da enzima-chave fosfoenolpiruvato carboxiquinase (PEPCK), permitindo a síntese de nova glicose a partir de lactato, piruvato, glicerol e aminoácidos (alanina);",
+            "Estímulo à <strong>Lipólise e Cetogênese</strong>: a lipase hormônio-sensível quebra os triglicerídeos do tecido adiposo em glicerol e ácidos graxos livres. No fígado, a beta-oxidação mitocondrial dos ácidos graxos gera acetil-CoA, que é canalizado para a síntese dos corpos cetônicos (<strong>beta-hidroxibutirato e acetoacetato</strong>). Os corpos cetônicos e o lactato funcionam como <strong>combustíveis cerebrais alternativos essenciais</strong> capazes de manter o metabolismo oxidativo do sistema nervoso central e poupar a glicose durante as flutuações glicêmicas do período neonatal imediato."
+          ]
+        ],
+        [
+          "p",
+          "Em recém-nascidos a termo hígidos em aleitamento materno precoce, a glicemia sobe espontaneamente após a 2ª hora de vida, estabilizando-se acima de 45 a 50 mg/dL entre 12 e 24 horas e mantendo-se entre 60 e 80 mg/dL após 48 horas de vida."
+        ],
+        [
+          "3",
+          "Mecanismos Fisiopatológicos da Hipoglicemia Neonatal"
+        ],
+        [
+          "p",
+          "A hipoglicemia patológica instala-se quando há descompasso grave entre a oferta endógena/exógena de glicose e as demandas metabólicas do organismo, enquadrando-se em quatro grandes mecanismos fisiopatológicos fundamentais:"
+        ],
+        [
+          "t",
+          [
+            "Mecanismo Fisiopatológico",
+            "Mecanismo Celular / Bioquímico",
+            "Populações Típicas de Risco",
+            "Características Laboratoriais Distintivas"
+          ],
+          [
+            [
+              "<strong>1. Hiperinsulinismo Neonatal</strong>",
+              "Secreção inadequada e desregulada de insulina que não é suprimida pela hipoglicemia. A insulina ativa a glicólise e o armazenamento de glicogênio/gordura, e <strong>bloqueia simultaneamente a glicogenólise, gliconeogênese, lipólise e cetogênese</strong>. O cérebro fica desprovido tanto de glicose quanto de corpos cetônicos (\"cérebro sem combustível alternativo\").",
+              "- <strong>Filho de Mãe Diabética (FMD)</strong> (DM prévio ou gestacional com hiperglicemia fetal e hiperplasia das ilhotas pancreáticas);<br>- Macrossômicos (> 4.000 g);<br>- <strong>Síndrome de Beckwith-Wiedemann</strong> (mutação 11p15 com macrossomia, onfalocele, macroglossia e hiperinsulinismo);<br>- <strong>Hiperinsulinismo Congênito</strong> (mutações nos canais K-ATP das células beta: genes <em>ABCC8</em> e <em>KCNJ11</em>).",
+              "- <strong>Taxa de Infusão de Glicose (TIG) muito elevada</strong> (> 8 a 10 mg/kg/min) necessária para manter euglicemia;<br>- Níveis séricos detectáveis ou elevados de insulina (> 2 a 3 mcU/mL) e Peptídeo C no momento da hipoglicemia franca (< 50 mg/dL);<br>- <strong>Ausência de corpos cetônicos</strong> no sangue (beta-hidroxibutirato < 1,0 mmol/L) e na urina (cetonúria negativa - hipoglicemia hipocetonêmica);<br>- Ácidos graxos livres séricos baixos; resposta glicêmica exuberante ao glucagon parenteral (> 30 mg/dL de elevação da glicemia)."
+            ],
+            [
+              "<strong>2. Reservas Energéticas Inadequadas ou Esgotadas</strong>",
+              "Incapacidade de estocar glicogênio hepático e gordura subcutânea devido à interrupção precoce da gestação ou insuficiência placentária crônica com restrição nutricional intraútero crônica.",
+              "- <strong>Recém-nascidos Prematuros</strong> (< 37 semanas, especialmente < 34 semanas);<br>- <strong>Pequenos para a Idade Gestacional (PIG)</strong> e Restrição de Crescimento Intrauterino (RCIU);<br>- Gêmeos discordantes menores.",
+              "- Resposta contrarreguladora normal presente (glucagon e catecolaminas sobem), mas não há substrato (glicogênio) para quebrar;<br>- Corpos cetônicos e ácidos graxos livres presentes ou moderadamente elevados;<br>- TIG habitual necessária moderada (4 a 8 mg/kg/min);<br>- Resposta nula ou frustra ao teste do glucagon (pois não há glicogênio para mobilizar)."
+            ],
+            [
+              "<strong>3. Consumo Periférico Acelerado de Glicose</strong>",
+              "Aumento dramático da taxa metabólica basal tecidual periférica sob condições de anaerobiose, esforço metabólico ou estresse sistêmico extremo. O consumo anaeróbio consome 18 vezes mais glicose para gerar a mesma quantidade de ATP que a fosforilação oxidativa.",
+              "- <strong>Asfixia Perinatal / Encefalopatia Hipóxico-Isquêmica</strong>;<br>- <strong>Sepse Neonatal Precoce e Choque Séptico</strong>;<br>- Hipotermia grave neonatal (consumo maciço no tecido adiposo marrom);<br>- Desconforto respiratório grave com taquipneia extrema e trabalho muscular ventilatório excessivo;<br>- Policitemia neonatal / Hiperviscosidade (hematócrito venoso central $ge$ 65%).",
+              "- Acidose lática associada (lactato sérico elevado);<br>- Consumo rápido das reservas em poucas horas;<br>- Instabilidade hemodinâmica, choque ou disfunção multiorgânica coexistente."
+            ],
+            [
+              "<strong>4. Erros Inatos do Metabolismo e Deficiências Endócrinas</strong>",
+              "Bloqueio enzimático genético na glicogenólise, gliconeogênese, ciclo de Krebs ou oxidação de ácidos graxos, ou ausência congênita de hormônios contrarreguladores essenciais.",
+              "- <strong>Defeitos da Beta-oxidação de Ácidos Graxos</strong> (ex: deficiência de MCAD);<br>- <strong>Glicogenoses</strong> (ex: Doença de Von Gierke / Glicogenose tipo I - deficiência de Glicose-6-Fosfatase);<br>- <strong>Galactosemia clássica</strong>;<br>- <strong>Hipopituitarismo Congênito</strong> (deficiência combinada de GH e ACTH);<br>- <strong>Insuficiência Adrenal Congênita</strong>.",
+              "- Na deficiência de MCAD: <strong>Hipoglicemia hipocetonêmica</strong> com acidose moderada e perfil de acilcarnitinas alterado;<br>- Na Glicogenose tipo I: Hepatomegalia maciça, hipoglicemia com hiperlactatemia severa, hiperuricemia e hiperlipidemia acentuada;<br>- Na deficiência de GH/Cortisol: Micropênis no menino, icterícia colestática prolongada, hipoglicemia recorrente de difícil controle e níveis indetectáveis de GH (< 5 ng/mL) e cortisol (< 5 mcg/dL) durante a hipoglicemia."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Vulnerabilidade Seletiva do Cérebro Neonatal à Hipoglicemia"
+        ],
+        [
+          "p",
+          "O cérebro do recém-nascido é proporcionalmente volumoso em relação ao peso corporal total, sendo responsável por <strong>mais de 60% a 70% de todo o consumo de glicose do organismo neonatal</strong> (em comparação a 20% no adulto). A glicose é o substrato metabólico primordial e insubstituível para a síntese contínua de trifosfato de adenosina (ATP) neuronal, manutenção do potencial elétrico de membrana transneuronal através da bomba Na+/K+-ATPase, recaptação de neurotransmissores na fenda sináptica e síntese da bainha de mielina."
+        ],
+        [
+          "p",
+          "Quando a hipoglicemia profunda (< 40 a 45 mg/dL) se prolonga sem substrato cetônico compensatório (cenário do hiperinsulinismo), instala-se uma cascata neurotóxica fatal:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Falência Energética Celular Primária:</strong> Depleção crítica dos níveis de ATP intracelular nos neurônios e astrócitos;",
+            "<strong>Despolarização de Membrana e Efluxo Maciço de Glutamato:</strong> A bomba Na+/K+-ATPase colapsa, provocando influxo passivo de sódio e água (edema citotóxico cerebral agudo) e liberação descontrolada do neurotransmissor excitatório <strong>glutamato</strong> no espaço extracelular;",
+            "<strong>Ativação dos Receptores NMDA e Excitotoxicidade por Cálcio:</strong> O glutamato em excesso superestimula os receptores de N-metil-D-aspartato (NMDA), disparando um influxo maciço intracelular de <strong>íons Cálcio ($Ca^{2+}$)</strong>;",
+            "<strong>Ativação Enzimática Lítica e Apoptose Neuronal:</strong> A sobrecarga citosólica de cálcio ativa calpaínas, fosfolipases, proteases e endonucleases que fragmentam o DNA genômico celular, liberam radicais livres mitocondriais de oxigênio (ROS) e acionam a via de morte neuronal programada por necrose e apoptose;",
+            "<strong>Padrão Típico de Lesão Topográfica na Neuroimagem:</strong> Ao contrário da asfixia perinatal (que acomete preferencialmente os gânglios da base e o tálamo), a hipoglicemia neonatal grave e prolongada causa <strong>lesão isquêmica seletiva no córtex cerebral posterior (lobo occipital e parietal) e na substância branca subjacente</strong>. À Ressonância Magnética com sequência de difusão (DWI), evidencia-se restrição à difusão característica na região parieto-occipital bilateral, correlacionando-se clinicamente no longo prazo com <strong>cegueira cortical permanente, epilepsia refratária pós-hipoglicêmica e paralisia cerebral atáxica ou espástica</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "definicao-criterios-diagnosticos-e-valores-operacionais-de-corte",
+      0,
+      [
+        [
+          "2",
+          "2. Definição Operacional, Valores de Corte Baseados em Evidências e Estratificação de Risco"
+        ],
+        [
+          "3",
+          "O Conceito Operacional de Limiar Clínico de Intervenção"
+        ],
+        [
+          "p",
+          "Durante décadas, a definição do valor exato de corte para a hipoglicemia neonatal gerou controvérsias na literatura internacional. Historicamente, utilizavam-se valores arbitrários e defasados baseados em estudos estatísticos antigos de Cornblath (como < 30 mg/dL nas primeiras 24 horas e < 40 mg/dL após). Atualmente, a <strong>Academia Americana de Pediatria (AAP)</strong> e a <strong>Pediatric Endocrine Society (PES)</strong> estabelecem o conceito moderno de <strong>\"Limiar Operacional de Intervenção Clínica\"</strong> (Operational Threshold), definido como a faixa de glicemia na qual o médico deve intervir ativamente para prevenir a lesão neurológica irreversível, diferenciando recém-nascidos assintomáticos de sintomáticos e estratificando conforme as horas de vida pós-natal:"
+        ],
+        [
+          "t",
+          [
+            "Idade Pós-Natal",
+            "Recém-Nascido Assintomático de Risco: Limiar Operacional de Ação",
+            "Conduta Inicial Preconizada (Alimentação vs Glicose IV)",
+            "Recém-Nascido Sintomático: Limiar e Conduta"
+          ],
+          [
+            [
+              "<strong>Primeiras 4 horas de vida</strong>",
+              "<strong>Glicemia < 25 mg/dL</strong>",
+              "Alimentar com leite materno/fórmula e reavaliar glicemia 1 hora após.<br><em>Se persistir < 25 mg/dL após mamada OU se < 20 mg/dL na aferição inicial:</em> <strong>Glicose IV imediata (bolus de SG 10% + TIG contínua)</strong>.",
+              "<strong>Qualquer valor < 40 mg/dL</strong> em recém-nascido com sintomas clínicos (tremores, letargia, convulsão, hipotonia, apneia) impõe <strong>intervenção intravenosa imediata com bolus de SG 10% e início de TIG contínua!</strong> Não alimentar via oral!"
+            ],
+            [
+              "<strong>Entre 4 e 24 horas de vida</strong>",
+              "<strong>Glicemia < 35 mg/dL</strong>",
+              "Alimentar imediatamente e reavaliar glicemia 1 hora após.<br><em>Se persistir < 35 mg/dL após a mamada:</em> <strong>Iniciar Glicose intravenosa contínua (TIG)</strong>.",
+              "<strong>Qualquer valor < 45 mg/dL</strong> com sintomas neurológicos ou autonômicos exige <strong>Glicose IV imediata contínua</strong>."
+            ],
+            [
+              "<strong>Entre 24 e 48 horas de vida</strong>",
+              "<strong>Glicemia < 45 mg/dL</strong>",
+              "Alimentar e reavaliar em 1 hora; se refratário ou < 40 mg/dL: glicose venosa contínua ajustando a TIG para manter glicemia $ge$ 50 mg/dL.",
+              "<strong>Qualquer valor < 45 a 50 mg/dL</strong> exige intervenção venosa imediata para manter níveis firmemente $ge$ 50 mg/dL."
+            ],
+            [
+              "<strong>Após 48 horas de vida</strong>",
+              "<strong>Glicemia < 50 a 60 mg/dL</strong>",
+              "Meta glicêmica estrita: <strong>manter glicemia plasmática continuamente $ge$ 60 mg/dL</strong>.",
+              "Qualquer valor < 60 mg/dL impõe investigação diagnóstica de hipoglicemia persistente e ajuste de infusão venosa."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Divergência Crítica entre a AAP e a Pediatric Endocrine Society (PES)"
+        ],
+        [
+          "p",
+          "Existe uma nuance conceitual clássica entre as diretrizes:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Diretriz da AAP (Foco no Berçário e Triagem Inicial):</strong> Destina-se à triagem prática das primeiras 48 horas de vida para recém-nascidos com fatores transitórios de risco. Aceita valores limiares mais baixos nas primeiras 4 a 24 horas (como > 25 a 35 mg/dL), considerando a adaptação metabólica transitória do nadir pós-natal imediato;",
+            "<strong>Diretriz da PES (Foco em Distúrbios Persistentes e Hiperinsulinismo):</strong> Argumenta que, na suspeita de hiperinsulinismo congênito ou hipopituitarismo, não há produção de corpos cetônicos protetores para o cérebro. Por conseguinte, a PES preconiza um <strong>alvo de segurança estrito de glicemia $ge$ 50 mg/dL nas primeiras 48 horas e $ge$ 60 a 70 mg/dL após 48 horas de vida</strong> em qualquer recém-nascido sob investigação de hipoglicemia patológica persistente."
+          ]
+        ],
+        [
+          "3",
+          "Estratificação de Risco Neonatal e Quem Deve Ser Triado"
+        ],
+        [
+          "p",
+          "<strong>Aferir glicemia capilar de rotina em recém-nascidos a termo hígidos e assintomáticos é formalmente contraindicado!</strong> A triagem universal desnecessária detecta o nadir fisiológico normal e gera intervenções desnecessárias, suplementação artificial precoce com fórmulas infantis, separação da díade mãe-bebê e desmame involuntário precoce."
+        ],
+        [
+          "p",
+          "A monitorização da glicemia está estritamente indicada <strong>apenas em recém-nascidos sintomáticos</strong> ou pertencentes a <strong>grupos de alto risco clínico comprovado</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fatores de Risco Maternos:</strong>\n    <ul>\n      <li>Diabetes Mellitus pré-gestacional (tipo 1 ou tipo 2) ou Diabetes Gestacional (especialmente se controle glicêmico subótimo no 3º trimestre);",
+            "Uso materno periparto de betabloqueadores (ex: labetalol, propranolol), hipoglicemiantes orais (glibenclamida) ou infusão intraparto excessiva de glicose parenteral hipotônica;",
+            "Doença hipertensiva específica da gestação (pré-eclâmpsia grave com insuficiência placentária crônica).",
+            "<strong>Fatores de Risco Fetais e Neonatais Antropométricos:</strong>\n    <ul>\n      <li><strong>Pequeno para a Idade Gestacional (PIG):</strong> Peso de nascimento abaixo do percentil 10 para a idade gestacional nas curvas de Fenton ou Intergrowth-21st;",
+            "<strong>Grande para a Idade Gestacional (GIG):</strong> Peso de nascimento acima do percentil 90 para a idade gestacional ou macrossomia absoluta ($ge$ 4.000 g);",
+            "<strong>Prematuridade:</strong> Idade gestacional < 37 semanas completas (incluindo o prematuro tardio de 34 a 36 semanas e 6 dias, grupo de alto risco frequente e muitas vezes subestimado);",
+            "Gestações múltiplas (gemelares desproporcionais).",
+            "<strong>Fatores de Risco Clínicos e Patológicos Agudos:</strong>\n    <ul>\n      <li>Asfixia perinatal (escore de Apgar < 5 no 5º minuto, gasometria de cordão umbilical com pH < 7,00 ou déficit de bases $ge$ -12 mEq/L);",
+            "Hipotermia neonatal (temperatura axilar < 36,0 ºC);",
+            "Sepse neonatal suspeita ou confirmada;",
+            "Policitemia sintomática (hematócrito venoso central $ge$ 65%);",
+            "Recém-nascidos com estigmas de síndromes genéticas (ex: macroglossia e onfalocele na síndrome de Beckwith-Wiedemann) ou anomalias da linha média (lábio leporino com fenda palatina, defeitos ópticos ou micropênis com criptorquidia bilateral no menino, sugerindo hipopituitarismo congênito)."
+          ]
+        ],
+        [
+          "3",
+          "Cronograma de Monitorização Glicêmica nos Grupos de Risco"
+        ],
+        [
+          "u",
+          [
+            "<strong>Filhos de Mães Diabéticas (FMD) e GIG:</strong> Risco máximo de hipoglicemia hiperinsulinêmica nas <strong>primeiras 1 a 4 horas de vida</strong>. A primeira glicemia deve ser aferida entre <strong>1 e 2 horas de vida</strong> (após a primeira mamada precoce), e monitorada antes das mamadas subsequentes a cada 2 a 3 horas nas primeiras 12 a 24 horas. Se as glicemias mantiverem-se estáveis acima de 45 mg/dL por 12 a 24 horas consecutivas em alimentação enteral plena, a monitorização pode ser suspensa;",
+            "<strong>Prematuros Tardios e PIG / RCIU:</strong> Risco de hipoglicemia por esgotamento de reservas que pode se manifestar tardiamente nas <strong>primeiras 24 a 48 horas de vida</strong>. A primeira aferição deve ocorrer nas primeiras 2 horas de vida, mantendo-se controles pré-prandiais a cada 3 a 4 horas por <strong>pelo menos 24 a 48 horas completas</strong>, suspendendo apenas após estabilidade comprovada com alimentação enteral exclusiva estabelecida."
+          ]
+        ],
+        [
+          "3",
+          "Atenção aos Métodos Diagnósticos: Fita Reagente versus Glicemia Plasmática"
+        ],
+        [
+          "p",
+          "O <strong>glicosímetro de fita reagente (Point-of-Care)</strong> utiliza sangue capilar total e apresenta margem de erro analítico de até 15% a 20%, subestimando ou superestimando a glicose verdadeira (especialmente em vigência de hematócrito elevado e extremos de hipoglicemia). A glicose no sangue total é aproximadamente 10% a 15% menor do que no plasma, porque os eritrócitos contêm menos água por unidade de volume que o plasma livre."
+        ],
+        [
+          "p",
+          "<em>Regra de ouro clínica e de prova:</em> <strong>Toda hipoglicemia detectada por fita reagente deve ser confirmada por dosagem laboratorial padrão em plasma venoso</strong>. No entanto, <strong>jamais se deve adiar o início do tratamento ou a infusão de glicose enquanto se aguarda o resultado do laboratório</strong>! Inicia-se a intervenção imediata baseando-se no glicosímetro e colhe-se a amostra confirmatória concomitante."
+        ]
+      ]
+    ],
+    [
+      "apresentacao-clinica-semiologia-minuciosa-e-diagnostico-diferencial",
+      0,
+      [
+        [
+          "2",
+          "3. Apresentação Clínica, Semiologia Minuciosa e Diagnóstico Diferencial dos Erros Inatos"
+        ],
+        [
+          "3",
+          "Manifestações Clínicas e Semiologia da Neuroglicopenia"
+        ],
+        [
+          "p",
+          "As manifestações clínicas da hipoglicemia no período neonatal são marcadamente <strong>inespecíficas, sutis e proteiformes</strong>. Ao contrário do adulto e da criança maior, o recém-nascido raramente expressa a síndrome clássica adrenérgica de diaforese fria evidente e taquicardia isolada. Os sinais clínicos dividem-se em dois grandes grupos fisiopatológicos:"
+        ],
+        [
+          "t",
+          [
+            "Grupo Semiológico",
+            "Mecanismo Fisiopatológico",
+            "Sinais e Sintomas Clínicos Observáveis",
+            "Diagnóstico Diferencial à Beira do Leito"
+          ],
+          [
+            [
+              "<strong>Sinais Neuroglicopênicos (Disfunção do Córtex e Tronco Encefálico)</strong>",
+              "Depleção intracelular grave de ATP e colapso metabólico nos neurônios encefálicos.",
+              "- <strong>Hipotonia muscular global</strong> (lactente \"amolecido\", com atitude em rã e perda do tônus flexor fisiológico);<br>- <strong>Letargia e sonolência excessiva</strong> (dificuldade extrema para despertar para as mamadas);<br>- <strong>Sucção débil ou recusa alimentar completa</strong>;<br>- <strong>Crises convulsivas</strong> (movimentos mioclônicos sutis, piscar de olhos repetitivo, desvio ocular tônico, movimentos de pedalagem de membros inferiores ou mastigação reflexa);<br>- <strong>Episódios de apneia</strong> (pausa respiratória > 20 segundos ou associada a bradicardia e cianose central);<br>- Coma hipoglicêmico nos estágios terminais.",
+              "- Asfixia perinatal com encefalopatia hipóxico-isquêmica;<br>- Meningite bacteriana neonatal e sepse grave;<br>- Hemorragia intracraniana (matriz germinativa em prematuros);<br>- Erros inatos do metabolismo com hiperamonemia ou acidose orgânica;<br>- Efeito depressor residual de medicações sedativas ou opioides maternos periparto."
+            ],
+            [
+              "<strong>Sinais Neuroatômicos / Simpático-adrenérgicos (Descarga Autonômica)</strong>",
+              "Estimulação aguda do eixo hipotálamo-hipófise-adrenal e liberação maciça de catecolaminas (adrenalina e noradrenalina) em resposta à queda da glicemia.",
+              "- <strong>Tremores finos de extremidades (\"Jitteriness\")</strong> e irritabilidade ao manuseio;<br>- Taquipneia superficial sem esforço respiratório prévio;<br>- Taquicardia (FC > 160 bpm);<br>- Sudorese fria (incomum no prematuro, ocasional no termo);<br>- Palidez cutânea de extremidades;<br>- Choro agudo, estridente e inconsolável.",
+              "- <strong>Diferenciação crítica entre Tremor (\"Jitteriness\") e Crise Convulsiva Verdadeira</strong> (ver quadro semiológico comparativo abaixo);<br>- Síndrome de Abstinência Neonatal (exposição materna a opioides ou benzodiazepínicos);<br>- Hipocalcemia e hipomagnesemia neonatais."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Diferenciação Semiológica Obrigatória: Tremor (\"Jitteriness\") versus Crise Convulsiva"
+        ],
+        [
+          "p",
+          "O reconhecimento fidedigno entre abalos motores benignos/adrenérgicos e convulsões verdadeiras é uma das habilidades semiológicas mais cobradas em provas e mais determinantes no plantão neonatal:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Semiológico",
+            "Tremores / Jitteriness (Adrenérgico / Hipoglicemia / Hipocalcemia)",
+            "Crise Convulsiva Neonatal Verdadeira"
+          ],
+          [
+            [
+              "<strong>Relação com Estímulos Externos</strong>",
+              "<strong>Altamente sensível a estímulos:</strong> deflagrado ou exacerbado por ruídos ambientais bruscos, toque da pele ou manipulação da maca.",
+              "<strong>Espontâneo:</strong> instala-se independentemente de estímulos táteis ou sonoros do ambiente."
+            ],
+            [
+              "<strong>Manobra de Contenção Passiva</strong>",
+              "<strong>Cessa imediatamente:</strong> ao segurar firmemente ou fletir passivamente a extremidade trêmula do membro afetado com a mão, o tremor é totalmente abolido.",
+              "<strong>Persiste inalterado:</strong> o abalo clônico motor continua vibrando sob a mão do examinador mesmo durante a flexão ou contenção firme do membro."
+            ],
+            [
+              "<strong>Componente Motor dos Movimentos</strong>",
+              "Movimentos rítmicos simétricos alternados com <strong>fases rápidas e idênticas em ambas as direções</strong> (oscilação sinusoidal de flexão e extensão de igual amplitude e velocidade).",
+              "Movimentos clônicos assimétricos com uma <strong>fase rápida de contração ativa seguida de uma fase lenta de relaxamento</strong> (padrão contração-relaxamento típico de clônus)."
+            ],
+            [
+              "<strong>Sinais Autonômicos e Desvios Oculares Associados</strong>",
+              "<strong>Ausentes:</strong> os olhos permanecem normais, sem desvios do olhar conjugado, sem sialorreia, sem apneia ou taquipneia ictal concomitante.",
+              "<strong>Frequentemente presentes:</strong> desvio tônico persistente do olhar, nistagmo ocular espasmódico, piscamentos palpebrais rápidos, movimentos de sucção e deglutição atípicos, e apneias ictais com dessaturação."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Diagnóstico Diferencial Abrangente dos Erros Inatos do Metabolismo (EIM)"
+        ],
+        [
+          "p",
+          "Frente a uma hipoglicemia neonatal que se mostra refratária ao aporte habitual de glicose, ou que surge em recém-nascidos sem fatores de risco habituais (sem ser prematuro, sem ser PIG e sem ser filho de mãe diabética), o pediatra deve suspeitar de <strong>Erros Inatos do Metabolismo (EIM)</strong> ou de <strong>Endocrinopatias Congênitas</strong>. O raciocínio diferencial baseia-se na presença ou ausência de três marcadores analíticos fundamentais: <strong>Corpos Cetônicos (cetonúria/cetonemia), Acidose Metabólica com Hiperlactatemia e Hiperamonemia</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Padrão Bioquímico no Momento da Hipoglicemia",
+            "Mecanismo Enzimático Subjacente",
+            "Diagnósticos Específicos Mais Prováveis",
+            "Achados Clínicos Típicos Associados"
+          ],
+          [
+            [
+              "<strong>1. Hipoglicemia HIPOCETONÊMICA SEM Acidose Grave (ou com acidose leve)</strong>",
+              "A insulina ou o defeito mitocondrial impede a oxidação lipídica e a síntese hepática de corpos cetônicos.",
+              "- <strong>Hiperinsulinismo Congênito</strong> (mutações <em>ABCC8</em>, <em>KCNJ11</em>);<br>- <strong>Defeitos da Beta-oxidação de Ácidos Graxos</strong> (ex: Deficiência de Desidrogenase de Acil-CoA de Cadeia Média - <strong>MCAD</strong>).",
+              "- No Hiperinsulinismo: TIG extremamente elevada (> 10 a 15 mg/kg/min), recém-nascido macrossômico ou com Beckwith-Wiedemann, glicemia sobe rapidamente com glucagon;<br>- Na deficiência de MCAD: hipoglicemia hipocetonêmica desencadeada por jejum prolongado, cardiomiopatia, perfil de acilcarnitinas plasmáticas alterado (elevação de C8 e C6/C10)."
+            ],
+            [
+              "<strong>2. Hipoglicemia HIPERCETONÊMICA COM Hepatomegalia e Hiperlactatemia Grave</strong>",
+              "Bloqueio genético na liberação hepática de glicose a partir do glicogênio e precursores da gliconeogênese. Acúmulo maciço de glicogênio no fígado e desvio de piruvato para lactato.",
+              "- <strong>Glicogenoses Hepáticas</strong>, com ênfase na <strong>Glicogenose Tipo I (Doença de Von Gierke)</strong>: deficiência de Glicose-6-Fosfatase microsomal (Tipo Ia).",
+              "<strong>Hepatomegalia maciça com consistência firme</strong>, abdome proeminente (\"aspecto de boneca\"), acidose lática severa com hiato aniônico aumentado, <strong>hiperuricemia</strong> acentuada (predispõe a gota tofácea e nefrite), hiperlipidemia mista (hipertrigliceridemia grave com soro lipêmico). A administração de glucagon parenteral não eleva a glicemia e agrava a acidose lática!"
+            ],
+            [
+              "<strong>3. Hipoglicemia com Acidose Metabólica Severa e Hiperamonemia Maciça</strong>",
+              "Acúmulo de ácidos orgânicos tóxicos que inibem o ciclo da ureia e a síntese de glicose na mitocôndria.",
+              "- <strong>Acidúrias / Acidemias Orgânicas</strong> (Acidemia Metilmalônica, Acidemia Propiônica, Acidemia Isovalérica).",
+              "Quadro fulminante nos primeiros dias de vida após introdução da dieta protéica com recusa alimentar, vômitos incoercíveis, hipotonia, coma, acidose metabólica com ânion-gap muito elevado, pancitopenia medular e odor típico (\"suor de pés\" na isovalérica)."
+            ],
+            [
+              "<strong>4. Hipoglicemia com Icterícia Colestática e Hepatopatia Grave após Leite</strong>",
+              "Toxicidade celular direta pelo acúmulo de galactose-1-fosfato nos tecidos hepático, renal e ocular.",
+              "- <strong>Galactosemia Clássica</strong> (deficiência da enzima Galactose-1-Fosfato Uridiltransferase - GALT).",
+              "Inicia-se após as primeiras mamadas de leite materno ou fórmula láctea convencional com lactose: icterícia colestática precoce, hepatomegalia, vômitos, catarata precoce em \"gota de óleo\", tubulopatia renal e <strong>sepse neonatal fulminante por <em>Escherichia coli</em></strong> (marca registrada de prova!). Urina revela presença de <strong>substâncias redutoras na urina com glicofita negativa</strong> (pois o açúcar redutor é a galactose e não a glicose)."
+            ],
+            [
+              "<strong>5. Hipoglicemia com Deficiência de Hormônios Contrarreguladores</strong>",
+              "Ausência de estímulo hormonal para ativação da glicogenólise e gliconeogênese.",
+              "- <strong>Hipopituitarismo Congênito</strong> (deficiência combinada de GH e ACTH);<br>- <strong>Insuficiência Adrenal Congênita</strong> (HAC perdedora de sal).",
+              "No menino: <strong>micropênis (< 2,5 cm de comprimento peniano esticado)</strong> associado a criptorquidia bilateral; defeitos de linha média facial (incisivo central único, lábio leporino); icterícia colestática prolongada não hemolítica. Na HAC: crise perdedora de sal com hiponatremia e hipercalemia entre o 7º e 14º dia de vida."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "investigacao-laboratorial-amostra-critica-e-protocolos",
+      0,
+      [
+        [
+          "2",
+          "4. Investigação Laboratorial Estruturada e a Coleta da \"Amostra Crítica\""
+        ],
+        [
+          "3",
+          "O Conceito Vital da \"Amostra Crítica\" (Critical Sample)"
+        ],
+        [
+          "p",
+          "Em pacientes com hipoglicemia persistente, recorrente ou que requerem taxas de infusão de glicose muito elevadas (TIG > 8 a 10 mg/kg/min), o diagnóstico etiológico depende de uma coleta laboratorial realizada <strong>exatamente no momento em que o paciente está em hipoglicemia franca (glicemia < 50 mg/dL)</strong> e <strong>antes da administração do bolus corretivo de glicose</strong>. Essa coleta coordenada é denominada <strong>Amostra Crítica</strong>."
+        ],
+        [
+          "p",
+          "A lógica bioquímica da amostra crítica é axiomática: sob hipoglicemia normal, o pâncreas deve suprimir totalmente a secreção de insulina (níveis devem tornar-se indetectáveis), enquanto os hormônios contrarreguladores (cortisol, GH, glucagon) devem atingir seus picos máximos fisiológicos, acompanhados de ativação de lipólise (ácidos graxos elevados) e cetogênese (corpos cetônicos elevados). Se a amostra for colhida após o paciente já ter recebido glicose e atingido a euglicemia, as dosagens hormonais tornam-se completamente ininterpretáveis."
+        ],
+        [
+          "4",
+          "Painel Padronizado da Amostra Crítica Neonatal"
+        ],
+        [
+          "t",
+          [
+            "Tubo / Frasco de Coleta",
+            "Analitos Mensurados",
+            "Interpretação Diagnóstica Patológica"
+          ],
+          [
+            [
+              "<strong>Tubo Fluoretado (Glicemia de Referência)</strong>",
+              "<strong>Glicemia Plasmática Verdadeira</strong> (dosada simultaneamente no laboratório central).",
+              "Obrigatória para comprovar que a amostra foi colhida com glicemia < 50 mg/dL, validando toda a interpretação dos demais exames concomitantes."
+            ],
+            [
+              "<strong>Tubo Seco com Gel / Soro (Painel Hormonal)</strong>",
+              "- <strong>Insulina Sérica</strong>;<br>- <strong>Peptídeo C</strong> (confirma produção endógena de insulina);<br>- <strong>Cortisol Sérico</strong>;<br>- <strong>Hormônio do Crescimento (GH)</strong>.",
+              "- <em>No Hiperinsulinismo:</em> Insulina detectável (> 2 a 3 mcU/mL) e Peptídeo C detectável (> 0,5 ng/mL) no momento da hipoglicemia;<br>- <em>No Hipopituitarismo:</em> Cortisol inapropriadamente baixo (< 15 to 18 mcg/dL) e GH inapropriadamente baixo (< 5 to 7 ng/mL) durante a hipoglicemia."
+            ],
+            [
+              "<strong>Tubo Heparinizado / Plasma (Painel Intermediário)</strong>",
+              "- <strong>Beta-hidroxibutirato</strong> (corpo cetônico circulante);<br>- <strong>Ácidos Graxos Livres (AGL / NEFA)</strong>;<br>- <strong>Lactato sérico</strong>;<br>- <strong>Amoniometria sérica</strong> (dosagem de amônia em gelo);<br>- Gasometria arterial ou venosa (pH, HCO3, base excess).",
+              "- Beta-hidroxibutirato < 1,0 mmol/L e AGL suprimidos com hipoglicemia confirmam <strong>supressão de lipólise e cetogênese típica do Hiperinsulinismo</strong>;<br>- Lactato muito elevado (> 3 a 5 mmol/L) sugere Glicogenose tipo I ou distúrbios da cadeia respiratória mitocondrial;<br>- Amônia sérica > 150 to 200 mcmol/L indica Defeito do Ciclo da Ureia ou Acidúria Orgânica."
+            ],
+            [
+              "<strong>Cartão de Papel-Filtro / Sangue Total</strong>",
+              "- <strong>Perfil de Acilcarnitinas Plasmáticas</strong> por Espectrometria de Massas em Tandem (MS/MS);<br>- Cromatografia quantitativa de Aminoácidos plasmáticos.",
+              "Diagnóstico específico de Defeitos da Beta-oxidação de Ácidos Graxos (ex: pico patológico de octanoilcarnitina C8 na deficiência de MCAD) e aminoacidopatias (leucinose)."
+            ],
+            [
+              "<strong>Primeira Urina Emitida pós-Hipoglicemia</strong>",
+              "- <strong>Pesquisa de Corpos Cetônicos Urinários (Cetonúria)</strong> por fita reagente;<br>- <strong>Cromatografia de Ácidos Orgânicos Urinários</strong> por Cromatografia Gasosa acoplada a Espectrometria de Massas (GC-MS);<br>- Pesquisa de Substâncias Redutoras na Urina.",
+              "- Cetonúria ausente corrobora hiperinsulinismo ou defeito de oxidação de ácidos graxos;<br>- Ácidos orgânicos alterados identificam acidemia metilmalônica, propiônica, etc.;<br>- Substâncias redutoras positivas com glicofita negativa orientam Galactosemia."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "O Teste Terapêutico Provocativo com Glucagon"
+        ],
+        [
+          "p",
+          "Em pacientes com suspeita de hiperinsulinismo no momento da hipoglicemia (glicemia < 50 mg/dL), administra-se <strong>Glucagon parenteral na dose de 0,5 a 1,0 mg IV, IM ou SC</strong> (ou 0,03 a 0,1 mg/kg em neonatos). Mensura-se a glicemia a cada 10 a 15 minutos durante 45 minutos. Como a insulina em excesso força a síntese e preservação constante de glicogênio hepático maciço, a injeção de glucagon induz uma <strong>resposta glicêmica paradoxal exuberante, com elevação da glicemia superior a 30 a 40 mg/dL acima do valor basal em menos de 30 a 40 minutos</strong>, achado altamente sugestivo e confirmatório de hiperinsulinismo!"
+        ]
+      ]
+    ],
+    [
+      "abordagem-terapeutica-calculo-da-tig-e-farmacoterapia",
+      0,
+      [
+        [
+          "2",
+          "5. Abordagem Terapêutica Integrada: Cálculo da TIG, Protocolos de Bolus e Farmacoterapia"
+        ],
+        [
+          "3",
+          "O Manejo Clínico Escalonado da Hipoglicemia Neonatal"
+        ],
+        [
+          "p",
+          "O tratamento da hipoglicemia é uma emergência pediátrica cuja agressividade terapêutica deve ser diretamente proporcional à presença de sintomas neurológicos e à gravidade dos níveis glicêmicos:"
+        ],
+        [
+          "4",
+          "1. Abordagem Inicial no Recém-Nascido Assintomático"
+        ],
+        [
+          "u",
+          [
+            "<strong>Indicação:</strong> Recém-nascido de risco (ex: FMD, prematuro tardio, PIG) que se encontra clinicamente bem, vigil, eupneico e sem tremores ou apneia, cuja glicemia capilar de triagem situa-se entre 25 e 35 mg/dL nas primeiras 4 horas ou entre 35 e 45 mg/dL entre 4 e 24 horas de vida;",
+            "<strong>Conduta Não Farmacológica:</strong> Oferecer <strong>alimentação enteral imediata com leite materno ordenhado ou fórmula infantil</strong> específica para a idade (volume de 5 a 10 mL/kg), garantindo sucção eficaz ou administração por sonda orogástrica se necessário;",
+            "<strong>Uso do Gel de Dextrose a 40%:</strong> A aplicação de <strong>Gel de Dextrose a 40% na mucosa jugal oral (dose de 0,5 mL/kg, equivalente a 200 mg/kg de glicose)</strong> associada à mamada tem demonstrado eficácia comprovada por ensaios clínicos randomizados (estudo \"Sugar Babies\") na reversão rápida da hipoglicemia leve a moderada assintomática, reduzindo significativamente as taxas de internação em UTIN e de separação mãe-bebê;",
+            "<strong>Reavaliação Obrigatória:</strong> Aferir nova glicemia capilar rigorosamente <strong>30 a 60 minutos após o término da mamada</strong>. Se os níveis normalizarem, manter aleitamento frequente a cada 2 a 3 horas e monitorização pré-prandial. <em>Se persistir abaixo do limiar operacional após a alimentação:</em> indicar imediatamente infusão venosa de glicose."
+          ]
+        ],
+        [
+          "4",
+          "2. Abordagem de Emergência no Recém-Nascido Sintomático ou com Hipoglicemia Grave"
+        ],
+        [
+          "p",
+          "Todo recém-nascido sintomático (tremores, letargia, convulsão, apneia) OU qualquer recém-nascido com <strong>glicemia < 20 a 25 mg/dL</strong> em qualquer momento de vida deve receber tratamento intravenoso imediato:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Bolus Inicial de Resgate:</strong>\n    <ul>\n      <li>Administrar <strong>Soro Glicosado a 10% (SG 10%) na dose de 2 mL/kg por via intravenosa lenta (ao longo de 2 a 3 minutos)</strong>, correspondendo a uma oferta de 200 mg/kg de glicose elementar;",
+            "<em>Atenção de prova e prática:</em> <strong>NUNCA utilizar soluções hipertônicas de glicose em bolus (como SG 25% ou SG 50%) em neonatos!</strong> A infusão rápida de soluções hiperosmolares provoca hiperglicemia de rebote brutal, secreção paroxística de mais insulina pelas células beta pancreáticas (agravando a hipoglicemia subsequente) e risco iminente de hemorragia intraventricular/subependimária pela hiperosmolaridade plasmática súbita.",
+            "<strong>Infusão Venosa Contínua Imediata de Manutenção:</strong>\n    <ul>\n      <li><strong>O bolus isolado NUNCA deve ser administrado sem iniciar imediatamente uma infusão venosa contínua de glicose!</strong> A meia-vida da glicose infundida em bolus é de apenas 15 a 20 minutos; a administração do bolus sem manutenção contínua causa hipoglicemia de rebote catastrófica;",
+            "Iniciar prontamente uma infusão contínua com <strong>Taxa de Infusão de Glicose (TIG) inicial de 6 a 8 mg/kg/min</strong> (ou 4 a 6 mg/kg/min em prematuros extremos com tolerância metabólica limitada)."
+          ]
+        ],
+        [
+          "3",
+          "O Cálculo Matemático da Taxa de Infusão de Glicose (TIG)"
+        ],
+        [
+          "p",
+          "O domínio do cálculo da Taxa de Infusão de Glicose (TIG), expressa em <strong>miligramas de glicose infundidos por quilograma de peso corporal por minuto ($mg/kg/min$)</strong>, é um dos conhecimentos mais exigidos em provas de Residência Médica em Pediatria e Cirurgia Pediátrica em todo o Brasil:"
+        ],
+        [
+          "4",
+          "Fórmula Canônica da TIG"
+        ],
+        [
+          "p",
+          "$$\text{TIG } (mg/kg/min) = \frac{\text{Concentração de Glicose } (%) \times \text{Volume Total em 24h } (mL/kg/dia)}{144}$$"
+        ],
+        [
+          "p",
+          "Ou, utilizando a velocidade de infusão contínua em bomba de infusão em $mL/h$:"
+        ],
+        [
+          "p",
+          "$$\text{TIG } (mg/kg/min) = \frac{\text{Concentração de Glicose } (%) \times \text{Velocidade da Bomba } (mL/h) \times 0,167}{\text{Peso do Paciente } (kg)}$$"
+        ],
+        [
+          "p",
+          "<em>Deduzida matematicamente da relação:</em> $\frac{1000 \text{ mg}}{100 \text{ mL} \times 24 \text{ horas} \times 60 \text{ minutos}} = \frac{1}{144} approx 0,00694$."
+        ],
+        [
+          "4",
+          "Exemplo Prático Resolvido de Prescrição"
+        ],
+        [
+          "p",
+          "Lactente pesando <strong>3,0 kg</strong>, no 1º dia de vida, com necessidade de volume hídrico basal de <strong>80 mL/kg/dia</strong> e TIG desejada de <strong>6,0 mg/kg/min</strong>:"
+        ],
+        [
+          "o",
+          [
+            "Volume total diário: $3,0 \text{ kg} \times 80 \text{ mL/kg/dia} = 240 \text{ mL/dia}$ (velocidade da bomba: $240 div 24 = 10 \text{ mL/h}$);",
+            "Pela fórmula: $6,0 = \frac{\text{Concentração } (%) \times 80}{144} implies \text{Concentração } (%) = \frac{6,0 \times 144}{80} = mathbf{10,8%}$;",
+            "Para preparar 240 mL de solução a 10,8% utilizando SG 5% e Glicose Hipertônica a 50%:\n    <ul>\n      <li>$C_1 cdot V_1 + C_2 cdot (V_{total} - V_1) = C_{desejada} cdot V_{total}$;",
+            "$50% cdot V_{G50} + 5% cdot (240 - V_{G50}) = 10,8% cdot 240 implies 45 cdot V_{G50} = 2592 - 1200 = 1392 implies V_{G50} approx mathbf{31 \text{ mL}}$;",
+            "Volume de SG 5%: $240 - 31 = mathbf{209 \text{ mL}}$."
+          ]
+        ],
+        [
+          "3",
+          "Limites de Concentração e Vias de Acesso Vascular"
+        ],
+        [
+          "u",
+          [
+            "<strong>Via Venosa Periférica:</strong> A osmolaridade máxima tolerada em veias periféricas finas do recém-nascido limita a concentração de glicose em <strong>no máximo 12,5% (SG 12,5%)</strong>. Soluções com concentração superior a 12,5% administradas perifericamente causam esclerose venosa, flebite química grave e risco de necrose cutânea por extravasamento tecidual;",
+            "<strong>Via Venosa Central (Cateter Venoso Umbilical ou PICC):</strong> Quando a TIG necessária exige concentração de glicose <strong>superior a 12,5% (podendo alcançar 15% a 20%)</strong>, é obrigatória a obtenção de acesso venoso central imediato (cateterismo venoso umbilical com a ponta na veia cava inferior supra-hepática ou implantação de PICC)."
+          ]
+        ],
+        [
+          "3",
+          "Farmacoterapia de Segunda Linha na Hipoglicemia Refratária / Hiperinsulinismo"
+        ],
+        [
+          "p",
+          "Quando a TIG atinge valores elevados (> 10 a 12 mg/kg/min) sem controle glicêmico adequado, ou na vigência de hiperinsulinismo congênito confirmado, introduzem-se fármacos moduladores específicos:"
+        ],
+        [
+          "t",
+          [
+            "Fármaco",
+            "Mecanismo Farmacológico de Ação",
+            "Dose e Via de Administração",
+            "Efeitos Adversos e Cuidados Críticos"
+          ],
+          [
+            [
+              "<strong>Diazóxido</strong>",
+              "<strong>Primeira linha no hiperinsulinismo</strong>. Ativador direto dos canais de potássio sensíveis a ATP (canais K-ATP) nas células beta pancreáticas. Promove hiperpolarização da membrana celular beta e <strong>bloqueia a secreção de insulina estimulada por glicose</strong>.",
+              "<strong>5 a 15 mg/kg/dia por via oral</strong> dividida em 3 tomadas diárias (de 8/8 horas). Inicia-se com 5 mg/kg/dia e titula-se progressivamente.",
+              "<strong>Retenção hidrossalina intensa</strong> com sobrecarga hídrica, insuficiência cardíaca congestiva e hipertensão pulmonar (exige frequentemente associação com <strong>Hidroclorotiazida</strong> 2 mg/kg/dia para espoliação volêmica); hipertricose difusa no tratamento crônico. <em>Atenção: mutações recessivas graves nos genes ABCC8 ou KCNJ11 causam perda total do canal K-ATP, tornando o paciente diazoxido-não responsivo</em>."
+            ],
+            [
+              "<strong>Octreotida</strong>",
+              "<strong>Segunda linha / Resgate</strong>. Análogo sintético da somatostatina de longa ação. Liga-se aos receptores de somatostatina subtipo 2 (SSTR-2) e subtipo 5 (SSTR-5) nas células beta pancreáticas, inibindo o influxo de cálcio e a exocitose de grânulos de insulina de modo independente dos canais K-ATP.",
+              "<strong>5 a 20 mcg/kg/dia por via subcutânea (SC)</strong> fracionada em 3 a 4 aplicações diárias (de 6/6h ou 8/8h) ou por infusão contínua.",
+              "Fenômeno de <strong>taquifilaxia</strong> (perda progressiva da eficácia clínica após 48 a 72 horas por dessensibilização dos receptores); risco documentado de <strong>Enterocolite Necrosante (ECN)</strong> e isquemia mesentérica por vasoconstrição esplâncnica intensa em prematuros; supressão transitória de GH e hormônios tireoidianos."
+            ],
+            [
+              "<strong>Glucagon</strong>",
+              "Hormônio peptídico contrarregulador. Ativa receptores hepáticos acoplados à proteína Gs, aumentando o AMP cíclico intracelular e ativando a glicogênio fosforilase hepática (glicogenólise) e a gliconeogênese.",
+              "- <strong>Bolus de emergência:</strong> 0,5 a 1,0 mg IM, SC ou IV (ou 0,03 a 0,1 mg/kg/dose);<br>- <strong>Infusão contínua:</strong> 1 a 10 mcg/kg/hora IV.",
+              "Excelente para resgate de emergência sem acesso vascular estabelecido ou na falência transitória de TIG elevada. Efeito efêmero se os estoques de glicogênio hepático estiverem depletados (como no prematuro ou PIG desnutrido). Pode causar náuseas e vômitos."
+            ],
+            [
+              "<strong>Glicocorticoides (Hidrocortisona)</strong>",
+              "Induzem a transcrição de enzimas-chave da gliconeogênese hepática (PEPCK e glicose-6-fosfatase), aumentam a resistência periférica à insulina e inibem a captação de glicose nos tecidos periféricos (músculo e tecido adiposo).",
+              "<strong>Hidrocortisona sódica IV:</strong> 5 mg/kg/dia dividida em 2 a 3 doses diárias.",
+              "Indicada primariamente quando há <strong>deficiência documentada de cortisol / hipopituitarismo congênito</strong>. No hiperinsulinismo é medicação de terceira linha com eficácia modesta e risco de imunossupressão, hipertensão arterial e catabolismo protéico."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "outros-disturbios-metabolicos-neonatais-calcio-magnesio-sodio",
+      0,
+      [
+        [
+          "2",
+          "6. Outros Distúrbios Metabólicos Críticos do Recém-Nascido: Cálcio, Magnésio e Sódio"
+        ],
+        [
+          "3",
+          "1. Hipocalcemia Neonatal: Precoce versus Tardia"
+        ],
+        [
+          "p",
+          "O transporte placentário ativo durante o terceiro trimestre da gestação transfere cálcio da mãe para o feto contra um gradiente de concentração, mantendo o cálcio iônico fetal em cerca de 1,4 a 1,5 mmol/L (superior aos níveis maternos). Com o clampeamento do cordão ao nascimento, esse aporte cessa abruptamente, ocorrendo um declínio fisiológico do cálcio sérico com nadir entre 24 e 48 horas de vida, contornado pela ativação progressiva do paratormônio (PTH) neonatal."
+        ],
+        [
+          "p",
+          "A hipocalcemia neonatal é formalmente definida como <strong>Cálcio Total < 7,0 mg/dL</strong> (ou < 8,0 mg/dL no recém-nascido a termo) ou <strong>Cálcio Iônico (Cálcio Livre) < 4,0 mg/dL (ou < 1,0 mmol/L)</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Classificação",
+            "Janela Temporal de Início",
+            "Principais Fatores Etiológicos",
+            "Fisiopatologia e Conduta"
+          ],
+          [
+            [
+              "<strong>Hipocalcemia Precoce</strong>",
+              "<strong>Primeiras 48 a 72 horas de vida</strong> (nadir no 1º e 2º dias).",
+              "- <strong>Prematuridade extrema</strong> (interrupção da transferência placentária do 3º trimestre);<br>- <strong>Filho de Mãe Diabética</strong> (associada a hipomagnesemia crônica fetal que suprime o PTH);<br>- <strong>Asfixia Perinatal Grave</strong> (liberação de fosfato intracelular e hipercalcitonemia transitória).",
+              "Costuma ser assintomática ou manifestar-se por tremores finos e irritabilidade.<br><em>Tratamento sintomático:</em> <strong>Gluconato de Cálcio a 10% IV</strong> na dose de <strong>1 a 2 mL/kg (100 a 200 mg/kg) diluído 1:1 em água destilada</strong>, administrado lentamente sob <strong>monitorização eletrocardiográfica contínua</strong> (risco de bradicardia severa e assistolia se infundido rapidamente). Prevenção: aporte de cálcio elementar de 40 a 60 mg/kg/dia na nutrição parenteral."
+            ],
+            [
+              "<strong>Hipocalcemia Tardia</strong>",
+              "<strong>Após o 5º a 7º dia de vida</strong> (geralmente na 2ª semana de vida).",
+              "- <strong>Hiperfosfatemia induzida por dieta</strong> (ingestão de leite de vaca integral in natura ou fórmulas com alta relação fósforo/cálcio);<br>- <strong>Hipoparatireoidismo Congênito</strong> (agenesia das paratireoides na <strong>Síndrome de DiGeorge / deleção 22q11.2</strong> associada a cardiopatia conotruncal e imunodeficiência por hipoplasia tímica);<br>- Hiperparatireoidismo materno não tratado (supressão crônica das paratireoides fetais).",
+              "Apresenta-se frequentemente com <strong>convulsões neonatais afebris refratárias</strong>, estridor laríngeo por laringoespasmo e prolongamento do intervalo QTc no ECG (predispondo a arritmias ventriculares).<br><em>Tratamento:</em> Correção aguda com Gluconato de Cálcio a 10% IV associada a redução do fósforo na dieta, uso de quelantes de fósforo e reposição crônica de <strong>Calcitriol (vitamina D ativa) oral</strong> na Síndrome de DiGeorge."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Hipomagnesemia Neonatal"
+        ],
+        [
+          "p",
+          "Definida como <strong>Magnésio Sérico < 1,5 a 1,6 mg/dL (ou < 0,6 mmol/L)</strong>. Frequentemente associada à hipocalcemia precoce em filhos de mães diabéticas e prematuros:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia da Hipocalcemia Refratária induzida por Magnésio Baixo:</strong> O magnésio é um cofator iônico estritamente indispensável para a liberação secretória do Paratormônio (PTH) pelas paratireoides e para a responsividade dos órgãos-alvo (ossos e túbulos renais) ao PTH circulante. <em>Enquanto a hipomagnesemia não for corrigida, a hipocalcemia permanece absolutamente refratária a qualquer reposição de cálcio parenteral!</em>;",
+            "<strong>Tratamento:</strong> Administração de <strong>Sulfato de Magnésio a 50% por via intramuscular ou intravenosa lenta na dose de 0,1 a 0,2 mL/kg (equivalente a 25 a 50 mg/kg de sulfato de magnésio)</strong>, repetindo a cada 8 a 12 horas conforme dosagens laboratoriais séricas seriadas."
+          ]
+        ],
+        [
+          "3",
+          "3. Distúrbios do Sódio Neonatal: Hiponatremia versus Hipernatremia"
+        ],
+        [
+          "u",
+          [
+            "<strong>Hiponatremia Neonatal ($Na^+ < 130 \text{ mEq/L}$):</strong>\n    <ul>\n      <li><em>Com Depleção Volêmica e Desidratação:</em> Perda excessiva renal ou cutânea de sal. O diagnóstico diferencial mandatório é a <strong>Hiperplasia Adrenal Congênita forma perdedora de sal</strong> (deficiência de 21-hidroxilase) associada a <strong>Hipercalemia ($K^+ > 6,0 \text{ a } 6,5 \text{ mEq/L}$)</strong>, acidose metabólica e hipotensão entre o 7º e 14º dia de vida. Requer reposição com NaCl 0,9% e introdução de hidrocortisona e fludrocortisona;",
+            "<em>Com Hipervolemia e Edema (Dilucional):</em> Síndrome da Secreção Inapropriada de Hormônio Antidiurético (SIADH) pós-asfixia perinatal ou meningite, ou oferta excessiva iatrogênica de água livre hipotônica;",
+            "<em>Manejo da Hiponatremia Sintomática com Convulsões:</em> Infusão lenta de <strong>Solução Salina Hipertônica a 3% (NaCl 3%) na dose de 3 a 5 mL/kg por via venosa ao longo de 20 a 30 minutos</strong>, visando elevar o sódio sérico agudamente em 3 a 5 mEq/L para cessar o edema cerebral agudo e as convulsões."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Hipernatremia Neonatal ($Na^+ > 150 \text{ mEq/L}$):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Muito prevalente em <strong>recém-nascidos em aleitamento materno exclusivo com técnica inadequada de pega</strong> e baixa ingestão láctea associada a perdas insensíveis elevadas no verão (<strong>Desidratação Hipernatrêmica por Falha na Amamentação</strong>);",
+            "Ocorre perda de peso ponderal severa (> 10% a 15% em relação ao nascimento), mucosas ressecadas com saliva filante, febre de desidratação, letargia e fontanela deprimida;",
+            "<em>Atenção de prova e prática:</em> A correção hidroeletrolítica deve ser <strong>lenta e gradual ao longo de 48 horas</strong>, utilizando soluções com sódio balanceado. <strong>A velocidade de queda do sódio sérico NUNCA deve ultrapassar 0,5 mEq/L por hora (máximo de 10 a 12 mEq/L em 24 horas)</strong>, sob risco gravíssimo de desequilíbrio osmótico com <strong>edema cerebral agudo grave, convulsões e hemorragia cerebral fatal</strong>."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-e-resolvidos-metabolismo",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Resolvidos com Raciocínio Clínico Completo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Filho de Mãe Diabética com Hipoglicemia Sintomática por Hiperinsulinismo"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Recém-nascido do sexo masculino, nascido de parto cesárea com 38 semanas de idade gestacional por desproporção céfalo-pélvica e macrossomia fetal. Mãe de 34 anos, portadora de Diabetes Mellitus Gestacional (DMG) diagnosticado tardiamente no 3º trimestre, com adesão irregular à insulinoterapia e valores glicêmicos capilares domiciliares frequentemente superiores a 160 a 200 mg/dL. Peso de nascimento 4.450 g (escore Z > +2,5 nas curvas de Fenton, classificado como Grande para a Idade Gestacional - GIG), comprimento 52 cm, perímetro cefálico 36 cm, índice ponderal elevado demonstrando deposição excessiva de gordura no dorso e tronco (\"aspecto cushingóide\" ou de lutador de sumô). Apgar 8 e 9 no 1º e 5º minutos de vida."
+        ],
+        [
+          "4",
+          "Evolução Clínica e Exame Físico com 90 Minutos de Vida"
+        ],
+        [
+          "p",
+          "O recém-nascido foi encaminhado ao alojamento conjunto e colocado precocemente ao seio materno com 40 minutos de vida, mamando moderadamente. Com 90 minutos de vida, a enfermagem do alojamento conjunto convoca o pediatra assistente devido à observação de <strong>tremores finos e frequentes de membros superiores e inferiores</strong> e dificuldade progressiva para sugar o peito."
+        ],
+        [
+          "u",
+          [
+            "<strong>Exame Físico:</strong> Recém-nascido hipoativo, sonolento, com episódios repetidos de tremores de extremidades que cessam à contenção física suave dos membros. Frequência cardíaca 164 bpm, frequência respiratória 64 irpm com taquipneia superficial sem gemência ou tiragem intercostal. Tônus muscular discretamente diminuído. Ausência de anomalias externas da linha média ou genitália ambígua;",
+            "<strong>Glicemia Capilar Imediata de Triagem:</strong> O glicosímetro de fita revelou <strong>Glicemia Capilar = 18 mg/dL</strong> (confirmada imediatamente por dosagem plasmática venosa laboratorial que resultou em <strong>21 mg/dL</strong>)."
+          ]
+        ],
+        [
+          "4",
+          "Raciocínio Clínico, Cálculo da TIG e Tomada de Decisão Terapêutica Passo a Passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Fisiopatológico:</strong> Trata-se de <strong>Hipoglicemia Neonatal Sintomática Grave por Hiperinsulinismo Fetal Transitório</strong> em recém-nascido GIG, filho de mãe com diabetes gestacional descompensado. A hiperglicemia materna crônica atravessou a placenta, induzindo hiperplasia e hipertrofia maciça das células beta pancreáticas fetais. Com o nascimento e o corte do cordão umbilical, a oferta de glicose cessou abruptamente, mas a secreção autônoma desregulada de insulina fetal continuou em níveis elevados, bloqueando a glicogenólise, a gliconeogênese e a cetogênese e consumindo a glicose circulante de forma acelerada;",
+            "<strong>Conduta Imediata de Emergência (Ressuscitação Metabólica):</strong>\n      <ul>\n        <li>O recém-nascido encontra-se <strong>sintomático</strong> (tremores, letargia e taquipneia) e com glicemia < 25 mg/dL. A via oral é formalmente contraindicada pelo risco de broncoaspiração e ineficácia na hipoglicemia sintomática grave;",
+            "<strong>Bolus Endovenoso de Resgate:</strong> Obtenção imediata de acesso venoso periférico calibroso e administração lenta (em 2 a 3 minutos) de <strong>Soro Glicosado a 10% (SG 10%) na dose de 2 mL/kg (4,45 kg x 2 = 8,9 mL de SG 10% IV)</strong>, fornecendo 200 mg/kg de glicose elementar;",
+            "<em>Princípio inegociável:</em> Não administrar SG 25% ou 50% sob hipótese alguma (risco de pico de secreção de mais insulina e hemorragia intracraniana);",
+            "<strong>Cálculo e Instalação da Infusão Contínua (TIG Inicial):</strong>\n      <ul>\n        <li>Imediatamente após o término do bolus, iniciou-se infusão venosa contínua de glicose em bomba de infusão;",
+            "Definiu-se uma <strong>TIG inicial de 7,0 mg/kg/min</strong> com volume hídrico basal do primeiro dia de vida de <strong>70 mL/kg/dia</strong>;",
+            "Volume total diário: $4,45 \text{ kg} \times 70 \text{ mL/kg/dia} = 311,5 \text{ mL/dia}$ (velocidade de infusão: $311,5 div 24 approx mathbf{13 \text{ mL/h}}$);",
+            "Cálculo da concentração de glicose necessária:\n          $$\text{Concentração } (%) = \frac{\text{TIG } (7,0) \times 144}{\text{Volume em mL/kg/dia } (70)} = \frac{1008}{70} = mathbf{14,4%}$$",
+            "Como a concentração de 14,4% ultrapassa o limite seguro para veia periférica (12,5%), procedeu-se à <strong>passagem de Cateter Venoso Umbilical estéril</strong> sob técnica cirúrgica, confirmando a ponta do cateter na junção da veia cava inferior com o átrio direito ao raio-X toracoabdominal;",
+            "Preparo do soro para 24 horas (311,5 mL a 14,4% de glicose): misturou-se 246 mL de SG 5% com 65,5 mL de Glicose 50% em bomba fechada.",
+            "<strong>Evolução e Ajustes:</strong> A glicemia aferida 30 minutos após a instalação da TIG subiu para 58 mg/dL, com resolução completa dos tremores e da taquipneia. A TIG foi mantida entre 6 e 8 mg/kg/min por 36 horas e, à medida que a amamentação enteral com colostro materno progredia, a TIG foi desmamada gradualmente à razão de 1 a 2 mg/kg/min a cada 12 horas. No 4º dia de vida, o lactente encontrava-se em aleitamento materno exclusivo sob livre demanda, com glicemias pré-prandiais estáveis entre 65 e 82 mg/dL, recebendo alta hospitalar sem sequelas neurológicas."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Hipoglicemia Persistente em Menino com Micropênis - Hipopituitarismo Congênito"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Recém-nascido do sexo masculino, nascido a termo (39 semanas e 2 dias), parto normal, peso de nascimento 3.100 g, sem asfixia perinatal (Apgar 9/9), mãe sem histórico de diabetes. Com 36 horas de vida, ainda no alojamento conjunto, começou a apresentar episódios repetidos de sonolência profunda, hipotonia muscular acentuada e duas crises de apneia com cianose labial que reverteram com estimulação tátil vigorosa. A glicemia capilar aferida no momento da apneia revelou <strong>22 mg/dL</strong>."
+        ],
+        [
+          "4",
+          "Exame Físico Minucioso"
+        ],
+        [
+          "u",
+          [
+            "O lactente foi transferido para a UTIN e colocado sob infusão venosa de glicose. Inicialmente estabilizou com TIG de 6 mg/kg/min, porém apresentava episódios recorrentes de queda da glicemia para 30 a 38 mg/dL sempre que a TIG era reduzida para 5 mg/kg/min;",
+            "Ao exame físico detalhado da genitália pelo neonatologista, observou-se: <strong>pênis extremamente pequeno, com comprimento peniano esticado de apenas 1,4 cm</strong> (medido da sínfise púbica esticando-se o corpo do pênis até a ponta da glande; comprimento normal no RN a termo: média de 3,5 cm, definindo formalmente <strong>micropênis quando < 2,5 cm</strong>, ou seja, abaixo de -2,5 desvios-padrão). Bolsa escrotal com rugosidade reduzida e <strong>testículos não palpáveis bilateralmente (criptorquidia bilateral)</strong>;",
+            "Observou-se ainda icterícia cutâneo-mucosa com 4 dias de vida com bilirrubina total de 14,2 mg/dL com predomínio de <strong>fração direta (Bilirrubina Direta = 6,8 mg/dL - colestase neonatal)</strong>, sem sinais infecciosos aparentes e ultrassom de abdome superior sem alterações de vias biliares extra-hepáticas."
+          ]
+        ],
+        [
+          "4",
+          "Investigação com a \"Amostra Crítica\" e Diagnóstico Resolvido"
+        ],
+        [
+          "o",
+          [
+            "<strong>Raciocínio Clínico Integrado:</strong> A associação de <strong>hipoglicemia neonatal recorrente de difícil controle + micropênis com criptorquidia bilateral + icterícia colestática inexplicada</strong> é a tríade clínica clássica patognomônica de <strong>Hipopituitarismo Congênito (Pan-hipopituitarismo com Deficiência Combinada de GH, ACTH, TSH e LH/FSH)</strong>;",
+            "<strong>Coleta da Amostra Crítica:</strong> Em um episódio de glicemia de 34 mg/dL antes do ajuste da TIG, foi colhido o painel hormonal crítico:\n      <ul>\n        <li>Glicemia laboratorial verdadeira = 32 mg/dL;",
+            "<strong>Insulina Sérica = < 0,5 mcU/mL (indetectável - pâncreas normal e apropriadamente suprimido)</strong>;",
+            "<strong>Cortisol Sérico = 1,8 mcg/dL</strong> (marcadamente inapropriado e depletado para uma situação de estresse hipoglicêmico severo, onde deveria ser > 18 a 20 mcg/dL);",
+            "<strong>Hormônio do Crescimento (GH) = 0,4 ng/mL</strong> (inapropriadamente indetectável; valor normal em hipoglicemia no RN > 10 a 20 ng/mL);",
+            "T4 livre = 0,4 ng/dL com TSH = 1,2 mUI/L (Hipotireoidismo Central);",
+            "Corpos cetônicos séricos levemente presentes (beta-hidroxibutirato = 1,4 mmol/L).",
+            "<strong>Neuroimagem:</strong> Ressonância Magnética de Sela Túrcica e Crânio demonstrou <strong>Tríade de Interrupção da Haste Hipofisária</strong>: hipoplasia severa da adeno-hipófise, haste hipofisária ausente/afilada e neuro-hipófise ectópica na base do infundíbulo hipotalâmico;",
+            "<strong>Conduta Terapêutica Definitiva:</strong>\n      <ul>\n        <li>Início imediato de <strong>Hidrocortisona sódica IV na dose de 10 mg/m²/dia</strong> (reposição de glicocorticoide), o que permitiu estabilizar a glicemia em menos de 12 horas e retirar a infusão de glicose venosa;",
+            "Início concomitante de <strong>Levotiroxina sódica oral (10 mcg/kg/dia)</strong> após início do corticoide (nunca iniciar hormônio tireoidiano antes do corticoide pelo risco de precipitar crise adrenal aguda por aceleração do clearance metabólico hepático do escasso cortisol residual);",
+            "Introdução subsequente de <strong>Hormônio do Crescimento Recombinante Humano (rhGH)</strong> por via subcutânea e seguimento conjunto com endocrinologia pediátrica, normalizando o desenvolvimento e garantindo prognóstico favorável."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Hipoglicemia com Acidose Lática Severa e Hepatomegalia - Glicogenose Tipo Ia"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Lactente do sexo feminino, 3 meses de vida, filha de pais consanguíneos em primeiro grau (primos-irmãos). Apresenta história desde o primeiro mês de vida de sudorese profusa, irritabilidade intensa e tremores que surgem invariavelmente cerca de 2 a 3 horas após as mamadas, melhorando transitoriamente assim que mama novamente ao peito. A mãe relata ainda que o abdome da criança está \"cada dia mais inchado e duro\". Na última madrugada, a criança demorou 5 horas para mamar e evoluiu com convulsão tônico-clônica generalizada com desvio do olhar, sendo trazida às pressas ao pronto-socorro pediátrico."
+        ],
+        [
+          "4",
+          "Exame Físico na Emergência"
+        ],
+        [
+          "u",
+          [
+            "Sinais vitais: FC 158 bpm, FR 54 irpm (taquipneica com respiração profunda de Kussmaul), SpO2 98% em ar ambiente, Temp 36,4 ºC;",
+            "Ectoscopia: Lactente com bochechas arredondadas e volumosas (\"fácies de boneca\" ou fácies querubínica), com membros delgados em contraste com o tronco volumoso;",
+            "Aparelho Digestivo: <strong>Hepatomegalia maciça com borda hepática palpável a 6 cm abaixo do rebordo costal direito</strong>, de consistência firme, superfície lisa e indolor; ausência de esplenomegalia palpável (baço impalpável)."
+          ]
+        ],
+        [
+          "4",
+          "Exames Laboratoriais na Admissão"
+        ],
+        [
+          "u",
+          [
+            "<strong>Glicemia Plasmática = 24 mg/dL</strong>;",
+            "Gasometria Arterial: pH 7,12, pCO2 22 mmHg, HCO3 7 mEq/L, Base Excess -19 mEq/L (<strong>Acidose metabólica severa com ânion-gap aumentado = 26 mEq/L</strong>);",
+            "<strong>Lactato Sérico = 11,8 mmol/L</strong> (VR: < 2,0 mmol/L - hiperlactatemia extrema!);",
+            "<strong>Ácido Úrico Sérico = 12,4 mg/dL</strong> (VR: 2,0 a 5,5 mg/dL - hiperuricemia severa);",
+            "Triglicerídeos Séricos = 1.480 mg/dL com Colesterol Total = 380 mg/dL (hiperlipidemia mista exuberante com soro visivelmente leitoso lipêmico);",
+            "Enzimas hepáticas com TGO e TGP discretamente elevadas (2 a 3 vezes o limite normal), função de síntese (coagulograma e albumina) preservada."
+          ]
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Conduta Diagnóstica e Nutricional"
+        ],
+        [
+          "o",
+          [
+            "<strong>Síntese Diagnóstica:</strong> Lactente com <strong>hepatomegalia maciça isolada (sem esplenomegalia) + hipoglicemia de jejum curto + acidose lática grave + hiperuricemia + hipertrigliceridemia extrema</strong> compõe o quadro clínico-laboratorial patognomônico da <strong>Glicogenose Tipo Ia (Doença de Von Gierke)</strong>, decorrente da deficiência autossômica recessiva da enzima <strong>Glicose-6-Fosfatase</strong> microsomal hepática;",
+            "<strong>Mecanismo Bioquímico:</strong> A enzima glicose-6-fosfatase catalisa a última etapa comum tanto da glicogenólise quanto da gliconeogênese (conversão de glicose-6-fosfato em glicose livre). Na sua ausência, o fígado é incapaz de liberar glicose na circulação sanguínea. O substrato acumulado (glicose-6-fosfato) é desviado para a glicólise anaeróbia (gerando lactato maciço), para a síntese de lipídeos (hipertrigliceridemia exuberante) e para a via das pentoses-fosfato com catabolismo de purinas (gerando hiperuricemia grave);",
+            "<strong>Alerta Crítico de Prova e de Manejo:</strong> <em>A administração de glucagon parenteral é estritamente contraindicada e perigosa na Doença de Von Gierke!</em> O glucagon não consegue induzir liberação de glicose livre e provoca um agravamento catastrófico da acidose lática metabólica já existente;",
+            "<strong>Tratamento e Conduta Nutricional Resolvida:</strong>\n      <ul>\n        <li>Fase Aguda: Reversão imediata da hipoglicemia e acidose com infusão contínua de glicose parenteral e bicarbonato de sódio titulado;",
+            "Fase de Manutenção Crônica: A terapia baseia-se na <strong>manutenção contínua e ininterrupta da euglicemia (glicemia > 70 a 80 mg/dL) para suprimir a secreção de glucagon e interromper o desvio catabólico hepático</strong>;",
+            "Instituição de alimentação enteral frequente dia e noite a cada 2 a 3 horas; durante o período noturno, infusão contínua de fórmula sem lactose/galactose por sonda nasogástrica em bomba;",
+            "Introdução de <strong>Amido de Milho Cru (Maizena) dissolvido em água fria (1,5 a 2 g/kg/dose a cada 4 a 6 horas)</strong> a partir dos 6 a 12 meses de idade (o amido de milho cru é um carboidrato complexo de digestão lenta que libera glicose intestinal contínua e gradual por até 6 horas, prevenindo o jejum e as crises hipoglicêmicas). Uso de <strong>Alopurinol</strong> para controle da hiperuricemia e prevenção de nefropatia úrica."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Hipocalcemia Neonatal Precoce e Hipomagnesemia Refratária em FMD"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo, 38 semanas, peso de nascimento 4.100 g, filho de mãe com Diabetes Mellitus pré-gestacional tipo 1 com mau controle metabólico (HbA1c de 9,8% no 3º trimestre). Apresentou episódio inicial de hipoglicemia nas primeiras 2 horas de vida, revertido satisfatoriamente com bolus de SG 10% e TIG de 8 mg/kg/min em UTIN. No 2º dia de vida (com 36 horas de vida), o recém-nascido volta a apresentar <strong>irritabilidade intensa, hiper-reflexia e tremores grosseiros de extremidades</strong> que se intensificam a qualquer manuseio sonoro ou tátil na incubadora."
+        ],
+        [
+          "4",
+          "Exame Físico e Laboratorial"
+        ],
+        [
+          "u",
+          [
+            "A glicemia plasmática no momento do tremor foi aferida e encontrava-se rigorosamente normal (76 mg/dL sob TIG de 6 mg/kg/min);",
+            "O pediatra suspeitou de distúrbio eletrolítico e colheu eletrólitos séricos urgentes:\n      <ul>\n        <li><strong>Cálcio Total Sérico = 6,1 mg/dL</strong> (VR: 8,0 a 10,5 mg/dL);",
+            "<strong>Cálcio Iônico (Livre) = 0,78 mmol/L</strong> (VR: 1,15 a 1,35 mmol/L - hipocalcemia grave!);",
+            "Fósforo sérico = 5,8 mg/dL (normal);",
+            "<strong>Magnésio Sérico = 1,0 mg/dL</strong> (VR: 1,6 a 2,4 mg/dL - hipomagnesemia moderada a severa);",
+            "Eletrocardiograma (ECG): ritmo sinusal com frequência de 148 bpm e <strong>prolongamento evidente do intervalo QTc (QT corrigido = 0,48 segundos; normal até 0,44 s)</strong> à custa de alongamento exclusivo do segmento ST."
+          ]
+        ],
+        [
+          "4",
+          "Interpretação e Conduta Resolvida Passo a Passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Estabelecido:</strong> <strong>Hipocalcemia Neonatal Precoce associada a Hipomagnesemia Secundária</strong> em filho de mãe diabética;",
+            "<strong>Mecanismo Fisiopatológico Integrado:</strong> Mães com diabetes descompensado sofrem espoliação e perda renal crônica de magnésio por glicosúria osmótica, gerando hipomagnesemia crônica intraútero com transporte placentário de magnésio diminuído para o feto. Ao nascimento, o recém-nascido é depletado de magnésio. Como o íon magnésio é cofactor iônico estritamente indispensável para a liberação de Paratormônio (PTH) pelas paratireoides e para a ação periférica do PTH nos ossos e rins, instala-se um <strong>estado de hipoparatireoidismo funcional secundário</strong>;",
+            "<strong>Regra de Ouro Terapêutica de Prova e Plantão:</strong> <em>A hipocalcemia NÃO se corrige e é refratária a qualquer reposição isolada de cálcio enquanto o magnésio sérico não for restabelecido!</em>;",
+            "<strong>Intervenção Sequencial Realizada:</strong>\n      <ul>\n        <li>Administração prioritária imediata de <strong>Sulfato de Magnésio a 50% por via intramuscular profunda na dose de 0,2 mL/kg (0,8 mL para o lactente de 4,1 kg, fornecendo 100 mg de sulfato de magnésio / cerca de 10 mg de magnésio elementar)</strong>;",
+            "Concomitantemente, para o alívio imediato dos tremores e correção do QTc longo no ECG: infusão venosa de <strong>Gluconato de Cálcio a 10% na dose de 2 mL/kg (8,2 mL) diluído em partes iguais com água destilada, administrado lentamente ao longo de 15 a 20 minutos sob monitorização contínua do traçado do ECG</strong> na tela do monitor multiparamétrico (se surgisse bradicardia com FC < 100 bpm, a infusão seria temporariamente interrompida);",
+            "<strong>Evolução:</strong> Em menos de 2 horas após a administração combinada do magnésio e do gluconato de cálcio, os tremores cessaram integralmente. O intervalo QTc encurtou para 0,41 segundos no ECG de controle. A dosagem laboratorial realizada 12 horas após revelou Cálcio Iônico de 1,22 mmol/L e Magnésio de 1,9 mg/dL. A criança progrediu a dieta enteral e recebeu alta em aleitamento exclusivo no 6º dia de vida."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-de-prova-comentadas-e-sintese-high-yield",
+      0,
+      [
+        [
+          "2",
+          "8. Questões de Residência Médica Comentadas na Íntegra e Síntese High-Yield"
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica - USP / Pediatria)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Recém-nascido a termo (38 semanas e 4 dias), masculino, peso de nascimento de 4.380 g (Grande para a Idade Gestacional - GIG), nasce de parto cesáreo indicado por macrossomia fetal em gestante com diabetes gestacional diagnosticado no terceiro trimestre e com controle glicêmico irregular. Ao nascimento, apresenta boa vitalidade, Apgar 8/9, sendo encaminhado ao alojamento conjunto com estímulo ao aleitamento materno na primeira hora de vida. Com 2 horas de vida, durante avaliação de enfermagem, nota-se que o recém-nascido apresenta tremores finos de extremidades, sucção débil e letargia. A glicemia capilar realizada à beira do leito resulta em 22 mg/dL. Assinale a alternativa que apresenta a conduta imediata CORRETA:"
+        ],
+        [
+          "p",
+          "A) Ofertar imediatamente 30 mL de fórmula láctea infantil de partida por copinho ou mamadeira e repetir a glicemia capilar em 30 minutos.<br>\nB) Administrar bolus endovenoso de Soro Glicosado a 25% na dose de 4 mL/kg em push rápido seguido de hidrocortisona endovenosa.<br>\nC) Administrar bolus endovenoso de Soro Glicosado a 10% na dose de 2 mL/kg (200 mg/kg de glicose) em 2 a 3 minutos, seguido de infusão contínua de glicose (TIG) iniciando em 6 a 8 mg/kg/min, e repetir a glicemia em 30 minutos.<br>\nD) Administrar Glucagon intramuscular na dose de 0,1 mg/kg como monoterapia de primeira linha para mobilizar o glicogênio hepático.<br>\nE) Manter observação expectante, uma vez que valores até 20 mg/dL fazem parte do nadir glicêmico fisiológico das primeiras 2 horas de vida."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> O recém-nascido apresenta <strong>hipoglicemia neonatal sintomática grave</strong> (tremores, letargia, sucção débil associada a glicemia &lt; 25-40 mg/dL). Todo recém-nascido sintomático com hipoglicemia (ou assintomático com glicemia &lt; 25 mg/dL refratária) exige tratamento parenteral imediato. O protocolo padrão-ouro da Sociedade Brasileira de Pediatria (SBP) e da Academia Americana de Pediatria (AAP) determina a administração de um <strong>mini-bolus endovenoso de Soro Glicosado a 10% (SG 10%) na dose de 2 mL/kg</strong> (o que equivale a 200 mg/kg de glicose), infundido lentamente a 1 mL/min, seguido imediatamente da instalação de <strong>Taxa de Infusão de Glicose (TIG) contínua de 6 a 8 mg/kg/min</strong> (visto que nos filhos de mães diabéticas com hiperinsulinismo, a necessidade costuma ser mais alta que nos prematuros/PIG). O controle glicêmico deve ser repetido após 30 minutos.<br>\n<em>Refutação dos Distratores:</em><br>\n• <strong>A está incorreta:</strong> A via enteral é formalmente contraindicada na vigência de sintomas neurológicos (letargia, sucção débil, tremores) pelo alto risco de broncoaspiração e pela demora na elevação da glicemia.<br>\n• <strong>B está incorreta:</strong> Soluções hipertônicas concentradas (SG 25% ou SG 50%) são proscritas em bolus no período neonatal, pois causam hiperosmolaridade abrupta (risco de hemorragia intraventricular), esclerose venosa e estimulam um pico rebote maciço de secreção de insulina pancreática no filho de mãe diabética, agravando a hipoglicemia minutos depois.<br>\n• <strong>D está incorreta:</strong> O glucagon é medicação de resgate de segunda/terceira linha quando não se obtém acesso venoso em hiperinsulinismo; nunca substitui o SG 10% IV quando o acesso está disponível.<br>\n• <strong>E está incorreta:</strong> O nadir glicêmico fisiológico aplica-se apenas a recém-nascidos a termo hígidos, sem fatores de risco e <em>completamente assintomáticos</em>."
+        ],
+        [
+          "3",
+          "Questão 2 (Residência Médica - UNIFESP / Revalida)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Um recém-nascido pré-termo tardio (35 semanas de idade gestacional), pequeno para a idade gestacional (peso de nascimento = 1.800 g), encontra-se no alojamento conjunto em boas condições clínicas, ativo e mamando ao seio materno. Na triagem rotineira de hipoglicemia neonatal com 3 horas de vida, após a mamada, a glicemia capilar é de 32 mg/dL. O recém-nascido permanece totalmente assintomático. De acordo com o protocolo da Sociedade Brasileira de Pediatria para o manejo do RN assintomático de risco nas primeiras 4 horas de vida, qual é a conduta mais adequada?"
+        ],
+        [
+          "p",
+          "A) Transferir imediatamente para a UTI Neonatal e iniciar TIG de 8 mg/kg/min por cateter umbilical.<br>\nB) Ofertar alimentação (leite materno ordenhado ou fórmula) e/ou gel de dextrose a 40% na mucosa jugal (200 mg/kg) e repetir a glicemia capilar em 30 a 60 minutos.<br>\nC) Iniciar diazóxido oral na dose de 10 mg/kg/dia dividido em 3 tomadas.<br>\nD) Suspender o aleitamento materno e prescrever soro fisiológico endovenoso.<br>\nE) Dar alta da monitorização glicêmica, pois qualquer valor acima de 30 mg/dL é considerado normal para prematuros."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: B.</strong><br>\n<em>Justificativa Médica:</em> Nas primeiras 4 horas de vida, em um recém-nascido pertencente a grupo de risco (PIG, prematuro, GIG ou FMD) que se encontra <strong>totalmente assintomático</strong> e apresenta glicemia entre <strong>25 e 40 mg/dL</strong>, a conduta preconizada pela AAP e SBP é não invasiva: alimentar novamente o recém-nascido (preferencialmente ao seio materno ou leite humano ordenhado, podendo associar o <strong>gel de dextrose a 40% na dose de 0,5 mL/kg = 200 mg/kg massageado na mucosa bucal/jugal</strong>, que reduz significativamente a necessidade de admissão em UTIN e preserva o aleitamento materno) e reavaliar a glicemia em 30 a 60 minutos. Se na reavaliação a glicemia cair para &lt; 25 mg/dL ou se mantiver persistentemente entre 25-40 mg/dL apesar das ofertas enterais, indica-se glicose endovenosa."
+        ],
+        [
+          "3",
+          "Questão 3 (Residência Médica - UNICAMP)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Recém-nascido com 3.000 g encontra-se internado na Unidade Neonatal recebendo hidratação venosa exclusiva com Soro Glicosado a 10% (SG 10%) na velocidade de infusão de 90 mL/kg/dia (volume total diário = 270 mL/dia, correndo a 11,25 mL/hora em bomba de infusão). Qual é a Taxa de Infusão de Glicose (TIG), expressa em mg/kg/min, que este recém-nascido está recebendo?"
+        ],
+        [
+          "p",
+          "A) 3,50 mg/kg/min.<br>\nB) 4,80 mg/kg/min.<br>\nC) 6,25 mg/kg/min.<br>\nD) 8,50 mg/kg/min.<br>\nE) 10,00 mg/kg/min."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica e Demonstração Matemática:</em><br>\nO cálculo da TIG é questão clássica e obrigatória em provas práticas e teóricas de Pediatria:<br>\n• <strong>Método 1 (Fórmula Direta pela Taxa Hídrica):</strong><br>\n<code>TIG (mg/kg/min) = [Concentração de Glicose (%) × Taxa Hídrica (mL/kg/dia)] / 144</code><br>\nSubstituindo os valores: Concentração = 10% e Taxa Hídrica = 90 mL/kg/dia:<br>\n<code>TIG = (10 × 90) / 144 = 900 / 144 = 6,25 mg/kg/min</code>.<br>\n• <strong>Método 2 (Cálculo Analítico por Gramas de Glicose):</strong><br>\n1. Volume diário total = 3 kg × 90 mL/kg/dia = 270 mL de SG 10% em 24 horas.<br>\n2. Como o SG 10% contém 10 g de glicose em cada 100 mL (ou 100 mg/mL), em 270 mL temos: <code>270 mL × 100 mg/mL = 27.000 mg de glicose por dia</code>.<br>\n3. Dividindo pelo peso do RN (3 kg): <code>27.000 mg / 3 kg = 9.000 mg/kg/dia</code>.<br>\n4. Como 1 dia possui 1.440 minutos (24 h × 60 min): <code>9.000 / 1.440 = 6,25 mg/kg/min</code>."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica - SUS-SP / ENAMED)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Durante a investigação diagnóstica de um recém-nascido a termo de 6 dias de vida com hipoglicemia grave persistente que exige Taxa de Infusão de Glicose (TIG) de 16 mg/kg/min por cateter venoso central para manter glicemias acima de 50 mg/dL, o neonatologista coleta a \"Amostra Crítica\" no exato momento em que a glicemia plasmática encontra-se em 34 mg/dL. Os resultados laboratoriais da amostra crítica revelam: Insulina sérica = 18 mcUI/mL (elevada), Peptídeo C = 3,2 ng/mL (elevado), Corpos Cetônicos (beta-hidroxibutirato) = 0,1 mmol/L (suprimidos/indetectáveis), Ácidos Graxos Livres = 0,15 mmol/L (suprimidos), Cortisol = 22 mcg/dL (normal) e GH = 14 ng/mL (normal). Após a administração de Glucagon 1 mg IV no momento da hipoglicemia, a glicemia subiu de 34 mg/dL para 78 mg/dL em 20 minutos (delta = +44 mg/dL). Qual é o diagnóstico etiológico definitivo e o fármaco de primeira escolha para o tratamento medicamentoso específico dessa condição?"
+        ],
+        [
+          "p",
+          "A) Deficiência de Acil-CoA Desidrogenase de Cadeia Média (MCAD); L-carnitina oral.<br>\nB) Glicogenose Tipo I (Doença de Von Gierke); Amido de milho cru.<br>\nC) Hiperinsulinismo Congênito Persistente; Diazóxido oral.<br>\nD) Pan-hipopituitarismo Congênito; Hidrocortisona e Somatropina.<br>\nE) Hipoglicemia Factícia por administração exógena de insulina; Octreotide."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: C.</strong><br>\n<em>Justificativa Médica:</em> Todos os marcadores da Amostra Crítica convergem de maneira inequívoca para o diagnóstico de <strong>Hiperinsulinismo Congênito Endógeno (por mutação nos canais K-ATP das células beta, genes ABCC8 ou KCNJ11)</strong>:<br>\n1. Necessidade de TIG &gt; 12 mg/kg/min por mais de 7 dias;<br>\n2. Insulina sérica inapropriadamente detectável/elevada (&gt; 2 mcUI/mL) na vigência de hipoglicemia;<br>\n3. Peptídeo C elevado (confirmando produção endógena pancreática e descartando administração exógena factícia, na qual o peptídeo C estaria suprimido);<br>\n4. Hipocetonemia e hipoacidemia graxa livre (a insulina inibe potentemente a lipólise e a cetogênese hepática);<br>\n5. Resposta hiperglicêmica positiva (&gt; 30 mg/dL) ao teste do Glucagon (pois a insulina reteve e estocou grandes quantidades de glicogênio no fígado, que são liberadas quando estimuladas farmacologicamente pelo glucagon).<br>\nO fármaco de primeira linha para o Hiperinsulinismo Congênito é o <strong>Diazóxido oral (5 a 15 mg/kg/dia)</strong>, um agonista que abre o canal de potássio sensível ao ATP (SUR1/Kir6.2), hiperpolarizando a membrana da célula beta e bloqueando a exocitose de insulina."
+        ],
+        [
+          "3",
+          "Questão 5 (Residência Médica - HCPA / UFRGS)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Recém-nascido a termo, filho de mãe diabética insulinodependente, apresenta-se no 2º dia de vida com abalos musculares, tremores grosseiros, hipertonia extensora e hiper-reflexia. A glicemia capilar realizada no momento da crise é de 72 mg/dL. Os exames séricos mostram: Cálcio total = 5,9 mg/dL, Cálcio iônico = 0,75 mmol/L, Fósforo = 6,5 mg/dL e Magnésio = 0,9 mg/dL. Foi administrada infusão lenta de Gluconato de Cálcio a 10% (2 mL/kg), porém 4 horas depois os tremores retornam e o cálcio iônico permanece em 0,79 mmol/L. Qual a justificativa fisiopatológica para a refratariedade do quadro e a conduta necessária?"
+        ],
+        [
+          "p",
+          "A) Hiperparatireoidismo secundário neonatal; indicar furosemida endovenosa para espoliar fósforo.<br>\nB) Hipoparatireoidismo funcional induzido pela hipomagnesemia grave; administrar Sulfato de Magnésio 50% (0,1 a 0,2 mL/kg IM ou IV lento), pois a hipocalcemia não se corrige enquanto o magnésio não for normalizado.<br>\nC) Resistência periférica ao calcitriol por imaturidade renal; iniciar calcitriol em altas doses endovenosas.<br>\nD) Síndrome de DiGeorge (deleção 22q11.2); solicitar timectomia de urgência.<br>\nE) Alcalose metabólica induzida pelo gluconato; infundir cloreto de amônio."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: B.</strong><br>\n<em>Justificativa Médica:</em> A hipomagnesemia (&lt; 1,5 mg/dL) é frequente em filhos de mães diabéticas devido à perda urinária materna de magnésio por diurese osmótica. A depleção severa de magnésio bloqueia a adenilato ciclase nas glândulas paratireoides, impedindo a exocitose de PTH e gerando resistência periférica óssea à ação do PTH. Por conseguinte, qualquer infusão isolada de cálcio será rapidamente perdida na urina ou mal aproveitada até que o estoque sérico de magnésio seja corrigido com <strong>Sulfato de Magnésio a 50% (0,1 a 0,2 mL/kg/dose IM ou IV lento)</strong>."
+        ],
+        [
+          "3",
+          "Questão 6 (Residência Médica - IAMSPE / Santa Casa SP)"
+        ],
+        [
+          "p",
+          "<strong>Enunciado:</strong> Recém-nascido de 10 dias de vida é levado à emergência com história de vômitos lácteos, recusa alimentar, letargia progressiva, icterícia colestática (aumento de bilirrubina direta) e hepatomegalia. Apresenta hipoglicemia (30 mg/dL). Na triagem urinária para erros inatos do metabolismo, observa-se pesquisa de substâncias redutoras na urina (teste de Fehling/Clinitest) fortemente POSITIVA, enquanto a fita reagente específica para glicose oxidada (glicosúria enzimática) é NEGATIVA. Após poucos dias, o lactente evolui com sepse grave com hemocultura positiva para um bacilo Gram-negativo. Qual é a doença metabólica de base, o açúcar redutor excretado na urina e o agente infeccioso classicamente associado a esta condição?"
+        ],
+        [
+          "p",
+          "A) Intolerância Hereditária à Frutose; frutose; <em>Pseudomonas aeruginosa</em>.<br>\nB) Galactosemia Clássica (deficiência de GALT); galactose; <em>Escherichia coli</em>.<br>\nC) Tirosinemia Tipo I; succinilacetona; <em>Staphylococcus aureus</em>.<br>\nD) Doença da Urina do Xarope de Bordo; leucina; <em>Streptococcus agalactiae</em>.<br>\nE) Deficiência de Biotinidase; ácido propiônico; <em>Klebsiella pneumoniae</em>."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial e Comentário Detalhado:</strong><br>\n<strong>Alternativa CORRETA: B.</strong><br>\n<em>Justificativa Médica:</em> O quadro clínico-laboratorial descreve com perfeição a <strong>Galactosemia Clássica (deficiência da enzima Galactose-1-Fosfato Uridiltransferase - GALT)</strong>. Após o início do aleitamento (leite materno ou fórmula comum rica em lactose, que é hidrolisada em glicose + galactose), ocorre acúmulo tóxico de galactose-1-fosfato e galactitol nos tecidos, desencadeando insuficiência hepática aguda neonatal, icterícia colestática, hepatomegalia, hipoglicemia pós-prandial, catarata bilateral (\"em gota de óleo\") e tubulopatia renal de Fanconi. Na urina, a galactose acumulada positivará o teste de substâncias redutoras (Clinitest/Benedict), mas negativará a fita de glicose oxidase (que reage apenas com glicose). O acúmulo de galactose deprime a atividade bactericida dos leucócitos neutrófilos, predispondo o neonato à <strong>sepse neonatal fulminante por <em>Escherichia coli</em></strong>! A conduta salvadora de vidas é a suspensão imediata e definitiva do leite materno e de qualquer fórmula láctea com lactose, substituindo por fórmula à base de proteína isolada de soja."
+        ],
+        [
+          "3",
+          "Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+        ],
+        [
+          "t",
+          [
+            "Cenário Clínico / Tópico",
+            "Achado Chave / Ponto de Corte",
+            "Conduta Padrão-Ouro de Prova"
+          ],
+          [
+            [
+              "<strong>Grupos de Risco para Triagem Glicêmica</strong>",
+              "Filho de Mãe Diabética (FMD), GIG, PIG, Prematuro (&lt; 37 sem), Asfixia perinatal, Policitemia, Sepse, Mãe em uso de betabloqueador/terbutalina.",
+              "Iniciar alimentação na 1ª hora de vida. Primeira glicemia capilar <strong>30 minutos após a 1ª mamada</strong> (entre 1 e 2h de vida)."
+            ],
+            [
+              "<strong>Alvos Terapêuticos (SBP / AAP)</strong>",
+              "• Primeiras 4 horas: &ge; 25-40 mg/dL (pós-mamada)<br>• 4 a 24 horas: <strong>&ge; 35-45 mg/dL</strong><br>• Após 24-48 horas: <strong>&ge; 45-50 mg/dL</strong><br>• Hiperinsulinismo: manter <strong>&gt; 60-70 mg/dL</strong>",
+              "Qualquer RN <strong>sintomático</strong> com glicemia &lt; 40 mg/dL ou RN assintomático com glicemia &lt; 25 mg/dL exige tratamento endovenoso imediato!"
+            ],
+            [
+              "<strong>Resgate da Hipoglicemia Sintomática</strong>",
+              "Tremores, apneia, cianose, convulsão, letargia, hipotonia.",
+              "<strong>Mini-bolus de SG 10%: 2 mL/kg IV lento</strong> (200 mg/kg) + instalar <strong>TIG contínua de 5 a 8 mg/kg/min</strong>. Repetir glicemia em 30 min."
+            ],
+            [
+              "<strong>Fórmula da TIG</strong>",
+              "Cálculo de infusão contínua de glicose.",
+              "<code>TIG = (% Glicose × Taxa Hídrica mL/kg/dia) / 144</code><br>Concentração máxima em veia periférica: <strong>12,5%</strong> (acima disso exige acesso central)."
+            ],
+            [
+              "<strong>Síndrome de Beckwith-Wiedemann</strong>",
+              "Macrossomia + Macroglossia + Onfalocele + Hemihipertrofia + Sulcos no lóbulo da orelha.",
+              "Causa genética clássica de <strong>hiperinsulinismo neonatal grave</strong> + alto risco de <strong>Tumor de Wilms e Hepatoblastoma</strong> (rastrear com USG abdominal + AFP a cada 3 meses)."
+            ],
+            [
+              "<strong>Hipocalcemia Neonatal</strong>",
+              "Ca total &lt; 7 mg/dL (PT) ou &lt; 8 mg/dL (RNT); Ca iônico &lt; 1,0-1,1 mmol/L. ECG com QTc longo.",
+              "Sintomático: <strong>Gluconato de Cálcio 10% 1 a 2 mL/kg IV lento em 15-20 min com monitorização cardíaca</strong> (risco de bradicardia e necrose tecidual). Checar e corrigir Magnésio!"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ]
+  ]
+}

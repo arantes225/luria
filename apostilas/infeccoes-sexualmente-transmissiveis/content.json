@@ -1,0 +1,2297 @@
+{
+  "v": 2,
+  "s": "infeccoes-sexualmente-transmissiveis",
+  "t": "Infecções Sexualmente Transmissíveis (IST)",
+  "p": "Infecções Sexualmente Transmissíveis (IST) — Livro-Texto LURIA",
+  "d": "Diretrizes Clínicas PCDT IST 2026 · Abordagem Sindrômica e Etiológica · Sífilis, Gonorreia, Clamídia, Úlceras Genitais e Verrugas Anogenitais",
+  "a": "Ginecologia e Obstetrícia",
+  "m": "Ginecologia Geral e Infecciosa",
+  "h": [
+    "Apostila LURIA",
+    "Infecções Sexualmente Transmissíveis (IST)",
+    "Diretrizes Clínicas PCDT IST 2026 · Abordagem Sindrômica e Etiológica · Sífilis, Gonorreia, Clamídia, Úlceras Genitais e Verrugas Anogenitais",
+    [
+      "Área: Ginecologia e Obstetrícia",
+      "Matéria: Ginecologia Geral e Infecciosa",
+      "Tema: Infecções Sexualmente Transmissíveis (IST)"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "infec-es-sexualmente-transmiss-veis-ist",
+      "Infecções Sexualmente Transmissíveis (IST)"
+    ],
+    [
+      "resumo-prova",
+      "Em 30 segundos"
+    ],
+    [
+      "mapa-mental",
+      "Mapa mental"
+    ],
+    [
+      "conceitos",
+      "1. Conceitos, transmissão e história natural"
+    ],
+    [
+      "epidemiologia",
+      "2. Epidemiologia, vulnerabilidade e fatores de risco"
+    ],
+    [
+      "abordagem",
+      "3. Abordagem sindrômica sem perder a etiologia"
+    ],
+    [
+      "diagnostico",
+      "4. Diagnóstico e interpretação dos testes"
+    ],
+    [
+      "rastreio",
+      "5. Rastreamento, parcerias e seguimento"
+    ],
+    [
+      "sifilis",
+      "6. Sífilis: da lesão primária à doença sistêmica"
+    ],
+    [
+      "gonococo-clamidia",
+      "7. Gonorreia e clamídia: uretra, colo, reto e faringe"
+    ],
+    [
+      "tricomoniase",
+      "8. Tricomoníase"
+    ],
+    [
+      "herpes",
+      "9. Herpes genital"
+    ],
+    [
+      "outras-ulceras",
+      "10. Outras úlceras: cancroide, LGV e donovanose"
+    ],
+    [
+      "ulceras-genitais-decisoes-2026",
+      "10A. Úlceras genitais: seis decisões clínicas comentadas"
+    ],
+    [
+      "hpv",
+      "11. HPV e verrugas anogenitais"
+    ],
+    [
+      "hiv-hepatites",
+      "12. HIV e hepatites virais no contexto das IST"
+    ],
+    [
+      "dip",
+      "13. Doença inflamatória pélvica: infecção ascendente e risco reprodutivo"
+    ],
+    [
+      "prevencao",
+      "14. Prevenção combinada"
+    ],
+    [
+      "especiais",
+      "15. Situações especiais"
+    ],
+    [
+      "casos",
+      "16. Casos integradores"
+    ],
+    [
+      "revisao",
+      "17. Revisão de alto rendimento"
+    ],
+    [
+      "aprofundamento-2026",
+      "18. Aprofundamento: diagnóstico por sítio, resistência e prevenção de recorrência"
+    ],
+    [
+      "editorial-depth-ist",
+      "Referências essenciais"
+    ],
+    [
+      "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis",
+      "Seção"
+    ],
+    [
+      "capitulos-livro-infeccoes-sexualmente-transmissiveis",
+      "Seção"
+    ]
+  ],
+  "q": [
+    [
+      "infec-es-sexualmente-transmiss-veis-ist",
+      0,
+      [
+        [
+          "2",
+          "Infecções Sexualmente Transmissíveis (IST)"
+        ],
+        [
+          "p",
+          "<span class=\"book-badge\">Apostila LURIA</span>\r\n<h1>Infecções Sexualmente Transmissíveis (IST)</h1>"
+        ],
+        [
+          "p",
+          "Saúde sexual · síndromes clínicas, diagnóstico etiológico, tratamento e prevenção combinada"
+        ],
+        [
+          "p",
+          "<div class=\"book-meta-row\"><span>Área: Ginecologia e Obstetrícia</span><span>Matéria: Ginecologia</span><span>Tema: IST</span></div>"
+        ]
+      ]
+    ],
+    [
+      "resumo-prova",
+      0,
+      [
+        [
+          "2",
+          "Em 30 segundos"
+        ],
+        [
+          "p",
+          "<h2>Em 30 segundos</h2>"
+        ],
+        [
+          "u",
+          [
+            "IST podem ser bacterianas, virais ou parasitárias e muitas são <strong>assintomáticas</strong>; ausência de sintomas não exclui infecção nem transmissão.",
+            "Na prática, comece pela <strong>síndrome clínica</strong> — corrimento uretral/cervical, corrimento vaginal, úlcera, verruga, dor pélvica — e procure o agente quando houver teste disponível.",
+            "Gonorreia e clamídia podem existir em uretra, colo, reto e faringe. O sítio a testar deve acompanhar o <strong>sítio exposto</strong>.",
+            "Sífilis: teste treponêmico demonstra infecção atual ou passada; VDRL/RPR fornece título útil para atividade e seguimento. História de tratamento muda a interpretação.",
+            "Gestante com sífilis deve receber <strong>penicilina benzatina</strong> imediatamente quando indicada; é o tratamento com eficácia estabelecida para prevenir sífilis congênita. Entre doses semanais, o ideal é 7 dias e o limite atual aceito é 9 dias.",
+            "No Brasil, o PCDT vigente ainda recomenda para gonorreia não complicada <strong>ceftriaxona 500 mg IM + azitromicina 1 g VO, ambas em dose única</strong>.",
+            "Primeiro episódio de herpes genital: aciclovir sistêmico reduz duração e intensidade, mas não erradica o HSV.",
+            "Verruga por HPV é diagnóstico predominantemente clínico; tratar a lesão não significa eliminar a infecção viral.",
+            "PEP para HIV é urgência: exposição recente deve ser avaliada rapidamente. Em 2026, o SUS incorporou também a <strong>DoxiPEP</strong> para prevenção de sífilis e clamídia em população elegível; não deve ser generalizada como automedicação após qualquer relação.",
+            "Vacina HPV no SUS: rotina de 9 a 14 anos em dose única; há esquemas específicos para imunossuprimidos e outros grupos e estratégia de resgate para 15–19 anos não vacinados em 2026.",
+            "Uma consulta por IST deve terminar com quatro respostas: <strong>o que tratar agora, o que testar, quais parcerias precisam ser abordadas e qual prevenção reduzirá nova exposição</strong>.",
+            "Falha terapêutica verdadeira é diagnóstico de exclusão: primeiro verifique adesão, reinfecção, sítio extragenital e parceria não tratada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "mapa-mental",
+      0,
+      [
+        [
+          "2",
+          "Mapa mental"
+        ],
+        [
+          "p",
+          "<div class=\"mindmap-head\"><h2>Mapa mental</h2>"
+        ],
+        [
+          "p",
+          "O caminho clínico é reconhecer a síndrome, localizar o sítio exposto, estimar gravidade e então definir testagem, tratamento e prevenção."
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"mindmap\" aria-label=\"Mapa mental de IST\">\r\n<div class=\"mind-center\"><span>IST</span><strong>Síndrome → agente → transmissão → prevenção</strong><small>não esquecer parcerias, gestação e HIV</small></div>\r\n<div class=\"mind-branch mind-a\">"
+        ],
+        [
+          "3",
+          "Corrimento"
+        ],
+        [
+          "u",
+          [
+            "uretral/cervical: gonococo e clamídia;",
+            "vaginal: tricomoníase, vaginose, candidíase;",
+            "exame e teste por sítio."
+          ]
+        ],
+        [
+          "3",
+          "Úlcera"
+        ],
+        [
+          "u",
+          [
+            "sífilis;",
+            "herpes;",
+            "cancroide, LGV e donovanose;",
+            "testar HIV e sífilis."
+          ]
+        ],
+        [
+          "3",
+          "Dor e complicação"
+        ],
+        [
+          "u",
+          [
+            "DIP;",
+            "epididimite;",
+            "torção é diferencial de urgência;",
+            "neurossífilis/ocular."
+          ]
+        ],
+        [
+          "3",
+          "Prevenção"
+        ],
+        [
+          "u",
+          [
+            "preservativos + testagem;",
+            "vacinas HPV/HB;",
+            "PrEP/PEP HIV;",
+            "DoxiPEP em elegíveis;",
+            "parcerias."
+          ]
+        ]
+      ]
+    ],
+    [
+      "conceitos",
+      0,
+      [
+        [
+          "2",
+          "1. Conceitos, transmissão e história natural"
+        ],
+        [
+          "p",
+          "<h2>1. Conceitos, transmissão e história natural</h2>"
+        ],
+        [
+          "p",
+          "Infecções sexualmente transmissíveis são infecções em que a via sexual tem papel epidemiológico relevante. O termo <strong>IST</strong> é preferível a “DST” porque a pessoa pode estar infectada, transmitir o agente e desenvolver complicações mesmo sem manifestações clínicas. Esse detalhe muda a prática: rastreamento e prevenção não podem depender apenas de sintomas."
+        ],
+        [
+          "p",
+          "A transmissão ocorre por contato entre mucosas, pele lesionada, secreções genitais, sêmen, sangue ou contato direto com lesões infectantes. Algumas infecções também podem ser transmitidas verticalmente durante a gestação ou parto e, para agentes específicos, durante a amamentação. A eficiência de transmissão depende de carga infecciosa, sítio anatômico, presença de inflamação/ulceração, tipo de prática sexual e uso correto de barreiras."
+        ],
+        [
+          "p",
+          "<div class=\"ist-spectrum\">\r\n<div class=\"ist-card\"><strong>Bacterianas</strong><span>Sífilis, gonorreia, clamidiose, cancroide, linfogranuloma venéreo e donovanose. São potencialmente curáveis, mas atraso terapêutico pode deixar sequela permanente.</span></div>\r\n<div class=\"ist-card\"><strong>Virais</strong><span>HIV, HSV, HPV e hepatites B e C. O manejo varia entre supressão antiviral, cura virológica em HCV, imunização e prevenção de complicações.</span></div>\r\n<div class=\"ist-card\"><strong>Parasitária</strong><span>Tricomoníase. Candidíase e vaginose bacteriana entram no diagnóstico diferencial de corrimento, mas não são classificadas como IST clássicas.</span></div>\r\n</div>"
+        ],
+        [
+          "3",
+          "Por que úlcera e inflamação aumentam transmissão?"
+        ],
+        [
+          "p",
+          "A ruptura da barreira epitelial facilita entrada e saída de patógenos. Por isso, sífilis, herpes e outras causas de ulceração genital aumentam vulnerabilidade ao HIV. Inflamação cervical, uretral e retal também recruta células-alvo e aumenta a concentração local de mediadores inflamatórios."
+        ],
+        [
+          "p",
+          "<div class=\"flowchart\">\r\n<div class=\"flow-step\">Exposição em sítio anatômico específico</div><div class=\"flow-arrow\">↓</div>\r\n<div class=\"flow-step\">Colonização/infecção local, muitas vezes assintomática</div><div class=\"flow-arrow\">↓</div>\r\n<div class=\"flow-step\">Inflamação, ulceração ou persistência</div><div class=\"flow-arrow\">↓</div>\r\n<div class=\"flow-step\">Ascensão, disseminação, transmissão vertical ou oncogênese conforme agente</div><div class=\"flow-arrow\">↓</div>\r\n<div class=\"flow-step\">Sequelas: infertilidade, ectópica, doença neurológica, câncer, hepatopatia ou transmissão neonatal</div>\r\n</div>\r\n<div class=\"book-callout\"><strong>Pulo do Gato: sítio exposto é parte do diagnóstico.</strong>"
+        ],
+        [
+          "p",
+          "“Teste para gonorreia” não é um conceito único: urina/uretra, colo/vagina, reto e faringe são compartimentos distintos. Uma pessoa pode ter infecção faríngea com urina negativa."
+        ]
+      ]
+    ],
+    [
+      "epidemiologia",
+      0,
+      [
+        [
+          "2",
+          "2. Epidemiologia, vulnerabilidade e fatores de risco"
+        ],
+        [
+          "p",
+          "<h2>2. Epidemiologia, vulnerabilidade e fatores de risco</h2>"
+        ],
+        [
+          "p",
+          "IST estão entre as infecções mais frequentes na população sexualmente ativa. O risco não é uma característica moral nem fixa da pessoa: ele muda com redes sexuais, frequência de testagem, acesso a preservativos e vacinas, uso de PrEP, presença de outras IST, barreiras ao cuidado e contexto de violência ou coerção."
+        ],
+        [
+          "p",
+          "<div class=\"book-grid-2\">\r\n<div class=\"book-mini\"><strong>Exposição</strong>"
+        ],
+        [
+          "u",
+          [
+            "nova parceria ou múltiplas parcerias;",
+            "parceria com IST diagnosticada;",
+            "sexo sem barreira em sítio genital, anal ou oral;",
+            "compartilhamento de material perfurocortante;",
+            "violência sexual."
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>Contexto clínico</strong>"
+        ],
+        [
+          "u",
+          [
+            "IST prévia recente;",
+            "uso de PrEP/PEP;",
+            "gestação;",
+            "imunossupressão;",
+            "lesões ou inflamação genital/retal."
+          ]
+        ],
+        [
+          "p",
+          "A ausência desses fatores não exclui IST. Da mesma forma, ter um fator de risco não autoriza presumir diagnóstico. O objetivo da história sexual é ajustar probabilidade pré-teste, escolher sítios de coleta e construir prevenção individualizada."
+        ],
+        [
+          "3",
+          "Notificação e vigilância"
+        ],
+        [
+          "p",
+          "No Brasil, algumas IST e condições relacionadas são de notificação compulsória conforme normas vigentes, com destaque para sífilis adquirida, sífilis em gestante, sífilis congênita, HIV/aids e hepatites virais em seus respectivos fluxos. A notificação deve coexistir com sigilo, confidencialidade e cuidado clínico."
+        ]
+      ]
+    ],
+    [
+      "abordagem",
+      0,
+      [
+        [
+          "2",
+          "3. Abordagem sindrômica sem perder a etiologia"
+        ],
+        [
+          "p",
+          "<h2>3. Abordagem sindrômica sem perder a etiologia</h2>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Corrimento vaginal e cervicite</strong>"
+        ],
+        [
+          "o",
+          [
+            "Corrimento vaginal: avalie pH, odor e prurido",
+            "Cervicite: observe secreção endocervical e friabilidade",
+            "Investigue gonococo e clamídia conforme exposição",
+            "Considere tricomoníase e outras causas de vaginite"
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Abordagem sindrômica das IST</strong>"
+        ],
+        [
+          "o",
+          [
+            "Reconheça a queixa e identifique a síndrome",
+            "Solicite testes etiológicos e por sítio exposto",
+            "Inicie tratamento conforme indicação, sem perder seguimento",
+            "Aborde parcerias e combine medidas de prevenção"
+          ]
+        ],
+        [
+          "p",
+          "O manejo sindrômico foi desenhado para permitir tratamento imediato quando há síndrome típica e risco de complicação ou perda de seguimento. Ele não significa abandonar diagnóstico etiológico. Sempre que disponível e clinicamente útil, colha testes antes ou no início do tratamento, sem atrasar terapia quando o custo da espera for alto."
+        ],
+        [
+          "t",
+          [
+            "Síndrome",
+            "Pistas clínicas",
+            "Prioridades"
+          ],
+          [
+            [
+              "Corrimento uretral",
+              "secreção, disúria, prurido uretral",
+              "gonorreia, clamídia; NAAT por sítio; HIV/sífilis"
+            ],
+            [
+              "Cervicite",
+              "mucopus endocervical, friabilidade, sangramento ao toque/pós-coito",
+              "gonococo, clamídia; avaliar DIP"
+            ],
+            [
+              "Corrimento vaginal",
+              "odor, prurido, ardor, alteração de pH",
+              "tricomoníase, vaginose e candidíase; separar vaginite de cervicite"
+            ],
+            [
+              "Úlcera genital",
+              "dor, induração, vesículas, adenopatia",
+              "sífilis e herpes primeiro; cancroide/LGV/donovanose conforme contexto"
+            ],
+            [
+              "Verruga anogenital",
+              "pápulas/verrucosidades, aspecto papilomatoso",
+              "HPV; biopsiar se atípica ou diagnóstico incerto"
+            ],
+            [
+              "Dor pélvica",
+              "dor abdominal baixa + dor cervical/uterina/anexial",
+              "DIP; tratar precocemente e excluir urgências"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "História sexual que realmente muda conduta"
+        ],
+        [
+          "p",
+          "Pergunte de forma neutra sobre parceiros, práticas, uso de barreiras e proteção contra gravidez, histórico de IST, vacinação e uso de PrEP/PEP. A pergunta sobre prática anal ou oral não é curiosidade: ela define se reto e faringe também precisam ser testados."
+        ],
+        [
+          "p",
+          "<div class=\"warning-box\"><strong>Dor testicular súbita é torção até prova em contrário.</strong><span>Epididimite por IST é um diferencial importante, mas não deve atrasar avaliação de torção, em que o tempo para salvamento testicular é crítico.</span></div>"
+        ],
+        [
+          "3",
+          "Corrimento vaginal: nem tudo é IST"
+        ],
+        [
+          "p",
+          "Corrimento vaginal é uma síndrome, não um diagnóstico. Candidíase vulvovaginal e vaginose bacteriana são extremamente frequentes e <strong>não são classificadas como IST clássicas</strong>; tricomoníase é IST. Cervicite por gonococo/clamídia pode coexistir e, em muitos casos, o aspecto do corrimento isoladamente não permite separar as causas."
+        ],
+        [
+          "t",
+          [
+            "Condição",
+            "Pistas",
+            "pH típico",
+            "Parcerias"
+          ],
+          [
+            [
+              "Candidíase",
+              "prurido intenso, eritema, fissuras, corrimento branco grumoso",
+              "geralmente ≤4,5",
+              "não tratar rotineiramente parceria assintomática"
+            ],
+            [
+              "Vaginose bacteriana",
+              "corrimento fino acinzentado, odor amínico, clue cells",
+              "&gt;4,5",
+              "não tratar rotineiramente parceria assintomática"
+            ],
+            [
+              "Tricomoníase",
+              "corrimento amarelo-esverdeado/espumoso, irritação, colo em framboesa pode ocorrer",
+              "&gt;4,5",
+              "tratar parcerias sexuais"
+            ],
+            [
+              "Cervicite",
+              "mucopus endocervical, friabilidade, sangramento ao toque/pós-coito",
+              "não é definida pelo pH vaginal",
+              "avaliar/tratar conforme agente"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Diferenciais não infecciosos"
+        ],
+        [
+          "p",
+          "Se os testes são negativos ou o quadro é recorrente, pense em vaginite atrófica, vaginite inflamatória descamativa, dermatite de contato, líquen, psoríase, corpo estranho, excesso de muco fisiológico e irritantes químicos. Repetir antimicrobianos sem redefinir o diagnóstico é uma causa frequente de persistência dos sintomas."
+        ]
+      ]
+    ],
+    [
+      "diagnostico",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico e interpretação dos testes"
+        ],
+        [
+          "p",
+          "<h2>4. Diagnóstico e interpretação dos testes</h2>"
+        ],
+        [
+          "3",
+          "Testagem por sítio anatômico"
+        ],
+        [
+          "p",
+          "NAAT/biologia molecular para <i>Neisseria gonorrhoeae</i> e <i>Chlamydia trachomatis</i> deve acompanhar os sítios expostos. Primeiro jato urinário ou amostra genital não exclui infecção retal ou faríngea. Em exposição oral e anal, inclua swab de orofaringe e/ou reto conforme a prática."
+        ],
+        [
+          "t",
+          [
+            "Teste",
+            "O que informa",
+            "Armadilha"
+          ],
+          [
+            [
+              "Teste rápido/treponêmico para sífilis",
+              "anticorpos específicos; infecção atual ou passada",
+              "frequentemente permanece reagente após tratamento"
+            ],
+            [
+              "VDRL/RPR",
+              "título não treponêmico útil para atividade/seguimento",
+              "pode ser negativo muito cedo e sofrer fenômeno prozona"
+            ],
+            [
+              "NAAT gonococo/clamídia",
+              "material genético no sítio coletado",
+              "um sítio negativo não exclui outro sítio infectado"
+            ],
+            [
+              "Anti-HIV/algoritmo HIV",
+              "evidência de infecção conforme método/janela",
+              "exposição recente pode exigir repetição e/ou teste complementar"
+            ],
+            [
+              "HBsAg, anti-HBc, anti-HBs",
+              "infecção, contato prévio e imunidade para HBV",
+              "interpretar marcadores em conjunto"
+            ],
+            [
+              "Anti-HCV + HCV-RNA",
+              "exposição e confirmação de infecção ativa",
+              "anti-HCV reagente isolado não demonstra viremia atual"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Sífilis: não leia dois exames sem ler a história"
+        ],
+        [
+          "p",
+          "Treponêmico reagente + VDRL reagente pode representar sífilis ativa ou infecção previamente tratada. Treponêmico reagente + VDRL não reagente pode ocorrer após tratamento, em sífilis muito precoce ou tardia e exige correlação com tratamento anterior e, quando necessário, segundo teste treponêmico. Já VDRL isoladamente reagente com teste treponêmico não reagente favorece falso-positivo."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: título é uma potência de 2.</strong>"
+        ],
+        [
+          "p",
+          "Mudança clinicamente relevante do VDRL costuma ser avaliada por duas diluições, isto é, quatro vezes: 1:32 → 1:8 é queda de quatro vezes; 1:8 → 1:32 é aumento de quatro vezes. Não confunda “caiu de 1:32 para 1:16” com resposta de quatro vezes."
+        ],
+        [
+          "3",
+          "Microscopia, cultura e biologia molecular"
+        ],
+        [
+          "p",
+          "A biologia molecular é o método de escolha para gonococo e clamídia quando disponível. A cultura do gonococo ganha importância diante de <strong>suspeita de falha terapêutica</strong>, porque permite avaliação de sensibilidade antimicrobiana. Microscopia a fresco pode demonstrar tricomonas móveis; bacterioscopia, pH e teste de aminas ajudam no corrimento vaginal, mas não substituem testes mais sensíveis quando estes estão acessíveis."
+        ],
+        [
+          "3",
+          "Janela diagnóstica e repetição"
+        ],
+        [
+          "p",
+          "Um teste negativo imediatamente após a exposição não elimina infecção em incubação. Para HIV, sífilis e hepatites, a interpretação deve levar em conta o método usado e o tempo desde a exposição. Em PEP, o seguimento laboratorial é protocolado e não deve ser reduzido a um único teste no dia zero."
+        ]
+      ]
+    ],
+    [
+      "rastreio",
+      0,
+      [
+        [
+          "2",
+          "5. Rastreamento, parcerias e seguimento"
+        ],
+        [
+          "p",
+          "<h2>5. Rastreamento, parcerias e seguimento</h2>"
+        ],
+        [
+          "p",
+          "Rastreamento é testagem de pessoa sem sintomas. A estratégia depende de idade, gestação, anatomia, práticas sexuais, histórico recente de IST, uso de PrEP e contexto epidemiológico. Não existe um único “painel de IST” que responda a todos os cenários."
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "O que considerar",
+            "Por quê"
+          ],
+          [
+            [
+              "Gestação",
+              "HIV, sífilis e hepatites conforme rotina pré-natal e repetição protocolar",
+              "prevenção de transmissão vertical e tratamento precoce"
+            ],
+            [
+              "Uso de PrEP",
+              "testagem periódica para HIV e outras IST nos sítios expostos",
+              "PrEP previne HIV, não as demais IST"
+            ],
+            [
+              "IST bacteriana recente",
+              "retestagem conforme agente/protocolo e revisão das parcerias",
+              "reinfecção é frequente"
+            ],
+            [
+              "Sexo anal/oral",
+              "coleta retal e/ou faríngea quando indicada",
+              "infecção extragenital pode ser isolada"
+            ],
+            [
+              "Violência sexual",
+              "fluxo específico de HIV, sífilis, hepatites, gravidez e profilaxias",
+              "tempo modifica benefício das intervenções"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Abordagem das parcerias"
+        ],
+        [
+          "p",
+          "Tratar apenas a pessoa sintomática e ignorar a rede de transmissão cria um ciclo de reinfecção. A parceria deve ser orientada, testada e tratada conforme o agente, tempo de exposição e protocolo, sem culpabilização."
+        ],
+        [
+          "3",
+          "Abstinência temporária"
+        ],
+        [
+          "p",
+          "Para infecções bacterianas tratáveis, oriente evitar atividade sexual até que o tratamento recomendado tenha sido concluído, os sintomas tenham resolvido e as parcerias relevantes tenham sido adequadamente abordadas."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: recorrência não é sinônimo de resistência.</strong>"
+        ],
+        [
+          "p",
+          "Em gonorreia, clamídia e tricomoníase, reinfecção por parceria não tratada é muito mais comum que falha microbiológica verdadeira. Reconstrua a cronologia sexual antes de trocar antibiótico."
+        ],
+        [
+          "3",
+          "Quem merece atenção especial para gonococo e clamídia"
+        ],
+        [
+          "p",
+          "O PCDT brasileiro inclui rastreamento em grupos selecionados, como pessoas com IST, pessoas vivendo com HIV no diagnóstico, vítimas de violência sexual e usuários de PrEP/PEP. Em gestantes, a estratégia depende de faixa etária e protocolo vigente. Em pessoas em PrEP, o acompanhamento atual utiliza PCR/NAAT para clamídia e gonococo conforme sítios expostos, em geral de forma semestral ou quando clinicamente necessário."
+        ],
+        [
+          "3",
+          "Teste de cura versus retestagem"
+        ],
+        [
+          "p",
+          "Esses conceitos não são sinônimos. <strong>Teste de cura</strong> procura persistência logo após tratamento em situações selecionadas; <strong>retestagem</strong> procura sobretudo reinfecção semanas ou meses depois. A indicação varia por agente, sítio, gestação e risco de falha."
+        ]
+      ]
+    ],
+    [
+      "sifilis",
+      0,
+      [
+        [
+          "2",
+          "6. Sífilis: da lesão primária à doença sistêmica"
+        ],
+        [
+          "p",
+          "<h2>6. Sífilis: da lesão primária à doença sistêmica</h2><div class=\"ist-image-group\" aria-label=\"Imagens clínicas aprovadas\"><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-13.webp\" alt=\"Sífilis secundária: lesões palmares\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Sífilis secundária: lesões palmares</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=16749\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-14.webp\" alt=\"Sífilis primária: cancro vulvar\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Sífilis primária: cancro vulvar</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=17054\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure></div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Sífilis: interpretação diagnóstica</strong>"
+        ],
+        [
+          "o",
+          [
+            "Realize teste treponêmico ou teste rápido conforme algoritmo",
+            "Associe teste não treponêmico, como VDRL ou RPR, com titulação",
+            "Correlacione resultados com tratamento prévio e estágio clínico",
+            "Acompanhe títulos não treponêmicos quando indicado"
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Sífilis: evolução clínica</strong>"
+        ],
+        [
+          "o",
+          [
+            "Primária: cancro duro, por vezes não percebido",
+            "Secundária: exantema, lesões mucosas e manifestações sistêmicas",
+            "Latente: ausência de sinais e sintomas, com sorologia reativa",
+            "Terciária: possíveis lesões gomosas, cardiovasculares ou neurológicas"
+          ]
+        ],
+        [
+          "p",
+          "A sífilis é causada por <i>Treponema pallidum</i>. A fase primária costuma apresentar cancro duro, classicamente úlcera indolor, de base limpa e endurecida, acompanhada ou não de linfadenopatia regional. A fase secundária representa disseminação sistêmica e pode cursar com exantema, inclusive palmo-plantar, placas mucosas, condiloma plano, alopecia e sintomas constitucionais. A fase latente é sorológica, sem manifestações clínicas; a terciária pode acometer sistema cardiovascular e formar gomas. Comprometimento neurológico, ocular ou otológico pode ocorrer em diferentes estágios e deve ser tratado como entidade específica."
+        ],
+        [
+          "3",
+          "Tratamento segundo o PCDT brasileiro"
+        ],
+        [
+          "t",
+          [
+            "Estágio",
+            "Esquema de referência",
+            "Observação"
+          ],
+          [
+            [
+              "Sífilis recente: primária, secundária ou latente recente",
+              "Penicilina G benzatina 2,4 milhões UI IM, dose única",
+              "1,2 milhão UI em cada glúteo"
+            ],
+            [
+              "Latente tardia, duração ignorada ou terciária sem neurossífilis",
+              "Penicilina G benzatina 2,4 milhões UI IM semanal por 3 semanas",
+              "Total 7,2 milhões UI"
+            ],
+            [
+              "Neurossífilis/ocular conforme avaliação",
+              "Penicilina G cristalina 18–24 milhões UI/dia IV, por 14 dias",
+              "exige avaliação especializada; não usar benzatina como substituta"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Gestação"
+        ],
+        [
+          "p",
+          "Na gestante, o tratamento deve ser imediato quando indicado. A penicilina é o único antimicrobiano com eficácia comprovada para tratamento fetal e prevenção de sífilis congênita. Em alergia verdadeira, a estratégia é dessensibilizar e tratar com penicilina, e não escolher uma alternativa inferior por conveniência."
+        ],
+        [
+          "p",
+          "A reação de Jarisch–Herxheimer pode produzir febre, cefaleia e piora transitória das lesões nas primeiras horas após a terapia. Não é alergia à penicilina. Em gestantes pode associar-se a contrações e alterações transitórias da vitalidade fetal, motivo pelo qual a orientação de retorno deve ser explícita."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: lesão que some não significa cura.</strong>"
+        ],
+        [
+          "p",
+          "O cancro primário pode cicatrizar espontaneamente mesmo sem tratamento. A bactéria permanece e a doença progride. “A ferida melhorou” é justamente uma armadilha clássica da sífilis."
+        ],
+        [
+          "3",
+          "Neurossífilis, sífilis ocular e otossífilis"
+        ],
+        [
+          "p",
+          "Comprometimento neurológico pode ocorrer em qualquer estágio. Déficit focal, meningismo, alteração cognitiva, paresia de nervos cranianos e sintomas oculares ou auditivos exigem avaliação dirigida. Benzilpenicilina benzatina não atinge concentrações liquóricas adequadas e não substitui penicilina cristalina quando há acometimento do sistema nervoso central."
+        ],
+        [
+          "3",
+          "Seguimento sorológico e intervalo entre doses"
+        ],
+        [
+          "p",
+          "Use o mesmo teste não treponêmico quando possível. Redução de duas diluições — por exemplo, 1:32 para 1:8 — representa queda de quatro vezes. Na sífilis tardia, o intervalo ideal entre doses é de sete dias. Em não gestantes, intervalo acima de 14 dias exige reinício. Na gestação, a recomendação brasileira atual aceita intervalo de até 9 dias entre doses; se ultrapassar 9 dias, o esquema deve ser reiniciado."
+        ],
+        [
+          "3",
+          "Tratamento imediato com apenas um teste reagente"
+        ],
+        [
+          "p",
+          "Em situações de maior risco de perda de seguimento ou de transmissão vertical, especialmente <strong>gestação, violência sexual, sintomas clássicos de sífilis e risco concreto de não retorno</strong>, o Ministério da Saúde recomenda não esperar toda a investigação laboratorial para iniciar tratamento. Colha o teste complementar quando possível, mas não transforme a confirmação em barreira para tratar."
+        ],
+        [
+          "3",
+          "Alternativas em não gestantes"
+        ],
+        [
+          "p",
+          "Quando penicilina realmente não puder ser utilizada, o PCDT admite alternativas em não gestantes: para sífilis recente, doxiciclina 100 mg VO a cada 12 horas por 15 dias; para sífilis tardia ou de duração ignorada, doxiciclina 100 mg VO a cada 12 horas por 30 dias. Essas alternativas exigem adesão e seguimento mais cuidadosos e <strong>não substituem penicilina na gestação</strong>."
+        ],
+        [
+          "3",
+          "Quando puncionar líquor?"
+        ],
+        [
+          "p",
+          "Não se indica punção lombar rotineira apenas porque o VDRL é alto ou porque a pessoa vive com HIV. A investigação liquórica deve ser orientada por sinais/sintomas neurológicos, oculares ou otológicos e por situações clínicas específicas de falha terapêutica, sempre integrando exame neurológico e avaliação especializada."
+        ],
+        [
+          "3",
+          "Seguimento"
+        ],
+        [
+          "p",
+          "O teste não treponêmico deve ser repetido de forma seriada, comparando títulos preferencialmente pelo mesmo método. Em gestantes, o seguimento é mensal. Fora da gestação, o acompanhamento deve seguir o protocolo conforme estágio e condição clínica, procurando queda esperada do título e, principalmente, elevação sustentada em duas diluições, que sugere reinfecção ou falha terapêutica."
+        ]
+      ]
+    ],
+    [
+      "gonococo-clamidia",
+      0,
+      [
+        [
+          "2",
+          "7. Gonorreia e clamídia: uretra, colo, reto e faringe"
+        ],
+        [
+          "p",
+          "<h2>7. Gonorreia e clamídia: uretra, colo, reto e faringe</h2>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Gonorreia e clamídia</strong>"
+        ],
+        [
+          "o",
+          [
+            "Considere cervicite ou uretrite, inclusive na ausência de sintomas",
+            "Utilize testes moleculares quando disponíveis, no sítio exposto",
+            "Trate segundo o protocolo vigente e avalie as parcerias",
+            "Investigue DIP, epididimite e outras complicações quando suspeitas"
+          ]
+        ],
+        [
+          "p",
+          "<i>Neisseria gonorrhoeae</i> e <i>Chlamydia trachomatis</i> infectam epitélios de uretra, colo uterino, reto e orofaringe. Gonococo costuma provocar resposta neutrofílica mais exuberante, mas ambas podem ser assintomáticas. Em pessoas com trato genital superior, infecção cervical pode ascender e gerar endometrite, salpingite e DIP."
+        ],
+        [
+          "t",
+          [
+            "Sítio",
+            "Possíveis achados",
+            "Armadilha"
+          ],
+          [
+            [
+              "Uretral",
+              "disúria, secreção purulenta ou mucosa",
+              "clamídia pode causar apenas disúria discreta"
+            ],
+            [
+              "Cervical",
+              "mucopus, friabilidade, sangramento pós-coital",
+              "pode ser totalmente assintomática"
+            ],
+            [
+              "Retal",
+              "dor, secreção, sangramento, tenesmo ou nenhum sintoma",
+              "urina negativa não exclui proctite"
+            ],
+            [
+              "Faríngeo",
+              "frequentemente assintomático",
+              "reservatório importante e de erradicação mais difícil"
+            ],
+            [
+              "Disseminado",
+              "febre, poliartralgia, tenossinovite, pústulas, artrite séptica",
+              "lesão genital pode não estar presente"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Tratamento vigente no Brasil"
+        ],
+        [
+          "t",
+          [
+            "Condição",
+            "Esquema do PCDT",
+            "Comentário"
+          ],
+          [
+            [
+              "Gonorreia não complicada: uretra, colo, reto ou faringe",
+              "Ceftriaxona 500 mg IM, dose única + azitromicina 1 g VO, dose única",
+              "o PCDT nacional vigente ainda utiliza terapia combinada"
+            ],
+            [
+              "Clamídia",
+              "Azitromicina 1 g VO, dose única OU doxiciclina 100 mg VO 12/12 h por 7 dias",
+              "doxiciclina não é opção na gestação no PCDT"
+            ],
+            [
+              "Infecção gonocócica disseminada, exceto meningite/endocardite",
+              "Ceftriaxona 1 g IM ou IV ao dia por pelo menos 7 dias + azitromicina 1 g VO, dose única",
+              "avaliar internação e acometimento sistêmico"
+            ],
+            [
+              "Conjuntivite gonocócica no adulto",
+              "Ceftriaxona 1 g IM, dose única",
+              "avaliar urgência oftalmológica"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Resistência e falha terapêutica"
+        ],
+        [
+          "p",
+          "Diante de persistência sem nova exposição após tratamento corretamente administrado, obtenha cultura e teste de sensibilidade quando disponíveis e acione referência/vigilância conforme fluxo local. Antes disso, exclua reinfecção, baixa adesão, parceria não tratada e sítio anatômico não reconhecido."
+        ],
+        [
+          "3",
+          "Complicações"
+        ],
+        [
+          "p",
+          "Clamídia e gonorreia podem causar DIP, infertilidade tubária, gestação ectópica e dor pélvica crônica. Em pessoas com testículos, podem causar epididimite. Gonococo ainda pode disseminar hematogenicamente, produzindo síndrome artrite-dermatite ou artrite séptica."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: a faringe importa para o gonococo.</strong>"
+        ],
+        [
+          "p",
+          "Infecção faríngea é muitas vezes silenciosa e pode persistir como reservatório. Quando houve exposição oral, não confie em urina isolada."
+        ],
+        [
+          "3",
+          "Uretrite persistente ou recorrente"
+        ],
+        [
+          "p",
+          "Persistência de secreção/disúria após esquema adequado exige nova história sexual e confirmação objetiva de uretrite. Reinfecção é frequente. Entre causas alternativas estão <i>Mycoplasma genitalium</i>, <i>Trichomonas vaginalis</i>, prostatite, irritação química e diagnósticos não infecciosos. O PCDT brasileiro traz azitromicina 1 g VO em dose única como opção para uretrite por <i>M. genitalium</i>, mas a resistência macrolídica crescente torna importante seguir atualização local e, quando disponível, diagnóstico molecular e teste de resistência."
+        ],
+        [
+          "3",
+          "Epididimite e dor escrotal"
+        ],
+        [
+          "p",
+          "Gonococo e clamídia podem causar epididimite, tipicamente com dor e edema de evolução mais gradual, sensibilidade epididimária e sinais de uretrite. <strong>Torção testicular é o diagnóstico que precisa ser excluído primeiro</strong> quando a dor é súbita/intensa, há testículo elevado ou o quadro é duvidoso; atraso pode levar à perda testicular."
+        ],
+        [
+          "3",
+          "Proctite"
+        ],
+        [
+          "p",
+          "Dor anorretal, tenesmo, secreção ou sangramento após exposição anal receptiva exigem exame anorretal e coleta no reto. Gonococo, clamídia — inclusive LGV —, HSV e sífilis entram entre os principais agentes. Proctocolite intensa ou sintomas sistêmicos ampliam o diferencial e podem exigir investigação endoscópica."
+        ]
+      ]
+    ],
+    [
+      "tricomoniase",
+      0,
+      [
+        [
+          "2",
+          "8. Tricomoníase"
+        ],
+        [
+          "p",
+          "<h2>8. Tricomoníase</h2>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Tricomoníase: pontos clínicos</strong>"
+        ],
+        [
+          "o",
+          [
+            "O corrimento pode variar em volume, cor e aspecto",
+            "O pH vaginal frequentemente está elevado",
+            "Colo em framboesa pode ocorrer, mas não é obrigatório",
+            "Manejo das parcerias sexuais é parte do tratamento"
+          ]
+        ],
+        [
+          "p",
+          "<i>Trichomonas vaginalis</i> é um protozoário transmitido sexualmente. Pode causar corrimento amarelo-esverdeado, odor, irritação, disúria, dispareunia e colo em “framboesa”, mas a apresentação é variável e há infecções assintomáticas. pH vaginal elevado favorece tricomoníase ou vaginose em vez de candidíase."
+        ],
+        [
+          "t",
+          [
+            "Condição",
+            "Esquema do PCDT",
+            "Parcerias"
+          ],
+          [
+            [
+              "Tricomoníase",
+              "Metronidazol 2 g VO, dose única OU metronidazol 500 mg VO 12/12 h por 7 dias",
+              "Devem ser tratadas, mesmo assintomáticas."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Suspender atividade sexual até tratamento adequado da pessoa e das parcerias. Diante de recorrência, diferencie reinfecção de persistência e reveja adesão antes de aumentar complexidade terapêutica."
+        ],
+        [
+          "3",
+          "Diagnóstico"
+        ],
+        [
+          "p",
+          "NAAT é mais sensível quando disponível. A microscopia a fresco tem especificidade útil quando demonstra o protozoário móvel, mas sensibilidade limitada e cai rapidamente com atraso na leitura da amostra."
+        ],
+        [
+          "3",
+          "Gestação e recorrência"
+        ],
+        [
+          "p",
+          "Tricomoníase sintomática deve ser tratada também na gestação conforme protocolo. Em recorrência, diferencie reinfecção de falha, confirme se as parcerias foram tratadas e se houve nova exposição antes de atribuir resistência."
+        ]
+      ]
+    ],
+    [
+      "herpes",
+      0,
+      [
+        [
+          "2",
+          "9. Herpes genital"
+        ],
+        [
+          "p",
+          "<h2>9. Herpes genital</h2><div class=\"ist-image-group\" aria-label=\"Imagens clínicas aprovadas\"><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-15.webp\" alt=\"Herpes genital feminino\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Herpes genital feminino</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=15820\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-16.webp\" alt=\"Herpes genital: lesões vulvares\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Herpes genital: lesões vulvares</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=30265\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure></div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Herpes genital</strong>"
+        ],
+        [
+          "o",
+          [
+            "Vesículas, fissuras ou úlceras dolorosas podem ocorrer",
+            "PCR de lesão é útil quando indicado e disponível",
+            "Antivirais reduzem intensidade e duração do episódio",
+            "O vírus persiste em latência e pode causar recorrências"
+          ]
+        ],
+        [
+          "p",
+          "HSV-1 e HSV-2 podem causar doença genital. O primeiro episódio costuma ser mais exuberante: vesículas agrupadas que evoluem para erosões ou úlceras dolorosas, ardor, disúria, adenopatia e, por vezes, febre e mal-estar. Recorrências tendem a ser mais curtas. Eliminação viral assintomática explica transmissão sem lesão visível."
+        ],
+        [
+          "t",
+          [
+            "Cenário",
+            "Esquema PCDT",
+            "Meta"
+          ],
+          [
+            [
+              "Primeiro episódio",
+              "Aciclovir 400 mg VO 8/8 h por 7–10 dias",
+              "iniciar precocemente; prolongar se cicatrização incompleta"
+            ],
+            [
+              "Recidiva",
+              "Aciclovir 400 mg VO 8/8 h por 5 dias OU 800 mg VO 12/12 h por 5 dias",
+              "idealmente iniciar no pródromo"
+            ],
+            [
+              "Supressão em recorrências frequentes",
+              "Aciclovir 400 mg VO 12/12 h, reavaliando periodicamente",
+              "reduzir recorrência e impacto clínico"
+            ],
+            [
+              "Gestação com indicação supressiva",
+              "Aciclovir 400 mg VO 8/8 h a partir de 36 semanas em cenários definidos",
+              "reduzir recorrência periparto"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Antiviral não erradica latência neural. O diagnóstico clínico pode ser apoiado por PCR/NAAT de lesão quando disponível, especialmente em apresentação atípica. Sorologia tipo-específica tem indicações selecionadas e não substitui coleta da lesão quando esta está presente."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: herpes nem sempre começa com “bolhinhas perfeitas”.</strong>"
+        ],
+        [
+          "p",
+          "Quando o paciente chega, as vesículas podem já ter rompido. Úlcera dolorosa agrupada, fissuras ou erosões recorrentes podem ser a única pista."
+        ],
+        [
+          "3",
+          "Doença grave e imunossupressão"
+        ],
+        [
+          "p",
+          "Em lesões extensas, doença visceral, retenção urinária importante, comprometimento neurológico ou imunossupressão relevante, pode ser necessário tratamento intravenoso e internação. O PCDT utiliza aciclovir IV 5–10 mg/kg a cada 8 horas em imunossuprimidos com doença extensa, ajustando para função renal."
+        ],
+        [
+          "3",
+          "Herpes e parto"
+        ],
+        [
+          "p",
+          "O maior risco neonatal ocorre quando a aquisição materna acontece próxima ao parto, porque há pouca transferência de anticorpos e maior chance de eliminação viral. Lesões genitais ativas ou pródromos no trabalho de parto exigem avaliação obstétrica para via de parto. A ausência de lesões em gestante com história antiga de herpes não é, por si só, indicação automática de cesariana."
+        ],
+        [
+          "3",
+          "Aconselhamento"
+        ],
+        [
+          "p",
+          "Antiviral reduz sintomas e recorrências, mas não erradica o HSV. Preservativos reduzem, porém não eliminam totalmente, o risco porque áreas não cobertas podem eliminar vírus. Evitar relação durante pródromo/lesões ativas reduz transmissão."
+        ]
+      ]
+    ],
+    [
+      "outras-ulceras",
+      0,
+      [
+        [
+          "2",
+          "10. Outras úlceras: cancroide, LGV e donovanose"
+        ],
+        [
+          "p",
+          "<h2>10. Outras úlceras: cancroide, LGV e donovanose</h2><div class=\"ist-image-group\" aria-label=\"Imagens clínicas aprovadas\"><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-19.webp\" alt=\"Cancro mole\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Cancro mole</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=32192\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-20.webp\" alt=\"Cancro mole com bubão inguinal\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Cancro mole com bubão inguinal</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=3691\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure></div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Úlcera genital: diferenciais</strong>"
+        ],
+        [
+          "o",
+          [
+            "Sífilis: úlcera classicamente indolor, mas apresentação variável",
+            "Herpes: vesículas ou úlceras dolorosas, frequentemente agrupadas",
+            "Cancro mole: úlceras habitualmente dolorosas e irregulares",
+            "LGV: lesão inicial discreta, adenopatia e possível proctite"
+          ]
+        ],
+        [
+          "p",
+          "Embora menos frequentes que sífilis e herpes em muitos cenários brasileiros, essas infecções entram no diferencial de úlcera, adenopatia e doença anorretal. Morfologia ajuda, mas não deve ser usada como teste perfeito."
+        ],
+        [
+          "t",
+          [
+            "Infecção",
+            "Padrão clínico clássico",
+            "Tratamento de referência"
+          ],
+          [
+            [
+              "Cancroide — <i>Haemophilus ducreyi</i>",
+              "úlcera dolorosa, bordas irregulares, fundo purulento; bubão inguinal doloroso",
+              "azitromicina 1 g VO, dose única, ou alternativa protocolada"
+            ],
+            [
+              "LGV — <i>C. trachomatis</i> L1-L3",
+              "lesão inicial pequena/transitória, depois adenopatia; pode causar proctocolite",
+              "doxiciclina 100 mg VO 12/12 h por 21 dias, salvo contraindicações"
+            ],
+            [
+              "Donovanose — <i>Klebsiella granulomatis</i>",
+              "úlcera granulomatosa crônica, vermelho-viva, friável e geralmente pouco dolorosa",
+              "azitromicina em curso prolongado até cicatrização completa, conforme PCDT"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Quando pensar em LGV anorretal"
+        ],
+        [
+          "p",
+          "Proctite/proctocolite intensa com dor, tenesmo, secreção, sangramento, constipação ou sintomas sistêmicos após exposição anal deve levantar hipótese de LGV. Nesse cenário, “clamídia positiva” não basta: o fenótipo clínico muda a duração do tratamento."
+        ],
+        [
+          "3",
+          "Diferencial morfológico de prova — use como pista, não como regra absoluta"
+        ],
+        [
+          "t",
+          [
+            "Doença",
+            "Dor",
+            "Aspecto clássico",
+            "Adenopatia"
+          ],
+          [
+            [
+              "Sífilis primária",
+              "geralmente indolor",
+              "úlcera única, base limpa, endurecida",
+              "pode haver, geralmente não supurativa"
+            ],
+            [
+              "Herpes",
+              "doloroso",
+              "vesículas/erosões agrupadas, múltiplas",
+              "pode haver"
+            ],
+            [
+              "Cancroide",
+              "doloroso",
+              "úlcera irregular, fundo sujo/purulento",
+              "bubão doloroso, pode supurar"
+            ],
+            [
+              "LGV",
+              "lesão inicial discreta",
+              "pequena pápula/úlcera transitória",
+              "adenopatia importante ou proctocolite"
+            ],
+            [
+              "Donovanose",
+              "geralmente pouco dolorosa",
+              "lesão granulomatosa vermelho-viva e friável",
+              "adenopatia verdadeira é incomum"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "Neoplasia, doença de Behçet, doença de Crohn, trauma e reações medicamentosas também podem ulcerar a região genital. Úlcera persistente, infiltrada, pigmentada ou sem diagnóstico deve ser biopsiada."
+        ]
+      ]
+    ],
+    [
+      "ulceras-genitais-decisoes-2026",
+      0,
+      [
+        [
+          "2",
+          "10A. Úlceras genitais: seis decisões clínicas comentadas"
+        ],
+        [
+          "p",
+          "<h2>10A. Úlceras genitais: seis decisões clínicas comentadas</h2>"
+        ],
+        [
+          "p",
+          "O exame físico é essencial, mas <strong>a morfologia da úlcera não é teste etiológico</strong>. Herpes pode chegar ao atendimento sem vesículas intactas, sífilis primária pode ser dolorosa ou múltipla, e duas infecções podem coexistir na mesma pessoa. Além das IST, trauma, farmacodermia, aftose, doença de Behçet, Crohn e neoplasia podem causar ulceração. É necessário integrar cronologia, sítio anatômico, exame clínico, exposição sexual, gestação/imunossupressão, testes disponíveis e risco de perda de seguimento."
+        ],
+        [
+          "3",
+          "Roteiro inicial em qualquer úlcera suspeita"
+        ],
+        [
+          "o",
+          [
+            "<strong>Caracterize a lesão:</strong> surgimento, número, local, dor, induração, secreção, recorrência e adenopatia. Inspecione outros sítios genitais e extragenitais, respeitando privacidade e consentimento.",
+            "<strong>Investigue risco:</strong> gestação, imunossupressão, exposição recente, parceiros, prática oral/anal, histórico de sífilis/herpes e tratamentos prévios. Não presuma etiologia só pelo aspecto.",
+            "<strong>Teste sífilis:</strong> teste treponêmico ou rápido e título não treponêmico, conforme algoritmo local; testes negativos muito precoces podem requerer repetição. Quando disponível, pesquisa direta de lesão pode ajudar.",
+            "<strong>Teste HSV:</strong> NAAT/PCR de material da lesão, quando disponível, preferindo lesão recente; cultura pode ter menor sensibilidade com cicatrização. A sorologia isolada não confirma que a úlcera atual seja herpética.",
+            "<strong>Ofereça testagem de HIV e outras IST:</strong> avaliar hepatites e coleta extragenital conforme práticas/exposições e janela diagnóstica; ofertar aconselhamento, prevenção combinada e cuidado das parcerias.",
+            "<strong>Defina urgência e plano:</strong> tratar presumivelmente sífilis infecciosa ou primeiro episódio herpético quando a suspeita justificar, sem atraso indevido; registrar amostras, retorno, notificação quando aplicável e sinais de alarme."
+          ]
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Como ler as oito fotografias clínicas desta apostila</strong>"
+        ],
+        [
+          "p",
+          "As imagens reais de cancro, herpes e condiloma mostram <em>formas possíveis</em> de apresentação, não critérios patognomônicos. Um cancro sem dor não exclui herpes; vesículas ausentes não excluem HSV; lesão vegetante pode ser condiloma por HPV, condiloma plano sifilítico ou outra doença. Compare a fotografia com o exame físico e confirme a etiologia conforme o risco."
+        ],
+        [
+          "3",
+          "Caso 1 — úlcera única, aparentemente típica de sífilis, teste rápido negativo"
+        ],
+        [
+          "p",
+          "Paciente de 24 anos relata ferida genital há cinco dias, de bordas regulares, pouco dolorosa e com linfonodo inguinal. Teste treponêmico rápido inicial é não reagente, e o VDRL também. <strong>Interpretação:</strong> resultado negativo na janela precoce não exclui sífilis primária; documente a cronologia, considere coleta direta de lesão quando disponível e repita a sorologia no intervalo orientado pelo protocolo. Avalie HSV, HIV e outras IST. Conforme a suspeita e possibilidade de seguimento, está indicado considerar tratamento presuntivo precoce de sífilis infecciosa em vez de aguardar soroconversão. Uma resposta negativa isolada não autoriza alta definitiva."
+        ],
+        [
+          "3",
+          "Caso 2 — várias erosões dolorosas após uma semana, sem vesículas"
+        ],
+        [
+          "p",
+          "Paciente chega com disúria, ardor e pequenas erosões vulvares; refere vesículas agrupadas dois dias antes. <strong>Interpretação:</strong> herpes permanece provável mesmo depois de as vesículas romperem. Se disponível, colete material da lesão para NAAT/PCR do HSV e considere iniciar antiviral sistêmico precocemente, sobretudo no primeiro episódio; não espere resultado se a indicação clínica já está presente. Investigue sífilis em paralelo, pois coinfecção e apresentações atípicas existem. Dificuldade importante para urinar, quadro disseminado, meningismo ou imunossupressão exigem avaliação urgente."
+        ],
+        [
+          "3",
+          "Caso 3 — úlceras dolorosas e bubão supurativo"
+        ],
+        [
+          "p",
+          "Paciente apresenta duas úlceras de bordas irregulares, base exsudativa e adenopatia inguinal unilateral muito dolorosa, flutuante. <strong>Interpretação:</strong> cancroide é hipótese, mas sua frequência é menor em muitos cenários, e aspecto de bubão não prova infecção por <em>Haemophilus ducreyi</em>. Testar sífilis e HSV é prioritário; avaliar LGV conforme exposição e disponibilidade diagnóstica. Considerar terapia específica para cancroide conforme PCDT e epidemiologia, sem prescrever múltiplos esquemas automaticamente. O manejo de bubão pode requerer aspiração em contexto selecionado; incisões inadequadas podem aumentar morbidade."
+        ],
+        [
+          "3",
+          "Caso 4 — proctite grave depois de sexo anal receptivo"
+        ],
+        [
+          "p",
+          "Paciente de 30 anos apresenta tenesmo, dor retal, secreção, sangramento e teste molecular retal positivo para <em>Chlamydia trachomatis</em>. <strong>Interpretação:</strong> a possibilidade de linfogranuloma venéreo (LGV, sorotipos L1–L3) muda o raciocínio: em proctocolite compatível, o manejo pode exigir doxiciclina por 21 dias, conforme protocolo e contraindicações, e não simplesmente o esquema de sete dias usado para outras infecções clamidianas. Avalie gonorreia retal, sífilis, HIV, doença inflamatória intestinal e outras causas, além do cuidado das parcerias. A forma anorretal pode ocorrer sem úlcera genital visível."
+        ],
+        [
+          "3",
+          "Caso 5 — úlcera crônica indolor e friável que não melhora"
+        ],
+        [
+          "p",
+          "Paciente de 58 anos refere lesão vulvar há oito semanas; após antibiótico empírico, a úlcera continua crescendo e sangra ao toque. <strong>Interpretação:</strong> não se deve repetir antimicrobianos indefinidamente. Donovanose é diferencial em cenários epidemiológicos específicos, mas carcinoma vulvar, outras neoplasias e dermatoses inflamatórias precisam ser investigados. Indicar avaliação especializada e biópsia de lesão persistente ou infiltrada, com histopatologia e exames infecciosos conforme o caso. Uma fotografia de donovanose ou cancroide não tem capacidade de excluir malignidade."
+        ],
+        [
+          "3",
+          "Caso 6 — pessoa gestante com provável sífilis e história de alergia"
+        ],
+        [
+          "p",
+          "Gestante relata cancro genital prévio e apresenta teste treponêmico reagente com teste não treponêmico positivo; não há documentação de tratamento. Refere “alergia à penicilina” na infância, sem descrição de gravidade. <strong>Interpretação:</strong> é necessário avaliar o estágio e o histórico, investigar a natureza da reação e iniciar manejo imediato segundo PCDT. Para prevenção e tratamento da sífilis fetal, a penicilina é o tratamento eficaz recomendado; nos casos de alergia verdadeira, avaliar dessensibilização em ambiente apropriado. Não substituir arbitrariamente por doxiciclina na gestação. Oferecer avaliação fetal, testagem de outras IST e seguimento sorológico mensal. Gestantes e parcerias precisam de abordagem coordenada para evitar reinfecção."
+        ],
+        [
+          "3",
+          "Quando a lesão não cabe na tabela clássica"
+        ],
+        [
+          "t",
+          [
+            "Achado que muda a estratégia",
+            "Próxima decisão"
+          ],
+          [
+            [
+              "Úlcera persistente, infiltrada, pigmentada ou que sangra",
+              "Investigar câncer e outras dermatoses; indicar biópsia conforme avaliação."
+            ],
+            [
+              "Exposição recente e sorologia negativa",
+              "Avaliar janela diagnóstica e necessidade de repetição/tratamento presuntivo."
+            ],
+            [
+              "Lesão recorrente ou erosões dolorosas sem vesículas",
+              "Considerar HSV; colher NAAT de lesão quando possível."
+            ],
+            [
+              "Proctite ou adenopatia inguinal importante",
+              "Incluir LGV e realizar testagem por sítio anatômico exposto."
+            ],
+            [
+              "Gestação ou imunodepressão",
+              "Aumentar urgência da avaliação e adaptar testes/tratamento."
+            ],
+            [
+              "Diagnóstico inicial não responde ao tratamento",
+              "Rever hipótese, adesão, reinfecção, coinfecção, qualidade da coleta e neoplasia."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Autoteste:</strong> por que uma úlcera indolor não confirma sífilis? Por que um VDRL negativo na primeira semana não encerra a investigação? Qual quadro indica NAAT retal e possível tratamento prolongado? Em que situação é essencial considerar biópsia? Ao responder, cite a evidência clínica e o teste que falta, em vez de apenas decorar um nome."
+        ],
+        [
+          "p",
+          "<small>Referências de suporte: <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (anexo alterado em 2024, página atualizada em 2025)</a>; <a href=\"https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm\" target=\"_blank\" rel=\"noopener noreferrer\">CDC, úlceras genitais: abordagem diagnóstica</a>; <a href=\"https://www.cdc.gov/std/treatment-guidelines/herpes.htm\" target=\"_blank\" rel=\"noopener noreferrer\">CDC, herpes genital</a>. As fontes dos exames clínicos e das oito imagens existentes são apresentadas nas legendas específicas da apostila.</small>"
+        ]
+      ]
+    ],
+    [
+      "hpv",
+      0,
+      [
+        [
+          "2",
+          "11. HPV e verrugas anogenitais"
+        ],
+        [
+          "p",
+          "<h2>11. HPV e verrugas anogenitais</h2><div class=\"ist-image-group\" aria-label=\"Imagens clínicas aprovadas\"><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-17.webp\" alt=\"Condiloma acuminado\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Condiloma acuminado</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=4151\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure><figure class=\"ist-image\"><img loading=\"lazy\" decoding=\"async\" src=\"https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-18.webp\" alt=\"Condiloma perianal\" data-apostila-image-fallback=\"ist-figure\"><figcaption><strong>Condiloma perianal</strong> · <a href=\"https://wwwn.cdc.gov/phil/Details.aspx?pid=16733\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte clínica</a></figcaption>"
+        ],
+        [
+          "p",
+          "Imagem temporariamente indisponível; consulte a fonte clínica."
+        ],
+        [
+          "p",
+          "</figure></div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>HPV e condiloma</strong>"
+        ],
+        [
+          "o",
+          [
+            "Tipos de baixo risco são frequentemente associados a verrugas",
+            "Tipos oncogênicos exigem prevenção e rastreamento conforme diretriz",
+            "A vacinação é medida de prevenção primária",
+            "Tratamento de verrugas remove lesões visíveis, não garante eliminação viral"
+          ]
+        ],
+        [
+          "p",
+          "HPV é extremamente prevalente. Tipos de baixo risco, especialmente 6 e 11, estão associados à maioria das verrugas anogenitais, enquanto tipos oncogênicos sustentam a carcinogênese cervical e de outros sítios. A presença de verruga não indica necessariamente infecção recente nem permite inferir fidelidade ou momento de aquisição."
+        ],
+        [
+          "3",
+          "Diagnóstico e quando biopsiar"
+        ],
+        [
+          "p",
+          "Verrugas típicas são diagnosticadas visualmente. Biópsia deve ser considerada quando a lesão é pigmentada, endurecida, ulcerada, fixa, sangrante, atípica, quando o diagnóstico é incerto, em imunossupressão ou quando não responde ao tratamento esperado. Teste para HPV não é indicado para diagnosticar verruga genital."
+        ],
+        [
+          "3",
+          "Tratamento das verrugas"
+        ],
+        [
+          "p",
+          "O objetivo é remover lesões sintomáticas ou incômodas e melhorar qualidade de vida. Opções incluem agentes tópicos e métodos ambulatoriais como ácido tricloroacético, crioterapia, eletrocauterização ou excisão, conforme anatomia, volume, gestação e disponibilidade. Recorrência é possível porque tratar a verruga não garante eliminação do HPV."
+        ],
+        [
+          "3",
+          "Vacinação em 2026"
+        ],
+        [
+          "p",
+          "No SUS, a rotina para 9–14 anos utiliza <strong>dose única</strong>. Pessoas imunodeprimidas seguem esquemas de três doses (0, 2 e 6 meses) e há recomendações específicas para violência sexual, papilomatose respiratória recorrente e pessoas em PrEP de 15 a 45 anos. Em 2026, o Ministério da Saúde mantém estratégia de resgate para adolescentes e jovens de 15–19 anos não vacinados até 31 de dezembro."
+        ],
+        [
+          "3",
+          "Opções terapêuticas — escolha pela lesão e pelo paciente"
+        ],
+        [
+          "t",
+          [
+            "Opção",
+            "Uso",
+            "Pontos-chave"
+          ],
+          [
+            [
+              "Imiquimode 5%",
+              "autoaplicação em lesões externas selecionadas",
+              "estimula resposta imune; pode causar eritema/irritação; não usar na gestação segundo orientação do MS"
+            ],
+            [
+              "Ácido tricloroacético 60–80%",
+              "aplicado por profissional",
+              "destruição química; útil em lesões pequenas e úmidas; proteger pele adjacente"
+            ],
+            [
+              "Podofilina 10–25%",
+              "aplicada por profissional",
+              "potencial toxicidade; não usar na gestação"
+            ],
+            [
+              "Crioterapia",
+              "ambulatorial",
+              "boa opção para múltiplas localizações; pode causar dor/bolha"
+            ],
+            [
+              "Eletrocautério/exérese",
+              "ambulatorial/cirúrgico",
+              "útil para lesões volumosas, queratinizadas ou refratárias"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "O que não fazer"
+        ],
+        [
+          "p",
+          "Não use teste de HPV para “confirmar” verruga típica. Não trate infecção subclínica apenas porque um teste molecular de HPV veio positivo. O rastreamento de câncer do colo segue protocolo próprio e é diferente do manejo de condiloma."
+        ],
+        [
+          "3",
+          "Imunossupressão"
+        ],
+        [
+          "p",
+          "Pessoas vivendo com HIV, transplantadas ou em imunossupressores podem ter lesões maiores, mais recidivantes e maior risco de neoplasia intraepitelial. O tratamento das verrugas pode usar as mesmas modalidades, porém o limiar para biópsia e seguimento deve ser menor."
+        ]
+      ]
+    ],
+    [
+      "hiv-hepatites",
+      0,
+      [
+        [
+          "2",
+          "12. HIV e hepatites virais no contexto das IST"
+        ],
+        [
+          "p",
+          "<h2>12. HIV e hepatites virais no contexto das IST</h2>"
+        ],
+        [
+          "3",
+          "HIV agudo"
+        ],
+        [
+          "p",
+          "Infecção aguda pelo HIV pode cursar com febre, faringite, exantema, linfadenopatia, mialgia, diarreia ou síndrome mononucleose-símile; também pode ser assintomática. Um teste de anticorpos negativo muito cedo não encerra a investigação: o método e o tempo desde a exposição determinam a janela diagnóstica."
+        ],
+        [
+          "3",
+          "PEP para HIV"
+        ],
+        [
+          "p",
+          "PEP é urgência. Deve ser iniciada o mais cedo possível e até 72 horas após exposição elegível, por 28 dias. O esquema preferencial do PCDT é <strong>tenofovir/lamivudina 300/300 mg uma vez ao dia + dolutegravir 50 mg uma vez ao dia</strong>, com ajustes e interações em situações específicas. Exames complementares não devem atrasar a primeira dose quando a indicação está estabelecida."
+        ],
+        [
+          "3",
+          "Hepatite B"
+        ],
+        [
+          "p",
+          "HBV é prevenível por vacina. Após exposição, a conduta depende do estado vacinal e sorológico da pessoa exposta e da fonte. Pessoas suscetíveis devem ser vacinadas; imunoglobulina anti-hepatite B entra em situações definidas. Interprete HBsAg, anti-HBc e anti-HBs em conjunto."
+        ],
+        [
+          "3",
+          "Hepatite C"
+        ],
+        [
+          "p",
+          "Não existe vacina nem PEP medicamentosa comprovada para HCV. Após exposição relevante, faça testagem e seguimento. Anti-HCV documenta contato; HCV-RNA confirma infecção ativa. Hepatite C possui tratamento antiviral com alta taxa de cura."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: PEP é para começar, não para terminar a investigação.</strong>"
+        ],
+        [
+          "p",
+          "Se a exposição ao HIV é elegível e ocorreu dentro da janela, a coleta de exames deve caminhar em paralelo. Não espere todos os resultados para iniciar antirretrovirais."
+        ],
+        [
+          "3",
+          "Seguimento laboratorial após PEP"
+        ],
+        [
+          "t",
+          [
+            "Momento",
+            "Avaliação típica no PCDT PEP 2024"
+          ],
+          [
+            [
+              "D0",
+              "HIV, sífilis, HBsAg, anti-HCV, creatinina, transaminases e β-hCG quando aplicável"
+            ],
+            [
+              "Semana 4",
+              "HIV, sífilis, HBsAg, anti-HCV, função renal/hepática; discutir PrEP"
+            ],
+            [
+              "Semana 12",
+              "HIV e sífilis"
+            ],
+            [
+              "4–6 meses",
+              "anti-HCV quando indicado para fechamento do seguimento"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "No D0, o resultado de HIV não reagente é o exame essencial para iniciar PEP; os demais exames devem ser coletados sem atrasar a primeira dose."
+        ],
+        [
+          "3",
+          "Hepatite B pós-exposição"
+        ],
+        [
+          "p",
+          "Quem é comprovadamente imune não necessita profilaxia adicional. Pessoa suscetível ou sem comprovação deve receber vacina. Em exposições de maior risco — por exemplo, violência sexual, comunicante sexual de caso agudo, acidente com fonte positiva/fortemente suspeita ou imunodeprimido exposto — pode haver indicação de <strong>imunoglobulina anti-HB 0,06 mL/kg</strong>, idealmente nas primeiras 24 horas e sem ultrapassar 14 dias. Vacina e imunoglobulina podem ser administradas simultaneamente em locais distintos."
+        ],
+        [
+          "3",
+          "HTLV"
+        ],
+        [
+          "p",
+          "HTLV-1/2 também pode ser transmitido sexualmente e verticalmente. Não costuma fazer parte de um “painel universal” de IST, mas deve ser lembrado conforme contexto epidemiológico, exposição e protocolos específicos, sobretudo porque HTLV-1 se associa a leucemia/linfoma de células T do adulto e mielopatia associada ao HTLV."
+        ]
+      ]
+    ],
+    [
+      "dip",
+      0,
+      [
+        [
+          "2",
+          "13. Doença inflamatória pélvica: infecção ascendente e risco reprodutivo"
+        ],
+        [
+          "p",
+          "<h2>13. Doença inflamatória pélvica: infecção ascendente e risco reprodutivo</h2>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>DIP: possível progressão ascendente</strong>"
+        ],
+        [
+          "o",
+          [
+            "Infecção cervical pode alcançar o endométrio",
+            "Pode progredir para as tubas uterinas",
+            "Pode haver inflamação anexial e abscesso tubo-ovariano",
+            "Atingimento peritoneal pélvico aumenta a gravidade"
+          ]
+        ],
+        [
+          "p",
+          "DIP é um espectro de infecção/inflamação do trato genital superior que pode envolver endométrio, tubas, ovários e peritônio pélvico. Gonococo e clamídia são agentes importantes, mas a etiologia é frequentemente polimicrobiana. Mesmo doença subclínica pode causar dano tubário."
+        ],
+        [
+          "3",
+          "Critérios diagnósticos do PCDT"
+        ],
+        [
+          "p",
+          "O PCDT brasileiro descreve diagnóstico clínico com <strong>três critérios maiores + um critério menor</strong> ou a presença de um critério elaborado."
+        ],
+        [
+          "t",
+          [
+            "Grupo",
+            "Critérios"
+          ],
+          [
+            [
+              "Maiores",
+              "dor no hipogástrio; dor à palpação dos anexos; dor à mobilização do colo uterino"
+            ],
+            [
+              "Menores",
+              "febre, secreção anormal, massa pélvica, leucocitose, PCR/VHS elevados, evidência de infecção cervical, entre outros"
+            ],
+            [
+              "Elaborados",
+              "endometrite histológica; abscesso tubo-ovariano/imagem compatível; laparoscopia com evidência de DIP"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Diagnósticos diferenciais que não podem ser perdidos"
+        ],
+        [
+          "p",
+          "Gravidez ectópica, apendicite, torção anexial, ruptura/hemorragia de cisto, endometriose, pielonefrite e outras causas de abdome agudo precisam ser consideradas. Teste de gravidez faz parte da avaliação inicial em pessoa com potencial de gestar."
+        ],
+        [
+          "3",
+          "Tratamento ambulatorial"
+        ],
+        [
+          "t",
+          [
+            "Componente",
+            "Dose",
+            "Duração"
+          ],
+          [
+            [
+              "Ceftriaxona",
+              "500 mg IM",
+              "dose única"
+            ],
+            [
+              "Doxiciclina",
+              "100 mg VO 12/12 h",
+              "14 dias"
+            ],
+            [
+              "Metronidazol",
+              "500 mg VO 12/12 h",
+              "14 dias"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Quando internar"
+        ],
+        [
+          "u",
+          [
+            "gestação;",
+            "abscesso tubo-ovariano;",
+            "quadro grave, vômitos persistentes ou impossibilidade de tratamento oral;",
+            "diagnóstico cirúrgico de urgência não excluído;",
+            "impossibilidade de seguimento;",
+            "ausência de melhora após cerca de 72 horas de terapia ambulatorial."
+          ]
+        ],
+        [
+          "3",
+          "Esquemas hospitalares"
+        ],
+        [
+          "p",
+          "O PCDT inclui ceftriaxona IV + doxiciclina + metronidazol e alternativas como clindamicina + gentamicina ou ampicilina/sulbactam + doxiciclina. Após melhora clínica, a terapia pode migrar para via oral, completando 14 dias."
+        ],
+        [
+          "3",
+          "DIU e DIP"
+        ],
+        [
+          "p",
+          "O aumento de risco associado ao DIU concentra-se nas primeiras semanas após inserção e se relaciona à presença de IST no momento do procedimento. Diagnóstico de DIP não significa retirada automática do dispositivo em toda paciente; a decisão depende de resposta terapêutica e contexto clínico."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Pulo do Gato: teste cervical negativo não exclui DIP.</strong>"
+        ],
+        [
+          "p",
+          "A infecção pode ter ascendido, o agente pode não estar mais detectável no colo e a etiologia pode ser polimicrobiana. DIP continua sendo diagnóstico clínico em que atraso de tratamento cobra preço reprodutivo."
+        ]
+      ]
+    ],
+    [
+      "prevencao",
+      0,
+      [
+        [
+          "2",
+          "14. Prevenção combinada"
+        ],
+        [
+          "p",
+          "<h2>14. Prevenção combinada</h2>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Manejo de parcerias</strong>"
+        ],
+        [
+          "o",
+          [
+            "Identifique exposições e parcerias relevantes",
+            "Ofereça testagem conforme agente e contexto",
+            "Oriente avaliação e tratamento conforme protocolo",
+            "Explique quando evitar relações sexuais até completar o manejo"
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-callout book-clinical-callout\" role=\"note\"><strong>Prevenção combinada</strong>"
+        ],
+        [
+          "o",
+          [
+            "Preservativos e outras barreiras",
+            "Vacinação contra HPV e hepatite B conforme indicação",
+            "Testagem periódica e tratamento oportuno",
+            "PrEP e PEP para HIV quando elegíveis"
+          ]
+        ],
+        [
+          "p",
+          "Prevenção combinada associa intervenções biomédicas, comportamentais e estruturais conforme o momento de vida e a exposição. Preservativos continuam centrais, mas não são a única ferramenta."
+        ],
+        [
+          "p",
+          "<div class=\"book-grid-2\">\r\n<div class=\"book-mini\"><strong>Antes da exposição</strong>"
+        ],
+        [
+          "u",
+          [
+            "vacinas HPV e hepatite B;",
+            "PrEP para HIV quando indicada;",
+            "preservativos e lubrificante;",
+            "testagem periódica;",
+            "redução de danos."
+          ]
+        ],
+        [
+          "p",
+          "</div>\r\n<div class=\"book-mini\"><strong>Depois da exposição</strong>"
+        ],
+        [
+          "u",
+          [
+            "PEP para HIV até 72 h;",
+            "vacina/IG anti-HB conforme caso;",
+            "DoxiPEP em população elegível;",
+            "contracepção de emergência quando indicada;",
+            "testagem e seguimento."
+          ]
+        ],
+        [
+          "3",
+          "PrEP e PEP para HIV"
+        ],
+        [
+          "p",
+          "PrEP previne HIV, mas não as demais IST. PEP deve ser iniciada o mais cedo possível, até 72 horas, e mantida por 28 dias. O atendimento de PEP também é oportunidade para discutir transição para PrEP se houver exposições recorrentes."
+        ],
+        [
+          "3",
+          "DoxiPEP: atualização brasileira de 2026"
+        ],
+        [
+          "p",
+          "A Conitec recomendou e o Ministério da Saúde incorporou doxiciclina como profilaxia pós-exposição para prevenção de <strong>clamídia e sífilis</strong> em população definida. O regime avaliado corresponde a <strong>200 mg em dose única até 72 horas após a exposição, idealmente nas primeiras 24 horas, com máximo de 200 mg por dia</strong>. A população inicialmente priorizada inclui homens cisgênero gays/bissexuais e outros HSH e mulheres trans com episódio de IST nos 12 meses anteriores. A oferta deve seguir o protocolo e a organização do SUS; não deve ser convertida em automedicação universal."
+        ],
+        [
+          "p",
+          "<div class=\"warning-box\"><strong>DoxiPEP não é “antibiótico depois de qualquer relação”.</strong><span>Uso indiscriminado aumenta eventos adversos e pressão de resistência. A estratégia exige avaliação de elegibilidade, rastreamento periódico e revisão da necessidade.</span></div>"
+        ],
+        [
+          "3",
+          "Vacinação contra HPV em 2026"
+        ],
+        [
+          "p",
+          "O calendário nacional utiliza dose única para meninas e meninos de 9–14 anos. A estratégia de resgate para não vacinados de 15–19 anos foi prorrogada até 31 de dezembro de 2026. Pessoas imunodeprimidas, vítimas de violência sexual, usuários de PrEP e pessoas com papilomatose respiratória recorrente seguem esquemas específicos."
+        ],
+        [
+          "3",
+          "Indetectável = intransmissível para HIV sexual"
+        ],
+        [
+          "p",
+          "Pessoa vivendo com HIV que mantém carga viral suprimida de forma sustentada com TARV não transmite HIV por via sexual. Esse conceito integra prevenção combinada e reduz estigma, sem substituir prevenção das demais IST."
+        ],
+        [
+          "3",
+          "Preservativos e lubrificante"
+        ],
+        [
+          "p",
+          "Preservativos externos ou internos reduzem transmissão de diversas IST, mas não eliminam totalmente infecções transmitidas por contato de pele fora da área coberta, como HPV e herpes. Lubrificante à base de água ou silicone reduz trauma de mucosa e risco de ruptura do preservativo."
+        ]
+      ]
+    ],
+    [
+      "especiais",
+      0,
+      [
+        [
+          "2",
+          "15. Situações especiais"
+        ],
+        [
+          "p",
+          "<h2>15. Situações especiais</h2>"
+        ],
+        [
+          "3",
+          "Gestação"
+        ],
+        [
+          "p",
+          "A gestação aumenta a urgência porque o tratamento protege duas pessoas e alguns agentes têm potencial de transmissão vertical. Sífilis deve ser tratada com penicilina; HIV exige início/otimização rápida de TARV; HBV materno muda a profilaxia neonatal; gonorreia e clamídia podem causar complicações maternas e neonatais; herpes genital exige atenção ao momento da infecção e à presença de lesões/prodromos no parto."
+        ],
+        [
+          "3",
+          "Sífilis na gestação"
+        ],
+        [
+          "p",
+          "O controle não treponêmico deve ser mais frequente que fora da gestação. Esquema inadequado, atraso entre doses ou ausência de tratamento em tempo hábil aumenta risco de sífilis congênita. Alergia verdadeira não justifica abandonar penicilina: encaminhe para manejo especializado/dessensibilização."
+        ],
+        [
+          "3",
+          "Adolescentes"
+        ],
+        [
+          "p",
+          "Garanta confidencialidade dentro dos limites legais, reserve parte da consulta sem acompanhante quando apropriado, avalie coerção/violência e use linguagem concreta. Vacinação, preservativos e testagem devem ser ofertados sem julgamento."
+        ],
+        [
+          "3",
+          "Pessoas vivendo com HIV"
+        ],
+        [
+          "p",
+          "Herpes pode ser mais extenso e recidivante; HPV pode persistir e produzir lesões de alto grau; sífilis exige avaliação neurológica cuidadosa quando houver sintomas. Terapia antirretroviral e supressão viral sustentada integram a prevenção: U=U/I=I para transmissão sexual do HIV."
+        ],
+        [
+          "3",
+          "Violência sexual"
+        ],
+        [
+          "p",
+          "Atendimento deve ser imediato e centrado na pessoa. Inclui avaliação de lesões, risco de gravidez, PEP para HIV, profilaxia para HBV, profilaxias antimicrobianas conforme protocolo, vacinação, coleta de exames sem atrasar intervenções tempo-dependentes, apoio psicossocial e fluxos de notificação/proteção."
+        ],
+        [
+          "3",
+          "Imunossupressão"
+        ],
+        [
+          "p",
+          "Lesões extensas, atípicas, persistentes ou de difícil cicatrização aumentam a necessidade de biópsia ou investigação ampliada. HPV e herpes são particularmente influenciados pelo estado imune."
+        ],
+        [
+          "3",
+          "Prática anal e proctite"
+        ],
+        [
+          "p",
+          "Dor retal, secreção, sangramento, tenesmo e urgência evacuatória após exposição anal exigem inspeção/anuscopia quando disponível e testes para gonococo, clamídia e HSV conforme o quadro. LGV deve entrar no diferencial de proctocolite mais intensa."
+        ],
+        [
+          "3",
+          "PEP em gestantes e pessoas com potencial de engravidar"
+        ],
+        [
+          "p",
+          "O PCDT PEP 2024 permite dolutegravir em qualquer idade gestacional. Gestação não deve ser usada como motivo para atrasar ou negar PEP quando a exposição é elegível."
+        ],
+        [
+          "3",
+          "Contracepção de emergência"
+        ],
+        [
+          "p",
+          "Em exposição com risco de gravidez, especialmente violência sexual ou falha de método, a contracepção de emergência deve ser considerada em paralelo às medidas de IST. Não é necessário esperar resultado de todos os testes infecciosos para abordá-la."
+        ]
+      ]
+    ],
+    [
+      "casos",
+      0,
+      [
+        [
+          "2",
+          "16. Casos integradores"
+        ],
+        [
+          "p",
+          "<h2>16. Casos integradores</h2>"
+        ],
+        [
+          "3",
+          "Caso 1 — “Meu exame de urina deu negativo”"
+        ],
+        [
+          "p",
+          "Homem com sexo anal receptivo e oral, assintomático, fez NAAT apenas em urina. O resultado não exclui gonorreia ou clamídia retal/faríngea. A coleta precisa refletir os sítios expostos."
+        ],
+        [
+          "3",
+          "Caso 2 — úlcera que desapareceu"
+        ],
+        [
+          "p",
+          "Paciente teve úlcera genital indolor há um mês e agora apresenta exantema inclusive em palmas. A cicatrização espontânea da lesão primária não significa resolução. O quadro é fortemente compatível com progressão para sífilis secundária; testar e tratar conforme estágio, além de HIV e outras IST."
+        ],
+        [
+          "3",
+          "Caso 3 — corrimento + dor pélvica"
+        ],
+        [
+          "p",
+          "Paciente com secreção cervical, dor hipogástrica e dor à mobilização do colo. A prioridade não é esperar o NAAT: trate DIP empiricamente se não houver diagnóstico alternativo melhor e investigue gravidez/abscesso/necessidade de internação."
+        ],
+        [
+          "3",
+          "Caso 4 — vesículas dolorosas no primeiro episódio"
+        ],
+        [
+          "p",
+          "Lesões agrupadas, febre e disúria sugerem herpes genital primário. Antiviral sistêmico deve ser iniciado precocemente e a consulta precisa incluir analgesia, cuidado local, transmissão assintomática e orientação para retorno."
+        ],
+        [
+          "3",
+          "Caso 5 — teste treponêmico positivo, VDRL negativo"
+        ],
+        [
+          "p",
+          "Antes de rotular “sífilis ativa”, pergunte se houve tratamento anterior e qual era o título. Se não houver histórico confiável, considere fase muito precoce/tardia e confirmação conforme algoritmo. O par de exames não pode ser interpretado sem cronologia."
+        ],
+        [
+          "3",
+          "Caso 6 — exposição recente ao HIV"
+        ],
+        [
+          "p",
+          "Rompimento de preservativo em relação anal receptiva há poucas horas é cenário de avaliação imediata para PEP. Não se espera sintoma nem soroconversão para iniciar prevenção quando indicada."
+        ],
+        [
+          "3",
+          "Caso 7 — uretrite que não melhora"
+        ],
+        [
+          "p",
+          "Antes de “subir antibiótico”, reconstrua adesão e novas exposições, confirme se parcerias foram tratadas, considere <i>Mycoplasma genitalium</i>, tricomoníase e prostatite e obtenha cultura/sensibilidade se houver suspeita real de falha gonocócica."
+        ],
+        [
+          "3",
+          "Caso 8 — VDRL 1:32 que cai para 1:8"
+        ],
+        [
+          "p",
+          "É redução de duas diluições, isto é, quatro vezes, compatível com resposta sorológica esperada quando ocorre no intervalo adequado ao estágio."
+        ],
+        [
+          "3",
+          "Caso 9 — dor pélvica com NAAT cervical negativo"
+        ],
+        [
+          "p",
+          "Isso não exclui DIP. A etiologia pode ser polimicrobiana ou o agente pode já ter ascendido; trate se os critérios clínicos forem preenchidos e não houver diagnóstico melhor."
+        ]
+      ]
+    ],
+    [
+      "revisao",
+      0,
+      [
+        [
+          "2",
+          "17. Revisão de alto rendimento"
+        ],
+        [
+          "p",
+          "<h2>17. Revisão de alto rendimento</h2>"
+        ],
+        [
+          "t",
+          [
+            "Armadilha",
+            "Correção"
+          ],
+          [
+            [
+              "“Sem sintoma, sem IST”",
+              "muitas IST são assintomáticas; exposição também guia rastreio"
+            ],
+            [
+              "“Urina negativa exclui gonorreia/clamídia”",
+              "reto e faringe precisam ser testados quando expostos"
+            ],
+            [
+              "“VDRL sozinho fecha sífilis”",
+              "interpretar com treponêmico, título, estágio e história de tratamento"
+            ],
+            [
+              "“A ferida da sífilis sarou, então curou”",
+              "cancro pode cicatrizar sem tratamento enquanto a infecção progride"
+            ],
+            [
+              "“No Brasil já se trata gonorreia só com ceftriaxona”",
+              "em 2026 o PCDT brasileiro ainda recomenda ceftriaxona + azitromicina"
+            ],
+            [
+              "“Tratar a verruga elimina o HPV”",
+              "remove lesão, não garante erradicação viral"
+            ],
+            [
+              "“PCR cervical negativo exclui DIP”",
+              "DIP é diagnóstico clínico; infecção ascendente pode persistir sem teste cervical positivo"
+            ],
+            [
+              "“DoxiPEP serve para qualquer relação sem preservativo”",
+              "é estratégia seletiva incorporada em 2026 para população elegível e acompanhamento clínico"
+            ],
+            [
+              "“Herpes transmite só com lesão”",
+              "há eliminação viral assintomática"
+            ],
+            [
+              "“Toda dor testicular em jovem com risco sexual é epididimite”",
+              "torção deve ser excluída com urgência"
+            ],
+            [
+              "“Corrimento vaginal = IST”",
+              "candidíase e vaginose bacteriana são causas comuns e não são IST clássicas"
+            ],
+            [
+              "“Gestante perdeu o dia exato da penicilina, reinicia sempre”",
+              "o ideal é 7 dias; a recomendação atual aceita até 9 dias entre doses na gestação"
+            ],
+            [
+              "“Teste HIV D0 negativo encerra PEP”",
+              "PEP dura 28 dias e exige seguimento laboratorial"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Perguntas de fixação"
+        ],
+        [
+          "u",
+          [
+            "<div class=\"fixation-question\">1. Por que um NAAT urinário negativo não exclui gonorreia em quem praticou sexo oral e anal receptivo?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Porque o teste responde apenas ao sítio coletado; pode haver infecção faríngea e/ou retal independente da urina.</div>",
+            "<div class=\"fixation-question\">2. Qual é o tratamento de referência da sífilis recente e o que muda quando a duração é desconhecida?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Recente: penicilina G benzatina 2,4 milhões UI IM em dose única. Duração desconhecida/tardia: 2,4 milhões UI IM semanal por 3 semanas, total 7,2 milhões.</div>",
+            "<div class=\"fixation-question\">3. Por que não se deve esperar todos os exames diante de quadro clínico de DIP?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Porque a inflamação tubária pode causar dano precoce e sequela reprodutiva; o diagnóstico é clínico e o limiar para tratamento deve ser baixo.</div>",
+            "<div class=\"fixation-question\">4. O que a DoxiPEP mudou no Brasil em 2026?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>O SUS incorporou profilaxia pós-exposição com doxiciclina para prevenção de sífilis e clamídia em população elegível; não é recomendação universal de antibiótico após qualquer relação sexual.</div>",
+            "<div class=\"fixation-question\">5. Qual é hoje o limite de intervalo entre doses de penicilina benzatina na gestante antes de reiniciar o esquema?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>O ideal é aplicar a cada 7 dias, mas a recomendação brasileira atual aceita até 9 dias. Se ultrapassar 9 dias, reiniciar o esquema.</div>",
+            "<div class=\"fixation-question\">6. Por que corrimento vaginal não deve ser tratado automaticamente como gonorreia/clamídia?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Porque candidíase e vaginose bacteriana são causas muito frequentes e não são IST clássicas; além disso, cervicite e vaginite podem coexistir e exigem exame/testagem direcionada.</div>",
+            "<div class=\"fixation-question\">7. Qual é a diferença entre teste de cura e retestagem?</div><div class=\"fixation-actions\"><button class=\"fixation-toggle\" type=\"button\">Mostrar resposta</button></div><div class=\"fixation-answer\" hidden>Teste de cura procura persistência logo após o tratamento em situações selecionadas; retestagem busca sobretudo reinfecção em momento posterior.</div>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "aprofundamento-2026",
+      0,
+      [
+        [
+          "2",
+          "18. Aprofundamento: diagnóstico por sítio, resistência e prevenção de recorrência"
+        ],
+        [
+          "p",
+          "<h2>18. Aprofundamento: diagnóstico por sítio, resistência e prevenção de recorrência</h2>"
+        ],
+        [
+          "p",
+          "O manejo moderno das IST não é apenas escolher antibiótico. É reconhecer <strong>sítio anatômico, tempo desde a exposição, probabilidade pré-teste, janela diagnóstica, resistência, risco de reinfecção e necessidade de prevenção combinada</strong>. O mesmo agente pode exigir estratégias diferentes em uretra, colo, reto, faringe, gestação ou imunossupressão."
+        ],
+        [
+          "3",
+          "Testagem extragenital"
+        ],
+        [
+          "p",
+          "Coletar apenas urina ou colo pode perder infecções retais e faríngeas em pessoas expostas nesses sítios. A história sexual deve orientar coleta anatômica. Gonococo faríngeo merece atenção especial porque pode ser assintomático e é sítio relevante para seleção/troca de determinantes de resistência."
+        ],
+        [
+          "3",
+          "Resistência antimicrobiana"
+        ],
+        [
+          "p",
+          "Falha após tratamento não significa automaticamente resistência: reinfecção, adesão, vômitos, dose inadequada e parceiro não tratado são frequentes. Contudo, gonococo com persistência documentada e <em>M. genitalium</em> exigem raciocínio específico. Quando disponível, cultura e teste de sensibilidade do gonococo são úteis diante de suspeita real de falha terapêutica."
+        ],
+        [
+          "3",
+          "Sífilis: interpretar trajetória, não apenas “positivo/negativo”"
+        ],
+        [
+          "p",
+          "Testes treponêmicos tendem a permanecer reagentes após tratamento; títulos não treponêmicos são usados para atividade e seguimento. A resposta deve ser comparada ao título basal e ao estágio clínico. Aumento sustentado de quatro vezes sugere reinfecção ou falha. Na gestação, tratamento inadequado ou tardio mantém risco fetal mesmo que a paciente esteja assintomática."
+        ],
+        [
+          "3",
+          "HIV agudo e janelas"
+        ],
+        [
+          "p",
+          "Exposição recente com febre, rash, faringite ou linfadenopatia pode representar síndrome retroviral aguda antes da positividade de alguns testes de anticorpos. Quando a suspeita é alta, o tipo de ensaio e o tempo desde a exposição importam. PEP é uma intervenção de urgência; não deve aguardar soroconversão."
+        ],
+        [
+          "3",
+          "Recorrência: distinguir persistência de reinfecção"
+        ],
+        [
+          "p",
+          "Repetir o mesmo esquema sem revisar parceria e exposição sexual frequentemente falha porque o problema é reinfecção. Retestagem em momento recomendado após gonorreia/clamídia busca principalmente novos episódios. Para tricomoníase, recorrência também exige revisar adesão e tratamento de parceiros."
+        ],
+        [
+          "3",
+          "Vacinas fazem parte da consulta de IST"
+        ],
+        [
+          "p",
+          "Hepatite B e HPV são componentes de prevenção de IST. Situação vacinal deve ser checada ativamente, principalmente em pessoas com múltiplas exposições, violência sexual, imunossupressão ou vulnerabilidade aumentada. A consulta de IST é oportunidade de prevenção, não apenas de tratamento do episódio atual."
+        ],
+        [
+          "p",
+          "<div class=\"book-callout\"><strong>Raciocínio integrado</strong>Agente + sítio + estágio + exposição + parceria + resistência + prevenção = manejo completo. Tratar a lesão sem interromper a cadeia de transmissão é tratar apenas metade do problema.</div>"
+        ]
+      ]
+    ],
+    [
+      "editorial-depth-ist",
+      0,
+      [
+        [
+          "2",
+          "Referências essenciais"
+        ],
+        [
+          "p",
+          "<h2>Referências essenciais</h2>"
+        ],
+        [
+          "o",
+          [
+            "Brasil. Ministério da Saúde. <a href=\"https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>PCDT para Atenção Integral às Pessoas com IST</strong>, anexo alterado em 2024; página atualizada em 2025.</a>",
+            "Brasil. Ministério da Saúde / Conitec. <strong>PCDT para Profilaxia Pós-Exposição (PEP) de Risco à Infecção pelo HIV, IST e Hepatites Virais</strong>. versão 2024.",
+            "Brasil. Ministério da Saúde. <strong>PCDT para Profilaxia Pré-Exposição (PrEP) Oral à Infecção pelo HIV</strong>. 2025.",
+            "CONITEC. <strong>Relatório de Recomendação nº 1089 — doxiciclina como profilaxia pós-exposição para clamídia e sífilis</strong>. 2026.",
+            "Ministério da Saúde. <strong>Ministério oferece nova estratégia para prevenção de clamídia e sífilis</strong>. 2026.",
+            "Ministério da Saúde. <strong>Calendário Nacional de Vacinação / HPV</strong>. 2026.",
+            "Ministério da Saúde. <strong>Portal de apoio à decisão clínica — PEP</strong>. 2026.",
+            "World Health Organization. <strong>Sexually transmitted infections — Fact sheet</strong>. 2025.",
+            "Brasil. Ministério da Saúde. <strong>Nota Técnica / atualização sobre intervalo entre doses de penicilina para sífilis em gestantes</strong>. 2023, vigente em 2026.",
+            "Brasil. Ministério da Saúde. <strong>Portal de apoio à decisão clínica — Sífilis e PEP</strong>. versão consultada em 2026.",
+            "Brasil. Ministério da Saúde. <strong>Manual dos Centros de Referência para Imunobiológicos Especiais (CRIE)</strong>. 6ª ed."
+          ]
+        ],
+        [
+          "p",
+          "Revisão clínica LURIA: outubro de 2026. Material educacional. Condutas devem ser aplicadas com avaliação clínica individual e conferência de atualizações do Ministério da Saúde quando houver revisão do PCDT."
+        ]
+      ]
+    ],
+    [
+      "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis",
+      0,
+      [
+        [
+          "2",
+          "Seção"
+        ],
+        [
+          "3",
+          "Herpes genital: episódio inicial, recorrência e gestação"
+        ],
+        [
+          "p",
+          "HSV provoca vesículas e ulcerações que podem ser dolorosas; o episódio inicial pode ser mais intenso que recidivas, mas lesões atípicas são comuns. Teste molecular da lesão confirma quando disponível; sorologia não substitui avaliação de úlcera ativa. Antivirais reduzem duração e transmissão, sem erradicar latência. Na gravidez, história de recorrência, lesões ou pródromos perto do parto e protocolo obstétrico mudam conduta."
+        ],
+        [
+          "3",
+          "Gonococo, clamídia e M. genitalium"
+        ],
+        [
+          "p",
+          "Infecções podem ser assintomáticas e ocorrer em colo, uretra, reto ou faringe. Escolha material para NAAT segundo exposição anatômica. Gonorreia demanda atenção especial à resistência e eventual teste de cura conforme sítio; clamídia exige manejo de parcerias e retestagem para reinfecção. M. genitalium em cervicite/uretrite persistente requer estratégia própria por resistência quando disponível. DIP pode ocorrer mesmo quando teste cervical é negativo."
+        ]
+      ]
+    ],
+    [
+      "capitulos-livro-infeccoes-sexualmente-transmissiveis",
+      0,
+      [
+        [
+          "2",
+          "Seção"
+        ]
+      ]
+    ]
+  ]
+}

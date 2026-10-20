@@ -1,0 +1,1210 @@
+{
+  "v": 2,
+  "s": "doencas-reumatologicas-gota-artrite-septica-e-diferenciais",
+  "t": "Doenças Reumatológicas: Gota, Artrite Séptica e Diagnósticos Diferenciais",
+  "p": "Doenças Reumatológicas: Gota, Artrite Séptica e Diagnósticos Diferenciais — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Clínica Médica",
+  "m": "Clínica Médica",
+  "h": [
+    "Apostila LURIA",
+    "Doenças Reumatológicas: Gota, Artrite Séptica e Diagnósticos Diferenciais",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Clínica Médica",
+      "Matéria: Clínica Médica",
+      "Tema: Doenças Reumatológicas: Gota, Artrite Séptica e Diagnósticos Diferenciais"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "epidemiologia-fisiopatologia",
+      "1. Epidemiologia e Fisiopatologia Celular, Bioquímica e Imunológica da Gota e Artrite Séptica"
+    ],
+    [
+      "classificacao-criterios",
+      "2. Classificação Morfológica, Estadiamento e Critérios Diagnósticos"
+    ],
+    [
+      "quadro-clinico-exame-fisico",
+      "3. Quadro Clínico e Exame Físico Reumatológico e Infeccioso Detalhado"
+    ],
+    [
+      "diagnostico-diferencial",
+      "4. Diagnóstico Diferencial Minucioso"
+    ],
+    [
+      "propedeutica-laboratorial-imagem",
+      "5. Propedêutica Complementar, Análise do Líquido Sinovial e Imagem"
+    ],
+    [
+      "abordagem-terapeutica",
+      "6. Abordagem Terapêutica Farmacológica e Não Farmacológica Detalhada"
+    ],
+    [
+      "complicacoes-crises-agudas",
+      "7. Complicações e Manejo de Crises Agudas"
+    ],
+    [
+      "populacoes-especiais",
+      "8. Particularidades em Populações Especiais"
+    ],
+    [
+      "protocolos-fluxogramas",
+      "9. Protocolos Clínicos e Fluxogramas Decisórios Estruturados"
+    ],
+    [
+      "casos-clinicos-resolvidos",
+      "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Diagnóstico"
+    ],
+    [
+      "questoes-comentadas",
+      "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+    ],
+    [
+      "tabela-sinoptica-perolas",
+      "12. Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "epidemiologia-fisiopatologia",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia e Fisiopatologia Celular, Bioquímica e Imunológica da Gota e Artrite Séptica"
+        ],
+        [
+          "p",
+          "As artropatias inflamatórias agudas monoarticulares constituem verdadeiras urgências clínicas e reumatológicas no pronto-socorro e nas enfermarias. O diagnóstico diferencial imediato entre uma artrite microcristalina (com destaque absoluto para a Gota e a Pseudogota) e uma Artrite Séptica bacteriana é imperativo: o atraso terapêutico na infecção articular bacteriana aguda pode resultar em destruição irreversível da cartilagem hialina em menos de 24 a 48 horas, além de osteomielite secundária, sepse e óbito."
+        ],
+        [
+          "3",
+          "1.1 Gota Úrica: Metabolismo das Purinas e Mecanismos da Hiperuricemia"
+        ],
+        [
+          "p",
+          "A gota é uma doença metabólica decorrente da deposição tecidual de cristais de urato monossódico (MSU) em articulações, tecidos periarticulares e rins. O ácido úrico é o produto final do catabolismo das purinas (adenina e guanina) em humanos, devido à perda evolutiva da enzima <em>uricase</em> (urato oxidase), que em outros mamíferos degrada o ácido úrico em alantoína solúvel."
+        ],
+        [
+          "u",
+          [
+            "<strong>Metabolismo e Cascata da Xantina Oxidase:</strong> Os nucleotídeos de purina originam-se da dieta e da síntese <em>de novo</em> endógena. Os nucleotídeos são convertidos em inosina e hipoxantina. A enzima citoplasmática <strong>Xantina Oxidase (XO)</strong> catalisa sequencialmente a oxidação da hipoxantina em xantina, e desta em ácido úrico. Em pH fisiológico plasmático (7,40), mais de 98% do ácido úrico encontra-se ionizado na forma de urato monossódico (MSU).",
+            "<strong>Limite Físico-Químico de Solubilidade:</strong> A saturação físico-química do MSU no plasma humano ocorre em <strong>6,8 mg/dL a 37 °C</strong>. Concentrações séricas de urato acima desse patamar caracterizam a <em>hiperuricemia</em>. Em temperaturas mais baixas (como nas articulações periféricas distais dos pés, onde a temperatura tecidual chega a 32-34 °C) e em pH discretamente ácido, o ponto de solubilidade cai significativamente, favorecendo a nucleação e precipitação de cristais microscópicos pontiagudos.",
+            "<strong>Mecanismos Patogênicos da Hiperuricemia:</strong>\n    <ul>\n      <li><em>Hipoexcreção Renal de Ácido Úrico (Responsável por &gt; 90% dos casos de gota primária):</em> O rim é responsável pela excreção de aproximadamente dois terços do ácido úrico corporal (o terço restante é eliminado pelo trato gastrointestinal via transportadores ABCG2 nos enterócitos). No néfron proximal, o urato sofre um complexo trânsito de filtração glomerular, reabsorção tubular proximal quase completa (98-100%), secreção tubular e reabsorção pós-secretória, resultando na excreção fracionada líquida de cerca de 7-10% do urato filtrado. O principal carreador apical de reabsorção de urato é o <strong>URAT1 (SLC22A12)</strong>, auxiliado pelo <strong>GLUT9 (SLC2A9)</strong> na membrana basolateral. Polimorfismos com ganho de função em URAT1 ou GLUT9, bem como o uso de fármacos que estimulam a troca aniônica no URAT1 (notadamente diuréticos tiazídicos como hidroclorotiazida e diuréticos de alça como furosemida, além de baixas doses de aspirina e pirazinamida), reduzem drasticamente a depuração renal de ácido úrico, deflagrando hiperuricemia.",
+            "<em>Hiperprodução de Ácido Úrico (&lt; 10% dos casos):</em> Decorre de lise celular maciça e renovação celular acelerada (síndrome de lise tumoral em linfomas, leucemias, policitemia vera, psoríase extensa disseminada), consumo excessivo de carnes vermelhas, frutos do mar, cerveja (rica em leveduras contendo guanosina) e bebidas ricas em xarope de milho com alto teor de frutose (a fosforilação rápida da frutose consome ATP intracelular hepático gerando AMP em excesso, que é desviado para a síntese de ácido úrico). Raramente decorre de defeitos enzimáticos hereditários ligados ao cromossomo X: deficiência completa da hipoxantina-guanina fosforribosiltransferase (HGPRT), gerando a <em>Síndrome de Lesch-Nyhan</em> (coreoatetose, automutilação, gota juvenil e nefrolitíase), ou hiperatividade da fosforribosil pirofosfato (PRPP) sintetase."
+          ]
+        ],
+        [
+          "3",
+          "1.2 Imunologia da Crise Gotosa Aguda: O Inflamassoma NLRP3 e a IL-1beta"
+        ],
+        [
+          "p",
+          "A simples presença de cristais de MSU na cartilagem articular pode permanecer silenciosa por anos. A eclosão da crise articular inflamatória aguda fulminante requer uma quebra de equilíbrio tecidual desencadeada por flutuações rápidas da uricemia (aumento súbito ou redução abrupta do urato sérico por início intempestivo de alopurinol), traumas articulares mecânicos locais, consumo pesado de álcool ou estresse cirúrgico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Opsonização e Fagocitose dos Cristais de MSU:</strong> Cristais livres de MSU soltam-se da matriz sinovial no líquido articular e são opsonizados por imunoglobulinas IgG e proteínas do complemento. Macrófagos sinoviais residentes e células dendríticas fagocitam os cristais pontiagudos. No interior do fagolisossomo, a rigidez física do cristal de MSU desestabiliza a membrana lisossômica, causando extravasamento de enzimas lisossômicas (catepsina B) para o citosol.",
+            "<strong>Ativação do Inflamassoma NLRP3:</strong> A ruptura lisossômica e o efluxo intracelular de potássio (K+) ativam o sensor intracelular <strong>NLRP3</strong> (NOD-like receptor family pyrin domain containing 3). O NLRP3 oligomeriza-se com a proteína adaptadora ASC e recruta a <strong>pró-caspase-1</strong>, montando o complexo macromolecular do inflamassoma.",
+            "<strong>Clivagem e Secreção Maciça de IL-1beta:</strong> A caspase-1 ativada cliva a pró-interleucina-1beta (pró-IL-1beta) em sua forma madura biologicamente ativa, a <strong>Interleucina-1beta (IL-1beta)</strong>, além de IL-18. A IL-1beta liberada liga-se aos receptores IL-1R no endotélio sinovial, disparando a expressão de moléculas de adesão endotelial (E-selectina, ICAM-1) e da quimiocina CXCL8 (IL-8).",
+            "<strong>Recrutamento e Lise de Neutrófilos (NETose e Auto-Resolução):</strong> A IL-8 atrai ondas massivas de neutrófilos da circulação para a cavidade sinovial. Os neutrófilos fagocitam mais cristais, degranulam proteases neutrofílicas e geram espécies reativas de oxigênio (ROS). Eventualmente, a morte neutrofílica libera redes extracelulares de neutrófilos (NETs). Curiosamente, a crise gotosa é naturalmente autolimitada (resolvendo-se em 7 a 14 dias mesmo sem tratamento), pois a aglomeração densa de NETs atua degradando citocinas pró-inflamatórias e imobilizando cristais em um biofilme estéril, além da secreção de citocinas anti-inflamatórias endógenas como TGF-beta e IL-10.",
+            "<strong>Patogenia do Tofo Gotoso:</strong> Na gota tofácea crônica, a persistência de cristais de MSU estimula uma reação inflamatória crônica granulomatosa do tipo corpo estranho, com macrófagos gigantes multinucleados circundando depósitos massivos de cristais de urato embebidos em matriz de glicosaminoglicanos, destruindo a cartilagem hialina e o osso subcondral adjacente ('lesão em saca-bocado' radiológica com bordos escleróticos e margens em sobreelevação)."
+          ]
+        ],
+        [
+          "3",
+          "1.3 Artrite Séptica: Vias de Inoculação, Bacteriologia e Enzimologia Destrutiva"
+        ],
+        [
+          "p",
+          "A artrite infecciosa séptica decorre da colonização e replicação de microrganismos viáveis na membrana sinovial e no espaço articular, acompanhada de resposta inflamatória purulenta maciça do hospedeiro:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Vias de Invasão Articular:</strong>\n    <ul>\n      <li><em>Disseminação Hematogênica (Via mais comum - &gt; 85% dos casos):</em> A membrana sinovial é ricamente vascularizada, possui endotélio fenestrado e não dispõe de membrana basal limitante contínua. Qualquer bacteriemia transitória (decorrente de infecção cutânea, cateter venoso, pneumonia, infecção urinária ou manipulação odontológica) pode colonizar a cavidade sinovial instantaneamente.",
+            "<em>Inoculação Direta:</em> Procedimentos cirúrgicos ortopédicos, artrocentese ou injeções intra-articulares inadvertidas sem técnica asséptica rigorosa, ou traumas penetrantes (ferimentos perfurantes, mordeduras animais/humanas).",
+            "<em>Extensão por Contiguidade:</em> Osteomielite subcondral adjacente (muito frequente em neonatos e crianças pequenas, cuja circulação metafisária se comunica com a epífise por vasos transcorrentes), celulite extensa suprajacente ou bursite séptica purulenta rompida."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Microbiologia e Fatores de Virulência:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Staphylococcus aureus (Patógeno Número 1 Isolado no Adulto - 50 a 65% dos casos):</em> Causa principal em todas as faixas etárias de artrite não gonocócica. Expressa adesinas de superfície especializadas (MSCRAMMs - microbial surface components recognizing adhesive matrix molecules), como a proteína de ligação à fibronectina (FnBPA) e a proteína ligadora de colágeno (Cna), que permitem adesão ultrarrápida aos componentes da matriz de cartilagem articular. Cepas produtoras de toxinas como a Leucocidina de Panton-Valentine (PVL) ou cepas de MRSA (resistentes à meticilina) causam destruição tecidual fulminante.",
+            "<em>Streptococcus spp. (S. pyogenes, S. agalactiae do grupo B, S. pneumoniae - 15 a 20%):</em> Segunda causa mais comum no adulto. <em>S. agalactiae</em> predomina em neonatos, diabéticos descompensados e idosos frágeis.",
+            "<em>Bacilos Gram-Negativos Entéricos (Escherichia coli, Pseudomonas aeruginosa, Klebsiella - 10 a 15%):</em> Prevalentes em idosos acamados, portadores de neoplasias, usuários de drogas injetáveis (<em>Pseudomonas</em> tem tropismo clássico pelas articulações sacroilíacas e esternoclaviculares), imunossuprimidos e infecções urinárias associadas.",
+            "<em>Neisseria gonorrhoeae (Artrite Gonocócica):</em> Causa de destaque em adultos jovens, heterossexuais e homossexuais sexualmente ativos. Pode manifestar-se como artrite purulenta monoarticular localizada ou como síndrome clássica de infecção gonocócica disseminada (DGI), com a tríade patognomônica: tenossinovite migratória, poliartralgias e lesões dermatológicas pustulosas acrais estéreis.",
+            "<em>Staphylococcus epidermidis e Bactérias de Biofilme:</em> Principais agentes em artrites periprotéticas e infecções de próteses articulares ortopédicas de quadril e joelho."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Destruição Enzimática da Cartilagem Articular:</strong> A invasão bacteriana atrai centenas de milhares de neutrófilos, que liberam elastase neutrofílica, colagenases e metaloproteinases da matriz (MMP-1, MMP-3, MMP-13). As próprias bactérias liberam toxinas líticas. A pressão hidrostática intracapsular aumenta vertiginosamente devido ao empiema fechado, comprimindo a microcirculação epifisária e causando necrose isquêmica da cartilagem. A perda irreversível de proteoglicanos e a degradação da rede de colágeno tipo II iniciam-se nas primeiras 24 a 48 horas de infecção não drenada, evoluindo para anquilose óssea ou frouxidão articular mutilante.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "classificacao-criterios",
+      0,
+      [
+        [
+          "2",
+          "2. Classificação Morfológica, Estadiamento e Critérios Diagnósticos"
+        ],
+        [
+          "p",
+          "A correta classificação dos estágios da gota e a aplicação rigorosa de escores diagnósticos validados internacionalmente evitam tratamentos equivocados e atrasos fatais."
+        ],
+        [
+          "3",
+          "2.1 Fases Clínicas e Estadiamento da Doença Gotosa"
+        ],
+        [
+          "p",
+          "A história natural da gota divide-se classicamente em quatro etapas cronológicas e fisiopatológicas:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Hiperuricemia Assintomática:</strong> Nível de ácido úrico sérico &gt; 6,8 mg/dL sem qualquer episódio prévio de artrite inflamatória, tofos gotosos ou nefrolitíase por urato. Pode persistir durante décadas ou por toda a vida. <em>Regra de Ouro: Na esmagadora maioria dos casos, hiperuricemia assintomática isolada NÃO tem indicação de tratamento farmacológico hipouricemiante.</em>",
+            "<strong>Artrite Gotosa Aguda (Crise de Gota):</strong> Episódio súbito, monoarticular, de inflamação articular paroxística e excruciante. Mais de 50% dos primeiros episódios acometem a 1ª articulação metatarsofalângica do pé (quadro denominado <strong>Podagra</strong>). Outros sítios comuns incluem mediopé (tarso), tornozelos e joelhos. Acometimento de membros superiores (punhos, cotovelos, dedos) é mais raro na primeira crise e sugere doença avançada ou mulheres idosas em uso de diuréticos.",
+            "<strong>Período Intercrítico:</strong> Intervalo completamente assintomático entre duas crises agudas de artrite. Embora o paciente não refira qualquer dor articular, a doença não está curada: há contínua deposição microscópica subclínica de cristais de MSU na cartilagem e ativação basal do sistema imune inato. O tempo até a próxima crise varia de meses a poucos anos; com o tempo, os períodos intercríticos tornam-se progressivamente mais curtos se não houver controle da uricemia.",
+            "<strong>Gota Tofácea Crônica:</strong> Estágio tardio e descompensado, resultante de anos de hiperuricemia sustentada não tratada. Caracteriza-se por poliartrite crônica erosiva deformante associada a depósitos visíveis e palpáveis de massas de urato monossódico (<strong>tofos</strong>) nos tecidos subcutâneos, cartilagem da orelha (hélice e antihélice), bursa olecraniana, tendão de Aquiles e articulações interfalangianas. Pode simular artrite reumatoide grave."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Critérios Diagnósticos Classificatórios da Gota (ACR/EULAR 2015)"
+        ],
+        [
+          "p",
+          "Os critérios ACR/EULAR 2015 operam em três etapas sucessivas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Critério de Entrada (Obrigatório):</strong> Presença de pelo menos um episódio de edema, dor ou sensibilidade em articulação periférica ou bursa.",
+            "<strong>Critério Padrão-Ouro Suficiente (Fecha Diagnóstico Imediatamente):</strong> Presença de cristais de urato monossódico (MSU) visualizados sob microscopia de luz polarizada compensada no líquido sinovial aspirado da articulação afetada ou no material aspirado de um tofo subcutâneo. Se demonstrado, o diagnóstico está firmado sem necessidade de somar pontos adicionais.",
+            "<strong>Sistema de Pontuação Clínica, Laboratorial e de Imagem (Na ausência do critério suficiente):</strong> Pontuação &ge; 8 pontos (em um total de 23 possíveis) classifica o paciente como portador de gota:\n    <ul>\n      <li><em>Padrão de acometimento articular:</em> Tornozelo ou mediopé (1 ponto); 1ª articulação metatarsofalângica / podagra (2 pontos).",
+            "<em>Características clínicas da crise (eritema suprajacente, dor extrema à palpação/toque suave, dificuldade marcante para caminhar ou apoiar o membro):</em> Uma característica (1 ponto); Duas características (2 pontos); Três características presentes simultaneamente (3 pontos).",
+            "<em>Curso temporal típico (início abrupto atingindo dor máxima em &lt; 24h, resolução completa dos sintomas em &lt; 14 dias e resolução completa entre as crises):</em> Um episódio típico (1 ponto); Episódio típico recorrente (2 pontos).",
+            "<em>Presença de tofo clinicamente evidente (nódulo subcutâneo endurecido com drenagem de substância esbranquiçada pastosa):</em> 4 pontos.",
+            "<em>Ácido úrico sérico dosado &gt; 4 semanas após a crise:</em> &lt; 4 mg/dL (-4 pontos); 6,0 a 7,9 mg/dL (2 pontos); 8,0 a 9,9 mg/dL (3 pontos); &ge; 10,0 mg/dL (4 pontos).",
+            "<em>Evidência de depósito de MSU por imagem (Sinal do Duplo Contorno ao Ultrassom ou TC de Dupla Energia - DECT positiva):</em> 4 pontos.",
+            "<em>Erosões ósseas radiográficas típicas em saca-bocado:</em> 4 pontos."
+          ]
+        ],
+        [
+          "3",
+          "2.3 Classificação da Artrite Séptica e Critérios de Newman"
+        ],
+        [
+          "p",
+          "A artrite séptica divide-se clinicamente e terapeuticamente em:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Artrite Séptica Não Gonocócica:</strong> Habitualmente monoarticular (85-90% dos casos), com predileção extrema por grandes articulações de carga: o <strong>joelho</strong> é a articulação mais acometida (50% de todos os casos), seguido por quadril (20%), ombro (8%), tornozelo (7%) e punho. Apresenta líquido sinovial purulento denso e franca destruição tecidual rápida. Agente predominante: <em>Staphylococcus aureus</em>.",
+            "<strong>Artrite Gonocócica:</strong> Causada por <em>Neisseria gonorrhoeae</em>. Prevalece em jovens sexualmente ativos, com proporção mulher:homem de até 3:1 (devido à disseminação hematogênica assintomática facilitada durante o período menstrual ou gestação). Manifesta-se classicamente sob duas formas:\n    <ul>\n      <li><em>Infecção Gonocócica Disseminada (DGI clássica / Síndrome Artrite-Dermatite):</em> Febre baixa, calafrios, tenossinovite migratória acometendo múltiplos tendões das mãos e punhos, poliartralgias assimétricas e pápulo-pústulas necróticas acrais assépticas em número reduzido (2 a 10 lesões). As hemoculturas podem ser positivas, mas a cultura do líquido sinovial frequentemente é estéril.",
+            "<em>Artrite Gonocócica Purulenta Localizada:</em> Monoartrite aguda franca de joelho, tornozelo ou punho, com líquido sinovial purulento rico em diplococos Gram-negativos intracelulares e ausência de lesões cutâneas ativas."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Critérios Diagnósticos de Newman para Artrite Séptica:</strong>"
+        ],
+        [
+          "t",
+          [
+            "Grupo de Newman",
+            "Critérios Definidores"
+          ],
+          [
+            [
+              "<strong>Grupo A (Diagnóstico Definitivo)</strong>",
+              "Isolamento microbiológico de microrganismo patogênico em cultura do líquido sinovial aspirado da articulação afetada."
+            ],
+            [
+              "<strong>Grupo B (Diagnóstico Quase Certo)</strong>",
+              "Isolamento do patógeno em cultura de sangue (hemocultura) associado a quadro de artrite purulenta aguda clinicamente evidente."
+            ],
+            [
+              "<strong>Grupo C (Diagnóstico Altamente Provável)</strong>",
+              "Ausência de crescimento bacteriano em culturas (líquido sinovial estéril, comumente por uso prévio de antibióticos), mas líquido sinovial turvo/purulento com citometria francamente inflamatória (&gt; 50.000 leucócitos/mm³ e &gt; 90% de neutrófilos) e biópsia/histologia ou necropsia confirmando artrite purulenta."
+            ],
+            [
+              "<strong>Grupo D (Diagnóstico Possível)</strong>",
+              "Cultura do líquido articular e hemoculturas negativas, mas com melhora dramática e resolução clínica após instituição de antibioticoterapia empírica direcionada."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-exame-fisico",
+      0,
+      [
+        [
+          "2",
+          "3. Quadro Clínico e Exame Físico Reumatológico e Infeccioso Detalhado"
+        ],
+        [
+          "p",
+          "O exame semiológico articular e periarticular é o alicerce para distinguir entre processos inflamatórios intra-articulares verdadeiros, afecções periarticulares (bursites, tendinites) e infecções de partes moles (celulite, erisipela)."
+        ],
+        [
+          "3",
+          "3.1 Semiótica da Crise Gotosa Aguda (Podagra e Outros Sítios)"
+        ],
+        [
+          "p",
+          "A apresentação clínica clássica da gota aguda é inconfundível para o examinador atento:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Início Paroxístico e Noturno:</strong> A crise surge tipicamente nas primeiras horas da madrugada ou ao acordar. A estase circulatória noturna, a queda da temperatura periférica corporal nas extremidades distais (32-34 °C) e a desidratação relativa promovem a precipitação maciça de microcristais de urato monossódico. O paciente atinge o ápice da intensidade álgica em menos de 12 a 24 horas ('dor 10 em 10').",
+            "<strong>Características da Podagra:</strong> Na 1ª articulação metatarsofalângica (MTF), observa-se eritema vivo violáceo, edema tenso exuberante, calor local evidente e hiperestesia cutânea extrema. A hipersensibilidade é tão intensa que o paciente não tolera o contato com o lençol da cama ou a meia. A deambulação e o apoio do antepé no solo tornam-se impossíveis (marcha claudicante com apoio exclusivo no calcanhar lateral).",
+            "<strong>Sinais Sistêmicos Acompanhantes:</strong> Febre baixa a moderada (37,8 a 38,5 °C), taquicardia e calafrios podem ocorrer em decorrência da liberação sistêmica de IL-1beta e IL-6, simulando perfeitamente um quadro de celulite bacteriana ou sepse incipiente.",
+            "<strong>Descamação Furfurácea Pós-Crise:</strong> Conforme o processo inflamatório agudo involui espontaneamente ao longo de 7 a 14 dias, a pele estirada e eritematosa sobre a articulação acometida sofre uma típica descamação lamelar ou furfurácea acompanhada de prurido local, achado semiológico muito sugestivo de gota em resolução.",
+            "<strong>Semiótica dos Tofos Gotosos:</strong> Massas nodulares subcutâneas firmes, amareladas ou esbranquiçadas, inicialmente indolores, aderidas a planos profundos ou na cartilagem auricular. Quando muito volumosos ou submetidos a atrito, a pele suprajacente pode ulcerar, drenando espontaneamente um material pastoso, chalky, esbranquiçado semelhante a giz ou pasta de dente (composto quase exclusivamente por aglomerados densos de cristais de MSU)."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Exame Clínico da Artrite Séptica e Manobras Articulares Específicas"
+        ],
+        [
+          "p",
+          "O paciente com artrite séptica não gonocócica apresenta-se invariavelmente toxêmico e com impotência funcional articular absoluta:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Atitude Antálgica Espontânea da Articulação:</strong> Na presença de derrame purulento hipertensivo intra-articular, o paciente posiciona a articulação no ângulo de máxima complacência capsular para minimizar a pressão intracavitária e a dor:\n    <ul>\n      <li><em>Joelho:</em> Mantido espontaneamente em flexão de 30° a 45°.",
+            "<em>Quadril:</em> Posição clássica de 'FABER': Flexão, Abdução e Rotação Externa.",
+            "<em>Ombro:</em> Adução e discreta rotação interna colado ao tronco."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Bloqueio Mecânico e Espasmo Muscular:</strong> A característica semiológica mais confiável para diferenciar artrite verdadeira de celulite superficial é a <strong>amplitude de movimento</strong>. Na artrite séptica, há bloqueio doloroso e espasmo muscular reflexo imediato tanto na movimentação ativa quanto na movimentação passiva suave em todos os planos anatômicos. Na celulite periarticular superficial, o arco de movimento passivo da articulação costuma ser preservado com dor significativamente menor, pois o compartimento intra-articular está livre.</li>\n  <li><strong>Pesquisa do Derrame Articular no Joelho:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Sinal da Onda / Manobra de Ordenha (para derrames pequenos de 4 a 8 mL):</em> Realiza-se esvaziamento digital do fluido da face medial do joelho em direção ao recesso suprapatelar por 2 a 3 vezes; em seguida, comprime-se a face lateral para baixo e observa-se a refração de uma onda fluida convexóide reaparecendo na face medial do recesso.",
+            "<em>Sinal da Tecla de Piano / Choque Patelar (para derrames moderados a volumosos &gt; 15-20 mL):</em> Com uma das mãos comprime-se o fundo de saco suprapatelar contra o fêmur para deslocar o líquido sob a patela; com o dedo indicador da outra mão, realiza-se uma pressão vertical rápida no centro da patela. Sente-se a patela 'flutuar' e bater firmemente contra a tróclea femoral subjacente, retornando à posição flutuante ao cessar a pressão."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Artrite Séptica do Quadril:</strong> Articulação profunda onde calor e rubor são imperceptíveis à inspeção simples. O exame físico baseia-se na dor excruciante à rotação interna passiva do quadril com a coxa fletida a 90° e na palpação profunda da prega inguinal (dor sobre o triângulo de Scarpa). O paciente é incapaz de apoiar carga no membro inferior.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "3.3 Exame Físico da Artrite Gonocócica e Infecção Disseminada (DGI)"
+        ],
+        [
+          "p",
+          "Diferencia-se da forma estafilocócica pela concomitância de sinais extra-articulares e acometimento tendíneo:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Tenossinovite Aguda:</strong> Acomete preferencialmente os tendões extensores dos dedos e flexores do punho e tendões do dorso do pé e tornozelo. Caracteriza-se por dor, edema em aspecto de salsicha sobre o trajeto tendíneo e dor excruciante quando o músculo correspondente é contraído ativamente contra resistência mecânica ou estirado passivamente.",
+            "<strong>Lesões Dermatológicas Paucissintomáticas:</strong> Observam-se pequenas pápulas eritematosas, vesículas umbilicadas hemorrágicas ou pústulas necróticas centrais milimétricas (geralmente entre 2 a 12 lesões no total), distribuídas distalmente nas regiões acrais (dorso das mãos, dedos, antebraços e pés). São assépticas e indolores, resultantes de microembolização séptica imune transitória.",
+            "<strong>Exame Geniturinário e de Mucosas:</strong> Pesquisa ativa de corrimento uretral mucopurulento ou disúria em homens, cervicite mucopurulenta purulenta com sangramento fácil ao toque da espátula em mulheres, proctite purulenta ou faringite gonocócica (frequentemente assintomáticas)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "diagnostico-diferencial",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico Diferencial Minucioso"
+        ],
+        [
+          "p",
+          "O diagnóstico diferencial minucioso é imperativo em toda monoartrite aguda para assegurar intervenções que preservem a função e a vida do paciente."
+        ],
+        [
+          "3",
+          "4.1 Pseudogota (Doença por Deposição de Pirofosfato de Cálcio - CPPD)"
+        ],
+        [
+          "p",
+          "A artrite aguda por CPPD mimetiza com perfeição a crise de gota úrica, porém possui perfil epidemiológico, radiológico e microcristalino absolutamente diverso:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Perfil Epidemiológico:</strong> Prevalece em indivíduos idosos (&gt; 65-70 anos), com incidência aumentando exponencialmente a cada década de vida. Pode associar-se a distúrbios metabólicos endócrinos: hemocromatose hereditária (sobrecarga de ferro), hiperparatireoidismo primário (hipercalcemia), hipomagnesemia e hipofosfatasia.",
+            "<strong>Articulações Preferenciais:</strong> O <strong>joelho</strong> é a articulação de longe mais frequentemente envolvida (responsável por mais de 50-60% dos episódios de pseudogota aguda), seguido por punho (articulação radiocárpica), ombro, sínfise púbica e cotovelo. Ao contrário da gota, o acometimento da 1ª MTF (podagra) ocorre em menos de 5% dos casos.",
+            "<strong>Microscopia de Luz Polarizada (Distinção Definitiva):</strong>\n    <ul>\n      <li><em>Gota Úrica (MSU):</em> Cristais em formato de agulhas afiladas finas (agulhiformes), com <strong>birrefringência fortemente negativa</strong>. Quando alinhados paralelamente ao eixo do compensador de primeira ordem da luz polarizada, exibem coloração amarela; quando perpendiculares ao eixo, exibem coloração azul ('Amarelo Paralelo = Gota').",
+            "<em>Pseudogota (CPPD):</em> Cristais com formato geométrico romboide, retangular ou em paralelepípedo, curtos, com <strong>birrefringência fracamente positiva</strong>. Quando alinhados paralelamente ao eixo do compensador, exibem coloração azul; quando perpendiculares, exibem coloração amarela."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Achado Radiográfico Patognomônico (Condrocalcinose):</strong> Presença de calcificação radiopaca linear, delgada e pontilhada no interior da fibrocartilagem (meniscos do joelho, ligamento triangular do carpo no punho, sínfise púbica) ou da cartilagem articular hialina revestindo os côndilos femorais.</li>\n</ul>"
+        ],
+        [
+          "3",
+          "4.2 Celulite Periarticular vs. Artrite Séptica"
+        ],
+        [
+          "p",
+          "Erro diagnóstico catastrófico comum em prontos-socorros: rotular uma artrite séptica de joelho como 'celulite' e dar alta com cefalexina oral:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Semiológico",
+            "Artrite Séptica Bacteriana",
+            "Celulite Periarticular Superficial"
+          ],
+          [
+            [
+              "<strong>Localização da Dor</strong>",
+              "Profunda, circunferencial, intracapsular difusa.",
+              "Superficial, cutânea, delimitada à placa eritematosa."
+            ],
+            [
+              "<strong>Mobilização Passiva da Articulação</strong>",
+              "<strong>Completamente bloqueada!</strong> Dor excruciante em qualquer grau mínimo de flexão/extensão.",
+              "<strong>Preservada!</strong> A movimentação passiva suave do joelho é indolor ou causa apenas desconforto pelo estiramento da pele."
+            ],
+            [
+              "<strong>Derrame Articular (Tecla de Piano)</strong>",
+              "Presente, volumoso e tenso (líquido purulento intra-articular).",
+              "Ausente (edema reside estritamente no subcutâneo e pele)."
+            ],
+            [
+              "<strong>Conduta Imediata</strong>",
+              "Artrocentese diagnóstica urgente + internação hospitalar.",
+              "Antibioticoterapia ambulatorial ou hospitalar sem artrocentese (evitar punção através de pele infectada!)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "4.3 Bursite Séptica (Pré-Patelar ou Olecraniana)"
+        ],
+        [
+          "p",
+          "A bursa olecraniana (no cotovelo) e a bursa pré-patelar (no joelho) são estruturas serosas superficiais extrarticulares suscetíveis a traumas mecânicos repetidos (trabalhadores que apoiam cotovelos ou ajoelham com frequência). A infecção bacteriana (90% por <em>S. aureus</em>) produz tumefação flutuante delimitada e eritema em cúpula sobre a proeminência óssea. Crucialmente, <strong>a articulação do cotovelo ou joelho propriamente dita pode ser estendida e flexionada quase completamente sem dor severa</strong>, comprovando que o processo é extrarticular. A punção deve ser realizada diretamente na bursa para cultura, sem invadir a cavidade articular verdadeira."
+        ],
+        [
+          "3",
+          "4.4 Outras Artropatias Inflamatórias Mono e Oligoarticulares"
+        ],
+        [
+          "u",
+          [
+            "<strong>Artrite Reativa (Síndrome de Reiter):</strong> Oligoartrite inflamatória periférica assimétrica de membros inferiores (joelhos, tornozelos) associada a dactilite ('dedo em salsicha'), entesite do tendão aquileu, conjuntivite/uveíte anterior e lesões mucocutâneas (ceratodermia blenorrágica nas palmas e plantas, balanite circinada no pênis). Surge 1 a 4 semanas após infecção urogenital por <em>Chlamydia trachomatis</em> ou enterocólica por <em>Shigella, Salmonella, Campylobacter</em> ou <em>Yersinia</em>. Líquido sinovial é estéril.",
+            "<strong>Hemartrose Aguda:</strong> Derrame articular súbito e intensamente doloroso decorrente de sangramento intra-articular após trauma contuso leve ou rotação ligamentar (ruptura de ligamento cruzado anterior - LCA), em pacientes em uso de anticoagulantes orais ou com coagulopatias hereditárias (Hemofilia A ou B). A artrocentese revela líquido sinovial francamente hemático que não coagula na seringa e cujo sobrenadante após centrifugação é xantocrômico."
+          ]
+        ]
+      ]
+    ],
+    [
+      "propedeutica-laboratorial-imagem",
+      0,
+      [
+        [
+          "2",
+          "5. Propedêutica Complementar, Análise do Líquido Sinovial e Imagem"
+        ],
+        [
+          "p",
+          "A punção articular diagnóstica (<strong>artrocentese</strong>) é o procedimento médico de emergência mais importante diante de qualquer monoartrite aguda. O líquido sinovial aspirado fornece o diagnóstico etiológico definitivo em minutos."
+        ],
+        [
+          "3",
+          "5.1 Artrocentese: Técnica, Contraindicações e Cuidados de Segurança"
+        ],
+        [
+          "u",
+          [
+            "<strong>Indicação Formal Absoluta:</strong> Toda e qualquer monoartrite aguda de início recente ou com derrame articular inexplicado deve ser puncionada imediatamente no departamento de emergência para afastar artrite séptica bacteriana e investigar microcristais.",
+            "<strong>Contraindicações Relativas:</strong> Celulite bacteriana ou abscesso cutâneo evidente diretamente sobre o trajeto da agulha de punção (risco de inocular bactérias da pele para dentro de uma articulação previamente estéril; deve-se buscar uma via de acesso alternativa através de pele sadia); coagulopatia grave com INR &gt; 3,0-3,5 ou plaquetopenia extrema &lt; 20.000/microL (em casos de suspeita grave de infecção articular, a punção deve ser realizada após reversão ou transfusão imediata com agulha fina). <em>Uso de varfarina terapêutica ou DOACs sem sangramento ativo NÃO contraindica artrocentese de urgência!</em>",
+            "<strong>Vias de Punção Padronizadas:</strong>\n    <ul>\n      <li><em>Joelho:</em> Acesso anterolateral ou superolateral sob a borda superior externa da patela, direcionando a agulha de calibre 18G ou 20G em direção ao recesso suprapatelar, com o joelho em extensão total ou semiflexão suave a 15-20°.",
+            "<em>Tornozelo:</em> Acesso anteromedial, medialmente ao tendão do tibial anterior e lateralmente ao maléolo medial.",
+            "<em>1ª Metatarsofalângica:</em> Tração axial do hálux com inserção dorsal medial da agulha 22G ou 25G."
+          ]
+        ],
+        [
+          "3",
+          "5.2 Análise Laboratorial Completa do Líquido Sinovial"
+        ],
+        [
+          "p",
+          "O líquido aspirado deve ser imediatamente dividido em tubos específicos para quatro análises fundamentais: tubo com anticoagulante EDTA para citometria e contagem diferencial de leucócitos; frascos estéreis para coloração de Gram e culturas aeróbia e anaeróbia (semear diretamente em frascos de hemocultura para elevar o rendimento diagnóstico); tubo seco sem aditivos para análise bioquímica (glicose e proteínas); e lâmina a fresco para pesquisa imediata de microcristais sob microscopia de luz polarizada compensada."
+        ],
+        [
+          "t",
+          [
+            "Classificação",
+            "Aspecto Macroscópico / Cor",
+            "Viscosidade",
+            "Leucócitos (/mm³)",
+            "Diferencial Neutrófilos",
+            "Glicose Sinovial vs. Glicemia",
+            "Etiologias Típicas"
+          ],
+          [
+            [
+              "<strong>Normal</strong>",
+              "Transparente / Amarelo palha claro",
+              "Muito alta (fio &gt; 5 cm)",
+              "&lt; 200",
+              "&lt; 25%",
+              "Igual à glicemia (&plusmn; 100%)",
+              "Articulação normal saudável"
+            ],
+            [
+              "<strong>Grupo I: Não Inflamatório</strong>",
+              "Transparente a límpido / Amarelo claro",
+              "Alta",
+              "200 a 2.000",
+              "&lt; 25%",
+              "Normal (&gt; 90% da sérica)",
+              "Osteoartrite, trauma mecânico leve, osteonecrose asséptica"
+            ],
+            [
+              "<strong>Grupo II: Inflamatório</strong>",
+              "Translúcido a turvo / Amarelado intenso",
+              "Baixa a moderada",
+              "<strong>2.000 a 50.000</strong> (pode atingir 75.000 em crises extremas)",
+              "<strong>50% a 80%</strong>",
+              "Discretamente reduzida (50-80% da sérica)",
+              "<strong>Gota aguda, Pseudogota</strong>, Artrite Reumatoide, Espondiloartrites, Febre Reumática"
+            ],
+            [
+              "<strong>Grupo III: Infeccioso (Séptico)</strong>",
+              "<strong>Opaco, purulento espesso / Verde-amarelado</strong>",
+              "Muito baixa (aquoso, sem fio)",
+              "<strong>&gt; 50.000</strong> (frequentemente &gt; 100.000)",
+              "<strong>&gt; 85% a 95%</strong>",
+              "<strong>Muito baixa (&lt; 50% da sérica ou indetectável)</strong>",
+              "<strong>Artrite Séptica Bacteriana</strong>"
+            ],
+            [
+              "<strong>Grupo IV: Hemorrágico</strong>",
+              "Vermelho escuro, sanguinolento (não coagula)",
+              "Variável",
+              "Compatível com sangue periférico",
+              "Variável",
+              "Semelhante ao sangue",
+              "Trauma articular grave (LCA), hemofilia, uso de anticoagulantes, tumores sinoviais"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Atenção para 'Pegadinhas' Críticas de Líquido Sinovial em Concursos:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Sobreposição entre Gota e Artrite Séptica:</em> Em crises extremamente hiperagudas de gota úrica, a contagem de leucócitos no líquido sinovial pode ultrapassar 50.000 ou 80.000 células/mm³ com mais de 90% de neutrófilos, simulando infecção purulenta. Por outro lado, em artrite séptica parcial por germes atípicos ou gonococo, os leucócitos podem situar-se entre 30.000 e 50.000/mm³.",
+            "<em>Coexistência Verdadeira:</em> A visualização de cristais de urato NÃO exclui formalmente artrite séptica concomitante! É plenamente possível a infecção bacteriana secundária em uma articulação com gota pré-existente (1 a 5% dos casos). Se houver suspeita clínica, manter cobertura antibiótica empírica até o resultado final das culturas microbiológicas.",
+            "<em>Sensibilidade da Bacterioscopia por Gram:</em> O Gram do líquido sinovial tem sensibilidade de aproximadamente 50 a 70% na artrite por <em>S. aureus</em>, mas cai para menos de 25-30% na artrite gonocócica. Portanto, <strong>um Gram negativo NUNCA descarta artrite séptica!</strong>"
+          ]
+        ],
+        [
+          "3",
+          "5.3 Exames Laboratoriais Sistêmicos e o 'Paradoxo do Ácido Úrico'"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ácido Úrico Sérico na Crise Aguda de Gota:</strong> Ponto crucial de prova! <em>Em até 30% a 40% dos pacientes com crise gotosa aguda confirmada por cristais de MSU, os níveis séricos de ácido úrico dosados durante a crise estão ABSOLUTAMENTE NORMAIS ou até reduzidos!</em> Isso ocorre porque a tempestade inflamatória de citocinas sistêmicas (IL-1beta e IL-6) e o estresse agudo estimulam a secreção de cortisol endógeno, o qual exerce potente efeito uricosúrico renal, aumentando a depuração tubular de ácido úrico. Além disso, grande quantidade do urato plasmático acabou de se precipitar dentro da articulação. Portanto, <strong>um ácido úrico sérico normal NUNCA descarta gota aguda!</strong> A dosagem fidedigna da uricemia basal deve ser realizada pelo menos 2 a 4 semanas após a completa resolução da crise.",
+            "<strong>Marcadores Inflamatórios Sistêmicos:</strong> Leucocitose neutrofílica no sangue periférico e elevações acentuadas de Proteína C-Reativa (PCR &gt; 100 mg/L) e Velocidade de Hemossedimentação (VHS &gt; 60 mm/1ª hora) ocorrem tanto na artrite séptica quanto na crise gotosa aguda intensa, não servindo para distingui-las isoladamente.",
+            "<strong>Hemoculturas:</strong> Devem ser colhidas pelo menos 2 amostras de sangue periférico de sítios venosos distintos antes do início dos antibióticos em qualquer suspeita de artrite séptica (positivas em até 50-70% das artrites bacterianas hematogênicas)."
+          ]
+        ],
+        [
+          "3",
+          "5.4 Métodos de Imagem na Avaliação Articular"
+        ],
+        [
+          "u",
+          [
+            "<strong>Radiografia Convencional Simples:</strong>\n    <ul>\n      <li><em>Na Gota:</em> Em crises agudas iniciais, revela apenas aumento difuso de partes moles periarticulares. Na gota tofácea crônica avançada, revela o sinal clássico: <strong>erosões ósseas periarticulares em saca-bocado (punch-out)</strong> com margens ósseas escleróticas bem definidas e <em>espículas ósseas em sobreelevação (margens em 'beiral' ou 'overhanging edges' de Martel)</em>, poupando caracteristicamente o espaço articular e sem osteopenia periarticular difusa (ao contrário da artrite reumatoide).",
+            "<em>Na Artrite Séptica:</em> Inicialmente normal (mostra apenas distensão da cápsula e aumento de partes moles). Alterações ósseas destrutivas (pinçamento rápido do espaço articular por digestão de cartilagem, erosões subcondrais e osteólise) só surgem após 10 a 14 dias de infecção não tratada."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Ultrassonografia Articular (USG):</strong> Método ágil, de alta sensibilidade e sem radiação. Detecta derrames articulares mínimos e guia a artrocentese com extrema precisão anatômica. Na gota, o achado patognomônico é o <strong>Sinal do Duplo Contorno (Double Contour Sign)</strong>: uma linha hiperecogênica contínua sobre a superfície externa da cartilagem articular hialina (formada pela deposição de cristais de MSU), paralela à linha do córtex ósseo subcondral. Na CPPD (pseudogota), as calcificações situam-se no interior da substância cartilaginosa, e não na sua superfície externa.</li>\n  <li><strong>Tomografia Computadorizada de Dupla Energia (DECT):</strong> Padrão-ouro moderno por imagem para gota. Utiliza dois feixes de raios-X em níveis de energia diferentes (80 kV e 140 kV), permitindo que um software pós-processador identifique a assinatura atômica específica do urato e o diferencie do cálcio ósseo, colorindo os depósitos de cristais de MSU em verde na reconstrução 3D com especificidade &gt; 95%.</li>\n  <li><strong>Ressonância Magnética (RM):</strong> Exame de escolha para investigar artrite séptica em articulações profundas e de difícil acesso clínico (quadril, sacroilíacas, coluna vertebral/espondilodiscite). Identifica precocemente edema ósseo subcondral, coleções purulentas periarticulares, abscessos de partes moles e osteomielite contígua.</li>\n</ul>"
+        ]
+      ]
+    ],
+    [
+      "abordagem-terapeutica",
+      0,
+      [
+        [
+          "2",
+          "6. Abordagem Terapêutica Farmacológica e Não Farmacológica Detalhada"
+        ],
+        [
+          "p",
+          "O manejo terapêutico da artrite aguda exige a separação cronológica rigorosa entre o tratamento da inflamação aguda e a terapia hipouricemiante a longo prazo."
+        ],
+        [
+          "3",
+          "6.1 Tratamento da Crise Gotosa Aguda (Fase Anti-Inflamatória Imediata)"
+        ],
+        [
+          "p",
+          "O objetivo é o controle rápido e completo da dor e do processo inflamatório articular. O tratamento deve ser iniciado o mais precocemente possível (preferencialmente nas primeiras 12 a 24 horas da crise). As três opções farmacológicas de primeira linha possuem eficácia clínica equivalente segundo as diretrizes do ACR 2020 e EULAR 2024, dependendo a escolha das comorbidades individuais do paciente:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Colchicina Oral (Regime Posológico em Baixa Dose):</strong>\n    <ul>\n      <li>Mecanismo de Ação: Liga-se às moléculas de tubulina heterodimérica intracelular, impedindo sua polimerização em microtúbulos. Isso paralisa a mobilidade celular, a diapedese neutrofílica, a fagocitose de cristais de MSU e inibe a ativação do inflamassoma NLRP3.",
+            "<em>Posologia Padronizada Moderna de Baixa Dose:</em> <strong>1,0 mg por via oral na primeira tomada, seguido por 0,5 mg exatamente 1 hora depois (dose total acumulada de 1,5 mg no 1º dia)</strong>. A partir do 2º dia, mantém-se 0,5 mg a 1,0 mg ao dia até a resolução completa da crise.",
+            "<em>Alerta Crítico de Prova:</em> O antigo esquema histórico de '1 comprimido a cada 1 ou 2 horas até o paciente ter diarreia' foi FORMALMENTE PROSCRITO devido à altíssima toxicidade gastrointestinal e sistêmica sem ganho terapêutico adicional.",
+            "<em>Contraindicações e Ajustes:</em> Contraindicada em insuficiência renal grave (TFGe &lt; 15-30 mL/min) e em insuficiência hepática severa, especialmente se em uso concomitante de inibidores potentes do CYP3A4 ou da glicoproteína P (claritromicina, cetoconazol, ciclosporina, diltiazem), devido ao risco letal de toxicidade por colchicina (mielossupressão fulminante, rabdomiólise e neuropatia axonal).",
+            "<strong>Anti-Inflamatórios Não Esteroidais (AINEs):</strong>\n    <ul>\n      <li>Utilizados em doses anti-inflamatórias plenas nas primeiras 48 a 72 horas, com redução progressiva até o término da crise (duração média de 5 a 7 dias): Naproxeno 500 mg VO de 12/12h; Indometacina 50 mg VO de 8/8h; Ibuprofeno 600-800 mg VO de 8/8h; Celecoxibe 200 mg VO 12/12h (se risco gastrointestinal).",
+            "<em>Contraindicações Estritas:</em> Doença Renal Crônica (estágios 3 a 5), úlcera péptica ativa ou histórico recente de hemorragia digestiva alta, insuficiência cardíaca congestiva descompensada (classe funcional III/IV da NYHA) e hipertensão arterial grave não controlada.",
+            "<strong>Corticosteroides Sistêmicos ou Intra-Articulares:</strong>\n    <ul>\n      <li><strong>Primeira Escolha em Pacientes Renais Crônicos, Idosos ou Cardiopatas com contraindicação a AINEs e Colchicina!</strong>",
+            "<em>Via Oral:</em> Prednisona ou Prednisolona 30 a 40 mg ao dia por via oral durante 5 dias, seguido por redução gradual da dose em 5 a 10 dias para evitar efeito rebote inflamatório.",
+            "<em>Via Intra-Articular (Infiltração):</em> Opção de excelência quando a artrite é monoarticular (ex: joelho grande edemaciado) após ter sido rigorosamente descartada infecção articular. Triancinolona hexacetonida 20 a 40 mg ou acetato de metilprednisolona. Proporciona alívio imediato sem efeitos adversos sistêmicos.",
+            "<strong>Regra de Ouro Quanto ao Alopurinol na Crise Aguda:</strong>\n    <ul>\n      <li><em>Se o paciente JÁ ESTAVA em uso prévio contínuo de Alopurinol antes da crise:</em> <strong>NUNCA SUSPENDER O ALOPURINOL!</strong> Manter rigorosamente a mesma dose diária e associar o anti-inflamatório (colchicina, corticoide ou AINE). A interrupção abrupta desestabiliza a concentração sérica de urato e prolonga a crise.",
+            "<em>Se o paciente NÃO TOMAVA Alopurinol (gota aguda de início recente):</em> O foco imediato é tratar a inflamação. Segundo o ACR 2020, o alopurinol pode ser iniciado simultaneamente ou logo após o início do anti-inflamatório, desde que sob cobertura profilática obrigatória com colchicina ou AINE. A conduta clássica de aguardar 1 a 2 semanas após a resolução da crise para iniciar o alopurinol permanece amplamente aceita em diretrizes clínicas."
+          ]
+        ],
+        [
+          "3",
+          "6.2 Terapia Redutora de Urato a Longo Prazo (Tratamento Definitivo da Gota)"
+        ],
+        [
+          "p",
+          "O tratamento hipouricemiante visa dissolver todos os depósitos teciduais de cristais de MSU e prevenir novos episódios inflamatórios e destruição osteoarticular:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Indicações Formais para Iniciar Terapia Redutora de Urato (ACR 2020):</strong>\n    <ul>\n      <li>Presença de 1 ou mais tofos gotosos ao exame físico ou por imagem.",
+            "Evidência radiográfica de dano articular decorrente de gota (erosões ósseas).",
+            "Crises frequentes de artrite gotosa (&ge; 2 crises por ano).",
+            "Episódio de nefrolitíase por urato ou gota associada a Doença Renal Crônica estágio &ge; 3."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Metas Terapêuticas Estritas de Ácido Úrico Sérico (Estratégia 'Treat-to-Target'):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Meta padrão universal: <strong>Ácido úrico sérico &lt; 6,0 mg/dL</strong> (abaixo do ponto físico-químico de saturação de 6,8 mg/dL).",
+            "Meta para pacientes graves (gota tofácea crônica, artropatia erosiva ou crises recorrentes frequentes): <strong>Ácido úrico sérico &lt; 5,0 mg/dL</strong> para acelerar a dissolução e reabsorção dos tofos volumosos.",
+            "<em>Não reduzir para &lt; 3,0 mg/dL a longo prazo</em> por possíveis correlações neuroprotetoras do urato contra demências."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Fármacos Hipouricemiantes:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Inibidor da Xantina Oxidase - Alopurinol (Droga de Primeira Linha Universal):</em> Dose inicial baixa: <strong>100 mg ao dia por via oral</strong> (em DRC com TFGe &lt; 30, iniciar com 50 mg/dia). Titular a dose a cada 2 a 4 semanas em incrementos de 100 mg (monitorando uricemia sérica) até atingir a meta terapêutica de urato &lt; 6,0 mg/dL, podendo chegar a 600-800 mg/dia mesmo em renais crônicos com monitorização clínica. Risco grave: Síndrome de Hipersensibilidade ao Alopurinol (DRESS / necrólise epidérmica tóxica - associada ao alelo HLA-B*5801 em populações de ascendência asiática).",
+            "<em>Inibidor Seletivo da Xantina Oxidase - Febuxostate:</em> 40 a 80 mg/dia VO. Opção para intolerância ou alergia grave ao alopurinol; não requer ajuste na insuficiência renal leve a moderada.",
+            "<em>Uricosúricos (Benzbromarona, Probenecida):</em> Inibem o transportador URAT1 no túbulo proximal. A benzbromarona (50 a 100 mg/dia) é excelente opção em hipoexcretores renais de ácido úrico (excreção urinária &lt; 600-800 mg/24h). <em>Contraindicados em portadores de nefrolitíase de ácido úrico e nefropatia por urato!</em> Exigem hidratação vigorosa e alcalinização urinária com citrato de potássio.",
+            "<em>Uricase Recombinante (Pegloticase):</em> Degradadora enzimática direta do ácido úrico em alantoína. Administrada por via intravenosa a cada 2 semanas para gota tofácea crônica refratária grave e mutilante."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Profilaxia Obrigatória de Crises Gotosa de Indução:</strong>"
+        ],
+        [
+          "p",
+          "A mobilização e rápida dissolução de cristais de MSU induzida pelo alopurinol precipita surtos inflamatórios reflexos (crises de indução). É <strong>obrigatório associar terapia anti-inflamatória profilática</strong>: Colchicina 0,5 mg a 1,0 mg ao dia VO (ou Naproxeno 250 mg 12/12h se colchicina contraindicada; ou baixas doses de corticoide) mantida durante pelo menos <strong>3 a 6 meses contínuos</strong> após o início do hipouricemiante (ou até a resolução dos tofos)."
+        ],
+        [
+          "3",
+          "6.3 Manejo da Artrite Séptica Bacteriana: O Binômio Antibioticoterapia e Drenagem"
+        ],
+        [
+          "p",
+          "O tratamento da artrite séptica é uma emergência cirúrgica e infecciosa baseada estritamente em dois pilares inseparáveis: antibioticoterapia intravenosa imediata e drenagem mecânica completa do pus intra-articular."
+        ],
+        [
+          "o",
+          [
+            "<strong>Drenagem Articular Terapêutica Urgente:</strong>\n    <ul>\n      <li><em>Artroscopia ou Artrotomia Cirúrgica Aberta com Lavagem Exaustiva:</em> Indicada obrigatoriamente na <strong>artrite séptica do quadril</strong> (articulação profunda inacessível à punção de repetição com alto risco de necrose avascular da cabeça femoral), em coleções purulentas septadas densas, na falha de drenagens percutâneas após 48-72h, quando há osteomielite associada ou em infecções de prótese ortopédica.",
+            "<em>Artrocenteses Aspirativas Repetidas de Repetição com Agulha Calibrosa (18G):</em> Permitidas no joelho nas fases iniciais não septadas, devendo ser realizadas diariamente ou a cada 2 dias até que o líquido se torne claro e a contagem de leucócitos caia progressivamente. Se persistir purulento após 3 a 5 dias, converter imediatamente para artroscopia cirúrgica.",
+            "<strong>Antibioticoterapia Intravenosa Empírica Imediata:</strong> Deve ser infundida imediatamente após a coleta das hemoculturas e do líquido sinovial (nunca atrasar para esperar o laudo laboratorial):\n    <ul>\n      <li><em>Adulto previamente hígido, sem fatores de risco para MRSA:</em> <strong>Oxacilina 2 g IV a cada 4 horas</strong> (cobre <em>S. aureus</em> sensível à meticilina e <em>Streptococcus</em>) associada ou não à Ceftriaxona.",
+            "<em>Risco de MRSA Comunitário ou Hospitalar (paciente institucionalizado, hemodiálise, pós-operatório ortopédico, uso de drogas EV):</em> <strong>Vancomicina 15 a 20 mg/kg IV a cada 8 a 12 horas</strong> (com ajuste de vale para 15-20 mcg/mL) ou Daptomicina 6 a 8 mg/kg IV 1 vez ao dia.",
+            "<em>Idosos frágeis, imunossuprimidos, foco urinário associado (cobertura para Gram-negativos entéricos e Pseudomonas):</em> <strong>Vancomicina IV + Cefepima 2 g IV 8/8h</strong> (ou Meropenem 1 g IV 8/8h).",
+            "<em>Artrite Gonocócica e DGI:</em> <strong>Ceftriaxona 1 g a 2 g IV ao dia</strong> (mantida até 24-48 horas após melhora clínica, convertendo para Cefixima oral 400 mg/dia para completar 7 a 14 dias de tratamento) associada obrigatoriamente a <strong>Azitromicina 1 g oral em dose única</strong> para cobrir eventual co-infecção por <em>Chlamydia trachomatis</em> e mitigar resistência bacteriana.",
+            "<strong>Duração do Tratamento:</strong> Artrite séptica não gonocócica exige um mínimo de <strong>3 a 4 semanas de antibioticoterapia total</strong> (pelo menos as primeiras 2 semanas por via intravenosa, podendo-se escalonar para via oral altamente biodisponível como levofloxacino + rifampicina após estabilização clínica, queda acentuada de PCR/VHS e ausência de febre por 48 horas). Na artrite gonocócica, o curso total é de 7 a 14 dias."
+          ]
+        ]
+      ]
+    ],
+    [
+      "complicacoes-crises-agudas",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações e Manejo de Crises Agudas"
+        ],
+        [
+          "p",
+          "As complicações sistêmicas e locais decorrentes do diagnóstico tardio ou tratamento inadequado de gota e artrite séptica implicam em morbimortalidade severa."
+        ],
+        [
+          "3",
+          "7.1 Complicações Graves da Artrite Séptica"
+        ],
+        [
+          "u",
+          [
+            "<strong>Destruição Condral Fulminante e Anquilose Óssea:</strong> A permanência de exsudato purulento sob alta pressão dentro da cápsula articular induz condrólise irreversível em 48 horas. A lise de colágeno tipo II e glicosaminoglicanos leva ao colapso do espaço articular, formação de pannus inflamatório destrutivo e eventual fusão óssea rígida (anquilose articular) com perda funcional permanente do membro.",
+            "<strong>Necrose Avascular da Cabeça Femoral:</strong> O derrame purulento volumoso hipertensivo no quadril comprime os delicados vasos retinaculares do colo femoral que nutrem a cabeça do fêmur. A isquemia resultante causa necrose avascular da epífise femoral, deformidade cefálica severa e indicação precoce de artroplastia total de quadril.",
+            "<strong>Choque Séptico e Embolização Metastática:</strong> A translocação contínua de <em>S. aureus</em> da articulação para a corrente sanguínea gera choque séptico distributivo com hipotensão refratária, disfunção orgânica múltipla e sítios metastáticos de infecção: endocardite bacteriana aguda na valva aórtica ou mitral, abscessos pulmonares embólicos e espondilodiscite."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Complicações Renais e Sistêmicas da Doença Gotosa"
+        ],
+        [
+          "u",
+          [
+            "<strong>Nefrolitíase por Ácido Úrico:</strong> Ocorre em 10% a 25% dos pacientes com gota primária. Ao contrário dos cálculos de oxalato de cálcio, os cálculos puros de ácido úrico são <strong>radiotransparentes na radiografia simples de abdome</strong>, sendo visíveis exclusivamente na ultrassonografia e na tomografia computadorizada sem contraste (densidade típica entre 300 a 500 Unidades Hounsfield). O principal fator determinante não é a hiperuricosúria per se, mas sim o <em>pH urinário persistentemente ácido (&lt; 5,5)</em>, que mantém o ácido úrico em sua forma não ionizada insolúvel. O tratamento clínico padrão baseia-se na <strong>alcalinização urinária com citrato de potássio oral</strong> (alcançando pH urinário alvo entre 6,5 e 7,0, no qual os cálculos de urato sofrem lise e dissolução química espontânea) e hiperidratação volumosa (&gt; 2,5 a 3 litros/dia).",
+            "<strong>Nefropatia Crônica por Urato (Rim de Gota):</strong> Deposição insidiosa de microcristais de MSU no interstício medular renal e nas pirâmides renais, deflagrando reação inflamatória crônica por corpo estranho com células gigantes, fibrose intersticial progressiva e atrofia tubular, culminando em Doença Renal Crônica terminal.",
+            "<strong>Nefropatia Aguda por Ácido Úrico (Precipitação Intratubular):</strong> Emergência oncológica nefrológica que ocorre durante a Síndrome de Lise Tumoral (SLT) após quimioterapia citolítica rápida em neoplasias hematológicas de alta carga proliferativa (linfoma de Burkitt, leucemia linfoide aguda). A lise nuclear libera toneladas de nucleotídeos de purina que saturam a capacidade de filtração. O ácido úrico precipita-se maciçamente no interior dos ductos coletores renais, provocando anúria súbita e Insuficiência Renal Aguda oligoanúrica intratubular com relação ácido úrico urinário / creatinina urinária &gt; 1,0. Previne-se com hiperidratação vigorosa e <strong>Rasburicase</strong> (uricase recombinante intravenosa que degrada urato instantaneamente)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "populacoes-especiais",
+      0,
+      [
+        [
+          "2",
+          "8. Particularidades em Populações Especiais"
+        ],
+        [
+          "p",
+          "As peculiaridades fisiopatológicas de idosos, gestantes, nefropatas e usuários de próteses modificam os limiares diagnósticos e o arsenal farmacológico."
+        ],
+        [
+          "3",
+          "8.1 Pacientes Idosos e com Doença Renal Crônica (DRC)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Gota em Mulheres Idosas em Uso de Diuréticos:</strong> Enquanto nos homens a gota inicia-se aos 30-50 anos, na mulher a gota é primariamente pós-menopáusica (o estrogênio natural tem efeito uricosúrico protetor). Em idosas frágeis hipertensas em uso crônico de hidroclorotiazida, a gota apresenta-se frequentemente de forma atípica: poliartrite nodular com tofos nas articulações interfalangianas distais e proximais das mãos (sobrepostos a nódulos prévios de Heberden e Bouchard de osteoartrite), simulando artrite reumatoide.",
+            "<strong>Manejo na DRC Estágios 3 a 5 (TFGe &lt; 30-60 mL/min):</strong>\n    <ul>\n      <li><em>Na crise aguda:</em> <strong>AINEs são absolutamente contraindicados</strong> (risco de necrose papilar renal e piora dialítica). A colchicina deve ser evitada ou reduzida a doses mínimas (0,5 mg a cada 2 ou 3 dias) devido ao acúmulo tóxico. <strong>O fármaco de escolha é o Corticosteroide oral (Prednisona 30-40 mg/dia) ou Infiltração intra-articular</strong>.",
+            "<em>Na terapia redutora de urato:</em> O Alopurinol pode e deve ser utilizado, iniciando com dose reduzida de 50 mg ao dia e titulando lentamente a cada mês para atingir a meta de urato &lt; 6,0 mg/dL, acompanhando creatinina e hemograma."
+          ]
+        ],
+        [
+          "3",
+          "8.2 Gestação e Lactação"
+        ],
+        [
+          "u",
+          [
+            "A crise de gota na gravidez é evento excepcional. Se ocorrer, <strong>Colchicina e AINEs no 3º trimestre são contraindicados</strong> (risco de fechamento precoce do canal arterial fetal e oligoidrâmnio). O tratamento seguro na gestação é realizado com <strong>corticosteroides por via oral ou infiltração local</strong>. Alopurinol e uricosúricos devem ser evitados na gestação.",
+            "A artrite séptica na gestante decorre comumente de infecção gonocócica disseminada facilitada pela estase venosa pélvica e alterações hormonais. O tratamento de escolha é a Ceftriaxona intravenosa (segura na gestação - categoria B)."
+          ]
+        ],
+        [
+          "3",
+          "8.3 Pacientes com Prótese Articular (Artrite Periprotética)"
+        ],
+        [
+          "p",
+          "Em pacientes com prótese total de quadril ou joelho, a infecção articular divide-se em aguda precoce (&lt; 3 meses da cirurgia, causada por <em>S. aureus</em> ou Gram-negativos), subaguda (&lt; 1 ano, causada por bactérias formadoras de biofilme como <em>Staphylococcus epidermidis</em> e <em>Cutibacterium</em>) e hematogênica tardia (&gt; 1 ano). O biofilme bacteriano adere firmemente ao polietileno e titânio da prótese, impedindo a penetração de antibióticos comuns. O tratamento exige abordagem cirúrgica especializada: desbridamento com retenção do implante (DAIR) e uso de <strong>Rifampicina</strong> associada (para penetrar no biofilme estafilocócico), ou cirurgia de revisão da prótese em um ou dois tempos (com espaçador de cimento impregnado com gentamicina/vancomicina)."
+        ]
+      ]
+    ],
+    [
+      "protocolos-fluxogramas",
+      0,
+      [
+        [
+          "2",
+          "9. Protocolos Clínicos e Fluxogramas Decisórios Estruturados"
+        ],
+        [
+          "p",
+          "Os fluxogramas decisórios estruturados a seguir orientam a conduta imediata no pronto-socorro diante de uma monoartrite aguda."
+        ],
+        [
+          "t",
+          [
+            "Passo Clínico",
+            "Ação Médica Obrigatória",
+            "Resultado e Conduta Subsequente"
+          ],
+          [
+            [
+              "<strong>Passo 1: Avaliação Inicial</strong>",
+              "Identificação de monoartrite aguda com sinais flogísticos e bloqueio articular.",
+              "Realizar <strong>Artrocentese Diagnóstica Imediata</strong> sob assepsia rigorosa antes de prescrever qualquer antibiótico empírico."
+            ],
+            [
+              "<strong>Passo 2: Análise Rápida</strong>",
+              "Exame macroscópico, bacterioscopia por Gram, pesquisa de cristais na luz polarizada e citometria.",
+              "- <em>Líquido purulento (&gt; 50.000 leucócitos/mm³ e &gt; 85% neutrófilos) ou Gram positivo:</em> <strong>Internação imediata + Oxacilina IV / Vancomicina IV + Drenagem cirúrgica/aspiração diária</strong>.<br>\n        - <em>Cristais de MSU agulhiformes fortemente negativos birrefringentes:</em> <strong>Confirmada Gota Aguda</strong>. Iniciar Colchicina baixa dose ou Corticoide/AINE.<br>\n        - <em>Cristais de CPPD romboides fracamente positivos:</em> <strong>Confirmada Pseudogota</strong>. Tratar com AINE ou Corticoide intra-articular."
+            ],
+            [
+              "<strong>Passo 3: Manejo Longo Prazo da Gota</strong>",
+              "Após completa resolução da crise aguda (2 a 4 semanas após).",
+              "- Dosar ácido úrico sérico basal.<br>\n        - Se indicação de hipouricemiante (&ge; 2 crises/ano, tofos ou erosões): Iniciar <strong>Alopurinol 100 mg/dia</strong> + <strong>Colchicina profilática 0,5 mg/dia por 3 a 6 meses</strong>.<br>\n        - Titular alopurinol mensalmente até meta de urato &lt; 6,0 mg/dL (ou &lt; 5,0 mg/dL se tofos)."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-resolvidos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos com Raciocínio Diagnóstico"
+        ],
+        [
+          "p",
+          "Os quatro casos clínicos a seguir exploram dilemas práticos frequentes de emergência médica e reumatologia clínica com raciocínio propedêutico aprofundado."
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Monoartrite Aguda Grave de Joelho no Pronto-Socorro"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 58 anos, pedreiro, diabético mal controlado (HbA1c 9,4%), é admitido na emergência com dor excruciante e 'inchaço enorme no joelho direito há 24 horas', acompanhado de febre alta e calafrios."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Relata que acordou no dia anterior com desconforto no joelho direito, que piorou rapidamente ao longo do dia, tornando impossível qualquer movimento da perna ou colocar o pé no chão. Nega traumas recentes ou episódios semelhantes no passado. Refere ferimento cortante superficial na perna direita há 5 dias enquanto trabalhava na obra, o qual não foi limpo adequadamente."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Paciente prostrado, febril (Tax: 38,8 °C), taquicárdico (FC: 112 bpm), PA: 130/80 mmHg, eupneico. Joelho direito mantido espontaneamente em atitude de flexão de 35°, intensamente aumentado de volume, com eritema peripatelar exuberante e calor local acentuado. Sinal da tecla de piano francamente positivo evidenciando derrame articular maciço. Qualquer tentativa de extensão ou flexão passiva suave do joelho desencadeia dor insuportável e espasmo muscular reflexo imediato. Presença de escoriação infectada com crosta melicérica na face anterior da tíbia direita."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Propedêutica Imediata:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O quadro de monoartrite aguda fulminante febril com bloqueio articular total em paciente diabético com porta de entrada cutânea contígua é a apresentação clássica de <strong>Artrite Séptica Bacteriana Aguda</strong> até prova em contrário (emergência médica e ortopédica máxima).",
+            "<strong>Conduta Imediata:</strong> Realizada <strong>Artrocentese Diagnóstica Imediata</strong> sob assepsia estrita antes de qualquer antimicrobiano. Foram aspirados 50 mL de líquido francamente purulento, turvo e espesso de coloração amarelo-esverdeada.",
+            "<em>Resultados Laboratoriais Rápidos:</em>\n    <ul>\n      <li>Citometria do Líquido Sinovial: 125.000 leucócitos/mm³ com 94% de neutrófilos polimorfonucleares. Glicose sinovial: 18 mg/dL (glicemia sérica concomitante de 195 mg/dL).",
+            "Bacterioscopia por Gram: Presença abundante de cocos Gram-positivos agrupados em cachos aos pares e tetrades intracelulares (altamente sugestivo de <em>Staphylococcus aureus</em>).",
+            "Pesquisa de cristais sob luz polarizada: Negativa para cristais de MSU ou CPPD."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Plano Terapêutico e Cirúrgico Estruturado:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Internação hospitalar imediata em leito de enfermaria/cirurgia.",
+            "Coleta de 2 pares de hemoculturas periféricas de veias distintas.",
+            "Início imediato de <strong>Antibioticoterapia Intravenosa Empírica de Largo Espectro</strong>: <strong>Oxacilina 2 g IV a cada 4 horas associada à Ceftriaxona 2 g IV ao dia</strong> (ou Vancomicina se alto risco de MRSA comunitário).",
+            "<strong>Drenagem Cirúrgica de Emergência:</strong> Encaminhamento imediato ao centro cirúrgico para <strong>Artroscopia ou Artrotomia do joelho direito com sinovectomia e lavagem articular exaustiva</strong> com 10 litros de solução salina fisiológica estéril para remoção completa de debris purulentos e enzimas líticas. Instalação de dreno de sucção fechado por 24-48 horas.",
+            "Manutenção de antibioticoterapia parenteral dirigida por 2 semanas, seguida de reavaliação clínica e laboratorial (queda &gt; 50-75% da PCR) para escalonamento para via oral até completar 4 semanas totais de tratamento."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Paciente Hipertenso com Podagra Aguda e DRC Estágio 3b"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Homem de 66 anos, hipertenso de longa data, com Doença Renal Crônica estágio 3b (creatinina basal 2,2 mg/dL, taxa de filtração glomerular estimada - TFGe = 34 mL/min/1,73m²), procura o serviço de pronto atendimento referindo 'dor insuportável no dedão do pé esquerdo que começou de madrugada'."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Relata que consumiu carne de churrasco e 4 latas de cerveja na noite anterior. Por volta das 4 horas da manhã acordou com dor extrema no hálux esquerdo, que 'queimava e latejava'. Diz que não consegue colocar sequer o lençol em cima do pé. Faz uso contínuo de Enalapril 20 mg/dia, Hidroclorotiazida 25 mg/dia e Alodipino 5 mg/dia."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Afebril, PA 145/90 mmHg. Primeira articulação metatarsofalângica esquerda (1ª MTF) com eritema violáceo brilhante, edema tenso circunferencial estendendo-se para o dorso do antepé, calor local intenso e dor excruciante ao menor toque na cabeça do primeiro metatarso. Restante do exame osteoarticular sem anormalidades."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Diagnóstico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Trata-se de uma crise clássica de <strong>Podagra Aguda (Gota Úrica)</strong>, deflagrada pelo consumo excessivo de purinas e álcool em paciente hiperuricêmico por hipoexcreção renal, agravada pelo uso crônico de <strong>Hidroclorotiazida</strong> (diurético tiazídico que estimula a troca e reabsorção tubular proximal de urato via URAT1).",
+            "<em>Exames Laboratoriais:</em> O ácido úrico sérico colhido na admissão é de <strong>6,2 mg/dL</strong> (nível aparentemente 'normal', ilustrando perfeitamente o paradoxo do ácido úrico na crise inflamatória aguda!). Leucograma periférico com 11.200 leucócitos/mm³ e PCR de 42 mg/L.",
+            "A aspiração com agulha fina da 1ª MTF evidenciou líquido com 18.000 leucócitos/mm³ (78% neutrófilos) e a microscopia de luz polarizada confirmou <strong>cristais agulhiformes com forte birrefringência negativa (amarelo paralelo ao eixo compensador)</strong>, selando o diagnóstico definitivo de gota."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Manejo Farmacológico na Insuficiência Renal (Dilema Crítico):</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>O que NÃO prescrever (Erros Fatais):</em> <strong>AINEs (como cetoprofeno, diclofenaco ou naproxeno) são FORMALMENTE CONTRAINDICADOS</strong> pelo risco de precipitar necrose papilar renal e insuficiência renal anúrica dialítica. A colchicina em dose plena habitual também deve ser evitada devido ao alto risco de neuro e miotoxicidade grave por baixa depuração renal.",
+            "<strong>Tratamento Anti-Inflamatório de Escolha:</strong> <strong>Prednisona oral na dose de 30 a 40 mg ao dia durante 5 dias</strong>, seguida de desmame progressivo ao longo de 5 a 7 dias; OU infiltração local com corticoide se houver operador habilitado.",
+            "<strong>Revisão da Prescrição Anti-Hipertensiva:</strong> Suspender a Hidroclorotiazida e substituí-la por <strong>Losartana</strong> (antagonista do receptor AT1 da angiotensina II que possui propriedade molecular única de inibir competitivamente o transportador URAT1 no túbulo proximal, exercendo efeito uricosúrico benéfico comprovado em pacientes gotosos).",
+            "<strong>Conduta Quanto ao Alopurinol:</strong> Como o paciente não tomava alopurinol previamente, <em>não iniciá-lo no primeiro dia da crise aguda</em> sem cobertura anti-inflamatória; agendar retorno ambulatorial em 3 semanas para dosar a uricemia basal e, se indicada terapia hipouricemiante, introduzir Alopurinol na dose inicial corrigida para DRC (50 mg ao dia) associado à profilaxia com dose mínima de colchicina ou corticoide."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Idosa com Monoartrite Aguda de Joelho e Condrocalcinose (Pseudogota)"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Mulher de 76 anos, portadora de osteoartrite leve de joelhos, é trazida pela filha à UPA por apresentar dor aguda, inchaço moderado e calor no joelho esquerdo há 48 horas após ter sido submetida a cirurgia de colecistectomia videolaparoscópica há 5 dias."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Paciente vinha em recuperação pós-operatória favorável em casa quando subitamente desenvolveu derrame articular no joelho esquerdo com dificuldade para dobrar a perna. Nega febre ou sintomas respiratórios/urinários. Nega história pregressa de podagra ou cólicas nefréticas."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Bom estado geral, afebril, eupneica. Joelho esquerdo com derrame articular moderado (sinal da tecla positivo), aumento de temperatura local discreto e dor à palpação da interlinha articular femorotibial medial e lateral, com limitação antálgica da flexão máxima (atinge até 80°). Sem eritema cutâneo importante."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Diagnóstico Diferencial:</strong>"
+        ],
+        [
+          "u",
+          [
+            "Em idosos hospitalizados ou no pós-operatório recente, a eclosão súbita de monoartrite de grandes articulações (joelho e punho) obriga a investigação prioritária de <strong>Artrite por Pirofosfato de Cálcio (Pseudogota / CPPD)</strong>, frequentemente precipitada pelo estresse cirúrgico ou flutuações eletrolíticas.",
+            "<em>Artrocentese Diagnóstica Realizada:</em> Obtenção de 25 mL de líquido turvo de coloração citrina amarelada. Citometria: 14.000 leucócitos/mm³ com 68% de polimorfonucleares. Gram e culturas fúngica e bacteriana negativas.",
+            "<em>Microscopia de Luz Polarizada Compensada:</em> Presença de <strong>cristais rombóides e em paralelepípedo com birrefringência fracamente positiva</strong> (azuis quando alinhados com o eixo do compensador).",
+            "<em>Radiografia Simples dos Joelhos em AP e Perfil:</em> Evidenciação de calcificação linear tênue radiopaca no interior da fibrocartilagem meniscal bilateralmente (<strong>Condrocalcinose Meniscal Típica</strong>)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Terapêutica Estruturada:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Evacuação completa do líquido sinovial inflamatório por artrocentese (proporciona alívio mecânico imediato da dor capsular).",
+            "<strong>Infiltração Intra-Articular com Corticosteroide:</strong> Aplicação de 40 mg de Triancinolona hexacetonida no mesmo ato da punção diagnóstica (após confirmação de ausência de bactérias ao Gram e aspectos macroscópicos límpidos), com rápida e completa remissão dos sintomas em 24 horas.",
+            "Alternativamente, se a paciente tiver função renal e cardiovascular preservadas, prescrever Naproxeno 500 mg VO 12/12h por 3 a 5 dias ou Colchicina 0,5 mg 12/12h.",
+            "Rastreamento laboratorial ambulatorial de causas metabólicas secundárias de CPPD: dosagem de cálcio sérico e PTH (hiperparatireoidismo primário), ferritina e saturação de transferrina (hemocromatose hereditária) e magnésio sérico."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Jovem Sexualmente Ativo com Síndrome Artrite-Dermatite (Gonococo)"
+        ],
+        [
+          "p",
+          "<strong>Identificação e Queixa Principal:</strong> Mulher de 24 anos, solteira, procura o ambulatório de ginecologia e pronto atendimento relatando dor que começou no punho direito há 3 dias, migrou para o tornozelo esquerdo e agora acomete com inchaço e dor intensa o joelho direito, associada a febre baixa e manchas dolorosas nos dedos."
+        ],
+        [
+          "p",
+          "<strong>HDA:</strong> Relata febre não medida acompanhada de calafrios esparsos há 4 dias. Refere múltiplos episódios de tenossinovite dolorosa nos tendões dos punhos e dorso das mãos. Menciona vida sexual ativa com novo parceiro sem uso consistente de preservativos. Encontra-se no 3º dia do ciclo menstrual."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Tax: 38,1 °C, FC: 96 bpm, corada e hidratada. Joelho direito com derrame articular volumoso, calor, rubor moderado e limitação dolorosa aos movimentos. Exame das mãos e pés revela tenossinovite com edema eritematoso fusiforme ao longo dos tendões extensores dos dedos da mão direita e tibial anterior esquerdo. No dorso dos dedos e palmas das mãos observam-se <strong>4 pequenas pústulas hemorrágicas com base eritematosa e centro necrótico milimétrico</strong>. Ao exame especular ginecológico: colo uterino hiperemiado com saída de secreção mucopurulenta espessa pelo orifício externo."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Diagnóstico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O quadro clínico composto por tenossinovite migratória em jovem sexualmente ativa, artrite de joelho, pústulas necróticas acrais e cervicite mucopurulenta é a manifestação patognomônica da <strong>Infecção Gonocócica Disseminada (DGI clássica / Síndrome Artrite-Dermatite)</strong> causada por <em>Neisseria gonorrhoeae</em>. A disseminação hematogênica é facilitada pelas alterações endometriais e pH durante o período menstrual.",
+            "<em>Artrocentese do Joelho Direito:</em> Revelou líquido sinovial com 48.000 leucócitos/mm³ e 88% de neutrófilos. O Gram articular foi negativo (a cultura sinovial na fase da síndrome tenossinovite-dermatite é estéril em mais de 50-70% dos casos devido à imunidade intermediada).",
+            "<em>Coleta Diagnóstica em Sítios Primários (Chave de Prova):</em> Para confirmação de infecção gonocócica disseminada com líquido articular estéril, <strong>a bacterioscopia e cultura em meio específico Thayer-Martin (ou teste de biologia molecular NAAT/PCR) devem ser realizadas nos sítios mucosos de entrada: endocérvice uterina, uretra, reto e orofaringe!</strong> O swab endocervical confirmou diplococos Gram-negativos intracelulares e PCR positivo para <em>N. gonorrhoeae</em>."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Conduta Terapêutica Completa:</strong>"
+        ],
+        [
+          "o",
+          [
+            "Internação hospitalar imediata em isolamento de contato.",
+            "Início de <strong>Ceftriaxona intravenosa 1 g a cada 24 horas</strong> (mantida por via parenteral por 24 a 48 horas após melhora clínica evidente, completando 7 dias de tratamento total com antimicrobiano oral de transição como Cefixima 400 mg/dia).",
+            "<strong>Tratamento Concomitante Empírico Obrigatório para Chlamydia:</strong> <strong>Azitromicina 1 g oral em dose única</strong> (ou Doxiciclina 100 mg 12/12h por 7 dias), conforme preconizado pelo Ministério da Saúde e CDC.",
+            "Artrocentese de alívio e aspiração do joelho.",
+            "Convocação, testagem sorológica para outras ISTs (HIV, Sífilis, Hepatite B e C) e tratamento simultâneo de todos os parceiros sexuais dos últimos 60 dias."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas",
+      0,
+      [
+        [
+          "2",
+          "11. Questões de Concursos Médicos e Revalida Comentadas em Profundidade"
+        ],
+        [
+          "p",
+          "As questões a seguir reproduzem com fidelidade temática as armadilhas mais frequentes em provas de Residência Médica e Revalida sobre artropatias inflamatórias e infecciosas."
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / USP)"
+        ],
+        [
+          "p",
+          "Homem de 52 anos procura a unidade de emergência às 05:00 da manhã com queixa de dor súbita de forte intensidade na primeira articulação metatarsofalângica do pé direito, associada a calor, edema tenso e rubor violáceo, que iniciou há 6 horas. Relata que consumiu frutos do mar e chope na noite anterior. Refere história de hipertensão arterial controlada com hidroclorotiazida e nega episódios articulares semelhantes prévios. O médico assistente suspeita de artrite gotosa aguda. É colhido ácido úrico sérico na admissão, cujo resultado é de 5,4 mg/dL (valor de referência: 3,5 a 7,2 mg/dL). A conduta mais apropriada quanto ao diagnóstico e à conduta terapêutica imediata é:"
+        ],
+        [
+          "p",
+          "A) Descartar gota, pois o nível de ácido úrico sérico normal exclui categoricamente a crise de artrite gotosa aguda; prescrever antibioticoterapia oral para celulite bacteriana.<br>\nB) Confirmar gota clinicamente; iniciar imediatamente alopurinol na dose de 300 mg/dia para normalizar o ácido úrico e prescrever repouso.<br>\nC) Manter a suspeita de gota, visto que o ácido úrico sérico pode estar normal ou baixo durante a crise aguda; realizar artrocentese diagnóstica e iniciar tratamento anti-inflamatório com colchicina em baixa dose ou AINE.<br>\nD) Iniciar alopurinol 100 mg ao dia associado à benzbromarona 50 mg ao dia, mantendo a hidroclorotiazida na mesma posologia.<br>\nE) Solicitar radiografia do pé e, caso não haja erosões ósseas subcondrais em saca-bocado, descartar o diagnóstico de gota."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa C está CORRETA:</strong> Esta questão aborda o clássico 'paradoxo do ácido úrico' na crise gotosa aguda. Em até 30% a 40% dos pacientes com crise aguda de gota confirmada pela presença de cristais de urato monossódico (MSU) no líquido sinovial, a dosagem plasmática de ácido úrico encontra-se <strong>dentro da faixa de normalidade</strong>. Isso ocorre porque o estresse e a tempestade de citocinas inflamatórias sistêmicas (IL-1beta e IL-6) estimulam a liberação de cortisol endógeno (que tem ação uricosúrica renal potente) e grande quantidade do ácido úrico circulante já precipitou nos tecidos articulares. Portanto, <em>um ácido úrico sérico normal JAMAIS exclui crise de gota aguda!</em> A conduta imediata consiste na realização de artrocentese diagnóstica com pesquisa de cristais birrefringentes negativos agulhiformes e introdução de terapia anti-inflamatória rápida com colchicina oral em baixa dose (1 mg seguido de 0,5 mg após 1h) ou AINE/corticoide."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Conforme explicado, a uricemia normal não afasta o diagnóstico. Confundir podagra com celulite e prescrever antibióticos é um erro crônico de pronto-socorro.<br>\n<strong>B e D estão incorretas:</strong> O alopurinol (ou qualquer hipouricemiante) <strong>NÃO deve ser introduzido no primeiro dia de uma crise aguda sem controle anti-inflamatório prévio</strong> em paciente que nunca o utilizou. A queda abrupta do ácido úrico sérico altera o equilíbrio dinâmico dos cristais na articulação, deflagrando mais fragmentação e prolongando a crise inflamatória. Além disso, a benzbromarona é droga de segunda linha e a hidroclorotiazida deve ser revista por ser fator causal de hiperuricemia.<br>\n<strong>E está incorreta:</strong> As alterações radiográficas erosivas clássicas ('lesões em saca-bocado' com margens em sobreelevação) só aparecem após anos de gota crônica tofácea não tratada; na primeira crise de gota, o raio-X é invariavelmente normal, exibindo apenas edema inespecífico de partes moles."
+        ],
+        [
+          "3",
+          "Questão 2 (Residência Médica / ENARE)"
+        ],
+        [
+          "p",
+          "Homem de 62 anos, com antecedente de cirrose hepática por vírus C e diabetes mellitus, dá entrada no pronto-socorro com quadro de dor de forte intensidade, aumento de volume e bloqueio funcional completo do joelho esquerdo há 18 horas, associado a febre com calafrios (Tax: 38,6 °C). Ao exame físico, o joelho esquerdo encontra-se fletido a 30°, com calor, rubor e sinal da tecla patelar positivo. Qualquer tentativa de mobilização passiva do membro é impossibilitada por dor extrema. É realizada artrocentese diagnóstica do joelho com obtenção de 40 mL de líquido turvo e espesso. A bacterioscopia pelo método de Gram revela incontáveis neutrófilos, porém não evidencia bactérias intracelulares ou extracelulares. A pesquisa de microcristais sob luz polarizada foi negativa. Diante desse cenário clínico, qual é a conduta médica mais adequada?"
+        ],
+        [
+          "p",
+          "A) Aguardar o resultado final das culturas do líquido sinovial (48 a 72 horas) em ambiente domiciliar antes de iniciar qualquer antimicrobiano.<br>\nB) Internar o paciente imediatamente, colher hemoculturas, iniciar antibioticoterapia intravenosa empírica com cobertura para <em>Staphylococcus aureus</em> e programar drenagem articular urgente.<br>\nC) Tratar ambulatorialmente com ciprofloxacino oral 500 mg 12/12h e anti-inflamatório não esteroidal por 10 dias.<br>\nD) Afastar artrite séptica bacteriana, visto que a bacterioscopia pelo método de Gram possui sensibilidade próxima a 100% no líquido sinovial purulento.<br>\nE) Proceder à infiltração intra-articular imediata com acetonido de triancinolona para alívio antálgico rápido da sinovite."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> O paciente apresenta apresentação clínica inequívoca de Artrite Séptica bacteriana aguda de joelho (monoartrite aguda hipertensiva com bloqueio funcional e febre em hospedeiro imunocomprometido). A regra de ouro microbiológica cobrada enfaticamente é: <strong>a bacterioscopia pelo método de Gram do líquido sinovial tem sensibilidade imperfeita (50% a 70% para Gram-positivos e &lt; 30% para Gram-negativos e gonococo)</strong>. Portanto, <strong>um Gram negativo NUNCA descarta artrite séptica!</strong> O atraso no início do tratamento enquanto se aguardam as culturas acarreta destruição irreversível da cartilagem hialina em menos de 24 a 48 horas. A conduta mandatória é internação imediata, coleta de hemoculturas de múltiplos sítios venosos, início imediato de antibioticoterapia intravenosa bactericida (Oxacilina + Ceftriaxona ou Vancomicina se risco de MRSA) e drenagem mecânica urgente da articulação (por artroscopia ou artrotomias repetidas)."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A e C estão incorretas:</strong> Artrite séptica é uma emergência infecciosa hospitalar com risco de sepse fatal; a postergação do tratamento ou conduta ambulatorial com quinolona oral isolada é negligência médica gravíssima.<br>\n<strong>D está incorreta:</strong> A sensibilidade do Gram é moderada e jamais atinge 100%.<br>\n<strong>E está incorreta:</strong> Infiltrar corticosteroide dentro de uma cavidade articular séptica com infecção bacteriana em atividade promove imunossupressão fulminante local, explosão bacteriana e necrose acelerada dos tecidos periarticulares."
+        ],
+        [
+          "3",
+          "Questão 3 (Revalida INEP)"
+        ],
+        [
+          "p",
+          "Uma mulher de 72 anos, previamente hígida, é internada na enfermaria para tratamento de fratura de fêmur após queda da própria altura. No 4º dia de pós-operatório da osteossíntese, desenvolve subitamente dor intensa, calor e aumento de volume no joelho contralateral (direito). O exame físico revela derrame articular moderado à manobra de choque patelar, sem febre e sem lesões cutâneas. A artrocentese diagnóstica do joelho direito revela líquido sinovial turvo com 16.000 leucócitos/mm³ e 72% de neutrófilos, ausência de bactérias ao Gram e culturas estéreis. A microscopia de luz polarizada compensada demonstra presença de <strong>cristais rombóides com birrefringência fracamente positiva</strong> (azuis quando alinhados paralelamente ao eixo do compensador de primeira ordem). A radiografia dos joelhos evidencia calcificação linear delgada no interior dos meniscos. Qual é o diagnóstico correto e o substrato químico do cristal observado?"
+        ],
+        [
+          "p",
+          "A) Gota tofácea crônica; cristais de urato monossódico.<br>\nB) Pseudogota (Doença por Deposição de Pirofosfato de Cálcio - CPPD); cristais de pirofosfato de cálcio di-hidratado.<br>\nC) Artrite Séptica estafilocócica; precipitados de biofilme de <em>Staphylococcus epidermidis</em>.<br>\nD) Artropatia por hidroxiapatita básica; cristais de fosfato de cálcio amorfo.<br>\nE) Artrite Reumatoide soropositiva; cristais de colesterol intrafagocitários."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> O quadro clínico e laboratorial é o protótipo da <strong>Pseudogota (Doença por Deposição de Pirofosfato de Cálcio - CPPD)</strong>. Acomete caracteristicamente pacientes idosos (&gt; 65 anos), com tropismo marcante pelo <strong>joelho</strong> (e punho), frequentemente desencadeada por eventos de estresse metabólico ou pós-operatório cirúrgico. Os achados microscópicos patognomônicos são cristais de <strong>formato rombóide ou em paralelepípedo curto</strong> exibindo <strong>birrefringência fracamente positiva</strong> (que assumem coloração azul quando orientados paralelamente ao eixo óptico compensador, ao contrário dos cristais de MSU da gota que são agulhiformes e amarelos paralelos). A calcificação linear dos meniscos na radiografia simples sela a presença de <strong>condrocalcinose</strong>."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> A gota apresenta cristais agulhiformes finos de urato monossódico com birrefringência fortemente negativa (amarelo paralelo ao compensador) e predomina na 1ª MTF e em homens jovens/meia-idade.<br>\n<strong>C está incorreta:</strong> O líquido não possui padrão séptico purulento franco (&gt; 50.000 leucócitos) e o Gram e culturas foram negativos, além da presença evidente de cristais birrefringentes.<br>\n<strong>D está incorreta:</strong> Os cristais de hidroxiapatita básica são ultramicroscópicos, não possuem birrefringência à luz polarizada simples (só são identificados por microscopia eletrônica ou coloração especial por vermelho de alizarina S) e causam tendinites calcárias agudas de ombro.<br>\n<strong>E está incorreta:</strong> Artrite reumatoide é uma poliartrite crônica autoimune simétrica de pequenas articulações, sem correlação com condrocalcinose meniscal."
+        ],
+        [
+          "3",
+          "Questão 4 (Residência Médica / UNICAMP)"
+        ],
+        [
+          "p",
+          "Homem de 48 anos com diagnóstico de gota crônica apresenta crises recorrentes de artrite periférica (3 a 4 crises nos últimos 12 meses) e dois tofos gotosos visíveis na bursa olecraniana direita e na hélice da orelha esquerda. O nível basal de ácido úrico sérico atual é de 9,8 mg/dL e a taxa de filtração glomerular estimada é de 75 mL/min/1,73m². O médico assistente decide prescrever terapia hipouricemiante a longo prazo para redução do ácido úrico com alopurinol. Segundo as recomendações conjuntas do ACR (American College of Rheumatology) e EULAR, qual é a conduta farmacológica adequada quanto à posologia inicial, meta terapêutica de ácido úrico e prevenção de novas crises?"
+        ],
+        [
+          "p",
+          "A) Iniciar alopurinol na dose cheia de 600 mg/dia em tomada única matinal, sem necessidade de anti-inflamatório associado, visando manter o ácido úrico entre 6,5 e 7,0 mg/dL.<br>\nB) Iniciar alopurinol na dose de 100 mg/dia, titular progressivamente a cada 2 a 4 semanas até atingir a meta terapêutica de ácido úrico sérico &lt; 5,0 mg/dL, associando colchicina oral 0,5 mg ao dia por pelo menos 3 a 6 meses como profilaxia de crises de indução.<br>\nC) Prescrever exclusivamente benzbromarona 100 mg ao dia sem alopurinol, visando atingir ácido úrico &lt; 2,0 mg/dL.<br>\nD) Aguardar a ocorrência de pelo menos 6 crises anuais ou surgimento de insuficiência renal dialítica antes de introduzir qualquer medicamento redutor de urato.<br>\nE) Iniciar alopurinol 300 mg/dia e suspender imediatamente o medicamento caso o paciente desenvolva qualquer crise inflamatória articular subsequente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> Esta questão resume com perfeição as diretrizes modernas do manejo a longo prazo da gota:\n1. <strong>Dose Inicial Baixa do Alopurinol:</strong> Iniciar com <strong>100 mg ao dia por via oral</strong> (ou 50 mg/dia se DRC avançada) para reduzir o risco de reações de hipersensibilidade graves (síndrome de DRESS) e titular a dose a cada 2 a 4 semanas até atingir a meta.<br>\n2. <strong>Meta Estrita de Ácido Úrico:</strong> Em pacientes graves portadores de <strong>tofos gotosos</strong> ou artropatia erosiva crônica, a meta terapêutica alvo é mais rigorosa: <strong>ácido úrico sérico &lt; 5,0 mg/dL</strong> (em pacientes sem tofos, a meta padrão é &lt; 6,0 mg/dL) para promover a dissolução ativa dos tofos e prevenir novas precipitações.<br>\n3. <strong>Profilaxia Obrigatória de Crises de Indução:</strong> A mobilização rápida dos cristais pelos hipouricemiantes precipita crises inflamatórias agudas reflexas nos primeiros meses. É obrigatório associar <strong>colchicina oral em dose baixa (0,5 a 1,0 mg/dia) por no mínimo 3 a 6 meses</strong>."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A está incorreta:</strong> Iniciar alopurinol diretamente em dose alta (600 mg) é perigoso pelo risco de efeitos adversos graves e desestabilização articular; ademais, a meta de 6,5 a 7,0 mg/dL está acima do ponto de saturação do urato (6,8 mg/dL), mantendo a doença ativa.<br>\n<strong>C está incorreta:</strong> A benzbromarona é uricosúrico de 2ª linha; metas de ácido úrico excessivamente baixas (&lt; 3,0 ou &lt; 2,0 mg/dL) não são recomendadas por risco teórico neurológico.<br>\n<strong>D está incorreta:</strong> O paciente já possui critérios formais absolutos de tratamento hipouricemiante: presença de tofos e crises recorrentes (&ge; 2 por ano).<br>\n<strong>E está incorreta:</strong> Se o paciente apresentar crise aguda na vigência de alopurinol, <strong>o alopurinol JAMAIS deve ser suspenso</strong>; deve-se mantê-lo na mesma dose e apenas associar o anti-inflamatório para tratar a crise."
+        ],
+        [
+          "3",
+          "Questão 5 (Residência Médica / SUS-SP)"
+        ],
+        [
+          "p",
+          "Um jovem de 22 anos, previamente hígido, procura o pronto-socorro com queixa de febre, calafrios e dores articulares migratórias nos punhos e tornozelos há 4 dias. Há 24 horas evoluiu com dor intensa e inchaço no joelho esquerdo. Ao exame físico, apresenta Tax de 38,2 °C, tenossinovite dolorosa com edema sobre os tendões extensores dos dedos das mãos, artrite franca com derrame articular no joelho esquerdo e 5 pequenas pústulas necróticas hemorrágicas no dorso dos dedos e palmas das mãos. O paciente refere início de novo relacionamento sexual há 2 semanas sem uso de preservativo. A artrocentese do joelho evidenciou líquido com 42.000 leucócitos/mm³ (85% neutrófilos), com bacterioscopia pelo método de Gram negativa. Assinale a opção que indica o agente etiológico mais provável, o sítio anatômico prioritário para coleta microbiológica confirmatória e o tratamento indicado:"
+        ],
+        [
+          "p",
+          "A) <em>Staphylococcus aureus</em>; sangue periférico; oxacilina intravenosa por 6 semanas.<br>\nB) <em>Neisseria gonorrhoeae</em>; uretra / mucosas genitais e extragenitais; ceftriaxona intravenosa associada à azitromicina oral.<br>\nC) <em>Streptococcus pyogenes</em>; orofaringe; penicilina cristalina intravenosa por 10 dias.<br>\nD) <em>Chlamydia trachomatis</em>; líquido sinovial; doxiciclina oral em monoterapia.<br>\nE) <em>Treponema pallidum</em>; lesões cutâneas; penicilina benzatina intramuscular em dose única."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Comentado e Análise Minuciosa:</strong>"
+        ],
+        [
+          "p",
+          "<strong>Alternativa B está CORRETA:</strong> O quadro clássico composto pela tríade <strong>tenossinovite migratória + poliartralgias / monoartrite aguda + lesões cutâneas pústulo-hemorrágicas acrais assépticas</strong> em jovem sexualmente ativo é patognomônico da <strong>Infecção Gonocócica Disseminada (DGI clássica / Síndrome Artrite-Dermatite)</strong> causada por <em>Neisseria gonorrhoeae</em>. Devido ao mecanismo imunomediado, a cultura do líquido sinovial frequentemente é negativa (&lt; 25-50% de positividade). O diagnóstico confirmatório de excelência é realizado por swab ou NAAT (PCR) colhido dos <strong>sítios mucosos primários colonizados: uretra, canal endocervical, reto ou orofaringe</strong>. O tratamento hospitalar de escolha é a <strong>Ceftriaxona 1 g a 2 g IV ao dia associada à Azitromicina 1 g VO dose única</strong> (para cobrir co-infecção por clamídia e ampliar eficácia microbiológica)."
+        ],
+        [
+          "p",
+          "<em>Refutação dos Distratores:</em><br>\n<strong>A, C, D e E estão incorretas:</strong> O <em>S. aureus</em> não cursa com tenossinovite migratória nem com a tríade de DGI clássica; a <em>Chlamydia</em> causa artrite reativa (estéril e associada a conjuntivite e dactilite, sem bacteriemia com pústulas acrais); e o <em>Treponema</em> causa sífilis primária (cancro duro) ou secundária (roséola sifilítica não pustulosa)."
+        ]
+      ]
+    ],
+    [
+      "tabela-sinoptica-perolas",
+      0,
+      [
+        [
+          "2",
+          "12. Tabela Sinóptica e Pérolas Clínicas de Prova (High-Yield)"
+        ],
+        [
+          "p",
+          "Esta seção consolida os tópicos mais cobrados em concursos médicos sobre artrite microcristalina e séptica em tabelas de alto rendimento."
+        ],
+        [
+          "t",
+          [
+            "Critério Clínico / Laboratorial",
+            "Gota Úrica (MSU)",
+            "Pseudogota (CPPD)",
+            "Artrite Séptica Bacteriana"
+          ],
+          [
+            [
+              "<strong>Epidemiologia Típica</strong>",
+              "Homens de 30-50 anos; mulheres pós-menopausa. Associação com obesidade, etilismo, síndrome metabólica e diuréticos.",
+              "Idosos (&gt; 65-70 anos). Associação com hiperparatireoidismo, hemocromatose e pós-operatório cirúrgico.",
+              "Qualquer idade (neonatos, idosos frágeis, imunossuprimidos, diabéticos, prótese articular, usuários de drogas EV)."
+            ],
+            [
+              "<strong>Articulação Típica</strong>",
+              "1ª Metatarsofalângica / <strong>Podagra (&gt; 50%)</strong>, mediopé, tornozelos.",
+              "<strong>Joelho (&gt; 50-60%)</strong>, punho (radiocárpica), sínfise púbica.",
+              "<strong>Joelho (50%)</strong>, quadril (20%), ombro, tornozelo."
+            ],
+            [
+              "<strong>Microscopia de Luz Polarizada</strong>",
+              "<strong>Cristais agulhiformes finos</strong> com <strong>Birrefringência Fortemente Negativa</strong> (Amarelo Paralelo).",
+              "<strong>Cristais rombóides curtos</strong> com <strong>Birrefringência Fracamente Positiva</strong> (Azul Paralelo).",
+              "Sem cristais característicos; visualização de <strong>bactérias ao Gram</strong> (cocos aos pares/cachos)."
+            ],
+            [
+              "<strong>Citometria do Líquido Sinovial</strong>",
+              "Inflamatório: 2.000 a 50.000 (podendo atingir &gt; 70.000 em crises graves); 50-80% neutrófilos.",
+              "Inflamatório: 2.000 a 30.000; predomínio de neutrófilos.",
+              "<strong>Purulento franco: &gt; 50.000 a 100.000 leucócitos/mm³</strong>; <strong>&gt; 85-95% neutrófilos</strong>; glicose muito baixa (&lt; 50% da sérica)."
+            ],
+            [
+              "<strong>Achado Radiográfico Patognomônico</strong>",
+              "Erosões em <strong>saca-bocado (punch-out)</strong> com bordos escleróticos e <strong>espículas ósseas em sobreelevação (margens em beiral de Martel)</strong>.",
+              "<strong>Condrocalcinose</strong> (calcificação linear radiopaca fina na fibrocartilagem meniscal ou articular).",
+              "Inicialmente normal. Após 10-14 dias: pinçamento articular destrutivo rápido, erosões e osteólise subcondral."
+            ],
+            [
+              "<strong>Tratamento da Crise Aguda</strong>",
+              "Colchicina oral baixa dose (1 mg + 0,5 mg após 1h) OU AINE OU Corticosteroide oral/intra-articular.",
+              "Artrocentese evacuadora + Corticoide intra-articular ou AINE ou Colchicina.",
+              "<strong>Internação hospitalar + Antibioticoterapia intravenosa bactericida empírica imediata + Drenagem articular cirúrgica/aspirativa urgente</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pérolas Clínicas de Prova (High-Yield): As 'Pegadinhas' Mais Frequentes"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pérola 1 (O Paradoxo do Ácido Úrico):</strong> <em>Ácido úrico sérico dosado na crise aguda de gota pode estar rigorosamente normal em até 40% dos pacientes!</em> Nunca descarte gota com base em uricemia normal na fase aguda. Aguarde 2 a 4 semanas para dosagem basal.",
+            "<strong>Pérola 2 (O Alopurinol na Crise):</strong> <em>Se o paciente já toma alopurinol e tem uma crise: NÃO SUSPENDA! Se o paciente não toma alopurinol: NÃO INICIE NO 1º DIA sem controle anti-inflamatório prévio!</em> A flutuação abrupta da uricemia fragmenta cristais e piora a sinovite.",
+            "<strong>Pérola 3 (O Gram Negativo na Artrite Séptica):</strong> <em>Bacterioscopia por Gram do líquido sinovial negativa NÃO descarta artrite séptica!</em> A sensibilidade do Gram é de apenas 50-70% para estafilococo e &lt; 30% para gonococo. Na dúvida, interne e cubra com antibiótico empírico.",
+            "<strong>Pérola 4 (Monoartrite em Renal Crônico):</strong> <em>Paciente renal crônico com gota não pode usar AINE (risco de piora dialítica) e nem colchicina plena (risco de neuro/miopatia grave).</em> O fármaco de escolha é o <strong>Corticosteroide oral (Prednisona 30-40 mg/dia)</strong> ou Infiltração intra-articular.",
+            "<strong>Pérola 5 (Losartana na Gota):</strong> <em>O anti-hipertensivo de escolha para o paciente gotoso é a Losartana</em>, pois inibe o transportador tubular renal URAT1, promovendo excreção uricosúrica benéfica. Os tiazídicos (hidroclorotiazida) e furosemida aumentam a reabsorção de urato e devem ser suspensos se possível.",
+            "<strong>Pérola 6 (Meta de Urato Treat-to-Target):</strong> <em>Meta padrão na gota: ácido úrico sérico &lt; 6,0 mg/dL. Meta em pacientes graves com tofos gotosos: ácido úrico &lt; 5,0 mg/dL!</em>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://www.reumatologia.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Reumatologia (SBR) — Consenso Brasileiro sobre o Diagnóstico e Tratamento da Gota 2024/2026</a>",
+            "<a href=\"https://rheumatology.org\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Rheumatology (ACR) — Guideline for the Management of Gout 2020 / Updated Recommendations 2025</a>",
+            "<a href=\"https://eular.org\" target=\"_blank\" rel=\"noopener noreferrer\">European Alliance of Associations for Rheumatology (EULAR) — Recommendations for the diagnosis and management of acute and chronic gout and septic arthritis 2024</a>",
+            "<a href=\"https://idsociety.org\" target=\"_blank\" rel=\"noopener noreferrer\">Infectious Diseases Society of America (IDSA) — Guidelines for the Diagnosis and Treatment of Native Joint Septic Arthritis in Adults and Children</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}

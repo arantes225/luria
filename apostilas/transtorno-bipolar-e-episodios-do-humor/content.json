@@ -1,0 +1,1683 @@
+{
+  "v": 2,
+  "s": "transtorno-bipolar-e-episodios-do-humor",
+  "t": "Transtorno Bipolar e Episódios do Humor",
+  "p": "Transtorno Bipolar e Episódios do Humor — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+  "a": "Saúde Mental",
+  "m": "Saúde Mental",
+  "h": [
+    "Apostila LURIA",
+    "Transtorno Bipolar e Episódios do Humor",
+    "Tratado de Alta Performance para Residência Médica, Revalida e ENAMED",
+    [
+      "Área: Saúde Mental",
+      "Matéria: Saúde Mental",
+      "Tema: Transtorno Bipolar e Episódios do Humor"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "0-procedencia-auditoria-de-acervo-e-benchmark",
+      "0. Procedência, auditoria de acervo e benchmark"
+    ],
+    [
+      "1-objetivos-e-mapa-de-raciocinio",
+      "1. Objetivos e mapa de raciocínio"
+    ],
+    [
+      "2-conceitos-fundamentais-e-nomes-sem-confusao",
+      "2. Conceitos fundamentais e nomes sem confusão"
+    ],
+    [
+      "3-epidemiologia-curso-e-prognostico",
+      "3. Epidemiologia, curso e prognóstico"
+    ],
+    [
+      "4-fisiopatologia-integrada-por-que-ritmo-energia-e-emocao-oscilam",
+      "4. Fisiopatologia integrada: por que ritmo, energia e emoção oscilam"
+    ],
+    [
+      "5-diagnostico-longitudinal-a-linha-do-tempo-e-o-exame-principal",
+      "5. Diagnóstico longitudinal: a linha do tempo é o exame principal"
+    ],
+    [
+      "6-diagnosticos-diferenciais-distinguir-e-reconhecer-coexistencia",
+      "6. Diagnósticos diferenciais: distinguir e reconhecer coexistência"
+    ],
+    [
+      "7-estratificacao-de-gravidade-e-local-de-cuidado",
+      "7. Estratificação de gravidade e local de cuidado"
+    ],
+    [
+      "8-tratamento-da-mania-aguda-conter-episodio-e-restabelecer-funcoes",
+      "8. Tratamento da mania aguda: conter episódio e restabelecer funções"
+    ],
+    [
+      "9-depressao-bipolar-diferente-da-depressao-unipolar-tambem-no-tratamento",
+      "9. Depressão bipolar: diferente da depressão unipolar também no tratamento"
+    ],
+    [
+      "10-tratamento-de-manutencao-e-prevencao-de-recaidas",
+      "10. Tratamento de manutenção e prevenção de recaídas"
+    ],
+    [
+      "11-litio-fisiologia-prescricao-por-nivel-e-seguranca",
+      "11. Lítio — fisiologia, prescrição por nível e segurança"
+    ],
+    [
+      "12-anticonvulsivantes-com-acao-sobre-humor-indicacoes-distintas",
+      "12. Anticonvulsivantes com ação sobre humor: indicações distintas"
+    ],
+    [
+      "13-antipsicoticos-eficacia-por-fase-e-efeitos-adversos",
+      "13. Antipsicóticos: eficácia por fase e efeitos adversos"
+    ],
+    [
+      "14-populacoes-especiais",
+      "14. Populações especiais"
+    ],
+    [
+      "15-seguranca-risco-e-crise-a-polaridade-nao-substitui-avaliacao",
+      "15. Segurança, risco e crise: a polaridade não substitui avaliação"
+    ],
+    [
+      "16-algoritmos-de-plantao-e-ambulatorio",
+      "16. Algoritmos de plantão e ambulatório"
+    ],
+    [
+      "17-casos-clinicos-autorais-comentados",
+      "17. Casos clínicos autorais comentados"
+    ],
+    [
+      "18-questoes-originais-comentadas",
+      "18. Questões originais comentadas"
+    ],
+    [
+      "19-referencias-verificadas-e-hierarquia-normativa",
+      "19. Referências verificadas e hierarquia normativa"
+    ],
+    [
+      "20-planejamento-visual-usar-imagens-que-ensinem-e-nao-estigmatizem",
+      "20. Planejamento visual: usar imagens que ensinem e não estigmatizem"
+    ],
+    [
+      "21-revisao-de-alto-rendimento",
+      "21. Revisão de alto rendimento"
+    ],
+    [
+      "22-matriz-de-competencias-qualidade-e-pendencias",
+      "22. Matriz de competências, qualidade e pendências"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA — Apostila 212 — Transtorno bipolar e episódios do humor</h1>"
+        ],
+        [
+          "p",
+          "<strong>Lote 10 · Saúde Mental · Data editorial:</strong> 15/10/2026.  \r<br><strong>Estado:</strong> RASCUNHO DIDÁTICO AUTORAL, NÃO PUBLICADO, SEM CERTIFICAÇÃO DE REVISÃO CLÍNICA INDEPENDENTE.  \r<br><strong>Recorte curricular:</strong> episódio maníaco, hipomaníaco, depressão bipolar, mistos, tipo I e II, ciclotimia, fatores de risco, diagnóstico diferencial, farmacoterapia por fase, seguimento, segurança e populações especiais. A aula <strong>211</strong> cobre depressão unipolar e segurança de modo amplo; a <strong>210</strong> contém semiologia e EEM; a <strong>215</strong> detalhará emergências/psicofarmacologia geral."
+        ],
+        [
+          "p",
+          "> <strong>EM 30 SEGUNDOS — PULO DO GATO LURIA</strong>\r<br>> <strong>Bipolar I</strong> exige <strong>ao menos um episódio maníaco</strong> na história; depressão maior <strong>não é obrigatória</strong> para confirmar bipolar I. <strong>Bipolar II</strong> exige ao menos um <strong>episódio hipomaníaco</strong> e um <strong>episódio depressivo maior</strong>, <strong>sem</strong> história de mania. Mania pode necessitar hospitalização e ter psicose; hipomania por definição não produz a gravidade funcional característica da mania. <strong>Lamotrigina não trata mania aguda. Antidepressivo isolado não é tratamento recomendado para depressão bipolar I.</strong> Lítio pode ser importante na manutenção, mas exige <strong>nível sérico e monitorização renal, tireoidiana, cálcio e interações</strong>."
+        ]
+      ]
+    ],
+    [
+      "0-procedencia-auditoria-de-acervo-e-benchmark",
+      0,
+      [
+        [
+          "2",
+          "0. Procedência, auditoria de acervo e benchmark"
+        ],
+        [
+          "p",
+          "<strong>Catálogo oficial da LURIA:</strong> o tema 212 corresponde à sequência prevista no \\`assets/js/apostilas-lotes-225.js\\`; a aula 211 previamente escrita cobre episódio depressivo em geral e a diferenciação clínica inicial da bipolaridade. Esta apostila aprofunda tratamento/curso bipolar, <strong>sem sobrescrever ou duplicar</strong> textos publicados."
+        ],
+        [
+          "p",
+          "<strong>GitHub:</strong> busca por nomes na árvore \\`apostilas/\\` da \\`main\\` não encontrou pasta específica para bipolaridade/manias. Trata-se de verificação de arquivos por caminho, não de demonstração de inexistência de qualquer passagem interna. Todo o novo conteúdo fica como rascunho separado."
+        ],
+        [
+          "p",
+          "<strong>Google Drive, efetivamente pesquisado e lido:</strong> buscas por “bipolar”, “transtorno bipolar” e “psiquiatria” não localizaram apostila integral. Foi lido \\`Tireoide Tireotoxicose e hipertireoidismo (1).pdf\\` (~2,6 mil caracteres), que documenta alterações da tireoide potencialmente confundidas com sintomas de hiperativação, bem como \\`06 - CEFALEIAS TRIGEMINO-AUTONOMICAS.pdf\\` (~4,4 mil, com menção a lítio em indicação neurológica distinta), e \\`02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf\\` (~20 mil caracteres, disfunção renal para contexto de segurança do lítio). Esses documentos <strong>não são benchmark do tratamento bipolar</strong>, apenas fontes de diferenciais clínicos/farmacológicos. Não afirmar equivalência nem origem Estratégia MED. <strong>Etapa zero integral incompleta</strong>."
+        ],
+        [
+          "p",
+          "<strong>Referências científicas principais, independentes dos PDFs do Drive:</strong> <strong>PCDT Transtorno Afetivo Bipolar do Tipo I</strong> do Ministério da Saúde: a página do portal informa atualização em 21/01/2025, mas o <strong>PDF efetivamente aberto e conferido é a Portaria SAS/MS nº 315, de 30/03/2016</strong>, com busca de literatura até setembro/2015. Trata-se de <strong>referência nacional histórica cujo conteúdo não pode ser considerado revisão científica de 2025</strong>; NICE <strong>CG185</strong> com emendas e alertas de valproato; CANMAT/ISBD <em>2023 Update</em> publicado em 2024; OMS mhGAP 2023. A correspondência de medicamentos com RENAME, regras de aquisição e produtos autorizados no Brasil em 2026 precisa de checagem antes de publicação prescritiva."
+        ]
+      ]
+    ],
+    [
+      "1-objetivos-e-mapa-de-raciocinio",
+      0,
+      [
+        [
+          "2",
+          "1. Objetivos e mapa de raciocínio"
+        ],
+        [
+          "p",
+          "O aluno deve ser capaz de:\r<br>1. Distinguir mania, hipomania, episódio depressivo, estado misto e eutimia usando duração, gravidade, alteração de energia e funcionamento.\r<br>2. Diferenciar bipolar I, bipolar II, ciclotimia e síndromes do humor induzidas por substância/condição médica.\r<br>3. Reconhecer depressão bipolar que se apresenta <strong>antes da primeira mania reconhecida</strong>.\r<br>4. Entender ritmo circadiano, sono, vulnerabilidade genética, neurobiologia e gatilhos de recaída.\r<br>5. Reconhecer mania grave, psicose, catatonia e risco ao autocuidado que demandam cuidado urgente.\r<br>6. Selecionar tratamento <strong>por fase</strong>: mania ≠ depressão bipolar ≠ prevenção de recaída.\r<br>7. Explicar lítio, antipsicóticos, anticonvulsivantes, efeitos adversos, níveis séricos e interações.\r<br>8. Descrever papel de psicoterapia, psicoeducação, rotina de sono, abordagem familiar e tratamento de substâncias.\r<br>9. Considerar gestação/puerpério, função renal, tireoide, idade, risco metabólico e segurança.\r<br>10. Resolver casos e questões, construindo seguimento realista no SUS."
+        ],
+        [
+          "p",
+          "<strong>Algoritmo mental inicial:</strong> mudança episódica de humor <strong>e energia/atividade</strong> → cronologia/duração e gravidade → diferenciar mania/hipomania de substância, privação de sono, tireotoxicose e outras causas → reconstruir episódios depressivos → classificar tipo I/II quando possível → avaliar segurança/necessidade de internação → escolher tratamento da fase → plano longitudinal e prevenção de recaída."
+        ]
+      ]
+    ],
+    [
+      "2-conceitos-fundamentais-e-nomes-sem-confusao",
+      0,
+      [
+        [
+          "2",
+          "2. Conceitos fundamentais e nomes sem confusão"
+        ],
+        [
+          "p",
+          "<strong>Humor</strong> é estado emocional predominante ao longo do tempo. <strong>Euforia/expansividade</strong> podem acompanhar mania, mas mania também pode ser muito <strong>irritável</strong>. <strong>Energia e atividade aumentadas</strong> são centrais; uma pessoa que simplesmente está feliz numa viagem, sem mudança de funcionamento, não tem episódio maníaco."
+        ],
+        [
+          "p",
+          "<strong>Eutimia</strong> descreve fase sem sintomas sindrômicos significativos de mania ou depressão, não significa ausência de vulnerabilidade a recaídas. <strong>Depressão bipolar</strong> é episódio depressivo que ocorre numa pessoa com bipolaridade — e pode ser indistinguível de depressão unipolar em entrevista transversal. O diagnóstico depende do <strong>curso de vida</strong>."
+        ],
+        [
+          "p",
+          "<strong>Estado misto / características mistas</strong> descreve coexistência de sintomas de polaridades opostas no episódio atual, por exemplo humor deprimido e desesperança simultâneos a energia intensa, pensamento acelerado e agitação relevante. A definição formal depende da CID-11 ou DSM-5-TR, que não devem ser combinados indiscriminadamente. <strong>Sintomas mistos podem associar-se a risco clínico importante</strong> e exigem avaliação especializada."
+        ],
+        [
+          "3",
+          "2.1 Manias e hipomanias não são simplesmente dois tamanhos da mesma alegria"
+        ],
+        [
+          "t",
+          [
+            "Dimensão",
+            "Mania",
+            "Hipomania"
+          ],
+          [
+            [
+              "Duração DSM típica",
+              "<strong>≥7 dias</strong> de padrão anormal, <strong>ou qualquer duração se hospitalização for necessária</strong>",
+              "<strong>≥4 dias consecutivos</strong>"
+            ],
+            [
+              "Humor/energia",
+              "Humor elevado, expansivo ou irritável <strong>e</strong> atividade/energia anormalmente aumentada",
+              "Mesma direção sindrômica, de intensidade menor"
+            ],
+            [
+              "Prejuízo",
+              "Geralmente prejuízo acentuado, psicose ou necessidade de hospitalização",
+              "Mudança clara observável, <strong>sem</strong> prejuízo grave ou hospitalização por síndrome"
+            ],
+            [
+              "Psicose",
+              "Pode existir",
+              "Se há psicose relacionada ao episódio, classificar como <strong>mania</strong>, não hipomania"
+            ],
+            [
+              "Tratamento",
+              "Pode demandar intervenção/hospitalização urgente",
+              "Requer avaliação e manejo para impedir progressão/recorrência"
+            ],
+            [
+              "Erro clássico",
+              "Dizer que exige sempre delírio/grandiosidade",
+              "Chamar mania grave de hipomania só porque durou quatro dias"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Critérios sintomáticos DSM para mania/hipomania:</strong> durante alteração de humor e energia, há conjunto de sintomas como grandiosidade/autoestima inflada, menor necessidade de sono, fala pressionada, fuga de ideias/pensamento acelerado, distratibilidade, aumento de atividade dirigida a objetivos/agitação e envolvimento excessivo em situações de consequências potencialmente prejudiciais. Em apresentação predominantemente <strong>irritável</strong>, o número mínimo de sintomas exigido é maior que quando há euforia/expansividade. Duração, prejuízo e exclusão de substâncias/condições médicas completam o diagnóstico."
+        ],
+        [
+          "p",
+          "<strong>Não confundir insônia com menor necessidade de sono:</strong> pessoa com insônia quer dormir, não consegue e fica cansada; na mania pode dormir muito pouco e relatar vigor sem fadiga, embora também possa ficar exausta em evolução grave. <strong>Redução de horas dormidas sem aumento de energia não basta</strong>."
+        ],
+        [
+          "3",
+          "2.2 Bipolar I, II e ciclotimia"
+        ],
+        [
+          "p",
+          "<strong>Bipolar I:</strong> história de <strong>ao menos um episódio maníaco</strong> completo, com ou sem episódios depressivos maiores. A mania pode ser o primeiro evento reconhecido ou surgir após anos de depressões tratadas como unipolares."
+        ],
+        [
+          "p",
+          "<strong>Bipolar II:</strong> requer <strong>hipomania + episódio depressivo maior</strong>, sem episódio maníaco na história. Bipolar II <strong>não é simplesmente “metade da gravidade”</strong>: a carga depressiva e perda funcional podem ser intensas; pessoas podem passar longos períodos deprimidas e procurar cuidado somente nesses momentos."
+        ],
+        [
+          "p",
+          "<strong>Ciclotimia:</strong> flutuações crônicas de sintomas hipomaníacos e depressivos subclínicos, por períodos prolongados (aproximadamente <strong>dois anos em adultos</strong> segundo DSM), sem preencher episódios completos em todo esse período, com critérios próprios. Não diagnosticar ciclotimia porque alguém “muda de humor ao longo do dia”; os episódios exigem padrão longitudinal."
+        ],
+        [
+          "p",
+          "<strong>Rapid cycling / ciclagem rápida:</strong> <strong>quatro ou mais episódios distintos de humor em 12 meses</strong>, com critérios de separação/remissão ou troca de polaridade. Não significa “troca de humor cinco vezes por dia”; esta última pode refletir reatividade afetiva, instabilidade emocional, uso de substâncias ou estado misto e exige outro raciocínio."
+        ]
+      ]
+    ],
+    [
+      "3-epidemiologia-curso-e-prognostico",
+      0,
+      [
+        [
+          "2",
+          "3. Epidemiologia, curso e prognóstico"
+        ],
+        [
+          "p",
+          "Transtorno bipolar pode começar na adolescência ou vida adulta jovem, mas a idade de reconhecimento varia; diagnósticos podem atrasar quando a primeira fase é depressiva. A prevalência muda conforme bipolar I, II, espectro, sistema diagnóstico e metodologia. <strong>Não confundir prevalência de sintomas hipomaníacos relatados com prevalência de transtorno bipolar confirmado</strong>, pois dormir menos por trabalho, uso de estimulantes e características temperamentais podem imitar sintomas."
+        ],
+        [
+          "p",
+          "O curso é frequentemente <strong>recorrente</strong>: episódios de mania/hipomania, depressão e fases eutímicas, com gravidade/tempo variados. Mesmo após remissão sindrômica, algumas pessoas mantêm sintomas residuais, problemas de sono, cognição ou dificuldade de função social. A persistência não é inevitável; tratamento longitudinal e apoio podem permitir recuperação e qualidade de vida."
+        ],
+        [
+          "p",
+          "<strong>Fatores associados a pior evolução:</strong> alta frequência de episódios, ausência de tratamento eficaz/adesão, uso problemático de substâncias, privação de sono, comorbidades e falta de suporte; vários são potencialmente modificáveis. O cuidado é de longo prazo, com revisão periódica, e não apenas uso pontual de medicação na fase aguda."
+        ]
+      ]
+    ],
+    [
+      "4-fisiopatologia-integrada-por-que-ritmo-energia-e-emocao-oscilam",
+      0,
+      [
+        [
+          "2",
+          "4. Fisiopatologia integrada: por que ritmo, energia e emoção oscilam"
+        ],
+        [
+          "3",
+          "4.1 Vulnerabilidade genética e redes de regulação"
+        ],
+        [
+          "p",
+          "Bipolaridade envolve predisposição hereditária complexa, sem gene diagnóstico único. Variantes genéticas influenciam circuitos de regulação afetiva e excitabilidade neural, modulados por ambiente e experiências. Histórico familiar de bipolaridade aumenta suspeita, mas não determina destino; ausência familiar não exclui."
+        ],
+        [
+          "p",
+          "Regiões pré-frontais modulam controle cognitivo e impulsos, enquanto redes límbicas e de recompensa participam de saliência, motivação e respostas emocionais. Alterações em neurotransmissão <strong>dopaminérgica, glutamatérgica, gabaérgica e de outros sistemas</strong> são investigadas; nenhum biomarcador isolado é suficientemente específico para fazer diagnóstico. A fisiopatologia deve orientar raciocínio e escolhas farmacológicas, não substituir entrevista."
+        ],
+        [
+          "3",
+          "4.2 Ritmo circadiano e sono como regulador"
+        ],
+        [
+          "p",
+          "Mudanças de turno, privação de sono, viagens com fuso, puerpério e irregularidade de rotina podem precipitar episódios em pessoas vulneráveis. O mecanismo envolve relógios biológicos, ritmicidade da liberação de hormônios, regulação de neurotransmissão e controle de excitação. <strong>Dormir pouco</strong> pode ser sinal precoce de mania e também gatilho de piora, criando ciclo de retroalimentação."
+        ],
+        [
+          "p",
+          "O estudante precisa perguntar: “Você precisava dormir menos e ficava bem, ou queria dormir e não conseguia?”; “Isso coincidiu com mudança de turno, viagem, nascimento de bebê ou estimulantes?”. Intervenções de rotina sono-vigília são complemento relevante à farmacoterapia."
+        ],
+        [
+          "3",
+          "4.3 Neuroplasticidade e estresse"
+        ],
+        [
+          "p",
+          "Episódios podem associar-se a mudanças em regulação do eixo de estresse, cognição e circuitos de recompensa. Estressores importantes, trauma, infecção/doença clínica e substâncias podem precipitar sintomas. Porém o transtorno não é culpa da pessoa/família, nem explicado por uma única “falha de serotonina”. A psicoterapia de suporte, o tratamento medicamentoso e intervenções sociais atuam sobre componentes diferentes de um processo multifatorial."
+        ]
+      ]
+    ],
+    [
+      "5-diagnostico-longitudinal-a-linha-do-tempo-e-o-exame-principal",
+      0,
+      [
+        [
+          "2",
+          "5. Diagnóstico longitudinal: a linha do tempo é o exame principal"
+        ],
+        [
+          "3",
+          "5.1 Como perguntar por episódio maníaco sem sugerir a resposta"
+        ],
+        [
+          "p",
+          "Comece por mudanças objetivas: “Houve alguma fase em que precisou dormir muito menos, mas continuou com muita energia?”; “Ficou mais falante, assumiu projetos que outras pessoas acharam muito diferentes?”; “Teve consequências em dinheiro, relações, trabalho ou segurança?”. Depois investigue duração, observação por familiares, internações, necessidade de medicação e contexto de substâncias. Não confundir aumento de produtividade por prazo curto com episódio."
+        ],
+        [
+          "p",
+          "A anamnese da <strong>depressão</strong> segue aula 211, mas aqui perguntar em todas as fases depressivas por sintomas mistos, irritabilidade/ativação, histórico de resposta inadequada a antidepressivos e mudanças de humor prévias. Uma pessoa em depressão grave pode não recordar períodos de hipomania como problema, porque os viveu como “minha melhor versão”; familiares e registros anteriores podem ser úteis com consentimento."
+        ],
+        [
+          "3",
+          "5.2 Entrevista e EEM por fase"
+        ],
+        [
+          "p",
+          "<strong>Mania:</strong> pode haver aparência exuberante, inquietação, fala pressionada, distração, fuga de ideias, humor expansivo ou irritável, grandiosidade, redução do sono, julgamento prejudicado e psicose. A pessoa pode negar necessidade de cuidado. <strong>Hipomania:</strong> comunicação acelerada e aumento de atividade, mas sem grande prejuízo, psicose ou internação decorrente do episódio. <strong>Depressão bipolar:</strong> lentificação, tristeza, anedonia, culpa e risco de autoagressão, por vezes com ativação mista. <strong>Estado misto:</strong> sintomas depressivos e maníacos no mesmo período, sem a falsa ideia de que “os sintomas se cancelam”."
+        ],
+        [
+          "3",
+          "5.3 Rastreios e por que o MDQ não é diagnóstico"
+        ],
+        [
+          "p",
+          "Questionários como <strong>Mood Disorder Questionnaire (MDQ)</strong> podem auxiliar rastreio em certas populações, mas têm sensibilidade/especificidade variáveis, especialmente para bipolar II; não substituem entrevista de episódios, duração, gravidade e contexto. Um questionário com vários “sim” a energia/irritabilidade em usuário de estimulantes <strong>não confirma</strong> bipolaridade."
+        ],
+        [
+          "3",
+          "5.4 Exames de outras condições"
+        ],
+        [
+          "p",
+          "Não existe dosagem de serotonina/dopamina que confirme bipolaridade. Investigar <strong>TSH/T4</strong> quando há suspeita de tireotoxicose ou antes de medicações como lítio; função renal, eletrólitos, hemograma, função hepática, glicemia/lipídios, ECG quando indicado e avaliação de gestação conforme tratamento. Urina toxicológica pode ajudar em determinados cenários de intoxicação, mas sua interpretação considera janela temporal e falsos positivos/negativos; não pedir sem objetivo clínico."
+        ]
+      ]
+    ],
+    [
+      "6-diagnosticos-diferenciais-distinguir-e-reconhecer-coexistencia",
+      0,
+      [
+        [
+          "2",
+          "6. Diagnósticos diferenciais: distinguir e reconhecer coexistência"
+        ],
+        [
+          "t",
+          [
+            "Hipótese",
+            "Pista discriminadora",
+            "Erro perigoso"
+          ],
+          [
+            [
+              "<strong>Depressão unipolar</strong>",
+              "Episódios depressivos sem mania/hipomania ao longo da história adequadamente investigada",
+              "Não pesquisar polaridade antes de ISRS"
+            ],
+            [
+              "<strong>TDAH</strong>",
+              "Desatenção/impulsividade persistentes desde desenvolvimento, não apenas episódios de dias/semanas",
+              "Diagnosticar mania por distratibilidade crônica"
+            ],
+            [
+              "<strong>Transtornos de personalidade/instabilidade afetiva</strong>",
+              "Reatividade a contexto relacional, padrão longitudinal de funcionamento, sem episódios sustentados típicos",
+              "Chamar variação diária de “ciclagem rápida”"
+            ],
+            [
+              "<strong>Tireotoxicose</strong>",
+              "Taquicardia, tremor, intolerância ao calor, perda de peso, hiperreflexia, TSH suprimido em muitas formas",
+              "Ignorar causa orgânica de insônia/agitação"
+            ],
+            [
+              "<strong>Estimulantes/álcool/cannabis/abstinência</strong>",
+              "Início próximo a uso ou retirada; toxidrome e cronologia",
+              "Diagnosticar bipolar primário sem revisar substâncias"
+            ],
+            [
+              "<strong>Corticoides e outros fármacos</strong>",
+              "Alteração temporal com início/elevação de dose",
+              "Manter causa iatrogênica sem revisão"
+            ],
+            [
+              "<strong>Transtorno esquizoafetivo/esquizofrenia</strong>",
+              "Relação temporal dos sintomas psicóticos com episódios de humor e períodos fora deles",
+              "Definir esquizofrenia por delírio num episódio maníaco"
+            ],
+            [
+              "<strong>Delirium/encefalite/neurológico</strong>",
+              "Alteração aguda de atenção/consciência, febre, déficit focal ou convulsão",
+              "Internar como “mania pura” sem avaliação clínica"
+            ],
+            [
+              "<strong>Transtornos do sono</strong>",
+              "Privação de sono com cansaço, apneia, turnos e cronobiologia",
+              "Confundir insônia com menor necessidade de sono"
+            ],
+            [
+              "<strong>Luto, crise situacional</strong>",
+              "Contexto/curso compatível, sem episódio sindrômico completo",
+              "Patologizar toda mudança emocional intensa"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.1 O diagnóstico pode mudar legitimamente ao longo do tempo"
+        ],
+        [
+          "p",
+          "Pacientes inicialmente tratados por depressão unipolar podem desenvolver primeiro episódio maníaco/hipomaníaco anos depois. Isso não prova que “o diagnóstico anterior era negligente” se a história disponível não continha evidência prévia; entretanto, <strong>perguntar ativamente</strong> aumenta chance de identificar episódios já ocorridos. Registrar raciocínio e incertezas permite reclassificação segura sem rotular permanentemente por uma única consulta."
+        ],
+        [
+          "3",
+          "6.2 Mania induzida por antidepressivo: interpretação cuidadosa"
+        ],
+        [
+          "p",
+          "Sintomas de mania emergentes durante uso de antidepressivo ou estimulante precisam de avaliação urgente de segurança, revisão da medicação e da persistência/curso após cessar efeitos fisiológicos. A relação temporal pode indicar efeito induzido ou revelar vulnerabilidade bipolar; <strong>não é regra automática que toda agitação inicial por ISRS seja mania</strong>. Buscar humor/energia aumentados, menor necessidade de sono, duração, alteração do comportamento e consequências."
+        ]
+      ]
+    ],
+    [
+      "7-estratificacao-de-gravidade-e-local-de-cuidado",
+      0,
+      [
+        [
+          "2",
+          "7. Estratificação de gravidade e local de cuidado"
+        ],
+        [
+          "p",
+          "<strong>Mania grave:</strong> psicose, desorganização intensa, gastos/atos de risco, ausência de alimentação/sono, agressividade, incapacidade de proteger-se e comorbidades clínicas podem exigir <strong>avaliação emergencial e hospitalização</strong>. Não decidir segurança por um único escore. Medidas devem proteger pessoa e equipe com abordagem respeitosa e menos restritiva possível."
+        ],
+        [
+          "p",
+          "<strong>Hipomania sem ameaça imediata:</strong> avaliação clínica oportuna, confirmação temporal, orientação sobre sono/substâncias, contato com serviços, acompanhamento e prevenção de escalada, incluindo ajuste terapêutico. Não ignorar hipomania apenas porque a pessoa está “produtiva”."
+        ],
+        [
+          "p",
+          "<strong>Depressão bipolar importante:</strong> avaliar diretamente pensamentos de autoagressão, capacidade de cuidar-se, sintomas psicóticos/catatonia, falta de alimentação/hidratação, suporte e acesso. Caso haja perigo imediato, garantir cuidado urgente. <strong>Não chamar de depressão unipolar por ausência de mania durante a visita</strong>."
+        ],
+        [
+          "p",
+          "<strong>Situação mista:</strong> combinando desesperança/depressão com agitação/energia/impulsividade, a equipe deve avaliar gravidade e segurança com cuidado particular. A NICE CG185 recomenda seguir caminhos de tratamento de <strong>mania</strong> quando há estado afetivo misto e acompanhar depressão, ao invés de escolher antidepressivo em monoterapia."
+        ]
+      ]
+    ],
+    [
+      "8-tratamento-da-mania-aguda-conter-episodio-e-restabelecer-funcoes",
+      0,
+      [
+        [
+          "2",
+          "8. Tratamento da mania aguda: conter episódio e restabelecer funções"
+        ],
+        [
+          "3",
+          "8.1 Passos de início"
+        ],
+        [
+          "p",
+          "1. <strong>Avaliar segurança e condições clínicas.</strong> Há intoxicação, delirium, convulsão, febre, tireotoxicose, doença neurológica, privação extrema de sono, uso de corticoide/estimulante?\r<br>2. <strong>Revisar medicações.</strong> Se mania começou durante antidepressivo, considerar sua suspensão/ajuste sob supervisão; revisar outros agentes ativadores.\r<br>3. <strong>Identificar cuidados urgentes.</strong> Incapacidade de dormir/comer, psicose, desorganização, risco a si/terceiros ou suporte insuficiente pode justificar hospitalização.\r<br>4. <strong>Escolher estabilização por evidência.</strong> Antipsicótico e/ou lítio/divalproato são opções comuns em diretrizes, com decisão conforme gravidade e comorbidades.\r<br>5. <strong>Acompanhar resposta e efeitos adversos.</strong> Peso/PA, hidratação, sedação, sintomas extrapiramidais, ECG se risco, função renal/hepática conforme medicamento.\r<br>6. <strong>Preparar prevenção desde a crise.</strong> Após controle, construir rotina, adesão, rede e acompanhamento; não encerrar cuidado quando a agitação cessa."
+        ],
+        [
+          "3",
+          "8.2 Tratamento farmacológico por perfil"
+        ],
+        [
+          "p",
+          "<strong>Antipsicóticos de segunda geração</strong> como quetiapina, risperidona, aripiprazol, olanzapina e outros com evidência podem reduzir agitação, pensamento acelerado, psicose e alterações do humor em mania. A escolha precisa considerar <strong>efeitos metabólicos</strong> (peso, glicose, lipídios), sedação, acatisia/extrapiramidais, prolactina, QT e interações. A classe é heterogênea: aripiprazol frequentemente menos sedativo, mas pode provocar acatisia; olanzapina pode induzir ganho ponderal importante; risperidona pode elevar prolactina/EPS."
+        ],
+        [
+          "p",
+          "<strong>Lítio</strong> é opção para mania e manutenção, mas exige função renal, hidratação, níveis séricos e tolerabilidade; em pessoa extremamente agitada/desidratada, pode não ser a escolha inicial mais simples sem avaliação clínica apropriada. <strong>Divalproato/valproato</strong> tem eficácia antimaníaca em vários contextos, mas risco reprodutivo/teratogênico, hepático, hematológico e metabólico limita uso; restrições regulatórias atuais variam por país. <strong>Carbamazepina</strong> possui interações enzimáticas, hiponatremia, eventos hematológicos e risco fetal; não é primeira escolha universal."
+        ],
+        [
+          "p",
+          "<strong>CANMAT/ISBD</strong> posiciona lítio, quetiapina, divalproato e alguns antipsicóticos como opções de primeira linha de mania adulta bipolar I, isolados ou combinações apropriadas. <strong>NICE CG185</strong> propõe antipsicóticos em certos cenários de mania e lítio conforme resposta. <strong>Não substituir um guia pelo outro sem explicar divergência</strong>."
+        ],
+        [
+          "3",
+          "8.3 Lamotrigina NÃO trata mania aguda"
+        ],
+        [
+          "p",
+          "A lamotrigina tem papel especialmente em episódios depressivos bipolares selecionados e prevenção de recaídas depressivas, mas <strong>não é agente antimaníaco de ação aguda recomendada</strong>. NICE CG185 e CANMAT/ISBD explicitamente não a recomendam para tratamento de mania. A pegadinha é confundir “estabilizador de humor” como classe de fármacos com eficácia idêntica para qualquer polaridade."
+        ],
+        [
+          "3",
+          "8.4 Eletroconvulsoterapia em mania grave"
+        ],
+        [
+          "p",
+          "ECT pode ser considerada por equipe especializada quando há mania severa prolongada/life-threatening ou resistência a tratamento, conforme condição e diretrizes. Requer anestesia, consentimento conforme capacidade e contexto legal e avaliação de riscos. Não é punição, nem técnica de rotina para hipomania leve."
+        ]
+      ]
+    ],
+    [
+      "9-depressao-bipolar-diferente-da-depressao-unipolar-tambem-no-tratamento",
+      0,
+      [
+        [
+          "2",
+          "9. Depressão bipolar: diferente da depressão unipolar também no tratamento"
+        ],
+        [
+          "3",
+          "9.1 Por que a polaridade muda a prescrição?"
+        ],
+        [
+          "p",
+          "Na depressão bipolar, a pessoa pode relatar tristeza, anedonia, culpa, lentificação, aumento ou perda de sono, sintomas somáticos e pensamentos de autoagressão — os mesmos domínios do episódio depressivo maior unipolar. A diferenciação está no <strong>histórico de episódios maníacos/hipomaníacos</strong>. O tratamento deve oferecer benefício antidepressivo <strong>sem induzir mudança de polaridade, agitação mista ou ciclagem</strong>, além de favorecer prevenção de futuras recaídas."
+        ],
+        [
+          "p",
+          "<strong>CANMAT/ISBD 2023 Update</strong>, para <strong>depressão bipolar I</strong>, lista como opções de primeira linha <strong>quetiapina, lítio, lamotrigina, cariprazina e lurasidona</strong> conforme esquema e associações especificados. As hierarquias e evidências variam entre agentes; <strong>lurasidona associada a lítio/divalproato</strong> possui indicação em algoritmo, e lurasidona isolada tem dados para certos pacientes. <strong>NICE CG185</strong> apresenta outro algoritmo centrado em quetiapina ou combinação fluoxetina–olanzapina em determinados cenários e considera lítio/lamotrigina conforme estado atual. Apresentar <strong>duas diretrizes como opções contextualizadas</strong>, não somar todos os fármacos."
+        ],
+        [
+          "p",
+          "Para <strong>bipolar II depressivo</strong>, CANMAT/ISBD lista <strong>quetiapina</strong> como primeira linha; lítio, lamotrigina e algumas outras estratégias podem ser alternativas de segunda linha em pacientes selecionados. Isso <strong>não significa</strong> que as recomendações para bipolar I e II sejam intercambiáveis em qualquer país/produto."
+        ],
+        [
+          "3",
+          "9.2 Por que antidepressivo isolado não é escolha de rotina em bipolar I?"
+        ],
+        [
+          "p",
+          "O antidepressivo em monoterapia pode elevar risco de <strong>virada de polaridade</strong> ou instabilidade de humor em grupos suscetíveis e tem benefício incerto em determinados cenários de bipolaridade. CANMAT/ISBD classifica <strong>antidepressivo isolado como não recomendado</strong> para depressão bipolar I. Em bipolar II, certas diretrizes permitem antidepressivo em contexto selecionado de depressão “pura”, sem sintomas mistos, com supervisão e avaliação de riscos, mas isso não autoriza prescrição automática pelo generalista sem reconstruir episódios."
+        ],
+        [
+          "p",
+          "Se a pessoa estava usando ISRS e desenvolveu <strong>mania</strong>, a equipe precisa reavaliar o papel do antidepressivo e considerar interrupção apropriada, com cuidado de síndrome de retirada e avaliação de saúde mental. Não afirmar que qualquer melhora de energia no antidepressivo equivale a mania: pode ser recuperação do humor; a síndrome exige critérios claros."
+        ],
+        [
+          "3",
+          "9.3 Quetiapina e antipsicóticos na depressão bipolar"
+        ],
+        [
+          "p",
+          "A quetiapina tem evidência para depressão bipolar e mania, diferenciando-se de certos agentes que são eficazes em mania, mas não demonstraram a mesma eficácia para depressão bipolar em monoterapia (por exemplo, aripiprazol não é recomendado como monoterapia para depressão bipolar I nos critérios CANMAT citados). <strong>Não assumir que qualquer antipsicótico “estabiliza tudo”</strong>."
+        ],
+        [
+          "p",
+          "A quetiapina pode causar sonolência/sedação, hipotensão ortostática, efeitos metabólicos, ganho de peso e alterações de lipídios/glicose. O tratamento requer registro de peso/BMI, pressão, perfil metabólico e vigilância de sedação; riscos variam por dose e comorbidades. Um paciente com diabetes não fica necessariamente impedido de usá-la, mas a escolha deve discutir efeitos e alternativas."
+        ],
+        [
+          "p",
+          "A lurasidona pode apresentar acatisia, náusea e interação medicamentosa; a cariprazina tem perfil farmacológico distinto e pode gerar acatisia. <strong>Verificar registro e acesso real no Brasil</strong> antes de apresentá-las como medicação de rotina SUS. Não usar lista CANMAT de opções como prova de incorporação à RENAME."
+        ],
+        [
+          "3",
+          "9.4 Lamotrigina no polo depressivo"
+        ],
+        [
+          "p",
+          "Lamotrigina atua principalmente modulando canais de sódio e liberação de neurotransmissores excitatórios. Seu papel é relevante na <strong>prevenção de episódios depressivos</strong> e em certas estratégias de depressão bipolar; a <strong>titulação é lenta</strong> por risco de exantema grave, incluindo <strong>síndrome de Stevens–Johnson/necrólise epidérmica tóxica</strong>, principalmente com subida rápida ou associação com <strong>valproato</strong>. O aumento de dose e eventual reintrodução após período sem uso devem seguir bula e avaliação profissional; não reiniciar automaticamente dose plena após interrupção."
+        ],
+        [
+          "p",
+          "<strong>Lamotrigina não é escolha para aliviar mania grave na emergência.</strong> A rapidez de benefício e o tempo para alcançar doses efetivas precisam ser considerados: numa depressão bipolar grave com risco imediato, a lentidão de titulação pode exigir estratégia complementar de resposta mais rápida."
+        ],
+        [
+          "3",
+          "9.5 Lítio e depressão bipolar"
+        ],
+        [
+          "p",
+          "O lítio pode ajudar no tratamento de depressão bipolar em certos esquemas e é medicamento de forte papel na <strong>manutenção de bipolaridade</strong>, com evidência de redução de recorrência e associação com menor risco de comportamentos suicidas em estudos/populações; esse benefício <strong>não elimina avaliação individual de segurança nem garante proteção imediata</strong> em crises. Dado que o fármaco tem janela terapêutica relativamente estreita, ajuste deve se apoiar em sintomas, função renal, interações e <strong>litemia</strong>."
+        ]
+      ]
+    ],
+    [
+      "10-tratamento-de-manutencao-e-prevencao-de-recaidas",
+      0,
+      [
+        [
+          "2",
+          "10. Tratamento de manutenção e prevenção de recaídas"
+        ],
+        [
+          "3",
+          "10.1 O que se mantém quando sintomas desaparecem?"
+        ],
+        [
+          "p",
+          "Remissão de mania/depressão não equivale a cura definitiva da vulnerabilidade a novos episódios. Planejar seguimento em fase eutímica é parte essencial, com metas de <strong>qualidade de vida, sono, prevenção de recaída, proteção funcional, manejo de efeitos adversos e adesão voluntária informada</strong>. A NICE CG185 considera <strong>lítio como primeira linha de longo prazo</strong>, informando à pessoa que é das opções mais eficazes de manutenção, enquanto CANMAT/ISBD também reconhece quetiapina, divalproato, lamotrigina e outras estratégias conforme polaridade anterior e tolerabilidade."
+        ],
+        [
+          "p",
+          "<strong>Escolher pelo padrão de recaída e pela resposta anterior:</strong> paciente com recaídas maníacas graves pode precisar de agente fortemente antimaníaco; predominância depressiva com baixa frequência de mania pode favorecer outras combinações. Se tratamento de fase aguda foi efetivo e tolerado, continuar estratégia muitas vezes é razoável, ajustando no longo prazo."
+        ],
+        [
+          "3",
+          "10.2 Psicoeducação: identificar pródromos"
+        ],
+        [
+          "p",
+          "<strong>Pródromo maníaco:</strong> redução de sono, projetos em excesso, aumento de fala, irritabilidade, maior uso de substâncias, gastos/impulsividade ou redução de reconhecimento de necessidade de tratamento. <strong>Pródromo depressivo:</strong> isolamento, lentificação, tristeza persistente, ruminação, alterações de sono e redução de autocuidado. Sinais individuais variam; a pessoa e apoiadores consentidos devem ajudar a construir lista de sinais precoces."
+        ],
+        [
+          "p",
+          "<strong>Plano:</strong> identificar quando contatar equipe, ajustar rotina de sono, reduzir substâncias/gatilhos, não mudar medicação por conta própria, intensificar monitorização clínica e discutir suporte para decisões importantes durante episódio. O objetivo não é controlar toda escolha da pessoa, mas evitar perdas funcionais e emergências."
+        ],
+        [
+          "3",
+          "10.3 Terapias psicossociais"
+        ],
+        [
+          "p",
+          "<strong>Psicoeducação estruturada</strong> apresenta boa evidência para melhorar conhecimento, reconhecimento de sinais precoces e adesão, especialmente como adjuvante ao tratamento farmacológico. <strong>Terapia cognitivo-comportamental</strong> pode ajudar sintomas residuais, depressão e gestão de crenças/comportamentos. <strong>Terapia focada na família</strong> favorece comunicação e manejo de conflitos, com consentimento e sem culpar familiares. <strong>Terapia interpessoal e de ritmo social</strong> busca proteger regularidade de sono/atividade e lidar com mudanças de papel."
+        ],
+        [
+          "p",
+          "Pedir “evitar todo estresse para sempre” é irreal e pode gerar culpa. Negociar estratégias concretas: rotina de sono consistente, plano para viagens/turnos, avisos precoces de recaída, apoio a estudos/trabalho e períodos de licença quando necessários."
+        ],
+        [
+          "3",
+          "10.4 Substâncias, obesidade e saúde física"
+        ],
+        [
+          "p",
+          "Comorbidades cardiometabólicas, tabagismo, álcool e outras substâncias podem modificar prognóstico e risco das medicações. Monitorização da pressão, peso, glicemia e lipídios acompanha risco intrínseco e iatrogênico, sobretudo em antipsicóticos. Há espaço para atividade física adaptada e programas de cessação tabágica/álcool, integrados à saúde mental. Na abordagem de substâncias, evitar punição ou exclusão de serviços."
+        ],
+        [
+          "3",
+          "10.5 Não interromper estabilizador abruptamente"
+        ],
+        [
+          "p",
+          "A suspensão rápida de lítio pode aumentar risco de recaída, inclusive mania; quando precisa ser retirado, NICE CG185 recomenda redução <strong>ao menos durante quatro semanas e preferencialmente até três meses</strong>, quando clinicamente viável, com vigilância adicional. Em quadro de <strong>toxicidade do lítio</strong> ou condição aguda, a decisão de suspender é emergencial e segue outro raciocínio — não insistir em redução lenta enquanto paciente está intoxicado."
+        ],
+        [
+          "p",
+          "Se gravidez é planejada, renal piora ou efeitos adversos se acumulam, discutir troca de modo <strong>pré-concepcional e gradual</strong>, sempre considerando prevenção de episódios graves."
+        ]
+      ]
+    ],
+    [
+      "11-litio-fisiologia-prescricao-por-nivel-e-seguranca",
+      0,
+      [
+        [
+          "2",
+          "11. Lítio — fisiologia, prescrição por nível e segurança"
+        ],
+        [
+          "3",
+          "11.1 Por que há necessidade de monitorização?"
+        ],
+        [
+          "p",
+          "Lítio é cátion administrado por via oral, excretado predominantemente por rins, com <strong>estreita distância entre exposição eficaz e exposição tóxica</strong>. Variações de filtração renal, estado hídrico/sódio, doença aguda e interações medicamentosas podem elevar litemia. Ajuste deve considerar <strong>formulação, dose diária, horários, função renal, sintomas e amostra sérica colhida corretamente</strong>, evitando associar uma dose fixa a uma concentração garantida."
+        ],
+        [
+          "p",
+          "Os mecanismos moleculares incluem modulação de sistemas intracelulares de sinalização e neuroplasticidade, não simplesmente “aumento de serotonina”. O benefício preventivo depende de continuidade, adequação de nível, tolerância e acompanhamento."
+        ],
+        [
+          "3",
+          "11.2 Antes de iniciar"
+        ],
+        [
+          "p",
+          "A NICE CG185 recomenda:\r<li>peso/BMI e avaliação de comorbidades;</li>\r<li><strong>hemograma</strong>, ureia/eletrólitos incluindo <strong>cálcio</strong>, eTFG/função renal;</li>\r<li><strong>função tireoidiana</strong>;</li>\r<li><strong>ECG</strong> se doença cardiovascular ou fatores de risco;</li>\r<li>revisar gravidez possível/planejada e contracepção, interações, acesso a monitorização laboratorial;</li>\r<li>pactuar educação para reconhecer toxicidade, doença aguda e manutenção de hidratação.</li>"
+        ],
+        [
+          "p",
+          "Não é seguro prescrever lítio em paciente com doença renal importante sem avaliação adequada nem omitir risco potencial por já ter sido usado antes."
+        ],
+        [
+          "3",
+          "11.3 Litemia e interpretação"
+        ],
+        [
+          "p",
+          "Na primeira prescrição, NICE orienta <strong>dosar lítio uma semana após início</strong>, novamente <strong>uma semana após cada mudança de dose</strong> e semanalmente até estabilizar. A amostra deve respeitar protocolo para <strong>nível de vale aproximadamente 12 horas após última dose</strong> em esquemas adequados; informar horário e formulação ao laboratório. Uma coleta logo após ingestão pode superestimar nível de manutenção e gerar decisões erradas."
+        ],
+        [
+          "p",
+          "<strong>Faixa de referência de NICE para quem inicia lítio:</strong> <strong>0,6–0,8 mmol/L</strong> como objetivo habitual de manutenção. Em pessoas com recaídas em tratamento ou sintomas residuais importantes, NICE admite testar <strong>0,8–1,0 mmol/L</strong> durante período apropriado, com mais monitorização. Algumas diretrizes usam alvos diferentes em mania aguda/idosos. <strong>Não transportar a meta de mania aguda a uma idosa com função renal reduzida</strong>, nem tratar valor do laboratório de forma isolada sem a situação clínica."
+        ],
+        [
+          "p",
+          "<strong>Monitorização:</strong> litemia a cada <strong>três meses no primeiro ano</strong>; depois a cada <strong>seis meses</strong> em geral, ou a cada três meses em idosos, usuários de interações, litemia elevada, função renal/tireoidiana alterada ou adesão/controle problemáticos. Peso/BMI, ureia/eletrólitos, eTFG, <strong>cálcio e função tireoidiana pelo menos semestralmente</strong> conforme NICE, com maior frequência por condição."
+        ],
+        [
+          "3",
+          "11.4 Efeitos adversos e toxicidade"
+        ],
+        [
+          "p",
+          "<strong>Comuns:</strong> tremor fino, poliúria/polidipsia (possível defeito de concentração urinária/nefrógeno), náuseas, ganho ponderal em parte dos pacientes, acne/alterações cutâneas e disfunção tireoidiana. <strong>Em uso crônico:</strong> vigiar doença renal crônica, hipotireoidismo e hiperparatireoidismo/hipercalcemia. A decisão de manter depende do benefício, da trajetória renal, idade e alternativas."
+        ],
+        [
+          "p",
+          "<strong>Sinais de toxicidade:</strong> tremor grosso novo ou progressivo, vômitos, diarreia, ataxia, fala arrastada, confusão, sonolência importante e, em quadros graves, convulsão/alteração cardíaca. Suspeita de toxicidade exige <strong>avaliação urgente</strong>, litemia, eletrólitos e função renal conforme equipe; a gravidade clínica não se resume a uma concentração única e pode existir neurotoxicidade com níveis não dramaticamente elevados em subgrupos."
+        ],
+        [
+          "3",
+          "11.5 Interações que caem em prova"
+        ],
+        [
+          "p",
+          "<strong>AINEs</strong> (como ibuprofeno e naproxeno) podem reduzir depuração renal de lítio e elevar sua concentração; orientar não iniciar indiscriminadamente, especialmente automedicação. <strong>IECA/BRAs</strong>, diuréticos tiazídicos e outros fármacos também podem aumentar níveis ou modificar função renal, requerendo revisão clínica e monitorização. <strong>Desidratação</strong> por gastroenterite, febre ou baixa ingesta pode concentrar lítio e precipitar toxicidade."
+        ],
+        [
+          "p",
+          "Não recomendar “cortar todo sal” de maneira abrupta: mudanças importantes de sódio e hidratação afetam reabsorção renal de lítio. A pessoa deve manter ingesta de líquidos/sódio regular apropriada a sua saúde e buscar orientação se ficar agudamente doente."
+        ],
+        [
+          "p",
+          "<strong>Alerta de continuidade:</strong> se insuficiência renal progride em medidas sucessivas, discutir com nefrologia e especialista em transtorno bipolar. A decisão não é automática por eTFG isolada, mas deve ser informada e segura."
+        ]
+      ]
+    ],
+    [
+      "12-anticonvulsivantes-com-acao-sobre-humor-indicacoes-distintas",
+      0,
+      [
+        [
+          "2",
+          "12. Anticonvulsivantes com ação sobre humor: indicações distintas"
+        ],
+        [
+          "3",
+          "12.1 Valproato/divalproato"
+        ],
+        [
+          "p",
+          "Valproato eleva disponibilidade de GABA e altera canais/sinalização neuronal, com atividade antimaníaca em cenários clínicos. Efeitos incluem ganho de peso, tremor, sedação, alterações gastrointestinais, <strong>trombocitopenia</strong>, hepatotoxicidade e, raramente, pancreatite, além de alterações endócrino-metabólicas. Solicitar <strong>hemograma/plaquetas e função hepática</strong> antes e ao longo conforme guideline; monitorar concentração em circunstâncias selecionadas de toxicidade, má adesão ou resposta insuficiente, não como teste único de eficácia."
+        ],
+        [
+          "p",
+          "<strong>Risco reprodutivo importante:</strong> uso na gestação associa-se a malformações congênitas e problemas do neurodesenvolvimento; evitar em pessoas que podem engravidar quando alternativas adequadas existem, considerando restrições regulatórias locais e plano pré-concepcional. Também existem alertas regulatórios sobre potenciais riscos associados à exposição <strong>paterna</strong> ao valproato em janela próxima da concepção (MHRA/Reino Unido), com orientações específicas. <strong>Não copiar literalmente a proibição britânica para o Brasil</strong> sem conferir Anvisa/PCDT; mas o risco exige consentimento documentado e decisão especializada."
+        ],
+        [
+          "3",
+          "12.2 Lamotrigina e o risco cutâneo"
+        ],
+        [
+          "p",
+          "Reforçando: <strong>lamotrigina não é antimaníaca</strong>. Usada em depressão bipolar/manutenção quando apropriada, necessita <strong>titulação lenta</strong>, por risco de exantema grave. O <strong>valproato inibe metabolismo da lamotrigina</strong>, demandando regime de titulação ainda mais cuidadoso e podendo aumentar risco cutâneo. Se surgir exantema importante, lesão de mucosas, febre ou sintomas sistêmicos, orientar avaliação urgente; nunca ignorar rash novo por acreditar que “toda mancha é leve”."
+        ],
+        [
+          "p",
+          "A eficácia de lamotrigina não a torna indicada para resolver insônia/manias em poucas horas: existe latência para alcançar dose terapêutica. Avaliar método contraceptivo, gestação e interações que podem alterar níveis, conforme bula."
+        ],
+        [
+          "3",
+          "12.3 Carbamazepina e alternativas"
+        ],
+        [
+          "p",
+          "Carbamazepina tem ação em canais de sódio, atividade antimaníaca em alguns pacientes, mas traz <strong>interações por indução enzimática</strong>, potencial de hiponatremia, alterações hematológicas, reações cutâneas graves e risco reprodutivo. Monitorar hemograma, função hepática e sódio conforme risco, interações com contraceptivos e outros psicofármacos. Não posicioná-la como primeira linha universal só por ser disponível em outro contexto do SUS."
+        ],
+        [
+          "p",
+          "<strong>Topiramato/gabapentina:</strong> não são tratamentos de primeira linha estabelecidos para mania bipolar; o fato de um medicamento ser “antiepiléptico” não garante eficácia estabilizadora de humor. CANMAT/ISBD não recomenda topiramato/gabapentina como tratamento padrão de mania."
+        ]
+      ]
+    ],
+    [
+      "13-antipsicoticos-eficacia-por-fase-e-efeitos-adversos",
+      0,
+      [
+        [
+          "2",
+          "13. Antipsicóticos: eficácia por fase e efeitos adversos"
+        ],
+        [
+          "3",
+          "13.1 Mecanismos gerais e variabilidade"
+        ],
+        [
+          "p",
+          "Antipsicóticos atuam em receptores dopaminérgicos/serotoninérgicos e outros alvos, com eficácia variável sobre mania, psicose, manutenção e <strong>depressão bipolar</strong>. Existem diferenças importantes: <strong>aripiprazol</strong> pode ajudar mania/manutenção, mas não é opção recomendada de monoterapia para depressão bipolar I segundo CANMAT; <strong>quetiapina</strong> possui eficácia nos dois polos em contextos específicos. A aula 215 detalha receptores, sedação, síndrome neuroléptica maligna, distonias e condução de efeitos adversos."
+        ],
+        [
+          "3",
+          "13.2 Monitorização do risco cardiometabólico"
+        ],
+        [
+          "p",
+          "Antes e durante antipsicóticos, avaliar <strong>peso/BMI, circunferência abdominal quando pertinente, pressão arterial, glicemia/HbA1c e lipídios</strong>, com frequência orientada por fármaco e perfil da pessoa. Vigiar extrapiramidais, acatisia, movimentos tardios, prolactina e QT em agentes/riscos específicos. Ganho de peso importante pode comprometer adesão e saúde cardiometabólica; reconhecer e oferecer alternativas, não culpabilizar paciente."
+        ],
+        [
+          "3",
+          "13.3 Tratamento combinado: quando ajuda e quando aumenta danos"
+        ],
+        [
+          "p",
+          "Uma mania grave pode responder melhor a combinação de estabilizador e antipsicótico em certos subgrupos, enquanto outras pessoas obtêm controle com monoterapia. Combinar medicações pode aumentar sedação, tremor, alterações metabólicas e interação farmacológica, devendo haver <strong>indicação clara e plano de revisão</strong>. Não associar vários antipsicóticos por inércia sem revisar diagnósticos e resposta."
+        ],
+        [
+          "p",
+          "Após estabilização aguda, reavaliar necessidade e duração de combinação, sobretudo diante de efeitos adversos. Adesão pode melhorar quando o regime é simples e eficaz; uma prescrição tecnicamente completa não é boa se a pessoa não consegue utilizá-la."
+        ]
+      ]
+    ],
+    [
+      "14-populacoes-especiais",
+      0,
+      [
+        [
+          "2",
+          "14. Populações especiais"
+        ],
+        [
+          "3",
+          "14.1 Gestação e período perinatal"
+        ],
+        [
+          "p",
+          "Planejamento <strong>pré-concepcional</strong> é central: discutir risco de recaída sem tratamento e riscos farmacológicos para gestante/feto, com psiquiatria e obstetrícia. <strong>Não interromper estabilizadores abruptamente</strong> ao descobrir gravidez, especialmente em quem teve mania severa ou psicose. O valproato é particularmente problemático na gestação por teratogenicidade/neurodesenvolvimento; lítio pode estar associado a riscos obstétricos/fetais e requer avaliação individual, potencial mudança de farmacocinética na gestação e pós-parto, sem banalizar nem proibir universalmente em qualquer contexto."
+        ],
+        [
+          "p",
+          "<strong>Puerpério</strong> é período de risco elevado de episódio de humor e psicose pós-parto em pessoas com bipolaridade. Redução de sono e mudanças hormonais podem precipitar recaída; a família/rede precisa conhecer <strong>sinais precoces de agitação, insônia quase total, desorganização e crenças incomuns</strong>, que exigem atendimento imediato. Questões sobre aleitamento e fármaco devem ser individualizadas; a prioridade é segurança e estabilidade materna-infantil."
+        ],
+        [
+          "3",
+          "14.2 Crianças e adolescentes"
+        ],
+        [
+          "p",
+          "Irritabilidade isolada, impulsividade e dificuldades escolares <strong>não equivalem</strong> a transtorno bipolar. Diagnóstico exige episódios claros com alteração de energia/humor e repercussão, além de diferencial com TDAH, trauma, substâncias, neurodesenvolvimento e condições clínicas. Tratamento demanda equipe especializada, consentimento/família e monitorização de efeitos metabólicos/reprodutivos. <strong>Não aplicar automaticamente doses/esquemas adultos a adolescentes.</strong>"
+        ],
+        [
+          "3",
+          "14.3 Idosos"
+        ],
+        [
+          "p",
+          "Bipolaridade no idoso requer atenção a comorbidades, função renal, polifarmácia, quedas, efeitos anticolinérgicos e cognição. Mania de início tardio sem história anterior deve ampliar investigação <strong>clínica e neurológica</strong>; doença cerebrovascular, demência, medicamentos e alterações metabólicas são relevantes. <strong>Lítio em idosos</strong> exige metas e monitorização adaptados a função renal/risco de toxicidade; não usar referência de concentração da mania de adulto jovem de modo mecânico."
+        ],
+        [
+          "3",
+          "14.4 Comorbidades clínicas importantes"
+        ],
+        [
+          "p",
+          "Na <strong>DRC</strong>, lítio pode tornar-se mais difícil de manejar e exige avaliação nefrológica/psiquiátrica; outros medicamentos também têm ajustes e riscos. Na <strong>doença hepática</strong>, valproato/carbamazepina podem ser menos apropriados. Em <strong>obesidade/diabetes</strong>, avaliar efeito metabólico de antipsicóticos. Em <strong>epilepsia</strong>, revisar anticonvulsivantes, interações e sintomas do humor. Em <strong>uso problemático de substâncias</strong>, cuidado integrado melhora diagnóstico, segurança e adesão."
+        ]
+      ]
+    ],
+    [
+      "15-seguranca-risco-e-crise-a-polaridade-nao-substitui-avaliacao",
+      0,
+      [
+        [
+          "2",
+          "15. Segurança, risco e crise: a polaridade não substitui avaliação"
+        ],
+        [
+          "p",
+          "A avaliação de ideação de autoagressão e segurança segue princípios da aula 211, adaptados à história de bipolaridade. Episódios <strong>depressivos</strong> e <strong>mistos</strong>, agitação intensa, impulsividade e intoxicação podem exigir cuidado especial. <strong>Lítio não permite dispensar avaliação clínica de segurança</strong> pelo fato de ter evidência favorável em desfechos longitudinais."
+        ],
+        [
+          "p",
+          "Em mania com psicose/desorganização, risco pode incluir incapacidade de autoproteção, atos impulsivos e falta de alimentação/sono. Manejo de crise demanda rede especializada e, às vezes, internação. Não inferir “perigo a terceiros” apenas por diagnóstico de bipolaridade; avaliar fatos concretos, contexto, consentimento e necessidades."
+        ],
+        [
+          "p",
+          "A NICE NG225, sobre autoagressão, reforça que <strong>escalas ou rótulos de baixo/médio/alto risco não devem predizer comportamento futuro nem ser único critério de alta</strong>. Formule necessidade e plano, com contatos, redução colaborativa de acesso a meios perigosos, rede e transferência efetiva quando urgente."
+        ]
+      ]
+    ],
+    [
+      "16-algoritmos-de-plantao-e-ambulatorio",
+      0,
+      [
+        [
+          "2",
+          "16. Algoritmos de plantão e ambulatório"
+        ],
+        [
+          "3",
+          "16.1 Fala acelerada + pouca necessidade de sono"
+        ],
+        [
+          "p",
+          "<strong>A.</strong> Verificar sinais vitais, atenção/consciência, intoxicação, medicações e sintomas de tireotoxicose.  \r<br><strong>B.</strong> Confirmar mudança de humor/energia e duração, prejuízo e segurança.  \r<br><strong>C.</strong> Diferenciar mania de hipomania (psicose ou prejuízo grave → não é hipomania).  \r<br><strong>D.</strong> Se mania grave, avaliação urgente/hospitalização conforme caso; iniciar tratamento antimaníaco por equipe.  \r<br><strong>E.</strong> Se hipomania, avaliação oportuna de polaridade, ajuste terapêutico e vigilância de progressão.  \r<br><strong>F.</strong> Preparar prevenção de recaída e plano de sono/apoio, não só sedação."
+        ],
+        [
+          "3",
+          "16.2 Pessoa procura atendimento por depressão"
+        ],
+        [
+          "p",
+          "<strong>A.</strong> Confirmar síndrome depressiva e segurança.  \r<br><strong>B.</strong> Investigar <strong>mania/hipomania prévia</strong> e história familiar, medicações/substâncias, mudanças de energia.  \r<br><strong>C.</strong> Se bipolaridade provável, evitar antidepressivo em monoterapia de modo reflexo; avaliar tratamentos com evidência na fase depressiva bipolar.  \r<br><strong>D.</strong> Tratar sono, doenças clínicas e comorbidades e garantir seguimento.  \r<br><strong>E.</strong> Se emergência psicótica/catatônica ou segurança ameaçada, encaminhar imediatamente."
+        ],
+        [
+          "3",
+          "16.3 Paciente em uso de lítio com vômitos, ataxia e confusão"
+        ],
+        [
+          "p",
+          "<strong>A.</strong> Suspeitar <strong>toxicidade por lítio</strong> e outras causas médicas.  \r<br><strong>B.</strong> Solicitar avaliação emergencial com litemia, eletrólitos e função renal, ECG conforme quadro, avaliar hidratação e interações.  \r<br><strong>C.</strong> A equipe decidirá medidas de suspensão/eliminação e necessidade de suporte intensivo; <strong>não</strong> orientar somente a “diminuir 100 mg” ou aguardar consulta eletiva.  \r<br><strong>D.</strong> Após estabilização, reconstruir evento (gastroenterite, diurético, AINE) e plano de prevenção."
+        ],
+        [
+          "3",
+          "16.4 Depressão bipolar com lamotrigina e novo exantema"
+        ],
+        [
+          "p",
+          "<strong>A.</strong> Determinar gravidade, mucosas, febre, dor e sinais sistêmicos.  \r<br><strong>B.</strong> Suspeitar reação cutânea grave, especialmente se titulação rápida ou associação com valproato.  \r<br><strong>C.</strong> Encaminhar para avaliação urgente conforme gravidade, sem trivializar rash.  \r<br><strong>D.</strong> Rever regime com prescritor; não reiniciar dose plena sem protocolo."
+        ]
+      ]
+    ],
+    [
+      "17-casos-clinicos-autorais-comentados",
+      0,
+      [
+        [
+          "2",
+          "17. Casos clínicos autorais comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Mania clássica, não apenas “felicidade excessiva”"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 28 anos com dez dias de sono reduzido para duas horas por noite sem fadiga, fala pressionada, projetos grandiosos, gastos fora de seu padrão e interrupção das atividades profissionais. A família o levou ao pronto-socorro porque ele está desorganizado e entrou em conflito ao tentar fazer aquisição financeira de grande valor. Exame identifica humor expansivo/irritável, distratibilidade e julgamento comprometido."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> episódio <strong>maníaco</strong>; suspeita de bipolar I após exclusão de causas médicas/substâncias e avaliação clínica."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) humor e energia intensamente aumentados; (2) menor <strong>necessidade</strong> de sono, não insônia comum; (3) duração suficiente e prejuízo acentuado; (4) necessidade de ambiente protegido/possível internação segundo segurança; (5) investigar estimulantes, corticoides, tireotoxicose e outros diferenciais."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> EEM, sinais vitais, história de substâncias/medicação, exames laboratoriais orientados (incluindo tireoide, função renal/metabólica se medicação indicada) e avaliação clínica."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> avaliação psiquiátrica urgente, medidas de proteção/ambiente com baixo estímulo, tratamento antimaníaco adequado (antipsicótico e/ou estabilizador conforme equipe e riscos) e posterior plano longitudinal."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a gravidade funcional/psicose/hospitalização e duração classificam <strong>mania</strong>, não apenas euforia."
+        ],
+        [
+          "3",
+          "Caso 2 — Bipolar II escondido atrás de anos de depressão"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 35 anos tratada por depressões recorrentes relata dois períodos anteriores de cerca de cinco dias em que dormia pouco, ficava muito ativa, assumia projetos e falava mais; familiares percebiam mudança, mas ela não foi hospitalizada, não teve psicose e conservou funcionamento sem prejuízo intenso. Atualmente tem episódio depressivo maior, com isolamento e anedonia."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> suspeita de <strong>transtorno bipolar II</strong> (hipomania + episódio depressivo maior, sem mania histórica), a confirmar com duração, observação e exclusões."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) depressão isolada não diferencia polaridade; (2) períodos de ativação observável com duração compatível e sem prejuízo intenso sugerem hipomania; (3) mania anterior descartaria diagnóstico de tipo II; (4) não prescrever monoterapia antidepressiva de modo automático; (5) avaliar segurança durante episódio depressivo."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> história longitudinal, informante com consentimento, EEM, avaliação de substâncias e sono, clínica direcionada."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> avaliação psiquiátrica para tratamento de depressão bipolar, discutir opções conforme diretrizes (por exemplo, quetiapina como primeira linha em CANMAT para depressão bipolar II, com individualização), psicoterapia e plano de recaída."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a hipomania pode ter sido percebida pela pessoa como fase de “produtividade máxima”, escondendo a bipolaridade."
+        ],
+        [
+          "3",
+          "Caso 3 — A insônia que não era mania"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> paciente de 24 anos começa novo emprego em turnos e dorme quatro horas, sente cansaço extremo, irritabilidade e dificuldade de concentração. Não há humor expansivo, aumento de energia, fala pressionada ou episódios prévios de mudança de comportamento."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> privação de sono/transtorno de ritmo circadiano relacionado a turnos, ansiedade ou outros fatores; episódio maníaco não demonstrado."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) dormir pouco com exaustão é diferente de menor necessidade de sono; (2) insônia e irritabilidade são inespecíficas; (3) investigar trabalho, estimulantes, ansiedade, depressão e apneia; (4) evitar diagnóstico bipolar por uma palavra isolada."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> história de sono/turnos, diário de rotina, clínica direcionada e exame mental. Questionário MDQ positivo em pessoa privada de sono não seria diagnóstico isolado."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> correção de fatores do sono, avaliação clínica e seguimento para detectar mudança sindrômica se surgir."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> protege de falsos positivos e medicação desnecessária."
+        ],
+        [
+          "3",
+          "Caso 4 — Tireotoxicose imitando mania"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 39 anos refere irritabilidade, inquietação, insônia, palpitações e perda de peso. Ao exame: taquicardia, tremor fino, intolerância ao calor e hiperreflexia. Não se documenta grandeza, fuga de ideias sustentada nem história de episódios periódicos; TSH está suprimido com T4 livre elevado."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> síndrome de tireotoxicose/hipertireoidismo contribuindo para manifestações neuropsiquiátricas, exigindo investigação etiológica."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) sintomas autonômicos e metabólicos são fortes pistas; (2) tireotoxicose pode causar ansiedade e ativação; (3) não encerrar raciocínio em “mania” sem excluir condição clínica; (4) cuidar doença tireoidiana não elimina possibilidade futura de transtorno de humor concomitante, que deve ser reavaliado."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> hormônios tireoidianos e exame etiológico conforme endocrinologia, ECG se taquiarritmia, outros exames direcionados."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> manejo da tireotoxicose conforme serviço e reavaliação de sintomas afetivos após controle clínico."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> <strong>TSH não é exame diagnóstico de bipolaridade</strong>, mas pode revelar imitador tratável quando clínica indica."
+        ],
+        [
+          "3",
+          "Caso 5 — Lítio, gastroenterite e AINE"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 51 anos com bipolar I em manutenção com lítio desenvolve gastroenterite, baixa ingesta hídrica e usa AINE por conta própria. Em dois dias apresenta tremor grosso, vômitos, dificuldade para caminhar e confusão. Familiares relatam estabilidade afetiva anterior."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> <strong>toxicidade por lítio</strong> em contexto de desidratação e interação medicamentosa, além de outros diferenciais de alteração aguda da consciência."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) lítio depende de função renal/hidratação; (2) AINE pode elevar exposição; (3) sinais neurológicos associados à doença aguda são alarme; (4) não atribuir a “mania recorrente”; (5) nível sérico e avaliação emergencial são prioritários."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> litemia, função renal, eletrólitos, ECG conforme estado e exame clínico."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> avaliação hospitalar urgente, revisão da medicação/interações e tratamento da toxicidade pela equipe, com plano de prevenção pós-recuperação."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> a eficácia do lítio depende de <strong>educação e monitorização</strong>, não apenas da receita."
+        ],
+        [
+          "3",
+          "Caso 6 — Paciente com mania e valproato na gestação"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 29 anos com bipolar I está estável com divalproato e deseja gestar em quatro meses. Não faz pré-natal/preconcepção e pergunta se deve parar o remédio hoje. Teve internação por mania grave após abandono de tratamento dois anos antes."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> necessidade de <strong>planejamento pré-concepcional</strong> especializado, dado risco teratogênico do valproato e risco elevado de recaída ao interromper medicação abruptamente."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) valproato apresenta risco fetal relevante; (2) há histórico de mania grave após descontinuação, portanto retirada súbita sem substituição pode ser perigosa; (3) discutir alternativas seguras e estratégia gradual antes da concepção; (4) elaborar plano conjunto psiquiatria–obstetrícia e acompanhamento de puerpério; (5) decisões devem respeitar autonomia e contracepção temporária se escolhida."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> revisão da história psiquiátrica, medicamentos, condições clínicas e planejamento reprodutivo, com avaliação pré-concepcional."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> encaminhamento apropriado, discussão informada de riscos/benefícios e ajuste terapêutico por especialista, sem “suspender tudo” de forma automática."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> gestação e bipolaridade envolvem <strong>riscos de exposição e riscos de recaída</strong>, ambos verdadeiros."
+        ],
+        [
+          "3",
+          "Caso 7 — A lamotrigina como “resgate” de mania"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 33 anos chega com oito dias de energia excessiva, fala pressionada, pouca necessidade de sono e prejuízo importante, compatíveis com mania. A equipe propõe iniciar apenas lamotrigina porque “é estabilizador e costuma funcionar em depressão bipolar”."
+        ],
+        [
+          "p",
+          "<strong>Hipótese:</strong> mania aguda com seleção terapêutica inadequada se tratada somente por lamotrigina."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) lamotrigina não tem eficácia antimaníaca aguda suficiente para ser recomendada como tratamento da mania; (2) titulação é lenta e pode causar exantema grave; (3) opções antimaníacas com evidência incluem antipsicóticos/lítio/divalproato conforme situação; (4) necessidade de proteção e local de cuidado dependem de gravidade."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> EEM, segurança, substâncias, exames para escolha de tratamento e comorbidades."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> reavaliar proposta e adotar tratamento de mania indicado sob acompanhamento, sem confundir papel na depressão/manutenção com emergência."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> é uma das confusões farmacológicas mais cobradas em prova."
+        ],
+        [
+          "3",
+          "Caso 8 — Depressão bipolar com sintomas mistos"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> mulher de 31 anos relata tristeza profunda e pensamentos de autodesvalia, mas também insônia com energia acelerada, fala muito rápida, irritabilidade intensa e decisões impulsivas. Faz uso de antidepressivo em monoterapia após diagnóstico anterior de “depressão”. Histórico familiar de bipolaridade e episódios breves de ativação."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> episódio afetivo com <strong>características mistas</strong> e suspeita de bipolaridade; gravidade atual exige avaliação de segurança."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) tristeza e energia aumentada podem coexistir, não se “anulam”; (2) quadro pode ser mais instável/complexo; (3) monoterapia antidepressiva exige revisão; (4) NICE orienta seguir tratamento de mania em estado misto; (5) risco não se determina por escore numérico isolado."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> EEM completo, avaliação de segurança, história de substâncias/medicações e condições clínicas; psicose/catatonia/funcionamento."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> avaliação psiquiátrica urgente se ameaça de segurança ou desorganização, revisão da medicação e escolha de estratégia de estabilização com suporte."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> <strong>depressão + ativação maniforme</strong> é sinal para revisar polaridade e tratamento."
+        ],
+        [
+          "3",
+          "Caso 9 — Quetiapina funciona, mas a glicemia piora"
+        ],
+        [
+          "p",
+          "<strong>Apresentação:</strong> homem de 46 anos teve boa resposta de mania à quetiapina, mas ganhou peso de forma importante e glicemia/HbA1c aumentaram após meses de acompanhamento. Tem histórico familiar de diabetes e receio de interromper o remédio."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses:</strong> efeito cardiometabólico do tratamento possivelmente contribuindo para risco de diabetes, sem excluir outros fatores."
+        ],
+        [
+          "p",
+          "<strong>Raciocínio:</strong> (1) benefício psiquiátrico é real e importante; (2) risco metabólico também; (3) abandono abrupto pode provocar recaída; (4) discutir ajuste/alternativa e plano para saúde metabólica, em vez de culpar paciente; (5) medir desfechos ao longo do tempo."
+        ],
+        [
+          "p",
+          "<strong>Exames:</strong> peso/BMI, PA, lipídios, HbA1c/glicemia, hábitos e outros fatores de risco."
+        ],
+        [
+          "p",
+          "<strong>Conduta:</strong> decisão compartilhada com psiquiatria e APS, manejo metabólico e eventual revisão de antipsicótico conforme benefício/risco, sem suspender sozinho."
+        ],
+        [
+          "p",
+          "<strong>Por que importa:</strong> bons tratamentos exigem <strong>monitorização que preserva saúde global</strong>."
+        ]
+      ]
+    ],
+    [
+      "18-questoes-originais-comentadas",
+      0,
+      [
+        [
+          "2",
+          "18. Questões originais comentadas"
+        ],
+        [
+          "3",
+          "Questão 1 — Bipolar I"
+        ],
+        [
+          "p",
+          "Qual achado é suficiente para a classificação sindrômica longitudinal de bipolar I, após exclusões necessárias?"
+        ],
+        [
+          "p",
+          "A. Um episódio depressivo maior isolado.  \r<br>B. Ao menos um episódio maníaco completo.  \r<br>C. Tristeza e irritabilidade por uma tarde.  \r<br>D. Hipomania sem qualquer episódio depressivo.  \r<br>E. Pontuação alta no MDQ isoladamente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A não distingue polaridade; C é inespecífica; D não preenche bipolar II sem depressão maior e não define I; E é rastreio. <strong>Revisão:</strong> mania é evento definidor do tipo I."
+        ],
+        [
+          "3",
+          "Questão 2 — Bipolar II"
+        ],
+        [
+          "p",
+          "O diagnóstico DSM típico de bipolar II exige:"
+        ],
+        [
+          "p",
+          "A. Ao menos uma mania com psicose.  \r<br>B. Hipomania e episódio depressivo maior, sem mania prévia.  \r<br>C. Apenas episódios depressivos por 30 dias.  \r<br>D. Quatro mudanças de humor no mesmo dia.  \r<br>E. Exclusivamente histórico familiar."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A seria bipolar I; C é insuficiente; D não é ciclagem rápida; E não estabelece episódios. <strong>Revisão:</strong> bipolar II não significa necessariamente doença leve."
+        ],
+        [
+          "3",
+          "Questão 3 — Hipomania ou mania?"
+        ],
+        [
+          "p",
+          "Paciente apresenta alteração de humor e energia por cinco dias, necessita internação por grave prejuízo/psicose durante episódio. Melhor classificação?"
+        ],
+        [
+          "p",
+          "A. Hipomania porque durou menos de sete dias.  \r<br>B. Mania, pois gravidade/necessidade de internação ou psicose afastam hipomania, independentemente da duração do episódio.  \r<br>C. Distimia.  \r<br>D. Ciclotimia obrigatória.  \r<br>E. Transtorno adaptativo apenas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A aplica duração de modo cego; C/D/E não correspondem. <strong>Revisão:</strong> mania pode ser classificada com menos de sete dias quando hospitalização é necessária."
+        ],
+        [
+          "3",
+          "Questão 4 — Redução da necessidade de sono"
+        ],
+        [
+          "p",
+          "Qual relato é mais característico de mania/hipomania, quando associado a outras alterações de humor/energia?"
+        ],
+        [
+          "p",
+          "A. Dorme pouco por turno noturno e está exausto.  \r<br>B. Dorme duas horas e mantém energia intensa, fala acelerada e projetos incomuns.  \r<br>C. Acorda cedo por alarme e volta a dormir.  \r<br>D. Cochila após almoço.  \r<br>E. Insônia isolada com fadiga."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/E indicam privação com cansaço; C/D são padrões normais. <strong>Revisão:</strong> menor <strong>necessidade</strong> de sono não equivale a insônia."
+        ],
+        [
+          "3",
+          "Questão 5 — Ciclagem rápida"
+        ],
+        [
+          "p",
+          "No transtorno bipolar, ciclagem rápida, na nomenclatura DSM, caracteriza-se por:"
+        ],
+        [
+          "p",
+          "A. Humor mudar a cada minuto.  \r<br>B. Quatro ou mais episódios distintos de humor em 12 meses, com separação apropriada.  \r<br>C. Um episódio maníaco de duas semanas.  \r<br>D. Insônia por quatro dias.  \r<br>E. Quatro pensamentos acelerados por consulta."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/C/D/E confundem flutuação afetiva, duração e número de episódios. <strong>Revisão:</strong> ciclagem exige <strong>episódios</strong>, não mudanças momentâneas."
+        ],
+        [
+          "3",
+          "Questão 6 — Fármaco não indicado em mania aguda"
+        ],
+        [
+          "p",
+          "Qual fármaco <strong>não deve ser escolhido como agente antimaníaco único para mania aguda</strong>?"
+        ],
+        [
+          "p",
+          "A. Lítio. B. Quetiapina. C. Risperidona. D. Lamotrigina. E. Aripiprazol."
+        ],
+        [
+          "p",
+          "<strong>Gabarito D.</strong> Lamotrigina atua mais em depressão bipolar/manutenção, sem eficácia antimaníaca aguda estabelecida; A/B/C/E têm evidência para mania em situações apropriadas. <strong>Revisão:</strong> “estabilizador” não significa eficácia em todo polo."
+        ],
+        [
+          "3",
+          "Questão 7 — Depressão bipolar I"
+        ],
+        [
+          "p",
+          "Qual princípio de CANMAT/ISBD é correto?"
+        ],
+        [
+          "p",
+          "A. ISRS isolado é padrão de primeira linha em bipolar I.  \r<br>B. Antidepressivo em monoterapia não é recomendado como tratamento da depressão bipolar I.  \r<br>C. Lamotrigina é primeira opção de sedação emergencial da mania.  \r<br>D. Todo antipsicótico serve igualmente para depressão bipolar.  \r<br>E. Não é necessário investigar história de mania."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/E ignoram polaridade; C não é antimaníaco agudo; D confunde evidências de cada fármaco. <strong>Revisão:</strong> a fase bipolar modifica farmacoterapia."
+        ],
+        [
+          "3",
+          "Questão 8 — Lítio e prevenção de recaída"
+        ],
+        [
+          "p",
+          "Ao iniciar lítio, qual conduta é adequada?"
+        ],
+        [
+          "p",
+          "A. Dispensar creatinina e TSH se paciente é jovem.  \r<br>B. Avaliar função renal, tireoidiana, cálcio, outros exames e monitorar níveis séricos conforme protocolo.  \r<br>C. Colher litemia a qualquer horário sem registrar dose.  \r<br>D. Manter dose sem revisão mesmo com vômitos e ataxia.  \r<br>E. Recomendar AINE livre sem alertas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A omite segurança; C compromete interpretação; D é potencial toxicidade; E ignora interações. <strong>Revisão:</strong> lítio exige acompanhamento longitudinal."
+        ],
+        [
+          "3",
+          "Questão 9 — Meta sérica de manutenção"
+        ],
+        [
+          "p",
+          "Segundo NICE CG185, alvo habitual inicial de manutenção para pessoa iniciando lítio é:"
+        ],
+        [
+          "p",
+          "A. 0,0–0,1 mmol/L.  \r<br>B. <strong>0,6–0,8 mmol/L</strong>, com individualização.  \r<br>C. 3,0–4,0 mmol/L.  \r<br>D. O maior nível que o laboratório consegue medir.  \r<br>E. Um valor independente de coleta e contexto."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A é subterapêutico em geral; C/D são perigosos; E omite horário/condição clínica. <strong>Revisão:</strong> metas variam por fase e paciente; não confundir com objetivo da mania grave ou com idosos vulneráveis."
+        ],
+        [
+          "3",
+          "Questão 10 — Lítio e AINE"
+        ],
+        [
+          "p",
+          "Paciente com lítio estável inicia ibuprofeno de forma regular sem avisar. Qual preocupação?"
+        ],
+        [
+          "p",
+          "A. AINE sempre diminui litemia para zero.  \r<br>B. Pode reduzir depuração renal do lítio e elevar exposição, exigindo avaliação/monitorização.  \r<br>C. Não há interação relevante.  \r<br>D. Elimina necessidade de hidratação.  \r<br>E. Corrige hipotireoidismo pelo lítio."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/C negam risco; D/E não são verdadeiros. <strong>Revisão:</strong> interações e desidratação estão entre causas preveníveis de toxicidade."
+        ],
+        [
+          "3",
+          "Questão 11 — Lamotrigina + valproato"
+        ],
+        [
+          "p",
+          "Paciente inicia lamotrigina tomando valproato. Qual precaução é central?"
+        ],
+        [
+          "p",
+          "A. Acelerar titulação para dose máxima no primeiro dia.  \r<br>B. Valproato pode elevar exposição à lamotrigina; titulação deve ser especialmente cuidadosa pelo risco de rash grave.  \r<br>C. Não existe interação.  \r<br>D. A associação exclui necessidade de avaliar pele/mucosas.  \r<br>E. Lamotrigina previne todas as toxicidades do valproato."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/C/D/E ignoram interação e segurança. <strong>Revisão:</strong> prevenir Stevens–Johnson exige titulação apropriada e reconhecimento precoce de sinais cutâneos."
+        ],
+        [
+          "3",
+          "Questão 12 — Gestação com valproato"
+        ],
+        [
+          "p",
+          "Mulher com bipolar I e uso de valproato planeja gravidez; tem histórico de mania grave após suspensão. Melhor postura?"
+        ],
+        [
+          "p",
+          "A. Interromper tudo imediatamente sem plano ou suporte.  \r<br>B. Avaliar com psiquiatria/obstetrícia risco teratogênico, risco de recaída e alternativas antes da concepção.  \r<br>C. Afirmar que valproato não tem efeitos fetais.  \r<br>D. Negar projeto de gravidez por diagnóstico psiquiátrico.  \r<br>E. Aumentar valproato preventivamente em todas."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A aumenta recaída, C nega risco, D viola autonomia, E não é indicação. <strong>Revisão:</strong> cuidado pré-concepcional compartilhado é essencial."
+        ],
+        [
+          "3",
+          "Questão 13 — Hipertireoidismo versus mania"
+        ],
+        [
+          "p",
+          "Pessoa apresenta insônia, irritabilidade, taquicardia, perda de peso, intolerância ao calor, tremor e TSH suprimido. Qual abordagem?"
+        ],
+        [
+          "p",
+          "A. Tratar como mania sem avaliação clínica.  \r<br>B. Investigar e manejar tireotoxicose, reconhecendo que sintomas físicos podem imitar ativação do humor.  \r<br>C. Diagnosticar bipolar I apenas por tremor.  \r<br>D. Dar lítio como substituto universal de antitireoidiano.  \r<br>E. Desconsiderar hormônios tireoidianos."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A/C/E ignoram diferencial orgânico; D não é rotina adequada. <strong>Revisão:</strong> sintomas autonômicos e exames direcionados mudam hipótese."
+        ],
+        [
+          "3",
+          "Questão 14 — Estado misto"
+        ],
+        [
+          "p",
+          "Paciente tem tristeza intensa e desesperança, mas também fala acelerada, energia aumentada, agitação e irritabilidade. O que importa?"
+        ],
+        [
+          "p",
+          "A. Não pode ser transtorno do humor porque sinais opostos se anulam.  \r<br>B. Avaliar episódio misto/características mistas, segurança e estabilização, evitando antidepressivo isolado automático.  \r<br>C. Concluir depressão unipolar leve por PHQ-9 isolado.  \r<br>D. Suspender avaliação médica de substâncias.  \r<br>E. Não investigar ideação de autoagressão."
+        ],
+        [
+          "p",
+          "<strong>Gabarito B.</strong> A ignora estados mistos; C ignora polaridade; D/E retiram medidas de segurança. <strong>Revisão:</strong> coexistência de ativação e sofrimento depressivo exige avaliação especializada."
+        ]
+      ]
+    ],
+    [
+      "19-referencias-verificadas-e-hierarquia-normativa",
+      0,
+      [
+        [
+          "2",
+          "19. Referências verificadas e hierarquia normativa"
+        ],
+        [
+          "p",
+          "1. <strong>BRASIL. Ministério da Saúde.</strong> Portaria nº 315, de <strong>30 de março de 2016</strong>, e anexo: <em>Protocolo Clínico e Diretrizes Terapêuticas do Transtorno Afetivo Bipolar do Tipo I</em>. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/pcdt/t/transtorno-afetivo-bipolar-do-tipo-i/@@download/file>. <strong>O PDF de 36 páginas foi aberto, e a capa explicita 2016.</strong> A página de navegação foi atualizada em <strong>21/01/2025</strong>, mas <strong>isso não indica atualização clínica do anexo</strong>. O texto refere busca da literatura até setembro de 2015, usa CID-10 e se limita sobretudo a bipolar I. Não extrapolar seu rol de medicamentos/custos para afirmar acesso no SUS em 2026 sem verificar atos posteriores.\r<br>2. <strong>NICE.</strong> <em>Bipolar disorder: assessment and management</em>, <strong>CG185</strong>, publicada em 2014 com emendas posteriores de 2023 e referências regulatórias atualizadas no texto online em 2025. <https://www.nice.org.uk/guidance/cg185/chapter/recommendations>. Fundamenta diferença entre mania, depressão bipolar, manejo de valproato, manutenção com lítio, exames/litemia, alertas de AINE e lentidão da titulação de lamotrigina.\r<br>3. <strong>Yatham LN, et al.</strong> <em>The CANMAT and ISBD Guidelines for the Treatment of Bipolar Disorder: Summary and a 2023 Update of Evidence</em>. <em>Focus</em>. 2024. DOI <strong>10.1176/appi.focus.20230009</strong>. Texto integral em: <https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/>. Base para hierarquia de fármacos por <strong>mania, depressão bipolar I/II e manutenção</strong>, com precauções sobre antidepressivo em monoterapia no tipo I.\r<br>4. <strong>Organização Mundial da Saúde.</strong> <em>mhGAP guideline for mental, neurological and substance use disorders</em>, 3ª edição, 2023. <https://www.who.int/publications/i/item/9789240084278>. Referência para cuidado não especializado, psicoeducação e rede.\r<br>5. <strong>NICE.</strong> <em>Depression in adults: treatment and management</em> <strong>NG222</strong>, 2022. <https://www.nice.org.uk/guidance/ng222/chapter/recommendations>. Utilizada apenas para diagnóstico diferencial e necessidade de investigar hipomania/mania, não como algoritmo de fármaco para bipolar I.\r<br>6. <strong>NICE.</strong> <em>Self-harm: assessment, management and preventing recurrence</em> <strong>NG225</strong>, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Fonte de avaliação psicossocial e não uso de escalas como preditores/decisão única de alta.\r<br>7. <strong>Ministério da Saúde — RAPS.</strong> Rede de Atenção Psicossocial. <https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps>. Estrutura de coordenação APS/CAPS/urgência.\r<br>8. <strong>DailyMed/NLM e bulas Anvisa</strong>: conferir rótulos de lítio, lamotrigina, valproato e antipsicóticos por produto/formulação antes da versão prescritiva. <strong>Esta etapa nacional de bulas, apresentações e custos está pendente</strong>, não é referência integral de doses já auditadas."
+        ],
+        [
+          "p",
+          "<strong>Ponto clínico de incompatibilidade temporal:</strong> a publicação brasileira disponível em 2016 contém escolhas e contexto de financiamento de seu período. As listas CANMAT/ISBD 2023–24 e NICE com emendas posteriores incluem agentes que podem não constar daquele PCDT; a apostila não os apresenta como <strong>automaticamente incorporados ao SUS</strong>. A necessidade de verificar atos normativos posteriores, especialmente para valproato em pessoas com potencial reprodutivo, é explícita."
+        ]
+      ]
+    ],
+    [
+      "20-planejamento-visual-usar-imagens-que-ensinem-e-nao-estigmatizem",
+      0,
+      [
+        [
+          "2",
+          "20. Planejamento visual: usar imagens que ensinem e não estigmatizem"
+        ],
+        [
+          "p",
+          "Não usar “fotografia de pessoa com transtorno bipolar” como se aparência fizesse diagnóstico. Dar preferência a gráficos autorais e cenários fictícios, com legibilidade, acessibilidade e sem imagens sensacionalistas de crises."
+        ],
+        [
+          "t",
+          [
+            "Candidato",
+            "Seção",
+            "Legenda/objetivo"
+          ],
+          [
+            [
+              "Linha do tempo de episódio depressivo, mania e eutimia",
+              "2/3",
+              "Diferenciar polaridade <strong>ao longo do tempo</strong>"
+            ],
+            [
+              "Diagrama mania x hipomania com duração/grave prejuízo",
+              "2",
+              "Duração ≠ gravidade; psicose/hospitalização"
+            ],
+            [
+              "Quadro Bipolar I x II e ciclotimia",
+              "2",
+              "Reconstrução dos episódios"
+            ],
+            [
+              "Gráfico original de <strong>ciclagem rápida</strong>",
+              "2",
+              "Quatro ou mais episódios/ano, não oscilações por hora"
+            ],
+            [
+              "Fluxograma de suspeita de mania e diferenciais",
+              "5/6/8",
+              "Tireotoxicose, substâncias e delirium antes de concluir"
+            ],
+            [
+              "Esquema do sono/circadiano e recaída",
+              "4/10",
+              "Como redução do sono vira gatilho/sinal"
+            ],
+            [
+              "Tabela visual “fármaco × polo”",
+              "8–13",
+              "Lamotrigina não é antimaníaco agudo; opções por fase"
+            ],
+            [
+              "Esquema original de <strong>litemia no tempo</strong>",
+              "11",
+              "Coleta, mudança de dose e monitorização"
+            ],
+            [
+              "Infográfico de interações com lítio",
+              "11",
+              "AINE, diuréticos, IECA/BRAs, desidratação"
+            ],
+            [
+              "Quadro de titulação de lamotrigina <em>sem valores não aprovados</em>",
+              "12",
+              "Titular lentamente, risco de rash e interação com valproato"
+            ],
+            [
+              "Fluxo de gravidez planejada e risco de recaída",
+              "14",
+              "Valproato, risco fetal e plano pré-concepcional"
+            ],
+            [
+              "Esquema de prevenção e sinais prodrômicos",
+              "10/16",
+              "Suporte, sono, adesão e acesso a equipe"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Status de mídia:</strong> 12 itens conceituais, <strong>zero imagens aprovadas ou inseridas</strong>. Buscar candidatos de origem confiável com licenças de uso comercial, e desenhos originais quando apropriados; checar legendas e aprovação administrativa antes de integrar à página."
+        ]
+      ]
+    ],
+    [
+      "21-revisao-de-alto-rendimento",
+      0,
+      [
+        [
+          "2",
+          "21. Revisão de alto rendimento"
+        ],
+        [
+          "p",
+          "<strong>Diagnóstico:</strong> mais importante que observar euforia na consulta é <strong>provar episódio com mudança de energia, duração, prejuízo, história e exclusões</strong>. Mania define bipolar I; hipomania + depressão maior sem mania compõem bipolar II."
+        ],
+        [
+          "p",
+          "<strong>Fases:</strong> mania trata-se com <strong>agentes antimaníacos</strong>, depressão bipolar exige medicamentos com evidência para <strong>polo depressivo bipolar</strong>, e manutenção depende da polaridade anterior, resposta e efeitos. <strong>Lamotrigina não serve para mania aguda. ISRS isolado não é recomendação de primeira linha para bipolar I depressivo.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Lítio:</strong> função renal e tireoide/cálcio, nível sérico, interações e doença aguda. Nova <strong>ataxia/confusão/vômitos</strong> em usuário de lítio exige avaliação urgente."
+        ],
+        [
+          "p",
+          "<strong>Valproato:</strong> eficácia antimaníaca não cancela riscos reprodutivos, hepáticos, hematológicos e metabólicos; decisão especializada e consentimento."
+        ],
+        [
+          "p",
+          "<strong>Segurança:</strong> avaliar suicidabilidade, psicose, perda de autocuidado, intoxicação, sono e contexto, sem usar categoria de risco como prova de alta ou internação automática."
+        ]
+      ]
+    ],
+    [
+      "22-matriz-de-competencias-qualidade-e-pendencias",
+      0,
+      [
+        [
+          "2",
+          "22. Matriz de competências, qualidade e pendências"
+        ],
+        [
+          "t",
+          [
+            "Competência",
+            "Capítulos",
+            "Casos",
+            "Questões"
+          ],
+          [
+            [
+              "Diferenciar mania/hipomania/tipo I/II",
+              "2, 5",
+              "1–3",
+              "1–5"
+            ],
+            [
+              "Reconhecer causa médica e substâncias",
+              "6",
+              "3–4",
+              "4, 13"
+            ],
+            [
+              "Tratar mania e escolher medicamento por polo",
+              "8–9",
+              "1, 2, 7–8",
+              "6–7, 14"
+            ],
+            [
+              "Prevenir recaída e manejar manutenção",
+              "10",
+              "2, 9",
+              "8–9"
+            ],
+            [
+              "Ajustar lítio e reconhecer toxicidade",
+              "11",
+              "5",
+              "8–10"
+            ],
+            [
+              "Evitar rash grave na lamotrigina",
+              "12",
+              "7",
+              "6, 11"
+            ],
+            [
+              "Risco reprodutivo e gestação",
+              "12/14",
+              "6",
+              "12"
+            ],
+            [
+              "Efeitos metabólicos",
+              "13–14",
+              "9",
+              "8"
+            ],
+            [
+              "Avaliar segurança e crises",
+              "7/15/16",
+              "1, 5, 8",
+              "7, 14"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>Parecer editorial provisório:</strong> apostila autoral extensa com <strong>9 casos e 14 questões</strong>, cobertura de fundamentos, diagnóstico, diferenciais, tratamento agudo/longitudinal e situações especiais. <strong>Pendente</strong> de revisão científica por psiquiatra, conferência de versão/impacto do PCDT 2016 no SUS 2026, verificação de doses e registros Anvisa, auditoria de estilo, contagem de caracteres <strong>úteis</strong> (não brutos), imagens clínicas adequadas e aprovação no Admin."
+        ],
+        [
+          "p",
+          "<strong>Status técnico:</strong> branch editorial isolada; nenhuma página publicada, HTML, catálogo, banco, Supabase ou \\`main\\` modificados; não houve deploy. O próximo tema oficial é <strong>213 — Transtornos ansiosos, TOC e transtornos relacionados ao trauma</strong>."
+        ]
+      ]
+    ]
+  ]
+}

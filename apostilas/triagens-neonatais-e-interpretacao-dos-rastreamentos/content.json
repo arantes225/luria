@@ -1,0 +1,1017 @@
+{
+  "v": 2,
+  "s": "triagens-neonatais-e-interpretacao-dos-rastreamentos",
+  "t": "Triagens Neonatais e Interpretação dos Rastreamentos",
+  "p": "Triagens Neonatais e Interpretação dos Rastreamentos — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance em Rastreamento Neonatal Integrado, Teste do Pezinho, Olhinho, Orelhinha, Coraçãozinho e Linguinha",
+  "a": "Pediatria",
+  "m": "Pediatria",
+  "h": [
+    "Apostila LURIA",
+    "Triagens Neonatais e Interpretação dos Rastreamentos",
+    "Tratado de Alta Performance em Rastreamento Neonatal Integrado, Teste do Pezinho, Olhinho, Orelhinha, Coraçãozinho e Linguinha",
+    [
+      "Área: Pediatria",
+      "Matéria: Pediatria",
+      "Tema: Triagens Neonatais e Interpretação dos Rastreamentos"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "fundamentos-epidemiologia-e-fisiopatologia-das-triagens-neonatais",
+      "1. Fundamentos Populacionais, Princípios de Rastreamento e Fisiopatologia das Doenças Triadas"
+    ],
+    [
+      "o-painel-completo-das-triagens-neonatais-brasil",
+      "2. O Painel Integrado das Triagens Neonatais no Brasil: Propedêutica e Cronogramas"
+    ],
+    [
+      "interpretacao-laboratorial-e-valores-de-corte",
+      "3. Interpretação Laboratorial Minuciosa e Valores de Corte do Teste do Pezinho"
+    ],
+    [
+      "as-triagens-sensoriais-e-cardiovasculares-universais",
+      "4. As Triagens Sensoriais, Cardiovasculares e Funcionais Universais"
+    ],
+    [
+      "abordagem-terapeutica-e-protocolos-de-seguimento",
+      "5. Abordagem Terapêutica Precoce e Protocolos de Manejo Clínico"
+    ],
+    [
+      "casos-clinicos-estruturados-e-resolvidos-triagens",
+      "6. Casos Clínicos Estruturados e Resolvidos com Raciocínio Clínico Completo"
+    ],
+    [
+      "questoes-comentadas-triagens-neonatais",
+      "7. Questões de Concurso e Residência Médica Comentadas na Íntegra"
+    ],
+    [
+      "tabela-resumo-e-high-yield-exam-pearls-triagens",
+      "8. Tabela Resumo e High-Yield Exam Pearls"
+    ]
+  ],
+  "q": [
+    [
+      "fundamentos-epidemiologia-e-fisiopatologia-das-triagens-neonatais",
+      0,
+      [
+        [
+          "2",
+          "1. Fundamentos Populacionais, Princípios de Rastreamento e Fisiopatologia das Doenças Triadas"
+        ],
+        [
+          "3",
+          "Princípios de Rastreamento Populacional em Saúde Pública (Critérios de Wilson e Jungner)"
+        ],
+        [
+          "p",
+          "O rastreamento neonatal representa uma das intervenções de saúde pública mais custo-efetivas, abrangentes e transformadoras da medicina moderna. A implementação universal desses testes fundamenta-se estritamente nos critérios clássicos de rastreamento populacional preconizados pela Organização Mundial da Saúde (OMS), delineados originalmente por Wilson e Jungner em 1968, e aprimorados na era da biologia molecular e da espectrometria de massas em tandem:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Condição Clínica Grave e Bem Definida:</strong> A doença rastreada deve representar um problema de saúde pública substancial, com elevada morbimortalidade ou risco iminente de sequelas neuropsicomotoras irreversíveis se não tratada precocemente;",
+            "<strong>História Natural Conhecida com Janela Terapêutica Assintomática:</strong> A enfermidade deve possuir um período pré-clínico ou assintomático identificável, durante o qual o recém-nascido parece hígido ao exame físico convencional, mas o processo fisiopatológico subjacente já pode ser flagrado laboratorialmente;",
+            "<strong>Disponibilidade de Teste Diagnóstico Acurado e Seguro:</strong> O método de rastreio deve ser amplamente aplicável, de baixo custo operacional, alta sensibilidade e especificidade aceitável, com riscos mínimos de complicações para o lactente;",
+            "<strong>Tratamento Eficaz e Acessível:</strong> Deve haver intervenção farmacológica, cirúrgica ou nutricional comprovadamente capaz de alterar a história natural da patologia, impedindo o óbito precoce, o atraso cognitivo profundo ou a perda sensorial permanente;",
+            "<strong>Políticas Estabelecidas e Acompanhamento Longitudinal:</strong> Garantia institucional de acesso irrestrito desde a triagem inicial até a confirmação diagnóstica definitiva por testes de segunda linha, tratamento imediato e aconselhamento genético familiar contínuo no âmbito do Sistema Único de Saúde (SUS)."
+          ]
+        ],
+        [
+          "3",
+          "Evolução do Programa Nacional de Triagem Neonatal (PNTN) no Brasil e Lei 14.154/2021"
+        ],
+        [
+          "p",
+          "O Programa Nacional de Triagem Neonatal (PNTN) foi formalmente instituído pelo Ministério da Saúde em 2001 (Portaria GM/MS nº 822/2001), estruturando a universalização do popularmente conhecido \"Teste do Pezinho\". Historicamente organizado em fases progressivas de implantação estadual (Fases I a IV), o PNTN contemplava inicialmente seis patologias prioritárias no SUS:"
+        ],
+        [
+          "u",
+          [
+            "<em>Hipotireoidismo Congênito (HC);</em>",
+            "<em>Fenilcetonúria (PKU);</em>",
+            "<em>Doença Falciforme e outras Hemoglobinopatias;</em>",
+            "<em>Fibrose Cística (FC);</em>",
+            "<em>Hiperplasia Adrenal Congênita (HAC);</em>",
+            "<em>Deficiência de Biotinidase (DB).</em>"
+          ]
+        ],
+        [
+          "p",
+          "Um marco legislativo e assistencial histórico foi estabelecido com a promulgação da <strong>Lei Federal nº 14.154, de 26 de maio de 2021</strong>, que determinou a ampliação escalonada do Teste do Pezinho na rede pública para o rastreio de até <strong>50 enfermidades congênitas</strong>, estruturadas em cinco etapas de expansão sequencial:"
+        ],
+        [
+          "t",
+          [
+            "Etapa da Lei 14.154/2021",
+            "Grupos de Doenças Congênitas Abrangidas",
+            "Impacto Fisiopatológico e Alvos de Prevenção"
+          ],
+          [
+            [
+              "<strong>Etapa 1 (Implementação Imediata)</strong>",
+              "Manutenção das 6 doenças históricas (HC, PKU, Hemoglobinopatias, Fibrose Cística, HAC, Deficiência de Biotinidase) acrescidas do rastreamento universal da <strong>Toxoplasmose Congênita</strong>.",
+              "Prevenção de sequelas oculares irreversíveis (coriorretinite cicatrizante macular), hidrocefalia obstrutiva, calcificações cerebrais e surdez neurossensorial."
+            ],
+            [
+              "<strong>Etapa 2</strong>",
+              "<strong>Galactosemias</strong>, <strong>Aminoacidopatias</strong> (ex: Doença da Urina de Xarope de Bordo / Leucinose), <strong>Distúrbios do Ciclo da Ureia</strong> e <strong>Distúrbios da Beta-oxidação dos Ácidos Graxos</strong> (ex: deficiência de MCAD).",
+              "Prevenção de crises catabólicas agudas neonatais, encefalopatia hiperamonêmica, falência hepática fulminante, cardiomiopatia dilatada e morte súbita na infância."
+            ],
+            [
+              "<strong>Etapa 3</strong>",
+              "<strong>Doenças Lisossômicas de Depósito</strong> (ex: Mucopolissacaridoses, Doença de Gaucher, Doença de Pompe, Doença de Fabry).",
+              "Instituição precoce de Terapia de Reposição Enzimática (TRE) específica antes do acúmulo tecidual multissistêmico deformante e perda funcional de órgãos vitais."
+            ],
+            [
+              "<strong>Etapa 4</strong>",
+              "<strong>Imunodeficiências Primárias Congênitas (Erros Inatos da Imunidade)</strong>, com ênfase na Imunodeficiência Combinada Grave (SCID) e Agamaglobulinemia, rastreadas por biologia molecular mediante quantificação de <strong>TRECs</strong> (T-cell Receptor Excision Circles) e <strong>KRECs</strong> (Kappa-deleting Recombination Excision Circles).",
+              "Prevenção de óbito por infecções oportunistas fulminantes nos primeiros meses de vida; <strong>contraindicação absoluta imediata de administração de vacinas de vírus ou bactérias vivas atenuadas (notadamente BCG e Rotavírus)</strong>; indicação precoce de transplante de células-tronco hematopoiéticas (TCTH)."
+            ],
+            [
+              "<strong>Etapa 5</strong>",
+              "<strong>Atrofia Muscular Espinhal (AME)</strong> tipo 1, decorrente de deleções em homozigose no gene <em>SMN1</em> (Survival Motor Neuron 1).",
+              "Tratamento pré-sintomático com moduladores de splicing de RNA (nusinersena, risdiplam) ou terapia gênica de reposição com vetor viral AAV9 (onasemnogene abeparvovec - Zolgensma), preservando os neurônios motores do corno anterior da medula espinhal e evitando paralisia motora e óbito por falência respiratória mecânica."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Fisiopatologia Detalhada das Doenças do Teste do Pezinho Clássico"
+        ],
+        [
+          "4",
+          "1. Hipotireoidismo Congênito (HC)"
+        ],
+        [
+          "p",
+          "O hormônio tireoidiano (tri-iodotironina - T3 e tiroxina - T4) é estritamente essencial para o desenvolvimento cerebral pós-natal, atuando na migração neuronal, proliferação e diferenciação de células gliais, sinaptogênese e, de modo crítico, na <strong>mielinização dos tratos córtico-espinhais e axônios cerebrais</strong> durante os primeiros dois a três anos de vida extrauterina. Cerca de 85% dos casos de HC primário decorrem de <strong>disgenesia tireoidiana</strong> (ectopia sublingual da glândula tireoide, hipoplasia ou agenesia total/atireose), enquanto 10% a 15% decorrem de defeitos moleculares na biossíntese hormonal (<strong>diormonogênese tireoidiana</strong> autossômica recessiva, com mutações na tireoperoxidase - TPO, pendrina ou tireoglobulina). Na ausência de hormônios tireoidianos ativos, instala-se lesão axonal difusa irreversível, culminando com o quadro clássico e devastador do <strong>cretinismo endêmico</strong> (retardo mental grave irreversível, hipotonia muscular, macroglossia, hérnia umbilical volumosa, fontanelas amplas e icterícia neonatal prolongada)."
+        ],
+        [
+          "4",
+          "2. Fenilcetonúria (PKU) e Hiperfenilalaninemias"
+        ],
+        [
+          "p",
+          "A Fenilcetonúria clássica é uma desordem autossômica recessiva causada por mutações no gene que codifica a enzima hepática <strong>Fenilalanina Hidroxilase (PAH)</strong>, responsável pela hidroxilação irreversível do aminoácido essencial L-fenilalanina em L-tirosina, utilizando a tetraidrobiopterina (BH4) como cofator enzimático obrigatório. O bloqueio metabólico determina acúmulo sistêmico massivo de fenilalanina (Phe) no sangue e nos tecidos corporais. Níveis séricos elevados de Phe atravessam avidamente a barreira hematoencefálica através do transportador de aminoácidos neutros grandes (LAT1), competindo e <strong>saturando o transportador cerebral</strong> em detrimento de outros aminoácidos essenciais (tirosina e triptofano). O excesso intracerebral de Phe inibe a síntese protéica mielínica, desestrutura a bainha de mielina e compromete a síntese de neurotransmissores monoaminérgicos cruciais (dopamina, noradrenalina e serotonina). Além disso, a Phe é desviada para vias metabólicas secundárias alternativas, gerando metabólitos tóxicos excretados na urina: ácido fenilpirúvico (fenilcetona), ácido fenilláctico e ácido fenilacético, conferindo à urina o odor característico de \"mofo\", \"camundongo\" ou \"curral\"."
+        ],
+        [
+          "4",
+          "3. Doença Falciforme e Hemoglobinopatias"
+        ],
+        [
+          "p",
+          "As hemoglobinopatias estruturais resultam de mutações pontuais no gene da globina beta ($\beta$) no cromossomo 11. Na anemia falciforme homozigota (HbSS), a substituição do ácido glutâmico por valina na posição 6 da cadeia beta gera uma molécula anômala (HbS). Sob condições de hipóxia relativa, acidose tecidual ou desidratação, as moléculas desoxigenadas de HbS sofrem <strong>polimerização intermolecular</strong>, formando longos filamentos helicoidais rígidos (tactoides) que distorcem a arquitetura do eritrócito na forma semilunar de foice (falcização). Essas hemácias falcizadas perdem a plasticidade microvascular habitual, aderem avidamente ao endotélio vascular ativado e provocam episódios recorrentes de <strong>vaso-oclusão microvascular isquêmica</strong>, infartos teciduais assépticos (como a auto-esplenectomia funcional por infartos esplênicos repetidos nos primeiros anos de vida) e hemólise intravascular e extravascular crônica."
+        ],
+        [
+          "4",
+          "4. Fibrose Cística (Mucoviscidose)"
+        ],
+        [
+          "p",
+          "Herança autossômica recessiva decorrente de mutações no gene <em>CFTR</em> (Cystic Fibrosis Transmembrane Conductance Regulator) no cromossomo 7, sendo a mutação $Delta$F508 (deleção de um resíduo de fenilalanina na posição 508) a mais prevalente mundialmente. O canal CFTR é um canal de cloreto e bicarbonato dependente de AMPc expresso na membrana apical de células epiteliais exócrinas. Sua disfunção impede a secreção ativa de cloreto e bicarbonato para o lúmen das vias respiratórias e ductos glandulares, acompanhada de hiperabsorção desregulada de sódio e água pelo canal ENaC. O resultado fisiopatológico é a formação de <strong>secreções mucosas hiperviscosas, desidratadas e espessas</strong> que obstruem bronquíolos (predispondo a bronquiectasias e colonização crônica por <em>Staphylococcus aureus</em> e <em>Pseudomonas aeruginosa</em>), canalículos biliares e ductos pancreáticos exócrinos (provocando estase e autodigestão glandular precoce intrauterina, com destruição dos ácinos e insuficiência pancreática exócrina com esteatorreia e desnutrição crônica)."
+        ],
+        [
+          "4",
+          "5. Hiperplasia Adrenal Congênita (HAC)"
+        ],
+        [
+          "p",
+          "Em mais de 90% a 95% dos casos, a HAC decorre da deficiência da enzima microssomal <strong>21-hidroxilase (CYP21A2)</strong> no córtex adrenal. Essa enzima é estritamente indispensável para a conversão de 17-hidroxiprogesterona (17-OHP) em 11-desoxicolglicocorticoide e de progesterona em 11-desoxicorticosterona. O bloqueio enzimático interrompe a síntese final de cortisol e, na forma perdedora de sal (cerca de 75% dos casos), também a síntese de aldosterona. A deficiência de cortisol suprime o feedback negativo hipofisário, disparando hipersecreção maciça de <strong>Hormônio Adrenocorticotrófico (ACTH)</strong>. O excesso de ACTH hiperestimula o córtex adrenal, promovendo hiperplasia bilateral da glândula e <strong>desvio maciço dos precursores esteróides acumulados para a via dos androgênios adrenais</strong> (síntese de androstenediona e testosterona). As consequências clínicas diferem pelo sexo genético: no feto do sexo feminino (46,XX), a virilização intrauterina acarreta genitália ambígua (clitoromegalia, fusão labioscrotal e uretra comum com aspecto virilizado ao nascimento - classificação de Prader); no feto do sexo masculino (46,XY), a genitália externa é anatomicamente normal, o que retarda o diagnóstico clínico, predispondo o lactente a crises de <strong>insuficiência adrenal aguda perdedora de sal com hiponatremia severa, hipercalemia, acidose metabólica, desidratação e choque circulatório potencialmente fatal</strong> entre o 7º e o 21º dia de vida."
+        ],
+        [
+          "4",
+          "6. Deficiência de Biotinidase (DB)"
+        ],
+        [
+          "p",
+          "A enzima biotinidase é essencial para a clivagem da biocitina (biotina ligada a peptídeos e proteínas) e reciclagem da <strong>biotina livre (vitamina B7 ou H)</strong> proveniente da dieta e da microbiota intestinal. A biotina atua como cofator prostético indispensável para quatro carboxilases humanas vitais: piruvato carboxilase (gliconeogênese), acetil-CoA carboxilase (síntese de ácidos graxos), propionil-CoA carboxilase e 3-metilcrotonil-CoA carboxilase (catabolismo de aminoácidos). Sem a reciclagem de biotina, ocorre falência funcional combinada dessas carboxilases, culminando com acidemia lática metabólica, atraso neuropsicomotor, convulsões refratárias mioclônicas, alopecia difusa e dermatite periorificial eczematosa severa."
+        ]
+      ]
+    ],
+    [
+      "o-painel-completo-das-triagens-neonatais-brasil",
+      0,
+      [
+        [
+          "2",
+          "2. O Painel Integrado das Triagens Neonatais no Brasil: Propedêutica e Cronogramas"
+        ],
+        [
+          "3",
+          "O Calendário e os Sítios Anatômicos de Coleta dos Rastreamentos"
+        ],
+        [
+          "p",
+          "A triagem neonatal não se restringe à punção capilar do calcanhar; abrange um complexo integrado de triagens sensoriais, cardíacas e orofaciais preconizadas universalmente pelo Ministério da Saúde e pelas sociedades médicas pediátricas:"
+        ],
+        [
+          "t",
+          [
+            "Triagem Neonatal",
+            "Período Ideal de Realização",
+            "Método / Instrumento de Triagem",
+            "Patologias Rastreiteis Principais"
+          ],
+          [
+            [
+              "<strong>Teste do Pezinho (Biológico)</strong>",
+              "<strong>Entre o 3º e o 5º dia de vida</strong> (nunca antes de 48 horas de alimentação proteica enteral; idealmente até o 7º dia).",
+              "Punção capilar na face látero-plantar do calcanhar com lanceta estéril; papel-filtro especial (S&S 903 ou Whatman BFC 180).",
+              "Hipotireoidismo Congênito, Fenilcetonúria, Doença Falciforme, Fibrose Cística, Hiperplasia Adrenal Congênita, Deficiência de Biotinidase e Toxoplasmose Congênita (e expansão da Lei 14.154)."
+            ],
+            [
+              "<strong>Teste do Olhinho (Reflexo Vermelho)</strong>",
+              "<strong>Antes da alta da maternidade</strong> (idealmente nas primeiras 24 a 72 horas) e repetido em todas as consultas de puericultura nos primeiros 3 anos.",
+              "Oftalmoscópio direto posicionado a aproximadamente 50 cm a 1 metro dos olhos do recém-nascido em sala com penumbra.",
+              "Leucocoria, Catarata congênita, Glaucoma congênito, Retinoblastoma, Retinopatia da prematuridade e colobomas oculares."
+            ],
+            [
+              "<strong>Teste da Orelhinha (Triagem Auditiva)</strong>",
+              "<strong>Nas primeiras 24 a 48 horas de vida</strong> (antes da alta da maternidade) ou, no máximo, até o final do 1º mês de vida.",
+              "Emissões Otoacústicas Evocadas (EOAE) para RN sem indicadores de risco; Potencial Evocado Auditivo de Tronco Encefálico (PEATE-automático) obrigatório para RN com Indicadores de Risco para Deficiência Auditiva (IRDA).",
+              "Surdez congênita neurossensorial, perda auditiva condutiva e neuropatia auditiva."
+            ],
+            [
+              "<strong>Teste do Coraçãozinho (Oximetria de Pulso)</strong>",
+              "<strong>Entre 24 e 48 horas de vida</strong>, obrigatoriamente antes da alta da maternidade em recém-nascidos $ge$ 35 semanas de gestação.",
+              "Sensor de oximetria de pulso posicionado no <strong>membro superior direito (pré-ductal)</strong> e em <strong>um dos membros inferiores (pós-ductal)</strong>.",
+              "Cardiopatias Congênitas Críticas Dependentes do Canal Arterial (Síndrome da hipoplasia do coração esquerdo, transposição das grandes artérias, coarctação de aorta crítica, atresia pulmonar)."
+            ],
+            [
+              "<strong>Teste da Linguinha (Frênulo Lingual)</strong>",
+              "<strong>Ainda na maternidade</strong>, durante o exame físico rotineiro do recém-nascido (Lei Federal nº 13.002/2014).",
+              "Inspeção visual e palpação do assoalho bucal e movimentação lingual segundo protocolo padronizado (Protocolo de Bristol ou Martinelli).",
+              "Anquiloglossia congênita (frênulo lingual curto), prevenindo desmame precoce por dificuldade de pega, dor e fissura mamilar materna e futura alteração fonatória."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Técnica Correta de Coleta do Teste do Pezinho e Cuidados Pré-analíticos"
+        ],
+        [
+          "p",
+          "O rigor técnico na obtenção da amostra no papel-filtro é o determinante primário para prevenir resultados falso-positivos ou falso-negativos que comprometam a acurácia do PNTN:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Momento de Coleta:</strong> A coleta <strong>nunca deve ocorrer antes de 48 horas completas de vida</strong>. Coletas prematuras (< 48 horas) resultam em dois erros críticos de prova e de conduta:\n    <ul>\n      <li><em>Falso-positivo para TSH:</em> Logo após o parto, ocorre o pico fisiológico do TSH neonatal em resposta ao resfriamento térmico do ambiente extrauterino (o chamado \"TSH surge\", com valores que podem alcançar 60 a 80 mUI/L nas primeiras 24 horas, declinando progressivamente até níveis basais após 48 a 72 horas);",
+            "<em>Falso-negativo para Fenilcetonúria:</em> Como a fenilalanina sérica depende do aporte nutricional protéico por via enteral (leite materno ou fórmula infantil), a coleta antes do estabelecimento da dieta láctea não permite o acúmulo patológico mensurável de fenilalanina sérica.",
+            "<strong>Sítio Anatômico da Punção:</strong> Deve ser realizado exclusivamente nas <strong>faces látero-plantares do calcanhar</strong> do recém-nascido. A punção na porção central do calcâneo é estritamente contraindicada devido à proximidade da cortical óssea e risco de osteocondrite ou osteomielite infecciosa;",
+            "<strong>Prevenção de Amostras Inadequadas (Critérios de Rejeição Laboratorial):</strong>\n    <ul>\n      <li><em>Amostra Hemolisada / Esfregada:</em> O calcanhar não deve ser comprimido ou \"ordenhado\" excessivamente (\"efeito massagem\"), pois a compressão mecânica vigorosa provoca hemólise traumática e liberação de líquido intersticial areolar, diluindo os analitos e invalidando a dosagem;",
+            "<em>Amostra Insuficiente:</em> O círculo de papel-filtro deve ser preenchido por uma única gota de sangue espessa que embeba uniformemente a espessura total do papel, sendo visível com o mesmo diâmetro na face anterior e posterior do cartão;",
+            "<em>Amostra Sobresaturada ou Dupla Gota:</em> Nunca sobrepor uma segunda gota de sangue sobre um círculo já parcialmente preenchido, sob pena de gerar dosagens falsamente elevadas de TSH, 17-OHP e fenilalanina;",
+            "<em>Secagem Adequada:</em> O cartão deve secar na posição horizontal, em temperatura ambiente (15 a 25 °C), protegido da luz solar direta e da umidade, por no mínimo 3 a 4 horas antes do acondicionamento em envelopes de papel permeável."
+          ]
+        ]
+      ]
+    ],
+    [
+      "interpretacao-laboratorial-e-valores-de-corte",
+      0,
+      [
+        [
+          "2",
+          "3. Interpretação Laboratorial Minuciosa e Valores de Corte do Teste do Pezinho"
+        ],
+        [
+          "3",
+          "Metodologia Laboratorial e Valores de Referência Críticos"
+        ],
+        [
+          "p",
+          "A interpretação dos resultados do teste do pezinho exige o domínio dos métodos bioanalíticos e dos fluxos confirmatórios de segunda linha:"
+        ],
+        [
+          "t",
+          [
+            "Doença Triada",
+            "Metodologia Analítica no Papel-Filtro",
+            "Analito Mensurado",
+            "Valor de Corte Típico no Rastreio",
+            "Conduta Imediata Frente a Resultado Alterado"
+          ],
+          [
+            [
+              "<strong>Hipotireoidismo Congênito (HC)</strong>",
+              "Ensaio Imunofluorimétrico (ELFA) ou Quimioluminescência.",
+              "<strong>TSH Neonatal</strong> (alguns centros realizam dosagem simultânea de T4 livre).",
+              "- Normal: < 10 mUI/L;<br>- Zona Cinzenta (Indeterminado): <strong>10 a 20 mUI/L</strong>;<br>- Positivo Franco / Alto Risco: <strong>> 20 mUI/L</strong>.",
+              "- Se 10 a 20 mUI/L: Recoletar com máxima urgência amostra de sangue venoso periférico para dosagem sérica de TSH e T4 livre;<br>- Se > 20 mUI/L: Colher sangue venoso para TSH/T4L e <strong>iniciar imediatamente reposição de Levotiroxina sódica oral (10 a 15 mcg/kg/dia) sem aguardar o resultado sérico</strong>, para garantir tratamento antes de 14 a 28 dias de vida!"
+            ],
+            [
+              "<strong>Fenilcetonúria (PKU)</strong>",
+              "Ensaio Enzimático Colorimétrico ou Espectrometria de Massas em Tandem (MS/MS).",
+              "<strong>Fenilalanina (Phe)</strong> sérica no papel-filtro.",
+              "- Normal: < 4 mg/dL (ou < 240 mcmol/L);<br>- Suspeito: <strong>$ge$ 4 mg/dL</strong>;<br>- PKU Clássica provável: <strong>> 10 a 20 mg/dL</strong>.",
+              "Encaminhar com urgência para centro de referência em genética metabólica. Coleta venosa imediata para quantificação plasmática de aminoácidos (Phe e Tirosina - Tyr) e pesquisa de atividade da enzima tetraidrobiopterina (BH4). Se confirmado Phe > 6 mg/dL (360 mcmol/L): introdução imediata de fórmula infantil isenta de fenilalanina."
+            ],
+            [
+              "<strong>Doença Falciforme e Hemoglobinopatias</strong>",
+              "Cromatografia Líquida de Alta Eficiência (HPLC) ou Focalização Isoelétrica (IEF).",
+              "Variantes estruturais da molécula de Hemoglobina (HbA, HbF, HbS, HbC, HbD).",
+              "- Padrão Fisiológico Normal do RN: <strong>Hb FA</strong> (predomínio de Hb Fetal com presença de Hb A do adulto);<br>- Traço Falciforme: <strong>Hb FAS</strong> (benigno, assintomático);<br>- Anemia Falciforme: <strong>Hb FS</strong> (ausência de HbA normal do adulto!);<br>- Doença HbSC: <strong>Hb FSC</strong>;<br>- S-Beta Talassemia: <strong>Hb FSA</strong> (S > A) ou <strong>Hb FS</strong> (S-beta zero).",
+              "- Se padrão <strong>FS</strong> (Doença Falciforme): Iniciar obrigatoriamente <strong>profilaxia com Penicilina V oral diária aos 2 a 3 meses de vida</strong> (prevenção de sepse pneumocócica fulminante por asplenia funcional), esquema vacinal estendido especial (pneumo-conjugada 13 e polissacarídica 23, meningocócica ACWY e B) e orientação familiar intensiva para palpação do baço (crise de sequestro esplênico agudo);<br>- Se padrão FAS: Orientação genética familiar sobre traço falciforme (não desenvolve anemia nem vaso-oclusão)."
+            ],
+            [
+              "<strong>Fibrose Cística (FC)</strong>",
+              "Ensaio Imunoenzimático Fluorimétrico.",
+              "<strong>Tripsina Imunorreativa (IRT)</strong> sérica no papel-filtro.",
+              "- Valor de corte habitual: <strong>IRT > 70 ng/mL</strong> na 1ª amostra (até 30 dias de vida).",
+              "A tripsina extravasa para a circulação devido à obstrução dos ductos pancreáticos pelo muco viscoso. <strong>Protocolo de Rastreio em Duas Etapas:</strong><br>1. Se 1ª amostra de IRT $ge$ 70 ng/mL: <strong>recoletar obrigatoriamente 2ª amostra de IRT entre 15 e 30 dias de vida</strong> (idealmente com até 30 dias);<br>2. Se a 2ª amostra também for alterada ($ge$ 70 ng/mL) OU se a 1ª amostra for extremamente elevada (> 140 ng/mL): encaminhar imediatamente para realização do <strong>Teste do Suor (dosagem quantitativa de cloreto no suor por iontoforese com pilocarpina - padrão-ouro)</strong>."
+            ],
+            [
+              "<strong>Hiperplasia Adrenal Congênita (HAC)</strong>",
+              "Ensaio Imunofluorimétrico (DELFIA).",
+              "<strong>17-Hidroxiprogesterona (17-OHP)</strong>.",
+              "Valores de corte <strong>estratificados por peso de nascimento e idade gestacional</strong> (tabela percentilada), pois prematuros e baixo peso têm níveis basais fisiologicamente mais elevados.",
+              "- Se 17-OHP alterada: avaliar imediatamente o recém-nascido clinicamente em regime de urgência! No sexo feminino (46,XX): avaliar virilização de genitália (Prader); no sexo masculino (46,XY): genitália pode ser normal, mas risco de choque hipovolêmico por crise perdedora de sal;<br>- Coleta imediata de eletrólitos séricos (sódio, potássio), gasometria, glicemia e dosagem sérica confirmatória de 17-OHP, cortisol e atividade de renina plasmática."
+            ],
+            [
+              "<strong>Deficiência de Biotinidase (DB)</strong>",
+              "Ensaio Colorimétrico Semiquantitativo ou Fluorimétrico.",
+              "Atividade enzimática da <strong>Biotinidase</strong> sérica no sangue eluído.",
+              "- Atividade Normal: > 30% da média populacional;<br>- Deficiência Parcial: <strong>10% a 30%</strong> de atividade residual;<br>- Deficiência Total: <strong>< 10%</strong> de atividade enzimática.",
+              "Confirmação enzimática quantitativa imediata e início precoce de reposição oral diária contínua de <strong>Biotina livre (vitamina B7) na dose de 5 a 20 mg/dia</strong> por via oral por toda a vida, o que previne 100% das sequelas neurológicas, convulsões, atrofia óptica e dermatites graves."
+            ],
+            [
+              "<strong>Toxoplasmose Congênita</strong>",
+              "Ensaio Imunofluorimétrico ou ELISA de captura.",
+              "<strong>Anticorpos IgM específicos anti-<em>Toxoplasma gondii</em></strong> no papel-filtro.",
+              "- Reagente / Positivo: Presença de IgM neonatal.",
+              "Confirmação sorológica imediata por punção venosa periférica (IgM e IgG pareadas mãe/filho), exame oftalmológico com fundoscopia cuidadosa com dilatação pupilar (retinocoroidite), neuroimagem (TC de crânio ou USG transfontanelar para pesquisa de calcificações intracranianas difusas e ventriculomegalia) e início precoce de Sulfadiazina + Pirimetamina + Ácido Folínico por 12 meses."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "as-triagens-sensoriais-e-cardiovasculares-universais",
+      0,
+      [
+        [
+          "2",
+          "4. As Triagens Sensoriais, Cardiovasculares e Funcionais Universais"
+        ],
+        [
+          "3",
+          "1. O Teste do Olhinho (Teste do Reflexo Vermelho - TRV)"
+        ],
+        [
+          "p",
+          "O Teste do Reflexo Vermelho (TRV) é uma ferramenta propedêutica indispensável que deve ser realizada pelo médico assistente ou pediatra em todo recém-nascido antes da alta da maternidade e repetida periodicamente nas consultas de puericultura aos 2, 4, 6, 9, 12, 18, 24 e 36 meses de vida:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Técnica de Realização:</strong> Realizado em ambiente escurecido (penumbra). O examinador posiciona-se a uma distância de cerca de 50 cm a 1 metro do recém-nascido, utilizando o oftalmoscópio direto ajustado com dioptria zero (0). O feixe de luz é direcionado simultaneamente para ambas as pupilas, observando-se a luz refletida pela retina ricamente vascularizada;",
+            "<strong>Padrão de Resposta Normal:</strong> Visualização de um reflexo avermelhado, alaranjado ou amarelo-dourado homogêneo, límpido, brilhante e rigorosamente simétrico em ambos os olhos;",
+            "<strong>Achado Anormal e Alerta Vermelho - A Leucocoria (\"Reflexo de Olho de Gato\"):</strong> Qualquer assimetria entre os olhos, presença de manchas opacas escuras, reflexo esbranquiçado, acinzentado ou amarelado impõe o diagnóstico de <strong>leucocoria</strong>. Representa uma emergência oftalmológica pediátrica absoluta, exigindo encaminhamento em menos de 24 a 48 horas ao médico oftalmologista para fundoscopia sob dilatação farmacológica com colírios cicloplégicos. Suas principais causas subjacentes compreendem:\n    <ul>\n      <li><em>Catarata Congênita:</em> É a principal causa evitável de cegueira na infância. A opacificação do cristalino impede a chegada de estímulos visuais nítidos à fóvea macular durante o período crítico de plasticidade cerebral cortical, gerando ambliopia profunda irreversível. Exige cirurgia de facectomia com vitrectomia anterior precoce, realizada idealmente <strong>antes de 6 a 8 semanas de vida</strong>;",
+            "<em>Retinoblastoma:</em> Neoplasia maligna intraocular primária mais comum da infância, decorrente de mutação bialélica no gene supressor de tumor <em>RB1</em> no cromossomo 13q14. A leucocoria ao teste do olhinho é o sinal de apresentação em mais de 60% dos casos. O diagnóstico precoce previne a extensão extraocular para nervo óptico e sistema nervoso central, salvando tanto a visão quanto a vida da criança;",
+            "<em>Retinopatia da Prematuridade (ROP):</em> Vasculogênese retiniana anômala com proliferação fibrovascular em prematuros expostos a hiperóxia e flutuações de oxigênio suplementar;",
+            "<em>Outras Causas:</em> Persistência hiperplásica do vítreo primitivo, doença de Coats, coloboma de coroide e toxoplasmose ocular cicatricial."
+          ]
+        ],
+        [
+          "3",
+          "2. O Teste da Orelhinha (Triagem Auditiva Neonatal Universal - TANU)"
+        ],
+        [
+          "p",
+          "A privação sensorial auditiva nos primeiros meses de vida compromete de modo irreparável o desenvolvimento da linguagem, fala, cognição e habilidades socioemocionais da criança. A triagem é estratificada rigorosamente conforme a presença ou ausência de <strong>Indicadores de Risco para Deficiência Auditiva (IRDA)</strong> estabelecidos pelo Joint Committee on Infant Hearing (JCIH) e pelo Comitê Multiprofissional em Saúde Auditiva (COMUSA):"
+        ],
+        [
+          "t",
+          [
+            "Categoria do Recém-Nascido",
+            "Metodologia de Triagem Inicial",
+            "Interpretação e Conduta em Caso de Falha"
+          ],
+          [
+            [
+              "<strong>Recém-Nascido SEM Indicadores de Risco (Sem IRDA)</strong>",
+              "<strong>Emissões Otoacústicas Evocadas Transientes (EOAE)</strong> (\"Teste da Orelhinha clássico\"). Avalia a função biomecânica de contração ativa das <strong>células ciliadas externas da cóclea</strong>.",
+              "- Se \"Passa\": Audição coclear normal. Manter acompanhamento do desenvolvimento da linguagem na puericultura;<br>- Se \"Falha\": Reavaliar com novo teste de EOAE e/ou PEATE-automático em <strong>até 15 a 30 dias</strong> (para afastar vérnix caseoso ou secreção residual obstrutiva no meato acústico externo). Se persistir falha no reteste: encaminhamento imediato para avaliação audiológica diagnóstica completa com PEATE clínico, imitanciometria e otorrinolaringologista com fechamento diagnóstico até os 3 meses de vida."
+            ],
+            [
+              "<strong>Recém-Nascido COM Indicadores de Risco (Com IRDA)</strong>",
+              "<strong>Potencial Evocado Auditivo de Tronco Encefálico (PEATE-automático / ABR)</strong>. É <strong>obrigatório</strong> como método inicial, pois as EOAE isoladas não detectam lesões retrococleares.",
+              "- Avalia a integridade eletrofisiológica da via auditiva desde a cóclea e nervo vestibulococlear (VIII par) até o tronco encefálico. Detecta o <strong>Espectro da Neuropatia Auditiva</strong> (frequente em hiperbilirrubinemia com icterícia grave tratada com exsanguineotransfusão e anóxia neonatal, em que as células ciliadas externas podem estar íntegras - EOAE normal -, mas a via neural encontra-se desmielinizada ou desconectada - PEATE ausente ou desestruturado);<br>- Se falha: diagnóstico definitivo imediato por PEATE clínico com início de intervenção e adaptação de próteses auditivas/implante coclear <strong>antes dos 6 meses de vida</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Lista Oficial de Indicadores de Risco para Deficiência Auditiva (IRDA)"
+        ],
+        [
+          "u",
+          [
+            "Permanência em Unidade de Terapia Intensiva Neonatal (UTIN) por mais de 5 dias;",
+            "Uso de ventilação mecânica invasiva ou oxigenação por membrana extracorpórea (ECMO);",
+            "Exposição comprovada a drogas ototóxicas: aminoglicosídeos (gentamicina, amicacina) por mais de 5 dias associados ou não a diuréticos de alça (furosemida);",
+            "Hiperbilirrubinemia neonatal grave com níveis de bilirrubina indireta que atingiram critérios de exsanguineotransfusão ou encefalopatia bilirrubínica aguda (Kernicterus);",
+            "Infecções congênitas do grupo STORCH+Z (Citomegalovírus congênito - principal causa infecciosa não genética de surdez neurossensorial progressiva, Rubéola, Sífilis, Toxoplasmose, Herpes e vírus Zika);",
+            "Anomalias craniofaciais congênitas que afetem a orelha (microtia, atresia de meato acústico, apêndices pré-auriculares, fendas labiopalatinas);",
+            "Síndromes genéticas associadas à perda auditiva (Síndrome de Down, Turner, Waardenburg, Pendred, Usher, Treacher Collins);",
+            "História familiar documentada de deficiência auditiva congênita ou de início precoce em parentes de 1º grau;",
+            "Asfixia perinatal grave: Apgar menor que 4 no primeiro minuto ou menor que 6 aos 5 minutos de vida, encefalopatia hipóxico-isquêmica tratada com hipotermia terapêutica;",
+            "Meningite bacteriana neonatal confirmada ou sepse neonatal precoce/tardia."
+          ]
+        ],
+        [
+          "3",
+          "3. O Teste do Coraçãozinho (Oximetria de Pulso para Triagem de Cardiopatia Congênita Crítica)"
+        ],
+        [
+          "p",
+          "Aproximadamente 1 a 2 em cada 1.000 recém-nascidos vivos nascem com uma <strong>Cardiopatia Congênita Crítica (CCC)</strong>. Em sua maioria, são lesões anatômicas <em>canal-dependentes</em> (ou seja, a sobrevivência do paciente depende da patência fisiológica do canal arterial - <em>ductus arteriosus</em>, seja para assegurar o fluxo sanguíneo pulmonar ou o débito cardíaco sistêmico). Ao nascimento, enquanto o canal arterial permanece aberto, o recém-nascido frequentemente não apresenta cianose clínica perceptível nem sopros cardíacos audíveis. Contudo, entre 24 e 72 horas de vida, ocorre o fechamento funcional fisiológico do canal arterial impulsionado pelo aumento da tensão alveolar de oxigênio e queda abrupta das prostaglandinas maternas, desencadeando colapso hemodinâmico súbito, choque cardiogênico com acidose lática refratária e parada cardiorrespiratória no domicílio logo após a alta hospitalar."
+        ],
+        [
+          "4",
+          "Algoritmo Padronizado da Sociedade Brasileira de Pediatria (SBP) e Ministério da Saúde"
+        ],
+        [
+          "o",
+          [
+            "<strong>Momento e População Alvo:</strong> Recém-nascidos a termo ou prematuros tardios clinicamente estáveis com <strong>idade gestacional $ge$ 35 semanas</strong>, testados rigorosamente <strong>entre 24 e 48 horas de vida</strong> (nunca antes de 24 horas para evitar falso-positivos pela transição hemodinâmica da circulação fetal);",
+            "<strong>Sítios Anatômicos Padronizados:</strong>\n    <ul>\n      <li><strong>Membro Superior Direito (MSD):</strong> Mede a saturação <strong>Pré-ductal</strong> (o tronco braquiocefálico origina-se do arco aórtico antes da inserção do canal arterial);",
+            "<strong>Um dos Membros Inferiores (MIE ou MID):</strong> Mede a saturação <strong>Pós-ductal</strong> (a aorta descendente recebe o sangue do canal arterial após a emergência da artéria subclávia esquerda).",
+            "<strong>Critérios de Interpretação e Pontos de Corte Oficiais:</strong>\n    <ul>\n      <li><strong>Teste Normal (Negativo):</strong>\n        <br>SpO2 $ge$ 95% em ambos os sítios (MSD e MI) <strong>E</strong> diferença de saturação entre MSD e MI menor ou igual a 3% ($le$ 3%).\n        <br><em>Conduta:</em> Recém-nascido liberado para alta hospitalar conforme rotina de puericultura.",
+            "<strong>Teste Duvidoso / Alterado (Necessita de Reteste em 1 hora):</strong>\n        <br>SpO2 entre 90% e 94% em qualquer um dos membros <strong>OU</strong> diferença de saturação entre MSD e MI maior que 3% (> 3%).\n        <br><em>Conduta:</em> Aguardar rigorosamente 1 hora e repetir a aferição completa em MSD e MI. Se no reteste os valores normalizarem ($ge$ 95% e diferença $le$ 3%), o teste é considerado normal. <strong>Se persistir alterado no reteste (SpO2 90-94% ou diferença > 3%), o teste é considerado POSITIVO definitivo</strong>.",
+            "<strong>Teste Positivo Imediato (Emergência Clínica):</strong>\n        <br>SpO2 < 90% em qualquer um dos membros (MSD ou MI) na aferição inicial. <strong>Não necessita de reteste após 1 hora</strong>. É considerado positivo de imediato!",
+            "<strong>Conduta Mandatória Frente ao Teste do Coraçãozinho Positivo:</strong>\n    <ul>\n      <li>O recém-nascido <strong>NÃO pode receber alta hospitalar sob nenhuma hipótese</strong>;",
+            "Encaminhamento imediato para avaliação cardiológica pediátrica e realização de <strong>Ecocardiograma com Doppler a cores em até 24 horas</strong>;",
+            "Se houver sinais clínicos incipientes de hipoperfusão sistêmica, choque ou acidose metabólica com suspeita de cardiopatia dependente de canal, <strong>iniciar imediatamente infusão venosa contínua de Prostaglandina E1 (Alprostadil na dose de 0,01 a 0,1 mcg/kg/min)</strong> em acesso venoso exclusivo para reabrir e manter pérvio o canal arterial até a intervenção cirúrgica ou hemodinâmica corretiva."
+          ]
+        ],
+        [
+          "3",
+          "4. O Teste da Linguinha (Avaliação do Frênulo Lingual)"
+        ],
+        [
+          "p",
+          "Instituído obrigatoriamente em todas as maternidades brasileiras pela <strong>Lei Federal nº 13.002/2014</strong>, visa diagnosticar a <strong>anquiloglossia congênita</strong> (frênulo lingual curto, espesso ou anteriorizado com inserção até o ápice da língua). A anquiloglossia restringe a elevação, anteriorização e mobilidade da língua, impedindo o acoplamento vácuo-vedado correto da boca do bebê na aréola mamária durante a amamentação natural."
+        ],
+        [
+          "u",
+          [
+            "<strong>Repercussões Clínicas Materno-Infantis:</strong> No bebê, provoca dificuldade de apreensão do mamilo, estalidos de língua durante as mamadas, refluxo exagerado, cansaço nas mamadas e ganho ponderal insuficiente ou falha de crescimento; na mãe, decorre em dor excruciante na amamentação, fissuras mamilares sangrantes de repetição, ingurgitamento mamário patológico e desmame precoce involuntário; tardiamente, pode acarretar alterações fonatórias com distorção de fonemas consonantais linguodentais (como /r/ e /l/);",
+            "<strong>Avaliação e Conduta:</strong> Utiliza o Protocolo de Avaliação do Frênulo da Língua para Bebês (Protocolo de Martinelli ou critério anatomofuncional da SBP). Nos casos em que a ponta da língua assume formato fendido ou de coração quando elevada ou projetada, e o frênulo é visualmente fibroso e restritivo com impacto documentado na amamentação, indica-se a <strong>frenotomia lingual (pique lingual)</strong>, procedimento ambulatorial simples realizado sob anestesia tópica com incisão da prega do frênulo por tesoura de ponta romba seguida de hemostasia por compressão simples, restabelecendo a mobilidade lingual imediatamente."
+          ]
+        ]
+      ]
+    ],
+    [
+      "abordagem-terapeutica-e-protocolos-de-seguimento",
+      0,
+      [
+        [
+          "2",
+          "5. Abordagem Terapêutica Precoce e Protocolos de Manejo Clínico"
+        ],
+        [
+          "3",
+          "Princípios de Intervenção Precoce no Período Assintomático"
+        ],
+        [
+          "p",
+          "O valor supremo da triagem neonatal reside no fato incontestável de que o prognóstico neurológico, cognitivo, sensorial e vital depende criticamente da introdução do tratamento farmacológico, nutricional ou cirúrgico antes que o dano tecidual se torne estruturalmente consolidado e irreversível. A janela terapêutica de oportunidade para cada condição é estreita e exige protocolos assistenciais rigorosamente sincronizados:"
+        ],
+        [
+          "t",
+          [
+            "Patologia Triada",
+            "Janela Terapêutica Crítica",
+            "Intervenção Terapêutica de Primeira Linha",
+            "Meta Terapêutica e Monitorização Longitudinal"
+          ],
+          [
+            [
+              "<strong>Hipotireoidismo Congênito</strong>",
+              "<strong>Antes de 14 a 28 dias de vida</strong> (idealmente na 1ª a 2ª semana).",
+              "<strong>Levotiroxina sódica (L-T4) oral</strong> na dose inicial de ataque de <strong>10 a 15 mcg/kg/dia</strong> em dose única matinal diária, administrada macerada em água ou leite materno (nunca com fórmulas de soja ou ferro/cálcio que quelam o hormônio).",
+              "Normalização imediata do T4 livre na primeira semana (metade superior da faixa normal de referência) e normalização do TSH em até 2 a 4 semanas (< 5 mUI/L). Dosagens laboratoriais quinzenais no 1º mês, depois mensais até 6 meses."
+            ],
+            [
+              "<strong>Fenilcetonúria</strong>",
+              "<strong>Antes de 21 dias de vida</strong>.",
+              "<strong>Dieta restrita em fenilalanina</strong>: introdução obrigatória de <strong>Fórmula Metabólica de Aminoácidos Isenta de Fenilalanina</strong> enriquecida com tirosina, vitaminas e minerais, associada a aleitamento materno quantificado e dosado (para fornecer o requerimento mínimo essencial de Phe para o crescimento somático normal).",
+              "Manter os níveis séricos de fenilalanina estritamente entre <strong>2 e 6 mg/dL (120 a 360 mcmol/L)</strong> nos primeiros 12 anos de vida. Monitorização de Phe plasmática semanal até 1 ano de idade. Alimentos com alto teor protéico (carnes, ovos, leite, peixes, leguminosas e adoçante aspartame) são proibidos."
+            ],
+            [
+              "<strong>Doença Falciforme (HbSS / S-Beta zero)</strong>",
+              "<strong>Aos 2 a 3 meses de vida</strong>.",
+              "1. <strong>Profilaxia com Penicilina V oral</strong> (ou amoxicilina): 125 mg de 12/12h dos 2 meses aos 3 anos, e 250 mg de 12/12h dos 3 aos 5 anos de vida;<br>2. <strong>Imunização especial</strong> (Pneumocócica 13-valente conjugada + Pneumocócica 23-valente polissacarídica aos 2 anos; Meningocócica ACWY e Meningo B);<br>3. <strong>Ácido fólico diário</strong> (1 mg/dia) para suporte da hiperplasia eritróide.",
+              "Redução de mais de 80% na mortalidade por bacteremia e pneumonia por <em>Streptococcus pneumoniae</em>. Orientação parental intensiva para palpação abdominal diária do baço (detecção precoce de crise de sequestro esplênico) e busca imediata de pronto-socorro em qualquer episódio febril ($ge$ 38,5 ºC). Introdução de <strong>Hidroxiureia</strong> a partir dos 9 a 12 meses de vida."
+            ],
+            [
+              "<strong>Fibrose Cística</strong>",
+              "<strong>Antes dos 2 meses de vida</strong>.",
+              "1. <strong>Suplementação de enzimas pancreáticas</strong> (pancreatina microesferas com revestimento entérico) a cada mamada ou refeição;<br>2. <strong>Suplementação de vitaminas lipossolúveis (A, D, E, K)</strong> em doses dobradas;<br>3. <strong>Suplementação de Cloreto de Sódio oral</strong> (1 a 2 mEq/kg/dia para repor perdas no suor no clima tropical);<br>4. Fisioterapia respiratória desobstrutiva diária.",
+              "Prevenção do atraso ponderoestatural, desnutrição proteico-calórica e bronquiectasias precoces. Culturas orofaríngeas regulares para erradicação precoce de <em>Pseudomonas aeruginosa</em> com tobramicina inalatória. Moduladores de CFTR (ivacaftor, lumacaftor, elexacaftor) conforme genótipo específico a partir de idades autorizadas."
+            ],
+            [
+              "<strong>Hiperplasia Adrenal Congênita (Perdedora de Sal)</strong>",
+              "<strong>Imediata ao nascimento / primeiros dias</strong> (antes da crise perdedora de sal no 7º-14º dia).",
+              "1. <strong>Glicocorticoide: Hidrocortisona oral</strong> na dose de 10 a 15 mg/m²/dia dividida em 3 tomadas (suprime a hipersecreção de ACTH e hiperandrogenismo);<br>2. <strong>Mineralocorticoide: Fludrocortisona oral</strong> 0,05 a 0,2 mg/dia;<br>3. <strong>Suplementação de Cloreto de Sódio oral</strong> (1 a 2 g/dia) no primeiro ano de vida.",
+              "Prevenção do choque hipovolêmico letal, normalização do crescimento estatural e da maturação óssea. Em estresse agudo, febre ou cirurgias: <strong>triplicar a dose de hidrocortisona</strong> (dose de estresse para prevenir crise adrenal aguda)."
+            ],
+            [
+              "<strong>Deficiência de Biotinidase</strong>",
+              "<strong>Primeiras semanas de vida</strong>.",
+              "<strong>Biotina livre (vitamina B7 / H) oral</strong> na dose de <strong>5 a 20 mg por via oral uma vez ao dia</strong> para o resto da vida.",
+              "Prevenção absoluta de convulsões mioclônicas, acidose lática, atrofia do nervo óptico, perda auditiva e alopecia. Se instituída precocemente, o paciente desenvolve-se com inteligência e motricidade 100% normais."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-e-resolvidos-triagens",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Resolvidos com Raciocínio Clínico Completo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Teste do Pezinho com TSH Elevado - Hipotireoidismo Congênito"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Lactente do sexo masculino, 16 dias de vida, nascido a termo (39 semanas), parto vaginal sem intercorrências, peso de nascimento 3.350 g, Apgar 9/10, alta da maternidade com 48 horas de vida em aleitamento materno exclusivo. A mãe comparece à Unidade Básica de Saúde (UBS) convocada com urgência pelo serviço de referência em triagem neonatal do estado devido ao resultado do Teste do Pezinho, cuja amostra em papel-filtro foi colhida no 4º dia de vida. A mãe relata que o bebê \"é muito calmo, dorme o dia todo e quase não chora\", mamando apenas quando acordado por ela a cada 4 ou 5 horas. Refere ainda que o bebê evacua apenas a cada 3 dias com fezes pastosas ressecadas."
+        ],
+        [
+          "4",
+          "Exame Físico na UBS"
+        ],
+        [
+          "u",
+          [
+            "<strong>Sinais Vitais e Antropometria:</strong> FC 108 bpm, FR 32 irpm, Temp 36,2 ºC, Peso atual 3.280 g (perda de 2% em relação ao nascimento), Comprimento 50 cm, Perímetro Cefálico 35,5 cm;",
+            "<strong>Ectoscopia:</strong> Recém-nascido sonolento, hipoativo, com discreta icterícia zona 2 de Kramer (face e tronco até cicatriz umbilical), pele seca, fria e descamativa. Presença de fontanela anterior ampla (3,5 x 3,5 cm) e fontanela posterior pérvia medindo 1,5 cm (anormal para a idade);",
+            "<strong>Segmento Cefálico e Abdome:</strong> Macroglossia discreta com ponta da língua interposta entre as gengivas; choro rouco e fraco. Abdome globoso com presença de hérnia umbilical redutível de 2,0 cm de anel aponeurótico. Tônus muscular global diminuído com hipotonia axial moderada; reflexos primitivos presentes, porém lentificados."
+          ]
+        ],
+        [
+          "4",
+          "Resultado do Teste do Pezinho e Exames Complementares"
+        ],
+        [
+          "p",
+          "<strong>Resultado do Teste do Pezinho (papel-filtro colhido no 4º dia):</strong> TSH neonatal = <strong>54 mUI/L</strong> (Valor de referência normal: < 10 mUI/L). Os demais analitos (Fenilalanina, Hemoglobinas, IRT, 17-OHP e Biotinidase) resultaram normais."
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Conduta Passo a Passo"
+        ],
+        [
+          "o",
+          [
+            "<strong>Interpretação Diagnóstica:</strong> O valor de TSH de 54 mUI/L situa-se francamente na faixa de alto risco (> 20 mUI/L), estabelecendo a altíssima probabilidade diagnóstica de <strong>Hipotireoidismo Congênito Primário</strong> (provavelmente por disgenesia tireoidiana). Os sinais clínicos incipientes de alerta (hipoatividade, fontanela posterior aberta > 0,5 cm, hipotermia relativa, constipação intestinal, choro rouco e hérnia umbilical) corroboram a insuficiência tireoidiana em evolução;",
+            "<strong>Conduta Imediata Inegociável:</strong> O médico da UBS <strong>não deve aguardar o resultado do exame de sangue venoso para iniciar o tratamento</strong> quando o TSH no papel-filtro é superior a 20 mUI/L! Deve-se proceder à coleta imediata de amostra venosa periférica para dosagem confirmatória de TSH e T4 livre e <strong>iniciar no mesmo dia a Levotiroxina sódica oral na dose de 10 a 15 mcg/kg/dia</strong> (aproximadamente 37,5 a 50 mcg/dia para este lactente de 3,3 kg);",
+            "<strong>Orientações de Administração à Mãe:</strong> O comprimido de levotiroxina deve ser macerado entre duas colheres com pequena quantidade de água filtrada ou leite materno e administrado diretamente na boca do bebê em jejum pela manhã. Não misturar com fórmulas à base de soja nem suplementos de ferro ou cálcio;",
+            "<strong>Seguimento e Confirmação:</strong> A dosagem sérica venosa confirmatória colhida retornou 48 horas depois com TSH sérico > 100 mUI/L e T4 livre = 0,3 ng/dL (VR: 0,9 a 2,2 ng/dL), confirmando o hipotireoidismo congênito primário severo. O ultrassom de tireoide evidenciou tireoide ectópica sublingual hipoplásica. Com a instituição da levotiroxina aos 16 dias de vida, o lactente garantiu proteção contra o cretinismo e déficit intelectual irreversível."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Teste do Coraçãozinho Positivo - Coarctação de Aorta Crítica"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Recém-nascido do sexo feminino, nascido com 38 semanas e 4 dias de idade gestacional por parto cesárea eletivo devido a cesárea anterior repetida, peso de nascimento 3.120 g, Apgar 9/10, sem intercorrências no pré-natal, com ultrassonografia morfológica fetal prévia descrita como normal. Encontra-se no alojamento conjunto em aleitamento materno com 30 horas de vida, clinicamente assintomática, com boa pega e sucção."
+        ],
+        [
+          "4",
+          "Exame Físico e Triagem na Maternidade"
+        ],
+        [
+          "u",
+          [
+            "Durante a triagem rotineira com oximetria de pulso (Teste do Coraçãozinho) com 30 horas de vida:\n      <ul>\n        <li><strong>Membro Superior Direito (MSD - Pré-ductal):</strong> SpO2 = <strong>96%</strong>;",
+            "<strong>Membro Inferior Direito (MID - Pós-ductal):</strong> SpO2 = <strong>89%</strong>."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n    <li>A saturação em membro inferior encontra-se < 90%, preenchendo critério de teste imediatamente positivo. Foi realizado exame físico cardiovascular direcionado minucioso:"
+        ],
+        [
+          "u",
+          [
+            "Frequência cardíaca: 144 bpm, pulsos radiais cheios e amplos bilateralmente; <strong>pulsos femorais filiformes e nitidamente diminuídos</strong> à palpação simultânea bimanual braquiofemoral;",
+            "Aferição de Pressão Arterial nos quatro membros com manguito adequado: PA em MSD = 78/48 mmHg; PA em MID = 52/34 mmHg (gradiente sistólico pré e pós-ductal de 26 mmHg, altamente patológico!);",
+            "Ausculta cardíaca: ritmo cardíaco regular em 2 tempos, bulhas normofonéticas, presença de sopro sistólico ejetivo suave grau II/VI mais audível em dorso e região interescapular esquerda. Ausência de taquipneia, tiragem ou hepatomegalia no momento."
+          ]
+        ],
+        [
+          "4",
+          "Raciocínio Clínico, Diagnóstico e Conduta"
+        ],
+        [
+          "o",
+          [
+            "<strong>Interpretação da Triagem:</strong> O teste do coraçãozinho é positivo inequívoco pela presença de SpO2 < 90% em membro inferior e diferença de saturação pré e pós-ductal de 7% (patológico > 3%). A hipoxemia seletiva nos membros inferiores associada à assimetria de pulsos periféricos e gradiente pressórico é o clássico quadro de <strong>Coarctação de Aorta Crítica Justaductal dependente de canal</strong>;",
+            "<strong>Fisiopatologia do Colapso Iminente:</strong> A aorta descendente e a perfusão da metade inferior do corpo e das vísceras abdominais dependem do fluxo através do canal arterial patente da direita para a esquerda. À medida que o canal arterial começa seu fechamento fisiológico nas primeiras 48 a 72 horas de vida, a coarctação se estreita criticamente, o que levaria a anúria, isquemia mesentérica, choque cardiogênico fulminante e óbito após a alta domiciliar;",
+            "<strong>Conduta Imediata de Emergência:</strong> O recém-nascido foi transferido imediatamente para a UTI Neonatal com monitorização invasiva contínua, mantido em jejum e iniciado acesso venoso central exclusivo para infusão contínua de <strong>Prostaglandina E1 (Alprostadil) na dose de 0,05 mcg/kg/min</strong> para reabertura do canal arterial;",
+            "<strong>Confirmação e Desfecho:</strong> O ecocardiograma com Doppler transtorácico realizado em regime de urgência confirmou coarctação de aorta justaductal severa com gradiente de pico de 35 mmHg e canal arterial patente com fluxo bidirecional mantido pela infusão de alprostadil. Os pulsos femorais e a saturação pós-ductal normalizaram (SpO2 MID subiu para 96%). A criança foi submetida a correção cirúrgica com ressecção da coarctação e anastomose término-terminal estendida no 4º dia de vida, com evolução pós-operatória excelente e alta curada."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Fibrose Cística - Protocolo de IRT Alterado e Teste do Suor"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Recém-nascido do sexo feminino, 35 dias de vida, trazida pela mãe ao ambulatório de pediatria de referência do PNTN. A 1ª amostra do teste do pezinho colhida no 4º dia de vida revelou dosagem de <strong>Tripsina Imunorreativa (IRT) de 98 ng/mL</strong> (VR: < 70 ng/mL). A UBS convocou a família para a 2ª amostra de IRT, colhida com 22 dias de vida, cujo resultado revelou <strong>IRT de 84 ng/mL</strong> (novamente acima do ponto de corte de 70 ng/mL). A mãe relata que a criança mama bem ao seio materno, mas apresenta cerca de 6 evacuações volumosas por dia, com fezes amareladas, brilhantes, com aspecto gorduroso e odor extremamente fétido, além de ganho ponderal insuficiente."
+        ],
+        [
+          "4",
+          "Exame Físico e Dados Antropométricos"
+        ],
+        [
+          "u",
+          [
+            "Peso ao nascer: 3.200 g (IG 39 semanas); Peso com 35 dias: 3.250 g (ganho ponderal de apenas 50 gramas em mais de 1 mês de vida, caracterizando falha evidente de crescimento);",
+            "Ectoscopia: Lactente emagrecido, com escassez de panículo adiposo subcutâneo em tronco e membros, sem cianose ou icterícia;",
+            "Aparelho Respiratório: Eupneica, FR 38 irpm, ausculta pulmonar limpa sem estertores ou sibilos no momento;",
+            "Aparelho Digestivo: Abdome discretamente distendido e timpanizado, sem visceromegalias palpáveis; ânus íntegro, fezes ao exame com aspecto esteatorreico evidente."
+          ]
+        ],
+        [
+          "4",
+          "Exames Complementares e Investigação Diagnóstica"
+        ],
+        [
+          "p",
+          "Frente a duas dosagens sucessivas elevadas de IRT no papel-filtro, a criança foi submetida imediatamente ao <strong>Teste do Suor quantitativo por iontoforese com pilocarpina</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Dosagem de Cloreto no Suor (1ª determinação): <strong>88 mEq/L</strong>;",
+            "Dosagem de Cloreto no Suor (2ª determinação confirmatória em membro contralateral): <strong>92 mEq/L</strong> (Valores de referência: normal $le$ 29 mEq/L; limítrofe/duvidoso 30 a 59 mEq/L; <strong>positivo definitivo para Fibrose Cística $ge$ 60 mEq/L</strong>)."
+          ]
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Plano Terapêutico Integrado"
+        ],
+        [
+          "o",
+          [
+            "<strong>Diagnóstico Estabelecido:</strong> Duas dosagens de IRT elevadas na triagem neonatal confirmadas por duas dosagens de cloreto no suor $ge$ 60 mEq/L associadas à clínica de má absorção lipídica e falha de ganho ponderal fecham o diagnóstico definitivo de <strong>Fibrose Cística com Insuficiência Pancreática Exócrina</strong>;",
+            "<strong>Manejo Nutricional Imediato:</strong>\n      <ul>\n        <li>Introdução de <strong>Terapia de Reposição Enzimática Pancreática (pancreatina em microesferas gastro-resistentes)</strong> administrada por via oral imediatamente antes de cada mamada ao seio ou alimentação;",
+            "Suplementação diária de <strong>vitaminas lipossolúveis (A, D, E e K)</strong> em formulações aquosas hidrossolúveis de alta absorção;",
+            "Suplementação oral diária de <strong>Cloreto de Sódio a 10% (1 a 2 mEq/kg/dia)</strong> para repor as perdas excessivas de sal pelo suor e prevenir desidratação hiponatrêmica hipoclorêmica metabólica crônica no lactente;",
+            "<strong>Manejo Respiratório Preventivo:</strong> Início de fisioterapia respiratória diária supervisionada para higiene brônquica e coleta periódica de swab de orofaringe para vigilância microbiológica estrita;",
+            "<strong>Estudo Genético:</strong> Painel molecular do gene <em>CFTR</em> identificou mutação $Delta$F508 em homozigose, confirmando o prognóstico e permitindo aconselhamento genético familiar."
+          ]
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Triagem Auditiva Alterada - Neuropatia Auditiva por Hiperbilirrubinemia"
+        ],
+        [
+          "4",
+          "Identificação e História"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo, 40 semanas, filho de mãe multípara tipo sanguíneo O positivo e recém-nascido tipo A positivo com Coombs Direto positivo (Incompatibilidade Materno-Fetal ABO). Desenvolveu icterícia precoce com 14 horas de vida, apresentando pico de Bilirrubina Indireta de 26,8 mg/dL com 36 horas de vida, necessitando de internação em UTIN e submissão a <strong>Exsanguineotransfusão total</strong> associada a fototerapia intensiva de alta eficácia (LED). O lactente apresentou reversão satisfatória dos níveis séricos de bilirrubina, recebeu alta da UTIN no 8º dia de vida com estabilidade clínica e ganho de peso."
+        ],
+        [
+          "4",
+          "Avaliação Propedêutica da Triagem Auditiva na Maternidade"
+        ],
+        [
+          "p",
+          "O pediatra assistente realizou o rastreamento auditivo neonatal antes da alta hospitalar:"
+        ],
+        [
+          "u",
+          [
+            "O teste de <strong>Emissões Otoacústicas Evocadas (EOAE)</strong> foi realizado e o laudo indicou <strong>\"Passou\" (Normal bilateralmente)</strong>;",
+            "Contudo, ao revisar o prontuário, o médico constatou a história de hiperbilirrubinemia grave com exsanguineotransfusão, a qual configura um <strong>Indicador de Risco para Deficiência Auditiva (IRDA)</strong> formal segundo o COMUSA e JCIH. O médico solicitou imediatamente o <strong>Potencial Evocado Auditivo de Tronco Encefálico (PEATE-automático)</strong>;",
+            "<strong>Resultado do PEATE-automático:</strong> Revelou <strong>\"Falha\" bilateral (ausência completa de ondas eletrofisiológicas I, III e V)</strong> mesmo com estímulo acústico em intensidade máxima de 80 dB nHL!"
+          ]
+        ],
+        [
+          "4",
+          "Raciocínio Clínico e Conduta Diagnóstica Especializada"
+        ],
+        [
+          "o",
+          [
+            "<strong>Interpretação da Dissociação Eletrofisiológica (EOAE normal com PEATE ausente):</strong> Este padrão disjuntivo clássico (presença de emissões otoacústicas com ausência de condução neural pelo tronco encefálico) é a assinatura eletrofisiológica patognomônica do <strong>Espectro da Neuropatia Auditiva (ENA) / Dessincronia Auditiva</strong>;",
+            "<strong>Fisiopatologia da Lesão Bilirrubínica:</strong> A bilirrubina não conjugada livre (fração lipofílica) atravessa a barreira hematoencefálica imatura e deposita-se seletivamente nos <strong>núcleos da via auditiva no tronco encefálico (núcleos cocleares e colículos inferiores)</strong> e nas fibras do nervo auditivo (desmielinização e lesão sináptica com as células ciliadas internas). Por outro lado, as <strong>células ciliadas externas da cóclea</strong> são metabolicamente poupadas da toxicidade bilirrubínica, mantendo sua função mecânica contrátil preservada, gerando um teste de EOAE falsamente normal (\"falso passa\" para a audição funcional!);",
+            "<strong>Implicação Prática de Prova e de Plantão:</strong> Em qualquer recém-nascido portador de IRDA (especialmente icterícia com indicação de exsanguineotransfusão ou prematuros extremos de UTIN), o teste de EOAE isolado é <strong>contraindicado como método único de triagem</strong>! A triagem deve ser realizada obrigatoriamente através do <strong>PEATE</strong>;",
+            "<strong>Conduta de Acompanhamento:</strong> O paciente foi encaminhado de imediato ao serviço terciário de saúde auditiva pediátrica para PEATE de diagnóstico clínico em frequência específica, ressonância magnética de encéfalo e início de habilitação audiológica intensiva fonoaudiológica antes dos 6 meses de vida, com indicação formal precoce de implante coclear bilateral se ausência de progressão do desenvolvimento da linguagem, assegurando prognóstico neurocognitivo favorável."
+          ]
+        ]
+      ]
+    ],
+    [
+      "questoes-comentadas-triagens-neonatais",
+      0,
+      [
+        [
+          "2",
+          "7. Questões de Concurso e Residência Médica Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (USP-SP - Pediatria / Neonatologia)"
+        ],
+        [
+          "p",
+          "Recém-nascido a termo, 39 semanas, peso de nascimento 3.250 g, sem intercorrências no parto. Recebeu alta da maternidade com 50 horas de vida. O Teste do Pezinho foi colhido no posto de saúde com 4 dias de vida. Aos 18 dias de vida, a família é comunicada de que o TSH neonatal no papel-filtro resultou em 48 mUI/L (valor de referência: < 10 mUI/L). Ao comparecer à consulta médica na UBS, o lactente apresenta-se sonolento, com fontanela posterior aberta de 1,5 cm, discreta icterícia na face e abdome globoso com pequena hérnia umbilical redutível. Assinale a melhor conduta imediata:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Solicitar retorno da criança em 30 dias para recoletar nova amostra de sangue em papel-filtro para confirmar o TSH.<br>\n<strong>B)</strong> Coletar sangue venoso para dosagem sérica de TSH e T4 livre e iniciar imediatamente Levotiroxina sódica oral na dose de 10 a 15 mcg/kg/dia, sem aguardar o resultado do exame sérico.<br>\n<strong>C)</strong> Solicitar cintilografia de tireoide com iodo-131 e aguardar o laudo para definir se há tecido funcionante antes de qualquer reposição hormonal.<br>\n<strong>D)</strong> Tranquilizar a mãe, informando que o resultado provavelmente decorre do pico fisiológico do TSH neonatal pós-parto imediato."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> O caso aborda a conduta diante de um resultado francamente positivo no rastreamento neonatal para Hipotireoidismo Congênito (TSH > 20 mUI/L)."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> Quando o TSH no papel-filtro é francamente elevado (> 20 mUI/L), a conduta preconizada pelo Ministério da Saúde e pelas diretrizes da SBP é a <strong>coleta imediata de sangue venoso para TSH e T4 livre associada ao início imediato da reposição com Levotiroxina sódica oral na dose de 10 a 15 mcg/kg/dia sem aguardar o resultado</strong>. A reposição iniciada antes de 2 a 4 semanas de vida previne o dano cognitivo permanente e o cretinismo;",
+            "<em>Por que a alternativa A está incorreta?</em> Esperar mais 30 dias para uma nova amostra em papel-filtro provocará atraso terapêutico inaceitável e sequela neurológica irreversível por desmielinização axonal;",
+            "<em>Por que a alternativa C está incorreta?</em> Estudos de imagem (USG ou cintilografia) têm papel etiológico secundário e jamais devem retardar o início da terapia de reposição hormonal;",
+            "<em>Por que a alternativa D está incorreta?</em> O \"TSH surge\" fisiológico ocorre nas primeiras 24 horas de vida e normaliza em 48 a 72 horas. A amostra foi colhida no 4º dia (96 horas), quando o pico pós-natal já se dissipou. TSH de 48 mUI/L no 4º dia é manifestamente patológico."
+          ]
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Revalida Nacional)"
+        ],
+        [
+          "p",
+          "Em uma maternidade pública, um recém-nascido a termo com 32 horas de vida, clinicamente assintomático, em aleitamento materno exclusivo, é submetido ao Teste do Coraçãozinho (oximetria de pulso). A aferição revelou saturação de oxigênio de 97% no membro superior direito (MSD) e 91% no membro inferior esquerdo (MIE). De acordo com as diretrizes da Sociedade Brasileira de Pediatria e Ministério da Saúde, a conduta correta a ser adotada é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Liberar o recém-nascido para alta hospitalar, pois a saturação pré-ductal em MSD encontra-se acima de 95%.<br>\n<strong>B)</strong> O teste é duvidoso/alterado: deve-se repetir a oximetria de pulso em MSD e membro inferior após 1 hora.<br>\n<strong>C)</strong> Indicar cirurgia cardíaca de urgência de imediato antes de qualquer exame de imagem.<br>\n<strong>D)</strong> Considerar o teste normal se o recém-nascido estiver chorando vigorosamente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> O teste do coraçãozinho avalia a saturação no membro superior direito (pré-ductal) e em um dos membros inferiores (pós-ductal) entre 24 e 48 horas de vida."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> O teste é considerado normal apenas se SpO2 $ge$ 95% em ambos os membros E diferença $le$ 3%. Neste recém-nascido, a SpO2 no MIE é de 91% (faixa de 90% a 94%) e a diferença entre os membros é de 6% (97% - 91% = 6%, superior a 3%). Portanto, o teste é <strong>duvidoso/alterado</strong>, exigindo <strong>obrigatoriamente uma nova aferição completa em 1 hora</strong>. Se no reteste persistir SpO2 entre 90-94% ou diferença > 3%, o teste torna-se positivo definitivo, exigindo ecocardiograma em até 24 horas;",
+            "<em>Por que a alternativa A está incorreta?</em> A presença de saturação pós-ductal de 91% com diferença de 6% é patológica e pode indicar coarctação de aorta ou fluxo da direita para a esquerda pelo canal arterial; a alta é proibida;",
+            "<em>Por que a alternativa C está incorreta?</em> O teste ainda requer confirmação no reteste em 1 hora e diagnóstico anatômico por ecocardiograma prévio a qualquer intervenção;",
+            "<em>Por que a alternativa D está incorreta?</em> O choro e a agitação motora diminuem a acurácia da oximetria; o teste deve ser realizado com o RN calmo e com extremidades aquecidas."
+          ]
+        ],
+        [
+          "3",
+          "Questão 3 (UNICAMP - Triagem Auditiva e Risco)"
+        ],
+        [
+          "p",
+          "Recém-nascido de 38 semanas, internado por 8 dias em Unidade de Terapia Intensiva Neonatal devido a sepse neonatal precoce tratada com ampicilina e gentamicina por 7 dias. Antes da alta hospitalar, a equipe planeja a realização do \"Teste da Orelhinha\". Diante do histórico clínico do paciente, o método de escolha correto para a triagem auditiva neonatal deste lactente é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Emissões Otoacústicas Evocadas (EOAE) isoladas, pois é o teste mais rápido e suficiente para qualquer recém-nascido.<br>\n<strong>B)</strong> Potencial Evocado Auditivo de Tronco Encefálico (PEATE-automático), devido à presença de Indicadores de Risco para Deficiência Auditiva.<br>\n<strong>C)</strong> Audiometria tonal em campo livre com fones de inserção.<br>\n<strong>D)</strong> Timpanometria isolada de alta frequência com curva tipo A."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> Este recém-nascido apresenta múltiplos <strong>Indicadores de Risco para Deficiência Auditiva (IRDA)</strong> formais: permanência em UTIN > 5 dias e exposição a droga ototóxica (aminoglicosídeo / gentamicina) por mais de 5 dias."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> Em recém-nascidos COM indicadores de risco (com IRDA), o método de triagem obrigatório inicial é o <strong>PEATE (Potencial Evocado Auditivo de Tronco Encefálico)</strong>. O PEATE avalia a via auditiva neural até o tronco encefálico, sendo capaz de diagnosticar a <strong>Neuropatia Auditiva / Dessincronia Auditiva</strong>, que não é detectada pelas Emissões Otoacústicas (EOAE), uma vez que nas neuropatias as células ciliadas externas cocleares podem estar funcionantes (gerando EOAE falsamente normal), mas a condução nervosa pelo VIII par é ausente;",
+            "<em>Por que a alternativa A está incorreta?</em> As EOAE isoladas avaliam apenas as células ciliadas externas da cóclea e são indicadas como método inicial unicamente em recém-nascidos SEM indicadores de risco;",
+            "<em>Por que as alternativas C e D estão incorretas?</em> A audiometria tonal convencional exige cooperação comportamental voluntária inviável em neonatos; a timpanometria avalia a orelha média e não a sensibilidade auditiva neurossensorial."
+          ]
+        ],
+        [
+          "3",
+          "Questão 4 (UERJ - Pediatria / Triagem Biológica)"
+        ],
+        [
+          "p",
+          "No Programa Nacional de Triagem Neonatal (Teste do Pezinho), a dosagem da Tripsina Imunorreativa (IRT) é utilizada para o rastreamento da Fibrose Cística. Sobre esse protocolo, assinale a afirmativa correta:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Um valor elevado de IRT na primeira amostra estabelece o diagnóstico definitivo de Fibrose Cística, permitindo iniciar tratamento enzimático sem novos exames.<br>\n<strong>B)</strong> O protocolo exige uma segunda amostra de IRT entre 15 e 30 dias de vida se a primeira for alterada; se ambas forem elevadas, impõe-se a realização do Teste do Suor.<br>\n<strong>C)</strong> A dosagem de IRT é um teste genético que pesquisa mutações no gene CFTR diretamente no papel-filtro.<br>\n<strong>D)</strong> A coleta da primeira amostra para IRT deve ser realizada preferencialmente após os 3 meses de idade para maior sensibilidade."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> A triagem da Fibrose Cística no PNTN segue a estratégia bioquímica sequencial IRT/IRT."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> Como a IRT pode elevar-se transitoriamente por estresse perinatal, asfixia ou prematuridade, um primeiro valor elevado ($ge$ 70 ng/mL) exige <strong>obrigatoriamente a recoleta de uma segunda amostra de IRT entre 15 e 30 dias de vida</strong>. Se a segunda amostra persistir alterada, a criança deve ser imediatamente encaminhada para o <strong>Teste do Suor (dosagem quantitativa de cloreto pelo método de iontoforese com pilocarpina)</strong>, que é o padrão-ouro confirmatório;",
+            "<em>Por que a alternativa A está incorreta?</em> A IRT é apenas um marcador de triagem indireto; não fecha diagnóstico e possui taxas não desprezíveis de falso-positivos na primeira dosagem;",
+            "<em>Por que a alternativa C está incorreta?</em> A IRT é uma enzima pancreática dosada por ensaio imunoenzimático, e não um teste genético molecular;",
+            "<em>Por que a alternativa D está incorreta?</em> Os níveis de IRT declinam fisiologicamente com a idade devido à atrofia progressiva dos ácinos pancreáticos na fibrose cística; a sensibilidade do teste cai drasticamente após 30 a 60 dias de vida."
+          ]
+        ],
+        [
+          "3",
+          "Questão 5 (FMRP-USP - Teste do Olhinho e Leucocoria)"
+        ],
+        [
+          "p",
+          "Durante o exame físico de alta hospitalar de um recém-nascido a termo de 48 horas de vida, o pediatra realiza o Teste do Reflexo Vermelho (Teste do Olhinho). Observa reflexo avermelhado brilhante e simétrico no olho direito, porém presença de reflexo esbranquiçado (leucocoria) com ausência de reflexo vermelho no olho esquerdo. A conduta correta é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> Reavaliar o teste na consulta de puericultura de 30 dias de vida, pois pode tratar-se de edema conjuntival transitório.<br>\n<strong>B)</strong> Prescrever colírio de tobramicina tópica e tranquilizar a família quanto à benignidade do achado.<br>\n<strong>C)</strong> Encaminhar imediatamente o recém-nascido para exame oftalmológico especializado urgente sob dilatação pupilar (urgência oftalmológica pediátrica).<br>\n<strong>D)</strong> Solicitar radiografia simples de crânio e manter o seguimento ambulatorial na UBS."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> A <strong>leucocoria</strong> (\"reflexo pupilar branco\" ou ausência do reflexo vermelho) observada ao Teste do Olhinho é um sinal de alarme crítico na pediatria."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa C está correta?</em> A leucocoria é manifestação clínica de patologias oculares graves com risco iminente de perda visual permanente ou de morte, notadamente <strong>Catarata Congênita</strong> (cuja cirurgia deve ser feita antes de 6 a 8 semanas para evitar ambliopia irreversível) e <strong>Retinoblastoma</strong> (neoplasia maligna intraocular que pode invadir o SNC). Exige <strong>encaminhamento imediato em caráter de urgência para avaliação por oftalmologista</strong> com mapeamento de retina e biomicroscopia sob midríase farmacológica;",
+            "<em>Por que as demais alternativas estão incorretas?</em> Postergar o exame para 30 dias é erro grave que consolida a ambliopia ou permite disseminação tumoral; colírios antibióticos não têm qualquer efeito sobre patologias do cristalino ou da retina; e RX simples não tem acurácia para avaliação do globo ocular."
+          ]
+        ],
+        [
+          "3",
+          "Questão 6 (SMS-RJ / Residência Médica em Pediatria)"
+        ],
+        [
+          "p",
+          "No resultado do Teste do Pezinho de um recém-nascido a termo de 15 dias de vida, a cromatografia de hemoglobina (HPLC) revelou o perfil: <strong>Hb FAS</strong>. A mãe comparece ansiosa à consulta médica de puericultura perguntando se o filho tem \"anemia falciforme grave\" e se precisará de transfusões de sangue. A orientação médica correta que deve ser fornecida à mãe é:"
+        ],
+        [
+          "p",
+          "<strong>A)</strong> O resultado confirma Anemia Falciforme homozigota; o bebê deve iniciar penicilina profilática diária imediatamente.<br>\n<strong>B)</strong> O resultado indica Traço Falciforme (heterozigoto); a criança é portadora saudável, não apresenta anemia nem crises vaso-oclusivas e não requer restrições ou profilaxia medicamentosa.<br>\n<strong>C)</strong> O padrão FAS corresponde à Doença da Hemoglobina C e requer esplenectomia profilática.<br>\n<strong>D)</strong> O teste está inválido e deve ser repetido obrigatoriamente após 1 ano de idade para confirmar a presença de hemoglobina S."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Detalhado do Especialista:</strong> A interpretação das hemoglobinopatias no teste do pezinho é tema clássico de concursos e prática pediátrica."
+        ],
+        [
+          "u",
+          [
+            "<em>Por que a alternativa B está correta?</em> O padrão <strong>Hb FAS</strong> indica a presença de Hemoglobina Fetal (F), Hemoglobina A normal do adulto (A) e uma fração menor de Hemoglobina S variante (S), com predomínio de A sobre S. Isso caracteriza o <strong>Traço Falciforme (heterozigose HbAS)</strong>. O portador do traço falciforme é assintomático, não tem anemia, não sofre polimerização de hemácias sob condições fisiológicas, não tem crises álgicas e tem expectativa de vida 100% normal. Deve-se apenas fornecer aconselhamento genético aos pais;",
+            "<em>Por que a alternativa A está incorreta?</em> A Anemia Falciforme clássica (homozigota HbSS) exibe o perfil <strong>Hb FS</strong> (há ausência completa de Hemoglobina A normal do adulto!);",
+            "<em>Por que as alternativas C e D estão incorretas?</em> A presença de HbC exibe variantes C (FSC ou FAC) e a HPLC no período neonatal é extremamente precisa, não necessitando repetição aos 12 meses para definir o traço falciforme."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tabela-resumo-e-high-yield-exam-pearls-triagens",
+      0,
+      [
+        [
+          "2",
+          "8. Tabela Resumo e High-Yield Exam Pearls"
+        ],
+        [
+          "3",
+          "Tabela Sinóptica Integrada das Triagens Neonatais no Brasil"
+        ],
+        [
+          "t",
+          [
+            "Triagem Neonatal",
+            "Janela Temporal de Realização",
+            "Metodologia e Analito Avaliado",
+            "Critério de Positividade / Falha",
+            "Conduta Imediata Padrão-Ouro"
+          ],
+          [
+            [
+              "<strong>Teste do Pezinho (HC)</strong>",
+              "3º ao 5º dia de vida (nunca < 48h).",
+              "TSH neonatal em papel-filtro (ELFA).",
+              "TSH > 20 mUI/L (positivo franco) ou 10-20 (zona cinzenta).",
+              "Se > 20: colher TSH/T4L séricos e <strong>iniciar imediatamente Levotiroxina oral 10-15 mcg/kg/dia</strong> sem esperar resultado sérico!"
+            ],
+            [
+              "<strong>Teste do Pezinho (PKU)</strong>",
+              "3º ao 5º dia de vida (após aporte lácteo).",
+              "Fenilalanina (Phe) sérica no papel-filtro.",
+              "Phe $ge$ 4 mg/dL (240 mcmol/L).",
+              "Quantificação sérica de Phe e Tyr. Se confirmado > 6 mg/dL: <strong>fórmula de aminoácidos isenta de Phe</strong> + aleitamento dosado."
+            ],
+            [
+              "<strong>Teste do Pezinho (Falciforme)</strong>",
+              "3º ao 5º dia de vida.",
+              "Cromatografia de Hemoglobinas (HPLC / IEF).",
+              "Padrão <strong>Hb FS</strong> (Anemia Falciforme); Padrão <strong>Hb FSC</strong> (Doença HbSC).",
+              "Se FS: <strong>Profilaxia com Penicilina V oral aos 2-3 meses</strong> + Vacinas especiais (Pneumo 13/23 e Meningo) + orientar palpação esplênica."
+            ],
+            [
+              "<strong>Teste do Pezinho (Fibrose Cística)</strong>",
+              "1ª amostra até 30 dias de vida.",
+              "Tripsina Imunorreativa (IRT) no papel-filtro.",
+              "IRT $ge$ 70 ng/mL na 1ª amostra.",
+              "<strong>Recoleta obrigatória de 2ª amostra de IRT entre 15 e 30 dias</strong>. Se 2ª amostra $ge$ 70 ng/mL: <strong>Teste do Suor quantitativo</strong>."
+            ],
+            [
+              "<strong>Teste do Pezinho (HAC)</strong>",
+              "3º ao 5º dia de vida.",
+              "17-Hidroxiprogesterona (17-OHP) ajustada por peso/IG.",
+              "17-OHP acima do percentil para peso/IG.",
+              "Avaliar genitália externa (46,XX) e dosar Na+, K+, gasometria e 17-OHP sérica. Iniciar Hidrocortisona + Fludrocortisona se perdedora de sal."
+            ],
+            [
+              "<strong>Teste do Coraçãozinho</strong>",
+              "24 a 48 horas de vida (IG $ge$ 35 sem).",
+              "Oximetria em MSD (pré-ductal) e MI (pós-ductal).",
+              "SpO2 < 90% (positivo imediato) OU SpO2 90-94% ou diferença > 3% confirmada em reteste de 1h.",
+              "<strong>Não dar alta!</strong> Ecocardiograma em até 24h. Se choque/acidose por lesão canal-dependente: <strong>Alprostadil (PGE1) IV contínuo</strong>."
+            ],
+            [
+              "<strong>Teste da Orelhinha</strong>",
+              "Antes da alta hospitalar ou até 1º mês.",
+              "EOAE (sem IRDA); PEATE-automático (com IRDA obrigatório).",
+              "\"Falha\" no teste inicial e reteste.",
+              "Se com IRDA e falha: PEATE clínico diagnóstico até 3 meses e intervenção fonoaudiológica/implante coclear antes dos 6 meses."
+            ],
+            [
+              "<strong>Teste do Olhinho</strong>",
+              "Antes da alta da maternidade e puericultura.",
+              "Reflexo Vermelho por oftalmoscópio a 50-100 cm.",
+              "Leucocoria (reflexo branco, assimétrico ou opaco).",
+              "Encaminhamento oftalmológico de urgência (risco de catarata congênita com ambliopia ou retinoblastoma)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "High-Yield Exam Pearls (Pérolas Fundamentais para Provas e Prática)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Pérola 1 (Momento de Coleta do Teste do Pezinho):</strong> <em>Nunca colha o teste do pezinho antes de 48 horas completas de vida!</em> Se colhido precocemente (< 48h), o TSH virá falsamente alto devido ao pico fisiológico do parto (\"TSH surge\") e a dosagem de fenilalanina virá falsamente negativa, pois o recém-nascido ainda não ingeriu quantidade proteica suficiente para o acúmulo sérico do aminoácido;",
+            "<strong>Pérola 2 (TSH > 20 mUI/L no Pezinho):</strong> Se o TSH no papel-filtro for maior que 20 mUI/L, <em>não espere o resultado do TSH sérico venoso para começar o tratamento</em>! O atraso no início da levotiroxina causa queda irrecuperável do quociente de inteligência (QI). Colete o sangue venoso e inicie a Levotiroxina (10 a 15 mcg/kg/dia) no mesmo dia;",
+            "<strong>Pérola 3 (Triagem Auditiva na UTIN e Hiperbilirrubinemia):</strong> Todo recém-nascido com permanência em UTIN > 5 dias, uso de gentamicina/amicacina ou icterícia grave tratada com exsanguineotransfusão possui <strong>Indicador de Risco (IRDA)</strong> e deve ser triado obrigatoriamente com o <strong>PEATE</strong> (e não apenas com EOAE), sob pena de não se diagnosticar a <em>Neuropatia Auditiva por toxicidade bilirrubínica</em> nos núcleos do tronco cerebral;",
+            "<strong>Pérola 4 (Teste do Coraçãozinho Positivo Imediato):</strong> Uma saturação menor que 90% em membro superior direito ou membros inferiores <em>NÃO necessita de reteste de 1 hora</em>; é considerada positiva de imediato e exige ecocardiograma e monitorização intensiva;",
+            "<strong>Pérola 5 (Protocolo IRT na Fibrose Cística):</strong> <em>Uma única dosagem de IRT alterada NÃO fecha diagnóstico de Fibrose Cística nem autoriza o teste do suor imediato no SUS</em>. A rotina oficial preconiza uma segunda dosagem de IRT colhida entre 15 e 30 dias de vida. Se ambas as amostras forem $ge$ 70 ng/mL, aí sim o <strong>Teste do Suor</strong> (dosagem de cloreto) é realizado;",
+            "<strong>Pérola 6 (Padrão Hb FAS vs Hb FS):</strong> O padrão <strong>Hb FAS</strong> é benigno (traço falciforme saudável, sem anemia). O padrão que define Doença Falciforme é o <strong>Hb FS</strong> (onde não existe hemoglobina A!). No padrão FS, a profilaxia com penicilina oral deve começar impreterivelmente aos 2 a 3 meses de vida;",
+            "<strong>Pérola 7 (Expansão da Lei 14.154/2021):</strong> A Etapa 1 já incorporou a <strong>Toxoplasmose Congênita</strong> (pesquisa de IgM). Na Etapa 4, o rastreamento molecular das Imunodeficiências Combinadas Graves (SCID) por TRECs/KRECs tem a implicação prática crucial de <strong>contraindicar formalmente a vacina BCG</strong> em caso de resultado positivo, prevenindo a temida BCGite disseminada fatal."
+          ]
+        ]
+      ]
+    ]
+  ]
+}

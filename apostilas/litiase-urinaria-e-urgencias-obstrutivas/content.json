@@ -1,0 +1,754 @@
+{
+  "v": 2,
+  "s": "litiase-urinaria-e-urgencias-obstrutivas",
+  "t": "Litíase Urinária e Urgências Obstrutivas",
+  "p": "Litíase Urinária e Urgências Obstrutivas — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance: Fisiopatologia, Diagnóstico, Conduta na Urgência e Prevenção Secundária",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Litíase Urinária e Urgências Obstrutivas",
+    "Tratado de Alta Performance: Fisiopatologia, Diagnóstico, Conduta na Urgência e Prevenção Secundária",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Litíase Urinária e Urgências Obstrutivas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "1-epidemiologia-e-fisiopatologia-da-litiase-urinaria",
+      "1. Epidemiologia e Fisiopatologia da Litíase Urinária"
+    ],
+    [
+      "2-tipos-de-calculos-e-classificacao-fisico-quimica",
+      "2. Tipos de Cálculos e Classificação Físico-Química"
+    ],
+    [
+      "3-apresentacao-clinica-e-fisiopatologia-da-colica-nefretica",
+      "3. Apresentação Clínica e Fisiopatologia da Cólica Nefrética"
+    ],
+    [
+      "4-diagnostico-diferencial",
+      "4. Diagnóstico Diferencial"
+    ],
+    [
+      "5-avaliacao-laboratorial-e-metodos-de-imagem",
+      "5. Avaliação Laboratorial e Métodos de Imagem"
+    ],
+    [
+      "6-conduta-de-urgencia-tratamento-clinico-e-cirurgico",
+      "6. Conduta de Urgência, Tratamento Clínico e Cirúrgico"
+    ],
+    [
+      "7-complicacoes-imediatas-e-tardias",
+      "7. Complicações Imediatas e Tardias"
+    ],
+    [
+      "8-manejo-em-populacoes-especiais",
+      "8. Manejo em Populações Especiais"
+    ],
+    [
+      "9-prevencao-secundaria-e-investigacao-metabolica-ambulatorial",
+      "9. Prevenção Secundária e Investigação Metabólica Ambulatorial"
+    ],
+    [
+      "10-casos-clinicos-estruturados-e-resolvidos",
+      "10. Casos Clínicos Estruturados e Resolvidos"
+    ],
+    [
+      "11-questoes-comentadas-de-residencia-medica-e-enamed",
+      "11. Questões Comentadas de Residência Médica e ENAMED"
+    ],
+    [
+      "12-tabela-comparativa-resumida-e-perolas-de-alta-performance",
+      "12. Tabela Comparativa Resumida e Pérolas de Alta Performance"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Apostila 192 — Litíase Urinária e Urgências Obstrutivas</h1>"
+        ],
+        [
+          "p",
+          "> <strong>Estado:</strong> PRODUÇÃO EDITORIAL LURIA · OURO. <strong>Lote 09 · 2026.</strong> Texto autoral e exaustivo destinado à preparação de alta performance para Residência Médica, Revalida e ENAMED. Diretrizes primárias de conformidade: Sociedade Brasileira de Urologia (SBU), American Urological Association (AUA) e European Association of Urology (EAU)."
+        ]
+      ]
+    ],
+    [
+      "1-epidemiologia-e-fisiopatologia-da-litiase-urinaria",
+      0,
+      [
+        [
+          "2",
+          "1. Epidemiologia e Fisiopatologia da Litíase Urinária"
+        ],
+        [
+          "p",
+          "A urolitíase (cálculo urinário) representa uma das afecções urológicas mais prevalentes nos serviços de pronto-socorro cirúrgico em todo o mundo. A prevalência global varia entre 5% e 15% da população, com risco ao longo da vida de aproximadamente 12% nos homens e 6% a 7% nas mulheres. Nas últimas décadas, observou-se estreitamento expressivo da razão homem:mulher (que era historicamente de 3:1 e atualmente aproxima-se de 1,5:1), fenômeno diretamente atribuído às mudanças no estilo de vida ocidental, caracterizadas pelo avanço da obesidade, diabetes mellitus tipo 2, síndrome metabólica e consumo elevado de sódio, proteínas animais de alto teor purínico e carboidratos refinados. A faixa etária de pico de incidência situa-se entre os 20 e 50 anos, período de maior atividade produtiva, acarretando significativo impacto socioeconômico em custos diretos hospitalares e absenteísmo laboral."
+        ],
+        [
+          "p",
+          "Um dado epidemiológico de suma relevância para as provas de Residência Médica reside na extraordinária taxa de recidiva da doença litiásica: cerca de 50% dos pacientes que apresentaram um primeiro episódio de nefrolitíase sintomática sofrerão uma recorrência em 5 a 10 anos se nenhuma intervenção comportamental ou farmacológica preventiva for instituída. Em 20 anos, essa taxa de recidiva cumulativa atinge até 75%. Além disso, a distribuição geográfica evidencia um nítido \"cinturão de cálculos\" (stone belt) em regiões de clima árido, tropical e de altas temperaturas médias. O calor ambiental promove perda insensível de fluidos pela sudorese e consequente hemoconcentração e oligúria fisiológica reativa, elevando a densidade e a saturação iônica urinária, gatilhos primários para a precipitação de cristais."
+        ],
+        [
+          "3",
+          "Mecanismos Físico-Químicos da Formação de Cálculos"
+        ],
+        [
+          "p",
+          "A litogênese é um processo dinâmico e multifásico regido pelas leis da termodinâmica físico-química e do equilíbrio iônico em solução aquosa. O processo inicia-se quando a urina atinge o estado de <strong>supersaturação</strong> para um determinado sal. A urina não é uma solução simples, mas um solvente biológico complexo onde múltiplos íons (cálcio, oxalato, fosfato, ácido úrico, cistina, magnésio, citrato) coexistem em equilíbrios de solubilidade influenciados por temperatura, força iônica, pH urinário e presença de macromoléculas inibidoras ou promotoras."
+        ],
+        [
+          "p",
+          "1. <strong>Supersaturação e Zonas de Solubilidade:</strong> A solubilidade de um sal define três zonas fundamentais:<br><li><em>Zona subsaturada (estável):</em> A concentração do soluto encontra-se abaixo do produto de solubilidade termodinâmico (Ksp). Cristais adicionados à solução dissolvem-se espontaneamente; a nucleação é impossível.</li><br><li><em>Zona metaestável:</em> A concentração situa-se entre o produto de solubilidade (Ksp) e o produto de formação (Kf). Nesta faixa, a formação espontânea de novos cristais (nucleação homogênea) não ocorre, porém, se já existirem cristais prévios ou uma superfície nidatória (como resíduos celulares ou outras espécies de cristais), pode ocorrer crescimento do cristal e nucleação heterogênea. É a faixa em que a maioria dos indivíduos não formadores de cálculo se mantém.</li><br><li><em>Zona instável (lábil):</em> A concentração iônica ultrapassa amplamente o produto de formação (Kf). Ocorre precipitação espontânea e rápida nucleação homogênea de novos cristais independentemente de superfícies prévias.</li>"
+        ],
+        [
+          "p",
+          "2. <strong>Nucleação:</strong> É a etapa em que íons livres se agrupam formando os primeiros agregados moleculares microscópicos termodinamicamente estáveis chamados \"núcleos críticos\". <br><li>A <em>nucleação homogênea</em> requer níveis muito altos de supersaturação no lúmen tubular puro.</li><br><li>A <em>nucleação heterogênea</em> ocorre sob níveis mais moderados de supersaturação porque o agrupamento cristalino é facilitado energeticamente por superfícies pré-existentes, tais como fragmentos de membranas celulares descamadas, precipitados de fosfato de cálcio ou matriz proteica.</li>"
+        ],
+        [
+          "p",
+          "3. <strong>Crescimento Cristalino e Agregação:</strong> Após a nucleação, os cristais continuam a incorporar íons da solução circundante supersaturada, aumentando seu diâmetro físico. Contudo, o tempo de trânsito da urina tubular desde o glomérulo até a papila renal é relativamente curto (da ordem de 5 a 10 minutos). Se os cristais permanecessem livres e minúsculos, seriam simplesmente arrastados pelo fluxo urinário e excretados sem causar obstrução ou sintomas. Para que ocorra a formação de um cálculo clinicamente relevante, os cristais devem se agregar uns aos outros (fenômeno de aglomeração dependente de forças de atração eletrostática e interações de macromoléculas de matriz) ou devem se ancorar ao epitélio tubular ou à superfície papilar."
+        ],
+        [
+          "p",
+          "4. <strong>Retenção e Placas de Randall:</strong> O modelo patogênico consolidado para a maioria dos cálculos de oxalato de cálcio idiopáticos baseia-se na teoria das <strong>Placas de Randall</strong>. Esse processo inicia-se não na luz tubular, mas no interstício medular profundo, ao redor das porções delgadas da alça de Henle. Ocorre deposição inicial de cristais de fosfato de cálcio (sob a forma de apatita/carbapatita) na membrana basal e na matriz extracelular intersticial. Com o tempo, esses depósitos microscópicos sofrem calcificação progressiva e migram em direção à ponta da papila renal, erodindo o urotélio que reveste a papila. Uma vez exposta à urina da pelve/cálice renal, a placa de apatita desnuda funciona como uma âncora perfeita (ninho heterogêneo) sobre a qual os cristais de oxalato de cálcio presentes na urina supersaturada se depositam, organizam-se e crescem ao longo de meses a anos, até que o cálculo atinja tamanho suficiente para se desprender e migrar pelo trato urinário superior."
+        ],
+        [
+          "3",
+          "Inibidores e Promotores Naturais da Litogênese"
+        ],
+        [
+          "p",
+          "A urina normal possui um sistema de defesa refinado contra a precipitação e agregação de cristais, composto por substâncias de baixo peso molecular e macromoléculas proteicas:<br><li><strong>Inibidores Naturais:</strong></li><br><li><em>Citrato:</em> É o inibidor fisiológico solúvel mais importante da cristalização de sais de cálcio. Age ligando-se avidamente ao cálcio iônico livre na urina, formando um complexo solúvel (citrato de cálcio), o que reduz diretamente a fração de cálcio livre disponível para reagir com o oxalato ou com o fosfato. Além disso, o citrato liga-se diretamente à superfície dos cristais de oxalato de cálcio em formação, inibindo estericamente seu crescimento e aglomeração. A hipocitratúria (definida como excreção urinária de citrato < 320 mg/24h) é uma das anomalias metabólicas mais frequentes em formadores de cálculos, decorrente comumente de acidose metabólica intracelular (como na acidose tubular renal tipo 1, diarreias crônicas com perda de bicarbonato, dietas hiperproteicas ou uso prolongado de inibidores da anidrase carbônica como topiramato e acetazolamida).</li><br><li><em>Magnésio:</em> Compete com o cálcio ligando-se ao oxalato, formando oxalato de magnésio, um sal infinitamente mais solúvel que o oxalato de cálcio, reduzindo a supersaturação de oxalato de cálcio.</li><br><li><em>Macromoléculas Urinárias:</em> Glicosaminoglicanos, osteopontina, nefrocalcina, uromodulina (proteína de Tamm-Horsfall) e bikunina. A proteína de Tamm-Horsfall, sob condições fisiológicas e em concentrações normais, inibe a agregação de oxalato de cálcio; contudo, em estados de urina excessivamente concentrada, pH desfavorável ou alta concentração de ácido úrico, sua conformação polimérica pode se alterar, reduzindo sua atividade inibitória e atuando paradoxalmente como promotora de aglomeração.</li><br><li><em>Pirofosfato:</em> Inibidor potente da cristalização e crescimento de fosfato de cálcio (brushita e hidroxiapatita).</li><br><li><strong>Promotores e Facilitadores:</strong></li><br><li><em>Hipercalciúria:</em> Excreção urinária de cálcio superior a 250 mg/24h nas mulheres e 300 mg/24h nos homens (ou > 4 mg/kg/24h). Pode ser absortiva (aumento da absorção intestinal mediada por vitamina D ou idiopática), renal (perda tubular primária de cálcio) ou reabsortiva (hiperparatireoidismo primário gerando reabsorção óssea maciça e hipercalcemia).</li><br><li><em>Hiperoxalúria:</em> Excreção urinária de oxalato > 40-45 mg/24h. O oxalato possui um impacto estequiométrico sobre a supersaturação de oxalato de cálcio muito mais acentuado do que o próprio cálcio, pois variações pequenas na sua concentração multiplicam exponencialmente o produto de solubilidade. Pode ser primária (erros inatos do metabolismo hepático por deficiência de enzimas do ciclo do glioxilato, como na hiperoxalúria primária tipo 1 por mutação da AGXT), entérica (por má absorção de gorduras em doença de Crohn, ressecção ileal, cirurgia bariátrica disabsortiva em Y de Roux ou insuficiência pancreática, onde os ácidos graxos livres ligam-se ao cálcio na luz intestinal, deixando o oxalato livre para ser hiperabsorvido no cólon) ou dietética (ingestão excessiva de espinafre, nozes, chocolate, chá preto, beterraba ou megadoses de vitamina C, cujo metabólito final é o oxalato).</li><br><li><em>Hiperuricosúria:</em> Excreção urinária de ácido úrico > 750-800 mg/24h. Os cristais de urato de sódio ou ácido úrico servem como substrato para nucleação heterogênea induzida sobre sais de oxalato de cálcio, além de consumirem e precipitarem a proteína de Tamm-Horsfall.</li><br><li><em>Baixo Volume Urinário:</em> Diurese de 24 horas inferior a 2.000 mL é o fator de risco universal e independente mais prevalente em todas as etiologias de litíase urinária.</li>"
+        ]
+      ]
+    ],
+    [
+      "2-tipos-de-calculos-e-classificacao-fisico-quimica",
+      0,
+      [
+        [
+          "2",
+          "2. Tipos de Cálculos e Classificação Físico-Química"
+        ],
+        [
+          "p",
+          "A elucidação da composição mineralógica exata do cálculo urinário (idealmente obtida por espectroscopia de infravermelho com transformada de Fourier ou difração de raios X) é o pilar fundamental para guiar a investigação metabólica e estabelecer a terapia profilática específica."
+        ],
+        [
+          "3",
+          "Cálculos de Oxalato de Cálcio (65% a 70%)"
+        ],
+        [
+          "p",
+          "<li><strong>Subtipos Mineralógicos:</strong></li>\n<li><em>Oxalato de cálcio monoidratado (Whewellita):</em> Cristais biconvexos ou em halteres; cálculos extremamente duros, marrons escuros ou pretos, de superfície lisa ou finamente mamilonada. Apresentam elevada densidade tomográfica (> 1.000 a 1.500 Unidades Hounsfield - HU), sendo tipicamente resistentes à litotripsia extracorpórea por ondas de choque (LEOC). Associam-se frequentemente à hiperoxalúria e formação sobre placas de Randall.</li>\n<li><em>Oxalato de cálcio di-hidratado (Weddellita):</em> Cristais bipiramidais clássicos (em \"envelope de carta\"); cálculos de cor amarelo-clara a castanha, de superfície espiculada e irregular (\"amora\"). Densidade tomográfica intermediária (600 a 1.000 HU), consideravelmente mais frágeis e suscetíveis à fragmentação por LEOC. Fortemente correlacionados com hipercalciúria idiopática e urina com saturação oscilante.</li>\n<li><strong>Radiopacidade:</strong> Altamente radiopacos no raio-X simples e espontaneamente hiperdensos na tomografia computadorizada.</li>\n<li><strong>Influência do pH:</strong> A precipitação de oxalato de cálcio é relativamente independente do pH urinário na faixa fisiológica comum (pH 5,5 a 6,8).</li>"
+        ],
+        [
+          "3",
+          "Cálculos de Fosfato de Cálcio (10% a 15%)"
+        ],
+        [
+          "p",
+          "<li><strong>Subtipos Mineralógicos:</strong></li>\n<li><em>Hidroxiapatita e Carbapatita:</em> Comuns como componentes nucleares ou associados a infecções leves.</li>\n<li><em>Fosfato hidrogenado de cálcio di-hidratado (Brushita):</em> É o cálculo urinário biologicamente mais duro e resistente conhecido. Apresenta densidade na TC superior a 1.200-1.600 HU. A fragmentação por LEOC falha em mais de 70-80% dos casos, exigindo rotineiramente nefrolitotripsia percutânea ou ureterorrenolitotripsia flexível a laser de hólmio/túlio.</li>\n<li><strong>Radiopacidade:</strong> Altamente radiopacos no raio-X e na TC.</li>\n<li><strong>Influência do pH:</strong> Precipitam invariavelmente em <strong>pH urinário alcalino (pH > 6,5 a 7,0)</strong>.</li>\n<li><strong>Associações Clínicas:</strong> Hiperparatireoidismo primário, acidose tubular renal distal (tipo 1) e uso crônico de inibidores da anidrase carbônica (topiramato).</li>"
+        ],
+        [
+          "3",
+          "Cálculos de Ácido Úrico (8% a 10%)"
+        ],
+        [
+          "p",
+          "<li><strong>Fisiopatologia:</strong> Ao contrário do senso comum, a maioria dos formadores de cálculos de ácido úrico não possui hiperuricemia nem hiperuricosúria marcadas, mas sim um <strong>defeito primário na acidificação urinária com pH urinário persistentemente ácido (pH < 5,5)</strong>. O pKa do ácido úrico é 5,35. Em pH 5,35, metade do ácido úrico encontra-se na forma insolúvel não dissociada; em pH < 5,0, mais de 85% do ácido úrico torna-se insolúvel e precipita imediatamente. Está fortemente ligado à síndrome metabólica, obesidade e gota primária.</li>\n<li><strong>Radiopacidade:</strong> <strong>Radiotransparentes (invisíveis) na radiografia simples de abdome!</strong> Contudo, são perfeitamente identificáveis e hiperdensos na Tomografia Computadorizada Sem Contraste, apresentando densidades tipicamente mais baixas (entre 300 e 500 HU).</li>\n<li><strong>Tratamento Específico:</strong> É o único cálculo urinário passível de quimiólise oral completa (dissolução clínica) mediante hidratação vigorosa e alcalinização urinária sustentada com citrato de potássio ou bicarbonato de sódio (meta de pH urinário entre 6,5 e 7,0).</li>"
+        ],
+        [
+          "3",
+          "Cálculos Infecciosos ou de Estruvita (Cálculos Corais / Coraliformes - 5% a 10%)"
+        ],
+        [
+          "p",
+          "<li><strong>Composição:</strong> Fosfato de amônio e magnésio associado a carbonato-apatita (conhecidos como estruvita e carbapatita).</li>\n<li><strong>Fisiopatologia:</strong> Decorrem de infecção crônica do trato urinário por bactérias produtoras da enzima <strong>urease</strong>. A urease hidrolisa a ureia urinária em amônia e dióxido de carbono:</li>\n  $$\\text{CO(NH}_2)_2 + \\text{H}_2\\text{O} \\xrightarrow{\\text{urease}} 2\\text{NH}_3 + \\text{CO}_2$$\n  A amônia liga-se a prótons hidrogênio formando amônio ($\\text{NH}_4^+$), consumindo íons $\\text{H}^+$ livres e provocando <strong>alcalinização extrema da urina (pH urinário > 7,2 a 8,0)</strong>. Nesse ambiente ultra-alcalino e rico em amônio, o magnésio e o fosfato precipitam massivamente, formando cálculos que se moldam e ocupam todo o sistema pielocalicial (cálculos coraliformes verdadeiros ou completos).\n<li><strong>Microrganismos Envolvidos:</strong></li>\n<li><em>Proteus mirabilis</em> (o patógeno mais clássico e frequente);</li>\n<li><em>Klebsiella pneumoniae</em>, <em>Pseudomonas aeruginosa</em>, <em>Serratia marcescens</em>, <em>Morganella morganii</em>, <em>Staphylococcus saprophyticus</em>.</li>\n<li><em>Atenção máxima de prova:</em> <strong>Escherichia coli NÃO é produtora de urease!</strong> A presença isolada de E. coli não justifica a formação primária de estruvita.</li>\n<li><strong>Radiopacidade:</strong> Moderadamente radiopacos (densidade variável, aspecto laminado na radiografia simples e 600-900 HU na TC).</li>\n<li><strong>Particularidade Clínica:</strong> Costumam ser indolores ou oligossintomáticos no início, manifestando-se por infecções urinárias de repetição, piúria estéril aparente, hematúria microscópica e perda lenta da função renal do parênquima adjacente.</li>"
+        ],
+        [
+          "3",
+          "Cálculos de Cistina (1% a 2%)"
+        ],
+        [
+          "p",
+          "<li><strong>Etiologia:</strong> Doença genética autossômica recessiva (cistinúria) causada por mutações nos genes <em>SLC3A1</em> (cromossomo 2) ou <em>SLC7A9</em> (cromossomo 19), codificadores do carreador tubular de aminoácidos dibásicos (cistina, ornitina, lisina e arginina - mnemônico COLA) no túbulo proximal. A cistina é insolúvel em pH urinário ácido.</li>\n<li><strong>Características:</strong> Cristais urinários patognomônicos hexagonais transparentes em microscopia de sedimento; cálculos múltiplos, recidivantes desde a infância ou adolescência. Apresentam radiopacidade fraca (\"vidro fosco\" na radiografia) e densidade tomográfica homogênea em torno de 500-800 HU. São notavelmente resistentes à fragmentação por LEOC.</li>"
+        ],
+        [
+          "t",
+          [
+            "Tipo de Cálculo",
+            "Frequência (%)",
+            "Radiopacidade no Rx Simples",
+            "Densidade Tomográfica (HU)",
+            "pH Urinário Predisponente",
+            "Fator de Risco Principal / Associação Clínica"
+          ],
+          [
+            [
+              "Oxalato de Cálcio Monoidratado",
+              "~50%",
+              "Altamente radiopaco",
+              "1.000 - 1.500",
+              "Qualquer (5,5 - 6,8)",
+              "Hiperoxalúria, baixa ingesta hídrica, placas de Randall"
+            ],
+            [
+              "Oxalato de Cálcio Di-hidratado",
+              "~20%",
+              "Altamente radiopaco",
+              "600 - 1.000",
+              "Qualquer (5,5 - 6,8)",
+              "Hipercalciúria idiopática"
+            ],
+            [
+              "Brushita (Fosfato de Cálcio)",
+              "~2%",
+              "Altamente radiopaco",
+              "1.200 - 1.700",
+              "Alcalino (> 6,5)",
+              "Refratariedade total à LEOC, hiperparatireoidismo"
+            ],
+            [
+              "Hidroxiapatita",
+              "~10%",
+              "Radiopaco",
+              "800 - 1.400",
+              "Alcalino (> 6,5)",
+              "Acidose tubular renal tipo 1, topiramato"
+            ],
+            [
+              "Ácido Úrico",
+              "8 - 10%",
+              "<strong>Radiotransparente</strong> (invisível no Rx)",
+              "300 - 550",
+              "<strong>Ácido persistente (< 5,5)</strong>",
+              "Síndrome metabólica, diabetes tipo 2, gota primária"
+            ],
+            [
+              "Estruvita (Infeccioso / Coral)",
+              "5 - 10%",
+              "Moderadamente radiopaco",
+              "600 - 900",
+              "<strong>Muito alcalino (> 7,2)</strong>",
+              "Infecção por bactérias produtoras de urease (<em>Proteus</em>)"
+            ],
+            [
+              "Cistina",
+              "1 - 2%",
+              "Fracamente radiopaco (\"vidro fosco\")",
+              "500 - 800",
+              "Ácido (< 6,0)",
+              "Cistinúria genética (defeito do transporte de aminoácidos dibásicos)"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "3-apresentacao-clinica-e-fisiopatologia-da-colica-nefretica",
+      0,
+      [
+        [
+          "2",
+          "3. Apresentação Clínica e Fisiopatologia da Cólica Nefrética"
+        ],
+        [
+          "p",
+          "A manifestação clínica emblemática da litíase urinária aguda obstrutiva é a <strong>cólica nefrética</strong> (ou cólica ureteral). O cálculo alojado no parênquima renal ou no fundo de um cálice geralmente é assintomático e indolor. A dor aguda só surge quando o cálculo se desprende e migra, impactando no lúmen do ureter ou na junção ureteropélvica (JUP), determinando <strong>obstrução mecânica ao fluxo de urina</strong>."
+        ],
+        [
+          "3",
+          "Fisiopatologia Hemodinâmica e Manométrica Renal da Obstrução Aguda"
+        ],
+        [
+          "p",
+          "A resposta renal à obstrução ureteral unilateral súbita e completa divide-se classicamente em três fases bifásicas distintas de pressão e fluxo plasmático renal (FPR):"
+        ],
+        [
+          "p",
+          "1. <strong>Fase 1 (0 a 1,5-2 horas):</strong> Ocorre aumento súbito e vertiginoso da pressão hidrostática a montante da obstrução no interior do ureter e da pelve renal (a pressão basal de 5 a 10 mmHg pode atingir níveis patológicos de 50 a 80 mmHg). Simultaneamente, em resposta à distensão aguda do urotélio e à elevação pressórica, ocorre liberação intrarrenal maciça de <strong>prostaglandina E2 (PGE2)</strong> e prostaciclina (PGI2). As prostaglandinas promovem intensa <strong>vasodilatação da arteríola aferente glomerular</strong>, elevando temporariamente o fluxo plasmático renal e a pressão de filtração glomerular. Esse aumento de filtração acoplado à obstrução mecânica gera hiperdistensão máxima da pelve renal e da cápsula fibrosa do rim (cápsula de Gerota), estimulando os mecanorreceptores e nociceptores de estiramento das fibras simpáticas aferentes C e A-delta (raízes espinhais T10-L1). É a fase de pico paroxístico da dor!<br>2. <strong>Fase 2 (2 a 5-6 horas):</strong> A pressão na pelve renal permanece elevada em platô, mas o fluxo plasmático renal começa a declinar progressivamente devido ao início da liberação de vasoconstritores intrarrenais e sistêmicos, primariamente <strong>tromboxano A2 (TXA2)</strong> e <strong>angiotensina II</strong>.<br>3. <strong>Fase 3 (após 5-6 horas a semanas):</strong> A pressão hidrostática na pelve renal começa a declinar em direção aos níveis normais, não porque a obstrução foi desfeita, mas devido à progressiva <strong>queda do fluxo plasmático renal e da taxa de filtração glomerular</strong> por vasoconstrição arteriolar aferente e eferente sustentada (mediada por endotelina, angiotensina II e tromboxano A2), além de extravasamento pielolinfático e pielovenoso de urina."
+        ],
+        [
+          "p",
+          "<em>Implicação Farmacológica Fundamental:</em> A compreensão do papel crucial da PGE2 na fase inicial explica por que os <strong>Anti-inflamatórios Não Esteroidais (AINEs)</strong> são considerados os fármacos analgésicos de primeira escolha no tratamento da cólica nefrética aguda! Ao inibirem a ciclo-oxigenase (COX-1 e COX-2), os AINEs bloqueiam a síntese intrarrenal de PGE2, promovendo vasoconstrição compensatória da arteríola aferente, diminuindo a filtração glomerular, reduzindo a pressão intrapélvica e quebrando o ciclo de hiperdistensão capsular, além de exercerem potente efeito analgésico direto."
+        ],
+        [
+          "3",
+          "Características Semiológicas da Dor e Irradiação Anatômica"
+        ],
+        [
+          "p",
+          "A cólica nefrética caracteriza-se por início súbito, intensidade lancinante e padrão em cólica clássica (com exacerbações paroxísticas intoleráveis e flutuações, sem alívio completo nos intervalos). Uma característica semiológica patognomônica é a <strong>intensa agitação psicomotora do paciente</strong>: o indivíduo não consegue encontrar nenhuma posição de alívio ou conforto no leito (\"anda pelas paredes\", rola na maca), o que contrasta de modo marcante com o comportamento de pacientes com peritonite aguda por abdome agudo perfurativo ou apendicite (que permanecem imóveis em posição antálgica, pois qualquer movimentação exacerba o atrito peritoneal)."
+        ],
+        [
+          "p",
+          "O local anatômico da dor e sua irradiação correlacionam-se intimamente com o nível de impacto do cálculo ao longo do trajeto ureteral:<br><li><strong>Cálculo na Junção Ureteropélvica (JUP) ou Ureter Proximal:</strong> Dor profunda no flanco e ângulo costovertebral ipsilateral, que se projeta anteriormente para o hipocôndrio e epigástrio. O reflexo viscerovisceral autonômico pelo plexo celíaco e nervo vago deflagra náuseas intensas, vômitos profusos, sudorese fria, palidez e íleo paralítico reflexo com distensão abdominal.</li><br><li><strong>Cálculo no Ureter Médio (região onde o ureter cruza os vasos ilíacos):</strong> A dor irradia-se em faixa oblíqua anterior para a fossa ilíaca ipsilateral, simulando apendicite aguda (se à direita) ou diverticulite aguda (se à esquerda).</li><br><li><strong>Cálculo no Ureter Distal e Junção Ureterovesical (JUV):</strong> O ureter distal compartilha inervação simpática e parassimpática com o plexo vesical e os órgãos genitais (nervos ilioinguinal e genitofemoral). A dor irradia-se para a virilha, grandes lábios nas mulheres e bolsa escrotal/testículo nos homens. Quando o cálculo se impacta na JUV intramural, surge a chamada \"síndrome da JUV\": sintomas irritativos miccionais intensos com disúria, polaciúria, urgência miccional e sensação de esvaziamento incompleto (estrangúria), frequentemente mimetizando uma cistite infecciosa aguda.</li>"
+        ]
+      ]
+    ],
+    [
+      "4-diagnostico-diferencial",
+      0,
+      [
+        [
+          "2",
+          "4. Diagnóstico Diferencial"
+        ],
+        [
+          "p",
+          "Nos cenários de pronto-socorro e provas de revalidação, a cólica nefrética deve ser rigorosamente diferenciada de afecções clínicas e cirúrgicas que cursam com dor lombar, abdominal ou pélvica aguda:"
+        ],
+        [
+          "p",
+          "1. <strong>Aneurisma de Aorta Abdominal (AAA) em Expansão ou Roto:</strong> É o diagnóstico diferencial mais crítico e fatal! Pacientes acima de 50-60 anos, hipertensos, tabagistas, apresentando dor lombar ou em flanco súbita com hipotensão, síncope ou massa abdominal pulsátil devem ser submetidos imediatamente a rastreamento ultrassonográfico ou angiotomografia. Confundir um AAA roto contido no retroperitônio com cólica nefrética retarda a cirurgia vascular de emergência e culmina em óbito.<br>2. <strong>Apendicite Aguda:</strong> Dor iniciada em mesogástrio que migra para fossa ilíaca direita, associada a febre baixa, hiporexia, descompressão brusca positiva (sinal de Blumberg) e paciente que prefere a imobilidade no leito. Um cálculo em ureter médio direito pode causar leucocitose e dor na mesma topografia, mas sem peritonismo verdadeiro e com sedimento urinário habitualmente demonstrando microematúria.<br>3. <strong>Diverticulite Aguda:</strong> Dor em fossa ilíaca esquerda, febre, constipação ou diarreia, distensão abdominal e dor à palpação local com sinais de irritação peritoneal.<br>4. <strong>Isquemia / Infarto Renal Agudo:</strong> Decorrente de tromboembolismo (comum em pacientes com fibrilação atrial) ou dissecção arterial renal. Apresenta dor lombar súbita, elevação expressiva de desidrogenase lática (LDH) sérica desproporcional às transaminases, hematúria e rins sem dilatação na ultrassonografia.<br>5. <strong>Afecções Ginecológicas Agudas:</strong> Gravidez ectópica rota (teste de gravidez $\\beta$-hCG obrigatório em qualquer mulher em idade fértil com dor pélvica/lombar), torção anexial (torção de ovário), ruptura de cisto hemorrágico de corpo lúteo e doença inflamatória pélvica (DIP).<br>6. <strong>Lombociatalgia Aguda e Radiculopatias:</strong> Dor lombar mecânica que piora à movimentação da coluna e manobras de estiramento de raiz nervosa (como o teste de elevação da perna estendida - Lasègue), sem sintomas autonômicos viscerocelíacos e com exame de urina normal.<br>7. <strong>Pielonefrite Aguda Não Obstrutiva:</strong> Quadro infeccioso com febre alta, calafrios, taquicardia, dor contínua em flanco e punho-percussão lombar francamente positiva (sinal de Giordano), associado a piúria maciça, cilindros leucocitários e bacteriúria."
+        ]
+      ]
+    ],
+    [
+      "5-avaliacao-laboratorial-e-metodos-de-imagem",
+      0,
+      [
+        [
+          "2",
+          "5. Avaliação Laboratorial e Métodos de Imagem"
+        ],
+        [
+          "3",
+          "Avaliação Laboratorial na Urgência"
+        ],
+        [
+          "p",
+          "<li><strong>Urina Tipo 1 (EAS / Sedimento Urinário):</strong> </li>\n<li><em>Microematúria ou macroematúria:</em> Está presente em cerca de 85% a 90% dos casos de cólica nefrética. Atenção para a \"pegadinha\" clássica: em 10% a 15% dos casos, a urina pode NÃO apresentar hematúria (obstrução ureteral total impede que o sangue chegue à bexiga, ou o cálculo já parou de erodir a mucosa). Logo, a ausência de hematúria NUNCA exclui litíase ureteral!</li>\n<li><em>Leucocitúria / Piúria:</em> A irritação urotelial mecânica pelo cálculo pode provocar piúria estéril leve a moderada. Contudo, piúria intensa associada a nitrito positivo impõe suspeita de infecção associada.</li>\n<li><em>Cristalúria e pH Urinário:</em> Cristais em envelope sugerem oxalato de cálcio di-hidratado; cristais hexagonais são patognomônicos de cistina; cristais em caixão de defunto (prismas) apontam estruvita; cristais em losangos ou agulhas sugerem ácido úrico. pH < 5,5 orienta para ácido úrico; pH > 7,2 orienta para estruvita ou acidose tubular renal.</li>\n<li><strong>Exames Sanguíneos:</strong></li>\n<li>Creatinina e ureia séricas (avaliar função renal basal e estratificar lesão renal aguda obstrutiva);</li>\n<li>Hemograma completo (leucocitose importante com desvio à esquerda sugere complicação infecciosa);</li>\n<li>Eletrólitos (sódio, potássio, cálcio iônico ou total com albumina);</li>\n<li>Proteína C Reativa (PCR) sérica;</li>\n<li>Urocultura com antibiograma (mandatória se houver suspeita de infecção, febre, idosos, gestantes ou cálculo que necessitará de intervenção cirúrgica);</li>\n<li>$\\beta$-hCG sérico ou urinário em mulheres em idade fértil.</li>"
+        ],
+        [
+          "3",
+          "Métodos de Imagem: O Papel Central da TC"
+        ],
+        [
+          "p",
+          "1. <strong>Tomografia Computadorizada de Abdome e Pelve Sem Contraste (TC Helicoidal de Baixa Dose):</strong><br><li>É o <strong>padrão-ouro absoluto (gold standard)</strong> para o diagnóstico de litíase urinária em adultos, com sensibilidade de 98% a 100% e especificidade de 97% a 98%.</li><br><li>Vantagens inquestionáveis: identifica praticamente 100% dos cálculos independentemente de sua composição química (incluindo cálculos de ácido úrico radiotransparentes ao raio-X); mensura com precisão micrométrica o maior diâmetro do cálculo, sua localização anatômica tridimensional exata, a distância pele-cálculo (fundamental no planejamento de cirurgia percutânea) e a densidade mineral em Unidades Hounsfield (HU), o que prediz a fragilidade à LEOC.</li><br><li>Sinais Tomográficos Indiretos de Obstrução Ureteral Aguda:</li><br><li>Dilatação da pelve e cálices renais (ureterohidronefrose);</li><br><li>Dilatação ureteral a montante do ponto de impacto;</li><br><li>Borramento da gordura perirrenal e periureteral (<em>stranding</em>);</li><br><li>Nefromegalia ipsilateral (edema de parênquima renal);</li><br><li>\"Sinal do aro tecidual\" (<em>rim sign</em>): anel de atenuação de partes moles ao redor do cálculo correspondente ao edema inflamatório da parede ureteral (ajuda a diferenciar um cálculo ureteral verdadeiro de um flebolito pélvico vascular).</li><br><li>Cálculos Radiotransparentes na TC: Apenas os cálculos raríssimos induzidos por medicações antirretrovirais (indinavir) ou cálculos puros de matriz proteica são hipodensos e podem não ser visualizados na TC sem contraste.</li>"
+        ],
+        [
+          "p",
+          "2. <strong>Ultrassonografia (USG) de Rins e Vias Urinárias:</strong><br><li>É o <strong>exame de imagem de primeira linha obrigatório em gestantes e crianças</strong>, e excelente alternativa no pronto-socorro quando a TC não estiver prontamente disponível ou para evitar radiação ionizante.</li><br><li>Achados: o cálculo manifesta-se como uma imagem hiperecogênica com <strong>sombra acústica posterior nítida</strong> e o \"artefato de cintilação\" (<em>twinkling artifact</em>) ao Doppler colorido.</li><br><li>Limitações: baixa sensibilidade para cálculos de ureter médio (interposição gasosa intestinal) e dependência técnica do operador. Excelente para detectar hidronefrose secundária.</li>"
+        ],
+        [
+          "p",
+          "3. <strong>Radiografia Simples de Abdome (KUB - Rim, Ureter e Bexiga):</strong><br><li>Sensibilidade modesta (cerca de 50% a 60%), pois não visualiza cálculos de ácido úrico (radiotransparentes), cálculos pequenos (< 4-5 mm) ou cálculos sobrepostos a ossos sacrais e fezes.</li><br><li>Utilidade primária: seguimento e monitoramento ambulatorial da posição e fragmentação de cálculos sabidamente radiopacos tratados clinicamente ou por LEOC.</li>"
+        ]
+      ]
+    ],
+    [
+      "6-conduta-de-urgencia-tratamento-clinico-e-cirurgico",
+      0,
+      [
+        [
+          "2",
+          "6. Conduta de Urgência, Tratamento Clínico e Cirúrgico"
+        ],
+        [
+          "p",
+          "O manejo da litíase urinária aguda divide-se cronologicamente no alívio imediato da dor no pronto-socorro, na seleção entre conduta expectante conservadora versus intervenção desobstrutiva ativa e na programação cirúrgica definitiva eletiva."
+        ],
+        [
+          "3",
+          "6.1 Analgesia na Urgência: O Protocolo Escalonado"
+        ],
+        [
+          "p",
+          "1. <strong>Primeira Linha (Classe I, Nível de Evidência A):</strong> <strong>Anti-inflamatórios Não Esteroidais (AINEs) Intravenosos</strong>.\n<li>Fármacos de escolha: Cetoprofeno 100 mg IV a cada 12 horas, Cetorolaco 30 mg IV/IM dose única ou repetido a cada 6-8 horas (máximo 120 mg/dia) ou Diclofenaco 75 mg IM/IV.</li>\n<li>Mecanismo: Redução da síntese de PGE2, promovendo queda do fluxo plasmático renal, cessação da hiperpressão na pelve e cápsula renal e potente alívio inflamatório local.</li>\n<li>Contraindicações: Pacientes com disfunção renal prévia estabelecida ou creatinina sérica elevada na chegada, história de sangramento gastrointestinal ativo, úlcera péptica ativa, coagulopatia grave, gestantes no terceiro trimestre ou história de anafilaxia a AINEs.</li>\n2. <strong>Segunda Linha / Resgate (quando AINEs são contraindicados ou insuficientes):</strong> <strong>Opioides Sistêmicos</strong>.\n<li>Fármacos: Morfina 2 a 5 mg IV em bolus lento a cada 15 a 30 minutos titulada pela escala de dor, ou Tramadol 50 a 100 mg IV diluído em 100 mL de soro a correr em 20-30 minutos.</li>\n<li>Desvantagens: Provocam náuseas e vômitos adicionais (frequentemente exigem antieméticos concomitantes como ondansetrona 4-8 mg IV), sedação, constipação e dependência potencial. Não atuam na fisiopatologia vascular intrapélvica como os AINEs.</li>\n3. <strong>Medicações Adjuvantes:</strong>\n<li><em>Antiespasmódicos / Anticolinérgicos (Escopolamina / Butilescopolamina):</em> Ensaios clínicos randomizados demonstraram que a hioscina associada à dipirona não traz benefício analgésico estatisticamente superior à dipirona isolada ou AINEs na cólica nefrética pura, e pode provocar retenção urinária e taquicardia. Contudo, dipirona 1 g a 2 g IV é um excelente coadjuvante antipirético e analgésico no Brasil.</li>\n<li><em>Hidratação na Crise Aguda:</em> <strong>NUNCA fazer hiper-hidratação forçada (\"soroterapia vigorosa\") durante a crise de dor aguda!</strong> A infusão rápida de 1.000 a 2.000 mL de soro eleva o volume circulante, aumenta a diurese e a pressão a montante do cálculo já obstruído, piorando dramaticamente a dor e aumentando o risco de ruptura de fórnice calicial (urinoma). A reposição volêmica deve ser restrita à reposição de perdas por vômitos (euvolêmica).</li>"
+        ],
+        [
+          "3",
+          "6.2 Critérios de Internação Hospitalar e Urgência Desobstrutiva"
+        ],
+        [
+          "p",
+          "A imensa maioria dos episódios de cólica nefrética não complicada pode receber alta hospitalar para manejo ambulatorial após analgesia eficaz. Contudo, os seguintes sinais de alarme exigem internação imediata:\n<li><strong>Dor intratável / refratária:</strong> Persistência de dor severa após doses plenas de AINEs e opioides intravenosos.</li>\n<li><strong>Vômitos incoercíveis com intolerância oral:</strong> Impossibilidade de manter hidratação e analgesia oral domiciliar.</li>\n<li><strong>Disfunção renal aguda (aumento agudo da creatinina):</strong> Especialmente grave em <strong>rim único anatômico ou funcional</strong>, rim transplantado ou litíase ureteral bilateral sincrônica com anúria.</li>\n<li><strong>Litíase associada a infecção urinária / sepse (rim obstruído infectado / pionefrite):</strong> <strong>EMERGÊNCIA UROLÓGICA MÁXIMA!</strong> A desobstrução imediata é salvadora de vidas.</li>"
+        ],
+        [
+          "3",
+          "6.3 Terapia Expulsiva Medicamentosa (MET - Medical Expulsive Therapy)"
+        ],
+        [
+          "p",
+          "A conduta expectante conservadora ambulatorial com observação armada é formalmente indicada quando todos os critérios abaixo estão presentes:\n<li>Paciente oligo/assintomático após controle analgésico;</li>\n<li>Cálculo ureteral de diâmetro menor que 10 mm (especialmente cálculos $\\le$ 5-6 mm);</li>\n<li>Ausência de sinais clínicos e laboratoriais de infecção urinária;</li>\n<li>Função renal normal e simétrica.</li>"
+        ],
+        [
+          "p",
+          "<em>Probabilidade Natural de Eliminação Espontânea:</em><br><li>Cálculos < 4-5 mm no ureter distal: taxa de expulsão espontânea de 70% a 85% em 2 a 4 semanas.</li><br><li>Cálculos entre 5 e 10 mm: taxa de expulsão espontânea cai para 25% a 50%.</li><br><li>Cálculos > 10 mm: a eliminação espontânea ocorre em menos de 5% a 10% dos casos; a conduta expectante é desaconselhada, programando-se intervenção cirúrgica.</li>"
+        ],
+        [
+          "p",
+          "<em>Protocolo de MET com Alfa-1 Bloqueadores:</em><br><li>Fármaco de escolha: <strong>Tansulosina 0,4 mg por via oral uma vez ao dia</strong> (à noite).</li><br><li>Mecanismo: Antagonismo seletivo dos receptores adrenérgicos alfa-1D e alfa-1A concentrados ricamente na musculatura lisa do ureter distal e junção ureterovesical. Reduz a frequência e o tônus espástico basal das contrações peristálticas sem abolir o peristaltismo de propulsão, dilatando a luz ureteral e diminuindo a pressão hidrostática necessária para o cálculo migrar.</li><br><li>Evidências das Diretrizes (EAU/AUA/SBU): A tansulosina demonstra eficácia comprovada principalmente para <strong>cálculos de ureter distal com diâmetro $\\ge$ 5 mm até 10 mm</strong>, aumentando a taxa absoluta de expulsão, encurtando o tempo para eliminação espontânea e reduzindo o consumo de analgésicos de resgate.</li><br><li>Duração do Tratamento Expulsivo: O limite de segurança para a conduta expectante é de <strong>4 a 6 semanas</strong>. Se o cálculo não for eliminado nesse período, ou se o paciente apresentar episódios recorrentes de cólica incoercível, infecção ou piora da hidronefrose, o tratamento cirúrgico deve ser prontamente indicado para evitar dano tubular e perda irreversível da filtração glomerular.</li>"
+        ],
+        [
+          "3",
+          "6.4 Urgência Máxima: Sepse Urinária Obstrutiva (Pionefrite)"
+        ],
+        [
+          "p",
+          "Quando um cálculo urinário causa obstrução ureteral concomitante com infecção bacteriana do trato urinário superior, cria-se um <strong>compartimento fechado sob alta pressão purulenta (pionefrite / abscesso pielocalicial)</strong>. A elevada pressão intrapélvica força a translocação maciça de bactérias e endotoxinas diretamente para o leito capilar peritubular (refluxo pielovenoso e pielolinfático), culminando em bacteriemia fulminante, choque séptico refratário e falência de múltiplos órgãos."
+        ],
+        [
+          "p",
+          "<em>Manejo Emergencial Mandatório:</em><br>1. <strong>Ressuscitação Hemodinâmica Imediata:</strong> Cristaloides balanceados (30 mL/kg nas primeiras 3 horas), monitorização intensiva e suporte com noradrenalina se houver choque refratário.<br>2. <strong>Antibioticoterapia Intravenosa de Amplo Espectro Imediata:</strong> Iniciada na primeira hora de atendimento (após coleta rápida de hemoculturas e urocultura). Esquemas empíricos recomendados: Piperacilina-Tazobactam (4,5 g IV a cada 6 horas), Cefepima (2 g IV a cada 8 horas) ou Meropenem (1 g IV a cada 8 horas se histórico de bactérias multirresistentes ESBL).<br>3. <strong>Desobstrução do Trato Urinário Superior de Emergência:</strong> <strong>REGRA DE OURO DE TODAS AS DIRETRIZES E PROVAS:</strong> <strong>NUNCA realizar litotripsia ou manipulação cirúrgica do cálculo na vigência de sepse ativa ou pionefrite!</strong> Tentar fragmentar o cálculo ou realizar ureterorrenolitotripsia nesse cenário eleva ainda mais a pressão hidrostática pielocalicial pela irrigação contínua de soro, disseminando bactérias e toxinas e agravando fatalmente o choque séptico. A cirurgia definitiva do cálculo deve ser estritamente postergada até a resolução completa da infecção e estabilização clínica (geralmente 2 a 3 semanas após).<br>4. <strong>Modalidades de Desobstrução Urgente:</strong><br><li><em>Passagem Retrógrada de Cateter Duplo J (Stent Ureteral):</em> Realizada por cistoscopia sob sedação ou anestesia local/geral. Menos invasiva para o abdome, mas pode ser tecnicamente impossível se o cálculo for volumoso, impaciente ou provocar acotovelamento do ureter distal.</li><br><li><em>Nefrostomia Percutânea Guiada por Ultrassonografia e Fluoroscopia:</em> Inserção de cateter de drenagem diretamente na pelve renal através do flanco. É o método de elevação e escolha quando há falha na passagem retrógrada do duplo J, cálculo volumoso impactado, sepse urológica severa em pacientes instáveis ou ureter muito friável com risco de perfuração. Ambos os métodos são equivalentes em desfechos de sobrevida e eficácia de descompressão.</li>"
+        ],
+        [
+          "3",
+          "6.5 Tratamento Definitivo Programado do Cálculo Urinário"
+        ],
+        [
+          "p",
+          "Passada a urgência ou em casos eletivos, a remoção do cálculo baseia-se na tríade: <strong>tamanho da carga litiásica (stone burden), localização anatômica e composição/densidade tomográfica (HU)</strong>:"
+        ],
+        [
+          "p",
+          "1. <strong>Litotripsia Extracorpórea por Ondas de Choque (LEOC / ESWL):</strong><br><li>Método não invasivo que focaliza ondas acústicas externas geradas por fonte eletro-hidráulica, piezoelétrica ou eletromagnética no interior do cálculo, gerando estresse de tração e cavitação gasosa que fragmentam a pedra.</li><br><li><em>Melhores Indicações:</em> Cálculos renais na pelve renal ou cálices médio/superior com <strong>diâmetro total < 20 mm</strong> (idealmente < 10-15 mm), com densidade tomográfica < 900-1.000 HU e distância pele-cálculo < 10 cm.</li><br><li><em>Contraindicações Formais:</em> Gestação (risco teratogênico e descolamento prematuro de placenta), infecção ativa do trato urinário não tratada, coagulopatias e uso de anticoagulantes, aneurisma de aorta abdominal calcificado adjacente ao foco e obstrução distal ao cálculo não tratada.</li><br><li><em>Limitação Anatômica:</em> Cálculos de polo inferior renal com ângulo infundibulopélvico agudo (< 45°) e colo calicial estreito/longo possuem baixíssima taxa de eliminação de fragmentos (< 40%).</li>"
+        ],
+        [
+          "p",
+          "2. <strong>Ureterorrenolitotripsia (URS) Semirrígida e Flexível:</strong><br><li><em>URS Semirrígida:</em> Indicada preferencialmente para cálculos em <strong>ureter distal e médio</strong>.</li><br><li><em>URS Flexível com Laser de Hólmio (Ho:YAG) ou Túlio (TFL - Thulium Fiber Laser):</em> Padrão-ouro para cálculos em <strong>ureter proximal</strong> e para <strong>cálculos renais $\\le$ 20 mm</strong>, inclusive cálculos de polo inferior e cálculos em pacientes obesos mórbidos, anticoagulados ou com rins em ferradura/anomalias anatômicas. A fibra de laser promove pulverização e fragmentação micrométrica com extração de fragmentos residuais por cesta de nitinol (Dormia).</li>"
+        ],
+        [
+          "p",
+          "3. <strong>Nefrolitotripsia Percutânea (NLPC / PCNL):</strong><br><li>Padrão-ouro absoluto (primeira linha mandatória) para <strong>cálculos renais volumosos (> 20 mm de diâmetro)</strong>, cálculos coraliformes (completos ou parciais) e cálculos complexos de polo inferior > 15 mm.</li><br><li>Técnica: Punção renal percutânea sob controle ecográfico e radioscópico pelo cálice inferior ou médio, dilatação do trajeto com bainha de Amplatz (geralmente calibres 24 a 30 Fr na padrão, ou 11 a 18 Fr na mini-PCNL), introdução do nefroscópio rígido e fragmentação por litotritor ultrassônico, pneumático ou laser, com aspiração contínua de fragmentos.</li>"
+        ]
+      ]
+    ],
+    [
+      "7-complicacoes-imediatas-e-tardias",
+      0,
+      [
+        [
+          "2",
+          "7. Complicações Imediatas e Tardias"
+        ],
+        [
+          "p",
+          "A litíase obstrutiva negligenciada ou inadequadamente manejada culmina em complicações orgânicas severas:"
+        ],
+        [
+          "p",
+          "1. <strong>Ruptura de Fórnice Calicial e Formação de Urinoma:</strong><br><li>Em situações de obstrução ureteral aguda total e hiperpressão intrapélvica súbita (frequentemente precipitada por infusão venosa rápida e inadvertida de líquidos no PS), a pressão excede a complacência estrutural do fórnice calicial (área de menor resistência histológica da parede pielocalicial). Ocorre microrruptura fornical com extravasamento retroperitoneal de urina estéril ou purulenta, formando coleções retroperitoneais volumosas (urinomas).</li><br><li>Quadro Clínico: Alívio paradoxal e abrupto da cólica nefrética lancinante (devido à descompressão imediata da pelve renal), seguido horas depois por dor lombar contínua e surda, distensão abdominal progressiva, febre baixa e íleo paralítico reflexo.</li><br><li>Tratamento: Desobstrução do trato urinário com cateter duplo J para selar a fístula e drenagem percutânea do urinoma se houver coleção volumosa (> 4-5 cm) ou sinais de contaminação bacteriana.</li>"
+        ],
+        [
+          "p",
+          "2. <strong>Estenose Ureteral Adquirida:</strong><br><li>Ocorre por isquemia microvascular e fibrose cicatricial decorrente de cálculos impacientes de longa permanência (> 4 semanas no mesmo sítio) ou iatrogenia durante ureterolitotripsia intraluminal (perfuração da parede ureteral, lesão térmica por laser ou avulsão por dormia). Exige pieloplastia, reimplante ureteral ou enxertos orais com mucosa jugal.</li>"
+        ],
+        [
+          "p",
+          "3. <strong>Perda Irreversível da Função Renal (Atrofia Renal Obstrutiva):</strong><br><li>Obstruções completas com duração superior a 2 semanas começam a induzir apoptose progressiva das células tubulares e fibrose túbulo-intersticial. A partir de 4 a 6 semanas de obstrução completa não aliviada, a perda da filtração glomerular torna-se irreversível na grande maioria dos néfrons do rim acometido.</li>"
+        ],
+        [
+          "p",
+          "4. <strong>Pielonefrite Xantogranulomatosa (PXG):</strong><br><li>Forma grave e destrutiva de infecção crônica do parênquima renal associada invariavelmente a cálculo coraliforme obstrutivo de longa data e infecção por <em>Proteus</em> ou <em>E. coli</em>. O parênquima renal funcional é progressivamente destruído e substituído por granulomas ricos em macrófagos espumosos repletos de lipídios (células xantomatosas), que formam massas inflamatórias volumosas infiltrando estruturas retroperitoneais e órgãos adjacentes (cólon, duodeno, psoas), simulando tomograficamente um carcinoma de células renais volumoso. O tratamento de escolha é a nefrectomia total.</li>"
+        ]
+      ]
+    ],
+    [
+      "8-manejo-em-populacoes-especiais",
+      0,
+      [
+        [
+          "2",
+          "8. Manejo em Populações Especiais"
+        ],
+        [
+          "3",
+          "Litíase e Obstrução na Gravidez"
+        ],
+        [
+          "p",
+          "<li><strong>Particularidades Fisiológicas:</strong> Durante a gestação normal, a ação relaxante da progesterona sobre o músculo liso ureteral e a compressão mecânica extrínseca exercida pelo útero gravídico dextrorrotado causam hidronefrose fisiológica benigna (mais acentuada e comum à direita) em até 90% das gestantes no segundo e terceiro trimestres.</li>\n<li><strong>Risco Obstétrico:</strong> A cólica nefrética aguda é a causa não obstétrica mais comum de internação e pode deflagrar trabalho de parto prematuro ou rotura prematura de membranas ovulares por liberação sistêmica de prostaglandinas.</li>\n<li><strong>Diagnóstico por Imagem:</strong></li>\n<li><em>Primeira Linha:</em> <strong>Ultrassonografia obstétrica e renal</strong>. Deve-se avaliar o índice de resistividade renal (IR) ao Doppler: um IR > 0,70 ou uma diferença $\\Delta$ IR > 0,06 entre o rim sintomático e o contralateral aponta obstrução mecânica verdadeira, e não mera ectasia fisiológica. A visualização do \"jato ureteral\" (<em>ureteral jet</em>) intravesical ao Doppler colorido ajuda: a ausência completa de jato sugere obstrução total.</li>\n<li><em>Segunda Linha (quando a USG é inconclusiva):</em> <strong>Ressonância Magnética (RM) sem contraste (T2-weighted)</strong>. A RM delineia com perfeição o ponto de transição da dilatação e visualiza edema perirrenal. O gadolínio é formalmente contraindicado pelo risco de retenção fetal.</li>\n<li><em>Tomografia de Ultra-Baixa Dose:</em> Pode ser cogitada no último trimestre em casos refratários gravíssimos se a US e RM falharem em elucidar o caso, balanceando riscos e benefícios.</li>\n<li><strong>Tratamento:</strong></li>\n<li>Analgesia de escolha: <strong>Paracetamol</strong> (seguro em todos os trimestres). Opioides em cursos curtos podem ser utilizados na dor severa. <strong>AINEs são absolutamente contraindicados no terceiro trimestre</strong> devido ao fechamento prematuro do canal arterial fetal (<em>ductus arteriosus</em>) e oligoidrâmnio por insuficiência renal fetal. A tansulosina não possui segurança classe B na gestação e é desaconselhada.</li>\n<li>Se falha do tratamento clínico ou presença de sepse: passagem de cateter duplo J sob anestesia local e orientação ultrassonográfica pura (sem fluoroscopia/radiação) ou nefrostomia percutânea. O cateter duplo J na gestante sofre rápida incrustação mineral pelo estado de hipercalciúria absortiva gestacional, devendo ser trocado ou revisado a cada 4 a 6 semanas se a gestação ainda estiver longe do termo.</li>"
+        ],
+        [
+          "3",
+          "Litíase no Paciente com Rim Único Anatômico ou Funcional"
+        ],
+        [
+          "p",
+          "<li>Representa emergência nefrológica imediata! Qualquer cálculo ureteral obstrutivo em rim único desencadeia <strong>anúria aguda (débito urinário zero)</strong> e elevação exponencial da creatinina sérica, uremia sintomática e hipercalemia potencialmente arritmogênica.</li>\n<li>Conduta: Desobstrução urológica de emergência com cateter duplo J ou nefrostomia percutânea em regime de máxima prioridade! Não há espaço para conduta expectante ou terapia expulsiva em paciente anúrico.</li>"
+        ],
+        [
+          "3",
+          "Litíase em Crianças e Adolescentes"
+        ],
+        [
+          "p",
+          "<li>A presença de cálculo urinário em crianças exige <strong>avaliação metabólica e genética aprofundada mandatória</strong>, pois até 80% das crianças apresentam anomalias anatômicas da via urinária (ex.: estenose de JUP, refluxo vesicoureteral) ou doenças genéticas/metabólicas graves subjacentes (hipercalciúria idiopática infantil, cistinúria, acidose tubular renal ou hiperoxalúria primária). O exame de imagem de escolha inicial é a ultrassonografia renal.</li>"
+        ]
+      ]
+    ],
+    [
+      "9-prevencao-secundaria-e-investigacao-metabolica-ambulatorial",
+      0,
+      [
+        [
+          "2",
+          "9. Prevenção Secundária e Investigação Metabólica Ambulatorial"
+        ],
+        [
+          "p",
+          "Todo paciente com histórico de litíase urinária de repetição, cálculo coraliforme, nefrocalcinose, rim único, história familiar precoce ou primeiro cálculo em crianças/jovens deve ser submetido à <strong>Avaliação Metabólica Completa</strong>."
+        ],
+        [
+          "3",
+          "Protocolo de Investigação Metabólica:"
+        ],
+        [
+          "p",
+          "<li>Realizada ambulatorialmente, pelo menos 4 a 6 semanas após a resolução completa da crise aguda e remoção do cálculo, com o paciente em sua dieta habitual e sem infecção urinária ativa.</li>\n<li><strong>Exames Séricos:</strong> Cálcio iônico e total, albumina, fósforo inorgânico, ácido úrico, creatinina, ureia, sódio, potássio, cloreto, gasometria venosa (ou bicarbonato sérico) e hormônio paratireoidiano intacto (PTH-i) se houver hipercalcemia.</li>\n<li><strong>Urina de 24 Horas (Idealmente 2 Amostras em Dias Diferentes):</strong></li>\n<li>Volume urinário total (meta: volume de 24h > 2.000 a 2.500 mL);</li>\n<li>Cálcio urinário (normal < 200-250 mg/24h);</li>\n<li>Oxalato urinário (normal < 40-45 mg/24h);</li>\n<li>Citrato urinário (normal > 320-400 mg/24h);</li>\n<li>Ácido úrico urinário (normal < 750-800 mg/24h);</li>\n<li>Sódio urinário (indicador fidedigno da ingestão de sal na dieta);</li>\n<li>Creatinina urinária (para validar se a coleta de 24h foi completa: 15-20 mg/kg em mulheres e 20-25 mg/kg em homens);</li>\n<li>pH urinário em urina recente matinal (eletrodo calibrado).</li>"
+        ],
+        [
+          "3",
+          "Medidas Dietéticas Universais e Farmacológicas Específicas"
+        ],
+        [
+          "p",
+          "1. <strong>Ingestão Hídrica Adequada (Medida mais eficaz de todas!):</strong> Ingestão de líquidos suficiente para garantir um débito urinário diário de pelo menos <strong>2,5 litros por dia</strong>. Recomenda-se ingestão distribuída uniformemente ao longo do dia, incluindo um copo de água antes de dormir e se acordar durante a noite para urinar.\n2. <strong>Restrição de Sódio:</strong> Limitar a ingestão de sal de cozinha para menos de 4 a 5 g/dia (sódio < 2.000 mg/dia). O excesso de sódio na dieta sobrecarrega o túbulo proximal, reduzindo a reabsorção passiva de cálcio e aumentando a hipercalciúria.\n3. <strong>Ingestão de Cálcio:</strong> <strong>ATENÇÃO MÁXIMA PARA A PEGADINHA MAIS CLÁSSICA DAS PROVAS DE RESIDÊNCIA!</strong> <strong>NÃO se deve restringir o cálcio dietético em formadores de cálculos de cálcio!</strong> A restrição severa de cálcio dietético (como cortar leite e derivados) aumenta a absorção intestinal de oxalato livre (que não encontra cálcio na luz intestinal para se ligar), provocando hiperoxalúria secundária paradoxal e aumentando a incidência de cálculos de oxalato de cálcio, além de induzir osteopenia/osteoporose. A recomendação padrão é manter a ingestão normal de cálcio da dieta (1.000 a 1.200 mg/dia).\n4. <strong>Restrição Moderada de Proteínas Animais:</strong> Reduzir o excesso de carne vermelha, aves e peixes. As proteínas animais são ricas em aminoácidos sulfurados (metionina e cisteína), que geram carga ácida sistêmica, reduzindo a excreção renal de citrato (hipocitratúria) e promovendo hiperuricosúria e hipercalciúria por tamponamento ósseo.\n5. <strong>Farmacoterapia Específica:</strong>\n<li><em>Hipercalciúria Idiopática:</em> <strong>Diuréticos Tiazídicos</strong> (Clortalidona 25 a 50 mg/dia ou Hidroclorotiazida 25 a 50 mg/dia). Os tiazídicos inibem o cotransportador Na+/Cl- no túbulo contorcido distal, promovendo reabsorção ativa de cálcio e reduzindo a calciúria em até 50%. Devem ser associados a citrato de potássio para prevenir hipocalemia e hipocitratúria secundárias.</li>\n<li><em>Hipocitratúria ou Urina Ácida:</em> <strong>Citrato de Potássio</strong> (30 a 60 mEq/dia divididos em 2 a 3 tomadas). Alcaliniza a urina e repõe diretamente o inibidor mais potente da cristalização. Evitar citrato de sódio, pois a sobrecarga de sódio aumenta a calciúria.</li>\n<li><em>Hiperuricosúria com Cálculos de Ácido Úrico:</em> Alcalinização urinária com citrato de potássio (meta de pH 6,5 a 7,0). Se houver hiperuricemia ou hiperuricosúria mantida: <strong>Alopurinol</strong> 100 a 300 mg/dia (inibidor da xantina oxidase).</li>\n<li><em>Cistinúria:</em> Hidratação extrema (> 3,5 a 4 L/dia), alcalinização urinária (pH > 7,5 com citrato de potássio) e, em casos refratários, agentes quelantes com grupo tiol livre (como Tiopronina ou D-Penicilamina), que quebram as pontes dissulfeto da cistina formando complexos solúveis.</li>"
+        ]
+      ]
+    ],
+    [
+      "10-casos-clinicos-estruturados-e-resolvidos",
+      0,
+      [
+        [
+          "2",
+          "10. Casos Clínicos Estruturados e Resolvidos"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Cólica Nefrética Aguda com Indicação de Terapia Expulsiva"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem, 34 anos, analista de sistemas, previamente hígido, admitido no pronto-socorro com queixa de dor súbita de fortíssima intensidade em flanco esquerdo iniciada há 3 horas, com irradiação oblíqua para fossa ilíaca esquerda e testículo ipsilateral. Relata náuseas e dois episódios de vômitos. Nega febre, calafrios ou episódios prévios semelhantes.</li>\n<li><strong>Exame Físico:</strong> Paciente agitado no leito, sudoreico, afebril (36,5 °C), PA 145/90 mmHg, FC 98 bpm, FR 18 irpm. Abdome flácido, doloroso à palpação profunda em flanco e fossa ilíaca esquerda, porém sem peritonismo (descompressão brusca negativa, sem massas palpáveis). Punho-percussão lombar esquerda francamente positiva (Giordano positivo à esquerda) e indolor à direita.</li>\n<li><strong>Investigação Laboratorial e Imagem:</strong></li>\n<li>EAS: pH 6,0; densidade 1.025; leucócitos 6.000/mL; hemácias 85.000/mL; nitrito negativo.</li>\n<li>Creatinina sérica: 1,0 mg/dL; Hemograma: leucócitos 8.900/mm³ sem desvio.</li>\n<li>TC de abdome e pelve sem contraste de baixa dose: Cálculo único de 5,5 mm localizado no terço distal do ureter esquerdo, a 2 cm da junção ureterovesical, com atenuação média de 820 HU. Presença de discreta ureterohidronefrose esquerda e tênue borramento da gordura perirrenal ipsilateral.</li>\n<li><strong>Conduta Imediata no PS:</strong></li>\n<li>Cetoprofeno 100 mg IV diluído em 100 mL de SF 0,9% infundido em 20 minutos associado a Dipirona 2 g IV e Ondansetrona 8 mg IV.</li>\n<li>O paciente apresentou remissão completa da dor e dos vômitos após 40 minutos da medicação venosa. Tolerou ingesta hídrica oral.</li>\n<li><strong>Raciocínio Clínico e Planejamento Ambulatorial:</strong></li>\n<li>O paciente apresenta cólica nefrética aguda unilateral não complicada causada por cálculo em ureter distal com diâmetro favorável (5,5 mm), sem evidência de infecção, com função renal preservada e dor plenamente controlada.</li>\n<li>Indicação formal de <strong>Terapia Expulsiva Medicamentosa (MET)</strong> ambulatorial: prescrição de Tansulosina 0,4 mg via oral uma vez ao dia à noite por até 4 semanas, associada a analgésicos orais para resgate se dor (Cetoprofeno 150 mg liberação prolongada se dor, intercalado com Dipirona 1 g se necessário).</li>\n<li>Orientações de alarme: retorno imediato ao PS em caso de febre, calafrios, vômitos refratários ou dor incontrolável. Orientado a filtrar a urina para recuperar o cálculo se expelido e encaminhá-lo para análise mineralógica. Retorno ambulatorial agendado em 3 a 4 semanas com ultrassonografia ou TC de controle.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Emergência Máxima — Sepse Urinária Obstrutiva (Pionefrite)"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Mulher, 62 anos, diabética tipo 2 de longa data e hipertensa, trazida pela família à unidade de emergência com rebaixamento do nível de consciência, confusão mental, sonolência e febre alta com calafrios iniciados há 24 horas. Familiares relatam que há 3 dias ela vinha se queixando de dor lombar direita e disúria, mas recusou atendimento médico.</li>\n<li><strong>Exame Físico:</strong> Sonolenta, confusa (Glasgow 13), desidratada 2+/4+, taquipneica, cianose de extremidades e extremidades mal perfundidas. Sinais vitais: PA 78/46 mmHg (PAM 56 mmHg), FC 128 bpm, FR 28 irpm, SpO2 93% em ar ambiente, Temperatura axilar 39,2 °C. Abdome discretamente distendido, ruídos hidroaéreos diminuídos, dor intensa à palpação de flanco direito com punho-percussão lombar direita intensamente dolorosa.</li>\n<li><strong>Exames Laboratoriais e Imagem:</strong></li>\n<li>Hemograma: Leucócitos 24.500/mm³ com 18% de bastonetes; Plaquetas 95.000/mm³; Lactato sérico arterial: 4,2 mmol/L.</li>\n<li>Creatinina sérica: 2,8 mg/dL (basal de 0,9 mg/dL há 4 meses); Ureia: 98 mg/dL; PCR: 245 mg/L.</li>\n<li>Urina 1: Leucócitos incontáveis, piócitos agrupados, nitrito positivo, hemácias 50.000/mL, bactérias abundantes.</li>\n<li>TC de abdome sem contraste: Rim direito aumentado de volume (nefromegalia acentuada), com estriação pronunciada da gordura perirrenal, líquido perirrenal e dilatação pielocalicial moderada a montante de um cálculo de 9 mm impactado na junção ureteropélvica (JUP) direita.</li>\n<li><strong>Raciocínio Clínico Passo a Passo:</strong></li>\n<li>Trata-se de uma <strong>sepse de foco urinário / choque séptico secundário à obstrução ureteral litiásica (pionefrite obstrutiva)</strong>. A pelve renal encontra-se sob alta pressão e repleta de exsudato purulento bacteriano, forçando translocação hematogênica de endotoxinas.</li>\n<li>Trata-se de uma emergência cirúrgica urológica e intensivista absoluta! O atraso na descompressão do trato urinário cursa com mortalidade superior a 40-50%.</li>\n<li><strong>Conduta Adotada:</strong></li>\n  1. <em>Ressuscitação Hemodinâmica Imediata:</em> Expansão volêmica rápida com Ringer Lactato 30 mL/kg nas primeiras 3 horas; iniciada infusão de noradrenalina em bomba contínua para manter PAM $\\ge$ 65 mmHg devido à refratariedade à carga hídrica inicial.\n  2. <em>Coleta Rápida e Antibioticoterapia:</em> Coletados 2 pares de hemoculturas e urocultura. Iniciada Piperacilina-Tazobactam 4,5 g IV imediatamente (dentro da primeira hora de ouro do choque séptico).\n  3. <em>Desobstrução do Trato Urinário de Urgência:</em> Contatada equipe urológica de plantão. Tentativa retrógrada de cateterismo com duplo J foi realizada na sala cirúrgica; contudo, o cateter não ultrapassou o cálculo impaciente volumoso na JUP. Diante do insucesso retrógrado e instabilidade da paciente, procedeu-se imediatamente à <strong>Nefrostomia Percutânea Direita guiada por Ultrassonografia e Fluoroscopia</strong>, com saída imediata de 60 mL de urina francamente purulenta sob pressão (enviada para Gram e cultura quantitativa com antibiograma).\n  4. <em>Atenção:</em> Nenhuma tentativa de litotripsia ou retirada do cálculo foi executada! A paciente foi encaminhada à UTI, evoluindo com desmame de aminas vasoativas em 48 horas e recuperação da função renal. A resolução cirúrgica definitiva do cálculo na JUP foi programada eletivamente 4 semanas após a recuperação completa."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Nefrolitíase Volumosa Coraliforme (Cálculo Infeccioso de Estruvita)"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Mulher, 48 anos, professora, com histórico de infecções urinárias de repetição há mais de 4 anos, tratadas com múltiplos esquemas empíricos breves de ciprofloxacino e fosfomicina. Procura ambulatório de urologia relatando episódios vagos e insidiosos de peso em flanco direito e urina turva com odor forte, sem febre atual ou cólica nefrética típica aguda.</li>\n<li><strong>Investigação Laboratorial e Imagem:</strong></li>\n<li>Urina 1: pH 7,8; densidade 1.015; leucócitos > 100.000/mL; cristais abundantes em \"tampa de caixão\" (prismas de fosfato triplo); nitrito positivo. Urocultura: crescimento de <em>Proteus mirabilis</em> > 100.000 UFC/mL sensível a amicacina, ceftriaxona e ciprofloxacino.</li>\n<li>Creatinina: 1,1 mg/dL; Ureia: 38 mg/dL.</li>\n<li>Radiografia de Abdome (KUB): volumosa massa radiopaca no hipocôndrio direito reproduzindo com fidelidade o molde da pelve renal e de todos os cálices renais superiores, médios e inferiores (cálculo coraliforme completo).</li>\n<li>TC de abdome sem contraste: cálculo coraliforme ramificado ocupando toda a pelve e grupos caliciais do rim direito, com maior diâmetro cumulativo de 4,8 cm e atenuação média de 750 HU. Espessura do parênquima renal adjacente preservada. Cintilografia renal com DMSA demonstrou função renal diferencial de 42% no rim direito e 58% no rim esquerdo.</li>\n<li><strong>Raciocínio Clínico e Resolução Cirúrgica:</strong></li>\n<li>O quadro decorre de cálculo de estruvita (fosfato de amônio e magnésio) secundário à colonização crônica por <em>Proteus mirabilis</em>, bactéria produtora de urease que alcalinizou cronicamente a urina (pH 7,8).</li>\n<li>O cálculo coraliforme completo não tem indicação alguma de LEOC (falha de fragmentação, risco extremo de choque séptico e rua de cálculos / <em>Steinstrasse</em>) nem de tratamento clínico isolado.</li>\n<li>O padrão-ouro de tratamento é a <strong>Nefrolitotripsia Percutânea (NLPC)</strong>, eventualmente em múltiplos trajetos ou associada à ureterorrenolitotripsia flexível combinada (cirurgia endourológica combinada - ECIRS). O objetivo mandatório é a eliminação de 100% da carga litiásica (<em>stone-free status</em>), pois qualquer fragmento residual microscópico permanecerá colonizado por bactérias produtoras de urease e atuará como ninho para recidiva rápida do cálculo coraliforme em poucos meses.</li>\n<li>Procedimento: A paciente recebeu antibioticoterapia guiada por antibiograma por 7 dias pré-operatórios, sendo submetida com sucesso a NLPC em posição prona por punção calicial inferior e superior, alcançando clareamento completo do cálculo.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Gestante no 3º Trimestre com Cólica Nefrética e Hidronefrose"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Mulher, 28 anos, primigesta na 31ª semana de idade gestacional, admitida no pronto-atendimento obstétrico com dor severa em flanco direito, náuseas e disúria há 8 horas. Nega febre, sangramento vaginal ou perda de líquido amniótico.</li>\n<li><strong>Exame Físico:</strong> Dinâmica uterina ausente; batimentos cardiofetais (BCF) 144 bpm com boa reatividade. Dor intensa à palpação de fossa ilíaca direita e flanco direito; Giordano positivo à direita.</li>\n<li><strong>Investigação Diagnóstica:</strong></li>\n<li>Exames de Urina: EAS com leucócitos 12.000/mL, hemácias 60.000/mL, nitrito negativo. Creatinina: 0,6 mg/dL.</li>\n<li>Ultrassonografia Renal e Obstétrica: Feto único, peso estimado adequado para a idade gestacional. Rim direito com moderada dilatação pielocalicial; o Doppler das artérias interlobares demonstrou índice de resistividade renal (IR) de 0,74 no rim direito e 0,61 no rim esquerdo ($\\Delta IR = 0,13$, altamente sugestivo de obstrução mecânica aguda verdadeira). Observado cálculo hiperecogênico com sombra acústica de 6 mm na junção ureterovesical direita. Ausência de jato ureteral à direita ao Doppler colorido intravesical.</li>\n<li><strong>Decisão Terapêutica:</strong></li>\n<li>AINEs (como cetoprofeno e indometacina) são <strong>terminantemente contraindicados</strong> devido ao risco de fechamento prematuro do canal arterial fetal e insuficiência renal fetal oligoidrâmnica.</li>\n<li>Prescrição: Paracetamol 1 g IV associado a Dipirona 1 g IV e reposição hidroeletrolítica cuidadosa. Diante da persistência de dor severa e refratariedade, foi administrado sulfato de morfina 3 mg IV fracionado com alívio satisfatório.</li>\n<li>Devido à recorrência da dor intensa 12 horas após e impossibilidade de alta segura no 3º trimestre, optou-se pela <strong>passagem de cateter duplo J retrógrado sob anestesia local e sedação leve guiada exclusivamente por ultrassonografia</strong>, sem emissão de radiação ionizante (fluoroscopia). O procedimento transcorreu sem intercorrências, com remissão imediata dos sintomas e manutenção segura da gestação até o parto a termo.</li>"
+        ]
+      ]
+    ],
+    [
+      "11-questoes-comentadas-de-residencia-medica-e-enamed",
+      0,
+      [
+        [
+          "2",
+          "11. Questões Comentadas de Residência Médica e ENAMED"
+        ],
+        [
+          "3",
+          "Questão 1 (Residência Médica / Revalida INEP)"
+        ],
+        [
+          "p",
+          "Um homem de 52 anos procura o serviço de urgência com dor em cólica de início súbito em região lombar esquerda, de forte intensidade, que irradia para a região inguinal ipsilateral, associada a náuseas e vômitos. Nega febre. Exame físico: afebril, PA 130/80 mmHg, FC 88 bpm. Abdome flácido, doloroso à palpação profunda em flanco esquerdo, sem sinais de peritonite. Punho-percussão lombar dolorosa à esquerda. Realizou tomografia de abdome sem contraste que evidenciou cálculo ureteral único de 4 mm de diâmetro localizado no terço distal do ureter esquerdo, associado a discreta dilatação pielocalicial a montante. Função renal normal. Após analgesia intravenosa com anti-inflamatório, o paciente encontra-se assintomático.\nConsiderando o caso clínico e as diretrizes vigentes, assinale a conduta mais adequada:\n<li>A) Encaminhar imediatamente para ureterorrenolitotripsia de urgência com laser.</li>\n<li>B) Indicar nefrolitotripsia percutânea em até 24 horas para evitar dano tubular irreversível.</li>\n<li>C) Prescrever tratamento expulsivo medicamentoso com tansulosina e analgesia ambulatorial com seguimento clínico e de imagem.</li>\n<li>D) Realizar passagem imediata de cateter duplo J e prescrever ciprofloxacino por 14 dias.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong><br><li><strong>Comentário Detalhado:</strong> O paciente apresenta cólica nefrética unilateral decorrente de cálculo em ureter distal com diâmetro de 4 mm. Cálculos ureterais < 5 mm localizados no ureter distal apresentam taxas de expulsão espontânea superiores a 75-85%. Diante da ausência de sinais de infecção (febre, piúria acentuada), ausência de disfunção renal, rim contralateral pérvio e dor completamente controlada no PS, a conduta de primeira linha recomendada pelas diretrizes internacionais (EAU, AUA) e nacionais (SBU) é o tratamento clínico conservador com <strong>Terapia Expulsiva Medicamentosa (MET)</strong>, preferencialmente com um alfa-bloqueador seletivo (Tansulosina 0,4 mg/dia), analgesia de resgate oral e acompanhamento ambulatorial por até 4 a 6 semanas com exames de imagem de controle.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a intervenção cirúrgica imediata seria desnecessariamente invasiva, onerosa e contraindicada como primeira opção em um cálculo com alta probabilidade de eliminação espontânea em paciente assintomático.</li><br><li>A alternativa B está incorreta: a nefrolitotripsia percutânea (NLPC) é indicada primariamente para cálculos renais volumosos (> 20 mm) ou coraliformes, não tendo indicação para cálculos de ureter distal de 4 mm.</li><br><li>A alternativa D está incorreta: a passagem de cateter duplo J e antibioticoterapia empírica prolongada não se justificam na ausência de sepse urinária, disfunção renal aguda ou dor refratária.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Mulher de 45 anos, com antecedente de litíase renal de repetição, dá entrada na sala de emergência torporosa, febril (39,4 °C), taquicárdica (FC 132 bpm) e hipotensa (PA 75/40 mmHg). Exames laboratoriais mostram leucocitose de 26.000/mm³ com 20% de bastonetes, creatinina de 3,2 mg/dL e lactato sérico de 4,5 mmol/L. A tomografia de abdome demonstra cálculo de 12 mm impactado na junção ureteropélvica direita, associado a acentuada hidronefrose ipsilateral e densificação da gordura perirrenal. Iniciada ressuscitação volêmica guiada por metas e noradrenalina em bomba de infusão.\nNeste momento crítico, em relação à abordagem urológica do cálculo, a melhor conduta é:\n<li>A) Realizar nefrolitotripsia percutânea de urgência com fragmentação ultrassônica do cálculo e colocação de tubo de nefrostomia.</li>\n<li>B) Realizar ureterorrenolitotripsia flexível com laser de hólmio para retirada completa do cálculo na mesma sessão.</li>\n<li>C) Realizar litotripsia extracorpórea por ondas de choque (LEOC) em regime de urgência na tentativa de fragmentar a pedra.</li>\n<li>D) Realizar descompressão do trato urinário com passagem retrógrada de cateter duplo J ou nefrostomia percutânea, sem fragmentar ou manipular o cálculo.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: D</strong><br><li><strong>Comentário Detalhado:</strong> A paciente apresenta um quadro gravíssimo de <strong>choque séptico de foco urinário secundário à obstrução litiásica (pionefrite obstrutiva)</strong>. A pressão no sistema pielocalicial encontra-se extremamente elevada, disseminando toxinas e bactérias para a circulação sistêmica. A regra de ouro incontestável em urologia de emergência é a <strong>descompressão urinária imediata</strong>, seja por implante retrógrado de cateter duplo J ou por nefrostomia percutânea guiada por ultrassonografia/fluoroscopia. <strong>É FORMALMENTE CONTRAINDICADO qualquer procedimento de fragmentação ou manipulação do cálculo (litotripsia percutânea, flexível ou LEOC) na vigência de sepse ativa!</strong> A injeção de soro sob pressão necessária para a visualização endoscópica rompe túbulos e capilares renais, precipitando bacteriemia fulminante e choque séptico irreversível. A cirurgia definitiva do cálculo deve ser estritamente postergada para momento eletivo, após controle infeccioso completo.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>As alternativas A e B erram grosseiramente ao proporem procedimentos cirúrgicos endourológicos complexos de manipulação e litotripsia em vigência de choque séptico.</li><br><li>A alternativa C está incorreta: a LEOC é absolutamente contraindicada em vigência de infecção urinária ativa e em pacientes criticamente instáveis.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 3 (USP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Em relação aos exames de imagem na avaliação diagnóstica de pacientes com suspeita de litíase urinária aguda na sala de emergência, assinale a afirmativa CORRETA:\n<li>A) A radiografia simples de abdome (KUB) possui sensibilidade superior a 90% para o diagnóstico de urolitíase, sendo o exame padrão-ouro inicial.</li>\n<li>B) A tomografia computadorizada de abdome e pelve sem contraste é o exame padrão-ouro, sendo capaz de identificar com precisão a quase totalidade dos cálculos, incluindo os cálculos de ácido úrico.</li>\n<li>C) Cálculos puros de ácido úrico são hiperdensos no raio-X simples e radiotransparentes na tomografia computadorizada sem contraste.</li>\n<li>D) A ultrassonografia é o método com maior sensibilidade para visualização direta de cálculos localizados no ureter médio.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> A Tomografia Computadorizada Helicoidal de Abdome e Pelve Sem Contraste de Baixa Dose é o exame padrão-ouro (gold standard) para avaliação da litíase urinária aguda, com sensibilidade e especificidade próximas a 98-100%. Uma das maiores virtudes da TC é que praticamente todos os cálculos urinários são espontaneamente hiperdensos (com atenuação entre 300 e 1.600 HU), permitindo a detecção precisa dos cálculos de ácido úrico (que medem entre 300 e 500 HU), os quais são completamente invisíveis na radiografia simples.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a radiografia simples possui baixa sensibilidade (em torno de 50-60%), deixando de identificar cálculos radiotransparentes, pequenos cálculos e aqueles sobrepostos a estruturas ósseas.</li><br><li>A alternativa C inverte a realidade: cálculos de ácido úrico são radiotransparentes (invisíveis) no raio-X simples e perfeitamente hiperdensos na TC sem contraste.</li><br><li>A alternativa D está incorreta: a ultrassonografia possui sua maior limitação diagnóstica justamente na avaliação do ureter médio, onde a interposição de gases intestinais dificulta a janela acústica.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 58 anos, portador de gota tofácea e diabetes mellitus tipo 2, realizou investigação urológica ambulatorial devido a nefrolitíase de repetição. A análise físico-química de cálculo expelido espontaneamente demonstrou cristais puros de ácido úrico. A dosagem de ácido úrico sérico foi de 7,8 mg/dL e o pH urinário matinal em amostras repetidas foi persistentemente igual a 5,0.\nPara a prevenção secundária da formação de novos cálculos e promoção da quimiólise de eventuais cálculos residuais, a conduta farmacológica mais indicada é:\n<li>A) Prescrever acetazolamida para acidificar a urina.</li>\n<li>B) Iniciar hidroclorotiazida associada a cloreto de sódio.</li>\n<li>C) Alcalinizar a urina com citrato de potássio, visando manter o pH urinário entre 6,5 e 7,0.</li>\n<li>D) Indicar restrição drástica de cálcio dietético e prescrever vitamina C em altas doses.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong><br><li><strong>Comentário Detalhado:</strong> O principal fator fisiopatológico determinante para a formação de cálculos de ácido úrico não é a hiperuricemia isolada, mas sim o <strong>pH urinário persistentemente ácido (< 5,5)</strong>. O pKa do ácido úrico é 5,35. Em pH 5,0, a quase totalidade do ácido úrico encontra-se na forma não dissociada e insolúvel, que precipita facilmente. O pilar fundamental do tratamento e prevenção é a <strong>alcalinização da urina</strong>, elevando o pH para uma faixa-alvo de <strong>6,5 a 7,0</strong> por meio do uso de <strong>citrato de potássio</strong> por via oral. Nessa faixa alcalina, o ácido úrico dissocia-se na forma de íon urato, que é mais de 20 vezes mais solúvel em água, permitindo a dissolução completa (quimiólise) dos cálculos formados e evitando novas nucleações.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a acetazolamida inibe a anidrase carbônica e reduz citrato urinário, além de que a acidificação urinária pioraria drasticamente a precipitação de ácido úrico.</li><br><li>A alternativa B está incorreta: a hidroclorotiazida é indicada para hipercalciúria idiopática, não tendo ação primária na solubilidade do ácido úrico.</li><br><li>A alternativa D é um desastre clínico: a restrição de cálcio dietético induz hiperoxalúria secundária e osteopenia, e a vitamina C metaboliza-se em oxalato, aumentando a litogênese.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 5 (ENAMED / AMRIGS)"
+        ],
+        [
+          "p",
+          "Mulher de 32 anos, primigesta na 26ª semana de gestação, comparece ao pronto-atendimento com cólica lombar direita de forte intensidade, associada a náuseas e disúria. Nega perdas vaginais ou febre. Sinais vitais estáveis. O ultrassom de rins e vias urinárias demonstra dilatação pielocalicial moderada no rim direito e presença de cálculo hiperecogênico de 6 mm na junção ureterovesical direita.\nEm relação ao manejo analgésico e propedêutico dessa gestante, assinale a conduta CORRETA:\n<li>A) Realizar tomografia computadorizada de abdome e pelve com contraste para melhor delineamento cirúrgico.</li>\n<li>B) Administrar cetoprofeno intravenoso como primeira escolha analgésica.</li>\n<li>C) A ultrassonografia é o exame de escolha para avaliação inicial e o paracetamol é considerado analgésico seguro para alívio dos sintomas.</li>\n<li>D) Prescrever tansulosina imediatamente, pois trata-se de medicamento de categoria A de risco gestacional.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong><br><li><strong>Comentário Detalhado:</strong> Na gestante com suspeita de litíase urinária, a <strong>ultrassonografia</strong> é o exame de imagem de primeira escolha obrigatório, pois é inócua ao feto e não utiliza radiação ionizante. No manejo farmacológico da dor, o <strong>paracetamol</strong> (associado ou não à dipirona) é a primeira linha considerada segura em qualquer trimestre gestacional. Se a dor for refratária, opioides podem ser utilizados em cursos curtos.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a TC com contraste deve ser evitada em gestantes devido à radiação ionizante teratogênica e risco de hipotireoidismo fetal transitório induzido pelo contraste iodado.</li><br><li>A alternativa B está incorreta: os AINEs (cetoprofeno, diclofenaco, indometacina) devem ser evitados, especialmente no 3º trimestre, por causarem fechamento prematuro do canal arterial fetal e oligoidrâmnio por toxicidade renal fetal.</li><br><li>A alternativa D está incorreta: a tansulosina não possui segurança classe A comprovada em gestantes e não é rotineiramente recomendada.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 6 (SURCE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Um homem de 42 anos realiza ultrassonografia de rotina que evidencia cálculo único de 2,4 cm de maior diâmetro localizado na pelve renal do rim direito. O paciente é completamente assintomático, tem urina 1 estéril e função renal preservada. A tomografia sem contraste confirma o cálculo pélvico de 24 mm com densidade de 1.150 HU.\nDe acordo com as diretrizes urológicas da Sociedade Brasileira de Urologia e Associação Europeia de Urologia (EAU), o tratamento de escolha para esse paciente é:\n<li>A) Litotripsia extracorpórea por ondas de choque (LEOC).</li>\n<li>B) Nefrolitotripsia percutânea (NLPC).</li>\n<li>C) Conduta expectante com aumento da ingestão hídrica oral.</li>\n<li>D) Nefrectomia parcial videolaparoscópica.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> Para cálculos renais com <strong>diâmetro maior que 20 mm (> 2 cm)</strong>, o tratamento padrão-ouro de primeira linha incontestável é a <strong>Nefrolitotripsia Percutânea (NLPC)</strong>, método que atinge as maiores taxas de clareamento litiásico completo (<em>stone-free rate</em> > 85-90%).</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a LEOC tem indicação primordial para cálculos renais < 20 mm. Em cálculos > 20 mm, a LEOC possui baixa taxa de fragmentação e clareamento, além de elevado risco de obstrução ureteral maciça por múltiplos fragmentos impactados enfileirados no ureter (\"rua de cálculos\" ou <em>Steinstrasse</em>).</li><br><li>A alternativa C está incorreta: cálculos desse volume não são eliminados espontaneamente e tendem ao crescimento contínuo, risco de pielonefrite e perda lenta da função renal.</li><br><li>A alternativa D é descabida: nefrectomia parcial é cirurgia oncológica para tumores renais, não tendo papel na litíase renal benigna com parênquima funcionante.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "12-tabela-comparativa-resumida-e-perolas-de-alta-performance",
+      0,
+      [
+        [
+          "2",
+          "12. Tabela Comparativa Resumida e Pérolas de Alta Performance"
+        ],
+        [
+          "t",
+          [
+            "Modalidade Terapêutica",
+            "Principais Indicações",
+            "Principais Contraindicações",
+            "Vantagens / Taxa de Sucesso"
+          ],
+          [
+            [
+              "<strong>Terapia Expulsiva (MET)</strong>",
+              "Cálculos de ureter distal de 5 a 10 mm em pacientes estáveis e sem infecção",
+              "Infecção associada, dor refratária, disfunção renal, rim único",
+              "Não invasivo, baixo custo; acelera eliminação em até 30%"
+            ],
+            [
+              "<strong>LEOC (Ondas de Choque)</strong>",
+              "Cálculos renais na pelve/cálices < 20 mm com densidade < 1.000 HU",
+              "Gestação, sepse ativa, coagulopatia, aneurisma calcificado",
+              "Não invasivo, ambulatorial; baixa eficácia em cálculos duros (> 1.000 HU)"
+            ],
+            [
+              "<strong>Ureterorrenolitotripsia Flexível</strong>",
+              "Cálculos renais $\\le$ 20 mm, cálices inferiores, cálculos refratários à LEOC",
+              "Infecção não tratada, estenose ureteral intransponível",
+              "Excelente taxa de clareamento, aplicável em obesos e coagulopatias"
+            ],
+            [
+              "<strong>Nefrolitotripsia Percutânea (NLPC)</strong>",
+              "Cálculos renais > 20 mm, cálculos coraliformes, brushita volumosa",
+              "Coagulopatia não corrigida, infecção ativa, hipertermia",
+              "Padrão-ouro absoluto para grande carga litiásica (> 85-95% livre)"
+            ],
+            [
+              "<strong>Cateter Duplo J / Nefrostomia</strong>",
+              "Sepse urinária obstrutiva, pionefrite, rim único anúrico, dor intratável",
+              "Nenhuma contraindicação formal na urgência descompressiva",
+              "Salva vidas; despressuriza o sistema; NÃO fragmenta o cálculo"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pérolas de Alta Performance para Provas de Residência Médica (High-Yield Pearls):"
+        ],
+        [
+          "p",
+          "1. <strong>O AINE é o campeão da cólica nefrética:</strong> Atua bloqueando a PGE2 intrarrenal, promovendo vasoconstrição arteriolar aferente e despressurizando a pelve renal.\n2. <strong>Sepse com cálculo obstrutivo:</strong> Tríade inegociável = Hidratação/Drogas vasoativas + Antibiótico na primeira hora + Desobstrução de urgência (Duplo J ou Nefrostomia). <strong>NUNCA litotripsar na sepse!</strong>\n3. <strong>Cálculo de Ácido Úrico é o mestre do disfarce:</strong> Invisível no Rx simples (radiotransparente), perfeitamente visível na TC sem contraste. Tratamento = Alcalinização com citrato de potássio (pH alvo 6,5 a 7,0).\n4. <strong>Cálculo de Estruvita / Coraliforme:</strong> Exige bactéria produtora de urease (<em>Proteus</em> é o rei; <em>E. coli</em> NÃO produz urease). Urina ultra-alcalina (pH > 7,2). Padrão-ouro = Nefrolitotripsia Percutânea para clarear 100%.\n5. <strong>NÃO restrinja cálcio na dieta de quem forma oxalato de cálcio:</strong> Cortar cálcio dietético aumenta a absorção entérica livre de oxalato e piora a litíase, além de causar osteoporose!\n6. <strong>Na gestante:</strong> Exame de escolha é USG renal. Analgésico seguro é Paracetamol. AINEs são proibidos no terceiro trimestre (risco de fechar o canal arterial fetal)."
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,1031 @@
+{
+  "v": 2,
+  "s": "saude-do-adulto-e-do-idoso-na-aps",
+  "t": "Saúde do Adulto e do Idoso na Atenção Primária à Saúde",
+  "p": "Saúde do Adulto e do Idoso na Atenção Primária à Saúde — Livro-Texto LURIA",
+  "d": "Tratado completo de Saúde do Adulto e do Idoso na Atenção Primária: análise detalhada da transição demográfica e epidemiológica brasileira, diretrizes da Política Nacional de Saúde da Pessoa Idosa (PNSPI), avaliação multidimensional (Caderneta de Saúde, Katz e Lawton), os Grandes Gigantes da Geriatria (Instabilidade/Quedas, Imobilidade, Incontinência, Iatrogenia/Polifarmácia com critérios de Beers 2023 e STOPP/START, Insuficiência Cognitiva e Demências/Delirium), sarcopenia e fragilidade de Linda Fried, rastreamentos no adulto/idoso e casos clínicos com questões comentadas.",
+  "a": "Medicina Preventiva",
+  "m": "Medicina de Família e Comunidade / Geriatria e Saúde Coletiva",
+  "h": [
+    "Apostila LURIA",
+    "Saúde do Adulto e do Idoso na Atenção Primária à Saúde",
+    "Tratado completo de Saúde do Adulto e do Idoso na Atenção Primária: análise detalhada da transição demográfica e epidemiológica brasileira, diretrizes da Política Nacional de Saúde da Pessoa Idosa (PNSPI), avaliação multidimensional (Caderneta de Saúde, Katz e Lawton), os Grandes Gigantes da Geriatria (Instabilidade/Quedas, Imobilidade, Incontinência, Iatrogenia/Polifarmácia com critérios de Beers 2023 e STOPP/START, Insuficiência Cognitiva e Demências/Delirium), sarcopenia e fragilidade de Linda Fried, rastreamentos no adulto/idoso e casos clínicos com questões comentadas.",
+    [
+      "Área: Medicina Preventiva",
+      "Matéria: Medicina de Família e Comunidade / Geriatria e Saúde Coletiva",
+      "Tema: Saúde do Adulto e do Idoso na Atenção Primária à Saúde"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "envelhecimento-populacional-e-transicao-demografica-epidemiologica",
+      "1. Envelhecimento Populacional e Transição Demográfica e Epidemiológica no Brasil"
+    ],
+    [
+      "politica-nacional-de-saude-da-pessoa-idosa-pnspi",
+      "2. Política Nacional de Saúde da Pessoa Idosa (PNSPI): Paradigmas da Capacidade Funcional e Diretrizes Operacionais"
+    ],
+    [
+      "avaliacao-multidimensional-do-idoso-na-aps",
+      "3. Avaliação Multidimensional do Idoso na APS: Caderneta de Saúde, Escala de Katz e Escala de Lawton"
+    ],
+    [
+      "os-gigantes-da-geriatria-os-is-da-geriatria",
+      "4. Os Gigantes da Geriatria (Os Grandes 'Is' da Geriatria)"
+    ],
+    [
+      "iatrogenia-polifarmacia-criterios-beers-stopp-start",
+      "5. Iatrogenia e Polifarmácia no Idoso: Farmacocinética do Envelhecimento, Critérios de Beers e Protocolo STOPP/START"
+    ],
+    [
+      "insuficiencia-cognitiva-demencias-sarcopenia-fragilidade-rastreamentos",
+      "6. Insuficiência Cognitiva, Sarcopenia, Fragilidade e Rastreamentos Baseados em Evidências no Adulto e Idoso"
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-geriatria",
+      "7. Casos Clínicos Estruturados e Questões Comentadas de Concursos Médicos"
+    ]
+  ],
+  "q": [
+    [
+      "envelhecimento-populacional-e-transicao-demografica-epidemiologica",
+      0,
+      [
+        [
+          "2",
+          "1. Envelhecimento Populacional e Transição Demográfica e Epidemiológica no Brasil"
+        ],
+        [
+          "3",
+          "1.1 A Rápida Transição Demográfica Brasileira: Do País Jovem à Nação Envelhecida"
+        ],
+        [
+          "p",
+          "O Brasil experimenta um dos processos de envelhecimento populacional mais acelerados e dramáticos da história demográfica mundial contemporânea. Enquanto as nações europeias e a América do Norte levaram mais de um século para transitar de uma estrutura etária jovem para uma sociedade predominantemente idosa — permitindo que o desenvolvimento econômico, a infraestrutura urbana e os sistemas de seguridade social amadurecessem paralelamente —, o Brasil realizou essa mesma transição em menos de quatro décadas. O país envelheceu antes de enriquecer, defrontando-se com o desafio de prover atenção geriátrica de alta complexidade em um contexto de desigualdade social crônica e subfinanciamento do Sistema Único de Saúde (SUS)."
+        ],
+        [
+          "p",
+          "A dinâmica demográfica brasileira é impulsionada por dois motores bioestatísticos complementares:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Queda Vertiginosa da Taxa de Fecundidade Total (TFT):</strong> Na década de 1960, a taxa de fecundidade no Brasil era de aproximadamente 6,3 filhos por mulher em idade fértil. A urbanização acelerada, a inserção massiva da mulher no mercado de trabalho formal, o acesso ampliado à contracepção moderna e as transformações socioculturais provocaram um declínio abrupto da fecundidade, que atingiu cerca de 1,55 filho por mulher no Censo Demográfico do IBGE de 2022 — patamar substancialmente inferior à taxa de reposição populacional mínima (2,1 filhos por mulher). Como resultado, a base da pirâmide etária estreitou-se rapidamente.",
+            "<strong>Aumento Expressivo da Esperança de Vida ao Nascer:</strong> Os avanços sanitários, o saneamento básico, a expansão da Atenção Primária à Saúde com a Estratégia Saúde da Família, a vacinação em massa e os progressos terapêuticos cardiovasculares elevaram a expectativa de vida média do brasileiro de 45 anos na década de 1940 para mais de 76 a 77 anos na atualidade."
+          ]
+        ],
+        [
+          "4",
+          "Conceitos Demográficos e Indicadores Cardinais (Exigência em Concursos)"
+        ],
+        [
+          "u",
+          [
+            "<strong>Definição Legal e Operacional de Pessoa Idosa:</strong> No Brasil, pelo Estatuto da Pessoa Idosa (Lei nº 10.741/2003) e pela Organização Mundial da Saúde (OMS) para países em desenvolvimento, considera-se pessoa idosa o indivíduo com <strong>idade igual ou superior a 60 anos</strong> (em países desenvolvidos, a linha de corte tradicional é de 65 anos).",
+            "<strong>Prioridade Especial / Superidosos:</strong> A Lei nº 13.466/2017 introduziu a chamada <em>prioridade especial</em> para pessoas idosas com <strong>mais de 80 anos de idade</strong>, garantindo preferência no atendimento em serviços de saúde e órgãos públicos em relação aos demais idosos (exceto em casos de emergência médica triados por protocolo de Manchester).",
+            "<strong>Índice de Envelhecimento (IE):</strong> Relação matemática entre o número de pessoas idosas (&ge; 60 anos) e a população de jovens (&lt; 15 anos):\n      <br>$$\\text{IE} = \\frac{\\text{População } \\ge 60 \\text{ anos}}{\\text{População de 0 a 14 anos}} \\times 100$$\n      No Brasil, o índice de envelhecimento saltou de menos de 10 idosos por 100 jovens na década de 1970 para mais de 80 idosos por 100 jovens nos anos 2020, caminhando rapidamente para superar 100 idosos por 100 jovens até o final desta década.",
+            "<strong>Razão de Dependência Total (RDT):</strong> Mede o peso econômico potencial da população inativa sobre a população em idade ativa (PIA: 15 a 59 anos):\n      <br>$$\\text{RDT} = \\frac{\\text{População de 0-14 anos} + \\text{População } \\ge 60 \\text{ anos}}{\\text{População de 15 a 59 anos}} \\times 100$$\n      O esgotamento do chamado 'Bônus Demográfico' impõe sobrecarga sobre os sistemas previdenciários e sobre a Atenção Primária, que precisa se reestruturar para manejar a multimorbidade crônica."
+          ]
+        ],
+        [
+          "3",
+          "1.2 A Transição Epidemiológica: Da Tripla Carga de Doenças à Multimorbidade"
+        ],
+        [
+          "p",
+          "Diferentemente dos países ricos, que vivenciaram uma substituição sucessiva e ordenada das doenças infecciosas pelas doenças crônicas não transmissíveis (DCNT), o Brasil apresenta um modelo de <strong>transição epidemiológica sobreposta e polarizada</strong>, caracterizado pela <em>Tripla Carga de Doenças</em> que coexistem simultaneamente no território de saúde:"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Agenda Inconclusa de Doenças Infecciosas, Carenciais e de Saúde Materno-Infantil:</strong> Persistência de tuberculose, hanseníase, sífilis congênita, diarreia infecciosa, desnutrição e mortalidade materna evitável em bolsões de pobreza.",
+            "<strong>2. Epidemia Consolidada de Doenças Crônicas Não Transmissíveis (DCNT):</strong> Predomínio absoluto de morbimortalidade por hipertensão arterial sistêmica, insuficiência cardíaca, doença cerebrovascular (AVC), diabetes mellitus tipo 2, doença renal crônica, doença pulmonar obstrutiva crônica (DPOC), neoplasias malignas e demências neurodegenerativas.",
+            "<strong>3. Carga Crescente de Causas Externas:</strong> Violência urbana, homicídios, acidentes de trânsito e, na população idosa, acidentes domésticos e quedas graves com fraturas osteoporóticas."
+          ]
+        ],
+        [
+          "3",
+          "1.3 Senescência versus Senilidade: A Fronteira Clínica Fundamental"
+        ],
+        [
+          "p",
+          "Um dos erros conceituais mais perniciosos na prática clínica médica é o <em>idadismo</em> (ou etarismo) — a tendência reducionista e iatrogênica de atribuir qualquer declínio cognitivo, incontinência urinária ou marcha instável à 'idade avançada':"
+        ],
+        [
+          "t",
+          [
+            "Dimensão Biológica",
+            "Senescência (Envelhecimento Fisiológico Normal)",
+            "Senilidade (Envelhecimento Patológico)"
+          ],
+          [
+            [
+              "<strong>Conceito Central</strong>",
+              "Conjunto de alterações anatômicas, celulares e fisiológicas previsíveis decorrentes da passagem do tempo, sem prejuízo da autonomia e independência básica.",
+              "Instalação de doenças crônicas, síndromes geriátricas ou agravos que determinam incapacidade funcional, dependência de terceiros e sofrimento."
+            ],
+            [
+              "<strong>Sistema Cardiovascular</strong>",
+              "Enrijecimento das artérias elásticas centrais por perda de elastina e deposição de colágeno; elevação fisiológica discreta da PAS com PAD estável/reduzida (aumento da pressão de pulso); hipertrofia miocárdica concêntrica discreta do VE; declínio da resposta beta-adrenérgica ao esforço físico.",
+              "Hipertensão arterial estágio 3 não controlada; insuficiência cardíaca com fração de ejeção preservada ou reduzida sintomática; estenose aórtica calcificada grave sintomática; fibrilação atrial."
+            ],
+            [
+              "<strong>Sistema Nervoso Central e Cognição</strong>",
+              "Lentificação sutil da velocidade de processamento de informações e do tempo de reação psicomotor; dificuldade discreta para evocar nomes próprios não habituais com preservação da memória semântica e consolidação; capacidade preservada de aprender novas habilidades e tomar decisões autônomas.",
+              "Comprometimento Cognitivo Leve (CCL) amnésico ou multidomínio; Transtorno Neurocognitivo Maior (Demência de Alzheimer, Demência Vascular, Demência por Corpos de Lewy, Degeneração Lobar Frontotemporal); afasia, apraxia, agnosia e desorientação têmporo-espacial."
+            ],
+            [
+              "<strong>Trato Geniturinário</strong>",
+              "Declínio progressivo da Taxa de Filtração Glomerular (queda média de 0,8 a 1,0 mL/min/1,73m² por ano após os 40 anos); redução da capacidade de concentração urinária e da resposta à sede; atrofia de mucosa urogenital por hipoestrogenismo; hiperplasia prostática histológica benigna.",
+              "Incontinência urinária franca (de urgência, esforço ou transbordamento) que limita atividades sociais; insuficiência renal dialítica; retenção urinária aguda com hidronefrose obstrutiva."
+            ],
+            [
+              "<strong>Sistema Locomotor</strong>",
+              "Redução gradual da massa muscular esquelética (cerca de 1% ao ano após os 50 anos) e da velocidade de caminhada, compensável por treino resistido e boa nutrição.",
+              "<strong>Sarcopenia grave</strong> (perda drástica de massa, força e desempenho muscular); <strong>Osteoporose severa</strong> com fraturas de baixo impacto (fêmur proximal, rádio distal, vértebras colapsadas); quedas de repetição."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "politica-nacional-de-saude-da-pessoa-idosa-pnspi",
+      0,
+      [
+        [
+          "2",
+          "2. Política Nacional de Saúde da Pessoa Idosa (PNSPI): Paradigmas da Capacidade Funcional e Diretrizes Operacionais"
+        ],
+        [
+          "3",
+          "2.1 A Reorientação do Conceito de Saúde no Idoso: A Centralidade da Capacidade Funcional"
+        ],
+        [
+          "p",
+          "Instituída pela <strong>Portaria GM/MS nº 2.528/2006</strong>, a <strong>Política Nacional de Saúde da Pessoa Idosa (PNSPI)</strong> operou uma revolução epistemológica na gerontologia pública brasileira ao redefinir o próprio conceito de 'saúde' na velhice. No idoso, a saúde não é medida pela presença ou ausência de doenças crônicas, mas sim pelo grau de <strong>Capacidade Funcional</strong> — isto é, a habilidade de gerir a própria vida e tomar decisões de forma independente e autônoma, participando ativamente da vida comunitária."
+        ],
+        [
+          "p",
+          "Um indivíduo de 75 anos portador de hipertensão arterial, diabetes mellitus controlado, artrose de joelhos e hipotireoidismo que vive sozinho, cozinha suas refeições, administra sua medicação, gere seu dinheiro e passeia com amigos é considerado um <strong>idoso hígido e funcionalmente independente</strong>. Em contrapartida, um indivíduo de 68 anos sem diagnósticos clínicos prévios que sofre um AVC isquêmico extenso e evolui com hemiplegia, disfagia e imobilismo no leito tornou-se um <strong>idoso frágil e dependente</strong>. O foco da prática médica na APS migra da cura para a <strong>preservação e recuperação da capacidade funcional</strong>."
+        ],
+        [
+          "4",
+          "Autonomia versus Independência: A Dualidade Essencial da Funcionalidade"
+        ],
+        [
+          "u",
+          [
+            "<strong>Autonomia (Dimensão Decisória / Cognitiva e Volitiva):</strong> Capacidade individual de autogoverno, liberdade de escolha, julgamento e autodeterminação. Envolve a tomada de decisões sobre sua própria vida, seu corpo, suas finanças e seus tratamentos de saúde. <em>Condição que compromete primariamente a autonomia:</em> Síndromes demenciais avançadas, delirium, transtornos psiquiátricos com psicose.",
+            "<strong>Independência (Dimensão Executora / Motora e Física):</strong> Capacidade física e motora de realizar as atividades cotidianas sem o auxílio mecânico ou humano de terceiros. Envolve caminhar, alimentar-se, vestir-se, transferir-se. <em>Condição que compromete a independência com preservação da autonomia:</em> Sequela motora isolada de AVC (hemiplegia com cognição intacta), tetraplegia por trauma, osteoartrose grave avançada, cegueira bilateral. O paciente não consegue executar a ação fisicamente, mas mantém perfeita capacidade de decidir e delegar."
+          ]
+        ],
+        [
+          "3",
+          "2.2 Diretrizes Operacionais Estruturantes da PNSPI"
+        ],
+        [
+          "p",
+          "A PNSPI elenca diretrizes estratégicas que orientam as ações das equipes da Estratégia Saúde da Família e dos gestores municipais do SUS:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Promoção do Envelhecimento Ativo e Saudável:</strong> Estímulo à manutenção da atividade física contínua, alimentação balanceada, engajamento social, convivência comunitária intergeracional e aprendizagem ao longo de toda a vida.",
+            "<strong>Atenção Integral e Integrada à Saúde da Pessoa Idosa:</strong> Garantia de linhas de cuidado continuadas que articulam a Atenção Primária, os Centros de Convivência, os Ambulatórios Médicos de Especialidades (AME), as Unidades de Pronto Atendimento (UPA), os hospitais gerais e geriátricos e a Atenção Domiciliar (Programa Melhor em Casa).",
+            "<strong>Estímulo às Ações Intersetoriais:</strong> Parcerias estreitas entre o setor saúde, a assistência social (CRAS, CREAS e Centros-Dia do Idoso), transporte público acessível, previdência social e judiciário para garantia de direitos de cidadania.",
+            "<strong>Provimento de Recursos Capazes de Assegurar Qualidade da Atenção:</strong> Capacitação permanente das equipes de saúde da família em geriatria e gerontologia básica, erradicando práticas etaristas e iatrogênicas.",
+            "<strong>Apoio ao Desenvolvimento de Cuidados Domiciliares:</strong> Reconhecimento formal da família como parceira do cuidado, com capacitação, orientação técnica e suporte psicossocial aos cuidadores familiares, prevenindo a exaustão emocional (<em>Síndrome de Burnout do Cuidador</em>)."
+          ]
+        ],
+        [
+          "3",
+          "2.3 Os Três Níveis de Classificação da População Idosa na APS"
+        ],
+        [
+          "p",
+          "Para fins de estratificação populacional, planejamento da assistência e alocação equitativa de visitas domiciliares na Estratégia Saúde da Família, a PNSPI e os cadernos de atenção básica dividem as pessoas idosas em três perfis operacionais:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Idoso Hígido / Robusto:</strong> Indivíduo plenamente autônomo e independente para todas as atividades básicas e instrumentais da vida diária, com boa reserva fisiológica e capacidade de adaptação a estressores agudos. As ações da APS concentram-se na promoção da saúde, imunização, estilo de vida ativo e prevenção primária e secundária.",
+            "<strong>Idoso em Risco de Fragilização / Pré-Frágil:</strong> Indivíduo com declínio incipiente de velocidade de marcha, perda de peso não intencional leve, relato de fadiga, polifarmácia ou quedas esporádicas. Apresenta vulnerabilidade aumentada a eventos adversos (hospitalizações, declínio funcional agudo). É o grupo de maior prioridade para intervenção preventiva multiprofissional da APS (eMulti/NASF), visando reverter o processo de fragilização antes da perda irreversível de autonomia.",
+            "<strong>Idoso Frágil:</strong> Indivíduo com comprometimento estabelecido da autonomia e/ou dependência funcional para atividades de vida diária; portador de síndromes geriátricas consolidadas, imobilismo no leito, demência em estágio moderado a grave ou desnutrição grave. Demanda plano de cuidados domiciliares contínuos, suporte intensivo a cuidadores e coordenação do cuidado intersetorial."
+          ]
+        ]
+      ]
+    ],
+    [
+      "avaliacao-multidimensional-do-idoso-na-aps",
+      0,
+      [
+        [
+          "2",
+          "3. Avaliação Multidimensional do Idoso na APS: Caderneta de Saúde, Escala de Katz e Escala de Lawton"
+        ],
+        [
+          "3",
+          "3.1 A Avaliação Geriátrica Ampla (AGA) Adaptada à Atenção Primária"
+        ],
+        [
+          "p",
+          "O modelo clínico biomédico tradicional — focado na queixa pontual e no exame de órgãos isolados — falha miseravelmente na abordagem do idoso. Um sintoma como confusão mental aguda (delirium) pode decorrer de uma infecção do trato urinário assintomática, impactação fecal (fecaloma), retenção urinária aguda ou introdução de um anticolinérgico. Para responder a essa complexidade, a geriatria desenvolveu a <strong>Avaliação Geriátrica Ampla (AGA)</strong>, um processo diagnóstico interdisciplinar e multidimensional desenhado para determinar a fragilidade clínica, as capacidades funcionais, as condições psicossociais e a necessidade de suporte a longo prazo."
+        ],
+        [
+          "p",
+          "Na rotina da APS, a equipe utiliza instrumentos simplificados e de aplicação rápida incorporados à <strong>Caderneta de Saúde da Pessoa Idosa</strong>, desenvolvida pelo Ministério da Saúde como instrumento essencial de vigilância à saúde, registro longitudinal de comorbidades, medicamentos em uso, esquema vacinal e rastreio de fragilidade."
+        ],
+        [
+          "4",
+          "A Caderneta de Saúde da Pessoa Idosa (Ministério da Saúde): Estrutura e Manejo na ESF"
+        ],
+        [
+          "p",
+          "A Caderneta de Saúde da Pessoa Idosa é distribuída gratuitamente no SUS e deve permanecer em posse do próprio idoso ou de seu cuidador principal, funcionando como um passaporte clínico entre os diferentes níveis de atenção à saúde. Seus componentes fundamentais compreendem:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Identificação e Dados Pessoais:</strong> Nome social, raça/cor autorreferida, escolaridade, ocupação anterior, religião/crença e contatos de emergência familiares e comunitários;",
+            "<strong>Identificação do Cuidador:</strong> Registro se o cuidador é familiar ou formal contratado, presença de sobrecarga do cuidador avaliada pela Escala de Zarit (<em>Zarit Burden Interview</em>) e revezamento de cuidados;",
+            "<strong>Informações Socifamiliares:</strong> Condições de moradia (presença de saneamento, escadas, barreiras arquitetônicas domiciliares), arranjo domiciliar (mora sozinho, com cônjuge ou multigeracional) e rede de suporte social;",
+            "<strong>Avaliação Ambiental e de Riscos no Domicílio:</strong> Rastreio de tapetes soltos, pisos escorregadios, iluminação precária e ausência de apoios no banheiro;",
+            "<strong>Medicamentos em Uso (Revisão da 'Sacola de Medicamentos'):</strong> Registro minucioso de fármacos prescritos, posologias, automedicação, chás caseiros, suplementos e identificação de adesão;",
+            "<strong>Registro de Quedas Recentes:</strong> Mapeamento do número de quedas nos últimos 12 meses, circunstâncias da queda, local (dentro ou fora de casa) e fraturas associadas;",
+            "<strong>Controle de Parâmetros Clínicos Vitais:</strong> Curva de pressão arterial (deitado e em pé para rastreio de hipotensão ortostática), peso corporal, altura, Índice de Massa Corporal (IMC adaptado para o idoso: menor que 22 kg/m² = baixo peso/desnutrição; 22 a 27 kg/m² = eutrofia; maior que 27 kg/m² = sobrepeso) e perímetro da panturrilha (menor que 31 cm = forte preditor de perda de massa muscular e sarcopenia);",
+            "<strong>Calendário Vacinal da Pessoa Idosa (PNI/SUS):</strong> Registro de vacinação anual contra Influenza (gripe), vacina pneumocócica conjugada e polissacarídica (VPC13 e VPP23 para grupos de risco e institucionalizados), vacina dupla adulto contra tétano e difteria (dT a cada 10 anos) e vacinação contra Covid-19 e Hepatite B."
+          ]
+        ],
+        [
+          "3",
+          "3.2 Escala de Katz: Atividades Básicas de Vida Diária (ABVD)"
+        ],
+        [
+          "p",
+          "Proposta por Sidney Katz em 1963, a escala avalia a <strong>independência física elementar</strong> para o autocuidado diário e a sobrevivência básica biológica. A perda dessas funções segue uma ordem hierárquica ontogenética inversa (perde-se primeiro as funções mais complexas e, por último, a capacidade de se alimentar):"
+        ],
+        [
+          "t",
+          [
+            "Atividade Básica (Katz)",
+            "Critério de Independência (1 ponto)",
+            "Critério de Dependência (0 pontos)"
+          ],
+          [
+            [
+              "<strong>1. Banho</strong>",
+              "Lava-se completamente sozinho (mesmo que precise de auxílio para lavar apenas as costas ou uma extremidade lesionada).",
+              "Necessita de auxílio humano para lavar mais de uma parte do corpo ou para entrar/sair do chuveiro/banheira."
+            ],
+            [
+              "<strong>2. Vestir-se</strong>",
+              "Pega as roupas no armário e veste-se completamente sozinho (incluindo abotoar, zíperes e calçar meias/sapatos; exclui-se amarrar cadarços).",
+              "Necessita de ajuda para vestir roupas ou permanece parcialmente desvestido sem auxílio."
+            ],
+            [
+              "<strong>3. Uso do Vaso Sanitário</strong>",
+              "Vai ao banheiro sozinho, senta-se e levanta-se do vaso, ajeita as roupas e realiza a higiene íntima sem ajuda (pode usar barras de apoio).",
+              "Necessita de auxílio para sentar-se/levantar-se do vaso, para higiene íntima ou usa comadre/papagaio no leito."
+            ],
+            [
+              "<strong>4. Transferência</strong>",
+              "Deita-se e levanta-se da cama sozinho; senta-se e levanta-se de uma cadeira sem auxílio humano (pode usar bengala ou andador).",
+              "Necessita de ajuda humana direta para sair da cama ou da cadeira; ou é totalmente acamado."
+            ],
+            [
+              "<strong>5. Continência</strong>",
+              "Controla completamente as micções e evacuações voluntárias sem episódios frequentes de perda acidental.",
+              "Incontinência urinária ou fecal parcial ou total; uso contínuo de fraldas geriátricas ou cateterismo vesical de demora."
+            ],
+            [
+              "<strong>6. Alimentação</strong>",
+              "Leva a comida do prato à boca sozinho (a carne pode ser previamente cortada por terceiros).",
+              "Necessita de ajuda para levar o alimento à boca; ou é alimentado por sonda nasoenteral / gastrostomia (GTT)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Interpretação Clínica do Índice de Katz (0 a 6 pontos):</em> <strong>6 pontos:</strong> Independente para todas as funções básicas; <strong>3 a 5 pontos:</strong> Dependência funcional moderada (necessita de suporte parcial); <strong>0 a 2 pontos:</strong> Dependência funcional grave/severa (demanda cuidador em tempo integral para sobrevivência)."
+        ],
+        [
+          "3",
+          "3.3 Escala de Lawton e Brody: Atividades Instrumentais de Vida Diária (AIVD)"
+        ],
+        [
+          "p",
+          "As <strong>Atividades Instrumentais de Vida Diária (AIVD)</strong> avaliam a capacidade do indivíduo de manter uma <strong>vida comunitária autônoma e independente dentro e fora do domicílio</strong>. Como exigem funções cognitivas executivas refinadas, planejamento e coordenação motora, as AIVDs são as <strong>primeiras a se deteriorarem nos estágios iniciais das demências</strong> (como a Doença de Alzheimer incipiente) e na pré-fragilidade:"
+        ],
+        [
+          "t",
+          [
+            "Domínio Instrumental (Lawton)",
+            "Descrição da Habilidade Avaliada",
+            "Significado Clínico na Atenção Básica"
+          ],
+          [
+            [
+              "<strong>1. Capacidade de Usar o Telefone</strong>",
+              "Opera o aparelho telefônico, busca números na agenda ou disca números conhecidos de memória.",
+              "Avalia memória de trabalho e coordenação motora fina."
+            ],
+            [
+              "<strong>2. Fazer Compras</strong>",
+              "Planeja as compras do mês/semana, vai sozinho ao mercado ou farmácia e escolhe os produtos necessários.",
+              "Demanda memória, função executiva, locomoção e interação social."
+            ],
+            [
+              "<strong>3. Preparar as Próprias Refeições</strong>",
+              "Planeja, cozinha e serve refeições nutricionalmente balanceadas e seguras de forma independente.",
+              "Exige planejamento sequencial complexo, atenção concentrada e segurança doméstica (risco de fogo aceso)."
+            ],
+            [
+              "<strong>4. Cuidar dos Afazeres Domésticos</strong>",
+              "Mantém a casa limpa e organizada, lava louças e arruma a cama.",
+              "Avalia força muscular, equilíbrio dinâmico e iniciativa volitiva."
+            ],
+            [
+              "<strong>5. Lavar e Passar Roupas</strong>",
+              "Lava roupas próprias ou opera máquina de lavar roupas sem auxílio.",
+              "Indica preservação de força e mobilidade em tarefas domésticas."
+            ],
+            [
+              "<strong>6. Uso de Meios de Transporte</strong>",
+              "Anda de transporte público (ônibus, metrô), solicita táxi/aplicativo ou dirige veículo próprio sozinho.",
+              "Avalia orientação têmporo-espacial, capacidade de resolver problemas no trânsito e mobilidade comunitária."
+            ],
+            [
+              "<strong>7. Responsabilidade sobre a Própria Medicação</strong>",
+              "Toma os medicamentos corretos nas doses prescritas e nos horários adequados sem supervisão.",
+              "<strong>Marcador crítico de adesão e cognição:</strong> idoso que erra horários ou esquece comprimidos tem altíssimo risco de iatrogenia ou descompensação clínica."
+            ],
+            [
+              "<strong>8. Capacidade de Manejar Finanças</strong>",
+              "Gere seu próprio dinheiro, vai ao banco, recebe a aposentadoria, paga as contas de luz/água e controla extratos.",
+              "<strong>Primeiro domínio frequentemente afetado no início da Doença de Alzheimer:</strong> esquecimento de faturas, erros em trocos, vulnerabilidade a golpes financeiros."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Interpretação Prática:</em> No Brasil, utiliza-se comumente a pontuação de 9 a 27 pontos (1 = dependência total, 2 = ajuda parcial, 3 = independência completa em cada um dos 9 itens adaptados) ou a pontuação clássica de 0 a 8 pontos. O declínio em Lawton na presença de Katz normal é o sinal de alerta precoce para rastreio cognitivo formal (Mini-Exame do Estado Mental ou MoCA)."
+        ]
+      ]
+    ],
+    [
+      "os-gigantes-da-geriatria-os-is-da-geriatria",
+      0,
+      [
+        [
+          "2",
+          "4. Os Gigantes da Geriatria (Os Grandes 'Is' da Geriatria)"
+        ],
+        [
+          "3",
+          "4.1 O Conceito das Grandes Síndromes Geriátricas"
+        ],
+        [
+          "p",
+          "Formulado originalmente pelo geriatra britânico Bernard Isaacs, o conceito dos <strong>Gigantes da Geriatria (os 'Is' da Geriatria)</strong> sintetiza os principais eixos sindrômicos que acometem a pessoa idosa em processo de fragilização. Essas condições compartilham características fundamentais: são de etiologia multifatorial e cumulativa, envolvem múltiplos sistemas orgânicos em falência gradual de reserva, apresentam manifestações atípicas e respondem de forma extraordinária a intervenções preventivas e reabilitadoras estruturadas na Atenção Primária."
+        ],
+        [
+          "4",
+          "Os Cinco Gigantes Clássicos da Geriatria"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Instabilidade Postural e Quedas</strong>",
+            "<strong>2. Imobilidade e Síndrome do Imobilismo</strong>",
+            "<strong>3. Incontinência Urinária e Fecal</strong>",
+            "<strong>4. Iatrogenia e Polifarmácia</strong>",
+            "<strong>5. Insuficiência Cognitiva (Demências, Delirium e Depressão)</strong>"
+          ]
+        ],
+        [
+          "p",
+          "<em>Autores modernos acrescentam outros 'Is':</em> Insuficiência Familiar / Isolamento Social, Imunossenescência, Indigência Econômica e Inanição / Desnutrição."
+        ],
+        [
+          "3",
+          "4.2 Gigante 1: Instabilidade Postural e Quedas"
+        ],
+        [
+          "p",
+          "A queda no idoso nunca deve ser encarada como um 'acidente banal' do envelhecimento; trata-se de um <strong>marcador biológico de fragilidade, declínio sensorial e risco iminente de morte ou dependência grave</strong>. Cerca de 30% dos indivíduos com mais de 65 anos e 50% daqueles com mais de 80 anos caem pelo menos uma vez ao ano no domicílio ou na comunidade."
+        ],
+        [
+          "t",
+          [
+            "Fatores Intrínsecos (Relacionados ao Idoso)",
+            "Fatores Extrínsecos (Ambientais / Domiciliares)",
+            "Consequências Clínicas e Psicossociais"
+          ],
+          [
+            [
+              "- Sarcopenia e fraqueza muscular de membros inferiores;<br>\n        - Alterações proprioceptivas e vestibulares decorrentes da idade;<br>\n        - Redução da acuidade visual (catarata, glaucoma, degeneração macular);<br>\n        - Hipotensão ortostática (queda de &ge; 20 mmHg na PAS ou &ge; 10 mmHg na PAD aos 3 minutos de ortostase);<br>\n        - Uso de medicamentos sedativos (benzodiazepínicos, antipsicóticos, antidepressivos sedativos, anti-hipertensivos em excesso);<br>\n        - Doenças neurológicas (Doença de Parkinson, sequelas de AVC, neuropatia periférica diabética).",
+              "- Iluminação inadequada ou insuficiente nos cômodos e escadas;<br>\n        - Tapetes soltos e pisos escorregadios encerados;<br>\n        - Ausência de barras de apoio no box do chuveiro e ao lado do vaso sanitário;<br>\n        - Ausência de corrimão em escadas e degraus irregulares;<br>\n        - Calçados inadequados (chinelos soltos, saltos altos, solados sem aderência);<br>\n        - Obstáculos no trajeto da cama ao banheiro (fios elétricos soltos, móveis baixos, animais de estimação).",
+              "- <strong>Fraturas por fragilidade osteoporótica:</strong> fratura de colo de fêmur / quadril (mortalidade de até 20-30% em 1 ano e perda permanente de independência em 50% dos sobreviventes); fratura de punho (Colles) e colapso de corpos vertebrais;<br>\n        - Hematoma subdural crônico pós-traumático (que pode se manifestar semanas após a queda com confusão mental progressiva e cefaleia);<br>\n        - <strong>Síndrome Pós-Queda (Ptophobia):</strong> Medo patológico de cair novamente, levando o idoso ao autoisolamento, imobilidade forçada voluntária, atrofia muscular rápida e perda progressiva de autonomia."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Rastreio e Testes Físicos na APS:</em> O <strong>Timed Up and Go (TUG) Test</strong> é o instrumento de triagem padrão-ouro: o paciente levanta-se de uma cadeira com apoio de braços, caminha 3 metros em linha reta, gira 180 graus, retorna e senta-se novamente. <strong>Tempo normal: &lt; 10 a 12 segundos</strong>. Tempos &gt; 12 segundos indicam alteração de marcha e risco aumentado de quedas; tempos &gt; 20 segundos indicam alto risco de quedas e necessidade de intervenção fisioterapêutica imediata."
+        ],
+        [
+          "3",
+          "4.3 Gigante 2: Imobilidade e Síndrome do Imobilismo"
+        ],
+        [
+          "p",
+          "A imobilidade caracteriza-se pela restrição progressiva da capacidade de locomoção e transferência, culminando na perda de autonomia funcional. Quando o idoso atinge a condição de acamamento crônico (supressão completa de todos os movimentos voluntários articulares), instala-se a temida <strong>Síndrome do Imobilismo</strong>, com graves repercussões multissistêmicas:"
+        ],
+        [
+          "u",
+          [
+            "<em>Sistema Tegumentar:</em> Lesões por Pressão (antigas úlceras de decúbito), principalmente em proeminências ósseas (região sacral, trocanteres maiores do fêmur, calcâneos, maléolos e ísquios). Exige protocolo de mudança de decúbito a cada 2 horas e colchões pneumáticos de alívio de pressão.",
+            "<em>Sistema Respiratório:</em> Redução da complacência torácica, acúmulo de secreções brônquicas em bases pulmonares, atelectasias e Pneumonia por Broncoaspiração (principal causa infecciosa de óbito no idoso acamado).",
+            "<em>Sistema Cardiovascular:</em> Hipotensão postural grave ao sentar, descondicionamento miocárdico e estase venosa profunda com alto risco de Tromboembolismo Venoso (TVP e Embolia Pulmonar).",
+            "<em>Sistema Osteomuscular:</em> Perda rápida de massa muscular (perde-se até 1% a 2% de força muscular por dia de repouso absoluto no leito!), contraturas musculares em flexão, anquilose articular e osteopenia de desuso acelerada.",
+            "<em>Sistema Gastrointestinal e Urinário:</em> Constipação intestinal severa com formação de Fecaloma (impactação fecal endurecida no reto com diarreia paradoxal por transbordamento); retenção urinária com infecções recorrentes e litíase vesical."
+          ]
+        ],
+        [
+          "3",
+          "4.4 Gigante 3: Incontinência Urinária e Fecal"
+        ],
+        [
+          "p",
+          "A incontinência urinária afeta até 50% dos idosos institucionalizados e 15 a 30% dos idosos na comunidade. Suas consequências ultrapassam o desconforto higiênico: causa dermatite amoniacal extensa (assadura grave), infecções cutâneas secundárias por <em>Candida</em>, risco de quedas noturnas por noctúria e pressa para chegar ao banheiro, além de depressão e isolamento social extremo."
+        ],
+        [
+          "t",
+          [
+            "Tipo de Incontinência Urinária",
+            "Mecanismo Fisiopatológico Principal",
+            "Quadro Clínico Típico",
+            "Manejo de Primeira Linha na APS"
+          ],
+          [
+            [
+              "<strong>Incontinência de Esforço</strong>",
+              "Hipermobilidade do colo vesical por frouxidão da musculatura do assoalho pélvico e fáscia endopélvica (frequente em multíparas e pós-menopausa); ou deficiência esfincteriana intrínseca.",
+              "Perda involuntária de urina coincidente com manobras de aumento da pressão intra-abdominal (tossir, rir, espirrar, levantar peso, subir escadas) SEM sensação de urgência prévia.",
+              "Fisioterapia uroginecológica com <strong>Treinamento da Musculatura do Assoalho Pélvico (Exercícios de Kegel)</strong> com ou sem biofeedback; correção de obesidade e constipação; cirurgia de Sling se falha clínica."
+            ],
+            [
+              "<strong>Incontinência de Urgência (Bexiga Hiperativa)</strong>",
+              "Hiperatividade do músculo detrusor vesical (contrações involuntárias não inibidas durante a fase de enchimento) por perda do controle cortical inibitório ou irritação local.",
+              "Desejo súbito e inadiável de urinar (urgência miccional intensa), seguido de escape urinário antes de conseguir chegar ao vaso sanitário; polaciúria diurna e noctúria intensa.",
+              "Terapia comportamental (treinamento vesical com micção programada a intervalos fixos); redução de cafeína e álcool; farmacoterapia se indicada: <strong>Anticolinérgicos / Antimuscarínicos</strong> (oxibutinina, tolterodina — <em>atenção aos efeitos colaterais cognitivos e retenção urinária!</em>) ou agonista beta-3 adrenérgico (<strong>Mirabegrona</strong>, preferível no idoso frágil por não ter ação anticolinérgica central)."
+            ],
+            [
+              "<strong>Incontinência por Transbordamento (Bexiga Hipocontrátil ou Obstrução)</strong>",
+              "Sobredistensão crônica da bexiga com incapacidade de esvaziamento completo por obstrução mecânica (Hiperplasia Prostática Benigna volumosa, prolapso uterino grave) ou atonia detrusora (neuropatia autonômica diabética, lesão sacral).",
+              "Gotejamento contínuo de urina gota a gota em bexiga permanentemente cheia; jato urinário fraco e hesitante; globo vesical palpável no hipogástrio (bexigoma).",
+              "Alívio imediato da obstrução mecânica; desobstrução prostática com alfa-bloqueadores (tansulosina) e inibidores da 5-alfa-redutase (finasterida); cateterismo vesical de alívio intermitente ou de demora se bexiga neurogênica atônica. <em>Contraindicação absoluta: anticolinérgicos!</em>"
+            ],
+            [
+              "<strong>Incontinência Funcional</strong>",
+              "Trato geniturinário inferior estrutural e neurologicamente intacto; o idoso perde urina porque não consegue chegar ao banheiro a tempo devido a déficit físico grave ou demência.",
+              "Perda urinária em idosos com demência avançada que não reconhecem o vaso, ou com imobilidade grave (artrose severa, sequela motora de AVC) que não conseguem despir a roupa a tempo.",
+              "Adaptações ambientais (iluminação do trajeto, comadre/urinol ao lado da cama, roupas fáceis de despir com elástico); auxílio regular do cuidador em horários programados."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<em>Incontinência Urinária Transitória (Causas Reversíveis - Mnemônico DIAPPERS):</em> <strong>D</strong>elirium; <strong>I</strong>nfecção urinária sintomática; <strong>A</strong>trofia vaginal/uretral (vaginite atrófica tratada com estrogênio tópico); <strong>P</strong>sicológica (depressão grave); <strong>P</strong>harmaceuticals (diuréticos, sedativos, anticolinérgicos, bloqueadores de canal de cálcio); <strong>E</strong>xcessive urine output (hiperglicemia descompensada, insuficiência cardíaca congestiva); <strong>R</strong>estricted mobility (imobilismo transitório); <strong>S</strong>tool impaction (fecaloma)."
+        ]
+      ]
+    ],
+    [
+      "iatrogenia-polifarmacia-criterios-beers-stopp-start",
+      0,
+      [
+        [
+          "2",
+          "5. Iatrogenia e Polifarmácia no Idoso: Farmacocinética do Envelhecimento, Critérios de Beers e Protocolo STOPP/START"
+        ],
+        [
+          "3",
+          "5.1 Farmacocinética e Farmacodinâmica da Senescência: Por que o Idoso é Mais Vulnerável?"
+        ],
+        [
+          "p",
+          "O envelhecimento fisiológico produz alterações substanciais na absorção, distribuição, metabolismo e eliminação de fármacos, estreitando dramaticamente a janela terapêutica de diversas drogas e predispondo a reações adversas medicamentosas (RAM) graves e iatrogenias:"
+        ],
+        [
+          "t",
+          [
+            "Etapa Farmacocinética",
+            "Alterações Fisiológicas da Senescência",
+            "Repercussões Clínicas e Riscos de Toxicidade"
+          ],
+          [
+            [
+              "<strong>Absorção</strong>",
+              "Aumento do pH gástrico (hipocloridria/acloridria); redução da motilidade intestinal e do fluxo sanguíneo esplâncnico; diminuição da superfície mucosa absortiva.",
+              "Menor absorção de fármacos dependentes de meio ácido (ferro, cálcio carbonato, vitamina B12); a taxa de absorção de muitos fármacos é lentificada (atraso no pico plasmático Cmax), embora a quantidade total absorvida (AUC) permaneça habitualmente estável."
+            ],
+            [
+              "<strong>Distribuição</strong>",
+              "- <strong>Redução da água corporal total</strong> (de 60% para 45-50% do peso corpóreo);<br>\n        - <strong>Redução da massa muscular esquelética</strong>;<br>\n        - <strong>Aumento percentual da gordura corpórea</strong> (tecido adiposo relativo);<br>\n        - <strong>Redução da albumina sérica</strong> (especialmente em idosos desnutridos ou inflamados).",
+              "- Fármacos <strong>hidrossolúveis</strong> (ex.: digoxina, aminoglicosídeos, lítio, álcool) têm menor volume de distribuição, atingindo <strong>concentrações plasmáticas de pico mais elevadas</strong> com doses habituais (alto risco de intoxicação digitálica e nefrotoxicidade);<br>\n        - Fármacos <strong>lipossolúveis</strong> (ex.: diazepam e outros benzodiazepínicos de meia-vida longa) têm maior volume de distribuição e acúmulo no tecido adiposo, resultando em <strong>prolongamento dramático da meia-vida de eliminação</strong> (o diazepam pode ter meia-vida superior a 80-100 horas no idoso!), gerando sedação residual, quedas e confusão mental diurna;<br>\n        - Fármacos com <strong>alta taxa de ligação a proteínas plasmáticas</strong> (ex.: varfarina, fenitoína, sulfonilureias) apresentam maior fração livre biologicamente ativa devido à hipoalbuminemia, elevando risco de hemorragias graves e hipoglicemias fatais."
+            ],
+            [
+              "<strong>Metabolismo Hepático</strong>",
+              "Redução da massa hepática em até 20-30%; diminuição do fluxo sanguíneo portal e hepático (queda de 20% a 40%); declínio funcional do complexo enzimático do Citocromo P450 (Reações de Fase I: oxidação, redução e hidrólise).",
+              "- Redução expressiva do <strong>metabolismo de primeira passagem hepática</strong>, aumentando a biodisponibilidade sistêmica de drogas orais (ex.: betabloqueadores, nitratos);<br>\n        - <strong>Clearing hepático lentificado de drogas metabolizadas por Fase I</strong>;<br>\n        - As reações de <strong>Fase II (glicuronidação, sulfatação, acetilação) são relativamente mais preservadas</strong> no envelhecimento sadio, razão pela qual benzodiazepínicos metabolizados por Fase II direta (como <strong>Lorazepam e Oxazepam</strong>) são preferidos quando o uso for estritamente indispensável."
+            ],
+            [
+              "<strong>Eliminação Renal</strong>",
+              "Redução da massa e do número de néfrons funcionantes (esclerose glomerular progressiva); declínio do fluxo plasmático renal e da <strong>Taxa de Filtração Glomerular (TFG)</strong>.",
+              "- Redução da depuração renal de fármacos eliminados inalterados pelos rins ou seus metabólitos ativos (digoxina, metformina, enoxaparina, atenolol, gabapentina, pregabalina, ciprofloxacino, alopurinol);<br>\n        - <strong>A Pegadinha da Creatinina Sérica 'Normal':</strong> Como a produção de creatinina endógena depende diretamente da massa muscular e o idoso apresenta sarcopenia fisiológica, <strong>uma creatinina sérica de 1,0 mg/dL pode mascarar uma TFG estimada perigosamente baixa (&lt; 30-40 mL/min/1,73m²)</strong>. É mandatório calcular a estimativa da TFG por fórmulas validadas (Cockcroft-Gault ou CKD-EPI) antes de qualquer prescrição no idoso!"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.2 Polifarmácia e a Cascata Iatrogênica"
+        ],
+        [
+          "p",
+          "Define-se <strong>Polifarmácia</strong> habitualmente pelo uso simultâneo de <strong>5 ou mais medicamentos contínuos</strong> (polifarmácia maior: 10 ou mais medicamentos). A polifarmácia está diretamente correlacionada ao aumento exponencial de interações fármaco-fármaco, delirium, quedas, hospitalizações e óbito."
+        ],
+        [
+          "p",
+          "O fenômeno mais temido na clínica da Atenção Primária é a <strong>Cascata Iatrogênica (ou Cascata de Prescrição)</strong>: ocorre quando o efeito adverso de um medicamento inicial é incorretamente interpretado pelo médico como uma nova doença ou condição clínica emergente, levando à prescrição de um segundo medicamento para tratar esse efeito colateral, o qual gerará um terceiro efeito adverso e um terceiro medicamento, em uma espiral destrutiva:"
+        ],
+        [
+          "4",
+          "Exemplos Clássicos de Cascata Iatrogênica em Provas e na Prática Clínica"
+        ],
+        [
+          "u",
+          [
+            "<em>Exemplo 1:</em> Idoso hipertenso inicia <strong>Anlodipino</strong> (bloqueador de canal de cálcio) &rarr; desenvolve edema maleolar bilateral por vasodilatação pré-capilar &rarr; médico interpreta como descompensação de insuficiência cardíaca congestiva &rarr; prescreve <strong>Furosemida</strong> &rarr; o paciente desenvolve desidratação aguda, hipocalemia, hiperuricemia com crise de gota e hipotensão ortostática com queda e fratura de quadril. (Conduta correta: reduzir dose do anlodipino ou trocar classe anti-hipertensiva).",
+            "<em>Exemplo 2:</em> Idosa com tontura e vertigem recebe prescrição de <strong>Cinarizina ou Flunarizina</strong> &rarr; esses agentes possuem ação antidopaminérgica cerebral &rarr; desenvolve parkinsonismo secundário medicamentoso (tremor de repouso, rigidez em roda denteada e bradicinesia) &rarr; médico diagnostica erradamente Doença de Parkinson &rarr; prescreve <strong>Levodopa</strong> &rarr; a paciente desenvolve náuseas intensas, alucinações visuais e delírios persecutórios &rarr; prescreve-se haloperidol, agravando o parkinsonismo até a imobilidade completa no leito.",
+            "<em>Exemplo 3:</em> Idoso com dor articular toma <strong>anti-inflamatório não esteroidal (AINE - ex.: diclofenaco)</strong> &rarr; inibe a síntese de prostaglandinas vasodilatadoras renais (PGE2/PGI2) &rarr; elevação aguda da pressão arterial sistêmica e retenção hidrossalina &rarr; médico dobra a dose dos anti-hipertensivos &rarr; AINE provoca hemorragia digestiva alta e lesão renal aguda sobre crônica."
+          ]
+        ],
+        [
+          "3",
+          "5.3 Critérios de Beers (American Geriatrics Society - AGS 2023)"
+        ],
+        [
+          "p",
+          "Os <strong>Critérios de Beers</strong> da AGS constituem a lista internacional mais influente de <em>Medicamentos Potencialmente Inapropriados para Idosos (MPI)</em>, cujos riscos de toxicidade superam seus benefícios clínicos na população acima de 65 anos:"
+        ],
+        [
+          "t",
+          [
+            "Classe Farmacológica Inapropriada",
+            "Exemplos de Fármacos",
+            "Riscos Clínicos no Idoso e Razão da Inadequação"
+          ],
+          [
+            [
+              "<strong>Fármacos com Alta Carga Anticolinérgica</strong>",
+              "Amitriptilina, nortriptilina, clorpromazina, hidroxizina, prometazina, dexclorfeniramina, orfenadrina, escopolamina, ciclobenzaprina.",
+              "<strong>Bloqueio central e periférico da acetilcolina:</strong> precipitação de Delirium agudo, sedação excessiva, boca seca intensa, constipação intestinal com fecaloma, retenção urinária aguda em homens com HPB e descompensação de glaucoma de ângulo fechado."
+            ],
+            [
+              "<strong>Benzodiazepínicos e Sedativos 'Z'</strong>",
+              "Diazepam, clonazepam, alprazolam, lorazepam, zolpidem, zopiclona.",
+              "Piora cognitiva severa, amnésia anterógrada, aumento dramático do risco de quedas, fraturas de colo de fêmur e acidentes automobilísticos; tolerância, dependência física profunda e efeito paradoxal com desinibição e agitação noturna."
+            ],
+            [
+              "<strong>Anti-inflamatórios Não Esteroidais Orais (AINEs)</strong>",
+              "Diclofenaco, ibuprofeno, cetoprofeno, naproxeno, meloxicam, piroxicam, celecoxibe.",
+              "Alto risco de hemorragia digestiva e úlcera péptica (especialmente sem gastroproteção); nefrotoxicidade com nefrite intersticial aguda e Lesão Renal Aguda; retenção hídrica com descompensação grave de Insuficiência Cardíaca Congestiva e perda do controle da HAS."
+            ],
+            [
+              "<strong>Sulfonilureias de Ação Longa</strong>",
+              "Glibenclamida, clorpropamida.",
+              "Risco gravíssimo de <strong>hipoglicemia severa e prolongada</strong> devido à meia-vida estendida e metabólitos de eliminação renal. Preferir gliclazida MR se uso de sulfonilureia for mandatório; ou inibidores de DPP-4 / SGLT2."
+            ],
+            [
+              "<strong>Antipsicóticos de Primeira e Segunda Geração para Sintomas Comportamentais de Demência</strong>",
+              "Haloperidol, risperidona, olanzapina, quetiapina.",
+              "Aumento da mortalidade por todas as causas e risco elevado de AVC em idosos com demência; efeitos extrapiramidais graves, hipotensão postural e quedas. Uso reservado apenas para agressividade refratária grave com risco à integridade física após falha de medidas ambientais."
+            ],
+            [
+              "<strong>Metoclopramida</strong>",
+              "Metoclopramida (Plasil).",
+              "Bloqueio dopaminérgico central: causa discinesia tardia frequentemente irreversível, parkinsonismo medicamentoso e distonias agudas. Evitar; usar ondansetrona ou bromoprida com cautela."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "5.4 Critérios STOPP / START: Ferramenta Prática de Desprescrição e Adição Racional"
+        ],
+        [
+          "p",
+          "Diferentemente de Beers, que é primariamente uma lista negativa de drogas a evitar, os critérios europeus <strong>STOPP / START</strong> (validados no Brasil e em língua portuguesa) dividem-se em duas abordagens complementares e clínicas:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Critérios STOPP (Screening Tool of Older Persons' Prescriptions):</strong> Identificam prescrições potencialmente inadequadas que devem ser <strong>SUSPENSAS ou REDUZIDAS</strong>. <em>Exemplos:</em>\n    <ul>\n      <li>Suspender Inibidores da Bomba de Prótons (IBPs - omeprazol, pantoprazol) em dose plena mantidos por mais de 8 semanas sem indicação clara comprovada (risco aumentado de fraturas osteoporóticas, hipomagnesemia, deficiência de B12 e infecção por <em>Clostridioides difficile</em>);",
+            "Suspender AAS em prevenção primária cardiovascular em idosos sem doença aterosclerótica estabelecida (o risco de hemorragia digestiva e intracraniana supera os benefícios isquêmicos);",
+            "Suspender betabloqueadores associados a verapamil ou diltiazem pelo risco extremo de bloqueio atrioventricular (BAV) total;",
+            "Suspender digoxina em doses &gt; 0,125 mg/dia ou com TFG &lt; 30 mL/min."
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Critérios START (Screening Tool to Alert doctors to Right Treatment):</strong> Identificam omissões terapêuticas baseadas em evidências que deveriam ser <strong>INICIADAS</strong> na pessoa idosa para proteção orgânica. <em>Exemplos:</em>"
+        ],
+        [
+          "u",
+          [
+            "Iniciar Estatina em idoso com histórico de doença cardiovascular aterosclerótica documentada (IAM, AVC, doença arterial periférica) com expectativa de vida razoável;",
+            "Iniciar Anticoagulação oral (anticoagulantes orais diretos - DOACs: apixabana, rivaroxabana, dabigatrana) em idosos com Fibrilação Atrial não valvar e escore CHA2DS2-VASc elevado (o risco de queda isolada NÃO contraindica anticoagulação; seriam necessárias cerca de 300 quedas ao ano para anular o benefício na redução de AVC embólico!);",
+            "Iniciar IECA ou BRA e espironolactona em idosos com Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFER);",
+            "Iniciar cálcio e vitamina D associados a bisfosfonatos (alendronato de sódio) em idosos com osteoporose documentada ou fratura prévia por fragilidade."
+          ]
+        ]
+      ]
+    ],
+    [
+      "insuficiencia-cognitiva-demencias-sarcopenia-fragilidade-rastreamentos",
+      0,
+      [
+        [
+          "2",
+          "6. Insuficiência Cognitiva, Sarcopenia, Fragilidade e Rastreamentos Baseados em Evidências no Adulto e Idoso"
+        ],
+        [
+          "3",
+          "6.1 Insuficiência Cognitiva: O Diagnóstico Diferencial dos Três 'Ds' (Demência, Delirium e Depressão)"
+        ],
+        [
+          "p",
+          "A perda cognitiva no idoso é um dos cenários clínicos mais angustiantes para a família e desafiadores para o médico da Atenção Primária. A investigação começa obrigatoriamente pela diferenciação estrita entre três condições neurossiquiátricas fundamentais:"
+        ],
+        [
+          "t",
+          [
+            "Critério Clínico",
+            "Delirium (Estado Confusional Agudo)",
+            "Demência (Transtorno Neurocognitivo Maior)",
+            "Depressão no Idoso (Pseudodemência)"
+          ],
+          [
+            [
+              "<strong>Início do Quadro</strong>",
+              "<strong>Agudo (horas a dias)</strong>, frequentemente identificável momento exato.",
+              "<strong>Insidioso e gradual (meses a anos)</strong>, familiares têm dificuldade de precisar o início exato.",
+              "Subagudo (semanas a meses), frequentemente associado a evento estressor ou luto recente."
+            ],
+            [
+              "<strong>Curso Temporal</strong>",
+              "<strong>Flutuante ao longo do dia</strong>; piora acentuada no final da tarde e noite (fenômeno do pôr do sol / <em>sundowning</em>).",
+              "Progressivo e contínuo, com declínio gradual das funções corticais superiores.",
+              "Relativamente estável ao longo das semanas, piora matinal clássica com apatia e anedonia."
+            ],
+            [
+              "<strong>Nível de Consciência e Atenção</strong>",
+              "<strong>Alterado / Turvado</strong>; desatenção marcante (incapaz de manter o foco ou seguir ordens simples); hiperativo, hipoativo ou misto.",
+              "<strong>Preservado até fases muito tardias</strong>; o paciente mantém-se alerta, embora cognitivamente comprometido.",
+              "Alerta e consciente; concentração diminuída por desinteresse ou ideação ruminativa negativa."
+            ],
+            [
+              "<strong>Postura no Exame Cognitivo</strong>",
+              "Incapaz de realizar o teste por desatenção ou alucinações vívidas (frequentemente visuais).",
+              "<strong>Tenta responder</strong>, erra as questões, minimiza as dificuldades (anosognosia) ou confabula para disfarçar falhas de memória.",
+              "<strong>Resposta do tipo 'Não sei' ('I don't know')</strong>, desiste precocemente dos testes sem tentar, chora facilmente e queixa-se intensamente dos próprios lapsos de memória."
+            ],
+            [
+              "<strong>Reversibilidade</strong>",
+              "<strong>Potencialmente reversível</strong> com o tratamento imediato da causa clínica subjacente (ITU, pneumonia, desidratação, drogas anticolinérgicas).",
+              "Geralmente irreversível nas causas neurodegenerativas (Alzheimer, Lewy, FTD), embora tratável sintomaticamente.",
+              "<strong>Plenamente reversível</strong> com psicoterapia e antidepressivos adequados (sertralina, escitalopram, mirtazapina)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "4",
+          "Manejo do Delirium no Idoso na APS"
+        ],
+        [
+          "u",
+          [
+            "O <strong>delirium é uma emergência médica</strong> decorrente de agressão orgânica aguda sobre um cérebro vulnerável com reserva diminuída. A mortalidade hospitalar de idosos com delirium não reconhecido atinge 20% a 30%.",
+            "<em>Investigação Etiológica Imediata:</em> Glicemia capilar, sinais vitais completos, oximetria de pulso, exame de urina (EAS e urocultura), hemograma, eletrólitos (sódio, potássio, cálcio), função renal e hepática, ausculta pulmonar (pneumonia silenciosa sem tosse), palpação abdominal (fecaloma impactado e bexigoma / retenção urinária) e revisão rigorosa de todos os medicamentos introduzidos recentemente.",
+            "<em>Tratamento Não Farmacológico (Medida de Maior Eficácia):</em> Ambiente calmo e bem iluminado durante o dia, presença contínua de familiar de referência com voz tranquila, relógio e calendário visíveis no quarto para reorientação ambiental periódica, manter óculos e próteses auditivas, hidratação oral precoce e mobilização fora do leito.",
+            "<em>Tratamento Farmacológico:</em> <strong>Restrito apenas para casos de agitação psicomotora grave que ameacem a segurança física</strong> do próprio idoso (arrancar acessos venosos, sondas, pular da cama) ou da equipe/família. Empregar <strong>Haloperidol em doses mínimas (0,5 mg a 1,0 mg VO ou IM)</strong> por período estritamente curto (1 a 3 dias). <em>Evitar benzodiazepínicos no delirium</em> (agravam a confusão mental e prolongam o quadro!), exceto se o delirium for comprovadamente causado por abstinência alcoólica ou de sedativos."
+          ]
+        ],
+        [
+          "3",
+          "6.2 As Principais Etiologias de Demência na Atenção Primária"
+        ],
+        [
+          "p",
+          "As síndromes demenciais atingem cerca de 5% a 8% dos idosos com 65 anos e até 30% a 40% daqueles com mais de 85 anos. O diagnóstico precoce e a distinção etiológica orientam o aconselhamento familiar e o prognóstico:"
+        ],
+        [
+          "t",
+          [
+            "Etiologia Demencial",
+            "Fisiopatologia e Biomarcadores",
+            "Apresentação Clínica e Marcos Diagnósticos",
+            "Manejo Terapêutico na APS"
+          ],
+          [
+            [
+              "<strong>Doença de Alzheimer (DA - 60% a 70% dos casos)</strong>",
+              "Deposição extracelular de placas beta-amiloides (A-beta-42) e formação intracelular de emaranhados neurofibrilares de proteína tau hiperfosforilada, gerando atrofia cortical temporoparietal e hipocampal bilateral.",
+              "Perda insidiosa e progressiva da <strong>memória episódica recente</strong> (lembra fatos de 40 anos atrás, mas não do café da manhã); anomia (dificuldade de nomear objetos); apraxia e agnosia; preservação inicial de habilidades sociais; perda gradual de AIVDs e ABVDs.",
+              "<strong>Inibidores da Acetilcolinesterase (IAChE):</strong> Donepezila (5 a 10 mg/dia), Rivastigmina (oral ou adesivo transdérmico 4,6 mg a 9,5 mg/dia) ou Galantamina (8 a 24 mg/dia) para fases leve a moderada; <strong>Memantina</strong> (antagonista NMDA 10 a 20 mg/dia) adicionada nas fases moderada a grave; reabilitação neuropsicológica e suporte ao cuidador."
+            ],
+            [
+              "<strong>Demência Vascular (DV - 15% a 20% dos casos)</strong>",
+              "Lesão isquêmica cerebral cumulativa multifocal (múltiplos infartos corticais, infartos lacunares subcorticais profundos ou leucoencefalopatia isquêmica difusa de substância branca / Doença de Binswanger).",
+              "<strong>Evolução em degraus (stepwise deterioration)</strong> ou flutuante após eventos cerebrovasculares; predomínio precoce de <strong>disfunção executiva</strong> (dificuldade de planejamento, julgamento e abstração), apatia, lentificação psicomotora e sinais neurológicos focais (hiper-reflexia, marcha espástica ou magnética).",
+              "Controle agressivo dos fatores de risco cardiovasculares (pressão arterial, diabetes, estatinas nas dislipidemias, cessação do tabagismo, antiagregação plaquetária com AAS ou anticoagulação se FA). Inibidores da colinesterase têm benefício modesto."
+            ],
+            [
+              "<strong>Demência por Corpos de Lewy (DCL - 10% a 15% dos casos)</strong>",
+              "Deposição patológica de inclusões proteicas citoplasmáticas de alfa-sinucleína (corpos de Lewy) em córtex cerebral e tronco encefálico.",
+              "<strong>Tríade Clínica Cardinal:</strong><br>\n        1. <strong>Alucinações visuais precoces e recorrentes</strong>, vívidas e bem formadas (pessoas ou animais detalhados);<br>\n        2. <strong>Flutuações cognitivas acentuadas</strong> na atenção e estado de alerta ao longo de horas ou dias;<br>\n        3. <strong>Parkinsonismo espontâneo</strong> (rigidez e bradicinesia bilateral simétrica, com tremor de repouso menos evidente).<br>\n        <em>Marcador precoce adicional:</em> Transtorno Comportamental do Sono REM (paciente debate-se, chuta e fala durante o sono encenando sonhos violentos anos antes do declínio cognitivo).",
+              "<strong>Atenção máxima à pegadinha de prova:</strong> <strong>EXTREMA SENSIBILIDADE A ANTIPSICÓTICOS TÍPICOS (Haloperidol é proscrito!)</strong>, podendo desencadear parkinsonismo fulminante irreversível, rigidez catatônica e Síndrome Neuroléptica Maligna. Tratamento de escolha: Inibidores da colinesterase (Rivastigmina tem excelente resposta) e Quetiapina em microdoses se psicose incontrolável."
+            ],
+            [
+              "<strong>Degeneração Lobar Frontotemporal (Demência Frontotemporal - DFT)</strong>",
+              "Atrofia circunscrita e assimétrica dos lobos frontais e temporais anteriores, com inclusões de proteína tau (Doença de Pick) ou TDP-43.",
+              "<strong>Início em faixa etária mais jovem (50 a 65 anos)</strong>; predomínio de <strong>alterações profundas de personalidade, desinibição social grosseira</strong> (comentários sexuais inapropriados, furto em lojas, desrespeito a regras), perda de empatia e simpatia, condutas compulsivas repetitivas, hiperoralidade e alterações na preferência alimentar (compulsão por doces e carboidratos). Memória e orientação espacial permanecem relativamente preservadas nas fases iniciais.",
+              "Manejo ambiental rigoroso; inibidores seletivos de recaptação de serotonina (trazodona, sertralina) para reduzir impulsividade e desinibição. <em>Inibidores da acetilcolinesterase são ineficazes e podem piorar a agitação comportamental na DFT!</em>"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "6.3 Sarcopenia e Síndrome de Fragilidade Física"
+        ],
+        [
+          "p",
+          "A <strong>Sarcopenia</strong> é uma doença muscular esquelética progressiva e generalizada associada a maior risco de quedas, fraturas, incapacidade física e mortalidade. O Consenso Europeu revisado (EWGSOP2) estabelece os critérios diagnósticos:"
+        ],
+        [
+          "o",
+          [
+            "<strong>1. Baixa Força Muscular (Critério Essencial para Sarcopenia Provável):</strong> Avaliada por <strong>dinamometria manual (Handgrip strength)</strong>: &lt; 27 kg para homens e &lt; 16 kg para mulheres; ou <strong>Teste de Levantar da Cadeira (Chair Stand Test)</strong>: tempo &gt; 15 segundos para levantar 5 vezes sem apoio dos braços.",
+            "<strong>2. Baixa Quantidade ou Qualidade Muscular (Confirmação Diagnóstica):</strong> Avaliada por Densitometria de Dupla Energia por Raio-X (DEXA corporal total) ou Bioimpedância elétrica.",
+            "<strong>3. Baixo Desempenho Físico (Sarcopenia Grave):</strong> Velocidade de marcha &le; 0,8 m/s em teste de caminhada de 4 metros; ou pontuação na bateria SPPB (<em>Short Physical Performance Battery</em>) &le; 8 pontos."
+          ]
+        ],
+        [
+          "p",
+          "<em>Pilar Terapêutico Insubstituível:</em> Não há terapia farmacológica milagrosa para sarcopenia. O tratamento padrão-ouro consiste em <strong>Treinamento Físico Resistido Progressivo (musculação com pesos)</strong> associado a suporte nutricional proteico adequado (ingestão proteica de <strong>1,2 a 1,5 g/kg de peso/dia</strong> de alto valor biológico com leucina, salvo contraindicação por doença renal avançada não dialítica)."
+        ],
+        [
+          "4",
+          "Critérios de Fragilidade de Linda Fried (Fenótipo de Fragilidade)"
+        ],
+        [
+          "p",
+          "A presença de <strong>3 ou mais dos 5 critérios a seguir define o Idoso Frágil</strong> (1 ou 2 critérios definem o idoso <em>Pré-Frágil</em>; nenhum critério define o idoso <em>Robusto/Hígido</em>):"
+        ],
+        [
+          "u",
+          [
+            "<strong>1. Perda de Peso Não Intencional:</strong> Redução &ge; 4,5 kg ou &ge; 5% do peso corpóreo no último ano.",
+            "<strong>2. Fadiga / Exaustão Autorreferida:</strong> Resposta positiva a perguntas sobre cansaço para qualquer esforço cotidiano na escala CES-D em mais de 3 dias na última semana.",
+            "<strong>3. Fraqueza Muscular:</strong> Força de preensão palmar no menor quintil da curva de distribuição populacional estratificada por sexo e IMC.",
+            "<strong>4. Baixa Velocidade de Marcha:</strong> Tempo para caminhar 4,6 metros no menor quintil da curva de distribuição.",
+            "<strong>5. Baixo Nível de Atividade Física:</strong> Gasto calórico semanal em atividades físicas no menor quintil (&lt; 383 kcal/semana para homens e &lt; 270 kcal/semana para mulheres)."
+          ]
+        ],
+        [
+          "3",
+          "6.4 Rastreamentos Baseados em Evidências no Adulto e Idoso (Prevenção Quaternária e Diretrizes USPSTF/MS)"
+        ],
+        [
+          "p",
+          "Na Atenção Primária, a prevenção quaternária — a arte de proteger o paciente de intervenções médicas excessivas, iatrogênicas e sem benefício comprovado — atinge seu auge no cuidado do adulto e da pessoa idosa:"
+        ],
+        [
+          "t",
+          [
+            "Condição Clínica",
+            "População-Alvo e Exame Recomendado",
+            "Periodicidade e Idade Limite de Interrupção"
+          ],
+          [
+            [
+              "<strong>Hipertensão Arterial Sistêmica (HAS)</strong>",
+              "Todos os adultos &ge; 18 anos; medida da Pressão Arterial com manguito adequado.",
+              "Anual para indivíduos com PA normal; semestral para pré-hipertensos; confirmação diagnóstica com MAPA ou MRPA."
+            ],
+            [
+              "<strong>Diabetes Mellitus Tipo 2 (DM2)</strong>",
+              "Adultos com sobrepeso/obesidade (IMC &ge; 25 kg/m²) associado a fatores de risco; ou universalmente a partir dos 35 ou 45 anos; Glicemia de jejum ou HbA1c.",
+              "A cada 3 anos se normal; anual se pré-diabetes (glicemia jejum 100-125 ou HbA1c 5,7-6,4%)."
+            ],
+            [
+              "<strong>Câncer Colorretal (CCR)</strong>",
+              "Homens e mulheres de risco habitual dos <strong>50 aos 75 anos de idade</strong> (USPSTF considera iniciar aos 45 anos); Sangue Oculto nas Fezes (método imunoquímico fecal - FIT anual) OU Colonoscopia.",
+              "FIT anual ou bienal; Colonoscopia a cada 10 anos se normal. <strong>Interromper aos 75 anos rotineiramente; e NUNCA rastrear após os 85 anos</strong> de idade devido a riscos de perfuração e complicações anestésicas superando qualquer benefício de sobrevida."
+            ],
+            [
+              "<strong>Aneurisma de Aorta Abdominal (AAA)</strong>",
+              "<strong>Homens de 65 a 75 anos que tenham histórico de tabagismo</strong> em qualquer momento da vida (&ge; 100 cigarros fumados na vida); Ultrassonografia de abdome total.",
+              "<strong>Exame único na vida (one-time screening)</strong>. Não recomendado para homens nunca fumantes ou mulheres de risco habitual (USPSTF Grau D)."
+            ],
+            [
+              "<strong>Osteoporose</strong>",
+              "Mulheres com <strong>&ge; 65 anos de idade</strong> (ou mulheres pós-menopausa &lt; 65 anos com fatores de risco clínicos significativos avaliados por FRAX); Densitometria Óssea (coluna lombar e fêmur proximal).",
+              "A cada 2 a 5 anos conforme valores de T-score basal. Em homens, indicado universalmente a partir dos 70 anos."
+            ],
+            [
+              "<strong>Câncer de Próstata (PSA e Toque Retal)</strong>",
+              "O Ministério da Saúde e o INCA <strong>NÃO recomendam o rastreamento populacional sistemático de rotina</strong> com PSA ou toque retal em homens assintomáticos, devido às altas taxas de biópsias desnecessárias, falsos-positivos, sobrediagnóstico, impotência sexual e incontinência urinária decorrentes do tratamento cirúrgico/radioterápico.",
+              "Se o paciente solicitar ativamente o exame após 50 anos (ou 45 se negro ou parente de 1º grau afetado), realizar tomada de decisão compartilhada informando riscos e benefícios reais."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-e-questoes-comentadas-geriatria",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Questões Comentadas de Concursos Médicos"
+        ],
+        [
+          "3",
+          "7.1 Casos Clínicos da Prática Geriátrica na Atenção Básica"
+        ],
+        [
+          "4",
+          "Caso Clínico 1: Polifarmácia, Cascata Iatrogênica e Queda Domiciliar"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Seu Manoel, 78 anos, viúvo, comparece à consulta na UBS acompanhado de sua filha. A filha relata que o pai sofreu uma queda no corredor de casa há 3 dias durante a madrugada ao se levantar para ir urinar. Não houve fratura aparente, mas o paciente apresenta escoriações no cotovelo e queixa-se de tontura ao se levantar da cama e fraqueza nas pernas."
+        ],
+        [
+          "p",
+          "<strong>Histórico Medicamentoso Atual (Revisão da 'Sacola de Remédios'):</strong>"
+        ],
+        [
+          "u",
+          [
+            "Hidroclorotiazida 25 mg/dia (para hipertensão há 10 anos);",
+            "Anlodipino 10 mg/dia (introduzido há 6 meses);",
+            "Furosemida 40 mg/dia pela manhã (prescrita há 4 meses após o paciente apresentar inchaço nos pés);",
+            "Amitriptilina 25 mg à noite (prescrita há 2 meses para insônia e dores na coluna);",
+            "Clonazepam 2 mg à noite (em uso contínuo por conta própria há 5 anos);",
+            "Glibenclamida 5 mg/dia (para diabetes mellitus tipo 2 diagnosticado há 8 anos)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Exame Físico Dirigido:</strong>"
+        ],
+        [
+          "u",
+          [
+            "PA deitado: 142 x 82 mmHg, FC 68 bpm;",
+            "PA em pé (após 3 minutos de ortostase): 112 x 66 mmHg, FC 74 bpm (queda de 30 mmHg na PAS e 16 mmHg na PAD, caracterizando <strong>Hipotensão Ortostática Grave</strong>);",
+            "Glicemia capilar de jejum: 58 mg/dL (hipoglicemia assintomática);",
+            "Boca seca com mucosa jugal ressecada, marcha lentificada e insegura (TUG test = 22 segundos)."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Clínico e Plano de Desprescrição Baseado em Evidências:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<em>Identificação da Cascata Iatrogênica:</em> O anlodipino provocou edema maleolar periférico por vasodilatação pré-capilar. Em vez de suspender ou reduzir o anlodipino, foi adicionada furosemida (segundo diurético associado à hidroclorotiazida), gerando desidratação crônica e espoliação volêmica.",
+            "<em>Identificação de Drogas Inapropriadas segundo os Critérios de Beers:</em>\n      <ul>\n        <li><strong>Amitriptilina:</strong> Antidepressivo tricíclico com altíssima carga anticolinérgica (boca seca, retenção urinária, risco de delirium) e bloqueio alfa-1 adrenérgico potente, responsável direto pelo agravamento da hipotensão ortostática;",
+            "<strong>Clonazepam:</strong> Benzodiazepínico de ação prolongada, responsável pela sedação residual noturna, fraqueza muscular, descoordenação motora e alto risco de novas quedas e fraturas;",
+            "<strong>Glibenclamida:</strong> Sulfonilureia de ação longa contraindicada no idoso pelo risco extremo de hipoglicemias graves e prolongadas (glicemia de 58 mg/dL encontrada no exame!).",
+            "<em>Conduta e Desprescrição Racional Imediata:</em>\n      <ul>\n        <li>Suspender imediatamente a Furosemida (edema era medicamentoso pelo anlodipino);",
+            "Reduzir a dose de anlodipino para 5 mg/dia ou substituir por inibidor da ECA (Enalapril);",
+            "Suspender gradualmente a Amitriptilina; para a insônia, orientar higiene do sono e atividade física diurna;",
+            "Substituir a Glibenclamida por um antidiabético seguro que não induz hipoglicemia (Metformina ou inibidor de DPP-4/SGLT2);",
+            "Planejar desmame lento e supervisionado do Clonazepam (redução de 25% da dose a cada 2 a 3 semanas) para evitar síndrome de abstinência benzodiazepínica aguda;",
+            "Orientações de prevenção de quedas no domicílio (retirada de tapetes, luz noturna no corredor)."
+          ]
+        ],
+        [
+          "4",
+          "Caso Clínico 2: Avaliação Funcional e Rastreio de Declínio Cognitivo Precoce"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Dona Sebastiana, 74 anos, professora aposentada, comparece à UBS trazida pela neta. A neta relata que a avó vem esquecendo compromissos familiares recentes, repetindo as mesmas perguntas várias vezes e, na última semana, esqueceu uma panela acesa no fogão com risco de incêndio. Além disso, a neta encontrou contas de luz vencidas com cobrança de juros na gaveta da paciente."
+        ],
+        [
+          "p",
+          "<strong>Avaliação Multidimensional na APS:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<strong>Escala de Katz (ABVD):</strong> 6/6 pontos (Totalmente independente para banho, vestir-se, higiene íntima, transferência, continência e alimentação).",
+            "<strong>Escala de Lawton (AIVD):</strong> Perda de pontuação em manejo financeiro (não consegue mais pagar contas), preparação de refeições (esquece o fogo aceso) e memória de medicação.",
+            "<strong>Mini-Exame do Estado Mental (MEEM):</strong> Escolaridade de 12 anos completos; pontuação obtida: 21 pontos (nota de corte para alta escolaridade no Brasil é de 26-27 pontos; perda acentuada em orientação temporal, cálculo seriado e evocação tardia de palavras).",
+            "<strong>Exame Clínico e Neurológico:</strong> Sem déficits motores focais, sem rigidez parkinsoniana, pares cranianos normais."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Raciocínio Diagnóstico:</strong>"
+        ],
+        [
+          "o",
+          [
+            "O padrão de <em>preservação estrita das ABVDs (Katz 6/6) com perda inicial e evidente das AIVDs complexas (Lawton diminuído)</em> associado ao declínio da memória episódica recente caracteriza o início clínico de um <strong>Transtorno Neurocognitivo Maior (provável Doença de Alzheimer em estágio inicial)</strong>.",
+            "<em>Conduta Mandatória na Atenção Primária:</em> Investigar <strong>causas secundárias e potencialmente reversíveis de declínio cognitivo</strong> antes de selar o diagnóstico neurodegenerativo. Solicitar exames laboratoriais essenciais: Hemograma, Glicemia de jejum, Função renal (ureia/creatinina), Eletrólitos (sódio, potássio, cálcio), <strong>Hormônio Tireoestimulante (TSH)</strong> (hipotireoidismo é causa clássica de demência reversível), <strong>Vitamina B12 sérica</strong> e ácido fólico, Sorologia para Sífilis (VDRL - neurossífilis) e HIV, além de Tomografia de Crânio sem contraste para descartar hidrocefalia de pressão normal, hematoma subdural crônico silencioso e lesões vasculares isquêmicas extensas."
+          ]
+        ],
+        [
+          "3",
+          "7.2 Questões de Concursos e Residência Médica Comentadas"
+        ],
+        [
+          "4",
+          "Questão 1 (Enare / Exame Nacional de Residência)"
+        ],
+        [
+          "p",
+          "Homem de 82 anos, previamente hígido e funcionalmente independente, é trazido à Unidade de Pronto Atendimento pela família devido a quadro súbito de desorientação temporal, agitação psicomotora e alucinações visuais com início há cerca de 36 horas. A família relata que o paciente acorda assustado durante a noite achando que há invasores em seu quarto, mas apresenta momentos de relativa lucidez durante o período da manhã. Acompanhante nega traumatismos cranianos recentes. Ao exame físico: desatento, não consegue soletrar a palavra 'MUNDO' de trás para frente, afebril, PA 130x80 mmHg, abdome discretamente doloroso à palpação profunda em hipogástrio, onde se palpa massa arredondada, fibroelástica e dolorosa estendendo-se até a cicatriz umbilical. Qual é o diagnóstico sindrômico prioritário e a conduta imediata mais apropriada?"
+        ],
+        [
+          "p",
+          "A) Doença de Alzheimer descompensada; iniciar donepezila em dose plena.<br>\n  B) Demência com Corpos de Lewy; iniciar risperidona em altas doses.<br>\n  C) Delirium hiperativo secundário à retenção urinária aguda (bexigoma); realizar sondagem vesical de alívio e investigar infecção urinária.<br>\n  D) Acidente Vascular Cerebral Isquêmico de artéria cerebral anterior; solicitar tomografia de crânio e trombolítico.<br>\n  E) Depressão maior com sintomas psicóticos; iniciar amitriptilina e fluoxetina."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> O paciente apresenta início <strong>agudo (36 horas)</strong> de confusão mental com <strong>curso flutuante</strong> (momentos de lucidez pela manhã e agitação noturna com alucinações) e marcante <strong>desatenção</strong> (falha no teste de soletrar inversamente). Essa tríade define inequivocamente <strong>Delirium</strong> pelo algoritmo CAM (<em>Confusion Assessment Method</em>). O exame abdominal revela um globo vesical palpável no hipogástrio (bexigoma), que é uma das causas físicas mais prevalentes e clássicas de precipitação de delirium no idoso por desconforto e dor neuropática autônoma. A conduta imediata consiste no alívio da dor mecânica mediante sondagem vesical (com descompressão lenta e fracionada da bexiga para prevenir hemorragia <em>ex-vacuo</em>) e coleta de urina para EAS e urocultura. As alternativas A e B estão incorretas porque demências têm curso insidioso de meses a anos. Antipsicóticos (risperidona) ou antidepressivos anticolinérgicos (amitriptilina) agravariam drasticamente o quadro."
+        ],
+        [
+          "4",
+          "Questão 2 (SUS-SP / Residência Médica em Clínica Médica e MFC)"
+        ],
+        [
+          "p",
+          "Uma mulher de 79 anos comparece para avaliação de rotina na UBS. Ela possui hipertensão arterial sistêmica e osteoartrose de joelhos. Relata que nos últimos dois meses tem sentido tonturas frequentes e quedas recorrentes em sua sala de estar. Sua lista atual de medicamentos inclui: Enalapril 20 mg 2x/dia, Hidroclorotiazida 25 mg/dia, Diclofenaco de sódio 50 mg 3x/dia por conta própria para dor articular e Amitriptilina 50 mg/dia prescrita para cefaleia tensional e insônia. De acordo com os Critérios de Beers (AGS 2023) e boas práticas de farmacoterapia no idoso, qual das seguintes condutas farmacológicas é a mais indicada para reduzir o risco de novas quedas e eventos adversos graves nesta paciente?"
+        ],
+        [
+          "p",
+          "A) Aumentar a dose de amitriptilina para 75 mg/dia visando melhorar o sono e prevenir ansiedade.<br>\n  B) Substituir o diclofenaco de sódio por outro AINE mais potente, como piroxicam ou indometacina.<br>\n  C) Suspender o diclofenaco de sódio e a amitriptilina, ajustando o controle da dor com medidas não farmacológicas e analgésicos simples, e reavaliar o esquema anti-hipertensivo.<br>\n  D) Adicionar diazepam 5 mg à noite para potencializar a sedação da amitriptilina.<br>\n  E) Iniciar flunarizina para tratar a tontura da paciente."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> A paciente está exposta a múltiplos <strong>Medicamentos Potencialmente Inapropriados (MPI)</strong> segundo os Critérios de Beers: 1) <strong>Amitriptilina:</strong> possui bloqueio colinérgico intenso e bloqueio alfa-1 adrenérgico, gerando sedação, confusão e hipotensão ortostática grave com quedas; 2) <strong>Diclofenaco (AINE contínuo):</strong> eleva risco de sangramento digestivo, deterioração renal e neutraliza o efeito do enalapril. A conduta mandatória de desprescrição consiste na suspensão do AINE e da amitriptilina, introdução de analgesia escalonada segura (paracetamol ou dipirona associados a reabilitação com fortalecimento muscular) e aferição da PA deitado e em pé para descartar hipotensão postural iatrogênica pelos anti-hipertensivos. As alternativas A, B, D e E acrescentam mais drogas inadequadas (diazepam causa mais quedas; flunarizina causa parkinsonismo; piroxicam tem meia-vida de 50 horas com altíssimo risco de úlcera sangrante)."
+        ],
+        [
+          "4",
+          "Questão 3 (USP / Secretaria Municipal de Saúde de São Paulo)"
+        ],
+        [
+          "p",
+          "De acordo com as diretrizes do Ministério da Saúde e as evidências epidemiológicas consolidadas sobre rastreamento de neoplasias e prevenção quaternária em adultos e idosos na Atenção Primária, assinale a alternativa que descreve uma conduta CORRETA:"
+        ],
+        [
+          "p",
+          "A) O rastreamento de câncer colorretal com pesquisa de sangue oculto nas fezes (FIT) deve ser mantido indefinidamente em todos os idosos acima de 85 anos com autonomia física.<br>\n  B) O rastreamento de aneurisma de aorta abdominal (AAA) com ultrassonografia de abdome é recomendado em exame único na vida para homens de 65 a 75 anos que tenham histórico de tabagismo.<br>\n  C) A realização de PSA e toque retal sistemático anual é preconizada pelo INCA para todos os homens a partir dos 45 anos como política de saúde pública.<br>\n  D) A mamografia de rastreamento deve ser solicitada com periodicidade anual obrigatória para mulheres até os 85 anos de idade.<br>\n  E) A radiografia simples de tórax anual é recomendada para rastreamento de câncer de pulmão em idosos tabagistas pesados."
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial Comentado: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<em>Comentário Didático:</em> O rastreamento de Aneurisma de Aorta Abdominal (AAA) com ultrassonografia abdominal possui recomendação Grau B da USPSTF e é amplamente respaldado na literatura de medicina preventiva para <strong>homens de 65 a 75 anos com histórico de tabagismo</strong> (pelo menos 100 cigarros fumados na vida), realizado em <strong>exame único na vida (one-time screening)</strong>. A alternativa A está errada porque o rastreamento de câncer colorretal não é recomendado após os 85 anos (Grau D - riscos superam benefícios). A alternativa C é falsa porque o INCA e o MS contraindicam o rastreamento populacional sistemático de câncer de próstata. A alternativa D é incorreta, pois o Ministério da Saúde recomenda mamografia bienal estritamente até os 69 anos de idade. A alternativa E é incorreta porque a radiografia de tórax não reduz mortalidade por câncer de pulmão (o método validado para tabagistas pesados selecionados é a Tomografia Computadorizada de Tórax de Baixa Dose)."
+        ]
+      ]
+    ]
+  ]
+}

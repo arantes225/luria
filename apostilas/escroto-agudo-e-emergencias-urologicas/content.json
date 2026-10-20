@@ -1,0 +1,646 @@
+{
+  "v": 2,
+  "s": "escroto-agudo-e-emergencias-urologicas",
+  "t": "Escroto Agudo e Emergências Urológicas",
+  "p": "Escroto Agudo e Emergências Urológicas — Livro-Texto LURIA",
+  "d": "Tratado de Alta Performance: Torção Testicular, Orquiepididimite, Fournier, Priapismo e Trauma Genital",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia Geral",
+  "h": [
+    "Apostila LURIA",
+    "Escroto Agudo e Emergências Urológicas",
+    "Tratado de Alta Performance: Torção Testicular, Orquiepididimite, Fournier, Priapismo e Trauma Genital",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia Geral",
+      "Tema: Escroto Agudo e Emergências Urológicas"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introducao-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "1-escroto-agudo-epidemiologia-anatomia-cirurgica-e-fisiopatologia",
+      "1. Escroto Agudo: Epidemiologia, Anatomia Cirúrgica e Fisiopatologia"
+    ],
+    [
+      "2-diagnostico-diferencial-do-escroto-agudo-torcao-vs-epididimite-vs-torcao-de-apendice",
+      "2. Diagnóstico Diferencial do Escroto Agudo: Torção vs Epididimite vs Torção de Apêndice"
+    ],
+    [
+      "3-apresentacao-clinica-e-exame-fisico-focado",
+      "3. Apresentação Clínica e Exame Físico Focado"
+    ],
+    [
+      "4-avaliacao-por-imagem-o-papel-central-do-ultrassom-doppler",
+      "4. Avaliação por Imagem: O Papel Central do Ultrassom Doppler"
+    ],
+    [
+      "5-conduta-e-tratamento-cirurgico-do-escroto-agudo",
+      "5. Conduta e Tratamento Cirúrgico do Escroto Agudo"
+    ],
+    [
+      "6-emergencias-urologicas-criticas-gangrena-de-fournier-priapismo-parafimose-e-fratura-peniana",
+      "6. Emergências Urológicas Críticas: Gangrena de Fournier, Priapismo, Parafimose e Fratura Peniana"
+    ],
+    [
+      "7-casos-clinicos-estruturados-e-resolvidos-de-escroto-agudo-e-emergencias-urologicas",
+      "7. Casos Clínicos Estruturados e Resolvidos de Escroto Agudo e Emergências Urológicas"
+    ],
+    [
+      "8-questoes-de-residencia-medica-comentadas-na-integra",
+      "8. Questões de Residência Médica Comentadas na Íntegra"
+    ],
+    [
+      "9-tabela-comparativa-resumida-e-perolas-de-alta-performance",
+      "9. Tabela Comparativa Resumida e Pérolas de Alta Performance"
+    ],
+    [
+      "10-trauma-testicular-e-rotura-da-tunica-albuginea",
+      "10. Trauma Testicular e Rotura da Túnica Albugínea"
+    ]
+  ],
+  "q": [
+    [
+      "introducao-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA · Apostila 193 — Escroto Agudo e Emergências Urológicas</h1>"
+        ],
+        [
+          "p",
+          "> <strong>Estado:</strong> PRODUÇÃO EDITORIAL LURIA · OURO. <strong>Lote 09 · 2026.</strong> Texto autoral e exaustivo para Residência Médica, Revalida e ENAMED. Diretrizes primárias: Sociedade Brasileira de Urologia (SBU), American Urological Association (AUA) e European Association of Urology (EAU)."
+        ]
+      ]
+    ],
+    [
+      "1-escroto-agudo-epidemiologia-anatomia-cirurgica-e-fisiopatologia",
+      0,
+      [
+        [
+          "2",
+          "1. Escroto Agudo: Epidemiologia, Anatomia Cirúrgica e Fisiopatologia"
+        ],
+        [
+          "p",
+          "O <strong>escroto agudo</strong> é definido clinicamente pelo surgimento abrupto de dor, edema e calor ou rubor na bolsa escrotal, acompanhado ou não de sintomas sistêmicos. Representa uma das situações de maior premência cirúrgica em toda a medicina de emergência, uma vez que a principal etiologia a ser obrigatoriamente afastada — a <strong>torção do cordão espermático (torção testicular)</strong> — impõe uma janela de tempo extremamente restrita (habitualmente até 6 horas do início da dor) para a intervenção cirúrgica desrotativa, sob pena de necrose isquêmica irreversível da gônada e atrofia testicular definitiva com perda da espermatogênese e prejuízo endócrino."
+        ],
+        [
+          "p",
+          "Epidemiologicamente, a distribuição das causas de dor escrotal aguda varia de modo substancial com a faixa etária do paciente:<br><li><strong>Crianças e Pré-púberes (7 a 12 anos):</strong> A etiologia isolada mais frequente é a <strong>torção de apêndice testicular (hidátide de Morgagni)</strong>, responsável por 40% a 60% dos casos nessa faixa etária, seguida pela torção testicular (20% a 30%) e pela orquiepididimite aguda (10% a 15%).</li><br><li><strong>Adolescentes e Adultos Jovens (12 a 25 anos):</strong> Ocorre o pico máximo absoluto de incidência da <strong>torção testicular intravaginal</strong>, correspondendo a até 50% dos atendimentos de escroto agudo nessa faixa, sendo a orquiepididimite a segunda causa mais frequente.</li><br><li><strong>Adultos > 35 anos e Idosos:</strong> A <strong>orquiepididimite bacteriana aguda</strong> domina amplamente o cenário clínico (> 70% a 80% dos casos), sendo a torção testicular muito rara nessa faixa, embora nunca inteiramente impossível.</li>"
+        ],
+        [
+          "3",
+          "Anatomia Cirúrgica do Cordão Espermático e das Túnicas Testiculares"
+        ],
+        [
+          "p",
+          "A compreensão espacial detalhada das camadas que envolvem a gônada masculina é indispensável para o cirurgião geral e para o raciocínio em provas de residência:<br>1. <strong>Pele Escrotal:</strong> Fina, pregueada e ricamente vascularizada por ramos das artérias pudendas externa e interna.<br>2. <strong>Músculo Dartos:</strong> Camada de fibras musculares lisas aderidas à tela subcutânea, responsável pela contratilidade e pregueamento da bolsa escrotal em resposta a estímulos térmicos (frio) e simpáticos, participando da termorregulação testicular (mantendo as gônadas a cerca de 2 a 3 °C abaixo da temperatura corporal central).<br>3. <strong>Fáscia Espermática Externa:</strong> Derivada diretamente da aponeurose do músculo oblíquo externo do abdome durante a descida embrionária do testículo.<br>4. <strong>Músculo Cremaster e Fáscia Cremastérica:</strong> Composto por fascículos de músculo estriado esquelético derivados da musculatura do oblíquo interno e transverso do abdome. É inervado pelo ramo genital do <strong>nervo genitofemoral (raízes L1-L2)</strong>. A estimulação mecânica da pele da face medial da coxa deflagra a contração do cremaster, tracionando o testículo ipsilateral em direção cranial (o <strong>reflexo cremastérico</strong>).<br>5. <strong>Fáscia Espermática Interna:</strong> Derivada da fáscia transversal do abdome.<br>6. <strong>Túnica Vaginal:</strong> Lâmina serosa de origem peritoneal que acompanha o testículo. Divide-se em:<br><li><em>Folheto Parietal:</em> Reveste a face interna da fáscia espermática interna;</li><br><li><em>Folheto Visceral:</em> Adere intimamente à túnica albugínea do testículo e ao epidídimo, com exceção da borda posterior onde penetram os vasos do cordão espermático e o epidídimo. Entre esses dois folhetos existe uma cavidade virtual com pequena quantidade de líquido seroso lubrificante (5 a 10 mL).</li><br>7. <strong>Túnica Albugínea:</strong> Cápsula conjuntiva espessa, branca, densa e inextensível que envolve diretamente o parênquima testicular. Em virtude de sua inextensibilidade, qualquer processo isquêmico, hemorrágico ou inflamatório intraparenquimatoso eleva vertiginosamente a pressão tecidual interna, resultando em isquemia por compressão capilar (síndrome compartimental intragonadal)."
+        ],
+        [
+          "3",
+          "Vascularização Testicular e o Suprimento Tríplice"
+        ],
+        [
+          "p",
+          "O suprimento arterial da gônada masculina depende de três fontes anastomóticas primárias:\n<li><strong>Artéria Testicular (Espermática):</strong> Ramo direto da aorta abdominal (origina-se logo abaixo das artérias renais, no nível de L2), sendo a principal responsável pelo fluxo sanguíneo parenquimatoso testicular.</li>\n<li><strong>Artéria do Ducto Deferente (Deferencial):</strong> Ramo da artéria vesical inferior (ou vesical superior), que irriga o ducto deferente e a cauda do epidídimo.</li>\n<li><strong>Artéria Cremastérica:</strong> Ramo da artéria epigástrica inferior.</li>\n<li><strong>Drenagem Venosa e Plexo Pampiniforme:</strong> O retorno venoso testicular é assegurado pelo plexo pampiniforme, uma intrincada rede venosa que envolve a artéria testicular funcionando como um eficiente trocador de calor contracorrente. As veias confluem formando a veia testicular: à direita, a veia testicular drena diretamente na veia cava inferior em ângulo oblíquo; à esquerda, drena perpendicularmente na veia renal esquerda em ângulo reto de 90° (fator anatômico que explica a prevalência muito maior de varicocele à esquerda).</li>"
+        ]
+      ]
+    ],
+    [
+      "2-diagnostico-diferencial-do-escroto-agudo-torcao-vs-epididimite-vs-torcao-de-apendice",
+      0,
+      [
+        [
+          "2",
+          "2. Diagnóstico Diferencial do Escroto Agudo: Torção vs Epididimite vs Torção de Apêndice"
+        ],
+        [
+          "3",
+          "2.1 Torção Testicular (Torção do Cordão Espermático)"
+        ],
+        [
+          "p",
+          "<li><strong>Fisiopatologia e Mecanismo Anatômico:</strong> A torção testicular ocorre quando o testículo gira sobre o próprio eixo do cordão espermático, habitualmente em sentido interno/medial (rotação para dentro de 180° até 720° ou mais). A forma mais comum (mais de 90% dos casos) é a <strong>torção intravaginal</strong>, intimamente associada a uma anomalia congênita bilateral do desenvolvimento denominada <strong>deformidade em \"badalo de sino\" (<em>bell-clapper deformity</em>)</strong>. Sob condições anatômicas normais, a túnica vaginal fixa-se na face posterolateral do testículo e epidídimo, ancorando firmemente a gônada à parede posterior do escroto. Na anomalia em badalo de sino, a reflexão da túnica vaginal ocorre anomalamente alta sobre o cordão espermático, envolvendo completamente o testículo, o epidídimo e a porção distal do cordão dentro da cavidade serosa. Isso deixa a gônada inteiramente suspensa e livre para girar como o badalo de um sino. Como essa alteração embriológica é invariavelmente bilateral em até 80% dos indivíduos, a exploração cirúrgica e <strong>orquidopexia profilática do testículo contralateral é etapa obrigatória inegociável</strong> durante a cirurgia!</li>\n<li>A <strong>torção extravaginal</strong> ocorre quase exclusivamente no período neonatal e intrauterino, quando a túnica vaginal e o cordão espermático giram em bloco frouxamente fora das fáscias escrotais antes da fusão e fixação anatômica completa da túnica à parede escrotal.</li>\n<li><strong>Eventos Vasculares da Isquemia:</strong></li>\n  1. A torção inicia-se com a oclusão do fluxo venoso do plexo pampiniforme (paredes finas e baixa pressão), enquanto o fluxo arterial de alta pressão continua temporariamente a entrar;\n  2. Ocorre ingurgitamento venoso maciço, edema intersticial explosivo, hemorragia parenquimatosa e elevação drástica da pressão intragonadal sob a túnica albugínea inextensível;\n  3. Cessação completa do influxo arterial, levando a trombose microvascular e anóxia tecidual.\n<li><strong>Tempo Isquêmico e Taxa de Salvação Gonadal:</strong></li>\n<li><em>< 6 horas:</em> taxa de viabilidade e salvamento testicular superior a <strong>90% a 95%</strong>;</li>\n<li><em>6 a 12 horas:</em> taxa de viabilidade cai para aproximadamente <strong>50% a 70%</strong>;</li>\n<li><em>12 a 24 horas:</em> viabilidade cai para menos de <strong>10% a 20%</strong>;</li>\n<li><em>> 24 horas:</em> necrose isquêmica transmural completa (salvamento praticamente 0%; necessidade de orquiectomia).</li>"
+        ],
+        [
+          "3",
+          "2.2 Orquiepididimite Aguda"
+        ],
+        [
+          "p",
+          "<li><strong>Etiologia Microbiológica por Faixa Etária:</strong></li>\n<li><em>Homens Jovens Sexualmente Ativos (< 35 anos):</em> Transmissão sexual de patógenos uretrais ascendentes: <strong>Chlamydia trachomatis</strong> (o agente mais comum) e <strong>Neisseria gonorrhoeae</strong>. Frequentemente associada a histórico prévio ou concomitante de uretrite (corrimento uretral mucopurulento ou disúria).</li>\n<li><em>Homens com mais de 35 anos, Idosos ou Crianças pós-instrumentação:</em> Ascensão retrógrada de uropatógenos bacterianos entéricos associados a uropatia obstrutiva (hiperplasia prostática benigna, estenose de uretra, cateterismo vesical): <strong>Escherichia coli</strong> (mais de 70% dos casos), <em>Klebsiella pneumoniae</em>, <em>Pseudomonas aeruginosa</em> e <em>Proteus mirabilis</em>.</li>\n<li><strong>Fisiopatologia:</strong> A infecção bacteriana inicia-se na uretra ou bexiga, ascende pelo ducto ejaculatório e canal deferente até atingir a cauda do epidídimo, progredindo para o corpo e cabeça do epidídimo (epididimite pura) e, subsequentemente, disseminando-se para o testículo adjacente (orquiepididimite) em virtude da contiguidade anatômica e rica anastomose linfovascular.</li>"
+        ],
+        [
+          "3",
+          "2.3 Torção de Apêndice Testicular (Hidátide de Morgagni)"
+        ],
+        [
+          "p",
+          "<li>Os apêndices testiculares e epididimários são remanescentes embriológicos vestigiais sem função fisiológica no adulto. O <strong>apêndice testicular (hidátide séssil de Morgagni)</strong> é um remanescente da extremidade cranial do ducto paramesonéfrico (de Müller), localizado no polo superior do testículo; o <strong>apêndice epididimário</strong> é remanescente do ducto mesonéfrico (de Wolff).</li>\n<li>Por serem estruturas pedunculadas de base delgada, sofrem torção e infarto hemorrágico com facilidade durante a infância, deflagrando dor aguda localizada no polo superior do testículo.</li>\n<li>Sinal Semiológico Patognomônico: <strong>Sinal do Ponto Azul (<em>Blue Dot Sign</em>)</strong> — visualização ou palpação de um nódulo endurecido azulado/arroxeado de 2 a 3 mm brilhando através da pele escrotal fina no polo superior do testículo. Esse achado está presente em cerca de 20% a 30% dos casos e, quando evidente associado a testículo móvel e indolor no polo inferior com Doppler normal, fecha o diagnóstico clínico e dispensa exploração cirúrgica.</li>"
+        ]
+      ]
+    ],
+    [
+      "3-apresentacao-clinica-e-exame-fisico-focado",
+      0,
+      [
+        [
+          "2",
+          "3. Apresentação Clínica e Exame Físico Focado"
+        ],
+        [
+          "p",
+          "A diferenciação semiológica refinada à beira do leito é a ferramenta mais valiosa para salvar um testículo e responder às questões dos principais editais de concurso:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Semiológico",
+            "Torção Testicular (Isquemia)",
+            "Orquiepididimite Aguda (Infecção)",
+            "Torção de Apêndice Testicular"
+          ],
+          [
+            [
+              "<strong>Faixa Etária Típica</strong>",
+              "12 a 25 anos (pico na puberdade)",
+              "< 35 anos (DST) ou > 35 anos (Enterobactérias)",
+              "7 a 12 anos (crianças escolares)"
+            ],
+            [
+              "<strong>Instalação da Dor</strong>",
+              "<strong>Hiperaguda, súbita</strong> (minutos a horas; acorda o paciente à noite)",
+              "<strong>Insidiosa, progressiva</strong> (ao longo de 2 a 3 dias)",
+              "Aguda a subaguda, moderada"
+            ],
+            [
+              "<strong>Localização Inicial</strong>",
+              "Testículo difusamente doloroso",
+              "Cauda do epidídimo, progredindo para o testículo",
+              "Polo superior da gônada"
+            ],
+            [
+              "<strong>Sintomas Sistêmicos</strong>",
+              "Náuseas e vômitos frequentes (reflexo autonômico)",
+              "Febre alta, calafrios, mal-estar",
+              "Geralmente ausentes (afebril)"
+            ],
+            [
+              "<strong>Sintomas Urinários</strong>",
+              "Ausentes (sem disúria ou polaciúria)",
+              "Frequentes (disúria, estrangúria, corrimento uretral)",
+              "Ausentes"
+            ],
+            [
+              "<strong>Posição da Gônada</strong>",
+              "<strong>Elevada, retraída e horizontalizada</strong> (Sinal de Gouverneur)",
+              "Posição anatômica vertical habitual",
+              "Posição anatômica vertical normal"
+            ],
+            [
+              "<strong>Reflexo Cremastérico</strong>",
+              "<strong>ABOLIDO / NEGATIVO</strong> no lado afetado",
+              "<strong>PRESERVADO / POSITIVO</strong>",
+              "<strong>PRESERVADO / POSITIVO</strong>"
+            ],
+            [
+              "<strong>Manobra de Prehn</strong>",
+              "<strong>Negativa</strong> (elevação escrotal NÃO alivia ou piora a dor)",
+              "<strong>Positiva</strong> (elevação escrotal ALIVIA significativamente a dor)",
+              "Negativa ou indiferente"
+            ],
+            [
+              "<strong>Sinal do Ponto Azul</strong>",
+              "Ausente",
+              "Ausente",
+              "<strong>Presente em 20-30%</strong> (polo superior)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Manobras e Sinais Semiológicos Detalhados:"
+        ],
+        [
+          "p",
+          "1. <strong>Reflexo Cremastérico:</strong>\n<li><em>Técnica:</em> Estimulação suave e rápida com abaixador de língua ou objeto rombo na face interna e superior da coxa do paciente.</li>\n<li><em>Resposta Normal:</em> Contração reflexa rápida do músculo cremaster com elevação de pelo menos 0,5 cm do testículo ipsilateral.</li>\n<li><em>Interpretação:</em> Na torção testicular, a torção mecânica e o engurgitamento do cordão espermático impedem a excursão da gônada; a ausência do reflexo cremastérico possui sensibilidade de quase <strong>99% a 100%</strong> para torção testicular em adolescentes. Se o reflexo estiver francamente presente e normal, o diagnóstico de torção testicular torna-se estatisticamente improvável (embora não 100% impossível em casos de torção parcial < 360°).</li>\n2. <strong>Sinal de Prehn:</strong>\n<li><em>Técnica:</em> O examinador eleva suavemente a bolsa escrotal e o testículo afetado em direção à sínfise púbica, aliviando o peso e a tração gravitacional sobre o cordão espermático e o epidídimo.</li>\n<li><em>Sinal de Prehn Positivo:</em> O paciente refere alívio nítido da dor após a elevação escrotal. Ocorre tipicamente na <strong>orquiepididimite aguda</strong>, pois a elevação reduz a tensão no epidídimo hiperemiado e melhora o retorno venoso e linfático da gônada inflamada.</li>\n<li><em>Sinal de Prehn Negativo:</em> A elevação escrotal não alivia a dor e frequentemente a intensifica. É o padrão característico da <strong>torção testicular</strong>, pois a torção mecânica dos vasos e a isquemia transmural permanecem inalteradas pela manobra física.</li>\n3. <strong>Sinal de Gouverneur:</strong>\n<li>O encurtamento mecânico provocado pelas voltas do cordão espermático sobre si mesmo traciona o testículo para cima em direção ao anel inguinal superficial, e a anomalia em badalo de sino faz com que a gônada assuma uma <strong>orientação horizontalizada (eixo longitudinal paralelo ao chão)</strong> em vez da orientação vertical fisiológica.</li>"
+        ]
+      ]
+    ],
+    [
+      "4-avaliacao-por-imagem-o-papel-central-do-ultrassom-doppler",
+      0,
+      [
+        [
+          "2",
+          "4. Avaliação por Imagem: O Papel Central do Ultrassom Doppler"
+        ],
+        [
+          "p",
+          "O <strong>Ultrassom com Doppler Colorido e Pulsado da Bolsa Escrotal</strong> é o método de imagem padrão-ouro absoluto na investigação propedêutica do escroto agudo, apresentando sensibilidade entre 88% e 100% e especificidade entre 90% e 99% quando executado por radiologista experiente."
+        ],
+        [
+          "3",
+          "Achados no Doppler na Torção Testicular:"
+        ],
+        [
+          "p",
+          "<li><strong>Ausência ou Redução Acentuada do Fluxo Sanguíneo Intratesticular:</strong> É o critério definidor primário. O parênquima testicular normal apresenta fluxo de baixa resistência com curvas arteriais pulsáteis bem visíveis. Na torção completa (> 360°), o sinal Doppler colorido e as curvas espectrais arteriais e venosas estão completamente ausentes.</li>\n<li><strong>Sinal do Redemoinho (<em>Whirlpool Sign</em>):</strong> Visualização direta da espiral formada pelos vasos torcidos do cordão espermático no anel inguinal superficial ou polo superior escrotal (especificidade de 99%).</li>\n<li><strong>Ecotextura do Parênquima:</strong></li>\n<li><em>Fase Precoce (< 4 a 6 horas):</em> Parênquima homogêneo ou discretamente hipoecogênico com aumento das dimensões testiculares (edema isquêmico). Indica gônada potencialmente viável.</li>\n<li><em>Fase Tardia (> 12 a 24 horas):</em> Ecotextura francamente heterogênea com áreas hipoecogênicas de infarto hemorrágico e áreas hiperecogênicas de necrose, frequentemente associada a hidrocele reativa espessa com septações. Indica necrose gonadal irreversível e inviabilidade tecidual.</li>"
+        ],
+        [
+          "3",
+          "Achados no Doppler na Orquiepididimite Aguda:"
+        ],
+        [
+          "p",
+          "<li><strong>Hiperfluxo Sanguíneo Marcado (Pletora Inflamatória):</strong> Presença de fluxo exuberante ao Doppler colorido (<em>\"inferno vascular\"</em> ou sinal da hiperemia), com velocidades sistólicas de pico aumentadas e índices de resistência vascular diminuídos nas artérias do epidídimo e do testículo.</li>\n<li><strong>Espessamento e Aumento das Dimensões do Epidídimo:</strong> Cauda e corpo do epidídimo aumentados de volume, com ecotextura heterogênea e edema inflamatório.</li>\n<li><strong>Espessamento da Parede Escrotal e Hidrocele Reativa:</strong> Presença de líquido anecoico ou finamente particulado entre os folhetos da túnica vaginal e hiperemia dos tecidos moles escrotais peri-hilares.</li>"
+        ],
+        [
+          "3",
+          "REGRA DE OURO INEGOCIÁVEL DE CONDUTA CIRÚRGICA:"
+        ],
+        [
+          "p",
+          "> <strong>\"NÃO SE DEVE ATRASAR A EXPLORAÇÃO CIRÚRGICA SE HOUVER SUSPEITA CLÍNICA ELEVADA DE TORÇÃO TESTICULAR!\"</strong>\n> Se a história clínica e o exame físico forem fortemente sugestivos de torção testicular e o ultrassom Doppler não estiver imediatamente disponível no pronto-socorro (ou se houver previsão de atraso superior a 30-40 minutos para a realização do exame), <strong>o paciente deve ser encaminhado IMEDIATAMENTE ao centro cirúrgico para exploração escrotal aberta!</strong> O tempo gasto aguardando a equipe de radiologia pode determinar a passagem da janela de viabilidade de 6 horas, transformando um testículo viável em um órgão necrosado passível apenas de orquiectomia. O exame clínico soberano autoriza a indicação cirúrgica de urgência!"
+        ]
+      ]
+    ],
+    [
+      "5-conduta-e-tratamento-cirurgico-do-escroto-agudo",
+      0,
+      [
+        [
+          "2",
+          "5. Conduta e Tratamento Cirúrgico do Escroto Agudo"
+        ],
+        [
+          "3",
+          "5.1 Destorção Manual Testicular: Manobra de \"Abrir um Livro\""
+        ],
+        [
+          "p",
+          "<li>Em situações onde o centro cirúrgico não está imediatamente disponível ou durante o transporte do paciente, o médico emergencista ou urologista pode tentar a <strong>destorção manual externa</strong>.</li>\n<li><em>Fundamento:</em> A imensa maioria das torções intravaginais ocorre em sentido medial (de fora para dentro). Logo, a destorção deve ser executada em sentido contrário, ou seja, <strong>em sentido lateral (de dentro para fora - manobra de \"abrir um livro\")</strong>.</li>\n<li><em>Técnica para o Testículo Direito:</em> O examinador posiciona o polegar e o indicador sobre o polo anterior e posterior do testículo direito e gira a gônada no sentido horário (da linha média para a coxa direita).</li>\n<li><em>Técnica para o Testículo Esquerdo:</em> O examinador gira a gônada no sentido anti-horário (da linha média para a coxa esquerda).</li>\n<li><em>Rotação Necessária:</em> Frequentemente são necessárias rotações de 180° a 540° (1 a 3 voltas e meia) para desatar o nó vascular.</li>\n<li><em>Critérios de Sucesso:</em> Alívio imediato e dramático da dor pelo paciente, descida da gônada para a posição anatômica vertical no fundo do escroto e recuperação do sinal Doppler se disponível.</li>\n<li><strong>ATENÇÃO MÁXIMA:</strong> <strong>A destorção manual bem-sucedida NÃO CANCELA A CIRURGIA!</strong> O paciente com destorção manual exitosa <strong>DEVE SER SUBMETIDO À EXPLORAÇÃO CIRÚRGICA ELETIVA IMEDIATA OU EM POUCAS HORAS PARA FIXAÇÃO BILATERAL DOS TESTÍCULOS (ORQUIDOPEXIA)</strong>, sob pena de retorção iminente do cordão espermático nas horas subsequentes!</li>"
+        ],
+        [
+          "3",
+          "5.2 Tempo Cirúrgico da Exploração Escrotal"
+        ],
+        [
+          "p",
+          "1. <strong>Incisão Escrotal:</strong> Preferencialmente por incisão transversa ou rafe mediana longitudinal na hemibolsa acometida. Abertura por planos (pele, dartos, fáscias espermáticas) até abertura da lâmina parietal da túnica vaginal com exteriorização da gônada e do cordão.\n2. <strong>Destorção e Avaliação da Viabilidade Macro:</strong> O cordão é destorcido manualmente. O testículo isquêmico apresenta coloração arroxeada, azulada ou enegrecida.\n3. <strong>Teste de Reperfusão sob Aquecimento:</strong> A gônada é envolvida em compressas embebidas em soro fisiológico morno (37-38 °C) por 10 a 15 minutos, associada à oferta de oxigênio a 100% pelo anestesista. Realiza-se pequena incisão na túnica albugínea com lâmina de bisturi delicada para avaliar o sangramento intraparenquimatoso:\n<li><em>Testículo Viável:</em> Ocorre mudança da coloração de arroxeada para rósea brilhante e observa-se sangramento ativo arterial vermelho-vivo pelas bordas da incisão da albugínea. Conduta: <strong>Orquidopexia ipsilateral em 3 pontos com fio inabsorvível monofilamentar (como polipropileno 3-0 ou 4-0)</strong> para evitar recidiva.</li>\n<li><em>Testículo Inviável / Necrosado:</em> A gônada permanece negra, friável, com sangue escuro venoso estagnado ou ausência total de sangramento após 15 minutos de aquecimento. Conduta: <strong>Orquiectomia simples ipsilateral</strong> (remoção do testículo desvitalizado). A manutenção de um testículo francamente necrosado na bolsa escrotal deflagra quebra da barreira hematotesticular, com exposição de antígenos espermáticos ao sistema imune e formação de anticorpos antiespermatozoides sistêmicos, provocando orquite autoimune secundária e infertilidade futura no testículo contralateral sadio!</li>\n4. <strong>Fixação Contralateral Obrigatória:</strong> Independentemente de ter sido realizada orquidopexia ou orquiectomia no lado afetado, <strong>É ETAPA OBRIGATÓRIA DA MESMA CIRURGIA A EXPLORAÇÃO E ORQUIDOPEXIA PROFILÁTICA DA BOLSA ESCROTAL CONTRALATERAL EM TRÊS PONTOS</strong>, uma vez que a deformidade em badalo de sino é anomalia congênita bilateral em até 80% dos casos. Deixar o testículo contra-lateral sem fixação expõe o paciente ao risco de perder a única gônada restante no futuro."
+        ],
+        [
+          "3",
+          "5.3 Tratamento Clínico da Orquiepididimite Aguda"
+        ],
+        [
+          "p",
+          "1. <strong>Medidas Gerais Suportivas:</strong> Repouso absoluto no leito, elevação contínua da bolsa escrotal com suspensório escrotal atlético ou coxim de toalha dobrada sob o períneo, aplicação local de gelo por 20 minutos várias vezes ao dia e analgesia com AINEs e analgésicos comuns.\n2. <strong>Antibioticoterapia Guiada pela Etiologia:</strong>\n<li><em>Homens com < 35 anos ou risco de IST:</em> Esquema clássico para cobrir <em>Chlamydia trachomatis</em> e <em>Neisseria gonorrhoeae</em>:</li>\n<li><strong>Ceftriaxona 500 mg IM em dose única</strong> (para cobrir gonococo) + <strong>Doxiciclina 100 mg VO de 12/12 horas por 10 a 14 dias</strong> (para cobrir clamídia). O tratamento empírico deve ser estendido à(s) parceira(s) sexual(is) dos últimos 60 dias.</li>\n<li><em>Homens com > 35 anos ou com instrumentação/cirurgia urológica recente:</em> Esquema para enterobactérias entéricas (<em>E. coli</em>):</li>\n<li><strong>Levofloxacino 500 mg VO uma vez ao dia por 10 a 14 dias</strong> ou <strong>Ciprofloxacino 500 mg VO de 12/12 horas por 10 a 14 dias</strong>, ou Sulfametoxazol-Trimetoprima (160/800 mg de 12/12h por 14 dias se perfil microbiológico sensível).</li>\n<li><em>Homens praticantes de sexo anal insertivo:</em> Cobertura tripla para gonococo, clamídia e coliformes: Ceftriaxona 500 mg IM dose única + Levofloxacino 500 mg VO 1x/dia por 14 dias.</li>"
+        ]
+      ]
+    ],
+    [
+      "6-emergencias-urologicas-criticas-gangrena-de-fournier-priapismo-parafimose-e-fratura-peniana",
+      0,
+      [
+        [
+          "2",
+          "6. Emergências Urológicas Críticas: Gangrena de Fournier, Priapismo, Parafimose e Fratura Peniana"
+        ],
+        [
+          "p",
+          "Além das afecções intragonadais do escroto agudo, a urologia de emergência abrange outras quatro condições com altíssima letalidade e morbidade funcional reprodutiva: a <strong>Gangrena de Fournier</strong>, o <strong>Priapismo</strong>, a <strong>Parafimose</strong> e a <strong>Fratura Peniana</strong>."
+        ],
+        [
+          "3",
+          "6.1 Síndrome / Gangrena de Fournier (Fasceíte Necrosante Perineal)"
+        ],
+        [
+          "p",
+          "<li><strong>Definição e Histórico:</strong> Descrita originalmente por Jean-Alfred Fournier em 1883 como uma gangrena idiopática de evolução fulminante em homens jovens e previamente saudáveis, a condição é hoje reconhecida como uma forma devastadora de fasceíte necrosante sinérgica polimicrobiana que acomete tecidos moles da região perineal, perianal, escrotal e genital externa, com progressão ao longo dos planos fasciais profundos (velocidade de avanço tecidual estimada em até 2 a 3 cm por hora!).</li>\n<li><strong>Bases Anatômicas da Disseminação:</strong> A disseminação da infecção segue as conexões anatômicas contíguas das fáscias superficiais e profundas do períneo e parede abdominal:</li>\n<li>Inicia-se na <strong>Fáscia de Colles</strong> (fáscia superficial do períneo);</li>\n<li>Ascende e comunica-se anterior e superiormente com a <strong>Fáscia de Dartos</strong> (da bolsa escrotal e pênis);</li>\n<li>Continua-se cranialmente pela parede abdominal anterior como <strong>Fáscia de Scarpa</strong>, podendo ascender até o gradeado costal e fossas axilares!</li>\n<li>Posteriormente, é contida pela fáscia perianal e tuberosidades isquiáticas.</li>\n<li><em>Poupação Clássica das Gônadas:</em> <strong>Os testículos raramente são acometidos ou necrosados na gangrena de Fournier!</strong> O suprimento arterial e a drenagem venosa e linfática dos testículos são independentes da pele escrotal (artéria testicular originada da aorta abdominal em L2 e drenagem para linfonodos retroperitoneais para-aórticos), permitindo que a pele escrotal sofra necrose completa enquanto os testículos subjacentes permanecem viáveis e sadios no campo operatório desbridado.</li>\n<li><strong>Microbiologia Sinérgica Polimicrobiana (Tipo I):</strong> A infecção decorre da ação cooperativa de bactérias aeróbias gram-negativas facultativas (<em>Escherichia coli</em>, <em>Klebsiella pneumoniae</em>, <em>Pseudomonas aeruginosa</em>), bactérias gram-positivas (<em>Streptococcus pyogenes</em>, <em>Staphylococcus aureus</em> incluindo MRSA, <em>Enterococcus faecalis</em>) e anaeróbios estritos (<em>Bacteroides fragilis</em>, <em>Clostridium perfringens</em>, <em>Peptostreptococcus</em>).</li>\n<li>Mecanismo Sinérgico: Os aeróbios consomem o oxigênio tecidual local e produzem colagenases e hialuronidases que destroem as barreiras teciduais; a anóxia profunda gerada favorece o crescimento explosivo dos anaeróbios, que produzem endo e exotoxinas indutoras de trombose microvascular obliterante das arteríolas perfurantes nutridoras dos planos fasciais, determinando necrose isquêmica maciça e liquefativa da fáscia e subcutâneo. A produção bacteriana de gás insolúvel leva à clássica crepitação subcutânea.</li>\n<li><strong>Fatores de Risco e Portas de Entrada:</strong></li>\n<li>Diabetes mellitus mal controlado (presente em 60% a 70% dos pacientes — polimorfonucleares com disfunção de fagocitose e microangiopatia);</li>\n<li>Alcoolismo crônico, desnutrição, imunossupressão (HIV/AIDS, quimioterapia, corticoterapia);</li>\n<li>Portas de entrada: abscessos perianais/anorretais não drenados (fístulas anais, fissuras), afecções urológicas (estenose de uretra com extravasamento de urina, manipulação endourológica, cateterismo traumático) e infecções dermatológicas cutâneas.</li>\n<li><strong>Manifestações Clínicas e Sinais de Alarme:</strong></li>\n<li>Início com dor perineal intensa desproporcional aos achados físicos externos da pele (\"dor fora de proporção\");</li>\n<li>Edema, calor e eritema escrotoperineal que progridem em horas para áreas de pele escura com bolhas hemorrágicas, necrose cutânea franca cinzento-enegrecida e exsudato fétido (\"odor fecalóide característico\");</li>\n<li><strong>Crepitação subcutânea à palpação</strong> (patognomônica de infecção por anaeróbios produtores de gás);</li>\n<li>Choque séptico franco: febre alta ou hipotermia, taquicardia, hipotensão refratária, rebaixamento neurológico e acidose metabólica grave.</li>\n<li><strong>Tratamento Multimodal de Emergência (Tríade da Salvação):</strong></li>\n  1. <em>Ressuscitação Hemodinâmica Agressiva:</em> Reposição rápida com cristaloides balanceados, correção de distúrbios hidroeletrolíticos e uso precoce de noradrenalina em bomba de infusão se choque séptico refratário.\n  2. <em>Antibioticoterapia Venosa de Amplo Espectro de Início Imediato:</em>\n<li>Esquema triplo ou quádruplo tradicional: <strong>Meropenem 1 g IV 8/8h</strong> (ou Piperacilina-Tazobactam 4,5 g IV 6/6h) + <strong>Vancomicina 15-20 mg/kg IV 12/12h</strong> (cobertura de MRSA e enterococo) + <strong>Clindamicina 900 mg IV 8/8h</strong> (efeito antitoxínico ribossomal potente inibindo a síntese de exotoxinas bacterianas de estreptococos e clostrídios).</li>\n  3. <em>Desbridamento Cirúrgico Extensivo de Urgência:</em> <strong>A cirurgia não pode esperar nem 1 hora!</strong> Exploração ampla com ressecção radical de todo o tecido desvitalizado, purulento e necrótico até atingir margens com tecido macroscopicamente viável e com sangramento ativo. O paciente frequentemente necessita de múltiplos \"segundos olhares\" (<em>second looks</em>) cirúrgicos nas 24 a 48 horas seguintes para novo desbridamento. Ostomias de proteção (colostomia em alça de desvio fecal se foco anorretal ou cistostomia supra-púbica se uretra rota) são indicadas seletivamente para evitar contaminação fecal e urinária contínua da ferida aberta."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "6.2 Priapismo: Classificação, Diagnóstico e Tratamento"
+        ],
+        [
+          "p",
+          "O priapismo é definido como uma <strong>ereção peniana persistente, total ou parcial, com duração superior a 4 horas</strong>, independente de estimulação sexual ou não aliviada pela ejaculação. Divide-se em três entidades fisiopatológicas absolutamente distintas:"
+        ],
+        [
+          "4",
+          "1. Priapismo Isquêmico (de Baixo Fluxo / Veno-Oclusivo):"
+        ],
+        [
+          "p",
+          "<li><strong>Fisiopatologia:</strong> É uma <strong>verdadeira síndrome compartimental peniana dos corpos cavernosos</strong> e constitui uma emergência cirúrgica urológica! Ocorre falha do mecanismo normal de detumescência por relaxamento inadequado do músculo liso cavernoso e aprisionamento mecânico de sangue nos corpos cavernosos com ausência completa de fluxo arterial aferente. O sangue estagnado torna-se hipóxico, acidótico e hipercapnico.</li>\n<li><strong>Evolução Temporal do Dano Tecidual:</strong></li>\n<li><em>Até 12 horas:</em> Edema de células musculares lisas intracavernosas;</li>\n<li><em>12 a 24 horas:</em> Morte e desprendimento de células endoteliais dos espaços lacunares;</li>\n<li><em>Após 24 a 48 horas:</em> Necrose transmural do músculo liso cavernoso com substituição progressiva por tecido fibrótico cicatricial denso, culminando em <strong>disfunção erétil refratária permanente em mais de 90% dos casos</strong>!</li>\n<li><strong>Etiologias:</strong> Doença falciforme (hemácias afoiçadas ocluem a microcirculação cavernosa sinusoidal), uso de medicamentos intracavernosos para disfunção erétil (prostaglandina E1 / alprostadil, papaverina, fentolamina), psicotrópicos (trazodona, clorpromazina), inibidores da PDE-5 (sildenafil, tadalafil) em doses abusivas ou associados a drogas recreativas (cocaína, anfetaminas).</li>\n<li><strong>Apresentação Clínica:</strong> <strong>Ereção rígida e extremamente dolorosa</strong>. Ao exame, os <strong>corpos cavernosos estão pétreos, túrgidos e intensamente dolorosos</strong>, enquanto o <strong>corpo esponjoso e a glande peniana encontram-se flácidos e poupados</strong> (achado semiológico clássico: \"ereção dos corpos cavernosos com glande mole\").</li>\n<li><strong>Gasometria Cavernosa (Sangue Aspirado dos Corpos Cavernosos):</strong></li>\n<li>Aspiração com agulha 19G ou 21G obtém <strong>sangue escuro, venoso, espesso</strong>.</li>\n<li>Resultados: <strong>pH < 7,25; pO2 < 30 mmHg; pCO2 > 60 mmHg</strong> (padrão de acidose respiratória e metabólica isquêmica severa).</li>\n<li><strong>Manejo Terapêutico Escalonado do Priapismo Isquêmico:</strong></li>\n  1. <em>Punção e Aspiração com Irrigação:</em> Aspiração de 20 a 50 mL de sangue estagnado por punção transcutânea unilateral no corpo cavernoso (às 2 ou 10 horas do eixo peniano para evitar o feixe vasculonervoso dorsal às 12 horas e a uretra às 6 horas; como os corpos cavernosos comunicam-se no terço proximal, a punção de um lado descomprime ambos). Irrigação seriada com soro fisiológico 0,9% estéril e frio.\n  2. <em>Injeção Intracavernosa de Agonista Alfa-Adrenérgico (Simpaticomimético):</em> Fármaco de escolha padrão-ouro: <strong>Fenilefrina</strong> (agonista alfa-1 puro, sem efeito beta-adrenérgico direto, minimizando risco de taquiarritmias).\n<li>Preparo da Solução: Dilui-se 1 ampola de Fenilefrina (10 mg/mL) em 100 mL de SF 0,9%, obtendo-se concentração de 100 mcg/mL.</li>\n<li>Aplicação: Injetam-se 100 a 200 mcg (1 a 2 mL da solução diluída) intracavernosa a cada 3 a 5 minutos, monitorando rigorosamente PA e FC, até a detumescência completa ou dose cumulativa máxima de 1.000 mcg (1 mg) em 1 hora.</li>\n  3. <em>Tratamento Cirúrgico (Shunts / Derivações Cavernosas):</em> Indicado formalmente se falha da aspiração e fenilefrina após 1 hora:\n<li>Shunts distais percutâneos (técnicas de Winter ou Ebbehoj: punção transcavernosa pela glande criando fístula caverno-glandular);</li>\n<li>Shunts distais abertos (técnica de Al-Ghorab: biópsia circular da ponta do corpo cavernoso pela glande);</li>\n<li>Shunts proximais cirúrgicos (fístula caverno-esponjosa de Quackels ou caverno-safênica de Grayhack).</li>\n  4. <em>Manejo Específico no Paciente Falcêmico:</em> Além das medidas locais acima, deve-se instituir imediatamente hidratação venosa vigorosa, oxigenoterapia para manter SpO2 > 95%, analgesia sistêmica e transfusão simples ou exsanguinotransfusão para reduzir a fração de hemoglobina S (HbS) abaixo de 30%."
+        ],
+        [
+          "4",
+          "2. Priapismo Não Isquêmico (de Alto Fluxo / Arterial):"
+        ],
+        [
+          "p",
+          "<li><strong>Fisiopatologia:</strong> Não é uma emergência cirúrgica isquêmica! Decorre habitualmente de <strong>trauma perineal fechado contuso ou peniano</strong> (\"queda a cavaleiro\" em selim de bicicleta ou skate) que provoca laceração traumática da artéria cavernosa ou de seus ramos helicinos, formando uma <strong>fístula arteriocavernosa de alto débito</strong> que injeta continuamente sangue arterial diretamente nos espaços lacunares, superando a drenagem venosa normal.</li>\n<li><strong>Apresentação Clínica:</strong> <strong>Ereção indolor ou com mínimo desconforto</strong>, corpos cavernosos semirrígidos ou elásticos (não pétreos).</li>\n<li><strong>Gasometria Cavernosa:</strong> Aspiração obtém <strong>sangue vermelho-vivo arterial brilhante</strong>. Resultados: <strong>pH normal (> 7,40); pO2 > 90 mmHg; pCO2 < 40 mmHg</strong> (equivalente a sangue arterial sistêmico).</li>\n<li><strong>Tratamento:</strong> Não há risco de necrose muscular nem urgência cirúrgica imediata. Conduta inicial expectante com compressão perineal de gelo. Se persistente: <strong>Arteriografia seletiva com embolização superseletiva da fístula</strong> com microcoils ou gel de fibrina autólogo absorvível (preservando a potência erétil futura).</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "6.3 Fratura Peniana (Trauma Peniano com Ruptura de Túnica Albugínea)"
+        ],
+        [
+          "p",
+          "<li><strong>Definição e Mecanismo:</strong> A fratura de pênis consiste na ruptura traumática da espessa túnica albugínea de um ou ambos os corpos cavernosos, ocorrendo quase invariavelmente quando o pênis está em <strong>ereção rígida completa</strong>. Durante a ereção, a espessura da albugínea reduz-se drasticamente de cerca de 2 mm para meros 0,25 a 0,5 mm, tornando-se extremamente delgada e vulnerável a forças de cisalhamento e encurvamento súbito.</li>\n<li><strong>Mecanismos Típicos de Trauma:</strong></li>\n<li>Relação sexual vigorosa (responsável por mais de 70% a 80% dos casos), especialmente quando a parceira encontra-se em posição superior (\"posição de vaqueira\" ou <em>woman-on-top</em>), na qual o pênis escapa acidentalmente do introito vaginal e colide violentamente contra a sínfise púbica ou períneo rígido da parceira;</li>\n<li>Dobradura forçada voluntária do pênis ereto para obter detumescência rápida (\"prática de taghaandan\" no Oriente Médio);</li>\n<li>Queda da própria altura ou rolamento no leito com pênis ereto.</li>\n<li><strong>Tríade Clínica Patognomônica:</strong></li>\n  1. <strong>Estalido audível nítido (<em>crack</em> ou estalo audível)</strong> no momento do impacto;\n  2. <strong>Detumescência peniana imediata</strong> decorrente do esvaziamento instantâneo do sangue pressurizado dos corpos cavernosos para o tecido subcutâneo;\n  3. <strong>Dor aguda lancinante</strong> seguida por rápido inchaço e deformidade peniana.\n<li><strong>Sinais Semiológicos Clássicos:</strong></li>\n<li><strong>Deformidade em \"Beringela\" (<em>Eggplant Deformity</em>):</strong> O pênis torna-se volumoso, intensamente arroxeado/azulado por hematoma subcutâneo extenso e sofre encurvamento lateral acentuado para o lado oposto ao sítio da ruptura albugínea.</li>\n<li>Se a <strong>Fáscia de Buck</strong> permanecer íntegra, o hematoma fica estritamente restrito à haste peniana; se a Fáscia de Buck for lacerada, o sangue disseca as fáscias superficiais, espalhando-se para o escroto e períneo anterior em distribuição em \"asa de borboleta\".</li>\n<li><strong>Lesão Uretal Concomitante:</strong> Presente em 10% a 20% das fraturas penianas (especialmente quando ambos os corpos cavernosos e o corpo esponjoso são rompidos). Manifesta-se por <strong>uretrorragia (sangue no meato uretral)</strong>, retenção urinária aguda ou hematúria macroscópica. Se houver suspeita de lesão uretral, é mandatória a realização de <strong>uretrocistografia retrógrada</strong> antes de qualquer manipulação ou cateterismo vesical!</li>\n<li><strong>Conduta Cirúrgica de Emergência:</strong> A fratura de pênis é uma <strong>indicação de exploração cirúrgica imediata!</strong> O tratamento conservador tradicional (gelo e enfaixamento) foi formalmente abandonado porque cursa com taxas inaceitáveis de disfunção erétil secundária (30% a 50%), curvatura peniana permanente deformante (doença de Peyronie traumática) e fístulas arteriocavernosas. A intervenção cirúrgica de urgência por incisão subcoronal degolante circunferencial permite evacuação do hematoma, identificação da fenda na albugínea e rafia primária com fios inabsorvíveis ou absorvíveis de absorção lenta (Polipropileno ou PDS 2-0 ou 3-0), com preservação da função erétil em mais de 90% a 95% dos pacientes operados precocemente.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "6.4 Parafimose: Emergência Urológica da Glande e Prepúcio"
+        ],
+        [
+          "p",
+          "<li><strong>Definição:</strong> A parafimose é uma verdadeira emergência urológica que ocorre em pacientes masculinos não circuncidados quando o prepúcio retrátil estreito é tracionado para trás do sulco balanoprepucial e não é imediatamente recolocado em sua posição anatômica anterior.</li>\n<li><strong>Fisiopatologia:</strong> O anel prepucial fibrótico e constritor atua como um garrote mecânico na base da glande, ocluindo inicialmente a drenagem venosa e linfática superficial da glande e do folheto interno do prepúcio. Isso provoca edema volumoso progressivo em \"rosquinha\" (<em>donut sign</em>), que aumenta a pressão local e culmina na oclusão do fluxo arterial da glande, evoluindo para isquemia, ulceração e necrose isquêmica da glande se não revertida rapidamente.</li>\n<li><strong>Causa Iatrogênica Mais Comum no Hospital:</strong> Paciente internado idoso que é submetido à passagem de sonda vesical de demora (Foley) pelo médico ou equipe de enfermagem, que retrai o prepúcio para assepsia e esquece de reduzi-lo para a frente após a introdução da sonda!</li>\n<li><strong>Manejo Emergencial:</strong></li>\n  1. <em>Redução Manual Imediata:</em> Compressão manual bimanual firme e circunferencial da glande e do prepúcio edemaciado por 5 a 10 minutos (para drenar o edema intersticial para os tecidos moles proximais), seguida pela tração anterior do prepúcio com os dedos indicadores e médios enquanto os polegares empurram simultaneamente a glande para trás através do anel constritor.\n  2. <em>Técnica de Punção com Agulha (Técnica de Dundee):</em> Em casos de edema maciço refratário, podem ser feitas múltiplas punturas na pele prepucial edemaciada com agulha fina 21G para permitir o extravasamento do líquido de edema intersticial sob compressão manual suave.\n  3. <em>Postotomia Dorsal de Emergência:</em> Se as manobras manuais falharem, realiza-se uma incisão longitudinal dorsal no anel constritor sob anestesia local (bloqueio do nervo dorsal do pênis), liberando imediatamente o garrote vascular e fechando-se a incisão transversalmente. A postectomia (circuncisão) definitiva deve ser programada eletivamente após a cicatrização e regressão do processo inflamatório."
+        ]
+      ]
+    ],
+    [
+      "7-casos-clinicos-estruturados-e-resolvidos-de-escroto-agudo-e-emergencias-urologicas",
+      0,
+      [
+        [
+          "2",
+          "7. Casos Clínicos Estruturados e Resolvidos de Escroto Agudo e Emergências Urológicas"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Torção Testicular Intravaginal em Adolescente"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Paciente masculino, 15 anos, estudante, admitido no pronto-socorro cirúrgico às 03:30 da manhã, trazido pelos pais com dor de início hiperagudo e severo em hemibolsa escrotal esquerda iniciada há exatamente 2 horas e meia, que o acordou do sono profundo. Apresentou três episódios de vômitos incoercíveis e sudorese profusa. Nega febre, sintomas urinários ou trauma local.</li>\n<li><strong>Exame Físico Focado:</strong></li>\n<li>Paciente gemente de dor, pálido, afebril (36,4 °C), PA 135/85 mmHg, FC 104 bpm.</li>\n<li>Bolsa escrotal: Hemibolsa esquerda discretamente edemaciada e hiperemiada. O testículo esquerdo encontra-se visivelmente retraído em direção cranial e em <strong>orientação horizontalizada (Sinal de Gouverneur positivo)</strong>, extremamente sensível ao menor toque.</li>\n<li><strong>Reflexo Cremastérico Esquerdo:</strong> Completamente <strong>ABOLIDO (ausente)</strong> à estimulação mecânica da coxa esquerda; presente e normal à direita.</li>\n<li><strong>Sinal de Prehn:</strong> <strong>NEGATIVO</strong> (a tentativa de elevação suave da bolsa escrotal esquerda não trouxe alívio e exacerbou a dor).</li>\n<li><strong>Raciocínio Diagnóstico e Tomada de Decisão:</strong></li>\n<li>O quadro clínico é patognomônico de <strong>Torção do Cordão Espermático Esquerdo</strong> (escroto agudo hiperagudo noturno com vômitos, reflexo cremastérico abolido, Gouverneur positivo e Prehn negativo em adolescente de 15 anos).</li>\n<li>O tempo de isquemia é de apenas 2,5 horas (dentro da janela de ouro de 6 horas, com chance de salvamento testicular > 95%).</li>\n<li>O serviço de imagem de urgência informou que o médico ultrassonografista levaria cerca de 50 minutos para chegar ao hospital.</li>\n<li><strong>Conduta Correta e Imediata:</strong> Nenhuma espera por ultrassom! O paciente foi colocado em jejum, colhidos exames pré-operatórios de urgência e transferido imediatamente ao centro cirúrgico com a equipe de cirurgia geral/urologia sob anestesia geral balanceada.</li>\n<li><strong>Achados Cirúrgicos e Desfecho:</strong></li>\n<li>Incisão transversa escrotal esquerda: constatada torção intravaginal de 540° (1 volta e meia) no cordão espermático, associada a anomalia em badalo de sino. Testículo arroxeado-escuro.</li>\n<li>Realizada destorção cirúrgica imediata e aquecimento com compressas mornas por 10 minutos. O parênquima recuperou coloração rósea uniforme e apresentou sangramento arterial ativo à puntura da albugínea (gônada viável!).</li>\n<li>Realizada <strong>orquidopexia esquerda em 3 pontos com Prolene 4-0</strong>.</li>\n<li>Em seguida, foi realizada incisão na hemibolsa contralateral direita: confirmada presença de deformidade em badalo de sino à direita, sendo executada <strong>orquidopexia profilática direita em 3 pontos</strong>. O paciente teve alta em 24 horas sem sequelas e com preservação gonadal bilateral.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Orquiepididimite Aguda por Infecção Sexualmente Transmissível"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem, 24 anos, solteiro, heterossexual com múltiplos parceiros e uso irregular de preservativo, procura UPA relatando dor e aumento progressivo de volume na bolsa escrotal direita iniciados há 3 dias. Refere febre não aferida, calafrios e ardência miccional (disúria) com presença de secreção uretral clara nos últimos 5 dias.</li>\n<li><strong>Exame Físico:</strong></li>\n<li>Estado geral regular, corado, hidratado, temperatura axilar 38,2 °C, PA 120/75 mmHg, FC 92 bpm.</li>\n<li>Bolsa escrotal: Hemibolsa direita aumentada de volume (2x o tamanho normal), com pele quente, espessada e hiperemiada.</li>\n<li>Palpação: Dor intensa concentrada no polo posterior e na cauda do epidídimo direito, que se encontra francamente espessado, doloroso e de consistência fibroelástica. O testículo direito mantém sua <strong>orientação vertical anatômica habitual</strong>.</li>\n<li><strong>Reflexo Cremastérico Direito:</strong> <strong>PRESERVADO (positivo)</strong>.</li>\n<li><strong>Sinal de Prehn:</strong> <strong>POSITIVO</strong> (a elevação escrotal suave com a mão do examinador aliviou de forma marcante a dor referida).</li>\n<li><strong>Exames Complementares:</strong></li>\n<li>Urina 1: Leucócitos > 100.000/mL; nitrito negativo; ausência de hematúria. Swab uretral: bacterioscopia com Gram evidenciando diplococos gram-negativos intracelulares e leucócitos polimorfonucleares abundantes. Teste de amplificação de ácidos nucleicos (NAAT) positivo para <em>Neisseria gonorrhoeae</em> e <em>Chlamydia trachomatis</em>.</li>\n<li>Ultrassom Doppler de bolsa escrotal: Epidídimo direito acentuadamente aumentado com hipoecogenicidade difusa e fluxo Doppler exuberante (<em>inferno vascular</em>); fluxo arterial intratesticular preservado e simétrico bilateralmente. Pequena hidrocele reativa límpida à direita.</li>\n<li><strong>Diagnóstico e Prescrição Terapêutica:</strong></li>\n<li>Diagnóstico: <strong>Orquiepididimite aguda direita secundária a gonococo e clamídia</strong>.</li>\n<li>Conduta: Paciente estável sem sinais de sepse sistêmica, elegível para tratamento ambulatorial supervisionado:</li>\n<li><strong>Ceftriaxona 500 mg IM em dose única</strong> (tratamento imediato na sala de medicação);</li>\n<li><strong>Doxiciclina 100 mg VO de 12/12 horas por 14 dias</strong>;</li>\n<li>Ibuprofeno 600 mg VO de 8/8h por 5 dias e Dipirona 1 g VO se dor;</li>\n<li>Uso contínuo de suspensório escrotal atlético, repouso e compressas frias locais;</li>\n<li>Abstenção sexual até o término do tratamento e convocação formal da parceira sexual para tratamento profilático concomitante.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Choque Séptico por Síndrome / Gangrena de Fournier"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem, 56 anos, portador de diabetes mellitus tipo 2 descompensado há 12 anos (HbA1c 11,2%) e etilista crônico, admitido na sala vermelha da emergência em estado grave, torporoso e febril. A esposa relata que há 4 dias ele apresentava dor perineal e \"furúnculo\" próximo ao ânus, evoluindo nas últimas 24 horas com inchaço escuro na virilha e testículos e confusão mental.</li>\n<li><strong>Exame Físico:</strong></li>\n<li>Sonolento (Glasgow 12), cianótico de extremidades, sudorese fria. Sinais vitais: PA 70/40 mmHg (PAM 50 mmHg), FC 136 bpm, FR 30 irpm, Temperatura axilar 39,4 °C, SatO2 91% em ar ambiente.</li>\n<li>Inspeção Genitoperineal: Extensa área de necrose cutânea de coloração negro-acinzentada estendendo-se por todo o períneo anterior e posterior, envolvendo a face anterior e inferior da bolsa escrotal e estendendo-se pela sínfise púbica em direção à fossa ilíaca esquerda. Presença de bolhas sero-hemorrágicas rotas e secreção acastanhada com <strong>odor fecalóide fétido intenso</strong>.</li>\n<li>Palpação: <strong>Crepitação subcutânea evidente (gás nos tecidos)</strong> em períneo, base peniana e hipogástrio.</li>\n<li><strong>Exames Laboratoriais:</strong></li>\n<li>Leucograma: 32.000 leucócitos/mm³ com 24% de bastonetes e granulações tóxicas; Plaquetas 80.000/mm³; Lactato arterial: 5,1 mmol/L; Creatinina: 3,4 mg/dL; Glicemia: 380 mg/dL; Acidose metabólica com ânion gap elevado (pH 7,18, HCO3 11 mEq/L).</li>\n<li><strong>Manejo Terapêutico Emergencial Imediato:</strong></li>\n<li>Trata-se de <strong>Choque Séptico refratário secundário à Gangrena de Fournier</strong>. Mortalidade estimada superior a 50-70%.</li>\n<li><em>Conduta Adotada:</em></li>\n    1. Intubação orotraqueal em sequência rápida para proteção de via aérea e suporte ventilatório protetor;\n    2. Acesso venoso central e ressuscitação volêmica guiada com Ringer Lactato associada à infusão contínua de Noradrenalina titulada para manter PAM $\\ge$ 65 mmHg;\n    3. Coleta de hemoculturas e início imediato de antibioticoterapia de largo espectro: <strong>Meropenem 1 g IV 8/8h + Vancomicina 1 g IV 12/12h + Clindamicina 900 mg IV 8/8h</strong>;\n    4. <strong>Encaminhamento imediato ao Centro Cirúrgico em menos de 40 minutos:</strong> Realizado <strong>desbridamento cirúrgico radical e agressivo</strong> de todo o períneo, pele e dartos da bolsa escrotal e parede abdominal baixa desvitalizada. Os <strong>testículos encontravam-se viáveis e sadios</strong> no campo operatório, sendo temporariamente preservados e fixados na raiz da coxa com curativo úmido sob pressão negativa. Realizada colostomia em alça de sigmoide para desvio fecal e cistostomia percutânea. O paciente evoluiu favoravelmente após três desbridamentos seriados em UTI."
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Caso Clínico 4: Priapismo Isquêmico de Baixo Fluxo em Paciente Falcêmico"
+        ],
+        [
+          "p",
+          "<li><strong>Identificação e História:</strong> Homem de 21 anos, com diagnóstico prévio conhecido de Anemia Falciforme (genótipo SS), dá entrada na emergência urológica às 06:00 com queixa de ereção peniana rígida e dolorosa iniciada às 23:00 da noite anterior (tempo total de evolução de 7 horas). Relata que ingeriu pouca água durante o dia e que a ereção não cedeu após urinar, banho frio ou masturbação.</li>\n<li><strong>Exame Físico Peniano:</strong></li>\n<li>Paciente ansioso, taquicárdico, com dor peniana severa (escala analógica 10/10).</li>\n<li>Exame genital: <strong>Corpos cavernosos pétreos, intensamente túrgidos, rígidos e extremamente dolorosos à palpação ao longo de toda a haste peniana</strong>. O <strong>corpo esponjoso e a glande peniana encontram-se completamente flácidos, moles e incolores</strong> (\"glande poupada\").</li>\n<li><strong>Diagnóstico e Gasometria Cavernosa:</strong></li>\n<li>Suspeita clínica primária: <strong>Priapismo Isquêmico Veno-Oclusivo de Baixo Fluxo</strong>.</li>\n<li>Realizada punção diagnóstica e terapêutica do corpo cavernoso às 2 horas do relógio com agulha 19G acoplada a seringa heparinizada: aspirado de <strong>sangue escuro, venoso, espesso e coagulado</strong>.</li>\n<li>Análise gasométrica do sangue cavernoso: <strong>pH 6,95; pO2 18 mmHg; pCO2 82 mmHg</strong> (acidose isquêmica grave confirmando priapismo de baixo fluxo).</li>\n<li><strong>Tratamento Escalonado Executado:</strong></li>\n  1. <em>Medidas Sistêmicas para Falciforme:</em> Hidratação venosa vigorously com soro fisiológico a 0,45% (solução hipotônica), máscara de O2 a 100%, analgesia venosa com morfina e contato com hematologia para transfusão fenotipada de concentrado de hemácias.\n  2. <em>Aspiração e Irrigação Cavernosa:</em> Foram aspirados 40 mL de sangue estagnado e realizada irrigação abundante com SF 0,9% estéril gelado com alívio transitório da rigidez.\n  3. <em>Injeção de Simpaticomimético:</em> Preparada solução de Fenilefrina 100 mcg/mL. Foram administradas injeções intracavernosas fracionadas de 200 mcg (2 mL) a cada 3 a 5 minutos, sob monitorização rigorosa da pressão arterial e eletrocardiograma.\n  4. <em>Desfecho:</em> Após a 3ª injeção (dose cumulativa de 600 mcg de fenilefrina), ocorreu <strong>detumescência peniana completa e alívio imediato da dor</strong>. O paciente foi mantido em observação por 24 horas, recebendo alta com acompanhamento conjunto pela urologia e hematologia para otimização da hidroxiureia domiciliar."
+        ]
+      ]
+    ],
+    [
+      "8-questoes-de-residencia-medica-comentadas-na-integra",
+      0,
+      [
+        [
+          "2",
+          "8. Questões de Residência Médica Comentadas na Íntegra"
+        ],
+        [
+          "3",
+          "Questão 1 (UNIFESP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Menino de 14 anos dá entrada no pronto-socorro com dor testicular súbita e intensa à esquerda iniciada há 3 horas, associada a dois episódios de vômitos. Ao exame físico, o testículo esquerdo está retraído, horizontalizado e muito doloroso à palpação. O reflexo cremastérico esquerdo está abolido e a elevação da bolsa escrotal não alivia a dor. O ultrassonografista de sobreaviso informa que levará 90 minutos para chegar à unidade.\nQual é a conduta IMEDIATA mais indicada?\n<li>A) Aguardar a chegada do ultrassonografista para confirmar o diagnóstico com Doppler.</li>\n<li>B) Iniciar antibioticoterapia venosa empírica com ceftriaxona e ciprofloxacino.</li>\n<li>C) Encaminhar o paciente imediatamente ao centro cirúrgico para exploração escrotal bilateral.</li>\n<li>D) Realizar infiltração do cordão espermático com lidocaína e prescrever anti-inflamatório oral.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong><br><li><strong>Comentário Detalhado:</strong> O quadro clínico reúne todos os sinais cardinais patognomônicos da <strong>torção testicular</strong>: dor súbita em adolescente, náuseas/vômitos, testículo elevado e horizontalizado (sinal de Gouverneur), reflexo cremastérico abolido e sinal de Prehn negativo. Com apenas 3 horas de evolução, a gônada encontra-se dentro da janela de ouro (< 6 horas), onde as taxas de viabilidade e salvamento cirúrgico superam 90%. <strong>Nenhum exame de imagem deve postergar a exploração cirúrgica quando há forte suspeita clínica!</strong> Aguardar 90 minutos pelo ultrassom colocaria o tempo de isquemia próximo ao limite crítico, aumentando o risco de necrose testicular irreversível. A abordagem cirúrgica deve incluir a fixação do testículo contralateral (orquidopexia bilateral).</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A é incorreta e perigosa: adiar a cirurgia para esperar imagem em caso clínico típico configura iatrogenia por atraso terapêutico.</li><br><li>A alternativa B está incorreta: a orquiepididimite bacteriana tem curso insidioso (dias), reflexo cremastérico preservado e sinal de Prehn positivo.</li><br><li>A alternativa D está incorreta: bloqueios anestésicos e analgesia sintomática mascaram os sintomas enquanto a gônada sofre necrose isquêmica.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 2 (USP-SP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Durante a exploração cirúrgica escrotal de urgência por torção testicular de 5 horas de evolução em um jovem de 16 anos, o cirurgião realiza a destorção do cordão espermático e constata que o testículo apresenta coloração arroxeada escura. Qual deve ser o passo subsequente da equipe cirúrgica?\n<li>A) Realizar orquiectomia simples imediata devido ao risco de sepse.</li>\n<li>B) Aplicar compressas embebidas em soro fisiológico morno por 10 a 15 minutos e reavaliar a viabilidade do parênquima.</li>\n<li>C) Fechar a bolsa escrotal e programar reexploração cirúrgica após 48 horas.</li>\n<li>D) Injetar adrenalina pura diretamente na túnica albugínea para restaurar o tônus vascular.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> A coloração escura ou arroxeada imediatamente após a destorção mecânica não significa necrose definitiva; decorre primariamente de estase e ingurgitamento venoso com trombose capilar transitória. A conduta padrão obrigatória consiste em envolver o testículo destorcido em compressas mornas umedecidas em soro fisiológico a 37-38 °C por cerca de 10 a 15 minutos, associado à suplementação de oxigênio a 100% pelo anestesista, podendo-se praticar uma pequena incisão de 2 a 3 mm na túnica albugínea para observar se há sangramento arterial vermelho-vivo. Se o testículo recuperar coloração rósea e apresentar sangramento, ele é considerado viável e deve ser preservado via orquidopexia (com posterior fixação contralateral profilática).</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a orquiectomia precoce sem teste de aquecimento sacrifica testículos potencialmente recuperáveis.</li><br><li>A alternativa C está incorreta: postergar a avaliação por 48 horas condena o testículo à isquemia sem solução imediata.</li><br><li>A alternativa D é contraindicada: vasoconstritores como adrenalina pioram o vasoespasmo e aceleram a necrose tecidual.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 3 (ENAMED / Cirurgia Geral)"
+        ],
+        [
+          "p",
+          "Homem de 60 anos, portador de diabetes mellitus mal controlado, procura a emergência com dor perineal intensa há 2 dias. Ao exame, apresenta-se febril (39 °C), taquicárdico (FC 125 bpm) e hipotenso (PA 85/50 mmHg). A inspeção genital revela edema e eritema escrotal com áreas acinzentadas de necrose cutânea no períneo e base escrotal, saída de secreção purulenta fétida e nítida crepitação à palpação de tecidos moles subcutâneos que ascende para a sínfise púbica.\nA respeito do diagnóstico e conduta para este caso, assinale a opção CORRETA:\n<li>A) Trata-se de orquite absedada; a conduta de escolha é drenagem com agulha fina guiada por ultrassom.</li>\n<li>B) Trata-se de abscesso de epidídimo; deve-se prescrever ciprofloxacino oral e alta para seguimento ambulatorial.</li>\n<li>C) Trata-se de Gangrena de Fournier; a conduta imediata inclui ressuscitação volêmica, antibioticoterapia de largo espectro e desbridamento cirúrgico de urgência.</li>\n<li>D) Trata-se de carcinoma escrotal avançado; deve-se solicitar biópsia incisional eletiva ambulatorial.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: C</strong><br><li><strong>Comentário Detalhado:</strong> O quadro é clássico de <strong>Gangrena de Fournier (fasceíte necrosante perineal)</strong>: paciente diabético, sepse com instabilidade hemodinâmica, necrose cutânea escrotoperineal, secreção fétida e crepitação subcutânea patognomônica de infecção por anaeróbios produtores de gás. Trata-se de uma emergência cirúrgica de gravidade extrema cuja mortalidade pode ultrapassar 40-50% se não houver abordagem imediata. O tratamento baseia-se na tríade: suporte hemodinâmico agressivo para choque séptico, antibioticoterapia parenteral de amplo espectro (cobrindo gram-negativos, gram-positivos como MRSA e anaeróbios) e <strong>desbridamento cirúrgico precoce, radical e extensivo de todos os tecidos desvitalizados</strong>.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>As alternativas A e B minimizam um quadro séptico fulminante com necrose fascial extensa. A drenagem por agulha ou antibioticoterapia oral ambulatorial seriam fatais.</li><br><li>A alternativa D confunde uma infecção necrosante hiperaguda com neoplasia maligna.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 26 anos procura o pronto-socorro com queixa de ereção peniana dolorosa com duração superior a 6 horas, que se iniciou sem qualquer estímulo sexual após uso recreativo de substâncias. O exame físico demonstra corpos cavernosos rígidos e intensamente dolorosos, com a glande peniana e o corpo esponjoso completamente flácidos.\nA aspiração com agulha fina dos corpos cavernosos revela sangue escuro com a seguinte gasometria: pH 7,05; pO2 22 mmHg; pCO2 78 mmHg.\nQual é a etiologia do priapismo e o fármaco simpaticomimético de escolha para injeção intracavernosa?\n<li>A) Priapismo arterial (alto fluxo); adrenalina pura.</li>\n<li>B) Priapismo isquêmico (baixo fluxo); fenilefrina diluída.</li>\n<li>C) Priapismo não isquêmico; nitroprussiato de sódio.</li>\n<li>D) Priapismo recorrente; papaverina com fentolamina.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> O quadro clínico (ereção rígida e muito dolorosa, glande flácida poupada) e laboratorial (sangue cavernoso escuro, com acidose e hipóxia severas — pH 7,05, pO2 22 mmHg) confirma o diagnóstico de <strong>Priapismo Isquêmico (de Baixo Fluxo / Veno-Oclusivo)</strong>. É uma urgência médica que cursa com risco iminente de fibrose cavernosa e disfunção erétil irreversível se durar mais de 12-24 horas. O tratamento clínico de primeira linha após aspiração e irrigação é a <strong>injeção intracavernosa de um agonista alfa-adrenérgico seletivo</strong>, sendo a <strong>FENILEFRINA</strong> a droga de escolha padrão-ouro, pois sua ação alfa-1 pura minimiza os riscos cardiovasculares (como arritmias e taquicardia) em comparação à adrenalina.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>As alternativas A e C estão incorretas: o priapismo arterial (alto fluxo) é indolor, decorre de trauma/fístula e apresenta sangue vermelho-vivo com gasometria arterial normal (pH > 7,40).</li><br><li>A alternativa D está incorreta: papaverina e fentolamina são vasodilatadores usados para provocar ereção; seu uso pioraria catastroficamente o priapismo.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 5 (SURCE / Residência Médica)"
+        ],
+        [
+          "p",
+          "Menino de 9 anos é trazido ao pronto-atendimento pediátrico com dor moderada em hemibolsa escrotal direita iniciada há 24 horas. A deambulação está discretamente prejudicada. Ao exame físico, o testículo direito tem consistência normal e orientação vertical fisiológica, sem edema difuso importante. O reflexo cremastérico está preservado bilateralmente. À palpação cuidadosa do polo superior do testículo direito, nota-se uma pequena nodulação de 3 mm, extremamente sensível, de coloração azulada visível por transparência através da pele escrotal. O sinal de Prehn é indiferente.\nAssinale o diagnóstico mais provável e a respectiva conduta:\n<li>A) Torção testicular completa; exploração cirúrgica bilateral de emergência.</li>\n<li>B) Torção de apêndice testicular (hidátide de Morgagni); tratamento conservador com repouso, suporte escrotal e anti-inflamatório.</li>\n<li>C) Tumor maligno de células germinativas; orquiectomia radical por via inguinal.</li>\n<li>D) Hérnia inguinoescrotal estrangulada; inguinotomia exploradora de urgência.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> A visualização de um nódulo endurecido azulado no polo superior da gônada em paciente pré-púbere (faixa etária escolar de 7 a 12 anos) com reflexo cremastérico preservado e testículo verticalizado corresponde ao clássico <strong>Sinal do Ponto Azul (<em>Blue Dot Sign</em>)</strong>, patognomônico de <strong>Torção de Apêndice Testicular (Hidátide de Morgagni)</strong>. Como o suprimento sanguíneo do corpo do testículo não está ameaçado e o apêndice sofre infarto asséptico autolimitado com posterior reabsorção, o tratamento é eminentemente <strong>conservador</strong>: repouso relativo, uso de suspensório escrotal atlético e anti-inflamatórios não esteroidais (AINEs) por 5 a 7 dias, com resolução espontânea dos sintomas.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A está incorreta: a torção testicular causaria dor lancinante, ausência de reflexo cremastérico e horizontalização da gônada.</li><br><li>As alternativas C e D são incompatíveis com o quadro clínico e com os achados semiológicos descritos.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ],
+        [
+          "3",
+          "Questão 6 (USP-RP / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 28 anos, sexualmente ativo, procura ambulatório com dor escrotal esquerda progressiva há 4 dias, associada a disúria. O exame físico demonstra epidídimo esquerdo aumentado de volume e doloroso, com sinal de Prehn positivo e reflexo cremastérico presente. O ultrassom Doppler confirma orquiepididimite com hiperemia do epidídimo.\nConsiderando a faixa etária e a apresentação clínica, qual é a etiologia mais provável e o esquema antimicrobiano recomendado pelo Ministério da Saúde e diretrizes urológicas?\n<li>A) <em>Escherichia coli</em>; ciprofloxacino oral por 3 dias.</li>\n<li>B) <em>Chlamydia trachomatis</em> e <em>Neisseria gonorrhoeae</em>; Ceftriaxona intramuscular (dose única) associada a Doxiciclina oral por 10 a 14 dias.</li>\n<li>C) Vírus Caxumba (Paramixovírus); aciclovir intravenoso por 7 dias.</li>\n<li>D) <em>Mycobacterium tuberculosis</em>; esquema RIPE por 6 meses.</li>"
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: B</strong><br><li><strong>Comentário Detalhado:</strong> Em homens sexualmente ativos com idade inferior a 35 anos, a orquiepididimite aguda é causada predominantemente por patógenos transmitidos por via sexual: <strong>Chlamydia trachomatis</strong> e <strong>Neisseria gonorrhoeae</strong>. O tratamento antimicrobiano empírico recomendado consiste na associação de <strong>Ceftriaxona 500 mg IM em dose única</strong> (cobertura do gonococo) com <strong>Doxiciclina 100 mg VO de 12/12h por 10 a 14 dias</strong> (cobertura da clamídia). Adicionalmente, as parceiras sexuais dos últimos 60 dias devem ser obrigatoriamente testadas e tratadas empiricamente.</li><br><li><strong>Refutação dos Distratores:</strong></li><br><li>A alternativa A seria indicada para homens com mais de 35 anos com risco de infecção por enterobactérias (<em>E. coli</em>), e não como primeira linha para homens jovens com IST.</li><br><li>A alternativa C está incorreta: a orquite da caxumba é viral, pós-parotite e não responde a aciclovir.</li><br><li>A alternativa D está incorreta: a tuberculose urogenital tem evolução crônica e granulomatosa, não aguda.</li>"
+        ],
+        [
+          "p",
+          "---"
+        ]
+      ]
+    ],
+    [
+      "9-tabela-comparativa-resumida-e-perolas-de-alta-performance",
+      0,
+      [
+        [
+          "2",
+          "9. Tabela Comparativa Resumida e Pérolas de Alta Performance"
+        ],
+        [
+          "t",
+          [
+            "Emergência Urológica",
+            "Mecanismo Central",
+            "Achados Semiológicos Patognomônicos",
+            "Conduta Crítica Imediata"
+          ],
+          [
+            [
+              "<strong>Torção Testicular</strong>",
+              "Isquemia por torção do cordão; anomalia em badalo de sino",
+              "Dor súbita, vômitos, Gouverneur (+), <strong>Cremaster abolido</strong>, <strong>Prehn negativo</strong>",
+              "<strong>Cirurgia imediata (< 6h)</strong>: destorção + orquidopexia bilateral"
+            ],
+            [
+              "<strong>Orquiepididimite Aguda</strong>",
+              "Infecção bacteriana ascendente (DST < 35a ou <em>E. coli</em> > 35a)",
+              "Dor insidiosa, disúria, febre, <strong>Cremaster preservado</strong>, <strong>Prehn positivo</strong>",
+              "Antibioticoterapia específica (Ceftriaxona + Doxi ou Quinolona)"
+            ],
+            [
+              "<strong>Torção de Hidátide</strong>",
+              "Infarto do apêndice testicular de Müller (7 a 12 anos)",
+              "Dor moderada no polo superior, cremaster normal, <strong>Sinal do Ponto Azul</strong>",
+              "Tratamento conservador (AINEs, repouso, suspensório)"
+            ],
+            [
+              "<strong>Gangrena de Fournier</strong>",
+              "Fasceíte necrosante sinérgica fascial perineal (diabéticos)",
+              "Dor intensa, choque séptico, necrose cutânea escrotal, <strong>crepitação tecidual</strong>",
+              "<strong>Desbridamento cirúrgico radical imediato</strong> + Esquema ATB amplo"
+            ],
+            [
+              "<strong>Priapismo Isquêmico</strong>",
+              "Síndrome compartimental veno-oclusiva cavernosa (> 4h)",
+              "Ereção rígida e dolorosa, <strong>glande flácida</strong>, sangue escuro acidótico",
+              "<strong>Punção/Aspiração + Fenilefrina intracavernosa</strong> (< 12h)"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Pérolas de Alta Performance (High-Yield Pearls):"
+        ],
+        [
+          "p",
+          "1. <strong>Reflexo cremastérico é o árbitro do escroto agudo:</strong> Se estiver ausente em um adolescente com dor aguda, é torção até prova em contrário no centro cirúrgico.\n2. <strong>Sinal de Prehn:</strong> Alivia a dor = Epididimite (Prehn positivo). Não alivia ou piora = Torção (Prehn negativo).\n3. <strong>Cirurgia de torção é SEMPRE bilateral:</strong> A deformidade em badalo de sino é bilateral em até 80%; fixar o outro lado é obrigatório para evitar anorquia futura.\n4. <strong>Fournier poupa os testículos:</strong> A vascularização gonadal vem direto da aorta (L2), enquanto a necrose consome as fáscias de Colles, Dartos e Scarpa. <strong>Não remova os testículos no desbridamento!</strong>\n5. <strong>Priapismo isquêmico:</strong> Glande mole e corpos cavernosos de pedra. Fármaco de escolha: <strong>Fenilefrina</strong> (alfa-1 agonista puro)."
+        ]
+      ]
+    ],
+    [
+      "10-trauma-testicular-e-rotura-da-tunica-albuginea",
+      0,
+      [
+        [
+          "2",
+          "10. Trauma Testicular e Rotura da Túnica Albugínea"
+        ],
+        [
+          "p",
+          "O <strong>trauma escrotal e testicular</strong> representa outra afecção de alta prevalência nos plantões de pronto-socorro cirúrgico, decorrente habitualmente de acidentes esportivos (artes marciais, futebol, ciclismo), agressões físicas, acidentes automobilísticos ou lesões por armas de fogo e armas brancas."
+        ],
+        [
+          "3",
+          "Fisiopatologia da Ruptura Testicular Fechada:"
+        ],
+        [
+          "p",
+          "<li>Sob condições fisiológicas de repouso, a mobilidade natural dos testículos dentro do saco escrotal, o deslizamento proporcionado pelo filme líquido da túnica vaginal e o reflexo cremastérico conferem proteção mecânica eficaz contra impactos externos.</li>\n<li>Contudo, quando a gônada sofre uma desaceleração contusa violenta que a esmaga diretamente de encontro às estruturas ósseas rígidas adjacentes (a sínfise púbica ou os ramos isquiopúbicos), a pressão hidrostática intragonadal excede a resistência tênsil máxima da <strong>túnica albugínea</strong> (estimada em cerca de 50 kg de força súbita).</li>\n<li>A albugínea rompe-se com laceração de sua cápsula fibrosa, ocorrendo <strong>extrusão imediata de túbulos seminíferos e polpa testicular</strong> para o interior da cavidade da túnica vaginal, acompanhada de hemorragia intraparenquimatosa maciça e formação de um volumoso <strong>hematocele</strong> (acúmulo de sangue coagulado entre os folhetos parietal e visceral da vaginal).</li>"
+        ],
+        [
+          "3",
+          "Avaliação Diagnóstica e Propedêutica:"
+        ],
+        [
+          "p",
+          "1. <strong>Quadro Clínico:</strong> Dor lancinante imediata, náuseas e vômitos autonômicos, aumento rápido e dramático do volume escrotal com equimose extensa da hemibolsa acometida. A palpação manual da gônada torna-se extremamente dolorosa e frequentemente impossível de delimitar o contorno testicular devido à tensão do hematocele.\n2. <strong>Ultrassom Doppler da Bolsa Escrotal:</strong>\n<li>É o método de imagem de escolha para avaliar a integridade anatômica do testículo após trauma fechado.</li>\n<li><em>Critérios Diagnósticos de Ruptura Testicular:</em></li>\n<li>Descontinuidade ou perda da nitidez do contorno ecogênico regular da túnica albugínea;</li>\n<li>Ecotextura heterogênea do parênquima testicular com áreas focais de hemorragia e isquemia;</li>\n<li>Protrusão de parênquima testicular para fora dos limites da gônada;</li>\n<li>Hematocele volumoso associado a ausência ou redução do fluxo vascular intraparenquimatoso ao Doppler colorido.</li>"
+        ],
+        [
+          "3",
+          "Conduta Cirúrgica de Emergência:"
+        ],
+        [
+          "p",
+          "<li>A confirmação ultrassonográfica ou a forte suspeita clínica de <strong>ruptura da túnica albugínea é indicação absoluta de exploração cirúrgica de urgência!</strong></li>\n<li><em>Por que a cirurgia precoce (< 24 a 48 horas) é mandatória?</em></li>\n<li>A exploração cirúrgica precoce atinge taxas de salvamento gonadal superiores a <strong>90%</strong>, comparadas a menos de 30% a 40% quando se adota tratamento conservador expectante em rupturas verdadeiras.</li>\n<li>O tratamento conservador inadvertido de uma ruptura albugínea resulta em infecção secundária com abscesso gonadal, necrose isquêmica por hiperpressão, atrofia testicular tardia, orquite autoimune com formação de anticorpos antiespermatozoides e dor crônica incapacitante.</li>\n<li><em>Etapas da Cirurgia de Trauma Testicular:</em></li>\n  1. Incisão escrotal transversa ampla ou na rafe mediana;\n  2. Abertura da túnica vaginal e drenagem/evacuação completa dos coágulos do hematocele;\n  3. Exteriorização do testículo e identificação minuciosa do sítio de laceração da albugínea;\n  4. Desbridamento conservador dos túbulos seminíferos necrosados que se encontram exteriorizados e desvitalizados;\n  5. <strong>Rafia primária da túnica albugínea</strong> com sutura contínua ou pontos separados utilizando fio absorvível de absorção lenta (Poliglactina / Vicryl 3-0 ou PDS 4-0);\n  6. Se a perda tecidual da albugínea for muito extensa impedindo o fechamento primário sem tensão, pode-se realizar enxerto livre com túnica vaginal parietal autológa (<em>tunica vaginalis flap</em>);\n  7. Lavagem abundante com soro fisiológico, revisão rigorosa da hemostasia e fechamento da bolsa escrotal com colocação de dreno laminar (tipo Penrose) por 24 a 48 horas."
+        ]
+      ]
+    ]
+  ]
+}

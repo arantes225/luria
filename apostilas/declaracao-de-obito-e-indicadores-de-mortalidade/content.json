@@ -1,0 +1,1234 @@
+{
+  "v": 2,
+  "s": "declaracao-de-obito-e-indicadores-de-mortalidade",
+  "t": "Declaração de Óbito e Indicadores de Mortalidade",
+  "p": "Declaração de Óbito e Indicadores de Mortalidade — Livro-Texto LURIA",
+  "d": "Tratado Completo LURIA: Fisiopatologia, Diagnóstico, Condutas Atualizadas e Questões Comentadas",
+  "a": "Medicina Preventiva",
+  "m": "Medicina Preventiva",
+  "h": [
+    "Apostila LURIA",
+    "Declaração de Óbito e Indicadores de Mortalidade",
+    "Tratado Completo LURIA: Fisiopatologia, Diagnóstico, Condutas Atualizadas e Questões Comentadas",
+    [
+      "Área: Medicina Preventiva",
+      "Matéria: Medicina Preventiva",
+      "Tema: Declaração de Óbito e Indicadores de Mortalidade"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "introdu-o-e-fundamentos",
+      "Introdução e Fundamentos"
+    ],
+    [
+      "0-auditoria-pr-via-e-material-comparativo",
+      "0. Auditoria prévia e material comparativo"
+    ],
+    [
+      "1-por-que-a-declara-o-de-bito-documento-cl-nico-e-de-sa-de-p-blica",
+      "1. Por que a Declaração de Óbito é documento clínico e de saúde pública"
+    ],
+    [
+      "2-termos-que-precisam-estar-claros-antes-de-preencher",
+      "2. Termos que precisam estar claros antes de preencher"
+    ],
+    [
+      "3-fluxo-institucional-quem-atesta-e-quem-emite-a-do",
+      "3. Fluxo institucional — quem atesta e quem emite a DO?"
+    ],
+    [
+      "4-como-preencher-a-sequ-ncia-de-causas-m-todo-inverso",
+      "4. Como preencher a sequência de causas — método inverso"
+    ],
+    [
+      "5-bito-fetal-perda-gestacional-e-neonatal-atualiza-o-importante-de-2026",
+      "5. Óbito fetal, perda gestacional e neonatal — atualização importante de 2026"
+    ],
+    [
+      "6-partes-do-formul-rio-o-que-cada-informa-o-significa",
+      "6. Partes do formulário — o que cada informação significa"
+    ],
+    [
+      "7-sistema-de-informa-es-sobre-mortalidade-sim-e-sinasc",
+      "7. Sistema de Informações sobre Mortalidade (SIM) e SINASC"
+    ],
+    [
+      "8-indicadores-essenciais-e-c-lculo",
+      "8. Indicadores essenciais e cálculo"
+    ],
+    [
+      "9-leitura-cr-tica-compara-es-entre-munic-pios-e-anos",
+      "9. Leitura crítica: comparações entre municípios e anos"
+    ],
+    [
+      "10-investiga-o-de-bitos-evit-veis-e-vigil-ncia",
+      "10. Investigação de óbitos evitáveis e vigilância"
+    ],
+    [
+      "11-fluxos-operacionais-para-plant-o-e-aps",
+      "11. Fluxos operacionais para plantão e APS"
+    ],
+    [
+      "12-casos-cl-nicos-completos-e-comentados",
+      "12. Casos clínicos completos e comentados"
+    ],
+    [
+      "13-quest-es-autorais-comentadas-enamed-e-resid-ncia",
+      "13. Questões autorais comentadas — ENAMED e residência"
+    ],
+    [
+      "14-p-rolas-luria-e-checklist-pr-preenchimento",
+      "14. Pérolas LURIA e checklist pré-preenchimento"
+    ],
+    [
+      "15-candidatas-de-elementos-visuais-a-produzir-curar",
+      "15. Candidatas de elementos visuais a produzir/curar"
+    ],
+    [
+      "16-bibliografia-prim-ria-e-diverg-ncias-documentadas",
+      "16. Bibliografia primária e divergências documentadas"
+    ],
+    [
+      "17-auditoria-editorial-pontos-ainda-pendentes",
+      "17. Auditoria editorial — pontos ainda pendentes"
+    ],
+    [
+      "regras-codificacao-cid-causa-basica-mortalidade",
+      "Regras de Seleção da Causa Básica de Morte segundo a CID-10 e Portarias do Ministério da Saúde"
+    ],
+    [
+      "indicadores-avancados-mortalidade-transicao-demografica",
+      "Indicadores Epidemiológicos de Mortalidade, Transição Demográfica e Carga Global de Doença (DALY)"
+    ],
+    [
+      "complemento-avancado-especializado",
+      "Complemento de Medicina Legal e Epidemiologia Sanitária: Fluxos Médico-Legais, Preenchimento da DO e Transição Demográfica"
+    ],
+    [
+      "complemento-especializado-fase2",
+      "Mortalidade Materna e Infantil: Fórmulas Matemáticas, Indicadores do ODM/ODS e Estratificação Epidemiológica"
+    ],
+    [
+      "complemento-final-especializado",
+      "Estudos de Casos Complexos de Declaração de Óbito e Auditoria de Qualidade em Saúde Pública"
+    ],
+    [
+      "complemento-micro-normativo",
+      "Aspectos Deontológicos e Legislação do Conselho Federal de Medicina (Resolução CFM 1.779/2005)"
+    ]
+  ],
+  "q": [
+    [
+      "introdu-o-e-fundamentos",
+      0,
+      [
+        [
+          "2",
+          "Introdução e Fundamentos"
+        ],
+        [
+          "p",
+          "<h1>LURIA | Aula 175 — Declaração de Óbito e Indicadores de Mortalidade</h1>"
+        ],
+        [
+          "p",
+          "<strong>Área:</strong> Medicina Preventiva e Saúde Coletiva • Medicina Legal • Clínica Médica • Obstetrícia  <br><strong>Lote oficial:</strong> 08, tema 175/260 | <strong>Data:</strong> 14/10/2026  <br><strong>Estágio:</strong> RASCUNHO EDITORIAL AUTORAL INICIAL — não homologado, não publicado; critérios administrativos e jurídicos devem ser confirmados por gestor local e fontes vigentes antes de utilização profissional."
+        ],
+        [
+          "p",
+          "> <strong>Pulo do Gato LURIA:</strong> a causa básica da morte é a doença, lesão ou circunstância que iniciou a cadeia de eventos que levou ao óbito. Na Parte I da Declaração de Óbito, ela fica na <strong>última linha efetivamente preenchida</strong>, não necessariamente na linha “d”. “Parada cardiorrespiratória” é mecanismo terminal, não explicação causal adequada. <strong>Morte por queda, acidente ou agressão continua sendo causa externa mesmo que a pessoa morra meses depois por complicação.</strong>"
+        ]
+      ]
+    ],
+    [
+      "0-auditoria-pr-via-e-material-comparativo",
+      0,
+      [
+        [
+          "2",
+          "0. Auditoria prévia e material comparativo"
+        ],
+        [
+          "p",
+          "A consulta ao catálogo \\`apostilas/\\` do GitHub não identificou uma apostila própria de Declaração de Óbito e Indicadores de Mortalidade. Foram consultados dois materiais relacionados disponíveis no Drive: \\`Vigilância epidemiológica.pdf\\` (~2,7 mil caracteres de extração), que cita SIM/SINASC e a DO brevemente, e \\`02 - TCE GRAVE, MORTE ENCEFALICA.pdf\\` (~18 mil caracteres), que explica morte encefálica e faz breve menção a DO em óbitos por causa externa. <strong>Nenhum é apostila equivalente completa</strong> e os arquivos contêm marcação “Medicina Livre”, sem autoria do Estratégia MED comprovada. Não se copiou qualquer texto, tabela ou figura. Os pontos ausentes dos comparativos — sequência causal, responsável pela declaração, mortes suspeitas, óbitos fetais e taxas de mortalidade — são desenvolvidos originalmente a seguir."
+        ],
+        [
+          "p",
+          "<strong>Diretrizes primárias</strong>: Ministério da Saúde, Manual de Instruções para Preenchimento da Declaração de Óbito (portal atualizado em julho/2026), Manual de Vigilância do Óbito de Causa Natural Inespecífica (2024), Portaria SVS/MS 116/2009, Resolução CFM 1.779/2005, normas SVO 2025 e Portaria GM/MS <strong>10.273 de 26/02/2026</strong> sobre humanização do luto e definições. É necessário distinguir a definição ampliada de “óbito fetal” no cuidado humanizado, publicada em 2026, dos critérios técnico-administrativos de emissão e das regras de inclusão estatística, que <strong>não devem ser tomados como automaticamente idênticos</strong>. Quando houver divergência entre versões, conferir norma aplicável ao serviço."
+        ]
+      ]
+    ],
+    [
+      "1-por-que-a-declara-o-de-bito-documento-cl-nico-e-de-sa-de-p-blica",
+      0,
+      [
+        [
+          "2",
+          "1. Por que a Declaração de Óbito é documento clínico e de saúde pública"
+        ],
+        [
+          "p",
+          "A Declaração de Óbito (DO) cumpre funções diferentes, mas complementares. É documento médico oficial, base para o registro civil de óbito e fonte de dados do <strong>Sistema de Informações sobre Mortalidade (SIM)</strong>. A certidão de óbito, por outro lado, é expedida pelo <strong>cartório de registro civil</strong> a partir dos procedimentos legais e documentos exigidos. Confundir DO com certidão produz erros de orientação a famílias."
+        ],
+        [
+          "p",
+          "A DO ajuda a compreender o perfil de mortalidade por doenças cardiovasculares, câncer, causas externas, condições maternas e outras. Quando médicos preenchem “parada cardíaca”, “senilidade” sem investigação, “falência de múltiplos órgãos” ou “causa indeterminada” em situações em que há doença conhecida, reduz-se a qualidade da informação. Esses termos descrevem processos terminais ou baixa especificidade, não as etiologias que orientam prevenção e políticas de saúde."
+        ],
+        [
+          "p",
+          "<strong>Pergunta de prova:</strong> por que a causa básica importa mais do que a última manifestação fisiológica? Porque programas de prevenção devem agir sobre fatores que iniciaram a sequência — pneumonia, câncer, doença hipertensiva, queda, violência ou doença infecciosa — e não sobre o fato universal de que, ao morrer, o coração deixa de bater."
+        ]
+      ]
+    ],
+    [
+      "2-termos-que-precisam-estar-claros-antes-de-preencher",
+      0,
+      [
+        [
+          "2",
+          "2. Termos que precisam estar claros antes de preencher"
+        ],
+        [
+          "p",
+          "<strong>Óbito:</strong> morte de uma pessoa, após confirmação segundo critérios clínicos e normativos aplicáveis. Em morte encefálica, o horário e a metodologia são específicos e devem seguir a resolução CFM vigente, sem confundir com momento de retirada de suporte."
+        ],
+        [
+          "p",
+          "<strong>Causa imediata:</strong> doença ou condição mórbida que produziu diretamente a morte, na linha “a” da Parte I. Deve ter relação causal plausível com os antecedentes."
+        ],
+        [
+          "p",
+          "<strong>Causa intermediária:</strong> condição que liga a causa básica à imediata. Pode haver uma ou várias; preencher apenas as necessárias para sequência."
+        ],
+        [
+          "p",
+          "<strong>Causa básica:</strong> doença ou lesão que iniciou a sequência de eventos mórbidos que levaram à morte; ou circunstâncias do acidente/violência que produziram a lesão fatal. Escrevê-la na última linha utilizada da Parte I."
+        ],
+        [
+          "p",
+          "<strong>Contribuintes:</strong> condições que agravaram o curso, mas que <strong>não pertencem à cadeia causal direta</strong> da Parte I. Registrá-las na Parte II; diabetes, obesidade, tabagismo ou insuficiência renal podem estar na Parte II em alguns cenários e na Parte I em outros, dependendo da verdadeira relação causal."
+        ],
+        [
+          "p",
+          "<strong>Morte natural:</strong> decorrente de doença/processo mórbido; pode ter assistente médico e causa conhecida ou ocorrer sem assistência e causa incerta."
+        ],
+        [
+          "p",
+          "<strong>Morte por causa externa:</strong> acidente, agressão, autoagressão/suicídio, evento violento ou outras circunstâncias externas. Não se torna natural quando o paciente sobreviveu semanas ou meses antes de falecer em consequência do trauma."
+        ],
+        [
+          "p",
+          "<strong>Causa terminal ou mecanismo fisiológico:</strong> parada cardiorrespiratória, assistolia, insuficiência respiratória terminal ou falência de órgãos sem etiologia, <strong>não é substituto da causa básica</strong>."
+        ],
+        [
+          "p",
+          "<strong>Causa mal definida:</strong> relato insuficiente, por exemplo “morte súbita” sem investigação quando havia oportunidade de averiguação. Às vezes a causa permanece realmente desconhecida mesmo após investigação; o princípio é não inventar diagnóstico."
+        ]
+      ]
+    ],
+    [
+      "3-fluxo-institucional-quem-atesta-e-quem-emite-a-do",
+      0,
+      [
+        [
+          "2",
+          "3. Fluxo institucional — quem atesta e quem emite a DO?"
+        ],
+        [
+          "p",
+          "Em morte natural com assistência, a regra geral é que o médico que prestava assistência emita a DO, ou substituto institucional conforme contexto. Em morte natural <strong>sem assistência</strong> e com causa não esclarecida, o <strong>Serviço de Verificação de Óbito (SVO)</strong> possui função de esclarecimento e emissão quando disponível; em locais sem SVO, há regras legais específicas para serviço público de saúde/médico local. O médico que constata um óbito não deve presumir automaticamente competência para preenchê-lo em qualquer cenário."
+        ],
+        [
+          "p",
+          "<strong>Causa externa conhecida ou suspeita</strong> demanda fluxo médico-legal, geralmente <strong>Instituto Médico Legal (IML)</strong> ou serviço equivalente conforme organização territorial. A DO de pessoa que morre após queda, intoxicação acidental, agressão ou acidente de trânsito deve observar esse enquadramento, mesmo se o hospital internou o paciente por longo período."
+        ],
+        [
+          "t",
+          [
+            "Situação",
+            "Caminho geral",
+            "Erro frequente"
+          ],
+          [
+            [
+              "Internado e morto por doença conhecida",
+              "Médico assistente ou substituto habilitado da instituição",
+              "Delegar a DO ao cartório ou a profissional sem atribuição médica"
+            ],
+            [
+              "Pessoa com doença conhecida em acompanhamento domiciliar/ambulatorial",
+              "Médico/instituição assistencial, conforme norma e recursos locais",
+              "Encaminhar automaticamente ao IML sem suspeita externa"
+            ],
+            [
+              "Morte natural sem assistência/sem causa esclarecida",
+              "Verificar SVO e normas locais; serviços habilitados",
+              "Inventar diagnóstico sem informação clínica"
+            ],
+            [
+              "Morte após acidente/violência, mesmo tardia",
+              "IML/serviço médico-legal conforme legislação local",
+              "Rotular como “pneumonia natural” e omitir acidente causal"
+            ],
+            [
+              "Morte suspeita de causa externa",
+              "Priorizar avaliação médico-legal",
+              "Emitir DO como natural para evitar atraso"
+            ],
+            [
+              "Óbito fetal ou neonatal",
+              "Aplicar fluxos obstétricos, definições e registro específicos",
+              "Confundir natimorto com recém-nascido vivo que morreu após minutos"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "O papel de <strong>verificar/constatar a morte</strong> é distinto de identificar etiologia médico-legal. Em causa externa, o hospital deve documentar assistência, circunstâncias relatadas, exames, achados e evolução, mas seguir encaminhamento correto."
+        ],
+        [
+          "3",
+          "SVO versus IML — comparação detalhada"
+        ],
+        [
+          "p",
+          "O SVO investiga <strong>mortes naturais</strong> com diagnóstico não esclarecido e apoia qualificação da causa no SIM, podendo realizar necropsia conforme estrutura e indicação. O IML analisa <strong>mortes violentas e suspeitas de causa externa</strong>, produzindo documentação médico-legal e preservando elementos de prova. As normas de rede de SVO de 2025 reforçam encaminhamento ao IML de casos com causa externa confirmada/suspeita identificada antes ou durante exame, assim como outros casos definidos em normas específicas."
+        ],
+        [
+          "p",
+          "<strong>Exemplo crítico:</strong> idosa cai no banheiro, fratura quadril, é operada, evolui com pneumonia e morre após 42 dias. A queda é a circunstância externa iniciadora. A morte não muda para “natural” porque a complicação final é infecciosa. Registros de trauma e documentos devem esclarecer a cadeia; o fluxo é médico-legal."
+        ]
+      ]
+    ],
+    [
+      "4-como-preencher-a-sequ-ncia-de-causas-m-todo-inverso",
+      0,
+      [
+        [
+          "2",
+          "4. Como preencher a sequência de causas — método inverso"
+        ],
+        [
+          "p",
+          "Primeiro pergunte: <em>qual evento mórbido fez a pessoa morrer diretamente?</em> Depois: <em>o que provocou esse evento?</em> Continue até chegar à doença/lesão inicial que melhor explica a cadeia. Na <strong>Parte I</strong>, cada linha abaixo deve explicar etiologicamente a condição da linha acima. Evitar listas de diagnósticos sem conexão causal."
+        ],
+        [
+          "3",
+          "Exemplo 1 — Pneumonia relacionada a neoplasia"
+        ],
+        [
+          "p",
+          "<li>Linha a: pneumonia bacteriana grave — duração aproximada: dias.</li>\n<li>Linha b: obstrução brônquica por carcinoma pulmonar — semanas/meses.</li>\n<li>Linha c: carcinoma broncogênico primário — meses/anos.</li>\n<li>Parte II: diabetes mellitus tipo 2 (quando contribuiu, mas não integra cadeia da pneumonia tumoral).</li>"
+        ],
+        [
+          "p",
+          "A causa básica é o <strong>carcinoma pulmonar</strong>, não a pneumonia, embora a pneumonia tenha precipitado o óbito. Se a pneumonia foi adquirida por outro mecanismo e tumor é comorbidade não causal, a estrutura muda; copiar exemplos sem interpretar história gera erro."
+        ],
+        [
+          "3",
+          "Exemplo 2 — Infarto, ruptura e tamponamento"
+        ],
+        [
+          "p",
+          "<li>Linha a: tamponamento cardíaco — horas.</li>\n<li>Linha b: ruptura de parede ventricular — horas.</li>\n<li>Linha c: infarto agudo do miocárdio — dias.</li>\n<li>Linha d: aterosclerose coronariana — anos, quando sustentada e relevante à cadeia.</li>"
+        ],
+        [
+          "p",
+          "Atenção: em outros IAM, a sequência pode ser insuficiência cardíaca aguda por necrose miocárdica; não forçar tamponamento quando ele não ocorreu."
+        ],
+        [
+          "3",
+          "Exemplo 3 — Diabetes, nefropatia e complicação fatal"
+        ],
+        [
+          "p",
+          "<li>Linha a: edema agudo de pulmão — horas.</li>\n<li>Linha b: insuficiência renal crônica descompensada — anos.</li>\n<li>Linha c: nefropatia diabética — anos.</li>\n<li>Linha d: diabetes mellitus — anos.</li>"
+        ],
+        [
+          "p",
+          "Se houve infarto agudo independente do diabetes em vez de edema por retenção hídrica, a construção exige evidência clínica. A DO é resumo causal documentado e plausível, não exercício de encaixar doenças em quatro linhas."
+        ],
+        [
+          "3",
+          "Exemplo 4 — Queda e lesão cerebral"
+        ],
+        [
+          "p",
+          "Após queda da própria altura, hematoma subdural e edema cerebral, a declaração emitida no fluxo médico-legal pode apresentar cadeia de lesões e a <strong>circunstância externa da queda</strong> como origem. O assistente precisa documentar relação temporal e traumática; não emitir como “edema cerebral espontâneo”."
+        ],
+        [
+          "3",
+          "Regras de qualidade"
+        ],
+        [
+          "p",
+          "1. Registrar <strong>uma única causa por linha</strong> da Parte I, com sequência temporal coerente; quando há múltiplas contribuintes que não integram a cadeia, reservar Parte II.<br>2. Não deixar de registrar a <strong>causa básica</strong> apenas para preencher detalhes inespecíficos e ocupar todas as linhas.<br>3. A causa básica pode ficar em <strong>b, c ou d</strong>, desde que seja a última linha preenchida.<br>4. Preencher intervalo aproximado entre início de cada condição e morte: horas/dias/semanas/anos. O tempo ajuda a confirmar coerência; não exige precisão impossível.<br>5. Usar nomes completos de doenças, evitar abreviaturas e siglas.<br>6. Para neoplasia, registrar órgão/sítio primário e histologia quando conhecidos; diferenciar tumor primário e metástase.<br>7. Se há infecção, identificar agente ou foco quando conhecido, sem inventar.<br>8. Não codificar CID por palpite em campo reservado ao codificador da vigilância, conforme fluxo local; responsabilidade médica é registrar diagnósticos legíveis e precisos.<br>9. Se causa realmente indeterminada, descrever com honestidade e acionar investigação adequada.<br>10. Respeitar sigilo e proteção de dados: DO contém informações pessoais sensíveis; uso secundário em pesquisa/aula demanda anonimização."
+        ]
+      ]
+    ],
+    [
+      "5-bito-fetal-perda-gestacional-e-neonatal-atualiza-o-importante-de-2026",
+      0,
+      [
+        [
+          "2",
+          "5. Óbito fetal, perda gestacional e neonatal — atualização importante de 2026"
+        ],
+        [
+          "p",
+          "<strong>Nascido vivo</strong> é aquele que após separação completa do corpo materno apresenta algum sinal de vida, independentemente de peso ou idade gestacional, incluindo batimento cardíaco, pulsação de cordão ou movimentos voluntários. Se falece depois, há <strong>óbito neonatal</strong>, e não natimorto, ainda que a sobrevida seja de poucos minutos. O registro de nascimento vivo e de morte exige os documentos correspondentes, conforme normas."
+        ],
+        [
+          "p",
+          "<strong>Óbito fetal/natimorto</strong> é morte antes da expulsão/extração completa, sem sinais de vida após separação. A <strong>Portaria GM/MS 10.273/2026</strong> no âmbito da Política Nacional de Humanização do Luto Materno e Parental ampliou sua definição <strong>independentemente da idade gestacional</strong> para fins humanitários, introduzindo distinções em relação a perda gestacional. Essa definição ampliada e os direitos de acolhimento <strong>não devem ser confundidos</strong> automaticamente com os limiares administrativos ou de inclusão em certas estatísticas de natimortalidade de documentos anteriores. A Portaria SVS/MS 116/2009 e diversos manuais antigos usam critérios de emissão de DO fetal, como gestação de pelo menos 20 semanas <strong>ou</strong> peso de 500 g <strong>ou</strong> comprimento de 25 cm, conforme redação original; outros instrumentos estatísticos usam peso ≥500 g ou, quando desconhecido, 22 semanas/25 cm. Esses documentos divergem no recorte e não devem ser fundidos em uma regra única sem verificar as alterações mais recentes e o fluxo local."
+        ],
+        [
+          "3",
+          "O que mudou na prática assistencial com a Política de Humanização do Luto?"
+        ],
+        [
+          "p",
+          "O cuidado deve reconhecer sofrimento e direitos das famílias independentemente de idade gestacional. Entre as medidas descritas na Portaria 10.273 estão: comunicação sensível, garantia de privacidade, possibilidade de acompanhante, oportunidade de despedida quando desejada, nome escolhido pelos pais para natimorto no registro quando aplicável, encaminhamento ao cuidado psicológico, decisão familiar sobre sepultamento ou cremação observando a legislação, e continuidade da atenção na APS. A finalidade dessas medidas não é impor ritual, mas oferecer escolhas e proteger a dignidade."
+        ],
+        [
+          "p",
+          "<strong>Armadilha de prova de 2026:</strong> afirmar que “menos de 20 semanas nunca pode ser óbito fetal” ignora o novo recorte conceitual da política de luto. A pergunta sobre <strong>qual DO emitir e como registrar no SIM</strong> continua dependente das normas administrativas e da situação concreta. Antes da publicação final desta apostila, a equipe jurídica/editorial deve reconciliar formalmente as atualizações e os documentos ainda vigentes."
+        ]
+      ]
+    ],
+    [
+      "6-partes-do-formul-rio-o-que-cada-informa-o-significa",
+      0,
+      [
+        [
+          "2",
+          "6. Partes do formulário — o que cada informação significa"
+        ],
+        [
+          "p",
+          "O formulário nacional contempla campos de identificação, residência, ocorrência do evento, características do óbito, condições e causas, responsável médico e informações específicas quando pertinentes. O bloco de <strong>condições e causas</strong> é central para evitar causas básicas mal definidas, mas outros blocos determinam análise territorial e qualidade do SIM."
+        ],
+        [
+          "p",
+          "<strong>Local de ocorrência versus residência:</strong> um paciente pode residir em município A e morrer internado em município B. Para estimar risco da população residente usa-se em regra o município de residência; para dimensionar carga de serviços e eventos ocorridos em uma unidade, local de ocorrência pode ser informativo. Misturar os dois denominadores/recortes gera indicadores errados."
+        ],
+        [
+          "p",
+          "<strong>Data do óbito versus data de emissão:</strong> não presumir equivalência se um documento foi emitido depois. <strong>Data/hora em morte encefálica:</strong> seguir a conclusão protocolar da determinação e não o momento de suspensão do ventilador. Em causas externas com paciente em morte encefálica, o fluxo médico-legal continua relevante."
+        ],
+        [
+          "p",
+          "<strong>Escolaridade, cor/raça, ocupação e outros campos sociodemográficos:</strong> devem ser obtidos e registrados conforme fontes e normas, sem inferência estereotipada. São variáveis importantes para estudar desigualdades, condições ocupacionais e acesso ao cuidado."
+        ]
+      ]
+    ],
+    [
+      "7-sistema-de-informa-es-sobre-mortalidade-sim-e-sinasc",
+      0,
+      [
+        [
+          "2",
+          "7. Sistema de Informações sobre Mortalidade (SIM) e SINASC"
+        ],
+        [
+          "p",
+          "O <strong>SIM</strong> compila dados a partir das Declarações de Óbito; o <strong>SINASC</strong> utiliza Declarações de Nascidos Vivos para informações sobre nascimentos. O cruzamento dos dois permite estudar mortalidade infantil, neonatal, materna e perinatal, detectar registros incongruentes e investigar óbitos evitáveis."
+        ],
+        [
+          "p",
+          "<strong>Sub-registro</strong> significa que eventos reais não entram na base ou são registrados incompletamente. <strong>Causas mal definidas</strong> reduzem utilidade da análise mesmo quando o óbito foi registrado. <strong>Correção por sub-registro</strong> e investigação de óbitos podem alterar taxas, especialmente ao comparar regiões e períodos."
+        ],
+        [
+          "p",
+          "Não tomar contagem bruta como risco: cidade grande frequentemente tem mais óbitos absolutos apenas por ter mais habitantes. Escolher corretamente denominador, população em risco, tempo e padronização etária."
+        ]
+      ]
+    ],
+    [
+      "8-indicadores-essenciais-e-c-lculo",
+      0,
+      [
+        [
+          "2",
+          "8. Indicadores essenciais e cálculo"
+        ],
+        [
+          "3",
+          "Mortalidade geral"
+        ],
+        [
+          "p",
+          "<strong>Coeficiente bruto de mortalidade</strong> = (óbitos de residentes em uma área e período / população residente média do mesmo período) × 1.000. É útil para carga populacional, mas comparações entre regiões são influenciadas por estrutura etária."
+        ],
+        [
+          "p",
+          "<em>Exemplo</em>: cidade de 100.000 habitantes com 800 óbitos no ano: 800/100.000 ×1.000 = <strong>8 óbitos por 1.000 habitantes</strong>."
+        ],
+        [
+          "3",
+          "Mortalidade específica por causa"
+        ],
+        [
+          "p",
+          "<strong>Taxa de mortalidade por causa</strong> = óbitos de residentes atribuídos à causa / população em risco da área e período × 100.000 (ou outra base explicitada). Evitar confundir com mortalidade proporcional, que usa <strong>total de mortes</strong> como denominador."
+        ],
+        [
+          "p",
+          "<em>Exemplo</em>: 60 óbitos por doença cardiovascular em 100.000 moradores = <strong>60/100.000 habitantes</strong> no período, se atribuição de causa básica e população forem adequadas."
+        ],
+        [
+          "3",
+          "Mortalidade proporcional"
+        ],
+        [
+          "p",
+          "<strong>Proporção de óbitos por causa</strong> = mortes pela causa / todas as mortes ×100. Se 250 de 1.000 óbitos são por câncer, a mortalidade proporcional por câncer é <strong>25%</strong>. Isso <strong>não equivale</strong> ao risco individual de morrer de câncer na população geral."
+        ],
+        [
+          "3",
+          "Letalidade"
+        ],
+        [
+          "p",
+          "<strong>Proporção de letalidade</strong> = mortes pela doença entre casos diagnosticados / total de casos da doença no recorte ×100. É medida de gravidade/desfecho entre os doentes, não de risco populacional de adquirir a doença. Pode variar por seleção de casos, gravidade, diagnóstico precoce, acesso e definição temporal."
+        ],
+        [
+          "p",
+          "<em>Exemplo</em>: 10 mortes entre 200 casos de doença = <strong>5%</strong> de letalidade no grupo observado."
+        ],
+        [
+          "3",
+          "Mortalidade infantil"
+        ],
+        [
+          "p",
+          "<strong>Coeficiente de mortalidade infantil (CMI)</strong> = mortes de nascidos vivos menores de um ano / número de nascidos vivos ×1.000. Divide-se em neonatal <strong>0–27 dias completos</strong> e pós-neonatal <strong>28–364 dias</strong>. O neonatal subdivide-se em precoce <strong>0–6 dias</strong> e tardio <strong>7–27 dias</strong>."
+        ],
+        [
+          "p",
+          "<em>Exemplo</em>: município com 5.000 nascidos vivos e 50 mortes antes de 1 ano: CMI = <strong>10/1.000 nascidos vivos</strong>. Se 30 ocorreram de 0 a 27 dias, o coeficiente neonatal é 6/1.000; as 20 restantes são pós-neonatais, 4/1.000."
+        ],
+        [
+          "3",
+          "Mortalidade materna"
+        ],
+        [
+          "p",
+          "<strong>Razão de mortalidade materna (RMM)</strong> = mortes maternas segundo definição obstétrica oficial / nascidos vivos ×100.000. Em termos clássicos, considera morte durante gestação ou até <strong>42 dias</strong> após seu término por causas relacionadas ou agravadas pela gravidez e seu manejo, excluindo causas acidentais/incidentais; algumas classificações distinguem mortes maternas tardias (após 42 dias até um ano), que não entram automaticamente na RMM tradicional."
+        ],
+        [
+          "p",
+          "<em>Exemplo</em>: 6 mortes maternas em 12.000 nascidos vivos → <strong>50 por 100.000 nascidos vivos</strong>."
+        ],
+        [
+          "3",
+          "Natimortalidade e mortalidade perinatal"
+        ],
+        [
+          "p",
+          "Indicadores de mortes fetais usam diferentes critérios de inclusão por peso/idade gestacional segundo objetivo e sistema. <strong>Coeficiente de mortalidade fetal</strong> frequentemente relaciona mortes fetais definidas no recorte a total de nascimentos (nascidos vivos + óbitos fetais), multiplicado por 1.000. <strong>Mortalidade perinatal</strong> reúne óbitos fetais elegíveis no recorte e mortes neonatais precoces, sobre total de nascimentos no mesmo recorte, geralmente por 1.000. Os limiares de inclusão devem ser descritos ao comparar dados históricos e internacionais; a Portaria 10.273/2026 sobre direitos e definição assistencial de óbito fetal não autoriza misturar recortes epidemiológicos diferentes."
+        ],
+        [
+          "3",
+          "Mortalidade prematura e anos potenciais de vida perdidos"
+        ],
+        [
+          "p",
+          "Mortalidade prematura considera óbitos antes de uma idade-limite definida pela análise; APVP soma diferença entre idade-limite e idade ao morrer para mortes antes do limite. Eventos letais em idades jovens podem produzir muitos anos perdidos apesar de poucas ocorrências; útil para valorizar prevenção de traumas e doenças evitáveis. Não comparar APVP de relatórios com idades-limite diferentes sem padronizar."
+        ]
+      ]
+    ],
+    [
+      "9-leitura-cr-tica-compara-es-entre-munic-pios-e-anos",
+      0,
+      [
+        [
+          "2",
+          "9. Leitura crítica: comparações entre municípios e anos"
+        ],
+        [
+          "p",
+          "A cidade A tem mortalidade bruta de 10/1.000 e cidade B de 6/1.000. Isso <strong>não prova</strong> que A oferece pior cuidado: A pode ter proporção maior de idosos. A <strong>padronização por idade</strong> aplica taxas específicas a uma população padrão comum para separar efeito da estrutura etária do risco propriamente dito."
+        ],
+        [
+          "p",
+          "Diferença entre <strong>mortalidade por residência</strong> e <strong>por ocorrência</strong> é crucial em municípios de referência com hospitais de alta complexidade, que recebem pacientes de outras cidades. O município hospitalar pode ter muita morte por ocorrência, mas isso não indica mortalidade elevada de seus próprios moradores."
+        ],
+        [
+          "3",
+          "Erros metodológicos frequentes"
+        ],
+        [
+          "p",
+          "<li>Comparar mortes brutas de populações com tamanho diferente.</li>\n<li>Chamar percentual de mortes por câncer de “taxa de risco de câncer”.</li>\n<li>Comparar taxas anuais de doenças com critérios diagnósticos e notificação modificados sem ajuste.</li>\n<li>Ignorar denominadores pequenos (cinco mortes em uma cidade pequena podem variar muito de um ano a outro).</li>\n<li>Confundir local do nascimento/óbito com residência.</li>\n<li>Supor que aumento da proporção de morte por doenças crônicas significa sempre piora: pode refletir redução de causas infecciosas e envelhecimento.</li>\n<li>Usar dados incompletos do SIM/SINASC de ano ainda aberto como definitivos.</li>"
+        ]
+      ]
+    ],
+    [
+      "10-investiga-o-de-bitos-evit-veis-e-vigil-ncia",
+      0,
+      [
+        [
+          "2",
+          "10. Investigação de óbitos evitáveis e vigilância"
+        ],
+        [
+          "p",
+          "Óbitos maternos, infantis e fetais são eventos relevantes para comitês de prevenção e vigilância. O objetivo é reconstruir percurso de cuidado, identificar fatores clínicos, barreiras assistenciais, demora de acesso, falhas de comunicação e oportunidades de prevenção — <strong>sem confundir análise de evitabilidade com imputação automática de culpa pessoal</strong>."
+        ],
+        [
+          "p",
+          "Exemplo: recém-nascido com sepse morre após acesso tardio a unidade com suporte adequado. Investigar fatores de infecção, prematuridade, organização de transporte, comunicação entre serviços, prontuário, recursos disponíveis e momento da intervenção. A mortalidade tem determinantes clínicos e organizacionais."
+        ],
+        [
+          "p",
+          "<strong>Confidencialidade:</strong> o processo de investigação utiliza dados sensíveis; compartilhar informações com vigilância e autoridades competentes deve seguir base legal, finalidade e limites de proteção de dados."
+        ]
+      ]
+    ],
+    [
+      "11-fluxos-operacionais-para-plant-o-e-aps",
+      0,
+      [
+        [
+          "2",
+          "11. Fluxos operacionais para plantão e APS"
+        ],
+        [
+          "3",
+          "Fluxo 1 — Óbito no hospital"
+        ],
+        [
+          "p",
+          "Confirmar óbito conforme procedimento competente → avaliar se causa é natural ou externa/suspeita → revisar prontuário e cadeia causal → se morte natural e dever institucional de emissão, preencher DO completa → orientar família sobre registro civil e próximos passos → notificar/investigar eventos de vigilância conforme protocolo."
+        ],
+        [
+          "3",
+          "Fluxo 2 — Óbito domiciliar inesperado"
+        ],
+        [
+          "p",
+          "Constatar se profissional habilitado e seguro → verificar circunstâncias, sinais de possível violência/acidente, história médica disponível → <strong>suspeita externa?</strong> seguir encaminhamento médico-legal, documentando sem alterar cena/provas indevidamente → <strong>morte natural sem causa conhecida?</strong> acionar SVO ou serviço público habilitado conforme organização municipal → comunicar familiares e documentar."
+        ],
+        [
+          "3",
+          "Fluxo 3 — Óbito de gestação ou recém-nascido"
+        ],
+        [
+          "p",
+          "Distinguir sinais de vida após separação → documentar nascimento vivo ou óbito fetal, aplicar critérios administrativos atualizados e normas de cuidado humanizado → acolher luto, registrar dados obstétricos e causas quando possível → DO/DNV conforme caso → integrar vigilância e APS."
+        ],
+        [
+          "3",
+          "Fluxo 4 — Indicador de mortalidade para prova"
+        ],
+        [
+          "p",
+          "Definir evento e faixa etária → escolher numerador com base de dados correta → escolher denominador da população em risco → padronizar período/local → aplicar multiplicador 100, 1.000 ou 100.000 → interpretar limitações e possíveis vieses."
+        ]
+      ]
+    ],
+    [
+      "12-casos-cl-nicos-completos-e-comentados",
+      0,
+      [
+        [
+          "2",
+          "12. Casos clínicos completos e comentados"
+        ],
+        [
+          "3",
+          "Caso 1 — Causa básica de morte por pneumonia pós-AVC"
+        ],
+        [
+          "p",
+          "Homem de 78 anos, hipertenso, teve AVC isquêmico extenso, ficou com disfagia grave e aspirou conteúdo orofaríngeo, desenvolvendo pneumonia aspirativa com sepse e morte após três semanas."
+        ],
+        [
+          "p",
+          "<strong>Hipóteses da cadeia:</strong> sepse por pneumonia aspirativa em paciente com disfagia relacionada a AVC. <strong>Avaliação:</strong> confirmar datas e diagnósticos, relação da disfagia com AVC, gravidade infecciosa e comorbidades contribuintes. <strong>Preenchimento ilustrativo:</strong> linha a sepse, linha b pneumonia aspirativa, linha c disfagia neurogênica, linha d AVC isquêmico. Hipertensão pode entrar na Parte II se contribuiu sem integrar diretamente a cadeia, ou ser considerada antecedente causal quando comprovada relação. <strong>Por que importa:</strong> a causa básica orienta prevenção de AVC e suas complicações, e não “parada cardíaca”."
+        ],
+        [
+          "3",
+          "Caso 2 — Queda com óbito tardio"
+        ],
+        [
+          "p",
+          "Mulher de 85 anos sofre queda acidental em casa e fratura colo do fêmur; cirurgia e internação prolongada são seguidas de embolia pulmonar fatal. Há nexo clínico e temporal entre acidente, imobilidade/trauma e complicação."
+        ],
+        [
+          "p",
+          "<strong>Problema:</strong> definir responsabilidade documental e causa externa. <strong>Raciocínio:</strong> a circunstância da queda iniciou a sequência; o fato de morrer depois da cirurgia não converte o óbito em natural. <strong>Conduta:</strong> documentação clínica da cadeia, encaminhamento médico-legal conforme regra do IML local, comunicação com família e instituições. <strong>Por que importa:</strong> reconhecer origem externa preserva qualidade estatística e legal."
+        ],
+        [
+          "3",
+          "Caso 3 — Causa desconhecida sem inventar"
+        ],
+        [
+          "p",
+          "Homem de 52 anos encontrado sem vida em domicílio, sem acompanhamento recente nem documentos, sem lesões evidentes, sem testemunhas e sem doença conhecida. <strong>Hipótese:</strong> morte de causa não determinada. <strong>Raciocínio:</strong> ausência de violência aparente não prova infarto, arritmia ou morte natural; verificar achados externos, circunstâncias e rota de investigação. <strong>Conduta:</strong> SVO se aplicável, ou serviço habilitado conforme legislação local; se suspeita externa surgir, via médico-legal. <strong>Por que importa:</strong> honestidade documental é preferível a causa fabricada."
+        ],
+        [
+          "3",
+          "Caso 4 — Óbito após nascimento com breves sinais de vida"
+        ],
+        [
+          "p",
+          "Prematuro extremo nasce com batimentos cardíacos documentados após separação, recebe suporte neonatal e morre após 12 minutos. <strong>Hipótese documental:</strong> nascimento vivo seguido de óbito neonatal precoce, não natimorto. <strong>Dados:</strong> registro de sinais de vida, tempo, condições obstétricas, patologias maternas e neonatais. <strong>Conduta:</strong> DNV e DO conforme normas; preencher sequência causal real e acolher família. <strong>Por que importa:</strong> o critério de nascido vivo independe de sobrevida e de peso; o caso afeta SIM/SINASC e indicadores."
+        ],
+        [
+          "3",
+          "Caso 5 — Luto por perda gestacional e nova norma"
+        ],
+        [
+          "p",
+          "Gestante apresenta perda gestacional muito precoce, deseja despedida e informação sobre procedimentos. <strong>Problema:</strong> direitos assistenciais e documentação administrativa. <strong>Raciocínio:</strong> a Portaria GM/MS 10.273/2026 institui princípios de humanização e definição ampla de óbito fetal para cuidado, mas regras de emissão/documentação e estatística devem ser interpretadas com normas específicas. <strong>Conduta:</strong> acolher sem julgamento, oferecer suporte, esclarecer opções institucionais e legislação aplicável; não impor ritual nem usar critério estatístico como justificativa para negar assistência psicossocial. <strong>Por que importa:</strong> atualização normativa tem consequência humana real."
+        ],
+        [
+          "3",
+          "Caso 6 — Dados populacionais com confusão de denominador"
+        ],
+        [
+          "p",
+          "Município A registra 40 óbitos infantis e 4.000 nascidos vivos; município B tem 60 óbitos infantis e 12.000 nascidos vivos. <strong>Cálculo:</strong> A: 40/4.000×1.000 = <strong>10 por mil</strong>; B: 60/12.000×1.000 = <strong>5 por mil</strong>. Apesar de B ter mais óbitos em número absoluto, a mortalidade infantil relativa foi maior em A. <strong>Conduta epidemiológica:</strong> verificar sub-registro e completude antes de concluir diferença de qualidade. <strong>Por que importa:</strong> risco depende do denominador."
+        ],
+        [
+          "3",
+          "Caso 7 — Mortalidade proporcional pode subir sem aumento de risco"
+        ],
+        [
+          "p",
+          "Cidade reduz mortes por doenças infecciosas de 400 para 100 e mantém 200 mortes por câncer; o total de óbitos cai de 1.000 para 700. A participação do câncer sobe de 20% para cerca de 28,6%, embora as mortes por câncer não tenham aumentado. <strong>Interpretação:</strong> a proporção sobe porque o denominador diminuiu; não concluir que risco de morrer por câncer aumentou. <strong>Por que importa:</strong> distinguir mortalidade proporcional, risco e contagem absoluta."
+        ]
+      ]
+    ],
+    [
+      "13-quest-es-autorais-comentadas-enamed-e-resid-ncia",
+      0,
+      [
+        [
+          "2",
+          "13. Questões autorais comentadas — ENAMED e residência"
+        ],
+        [
+          "p",
+          "<strong>Q1.</strong> Sobre a Parte I da DO, a causa básica deve ser colocada: A) sempre na linha a; B) sempre na linha d, preenchendo todas as outras; C) na última linha efetivamente preenchida com sequência causal; D) apenas na Parte II. <strong>Gabarito C.</strong> A confunde causa imediata; B exige linha d desnecessariamente; D coloca causa básica em contribuintes. <strong>Revisão:</strong> ordem descendente conecta consequências à causa originária."
+        ],
+        [
+          "p",
+          "<strong>Q2.</strong> Paciente morre por tromboembolismo após fratura por queda acidental semanas antes. Qual afirmativa correta? A) a morte necessariamente é natural; B) o acidente pode manter enquadramento de causa externa, exigindo fluxo médico-legal; C) apenas tempo da internação define a natureza; D) só a trombose deve constar sem investigar queda. <strong>Gabarito B.</strong> A/C/D ignoram sequência causal e normas. <strong>Revisão:</strong> causa externa não desaparece com a demora do óbito."
+        ],
+        [
+          "p",
+          "<strong>Q3.</strong> Registro “parada cardiorrespiratória” isolado é inadequado porque: A) não ocorre em todos os óbitos; B) é mecanismo terminal e pouco útil como etiologia; C) é sempre uma doença infecciosa; D) prova homicídio. <strong>Gabarito B.</strong> A é incoerente, C/D falsas etiologias. <strong>Revisão:</strong> documentar doença que iniciou a cadeia."
+        ],
+        [
+          "p",
+          "<strong>Q4.</strong> Recém-nascido com sinais de vida após expulsão morre 5 minutos depois. Qual classificação geral? A) natimorto obrigatório; B) nascimento vivo seguido de óbito neonatal; C) aborto sem registro possível; D) indeterminado pela idade gestacional. <strong>Gabarito B.</strong> A/C/D ignoram o critério de sinal de vida. <strong>Revisão:</strong> peso e idade gestacional não definem nascimento vivo."
+        ],
+        [
+          "p",
+          "<strong>Q5.</strong> A Portaria GM/MS 10.273/2026 modificou a abordagem de perda gestacional e óbito fetal. A conclusão mais prudente é: A) negar atendimento por menos de 20 semanas; B) tratar definição assistencial e critérios de estatística/DO como automaticamente idênticos; C) assegurar acolhimento e conciliar normas administrativas específicas; D) abolir qualquer registro. <strong>Gabarito C.</strong> A viola humanização; B simplifica normas diferentes; D é incorreto. <strong>Revisão:</strong> novo direito assistencial não dispensa verificar fluxo documental."
+        ],
+        [
+          "p",
+          "<strong>Q6.</strong> Município registra 60 óbitos de menores de 1 ano e 6.000 nascidos vivos. CMI: A) 1/1.000; B) 10/1.000; C) 100/100.000 habitantes; D) 60%. <strong>Gabarito B.</strong> 60/6000 ×1000 = 10. A erra fator 10; C troca denominador; D ignora taxa. <strong>Revisão:</strong> CMI usa nascidos vivos."
+        ],
+        [
+          "p",
+          "<strong>Q7.</strong> Entre 250 pessoas com doença, 15 morrem por ela. Letalidade observada: A) 6%; B) 15%; C) 250%; D) 0,6%. <strong>Gabarito A.</strong> 15/250 × 100 = 6%. As outras erram denominador/fator. <strong>Revisão:</strong> letalidade usa casos, não população geral."
+        ],
+        [
+          "p",
+          "<strong>Q8.</strong> Cidade tem 25% dos óbitos atribuídos a câncer. Isso indica: A) risco individual de 25% na população; B) que 25% de todas as pessoas têm câncer; C) fração das mortes por essa causa; D) incidência anual obrigatoriamente 25%. <strong>Gabarito C.</strong> A/B/D confundem proporção de mortes com risco, prevalência e incidência. <strong>Revisão:</strong> denominador = total de óbitos."
+        ],
+        [
+          "p",
+          "<strong>Q9.</strong> Dois municípios diferem muito na mortalidade geral bruta e composição etária. Para comparação de risco mais justa, considerar: A) apenas contagem de óbitos; B) padronização por idade; C) somente área territorial; D) somente número de hospitais. <strong>Gabarito B.</strong> A/C/D não controlam envelhecimento. <strong>Revisão:</strong> estrutura etária é confundidor central."
+        ],
+        [
+          "p",
+          "<strong>Q10.</strong> Em morte natural sem assistência médica com causa pouco clara, quando existente, o serviço especializado em verificar etiologia natural é: A) IML como regra universal; B) SVO; C) cartório; D) polícia civil em qualquer caso. <strong>Gabarito B.</strong> A confunde causas externas, C emite certidão e D não substitui processo médico. <strong>Revisão:</strong> SVO e IML têm finalidades distintas."
+        ]
+      ]
+    ],
+    [
+      "14-p-rolas-luria-e-checklist-pr-preenchimento",
+      0,
+      [
+        [
+          "2",
+          "14. Pérolas LURIA e checklist pré-preenchimento"
+        ],
+        [
+          "p",
+          "<li>DO ≠ certidão de óbito: o primeiro é documento médico-base; o segundo é ato registral.</li>\n<li>Parte I: linha a causa imediata; última linha usada, causa básica; Parte II, condições contribuintes fora da cadeia.</li>\n<li>Preferir diagnóstico específico que realmente conste no prontuário. Nunca preencher por suposição para “facilitar”.</li>\n<li>Parada cardíaca é mecanismo terminal e não etiologia.</li>\n<li>Morte após evento externo continua potencialmente médico-legal, ainda que internação seja longa.</li>\n<li>Tempo de início de cada condição ajuda a mostrar coerência fisiopatológica.</li>\n<li>Morte fetal antes da expulsão ≠ nascido vivo que morre minutos após o nascimento.</li>\n<li><strong>Portaria GM/MS 10.273/2026:</strong> ampliação dos direitos assistenciais e definição ampla para humanização; confirmar diferenças entre direitos, critérios para DO e estatísticas.</li>\n<li>SIM: óbitos; SINASC: nascidos vivos; a qualidade de um depende de registro correto do outro para vários indicadores.</li>\n<li>CMI e neonatal usam denominador de nascidos vivos; RMM por 100 mil nascidos vivos; mortalidade geral por população residente.</li>\n<li>Letalidade é entre casos; mortalidade proporcional é entre mortes.</li>\n<li>Comparar taxas brutas de regiões com idades distintas sem ajuste pode gerar conclusão incorreta.</li>"
+        ]
+      ]
+    ],
+    [
+      "15-candidatas-de-elementos-visuais-a-produzir-curar",
+      0,
+      [
+        [
+          "2",
+          "15. Candidatas de elementos visuais a produzir/curar"
+        ],
+        [
+          "p",
+          "Não embutir figura sem licença ou autenticação da fonte. Para este tema, em vez de “10 fotos” decorativas, planejar 10 <strong>diagramas autorais</strong> de maior valor didático, submetidos à revisão e ao Admin: (1) Parte I/Parte II esquemática sem imitar formulário oficial; (2) linha causal câncer→obstrução→pneumonia; (3) linha causal diabetes→nefropatia→edema; (4) fluxograma SVO/IML/médico assistente; (5) diagrama evento externo e óbito tardio; (6) nascido vivo versus fetal; (7) linha do tempo neonatal precoce, tardio e pós-neonatal; (8) gráfico de mortalidade bruta versus padronizada por idade; (9) cartão com denominadores de seis indicadores; (10) SIM–SINASC e investigação de óbitos. Fontes a creditar nos diagramas: manuais MS, normas legais e orientações SIM; não copiar imagem gráfica de apostilas do Drive."
+        ]
+      ]
+    ],
+    [
+      "16-bibliografia-prim-ria-e-diverg-ncias-documentadas",
+      0,
+      [
+        [
+          "2",
+          "16. Bibliografia primária e divergências documentadas"
+        ],
+        [
+          "p",
+          "1. Ministério da Saúde. <strong>Declaração de Óbito — Manual de instruções para preenchimento</strong>; página atualizada 10/07/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/declaracao-de-obito-manual-de-instrucoes-para-preenchimento.pdf/view<br>2. Ministério da Saúde. <strong>Vigilância do óbito de causa natural inespecífica no Brasil.</strong> Brasília, 2024. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-vigilancia-do-obito-de-causa-natural-inespecifica-no-brasil.pdf<br>3. Ministério da Saúde. <strong>Portaria SVS/MS nº 116/2009.</strong> Regras de responsabilidade e emissão de DO fetal/não fetal em seus respectivos contextos. https://bvs.saude.gov.br/bvs/saudelegis/svs/2009/prt0116_11_02_2009_atual.html<br>4. Ministério da Saúde. <strong>Portaria GM/MS nº 10.273, 26/02/2026.</strong> Política Nacional de Humanização do Luto Materno e Parental. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10273_27_02_2026.html<br>5. Ministério da Saúde. <strong>Rede de Serviços de Verificação de Óbito</strong>, Portaria de 2025 compilada. https://bvsms.saude.gov.br/bvs/saudelegis/doc_tec/ago_25/Portaria_Tecnica_7235_de_2025.pdf<br>6. Conselho Federal de Medicina. <strong>A Declaração de Óbito: documento necessário e importante</strong>, cartilha com perguntas frequentes. https://portal.cfm.org.br/wp-content/uploads/2023/01/cartilha_declaracao_obito.pdf<br>7. Prefeitura de São Paulo, Secretaria Municipal da Saúde. <strong>Orientações e dúvidas sobre preenchimento de DO</strong>, 2025–2026. https://prefeitura.sp.gov.br/w/servico/instrucoes-para-preenchimento-de-declaracao-de-obito<br>8. Secretaria de Estado da Saúde da Bahia. <strong>Sistema de Informações sobre Mortalidade — SIM e materiais 2025</strong>. https://www.ba.gov.br/saude/suvisa/vigilancia-epidemiologica/sistema-de-informacoes-sobre-mortalidade-sim"
+        ],
+        [
+          "3",
+          "Divergências de época — não omitir na versão final"
+        ],
+        [
+          "p",
+          "<li>Critérios de DO fetal da Portaria 116/2009 e recortes de investigação estatística descritos em outros instrumentos <strong>não coincidem integralmente</strong> com definição assistencial de óbito fetal na Portaria 10.273/2026. É imperativo revisão jurídica e operacional sobre aplicabilidade de cada norma, antes de apresentar algoritmo final de registro.</li>\n<li>A cartilha CFM e manuais antigos orientam quem emite DO, mas há redes e protocolos locais para SVO/IML. Confirmar atualizações.</li>\n<li>Critérios para atribuição de causa básica e CID precisam ser validados pelo manual nacional/codificadores do SIM, e a apostila deve evitar prometer “a CID correta” sem classificação e regras completas.</li>"
+        ]
+      ]
+    ],
+    [
+      "17-auditoria-editorial-pontos-ainda-pendentes",
+      0,
+      [
+        [
+          "2",
+          "17. Auditoria editorial — pontos ainda pendentes"
+        ],
+        [
+          "p",
+          "<strong>Concluídos nesta versão:</strong> inventário de tema, leitura de dois comparativos parciais no Drive, fontes oficiais atuais, fundamentos, preenchimento causal, cenários de encaminhamento, morte fetal/neonatal, indicadores com cálculos, fluxos, 7 casos, 10 questões e propostas visuais."
+        ],
+        [
+          "p",
+          "<strong>Não concluídos:</strong> revisão de legislação pelas equipes jurídico/sanitária e de vigilância; confirmação de fluxos de SVO/IML e da Portaria 10.273 nas diversas normas de registro; maior aprofundamento de casos de óbito materno e causas especiais; auditoria de estilo e precisão dos exemplos; 60.000 caracteres didáticos úteis; produção/revisão e aprovação dos visuais; teste com formulários simulados, acessibilidade e QA desktop/PWA. <strong>Este conteúdo permanece rascunho e não pode ser classificado como apostila premium pronta.</strong>"
+        ]
+      ]
+    ],
+    [
+      "regras-codificacao-cid-causa-basica-mortalidade",
+      0,
+      [
+        [
+          "2",
+          "Regras de Seleção da Causa Básica de Morte segundo a CID-10 e Portarias do Ministério da Saúde"
+        ],
+        [
+          "p",
+          "O preenchimento correto da Declaração de Óbito (DO) constitui a matéria-prima dos Sistemas de Informação sobre Mortalidade (SIM) e da vigilância epidemiológica nacional. A <strong>Causa Básica de Morte</strong> é formalmente definida pela Organização Mundial da Saúde (OMS) como: <em>(a) a doença ou lesão que iniciou a cadeia de acontecimentos patológicos que conduziram diretamente à morte, ou (b) as circunstâncias do acidente ou violência que produziram a lesão fatal</em>."
+        ],
+        [
+          "p",
+          "No Bloco V da DO (Condições e Causas do Óbito), o médico deve registrar a sequência nosológica lógica e contínua dividida em duas partes:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Parte I (Causas Diretas, Intermediárias e Básica):</strong> As linhas são dispostas em ordem cronológica inversa:\n    <ul>\n      <li><strong>Linha (a) - Causa Terminal ou Imediata:</strong> A patologia final que determinou a parada dos órgãos vitais (ex: choque séptico, hemorragia digestiva maciça, insuficiência respiratória aguda).",
+            "<strong>Linhas (b) e (c) - Causas Intermediárias:</strong> Complicações patológicas que se sucederam entre a causa básica e a causa imediata (ex: pneumonia bacteriana por aspiração, peritonite fecal decorrente de perfuração diverticular).",
+            "<strong>Linha (d) ou Última Linha Preenchida - Causa Básica:</strong> A etiologia primária inicial que desencadeou toda a cascata mórbida (ex: adenocarcinoma de cólon sigmoide, hipertensão arterial sistêmica, acidente de trânsito).",
+            "<strong>Parte II (Causas Contribuintes):</strong> Registram-se outras condições clínicas mórbidas pré-existentes e significativas que desfavoravelmente influenciaram o curso da enfermidade ou apressaram a morte, mas que não se relacionam diretamente com a cadeia fisiopatológica descrita na Parte I (ex: diabetes mellitus tipo 2, doença pulmonar obstrutiva crônica)."
+          ]
+        ],
+        [
+          "t",
+          [
+            "Campo da Declaração",
+            "Exemplo Clínico Adequado",
+            "Erro Frequente / Causa Mal Definida (Proibido)"
+          ],
+          [
+            [
+              "Parte I - linha a",
+              "Choque Séptico Refratário",
+              "\"Parada Cardiorrespiratória\" (Modo de morrer, nunca causa básica)"
+            ],
+            [
+              "Parte I - linha b",
+              "Fasceíte Necrosante de Perna Esquerda",
+              "\"Falência de Múltiplos Órgãos\" (Termo vago sem etiologia primária)"
+            ],
+            [
+              "Parte I - linha c",
+              "Traumatismo Perfurante por Espinho de Madeira",
+              "\"Insuficiência Cardíaca Congestiva\" sem doença de base"
+            ],
+            [
+              "Parte I - linha d (Básica)",
+              "Acidente Ocupacional em Agricultura",
+              "\"Senilidade\" ou \"Morte sem assistência médica\" em paciente hospitalizado"
+            ],
+            [
+              "Parte II (Contribuinte)",
+              "Cirrose Hepática Alcoólica Child-Pugh C",
+              "Misturar doenças crônicas não relacionadas no meio da Parte I"
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "indicadores-avancados-mortalidade-transicao-demografica",
+      0,
+      [
+        [
+          "2",
+          "Indicadores Epidemiológicos de Mortalidade, Transição Demográfica e Carga Global de Doença (DALY)"
+        ],
+        [
+          "p",
+          "A análise da mortalidade populacional baseia-se em taxas e indicadores padronizados internacionalmente para comparar o nível de saúde e as condições de vida entre diferentes territórios e períodos históricos:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Taxa de Mortalidade Infantil (TMI):</strong> Representa o número de óbitos em crianças menores de um ano de idade por cada 1.000 nascidos vivos no mesmo ano e território geográfico. É subdividida em:\n    <ol>\n      <li><em>Componente Neonatal (0 a 27 dias de vida):</em> Subdividido em neonatal precoce (0 a 6 dias) e tardio (7 a 27 dias). Reflete a assistência pré-natal e ao parto e representa hoje o principal componente da TMI no Brasil (&gt; 70% dos óbitos infantis), com destaque para as afecções perinatais (prematuridade, asfixia neonatal e malformações congênitas).",
+            "<em>Componente Pós-Neonatal ou Tardio (28 a 364 dias):</em> Intrinsecamente associado a determinantes socioambientais, saneamento básico, aleitamento materno e cobertura vacinal. Historicamente dominado por infecções diarreicas e respiratórias, apresentou queda vertiginosa nas últimas quatro décadas no Brasil.",
+            "<strong>Razão de Mortalidade Materna (RMM):</strong> Número de mortes de mulheres durante a gestação, parto ou até 42 dias após o término da gestação decorrentes de causas relacionadas ou agravadas pela gravidez ou seu manejo (excluindo acidentes ou causas incidentais), expresso por 100.000 nascidos vivos. As principais causas no Brasil permanecem as síndromes hipertensivas da gestação (pré-eclâmpsia/eclâmpsia), hemorragias pós-parto e infecções puerperais.",
+            "<strong>Curvas de Mortalidade Proporcional de Nelson Moraes:</strong> Classifica os níveis de saúde de uma população com base na proporção de óbitos segundo as faixas etárias:\n    <ol>\n      <li><em>Tipo I (Nível de Saúde Muito Baixo):</em> Formato em \"N\" invertido. Concentração massiva de óbitos em menores de 1 ano (&gt; 30-40%) e baixíssima proporção em maiores de 50 anos.",
+            "<em>Tipo II (Nível de Saúde Baixo):</em> Formato em \"L\". Alta mortalidade infantil combinada a mortalidade intermediária em jovens.",
+            "<em>Tipo III (Nível de Saúde Regular):</em> Formato em \"U\". Óbitos concentram-se nos extremos da vida (menores de 1 ano e idosos acima de 50 anos).",
+            "<em>Tipo IV (Nível de Saúde Elevado):</em> Formato em \"J\". Baixíssima mortalidade em menores de 1 ano (&lt; 5%) e grande concentração de óbitos em idosos acima de 50 anos (&gt; 75-80%), padrão típico de populações com transição demográfica avançada.",
+            "<strong>Anos de Vida Perdidos Ajustados por Incapacidade (DALY - Disability-Adjusted Life Years):</strong> Indicador composto de carga global de doença que soma os Anos de Vida Perdidos por morte prematura (YLL - Years of Life Lost) aos Anos Vividos com Incapacidade (YLD - Years Lived with Disability). Um DALY equivale a um ano perdido de vida saudável, permitindo comparar o impacto de doenças que matam precocemente (como traumatismos e infecções agudas) com doenças crônicas incapacitantes (como depressão maior, dores musculoesqueléticas e demências)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "complemento-avancado-especializado",
+      0,
+      [
+        [
+          "2",
+          "Complemento de Medicina Legal e Epidemiologia Sanitária: Fluxos Médico-Legais, Preenchimento da DO e Transição Demográfica"
+        ],
+        [
+          "3",
+          "1. Casuística Prática, Atribuição Legal e Competências no Preenchimento da Declaração de Óbito"
+        ],
+        [
+          "p",
+          "A Declaração de Óbito (DO) possui tríplice função formal no território brasileiro: base civil oficial para lavratura da Certidão de Óbito pelo Cartório de Registro Civil das Pessoas Naturais; alicerce epidemiológico primário do Sistema de Informações sobre Mortalidade (SIM/DataSUS); e documento médico-legal privativo e indelegável do profissional médico com inscrição ativa no Conselho Regional de Medicina (CRM)."
+        ],
+        [
+          "t",
+          [
+            "Cenário de Ocorrência do Óbito",
+            "Responsável Legal pela Emissão da DO",
+            "Encaminhamento do Cadáver",
+            "Preceitos Éticos e Penais Inafastáveis"
+          ],
+          [
+            [
+              "Morte Natural com Assistência Médica Hospitalar Conhecida",
+              "Médico assistente da instituição hospitalar ou médico de família que acompanhava o paciente na APS/domicílio.",
+              "Liberação direta aos familiares para velório e sepultamento sem necessidade de exame necroscópico.",
+              "É terminantemente proibido cobrar honorários médicos pela emissão da DO. O fornecimento integra o ato médico de assistência sem qualquer ônus financeiro."
+            ],
+            [
+              "Morte Natural sem Assistência Médica (Sem Suspeita de Causa Externa)",
+              "Médico do Serviço de Verificação de Óbitos (SVO) onde houver; na localidade sem SVO, médico da rede pública básica de saúde.",
+              "Encaminhamento formal ao SVO para necropsia anatomopatológica clínica ou verificação clínica externa.",
+              "JAMAIS encaminhar ao Instituto Médico Legal (IML). O IML destina-se com exclusividade a mortes violentas ou com fundada suspeita de criminalidade."
+            ],
+            [
+              "Morte Violenta ou de Causa Externa (Homicídio, Suicídio, Acidente de Trânsito, Queda da Própria Altura, Afogamento, Broncoaspiração)",
+              "Médico Legista oficial do Instituto Médico Legal (IML).",
+              "Remoção obrigatória para o IML mediante Guia de Encaminhamento Cadavérico lavrada por autoridade policial civil.",
+              "O médico assistente do pronto-socorro ou UTI NUNCA deve assinar a DO em morte violenta, mesmo que o indivíduo tenha permanecido hospitalizado meses após o trauma. A causa jurídica determinante foi externa."
+            ],
+            [
+              "Morte Fetal e Perinatal Intrauterina",
+              "Médico obstetra assistente do parto ou estabelecimento de saúde onde ocorreu a gestação.",
+              "Emissão de DO mandatória se: idade gestacional &ge; 20 semanas OU peso do concepto &ge; 500 g OU comprimento crânio-calcanhar &ge; 25 cm.",
+              "Caso o concepto apresente qualquer batimento cardíaco, movimento muscular voluntário ou esforço respiratório após desprendimento completo, emite-se OBRIGATORIAMENTE a Declaração de Nascido Vivo (DNV) seguida da Declaração de Óbito (DO)."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Arquitetura da Cadeia de Causalidade (Parte I e Parte II da DO)"
+        ],
+        [
+          "p",
+          "O preenchimento causal da Parte I da DO deve refletir a lógica fisiopatológica temporal retrógrada exata:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Linha (a) - Causa Terminal (Imediata):</strong> A complicação final que determinou diretamente a cessação da vida (ex.: <em>Hemorragia digestiva alta varicosa maciça</em>). O registro isolado de mecanismos terminais genéricos (como 'Parada Cardiorrespiratória', 'Choque' ou 'Insuficiência de Múltiplos Órgãos') é vedado e acarreta devolução epidemiológica da DO pelo comitê de investigação de causas mal definidas.",
+            "<strong>Linha (b) e (c) - Causas Intermediárias:</strong> Patologias ou condições que fizeram a ponte direta entre a causa fundamental e a morte final (ex.: Linha b: <em>Ruptura de varizes esofagogástricas</em>).",
+            "<strong>Linha (d) - Causa Básica (Fundamental):</strong> A doença, lesão ou agravo que deu início à sequência fisiopatológica letal (ex.: Linha c: <em>Hipertensão portal esquistossomótica</em> ou Linha d: <em>Cirrose hepática alcoólica</em>). Toda a estatística oficial de mortalidade do Ministério da Saúde é indexada pela <strong>Causa Básica</strong>.",
+            "<strong>Parte II - Outras Condições Concomitantes:</strong> Doenças preexistentes relevantes que contribuíram adversamente para a perda funcional do paciente, mas que não compuseram a sequência fisiopatológica causal da Parte I (ex.: <em>Diabetes mellitus tipo 2, Enfisema pulmonar crônico</em>)."
+          ]
+        ],
+        [
+          "3",
+          "3. Indicadores de Saúde Pública e Curvas de Mortalidade Proporcional de Nelson de Moraes"
+        ],
+        [
+          "p",
+          "A classificação das curvas de mortalidade proporcional por faixas etárias delineada por Nelson de Moraes avalia o estágio sanitário e de transição epidemiológica de uma região:"
+        ],
+        [
+          "t",
+          [
+            "Padrão de Nelson de Moraes",
+            "Morfologia da Curva",
+            "Faixa Etária com Maior Frequência de Óbitos",
+            "Significado Epidemiológico e Sanitário"
+          ],
+          [
+            [
+              "Tipo I",
+              "Formato de N invertido ou N",
+              "Mortalidade altíssima em menores de 1 ano e crianças de 1 a 4 anos; baixa proporção de óbitos em idosos.",
+              "Nível de saúde muito baixo. Condições higiênico-sanitárias primitivas, prevalência de diarreias infecciosas, pneumonia na infância e desnutrição crônica."
+            ],
+            [
+              "Tipo II",
+              "Formato de L ou J invertido",
+              "Predomínio absoluto e desproporcional de mortalidade na infância (< 1 ano) superando todas as faixas etárias adultas.",
+              "Nível de saúde baixo. Falência grave de atenção pré-natal, saneamento básico deficiente e baixa cobertura vacinal."
+            ],
+            [
+              "Tipo III",
+              "Formato de U ou V",
+              "Mortalidade bimodal concentrada nos extremos da vida: lactentes (< 1 ano) e idosos (&ge; 50 anos).",
+              "Nível de saúde intermediário / regular. Fase inicial de transição epidemiológica com controle parcial da mortalidade pós-neonatal."
+            ],
+            [
+              "Tipo IV",
+              "Formato de J",
+              "Concentração maciça de óbitos em idosos (&ge; 50 anos, especialmente acima de 65-70 anos); proporção diminuta em menores de 1 ano (< 3-5%).",
+              "Nível de saúde elevado. Padrão demográfico típico de nações desenvolvidas e das regiões metropolitanas do Brasil contemporâneo, dominado por doenças cardiovasculares, neoplasias e enfermidades neurodegenerativas."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "complemento-especializado-fase2",
+      0,
+      [
+        [
+          "2",
+          "Mortalidade Materna e Infantil: Fórmulas Matemáticas, Indicadores do ODM/ODS e Estratificação Epidemiológica"
+        ],
+        [
+          "3",
+          "1. Razão de Mortalidade Materna (RMM): Conceito, Cálculo e Metas dos ODS"
+        ],
+        [
+          "p",
+          "A Razão de Mortalidade Materna (RMM) é um dos indicadores mais sensíveis do nível de justiça social, equidade em saúde e eficiência do sistema de atenção materno-infantil de uma nação. A Organização Mundial da Saúde (OMS) define morte materna como o óbito de uma mulher durante a gestação ou até 42 dias após o término da gravidez, independentemente da duração ou localização anatômica da gestação, devido a qualquer causa relacionada com ou agravada pela gravidez ou por medidas em relação a ela, excluindo formalmente as causas acidentais ou incidentais (ex.: acidentes automobilísticos ou ferimentos por arma de fogo)."
+        ],
+        [
+          "t",
+          [
+            "Indicador Epidemiológico",
+            "Fórmula de Cálculo",
+            "Fator de Multiplicação",
+            "Interpretação e Relevância Sanitária"
+          ],
+          [
+            [
+              "Razão de Mortalidade Materna (RMM)",
+              "(Número total de óbitos maternos declarados / Número total de nascidos vivos no mesmo período e local)",
+              "&times; 100.000 nascidos vivos",
+              "Expressa o risco obstétrico direto e indireto inerente à gestação e puerpério. Meta dos ODS 2030: menos de 70 por 100.000 NV mundialmente (e &le; 30 por 100.000 no Brasil)."
+            ],
+            [
+              "Taxa de Mortalidade Infantil (TMI)",
+              "(Número de óbitos em menores de 1 ano / Número total de nascidos vivos no mesmo período e local)",
+              "&times; 1,000 nascidos vivos",
+              "Medida síntese da qualidade de vida global, saneamento básico, vacinação e atenção primária à saúde."
+            ],
+            [
+              "Taxa de Mortalidade Neonatal Precoce",
+              "(Número de óbitos entre 0 e 6 dias de vida completos / Número total de nascidos vivos no mesmo período)",
+              "&times; 1.000 nascidos vivos",
+              "Reflete diretamente a qualidade técnica da assistência pré-natal e intraparto na maternidade (asfixia perinatal, prematuridade extrema, sepse neonatal precoce)."
+            ],
+            [
+              "Taxa de Mortalidade Neonatal Tardia",
+              "(Número de óbitos entre 7 e 27 dias de vida completos / Número total de nascidos vivos no mesmo período)",
+              "&times; 1.000 nascidos vivos",
+              "Correlaciona-se com infecções nosocomiais em UTI neonatal e manejo de prematuridade tardia."
+            ],
+            [
+              "Taxa de Mortalidade Pós-Neonatal (Infantil Tardia)",
+              "(Número de óbitos entre 28 e 364 dias de vida / Número total de nascidos vivos no mesmo período)",
+              "&times; 1.000 nascidos vivos",
+              "Espelha determinantes socioambientais: desnutrição, gastroenterites, doenças respiratórias evitáveis e saneamento."
+            ],
+            [
+              "Taxa de Mortalidade Perinatal",
+              "(Óbitos fetais com &ge; 22 sem ou &ge; 500g + Óbitos neonatais precoces &lt; 7 dias) / (Total de nascimentos: nascidos vivos + natimortos)",
+              "&times; 1.000 nascimentos totais",
+              "Avalia a integridade contínua da linha de cuidado obstétrico e perinatal."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Etiologia da Mortalidade Materna no Brasil: Causas Diretas vs. Indiretas"
+        ],
+        [
+          "p",
+          "As causas obstétricas dividem-se fundamentalmente em:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Causas Obstétricas Diretas (65 a 70% dos casos):</strong> Decorrem de complicações obstétricas do estado gravídico (intervenções, omissões, tratamento incorreto ou de uma cadeia de eventos resultante de qualquer uma dessas causas). No Brasil, as quatro principais causas diretas em ordem de magnitude histórica são:\n    <ol>\n      <li><strong>Síndromes Hipertensivas da Gestação:</strong> Pré-eclâmpsia grave, eclâmpsia e síndrome HELLP.",
+            "<strong>Hemorragia Pós-Parto (HPP):</strong> Atonia uterina, lacerações de trajeto genital, retenção placentária e acretismo.",
+            "<strong>Infecções Puerperais:</strong> Endometrite pós-parto, sepse pélvica e corioamnionite.",
+            "<strong>Abortamento Inseguro:</strong> Complicações infecciosas ou hemorrágicas de interrupções de gestação clandestinas.",
+            "<strong>Causas Obstétricas Indiretas:</strong> Resultam de doenças preexistentes ou desenvolvidas durante a gravidez, não devidas a causas obstétricas diretas, mas agravadas pelos efeitos fisiológicos da gestação (ex.: cardiopatias reumáticas ou congênitas, anemia falciforme, nefropatias crônicas, pneumonias virais como Influenza e COVID-19, e neoplasias malignas)."
+          ]
+        ],
+        [
+          "3",
+          "3. Análise dos Anos Potenciais de Vida Perdidos (APVP) e Carga Global de Doença (DALYs)"
+        ],
+        [
+          "p",
+          "O indicador de Anos Potenciais de Vida Perdidos (APVP) quantifica o impacto social e econômico de mortes prematuras, atribuindo peso proporcionalmente maior aos óbitos ocorridos em faixas etárias jovens. Se o limite superior de esperança de vida fixado for de 75 anos, o óbito de uma criança de 5 anos por pneumonia acarreta a perda de 70 APVP, enquanto o falecimento de um indivíduo de 73 anos por infarto agudo do miocárdio acarreta 2 APVP."
+        ],
+        [
+          "p",
+          "No Brasil, as <strong>causas externas (homicídios e acidentes de trânsito)</strong> lideram isoladamente o ranking de APVP na população masculina entre 15 e 39 anos, representando uma perda massiva de capital humano e anos produtivos de vida, muito superior à sua proporção na mortalidade geral da população idosa."
+        ]
+      ]
+    ],
+    [
+      "complemento-final-especializado",
+      0,
+      [
+        [
+          "2",
+          "Estudos de Casos Complexos de Declaração de Óbito e Auditoria de Qualidade em Saúde Pública"
+        ],
+        [
+          "3",
+          "1. Casos Clínicos Resolvidos de Preenchimento da Declaração de Óbito em Situações Limítrofes"
+        ],
+        [
+          "p",
+          "A auditoria médica do Sistema de Informações sobre Mortalidade (SIM) frequentemente detecta inconformidades que geram distorções epidemiológicas graves. Abaixo são detalhados casos clássicos com a análise da conduta legal e médica correta:"
+        ],
+        [
+          "t",
+          [
+            "Caso Clínico / Cenário",
+            "Dúvida Principal",
+            "Conduta Ético-Legal e Preenchimento Correto",
+            "Erro Crítico a Evitar"
+          ],
+          [
+            [
+              "Idoso de 84 anos com osteoporose que sofre queda da própria altura em domicílio com fratura de fêmur, é submetido a artroplastia e morre 15 dias depois no CTI por tromboembolismo pulmonar maciço.",
+              "Quem deve emitir a DO: o cirurgião ortopedista, o intensivista ou o IML?",
+              "<strong>Encaminhamento obrigatório ao IML.</strong> A morte é decorrente de causa externa (queda da própria altura é evento acidental, classificado no Capítulo XX da CID-10). O legista emitirá a DO: Linha a: Tromboembolismo pulmonar; Linha b: Fratura de colo de fêmur; Linha c: Queda da própria altura.",
+              "O intensivista ou ortopedista JAMAIS deve emitir a DO atestando causa natural ou omitindo a queda, sob pena de infração ética (Art. 84 do CEM) e crime de falsa atestação."
+            ],
+            [
+              "Mulher de 29 anos internada em hospital terciário por sepse de foco urinário com choque séptico refratário, evoluindo a óbito após 48h de internação.",
+              "O hospital não tem médico que a conhecesse previamente. Deve mandar ao SVO?",
+              "<strong>NÃO mandar ao SVO nem ao IML.</strong> A DO deve ser emitida pelo médico assistente do hospital (plantonista da UTI ou clínica médica). Trata-se de morte natural sob assistência médica documentada em prontuário. Linha a: Choque séptico; Linha b: Pielonefrite aguda obstrutiva; Linha c: Nefrolitíase.",
+              "Encaminhar ao SVO corpos de pacientes que faleceram sob cuidados hospitalares com diagnóstico clínico firmado e exames comprobatórios. O SVO não é substituto da equipe assistente."
+            ],
+            [
+              "Paciente de 62 anos hipertenso e diabético é encontrado morto em sua cama pela manhã pelos familiares. Sem sinais externos de violência, sem marcas de arrombamento.",
+              "Quem atesta o óbito na ausência de testemunhas diretas da morte?",
+              "Se o paciente tinha médico de família na Atenção Básica com prontuário recente documentando cardiopatia grave, este pode atestar (morte natural conhecida). Se desconhecido ou sem acompanhamento, <strong>encaminhar ao Serviço de Verificação de Óbitos (SVO)</strong> para necropsia anatomoclínica.",
+              "Enviar ao IML como morte violenta apenas por ser morte domiciliar sem testemunhas. Sem indícios de crime, veneno ou agressão, o caso é de incumbência do SVO."
+            ],
+            [
+              "Criança de 3 anos portadora de leucemia linfoide aguda que falece em domicílio recebendo cuidados paliativos exclusivos por recidiva refratária.",
+              "A família chama o SAMU que constata o óbito no local. Quem fornece a DO?",
+              "A equipe de cuidados paliativos ou oncologia pediátrica que acompanhava o caso é responsável pela emissão da DO. O médico do SAMU apenas constata e aciona a rede de retaguarda, ou emite com base nos relatórios médicos detalhados da equipe assistente.",
+              "Submeter a criança em cuidados paliativos oncológicos a necropsia no SVO ou IML, gerando constrangimento desnecessário à família enlutada."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "2. Avaliação de Subnotificação e Qualidade do Sistema de Informações sobre Mortalidade (SIM)"
+        ],
+        [
+          "p",
+          "A cobertura e a qualidade dos dados de mortalidade variam de acordo com o nível socioeconômico regional. Os dois principais parâmetros de auditoria de qualidade do SIM são:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Proporção de Óbitos por Causas Mal Definidas:</strong> Corresponde ao percentual de declarações com causa básica codificada no Capítulo XVIII da CID-10 (Sintomas, sinais e achados anormais de exames clínicos e de laboratório não classificados em outra parte - códigos R00 a R99). Valores &gt; 10% refletem baixa capacidade diagnóstica e precariedade na assistência médica local. No Brasil, esse indicador caiu significativamente de mais de 15% na década de 1990 para menos de 5% na atualidade devido à implantação das equipes de investigação de óbitos municipais.",
+            "<strong>Códigos Garbage (Garbage Codes):</strong> Conceito cunhado pelo estudo Global Burden of Disease (GBD) que engloba causas de morte registradas na DO que não fornecem subsídios úteis para a formulação de políticas públicas de prevenção primária. Exemplos clássicos: 'Parada Cardíaca' (I46.9), 'Insuficiência Cardíaca Congestiva' (I50.9) sem especificação da etiologia de base (se isquêmica, hipertensiva ou chagásica), e 'Septicemia não especificada' (A41.9). As secretarias de saúde utilizam algoritmos de redistribuição epidemiológica e investigação hospitalar para reclassificar esses registros."
+          ]
+        ],
+        [
+          "3",
+          "3. Transição Demográfica Brasileira: Do Bônus Demográfico ao Envelhecimento Populacional Acelerado"
+        ],
+        [
+          "p",
+          "O Brasil experimenta um dos processos de transição demográfica mais acelerados do mundo contemporâneo, caracterizado pela queda vertiginosa da taxa de fecundidade total (que passou de 6,3 filhos por mulher em 1960 para cerca de 1,6 em 2022, abaixo do nível de reposição populacional de 2,1) combinada ao aumento contínuo da esperança de vida ao nascer (ultrapassando 76 anos):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Bônus Demográfico (Janela de Oportunidade):</strong> Período em que a Razão de Dependência (proporção da população dependente de 0 a 14 anos somada aos idosos de &ge; 65 anos em relação à população em idade ativa de 15 a 64 anos) atinge seu menor patamar histórico. O Brasil vivenciou o auge desse bônus entre as décadas de 2000 e 2020.",
+            "<strong>Envelhecimento Populacional e Tripla Carga de Doenças:</strong> O rápido fechamento da janela demográfica impõe ao Sistema Único de Saúde (SUS) o enfrentamento concomitante de uma 'tripla carga de doenças': permanência residual de doenças infectocontagiosas e carências nutricionais (Chagas, dengue, tuberculose); crescimento exponencial de doenças crônicas não transmissíveis degenerativas (cardiovasculares, diabetes, neoplasias e demências); e persistência endêmica de causas externas e mortes por violência urbana e acidentes de transporte."
+          ]
+        ]
+      ]
+    ],
+    [
+      "complemento-micro-normativo",
+      0,
+      [
+        [
+          "2",
+          "Aspectos Deontológicos e Legislação do Conselho Federal de Medicina (Resolução CFM 1.779/2005)"
+        ],
+        [
+          "3",
+          "1. Síntese Normativa da Resolução CFM nº 1.779/2005"
+        ],
+        [
+          "p",
+          "A Resolução CFM nº 1.779/2005 regulamenta com precisão cirúrgica a responsabilidade médica no fornecimento da Declaração de Óbito. O médico assistente que acompanhou o paciente tem o dever ético e profissional inderrogável de preencher a DO, não podendo se esquivar sob pretexto de que o óbito ocorreu em plantão diverso ou fora de seu horário presencial de trabalho, desde que disponha de prontuário fidedigno e diagnóstico anatomopatológico ou clínico estabelecido."
+        ],
+        [
+          "p",
+          "Em localidades onde não exista médico legista oficial do IML nem Serviço de Verificação de Óbitos (SVO), a legislação processual penal (Código de Processo Penal - CPP, art. 159, § 1º) e as resoluções do CFM determinam que qualquer médico em exercício na localidade poderá ser nomeado como perito <em>ad hoc</em> pela autoridade judicial ou policial competente para realizar o exame de corpo de delito cadavérico externo e preencher a competente DO, descrevendo minuciosamente as lesões aparentes."
+        ]
+      ]
+    ]
+  ]
+}

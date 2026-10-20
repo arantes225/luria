@@ -1,0 +1,986 @@
+{
+  "v": 2,
+  "s": "isquemia-mesenterica",
+  "t": "Isquemia Mesentérica Aguda e Crônica",
+  "p": "Isquemia Mesentérica Aguda e Crônica — Livro-Texto LURIA",
+  "d": "Tratado exaustivo sobre afecções isquêmicas intestinais para provas de residência médica e ENAMED: anatomia cirúrgica da circulação esplâncnica (tronco celíaco, artéria mesentérica superior, artéria mesentérica inferior e arcadas colaterais de Riolan e Drummond, zonas de bacia hidrográfica de Griffith e Sudeck); fisiopatologia e etiopatogenia detalhada das quatro formas de isquemia mesentérica aguda: embolia da AMS (poupando jejuno proximal), trombose arterial aterosclerótica na raiz da AMS (necrose pan-intestinal), trombose venosa mesentérica associada a trombofilias e hipertensão portal, e isquemia mesentérica não oclusiva (IMNO) por vasoespasmo em choque cardiogênico/séptico; apresentação clínica cardinal com dor abdominal dilacerante desproporcional ao exame físico; biomarcadores (leucocitose com desvio, acidose metabólica com ânion gap elevado e cinética do lactato sérico); angiotomografia computadorizada multislice com contraste intravenoso como padrão-ouro absoluto (sinais de falha de enchimento, ausência de realce parietal, pneumatose intestinal e aeroportia); tratamento cirúrgico de emergência com embolectomia por cateter de Fogarty, revascularização por bypass aorto-mesentérico, critérios intraoperatórios de viabilidade de alça intestinal e o conceito salvador da laparotomia de reavaliação programada (Second-Look) em 24 a 48 horas; técnicas endovasculares avançadas (trombectomia farmacomecânica, aspiração e stents ostiais) e manejo intensivo de UTI (síndrome compartimental abdominal e monitorização de PIA); manejo e fisiopatologia da Síndrome do Intestino Curto e uso de Teduglutida; isquemia mesentérica crônica (angina abdominal pós-prandial, medo de se alimentar e emagrecimento severo com angioplastia e stent); colite isquêmica transitória e gangrenosa; casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+  "a": "Cirurgia Geral",
+  "m": "Cirurgia do Aparelho Digestivo e Cirurgia Vascular de Emergência",
+  "h": [
+    "Apostila LURIA",
+    "Isquemia Mesentérica Aguda e Crônica",
+    "Tratado exaustivo sobre afecções isquêmicas intestinais para provas de residência médica e ENAMED: anatomia cirúrgica da circulação esplâncnica (tronco celíaco, artéria mesentérica superior, artéria mesentérica inferior e arcadas colaterais de Riolan e Drummond, zonas de bacia hidrográfica de Griffith e Sudeck); fisiopatologia e etiopatogenia detalhada das quatro formas de isquemia mesentérica aguda: embolia da AMS (poupando jejuno proximal), trombose arterial aterosclerótica na raiz da AMS (necrose pan-intestinal), trombose venosa mesentérica associada a trombofilias e hipertensão portal, e isquemia mesentérica não oclusiva (IMNO) por vasoespasmo em choque cardiogênico/séptico; apresentação clínica cardinal com dor abdominal dilacerante desproporcional ao exame físico; biomarcadores (leucocitose com desvio, acidose metabólica com ânion gap elevado e cinética do lactato sérico); angiotomografia computadorizada multislice com contraste intravenoso como padrão-ouro absoluto (sinais de falha de enchimento, ausência de realce parietal, pneumatose intestinal e aeroportia); tratamento cirúrgico de emergência com embolectomia por cateter de Fogarty, revascularização por bypass aorto-mesentérico, critérios intraoperatórios de viabilidade de alça intestinal e o conceito salvador da laparotomia de reavaliação programada (Second-Look) em 24 a 48 horas; técnicas endovasculares avançadas (trombectomia farmacomecânica, aspiração e stents ostiais) e manejo intensivo de UTI (síndrome compartimental abdominal e monitorização de PIA); manejo e fisiopatologia da Síndrome do Intestino Curto e uso de Teduglutida; isquemia mesentérica crônica (angina abdominal pós-prandial, medo de se alimentar e emagrecimento severo com angioplastia e stent); colite isquêmica transitória e gangrenosa; casos clínicos estruturados e 6 questões comentadas alternativa por alternativa.",
+    [
+      "Área: Cirurgia Geral",
+      "Matéria: Cirurgia do Aparelho Digestivo e Cirurgia Vascular de Emergência",
+      "Tema: Isquemia Mesentérica Aguda e Crônica"
+    ],
+    "apostila-identity"
+  ],
+  "o": [
+    [
+      "anatomia-circulacao-esplancnica-arcos-colaterais",
+      "1. Anatomia Cirúrgica da Circulação Esplâncnica: Tronco Celíaco, Artérias Mesentéricas e Vias Colaterais (Riolan e Drummond)"
+    ],
+    [
+      "fisiopatologia-isquemia-aguda-as-quatro-etiologias",
+      "2. Fisiopatologia da Isquemia Mesentérica Aguda: As Quatro Etiologias Distintas (Embolia, Trombose Arterial, Trombose Venosa e IMNO)"
+    ],
+    [
+      "quadro-clinico-triade-laboratorio-angiotomografia",
+      "3. Apresentação Clínica Cardinal: A Dor Desproporcional, Marcadores Laboratoriais e Angio-TC como Padrão-Ouro"
+    ],
+    [
+      "trombose-venosa-mesenterica-e-sindrome-do-intestino-curto",
+      "4. Trombose Venosa Mesentérica, Estados de Trombofilia e Manejo da Síndrome do Intestino Curto"
+    ],
+    [
+      "tratamento-cirurgico-urgencia-embolectomia-second-look",
+      "4. Abordagem Cirúrgica de Emergência: Embolectomia com Cateter de Fogarty, Revascularização e a Laparotomia de Second-Look"
+    ],
+    [
+      "terapia-endovascular-avancada-e-terapia-intensiva-perioperatoria",
+      "5. Técnicas Endovasculares Avançadas, Cuidados Críticos em UTI, Nutrição Parenteral e Prevenção de Complicações"
+    ],
+    [
+      "isquemia-mesenterica-cronica-e-colite-isquemica",
+      "5. Isquemia Mesentérica Crônica (Angina Abdominal) e Colite Isquêmica"
+    ],
+    [
+      "casos-clinicos-estruturados-isquemia-mesenterica",
+      "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico-Cirúrgico Passo a Passo"
+    ],
+    [
+      "questoes-concurso-comentadas-isquemia-mesenterica",
+      "7. Questões de Concursos de Residência Médica e Título de Especialista Comentadas Alternativa por Alternativa"
+    ],
+    [
+      "conclusao-recomendacoes-finais-referencias-isquemia",
+      "8. Síntese do Manejo Clínico-Cirúrgico Integrado e Referências Internacionais Oficiais"
+    ],
+    [
+      "referencias",
+      "Referências"
+    ]
+  ],
+  "q": [
+    [
+      "anatomia-circulacao-esplancnica-arcos-colaterais",
+      0,
+      [
+        [
+          "2",
+          "1. Anatomia Cirúrgica da Circulação Esplâncnica: Tronco Celíaco, Artérias Mesentéricas e Vias Colaterais (Riolan e Drummond)"
+        ],
+        [
+          "3",
+          "Arquitetura Vascular da Circulação Esplâncnica"
+        ],
+        [
+          "p",
+          "O trato gastrointestinal e seus anexos glandulares recebem aproximadamente <strong>20% a 25% do débito cardíaco basal em repouso</strong>, fração hemodinâmica que pode se elevar para até <strong>35% a 40% no período pós-prandial imediato</strong> (hiperemia pós-prandial fisiológica) para suportar os intensos processos de digestão enzimática, secreção mucosa e absorção ativa de nutrientes. A vascularização arterial de todo o intestino humano provém de três ramos viscerais ventrais ímpares da aorta abdominal:"
+        ],
+        [
+          "t",
+          [
+            "Vaso Arterial Principal",
+            "Origem Anatômica Aórtica e Topografia",
+            "Território de Irrigação Primário",
+            "Principais Ramos Terminais e Colaterais"
+          ],
+          [
+            [
+              "<strong>Tronco Celíaco</strong>",
+              "Emerge da face anterior da aorta no nível de <strong>T12 - L1</strong>, logo abaixo dos pilares diafragmáticos (hiato aórtico).",
+              "Intestino anterior embrionário (<em>foregut</em>): terço distal do esôfago, estômago, duodeno proximal até a papila duodenal maior (de Vater), fígado, vesícula biliar, baço e porção superior do pâncreas.",
+              "Trifurca-se no tripé de Haller: <strong>Artéria Gástrica Esquerda</strong> (coronária estomáquica), <strong>Artéria Hepática Comum</strong> e <strong>Artéria Esplênica</strong>."
+            ],
+            [
+              "<strong>Artéria Mesentérica Superior (AMS)</strong>",
+              "Origina-se da aorta abdominal no nível de <strong>L1 - L2</strong> (cerca de 1 a 2 cm abaixo do tronco celíaco), descendo obliquamente atrás do colo do pâncreas e cruzando anteriormente o processo uncinado e a terceira porção do duodeno.",
+              "Intestino médio embrionário (<em>midgut</em>): duodeno distal (abaixo da papila), todo o jejuno, todo o íleo, apêndice cecal, ceco, cólon ascendente e <strong>dois terços proximais do cólon transverso</strong>.",
+              "Artéria Pancreaticoduodenal Inferior (anterior e posterior), 12 a 18 artérias jejunais e ileais (que formam arcadas vasculares e vasos retos), <strong>Artéria Ileocólica</strong>, <strong>Artéria Cólica Direita</strong> e <strong>Artéria Cólica Média</strong>."
+            ],
+            [
+              "<strong>Artéria Mesentérica Inferior (AMI)</strong>",
+              "Origina-se da face ântero-lateral esquerda da aorta abdominal no nível de <strong>L3 - L4</strong> (cerca de 3 a 4 cm acima da bifurcação aórtica).",
+              "Intestino posterior embrionário (<em>hindgut</em>): <strong>terço distal do cólon transverso</strong>, cólon descendente, cólon sigmoide e terço superior do reto.",
+              "<strong>Artéria Cólica Esquerda</strong>, artérias sigmoideas (ramos para o sigmoide) e termina como <strong>Artéria Retal Superior (Hemorroidária Superior)</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Rede Colateral Esplâncnica: A Salvação Hemodinâmica contra a Isquemia Crônica"
+        ],
+        [
+          "p",
+          "O sistema arterial esplâncnico é dotado de uma das mais ricas e redundantes redes anastomóticas de todo o corpo humano. Três vias colaterais anatômicas mestras garantem a manutenção do fluxo sanguíneo em casos de oclusão aterosclerótica lenta e progressiva:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Arcadas Pancreaticoduodenais (Anastomose Celíaco-Mesentérica):</strong>\n    <p>Comunicam diretamente o Tronco Celíaco com a Artéria Mesentérica Superior. Formadas pelo encontro entre a <em>Artéria Pancreaticoduodenal Superior</em> (ramo da artéria gastroduodenal, derivada da hepática comum) e a <em>Artéria Pancreaticoduodenal Inferior</em> (primeiro ramo da AMS). Se o tronco celíaco sofrer estenose crônica intrínseca ou extrínseca (como na Síndrome do Ligamento Arqueado Mediano), o sangue da AMS sobe por essas arcadas para irrigar o fígado e o estômago de forma retrógrada;</p>",
+            "<strong>Arco Marginal de Drummond (Arcada Marginal do Cólon):</strong>\n    <p>Um vaso arterial contínuo que corre paralelamente à borda mesentérica de todo o cólon, a cerca de 1 a 3 cm da parede cólica, estendendo-se ininterruptamente desde a junção ileocecal até o reto. É formado pela união terminal das artérias ileocólica, cólica direita, cólica média, cólica esquerda e sigmoideas, de onde partem os <em>vasa recta</em> terminais que penetram na parede do intestino;</p>",
+            "<strong>Arco ou Ramo Inconstante de Riolan (Arcada Meandrina / Anastomose Central):</strong>\n    <p>Uma volumosa comunicação vascular anatômica embrionária que conecta diretamente a raiz do ramo esquerdo da <strong>Artéria Cólica Média (origem na AMS)</strong> com a <strong>Artéria Cólica Esquerda (origem na AMI)</strong>, trafegando profundamente no mesocólon transverso próximo ao retroperitônio. Em indivíduos saudáveis, é um vaso filiforme e quase imperceptível; contudo, na oclusão aterosclerótica crônica grave da AMS ou da aorta infra-renal, o arco de Riolan hipertrofia-se maciçamente (tornando-se um vaso tortuoso de grande calibre visível na arteriografia) para nutrir todo o intestino delgado a partir da AMI ou vice-versa;</p>",
+            "<strong>Plexo Retal Hemorroidário (Anastomose Sistêmico-Esplâncnica Inferior):</strong>\n    <p>Conecta a Artéria Retal Superior (terminal da AMI) com as Artérias Retais Médias (ramos da artéria ilíaca interna / hipogástrica) e Retais Inferiores (ramos da artéria pudenda interna), permitindo fluxo colateral pélvico retrógrado em oclusões aórticas distais.</p>"
+          ]
+        ],
+        [
+          "3",
+          "Os Pontos Críticos de Fragilidade Isquêmica (Zonas de Bacia Hidrográfica Cólica)"
+        ],
+        [
+          "p",
+          "Embora as arcadas colaterais protejam a maior parte do intestino, existem duas regiões anatômicas onde as anastomoses periféricas são naturalmente rarefeitas, precárias ou descontínuas, tornando-as extremamente vulneráveis à hipoperfusão sistêmica:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Ponto de Griffith (Ângulo Esplênico do Cólon):</strong> Localizado na flexura cólica esquerda, no limite de transição anatômica entre o território distal da Artéria Mesentérica Superior (cólica média) e o território proximal da Artéria Mesentérica Inferior (cólica esquerda). É o <strong>sítio de maior vulnerabilidade isquêmica de todo o intestino grosso</strong>;",
+            "<strong>Ponto de Sudeck (Junção Retossigmoide):</strong> Localizado na transição entre o ramo sigmoideo mais inferior da AMI e a Artéria Retal Superior. Em até 50% dos indivíduos, a arcada marginal de Drummond afina-se ou sofre descontinuidade anatômica nesse nível, tornando o reto superior altamente suscetível a episódios de choque circulatório e hipotensão prolongada."
+          ]
+        ]
+      ]
+    ],
+    [
+      "fisiopatologia-isquemia-aguda-as-quatro-etiologias",
+      0,
+      [
+        [
+          "2",
+          "2. Fisiopatologia da Isquemia Mesentérica Aguda: As Quatro Etiologias Distintas (Embolia, Trombose Arterial, Trombose Venosa e IMNO)"
+        ],
+        [
+          "3",
+          "O Espectro Fisiopatológico da Agressão Isquêmica Intestinal"
+        ],
+        [
+          "p",
+          "A <strong>Isquemia Mesentérica Aguda (IMA)</strong> é uma das mais temíveis e letais catástrofes abdominais da cirurgia de emergência, associando-se a taxas de mortalidade histórica que variam entre <strong>50% e 80%</strong>. Essa mortalidade alarmante decorre primordialmente da perda da janela diagnóstica precoce: o intestino delgado tolera no máximo <strong>4 a 6 horas de isquemia total</strong> antes do estabelecimento de necrose transmural irreversível e gangrena."
+        ],
+        [
+          "p",
+          "<strong>A Cascata Tecidual de Hipóxia e Reperfusão:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Fase Inicial (Isquemia Mucosa - 0 a 2 horas):</strong> A mucosa intestinal é a camada metabolicamente mais ativa do corpo e a que possui maior consumo de oxigênio por grama de tecido. Sob isquemia súbita, os enterócitos desprendem-se do ápice das vilosidades (desnudamento epitelial mucoso precoce / Lesão de Gruenhagen). Ocorre hiperperistaltismo reativo espasmódico e esvaziamento reflexo agudo (vômitos e diarreia aquosa inicial);",
+            "<strong>Fase Intermediária (Quebra da Barreira e Translocação - 2 a 6 horas):</strong> A perda da integridade das junções oclusivas epiteliais permite o influxo maciço de endotoxinas bacterianas (lipopolissacarídeo - LPS) e translocação de bactérias entéricas para a circulação portal e linfática mesentérica. O peristaltismo cessa e instala-se íleo paralítico grave com distensão de alças;",
+            "<strong>Fase Avançada (Infarto Transmural e Gangrena - &gt; 6 horas):</strong> A necrose coagulativa atinge a submucosa, muscular própria e serosa. Ocorre extravasamento de líquido sanguinolento para o lúmen e cavidade peritoneal, proliferação anaeróbia intramural com produção de gás na parede intestinal (<strong>pneumatose intestinal</strong>) e gás na veia porta (<strong>aeroportia</strong>), culminando em perfuração intestinal livre, peritonite fecalóide e choque séptico distributivo;",
+            "<strong>A Síndrome da Lesão de Isquemia-Reperfusão:</strong> A restauração tardia do fluxo sanguíneo em um segmento intestinal que sofreu isquemia prolongada gera uma explosão massiva de <strong>Espécies Reativas de Oxigênio (radicais livres de oxigênio derivados da xantina oxidase)</strong>, ativação de neutrófilos teciduais, dano capilar endotelial sistêmico e liberação de mediadores inflamatórios (TNF-$alpha$, IL-1, PAF), deflagrando Síndrome da Angústia Respiratória Aguda (SDRA) e falência de múltiplos órgãos."
+          ]
+        ],
+        [
+          "3",
+          "As Quatro Etiologias Mestras da Isquemia Mesentérica Aguda"
+        ],
+        [
+          "p",
+          "A identificação imediata da causa subjacente é vital, pois a abordagem operatória e hemodinâmica diverge radicalmente entre os quatro subtipos:"
+        ],
+        [
+          "t",
+          [
+            "Etiologia Específica",
+            "Frequência Relativa",
+            "Perfil Epidemiológico e Fatores de Risco",
+            "Localização Anatômica Típica da Obstrução",
+            "Particularidades Fisiopatológicas e Tratamento Específico"
+          ],
+          [
+            [
+              "<strong>Embolia da Artéria Mesentérica Superior (EAMS)</strong>",
+              "<strong>40% a 50%</strong> (a causa mais frequente de IMA)",
+              "Pacientes com <strong>Fibrilação Atrial crônica</strong>, infarto agudo do miocárdio recente com trombo intracavitário em ventrículo esquerdo, miocardiopatia dilatada grave ou endocardite infecciosa.",
+              "O êmbolo desprende-se do coração e impacta tipicamente <strong>3 a 8 cm distal à origem da AMS</strong>, exatamente no ponto onde o calibre do vaso afina após a emergência da <em>Artéria Pancreaticoduodenal Inferior e primeiras artérias jejunais</em>.",
+              "<strong>Poupamento do Jejuno Proximal:</strong> Como o êmbolo para distalmente, os primeiros ramos jejunais continuam pérvios, <strong>preservando as primeiras alças de jejuno da necrose</strong>. Tratamento: <em>Embolectomia cirúrgica com cateter de Fogarty</em> através de arteriotomia transversa da AMS."
+            ],
+            [
+              "<strong>Trombose da Artéria Mesentérica Superior (TAMS)</strong>",
+              "<strong>20% a 30%</strong> (segunda causa arterial)",
+              "Idosos vasculopatas com <strong>Aterosclerose sistêmica difusa</strong> grave, tabagistas pesados, com histórico prévio de doença arterial coronariana, AVC isquêmico ou doença arterial periférica.",
+              "Ocorre <strong>diretamente na ORIGEM (ósteo aórtico) da AMS</strong>, onde a placa aterosclerótica calcificada estenosante sofre rotura aguda com trombose in situ sobreposta.",
+              "<strong>Necrose Pan-Intestinal Maciça:</strong> Por ocluir a própria raiz do vaso, bloqueia todas as artérias jejunais e a pancreaticoduodenal inferior, levando à <strong>necrose catastrófica de TODO o intestino delgado (desde o ângulo de Treitz até o cólon transverso)</strong>. Tratamento: exige revascularização complexa (<em>Bypass vascular aorto-mesentérico ou prótese retrógrada</em> da artéria ilíaca para a AMS distal) ou trombectomia com angioplastia/stent."
+            ],
+            [
+              "<strong>Isquemia Mesentérica Não Oclusiva (IMNO)</strong>",
+              "<strong>20% a 25%</strong>",
+              "Pacientes graves internados em UTI em <strong>Choque Cardiogênico</strong> (baixo débito cardíaco), <strong>Choque Séptico</strong> refratário, hipovolemia extrema, parada cardiorrespiratória reanimada ou uso prolongado de <strong>drogas vasoconstritoras potentes em doses cavalares</strong> (Noradrenalina, Vasopressina, Adrenalina) e digitálicos em altas doses.",
+              "<strong>Vasoconstrição arteriolar difusa e generalizada</strong> da árvore mesentérica, <strong>SEM trombos ou êmbolos mecânicos ocluindo os grandes vasos</strong>.",
+              "Ocorre espasmo arteriolar sustentado em resposta ao baixo débito na tentativa de desviar sangue para coração e cérebro. Tratamento inicial é <strong>CLÍNICO / ANGIOGRÁFICO</strong>: correção da causa do choque, suspensão de vasopressores se tolerado e <strong>infusão intra-arterial seletiva contínua de vasodilatador (Tolazolina ou Papaverina a 30-60 mg/h)</strong> diretamente na AMS via cateterismo angiográfico percutâneo. Cirurgia apenas se sinais de peritonite irreversível."
+            ],
+            [
+              "<strong>Trombose Venosa Mesentérica (TVM)</strong>",
+              "<strong>5% a 15%</strong> (a causa de melhor prognóstico)",
+              "Pacientes jovens ou adultos com <strong>Estados de Hipercoagulabilidade primários ou secundários</strong> (mutação do Fator V de Leiden, mutação do gene da protrombina G20210A, deficiência de Proteína C, S ou Antitrombina III, Síndrome do Anticorpo Antifosfolípide - SAF, neoplasias malignas sólidas ou hematológicas), ou <strong>Hipertensão Portal / Cirrose</strong>, pancreatite aguda e esplenectomia recente.",
+              "Trombose intraluminal extensa da <strong>Veia Mesentérica Superior (VMS)</strong>, podendo estender-se para o tronco da veia porta ou veia esplênica.",
+              "A oclusão da drenagem venosa gera <strong>hipertensão venosa retrógrada maciça</strong>, extravasamento de plasma e sangue para a parede intestinal (parede cólica/ileal com edema exuberante em alvo) e ascite sanguinolenta sero-hemática. Possui evolução subaguda (dias a semanas). Tratamento de escolha: <strong>Anticoagulação Plena Imediata com Heparina Não Fracionada intravenosa contínua</strong>. Cirurgia apenas se peritonite/gangrena."
+            ]
+          ],
+          "book-table"
+        ]
+      ]
+    ],
+    [
+      "quadro-clinico-triade-laboratorio-angiotomografia",
+      0,
+      [
+        [
+          "2",
+          "3. Apresentação Clínica Cardinal: A Dor Desproporcional, Marcadores Laboratoriais e Angio-TC como Padrão-Ouro"
+        ],
+        [
+          "3",
+          "O Sinal Clínico Mais Precoce e Sensível: A Dor Abdominal Desproporcional"
+        ],
+        [
+          "p",
+          "O quadro clínico clássico da Isquemia Mesentérica Aguda embólica ou trombótica é caracterizado por um abismo semiológico que confunde médicos desavisados e atrasa o diagnóstico:"
+        ],
+        [
+          "p",
+          "<strong>A TRÍADE CLÁSSICA PATOGNOMÔNICA DA ISQUEMIA MESENTÉRICA AGUDA:</strong>"
+        ],
+        [
+          "o",
+          [
+            "<strong>Dor Abdominal Aguda de Intensidade Dilacerante e Desesperadora</strong> (dor de escore 10/10 na escala visual analógica, refratária a doses habituais de opioides parenterais);",
+            "<strong>Exame Físico Abdominal Praticamente Normal nas Primeiras Horas:</strong> O abdome encontra-se <strong>flácido, depressível, sem sinais de irritação peritoneal (Blumberg negativo) e com defesa muscular ausente ou mínima</strong>;",
+            "<strong>Esvaziamento Intestinal Reflexo Rápido Inicial:</strong> Vômitos incoercíveis e diarreia aquosa imediata após o início da dor."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Regra Semiológica de Ouro:</strong> Paciente idoso, vasculopata ou cardiopata com fibrilação atrial que se apresenta no pronto-socorro gritando de dor abdominal lancinante, mas cujo abdome é flácido e desprovido de dor à palpação profunda ou descompressão, <strong>TEM ISQUEMIA MESENTÉRICA AGUDA ATÉ QUE SE PROVE O CONTRÁRIO</strong>."
+        ],
+        [
+          "3",
+          "A Transição Semiológica Tardia: O Surgimento da Peritonite e Gangrena"
+        ],
+        [
+          "p",
+          "Quando o exame físico abdominal finalmente torna-se francamente positivo — com o aparecimento de <strong>defesa muscular involuntária, abdome em tábua, descompressão brusca difusa (sinal de Blumberg generalizado), distensão abdominal acentuada e desaparecimento completo dos ruídos hidroaéreos</strong> —, isso <strong>NÃO é um sinal diagnóstico precoce, mas sim uma confirmação tardia e fúnebre de que a isquemia já progrediu para INFARTO TRANSMURAL TRANSMURAL COMPLETO COM PERITONITE E GANGRENA IRREVERSÍVEL</strong>. O objetivo do médico moderno é diagnosticar o paciente <em>antes</em> do surgimento desses sinais de necrose."
+        ],
+        [
+          "3",
+          "Marcadores Laboratoriais: O Lactato e a Acidose Metabólica"
+        ],
+        [
+          "p",
+          "Não existe nenhum biomarcador sanguíneo isolado com acurácia suficiente para diagnosticar ou descartar a isquemia mesentérica em suas primeiras horas; contudo, o painel laboratorial reflete o colapso hemodinâmico tecidual:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Leucocitose Extrema com Desvio à Esquerda:</strong> Contagem de leucócitos habitualmente <strong>$&gt; 15.000$ a $20.000/\text{mm}³$ com desvio acentuado</strong> para bastonetes e metamielócitos. É a alteração laboratorial mais precoce (presente em $> 90%$ dos pacientes);",
+            "<strong>Acidose Metabólica com Ânion-Gap Elevado:</strong> Queda profunda do pH arterial ($&lt; 7,20-7,30$) e do bicarbonato sérico ($&lt; 15$ mEq/L);",
+            "<strong>Hiperlactatemia Sérica (Elevação do Lactato Sanguíneo):</strong>\n    <p>O <strong>Lactato sérico elevado ($&gt; 2,0$ a $4,0$ mmol/L)</strong> é o marcador clássico de hipóxia celular e metabolismo anaeróbio muscular. <em>Atenção crítica de prova:</em> O lactato sérico normal nas primeiras 2 a 4 horas <strong>NÃO descarta isquemia mesentérica incipiente</strong> (o fígado depura temporariamente o lactato portal na fase mucosa inicial). Entretanto, quando o lactato se eleva de forma consistente e descompassada, correlaciona-se fortemente com a presença de <strong>necrose intestinal transmural já instalada</strong> e prognóstico sombrio;</p>",
+            "<strong>D-Dímero:</strong> Apresenta sensibilidade de 96% (valor preditivo negativo alto), mas baixíssima especificidade. Um D-dímero rigorosamente normal em paciente assintomático ajuda a afastar embolia, mas não substitui a imagem;",
+            "<strong>Amilase e Creatina Fosfoquinase (CPK):</strong> Podem elevar-se tardiamente por isquemia pancreática e necrose da musculatura lisa intestinal."
+          ]
+        ],
+        [
+          "3",
+          "Angiotomografia Computadorizada (Angio-TC) de Abdome e Pelve: O Padrão-Ouro Absoluto"
+        ],
+        [
+          "p",
+          "A <strong>Angio-TC de abdome total com contraste intravenoso iodado multifásica</strong> (fase sem contraste, fase arterial precoce e fase portal tardia) é o <strong>exame de escolha mandatório indiscutível</strong> para o diagnóstico definitivo da Isquemia Mesentérica Aguda, com sensibilidade e especificidade superiores a <strong>95% a 98%</strong>:"
+        ],
+        [
+          "t",
+          [
+            "Achado Tomográfico na Angio-TC",
+            "Significado Fisiopatológico e Correlação Etiológica"
+          ],
+          [
+            [
+              "<strong>Falha de Enchimento Intraluminal na AMS</strong>",
+              "<strong>Patognomônico de oclusão mecânica</strong>: parada abrupta do fluxo de contraste com trombo visualizado. Se localizado a 3-8 cm da origem com poupamento proximal: <strong>Embolia</strong>. Se na própria raiz aórtica com calcificação parietal aórtica severa: <strong>Trombose Arterial</strong>."
+            ],
+            [
+              "<strong>Falha de Enchimento na Veia Mesentérica Superior (VMS)</strong>",
+              "<strong>Patognomônico de Trombose Venosa Mesentérica (TVM)</strong>: veia mesentérica dilatada com trombo central hipodenso e realce anelar da parede venosa."
+            ],
+            [
+              "<strong>Hipoatenuação e Ausência de Realce da Parede Intestinal</strong>",
+              "Falta de impregnação do meio de contraste pela parede da alça intestinal na fase arterial (parede \"muda\" ou apagada). Sinal inequívoco de <strong>hipoperfusão e isquemia intestinal transmural ativa</strong>."
+            ],
+            [
+              "<strong>Edema Parietal Espessado com Sinal do Duplo Halo / Alvo</strong>",
+              "Mais comum na Trombose Venosa Mesentérica e Colite Isquêmica: edema maciço da submucosa entre a mucosa e a serosa hiperemiadas."
+            ],
+            [
+              "<strong>Pneumatose Intestinal (Gás na Parede da Alça)</strong>",
+              "Dissecção de gás bacteriano para as camadas submucosa e subserosa do intestino delgado. <strong>Sinal tardio de necrose transmural e infarto intestinal irreversível</strong>."
+            ],
+            [
+              "<strong>Gás no Sistema Venoso Portal (Aeroportia)</strong>",
+              "Gás luminal que ganha a microcirculação venosa mesentérica e atinge as ramificações periféricas da veia porta no parênquima hepático. <strong>Sinal de gravidade extrema e gangrena extensa</strong>."
+            ],
+            [
+              "<strong>Pneumoperitônio Livre Extraluminal</strong>",
+              "Presença de ar livre subdiafragmático decorrente de <strong>perfuração intestinal transmural já consumada</strong>."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "p",
+          "<strong>A Regra de Ouro da Conduta Radiológica:</strong> A suspeita clínica de isquemia mesentérica aguda é uma emergência vascular cirúrgica de tempo dependente. O paciente <strong>NÃO DEVE ser submetido à radiografia simples de abdome (inútil e atrasa o tratamento) e NÃO DEVE aguardar estabilização de creatinina para receber contraste iodado na Angio-TC</strong>: o risco de morte por necrose intestinal não diagnosticada supera infinitamente o risco teórico de nefropatia induzida por contraste."
+        ]
+      ]
+    ],
+    [
+      "trombose-venosa-mesenterica-e-sindrome-do-intestino-curto",
+      0,
+      [
+        [
+          "2",
+          "4. Trombose Venosa Mesentérica, Estados de Trombofilia e Manejo da Síndrome do Intestino Curto"
+        ],
+        [
+          "3",
+          "Trombose Venosa Mesentérica (TVM): Etiologia, Propedêutica e Manejo Específico"
+        ],
+        [
+          "p",
+          "A <strong>Trombose Venosa Mesentérica (TVM)</strong> responde por cerca de 5% a 15% de todos os episódios de isquemia mesentérica aguda, apresentando perfil clínico, fisiopatológico e prognóstico profundamente distinto das formas arteriais:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Etiopatogenia e Estados de Hipercoagulabilidade:</strong>\n    <ul>\n      <li><em>Trombofilias Hereditárias:</em> Mutação do Fator V de Leiden (resistência à proteína C ativada - a causa hereditária mais comum), mutação G20210A do gene da protrombina, deficiência congênita de Proteína C, Proteína S ou Antitrombina III;",
+            "<em>Trombofilias Adquiridas e Neoplasias:</em> Síndrome do Anticorpo Antifosfolípide (SAF com anticoagulante lúpico e anticardiolipina), neoplasias mieloproliferativas crônicas (Policitemia Vera e Trombocitemia Essencial com mutação do <strong>JAK2 V617F</strong>), hemoglobinúria paroxística noturna (HPN com clone CD55/CD59 negativo) e adenocarcinomas ocultos do trato gastrointestinal (fenômeno de Trousseau);",
+            "<em>Fatores Locais Mecânicos e Inflamatórios:</em> <strong>Hipertensão Portal crônica secundária à cirrose hepática</strong> (estase venosa grave no leito portal), pancreatite aguda necro-hemorrágica (trombose da veia esplênica por contiguidade inflamatória que se propaga para a veia porta e VMS), sepse intra-abdominal grave e esplenectomia recente (trombose do coto da veia esplênica);"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Fisiopatologia da Congestão Venosa e Infarto Hemorrágico:</strong>"
+        ],
+        [
+          "p",
+          "A oclusão do lúmen da Veia Mesentérica Superior interrompe abruptamente o retorno venoso do intestino delgado para o fígado. A pressão hidrostática intravascular nos capilares peritubulares e vasos retos mesentéricos eleva-se para patamares superiores à pressão sistêmica arteriolar. Ocorre extravasamento maciço de eritrócitos e plasma para a parede intestinal e luz entérica. A parede da alça torna-se extremamente espessada, edematosa, arroxeada e túrgida — configurando o <strong>infarto venoso hemorrágico</strong> (diferente da necrose isquêmica pálida arterial);"
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Quadro Clínico e Evolução Subaguda:</strong>"
+        ],
+        [
+          "p",
+          "Ao contrário da dor hiperaguda fulminante da embolia arterial, a TVM possui instalação <strong>insidiosa e subaguda (evolução ao longo de 7 a 30 dias)</strong>. O paciente queixa-se de desconforto abdominal vago no mesogástrio, distensão abdominal, náuseas, anorexia e diarreia intermitente, culminando tardiamente em dor mais severa quando o edema parietal atinge a serosa;"
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Diagnóstico por Angio-TC de Abdome na Fase Portal:</strong>"
+        ],
+        [
+          "p",
+          "A TC de abdome realizada na <strong>fase venosa portal (60 a 70 segundos após a injeção do contraste IV)</strong> é o exame padrão-ouro definitivo: evidencia a <strong>Veia Mesentérica Superior dilatada com defeito de enchimento intraluminal central hipodenso</strong>, realce inflamatório proeminente da parede venosa e espessamento simétrico exuberante da parede do intestino delgado em \"alvo\" ou \"duplo halo\", associado a ascite sanguinolenta sero-hemática no recesso pélvico e goteiras parietocólicas;"
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Tratamento Clínico de Primeira Linha: Anticoagulação Plena Imediata:</strong>"
+        ],
+        [
+          "u",
+          [
+            "O pilar do tratamento da TVM é a <strong>anticoagulação sistêmica imediata com Heparina Não Fracionada intravenosa contínua</strong> (mesmo na presença de sangramento microscópico no sedimento fecal). A heparina estabiliza o trombo, previne a extensão para os ramos periféricos da arcada venosa e permite que a rica drenagem linfática e venosa colateral desobstrua o intestino;",
+            "Sob anticoagulação precoce, <strong>mais de 80% dos pacientes com TVM recuperam-se completamente sem nenhuma intervenção cirúrgica</strong>;",
+            "<em>Indicação de Laparotomia na TVM:</em> Reservada estritamente para pacientes que desenvolvem <strong>sinais francos de peritonite peritoneal (Blumberg difuso, pneumatose ou choque séptico)</strong>, indicando necrose transmural irreversível. Na cirurgia, aplica-se o mesmo princípio: ressecção parcimoniosa estrita do segmento necrosado e <em>second-look</em> em 24 a 48 horas."
+          ]
+        ],
+        [
+          "3",
+          "A Temida Complicação Cirúrgica Tardia: A Síndrome do Intestino Curto (SIC)"
+        ],
+        [
+          "p",
+          "Quando a isquemia mesentérica aguda por trombose da raiz da AMS ou embolia maciça não diagnosticada em tempo hábil resulta em necrose pan-intestinal extensa, o cirurgião é forçado a realizar ressecções intestinais massivas, precipitando a <strong>Síndrome do Intestino Curto (SIC)</strong>:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Definição Anatômica e Funcional:</strong> Presença de <strong>menos de 150 a 200 cm de intestino delgado funcionante</strong> no adulto (em condições anatômicas normais, o comprimento total do intestino delgado humano varia entre 400 e 600 cm). A dependência estrita e permanente de Nutrição Parenteral Total (NPT) ocorre quando o comprimento remanescente é <strong>$&lt; 50 a 100 cm</strong>;",
+            "<strong>A Importância Vital dos Três Segmentos Remanescentes:</strong>\n    <ul>\n      <li><em>A Preservação do Íleo Terminal:</em> O íleo terminal possui transportadores moleculares altamente especializados exclusivos que <strong>não existem no jejuno nem no cólon</strong>: absorção de <strong>Vitamina B12 ligada ao Fator Intrínseco</strong> e reabsorção ativa de <strong>Sais Biliares</strong> (circulação entero-hepática). A perda de mais de 100 cm de íleo terminal acarreta deficiência grave de B12, perda da reserva hepática de sais biliares, má absorção maciça de gorduras e vitaminas lipossolúveis (A, D, E e K), diarreia colerética e formação de cálculos biliar de colesterol e cálculos renais de oxalato de cálcio (hiperoxalúria entérica);",
+            "<em>A Preservação da Válvula Ileocecal (de Bauhin):</em> A válvula atua como uma barreira mecânica que <strong>retarda o esvaziamento do quimo do intestino delgado para o ceco</strong> (aumentando o tempo de contato e absorção) e <strong>impede o refluxo massivo retrógrado da microbiota colônica</strong> para o delgado (prevenindo o Supercrescimento Bacteriano no Intestino Delgado - SIBO);",
+            "<em>A Preservação do Cólon em Continuidade:</em> Se o cólon estiver preservado e anastomosado ao delgado remanescente, a microbiota bacteriana fermenta carboidratos não digeridos em Ácidos Graxos de Cadeia Curta (AGCC: butirato e acetato), permitindo a absorção de até 500 a 1.000 kcal adicionais por dia pela mucosa cólica;",
+            "<strong>Manejo Farmacológico Moderno da SIC:</strong>\n    <ul>\n      <li>Inibidores da bomba de prótons em altas doses nos primeiros meses para controlar a hipersecreção gástrica ácida reflexa induzida pela perda de hormônios inibitórios entéricos;",
+            "Antidiarreicos (Loperamida e Difenoxilato) antes das refeições para lentificar o trânsito;",
+            "<strong>Teduglutida (Análogo recombinante do GLP-2):</strong> Revolução terapêutica na SIC. O agonista do receptor GLP-2 induz hipertrofia da mucosa, aumento da altura das vilosidades intestinais e proliferação das criptas do delgado, aumentando a área absortiva e permitindo o desmame parcial ou completo da nutrição parenteral em pacientes com falência intestinal crônica."
+          ]
+        ]
+      ]
+    ],
+    [
+      "tratamento-cirurgico-urgencia-embolectomia-second-look",
+      0,
+      [
+        [
+          "2",
+          "4. Abordagem Cirúrgica de Emergência: Embolectomia com Cateter de Fogarty, Revascularização e a Laparotomia de Second-Look"
+        ],
+        [
+          "3",
+          "Medidas Pré-Operatórias e Ressuscitação Hemodinâmica Imediata"
+        ],
+        [
+          "p",
+          "O paciente com suspeita ou confirmação de isquemia mesentérica aguda deve ser submetido imediatamente a medidas de suporte intensivo enquanto é encaminhado para o centro cirúrgico:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ressuscitação Volêmica Agressiva com Cristaloides Balanceados:</strong> A perda de líquido por sequestro em terceiro espaço na luz intestinal e na cavidade peritoneal é monumental, deflagrando hipovolemia profunda;",
+            "<strong>Anticoagulação Plena com Heparina Não Fracionada (HNF) Intravenosa:</strong> Administra-se bólus de 80 UI/kg seguido de infusão contínua de 18 UI/kg/h (mantendo TTPa entre 1,5 e 2,5 vezes o controle). A heparinização sistêmica imediata <strong>impede a propagação e propagação retrógrada e anterógrada do trombo no leito microvascular distal</strong> (trombose secundária dos capilares mesentéricos);",
+            "<strong>Antibioticoterapia Intravenosa de Amplo Espectro:</strong> Iniciada imediatamente na admissão para cobrir a translocação de bacilos Gram-negativos e anaeróbios (ex.: <em>Piperacilina-Tazobactam</em> ou <em>Ceftriaxona associada a Metronidazol</em>);",
+            "<strong>Descompressão Gastrointestinal com Sonda Nasogástrica Aberta:</strong> Alivia a distensão de alças, previne broncoaspiração e reduz a pressão intraluminal tecidual."
+          ]
+        ],
+        [
+          "3",
+          "Intervenção Cirúrgica de Emergência: A Laparotomia Exploradora"
+        ],
+        [
+          "p",
+          "O princípio basilar do tratamento cirúrgico na isquemia arterial mesentérica baseia-se na seguinte regra mandatória: <strong>PRIMEIRO REVASCULARIZAR O INTESTINO (RESTAURAR O FLUXO SANGUÍNEO), E SOMENTE DEPOIS RESSECAR AS ALÇAS QUE PERMANECEREM DEFINITIVAMENTE INVIÁVEIS</strong>."
+        ],
+        [
+          "4",
+          "1. Embolectomia Cirúrgica da AMS com Cateter de Fogarty (na Embolia)"
+        ],
+        [
+          "u",
+          [
+            "Realiza-se laparotomia exploradora mediana ampla;",
+            "Identificação e dissecção cirúrgica da Artéria Mesentérica Superior na raiz do mesocólon transverso, logo abaixo do colo do pâncreas;",
+            "Clampeamento vascular proximal e distal e realização de <strong>Arteriotomia Transversa da AMS</strong> (a incisão transversa previne estenose vascular tardia após o fechamento da sutura);",
+            "Introdução do <strong>Cateter de Embolectomia de Fogarty vascular (calibres 3F ou 4F)</strong> retrógrado e anterógrado. O balão é delicadamente insuflado com soro fisiológico e tracionado, exteriorizando os êmbolos organizados e os trombos secundários de propagação distal até a obtenção de excelente refluxo e influxo arterial pulsátil vigoroso;",
+            "Lavagem intraluminal com solução salina heparinizada e arteriorrafia com fio monofilamentar inabsorvível cardiovascular (Prolene 6-0), utilizando eventualmente <em>patch</em> de veia safena para evitar estreitamento do vaso."
+          ]
+        ],
+        [
+          "4",
+          "2. Revascularização Cirúrgica Complexa (na Trombose Arterial da AMS)"
+        ],
+        [
+          "p",
+          "Na trombose arterial sobre placa aórtica calcificada, a embolectomia simples por balão é ineficaz, pois a placa estenosante na raiz aórtica obstrui novamente o vaso de imediato. A conduta exige <strong>Revascularização Vascular Cirúrgica (Bypass Aorto-Mesentérico ou Ílio-Mesentérico)</strong>:"
+        ],
+        [
+          "u",
+          [
+            "Confecciona-se um enxerto vascular em ponte (utilizando a veia safena magna autóloga invertida ou prótese de PTFE) unindo a artéria ilíaca comum (ou aorta infrarrenal saudável) ao segmento distal pérvio da Artéria Mesentérica Superior (bypass retrógrado);",
+            "Em centros terciários de radiologia intervencionista, se o paciente não apresentar peritonite franca, a <em>Trombectomia Farmacomecânica Percutânea por via endovascular com implante de Stent aórtico-mesentérico</em> pode ser considerada."
+          ]
+        ],
+        [
+          "3",
+          "Avaliação da Viabilidade das Alças Intestinais no Intraoperatório"
+        ],
+        [
+          "p",
+          "Após a revascularização arterial com sucesso, o cirurgião deve aguardar <strong>15 a 30 minutos</strong> com as alças envolvidas em compressas úmidas aquecidas sob hiperoxigenação a 100% para avaliar a recuperação tecidual:"
+        ],
+        [
+          "t",
+          [
+            "Parâmetro Clínico-Cirúrgico",
+            "Alça Intestinal Viável (Preservada)",
+            "Alça Francamente Inviável (Necrose/Gangrena)",
+            "Alça Limítrofe / Duvidosa"
+          ],
+          [
+            [
+              "<strong>Coloração da Serosa</strong>",
+              "Rósea ou avermelhada viva, brilhante",
+              "Enegrecida, verde-escura, arroxeada opaca (\"folha seca\")",
+              "Pálida, arroxeada clara ou mosqueada"
+            ],
+            [
+              "<strong>Peristaltismo da Alça</strong>",
+              "Peristaltismo ativo espontâneo ou induzido por leve toque de pinça",
+              "Completamente imóvel e aperistáltica",
+              "Movimentos peristálticos discretos e lentificados"
+            ],
+            [
+              "<strong>Pulsação Arterial no Bordo Mesentérico</strong>",
+              "Pulsos arteriais palpáveis e visíveis nos vasos retos marginais",
+              "Ausência total de pulsações vasculares marginais",
+              "Pulsos limítrofes ou de difícil palpação"
+            ],
+            [
+              "<strong>Sangramento à Secção da Serosa</strong>",
+              "Sangramento ativo vermelho-vivo e contínuo ao escarificar",
+              "Ausência completa de sangramento ou sangue escuro coagulado",
+              "Sangramento escasso e lentificado"
+            ],
+            [
+              "<strong>Eco-Doppler Vascular Intraoperatório e Fluorescência</strong>",
+              "Sinal acústico arterial audível com probe de Doppler à beira do leito; impregnação homogênea sob luz de Wood com fluoresceína IV",
+              "Silêncio acústico Doppler absoluto; ausência total de fluorescência tecidual",
+              "Sinal Doppler fraco ou descontínuo; fluorescência irregular em manchas"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "A Regra do \"Dano Mínimo\" e a Laparotomia de Reavaliação Programada (Second-Look)"
+        ],
+        [
+          "p",
+          "Um dos erros mais letais da cirurgia do passado era a ressecção imediata e agressiva de todos os segmentos intestinais que pareciam pálidos ou edemaciados, condenando o paciente à <strong>Síndrome do Intestino Curto catastrófica</strong> com dependência eterna de nutrição parenteral total:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ressecção Estrita do Tecido Claramente Necrosado:</strong> O cirurgião deve ressecar <strong>APENAS as alças intestinais com gangrena irreversível evidente</strong> (tecido necrótico cinzento-enegrecido perfurado ou liquefeito);",
+            "<strong>Preservação das Alças Duvidosas:</strong> Todos os segmentos de intestino que apresentarem viabilidade limítrofe, motilidade duvidosa ou palidez são <strong>PRESERVADOS temporariamente</strong>;",
+            "<strong>Não Confeccionar Anastomoses Primárias no Paciente Instável:</strong> As extremidades intestinais ressecadas podem ser fechadas com grampeador cirúrgico ou sepultadas sem anastomose (cirurgia de controle de danos / <em>damage control surgery</em>);",
+            "<strong>O Conceito da Laparotomia de Second-Look Obrigatória:</strong>\n    <div class=\"formula-box\">\n      <p><strong>A LAPAROTOMIA DE SECOND-LOOK PROGRAMADA (REOPERAÇÃO EM 24 A 48 HORAS):</strong></p>\n      <ul>\n        <li>O abdome é mantido aberto em laparostomia (com sistema de curativo a vácuo / bolsa de Bogotá);",
+            "O paciente retorna à Unidade de Terapia Intensiva para correção rigorosa de acidose lática, aquecimento, ressuscitação volêmica, desmame de drogas vasoativas e manutenção de anticoagulação plena;",
+            "<strong>A reoperação é programada obrigatoriamente dentro de 24 a 48 horas</strong>: reabre-se a cavidade para reinspecionar todas as alças que estavam limítrofes;",
+            "Em mais de 50% dos casos, as alças duvidosas recuperam-se espetacularmente sob melhora da perfusão sistêmica, sendo salvas da ressecção. Resseca-se apenas o que tiver progredido para necrose definitiva e realiza-se a reconstrução definitiva do trânsito intestinal com anastomoses seguras e fechamento da parede abdominal."
+          ]
+        ]
+      ]
+    ],
+    [
+      "terapia-endovascular-avancada-e-terapia-intensiva-perioperatoria",
+      0,
+      [
+        [
+          "2",
+          "5. Técnicas Endovasculares Avançadas, Cuidados Críticos em UTI, Nutrição Parenteral e Prevenção de Complicações"
+        ],
+        [
+          "3",
+          "A Revolução Endovascular na Isquemia Mesentérica Aguda e Crônica"
+        ],
+        [
+          "p",
+          "O tratamento das afecções isquêmicas intestinais foi amplamente transformado pelo avanço das técnicas percutâneas guiadas por fluoroscopia em salas híbridas de hemodinâmica. A abordagem endovascular minimamente invasiva oferece a extraordinária vantagem de restaurar a perfusão tecidual sem a necessidade de toracotomia ou laparotomia de grande porte em pacientes idosos, cardiopatas graves e instáveis:"
+        ],
+        [
+          "t",
+          [
+            "Procedimento Endovascular",
+            "Vias de Acesso e Dispositivos Utilizados",
+            "Indicações Clínicas e Critérios Anatômicos",
+            "Taxa de Sucesso Técnico e Complicações Potenciais"
+          ],
+          [
+            [
+              "<strong>Aspiração Mecânica e Trombectomia Farmacomecânica</strong>",
+              "Acesso por punção da <strong>Artéria Braquial Esquerda</strong> (que oferece trajeto descendente favorável com menor ângulo de entrada no óstio da AMS) ou punção femoral retrógrada. Utilização de cateteres de aspiração de grande calibre (6F a 8F) acoplados a sistemas de aspiração a vácuo contínuo (AngioJet, Indigo/Penumbra).",
+              "<strong>Embolia aguda da AMS</strong> e trombose arterial recente diagnosticada precocemente em pacientes <strong>SEM sinais peritoneais francos de necrose intestinal</strong>.",
+              "Sucesso técnico de recanalização em <strong>80% a 90% dos casos</strong>. Complicações: dissecção da parede arterial da AMS, embolização distal de microtrombos para alças ileais e sangramento no sítio de punção braquial com hematoma local."
+            ],
+            [
+              "<strong>Trombolise Guiada por Cateter Intramesentérico</strong>",
+              "Infusão contínua intraluminal de trombolítico de última geração (Alteplase / rt-PA na dose de 0,5 a 1,0 mg/hora) diretamente no trombo oclusivo associada à heparinização sistêmica.",
+              "Trombose arterial subaguda ou trombose venosa mesentérica extensa refratária à heparina. <strong>Contraindicada se sangramento gastrointestinal ativo, cirurgia de grande porte nas últimas 2 semanas ou necrose intestinal suspeita.</strong>",
+              "Risco significativo de hemorragia intraperitoneal maciça através de alças isquêmicas previamente friáveis e sangramento sistêmico grave."
+            ],
+            [
+              "<strong>Angioplastia com Stent Balão-Expansível Ostial</strong>",
+              "Posicionamento de <strong>Stent metálico balão-expansível revestido (coberto) ou não revestido</strong> na origem da AMS ou tronco celíaco, sob fluoroscopia de alta resolução, ultrapassando a placa aterosclerótica calcificada estenosante em 1 a 2 mm para a luz da aorta.",
+              "<strong>Padrão-ouro absoluto na Isquemia Mesentérica Crônica (Angina Abdominal)</strong> e na trombose aguda sobre placa calcificada estável. Os stents revestidos (covered stents) apresentam taxas de patência primária a longo prazo significativamente superiores aos stents convencionais (85% vs 65% em 3 anos).",
+              "Alívio imediato dos sintomas pós-prandiais, recuperação do ganho de peso e prevenção de oclusão aguda trombótica fatal. Taxa de re-estenose tratável por nova angioplastia com balão farmacológico."
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Suporte Hemodinâmico Intensivo e Cuidados Críticos em UTI"
+        ],
+        [
+          "p",
+          "O paciente que sobrevive a um episódio de isquemia mesentérica aguda e é submetido à revascularização vascular enfrenta uma fase crítica de cuidados pós-operatórios na Unidade de Terapia Intensiva:"
+        ],
+        [
+          "o",
+          [
+            "<strong>Ressuscitação Hemodinâmica com Cristaloides Balanceados:</strong> A lesão de reperfusão induz aumento massivo da permeabilidade capilar sistêmica, com perda colossal de fluidos para o terceiro espaço intra-abdominal. O objetivo hemodinâmico é garantir <strong>Débito Cardíaco e Pressão de Perfusão satisfatórios (PAM $ge 65$ a $70$ mmHg)</strong>;",
+            "<strong>A Escolha Crítica de Drogas Vasoativas na UTI:</strong>\n    <ul>\n      <li><em>Vasopressores Potentes:</em> Devem ser utilizados com extremo comedimento. A <strong>Noradrenalina</strong> é o vasopressor de escolha para restauração da PAM; contudo, doses excessivas agravam a vasoconstrição esplâncnica secundária;",
+            "<em>Evitar Vasopressina e Adrenalina em Doses Elevadas:</em> A vasopressina atua diretamente nos receptores V1 da musculatura lisa vascular mesentérica, promovendo vasoconstrição esplâncnica devastadora que pode induzir re-isquemia das alças recém-revascularizadas;",
+            "<em>Inotrópicos no Baixo Débito:</em> Se houver disfunção ventricular miocárdica (choque cardiogênico ou choque séptico com miocardiopatia séptica), a associação precoce de <strong>Dobutamina (2,5 a 10 $mu$g/kg/min)</strong> ou Milrinona melhora o débito cardíaco sistêmico e otimiza a perfusão da microcirculação das vilosidades intestinais;",
+            "<strong>Monitorização Contínua da Pressão Intra-Abdominal (PIA) e Prevenção da Síndrome Compartimental Abdominal (SCA):</strong>\n    <p>O edema maciço da parede do intestino delgado e o volumoso acúmulo de líquido ascite inflamatório na cavidade peritoneal pós-reperfusão elevam expressivamente a pressão no interior do abdome. Todo paciente crítico pós-isquemia deve ser monitorado por <strong>mensuração seriada da Pressão Intra-Abdominal via Cateter Vesical de Demora (técnica transvesical com instilação de 25 mL de soro fisiológico)</strong>:</p>\n    <ul>\n      <li><em>Hipertensão Intra-Abdominal (HIA):</em> Definida como PIA mantida $ge 12$ mmHg;",
+            "<em>Síndrome Compartimental Abdominal (SCA):</em> Definida como <strong>PIA sustentada $&gt; 20$ mmHg associada a nova disfunção orgânica de órgãos nobres</strong> (queda do débito urinário por compressão renal, aumento das pressões de pico ventilatório por elevação diafragmática e hipotensão por compressão da veia cava inferior e queda do retorno venoso);",
+            "<em>Prevenção e Conduta:</em> A manutenção do <strong>abdome aberto em laparostomia (com curativo a vácuo / bolsa de Bogotá)</strong> na primeira cirurgia é a intervenção preventiva mais eficaz para evitar a SCA. Se o abdome foi fechado primariamente e desenvolve SCA, a <strong>reabertura descompressiva cirúrgica imediata à beira do leito na UTI</strong> é procedimento salvador de vida mandatório.",
+            "<strong>Manejo Nutricional e Introdução de Nutrição Parenteral Total (NPT):</strong>\n    <p>Pacientes submetidos a ressecções intestinais extensas ou em abdome aberto com laparostomia não toleram dieta enteral precoce. A <strong>Nutrição Parenteral Total (NPT) por cateter venoso central profundo exclusivo</strong> deve ser iniciada precocemente (dentro de 48 a 72 horas de estabilização pós-operatória), fornecendo aporte balanceado de glicose, emulsões lipídicas com triglicerídeos de cadeia média e longa, aminoácidos e micronutrientes (zinco, selênio e vitaminas hidrossolúveis) para sustentar a síntese proteica reparadora e regeneração epitelial intestinal.</p>",
+            "<strong>Profilaxia Trombótica Secundária e Anticoagulação Prolongada:</strong>\n    <p>A heparinização intravenosa não fracionada contínua deve ser mantida ao longo de todo o período pós-operatório imediato. Após a estabilização e fechamento definitivo da parede abdominal, realiza-se a transição para <strong>Anticoagulação Oral Definitiva</strong> (com Anticoagulantes Orais Diretos - DOACs como Rivaroxabana ou Apixabana, ou Varfarina com alvo de RNI entre 2,0 e 3,0):</p>\n    <ul>\n      <li>Na <strong>Embolia da AMS secundária à Fibrilação Atrial</strong>: anticoagulação oral plena por <strong>tempo indeterminado (para toda a vida)</strong> para prevenir novos eventos cardioembólicos em outros leitos vasculares (como AVC isquêmico);",
+            "Na <strong>Trombose Venosa Mesentérica por Trombofilia Primária</strong>: anticoagulação mantida por no mínimo 6 a 12 meses, ou por tempo indeterminado se mutações de alto risco (homozigose para Fator V de Leiden ou SAF);",
+            "Na <strong>Trombose Arterial com Stent Mesentérico</strong>: dupla antiagregação plaquetária (AAS + Clopidogrel) por 1 a 3 meses, seguida de monoterapia com AAS indefinidamente.",
+            "<strong>Diagnóstico Precoce da Re-Oclusão e Falência do Enxerto:</strong>\n    <p>O retorno súbito de dor abdominal intensa na UTI, nova elevação do lactato sérico, taquicardia inexplicada ou piora da acidose metabólica em paciente revascularizado deve suscitar <strong>imediata suspeita de trombose precoce do enxerto vascular ou oclusão do stent</strong>. A realização de nova Angio-TC de emergência ou relaparotomia descompressiva não deve ser postergada.</p>"
+          ]
+        ]
+      ]
+    ],
+    [
+      "isquemia-mesenterica-cronica-e-colite-isquemica",
+      0,
+      [
+        [
+          "2",
+          "5. Isquemia Mesentérica Crônica (Angina Abdominal) e Colite Isquêmica"
+        ],
+        [
+          "3",
+          "Isquemia Mesentérica Crônica: A \"Angina Abdominal\""
+        ],
+        [
+          "p",
+          "A <strong>Isquemia Mesentérica Crônica (IMC)</strong> é uma condição vascular insidiosa resultante da insuficiência circulatória aterosclerótica crônica dos grandes troncos arteriais esplâncnicos, impedindo a resposta hiperêmica fisiológica demandada pelo intestino durante a digestão pós-prandial:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia da Estenose Multiarterial:</strong> Como a rede de colaterais entre o tronco celíaco, a AMS e a AMI é excepcionalmente rica, o aparecimento de sintomas clínicos exige tipicamente a <strong>estenose hemodinamicamente crítica ($ge 70%$) ou oclusão completa de PELO MENOS DOIS dos três troncos viscerais principais</strong> (habitualmente tronco celíaco + AMS);",
+            "<strong>A Tríade Clínica Clássica da Isquemia Mesentérica Crônica:</strong>\n    <ol>\n      <li><strong>Dor Abdominal Pós-Prandial (\"Angina Abdominal\"):</strong> Dor epigástrica ou periumbilical contínua em queimação ou cólica que se inicia tipicamente <strong>20 a 45 minutos após a ingesta alimentar</strong>, com pico de intensidade em 1 a 2 horas e alívio espontâneo após 3 a 4 horas (momento em que a demanda metabólica digestiva retorna aos níveis basais);",
+            "<strong>\"Medo de se Alimentar\" (Sitofobia):</strong> O paciente associa diretamente a dor dilacerante ao ato da alimentação, desenvolvendo aversão e pavor à comida, reduzindo progressivamente o volume e a frequência das refeições diárias;",
+            "<strong>Perda Ponderal Severa e Progressiva (Emagrecimento Marcante):</strong> Ocorre emagrecimento consumptivo profundo de 10 a 20 kg em poucos meses, decorrente da combinação de ingestão calórica mínima voluntária somada à má absorção intestinal isquêmica crônica;",
+            "<strong>Exame Físico:</strong> Paciente idoso, caquético, desnutrido, sarcopênico, com evidência de vasculopatia periférica sistêmica (sopros carotídeos, pulsos pediosos diminuídos). Em até 50% dos casos, ausculta-se um <strong>sopro sistólico no epigástrio</strong>;",
+            "<strong>Diagnóstico Propedêutico:</strong>\n    <ul>\n      <li><em>Eco-Doppler de Artérias Mesentéricas:</em> Excelente método de triagem não invasivo (velocidade de pico sistólico $> 275$ cm/s na AMS e $> 200$ cm/s no tronco celíaco indicam estenose $ge 70%$);",
+            "<em>Angio-TC de Abdome Multislice ou Angiorressonância:</em> Padrão-ouro confirmatório para visualização tridimensional das placas ateroscleróticas calcificadas ostiais e planejamento da rota cirúrgica;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>Tratamento da Isquemia Crônica:</strong>"
+        ],
+        [
+          "p",
+          "O objetivo é restaurar o fluxo arterial para aliviar a dor, recuperar o estado nutricional e <strong>prevenir a evolução catastrófica para isquemia mesentérica aguda por trombose sobreposta da AMS</strong> (que ocorre em até 30% a 50% dos pacientes não tratados):"
+        ],
+        [
+          "u",
+          [
+            "<strong>Terapia Endovascular (Primeira Linha na maioria dos centros):</strong> Angioplastia transluminal percutânea com implante de <strong>Stent metálico balão-expansível</strong> na AMS e/ou tronco celíaco via acesso braquial ou femoral. Menor morbimortalidade peroperatória, ideal para pacientes idosos frágeis e desnutridos;",
+            "<strong>Cirurgia Aberta de Revascularização:</strong> Bypass aorto-mesentérico ou celíaco com enxerto de veia safena ou PTFE. Apresenta maior patência primária a longo prazo (superior a 85% em 5 anos), sendo indicada em falhas endovasculares ou lesões arteriais extensas em pacientes mais jovens com bom risco cirúrgico."
+          ]
+        ],
+        [
+          "3",
+          "Colite Isquêmica: A Forma Mais Comum de Isquemia Intestinal"
+        ],
+        [
+          "p",
+          "A <strong>Colite Isquêmica</strong> é a afecção isquêmica do trato gastrointestinal mais prevalente no mundo, respondendo por mais de <strong>60% a 70% de todos os episódios de isquemia intestinal hospitalar</strong>. Trata-se de uma condição fisiopatológica completamente diferente da isquemia mesentérica aguda:"
+        ],
+        [
+          "u",
+          [
+            "<strong>Fisiopatologia:</strong> Ocorre por <strong>hipoperfusão transitória da microcirculação da parede do cólon (baixo fluxo não oclusivo microvascular)</strong>, sem oclusão de grandes troncos arteriais por trombos ou êmbolos. Os fatores precipitantes clássicos incluem: episódios transitórios de hipotensão arterial sistêmica, desidratação, cirurgias cardiovasculares de grande porte (com pinçamento aórtico), choque hipovolêmico ou séptico, corrida de maratona (isquemia do corredor de longa distância) e fármacos vasoconstritores (descongestionantes com pseudoefedrina, cocaína, sumatriptano e digitálicos);",
+            "<strong>Localizações Anatômicas Prediletas:</strong> Acomete preferencialmente as zonas de bacia hidrográfica terminal:\n    <ol>\n      <li><strong>Ângulo Esplênico do Cólon (Ponto de Griffith):</strong> Mais comum de todos (borda distal entre AMS e AMI);",
+            "<strong>Junção Retossigmoide (Ponto de Sudeck):</strong> Transição entre artérias sigmoideas e retal superior;",
+            "<strong>Poupamento Típico do Reto:</strong> O reto distal é ricamente irrigado por vasos das artérias ilíacas internas (retais médias e inferiores), sendo <strong>poupado em mais de 95% dos casos de colite isquêmica</strong> (achado fundamental para diferenciar da retocolite ulcerativa na retosigmoidoscopia);",
+            "<strong>Apresentação Clínica Clássica:</strong>\n    <p>Paciente idoso que apresenta <strong>dor abdominal em cólica de início súbito localizada na Fossa Ilíaca Esquerda (FIE)</strong> e flanco esquerdo, seguida dentro de 12 a 24 horas por <strong>eliminação de fezes com sangue vermelho-vivo ou diarreia sanguinolenta (hematoquezia moderada)</strong>. O sangramento é autolimitado e raramente cursa com instabilidade hemodinâmica volumosa;</p>",
+            "<strong>Propedêutica Armada:</strong>\n    <ul>\n      <li><em>Radiografia de Abdome Simples:</em> Pode demonstrar o clássico <strong>Sinal do Thumbprinting (Impressões Digitais / Marcas do Polegar)</strong> na flexura esplênica ou cólon descendente, correspondendo a espessamento nodular da mucosa por edema e hemorragia submucosa;",
+            "<em>Tomografia Computadorizada de Abdome com Contraste:</em> Espessamento circunferencial contínuo segmentar da parede cólica com padrão em alvo / duplo halo; vasos mesentéricos principais completamente pérvios (sem trombos);",
+            "<em>Colonoscopia (ou Retossigmoidoscopia Flexível com Baixa Insuflação):</em> É o <strong>exame padrão-ouro confirmatório</strong> quando realizada dentro das primeiras 48 horas sob mínima insuflação de ar. Demonstra mucosa pálida, edemaciada, com petéquias hemorrágicas, úlceras lineares longitudinais ao longo da tênia mesocólica e <strong>poupa o reto distal</strong>;"
+          ]
+        ],
+        [
+          "p",
+          "</li>\n  <li><strong>História Natural e Manejo Clínico:</strong>"
+        ],
+        [
+          "u",
+          [
+            "<em>Forma Transitória e Reversível (85% a 90% dos casos):</em> A lesão é restrita à mucosa e submucosa. Evolui para resolução clínica completa e cicatrização espontânea em 1 a 2 semanas. Tratamento é <strong>100% CONSERVADOR</strong>: jejum relativo ou dieta leve, hidratação intravenosa balanceada, correção da causa hemodinâmica precipitante e observação clínica estrita; antibióticos são reservados para casos com febre ou leucocitose;",
+            "<em>Forma Gangrenosa / Fuminante (10% a 15%):</em> Ocorre necrose transmural irreversível com peritonite difusa, perfuração cólica livre e choque séptico. Conduta: <strong>Laparotomia exploradora de urgência imediata com Colectomia Segmentar</strong> (hemicolectomia esquerda ou colectomia subtotal) com estoma terminal (sem anastomose primária)."
+          ]
+        ]
+      ]
+    ],
+    [
+      "casos-clinicos-estruturados-isquemia-mesenterica",
+      0,
+      [
+        [
+          "2",
+          "6. Casos Clínicos Estruturados e Raciocínio Diagnóstico-Cirúrgico Passo a Passo"
+        ],
+        [
+          "3",
+          "Caso Clínico 1: Dor Desproporcional, Fibrilação Atrial e Embolia da AMS"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 74 anos, hipertensa e portadora de Fibrilação Atrial crônica em uso irregular de anticoagulante oral (varfarina com suspensão por conta própria há 2 semanas), é trazida à emergência médica com quadro de dor abdominal súbita, de intensidade máxima (10/10 na escala visual analógica), que teve início abrupto há 3 horas enquanto assistia à televisão."
+        ],
+        [
+          "p",
+          "<strong>Evolução Inicial:</strong> Refere que, imediatamente após o início da dor lancinante no mesogástrio, apresentou dois episódios de vômitos alimentares seguidos por diarreia aquosa profusa. Recebeu 10 mg de morfina intravenosa no trajeto do resgate móvel com alívio mínimo da dor."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico na Admissão:</strong> Paciente agitada, gritando e contorcendo-se na maca por dor severa, pálida, sudoreica e taquipneica (FR 26 irpm). Ritmo cardíaco irregular com FC de 118 bpm (fibrilação atrial de alta resposta ventricular), PA 135/85 mmHg, afebril (T 36,8 ºC). <strong>Palpação do Abdome:</strong> O abdome encontra-se completamente <strong>plano, flácido, sem qualquer rigidez ou defesa muscular, indolor à descompressão brusca superficial e profunda (Blumberg rigorosamente negativo)</strong>, com ruídos hidroaéreos discretamente aumentados. Ausência de massas palpáveis ou sopros audíveis."
+        ],
+        [
+          "p",
+          "<strong>Laboratório Imediato:</strong> Hemograma: 18.400 leucócitos/mm³ com 11% de bastonetes; Gasometria arterial: pH 7,32, pCO2 32 mmHg, HCO3- 16 mEq/L, Lactato sérico de 2,8 mmol/L (hiperlactatemia inicial). Creatinina: 1,1 mg/dL; D-Dímero: 4.800 ng/mL."
+        ],
+        [
+          "p",
+          "<strong>Discussão Diagnóstica e Conduta Terapêutica Escalonada:</strong>"
+        ],
+        [
+          "3",
+          "Caso Clínico 2: Paciente Crítico em Choque e Isquemia Não Oclusiva (IMNO)"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Homem de 69 anos, internado na Unidade de Terapia Intensiva no 5º dia pós-operatório de cirurgia de revascularização do miocárdio de urgência complicada por choque cardiogênico severo, mantido sob ventilação mecânica invasiva e sob suporte hemodinâmico com Noradrenalina (0,8 $mu$g/kg/min) e Vasopressina (0,04 UI/min)."
+        ],
+        [
+          "p",
+          "<strong>Evolução Clínica:</strong> A equipe de enfermagem da UTI nota distensão abdominal progressiva nas últimas 12 horas, saída de secreção com aspecto em borra de café pela sonda nasogástrica (1.200 mL/24h) e parada completa da eliminação de gases pelo cateter retal. O paciente evolui com piora metabólica fulminante: a gasometria revela acidose metabólica grave refratária com pH 7,14, HCO3- 9 mEq/L e <strong>Lactato sérico disparando de 1,8 para 7,4 mmol/L</strong>."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico e Imagem:</strong> Paciente sedado e curarizado. Abdome maciçamente distendido, tenso, com ruídos hidroaéreos completamente abolidos. Angio-TC de abdome demonstra: <strong>Artéria Mesentérica Superior, Tronco Celíaco e Veia Mesentérica amplamente PÉRVIOS, SEM trombos ou falhas de enchimento</strong>; contudo, observa-se afilamento severo difuso e espasmo difuso de todos os ramos arteriais jejunais e ileais (\"árvore desfolhada\"), com líquido livre peritoneal e hipoatenuação difusa da parede do intestino delgado."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Decisão Terapêutica:</strong>"
+        ],
+        [
+          "3",
+          "Caso Clínico 3: Idosa com Dor na FIE e Hematoquezia Autolimitada"
+        ],
+        [
+          "p",
+          "<strong>Identificação:</strong> Mulher de 78 anos, hipertensa, diabética e portadora de insuficiência cardíaca crônica compensada, comparece à UPA referindo dor em cólica de início súbito na Fossa Ilíaca Esquerda há cerca de 16 horas, de moderada intensidade. Relata que, 8 horas após o início da dor, apresentou três episódios de evacuações amolecidas contendo sangue vermelho-escuro e coágulos (hematoquezia)."
+        ],
+        [
+          "p",
+          "<strong>Exame Físico:</strong> Lúcida, orientada, corada e estável hemodinamicamente (PA 130/80 mmHg, FC 78 bpm, afebril). Abdome levemente distendido, com dor à palpação moderada no flanco e fossa ilíaca esquerda, <strong>sem descompressão brusca dolorosa (Blumberg negativo)</strong> e sem massas palpáveis. Toque retal: dedo de luva com fezes sanguinolentas escuras, sem lesões parietais palpáveis."
+        ],
+        [
+          "p",
+          "<strong>Exames Complementares:</strong> Hemoglobina: 11,4 g/dL; Leucócitos: 11.200/mm³; Lactato: 1,3 mmol/L (normal). TC de abdome com contraste IV: espessamento parietal circunferencial simétrico do cólon descendente e da flexura esplênica (Ponto de Griffith), com densificação da gordura mesocólica e preservação da raiz dos vasos mesentéricos inferiores e superiores. Colonoscopia com baixa insuflação: mucosa da flexura esplênica hiperemiada, friável, com petéquias hemorrágicas confluentes e exsudato fibrinoso longitudinal, com reto distal e sigmoide inferior rigorosamente normais."
+        ],
+        [
+          "p",
+          "<strong>Discussão e Resolução:</strong>"
+        ]
+      ]
+    ],
+    [
+      "questoes-concurso-comentadas-isquemia-mesenterica",
+      0,
+      [
+        [
+          "2",
+          "7. Questões de Concursos de Residência Médica e Título de Especialista Comentadas Alternativa por Alternativa"
+        ],
+        [
+          "3",
+          "Questão 1 (USP - Universidade de São Paulo / Residência Médica)"
+        ],
+        [
+          "p",
+          "Homem de 72 anos, hipertenso, diabético e portador de fibrilação atrial em tratamento irregular, dá entrada no pronto-socorro com queixa de dor abdominal de início súbito há 4 horas, de intensidade insuportável no mesogástrio, acompanhada de dois episódios de vômitos e uma evacuação diarreica líquida. Ao exame físico, o paciente está muito agitado e taquicárdico (FC 112 bpm irregular), porém a palpação abdominal revela abdome flácido, depressível, sem qualquer defesa ou descompressão dolorosa à palpação profunda. Os ruídos hidroaéreos estão presentes. A gasometria arterial demonstra pH 7,30, bicarbonato de 15 mEq/L e lactato sérico de 3,2 mmol/L (valor de referência: até 2,0 mmol/L). O leucograma acusa 19.500 leucócitos/mm³ com 12% de bastonetes. Diante desse quadro clínico e laboratorial, assinale a hipótese diagnóstica mais provável e a melhor conduta imediata:"
+        ],
+        [
+          "o",
+          [
+            "Apendicite aguda na fase flegmonosa; indicar apendicectomia videolaparoscópica de urgência após ultrassonografia de abdome.",
+            "Pancreatite aguda biliar grave; indicar hidratação vigorosa, dieta zero e realização de colangiopancreatografia retrógrada endoscópica (CPRE) imediata.",
+            "Isquemia mesentérica aguda por embolia da artéria mesentérica superior; realizar Angiotomografia de abdome com contraste intravenoso e preparar o paciente para laparotomia exploradora com embolectomia.",
+            "Gastroenterite viral aguda complicada por desidratação; iniciar hidratação oral ambulatorial e prescrever antieméticos e probióticos com alta após reidratação."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A apresentação é a clássica e indispensável <strong>dissociação clínico-semiológica da Isquemia Mesentérica Aguda (IMA)</strong>: dor de intensidade máxima em paciente idoso cardiopata com fibrilação atrial contrastando com um exame físico abdominal inocente (abdome flácido sem peritonite). A presença de acidose metabólica com hiperlactatemia e leucocitose com desvio confirma hipóxia tecidual. A causa primária mais provável é a embolia da AMS (coração desprendendo êmbolo da FA). O exame padrão-ouro imediato é a <strong>Angiotomografia Computadorizada de abdome</strong>, e a conduta cirúrgica é a laparotomia com embolectomia por cateter de Fogarty (Alternativa C correta). Apendicite (A) e pancreatite (B) não explicam o quadro de dor súbita desproporcional sem sinais locais."
+        ],
+        [
+          "3",
+          "Questão 2 (ENAMED / Revalidação e Residência Médica Nacional)"
+        ],
+        [
+          "p",
+          "Durante a abordagem cirúrgica de uma isquemia mesentérica aguda por embolia de artéria mesentérica superior em uma paciente de 68 anos, o cirurgião realiza com sucesso a arteriotomia da AMS com retirada de volumoso êmbolo através de cateter de Fogarty, obtendo excelente fluxo pulsátil retrógrado e anterógrado. Após aguardar 20 minutos com as alças intestinais envolvidas em compressas mornas sob oxigênio a 100%, observa-se que cerca de 80 cm de alça ileal recuperaram a cor rósea e os pulsos palpáveis, mas um segmento de cerca de 40 cm de jejuno médio persiste com aspecto arroxeado mosqueado, com motilidade duvidosa e pulsação arterial fraca na borda mesentérica, porém sem sinais óbvios de necrose transmural ou perfuração. De acordo com as diretrizes contemporâneas de cirurgia vascular e do trauma, qual é a conduta intraoperatória correta?"
+        ],
+        [
+          "o",
+          [
+            "Ressecar imediatamente os 40 cm de jejuno duvidoso e confeccionar uma jejunostomia proximal definitiva com fístula mucosa distal.",
+            "Ressecar todo o intestino delgado desde o ângulo de Treitz até a válvula ileocecal para evitar qualquer risco de recidiva tardia.",
+            "Preservar o segmento intestinal de viabilidade limítrofe, não realizar anastomoses de risco neste momento, manter o abdome aberto em laparostomia (curativo a vácuo) e programar formalmente uma laparotomia de second-look em 24 a 48 horas.",
+            "Suturar a parede abdominal com pontos totais definitivos e dar alta da UTI em 24 horas caso a paciente não apresente febre."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> O princípio basilar moderno da cirurgia na isquemia mesentérica é a <strong>preservação máxima de parênquima intestinal para prevenir a Síndrome do Intestino Curto</strong>. Alças francamente necróticas (cinzento-escuras liquefeitas) são ressecadas; porém, <strong>alças limítrofes / duvidosas devem ser temporariamente PRESERVADAS</strong>. Conduz-se a estratégia de controle de danos: mantém-se o abdome em laparostomia (com curativo a vácuo ou bolsa de Bogotá) e programa-se obrigatoriamente a <strong>Laparotomia de Reavaliação Programada (Second-Look) em 24 a 48 horas</strong> (Alternativa C correta). Após a estabilização hemodinâmica na UTI, a maioria dessas alças duvidosas se recupera completamente, evitando enterectomias desnecessárias."
+        ],
+        [
+          "3",
+          "Questão 3 (SURCE - Seleção Unificada para Residência Médica do Ceará)"
+        ],
+        [
+          "p",
+          "Homem de 65 anos, tabagista pesado, com histórico de infarto agudo do miocárdio prévio e claudicação intermitente em membros inferiores, procura atendimento ambulatorial queixando-se de dor abdominal epigástrica em cólica que se inicia cerca de 30 minutos após as refeições e dura cerca de 2 horas. Refere que, devido à intensidade da dor, passou a evitar comer (\"medo de se alimentar\"), tendo perdido 14 kg nos últimos 4 meses. Ao exame físico, apresenta-se emagrecido, com IMC de 18,2 kg/m² e sopro sistólico audível no epigástrio. Qual é o diagnóstico clínico mais provável e a fisiopatologia subjacente?"
+        ],
+        [
+          "o",
+          [
+            "Úlcera gástrica perfurada bloqueada; decorrente de infecção crônica por Helicobacter pylori resistente.",
+            "Isquemia Mesentérica Crônica (Angina Abdominal); decorrente da incapacidade de aumentar o fluxo sanguíneo esplâncnico após a alimentação por estenose aterosclerótica de múltiplos troncos arteriais viscerais.",
+            "Câncer de cabeça de pâncreas invasivo; decorrente de compressão extrínseca do ducto pancreático principal de Wirsung.",
+            "Doença celíaca do adulto com atrofia vilositária induzida por glúten."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> A clássica tríade da <strong>Isquemia Mesentérica Crônica (Angina Abdominal)</strong> é composta por: 1) Dor abdominal pós-prandial precoce (início em 20-30 min pós-refeição por incapacidade de fornecer hiperemia esplâncnica fisiológica); 2) Sitofobia (\"medo de comer\"); e 3) Perda ponderal acentuada (emagrecimento consumptivo). Ocorre em idosos com aterosclerose difusa grave que acomete <strong>ao menos dois dos três troncos viscerais (Tronco Celíaco, AMS e AMI)</strong>. O sopro epigástrico reforça a estenose arterial (Alternativa B correta)."
+        ],
+        [
+          "3",
+          "Questão 4 (UNICAMP - Universidade Estadual de Campinas)"
+        ],
+        [
+          "p",
+          "Em relação às quatro principais etiologias da Isquemia Mesentérica Aguda, assinale a afirmativa <strong>CORRETA</strong> de acordo com a literatura cirúrgica contemporânea:"
+        ],
+        [
+          "o",
+          [
+            "Na embolia da artéria mesentérica superior, a oclusão ocorre invariavelmente na origem da artéria na aorta, levando à necrose completa de todo o jejuno e duodeno.",
+            "A trombose venosa mesentérica é a etiologia de pior prognóstico e cursa com indicação obrigatória de laparotomia com ressecção de todo o cólon nas primeiras duas horas.",
+            "A Isquemia Mesentérica Não Oclusiva (IMNO) ocorre por vasoespasmo arteriolar difuso em resposta ao baixo débito cardíaco ou choque, sem oclusão mecânica vascular por êmbolos, sendo seu tratamento inicial preferencialmente farmacológico e angiográfico com vasodilatadores seletivos na AMS.",
+            "O uso de heparina não fracionada é contraindicado na fase aguda da isquemia mesentérica devido ao alto risco de hemorragia intraperitoneal induzida por heparinização."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong>\n- A <strong>IMNO</strong> decorre de vasoespasmo esplâncnico sustentado induzido por baixo débito sistêmico (choque cardiogênico ou séptico) e drogas vasoconstritoras, <strong>sem oclusão mecânica intraluminal</strong>. O tratamento inicial baseia-se na correção do choque e na <strong>infusão seletiva de vasodilatadores (papaverina) diretamente na AMS via angiografia</strong> (Alternativa C correta);\n- Na embolia da AMS, o êmbolo impacta 3 a 8 cm distal à origem, <strong>poupando o jejuno proximal</strong> (a trombose é que acomete o óstio aórtico - elimina A);\n- A trombose venosa mesentérica é a de <em>melhor prognóstico</em> e seu tratamento de escolha inicial é a <strong>anticoagulação plena com heparina</strong> (elimina B);\n- A heparina plena é mandatória para evitar a propagação do trombo no leito distal (elimina D)."
+        ],
+        [
+          "3",
+          "Questão 5 (UERJ - Universidade do Estado do Rio de Janeiro)"
+        ],
+        [
+          "p",
+          "Mulher de 82 anos, internada em enfermaria de cardiologia por insuficiência cardíaca descompensada, desenvolve dor abdominal em cólica no flanco esquerdo de início súbito, seguida por evacuação de fezes com rajas de sangue vivo e coágulos após 12 horas. Ao exame físico, apresenta abdome com dor discreta no flanco esquerdo, sem sinais de peritonite ou Blumberg. A colonoscopia realizada com baixa insuflação evidencia mucosa da flexura esplênica com petéquias hemorrágicas, edema e ulcerações longitudinais, com poupamento rigoroso do reto distal. Qual é o diagnóstico e o sítio anatômico mais frequentemente acometido nessa condição?"
+        ],
+        [
+          "o",
+          [
+            "Retocolite ulcerativa em fase aguda fulminante; acomete preferencialmente o reto distal com progressão proximal contínua.",
+            "Colite isquêmica; acomete classicamente o ângulo esplênico do cólon (Ponto de Griffith), por ser uma zona de bacia hidrográfica terminal entre a AMS e a AMI.",
+            "Diverticulite aguda estenosante do ceco; acomete o ponto de Sudeck na flexura hepática.",
+            "Doença de Crohn com fístula colovesical; acomete preferencialmente a válvula ileocecal com estenose de íleo terminal."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa B.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> O caso retrata a <strong>Colite Isquêmica</strong> em sua apresentação clássica: paciente idosa cardiopata com baixo débito que apresenta dor no flanco esquerdo seguida por diarreia sanguinolenta (hematoquezia) autolimitada. Acomete preferencialmente o <strong>Ponto de Griffith (ângulo esplênico do cólon)</strong> — zona de transição e bacia hidrográfica entre o território da cólica média (AMS) e da cólica esquerda (AMI) — com o <strong>poupamento característico do reto</strong> (Alternativa B correta)."
+        ],
+        [
+          "3",
+          "Questão 6 (IAMSPE - Instituto de Assistência Médica ao Servidor Público Estadual)"
+        ],
+        [
+          "p",
+          "Em relação à anatomia das arcadas colaterais esplâncnicas, qual vaso conecta diretamente o território da Artéria Mesentérica Superior com o território da Artéria Mesentérica Inferior através do mesocólon transverso e se hipertrofia classicamente na oclusão crônica da AMS?"
+        ],
+        [
+          "o",
+          [
+            "Arcada Pancreaticoduodenal de Haller.",
+            "Artéria Gastroduodenal de Winslow.",
+            "Arco de Riolan (Arcada Meandrina).",
+            "Artéria Apendicular terminal de Treves."
+          ]
+        ],
+        [
+          "p",
+          "<strong>Gabarito Oficial: Alternativa C.</strong>"
+        ],
+        [
+          "p",
+          "<strong>Comentário Editorial Detalhado:</strong> O <strong>Arco de Riolan (ou Arcada Meandrina)</strong> é a comunicação anatômica profunda no mesocólon transverso que une o ramo esquerdo da <em>Artéria Cólica Média (ramo da AMS)</em> com a <em>Artéria Cólica Esquerda (ramo da AMI)</em>. Na vigência de estenose aterosclerótica crônica grave da AMS, o arco de Riolan hipertrofia-se de forma monumental para levar fluxo colateral retrógrado da AMI para a AMS e salvar o intestino delgado de infarto agudo (Alternativa C correta)."
+        ]
+      ]
+    ],
+    [
+      "conclusao-recomendacoes-finais-referencias-isquemia",
+      0,
+      [
+        [
+          "2",
+          "8. Síntese do Manejo Clínico-Cirúrgico Integrado e Referências Internacionais Oficiais"
+        ],
+        [
+          "3",
+          "Algoritmo Decisório Integrado na Isquemia Mesentérica"
+        ],
+        [
+          "o",
+          [
+            "<strong>Alta Suspeição Clínica Imediata:</strong> Dor abdominal lancinante desproporcional ao exame físico em idoso, vasculopata ou com arritmia $\rightarrow$ <strong>Angiotomografia de abdome total com contraste IV na primeira hora</strong>;",
+            "<strong>Suporte Intensivo Imediato:</strong> Ressuscitação volêmica cristaloide, jejum oral, sonda nasogástrica, antibioticoterapia de amplo espectro (Piperacilina-Tazobactam) e <strong>Heparinização plena intravenosa imediata</strong>;",
+            "<strong>Etiologia e Conduta Operatória:</strong>\n    <ul>\n      <li><em>Embolia de AMS:</em> Laparotomia exploradora $\rightarrow$ Embolectomia com Cateter de Fogarty 3F/4F;",
+            "<em>Trombose de AMS:</em> Laparotomia $\rightarrow$ Revascularização vascular (Bypass aorto-mesentérico ou trombectomia);",
+            "<em>Trombose Venosa Mesentérica (TVM):</em> Anticoagulação plena intravenosa; cirurgia apenas se peritonite/gangrena;",
+            "<em>IMNO:</em> Correção do choque sistêmico, desmame de vasoconstritores e infusão seletiva de Papaverina na AMS por arteriografia;",
+            "<strong>Preservação de Alças e Laparotomia de Second-Look:</strong> Ressecar apenas o intestino francamente necrosado. Preservar alças limítrofes, deixar abdome em laparostomia e reoperar obrigatoriamente em <strong>24 a 48 horas (Second-Look)</strong>;",
+            "<strong>Isquemia Crônica:</strong> Triade de dor pós-prandial, sitofobia e perda de peso $\rightarrow$ Angioplastia com Stent ou Bypass cirúrgico eletivo para prevenir infarto agudo da AMS."
+          ]
+        ]
+      ]
+    ],
+    [
+      "referencias",
+      0,
+      [
+        [
+          "2",
+          "Referências Oficiais e Diretrizes"
+        ],
+        [
+          "o",
+          [
+            "<a href=\"https://wjes.biomedcentral.com/articles/10.1186/s13017-022-00443-x\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) — Guidelines for the management of acute mesenteric ischemia</a>",
+            "<a href=\"https://www.jvascsurg.org/article/S0741-5214(16)00049-7/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">Society for Vascular Surgery (SVS) — Clinical practice guidelines for the management of mesenteric arterial disease</a>",
+            "<a href=\"https://journals.lww.com/ajg/fulltext/2015/01000/the_american_college_of_gastroenterology.12.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Gastroenterology (ACG) — Clinical Guideline: Epidemiology, Risk Factors, Patterns of Presentation, Diagnosis, and Management of Colon Ischemia</a>",
+            "<a href=\"https://www.ejves.com/article/S1078-5884(19)30872-3/fulltext\" target=\"_blank\" rel=\"noopener noreferrer\">European Society for Vascular Surgery (ESVS) — Clinical Practice Guidelines on the Management of the Diseases of Mesenteric Arteries and Veins</a>",
+            "<a href=\"https://cbc.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) e Sociedade Brasileira de Angiologia e Cirurgia Vascular (SBACV) — Diretrizes Nacionais em Isquemia Mesentérica</a>"
+          ],
+          "reference-list"
+        ]
+      ]
+    ]
+  ]
+}
