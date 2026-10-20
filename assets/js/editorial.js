@@ -11,47 +11,49 @@
     isAdmin: false,
     pinConfigured: false,
     pinUnlocked: false,
-    currentView: "weekly", // "weekly" | "monthly" | "kanban" | "stories" | "crm" | "meta_ads"
-    selectedMonth: "2026-11",
-    leadsList: []
+    currentView: "weekly", // "weekly" | "monthly" | "kanban" | "stories" | "crm" | "meta_ads" | "organic_growth"
+    selectedMonth: "2026-10",
+    leadsList: [],
+    organicTips: []
   };
 
   const DRIVE_FOLDER = "https://drive.google.com/drive/folders/1gd2hhVmwGzKibBwLuvEUcXPdGa_B0FRi?usp=drive_link";
 
   // ==============================================================
-  // OS 27 POSTS OFICIAIS DO DOSSIÊ (PÁGINAS 10 A 15)
+  // OS 27 POSTS OFICIAIS DO DOSSIÊ COM DATAS POR EXTENSO
+  // INÍCIO OFICIAL: 26 DE OUTUBRO DE 2026
   // ==============================================================
   const OFFICIAL_POSTS = [
-    // OUTUBRO (Abertura de Autoridade e Pré-lista)
-    { id: "p01", date: "20/10 Ter", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Por que você esquece o que estudou?", cta: "Salvamento", status: "publicado", kanban: "publicado", script: "Curva do esquecimento de Ebbinghaus aplicada à medicina e a necessidade de repetição ativa." },
-    { id: "p02", date: "22/10 Qui", month: "2026-10", format: "Reel", pilar: "Educação", title: "Você está no PS: qual sua primeira conduta?", cta: "Compartilhamento", status: "publicado", kanban: "publicado", script: "Caso interativo de emergência: AVC vs Hipoglicemia e a obrigatoriedade do HGT antes da TC." },
-    { id: "p03", date: "24/10 Sáb", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Questão comentada: a pegadinha da semana", cta: "Resposta", status: "aprovado", kanban: "aprovado", script: "Análise minuciosa de distratores de uma questão real de residência médica com raciocínio clínico." },
-    { id: "p04", date: "26/10 Seg", month: "2026-10", format: "Reel", pilar: "Oferta", title: "Pré-lista VIP aberta (15 Dias Gratuitos)", cta: "Inscrição", status: "aprovado", kanban: "agendado", script: "Abertura oficial da pré-lista VIP da Black November da LURIA. 15 dias sem cartão." },
-    { id: "p05", date: "28/10 Qua", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Checklist de preparação 2027", cta: "Salvamento", status: "revisao", kanban: "design", script: "Como organizar os pilares do ano de estudos de medicina com metas realistas." },
-    { id: "p06", date: "30/10 Sex", month: "2026-10", format: "Reel", pilar: "Produto", title: "Tour: Dashboard → Questões → Flashcards", cta: "Inscrição", status: "revisao", kanban: "design", script: "Gravação real de tela mostrando como um erro em questão vira flashcard no mesmo instante." },
-    { id: "p07", date: "31/10 Sáb", month: "2026-10", format: "Carrossel", pilar: "Educação", title: "Cinco erros ao começar a estudar para residência", cta: "Compartilhamento", status: "revisao", kanban: "ciencia", script: "Estudo passivo, ausência de métricas, acúmulo de PDFs piratas e falta de revisão espaçada." },
+    // OUTUBRO (Semana 1 · 26/10 a 01/11 - Enchimento de Feed Orgânico & Autoridade)
+    { id: "p01", date: "Segunda-feira, 26 de Outubro de 2026", shortDate: "26/10 Seg", month: "2026-10", format: "Carrossel Técnico (7 pág)", pilar: "Educação Médica", title: "Por que você esquece o que estudou na medicina?", cta: "Salve para revisar", status: "aprovado", kanban: "aprovado", script: "Curva do esquecimento de Ebbinghaus aplicada à medicina e a necessidade de repetição ativa espaçada." },
+    { id: "p02", date: "Terça-feira, 27 de Outubro de 2026", shortDate: "27/10 Ter", month: "2026-10", format: "Reels Clínico (25s)", pilar: "Educação Médica", title: "Você está no PS: AVC vs Hipoglicemia", cta: "Compartilhe com a equipe", status: "aprovado", kanban: "aprovado", script: "Dilema de emergência nos primeiros 3s: a obrigatoriedade absoluta do HGT na suspeita de déficit neurológico focal." },
+    { id: "p03", date: "Quarta-feira, 28 de Outubro de 2026", shortDate: "28/10 Qua", month: "2026-10", format: "Carrossel Técnico (6 pág)", pilar: "Educação Médica", title: "Questão comentada: a pegadinha clássica da banca", cta: "Responda antes do gabarito", status: "aprovado", kanban: "aprovado", script: "Análise minuciosa de distratores de uma questão real de residência com raciocínio clínico aplicado." },
+    { id: "p04", date: "Quinta-feira, 29 de Outubro de 2026", shortDate: "29/10 Qui", month: "2026-10", format: "Reels de Produto (30s)", pilar: "Produto LURIA", title: "Do erro na questão ao flashcard automático", cta: "Conheça o fluxo", status: "revisao", kanban: "design", script: "Demonstração sem enrolação de como a LURIA transforma um erro de estudo em fixação no mesmo minuto." },
+    { id: "p05", date: "Sexta-feira, 30 de Outubro de 2026", shortDate: "30/10 Sex", month: "2026-10", format: "Carrossel (6 pág)", pilar: "Planejamento", title: "Checklist de preparação para as provas de 2027", cta: "Salve para o ano todo", status: "revisao", kanban: "design", script: "Como organizar os blocos de estudo sem sobrecarga cognitiva: metas realistas para internato e residência." },
+    { id: "p06", date: "Sábado, 31 de Outubro de 2026", shortDate: "31/10 Sáb", month: "2026-10", format: "Reels Desafio (20s)", pilar: "Educação Médica", title: "Plantão Relâmpago: qual é a conduta imediata?", cta: "Comente sua conduta", status: "pauta", kanban: "roteiro", script: "Desafio interativo de pronto-socorro para gerar comentários e engajamento orgânico máximo." },
+    { id: "p07", date: "Domingo, 01 de Novembro de 2026", shortDate: "01/11 Dom", month: "2026-11", format: "Carrossel Técnico (7 pág)", pilar: "Educação Médica", title: "Cinco erros que custam a aprovação na residência", cta: "Envie a um colega", status: "pauta", kanban: "roteiro", script: "Estudo passivo por resumos alheios, negligência do caderno de erros e falta de simulação prática." },
 
-    // NOVEMBRO (Operação Principal Black November)
-    { id: "p08", date: "02/11 Seg", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Educação", title: "Sepse: cinco erros que custam uma questão", cta: "Salve para revisar", status: "revisao", kanban: "ciencia", script: "Reconhecimento de sepse, sinais de alerta, conduta fundamentada e resumo de 30 segundos." },
-    { id: "p09", date: "03/11 Ter", month: "2026-11", format: "Reel (25-30s)", pilar: "Educação", title: "Estudar seis horas não garante aprender mais", cta: "Envie a um amigo", status: "pauta", kanban: "roteiro", script: "Releitura passiva versus active recall com flashcards. Citação metodológica de retenção." },
-    { id: "p10", date: "05/11 Qui", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Educação", title: "Questão comentada: pré-eclâmpsia", cta: "Responda primeiro", status: "pauta", kanban: "roteiro", script: "Caso clínico de pré-eclâmpsia grave, conduta conforme FEBRASGO/MS e distratores explicados." },
-    { id: "p11", date: "07/11 Sáb", month: "2026-11", format: "Reel (30s)", pilar: "Produto", title: "Entrando na Sala de Emergência da LURIA", cta: "Entre na lista", status: "pauta", kanban: "roteiro", script: "Você assumiu o plantão: tomada de decisão no simulador com debriefing imediato." },
-    { id: "p12", date: "09/11 Seg", month: "2026-11", format: "Reel (20-25s)", pilar: "Oferta", title: "Primeiras ativações gratuitas: como funciona?", cta: "Receba seu convite", status: "ideia", kanban: "ideia", script: "Liberação progressiva dos primeiros convites da pré-lista VIP por coortes individuais." },
-    { id: "p13", date: "10/11 Ter", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Educação", title: "ECG: três sinais que você não deve ignorar", cta: "Salve e compartilhe", status: "ideia", kanban: "ideia", script: "Sequência sistemática diante de um traçado real de eletrocardiograma no pronto-socorro." },
-    { id: "p14", date: "12/11 Qui", month: "2026-11", format: "Reel (20-30s)", pilar: "Produto", title: "Errou uma questão? O estudo não termina aqui", cta: "Experimente", status: "ideia", kanban: "ideia", script: "Como transformar a frustração do erro em memorização através do Caderno de Erros LURIA." },
-    { id: "p15", date: "14/11 Sáb", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Educação", title: "Como organizar 30 minutos de estudo diário", cta: "Salve a rotina", status: "ideia", kanban: "ideia", script: "5 min de planejamento, 15 min de questões e 10 min de revisão com foco cirúrgico." },
-    { id: "p16", date: "16/11 Seg", month: "2026-11", format: "Reel (25-35s)", pilar: "Produto", title: "Sua evolução sem planilhas", cta: "Conheça a LURIA", status: "ideia", kanban: "ideia", script: "Painel analítico da LURIA mostrando pontos fortes e fracos sem planilhas manuais." },
-    { id: "p17", date: "17/11 Ter", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Educação", title: "Desidratação pediátrica: raciocínio clínico", cta: "Teste-se", status: "ideia", kanban: "ideia", script: "Avaliação da gravidade do estado de hidratação e reposição conforme protocolo pediátrico." },
-    { id: "p18", date: "19/11 Qui", month: "2026-11", format: "Reel (20-30s)", pilar: "Produto", title: "O que será o Modo Trabalho?", cta: "Entre na lista beta", status: "ideia", kanban: "ideia", script: "Conceito do módulo de gestão do trabalho e plantões para médicos em fase beta." },
-    { id: "p19", date: "21/11 Sáb", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Educação", title: "Checklist para preparar 2027", cta: "Salve para usar", status: "ideia", kanban: "ideia", script: "Distribuição de matérias por peso nas grandes bancas de residência." },
-    { id: "p20", date: "23/11 Seg", month: "2026-11", format: "Motion (15-20s)", pilar: "Oferta", title: "Começou a Black Week LURIA", cta: "Conheça as condições", status: "ideia", kanban: "ideia", script: "Início oficial da Black Week. Condições transparentes liberadas no site oficial." },
-    { id: "p21", date: "24/11 Ter", month: "2026-11", format: "Carrossel (6 pág)", pilar: "Oferta", title: "Essential ou Pro: qual é para você?", cta: "Compare planos", status: "ideia", kanban: "ideia", script: "Tabela comparativa direta e honesta entre os planos Essential e Pro." },
-    { id: "p22", date: "25/11 Qua", month: "2026-11", format: "Reel (25-30s)", pilar: "Produto", title: "Do caso clínico ao aprendizado completo", cta: "Experimente o fluxo", status: "ideia", kanban: "ideia", script: "Demonstração do ciclo completo: Caso -> Decisão -> Debriefing -> Flashcard." },
-    { id: "p23", date: "26/11 Qui", month: "2026-11", format: "Carrossel (8 pág)", pilar: "Oferta", title: "FAQ: 15 dias e Black Week", cta: "Tire suas dúvidas", status: "ideia", kanban: "ideia", script: "Respostas claras sobre cobrança, ativação, período de teste e suporte." },
-    { id: "p24", date: "27/11 Sex", month: "2026-11", format: "Reel (30-35s)", pilar: "Oferta", title: "Black Friday: a condição principal", cta: "Assine pela oferta", status: "ideia", kanban: "ideia", script: "Vídeo principal da Black Friday com demonstração e condições exclusivas da data." },
-    { id: "p25", date: "28/11 Sáb", month: "2026-11", format: "Reel (20s)", pilar: "Educação", title: "Plantão Relâmpago: você acertaria?", cta: "Responda", status: "ideia", kanban: "ideia", script: "Desafio interativo com caso clínico de rápida tomada de decisão." },
-    { id: "p26", date: "29/11 Dom", month: "2026-11", format: "Motion (15s)", pilar: "Oferta", title: "Último dia da Black Week", cta: "Veja o prazo", status: "ideia", kanban: "ideia", script: "Encerramento verdadeiro no horário oficial informado no site." },
-    { id: "p27", date: "30/11 Seg", month: "2026-11", format: "Carrossel (7 pág)", pilar: "Produto", title: "Seus primeiros sete dias na LURIA", cta: "Comece a estudar", status: "ideia", kanban: "ideia", script: "Guia passo a passo de onboarding para novos assinantes e membros do teste." }
+    // NOVEMBRO (Semana 2 em diante: Tráfego Pago R$ 20/sem para Ganhar Seguidores + Operação Black November)
+    { id: "p08", date: "Segunda-feira, 02 de Novembro de 2026", shortDate: "02/11 Seg", month: "2026-11", format: "Carrossel Técnico (7 pág)", pilar: "Educação Médica", title: "Sepse: cinco erros que custam uma questão", cta: "Salve para revisar", status: "revisao", kanban: "ciencia", script: "Reconhecimento de sepse, sinais de alerta, conduta fundamentada e resumo de 30 segundos. [Candidato ao Impulsionamento R$ 20]" },
+    { id: "p09", date: "Terça-feira, 03 de Novembro de 2026", shortDate: "03/11 Ter", month: "2026-11", format: "Reels Educativo (25-30s)", pilar: "Educação Médica", title: "Estudar seis horas não garante aprender mais", cta: "Envie a um amigo", status: "pauta", kanban: "roteiro", script: "Releitura passiva versus active recall com repetição espaçada. Metodologia médica comprovada." },
+    { id: "p10", date: "Quinta-feira, 05 de Novembro de 2026", shortDate: "05/11 Qui", month: "2026-11", format: "Carrossel Técnico (7 pág)", pilar: "Educação Médica", title: "Questão comentada: pré-eclâmpsia grave", cta: "Responda primeiro", status: "pauta", kanban: "roteiro", script: "Caso clínico de pré-eclâmpsia grave, conduta conforme FEBRASGO/MS e distratores explicados." },
+    { id: "p11", date: "Sábado, 07 de Novembro de 2026", shortDate: "07/11 Sáb", month: "2026-11", format: "Reels de Produto (30s)", pilar: "Produto LURIA", title: "Entrando na Sala de Emergência da LURIA", cta: "Conheça o simulador", status: "pauta", kanban: "roteiro", script: "Você assumiu o plantão: tomada de decisão no simulador com debriefing imediato e sem risco real." },
+    { id: "p12", date: "Segunda-feira, 09 de Novembro de 2026", shortDate: "09/11 Seg", month: "2026-11", format: "Reels de Oferta (20-25s)", pilar: "Oferta VIP", title: "Pré-Lista VIP: Primeiras ativações gratuitas", cta: "Receba seu convite", status: "ideia", kanban: "ideia", script: "Liberação progressiva dos primeiros convites da pré-lista VIP por coortes individuais com 15 dias sem cartão." },
+    { id: "p13", date: "Terça-feira, 10 de Novembro de 2026", shortDate: "10/11 Ter", month: "2026-11", format: "Carrossel Técnico (6 pág)", pilar: "Educação Médica", title: "ECG: três sinais que você não deve ignorar", cta: "Salve e compartilhe", status: "ideia", kanban: "ideia", script: "Sequência sistemática diante de um traçado real de eletrocardiograma no pronto-socorro." },
+    { id: "p14", date: "Quinta-feira, 12 de Novembro de 2026", shortDate: "12/11 Qui", month: "2026-11", format: "Reels de Produto (20-30s)", pilar: "Produto LURIA", title: "Errou uma questão? O estudo não termina aqui", cta: "Experimente a LURIA", status: "ideia", kanban: "ideia", script: "Como transformar a frustração do erro em memorização definitiva através do Caderno de Erros LURIA." },
+    { id: "p15", date: "Sábado, 14 de Novembro de 2026", shortDate: "14/11 Sáb", month: "2026-11", format: "Carrossel Técnico (6 pág)", pilar: "Planejamento", title: "Como organizar 30 minutos de estudo diário", cta: "Salve a rotina", status: "ideia", kanban: "ideia", script: "5 min de planejamento, 15 min de questões focadas e 10 min de revisão com foco cirúrgico." },
+    { id: "p16", date: "Segunda-feira, 16 de Novembro de 2026", shortDate: "16/11 Seg", month: "2026-11", format: "Reels de Produto (25-35s)", pilar: "Produto LURIA", title: "Sua evolução médica sem planilhas manuais", cta: "Conheça a LURIA", status: "ideia", kanban: "ideia", script: "Painel analítico da LURIA mostrando pontos fortes e fracos sem necessidade de preencher planilhas manuais." },
+    { id: "p17", date: "Terça-feira, 17 de Novembro de 2026", shortDate: "17/11 Ter", month: "2026-11", format: "Carrossel Técnico (7 pág)", pilar: "Educação Médica", title: "Desidratação pediátrica: raciocínio clínico", cta: "Teste-se", status: "ideia", kanban: "ideia", script: "Avaliação da gravidade do estado de hidratação e reposição conforme protocolo pediátrico do Ministério da Saúde." },
+    { id: "p18", date: "Quinta-feira, 19 de Novembro de 2026", shortDate: "19/11 Qui", month: "2026-11", format: "Reels de Produto (20-30s)", pilar: "Produto LURIA", title: "O que será o Modo Trabalho?", cta: "Entre na lista beta", status: "ideia", kanban: "ideia", script: "Conceito do módulo de gestão do trabalho e plantões para médicos em fase beta." },
+    { id: "p19", date: "Sábado, 21 de Novembro de 2026", shortDate: "21/11 Sáb", month: "2026-11", format: "Carrossel Técnico (6 pág)", pilar: "Planejamento", title: "Checklist de grandes temas para 2027", cta: "Salve para consultar", status: "ideia", kanban: "ideia", script: "Distribuição de matérias por peso nas grandes bancas de residência médica (ENARE, USP, SUS-SP)." },
+    { id: "p20", date: "Segunda-feira, 23 de Novembro de 2026", shortDate: "23/11 Seg", month: "2026-11", format: "Motion Design (15-20s)", pilar: "Oferta Oficial", title: "Começou a Black Week LURIA", cta: "Conheça as condições", status: "ideia", kanban: "ideia", script: "Início oficial da Black Week. Condições transparentes liberadas no site oficial com 15 dias sem risco." },
+    { id: "p21", date: "Terça-feira, 24 de Novembro de 2026", shortDate: "24/11 Ter", month: "2026-11", format: "Carrossel Comparativo (6 pág)", pilar: "Oferta Oficial", title: "Essential ou Pro: qual plano é para você?", cta: "Compare os planos", status: "ideia", kanban: "ideia", script: "Tabela comparativa direta e honesta entre os planos Essential e Pro, sem letras miúdas." },
+    { id: "p22", date: "Quarta-feira, 25 de Novembro de 2026", shortDate: "25/11 Qua", month: "2026-11", format: "Reels de Produto (25-30s)", pilar: "Produto LURIA", title: "Do caso clínico ao aprendizado completo", cta: "Experimente o fluxo", status: "ideia", kanban: "ideia", script: "Demonstração do ciclo completo: Caso Clínico -> Decisão -> Debriefing Científico -> Flashcard de Fixação." },
+    { id: "p23", date: "Quinta-feira, 26 de Novembro de 2026", shortDate: "26/11 Qui", month: "2026-11", format: "Carrossel de FAQ (8 pág)", pilar: "Oferta Oficial", title: "FAQ: 15 dias gratuitos e Black Week", cta: "Tire suas dúvidas", status: "ideia", kanban: "ideia", script: "Respostas transparentes sobre cobrança, ativação, período de teste e cancelamento em 1 clique." },
+    { id: "p24", date: "Sexta-feira, 27 de Novembro de 2026", shortDate: "27/11 Sex", month: "2026-11", format: "Reels Black Friday (30-35s)", pilar: "Oferta Oficial", title: "Black Friday LURIA: condição principal liberada", cta: "Assine pela oferta", status: "ideia", kanban: "ideia", script: "Vídeo principal da Black Friday com demonstração ao vivo e condições exclusivas de assinatura anual." },
+    { id: "p25", date: "Sábado, 28 de Novembro de 2026", shortDate: "28/11 Sáb", month: "2026-11", format: "Reels Desafio (20s)", pilar: "Educação Médica", title: "Plantão Relâmpago de Fim de Semana", cta: "Qual sua conduta?", status: "ideia", kanban: "ideia", script: "Desafio interativo com caso clínico de rápida tomada de decisão para mobilizar engajamento." },
+    { id: "p26", date: "Domingo, 29 de Novembro de 2026", shortDate: "29/11 Dom", month: "2026-11", format: "Motion Design (15s)", pilar: "Oferta Oficial", title: "Últimas horas da Black Week LURIA", cta: "Veja o prazo final", status: "ideia", kanban: "ideia", script: "Encerramento verdadeiro no horário oficial informado no site. Sem falsas extensões de prazo." },
+    { id: "p27", date: "Segunda-feira, 30 de Novembro de 2026", shortDate: "30/11 Seg", month: "2026-11", format: "Carrossel Onboarding (7 pág)", pilar: "Produto LURIA", title: "Seus primeiros sete dias de estudos na LURIA", cta: "Comece seu cronograma", status: "ideia", kanban: "ideia", script: "Guia passo a passo de onboarding para novos assinantes e membros do teste gratuito de 15 dias." }
   ];
 
   // ==============================================================
@@ -459,7 +461,7 @@
     `;
   }
 
-  // 6. META ADS DASHBOARD (Páginas 24 e 30)
+  // 6. META ADS DASHBOARD (Páginas 24 e 30) - ESTRATÉGIA MICRO-BUDGET R$ 20/SEMANA
   function renderMetaAdsHub() {
     const container = $("editorial-view-container");
     if (!container) return;
@@ -468,76 +470,178 @@
       <div class="meta-ads-hub">
         <div class="meta-ads-api-banner">
           <div class="meta-ads-banner-copy">
-            <strong>🌐 Meta Marketing API (Graph API v21.0)</strong>
+            <strong>🌐 Meta Marketing API (Graph API v21.0) · Estratégia Micro-Budget</strong>
             <p>
-              Pronto para reconciliação com o Gerenciador de Anúncios. Ao conectar o Access Token e o Ad Account ID, as métricas de CPM, CPC, Leads e ROAS serão atualizadas automaticamente.
+              Início na semana do dia <strong>02 de Novembro de 2026</strong> com limite de <strong>R$ 20,00 por semana</strong> (~R$ 2,85/dia). Foco inicial: <strong>Ganhar Seguidores Médicos Qualificados</strong> para validação de marca, antes de transferir a verba para tráfego direto de acessos ao site.
             </p>
           </div>
           <div class="meta-ads-status-badge">
-            <span class="status-dot pending"></span>
-            Aguardando Token da API
+            <span class="status-dot active"></span>
+            Limite: R$ 20 / semana
           </div>
         </div>
 
         <div class="meta-ads-kpis-grid">
           <div class="meta-ads-kpi-card">
-            <span>Orçamento Previsto</span>
-            <strong>R$ 1.500,00</strong>
-            <small>Teto: R$ 25 - R$ 100/semana</small>
+            <span>Orçamento Semanal</span>
+            <strong>R$ 20,00</strong>
+            <small style="color:#4ade80;">R$ 2,85 / dia (1 post vencedor)</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Meta de Alcance</span>
-            <strong>50.000</strong>
-            <small>Estudantes e Médicos</small>
+            <span>Fase 1 (Novembro 1-15)</span>
+            <strong>Ganhar Seguidores</strong>
+            <small>Validação e Autoridade de Marca</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Custo por Lead Alvo</span>
-            <strong>R$ 3,50 - R$ 5,00</strong>
-            <small>Pré-lista VIP</small>
+            <span>Fase 2 (Novembro 16-30)</span>
+            <strong>Transferir p/ Acessos</strong>
+            <small>Pré-lista VIP e 15 Dias Grátis</small>
           </div>
           <div class="meta-ads-kpi-card">
-            <span>Conversão em Venda</span>
-            <strong>20 - 25% Pro</strong>
-            <small>Oferta Black Friday</small>
+            <span>Critério de Escolha</span>
+            <strong>Mais Salvo no Orgânico</strong>
+            <small>Impulsionar apenas o comprovado</small>
           </div>
         </div>
 
         <div class="meta-campaigns-table-card">
-          <h3>Estrutura de Campanhas da Black November</h3>
+          <h3>Evolução das Campanhas Meta Ads (Fase 1 & Fase 2)</h3>
           <table class="meta-table">
             <thead>
               <tr>
-                <th>Campanha</th>
-                <th>Funil</th>
-                <th>Objetivo Meta</th>
+                <th>Campanha & Peça</th>
+                <th>Fase & Objetivo</th>
+                <th>Orçamento</th>
                 <th>Público Alvo</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>TOF · Vídeo AVC Isquêmico (Erro de 2 Minutos)</strong></td>
-                <td><span class="funnel-tag funnel-top">Topo de Funil</span></td>
-                <td>Reconhecimento / ThruPlay</td>
-                <td>Interesse em Medicina, Residência Médica</td>
-                <td><span class="status-dot active"></span> Pronta</td>
+                <td><strong>Semana 02/11 · Impulsionamento do Post Vencedor da Semana 1</strong></td>
+                <td><span class="funnel-tag funnel-top">Fase 1 · Ganhar Seguidores</span></td>
+                <td>R$ 20,00 / sem</td>
+                <td>Medicina, Internato e Residência (20-30 anos)</td>
+                <td><span class="status-dot active"></span> Início 02/11</td>
               </tr>
               <tr>
-                <td><strong>MOF · Carrossel 5 Condutas em Emergência</strong></td>
-                <td><span class="funnel-tag funnel-mid">Meio de Funil</span></td>
-                <td>Engajamento & Salvamentos</td>
-                <td>Seguidores de Páginas Médicas</td>
-                <td><span class="status-dot active"></span> Pronta</td>
+                <td><strong>Semana 09/11 · Post Técnico Mais Salvo (Sepse / ECG)</strong></td>
+                <td><span class="funnel-tag funnel-top">Fase 1 · Visitas ao Perfil</span></td>
+                <td>R$ 20,00 / sem</td>
+                <td>Seguidores de Páginas Médicas e Concursos</td>
+                <td><span class="status-dot pending"></span> Aguardando Métricas</td>
               </tr>
               <tr>
-                <td><strong>BOF · Pré-Lista VIP (15 Dias Gratuitos)</strong></td>
-                <td><span class="funnel-tag funnel-bottom">Fundo de Funil</span></td>
-                <td>Geração de Leads</td>
-                <td>Remarketing (Visitantes do Site)</td>
-                <td><span class="status-dot pending"></span> Em Configuração</td>
+                <td><strong>Semana 16/11 · Transição de Verba para Acessos ao Site</strong></td>
+                <td><span class="funnel-tag funnel-mid">Fase 2 · Cliques no Link</span></td>
+                <td>R$ 20,00 / sem</td>
+                <td>Engajados com o Perfil nos últimos 30 dias</td>
+                <td><span class="status-dot pending"></span> Planejado</td>
+              </tr>
+              <tr>
+                <td><strong>Semana 23/11 · Black Week: Retargeting Pré-Lista VIP</strong></td>
+                <td><span class="funnel-tag funnel-bottom">Fase 2 · Conversão / 15 Dias</span></td>
+                <td>R$ 20,00 / sem</td>
+                <td>Visitantes do perfil e do site /black-november/</td>
+                <td><span class="status-dot pending"></span> Planejado</td>
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    `;
+  }
+
+  // 7. NOVA PÁGINA: DICAS DE CRESCIMENTO ORGÂNICO (Alimentada Semanalmente)
+  async function renderOrganicGrowthHub() {
+    const container = $("editorial-view-container");
+    if (!container) return;
+
+    container.innerHTML = `<div style="text-align:center; padding:3rem; color:#94a3b8;">Carregando diretrizes de crescimento orgânico e micro-budget...</div>`;
+
+    let tips = [];
+    try {
+      const res = await fetch("/assets/data/organic-growth-tips.json?t=" + Date.now());
+      if (res.ok) tips = await res.json();
+    } catch (_) {}
+
+    if (!tips || tips.length === 0) {
+      tips = [
+        {
+          semana: "Semana 1 · 26/10 a 01/11/2026",
+          foco: "Enchimento de Feed Orgânico & Autoridade Clínica",
+          pilares: [
+            {
+              titulo: "Carrossel de Alto Salvamento",
+              dica: "O salvamento é a métrica mais valorizada pelo algoritmo médico. Posts com resumos rápidos geram alcance orgânico multiplicado.",
+              acao: "Poste na segunda e na quarta no pico das 12h ou 20h com CTA: 'Salve para consultar no plantão'."
+            },
+            {
+              titulo: "Reels com Gancho Clínico nos 3 Segundos Iniciais",
+              dica: "Corte seco e caso interativo geram retenção acima de 50% e compartilhamentos no WhatsApp.",
+              acao: "Sem saudações lentas: abra com o ECG ou o dilema de conduta direto."
+            }
+          ]
+        }
+      ];
+    }
+
+    container.innerHTML = `
+      <div class="organic-growth-hub">
+        <div class="organic-banner">
+          <div class="organic-banner-text">
+            <h2>🌱 Guia Prático de Crescimento Orgânico & Validação</h2>
+            <p>
+              Estratégia oficial para abastecer o feed e gerar seguidores sem queimar caixa. Atualizado semanalmente pelas rotinas automatizadas da LURIA.
+            </p>
+          </div>
+          <div class="organic-badge">
+            Atualização Semanal Automática
+          </div>
+        </div>
+
+        <div class="organic-strategy-grid">
+          <div class="organic-step-card">
+            <span class="step-badge">Fase 1 · A partir de 26/10</span>
+            <h4>Feed Orgânico Impecável</h4>
+            <p>Construção da vitrine técnica: 1 post por dia com foco em salvamento e compartilhamento antes de colocar qualquer verba em anúncios.</p>
+          </div>
+          <div class="organic-step-card">
+            <span class="step-badge">Fase 2 · A partir de 02/11</span>
+            <h4>Micro-Budget R$ 20 / semana</h4>
+            <p>Escolha exclusiva do post orgânico nº 1 da semana anterior para impulsionar Visitas ao Perfil e validar a marca LURIA.</p>
+          </div>
+          <div class="organic-step-card">
+            <span class="step-badge">Fase 3 · A partir de 16/11</span>
+            <h4>Transferência para Acessos</h4>
+            <p>Com a marca validada e seguidores adquiridos, o tráfego pago migra para conversão de cadastros na Landing Page /black-november/.</p>
+          </div>
+        </div>
+
+        <div class="organic-weeks-list">
+          ${tips.map(w => `
+            <div class="organic-week-block">
+              <div class="organic-week-header">
+                <div>
+                  <span class="organic-week-tag">${w.semana}</span>
+                  <h3 class="organic-week-focus">${w.foco}</h3>
+                </div>
+                ${w.atualizado_em ? `<small style="color:#94a3b8;">Sincronizado: ${new Date(w.atualizado_em).toLocaleDateString('pt-BR')}</small>` : ''}
+              </div>
+              <div class="organic-pilares-grid">
+                ${(w.pilares || []).map(p => `
+                  <div class="organic-pilar-card">
+                    <h4>📌 ${p.titulo}</h4>
+                    <p class="organic-dica"><strong>Por que funciona:</strong> ${p.dica}</p>
+                    <div class="organic-acao">
+                      <strong>⚡ Ação Imediata:</strong>
+                      <p>${p.acao}</p>
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+          `).join("")}
         </div>
       </div>
     `;
@@ -550,6 +654,7 @@
     else if (state.currentView === "stories") renderStoriesGrid();
     else if (state.currentView === "crm") renderCrmLeads();
     else if (state.currentView === "meta_ads") renderMetaAdsHub();
+    else if (state.currentView === "organic_growth") renderOrganicGrowthHub();
 
     $("tab-weekly")?.classList.toggle("active", state.currentView === "weekly");
     $("tab-monthly")?.classList.toggle("active", state.currentView === "monthly");
@@ -557,6 +662,7 @@
     $("tab-stories")?.classList.toggle("active", state.currentView === "stories");
     $("tab-crm")?.classList.toggle("active", state.currentView === "crm");
     $("tab-meta-ads")?.classList.toggle("active", state.currentView === "meta_ads");
+    $("tab-organic-growth")?.classList.toggle("active", state.currentView === "organic_growth");
 
     const monthNav = $("editorial-month-nav");
     if (monthNav) monthNav.hidden = state.currentView !== "monthly";
@@ -569,6 +675,7 @@
     $("tab-stories")?.addEventListener("click", () => { state.currentView = "stories"; renderCurrentView(); });
     $("tab-crm")?.addEventListener("click", () => { state.currentView = "crm"; renderCurrentView(); });
     $("tab-meta-ads")?.addEventListener("click", () => { state.currentView = "meta_ads"; renderCurrentView(); });
+    $("tab-organic-growth")?.addEventListener("click", () => { state.currentView = "organic_growth"; renderCurrentView(); });
 
     $("month-select")?.addEventListener("change", (e) => {
       state.selectedMonth = e.target.value;

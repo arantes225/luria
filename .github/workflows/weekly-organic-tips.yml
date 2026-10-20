@@ -1,0 +1,32 @@
+name: Weekly Organic Growth Tips Update
+
+on:
+  schedule:
+    # Executa toda segunda-feira às 06:00 UTC (03:00 Horário de Brasília)
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-tips:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run organic growth tips update
+        run: node scripts/update-organic-tips.cjs
+
+      - name: Commit and push changes if updated
+        run: |
+          git config --global user.name "Luria Automated Marketing"
+          git config --global user.email "bot@luria.med.br"
+          git add assets/data/organic-growth-tips.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(marketing): atualizar dicas semanais de crescimento organico [skip ci]" && git push)

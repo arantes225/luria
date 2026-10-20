@@ -1,0 +1,48 @@
+[
+  {
+    "id": "semana-43-2026",
+    "semana": "Semana 1 · 26/10 a 01/11/2026",
+    "foco": "Enchimento de Feed com Conteúdo Orgânico de Alto Valor (Sem Tráfego Pago)",
+    "pilares": [
+      {
+        "titulo": "Carrossel Técnico 'Salvação no Plantão' (Foco: Salvamentos)",
+        "dica": "No Instagram médico, o salvamento é a métrica mais valiosa para o algoritmo. Um post muito salvo é distribuído gratuitamente para outros estudantes e médicos sem gastar nada.",
+        "acao": "Publique nas segundas e quartas no pico das 12h ou 20h. O slide 1 deve trazer uma pergunta direta sobre conduta e o último slide o resumo de consulta rápida: 'Salve para consultar no plantão'."
+      },
+      {
+        "titulo": "Reels com Dilema Clínico nos Primeiros 3 Segundos (Foco: Compartilhamentos)",
+        "dica": "Vídeos verticais de 20 a 35 segundos com cortes rápidos geram repasses instantâneos em grupos de WhatsApp de internato.",
+        "acao": "Abra sem introdução ('Olá pessoal' derruba retenção). Vá direto: 'Se chegar esse ECG no seu plantão, o que você prescreve primeiro?'. Mostre a pegadinha clássica em 25 segundos."
+      },
+      {
+        "titulo": "Stories Diários de Aquecimento e Enquetes (Foco: Conexão)",
+        "dica": "Manter os stories ativos com 3 a 5 posts por dia aquece a conta para quando abrirmos anúncios.",
+        "acao": "Rotina diária: 1 quiz rápido pela manhã (08h), 1 bastidor/estudo às 13h, e 1 enquete com caixa de perguntas às 19h."
+      }
+    ],
+    "atualizado_em": "2026-10-19T20:55:00Z"
+  },
+  {
+    "id": "semana-44-2026",
+    "semana": "Semana 2 · 02/11 a 08/11/2026",
+    "foco": "Início do Tráfego Pago Micro-Budget (Limite R$ 20/semana) para Validação de Marca",
+    "pilares": [
+      {
+        "titulo": "Como Escolher a Peça Única para Impulsionar com R$ 20",
+        "dica": "Com orçamento de R$ 20 por semana (~R$ 2,85/dia), NUNCA divida o orçamento em vários anúncios. O valor precisa ser concentrado em 1 único post vencedor para sair da fase de aprendizado do algoritmo.",
+        "acao": "Na sexta-feira anterior, abra os Insights do Instagram e compare os posts da Semana 1. O post com MAIOR taxa de salvamento e retenção é o escolhido. Se um post já foi bem organicamente, ele performará 5x melhor com tráfego pago."
+      },
+      {
+        "titulo": "Objetivo do Tráfego Pago Inicial: Ganhar Seguidores e Validar Marca",
+        "dica": "Nesta fase 1 de anúncios, não envie para landing page ou vendas diretas. O foco total é crescer o perfil com seguidores hiperqualificados pelo menor custo possível.",
+        "acao": "Configure o anúncio no Meta Ads para o objetivo 'Visitas ao Perfil do Instagram'. Público: Medicina, Internato Médico e Residência Médica (idade 20-30 anos). Meta: Validar a marca LURIA e construir base de seguidores engajados."
+      },
+      {
+        "titulo": "Transição Futura: De Seguidores para Acessos e Pré-Lista",
+        "dica": "Após consolidar os primeiros seguidores e construir prova social nas primeiras semanas, o tráfego é transferido para geração de tráfego no site e inscrições VIP.",
+        "acao": "Mantenha a Bio com o link oficial da LURIA (/black-november/) e destaque '15 Dias Gratuitos'. O seguidor recém-chegado vê a autoridade do feed e entra no teste gratuito voluntariamente."
+      }
+    ],
+    "atualizado_em": "2026-10-19T20:55:00Z"
+  }
+]
