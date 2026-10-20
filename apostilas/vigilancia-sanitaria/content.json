@@ -6,7 +6,7 @@
   "o": [
     [
       "sec-2-manuscrito-editorial-original-medicina-p",
-      "Manuscrito editorial original | Medicina Preventiva e Saúde Coletiva"
+      "Introdução à Vigilância Sanitária"
     ],
     [
       "sec-3-1-constituicao-e-sus",
@@ -323,91 +323,7 @@
       [
         [
           "2",
-          "Manuscrito editorial original | Medicina Preventiva e Saúde Coletiva"
-        ],
-        [
-          "p",
-          "<strong>Início da versão:</strong> 15/10/2026. <strong>Situação:</strong> EM PRODUÇÃO, NÃO PUBLICADO, NÃO CERTIFICADO.  \r<br><strong>Escopo:</strong> prevenção, regulação, gerenciamento de riscos, fiscalização, serviços e produtos sujeitos ao controle sanitário, Sistema Nacional de Vigilância Sanitária (SNVS), atuação territorial e integração com a assistência.  \r<br><strong>Aulas vizinhas:</strong> 055 (Vigilância em Saúde), 060 (Vigilância Epidemiológica), 070 (Vigilância Ambiental e Saúde do Trabalhador) e 075 (Notificação Compulsória). Preservar essas fronteiras; nesta aula aprofundar o componente SANITÁRIO, sem refazer os demais cadernos."
-        ],
-        [
-          "p",
-          "# 0. Auditoria editorial, benchmark e plano de lacunas"
-        ],
-        [
-          "4",
-          "0.1 Conferência do acervo LURIA"
-        ],
-        [
-          "4",
-          "0.2 Etapa zero de benchmarking no Drive"
-        ],
-        [
-          "p",
-          "Também foi examinada a estrutura de uma apostila já presente na LURIA — <strong>Assistência ao Parto, Vigilância Intraparto e Partograma</strong> — para identificar a organização em sumário lateral, capítulos numerados, quadros, casos e estilo próprio; não reutilizar seu conteúdo médico."
-        ],
-        [
-          "t",
-          [
-            "Domínio",
-            "Material comparativo",
-            "Necessidade da LURIA neste tema"
-          ],
-          [
-            [
-              "Conceito",
-              "Definição sucinta de risco sanitário",
-              "Ensinar escopo jurídico, exemplos e consequências assistenciais"
-            ],
-            [
-              "Instituições",
-              "Anvisa citada",
-              "Distinguir Anvisa, vigilâncias estaduais/municipais, laboratórios e gestão do SUS"
-            ],
-            [
-              "Procedimentos",
-              "Não detalhados",
-              "Explicar inspeção, licenciamento, registros, fiscalização e medidas sanitárias"
-            ],
-            [
-              "Serviços",
-              "Menção genérica",
-              "Desenvolver segurança assistencial, infecção, esterilização e resíduos"
-            ],
-            [
-              "Produtos",
-              "Não aprofundados",
-              "Desenvolver medicamentos, alimentos, cosméticos, saneantes e dispositivos"
-            ],
-            [
-              "Processo legal",
-              "Não aprofundado",
-              "Explicar poder de polícia, processo administrativo e proporcionalidade"
-            ],
-            [
-              "Ensino e avaliação",
-              "Resumo mnemônico",
-              "Construir casos, questões, algoritmos, tabelas e trilha de justificativas"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "4",
-          "0.3 Fronteira com outras apostilas"
-        ],
-        [
-          "u",
-          [
-            "<strong>Vigilância em Saúde (055):</strong> conceitos integradores, planejamento, indicadores e atuação intersetorial.",
-            "<strong>Vigilância Epidemiológica (060):</strong> detecção, investigação e acompanhamento de doenças/agravos e séries de notificação.",
-            "<strong>Vigilância Sanitária (065):</strong> controle preventivo e corretivo dos riscos de <strong>bens, serviços, ambientes, processos e tecnologias</strong> sujeitos a regulação.",
-            "<strong>Vigilância Ambiental e Saúde do Trabalhador (070):</strong> exposição ambiental/ocupacional, determinantes, prevenção de acidentes e doenças relacionadas ao trabalho.",
-            "<strong>Notificação Compulsória (075):</strong> hipóteses, prazos, fluxo e responsabilidade de notificações epidemiológicas segundo a lista vigente."
-          ]
-        ],
-        [
-          "p",
-          "# 1. Introdução: por que a vigilância sanitária importa para o médico"
+          "Introdução à Vigilância Sanitária"
         ],
         [
           "p",
@@ -428,10 +344,6 @@
         [
           "4",
           "1.2 Objetivos de aprendizado"
-        ],
-        [
-          "p",
-          "# 2. Arquitetura normativa e competências"
         ]
       ]
     ],
@@ -529,8 +441,8 @@
           "As Resoluções da Diretoria Colegiada (RDC) e outros atos sanitários concretizam obrigações em áreas específicas. Na área de serviços de saúde, a RDC nº 63/2011 trata de boas práticas de funcionamento; a RDC nº 222/2018 trata do gerenciamento de resíduos de serviços de saúde; outras resoluções disciplinam segurança do paciente, processamento de produtos para saúde, serviços especializados e controle de infecções. <strong>Antes de aplicar norma em caso concreto, verificar texto vigente, alterações e regras específicas da atividade.</strong> A presença de uma sigla em apostila não garante que o dispositivo esteja imutável em 2026."
         ],
         [
-          "p",
-          "# 3. O risco sanitário como princípio organizador"
+          "2",
+          "3. O risco sanitário como princípio organizador"
         ]
       ]
     ],
@@ -587,8 +499,8 @@
           "A classificação de risco administrativa para licenciamentos ou abertura de atividades é tema regulatório próprio. Não confundi-la com a classificação clínica de gravidade de um paciente."
         ],
         [
-          "p",
-          "# 4. Instrumentos da vigilância sanitária"
+          "2",
+          "4. Instrumentos da vigilância sanitária"
         ]
       ]
     ],
@@ -665,8 +577,8 @@
           "Comunicar não é criar alarme indiscriminado. Uma comunicação bem feita identifica o problema, produtos/lotes ou procedimentos envolvidos, quem precisa agir, qual ação executar, como buscar atendimento se houve exposição e como obter atualização. A equipe clínica deve coordenar mensagens com a gestão e a autoridade competente e preservar privacidade."
         ],
         [
-          "p",
-          "# 5. Produtos sob vigilância sanitária"
+          "2",
+          "5. Produtos sob vigilância sanitária"
         ]
       ]
     ],
@@ -737,8 +649,8 @@
           "Cosméticos e saneantes podem causar eventos decorrentes de substâncias, concentrações, rotulagem, contaminação ou uso inadequado. O controle sanitário é dirigido ao risco concreto de produção, comercialização e consumo. Produtos vendidos em plataformas digitais não estão automaticamente fora do alcance fiscalizatório."
         ],
         [
-          "p",
-          "# 6. Vigilância sanitária em serviços de saúde"
+          "2",
+          "6. Vigilância sanitária em serviços de saúde"
         ]
       ]
     ],
@@ -859,8 +771,8 @@
           "O processamento de materiais inclui sequência de etapas com finalidades diferentes. <strong>Limpeza</strong> remove sujidade e reduz carga orgânica; <strong>desinfecção</strong> atua sobre microrganismos conforme seu nível e processo; <strong>esterilização</strong> busca eliminar todas as formas de vida microbiana viável em condições especificadas. Material esterilizado pode perder condição de uso seguro por embalagem violada, transporte inadequado ou armazenamento indevido. O controle do processo não se resume ao ciclo da autoclave."
         ],
         [
-          "p",
-          "# 7. Como investigar um problema sanitário na prática"
+          "2",
+          "7. Como investigar um problema sanitário na prática"
         ]
       ]
     ],
@@ -891,8 +803,8 @@
           "1. <strong>Confundir notificação de doença com denúncia/queixa sanitária.</strong> As obrigações e sistemas não são sinônimos.\r<br>2. <strong>Esperar causalidade perfeita para conter exposição de alto risco.</strong> Medidas preventivas proporcionais podem ser indicadas antes da conclusão da investigação.\r<br>3. <strong>Tratar ausência de casos como prova de segurança.</strong> Uma falha observável na produção ou assistência pode ser relevante mesmo sem vítimas identificadas."
         ],
         [
-          "p",
-          "# 8. Quadro integrado de comparação"
+          "2",
+          "8. Quadro integrado de comparação"
         ],
         [
           "t",
@@ -937,8 +849,8 @@
           "book-table"
         ],
         [
-          "p",
-          "# 9. Casos clínico-sanitários comentados"
+          "2",
+          "9. Casos clínico-sanitários comentados"
         ]
       ]
     ],
@@ -997,8 +909,8 @@
           "<strong>Situação:</strong> perfurocortantes são observados em saco de resíduos comuns. Uma técnica de enfermagem sofre acidente durante retirada de sacos.  \r<br><strong>Problema:</strong> risco ocupacional e sanitário na segregação de resíduos, com dano efetivo à trabalhadora.  \r<br><strong>Raciocínio:</strong> o evento demanda duas linhas simultâneas: atendimento e protocolo de exposição ocupacional da vítima, e correção estrutural do descarte e do PGRSS da unidade.  \r<br><strong>Conduta:</strong> avaliação clínica imediata segundo natureza e gravidade da exposição, checagem de fonte e profilaxia quando indicada pelas diretrizes específicas; comunicação do acidente pelos canais aplicáveis; recipiente adequado, educação prática, investigação do fluxo de descarte, responsáveis e auditoria de cumprimento.  \r<br><strong>Por que importa:</strong> o acidente não termina com atendimento individual; corrigir a etapa geradora impede novas vítimas."
         ],
         [
-          "p",
-          "# 10. Questões autorais comentadas — primeira bateria"
+          "2",
+          "10. Questões autorais comentadas — primeira bateria"
         ]
       ]
     ],
@@ -1109,8 +1021,8 @@
           "<strong>Gabarito: D.</strong> A <strong>D</strong> une duas perguntas distintas e complementares. <strong>A</strong> e <strong>B</strong> excluem uma dimensão essencial; <strong>C</strong> posterga contenção; <strong>E</strong> confunde hipótese com prova. <strong>Revisão:</strong> investigação de surto exige dados, hipótese testável, medidas proporcionais e comunicação."
         ],
         [
-          "p",
-          "# 11. Revisão de alto rendimento"
+          "2",
+          "11. Revisão de alto rendimento"
         ],
         [
           "u",
@@ -1131,32 +1043,30 @@
           "1. <strong>Organograma autoral SNVS:</strong> União/Anvisa, estados/DF e municípios; infográfico vetorial criado pela LURIA, sem reproduzir layouts de terceiros.\r<br>2. <strong>Linha de ciclo de vida de produto:</strong> fabricação → armazenamento → distribuição → uso → farmacovigilância/tecnovigilância; diagrama autoral.\r<br>3. <strong>Fluxograma de sinal de qualidade:</strong> identificação → contenção → investigação → comunicação → rastreabilidade → verificação; diagrama autoral.\r<br>4. <strong>Mapa de manejo de RSS:</strong> grupos de risco e fluxo seguro, a ser construído com confirmação da RDC vigente.\r<br>5. <strong>Imagem clínica real de defeito de produto:</strong> somente selecionar se autenticidade, licença de uso comercial e contexto forem verificáveis; enviar como candidata à aprovação Admin, não embutir no manuscrito."
         ],
         [
-          "p",
-          "# 13. Referências oficiais efetivamente verificadas em 15/10/2026"
+          "2",
+          "13. Referências oficiais efetivamente verificadas em 15/10/2026"
         ],
         [
           "p",
           "1. BRASIL. Lei nº 8.080, de 19 de setembro de 1990, texto compilado, art. 6º, § 1º. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm\r<br>2. BRASIL. Lei nº 9.782, de 26 de janeiro de 1999, texto compilado. https://www.planalto.gov.br/ccivil_03/leis/l9782compilado.htm\r<br>3. BRASIL. Lei nº 6.437, de 20 de agosto de 1977, texto compilado. https://www.planalto.gov.br/ccivil_03/leis/l6437compilado.htm\r<br>4. ANVISA. Sistema Nacional de Vigilância Sanitária, página institucional publicada em 30/09/2026. https://www.gov.br/anvisa/pt-br/assuntos/snvs/sistema-nacional-de-vigilancia-sanitaria-1\r<br>5. ANVISA. Fiscalização, página institucional atualizada em 02/10/2026. https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao\r<br>6. ANVISA. Serviços de saúde: vigilância e controle de riscos. https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores/2017-2020/temas/servicosdesaude\r<br>7. MINISTÉRIO DA SAÚDE / ANVISA. RDC nº 63, de 25 de novembro de 2011, Boas Práticas para Funcionamento de Serviços de Saúde. https://bvs.saude.gov.br/bvs/saudelegis/anvisa/2011/rdc0063_25_11_2011.html\r<br>8. ANVISA. Gerenciamento de resíduos de serviços de saúde e RDC nº 222/2018. https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2018/confira-nova-regra-sobre-residuos-de-servicos-de-saude\r<br>9. ANVISA. Plano Integrado para Gestão Sanitária da Segurança do Paciente em Serviços de Saúde 2026–2030, aprovado pela Portaria nº 80/2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/plano-integrado"
         ],
         [
-          "p",
-          "# 14. Auditoria parcial de saída e próximos blocos"
+          "2",
+          "14. Auditoria parcial de saída e próximos blocos"
         ],
         [
           "p",
           "<strong>Já presente neste manuscrito:</strong> definição, mapa institucional, bases legais, diferenciação das vigilâncias, instrumentos de regulação e fiscalização, gerenciamento de risco, produtos, serviços, segurança do paciente, RSS, algoritmo assistencial-sanitário, quatro casos com raciocínio, seis questões comentadas, quadro comparativo e fontes oficiais."
         ],
         [
-          "p",
-          "<strong>Ainda obrigatório antes da certificação premium:</strong> aprofundar capítulos de controle de alimentos, dispositivos e medicamentos; tornar autossuficiente o processo administrativo em cada fase; acrescentar jurisprudência/regulação apenas quando necessária e conferida; detalhar os fluxos de notificações sanitárias atuais sem confundir portais; checar normas específicas vigentes; ampliar exemplos, matrizes e exercícios de alta dificuldade; atingir 60.000 caracteres DIDÁTICOS úteis sem enchimento; fazer teste de autossuficiência questão-a-questão; realizar revisão médica e jurídica independente; revisão editorial; validação no leitor desktop/PWA; selecionar e aprovar imagens pelo Admin."
+          "p"
         ],
         [
-          "p",
-          "<strong>Bloqueio de certificação:</strong> material do Drive consultado era correlato, não equivalente; ainda falta benchmark de apostila realmente específica de vigilância sanitária. <strong>Não afirmar etapa zero integralmente cumprida.</strong> Nenhuma imagem de terceiro foi reutilizada. Nenhum deploy, merge ou publicação foi executado."
+          "p"
         ],
         [
-          "p",
-          "# 15. Sistemas e fluxos de notificação: escolher o canal correto"
+          "2",
+          "15. Sistemas e fluxos de notificação: escolher o canal correto"
         ],
         [
           "p",
@@ -1310,8 +1220,8 @@
           "O quadro orienta raciocínio inicial. Sempre consultar os canais atuais na página oficial; nomes de portais, sistemas e submódulos podem mudar. O tema nº 075 da LURIA deve conter tabelas de prazos e listas epidemiológicas atualizadas, evitando repetição integral aqui."
         ],
         [
-          "p",
-          "# 16. Segurança do paciente: da identificação do risco à melhoria do sistema"
+          "2",
+          "16. Segurança do paciente: da identificação do risco à melhoria do sistema"
         ]
       ]
     ],
@@ -1386,8 +1296,8 @@
           "Ao conversar com paciente e família, priorizar cuidado, clareza e transparência compatíveis com os fatos conhecidos. Evitar linguagem que antecipe culpas ou causas não verificadas. A proteção institucional não justifica ocultar informação clínica relevante ao paciente."
         ],
         [
-          "p",
-          "# 17. Processamento de produtos para saúde: passo a passo"
+          "2",
+          "17. Processamento de produtos para saúde: passo a passo"
         ],
         [
           "p",
@@ -1516,8 +1426,8 @@
           "book-table"
         ],
         [
-          "p",
-          "# 18. Alimentos e proteção contra doenças transmitidas por alimentos"
+          "2",
+          "18. Alimentos e proteção contra doenças transmitidas por alimentos"
         ],
         [
           "p",
@@ -1592,8 +1502,8 @@
           "Em um evento, 40 pessoas consumiram duas sobremesas. Vinte adoeceram; todas comeram a sobremesa A, mas algumas pessoas não doentes também a consumiram. Uma inspeção identifica equipamento de refrigeração defeituoso. É correto afirmar que o equipamento prova a causa do surto? <strong>Não.</strong> O achado é evidência de processo inseguro e justifica intervenção, mas a atribuição etiológica da ocorrência exige análise epidemiológica e, quando disponíveis, evidências clínicas e laboratoriais. Paralelamente, a correção do equipamento e a avaliação de produtos armazenados não precisam aguardar confirmação etiológica perfeita."
         ],
         [
-          "p",
-          "# 19. Produtos para saúde e tecnologias: segurança após a comercialização"
+          "2",
+          "19. Produtos para saúde e tecnologias: segurança após a comercialização"
         ]
       ]
     ],
@@ -1660,8 +1570,8 @@
           "Séries de queixas por modelo, serviço e período podem revelar aumento de frequência de falhas. Contudo, números brutos não significam incidência sem denominador adequado. É possível receber mais notificações porque a cultura de segurança melhorou ou porque o uso do produto aumentou. Comparações precisam considerar exposição, qualidade de registros, mudanças de canal e perfil de serviço."
         ],
         [
-          "p",
-          "# 20. Inspeção sanitária e processo administrativo: estudo prático"
+          "2",
+          "20. Inspeção sanitária e processo administrativo: estudo prático"
         ]
       ]
     ],
@@ -1750,8 +1660,8 @@
           "Uma boa ação sanitária não termina com visita e relatório. O serviço precisa saber o que corrigir, quem é responsável, qual prazo é aplicável, como demonstrar conformidade e como manter mudanças. A autoridade pode verificar correções por meios adequados segundo o risco e as regras. Para aprendizado, registrar indicadores de reincidência e eficácia das medidas, sem supor que «capacitação realizada» comprova mudança."
         ],
         [
-          "p",
-          "# 21. Indicadores, auditoria e melhoria contínua"
+          "2",
+          "21. Indicadores, auditoria e melhoria contínua"
         ]
       ]
     ],
@@ -1808,8 +1718,8 @@
           "Para cada achado, exigir duas perguntas: <strong>«O processo mudou?»</strong> e <strong>«A mudança reduziu o risco ou melhorou a detecção?»</strong> Um treinamento pode ser necessário, mas a solução completa pode exigir mudança de compra, layout, manutenção, sistema de informação ou responsabilidade institucional."
         ],
         [
-          "p",
-          "# 22. Novos casos de integração avançada"
+          "2",
+          "22. Novos casos de integração avançada"
         ]
       ]
     ],
@@ -1868,8 +1778,8 @@
           "<strong>Cenário:</strong> fabricante divulga comunicado relativo a subgrupo de implantes. Um hospital consegue identificar 80 pacientes com aquele tipo genérico, mas não registra números de lote em parte dos prontuários.  \r<br><strong>Problema:</strong> déficit de rastreabilidade, potencial risco de produto e dificuldade para definir expostos.  \r<br><strong>Raciocínio:</strong> não se recomenda remoção indiscriminada sem análise de risco-benefício e orientação técnica. É preciso obter detalhes de lotes afetados, reconciliar registros, comunicar pessoas potencialmente afetadas conforme o plano e estabelecer seguimento individualizado.  \r<br><strong>Conduta:</strong> coordenação de direção clínica, cirurgia, engenharia/tecnovigilância, fabricante e autoridades segundo a ocorrência; proteção de dados pessoais; documentar medidas.  \r<br><strong>Por que importa:</strong> processo de recolhimento depende de saber exatamente onde o produto foi utilizado."
         ],
         [
-          "p",
-          "# 23. Questões autorais avançadas — segunda bateria"
+          "2",
+          "23. Questões autorais avançadas — segunda bateria"
         ]
       ]
     ],
@@ -1980,12 +1890,8 @@
           "<strong>Gabarito: B.</strong> A <strong>B</strong> reconhece a cadeia completa. <strong>A</strong> ignora recontaminação; <strong>C</strong> espera dano ou confirmação definitiva; <strong>D</strong> transfere responsabilidade; <strong>E</strong> exclui indevidamente objeto sanitário. <strong>Revisão:</strong> esterilização bem-sucedida não garante segurança se a integridade da barreira for quebrada."
         ],
         [
-          "p",
-          "# 24. Checklist de execução e integração editorial"
-        ],
-        [
-          "p",
-          "Para transformar este manuscrito em apostila premium, exigir revisão segmentada, com responsabilidade editorial, sem declarar pronto apenas pelo volume:\r<br>1. <strong>Marcos legais:</strong> reconferir a vigência e o escopo de leis, RDCs, instruções e atualizações pós-15/10/2026 quando ocorrerem.\r<br>2. <strong>Fronteiras curriculares:</strong> comparar capítulos deste manuscrito com conteúdos reais das aulas 055, 060, 070 e 075; manter nesta aula a interpretação jurídica e operacional de riscos, produtos e serviços.\r<br>3. <strong>Casos:</strong> cada caso precisa ser respondível sem consulta externa; verificar que premissas do enunciado constam dos capítulos.\r<br>4. <strong>Questões:</strong> gabaritos, alternativas e comentários devem ser validados tecnicamente, sobretudo escopo legal dos exemplos.\r<br>5. <strong>Imagens:</strong> organizar fila de candidatas com fonte e licença de uso comercial, nunca inserir mídia clínica não aprovada no HTML.\r<br>6. <strong>Leitor:</strong> gerar conteúdo com navegação semântica, sumário, tabelas responsivas e boa legibilidade no PWA, respeitando o CSS aprovado.\r<br>7. <strong>Revisão independente:</strong> colher conferência científica e jurídica por profissional habilitado antes da publicação acadêmica.\r<br>8. <strong>Etapa zero:</strong> ainda falta fonte comparativa do Drive com cobertura realmente equivalente; documento aberto era resumo correlato.\r<br>9. <strong>Contagem:</strong> auditar 60 mil caracteres úteis do corpo didático, excluindo sumário, cabeçalhos, links e redundâncias; a quantidade bruta do arquivo não é certificado.\r<br>10. <strong>Estado final desta produção:</strong> RASCUNHO NÃO PUBLICADO, sem merge, sem deploy e sem aprovação científica integral."
+          "2",
+          "24. Checklist de execução e integração editorial"
         ],
         [
           "4",

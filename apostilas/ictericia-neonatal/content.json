@@ -176,10 +176,6 @@
           "Da hemácia ao pigmento circulante"
         ],
         [
-          "raw",
-          "<figure data-luria-curated-image=\"Bili_light_with_newborn.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Bili%20light%20with%20newborn.jpg\" alt=\"Fototerapia de alta intensidade para hiperbilirrubinemia neonatal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Fototerapia de alta intensidade para hiperbilirrubinemia neonatal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABili%20light%20with%20newborn.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">User Jeremykemp on en.wikipedia ↗</a> (Public domain). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
           "p",
           "O catabolismo do heme gera biliverdina, convertida em bilirrubina não conjugada. Essa fração, também chamada indireta, é lipossolúvel e circula majoritariamente ligada à albumina. A albumina transporta o pigmento até o fígado, limitando a disponibilidade da fração livre para atravessar membranas e atingir o sistema nervoso central. O risco neurológico não depende apenas do número absoluto de bilirrubina total: hipoalbuminemia, acidose, prematuridade, sepse e instabilidade clínica podem alterar a vulnerabilidade da criança."
         ],
@@ -732,6 +728,10 @@
         [
           "p",
           "Os estratos históricos de Bhutani eram percentis de distribuição em populações e criavam categorias de predição. A AAP atual enfatiza uma diferença concreta entre BT observada e limiar terapêutico individual. Dois bebês no mesmo percentil histórico podem ter idades gestacionais e fatores clínicos diferentes, afetando necessidades de fototerapia e retorno. Essa distinção é central para provas com nomogramas antigos: se a pergunta pedir o método de 1999, reconhecer o significado histórico; se pedir conduta atual, usar limites de tratamento apropriados."
+        ],
+        [
+          "p",
+          "<strong>Recurso para aplicar o método:</strong> acesse os <a href=\"https://www.aap.org/en/patient-care/hyperbilirubinemia/\" target=\"_blank\" rel=\"noopener noreferrer\">gráficos oficiais da AAP por idade e fatores de risco</a>. Confira idade gestacional, idade em horas, fatores de neurotoxicidade e unidade da bilirrubina antes de localizar o limiar. Este caderno não incorpora as curvas numéricas e, portanto, ainda depende desse recurso para resolver decisões que exigem um limiar específico."
         ]
       ]
     ],
@@ -1428,10 +1428,6 @@
         [
           "p",
           "<strong>Sociedade Brasileira de Pediatria, Departamento Científico de Hepatologia.</strong> Atresia de vias biliares, material de atualização 2024; Atresia Biliar, atualização institucional 29/07/2025. https://www.sbp.com.br/atresia-biliar/ e https://www.sbp.com.br/pediatria-para-familias/doencas/atresia-de-vias-biliares/"
-        ],
-        [
-          "p",
-          "<strong>Status editorial:</strong> versão inicial autoral de ensino, em branch isolada, sem certificação médica integral. As curvas AAP não foram reproduzidas nem convertidas em números fixos; consultar diretamente algoritmos/figuras oficiais para decisões e adequar a protocolos locais. Não usar o texto como prescrição automática. Faltam auditoria aprofundada para densidade mínima de 60.000 caracteres úteis, seleção/validação de figuras licenciadas, revisão médica especializada, verificação de referências brasileiras complementares e testes no renderer desktop/PWA."
         ]
       ]
     ]

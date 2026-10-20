@@ -159,14 +159,6 @@
           "No trauma, pesquisar sangramento externo, tórax, abdome, retroperitônio, pelve e ossos longos. O espaço retroperitoneal pode acumular volumes expressivos sem sinais externos evidentes; fraturas pélvicas instáveis exigem contenção apropriada e equipe preparada para controle endovascular ou operatório. No sangramento digestivo, obstétrico ou pós-operatório, a fisiologia do choque é similar, mas a estratégia de hemostasia é específica da origem."
         ],
         [
-          "raw",
-          "<figure data-luria-curated-image=\"EquipmentforPelvicBinder.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/EquipmentforPelvicBinder.jpg\" alt=\"Cinta de compressão pélvica para fraturas em livro aberto instáveis\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Cinta de compressão pélvica para fraturas em livro aberto instáveis</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AEquipmentforPelvicBinder.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Doc James ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
-          "raw",
-          "<figure data-luria-curated-image=\"Stauschlauch.JPG\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Stauschlauch.JPG\" alt=\"Torniquete hemostático para contenção de hemorragia exsanguinante em extremidade\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Torniquete hemostático para contenção de hemorragia exsanguinante em extremidade</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AStauschlauch.JPG\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">me Ernstl ↗</a> (CC BY-SA 2.5). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
           "p",
           "Choque obstrutivo por pneumotórax hipertensivo ou tamponamento, choque cardiogênico após contusão/infarto e choque distributivo podem coexistir com hemorragia. Isso é especialmente importante quando um paciente mantém sinais de hipoperfusão apesar de controle aparente da perda. Ultrassom à beira-leito ajuda a buscar sangramento ou disfunção associada, mas exame negativo não descarta fonte retroperitoneal ou sangramento intermitente."
         ],
@@ -415,10 +407,6 @@
         [
           "p",
           "A transfusão precoce de hemocomponentes é central quando há hemorragia significativa com choque. Cristaloides em grandes volumes podem diluir fatores e plaquetas, agravar hipotermia, edema e acidose hiperclorêmica, sem repor capacidade de transporte de oxigênio. Usar pequenos volumes como ponte quando produtos sanguíneos não estiverem disponíveis, reavaliando continuamente a necessidade."
-        ],
-        [
-          "raw",
-          "<figure data-luria-curated-image=\"Blood_transfusion.gif\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Blood%20transfusion.gif\" alt=\"Bolsa de concentrado de hemácias para transfusão no choque hemorrágico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Bolsa de concentrado de hemácias para transfusão no choque hemorrágico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ABlood%20transfusion.gif\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Ian Furst/User:Doc James ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -1156,7 +1144,7 @@
       [
         [
           "2",
-          "Referências e status editorial"
+          "Referências e diretrizes"
         ],
         [
           "p",
@@ -1169,14 +1157,6 @@
         [
           "p",
           "Este tema complementa, mas não reproduz, LURIA 'Cuidados perioperatórios' e 'Reposição volêmica no paciente cirúrgico'. Limites de atuação e doses exigem checagem clínica antes da publicação."
-        ],
-        [
-          "p",
-          "Benchmark consultado no Drive em 17/10/2026: '02 - CHOQUE - TIPOS DE CHOQUE.pdf' (material de Medicina Livre; não atribuído ao Estratégia MED). Analisados esquema de tipos, marcadores hemodinâmicos e exames. Lacunas identificadas para o tema: ressuscitação hemostática, controle de fonte, hemorragia pélvica, contraindicações da hipotensão permissiva e terapia por viscoelasticidade. Texto e casos novos autorais; nenhuma imagem reproduzida."
-        ],
-        [
-          "p",
-          "STATUS EDITORIAL: RASCUNHO AUTORAL EM REVISÃO. Não certificado para publicação; requer completar ≥60.000 caracteres didáticos úteis, revisão médica independente, comparação com questões representativas, curadoria de imagens via Admin e inspeção no renderer desktop/PWA. Não é um protocolo assistencial nem substitui protocolos locais."
         ],
         [
           "p",

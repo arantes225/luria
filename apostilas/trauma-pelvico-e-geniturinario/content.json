@@ -5,10 +5,6 @@
   "p": "Trauma Pélvico e Geniturinário — Livro-Texto Completo LURIA",
   "o": [
     [
-      "sec-2-auditoria-editorial-e-etapa-zero-compara",
-      "Auditoria editorial e etapa zero comparativa"
-    ],
-    [
       "sec-3-introducao-clinica-uma-fratura-do-anel-p",
       "Introdução clínica: uma fratura do anel pélvico pode matar antes de chegar à TC"
     ],
@@ -81,16 +77,8 @@
       "Questões autorais comentadas — primeira bateria"
     ],
     [
-      "sec-21-recursos-visuais-inventario-editorial-e-",
-      "Recursos visuais: inventário editorial e aprovação centralizada"
-    ],
-    [
       "sec-22-referencias-cientificas-primarias-e-comp",
       "Referências científicas primárias e complementares"
-    ],
-    [
-      "sec-23-auditoria-preliminar-e-pendencias",
-      "Auditoria preliminar e pendências"
     ],
     [
       "sec-aprofundamento-trauma-pelvico-hemostasia-urologia",
@@ -107,6 +95,10 @@
     [
       "sec-fraturas-abertas-morel-lavallee",
       "Fraturas Pélvicas Abertas e Síndrome de Deslocamento Morel-Lavallée"
+    ],
+    [
+      "sec-populacoes-especiais-seguimento-trauma-pelvico",
+      "Populações especiais, seguimento e critérios de reavaliação"
     ],
     [
       "referencias",
@@ -126,65 +118,6 @@
   ],
   "q": [
     [
-      "sec-2-auditoria-editorial-e-etapa-zero-compara",
-      0,
-      [
-        [
-          "2",
-          "Auditoria editorial e etapa zero comparativa"
-        ],
-        [
-          "4",
-          "0.1 Resultado da conferência do acervo LURIA"
-        ],
-        [
-          "p",
-          "A estrutura editorial de referência é o padrão LURIA de capítulos clínicos, tabelas resolutivas, fluxos, casos comentados e questões com explicação alternativa a alternativa. Não haverá alteração global em CSS, PWA, páginas já aprovadas, imagens ou banco do Supabase."
-        ],
-        [
-          "4",
-          "0.2 Materiais do Google Drive encontrados, abertos e lidos em 15/10/2026"
-        ],
-        [
-          "p",
-          "1. <strong>08 - TRAUMA - TRAUMA ABDOMINAL ESPECÍFICO .pdf</strong> — cerca de 14 mil caracteres extraídos; explora trauma de órgãos sólidos e retroperitônio, e traz um resumo curto de lesão renal, ureteral e vesical. Pontos de atenção: tratamento não operatório condicionado a recursos, estabilidade e vigilância, e diferenciação entre lesão vesical intra/extraperitoneal. Lacunas para esta aula: classificação do anel pélvico, estabilização, hemorragia pélvica, diagnóstico da uretra, cistografia técnica, via excretora renal e seguimento.\r<br>2. <strong>13 - UROLOGIA - PS - TRAUMA DE URETRA E ESTENOSE DE URETRA .pdf</strong> — cerca de 4,4 mil caracteres, cobre anatomia uretral, diferença anterior/posterior, uretrorragia, uretrografia e possibilidades de derivação/reconstrução. Lacunas: integração à prioridade do politraumatizado, lesão de bexiga, anatomia feminina, riscos de instrumentação, estratégia após ruptura por fratura pélvica e acompanhamento funcional. <strong>O achado de próstata “alta” não deve ser ensinado como teste sensível ou confiável.</strong>\r<br>3. <strong>07 - TRAUMA ABDOMINAL CONTUSO.pdf</strong> — resumo curto sobre FAST, TC no estável, reavaliação e decisão cirúrgica. É material correlato, sem desenvolvimento suficiente do sangramento retroperitoneal.\r<br>4. <strong>01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf</strong> — cobre abordagem inicial e choque, mas também contém simplificações que não devem ser importadas: a palpação repetida do anel não é exame recomendado para “testar instabilidade”; fórmulas volumétricas fixas não substituem avaliação da hemorragia e ressuscitação hemostática.\r<br>5. <strong>ATLS_Atendimento_inicial_ao_poli.pdf</strong> — ficha-síntese de prioridades e fontes de sangramento. Não reproduzir mnemônicos, imagens nem recomendações antigas sem validação."
-        ],
-        [
-          "p",
-          "<strong>Procedência institucional:</strong> textos recuperados apresentam menções como “Medicina livre, venda proibida” e nome de uma autora, mas não foi confirmada autoria institucional Estratégia MED. Não presumir que são desse cursinho. Essas fontes são benchmark de escopo e de pontos que devem ser corrigidos, não fontes primárias para conduta e NÃO AUTORIZAM copiar redação, caso, imagem, tabela, sumário ou identidade visual."
-        ],
-        [
-          "p",
-          "<strong>Limite assumido:</strong> a comparação foi feita com um conjunto de materiais próximos e parciais, <strong>não</strong> com uma apostila única e completa que cubra a fratura pélvica e todo o trato urinário. Portanto o requisito de benchmark integral continua pendente."
-        ],
-        [
-          "4",
-          "0.3 Bases científicas atuais para a produção"
-        ],
-        [
-          "u",
-          [
-            "European Association of Urology (EAU), <strong>Urological Trauma Guidelines 2026</strong>, com conteúdo integral reorganizado em 2026. Importa registrar que houve reestruturação, não assumir automaticamente que cada recomendação é nova. Diretriz por órgãos e questões de imagem/conduta: https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines",
-            "Coccolini F et al. <strong>Pelvic trauma: WSES classification and guidelines</strong>, <em>World J Emerg Surg</em>. 2017;12:5, doi:10.1186/s13017-017-0117-6. Apoio para o eixo hemodinâmica–mecânica, contenção, packing, embolização e estabilização: https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/",
-            "Spahn DR et al. <strong>The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition</strong>. <em>Critical Care</em>. 2023. Apoio para ressuscitação hemostática, controle precoce de hemorragia e estabilização pélvica: https://link.springer.com/article/10.1186/s13054-023-04327-7",
-            "Morey AF et al. <strong>Urotrauma Guideline 2020: AUA Guideline</strong>, <em>J Urol</em>. 2021, doi:10.1097/JU.0000000000001408: https://www.auajournals.org/doi/10.1097/JU.0000000000001408"
-          ]
-        ],
-        [
-          "4",
-          "0.4 Índice de ensino planejado e fronteira curricular"
-        ],
-        [
-          "p",
-          "<strong>Fronteira com outras aulas:</strong> o ABCDE genérico pertence à aula de trauma inicial; choque hemorrágico sistêmico é eixo próprio; aqui esses princípios serão revisitados APENAS no contexto que muda as decisões sobre pelve, retroperitônio e aparelho geniturinário. Não duplicar capítulo completo de TCE, trauma torácico ou trauma abdominal geral."
-        ],
-        [
-          "p",
-          "---"
-        ]
-      ]
-    ],
-    [
       "sec-3-introducao-clinica-uma-fratura-do-anel-p",
       0,
       [
@@ -197,14 +130,6 @@
           "A expressão “trauma pélvico” abrange lesões do <strong>anel ósseo da pelve</strong>, vasos e plexos venosos retroperitoneais, musculatura e fáscias pélvicas, trato urinário baixo, reto, órgãos genitais e nervos. Nem toda fratura da bacia é instável ou hemorrágica; nem todo paciente que sangra gravemente tem um RX com ruptura espetacular. É a associação entre <strong>mecanismo, fisiologia, anatomia e lesões concorrentes</strong> que determina prioridades."
         ],
         [
-          "raw",
-          "<figure data-luria-curated-image=\"Penile_fracture_-_retrograde_urethrogram.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Penile%20fracture%20-%20retrograde%20urethrogram.jpg\" alt=\"Uretrografia retrógrada com extravasamento de contraste por ruptura uretral\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Uretrografia retrógrada com extravasamento de contraste por ruptura uretral</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APenile%20fracture%20-%20retrograde%20urethrogram.jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Alnadhari I, Abdelhaleem Abdeljaleel O, Sampige VRP, Abdulmuhsin A, Shamsodini A ↗</a> (CC BY 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
-          "raw",
-          "<figure data-luria-curated-image=\"Practical_electro-therapeutics_and_X-ray_therapy_-_with_chapters_on_phototherapy\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Practical%20electro-therapeutics%20and%20X-ray%20therapy%20-%20with%20chapters%20on%20phototherapy%2C%20X-ray%20in%20eye%20surgery%2C%20X-ray%20in%20dentistry%2C%20and%20medico-legal%20aspect%20of%20the%20X-ray%20(1912)%20(14777046793).jpg\" alt=\"Radiografia pélvica demonstrando abertura da sínfise púbica em livro aberto\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Radiografia pélvica demonstrando abertura da sínfise púbica em livro aberto</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3APractical%20electro-therapeutics%20and%20X-ray%20therapy%20-%20with%20chapters%20on%20phototherapy%2C%20X-ray%20in%20eye%20surgery%2C%20X-ray%20in%20dentistry%2C%20and%20medico-legal%20aspect%20of%20the%20X-ray%20(1912)%20(14777046793).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Internet Archive Book Images ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
           "p",
           "Imagine um motociclista de 32 anos após colisão de alta energia. Frequência cardíaca de 132, pressão 84/52, pele fria, FAST negativo e equimose perineal. Seria perigoso tranquilizar-se pelo FAST ou encaminhá-lo rotineiramente à TC. O retroperitônio pode acumular sangue sem produzir líquido livre intraperitoneal detectável. A equipe deve identificar outras fontes de hemorragia e implementar estabilização pélvica e controle hemostático conforme mecanismo, achados e disponibilidade do centro."
         ],
@@ -215,6 +140,26 @@
         [
           "4",
           "Objetivos de aprendizagem"
+        ],
+        [
+          "p",
+          "<p><strong>Atualização de segurança no trauma pélvico e geniturinário:</strong> a prioridade é reconhecer hemorragia potencialmente fatal e impedir piora mecânica. Em paciente instável, limitar manipulação da pelve, aplicar dispositivo de estabilização conforme protocolo, aquecer, obter acesso vascular, corrigir coagulopatia e ativar precocemente a equipe de trauma. O dispositivo não deve ser colocado sobre os trocânteres por rotina inadequada nem permanecer sem reavaliação.</p><p>O exame deve procurar assimetria, feridas abertas, sangramento vaginal ou retal, hematoma perineal, retenção urinária, sangue no meato, próstata alta, déficit neurológico e perfusão dos membros. A ausência de um achado não exclui lesão. Quando houver suspeita uretral, não forçar cateterização; documentar o achado e indicar avaliação urológica e estudo apropriado antes da passagem, salvo decisão emergencial protocolada pela equipe responsável.</p><p>Trauma renal estável pode permitir tratamento seletivo, mas instabilidade, sangramento persistente, lesão vascular, extravasamento urinário relevante ou deterioração exigem escalonamento. Trauma vesical deve ser diferenciado em intraperitoneal e extraperitoneal; a escolha entre drenagem, reparo e observação depende do padrão de lesão e de lesões associadas. Lesão ureteral pode ser silenciosa e requer alto índice de suspeição quando há ferimento penetrante, cirurgia, hematoma retroperitoneal ou extravasamento tardio.</p><p>Após controle inicial, acompanhar hemoglobina, perfusão, débito urinário, dor, função renal, sinais de infecção e evolução da lesão. Documentar imagem, procedimento, dispositivo deixado, prazo de retirada e consulta de seguimento. Alta sem plano urológico ou ortopédico é insegura quando existe extravasamento, lesão uretral, fratura instável, déficit neurológico, hematoma expansivo ou necessidade de reabilitação.</p><p>Na hemorragia pélvica, a estratégia depende de estabilidade, padrão da fratura, resposta à transfusão e recursos disponíveis. Tamponamento pré-peritoneal, fixação, angioembolização e outras técnicas não são intercambiáveis nem devem ser descritas como sequência universal; a decisão precisa seguir o protocolo do centro e a diretriz de hemorragia pélvica da EAST.</p>"
+        ],
+        [
+          "p",
+          "<p><strong>Atualização de segurança no trauma pélvico e geniturinário:</strong> a prioridade é reconhecer hemorragia potencialmente fatal e impedir piora mecânica. Em paciente instável, limitar manipulação da pelve, aplicar dispositivo de estabilização conforme protocolo, aquecer, obter acesso vascular, corrigir coagulopatia e ativar precocemente a equipe de trauma. O dispositivo não deve ser colocado sobre os trocânteres por rotina inadequada nem permanecer sem reavaliação.</p><p>O exame deve procurar assimetria, feridas abertas, sangramento vaginal ou retal, hematoma perineal, retenção urinária, sangue no meato, próstata alta, déficit neurológico e perfusão dos membros. A ausência de um achado não exclui lesão. Quando houver suspeita uretral, não forçar cateterização; documentar o achado e indicar avaliação urológica e estudo apropriado antes da passagem, salvo decisão emergencial protocolada pela equipe responsável.</p><p>Trauma renal estável pode permitir tratamento seletivo, mas instabilidade, sangramento persistente, lesão vascular, extravasamento urinário relevante ou deterioração exigem escalonamento. Trauma vesical deve ser diferenciado em intraperitoneal e extraperitoneal; a escolha entre drenagem, reparo e observação depende do padrão de lesão e de lesões associadas. Lesão ureteral pode ser silenciosa e requer alto índice de suspeição quando há ferimento penetrante, cirurgia, hematoma retroperitoneal ou extravasamento tardio.</p><p>Após controle inicial, acompanhar hemoglobina, perfusão, débito urinário, dor, função renal, sinais de infecção e evolução da lesão. Documentar imagem, procedimento, dispositivo deixado, prazo de retirada e consulta de seguimento. Alta sem plano urológico ou ortopédico é insegura quando existe extravasamento, lesão uretral, fratura instável, déficit neurológico, hematoma expansivo ou necessidade de reabilitação.</p><p>Na hemorragia pélvica, a estratégia depende de estabilidade, padrão da fratura, resposta à transfusão e recursos disponíveis. Tamponamento pré-peritoneal, fixação, angioembolização e outras técnicas não são intercambiáveis nem devem ser descritas como sequência universal; a decisão precisa seguir o protocolo do centro e a diretriz de hemorragia pélvica da EAST.</p>"
+        ],
+        [
+          "p",
+          "<p>O acompanhamento deve terminar com uma transição explícita entre sala de trauma, unidade de internação e seguimento. Registrar tendência da hemoglobina, creatinina, débito urinário, hematúria, dor, pulsos distais, sensibilidade, força e integridade da pele. Reavaliar a posição e a indicação de cada dispositivo, porque sonda, fixador, tampão e dreno podem produzir complicações quando permanecem sem prazo. Febre, dor crescente, queda de hemoglobina, oligúria, anúria, hematúria persistente, perda de sensibilidade, extremidade fria ou nova instabilidade exigem retorno imediato. A reabilitação deve envolver prevenção de trombose conforme risco, mobilização progressiva, analgesia segura, cuidado de feridas e orientação sobre função urinária, intestinal e sexual. O resumo deve sempre separar recomendação baseada em diretriz, decisão dependente de recurso local e julgamento da equipe que examinou o paciente.</p>"
+        ],
+        [
+          "p",
+          "<p>O acompanhamento deve terminar com uma transição explícita entre sala de trauma, unidade de internação e seguimento. Registrar tendência da hemoglobina, creatinina, débito urinário, hematúria, dor, pulsos distais, sensibilidade, força e integridade da pele. Reavaliar a posição e a indicação de cada dispositivo, porque sonda, fixador, tampão e dreno podem produzir complicações quando permanecem sem prazo. Febre, dor crescente, queda de hemoglobina, oligúria, anúria, hematúria persistente, perda de sensibilidade, extremidade fria ou nova instabilidade exigem retorno imediato. A reabilitação deve envolver prevenção de trombose conforme risco, mobilização progressiva, analgesia segura, cuidado de feridas e orientação sobre função urinária, intestinal e sexual. O resumo deve sempre separar recomendação baseada em diretriz, decisão dependente de recurso local e julgamento da equipe que examinou o paciente.</p>"
+        ],
+        [
+          "p",
+          "<p>Na transferência, entregar uma síntese que inclua mecanismo, estabilidade inicial e atual, transfusões, achados de imagem, procedimentos realizados, antibióticos, dispositivos e próximas decisões. A equipe receptora deve saber quais achados exigem nova imagem, quando retirar sondas ou fixadores e qual serviço assume cada seguimento. Essa comunicação reduz perda de informação em lesões que evoluem silenciosamente e evita que um exame inicial normal seja interpretado como exclusão definitiva de lesão urinária ou vascular.</p>"
         ]
       ]
     ],
@@ -1275,124 +1220,6 @@
       ]
     ],
     [
-      "sec-21-recursos-visuais-inventario-editorial-e-",
-      0,
-      [
-        [
-          "2",
-          "Recursos visuais: inventário editorial e aprovação centralizada"
-        ],
-        [
-          "p",
-          "A importância das imagens neste tema é alta: radiografia de pelve, TC contrastada, reconstrução óssea, imagens de extravasamento renal, cistografia e uretrografia permitem ensinar o que apenas texto não consegue. <strong>Nenhuma imagem clínica de terceiros foi importada, incorporada ao HTML ou autorizada automaticamente.</strong> A fila do Admin deve conter URL da fonte, nome do autor, licença explícita compatível com uso comercial, miniatura, aprovação clínica e legenda técnica. Até essa verificação, os itens permanecem <strong>candidatos não aprovados</strong>."
-        ],
-        [
-          "t",
-          [
-            "Chave",
-            "Seção",
-            "O que a imagem deve ensinar",
-            "Tipo e controle"
-          ],
-          [
-            [
-              "TP-01",
-              "2/3",
-              "Anatomia do anel, sínfise, sacro e sacroilíacas",
-              "Diagrama anatômico autoral a produzir"
-            ],
-            [
-              "TP-02",
-              "3/4",
-              "APC/open book e diástase em RX AP",
-              "Radiografia clínica real a selecionar; verificar licença e fidelidade"
-            ],
-            [
-              "TP-03",
-              "3/4",
-              "LC com compressão sacral/ramos",
-              "Radiografia/TC clínica real a selecionar"
-            ],
-            [
-              "TP-04",
-              "3/4",
-              "Vertical shear com deslocamento cefálico",
-              "RX/TC real a selecionar"
-            ],
-            [
-              "TP-05",
-              "5",
-              "Posicionamento de binder nos trocânteres, comparado a posição alta incorreta",
-              "Ilustração didática autoral"
-            ],
-            [
-              "TP-06",
-              "5/6",
-              "Hematoma retroperitoneal com FAST sem líquido intraperitoneal",
-              "TC real e diagrama autoral, fontes e licenças pendentes"
-            ],
-            [
-              "TP-07",
-              "6",
-              "Fluxograma de choque: binder, packing, embolização e fontes concorrentes",
-              "SVG autoral sem reproduzir gráfico de WSES"
-            ],
-            [
-              "TP-08",
-              "9",
-              "AAST renal 2018, laceração/sistema coletor",
-              "Diagrama autoral; tabela oficial deve ser conferida antes de finalizar"
-            ],
-            [
-              "TP-09",
-              "9",
-              "TC com extravasamento vascular versus urinário excretor",
-              "Imagens reais pareadas a buscar de repositório educacional autorizado"
-            ],
-            [
-              "TP-10",
-              "10",
-              "Trajeto ureteral e contraste tardio extravasado",
-              "Diagrama autoral + TC real licenciada"
-            ],
-            [
-              "TP-11",
-              "11",
-              "Cistografia intra x extraperitoneal",
-              "Imagens reais; destacar posição do contraste e necessidade de enchimento"
-            ],
-            [
-              "TP-12",
-              "12",
-              "Uretrografia parcial x completa e anatomia anterior/posterior",
-              "Imagens clínicas licenciadas + esquema original"
-            ],
-            [
-              "TP-13",
-              "13",
-              "US testicular: túnica íntegra versus ruptura",
-              "US real a selecionar com contexto clínico e licença"
-            ],
-            [
-              "TP-14",
-              "17",
-              "Mapa de decisões para quatro casos de maior impacto",
-              "Quadro/algoritmo vetorial autoral"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "p",
-          "<strong>Fontes a priorizar na seleção, sem presumir licença:</strong> documentos governamentais e universitários que concedam reprodução; artigos científicos open access com imagens sob CC BY verificável (licença do artigo não autoriza automaticamente figuras creditadas a terceiros); coleções radiológicas institucionais com autorização; páginas abertas da WSES e material da EAU apenas para verificação médica (gráficos autorais, sem copiar diagrama de editoras)."
-        ],
-        [
-          "p",
-          "Há pelo menos uma candidata de imagem radiológica publicada em periódico open access <em>Journal of Clinical Medicine</em> 2026 sobre lesões pélvicas APC2; conferir legenda, contexto, atribuição e termos da figura antes de usar. A existência de imagem online <strong>não</strong> é autorização de uso. Priorizar 8 a 12 imagens de utilidade didática real, sem preenchimento decorativo. O pipeline exige conversão WebP, peso otimizado e aprovação no painel administrativo antes da publicação."
-        ]
-      ]
-    ],
-    [
       "sec-22-referencias-cientificas-primarias-e-comp",
       0,
       [
@@ -1411,116 +1238,6 @@
         [
           "4",
           "20.1 Nota de aplicabilidade no Brasil"
-        ]
-      ]
-    ],
-    [
-      "sec-23-auditoria-preliminar-e-pendencias",
-      0,
-      [
-        [
-          "2",
-          "Auditoria preliminar e pendências"
-        ],
-        [
-          "t",
-          [
-            "Critério do Prompt Magno",
-            "Verificação neste rascunho",
-            "Status"
-          ],
-          [
-            [
-              "Conferir acervo antes de criar",
-              "Busca em diretórios e rascunhos; falta conferência integral dentro das aulas vizinhas",
-              "Parcial"
-            ],
-            [
-              "Benchmark real no Drive",
-              "Cinco PDFs abertos; relevantes, porém não são tratado único abrangente",
-              "Parcial"
-            ],
-            [
-              "Fundamentos e fisiopatologia",
-              "Anatomia, sangramento pélvico, trato urinário, mecanismos",
-              "Presente preliminarmente"
-            ],
-            [
-              "Quadro clínico / diagnósticos",
-              "Sinais, gravidade, TC, FAST, cistografia e RUG",
-              "Presente preliminarmente"
-            ],
-            [
-              "Condutas e diferenças por órgão",
-              "Binder, hemostasia, rim, ureter, bexiga, uretra e genitais",
-              "Presente preliminarmente"
-            ],
-            [
-              "Casos clínicos",
-              "Doze casos originais com raciocínio, investigação, conduta e relevância",
-              "Presente; auditoria independente pendente"
-            ],
-            [
-              "Questões comentadas",
-              "Dezesseis questões autorais com análise de alternativas",
-              "Presente; verificar qualidade e distrações"
-            ],
-            [
-              "Tabelas / fluxos",
-              "Diversos quadros comparativos e algoritmos textuais",
-              "Presente; visual SVG pendente"
-            ],
-            [
-              "Imagens clínicas",
-              "Quatorze necessidades didáticas identificadas, licenças não integralmente verificadas",
-              "<strong>PENDENTE</strong>"
-            ],
-            [
-              "Fontes atuais",
-              "WSES 2017, EAU 2026, europeu 2023, AUA 2020 + material complementar",
-              "Confirmar aplicação no Brasil e minúcias"
-            ],
-            [
-              "60 mil caracteres <strong>didáticos úteis</strong>",
-              "Exige contagem editorial excluindo títulos, URLs, tabelas de controle e redundâncias",
-              "A VERIFICAR"
-            ],
-            [
-              "Autossuficiência",
-              "Questões rastreáveis às seções, mas exame independente não realizado",
-              "PENDENTE"
-            ],
-            [
-              "Revisão científica",
-              "Texto fundamentado, sem segunda leitura especializada formal",
-              "PENDENTE"
-            ],
-            [
-              "Publicação HTML/PWA",
-              "Nenhum HTML criado e nenhum deploy",
-              "NÃO PUBLICADO"
-            ]
-          ],
-          "book-table"
-        ],
-        [
-          "4",
-          "21.1 Roteiro de revisão para não certificar automaticamente"
-        ],
-        [
-          "u",
-          [
-            "Verificar se a classificação AAST renal apresentada pela equipe está de acordo com a escala anatômica revisada em 2018 e que referências históricas usam outra versão.",
-            "Revisar nuances sobre <strong>tentativa única e delicada de cateter uretral por experiente</strong> em selecionados versus ensino de evitar cateter às cegas diante de sangue no meato; não transformar prudência em proibição absoluta sem exceções.",
-            "Confirmar indicação e técnica de <strong>cistografia retrograda ativa</strong>, incluindo possibilidade de estudo em pacientes com lesão uretral.",
-            "Conferir diferenças entre <strong>trauma vesical contuso externo intraperitoneal</strong> e pequenos acidentes iatrogênicos endoscópicos.",
-            "Revisar escolha e tempo de intervenção para hemorragia pélvica conforme <strong>resposta à ressuscitação e logística</strong>; evitar atribuir qualquer hipotensão à pelve.",
-            "Confirmar indicações e contraindicações de tranexâmico e correção de coagulopatia no protocolo brasileiro antes de publicar doses.",
-            "Avaliar de modo específico pediatria, gestantes, idosos e pacientes anticoagulados.",
-            "Realizar auditoria contra questões reais representativas de residência/ENAMED; ajustar lacunas no capítulo correspondente.",
-            "Inserir imagens reais somente após verificar fonte, licença comercial, fidelidade e aprovação no Admin.",
-            "Verificar visualização e navegação no formato LURIA em desktop e PWA, sem alterar arquivos já publicados."
-          ]
         ]
       ]
     ],
@@ -1761,6 +1478,87 @@
       ]
     ],
     [
+      "sec-populacoes-especiais-seguimento-trauma-pelvico",
+      0,
+      [
+        [
+          "2",
+          "Populações especiais, seguimento e critérios de reavaliação"
+        ],
+        [
+          "3",
+          "A estabilidade inicial não encerra o cuidado"
+        ],
+        [
+          "p",
+          "O paciente com trauma pélvico ou geniturinário precisa de reavaliação seriada mesmo quando a pressão arterial melhora após a primeira intervenção. Registrar tendência de frequência cardíaca, perfusão periférica, temperatura, débito urinário, dor, hemoglobina, lactato quando indicado e necessidade de hemocomponentes. A resposta transitória à reposição pode mascarar sangramento contínuo; piora do estado mental, extremidades frias, oligúria ou aumento de necessidade transfusional exigem reabrir a busca por fonte hemorrágica e considerar controle definitivo."
+        ],
+        [
+          "3",
+          "Crianças, gestantes, idosos e pessoas anticoaguladas"
+        ],
+        [
+          "p",
+          "Em crianças, a reserva fisiológica pode manter sinais vitais aparentemente preservados até deterioração rápida. Usar peso estimado confiável, aquecimento, analgesia e estratégia de transfusão compatível com protocolo pediátrico; não transportar automaticamente volumes de adulto. Em gestantes, priorizar estabilização materna, deslocamento uterino quando aplicável, avaliação obstétrica e decisão conjunta sobre imagem, proteção fetal e necessidade de parto, sem atrasar controle de hemorragia potencialmente fatal."
+        ],
+        [
+          "p",
+          "Em idosos, doença cardiovascular, fragilidade, insuficiência renal e uso de antiagregantes ou anticoagulantes alteram a tolerância à perda sanguínea e à sobrecarga volêmica. Em quem usa varfarina, DOAC ou antiagregante, confirmar fármaco, horário da última dose, função renal e disponibilidade de reversão segundo protocolo institucional. A reversão não substitui hemostasia mecânica, angioembolização ou cirurgia quando indicadas."
+        ],
+        [
+          "3",
+          "Seguimento urológico e prevenção de complicações"
+        ],
+        [
+          "p",
+          "Hematúria persistente, febre, dor lombar crescente, queda tardia da hemoglobina, urinoma, fístula, hipertensão nova ou redução da função renal devem desencadear revisão especializada. A necessidade e o momento de tomografia de controle dependem do grau da lesão, da evolução clínica e dos achados iniciais; não repetir radiação de forma automática em todo trauma estável. Quando houver lesão do sistema coletor, confirmar resolução do extravasamento e o plano para retirar ou trocar cateteres, evitando que um dispositivo temporário se torne fonte de obstrução ou infecção."
+        ],
+        [
+          "t",
+          [
+            "Situação de retorno",
+            "Sinais de alerta",
+            "Ação orientada"
+          ],
+          [
+            [
+              "Alta após trauma renal de baixo grau",
+              "Febre, dor crescente, hematúria recorrente, tontura ou síncope",
+              "Retorno imediato para exame, hemograma e imagem conforme avaliação"
+            ],
+            [
+              "Após angioembolização ou packing",
+              "Nova instabilidade, aumento de transfusão ou distensão abdominal/pélvica",
+              "Reavaliar hemostasia e acionar trauma, radiologia intervencionista e cirurgia"
+            ],
+            [
+              "Após derivação urinária",
+              "Febre, anúria/oligúria, dor lombar, saída reduzida pelo dreno",
+              "Avaliar obstrução, infecção, posição do dispositivo e urinoma"
+            ],
+            [
+              "Trauma uretral com cistostomia",
+              "Dor suprapúbica, extravasamento, infecção ou incapacidade de completar seguimento",
+              "Urologia define uretrografia de controle e reconstrução ou realinhamento"
+            ]
+          ],
+          "book-table"
+        ],
+        [
+          "3",
+          "Questão de fixação"
+        ],
+        [
+          "p",
+          "<strong>Paciente com trauma renal grau IV</strong>, inicialmente estável, evolui no terceiro dia com febre, dor lombar crescente e queda de hemoglobina. A resposta mais segura é: A) presumir que a febre é esperada e manter alta; B) repetir avaliação clínica e laboratorial, investigar urinoma, sangramento ou infecção e discutir imagem/intervenção com trauma e urologia; C) retirar todo cateter sem imagem; D) indicar nefrectomia imediata apenas pelo grau anatômico. <strong>Gabarito: B.</strong> O grau orienta risco, mas a evolução clínica determina a reavaliação; intervenção deve ser dirigida à fonte identificada e à estabilidade do paciente."
+        ],
+        [
+          "p",
+          "As condutas dependem do protocolo local, dos recursos disponíveis e da avaliação de equipes habilitadas. Esta seção organiza sinais de reavaliação e não substitui decisão à beira-leito."
+        ]
+      ]
+    ],
+    [
       "referencias",
       0,
       [
@@ -1773,7 +1571,9 @@
           [
             "<a href=\"https://www.gov.br/saude\" target=\"_blank\" rel=\"noopener noreferrer\">Ministério da Saúde - Protocolos e Diretrizes Clínicas</a>",
             "<a href=\"https://www.conitec.gov.br\" target=\"_blank\" rel=\"noopener noreferrer\">CONITEC - Recomendações e Diretrizes Nacionais</a>",
-            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>"
+            "<a href=\"https://www.sbp.com.br\" target=\"_blank\" rel=\"noopener noreferrer\">Sociedade Brasileira de Pediatria (SBP) / Colégio Brasileiro de Cirurgiões (CBC)</a>",
+            "<a href=\"https://www.east.org/content/documents/practicemanagementguidelines/east%20pmg_pelvic%20fracture%20hem_2011.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Pelvic fracture hemorrhage guideline</a>",
+            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Emergency department thoracotomy guideline</a>"
           ],
           "reference-list"
         ]

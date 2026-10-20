@@ -63,10 +63,6 @@
     [
       "sec-peritoniostomia-fechamento-parede",
       "Aprofundamento Avançado: Manejo da Peritoniostomia e Fechamento da Parede"
-    ],
-    [
-      "sec-peritoniostomia-fechamento-parede",
-      "Aprofundamento Avançado: Manejo da Peritoniostomia e Fechamento da Parede"
     ]
   ],
   "h": [
@@ -106,7 +102,7 @@
           [
             "<strong>Trauma Abdominal Fechado (Contuso):</strong> Decorrente de desaceleração horizontal/vertical brusca (acidentes com veículos automotores) ou impacto direto de alta energia (atropelamentos, agressões, quedas). As forças de compressão transmitem ondas de pressão que esmagam vísceras sólidas contra a coluna vertebral e arcos costais posteriores. Forças de cisalhamento laceram pedículos vasculares e pontos de fixação mesentérica (ligamento de Treitz, ângulo ileocecal). <strong>O baço (40% a 55%) é o órgão mais comumente lesado no trauma contuso</strong>, seguido de perto pelo fígado (35% a 45%) e intestino delgado (5% a 10%).",
             "<strong>Trauma Abdominal Penetrante por Arma Branca (FAB):</strong> Lesão de baixa velocidade com trajeto linear previsível dependente do comprimento da lâmina e da espessura da parede do paciente. <strong>O fígado (40%) é o órgão mais acometido nas FABs</strong>, seguido pelo intestino delgado (30%), diafragma (20%) e cólon (15%). Cerca de 25% a 30% das FABs abdominais anteriores não penetram a aponeurose e não causam lesão visceral.",
-            "<strong>Trauma Abdominal Penetrante por Arma de Fogo (FAF):</strong> Lesão de alta ou média energia cinética ($E = \frac{1}{2} m v^2$), provocando lesão direta por perfuração, fragmentação óssea secundária e cavitação temporária violenta ao redor do trajeto. Mais de 90% a 95% das FAFs que penetram a cavidade peritoneal produzem lesão visceral significativa, sendo <strong>o intestino delgado (50%) o órgão mais acometido</strong>, seguido por cólon (40%), fígado (30%) e vasos retroperitoneais (25%)."
+            "<strong>Trauma Abdominal Penetrante por Arma de Fogo (FAF):</strong> Lesão de alta ou média energia cinética (<span class=\"book-math\">E = (1) / (2) m v<sup>2</sup></span>), provocando lesão direta por perfuração, fragmentação óssea secundária e cavitação temporária violenta ao redor do trajeto. Mais de 90% a 95% das FAFs que penetram a cavidade peritoneal produzem lesão visceral significativa, sendo <strong>o intestino delgado (50%) o órgão mais acometido</strong>, seguido por cólon (40%), fígado (30%) e vasos retroperitoneais (25%)."
           ]
         ],
         [
@@ -116,6 +112,14 @@
         [
           "p",
           "O cirurgião divide a cavidade abdominal em quatro compartimentos para guiar o raciocínio clínico: 1. Abdome anterior (entre os rebordos costais, ligamentos inguinais e linhas axilares anteriores); 2. Dorso e flancos (entre as linhas axilares anteriores e a coluna vertebral); 3. Pelve verdadeira; 4. Região toracoabdominal (delimitada superiormente pelo 4º espaço intercostal anterior / 6º lateral / 8º posterior e inferiormente pelo rebordo costal). Qualquer trauma penetrante na região toracoabdominal tem risco iminente de lesão diafragmática oculta, exigindo laparoscopia ou toracoscopia diagnóstica."
+        ],
+        [
+          "p",
+          "<p><strong>Atualização de segurança na avaliação abdominal:</strong> a decisão depende da combinação entre mecanismo, estabilidade hemodinâmica, exame seriado, FAST/eFAST, laboratório e tomografia quando o paciente pode tolerá-la. FAST negativo não exclui lesão; em paciente de alto risco, a persistência de dor, queda de hemoglobina, taquicardia, alteração do sensório ou mecanismo relevante exige observação, repetição do exame ou imagem complementar.</p><p>Em instabilidade com suspeita de sangramento intra-abdominal, a prioridade é controle da hemorragia e reanimação guiada por resposta, sem transformar a tomografia em pré-requisito. Em paciente estável, lesões de órgãos sólidos podem ser manejadas de forma não operatória somente com monitorização, equipe capaz de intervir, exames seriados e acesso rápido à angiografia ou cirurgia. A decisão não é baseada apenas no grau radiológico.</p><p>O plano de alta deve registrar sinais de alarme, restrições, retorno, necessidade de imagem e acompanhamento. Dor progressiva, síncope, febre, vômitos persistentes, distensão, melena/hematêmese, icterícia ou redução da diurese exigem reavaliação. Em ferimentos penetrantes, exame abdominal confiável e seriado é parte essencial da seleção; peritonite, instabilidade ou exame não confiável mudam a conduta.</p>"
+        ],
+        [
+          "p",
+          "<p><strong>Atualização de segurança na avaliação abdominal:</strong> a decisão depende da combinação entre mecanismo, estabilidade hemodinâmica, exame seriado, FAST/eFAST, laboratório e tomografia quando o paciente pode tolerá-la. FAST negativo não exclui lesão; em paciente de alto risco, a persistência de dor, queda de hemoglobina, taquicardia, alteração do sensório ou mecanismo relevante exige observação, repetição do exame ou imagem complementar.</p><p>Em instabilidade com suspeita de sangramento intra-abdominal, a prioridade é controle da hemorragia e reanimação guiada por resposta, sem transformar a tomografia em pré-requisito. Em paciente estável, lesões de órgãos sólidos podem ser manejadas de forma não operatória somente com monitorização, equipe capaz de intervir, exames seriados e acesso rápido à angiografia ou cirurgia. A decisão não é baseada apenas no grau radiológico.</p><p>O plano de alta deve registrar sinais de alarme, restrições, retorno, necessidade de imagem e acompanhamento. Dor progressiva, síncope, febre, vômitos persistentes, distensão, melena/hematêmese, icterícia ou redução da diurese exigem reavaliação. Em ferimentos penetrantes, exame abdominal confiável e seriado é parte essencial da seleção; peritonite, instabilidade ou exame não confiável mudam a conduta.</p>"
         ]
       ]
     ],
@@ -130,18 +134,6 @@
         [
           "3",
           "Indicações Formais de Laparotomia Exploradora Imediata"
-        ],
-        [
-          "raw",
-          "<figure data-luria-curated-image=\"Surgical_and_gyn_cological_nursing__1916___14766377235_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Surgical%20and%20gyn%C3%A6cological%20nursing%20(1916)%20(14766377235).jpg\" alt=\"Laparotomia abreviada para controle de danos e empacotamento intra-abdominal\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Laparotomia abreviada para controle de danos e empacotamento intra-abdominal</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3ASurgical%20and%20gyn%C3%A6cological%20nursing%20(1916)%20(14766377235).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Internet Archive Book Images ↗</a> (No restrictions). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
-          "raw",
-          "<figure data-luria-curated-image=\"Grade4LiverLac.png\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Grade4LiverLac.png\" alt=\"TC de abdome demonstrando hematoma e laceração hepática\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>TC de abdome demonstrando hematoma e laceração hepática</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AGrade4LiverLac.png\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">James Heilman, MD ↗</a> (CC BY-SA 4.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
-        ],
-        [
-          "raw",
-          "<figure data-luria-curated-image=\"Thoracic_splenosis_-_CT_scan_Case_188__5927530992_.jpg\" class=\"book-curated-clinical-image\" style=\"max-width:680px;margin:20px auto 24px;background:#f8fafc;padding:12px;border-radius:12px;border:1px solid #e2e8f0;text-align:center\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Thoracic%20splenosis%20-%20CT%20scan%20Case%20188%20(5927530992).jpg\" alt=\"Tomografia computadorizada com laceração do parênquima esplênico\" loading=\"lazy\" decoding=\"async\" style=\"width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:8px;background:#0f172a\" data-apostila-image-fallback=\"hidden-sibling\"><p hidden role=\"note\">Imagem temporariamente indisponível. Consulte a fonte abaixo.</p><figcaption style=\"margin-top:10px;font-size:12.5px;line-height:1.45;color:#334155;text-align:left\"><strong>Tomografia computadorizada com laceração do parênquima esplênico</strong><br><span style=\"font-size:11px;color:#64748b\">Fonte: <a href=\"https://commons.wikimedia.org/wiki/File%3AThoracic%20splenosis%20-%20CT%20scan%20Case%20188%20(5927530992).jpg\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#0284c7;text-decoration:underline\">Yale Rosen from USA ↗</a> (CC BY-SA 2.0). Verificação técnica: homologada e ativa no site.</span></figcaption></figure>"
         ],
         [
           "p",
@@ -682,7 +674,9 @@
             "<a href=\"https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Surgeons - ATLS 10th and 11th Edition</a>",
             "<a href=\"https://cbc.org.br\" target=\"_blank\" rel=\"noopener noreferrer\">Colégio Brasileiro de Cirurgiões (CBC) - Diretrizes de Trauma Abdominal</a>",
             "<a href=\"https://www.wsacs.org\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Abdominal Compartment Syndrome (WSACS) Guidelines</a>",
-            "<a href=\"https://wses.biomedcentral.com\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) Guidelines on Splenic and Liver Trauma</a>"
+            "<a href=\"https://wses.biomedcentral.com\" target=\"_blank\" rel=\"noopener noreferrer\">World Society of Emergency Surgery (WSES) Guidelines on Splenic and Liver Trauma</a>",
+            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/archived/blunt-abdominal-trauma-evaluation-of\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Evaluation of blunt abdominal trauma</a>",
+            "<a href=\"https://www.east.org/education-resources/practice-management-guidelines/details/penetrating-abdominal-trauma%2C-selective-non-operative-management-of\" target=\"_blank\" rel=\"noopener noreferrer\">EAST — Selective non-operative management of penetrating abdominal trauma</a>"
           ],
           "reference-list"
         ]
@@ -841,11 +835,11 @@
         ],
         [
           "p",
-          "$$\text{EC} = \frac{1}{2} m v^2$$"
+          "<span class=\"book-math\">EC = (1) / (2) m v<sup>2</sup></span>"
         ],
         [
           "p",
-          "em que a velocidade ($v$) é o fator de maior impacto geométrico. Projéteis de alta velocidade (fuzis militares com velocidade &gt; 600 a 1.000 m/s) geram dois fenômenos lesivos distintos:"
+          "em que a velocidade (<span class=\"book-math\">v</span>) é o fator de maior impacto geométrico. Projéteis de alta velocidade (fuzis militares com velocidade &gt; 600 a 1.000 m/s) geram dois fenômenos lesivos distintos:"
         ],
         [
           "o",
@@ -1015,31 +1009,6 @@
         [
           "p",
           "<strong>Comentário Detalhado:</strong> O <strong>sinal do cinto de segurança</strong> (equimose transversa na parede abdominal) é um marcador clínico de altíssima energia cinética transferida e compressão direta das vísceras contra a coluna lombar (frequentemente associando-se a <strong>fratura de Chance da coluna lombar L1-L3</strong> por flexão-distração). Essa desaceleração comprime alças intestinais em bolsa cega, provocando laceração mesentérica ou microperfurações de intestino delgado que podem ser completamente <strong>invisíveis na tomografia computadorizada realizada nas primeiras 2 a 4 horas</strong> pós-trauma. A conduta indispensável é a <strong>internação para vigilância clínica e exame físico seriado</strong>. Se o paciente desenvolver dor à descompressão, febre, taquicardia ou leucocitose com desvio, procede-se à laparotomia."
-        ]
-      ]
-    ],
-    [
-      "sec-peritoniostomia-fechamento-parede",
-      0,
-      [
-        [
-          "2",
-          "Aprofundamento Avançado: Manejo da Peritoniostomia e Fechamento da Parede"
-        ],
-        [
-          "3",
-          "Manejo Avançado da Peritoniostomia e Cuidados no Fechamento da Parede Abdominal"
-        ],
-        [
-          "p",
-          "O abdome aberto (peritoniostomia ou laparostomia) é uma intervenção cirúrgica salvadora temporária que previne a síndrome compartimental e permite reoperações planejadas. Entretanto, sua manutenção prolongada associa-se a complicações graves, como fístulas enteroatmosféricas, perda maciça de fluidos e proteínas peritoneais, infecção fúngica e retração lateral das bordas da aponeurose (perda de domicílio da parede):"
-        ],
-        [
-          "u",
-          [
-            "<strong>Técnicas de Fechamento Temporário:</strong>\n    <ul>\n      <li><strong>Curativo de Pressão Negativa Abdominal (VAC Abdominal / Barker Vacuum Pack):</strong> Considerado padrão-ouro moderno. Uma película fenestrada de polietileno é posicionada sobre as vísceras sob o peritônio parietal até as goteiras parietocólicas, protegendo as alças contra aderências à parede. Esponjas de poliuretano são aplicadas sobre a película e seladas com filme adesivo sob sucção contínua de -75 a -125 mmHg. A pressão negativa remove continuamente o efluente inflamatório peritoneal rico em citocinas, quantifica perdas e traciona medialmente as bordas aponeuróticas, prevenindo a retração do músculo reto abdominal.",
-            "<strong>Bolsa de Bogotá:</strong> Bolsa plástica estéril (frasco de soro de polivinil ou bolsa coletora) suturada diretamente na pele ou aponeurose com fio monofilamentar contínuo. É um método de baixo custo e alta eficácia para descompressão mecânica em hospitais sem disponibilidade de terapia por pressão negativa."
-          ]
         ]
       ]
     ],
