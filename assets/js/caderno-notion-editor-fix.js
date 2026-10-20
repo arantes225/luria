@@ -364,8 +364,8 @@
       }
     }
     new MutationObserver(placeMenus).observe(studio, {subtree:true,attributes:true,attributeFilter:['hidden']});
-    window.addEventListener('resize', placeMenus);
-    panel.addEventListener('scroll', placeMenus);
+    window.addEventListener('resize', placeMenus, { passive: true });
+    panel.addEventListener('scroll', placeMenus, { passive: true });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountEditingPanel, {once:true});
   else mountEditingPanel();

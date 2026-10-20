@@ -25,6 +25,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   const shadow = host.attachShadow({mode:'open'});
   const abort = new AbortController();
   const opts = {signal: abort.signal};
+  const passiveOpts = {signal: abort.signal, passive: true};
   const key = 'luria:alex:companion:' + userId;
   const isStudyActionPage = ['questoes', 'erros'].includes(page);
 
@@ -460,9 +461,9 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     }
   }, opts);
 
-  window.addEventListener('resize', position, opts);
-  window.visualViewport?.addEventListener('resize', position, opts);
-  window.visualViewport?.addEventListener('scroll', position, opts);
+  window.addEventListener('resize', position, passiveOpts);
+  window.visualViewport?.addEventListener('resize', position, passiveOpts);
+  window.visualViewport?.addEventListener('scroll', position, passiveOpts);
 
   shadow.querySelector('link').addEventListener('load', () => {
     position();

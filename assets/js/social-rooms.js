@@ -359,7 +359,7 @@
   on('social-message-form','submit',send);on('social-chat-older','click',()=>loadMessages(!newerPending));
   on('social-message-text','input',()=>{saveDraft();if(channel&&Date.now()-lastTyping>1500){lastTyping=Date.now();return channel.send({type:'broadcast',event:'typing',payload:{user_id:owner.id}});}});
   on('social-message-file','change',async e=>{const file=e.target.files[0];if(file){await validateFile(file);pendingFile=file;$('social-send-status').textContent='Anexo: '+file.name;}else pendingFile=null;});
-  $('social-messages').addEventListener('scroll',()=>{const log=$('social-messages');if(log.scrollHeight-log.scrollTop-log.clientHeight<50){unread=0;updateUnread();}});
+  $('social-messages').addEventListener('scroll',()=>{const log=$('social-messages');if(log.scrollHeight-log.scrollTop-log.clientHeight<50){unread=0;updateUnread();}}, { passive: true });
   on('social-voice-join','click',async e=>run(e.target.closest('button'),()=>window.LuriaVoice.join(roomId,channel)));on('social-voice-mute','click',()=>window.LuriaVoice.toggleMute());on('social-voice-leave','click',()=>window.LuriaVoice.leave());
   on('social-voice-listen','click',()=>window.LuriaVoice.toggleListening());on('social-voice-play','click',()=>window.LuriaVoice.playIncoming());on('social-voice-device','change',e=>window.LuriaVoice.changeDevice(e.target.value));
   on('social-voice-ptt','change',async e=>{await window.LuriaVoice.setPushToTalk(e.target.checked);$('social-voice-hold').hidden=!e.target.checked;$('social-voice-mute').disabled=e.target.checked;});
