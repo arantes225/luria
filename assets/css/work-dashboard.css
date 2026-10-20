@@ -7,7 +7,7 @@
     & .work-dashboard-head p {margin:0;color:var(--color-text-secondary);font-size:var(--ui-body);}
     & .work-hub-category {margin:0 0 1.5rem;}
     & .work-hub-category > h2 {margin:0 0 .75rem!important;font-size:var(--ui-secondary)!important;font-weight:600;color:var(--color-text-secondary)!important;}
-    & .work-hub-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;}
+    & .work-hub-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
     & .work-hub-card {display:grid;grid-template-columns:48px minmax(0,1fr) 18px;align-items:center;gap:.875rem;min-width:0;min-height:104px;box-sizing:border-box;padding:1rem;border:1px solid var(--color-border);border-radius:var(--ui-radius-card);background:var(--color-surface);color:var(--color-text-primary);box-shadow:var(--ui-shadow);text-decoration:none;transition:border-color 150ms ease;}
     & .work-hub-card:hover {border-color:var(--color-primary-text);}
     & :is(.work-hub-card,.work-hub-emergency):focus-visible {outline:2px solid var(--color-focus-ring);outline-offset:3px;}
@@ -37,7 +37,7 @@
     & .work-hub-emergency:hover {border-color:var(--color-danger);}
     @media(max-width:1100px) {& .work-hub-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
     @media(max-width:600px) {
-      & .work-hub-grid {grid-template-columns:1fr;gap:.75rem;}
+      & .work-hub-grid {grid-template-columns:1fr;gap:10px;}
       & .work-hub-emergency {flex-wrap:wrap;padding:1rem;gap:.75rem;}
       & .work-hub-emergency-copy {flex:1;}
       & .work-hub-emergency-action {width:100%;box-sizing:border-box;}

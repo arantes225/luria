@@ -3,7 +3,7 @@
 @layer luria-dashboard-cards {
   body#luria-dashboard {
     &[data-dashboard-view="pending"] :is(.ui-page-header,#dashboard-alternative,#ui-review-summary,#dashboard-apps) {display:none!important;}
-    & .dashboard-loading {display:grid!important;gap:.75rem!important;min-height:180px!important;align-content:center!important;color:var(--color-text-secondary)!important;}
+    & .dashboard-loading {display:grid!important;gap:10px!important;min-height:180px!important;align-content:center!important;color:var(--color-text-secondary)!important;}
     & .dashboard-loading strong {font-size:var(--ui-card-title)!important;color:var(--color-text-primary)!important;}
     & .dashboard-loading p {margin:0!important;line-height:1.5!important;}
     & .dashboard-loading a {color:var(--color-primary-text)!important;}
@@ -17,11 +17,11 @@
     & .dashboard-apps-heading p {font-size:var(--ui-body)!important;line-height:1.5!important;margin:0!important;color:var(--color-text-secondary)!important;}
     & .dashboard-app-category {margin:0 0 1.75rem!important;padding:0!important;}
     & .dashboard-app-category > h2 {margin:0 0 .75rem!important;font-size:var(--ui-secondary)!important;font-weight:600!important;line-height:1.4!important;color:var(--color-text-secondary)!important;}
-    & .dashboard-app-grid {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:auto!important;gap:1rem!important;}
+    & .dashboard-app-grid {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:auto!important;gap:10px!important;}
     & .dashboard-app-card {
       display:grid!important;grid-template-columns:48px minmax(0,1fr) 18px!important;
       align-items:center!important;gap:.875rem!important;position:relative!important;
-      min-width:0!important;min-height:100px!important;padding:1rem!important;
+      min-width:0!important;min-height:104px!important;padding:1rem!important;
       border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;
       background:var(--color-surface)!important;color:var(--color-text-primary)!important;
       box-shadow:var(--ui-shadow)!important;text-decoration:none!important;text-align:left!important;
@@ -55,8 +55,8 @@
     &[data-ui-appearance="dark"] [data-icon-tint] {--app-icon-bg:color-mix(in srgb,var(--app-icon-dark) 15%,var(--color-surface));--app-icon-color:var(--app-icon-dark);}
     @media(max-width:1200px) {& .dashboard-app-grid {grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
     @media(max-width:600px) {
-      & .dashboard-app-grid {grid-template-columns:1fr!important;grid-auto-rows:auto!important;gap:.75rem!important;}
-      & .dashboard-app-card {min-height:100px!important;padding:1rem!important;gap:.75rem!important;}
+      & .dashboard-app-grid {grid-template-columns:1fr!important;grid-auto-rows:auto!important;gap:10px!important;}
+      & .dashboard-app-card {min-height:104px!important;padding:1rem!important;gap:10px!important;}
       & .dashboard-apps-heading h1 {font-size:1.5rem!important;}
     }
     @media(prefers-reduced-motion:reduce) {
@@ -69,7 +69,7 @@
 /* Study selector only: the Work Dashboard choices keep their existing styles. */
 @layer luria-dashboard-cards {
   body[data-page="configuracoes"] #dashboard-layout-options {
-    display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem!important;
+    display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;
     & .dashboard-layout-choice-body {
       display:flex!important;flex-direction:column!important;gap:.5rem!important;
       min-height:270px!important;height:100%!important;padding:1rem!important;
