@@ -28,11 +28,7 @@ test("unchecked PDF image option skips extraction while preserving personal-list
 
   assert.match(source, /importImages:\s*document\.getElementById\("qs-import-images"\)\?\.checked === true/);
   assert.match(source, /const importImages\s*=\s*options\.importImages === true/);
-  assert.match(source, /if \(importImages\) \{/);
+  assert.match(source, /if \(importImages\) \{[\s\S]{0,500}const pageImages/);
   assert.match(source, /question_bank_id:\s*null/);
   assert.match(source, /from\(\s*"question_items"\s*\)/);
-  assert.doesNotMatch(
-    source,
-    /const pageImages\s*=\s*extractionMode[\s\S]{0,300}extractedImageEntries\.push/
-  );
 });
