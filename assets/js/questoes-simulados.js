@@ -531,36 +531,69 @@ function isSourceSpecificHeaderLine(line, source) {
   );
 }
 
-function questionSetConfidence(questions) {
+function questionSetConfidence(questions, answerKey = {}) {
   if (!questions?.length) {
     return -Infinity;
   }
 
-  let score =
-    questions.length * 100;
+  /*
+    A estratégia com MAIS blocos não é necessariamente melhor.
+    Números em sinais vitais, datas, laudos e citações (ex.: 3/4)
+    podem parecer inícios de questões no texto reconstruído.
+  */
+  let score = questions.length * 100;
+  const seen = new Set();
+  let repeated = 0;
+  let nonSequential = 0;
+  let invalidNumbers = 0;
+  let previousNumber = null;
 
   for (const question of questions) {
-    const alternatives =
-      Object.keys(
-        question.alternatives
-        || {}
-      ).length;
-
-    score +=
-      Math.min(
-        alternatives,
-        5
-      ) * 4;
-
-    if (question.stem) {
-      score += 4;
+    const number = Number(question.question_number);
+    if (!Number.isSafeInteger(number) || number < 1) {
+      invalidNumbers += 1;
+    } else {
+      if (seen.has(number)) repeated += 1;
+      seen.add(number);
+      if (previousNumber !== null && number !== previousNumber + 1) {
+        nonSequential += 1;
+      }
+      previousNumber = number;
     }
 
+    const alternatives = Object.keys(question.alternatives || {}).length;
+    score += Math.min(alternatives, 5) * 4;
+    if (question.stem) score += 4;
+    if (question.raw_text && question.raw_text.length > 80) score += 2;
+  }
+
+  score -= repeated * 180;
+  score -= nonSequential * 90;
+  score -= invalidNumbers * 180;
+
+  const answerNumbers = Object.keys(answerKey || {})
+    .map(Number)
+    .filter(number => Number.isSafeInteger(number) && number > 0);
+
+  if (answerNumbers.length >= 2) {
+    const keySet = new Set(answerNumbers);
+    let matching = 0;
+    for (const number of seen) {
+      if (keySet.has(number)) matching += 1;
+    }
+
+    // O gabarito estruturado, quando presente, é uma referência
+    // independente para conferir o número real de questões.
+    score += matching * 12;
+    score -= (seen.size - matching) * 120;
+    score -= (keySet.size - matching) * 45;
+
     if (
-      question.raw_text
-      && question.raw_text.length > 80
+      questions.length === keySet.size
+      && seen.size === keySet.size
+      && matching === keySet.size
     ) {
-      score += 2;
+      score += 1800;
     }
   }
 
@@ -4620,17 +4653,15 @@ async function extractQuestionsFromPdf(
     });
   }
 
+  const answerKey = extractStructuredAnswerKey(allLines);
+
   const bestStrategy =
     strategies
       .slice()
       .sort(
         (a, b) =>
-          questionSetConfidence(
-            b.questions
-          )
-          - questionSetConfidence(
-              a.questions
-            )
+          questionSetConfidence(b.questions, answerKey)
+          - questionSetConfidence(a.questions, answerKey)
       )[0];
 
   const questions =
@@ -4645,10 +4676,32 @@ async function extractQuestionsFromPdf(
     );
   }
 
-  const answerKey =
-    extractStructuredAnswerKey(
-      allLines
-    );
+  /*
+    PDFs com gabarito completo e sequencial não podem criar questões
+    extras. Se nenhuma estratégia reproduzir a prova, interromper com
+    explicação em vez de salvar registros falsos.
+  */
+  const officialKeys = Object.keys(answerKey)
+    .map(Number)
+    .filter(number => Number.isSafeInteger(number) && number > 0)
+    .sort((a, b) => a - b);
+
+  const completeSequentialKey =
+    officialKeys.length >= 10
+    && officialKeys.every((number, index) => number === index + 1);
+
+  if (completeSequentialKey) {
+    const questionNumbers = questions.map(item => Number(item.question_number));
+    const correctlyNumbered =
+      questionNumbers.length === officialKeys.length
+      && questionNumbers.every((number, index) => number === index + 1);
+
+    if (!correctlyNumbered) {
+      throw new Error(
+        `O PDF possui gabarito de ${officialKeys.length} questões, mas a extração não reproduziu a numeração completa. Nenhuma lista foi criada. Tente outro modo de extração ou revise o arquivo.`
+      );
+    }
+  }
 
   const questionImages =
     extractedImageEntries
