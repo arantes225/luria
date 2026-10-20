@@ -15,6 +15,7 @@ test("PDF question import exposes an unchecked image opt-in on both routes", () 
     assert.match(html, /id="qs-import-images"[^>]*type="checkbox"/);
     assert.doesNotMatch(html, /id="qs-import-images"[^>]*checked/);
     assert.match(html, /Importar imagens/);
+    assert.match(html, /\.qs-image-option input \{/);
     assert.match(html, /questoes-simulados\.js\?v=20261020-pdf-images-toggle-v1/);
   }
 });
