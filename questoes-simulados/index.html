@@ -2400,7 +2400,13 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=20261016-v5">
   <link rel="stylesheet" href="/assets/css/questoes-lumina-v2.css?v=20261016-v5">
-<link rel="stylesheet" href="/assets/css/room-native-embed.css?v=1"><script src="/assets/js/room-native-embed.js?v=1"></script></head>
+<link rel="stylesheet" href="/assets/css/room-native-embed.css?v=1"><script src="/assets/js/room-native-embed.js?v=1"></script><style id="qs-builder-taxonomy-layout">
+.qs-builder-selectors-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qs-builder-selectors-row .qs-field{min-width:0}
+@media(max-width:900px){.qs-builder-selectors-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.qs-builder-selectors-row{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
 
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="questoes">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -2560,13 +2566,13 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                   <div class="qs-builder-header-copy">
                     <span class="badge accent">Banco Oficial LURIA</span>
                     <h3>Criador de Lista de Questões</h3>
-                    <p>Selecione as grandes áreas, temas e dificuldade. O LURIA monta sua lista de treino personalizada com <strong>limite de até 100 questões</strong>.</p>
+                    <p>Escolha grande área, matéria, tema ou subtema para estudar um assunto específico. O limite da lista acompanha a configuração do banco.</p>
                   </div>
                   <div class="qs-builder-live-badges">
                     <div class="qs-builder-badge-chip">
                       <span class="qs-builder-chip-icon">📚</span>
                       <div>
-                        <strong id="qs-builder-available-count">1.000 questões disponíveis</strong>
+                        <strong id="qs-builder-available-count">Carregando questões...</strong>
                         <small>Residência Médica &amp; Revalida</small>
                       </div>
                     </div>
@@ -2595,21 +2601,20 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                   <div class="qs-builder-selectors-row">
                     <label class="qs-field">
                       <span>Grande Área Médica</span>
-                      <select id="qs-builder-area">
-                        <option value="all">Todas as Grandes Áreas (1.000 questões)</option>
-                        <option value="Clínica Médica">Clínica Médica (227 questões)</option>
-                        <option value="Cirurgia Geral">Cirurgia Geral (197 questões)</option>
-                        <option value="Pediatria">Pediatria (188 questões)</option>
-                        <option value="Ginecologia e Obstetrícia">Ginecologia e Obstetrícia (197 questões)</option>
-                        <option value="Medicina Preventiva / APS">Medicina Preventiva / APS (191 questões)</option>
-                      </select>
+                      <select id="qs-builder-area"><option value="all">Carregando áreas...</option></select>
                     </label>
 
                     <label class="qs-field">
+                      <span>Matéria / Disciplina</span>
+                      <select id="qs-builder-materia"><option value="all">Todas as matérias</option></select>
+                    </label>
+                    <label class="qs-field">
                       <span>Tema / Assunto Clínico</span>
-                      <select id="qs-builder-tema">
-                        <option value="all">Todos os temas / assuntos</option>
-                      </select>
+                      <select id="qs-builder-tema"><option value="all">Todos os temas</option></select>
+                    </label>
+                    <label class="qs-field">
+                      <span>Subtema / Assunto específico</span>
+                      <select id="qs-builder-subtema"><option value="all">Todos os subtemas</option></select>
                     </label>
 
                     <label class="qs-field">
@@ -2626,17 +2631,17 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                   <div class="qs-builder-count-card">
                     <div class="qs-builder-count-head">
                       <label class="qs-field qs-builder-count-input-wrap">
-                        <span>Quantidade de questões (Limite: até 100 questões por lista) *</span>
+                        <span>Quantidade de questões (Limite: até <span id="qs-builder-max-label">50</span> questões por lista) *</span>
                         <div class="qs-builder-input-group">
                           <input
                             id="qs-builder-count"
                             type="number"
                             min="1"
-                            max="100"
+                            max="50"
                             step="1"
                             value="20"
                           >
-                          <span class="qs-builder-count-limit-tag">Máx 100</span>
+                          <span id="qs-builder-count-limit-tag" class="qs-builder-count-limit-tag">Máx 50</span>
                         </div>
                       </label>
                       <div class="qs-builder-presets-wrap">
@@ -2645,12 +2650,12 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                           <button type="button" class="qs-preset-btn qs-builder-preset" data-count="10">10 Q</button>
                           <button type="button" class="qs-preset-btn qs-builder-preset" data-count="25">25 Q</button>
                           <button type="button" class="qs-preset-btn qs-builder-preset" data-count="50">50 Q</button>
-                          <button type="button" class="qs-preset-btn qs-builder-preset" data-count="100">100 Q (Máximo)</button>
+                          <button type="button" class="qs-preset-btn qs-builder-preset" data-count="100">100 Q</button>
                         </div>
                       </div>
                     </div>
                     <small class="qs-builder-count-notice">
-                      💡 Regra da plataforma: cada lista de questões gerada possui um limite de 100 questões para maximizar a retenção da memória e a qualidade da revisão espaçada.
+                      💡 O limite é definido pela publicação do banco. Os assuntos são filtrados conforme as questões liberadas para estudo.
                     </small>
                   </div>
 
@@ -2658,7 +2663,7 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
                     <button id="qs-builder-generate" class="button primary qs-builder-cta" type="button">
                       Gerar Lista e Começar (20 questões) →
                     </button>
-                    <span id="qs-builder-status" class="qs-status" aria-live="polite"></span>
+                    <span id="qs-builder-status" class="qs-status" aria-live="polite">Carregando catálogo...</span>
                   </div>
                 </div>
               </div>
